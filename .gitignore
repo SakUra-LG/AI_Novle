@@ -1,0 +1,133 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDE和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# 模型和检查点（通常很大，不应上传到Git）
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.h5
+*.pb
+*.onnx
+*.tflite
+
+# 数据文件（根据实际情况决定是否忽略）
+# 如果数据文件很大或包含敏感信息，取消下面的注释
+# data/
+# 或者只忽略特定的大文件
+data/*.npy
+data/*.pkl
+data/*.pickle
+data/universal_samples_vectors.npy
+
+# 输出和临时文件
+outputs/
+*.log
+*.tmp
+*.temp
+*.cache
+
+# 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# 环境变量和配置
+.env
+.env.local
+.env.*.local
+*.env
+
+# 日志文件
+logs/
+*.log
+*.log.*
+
+# 压缩文件（如果不想上传）
+*.rar
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Office文档（如果不想上传，取消注释）
+# *.doc
+# *.docx
+# *.xls
+# *.xlsx
+# *.ppt
+# *.pptx
+
+# 测试覆盖率
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.hypothesis/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# 特定于项目的文件
+# 如果某些输出目录需要保留结构但忽略内容，可以这样写：
+# outputs/*
+# !outputs/.gitkeep

@@ -1,0 +1,25 @@
+{
+  "model_type": "random_forest",
+  "feature_names": [
+    "action_count",
+    "action_density",
+    "danger_count",
+    "danger_density",
+    "dialogue_count",
+    "dialogue_density",
+    "dialogue_ratio",
+    "ellipsis_count",
+    "exclamation_count",
+    "length",
+    "question_count",
+    "repeated_chars",
+    "sentence_count",
+    "tension_count",
+    "tension_density",
+    "time_pressure_count",
+    "time_pressure_density",
+    "word_count"
+  ],
+  "training_samples": 78,
+  "trained_at": "2025-09-27T18:33:46.463449"
+}

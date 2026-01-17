@@ -1,0 +1,122 @@
+[
+  {
+    "paragraph_index": 1,
+    "content": "他没发现吧，我告诉她，我今天加班",
+    "user_score": 22.0,
+    "model_score": 22,
+    "features": {
+      "length": 16,
+      "word_count": 1,
+      "sentence_count": 1,
+      "tension_count": 0,
+      "tension_density": 0.0,
+      "action_count": 0,
+      "action_density": 0.0,
+      "danger_count": 0,
+      "danger_density": 0.0,
+      "dialogue_count": 0,
+      "dialogue_density": 0.0,
+      "time_pressure_count": 0,
+      "time_pressure_density": 0.0,
+      "exclamation_count": 0,
+      "question_count": 0,
+      "ellipsis_count": 0,
+      "repeated_chars": 0,
+      "dialogue_ratio": 0.0
+    },
+    "timestamp": "2025-09-27 16:46:14",
+    "category": "情感互动",
+    "tags": [
+      "2"
+    ]
+  },
+  {
+    "paragraph_index": 2,
+    "content": "高兴坏了吧，我的三张K，你的三张A，我又换不了你的牌，而我的牌，就算我用千术，不管怎么换，都赢不了三张A，看起来我必输无疑，但是我既然敢和你玩，就不会输，想知道我是怎么赢的吗，等会，我就让你笑不出来",
+    "user_score": 87.0,
+    "model_score": 27,
+    "features": {
+      "length": 99,
+      "word_count": 1,
+      "sentence_count": 1,
+      "tension_count": 0,
+      "tension_density": 0.0,
+      "action_count": 0,
+      "action_density": 0.0,
+      "danger_count": 0,
+      "danger_density": 0.0,
+      "dialogue_count": 0,
+      "dialogue_density": 0.0,
+      "time_pressure_count": 0,
+      "time_pressure_density": 0.0,
+      "exclamation_count": 0,
+      "question_count": 0,
+      "ellipsis_count": 0,
+      "repeated_chars": 0,
+      "dialogue_ratio": 0.0
+    },
+    "timestamp": "2025-09-27 16:46:32",
+    "category": "对话场景",
+    "tags": []
+  },
+  {
+    "paragraph_index": 3,
+    "content": "一个从工地出身的季明秀，在拍卖场为老板女友，举牌3个亿拍下原本是女友奶奶的绿宝石项链，可女友根本就没有那么多钱，成交后女友十分记恨季明秀，还想流拍，但最后主持人却说已经有人付过款了",
+    "user_score": 75.0,
+    "model_score": 20,
+    "features": {
+      "length": 90,
+      "word_count": 1,
+      "sentence_count": 1,
+      "tension_count": 0,
+      "tension_density": 0.0,
+      "action_count": 0,
+      "action_density": 0.0,
+      "danger_count": 0,
+      "danger_density": 0.0,
+      "dialogue_count": 0,
+      "dialogue_density": 0.0,
+      "time_pressure_count": 0,
+      "time_pressure_density": 0.0,
+      "exclamation_count": 0,
+      "question_count": 0,
+      "ellipsis_count": 0,
+      "repeated_chars": 0,
+      "dialogue_ratio": 0.0
+    },
+    "timestamp": "2025-09-27 16:47:14",
+    "category": "拍卖",
+    "tags": [
+      "12"
+    ]
+  },
+  {
+    "paragraph_index": 4,
+    "content": "身价千亿的总裁开车回老家，差点撞上一个拾荒的老奶奶，将她扶起后，老奶奶将她身上唯一值钱的橘子，再用寻人启事的纸撕下一点包起来送给总裁，并将自己熬橘子皮的土方法交给了他便下车蹒跚的走回去，总裁感到震惊，因为这个土方法和小时候目前给自己熬的一模一样，正当总裁怀疑时，突然发现包橘子的寻人启事上的玉佩和母亲留给自己的那个一模一样",
+    "user_score": 65.0,
+    "model_score": 20,
+    "features": {
+      "length": 161,
+      "word_count": 1,
+      "sentence_count": 1,
+      "tension_count": 0,
+      "tension_density": 0.0,
+      "action_count": 1,
+      "action_density": 0.006211180124223602,
+      "danger_count": 0,
+      "danger_density": 0.0,
+      "dialogue_count": 0,
+      "dialogue_density": 0.0,
+      "time_pressure_count": 1,
+      "time_pressure_density": 0.006211180124223602,
+      "exclamation_count": 0,
+      "question_count": 0,
+      "ellipsis_count": 0,
+      "repeated_chars": 0,
+      "dialogue_ratio": 0.0
+    },
+    "timestamp": "2025-09-27 16:47:55",
+    "category": "动作场面",
+    "tags": []
+  }
+]

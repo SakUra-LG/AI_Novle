@@ -1,0 +1,28 @@
+{
+    "context_settings": {
+        "max_context_chapters": 20,
+        "recent_chapters_count": 3,
+        "outline_max_length": 500,
+        "snippet_max_length": 150,
+        "chapter_summary_length": 200
+    },
+    "file_patterns": {
+        "chapter_files": ["*.txt"],
+        "exclude_patterns": ["第*章.txt", "*_evaluation.json"],
+        "candidate_patterns": ["*_v*.txt"]
+    },
+    "generation_settings": {
+        "default_versions": 3,
+        "min_score_threshold": 70,
+        "max_content_length": 1000,
+        "temperature": 0.85,
+        "top_p": 0.8,
+        "repetition_penalty": 1.1
+    },
+    "rag_settings": {
+        "top_k_samples": 3,
+        "min_similarity": 0.3,
+        "max_rag_samples": 3,
+        "max_high_score_snippets": 3
+    }
+}
