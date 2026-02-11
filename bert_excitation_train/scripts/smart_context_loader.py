@@ -10,6 +10,11 @@ import json
 import glob
 from typing import List, Dict, Optional
 
+# 统一项目根路径：保证无论从哪里运行脚本，都能找到同一份梗概文件
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+DEFAULT_OUTLINE_FILE = os.path.join(PROJECT_ROOT, "outputs", "master_ctx.txt")
+
 def load_generation_config(config_file: str = "config/generation_config.json") -> Dict:
     """加载生成配置"""
     if os.path.exists(config_file):
@@ -133,8 +138,8 @@ def load_novel_context_smart(max_chapters: int = None, config_file: str = "confi
         except Exception as e:
             print(f"读取章节文件 {file_path} 失败: {e}")
     
-    # 读取章节梗概
-    outline_file = "outputs/master_ctx.txt"
+    # 读取章节梗概（固定从项目根目录的 outputs/master_ctx.txt 读取）
+    outline_file = DEFAULT_OUTLINE_FILE
     if os.path.exists(outline_file):
         with open(outline_file, 'r', encoding='utf-8') as f:
             context['outline'] = f.read()

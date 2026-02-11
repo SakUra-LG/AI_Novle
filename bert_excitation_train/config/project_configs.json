@@ -27,9 +27,16 @@
       "style": "科幻未来",
       "tags": ["科幻", "未来", "太空", "科技"],
       "description": "未来科幻背景的冒险小说"
+    },
+    "重生复仇短剧": {
+      "main_character": "沈清欢",
+      "background": "现代都市+重生复仇",
+      "style": "强烈情绪爽文短剧",
+      "tags": ["重生", "复仇", "爽文", "短剧", "现代都市"],
+      "description": "前世极度委屈惨死，重生后三观炸裂、步步反杀仇人的强情绪爽文短剧项目"
     }
   },
-  "default_project": "暗河噬城",
+  "default_project": "重生复仇短剧",
   "sample_adaptation_rules": {
     "character_replacement": {
       "陈雪": ["林峰", "苏雨", "张伟"],

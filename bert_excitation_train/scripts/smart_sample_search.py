@@ -5,6 +5,7 @@
 支持多种小说项目的样本检索和内容适配
 """
 
+import os
 import torch
 import numpy as np
 import json
@@ -12,8 +13,8 @@ import re
 from transformers import AutoTokenizer, AutoModel
 from sklearn.metrics.pairwise import cosine_similarity
 
-# 配置
-model_path = "./细节生成资料/bge_large_zh"
+# 配置：直接使用用户提供的 bge_large_zh 绝对路径
+model_path = r"D:\Study\College\Scientific research\张颖——AI小说自动生成\张颖——AI小说自动生成\bert_excitation_train\AI_Novle\bge_large_zh"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # 加载模型

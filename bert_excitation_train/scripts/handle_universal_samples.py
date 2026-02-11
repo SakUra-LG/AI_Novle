@@ -5,14 +5,19 @@
 将通用样本向量化并建立检索系统
 """
 
+import os
 import torch
 import re
 import numpy as np
 import json
 from transformers import AutoTokenizer, AutoModel
 
-# 配置
-model_path = "./细节生成资料/bge_large_zh"
+# 根目录（以当前脚本所在目录为基准，自动定位到项目根目录）
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+
+# 配置：直接使用本机已下载好的 bge_large_zh 模型绝对路径（避免被当作 HuggingFace 仓库名）
+model_path = r"D:\Study\College\Scientific research\张颖——AI小说自动生成\张颖——AI小说自动生成\bert_excitation_train\AI_Novle\bge_large_zh"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # 加载模型
@@ -174,8 +179,9 @@ def extract_tags(text, category):
 
 # 主流程
 if __name__ == "__main__":
-    # 读取通用样本内容
-    content = read_universal_samples('data/universal_samples.txt')
+    # 读取通用样本内容（路径相对于项目根目录，而不是当前运行目录）
+    universal_file_path = os.path.join(DATA_DIR, "universal_samples.txt")
+    content = read_universal_samples(universal_file_path)
 
     # 解析文本 -> 样本列表
     samples = parse_universal_samples(content)
@@ -199,9 +205,15 @@ if __name__ == "__main__":
 
     # 保存结果
     try:
-        np.save('data/universal_samples_vectors.npy', vectors)
+        # 确保 data 目录存在（第一次运行可能还没有）
+        os.makedirs(DATA_DIR, exist_ok=True)
 
-        with open('data/universal_samples_data.json', 'w', encoding='utf-8') as f:
+        vectors_path = os.path.join(DATA_DIR, 'universal_samples_vectors.npy')
+        meta_path = os.path.join(DATA_DIR, 'universal_samples_data.json')
+
+        np.save(vectors_path, vectors)
+
+        with open(meta_path, 'w', encoding='utf-8') as f:
             json.dump({
                 "samples": samples,
                 "count": len(samples),
