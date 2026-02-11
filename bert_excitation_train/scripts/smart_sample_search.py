@@ -13,6 +13,11 @@ import re
 from transformers import AutoTokenizer, AutoModel
 from sklearn.metrics.pairwise import cosine_similarity
 
+# 路径与模型配置（与 handle_universal_samples 保持一致）
+# 项目根目录：以当前脚本所在目录为基准，自动定位到项目根目录
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+
 # 配置：直接使用用户提供的 bge_large_zh 绝对路径
 model_path = r"D:\Study\College\Scientific research\张颖——AI小说自动生成\张颖——AI小说自动生成\bert_excitation_train\AI_Novle\bge_large_zh"
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -39,13 +44,16 @@ def vectorize_text(text):
     return embeddings.cpu().numpy()
 
 def load_universal_samples():
-    """加载通用样本库"""
+    """加载通用样本库（始终从项目根目录下的 data/ 读取，与 handle_universal_samples 保持一致）"""
     try:
+        vectors_path = os.path.join(DATA_DIR, 'universal_samples_vectors.npy')
+        meta_path = os.path.join(DATA_DIR, 'universal_samples_data.json')
+
         # 加载样本向量
-        sample_vectors = np.load('data/universal_samples_vectors.npy')
+        sample_vectors = np.load(vectors_path)
 
         # 加载样本内容
-        with open('data/universal_samples_data.json', 'r', encoding='utf-8') as f:
+        with open(meta_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             samples = data.get("samples", [])
 
