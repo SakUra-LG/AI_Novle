@@ -31,12 +31,14 @@
 **核心功能**：
 
 - 为项目「重生复仇短剧」生成整本约 100 章的**章节梗概**（不是正文）
+- 为每一章生成对应的**上一世遭遇线索点**（隐式的简短遭遇描述，用于后续正文生成时作为回忆片段引用）
 - 自动调用：
   - `smart_sample_search.search_and_adapt_samples` 做情绪/情节 RAG 检索
   - 通义千问（qwen_turbo）根据提示词与样本生成完整章节纲要
 - 将最终结果写入：
-  - 主文件：`outputs/master_ctx.txt`
-  - 时间戳备份：`outputs/master_ctx_YYYYMMDD_HHMMSS.txt`
+  - 主梗概文件：`outputs/master_ctx.txt`
+  - 上一世线索点文件：`outputs/prev_life_ctx.txt`
+  - 时间戳备份：`outputs/master_ctx_YYYYMMDD_HHMMSS.txt` 和 `outputs/prev_life_ctx_YYYYMMDD_HHMMSS.txt`
 
 **章节结构（概念）**：
 
@@ -64,24 +66,35 @@
    python scripts/generate_outline_rebirth_revenge.py
    ```
 
-4. 等待模型生成（可能需要几十秒）：
+4. 等待模型生成（可能需要1-2分钟，因为需要生成两次）：
+   - 第一步：生成整本 100 章章节梗概
+   - 第二步：基于章节梗概，为每一章生成对应的上一世遭遇线索点
    - 命令行会显示检索到的样本数量
    - 完成后会提示：
-     - 主文件路径：`outputs/master_ctx.txt`
-     - 备份文件路径：`outputs/master_ctx_YYYYMMDD_HHMMSS.txt`
-   - 控制台会打印前 20 行梗概预览，方便快速检查风格是否符合预期。
+     - 主梗概文件路径：`outputs/master_ctx.txt`
+     - 上一世线索点文件路径：`outputs/prev_life_ctx.txt`
+     - 备份文件路径（带时间戳）
+   - 控制台会分别打印前 20 行预览，方便快速检查风格是否符合预期。
 
 ---
 
 ### 4. 输出文件说明
 
 - **主梗概文件**：`outputs/master_ctx.txt`
-  - 存放本次最新的 100 章梗概
-  - `smart_context_loader` / 正文生成流程会优先从这里读取作为整本的“总纲”
+  - 存放本次最新的 100 章章节梗概
+  - `smart_context_loader` / 正文生成流程会优先从这里读取作为整本的"总纲"
   - 如果你重新运行脚本，该文件会被新的梗概覆盖
 
-- **备份文件**：`outputs/master_ctx_YYYYMMDD_HHMMSS.txt`
-  - 每次生成都会单独保存一份带时间戳的副本，方便回滚或对比不同版本大纲
+- **上一世线索点文件**：`outputs/prev_life_ctx.txt`
+  - 存放每一章对应的上一世遭遇线索点（共100个）
+  - 每个线索点是简短的遭遇描述（1-3句话），用于在生成正文时作为回忆片段引用
+  - 格式：`第X章对应线索：简短的上一世遭遇描述（对应今生第X章）`
+  - 这些线索点是隐式的，贯穿整个100章，与今生章节梗概形成对照关系
+
+- **备份文件**：
+  - `outputs/master_ctx_YYYYMMDD_HHMMSS.txt` - 章节梗概的时间戳备份
+  - `outputs/prev_life_ctx_YYYYMMDD_HHMMSS.txt` - 上一世线索点的时间戳备份
+  - 每次生成都会单独保存一份带时间戳的副本，方便回滚或对比不同版本
 
 **章节格式示例**（示意）：
 
@@ -100,15 +113,20 @@
 
 ### 5. 与正文生成的衔接
 
-- `outputs/master_ctx.txt` 会作为“整本书的总梗概”被加载到上下文中：
+- `outputs/master_ctx.txt` 会作为"整本书的总梗概"被加载到上下文中：
   - 写第 N 章时，可以结合：
     - 已经写出的前文章节
     - `master_ctx` 中对应章节的规划
   - 这样可以保证：整体情节连贯，前世记忆与今生反杀的对照关系不容易跑偏。
 
+- `outputs/prev_life_ctx.txt` 会作为"上一世遭遇线索点"被加载到上下文中：
+  - 在生成正文时，当遇到复仇情节或合适的时间节点，可以引用对应的上一世遭遇线索点作为回忆片段
+  - 例如：如果今生第7章是"第一次反击：公司年会中揭露李娜"，可以引用对应的上一世线索点"她记得前世在公司年会上被李娜陷害，被所有人误解，最终被辞退"
+  - 这样可以增强情绪对比，让读者感受到主角的委屈和复仇的爽感
+
 如果你更新了梗概（重新跑脚本）：
 
-- 再次写正文前，建议先快速浏览 `master_ctx.txt`，确认整体节奏、复仇顺序和情绪曲线都符合当前设想。
+- 再次写正文前，建议先快速浏览 `master_ctx.txt` 和 `prev_life_ctx.txt`，确认整体节奏、复仇顺序和情绪曲线都符合当前设想。
 
 ---
 

@@ -121,15 +121,7 @@
   - 保持角色关系和情节连贯
 - **配置化管理**：通过JSON文件灵活配置
 
-### 7️⃣ Web管理界面
-
-- 📚 章节管理（查看、管理所有章节）
-- 📝 版本对比（查看同一章节的多个候选版本）
-- 🎛️ 生成控制面板（Web界面启动任务）
-- 📊 统计信息（项目进度和数据统计）
-- 🔌 RESTful API（完整的后端接口）
-
-### 8️⃣ 质量控制工具
+### 7️⃣ 质量控制工具
 
 - ✔️ 增量样本评分（避免重复工作）
 - 🖱️ 交互式标注系统（友好的人工标注界面）
@@ -181,10 +173,6 @@ python scripts/incremental_model_trainer.py
 
 # 4. 生成内容
 python scripts/enhanced_rag_generator_v2.py --prompt "你的创作需求" --min_score 70
-
-# 5. 查看Web界面
-python app.py
-# 访问 http://localhost:5000
 ```
 
 ---
@@ -336,8 +324,6 @@ bert_excitation_train/
 │   ├── Search_content.py               # 内容搜索
 │   └── Search_profession.py            # 专业搜索
 │
-├── 📄 app.py                           # Web后端服务器
-├── 📄 index.html                       # Web前端界面
 ├── 📄 requirements.txt                 # Python依赖
 │
 └── 📚 文档
@@ -346,7 +332,6 @@ bert_excitation_train/
     ├── SYSTEM_WORKFLOW_EXPLANATION.md  # 工作流程说明
     ├── UNIVERSAL_RAG_SYSTEM_README.md  # RAG系统文档
     ├── SAMPLE_SYSTEM_GUIDE.md          # 样本系统指南
-    ├── WEB_README.md                   # Web界面说明
     └── WORKFLOW_EXAMPLE.md             # 工作流程示例
 ```
 
@@ -362,7 +347,6 @@ bert_excitation_train/
 ### 专题文档
 - 🧠 **[RAG系统文档](UNIVERSAL_RAG_SYSTEM_README.md)** - RAG检索增强系统详解
 - 📊 **[样本系统指南](SAMPLE_SYSTEM_GUIDE.md)** - 样本管理和使用指南
-- 🌐 **[Web界面说明](WEB_README.md)** - Web管理界面使用说明
 - 🛠️ **[动态章节加载方案](DYNAMIC_CHAPTER_LOADING_SOLUTION.md)** - 智能上下文加载
 
 ### RAG技术文档
@@ -382,11 +366,6 @@ bert_excitation_train/
 - **数据分析**: Pandas, NumPy
 - **向量计算**: Scikit-learn
 - **文本处理**: Tokenizers
-
-### Web服务
-- **后端框架**: Flask
-- **前端技术**: HTML5, CSS3, JavaScript
-- **API设计**: RESTful API
 
 ---
 

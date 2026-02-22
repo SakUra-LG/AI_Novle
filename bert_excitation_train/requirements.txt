@@ -1,3 +1,2 @@
-Flask==2.3.3
-Flask-CORS==4.0.0
-Werkzeug==2.3.7
+# Python依赖包
+# 注意：Flask相关依赖已移除，项目不再使用Web界面
