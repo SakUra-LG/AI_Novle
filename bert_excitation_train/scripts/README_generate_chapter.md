@@ -14,7 +14,7 @@
 ### 基本用法
 
 ```bash
-# 生成第1章
+# 生成第1章（推荐：在 bert_excitation_train/ 目录下运行）
 python scripts/generate_chapter_content.py --chapter 1
 
 # 生成第12章，生成3个版本，每个版本最多迭代3次
@@ -22,6 +22,19 @@ python scripts/generate_chapter_content.py --chapter 12 --versions 3 --iteration
 
 # 自定义最小情绪强度
 python scripts/generate_chapter_content.py --chapter 1 --min-emotion 0.7
+```
+
+### Windows PowerShell（从任意目录运行）
+
+> 说明：`generate_chapter_content.py` 会把 `outputs/...` 这类相对路径自动解析到 `bert_excitation_train/outputs/...`，因此你不必严格要求当前工作目录。
+
+```powershell
+# 直接执行（如果你当前就在 AI_Novle 目录）
+python .\bert_excitation_train\scripts\generate_chapter_content.py --chapter 1
+
+# 或者先切换到 bert_excitation_train 再执行
+cd .\bert_excitation_train
+python .\scripts\generate_chapter_content.py --chapter 1
 ```
 
 ### 参数说明
@@ -202,6 +215,23 @@ python scripts/generate_chapter_content.py --chapter 12 --versions 5 --iteration
    - 每个版本可能需要多次迭代
    - 生成时间取决于API响应速度和迭代次数
    - 建议在生成大量章节时使用批处理脚本
+
+## 🛠️ 常见报错排查（Troubleshooting）
+
+### 1) `FileNotFoundError: ... 'outputs/prev_life_ctx.txt'`
+
+**原因**：
+- 以前版本脚本会把 `outputs/prev_life_ctx.txt` 按“当前工作目录”解析；如果你在 `scripts/` 目录运行，就会去找 `scripts/outputs/prev_life_ctx.txt` 从而报错。
+
+**解决**：
+- **推荐**：直接按“快速开始”的命令运行（新版脚本已按 `bert_excitation_train/` 根目录解析相对路径）
+- 或显式指定路径：
+
+```bash
+python scripts/generate_chapter_content.py --chapter 1 --master-ctx outputs/master_ctx.txt --prev-life-ctx outputs/prev_life_ctx.txt
+```
+
+> 备注：如果 `prev_life_ctx.txt` 确实不存在，新版脚本会提示并跳过“上一世回忆触发”，仍可生成正文。
 
 ## 🔄 批处理生成
 

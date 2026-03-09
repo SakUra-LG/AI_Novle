@@ -97,6 +97,9 @@ def find_similar_samples(query, sample_vectors, samples, top_k=5, min_similarity
     if required_tags:
         filtered_indices = []
         for idx in valid_indices:
+            idx = int(idx)  # 确保是Python int类型
+            if idx >= len(samples):
+                continue
             sample = samples[idx]
             match = True
             
@@ -124,6 +127,9 @@ def find_similar_samples(query, sample_vectors, samples, top_k=5, min_similarity
     if min_score is not None:
         filtered_indices = []
         for idx in valid_indices:
+            idx = int(idx)  # 确保是Python int类型
+            if idx >= len(samples):
+                continue
             sample = samples[idx]
             if sample.get('score', 0) >= min_score:
                 filtered_indices.append(idx)
@@ -138,6 +144,11 @@ def find_similar_samples(query, sample_vectors, samples, top_k=5, min_similarity
     
     results = []
     for idx in sorted_indices[:top_k]:
+        # 确保索引是Python int类型（而不是np.int64）
+        idx = int(idx)
+        if idx >= len(samples):
+            print(f"⚠️ 警告：索引 {idx} 超出样本列表范围（共 {len(samples)} 个样本）")
+            continue
         sample = samples[idx]
         results.append({
             "similarity": float(similarities[idx]),

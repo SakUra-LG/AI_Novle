@@ -377,14 +377,25 @@ class EmotionAnalyzer:
             final_label = base_result['label']
             final_confidence = base_result['confidence']
             final_scores = base_result['scores']
-            final_intensity = base_result['intensity']
+            raw_intensity = base_result['intensity']
         else:
             # 回退到词典分析
             top_emotion = max(emotion_dims.items(), key=lambda x: x[1])[0] if emotion_dims else "neutral"
             final_label = top_emotion
             final_confidence = emotion_dims.get(top_emotion, 0.0) if emotion_dims else 0.0
             final_scores = {"negative": 0.0, "positive": 0.0}
-            final_intensity = max(emotion_dims.values()) if emotion_dims else 0.0
+            raw_intensity = max(emotion_dims.values()) if emotion_dims else 0.0
+
+        # 复合情绪强度（面向小说正文）：融合分类置信度、情绪词密度、情绪深度、转折强度，
+        # 使「写作层面情绪浓」的文本更容易达到 0.6，避免仅用二分类置信度导致长期偏低
+        density_term = min(1.0, emotion_word_density * 18.0)  # 约 5.5% 情绪词密度即可接近 1
+        final_intensity = (
+            0.2 * raw_intensity
+            + 0.45 * density_term
+            + 0.25 * emotion_depth
+            + 0.1 * transition_strength
+        )
+        final_intensity = min(1.0, max(0.0, final_intensity))
         
         return EmotionResult(
             label=final_label,
