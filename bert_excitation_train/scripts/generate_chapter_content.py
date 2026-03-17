@@ -940,7 +940,8 @@ class RebirthRevengeGenerator:
         return tail_scene[:200], unresolved_hook[:200]
 
     def _check_past_block_ratio(self, chapter_content: str, need_prev_life: bool,
-                                min_ratio: float = 0.15, min_chars: int = 200) -> Tuple[float, str]:
+                                min_ratio: float = 0.35, max_ratio: float = 0.5,
+                                min_chars: int = 350) -> Tuple[float, str]:
         """
         检查上一世回忆段落是否存在且占比达标。仅当 need_prev_life=True 时才有意义。
         返回 (0~1 分数, 反馈说明)。不需要上一世时返回 (1.0, "")。
@@ -948,7 +949,7 @@ class RebirthRevengeGenerator:
         if not need_prev_life or not chapter_content:
             return 1.0, ""
         total = len(chapter_content.strip())
-        if total < 300:
+        if total < 600:
             return 0.0, "正文过短，无法判断上一世段落"
         start_markers = ["上一世", "记得", "那时", "当时", "那年", "前世", "曾经"]
         first_i = len(chapter_content)
@@ -968,11 +969,22 @@ class RebirthRevengeGenerator:
         if past_len < 0:
             past_len = 200
         ratio = past_len / total if total else 0
+        # 低于下限：惩罚
         if ratio < min_ratio and past_len < min_chars:
-            return max(0, ratio / min_ratio), (
-                f"上一世回忆段落过短（约{past_len}字，占比{ratio*100:.0f}%），要求至少{min_chars}字或占比≥{min_ratio*100:.0f}%，且须包含四步：假性温和→突然反咬→无人帮她→结果性伤害。"
+            return max(0.0, ratio / min_ratio), (
+                f"上一世回忆段落过短（约{past_len}字，占比{ratio*100:.0f}%），"
+                f"要求至少{min_chars}字，且占比不得低于 {min_ratio*100:.0f}%；"
+                "必须写成完整场景，包含四步：假性温和→突然反咬→无人帮她→结果性伤害。"
             )
-        return min(1.0, ratio / 0.25), ""
+        # 高于上限：也给出反馈，要求缩短上一世部分，把更多篇幅留给今世复仇
+        if ratio > max_ratio:
+            return max(0.0, (1.0 - ratio) / (1.0 - max_ratio + 1e-6)), (
+                f"上一世回忆段落过长（约{past_len}字，占比{ratio*100:.0f}%），"
+                f"要求占比不得高于 {max_ratio*100:.0f}%，"
+                "需要压缩回忆篇幅，把更多空间留给这一世的布局、反击和复仇后续影响。"
+            )
+        # 在目标区间 [min_ratio, max_ratio] 内视为 1.0
+        return 1.0, ""
 
     def _check_continuity(self, chapter_content: str, prev_tail_scene: str, prev_unresolved_hook: str) -> Tuple[float, str]:
         """
@@ -1185,10 +1197,13 @@ class RebirthRevengeGenerator:
         # 上一世：硬约束（不再“自主判断”）
         # 第1、2章为濒死与重生觉醒阶段，禁止插入形式化的“上一世回忆段落”
         if need_prev_life and prev_life_clue and chapter_num not in (1, 2):
+            # 对于你当前的需求，强制把上一世比例锁定在 35%~50% 区间
+            past_ratio_min = 0.35
+            past_ratio_max = 0.50
             prompt += f"""
 【上一世回忆·硬约束】（必须遵守，否则视为不合格）
 - 本章**必须**出现一段完整的「上一世受害」回忆段落，插入位置须服从梗概中的 flashback_breakpoint（{flashback_breakpoint_hint or "在节拍卡标明的那一拍之后"}）。
-- **占比强制**：正文中上一世相关内容字数须占全章的 **{int(past_ratio_min*100)}%~{int(past_ratio_max*100)}%**（约 250~400 字），不得用一句“像上一世那样”带过。
+- **占比强制**：正文中上一世相关内容字数须占全章的 **{int(past_ratio_min*100)}%~{int(past_ratio_max*100)}%**，不得用一句“像上一世那样”带过。
 - **四步结构**（上一世段落必须依次包含，写成可感知场景，禁止写成摘要）：
   ① 假性温和：先给她一点希望（某人表面和气/场面看似正常）。
   ② 突然反咬：有人当众翻旧账、倒打一耙或栽赃（谁先开口、说了什么、其他人什么反应）。
@@ -1422,12 +1437,13 @@ class RebirthRevengeGenerator:
         if isinstance(present, dict):
             need_prev_life = present.get("need_prev_life", need_prev_life_infer) if present.get("need_prev_life") is not None else need_prev_life_infer
             flashback_breakpoint_hint = present.get("flashback_breakpoint") or ""
-            past_ratio_min = float(present.get("past_ratio_min", 0.20))
-            past_ratio_max = float(present.get("past_ratio_max", 0.32))
+            # 固定上一世比例在 35%~50% 区间，覆盖旧默认值
+            past_ratio_min = 0.35
+            past_ratio_max = 0.50
         else:
             need_prev_life = need_prev_life_infer
             flashback_breakpoint_hint = ""
-            past_ratio_min, past_ratio_max = 0.20, 0.32
+            past_ratio_min, past_ratio_max = 0.35, 0.50
         # 从 master 章节卡中读取“整书最大复仇主线小推进”和本章写作限制
         global_seed_progress = ""
         chapter_constraints: List[str] = []
