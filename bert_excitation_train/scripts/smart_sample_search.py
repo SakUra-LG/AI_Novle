@@ -68,18 +68,19 @@ def load_universal_samples():
         return None, None
 
 def find_similar_samples(query, sample_vectors, samples, top_k=5, min_similarity=0.3, 
-                        required_tags=None, min_score=None):
+                        required_tags=None, min_score=None, sample_set=None):
     """
-    查找相似样本（支持多标签过滤）
+    查找相似样本（支持多标签过滤、按样本集类型过滤）
     
     参数：
         query: 查询文本
         sample_vectors: 样本向量
-        samples: 样本列表
+        samples: 样本列表（可含 sample_set 字段，如 "重生复仇爽感"、"上一世委屈"、"universal"）
         top_k: 返回前k个结果
         min_similarity: 最小相似度阈值
         required_tags: 必需的标签（字典），例如 {'emotion_tags': ['紧张', '恐惧']}
         min_score: 最低评分要求
+        sample_set: 只从该样本集中检索，如 "重生复仇爽感"、"上一世委屈"、"universal"；可为 list 表示多选
     """
     # 向量化查询
     query_vector = vectorize_text(query)
@@ -92,6 +93,21 @@ def find_similar_samples(query, sample_vectors, samples, top_k=5, min_similarity
     
     if len(valid_indices) == 0:
         return []
+    
+    # 按样本集类型过滤（正文生成时按“委屈/爽感”自动调用；未带 sample_set 的旧数据视为 universal）
+    if sample_set is not None:
+        allowed = [sample_set] if isinstance(sample_set, str) else list(sample_set)
+        filtered = []
+        for idx in valid_indices:
+            idx = int(idx)
+            if idx >= len(samples):
+                continue
+            s_set = samples[idx].get("sample_set") or "universal"
+            if s_set in allowed:
+                filtered.append(idx)
+        valid_indices = np.array(filtered)
+        if len(valid_indices) == 0:
+            return []
     
     # 如果指定了标签过滤
     if required_tags:
@@ -180,29 +196,19 @@ def adapt_sample_content(sample_content, target_context):
     
     return adapted_content
 
-def search_and_adapt_samples(user_input, target_context="", top_k=3, min_similarity=0.3):
-    """搜索并适配样本"""
-    # 加载样本库
+def search_and_adapt_samples(user_input, target_context="", top_k=3, min_similarity=0.3, sample_set=None):
+    """搜索并适配样本。sample_set 为 None 时检索全部；为 '重生复仇爽感'/'上一世委屈'/'universal' 时只从该集检索。"""
     sample_vectors, samples = load_universal_samples()
     if sample_vectors is None:
         print("请先运行 handle_universal_samples.py 初始化样本库")
-        return None
-
-    print(f"样本库已加载，包含 {len(samples)} 个通用样本")
+        return []
 
     try:
-        # 查找相似样本
         similar_samples = find_similar_samples(
-            user_input, sample_vectors, samples, top_k, min_similarity
+            user_input, sample_vectors, samples, top_k=top_k, min_similarity=min_similarity, sample_set=sample_set
         )
-        
         if not similar_samples:
-            print("未找到相似度足够高的样本")
-            return None
-
-        print(f"找到 {len(similar_samples)} 个相似样本")
-        
-        # 适配样本内容
+            return []
         adapted_samples = []
         for sample in similar_samples:
             adapted_content = adapt_sample_content(sample['content'], target_context)
@@ -211,12 +217,47 @@ def search_and_adapt_samples(user_input, target_context="", top_k=3, min_similar
                 'adapted_content': adapted_content,
                 'original_content': sample['content']
             })
-        
         return adapted_samples
-
     except Exception as e:
-        print(f"处理过程中出错: {e}")
-        return None
+        print(f"样本检索出错: {e}")
+        return []
+
+
+def search_and_adapt_samples_by_set(user_input, target_context, sample_set, top_k=2, min_similarity=0.25):
+    """按样本集类型检索并适配，用于正文生成时注入「重生复仇爽感」或「上一世委屈」参考。"""
+    return search_and_adapt_samples(
+        user_input, target_context, top_k=top_k, min_similarity=min_similarity, sample_set=sample_set
+    )
+
+
+def search_rebirth_samples_for_chapter(rag_query, target_context, need_prev_life, has_revenge, top_k_per_set=2):
+    """
+    根据本章是否含上一世回忆、是否含复仇情节，自动检索对应样本集并返回。
+    返回: {"revenge": [...], "grievance": [...], "universal": [...]}，每类为适配后的样本列表。
+    """
+    sample_vectors, samples = load_universal_samples()
+    if sample_vectors is None:
+        return {"revenge": [], "grievance": [], "universal": []}
+    out = {"revenge": [], "grievance": [], "universal": []}
+    try:
+        if has_revenge:
+            out["revenge"] = search_and_adapt_samples_by_set(
+                rag_query, target_context, "重生复仇爽感", top_k=top_k_per_set, min_similarity=0.25
+            )
+        if need_prev_life:
+            out["grievance"] = search_and_adapt_samples_by_set(
+                rag_query, target_context, "上一世委屈", top_k=top_k_per_set, min_similarity=0.25
+            )
+        out["universal"] = search_and_adapt_samples(
+            rag_query, target_context, top_k=top_k_per_set, min_similarity=0.25, sample_set="universal"
+        )
+        if not out["universal"]:
+            out["universal"] = search_and_adapt_samples(
+                rag_query, target_context, top_k=top_k_per_set, min_similarity=0.25
+            )
+    except Exception as e:
+        print(f"章节样本检索出错: {e}")
+    return out
 
 def generate_enhanced_prompt(user_input, adapted_samples, target_context=""):
     """生成增强的提示词"""

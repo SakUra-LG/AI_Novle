@@ -47,17 +47,23 @@ def batch_vectorize(texts, batch_size=32):
 
     return np.vstack(all_embeddings)
 
+# 多套样本集：文件名 -> 样本集类型（正文生成时会按类型自动调用）
+SAMPLE_FILES_WITH_SET = [
+    ("universal_samples.txt", "universal"),
+    ("rebirth_revenge_samples.txt", "重生复仇爽感"),
+    ("prev_life_grievance_samples.txt", "上一世委屈"),
+]
+
 def read_universal_samples(file_path):
-    """读取通用样本文件"""
+    """读取通用样本文件，文件不存在时返回空字符串（不报错）"""
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
             return file.read()
     except FileNotFoundError:
-        print(f"错误：文件 {file_path} 不存在")
-        exit(1)
+        return ""
     except Exception as e:
-        print(f"读取文件时出错: {e}")
-        exit(1)
+        print(f"读取文件时出错 {file_path}: {e}")
+        return ""
 
 def parse_universal_samples(content):
     """
@@ -179,18 +185,28 @@ def extract_tags(text, category):
 
 # 主流程
 if __name__ == "__main__":
-    # 读取通用样本内容（路径相对于项目根目录，而不是当前运行目录）
-    universal_file_path = os.path.join(DATA_DIR, "universal_samples.txt")
-    content = read_universal_samples(universal_file_path)
-
-    # 解析文本 -> 样本列表
-    samples = parse_universal_samples(content)
+    # 支持多套样本集：按 SAMPLE_FILES_WITH_SET 依次读取并合并，每份带 sample_set 标记
+    samples = []
+    for filename, set_name in SAMPLE_FILES_WITH_SET:
+        file_path = os.path.join(DATA_DIR, filename)
+        content = read_universal_samples(file_path)
+        if not content.strip():
+            if filename == "universal_samples.txt":
+                print(f"警告：{filename} 不存在或为空，请至少保留通用样本库")
+            else:
+                print(f"跳过（不存在或为空）: {filename}")
+            continue
+        parsed = parse_universal_samples(content)
+        for s in parsed:
+            s["sample_set"] = set_name
+            samples.append(s)
+        print(f"已加载 {filename} -> {set_name}，共 {len(parsed)} 条")
 
     if not samples:
-        print("没有提取到有效的样本，程序退出！")
-        exit()
+        print("没有提取到有效的样本，程序退出！请至少提供 data/universal_samples.txt")
+        exit(1)
 
-    print(f"成功解析 {len(samples)} 个通用样本")
+    print(f"合并后共 {len(samples)} 个样本")
 
     # 提取每条的 category+content 作为向量化输入
     texts = [f"{s['category']}：{s['content']}" for s in samples]
@@ -203,43 +219,39 @@ if __name__ == "__main__":
         print(f"向量化过程中出错: {e}")
         exit(1)
 
-    # 保存结果
+    # 保存结果（保持与原有 universal 文件名兼容，但内容中每条带 sample_set）
     try:
-        # 确保 data 目录存在（第一次运行可能还没有）
         os.makedirs(DATA_DIR, exist_ok=True)
-
         vectors_path = os.path.join(DATA_DIR, 'universal_samples_vectors.npy')
         meta_path = os.path.join(DATA_DIR, 'universal_samples_data.json')
 
         np.save(vectors_path, vectors)
-
         with open(meta_path, 'w', encoding='utf-8') as f:
             json.dump({
                 "samples": samples,
                 "count": len(samples),
                 "categories": list(set(s['category'] for s in samples)),
-                "tags": list(set(tag for s in samples for tag in s['tags']))
+                "tags": list(set(tag for s in samples for tag in s['tags'])),
+                "sample_sets": list(set(s.get('sample_set', 'universal') for s in samples))
             }, f, ensure_ascii=False, indent=4)
 
-        print(f"成功保存通用样本向量和内容")
+        print(f"成功保存样本向量和内容")
+        print(f"样本集统计:")
+        set_counts = {}
+        for s in samples:
+            st = s.get("sample_set", "universal")
+            set_counts[st] = set_counts.get(st, 0) + 1
+        for st, count in set_counts.items():
+            print(f"  {st}: {count} 个样本")
         print(f"样本分类统计:")
         categories = {}
         for sample in samples:
             cat = sample['category']
             categories[cat] = categories.get(cat, 0) + 1
-        
-        for cat, count in categories.items():
+        for cat, count in list(categories.items())[:15]:
             print(f"  {cat}: {count} 个样本")
-            
-        print(f"\n标签统计:")
-        all_tags = {}
-        for sample in samples:
-            for tag in sample['tags']:
-                all_tags[tag] = all_tags.get(tag, 0) + 1
-        
-        for tag, count in sorted(all_tags.items(), key=lambda x: x[1], reverse=True):
-            print(f"  {tag}: {count} 次")
-            
+        if len(categories) > 15:
+            print(f"  ... 共 {len(categories)} 个类别")
     except Exception as e:
         print(f"保存结果时出错: {e}")
         exit(1)

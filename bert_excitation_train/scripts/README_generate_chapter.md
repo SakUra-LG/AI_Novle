@@ -1,50 +1,67 @@
 # 📖 重生复仇小说正文生成器使用说明
 
-## 🎯 功能概述
+## 一、如何使用（放在第一个点）
 
-本脚本用于生成重生复仇小说的正文内容，整合了项目的所有核心技术：
-
-1. **样本集结构（RAG检索）**：从通用样本库中检索相似的高评分样本
-2. **循环评分（情绪反馈循环）**：生成→评分→反馈→优化，最多迭代3次
-3. **生成后评分**：规则评分 + 情绪分析双重评估
-4. **回忆触发规则**：智能检测人物/地点/事件类型，只在触发时调用上一世回忆
-
-## 🚀 快速开始
-
-### 基本用法
+### 1. 基本命令（推荐在 `bert_excitation_train/` 目录下运行）
 
 ```bash
-# 生成第1章（推荐：在 bert_excitation_train/ 目录下运行）
-python scripts/generate_chapter_content.py --chapter 1
+# 从第 6 章起连续生成 5 章（即生成第 6、7、8、9、10 章），每章生成后立即写入 outputs/chapters/
+python scripts/generate_chapter_content.py --chapter 1 --batch 5
 
-# 生成第12章，生成3个版本，每个版本最多迭代3次
-python scripts/generate_chapter_content.py --chapter 12 --versions 3 --iterations 3
+# 只生成单章（例如第 1 章）
+python scripts/generate_chapter_content.py --chapter 1 --batch 1
 
-# 自定义最小情绪强度
-python scripts/generate_chapter_content.py --chapter 1 --min-emotion 0.7
+# 从第 12 章起生成 3 章，并提高每章迭代次数与情绪要求
+python scripts/generate_chapter_content.py --chapter 12 --batch 3 --iterations 3 --min-emotion 0.6
 ```
 
-### Windows PowerShell（从任意目录运行）
+### 2. Windows PowerShell（从任意目录运行）
 
-> 说明：`generate_chapter_content.py` 会把 `outputs/...` 这类相对路径自动解析到 `bert_excitation_train/outputs/...`，因此你不必严格要求当前工作目录。
+> 说明：脚本会把 `outputs/...` 等相对路径解析到 `bert_excitation_train/outputs/...`，不要求一定在项目根目录运行。
 
 ```powershell
-# 直接执行（如果你当前就在 AI_Novle 目录）
-python .\bert_excitation_train\scripts\generate_chapter_content.py --chapter 1
+# 从第 6 章起批量生成 5 章
+python .\bert_excitation_train\scripts\generate_chapter_content.py --chapter 6 --batch 5
 
-# 或者先切换到 bert_excitation_train 再执行
+# 或先进入 bert_excitation_train 再执行
 cd .\bert_excitation_train
-python .\scripts\generate_chapter_content.py --chapter 1
+python .\scripts\generate_chapter_content.py --chapter 6 --batch 5
 ```
 
-### 参数说明
+### 3. 参数说明
 
-- `--chapter`: 章节号（必需）
-- `--master-ctx`: 章节梗概文件路径（默认：`outputs/master_ctx.txt`）
-- `--prev-life-ctx`: 上一世线索文件路径（默认：`outputs/prev_life_ctx.txt`）
-- `--versions`: 生成版本数（默认：3）
-- `--iterations`: 每版本最大迭代次数（默认：3）
-- `--min-emotion`: 最小情绪强度阈值（默认：0.6）
+| 参数 | 含义 | 默认值 |
+|------|------|--------|
+| `--chapter` | **起始章节号**（如 6 表示从第 6 章开始） | 必填 |
+| `--batch` | 连续生成的章数（如 5 表示生成 5 章） | 5 |
+| `--master-ctx` | 章节梗概文件（修正后，优先用 final） | `outputs/master_ctx_final.txt` 若存在，否则 `outputs/master_ctx.txt` |
+| `--original-master-ctx` | 修正前梗概文件（供模型对照） | 使用 final 时自动用同目录 `master_ctx.txt` |
+| `--prev-life-ctx` | 上一世线索文件 | `outputs/prev_life_ctx_final.txt` 若存在，否则 `outputs/prev_life_ctx.txt` |
+| `--versions` | 每章生成版本数（批量时建议 1） | 1 |
+| `--iterations` | 每版本最大迭代次数 | 2 |
+| `--min-emotion` | 最小情绪强度阈值 | 0.5 |
+
+### 4. 当前流程简述
+
+- **双梗概**：每章会同时给模型「修正后梗概」和「修正前梗概」。
+- **上一章衔接**：非第一章时，会把**上一章完整正文**读入 prompt，保证衔接。
+- **三步生成**：① 根据梗概生成**节拍卡**（仅日志）→ ② 根据梗概生成**本章情绪强化点**（委屈/愤怒/同情/爽感）→ ③ 根据节拍卡 + 情绪强化点 + 梗概生成正文。
+- **情绪强化点**：正文生成前，先根据梗概列出本章的**情绪强化点**——上一世回忆处强化委屈/愤怒/同情，这一世复仇处强化爽感；模型在对应情节点必须加强情绪描写。
+- **上一世回忆**：由模型根据梗概与节拍卡**自主判断**是否插入回忆，以及插在哪、怎么插；回忆占比建议 &lt;40%。
+- **输出**：每章一个文件 `outputs/chapters/chapter_001.txt`、`chapter_002.txt` … 每生成完一章立即写入，便于下一章读取上一章内容。
+
+---
+
+## 🎯 功能概述
+
+本脚本用于生成重生复仇小说的正文内容，整合了以下能力：
+
+1. **双梗概 + 上一章全文**：修正前/修正后梗概 + 上一章正文衔接
+2. **节拍卡 + 情绪强化点 + 正文三步生成**：先出节拍卡，再出情绪强化点，再按二者写正文
+3. **情绪强化点（新）**：正文生成前根据梗概列出本章情绪强化点——上一世回忆处强化委屈/愤怒/同情，复仇处强化爽感
+4. **样本集结构（RAG检索）**：从通用样本库检索相似高评分样本（可选）
+5. **循环评分与情绪反馈**：生成→评分→反馈→优化
+6. **回忆由模型自主判断**：不强制插回忆，由模型根据梗概决定是否插、插在哪
 
 ## 📋 核心功能
 
@@ -75,7 +92,30 @@ python .\scripts\generate_chapter_content.py --chapter 1
 - 禁止硬插回忆
 - 否则正文会很乱
 
-### 3. 风格要求（短剧节奏）
+### 3. 情绪强化点（正文生成前预列）
+
+在生成正文**之前**，脚本会根据本章梗概 + 上一世线索，自动生成本章的【情绪强化点】列表，并注入正文 prompt。模型在写作时必须遵循这些强化点：
+
+| 类型 | 适用场景 | 强化要求 |
+|------|----------|----------|
+| **委屈强化点** | 上一世回忆 | 在对应情境加强主角被冤枉/被误解的委屈感（内心独白、身体感受） |
+| **愤怒强化点** | 上一世回忆 | 加强对陷害者的愤怒、憎恨 |
+| **同情强化点** | 上一世回忆 | 让读者共鸣主角遭遇、憎恶反派 |
+| **爽感强化点** | 这一世复仇 | 加强复仇成功的痛快感、反杀畅快感、让对手付出代价的满足感 |
+
+若无回忆或复仇情节，对应项填「本章无上一世回忆/无复仇情节」。
+
+### 4. 特殊章节约束（第1章 / 第2章）
+
+- **第1章（上一世临死）**：
+  - 只写上一世临死前的经历（ICU/病房/被放弃抢救/被背叛等）。
+  - 正文中**禁止出现“重生”“回到过去”“第二次人生”等字样**，只能写到她意识到“自己要死/被害死”的绝望。
+- **第2章（重生觉醒）**：
+  - 开篇先写她在熟悉环境中醒来，对身体状态、时间、环境的异常产生**震惊与不适应**，不能一上来就 OS “我重生了”。
+  - 通过对比日期、手机、亲友/同事状态等细节，从“怀疑是梦/记错时间”逐步过渡到“越来越不对劲”，最后才在内心明确意识到“自己重来了一次/时间倒回”，此时才允许在文本中出现“重生”概念。
+  - 强制「震惊 → 怀疑 → 验证 → 确认」的过程，避免一键开局“我重生了”的直白写法。
+
+### 5. 风格要求（短剧节奏）
 
 - 字数：800-1200字
 - 每1000字至少1个情绪点或反转
@@ -83,7 +123,7 @@ python .\scripts\generate_chapter_content.py --chapter 1
 - 情绪外显
 - 结尾留悬念或冲突升级
 
-### 4. 情绪强度保证
+### 6. 情绪强度保证
 
 **使用的技术**：
 1. **RAG检索**：从样本库中检索高评分样本作为参考
@@ -98,28 +138,24 @@ python .\scripts\generate_chapter_content.py --chapter 1
 - 情绪转折：明显的情绪变化和波动
 - 情绪密度：每100字至少2-3个情绪词汇
 
-## 📊 生成流程
+## 📊 生成流程（当前批量模式）
+
+对每一章（如 6、7、8、9、10）：
 
 ```
-1. 加载章节梗概和上一世线索
+1. 加载本章修正后梗概 + 修正前梗概 + 上一世线索；若非第一章则加载上一章全文
    ↓
-2. 检查回忆触发条件（人物/地点/事件类型）
+2. 第一步：根据梗概生成「节拍卡」（仅输出到控制台日志，不写文件）
    ↓
-3. RAG检索相似样本（从通用样本库）
+3. 第二步：根据梗概生成本章「情绪强化点」（委屈/愤怒/同情/爽感），注入正文 prompt
    ↓
-4. 构建生成提示词（包含触发规则、RAG样本、情绪要求）
+4. 第三步：根据节拍卡 + 情绪强化点 + 双梗概 + 上一章全文 构建正文提示词（回忆由模型自主判断）
    ↓
-5. 生成多个版本（默认3个）
+5. 调用模型生成正文，必要时迭代优化（评分 + 情绪反馈）
    ↓
-6. 对每个版本进行循环优化：
-   - 生成内容
-   - 规则评分
-   - 情绪分析
-   - 如果情绪强度不足，添加反馈并重新生成（最多3次）
+6. 立即保存到 outputs/chapters/chapter_XXX.txt，并供下一章作为「上一章全文」使用
    ↓
-7. 选择最佳版本（综合评分最高）
-   ↓
-8. 保存到 outputs/chapters/chapter_XXX.txt
+7. 继续下一章，重复 1～6
 ```
 
 ## 📁 输出文件
@@ -160,48 +196,31 @@ python .\scripts\generate_chapter_content.py --chapter 1
 
 ## 📝 使用示例
 
-### 示例1：生成第1章
+### 示例1：从第 6 章起批量生成 5 章（最常用）
 
 ```bash
-python scripts/generate_chapter_content.py --chapter 1
+python scripts/generate_chapter_content.py --chapter 6 --batch 5
 ```
 
-输出：
-```
-📚 加载上下文文件
-✅ 已加载 100 章章节梗概
-✅ 已加载 100 条上一世线索
-📝 已提取 10 个人物
-📍 已提取 8 个地点
+会依次生成第 6、7、8、9、10 章；每章先打节拍卡到控制台，再生成正文并立即写入 `chapter_006.txt`～`chapter_010.txt`。
 
-📝 生成第1章
-✅ 找到 3 个RAG样本
-
-🔄 生成版本 1/3
-  📊 评分: 75.20, 情绪强度: 0.650 ✅
-  ✅ 版本1完成（评分: 75.20, 情绪: 0.650）
-
-💾 已保存到: outputs/chapters/chapter_001.txt
-
-✅ 第1章生成完成！
-   评分: 75.20
-   情绪强度: 0.650
-   综合评分: 69.00
-```
-
-### 示例2：生成第12章（高要求）
+### 示例2：只生成单章（如第 1 章）
 
 ```bash
-python scripts/generate_chapter_content.py --chapter 12 --versions 5 --iterations 5 --min-emotion 0.7
+python scripts/generate_chapter_content.py --chapter 1 --batch 1
 ```
 
-这会生成5个版本，每个版本最多迭代5次，情绪强度要求 >= 0.7。
+### 示例3：提高质量（更多迭代、更高情绪要求）
+
+```bash
+python scripts/generate_chapter_content.py --chapter 12 --batch 3 --iterations 3 --min-emotion 0.6
+```
 
 ## ⚠️ 注意事项
 
 1. **确保上下文文件存在**：
-   - `outputs/master_ctx.txt`（章节梗概）
-   - `outputs/prev_life_ctx.txt`（上一世线索）
+   - 章节梗概：优先使用 `outputs/master_ctx_final.txt`（修正后），脚本会自动加载同目录 `master_ctx.txt`（修正前）供模型对照；若无 final 则用 `outputs/master_ctx.txt`。
+   - 上一世线索：优先 `outputs/prev_life_ctx_final.txt`，否则 `outputs/prev_life_ctx.txt`。
 
 2. **RAG样本库**：
    - 确保已运行 `python scripts/handle_universal_samples.py` 初始化样本库
@@ -228,26 +247,25 @@ python scripts/generate_chapter_content.py --chapter 12 --versions 5 --iteration
 - 或显式指定路径：
 
 ```bash
-python scripts/generate_chapter_content.py --chapter 1 --master-ctx outputs/master_ctx.txt --prev-life-ctx outputs/prev_life_ctx.txt
+python scripts/generate_chapter_content.py --chapter 1 --batch 1 --master-ctx outputs/master_ctx_final.txt --prev-life-ctx outputs/prev_life_ctx_final.txt
 ```
 
 > 备注：如果 `prev_life_ctx.txt` 确实不存在，新版脚本会提示并跳过“上一世回忆触发”，仍可生成正文。
 
-## 🔄 批处理生成
+## 🔄 代码内批处理示例
 
-可以创建一个批处理脚本来生成所有章节：
+在代码中批量生成（例如每 5 章一批）：
 
 ```python
-# batch_generate.py
 from generate_chapter_content import RebirthRevengeGenerator
 
 generator = RebirthRevengeGenerator()
-generator.load_contexts('outputs/master_ctx.txt', 'outputs/prev_life_ctx.txt')
+generator.load_contexts('outputs/master_ctx_final.txt', 'outputs/prev_life_ctx_final.txt')
+generator.load_existing_chapters()
 
-for chapter_num in range(1, 101):
-    print(f"\n{'='*80}")
-    print(f"生成第{chapter_num}章")
-    generator.generate_chapter(chapter_num, num_versions=3, max_iterations=3)
+# 从第 6 章起连续生成 5 章（节拍卡 + 正文，每章立即写盘）
+succeeded = generator.generate_chapter_batch(6, batch_size=5)
+print("已生成章节:", succeeded)
 ```
 
 ## 📈 质量保证

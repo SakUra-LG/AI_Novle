@@ -15,9 +15,15 @@ from datetime import datetime
 from typing import Dict, List, Optional, Tuple
 
 # 导入项目模块
-from smart_sample_search import search_and_adapt_samples
+from smart_sample_search import search_and_adapt_samples, search_rebirth_samples_for_chapter
 from optimized_rule_scorer import OptimizedRuleScorer
 from emotion_analyzer import EmotionAnalyzer
+
+try:
+    from knowledge_graph import RebirthKnowledgeGraph
+    _KG_AVAILABLE = True
+except ImportError:
+    _KG_AVAILABLE = False
 
 # 配置API
 API_Key_QW = "sk-a2966f4e37134351904851679884cb67"
@@ -31,13 +37,17 @@ class RebirthRevengeGenerator:
     def __init__(self):
         self.scorer = OptimizedRuleScorer()
         self.emotion_analyzer = EmotionAnalyzer()
-        self.master_ctx = {}  # 章节梗概
+        self.master_ctx = {}  # 章节梗概（修正后，主用）
+        self.master_ctx_original = {}  # 章节梗概（修正前，供模型对照）
         self.prev_life_ctx = {}  # 上一世线索
         self.project_root = PROJECT_ROOT
         self.outputs_dir = DEFAULT_OUTPUTS_DIR
         # 已生成章节（用于上下文），key 为章节号，value 为正文内容
         self.generated_chapters = {}
         
+        self.use_knowledge_graph = True  # 是否使用知识图谱（生成前查、生成后更新）
+        self._kg: Optional[object] = None  # RebirthKnowledgeGraph 实例
+
         # 人物、地点、事件类型提取（用于回忆触发）
         self.characters = set()
         self.locations = set()
@@ -102,7 +112,51 @@ class RebirthRevengeGenerator:
         if loaded > 0:
             print(f"📖 已从磁盘加载 {loaded} 章历史正文用于上下文衔接")
     
-    def load_contexts(self, master_ctx_file, prev_life_ctx_file):
+    def get_previous_chapter_content(self, chapter_num: int, chapters_dir: Optional[str] = None) -> Optional[str]:
+        """获取上一章完整正文，用于衔接。优先内存，其次磁盘。"""
+        if chapter_num <= 1:
+            return None
+        prev_num = chapter_num - 1
+        if prev_num in self.generated_chapters:
+            return self.generated_chapters[prev_num]
+        if chapters_dir is None:
+            chapters_path = self.outputs_dir / "chapters"
+        else:
+            chapters_path = self._resolve_path(chapters_dir)
+        prev_file = chapters_path / f"chapter_{prev_num:03d}.txt"
+        if prev_file.exists():
+            try:
+                with open(prev_file, 'r', encoding='utf-8') as f:
+                    return f.read().strip()
+            except Exception:
+                pass
+        return None
+    
+    def _load_master_ctx_into(self, file_path: Path, target: Dict[int, str]):
+        """将梗概文件解析为 chapter_num -> 原文，写入 target。支持单章与第N-M章。"""
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        for line in content.split('\n'):
+            line = line.strip()
+            if not line:
+                continue
+            m_single = re.match(r'^第(\d+)章\s*[：:]\s*(.+)$', line)
+            if m_single:
+                chapter_num = int(m_single.group(1))
+                target[chapter_num] = m_single.group(2).strip()
+                continue
+            m_range = re.match(r'^第(\d+)-(\d+)章\s+(.+)$', line)
+            if m_range:
+                start, end = int(m_range.group(1)), int(m_range.group(2))
+                body = m_range.group(3).strip()
+                if '：' in body:
+                    body = body.split('：', 1)[1].strip()
+                elif ':' in body:
+                    body = body.split(':', 1)[1].strip()
+                for ch in range(start, end + 1):
+                    target[ch] = body
+
+    def load_contexts(self, master_ctx_file, prev_life_ctx_file, original_master_ctx_file: Optional[str] = None):
         """加载章节梗概和上一世线索"""
         print("=" * 80)
         print("📚 加载上下文文件")
@@ -117,21 +171,17 @@ class RebirthRevengeGenerator:
                 f"未找到章节梗概文件: {master_path}\n"
                 f"提示：请确认文件存在，或用 --master-ctx 指定正确路径。"
             )
-        with open(master_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-            for line in content.split('\n'):
-                if line.strip() and '章' in line:
-                    match = re.search(r'第(\d+)章', line)
-                    if match:
-                        chapter_num = int(match.group(1))
-                        # 提取章节内容（冒号后的部分）
-                        if '：' in line:
-                            chapter_content = line.split('：', 1)[1].strip()
-                        elif ':' in line:
-                            chapter_content = line.split(':', 1)[1].strip()
-                        else:
-                            chapter_content = line
-                        self.master_ctx[chapter_num] = chapter_content
+        self._load_master_ctx_into(master_path, self.master_ctx)
+        if original_master_ctx_file:
+            orig_path = self._resolve_path(original_master_ctx_file)
+            if orig_path.exists():
+                self._load_master_ctx_into(orig_path, self.master_ctx_original)
+                print(f"✅ 已加载修正前梗概: {orig_path.name} ({len(self.master_ctx_original)} 章)")
+        elif "final" in str(master_path).lower() or "final" in master_ctx_file:
+            orig_path = master_path.parent / "master_ctx.txt"
+            if orig_path.exists():
+                self._load_master_ctx_into(orig_path, self.master_ctx_original)
+                print(f"✅ 已自动加载修正前梗概: {orig_path.name} ({len(self.master_ctx_original)} 章)")
         
         # 加载上一世线索
         if not prev_life_path.exists():
@@ -142,18 +192,13 @@ class RebirthRevengeGenerator:
             with open(prev_life_path, 'r', encoding='utf-8') as f:
                 content = f.read()
                 for line in content.split('\n'):
-                    if line.strip() and '章对应线索' in line:
-                        match = re.search(r'第(\d+)章对应线索', line)
-                        if match:
-                            chapter_num = int(match.group(1))
-                            # 提取线索内容
-                            if '：' in line:
-                                clue = line.split('：', 1)[1].strip()
-                            elif ':' in line:
-                                clue = line.split(':', 1)[1].strip()
-                            else:
-                                clue = line
-                            self.prev_life_ctx[chapter_num] = clue
+                    line = line.strip()
+                    if not line:
+                        continue
+                    m = re.match(r'^第(\d+)章对应线索\s*[：:]\s*(.+)$', line)
+                    if m:
+                        chapter_num = int(m.group(1))
+                        self.prev_life_ctx[chapter_num] = m.group(2).strip()
         
         print(f"✅ 已加载 {len(self.master_ctx)} 章章节梗概")
         print(f"✅ 已加载 {len(self.prev_life_ctx)} 条上一世线索")
@@ -194,6 +239,9 @@ class RebirthRevengeGenerator:
         """
         if not (chapter_outline or "").strip():
             return True
+        # 新格式兼容：若章节卡明确标注 need_prev_life:false，则强制视为当前时间线
+        if re.search(r'need_prev_life"\s*:\s*false', chapter_outline) or re.search(r'need_prev_life\s*[:=]\s*false', chapter_outline):
+            return True
         text = (chapter_outline or "") + " " + (prev_life_clue or "")
         # 当前时间线典型关键词：濒死、病床、ICU、睁不开眼、归零、睁开眼、发现自己躺在、重生、日记本、不能再重蹈覆辙
         current_only_keywords = [
@@ -207,6 +255,68 @@ class RebirthRevengeGenerator:
         if has_revenge:
             return False
         return has_current_only
+
+    def _parse_json_maybe(self, text: Optional[str]) -> Optional[Dict]:
+        if not text:
+            return None
+        s = text.strip()
+        if not (s.startswith("{") and s.endswith("}")):
+            return None
+        try:
+            obj = json.loads(s)
+            return obj if isinstance(obj, dict) else None
+        except Exception:
+            return None
+
+    def _render_master_card_for_prompt(self, card: Dict) -> str:
+        """将 master_ctx_final 的 JSON 章节卡渲染为更适合模型执行的文本梗概"""
+        present = card.get("present", {}) if isinstance(card.get("present"), dict) else {}
+        binding = card.get("binding", {}) if isinstance(card.get("binding"), dict) else {}
+        beats = present.get("beats") if isinstance(present.get("beats"), list) else []
+        beats_text = "\n".join([f"{i+1}. {b}" for i, b in enumerate(beats)])
+        return (
+            "【章节执行卡（结构化）】\n"
+            f"- chapter_id: {card.get('chapter_id')}\n"
+            f"- present_mainline: {present.get('present_mainline', '')}\n"
+            f"- scene: {present.get('scene', '')}\n"
+            f"- present_goal: {present.get('present_goal', '')}\n"
+            f"- surface_conflict: {present.get('surface_conflict', '')}\n"
+            f"- hidden_truth: {present.get('hidden_truth', '')}\n"
+            f"- need_prev_life: {present.get('need_prev_life', True)}\n"
+            f"- flashback_trigger: {present.get('flashback_trigger', '')}\n"
+            f"- flashback_breakpoint: {present.get('flashback_breakpoint', '')}\n"
+            f"- past_ratio_max: {present.get('past_ratio_max', 0.35)}\n"
+            f"- revenge_action: {present.get('revenge_action') or present.get('revenue_action', '')}\n"
+            f"- beats:\n{beats_text}\n"
+            f"- emotion_curve: {present.get('emotion_curve', '')}\n"
+            f"- ending_hook: {present.get('ending_hook', '')}\n"
+            "\n【强绑定映射（钥匙/锁）】\n"
+            f"- shared_trigger: {binding.get('shared_trigger', '')}\n"
+            f"- past_core_harm: {binding.get('past_core_harm', '')}\n"
+            f"- present_counterstrike: {binding.get('present_counterstrike', '')}\n"
+        ).strip()
+
+    def _render_prev_life_card_for_prompt(self, card: Dict) -> str:
+        """将 prev_life_ctx_final 的 JSON 受害卡渲染为可插入回忆的素材摘要"""
+        vp = card.get("victim_process") if isinstance(card.get("victim_process"), list) else []
+        vp_text = "\n".join([f"- {x}" for x in vp])
+        binding = card.get("binding", {}) if isinstance(card.get("binding"), dict) else {}
+        return (
+            "【上一世受害链条（结构化）】\n"
+            f"- past_event_title: {card.get('past_event_title', '')}\n"
+            f"- past_identity_state: {card.get('past_identity_state', '')}\n"
+            f"- setup: {card.get('setup', '')}\n"
+            f"- deception: {card.get('deception', '')}\n"
+            f"- victim_process:\n{vp_text}\n"
+            f"- collapse_point: {card.get('collapse_point', '')}\n"
+            f"- humiliation_result: {card.get('humiliation_result', '')}\n"
+            f"- emotion_core: {card.get('emotion_core', '')}\n"
+            f"- present_relevance: {card.get('present_relevance', '')}\n"
+            "\n【绑定】\n"
+            f"- shared_trigger: {binding.get('shared_trigger', '')}\n"
+            f"- past_core_harm: {binding.get('past_core_harm', '')}\n"
+            f"- present_counterstrike: {binding.get('present_counterstrike', '')}\n"
+        ).strip()
 
     def check_trigger_conditions(self, chapter_content: str) -> Tuple[bool, Optional[str], Optional[str]]:
         """
@@ -235,7 +345,6 @@ class RebirthRevengeGenerator:
                                 trigger_info: Optional[Tuple] = None,
                                 previous_chapters: List[str] = None) -> str:
         """构建生成提示词"""
-        
         # 基础提示词
         prompt = f"""角色：你是一个专业的小说作者，擅长创作短剧风格的重生复仇小说正文
 
@@ -251,6 +360,23 @@ class RebirthRevengeGenerator:
 
 【故事展开顺序】
 生成时按以下顺序组织内容：先看本章梗概的主要故事线 → 若涉及回忆则看上一世线索中主角曾受到的不公平待遇 → 再写这一世如何复仇或应对。两个强情绪方向：写上一世时突出对欺负者的愤怒憎恨与对主角的委屈同情（负面情绪）；写这一世复仇时重点营造爽感，让读者看完感到痛快、解气。
+
+"""
+        # 特殊章节：上一世临死（第1章）与重生觉醒（第2章）限制
+        if chapter_num == 1:
+            prompt += """
+【重生前限制（第1章）】
+- 本章只写上一世临死前的经历（ICU/病房/被抛弃抢救/被背叛等），正文中**禁止出现“重生”“回到过去”“第二次人生”等字样**。
+- 结尾只能停留在她意识到“自己被害死/要死了”的绝望感，不能意识到自己还有第二次机会或会重来一次。
+
+"""
+        if chapter_num == 2:
+            prompt += """
+【重生觉醒写法（第2章）】
+- 开篇先写她在熟悉环境中醒来，感受到身体状态、时间、环境的异常，重点是“震惊”和“不适应”，不要一上来就心想“我重生了”。
+- 接下来通过对比具体证据（日期、手机信息、亲人/同事状态等），从“怀疑是梦/记错时间”逐步过渡到“越来越不对劲”。
+- 在收集到足够多不正常的细节之后，才允许她在内心明确意识到“这是回到过去/自己重来了一次”，届时才可以在内心或独白中出现“重生”概念。
+- 严禁一开篇就直接写“她意识到自己重生了”，必须有“震惊 → 怀疑 →验证 → 确认”的过程。
 
 """
         
@@ -272,6 +398,7 @@ class RebirthRevengeGenerator:
 
 1. 当前情境中出现{trigger_content}时，自然过渡到回忆。
 2. 上一世回忆：必须在正文中直接点明是上一世，例如用「上一世，我……」「记得在上一世，我……」「上一世他曾……」等句式，让读者明确知道这是回忆。回忆要写具体场景（对话/动作/结果），体现主角当时被打压、被误解或失败，绝不写上一世成功或胜利。情绪上突出对欺负者的愤怒、憎恨，以及对主角的委屈、同情（负面情绪）。
+   - 若【本章章节梗概】中包含 `flashback_breakpoint` / `past_ratio_max`，必须严格遵守：在断点位置插入回忆；回忆段落占比不得超过 `past_ratio_max`（强制 < 40%）。
 3. 情绪变化：主角冷静、预判、不再犯错。
 4. 今生反制：体现提前准备、反向布局、让对方落入陷阱。这一世复仇部分要重点营造爽感，让读者感到痛快、解气。
 
@@ -328,7 +455,7 @@ class RebirthRevengeGenerator:
 
 【人物基调】
 - 女主：冷静、克制、带记忆优势
-- 反派：自信、轻视女主（因为不知道她重生）
+- 反派：自信、轻视女主，认为她软弱好欺负
 
 【输出格式】
 直接输出正文，不要添加章节标题、【触发场景】【上一世回忆】等小标题或总结说明；回忆部分用「上一世，我……」等句式在正文中点明即可。
@@ -444,16 +571,40 @@ class RebirthRevengeGenerator:
         print(f"{'='*80}")
         
         # 获取章节梗概
-        chapter_outline = self.master_ctx.get(chapter_num, "")
-        if not chapter_outline:
+        chapter_outline_raw = self.master_ctx.get(chapter_num, "")
+        if not chapter_outline_raw:
             print(f"❌ 未找到第{chapter_num}章的章节梗概")
             return []
         
         # 获取上一世线索
-        prev_life_clue = self.prev_life_ctx.get(chapter_num)
+        prev_life_clue_raw = self.prev_life_ctx.get(chapter_num)
+
+        # 兼容新格式：JSON 章节卡 / JSON 受害卡
+        chapter_outline_card = self._parse_json_maybe(chapter_outline_raw)
+        prev_life_card = self._parse_json_maybe(prev_life_clue_raw) if prev_life_clue_raw else None
+
+        if chapter_outline_card:
+            chapter_outline = self._render_master_card_for_prompt(chapter_outline_card)
+        else:
+            chapter_outline = chapter_outline_raw
+
+        if prev_life_card:
+            prev_life_clue = self._render_prev_life_card_for_prompt(prev_life_card)
+        else:
+            prev_life_clue = prev_life_clue_raw
         
-        # 检查触发条件
-        trigger_info = self.check_trigger_conditions(chapter_outline)
+        # 检查触发条件（新格式优先用章节卡的 flashback_trigger）
+        trigger_info = None
+        if chapter_outline_card:
+            present = chapter_outline_card.get("present", {}) if isinstance(chapter_outline_card.get("present"), dict) else {}
+            need_prev = present.get("need_prev_life", True)
+            trig = present.get("flashback_trigger")
+            if need_prev and trig and prev_life_clue:
+                trigger_info = (True, "card_trigger", str(trig))
+            else:
+                trigger_info = self.check_trigger_conditions(chapter_outline)
+        else:
+            trigger_info = self.check_trigger_conditions(chapter_outline)
         
         # 获取前文（最近5章），用于保证章节衔接和高分片段提取
         previous_chapters = []
@@ -558,7 +709,7 @@ class RebirthRevengeGenerator:
                         'word_short': word_short,
                     }
                     
-                    # 更新提示词（添加情绪与字数反馈）
+                    # 更新提示词（添加情绪、字数、连续性反馈）
                     if iteration < max_iterations - 1:
                         prompt = self._add_emotion_feedback(prompt, emotion_feedback, iteration + 1)
                     
@@ -655,6 +806,8 @@ class RebirthRevengeGenerator:
 
 请根据以上反馈重新创作。若字数不足，优先扩写至1000字以上；同时加强情绪表达与节奏感。
 """)
+        if emotion_feedback.get('continuity_feedback'):
+            parts.append("\n【连续性要求】（必须遵守）\n" + emotion_feedback['continuity_feedback'] + "\n")
         return base_prompt + "".join(parts)
     
     def select_best_version(self, versions: List[Dict]) -> Optional[Dict]:
@@ -685,6 +838,472 @@ class RebirthRevengeGenerator:
         print(f"💾 已保存到: {filepath}")
         return filepath
     
+    def _extract_prev_chapter_tail_and_hook(self, prev_chapter_full: Optional[str]) -> Tuple[str, str]:
+        """从上一章全文用大模型提取：最后场景、未解决钩子。用于下一章强制接续。"""
+        if not prev_chapter_full or len(prev_chapter_full.strip()) < 100:
+            return "", ""
+        tail = prev_chapter_full[-1200:] if len(prev_chapter_full) > 1200 else prev_chapter_full
+        prompt = f"""从下面这段「上一章正文结尾」中，提取两项（各1-2句话，不要编造）：
+
+1. 最后场景/动作：上一章最后一个已发生的具体场景、动作、对话或发现。
+2. 未解决钩子：上一章结尾留给下一章的悬念、未说完的话、新出现的人物/文件/电话/线索，下一章必须接住的内容。
+
+【上一章结尾片段】
+{tail}
+
+请严格按以下格式输出，不要其他内容：
+最后场景：
+未解决钩子：
+"""
+        out = self._call_api(prompt, None, 0)
+        if not out or out.startswith("通义千问"):
+            return "", ""
+        tail_scene, unresolved_hook = "", ""
+        for line in out.split("\n"):
+            line = line.strip()
+            if line.startswith("最后场景") or line.startswith("最后场景："):
+                tail_scene = line.split("：", 1)[-1].split(":", 1)[-1].strip()
+            elif line.startswith("未解决钩子") or line.startswith("未解决钩子："):
+                unresolved_hook = line.split("：", 1)[-1].split(":", 1)[-1].strip()
+        return tail_scene[:200], unresolved_hook[:200]
+
+    def _check_continuity(self, chapter_content: str, prev_tail_scene: str, prev_unresolved_hook: str) -> Tuple[float, str]:
+        """
+        简单连续性审查：本章开头是否接住上一章尾钩。
+        返回 (0~1 分数, 反馈说明)。无上一章时返回 (1.0, "")。
+        """
+        if not prev_tail_scene and not prev_unresolved_hook:
+            return 1.0, ""
+        head = chapter_content[:400] if len(chapter_content) > 400 else chapter_content
+        combined = (prev_tail_scene + " " + prev_unresolved_hook).strip()
+        if not combined:
+            return 1.0, ""
+        # 提取关键词：2字及以上的词
+        words = set(re.findall(r'[\u4e00-\u9fff]{2,}', combined))
+        words = {w for w in words if len(w) >= 2}
+        if not words:
+            return 0.5, "无法提取尾钩关键词"
+        hit = sum(1 for w in words if w in head)
+        score = hit / min(len(words), 8)  # 最多看8个词
+        score = min(1.0, score)
+        if score < 0.25:
+            return score, f"本章开头未接住上一章尾钩（关键词命中{hit}/{len(words)}），请从上一章最后场景/未解决钩子直接续写，禁止另起新场景。"
+        if score < 0.5:
+            return score, f"本章开头与上一章尾钩衔接较弱（命中{hit}/{len(words)}），请在前300字内明确承接上一章结尾。"
+        return score, ""
+
+    def generate_beat_card(self, chapter_num: int, outline_corrected: str, outline_original: str,
+                           prev_life_clue: Optional[str] = None) -> Tuple[str, str, str]:
+        """
+        生成节拍卡，并解析出「本章开头承接」「本章结尾钩子」。
+        返回 (beat_card文本, open_from_prev, end_to_next)。
+        """
+        prompt = f"""你是一位短剧/小说编剧。请根据下面第{chapter_num}章的【修正后梗概】与【修正前梗概】，生成本章的节拍卡（beats），并补充跨章字段。
+
+要求：
+1. 节拍卡 5-7 条，每条一句话，按情节点顺序排列。
+2. 若本章可能涉及「上一世受害」回忆，请标明在哪一拍之后插入回忆。
+3. 必须输出两行：
+   - 本章开头必须承接：若为第1章填「无」；否则填上一章结尾留下的具体动作/场景/钩子，本章第一幕要从这里接着写。
+   - 本章结尾必须留下钩子：本章结束时留给下一章的具体悬念/未完成动作/新出现的人或物，下一章要接住。
+
+【修正后梗概】
+{outline_corrected}
+
+【修正前梗概】
+{outline_original or "（无）"}
+"""
+        if prev_life_clue:
+            prompt += f"""
+【本章可用的上一世线索】
+{prev_life_clue}
+"""
+        prompt += """
+
+请按以下格式输出（不要其他内容）：
+节拍卡：
+1. xxx
+2. xxx
+...
+本章开头必须承接：
+本章结尾必须留下钩子：
+"""
+        out = self._call_api(prompt, emotion_feedback=None, iteration=0)
+        if not out or out.startswith("通义千问"):
+            return "", "", ""
+        out = out.strip()
+        open_from_prev, end_to_next = "", ""
+        lines = out.split("\n")
+        beat_lines = []
+        for i, line in enumerate(lines):
+            line_strip = line.strip()
+            if line_strip.startswith("本章开头必须承接") or "本章开头必须承接" in line_strip:
+                open_from_prev = line_strip.split("：", 1)[-1].split(":", 1)[-1].strip()
+            elif line_strip.startswith("本章结尾必须留下钩子") or "本章结尾必须留下钩子" in line_strip:
+                end_to_next = line_strip.split("：", 1)[-1].split(":", 1)[-1].strip()
+            elif "节拍卡" in line_strip and "：" not in line_strip:
+                continue
+            else:
+                beat_lines.append(line)
+        beat_card = "\n".join(beat_lines).strip()
+        if "节拍卡：" in out:
+            idx = out.find("节拍卡：")
+            rest = out[idx + 4:].strip()
+            if "本章开头必须承接" in rest:
+                beat_card = rest.split("本章开头必须承接")[0].strip()
+            elif "本章结尾必须留下钩子" in rest:
+                beat_card = rest.split("本章结尾必须留下钩子")[0].strip()
+            else:
+                beat_card = rest
+        if not open_from_prev:
+            m = re.search(r"本章开头必须承接[：:]\s*(\S.+?)(?=\n|本章结尾|$)", out, re.DOTALL)
+            if m:
+                open_from_prev = m.group(1).strip()[:150]
+        if not end_to_next:
+            m = re.search(r"本章结尾必须留下钩子[：:]\s*(\S.+?)(?=\n|$)", out, re.DOTALL)
+            if m:
+                end_to_next = m.group(1).strip()[:150]
+        return beat_card, open_from_prev, end_to_next
+
+    def generate_emotion_reinforcement_points(
+        self, chapter_num: int, outline_corrected: str, outline_original: str,
+        prev_life_clue: Optional[str] = None,
+    ) -> str:
+        """
+        在生成正文前，根据梗概列出本章的情绪强化点。
+        用于约束：上一世回忆强化委屈/愤怒/同情，这一世复仇强化爽感。
+        返回可拼入 prompt 的文本。
+        """
+        prompt = f"""你是一位重生复仇短剧编剧。请根据下面第{chapter_num}章的【梗概】与【上一世线索】，列出本章的【情绪强化点】。
+
+要求：
+1. 若本章涉及「上一世受害」回忆，必须列出：
+   - 委屈强化点：在回忆中哪个具体情境需要强化主角被冤枉/被误解的委屈感（1-2句话）
+   - 愤怒强化点：在回忆中哪个情境需要强化对陷害者的愤怒、憎恨（1-2句话）
+   - 同情强化点：在回忆中哪个情境需要让读者同情主角、憎恶反派（1-2句话）
+2. 若本章涉及「这一世复仇」或反制，必须列出：
+   - 爽感强化点：在哪个具体情节点需要强化复仇成功的痛快感、反杀快感（1-2句话）
+   - 若有多处复仇/反制，每处都要标出
+3. 若本章不涉及回忆或复仇，填「本章无上一世回忆/无复仇情节」。
+4. 每点要具体到「在xxx时/当xxx时」，便于正文写作时落地。
+
+【本章梗概】
+{outline_corrected}
+
+【本章修正前梗概】
+{outline_original or "（无）"}
+"""
+        if prev_life_clue:
+            prompt += f"""
+【本章可用的上一世线索】
+{prev_life_clue}
+"""
+        prompt += """
+
+请严格按以下格式输出，不要其他内容：
+【本章情绪强化点】
+- 上一世回忆部分（若有）：
+  - 委屈强化点：
+  - 愤怒强化点：
+  - 同情强化点：
+- 这一世复仇部分（若有）：
+  - 爽感强化点：
+  （可有多条，每条对应一个情节点）
+"""
+        out = self._call_api(prompt, None, 0)
+        if not out or out.startswith("通义千问"):
+            return ""
+        return out.strip()[:800]
+
+    def _get_chapter_role_hint(self, chapter_num: int) -> str:
+        """前3章分工提示，避免都写成病床重复。"""
+        if chapter_num == 1:
+            return """
+【本章职责（第1章）】重点写：ICU环境、家属冷漠、生理痛苦、第一重背叛确认。不要展开社会舆论或情感背叛，留到第2、3章。
+"""
+        if chapter_num == 2:
+            return """
+【本章职责（第2章）】重点写：手机/直播/恶评、舆论绞杀、丈夫公开切割。「她不仅快死了，还被全网羞辱」。不要重复第1章的病床描写，不要写拥抱/情感背叛，留到第3章。
+"""
+        if chapter_num == 3:
+            return """
+【本章职责（第3章）】重点写：看到拥抱、彻底确认最爱的人是主谋、录音/最后证据、死亡或意识断裂导向重生。与前两章形成「身体濒死→社会抛弃→情感致命一击」的递进。
+"""
+        return ""
+
+    def build_prompt_with_beat(self, chapter_num: int, outline_corrected: str, outline_original: str,
+                               prev_chapter_full: Optional[str], beat_card: str,
+                               prev_life_clue: Optional[str], kg_context: str = "",
+                               prev_tail_scene: str = "", prev_unresolved_hook: str = "",
+                               open_from_prev: str = "", end_to_next: str = "",
+                               emotion_reinforcement_points: str = "",
+                               rag_samples: Optional[Dict[str, List]] = None) -> str:
+        """构建正文生成提示：跨章硬约束 + 双梗概 + 节拍卡 + 知识图谱 + 情绪向样本参考。"""
+        prompt = f"""角色：你是专业小说作者，擅长重生复仇短剧正文。
+
+【核心要求】
+1. 严格按本章节拍卡与梗概推进，不得偏离。
+2. 字数至少1000字，建议1000-1300字；第三人称，快节奏，结尾留悬念。
+3. 自主判断：根据梗概与节拍卡，由你判断本章是否有「上一世受害」情节需要插入回忆。若有，请自行决定回忆插在哪、怎么插、插多长；回忆占比建议小于40%，用「上一世，我……」等句式在正文中点明即可。若无则不要硬插回忆。
+4. 主线优先，禁止随意新增无关支线。
+"""
+        # 特殊章节：上一世临死（第1章）与重生觉醒（第2章）限制
+        if chapter_num == 1:
+            prompt += """
+【重生前限制（第1章）】
+- 本章只写上一世临死前的经历（ICU/病房/被抛弃抢救/被背叛等），正文中**禁止出现“重生”“回到过去”“第二次人生”等字样**。
+- 结尾只能停留在她意识到“自己被害死/要死了”的绝望感，不能意识到自己还有第二次机会或会重来一次。
+"""
+        if chapter_num == 2:
+            prompt += """
+【重生觉醒写法（第2章）】
+- 开篇先写她在熟悉环境中醒来，感受到身体状态、时间、环境的异常，重点是“震惊”和“不适应”，不要一上来就心想“我重生了”。
+- 接下来通过对比具体证据（日期、手机信息、亲人/同事状态等），从“怀疑是梦/记错时间”逐步过渡到“越来越不对劲”。
+- 在收集到足够多不正常的细节之后，才允许她在内心明确意识到“这是回到过去/自己重来了一次”，届时才可以在内心或独白中出现“重生”概念。
+- 严禁一开篇就直接写“她意识到自己重生了”，必须有“震惊 → 怀疑 → 验证 → 确认”的过程。
+"""
+        # 跨章接续硬约束（非第一章且已有尾钩时）
+        if chapter_num > 1 and (prev_tail_scene or prev_unresolved_hook):
+            prompt += """
+【跨章接续硬约束】（必须遵守，不得自主跳过）
+本章第一幕必须从以下「上一章尾钩」继续写，不得跳过，不得另起新场景：
+"""
+            if prev_tail_scene:
+                prompt += f"最后场景：{prev_tail_scene}\n"
+            if prev_unresolved_hook:
+                prompt += f"未解决钩子：{prev_unresolved_hook}\n"
+            prompt += """
+1. 本章开头必须直接承接上一章最后一个已发生的动作、对话、发现或悬念，禁止跳过。
+2. 若上一章结尾引入了新人物、新文件、新电话、新线索，本章前300字内必须先接住它，再展开本章内容。
+3. 不得把本章写成一个与上一章松散相关的新故事；必须让读者一眼看出这是同一条连续剧情。
+4. 禁止重复上一章已经完整写过的核心场景，除非是从新的信息层推进。
+5. 本章必须回答：上一章最后留下的问题，当前推进了哪一步？
+"""
+        if open_from_prev and chapter_num > 1:
+            prompt += f"\n【本节拍卡要求】本章开头承接：{open_from_prev}\n"
+        if end_to_next:
+            prompt += f"\n【本节拍卡要求】本章结尾必须留下钩子：{end_to_next}\n"
+
+        prompt += self._get_chapter_role_hint(chapter_num)
+
+        prompt += f"""
+【本章修正后梗概】
+{outline_corrected}
+
+【本章修正前梗概】
+{outline_original or "（无）"}
+
+【本节拍卡】（请按此顺序写正文）
+{beat_card or "（无，请按梗概自行安排节奏）"}
+"""
+        if emotion_reinforcement_points:
+            prompt += f"""
+【本章情绪强化点】（必须遵守，在对应情节点强化情绪）
+{emotion_reinforcement_points}
+
+写作时请在上述强化点处：
+- 上一世回忆：加强委屈（内心独白、身体感受）、愤怒（对陷害者的恨意）、同情（让读者共鸣主角遭遇）
+- 这一世复仇：加强爽感（复仇成功的痛快、反杀的畅快、让对手付出代价的满足感）
+"""
+        if prev_life_clue:
+            prompt += f"""
+【可用的上一世线索】（若你判断需要插回忆，可参考以下内容）
+{prev_life_clue}
+"""
+        if prev_chapter_full:
+            prompt += f"""
+【上一章全文】（供参考，本章必须与其结尾接续，不得另起炉灶）
+{prev_chapter_full[-2500:] if len(prev_chapter_full) > 2500 else prev_chapter_full}
+
+【跨章连续性硬约束】（必须遵守）
+1. 本章开头必须直接承接上一章最后一个已发生的动作、对话、发现或悬念，禁止跳过。
+2. 若上一章结尾引入了新人物、新文件、新电话、新线索，本章前300字内必须先接住它，再展开本章内容。
+3. 不得把本章写成一个与上一章松散相关的新故事；必须让读者一眼看出这是同一条连续剧情。
+4. 禁止重复上一章已经完整写过的核心场景，除非是从新的信息层推进。
+5. 本章必须回答：上一章最后留下的问题，当前推进了哪一步？
+"""
+        if kg_context:
+            prompt += f"""
+{kg_context}
+"""
+        # 注入按场景检索的样本参考：重生复仇爽感 / 上一世委屈 / 通用（生成时自动调用）
+        if rag_samples and any(rag_samples.get(k) for k in ("revenge", "grievance", "universal")):
+            prompt += "\n【RAG样本参考】（请重点参考与本章情绪方向一致的片段风格与节奏）\n"
+            def _preview(s, max_len=220):
+                text = s.get("adapted_content") or s.get("content", "")
+                return text[:max_len] + ("..." if len(text) > max_len else "")
+            if rag_samples.get("grievance"):
+                prompt += "\n上一世委屈/被欺负（写回忆时参考）：\n"
+                for i, s in enumerate(rag_samples["grievance"][:2], 1):
+                    prompt += f"  片段{i}: {_preview(s)}\n"
+            if rag_samples.get("revenge"):
+                prompt += "\n重生复仇爽感（写反杀/打脸时参考）：\n"
+                for i, s in enumerate(rag_samples["revenge"][:2], 1):
+                    prompt += f"  片段{i}: {_preview(s)}\n"
+            if rag_samples.get("universal"):
+                prompt += "\n通用高评分参考：\n"
+                for i, s in enumerate(rag_samples["universal"][:2], 1):
+                    prompt += f"  片段{i}: {_preview(s)}\n"
+            prompt += "\n请结合本章梗概与情绪强化点，模仿上述片段的情绪密度与节奏，写出正文。\n"
+        prompt += """
+【情绪与格式】
+- 情绪强度要足，有层次与转折；对话占比高，场景推进快。
+- 直接输出正文，不要章节标题或【回忆】等小标题。
+"""
+        return prompt
+
+    def generate_one_chapter_with_beats(self, chapter_num: int, num_versions: int = 1,
+                                        max_iterations: int = 2, min_emotion_intensity: float = 0.5) -> Optional[str]:
+        """单章两步生成：先节拍卡（打日志）→ 再正文 → 立即保存。返回正文内容。"""
+        outline_raw = self.master_ctx.get(chapter_num, "")
+        if not outline_raw:
+            print(f"❌ 未找到第{chapter_num}章梗概")
+            return None
+        outline_orig = self.master_ctx_original.get(chapter_num, "")
+        card = self._parse_json_maybe(outline_raw)
+        outline_corrected = self._render_master_card_for_prompt(card) if card else outline_raw
+        prev_life_raw = self.prev_life_ctx.get(chapter_num)
+        prev_life_card = self._parse_json_maybe(prev_life_raw) if prev_life_raw else None
+        prev_life_clue = self._render_prev_life_card_for_prompt(prev_life_card) if prev_life_card else prev_life_raw
+
+        prev_chapter_full = self.get_previous_chapter_content(chapter_num)
+
+        prev_tail_scene, prev_unresolved_hook = "", ""
+        if prev_chapter_full and chapter_num > 1:
+            print(f"  [跨章] 提取上一章尾钩…")
+            prev_tail_scene, prev_unresolved_hook = self._extract_prev_chapter_tail_and_hook(prev_chapter_full)
+            if prev_tail_scene or prev_unresolved_hook:
+                print(f"  [跨章] 最后场景/钩子已注入，本章必须接续")
+
+        kg_context = ""
+        if self.use_knowledge_graph and _KG_AVAILABLE:
+            try:
+                if self._kg is None:
+                    self._kg = RebirthKnowledgeGraph(self.outputs_dir / "knowledge_graph.json")
+                    self._kg.load()
+                if self._kg and self._kg.entities:
+                    kg_context = self._kg.query_relevant_for_chapter(chapter_num)
+                    if kg_context:
+                        print(f"  [知识图谱] 已注入本章相关实体/关系/伏笔")
+            except Exception:
+                pass  # 静默失败，不影响生成
+
+        # 第一步：生成节拍卡（含本章开头承接、本章结尾钩子）
+        print(f"\n📋 第{chapter_num}章 生成节拍卡（仅供调试）…")
+        beat_card, open_from_prev, end_to_next = self.generate_beat_card(
+            chapter_num, outline_corrected, outline_orig, prev_life_clue
+        )
+
+        # 如上一章已成功抽取尾钩，但节拍卡里开头承接为“无”，则用上一章尾钩强制覆盖
+        if chapter_num > 1 and (prev_tail_scene or prev_unresolved_hook):
+            auto_hint = (prev_unresolved_hook or prev_tail_scene or "").strip()
+            if auto_hint:
+                raw = (open_from_prev or "").strip()
+                raw_simple = raw.replace("…", "").replace("。", "").strip()
+                if not raw or raw_simple in ("无", "无承接", "无特别承接"):
+                    open_from_prev = auto_hint[:150]
+                    print(f"  [跨章] 使用上一章尾钩覆盖节拍卡开头承接: {open_from_prev[:60]}…")
+
+        if beat_card:
+            print(f"[节拍卡 第{chapter_num}章]\n{beat_card}\n")
+            if open_from_prev:
+                print(f"  开头承接: {open_from_prev[:60]}…")
+            if end_to_next:
+                print(f"  结尾钩子: {end_to_next[:60]}…")
+        else:
+            print(f"[节拍卡 第{chapter_num}章] 生成失败或为空，将仅用梗概写正文。")
+
+        # 第二步：生成本章情绪强化点（在正文前列出委屈/愤怒/同情/爽感强化点）
+        print(f"  [情绪强化] 生成本章情绪强化点…")
+        emotion_reinforcement_points = self.generate_emotion_reinforcement_points(
+            chapter_num, outline_corrected, outline_orig, prev_life_clue
+        )
+        if emotion_reinforcement_points:
+            print(f"  [情绪强化] 已注入 prompt，将在对应情节点强化情绪")
+
+        # 按本章是否含“上一世回忆”“复仇/反制”自动检索对应样本集并注入 prompt
+        need_prev_life = not self._is_chapter_current_timeline_only(outline_corrected, prev_life_clue) and bool(prev_life_clue)
+        has_revenge = any(k in outline_corrected for k in ["复仇", "反制", "反击", "扳倒", "揭穿", "打脸"])
+        rag_query = f"{outline_corrected}\n{prev_life_clue or ''}"
+        target_context = "主角: 沈清欢, 背景: 现代都市, 重生复仇, 职场复仇"
+        rag_samples = search_rebirth_samples_for_chapter(
+            rag_query, target_context, need_prev_life, has_revenge, top_k_per_set=2
+        )
+        if any(rag_samples.get(k) for k in ("revenge", "grievance", "universal")):
+            n = sum(len(rag_samples.get(k, [])) for k in ("revenge", "grievance", "universal"))
+            print(f"  [RAG样本] 已注入 {n} 条参考（委屈/爽感/通用）")
+
+        # 第三步：根据节拍卡+梗概+情绪强化点+跨章硬约束+RAG样本生成正文
+        body_prompt = self.build_prompt_with_beat(
+            chapter_num, outline_corrected, outline_orig, prev_chapter_full, beat_card, prev_life_clue, kg_context,
+            prev_tail_scene=prev_tail_scene, prev_unresolved_hook=prev_unresolved_hook,
+            open_from_prev=open_from_prev, end_to_next=end_to_next,
+            emotion_reinforcement_points=emotion_reinforcement_points,
+            rag_samples=rag_samples,
+        )
+        best_content = None
+        best_score = 0
+        best_emotion = 0
+        emotion_feedback = None
+        for iteration in range(max_iterations):
+            if iteration > 0 and emotion_feedback:
+                body_prompt = self._add_emotion_feedback(body_prompt, emotion_feedback, iteration)
+            content = self._call_api(body_prompt, emotion_feedback, iteration)
+            if not content or content.startswith("通义千问"):
+                continue
+            char_count = len(content.strip())
+            score = self.scorer.calculate_score(content)
+            emotion_result = self.emotion_analyzer.analyze(content)
+            ei = emotion_result.intensity
+            cont_score, cont_fb = self._check_continuity(content, prev_tail_scene, prev_unresolved_hook)
+            print(f"  评分: {score:.2f}, 情绪: {ei:.3f}, 字数: {char_count}, 连续性: {cont_score:.2f}")
+            if ei >= min_emotion_intensity and score >= 50 and char_count >= 800 and cont_score >= 0.5:
+                best_content = content
+                best_score = score
+                best_emotion = ei
+                break
+            emotion_feedback = {
+                'intensity': ei, 'label': emotion_result.label, 'emotion_depth': emotion_result.emotion_depth,
+                'emotion_transition': emotion_result.emotion_transition,
+                'suggestion': self._get_emotion_suggestion(emotion_result),
+                'char_count': char_count, 'word_short': char_count < 1000,
+                'continuity_score': cont_score, 'continuity_feedback': cont_fb,
+            }
+            if ei > best_emotion or (ei == best_emotion and score > best_score):
+                best_content, best_score, best_emotion = content, score, ei
+        if not best_content:
+            c = self._call_api(body_prompt, None, 0)
+            if c and not c.startswith("通义千问") and len(c.strip()) >= 500:
+                best_content = c
+        if best_content:
+            self.save_chapter(chapter_num, best_content)
+            self.generated_chapters[chapter_num] = best_content
+            if self.use_knowledge_graph and _KG_AVAILABLE and self._kg:
+                try:
+                    def _kg_api(prompt: str) -> str:
+                        return self._call_api(prompt, None, 0) or ""
+                    if self._kg.extract_from_chapter_body_with_llm(best_content, chapter_num, _kg_api):
+                        self._kg.save()
+                        print(f"  [知识图谱] 已从正文抽取并同步写入 outputs/knowledge_graph.json")
+                except Exception:
+                    pass
+            print(f"✅ 第{chapter_num}章生成完成（评分: {best_score:.2f}, 情绪: {best_emotion:.3f}）")
+            return best_content
+        return None
+
+    def generate_chapter_batch(self, start_chapter: int, batch_size: int = 5, **kwargs) -> List[int]:
+        """批量生成：从 start_chapter 起连续生成 batch_size 章，每章生成后立即写入文件。返回成功生成的章节号列表。"""
+        succeeded = []
+        for i in range(batch_size):
+            ch = start_chapter + i
+            if not self.master_ctx.get(ch):
+                print(f"⚠️ 第{ch}章无梗概，跳过")
+                continue
+            content = self.generate_one_chapter_with_beats(ch, **kwargs)
+            if content:
+                succeeded.append(ch)
+        return succeeded
+
     def generate_chapter(self, chapter_num: int, num_versions: int = 3, 
                         max_iterations: int = 3, min_emotion_intensity: float = 0.6) -> Optional[str]:
         """生成单章（完整流程）"""
@@ -725,49 +1344,46 @@ def main():
     import argparse
     
     parser = argparse.ArgumentParser(description='重生复仇小说正文生成器')
-    parser.add_argument('--chapter', type=int, required=True, help='章节号')
-    parser.add_argument('--master-ctx', type=str, 
-                       default='outputs/master_ctx.txt',
-                       help='章节梗概文件路径')
-    parser.add_argument('--prev-life-ctx', type=str,
-                       default='outputs/prev_life_ctx.txt',
-                       help='上一世线索文件路径')
-    parser.add_argument('--versions', type=int, default=3, help='生成版本数')
-    parser.add_argument('--iterations', type=int, default=3, help='每版本最大迭代次数')
-    parser.add_argument('--min-emotion', type=float, default=0.6, help='最小情绪强度')
+    parser.add_argument('--chapter', type=int, required=True, help='起始章节号（例如 6 表示从第6章开始）')
+    parser.add_argument('--batch', type=int, default=5, help='连续生成的章数（默认5，即输入6则生成6,7,8,9,10）')
+    default_master_ctx = 'outputs/master_ctx_final.txt' if (DEFAULT_OUTPUTS_DIR / 'master_ctx_final.txt').exists() else 'outputs/master_ctx.txt'
+    default_prev_life_ctx = 'outputs/prev_life_ctx_final.txt' if (DEFAULT_OUTPUTS_DIR / 'prev_life_ctx_final.txt').exists() else 'outputs/prev_life_ctx.txt'
+    parser.add_argument('--master-ctx', type=str, default=default_master_ctx, help='章节梗概文件路径（修正后）')
+    parser.add_argument('--original-master-ctx', type=str, default=None, help='修正前梗概路径（默认在 final 时用 master_ctx.txt）')
+    parser.add_argument('--prev-life-ctx', type=str, default=default_prev_life_ctx, help='上一世线索文件路径')
+    parser.add_argument('--versions', type=int, default=1, help='每章生成版本数（批量时建议1）')
+    parser.add_argument('--iterations', type=int, default=2, help='每版本最大迭代次数')
+    parser.add_argument('--min-emotion', type=float, default=0.5, help='最小情绪强度')
+    parser.add_argument('--no-kg', action='store_true', help='禁用知识图谱')
     
     args = parser.parse_args()
     
     print("=" * 80)
-    print("📖 重生复仇小说正文生成器")
+    print("📖 重生复仇小说正文生成器（节拍卡 + 批量 + 双梗概 + 上一章衔接）")
     print("=" * 80)
-    print("\n使用的技术：")
-    print("  1. ✅ 样本集结构（RAG检索）")
-    print("  2. ✅ 循环评分（情绪反馈循环）")
-    print("  3. ✅ 生成后评分（规则评分 + 情绪分析）")
-    print("  4. ✅ 回忆触发规则（人物/地点/事件类型匹配）")
+    print(f"  起始章: {args.chapter}，批量: {args.batch} 章（即 {args.chapter}～{args.chapter + args.batch - 1}）")
+    if not args.no_kg and _KG_AVAILABLE:
+        kg_path = DEFAULT_OUTPUTS_DIR / "knowledge_graph.json"
+        print(f"  知识图谱: 已启用（{kg_path}）")
     print("=" * 80)
     
-    # 初始化生成器
     generator = RebirthRevengeGenerator()
-    
-    # 加载上下文
-    generator.load_contexts(args.master_ctx, args.prev_life_ctx)
-    # 尝试从磁盘加载历史章节，用于保证跨运行的章节衔接与高分片段提取
+    generator.use_knowledge_graph = not args.no_kg
+    generator.load_contexts(args.master_ctx, args.prev_life_ctx, args.original_master_ctx)
     generator.load_existing_chapters()
     
-    # 生成章节
-    content = generator.generate_chapter(
+    succeeded = generator.generate_chapter_batch(
         args.chapter,
-        args.versions,
-        args.iterations,
-        args.min_emotion
+        batch_size=args.batch,
+        num_versions=args.versions,
+        max_iterations=args.iterations,
+        min_emotion_intensity=args.min_emotion,
     )
     
-    if content:
-        print("\n✅ 生成完成！")
+    if succeeded:
+        print(f"\n✅ 批量生成完成：第 {', '.join(map(str, succeeded))} 章已写入 outputs/chapters/")
     else:
-        print("\n❌ 生成失败！")
+        print("\n❌ 未成功生成任何章节。")
 
 
 if __name__ == "__main__":
