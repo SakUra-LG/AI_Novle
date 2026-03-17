@@ -43,7 +43,9 @@ def _parse_chapters(content: str) -> dict:
         line = line.strip()
         if not line:
             continue
-        m = re.match(r"^第(\d+)章\s*[：:]\s*(.+)$", line)
+        # 单章形式：第N章 ...：梗概
+        # 允许在“第N章”和冒号之间出现角色/类型等说明（如：第1章（grievance_build）：……）
+        m = re.match(r"^第(\d+)章.*?[：:]\s*(.+)$", line)
         if m:
             ch = int(m.group(1))
             result[ch] = m.group(2).strip()
@@ -81,8 +83,16 @@ def main():
     if args.master:
         master_path = (PROJECT_ROOT / args.master).resolve() if not Path(args.master).is_absolute() else Path(args.master)
     else:
-        cand = DEFAULT_OUTPUTS / "master_ctx_final.txt"
-        master_path = cand if cand.exists() else (DEFAULT_OUTPUTS / "master_ctx.txt")
+        # 优先使用结构化 JSON 章节卡，其次修正后梗概，最后原始梗概
+        cards_cand = DEFAULT_OUTPUTS / "master_ctx_cards.json"
+        final_cand = DEFAULT_OUTPUTS / "master_ctx_final.txt"
+        txt_cand = DEFAULT_OUTPUTS / "master_ctx.txt"
+        if cards_cand.exists():
+            master_path = cards_cand
+        elif final_cand.exists():
+            master_path = final_cand
+        else:
+            master_path = txt_cand
         master_path = master_path.resolve()
     if args.prev_life:
         prev_path = (PROJECT_ROOT / args.prev_life).resolve() if not Path(args.prev_life).is_absolute() else Path(args.prev_life)
@@ -124,18 +134,49 @@ def main():
         return raw
 
     if master_path.exists():
-        content = master_path.read_text(encoding="utf-8")
-        chapters = _parse_chapters(content)
-        ok = 0
-        for ch, raw in sorted(chapters.items()):
-            card = _parse_json_maybe(raw)
-            text = _build_outline_text(raw, card)
-            prev_text = prev_life_by_ch.get(ch, "")
-            if kg.extract_from_outline_with_llm(text, ch, _call_llm, prev_text):
-                ok += 1
+        print(f"[INFO] 使用梗概文件初始化知识图谱: {master_path}")
+        # 若为 JSON 章节卡，则逐个章节卡构造 outline 文本
+        if master_path.suffix.lower() == ".json":
+            try:
+                data = json.loads(master_path.read_text(encoding="utf-8"))
+            except Exception as e:
+                print(f"[WARN] 解析 JSON 梗概失败: {e}")
+                data = []
+            chapters = {}
+            if isinstance(data, list):
+                for item in data:
+                    if not isinstance(item, dict):
+                        continue
+                    ch = item.get("chapter_id")
+                    if not isinstance(ch, int):
+                        continue
+                    # 直接将卡序列化为 JSON 字符串，供 _parse_json_maybe + _build_outline_text 使用
+                    chapters[ch] = json.dumps(item, ensure_ascii=False)
             else:
-                print(f"  [WARN] 第{ch}章抽取失败，跳过")
-        print(f"[OK] 已从梗概大模型抽取 {ok}/{len(chapters)} 章")
+                print("[WARN] JSON 梗概内容不是列表，将跳过 JSON 结构，仅依赖文本梗概（若有）。")
+            ok = 0
+            for ch, raw in sorted(chapters.items()):
+                card = _parse_json_maybe(raw)
+                text = _build_outline_text(raw, card)
+                prev_text = prev_life_by_ch.get(ch, "")
+                if kg.extract_from_outline_with_llm(text, ch, _call_llm, prev_text):
+                    ok += 1
+                else:
+                    print(f"  [WARN] 第{ch}章抽取失败，跳过")
+            print(f"[OK] 已从 JSON 梗概章节卡大模型抽取 {ok}/{len(chapters)} 章")
+        else:
+            content = master_path.read_text(encoding="utf-8")
+            chapters = _parse_chapters(content)
+            ok = 0
+            for ch, raw in sorted(chapters.items()):
+                card = _parse_json_maybe(raw)
+                text = _build_outline_text(raw, card)
+                prev_text = prev_life_by_ch.get(ch, "")
+                if kg.extract_from_outline_with_llm(text, ch, _call_llm, prev_text):
+                    ok += 1
+                else:
+                    print(f"  [WARN] 第{ch}章抽取失败，跳过")
+            print(f"[OK] 已从梗概大模型抽取 {ok}/{len(chapters)} 章")
     else:
         print(f"[WARN] 未找到梗概文件: {master_path}")
 

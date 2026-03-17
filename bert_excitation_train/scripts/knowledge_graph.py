@@ -331,14 +331,18 @@ class RebirthKnowledgeGraph:
         self, text: str, chapter: Any, call_api_fn, prev_life_text: str = ""
     ) -> bool:
         """
-        用大模型从梗概/线索文本中抽取**全局设定 + 关键伏笔**。
-        目标：减少噪音，只记录对全书长期有效、可能影响前后一致性的内容。
+        用大模型从梗概/线索文本中抽取**全局人物设定 + 与主角相关的核心人物关系**。
+        目标：减少噪音，只记录主角姓名、核心配角/反派以及他们之间的长期关系，
+        不在初始化阶段写入任何具体情节型伏笔（伏笔统一在正文抽取阶段处理）。
         call_api_fn(prompt: str) -> str，返回模型输出。
         """
         prompt = f"""你是一个知识图谱抽取专家。请从下面第{chapter}章的梗概及对应上一世线索中，只抽取：
-1）本书在大部分章节都不变的【全局设定】（时代、城市/行业背景、主角姓名、主要势力/机构名等）
-2）对后文有长期影响的【关键伏笔】（比如重要证据、神秘组织、隐藏身份、长期悬而未决的问题）
-禁止为一次性路人、小地点、小冲突创建实体或关系。
+1）本书在大部分章节都不变的【主要人物】（女主名、核心反派、与女主长期有重要关系的人物）
+2）这些人物之间的【稳定关系】（如丈夫/前夫/上司/医生/家属/白月光等简单关系词）
+
+禁止：
+- 为一次性路人、小地点、小冲突创建实体或关系；
+- 输出任何具体情节型伏笔内容（伏笔统一在正文阶段抽取，这里不写 foreshadowing）。
 
 【梗概/线索文本】
 {text}
@@ -353,20 +357,17 @@ class RebirthKnowledgeGraph:
 ```json
 {
   "entities": [
-    {"name": "实体名（仅限主角/重要反派/关键组织/全书都会出现的地点）", "type": "person/place/org/setting"}
+    {"name": "人物名（仅限女主/核心反派/与女主长期有重要关系的人）", "type": "person"}
   ],
   "relationships": [
-    {"subject": "主语（仅限全局重要人物/组织）", "predicate": "关系词如陷害/隶属/控制", "object": "宾语"}
-  ],
-  "foreshadowing": [
-    {"content": "长期伏笔内容简述（跨多章才会被回收）", "recover_chapter": 待回收章节号或null}
+    {"subject": "主语（仅限核心人物）", "predicate": "关系词，如 丈夫/前夫/上司/医生/同事/家属/白月光", "object": "宾语（人物名）"}
   ]
 }
 ```
 要求：
-- 实体：只保留**全局稳定**的设定（主角名、核心反派、关键组织、行业/时代设定等），每章最多 5 个。
-- 关系：只保留长期不变的关系（如某人是某院长、某组织控制某医院等），不要临时吵架/职场小冲突。
-- 伏笔：只记录**跨多章的长期伏笔**（例如某个重要证据、神秘账户、神秘“天启”组织等），不要记录本章就解决的小问题。
+- 实体：只保留核心人物（女主/核心反派/长期反复出现的亲属或同事），每章不超过 5 个。
+- 关系：只保留描述人物之间身份/情感的长期关系词，不要记录一次性冲突或某一章的小事件。
+- 不要输出 foreshadowing 字段，也不要输出地点/组织等非人物实体。
 """
         out = call_api_fn(prompt)
         if not out:
@@ -375,11 +376,12 @@ class RebirthKnowledgeGraph:
         if not data or not isinstance(data, dict):
             return False
         src = self._norm_source(chapter)
+        # 只添加人物实体与人物关系，不在初始化阶段写入任何伏笔
         for e in data.get("entities") or []:
             if isinstance(e, dict) and e.get("name"):
                 self.add_entity(
                     str(e["name"]).strip(),
-                    str(e.get("type", "person")).lower() or "person",
+                    "person",
                     chapter,
                 )
         for r in data.get("relationships") or []:
@@ -389,16 +391,6 @@ class RebirthKnowledgeGraph:
                     str(r["predicate"]).strip(),
                     str(r["object"]).strip(),
                     chapter,
-                )
-        for f in data.get("foreshadowing") or []:
-            if isinstance(f, dict) and f.get("content"):
-                rc = f.get("recover_chapter")
-                rc = int(rc) if rc is not None and str(rc).isdigit() else None
-                self.add_foreshadowing(
-                    str(f["content"]).strip()[:150],
-                    chapter,
-                    plant_chapter=int(chapter) if str(chapter).isdigit() else None,
-                    recover_chapter=rc,
                 )
         return True
 

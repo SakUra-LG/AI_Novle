@@ -481,6 +481,131 @@ def build_batch_chapter_user_query(
     return "\n".join(parts)
 
 
+def build_batch_chapter_user_query_json(
+    batch_start: int,
+    batch_end: int,
+    prior_summary: str = "",
+    adapted_samples=None,
+    global_seed_plan: str = "",
+    seed_progress_so_far: str = "",
+) -> str:
+    """构造单批（若干章）章节【短剧骨架 JSON 卡】的用户查询。用于直接生成结构化章节卡。"""
+    ch_count = batch_end - batch_start + 1
+    first_batch_hint = ""
+    if batch_start == 1:
+        first_batch_hint = """
+【第1-3章特别结构要求（必须遵守）】
+- 第1章：
+  - 只写上一世临死当晚的 ICU/病房场景（被网暴、被亲人放弃抢救、被男人背叛、医生冷漠等），时间线只在“上一世死亡前的最后一夜”。
+  - 本章**禁止出现**：任何形式的“重生”“上一世/这一世 对照”“回到过去”“第二次机会”等词语和概念；
+  - 她在本章**完全不知道自己会重来一次**，只能感受到绝望和被害死。
+  - 不允许出现任何未来视角或复仇计划，结尾只能停在她意识即将消失的瞬间。
+  - 本章的 global_seed_progress 必须为空字符串 ""。
+- 第2章：
+  - 重点：她醒来后逐步意识到“时间不对劲”，经过多次验证（日期、手机记录、家人/同事状态）才确认重生。
+  - 本章只允许出现“重生觉醒 + 震惊 + 验证 + 开始在心里记下仇人”的内容，**严禁出现任何实质复仇行动**（不告发、不放证据、不公开打脸）。
+  - 本章可以设置整本书的最大复仇种子，例如“她发誓要查清是谁在医疗系统里设计害死她”，并写入 global_seed_progress。
+  - chapter_role 建议为 "present_only" 或类似“觉醒”角色，本章支线复仇可以为 0。
+- 第3章起：
+  - 每一章都必须有一个相对独立的“小支线故事/小复仇冲突”，chapter_role 为 "revenge_payoff" 的章节要完成闭环。
+  - global_seed_progress 用 0~1 句轻描淡写推进“最大复仇主线”，不得喧宾夺主；允许有些章节不推进（写成 ""）。
+"""
+    seed_plan_block = ""
+    if global_seed_plan:
+        seed_plan_block = f"""
+【整本最大复仇主线蓝图】（必须全程保持一致，后续章节只能在此基础上补充细节，不能改设定）
+- {global_seed_plan}
+
+【截至目前（第{batch_start-1}章）的主线种子推进摘要】（仅供你把握进度，不要改写）
+{seed_progress_so_far or "（前文尚未推进主线或这是第一批章节）"}
+"""
+
+    return f"""
+你现在是一名非常熟练的「重生复仇短剧」主笔编剧。
+请为《重生复仇短剧》的第{batch_start}章到第{batch_end}章（共{ch_count}章）生成【短剧骨架章节卡 JSON 数组】。
+
+【全局类型与节奏要求（简要重申）】
+- 类型始终是：都市职场复仇 + 医疗阴谋揭露 + 舆论反转。
+- 每一章都是这一世的剧情（只有第1章是上一世临死场景，已在前文处理），但**每章都必须与上一世的某个委屈记忆有镜像关系**。
+- 全书 100 章中，约每2章要有一次支线复仇或爽点爆发，不能把所有爽点堆在最后。
+- 重生短剧节奏：冲突密集、反转频繁，章节结尾必须有明确钩子（新的威胁/秘密/计划/倒计时等）。
+
+{first_batch_hint}
+{seed_plan_block}
+
+【本批章节的结构角色】
+- 每一章必须指定本章的功能角色 chapter_role：
+  - "revenge_payoff"：本章必须完成一次小复仇/打脸闭环（支线或主线皆可）。
+  - "grievance_build"：本章以委屈/羞辱/被算计为主，为后续复仇攒情绪。
+  - "present_only"：本章主要推进调查/布局，不要求当场复仇，但结尾必须留钩子。
+  - "cross_chapter"：本章属于跨多章冲突的中段，不要求单章闭环，但要让局势升级。
+
+【输出格式（⚠️ 必须严格遵守）】
+- 只输出**一个 JSON 数组**，数组长度 = {ch_count}，不要输出任何解释性文字或注释。
+- 数组中的每个元素是一个对象，字段必须包含：
+  - "chapter_id": 本章章节号，整数，从 {batch_start} 到 {batch_end}；
+  - "arc_id": 字符串，用于标记本章属于哪一条主线/阶段，例如：
+       "A01" = 重生&婚姻线开局
+       "A02" = 家族线复仇
+       "A03" = 职场线复仇
+       "A04" = 医疗阴谋线
+    同一条连贯主线内部的章节，请使用相同的 arc_id；
+  - "chapter_role": "revenge_payoff" / "grievance_build" / "present_only" / "cross_chapter" 之一；
+  - "present_mainline": 本章今生主线的一句话概括，要具体到场景和动作，例如：
+       "这一章女主在项目复盘会上，当众指出数据造假，逼得主管当场改口" ；
+  - "core_conflict": 当章最核心的矛盾点或对手意图，例如：
+       "主管想把延期责任全部甩给她"；
+  - "flashback_trigger": 触发上一世回忆的具体当下情境，例如：
+       "被点名在年会上发言"、"家族饭局上被问起旧事"；
+  - "revenge_action": 本章女主采取的具体反制/复仇动作（若是 grievance_build，可以填“暂时隐忍、暗中埋线”之类，也要具体），例如：
+       "她当众放出审批记录截图，证明延误责任在对方"；
+  - "ending_hook": 本章结尾留下的钩子/悬念，用1句话点明，例如：
+       "散会后她收到匿名短信：你查错方向了"。
+  - "global_seed_progress": 字符串，描述本章对「整本书最大复仇主线种子」的**轻微推进**，例如：
+       "她顺手查了一眼当年那场手术的时间线，只是一句带过，不展开调查"；
+     若本章不推进最大主线，则写空字符串 ""。
+  - "chapter_constraints": 数组，每个元素是一条本章必须遵守的特殊限制说明，例如：
+       [
+         "本章禁止出现‘重生’‘上一世’‘这一世’等词语，只允许自然时间线叙事。",
+         "本章不允许出现任何实质复仇行动，只能是震惊、验证与内心立誓。"
+       ]
+
+- JSON 示例（仅示意结构，内容请结合前情自行设计）：
+[
+  {{
+    "chapter_id": {batch_start},
+    "arc_id": "A01",
+    "chapter_role": "grievance_build",
+    "present_mainline": "……",
+    "core_conflict": "……",
+    "flashback_trigger": "……",
+    "revenge_action": "……",
+    "ending_hook": "……",
+    "global_seed_progress": "",
+    "chapter_constraints": []
+  }},
+  {{
+    "chapter_id": {batch_start + 1},
+    "arc_id": "A01",
+    "chapter_role": "revenge_payoff",
+    "present_mainline": "……",
+    "core_conflict": "……",
+    "flashback_trigger": "……",
+    "revenge_action": "……",
+    "ending_hook": "……",
+    "global_seed_progress": "她第一次在心里发誓要查清是谁设计害死了她，但不展开行动。",
+    "chapter_constraints": [
+      "本章不允许出现任何实质复仇行动，只能写震惊、验证与内心立誓。"
+    ]
+  }}
+]
+
+⚠️ 重要：
+- 必须输出合法的 JSON，不能包含中文全角引号，不能在 JSON 外多写任何解释文字、标题或注释。
+- 数组长度必须等于 {ch_count}，chapter_id 必须覆盖从 {batch_start} 到 {batch_end} 的所有整数。
+"""
+
+
 def generate_outline_batch(
     batch_start: int, batch_end: int, prior_summary: str,
     system_prompt: str, adapted_samples=None
@@ -492,6 +617,110 @@ def generate_outline_batch(
         {"role": "user", "content": user_query},
     ]
     return call_qianwen_api(messages)
+
+
+def generate_outline_batch_json(
+    batch_start: int, batch_end: int, prior_summary: str,
+    system_prompt: str, adapted_samples=None,
+    global_seed_plan: str = "",
+    seed_progress_so_far: str = ""
+):
+    """生成单批章节【短剧骨架卡】，返回 list[dict]。带简单重试，尽量避免占位卡。"""
+    max_retries = 3
+    cards = []
+
+    for attempt in range(max_retries):
+        retry_hint = ""
+        if attempt > 0:
+            retry_hint = (
+                f"\n\n⚠️ 上一次你没有按照要求输出合法的 JSON 数组（第{batch_start}-{batch_end}章），"
+                "这次请**只输出一个 JSON 数组**，不要输出解释文字、标题或注释。"
+            )
+        user_query = build_batch_chapter_user_query_json(
+            batch_start,
+            batch_end,
+            prior_summary,
+            adapted_samples,
+            global_seed_plan=global_seed_plan,
+            seed_progress_so_far=seed_progress_so_far,
+        ) + retry_hint
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_query},
+        ]
+        raw = call_qianwen_api(messages)
+        if not raw or raw.startswith("通义千问"):
+            cards = []
+        else:
+            raw = raw.strip()
+            # 通义可能会带多余字符，尝试找到第一个 '[' 和最后一个 ']'
+            start_idx = raw.find("[")
+            end_idx = raw.rfind("]")
+            if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
+                raw_json = raw[start_idx:end_idx + 1]
+            else:
+                raw_json = raw
+            try:
+                parsed = json.loads(raw_json)
+                if isinstance(parsed, list):
+                    cards = parsed
+                else:
+                    cards = []
+            except Exception:
+                cards = []
+
+        # 如果本次解析到了非空列表，就结束重试
+        if cards:
+            break
+
+    # 基本兜底：如果模型输出不符合预期，构造占位卡
+    expected_ids = list(range(batch_start, batch_end + 1))
+    cleaned_cards = []
+    seen_ids = set()
+    for item in cards:
+        if not isinstance(item, dict):
+            continue
+        ch_id = item.get("chapter_id")
+        if not isinstance(ch_id, int):
+            continue
+        if ch_id < batch_start or ch_id > batch_end:
+            continue
+        if ch_id in seen_ids:
+            continue
+        seen_ids.add(ch_id)
+        # 填补缺失字段，保证后续使用安全
+        item.setdefault("arc_id", "A01")
+        item.setdefault("chapter_role", "present_only")
+        item.setdefault("present_mainline", "")
+        item.setdefault("core_conflict", "")
+        item.setdefault("flashback_trigger", "")
+        item.setdefault("revenge_action", "")
+        item.setdefault("ending_hook", "")
+        item.setdefault("global_seed_progress", "")
+        # 约定：chapter_constraints 是一个字符串数组，后续正文生成时会作为硬限制注入 prompt
+        if "chapter_constraints" not in item or not isinstance(item["chapter_constraints"], list):
+            item["chapter_constraints"] = []
+        cleaned_cards.append(item)
+
+    # 为缺失的章节号补占位
+    for ch in expected_ids:
+        if ch not in seen_ids:
+            cleaned_cards.append({
+                "chapter_id": ch,
+                "arc_id": "A01",
+                "chapter_role": "present_only",
+                "present_mainline": f"第{ch}章：占位梗概（生成失败，待补充）",
+                "core_conflict": "",
+                "flashback_trigger": "",
+                "revenge_action": "",
+                "ending_hook": "",
+                "global_seed_progress": "",
+                "chapter_constraints": []
+            })
+
+    # 按 chapter_id 排序，保证顺序稳定
+    cleaned_cards.sort(key=lambda x: x.get("chapter_id", 0))
+    return cleaned_cards
 
 
 def analyze_outline_for_prev_life(outline_text: str) -> str:
@@ -554,6 +783,23 @@ def _summarize_outline_for_context(text: str, max_chars: int = 1500) -> str:
     return combined[:max_chars] + "\n...（已省略后续）"
 
 
+def _render_cards_to_outline_text(cards) -> str:
+    """将结构化章节卡渲染为简要的 master_ctx 文本，兼容旧流程与人工阅读。"""
+    lines = []
+    for card in sorted(cards, key=lambda x: x.get("chapter_id", 0)):
+        ch = card.get("chapter_id", 0)
+        role = card.get("chapter_role", "")
+        mainline = card.get("present_mainline", "").strip()
+        hook = card.get("ending_hook", "").strip()
+        role_str = f"（{role}）" if role else ""
+        # 保持与原 master_ctx 接近的风格：第N章 标题/主线：若干句梗概
+        base = f"第{ch}章{role_str}：{mainline}" if mainline else f"第{ch}章{role_str}：占位梗概（待补充）"
+        if hook:
+            base += f"  结尾钩子：{hook}"
+        lines.append(base)
+    return "\n\n".join(lines)
+
+
 def generate_outline_rebirth_revenge(use_batch: bool = True, batch_size: int = 5):
     """为《重生复仇短剧》生成整本 100 章梗概 + 每一章对应的上一世遭遇线索点，并写入项目根目录 outputs/
 
@@ -598,25 +844,81 @@ def generate_outline_rebirth_revenge(use_batch: bool = True, batch_size: int = 5
     # 2）构造系统提示词
     system_prompt = build_outline_system_prompt(adapted_samples)
 
+    # 2.5）先生成整本「最大复仇主线蓝图」，用于约束所有批次的一致性
+    seed_plan_prompt = """
+你现在是一名擅长整体结构设计的重生复仇短剧主笔。
+请为这本《重生复仇短剧》设计**一条唯一的、贯穿全书 100 章的最大复仇主线蓝图**，用3-5句话概括。
+
+要求：
+- 必须明确：上一世害死女主的关键参与者有哪些（例如：渣男丈夫+主治医生+医院背后资本集团），以及他们之间的关系；
+- 必须明确：今生的最大复仇目标是什么（例如：查清并摧毁这条“收钱杀人”的医疗利益链，让三方一起在公众面前崩盘）；
+- 必须说明：主线大致的推进顺序（例如：先婚姻/家族线 → 再职场线 → 再医疗线 → 最后资本与舆论决战），不需要细节，只要顺序和层级；
+- 全书只能存在这一条最大主线，后续所有章节的 `global_seed_progress` 只能在此蓝图基础上补充细节和证据，**不能改设定、不能换 Boss**。
+
+只输出这条蓝图本身，不要额外解释。
+"""
+    seed_plan_messages = [
+        {"role": "system", "content": "你是重生复仇短剧的大纲总策划，需要先设计全书唯一的最大复仇主线蓝图。"},
+        {"role": "user", "content": seed_plan_prompt},
+    ]
+    global_seed_plan = call_qianwen_api(seed_plan_messages) or ""
+    if global_seed_plan:
+        print("\n✅ 已生成整本最大复仇主线蓝图：\n")
+        print(global_seed_plan[:300] + ("..." if len(global_seed_plan) > 300 else ""))
+    else:
+        print("\n⚠️ 未能生成清晰的复仇主线蓝图，将在无蓝图的情况下继续生成（不推荐）。")
+
     # 3）生成章节梗概（分批 或 一次性）
     outline_text = None
     if use_batch:
-        print(f"\n📋 分批生成章节梗概（内部每次调用生成 {batch_size} 章，共 20 次，最终输出 100 章）...\n")
-        outline_parts = []
+        print(f"\n📋 分批生成【结构化章节卡】（内部每次调用生成 {batch_size} 章，共 20 次，最终输出 100 章）...\n")
+        all_cards = []
         prior_summary = ""
+        seed_progress_so_far = ""
         for batch_idx in range(0, 100, batch_size):
             start = batch_idx + 1
             end = min(batch_idx + batch_size, 100)
-            print(f"  生成第 {start}-{end} 章...")
-            batch_text = generate_outline_batch(start, end, prior_summary, system_prompt, adapted_samples)
-            if not batch_text or batch_text.startswith("通义千问"):
-                print(f"  ⚠ 第 {start}-{end} 章生成失败，将使用占位")
-                batch_text = "\n".join([f"第{ch}章 ：（生成失败，待补充）" for ch in range(start, end + 1)])
-            outline_parts.append(batch_text)
-            prior_summary = _summarize_outline_for_context("\n\n".join(outline_parts), max_chars=2000)
-        outline_text = "\n\n".join(outline_parts)
-        chapter_count, _ = count_chapters(outline_text)
-        print(f"\n✅ 章节梗概分批生成完成，共 {chapter_count} 章")
+            print(f"  生成第 {start}-{end} 章章节卡...")
+            batch_cards = generate_outline_batch_json(
+                start,
+                end,
+                prior_summary,
+                system_prompt,
+                adapted_samples,
+                global_seed_plan=global_seed_plan,
+                seed_progress_so_far=seed_progress_so_far,
+            )
+            all_cards.extend(batch_cards)
+            # 用目前已生成的卡渲染一个简要前情摘要，供下一批参考
+            prior_summary = _summarize_outline_for_context(_render_cards_to_outline_text(all_cards), max_chars=2000)
+            # 更新当前为止的主线种子推进摘要
+            seed_lines = []
+            for c in sorted(all_cards, key=lambda x: x.get("chapter_id", 0)):
+                ch = c.get("chapter_id", 0)
+                gsp = (c.get("global_seed_progress") or "").strip()
+                if gsp:
+                    seed_lines.append(f"- 第{ch}章：{gsp}")
+            seed_progress_so_far = "\n".join(seed_lines)
+
+        # 基本校验：确保1~100章都有
+        ids = sorted({c.get("chapter_id", 0) for c in all_cards})
+        chapter_count = len(ids)
+        print(f"\n✅ 结构化章节卡分批生成完成，共 {chapter_count} 章")
+
+        # 将结构化章节卡写入 JSON 文件
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+        cards_path = os.path.join(OUTPUT_DIR, "master_ctx_cards.json")
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        cards_backup_path = os.path.join(OUTPUT_DIR, f"master_ctx_cards_{timestamp}.json")
+        with open(cards_path, "w", encoding="utf-8") as f:
+            json.dump(all_cards, f, ensure_ascii=False, indent=2)
+        with open(cards_backup_path, "w", encoding="utf-8") as f:
+            json.dump(all_cards, f, ensure_ascii=False, indent=2)
+        print(f"✅ 结构化章节卡已写入：{cards_path}")
+        print(f"📝 结构化章节卡已备份到：{cards_backup_path}")
+
+        # 兼容原 master_ctx.txt：从卡渲染出文本梗概供后续流程和人工阅读
+        outline_text = _render_cards_to_outline_text(all_cards)
     else:
         messages = [
             {"role": "system", "content": system_prompt},
