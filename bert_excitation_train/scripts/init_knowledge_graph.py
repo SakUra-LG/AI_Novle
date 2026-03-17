@@ -123,14 +123,30 @@ def main():
                 p = {}
             if isinstance(b, str):
                 b = {}
+
+            pm = p.get("present_mainline") or card.get("present_mainline", "")
+            ft = p.get("flashback_trigger") or card.get("flashback_trigger", "")
+            ra = p.get("revenge_action") or p.get("revenue_action", "") or card.get("revenge_action", "")
+            co = p.get("conflict_opponent") or card.get("conflict_opponent", "")
+            pr = p.get("present_result") or card.get("present_result", "")
+            tl = p.get("tail_clue") or card.get("tail_clue", "")
+
+            pt = b.get("past_trigger") or card.get("past_trigger", "")
+            pch = b.get("past_core_harm") or card.get("past_core_harm", "")
+            pcs = b.get("present_counterstrike", "")
+
             parts = [
-                str(p.get("present_mainline", "")),
-                str(p.get("flashback_trigger", "")),
-                str(p.get("revenge_action") or p.get("revenue_action", "")),
-                str(b.get("past_core_harm", "")),
-                str(b.get("present_counterstrike", "")),
+                str(pm),
+                str(co),
+                str(ft),
+                str(pt),
+                str(ra),
+                str(pr),
+                str(tl),
+                str(pch),
+                str(pcs),
             ]
-            return " ".join(p for p in parts if p)
+            return " ".join(x for x in parts if x)
         return raw
 
     if master_path.exists():

@@ -45,10 +45,10 @@ python scripts/generate_chapter_content.py --chapter 6 --batch 5
 
 ```bash
 # 删除图谱中来源自 6、7、8、9、10 章的所有记录
-python scripts/rollback_knowledge_graph.py --chapters 6-10
+python scripts/rollback_knowledge_graph.py --chapters 1-10
 
 # 可选：同时删除对应正文文件
-python scripts/rollback_knowledge_graph.py --chapters 6-10 --delete-files
+python scripts/rollback_knowledge_graph.py --chapters 1-10 --delete-files
 ```
 
 然后再重新执行正文生成（会重新抽取并加入图谱）。  

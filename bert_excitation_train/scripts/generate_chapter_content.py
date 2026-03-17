@@ -298,26 +298,45 @@ class RebirthRevengeGenerator:
         binding = card.get("binding", {}) if isinstance(card.get("binding"), dict) else {}
         beats = present.get("beats") if isinstance(present.get("beats"), list) else []
         beats_text = "\n".join([f"{i+1}. {b}" for i, b in enumerate(beats)])
+
+        pm = present.get("present_mainline") or card.get("present_mainline", "")
+        pg = present.get("present_goal") or card.get("present_goal", "")
+        cf = present.get("surface_conflict") or card.get("core_conflict", "")
+        co = present.get("conflict_opponent") or card.get("conflict_opponent", "")
+        ft = present.get("flashback_trigger") or card.get("flashback_trigger", "")
+        ra = present.get("revenge_action") or present.get("revenue_action", "") or card.get("revenge_action", "")
+        pr = present.get("present_result") or card.get("present_result", "")
+        th = present.get("tail_clue") or card.get("tail_clue", "")
+        eh = present.get("ending_hook") or card.get("ending_hook", "")
+
+        pt = binding.get("past_trigger") or card.get("past_trigger", "")
+        pch = binding.get("past_core_harm") or card.get("past_core_harm", "")
+        pcs = binding.get("present_counterstrike", "")
+
         return (
             "【章节执行卡（结构化）】\n"
             f"- chapter_id: {card.get('chapter_id')}\n"
-            f"- present_mainline: {present.get('present_mainline', '')}\n"
+            f"- present_mainline: {pm}\n"
             f"- scene: {present.get('scene', '')}\n"
-            f"- present_goal: {present.get('present_goal', '')}\n"
-            f"- surface_conflict: {present.get('surface_conflict', '')}\n"
+            f"- present_goal: {pg}\n"
+            f"- conflict_opponent: {co}\n"
+            f"- surface_conflict: {cf}\n"
             f"- hidden_truth: {present.get('hidden_truth', '')}\n"
             f"- need_prev_life: {present.get('need_prev_life', True)}\n"
-            f"- flashback_trigger: {present.get('flashback_trigger', '')}\n"
+            f"- flashback_trigger: {ft}\n"
             f"- flashback_breakpoint: {present.get('flashback_breakpoint', '')}\n"
             f"- past_ratio_max: {present.get('past_ratio_max', 0.35)}\n"
-            f"- revenge_action: {present.get('revenge_action') or present.get('revenue_action', '')}\n"
+            f"- revenge_action: {ra}\n"
             f"- beats:\n{beats_text}\n"
             f"- emotion_curve: {present.get('emotion_curve', '')}\n"
-            f"- ending_hook: {present.get('ending_hook', '')}\n"
+            f"- present_result: {pr}\n"
+            f"- tail_clue: {th}\n"
+            f"- ending_hook: {eh}\n"
             "\n【强绑定映射（钥匙/锁）】\n"
             f"- shared_trigger: {binding.get('shared_trigger', '')}\n"
-            f"- past_core_harm: {binding.get('past_core_harm', '')}\n"
-            f"- present_counterstrike: {binding.get('present_counterstrike', '')}\n"
+            f"- past_trigger: {pt}\n"
+            f"- past_core_harm: {pch}\n"
+            f"- present_counterstrike: {pcs}\n"
         ).strip()
 
     def _render_prev_life_card_for_prompt(self, card: Dict) -> str:
@@ -378,6 +397,7 @@ class RebirthRevengeGenerator:
 3. 第三人称叙事，以场景推进为主，对话占比高，情绪外显。
 4. 快节奏（最重要）：题材为重生复仇短剧，快节奏是第一要务。可将一个故事拆成两三章写，但每章都要节奏紧凑、能抓住读者，严禁拖沓。每章内至少有一个明确的情节点或反转。
 5. 结尾留悬念或冲突升级。
+6. **本书唯一女主姓名为【沈清欢】；禁止在正文中使用其他女主姓名（如林婉然、夏某某等），一律改写为【沈清欢】。**
 
 【本章章节梗概】
 {chapter_outline}
@@ -793,6 +813,30 @@ class RebirthRevengeGenerator:
         text = re.sub(r'---', '', text)
         text = re.sub(r'#+', '', text)
         return text.strip()
+
+    def _normalize_heroine_names(self, text: str) -> str:
+        """
+        最后一层兜底：统一正文中的女主姓名为「沈清欢」。
+        - 显式错误名：林婉然/林婉/婉然 等
+        - 林** / 夏** 两字名（高概率是女主名），以及「女主」「女主角」等泛指
+        """
+        if not text:
+            return text
+        # 显式错误名
+        patterns = [
+            r"林婉然",
+            r"林婉",
+            r"婉然",
+        ]
+        for p in patterns:
+            text = re.sub(p, "沈清欢", text)
+        # 林** / 夏** 两字名
+        text = re.sub(r"林[\u4e00-\u9fff]{1,2}", "沈清欢", text)
+        text = re.sub(r"夏[\u4e00-\u9fff]{1,2}", "沈清欢", text)
+        # 泛指女主
+        text = re.sub(r"女主角", "沈清欢", text)
+        text = re.sub(r"女主", "沈清欢", text)
+        return text
     
     def _get_emotion_suggestion(self, emotion_result) -> str:
         """获取情绪改进建议"""
@@ -858,8 +902,10 @@ class RebirthRevengeGenerator:
         os.makedirs(str(out_dir), exist_ok=True)
         filepath = str(out_dir / f"chapter_{chapter_num:03d}.txt")
         
+        # 保存前做一次女主姓名兜底清洗，防止被样本或大模型带歪
+        cleaned_content = self._normalize_heroine_names(content or "")
         with open(filepath, 'w', encoding='utf-8') as f:
-            f.write(content)
+            f.write(cleaned_content)
         
         print(f"💾 已保存到: {filepath}")
         return filepath
@@ -1347,6 +1393,11 @@ class RebirthRevengeGenerator:
                     open_from_prev = auto_hint[:150]
                     print(f"  [跨章] 使用上一章尾钩覆盖节拍卡开头承接: {open_from_prev[:60]}…")
 
+        # 前 50 章：若节拍卡给出的闭合类型不是 full_close，则强制改回 full_close，避免前期乱挖坑
+        if isinstance(closure_type, str) and 1 <= chapter_num <= 50 and closure_type != "full_close":
+            print(f"  [闭合类型修正] 第{chapter_num}章处于前50章，closure_type={closure_type} 已强制改为 full_close")
+            closure_type = "full_close"
+
         if beat_card:
             print(f"[节拍卡 第{chapter_num}章]\n{beat_card}\n")
             print(f"  章节类型: {chapter_type}, 闭合类型: {closure_type}")
@@ -1450,13 +1501,26 @@ class RebirthRevengeGenerator:
                 best_score = score
                 best_emotion = ei
                 break
+            # 统计“上一世”出现次数，用于限制同一回忆块内的反复口头禅
+            prev_life_count = content.count("上一世")
+            structure_fb_parts = []
+            if need_prev_life and past_score < 0.5:
+                structure_fb_parts.append(past_fb)
+            if prev_life_count > 3:
+                structure_fb_parts.append(
+                    "上一版正文中多次重复使用“上一世……”口头禅。请调整为：每个上一世回忆段，只在开头 1–2 句用“上一世我……/记得那一世……”点明，"
+                    "后面一律用正常过去时（那天/那一夜/当时）写完整场景，禁止在同一段内反复重复“上一世”三个字。"
+                )
+            structure_feedback = "\n".join([p for p in structure_fb_parts if p])
+
             emotion_feedback = {
                 'intensity': ei, 'label': emotion_result.label, 'emotion_depth': emotion_result.emotion_depth,
                 'emotion_transition': emotion_result.emotion_transition,
                 'suggestion': self._get_emotion_suggestion(emotion_result),
                 'char_count': char_count, 'word_short': char_count < 1000,
                 'continuity_score': cont_score, 'continuity_feedback': cont_fb,
-                'past_block_score': past_score, 'structure_feedback': past_fb if need_prev_life and past_score < 0.5 else None,
+                'past_block_score': past_score,
+                'structure_feedback': structure_feedback or None,
             }
             if ei > best_emotion or (ei == best_emotion and score > best_score):
                 best_content, best_score, best_emotion = content, score, ei

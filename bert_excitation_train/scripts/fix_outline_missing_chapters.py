@@ -14,7 +14,7 @@
 
 import os
 import json
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any, Tuple, Optional
 
 from datetime import datetime
 
@@ -42,6 +42,45 @@ def _load_text_file(path: str) -> str:
         return f.read()
 
 
+def _load_event_clusters(output_dir: str) -> List[Dict[str, Any]]:
+    """
+    尝试从 outputs/event_clusters.json 加载事件簇规划；
+    若文件不存在或解析失败，则返回空列表。
+    """
+    clusters_path = os.path.join(output_dir, "event_clusters.json")
+    if not os.path.exists(clusters_path):
+        return []
+    try:
+        with open(clusters_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, list):
+            return data
+    except Exception:
+        pass
+    return []
+
+
+def _find_related_clusters_for_chapter(
+    chapter_id: int,
+    event_clusters: List[Dict[str, Any]],
+) -> List[Dict[str, Any]]:
+    """
+    根据 chapter_id 找到覆盖该章节的事件簇（根据 chapter_span 判断）。
+    """
+    related = []
+    for c in event_clusters or []:
+        span = c.get("chapter_span") or c.get("chapterSpan")
+        if (
+            isinstance(span, (list, tuple))
+            and len(span) == 2
+            and isinstance(span[0], int)
+            and isinstance(span[1], int)
+            and span[0] <= chapter_id <= span[1]
+        ):
+            related.append(c)
+    return related
+
+
 def _find_placeholder_chapters(cards: List[Dict[str, Any]]) -> List[int]:
     """识别 present_mainline 为空或包含“占位梗概（生成失败，待补充）”的章节号。"""
     missing = []
@@ -60,6 +99,7 @@ def _build_repair_prompt_for_chapter(
     all_cards: List[Dict[str, Any]],
     master_ctx_text: str,
     prev_life_ctx_text: str,
+    event_clusters: Optional[List[Dict[str, Any]]] = None,
 ) -> str:
     """构造修复单个章节卡的提示词，带上下文约束。"""
     # 前后章节卡
@@ -95,12 +135,58 @@ def _build_repair_prompt_for_chapter(
     # 截取整本梗概前几千字符，避免 prompt 过长
     master_ctx_snippet = master_ctx_text[:4000] + ("...\n（已截断）" if len(master_ctx_text) > 4000 else "")
 
+    # 关联的事件簇信息（若有）
+    related_clusters = _find_related_clusters_for_chapter(chapter_id, event_clusters or [])
+    clusters_brief = "（无可用事件簇信息；若整书是按事件簇规划的，请确保已生成 outputs/event_clusters.json）"
+    if related_clusters:
+        brief_items = []
+        for ec in related_clusters:
+            brief_items.append(
+                json.dumps(
+                    {
+                        "cluster_id": ec.get("cluster_id"),
+                        "name": ec.get("name"),
+                        "arc_id": ec.get("arc_id"),
+                        "core_payoff": ec.get("core_payoff"),
+                        "chapter_span": ec.get("chapter_span"),
+                        "main_opponent": ec.get("main_opponent"),
+                        "escalation_level": ec.get("escalation_level"),
+                        "prev_life_tragedy": ec.get("prev_life_tragedy"),
+                        "this_life_revenge": ec.get("this_life_revenge"),
+                        "cluster_outcome": ec.get("cluster_outcome"),
+                        "summary": ec.get("summary"),
+                    },
+                    ensure_ascii=False,
+                )
+            )
+        clusters_brief = "\n".join(brief_items)
+
+    # 针对第1、2章的硬约束说明
+    special_chapter_hint = ""
+    if chapter_id == 1:
+        special_chapter_hint = """
+【第1章额外硬约束】
+- 第1章必须是**上一世临死前的场景**，整章只写上一世的委屈与死亡过程；
+- 必须突出 ICU 病房、被放弃抢救、全网骂、亲人和男人背叛、医生冷漠等要素；
+- 不得出现重生后的今生剧情，不得提前写她意识到重生。
+"""
+    elif chapter_id == 2:
+        special_chapter_hint = """
+【第2章额外硬约束】
+- 第2章必须写**这一世重生后的开局**：她从病床或清晨惊醒，确认自己回到过去；
+- 要把她对上一世死亡记忆的对照感受写清楚，并在今生开始暗中布局复仇；
+- 不得再写纯上一世的完整情节，只能以少量闪回/对照穿插。
+"""
+
     prompt = f"""
 你现在是一名资深的「重生复仇短剧」大纲编剧助手。
 我已经为整本《重生复仇短剧》生成了 100 章的结构化章节卡（JSON），但其中部分章节是占位符，需要你在**不改变整本故事设定与总体走向**的前提下，补写缺失章节。
 
 【整本章节梗概摘要（文本版，仅供你把握整体走向，禁止改设定）】
 {master_ctx_snippet}
+
+【与第{chapter_id}章相关的事件簇规划（请严格对齐，不得改写事件簇设定）】
+{clusters_brief}
 
 【第{chapter_id}章的前后章节卡简要（请严格对齐，不得改写已有设定）】
 - 前一章卡片：
@@ -115,6 +201,8 @@ def _build_repair_prompt_for_chapter(
 【对应的上一世线索（若有，仅供参考，不可改设定）】
 {prev_life_line or "（可能暂无或未找到对应线索）"}
 
+{special_chapter_hint}
+
 【任务要求】
 1. 请为“第{chapter_id}章”生成**一条结构化章节卡 JSON 对象**，字段必须包含：
    - "chapter_id": {chapter_id}
@@ -122,9 +210,14 @@ def _build_repair_prompt_for_chapter(
    - "chapter_role": "revenge_payoff" / "grievance_build" / "present_only" / "cross_chapter" 之一，且要符合前后章节的节奏；
    - "present_mainline": 本章今生主线的一句话（短剧式，具体到场景与动作）；
    - "core_conflict": 本章的核心矛盾/对手意图，需与整本书的“重生复仇+医疗阴谋+职场/家族”大方向一致；
+   - "conflict_opponent": 与女主在本章直接对立/博弈的对象（可以是人、部门、舆论、制度等，要具体到“谁/什么力量”）；
    - "flashback_trigger": 当下剧情中触发上一世回忆的具体事件（若本章无需插入上一世，可写为空字符串）；
+   - "past_trigger": 上一世中与本章场景强绑定的触发点（如「同一间会议室」「同一句话术」「同一个病例号」）；
+   - "past_core_harm": 上一世在这一触发点附近发生的**具体伤害事件**（谁对谁做了什么，造成了什么后果，禁止写成概括语气）；
    - "revenge_action": 女主在本章采取的具体反制/复仇/埋线动作（若为纯铺垫章，可写“暂时隐忍、暗中收集线索”等，也要具体）；
+   - "present_result": 本章今生这一次交锋的直接结果（哪一方表面上赢/输/打平，产生了什么新的局面或信息）；
    - "ending_hook": 本章结尾抛出的钩子或悬念，要能自然衔接后一章；
+   - "tail_clue": 结尾顺手埋下的**微小但关键的后续线索**（例如一句被忽略的话、一个被顺手拍下的照片、一个未删除的聊天记录）；
    - "global_seed_progress": 本章对整本书“最大复仇主线种子”的**轻微推进**（0~1句），若本章不推进则写空字符串 ""；
    - "chapter_constraints": 数组，每个元素是一条**本章写作限制**说明，例如“本章不许出现实质复仇行动，只能铺垫”和“本章必须完成一次小复仇闭环”等。
 2. 本章内容必须：
@@ -148,9 +241,16 @@ def _repair_single_chapter_card(
     cards: List[Dict[str, Any]],
     master_ctx_text: str,
     prev_life_ctx_text: str,
+    event_clusters: Optional[List[Dict[str, Any]]] = None,
 ) -> Dict[str, Any]:
     """调用大模型修复某一章的章节卡。"""
-    prompt = _build_repair_prompt_for_chapter(chapter_id, cards, master_ctx_text, prev_life_ctx_text)
+    prompt = _build_repair_prompt_for_chapter(
+        chapter_id,
+        cards,
+        master_ctx_text,
+        prev_life_ctx_text,
+        event_clusters=event_clusters,
+    )
     messages = [
         {"role": "system", "content": "你是重生复仇短剧的大纲修复助手，只能在既有设定基础上补完缺失章节卡。"},
         {"role": "user", "content": prompt},
@@ -174,9 +274,14 @@ def _repair_single_chapter_card(
     obj.setdefault("chapter_role", "present_only")
     obj.setdefault("present_mainline", "")
     obj.setdefault("core_conflict", "")
+    obj.setdefault("conflict_opponent", "")
     obj.setdefault("flashback_trigger", "")
+    obj.setdefault("past_trigger", "")
+    obj.setdefault("past_core_harm", "")
     obj.setdefault("revenge_action", "")
+    obj.setdefault("present_result", "")
     obj.setdefault("ending_hook", "")
+    obj.setdefault("tail_clue", "")
     obj.setdefault("global_seed_progress", "")
     if "chapter_constraints" not in obj or not isinstance(obj["chapter_constraints"], list):
         obj["chapter_constraints"] = []
@@ -197,6 +302,7 @@ def fix_missing_chapters():
     cards = _load_master_cards(master_cards_path)
     master_ctx_text = _load_text_file(master_ctx_path)
     prev_life_ctx_text = _load_text_file(prev_life_path)
+    event_clusters = _load_event_clusters(OUTPUT_DIR)
 
     missing = _find_placeholder_chapters(cards)
     if not missing:
@@ -210,7 +316,13 @@ def fix_missing_chapters():
     for ch in missing:
         print(f"\n🔧 正在修复第{ch}章...")
         try:
-            fixed = _repair_single_chapter_card(ch, cards, master_ctx_text, prev_life_ctx_text)
+            fixed = _repair_single_chapter_card(
+                ch,
+                cards,
+                master_ctx_text,
+                prev_life_ctx_text,
+                event_clusters=event_clusters,
+            )
         except Exception as e:
             print(f"  ❌ 第{ch}章修复失败：{e}")
             continue

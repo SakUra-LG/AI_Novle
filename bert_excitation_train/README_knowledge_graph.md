@@ -76,7 +76,7 @@ python scripts/generate_chapter_content.py --chapter 6 --batch 5
 python scripts/rollback_knowledge_graph.py --chapters 6-10
 
 # 可选：同时删除对应正文文件
-python scripts/rollback_knowledge_graph.py --chapters 6-10 --delete-files
+python scripts/rollback_knowledge_graph.py --chapters 4-5 --delete-files
 ```
 
 然后重新执行正文生成。

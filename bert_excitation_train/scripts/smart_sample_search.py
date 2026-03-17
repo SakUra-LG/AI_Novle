@@ -181,19 +181,42 @@ def find_similar_samples(query, sample_vectors, samples, top_k=5, min_similarity
     
     return results
 
+def _normalize_heroine_names(text: str) -> str:
+    """
+    统一女主姓名为「沈清欢」：
+    - 林婉然 / 林婉 / 婉然 等直接错误名
+    - 林** / 夏** 这类常见女主姓氏带两字名
+    - 文本中的「女主角」「女主」等泛指
+    """
+    if not text:
+        return text
+    # 显式错误名
+    patterns = [
+        r"林婉然",
+        r"林婉",
+        r"婉然",
+    ]
+    for p in patterns:
+        text = re.sub(p, "沈清欢", text)
+    # 林** / 夏** 两字名，避免误伤：只替换“林某某”“夏某某”或明显人名结构
+    text = re.sub(r"林[\u4e00-\u9fff]{1,2}", "沈清欢", text)
+    text = re.sub(r"夏[\u4e00-\u9fff]{1,2}", "沈清欢", text)
+    # 泛指女主
+    text = re.sub(r"女主角", "沈清欢", text)
+    text = re.sub(r"女主", "沈清欢", text)
+    return text
+
+
 def adapt_sample_content(sample_content, target_context):
-    """适配样本内容到目标上下文"""
-    # 这里可以实现智能的内容适配逻辑
-    # 例如：替换人物名字、调整背景设定等
-    
-    adapted_content = sample_content
-    
-    # 简单的适配示例（可以根据需要扩展）
+    """适配样本内容到目标上下文，并统一女主名为沈清欢"""
+    adapted_content = sample_content or ""
+    # 先做项目相关的人名适配
     if "陈雪" in adapted_content and "林峰" in target_context:
         adapted_content = adapted_content.replace("陈雪", "林峰")
     elif "林峰" in adapted_content and "陈雪" in target_context:
         adapted_content = adapted_content.replace("林峰", "陈雪")
-    
+    # 再统一女主姓名，避免样本把正文女主名带歪
+    adapted_content = _normalize_heroine_names(adapted_content)
     return adapted_content
 
 def search_and_adapt_samples(user_input, target_context="", top_k=3, min_similarity=0.3, sample_set=None):

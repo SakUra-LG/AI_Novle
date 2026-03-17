@@ -198,6 +198,7 @@ def build_outline_system_prompt(adapted_samples=None):
 - 类型必须始终是「都市职场复仇 + 医疗阴谋揭露 + 舆论反转」，禁止写成黑帮动作、杀手战斗、直接肉搏等类型。
 - 复仇手段以：职场反杀、证据曝光、舆论操控、法律追责、资本博弈为主，不是物理战斗。
 - 紧扣"重生"主题，每章都要有"上一世记忆对照"和"今生提前布局"的双线结构。
+- **本书唯一女主姓名为【沈清欢】；禁止在梗概中使用其他女主姓名（如林婉然、夏某某等），一律改写为【沈清欢】。**
 
 【故事基调】
 - 项目名称：重生复仇短剧
@@ -286,6 +287,128 @@ def build_outline_system_prompt(adapted_samples=None):
     return base.strip()
 
 
+def build_event_cluster_plan_prompt() -> str:
+    """
+    先按「事件簇」而不是按单章设计整本 100 章的走线：
+    - 每个事件簇只服务一个爽点（打脸/揭穿/翻盘）
+    - 覆盖 2~4 章，内部结构为：背景 → 上一世被针对回忆 → 今世布局/反杀 → 事件结局
+    - 簇与簇之间层层递进，最终撕开最大黑幕
+    - 输出 JSON 数组，供后续章节卡生成时引用
+    """
+    return """
+你现在是整本《重生复仇短剧》的「总导演」，只负责设计**事件簇总走线**，暂时不要写逐章梗概。
+
+【核心要求：按事件簇而不是按单章设计】
+- 不要直接从“第1章、第2章……”开始想。
+- 先把整本书拆成若干个「事件簇」（event_cluster），每个簇只服务一个爽点：
+  - 示例：
+    - 事件簇A：发布会甩锅反杀（覆盖第3-6章）
+    - 事件簇B：主管假单打脸（覆盖第7-10章）
+- **一个事件簇结束前，不允许开启新的主线复仇冲突。**
+- 每个事件簇的最后一章必须完成一次清晰的“打脸/揭穿/拿回主动权”的阶段性闭环。
+  同时要写清楚本事件在这一簇内的**完整结局**，不能把收尾推给后面不属于本簇的章节。
+
+【层级递进要求】
+- 第1章：上一世临死（不属于任何事件簇）。
+- 第2章：重生确认（可视作「事件簇0-重生觉醒」）。
+- 第3章起，所有复仇冲突都必须挂在某个事件簇之下。
+- 事件簇要按层级递进：
+  1. 个人清白/职场小仇；
+  2. 医院科室/部门级腐败；
+  3. 家族与丈夫勾结；
+  4. 城市级医疗黑产/资本集团；
+  5. 终极大 Boss、翻案上一世死亡。
+
+【数量与覆盖范围硬性要求】
+- 第1章：上一世临死（不属于任何事件簇）。
+- 第2章：重生确认（可视作「事件簇0-重生觉醒」，也可以并入第一个正式事件簇的前奏）。
+- **第3章到第100章的主要复仇冲突，必须被若干个事件簇完整覆盖，中间不允许出现“从某一章开始完全没有对应事件簇”的空白地带。**
+- 单个事件簇覆盖 2–4 章，建议全书给出 **20–40 个事件簇**：
+  - 不能只写前 20 多章的几个事件簇就结束；
+  - 必须一直设计到**第100章附近**，保证最后几个事件簇的 `chapter_span` 的末尾值 ≥ 100；
+  - 禁止出现“最后一个事件簇的 chapter_span 只到 20 多章或 30 多章就结束”的情况。
+
+【单个事件簇内部结构】
+- 覆盖 2–4 章，建议：
+  - 本簇第1章：今生背景触发 + 对应场景/话术勾连上一世记忆。
+  - 本簇中间章：补足上一世具体被害经过 + 今世埋线、收集证据。
+  - 本簇最后一章：在相同/相似场景下完成反杀闭环，写清对当事人的直接后果 + 这一簇在整本书里的阶段性结局，同时丢出指向下一层大仇的小线索。
+
+【需要输出的 JSON 结构】
+- 只输出一个 JSON 数组，数组每个元素形如：
+  {
+    "cluster_id": "EC01",
+    "name": "发布会甩锅反杀",
+    "arc_id": "A03",
+    "core_payoff": "在部门发布会上，当众打脸主管的甩锅，证明上一世的“事故”并不是她的责任。",
+    "chapter_span": [3, 6],
+    "main_opponent": "直属主管赵明轩",
+    "escalation_level": 1,
+    "prev_life_tragedy": "上一世在同一场发布会中，她被主管当众甩锅成事故唯一责任人，随后被停职调查、社交关系全面崩塌。",
+    "this_life_revenge": "这一世她提前布局，掌握审批记录和聊天截图，在发布会上当众放证据，把甩锅彻底拆穿。",
+    "cluster_outcome": "本事件簇内，主管名誉严重受损，被暂时停职调查，但仍有更大幕后势力没有浮出水面。",
+    "summary": "用2-4句话概括本簇从背景→上一世被害→今世布局→反杀收尾的过程。",
+    "notes": [
+      "本簇内所有章节必须围绕同一场发布会冲突展开，不得中途换敌人。",
+      "最后一章必须完成一次清晰的打脸/翻盘。"
+    ]
+  }
+
+字段含义：
+- cluster_id：事件簇唯一 ID，例如 "EC01"、"EC02"...，按出现顺序编号。
+- name：该簇名称，简要点出爽点。
+- arc_id：主线分支 ID，例如 A01=重生&婚姻线，A02=家族线，A03=职场线，A04=医疗阴谋线，A05=资本集团线等。
+- core_payoff：一句话说明本簇的核心爽点/反杀结果。
+- chapter_span：[start, end]，表示本簇主要覆盖的章节号范围（含首尾）。
+  - 第1章固定为上一世临死，不要纳入任何簇；第2章可以单独一个极短簇或并入第一个簇。
+- main_opponent：本簇里主要对着干的对手是谁（人物/部门/医院/家族一支等）。
+- escalation_level：整数，表示本簇在整本书中的层级（1=个人小仇，2=部门，3=家族/婚姻，4=资本/黑产，5=终极翻案）。
+- prev_life_tragedy：用 1–3 句具体说明**上一世在这个事件簇所对应场景中的悲惨遭遇**（谁在什么场景里对她做了什么，导致了什么严重后果，禁止写成抽象情绪）。
+- this_life_revenge：用 1–3 句具体说明**这一世针对同一类场景/同一批人的复仇方式**（她做了哪些具体动作、使用了哪些证据或局面设计）。
+- cluster_outcome：用 1–2 句说明**本事件簇在今世的明确结局**（例如：某人被开除/判刑/名誉扫地、某个科室被整顿、家族地位受损等），方便后续章节在簇内最后一章把事件写死收尾。
+- summary：用 2–4 句概括本簇从头到尾的大致路径。
+- notes：数组，可写一些后续章节卡生成时必须遵守的硬约束或节奏要求。
+
+【最终输出要求】
+- 只输出 JSON 数组本身，不要任何解释文字、标题或注释。
+- 事件簇必须覆盖第3–100章的主要复仇冲突，chapter_span 之间可以首尾略有交叠，但严禁一个章节属于 3 个以上不同簇。
+- 至少有一个事件簇的 chapter_span 的末尾值为 100，且高编号事件簇（比如 EC10 以后）的章节覆盖区间必须逐步推进到 100 附近，不能让本书在事件簇规划上只写到二三十章就结束。
+""".strip()
+
+
+def generate_event_clusters(system_prompt: str) -> list:
+    """
+    先调用大模型生成「事件簇总走线」，再用于指导后续逐章卡生成。
+    如果解析失败，返回空列表（后续仍可按旧逻辑生成）。
+    """
+    prompt = build_event_cluster_plan_prompt()
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "你是重生复仇短剧的总体结构策划，需要先按事件簇设计全书走线，"
+                "事件簇信息会被后续逐章梗概生成阶段使用，禁止在这里写单章剧情。"
+            ),
+        },
+        {"role": "user", "content": prompt},
+    ]
+    raw = call_qianwen_api(messages)
+    if not raw or raw.startswith("通义千问"):
+        return []
+    raw = raw.strip()
+    start = raw.find("[")
+    end = raw.rfind("]")
+    if start == -1 or end == -1 or end <= start:
+        return []
+    try:
+        clusters = json.loads(raw[start : end + 1])
+        if isinstance(clusters, list):
+            return clusters
+    except Exception:
+        return []
+    return []
+
+
 def build_prev_life_outline_system_prompt():
     """
     构造「上一世遭遇线索点」的系统提示词：
@@ -361,39 +484,6 @@ def build_prev_life_outline_system_prompt():
    - "她记得在公司会议室里，赵明轩当众把财务漏洞甩到她身上，所有人沉默，她连辩解机会都没有。"
    - "她想起在ICU病房里，林修远站在床边冷笑说'你这种人，活着就是祸害'，护士们冷冷看着她，没人愿意为她争一句。"
    - "她记得在家庭聚会上，父亲当着所有亲戚的面质问她'你是不是做了什么见不得人的事'，然后直接挂断电话。"
-
-【信息递进设计 - 医疗阴谋层层揭示】
-线索点必须按照以下节奏递进，每10-15章揭示一层医疗阴谋真相：
-
-第1-15章：个人背叛层面
-   - 职场背叛、家庭冷漠、渣男背叛等个人层面的委屈
-   - 注意：必须是具体事件，不是被动感知
-
-第16-30章：初步医疗线索
-   - 发现手术报告被篡改、医院记录异常等初步线索
-   - 注意：必须是"她试图查证但被拒绝/被威胁"的具体事件，不是"她看到新闻说"
-
-第31-45章：资本链线索
-   - 发现医院董事会有资本控股、医疗设备采购异常等
-   - 注意：必须是"她试图调查但被压制/被威胁"的具体事件
-
-第46-60章：医生异常线索
-   - 发现主刀医生账户异常转账、与某组织有联系等
-   - 注意：必须是"她试图揭露但被拒绝/被威胁"的具体事件
-
-第61-75章：组织线索
-   - 发现匿名组织与林修远有关、多人受害等
-   - 注意：必须是"她试图求助但被拒绝/被威胁"的具体事件
-
-第76-90章：终极真相（但她的反抗仍然失败）
-   - 发现"故意让她死"的医疗阴谋、收钱杀人等
-   - 注意：必须是"她试图揭发但被压制/被威胁/被拒绝"的具体事件
-   - **关键：即使发现了真相，她的反抗也必须失败或被压制**
-
-第91-100章：完整真相链（但她的反抗仍然失败）
-   - 完整的利益链、所有参与者的动机等
-   - 注意：必须是"她试图公开但被拒绝/被威胁/被压制"的具体事件
-   - **关键：即使知道了完整真相，她的反抗也必须失败或被压制，最终导致死亡**
 
 【规模限制 - 短剧类型要求】
 - **规模应该是：城市级、行业级、资本集团级**
@@ -488,9 +578,89 @@ def build_batch_chapter_user_query_json(
     adapted_samples=None,
     global_seed_plan: str = "",
     seed_progress_so_far: str = "",
+    event_clusters: list | None = None,
 ) -> str:
     """构造单批（若干章）章节【短剧骨架 JSON 卡】的用户查询。用于直接生成结构化章节卡。"""
     ch_count = batch_end - batch_start + 1
+
+    # 根据事件簇信息，挑选与当前批次相关的簇，作为“本批次的事件簇约束”
+    cluster_block = ""
+    per_chapter_cluster_block = ""
+    if event_clusters:
+        related = []
+        for c in event_clusters:
+            try:
+                span = c.get("chapter_span") or c.get("chapterRange") or c.get("chapters")
+                if not isinstance(span, (list, tuple)) or len(span) != 2:
+                    continue
+                span_start, span_end = int(span[0]), int(span[1])
+            except Exception:
+                continue
+            if span_end < batch_start or span_start > batch_end:
+                continue
+            related.append(c)
+        if related:
+            # 总体事件簇说明
+            lines = []
+            for c in related:
+                cid = c.get("cluster_id", "")
+                name = c.get("name", "")
+                span = c.get("chapter_span", [])
+                core = c.get("core_payoff", "")
+                main_opp = c.get("main_opponent", "")
+                lines.append(
+                    f"- 事件簇 {cid or ''}《{name or '（未命名）'}》，覆盖章节 {span or '未知'}；"
+                    f"核心爽点：{core or '（未提供）'}；主要对手：{main_opp or '（未指定）'}。"
+                )
+            cluster_block = (
+                f"\n【当前批次涉及的事件簇总览】（本批第{batch_start}-{batch_end}章的主要冲突必须全部挂在这些簇之下，不得开启新的独立主线簇）\n"
+                + "\n".join(lines)
+            )
+            # 为本批每一章建立 “章节 ←→ 事件簇” 的硬绑定说明，明确首章/中章/尾章职能
+            chapter_lines: list[str] = []
+            for ch in range(batch_start, batch_end + 1):
+                # 找出覆盖该章的所有簇
+                covering: list[dict] = []
+                for c in related:
+                    span = c.get("chapter_span") or c.get("chapterRange") or c.get("chapters")
+                    try:
+                        s, e = int(span[0]), int(span[1])
+                    except Exception:
+                        continue
+                    if s <= ch <= e:
+                        covering.append(c)
+                if not covering:
+                    continue
+                sub_desc: list[str] = []
+                for c in covering:
+                    span = c.get("chapter_span") or c.get("chapterRange") or c.get("chapters")
+                    try:
+                        s, e = int(span[0]), int(span[1])
+                    except Exception:
+                        continue
+                    cid = c.get("cluster_id", "")
+                    name = c.get("name", "（未命名）")
+                    core = c.get("core_payoff", "")
+                    role = ""
+                    if ch == s and ch == e:
+                        role = "（该簇唯一一章：必须在本章内完成从背景→上一世被害→今世布局→反杀收尾的完整闭环）"
+                    elif ch == s:
+                        role = "（该簇首章：以今世触发点为主，点出上一世对应悲剧，为后续复仇埋线，不得抢先写完反杀）"
+                    elif ch == e:
+                        role = "（该簇尾章：必须在本章内兑现簇的 core_payoff，完成反杀与对当事人的清晰后果，不得把结局推给别的簇）"
+                    else:
+                        role = "（该簇中段：主要写今世布局与局势升级，可少量补完上一世细节，但本章仍需有实质推进或局部爽点）"
+                    sub_desc.append(
+                        f"    - 关联事件簇 {cid or ''}《{name}》{role}；本章今生主线必须围绕该簇核心爽点展开：{core or '（未提供）'}"
+                    )
+                chapter_lines.append(f"- 第{ch}章：\n" + "\n".join(sub_desc))
+            if chapter_lines:
+                per_chapter_cluster_block = (
+                    "\n【本批每一章与事件簇的硬绑定说明】\n"
+                    "下表定义了本批每一章在其所属事件簇内部的**职能定位**，生成章节卡时必须严格对齐，"
+                    "避免出现“事件簇写的是婚礼现场身份撕裂，但对应章节却写成别的职场/家族剧情”的错配：\n"
+                    + "\n".join(chapter_lines)
+                )
     first_batch_hint = ""
     if batch_start == 1:
         first_batch_hint = """
@@ -529,9 +699,23 @@ def build_batch_chapter_user_query_json(
 - 每一章都是这一世的剧情（只有第1章是上一世临死场景，已在前文处理），但**每章都必须与上一世的某个委屈记忆有镜像关系**。
 - 全书 100 章中，约每2章要有一次支线复仇或爽点爆发，不能把所有爽点堆在最后。
 - 重生短剧节奏：冲突密集、反转频繁，章节结尾必须有明确钩子（新的威胁/秘密/计划/倒计时等）。
+- **本书唯一女主姓名为【沈清欢】；禁止在章节卡和后续正文中使用其他女主姓名（如林婉然、夏某等），一律改写为【沈清欢】。**
+
+【章节闭合与前50章硬规则】
+- 前 50 章：
+  - 所有章节的 closure_type 必须是 "full_close"，禁止使用 "half_close" / "cross_chapter" / "chain_close" 等任何跨章只写一半的形式；
+  - chapter_role 中 "revenge_payoff" 至少占本批章节的一半（例如本批 5 章中至少 3 章为 "revenge_payoff"），确保每一两章就有一个讲完的小支线爽点；
+- 第 51 章及以后：
+  - 允许少量跨章冲突（如 chapter_role="cross_chapter" 或 closure_type 为半闭环），但**同一条跨章复仇情节通常控制在 2 章内，最多不超过 3 章**；
+  - 在 JSON 卡中用文本简单说明「该冲突预计用 2/3 章讲完」，避免无限挖坑。
+  - 若某个冲突预计需要超过 1200 字才能写爽，可以拆成 2–3 章：中段章用 chapter_role="cross_chapter" 标记，但每一段里照样要有推进和局部爽点，不能拖到最后一章才给爽。
+  - **禁止连续两章都只做铺垫（chapter_role 连续为 "grievance_build"/"present_only" 且无任一 "revenge_payoff"），必须「铺垫 → 回收」交替出现。**
+  - **禁止后半程出现“每一章都是一个全新、互不相关的小故事”的结构设计，需要更多章节在已有 arc_id 基础上延伸（例如同一 arc_id 的复仇情节用 2 章写完上下）。**
 
 {first_batch_hint}
 {seed_plan_block}
+{cluster_block}
+{per_chapter_cluster_block}
 
 【本批章节的结构角色】
 - 每一章必须指定本章的功能角色 chapter_role：
@@ -539,6 +723,19 @@ def build_batch_chapter_user_query_json(
   - "grievance_build"：本章以委屈/羞辱/被算计为主，为后续复仇攒情绪。
   - "present_only"：本章主要推进调查/布局，不要求当场复仇，但结尾必须留钩子。
   - "cross_chapter"：本章属于跨多章冲突的中段，不要求单章闭环，但要让局势升级。
+
+【单章内部内容占比与细节要求】
+- 每一章内部的大致内容占比建议：
+  - 背景铺垫 + 当下触发点（present_mainline + core_conflict + flashback_trigger + past_trigger）≈ 全章信息量的 40% 以内；
+  - 上一世具体被害经过（past_core_harm）≈ 全章信息量的 10% 左右，用一两个关键场景点破即可，禁止写成长篇回忆；
+  - 今世具体复仇过程 + 当场局面变化 + 对当事人的直接影响（revenge_action + present_result + ending_hook + tail_clue）≈ 全章信息量的 **50% 以上**，必须是篇幅重心；
+- 换句话说：**本书所有章节都要以“复仇爽感部分”为绝对主角，背景和上一世回忆只能作为前半段的铺垫，不能压过复仇过程本身。**
+- 具体到字段填写：
+  - "present_mainline" + "core_conflict" 用来快速交代当下局面，不要塞太多细节；
+  - "past_trigger" + "past_core_harm" 用 1–2 句写清上一世在同类场景中的具体悲惨遭遇即可，禁止抽象情绪；
+  - "revenge_action" 必须写出她用什么手段、亮出了什么证据、如何设计局面；
+  - "present_result" 必须写清这一次交锋谁赢谁输、对对方造成了什么直接后果；
+  - "ending_hook" 和 "tail_clue" 用来为下一章或更远的簇埋线，但不要抢走当章复仇结果的镜头。
 
 【输出格式（⚠️ 必须严格遵守）】
 - 只输出**一个 JSON 数组**，数组长度 = {ch_count}，不要输出任何解释性文字或注释。
@@ -557,10 +754,15 @@ def build_batch_chapter_user_query_json(
        "主管想把延期责任全部甩给她"；
   - "flashback_trigger": 触发上一世回忆的具体当下情境，例如：
        "被点名在年会上发言"、"家族饭局上被问起旧事"；
-  - "revenge_action": 本章女主采取的具体反制/复仇动作（若是 grievance_build，可以填“暂时隐忍、暗中埋线”之类，也要具体），例如：
+  - "conflict_opponent": 本章当下最直接的对手是谁（可以是具体人物、部门或势力），例如："直属主管赵明轩"、"急诊科主任及值班医生"；
+  - "past_trigger": 上一世中与本章场景强绑定的触发点（如「同一间会议室」「同一句话术」「同一个病例号」）；
+  - "past_core_harm": 上一世在这一触发点附近发生的**具体伤害事件**（谁对她做了什么，造成了什么结果，禁止写成“她感到很委屈”这种抽象情绪）；
+  - "revenge_action": 本章女主采取的具体反制/复仇/埋线动作（若是 grievance_build，可以填“暂时隐忍、暗中埋线、暗中收集证据”等，但也要写清楚她做了什么），例如：
        "她当众放出审批记录截图，证明延误责任在对方"；
+  - "present_result": 本章今生这一次交锋的直接表面结果，例如："主管表面占了上风，逼她签下保证书"，或 "她成功把锅甩回去，对方颜面尽失"；
   - "ending_hook": 本章结尾留下的钩子/悬念，用1句话点明，例如：
-       "散会后她收到匿名短信：你查错方向了"。
+       "散会后她收到匿名短信：你查错方向了"；
+  - "tail_clue": 结尾顺手埋下的**微小但关键的后续线索**（例如一句被忽略的话、一个被顺手拍下的照片、一个未删除的聊天记录）；
   - "global_seed_progress": 字符串，描述本章对「整本书最大复仇主线种子」的**轻微推进**，例如：
        "她顺手查了一眼当年那场手术的时间线，只是一句带过，不展开调查"；
      若本章不推进最大主线，则写空字符串 ""。
@@ -623,7 +825,8 @@ def generate_outline_batch_json(
     batch_start: int, batch_end: int, prior_summary: str,
     system_prompt: str, adapted_samples=None,
     global_seed_plan: str = "",
-    seed_progress_so_far: str = ""
+    seed_progress_so_far: str = "",
+    event_clusters: list | None = None,
 ):
     """生成单批章节【短剧骨架卡】，返回 list[dict]。带简单重试，尽量避免占位卡。"""
     max_retries = 3
@@ -643,6 +846,7 @@ def generate_outline_batch_json(
             adapted_samples,
             global_seed_plan=global_seed_plan,
             seed_progress_so_far=seed_progress_so_far,
+            event_clusters=event_clusters,
         ) + retry_hint
         messages = [
             {"role": "system", "content": system_prompt},
@@ -693,13 +897,22 @@ def generate_outline_batch_json(
         item.setdefault("chapter_role", "present_only")
         item.setdefault("present_mainline", "")
         item.setdefault("core_conflict", "")
+        item.setdefault("conflict_opponent", "")
         item.setdefault("flashback_trigger", "")
+        item.setdefault("past_trigger", "")
+        item.setdefault("past_core_harm", "")
         item.setdefault("revenge_action", "")
+        item.setdefault("present_result", "")
         item.setdefault("ending_hook", "")
+        item.setdefault("tail_clue", "")
         item.setdefault("global_seed_progress", "")
         # 约定：chapter_constraints 是一个字符串数组，后续正文生成时会作为硬限制注入 prompt
         if "chapter_constraints" not in item or not isinstance(item["chapter_constraints"], list):
             item["chapter_constraints"] = []
+        # 前 20 章强制闭环：无论模型怎么写，只要是 1–20 章，一律改写为 full_close，防止前期乱挖坑
+        ch_id = item.get("chapter_id")
+        if isinstance(ch_id, int) and 1 <= ch_id <= 20:
+            item["closure_type"] = "full_close"
         cleaned_cards.append(item)
 
     # 为缺失的章节号补占位
@@ -711,9 +924,14 @@ def generate_outline_batch_json(
                 "chapter_role": "present_only",
                 "present_mainline": f"第{ch}章：占位梗概（生成失败，待补充）",
                 "core_conflict": "",
+                "conflict_opponent": "",
                 "flashback_trigger": "",
+                "past_trigger": "",
+                "past_core_harm": "",
                 "revenge_action": "",
+                "present_result": "",
                 "ending_hook": "",
+                "tail_clue": "",
                 "global_seed_progress": "",
                 "chapter_constraints": []
             })
@@ -868,6 +1086,23 @@ def generate_outline_rebirth_revenge(use_batch: bool = True, batch_size: int = 5
     else:
         print("\n⚠️ 未能生成清晰的复仇主线蓝图，将在无蓝图的情况下继续生成（不推荐）。")
 
+    # 2.6）在生成章节前，先按「事件簇」设计全书走线
+    print("\n📌 正在生成整本书的『事件簇总走线』（按事件族而非按章思考）...\n")
+    event_clusters: list = generate_event_clusters(system_prompt)
+    if event_clusters:
+        print(f"✅ 已生成 {len(event_clusters)} 个事件簇，将用于指导后续逐章卡生成。")
+        # 顺便写一份事件簇规划到 outputs，方便人工查看
+        try:
+            os.makedirs(OUTPUT_DIR, exist_ok=True)
+            clusters_path = os.path.join(OUTPUT_DIR, "event_clusters.json")
+            with open(clusters_path, "w", encoding="utf-8") as f:
+                json.dump(event_clusters, f, ensure_ascii=False, indent=2)
+            print(f"📝 事件簇规划已写入：{clusters_path}")
+        except Exception:
+            pass
+    else:
+        print("⚠️ 事件簇总走线生成失败，将退回到按批次直接生成章节卡的旧逻辑。")
+
     # 3）生成章节梗概（分批 或 一次性）
     outline_text = None
     if use_batch:
@@ -887,6 +1122,7 @@ def generate_outline_rebirth_revenge(use_batch: bool = True, batch_size: int = 5
                 adapted_samples,
                 global_seed_plan=global_seed_plan,
                 seed_progress_so_far=seed_progress_so_far,
+                event_clusters=event_clusters if event_clusters else None,
             )
             all_cards.extend(batch_cards)
             # 用目前已生成的卡渲染一个简要前情摘要，供下一批参考
