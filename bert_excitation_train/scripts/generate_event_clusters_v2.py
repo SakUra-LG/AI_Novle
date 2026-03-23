@@ -6,7 +6,7 @@
 职责：
 1）先为整本书生成唯一的「最大复仇主线蓝图」（全书大目标），写入 outputs/global_seed_plan_v2.txt；
 2）在蓝图约束下，生成事件簇列表（与旧版 event_clusters.json 结构兼容）；
-3）为每个事件簇分配结构模版（M1~M5），写入字段 structure_template；
+3）对前两章做语义语法级兜底（固定 chapter_span），其余 chapter_span/文本尽量保持模型输出稳定，不再随机二次改写；
 4）将完整事件簇写入 outputs/event_clusters_v2.json，供后续梗概脚本 V2 使用。
 """
 
@@ -28,6 +28,54 @@ OUTPUT_DIR = os.path.join(PROJECT_ROOT, "outputs")
 
 API_Key_QW = "sk-a2966f4e37134351904851679884cb67"
 MAX_TOKENS = 8192
+
+# 在 V2 流程中统一锁定男女主姓名，后续所有脚本与模型提示都复用这一对名字
+HEROINE_NAME = "沈清欢"
+HERO_NAME = "顾寒川"
+
+DEFAULT_FORBIDDEN_NEW_ROLES = [
+    "神秘援手", "神秘司机", "系统", "系统提示音", "苏晚晴", "黑色轿车", "神秘人",
+    "幕后黑手", "更大风暴", "真正的敌人", "神秘男人", "陌生女性盟友", "未规划的关键证人",
+]
+
+SPECIAL_CHAPTER_PLAN: Dict[int, Dict[str, Any]] = {
+    1: {
+        "role": "prev_life_death_only",
+        "goal": "只写上一世病房临死前的绝境，不出现重生后的正式苏醒，也不出现任何调查/照片/身份谜团。",
+        "must_include": [
+            "深夜病房环境和监护仪报警",
+            "求助被医护/亲人无视或敷衍",
+            "陆景明与相关医护冷漠配合或敷衍安抚",
+            "最后一通电话被挂断或无人接听",
+        ],
+        "must_not_include": [
+            "重生醒来或从病床上“突然坐起”",
+            "任何现代场景中的调查/线索分析",
+            "照片/U盘/神秘人/系统/幕后黑手",
+            "身份替换/车祸新闻/警方介入",
+        ],
+        "ending": "在窒息和绝望中逐渐失去意识，意识到自己要死了但还不知道会重来一次。",
+        "must_resolve_this_chapter": ["上一世临死场景闭合"],
+    },
+    2: {
+        "role": "rebirth_awakening_only",
+        "goal": "只写重生惊醒与确认时间回到悲剧前夜，从震惊→怀疑是梦→通过具体证据确认“真的回去了”。",
+        "must_include": [
+            "从上一章病房死亡记忆中惊醒",
+            "发现自己回到熟悉房间/时间点",
+            "通过日期、手机、亲友状态等细节确认时间回溯",
+            "决定这一次不会再轻信任何人",
+        ],
+        "must_not_include": [
+            "直播/警方/媒体报道",
+            "更大势力/幕后阴谋的正式展开",
+            "非法实验/身份替换/系统提示音",
+            "正式举报或真正意义上的复仇行动",
+        ],
+        "ending": "她在确认“这不是梦”后，把第一个可疑细节记在心里，决定先沉住气观察身边所有人。",
+        "must_resolve_this_chapter": ["确认回到悲剧前夜闭合"],
+    },
+}
 
 
 def call_qianwen_api(messages, temperature=0.8, top_p=0.85, repetition_penalty=1.05):
@@ -58,7 +106,8 @@ def generate_global_seed_plan_v2() -> str:
     print("📌 正在生成整本书的『最大复仇主线蓝图 V2』...")
 
     base_query = (
-        "重生复仇短剧，女主沈清欢，现代都市+医疗阴谋+职场反杀，极致委屈+高密度爽点。"
+        f"重生复仇短剧，女主{HEROINE_NAME}，男主{HERO_NAME}，"
+        "现代都市+医疗阴谋+职场反杀，极致委屈+高密度爽点。"
     )
     adapted_samples = search_and_adapt_samples(
         user_input=base_query,
@@ -80,8 +129,9 @@ def generate_global_seed_plan_v2() -> str:
         "你是重生复仇短剧的大纲总策划，需要先为整本书设计唯一的最大复仇主线蓝图。"
     )
     user_prompt = (
-        "请为一部现代都市背景的《重生复仇短剧》设计一条**唯一的、贯穿全书 100 章的最大复仇主线蓝图 V2**，用 3-6 句话概括。\n\n"
+        f"请为一部现代都市背景的《重生复仇短剧》设计一条**唯一的、贯穿全书 100 章的最大复仇主线蓝图 V2**，用 3-6 句话概括。\n\n"
         "要求：\n"
+        f"- 明确并固定男女主姓名：女主名必须固定为「{HEROINE_NAME}」，男主名必须固定为「{HERO_NAME}」，后续所有事件簇、章节卡和正文中都只能使用这两个名字指代男女主（可以有称呼/外号，但正式点名时必须写出全名，不得更换为其他姓名）；\n"
         "- 明确上一世害死女主的关键参与者（如：渣男丈夫/未婚夫、主治医生/院方、背后资本集团等）及其相互关系；\n"
         "- 明确今生的最大复仇目标（例如：查清并摧毁这条“收钱杀人”的医疗利益链，让相关各方在公众面前共同崩盘）；\n"
         "- 给出主线大致推进顺序（例如：先婚姻/家族线→再职场线→再医疗线→最后资本与舆论决战），无需细节，只要清晰的阶段划分；\n"
@@ -106,7 +156,9 @@ def generate_global_seed_plan_v2() -> str:
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     path = os.path.join(OUTPUT_DIR, "global_seed_plan_v2.txt")
+    # 在文件开头显式写入男女主姓名，确保后续脚本与人工检查可以直接读取
     with open(path, "w", encoding="utf-8") as f:
+        f.write(f"女主：{HEROINE_NAME}\n男主：{HERO_NAME}\n\n")
         f.write(plan.strip())
     print(f"✅ 最大复仇主线蓝图 V2 已写入：{path}")
     return plan.strip()
@@ -119,8 +171,8 @@ def build_event_cluster_prompt(global_seed_plan: str) -> str:
         f"{global_seed_plan}\n\n"
         "请在此蓝图约束下，为整本书设计一份【事件簇总走线 V2】（按事件簇而不是按章节思考）。\n\n"
         "要求：\n"
-        "1. 将全书拆分为若干个事件簇（建议 10〜25 个，每簇 2〜8 章左右），每个簇围绕一个相对完整的冲突与爽点展开；\n"
-        "2. 每个事件簇必须包含：\n"
+        "1. 将全书拆分为若干个事件簇（建议 10〜25 个，每簇 2〜8 章左右），每个簇围绕一个**相对独立且完整的冲突+反杀闭环**展开，要符合短剧节奏，一个簇就是一组“上一世被打压 → 今世反杀”的爽文小故事；\n"
+        "2. 每个事件簇必须包含下列字段，并且【上一世受害 → 信息差 → 今世反击】三者之间要形成因果链，而不是彼此无关：\n"
         "   - cluster_id：字符串，形如 EC01, EC02...\n"
         "   - name：简短标题\n"
         "   - arc_id：所属大弧线ID，可用 A01/A02/A03 等粗分（例如：婚姻/家族线、职场线、医疗线、资本与舆论线）\n"
@@ -128,14 +180,22 @@ def build_event_cluster_prompt(global_seed_plan: str) -> str:
         "   - chapter_span：[起始章, 结束章]，例如 [3, 5]\n"
         "   - main_opponent：本簇的主要对手（可以是个人或机构）\n"
         "   - escalation_level：1~3 的整数，1=中小型冲突，3=重大阶段性爆点\n"
-        "   - prev_life_tragedy：对应上一世的典型悲剧前提\n"
-        "   - this_life_revenge：今生在本簇中大致如何反杀\n"
+        "   - prev_life_tragedy：对应上一世的典型悲剧前提，要写清楚【这一拨人/这一场局具体是怎么害她的、用了什么套路】，不能只写抽象情绪；\n"
+        "   - info_gap_from_prev_life：由于上一世的受打击/委屈，她在临死前或重生后额外掌握了哪些别人不知道的关键信息、暗线或漏洞（“信息差”），要从 prev_life_tragedy 里自然“生长出来”，例如：她在被害过程中无意听到的秘密对话、看到的账目、记住的时间节点或密码等——要写清楚她具体知道了什么、别人为什么不知道；\n"
+        "   - this_life_revenge：今生在本簇中大致如何反杀，必须**显式写出：因为上一世遭遇了上述陷害/毒害，她记住了 info_gap_from_prev_life 中这些细节，所以这一世才能提前踩准对方的布局反打回去**；\n"
         "   - cluster_outcome：本簇结束时的结果与对后续的影响\n"
         "   - summary：2~3 句对本簇从“酝酿→爆发→收尾”的简要说明\n"
         "   - notes：数组，补充任何写作提醒\n\n"
-        "3. 请直接输出 JSON 数组（顶层是 list），其中每个元素是一个事件簇对象，字段名用英文 key，字符串内容为中文。\n"
-        "4. 严格保证 chapter_span 不重叠且覆盖 1~100 章的主要剧情（允许个别章节作为跨簇过渡，但不要出现完全空档）。\n"
-        "5. 不要额外解释，不要输出 markdown，只输出干净的 JSON。"
+        "3. 所有簇中出现的男女主称呼必须与主线蓝图一致：女主只能叫「"
+        f"{HEROINE_NAME}"
+        "」，男主只能叫「"
+        f"{HERO_NAME}"
+        "」，不得另起其他姓名（可以有“他”“她”等代词和基于这两个姓名衍生的称呼，但不要额外造新名字）。\n"
+        "4. 各个事件簇之间不需要强行做复杂勾连，只需在大主线蓝图不矛盾的前提下，让每个簇自身的“上一世被这拨人害惨了 + 因为记住了他们的套路/漏洞而在今世成功反杀”形成完整小闭环即可；不要为了推进终极 Boss 而牺牲单簇的爽感完整度。\n"
+        "5. 每个簇的 summary 也要沿用这条逻辑：简短说明这一簇里她是如何先被同一批人/同一种手法坑过一遍，然后又借着对这些手法的熟悉和信息差，在今世反杀回去；禁止写成与上一世完全无关的职场升级/恋爱日常。\n"
+        "6. 请直接输出 JSON 数组（顶层是 list），其中每个元素是一个事件簇对象，字段名用英文 key，字符串内容为中文。\n"
+        "7. 严格保证 chapter_span 不重叠且覆盖 1~100 章的主要剧情（允许个别章节作为跨簇过渡，但不要出现完全空档）。\n"
+        "8. 不要额外解释，不要输出 markdown，只输出干净的 JSON。"
     )
 
 
@@ -240,8 +300,8 @@ def _post_process_clusters(clusters: List[Dict[str, Any]]) -> List[Dict[str, Any
     1）硬性固定：
        - 第 1 章：病房临终绝境场景（不能出现“上一世”“重生”“回忆”字样）；
        - 第 2 章：重获清晨的惊愕，没有实质复仇行动，重点是意识到自己“重来一次”的震惊感；
-    2）从第 3 章开始，为后续事件簇随机分配 2~4 章的章节跨度，避免总是固定 4 章；
-    3）尽量把 prev_life_tragedy / this_life_revenge 写得更具体，方便后续模型理解。
+    2）从第 3 章开始：不再随机分配章节跨度，chapter_span 直接沿用模型生成；
+    3）尽量把 prev_life_tragedy / this_life_revenge 写得更具体，方便后续模型理解（只补充文本，不重写结构跨度）。
     """
     if not clusters:
         return clusters
@@ -321,71 +381,167 @@ def _post_process_clusters(clusters: List[Dict[str, Any]]) -> List[Dict[str, Any
         "决定这一次绝不再轻信任何人，把那些‘看似关心’的细节都当成潜在的刀锋记下。"
     )
 
-    # ---------- 其余簇：从第 3 章开始随机分配章节范围 2~4 章 ----------
-    if len(clusters) > 2:
-        current_chapter = 3
-        rest = clusters[2:]
-        n_rest = len(rest)
-        for idx, c in enumerate(rest):
-            remaining_clusters = n_rest - idx
-            remaining_slots = 100 - current_chapter + 1
-            if remaining_slots <= 0:
-                # 防御：越界时直接收缩到上一簇
-                c["chapter_span"] = [100, 100]
-                continue
+    # ---------- 其余簇：保持模型生成的 chapter_span，不再随机改写 ----------
+    # 注意：这里不再动 clusters[2:] 的 chapter_span，避免“情节族→章节卡→正文”链路在后处理阶段被拆坏。
 
-            # 理论上每个簇至少 2 章，如果剩余空间不足则允许最后若干簇缩到 1 章
-            min_len = 2
-            if remaining_slots < 2 * remaining_clusters:
-                min_len = 1
-
-            if remaining_clusters == 1:
-                # 最后一个簇吃掉剩余所有章节，但不超过 4 章
-                length = min(4, remaining_slots)
-            else:
-                max_len = min(4, remaining_slots - 2 * (remaining_clusters - 1))
-                if max_len < min_len:
-                    max_len = min_len
-                length = random.randint(min_len, max_len)
-
-            start_ch = current_chapter
-            end_ch = min(100, start_ch + length - 1)
-            c["chapter_span"] = [start_ch, end_ch]
-            current_chapter = end_ch + 1
-
-        # 如果最后还有富余章节（极少数情况），并到最后一个簇上
-        if current_chapter <= 100 and rest:
-            last = rest[-1]
-            span = last.get("chapter_span") or [current_chapter, current_chapter]
-            try:
-                s, _e = int(span[0]), int(span[1])
-            except Exception:  # noqa: BLE001
-                s = current_chapter
-            last["chapter_span"] = [s, 100]
-
-    # ---------- 加强悲剧与复仇描述：除了第一簇，其他都可以更明确提“前后两世” ----------
+    # ---------- 加强悲剧/信息差/复仇描述：除了第一簇，其他都可以更明确提“前后两世” ----------
     for idx, c in enumerate(clusters):
         if idx == 0:
             # 第一簇已经手动写好，且有用词限制
             continue
         opp = c.get("main_opponent") or "对手"
-        payoff = c.get("core_payoff") or ""
+        payoff = (c.get("core_payoff") or "").strip()
         tragedy = (c.get("prev_life_tragedy") or "").strip()
         revenge = (c.get("this_life_revenge") or "").strip()
+        info_gap = (c.get("info_gap_from_prev_life") or "").strip()
 
         if len(tragedy) < 25:
-            c["prev_life_tragedy"] = (
+            tragedy = (
                 f"上一轮人生中，在这一环节她被{opp}一步步压制，"
                 f"表面是合理的流程或关心，实则把她推向无法翻盘的深渊：{tragedy or '关键证据被转移、话语权被夺走，身边人集体选择沉默。'}"
             )
-        if len(revenge) < 25:
-            c["this_life_revenge"] = (
-                f"这一次她提前意识到这里是命运转折点，"
-                f"针对{opp}当初的每一步布局做出反手：{revenge or '她故意示弱、反向收集证据，在别人以为她还像从前一样好欺负时，把准备好的反击一点点按下去。'}"
-                f"最终达成的爽点是：{payoff}"
+            c["prev_life_tragedy"] = tragedy
+        if len(info_gap) < 20:
+            info_gap = (
+                "在被逼到绝境的过程中，她无意间听到对方关于“怎么掩盖这次操作”的对话，"
+                "还看到过一份未被正式归档的原始记录，记住了具体时间、账号或人名，这些细节今生只有她一个人知道。"
             )
+            c["info_gap_from_prev_life"] = info_gap
+        # 根据上一世悲剧 + 信息差，强行改写今世复仇描述，让因果关系清晰
+        c["this_life_revenge"] = (
+            "今生她牢记上一世在这一环节是如何被"
+            f"{opp} "
+            "一步步逼到绝境，也清楚记得当时留下的那些“被他们忽视的细节”和暗箱操作："
+            f"{info_gap} "
+            "于是她假装顺着对方旧有的套路配合，实则提前卡在他们以为安全的时间点和环节上，"
+            "把上一世听到/看到的那些内部信息用来布局、取证或反向设计场面，"
+            "在关键时刻打断他们原本以为万无一失的节奏，让在场所有人都惊讶她怎么会知道这些内情；"
+            f"最终达成的爽点是：{payoff or '让对手在最得意的时候被反杀，当场翻车。'}"
+        )
 
     return clusters
+
+
+def _build_chapter_plan_for_cluster(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
+    """
+    为单个事件簇生成逐章 chapter_plan：
+    role / goal / must_include / must_not_include / ending / must_resolve_this_chapter
+    """
+    start_ch, end_ch = cluster.get("chapter_span") or cluster.get("chapterRange") or cluster.get("chapters") or (None, None)
+    if start_ch is None or end_ch is None:
+        return {}
+    start_ch, end_ch = int(start_ch), int(end_ch)
+    length = max(1, end_ch - start_ch + 1)
+
+    main_opp = cluster.get("main_opponent", "")
+    core_payoff = (cluster.get("core_payoff") or "").strip()
+    info_gap = (cluster.get("info_gap_from_prev_life") or "")
+    outcome = (cluster.get("cluster_outcome") or "").strip()
+    required_evidence_hint = info_gap[:80] if info_gap else "本簇信息差中提到的具体证据或内幕"
+
+    def _role_by_index(idx: int) -> str:
+        if length == 2:
+            return "prev_life_full" if idx == 1 else "present_revenge"
+        if idx == 1:
+            return "present_setup"
+        if idx == 2:
+            return "prev_life_full"
+        if idx == length:
+            return "present_revenge"
+        return "present_mid_bridge"
+
+    chapters_plan: Dict[str, Dict[str, Any]] = {}
+    for idx, ch in enumerate(range(start_ch, end_ch + 1), start=1):
+        # 第 1/2 章使用硬编码强约束
+        if ch in SPECIAL_CHAPTER_PLAN:
+            sc = SPECIAL_CHAPTER_PLAN[ch]
+            chapters_plan[str(ch)] = {
+                "role": sc["role"],
+                "goal": sc["goal"],
+                "must_include": sc["must_include"],
+                "must_not_include": sc["must_not_include"],
+                "ending": sc["ending"],
+                "must_resolve_this_chapter": sc.get("must_resolve_this_chapter", []),
+            }
+            continue
+
+        # 任务卡（goal/must/ending）复用正文脚本的同一套逻辑，保证稳定
+        if length == 1:
+            chapters_plan[str(ch)] = {
+                "role": _role_by_index(idx),
+                "goal": f"在本章内完成背景铺垫、上一世回忆与今世反击，兑现本簇爽点：{core_payoff}",
+                "must_include": [
+                    f"本簇主对手（{main_opp}）" if main_opp else "本簇主对手",
+                    "与信息差相关的证据或线索",
+                    "反杀结果或处罚",
+                ],
+                "must_not_include": DEFAULT_FORBIDDEN_NEW_ROLES + ["新幕后黑手", "只埋钩子不兑现"],
+                "ending": f"本簇结束，结果需落到：{outcome or '对手付出代价'}",
+                "must_resolve_this_chapter": ["锁定主对手", "显性使用信息差证据", "完成反杀并写出结果"],
+            }
+        elif length == 2:
+            if idx == 1:
+                chapters_plan[str(ch)] = {
+                    "role": _role_by_index(idx),
+                    "goal": "完整展开上一世在本簇情境下如何被害，为下一章反杀蓄力",
+                    "must_include": ["上一世具体受害过程", main_opp or "主对手", "与信息差相关的细节（如笔记、记录）"],
+                    "must_not_include": ["无关支线角色抢戏"] + DEFAULT_FORBIDDEN_NEW_ROLES,
+                    "ending": "回忆收束，读者清楚本簇仇人是谁、曾如何害她",
+                    "must_resolve_this_chapter": ["展开上一世悲剧", "明确主对手与信息差来源"],
+                }
+            else:
+                chapters_plan[str(ch)] = {
+                    "role": _role_by_index(idx),
+                    "goal": f"公开反杀完成，兑现：{core_payoff}，结果落到：{outcome or '对手付出代价'}",
+                    "must_include": ["当众揭穿或举报", f"证据链闭环（必须显性使用{required_evidence_hint}）", "处罚/后果/职业毁灭或舆论崩塌"],
+                    "must_not_include": ["只埋钩子不兑现", "更大风暴才刚开始", "新大Boss"] + DEFAULT_FORBIDDEN_NEW_ROLES,
+                    "ending": "本簇结束，主对手在本簇内得到应有下场",
+                    "must_resolve_this_chapter": ["公开反杀", "证据链显性使用", "后果落地"],
+                }
+        else:
+            # length >= 3
+            if idx == 1:
+                chapters_plan[str(ch)] = {
+                    "role": _role_by_index(idx),
+                    "goal": f"今生重遇本簇主对手（{main_opp}），触发相似场景，埋下与信息差相关的线索",
+                    "must_include": ["医院/职场等本簇场景", f"{main_opp}施压或试探" if main_opp else "本簇主对手施压或试探",
+                                      "沈清欢确认可追查线索（如值班室笔记、病历问题）"],
+                    "must_not_include": ["新幕后黑手", "追车/系统提示/无关神秘线"] + DEFAULT_FORBIDDEN_NEW_ROLES,
+                    "ending": "拿到进入关键场所的机会或发现证据位置，为下一章回忆与取证铺垫",
+                    "must_resolve_this_chapter": ["锁定主对手", "触发回忆线索", "发现可追查的具体线索"],
+                }
+            elif idx == 2:
+                chapters_plan[str(ch)] = {
+                    "role": _role_by_index(idx),
+                    "goal": "完整展开上一世延误/陷害的屈辱回忆，并与今生调查对照；今生拿到硬证据",
+                    "must_include": ["上一世具体抢救失败或陷害过程",
+                                      f"{main_opp}的主观恶意" if main_opp else "主对手的主观恶意",
+                                      "值班室笔记/病历篡改等信息差内容", "今生取得证据"],
+                    "must_not_include": ["无关支线角色抢戏"] + DEFAULT_FORBIDDEN_NEW_ROLES,
+                    "ending": "沈清欢今生已拿到可用的硬证据，为最后一章反杀做准备",
+                    "must_resolve_this_chapter": ["展开上一世悲剧", "拿到证据"],
+                }
+            elif idx == length:
+                chapters_plan[str(ch)] = {
+                    "role": _role_by_index(idx),
+                    "goal": f"公开举报与反杀完成，兑现本簇爽点：{core_payoff}，结果：{outcome or '职业毁灭/失去信任'}",
+                    "must_include": ["当众揭穿/举报", "证据链闭环（显性使用本簇信息差中的证据）",
+                                      "处罚/吊销/全院震动或舆论反噬"],
+                    "must_not_include": ["只埋钩子不兑现", "真正风暴才刚开始", "新大Boss"] + DEFAULT_FORBIDDEN_NEW_ROLES,
+                    "ending": "本簇结束，主对手在本簇内失去信任或受到处罚",
+                    "must_resolve_this_chapter": ["公开反杀", "后果落地"],
+                }
+            else:
+                chapters_plan[str(ch)] = {
+                    "role": _role_by_index(idx),
+                    "goal": "承上启下：压迫升级或取证推进，不引入新主线",
+                    "must_include": [main_opp or "主对手", "与信息差相关的调查或对峙"],
+                    "must_not_include": ["新核心人物", "新组织/新阴谋线"] + DEFAULT_FORBIDDEN_NEW_ROLES,
+                    "ending": "推进到下一章可直入反杀或收尾",
+                    "must_resolve_this_chapter": ["推进证据或压迫", "不扩散到其他簇"],
+                }
+
+    return chapters_plan
 
 
 def main() -> None:
@@ -399,9 +555,13 @@ def main() -> None:
         print("⚠️ 未生成任何事件簇，流程结束。")
         return
 
-    # 规则后处理：固定前两章语义 + 随机章节跨度 + 充实悲剧/复仇描述
+    # 规则后处理：固定前两章语义 + 充实悲剧/复仇描述
     clusters = _post_process_clusters(clusters)
-    clusters = attach_templates_to_clusters(clusters)
+    # V2：不再随机分配 structure_template，避免“情节族→章节卡→正文”链路被模板后处理破坏
+
+    # 新增：为每个事件簇附加稳定逐章执行计划 chapter_plan（给“章节卡脚本”直接读取）
+    for c in clusters:
+        c["chapter_plan"] = _build_chapter_plan_for_cluster(c)
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")

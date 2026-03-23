@@ -8,6 +8,7 @@
 |------|------|
 | `knowledge_graph.py` | 核心模块，可被正文生成器导入 |
 | `init_knowledge_graph.py` | 根据章节梗概初始化图谱 |
+| `backfill_knowledge_graph.py` | 根据已有正文（chapter_XXX.txt）补录图谱 |
 | `rollback_knowledge_graph.py` | 回溯：删除指定章节的图谱记录 |
 
 ## 二、使用流程
@@ -54,7 +55,24 @@ python scripts/rollback_knowledge_graph.py --chapters 1-10 --delete-files
 然后再重新执行正文生成（会重新抽取并加入图谱）。  
 > 注意：除了显式回滚外，图谱在查询时也会**自动移除已回收的伏笔**——当当前章节号 `>= recover_chapter` 时，视为该伏笔已回收，不再出现在后续章节的提示中，从而避免图谱越积越乱。
 
+### 4. 补录历史章节（按原文补图谱）
+
+当某些章节（如 1-11）在早期生成时未启用图谱同步，可直接从 `outputs/chapters/chapter_XXX.txt` 补录：
+
+```bash
+# 默认补录 1-11 章
+python scripts/backfill_knowledge_graph.py
+
+# 指定章节范围或离散章节
+python scripts/backfill_knowledge_graph.py --chapters 1-11
+python scripts/backfill_knowledge_graph.py --chapters 1 2 3 10
+
+# 覆盖式重抽（先删除这些章节旧记录，再重新抽取）
+python scripts/backfill_knowledge_graph.py --chapters 1-11 --overwrite
+```
+
 ## 三、参数示例
 
 - `init_knowledge_graph.py --master outputs/master_ctx.txt --prev-life outputs/prev_life_ctx.txt --output outputs/kg.json`
+- `backfill_knowledge_graph.py --chapters 1-11 --overwrite`
 - `rollback_knowledge_graph.py --chapters 6 7 8 9 10` 或 `--chapters 6-10`

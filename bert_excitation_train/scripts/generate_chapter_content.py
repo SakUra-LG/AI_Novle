@@ -1380,7 +1380,8 @@ class RebirthRevengeGenerator:
                 print(f"  [跨章] 最后场景/钩子已注入，本章必须接续")
 
         kg_context = ""
-        if self.use_knowledge_graph and _KG_AVAILABLE:
+        # 为避免前期情节漂移，前 20 章默认不注入知识图谱，仅在后续章节按需启用
+        if chapter_num > 20 and self.use_knowledge_graph and _KG_AVAILABLE:
             try:
                 if self._kg is None:
                     self._kg = RebirthKnowledgeGraph(self.outputs_dir / "knowledge_graph.json")
@@ -1398,20 +1399,29 @@ class RebirthRevengeGenerator:
             chapter_num, outline_corrected, outline_orig, prev_life_clue
         )
 
-        # 如上一章已成功抽取尾钩，但节拍卡里开头承接为“无”，则用上一章尾钩强制覆盖
+        # 如上一章已成功抽取尾钩，但节拍卡里开头承接为“无”，则在“同一情节组/同一 cluster”内才允许用尾钩覆盖开头
         if chapter_num > 1 and (prev_tail_scene or prev_unresolved_hook):
-            auto_hint = (prev_unresolved_hook or prev_tail_scene or "").strip()
-            if auto_hint:
-                raw = (open_from_prev or "").strip()
-                raw_simple = raw.replace("…", "").replace("。", "").strip()
-                if not raw or raw_simple in ("无", "无承接", "无特别承接"):
-                    open_from_prev = auto_hint[:150]
-                    print(f"  [跨章] 使用上一章尾钩覆盖节拍卡开头承接: {open_from_prev[:60]}…")
+            same_cluster = False
+            try:
+                # 当前章所属 cluster_id（若有）
+                card_cur = self._parse_json_maybe(outline_raw) if isinstance(outline_raw, str) else None
+                cur_cluster = (card_cur or {}).get("cluster_id")
+                # 上一章所属 cluster_id（若有）
+                prev_outline_raw = self.master_ctx.get(chapter_num - 1, "")
+                card_prev = self._parse_json_maybe(prev_outline_raw) if isinstance(prev_outline_raw, str) else None
+                prev_cluster = (card_prev or {}).get("cluster_id")
+                same_cluster = bool(cur_cluster and prev_cluster and cur_cluster == prev_cluster)
+            except Exception:
+                same_cluster = False
 
-        # 前 50 章：若节拍卡给出的闭合类型不是 full_close，则强制改回 full_close，避免前期乱挖坑
-        if isinstance(closure_type, str) and 1 <= chapter_num <= 50 and closure_type != "full_close":
-            print(f"  [闭合类型修正] 第{chapter_num}章处于前50章，closure_type={closure_type} 已强制改为 full_close")
-            closure_type = "full_close"
+            if same_cluster:
+                auto_hint = (prev_unresolved_hook or prev_tail_scene or "").strip()
+                if auto_hint:
+                    raw = (open_from_prev or "").strip()
+                    raw_simple = raw.replace("…", "").replace("。", "").strip()
+                    if not raw or raw_simple in ("无", "无承接", "无特别承接"):
+                        open_from_prev = auto_hint[:150]
+                        print(f"  [跨章] 使用上一章尾钩覆盖节拍卡开头承接: {open_from_prev[:60]}…")
 
         if beat_card:
             print(f"[节拍卡 第{chapter_num}章]\n{beat_card}\n")
@@ -1437,13 +1447,19 @@ class RebirthRevengeGenerator:
         if isinstance(present, dict):
             need_prev_life = present.get("need_prev_life", need_prev_life_infer) if present.get("need_prev_life") is not None else need_prev_life_infer
             flashback_breakpoint_hint = present.get("flashback_breakpoint") or ""
-            # 固定上一世比例在 35%~50% 区间，覆盖旧默认值
             past_ratio_min = 0.35
             past_ratio_max = 0.50
         else:
             need_prev_life = need_prev_life_infer
             flashback_breakpoint_hint = ""
             past_ratio_min, past_ratio_max = 0.35, 0.50
+        # 硬性限制：第1、2章不插入上一世回忆（病房绝境 + 重生惊醒，无回忆）
+        if chapter_num in (1, 2):
+            need_prev_life = False
+        # V2 情节组模式：仅当本章角色为“承担上一世回忆”的那一章时才 need_prev_life，单位是情节组而非每章
+        elif isinstance(card, dict) and card.get("chapter_role_v2"):
+            _prev_life_roles = ("prev_life_full", "prev_life_explained_by_investigation", "present_past_mix", "slow_burn_press_with_past_shadow")
+            need_prev_life = card.get("chapter_role_v2") in _prev_life_roles
         # 从 master 章节卡中读取“整书最大复仇主线小推进”和本章写作限制
         global_seed_progress = ""
         chapter_constraints: List[str] = []
@@ -1474,8 +1490,12 @@ class RebirthRevengeGenerator:
         if any(rag_samples.get(k) for k in ("revenge", "grievance", "universal")):
             n = sum(len(rag_samples.get(k, [])) for k in ("revenge", "grievance", "universal"))
             print(f"  [RAG样本] 已注入 {n} 条参考（委屈/爽感/通用）")
-        if need_prev_life:
-            print(f"  [上一世] 本章强制上一世回忆，占比 {int(past_ratio_min*100)}%~{int(past_ratio_max*100)}%")
+        if chapter_num in (1, 2):
+            print(f"  [上一世] 第{chapter_num}章不插入上一世回忆（病房绝境/重生惊醒，无回忆）")
+        elif need_prev_life:
+            print(f"  [上一世] 本情节组内由本章承担上一世回忆，占比 {int(past_ratio_min*100)}%~{int(past_ratio_max*100)}%")
+        elif isinstance(card, dict) and (card.get("chapter_role_v2") or card.get("cluster_id")):
+            print(f"  [上一世] 本章不承担上一世回忆（由本情节组其他章节承担）")
 
         # 第三步：根据节拍卡+梗概+情绪强化点+跨章硬约束+RAG样本+章节类型/闭合类型生成正文
         body_prompt = self.build_prompt_with_beat(

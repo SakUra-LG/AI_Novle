@@ -4,10 +4,9 @@
 基于 V2 事件簇的章节卡生成脚本。
 
 职责：
-1）读取 outputs/event_clusters_v2.json（含 structure_template）；
-2）按事件簇与模版 M1~M5，为每个章节分配章节角色（chapter_role_v2）；
-3）生成轻量级章节卡 JSON（面向正文脚本使用），不再向模型请求详细梗概；
-4）基于章节卡和简要拼接的“上一世前提”，生成上一世线索文件 prev_life_ctx_v2.txt。
+1）读取 outputs/event_clusters_v2.json（不再依赖 structure_template）；
+2）为每个章节生成「可执行章节任务卡」（chapter_goal / must_include / must_not_include / chapter_ending）；
+3）基于本章任务卡渲染得到的整本梗概，生成上一世线索文件 prev_life_ctx_v2.txt。
 """
 
 import os
@@ -27,6 +26,317 @@ from generate_event_clusters_v2 import generate_global_seed_plan_v2  # reuse if 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "outputs")
+
+
+DEFAULT_FORBIDDEN_NEW_ROLES = [
+    "神秘援手", "神秘司机", "系统", "系统提示音", "苏晚晴", "黑色轿车", "神秘人", "幕后黑手",
+    "更大风暴", "真正的敌人", "神秘男人", "陌生女性盟友", "未规划的关键证人",
+]
+
+# 第1/2章硬锁定：不让正文阶段“自由发挥”乱插调查/重生等
+SPECIAL_CARDS: Dict[int, Dict[str, Any]] = {
+    1: {
+        "chapter_role_v2": "prev_life_death_only",
+        "chapter_goal": "只写上一世病房临死前的绝境，不出现重生后的正式苏醒，也不出现任何调查/照片/身份谜团。",
+        "chapter_must_include": [
+            "深夜病房环境和监护仪报警",
+            "求助被医护/亲人无视或敷衍",
+            "陆景明与相关医护冷漠配合或敷衍安抚",
+            "最后一通电话被挂断或无人接听",
+        ],
+        "chapter_must_not_include": [
+            "重生醒来或从病床上“突然坐起”",
+            "任何现代场景中的调查/线索分析",
+            "照片/U盘/神秘人/系统/幕后黑手",
+            "身份替换/车祸新闻/警方介入",
+        ],
+        "chapter_ending": "在窒息和绝望中逐渐失去意识，意识到自己要死了但还不知道会重来一次。",
+        "must_resolve_this_chapter": ["上一世临死场景闭合"],
+    },
+    2: {
+        "chapter_role_v2": "rebirth_awakening_only",
+        "chapter_goal": "只写重生惊醒与确认时间回到悲剧前夜，从震惊→怀疑是梦→通过具体证据确认“真的回去了”。",
+        "chapter_must_include": [
+            "从上一章病房死亡记忆中惊醒",
+            "发现自己回到熟悉房间/时间点",
+            "通过日期、手机、亲友状态等细节确认时间回溯",
+            "决定这一次不会再轻信任何人",
+        ],
+        "chapter_must_not_include": [
+            "直播/警方/媒体报道",
+            "更大势力/幕后阴谋的正式展开",
+            "非法实验/身份替换/系统提示音",
+            "正式举报或真正意义上的复仇行动",
+        ],
+        "chapter_ending": "她在确认“这不是梦”后，把第一个可疑细节记在心里，决定先沉住气观察身边所有人。",
+        "must_resolve_this_chapter": ["确认回到悲剧前夜闭合"],
+    },
+}
+
+
+def _parse_cluster_span(cluster: Dict[str, Any]) -> (int, int):
+    span = cluster.get("chapter_span") or cluster.get("chapterRange") or cluster.get("chapters")
+    if not span:
+        raise ValueError("event cluster 缺少 chapter_span")
+    start, end = int(span[0]), int(span[1])
+    return start, end
+
+
+def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
+    """
+    为单个事件簇生成「簇级执行计划」：每章 goal / must_include / must_not_include / ending / must_resolve_this_chapter
+    逻辑与 V2 正文脚本保持一致，避免在不同阶段被改写。
+    """
+    start_ch, end_ch = _parse_cluster_span(cluster)
+    length = max(1, end_ch - start_ch + 1)
+    cid = cluster.get("cluster_id", "")
+    main_opp = cluster.get("main_opponent", "")
+    core_payoff = cluster.get("core_payoff", "")
+    info_gap = (cluster.get("info_gap_from_prev_life") or "")
+    outcome = cluster.get("cluster_outcome", "")
+    required_evidence_hint = info_gap[:80] if info_gap else "本簇信息差中提到的具体证据或内幕"
+
+    chapters_plan: Dict[str, Dict[str, Any]] = {}
+    if length == 1:
+        chapters_plan[str(start_ch)] = {
+            "chapter_goal": f"在本章内完成背景铺垫、上一世回忆与今世反击，兑现本簇爽点：{core_payoff}",
+            "chapter_must_include": [f"本簇主对手（{main_opp}）" if main_opp else "本簇主对手", "与信息差相关的证据或线索", "反杀结果或处罚"],
+            "chapter_must_not_include": DEFAULT_FORBIDDEN_NEW_ROLES + ["新幕后黑手", "只埋钩子不兑现"],
+            "chapter_ending": f"本簇结束，结果需落到：{outcome or '对手付出代价'}"[:120],
+            "must_resolve_this_chapter": ["锁定主对手", "显性使用信息差证据", "完成反杀并写出结果"],
+        }
+    elif length == 2:
+        ch1, ch2 = start_ch, end_ch
+        chapters_plan[str(ch1)] = {
+            "chapter_goal": "完整展开上一世在本簇情境下如何被害，为下一章反杀蓄力",
+            "chapter_must_include": ["上一世具体受害过程", main_opp or "主对手", "与信息差相关的细节（如笔记、记录）"],
+            "chapter_must_not_include": ["无关支线角色抢戏"] + DEFAULT_FORBIDDEN_NEW_ROLES,
+            "chapter_ending": "回忆收束，读者清楚本簇仇人是谁、曾如何害她",
+            "must_resolve_this_chapter": ["展开上一世悲剧", "明确主对手与信息差来源"],
+        }
+        chapters_plan[str(ch2)] = {
+            "chapter_goal": f"公开反杀完成，兑现：{core_payoff}，结果落到：{outcome or '对手付出代价'}",
+            "chapter_must_include": ["当众揭穿或举报", f"证据链闭环（必须显性使用{required_evidence_hint}）", "处罚/后果/职业毁灭或舆论崩塌"],
+            "chapter_must_not_include": ["只埋钩子不兑现", "更大风暴才刚开始", "新大Boss"] + DEFAULT_FORBIDDEN_NEW_ROLES,
+            "chapter_ending": "本簇结束，主对手在本簇内得到应有下场",
+            "must_resolve_this_chapter": ["公开反杀", "证据链显性使用", "后果落地"],
+        }
+    else:
+        ch1, ch_last = start_ch, end_ch
+        chapters_plan[str(ch1)] = {
+            "chapter_goal": f"今生重遇本簇主对手（{main_opp}），触发相似场景，埋下与信息差相关的线索",
+            "chapter_must_include": ["医院/职场等本簇场景", f"{main_opp}施压或试探" if main_opp else "本簇主对手施压或试探", "沈清欢确认可追查线索（如值班室笔记、病历问题）"],
+            "chapter_must_not_include": ["新幕后黑手", "追车/系统提示/无关神秘线", "大段展开上一世完整受害经过"] + DEFAULT_FORBIDDEN_NEW_ROLES,
+            "chapter_ending": "拿到进入关键场所的机会或发现证据位置，为下一章回忆与取证铺垫",
+            "must_resolve_this_chapter": ["锁定主对手", "触发回忆线索", "发现可追查的具体线索", "建立今生反击起点"],
+        }
+        chapters_plan[str(ch1 + 1)] = {
+            "chapter_goal": "本簇唯一一章可详细展开上一世延误/陷害回忆，并与今生调查对照；今生拿到硬证据",
+            "chapter_must_include": ["上一世具体抢救失败或陷害过程", f"{main_opp}的主观恶意" if main_opp else "主对手的主观恶意", "值班室笔记/病历篡改等信息差内容", "今生取得证据"],
+            "chapter_must_not_include": ["无关支线角色抢戏"] + DEFAULT_FORBIDDEN_NEW_ROLES,
+            "chapter_ending": "沈清欢今生已拿到可用的硬证据，为最后一章反杀做准备",
+            "must_resolve_this_chapter": ["展开上一世悲剧", "拿到证据"],
+        }
+        chapters_plan[str(ch_last)] = {
+            "chapter_goal": f"公开举报与反杀完成，兑现本簇爽点：{core_payoff}，结果：{outcome or '职业毁灭/失去信任'}",
+            "chapter_must_include": ["当众揭穿/举报", "证据链闭环（显性使用本簇信息差中的证据）", "处罚/吊销/全院震动或舆论反噬"],
+            "chapter_must_not_include": ["只埋钩子不兑现", "真正风暴才刚开始", "新大Boss"] + DEFAULT_FORBIDDEN_NEW_ROLES,
+            "chapter_ending": "本簇结束，主对手在本簇内失去信任或受到处罚",
+            "must_resolve_this_chapter": ["公开反杀", "后果落地"],
+        }
+        for idx, ch in enumerate(range(ch1 + 2, ch_last), start=1):
+            bridge_goal = "承上启下：压迫升级或取证推进，不引入新主线"
+            bridge_must = [main_opp or "主对手", "与信息差相关的调查或对峙"]
+            if idx == 1:
+                bridge_goal = "将已拿到的首个证据进行初步核验，确认可用于反击的突破口"
+                bridge_must = [main_opp or "主对手", "对上一章证据做核验/复盘", "锁定下一步可公开使用的证据链环节"]
+            elif idx == 2:
+                bridge_goal = "把线索串成可公开攻击的证据链，制造主对手心理与处境压力"
+                bridge_must = [main_opp or "主对手", "证据链补全动作", "今生反击计划成型"]
+            elif idx >= 3:
+                bridge_goal = "反击前夜：推进到可直接公开揭穿，不再扩展新问题"
+                bridge_must = [main_opp or "主对手", "公开反击前的最后确认", "确保本簇爽点在收尾章兑现"]
+            chapters_plan[str(ch)] = {
+                "chapter_goal": bridge_goal,
+                "chapter_must_include": bridge_must,
+                "chapter_must_not_include": ["新核心人物", "新组织/新阴谋线", "再次详细重演上一世受害过程"] + DEFAULT_FORBIDDEN_NEW_ROLES,
+                "chapter_ending": "推进到下一章可直入反杀或收尾",
+                "must_resolve_this_chapter": ["推进证据或压迫", "不扩散到其他簇", "保持今生复仇主线占比"],
+            }
+
+    # cid 目前未直接用于 plan 字段，保留参数便于后续扩展
+    _ = cid
+    return chapters_plan
+
+
+def _assign_role_v2(length: int, chapter_index: int) -> str:
+    # 与 generate_chapter_content_v2.py 的逻辑保持一致
+    if length == 2:
+        return "prev_life_full" if chapter_index == 1 else "present_revenge"
+    if chapter_index == 1:
+        return "present_setup"
+    if chapter_index == 2:
+        return "prev_life_full"
+    if chapter_index == length:
+        return "present_revenge"
+    return "present_mid_bridge"
+
+
+def _build_cards_from_clusters_v2(clusters: List[Dict[str, Any]]) -> Dict[int, Dict[str, Any]]:
+    cards: Dict[int, Dict[str, Any]] = {}
+
+    for cluster in clusters:
+        start_ch, end_ch = _parse_cluster_span(cluster)
+        length = max(1, end_ch - start_ch + 1)
+        cid = cluster.get("cluster_id", "")
+        cname = cluster.get("name", "")
+        arc_id = cluster.get("arc_id", "A01")
+        main_opp = cluster.get("main_opponent", "")
+        core_payoff = cluster.get("core_payoff", "")
+        prev_tragedy = cluster.get("prev_life_tragedy", "")
+        this_revenge = cluster.get("this_life_revenge", "")
+        info_gap = cluster.get("info_gap_from_prev_life", "")
+        outcome = cluster.get("cluster_outcome", "")
+        escalation = cluster.get("escalation_level", 1)
+        cluster_plan = cluster.get("chapter_plan") if isinstance(cluster.get("chapter_plan"), dict) else {}
+        plan = _build_cluster_plan(cluster)
+
+        for idx, ch in enumerate(range(start_ch, end_ch + 1), start=1):
+            # 1）优先读取事件簇中的 chapter_plan（如果存在）
+            ch_plan_from_cluster = cluster_plan.get(str(ch)) if isinstance(cluster_plan, dict) else None
+            if isinstance(ch_plan_from_cluster, dict) and ch_plan_from_cluster:
+                role_v2 = str(ch_plan_from_cluster.get("role", _assign_role_v2(length, idx)))
+                cards[ch] = {
+                    "chapter_id": ch,
+                    "arc_id": arc_id,
+                    "cluster_id": cid,
+                    "cluster_name": cname,
+                    "structure_template": "M1",
+                    "chapter_role_v2": role_v2,
+                    "core_payoff": core_payoff,
+                    "main_opponent": main_opp,
+                    "prev_life_tragedy": prev_tragedy,
+                    "this_life_revenge": this_revenge,
+                    "info_gap_from_prev_life": info_gap,
+                    "cluster_outcome": outcome,
+                    "escalation_level": escalation,
+                    "cluster_span_start": start_ch,
+                    "cluster_span_end": end_ch,
+                    "cluster_chapter_index": idx,
+                    "cluster_chapter_total": length,
+                    "chapter_goal": str(ch_plan_from_cluster.get("goal", "")),
+                    "chapter_must_include": ch_plan_from_cluster.get("must_include", []) or [],
+                    "chapter_must_not_include": ch_plan_from_cluster.get("must_not_include", []) or [],
+                    "chapter_ending": str(ch_plan_from_cluster.get("ending", "")),
+                    "must_resolve_this_chapter": ch_plan_from_cluster.get("must_resolve_this_chapter", []) or [],
+                    "allowed_roles": ["沈清欢", main_opp] if main_opp else ["沈清欢"],
+                    "forbidden_roles": DEFAULT_FORBIDDEN_NEW_ROLES.copy(),
+                }
+                continue
+
+            # 2）兜底：没有 chapter_plan 就按旧推导逻辑补齐（仍保持稳定）
+            if ch in SPECIAL_CARDS:
+                sc = SPECIAL_CARDS[ch]
+                role_v2 = sc["chapter_role_v2"]
+                ch_plan = {
+                    "chapter_goal": sc["chapter_goal"],
+                    "chapter_must_include": sc["chapter_must_include"],
+                    "chapter_must_not_include": sc["chapter_must_not_include"],
+                    "chapter_ending": sc["chapter_ending"],
+                    "must_resolve_this_chapter": sc.get("must_resolve_this_chapter", []),
+                }
+            else:
+                role_v2 = _assign_role_v2(length, idx)
+                ch_plan = plan.get(str(ch), {})
+
+            cards[ch] = {
+                "chapter_id": ch,
+                "arc_id": arc_id,
+                "cluster_id": cid,
+                "cluster_name": cname,
+                # 这里不再由 event_clusters 随机分配模板；正文仍可用这个字段做写作节拍提示
+                "structure_template": "M1",
+                "chapter_role_v2": role_v2,
+                "core_payoff": core_payoff,
+                "main_opponent": main_opp,
+                "prev_life_tragedy": prev_tragedy,
+                "this_life_revenge": this_revenge,
+                "info_gap_from_prev_life": info_gap,
+                "cluster_outcome": outcome,
+                "escalation_level": escalation,
+                "cluster_span_start": start_ch,
+                "cluster_span_end": end_ch,
+                "cluster_chapter_index": idx,
+                "cluster_chapter_total": length,
+                "chapter_goal": ch_plan.get("chapter_goal", ""),
+                "chapter_must_include": ch_plan.get("chapter_must_include", []),
+                "chapter_must_not_include": ch_plan.get("chapter_must_not_include", []),
+                "chapter_ending": ch_plan.get("chapter_ending", ""),
+                "must_resolve_this_chapter": ch_plan.get("must_resolve_this_chapter", []),
+                "allowed_roles": ["沈清欢", main_opp] if main_opp else ["沈清欢"],
+                "forbidden_roles": DEFAULT_FORBIDDEN_NEW_ROLES.copy(),
+            }
+
+            _enforce_revenge_focused_constraints(cards[ch])
+
+    # 兜底：保证 1~100 都有卡（避免正文阶段拿不到卡导致“自由发挥”）
+    for ch in range(1, 101):
+        if ch in cards:
+            continue
+        cards[ch] = {
+            "chapter_id": ch,
+            "arc_id": "A01",
+            "cluster_id": "",
+            "cluster_name": "",
+            "structure_template": "M1",
+            "chapter_role_v2": "present_only",
+            "core_payoff": "",
+            "main_opponent": "",
+            "prev_life_tragedy": "",
+            "this_life_revenge": "",
+            "info_gap_from_prev_life": "",
+            "cluster_outcome": "",
+            "escalation_level": 1,
+            "cluster_span_start": 0,
+            "cluster_span_end": 0,
+            "cluster_chapter_index": 0,
+            "cluster_chapter_total": 0,
+            "chapter_goal": "本章为过渡或兜底，不得引入新的核心人物/阴谋线。",
+            "chapter_must_include": [],
+            "chapter_must_not_include": DEFAULT_FORBIDDEN_NEW_ROLES.copy(),
+            "chapter_ending": "本章以与前文承接的一幕结束。",
+            "must_resolve_this_chapter": ["不引入新主线"],
+            "allowed_roles": ["沈清欢"],
+            "forbidden_roles": DEFAULT_FORBIDDEN_NEW_ROLES.copy(),
+        }
+        _enforce_revenge_focused_constraints(cards[ch])
+
+    return cards
+
+
+def _enforce_revenge_focused_constraints(card: Dict[str, Any]) -> None:
+    """
+    统一约束：除 prev_life_full 章节外，不允许详细重演上一世情节；
+    强化“信息差驱动今生反击”的主线，降低重复回忆风险。
+    """
+    role = str(card.get("chapter_role_v2", "") or "")
+    must_not = card.get("chapter_must_not_include")
+    if not isinstance(must_not, list):
+        must_not = []
+
+    if role != "prev_life_full":
+        if "详细重演上一世完整受害过程" not in must_not:
+            must_not.append("详细重演上一世完整受害过程")
+        if "整章大篇幅上一世回忆喧宾夺主" not in must_not:
+            must_not.append("整章大篇幅上一世回忆喧宾夺主")
+    card["chapter_must_not_include"] = must_not
+
+    must_in = card.get("chapter_must_include")
+    if not isinstance(must_in, list):
+        must_in = []
+    if "今生利用信息差推进反击动作（可被读者明确识别）" not in must_in:
+        must_in.append("今生利用信息差推进反击动作（可被读者明确识别）")
+    card["chapter_must_include"] = must_in
 
 
 def _load_event_clusters_v2() -> List[Dict[str, Any]]:
@@ -152,6 +462,8 @@ def _merge_roles_for_all_clusters(clusters: List[Dict[str, Any]]) -> Dict[int, D
                 "main_opponent": c.get("main_opponent", ""),
                 "prev_life_tragedy": c.get("prev_life_tragedy", ""),
                 "this_life_revenge": c.get("this_life_revenge", ""),
+                # 新增：记录这一簇中“上一世带来的信息差”，为今世反击提供依据
+                "info_gap_from_prev_life": c.get("info_gap_from_prev_life", ""),
                 "cluster_outcome": c.get("cluster_outcome", ""),
                 "cluster_name": c.get("name", ""),
                 "escalation_level": c.get("escalation_level", 1),
@@ -162,21 +474,22 @@ def _merge_roles_for_all_clusters(clusters: List[Dict[str, Any]]) -> Dict[int, D
 
 def _render_cards_to_outline_text(cards: List[Dict[str, Any]]) -> str:
     """
-    将 V2 章节卡渲染为极简文本梗概，供上一世分析与人工快速浏览。
-    不追求细致剧情，只点出每章职责。
+    将每章「执行任务卡」渲染为整本梗概文本，供上一世线索分析。
+    不需要完整剧情，但必须包含：目标 + 必须包含（缩短）+ 必须避免（缩短）+ 结尾落点。
     """
     lines: List[str] = []
     for ch in sorted(cards, key=lambda x: x.get("chapter_id", 0)):
-        cid = ch.get("cluster_id", "")
-        role = ch.get("chapter_role_v2", "")
-        name = ch.get("cluster_name", "")
-        payoff = ch.get("core_payoff", "")
         chapter_id = ch.get("chapter_id", 0)
-        role_str = f"（{role}）" if role else ""
-        line = (
-            f"第{chapter_id}章{role_str}：围绕事件簇 {cid}《{name}》展开，核心爽点={payoff}"
+        role = ch.get("chapter_role_v2", "")
+        goal = (ch.get("chapter_goal") or "").strip()
+        must_in = ch.get("chapter_must_include", []) or []
+        must_not = ch.get("chapter_must_not_include", []) or []
+        end = (ch.get("chapter_ending") or "").strip()
+        must_in_short = "；".join(must_in[:2]) if isinstance(must_in, list) else ""
+        must_not_short = "；".join(must_not[:2]) if isinstance(must_not, list) else ""
+        lines.append(
+            f"第{chapter_id}章（{role}）：目标={goal}｜必须包含={must_in_short}｜禁止包含={must_not_short}｜结尾={end}"
         )
-        lines.append(line)
     return "\n".join(lines)
 
 
@@ -196,61 +509,36 @@ def generate_outline_from_event_clusters_v2() -> None:
     clusters = _load_event_clusters_v2()
     print(f"已读取 V2 事件簇数量：{len(clusters)} 个\n")
 
-    chapter_map = _merge_roles_for_all_clusters(clusters)
-
-    # 兜底：保证 1~100 都有卡，即使某些章不在任何簇中
-    cards: List[Dict[str, Any]] = []
-    for ch in range(1, 101):
-        base = chapter_map.get(ch, {})
-        card = {
-            "chapter_id": ch,
-            "arc_id": base.get("arc_id", "A01"),
-            "cluster_id": base.get("cluster_id", ""),
-            "cluster_name": base.get("cluster_name", ""),
-            "structure_template": base.get("structure_template", "M1"),
-            "chapter_role_v2": base.get("chapter_role_v2", "present_only"),
-            "core_payoff": base.get("core_payoff", ""),
-            "main_opponent": base.get("main_opponent", ""),
-            "prev_life_tragedy": base.get("prev_life_tragedy", ""),
-            "this_life_revenge": base.get("this_life_revenge", ""),
-            "cluster_outcome": base.get("cluster_outcome", ""),
-            "escalation_level": base.get("escalation_level", 1),
-            # 下面字段是为兼容原章节卡结构而保留的占位/提炼字段
-            "chapter_role": "present_only",
-            "present_mainline": "",
-            "core_conflict": "",
-            "flashback_trigger": "",
-            "revenge_action": "",
-            "ending_hook": "",
-            "global_seed_progress": "",
-            "chapter_constraints": [],
-            "conflict_opponent": base.get("main_opponent", ""),
-            "past_trigger": "",
-            "past_core_harm": base.get("prev_life_tragedy", ""),
-            "present_result": base.get("cluster_outcome", ""),
-            "tail_clue": "",
-            "closure_type": "open",
-        }
-        cards.append(card)
-
+    # 生成「可执行章节任务卡」：将职责固定在章节卡阶段，而不是正文阶段二次编剧情
+    cards_map = _build_cards_from_clusters_v2(clusters)
+    cards: List[Dict[str, Any]] = [cards_map[i] for i in range(1, 101) if i in cards_map]
     cards.sort(key=lambda x: x.get("chapter_id", 0))
 
-    # 渲染极简文本梗概，用于上一世线索分析
     outline_text = _render_cards_to_outline_text(cards)
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
 
+    # 稳定引用文件（正文脚本默认读取）
+    txt_path_stable = os.path.join(OUTPUT_DIR, "master_ctx_v2.txt")
+    cards_path_stable = os.path.join(OUTPUT_DIR, "master_ctx_cards_v2.json")
+    prev_life_main_path_stable = os.path.join(OUTPUT_DIR, "prev_life_ctx_v2.txt")
+
+    with open(txt_path_stable, "w", encoding="utf-8") as f:
+        f.write(outline_text)
+    with open(cards_path_stable, "w", encoding="utf-8") as f:
+        json.dump(cards, f, ensure_ascii=False, indent=2)
+
+    # 额外写一份时间戳备份，便于回溯对比
     txt_path = os.path.join(OUTPUT_DIR, f"master_ctx_v2_{ts}.txt")
+    cards_path = os.path.join(OUTPUT_DIR, f"master_ctx_cards_v2_{ts}.json")
     with open(txt_path, "w", encoding="utf-8") as f:
         f.write(outline_text)
-
-    cards_path = os.path.join(OUTPUT_DIR, f"master_ctx_cards_v2_{ts}.json")
     with open(cards_path, "w", encoding="utf-8") as f:
         json.dump(cards, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ 轻量章节卡 JSON 已生成：{cards_path}")
-    print(f"✅ 极简文本梗概已生成：{txt_path}")
+    print(f"✅ 执行章节卡 JSON 已生成：{cards_path_stable}")
+    print(f"✅ 执行梗概文本已生成：{txt_path_stable}")
 
     # 生成上一世遭遇线索（沿用原有分析+分批逻辑）
     print("\n开始基于极简梗概生成上一世遭遇线索点（prev_life_ctx_v2）...\n")
@@ -297,7 +585,11 @@ def generate_outline_from_event_clusters_v2() -> None:
     with open(prev_main, "w", encoding="utf-8") as f:
         f.write(prev_life_text)
 
-    print(f"✅ 上一世遭遇线索点 V2 已生成：{prev_main}")
+    # 写入稳定文件：给 V2 正文脚本默认读取
+    with open(prev_life_main_path_stable, "w", encoding="utf-8") as f:
+        f.write(prev_life_text)
+
+    print(f"✅ 上一世遭遇线索点 V2 已生成：{prev_life_main_path_stable}")
 
 
 def main() -> None:
