@@ -1,0 +1,16 @@
+relationships:
+  # 示例：手工维护的核心语义关系（可双向各写一条，或只写一条视需求而定）
+  - a: shenqinghuan
+    b: linxiuyuan
+    type: love_interest
+    status: tension
+    since_chapter: 1
+    updated_at_chapter: 1
+    evidence: 初识互相试探
+  - a: shenqinghuan
+    b: zhaomingxuan
+    type: hostile
+    status: conflict
+    since_chapter: 3
+    updated_at_chapter: 3
+    evidence: 初次对抗

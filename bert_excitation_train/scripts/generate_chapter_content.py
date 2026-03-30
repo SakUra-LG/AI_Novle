@@ -19,11 +19,8 @@ from smart_sample_search import search_and_adapt_samples, search_rebirth_samples
 from optimized_rule_scorer import OptimizedRuleScorer
 from emotion_analyzer import EmotionAnalyzer
 
-try:
-    from knowledge_graph import RebirthKnowledgeGraph
-    _KG_AVAILABLE = True
-except ImportError:
-    _KG_AVAILABLE = False
+# 迁移到 Neo4j：不再使用本地 JSON 知识图谱
+_KG_AVAILABLE = False
 
 # 配置API
 API_Key_QW = "sk-a2966f4e37134351904851679884cb67"
@@ -45,8 +42,9 @@ class RebirthRevengeGenerator:
         # 已生成章节（用于上下文），key 为章节号，value 为正文内容
         self.generated_chapters = {}
         
-        self.use_knowledge_graph = True  # 是否使用知识图谱（生成前查、生成后更新）
-        self._kg: Optional[object] = None  # RebirthKnowledgeGraph 实例
+        # 本地 JSON 知识图谱已弃用，统一改用 Neo4j 在线检索
+        self.use_knowledge_graph = False
+        self._kg: Optional[object] = None
 
         # 人物、地点、事件类型提取（用于回忆触发）
         self.characters = set()
@@ -1366,6 +1364,12 @@ class RebirthRevengeGenerator:
         else:
             print("  [梗概] 非 JSON 格式，按纯文本梗概处理。")
         outline_corrected = self._render_master_card_for_prompt(card) if card else outline_raw
+        # -------- V2：章节任务卡校验所需字段（用于减少正文“自由发挥”）--------
+        v2_card = card if isinstance(card, dict) else {}
+        v2_must_include = v2_card.get("chapter_must_include", []) if isinstance(v2_card.get("chapter_must_include", []), list) else []
+        v2_must_not_include = v2_card.get("chapter_must_not_include", []) if isinstance(v2_card.get("chapter_must_not_include", []), list) else []
+        v2_must_resolve = v2_card.get("must_resolve_this_chapter", []) if isinstance(v2_card.get("must_resolve_this_chapter", []), list) else []
+        v2_chapter_ending = str(v2_card.get("chapter_ending", "") or "")
         prev_life_raw = self.prev_life_ctx.get(chapter_num)
         prev_life_card = self._parse_json_maybe(prev_life_raw) if prev_life_raw else None
         prev_life_clue = self._render_prev_life_card_for_prompt(prev_life_card) if prev_life_card else prev_life_raw
@@ -1380,18 +1384,17 @@ class RebirthRevengeGenerator:
                 print(f"  [跨章] 最后场景/钩子已注入，本章必须接续")
 
         kg_context = ""
-        # 为避免前期情节漂移，前 20 章默认不注入知识图谱，仅在后续章节按需启用
-        if chapter_num > 20 and self.use_knowledge_graph and _KG_AVAILABLE:
-            try:
-                if self._kg is None:
-                    self._kg = RebirthKnowledgeGraph(self.outputs_dir / "knowledge_graph.json")
-                    self._kg.load()
-                if self._kg and self._kg.entities:
-                    kg_context = self._kg.query_relevant_for_chapter(chapter_num)
-                    if kg_context:
-                        print(f"  [知识图谱] 已注入本章相关实体/关系/伏笔")
-            except Exception:
-                pass  # 静默失败，不影响生成
+        # 优先：若挂载了“在线检索器”，动态从 Neo4j 拉取限长背景事实（不改剧情决策权）
+        try:
+            online_retrieve = getattr(self, "online_retrieve_context", None)
+            if callable(online_retrieve):
+                # 允许生成端覆盖“是否早期注入”的策略；默认所有章节可用
+                kg_context = str(online_retrieve(chapter_num)) or ""
+                if kg_context:
+                    print(f"  [在线检索] 已注入 Neo4j 背景事实")
+        except Exception:
+            kg_context = ""
+        # 本地 JSON 知识图谱已废弃：不再注入旧 KG 背景
 
         # 第一步：生成节拍卡（含本章开头承接、结尾钩子、章节类型、闭合类型）
         print(f"\n📋 第{chapter_num}章 生成节拍卡（仅供调试）…")
@@ -1513,6 +1516,64 @@ class RebirthRevengeGenerator:
             global_seed_progress=global_seed_progress,
             chapter_constraints=chapter_constraints,
         )
+
+        # 轻量的“任务卡命中校验”：用于过滤忽略 must_include 的跑偏正文（V2 生效）
+        def _split_rule_item(item: str) -> List[str]:
+            s = (item or "").strip()
+            if not s:
+                return []
+            s = s.replace("（", "/").replace("）", "")
+            parts = re.split(r"[\/或，,；;：:、\s]+", s)
+            return [p for p in (x.strip() for x in parts) if len(p) >= 2]
+
+        _generic_tokens = {"本章", "今生", "上一世", "信息差"}
+
+        def _rule_item_satisfied(rule_item: str, content: str) -> bool:
+            c = content or ""
+            rule_item = (rule_item or "").strip()
+            if not rule_item:
+                return True
+            if rule_item in c:
+                return True
+            tokens = _split_rule_item(rule_item)
+            tokens = [t for t in tokens if t not in _generic_tokens and len(t) >= 2]
+            if not tokens:
+                return rule_item[:6] in c
+            return any(t in c for t in tokens)
+
+        def _validate_v2_card_rules(content: str) -> Tuple[bool, List[str]]:
+            if not (v2_must_include or v2_must_not_include or v2_must_resolve):
+                return True, []
+
+            violations: List[str] = []
+
+            # must_not：用“整项包含”优先（降低误判）
+            for mn in v2_must_not_include:
+                mn = (mn or "").strip()
+                if not mn:
+                    continue
+                if mn in content:
+                    violations.append(f"命中禁止项：{mn}")
+                    return False, violations
+
+            # must_include：命中足够数量的规则项（不要要求逐字复刻）
+            if v2_must_include:
+                satisfied = sum(1 for mi in v2_must_include if _rule_item_satisfied(mi, content))
+                need = len(v2_must_include) if len(v2_must_include) <= 3 else 3
+                if satisfied < need:
+                    violations.append(f"must_include 未命中足够项：{satisfied}/{len(v2_must_include)}（需>= {need}）")
+                    return False, violations
+
+            # must_resolve：同样做轻量命中
+            if v2_must_resolve:
+                satisfied = sum(1 for mr in v2_must_resolve if _rule_item_satisfied(mr, content))
+                need = len(v2_must_resolve) if len(v2_must_resolve) <= 2 else 2
+                if satisfied < need:
+                    violations.append(f"must_resolve 未命中足够项：{satisfied}/{len(v2_must_resolve)}（需>= {need}）")
+                    return False, violations
+
+            return True, violations
+
         best_content = None
         best_score = 0
         best_emotion = 0
@@ -1532,7 +1593,8 @@ class RebirthRevengeGenerator:
             print(f"  评分: {score:.2f}, 情绪: {ei:.3f}, 字数: {char_count}, 连续性: {cont_score:.2f}, 上一世段落: {past_score:.2f}")
             # 字数改为至少1000；需要上一世时上一世段落须达标
             past_ok = not need_prev_life or past_score >= 0.5
-            if ei >= min_emotion_intensity and score >= 50 and char_count >= 1000 and cont_score >= 0.5 and past_ok:
+            must_ok, _ = _validate_v2_card_rules(content)
+            if ei >= min_emotion_intensity and score >= 50 and char_count >= 1000 and cont_score >= 0.5 and past_ok and must_ok:
                 best_content = content
                 best_score = score
                 best_emotion = ei
@@ -1558,7 +1620,7 @@ class RebirthRevengeGenerator:
                 'past_block_score': past_score,
                 'structure_feedback': structure_feedback or None,
             }
-            if ei > best_emotion or (ei == best_emotion and score > best_score):
+            if must_ok and (ei > best_emotion or (ei == best_emotion and score > best_score)):
                 best_content, best_score, best_emotion = content, score, ei
         if not best_content:
             c = self._call_api(body_prompt, None, 0)
@@ -1567,15 +1629,6 @@ class RebirthRevengeGenerator:
         if best_content:
             self.save_chapter(chapter_num, best_content)
             self.generated_chapters[chapter_num] = best_content
-            if self.use_knowledge_graph and _KG_AVAILABLE and self._kg:
-                try:
-                    def _kg_api(prompt: str) -> str:
-                        return self._call_api(prompt, None, 0) or ""
-                    if self._kg.extract_from_chapter_body_with_llm(best_content, chapter_num, _kg_api):
-                        self._kg.save()
-                        print(f"  [知识图谱] 已从正文抽取并同步写入 outputs/knowledge_graph.json")
-                except Exception:
-                    pass
             print(f"✅ 第{chapter_num}章生成完成（评分: {best_score:.2f}, 情绪: {best_emotion:.3f}）")
             return best_content
         return None
@@ -1657,13 +1710,10 @@ def main():
     print("📖 重生复仇小说正文生成器（节拍卡 + 批量 + 双梗概 + 上一章衔接）")
     print("=" * 80)
     print(f"  起始章: {args.chapter}，批量: {args.batch} 章（即 {args.chapter}～{args.chapter + args.batch - 1}）")
-    if not args.no_kg and _KG_AVAILABLE:
-        kg_path = DEFAULT_OUTPUTS_DIR / "knowledge_graph.json"
-        print(f"  知识图谱: 已启用（{kg_path}）")
     print("=" * 80)
     
     generator = RebirthRevengeGenerator()
-    generator.use_knowledge_graph = not args.no_kg
+    # 本地 JSON KG 已废弃；--no-kg 参数保留但不再产生效果
     generator.load_contexts(args.master_ctx, args.prev_life_ctx, args.original_master_ctx)
     generator.load_existing_chapters()
     

@@ -1,0 +1,50 @@
+characters:
+  - id: shenqinghuan
+    name: 沈清欢
+    aliases: []
+    gender: 女
+    role_type: 女主
+    protagonist_alignment: self
+    faction: null
+    identity: null
+    age_stage: 青年
+    personality_tags: [冷静, 坚韧]
+    speaking_style: 简洁克制
+    core_goal: null
+    status: 存活
+  - id: linxiuyuan
+    name: 林修远
+    aliases: []
+    gender: 男
+    role_type: 男主
+    protagonist_alignment: ally
+    intent_alignment: antagonist
+    alignment_timeline:
+      - start_chapter: 1
+        end_chapter: null
+        outward: ally
+        intent: antagonist
+      - start_chapter: null
+        end_chapter: null
+        outward: antagonist
+        intent: antagonist
+    faction: null
+    identity: null
+    age_stage: 青年
+    personality_tags: [理性]
+    speaking_style: 克制
+    core_goal: null
+    status: 存活
+  - id: zhaomingxuan
+    name: 赵明轩
+    aliases: []
+    gender: 男
+    role_type: 配角
+    protagonist_alignment: antagonist
+    faction: null
+    identity: null
+    age_stage: 青年
+    personality_tags: [强势]
+    speaking_style: 咄咄逼人
+    core_goal: null
+    status: 存活

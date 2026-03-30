@@ -1,0 +1,25 @@
+clusters:
+  - id: pc_01
+    title: 初遇与误解
+    start_chapter: 1
+    end_chapter: 3
+    main_characters: ["shenqinghuan", "linxiuyuan"]
+    goal: 让二人建立初始张力与误解
+    mood: 紧张 / 微暧昧
+    plan_relations:
+      - pair: ["shenqinghuan", "linxiuyuan"]
+        target_type: love_interest
+        target_status: tension
+        milestone: "初次并肩经历小危机"
+    foreshadows:
+      - id: fp_001
+        type: identity_secret
+        content: 女主注意到男主袖口异常血迹
+        plant_chapter: 2
+        expected_recover_chapter: 8
+        related_characters: ["shenqinghuan", "linxiuyuan"]
+        importance: high
+    resolves: []
+    hard_constraints:
+      - "不可直接进入亲密/信任，需要至少两次并肩事件"
+

@@ -6,7 +6,7 @@
 
 ```bash
 # 从第 6 章起连续生成 5 章（即生成第 6、7、8、9、10 章），每章生成后立即写入 outputs/chapters/
-python scripts/generate_chapter_content.py --chapter 1 --batch 10
+python scripts/generate_chapter_content.py --chapter 12 --batch 14
 
 # 只生成单章（例如第 1 章）
 python scripts/generate_chapter_content.py --chapter 1 --batch 1

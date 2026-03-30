@@ -74,6 +74,65 @@ SPECIAL_CARDS: Dict[int, Dict[str, Any]] = {
 }
 
 
+def _infer_evidence_types_from_info_gap(info_gap: str) -> List[str]:
+    """从 info_gap_from_prev_life 文本中尽量抽取“证据类型”（用于 must_include 约束）。"""
+    text = (info_gap or "").strip()
+    if not text:
+        return ["本簇信息差中的具体证据或内幕"]
+
+    t = text.replace(" ", "")
+    evidences: List[str] = []
+
+    def add(item: str) -> None:
+        item = (item or "").strip()
+        if not item or item in evidences:
+            return
+        evidences.append(item)
+
+    # 医疗/职业场景
+    if "电子签名" in t:
+        add("电子签名记录")
+    if "用药剂量" in t:
+        add("用药剂量/电子用药记录")
+    if "病历" in t:
+        if "篡改" in t or "修改" in t:
+            add("病历篡改/病历记录")
+        else:
+            add("病历记录")
+    if "值班室" in t and "笔记" in t:
+        add("值班室笔记")
+    elif "笔记" in t:
+        add("笔记")
+
+    # 证据形态
+    if "录音" in t:
+        add("录音/对话录音")
+    if "视频" in t:
+        add("密谈视频")
+    if "邮件" in t:
+        add("邮件往来")
+    if "转账" in t:
+        add("可疑转账记录")
+    if "交易记录" in t or "地下交易" in t:
+        add("地下交易记录")
+    if "文件编号" in t and "时间节点" in t:
+        add("关键时间节点与文件编号")
+    elif "文件编号" in t:
+        add("文件编号")
+    elif "时间节点" in t:
+        add("关键时间节点")
+    if "会议" in t:
+        add("会议内容/纪要")
+    if "接触记录" in t:
+        add("接触记录/名单")
+    if "证据" in t:
+        add("罪行证据")
+
+    if not evidences:
+        add("本簇信息差中的具体证据或内幕")
+    return evidences[:3]
+
+
 def _parse_cluster_span(cluster: Dict[str, Any]) -> (int, int):
     span = cluster.get("chapter_span") or cluster.get("chapterRange") or cluster.get("chapters")
     if not span:
@@ -94,7 +153,8 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
     core_payoff = cluster.get("core_payoff", "")
     info_gap = (cluster.get("info_gap_from_prev_life") or "")
     outcome = cluster.get("cluster_outcome", "")
-    required_evidence_hint = info_gap[:80] if info_gap else "本簇信息差中提到的具体证据或内幕"
+    evidence_types = _infer_evidence_types_from_info_gap(info_gap)
+    required_evidence_hint = "、".join(evidence_types[:2]) if evidence_types else "本簇信息差中提到的具体证据或内幕"
 
     chapters_plan: Dict[str, Dict[str, Any]] = {}
     if length == 1:
@@ -125,7 +185,11 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
         ch1, ch_last = start_ch, end_ch
         chapters_plan[str(ch1)] = {
             "chapter_goal": f"今生重遇本簇主对手（{main_opp}），触发相似场景，埋下与信息差相关的线索",
-            "chapter_must_include": ["医院/职场等本簇场景", f"{main_opp}施压或试探" if main_opp else "本簇主对手施压或试探", "沈清欢确认可追查线索（如值班室笔记、病历问题）"],
+            "chapter_must_include": [
+                "医院/职场等本簇场景",
+                f"{main_opp}施压或试探" if main_opp else "本簇主对手施压或试探",
+                f"沈清欢确认可追查线索（如{required_evidence_hint}）",
+            ],
             "chapter_must_not_include": ["新幕后黑手", "追车/系统提示/无关神秘线", "大段展开上一世完整受害经过"] + DEFAULT_FORBIDDEN_NEW_ROLES,
             "chapter_ending": "拿到进入关键场所的机会或发现证据位置，为下一章回忆与取证铺垫",
             "must_resolve_this_chapter": ["锁定主对手", "触发回忆线索", "发现可追查的具体线索", "建立今生反击起点"],
@@ -139,23 +203,46 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
         }
         chapters_plan[str(ch_last)] = {
             "chapter_goal": f"公开举报与反杀完成，兑现本簇爽点：{core_payoff}，结果：{outcome or '职业毁灭/失去信任'}",
-            "chapter_must_include": ["当众揭穿/举报", "证据链闭环（显性使用本簇信息差中的证据）", "处罚/吊销/全院震动或舆论反噬"],
+            "chapter_must_include": [
+                "当众揭穿/举报",
+                f"证据链闭环（显性使用{required_evidence_hint}，把她知道的内幕对应到可呈交的具体证据）",
+                "处罚/吊销/全院震动或舆论反噬",
+            ],
             "chapter_must_not_include": ["只埋钩子不兑现", "真正风暴才刚开始", "新大Boss"] + DEFAULT_FORBIDDEN_NEW_ROLES,
             "chapter_ending": "本簇结束，主对手在本簇内失去信任或受到处罚",
             "must_resolve_this_chapter": ["公开反杀", "后果落地"],
         }
         for idx, ch in enumerate(range(ch1 + 2, ch_last), start=1):
             bridge_goal = "承上启下：压迫升级或取证推进，不引入新主线"
-            bridge_must = [main_opp or "主对手", "与信息差相关的调查或对峙"]
+            bridge_must = [
+                main_opp or "主对手",
+                "与信息差相关的调查或对峙",
+                f"围绕{required_evidence_hint}推进取证/对峙（不得换证据来源）",
+            ]
             if idx == 1:
                 bridge_goal = "将已拿到的首个证据进行初步核验，确认可用于反击的突破口"
-                bridge_must = [main_opp or "主对手", "对上一章证据做核验/复盘", "锁定下一步可公开使用的证据链环节"]
+                bridge_must = [
+                    main_opp or "主对手",
+                    "对上一章证据做核验/复盘",
+                    "锁定下一步可公开使用的证据链环节",
+                    f"围绕{required_evidence_hint}推进取证/对峙（证据来源不换）",
+                ]
             elif idx == 2:
                 bridge_goal = "把线索串成可公开攻击的证据链，制造主对手心理与处境压力"
-                bridge_must = [main_opp or "主对手", "证据链补全动作", "今生反击计划成型"]
+                bridge_must = [
+                    main_opp or "主对手",
+                    "证据链补全动作",
+                    "今生反击计划成型",
+                    f"围绕{required_evidence_hint}完成证据补全（不换证据来源）",
+                ]
             elif idx >= 3:
                 bridge_goal = "反击前夜：推进到可直接公开揭穿，不再扩展新问题"
-                bridge_must = [main_opp or "主对手", "公开反击前的最后确认", "确保本簇爽点在收尾章兑现"]
+                bridge_must = [
+                    main_opp or "主对手",
+                    "公开反击前的最后确认",
+                    "确保本簇爽点在收尾章兑现",
+                    f"再核对一遍{required_evidence_hint}对应的证据链关键点",
+                ]
             chapters_plan[str(ch)] = {
                 "chapter_goal": bridge_goal,
                 "chapter_must_include": bridge_must,

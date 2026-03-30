@@ -27,6 +27,7 @@ OUTPUT_DIR = PROJECT_ROOT / "outputs"
 DEFAULT_MASTER_CARDS_V2 = OUTPUT_DIR / "master_ctx_cards_v2.json"
 DEFAULT_PREV_LIFE_V2 = OUTPUT_DIR / "prev_life_ctx_v2.txt"
 DEFAULT_EVENT_CLUSTERS_V2 = OUTPUT_DIR / "event_clusters_v2.json"
+DEFAULT_EXPORT_V2 = OUTPUT_DIR / "export_v2.json"
 
 # 前几章的硬编码章节卡（不依赖事件簇），用来严格锁定第 1/2 章的写法
 SPECIAL_CARDS: Dict[int, Dict[str, Any]] = {
@@ -69,6 +70,45 @@ SPECIAL_CARDS: Dict[int, Dict[str, Any]] = {
 
 class RebirthRevengeGeneratorV2(RebirthRevengeGenerator):
     """V2：基于事件簇模版的正文生成器。"""
+
+    def attach_online_retriever(self) -> None:
+        """
+        为 V2 生成流程挂载在线检索器（Neo4j）。
+        生成端会优先调用 self.online_retrieve_context(chapter_num) 获取限长 KG 文本。
+        """
+        try:
+            from neo4j_kg.online_retriever import retrieve_context_for_chapter  # type: ignore[import-not-found]
+        except Exception:
+            return
+
+        def _online_retrieve(chapter_num: int) -> str:
+            # 从本章卡中抽取 allowed_roles / main_opponent，作为召回条件
+            card = self._get_card_for_chapter(chapter_num)
+            allowed = []
+            mo = None
+            if isinstance(card, dict):
+                raw_allowed = card.get("allowed_roles")
+                if isinstance(raw_allowed, list):
+                    allowed = [str(x) for x in raw_allowed if str(x or "").strip()]
+                elif isinstance(raw_allowed, str) and raw_allowed.strip():
+                    allowed = [raw_allowed.strip()]
+                mo_raw = card.get("main_opponent")
+                if isinstance(mo_raw, str) and mo_raw.strip():
+                    mo = mo_raw.strip()
+            # 兜底：至少包含女主
+            if "沈清欢" not in allowed:
+                allowed = ["沈清欢"] + allowed
+            try:
+                return retrieve_context_for_chapter(
+                    chapter_num=chapter_num,
+                    allowed_roles=allowed[:8],
+                    main_opponent=mo,
+                    max_chars=900,
+                )
+            except Exception:
+                return ""
+
+        setattr(self, "online_retrieve_context", _online_retrieve)
 
     def _parse_json_maybe(self, chapter_outline: str) -> Dict[str, Any]:
         """沿用原实现：尝试从 JSON 字符串解析出章节卡。"""
@@ -748,7 +788,11 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Any]:
         }
         chapters_plan[str(ch_last)] = {
             "goal": f"公开举报与反杀完成，兑现本簇爽点：{core_payoff}，结果：{outcome or '职业毁灭/失去信任'}",
-            "must_include": ["当众揭穿/举报", "证据链闭环（显性使用本簇信息差中的证据）", "处罚/吊销/全院震动或舆论反噬"],
+            "must_include": [
+                "当众揭穿/举报",
+                f"证据链闭环（显性使用{required_evidence_hint}，把她知道的内幕对应到可呈交的具体证据）",
+                "处罚/吊销/全院震动或舆论反噬",
+            ],
             "must_not_include": ["只埋钩子不兑现", "真正风暴才刚开始", "新大Boss"] + DEFAULT_FORBIDDEN_NEW_ROLES,
             "ending": "本簇结束，主对手在本簇内失去信任或受到处罚",
             "must_resolve_this_chapter": ["公开反杀", "后果落地"],
@@ -756,7 +800,10 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Any]:
         for ch in range(ch1 + 2, ch_last):
             chapters_plan[str(ch)] = {
                 "goal": "承上启下：压迫升级或取证推进，不引入新主线",
-                "must_include": [main_opp or "主对手", "与信息差相关的调查或对峙"],
+                "must_include": [
+                    main_opp or "主对手",
+                    f"围绕{required_evidence_hint}推进取证/对峙（不得换证据来源）",
+                ],
                 "must_not_include": ["新核心人物", "新组织/新阴谋线"] + DEFAULT_FORBIDDEN_NEW_ROLES,
                 "ending": "推进到下一章可直入反杀或收尾",
                 "must_resolve_this_chapter": ["推进证据或压迫", "不扩散到其他簇"],
@@ -1103,9 +1150,52 @@ def generate_chapters_v2(
     adjusted_start = min(min_s, start_chapter)
     adjusted_end = max(max_e, end_chapter)
     if adjusted_start != start_chapter or adjusted_end != end_chapter:
+        # 汇总被纳入的情节族边界，便于用户确认
+        included_spans: List[str] = []
+        for c in sorted(overlapping, key=lambda x: (x.get("_start", 0), x.get("_end", 0))):
+            try:
+                ss, ee = int(c["_start"]), int(c["_end"])
+                cid = str(c.get("cluster_id", "")) or "?"
+                included_spans.append(f"{cid}:{ss}-{ee}")
+            except Exception:  # noqa: BLE001
+                continue
+        spans_str = "，".join(included_spans) if included_spans else f"{adjusted_start}-{adjusted_end}"
         print(
-            f"⚠️ 为保证情节组完整，章节范围已扩展为 {adjusted_start}-{adjusted_end}（原指定 {start_chapter}-{end_chapter}）。"
+            f"✅ 已对齐到情节族边界：章节范围调整为 {adjusted_start}-{adjusted_end}（原 {start_chapter}-{end_chapter}）。\n"
+            f"   纳入的情节族范围：{spans_str}"
         )
+
+    # 自动导出 Neo4j 上下文（供调试/审阅；生成过程本身使用在线检索器逐章拉取背景）
+    try:
+        print("🧭 正在检索情节族上下文（Neo4j）：窗口 + lookback + auto-anchors …")
+        # 构造窗口章节
+        window = list(range(adjusted_start, adjusted_end + 1))
+        # lookback: 回溯 2 章
+        lookback_n = 2
+        if window:
+            m = min(window)
+            lb = list(range(max(1, m - lookback_n), m))
+            window = sorted(set(window) | set(lb))
+        # auto-anchors: 自动补充关键早期章（最多 10 个）
+        try:
+            from neo4j_kg.export_for_v2 import (  # type: ignore[import-not-found]
+                fetch_context,
+                compute_anchor_chapters,
+            )
+            from neo4j_kg.common import get_neo4j_driver  # type: ignore[import-not-found]
+            with get_neo4j_driver() as driver:  # type: ignore[attr-defined]
+                extras = compute_anchor_chapters(driver, window, max_extra=10)
+                chapters_for_export = sorted(set(window) | set(extras))
+                ctx = fetch_context(driver, chapters_for_export)
+            os.makedirs(OUTPUT_DIR, exist_ok=True)
+            with open(DEFAULT_EXPORT_V2, "w", encoding="utf-8") as f:
+                json.dump(ctx, f, ensure_ascii=False, indent=2)
+            print(f"✅ 已导出上下文至 {DEFAULT_EXPORT_V2}")
+            print(f"   章节集合：{','.join(str(x) for x in chapters_for_export)}")
+        except Exception as ex:  # noqa: BLE001
+            print(f"⚠️ 跳过导出上下文（Neo4j 不可用或导出失败）：{ex}")
+    except Exception:
+        pass
 
     cards: Dict[int, Dict[str, Any]] = {}
     resolved_master_cards_path = master_ctx_cards_path or str(DEFAULT_MASTER_CARDS_V2)
@@ -1115,6 +1205,12 @@ def generate_chapters_v2(
         cards = _build_cards_from_clusters(overlapping)
     gen = RebirthRevengeGeneratorV2()
     _setup_gen_from_cards_and_prev_life(gen, cards, prev_life_ctx_path, clusters)
+    # 挂载在线检索器（若可用）：每章生成前动态检索 Neo4j 背景事实
+    try:
+        gen.attach_online_retriever()
+        print("🔎 在线检索器（Neo4j）已启用：将为每章注入限长背景事实。")
+    except Exception:
+        pass
 
     if chapters_dir is None:
         chapters_dir = str(OUTPUT_DIR / "chapters_v2")

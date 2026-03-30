@@ -437,7 +437,68 @@ def _build_chapter_plan_for_cluster(cluster: Dict[str, Any]) -> Dict[str, Dict[s
     core_payoff = (cluster.get("core_payoff") or "").strip()
     info_gap = (cluster.get("info_gap_from_prev_life") or "")
     outcome = (cluster.get("cluster_outcome") or "").strip()
-    required_evidence_hint = info_gap[:80] if info_gap else "本簇信息差中提到的具体证据或内幕"
+
+    def _infer_evidence_types_from_info_gap(info_gap: str) -> List[str]:
+        """从 info_gap_from_prev_life 文本中尽量抽取“证据类型”。"""
+        text = (info_gap or "").strip()
+        if not text:
+            return ["本簇信息差中的具体证据或内幕"]
+
+        t = text.replace(" ", "")
+        evidences: List[str] = []
+
+        def add(item: str) -> None:
+            item = (item or "").strip()
+            if not item or item in evidences:
+                return
+            evidences.append(item)
+
+        if "电子签名" in t:
+            add("电子签名记录")
+        if "用药剂量" in t:
+            add("用药剂量/电子用药记录")
+        if "病历" in t:
+            if "篡改" in t or "修改" in t:
+                add("病历篡改/病历记录")
+            else:
+                add("病历记录")
+
+        if "值班室" in t and "笔记" in t:
+            add("值班室笔记")
+        elif "笔记" in t:
+            add("笔记")
+
+        if "录音" in t:
+            add("录音/对话录音")
+        if "视频" in t:
+            add("密谈视频")
+        if "邮件" in t:
+            add("邮件往来")
+        if "转账" in t:
+            add("可疑转账记录")
+        if "交易记录" in t or "地下交易" in t:
+            add("地下交易记录")
+
+        if "文件编号" in t and "时间节点" in t:
+            add("关键时间节点与文件编号")
+        elif "文件编号" in t:
+            add("文件编号")
+        elif "时间节点" in t:
+            add("关键时间节点")
+
+        if "会议" in t:
+            add("会议内容/纪要")
+        if "接触记录" in t:
+            add("接触记录/名单")
+        if "证据" in t:
+            add("罪行证据")
+
+        if not evidences:
+            add("本簇信息差中的具体证据或内幕")
+        return evidences[:3]
+
+    evidence_types = _infer_evidence_types_from_info_gap(info_gap)
+    required_evidence_hint = "、".join(evidence_types[:2]) if evidence_types else "本簇信息差中提到的具体证据或内幕"
 
     def _role_by_index(idx: int) -> str:
         if length == 2:
@@ -505,7 +566,7 @@ def _build_chapter_plan_for_cluster(cluster: Dict[str, Any]) -> Dict[str, Dict[s
                     "role": _role_by_index(idx),
                     "goal": f"今生重遇本簇主对手（{main_opp}），触发相似场景，埋下与信息差相关的线索",
                     "must_include": ["医院/职场等本簇场景", f"{main_opp}施压或试探" if main_opp else "本簇主对手施压或试探",
-                                      "沈清欢确认可追查线索（如值班室笔记、病历问题）"],
+                                      f"沈清欢确认可追查线索（如{required_evidence_hint}）"],
                     "must_not_include": ["新幕后黑手", "追车/系统提示/无关神秘线"] + DEFAULT_FORBIDDEN_NEW_ROLES,
                     "ending": "拿到进入关键场所的机会或发现证据位置，为下一章回忆与取证铺垫",
                     "must_resolve_this_chapter": ["锁定主对手", "触发回忆线索", "发现可追查的具体线索"],
@@ -516,7 +577,8 @@ def _build_chapter_plan_for_cluster(cluster: Dict[str, Any]) -> Dict[str, Dict[s
                     "goal": "完整展开上一世延误/陷害的屈辱回忆，并与今生调查对照；今生拿到硬证据",
                     "must_include": ["上一世具体抢救失败或陷害过程",
                                       f"{main_opp}的主观恶意" if main_opp else "主对手的主观恶意",
-                                      "值班室笔记/病历篡改等信息差内容", "今生取得证据"],
+                                      f"与{required_evidence_hint}对应的信息差内容（显性说明其内容与可追查性）",
+                                      "今生取得证据"],
                     "must_not_include": ["无关支线角色抢戏"] + DEFAULT_FORBIDDEN_NEW_ROLES,
                     "ending": "沈清欢今生已拿到可用的硬证据，为最后一章反杀做准备",
                     "must_resolve_this_chapter": ["展开上一世悲剧", "拿到证据"],
@@ -525,7 +587,7 @@ def _build_chapter_plan_for_cluster(cluster: Dict[str, Any]) -> Dict[str, Dict[s
                 chapters_plan[str(ch)] = {
                     "role": _role_by_index(idx),
                     "goal": f"公开举报与反杀完成，兑现本簇爽点：{core_payoff}，结果：{outcome or '职业毁灭/失去信任'}",
-                    "must_include": ["当众揭穿/举报", "证据链闭环（显性使用本簇信息差中的证据）",
+                    "must_include": ["当众揭穿/举报", f"证据链闭环（显性使用{required_evidence_hint}，把她知道的内幕对应到可呈交的具体证据）",
                                       "处罚/吊销/全院震动或舆论反噬"],
                     "must_not_include": ["只埋钩子不兑现", "真正风暴才刚开始", "新大Boss"] + DEFAULT_FORBIDDEN_NEW_ROLES,
                     "ending": "本簇结束，主对手在本簇内失去信任或受到处罚",
@@ -535,7 +597,11 @@ def _build_chapter_plan_for_cluster(cluster: Dict[str, Any]) -> Dict[str, Dict[s
                 chapters_plan[str(ch)] = {
                     "role": _role_by_index(idx),
                     "goal": "承上启下：压迫升级或取证推进，不引入新主线",
-                    "must_include": [main_opp or "主对手", "与信息差相关的调查或对峙"],
+                    "must_include": [
+                        main_opp or "主对手",
+                        "与信息差相关的调查或对峙",
+                        f"围绕{required_evidence_hint}推进取证/对峙（不得换证据来源）",
+                    ],
                     "must_not_include": ["新核心人物", "新组织/新阴谋线"] + DEFAULT_FORBIDDEN_NEW_ROLES,
                     "ending": "推进到下一章可直入反杀或收尾",
                     "must_resolve_this_chapter": ["推进证据或压迫", "不扩散到其他簇"],
