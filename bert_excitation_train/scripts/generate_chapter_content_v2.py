@@ -15,6 +15,8 @@ import json
 from pathlib import Path
 from typing import Dict, Any, Optional, List
 
+from smart_sample_search import search_rebirth_samples_for_chapter
+
 from generate_chapter_content import (  # type: ignore[import]
     RebirthRevengeGenerator,
 )
@@ -944,11 +946,20 @@ def _cluster_critic(
     # 1. 最后一章是否兑现 core_payoff / cluster_outcome
     core_payoff = (cluster.get("core_payoff") or "")
     outcome = (cluster.get("cluster_outcome") or "")
-    payoff_keywords = ["举报", "揭穿", "执照", "吊销", "职业", "毁灭", "失去信任", "处罚", "落马", "崩塌", "反噬", "身败名裂", "自食恶果"]
-    outcome_ok = any(k in last_text for k in payoff_keywords) or any(k in core_payoff for k in ["举报", "揭穿", "吊销", "毁灭"]) and len(last_text) > 400
+    # 放宽但更全面的“结果落地”判定：接受更丰富的同义表达，且允许在最后两章内出现
+    payoff_keywords = [
+        "举报", "揭穿", "执照", "吊销", "职业", "毁灭", "失去信任", "处罚", "落马", "崩塌",
+        "反噬", "身败名裂", "自食恶果", "停职", "罢免", "免职", "撤职", "被带走", "被调查",
+        "罢黜", "开除", "通报", "曝光", "败露", "失势", "下台", "股东会通过", "接任", "接管",
+    ]
+    last_two = (chapter_texts.get(last_ch, "") or "") + " " + (chapter_texts.get(last_ch - 1, "") or "")
+    outcome_ok = any(k in last_text for k in payoff_keywords) or any(k in last_two for k in payoff_keywords)
+    # 若 core_payoff/outcome 文案明确包含结果类用词，且最后一章文本长度较充分，也视为达标
+    if not outcome_ok and (any(k in core_payoff for k in ["举报", "揭穿", "吊销", "毁灭", "罢免", "停职"]) or any(k in outcome for k in payoff_keywords)) and len(last_text) > 600:
+        outcome_ok = True
     if not outcome_ok and len(last_text) > 200:
         violations.append("本簇最后一章未完成反杀结果/职业毁灭/处罚落地")
-        rewrite_advice.append("最后一章必须写出举报成功、处罚后果或对手失去信任，不能只留“更大风暴才刚开始”")
+        rewrite_advice.append("最后一章必须具体呈现场景化的‘结果落地’，例如宣布停职/罢免/吊销/股东会决议/被带离；不要只写“更大风暴才刚开始”。")
 
     # 2. 是否引入禁止角色/元素
     forbidden_check = ["系统提示音", "苏晚晴", "神秘司机", "神秘人", "黑色轿车", "神秘男人", "幕后黑手", "更大风暴", "真正的风暴"]
@@ -969,13 +980,29 @@ def _cluster_critic(
             violations.append("本簇要求显性使用的信息差证据（如笔记/病历/记录）未在正文中出现")
             rewrite_advice.append("将证据改为本簇信息差中的具体形式（如值班室笔记、病历篡改记录），不要用“神秘人送U盘/录像”")
 
-    # 4. 主对手是否聚焦
+    # 4. 每章字数是否达标（否则即使结构/关键词对了，也不符合你的“长篇节奏”目标）
+    # NOTE: 你要求的目标是“每章>=1500字”，因此这里必须按 1500 做硬性验收。
+    min_chars_per_ch = 1500
+    for ch in range(start_ch, end_ch + 1):
+        t = (chapter_texts.get(ch) or "").strip()
+        if len(t) < min_chars_per_ch:
+            violations.append(f"第{ch}章字数不足（{len(t)}字）")
+            rewrite_advice.append(f"第{ch}章必须扩写到不少于1500字：按 beats 逐拍展开，补足多感官描写与对话，让情绪转折更清晰，并确保信息差证据形态落地。")
+
+    # 5. 主对手是否聚焦
     main_opp = (cluster.get("main_opponent") or "")
     if main_opp and len(main_opp) < 10 and main_opp not in full_text and len(full_text) > 1000:
         violations.append("本簇主对手未在正文中充分出现，冲突被稀释")
         rewrite_advice.append(f"确保本簇冲突围绕主对手（{main_opp}）展开，不要被其他角色抢戏")
 
-    payoff_completed = outcome_ok and not (violations and any("最后一章" in v or "未完成" in v for v in violations))
+    # 放宽完成判定：只要结果落地达标，且未出现“最后一章未完成”或“最后一章字数不足”等致命问题，即视为完成
+    critical_violations = []
+    for v in violations:
+        if "最后一章未完成" in v:
+            critical_violations.append(v)
+        if "字数不足" in v and f"第{last_ch}" in v:
+            critical_violations.append(v)
+    payoff_completed = outcome_ok and not critical_violations
     return {
         "payoff_completed": payoff_completed,
         "used_required_info_gap": "信息差" not in str(violations),
@@ -1093,6 +1120,1013 @@ def _setup_gen_from_cards_and_prev_life(
     setattr(gen, "event_clusters_v2", clusters)
 
 
+def _extract_json_obj_maybe(text: str) -> Any:
+    """
+    从模型输出中尽量提取 JSON（容错：允许前后有非 JSON 文本）。
+    """
+    if text is None:
+        return None
+    s = (text or "").strip()
+    if not s:
+        return None
+    # 1) 先尝试直接 json.loads
+    try:
+        return json.loads(s)
+    except Exception:  # noqa: BLE001
+        pass
+
+    # 2) 清理常见 markdown fence（尽量不破坏括号配对）
+    #    例如： ```json { ... } ```
+    s2 = s.replace("```json", "```").replace("```", "")
+
+    def _escape_newlines_in_json_strings(raw: str) -> str:
+        """
+        某些模型会把 JSON 字符串写成“多行字符串”（直接插入真实换行），
+        这会导致 json.loads 失败；在字符串内部把换行替换为 \\n 可提高容错率。
+        """
+        out: List[str] = []
+        in_string = False
+        escape = False
+        for ch in raw:
+            if in_string:
+                if escape:
+                    out.append(ch)
+                    escape = False
+                    continue
+                if ch == "\\":
+                    out.append(ch)
+                    escape = True
+                    continue
+                if ch == '"':
+                    out.append(ch)
+                    in_string = False
+                    continue
+                if ch == "\n":
+                    out.append("\\")
+                    out.append("n")
+                    continue
+                if ch == "\r":
+                    out.append("\\")
+                    out.append("n")
+                    continue
+                out.append(ch)
+            else:
+                out.append(ch)
+                if ch == '"':
+                    in_string = True
+        return "".join(out)
+
+    def _extract_balanced_snippet(raw: str) -> Optional[str]:
+        start_obj = raw.find("{")
+        start_arr = raw.find("[")
+        if start_obj == -1 and start_arr == -1:
+            return None
+
+        if start_obj == -1:
+            start = start_arr
+            open_ch, close_ch = "[", "]"
+        elif start_arr == -1:
+            start = start_obj
+            open_ch, close_ch = "{", "}"
+        else:
+            if start_obj < start_arr:
+                start = start_obj
+                open_ch, close_ch = "{", "}"
+            else:
+                start = start_arr
+                open_ch, close_ch = "[", "]"
+
+        depth = 0
+        in_string = False
+        escape = False
+        for i in range(start, len(raw)):
+            ch = raw[i]
+            if in_string:
+                if escape:
+                    escape = False
+                elif ch == "\\":
+                    escape = True
+                elif ch == '"':
+                    in_string = False
+                continue
+            if ch == '"':
+                in_string = True
+                continue
+            if ch == open_ch:
+                depth += 1
+            elif ch == close_ch:
+                depth -= 1
+                if depth == 0:
+                    return raw[start : i + 1]
+        return None
+
+    try:
+        snippet = _extract_balanced_snippet(s2)
+        if not snippet:
+            return None
+        try:
+            return json.loads(snippet)
+        except Exception:  # noqa: BLE001
+            # 再尝试：把字符串里的真实换行转成 \\n
+            snippet2 = _escape_newlines_in_json_strings(snippet)
+            return json.loads(snippet2)
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def _partition_evenly(items: List[int], parts: int) -> List[List[int]]:
+    """
+    将 items 切成 parts 份，尽量均匀且保持连续性。
+    若 parts >= len(items)，则每份至多 1 个元素。
+    """
+    if parts <= 0:
+        return [items]
+    n = len(items)
+    parts = min(parts, n) if n > 0 else 1
+    if parts <= 1:
+        return [items]
+    out: List[List[int]] = []
+    base = n // parts
+    rem = n % parts
+    idx = 0
+    for i in range(parts):
+        take = base + (1 if i < rem else 0)
+        out.append(items[idx : idx + take])
+        idx += take
+    return out
+
+
+def _chapter_constraints_for_cluster_prompt(card: Dict[str, Any]) -> str:
+    """
+    为“全簇节拍卡/连续正文/切分微调”提供更短的章节约束摘要。
+    """
+    if not isinstance(card, dict):
+        return ""
+    role_v2 = card.get("chapter_role_v2", "")
+    chapter_goal = card.get("chapter_goal", "") or ""
+    must_in = card.get("chapter_must_include", []) or []
+    must_not = card.get("chapter_must_not_include", []) or []
+    ending = card.get("chapter_ending", "") or ""
+    must_resolve = card.get("must_resolve_this_chapter", []) or []
+    allowed_roles = card.get("allowed_roles", []) or []
+    forbidden_roles = card.get("forbidden_roles", []) or []
+
+    if isinstance(must_in, list):
+        must_in = [str(x) for x in must_in][:10]
+    else:
+        must_in = [str(must_in)][:1]
+    if isinstance(must_not, list):
+        must_not = [str(x) for x in must_not][:14]
+    else:
+        must_not = [str(must_not)][:1]
+    if isinstance(must_resolve, list):
+        must_resolve = [str(x) for x in must_resolve][:8]
+    else:
+        must_resolve = [str(must_resolve)][:1]
+
+    if isinstance(allowed_roles, list):
+        allowed_roles = [str(x) for x in allowed_roles]
+    else:
+        allowed_roles = [str(allowed_roles)]
+    if isinstance(forbidden_roles, list):
+        forbidden_roles = [str(x) for x in forbidden_roles]
+    else:
+        forbidden_roles = [str(forbidden_roles)]
+
+    return (
+        f"角色：{role_v2 or '（未标注）'}；目标：{chapter_goal}\n"
+        f"必须包含：{'；'.join(must_in) if must_in else '（无）'}\n"
+        f"必须处理：{'；'.join(must_resolve) if must_resolve else '（无）'}\n"
+        f"必须避免：{'；'.join(must_not) if must_not else '（无）'}\n"
+        f"章节结尾钩子：{ending or '（无）'}\n"
+        f"允许角色：{'；'.join(allowed_roles[:6]) if allowed_roles else '（未指定）'}\n"
+        f"禁止出现新核心角色：{'；'.join(forbidden_roles[:10]) if forbidden_roles else '（无）'}\n"
+    )
+
+
+def _build_cluster_detailed_synopsis_prompt(
+    cluster: Dict[str, Any],
+    chapter_cards: Dict[int, Dict[str, Any]],
+    prev_tail_scene: str,
+    prev_unresolved_hook: str,
+    rewrite_advice: Optional[List[str]] = None,
+) -> str:
+    span = cluster.get("chapter_span") or cluster.get("chapterRange") or cluster.get("chapters") or []
+    try:
+        s, e = int(span[0]), int(span[1])
+        span_desc = f"{s}-{e}"
+    except Exception:  # noqa: BLE001
+        span_desc = "（未知）"
+
+    cluster_id = cluster.get("cluster_id", "")
+    cluster_name = cluster.get("name", cluster.get("cluster_name", "")) or ""
+    core_payoff = cluster.get("core_payoff", "") or ""
+    main_opp = cluster.get("main_opponent", "") or ""
+    prev_tragedy = cluster.get("prev_life_tragedy", "") or ""
+    this_revenge = cluster.get("this_life_revenge", "") or ""
+    info_gap = cluster.get("info_gap_from_prev_life", "") or ""
+    outcome = cluster.get("cluster_outcome", "") or ""
+
+    cross_hint = ""
+    if prev_tail_scene or prev_unresolved_hook:
+        cross_hint = (
+            "上一章最后场景/动作（供本情节族首章开头接续）："
+            + (prev_tail_scene or "（无）")
+            + "\n上一章未解决钩子（必须被接住并推进到本情节族内节拍）："
+            + (prev_unresolved_hook or "（无）")
+            + "\n"
+        )
+
+    chapter_roles = []
+    for ch, card in sorted(chapter_cards.items(), key=lambda x: x[0]):
+        role_v2 = card.get("chapter_role_v2", "")
+        if role_v2:
+            chapter_roles.append(f"第{ch}章：{role_v2}")
+    chapter_roles_text = "；".join(chapter_roles[:10]) if chapter_roles else ""
+
+    rewrite_block = ""
+    if rewrite_advice:
+        rewrite_block = "\n【重写要求（必须遵守）】\n" + "\n".join(rewrite_advice[:10])
+
+    return f"""你是重生复仇短剧/小说编剧。请基于【情节族】信息，生成一个“可直接驱动分章节拍卡与正文”的【详细完整梗概】。
+
+要求（非常重要）：
+1. 必须按时间推进写：起因→逼迫/挤压→信息差如何被识别→今生如何伪装/布局利用→关键证据/记录/病历/笔记如何呈现→对手如何失态→反杀结果与本簇结局；
+2. 必须写清“上一世留下的信息差”到底是什么（要具体到证据/记录形态），以及沈清欢如何把它伪装成“对方以为安全的流程”；
+3. 必须写出复仇细节爽感：反杀要落在具体动作/对话/表情/场面上，并说明“为什么有效”；
+4. 必须把复仇方式和核心爽点与 `core_payoff` 对齐；
+5. 禁止引入本情节族未规划的新核心人物/幕后系统/系统提示音等旁支要素。
+{rewrite_block}
+
+输出格式（按顺序输出段落，不要列表/不要编号）：
+[背景]
+[过程]
+[信息差与利用]
+[复仇细节与爽感]
+[章间衔接要点]
+
+【情节族信息】
+cluster_id：{cluster_id}
+cluster_name：{cluster_name}
+覆盖章节：{span_desc}
+核心爽点：{core_payoff}
+主要对手：{main_opp}
+上一世悲剧前提：{prev_tragedy}
+今生反击方式：{this_revenge}
+上一世留下的信息差：{info_gap}
+本簇结局/落点：{outcome}
+
+{cross_hint}
+章节角色分工（便于放置回忆/反制）：{chapter_roles_text or '（未提供）'}
+"""
+
+
+def _build_cluster_beats_prompt(
+    cluster: Dict[str, Any],
+    chapter_nums: List[int],
+    chapter_cards: Dict[int, Dict[str, Any]],
+    cluster_synopsis: str,
+    prev_tail_scene: str,
+    prev_unresolved_hook: str,
+    rewrite_advice: Optional[List[str]] = None,
+) -> str:
+    cluster_id = cluster.get("cluster_id", "") or ""
+    cluster_name = cluster.get("name", cluster.get("cluster_name", "")) or ""
+    main_opp = cluster.get("main_opponent", "") or ""
+    core_payoff = cluster.get("core_payoff", "") or ""
+    info_gap = cluster.get("info_gap_from_prev_life", "") or ""
+    outcome = cluster.get("cluster_outcome", "") or ""
+
+    cross_hint = ""
+    if prev_tail_scene or prev_unresolved_hook:
+        cross_hint = (
+            "首章开头必须接续上一章尾钩：\n"
+            f"- 上一章最后场景/动作：{prev_tail_scene or '（无）'}\n"
+            f"- 上一章未解决钩子：{prev_unresolved_hook or '（无）'}\n"
+        )
+
+    rewrite_block = ""
+    if rewrite_advice:
+        rewrite_block = "\n【重写要求（必须遵守）】\n" + "\n".join(rewrite_advice[:10])
+
+    cards_block_text = "\n\n".join(
+        [f"【第{ch}章章节卡】\n{_chapter_constraints_for_cluster_prompt(chapter_cards.get(ch, {}))}" for ch in chapter_nums]
+    )
+
+    # 这里必须避免在 f-string 里直接写 JSON 示例（里面有大量 `{}`），否则会被 Python 误当成格式化占位符。
+    beats_json_schema = """
+{
+  "cluster_id": "<string>",
+  "cluster_name": "<string>",
+  "chapters": [
+    {
+      "chapter_num": <int>,
+      "chapter_type": "<revenge_payoff|grievance_build|present_only|cross_chapter>",
+      "closure_type": "<full_close|half_close|chain_close>",
+      "open_from_prev": "<string>",
+      "end_to_next": "<string>",
+      "beats": [
+        {
+          "scene_goal": "<string>",
+          "visual_elements": "<string>",
+          "emotion_push": "<string>",
+          "info_delta": "<string>",
+          "evidence_form": "<string>",
+          "prev_life_memory_brief": "<string>",
+          "foreshadow": "<string>",
+          "relationship_push": "<string>",
+          "must_not": "<string>"
+        }
+      ],
+      "flashback_in_beat_idx": <int|null>
+    }
+  ]
+}
+""".strip("\n")
+
+    return f"""你是短剧/小说编剧。请把【情节族梗概】进一步拆成“每章节拍卡（beats）”，以便后续连续正文生成并最终切分成章节。
+
+要求（非常重要）：
+1. 输出必须是严格 JSON（不要 Markdown，不要解释文字），且 JSON 可被直接 json.loads 解析；
+   必须保证所有 JSON 字符串字段内部不得出现真实换行；若需要换行请用 \\n 表示；整份 JSON 尽量输出为一行（允许空白分隔）。
+2. 对每个章节：beats 必须 8-10 条，每条为一个“结构化节拍卡对象”，按情节点顺序排列；
+   每个 beats 对象必须尽量给出以下字段的具体内容（不可全空）：scene_goal / visual_elements / emotion_push / info_delta / evidence_form / foreshadow / relationship_push；must_not 至少给出 1-2 条避免项（可用简短短语）；
+3. 若该章需要插入上一世回忆（根据该章 `chapter_role_v2`），则在 JSON 字段 flashback_in_beat_idx 写出对应 beats 下标（从 0 开始），并要求该 beats 对象的 `prev_life_memory_brief` 给出上一世受害回忆的具体内容要点（用于正文直接插入）；不需要则填 null 且所有 beats 的 `prev_life_memory_brief` 为空字符串；
+4. chapter_type 必须从：revenge_payoff / grievance_build / present_only / cross_chapter 中二选一或多选（但每章只能给一个）；
+5. closure_type 必须从：full_close / half_close / chain_close 中三选一（每章只能给一个）；
+6. open_from_prev：首章必须给出“接续上一章尾钩”的具体动作/场景；非首章必须与上一章 end_to_next 的未决点强相关；
+7. end_to_next：每章结尾必须留下下一章钩子（最后一章给本簇落点后的读者悬念，允许为“更大风暴延续”，但不得引入新幕后系统/系统提示音）；
+8. 必须显性使用“信息差证据形态”（来自 info_gap），在 beats 的 `evidence_form` 字段里给出 2-3 次证据/记录/病历/笔记/文件被拿出来、被解释、被用于翻盘的具体动作/台词要点（至少命中 2 次）。
+
+【情节族信息】
+cluster_id：{cluster_id}
+cluster_name：{cluster_name}
+主要对手：{main_opp}
+核心爽点：{core_payoff}
+上一世信息差（用于证据呈现）：{info_gap}
+本簇结局/落点：{outcome}
+覆盖章节：{chapter_nums[0]}-{chapter_nums[-1]}
+
+{cross_hint}
+{rewrite_block}
+
+【情节族详细梗概（不得偏离）】
+{cluster_synopsis}
+
+【逐章章节卡约束（必须遵守 must/must_not/结尾钩子）】
+{cards_block_text}
+
+输出 JSON 结构（仅输出此 JSON）：
+{beats_json_schema}
+"""
+
+
+def _build_single_chapter_beats_prompt(
+    cluster: Dict[str, Any],
+    chapter_num: int,
+    chapter_card: Dict[str, Any],
+    cluster_synopsis: str,
+    prev_tail_scene: str,
+    prev_unresolved_hook: str,
+    prev_end_to_next_seed: str,
+    is_first_chapter: bool,
+    is_last_chapter: bool,
+    rewrite_advice: Optional[List[str]] = None,
+) -> str:
+    """
+    单章 beats：只输出一个可 json.loads 的 JSON 对象，避免“全簇 JSON 一次性输出导致截断/解析失败”。
+    """
+    cluster_id = cluster.get("cluster_id", "") or ""
+    cluster_name = cluster.get("name", cluster.get("cluster_name", "")) or ""
+    main_opp = cluster.get("main_opponent", "") or ""
+    core_payoff = cluster.get("core_payoff", "") or ""
+    info_gap = cluster.get("info_gap_from_prev_life", "") or ""
+    outcome = cluster.get("cluster_outcome", "") or ""
+
+    role_v2 = chapter_card.get("chapter_role_v2", "") or ""
+    cards_block_text = _chapter_constraints_for_cluster_prompt(chapter_card)
+    rewrite_block = ""
+    if rewrite_advice:
+        rewrite_block = "\n【重写要求（必须遵守）】\n" + "\n".join(rewrite_advice[:10])
+
+    # 与 v1/v2 现有逻辑保持一致：哪些 chapter_role_v2 需要插入“上一世回忆”
+    prev_life_roles = {
+        "prev_life_full",
+        "prev_life_explained_by_investigation",
+        "present_past_mix",
+        "slow_burn_press_with_past_shadow",
+    }
+    need_prev_life = role_v2 in prev_life_roles
+
+    open_seed_lines = []
+    if is_first_chapter:
+        open_seed_lines.append(f"上一章最后场景/动作：{prev_tail_scene or '（无）'}")
+        open_seed_lines.append(f"上一章未解决钩子：{prev_unresolved_hook or '（无）'}")
+    else:
+        open_seed_lines.append(f"上一章 end_to_next（未决点/钩子承接种子）：{prev_end_to_next_seed or '（无）'}")
+
+    beats_json_schema = """
+{
+  "chapter_num": <int>,
+  "open_from_prev": "<string>",
+  "end_to_next": "<string>",
+  "flashback_in_beat_idx": <int|null>,
+  "beats": [
+    {
+      "scene_goal": "<string>",
+      "visual_elements": "<string>",
+      "emotion_push": "<string>",
+      "info_delta": "<string>",
+      "evidence_form": "<string>",
+      "foreshadow": "<string>",
+      "relationship_push": "<string>",
+      "must_not": "<string>",
+      "prev_life_memory_brief": "<string>"
+    }
+  ]
+}
+""".strip("\n")
+
+    return f"""你是重生复仇短剧/小说编剧。请为“第{chapter_num}章”输出该章的【节拍卡 beats】（只输出一个 JSON 对象）。
+
+要求（非常重要）：
+1. 输出必须是严格 JSON（不要 Markdown，不要解释文字），JSON 可被直接 json.loads 解析；
+2. 必须保证所有 JSON 字符串字段内部不得出现真实换行；若需要换行请用 \\n 表示；整份 JSON 尽量输出为一行（允许空白分隔）；
+3. beats 必须 8-10 条，每条为一个结构化 beats 对象，按情节点顺序排列；
+4. 每个 beats 对象必须尽量给出以下字段的具体内容（不可全空）：scene_goal / visual_elements / emotion_push / info_delta / evidence_form / foreshadow / relationship_push / must_not / prev_life_memory_brief；
+5. 若 need_prev_life=True，则 flashback_in_beat_idx 必须为非 null 的整数，且必须且只能在该 beats 下标对应的那一拍里给出非空 prev_life_memory_brief；其它 beats 的 prev_life_memory_brief 只能为空字符串。
+   若 need_prev_life=False，则 flashback_in_beat_idx 必须为 null，并且所有 beats 的 prev_life_memory_brief 必须为空字符串；
+6. open_from_prev 必须体现与上一章未决点的承接：{("；".join(open_seed_lines))};
+7. end_to_next 必须为下一章钩子：如果是最后一章，则钩子必须对齐本簇落点 outcome（允许留读者悬念，但不得引入新幕后系统/系统提示音）。
+8. 必须显性使用“信息差证据形态”（来自 info_gap），在 evidence_form 字段里给出至少 2 次“证据/记录/病历/笔记/文件被拿出来、被解释或被用于翻盘”的具体动作/台词要点（要求与 info_gap 对齐）。
+
+【情节族信息（仅用于对齐）】
+cluster_id：{cluster_id}
+cluster_name：{cluster_name}
+主要对手：{main_opp}
+核心爽点：{core_payoff}
+上一世信息差（用于证据呈现）：{info_gap}
+本簇结局/落点：{outcome}
+本章 chapter_role_v2：{role_v2}
+
+【章节执行卡约束（必须遵守）】
+{cards_block_text}
+
+【情节族详细梗概（不得偏离）】
+{cluster_synopsis}
+
+{rewrite_block}
+
+输出 JSON 结构（仅输出此 JSON）：
+{beats_json_schema}
+"""
+
+
+def _build_cluster_body_part_prompt(
+    cluster: Dict[str, Any],
+    cluster_synopsis: str,
+    chapter_num: int,
+    chapter_beats: Dict[str, Any],
+    prev_tail_scene: str,
+    prev_unresolved_hook: str,
+    chapter_card: Dict[str, Any],
+    kg_context: str = "",
+    rewrite_advice: Optional[List[str]] = None,
+    rag_samples: Optional[Dict[str, List[Dict[str, Any]]]] = None,
+) -> str:
+    cluster_id = cluster.get("cluster_id", "") or ""
+    main_opp = cluster.get("main_opponent", "") or ""
+    info_gap = cluster.get("info_gap_from_prev_life", "") or ""
+    core_payoff = cluster.get("core_payoff", "") or ""
+
+    role_v2 = chapter_card.get("chapter_role_v2", "") or ""
+    must_in = chapter_card.get("chapter_must_include", []) or []
+    must_not = chapter_card.get("chapter_must_not_include", []) or []
+    ending = chapter_card.get("chapter_ending", "") or ""
+    allowed_roles = chapter_card.get("allowed_roles", []) or []
+    forbidden_roles = chapter_card.get("forbidden_roles", []) or []
+    if isinstance(must_in, list):
+        must_in = [str(x) for x in must_in][:8]
+    if isinstance(must_not, list):
+        must_not = [str(x) for x in must_not][:10]
+
+    # 是否为本簇最后一章（用于加严结尾闭环硬性要求）
+    is_last_chapter_of_cluster = False
+    try:
+        idx = int(chapter_card.get("cluster_chapter_index", 0) or 0)
+        total = int(chapter_card.get("cluster_chapter_total", 0) or 0)
+        is_last_chapter_of_cluster = total >= 1 and idx == total
+    except Exception:
+        is_last_chapter_of_cluster = False
+
+    beats = chapter_beats.get("beats", []) or []
+    open_from_prev = chapter_beats.get("open_from_prev", "") or ""
+    end_to_next = chapter_beats.get("end_to_next", "") or ""
+    flashback_idx = chapter_beats.get("flashback_in_beat_idx", None)
+    chapter_type = chapter_beats.get("chapter_type", "present_only") or "present_only"
+    closure_type = chapter_beats.get("closure_type", chapter_beats.get("closure_type", None)) or chapter_beats.get("closure_type", None)
+    if not closure_type:
+        closure_type = chapter_beats.get("closure_type", "full_close") or "full_close"
+    if not closure_type:
+        closure_type = "full_close"
+
+    rewrite_block = ""
+    if rewrite_advice:
+        rewrite_block = "\n【重写要求（必须遵守）】\n" + "\n".join(rewrite_advice[:10])
+
+    kg_block = f"\n【Neo4j背景事实（限长，仅作背景，禁止替换证据链与决策）】\n{kg_context}\n" if kg_context else ""
+
+    rag_samples_block = ""
+    if rag_samples:
+        title_map = {
+            "revenge": "重生复仇爽感",
+            "grievance": "上一世委屈",
+            "universal": "通用样本",
+        }
+        parts: List[str] = []
+        for key in ("revenge", "grievance", "universal"):
+            arr = rag_samples.get(key) or []
+            if not isinstance(arr, list):
+                continue
+            for idx, sample in enumerate(arr[:2], 1):
+                if not isinstance(sample, dict):
+                    continue
+                adapted = str(sample.get("adapted_content") or "").strip()
+                adapted = adapted.replace("\n", " ")
+                if adapted:
+                    parts.append(
+                        f"【样本{idx} - {title_map.get(key, key)}】\n{adapted[:500]}…（已截断）"
+                    )
+        if parts:
+            rag_samples_block = (
+                "\n【参考样本（仅作写作节奏与表达参考，不得原样复述/不得改写 beats 逻辑）】\n"
+                + "\n\n".join(parts)
+            )
+
+    flashback_idx_0 = flashback_idx if flashback_idx is not None else None
+    flashback_idx_text = "null" if flashback_idx_0 is None else str(flashback_idx_0)
+    flashback_beat_1_text = "null" if flashback_idx_0 is None else str(int(flashback_idx_0) + 1)
+    beats_lines: List[str] = []
+    for i, b in enumerate(beats):
+        if isinstance(b, dict):
+            # 每拍字段会被“转写”为正文的动作/对话/环境与情绪，而不是在正文里原样复现字段名。
+            prev_brief = str(b.get("prev_life_memory_brief") or "").strip()
+            if flashback_idx_0 is not None and i == int(flashback_idx_0) and prev_brief:
+                prev_part = f"；回忆要点：{prev_brief}"
+            else:
+                prev_part = ""
+            line = (
+                f"第{i+1}拍："
+                f"目标={str(b.get('scene_goal') or '').strip()}；"
+                f"画面={str(b.get('visual_elements') or '').strip()}；"
+                f"情绪={str(b.get('emotion_push') or '').strip()}；"
+                f"信息增量={str(b.get('info_delta') or '').strip()}；"
+                f"证据形态={str(b.get('evidence_form') or '').strip()}；"
+                f"伏笔={str(b.get('foreshadow') or '').strip()}；"
+                f"关系推进={str(b.get('relationship_push') or '').strip()}；"
+                f"禁止={str(b.get('must_not') or '').strip()}"
+                f"{prev_part}"
+            )
+        else:
+            line = f"第{i+1}拍：{str(b).strip()}"
+        beats_lines.append(line)
+    beats_text = "\n".join(beats_lines)
+    payoff_hard_block = ""
+    if is_last_chapter_of_cluster:
+        # 明确把“本簇闭环写完”作为硬性落点，禁止含糊收尾
+        payoff_hard_block = (
+            "\n【本簇最后一章闭环（硬性要求，必须全部满足）】\n"
+            "- 本章内必须写出反杀完成与具体后果：如 停职/罢免/吊销/处罚/股东会通过/失去支持/曝光败露；\n"
+            "- 必须以具体、可视化的场面呈现‘结果落地’，例如：宣布决定的会议现场、盖章/签字的瞬间、对手被带离/被围观的画面；\n"
+            "- 允许保留一个很小的余波钩子，但绝对禁止用“更大风暴才刚开始/真正的敌人另有其人”替代结果；\n"
+            "- 若篇幅不足，优先砍掉环境/感受性描写，也要保证‘结果已发生且被看到’。"
+        )
+
+    return f"""你是重生复仇短剧作家。请输出“第{chapter_num}章”的连续正文段落。要求：
+
+1. 必须严格按该章节拍卡 `beats` 的顺序推进，不得跳拍；
+2. 开头 120-180 字必须体现 open_from_prev 指向的上一段未决点/动作承接；
+3. 若 flashback_in_beat_idx = {flashback_idx_text}（从 0 开始），则在第 {flashback_beat_1_text} 拍结束后插入完整上一世受害回忆段落，回忆内容需围绕该拍卡里的“回忆要点”展开（不要加小标题，不要出现“系统提示音/重生醒来/调查”这类旁支）；若 flashback_in_beat_idx 为 null 则本章不插入上一世回忆；
+4. 本章总字数要求：不少于 1500 字（建议 1700-2200 字），并且必须按 beats 分拍展开：每一拍至少写 160-220 字的正文内容，允许用自然段落分隔，但不得把多拍压缩成极短段落；未达到 1500 字时必须继续扩写，直到字数达标后再停止；
+5. 必须显性呈现“信息差证据形态”：在正文中至少 2 次让读者看到证据/记录/病历/笔记/文件被拿出来、被解释或被用于翻盘，并且这些证据呈现要与 beats 的“证据形态”对齐；
+6. 结尾最后 120-200 字留下 end_to_next 作为下一章钩子；
+7. beats 卡里的字段名仅用于写作约束，正文中不要原样复现这些字段名；输出仅正文，不要章节标题或编号，不要解释原因，不要附带 JSON。
+
+【情节族信息】cluster_id={cluster_id}；主要对手={main_opp}；信息差提示={info_gap}；核心爽点={core_payoff}
+【本章信息】角色={role_v2 or '（未标注）'}；类型={chapter_type}；闭合={closure_type}；章节卡结尾钩子={ending or '（无）'}
+【本章必须包含】{'；'.join(must_in) if must_in else '（无）'}
+【本章必须避免】{'；'.join(must_not) if must_not else '（无）'}
+{payoff_hard_block}
+
+{rewrite_block}
+{rag_samples_block}
+{kg_block}
+
+【上一段结尾承接（必须接住）】
+最后场景：{prev_tail_scene or '（无）'}
+未解决钩子：{prev_unresolved_hook or '（无）'}
+
+【情节族详细梗概（不得偏离）】
+{cluster_synopsis}
+
+【本章拍卡（beats）】
+{beats_text}
+"""
+
+
+def _build_cluster_split_prompt(
+    cluster: Dict[str, Any],
+    cluster_synopsis: str,
+    full_cluster_body: str,
+    chapter_nums: List[int],
+    chapter_cards: Dict[int, Dict[str, Any]],
+    beats_cards: List[Dict[str, Any]],
+    rewrite_advice: Optional[List[str]] = None,
+) -> str:
+    cluster_id = cluster.get("cluster_id", "") or ""
+    cluster_name = cluster.get("name", cluster.get("cluster_name", "")) or ""
+    main_opp = cluster.get("main_opponent", "") or ""
+    info_gap = cluster.get("info_gap_from_prev_life", "") or ""
+    outcome = cluster.get("cluster_outcome", "") or ""
+
+    rewrite_block = ""
+    if rewrite_advice:
+        rewrite_block = "\n【重写要求（必须遵守）】\n" + "\n".join(rewrite_advice[:10])
+
+    cards_block_text = "\n\n".join(
+        [f"【第{ch}章章节卡】\n{_chapter_constraints_for_cluster_prompt(chapter_cards.get(ch, {}))}" for ch in chapter_nums]
+    )
+
+    # 注意：下面这个“输出 JSON 结构”示例如果直接写在 f-string 里（包含大量 `{}`），
+    # 会被 Python 当成格式化占位符解析，导致运行时报 `ValueError: Invalid format specifier`。
+    # 因此把它先放到普通字符串变量中，再通过 `{split_output_json_schema}` 插入。
+    split_output_json_schema = """
+{
+  "cluster_id": "<string>",
+  "chapters": [
+    { "chapter_num": <int>, "text": "<string：该章正文（禁止章节标题）>" }
+  ]
+}
+""".strip("\n")
+
+    beats_block_lines = []
+    for bc in beats_cards:
+        bn = bc.get("chapter_num")
+        beats_block_lines.append(
+            f"第{bn}章 open_from_prev={bc.get('open_from_prev','')}；end_to_next={bc.get('end_to_next','')}；flashback_idx={bc.get('flashback_in_beat_idx',None)}"
+        )
+    beats_block_text = "\n".join(beats_block_lines)
+
+    return f"""你是重生复仇短剧编剧。请把【完整情节族正文】进一步切分成【严格对应章节范围】的 n 章文本，并微调每一章的开头/结尾钩子，保证衔接顺滑且约束命中。
+
+要求（非常重要）：
+1. 输出必须是严格 JSON（不要 Markdown，不要解释文字），JSON 可被直接 json.loads 解析；
+2. 不要改变情节核心主线：除每章开头 100-160 字与结尾最后 120-200 字允许微调外，其余正文不得删减、不得压缩总结、不得同义重写；必须保留与原“完整情节族正文”一致的正文信息密度（以防止字数下降）；
+3. 每章必须：
+   - 开头 100-160 字体现 open_from_prev 指向的上一章结尾动作/未决点承接；
+   - 结尾最后 120-200 字体现 end_to_next 作为下一章钩子；
+   - 正文总字数不少于 1500 字（建议 1600-2200 字），不能只保留短开头与短结尾；未达到 1500 字时必须继续扩写，直到字数达标后再停止；
+4. 必须命中每章章节卡里的 must_include；禁止出现 must_not_include；
+5. 不得引入情节族/章节卡未规划的新核心角色、幕后系统、系统提示音等旁支；
+6. 只输出分章文本，章节内部不要出现章节标题或小标题（不要出现“第X章”“【回忆】”等）。
+{rewrite_block}
+
+【情节族信息】cluster_id={cluster_id}；cluster_name={cluster_name}；主要对手={main_opp}；信息差提示={info_gap}；本簇落点={outcome}
+【情节族详细梗概（不得偏离）】
+{cluster_synopsis}
+
+【逐章拍卡（用于开头/结尾微调）】
+{beats_block_text}
+
+【逐章章节卡约束（必须遵守）】
+{cards_block_text}
+
+【完整情节族正文（模型生成的连续文本）】
+{full_cluster_body}
+
+输出 JSON 结构（仅输出此 JSON）：
+{split_output_json_schema}
+"""
+
+
+def _generate_cluster_continuous_and_split_v2(
+    gen: "RebirthRevengeGeneratorV2",
+    cluster: Dict[str, Any],
+    cards: Dict[int, Dict[str, Any]],
+    max_cluster_attempts: int = 5,
+) -> Dict[int, str]:
+    span = cluster.get("chapter_span") or cluster.get("chapterRange") or cluster.get("chapters") or []
+    start_ch, end_ch = int(span[0]), int(span[1])
+    chapter_nums = list(range(start_ch, end_ch + 1))
+    chapter_cards = {ch: cards.get(ch, {}) for ch in chapter_nums}
+
+    # 情节族首章：跨情节族首章开头接续上一章尾钩，减少明显断点
+    prev_ch_full = gen.get_previous_chapter_content(start_ch) if start_ch > 1 else None
+    prev_tail_scene, prev_unresolved_hook = gen._extract_prev_chapter_tail_and_hook(prev_ch_full)  # type: ignore[attr-defined]
+
+    critic_result: Dict[str, Any] = {}
+    for attempt in range(max_cluster_attempts):
+        rewrite_advice = critic_result.get("rewrite_advice", []) if attempt > 0 else None
+        if attempt > 0:
+            ra = rewrite_advice or []
+            ra_head = str(ra[0])[:120] + ("…（已截断）" if len(str(ra[0])) > 120 else "") if ra else ""
+            if ra:
+                print(
+                    f"\n⚠️ 情节族 {cluster.get('cluster_id','')} 第{attempt+1}次重写：注入 critic 重写要求（{len(ra)}条）"
+                    + (f"；首条摘要：{ra_head}" if ra_head else "")
+                )
+
+        print(f"\n🎯 [情节族梗概] {cluster.get('cluster_id','UNKNOWN')}《{cluster.get('name','')}》（第{start_ch}-{end_ch}章）")
+        # Token 预算：按“每章≥1500字、并且需要按 beats 分段展开”来放大正文 max_tokens。
+        max_tokens_synopsis = 1400
+        max_tokens_beats = 1800
+        # 字数目标：每章 >=1500 字。适当提高 token 预算，并给足重写次数，否则会落入“只写短开头/短结尾”的失败模式。
+        max_tokens_body_per_chapter = 5000
+        max_tokens_split = min(20000, 5200 * max(1, len(chapter_nums)))
+
+        synopsis_prompt = _build_cluster_detailed_synopsis_prompt(
+            cluster=cluster,
+            chapter_cards=chapter_cards,
+            prev_tail_scene=prev_tail_scene,
+            prev_unresolved_hook=prev_unresolved_hook,
+            rewrite_advice=rewrite_advice,
+        )
+        cluster_synopsis = gen._call_api(  # type: ignore[attr-defined]
+            synopsis_prompt,
+            None,
+            0,
+            max_tokens=max_tokens_synopsis,
+        )
+        cluster_synopsis = (cluster_synopsis or "").strip()
+        # 梗概对后续节拍卡/正文切分影响很大：把梗概内容在日志里做一个截断预览，便于你对齐排错。
+        synopsis_preview = cluster_synopsis[:300]
+        if len(cluster_synopsis) > 300:
+            synopsis_preview = synopsis_preview + "…（已截断）"
+        print(
+            f"📝 [情节族梗概简版] cluster={cluster.get('cluster_id','')}《{cluster.get('name','')}》（len={len(cluster_synopsis)}）"
+        )
+        print(synopsis_preview)
+
+        print(f"📋 [节拍卡] 为情节族逐章生成 beats（第{start_ch}-{end_ch}章）…")
+
+        # 节拍卡打印降噪：只保留每章关键字段 + beats 前几条截断预览。
+        def _short(x: Any, n: int) -> str:
+            s = str(x or "").strip().replace("\n", " ")
+            if len(s) > n:
+                return s[:n] + "…"
+            return s
+
+        beats_by_ch: Dict[int, Dict[str, Any]] = {}
+        prev_end_to_next_seed = ""
+        beats_generation_ok = True
+
+        for idx_ch, ch in enumerate(chapter_nums):
+            is_first = idx_ch == 0
+            is_last = idx_ch == len(chapter_nums) - 1
+
+            last_beats_out = ""
+            last_beats_reason = ""
+            beats_obj: Any = None
+
+            for beats_try in range(3):
+                max_tokens_beats_try = min(12000, 3200 + beats_try * 2500)
+                beats_prompt = _build_single_chapter_beats_prompt(
+                    cluster=cluster,
+                    chapter_num=ch,
+                    chapter_card=chapter_cards.get(ch, {}),
+                    cluster_synopsis=cluster_synopsis,
+                    prev_tail_scene=prev_tail_scene if is_first else "",
+                    prev_unresolved_hook=prev_unresolved_hook if is_first else "",
+                    prev_end_to_next_seed=prev_end_to_next_seed,
+                    is_first_chapter=is_first,
+                    is_last_chapter=is_last,
+                    rewrite_advice=rewrite_advice,
+                )
+                beats_out = gen._call_api(  # type: ignore[attr-defined]
+                    beats_prompt,
+                    None,
+                    0,
+                    max_tokens=max_tokens_beats_try,
+                )
+                last_beats_out = (beats_out or "").strip()
+                beats_obj = _extract_json_obj_maybe(beats_out)
+
+                if not isinstance(beats_obj, dict):
+                    last_beats_reason = f"beats_obj_type={type(beats_obj).__name__}"
+                    continue
+
+                b_list = beats_obj.get("beats")
+                has_beats = isinstance(b_list, list) and len(b_list) > 0
+                ch_ok = True
+                try:
+                    ch_ok = int(beats_obj.get("chapter_num")) == int(ch)
+                except Exception:  # noqa: BLE001
+                    ch_ok = True
+
+                if has_beats and ch_ok:
+                    open_from_prev = beats_obj.get("open_from_prev")
+                    end_to_next = beats_obj.get("end_to_next")
+                    if isinstance(open_from_prev, str) and open_from_prev.strip() and isinstance(end_to_next, str) and end_to_next.strip():
+                        beats_by_ch[ch] = beats_obj
+                        break
+
+                last_beats_reason = (
+                    f"has_beats={has_beats}; beats_len={len(b_list) if isinstance(b_list, list) else 'N/A'}; "
+                    f"open_from_prev_type={type(beats_obj.get('open_from_prev')).__name__}; "
+                    f"end_to_next_type={type(beats_obj.get('end_to_next')).__name__}"
+                )
+
+            if ch not in beats_by_ch:
+                last_out_head = " ".join((last_beats_out or "").split())[:200]
+                print(
+                    f"⚠️ 第{ch}章 beats JSON 解析失败（放弃本情节族本轮）：cluster={cluster.get('cluster_id')}; "
+                    f"reason={last_beats_reason}; last_out_head={last_out_head}"
+                )
+                beats_generation_ok = False
+                break
+
+            prev_end_to_next_seed = str(beats_by_ch[ch].get("end_to_next", "") or "")
+
+        if not beats_generation_ok or any(ch not in beats_by_ch for ch in chapter_nums):
+            continue
+
+        print(f"🧾 [节拍卡-关键摘要] cluster={cluster.get('cluster_id','')}《{cluster.get('name','')}》")
+        for ch in chapter_nums:
+            bc = beats_by_ch[ch]
+            beats_list_for_print = bc.get("beats") if isinstance(bc, dict) else []
+            beats_count = len(beats_list_for_print) if isinstance(beats_list_for_print, list) else 0
+            print(
+                f"  - 第{ch}章 beats={beats_count}；flashback_idx={bc.get('flashback_in_beat_idx', None)}"
+            )
+            print(f"    open_from_prev={_short(bc.get('open_from_prev',''), 80)}；end_to_next={_short(bc.get('end_to_next',''), 80)}")
+
+            if isinstance(beats_list_for_print, list) and beats_list_for_print:
+                previews: List[str] = []
+                for i, b in enumerate(beats_list_for_print[:5]):
+                    if isinstance(b, dict):
+                        sg = _short(b.get("scene_goal"), 60)
+                        ep = _short(b.get("emotion_push"), 30)
+                        previews.append(f"{i+1}:{sg}" + (f"({ep})" if ep else ""))
+                    else:
+                        previews.append(f"{i+1}:{_short(b, 60)}")
+                print("    beats_preview=" + " | ".join(previews))
+
+        # 连续正文：按章分批生成并拼接（每次只写一个章的正文，不要章节标题）
+        print(f"✍️ [连续正文] 按章分批生成连续正文（共 {len(chapter_nums)} 次）…")
+        full_text_parts: List[str] = []
+        prev_full_text = ""
+        prev_end_to_next = ""
+        for idx, ch in enumerate(chapter_nums):
+            bc = beats_by_ch[ch]
+
+            prev_tail = prev_full_text[-1400:] if prev_full_text else ""
+            prev_unresolved = prev_end_to_next if prev_end_to_next else (prev_unresolved_hook if idx == 0 else "")
+
+            kg_context = ""
+            try:
+                online_retrieve = getattr(gen, "online_retrieve_context", None)
+                if callable(online_retrieve):
+                    kg_context = str(online_retrieve(ch)) or ""
+            except Exception:  # noqa: BLE001
+                kg_context = ""
+
+            card = chapter_cards.get(ch, {}) or {}
+            role_v2 = ""
+            if isinstance(card, dict):
+                role_v2 = str(card.get("chapter_role_v2") or "")
+
+            need_prev_life = role_v2 in {
+                "prev_life_full",
+                "prev_life_explained_by_investigation",
+                "present_past_mix",
+                "slow_burn_press_with_past_shadow",
+            }
+            # 强制：第 1/2 章不插入上一世回忆
+            if ch in (1, 2):
+                need_prev_life = False
+
+            core_text = str(cluster.get("core_payoff", "") or "") + "\n" + cluster_synopsis
+            has_revenge = any(k in core_text for k in ["复仇", "反制", "反击", "扳倒", "揭穿", "打脸"])
+
+            prev_life_clue = ""
+            if hasattr(gen, "prev_life_ctx") and isinstance(getattr(gen, "prev_life_ctx"), dict):
+                prev_life_clue = str((gen.prev_life_ctx.get(ch) or ""))  # type: ignore[attr-defined]
+
+            rag_query = f"{cluster_synopsis}\n{prev_life_clue or ''}".strip()
+            target_context = "主角: 沈清欢, 背景: 现代都市, 重生复仇, 职场复仇"
+            rag_samples = search_rebirth_samples_for_chapter(
+                rag_query,
+                target_context,
+                need_prev_life=need_prev_life,
+                has_revenge=has_revenge,
+                top_k_per_set=2,
+            )
+
+            if rag_samples and any(rag_samples.get(k) for k in ("revenge", "grievance", "universal")):
+                n = sum(len(rag_samples.get(k, [])) for k in ("revenge", "grievance", "universal"))
+                if n:
+                    print(f"  [RAG] 第{ch}章 注入 {n} 条参考（委屈/爽感/通用）", flush=True)
+
+            body_prompt = _build_cluster_body_part_prompt(
+                cluster=cluster,
+                cluster_synopsis=cluster_synopsis,
+                chapter_num=ch,
+                chapter_beats=bc,
+                prev_tail_scene=prev_tail if prev_tail else (prev_tail_scene if idx == 0 else ""),
+                prev_unresolved_hook=prev_unresolved,
+                chapter_card=chapter_cards.get(ch, {}),
+                kg_context=kg_context,
+                rewrite_advice=rewrite_advice,
+                rag_samples=rag_samples,
+            )
+            part_text = gen._call_api(  # type: ignore[attr-defined]
+                body_prompt,
+                None,
+                idx,
+                max_tokens=max_tokens_body_per_chapter,
+            )
+            part_text = (part_text or "").strip()
+            if not part_text or part_text.startswith("通义千问"):
+                raise RuntimeError(f"第{ch}章正文生成失败或为空。")
+            full_text_parts.append(part_text)
+            prev_full_text += part_text
+            prev_end_to_next = str(bc.get("end_to_next", "") or "")
+
+        full_body = "\n".join(full_text_parts).strip()
+
+        print("🧩 [切分微调] 把连续正文切分成章并微调开头/结尾钩子…")
+        split_prompt = _build_cluster_split_prompt(
+            cluster=cluster,
+            cluster_synopsis=cluster_synopsis,
+            full_cluster_body=full_body,
+            chapter_nums=chapter_nums,
+            chapter_cards=chapter_cards,
+            beats_cards=[beats_by_ch[ch] for ch in chapter_nums],
+            rewrite_advice=rewrite_advice,
+        )
+        split_out = gen._call_api(  # type: ignore[attr-defined]
+            split_prompt,
+            None,
+            0,
+            max_tokens=max_tokens_split,
+        )
+        split_obj = _extract_json_obj_maybe(split_out)
+        split_chapters = []
+        if isinstance(split_obj, dict):
+            split_chapters = split_obj.get("chapters") or []
+        if not isinstance(split_chapters, list) or not split_chapters:
+            raise RuntimeError(f"切分 JSON 解析失败，cluster={cluster.get('cluster_id')}。")
+
+        chapter_texts: Dict[int, str] = {}
+        for item in split_chapters:
+            if not isinstance(item, dict):
+                continue
+            if item.get("chapter_num") is None or item.get("text") is None:
+                continue
+            try:
+                cn = int(item["chapter_num"])
+            except Exception:  # noqa: BLE001
+                continue
+            chapter_texts[cn] = str(item.get("text") or "").strip()
+
+        for ch in chapter_nums:
+            if ch not in chapter_texts or len(chapter_texts[ch]) < 1000:
+                # 软失败：把“切分过短”转化为重写建议，下一轮提升分章字数
+                too_short = [c for c in chapter_nums if c not in chapter_texts or len((chapter_texts.get(c) or "")) < 1400]
+                if too_short:
+                    short_msgs = [f"第{c}章分章文本过短（{len((chapter_texts.get(c) or ''))}字），需要≥1500字且不得只保留短开头/短结尾" for c in too_short]
+                    critic_result = {
+                        "payoff_completed": False,
+                        "violations": short_msgs,
+                        "rewrite_advice": [
+                            "分章切分后，每章正文必须≥1500字，不能只保留短开头/短结尾；",
+                            "请在切分阶段保留主体段落的信息密度，必要时在“beats 中每拍”补写到每拍≥160字；",
+                        ] + short_msgs[:3],
+                    }
+                    # 进入下一轮 attempt，并把建议注入到后续 prompt
+                    continue
+                else:
+                    raise RuntimeError(f"切分结果缺失或过短：第{ch}章")
+
+        # 写盘 + 记录到内存，便于 critic 使用
+        for ch in chapter_nums:
+            gen.save_chapter(ch, chapter_texts[ch])  # type: ignore[attr-defined]
+            gen.generated_chapters[ch] = chapter_texts[ch]  # type: ignore[attr-defined]
+
+        critic_result = _cluster_critic(cluster, chapter_texts)  # type: ignore[misc]
+        payoff_ok = bool(critic_result.get("payoff_completed", False))
+        violations = critic_result.get("violations", []) or []
+        print(f"📋 情节族完成审查：payoff_completed={payoff_ok}，violations={len(violations)} 条")
+        if payoff_ok or attempt >= max_cluster_attempts - 1:
+            if violations and not payoff_ok:
+                print("⚠️ 本情节族未通过审查（保留最大努力版本）。可人工检查：")
+                for v in violations[:8]:
+                    print(f"   - {v}")
+            return chapter_texts
+
+    return {}
+
+
 def generate_chapters_v2(
     master_ctx_cards_path: Optional[str] = None,
     prev_life_ctx_path: Optional[str] = None,
@@ -1165,6 +2199,22 @@ def generate_chapters_v2(
             f"   纳入的情节族范围：{spans_str}"
         )
 
+    # 在任何 Neo4j 导出/在线检索器/正文生成之前，先把“识别到的情节族”汇总打印出来
+    overlapping_sorted = sorted(overlapping, key=lambda x: int(x.get("_start", 0)))
+    print("\n📌 识别到的情节族信息（将按此范围生成）")
+    for c in overlapping_sorted:
+        try:
+            s = int(c.get("_start", c.get("chapter_span", [0, 0])[0]))
+            e = int(c.get("_end", c.get("chapter_span", [0, 0])[1]))
+        except Exception:  # noqa: BLE001
+            s, e = 0, 0
+        cid = c.get("cluster_id", "UNKNOWN")
+        name = c.get("name", "")
+        core = c.get("core_payoff", "") or c.get("core", "") or ""
+        opp = c.get("main_opponent", "") or ""
+        span_str = f"{s}-{e}" if s and e else str(c.get("chapter_span") or c.get("chapterRange") or c.get("chapters") or "")
+        print(f"- {cid}《{name}》 覆盖章节:{span_str}；主要对手:{opp or '（未指定）'}；核心爽点:{core or '（未提供）'}")
+
     # 自动导出 Neo4j 上下文（供调试/审阅；生成过程本身使用在线检索器逐章拉取背景）
     try:
         print("🧭 正在检索情节族上下文（Neo4j）：窗口 + lookback + auto-anchors …")
@@ -1217,17 +2267,42 @@ def generate_chapters_v2(
     os.makedirs(chapters_dir, exist_ok=True)
     gen.outputs_dir = Path(chapters_dir).parent
 
-    for ch in range(adjusted_start, adjusted_end + 1):
-        if ch not in cards:
+    # 新工作流：按“情节族/事件簇”生成整簇连续正文，最后再切分为章节
+    clusters_sorted = sorted(overlapping, key=lambda x: int(x.get("_start", 0)))
+    generated_chapters_global: set[int] = set()
+
+    out_ch_dir = Path(gen.outputs_dir) / "chapters"
+    # 生成入口跳过逻辑：避免把之前生成的“短章”当成合格版本复用。
+    min_chars_for_accept = 1500
+    for cluster in clusters_sorted:
+        span = cluster.get("chapter_span") or cluster.get("chapterRange") or cluster.get("chapters") or []
+        try:
+            s, e = int(span[0]), int(span[1])
+        except Exception:  # noqa: BLE001
             continue
-        print(f"\n====== 生成第 {ch} 章（V2） ======")
-        gen.debug_print_chapter_context(ch)
-        gen.generate_one_chapter_with_beats(  # type: ignore[attr-defined]
-            chapter_num=ch,
-            num_versions=1,
-            max_iterations=2,
-            min_emotion_intensity=0.5,
-        )
+        chapter_nums = list(range(s, e + 1))
+        need_generate = False
+        for ch in chapter_nums:
+            if ch not in cards:
+                continue
+            if ch in gen.generated_chapters and len((gen.generated_chapters.get(ch) or "").strip()) >= min_chars_for_accept:
+                continue
+            p = out_ch_dir / f"chapter_{ch:03d}.txt"
+            if p.exists() and p.stat().st_size >= 200:
+                existing = p.read_text(encoding="utf-8").strip()
+                if len(existing) >= min_chars_for_accept:
+                    gen.generated_chapters[ch] = existing
+                    continue
+            need_generate = True
+            break
+        if not need_generate and all(ch in gen.generated_chapters for ch in chapter_nums if ch in cards):
+            continue
+
+        print(f"\n====== 生成情节族 {cluster.get('cluster_id','UNKNOWN')}《{cluster.get('name','')}》：第{s}-{e}章 ======")
+        new_texts = _generate_cluster_continuous_and_split_v2(gen, cluster, cards)
+        for ch in chapter_nums:
+            if ch in new_texts:
+                generated_chapters_global.add(ch)
 
 
 def generate_chapters_by_clusters_v2(
@@ -1237,13 +2312,19 @@ def generate_chapters_by_clusters_v2(
     cluster_ids: Optional[List[str]] = None,
 ) -> None:
     """
-    按「情节组/事件簇」为单位生成正文：一次性生成某个簇覆盖的全部章节。
+    DEPRECATED（逐章生成流程）
 
-    - cluster_ids 为空时，按 event_clusters_v2.json 中的顺序依次生成所有簇；
-    - 若指定 cluster_ids，则只生成这些簇对应的章节范围；
-    - 每个簇内部按章节顺序逐章生成：先把这一簇整体故事拆分到对应章节，再生成每章节拍卡和正文。
-    - 本函数不再依赖 master_ctx_cards_v2.json，而是直接基于 event_clusters_v2.json 动态构造章节卡。
+    该实现属于“旧工作流”：在簇内部逐章生成，并在簇完成后做 critic 审查/必要重写。
+    当前默认入口已切换为 `generate_chapters_v2()`（整簇连续正文 -> 再切分微调）。
+
+    保留此函数仅用于历史对比/排查；不应再被当作主生成入口使用。
     """
+    # 防止误用旧工作流：如确有需要请改用 generate_chapters_v2() 或手动回滚到旧实现。
+    raise RuntimeError(
+        "generate_chapters_by_clusters_v2() 已弃用：请使用 generate_chapters_v2()（新工作流）。"
+    )
+
+    # ---- 下面是旧实现代码（已弃用，默认不可达）----
     # 保留参数以兼容旧命令，但在情节组模式下不再使用 master_ctx_cards_v2.json
     if prev_life_ctx_path is None:
         prev_life_ctx_path = str(DEFAULT_PREV_LIFE_V2)

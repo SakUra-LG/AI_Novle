@@ -10,9 +10,23 @@ import sys
 import re
 import json
 import dashscope
+import time
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, List, Optional, Tuple
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeoutError
+
+# Windows/PowerShell 可能默认使用 GBK 编码，遇到打印 emoji 时会触发 UnicodeEncodeError。
+# 这里用 buffer 重新包装成 UTF-8（若环境不支持则静默失败），避免脚本因日志输出而中断。
+try:
+    import io
+
+    if hasattr(sys.stdout, "buffer"):
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+    if hasattr(sys.stderr, "buffer"):
+        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8")
+except Exception:  # noqa: BLE001
+    pass
 
 # 导入项目模块
 from smart_sample_search import search_and_adapt_samples, search_rebirth_samples_for_chapter
@@ -776,31 +790,99 @@ class RebirthRevengeGenerator:
         
         return all_versions
     
-    def _call_api(self, prompt: str, emotion_feedback: Optional[Dict] = None, 
-                  iteration: int = 0) -> str:
+    def _call_api(
+        self,
+        prompt: str,
+        emotion_feedback: Optional[Dict] = None,
+        iteration: int = 0,
+        max_tokens: Optional[int] = None,
+    ) -> str:
         """调用通义千问API"""
         dashscope.api_key = API_Key_QW
         
         system_message = {"role": "system", "content": prompt}
         user_message = {"role": "user", "content": "请开始创作"}
-        
-        try:
-            response = dashscope.Generation.call(
-                model=dashscope.Generation.Models.qwen_turbo,
-                messages=[system_message, user_message],
-                temperature=0.85,
-                top_p=0.8,
-                repetition_penalty=1.1,
-                result_format='message'
-            )
-            
-            if 'output' in response and 'choices' in response['output']:
-                content = response['output']['choices'][0]['message']['content']
-                return self._clean_markdown(content)
+
+        # 网络/平台偶发卡住时，为了避免“无输出无限等待”，做两层保护：
+        # 1) 尝试传入 dashscope 的超时参数（若 SDK 支持）
+        # 2) 再用线程硬超时兜底（保证本次调用不会超过 hard_timeout_s）
+        timeout_s = float(os.getenv("DASHSCOPE_TIMEOUT_S", "20"))
+        hard_timeout_s = float(os.getenv("DASHSCOPE_HARD_TIMEOUT_S", "60"))
+        max_retries = int(os.getenv("DASHSCOPE_MAX_RETRIES", "3"))
+        backoff_s = float(os.getenv("DASHSCOPE_RETRY_BACKOFF_S", "2"))
+
+        call_kwargs = {
+            "model": dashscope.Generation.Models.qwen_turbo,
+            "messages": [system_message, user_message],
+            "temperature": 0.85,
+            "top_p": 0.8,
+            "repetition_penalty": 1.1,
+            "result_format": "message",
+        }
+        if max_tokens is not None:
+            call_kwargs["max_tokens"] = max_tokens
+
+        log_start_enabled = str(os.getenv("DASHSCOPE_LOG_START", "0")).lower() not in ("0", "false", "no")
+        for attempt in range(max_retries):
+            t0 = time.time()
+            if log_start_enabled:
+                print(
+                    f"[API] dashscope call start attempt={attempt + 1}/{max_retries} "
+                    f"iteration={iteration} max_tokens={max_tokens} timeout_s={timeout_s}s",
+                    flush=True,
+                )
+
+            def _do_call() -> dict:
+                # 有些 dashscope 版本可能不接受 timeout 参数，因此先尝试，失败则回退到不传 timeout。
+                try:
+                    return dashscope.Generation.call(**call_kwargs, timeout=timeout_s)
+                except TypeError:
+                    return dashscope.Generation.call(**call_kwargs)
+
+            try:
+                # 用线程硬超时兜底：即便 SDK 不支持 timeout，也不会无限卡死在 result 返回上。
+                with ThreadPoolExecutor(max_workers=1) as ex:
+                    future = ex.submit(_do_call)
+                    response = future.result(timeout=hard_timeout_s)
+
+                elapsed = time.time() - t0
+                if "output" in response and "choices" in response["output"]:
+                    content = response["output"]["choices"][0]["message"]["content"]
+                    print(f"[API] dashscope call success elapsed={elapsed:.1f}s", flush=True)
+                    return self._clean_markdown(content)
+
+                print(
+                    f"[API] dashscope call invalid_format elapsed={elapsed:.1f}s response_keys="
+                    f"{list(response.keys()) if isinstance(response, dict) else type(response).__name__}",
+                    flush=True,
+                )
+                # 非预期返回也视为一次失败，触发重试。
+                err = f"通义千问 API 返回了无效格式: {str(response)[:500]}"
+                last_err = err  # noqa: F841
+
+            except FuturesTimeoutError:
+                elapsed = time.time() - t0
+                print(
+                    f"[API] dashscope call timeout elapsed={elapsed:.1f}s hard_timeout_s={hard_timeout_s}s",
+                    flush=True,
+                )
+                err = f"通义千问 API 超时: hard_timeout_s={hard_timeout_s}s"
+            except Exception as e:
+                elapsed = time.time() - t0
+                print(
+                    f"[API] dashscope call exception elapsed={elapsed:.1f}s "
+                    f"type={type(e).__name__} err={str(e)}",
+                    flush=True,
+                )
+                err = f"通义千问 API 出错: {str(e)[:500]}"
+
+            # 还没成功就重试（最后一次直接返回 err）
+            if attempt < max_retries - 1:
+                sleep_s = backoff_s * (2**attempt)
+                print(f"[API] retry after {sleep_s:.1f}s...", flush=True)
+                time.sleep(sleep_s)
             else:
-                return f"通义千问 API 返回了无效格式: {str(response)}"
-        except Exception as e:
-            return f"调用通义千问 API 出错: {str(e)}"
+                return err
     
     def _clean_markdown(self, text: str) -> str:
         """去除 Markdown 格式符号"""
