@@ -5,9 +5,9 @@ import subprocess
 from pathlib import Path
 
 
-def run_step(step_name: str, args: list[str]) -> None:
+def run_step(step_name: str, args: list[str], cwd: str | None = None) -> None:
     print(f"[generate_v2_pipeline] Running step: {step_name} -> {' '.join(args)}")
-    result = subprocess.run(args, capture_output=False, text=True)
+    result = subprocess.run(args, capture_output=False, text=True, cwd=cwd)
     if result.returncode != 0:
         raise SystemExit(f"Step failed: {step_name} (exit {result.returncode})")
 
@@ -24,6 +24,16 @@ def main() -> None:
     parser.add_argument("--skip-clusters", action="store_true", help="Skip event clusters step")
     parser.add_argument("--skip-outline", action="store_true", help="Skip outline step")
     parser.add_argument("--skip-chapters", action="store_true", help="Skip chapter generation step")
+    parser.add_argument(
+        "--skip-neo4j-build",
+        action="store_true",
+        help="Skip building Neo4j KG from generated chapters (writes to outputs/chapters).",
+    )
+    parser.add_argument(
+        "--neo4j-reset",
+        action="store_true",
+        help="Danger: wipe all Neo4j nodes/relationships before rebuilding KG (via bootstrap_neo4j --reset).",
+    )
     args = parser.parse_args()
 
     # Resolve repo root
@@ -46,6 +56,7 @@ def main() -> None:
                 "--generation-config",
                 generation_cfg,
             ],
+            cwd=str(repo_root),
         )
 
     # 2) Outline from clusters (v2)
@@ -60,6 +71,7 @@ def main() -> None:
                 "--generation-config",
                 generation_cfg,
             ],
+            cwd=str(repo_root),
         )
 
     # 3) Chapter content (v2)
@@ -74,7 +86,28 @@ def main() -> None:
         ]
         if args.chapters:
             cmd += ["--chapters", args.chapters]
-        run_step("chapter_content_v2", cmd)
+        run_step("chapter_content_v2", cmd, cwd=str(repo_root))
+
+        # 4) Neo4j KG build (from generated chapter texts)
+        # build_from_chapters 会扫描 outputs/chapters/ 下的 chapter_*.txt 并写入图数据库。
+        if not args.skip_neo4j_build:
+            bootstrap_cmd = [
+                args.python,
+                "-m",
+                "bert_excitation_train.scripts.neo4j_kg.bootstrap_neo4j",
+            ]
+            if args.neo4j_reset:
+                bootstrap_cmd.append("--reset")
+            run_step("neo4j_bootstrap_kg", bootstrap_cmd, cwd=str(repo_root))
+
+            build_cmd = [
+                args.python,
+                "-m",
+                "bert_excitation_train.scripts.neo4j_kg.build_from_chapters",
+                "--min-name-freq",
+                "5",
+            ]
+            run_step("neo4j_build_from_chapters", build_cmd, cwd=str(repo_root))
 
     print("[generate_v2_pipeline] Done.")
 

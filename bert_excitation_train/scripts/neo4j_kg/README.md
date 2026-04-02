@@ -16,6 +16,7 @@
 
 - **构建图谱（build_from_chapters）**
   - 自动扫描 `outputs/chapters/` 下的 `chapter_*.txt` 文件。
+  - 支持只构建指定章节（例如你额外写了 12-14 章正文并落盘到 `outputs/chapters/chapter_012.txt` 等），通过 `--chapters/--start/--end` 实现。
   - 用简单启发式从文本中抽取候选中文人名（连续 2~3 个 CJK 字且频率达到阈值）。
   - 写入节点与关系：
     - 节点：`(:Character {id, label})`，`(:Event {id, type='Chapter', label, chapter})`
@@ -26,6 +27,10 @@
     - 生成 `(:Character)-[:RELATION_CHANGE_PROPOSAL]->(:Character)`（假设层，含 `type/new_status/chapter/evidence/confidence/votes`）。
     - 置信度达阈值且通过硬规则校验后，自动晋升为 `RELATES_TO`（确认层）。
   - 支持从 `relationships.yaml` 读入手工维护的核心关系并 upsert 为 `RELATES_TO`。
+
+- **回溯删除（delete_chapters_from_graph）**
+  - 从 Neo4j 删除指定章节对应的 `Event`、`CharacterState`、关系提案等，并裁剪 `INTERACTED_WITH` 的 `chapters` 字段。
+  - 可选：同步删除 `outputs/chapters/chapter_XXX.txt`（需要显式确认：`--yes`）。
 
 - **导出上下文（export_for_v2）**
   - 依据给定章节集合导出子图，格式包含：`entities`、`relationships`、`foreshadowing`、`name_to_id`，便于后续生成流程使用。
@@ -98,6 +103,48 @@ pip install neo4j
 
 ---
 
+## 启动前连通性测试（建议每次运行前做）
+
+目的：快速确认 Neo4j 是否能连上、认证是否通过、以及最小 Cypher 是否可执行。该测试只读，不会修改数据库。
+
+### 1）先测网络端口（PowerShell）
+
+把 `127.0.0.1:7687` 换成你的 `NEO4J_URI` 里对应的主机/端口即可：
+
+```powershell
+Test-NetConnection -ComputerName "127.0.0.1" -Port 7687
+```
+
+如果 `TcpTestSucceeded : True` 才算端口可达。
+
+### 2）再测应用层连通性（Python 最小查询）
+
+在项目根目录 `AI_Novle` 下执行模块命令（必须先设置环境变量 `NEO4J_URI/NEO4J_USER/NEO4J_PASSWORD`）：
+
+```powershell
+cd "D:\Study\College\Scientific research\张颖——AI小说自动生成\张颖——AI小说自动生成\bert_excitation_train\AI_Novle"
+
+$env:NEO4J_URI      = "bolt://localhost:7687"
+$env:NEO4J_USER     = "neo4j"
+$env:NEO4J_PASSWORD = "12345678"
+
+python -m bert_excitation_train.scripts.neo4j_kg.test_connection
+```
+
+成功示例输出（可能会有不同耗时）：
+
+```text
+NEO4J_OK: 1 (query_ms=xx)
+```
+
+如需重试（例如偶发启动中），可用：
+
+```powershell
+python -m bert_excitation_train.scripts.neo4j_kg.test_connection --retries 5 --retry-wait-ms 2000
+```
+
+---
+
 ## 快速开始：初始化与构建（Windows PowerShell）
 
 > 以下命令可直接在 PowerShell 中复制执行，完成一次性初始化（创建约束/索引）并从章节文本构建图谱。
@@ -165,6 +212,14 @@ python -m bert_excitation_train.scripts.neo4j_kg.build_from_chapters `
   --min-promote-confidence 0.8
 
 # 3) 导出指定章节的上下文
+# 3) 仅把指定章节正文写入 Neo4j（增量构建）
+python -m bert_excitation_train.scripts.neo4j_kg.build_from_chapters --chapters "12-14" --min-name-freq 5
+
+# 4) 回溯：从 Neo4j 删除指定章节，并同步删除对应 chapter 文本文件（危险）
+python -m bert_excitation_train.scripts.neo4j_kg.delete_chapters_from_graph --chapters "12-14" --yes
+# 如需预览：上面命令改为 --dry-run
+
+# 5) 导出指定章节的上下文
 python -m bert_excitation_train.scripts.neo4j_kg.export_for_v2 --chapters "11,12,13" --lookback 2 --auto-anchors --max-auto-anchors 10 --out "bert_excitation_train\outputs\export_v2.json"
 ```
 

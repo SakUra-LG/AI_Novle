@@ -32,7 +32,7 @@
 示例：
 
 ```powershell
-python scripts/generate_chapter_content_v2.py --start 12 --end 14
+python bert_excitation_train/scripts/generate_chapter_content_v2.py --start 12 --end 14
 ```
 
 完整参数：
@@ -211,6 +211,30 @@ V2 会尝试挂载 `neo4j_kg.online_retriever.retrieve_context_for_chapter`：
   - `allowed_roles`（取章节卡中的 allowed_roles，兜底包含 `沈清欢`）
   - `main_opponent`
 - 注意：Neo4j 内容被要求“仅作背景，禁止替换证据链与决策”（即不应当把检索到的信息当成新的剧情转折点）。
+
+---
+
+## 10.1 （可选）从已生成章节自动构建 Neo4j 知识图谱
+
+`generate_chapter_content_v2.py` 负责生成正文并写盘；默认会在生成结束后自动调用 `neo4j_kg.bootstrap_neo4j`（不清库）与 `neo4j_kg.build_from_chapters`，扫描 `outputs/chapters/chapter_*.txt` 同步/增量更新 KG。
+
+三条常用指令（以生成章节 12-14 为例）：
+
+1. 默认：生成正文并同步 Neo4j KG
+```powershell
+python bert_excitation_train/scripts/generate_chapter_content_v2.py --start 12 --end 14
+```
+
+2. 不同步 Neo4j（只生成正文）
+```powershell
+python bert_excitation_train/scripts/generate_chapter_content_v2.py --start 12 --end 14 --skip-neo4j-sync
+```
+
+3. 如需先清空 Neo4j（危险：会删除所有节点与关系）
+```powershell
+python -m bert_excitation_train.scripts.neo4j_kg.bootstrap_neo4j --reset
+python -m bert_excitation_train.scripts.neo4j_kg.build_from_chapters --min-name-freq 5
+```
 
 ---
 

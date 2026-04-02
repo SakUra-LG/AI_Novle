@@ -12,6 +12,8 @@
 
 import os
 import json
+import sys
+import subprocess
 from pathlib import Path
 from typing import Dict, Any, Optional, List
 
@@ -30,6 +32,61 @@ DEFAULT_MASTER_CARDS_V2 = OUTPUT_DIR / "master_ctx_cards_v2.json"
 DEFAULT_PREV_LIFE_V2 = OUTPUT_DIR / "prev_life_ctx_v2.txt"
 DEFAULT_EVENT_CLUSTERS_V2 = OUTPUT_DIR / "event_clusters_v2.json"
 DEFAULT_EXPORT_V2 = OUTPUT_DIR / "export_v2.json"
+
+
+def _sync_neo4j_from_outputs(
+    *,
+    min_name_freq: int = 5,
+    reset_db: bool = False,
+    auto_extract_relations: bool = False,
+) -> None:
+    """
+    生成完章文本后，同步/增量构建最小 Neo4j KG。
+
+    - 会扫描 `outputs/chapters/chapter_*.txt`
+    - 默认不重置数据库（安全）
+    """
+    required_env = ["NEO4J_URI", "NEO4J_USER", "NEO4J_PASSWORD"]
+    missing = [k for k in required_env if not os.environ.get(k)]
+    if missing:
+        print(f"🧩 [Neo4j同步] 跳过：缺少环境变量：{', '.join(missing)}")
+        return
+
+    chapters_dir = OUTPUT_DIR / "chapters"
+    if not chapters_dir.exists():
+        print(f"🧩 [Neo4j同步] 跳过：未找到章节目录 {chapters_dir}")
+        return
+
+    # 通过 -m 运行，避免“直接执行脚本导致相对导入失败”
+    repo_root = PROJECT_ROOT.parent
+    py = sys.executable
+
+    bootstrap_cmd = [
+        py,
+        "-m",
+        "bert_excitation_train.scripts.neo4j_kg.bootstrap_neo4j",
+    ]
+    if reset_db:
+        bootstrap_cmd.append("--reset")
+
+    build_cmd = [
+        py,
+        "-m",
+        "bert_excitation_train.scripts.neo4j_kg.build_from_chapters",
+        "--min-name-freq",
+        str(min_name_freq),
+    ]
+    if auto_extract_relations:
+        build_cmd.append("--auto-extract-relations")
+
+    try:
+        subprocess.run(bootstrap_cmd, cwd=str(repo_root), check=True)
+        subprocess.run(build_cmd, cwd=str(repo_root), check=True)
+        print("🧩 [Neo4j同步] 已完成：从 outputs/chapters 构建/更新 KG")
+    except subprocess.CalledProcessError as e:
+        print(f"⚠️ [Neo4j同步] 失败：{e}")
+    except Exception as e:  # noqa: BLE001
+        print(f"⚠️ [Neo4j同步] 异常：{e}")
 
 # 前几章的硬编码章节卡（不依赖事件簇），用来严格锁定第 1/2 章的写法
 SPECIAL_CARDS: Dict[int, Dict[str, Any]] = {
@@ -2133,6 +2190,10 @@ def generate_chapters_v2(
     chapters_dir: Optional[str] = None,
     start_chapter: int = 1,
     end_chapter: int = 100,
+    sync_neo4j: bool = True,
+    neo4j_min_name_freq: int = 5,
+    neo4j_reset_db: bool = False,
+    neo4j_auto_extract_relations: bool = False,
 ) -> None:
     """
     便捷入口：按章节范围生成正文。不再依赖 master_ctx_cards_v2.json，
@@ -2303,6 +2364,13 @@ def generate_chapters_v2(
         for ch in chapter_nums:
             if ch in new_texts:
                 generated_chapters_global.add(ch)
+
+    if sync_neo4j:
+        _sync_neo4j_from_outputs(
+            min_name_freq=neo4j_min_name_freq,
+            reset_db=neo4j_reset_db,
+            auto_extract_relations=neo4j_auto_extract_relations,
+        )
 
 
 def generate_chapters_by_clusters_v2(
@@ -2484,6 +2552,27 @@ def main() -> None:
         default=100,
         help="结束章节号，默认 100",
     )
+    parser.add_argument(
+        "--skip-neo4j-sync",
+        action="store_true",
+        help="跳过：生成正文后不自动同步到 Neo4j 知识图谱",
+    )
+    parser.add_argument(
+        "--neo4j-min-name-freq",
+        type=int,
+        default=5,
+        help="Neo4j 构建时的候选人名最小频次阈值（min-name-freq）",
+    )
+    parser.add_argument(
+        "--neo4j-auto-extract-relations",
+        action="store_true",
+        help="启用 Neo4j 语义关系自动抽取（可能更慢）",
+    )
+    parser.add_argument(
+        "--neo4j-reset",
+        action="store_true",
+        help="危险操作：同步前清空 Neo4j 数据库（仅在你确认需要时启用）",
+    )
     args = parser.parse_args()
 
     generate_chapters_v2(
@@ -2491,6 +2580,10 @@ def main() -> None:
         chapters_dir=args.chapters_dir,
         start_chapter=args.start,
         end_chapter=args.end,
+        sync_neo4j=not args.skip_neo4j_sync,
+        neo4j_min_name_freq=args.neo4j_min_name_freq,
+        neo4j_reset_db=args.neo4j_reset,
+        neo4j_auto_extract_relations=args.neo4j_auto_extract_relations,
     )
 
 

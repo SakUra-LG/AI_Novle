@@ -2,7 +2,7 @@ import argparse
 import os
 import re
 from collections import Counter, defaultdict
-from typing import Dict, List, Tuple, Any, Optional
+from typing import Dict, List, Tuple, Any, Optional, Set
 from neo4j import Driver
 from .common import get_neo4j_driver, normalize_character_id
 from .llm_extractor import SimpleHeuristicExtractor, RelationExtractionProvider
@@ -20,6 +20,37 @@ CHAPTERS_DIR = os.path.join(
     "outputs",
     "chapters",
 )
+
+
+def parse_chapter_spec(spec: str) -> List[int]:
+    """
+    Parse chapter spec.
+    Supported formats:
+      - "12" / "12,13,14"
+      - "12-14" (inclusive)
+      - "12-14,16,18-20"
+    """
+    if not spec:
+        return []
+
+    out: Set[int] = set()
+    for part in spec.split(","):
+        p = part.strip()
+        if not p:
+            continue
+        if "-" in p:
+            a_s, b_s = p.split("-", 1)
+            if a_s.strip().isdigit() and b_s.strip().isdigit():
+                a = int(a_s.strip())
+                b = int(b_s.strip())
+                step = 1 if a <= b else -1
+                for ch in range(a, b + step, step):
+                    out.add(ch)
+        else:
+            if p.isdigit():
+                out.add(int(p))
+
+    return sorted(out)
 
 
 def list_chapter_files() -> List[str]:
@@ -119,11 +150,18 @@ def build_kg(
     auto_extract_relations: bool = False,
     relation_provider: Optional[RelationExtractionProvider] = None,
     min_promote_confidence: float = 0.75,
+    target_chapters: Optional[Set[int]] = None,
 ) -> None:
     files = list_chapter_files()
     if not files:
         print("No chapter files found at:", CHAPTERS_DIR)
         return
+
+    if target_chapters is not None:
+        files = [p for p in files if extract_chapter_number(p) in target_chapters]
+        if not files:
+            print(f"No chapter files matched target chapters: {sorted(list(target_chapters))}")
+            return
 
     all_texts = [read_file(p) for p in files]
 
@@ -515,9 +553,22 @@ def main():
     parser.add_argument("--characters-config", type=str, default=os.path.join(os.path.dirname(__file__), "characters.yaml"), help="Path to YAML/JSON characters config with aliases and roles.")
     parser.add_argument("--relationships-config", type=str, default=os.path.join(os.path.dirname(__file__), "relationships.yaml"), help="Path to YAML/JSON relationships config for RELATES_TO edges.")
     parser.add_argument("--candidates-out", type=str, default=os.path.join(os.path.dirname(os.path.dirname(__file__)), "outputs", "candidate_characters.json"), help="Path to write candidate characters review JSON.")
+    parser.add_argument("--chapters", type=str, default="", help="Only build specified chapters, e.g. '12-14' or '12,13,14'.")
+    parser.add_argument("--start", type=int, default=None, help="Start chapter (inclusive). Used with --end or alone.")
+    parser.add_argument("--end", type=int, default=None, help="End chapter (inclusive). Used with --start or alone.")
     parser.add_argument("--auto-extract-relations", action="store_true", help="Enable semantic relation extraction on present character pairs per chapter.")
     parser.add_argument("--min-promote-confidence", type=float, default=0.8, help="Minimum confidence to promote a relation proposal to confirmed RELATES_TO.")
     args = parser.parse_args()
+
+    target_chapter_set: Optional[Set[int]] = None
+    if args.chapters:
+        parsed = parse_chapter_spec(args.chapters)
+        target_chapter_set = set(parsed) if parsed else None
+    elif args.start is not None or args.end is not None:
+        start = int(args.start) if args.start is not None else int(args.end)
+        end = int(args.end) if args.end is not None else int(args.start)
+        step = 1 if start <= end else -1
+        target_chapter_set = set(range(start, end + step, step))
 
     driver = get_neo4j_driver()
     try:
@@ -530,6 +581,7 @@ def main():
             auto_extract_relations=bool(args.auto_extract_relations),
             relation_provider=None,
             min_promote_confidence=float(args.min_promote_confidence),
+            target_chapters=target_chapter_set,
         )
     finally:
         driver.close()
