@@ -216,7 +216,7 @@ python -m bert_excitation_train.scripts.neo4j_kg.build_from_chapters `
 python -m bert_excitation_train.scripts.neo4j_kg.build_from_chapters --chapters "12-14" --min-name-freq 5
 
 # 4) 回溯：从 Neo4j 删除指定章节，并同步删除对应 chapter 文本文件（危险）
-python -m bert_excitation_train.scripts.neo4j_kg.delete_chapters_from_graph --chapters "12-14" --yes
+python -m bert_excitation_train.scripts.neo4j_kg.delete_chapters_from_graph --chapters "15-18" --yes
 # 如需预览：上面命令改为 --dry-run
 
 # 5) 导出指定章节的上下文

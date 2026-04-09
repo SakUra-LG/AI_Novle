@@ -33,6 +33,15 @@ DEFAULT_FORBIDDEN_NEW_ROLES = [
     "更大风暴", "真正的敌人", "神秘男人", "陌生女性盟友", "未规划的关键证人",
 ]
 
+# 与 generate_chapter_content_v2._build_cluster_plan 对齐：禁止调查文式天降线索
+REBIRTH_FORBIDDEN_DEUS_EX = [
+    "匿名邮件/匿名爆料作为关键转折",
+    "加密邮箱突然跳出决定性截图或附件",
+    "老员工/陌生人未经铺垫突然递来唯一关键材料",
+    "靠社交媒体发帖或声明完成主线翻盘",
+    "隐藏文件夹/机密会议纪要突然揭示全部真相",
+]
+
 # 第1/2章硬锁定：不让正文阶段“自由发挥”乱插调查/重生等
 SPECIAL_CARDS: Dict[int, Dict[str, Any]] = {
     1: {
@@ -156,14 +165,20 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
     evidence_types = _infer_evidence_types_from_info_gap(info_gap)
     required_evidence_hint = "、".join(evidence_types[:2]) if evidence_types else "本簇信息差中提到的具体证据或内幕"
 
+    deus_forbid = REBIRTH_FORBIDDEN_DEUS_EX[:2]
     chapters_plan: Dict[str, Dict[str, Any]] = {}
     if length == 1:
         chapters_plan[str(start_ch)] = {
-            "chapter_goal": f"在本章内完成背景铺垫、上一世回忆与今世反击，兑现本簇爽点：{core_payoff}",
-            "chapter_must_include": [f"本簇主对手（{main_opp}）" if main_opp else "本簇主对手", "与信息差相关的证据或线索", "反杀结果或处罚"],
-            "chapter_must_not_include": DEFAULT_FORBIDDEN_NEW_ROLES + ["新幕后黑手", "只埋钩子不兑现"],
+            "chapter_goal": f"单章内完成：完整上一世受害段落 + 今生凭记忆预判旧招并完成反击，兑现本簇爽点：{core_payoff}",
+            "chapter_must_include": [
+                "完整一段上一世受害（具体场景、对话、屈辱与无助，不得一句带过）",
+                "今生明确写出认出旧局/记得对方会怎么出招并提前布子",
+                "反击时证据/材料仅用于落锤坐实她已知的事",
+                "反杀结果或处罚",
+            ],
+            "chapter_must_not_include": DEFAULT_FORBIDDEN_NEW_ROLES + ["新幕后黑手", "只埋钩子不兑现"] + deus_forbid,
             "chapter_ending": f"本簇结束，结果需落到：{outcome or '对手付出代价'}"[:120],
-            "must_resolve_this_chapter": ["锁定主对手", "显性使用信息差证据", "完成反杀并写出结果"],
+            "must_resolve_this_chapter": ["上一世受害写厚", "记忆先于证据的反击", "完成反杀并写出结果"],
         }
     elif length == 2:
         ch1, ch2 = start_ch, end_ch
@@ -184,71 +199,87 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
     else:
         ch1, ch_last = start_ch, end_ch
         chapters_plan[str(ch1)] = {
-            "chapter_goal": f"今生重遇本簇主对手（{main_opp}），触发相似场景，埋下与信息差相关的线索",
+            "chapter_goal": (
+                f"旧局重现：沈清欢在与本簇主对手（{main_opp}）同场时认出上一世同一套局，并立刻提前布子；"
+                f"禁止写成调查取证、到处找线索。"
+            ),
             "chapter_must_include": [
-                "医院/职场等本簇场景",
-                f"{main_opp}施压或试探" if main_opp else "本簇主对手施压或试探",
-                f"沈清欢确认可追查线索（如{required_evidence_hint}）",
+                "明确写出认出旧局/记得对方会怎么出招",
+                "今生提前布子的具体安排",
+                f"信息差（{required_evidence_hint}）作为她已知去何处取何物的依据，而非本章才「发现线索」",
             ],
-            "chapter_must_not_include": ["新幕后黑手", "追车/系统提示/无关神秘线", "大段展开上一世完整受害经过"] + DEFAULT_FORBIDDEN_NEW_ROLES,
-            "chapter_ending": "拿到进入关键场所的机会或发现证据位置，为下一章回忆与取证铺垫",
-            "must_resolve_this_chapter": ["锁定主对手", "触发回忆线索", "发现可追查的具体线索", "建立今生反击起点"],
+            "chapter_must_not_include": [
+                "新幕后黑手",
+                "追车/系统提示/无关神秘线",
+                "大段展开上一世完整受害经过",
+                "把本章写成调查取证文",
+            ]
+            + REBIRTH_FORBIDDEN_DEUS_EX
+            + DEFAULT_FORBIDDEN_NEW_ROLES,
+            "chapter_ending": "旧局已对上号，对方尚未察觉她已提前布子；为下一章完整展开上一世受害蓄力",
+            "must_resolve_this_chapter": ["锁定主对手", "认出旧局并提前布子", "禁止调查文推进"],
         }
         chapters_plan[str(ch1 + 1)] = {
-            "chapter_goal": "本簇唯一一章可详细展开上一世延误/陷害回忆，并与今生调查对照；今生拿到硬证据",
-            "chapter_must_include": ["上一世具体抢救失败或陷害过程", f"{main_opp}的主观恶意" if main_opp else "主对手的主观恶意", "值班室笔记/病历篡改等信息差内容", "今生取得证据"],
-            "chapter_must_not_include": ["无关支线角色抢戏"] + DEFAULT_FORBIDDEN_NEW_ROLES,
-            "chapter_ending": "沈清欢今生已拿到可用的硬证据，为最后一章反杀做准备",
-            "must_resolve_this_chapter": ["展开上一世悲剧", "拿到证据"],
+            "chapter_goal": "本簇核心：完整展开上一世受害经过，并点明今生为何能预判对方会重复旧招",
+            "chapter_must_include": [
+                "上一世具体受害过程（至少一段写足，不得一句带过）",
+                f"{main_opp}的主观恶意与手段" if main_opp else "主对手的主观恶意与手段",
+                f"与{required_evidence_hint}对应的关键细节（上一世如何被其害惨）",
+                "点明今生反击主动力是记忆与预判，不是偶然发现新材料",
+            ],
+            "chapter_must_not_include": ["无关支线角色抢戏"] + REBIRTH_FORBIDDEN_DEUS_EX + DEFAULT_FORBIDDEN_NEW_ROLES,
+            "chapter_ending": "读者清楚她为何恨、为何这一世能提前卡位",
+            "must_resolve_this_chapter": ["完整上一世受害段落", "记忆与预判动机立住"],
         }
         chapters_plan[str(ch_last)] = {
-            "chapter_goal": f"公开举报与反杀完成，兑现本簇爽点：{core_payoff}，结果：{outcome or '职业毁灭/失去信任'}",
+            "chapter_goal": f"关键时刻反卡与结果落地：兑现本簇爽点 {core_payoff}，结局 {outcome or '职业毁灭/失去信任'}",
             "chapter_must_include": [
-                "当众揭穿/举报",
-                f"证据链闭环（显性使用{required_evidence_hint}，把她知道的内幕对应到可呈交的具体证据）",
-                "处罚/吊销/全院震动或舆论反噬",
+                "对方按旧套路/旧剧本出手或施压",
+                "关键时刻反卡：当场揭穿/亮出落锤材料（材料只坐实她早已知道的事）",
+                f"显性使用{required_evidence_hint}完成闭环",
+                "处罚/吊销/震动或舆论反噬等具体后果",
             ],
             "chapter_must_not_include": ["只埋钩子不兑现", "真正风暴才刚开始", "新大Boss"] + DEFAULT_FORBIDDEN_NEW_ROLES,
             "chapter_ending": "本簇结束，主对手在本簇内失去信任或受到处罚",
-            "must_resolve_this_chapter": ["公开反杀", "后果落地"],
+            "must_resolve_this_chapter": ["照旧出招→反卡落锤", "后果落地"],
         }
-        for idx, ch in enumerate(range(ch1 + 2, ch_last), start=1):
-            bridge_goal = "承上启下：压迫升级或取证推进，不引入新主线"
-            bridge_must = [
-                main_opp or "主对手",
-                "与信息差相关的调查或对峙",
-                f"围绕{required_evidence_hint}推进取证/对峙（不得换证据来源）",
-            ]
-            if idx == 1:
-                bridge_goal = "将已拿到的首个证据进行初步核验，确认可用于反击的突破口"
+        mid_idx = 0
+        for ch in range(ch1 + 2, ch_last):
+            mid_idx += 1
+            if (end_ch - start_ch + 1) == 4:
+                bridge_goal = (
+                    "诱敌与压实：对方按旧招继续施压；沈清欢只核实或取出她上一世就知道存在的材料，"
+                    "不把整章写成搜集新线索。"
+                )
                 bridge_must = [
                     main_opp or "主对手",
-                    "对上一章证据做核验/复盘",
-                    "锁定下一步可公开使用的证据链环节",
-                    f"围绕{required_evidence_hint}推进取证/对峙（证据来源不换）",
+                    "对方照旧出招与她早有准备的对位",
+                    f"与{required_evidence_hint}相关动作仅为核实/取出/封死退路，而非首次发现",
                 ]
-            elif idx == 2:
-                bridge_goal = "把线索串成可公开攻击的证据链，制造主对手心理与处境压力"
+            else:
+                if mid_idx == 1:
+                    bridge_goal = "压迫升级：对方继续按旧剧本出招；她利用已布好的子逐步收紧"
+                elif mid_idx == 2:
+                    bridge_goal = "将记忆层面的预判落实为可落锤的动作链，逼迫对手在公开场合露出破绽"
+                else:
+                    bridge_goal = "反击前夜：推进到可直接公开揭穿，不再扩展新问题或新材料"
                 bridge_must = [
                     main_opp or "主对手",
-                    "证据链补全动作",
-                    "今生反击计划成型",
-                    f"围绕{required_evidence_hint}完成证据补全（不换证据来源）",
-                ]
-            elif idx >= 3:
-                bridge_goal = "反击前夜：推进到可直接公开揭穿，不再扩展新问题"
-                bridge_must = [
-                    main_opp or "主对手",
-                    "公开反击前的最后确认",
-                    "确保本簇爽点在收尾章兑现",
-                    f"再核对一遍{required_evidence_hint}对应的证据链关键点",
+                    "照旧出招与提前布子的对位",
+                    f"围绕{required_evidence_hint}仅做核实/补刀/封口（不换证据来源）",
                 ]
             chapters_plan[str(ch)] = {
                 "chapter_goal": bridge_goal,
                 "chapter_must_include": bridge_must,
-                "chapter_must_not_include": ["新核心人物", "新组织/新阴谋线", "再次详细重演上一世受害过程"] + DEFAULT_FORBIDDEN_NEW_ROLES,
+                "chapter_must_not_include": [
+                    "新核心人物",
+                    "新组织/新阴谋线",
+                    "再次详细重演一整段上一世受害",
+                ]
+                + REBIRTH_FORBIDDEN_DEUS_EX
+                + DEFAULT_FORBIDDEN_NEW_ROLES,
                 "chapter_ending": "推进到下一章可直入反杀或收尾",
-                "must_resolve_this_chapter": ["推进证据或压迫", "不扩散到其他簇", "保持今生复仇主线占比"],
+                "must_resolve_this_chapter": ["诱敌/压实", "禁止调查文灌水", "不扩散到其他簇"],
             }
 
     # cid 目前未直接用于 plan 字段，保留参数便于后续扩展

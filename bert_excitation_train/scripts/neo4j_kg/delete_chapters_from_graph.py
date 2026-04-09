@@ -123,15 +123,23 @@ def delete_chapters_from_neo4j(driver: Driver, chapters: List[int]) -> None:
             )
 
             # 6) Recompute first/last seen bounds from remaining participation in chapter events
+            # 注意：min()/max() 是聚合函数，不能对列表 chs 在 SET 里直接使用；用 reduce 求列表最值。
             tx.run(
                 """
                 MATCH (c:Character)
                 OPTIONAL MATCH (c)-[:PARTICIPATED_IN]->(e:Event)
                 WHERE e.event_type = 'Chapter'
                 WITH c, [ch IN collect(e.chapter) WHERE ch IS NOT NULL] AS chs
+                WITH c, chs,
+                  CASE WHEN size(chs) = 0 THEN NULL
+                    ELSE reduce(mn = head(chs), x IN tail(chs) | CASE WHEN x < mn THEN x ELSE mn END)
+                  END AS min_ch,
+                  CASE WHEN size(chs) = 0 THEN NULL
+                    ELSE reduce(mx = head(chs), x IN tail(chs) | CASE WHEN x > mx THEN x ELSE mx END)
+                  END AS max_ch
                 SET
-                  c.first_chapter = CASE WHEN size(chs) > 0 THEN min(chs) ELSE NULL END,
-                  c.last_seen_chapter = CASE WHEN size(chs) > 0 THEN max(chs) ELSE NULL END,
+                  c.first_chapter = min_ch,
+                  c.last_seen_chapter = max_ch,
                   c.updatedAt = timestamp()
                 """,
             )
@@ -141,16 +149,45 @@ def delete_chapters_from_neo4j(driver: Driver, chapters: List[int]) -> None:
 
 def main():
     parser = argparse.ArgumentParser(description="Delete a chapter range from Neo4j KG (and optionally from chapter text files).")
-    parser.add_argument("--chapters", type=str, required=True, help="Chapter range/spec, e.g. '12-14' or '12,13,14'.")
+    parser.add_argument(
+        "--chapters",
+        type=str,
+        default="",
+        help="Chapter range/spec, e.g. '12-14' or '12,13,14'. Optional if --start/--end is set.",
+    )
+    parser.add_argument(
+        "--start",
+        type=int,
+        default=None,
+        help="Start chapter (inclusive). Used with --end, or alone as single chapter.",
+    )
+    parser.add_argument(
+        "--end",
+        type=int,
+        default=None,
+        help="End chapter (inclusive). Used with --start, or alone as single chapter.",
+    )
     parser.add_argument("--skip-neo4j-delete", action="store_true", help="Only delete chapter files; do NOT delete from Neo4j.")
     parser.add_argument("--skip-file-delete", action="store_true", help="Only delete from Neo4j; do NOT delete chapter text files.")
     parser.add_argument("--dry-run", action="store_true", help="Show what will be deleted without making changes.")
     parser.add_argument("--yes", action="store_true", help="Confirm destructive operation.")
     args = parser.parse_args()
 
-    chapters = parse_chapter_spec(args.chapters)
+    chapters: List[int] = []
+    if args.chapters and str(args.chapters).strip():
+        chapters = parse_chapter_spec(args.chapters)
+    elif args.start is not None or args.end is not None:
+        s0 = args.start if args.start is not None else args.end
+        e0 = args.end if args.end is not None else args.start
+        assert s0 is not None and e0 is not None
+        start, end = int(s0), int(e0)
+        step = 1 if start <= end else -1
+        chapters = list(range(start, end + step, step))
+    else:
+        raise SystemExit("Specify --chapters <spec> or --start/--end <N>.")
+
     if not chapters:
-        raise SystemExit("No valid chapters parsed from --chapters")
+        raise SystemExit("No valid chapters parsed from --chapters / --start / --end")
 
     # Decide files to delete first (dry-run visibility)
     all_files = list_chapter_files()

@@ -83,11 +83,8 @@ python bert_excitation_train/scripts/generate_chapter_content_v2.py --start 12 -
    - 强制结尾留下 `end_to_next` 钩子
    - 强制字数不少于 1500（prompt 内硬要求，并最终由 critic 验收）
 
-6. **“连续正文 -> 切分微调”**  
-   将连续正文切分成每章文本：`_build_cluster_split_prompt()` 要求：
-   - 绝大部分正文不删减、不压缩，仅允许开头/结尾钩子微调
-   - 每章仍需 >= 1500 字
-   - 输出必须为严格 JSON（形如 `{ "chapters": [{ "chapter_num": ..., "text": ...}] }`）
+6. **逐章正文直接落盘（无整簇切分微调）**  
+   每章由 `_build_cluster_body_part_prompt()` 单独生成，即已是该章正文；不再把多章拼成 `full_body` 后二次调用模型做 JSON 分章（避免超大 prompt、长响应与硬超时）。
 
 7. **写盘与 critic 审查**  
    - 先写入 `outputs/chapters/chapter_XXX.txt`
@@ -95,7 +92,7 @@ python bert_excitation_train/scripts/generate_chapter_content_v2.py --start 12 -
 
 8. **critic 不通过 -> 注入 rewrite_advice -> 重写循环**  
    - 外层 `max_cluster_attempts` 默认 5
-   - 第 1 次不注入建议；第 2 次起注入 critic 产出的 `rewrite_advice` 并再次生成 beats + 连续正文 + 切分
+   - 第 1 次不注入建议；第 2 次起注入 critic 产出的 `rewrite_advice` 并再次生成 beats + 逐章正文
 
 ---
 
@@ -142,8 +139,8 @@ V2 的字数达标是一个“多层防抖”机制：
    - `_build_cluster_body_part_prompt()` 明确要求：本章总字数不少于 `1500`（建议 1700-2200）
    - 未达到则“必须继续扩写直到达标再停止”
 
-2. **分章切分阶段再次验收**
-   - `_build_cluster_split_prompt()` 同样要求每章正文 `>= 1500`，并禁止只保留短开头/短结尾。
+2. **生成后字数预检（<1400 字则重写 attempt）**  
+   - 在写盘前若某章偏短，会注入 `rewrite_advice` 进入下一轮，与逐章 prompt 的 1500 字要求一致。
 
 3. **critic 的硬验收**
    - `_cluster_critic()` 对簇中每一章逐章检查：`len(text) < 1500` 即产出 violation，并生成对应 `rewrite_advice`
@@ -164,7 +161,6 @@ V2 的字数达标是一个“多层防抖”机制：
 - synopsis：`max_tokens_synopsis = 1400`
 - beats：`max_tokens_beats = 1800`（解析失败则 `+ 600 * beats_try`）
 - 连续正文（每章）：`max_tokens_body_per_chapter = 5000`
-- 切分 JSON（上限随章数增长）：`max_tokens_split = min(20000, 5200 * num_chapters)`
 
 原则：只要你发现“短章/字数不达标”，优先从这里与 critic 的 violation 列表对齐定位，而不是盲目改写生成文案。
 
@@ -222,7 +218,7 @@ V2 会尝试挂载 `neo4j_kg.online_retriever.retrieve_context_for_chapter`：
 
 1. 默认：生成正文并同步 Neo4j KG
 ```powershell
-python bert_excitation_train/scripts/generate_chapter_content_v2.py --start 12 --end 14
+python bert_excitation_train/scripts/generate_chapter_content_v2.py --start 15 --end 16
 ```
 
 2. 不同步 Neo4j（只生成正文）

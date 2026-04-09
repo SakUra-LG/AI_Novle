@@ -846,10 +846,17 @@ class RebirthRevengeGenerator:
                     response = future.result(timeout=hard_timeout_s)
 
                 elapsed = time.time() - t0
-                if "output" in response and "choices" in response["output"]:
-                    content = response["output"]["choices"][0]["message"]["content"]
-                    print(f"[API] dashscope call success elapsed={elapsed:.1f}s", flush=True)
-                    return self._clean_markdown(content)
+                if isinstance(response, dict) and "output" in response and isinstance(response.get("output"), dict):
+                    out = response.get("output") or {}
+                    if (
+                        isinstance(out, dict)
+                        and "choices" in out
+                        and isinstance(out.get("choices"), list)
+                        and out["choices"]
+                    ):
+                        content = out["choices"][0]["message"]["content"]
+                        print(f"[API] dashscope call success elapsed={elapsed:.1f}s", flush=True)
+                        return self._clean_markdown(content)
 
                 print(
                     f"[API] dashscope call invalid_format elapsed={elapsed:.1f}s response_keys="
