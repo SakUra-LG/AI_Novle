@@ -9,7 +9,9 @@
 ## 目录结构
 
 - `handwritten/`：手写规则方法（可解释、可快速迭代）
-- `open_source/`：基于现有开源方案的实现或封装
+- `cntext/`：`cntext` 开源方案接入（词典 + LLM）
+- `vad_macbert/`：VAD-MacBERT 连续评分接入
+- `semeval2025_task11/`：SemEval2025 Task11 适配输出
 
 ## 当前手写实现
 
