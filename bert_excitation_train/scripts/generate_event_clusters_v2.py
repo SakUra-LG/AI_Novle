@@ -18,7 +18,7 @@ from typing import List, Dict, Any
 
 import dashscope
 
-from smart_sample_search import search_and_adapt_samples
+from bert_excitation_train.scripts.smart_sample_search import search_and_adapt_samples
 
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
