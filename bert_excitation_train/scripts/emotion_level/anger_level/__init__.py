@@ -1,0 +1,1 @@
+"""Anger intensity generation module."""

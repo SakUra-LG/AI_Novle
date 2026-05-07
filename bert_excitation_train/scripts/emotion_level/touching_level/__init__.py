@@ -1,0 +1,1 @@
+"""Touching intensity generation module."""

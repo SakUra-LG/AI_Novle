@@ -1,0 +1,1 @@
+"""Horror intensity generation module."""

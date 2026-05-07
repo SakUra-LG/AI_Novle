@@ -1,0 +1,1 @@
+"""Emotion intensity generation modules."""
