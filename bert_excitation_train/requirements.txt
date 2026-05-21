@@ -1,5 +1,7 @@
 # Python依赖包
 # 注意：Flask相关依赖已移除，项目不再使用Web界面
+# 通义千问 / DashScope API（run_touching_levels 等脚本）
+dashscope
 cntext
 ipython
 psutil

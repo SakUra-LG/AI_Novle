@@ -2,10 +2,16 @@
 
 ## 1. 如何调用使用
 
-在项目根目录执行：
+如果当前目录是仓库根目录 `AI_Novle`，执行：
 
 ```powershell
 python .\bert_excitation_train\scripts\emotion_level\touching_level\run_touching_levels.py
+```
+
+如果当前目录已经是 `AI_Novle\bert_excitation_train`，执行：
+
+```powershell
+python .\scripts\emotion_level\touching_level\run_touching_levels.py
 ```
 
 运行后会提示输入感动场景提示词：
