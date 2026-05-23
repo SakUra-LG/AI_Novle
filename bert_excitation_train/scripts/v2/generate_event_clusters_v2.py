@@ -25,6 +25,14 @@ if str(_PROJECT_ROOT) not in sys.path:
 
 from bert_excitation_train.scripts.smart_sample_search import search_and_adapt_samples
 import bert_excitation_train.scripts.generate_event_clusters_v2 as legacy_v2
+from bert_excitation_train.scripts.v2.theme_constraints import (
+    BACKGROUND as DEFAULT_BACKGROUND,
+    MAIN_PROTAGONIST,
+    THEME as DEFAULT_THEME,
+    attach_theme_contract,
+    constraints_text,
+    protagonists_arg,
+)
 
 OUTPUT_DIR = legacy_v2.OUTPUT_DIR
 
@@ -103,8 +111,8 @@ def _build_seed_plan_with_user_input(cfg: Dict[str, str]) -> str:
     protagonists = _parse_protagonists(cfg.get("protagonists", ""))
     heroine, hero = _pick_legacy_leads(
         protagonists=protagonists,
-        fallback_heroine=cfg.get("heroine_name", "沈清欢"),
-        fallback_hero=cfg.get("hero_name", "顾寒川"),
+        fallback_heroine=cfg.get("heroine_name", MAIN_PROTAGONIST),
+        fallback_hero=cfg.get("hero_name", ""),
     )
     extra = cfg.get("extra_constraints", "").strip()
 
@@ -112,7 +120,7 @@ def _build_seed_plan_with_user_input(cfg: Dict[str, str]) -> str:
     base_query = f"{theme}，背景：{background}。{protag_hint}".strip()
     adapted_samples = search_and_adapt_samples(
         user_input=base_query,
-        target_context=f"{theme}，{background}，重生，复仇，短剧",
+        target_context=f"{theme}，{background}，欧美经济年代文，滞胀，重生，逆周期布局",
         top_k=5,
         min_similarity=0.3,
     )
@@ -125,19 +133,22 @@ def _build_seed_plan_with_user_input(cfg: Dict[str, str]) -> str:
         )
     samples_block = "\n\n".join(sample_texts) if sample_texts else ""
 
-    system_prompt = "你是重生复仇短剧的大纲总策划，需要先设计唯一的最大主线蓝图。"
+    theme_contract = constraints_text()
+    system_prompt = "你是欧美经济年代重生小说的大纲总策划，需要先设计唯一的最大主线蓝图。"
     user_prompt = (
-        f"请为一部《重生题材小说》设计一条贯穿全书100章的唯一主线蓝图（3-6句）。\n\n"
+        f"请为一部《欧美风格重生经济年代小说》设计一条贯穿全书100章的唯一主线蓝图（3-6句）。\n\n"
+        f"{theme_contract}\n\n"
         f"本次人工指定题材：{theme}\n"
         f"本次人工指定背景：{background}\n"
         + (f"主角名字约束（不要求区分男女主，允许多个主角）：{'、'.join(protagonists)}\n" if protagonists else "")
-        + f"（兼容占位名）女主占位：{heroine}\n"
-        + f"（兼容占位名）男主占位：{hero}\n"
+        + f"（兼容占位名）主角占位：{heroine}\n"
+        + (f"（兼容占位名）辅助角色占位：{hero}\n" if hero else "")
         + (f"额外限制：{extra}\n" if extra else "")
         + "\n要求：\n"
-        "- 需明确上一世核心悲剧链（谁害她、怎么害）；\n"
-        "- 需明确今生最大复仇目标与推进阶段；\n"
-        "- 后续事件簇只能沿这条主线补细节，不得中途换世界观或换终极主线。\n\n"
+        "- 需明确上一世核心羞辱/失败链：他如何被学术界、市场和权贵嘲笑为只会写历史的人；\n"
+        "- 需明确今生最大目标与推进阶段：从学术预警、逆周期资产布局，到危机兑现后的公共预警；\n"
+        "- 每一阶段都必须与美国滞胀历史节点和现实经济逻辑相关；\n"
+        "- 后续事件簇只能沿这条主线补细节，不得中途换世界观、换主角性别、换终极主线。\n\n"
         "如有样本可参考风格，不要抄袭剧情：\n"
         f"{samples_block}\n\n"
         "只输出蓝图本身。"
@@ -149,8 +160,9 @@ def _build_seed_plan_with_user_input(cfg: Dict[str, str]) -> str:
     plan = legacy_v2.call_qianwen_api(messages)
     if not plan or str(plan).startswith("通义千问"):
         plan = (
-            f"占位蓝图：上一世，{heroine}在{background}场域被关键对手链条联手害死；"
-            f"今生她将围绕“{theme}”主线逐层反击，最终在公众层面完成真相揭露与整体清算。"
+            f"占位蓝图：上一世，{heroine}作为研究美国滞胀的经济学者，在临死前仍被嘲笑只会写历史、不会赚钱；"
+            f"今生他回到1968年的美国名校经济系，围绕“{theme}”主线，用历史信息差完成逆周期布局，"
+            f"并在1970年代连续危机中从被羞辱的末日教授变成敢向普通人公开预警的危机预言者。"
         )
     return str(plan).strip()
 
@@ -191,6 +203,9 @@ def _generate_event_clusters_v2_with_final_arc(
     base_prompt = legacy_v2.build_event_cluster_prompt(global_seed_plan)
     extra = f"""
 
+【本次主题硬锁定：不得偏离】
+{constraints_text()}
+
 【新增硬性结构要求：必须有终局大情节族（final arc）】
 1) 你的输出必须包含且仅包含 1 个“终局大情节族”，建议放在数组最后一个元素。
 2) 终局大情节族必须满足：
@@ -206,7 +221,7 @@ def _generate_event_clusters_v2_with_final_arc(
     messages = [
         {
             "role": "system",
-            "content": "你是重生复仇短剧的结构设计师，需要在给定主线蓝图下设计事件簇，并以 JSON 数组输出。",
+            "content": "你是欧美经济年代重生小说的结构设计师，需要在给定主线蓝图下设计事件簇，并以 JSON 数组输出。",
         },
         {"role": "user", "content": user_prompt},
     ]
@@ -260,7 +275,7 @@ def _synthesize_final_arc_cluster(
 - 只输出 JSON 对象本身，不要解释。
 """.strip()
     messages = [
-        {"role": "system", "content": "你是重生复仇短剧的终局结构策划，只生成终局事件簇 JSON。"},
+        {"role": "system", "content": "你是欧美经济年代重生小说的终局结构策划，只生成终局事件簇 JSON。"},
         {"role": "user", "content": prompt},
     ]
     raw = legacy_v2.call_qianwen_api(messages, temperature=0.75, top_p=0.85)
@@ -380,17 +395,17 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="V2 事件簇生成（支持人工输入题材/背景/主角名）")
     parser.add_argument("--project-config", type=str, default=None)
     parser.add_argument("--generation-config", type=str, default=None)
-    parser.add_argument("--theme", type=str, default="重生复仇短剧")
-    parser.add_argument("--background", type=str, default="现代都市+医疗阴谋+职场反杀")
+    parser.add_argument("--theme", type=str, default=DEFAULT_THEME)
+    parser.add_argument("--background", type=str, default=DEFAULT_BACKGROUND)
     parser.add_argument(
         "--protagonists",
         type=str,
-        default="沈清欢,顾寒川",
+        default=protagonists_arg(),
         help="主角名字约束（可多个，不要求区分女主/男主；支持逗号/顿号/分号/换行分隔）",
     )
     # 兼容旧参数：仍可传，但交互默认不再询问
-    parser.add_argument("--heroine-name", type=str, default="沈清欢", help=argparse.SUPPRESS)
-    parser.add_argument("--hero-name", type=str, default="顾寒川", help=argparse.SUPPRESS)
+    parser.add_argument("--heroine-name", type=str, default=MAIN_PROTAGONIST, help=argparse.SUPPRESS)
+    parser.add_argument("--hero-name", type=str, default="", help=argparse.SUPPRESS)
     parser.add_argument("--extra-constraints", type=str, default="")
     parser.add_argument("--extra-constraints-file", type=str, default=None)
     parser.add_argument(
@@ -421,7 +436,7 @@ def main() -> None:
 
     # 将人工输入覆盖到 legacy 模块全局名，以便后续 prompt 与章节计划统一使用
     protagonists = _parse_protagonists(cfg.get("protagonists", ""))
-    heroine, hero = _pick_legacy_leads(protagonists, cfg.get("heroine_name", "沈清欢"), cfg.get("hero_name", "顾寒川"))
+    heroine, hero = _pick_legacy_leads(protagonists, cfg.get("heroine_name", MAIN_PROTAGONIST), cfg.get("hero_name", ""))
     legacy_v2.HEROINE_NAME = heroine
     legacy_v2.HERO_NAME = hero
 
@@ -432,16 +447,20 @@ def main() -> None:
     print(f"背景: {cfg['background']}")
     if protagonists:
         print(f"主角名字约束: {'、'.join(protagonists)}")
-    print(f"（兼容占位）女主占位: {heroine} | 男主占位: {hero}")
+    print(f"（兼容占位）主角占位: {heroine}" + (f" | 辅助角色占位: {hero}" if hero else ""))
     if cfg.get("extra_constraints"):
         print(f"额外限制: {cfg['extra_constraints'][:200]}")
 
     global_seed_plan = _build_seed_plan_with_user_input(cfg)
-    if cfg.get("extra_constraints"):
+    fixed_constraints = constraints_text()
+    merged_constraints = "\n".join(
+        x for x in [fixed_constraints, cfg.get("extra_constraints", "").strip()] if x
+    )
+    if merged_constraints:
         global_seed_plan = (
             f"{global_seed_plan}\n\n"
             f"【人工约束】题材={cfg['theme']}；背景={cfg['background']}；"
-            f"额外限制={cfg['extra_constraints']}"
+            f"额外限制={merged_constraints}"
         )
 
     os.makedirs(legacy_v2.OUTPUT_DIR, exist_ok=True)
@@ -451,8 +470,11 @@ def main() -> None:
         f.write(f"背景：{cfg['background']}\n")
         if protagonists:
             f.write(f"主角名字约束：{'、'.join(protagonists)}\n")
-        f.write(f"（兼容占位）女主：{heroine}\n")
-        f.write(f"（兼容占位）男主：{hero}\n\n")
+        f.write(f"（兼容占位）主角：{heroine}\n")
+        if hero:
+            f.write(f"（兼容占位）辅助角色：{hero}\n")
+        f.write("\n")
+        f.write(f"{fixed_constraints}\n\n")
         f.write(global_seed_plan)
     print(f"✅ 最大主线蓝图已写入：{seed_path}")
 
@@ -476,6 +498,7 @@ def main() -> None:
         c["chapter_plan"] = legacy_v2._build_chapter_plan_for_cluster(c)
         c["user_theme"] = cfg["theme"]
         c["user_background"] = cfg["background"]
+        attach_theme_contract(c)
         if protagonists:
             c["user_protagonists"] = protagonists
         c["user_heroine_name"] = heroine
@@ -497,4 +520,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

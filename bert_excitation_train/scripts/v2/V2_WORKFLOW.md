@@ -5,7 +5,7 @@
 ## 1. 迁移后的 V2 脚本位置
 
 - `generate_v2_pipeline.py`：V2 总入口（推荐）
-- `generate_event_clusters_v2.py`：事件簇生成（已支持人工输入题材/背景/主角名/限制；并强制生成“终局大情节族”）
+- `generate_event_clusters_v2.py`：事件簇生成（默认锁定“滞胀前夜的逆周期教授”；支持人工输入题材/背景/主角名/限制；并强制生成“终局大情节族”）
 - `generate_outline_from_event_clusters_v2.py`：章节任务卡 + 上一世线索生成
 - `generate_chapter_content_v2.py`：正文生成
 - `enhanced_rag_generator_v2.py`：增强 RAG 入口（兼容保留）
@@ -54,9 +54,8 @@ python "bert_excitation_train/scripts/v2/generate_event_clusters_v2.py"
 
 运行时会要求输入：
 - 主题/题材
-- 简要背景（如：歌手、娱乐圈）
-- 女主名
-- 男主名
+- 简要背景（默认：1968-1979年美国滞胀时代）
+- 主角名字约束（默认：丹尼尔·惠特曼）
 - 额外限制（可空）
 
 生成产物：
@@ -99,12 +98,11 @@ python "bert_excitation_train/scripts/v2/generate_chapter_content_v2.py" --start
 ```powershell
 python "bert_excitation_train/scripts/v2/generate_event_clusters_v2.py" `
   --non-interactive `
-  --theme "重生娱乐圈复仇" `
-  --background "歌手成长+资本压制+舆论反转" `
-  --heroine-name "沈清欢" `
-  --hero-name "顾寒川" `
+  --theme "欧美风格重生经济年代爽文：重生到美国经济滞胀时代" `
+  --background "1968-1979年美国：名校经济系、华尔街、美元脱锚、石油危机、股灾、高利率" `
+  --protagonists "丹尼尔·惠特曼" `
   --final-arc-len 8 `
-  --extra-constraints "禁系统、禁玄幻、禁止跨国战争线"
+  --extra-constraints "禁系统、禁玄幻、禁医疗阴谋、禁娱乐圈、禁豪门婚恋；必须围绕美元脱锚、石油危机、股灾、高利率和公开预警终局"
 ```
 
 也可以把限制写入文件再注入：
@@ -112,10 +110,9 @@ python "bert_excitation_train/scripts/v2/generate_event_clusters_v2.py" `
 ```powershell
 python "bert_excitation_train/scripts/v2/generate_event_clusters_v2.py" `
   --non-interactive `
-  --theme "重生娱乐圈复仇" `
-  --background "歌手" `
-  --heroine-name "沈清欢" `
-  --hero-name "顾寒川" `
+  --theme "欧美风格重生经济年代爽文：重生到美国经济滞胀时代" `
+  --background "1968-1979年美国滞胀时代" `
+  --protagonists "丹尼尔·惠特曼" `
   --final-arc-len 8 `
   --extra-constraints-file "bert_excitation_train/config/my_constraints.txt"
 ```

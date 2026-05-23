@@ -27,6 +27,12 @@ from bert_excitation_train.scripts.generate_outline_rebirth_revenge import (  # 
 )
 from bert_excitation_train.scripts.v2.generate_event_clusters_v2 import OUTPUT_DIR as OUTPUT_DIR_V2  # type: ignore[import]
 from bert_excitation_train.scripts.v2.generate_event_clusters_v2 import generate_global_seed_plan_v2  # reuse if needed
+from bert_excitation_train.scripts.v2.theme_constraints import (
+    FORBIDDEN_ELEMENTS as THEME_FORBIDDEN_ELEMENTS,
+    MAIN_PROTAGONIST,
+    attach_theme_contract,
+    constraints_text,
+)
 
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -37,7 +43,7 @@ OUTPUT_DIR = os.path.join(PROJECT_ROOT, "outputs")
 DEFAULT_FORBIDDEN_NEW_ROLES = [
     "神秘援手", "神秘司机", "系统", "系统提示音", "苏晚晴", "黑色轿车", "神秘人", "幕后黑手",
     "更大风暴", "真正的敌人", "神秘男人", "陌生女性盟友", "未规划的关键证人",
-]
+] + THEME_FORBIDDEN_ELEMENTS
 
 # 与 generate_chapter_content_v2._build_cluster_plan 对齐：禁止调查文式天降线索
 REBIRTH_FORBIDDEN_DEUS_EX = [
@@ -52,41 +58,49 @@ REBIRTH_FORBIDDEN_DEUS_EX = [
 SPECIAL_CARDS: Dict[int, Dict[str, Any]] = {
     1: {
         "chapter_role_v2": "prev_life_death_only",
-        "chapter_goal": "只写上一世病房临死前的绝境，不出现重生后的正式苏醒，也不出现任何调查/照片/身份谜团。",
+        "chapter_goal": "只写上一世临死前的精神绝境：现代美国经济学者被嘲笑“只会写历史，不会赚钱”，不出现重生后的正式苏醒，也不出现调查/系统/神秘证据。",
         "chapter_must_include": [
-            "深夜病房环境和监护仪报警",
-            "求助被医护/亲人无视或敷衍",
-            "陆景明与相关医护冷漠配合或敷衍安抚",
-            "最后一通电话被挂断或无人接听",
+            "主角前世是研究1970年代美国滞胀的现代美国经济学者",
+            "临死前仍被同僚/媒体/市场人士嘲笑“只会写历史，不会赚钱”",
+            "他意识到自己明明看懂过滞胀，却从未真正改变普通人的命运",
+            "死亡前对美元、石油危机、股灾和高利率历史节点产生强烈不甘",
         ],
         "chapter_must_not_include": [
             "重生醒来或从病床上“突然坐起”",
-            "任何现代场景中的调查/线索分析",
+            "任何今生1968年的正式行动",
             "照片/U盘/神秘人/系统/幕后黑手",
-            "身份替换/车祸新闻/警方介入",
+            "医疗阴谋/豪门婚恋/娱乐圈/警方介入",
         ],
-        "chapter_ending": "在窒息和绝望中逐渐失去意识，意识到自己要死了但还不知道会重来一次。",
+        "chapter_ending": "在被嘲笑与不甘中失去意识，最后一个念头落在“如果回到滞胀前夜，我会提前告诉所有人”。",
         "must_resolve_this_chapter": ["上一世临死场景闭合"],
     },
     2: {
         "chapter_role_v2": "rebirth_awakening_only",
-        "chapter_goal": "只写重生惊醒与确认时间回到悲剧前夜，从震惊→怀疑是梦→通过具体证据确认“真的回去了”。",
+        "chapter_goal": "只写重生惊醒与确认时间回到1968年美国名校任教初期，从震惊→怀疑是梦→通过具体证据确认“真的回去了”。",
         "chapter_must_include": [
-            "从上一章病房死亡记忆中惊醒",
-            "发现自己回到熟悉房间/时间点",
-            "通过日期、手机、亲友状态等细节确认时间回溯",
-            "决定这一次不会再轻信任何人",
+            "从上一章死亡与嘲笑记忆中惊醒",
+            "发现自己身处1968年的美国大学办公室/教师公寓/校园环境",
+            "通过报纸日期、课堂表、美元金价、越战/选举/股市新闻等细节确认时间回溯",
+            "决定这一次要用滞胀预知提前布局，并在关键时刻保护普通人",
         ],
         "chapter_must_not_include": [
             "直播/警方/媒体报道",
-            "更大势力/幕后阴谋的正式展开",
+            "权贵阴谋的正式展开",
             "非法实验/身份替换/系统提示音",
-            "正式举报或真正意义上的复仇行动",
+            "立即暴富或真正意义上的投资行动",
         ],
-        "chapter_ending": "她在确认“这不是梦”后，把第一个可疑细节记在心里，决定先沉住气观察身边所有人。",
+        "chapter_ending": "他在确认“这不是梦”后，把1968年的第一张财经版报纸摊开，决定先从学术会议上的那次预警开始。",
         "must_resolve_this_chapter": ["确认回到悲剧前夜闭合"],
     },
 }
+
+
+def _primary_protagonist(obj: Dict[str, Any] | None = None) -> str:
+    if isinstance(obj, dict):
+        ps = obj.get("user_protagonists")
+        if isinstance(ps, list) and ps:
+            return str(ps[0]) or MAIN_PROTAGONIST
+    return MAIN_PROTAGONIST
 
 
 def _infer_evidence_types_from_info_gap(info_gap: str) -> List[str]:
@@ -120,6 +134,20 @@ def _infer_evidence_types_from_info_gap(info_gap: str) -> List[str]:
         add("笔记")
 
     # 证据形态
+    if "美元" in t or "脱锚" in t or "金本位" in t:
+        add("美元脱锚/金价与汇率记录")
+    if "通胀" in t or "CPI" in t or "物价" in t:
+        add("通胀/CPI与物价数据")
+    if "石油" in t or "能源" in t:
+        add("石油供给/能源合同记录")
+    if "固定利率" in t or "贷款" in t or "债务" in t:
+        add("固定利率贷款与债务结构")
+    if "铁路" in t or "货运" in t or "仓库" in t or "物流" in t:
+        add("铁路货运/仓储合同")
+    if "农地" in t or "农场" in t:
+        add("农地与实物资产交易记录")
+    if "股市" in t or "成长股" in t or "漂亮股票" in t or "基金" in t:
+        add("股票持仓/基金交易记录")
     if "录音" in t:
         add("录音/对话录音")
     if "视频" in t:
@@ -165,6 +193,7 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
     length = max(1, end_ch - start_ch + 1)
     cid = cluster.get("cluster_id", "")
     main_opp = cluster.get("main_opponent", "")
+    protagonist = _primary_protagonist(cluster)
     core_payoff = cluster.get("core_payoff", "")
     info_gap = (cluster.get("info_gap_from_prev_life") or "")
     outcome = cluster.get("cluster_outcome", "")
@@ -178,8 +207,8 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
             "chapter_goal": f"单章内完成：完整上一世受害段落 + 今生凭记忆预判旧招并完成反击，兑现本簇爽点：{core_payoff}",
             "chapter_must_include": [
                 "完整一段上一世受害（具体场景、对话、屈辱与无助，不得一句带过）",
-                "今生明确写出认出旧局/记得对方会怎么出招并提前布子",
-                "反击时证据/材料仅用于落锤坐实她已知的事",
+                "今生明确写出认出旧局/记得经济周期会怎么演变并提前布子",
+                "数据/合同/资产仅用于落锤坐实他已知的历史判断",
                 "反杀结果或处罚",
             ],
             "chapter_must_not_include": DEFAULT_FORBIDDEN_NEW_ROLES + ["新幕后黑手", "只埋钩子不兑现"] + deus_forbid,
@@ -190,9 +219,9 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
         ch1, ch2 = start_ch, end_ch
         chapters_plan[str(ch1)] = {
             "chapter_goal": "完整展开上一世在本簇情境下如何被害，为下一章反杀蓄力",
-            "chapter_must_include": ["上一世具体受害过程", main_opp or "主对手", "与信息差相关的细节（如笔记、记录）"],
+            "chapter_must_include": ["上一世具体受害/被嘲笑过程", main_opp or "主对手", "与经济信息差相关的细节（如数据、合同、政策时间点）"],
             "chapter_must_not_include": ["无关支线角色抢戏"] + DEFAULT_FORBIDDEN_NEW_ROLES,
-            "chapter_ending": "回忆收束，读者清楚本簇仇人是谁、曾如何害她",
+            "chapter_ending": "回忆收束，读者清楚本簇对手是谁、上一世曾如何嘲笑/压制他",
             "must_resolve_this_chapter": ["展开上一世悲剧", "明确主对手与信息差来源"],
         }
         chapters_plan[str(ch2)] = {
@@ -206,13 +235,13 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
         ch1, ch_last = start_ch, end_ch
         chapters_plan[str(ch1)] = {
             "chapter_goal": (
-                f"旧局重现：沈清欢在与本簇主对手（{main_opp}）同场时认出上一世同一套局，并立刻提前布子；"
-                f"禁止写成调查取证、到处找线索。"
+                f"旧局重现：{protagonist}在与本簇主对手（{main_opp}）同场时认出上一世同一段经济周期/同一套错误判断，并立刻提前布子；"
+                f"禁止写成调查取证、到处找线索，必须写成经济预判与现实执行。"
             ),
             "chapter_must_include": [
-                "明确写出认出旧局/记得对方会怎么出招",
-                "今生提前布子的具体安排",
-                f"信息差（{required_evidence_hint}）作为她已知去何处取何物的依据，而非本章才「发现线索」",
+                "明确写出认出旧局/记得关键经济节点将如何发生",
+                "今生提前布子的具体安排（资产、信贷、合同、学术发言或政策预警）",
+                f"信息差（{required_evidence_hint}）作为他已知如何判断周期的依据，而非本章才「发现线索」",
             ],
             "chapter_must_not_include": [
                 "新幕后黑手",
@@ -222,7 +251,7 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
             ]
             + REBIRTH_FORBIDDEN_DEUS_EX
             + DEFAULT_FORBIDDEN_NEW_ROLES,
-            "chapter_ending": "旧局已对上号，对方尚未察觉她已提前布子；为下一章完整展开上一世受害蓄力",
+            "chapter_ending": "经济旧局已对上号，对方尚未察觉他已提前布子；为下一章完整展开上一世受挫蓄力",
             "must_resolve_this_chapter": ["锁定主对手", "认出旧局并提前布子", "禁止调查文推进"],
         }
         chapters_plan[str(ch1 + 1)] = {
@@ -230,20 +259,20 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
             "chapter_must_include": [
                 "上一世具体受害过程（至少一段写足，不得一句带过）",
                 f"{main_opp}的主观恶意与手段" if main_opp else "主对手的主观恶意与手段",
-                f"与{required_evidence_hint}对应的关键细节（上一世如何被其害惨）",
+                f"与{required_evidence_hint}对应的关键细节（上一世如何因此被嘲笑、错失或无法救人）",
                 "点明今生反击主动力是记忆与预判，不是偶然发现新材料",
             ],
             "chapter_must_not_include": ["无关支线角色抢戏"] + REBIRTH_FORBIDDEN_DEUS_EX + DEFAULT_FORBIDDEN_NEW_ROLES,
-            "chapter_ending": "读者清楚她为何恨、为何这一世能提前卡位",
+            "chapter_ending": "读者清楚他为何不甘、为何这一世能提前卡位",
             "must_resolve_this_chapter": ["完整上一世受害段落", "记忆与预判动机立住"],
         }
         chapters_plan[str(ch_last)] = {
             "chapter_goal": f"关键时刻反卡与结果落地：兑现本簇爽点 {core_payoff}，结局 {outcome or '职业毁灭/失去信任'}",
             "chapter_must_include": [
                 "对方按旧套路/旧剧本出手或施压",
-                "关键时刻反卡：当场揭穿/亮出落锤材料（材料只坐实她早已知道的事）",
+                "关键时刻反卡：用市场结果、合同、资产表现或公开预警落锤（材料只坐实他早已知道的周期判断）",
                 f"显性使用{required_evidence_hint}完成闭环",
-                "处罚/吊销/震动或舆论反噬等具体后果",
+                "破产/失去信用/政策转向/媒体反噬/普通人受益等具体后果",
             ],
             "chapter_must_not_include": ["只埋钩子不兑现", "真正风暴才刚开始", "新大Boss"] + DEFAULT_FORBIDDEN_NEW_ROLES,
             "chapter_ending": "本簇结束，主对手在本簇内失去信任或受到处罚",
@@ -254,17 +283,17 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
             mid_idx += 1
             if (end_ch - start_ch + 1) == 4:
                 bridge_goal = (
-                    "诱敌与压实：对方按旧招继续施压；沈清欢只核实或取出她上一世就知道存在的材料，"
+                    f"诱敌与压实：对方按旧有经济迷信继续施压；{protagonist}只执行他上一世就知道必然有效的逆周期步骤，"
                     "不把整章写成搜集新线索。"
                 )
                 bridge_must = [
                     main_opp or "主对手",
-                    "对方照旧出招与她早有准备的对位",
+                    "对方照旧误判/施压与他早有准备的对位",
                     f"与{required_evidence_hint}相关动作仅为核实/取出/封死退路，而非首次发现",
                 ]
             else:
                 if mid_idx == 1:
-                    bridge_goal = "压迫升级：对方继续按旧剧本出招；她利用已布好的子逐步收紧"
+                    bridge_goal = "压迫升级：对方继续按旧共识误判或施压；他利用已布好的逆周期筹码逐步收紧"
                 elif mid_idx == 2:
                     bridge_goal = "将记忆层面的预判落实为可落锤的动作链，逼迫对手在公开场合露出破绽"
                 else:
@@ -322,6 +351,7 @@ def _build_cards_from_clusters_v2(clusters: List[Dict[str, Any]]) -> Dict[int, D
         info_gap = cluster.get("info_gap_from_prev_life", "")
         outcome = cluster.get("cluster_outcome", "")
         escalation = cluster.get("escalation_level", 1)
+        protagonist = _primary_protagonist(cluster)
         cluster_plan = cluster.get("chapter_plan") if isinstance(cluster.get("chapter_plan"), dict) else {}
         plan = _build_cluster_plan(cluster)
 
@@ -353,9 +383,10 @@ def _build_cards_from_clusters_v2(clusters: List[Dict[str, Any]]) -> Dict[int, D
                     "chapter_must_not_include": ch_plan_from_cluster.get("must_not_include", []) or [],
                     "chapter_ending": str(ch_plan_from_cluster.get("ending", "")),
                     "must_resolve_this_chapter": ch_plan_from_cluster.get("must_resolve_this_chapter", []) or [],
-                    "allowed_roles": ["沈清欢", main_opp] if main_opp else ["沈清欢"],
+                    "allowed_roles": [protagonist, main_opp] if main_opp else [protagonist],
                     "forbidden_roles": DEFAULT_FORBIDDEN_NEW_ROLES.copy(),
                 }
+                attach_theme_contract(cards[ch])
                 continue
 
             # 2）兜底：没有 chapter_plan 就按旧推导逻辑补齐（仍保持稳定）
@@ -397,9 +428,10 @@ def _build_cards_from_clusters_v2(clusters: List[Dict[str, Any]]) -> Dict[int, D
                 "chapter_must_not_include": ch_plan.get("chapter_must_not_include", []),
                 "chapter_ending": ch_plan.get("chapter_ending", ""),
                 "must_resolve_this_chapter": ch_plan.get("must_resolve_this_chapter", []),
-                "allowed_roles": ["沈清欢", main_opp] if main_opp else ["沈清欢"],
+                "allowed_roles": [protagonist, main_opp] if main_opp else [protagonist],
                 "forbidden_roles": DEFAULT_FORBIDDEN_NEW_ROLES.copy(),
             }
+            attach_theme_contract(cards[ch])
 
             _enforce_revenge_focused_constraints(cards[ch])
 
@@ -425,14 +457,15 @@ def _build_cards_from_clusters_v2(clusters: List[Dict[str, Any]]) -> Dict[int, D
             "cluster_span_end": 0,
             "cluster_chapter_index": 0,
             "cluster_chapter_total": 0,
-            "chapter_goal": "本章为过渡或兜底，不得引入新的核心人物/阴谋线。",
+            "chapter_goal": "本章为过渡或兜底，不得引入新的核心人物/阴谋线；必须维持美国滞胀时代与逆周期布局主线。",
             "chapter_must_include": [],
             "chapter_must_not_include": DEFAULT_FORBIDDEN_NEW_ROLES.copy(),
             "chapter_ending": "本章以与前文承接的一幕结束。",
             "must_resolve_this_chapter": ["不引入新主线"],
-            "allowed_roles": ["沈清欢"],
+            "allowed_roles": [MAIN_PROTAGONIST],
             "forbidden_roles": DEFAULT_FORBIDDEN_NEW_ROLES.copy(),
         }
+        attach_theme_contract(cards[ch])
         _enforce_revenge_focused_constraints(cards[ch])
 
     return cards
@@ -458,9 +491,11 @@ def _enforce_revenge_focused_constraints(card: Dict[str, Any]) -> None:
     must_in = card.get("chapter_must_include")
     if not isinstance(must_in, list):
         must_in = []
-    if "今生利用信息差推进反击动作（可被读者明确识别）" not in must_in:
-        must_in.append("今生利用信息差推进反击动作（可被读者明确识别）")
+    if "今生利用历史经济信息差推进逆周期布局或公开预警（可被读者明确识别）" not in must_in:
+        must_in.append("今生利用历史经济信息差推进逆周期布局或公开预警（可被读者明确识别）")
     card["chapter_must_include"] = must_in
+    card["theme_constraints"] = constraints_text()
+    attach_theme_contract(card)
 
 
 def _load_event_clusters_v2() -> List[Dict[str, Any]]:
@@ -638,7 +673,7 @@ def generate_outline_from_event_clusters_v2() -> None:
     cards: List[Dict[str, Any]] = [cards_map[i] for i in range(1, 101) if i in cards_map]
     cards.sort(key=lambda x: x.get("chapter_id", 0))
 
-    outline_text = _render_cards_to_outline_text(cards)
+    outline_text = constraints_text() + "\n\n" + _render_cards_to_outline_text(cards)
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -666,8 +701,13 @@ def generate_outline_from_event_clusters_v2() -> None:
 
     # 生成上一世遭遇线索（沿用原有分析+分批逻辑）
     print("\n开始基于极简梗概生成上一世遭遇线索点（prev_life_ctx_v2）...\n")
-    prev_life_system_prompt = build_prev_life_outline_system_prompt()
-    analysis_text = analyze_outline_for_prev_life(outline_text)
+    prev_life_system_prompt = (
+        build_prev_life_outline_system_prompt()
+        + "\n\n【本项目主题硬锁定】\n"
+        + constraints_text()
+        + "\n生成上一世线索时必须写男性经济学者在现代临终前的羞辱、不甘、历史知识与公共责任，不得写医疗谋杀、豪门婚恋或女主复仇。"
+    )
+    analysis_text = analyze_outline_for_prev_life(outline_text + "\n\n" + constraints_text())
     if analysis_text and not analysis_text.startswith("通义千问"):
         print("  上一世分析完成，将按批次生成线索。")
     else:
@@ -682,6 +722,13 @@ def generate_outline_from_event_clusters_v2() -> None:
         print(f"  生成上一世线索：第 {start}-{end} 章...")
         user_q = build_prev_life_batch_user_query(
             outline_text, analysis_text, start, end
+        )
+        user_q = (
+            "【本项目主题硬锁定】\n"
+            + constraints_text()
+            + "\n\n请把下列章节的上一世线索限定为：现代美国经济学者对1970年代滞胀研究、临终前被嘲笑与无力保护普通人的不甘；"
+            "不得生成病房谋杀、渣男丈夫、医疗阴谋、娱乐圈或女主宅斗。\n\n"
+            + user_q
         )
         messages = [
             {"role": "system", "content": prev_life_system_prompt},
@@ -722,4 +769,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

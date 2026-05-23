@@ -29,6 +29,12 @@ import dashscope
 from bert_excitation_train.scripts.smart_sample_search import search_rebirth_samples_for_chapter
 from bert_excitation_train.scripts.optimized_rule_scorer import OptimizedRuleScorer
 from bert_excitation_train.scripts.emotion_analyzer import EmotionAnalyzer
+from bert_excitation_train.scripts.v2.theme_constraints import (
+    FORBIDDEN_ELEMENTS as THEME_FORBIDDEN_ELEMENTS,
+    MAIN_PROTAGONIST,
+    attach_theme_contract,
+    constraints_text,
+)
 
 # Windows/PowerShell 可能默认使用 GBK 编码，遇到打印 emoji 时触发 UnicodeEncodeError。
 try:
@@ -147,37 +153,37 @@ def _sync_neo4j_from_outputs(
 SPECIAL_CARDS: Dict[int, Dict[str, Any]] = {
     1: {
         "chapter_role_v2": "prev_life_death_only",
-        "chapter_goal": "只写上一世病房临死前的绝境，不出现重生后的正式苏醒，也不出现任何调查/照片/身份谜团。",
+        "chapter_goal": "只写上一世临死前的精神绝境：现代美国经济学者被嘲笑“只会写历史，不会赚钱”，不出现重生后的正式苏醒，也不出现调查/照片/身份谜团。",
         "chapter_must_include": [
-            "深夜病房环境和监护仪报警",
-            "求助被医护/亲人无视或敷衍",
-            "陆景明与相关医护冷漠配合或敷衍安抚",
-            "最后一通电话被挂断或无人接听"
+            "主角前世是研究1970年代美国滞胀的现代美国经济学者",
+            "临死前仍被同僚/媒体/市场人士嘲笑“只会写历史，不会赚钱”",
+            "他意识到自己明明看懂过滞胀，却从未真正改变普通人的命运",
+            "死亡前对美元、石油危机、股灾和高利率历史节点产生强烈不甘"
         ],
         "chapter_must_not_include": [
             "重生醒来或从病床上“突然坐起”",
-            "任何现代场景中的调查/线索分析",
+            "任何今生1968年的正式行动",
             "照片/U盘/神秘人/系统/幕后黑手",
-            "身份替换/车祸新闻/警方介入"
+            "医疗阴谋/豪门婚恋/娱乐圈/警方介入"
         ],
-        "chapter_ending": "在窒息和绝望中逐渐失去意识，意识到自己要死了但还不知道会重来一次。"
+        "chapter_ending": "在被嘲笑与不甘中失去意识，最后一个念头落在“如果回到滞胀前夜，我会提前告诉所有人”。"
     },
     2: {
         "chapter_role_v2": "rebirth_awakening_only",
-        "chapter_goal": "只写重生惊醒与确认时间回到悲剧前夜，从震惊→怀疑是梦→通过具体证据确认“真的回去了”。",
+        "chapter_goal": "只写重生惊醒与确认时间回到1968年美国名校任教初期，从震惊→怀疑是梦→通过具体证据确认“真的回去了”。",
         "chapter_must_include": [
-            "从上一章病房死亡记忆中惊醒",
-            "发现自己回到熟悉房间/时间点",
-            "通过日期、手机、亲友状态等细节确认时间回溯",
-            "决定这一次不会再轻信任何人"
+            "从上一章死亡与嘲笑记忆中惊醒",
+            "发现自己身处1968年的美国大学办公室/教师公寓/校园环境",
+            "通过报纸日期、课堂表、美元金价、越战/选举/股市新闻等细节确认时间回溯",
+            "决定这一次要用滞胀预知提前布局，并在关键时刻保护普通人"
         ],
         "chapter_must_not_include": [
             "直播/警方/媒体报道",
-            "更大势力/幕后阴谋的正式展开",
+            "权贵阴谋的正式展开",
             "非法实验/身份替换/系统提示音",
-            "正式举报或真正意义上的复仇行动"
+            "立即暴富或真正意义上的投资行动"
         ],
-        "chapter_ending": "她在确认“这不是梦”后，把第一个可疑细节记在心里，决定先沉住气观察身边所有人。"
+        "chapter_ending": "他在确认“这不是梦”后，把1968年的第一张财经版报纸摊开，决定先从学术会议上的那次预警开始。"
     },
 }
 
@@ -230,12 +236,12 @@ class _RebirthRevengeGeneratorV2Core:
 
     def _extract_entities(self) -> None:
         character_patterns = [
-            r"林修远", r"赵明轩", r"陈主任", r"王秘书", r"经理", r"院长",
-            r"主治医师", r"护士长", r"未婚夫", r"丈夫", r"男友",
+            r"丹尼尔·惠特曼", r"教授", r"经济学家", r"基金经理", r"银行家", r"农场主",
+            r"记者", r"政策顾问", r"院长", r"系主任",
         ]
         location_patterns = [
-            r"ICU病房", r"医院", r"公司", r"会议室", r"办公室", r"茶水间",
-            r"法庭", r"发布会", r"宴会", r"仓库", r"档案库",
+            r"大学办公室", r"经济系", r"学术会议", r"华尔街", r"银行", r"农场",
+            r"仓库", r"铁路货运站", r"能源设备厂", r"听证会", r"新闻发布会",
         ]
         for clue in self.prev_life_ctx.values():
             for pattern in character_patterns:
@@ -404,11 +410,12 @@ class _RebirthRevengeGeneratorV2Core:
             r"婉然",
         ]
         for p in patterns:
-            text = re.sub(p, "沈清欢", text)
-        text = re.sub(r"林[\u4e00-\u9fff]{1,2}", "沈清欢", text)
-        text = re.sub(r"夏[\u4e00-\u9fff]{1,2}", "沈清欢", text)
-        text = re.sub(r"女主角", "沈清欢", text)
-        text = re.sub(r"女主", "沈清欢", text)
+            text = re.sub(p, MAIN_PROTAGONIST, text)
+        text = re.sub(r"林[\u4e00-\u9fff]{1,2}", MAIN_PROTAGONIST, text)
+        text = re.sub(r"夏[\u4e00-\u9fff]{1,2}", MAIN_PROTAGONIST, text)
+        text = re.sub(r"沈清欢", MAIN_PROTAGONIST, text)
+        text = re.sub(r"女主角", MAIN_PROTAGONIST, text)
+        text = re.sub(r"女主", MAIN_PROTAGONIST, text)
         return text
 
     def save_chapter(self, chapter_num: int, content: str, output_dir: Optional[str] = None) -> str:
@@ -458,15 +465,15 @@ class _RebirthRevengeGeneratorV2Core:
     def _get_chapter_role_hint(self, chapter_num: int) -> str:
         if chapter_num == 1:
             return """
-【本章职责（第1章）】重点写：ICU环境、家属冷漠、生理痛苦、第一重背叛确认。不要展开社会舆论或情感背叛，留到第2、3章。
+【本章职责（第1章）】重点写：上一世临死前被学术界/市场人士嘲笑、对滞胀历史知识的无力感、未能保护普通人的不甘。不要出现重生后的1968年场景。
 """
         if chapter_num == 2:
             return """
-【本章职责（第2章）】重点写：手机/直播/恶评、舆论绞杀、丈夫公开切割。「她不仅快死了，还被全网羞辱」。不要重复第1章的病床描写，不要写拥抱/情感背叛，留到第3章。
+【本章职责（第2章）】重点写：在1968年美国大学场景中醒来，通过报纸、课程表、美元金价、股市与越战新闻确认时间回溯。不要立刻暴富，不要展开权贵阴谋。
 """
         if chapter_num == 3:
             return """
-【本章职责（第3章）】重点写：看到拥抱、彻底确认最爱的人是主谋、录音/最后证据、死亡或意识断裂导向重生。与前两章形成「身体濒死→社会抛弃→情感致命一击」的递进。
+【本章职责（第3章）】重点写：第一次学术会议或课堂预警，主角提出滞胀不可避免并遭权威教授/同僚嘲笑，形成“被羞辱但开始布子”的第一轮现实压力。
 """
         return ""
 
@@ -494,12 +501,15 @@ class _RebirthRevengeGeneratorV2Core:
         global_seed_progress: str = "",
         chapter_constraints: Optional[List[str]] = None,
     ) -> str:
-        prompt = f"""角色：你是专业小说作者，擅长重生复仇短剧正文。
+        prompt = f"""角色：你是专业小说作者，擅长欧美风格重生经济年代小说正文。
 
 【核心要求】
 1. 严格按本章节拍卡与梗概推进，不得偏离；节拍卡中的每一拍都必须写到位，不得跳过或一笔带过。
 2. 字数：至少1000字，建议1000-1400字，单章不宜超过1600字（避免跑偏）。第三人称，快节奏，结尾留悬念。
 3. 主线优先，禁止随意新增无关支线。
+
+【本项目主题硬锁定】
+{constraints_text()}
 """
         if need_prev_life and prev_life_clue and chapter_num not in (1, 2):
             past_ratio_min = 0.35
@@ -509,11 +519,11 @@ class _RebirthRevengeGeneratorV2Core:
 - 本章**必须**出现一段完整的「上一世受害」回忆段落，插入位置须服从梗概中的 flashback_breakpoint（{flashback_breakpoint_hint or "在节拍卡标明的那一拍之后"}）。
 - **占比强制**：正文中上一世相关内容字数须占全章的 **{int(past_ratio_min*100)}%~{int(past_ratio_max*100)}%**，不得用一句“像上一世那样”带过。
 - **四步结构**（上一世段落必须依次包含，写成可感知场景，禁止写成摘要）：
-  ① 假性温和：先给她一点希望（某人表面和气/场面看似正常）。
+  ① 假性温和：先给主角一点希望（某人表面和气/场面看似正常）。
   ② 突然反咬：有人当众翻旧账、倒打一耙或栽赃（谁先开口、说了什么、其他人什么反应）。
-  ③ 无人帮她：她想解释却被打断、无人声援、沉默或附和（女主当时怎么僵住、身体反应）。
-  ④ 结果性伤害：丢脸、失去机会、关系破裂或当众被“定罪”（最后是谁定了她的罪、她当时感受）。
-- 用「上一世，我……」「记得在上一世……」等句式在正文中点明回忆；不准只写“上一世她也曾被他们陷害”这类信息句，必须写**具体对话、动作、反应**。
+  ③ 无人帮他：他想解释却被打断、无人声援、沉默或附和（主角当时怎么僵住、身体反应）。
+  ④ 结果性伤害：丢脸、失去机会、公共信用被摧毁或被当众嘲笑（最后是谁定了他的罪、他当时感受）。
+- 用「上一世，我……」「记得在上一世……」等句式在正文中点明回忆；不准只写“上一世他也曾被他们嘲笑”这类信息句，必须写**具体对话、动作、反应**。
 """
         else:
             prompt += """
@@ -522,16 +532,16 @@ class _RebirthRevengeGeneratorV2Core:
         if chapter_num == 1:
             prompt += """
 【重生前限制（第1章）】
-- 本章只写上一世临死前的经历（ICU/病房/被抛弃抢救/被背叛等），正文中**禁止出现“重生”“回到过去”“第二次人生”等字样**。
-- 结尾只能停留在她意识到“自己被害死/要死了”的绝望感，不能意识到自己还有第二次机会或会重来一次。
+- 本章只写上一世临死前的经历（被学术界/市场人士嘲笑、无力改变普通人的通胀命运、带着历史知识死去），正文中**禁止出现“重生”“回到过去”“第二次人生”等字样**。
+- 结尾只能停留在他意识到“自己要死了却仍未改变历史”的绝望感，不能意识到自己还有第二次机会或会重来一次。
 """
         if chapter_num == 2:
             prompt += """
 【重生觉醒写法（第2章）】
-- 开篇先写她在熟悉环境中醒来，感受到身体状态、时间、环境的异常，重点是“震惊”和“不适应”，不要一上来就心想“我重生了”。
-- 接下来通过对比具体证据（日期、手机信息、亲人/同事状态等），从“怀疑是梦/记错时间”逐步过渡到“越来越不对劲”。
-- 在收集到足够多不正常的细节之后，才允许她在内心明确意识到“这是回到过去/自己重来了一次”，届时才可以在内心或独白中出现“重生”概念。
-- 严禁一开篇就直接写“她意识到自己重生了”，必须有“震惊 → 怀疑 → 验证 → 确认”的过程。
+- 开篇先写他在1968年的美国大学办公室/教师公寓中醒来，感受到身体状态、时间、环境的异常，重点是“震惊”和“不适应”，不要一上来就心想“我重生了”。
+- 接下来通过对比具体证据（报纸日期、课程表、美元金价、越战/选举/股市新闻、同事状态等），从“怀疑是梦/记错时间”逐步过渡到“越来越不对劲”。
+- 在收集到足够多不正常的细节之后，才允许他在内心明确意识到“这是回到1968年/自己重来了一次”，届时才可以在内心或独白中出现“重生”概念。
+- 严禁一开篇就直接写“他意识到自己重生了”，必须有“震惊 → 怀疑 → 验证 → 确认”的过程。
 """
         if chapter_num > 1 and (prev_tail_scene or prev_unresolved_hook):
             prompt += """
@@ -676,9 +686,9 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
                 mo_raw = card.get("main_opponent")
                 if isinstance(mo_raw, str) and mo_raw.strip():
                     mo = mo_raw.strip()
-            # 兜底：至少包含女主
-            if "沈清欢" not in allowed:
-                allowed = ["沈清欢"] + allowed
+            # 兜底：至少包含主角
+            if MAIN_PROTAGONIST not in allowed:
+                allowed = [MAIN_PROTAGONIST] + allowed
             try:
                 return retrieve_context_for_chapter(
                     chapter_num=chapter_num,
@@ -901,7 +911,9 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
 
         # 拼 prompt（确保章节执行卡是唯一剧情决策来源）
         lines: List[str] = []
-        lines.append("你是重生复仇短剧作家。请严格执行【章节执行卡】并直接输出正文，不要解释，不要新增主线/新证据类型。")
+        lines.append("你是欧美风格重生经济年代小说作家。请严格执行【章节执行卡】并直接输出正文，不要解释，不要新增主线/新证据类型。")
+        lines.append("【本项目主题硬锁定】")
+        lines.append(constraints_text())
         lines.append("")
         lines.append("【优先级规则】")
         lines.append("- 以【章节执行卡】为最高优先级；章节卡与其他信息冲突时，必须忽略其他信息。")
@@ -1012,12 +1024,12 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
                 f"- 事件簇 {cluster_id}《{cluster_name}》，核心爽点：{core_payoff}；主要对手：{main_opp}。\n"
                 f"- 上一世悲剧前提：{prev_tragedy}\n"
                 f"- 今生在本簇中的大致反击方式：{this_revenge}\n"
-                f"- 上一世留下、今生可利用的信息差：{info_gap or '（请在正文中具体写出：她知道了哪些别人不知道的内幕、漏洞、时间节点或关系网，从而能提前一步反杀）'}\n"
+                f"- 上一世留下、今生可利用的信息差：{info_gap or '（请在正文中具体写出：他知道哪些别人不相信的经济节点、政策转向、资产价格变化或供应链瓶颈，从而能提前一步逆周期布局）'}\n"
                 f"- 本簇结束结果：{outcome}"
             )
 
         # 实体白名单/黑名单：锁定本簇角色，禁止长篇式扩张
-        allowed = card.get("allowed_roles") or ["沈清欢", main_opp or "本簇主对手"]
+        allowed = card.get("allowed_roles") or [MAIN_PROTAGONIST, main_opp or "本簇主对手"]
         forbidden = card.get("forbidden_roles") or DEFAULT_FORBIDDEN_NEW_ROLES
         if isinstance(allowed, list):
             allowed_str = "、".join(allowed) + "、" + DEFAULT_ALLOWED_SUPPORT
@@ -1031,7 +1043,7 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
             "\n【本章允许/禁止出场角色】（硬性约束）\n"
             f"- 本章允许重点出场：{allowed_str}。\n"
             f"- 本章禁止引入的新核心角色/元素：{forbidden_str}。\n"
-            "- 禁止出现“系统提示音”“神秘人”“神秘司机”“苏晚晴”等未在本簇规划中的角色或设定；证据必须来自本簇信息差（如值班室笔记、病历篡改），不得改为“神秘人送U盘/录像”。"
+            "- 禁止出现“系统提示音”“神秘人”“神秘司机”“苏晚晴”等未在本簇规划中的角色或设定；落锤材料必须来自本簇经济信息差（如美元脱锚、通胀数据、固定利率贷款、能源/仓储/铁路合同），不得改为“神秘人送U盘/录像”。"
         )
 
         # 本章执行任务清单（来自簇级执行计划）
@@ -1066,7 +1078,7 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
         extra_lines.append(
             "\n【强约束：本簇闭环优先级高于长线悬念】（必须遵守）\n"
             "1. 本章若属于某事件簇的中后段，不得新增会独立展开的新核心人物、新组织、新阴谋线。\n"
-            "2. 本簇完结前，禁止使用“幕后还有更大黑手”“她才发现真正的敌人另有其人”等扩世界观写法。\n"
+            "2. 本簇完结前，禁止使用“幕后还有更大黑手”“他才发现真正的敌人另有其人”等扩世界观写法。\n"
             "3. 本簇最后一章必须先兑现本簇核心爽点（举报/揭穿/处罚/职业毁灭等），再允许留下一个极小的余波钩子。\n"
             "4. 若篇幅不足，优先删去神秘感、环境描写、追踪桥段，也必须保留证据链与反杀结果。优先级：闭环完成 > 证据链显性 > 爽点兑现 > 小说感。"
         )
@@ -1104,27 +1116,27 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
                 f"第{span_start}-{span_end}章" if span_start and span_end else f"共 {cluster_total} 章"
             )
             extra_lines.append(
-                "\n【情节组闭环与信息差使用要求】\n"
-                f"- 本情节组覆盖 {cluster_range_str}，叙事骨架必须是「旧局重演」：先让读者认出**旧局/旧招**在今生重演，再写她如何**凭记忆提前布子**，然后写**对方照旧出招**，最后**关键时刻反卡落锤**；禁止把整组写成都市调查取证文。\n"
-                "- 上一世悲惨遭遇必须在情节组内写厚：至少有一章集中写**完整上一世受害段落**（具体场景、对话、屈辱与无助），不能只用一句「上一世也曾」带过。\n"
-                "- 整个情节组的总字数结构建议为：上一世相关内容约占 35%~50%，今世反击约占 50%~65%；不是每一章都平均摊，而是分工完成。\n"
+            "\n【情节组闭环与信息差使用要求】\n"
+                f"- 本情节组覆盖 {cluster_range_str}，叙事骨架必须是「经济周期旧局重演」：先让读者认出**错误共识/危机信号**在今生重演，再写主角如何**凭记忆和经济学判断提前布子**，然后写**对方照旧误判或施压**，最后**关键时刻用市场结果/合同/公开预警落锤**；禁止把整组写成都市调查取证文。\n"
+                "- 上一世羞辱与不甘必须在情节组内写厚：至少有一章集中写**完整上一世受挫/被嘲笑段落**（具体场景、对话、屈辱与无助），不能只用一句「上一世也曾」带过。\n"
+                "- 整个情节组的总字数结构建议为：上一世相关内容约占 25%~40%，今世逆周期布局与危机兑现约占 60%~75%；不是每一章都平均摊，而是分工完成。\n"
                 f"- 当前是本情节组中的第 {cluster_idx}/{cluster_total} 章，请按本章章节角色（{role_v2}）承担相应一段。\n"
-                "- 信息差与材料/证据是**落锤工具**：用来坐实她早已知道的事，不能代替「记忆先于证据」的推进；禁止依赖匿名邮件、陌生人递材料、匿名爆料等天降线索。\n"
-                "- 今生的反击要让旁人感到违和：她为何能提前踩准布局；旁人不能一眼看出重生，但读者要清楚她赢在**记得旧局**。\n"
+                "- 信息差与数据/合同/资产表现是**落锤工具**：用来坐实他早已知道的经济周期，不能代替「记忆和判断先于证据」的推进；禁止依赖匿名邮件、陌生人递材料、匿名爆料等天降线索。\n"
+                "- 今生的反击要让旁人感到违和：他为何能提前踩准周期；旁人不能一眼看出重生，但读者要清楚他赢在**记得历史与敢承担风险**。\n"
             )
         else:
             extra_lines.append(
                 "\n【情节组闭环与信息差使用要求】\n"
-                "- 每一个事件簇必须在本簇内完成「旧局重演」式复仇：认出旧局→提前布子→对方照旧出招→反卡落锤；禁止写成调查取证文。\n"
-                "- 上一世悲惨遭遇必须写厚：至少一章写足完整受害段落；信息差与证据是落锤工具，不能当故事发动机。\n"
-                "- 禁止匿名邮件、陌生人递材料、匿名爆料等天降线索；本世线索只能来自她凭记忆主动取证或对手按老剧本露破绽。\n"
+                "- 每一个事件簇必须在本簇内完成「经济周期旧局重演」式爽点：认出危机信号→提前布子→对方照旧误判/施压→反卡落锤；禁止写成调查取证文。\n"
+                "- 上一世羞辱与不甘必须写厚：至少一章写足完整受挫段落；信息差与数据/合同是落锤工具，不能当故事发动机。\n"
+                "- 禁止匿名邮件、陌生人递材料、匿名爆料等天降线索；本世推进只能来自他凭记忆主动布局、对手按旧共识误判，或市场节点如期兑现。\n"
             )
 
         # 根据角色给出更具体的节拍建议
         role_desc = ""
         if role_v2 == "present_setup":
             role_desc = (
-                "本章重点：旧局重现与提前布子——沈清欢认出与上一世同一套局/同一套把戏，并立刻开始针对性布置；"
+                f"本章重点：经济周期旧局重现与提前布子——{MAIN_PROTAGONIST}认出与上一世同一段危机信号/同一套错误共识，并立刻开始针对性布置；"
                 "可以极短闪回点到上一世，但不得在本章展开完整上一世受害（留给专章）；"
                 "禁止把本章写成调查取证、到处找线索或等陌生人递材料。"
             )
@@ -1135,14 +1147,14 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
             )
         elif role_v2 == "present_revenge":
             role_desc = (
-                "本章重点：今生反击与结果，围绕本簇 core_payoff 把爽点打满；"
-                "先写对方照旧出招/走到她预埋的卡点，再写证据/材料当场落锤坐实——证据是锤，不是故事发动机；"
+                "本章重点：今生逆周期反卡与结果，围绕本簇 core_payoff 把爽点打满；"
+                "先写对方照旧误判/走到他预埋的卡点，再写数据/合同/资产表现当场落锤坐实——证据是锤，不是故事发动机；"
                 "写清对手具体后果。"
             )
         elif role_v2 == "present_past_mix":
             role_desc = (
                 "本章重点：今生遭遇与上一世片段交错对照，"
-                "通过“重复的台词/动作/场景”触发记忆，对比她这一次的不同选择。"
+                "通过“重复的台词/动作/场景”触发记忆，对比他这一次的不同选择。"
             )
         elif role_v2 == "slow_burn_press":
             role_desc = (
@@ -1186,8 +1198,8 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
             )
         elif role_v2 == "present_mid_bridge":
             role_desc = (
-                "本章重点：诱敌与压实——写对方照旧按旧剧本出招，她如何收紧已布好的子；"
-                "核实或取出她「上一世就知道存在」的材料，而非首次发现新线索；"
+                "本章重点：诱敌与压实——写对方照旧按旧共识误判或施压，他如何收紧已布好的逆周期筹码；"
+                "执行或验证他「上一世就知道会发生」的市场/政策/供应链节点，而非首次发现新线索；"
                 "禁止用匿名邮件、匿名爆料、陌生人递材料推动主线。"
             )
 
@@ -1204,13 +1216,13 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
         # 约束结尾钩子的写法：禁止空洞的“更大危险将来临”式台词，要求用具体事件收尾
         extra_lines.append(
             "\n【结尾钩子写法限制】\n"
-            "- 严禁使用空洞的预感型句子作为章节结尾，例如“他隐约觉得更大的危险正在逼近”“她知道这只是更大风暴的开始”等，这类句子没有具体事件，不具备吸引力。\n"
+            "- 严禁使用空洞的预感型句子作为章节结尾，例如“他隐约觉得更大的危险正在逼近”“他知道这只是更大风暴的开始”等，这类句子没有具体事件，不具备吸引力。\n"
             "- 尤其禁止出现类似“他知道，这场游戏还没有结束。”“真正的风暴，才刚刚开始。”之类只靠比喻/预感堆砌气氛的句子，一经出现请直接改写。\n"
             "- 章节结尾必须落在一个**具体、可视化的动作或事件瞬间**上，例如：\n"
             "  · 门被人猛地推开/门外突然传来急促的脚步声；\n"
-            "  · 某个关键人物在她转身要走时叫住她，说出半句话；\n"
+            "  · 某个关键人物在他转身要走时叫住他，说出半句话；\n"
             "  · 手机震动弹出一条出乎意料的信息/通话；\n"
-            "  · 她刚亮出的证据让现场某人脸色大变、话到嘴边却戛然而止。\n"
+            "  · 他刚亮出的数据、合同或市场结果让现场某人脸色大变、话到嘴边却戛然而止。\n"
             "- 请自行设计类似的“具体动作型钩子”，让读者停在一个悬在半空的画面上，而不是停在抽象感受上。"
         )
 
@@ -1221,9 +1233,9 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
 DEFAULT_FORBIDDEN_NEW_ROLES = [
     "神秘援手", "神秘司机", "系统", "系统提示音", "苏晚晴", "黑色轿车", "神秘人",
     "幕后黑手", "更大风暴", "真正的敌人", "神秘男人", "陌生女性盟友", "未规划的关键证人",
-]
+] + THEME_FORBIDDEN_ELEMENTS
 # 本章允许出场的通用配角描述（不写死具体姓名，避免与主对手混淆）
-DEFAULT_ALLOWED_SUPPORT = "医院同事、护士、主任、功能性配角"
+DEFAULT_ALLOWED_SUPPORT = "经济系同事、学术会议听众、华尔街基金经理、银行信贷员、农场主、仓储/铁路/能源行业配角、媒体记者、政策圈人士"
 
 # 重生复仇叙事：禁止「调查文」式天降线索（写入章节卡 must_not 与 critic 提示）
 REBIRTH_FORBIDDEN_DEUS_EX = [
@@ -1232,6 +1244,7 @@ REBIRTH_FORBIDDEN_DEUS_EX = [
     "老员工/陌生人未经铺垫突然递来唯一关键材料",
     "靠社交媒体发帖或声明完成主线翻盘",
     "隐藏文件夹/机密会议纪要突然揭示全部真相",
+    "把1970年代美国滞胀主线改写成医疗、娱乐圈或豪门婚恋主线",
 ]
 
 
@@ -1392,7 +1405,23 @@ def _infer_evidence_types_from_info_gap(info_gap: str) -> List[str]:
         if item not in evidences:
             evidences.append(item)
 
-    # 医疗/职业场景
+    # 经济年代文场景
+    if "美元" in t or "脱锚" in t or "金本位" in t:
+        add("美元脱锚/金价与汇率记录")
+    if "通胀" in t or "CPI" in t or "物价" in t:
+        add("通胀/CPI与物价数据")
+    if "石油" in t or "能源" in t:
+        add("石油供给/能源合同记录")
+    if "固定利率" in t or "贷款" in t or "债务" in t:
+        add("固定利率贷款与债务结构")
+    if "铁路" in t or "货运" in t or "仓库" in t or "物流" in t:
+        add("铁路货运/仓储合同")
+    if "农地" in t or "农场" in t:
+        add("农地与实物资产交易记录")
+    if "股市" in t or "成长股" in t or "漂亮股票" in t or "基金" in t:
+        add("股票持仓/基金交易记录")
+
+    # 兼容旧医疗/职业场景
     if "电子签名" in t:
         add("电子签名记录")
     if "用药剂量" in t:
@@ -1435,7 +1464,7 @@ def _infer_evidence_types_from_info_gap(info_gap: str) -> List[str]:
         add("接触记录/名单")
 
     if "证据" in t:
-        add("罪行证据")
+        add("落锤证据")
 
     # fallback：至少返回一个可用的“证据类型占位”
     if not evidences:
@@ -1490,9 +1519,12 @@ def _build_cluster_exec_plan_prompt(
         role_v2 = str(card.get("chapter_role_v2", "") or "").strip()
         chapter_roles.append(f"{ch}:{role_v2 or 'unknown'}")
 
-    return f"""你是重生复仇短剧/小说编剧。请基于【情节族】信息生成一个【证据链执行计划】。
+    return f"""你是欧美风格重生经济年代小说编剧。请基于【情节族】信息生成一个【落锤执行计划】。
 
-【叙事前提】本计划必须服务「旧局重演」式重生复仇：沈清欢凭上一世记忆**预判**旧招、提前布子；证据/材料只在**落锤**时坐实她早已知道的事，不能写成「调查偶然发现新线索」。
+【本项目主题硬锁定】
+{constraints_text()}
+
+【叙事前提】本计划必须服务「经济周期重演」式重生爽文：{MAIN_PROTAGONIST}凭上一世研究和记忆**预判**滞胀节点、提前布子；数据/合同/资产表现只在**落锤**时坐实他早已知道的周期判断，不能写成「调查偶然发现新线索」。
 禁止在剧情里依赖匿名邮件、陌生人递材料、匿名爆料作为唯一关键转折。
 
 【非常重要】输出必须是严格 JSON（不要 Markdown，不要解释文字），且可被 json.loads 直接解析。
@@ -1501,7 +1533,7 @@ def _build_cluster_exec_plan_prompt(
 2. evidence_chain 选择 2-3 个核心证据；每个证据必须给出：
    - evidence_id：E1/E2/E3...
    - evidence_type：用简短中文描述（需与 info_gap_from_prev_life 对齐）
-   - source：信息来源（须能解释为「她上一世已知/记得去何处取」，而非天降）
+   - source：信息来源（须能解释为「他上一世已知/记得哪个经济节点会发生」，而非天降）
    - acquire_chapter / verify_chapter / use_chapter：分别在 {start_ch}-{end_ch} 哪些章节发生（必须是章节号整数）
    - purpose：每个证据在剧情里的作用（兑现“重生复仇爽点链条”）
    - acquire_keywords / verify_keywords / use_keywords：用于 critic 判定动作是否发生在对应章节的关键词数组（每个数组至少 1 个关键词）
@@ -1634,7 +1666,7 @@ def _fallback_build_exec_plan_for_cluster(
         elif ch == end_ch:
             chapter_execution_focus[str(ch)] = "对方照旧出招→反卡落锤→按证据链公开结果"
         else:
-            chapter_execution_focus[str(ch)] = "诱敌压实：核实或取出她记忆中已知的材料，逼对方露破绽"
+            chapter_execution_focus[str(ch)] = "诱敌压实：执行或验证他记忆中已知的市场/政策/供应链节点，逼对方暴露误判"
 
     return {
         "cluster_id": str(cluster.get("cluster_id", "") or ""),
@@ -1722,6 +1754,10 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Any]:
     cid = cluster.get("cluster_id", "")
     name = cluster.get("name", "")
     main_opp = cluster.get("main_opponent", "")
+    protagonist = MAIN_PROTAGONIST
+    ps = cluster.get("user_protagonists")
+    if isinstance(ps, list) and ps:
+        protagonist = str(ps[0]) or MAIN_PROTAGONIST
     core_payoff = cluster.get("core_payoff", "")
     info_gap = (cluster.get("info_gap_from_prev_life") or "")
     outcome = cluster.get("cluster_outcome", "")
@@ -1738,8 +1774,8 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Any]:
             "goal": f"单章内完成：完整上一世受害段落 + 今生凭记忆预判旧招并完成反击，兑现本簇爽点：{core_payoff}",
             "must_include": [
                 "完整一段上一世受害（具体场景、对话、屈辱与无助，不得一句带过）",
-                "今生明确写出「认出旧局/记得对方会怎么出招」并提前布子",
-                "反击时证据/材料仅用于落锤坐实她已知的事，而非靠调查偶然发现",
+                "今生明确写出「认出经济周期旧局/记得危机会怎么发生」并提前布子",
+                "反击时数据/合同/资产表现仅用于落锤坐实他已知的周期判断，而非靠调查偶然发现",
                 "反杀结果或处罚落地",
             ],
             "must_not_include": DEFAULT_FORBIDDEN_NEW_ROLES + ["新幕后黑手", "只埋钩子不兑现"] + deus_forbid,
@@ -1750,17 +1786,17 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Any]:
         ch1, ch2 = start_ch, end_ch
         chapters_plan[str(ch1)] = {
             "goal": "完整展开上一世在本簇情境下如何被害（写足段落，不得一句带过），为下一章反杀蓄力",
-            "must_include": ["上一世具体受害过程", main_opp or "主对手", "与信息差相关的细节（她上一世如何被其害惨）"],
+            "must_include": ["上一世具体受害/被嘲笑过程", main_opp or "主对手", "与经济信息差相关的细节（他上一世如何因此被嘲笑、错失或无力救人）"],
             "must_not_include": ["无关支线角色抢戏"] + REBIRTH_FORBIDDEN_DEUS_EX[:3] + DEFAULT_FORBIDDEN_NEW_ROLES,
-            "ending": "回忆收束，读者清楚本簇仇人是谁、曾如何害她、她今生赢在记得旧局",
+            "ending": "回忆收束，读者清楚本簇对手是谁、上一世曾如何嘲笑/压制他、他今生赢在记得历史周期",
             "must_resolve_this_chapter": ["展开上一世悲剧", "明确主对手与信息差来源"],
         }
         chapters_plan[str(ch2)] = {
             "goal": f"对方照旧出招后当场反卡并完成：{core_payoff}，结果：{outcome or '对手付出代价'}",
             "must_include": [
-                "写出对方按旧套路施压或走到她预埋的卡点",
+                "写出对方按旧共识误判或走到他预埋的卡点",
                 "当众揭穿或举报",
-                "证据链闭环（显性使用" + required_evidence_hint + "，材料只坐实她早已知道的事）",
+                "落锤链闭环（显性使用" + required_evidence_hint + "，材料只坐实他早已知道的周期判断）",
                 "处罚/后果/职业毁灭或舆论崩塌",
             ],
             "must_not_include": ["只埋钩子不兑现", "更大风暴才刚开始", "新大Boss"] + REBIRTH_FORBIDDEN_DEUS_EX[:3] + DEFAULT_FORBIDDEN_NEW_ROLES,
@@ -1772,13 +1808,13 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Any]:
         ch1, ch_last = start_ch, end_ch
         chapters_plan[str(ch1)] = {
             "goal": (
-                f"旧局重现：沈清欢在与本簇主对手（{main_opp}）对峙/同场时，立刻认出这与上一世同一套局/同一套把戏；"
-                f"她应马上开始提前布子（时间、话术、走位、卡点），而不是慢慢调查。"
+                f"旧局重现：{protagonist}在与本簇主对手（{main_opp}）对峙/同场时，立刻认出这与上一世同一段经济周期/同一套错误判断；"
+                f"他应马上开始提前布子（资产、信贷、合同、学术发言或政策预警），而不是慢慢调查。"
             ),
             "must_include": [
-                "明确写出「认出旧局/记得对方会怎么出招」的心理与依据（可短，但必须可感知）",
-                "今生提前布子：她针对即将重演的旧招做出的具体安排",
-                f"信息差（{required_evidence_hint}）仅作为她已知「该去哪里、何时拿何物」的依据，不是本章才去「发现线索」",
+                "明确写出「认出经济周期旧局/记得关键节点会如何发生」的心理与依据（可短，但必须可感知）",
+                "今生提前布子：他针对即将重演的滞胀风险做出的具体安排",
+                f"信息差（{required_evidence_hint}）仅作为他已知如何判断周期的依据，不是本章才去「发现线索」",
             ],
             "must_not_include": [
                 "新幕后黑手",
@@ -1788,7 +1824,7 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Any]:
             ]
             + REBIRTH_FORBIDDEN_DEUS_EX
             + DEFAULT_FORBIDDEN_NEW_ROLES,
-            "ending": "旧局已对上号，对方尚未察觉她已提前布子；为下一章完整展开上一世受害蓄力",
+            "ending": "经济旧局已对上号，对方尚未察觉他已提前布子；为下一章完整展开上一世受挫蓄力",
             "must_resolve_this_chapter": ["锁定主对手", "认出旧局并提前布子", "禁止调查文推进"],
         }
         chapters_plan[str(ch1 + 1)] = {
@@ -1796,18 +1832,18 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Any]:
             "must_include": [
                 "上一世具体受害过程（至少写足一段完整段落，不得一句「上一世也曾」带过）",
                 (main_opp + "的主观恶意与手段") if main_opp else "主对手的主观恶意与手段",
-                f"与{required_evidence_hint}对应的关键细节（她上一世如何被这一信息差害惨）",
+                f"与{required_evidence_hint}对应的关键细节（他上一世如何因此被嘲笑、错失或无力救人）",
                 "点明：今生反击的主动力是记忆与预判，不是偶然发现新材料",
             ],
             "must_not_include": ["无关支线角色抢戏"] + REBIRTH_FORBIDDEN_DEUS_EX + DEFAULT_FORBIDDEN_NEW_ROLES,
-            "ending": "读者清楚她为何恨、为何这一世能提前卡位；材料/证据仅为后续落锤准备",
+            "ending": "读者清楚他为何不甘、为何这一世能提前卡位；数据/合同/资产表现仅为后续落锤准备",
             "must_resolve_this_chapter": ["完整上一世受害段落", "记忆与预判动机立住"],
         }
         chapters_plan[str(ch_last)] = {
             "goal": f"关键时刻反卡与结果落地：兑现本簇爽点 {core_payoff}，结局 {outcome or '职业毁灭/失去信任'}",
             "must_include": [
                 "对方按上一世老套路/旧剧本出手或施压（照旧出招）",
-                "她在关键时刻反卡：当场揭穿/亮出落锤材料（材料只坐实她早已知道的事）",
+                "他在关键时刻反卡：用市场结果、合同、资产表现或公开预警落锤（材料只坐实他早已知道的周期判断）",
                 f"显性使用{required_evidence_hint}完成闭环",
                 "处罚/吊销/震动或舆论反噬等具体后果",
             ],
@@ -1820,17 +1856,17 @@ def _build_cluster_plan(cluster: Dict[str, Any]) -> Dict[str, Any]:
             mid_idx += 1
             if length == 4:
                 bridge_goal = (
-                    "诱敌与压实：对方按旧招继续施压或走流程；沈清欢只去核实或取出她「上一世就知道存在」的材料，"
+                    f"诱敌与压实：对方按旧有经济迷信继续施压或走流程；{protagonist}只执行他「上一世就知道必然有效」的逆周期步骤，"
                     "必要时补刀对话压迫，不把整章写成搜集新线索。"
                 )
                 bridge_must = [
                     main_opp or "主对手",
-                    "写出「对方照旧出招」与「她早有准备」的对位",
+                    "写出「对方照旧误判/施压」与「他早有准备」的对位",
                     f"与{required_evidence_hint}相关的动作仅为核实/取出/封死退路，而非首次发现",
                 ]
             else:
                 if mid_idx == 1:
-                    bridge_goal = "压迫升级：对方继续按旧剧本出招；她利用已布好的子逐步收紧，不引入新主线"
+                    bridge_goal = "压迫升级：对方继续按旧共识误判或施压；他利用已布好的逆周期筹码逐步收紧，不引入新主线"
                 elif mid_idx == 2:
                     bridge_goal = "将记忆层面的预判落实为可落锤的动作链，逼迫对手在公开场合露出破绽"
                 else:
@@ -1886,6 +1922,8 @@ def _build_cards_from_clusters(clusters: List[Dict[str, Any]]) -> Dict[int, Dict
         info_gap = cluster.get("info_gap_from_prev_life", "")
         cluster_outcome = cluster.get("cluster_outcome", "")
         escalation = cluster.get("escalation_level", 1)
+        ps = cluster.get("user_protagonists")
+        protagonist = str(ps[0]) if isinstance(ps, list) and ps else MAIN_PROTAGONIST
 
         plan = _build_cluster_plan(cluster)
         plan_chapters = (plan.get("chapters") or {})
@@ -1955,9 +1993,11 @@ def _build_cards_from_clusters(clusters: List[Dict[str, Any]]) -> Dict[int, Dict
                 "chapter_must_not_include": ch_plan.get("must_not_include", []),
                 "chapter_ending": ch_plan.get("ending", ""),
                 "must_resolve_this_chapter": ch_plan.get("must_resolve_this_chapter", []),
-                "allowed_roles": [ "沈清欢", main_opp ] if main_opp else [ "沈清欢" ],
+                "allowed_roles": [protagonist, main_opp] if main_opp else [protagonist],
                 "forbidden_roles": list(plan.get("forbidden_new_core_roles", DEFAULT_FORBIDDEN_NEW_ROLES)),
             }
+            card["theme_constraints"] = constraints_text()
+            attach_theme_contract(card)
             cards[ch] = card
     return cards
 
@@ -2059,7 +2099,7 @@ def _cluster_critic(
         violations.append(
             "疑似天降线索套路：" + "、".join(deus_hits[:5]) + "（本世线索应来自记忆主动取证或对手照旧出招露破绽）"
         )
-        rewrite_advice.append("删掉匿名爆料/陌生人递材料等桥段，改为她凭上一世记忆主动卡点或对手按老剧本自露破绽。")
+        rewrite_advice.append("删掉匿名爆料/陌生人递材料等桥段，改为他凭上一世记忆主动布局，或对手按旧经济共识误判后自露破绽。")
 
     fmt_leak = _critic_format_leak(full_text)
     if fmt_leak:
@@ -2541,13 +2581,16 @@ def _build_cluster_detailed_synopsis_prompt(
         if ep_lines:
             exec_plan_block = "\n【落锤与节奏锚点（禁止写成调查小说主线）】\n" + "\n".join(ep_lines) + "\n"
 
-    return f"""你是重生复仇短剧/小说编剧。请基于【情节族】信息，生成一个“可直接驱动分章节拍卡与正文”的【详细完整梗概】。
+    return f"""你是欧美风格重生经济年代小说编剧。请基于【情节族】信息，生成一个“可直接驱动分章节拍卡与正文”的【详细完整梗概】。
+
+【本项目主题硬锁定】
+{constraints_text()}
 
 要求（非常重要）：
-1. 叙事骨架必须是「旧局重演链」：旧局在今生再现→沈清欢认出并提前布子→完整展开至少一段上一世受害（屈辱、具体场景与对话）→对方照旧出招→关键时刻反卡落锤；禁止写成调查取证、到处找材料、靠匿名线索推进。
-2. 必须写清“上一世留下的信息差”是什么（可具体到证据/记录形态），以及她如何凭记忆**预判**对方会怎么走、证据只在落锤时坐实——证据是锤，不是故事发动机。
-3. 必须写出复仇细节爽感：反杀落在具体动作/对话/表情/场面上，并说明“为什么有效”（赢在记得旧局，不是赢在偶然发现）。
-4. 必须把复仇方式和核心爽点与 `core_payoff` 对齐；
+1. 叙事骨架必须是「经济周期旧局重演链」：危机信号在今生再现→主角认出并提前布子→完整展开至少一段上一世受挫/被嘲笑（屈辱、具体场景与对话）→对方照旧误判或施压→关键时刻用市场结果/合同/公开预警落锤；禁止写成调查取证、到处找材料、靠匿名线索推进。
+2. 必须写清“上一世留下的信息差”是什么（可具体到数据/合同/政策时间点/市场节点），以及他如何凭记忆和经济判断**预判**对方会怎么走、证据只在落锤时坐实——证据是锤，不是故事发动机。
+3. 必须写出爽感细节：反卡落在具体动作/对话/表情/场面上，并说明“为什么有效”（赢在记得历史、懂经济周期、敢承担风险，不是赢在偶然发现）。
+4. 必须把逆周期布局方式和核心爽点与 `core_payoff` 对齐；
 5. 禁止引入本情节族未规划的新核心人物/幕后系统/系统提示音等旁支要素；禁止匿名邮件、陌生人递材料、匿名爆料作为唯一关键转折。
 {rewrite_block}{exec_plan_block}
 
@@ -2947,13 +2990,16 @@ def _build_cluster_beats_prompt(
 }
 """.strip("\n")
 
-    return f"""你是短剧/小说编剧。请把【情节族梗概】进一步拆成“每章节拍卡（beats）”，以便后续连续正文生成并最终切分成章节。
+    return f"""你是欧美风格重生经济年代小说编剧。请把【情节族梗概】进一步拆成“每章节拍卡（beats）”，以便后续连续正文生成并最终切分成章节。
+
+【本项目主题硬锁定】
+{constraints_text()}
 
 要求（非常重要）：
 1. 输出必须是严格 JSON（不要 Markdown，不要解释文字），且 JSON 可被直接 json.loads 解析；
    必须保证所有 JSON 字符串字段内部不得出现真实换行；若需要换行请用 \\n 表示；整份 JSON 尽量输出为一行（允许空白分隔）。
 2. 对每个章节：beats 必须 8-10 条，每条为一个“结构化节拍卡对象”，按情节点顺序排列；
-   每条必须优先写满「重生反制四段式」：old_trap_signal（今生何信号让她认出上一世那一局）/ preemptive_move（她提前布了什么子）/ opponent_old_move（对方按老套路如何出招）/ reversal_trigger（她在哪一刻反卡）；再补 scene_goal / visual_elements / emotion_push / info_delta / foreshadow / relationship_push；must_not 至少 1-2 条；
+   每条必须优先写满「经济周期重演反制四段式」：old_trap_signal（今生何经济信号让他认出上一世那一段危机）/ preemptive_move（他提前布了什么逆周期筹码）/ opponent_old_move（对方按旧共识如何误判或施压）/ reversal_trigger（他在哪一刻用市场结果/合同/公开预警反卡）；再补 scene_goal / visual_elements / emotion_push / info_delta / foreshadow / relationship_push；must_not 至少 1-2 条；
    evidence_form 仅写「落锤材料」一句（可选），不得替代四段式成为本章主轴；禁止把 beats 设计成「找线索→核实→联系媒体→发布会」。
 3. 若该章需要插入上一世回忆（根据该章 `chapter_role_v2`），则在 JSON 字段 flashback_in_beat_idx 写出对应 beats 下标（从 0 开始），并要求该 beats 对象的 `prev_life_memory_brief` 给出上一世受害回忆的具体内容要点（用于正文直接插入）；不需要则填 null 且所有 beats 的 `prev_life_memory_brief` 为空字符串；
 4. chapter_type 必须从：revenge_payoff / grievance_build / present_only / cross_chapter 中二选一或多选（但每章只能给一个）；
@@ -3071,13 +3117,16 @@ def _build_single_chapter_beats_prompt(
 }
 """.strip("\n")
 
-    return f"""你是重生复仇短剧/小说编剧。请为“第{chapter_num}章”输出该章的【节拍卡 beats】（只输出一个 JSON 对象）。
+    return f"""你是欧美风格重生经济年代小说编剧。请为“第{chapter_num}章”输出该章的【节拍卡 beats】（只输出一个 JSON 对象）。
+
+【本项目主题硬锁定】
+{constraints_text()}
 
 要求（非常重要）：
 1. 输出必须是严格 JSON（不要 Markdown，不要解释文字），JSON 可被直接 json.loads 解析；
 2. 必须保证所有 JSON 字符串字段内部不得出现真实换行；若需要换行请用 \\n 表示；整份 JSON 尽量输出为一行（允许空白分隔）；
 3. beats 必须 8-10 条，每条为一个结构化 beats 对象，按情节点顺序排列；
-4. 每条必须优先写满 old_trap_signal / preemptive_move / opponent_old_move / reversal_trigger（重生反制四段式），再写 scene_goal / visual_elements / emotion_push / info_delta / foreshadow / relationship_push / must_not / prev_life_memory_brief；evidence_form 仅一句落锤材料（可选），不得替代四段式；
+4. 每条必须优先写满 old_trap_signal / preemptive_move / opponent_old_move / reversal_trigger（经济周期重演反制四段式），再写 scene_goal / visual_elements / emotion_push / info_delta / foreshadow / relationship_push / must_not / prev_life_memory_brief；evidence_form 仅一句落锤材料（可选），不得替代四段式；
 5. 若 need_prev_life=True，则 flashback_in_beat_idx 必须为非 null 的整数，且必须且只能在该 beats 下标对应的那一拍里给出非空 prev_life_memory_brief；其它 beats 的 prev_life_memory_brief 只能为空字符串。
    若 need_prev_life=False，则 flashback_in_beat_idx 必须为 null，并且所有 beats 的 prev_life_memory_brief 必须为空字符串；
 6. open_from_prev 必须体现与上一章未决点的承接：{("；".join(open_seed_lines))}；
@@ -3275,13 +3324,18 @@ def _build_cluster_body_part_prompt(
             "- 若篇幅不足，优先砍掉环境/感受性描写，也要保证‘结果已发生且被看到’。"
         )
 
-    return f"""你是重生复仇短剧作家。请输出“第{chapter_num}章”的连续正文段落。要求：
+    return f"""你是欧美风格重生经济年代小说作家。请输出“第{chapter_num}章”的连续正文段落。
+
+【本项目主题硬锁定】
+{constraints_text()}
+
+要求：
 
 1. 必须严格按该章节拍卡 `beats` 的顺序推进，不得跳拍；每一顺序片段至少写 160-220 字，用自然段落衔接，禁止把多段压成一句带过。
 2. 开头 120-180 字必须体现「承接上一段未决点」的动作与情绪（见下方「上一段结尾承接」）；正文中禁止出现英文字段名或 JSON 键名。
 3. 若「回忆插入点」为顺序片段下标 {flashback_idx_text}（从 0 起计；若为 null 则本章不插回忆），则在该片段结束后插入完整上一世受害回忆段落，围绕该片段中的回忆要点展开（不要加小标题，不要写成调查取证主线）。
 4. 本章总字数不少于 {MIN_CHAPTER_CHARS_V2} 字（建议 1600-2200 字）；未达标须继续扩写。
-5. 叙事发动机必须是「旧局信号→提前布子→对方老招→反卡」；材料/记录仅在反卡或对峙时作为落锤出现，禁止写成「为找材料而奔波」的调查文；禁止匿名邮件、加密邮件、自由撰稿人、独立媒体声明、新闻发布会、档案室翻找、微博爆料链作为本章主线。
+5. 叙事发动机必须是「经济危机信号→提前布子→对方旧共识误判/施压→市场或合同落锤」；材料/记录仅在反卡或对峙时作为落锤出现，禁止写成「为找材料而奔波」的调查文；禁止匿名邮件、加密邮件、自由撰稿人、独立媒体声明、新闻发布会、档案室翻找、微博爆料链作为本章主线。
    - 若本章允许出现的标记不为空，对峙落锤处可含一个允许的【E…】标记；
    - 若允许标记为空，则不得出现【E…】，但仍可写当场出示材料的对白与动作；
    - 不得出现本章禁止的标记。
@@ -3727,7 +3781,7 @@ def _generate_cluster_continuous_and_split_v2(
                     f"{one_line_g}\n{cluster_state.get('last_scene', '')}\n"
                     f"{cluster_state.get('last_hook', '')}\n{prev_life_clue or ''}"
                 ).strip()
-            target_context = "主角: 沈清欢, 背景: 现代都市, 重生复仇, 职场复仇"
+            target_context = f"主角: {MAIN_PROTAGONIST}, 背景: 1968-1979美国滞胀时代, 欧美经济年代文, 重生, 逆周期布局, 华尔街, 政策圈, 石油危机, 高利率"
             rag_samples = search_rebirth_samples_for_chapter(
                 rag_query,
                 target_context,
@@ -4291,4 +4345,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
