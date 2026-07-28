@@ -1,0 +1,230 @@
+[
+  {
+    "cluster_id": "EC13",
+    "chapter_span": [
+      23,
+      24
+    ],
+    "is_final_arc": false,
+    "name": "合约陷阱与合同修订权",
+    "arc_id": "A07",
+    "core_payoff": "麦珂夺回合同修订权，反制托马斯·布莱克的阴谋。",
+    "main_opponent": "托马斯·布莱克",
+    "escalation_level": "中",
+    "prev_life_tragedy": "上一世他被强制签署霸王补充协议，失去遗产控制权。",
+    "info_gap_from_prev_life": "麦珂记得合同条款的具体措辞和签署流程。",
+    "this_life_revenge": "他利用合同漏洞主动提出修订请求，逼迫托马斯·布莱克露出破绽。",
+    "cluster_outcome": "托马斯·布莱克的阴谋被终止，麦珂获得合同修订权。",
+    "summary": "麦珂识破托马斯·布莱克的合同陷阱，夺回修订权。",
+    "notes": [
+      "麦珂在签约前设局，让托马斯·布莱克亲自说出关键条款。",
+      "托马斯·布莱克试图拖延，但麦珂坚持当场修改。",
+      "合同修订后，麦珂掌握更大的话语权。"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 23,
+        "action": "麦珂在律师陪同下召开紧急会议，指出合同中的隐藏条款。",
+        "opponent_reaction": "托马斯·布莱克面露不悦，试图转移话题。",
+        "result": "麦珂成功引起律师关注，合同修订程序启动。"
+      },
+      {
+        "chapter": 24,
+        "action": "麦珂当众朗读合同原文，并逐条反驳不合理条款。",
+        "opponent_reaction": "托马斯·布莱克不得不承认部分条款存在争议。",
+        "result": "合同修订权正式归还麦珂，托马斯·布莱克失去对他的操控力。"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC14",
+    "chapter_span": [
+      25,
+      26
+    ],
+    "is_final_arc": false,
+    "name": "粉丝团夺回票务控制权",
+    "arc_id": "A08",
+    "core_payoff": "麦珂通过粉丝团核验票务，夺回票池控制权。",
+    "main_opponent": "卡尔·霍尔特",
+    "escalation_level": "中",
+    "prev_life_tragedy": "上一世门票被内部人士垄断，影响票房与口碑。",
+    "info_gap_from_prev_life": "麦珂记得票务分配方式和黄牛操作手法。",
+    "this_life_revenge": "他联合“星火”歌迷会进行实名核验，揭露票务黑幕。",
+    "cluster_outcome": "主办方被迫调整售票政策，麦珂掌控票务流向。",
+    "summary": "麦珂借助粉丝团打破票务垄断，恢复公众信任。",
+    "notes": [
+      "“星火”歌迷会协助核查票务数据，发现异常预订。",
+      "麦珂公开质疑票务系统，引发舆论压力。",
+      "主办方不得不重新开放票池，避免进一步损失。"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 25,
+        "action": "麦珂邀请“星火”歌迷会协助核实票务数据。",
+        "opponent_reaction": "卡尔·霍尔特试图阻挠，称这是不必要的麻烦。",
+        "result": "票务核查开始，黄牛预留票被曝光。"
+      },
+      {
+        "chapter": 26,
+        "action": "麦珂公开播放核查结果，质问主办方是否知情。",
+        "opponent_reaction": "主办方被迫道歉并承诺调整售票机制。",
+        "result": "票务控制权回归麦珂手中，粉丝信任度提升。"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC15",
+    "chapter_span": [
+      27,
+      28
+    ],
+    "is_final_arc": false,
+    "name": "母带回购与版权控制",
+    "arc_id": "A09",
+    "core_payoff": "麦珂夺回一首被低价打包的母带，强化版权控制。",
+    "main_opponent": "唱片联盟高层",
+    "escalation_level": "高",
+    "prev_life_tragedy": "上一世母带被低价打包出售，失去后续收益。",
+    "info_gap_from_prev_life": "麦珂记得哪首歌被卖出、价格和买家身份。",
+    "this_life_revenge": "他利用财务记录和合同漏洞发起回购行动。",
+    "cluster_outcome": "麦珂成功购回母带，重新掌握版权收入。",
+    "summary": "麦珂通过合法手段夺回母带所有权，增强版权控制。",
+    "notes": [
+      "麦珂找到当年母带交易的原始合同副本。",
+      "他向唱片联盟发出正式回购申请。",
+      "对方最终同意以高价赎回，麦珂获利并重获版权。"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 27,
+        "action": "麦珂调取旧版财务报表，发现母带交易异常。",
+        "opponent_reaction": "唱片联盟高管试图搪塞，不愿正面回应。",
+        "result": "麦珂掌握证据，准备发起回购行动。"
+      },
+      {
+        "chapter": 28,
+        "action": "麦珂当众展示合同复印件，要求立即处理。",
+        "opponent_reaction": "唱片联盟被迫妥协，同意回购方案。",
+        "result": "麦珂成功购回母带，版权控制权得到加强。"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC16",
+    "chapter_span": [
+      29,
+      30
+    ],
+    "is_final_arc": false,
+    "name": "直播备份与内容验证",
+    "arc_id": "A10",
+    "core_payoff": "麦珂建立直播备份制度，防止视频被篡改。",
+    "main_opponent": "媒体巨头",
+    "escalation_level": "中",
+    "prev_life_tragedy": "上一世偷拍视频被剪辑传播，损害声誉。",
+    "info_gap_from_prev_life": "麦珂记得哪些片段被篡改、剪辑者身份。",
+    "this_life_revenge": "他设立官方直播备份系统，确保内容不可篡改。",
+    "cluster_outcome": "麦珂掌握直播内容主权，杜绝虚假信息。",
+    "summary": "麦珂通过直播备份制度保护自身形象，防止谣言扩散。",
+    "notes": [
+      "麦珂安排第三方平台同步直播内容。",
+      "他要求所有拍摄设备接入官方系统。",
+      "剪辑者无法私自截取或篡改素材。"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 29,
+        "action": "麦珂宣布启用官方直播备份系统。",
+        "opponent_reaction": "媒体巨头表示不满，认为这是不必要的干预。",
+        "result": "直播内容开始实时上传至可信平台。"
+      },
+      {
+        "chapter": 30,
+        "action": "麦珂在直播中演示备份功能，展示原始画面。",
+        "opponent_reaction": "剪辑者尝试介入，却被系统自动拦截。",
+        "result": "麦珂成功防止内容被篡改，维护形象完整。"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC17",
+    "chapter_span": [
+      31,
+      32
+    ],
+    "is_final_arc": false,
+    "name": "保险理赔与死亡假象布局",
+    "arc_id": "A11",
+    "core_payoff": "麦珂设置受控医疗监护，为死后保险理赔埋下伏笔。",
+    "main_opponent": "格雷厄姆·诺顿",
+    "escalation_level": "高",
+    "prev_life_tragedy": "上一世因药物失控猝死，保险公司拒绝赔付。",
+    "info_gap_from_prev_life": "麦珂记得保险条款细节与医疗记录需求。",
+    "this_life_revenge": "他安排专业医疗团队全程监控，制造可控死亡假象。",
+    "cluster_outcome": "麦珂成功布置死亡假象，为保险理赔创造条件。",
+    "summary": "麦珂通过医疗监管设置死亡假象，为保险索赔铺路。",
+    "notes": [
+      "麦珂聘请独立医疗团队监督日常健康状况。",
+      "他故意营造虚弱状态，诱导保险公司注意。",
+      "医疗记录被妥善保存，确保符合理赔标准。"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 31,
+        "action": "麦珂安排第三方医生每日检查，并提交详细报告。",
+        "opponent_reaction": "格雷厄姆·诺顿感到不安，但仍配合检查。",
+        "result": "医疗记录被完整存档，为未来理赔做准备。"
+      },
+      {
+        "chapter": 32,
+        "action": "麦珂在采访中暗示身体状况恶化，吸引保险公司关注。",
+        "opponent_reaction": "保险公司派人前来调查，麦珂积极配合。",
+        "result": "保险理赔程序正式启动，麦珂进入布局阶段。"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC18",
+    "chapter_span": [
+      33,
+      34
+    ],
+    "is_final_arc": false,
+    "name": "全球纪念直播与审判预演",
+    "arc_id": "A12",
+    "core_payoff": "麦珂发布全球直播预告，为终局审判做准备。",
+    "main_opponent": "维克多·兰斯",
+    "escalation_level": "高",
+    "prev_life_tragedy": "上一世死亡被掩盖，仇人未被清算。",
+    "info_gap_from_prev_life": "麦珂记得直播时间、观众规模与仇人位置。",
+    "this_life_revenge": "他公布直播计划，吸引所有人到场见证真相。",
+    "cluster_outcome": "麦珂成功布局长期审判舞台，完成心理威慑。",
+    "summary": "麦珂通过全球直播预告，为终局审判做好准备。",
+    "notes": [
+      "麦珂在社交媒体发布直播通知，强调公开透明。",
+      "他特意选择维克多·兰斯所在区域作为直播地点。",
+      "直播内容将涵盖所有关键证据与仇人罪行。"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 33,
+        "action": "麦珂在官网发布全球纪念直播公告，说明直播形式。",
+        "opponent_reaction": "维克多·兰斯收到消息后显得紧张。",
+        "result": "直播计划正式公布，众人开始猜测背后意图。"
+      },
+      {
+        "chapter": 34,
+        "action": "麦珂在采访中透露直播将涉及个人生平与商业纠纷。",
+        "opponent_reaction": "唱片联盟高层试图阻止直播，但未能奏效。",
+        "result": "直播筹备工作全面展开，仇人开始慌乱应对。"
+      }
+    ]
+  }
+]

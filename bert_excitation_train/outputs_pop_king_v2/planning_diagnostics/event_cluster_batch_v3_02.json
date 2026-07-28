@@ -1,0 +1,230 @@
+[
+  {
+    "cluster_id": "EC07",
+    "chapter_span": [
+      11,
+      12
+    ],
+    "is_final_arc": false,
+    "name": "粉丝团实名核票抓出黄牛预留票，夺回公开票池和退票规则",
+    "arc_id": "A07",
+    "core_payoff": "麦珂通过粉丝团实名核票揭露黄牛行为，迫使主办方调整票务政策。",
+    "main_opponent": "主办方与内部员工",
+    "escalation_level": 3,
+    "prev_life_tragedy": "上一世门票被内部垄断，影响票房与口碑。",
+    "info_gap_from_prev_life": "麦珂记得上一世票务黑幕的具体操作方式与涉事人员名单。",
+    "this_life_revenge": "麦珂联合‘星火’歌迷会发起实名核票行动，当场曝光黄牛预留票。",
+    "cluster_outcome": "主办方被迫调整售票政策，麦珂恢复票务公正性。",
+    "summary": "麦珂借助粉丝力量揭露票务黑幕，重获票务控制权。",
+    "notes": [
+      "粉丝团作为合法见证者现场协助核查",
+      "黄牛预留票证据由实名数据直接呈现",
+      "主办方遭警告并承诺整改"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 11,
+        "action": "麦珂发动‘星火’歌迷会进行实名票务核查",
+        "opponent_reaction": "主办方试图阻挠核查进程",
+        "result": "初步发现异常票务记录"
+      },
+      {
+        "chapter": 12,
+        "action": "麦珂当众展示黄牛预留票证据",
+        "opponent_reaction": "主办方被迫承认问题并道歉",
+        "result": "票务政策调整，麦珂获得票务监督权"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC08",
+    "chapter_span": [
+      13,
+      14
+    ],
+    "is_final_arc": false,
+    "name": "识破死后授权霸王补充协议，撤销遗产律师的代签权限",
+    "arc_id": "A08",
+    "core_payoff": "麦珂发现隐藏协议并推翻条款，阻止托马斯·布莱克掌控遗产。",
+    "main_opponent": "托马斯·布莱克",
+    "escalation_level": 4,
+    "prev_life_tragedy": "上一世他被剥夺了对自己遗产的决定权。",
+    "info_gap_from_prev_life": "麦珂记得上一世遗嘱条款中隐藏的死亡后自动移交条款。",
+    "this_life_revenge": "麦珂查阅合同漏洞并立即召集律师团队推翻该条款。",
+    "cluster_outcome": "托马斯·布莱克的阴谋被终止，麦珂重获遗产决策权。",
+    "summary": "麦珂识破遗嘱陷阱，收回遗产控制权。",
+    "notes": [
+      "协议内容由麦珂提前记忆的关键条款揭示",
+      "律师团队当场介入处理",
+      "托马斯·布莱克被责令撤回提议"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 13,
+        "action": "麦珂查阅合同并发现隐藏条款",
+        "opponent_reaction": "托马斯·布莱克试图劝阻并掩盖事实",
+        "result": "麦珂明确协议危害并启动法律程序"
+      },
+      {
+        "chapter": 14,
+        "action": "麦珂联合律师团队召开紧急会议",
+        "opponent_reaction": "托马斯·布莱克试图拖延并辩解",
+        "result": "协议被正式废除，麦珂获得独立签署权"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC09",
+    "chapter_span": [
+      15,
+      16
+    ],
+    "is_final_arc": false,
+    "name": "用无修音公开排练反杀假唱指控，取消造谣合作方的采访席位",
+    "arc_id": "A09",
+    "core_payoff": "麦珂通过公开无修音排练粉碎假唱谣言，驱逐造谣媒体。",
+    "main_opponent": "媒体机构与造谣合作方",
+    "escalation_level": 3,
+    "prev_life_tragedy": "上一世他被诬陷假唱，影响声誉。",
+    "info_gap_from_prev_life": "麦珂记得上一世假唱指控的来源与具体言论。",
+    "this_life_revenge": "麦珂举办公开排练并邀请记者全程录像，当场揭穿谎言。",
+    "cluster_outcome": "媒体陷入被动，麦珂重塑艺术权威。",
+    "summary": "麦珂以实力反击假唱谣言，赢得公众信任。",
+    "notes": [
+      "排练过程全程直播，无任何后期剪辑",
+      "造谣媒体当场失态并被限制入场",
+      "麦珂确立表演真实性标准"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 15,
+        "action": "麦珂宣布举办公开无修音排练",
+        "opponent_reaction": "媒体试图抹黑并散布负面信息",
+        "result": "麦珂成功吸引大量关注并准备应对质疑"
+      },
+      {
+        "chapter": 16,
+        "action": "麦珂在排练中完整演绎歌曲",
+        "opponent_reaction": "媒体试图中断拍摄但未果",
+        "result": "假唱指控不攻自破，媒体失去话语权"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC10",
+    "chapter_span": [
+      17,
+      18
+    ],
+    "is_final_arc": false,
+    "name": "当场阻止亲属挪用慈善款，收回基金支付双签与审计权",
+    "arc_id": "A10",
+    "core_payoff": "麦珂揭露亲属挪用资金行为，夺回基金会监管权。",
+    "main_opponent": "亲属与财务代理",
+    "escalation_level": 4,
+    "prev_life_tragedy": "上一世他未能阻止家族成员侵吞公益资金。",
+    "info_gap_from_prev_life": "麦珂记得上一世慈善款项流向及相关签名文件。",
+    "this_life_revenge": "麦珂突袭财务室，当场出示证据并要求双签与审计。",
+    "cluster_outcome": "亲属挪用行为被曝光，麦珂掌握基金控制权。",
+    "summary": "麦珂揭露亲属贪污，重新掌控慈善资金。",
+    "notes": [
+      "证据由麦珂提前获取的财务记录支撑",
+      "亲属试图否认但无法抵赖",
+      "麦珂设立独立审计机制"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 17,
+        "action": "麦珂突击检查慈善基金账目",
+        "opponent_reaction": "亲属试图转移资金并隐瞒真相",
+        "result": "麦珂取得关键财务记录并锁定嫌疑人"
+      },
+      {
+        "chapter": 18,
+        "action": "麦珂当众出示证据并要求双签审计",
+        "opponent_reaction": "亲属试图逃避责任但被逼就范",
+        "result": "亲属被停职，麦珂获得基金监管权"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC11",
+    "chapter_span": [
+      19,
+      20
+    ],
+    "is_final_arc": false,
+    "name": "阻止一首代表作母带被低价打包，取得独立估值与优先回购权",
+    "arc_id": "A11",
+    "core_payoff": "麦珂识破母带被低价打包计划，获得独立估值与回购权。",
+    "main_opponent": "唱片联盟高层",
+    "escalation_level": 4,
+    "prev_life_tragedy": "上一世他的代表作母带被廉价出售。",
+    "info_gap_from_prev_life": "麦珂记得上一世母带交易的价格与流程。",
+    "this_life_revenge": "麦珂提前拦截交易并推动独立评估。",
+    "cluster_outcome": "母带交易被叫停，麦珂获得优先回购权。",
+    "summary": "麦珂防止母带贱卖，保住音乐资产。",
+    "notes": [
+      "交易价格由麦珂回忆中的数据对比确认",
+      "麦珂主动引入第三方评估机构",
+      "唱片联盟高层被迫放弃交易"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 19,
+        "action": "麦珂发现母带被低价打包的迹象",
+        "opponent_reaction": "唱片联盟高层试图加快交易进度",
+        "result": "麦珂通知律师并冻结交易"
+      },
+      {
+        "chapter": 20,
+        "action": "麦珂要求第三方评估母带价值",
+        "opponent_reaction": "唱片联盟高层试图阻挠评估",
+        "result": "评估完成，麦珂获得优先回购权"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC12",
+    "chapter_span": [
+      21,
+      22
+    ],
+    "is_final_arc": false,
+    "name": "诱使偷拍视频剪辑者交出原始时间线，取消其后台证件与合作资格",
+    "arc_id": "A12",
+    "core_payoff": "麦珂设局让偷拍者暴露，夺取原始素材并终止其合作。",
+    "main_opponent": "偷拍视频剪辑者",
+    "escalation_level": 3,
+    "prev_life_tragedy": "上一世他遭遇偷拍与恶意剪辑攻击。",
+    "info_gap_from_prev_life": "麦珂记得上一世视频剪辑者的作案手法与时间点。",
+    "this_life_revenge": "麦珂设下圈套诱导偷拍者暴露，获取原始素材。",
+    "cluster_outcome": "偷拍者被清除，麦珂掌握原始资料。",
+    "summary": "麦珂反制偷拍者，保护作品完整性。",
+    "notes": [
+      "麦珂利用上一世的记忆设计陷阱",
+      "偷拍者因自曝而被永久封禁",
+      "原始素材被麦珂收归所有"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 21,
+        "action": "麦珂发布虚假行程引诱偷拍者现身",
+        "opponent_reaction": "偷拍者尝试继续剪辑并传播",
+        "result": "麦珂获取其作案痕迹并锁定身份"
+      },
+      {
+        "chapter": 22,
+        "action": "麦珂当众播放原始时间线证据",
+        "opponent_reaction": "偷拍者试图否认但无法抵赖",
+        "result": "其后台证件被吊销，合作资格终止"
+      }
+    ]
+  }
+]

@@ -1,0 +1,218 @@
+[
+  {
+    "cluster_id": "EC01",
+    "name": "上一世违规用药死亡",
+    "arc_id": "A01",
+    "core_payoff": "掌握重生时间点与核心对手意图",
+    "chapter_span": [
+      1,
+      1
+    ],
+    "main_opponent": "维克多·兰斯",
+    "escalation_level": "生死抉择",
+    "prev_life_tragedy": "演唱会突发倒地，听见保险与死后版权分赃",
+    "info_gap_from_prev_life": "记得死亡前听到的低语内容及时间点",
+    "this_life_revenge": "锁定复活时间并开始布局",
+    "cluster_outcome": "明确敌人目标与自身剩余时间",
+    "summary": "麦珂在演唱会倒地前听见维克多的阴谋，确认重生后立即展开反击。",
+    "notes": [
+      "仅描写死亡场景与关键对话",
+      "无即时反杀，为后续铺垫",
+      "突出主角记忆优势"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 1,
+        "action": "演唱会高潮时突然倒地",
+        "opponent_reaction": "后台传来紧急呼叫",
+        "result": "听见维克多低声说出‘保险金到账后，他的名字就该从世界舞台上消失’"
+      }
+    ],
+    "is_final_arc": false
+  },
+  {
+    "cluster_id": "EC02",
+    "name": "重生确认与注射权限争夺",
+    "arc_id": "A02",
+    "core_payoff": "建立医疗双签制度，首次夺回身体控制权",
+    "chapter_span": [
+      2,
+      2
+    ],
+    "main_opponent": "格雷厄姆·诺顿",
+    "escalation_level": "医疗控制",
+    "prev_life_tragedy": "被强制注射不明药剂导致虚弱",
+    "info_gap_from_prev_life": "记得上一世被注射的内容和方式",
+    "this_life_revenge": "公开拒绝注射并设立双重审批机制",
+    "cluster_outcome": "格雷厄姆失去直接控制权，麦珂获得医疗监督权",
+    "summary": "麦珂在发布会当天阻止格雷厄姆注射，确立透明化医疗流程。",
+    "notes": [
+      "强调主角主动出击",
+      "格雷厄姆当场失势",
+      "设置未来对抗伏笔"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 2,
+        "action": "质问格雷厄姆注射行为并提出双签要求",
+        "opponent_reaction": "格雷厄姆表情僵硬但未直接反抗",
+        "result": "第三方医疗团队介入并签署监管协议"
+      }
+    ],
+    "is_final_arc": false
+  },
+  {
+    "cluster_id": "EC03",
+    "name": "三份彩排表与泄密者揭露",
+    "arc_id": "A03",
+    "core_payoff": "收回排练信息分发权，清除内部叛徒",
+    "chapter_span": [
+      3,
+      4
+    ],
+    "main_opponent": "卡尔·霍尔特",
+    "escalation_level": "信息战",
+    "prev_life_tragedy": "彩排内容被泄露导致演出受制",
+    "info_gap_from_prev_life": "记得上一世被针对的方式",
+    "this_life_revenge": "伪造三份不同彩排表引出泄密者",
+    "cluster_outcome": "泄密者被开除，麦珂掌控真实排期",
+    "summary": "麦珂通过假彩排表找出泄密者，夺回排练信息控制权。",
+    "notes": [
+      "制造悬念与反转",
+      "卡尔·霍尔特试图阻挠但失败",
+      "强化粉丝监督作用"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 3,
+        "action": "发布三份不同彩排表引发混乱",
+        "opponent_reaction": "助理们慌乱应对",
+        "result": "发现其中一份与实际不符"
+      },
+      {
+        "chapter": 4,
+        "action": "在排练室当众揭穿泄密者",
+        "opponent_reaction": "泄密者惊恐否认但被证伪",
+        "result": "泄密者被开除并面临法律追责"
+      }
+    ],
+    "is_final_arc": false
+  },
+  {
+    "cluster_id": "EC04",
+    "name": "体能测试与营养针曝光",
+    "arc_id": "A04",
+    "core_payoff": "打破病弱形象，重设演出标准",
+    "chapter_span": [
+      5,
+      6
+    ],
+    "main_opponent": "卡尔·霍尔特",
+    "escalation_level": "身体操控",
+    "prev_life_tragedy": "被灌注药物导致演出失败",
+    "info_gap_from_prev_life": "记得上一世被注射成分",
+    "this_life_revenge": "公开体能测试并展示营养针成分",
+    "cluster_outcome": "卡尔·霍尔特提议被驳回，麦珂设定新标准",
+    "summary": "麦珂通过体能测试和营养针检测打脸病弱谣言，重设演出强度。",
+    "notes": [
+      "展示真实实力",
+      "卡尔·霍尔特试图压制但失败",
+      "强化粉丝信任"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 5,
+        "action": "在媒体面前做高强度体能测试",
+        "opponent_reaction": "卡尔·霍尔特试图降低强度",
+        "result": "麦珂完成全部项目并撕毁误导性协议"
+      },
+      {
+        "chapter": 6,
+        "action": "直播展示营养针成分并要求更换供应商",
+        "opponent_reaction": "格雷厄姆试图辩解",
+        "result": "格雷厄姆被暂停职务，麦珂获得药品保管权"
+      }
+    ],
+    "is_final_arc": false
+  },
+  {
+    "cluster_id": "EC05",
+    "name": "加场诱饵与超负荷排期暴露",
+    "arc_id": "A05",
+    "core_payoff": "逼迫巡演总监暴露真实排期，夺回排期签批权",
+    "chapter_span": [
+      7,
+      8
+    ],
+    "main_opponent": "卡尔·霍尔特",
+    "escalation_level": "节奏操控",
+    "prev_life_tragedy": "因疲劳过度倒台",
+    "info_gap_from_prev_life": "记得上一世被压缩的日程",
+    "this_life_revenge": "提出加场演出诱导排期暴露",
+    "cluster_outcome": "卡尔·霍尔特的排期策略被曝光，麦珂赢得休息时间",
+    "summary": "麦珂用加场演出引出卡尔·霍尔特的排期陷阱，成功争取合理安排。",
+    "notes": [
+      "利用对手心理弱点",
+      "卡尔·霍尔特试图拖延但失败",
+      "加强粉丝参与感"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 7,
+        "action": "提出加场演出请求试探排期",
+        "opponent_reaction": "卡尔·霍尔特犹豫不决",
+        "result": "麦珂获取隐藏的排期表"
+      },
+      {
+        "chapter": 8,
+        "action": "在排练中揭露超负荷排期",
+        "opponent_reaction": "卡尔·霍尔特试图掩盖",
+        "result": "排期策略被曝光，麦珂获得更多休息时间"
+      }
+    ],
+    "is_final_arc": false
+  },
+  {
+    "cluster_id": "EC06",
+    "name": "票务核查与黄牛清理",
+    "arc_id": "A06",
+    "core_payoff": "夺回票池控制权，重建公众信任",
+    "chapter_span": [
+      9,
+      10
+    ],
+    "main_opponent": "主办方/黄牛集团",
+    "escalation_level": "经济操控",
+    "prev_life_tragedy": "门票被垄断影响票房与口碑",
+    "info_gap_from_prev_life": "记得上一世被炒高的票价",
+    "this_life_revenge": "联合粉丝核查票务数据并公开抗议",
+    "cluster_outcome": "主办方调整售票政策，麦珂恢复票务公正",
+    "summary": "麦珂借助粉丝力量揭露黄牛操作，迫使主办方重新开放票池。",
+    "notes": [
+      "结合粉丝行动",
+      "主办方试图阻挠但失败",
+      "增强粉丝凝聚力"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 9,
+        "action": "发起票务实名核查行动",
+        "opponent_reaction": "主办方试图阻挠",
+        "result": "发现大量黄牛预留票"
+      },
+      {
+        "chapter": 10,
+        "action": "组织粉丝抗议并公开证据",
+        "opponent_reaction": "主办方被迫回应",
+        "result": "票务政策调整，麦珂恢复公信力"
+      }
+    ],
+    "is_final_arc": false
+  }
+]

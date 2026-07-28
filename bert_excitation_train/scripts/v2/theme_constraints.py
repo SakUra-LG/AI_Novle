@@ -1,105 +1,141 @@
-"""Shared V2 theme constraints for the stagflation rebirth project."""
+"""Runtime V2 story contract.
 
+The project deliberately has no permanent novel theme. A pipeline invocation
+supplies the theme, background, protagonists, and optional constraints.
+"""
 from __future__ import annotations
 
+import os
+import re
 from typing import Any, Dict, List
 
 
-THEME_TITLE = "滞胀前夜的逆周期教授"
-THEME = "欧美风格重生经济年代爽文：重生到美国经济滞胀时代"
-BACKGROUND = "1968-1979年美国：名校经济系、华尔街、政策圈、美元脱锚、石油危机、股灾、高利率与普通人的通胀困境"
-MAIN_PROTAGONIST = "丹尼尔·惠特曼"
-PROTAGONISTS = [MAIN_PROTAGONIST]
+def _split_names(raw: str) -> List[str]:
+    return [x.strip() for x in re.split(r"[,，、;；\n]", raw or "") if x.strip()]
 
-CORE_PREMISE = (
-    "主角前世是研究1970年代美国滞胀的现代美国经济学者，临死前仍被嘲笑"
-    "“只会写历史，不会赚钱”；重生后回到1968年，成为名校年轻助理教授。"
-    "他知道大通胀、美元脱锚、石油危机、股灾和高利率将接连到来，"
-    "因此用固定利率债务、实物资产、能源设备、仓储、农地与铁路货运合同完成逆周期布局。"
-)
 
-TIMELINE_ANCHORS = [
-    "1968年：美国表面繁荣，漂亮股票受追捧，政策圈仍相信通胀可控。",
-    "1971年：美元脱锚/尼克松冲击成为第一轮预言兑现。",
-    "1973年：石油危机爆发，能源与物流资产成为市场命脉。",
-    "1974年：股市崩盘，曾经嘲笑主角的基金经理和权威派破产或求助。",
-    "1979年：提前去杠杆，避开高利率绞杀。",
-]
-
-ASSET_AND_CONFLICT_ANCHORS = [
-    "卖掉热门成长股和漂亮股票",
-    "借固定利率贷款",
-    "买下农地、仓库、能源设备厂",
-    "锁定铁路货运合同和能源物流资源",
-    "在学术会议上提出“滞胀时代不可避免”并被权威教授羞辱",
-    "面对华尔街、银行、政策圈和媒体的嘲笑、打压与利益诱惑",
-]
-
-FINAL_PAYOFF = (
-    "终局高潮不是单纯暴富，而是当权贵要求主角隐瞒下一次危机时，"
-    "他选择公开预警，把普通人从通胀陷阱里救出来，完成“危机预言者”到公共责任承担者的转变。"
-)
-
+THEME_TITLE = os.getenv("V2_THEME_TITLE", "运行时故事主题")
+THEME = os.getenv("V2_THEME", "待定")
+BACKGROUND = os.getenv("V2_BACKGROUND", "待定")
+PROTAGONISTS = _split_names(os.getenv("V2_PROTAGONISTS", "")) or ["主角"]
+MAIN_PROTAGONIST = PROTAGONISTS[0]
+CORE_PREMISE = os.getenv("V2_CORE_PREMISE", "围绕事件簇持续推进，已发生事实不得被后续章节无解释地改写。")
+EXTRA_CONSTRAINTS = os.getenv("V2_EXTRA_CONSTRAINTS", "").strip()
+if EXTRA_CONSTRAINTS:
+    CORE_PREMISE += f" 本次附加要求：{EXTRA_CONSTRAINTS}"
+TIMELINE_ANCHORS: List[str] = []
+ASSET_AND_CONFLICT_ANCHORS: List[str] = []
+FINAL_PAYOFF = "终局必须回收已建立的核心矛盾、人物关系与未决剧情线。"
 HARD_CONSTRAINTS = [
-    "全书必须固定在美国1968-1979年前后，不得换成现代都市、娱乐圈、医疗阴谋、豪门婚恋、仙侠、玄幻或科幻世界观。",
-    "主角必须是男性现代美国经济学者重生为1968年名校年轻助理教授，不得改成女主、歌手、医生、总裁妻子或宫斗角色。",
-    "叙事核心是历史经济信息差、逆周期投资、学术/资本/政策冲突和公共预警，不是传统查案复仇、医疗取证或恋爱宅斗。",
-    "所有情节组都要围绕滞胀时代的连续历史节点推进：1968预判、1971美元脱锚、1973石油危机、1974股灾、1979高利率。",
-    "主角可以利用前世知识提前布局，但禁止开挂式万能预测；每个收益都要有经济逻辑、风险代价、舆论压力和现实执行成本。",
-    "终局必须兑现公开预警保护普通人的价值选择，禁止把结尾写成只为个人财富、权贵结盟或新神秘Boss。",
-    "禁止系统、异能、修仙、玄学、神秘人送证据、匿名邮件天降关键材料、突然出现未铺垫的终极反派。",
-    "人物、机构、场景应呈现欧美商业/学院/政策语境：大学经济系、学术会议、华尔街基金、银行信贷、农场、仓储、能源设备厂、铁路货运、媒体听证或政策辩论。",
+    "不得在没有叙事过渡或解释的情况下改变人物身份、关系、生命状态、地点、阵营、目标或持有物。",
+    "不得让后续章节依赖从未发生的前置事件，也不得把尚未发生的情节计划写成既成事实。",
+    "回忆、梦境、前世和当前时间线必须明确区分，历史状态不得覆盖当前状态。",
+    "新增核心人物、规则或终局反派必须提前铺垫；未决剧情线应推进或回收。",
+]
+FORBIDDEN_ELEMENTS = [
+    "无铺垫的系统或万能外挂",
+    "神秘人突然递交唯一关键证据",
+    "匿名消息直接解决核心矛盾",
+    "未规划的终极反派",
 ]
 
-FORBIDDEN_ELEMENTS = [
-    "现代都市医疗阴谋",
-    "病房被害",
-    "渣男丈夫",
-    "豪门总裁",
-    "娱乐圈版权战",
-    "女团/男团",
-    "直播网暴",
-    "修仙玄幻",
-    "系统提示音",
-    "神秘司机",
-    "神秘人递U盘",
-    "匿名邮件决定性爆料",
-    "中国式家族宅斗",
-]
+
+def configure_theme_contract(
+    theme: str,
+    background: str,
+    protagonists: List[str] | None = None,
+    extra_constraints: str = "",
+) -> None:
+    """Configure this process before prompts or artifacts are built."""
+    global THEME_TITLE, THEME, BACKGROUND, PROTAGONISTS, MAIN_PROTAGONIST, CORE_PREMISE, EXTRA_CONSTRAINTS
+    THEME = str(theme or "待定").strip() or "待定"
+    THEME_TITLE = THEME
+    BACKGROUND = str(background or "待定").strip() or "待定"
+    PROTAGONISTS = [str(x).strip() for x in (protagonists or []) if str(x).strip()] or ["主角"]
+    MAIN_PROTAGONIST = PROTAGONISTS[0]
+    EXTRA_CONSTRAINTS = extra_constraints.strip()
+    CORE_PREMISE = f"围绕“{THEME}”持续推进；背景为“{BACKGROUND}”。"
+    if EXTRA_CONSTRAINTS:
+        CORE_PREMISE += f" 本次附加要求：{EXTRA_CONSTRAINTS}"
 
 
 def constraints_text() -> str:
-    """Return a compact prompt block shared by all V2 generation stages."""
-    return "\n".join(
-        [
-            f"【固定大主题】{THEME_TITLE}：{THEME}",
-            f"【固定背景】{BACKGROUND}",
-            f"【主角锁定】{MAIN_PROTAGONIST}，男性，美国经济学者/1968年名校年轻助理教授。",
-            f"【核心设定】{CORE_PREMISE}",
-            "【历史节点】" + "；".join(TIMELINE_ANCHORS),
-            "【资产与冲突锚点】" + "；".join(ASSET_AND_CONFLICT_ANCHORS),
-            f"【终局价值】{FINAL_PAYOFF}",
-            "【硬性限制】" + "；".join(HARD_CONSTRAINTS),
-            "【禁止元素】" + "；".join(FORBIDDEN_ELEMENTS),
-        ]
-    )
+    lines = [
+        f"【本次主题】{THEME}",
+        f"【本次背景】{BACKGROUND}",
+        f"【主角】{'、'.join(PROTAGONISTS)}",
+        f"【核心设定】{CORE_PREMISE}",
+        f"【终局要求】{FINAL_PAYOFF}",
+        "【跨章节硬约束】" + "；".join(HARD_CONSTRAINTS),
+        "【禁止捷径】" + "；".join(FORBIDDEN_ELEMENTS),
+    ]
+    return "\n".join(lines)
+
+
+def chapter_constraint_contract(chapter: int) -> Dict[str, Any]:
+    """Turn explicit per-chapter runtime requirements into checkable fields."""
+    matches = list(re.finditer(r"第\s*(\d+)\s*章", EXTRA_CONSTRAINTS))
+    clauses: List[str] = []
+    for index, match in enumerate(matches):
+        if int(match.group(1)) != int(chapter):
+            continue
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(EXTRA_CONSTRAINTS)
+        clause = EXTRA_CONSTRAINTS[match.start():end].strip(" \t\r\n。；;")
+        if clause:
+            clauses.append(clause)
+
+    required_state_changes: List[Dict[str, Any]] = []
+    forbidden_active_characters: List[str] = []
+    for clause in clauses:
+        sentences = [x for x in re.split(r"(?<=[。！？!?；;])", clause) if x.strip()]
+        for sentence in sentences:
+            current_timeline = "当前时间线" in sentence or "今生" in sentence
+            inactive_markers = ("不能在当前时间线", "不得在当前时间线", "禁止在当前时间线")
+            for name in PROTAGONISTS:
+                if name not in sentence:
+                    continue
+                if current_timeline and any(marker in sentence for marker in ("死亡", "去世", "身亡", "dead")):
+                    required_state_changes.append({
+                        "character": name,
+                        "field": "life_status",
+                        "new_value": "dead",
+                        "timeline": "current",
+                        "permanent": True,
+                    })
+                if any(marker in sentence for marker in inactive_markers) and any(
+                    marker in sentence for marker in ("只能通过", "只能以", "不得说话", "不能说话", "参与行动")
+                ):
+                    forbidden_active_characters.append(name)
+
+    return {
+        "chapter_hard_constraints": clauses,
+        "required_state_changes": required_state_changes,
+        "forbidden_active_characters": list(dict.fromkeys(forbidden_active_characters)),
+    }
 
 
 def attach_theme_contract(obj: Dict[str, Any]) -> Dict[str, Any]:
-    """Attach the shared theme contract to generated cluster/card dictionaries."""
     obj["theme_contract"] = {
         "theme_title": THEME_TITLE,
         "theme": THEME,
         "background": BACKGROUND,
         "main_protagonist": MAIN_PROTAGONIST,
-        "timeline_anchors": TIMELINE_ANCHORS,
-        "hard_constraints": HARD_CONSTRAINTS,
-        "forbidden_elements": FORBIDDEN_ELEMENTS,
+        "protagonists": list(PROTAGONISTS),
+        "core_premise": CORE_PREMISE,
+        "extra_constraints": EXTRA_CONSTRAINTS,
+        "timeline_anchors": list(TIMELINE_ANCHORS),
+        "hard_constraints": list(HARD_CONSTRAINTS),
+        "forbidden_elements": list(FORBIDDEN_ELEMENTS),
         "final_payoff": FINAL_PAYOFF,
     }
+    try:
+        chapter = int(obj.get("chapter_id", 0) or 0)
+    except (TypeError, ValueError):
+        chapter = 0
+    if chapter > 0:
+        obj.update(chapter_constraint_contract(chapter))
     return obj
 
 
 def protagonists_arg() -> str:
     return ",".join(PROTAGONISTS)
-

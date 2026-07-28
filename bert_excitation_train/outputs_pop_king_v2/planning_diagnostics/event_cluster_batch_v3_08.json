@@ -1,0 +1,268 @@
+[
+  {
+    "cluster_id": "EC43",
+    "chapter_span": [
+      83,
+      84
+    ],
+    "is_final_arc": false,
+    "name": "更换纪念场馆安保与设备封签，反派失去销毁现场记录的通道",
+    "arc_id": "ARC12",
+    "core_payoff": "确保纪念直播数据不可篡改，阻止维克多提前干预",
+    "main_opponent": "维克多·兰斯",
+    "escalation_level": "中",
+    "prev_life_tragedy": "上一世被操控葬礼影像，无法还原真相",
+    "info_gap_from_prev_life": "知道维克多曾试图篡改直播内容，但未掌握具体手段",
+    "this_life_revenge": "通过合法程序更换场馆安全系统，封存所有设备并同步备份",
+    "cluster_outcome": "反派失去破坏直播证据的能力，麦珂掌控数据主权",
+    "summary": "麦珂替换场馆安保系统并封存设备，防止维克多篡改直播内容。",
+    "notes": [
+      "确保所有录制设备均受第三方监管",
+      "加密存储数据并与粉丝团共享密钥",
+      "防篡改技术由独立工程师验证"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 83,
+        "action": "麦珂要求更换纪念场馆的安保系统，并引入第三方认证机构",
+        "opponent_reaction": "维克多试图阻挠，声称这是不必要的额外支出",
+        "result": "系统更新完成，设备封签生效"
+      },
+      {
+        "chapter": 84,
+        "action": "麦珂将所有设备数据同步上传至多个云端服务器并加密",
+        "opponent_reaction": "维克多无计可施，只能眼睁睁看着数据被锁定",
+        "result": "直播数据完全受控，反派无法篡改或删除"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC44",
+    "chapter_span": [
+      85,
+      86
+    ],
+    "is_final_arc": false,
+    "name": "用假遗嘱副本诱使遗产律师提前提交控制申请并留下当前证据",
+    "arc_id": "ARC13",
+    "core_payoff": "获取托马斯·布莱克的非法操作痕迹",
+    "main_opponent": "托马斯·布莱克",
+    "escalation_level": "高",
+    "prev_life_tragedy": "上一世被强制绑定遗产给唱片联盟",
+    "info_gap_from_prev_life": "记得有隐藏条款，但不确定具体内容",
+    "this_life_revenge": "伪造一份虚假遗嘱副本，诱导托马斯提前行动",
+    "cluster_outcome": "托马斯暴露其非法操作，麦珂掌握关键证据",
+    "summary": "麦珂伪造遗嘱副本，引诱托马斯提前提交控制申请，留下犯罪痕迹。",
+    "notes": [
+      "假遗嘱包含明显漏洞以吸引托马斯注意",
+      "录音笔全程记录托马斯的回应",
+      "证据已同步保存在多个司法机关备案"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 85,
+        "action": "麦珂向托马斯展示一份看似合法的假遗嘱副本",
+        "opponent_reaction": "托马斯兴奋地表示需要尽快处理",
+        "result": "他立即提出启动遗产控制流程"
+      },
+      {
+        "chapter": 86,
+        "action": "麦珂公布托马斯在会议中承认了相关违法操作",
+        "opponent_reaction": "托马斯慌乱否认，但已有录音和文件为证",
+        "result": "托马斯被暂停职务，麦珂获得重要证据"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC45",
+    "chapter_span": [
+      87,
+      88
+    ],
+    "is_final_arc": false,
+    "name": "用假健康简报诱使私人医生篡改病历副本，原始记录被同步保全",
+    "arc_id": "ARC14",
+    "core_payoff": "获取格雷厄姆·诺顿的非法行为证据",
+    "main_opponent": "格雷厄姆·诺顿",
+    "escalation_level": "高",
+    "prev_life_tragedy": "上一世被注射不明药物致死",
+    "info_gap_from_prev_life": "记得有人偷偷注射药物，但不知是谁",
+    "this_life_revenge": "伪造一份健康状况报告，诱导格雷厄姆篡改病历",
+    "cluster_outcome": "格雷厄姆暴露其非法行为，麦珂掌握真实医疗记录",
+    "summary": "麦珂伪造健康报告，引导格雷厄姆篡改病历，保留原始资料。",
+    "notes": [
+      "假报告设计成需医生签名确认",
+      "篡改过程被实时监控并录像",
+      "原始病历已上传至法律数据库"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 87,
+        "action": "麦珂提供一份异常健康简报，暗示需要调整治疗方案",
+        "opponent_reaction": "格雷厄姆以为是例行操作，便擅自修改病历",
+        "result": "他篡改了原始记录，留下了数字痕迹"
+      },
+      {
+        "chapter": 88,
+        "action": "麦珂公开显示原始病历，并揭露格雷厄姆的改动",
+        "opponent_reaction": "格雷厄姆试图辩解，但证据确凿",
+        "result": "他被停职调查，麦珂掌握完整医疗档案"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC46",
+    "chapter_span": [
+      89,
+      90
+    ],
+    "is_final_arc": false,
+    "name": "用死后版权预签意向诱使核心对手抢购，暴露完整利益链",
+    "arc_id": "ARC15",
+    "core_payoff": "揭示维克多·兰斯的利益网络",
+    "main_opponent": "维克多·兰斯",
+    "escalation_level": "极高",
+    "prev_life_tragedy": "上一世版权被唱片联盟全面接管",
+    "info_gap_from_prev_life": "记得有幕后交易，但不知道细节",
+    "this_life_revenge": "发布死后版权预签声明，诱导维克多抢先购买",
+    "cluster_outcome": "维克多暴露其与多方势力勾结的事实",
+    "summary": "麦珂发布死后版权声明，引诱维克多出手，揭露其背后利益链。",
+    "notes": [
+      "声明内容明确指向特定公司",
+      "维克多的交易记录被自动追踪",
+      "多家媒体跟进报道"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 89,
+        "action": "麦珂发表声明称将在死后授权部分作品用于公益项目",
+        "opponent_reaction": "维克多迅速联系内部人员进行收购谈判",
+        "result": "他急于介入，显示出对版权的兴趣"
+      },
+      {
+        "chapter": 90,
+        "action": "麦珂披露维克多与唱片联盟之间的资金往来记录",
+        "opponent_reaction": "维克多震惊，试图掩盖事实",
+        "result": "他被曝光涉及多项非法交易"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC47",
+    "chapter_span": [
+      91,
+      92
+    ],
+    "is_final_arc": false,
+    "name": "取得法院证据保全令与独立医疗见证，终局条件全部就位但不得提前审判",
+    "arc_id": "ARC16",
+    "core_payoff": "确保所有证据具备法律效力且不被提前销毁",
+    "main_opponent": "维克多·兰斯、托马斯·布莱克、格雷厄姆·诺顿",
+    "escalation_level": "极高",
+    "prev_life_tragedy": "上一世证据被人为销毁，无法维权",
+    "info_gap_from_prev_life": "记得有关键证据被藏匿，但找不到位置",
+    "this_life_revenge": "向法院申请证据保全，并请独立医疗专家作证",
+    "cluster_outcome": "所有证据具有法律效力，反派无法再轻易否认",
+    "summary": "麦珂取得法院保全令并请独立医疗专家作证，确保终局审判有效。",
+    "notes": [
+      "证据已进入司法程序",
+      "医疗专家签署书面证明",
+      "所有材料均已公证"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 91,
+        "action": "麦珂向法院递交证据保全申请，并附上医疗专家意见书",
+        "opponent_reaction": "维克多等人试图阻挠，但法院批准了申请",
+        "result": "证据正式进入司法程序"
+      },
+      {
+        "chapter": 92,
+        "action": "麦珂安排独立医疗团队对过往诊疗记录进行二次鉴定",
+        "opponent_reaction": "格雷厄姆感到不安，但仍无法干涉",
+        "result": "鉴定结果与原始证据一致，形成完整链条"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC48",
+    "chapter_span": [
+      93,
+      100
+    ],
+    "is_final_arc": true,
+    "name": "受控假死到全球纪念直播现身审判，逐章回收保险、遗嘱、病历、版权与粉丝见证",
+    "arc_id": "ARC17",
+    "core_payoff": "完成终极复仇，揭露所有真相并夺回一切权力",
+    "main_opponent": "维克多·兰斯、托马斯·布莱克、格雷厄姆·诺顿",
+    "escalation_level": "最高",
+    "prev_life_tragedy": "上一世被彻底剥夺所有权利，最终死亡",
+    "info_gap_from_prev_life": "记得自己曾被欺骗、控制、谋杀，但缺乏证据",
+    "this_life_revenge": "制造假死事件，随后在全球直播中现身并揭露真相",
+    "cluster_outcome": "麦珂成功完成复仇，反派全部落网，世界见证正义",
+    "summary": "麦珂假死引发全球关注，随后现身揭露真相，完成终极复仇。",
+    "notes": [
+      "假死事件由粉丝团协助策划",
+      "直播全程由独立平台转播",
+      "证据已在前文逐步收集完成"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 93,
+        "action": "麦珂在演出后突然昏厥，医护人员宣布其死亡",
+        "opponent_reaction": "维克多等人开始筹备遗产交接仪式",
+        "result": "全球舆论哗然，各方势力蠢蠢欲动"
+      },
+      {
+        "chapter": 94,
+        "action": "麦珂通过预先设定的直播系统，在虚拟空间中现身并播放录音",
+        "opponent_reaction": "维克多等人惊恐不已，试图切断信号",
+        "result": "直播持续进行，观众人数达到历史新高"
+      },
+      {
+        "chapter": 95,
+        "action": "麦珂逐一播放此前收集的证据，包括病历、合同、录音等",
+        "opponent_reaction": "托马斯、格雷厄姆试图反驳，但无法动摇证据链",
+        "result": "三大反派被当场定罪，社会公愤爆发"
+      },
+      {
+        "chapter": 96,
+        "action": "麦珂宣布重新掌控自己的版权、遗产与人生方向",
+        "opponent_reaction": "维克多被迫辞职，唱片联盟陷入混乱",
+        "result": "麦珂成为真正的自由艺术家，粉丝们欢呼庆祝"
+      },
+      {
+        "chapter": 97,
+        "action": "麦珂设立新基金会，保护未来艺人的权益",
+        "opponent_reaction": "部分昔日盟友表示支持，反对者沉默",
+        "result": "麦珂建立起新的行业规范与道德标准"
+      },
+      {
+        "chapter": 98,
+        "action": "麦珂与“星火”歌迷会共同推出透明化合约模板",
+        "opponent_reaction": "其他艺人纷纷效仿，推动行业改革",
+        "result": "整个娱乐产业迎来重大变革"
+      },
+      {
+        "chapter": 99,
+        "action": "麦珂举办全球巡演，亲自演唱原创歌曲，展现全新艺术风格",
+        "opponent_reaction": "曾经的对手如今沦为配角",
+        "result": "麦珂重回巅峰，成为新一代偶像"
+      },
+      {
+        "chapter": 100,
+        "action": "麦珂在闭幕式上发表感言，感谢粉丝与伙伴的支持",
+        "opponent_reaction": "全场起立鼓掌，掌声经久不息",
+        "result": "麦珂完成了自我救赎与行业的重塑"
+      }
+    ],
+    "final_goal": "揭露所有真相，终结阴谋，重获自由与尊严",
+    "final_payoff": "麦珂完成终极复仇，反派集体覆灭，行业格局重组，粉丝团结如一"
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "story_id": "7f5afaed1b5bb0c2",
+  "chapter": 5,
+  "content_hash": "db167b971cc35f209738eddccd3671ded817efc42fd46c6b561a3e027ea2338f",
+  "narrative_timeline": "current",
+  "summary": "麦珂记得，上一世，卡尔用过降配旧招，借保护状态为名压低训练强度，再把病弱印象推到合作方面前。；训练强度决定权归还麦珂·杰森。；卡尔·霍尔特闭了嘴。",
+  "characters": [
+    {
+      "name": "卡尔·霍尔特",
+      "aliases": [
+        "卡尔",
+        "霍尔特"
+      ],
+      "mention_mode": "active",
+      "evidence": "病弱印象推到合作方面前。这一次，麦珂提前请合作方代表和现场见证人来到排练场。合作方代表把折叠椅摆正，现场见证人留在一旁。卡尔·霍尔特已经站在控台旁，抬眼看向麦珂。卡尔没有问他们为何到场，只把手留在控台上。麦珂把外套放到折叠椅上，走到场地中央，与他隔空对视。\n\n卡尔·霍尔特按住控台，淡淡地说：“慢一点，别勉强。”麦珂没有接这份体贴。 控台旁，抬眼看向麦珂。卡尔没有问他们为何到场，只把手留在控台上。麦珂把外套放到折叠椅上，走到场地中央，与他隔空对视。\n\n卡尔·霍尔特按住控台，淡淡"
+    },
+    {
+      "name": "麦珂·杰森",
+      "aliases": [
+        "杰森",
+        "麦珂"
+      ],
+      "mention_mode": "active",
+      "evidence": "。”合作方代表随即整张取下旧宣传页，放到一边。\n\n合作方代表宣布：“卡尔·霍尔特不再有权降低训练强度。训练强度决定权归还麦珂·杰森。”卡尔·霍尔特脸色沉了下去。\n\n卡尔·霍尔特咬牙说：“这不算完。”麦珂·杰森看着他：“决定已经生效。”卡尔·霍尔特闭了嘴。 特不再有权降低训练强度。训练强度决定权归还麦珂·杰森。”卡尔·霍尔特脸色沉了下去。\n\n卡尔·霍尔特咬牙说：“这不算完。”麦珂·杰森看着他：“决定已经生效。”卡尔·霍尔特闭了嘴。 作方代表随即整张取下旧宣传页，放到一边。\n\n合"
+    }
+  ],
+  "events": [
+    {
+      "event_index": 0,
+      "type": "chapter_event",
+      "summary": "麦珂记得，上一世，卡尔用过降配旧招，借保护状态为名压低训练强度，再把病弱印象推到合作方面前。；训练强度决定权归还麦珂·杰森。；卡尔·霍尔特闭了嘴。",
+      "story_time": "",
+      "location": "",
+      "outcome": "训练强度决定权归还麦珂·杰森。",
+      "participants": [
+        {
+          "name": "卡尔·霍尔特",
+          "mode": "active",
+          "role": "正文参与者"
+        },
+        {
+          "name": "麦珂·杰森",
+          "mode": "active",
+          "role": "正文参与者"
+        }
+      ],
+      "caused_by": [],
+      "importance": 0.65,
+      "timeline": "current"
+    }
+  ],
+  "state_changes": [
+    {
+      "character": "麦珂·杰森",
+      "field": "possession",
+      "old_value": "",
+      "new_value": "训练强度决定权",
+      "reason": "正文由现场权限者明确归还或移交权限",
+      "evidence": "训练强度决定权归还麦珂·杰森",
+      "permanent": false,
+      "confidence": 0.88,
+      "timeline": "current"
+    }
+  ],
+  "relationships": [],
+  "facts": [],
+  "plot_threads": [],
+  "continuity_claims": [],
+  "event_preconditions": [],
+  "extraction_status": "heuristic_complete"
+}

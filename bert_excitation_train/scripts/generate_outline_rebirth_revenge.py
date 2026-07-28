@@ -14,8 +14,12 @@ import json
 import re
 from datetime import datetime
 import dashscope
+from bert_excitation_train.scripts.qwen_transport import call_qwen_via_curl
 
-from smart_sample_search import search_and_adapt_samples
+try:
+    from bert_excitation_train.scripts.smart_sample_search import search_and_adapt_samples
+except ImportError:
+    from smart_sample_search import search_and_adapt_samples
 
 
 # 路径统一：无论从哪个目录运行，梗概都始终写到项目根目录下的 outputs/
@@ -25,7 +29,7 @@ OUTPUT_DIR = os.path.join(PROJECT_ROOT, "outputs")
 
 
 # ===== 通义千问 API 基础配置（与 universal_generator 保持一致风格） =====
-API_Key_QW = "sk-a2966f4e37134351904851679884cb67"
+API_Key_QW = os.getenv("DASHSCOPE_API_KEY", "sk-a2966f4e37134351904851679884cb67")
 MAX_TOKENS = 8192
 
 
@@ -50,7 +54,15 @@ def call_qianwen_api(messages, temperature=0.9, top_p=0.85, repetition_penalty=1
         else:
             return f"通义千问 API 返回了无效格式: {str(response)}"
     except Exception as e:
-        return f"调用通义千问 API 出错: {str(e)}"
+        try:
+            response = call_qwen_via_curl(
+                messages, api_key=API_Key_QW, temperature=temperature, top_p=top_p,
+                repetition_penalty=repetition_penalty, max_tokens=MAX_TOKENS,
+            )
+            content = response["output"]["choices"][0]["message"]["content"]
+            return str(content).replace("```", "").strip()
+        except Exception as fallback_error:
+            return f"调用通义千问 API 出错: SDK={e}; curl={fallback_error}"
 
 
 def count_chapters(text):

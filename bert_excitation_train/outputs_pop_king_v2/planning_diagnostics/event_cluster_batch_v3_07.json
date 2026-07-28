@@ -1,0 +1,230 @@
+[
+  {
+    "cluster_id": "EC37",
+    "chapter_span": [
+      71,
+      72
+    ],
+    "is_final_arc": false,
+    "name": "纪念直播与葬礼影像控制权铺垫",
+    "arc_id": "A37",
+    "core_payoff": "麦珂获取纪念直播与葬礼影像的最终审核权，为假死布局奠定基础",
+    "main_opponent": "维克多·兰斯",
+    "escalation_level": "中",
+    "prev_life_tragedy": "上一世他被剥夺了对葬礼影像的控制权，导致真相被篡改",
+    "info_gap_from_prev_life": "麦珂记得上一世葬礼影像被唱片联盟私自剪辑并用于商业炒作",
+    "this_life_revenge": "麦珂设立双签机制，要求所有纪念影像必须经他本人和独立监制共同批准",
+    "cluster_outcome": "维克多失去单方面操控葬礼影像的权利",
+    "summary": "麦珂在直播前设置影像审核机制，防止反派篡改纪念内容",
+    "notes": [
+      "确保影像审核流程透明化",
+      "引入第三方监制参与",
+      "为后续假死做技术准备"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 71,
+        "action": "麦珂宣布将设立独立影像审核小组，负责纪念直播及葬礼影像的最终定稿",
+        "opponent_reaction": "维克多试图劝阻，称此举会延误播出进度",
+        "result": "维克多未能阻止审核机制落地"
+      },
+      {
+        "chapter": 72,
+        "action": "麦珂亲自签署《影像审核协议》，明确其拥有最终否决权",
+        "opponent_reaction": "维克多表面配合，暗中记录麦珂签名",
+        "result": "麦珂获得影像控制权，维克多失去单方面修改权限"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC38",
+    "chapter_span": [
+      73,
+      74
+    ],
+    "is_final_arc": false,
+    "name": "多平台镜像直播系统搭建",
+    "arc_id": "A38",
+    "core_payoff": "麦珂建立多平台同步直播体系，打破单一媒体控制",
+    "main_opponent": "媒体巨头",
+    "escalation_level": "中",
+    "prev_life_tragedy": "上一世他的直播被单点掐流，无法有效传播",
+    "info_gap_from_prev_life": "麦珂记得上一世直播被人为中断或延迟",
+    "this_life_revenge": "麦珂联合多个平台建立镜像直播系统，实现多节点同步",
+    "cluster_outcome": "媒体巨头失去单点控制权",
+    "summary": "麦珂通过多平台直播系统打破媒体垄断",
+    "notes": [
+      "接入多个直播平台",
+      "设定自动切换机制",
+      "防止单点故障"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 73,
+        "action": "麦珂公布多平台直播方案，要求各平台同步上传内容",
+        "opponent_reaction": "媒体巨头表示担忧，认为难以协调",
+        "result": "麦珂推动系统上线，媒体方被迫配合"
+      },
+      {
+        "chapter": 74,
+        "action": "麦珂测试镜像直播功能，确认各平台同步无误",
+        "opponent_reaction": "媒体巨头试图干扰信号传输",
+        "result": "系统稳定运行，媒体方未能破坏直播"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC39",
+    "chapter_span": [
+      75,
+      76
+    ],
+    "is_final_arc": false,
+    "name": "清理纪念舞台后台证件",
+    "arc_id": "A39",
+    "core_payoff": "麦珂清除后台通行证，杜绝巡演方擅自更换节目片段",
+    "main_opponent": "卡尔·霍尔特",
+    "escalation_level": "中",
+    "prev_life_tragedy": "上一世他被偷换演出内容，导致形象受损",
+    "info_gap_from_prev_life": "麦珂记得上一世演出中出现过未经授权的插播画面",
+    "this_life_revenge": "麦珂全面回收后台通行权限，仅保留指定人员",
+    "cluster_outcome": "卡尔·霍尔特失去后台操控能力",
+    "summary": "麦珂收回后台通行证，防止演出内容被篡改",
+    "notes": [
+      "关闭非授权通道",
+      "更新门禁系统",
+      "限制人员进入范围"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 75,
+        "action": "麦珂下令全面升级后台安全系统，只允许特定人员通行",
+        "opponent_reaction": "卡尔·霍尔特不满，声称影响排练效率",
+        "result": "系统升级完成，卡尔·霍尔特失去后台接触权"
+      },
+      {
+        "chapter": 76,
+        "action": "麦珂亲自检查后台准入名单，剔除可疑人员",
+        "opponent_reaction": "卡尔·霍尔特试图干涉，被安保拦下",
+        "result": "后台权限重新分配，卡尔·霍尔特无法再操控演出内容"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC40",
+    "chapter_span": [
+      77,
+      78
+    ],
+    "is_final_arc": false,
+    "name": "锁定纪念影像最终剪辑权",
+    "arc_id": "A40",
+    "core_payoff": "麦珂掌控最终剪辑权，反派预制版本失效",
+    "main_opponent": "维克多·兰斯",
+    "escalation_level": "高",
+    "prev_life_tragedy": "上一世他被强迫使用煽情剪辑版，损害公众形象",
+    "info_gap_from_prev_life": "麦珂记得上一世剪辑版被刻意加入煽动性镜头",
+    "this_life_revenge": "麦珂要求所有剪辑需经他本人签字确认",
+    "cluster_outcome": "维克多预制版本被废止",
+    "summary": "麦珂掌握剪辑权，防止反派操纵影像",
+    "notes": [
+      "设置剪辑审批流程",
+      "引入第三方审核",
+      "拒绝任何未经许可的改动"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 77,
+        "action": "麦珂发布剪辑权声明，规定所有纪念视频必须经他本人核准",
+        "opponent_reaction": "维克多试图说服麦珂接受现有剪辑方案",
+        "result": "麦珂坚持个人审核权，维克多无法介入"
+      },
+      {
+        "chapter": 78,
+        "action": "麦珂亲自审阅剪辑样片，驳回维克多预设版本",
+        "opponent_reaction": "维克多恼怒，但无可奈何",
+        "result": "剪辑版本被重置，维克多失去操控空间"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC41",
+    "chapter_span": [
+      79,
+      80
+    ],
+    "is_final_arc": false,
+    "name": "取得直播延时与紧急切换钥匙",
+    "arc_id": "A41",
+    "core_payoff": "麦珂掌握直播延时与切换权限，平台无法单方面中断",
+    "main_opponent": "直播平台运营方",
+    "escalation_level": "中",
+    "prev_life_tragedy": "上一世直播被随意中断，影响观众体验",
+    "info_gap_from_prev_life": "麦珂记得上一世直播曾被临时切断",
+    "this_life_revenge": "麦珂获取直播系统延时与切换密钥",
+    "cluster_outcome": "平台失去单方面中断权",
+    "summary": "麦珂获得直播系统控制密钥，防止意外中断",
+    "notes": [
+      "获取延时开关权限",
+      "配置备用切换路径",
+      "防止恶意断流"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 79,
+        "action": "麦珂申请直播系统延时与切换密钥，获得技术部门批准",
+        "opponent_reaction": "平台运营方不愿交出密钥",
+        "result": "麦珂以合同条款施压，成功获取密钥"
+      },
+      {
+        "chapter": 80,
+        "action": "麦珂测试延时与切换功能，确认可随时启用",
+        "opponent_reaction": "平台方试图限制操作权限",
+        "result": "系统响应正常，平台方无法干预"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC42",
+    "chapter_span": [
+      81,
+      82
+    ],
+    "is_final_arc": false,
+    "name": "粉丝团建立合法见证席与校验码",
+    "arc_id": "A42",
+    "core_payoff": "粉丝团获得现场见证资格，直播内容可被全球核验",
+    "main_opponent": "主办方",
+    "escalation_level": "中",
+    "prev_life_tragedy": "上一世粉丝无法核实直播真实性，信息被操控",
+    "info_gap_from_prev_life": "麦珂记得上一世直播内容被篡改",
+    "this_life_revenge": "麦珂联合“星火”歌迷会设立公开校验机制",
+    "cluster_outcome": "主办方失去内容操控权",
+    "summary": "粉丝团获得直播核验权，增强内容可信度",
+    "notes": [
+      "设立现场见证席位",
+      "生成公开校验码",
+      "支持全球用户验证"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 81,
+        "action": "麦珂宣布“星火”歌迷会将设立现场见证席，监督直播过程",
+        "opponent_reaction": "主办方反对，称不符合规范",
+        "result": "麦珂以合约条款强制执行，主办方妥协"
+      },
+      {
+        "chapter": 82,
+        "action": "“星火”成员领取校验码，可在直播期间实时核验内容",
+        "opponent_reaction": "主办方试图屏蔽校验码传播",
+        "result": "校验码顺利发放，观众可自由核验直播内容"
+      }
+    ]
+  }
+]

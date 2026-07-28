@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "story_id": "7f5afaed1b5bb0c2",
+  "chapter": 6,
+  "content_hash": "2b71369926eb58dc79f8df4c1fd6a2017ae6fa32a63f7f8a652907b7421ce416",
+  "narrative_timeline": "current",
+  "summary": "麦珂离开排练场后，直接来到医务室。；康拉德张口还想辩解，负责人已经说：“即刻暂停你的职务。；负责人说：“药品保管权归麦珂·杰森。；康拉德·莫里森移开视线。",
+  "characters": [
+    {
+      "name": "康拉德·莫里森",
+      "aliases": [
+        "康拉德",
+        "莫里森"
+      ],
+      "mention_mode": "active",
+      "evidence": "麦珂离开排练场后，直接来到医务室。现场负责人已经站在桌边，康拉德·莫里森坐在桌子另一侧。针剂封签保持未拆，送货单和领用簿并排摆着。麦珂停在桌前，没有去碰任何一件材料，只看向康拉德。康拉德没有起身，反而问：“刚结束测试，你还要查什么？”负责人把目光转向麦珂，等他开口。\n\n麦 送达少，领用反而多。你来解释。”康拉德先看送货单，又看领用簿，迟迟没有接话。负责人把两份材料留在原位，等着他的回答。\n\n康拉德·莫里森说：“这只是笔误，后来补记漏了。”他伸手想拿回领用簿。麦珂·杰森说：“封"
+    },
+    {
+      "name": "麦珂·杰森",
+      "aliases": [
+        "杰森",
+        "麦珂"
+      ],
+      "mention_mode": "active",
+      "evidence": "有接话。负责人把两份材料留在原位，等着他的回答。\n\n康拉德·莫里森说：“这只是笔误，后来补记漏了。”他伸手想拿回领用簿。麦珂·杰森说：“封签、送货单和领用簿都是康拉德·莫里森经手的。”负责人按住领用簿。\n\n负责人没有再让康拉德把话题绕开。他指向桌上的两行数量，说：“送货单是七支，领用簿是八支；你的解释只有笔误和漏记。”康拉德张口 康拉德坐着没有动，医务室里没人替他接话。\n\n康拉德·莫里森交出唯一钥匙和领用簿，放到负责人掌心。负责人说：“药品保管权归麦珂·杰森。”负责人随即把钥"
+    }
+  ],
+  "events": [
+    {
+      "event_index": 0,
+      "type": "chapter_event",
+      "summary": "麦珂离开排练场后，直接来到医务室。；康拉德张口还想辩解，负责人已经说：“即刻暂停你的职务。；负责人说：“药品保管权归麦珂·杰森。；康拉德·莫里森移开视线。",
+      "story_time": "",
+      "location": "",
+      "outcome": "康拉德张口还想辩解，负责人已经说：“即刻暂停你的职务。；负责人说：“药品保管权归麦珂·杰森。",
+      "participants": [
+        {
+          "name": "康拉德·莫里森",
+          "mode": "active",
+          "role": "正文参与者"
+        },
+        {
+          "name": "麦珂·杰森",
+          "mode": "active",
+          "role": "正文参与者"
+        }
+      ],
+      "caused_by": [],
+      "importance": 0.65,
+      "timeline": "current"
+    }
+  ],
+  "state_changes": [
+    {
+      "character": "麦珂·杰森",
+      "field": "possession",
+      "old_value": "",
+      "new_value": "药品保管权",
+      "reason": "正文由现场权限者明确归还或移交权限",
+      "evidence": "药品保管权归麦珂·杰森",
+      "permanent": false,
+      "confidence": 0.88,
+      "timeline": "current"
+    },
+    {
+      "character": "康拉德·莫里森",
+      "field": "occupation",
+      "old_value": "在职",
+      "new_value": "停职",
+      "reason": "正文由现场负责人明确宣布停职",
+      "evidence": "即刻暂停你的职务",
+      "permanent": false,
+      "confidence": 0.78,
+      "timeline": "current"
+    }
+  ],
+  "relationships": [],
+  "facts": [],
+  "plot_threads": [],
+  "continuity_claims": [],
+  "event_preconditions": [],
+  "extraction_status": "heuristic_complete"
+}

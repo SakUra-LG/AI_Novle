@@ -17,6 +17,7 @@ from datetime import datetime
 from typing import List, Dict, Any
 
 import dashscope
+from bert_excitation_train.scripts.qwen_transport import call_qwen_via_curl
 
 from bert_excitation_train.scripts.smart_sample_search import search_and_adapt_samples
 
@@ -26,7 +27,7 @@ PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "outputs")
 
 
-API_Key_QW = "sk-a2966f4e37134351904851679884cb67"
+API_Key_QW = os.getenv("DASHSCOPE_API_KEY", "sk-a2966f4e37134351904851679884cb67")
 MAX_TOKENS = 8192
 
 # 在 V2 流程中统一锁定男女主姓名，后续所有脚本与模型提示都复用这一对名字
@@ -96,7 +97,15 @@ def call_qianwen_api(messages, temperature=0.8, top_p=0.85, repetition_penalty=1
             return content.replace("```", "").strip()
         return f"通义千问 API 返回了无效格式: {resp!r}"
     except Exception as e:  # noqa: BLE001
-        return f"调用通义千问 API 出错: {e}"
+        try:
+            resp = call_qwen_via_curl(
+                messages, api_key=API_Key_QW, temperature=temperature, top_p=top_p,
+                repetition_penalty=repetition_penalty, max_tokens=MAX_TOKENS,
+            )
+            content = resp["output"]["choices"][0]["message"]["content"]
+            return str(content).replace("```", "").strip()
+        except Exception as fallback_error:  # noqa: BLE001
+            return f"调用通义千问 API 出错: SDK={e}; curl={fallback_error}"
 
 
 def generate_global_seed_plan_v2() -> str:
@@ -648,4 +657,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "story_id": "65b20fd220cb5237",
+  "chapter": 2,
+  "content_hash": "3893ea3865e79e31358da8c56bef9aac34bff7bc6e1d539811804c64a6d8246a",
+  "narrative_timeline": "current",
+  "summary": "麦珂·杰森猛然惊醒。；医疗负责人复述要求，确认双签从此刻生效。；”",
+  "characters": [
+    {
+      "name": "康拉德·莫里森",
+      "aliases": [],
+      "mention_mode": "active",
+      "evidence": "了一遍。\n\n距离上一世死亡，还有一百零七天。\n\n这不是梦。麦珂·杰森重生了，回到了那场复出发布会之前。\n\n门锁轻响。\n\n康拉德·莫里森端着针盘走进来，神情温和得近乎体贴：“你昨晚没睡好。发布会之前打一针，精神会稳定些。”\n\n银亮的针尖压在透明针帽下，和上一世每次被迫接受注射时一模一样。那时康拉德总说是为了睡眠、为了体力、为了让他站上"
+    },
+    {
+      "name": "麦珂·杰森",
+      "aliases": [],
+      "mention_mode": "active",
+      "evidence": "麦珂·杰森猛然惊醒。\n\n上一世针剂涌进血管的冰冷仿佛还贴在骨头上。他一把扯开领口，急促吸气，掌心死死按住胸口。心脏正在跳，沉重、凌乱，却真实得让他眼眶发烫。\n\n他立刻摸向颈侧和手臂。皮肤完整，没有新鲜针孔，也没 起手机。屏幕日期、当天日程、首演倒计时，他逐项核对，又在心里算了一遍。\n\n距离上一世死亡，还有一百零七天。\n\n这不是梦。麦珂·杰森重生了，回到了那场复出发布会之前。\n\n门锁轻响。\n\n康拉德·莫里森端着针盘走进来，神情温和得近乎体贴：“你昨晚没睡好。发布会之前打一针，精"
+    }
+  ],
+  "events": [
+    {
+      "event_index": 0,
+      "type": "chapter_event",
+      "summary": "麦珂·杰森猛然惊醒。；医疗负责人复述要求，确认双签从此刻生效。；”",
+      "story_time": "",
+      "location": "",
+      "outcome": "医疗负责人复述要求，确认双签从此刻生效。",
+      "participants": [
+        {
+          "name": "康拉德·莫里森",
+          "mode": "active",
+          "role": "正文参与者"
+        },
+        {
+          "name": "麦珂·杰森",
+          "mode": "active",
+          "role": "正文参与者"
+        }
+      ],
+      "caused_by": [],
+      "importance": 0.65,
+      "timeline": "current"
+    }
+  ],
+  "state_changes": [
+    {
+      "character": "康拉德·莫里森",
+      "field": "possession",
+      "old_value": "单方注射权",
+      "new_value": "无单方注射权",
+      "reason": "正文明确撤销单方医疗操作权限",
+      "evidence": "康拉德的名字仍留在医生一栏，却失去了单方面决定和执行注射的权",
+      "permanent": false,
+      "confidence": 0.84,
+      "timeline": "current"
+    },
+    {
+      "character": "麦珂·杰森",
+      "field": "possession",
+      "old_value": "",
+      "new_value": "医疗双签与本人同意权",
+      "reason": "正文明确医疗双签已经生效",
+      "evidence": "双签从此刻生效",
+      "permanent": false,
+      "confidence": 0.82,
+      "timeline": "current"
+    }
+  ],
+  "relationships": [],
+  "facts": [],
+  "plot_threads": [],
+  "continuity_claims": [],
+  "event_preconditions": [],
+  "extraction_status": "heuristic_complete"
+}

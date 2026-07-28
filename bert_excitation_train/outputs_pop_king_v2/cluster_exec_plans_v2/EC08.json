@@ -1,0 +1,230 @@
+{
+  "cluster_id": "EC08",
+  "cluster_name": "识破死后授权霸王补充协议，撤销遗产律师的代签权限",
+  "evidence_chain": [
+    {
+      "evidence_id": "E1",
+      "evidence_type": "合同",
+      "source": "麦珂查阅合同并发现隐藏条款",
+      "acquire_chapter": 13,
+      "verify_chapter": 13,
+      "use_chapter": 14,
+      "purpose": "协议被正式废除，麦珂获得独立签署权",
+      "acquire_keywords": [
+        "合同",
+        "提前"
+      ],
+      "verify_keywords": [
+        "合同",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "合同",
+        "当场"
+      ]
+    },
+    {
+      "evidence_id": "E2",
+      "evidence_type": "隐藏条款",
+      "source": "麦珂查阅合同并发现隐藏条款",
+      "acquire_chapter": 13,
+      "verify_chapter": 13,
+      "use_chapter": 14,
+      "purpose": "协议被正式废除，麦珂获得独立签署权",
+      "acquire_keywords": [
+        "隐藏条款",
+        "提前"
+      ],
+      "verify_keywords": [
+        "隐藏条款",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "隐藏条款",
+        "当场"
+      ]
+    },
+    {
+      "evidence_id": "E3",
+      "evidence_type": "冷静期",
+      "source": "麦珂查阅合同并发现隐藏条款",
+      "acquire_chapter": 13,
+      "verify_chapter": 13,
+      "use_chapter": 14,
+      "purpose": "协议被正式废除，麦珂获得独立签署权",
+      "acquire_keywords": [
+        "冷静期",
+        "提前"
+      ],
+      "verify_keywords": [
+        "冷静期",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "冷静期",
+        "当场"
+      ]
+    },
+    {
+      "evidence_id": "E4",
+      "evidence_type": "代签授权",
+      "source": "麦珂查阅合同并发现隐藏条款",
+      "acquire_chapter": 13,
+      "verify_chapter": 13,
+      "use_chapter": 14,
+      "purpose": "协议被正式废除，麦珂获得独立签署权",
+      "acquire_keywords": [
+        "代签授权",
+        "提前"
+      ],
+      "verify_keywords": [
+        "代签授权",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "代签授权",
+        "当场"
+      ]
+    },
+    {
+      "evidence_id": "E5",
+      "evidence_type": "协议",
+      "source": "麦珂联合律师团队召开紧急会议",
+      "acquire_chapter": 14,
+      "verify_chapter": 14,
+      "use_chapter": 14,
+      "purpose": "协议被正式废除，麦珂获得独立签署权",
+      "acquire_keywords": [
+        "协议",
+        "提前"
+      ],
+      "verify_keywords": [
+        "协议",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "协议",
+        "当场"
+      ]
+    }
+  ],
+  "forbidden_new_evidence_types": [
+    "天降视频",
+    "匿名人送U盘",
+    "匿名邮件",
+    "匿名爆料",
+    "无规划的关键证人"
+  ],
+  "chapter_execution_focus": {
+    "13": "麦珂查阅合同并发现隐藏条款→托马斯·布莱克试图劝阻并掩盖事实→麦珂当场拒签并触发原合同冷静期，托马斯的代签授权被临时冻结",
+    "14": "麦珂联合律师团队召开紧急会议→托马斯·布莱克试图拖延并辩解→协议被正式废除，麦珂获得独立签署权"
+  },
+  "scene_contracts": {
+    "13": {
+      "version": 1,
+      "source": "event_cluster_milestone",
+      "scene_archetype": "contract_rights_audit",
+      "phase": "setup",
+      "protagonist": "麦珂·杰森",
+      "opponent": "托马斯·布莱克",
+      "opponent_scene_actor": "托马斯·布莱克",
+      "supporting_cast": [],
+      "supporting_organizations": [],
+      "old_trap_signal": "麦珂记得上一世遗嘱条款中隐藏的死亡后自动移交条款。",
+      "trigger_action": "麦珂查阅合同并发现隐藏条款",
+      "opponent_self_incrimination": "托马斯·布莱克试图劝阻并掩盖事实",
+      "established_evidence_carriers": [],
+      "current_evidence_carriers": [
+        "合同",
+        "隐藏条款",
+        "冷静期",
+        "代签授权"
+      ],
+      "allowed_evidence_carriers": [
+        "合同",
+        "隐藏条款",
+        "冷静期",
+        "代签授权"
+      ],
+      "verification_action": "麦珂查阅合同并发现隐藏条款",
+      "immediate_result": "麦珂当场拒签并触发原合同冷静期，托马斯的代签授权被临时冻结",
+      "authority_actor": "麦珂·杰森",
+      "authority_gain": "",
+      "opponent_loss": "托马斯的代签授权被临时冻结",
+      "protagonist_gain": "",
+      "settlement_required": false,
+      "forbidden_mechanics": [
+        "匿名材料",
+        "万能黑客",
+        "突然出现的关键证人",
+        "未规划的录音或视频",
+        "临时发明的协议编号或条款编号",
+        "未在契约中的设备日志或检测报告",
+        "英文字母代号",
+        "毫秒级或工程参数堆砌"
+      ]
+    },
+    "14": {
+      "version": 1,
+      "source": "event_cluster_milestone",
+      "scene_archetype": "contract_rights_audit",
+      "phase": "settlement",
+      "protagonist": "麦珂·杰森",
+      "opponent": "托马斯·布莱克",
+      "opponent_scene_actor": "托马斯·布莱克",
+      "supporting_cast": [],
+      "supporting_organizations": [],
+      "old_trap_signal": "麦珂记得上一世遗嘱条款中隐藏的死亡后自动移交条款。",
+      "trigger_action": "麦珂联合律师团队召开紧急会议",
+      "opponent_self_incrimination": "托马斯·布莱克试图拖延并辩解",
+      "established_evidence_carriers": [
+        "合同",
+        "隐藏条款",
+        "冷静期",
+        "代签授权"
+      ],
+      "current_evidence_carriers": [
+        "协议",
+        "签署权"
+      ],
+      "allowed_evidence_carriers": [
+        "合同",
+        "隐藏条款",
+        "冷静期",
+        "代签授权",
+        "协议",
+        "签署权"
+      ],
+      "verification_action": "麦珂联合律师团队召开紧急会议",
+      "immediate_result": "协议被正式废除，麦珂获得独立签署权",
+      "authority_actor": "律师",
+      "authority_gain": "",
+      "opponent_loss": "协议被正式废除",
+      "protagonist_gain": "麦珂获得独立签署权",
+      "settlement_required": true,
+      "forbidden_mechanics": [
+        "匿名材料",
+        "万能黑客",
+        "突然出现的关键证人",
+        "未规划的录音或视频",
+        "临时发明的协议编号或条款编号",
+        "未在契约中的设备日志或检测报告",
+        "英文字母代号",
+        "毫秒级或工程参数堆砌"
+      ]
+    }
+  },
+  "payoff_sequence": [
+    "麦珂查阅合同并发现隐藏条款",
+    "托马斯·布莱克试图劝阻并掩盖事实",
+    "麦珂当场拒签并触发原合同冷静期，托马斯的代签授权被临时冻结",
+    "麦珂联合律师团队召开紧急会议",
+    "托马斯·布莱克试图拖延并辩解",
+    "协议被正式废除，麦珂获得独立签署权"
+  ]
+}

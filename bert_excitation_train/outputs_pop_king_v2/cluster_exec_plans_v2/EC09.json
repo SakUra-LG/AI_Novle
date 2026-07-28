@@ -1,0 +1,150 @@
+{
+  "cluster_id": "EC09",
+  "cluster_name": "用无修音公开排练反杀假唱指控，取消造谣合作方的采访席位",
+  "evidence_chain": [
+    {
+      "evidence_id": "E1",
+      "evidence_type": "实时声轨",
+      "source": "麦珂宣布举办公开无修音排练",
+      "acquire_chapter": 15,
+      "verify_chapter": 15,
+      "use_chapter": 16,
+      "purpose": "造谣账号撤回指控并退还采访预付款，麦珂取得后续排练原声发布权",
+      "acquire_keywords": [
+        "实时声轨",
+        "提前"
+      ],
+      "verify_keywords": [
+        "实时声轨",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "实时声轨",
+        "当场"
+      ]
+    },
+    {
+      "evidence_id": "E2",
+      "evidence_type": "后续排练原声",
+      "source": "麦珂在排练中完整演绎歌曲",
+      "acquire_chapter": 16,
+      "verify_chapter": 16,
+      "use_chapter": 16,
+      "purpose": "造谣账号撤回指控并退还采访预付款，麦珂取得后续排练原声发布权",
+      "acquire_keywords": [
+        "后续排练原声",
+        "提前"
+      ],
+      "verify_keywords": [
+        "后续排练原声",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "后续排练原声",
+        "当场"
+      ]
+    }
+  ],
+  "forbidden_new_evidence_types": [
+    "天降视频",
+    "匿名人送U盘",
+    "匿名邮件",
+    "匿名爆料",
+    "无规划的关键证人"
+  ],
+  "chapter_execution_focus": {
+    "15": "麦珂宣布举办公开无修音排练→媒体试图抹黑并散布负面信息→麦珂一镜到底唱完高难新曲，实时声轨公开，造谣合作方当场失去独家采访席位",
+    "16": "麦珂在排练中完整演绎歌曲→媒体试图中断拍摄但未果→造谣账号撤回指控并退还采访预付款，麦珂取得后续排练原声发布权"
+  },
+  "scene_contracts": {
+    "15": {
+      "version": 1,
+      "source": "event_cluster_milestone",
+      "scene_archetype": "live_capability_validation",
+      "phase": "setup",
+      "protagonist": "麦珂·杰森",
+      "opponent": "媒体机构与造谣合作方",
+      "opponent_scene_actor": "媒体机构",
+      "supporting_cast": [],
+      "supporting_organizations": [],
+      "old_trap_signal": "麦珂记得上一世假唱指控的来源与具体言论。",
+      "trigger_action": "麦珂宣布举办公开无修音排练",
+      "opponent_self_incrimination": "媒体试图抹黑并散布负面信息",
+      "established_evidence_carriers": [],
+      "current_evidence_carriers": [
+        "实时声轨"
+      ],
+      "allowed_evidence_carriers": [
+        "实时声轨"
+      ],
+      "verification_action": "麦珂宣布举办公开无修音排练",
+      "immediate_result": "麦珂一镜到底唱完高难新曲，实时声轨公开，造谣合作方当场失去独家采访席位",
+      "authority_actor": "麦珂·杰森",
+      "authority_gain": "",
+      "opponent_loss": "造谣合作方当场失去独家采访席位",
+      "protagonist_gain": "",
+      "settlement_required": false,
+      "forbidden_mechanics": [
+        "匿名材料",
+        "万能黑客",
+        "突然出现的关键证人",
+        "未规划的录音或视频",
+        "临时发明的协议编号或条款编号",
+        "未在契约中的设备日志或检测报告",
+        "英文字母代号",
+        "毫秒级或工程参数堆砌"
+      ]
+    },
+    "16": {
+      "version": 1,
+      "source": "event_cluster_milestone",
+      "scene_archetype": "live_capability_validation",
+      "phase": "settlement",
+      "protagonist": "麦珂·杰森",
+      "opponent": "媒体机构与造谣合作方",
+      "opponent_scene_actor": "媒体机构",
+      "supporting_cast": [],
+      "supporting_organizations": [],
+      "old_trap_signal": "麦珂记得上一世假唱指控的来源与具体言论。",
+      "trigger_action": "麦珂在排练中完整演绎歌曲",
+      "opponent_self_incrimination": "媒体试图中断拍摄但未果",
+      "established_evidence_carriers": [
+        "实时声轨"
+      ],
+      "current_evidence_carriers": [
+        "后续排练原声"
+      ],
+      "allowed_evidence_carriers": [
+        "实时声轨",
+        "后续排练原声"
+      ],
+      "verification_action": "麦珂在排练中完整演绎歌曲",
+      "immediate_result": "造谣账号撤回指控并退还采访预付款，麦珂取得后续排练原声发布权",
+      "authority_actor": "从开场就在场的有权者",
+      "authority_gain": "",
+      "opponent_loss": "造谣账号撤回指控并退还采访预付款",
+      "protagonist_gain": "麦珂取得后续排练原声发布权",
+      "settlement_required": true,
+      "forbidden_mechanics": [
+        "匿名材料",
+        "万能黑客",
+        "突然出现的关键证人",
+        "未规划的录音或视频",
+        "临时发明的协议编号或条款编号",
+        "未在契约中的设备日志或检测报告",
+        "英文字母代号",
+        "毫秒级或工程参数堆砌"
+      ]
+    }
+  },
+  "payoff_sequence": [
+    "麦珂宣布举办公开无修音排练",
+    "媒体试图抹黑并散布负面信息",
+    "麦珂一镜到底唱完高难新曲，实时声轨公开，造谣合作方当场失去独家采访席位",
+    "麦珂在排练中完整演绎歌曲",
+    "媒体试图中断拍摄但未果",
+    "造谣账号撤回指控并退还采访预付款，麦珂取得后续排练原声发布权"
+  ]
+}

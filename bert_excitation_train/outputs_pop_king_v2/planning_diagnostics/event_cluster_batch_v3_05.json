@@ -1,0 +1,230 @@
+[
+  {
+    "cluster_id": "EC25",
+    "chapter_span": [
+      47,
+      48
+    ],
+    "is_final_arc": false,
+    "name": "亲属私吞旅行开支，现场剔除账单并冻结家属预算",
+    "arc_id": "A10",
+    "core_payoff": "夺回家庭财务透明度与预算控制权",
+    "main_opponent": "麦珂家族成员",
+    "escalation_level": "经济操控与亲情绑架",
+    "prev_life_tragedy": "上一世被亲属挪用巡演资金用于私人旅行",
+    "info_gap_from_prev_life": "主角记得上一世家属私自安排豪华旅行并计入巡演成本",
+    "this_life_revenge": "当场揭露账单造假并冻结相关预算",
+    "cluster_outcome": "家属失去预算支配权，巡演成本重新核算",
+    "summary": "主角发现亲属将豪华旅行塞入巡演成本，现场剔除账单并冻结家属预算。",
+    "notes": [
+      "利用过往记忆中的具体行程细节",
+      "通过财务审计当场揭发",
+      "阻止亲属继续滥用资源"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 47,
+        "action": "麦珂调取巡演成本明细，发现一笔巨额境外旅行费用",
+        "opponent_reaction": "家属试图转移话题并否认支出",
+        "result": "麦珂出示详细机票和酒店账单，家属无言以对"
+      },
+      {
+        "chapter": 48,
+        "action": "麦珂宣布取消所有家属预算，并要求重新审核所有支出",
+        "opponent_reaction": "家属怒斥其不近人情，但无法反驳事实",
+        "result": "巡演团队同意重新分配预算，家属失去资金调配权"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC26",
+    "chapter_span": [
+      49,
+      50
+    ],
+    "is_final_arc": false,
+    "name": "唱片联盟压低母带估值，独立盲拍反证后夺回定价权",
+    "arc_id": "A11",
+    "core_payoff": "夺回音乐作品价值评估权与发行主动权",
+    "main_opponent": "米国唱片联盟",
+    "escalation_level": "版权操控与市场操纵",
+    "prev_life_tragedy": "上一世母带被低价打包出售给联盟",
+    "info_gap_from_prev_life": "主角记得上一世母带被低估至极低价格",
+    "this_life_revenge": "发起独立盲拍，证明真实市场价值",
+    "cluster_outcome": "联盟被迫承认母带真实价值，主角获得定价权",
+    "summary": "唱片联盟压低母带估值，主角发起盲拍反证后夺回定价权。",
+    "notes": [
+      "利用前世记忆中的市场行情",
+      "组织独立拍卖会公开竞标",
+      "迫使联盟重新评估作品价值"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 49,
+        "action": "麦珂私下联系几家独立唱片公司，发起母带盲拍",
+        "opponent_reaction": "联盟高层对此表示不屑，认为无人敢挑战他们",
+        "result": "多家公司出价高于联盟报价，引发关注"
+      },
+      {
+        "chapter": 50,
+        "action": "麦珂公布盲拍结果，并要求联盟重新议价",
+        "opponent_reaction": "联盟不得不承认低估了母带价值",
+        "result": "联盟同意按盲拍价格重新签约，麦珂获得更高分成"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC27",
+    "chapter_span": [
+      51,
+      52
+    ],
+    "is_final_arc": false,
+    "name": "反派提前生产葬礼周边，主角没收库存并收回肖像授权",
+    "arc_id": "A12",
+    "core_payoff": "夺回纪念品授权与品牌使用权",
+    "main_opponent": "维克多·兰斯",
+    "escalation_level": "名誉操控与遗产侵占",
+    "prev_life_tragedy": "上一世葬礼周边被抢先制造并牟利",
+    "info_gap_from_prev_life": "主角记得上一世有人提前生产纪念品",
+    "this_life_revenge": "突击检查仓库并没收非法制品",
+    "cluster_outcome": "反派丧失周边销售权，麦珂重获肖像授权",
+    "summary": "反派提前生产葬礼周边，主角没收库存并收回肖像授权。",
+    "notes": [
+      "利用前世记忆中的生产时间线",
+      "联合警方突击检查仓储地点",
+      "阻止未经授权的纪念品流通"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 51,
+        "action": "麦珂接到线报称有非法纪念品在仓库存放",
+        "opponent_reaction": "维克多试图掩盖消息，暗示这是“行业惯例”",
+        "result": "麦珂带领团队突袭仓库，查获大量未授权产品"
+      },
+      {
+        "chapter": 52,
+        "action": "麦珂公开销毁非法制品，并声明肖像授权仅限官方渠道",
+        "opponent_reaction": "维克多试图辩解，但无法挽回局面",
+        "result": "反派失去周边销售权，麦珂重获肖像授权"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC28",
+    "chapter_span": [
+      53,
+      54
+    ],
+    "is_final_arc": false,
+    "name": "未完成小样被包装成遗作，主角阻止发行并取得最终混音权",
+    "arc_id": "A13",
+    "core_payoff": "夺回音乐创作主导权与作品完整性",
+    "main_opponent": "托马斯·布莱克",
+    "escalation_level": "艺术篡改与版权欺诈",
+    "prev_life_tragedy": "上一世未完成歌曲被当作遗作发布",
+    "info_gap_from_prev_life": "主角记得上一世有一首未完成曲目被擅自发行",
+    "this_life_revenge": "阻止非正式版本发行并掌握混音权限",
+    "cluster_outcome": "反派失去作品发布权，麦珂掌控最终混音",
+    "summary": "未完成小样被包装成遗作，主角阻止发行并取得最终混音权。",
+    "notes": [
+      "凭借前世记忆识别伪作",
+      "联合制作团队确认作品状态",
+      "阻止未经批准的发行行为"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 53,
+        "action": "麦珂得知一首未完成曲目即将被误传为遗作发行",
+        "opponent_reaction": "托马斯声称这是“出于好意的整理”，企图搪塞",
+        "result": "麦珂找到原始录音文件，证明该曲尚未完工"
+      },
+      {
+        "chapter": 54,
+        "action": "麦珂宣布暂停发行计划，并要求重新混音",
+        "opponent_reaction": "托马斯试图拖延，但无法动摇麦珂立场",
+        "result": "反派失去发行权，麦珂获得最终混音控制权"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC29",
+    "chapter_span": [
+      55,
+      56
+    ],
+    "is_final_arc": false,
+    "name": "曲库估值被做低，第三方竞价迫使联盟承认真实价值并失去收购优先权",
+    "arc_id": "A14",
+    "core_payoff": "打破联盟垄断，建立公平交易机制",
+    "main_opponent": "米国唱片联盟",
+    "escalation_level": "资本操控与市场垄断",
+    "prev_life_tragedy": "上一世曲库被联盟恶意压价并购",
+    "info_gap_from_prev_life": "主角记得上一世联盟故意压低曲库估值",
+    "this_life_revenge": "引入外部竞争方进行竞价",
+    "cluster_outcome": "联盟被迫承认真实价值，失去优先收购权",
+    "summary": "曲库估值被做低，第三方竞价迫使联盟承认真实价值并失去收购优先权。",
+    "notes": [
+      "利用前世记忆中的市场数据",
+      "邀请多个潜在买家参与竞价",
+      "迫使联盟公开真实财务状况"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 55,
+        "action": "麦珂秘密联系多家唱片公司，告知联盟正在压低曲库价值",
+        "opponent_reaction": "联盟试图封锁消息，不愿正面回应",
+        "result": "多家公司加入竞价，推动市场价格上涨"
+      },
+      {
+        "chapter": 56,
+        "action": "麦珂召开新闻发布会，公布竞价结果并拒绝联盟独家收购",
+        "opponent_reaction": "联盟高层措手不及，不得不接受现实",
+        "result": "联盟失去优先收购权，麦珂获得更优交易条件"
+      }
+    ]
+  },
+  {
+    "cluster_id": "EC30",
+    "chapter_span": [
+      57,
+      58
+    ],
+    "is_final_arc": false,
+    "name": "档案底片被用于纪念专辑，主角夺回底片库访问和复制权",
+    "arc_id": "A15",
+    "core_payoff": "保护历史影像资料完整性和使用权限",
+    "main_opponent": "维克多·兰斯",
+    "escalation_level": "文化侵蚀与影像操控",
+    "prev_life_tragedy": "上一世照片档案被联盟盗用制作纪念专辑",
+    "info_gap_from_prev_life": "主角记得上一世有大量珍贵底片被非法使用",
+    "this_life_revenge": "突击搜查并夺回底片库管理权",
+    "cluster_outcome": "反派失去影像资料使用权，麦珂恢复底片控制权",
+    "summary": "档案底片被用于纪念专辑，主角夺回底片库访问和复制权。",
+    "notes": [
+      "凭借前世记忆定位关键底片位置",
+      "联合法律团队发起强制检查",
+      "防止未经授权的影像使用"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 57,
+        "action": "麦珂收到举报称有大量底片被用于纪念专辑制作",
+        "opponent_reaction": "维克多试图否认并强调“艺术需要自由发挥”",
+        "result": "麦珂带队前往底片库，发现大量未授权使用记录"
+      },
+      {
+        "chapter": 58,
+        "action": "麦珂宣布暂停专辑发行，并要求联盟交出所有底片资料",
+        "opponent_reaction": "维克多被迫妥协，但仍试图保留部分底片",
+        "result": "麦珂获得底片库访问与复制权，联盟失去影像控制"
+      }
+    ]
+  }
+]

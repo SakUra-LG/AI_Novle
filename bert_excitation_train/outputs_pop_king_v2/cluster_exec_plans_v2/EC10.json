@@ -1,0 +1,151 @@
+{
+  "cluster_id": "EC10",
+  "cluster_name": "当场阻止亲属挪用慈善款，收回基金支付双签与审计权",
+  "evidence_chain": [
+    {
+      "evidence_id": "E1",
+      "evidence_type": "账单",
+      "source": "在慈善款支付会上故意让亲属按上一世话术申请一笔‘家属接待费’",
+      "acquire_chapter": 17,
+      "verify_chapter": 17,
+      "use_chapter": 18,
+      "purpose": "亲属被停职，麦珂获得基金监管权",
+      "acquire_keywords": [
+        "账单",
+        "提前"
+      ],
+      "verify_keywords": [
+        "账单",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "账单",
+        "当场"
+      ]
+    },
+    {
+      "evidence_id": "E2",
+      "evidence_type": "收款账户",
+      "source": "在慈善款支付会上故意让亲属按上一世话术申请一笔‘家属接待费’",
+      "acquire_chapter": 17,
+      "verify_chapter": 17,
+      "use_chapter": 18,
+      "purpose": "亲属被停职，麦珂获得基金监管权",
+      "acquire_keywords": [
+        "收款账户",
+        "提前"
+      ],
+      "verify_keywords": [
+        "收款账户",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "收款账户",
+        "当场"
+      ]
+    }
+  ],
+  "forbidden_new_evidence_types": [
+    "天降视频",
+    "匿名人送U盘",
+    "匿名邮件",
+    "匿名爆料",
+    "无规划的关键证人"
+  ],
+  "chapter_execution_focus": {
+    "17": "在慈善款支付会上故意让亲属按上一世话术申请一笔‘家属接待费’→亲属抢着签字领功，把私人酒店账单和收款账户一起投上会议屏幕→麦珂当场驳回付款并冻结该账户，亲属失去单笔支付权，慈善款没有流出",
+    "18": "麦珂当众出示证据并要求双签审计→亲属试图逃避责任但被逼就范→亲属被停职，麦珂获得基金监管权"
+  },
+  "scene_contracts": {
+    "17": {
+      "version": 1,
+      "source": "event_cluster_milestone",
+      "scene_archetype": "financial_process_audit",
+      "phase": "setup",
+      "protagonist": "麦珂·杰森",
+      "opponent": "亲属与财务代理",
+      "opponent_scene_actor": "亲属",
+      "supporting_cast": [],
+      "supporting_organizations": [],
+      "old_trap_signal": "麦珂记得上一世慈善款项流向及相关签名文件。",
+      "trigger_action": "在慈善款支付会上故意让亲属按上一世话术申请一笔‘家属接待费’",
+      "opponent_self_incrimination": "亲属抢着签字领功，把私人酒店账单和收款账户一起投上会议屏幕",
+      "established_evidence_carriers": [],
+      "current_evidence_carriers": [
+        "账单",
+        "收款账户"
+      ],
+      "allowed_evidence_carriers": [
+        "账单",
+        "收款账户"
+      ],
+      "verification_action": "在慈善款支付会上故意让亲属按上一世话术申请一笔‘家属接待费’",
+      "immediate_result": "麦珂当场驳回付款并冻结该账户，亲属失去单笔支付权，慈善款没有流出",
+      "authority_actor": "麦珂·杰森",
+      "authority_gain": "",
+      "opponent_loss": "麦珂当场驳回付款并冻结该账户",
+      "protagonist_gain": "",
+      "settlement_required": false,
+      "forbidden_mechanics": [
+        "匿名材料",
+        "万能黑客",
+        "突然出现的关键证人",
+        "未规划的录音或视频",
+        "临时发明的协议编号或条款编号",
+        "未在契约中的设备日志或检测报告",
+        "英文字母代号",
+        "毫秒级或工程参数堆砌"
+      ]
+    },
+    "18": {
+      "version": 1,
+      "source": "event_cluster_milestone",
+      "scene_archetype": "financial_process_audit",
+      "phase": "settlement",
+      "protagonist": "麦珂·杰森",
+      "opponent": "亲属与财务代理",
+      "opponent_scene_actor": "亲属",
+      "supporting_cast": [],
+      "supporting_organizations": [],
+      "old_trap_signal": "麦珂记得上一世慈善款项流向及相关签名文件。",
+      "trigger_action": "麦珂当众出示证据并要求双签审计",
+      "opponent_self_incrimination": "亲属试图逃避责任但被逼就范",
+      "established_evidence_carriers": [
+        "账单",
+        "收款账户"
+      ],
+      "current_evidence_carriers": [],
+      "allowed_evidence_carriers": [
+        "账单",
+        "收款账户"
+      ],
+      "verification_action": "麦珂当众出示证据并要求双签审计",
+      "immediate_result": "亲属被停职，麦珂获得基金监管权",
+      "authority_actor": "从开场就在场的有权者",
+      "authority_gain": "",
+      "opponent_loss": "亲属被停职",
+      "protagonist_gain": "麦珂获得基金监管权",
+      "settlement_required": true,
+      "forbidden_mechanics": [
+        "匿名材料",
+        "万能黑客",
+        "突然出现的关键证人",
+        "未规划的录音或视频",
+        "临时发明的协议编号或条款编号",
+        "未在契约中的设备日志或检测报告",
+        "英文字母代号",
+        "毫秒级或工程参数堆砌"
+      ]
+    }
+  },
+  "payoff_sequence": [
+    "在慈善款支付会上故意让亲属按上一世话术申请一笔‘家属接待费’",
+    "亲属抢着签字领功，把私人酒店账单和收款账户一起投上会议屏幕",
+    "麦珂当场驳回付款并冻结该账户，亲属失去单笔支付权，慈善款没有流出",
+    "麦珂当众出示证据并要求双签审计",
+    "亲属试图逃避责任但被逼就范",
+    "亲属被停职，麦珂获得基金监管权"
+  ]
+}

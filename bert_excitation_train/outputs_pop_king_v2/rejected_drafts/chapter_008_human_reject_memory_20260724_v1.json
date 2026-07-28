@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "story_id": "7f5afaed1b5bb0c2",
+  "chapter": 8,
+  "content_hash": "8ef80d21cbe5c96ebee155cac6759e2182f9f0df81a8a609d995afcdf73de78f",
+  "narrative_timeline": "current",
+  "summary": "排练开始前，隐藏总表与对外排期表并排摊在长桌上。；卡尔·霍尔特失去排期签批权；真正的恢复时间第一次写进正式排期，再没有人能把它偷换成另一项工作。",
+  "characters": [
+    {
+      "name": "卡尔·霍尔特",
+      "aliases": [
+        "卡尔",
+        "霍尔特"
+      ],
+      "mention_mode": "active",
+      "evidence": "对外排期表并排摊在长桌上。\n\n麦珂·杰森把所有参与排期的人叫到桌边，没有让任何人打开电子设备，也没有调取额外记录。昨天，卡尔·霍尔特为抢下加场功劳，已经亲手拿出这份总表，亲口承认所有场次都由他安排，还在新增的加场旁留下签名。桌上的纸，已经足够说明问题。\n\n排练负责人先读对外排期。上面每场演出之间都有一段看似宽松的空白，卡尔·霍尔特 在新增的加场旁留下签名。桌上的纸，已经足够说明问题。\n\n排练负责人先读对外排期。上面每场演出之间都有一段看似宽松的空白，卡尔·霍尔特一直把那些空白"
+    },
+    {
+      "name": "麦珂·杰森",
+      "aliases": [
+        "杰森",
+        "麦珂"
+      ],
+      "mention_mode": "active",
+      "evidence": "排练开始前，隐藏总表与对外排期表并排摊在长桌上。\n\n麦珂·杰森把所有参与排期的人叫到桌边，没有让任何人打开电子设备，也没有调取额外记录。昨天，卡尔·霍尔特为抢下加场功劳，已经亲手拿出这份总表，亲口承认所有场次都由他安排，还在新增的加场旁留下签名。桌上的纸，已经足 表走，演员下台后连卸妆都要在车上完成。”\n\n卡尔·霍尔特立刻抬手：“巡演本来就是这样。空白还在，怎么能说没有休息？”\n\n麦珂·杰森指住其中一格：“这里写转场。”\n\n“车上能睡。”\n\n“下一格写装台确认。”\n\n“他可以"
+    }
+  ],
+  "events": [
+    {
+      "event_index": 0,
+      "type": "chapter_event",
+      "summary": "排练开始前，隐藏总表与对外排期表并排摊在长桌上。；卡尔·霍尔特失去排期签批权；真正的恢复时间第一次写进正式排期，再没有人能把它偷换成另一项工作。",
+      "story_time": "",
+      "location": "",
+      "outcome": "卡尔·霍尔特失去排期签批权",
+      "participants": [
+        {
+          "name": "卡尔·霍尔特",
+          "mode": "active",
+          "role": "正文参与者"
+        },
+        {
+          "name": "麦珂·杰森",
+          "mode": "active",
+          "role": "正文参与者"
+        }
+      ],
+      "caused_by": [],
+      "importance": 0.65,
+      "timeline": "current"
+    }
+  ],
+  "state_changes": [
+    {
+      "character": "麦珂·杰森",
+      "field": "possession",
+      "old_value": "",
+      "new_value": "强制恢复日与最终排期否决权",
+      "reason": "正文明确取得或收回权限",
+      "evidence": "麦珂·杰森取得强制恢复日与最终排期否决权",
+      "permanent": false,
+      "confidence": 0.8,
+      "timeline": "current"
+    },
+    {
+      "character": "卡尔·霍尔特",
+      "field": "possession",
+      "old_value": "排期签批权",
+      "new_value": "无排期签批权",
+      "reason": "正文明确失去权限",
+      "evidence": "卡尔·霍尔特仍任巡演总监，可以提交排期建议，也可以执行已经确认的安排，但从此失去排期签批权",
+      "permanent": false,
+      "confidence": 0.8,
+      "timeline": "current"
+    }
+  ],
+  "relationships": [],
+  "facts": [],
+  "plot_threads": [],
+  "continuity_claims": [],
+  "event_preconditions": [],
+  "extraction_status": "heuristic_complete"
+}

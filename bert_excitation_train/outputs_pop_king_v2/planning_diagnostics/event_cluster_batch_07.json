@@ -1,0 +1,230 @@
+[
+  {
+    "cluster_id": "EC37",
+    "name": "暗流涌动的保险条款",
+    "arc_id": "A37",
+    "core_payoff": "麦珂发现保险合同中隐藏的‘非自然死亡’免责条款，揭露维克多·兰斯早有预谋。",
+    "chapter_span": [
+      71,
+      72
+    ],
+    "main_opponent": "维克多·兰斯",
+    "escalation_level": "高",
+    "prev_life_tragedy": "上一世因药物注射导致突发心脏病死亡，保险理赔被唱片联盟操控。",
+    "info_gap_from_prev_life": "知道保险条款中有对‘非自然死亡’的模糊定义，但不知具体内容。",
+    "this_life_revenge": "麦珂通过律师团队调取原始合同文本，揭露其中隐含的‘意外死亡’限制条款。",
+    "cluster_outcome": "维克多·兰斯试图掩盖真相，但麦珂已掌握证据并准备在适当时机公开。",
+    "summary": "麦珂在保险条款中找到突破口，锁定维克多·兰斯的阴谋痕迹。",
+    "notes": [
+      "反杀手段：合同分析与法律介入",
+      "滑稽反派：维克多·兰斯嘴硬否认，暴露其心虚",
+      "粉丝团作用：协助核实文件真实性"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 71,
+        "action": "麦珂要求律师团队全面审查保险合同，特别关注‘非自然死亡’定义。",
+        "opponent_reaction": "维克多·兰斯假装配合，实则拖延时间。",
+        "result": "麦珂获得合同副本，确认存在漏洞。"
+      },
+      {
+        "chapter": 72,
+        "action": "麦珂召开新闻发布会，公布保险合同中的异常条款。",
+        "opponent_reaction": "维克多·兰斯试图转移话题，但被媒体追问到底。",
+        "result": "公众开始质疑唱片联盟的动机，维克多·兰斯陷入被动。"
+      }
+    ],
+    "is_final_arc": false
+  },
+  {
+    "cluster_id": "EC38",
+    "name": "母亲信托的裂痕",
+    "arc_id": "A38",
+    "core_payoff": "麦珂揭露母亲信托基金被家族成员挪用，动摇家庭内部信任。",
+    "chapter_span": [
+      73,
+      74
+    ],
+    "main_opponent": "麦珂的母亲与部分亲属",
+    "escalation_level": "中",
+    "prev_life_tragedy": "上一世因家族压力被迫放弃艺术自由，最终精神崩溃。",
+    "info_gap_from_prev_life": "记得母亲曾提过一笔未说明的资金流动，但无具体细节。",
+    "this_life_revenge": "麦珂通过财务审计，发现家族成员私吞信托资金。",
+    "cluster_outcome": "部分亲属受到谴责，麦珂重新掌控家族资产控制权。",
+    "summary": "麦珂打破家族秘密，夺回经济自主权。",
+    "notes": [
+      "反杀手段：财务审计与公开披露",
+      "滑稽反派：某位亲属试图撒谎掩饰，却被证据揭穿",
+      "粉丝团作用：帮助梳理资金流向"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 73,
+        "action": "麦珂委托独立会计师对母亲信托进行审计。",
+        "opponent_reaction": "部分亲属表示反对，称这是对他母亲的不敬。",
+        "result": "审计结果揭示出数笔不明支出。"
+      },
+      {
+        "chapter": 74,
+        "action": "麦珂在社交媒体发布审计报告片段。",
+        "opponent_reaction": "一位亲戚公开指责他背叛家族。",
+        "result": "公众舆论转向支持麦珂，部分亲属被孤立。"
+      }
+    ],
+    "is_final_arc": false
+  },
+  {
+    "cluster_id": "EC39",
+    "name": "母带交易的反转",
+    "arc_id": "A39",
+    "core_payoff": "麦珂成功阻止唱片联盟低价打包母带，夺回音乐版权核心控制权。",
+    "chapter_span": [
+      75,
+      76
+    ],
+    "main_opponent": "唱片联盟高层",
+    "escalation_level": "高",
+    "prev_life_tragedy": "上一世母带被强行打包出售，失去创作主导权。",
+    "info_gap_from_prev_life": "记得有一场私下会议讨论母带处置方式，但没记录。",
+    "this_life_revenge": "麦珂利用合约漏洞，拒绝签署母带打包协议。",
+    "cluster_outcome": "唱片联盟计划受挫，麦珂重新掌控音乐发行权。",
+    "summary": "麦珂扭转母带交易局势，夺回音乐主权。",
+    "notes": [
+      "反杀手段：合同谈判与法律仲裁",
+      "滑稽反派：某高管试图威胁麦珂，却露出破绽",
+      "粉丝团作用：助力宣传音乐价值"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 75,
+        "action": "麦珂拒绝签署母带打包销售协议，并要求重新协商。",
+        "opponent_reaction": "唱片联盟高层愤怒抗议，称这是破坏合作。",
+        "result": "协议暂缓执行，麦珂获得谈判主动权。"
+      },
+      {
+        "chapter": 76,
+        "action": "麦珂在直播中播放未发行的母带片段，引发粉丝热议。",
+        "opponent_reaction": "唱片联盟试图压制传播，但未能成功。",
+        "result": "母带价值被广泛认可，唱片联盟被迫让步。"
+      }
+    ],
+    "is_final_arc": false
+  },
+  {
+    "cluster_id": "EC40",
+    "name": "肖像权的反击",
+    "arc_id": "A40",
+    "core_payoff": "麦珂揭露唱片联盟未经授权使用其肖像用于商业广告，逼迫对方撤下所有侵权内容。",
+    "chapter_span": [
+      77,
+      78
+    ],
+    "main_opponent": "唱片联盟市场部",
+    "escalation_level": "中",
+    "prev_life_tragedy": "上一世肖像被滥用，形象被商业化掏空。",
+    "info_gap_from_prev_life": "记得曾经有几处广告画面是他未曾授权的。",
+    "this_life_revenge": "麦珂联系摄影师与广告商，收集证据并发起法律诉讼。",
+    "cluster_outcome": "唱片联盟被迫删除侵权广告，麦珂获得肖像权保障。",
+    "summary": "麦珂捍卫自身形象，打击唱片联盟的商业操控。",
+    "notes": [
+      "反杀手段：法律行动与证据搜集",
+      "滑稽反派：市场部负责人试图推卸责任，却被质问得哑口无言",
+      "粉丝团作用：协助查找侵权广告来源"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 77,
+        "action": "麦珂联系多位摄影师和广告公司，调查是否有未经授权的肖像使用。",
+        "opponent_reaction": "市场部声称是“常规推广”，企图淡化问题。",
+        "result": "发现多处未经授权的肖像使用案例。"
+      },
+      {
+        "chapter": 78,
+        "action": "麦珂向法院提交诉状，要求停止侵权行为。",
+        "opponent_reaction": "唱片联盟试图拖延审理进程。",
+        "result": "法院受理案件，侵权广告陆续下架。"
+      }
+    ],
+    "is_final_arc": false
+  },
+  {
+    "cluster_id": "EC41",
+    "name": "生死边缘的假象",
+    "arc_id": "A41",
+    "core_payoff": "麦珂制造可控的“病情恶化”假象，诱导利益链提前启动保险理赔流程。",
+    "chapter_span": [
+      79,
+      80
+    ],
+    "main_opponent": "格雷厄姆·诺顿、维克多·兰斯",
+    "escalation_level": "极高",
+    "prev_life_tragedy": "上一世因药物失控导致猝死，保险公司拒赔。",
+    "info_gap_from_prev_life": "记得自己曾有过一次短暂昏迷，但未被重视。",
+    "this_life_revenge": "麦珂故意降低体能表现，诱使格雷厄姆增加药物剂量。",
+    "cluster_outcome": "保险理赔程序启动，麦珂掌握关键证据。",
+    "summary": "麦珂设局引诱对手自投罗网，为终局审判埋下伏笔。",
+    "notes": [
+      "反杀手段：心理战术与医学伪装",
+      "滑稽反派：格雷厄姆·诺顿沉迷于“专业权威”的幻想，不愿相信麦珂的清醒",
+      "粉丝团作用：协助监控医疗记录"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 79,
+        "action": "麦珂在排练中故意表现出疲态，引起格雷厄姆的关注。",
+        "opponent_reaction": "格雷厄姆加大药物剂量，认为他需要更多治疗。",
+        "result": "麦珂的身体状况被刻意恶化，保险理赔触发条件接近。"
+      },
+      {
+        "chapter": 80,
+        "action": "麦珂在公开场合突然晕倒，引发医护人员紧急响应。",
+        "opponent_reaction": "维克多·兰斯立刻通知保险公司，准备启动理赔。",
+        "result": "麦珂成功引导利益链进入预设轨道。"
+      }
+    ],
+    "is_final_arc": false
+  },
+  {
+    "cluster_id": "EC42",
+    "name": "全球直播的审判时刻",
+    "arc_id": "A42",
+    "core_payoff": "麦珂在预定日期现身全球直播，揭露所有罪行并完成复仇。",
+    "chapter_span": [
+      81,
+      82
+    ],
+    "main_opponent": "维克多·兰斯、托马斯·布莱克、格雷厄姆·诺顿",
+    "escalation_level": "顶",
+    "prev_life_tragedy": "上一世死于演唱会，仇人逍遥法外。",
+    "info_gap_from_prev_life": "记得那天后台有人低声说话，但他无法看清是谁。",
+    "this_life_revenge": "麦珂在直播中逐一点名，展示所有证据。",
+    "cluster_outcome": "维克多·兰斯等人被曝光，麦珂重获尊严与自由。",
+    "summary": "麦珂以最辉煌的方式完成复仇，终结一切恩怨。",
+    "notes": [
+      "反杀手段：直播公开与证据呈现",
+      "滑稽反派：维克多·兰斯试图否认，却被当场揭穿",
+      "粉丝团作用：实时互动扩大影响力"
+    ],
+    "canonical_cast": [],
+    "chapter_milestones": [
+      {
+        "chapter": 81,
+        "action": "麦珂出现在全球直播中，宣布自己还活着。",
+        "opponent_reaction": "维克多·兰斯震惊失措，试图切断直播信号。",
+        "result": "直播持续进行，麦珂开始揭露真相。"
+      },
+      {
+        "chapter": 82,
+        "action": "麦珂逐条列举所有罪行，并出示录音、合同、照片等证据。",
+        "opponent_reaction": "格雷厄姆·诺顿试图辩解，但被观众怒斥。",
+        "result": "麦珂完成复仇，赢得全世界的掌声与尊重。"
+      }
+    ],
+    "is_final_arc": false
+  }
+]

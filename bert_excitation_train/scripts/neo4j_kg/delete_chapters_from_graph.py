@@ -6,12 +6,22 @@ from typing import List, Optional, Set
 from neo4j import Driver
 
 from .common import get_neo4j_driver
+from .story_memory_store import delete_chapter_memory_projection
+from .story_identity import story_id_for_clusters
 
-CHAPTERS_DIR = os.path.join(
+_DEFAULT_OUTPUT_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(__file__))),
     "outputs",
-    "chapters",
 )
+OUTPUT_DIR = os.path.abspath(os.getenv("V2_OUTPUT_DIR", _DEFAULT_OUTPUT_DIR))
+CHAPTERS_DIR = os.path.abspath(
+    os.getenv("V2_CHAPTERS_DIR", os.path.join(OUTPUT_DIR, "chapters"))
+)
+CLUSTERS_CONFIG = os.path.abspath(
+    os.getenv("V2_EVENT_CLUSTERS", os.path.join(OUTPUT_DIR, "event_clusters_v2.json"))
+)
+STORY_ID = story_id_for_clusters(CLUSTERS_CONFIG)
+MEMORY_DIR = os.path.join(OUTPUT_DIR, "knowledge_graph", "stories", STORY_ID, "chapter_memory")
 
 
 def parse_chapter_spec(spec: str) -> List[int]:
@@ -145,6 +155,7 @@ def delete_chapters_from_neo4j(driver: Driver, chapters: List[int]) -> None:
             )
 
         session.execute_write(lambda tx: _delete(tx))
+    delete_chapter_memory_projection(driver, chapters, story_id=STORY_ID)
 
 
 def main():
@@ -192,6 +203,11 @@ def main():
     # Decide files to delete first (dry-run visibility)
     all_files = list_chapter_files()
     file_targets = [p for p in all_files if extract_chapter_number(p) in set(chapters)]
+    memory_targets = [
+        os.path.join(MEMORY_DIR, f"chapter_{ch:03d}_memory.json")
+        for ch in chapters
+        if os.path.isfile(os.path.join(MEMORY_DIR, f"chapter_{ch:03d}_memory.json"))
+    ]
 
     if args.dry_run:
         print("[Dry-run] Chapters to delete:", chapters)
@@ -199,6 +215,7 @@ def main():
             print("[Dry-run] Neo4j operations: delete RELATION_CHANGE_PROPOSAL / RELATES_TO(updated) / CharacterState / Event / trim INTERACTED_WITH.")
         if not args.skip_file_delete:
             print("[Dry-run] Chapter files to delete:", file_targets)
+            print("[Dry-run] Chapter memory sidecars to delete:", memory_targets)
         return
 
     if not args.yes:
@@ -223,6 +240,12 @@ def main():
                 print("Deleted chapter file:", p)
             except Exception as e:  # noqa: BLE001
                 print(f"Failed to delete chapter file {p}: {e}")
+        for p in memory_targets:
+            try:
+                os.remove(p)
+                print("Deleted chapter memory:", p)
+            except Exception as e:  # noqa: BLE001
+                print(f"Failed to delete chapter memory {p}: {e}")
 
 
 if __name__ == "__main__":

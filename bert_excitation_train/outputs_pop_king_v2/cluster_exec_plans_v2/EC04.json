@@ -1,0 +1,193 @@
+{
+  "cluster_id": "EC04",
+  "cluster_name": "体能测试与营养针曝光",
+  "evidence_chain": [
+    {
+      "evidence_id": "E1",
+      "evidence_type": "针剂",
+      "source": "当面核对针剂封签、送货单和领用簿并要求更换保管人",
+      "acquire_chapter": 6,
+      "verify_chapter": 6,
+      "use_chapter": 6,
+      "purpose": "康拉德被暂停职务，麦珂获得药品保管权",
+      "acquire_keywords": [
+        "针剂",
+        "提前"
+      ],
+      "verify_keywords": [
+        "针剂",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "针剂",
+        "当场"
+      ]
+    },
+    {
+      "evidence_id": "E2",
+      "evidence_type": "封签",
+      "source": "当面核对针剂封签、送货单和领用簿并要求更换保管人",
+      "acquire_chapter": 6,
+      "verify_chapter": 6,
+      "use_chapter": 6,
+      "purpose": "康拉德被暂停职务，麦珂获得药品保管权",
+      "acquire_keywords": [
+        "封签",
+        "提前"
+      ],
+      "verify_keywords": [
+        "封签",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "封签",
+        "当场"
+      ]
+    },
+    {
+      "evidence_id": "E3",
+      "evidence_type": "送货单",
+      "source": "当面核对针剂封签、送货单和领用簿并要求更换保管人",
+      "acquire_chapter": 6,
+      "verify_chapter": 6,
+      "use_chapter": 6,
+      "purpose": "康拉德被暂停职务，麦珂获得药品保管权",
+      "acquire_keywords": [
+        "送货单",
+        "提前"
+      ],
+      "verify_keywords": [
+        "送货单",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "送货单",
+        "当场"
+      ]
+    },
+    {
+      "evidence_id": "E4",
+      "evidence_type": "领用簿",
+      "source": "当面核对针剂封签、送货单和领用簿并要求更换保管人",
+      "acquire_chapter": 6,
+      "verify_chapter": 6,
+      "use_chapter": 6,
+      "purpose": "康拉德被暂停职务，麦珂获得药品保管权",
+      "acquire_keywords": [
+        "领用簿",
+        "提前"
+      ],
+      "verify_keywords": [
+        "领用簿",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "领用簿",
+        "当场"
+      ]
+    }
+  ],
+  "forbidden_new_evidence_types": [
+    "天降视频",
+    "匿名人送U盘",
+    "匿名邮件",
+    "匿名爆料",
+    "无规划的关键证人"
+  ],
+  "chapter_execution_focus": {
+    "5": "在合作方与独立医疗见证在场时做高强度体能测试→卡尔·霍尔特试图降低强度→麦珂完成高强度唱跳连测，合作方撤下病弱降配宣传，他收回训练强度决定权",
+    "6": "当面核对针剂封签、送货单和领用簿并要求更换保管人→康拉德试图辩解→康拉德被暂停职务，麦珂获得药品保管权"
+  },
+  "scene_contracts": {
+    "5": {
+      "version": 1,
+      "source": "event_cluster_milestone",
+      "scene_archetype": "live_capability_validation",
+      "phase": "setup",
+      "protagonist": "麦珂·杰森",
+      "opponent": "卡尔·霍尔特",
+      "opponent_scene_actor": "卡尔·霍尔特",
+      "supporting_cast": [],
+      "supporting_organizations": [],
+      "old_trap_signal": "记得上一世被注射成分",
+      "trigger_action": "在合作方与独立医疗见证在场时做高强度体能测试",
+      "opponent_self_incrimination": "卡尔·霍尔特试图降低强度",
+      "established_evidence_carriers": [],
+      "current_evidence_carriers": [],
+      "allowed_evidence_carriers": [],
+      "verification_action": "在合作方与独立医疗见证在场时做高强度体能测试",
+      "immediate_result": "麦珂完成高强度唱跳连测，合作方撤下病弱降配宣传，他收回训练强度决定权",
+      "authority_actor": "合作方",
+      "authority_gain": "",
+      "opponent_loss": "",
+      "protagonist_gain": "",
+      "settlement_required": false,
+      "forbidden_mechanics": [
+        "匿名材料",
+        "万能黑客",
+        "突然出现的关键证人",
+        "未规划的录音或视频",
+        "临时发明的协议编号或条款编号",
+        "未在契约中的设备日志或检测报告",
+        "英文字母代号",
+        "毫秒级或工程参数堆砌"
+      ]
+    },
+    "6": {
+      "version": 1,
+      "source": "event_cluster_milestone",
+      "scene_archetype": "evidence_confrontation",
+      "phase": "settlement",
+      "protagonist": "麦珂·杰森",
+      "opponent": "康拉德·莫里森",
+      "opponent_scene_actor": "康拉德·莫里森",
+      "supporting_cast": [],
+      "supporting_organizations": [],
+      "old_trap_signal": "记得上一世被注射成分",
+      "trigger_action": "当面核对针剂封签、送货单和领用簿并要求更换保管人",
+      "opponent_self_incrimination": "康拉德试图辩解",
+      "established_evidence_carriers": [],
+      "current_evidence_carriers": [
+        "针剂",
+        "封签",
+        "送货单",
+        "领用簿"
+      ],
+      "allowed_evidence_carriers": [
+        "针剂",
+        "封签",
+        "送货单",
+        "领用簿"
+      ],
+      "verification_action": "当面核对针剂封签、送货单和领用簿并要求更换保管人",
+      "immediate_result": "康拉德被暂停职务，麦珂获得药品保管权",
+      "authority_actor": "从开场就在场的现场管理负责人",
+      "authority_gain": "",
+      "opponent_loss": "康拉德被暂停职务",
+      "protagonist_gain": "麦珂获得药品保管权",
+      "settlement_required": true,
+      "forbidden_mechanics": [
+        "匿名材料",
+        "万能黑客",
+        "突然出现的关键证人",
+        "未规划的录音或视频",
+        "临时发明的协议编号或条款编号",
+        "未在契约中的设备日志或检测报告",
+        "英文字母代号",
+        "毫秒级或工程参数堆砌"
+      ]
+    }
+  },
+  "payoff_sequence": [
+    "在合作方与独立医疗见证在场时做高强度体能测试",
+    "卡尔·霍尔特试图降低强度",
+    "麦珂完成高强度唱跳连测，合作方撤下病弱降配宣传，他收回训练强度决定权",
+    "当面核对针剂封签、送货单和领用簿并要求更换保管人",
+    "康拉德试图辩解",
+    "康拉德被暂停职务，麦珂获得药品保管权"
+  ]
+}

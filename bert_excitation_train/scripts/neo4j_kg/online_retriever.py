@@ -1,107 +1,151 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-在线检索器（Neo4j）：按章节与角色上下文，动态检索相关事实，生成限长摘要供 V2 正文使用。
-
-用法（应用层调用）:
-    from .online_retriever import retrieve_context_for_chapter
-    text = retrieve_context_for_chapter(chapter_num=12, allowed_roles=["沈清欢", "陆景明"], main_opponent="陆景明")
-"""
+"""Retrieve current, chapter-bounded story constraints from Neo4j."""
 from __future__ import annotations
 
-from typing import List, Optional
+from typing import Any, Dict, Iterable, List, Optional
 
 from .common import get_neo4j_driver
 
 
-def _safe_join(items: List[str], sep: str = "；", limit: int = 6) -> str:
-    chunk = [str(x).strip() for x in items if str(x or "").strip()]
-    if limit and len(chunk) > limit:
-        chunk = chunk[:limit]
-    return sep.join(chunk)
+def _clip(value: Any, limit: int = 260) -> str:
+    return str(value or "").strip()[:limit]
 
 
-def _truncate(text: str, max_chars: int) -> str:
-    s = (text or "").strip()
-    if max_chars <= 0:
-        return s
-    return s[:max_chars]
+def _names(values: Iterable[str]) -> List[str]:
+    return [str(x).strip() for x in values if str(x or "").strip()]
 
 
 def retrieve_context_for_chapter(
     chapter_num: int,
     allowed_roles: Optional[List[str]] = None,
     main_opponent: Optional[str] = None,
-    max_chars: int = 1000,
+    max_chars: int = 2200,
+    story_id: str = "default",
 ) -> str:
+    """Return facts valid immediately before ``chapter_num``.
+
+    Current state is computed as-of the target chapter instead of trusting a
+    globally cached ``active`` flag, so regenerating an earlier chapter cannot
+    accidentally see facts from the future.
     """
-    面向生成端的高层接口：
-    - 基于“本章允许重点出现的角色名单 + 章号上限”检索 KG 子图；
-    - 汇总为简短卡片文本，控制长度，避免覆盖章节执行卡的剧情决策权。
-    """
-    allowed_roles = [r for r in (allowed_roles or []) if str(r or "").strip()]
-    with get_neo4j_driver() as driver:  # type: ignore[call-arg]
+    target = int(chapter_num)
+    names = _names(allowed_roles or [])
+    if main_opponent and str(main_opponent).strip() not in names:
+        names.append(str(main_opponent).strip())
+
+    with get_neo4j_driver() as driver:
         with driver.session() as session:
-            # 人物与关系（至今为止）
-            rel_rows = session.run(
+            fact_rows = session.run(
                 """
-                MATCH (a:Character)-[r:RELATES_TO]->(b:Character)
-                WHERE (coalesce(r.since_chapter, 99999) <= $ch)
-                  AND (
-                        size($names) = 0
-                        OR a.name IN $names OR b.name IN $names
-                      )
-                RETURN DISTINCT a.name AS a, b.name AS b, coalesce(r.type,'关系') AS type,
-                       coalesce(r.since_chapter, 0) AS since_chapter
-                ORDER BY since_chapter ASC
-                LIMIT 120
+                MATCH (f:StoryFact)
+                WHERE f.story_id=$story_id AND f.source_chapter < $chapter
+                  AND coalesce(f.timeline, 'current') IN ['current', 'unknown']
+                  AND (size($names)=0 OR f.subject IN $names)
+                WITH f.subject AS subject, f.predicate AS predicate, f
+                ORDER BY f.source_chapter DESC
+                WITH subject, predicate, head(collect(f)) AS latest
+                RETURN subject, predicate, latest.object AS object,
+                       latest.source_chapter AS chapter, latest.evidence AS evidence,
+                       latest.permanent AS permanent
+                ORDER BY CASE WHEN predicate='life_status' THEN 0 ELSE 1 END, chapter DESC
+                LIMIT 80
                 """,
-                ch=int(chapter_num),
-                names=allowed_roles,
+                chapter=target,
+                names=names,
+                story_id=story_id,
             ).data()
-
-            # 涉及人物的重要事件（至今为止）
-            ev_rows = session.run(
+            relation_rows = session.run(
                 """
-                MATCH (c:Character)-[:PARTICIPATED_IN]->(e:Event)
-                WHERE e.chapter <= $ch
-                  AND (size($names)=0 OR c.name IN $names)
-                RETURN DISTINCT c.name AS who, coalesce(e.title, e.type) AS what,
-                       coalesce(e.chapter, 0) AS ch, coalesce(e.importance, 1.0) AS imp,
-                       coalesce(e.is_major, true) AS major
-                ORDER BY major DESC, imp DESC, ch ASC
-                LIMIT 150
+                MATCH (r:RelationFact)-[:FROM_CHARACTER]->(a:Character)
+                MATCH (r)-[:TO_CHARACTER]->(b:Character)
+                WHERE r.story_id=$story_id AND r.source_chapter < $chapter
+                  AND coalesce(r.timeline, 'current') IN ['current', 'unknown']
+                  AND (size($names)=0 OR a.label IN $names OR b.label IN $names)
+                WITH a, b, r.relation_type AS relation_type, r
+                ORDER BY r.source_chapter DESC
+                WITH a, b, relation_type, head(collect(r)) AS latest
+                RETURN a.label AS subject, b.label AS object, relation_type,
+                       latest.status AS status, latest.source_chapter AS chapter,
+                       latest.evidence AS evidence
+                LIMIT 40
                 """,
-                ch=int(chapter_num),
-                names=allowed_roles,
+                chapter=target,
+                names=names,
+                story_id=story_id,
             ).data()
+            thread_rows = session.run(
+                """
+                MATCH (s:PlotThreadSignal)-[:UPDATES_THREAD]->(t:PlotThread)
+                WHERE s.story_id=$story_id AND s.source_chapter < $chapter
+                WITH t, s ORDER BY s.source_chapter DESC
+                WITH t, head(collect(s)) AS latest
+                WHERE latest.status='open'
+                RETURN t.title AS title, latest.summary AS summary,
+                       latest.source_chapter AS chapter
+                ORDER BY chapter DESC LIMIT 12
+                """,
+                chapter=target,
+                story_id=story_id,
+            ).data()
+            event_rows = session.run(
+                """
+                MATCH (e:StoryEvent)
+                WHERE e.story_id=$story_id AND e.source_chapter < $chapter
+                OPTIONAL MATCH (c:Character)-[p:PARTICIPATED_IN]->(e)
+                WITH e, collect(DISTINCT c.label) AS participants
+                WHERE size($names)=0 OR any(n IN participants WHERE n IN $names)
+                RETURN e.summary AS summary, e.outcome AS outcome,
+                       e.source_chapter AS chapter, e.story_time AS story_time,
+                       e.timeline AS timeline,
+                       e.importance AS importance
+                ORDER BY chapter DESC, importance DESC LIMIT 16
+                """,
+                chapter=target,
+                names=names,
+                story_id=story_id,
+            ).data()
+            plan_row = session.run(
+                """
+                MATCH (pc:PlotCluster)
+                WHERE pc.story_id=$story_id
+                  AND pc.start_chapter <= $chapter AND pc.end_chapter >= $chapter
+                RETURN pc.id AS id, pc.label AS label, pc.goal AS goal,
+                       pc.plan_foreshadows AS foreshadows, pc.plan_resolves AS resolves,
+                       pc.hard_constraints AS hard_constraints,
+                       pc.start_chapter AS start_chapter, pc.end_chapter AS end_chapter
+                ORDER BY pc.start_chapter DESC LIMIT 1
+                """,
+                chapter=target,
+                story_id=story_id,
+            ).single()
 
-    # 汇总为“百科卡片”式文本（只做背景提示，避免喧宾夺主）
-    rel_lines: List[str] = []
-    for r in rel_rows:
-        a, b, t, sc = r.get("a", ""), r.get("b", ""), r.get("type", ""), r.get("since_chapter", 0)
-        if a and b:
-            rel_lines.append(f"- {a} 与 {b}：{t}（建立于第{int(sc)}章前后）")
-
-    ev_lines: List[str] = []
-    for e in ev_rows:
-        who, what, ch, major = e.get("who", ""), e.get("what", ""), e.get("ch", 0), bool(e.get("major", True))
-        mark = "★" if major else "·"
-        if who and what:
-            ev_lines.append(f"{mark} 第{int(ch)}章：{who} - {what}")
-
-    head = ["【知识图谱/背景事实（仅作背景，不得改任务卡）】"]
+    lines = [f"【第{target}章生成前知识图谱约束】"]
     if main_opponent:
-        head.append(f"- 本章主要对手：{main_opponent}")
-    if allowed_roles:
-        head.append(f"- 重点相关角色：{_safe_join(allowed_roles, '、', limit=8)}")
-    if rel_lines:
-        head.append("\n[人物关系（历史）]")
-        head.append(_safe_join(rel_lines, "；", limit=10))
-    if ev_lines:
-        head.append("\n[相关事件（至今为止）]")
-        head.append(_safe_join(ev_lines, "；", limit=12))
-
-    text = "\n".join([x for x in head if str(x or "").strip()])
-    return _truncate(text, max_chars=max_chars)
-*** End Patch
+        lines.append(f"- 本章主要对手：{main_opponent}")
+    if names:
+        lines.append(f"- 重点角色：{'、'.join(names[:10])}")
+    if plan_row:
+        lines.append(
+            f"- [当前情节族计划，尚未发生] {plan_row.get('label')}（第{plan_row.get('start_chapter')}-{plan_row.get('end_chapter')}章）；"
+            f"目标={_clip(plan_row.get('goal'), 360)}"
+        )
+        if plan_row.get("hard_constraints"):
+            lines.append(f"- [计划硬限制] {_clip(plan_row.get('hard_constraints'), 360)}")
+        if plan_row.get("resolves"):
+            lines.append(f"- [本簇应回收] {_clip(plan_row.get('resolves'), 300)}")
+    for row in fact_rows:
+        subject, predicate, value = row.get("subject"), row.get("predicate"), row.get("object")
+        if not subject or not predicate:
+            continue
+        hard = predicate == "life_status" and str(value).lower() == "dead"
+        suffix = "；禁止在当前时间线行动，只可回忆/梦境/转述" if hard else ""
+        lines.append(f"- [{'硬约束' if hard else '当前事实'}] {subject}.{predicate}={value}（第{row.get('chapter')}章）{suffix}")
+    for row in relation_rows[:12]:
+        lines.append(f"- [当前关系] {row.get('subject')} --{row.get('relation_type')}/{row.get('status')}--> {row.get('object')}（第{row.get('chapter')}章更新）")
+    for row in thread_rows[:8]:
+        lines.append(f"- [未决剧情线] {_clip(row.get('title'), 180)}（第{row.get('chapter')}章推进）")
+    for row in event_rows[:10]:
+        timeline = str(row.get("timeline") or "current")
+        label = "今生已发生" if timeline in {"current", "unknown"} else "仅历史/回忆"
+        lines.append(f"- [{label}] 第{row.get('chapter')}章：{_clip(row.get('summary'))}；结果={_clip(row.get('outcome')) or '未明确'}")
+    return "\n".join(lines)[:max_chars]

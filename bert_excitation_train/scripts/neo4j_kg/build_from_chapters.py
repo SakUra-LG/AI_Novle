@@ -15,10 +15,15 @@ except Exception:
 import json
 
 
-CHAPTERS_DIR = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.dirname(__file__))),
-    "outputs",
-    "chapters",
+CHAPTERS_DIR = os.getenv(
+    "V2_CHAPTERS_DIR",
+    os.path.join(
+        os.getenv(
+            "V2_OUTPUT_DIR",
+            os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "outputs"),
+        ),
+        "chapters",
+    ),
 )
 
 

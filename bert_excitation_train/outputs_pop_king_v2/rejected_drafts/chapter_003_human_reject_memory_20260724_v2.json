@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "story_id": "7f5afaed1b5bb0c2",
+  "chapter": 3,
+  "content_hash": "0a3c9f2474221771da647b485f4a19db920ea7bb2202bcbd719e30aaeb52983b",
+  "narrative_timeline": "current",
+  "summary": "医疗双签登记结束后，麦珂·杰森没有立刻去发布会前场，而是转进隔壁的排练准备室。；随后，他当场收回排练群的统一发布权限，工作人员将发布人改成他本人。；卡尔·霍尔特站在已经失去发布权限的群聊前，脸上的笑终于挂不住了。",
+  "characters": [
+    {
+      "name": "卡尔·霍尔特",
+      "aliases": [
+        "卡尔",
+        "霍尔特"
+      ],
+      "mention_mode": "active",
+      "evidence": "后，麦珂·杰森没有立刻去发布会前场，而是转进隔壁的排练准备室。\n\n桌上摊着当天的彩排表，最上方仍写着由巡演团队统一分发。卡尔·霍尔特站在桌边，正催几名助理把表送往各组：“照旧群发，谁没收到就让谁自己来问。”\n\n“照旧”两个字，让麦珂·杰森想起上一世的同一场混乱。\n\n那时真正的彩排时间提前泄露，摄影人员堵住排练通道，几个部门手里的表 今旧局再次出现，他不再等错误发生，而是提前改变分发方式。\n\n“真表不群发。”麦珂·杰森按住桌上的原件，“由我保管。”\n\n卡尔·霍尔特笑了一声：“几"
+    },
+    {
+      "name": "麦珂·杰森",
+      "aliases": [
+        "杰森",
+        "麦珂"
+      ],
+      "mention_mode": "active",
+      "evidence": "医疗双签登记结束后，麦珂·杰森没有立刻去发布会前场，而是转进隔壁的排练准备室。\n\n桌上摊着当天的彩排表，最上方仍写着由巡演团队统一分发。卡尔·霍尔特站在桌边，正催几名助理把表送往各组：“照旧群发，谁没收到就让谁自己来问。”\n\n“照 队统一分发。卡尔·霍尔特站在桌边，正催几名助理把表送往各组：“照旧群发，谁没收到就让谁自己来问。”\n\n“照旧”两个字，让麦珂·杰森想起上一世的同一场混乱。\n\n那时真正的彩排时间提前泄露，摄影人员堵住排练通道，几个部门手里的表又彼此冲突。所有人都说是"
+    }
+  ],
+  "events": [
+    {
+      "event_index": 0,
+      "type": "chapter_event",
+      "summary": "医疗双签登记结束后，麦珂·杰森没有立刻去发布会前场，而是转进隔壁的排练准备室。；随后，他当场收回排练群的统一发布权限，工作人员将发布人改成他本人。；卡尔·霍尔特站在已经失去发布权限的群聊前，脸上的笑终于挂不住了。",
+      "story_time": "",
+      "location": "",
+      "outcome": "随后，他当场收回排练群的统一发布权限，工作人员将发布人改成他本人。",
+      "participants": [
+        {
+          "name": "卡尔·霍尔特",
+          "mode": "active",
+          "role": "正文参与者"
+        },
+        {
+          "name": "麦珂·杰森",
+          "mode": "active",
+          "role": "正文参与者"
+        }
+      ],
+      "caused_by": [],
+      "importance": 0.65,
+      "timeline": "current"
+    }
+  ],
+  "state_changes": [
+    {
+      "character": "卡尔·霍尔特",
+      "field": "possession",
+      "old_value": "发布权限",
+      "new_value": "无发布权限",
+      "reason": "正文明确失去权限",
+      "evidence": "卡尔·霍尔特站在已经失去发布权限",
+      "permanent": false,
+      "confidence": 0.8,
+      "timeline": "current"
+    }
+  ],
+  "relationships": [],
+  "facts": [],
+  "plot_threads": [],
+  "continuity_claims": [],
+  "event_preconditions": [],
+  "extraction_status": "heuristic_complete"
+}

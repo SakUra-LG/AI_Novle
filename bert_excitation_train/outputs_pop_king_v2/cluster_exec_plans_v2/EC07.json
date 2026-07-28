@@ -1,0 +1,210 @@
+{
+  "cluster_id": "EC07",
+  "cluster_name": "粉丝团实名核票抓出黄牛预留票，夺回公开票池和退票规则",
+  "evidence_chain": [
+    {
+      "evidence_id": "E1",
+      "evidence_type": "实名校验",
+      "source": "麦珂发动‘星火’歌迷会进行实名票务核查",
+      "acquire_chapter": 11,
+      "verify_chapter": 11,
+      "use_chapter": 12,
+      "purpose": "异常票全部退回公开票池，主办方失去私设预留票权限，麦珂与星火获得票务监督席位",
+      "acquire_keywords": [
+        "实名校验",
+        "提前"
+      ],
+      "verify_keywords": [
+        "实名校验",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "实名校验",
+        "当场"
+      ]
+    },
+    {
+      "evidence_id": "E2",
+      "evidence_type": "异常预留票",
+      "source": "麦珂发动‘星火’歌迷会进行实名票务核查",
+      "acquire_chapter": 11,
+      "verify_chapter": 11,
+      "use_chapter": 12,
+      "purpose": "异常票全部退回公开票池，主办方失去私设预留票权限，麦珂与星火获得票务监督席位",
+      "acquire_keywords": [
+        "异常预留票",
+        "提前"
+      ],
+      "verify_keywords": [
+        "异常预留票",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "异常预留票",
+        "当场"
+      ]
+    },
+    {
+      "evidence_id": "E3",
+      "evidence_type": "黄牛预留票",
+      "source": "麦珂当众展示黄牛预留票证据",
+      "acquire_chapter": 12,
+      "verify_chapter": 12,
+      "use_chapter": 12,
+      "purpose": "异常票全部退回公开票池，主办方失去私设预留票权限，麦珂与星火获得票务监督席位",
+      "acquire_keywords": [
+        "黄牛预留票",
+        "提前"
+      ],
+      "verify_keywords": [
+        "黄牛预留票",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "黄牛预留票",
+        "当场"
+      ]
+    },
+    {
+      "evidence_id": "E4",
+      "evidence_type": "票池",
+      "source": "麦珂当众展示黄牛预留票证据",
+      "acquire_chapter": 12,
+      "verify_chapter": 12,
+      "use_chapter": 12,
+      "purpose": "异常票全部退回公开票池，主办方失去私设预留票权限，麦珂与星火获得票务监督席位",
+      "acquire_keywords": [
+        "票池",
+        "提前"
+      ],
+      "verify_keywords": [
+        "票池",
+        "核对",
+        "确认"
+      ],
+      "use_keywords": [
+        "票池",
+        "当场"
+      ]
+    }
+  ],
+  "forbidden_new_evidence_types": [
+    "天降视频",
+    "匿名人送U盘",
+    "匿名邮件",
+    "匿名爆料",
+    "无规划的关键证人"
+  ],
+  "chapter_execution_focus": {
+    "11": "麦珂发动‘星火’歌迷会进行实名票务核查→主办方试图阻挠核查进程→星火用实名校验冻结三千张异常预留票，黄牛当章无法出票获利",
+    "12": "麦珂当众展示黄牛预留票证据→主办方被迫承认问题并道歉→异常票全部退回公开票池，主办方失去私设预留票权限，麦珂与星火获得票务监督席位"
+  },
+  "scene_contracts": {
+    "11": {
+      "version": 1,
+      "source": "event_cluster_milestone",
+      "scene_archetype": "public_resource_audit",
+      "phase": "setup",
+      "protagonist": "麦珂·杰森",
+      "opponent": "主办方与内部员工",
+      "opponent_scene_actor": "主办方",
+      "supporting_cast": [
+        "莱昂·周",
+        "苏菲亚·罗德里格斯"
+      ],
+      "supporting_organizations": [
+        "星火"
+      ],
+      "old_trap_signal": "麦珂记得上一世票务黑幕的具体操作方式与涉事人员名单。",
+      "trigger_action": "麦珂发动‘星火’歌迷会进行实名票务核查",
+      "opponent_self_incrimination": "主办方试图阻挠核查进程",
+      "established_evidence_carriers": [],
+      "current_evidence_carriers": [
+        "实名校验",
+        "异常预留票"
+      ],
+      "allowed_evidence_carriers": [
+        "实名校验",
+        "异常预留票"
+      ],
+      "verification_action": "麦珂发动‘星火’歌迷会进行实名票务核查",
+      "immediate_result": "星火用实名校验冻结三千张异常预留票，黄牛当章无法出票获利",
+      "authority_actor": "麦珂·杰森",
+      "authority_gain": "",
+      "opponent_loss": "星火用实名校验冻结三千张异常预留票",
+      "protagonist_gain": "麦珂恢复票务公正性",
+      "settlement_required": false,
+      "forbidden_mechanics": [
+        "匿名材料",
+        "万能黑客",
+        "突然出现的关键证人",
+        "未规划的录音或视频",
+        "临时发明的协议编号或条款编号",
+        "未在契约中的设备日志或检测报告",
+        "英文字母代号",
+        "毫秒级或工程参数堆砌"
+      ]
+    },
+    "12": {
+      "version": 1,
+      "source": "event_cluster_milestone",
+      "scene_archetype": "public_resource_audit",
+      "phase": "settlement",
+      "protagonist": "麦珂·杰森",
+      "opponent": "主办方与内部员工",
+      "opponent_scene_actor": "主办方",
+      "supporting_cast": [
+        "莱昂·周",
+        "苏菲亚·罗德里格斯"
+      ],
+      "supporting_organizations": [
+        "星火"
+      ],
+      "old_trap_signal": "麦珂记得上一世票务黑幕的具体操作方式与涉事人员名单。",
+      "trigger_action": "麦珂当众展示黄牛预留票证据",
+      "opponent_self_incrimination": "主办方被迫承认问题并道歉",
+      "established_evidence_carriers": [
+        "实名校验",
+        "异常预留票"
+      ],
+      "current_evidence_carriers": [
+        "黄牛预留票",
+        "票池"
+      ],
+      "allowed_evidence_carriers": [
+        "实名校验",
+        "异常预留票",
+        "黄牛预留票",
+        "票池"
+      ],
+      "verification_action": "麦珂当众展示黄牛预留票证据",
+      "immediate_result": "异常票全部退回公开票池，主办方失去私设预留票权限，麦珂与星火获得票务监督席位",
+      "authority_actor": "主办方",
+      "authority_gain": "",
+      "opponent_loss": "主办方失去私设预留票权限",
+      "protagonist_gain": "麦珂与星火获得票务监督席位",
+      "settlement_required": true,
+      "forbidden_mechanics": [
+        "匿名材料",
+        "万能黑客",
+        "突然出现的关键证人",
+        "未规划的录音或视频",
+        "临时发明的协议编号或条款编号",
+        "未在契约中的设备日志或检测报告",
+        "英文字母代号",
+        "毫秒级或工程参数堆砌"
+      ]
+    }
+  },
+  "payoff_sequence": [
+    "麦珂发动‘星火’歌迷会进行实名票务核查",
+    "主办方试图阻挠核查进程",
+    "星火用实名校验冻结三千张异常预留票，黄牛当章无法出票获利",
+    "麦珂当众展示黄牛预留票证据",
+    "主办方被迫承认问题并道歉",
+    "异常票全部退回公开票池，主办方失去私设预留票权限，麦珂与星火获得票务监督席位"
+  ]
+}

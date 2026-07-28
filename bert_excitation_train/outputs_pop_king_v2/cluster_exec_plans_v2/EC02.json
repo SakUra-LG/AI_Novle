@@ -1,0 +1,47 @@
+{
+  "cluster_id": "EC02",
+  "cluster_name": "重生确认与注射权限争夺",
+  "evidence_chain": [
+    {
+      "evidence_id": "E1",
+      "evidence_type": "本簇信息差对应的主动行动",
+      "source": "主角依据上一世信息差在当前时间线主动准备的行动筹码",
+      "acquire_chapter": 2,
+      "verify_chapter": 2,
+      "use_chapter": 2,
+      "purpose": "把信息差转化为当前行动，并在本簇内兑现阶段爽点",
+      "acquire_keywords": [
+        "预判",
+        "准备",
+        "调整"
+      ],
+      "verify_keywords": [
+        "核对",
+        "确认",
+        "试探"
+      ],
+      "use_keywords": [
+        "当场行动",
+        "完成",
+        "兑现"
+      ]
+    }
+  ],
+  "forbidden_new_evidence_types": [
+    "天降视频",
+    "匿名人送U盘",
+    "匿名邮件",
+    "匿名爆料",
+    "无规划的关键证人"
+  ],
+  "chapter_execution_focus": {
+    "2": "只完成重生确认与第一步部署，不获取或使用决定性材料"
+  },
+  "payoff_sequence": [
+    "旧局在今生再现，主角认出并提前布子",
+    "对方按老剧本继续出招",
+    "主角在关键点用表演、规则、合同或关系筹码现场反卡",
+    "对手否认/反扑失败",
+    "现场有权者作出决定，现实得失落地"
+  ]
+}

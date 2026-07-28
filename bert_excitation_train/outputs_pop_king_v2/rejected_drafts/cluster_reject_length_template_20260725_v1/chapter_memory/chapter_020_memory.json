@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "story_id": "7f5afaed1b5bb0c2",
+  "chapter": 20,
+  "content_hash": "ff74e718f52ec3d127815ec6967f590c3259310c92261e80fe004d422bb40ae4",
+  "narrative_timeline": "current",
+  "summary": "前一场已经冻结的母带仍保持原状。；唱片联盟高层留在原位，已经没有口头指令能够改变刚才的结算。",
+  "characters": [
+    {
+      "name": "唱片联盟高层",
+      "aliases": [],
+      "mention_mode": "active",
+      "evidence": "。麦珂把相关人员留在公开核验位置，随后要求第三方评估母带价值。独立评估人员从开场就在场，只接手已经列明的交易对象，不接受唱片联盟高层临时换一套口径。所有人先确认旧安排尚未恢复，才进入正式结算。独立评估人员先确认冻结状态仍在，旧指令没有在会前被偷偷恢复。麦珂等这项事实公开后，才把交易推进正式核验。会议记录从麦珂开口时便保持公开，后来 同步写入会议记录，估值依据、拟售价格和处置权限都回到同一场会议中。麦珂不添加秘密材料，只要求每一项交易都能由在场者复查。唱片联盟高层原先能够口头推"
+    },
+    {
+      "name": "麦珂·杰森",
+      "aliases": [
+        "麦珂"
+      ],
+      "mention_mode": "active",
+      "evidence": "前一场已经冻结的母带仍保持原状。麦珂把相关人员留在公开核验位置，随后要求第三方评估母带价值。独立评估人员从开场就在场，只接手已经列明的交易对象，不接受唱片联盟高层临时换一套口径。所有人先确认旧安排尚未恢复，才进入正式结算。独立评估人员先 临时换一套口径。所有人先确认旧安排尚未恢复，才进入正式结算。独立评估人员先确认冻结状态仍在，旧指令没有在会前被偷偷恢复。麦珂等这项事实公开后，才把交易推进正式核验。会议记录从麦珂开口时便保持公开，后来每一步都能沿原顺序复查。\n\n独立评估人员沿"
+    }
+  ],
+  "events": [
+    {
+      "event_index": 0,
+      "type": "chapter_event",
+      "summary": "前一场已经冻结的母带仍保持原状。；唱片联盟高层留在原位，已经没有口头指令能够改变刚才的结算。",
+      "story_time": "",
+      "location": "",
+      "outcome": "唱片联盟高层留在原位，已经没有口头指令能够改变刚才的结算。",
+      "participants": [
+        {
+          "name": "唱片联盟高层",
+          "mode": "active",
+          "role": "正文参与者"
+        },
+        {
+          "name": "麦珂·杰森",
+          "mode": "active",
+          "role": "正文参与者"
+        }
+      ],
+      "caused_by": [],
+      "importance": 0.65,
+      "timeline": "current"
+    }
+  ],
+  "state_changes": [],
+  "relationships": [],
+  "facts": [],
+  "plot_threads": [],
+  "continuity_claims": [],
+  "event_preconditions": [],
+  "extraction_status": "heuristic_complete"
+}

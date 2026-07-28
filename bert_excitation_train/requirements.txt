@@ -5,3 +5,5 @@ dashscope
 cntext
 ipython
 psutil
+# 长篇一致性知识图谱
+neo4j>=5.20,<6
