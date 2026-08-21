@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "scope": "official_first_10_chapters",
+  "story_id": "planning-be26ba6bb2c83203",
+  "output_dir": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500",
+  "overall_passed": false,
+  "failed_checks": [
+    "full_plan_compiler_and_fingerprints",
+    "all_chapters_pass_current_validator",
+    "official_body_is_exact_qwen_output",
+    "all_target_event_clusters_pass_joint_validation",
+    "manual_review_status_finalized"
+  ],
+  "checks": {
+    "authoritative_planning_and_archives": {
+      "passed": true,
+      "evidence": {
+        "event_clusters": 250,
+        "chapter_cards": 500,
+        "event_primary_sha256": "68c9f4077092d026aa37999495bd560f1ed1af71780dc601cbb93782eeb1e963",
+        "event_archive_sha256": "68c9f4077092d026aa37999495bd560f1ed1af71780dc601cbb93782eeb1e963",
+        "card_primary_sha256": "6c579656c9654e00619e0683beba1cab83fb4f782fddaf8e932685c0de60c8e8",
+        "card_archive_sha256": "6c579656c9654e00619e0683beba1cab83fb4f782fddaf8e932685c0de60c8e8"
+      },
+      "failures": []
+    },
+    "two_chapters_per_event_cluster": {
+      "passed": true,
+      "evidence": {
+        "cluster_ids_sequential": true,
+        "all_spans_strict_two_chapter_pairs": true,
+        "card_ids_cover_authoritative_prefix": true
+      },
+      "failures": []
+    },
+    "revenge_information_gap_character_and_emotion_inputs": {
+      "passed": true,
+      "evidence": {
+        "event_field_nonempty_counts": {
+          "fictional_obstacle": 250,
+          "prev_life_tragedy": 250,
+          "info_gap_from_prev_life": 250,
+          "this_life_revenge": 250,
+          "comic_villain_behavior": 250,
+          "villain_loss": 250,
+          "protagonist_gain": 250,
+          "relationship_change": 250
+        },
+        "card_field_nonempty_counts": {
+          "info_gap_from_prev_life": 500,
+          "info_gap_use": 500,
+          "this_life_revenge": 500,
+          "opponent_reaction": 500,
+          "immediate_payoff": 500
+        },
+        "style_sample_count": 5,
+        "style_samples_valid": true
+      },
+      "failures": []
+    },
+    "full_plan_compiler_and_fingerprints": {
+      "passed": false,
+      "evidence": {
+        "compiler_evidence": {
+          "event_clusters": 250,
+          "chapter_cards": 500,
+          "state_transition_count": 616,
+          "final_state_count": 613,
+          "irreversible_state_count": 541,
+          "created_artifact_count": 344,
+          "stable_character_count": 64,
+          "referenced_causal_spines": 13,
+          "referenced_foreshadows": 9
+        },
+        "fingerprints": {
+          "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+          "event_clusters_sha256": "e54d583aabc60de66ab339b9fc7c7e7f8b19f2cb4e68e6798694f9c375db1199",
+          "chapter_cards_sha256": "3233be5ce3125dbc6d5cee493590c3497dc18199dd52df9e754a27caf3066289",
+          "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+          "plan_bundle_sha256": "3008e1cba24c0f5dfdb5b860bf37cec2b814e0e635615c53a700f9df87aecfe2"
+        }
+      },
+      "failures": [
+        "250事件未覆盖因果主链：CS07、CS14",
+        "FS02未在回收阶段P04被详细事件实际回收",
+        "FS04未在种植阶段P04被详细事件实际种下",
+        "FS04未在回收阶段P06被详细事件实际回收",
+        "FS05未在种植阶段P05被详细事件实际种下",
+        "FS05未在回收阶段P07被详细事件实际回收",
+        "FS06未在种植阶段P07被详细事件实际种下",
+        "FS07未在种植阶段P08被详细事件实际种下",
+        "FS08未在种植阶段P08被详细事件实际种下",
+        "FS09未在种植阶段P08被详细事件实际种下",
+        "FS09未在回收阶段P10被详细事件实际回收",
+        "FS10未在种植阶段P08被详细事件实际种下",
+        "FS10未在回收阶段P10被详细事件实际回收",
+        "FS11未在种植阶段P09被详细事件实际种下",
+        "FS12未在种植阶段P09被详细事件实际种下",
+        "FS12未在回收阶段P10被详细事件实际回收"
+      ]
+    },
+    "official_artifact_inventory": {
+      "passed": true,
+      "evidence": {
+        "chapter_count": 10,
+        "chapter_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "provenance_count": 5,
+        "provenance_ids": [
+          "EC001",
+          "EC002",
+          "EC003",
+          "EC004",
+          "EC005"
+        ],
+        "chapter_memory_count": 10,
+        "chapter_memory_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "malformed_chapter_names": [],
+        "malformed_memory_names": []
+      },
+      "failures": []
+    },
+    "all_chapters_pass_current_validator": {
+      "passed": false,
+      "evidence": {
+        "validated_chapters": 10,
+        "minimum_han_chars": 1150,
+        "maximum_han_chars": 1728,
+        "han_chars_by_chapter": {
+          "1": 1150,
+          "2": 1599,
+          "3": 1429,
+          "4": 1423,
+          "5": 1408,
+          "6": 1483,
+          "7": 1457,
+          "8": 1728,
+          "9": 1227,
+          "10": 1572
+        }
+      },
+      "failures": [
+        "第1章：正文没有兑现章卡关键事实“分赃顺序记忆”；正文未落到规划场景“松岭疗养中心B座顶层私人医疗套房”；正文没有写出本章正式创建的关键对象“临终记忆碎片”",
+        "第2章：正文没有兑现章卡关键事实“麦珂预警”；正文没有通过现场动作兑现状态转移trust_level_in_son→高度信任，视儿子为关键决策参与者；正文没有通过现场动作兑现状态转移employment_status→停职调查中；正文未落到规划场景“河湾镇《晨光电台》试镜后台”",
+        "第3章：正文与章卡目标/动作/回报语义覆盖仅0.033，疑似写成了另一件事；正文没有兑现章卡关键事实“乔纳出示伪造文件”；正文没有兑现章卡关键事实“玛莎拒绝签署”；正文未落到规划场景“河湾镇《晨光电台》签约室”；正文没有写出本章正式创建的关键对象“空白协议草案”",
+        "第4章：正文与章卡目标/动作/回报语义覆盖仅0.035，疑似写成了另一件事；正文没有兑现章卡关键事实“乔纳再次施压”；正文没有兑现章卡关键事实“乔纳被问责”；正文没有通过现场动作兑现状态转移copyright_status→未签约（受保护）；正文没有通过现场动作兑现状态转移industry_credibility→信誉受损（被问责）；正文未落到规划场景“河湾镇《晨光电台》走廊”",
+        "第5章：正文夹入英文小写叙述词：noon；正文与章卡目标/动作/回报语义覆盖仅0.032，疑似写成了另一件事；正文未落到规划场景“杰森家客厅”；正文没有写出本章正式创建的关键对象“晨光电台加急通知函”",
+        "第6章：正文与章卡目标/动作/回报语义覆盖仅0.028，疑似写成了另一件事；正文没有兑现章卡关键事实“家庭协议签署”；正文没有兑现章卡关键事实“玛莎的支持”；正文没有通过现场动作兑现状态转移information_control→丧失信息控制权；正文没有通过现场动作兑现状态转移trust_dynamic→母子共同决策+母亲独立核查；正文未落到规划场景“杰森家书房”",
+        "第7章：1969年代出现未普及技术：云端；正文与章卡目标/动作/回报语义覆盖仅0.027，疑似写成了另一件事；正文未落到规划场景“《晨光电台》试唱间”；正文没有写出本章正式创建的关键对象“试唱评分表”",
+        "第8章：正文与章卡目标/动作/回报语义覆盖仅0.015，疑似写成了另一件事；正文没有兑现章卡关键事实“独特风格展示”；正文没有通过现场动作兑现状态转移employment_status__extension_EC004→被撤职；正文没有通过现场动作兑现状态转移performance_status→正式表演者；正文未落到规划场景“《晨光电台》演播厅”",
+        "第9章：正文与章卡目标/动作/回报语义覆盖仅0.039，疑似写成了另一件事；正文没有兑现章卡关键事实“麦珂拒绝签字”；正文没有兑现章卡关键事实“玛莎介入”；正文未落到规划场景“《晨光电台》后台化妆间”；正文没有写出本章正式创建的关键对象“黛安娜手写会议纪要”",
+        "第10章：正文与章卡目标/动作/回报语义覆盖仅0.036，疑似写成了另一件事；正文没有兑现章卡关键事实“麦珂提出艺术主张”；正文没有兑现章卡关键事实“观众鼓掌”；正文没有通过现场动作兑现状态转移control_over_narrative→失去话语权，被暂停职务；正文没有通过现场动作兑现状态转移self_definition_rights→拥有自我定义权（创作者身份）；正文没有通过现场动作兑现状态转移trust_in_mother→母子同盟，共同对抗外部压力；正文未落到规划场景“《晨光电台》直播间”"
+      ]
+    },
+    "official_body_is_exact_qwen_output": {
+      "passed": false,
+      "evidence": {
+        "verified_chapters": 0
+      },
+      "failures": [
+        "第1章：Qwen原始响应无法解析：Qwen 未返回可解析的 JSON 对象。",
+        "第2章：Qwen原始响应无法解析：Qwen 未返回可解析的 JSON 对象。",
+        "第3章：Qwen原始响应无法解析：Qwen 未返回可解析的 JSON 对象。",
+        "第4章：Qwen原始响应无法解析：Qwen 未返回可解析的 JSON 对象。",
+        "第5章：Qwen原始响应无法解析：Qwen 未返回可解析的 JSON 对象。",
+        "第6章：Qwen原始响应无法解析：Qwen 未返回可解析的 JSON 对象。",
+        "第7章：Qwen原始响应无法解析：Qwen 未返回可解析的 JSON 对象。",
+        "第8章：Qwen原始响应无法解析：Qwen 未返回可解析的 JSON 对象。",
+        "第9章：Qwen原始响应无法解析：Qwen 未返回可解析的 JSON 对象。",
+        "第10章：Qwen原始响应无法解析：Qwen 未返回可解析的 JSON 对象。"
+      ]
+    },
+    "local_chapter_memories_match_body": {
+      "passed": true,
+      "evidence": {
+        "verified_memories": 10
+      },
+      "failures": []
+    },
+    "all_target_event_clusters_pass_joint_validation": {
+      "passed": false,
+      "evidence": {
+        "validated_clusters": 2,
+        "maximum_longest_exact_repeat": 24,
+        "longest_exact_repeat_by_cluster": {
+          "EC001": 18,
+          "EC002": 24,
+          "EC003": 21,
+          "EC004": 11,
+          "EC005": 21
+        }
+      },
+      "failures": [
+        "EC002：两章语义片段重合度0.18过高，第二章疑似换词重演第一章",
+        "EC003：两章语义片段重合度0.13过高，第二章疑似换词重演第一章",
+        "EC005：两章语义片段重合度0.13过高，第二章疑似换词重演第一章；第二章没有通过动作兑现计划中的损失/收益结算；仅有情绪反应不能算结算"
+      ]
+    },
+    "manual_review_status_finalized": {
+      "passed": false,
+      "evidence": {
+        "quality_review_status_by_cluster": {
+          "EC001": "awaiting_manual_read",
+          "EC002": "awaiting_manual_read",
+          "EC003": "awaiting_manual_read",
+          "EC004": "awaiting_manual_read",
+          "EC005": "awaiting_manual_read"
+        }
+      },
+      "failures": [
+        "EC001：awaiting_manual_read",
+        "EC002：awaiting_manual_read",
+        "EC003：awaiting_manual_read",
+        "EC004：awaiting_manual_read",
+        "EC005：awaiting_manual_read"
+      ]
+    },
+    "neo4j_planning_and_story_memory_in_sync": {
+      "passed": true,
+      "evidence": {
+        "plot_cluster_count": 250,
+        "story_chapter_count_1_to_10": 10,
+        "plot_cluster_hash_mismatches": [],
+        "body_hash_mismatch_chapters": []
+      },
+      "failures": []
+    }
+  }
+}

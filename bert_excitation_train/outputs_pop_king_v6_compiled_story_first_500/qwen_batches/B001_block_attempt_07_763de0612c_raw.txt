@@ -1,0 +1,191 @@
+{
+  "block_id": "B001",
+  "chapter_span": [1, 20],
+  "block_title": "重生回试镜后台：一场无声的博弈",
+  "timeline_years": "2009→1969",
+  "coarse_story_summary": "麦珂·杰森在2009年5月24日死亡前夜，回忆起自己一生中被系统性操控的轨迹。他重生回到1969年十一岁全国出道试镜后台，凭借前世的记忆，迅速识别出奥瑞恩集团对童星合同的陷阱。他在试镜过程中表现出色，同时利用对流程和人性的了解，巧妙地在合同上留下可追溯的痕迹。随着试镜结束，他成功进入签约环节，并在与维克多·兰斯的初次交锋中占据主动，逐步夺回对自身命运的掌控权。在这20章中，麦珂不断以作品、表演和人际关系为支点，一步步瓦解了控制体系的第一环。",
+  "entry_state": {
+    "career_and_reputation": "麦珂是尚未成名的普通少年，仅有试镜资格。",
+    "rights_and_assets": "无任何合约或财产，处于完全弱势地位。",
+    "family_and_relationships": "父母乔纳和玛莎对他寄予厚望，但缺乏谈判能力和法律意识。",
+    "health_and_location": "身体健康，在试镜后台等待。",
+    "open_threads": ["麦珂前世记忆中的合同漏洞"]
+  },
+  "block_goal": "麦珂在1969年试镜后签订第一份合同，同时揭露其潜在陷阱，夺回部分权利。",
+  "main_conflict": "麦珂面对奥瑞恩集团精心设计的合同陷阱，必须依靠前世记忆找出漏洞并加以反制。",
+  "rebirth_advantage": "麦珂知道合同第十七页包含‘监护权代管条款’，以及公证处每天下午三点关门的时限，能够提前布局。",
+  "character_movements": [
+    "麦珂开始学习合同内容并记录关键条款。",
+    "玛莎逐渐意识到保护儿子的重要性，尝试参与决策。",
+    "维克多·兰斯察觉到麦珂的异常冷静，对其产生警惕。"
+  ],
+  "rights_health_relationship_changes": {
+    "rights_and_assets": ["获得初步合同签署权，保留原始文件副本"],
+    "health_and_safety": [],
+    "family_and_romance": ["玛莎首次提出独立意见，影响麦珂的决策过程"],
+    "career_and_reputation": ["赢得试镜认可，进入签约阶段"]
+  },
+  "causal_links_used": ["CS01", "CS10"],
+  "foreshadows_planted_or_advanced": ["FS01"],
+  "block_outcome": "麦珂在1969年试镜后成功签下第一份合同，但并未完全落入奥瑞恩集团的控制，反而为其埋下隐患。",
+  "handoff_to_next_block": "麦珂开始在音乐领域崭露头角，同时逐步建立自己的影响力，为后续对抗奠定基础。",
+  "macro_groups": [
+    {
+      "macro_group_id": "MG001",
+      "chapter_span": [1, 10],
+      "title": "重生试镜：从沉默到发声",
+      "timeline_years": "1969",
+      "macro_goal": "麦珂在试镜后成功签约，同时揭示合同中的隐藏条款，为自己争取更多自主权。",
+      "historical_stage": "1969年的全国童星选拔活动，象征着一个新时代的开启。",
+      "main_conflict": "麦珂面临奥瑞恩集团的合同陷阱，必须找到方法突破限制。",
+      "rebirth_advantage": "麦珂记得合同第十七页的内容，以及公证处的关门时间，能够提前应对。",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC001",
+          "chapter_span": [1, 2],
+          "opposition_type": "villain",
+          "event_type": "health_safety",
+          "solution_type": "safety_preemption",
+          "death_chain_role": "advance",
+          "direction": "麦珂在2009年死亡前夜回忆起自己的死因，重生后提前避开医疗陷阱。"
+        },
+        {
+          "cluster_id": "EC002",
+          "chapter_span": [3, 4],
+          "opposition_type": "villain",
+          "event_type": "contract_rights",
+          "solution_type": "negotiation",
+          "death_chain_role": "pressure",
+          "direction": "麦珂在试镜后与维克多·兰斯进行合同谈判，要求增加亲子通话条款。"
+        },
+        {
+          "cluster_id": "EC003",
+          "chapter_span": [5, 6],
+          "opposition_type": "family",
+          "event_type": "family_relationship",
+          "solution_type": "relationship_choice",
+          "death_chain_role": "reveal",
+          "direction": "玛莎第一次在合同问题上表达不同意见，促使麦珂重新审视家庭关系。"
+        },
+        {
+          "cluster_id": "EC004",
+          "chapter_span": [7, 8],
+          "opposition_type": "institutional",
+          "event_type": "performance",
+          "solution_type": "performance_proof",
+          "death_chain_role": "echo",
+          "direction": "麦珂在试镜中即兴演唱，展现出独特的嗓音魅力，赢得评委青睐。"
+        },
+        {
+          "cluster_id": "EC005",
+          "chapter_span": [9, 10],
+          "opposition_type": "villain",
+          "event_type": "performance",
+          "solution_type": "creative_breakthrough",
+          "death_chain_role": "advance",
+          "direction": "麦珂在试镜中创作并演唱原创曲目，展现独特艺术风格。"
+        }
+      ],
+      "romance_progression": "未成年禁恋，未涉及情感线。",
+      "ending_state": {
+        "career_and_reputation": "麦珂赢得试镜，成为知名童星候选人。",
+        "rights_and_assets": "成功签订合同，保留部分权利。",
+        "family_and_romance": "玛莎开始积极参与决策，家庭关系更加紧密。",
+        "health_and_location": "身体健康，位于试镜后台。",
+        "open_threads": ["合同中的隐藏条款仍未完全暴露"]
+      },
+      "next_group_hook": "麦珂在试镜后继续发展，逐渐揭开奥瑞恩集团更多的秘密。"
+    },
+    {
+      "macro_group_id": "MG002",
+      "chapter_span": [11, 20],
+      "title": "初涉舞台：迈向自由之路",
+      "timeline_years": "1969-1970",
+      "macro_goal": "麦珂通过演出和创作，逐步扩大影响力，进一步削弱奥瑞恩集团的控制。",
+      "historical_stage": "1969年至1970年间，麦珂首次登上舞台，展现才华。",
+      "main_conflict": "麦珂在舞台上展现自我，同时防止被集团过度操控。",
+      "rebirth_advantage": "麦珂清楚知道集团的操作方式，能够提前预防风险。",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC006",
+          "chapter_span": [11, 12],
+          "opposition_type": "family",
+          "event_type": "family_relationship",
+          "solution_type": "relationship_choice",
+          "death_chain_role": "pressure",
+          "direction": "玛莎坚持要求定期与麦珂通话，迫使集团调整管理策略。"
+        },
+        {
+          "cluster_id": "EC007",
+          "chapter_span": [13, 14],
+          "opposition_type": "institutional",
+          "event_type": "public_confrontation",
+          "solution_type": "public_confrontation",
+          "death_chain_role": "reveal",
+          "direction": "麦珂在演出后公开批评集团的操控行为，引发媒体关注。"
+        },
+        {
+          "cluster_id": "EC008",
+          "chapter_span": [15, 16],
+          "opposition_type": "institutional",
+          "event_type": "creation",
+          "solution_type": "creative_breakthrough",
+          "death_chain_role": "advance",
+          "direction": "麦珂创作出一首原创歌曲，展现独特风格，获得广泛赞誉。"
+        },
+        {
+          "cluster_id": "EC009",
+          "chapter_span": [17, 18],
+          "opposition_type": "internal",
+          "event_type": "market_result",
+          "solution_type": "market_result",
+          "death_chain_role": "echo",
+          "direction": "麦珂的演出受到观众热烈欢迎，票房成绩优异。"
+        },
+        {
+          "cluster_id": "EC010",
+          "chapter_span": [19, 20],
+          "opposition_type": "institutional",
+          "event_type": "fan_public_welfare",
+          "solution_type": "strategic_withdrawal",
+          "death_chain_role": "advance",
+          "direction": "麦珂主动减少商业演出，专注于公益项目，提升公众形象。"
+        }
+      ],
+      "romance_progression": "未成年初涉情爱，未涉及情感线。",
+      "ending_state": {
+        "career_and_reputation": "麦珂逐渐树立个人品牌形象，获得更多支持。",
+        "rights_and_assets": "拥有更多自主权，合同约束力减弱。",
+        "family_and_romance": "家庭关系更为稳固，玛莎成为重要决策者。",
+        "health_and_location": "健康状况良好，频繁参与各类演出。",
+        "open_threads": ["合同中的隐藏条款仍有待挖掘"]
+      },
+      "next_group_hook": "麦珂在舞台上的表现越来越出色，逐渐建立起自己的影响力，为未来的抗争奠定了基础。"
+    }
+  ],
+  "continuity_update": {
+    "characters": [
+      "麦珂·杰森：重生后开始思考人生方向，努力掌握主动权。",
+      "玛莎·杰森：逐渐觉醒，开始参与儿子的重大决策。",
+      "维克多·兰斯：察觉到麦珂的不凡之处，开始密切关注。"
+    ],
+    "relationships": [
+      "麦珂与母亲的关系更加紧密，玛莎成为他的坚强后盾。",
+      "麦珂与维克多之间的较量开始显现。"
+    ],
+    "rights_and_assets": [
+      "麦珂保留合同副本，确保未来有据可依。",
+      "获得一定的经济收益，但仍受集团制约。"
+    ],
+    "health_and_location": [
+      "身体健康，积极参加各种活动。",
+      "居住于湖心谷老宅，远离集团控制范围。"
+    ],
+    "resolved_threads": [
+      "麦珂在试镜中成功脱颖而出，迈出了第一步。"
+    ],
+    "open_threads": [
+      "合同中的隐藏条款仍需深入调查；维克多·兰斯可能在未来制造新的危机。"
+    ]
+  }
+}

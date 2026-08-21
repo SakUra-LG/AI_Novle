@@ -1,0 +1,202 @@
+{
+  "generated_by": "groq",
+  "kind": "macro_directions_EC001_EC002",
+  "identifier": "MG001",
+  "accepted_attempt": null,
+  "base_prompt_sha256": "e8a9e2ed451202b9037f43de10d18ae2ba4411369af6498a6833c0d8d7bd7af3",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-15T16:37:11+08:00",
+      "prompt_sha256": "e8a9e2ed451202b9037f43de10d18ae2ba4411369af6498a6833c0d8d7bd7af3",
+      "raw_response_sha256": "c698b53ae36512fb95dfedb5efd4620c9fee8787891bdfe567fbf3b332bf29a8",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_directions_EC001_EC002_attempt_01_e8a9e2ed45_raw.txt",
+      "validation_failures": [
+        "EC001.death_chain_connection至少8字",
+        "EC001必须落实锁定事实词：1969",
+        "EC001必须落实锁定事实词：药/注射/输液",
+        "EC001必须落实锁定事实词：设备/走位/安全/危险",
+        "EC001.previous_life_harm必须是2009年康拉德致死的临终现场",
+        "EC001.previous_life_harm必须写康拉德违规用药/注射致死，不能改成设备事故",
+        "EC001.unique_prev_life_info必须是临终听见的保险与版权/母带分赃信息",
+        "EC001第2章动作必须发生在1969试镜后台并利用设备/走位险情信息",
+        "EC002.previous_life_harm至少8字",
+        "EC002.unique_prev_life_info至少12字",
+        "EC002.preemptive_action至少8字",
+        "EC002.chapter_one_small_win至少8字",
+        "EC002.chapter_two_showdown至少8字",
+        "EC002.opponent_permanent_loss至少8字",
+        "EC002.protagonist_concrete_gain至少8字",
+        "EC002.irreversible_outcome_key至少4字",
+        "EC002.death_chain_connection至少8字",
+        "EC002.event_type=contract_rights与实际剧情不符；剧情没有该类型的核心行动",
+        "EC002.solution_type=negotiation与实际胜法不符；不能只换解法标签",
+        "EC002必须落实锁定事实词：合同/协议/授权/委托书",
+        "EC002必须落实锁定事实词：乔纳",
+        "EC002必须落实锁定事实词：限时/截止/马上签",
+        "EC002必须落实锁定事实词：玛莎",
+        "EC002必须落实锁定事实词：律师/法律顾问/审查",
+        "EC002前世信息必须是乔纳受限时报名谎话催促而速签",
+        "EC002今生只能由麦珂提少年能问的问题，再由玛莎决定暂停并请律师审查"
+      ],
+      "provider": "groq",
+      "model": "llama-3.1-8b-instant",
+      "transport": "groq_curl",
+      "elapsed_seconds": 10.511,
+      "usage": {
+        "queue_time": 0.08977942,
+        "prompt_tokens": 3940,
+        "prompt_time": 0.324861299,
+        "completion_tokens": 736,
+        "completion_time": 1.005496978,
+        "total_tokens": 4676,
+        "total_time": 1.330358277
+      },
+      "capacity_model_fallbacks": [
+        "groq/compound-mini",
+        "llama-3.3-70b-versatile",
+        "qwen/qwen3.6-27b",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-15T16:38:07+08:00",
+      "prompt_sha256": "03d5325c6ec573fbabdb0df7b0204cf65badf9fd596c257797128485af6c96ae",
+      "raw_response_sha256": "eb1874cc0cd0e4a37698c83a32d3b7df122ef955d882bc9a124ebeb80fc9f7d8",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_directions_EC001_EC002_attempt_02_e8a9e2ed45_raw.txt",
+      "validation_failures": [
+        "EC001.opponent_permanent_loss至少8字",
+        "EC001.protagonist_concrete_gain至少8字",
+        "EC001.irreversible_outcome_key至少4字",
+        "EC001.direction必须留空",
+        "EC002.protagonist_concrete_gain至少8字",
+        "EC002.irreversible_outcome_key至少4字",
+        "EC002.solution_type=negotiation与实际胜法不符；不能只换解法标签",
+        "EC002.direction必须留空",
+        "EC002必须落实锁定事实词：限时/截止/马上签",
+        "EC002前世信息必须是乔纳受限时报名谎话催促而速签",
+        "EC002今生只能由麦珂提少年能问的问题，再由玛莎决定暂停并请律师审查",
+        "EC002的不可逆结算是暂停速签并交律师审查，不得让麦珂在本事件签下合同"
+      ],
+      "provider": "groq",
+      "model": "llama-3.1-8b-instant",
+      "transport": "groq_curl",
+      "elapsed_seconds": 56.777,
+      "usage": {
+        "queue_time": 0.060215708,
+        "prompt_tokens": 4220,
+        "prompt_time": 0.481662788,
+        "completion_tokens": 841,
+        "completion_time": 1.31002003,
+        "total_tokens": 5061,
+        "total_time": 1.791682818
+      },
+      "capacity_model_fallbacks": [
+        "groq/compound-mini",
+        "llama-3.3-70b-versatile",
+        "qwen/qwen3.6-27b",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-15T16:39:07+08:00",
+      "prompt_sha256": "2e1a1f780e851e6d24363d2a36c043e2e9fcf69e249bd457228a751508fa7348",
+      "raw_response_sha256": "ccf95aa6c4bbf89a1837d2cd9b3d0c78bd09ebf7725c8521b807331d7f1685a3",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_directions_EC001_EC002_attempt_03_e8a9e2ed45_raw.txt",
+      "validation_failures": [
+        "EC001.death_chain_connection至少8字",
+        "EC001必须落实锁定事实词：1969",
+        "EC001必须落实锁定事实词：保险",
+        "EC001必须落实锁定事实词：版权/母带",
+        "EC001.unique_prev_life_info必须是临终听见的保险与版权/母带分赃信息",
+        "EC001第2章动作必须发生在1969试镜后台并利用设备/走位险情信息",
+        "EC002.death_chain_connection至少8字",
+        "EC002.solution_type=negotiation与实际胜法不符；不能只换解法标签",
+        "EC002必须落实锁定事实词：玛莎",
+        "EC002今生只能由麦珂提少年能问的问题，再由玛莎决定暂停并请律师审查"
+      ],
+      "provider": "groq",
+      "model": "llama-3.1-8b-instant",
+      "transport": "groq_curl",
+      "elapsed_seconds": 59.977,
+      "usage": {
+        "queue_time": 0.08623323,
+        "prompt_tokens": 4219,
+        "prompt_time": 0.32520933,
+        "completion_tokens": 756,
+        "completion_time": 1.026539373,
+        "total_tokens": 4975,
+        "total_time": 1.351748703
+      },
+      "capacity_model_fallbacks": [
+        "groq/compound-mini",
+        "llama-3.3-70b-versatile",
+        "qwen/qwen3.6-27b",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-15T16:40:01+08:00",
+      "prompt_sha256": "e31a3decafe205be51b82ef1465630d64f468550d53fc93fee8829018ef6a3d3",
+      "raw_response_sha256": "03314aad3b87cd23180b29eb72b56f741ac76ecdaa28e81c2a35e35af812cd99",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_directions_EC001_EC002_attempt_04_e8a9e2ed45_raw.txt",
+      "validation_failures": [
+        "EC001.direction必须留空",
+        "EC001必须落实锁定事实词：康拉德",
+        "EC001必须落实锁定事实词：药/注射/输液",
+        "EC001.previous_life_harm必须是2009年康拉德致死的临终现场",
+        "EC001.previous_life_harm必须写康拉德违规用药/注射致死，不能改成设备事故",
+        "EC002.previous_life_harm至少8字",
+        "EC002.unique_prev_life_info至少12字",
+        "EC002.preemptive_action至少8字",
+        "EC002.chapter_one_small_win至少8字",
+        "EC002.chapter_two_showdown至少8字",
+        "EC002.opponent_permanent_loss至少8字",
+        "EC002.protagonist_concrete_gain至少8字",
+        "EC002.irreversible_outcome_key至少4字",
+        "EC002.solution_type=negotiation与实际胜法不符；不能只换解法标签",
+        "EC002.direction必须留空",
+        "EC002必须落实锁定事实词：乔纳",
+        "EC002必须落实锁定事实词：限时/截止/马上签",
+        "EC002必须落实锁定事实词：玛莎",
+        "EC002必须落实锁定事实词：律师/法律顾问/审查",
+        "EC002前世信息必须是乔纳受限时报名谎话催促而速签",
+        "EC002今生只能由麦珂提少年能问的问题，再由玛莎决定暂停并请律师审查"
+      ],
+      "provider": "groq",
+      "model": "llama-3.1-8b-instant",
+      "transport": "groq_curl",
+      "elapsed_seconds": 54.085,
+      "usage": {
+        "queue_time": 0.084724731,
+        "prompt_tokens": 4193,
+        "prompt_time": 0.377788474,
+        "completion_tokens": 827,
+        "completion_time": 1.392166924,
+        "total_tokens": 5020,
+        "total_time": 1.769955398,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        }
+      },
+      "capacity_model_fallbacks": [
+        "groq/compound-mini",
+        "llama-3.3-70b-versatile",
+        "qwen/qwen3.6-27b",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    }
+  ]
+}

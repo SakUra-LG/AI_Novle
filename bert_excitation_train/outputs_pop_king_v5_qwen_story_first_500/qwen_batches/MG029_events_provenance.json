@@ -1,0 +1,52 @@
+{
+  "generated_by": "qwen",
+  "kind": "events",
+  "identifier": "MG029",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "8459ebe203ed950fe168eabdf5271fa1db26743a7c3af4764d48d46515071e13",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-08T21:39:14+08:00",
+      "prompt_sha256": "8459ebe203ed950fe168eabdf5271fa1db26743a7c3af4764d48d46515071e13",
+      "raw_response_sha256": "752c8c86e93f6808629c76ef11dad794e3bd4eccef38b4f0d34017386730e2bb",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG029_events_attempt_01_raw.txt",
+      "validation_failures": [
+        "EC141年代技术错误：当前年代不得出现“邮箱”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 99.996,
+      "usage": {
+        "input_tokens": 16506,
+        "output_tokens": 6529,
+        "total_tokens": 23035,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-08T21:40:54+08:00",
+      "prompt_sha256": "ce8ee494a061989871fc49f68f87fdfdd498ce4ecf2453d731823329be91db29",
+      "raw_response_sha256": "6d8753e51588085d2c18de735306f82ce0c41f7e123a62ff3496a110bc7ed1d7",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG029_events_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 99.704,
+      "usage": {
+        "input_tokens": 6697,
+        "output_tokens": 6531,
+        "total_tokens": 13228,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

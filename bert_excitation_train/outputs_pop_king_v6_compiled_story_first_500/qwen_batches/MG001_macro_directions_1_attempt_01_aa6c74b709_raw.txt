@@ -1,0 +1,43 @@
+{
+  "macro_group_id": "MG001",
+  "event_directions": [
+    {
+      "cluster_id": "EC001",
+      "chapter_span": [1, 2],
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "advance",
+      "previous_life_harm": "2009年因未及时发现后台电路老化导致的短路，麦珂在演出现场被迫紧急撤离，失去关键演出机会并被标签为‘不可靠’。",
+      "unique_prev_life_info": "1970年5月12日，后台配电箱标记‘更换于1968‑09‑03’，制作人克莱德曾口头说‘这箱子还能撑到明年’。",
+      "preemptive_action": "重生后，麦珂利用记忆提醒玛莎在试镜前一天让资深电工检查配电箱，并让黛安娜在现场记录所有电路编号，确保成年技术人员完成更换，避免旧箱导致的停电。",
+      "chapter_one_small_win": "第1章，电工在检查时发现配电箱内部烧焦痕迹，立即更换，试镜顺利进行，麦珂获得完整母带。",
+      "chapter_two_showdown": "第2章，克莱德因后台停电导致的演出延误向制作公司投诉，指责麦珂团队“擅自干预技术”，随后要求撤销麦珂的试镜资格。玛莎凭借温特律师提供的电工检查报告，公开揭露克莱德曾在去年一次演出中因同样原因被公司警告的内部邮件，媒体曝光后克莱德被降职为助理制片。",
+      "opponent_permanent_loss": "克莱德失去制作人职务，失去未来项目的决策权与奖金，行业口碑受损。",
+      "protagonist_concrete_gain": "麦珂获得《晨光电台》试镜母带原件的合法保管权，温特律师为其办理“未签约创作者”认证，州教育部正式认可其作品用于教材。",
+      "irreversible_outcome_key": "SAFE‑SHIFT‑01",
+      "death_chain_connection": "通过阻止后台电路事故，削弱了2009年因设备安全缺失导致的保险理赔争议，为后续对保险公司不当拒赔的诉讼奠定安全记录基础。",
+      "direction": "",
+      "locked_story_brief": "第1章2009临终获得死亡利益链真相；第2章重生到1969试镜后台，凭前世记得的走位或设备险情报告成年人并避险，失职者失去后台职务，麦珂赢得试镜机会"
+    },
+    {
+      "cluster_id": "EC002",
+      "chapter_span": [3, 4],
+      "opposition_type": "villain",
+      "event_type": "contract_rights",
+      "solution_type": "negotiation",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "2009年被迫签署一份含有隐蔽版权转让条款的演出合同，导致后期版权收益被制作公司全部夺走，经济与声誉双重受创。",
+      "unique_prev_life_info": "1969年9月3日，签约表第三项‘签约环节’仅写明‘签字即生效’，无签字时间限制，克莱德曾在会议上说‘我们不需要再等，马上签’。",
+      "preemptive_action": "麦珂在试镜前让玛莎在现场召集家庭会议，要求温特律师现场审阅合同，特别标注第三项缺乏时间戳，要求加入‘签字后48小时内可撤回’条款，由成年律师现场修改后重新打印。",
+      "chapter_one_small_win": "第3章，温特律师成功在合同页脚加注撤回期限，制作方虽不情愿但因法律顾问提醒而接受，麦珂获得签约前的法律审查权。",
+      "chapter_two_showdown": "第4章，克莱德企图利用内部邮件指示“强行执行默认签字”，但玛莎凭借签约现场的录像和温特的公证副本，向当地广播站和州教育部提交投诉，媒体曝光后制作公司被州教育部罚款并被迫撤销所有未完成的童星合约模板。",
+      "opponent_permanent_loss": "克莱德失去对合同模板的制定权，制作公司被迫重新起草合约，失去快速签约的商业优势，内部信任危机导致数位关键制作人离职。",
+      "protagonist_concrete_gain": "麦珂获得《演出健康备忘录》编号P01‑001的正式公证文件，成为全州童星合约谈判的先例，州教育部授予其“音乐教材创作者”称号并提供后续教材编写项目。",
+      "irreversible_outcome_key": "CONTRACT‑LOCK‑02",
+      "death_chain_connection": "通过破坏制作方的快速签约机制，削弱了2009年那份隐蔽版权转让合同的前置逻辑，为后续对版权侵权的法律追溯提供了先例性判例。",
+      "direction": "",
+      "locked_story_brief": "第一份合同是本块唯一合同主事件；前世记得乔纳受一句限时报名谎话催促而速签，今生只提出少年能问的问题，由玛莎自主决定暂停并让律师审查，控制方永久失去速签通道"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "generated_by": "qwen",
+  "kind": "narrative",
+  "identifier": "GLOBAL",
+  "accepted_attempt": "04",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "base_prompt_sha256": "602eb2dc082a179417db68f827225faa31fb93e45dd4df10be15e89f631b96df",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-04T19:37:12+08:00",
+      "prompt_sha256": "602eb2dc082a179417db68f827225faa31fb93e45dd4df10be15e89f631b96df",
+      "raw_response_sha256": "69215fdd37d3b11f4e9191ff19213dbb755290772dd653e9b267832324d1d811",
+      "raw_response_file": "GLOBAL_narrative_attempt_01_raw.txt",
+      "validation_failures": [
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事梗概世界观错误：禁止出现“好莱坞”",
+        "全书叙事梗概世界观错误：禁止出现“东京”",
+        "全书叙事梗概世界观错误：禁止出现“Excel”",
+        "集团名称不一致：统一使用‘奥瑞恩集团’，不得写‘奥瑞安’",
+        "终局必须明确麦珂在全球纪念直播结束前本人走上现场，不能只用全息影像或事后出现"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 45.079,
+      "usage": {
+        "input_tokens": 2378,
+        "output_tokens": 2914,
+        "total_tokens": 5292,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-04T19:37:59+08:00",
+      "prompt_sha256": "c203e46ba1bc5dae12bd2d1af1a43c513124d86f5632bbd26d7c9a6d2564c41f",
+      "raw_response_sha256": "6f5587c5c1236ce6a6828830778c7d9bb536cb8f9ebc6a76d090e63683b8fb83",
+      "raw_response_file": "GLOBAL_narrative_attempt_02_raw.txt",
+      "validation_failures": [
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事梗概必须明确全球纪念现场现身并把葬礼变成审判"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 47.066,
+      "usage": {
+        "input_tokens": 5259,
+        "output_tokens": 3043,
+        "total_tokens": 8302,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-04T19:38:45+08:00",
+      "prompt_sha256": "463e977567a3c552e069a787820b13bec394b376a76b4f777b6a967e53e08ae5",
+      "raw_response_sha256": "834ae0f2e3491bd4929fa77787462a97b28fe55b188deab1468d624a6ee0aa16",
+      "raw_response_file": "GLOBAL_narrative_attempt_03_raw.txt",
+      "validation_failures": [
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事梗概必须明确全球纪念现场现身并把葬礼变成审判"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 46.668,
+      "usage": {
+        "input_tokens": 5183,
+        "output_tokens": 3002,
+        "total_tokens": 8185,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-04T19:39:33+08:00",
+      "prompt_sha256": "463e977567a3c552e069a787820b13bec394b376a76b4f777b6a967e53e08ae5",
+      "raw_response_sha256": "84c0368b6d7b5743e25e8080e45cac41d0a8ced3458b6c93ae503cfdad5b4b87",
+      "raw_response_file": "GLOBAL_narrative_attempt_04_raw.txt",
+      "validation_failures": [
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事梗概必须明确全球纪念现场现身并把葬礼变成审判"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 47.323,
+      "usage": {
+        "input_tokens": 5183,
+        "output_tokens": 3043,
+        "total_tokens": 8226,
+        "prompt_tokens_details": {
+          "cached_tokens": 5120
+        }
+      }
+    }
+  ]
+}

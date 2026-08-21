@@ -1,0 +1,220 @@
+{
+  "macro_group_id": "MG017",
+  "event_clusters": [
+    {
+      "cluster_id": "EC083",
+      "chapter_span": [
+        165,
+        166
+      ],
+      "source_event_direction": "前世具体受害：前世声压可视化系统依赖电子元件，故障频发且易被黑客篡改数据。；本事件独有的前世信息差：1984年晨间口诀敲击节拍可迁移至全机械联动设计灵感。；今生提前动作：麦珂召集昆廷·琼斯与黛安娜，依据口诀节拍设计纯机械声压可视化原型机。；第165章可见小赢：原型机在无电力状态下成功将声波转化为可视刻度，震动幅度精准对应频率。；第166章新交锋：奥瑞恩技术团队质疑机械结构精度，邀请第三方公证现场测试。；阻力方永久现实损失：电子竞品因缺乏物理稳定性被行业淘汰，技术壁垒确立。；主角现实收益：‘声压可视化系统’原型机通过全机械结构测试，确立行业标杆地位。；不可逆结算键：全机械声压可视化原型机通过公测；接回死亡控制主线：避免前世因技术漏洞导致的系统崩溃与数据丢失",
+      "source_event_direction_sha256": "f5d972b86accff5259d684226660debb6da6d9b5032d49c45e02cd0a36ff4924",
+      "source_macro_sha26": "x9y8z7w6v5u4",
+      "name": "机械声压可视化原型机公测与奥瑞恩技术围猎",
+      "timeline_years": "1985—1986",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS02"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "昆廷·琼斯",
+        "黛安娜",
+        "维克多·兰斯",
+        "莱昂·周"
+      ],
+      "fictional_obstacle": "奥瑞恩集团质疑机械结构精度，试图通过第三方公证测试证明其数据不可靠，从而维持电子竞品的市场垄断并切断麦珂巡演资金。",
+      "prev_life_tragedy": "前世声压可视化系统依赖电子元件，故障频发且易被黑客篡改数据，导致麦珂在关键听证会上证据失效，资金链断裂。",
+      "info_gap_from_prev_life": "1984年晨间口诀敲击节拍可迁移至全机械联动设计灵感，以及电子元件在特定频率下的共振失效点。",
+      "why_previous_life_failed": "过度依赖电子信号处理，忽略了物理机械结构的稳定性与抗干扰能力，且未预见到对手会针对电子信号进行定向干扰。",
+      "preemptive_avoidance": "麦珂召集昆廷·琼斯与黛安娜，依据口诀节拍设计纯机械声压可视化原型机，利用齿轮咬合与杠杆原理实现声波到可视刻度的直接转化，彻底规避电子干扰。",
+      "bait_and_evidence": "麦珂故意在原型机中保留一个看似精密实则脆弱的‘校准旋钮’，引诱维克多·兰斯在测试中强行调整以寻找破绽，结果导致旋钮卡死，反向证明机械结构的自锁稳定性。",
+      "comic_villain_behavior": "维克多·兰斯在测试现场因紧张过度，误将高频测试信号输入低频通道，导致其带来的电子竞品屏幕出现雪花屏，他尴尬地试图用‘电磁干扰’解释，却被第三方公证员当场记录。",
+      "villain_loss": "奥瑞恩电子竞品因缺乏物理稳定性被行业淘汰，技术壁垒确立，维克多·兰斯在技术圈声誉受损，奥瑞恩集团被迫撤回对麦珂巡演资金的保险拒赔令。",
+      "protagonist_gain": "‘声压可视化系统’原型机通过全机械结构测试，确立行业标杆地位，麦珂获得技术主导权与巡演资金安全。",
+      "relationship_change": "莱昂·周见证麦珂的技术实力，正式加入‘星火同盟’核心审计组，决定报考音乐学院深造；昆廷·琼斯对麦珂的机械设计理念产生深刻认同。",
+      "continuity_writes": [
+        "RIGHT_VL_007:trust_governance__extension_EC083"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007:trust_governance__extension_EC083",
+          "state_key": "trust_governance__extension_EC083",
+          "from": "pending",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_165_MECHANICAL_PROTOTYPE_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_B6BBF0D9B359",
+          "state_key": "opposition_loss_EC083",
+          "from": "active",
+          "to": "奥瑞恩集团技术围猎失败，电子竞品被淘汰，技术壁垒被主角方确立。",
+          "irreversible": true,
+          "evidence": "ART_165_MECHANICAL_PROTOTYPE_LOG",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "1985_WORKSHOP_LOG"
+      ],
+      "cluster_outcome": "‘声压可视化系统’原型机通过全机械结构测试，确立行业标杆地位；奥瑞恩集团因技术失败被迫撤回保险拒赔令，巡演资金链恢复安全；莱昂·周正式加入‘星火同盟’核心审计组。",
+      "next_event_hook": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，这将直接触发1987年‘棱镜之夜’直播事故的前置条件。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 165,
+          "timeline_start": "1985-12-12",
+          "timeline_end": "1985-12-12",
+          "scene": "麦珂工作室",
+          "chapter_goal": "原型机在无电力状态下成功将声波转化为可视刻度，震动幅度精准对应频率。",
+          "chapter_title": "齿轮的脉搏",
+          "participants": [
+            "麦珂",
+            "昆廷·琼斯",
+            "黛安娜"
+          ],
+          "opening_conflict": "原型机核心传动轴在高速运转下出现微小抖动，麦珂需在不使用电子传感器的情况下，通过机械结构调整消除误差。",
+          "info_gap_use": "麦珂回忆1984年晨间口诀的敲击节拍，将其转化为齿轮咬合的时序逻辑，重新校准传动轴角度。",
+          "opponent_reaction": "无直接对手在场，但麦珂预见到维克多·兰斯将质疑机械结构的精度，因此刻意保留一个看似多余的‘校准旋钮’作为诱饵。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂工作室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂手指轻触齿轮，回忆口诀节拍"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_165_MECHANICAL_PROTOTYPE_LOG",
+              "timeline_scope": "current",
+              "display_name": "全机械声压可视化原型机测试日志",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂发现传动轴抖动",
+            "回忆口诀节拍，调整齿轮角度",
+            "昆廷·琼斯协助固定支架",
+            "黛安娜记录震动幅度数据",
+            "原型机成功运行，刻度精准对应频率"
+          ],
+          "visible_payoff": "原型机在无电力状态下成功将声波转化为可视刻度，震动幅度精准对应频率，麦珂确认机械结构稳定性。",
+          "ending": "麦珂在测试日志上签字，准备迎接维克多·兰斯的挑战。",
+          "must_include": [
+            "齿轮咬合声",
+            "口诀节拍",
+            "校准旋钮"
+          ],
+          "must_not_include": [
+            "电子传感器",
+            "数字显示屏"
+          ],
+          "detailed_synopsis": "麦珂在工作室中调试全机械声压可视化原型机，发现核心传动轴在高速运转下出现微小抖动。他回忆起1984年晨间口诀的敲击节拍，将其转化为齿轮咬合的时序逻辑，重新校准传动轴角度。昆廷·琼斯协助固定支架，黛安娜记录震动幅度数据。经过多次调整，原型机成功运行，刻度精准对应频率。麦珂在测试日志上签字，准备迎接维克多·兰斯的挑战。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_156_BARRY_CONFESION_TAPE",
+              "timeline_scope": "previous_life",
+              "purpose": "麦珂在调试时播放巴里·布鲁姆的录音，测试原型机对复杂人声的解析能力"
+            }
+          ]
+        },
+        {
+          "chapter_id": 166,
+          "timeline_start": "1985-12-17",
+          "timeline_end": "1985-12-17",
+          "scene": "市立图书馆报告厅",
+          "chapter_goal": "奥瑞恩技术团队质疑机械结构精度，邀请第三方公证现场测试，麦珂利用机械结构的自锁稳定性反败为胜。",
+          "chapter_title": "无声的证词",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "莱昂·周",
+            "第三方公证员"
+          ],
+          "opening_conflict": "维克多·兰斯带领奥瑞恩技术团队抵达现场，质疑机械结构精度，要求第三方公证员进行严格测试。",
+          "info_gap_use": "麦珂预见到维克多·兰斯会针对电子信号进行干扰，因此将原型机置于电磁屏蔽箱中，并故意保留‘校准旋钮’作为诱饵。",
+          "opponent_reaction": "维克多·兰斯在测试中强行调整‘校准旋钮’，试图寻找破绽，结果导致旋钮卡死，反向证明机械结构的自锁稳定性。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市立图书馆报告厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "维克多·兰斯步入报告厅，目光锁定原型机"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_165_MECHANICAL_PROTOTYPE_LOG",
+              "timeline_scope": "current",
+              "purpose": "第三方公证员参考测试日志，验证原型机性能"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯质疑机械结构精度",
+            "第三方公证员开始测试",
+            "维克多·兰斯强行调整‘校准旋钮’",
+            "旋钮卡死，机械结构自锁",
+            "莱昂·周记录数据，确认原型机稳定性",
+            "维克多·兰斯尴尬解释，公证员记录其失误"
+          ],
+          "visible_payoff": "原型机通过测试，机械结构稳定性得到证实，维克多·兰斯的技术质疑被驳回。",
+          "ending": "莱昂·周正式加入‘星火同盟’核心审计组，麦珂与昆廷·琼斯讨论光学投影组件研发。",
+          "must_include": [
+            "电磁屏蔽箱",
+            "校准旋钮卡死",
+            "莱昂·周记录数据"
+          ],
+          "must_not_include": [
+            "电子干扰器",
+            "黑客攻击"
+          ],
+          "detailed_synopsis": "维克多·兰斯带领奥瑞恩技术团队抵达市立图书馆报告厅，质疑机械结构精度，要求第三方公证员进行严格测试。麦珂将原型机置于电磁屏蔽箱中，并故意保留‘校准旋钮’作为诱饵。测试中，维克多·兰斯强行调整‘校准旋钮’，试图寻找破绽，结果导致旋钮卡死，反向证明机械结构的自锁稳定性。莱昂·周记录数据，确认原型机稳定性。维克多·兰斯尴尬解释，公证员记录其失误。莱昂·周正式加入‘星火同盟’核心审计组，麦珂与昆廷·琼斯讨论光学投影组件研发。"
+        }
+      ],
+      "source_macro_sha256": "f57ba01c3856e3f594dea9ebeecea75052cb6cb1680db79def2d851080ff217c"
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1985",
+    "character_states": [
+      "麦珂：健康状态稳定，技术自信增强",
+      "维克多·兰斯：技术声誉受损，急于挽回局面",
+      "莱昂·周：加入‘星火同盟’，决定报考音乐学院"
+    ],
+    "relationship_states": [
+      "麦珂与莱昂·周：信任加深，合作紧密",
+      "麦珂与维克多·兰斯：敌对加剧，技术竞争白热化"
+    ],
+    "rights_and_assets": [
+      "‘声压可视化系统’原型机所有权",
+      "巡演资金安全"
+    ],
+    "health_and_location": [
+      "麦珂：健康，位于市立图书馆报告厅",
+      "维克多·兰斯：健康，位于市立图书馆报告厅"
+    ],
+    "open_threads": [
+      "光学投影组件研发",
+      "1987年‘棱镜之夜’直播事故前置条件"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团技术围猎",
+      "巡演资金链危机"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "光学投影组件研发完成，需立即进入大型场馆实地测试，这将直接触发1987年‘棱镜之夜’直播事故的前置条件。"
+  }
+}

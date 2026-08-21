@@ -1,0 +1,52 @@
+{
+  "generated_by": "qwen",
+  "kind": "chapters_b",
+  "identifier": "MG009",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "df468896f275c9b312f055f8bff9bc2ee3379987cf1f0cea812b1204e956ba98",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-08T19:03:39+08:00",
+      "prompt_sha256": "df468896f275c9b312f055f8bff9bc2ee3379987cf1f0cea812b1204e956ba98",
+      "raw_response_sha256": "84fddecbf43db20123ec6b418f0ebd4e683a44273c4231bf334d8532e550d165",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG009_chapters_b_attempt_01_raw.txt",
+      "validation_failures": [
+        "第88章为事件结算章，必须明确现实得失"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 94.7,
+      "usage": {
+        "input_tokens": 17779,
+        "output_tokens": 6144,
+        "total_tokens": 23923,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-08T19:05:15+08:00",
+      "prompt_sha256": "76b569c8570e4acde97fbbdf73c966fb17b9b92dc6d980490be8b4418cb37b72",
+      "raw_response_sha256": "f1c4205001d4fa4f22676c77dbc3900d87ca73da1d5cd8469d8f46cfe6c0c683",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG009_chapters_b_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 95.938,
+      "usage": {
+        "input_tokens": 24002,
+        "output_tokens": 6228,
+        "total_tokens": 30230,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

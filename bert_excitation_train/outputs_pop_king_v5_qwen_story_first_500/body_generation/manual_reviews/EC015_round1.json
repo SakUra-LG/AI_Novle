@@ -1,0 +1,17 @@
+{
+  "cluster_id": "EC015",
+  "review_round": 1,
+  "reviewed_chapters": [29, 30],
+  "decision": "regenerate_chapter_29_reuse_qwen_chapter_30",
+  "body_manually_edited": false,
+  "root_fixes": [
+    "把与1970年5月冲突的HS-19700823和QJ-MK-19700823统一校正为HS-19700522与QJ-MK-19700521",
+    "把1970年的节能灯规划改为白炽灯并同步250个Neo4j情节族"
+  ],
+  "rejected_candidate_failures": [
+    "焦洞在同章被写成后腰和右膝两个位置",
+    "第一章提前完成第二章主任签字与官方认证结算",
+    "第37章以后才启用的ChronoBadge提前出现",
+    "用指甲背面瞬间写出铅笔字的物理动作不成立"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "cluster_id": "EC010",
+  "chapter_id": 19,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "d9d5076dd82d761def95f181fab8fec716b4d698268b9432d1b73a2c95bf0832",
+  "raw_response_sha256": "61be988715982578c530dae186391bdbfa55fd14585101701633c7d329628093",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 26.371,
+    "usage": {
+      "input_tokens": 4449,
+      "output_tokens": 1152,
+      "total_tokens": 5601,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "chapter_audit": {
+    "han_chars": 1173,
+    "total_chars": 1420,
+    "target_han_range": [
+      1300,
+      1800
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "failures": []
+  },
+  "failures": [],
+  "accepted": true
+}

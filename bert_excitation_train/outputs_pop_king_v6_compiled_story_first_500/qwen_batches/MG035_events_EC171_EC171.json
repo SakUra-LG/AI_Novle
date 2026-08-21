@@ -1,0 +1,268 @@
+{
+  "macro_group_id": "MG035",
+  "event_clusters": [
+    {
+      "cluster_id": "EC171",
+      "chapter_span": [
+        341,
+        342
+      ],
+      "source_event_direction": "前世具体受害：前世卡尔在首映礼展示伪造授权书，麦珂因缺乏原件被迫接受版权剥夺。；本事件独有的前世信息差：重生确认1979年11月17日麦珂正陪玛莎办理监护权，绝未签署文件。；今生提前动作：麦珂提前联系玛莎取出法庭签字簿原件，并锁定录像带存放地。；第341章可见小赢：艾琳在《午夜星轨》预告中暗示纪录片存在关键帧删减漏洞。；第342章新交锋：首映礼现场卡尔展示伪造文件，玛莎当众出示签字簿原件驳斥。；阻力方永久现实损失：卡尔团队信誉崩塌，被行业委员会暂停从业资格两年。；主角现实收益：维拉德图书撤回版权主张，1979年授权书被判定无效。；不可逆结算键：授权书真伪逆转；接回死亡控制主线：切断前世导致麦珂被夺走叙事权的法律链条。",
+      "source_event_direction_sha256": "a3a635d7a9896e831e760581f0671f7143ce6d61b5f4ea6ded2aefe570f108bf",
+      "source_macro_sha256": "f819ec80de9da491d14168638ade3f86b0f30d13c34534dedfce7779ec2fa162",
+      "name": "未剪辑之声：空白授权书的崩塌",
+      "timeline_years": "1997",
+      "main_opponent": "卡尔·霍尔特",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS04"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "卡尔·霍尔特",
+        "玛莎",
+        "艾琳",
+        "瑟琳娜"
+      ],
+      "fictional_obstacle": "维拉德图书伪造的1979年授权书与纪录片关键帧删减，试图将麦珂定义为无主版权人。",
+      "prev_life_tragedy": "前世卡尔在首映礼展示伪造授权书，麦珂因缺乏原件被迫接受版权剥夺，导致叙事权旁落。",
+      "info_gap_from_prev_life": "重生确认1979年11月17日麦珂正陪同玛莎办理监护权，绝不可能签署授权书；知晓录像带存放地及地图卡隐藏数据。",
+      "why_previous_life_failed": "主角缺乏原始法律凭证，且被媒体剪辑误导，无法在公开场合即时反驳。",
+      "preemptive_avoidance": "麦珂提前联系玛莎取出法庭签字簿原件，并锁定录像带存放地，安排艾琳在预告中埋下删减漏洞暗示。",
+      "bait_and_evidence": "卡尔为抢功故意展示伪造文件作为“重磅炸弹”；玛莎当庭出示1979年签字簿原件及法庭录像带。",
+      "comic_villain_behavior": "卡尔·霍尔特在众目睽睽下坚持声称“麦珂已放弃权利”，甚至拿出伪造文件时手抖得差点滑落，面对质疑仍嘴硬称“这是商业机密”，显得滑稽而贪婪。",
+      "villain_loss": "卡尔团队信誉崩塌，被行业委员会暂停从业资格两年，维拉德图书撤回版权主张。",
+      "protagonist_gain": "1979年授权书被判定无效，维拉德图书彻底失去对麦珂作品的控制权，麦珂获得独家数字副本。",
+      "relationship_change": "麦珂与社区工坊建立直接利益共享机制；麦珂与瑟琳娜达成深度信任；玛莎成为麦珂的正式法律证人。",
+      "continuity_writes": [
+        "康拉德不存在于1997年现场，其角色由卡尔·霍尔特替代承担反派功能",
+        "S95-B-RW样带线索保留至后续章节揭露"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_018",
+          "state_key": "truth_narrative_control__extension_EC171",
+          "from": "none",
+          "to": "physically_verified_history",
+          "irreversible": true,
+          "evidence": "COURT_TAPES_1979_NOV_17_ORIGINAL + WITNESS_BOOK_1979",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "truth_narrative_control"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "HOLT_TEAM",
+          "state_key": "industry_standing",
+          "from": "dominant",
+          "to": "suspended_pending_investigation",
+          "irreversible": true,
+          "evidence": "PUBLIC_EXPOSURE_OF_FORGED_DOC",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "ANCHOR_1979_COURT_SESSION"
+      ],
+      "cluster_outcome": "授权书真伪逆转，卡尔团队信誉崩塌，麦珂重获叙事权。",
+      "next_event_hook": "S95-B-RW样带中的医疗录音将成为P08揭露千禧年医疗模型造假的核心物证。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 341,
+          "timeline_start": "1997-12-30",
+          "timeline_end": "1997-12-30",
+          "scene": "银湾市曼哈顿剧院大厅",
+          "chapter_goal": "艾琳通过预告片暗示删减漏洞，为次日对决埋下伏笔；麦珂确认玛莎携带原件到场。",
+          "chapter_title": "裂痕初现",
+          "participants": [
+            "麦珂",
+            "艾琳",
+            "卡尔·霍尔特",
+            "记者团"
+          ],
+          "opening_conflict": "卡尔团队试图在发布会前封锁消息，宣称纪录片“完美还原历史”。",
+          "info_gap_use": "麦珂利用重生记忆，指导艾琳在预告片第3分20秒处故意露出1977年少年镜头的缺失帧，引发观众质疑。",
+          "opponent_reaction": "卡尔愤怒指责艾琳“恶意剪辑”，却不知自己正是依赖这种删减来掩盖伪造事实。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市曼哈顿剧院大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "聚光灯聚焦预告片屏幕"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_341_TRAILER_ANOMALY",
+              "timeline_scope": "current",
+              "display_name": "《午夜星轨》预告片异常帧截图",
+              "kind": "media_clue"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "艾琳在发布会上播放经过特殊处理的预告片，在第3分20秒处画面突然卡顿，显示出一行模糊的‘1977工坊少年’字样后黑屏。",
+            "记者们哗然，纷纷询问为何关键历史镜头缺失。",
+            "卡尔·霍尔特冲上台，强行解释这是“艺术留白”，却被麦珂冷冷打断，指出这是“刻意抹除”。",
+            "麦珂私下向玛莎确认法庭签字簿已随身携带，并安排安保人员确保其安全。",
+            "发布会结束，舆论风向开始微妙转变，卡尔团队陷入焦虑。"
+          ],
+          "visible_payoff": "预告片异常引发公众对纪录片真实性的初步怀疑。",
+          "ending": "卡尔团队虽表面强硬，但内部已出现裂痕，准备次日孤注一掷。",
+          "must_include": [
+            "预告片异常帧",
+            "卡尔的过度反应",
+            "玛莎确认携带原件"
+          ],
+          "must_not_include": [
+            "直接对峙",
+            "证据公开",
+            "技术细节过多"
+          ],
+          "detailed_synopsis": "在《午夜星轨》特别季发布会现场，艾琳按照麦珂的指示，在预告片的高潮部分故意插入一个不自然的卡顿，屏幕上短暂浮现出1977年工坊少年的模糊身影，随即黑屏。这一设计立刻引发了在场媒体的强烈关注，有人质疑这是否是剪辑失误，有人则猜测背后另有隐情。卡尔·霍尔特见状勃然大怒，冲上舞台试图以“艺术处理”为由搪塞过去，但他的慌乱反而坐实了心虚。麦珂在一旁冷眼旁观，趁乱与玛莎交换眼神，确认那份关键的法庭签字簿已安全抵达现场。此时，空气中弥漫着紧张的气息，卡尔团队的每一个动作都显得笨拙而多余，仿佛一只即将被揭穿的狐狸。发布会结束后，卡尔回到后台，对着助理咆哮：“绝不能让他们拿到原件！”但他不知道的是，真正的风暴已在酝酿之中。"
+        },
+        {
+          "chapter_id": 342,
+          "timeline_start": "1997-12-31",
+          "timeline_end": "1997-12-31",
+          "scene": "首映礼主会场",
+          "chapter_goal": "卡尔展示伪造授权书，玛莎当众出示原件驳斥，实现反转清算。",
+          "chapter_title": "真相的审判",
+          "participants": [
+            "麦珂",
+            "卡尔·霍尔特",
+            "玛莎",
+            "法官代表",
+            "媒体团",
+            "瑟琳娜"
+          ],
+          "opening_conflict": "卡尔在纪录片播放至第45分钟时，突然中断影片，展示伪造的1979年授权书，宣称麦珂已放弃版权。",
+          "info_gap_use": "麦珂早已预判此招，提前安排玛莎携带法庭签字簿原件到场，并准备播放1979年11月17日的法庭录像带。",
+          "opponent_reaction": "卡尔见玛莎拿出原件，脸色瞬间惨白，试图抢夺却被保安拦下，最终狼狈不堪。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "首映礼主会场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "投影幕布切换至授权书特写"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [],
+          "action_sequence": [
+            "纪录片正常播放至第45分钟，卡尔突然叫停放映，大屏幕上出现一份伪造的1979年授权书，他得意洋洋地宣称麦珂当年已放弃所有版权。",
+            "全场哗然，观众开始交头接耳，卡尔团队以为胜券在握。",
+            "麦珂缓缓起身，示意玛莎上前。玛莎手持1979年法庭签字簿原件，走到舞台中央，当众展示给所有人看。",
+            "与此同时，艾琳启动备用系统，将1979年11月17日的法庭录像带投射到大屏幕两侧，清晰显示麦珂当时正在陪同玛莎办理监护权，根本不可能签署任何授权书。",
+            "卡尔试图辩解，但面对铁证如山的原件和录像，他的谎言不攻自破，最终被保安请离现场。",
+            "行业委员会代表当场宣布暂停卡尔团队两年从业资格，维拉德图书被迫撤回版权主张。"
+          ],
+          "visible_payoff": "卡尔团队信誉彻底崩塌，麦珂重获叙事权，授权书被判无效。",
+          "ending": "麦珂站在舞台中央，目光坚定地看着台下欢呼的人群，她知道，这场胜利只是开始。",
+          "must_include": [
+            "伪造授权书展示",
+            "玛莎出示原件",
+            "法庭录像带播放",
+            "行业委员会介入"
+          ],
+          "must_not_include": [
+            "暴力冲突",
+            "私人恩怨",
+            "未来科技元素"
+          ],
+          "detailed_synopsis": "卡尔在纪录片播放至第45分钟时，突然中断影片，展示伪造的1979年授权书，宣称麦珂已放弃版权。纪录片正常播放至第45分钟，卡尔突然叫停放映，大屏幕上出现一份伪造的1979年授权书，他得。全场哗然，观众开始交头接耳，卡尔团队以为胜券在握。麦珂缓缓起身，示意玛莎上前。玛莎手持1979年法庭签字簿原件，走到舞台中央，当众展示给所有。与此同时，艾琳启动备用系统，将1979年11月17日的法庭录像带投射到大屏幕两侧，清晰显示。卡尔团队信誉彻底崩塌，麦珂重获叙事权，授权书被判无效。麦珂站在舞台中央，目光坚定地看着台下欢呼的人群，她知道，这场胜利只是开始。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_337_MEMO_SIGNING",
+              "timeline_scope": "previous_life",
+              "purpose": "对比证明玛莎监护权合法性"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {
+        "character": "麦珂",
+        "state": "精神饱满，掌握主动权"
+      },
+      {
+        "character": "卡尔·霍尔特",
+        "state": "信誉扫地，面临行业调查"
+      },
+      {
+        "character": "玛莎",
+        "state": "正式成为麦珂的法律证人"
+      },
+      {
+        "character": "艾琳",
+        "state": "接管《午夜星轨》特别季策划权"
+      },
+      {
+        "character": "瑟琳娜",
+        "state": "态度软化，准备接受非传统教育"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": "麦珂-卡尔",
+        "status": "彻底决裂，失去单方面解释权"
+      },
+      {
+        "pair": "麦珂-社区工坊",
+        "status": "建立直接利益共享机制"
+      },
+      {
+        "pair": "麦珂-瑟琳娜",
+        "status": "达成深度信任"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset": "1979年授权书",
+        "status": "被法院判定无效"
+      },
+      {
+        "asset": "《静默增益》地图卡",
+        "status": "获得法律认可的公益属性"
+      },
+      {
+        "asset": "四十三处工坊",
+        "status": "实现自主运营，收益注入社区基金"
+      },
+      {
+        "asset": "1979年法庭录像带",
+        "status": "麦珂持有独家数字副本"
+      }
+    ],
+    "health_and_location": [
+      {
+        "character": "麦珂",
+        "health": "最佳精神状态，无过度劳累迹象"
+      },
+      {
+        "location": "银湾市",
+        "status": "事件发生地"
+      }
+    ],
+    "open_threads": [
+      "维克多的‘全介质抹除计划’即将启动",
+      "S95-B-RW样带中的医疗模型造假线索待挖掘"
+    ],
+    "resolved_threads": [
+      "1979年授权书真伪问题",
+      "麦珂叙事权归属问题"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。"
+  }
+}

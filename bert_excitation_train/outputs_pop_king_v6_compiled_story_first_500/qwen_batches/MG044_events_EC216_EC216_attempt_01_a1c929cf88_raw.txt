@@ -1,0 +1,220 @@
+{
+  "macro_group_id": "MG044",
+  "event_clusters": [
+    {
+      "cluster_id": "EC216",
+      "chapter_span": [431, 432],
+      "source_event_direction": "legal_procedure_counterattack",
+      "source_event_direction_sha256": "8f3a9c2b1d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a",
+      "source_macro_sha256": "1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e2f",
+      "name": "物理介质审判：校准失效与呼吸声证伪",
+      "timeline_years": "2005-2006",
+      "main_opponent": "巴里·索恩（奥瑞恩集团代理律师）",
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["CS_216_EVIDENCE_CHAIN", "CS_216_DEATH_PREMONITION"],
+      "foreshadow_ids": ["FS_209_HEART_ATTACK"],
+      "main_characters": ["麦珂", "黛安娜", "苏菲亚", "巴里·索恩", "主审法官"],
+      "fictional_obstacle": "奥瑞恩集团利用剪辑过的模糊视频，伪造麦珂在1999-2003年间发病失控的假象，试图申请司法托管以冻结曲库。",
+      "prev_life_tragedy": "前世因无法提供原始设备日志，被剪辑视频误导，导致曲库被临时托管三年，资产流失严重，且被迫签署不平等协议。",
+      "info_gap_from_prev_life": "麦珂确切知晓托马斯机构在1999年11月至2003年4月期间，关键脑波监测仪器的校准记录完全缺失，且该时段仪器存在系统性偏差。",
+      "why_previous_life_failed": "前世依赖数字备份和口头陈述，未掌握物理介质的底层维护数据，导致在法庭上被对方技术细节击溃。",
+      "preemptive_avoidance": "黛安娜提前调取托马斯机构的原始纸质维护日志与机械计时戳，锁定对方视频的时间轴造假漏洞，并准备原始未剪辑磁带。",
+      "bait_and_evidence": "巴里抛出剪辑视频作为诱饵，试图引导法官关注“行为异常”；麦珂团队抛出物理日志和原始磁带作为铁证，反制“精神失能”指控。",
+          "comic_villain_behavior": "巴里在庭上急于辩解，竟当众撕毁一份无关紧要的文件试图掩盖时间戳矛盾，结果纸张碎片卡在投影仪中，引发旁听席哄笑，暴露其心虚。",
+      "villain_loss": "奥瑞恩集团提交的虚假医疗报告被法院标记为无效证据，巴里·索恩的律师团队信誉在行业内受损，无法再以此类手段攻击他人。",
+      "protagonist_gain": "麦珂团队成功保全了曲库控制权，防止资产在裁决前被转移或冻结，确立了程序性反制的法理先例。",
+      "relationship_change": "黛安娜从执行者转变为首席战略家，麦珂对团队的信任度达到顶峰，双方默契形成绝对防御闭环。",
+      "continuity_writes": [
+        "确认托马斯机构1999-2003年仪器校准失效的具体年份与月份，作为核心证据链起点。",
+        "记录巴里在法庭上的滑稽失误，为后续舆论战埋下伏笔。",
+        "铺垫神秘挂号信的接收，暗示死亡威胁已从法律转向生理。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights:RIGHT_VL_TRUST_EXECUTION",
+          "entity_id": "mental_capacity_status__EC216",
+          "state_key": "mental_capacity_status__extension_EC211",
+          "from": "under_suspicion",
+          "to": "legally_verified_clean",
+          "irreversible": true,
+          "evidence": "MAINTENANCE_LOG_1999_2003_AND_ORIGINAL_TAPE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation:LEGAL_INDUSTRY",
+          "entity_id": "ORION_LAW_TEAM",
+          "state_key": "credibility_status",
+          "from": "trusted_expert",
+          "to": "discredited_fraudster",
+          "irreversible": true,
+          "evidence": "CUT_VIDEO_EXPOSED_AS_FAKE",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HA_2005_SUMMER_COURT_SESSION"],
+      "cluster_outcome": "麦珂在法律层面彻底赢得‘清醒’定义权，曲库安全落入信托；奥瑞恩集团的虚假指控被彻底粉碎。",
+      "next_event_hook": "裁决书送达当日，麦珂收到神秘挂号信含2009年3月18日心脏内科预约单，迫使麦珂必须进入P10阶段，提前布局应对‘永恒星光’计划的终极陷阱。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 431,
+          "timeline_start": "2005年夏，上午9:00",
+          "timeline_end": "2005年夏，下午14:30",
+          "scene": "联邦地方法院第12号法庭",
+          "chapter_goal": "当庭展示设备校准失效记录，迫使法官暂停对麦珂行为能力的初步质疑。",
+          "chapter_title": "失效的校准器",
+          "participants": ["麦珂", "黛安娜", "巴里·索恩", "主审法官", "书记员"],
+          "opening_conflict": "巴里出示剪辑视频，声称麦珂在关键时段出现精神崩溃，请求立即启动司法托管。",
+          "info_gap_use": "黛安娜引用麦珂提供的信息，指出托马斯机构在1999年11月至2003年4月间仪器校准记录缺失，直接攻击视频可信度。",
+          "opponent_reaction": "巴里试图用“技术误差”搪塞，却被黛安娜当场要求出示原始校准日志，他支支吾吾无法提供。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法庭被告席",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里播放视频，画面模糊，麦珂动作怪异。"
+            },
+            {
+              "sequence": 2,
+              "location": "法庭证据台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "黛安娜拿出泛黄的纸质日志，展示机械计时戳。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_431_LOG_EXHIBIT",
+              "timeline_scope": "current",
+              "display_name": "《托马斯机构1999-2003年仪器维护原始日志》",
+              "kind": "forensic_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_429_MEDICAL_LOG",
+              "timeline_scope": "current",
+              "purpose": "交叉验证压力传感器读数异常。"
+            }
+          ],
+          "action_sequence": [
+            "巴里播放剪辑视频，观众哗然，麦珂面无表情。",
+            "黛安娜起身，冷静指出视频时间戳与仪器校准记录的矛盾。",
+            "法官要求巴里出示原始校准文件，巴里慌乱翻找无果。",
+            "黛安娜展示原始日志，显示关键时段仪器处于“未校准”状态。",
+            "法官宣布暂停对麦珂行为能力的初步质疑，要求重新鉴定。"
+          ],
+          "visible_payoff": "法官暂时驳回托管申请，巴里的谎言在物理证据面前不攻自破。",
+          "ending": "庭审休庭，巴里面色惨白，麦珂眼神坚定。",
+          "must_include": ["纸质日志的物理质感", "机械计时戳的特写", "巴里的慌乱反应"],
+          "must_not_include": ["任何未来科技词汇", "康拉德的出现"],
+          "detailed_synopsis": "听证会首日，气氛凝重。巴里·索恩作为奥瑞恩集团代表，自信满满地播放了一段经过剪辑的视频，视频中麦珂似乎处于极度混乱的状态，以此证明其精神失能，申请司法托管。然而，黛安娜早已做好准备。她站起身，没有反驳视频内容，而是直接指向视频中的时间戳。她指出，根据麦珂提供的信息，托马斯机构在1999年11月至2003年4月期间的脑波监测仪器从未进行过有效校准，这意味着所有基于该时段数据的结论都是无效的。她当庭展示了从档案室调取的原始纸质维护日志，上面清晰记录了当时的校准缺失情况以及机械计时戳的异常。巴里试图辩解称这是“技术误差”，但在法官要求出示原始校准文件时，他却支支吾吾，甚至因为过于紧张而撕碎了一份无关文件，碎片卡在投影仪中，引来旁听席一阵哄笑。最终，法官不得不宣布暂停对麦珂行为能力的初步质疑，要求重新鉴定。这一小胜让麦珂团队士气大振，也为后续的反击奠定了基础。"
+        },
+        {
+          "chapter_id": 432,
+          "timeline_start": "2005年夏，下午15:00",
+          "timeline_end": "2005年夏，下午17:30",
+          "scene": "联邦地方法院第12号法庭",
+          "chapter_goal": "巴里试图用剪辑片段辩解，却被苏菲亚播放的原始未剪辑音频中清晰的呼吸声当场证伪。",
+          "chapter_title": "呼吸声的审判",
+          "participants": ["麦珂", "黛安娜", "苏菲亚", "巴里·索恩", "主审法官", "证人席上的录音师"],
+          "opening_conflict": "巴里试图通过解释视频剪辑的合理性来挽回局面，声称麦珂当时确实有异常行为。",
+          "info_gap_use": "苏菲亚播放原始未剪辑音频，其中包含麦珂在案发时段的清晰呼吸声，证明其意识清醒，能够控制身体。",
+          "opponent_reaction": "巴里脸色铁青，试图打断播放，但被法官制止，最终承认证据无效。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法庭证据台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里试图解释视频剪辑原因。"
+            },
+            {
+              "sequence": 2,
+              "location": "法庭中央",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "苏菲亚连接原始磁带播放器，全场寂静。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_425_SILENCE_AUDIO",
+              "timeline_scope": "previous_life",
+              "purpose": "作为对比，证明原始音频的完整性。"
+            }
+          ],
+          "action_sequence": [
+            "巴里试图解释视频剪辑是为了“突出症状”，声称麦珂当时确实有异常行为。",
+            "苏菲亚起身，表示需要播放原始未剪辑的音频作为补充证据。",
+            "法庭内一片寂静，苏菲亚按下播放键，清晰可辨的麦珂呼吸声响起。",
+            "巴里试图阻止，但被法官严厉制止。",
+            "法官认定原始物理介质优于数字剪辑证据，正式标记奥瑞恩提交的虚假医疗报告为无效证据。"
+          ],
+          "visible_payoff": "巴里的辩解彻底失败，奥瑞恩集团的虚假指控被彻底粉碎，麦珂团队确立法理优势。",
+          "ending": "庭审结束，麦珂走出法庭，收到一封神秘挂号信，信封上写着2009年3月18日的心脏内科预约单。",
+          "must_include": ["原始音频的清晰度", "巴里的绝望表情", "神秘挂号信的细节"],
+          "must_not_include": ["任何未来科技词汇", "康拉德的出现"],
+          "detailed_synopsis": "庭审继续，巴里·索恩见势不妙，试图通过解释视频剪辑的合理性来挽回局面，声称麦珂当时确实有异常行为，只是视频被剪辑得不够完整。然而，苏菲亚早已准备好了一张原始未剪辑的磁带。她走到证据台前，将磁带放入播放器，全场瞬间安静下来。随着磁带的转动，一段清晰可辨的麦珂呼吸声回荡在法庭内，那声音平稳、有力，完全不像是一个精神失能的人发出的。巴里脸色铁青，试图打断播放，但被法官严厉制止。法官当场认定原始物理介质优于数字剪辑证据，正式标记奥瑞恩集团提交的虚假医疗报告为无效证据。巴里的律师团队信誉在行业内受损，再也无法以此类手段攻击他人。庭审结束后，麦珂走出法庭，阳光刺眼。她注意到门口有一个身穿黑色西装的人递给她一封挂号信。她打开信封，里面是一张2009年3月18日的心脏内科预约单。麦珂心中一凛，意识到敌人已经不再满足于法律层面的攻击，而是开始针对她的生命本身布局。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2005",
+    "character_states": [
+      {
+        "character": "麦珂",
+        "state": "清醒且警觉",
+        "reason": "成功反制司法攻击，但收到死亡预告，进入高度戒备状态。"
+      },
+      {
+        "character": "黛安娜",
+        "state": "首席战略家",
+        "reason": "主导证据链构建，展现卓越的法律战术能力。"
+      },
+      {
+        "character": "巴里·索恩",
+        "state": "信誉破产",
+        "reason": "虚假证据被揭穿，行业声誉受损。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": "麦珂 & 黛安娜",
+        "status": "绝对信任",
+        "reason": "共同经历生死博弈，默契达到顶峰。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset": "曲库所有权",
+        "status": "已保全",
+        "reason": "司法托管申请被驳回，资产未被冻结。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "subject": "麦珂",
+        "status": "健康但受威胁",
+        "reason": "身体无恙，但收到2009年心脏内科预约单，面临生命威胁。"
+      }
+    ],
+    "open_threads": [
+      "死亡预告信件背后的真正意图",
+      "P10阶段应急预案的具体实施"
+    ],
+    "resolved_threads": [
+      "司法托管申请",
+      "精神失能指控"
+    ],
+    "introduced_characters": [
+      "神秘挂号信发送者（身份未知）"
+    ],
+    "next_pressure": "随着司法途径的彻底失败，奥瑞恩集团将启动‘永恒星光’计划，麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题，同时应对资本市场的全面围剿。"
+  }
+}

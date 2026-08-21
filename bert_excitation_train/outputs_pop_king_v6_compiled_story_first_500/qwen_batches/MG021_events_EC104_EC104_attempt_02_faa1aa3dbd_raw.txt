@@ -1,0 +1,187 @@
+{
+  "macro_group_id": "MG021",
+  "event_clusters": [
+    {
+      "cluster_id": "EC104",
+      "chapter_span": [207, 208],
+      "source_event_direction": "重生预知伪造报告源头，利用打字机物理特征反杀奥瑞恩法律陷阱。",
+      "source_event_direction_sha256": "a7f3c9e2b1d4f8a6c5e9d2b7a4f1c8e5d3b6a9f2c7e4d1b8a5f3c6e9d2b7a4f1",
+      "source_macro_sha256": "b8e4d1c7f3a6b9e2d5c8f1a4b7e0d3c6f9a2b5e8d1c4f7a0b3e6d9c2f5a8b1e4",
+      "name": "伪造证据溯源与身份逆转",
+      "timeline_years": "1987—1989",
+      "main_opponent": "奥瑞恩集团法务部及首席医疗顾问",
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["EC101_三方签字生效", "EC102_随机座次固化"],
+      "foreshadow_ids": ["FS03", "FS04"],
+      "main_characters": ["麦珂", "苏菲亚", "玛莎", "莉薇娅", "瑟琳娜"],
+      "fictional_obstacle": "奥瑞恩利用一份声称由‘权威心理专家’签署的评估报告，将麦珂定性为‘精神失控、存在高危自毁倾向’，试图依据此报告强制中止巡演并剥夺其医疗决策权。",
+      "prev_life_tragedy": "前世麦珂因无法自证清白，被该报告永久贴上‘失控艺人’标签，导致创作权被剥夺，最终在精神孤立中郁郁而终。",
+      "info_gap_from_prev_life": "知晓1990年该份伪造报告实际使用的打字机型号为IBM Selectric II，且色带磨损会在特定字母（如'M'和'O'）上留下独特的横向断裂痕迹。",
+      "why_previous_life_failed": "前世团队仅依赖口头辩解，未掌握物理层面的物证鉴定技术，且奥瑞恩利用信息差垄断了医疗解释权。",
+      "preemptive_avoidance": "重生后，苏菲亚提前携带从旧货市场回收的同款色带样本，并在听证会前一周秘密调取了二手办公设备市场的维修日志，锁定使用该型号机器且近期有异常打印记录的店铺。",
+      "bait_and_evidence": "苏菲亚在法庭上展示了一份由同款IBM Selectric II机器、同批次色带打印的测试样本，其上'M'和'O'字母的断裂痕迹与涉案报告上的瑕疵完全吻合，形成铁证。",
+      "comic_villain_behavior": "奥瑞恩法务总监在证据确凿时仍嘴硬称是‘巧合’，并试图当场销毁原始记录本，却因慌乱将微缩胶片备份盒掉落在地，被苏菲亚早有准备的录像设备完整记录。",
+      "villain_loss": "奥瑞恩核心造假人员名单被公开标注，一百二十七名参与伪造或纵容造假的人员面临行业终身禁入风险，集团信誉彻底破产。",
+      "protagonist_gain": "粉碎‘失控艺人’标签，麦珂重获完整法律层面的医疗与艺术决策自主权，确立‘健康备忘录’的法律效力。",
+      "relationship_change": "麦珂与团队形成不可分割的利益共同体，奥瑞恩集团被剥离对艺人的单方面解释权，苏菲亚成为团队核心智囊。",
+      "continuity_writes": [
+        "第207章：苏菲亚出示打字机样本，法庭哗然，奥瑞恩代表试图以‘商业机密’为由阻挠鉴定，被法官驳回。",
+        "第208章：奥瑞恩法务团队试图销毁原始记录，被苏菲亚展示的微缩胶片备份当众揭穿，名单曝光，全场震惊。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_010",
+          "state_key": "mental_health_narrative_control__extension_EC104",
+          "from": "oppressor_unilateral_authority",
+          "to": "artist_independent_verification",
+          "irreversible": true,
+          "evidence": "ART_207_TYPEWRITER_SAMPLE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "organization",
+          "entity_id": "ORG_ORION_LEGAL",
+          "state_key": "credibility_status__extension_EC104",
+          "from": "trusted_medical_authority",
+          "to": "fraudulent_exposed_entity",
+          "irreversible": true,
+          "evidence": "ART_208_MICROFILM_BACKUP",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "character",
+          "entity_id": "ID_CHAR_SOPHIA",
+          "state_key": "team_core_intelligence_role__extension_EC104",
+          "from": "investigative_supporter",
+          "to": "forensic_lead_expert",
+          "irreversible": true,
+          "evidence": "ART_207_TYPEWRITER_SAMPLE",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1989_RAIN_STORM", "HIST_1990_FORGED_REPORT"],
+      "cluster_outcome": "EC104_伪造证据溯源",
+      "next_event_hook": "‘今日健康备忘录’手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款，迫使奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 207,
+          "timeline_start": "1989年8月20日 上午 09:00",
+          "timeline_end": "1989年8月20日 下午 14:00",
+          "scene": "雾河城高级法院第3号听证庭",
+          "chapter_goal": "利用重生记忆中的打字机特征，当庭证明奥瑞恩提交的‘心理评估报告’系近期伪造。",
+          "chapter_title": "墨水里的谎言",
+          "participants": ["麦珂", "苏菲亚", "主审法官", "奥瑞恩法务总监", "玛莎", "莉薇娅"],
+          "opening_conflict": "奥瑞恩提交一份盖有公章的心理评估报告，指控麦珂‘精神不稳定’，要求立即暂停演出并接管其医疗决策权。",
+          "info_gap_use": "苏菲亚利用重生记忆，提前在二手市场寻得同款IBM Selectric II打字机，并获取了该机器特有的色带磨损样本。",
+          "opponent_reaction": "奥瑞恩法务总监轻蔑一笑，认为这只是普通的印刷误差，拒绝接受苏菲亚提出的比对申请，坚称报告真实有效。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法庭审判席",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "苏菲亚起身走向证人席，手中拿着一个密封的玻璃罐。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_207_TYPEWRITER_SAMPLE",
+              "timeline_scope": "current",
+              "display_name": "IBM Selectric II 色带磨损比对样本",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_199_FAKE_FAX",
+              "timeline_scope": "previous_life",
+              "purpose": "作为前世受害记忆的参照物，确认本次伪造手法一致。"
+            }
+          ],
+          "action_sequence": [
+            "苏菲亚取出玻璃罐中的色带样本，将其置于放大镜下展示给法官和陪审团。",
+            "她指出样本上'M'和'O'字母边缘的特定横向断裂，与涉案报告上的字迹瑕疵完全一致。",
+            "奥瑞恩法务总监试图打断，声称这是‘巧合’，但苏菲亚当场用同款机器现场打印了一段文字进行即时比对。",
+            "打印出的文字完美复现了报告上的所有瑕疵，法庭内一片哗然。"
+          ],
+          "visible_payoff": "法官初步采信苏菲亚的证据，下令暂停对麦珂的‘精神控制’程序，并要求奥瑞恩提供原始打印底稿。",
+          "ending": "奥瑞恩代表面色苍白，意识到计划败露，开始私下联系技术人员试图销毁原始记录。",
+          "must_include": ["IBM Selectric II 打字机型号", "色带磨损特征比对", "现场打印演示"],
+          "must_not_include": ["现代科技词汇", "内心独白解释", "未来预言细节"],
+          "detailed_synopsis": "1989年8月20日，雾河城法院。奥瑞恩法务总监拿出那份致命的心理评估报告，企图将麦珂钉死在‘失控艺人’的耻辱柱上。麦珂静坐一旁，目光冷峻。苏菲亚从容起身，从怀中取出一个特制的玻璃罐，里面装着从二手市场淘来的IBM Selectric II打字机色带样本。她指着样本上'M'和'O'字母边缘那独特的横向断裂，声音清亮：“各位，这不是印刷错误，这是这台机器独有的‘指纹’。”奥瑞恩代表嗤之以鼻，坚称这是巧合。苏菲亚冷笑一声，示意助手推上一台备用的同款打字机，当场打印了一段包含上述字母的文本。当那张纸展开，那些熟悉的断裂痕迹赫然在目，与涉案报告分毫不差。法庭瞬间炸锅，法官震惊地看向奥瑞恩代表。对方冷汗直流，试图以“商业机密”为由阻止进一步调查，却被法官严厉驳回。苏菲亚趁势要求查看原始打印底稿，奥瑞恩代表眼神闪烁，匆匆离场，却不知自己已落入圈套。"
+        },
+        {
+          "chapter_id": 208,
+          "timeline_start": "1989年8月20日 下午 14:30",
+          "timeline_end": "1989年8月20日 晚上 19:00",
+          "scene": "法院外广场及临时媒体发布会现场",
+          "chapter_goal": "揭露奥瑞恩试图销毁证据的丑闻，彻底粉碎其信誉，确立麦珂的法律胜利。",
+          "chapter_title": "微缩胶片的审判",
+          "participants": ["麦珂", "苏菲亚", "奥瑞恩法务团队", "记者群", "玛莎", "瑟琳娜"],
+          "opening_conflict": "奥瑞恩法务团队在休庭期间试图潜入档案室销毁原始记录，被苏菲亚提前部署的监控发现。",
+          "info_gap_use": "苏菲亚早已预判对方会销毁证据，提前制作了微缩胶片备份，并安排了媒体在场见证。",
+          "opponent_reaction": "奥瑞恩法务总监在众目睽睽之下被当场抓获，试图抢夺胶片未果，场面一度混乱。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法院档案室外走廊",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "苏菲亚带领一群记者突然出现在走廊尽头。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_208_MICROFILM_BACKUP",
+              "timeline_scope": "current",
+              "purpose": "作为奥瑞恩销毁证据的直接铁证，用于公开审判。"
+            }
+          ],
+          "action_sequence": [
+            "苏菲亚带领记者群冲出，正好撞见奥瑞恩法务人员试图将一叠文件扔进碎纸机。",
+            "她高举手中的微缩胶片备份，大声宣读上面的内容，那是奥瑞恩内部关于伪造报告的会议记录和人员名单。",
+            "奥瑞恩法务总监试图抢夺胶片，却在推搡中失手掉落，被苏菲亚稳稳接住。",
+            "记者们蜂拥而上，闪光灯此起彼伏，一百二十七名造假人员的名字被公之于众。"
+          ],
+          "visible_payoff": "奥瑞恩集团信誉崩塌，一百二十七名核心造假人员被行业列入黑名单，麦珂彻底洗清“失控艺人”污名。",
+          "ending": "麦珂手持手签版“今日健康备忘录”，在众人的欢呼声中走出法院，正式开启行业新标准制定者之路。",
+          "must_include": ["微缩胶片备份", "销毁证据现场", "一百二十七人名单曝光"],
+          "must_not_include": ["现代通讯工具", "过度煽情描写", "法律条文堆砌"],
+          "detailed_synopsis": "午后，阳光刺眼。奥瑞恩法务总监在休庭间隙，急匆匆地带着两名手下冲向档案室，企图销毁那份刚刚被证实为伪造的报告底稿。然而，他们刚走到走廊拐角，就被苏菲亚带领的一群记者拦住了去路。苏菲亚高举一卷微缩胶片，上面清晰记录着奥瑞恩高层密谋伪造报告的会议录音和人员名单。“你们想销毁证据？晚了！”她高声喊道。奥瑞恩总监脸色惨白，伸手去抢，却因慌乱将胶片盒摔在地上，滚到了苏菲亚脚边。她捡起胶片，当场向媒体播放了其中的关键片段。闪光灯疯狂闪烁，一百二十七名参与造假的奥瑞恩员工名字被逐一念出，整个行业为之震动。奥瑞恩总监瘫软在地，看着眼前这一幕，终于明白自己彻底输了。麦珂此时缓缓走出人群，手中紧紧握着那份手签版的“今日健康备忘录”，脸上带着前所未有的自信与从容。他对着镜头说道：“从今天起，我的健康，由我说了算。”"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1989",
+    "character_states": [
+      {"entity_id": "ID_CHAR_MAKE", "state_key": "legal_health_authority_restored", "status": "gained_full_decision_power"},
+      {"entity_id": "ID_CHAR_SOPHIA", "state_key": "forensic_expert_status_confirmed", "status": "promoted_to_core_team"}
+    ],
+    "relationship_states": [
+      {"entity_id": "REL_TEAM_ORION", "state_key": "trust_governance_reversed", "status": "orion_excluded_from_medical_decisions"}
+    ],
+    "rights_and_assets": [
+      {"entity_id": "RIGHT_VL_010", "state_key": "mental_health_narrative_control", "status": "independent_verified"},
+      {"entity_id": "ASSET_ORION_REPUTATION", "state_key": "credibility_destroyed", "status": "permanent_loss"}
+    ],
+    "health_and_location": [
+      {"entity_id": "HEALTH_STATUS_MAKE", "state_key": "mental_clarity_secured", "status": "no_longer_labeled_unstable"}
+    ],
+    "open_threads": [
+      "奥瑞恩集团转向财务做空手段",
+      "1991年《家庭治理宪章》医疗章节制定"
+    ],
+    "resolved_threads": [
+      "奥瑞恩利用伪造报告剥夺麦珂权利的计划",
+      "麦珂“失控艺人”标签的合法性危机"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "奥瑞恩集团因信誉破产，将采取更隐蔽的财务手段进行反击，同时行业内将围绕新的医疗标准展开新一轮博弈。"
+  }
+}

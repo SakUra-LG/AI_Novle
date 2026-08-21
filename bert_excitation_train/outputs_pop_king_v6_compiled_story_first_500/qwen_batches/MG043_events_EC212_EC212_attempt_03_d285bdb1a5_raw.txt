@@ -1,0 +1,187 @@
+{
+  "macro_group_id": "MG043",
+  "event_clusters": [
+    {
+      "cluster_id": "EC212",
+      "chapter_span": [423, 424],
+      "source_event_direction": "{\"cluster_id\": \"EC212\", \"chapter_span\": [423, 424], \"opposition_type\": \"institutional\", \"event_type\": \"contract_rights\", \"solution_type\": \"negotiation\", \"death_chain_role\": \"advance\", \"previous_life_harm\": \"版权交割因法律纠纷停滞，曲库收益被冻结，信托计划搁浅。\", \"unique_prev_life_info\": \"麦珂知晓对方必在2005年夏发起攻势，提前准备完整设备维护日志。\", \"preemptive_action\": \"苏菲亚向五十七家地方日报寄出裁决书复印件与空白明信片，引导公众关注程序正义。\", \"chapter_one_small_win\": \"媒体集中报道‘设备校准失效’细节，舆论压力迫使奥瑞恩放弃拖延战术。\", \"chapter_two_showdown\": \"联邦法官当庭宣读‘仅确认清醒’裁决，拒绝奥瑞恩提出的二次评估请求。\", \"opponent_permanent_loss\": \"奥瑞恩集团因恶意诉讼导致声誉受损，股价单日下跌百分之三。\", \"protagonist_concrete_gain\": \"曲库正式完成向‘麦珂创作信托’的法律交割，资金流恢复自主控制。\", \"irreversible_outcome_key\": \"法律层面彻底赢得‘清醒’定义权，曲库安全落入信托不可逆转。\", \"death_chain_connection\": \"胜利后收到神秘挂号信，内含2009年3月18日心脏内科预约单。\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456",
+      "source_macro_sha256": "fedcba0987654321fedcba0987654321fedcba0987654321fedcba0987654321",
+      "name": "清醒即审判：从设备校准到信托交割",
+      "timeline_years": "2005-2006",
+      "main_opponent": "巴里·斯特林（代理律师）",
+      "opposition_type": "institutional",
+      "event_type": "contract_rights",
+      "solution_type": "negotiation",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["EC211", "EC213"],
+      "foreshadow_ids": ["ART_409_DEATH_BAIT"],
+      "main_characters": ["麦珂", "黛安娜", "巴里·斯特林", "联邦法官", "苏菲亚"],
+      "fictional_obstacle": "奥瑞恩集团利用巴里剪辑的虚假脑波监测片段，试图以‘精神失能’为由再次申请司法托管，意图永久冻结曲库资产。",
+      "prev_life_tragedy": "前世麦珂因无法提供设备校准原始记录，被法庭采信了巴里剪辑的‘异常数据’，导致曲库被冻结三年，信托计划流产，最终在绝望中猝死。",
+      "info_gap_from_prev_life": "麦珂确切知晓托马斯机构在1999年至2003年间的关键检测时段仪器校准失效的具体年份与月份，且清楚巴里惯用剪辑手段伪造‘精神失常’假象的时间点。",
+      "why_previous_life_failed": "前世麦珂缺乏物理介质证据链，仅凭口供和现代数字备份被篡改，无法反驳巴里对模拟信号的恶意剪辑。",
+      "preemptive_avoidance": "重生后，麦珂指令黛安娜调取并公证了1999-2003年的纸质维护日志原件，同时苏菲亚提前将关键证据副本通过挂号信寄往五十七家地方日报，构建舆论防火墙。",
+      "bait_and_evidence": "巴里抛出剪辑版视频作为诱饵；麦珂亮出带有机械计时戳的原始磁带、1999-2003年托马斯机构的纸质校准日志（含缺失月份的红色批注）及第三方审计摘要。",
+      "comic_villain_behavior": "巴里在庭上坚持声称‘剪辑是为了突出患者情绪波动’，并试图用复杂的电子术语混淆视听，结果被法官当场打断，其手中展示的‘关键证据’因缺少机械计时戳而被视为废片，引得旁听席哄笑。",
+      "villain_loss": "奥瑞恩集团因恶意诉讼导致声誉受损，股价单日下跌百分之三；巴里失去法官信任，其团队提交的三份关键证词被法庭直接剔除，无法再参与核心决策。",
+      "protagonist_gain": "曲库正式完成向‘麦珂创作信托’的法律交割，资金流恢复自主控制；麦珂在法律层面彻底赢得‘清醒’定义权。",
+      "relationship_change": "黛安娜正式接管法务对抗核心，成为麦珂最坚实的后盾；麦珂对黛安娜的信任度提升至最高级；昆廷安心养病无后顾之忧。",
+      "continuity_writes": ["麦珂在胜诉当晚收到神秘挂号信，内附2009年3月18日心脏内科预约单，意识到敌人针对‘猝死’节点的布局已启动。", "康拉德未出现在今生2005年的现场，其角色由虚构的对手维克多（家族势力边缘化者）替代，避免时间线错误。"],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_TRUST_EXECUTION",
+          "state_key": "mental_capacity_status__final_EC212",
+          "from": "under_legal_challenge",
+          "to": "legally_verified_clean",
+          "irreversible": true,
+          "evidence": "MAINTENANCE_LOG_1999_2003_AND_ORIGINAL_TAPE",
+          "effect_type": "protagonist_gain",
+          "source_domain": "rights:RIGHT_VL_TRUST_EXECUTION",
+          "source_entity_id": "mental_capacity_status",
+          "source_state_key": "mental_capacity_status"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "ORION_LEGAL_TEAM",
+          "state_key": "court_discredited_final",
+          "from": "high_trust_in_fabrication",
+          "to": "zero_trust_with_evidence_rejection",
+          "irreversible": true,
+          "evidence": "REJECTED_WITNESS_TESTIMONIES",
+          "effect_type": "villain_loss",
+          "source_domain": "reputation:ORION_LEGAL_TEAM",
+          "source_entity_id": "barry_sterling_credibility"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_2005_SUMMER_HEATWAVE"],
+      "cluster_outcome": "麦珂在法律层面彻底赢得‘清醒’定义权，曲库安全落入信托不可逆转；奥瑞恩集团因恶意诉讼导致声誉受损，股价单日下跌百分之三。",
+      "next_event_hook": "胜利后收到神秘挂号信，内含2009年3月18日心脏内科预约单，迫使麦珂必须进入P10阶段，提前布局应对‘永恒星光’计划的终极陷阱。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 423,
+          "timeline_start": "2005年7月12日",
+          "timeline_end": "2005年7月12日",
+          "scene": "纽约曼哈顿联邦法院外广场",
+          "chapter_goal": "利用舆论压力迫使奥瑞恩放弃拖延战术，公开揭露设备校准失效真相。",
+          "chapter_title": "第423章：校准表的红色批注",
+          "participants": ["麦珂", "黛安娜", "苏菲亚", "巴里·斯特林", "记者团"],
+          "opening_conflict": "奥瑞恩律师团试图在开庭前最后一刻提交新的‘补充鉴定材料’，企图制造混乱。",
+          "info_gap_use": "麦珂预判巴里会在此时抛出剪辑视频，提前安排苏菲亚向五十七家地方日报发送了包含‘设备校准失效’详情的空明信片和裁决书复印件。",
+          "opponent_reaction": "巴里在庭外试图拦截记者，却发现自己精心准备的‘新证据’被苏菲亚提前发布的‘旧日志’细节完全覆盖，陷入被动解释的尴尬境地。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法院外广场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "暴雨初歇，记者云集"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_423_MAIL_BATCH_FINAL",
+              "timeline_scope": "current",
+              "display_name": "《五十七城统一投递信封组（含校准日志摘要）》",
+              "kind": "physical_correspondence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_417_MAIL_BATCH",
+              "timeline_scope": "current",
+              "purpose": "作为苏菲亚执行预置策略的物理载体"
+            }
+          ],
+          "action_sequence": [
+            "苏菲亚带领志愿者向聚集的记者分发印有‘1999-2003年校准失效’字样的空白明信片，引导舆论聚焦程序正义。",
+            "巴里试图辩解，但记者们手持的报纸头条已全是关于‘设备老化’的报道，他被迫承认无法提供原始校准记录。",
+            "麦珂在庭外接受简短采访，冷静指出‘没有校准记录的证据就是废纸’，确立道德高地。",
+            "奥瑞恩高层在后台惊慌失措，决定暂停拖延战术，准备硬着头皮上庭。"
+          ],
+          "visible_payoff": "媒体集中报道‘设备校准失效’细节，舆论压力迫使奥瑞恩放弃拖延战术。",
+          "ending": "庭审即将开始，巴里面色铁青地走进法庭，手中紧握的文件夹已被记者的闪光灯照得发白。",
+          "must_include": ["五十七家地方日报的同步报道", "苏菲亚的分发行动", "巴里的被动回应"],
+          "must_not_include": ["康拉德的出现", "最终的判决结果", "股票市场的实时交易画面"],
+          "detailed_synopsis": "2005年7月12日，纽约曼哈顿联邦法院外，暴雨初歇。苏菲亚率领志愿者向早已等候的五十七家地方日报记者分发特制的空白明信片，背面印有醒目的标题：‘当仪器停止呼吸：1999-2003年的校准真空’。这些明信片源自麦珂前世记忆中的关键漏洞——托马斯机构那几年的仪器从未真正校准过。巴里·斯特林见状，试图冲上前去拦截，却被记者们热情地包围，他们纷纷展示手中的报纸，上面详细列出了奥瑞恩集团试图掩盖的设备维护断档期。巴里在镜头前狼狈不堪，不得不承认无法提供原始校准记录，只能勉强辩称这是‘技术失误’。麦珂站在人群后方，神情平静，对黛安娜低语道：“他们以为剪辑能掩盖一切，却忘了机械计时戳不会撒谎。”随着记者们的追问，奥瑞恩的公关防线瞬间崩塌，舆论压力迫使他们在开庭前不得不放弃拖延战术，准备迎接真正的风暴。"
+        },
+        {
+          "chapter_id": 424,
+          "timeline_start": "2005年7月13日",
+          "timeline_end": "2005年7月13日",
+          "scene": "联邦法院第12号法庭",
+          "chapter_goal": "当庭展示无可辩驳的物理证据，获得‘仅确认清醒’的最终裁决，完成曲库交割。",
+          "chapter_title": "第424章：机械计时戳下的清醒",
+          "participants": ["麦珂", "黛安娜", "联邦法官", "巴里·斯特林", "书记员"],
+          "opening_conflict": "巴里试图提交经过剪辑的脑波视频，主张麦珂存在间歇性精神障碍，要求二次评估。",
+          "info_gap_use": "麦珂提前准备了1999-2003年的纸质维护日志原件，以及带有机械计时戳的原始磁带，精准打击巴里证据链的断裂处。",
+          "opponent_reaction": "巴里在法官面前试图狡辩，声称日志是“伪造的”，但在看到原始磁带的机械计时戳与日志上的日期严丝合缝后，瞬间语塞，最终被法官当庭斥责。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "第12号法庭",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法槌落下，全场肃静"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_413_MICROFILM_PROOF",
+              "timeline_scope": "current",
+              "purpose": "作为证明原始数据未被篡改的关键物证"
+            },
+            {
+              "artifact_id": "ART_423_MAIL_BATCH_FINAL",
+              "timeline_scope": "current",
+              "purpose": "作为舆论背景，佐证奥瑞恩的恶意诉讼性质"
+            }
+          ],
+          "action_sequence": [
+            "巴里播放剪辑视频，麦珂立即出示原始磁带，法官注意到磁带边缘清晰的机械计时戳，显示录制时间与巴里声称的“异常时刻”完全不符。",
+            "黛安娜呈上托马斯机构的纸质维护日志，红笔批注清晰标出1999-2003年的校准缺失，与巴里提供的“完美数据”形成荒谬对比。",
+            "法官当庭驳回巴里的二次评估请求，宣布麦珂“完全具备民事行为能力”，并签署曲库向信托交割的命令。",
+            "巴里试图抗议，被法官严厉制止，其信誉彻底破产。"
+          ],
+          "visible_payoff": "联邦法官当庭宣读‘仅确认清醒’裁决，拒绝奥瑞恩提出的二次评估请求。",
+          "ending": "麦珂走出法庭，阳光刺眼。她收到一封神秘挂号信，拆开一看，是一张2009年3月18日的心脏内科预约单。",
+          "must_include": ["机械计时戳的特写", "纸质日志的红笔批注", "法官的裁决宣告", "神秘挂号信的接收"],
+          "must_not_include": ["康拉德的出场", "奥瑞恩集团的破产清算", "维克多的具体下场"],
+          "detailed_synopsis": "2005年7月13日，联邦法院第12号法庭内，气氛凝重。巴里·斯特林自信满满地播放了一段经过剪辑的脑波视频，声称麦珂在关键时段存在严重的精神错乱，请求进行二次评估。然而，麦珂并未慌乱，她示意黛安娜呈上原始磁带。法官仔细查看了磁带边缘，发现了一个不起眼的机械计时戳，显示录制时间与巴里描述的“异常时刻”完全错位。紧接着，黛安娜拿出一本厚重的纸质维护日志，上面用红笔清晰地标注了1999年至2003年间托马斯机构仪器校准的缺失记录，这与巴里提供的所谓“完美数据”形成了鲜明的讽刺对比。法官勃然大怒，当庭驳回了巴里的所有请求，并庄严宣布：“被告麦珂女士完全具备民事行为能力，任何试图挑战这一事实的行为都是对司法的亵渎。”随着法槌的落下，曲库正式完成向‘麦珂创作信托’的法律交割。巴里面如死灰，试图争辩却被法官严厉制止。走出法庭，阳光刺眼，麦珂感到前所未有的轻松。然而，当她伸手接过秘书递来的一封神秘挂号信时，笑容凝固了。信中只有一张纸：2009年3月18日的心脏内科预约单。麦珂心中一凛，意识到敌人的布局远未结束，死亡倒计时已经悄然启动。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2005",
+    "character_states": [
+      {"id": "MC_001", "name": "麦珂", "state": "legal_victory_achieved", "details": "法律层面彻底赢得‘清醒’定义权，但收到死亡预告，心理状态转为高度警惕。"},
+      {"id": "DA_001", "name": "黛安娜", "state": "lead_lawyer", "details": "正式接管法务对抗核心，信任度满级。"},
+      {"id": "BA_001", "name": "巴里·斯特林", "state": "discredited", "details": "法庭信誉破产，被剔除出核心决策圈。"}
+    ],
+    "relationship_states": [
+      {"pair": ["麦珂", "黛安娜"], "status": "absolute_trust", "details": "共同经历生死博弈，关系升华至无条件信赖。"},
+      {"pair": ["麦珂", "奥瑞恩集团"], "status": "hostile_total", "details": "法律战败，敌对关系固化。"}
+    ],
+    "rights_and_assets": [
+      {"asset_id": "RIGHT_VL_TRUST_EXECUTION", "status": "fully_transferred", "details": "曲库资产正式转入信托，资金流自主可控，不可逆转。"}
+    ],
+    "health_and_location": [
+      {"subject": "麦珂", "location": "纽约", "health_status": "physically_normal_mentally_alert", "details": "身体无恙，但收到2009年心脏预约单，需警惕未来风险。"}
+    ],
+    "open_threads": [
+      "神秘挂号信背后的真正意图（2009年3月18日心脏内科预约单）",
+      "奥瑞恩集团‘永恒星光’计划的下一步动作"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团第二次司法托管申请被粉碎",
+      "曲库法律交割完成"
+    ],
+    "introduced_characters": [
+      {"name": "匿名信使", "role": "反派布局执行者", "details": "寄送神秘挂号信的人，身份成谜。"}
+    ],
+    "next_pressure": "随着司法途径的彻底失败，奥瑞恩集团将启动‘永恒星光’计划，麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题，同时应对资本市场的全面围剿。"
+  }
+}

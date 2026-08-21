@@ -1,0 +1,273 @@
+{
+  "macro_group_id": "MG039",
+  "event_clusters": [
+    {
+      "cluster_id": "EC192",
+      "chapter_span": [
+        383,
+        384
+      ],
+      "source_event_direction": "前世具体受害：奥瑞恩集团联合保险公司以高额赔付诱骗签署数据全权移交合同。；本事件独有的前世信息差：1999年底托马斯尚未正式入职法务部，其伪造行为属内部流程越权。；今生提前动作：麦珂提前联系退休老医生作为证人，构建完整口头医嘱证据链闭环。；第383章可见小赢：独立审计员现场核验档案完整性，确认‘一键康复’方案无原始胶片支撑。；第384章新交锋：媒体直播揭露电子病历缺失关键沟通记录，公众质疑奥瑞恩集团诚信。；阻力方永久现实损失：奥瑞恩集团被迫撤回‘终身艺能保障计划’推广，声誉受损。；主角现实收益：家庭铁三角稳固，玛莎恢复社会功能参与志愿者培训，脱离虚假治疗。；不可逆结算键：退休医生证言与声纹证据形成不可逆法律事实，锁定托马斯违规责任。；接回死亡控制主线：打破前世数据垄断，使维克多无法通过保险机制吞噬家庭资产。",
+      "source_event_direction_sha256": "a86c0c61e8da7bfee213b7adea904f0ea30bf38114e7d9c57173028b15b6e709",
+      "source_macro_sha256": "1d9312918a2a0517501391841ac506765bcb62850de92aa64042c5ad4fcf0bbe",
+      "name": "静默的胶片与失语的录音",
+      "timeline_years": "1999—2000",
+      "main_opponent": "托马斯·韦斯特（医院伦理委员会边缘人/奥瑞恩集团法务预备役）",
+      "opposition_type": "institutional",
+      "event_type": "contract_rights",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS11"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "玛莎",
+        "黛安娜",
+        "托马斯·韦斯特",
+        "退休老医生亨利·米勒",
+        "独立审计员艾伦·罗斯"
+      ],
+      "fictional_obstacle": "托马斯利用1999年底尚未正式入职法务部的身份漏洞，在电子病历系统中植入了“一键康复”的虚假条目，并试图用数字信号覆盖原始模拟记录，导致关键口头医嘱无法被常规系统检索，形成完美的“证据真空”。",
+      "prev_life_tragedy": "前世麦珂在签署合同前夜未察觉病历异常，母亲玛莎被诱导签署全权移交协议，随后因“康复方案”无效导致病情恶化，家庭资产被保险公司以“数据不符”为由冻结吞噬。",
+      "info_gap_from_prev_life": "托马斯在1999年底尚在医院伦理委员会边缘试探，其伪造行为属于越权操作，且当时医院尚未全面普及电子病历的自动备份功能，物理胶片仍是唯一法定依据。",
+      "why_previous_life_failed": "前世依赖电子系统作为唯一证据源，忽略了纸质档案与模拟信号的法律效力，未能提前锁定越权操作的内部流程漏洞。",
+      "preemptive_avoidance": "麦珂提前联系退休老医生亨利·米勒作为证人，构建完整口头医嘱证据链闭环；利用刚商用的数码扫描仪提取S95-B-RW样带背景底噪，准备进行高精度声纹比对。",
+      "bait_and_evidence": "诱使托马斯主动展示经过“优化”的电子病历系统，同时要求现场调取原始胶片与1999年12月24日的值班日志，利用其越权操作留下的时间戳矛盾作为突破口。",
+      "comic_villain_behavior": "托马斯在直播镜头前极力辩解“系统升级”是行业趋势，却因过度紧张将“越权审批单”掉落在地，上面清晰盖着伦理委员会尚未生效的印章，引发全场哄笑与质疑。",
+      "villain_loss": "托马斯被医院伦理委员会立即停职审查，失去医疗话语权；奥瑞恩集团被迫撤回‘终身艺能保障计划’推广，声誉受损，无法再操控医疗数据。",
+      "protagonist_gain": "家庭铁三角稳固，玛莎恢复社会功能参与志愿者培训，脱离虚假治疗；麦珂确立对母亲医疗数据的绝对否决权，保留全部医疗数据自主权。",
+      "relationship_change": "麦珂与家庭铁三角（玛莎、黛安娜）信任度达到顶峰，形成稳固的利益共同体；与奥瑞恩集团关系彻底破裂，进入公开对抗状态。",
+      "continuity_writes": [
+        "1999年除夕磁带外壳上的半枚油渍指纹经专业比对，证实与巴里·布鲁姆指纹吻合，该线索将直接触发P09关于长期介入档案篡改的法务攻防战。",
+        "S95-B-RW样带转录为CDR格式，声纹证据已归档，为2009年直播提供法定技术依据。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_039_AUDIT",
+          "state_key": "audit_chain_status__extension_EC192",
+          "from": "pending_signature",
+          "to": "suspended_due_fraud",
+          "irreversible": true,
+          "evidence": "RETIRED_DOCTOR_TESTIMONY + S95_AUDIO_ANALYSIS",
+          "effect_type": "villain_loss",
+          "source_domain": "medical_records"
+        },
+        {
+          "domain": "health",
+          "entity_id": "HEALTH_MARTHA_001",
+          "state_key": "treatment_protocol_status",
+          "from": "fraudulent_quick_recovery",
+          "to": "scientific_adjustment",
+          "irreversible": true,
+          "evidence": "PHYSICAL_FILM_VERIFICATION",
+          "effect_type": "protagonist_gain",
+          "source_domain": "medical_records"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "FAMILY_IRON_TRIANGLE",
+          "state_key": "trust_level_peak__extension_EC192",
+          "from": "none",
+          "to": "unbreakable",
+          "irreversible": false,
+          "evidence": "JOINT_STRATEGY_SUCCESS",
+          "effect_type": "relationship_change",
+          "source_domain": "family_rights",
+          "source_state_key": "trust_level_peak"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1999_DEC_24_NURSE",
+        "HIST_1999_DIGITAL_SCANNER_LAUNCH"
+      ],
+      "cluster_outcome": "成功阻止‘终身艺能保障计划’签约，保留全部医疗数据自主权；确立‘棱镜协议’法律文本定稿方向；获得半枚油渍指纹线索，指向巴里·布鲁姆。",
+      "next_event_hook": "1999年除夕磁带外壳上的半枚油渍指纹经专业比对，证实与巴里·布鲁姆指纹吻合，该线索将直接触发P09（第401-420章）关于长期介入档案篡改的法务攻防战，迫使奥瑞恩集团从商业施压转向刑事层面的反制。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 383,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "河湾镇诊所独立审计室",
+          "chapter_goal": "独立审计员现场核验档案完整性，确认‘一键康复’方案无原始胶片支撑。",
+          "chapter_title": "消失的胶片",
+          "participants": [
+            "麦珂",
+            "独立审计员艾伦·罗斯",
+            "托马斯·韦斯特",
+            "玛莎"
+          ],
+          "opening_conflict": "托马斯坚持电子病历是唯一有效记录，拒绝出示原始胶片，声称系统升级导致物理档案“暂时不可读”。",
+          "info_gap_use": "麦珂利用重生优势，指出1999年底医院尚未全面启用电子备份，物理胶片必须存在，且托马斯无权擅自销毁或隐藏。",
+          "opponent_reaction": "托马斯慌乱中试图用“系统故障”搪塞，却不小心将一份未盖章的越权审批单滑落到审计员脚下。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇诊所独立审计室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂目光锐利地扫过托马斯紧握的文件袋"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_383_PHYSICAL_FILM_MISSING",
+              "timeline_scope": "current",
+              "display_name": "《缺失胶片清单及越权审批单》",
+              "kind": "legal_certificate"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂当众复述1999年12月24日护士原话：‘您妈这情况得慢慢调，别信什么一键康复’，质问电子病历为何缺失此条。",
+            "托马斯辩称系统自动过滤了非结构化数据，试图掩盖越权操作。",
+            "独立审计员罗斯发现越权审批单，当场叫停审计程序，要求托马斯解释为何在未正式入职法务部时拥有修改病历权限。",
+            "玛莎在旁目睹真相，眼神从迷茫转为坚定，不再接受虚假的“快速康复”承诺。"
+          ],
+          "visible_payoff": "独立审计员确认‘一键康复’方案无原始胶片支撑，托马斯的谎言被当场拆穿。",
+          "ending": "审计程序被迫中断，托马斯脸色苍白，陷入被动解释的困境。",
+          "must_include": [
+            "护士原话复述",
+            "越权审批单掉落",
+            "物理胶片缺失确认"
+          ],
+          "must_not_include": [
+            "任何公众媒体曝光",
+            "联邦调查局介入"
+          ],
+          "detailed_synopsis": "托马斯坚持电子病历是唯一有效记录，拒绝出示原始胶片，声称系统升级导致物理档案“暂时不可读”。麦珂当众复述1999年12月24日护士原话：‘您妈这情况得慢慢调，别信什么一键康复’，质问。托马斯辩称系统自动过滤了非结构化数据，试图掩盖越权操作。独立审计员罗斯发现越权审批单，当场叫停审计程序，要求托马斯解释为何在未正式入职法务部时拥有。玛莎在旁目睹真相，眼神从迷茫转为坚定，不再接受虚假的“快速康复”承诺。独立审计员确认‘一键康复’方案无原始胶片支撑，托马斯的谎言被当场拆穿。审计程序被迫中断，托马斯脸色苍白，陷入被动解释的困境。",
+          "source_timeline_start": "1999年12月24日 上午 09:00",
+          "source_timeline_end": "1999年12月24日 下午 16:00",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_379_DOUBLE_TRACK_PROTOCOL",
+              "timeline_scope": "previous_life",
+              "purpose": "引用双轨信托条款要求物理档案优先"
+            }
+          ]
+        },
+        {
+          "chapter_id": 384,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "河湾镇诊所大厅",
+          "chapter_goal": "媒体直播揭露电子病历缺失关键沟通记录，公众质疑奥瑞恩集团诚信。",
+          "chapter_title": "沉默的波形",
+          "participants": [
+            "麦珂",
+            "玛莎",
+            "黛安娜",
+            "托马斯·韦斯特",
+            "退休老医生亨利·米勒",
+            "媒体记者"
+          ],
+          "opening_conflict": "托马斯试图启动“数据污染”方案，掩盖越权事实，却被麦珂提前布置的媒体直播打断。",
+          "info_gap_use": "麦珂利用重生优势，提前联系退休老医生亨利·米勒作为证人，确保证据链闭环；利用S95-B-RW样带中的背景底噪进行声纹比对，还原真实对话。",
+          "opponent_reaction": "托马斯在直播镜头前极力辩解，却因过度紧张将“越权审批单”再次掉落，引发全场哄笑与质疑。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇诊所大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "电视屏幕亮起，直播信号接入"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_377_LIVE_WAVEFORM",
+              "timeline_scope": "current",
+              "purpose": "实时展示声纹比对结果"
+            }
+          ],
+          "action_sequence": [
+            "麦珂邀请退休老医生亨利·米勒到场，当面复述当年护士的口头医嘱，与电子病历形成鲜明对比。",
+            "黛安娜启动S95-B-RW样带的声纹分析，将背景底噪与特定频段进行高精度提取，生成实时波形图。",
+            "托马斯试图切断电源，却被早已埋伏的媒体记者拦住，直播信号持续传输。",
+            "公众舆论哗然，质疑奥瑞恩集团利用虚假数据骗取签约，要求彻查。"
+          ],
+          "visible_payoff": "媒体直播揭露电子病历缺失关键沟通记录，公众质疑奥瑞恩集团诚信；托马斯被停职审查。",
+          "ending": "奥瑞恩集团被迫撤回‘终身艺能保障计划’推广，玛莎开始接受科学调理，家庭铁三角稳固。",
+          "must_include": [
+            "退休医生证言",
+            "声纹比对实时展示",
+            "托马斯越权审批单再次掉落"
+          ],
+          "must_not_include": [
+            "任何二维码扫描",
+            "远程档案库数据传输"
+          ],
+          "detailed_synopsis": "托马斯试图启动“数据污染”方案，掩盖越权事实，却被麦珂提前布置的媒体直播打断。麦珂邀请退休老医生亨利·米勒到场，当面复述当年护士的口头医嘱，与电子病历形成鲜明对比。黛安娜启动S95-B-RW样带的声纹分析，将背景底噪与特定频段进行高精度提取，生成实时波形。托马斯试图切断电源，却被早已埋伏的媒体记者拦住，直播信号持续传输。公众舆论哗然，质疑奥瑞恩集团利用虚假数据骗取签约，要求彻查。媒体直播揭露电子病历缺失关键沟通记录，公众质疑奥瑞恩集团诚信；托马斯被停职审查。奥瑞恩集团被迫撤回‘终身艺能保障计划’推广，玛莎开始接受科学调理，家庭铁三角稳固。",
+          "source_timeline_start": "1999年12月24日 傍晚 18:00",
+          "source_timeline_end": "1999年12月24日 深夜 23:00",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_375_AUDIO_RECORDING",
+              "timeline_scope": "previous_life",
+              "purpose": "作为S95-B-RW样带的原始来源"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2000",
+    "character_states": [
+      {
+        "character": "玛莎",
+        "state": "从被动接受者转变为主动参与‘初声基金’培训的志愿者，恢复社会功能"
+      },
+      {
+        "character": "托马斯·韦斯特",
+        "state": "被医院伦理委员会停职审查，失去医疗话语权"
+      },
+      {
+        "character": "维克多·兰斯",
+        "state": "意识到常规手段失效，开始酝酿更隐蔽的‘数据污染’方案"
+      }
+    ],
+    "relationship_states": [
+      {
+        "relationship": "麦珂与家庭铁三角",
+        "state": "信任度达到顶峰，形成稳固的利益共同体"
+      },
+      {
+        "relationship": "麦珂与奥瑞恩集团",
+        "state": "关系彻底破裂，进入公开对抗状态"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset": "医疗数据自主权",
+        "status": "成功保留，未被移交"
+      },
+      {
+        "asset": "半枚油渍指纹",
+        "status": "经初步比对与巴里·布鲁姆入职体检指纹高度吻合，成为下一组因果链的关键旁证"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity": "玛莎",
+        "status": "病情稳定，脱离虚假的‘一键康复’陷阱，进入科学调理阶段"
+      }
+    ],
+    "open_threads": [
+      "维克多·兰斯对巴里·布鲁姆倒台后的应对策略",
+      "1999年除夕夜磁带外壳指纹的深入调查",
+      "S95-B-RW样带转录为CDR格式的后续法律应用"
+    ],
+    "resolved_threads": [
+      "‘终身艺能保障计划’签约陷阱",
+      "托马斯伪造病历事件"
+    ],
+    "introduced_characters": [
+      "退休老医生亨利·米勒"
+    ],
+    "next_pressure": "随着维克多势力收缩，联邦调查局介入，那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的‘数据污染’方案。"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC150_EC150",
+  "identifier": "MG030",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "c16ab6c3826718c8349880b5f946bd0bb4a64a7a06ac39b1bc5738fa3048f5be",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T21:55:01+08:00",
+      "prompt_sha256": "c16ab6c3826718c8349880b5f946bd0bb4a64a7a06ac39b1bc5738fa3048f5be",
+      "raw_response_sha256": "a397f6f6e1e4f3c99aeb33d46e9c2f9f605aa75ba3a447021c8cdf415434cc59",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG030_events_EC150_EC150_attempt_01_c16ab6c382_raw.txt",
+      "validation_failures": [
+        "EC150提前消费后续事件的逮捕/刑事带走结算；当前父级方向未授权该结果",
+        "EC150与EC143重复执行不可逆结算：assets_frozen::维克多·斯特林",
+        "EC150与EC145重复执行不可逆结算：arrested::维克多·斯特林",
+        "EC150.foreshadow_ids必须来自当前宏观组锁定集合['FS05']，实际越界['FS04']"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 27.827,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-20T21:55:32+08:00",
+      "prompt_sha256": "13eaa62b60b1eb15f31c3aee4dac53466fac22f5b3d1e2d3fa4e195cead2a6c4",
+      "raw_response_sha256": "46174d66b792f4d2c12a2c060c58181943d2aaa15082cfadb43e2a796b96555d",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG030_events_EC150_EC150_attempt_02_c16ab6c382_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 30.353,
+      "usage": {}
+    }
+  ]
+}

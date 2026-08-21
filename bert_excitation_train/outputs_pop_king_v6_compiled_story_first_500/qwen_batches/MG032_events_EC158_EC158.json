@@ -1,0 +1,262 @@
+{
+  "macro_group_id": "MG032",
+  "event_clusters": [
+    {
+      "cluster_id": "EC158",
+      "chapter_span": [
+        315,
+        316
+      ],
+      "source_event_direction": "前世具体受害：前世瑟琳娜因缺乏制度保障而在教育决策上陷入被动，家庭权力失衡。；本事件独有的前世信息差：前世麦珂未与瑟琳娜建立法律效力的共同治理机制，导致子女教育路径混乱。；今生提前动作：麦珂起草《教育共治备忘录》，提议实行子女教育双轨并行制并签署生效。；第315章可见小赢：瑟琳娜在备忘录上签字，确立双方为拥有否决权的共同治理者身份。；第316章新交锋：瑟琳娜面对商业集团拉拢，选择坚持备忘录条款拒绝利益交换。；阻力方永久现实损失：外部势力无法再通过家庭内部矛盾干涉麦珂的决策体系。；主角现实收益：家庭权力结构制度化重构，子女教育路径明确且稳定。；不可逆结算键：EC158_Education_Dual_Track_Signed；接回死亡控制主线：构建稳固的家庭防线，防止未来通过亲情绑架破坏麦珂的布局。",
+      "source_event_direction_sha256": "fcb80d732ceb14beee7128f3e13b3b01096e7b2633a72604ad95f5f5dfb8ac1f",
+      "source_macro_sha256": "19aaee43c3ca4964385485b136596c7ded09d449d939a51b4cfce3260ce92f8b",
+      "name": "教育共治备忘录签署与商业诱惑反制",
+      "timeline_years": "1997—1998",
+      "main_opponent": "瑟琳娜·兰斯（受外部资本拉拢时）",
+      "opposition_type": "family",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS10"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜",
+        "艾琳",
+        "商业代理人"
+      ],
+      "fictional_obstacle": "外部商业集团试图利用瑟琳娜对子女未来的焦虑，通过私下利益交换瓦解家庭决策统一性；前世因缺乏制度约束，瑟琳娜在情感绑架下被迫妥协，导致子女教育路径混乱。",
+      "prev_life_tragedy": "前世瑟琳娜未获法律保障的否决权，在家族压力下被迫接受混乱的教育方案，导致子女成长关键期资源错配，最终引发家庭信任危机。",
+      "info_gap_from_prev_life": "前世麦珂误以为仅靠情感沟通即可维持家庭和谐，未意识到必须建立具有法律效力的‘双轨并行’治理机制才能抵御外部资本渗透。",
+      "why_previous_life_failed": "缺乏制度化的权力制衡，导致家庭成员在面对外部诱惑时缺乏明确的防御边界和共同行动准则。",
+      "preemptive_avoidance": "麦珂提前起草《教育共治备忘录》，明确设立双轨制教育路径及双方拥有绝对否决权的条款，并邀请第三方公证人见证。",
+      "bait_and_evidence": "商业代理人以‘名校特招名额’为诱饵，要求瑟琳娜单方面签字放弃部分教育监督权；麦珂出示前世记忆中的混乱案例数据作为警示，并当场展示备忘录草案。",
+      "comic_villain_behavior": "商业代理人误以为瑟琳娜软弱可欺，试图用夸张的金钱数字和虚假的‘独家协议’施压，却在麦珂冷静拆解其逻辑漏洞时显得手足无措，甚至当众失态地翻找合同细节。",
+      "villain_loss": "外部势力无法再通过家庭内部矛盾干涉麦珂的决策体系，商业集团的拉拢计划彻底失败，信誉受损。",
+      "protagonist_gain": "家庭权力结构制度化重构，子女教育路径明确且稳定，确立了不可逆转的法律防线。",
+      "relationship_change": "麦珂与瑟琳娜建立基于契约精神的深度信任联盟；瑟琳娜从被动依附者转变为拥有独立话语权的共同治理者。",
+      "continuity_writes": [
+        "1997年冬，麦珂将《教育共治备忘录》终稿置于书房红木桌上，纸张泛黄却字迹清晰，这是前世未曾有过的制度保障。",
+        "瑟琳娜翻阅文件时指尖微颤，她想起前世在董事会上的狼狈，如今麦珂已为她筑起铜墙铁壁。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_FAMILY_EDU_001",
+          "state_key": "governance_mechanism__EC158",
+          "from": "informal_emotional_only",
+          "to": "legally_bound_dual_track",
+          "irreversible": true,
+          "evidence": "ART_305_EDU_MEMO_FINAL",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_MCKE_SERL_001",
+          "state_key": "power_balance__EC158",
+          "from": "unbalanced_dependency",
+          "to": "equal_governance_partnership",
+          "irreversible": true,
+          "evidence": "SIGNATURE_CERTIFICATE_EC158",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1997_WINTER_DECISION"
+      ],
+      "cluster_outcome": "麦珂成功推动《教育共治备忘录》签署，确立双轨制教育模式与共同否决权机制，彻底阻断外部资本通过家庭内部矛盾进行干预的可能，实现家庭权力结构的制度化重构。",
+      "next_event_hook": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 315,
+          "timeline_start": "1997-12-10",
+          "timeline_end": "1997-12-10",
+          "scene": "麦珂家中书房",
+          "chapter_goal": "完成《教育共治备忘录》签署，确立双轨制教育模式与共同否决权。",
+          "chapter_title": "墨迹未干的契约",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "公证员老陈"
+          ],
+          "opening_conflict": "瑟琳娜面对商业代理人留下的‘特招协议’犹豫不决，内心仍存前世被操控的阴影。",
+          "info_gap_use": "麦珂利用前世记忆指出该协议中隐藏的‘排他性条款’将导致子女失去选择权，直接引用前世混乱案例数据。",
+          "opponent_reaction": "商业代理人（电话连线）试图用高薪承诺施压，却被麦珂冷静打断并揭露其合同陷阱。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂家中书房",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "窗外飘雪，室内暖光映照在摊开的备忘录上"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_305_EDU_MEMO_FINAL",
+              "timeline_scope": "current",
+              "display_name": "《1997年教育共治备忘录》终稿",
+              "kind": "legal_contract"
+            }
+          ],
+          "action_sequence": [
+            "麦珂将备忘录推至瑟琳娜面前，逐条解释双轨制设计逻辑。",
+            "瑟琳娜颤抖着拿起钢笔，回忆起前世在董事会上的无助，眼神逐渐坚定。",
+            "公证员老陈宣读法律效力条款，强调双方拥有同等否决权。",
+            "瑟琳娜在签名处落下笔迹，墨迹未干却重若千钧。"
+          ],
+          "visible_payoff": "瑟琳娜正式成为拥有否决权的共同治理者，家庭决策机制从情感依赖转向制度约束。",
+          "ending": "瑟琳娜合上备忘录，对麦珂露出久违的释然微笑，窗外雪势渐大。",
+          "must_include": [
+            "双轨制教育模式的具体条款描述",
+            "瑟琳娜签字时的心理转变描写",
+            "公证员宣读法律效力的场景"
+          ],
+          "must_not_include": [
+            "任何关于医疗造假的讨论",
+            "未来世纪之交的技术词汇"
+          ],
+          "detailed_synopsis": "1997年冬夜，麦珂在家中书房向瑟琳娜展示《教育共治备忘录》终稿。他利用前世记忆精准指出商业代理人留下的‘特招协议’中隐藏的危险条款，并引用前世教育混乱的真实案例作为警示。瑟琳娜起初仍显犹豫，但在麦珂冷静拆解其逻辑漏洞后，终于认清制度保障的重要性。公证员老陈在场见证，逐条宣读法律效力条款，强调双方拥有同等否决权。瑟琳娜颤抖着签下名字，这一刻不仅是家庭权力的重新分配，更是她对自我价值的确认。窗外大雪纷飞，屋内却暖意融融，两人相视而笑，共同迈出了家庭治理现代化的关键一步。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_307_WORKSHOP_WALL_PHOTO",
+              "timeline_scope": "previous_life",
+              "purpose": "作为前世教育混乱的视觉佐证"
+            }
+          ],
+          "duplicate_artifact_creates_reclassified": [
+            {
+              "artifact_id": "ART_305_EDU_MEMO_FINAL",
+              "timeline_scope": "current",
+              "display_name": "《1997年教育共治备忘录》终稿",
+              "kind": "legal_contract"
+            }
+          ]
+        },
+        {
+          "chapter_id": 316,
+          "timeline_start": "1997-12-15",
+          "timeline_end": "1997-12-15",
+          "scene": "商业集团临时会议室",
+          "chapter_goal": "瑟琳娜拒绝商业集团拉拢，坚持备忘录条款，完成家庭权力结构的最终巩固。",
+          "chapter_title": "拒绝的艺术",
+          "participants": [
+            "瑟琳娜",
+            "商业集团代表（虚构：亨利·布莱克）",
+            "麦珂（远程视频）"
+          ],
+          "opening_conflict": "商业集团代表亨利·布莱克试图再次拉拢瑟琳娜，许诺巨额利益换取其单方面放弃教育监督权。",
+          "info_gap_use": "瑟琳娜利用前世记忆识破对方‘短期利益长期绑定’的陷阱，直接引用备忘录条款进行反驳。",
+          "opponent_reaction": "亨利·布莱克惊愕于瑟琳娜的决绝，试图用情感绑架施压，却被麦珂远程视频介入揭穿其真实意图。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "商业集团临时会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "会议桌中央摆放着厚厚的利益交换清单"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_305_EDU_MEMO_FINAL",
+              "timeline_scope": "current",
+              "purpose": "作为拒绝利益交换的法律依据"
+            }
+          ],
+          "action_sequence": [
+            "亨利·布莱克抛出巨额利益诱惑，试图动摇瑟琳娜的决心。",
+            "瑟琳娜冷静回应，出示备忘录副本，明确指出该交易违反共同治理原则。",
+            "麦珂通过远程视频接入，揭示亨利背后更大的商业阴谋。",
+            "瑟琳娜果断拒绝，并警告对方若再骚扰将采取法律行动。"
+          ],
+          "visible_payoff": "外部势力彻底放弃通过家庭内部矛盾干涉麦珂决策体系的企图，家庭防线固若金汤。",
+          "ending": "亨利·布莱克灰溜溜离开，瑟琳娜挂断电话，与麦珂视频中对视，眼中满是胜利的光芒。",
+          "must_include": [
+            "商业集团代表的贪婪嘴脸描写",
+            "瑟琳娜拒绝时的坚定态度",
+            "麦珂远程介入的关键作用"
+          ],
+          "must_not_include": [
+            "任何关于医疗造假的讨论",
+            "未来世纪之交的技术词汇"
+          ],
+          "detailed_synopsis": "1997年12月15日，商业集团代表亨利·布莱克在临时会议室设局，试图以巨额利益拉拢瑟琳娜，要求其单方面放弃教育监督权。瑟琳娜虽曾在前世陷入被动，但今日已非吴下阿蒙。她冷静地拿出《教育共治备忘录》副本，逐条指出该交易违反共同治理原则，并引用前世记忆中的混乱案例作为警示。亨利·布莱克惊愕之余试图用情感绑架施压，却被麦珂通过远程视频及时介入，彻底揭穿其背后的商业阴谋。瑟琳娜果断拒绝，并警告对方若再骚扰将采取法律行动。亨利·布莱克灰溜溜离开，瑟琳娜挂断电话，与麦珂视频中对视，眼中满是胜利的光芒。这一刻，家庭权力结构彻底固化，外部势力再也无法通过亲情绑架破坏麦珂的布局。"
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "瑟琳娜",
+        "艾琳",
+        "商业代理人（虚构）"
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {
+        "character": "麦珂",
+        "state": "家庭权力结构制度化重构完成，处于战略主动地位"
+      },
+      {
+        "character": "瑟琳娜",
+        "state": "从被动依附者转变为拥有独立话语权的共同治理者，心理状态稳定"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": "麦珂-瑟琳娜",
+        "status": "基于契约精神的深度信任联盟，共同治理机制生效"
+      },
+      {
+        "pair": "麦珂-外部势力",
+        "status": "敌对关系，外部势力尝试失败转入防守"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset": "家庭教育决策权",
+        "status": "完全收回，形成不可逆的制度屏障"
+      },
+      {
+        "asset": "《静默增益》版权",
+        "status": "已完全收回，销量持续攀升"
+      }
+    ],
+    "health_and_location": [
+      {
+        "character": "麦珂",
+        "health_status": "体重、血压、肺活量三项连续四年无波动，维持生理最佳状态"
+      },
+      {
+        "location": "银湾市",
+        "status": "麦珂团队总部，安全系数提升"
+      }
+    ],
+    "open_threads": [
+      "S95-B-RW录音证据如何转化为法律层面的指控",
+      "医疗模型造假对世纪转换期公众健康的潜在危害",
+      "维克多即将启动的‘全介质抹除计划’具体实施方案"
+    ],
+    "resolved_threads": [
+      "家庭内部权力失衡问题已通过制度化手段彻底解决",
+      "外部势力通过家庭矛盾干涉决策的可能性被永久切断"
+    ],
+    "introduced_characters": [
+      {
+        "name": "亨利·布莱克",
+        "role": "商业集团代表，虚构反派，代表外部资本势力"
+      },
+      {
+        "name": "公证员老陈",
+        "role": "第三方见证人，确保法律程序合规"
+      }
+    ],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。"
+  }
+}

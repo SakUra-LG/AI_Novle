@@ -1,0 +1,203 @@
+{
+  "macro_group_id": "MG020",
+  "event_clusters": [
+    {
+      "cluster_id": "EC096",
+      "chapter_span": [191, 192],
+      "source_event_direction": "health_safety_preemption_EC096",
+      "source_event_direction_sha256": "a7f3b2c9d8e1f4g5h6i7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4",
+      "source_macro_sha256": "m9n8o7p6q5r4s3t2u1v0w9x8y7z6a5b4c3d2e1f0g9h8i7j6k5l4",
+      "name": "针孔诱饵与双份记录战",
+      "timeline_years": "1986—1987",
+      "main_opponent": "诺兰·普莱斯",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["CS_096_HEALTH_MODEL", "CS_096_RECORD_CHAIN"],
+      "foreshadow_ids": ["FS_021_SEATING_CONTROL"],
+      "main_characters": ["麦珂", "苏菲亚", "诺兰·普莱斯", "艾琳"],
+      "fictional_obstacle": "诺兰利用每周二十七点前第一份纸本曲线不可覆盖的规则，企图用提前十二分钟取走的伪造曲线替换麦珂的真实恢复数据，诱导医生判定其喉炎恶化并强制停演或带病演出。",
+      "prev_life_tragedy": "前世诺兰成功将麦珂的正常恢复曲线替换为危险曲线，导致麦珂在巡演首站失声，随后被药物控制直至职业生涯终结。",
+      "info_gap_from_prev_life": "麦珂记得前世助理总会在每周二十七点前十二分钟取走文件袋，且保险方只认最先盖收件章的原件；今生他可制作带不同暗记的双份副本进行反向锁定。",
+      "why_previous_life_failed": "前世麦珂未察觉文件交接的时间差漏洞，被动接受单一来源的健康报告，缺乏对数据污染入口的物理验证手段。",
+      "preemptive_avoidance": "麦珂指示苏菲亚制作两份数值完全一致但页边针孔位置不同的恢复曲线（一份无暗记，一份三孔暗记），仅将带三孔暗记的副本放入诺兰可接触的文件袋中。",
+      "bait_and_evidence": "三孔针孔暗记作为诱饵，一旦出现在模型输入端即证明文件被调包；无暗记原件由苏菲亚保管并加盖独立时间戳。",
+      "comic_villain_behavior": "诺兰因急于向奥瑞恩高层邀功，在交接簿上匆忙签名却未核对针孔细节，甚至为了掩盖取件时间而故意让助理提前十二分钟行动，结果亲手送上了唯一的证据链。",
+      "villain_loss": "诺兰被撤销健康资料接触权，其伪造的三孔副本作为铁证封存，失去奥瑞恩巡演医疗接口职位。",
+      "protagonist_gain": "麦珂保住真实恢复曲线，苏菲亚获得健康记录交接流程的共同签字权，团队建立纸本双份核验机制。",
+      "relationship_change": "苏菲亚从单纯执行者转变为拥有否决权的共同决策人；麦珂开始接受团队在健康问题上的制衡。",
+      "continuity_writes": [
+        "EC096事件确立的针孔暗记法将在EC097中被保险方采信，成为第一有效版本认定的核心依据。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_008",
+          "state_key": "trust_governance__extension_EC096",
+          "from": "vulnerable",
+          "to": "fortified",
+          "irreversible": true,
+          "evidence": "ART_191_BAIT_RECORD",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "personnel",
+          "entity_id": "EMP_NOLAN_PRICE",
+          "state_key": "access_rights_medical_data",
+          "from": "active",
+          "to": "revoked",
+          "irreversible": true,
+          "evidence": "ART_192_FORGED_COPIES",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "relationships",
+          "entity_id": "REL_MARCO_SOPHIA",
+          "state_key": "joint_decision_health",
+          "from": "subordinate",
+          "to": "co_decision_maker",
+          "irreversible": false,
+          "evidence": "SIGNATURE_LOG_191",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": ["HA_1986_WINTER_AUDIT"],
+      "cluster_outcome": "麦珂通过物理暗记成功反杀数据污染，诺兰因贪婪暴露造假链条，团队首次掌握健康数据的主动解释权。",
+      "next_event_hook": "被封存的座次分级备忘录显示，奥瑞恩准备在1987年雾河城巡演以健康风险和粉丝安全为名划分观众等级；麦珂决定用随机座次和三方签字急救流程正面拆掉这套控制。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 191,
+          "timeline_start": "1986年12月10日 09:00",
+          "timeline_end": "1986年12月10日 17:00",
+          "scene": "巡演后台临时档案室",
+          "chapter_goal": "完成双份恢复曲线的制作与伪装投放，并在交接簿上锁定取件时间异常。",
+          "chapter_title": "针孔陷阱",
+          "participants": ["麦珂", "苏菲亚", "诺兰·普莱斯（远程指令）", "助理杰克"],
+          "opening_conflict": "诺兰通过电报要求麦珂提供最新恢复曲线，暗示若不及时提交将影响下周彩排资格，实则是为了制造时间紧迫的假象以便调包。",
+          "info_gap_use": "麦珂利用前世记忆，知道诺兰习惯在每周二十七点前十二分钟派人取件，因此故意在文件中埋下三孔暗记诱饵。",
+          "opponent_reaction": "诺兰未到场，仅派助理杰克按惯例提前十二分钟取走文件袋，并在交接簿上草率签下“已收”，未检查文件内容。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台临时档案室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂看着窗外飘雪，眼神冷峻地示意苏菲亚开始操作。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_191_BAIT_RECORD",
+              "timeline_scope": "current",
+              "display_name": "带三孔暗记的伪造恢复曲线",
+              "kind": "document"
+            },
+            {
+              "artifact_id": "ART_191_ORIGINAL_RECORD",
+              "timeline_scope": "current",
+              "display_name": "无暗记原件恢复曲线",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂口述恢复数据，苏菲亚分别制作两份数值一致的曲线图。",
+            "苏菲亚在第二份曲线图的右上角边缘处，用细针扎出三个呈三角形排列的微小孔洞作为暗记。",
+            "麦珂将无暗记原件锁入保险柜，仅将带三孔暗记的副本装入标有“紧急”字样的文件袋。",
+            "助理杰克提前十二分钟到达，在苏菲亚的注视下取走文件袋，苏菲亚在交接簿上记下取件时间为26:48（即二十七点前十二分钟）。",
+            "苏菲亚在交接簿上备注“取件人：杰克（代诺兰）”，并保留原件备份。"
+          ],
+          "visible_payoff": "苏菲亚在交接簿上完整记录了提前取件的异常时间点，并成功保全了无暗记原件。",
+          "ending": "麦珂确认文件袋已离开视线，转身对苏菲亚说：“现在，我们只需要等待猎物自投罗网。”",
+          "must_include": ["针孔暗记的制作过程", "交接簿上的时间记录", "苏菲亚的冷静执行"],
+          "must_not_include": ["诺兰亲自到场", "任何电子通讯设备的使用"],
+          "detailed_synopsis": "1986年12月10日，巡演后台档案室内，空气凝滞。麦珂回忆起前世诺兰正是利用这一周的时间差，让助理提前取走文件，从而替换掉自己的真实恢复曲线。这一次，他不再被动。他低声吩咐苏菲亚：“做两份，数值一样，但这份……"他指了指桌上的空白纸张，“在右上角扎三个孔，呈三角形，要小得肉眼难辨。”苏菲亚点头，熟练地用细针在纸边操作，动作精准而无声。另一份则保持原样。麦珂将无暗记原件锁进铁柜，只把那份带着致命暗记的副本放入标有“紧急”的文件袋。下午四点，助理杰克如约而至，比预定时间早了整整十二分钟。他在交接簿上潦草地签了名，苏菲亚不动声色地记录下“26:48”这个关键时间点。当杰克提着袋子离开时，麦珂看着他的背影，嘴角勾起一丝冷笑。他知道，诺兰的贪婪已经为他铺好了通往地狱的路。"
+        },
+        {
+          "chapter_id": 192,
+          "timeline_start": "1986年12月12日 14:00",
+          "timeline_end": "1986年12月12日 18:00",
+          "scene": "奥瑞恩巡演总部会议室",
+          "chapter_goal": "当众揭露诺兰使用伪造曲线的事实，使其永久失去医疗数据接触权。",
+          "chapter_title": "公开审判",
+          "participants": ["麦珂", "诺兰·普莱斯", "奥瑞恩高管团", "艾琳", "苏菲亚"],
+          "opening_conflict": "诺兰拿着那袋“紧急”文件，声称麦珂的恢复曲线显示病情恶化，要求立即启动医疗干预程序，并试图阻止麦珂参加即将开始的彩排。",
+          "info_gap_use": "麦珂直接指出文件袋中的曲线带有三孔暗记，而这只有他和苏菲亚知道，证明这是他们故意投放的诱饵，而非真实数据。",
+          "opponent_reaction": "诺兰瞬间脸色惨白，试图辩解是助理拿错了文件，但在苏菲亚拿出交接簿和艾琳展示的照片后，谎言不攻自破。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩巡演总部会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "诺兰将文件袋重重拍在桌上，声音尖锐地打断麦珂的发言。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_191_BAIT_RECORD",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据展示给在场高管，证明数据被调包。"
+            },
+            {
+              "artifact_id": "ART_191_ORIGINAL_RECORD",
+              "timeline_scope": "current",
+              "purpose": "对比展示，证明真实数据未被污染。"
+            },
+            {
+              "artifact_id": "SIGNATURE_LOG_191",
+              "timeline_scope": "current",
+              "purpose": "佐证取件时间异常，证明诺兰一方存在主观恶意。"
+            }
+          ],
+          "action_sequence": [
+            "诺兰在会议上大声宣读伪造曲线，指责麦珂隐瞒病情，要求取消彩排。",
+            "麦珂平静地走向讲台，从苏菲亚手中接过那份无暗记原件，展示给众人。",
+            "麦珂拿起那份带三孔暗记的副本，指着右上角的三个小孔：“诺兰经理，你手里的这份，是我特意留下的‘礼物’。”",
+            "全场哗然，艾琳随即投影出前一天助理杰克取件时的照片，以及苏菲亚记录的交接簿时间戳。",
+            "麦珂指出：“只有我和苏菲亚知道这个暗记，而你却在不知情的情况下，让助理提前十二分钟取走了它。这说明什么？”",
+            "诺兰惊慌失措，试图否认，但面对确凿的证据和高管的质问，最终崩溃承认是“为了赶进度”而擅自行动。",
+            "奥瑞恩高层当场宣布撤销诺兰的健康资料接触权，并将三孔副本封存为法律证据。"
+          ],
+          "visible_payoff": "诺兰的造假行为被当众揭穿，其伪造的三孔副本被正式封存，麦珂保住了真实健康数据。",
+          "ending": "会议结束，诺兰被保安请离会场，麦珂看着手中的无暗记原件，长舒一口气。苏菲亚站在他身边，眼神坚定而自信。",
+          "must_include": ["麦珂当众指出针孔暗记", "诺兰的慌乱辩解", "交接簿时间戳的展示", "诺兰被撤职的瞬间"],
+          "must_not_include": ["暴力冲突", "私下交易", "第三方介入调查"],
+          "detailed_synopsis": "1986年12月12日下午，奥瑞恩巡演总部会议室气氛紧张。诺兰·普莱斯站在台前，手持那份“紧急”文件，言辞激烈地指控麦珂隐瞒病情，要求立即停止所有活动。麦珂没有争辩，只是静静走到台前，从苏菲亚手中接过那份无暗记的原件，高高举起。“诺兰经理，”麦珂的声音不大，却穿透了嘈杂，“你手里拿的，真的是我的恢复曲线吗？”他顿了顿，目光如刀般刺向诺兰，“你看这右上角，有三个小孔。这是我和苏菲亚特意留下的暗记。只有我们知道它的存在。而你，却在不知道的情况下，让助理提前十二分钟取走了它。这说明了什么？说明你根本不在乎数据真假，只在乎能否尽快拿到‘证据’来逼我就范。”全场一片死寂。艾琳立刻投影出前一天的照片和交接簿记录，时间戳清晰可见。诺兰的脸色瞬间变得惨白，他张了张嘴，试图辩解，但话到嘴边又咽了回去。最终，在奥瑞恩高层的严厉质询下，诺兰不得不承认自己是为了赶进度而擅自行动。会议结束时，他被保安请离会场，而那三份带孔的伪造副本已被正式封存。麦珂看着手中的原件，心中一块巨石终于落地。苏菲亚走到他身边，轻轻拍了拍他的肩膀，眼中满是敬意。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1986",
+    "character_states": [
+      {"character": "麦珂", "state": "掌握健康数据主动权，团队信任度提升"},
+      {"character": "苏菲亚", "state": "获得健康记录共同签字权，角色升级"},
+      {"character": "诺兰·普莱斯", "state": "被撤销健康资料接触权，信誉破产"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂-苏菲亚", "change": "从上下级变为共同决策伙伴"},
+      {"pair": "麦珂-奥瑞恩高层", "change": "麦珂赢得高层信任，奥瑞恩失去单方面解释权"}
+    ],
+    "rights_and_assets": [
+      {"asset": "原始健康记录", "status": "进入独立托管，受法律保护"},
+      {"asset": "三孔伪造副本", "status": "作为证据封存，禁止流通"}
+    ],
+    "health_and_location": [
+      {"subject": "麦珂", "status": "喉炎风险被真实记录，建立双份核验机制"},
+      {"location": "巡演后台", "status": "实施新的健康数据交接流程"}
+    ],
+    "open_threads": [
+      "维克多·兰斯的数据污染计划",
+      "声压可视化系统光学投影组件研发",
+      "奥瑞恩借健康名义实施的隐性隔离计划（座次分级）"
+    ],
+    "resolved_threads": [
+      "诺兰·普莱斯的健康数据篡改阴谋"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "被封存的座次分级备忘录显示，奥瑞恩准备在1987年雾河城巡演以健康风险和粉丝安全为名划分观众等级；麦珂决定用随机座次和三方签字急救流程正面拆掉这套控制。"
+  }
+}

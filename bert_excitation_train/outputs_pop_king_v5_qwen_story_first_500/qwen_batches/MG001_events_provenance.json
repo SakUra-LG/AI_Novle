@@ -1,0 +1,19 @@
+{
+  "generated_by": "qwen",
+  "kind": "events",
+  "identifier": "MG001",
+  "accepted_attempt": 2,
+  "acceptance_mode": "revalidated_existing_qwen_raw_after_interrupted_resume",
+  "base_prompt_sha256": "legacy_prompt_hash_unavailable_after_interrupted_resume",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 2,
+      "raw_response_sha256": "907025c7b47b9c2741181a249b3fdf198e2399b11601bb5aca3354017b6a56d8",
+      "raw_response_file": "MG001_events_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "revalidated_against_current_validator": true
+    }
+  ]
+}

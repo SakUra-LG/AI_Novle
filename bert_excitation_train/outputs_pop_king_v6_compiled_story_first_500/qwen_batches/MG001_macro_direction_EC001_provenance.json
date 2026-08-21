@@ -1,0 +1,91 @@
+{
+  "generated_by": "groq",
+  "kind": "macro_direction_EC001",
+  "identifier": "MG001",
+  "accepted_attempt": 3,
+  "base_prompt_sha256": "37d7696cb5008dc099cdda830a3af6ea5bf334c4190ae70be68f55086ab44cf4",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-15T16:01:44+08:00",
+      "prompt_sha256": "37d7696cb5008dc099cdda830a3af6ea5bf334c4190ae70be68f55086ab44cf4",
+      "raw_response_sha256": "7810d7768ff8795159e3e208f217e3faa68149255e2d2ddb4608e02bffaaf84d",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_direction_EC001_attempt_01_37d7696cb5_raw.txt",
+      "validation_failures": [
+        "EC001.previous_life_harm照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.unique_prev_life_info照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.preemptive_action照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.chapter_one_small_win照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.chapter_two_showdown照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.opponent_permanent_loss照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.protagonist_concrete_gain照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.irreversible_outcome_key照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.death_chain_connection照抄了JSON字段说明，必须改成原创具体剧情事实"
+      ],
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "transport": "groq_curl",
+      "elapsed_seconds": 3.044,
+      "usage": {
+        "queue_time": 0.067935417,
+        "prompt_tokens": 3774,
+        "prompt_time": 0.206914252,
+        "completion_tokens": 436,
+        "completion_time": 0.663744862,
+        "total_tokens": 4210,
+        "total_time": 0.870659114
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-15T16:01:48+08:00",
+      "prompt_sha256": "bfeba00238c602d4443a9e185c2548afe875bfcc89caa542c4b0463d1fe402d3",
+      "raw_response_sha256": "a45d60bc032c381bbacebf2d4521a826faa3d85eb318df58d67678d55c82ab84",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_direction_EC001_attempt_02_37d7696cb5_raw.txt",
+      "validation_failures": [
+        "EC001.locked_story_brief必须逐字服从锁定值",
+        "EC001必须落实锁定事实词：药/注射/输液",
+        "EC001.previous_life_harm必须是2009年康拉德致死的临终现场",
+        "EC001.previous_life_harm必须写康拉德违规用药/注射致死，不能改成设备事故"
+      ],
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "transport": "groq_curl",
+      "elapsed_seconds": 3.988,
+      "usage": {
+        "queue_time": 0.05162598,
+        "prompt_tokens": 4079,
+        "prompt_time": 0.218990273,
+        "completion_tokens": 638,
+        "completion_time": 2.31639341,
+        "total_tokens": 4717,
+        "total_time": 2.535383683
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-15T16:02:08+08:00",
+      "prompt_sha256": "e1810bcbf7e1b8ef31ce2ebee7a1d89f631e957224ac3ef7fa867a7c78d5bcf5",
+      "raw_response_sha256": "d61ca09759c0310799b6fe5cc11cfae9957d88f82c31f04ec21c1bf4c1bc5ed3",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_direction_EC001_attempt_03_37d7696cb5_raw.txt",
+      "validation_failures": [],
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "transport": "groq_curl",
+      "elapsed_seconds": 19.874,
+      "usage": {
+        "queue_time": 0.050641086,
+        "prompt_tokens": 3925,
+        "prompt_time": 0.219045022,
+        "completion_tokens": 507,
+        "completion_time": 1.573709418,
+        "total_tokens": 4432,
+        "total_time": 1.79275444
+      }
+    }
+  ]
+}

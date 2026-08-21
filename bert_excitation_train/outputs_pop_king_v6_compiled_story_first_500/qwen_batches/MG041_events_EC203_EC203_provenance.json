@@ -1,0 +1,57 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC203_EC203",
+  "identifier": "MG041",
+  "accepted_attempt": 3,
+  "base_prompt_sha256": "380db8be0d37724815358b09925f01d494f8b7783c99f38ab84dc0c3cf043c3c",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-21T11:24:46+08:00",
+      "prompt_sha256": "380db8be0d37724815358b09925f01d494f8b7783c99f38ab84dc0c3cf043c3c",
+      "raw_response_sha256": "648c761ced91098d5e41a4dc86d6f0f88c478df9a183ac19a6c3456e3a9bbfa9",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG041_events_EC203_EC203_attempt_01_380db8be0d_raw.txt",
+      "validation_failures": [
+        "EC203提前消费后续事件的法院查封/冻结令结算；当前父级方向未授权该结果"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 38.514,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-21T11:25:32+08:00",
+      "prompt_sha256": "04a75077f621b8f77675b5ec34f2c162eef3397c40e18ed101cfbd8364683f2b",
+      "raw_response_sha256": "93b8a0b63bd4c61d7fa80993505e850c8ddb44f968a6123fa5d10b7007a1a7c1",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG041_events_EC203_EC203_attempt_02_380db8be0d_raw.txt",
+      "validation_failures": [
+        "EC203提前消费后续事件的法院查封/冻结令结算；当前父级方向未授权该结果",
+        "EC203不得让2009年晚年医生康拉德在第451章前的今生时间线实体登场"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 45.314,
+      "usage": {}
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-21T11:26:13+08:00",
+      "prompt_sha256": "6d1311af292594f438d5626f5d6fb65ebae2cfcf7a037f53df8c60582705436e",
+      "raw_response_sha256": "d09f71fbdd5de0d9c0ae04d9b247da13328fa4cf30f3bec0cb7d72a811cce073",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG041_events_EC203_EC203_attempt_03_380db8be0d_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 41.075,
+      "usage": {}
+    }
+  ]
+}

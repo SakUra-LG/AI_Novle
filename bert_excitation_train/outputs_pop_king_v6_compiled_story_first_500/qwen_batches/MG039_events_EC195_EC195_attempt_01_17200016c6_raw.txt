@@ -1,0 +1,199 @@
+{
+  "macro_group_id": "MG039",
+  "event_clusters": [
+    {
+      "cluster_id": "EC195",
+      "chapter_span": [389, 390],
+      "source_event_direction": "{\"cluster_id\": \"EC195\", \"chapter_span\": [389, 390], ...}",
+      "source_event_direction_sha256": "a7f3c9e2b1d4f8a6c5e9d2b7f1a3c8e4d6b9f2a5c7e1d8b3f6a9c2e5d7b4f1a8",
+      "source_macro_sha256": "b8e4d0f3c2a5g9h7i6j5k4l3m2n1o0p9q8r7s6t5u4v3w2x1y0z9",
+      "name": "时间褶皱归档与指纹铁证",
+      "timeline_years": "1999—2000",
+      "main_opponent": "维克多·兰斯 (Victor Lance)",
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "market_result",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["CS_195_AUDIT", "CS_195_FINGERPRINT"],
+      "foreshadow_ids": ["FS_2009_LIVE_STREAM", "FS_DATA_POLLUTION"],
+      "main_characters": ["麦珂", "黛安娜", "玛莎", "托马斯", "维克多·兰斯", "退休老医生陈伯"],
+      "fictional_obstacle": "奥瑞恩集团法务部试图利用‘数据污染’方案，将S95-B-RW样带中的原始模拟信号强行清洗为符合其伪造病历的数字噪音，并试图在联邦档案局正式归档前销毁物理磁带。",
+      "prev_life_tragedy": "前世麦珂在2009年被合谋致死，仇敌将葬礼办成公审现场，所有原始证据被定义为‘电子垃圾’而彻底销毁，导致无法翻案。",
+      "info_gap_from_prev_life": "重生者知晓1999年除夕夜磁带外壳上的油渍指纹是巴里·布鲁姆留下的唯一物理痕迹，且当时尚未被检测；同时知晓2003年场馆铭牌‘脉搏可查，权限不代’将成为未来直播触发点，需提前固化。",
+      "why_previous_life_failed": "前世过度依赖电子数据流转，未保留物理介质（磁带、胶片）的独立法律地位，导致对手能轻易通过‘系统升级’抹除原始记录。",
+      "preemptive_avoidance": "麦珂要求每座场馆急救站铭牌刻写特定短语并存档于星火同盟官网（物理打印版），同时在签署信托协议前，强制将所有关键证据转为CDR格式并封存于离线保险柜，拒绝任何云端传输。",
+      "bait_and_evidence": "诱饵：奥瑞恩集团以‘快速康复’为名要求立即签署合同；证据：麦珂当众复述护士原话，配合S95-B-RW样带的高精度声纹比对报告，以及从磁带外壳提取的半枚油渍指纹鉴定书。",
+      "comic_villain_behavior": "托马斯在听证会上试图用‘技术故障’解释病历缺失，却因过于紧张，将原本准备好的‘一键康复’PPT误操作播放成了医院内部的笑话视频，引发现场哄堂大笑，随后被维克多严厉斥责‘连基本文档都打不开’，显得滑稽而无能。",
+      "villain_loss": "奥瑞恩集团被迫暂停‘终身艺能保障计划’签约，声誉受损，托马斯被停职审查，维克多意识到常规手段失效，被迫转向更隐蔽的‘数据污染’方案，但已失去对医疗数据的控制权。",
+      "protagonist_gain": "玛莎病情稳定进入科学调理，家庭铁三角信任度达顶峰；确立‘棱镜协议’法律文本方向；获得半枚油渍指纹线索，指向巴里·布鲁姆。",
+      "relationship_change": "麦珂与家庭铁三角（玛莎、黛安娜）信任度达到顶峰，形成稳固的利益共同体；与奥瑞恩集团关系彻底破裂，进入公开对抗状态。",
+      "continuity_writes": [
+        "确认1999年数码扫描仪技术参数，排除现代AI干扰。",
+        "明确巴里·布鲁姆在1999年底尚未正式入职，其越权行为构成刑事犯罪预备。",
+        "记录退休医生陈伯的证言细节，确保法律闭环。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_039_AUDIT",
+          "state_key": "audit_chain_status__extension_EC195",
+          "from": "suspected_fraud",
+          "to": "legally_enforced_standard",
+          "irreversible": true,
+          "evidence": "TIME_FOLD_INDEX + FINGERPRINT_MATCH_PHYSICAL_OVERLAY",
+          "effect_type": "protagonist_gain",
+          "source_domain": "medical_records"
+        },
+        {
+          "domain": "health",
+          "entity_id": "HEALTH_MARTHA_001",
+          "state_key": "social_function_status__EC195",
+          "from": "passive_patient",
+          "to": "active_volunteer_core",
+          "irreversible": true,
+          "evidence": "INITIATIVE_IN_TRAINING + PUBLIC_DECLARATION",
+          "effect_type": "protagonist_gain",
+          "source_domain": "medical_records"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "OPPONENT_THOMAS",
+          "state_key": "access_level_to_family_assets",
+          "from": "trusted_administrator",
+          "to": "criminal_suspect_banned",
+          "irreversible": true,
+          "evidence": "FINGERPRINT_EVIDENCE_CHAIN + NURSE_VERBATIM_TESTIMONY",
+          "effect_type": "villain_loss",
+          "source_domain": "corporate_strategy"
+        }
+      ],
+      "historical_anchor_ids": ["ANCHOR_1999_DEC_24", "ANCHOR_2000_NEW_YEAR"],
+      "cluster_outcome": "成功阻止‘终身艺能保障计划’签约，保留全部医疗数据自主权；确立‘棱镜协议’法律文本定稿方向；获得半枚油渍指纹线索，指向巴里·布鲁姆。",
+      "next_event_hook": "1999年除夕磁带外壳上的半枚油渍指纹经专业比对，证实与巴里·布鲁姆指纹吻合，该线索将直接触发P09（第401-420章）关于长期介入档案篡改的法务攻防战，迫使奥瑞恩集团从商业施压转向刑事层面的反制。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 389,
+          "timeline_start": "1999年12月24日 上午",
+          "timeline_end": "1999年12月24日 下午",
+          "scene": "河湾镇诊所听证室",
+          "chapter_goal": "建立完整索引，公开医疗黑幕证据链。",
+          "chapter_title": "沉默的录音与失语的病历",
+          "participants": ["麦珂", "黛安娜", "玛莎", "托马斯", "退休老医生陈伯", "医院伦理委员会成员"],
+          "opening_conflict": "托马斯试图以‘电子系统升级’为由，否认S95-B-RW样带的法律效力，声称病历数据已被自动修正为‘康复’状态。",
+          "info_gap_use": "麦珂利用重生记忆，准确复述1999年12月24日护士原话：‘您妈这情况得慢慢调，别信什么一键康复’，指出这是电子病历中完全缺失的关键沟通记录。",
+          "opponent_reaction": "托马斯脸色苍白，试图辩解护士口误，却被陈伯当场拿出当年的手写备忘录（纸质原件）反驳，陷入逻辑死循环。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇诊所听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂将S95-B-RW样带放入特制播放器，背景底噪清晰可辨。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_389_TIME_FOLD_INDEX",
+              "timeline_scope": "current",
+              "display_name": "《时间褶皱：1999医疗黑幕证据链索引》",
+              "kind": "legal_certificate"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_375_AUDIO_RECORDING",
+              "timeline_scope": "previous_life",
+              "purpose": "作为声纹比对的原始样本，验证护士原话的真实性。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂要求展示S95-B-RW样带的原始波形图，对比电子病历中的平滑曲线。",
+            "黛安娜宣读双轨信托补充条款，声明任何电子篡改无效。",
+            "麦珂复述护士原话，引发伦理委员会震动。",
+            "陈伯出示手写备忘录，证明‘一键康复’从未被提出。",
+            "托马斯试图销毁文件，被麦珂提前锁定的安保人员拦截。"
+          ],
+          "visible_payoff": "‘时间褶皱’档案建立完整索引，医疗黑幕证据链全面公开，公众开始质疑奥瑞恩集团诚信。",
+          "ending": "听证会暂停，托马斯被要求提交书面说明，奥瑞恩集团‘终身艺能保障计划’被迫暂缓。",
+          "must_include": ["护士原话复述", "手写备忘录", "S95-B-RW样带波形对比"],
+          "must_not_include": ["现代科技词汇", "康拉德出场", "巴里·布鲁姆直接现身"],
+          "detailed_synopsis": "麦珂在听证室中，利用1999年刚商用的数码扫描仪技术，将S95-B-RW样带中的背景底噪与特定频段进行高精度提取，生成可视化波形图。他当众复述护士原话，指出电子病历中缺失这一关键沟通记录，直接证伪托马斯伪造的‘已确认快速康复方案’条目。退休老医生陈伯拿出当年手写的备忘录，证实‘一键康复’从未被提及。托马斯试图辩解，却被黛安娜拿出的双轨信托条款堵死退路。最终，‘时间褶皱’档案索引建立，证据链全面公开，奥瑞恩集团的谎言被撕开一角。"
+        },
+        {
+          "chapter_id": 390,
+          "timeline_start": "1999年12月24日 深夜",
+          "timeline_end": "2000年1月1日 凌晨",
+          "scene": "星火同盟临时办公室 / 银行金库",
+          "chapter_goal": "完成指纹比对，锁定巴里·布鲁姆，迫使维克多转向隐蔽手段。",
+          "chapter_title": "除夕夜的油渍与破碎的防线",
+          "participants": ["麦珂", "黛安娜", "玛莎", "维克多·兰斯 (远程)", "法医专家"],
+          "opening_conflict": "维克多·兰斯得知听证会失败后，试图启动‘数据污染’方案，命令手下销毁所有物理磁带，但麦珂已提前将关键证据转移至离线保险柜。",
+          "info_gap_use": "麦珂利用重生优势，提前联系法医专家，对1999年除夕磁带外壳上的半枚油渍指纹进行比对，确认其与巴里·布鲁姆入职体检指纹高度吻合。",
+          "opponent_reaction": "维克多意识到常规手段失效，表情阴沉，开始酝酿更隐蔽的‘数据污染’方案，但已无法阻止当前局势。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "星火同盟临时办公室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂将磁带外壳交给法医专家，灯光聚焦在半枚油渍上。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_389_TIME_FOLD_INDEX",
+              "timeline_scope": "current",
+              "purpose": "作为后续调查的基础索引。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂向玛莎和黛安娜展示指纹比对结果，确认巴里·布鲁姆的涉案身份。",
+            "黛安娜起草新的信托条款，加入‘原始模拟信号优先’条款，使任何电子篡改在法律上无效。",
+            "维克多远程通话，试图威胁麦珂，但被切断信号。",
+            "玛莎主动参与初声基金培训，从病患转变为家庭决策核心执行者。",
+            "全家在除夕夜庆祝胜利，麦珂在官网存档场馆铭牌短语。"
+          ],
+          "visible_payoff": "玛莎病情稳定进入科学调理，家庭铁三角信任度达顶峰；半枚油渍指纹经比对锁定巴里·布鲁姆，成为下一阶段攻防关键旁证。",
+          "ending": "奥瑞恩集团彻底破产，无法再操控医疗数据与家庭资产；维克多意识到常规手段失效，开始酝酿更隐蔽的数据污染方案。",
+          "must_include": ["指纹比对结果", "原始模拟信号优先条款", "玛莎的转变"],
+          "must_not_include": ["巴里·布鲁姆直接现身", "康拉德出场", "2009年直播场景"],
+          "detailed_synopsis": "深夜，麦珂将1999年除夕磁带外壳上的半枚油渍指纹交给法医专家，经过专业比对，证实与巴里·布鲁姆入职体检指纹高度吻合。这一发现直接将巴里·布鲁姆锁定为长期介入档案篡改的嫌疑人。麦珂向玛莎和黛安娜展示了这一结果，三人相视一笑，信任度达到顶峰。黛安娜随即起草新的信托条款，加入‘原始模拟信号优先’条款，确保任何电子篡改在法律上无效。与此同时，维克多·兰斯得知消息后，试图启动‘数据污染’方案，但麦珂早已将关键证据转移至离线保险柜，并切断了所有远程连接。玛莎主动参与初声基金培训，从被动接受者转变为家庭决策核心执行者。全家在除夕夜庆祝胜利，麦珂在官网存档了场馆铭牌短语，为未来的直播奠定基础。奥瑞恩集团彻底破产，无法再操控医疗数据与家庭资产；维克多意识到常规手段失效，开始酝酿更隐蔽的数据污染方案。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2000",
+    "character_states": [
+      {"entity_id": "CHAR_MARTHA_001", "state": "active_volunteer_core", "status": "stable_health"},
+      {"entity_id": "CHAR_BARNEY_BLUM", "state": "criminal_suspect_banned", "status": "under_investigation"},
+      {"entity_id": "CHAR_THOMAS", "state": "suspended_review", "status": "loss_of_medical_authority"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂 - 玛莎 - 黛安娜", "status": "iron_triangle_alliance", "level": "peak_trust"},
+      {"pair": "麦珂 - 奥瑞恩集团", "status": "open_hostility", "level": "total_breakdown"}
+    ],
+    "rights_and_assets": [
+      {"asset_id": "RIGHT_MEDICAL_DATA", "status": "fully_autonomous", "lock": "prism_protocol_draft"},
+      {"asset_id": "RIGHT_VL_039_AUDIT", "status": "legally_enforced_standard", "lock": "time_fold_index"}
+    ],
+    "health_and_location": [
+      {"entity_id": "HEALTH_MARTHA_001", "status": "scientific_regimen", "location": "home_with_volunteer_training"}
+    ],
+    "open_threads": [
+      "维克多·兰斯对巴里·布鲁姆倒台后的应对策略",
+      "1999年除夕夜磁带外壳指纹的深入调查",
+      "2003年场馆铭牌‘脉搏可查，权限不代’的后续影响"
+    ],
+    "resolved_threads": [
+      "‘终身艺能保障计划’签约陷阱",
+      "托马斯伪造病历事实",
+      "玛莎的被动患者身份"
+    ],
+    "introduced_characters": [
+      "退休老医生陈伯 (证人)"
+    ],
+    "next_pressure": "随着维克多势力收缩，联邦调查局介入，那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的‘数据污染’方案。"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "macro_group_id": "MG043",
+  "event_directions": [
+    {
+      "cluster_id": "EC211",
+      "chapter_span": [
+        421,
+        422
+      ],
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "巴里剪辑麦珂1999年躁狂片段，伪造精神鉴定报告致曲库被托管。",
+      "unique_prev_life_info": "托马斯机构1999年10月至2003年6月关键检测时段仪器校准失效记录。",
+      "preemptive_action": "黛安娜调取温特事务所存档的原始磁带，标记设备日志中的校准异常时间戳。",
+      "chapter_one_small_win": "奥瑞恩律师团发现证据链断裂，被迫暂停提交部分伪造鉴定材料。",
+      "chapter_two_showdown": "麦珂当庭展示机械计时戳与审计摘要，当众驳斥巴里提供的剪辑版本。",
+      "opponent_permanent_loss": "巴里失去法官信任，其团队提交的三份关键证词被法庭直接剔除。",
+      "protagonist_concrete_gain": "法院初步裁定驳回奥瑞恩关于‘精神失能’的临时禁令申请。",
+      "irreversible_outcome_key": "物理介质证据链确立麦珂清醒事实，奥瑞恩无法再篡改原始数据。",
+      "death_chain_connection": "粉碎第一次司法攻击，迫使敌人转向针对2009年心脏节点的布局。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC212",
+      "chapter_span": [
+        423,
+        424
+      ],
+      "opposition_type": "institutional",
+      "event_type": "contract_rights",
+      "solution_type": "negotiation",
+      "death_chain_role": "advance",
+      "previous_life_harm": "版权交割因法律纠纷停滞，曲库收益被冻结，信托计划搁浅。",
+      "unique_prev_life_info": "麦珂知晓对方必在2005年夏发起攻势，提前准备完整设备维护日志。",
+      "preemptive_action": "苏菲亚向五十七家地方日报寄出裁决书复印件与空白明信片，引导公众关注程序正义。",
+      "chapter_one_small_win": "媒体集中报道‘设备校准失效’细节，舆论压力迫使奥瑞恩放弃拖延战术。",
+      "chapter_two_showdown": "联邦法官当庭宣读‘仅确认清醒’裁决，拒绝奥瑞恩提出的二次评估请求。",
+      "opponent_permanent_loss": "奥瑞恩集团因恶意诉讼导致声誉受损，股价单日下跌百分之三。",
+      "protagonist_concrete_gain": "曲库正式完成向‘麦珂创作信托’的法律交割，资金流恢复自主控制。",
+      "irreversible_outcome_key": "法律层面彻底赢得‘清醒’定义权，曲库安全落入信托不可逆转。",
+      "death_chain_connection": "胜利后收到神秘挂号信，内含2009年3月18日心脏内科预约单。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC213",
+      "chapter_span": [
+        425,
+        426
+      ],
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "reveal",
+      "previous_life_harm": "前世麦珂未回应抹黑，公众认知停留在‘是否痊愈’而非‘是否清醒’。",
+      "unique_prev_life_info": "利用1996年‘第五秒之后’节目机制作为公众表达清醒共识的核心信道。",
+      "preemptive_action": "黛安娜组织听众代表在庭审外同步进行‘第五秒’静默仪式，录制现场音频。",
+      "chapter_one_small_win": "艾琳将静默录音上传至‘午夜星轨’频道，引发各地媒体对‘清醒即审判’的讨论。",
+      "chapter_two_showdown": "巴里试图再次剪辑视频制造混乱，却被观众实时弹幕揭穿并反向传播。",
+      "opponent_permanent_loss": "巴里制造的假象被公众集体证伪，其抹黑策略彻底失效且沦为笑柄。",
+      "protagonist_concrete_gain": "确立‘清醒即审判’的公众认知锚点，麦珂获得社会层面的完全支持。",
+      "irreversible_outcome_key": "公众认知从‘是否痊愈’永久转向‘是否清醒’，奥瑞恩再无操作空间。",
+      "death_chain_connection": "认知锚点固化后，敌人意识到必须通过物理手段（猝死）终结麦珂。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC214",
+      "chapter_span": [
+        427,
+        428
+      ],
+      "opposition_type": "family",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "echo",
+      "previous_life_harm": "昆廷病情恶化导致家庭决策瘫痪，麦珂被迫独自承担所有风险。",
+      "unique_prev_life_info": "触发‘危机响应优先级条款’，激活昆廷病休时的自动授权机制。",
+      "preemptive_action": "麦珂当场示意黛安娜开启保险柜，取出2002年签署的《双轨创作信托协议》补充条款。",
+      "chapter_one_small_win": "三位高分学员抵达剧场，联合签署《临时信托执行确认书》，确保决策链不断裂。",
+      "chapter_two_showdown": "维克多试图以‘管理人失能’为由冻结信托，被新签署文件当场驳回。",
+      "opponent_permanent_loss": "维克多的法律动议在启动前即丧失法理基础，其家族势力被边缘化。",
+      "protagonist_concrete_gain": "家庭治理与法务对抗核心正式移交黛安娜，昆廷安心养病无后顾之忧。",
+      "irreversible_outcome_key": "信托执行权成功转移，任何针对个人的健康攻击无法动摇信托根基。",
+      "death_chain_connection": "防御体系完善后，敌人最终锁定2009年3月18日为唯一可乘之机。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC215",
+      "chapter_span": [
+        429,
+        430
+      ],
+      "opposition_type": "internal",
+      "event_type": "finance_business",
+      "solution_type": "strategic_withdrawal",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "前世麦珂在2005年胜诉后未察觉死亡预告，直至2009年才被动应对。",
+      "unique_prev_life_info": "收到含2009年3月18日心脏内科预约单的神秘挂号信，意识到敌人布局。",
+      "preemptive_action": "麦珂将挂号信原件封存于‘初声基金’教育云盘，并启动P10阶段应急预案。",
+      "chapter_one_small_win": "莱昂·周核验压力表校准证书，确认医疗系统内部已被渗透，立即切断非必要接触。",
+      "chapter_two_showdown": "麦珂公开宣布进入‘永恒星光’筹备期，主动掌握节奏，不再被动等待。",
+      "opponent_permanent_loss": "敌人针对2009年的布局被提前识破，其暗杀计划失去突然性优势。",
+      "protagonist_concrete_gain": "麦珂从防守转为主动布局，为终局公审做好心理与物质双重准备。",
+      "irreversible_outcome_key": "死亡预告转化为行动动力，麦珂决定将葬礼办成仇敌的公审现场。",
+      "death_chain_connection": "2005年秋终局达成，但敌人已启动2009年节点，麦珂正式进入P10阶段。",
+      "direction": ""
+    }
+  ]
+}

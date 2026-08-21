@@ -1,0 +1,119 @@
+{
+  "generated_by": "qwen",
+  "kind": "blueprint",
+  "identifier": "V04",
+  "accepted_attempt": "04",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-04T16:33:03+08:00",
+      "prompt_sha256": "7871020a0e63f46a087df1a8eaa1c49c3f075bbf2d1568991c44a256bf494a3c",
+      "raw_response_sha256": "2836ad9b491f7a8620bcf29ba8de3cc9492c0bb6983c5d89abe6645f805bf7f7",
+      "raw_response_file": "V04_blueprint_attempt_01_raw.txt",
+      "validation_failures": [
+        "MG016第1个方向cluster_id必须为EC076",
+        "MG016第2个方向cluster_id必须为EC077",
+        "MG016第3个方向cluster_id必须为EC078",
+        "MG016第4个方向cluster_id必须为EC079",
+        "MG016第5个方向cluster_id必须为EC080",
+        "MG017第1个方向cluster_id必须为EC081",
+        "MG017第2个方向cluster_id必须为EC082",
+        "MG017第3个方向cluster_id必须为EC083",
+        "MG017第4个方向cluster_id必须为EC084",
+        "MG017第5个方向cluster_id必须为EC085",
+        "MG018第1个方向cluster_id必须为EC086",
+        "MG018第2个方向cluster_id必须为EC087",
+        "MG018第3个方向cluster_id必须为EC088",
+        "MG018第4个方向cluster_id必须为EC089",
+        "MG018第5个方向cluster_id必须为EC090",
+        "MG019第1个方向cluster_id必须为EC091",
+        "MG019第2个方向cluster_id必须为EC092",
+        "MG019第3个方向cluster_id必须为EC093",
+        "MG019第4个方向cluster_id必须为EC094",
+        "MG019第5个方向cluster_id必须为EC095",
+        "MG020第1个方向cluster_id必须为EC096",
+        "MG020第2个方向cluster_id必须为EC097",
+        "MG020第3个方向cluster_id必须为EC098",
+        "MG020第4个方向cluster_id必须为EC099",
+        "MG020第5个方向cluster_id必须为EC100",
+        "EC100.direction必须是至少20字的独立两章事件方向"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 19.333,
+      "usage": {
+        "input_tokens": 2752,
+        "output_tokens": 2671,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 5423
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-04T16:33:22+08:00",
+      "prompt_sha256": "f47fe2d6add88e8074f5720c58a2366dce133e076685012124b53de011d859a8",
+      "raw_response_sha256": "3f21d211390f7c324940108513f4b4ae247c2128e060c6d5370b6c14491fab9a",
+      "raw_response_file": "V04_blueprint_attempt_02_raw.txt",
+      "validation_failures": [
+        "EC100.direction必须是至少20字的独立两章事件方向"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 19.275,
+      "usage": {
+        "input_tokens": 5667,
+        "output_tokens": 2595,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "total_tokens": 8262
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-04T16:33:43+08:00",
+      "prompt_sha256": "777713096d4366d00408112005bb3b8906c2381767ce1d94fc5bc7f55317be9f",
+      "raw_response_sha256": "3f21d211390f7c324940108513f4b4ae247c2128e060c6d5370b6c14491fab9a",
+      "raw_response_file": "V04_blueprint_attempt_03_raw.txt",
+      "validation_failures": [
+        "EC100.direction必须是至少20字的独立两章事件方向"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 21.113,
+      "usage": {
+        "input_tokens": 5395,
+        "output_tokens": 2595,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 7990
+      }
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-04T16:34:04+08:00",
+      "prompt_sha256": "777713096d4366d00408112005bb3b8906c2381767ce1d94fc5bc7f55317be9f",
+      "raw_response_sha256": "3f21d211390f7c324940108513f4b4ae247c2128e060c6d5370b6c14491fab9a",
+      "raw_response_file": "V04_blueprint_attempt_04_raw.txt",
+      "validation_failures": [
+        "EC100.direction必须是至少20字的独立两章事件方向"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 20.995,
+      "usage": {
+        "input_tokens": 5395,
+        "output_tokens": 2595,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 7990
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC215_EC215",
+  "identifier": "MG043",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "fc7c695a076cedb1807507b167ff99d0be458ff636af8239601f06dd232078c6",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-21T11:39:17+08:00",
+      "prompt_sha256": "fc7c695a076cedb1807507b167ff99d0be458ff636af8239601f06dd232078c6",
+      "raw_response_sha256": "63e091219060814545c5b081e65c95497395f29883e695a6cf302d4267d1c791",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG043_events_EC215_EC215_attempt_01_fc7c695a07_raw.txt",
+      "validation_failures": [
+        "EC215不得让2009年晚年医生康拉德在第451章前的今生时间线实体登场"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 29.145,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-21T11:39:46+08:00",
+      "prompt_sha256": "40ba07565c341ac316bb2cc429e757b54692676eadc4513d5d890713413ecb99",
+      "raw_response_sha256": "9ddac6d66894fd06dc6e4f43ad1e75b5f027da57ca32f9d921658a2da45cc36f",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG043_events_EC215_EC215_attempt_02_fc7c695a07_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 29.504,
+      "usage": {}
+    }
+  ]
+}

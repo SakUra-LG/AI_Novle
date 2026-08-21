@@ -1,0 +1,64 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "macro_directions_EC136_EC140",
+  "identifier": "MG028",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "fb8b8dcfdff72a199f3b044775f14b398f5230f6c607062d76ab3afeeadea978",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-15T17:48:55+08:00",
+      "prompt_sha256": "fb8b8dcfdff72a199f3b044775f14b398f5230f6c607062d76ab3afeeadea978",
+      "raw_response_sha256": "47a63c6fa477e4e9a2fc64fdea347bf3143fc702f73c66d2bde90eba33254924",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG028_macro_directions_EC136_EC140_attempt_01_fb8b8dcfdf_raw.txt",
+      "validation_failures": [
+        "EC136.death_chain_connection至少8字",
+        "EC137.death_chain_connection至少8字",
+        "EC138.death_chain_connection至少8字",
+        "EC139.death_chain_connection至少8字",
+        "EC140.death_chain_connection至少8字"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 14.123,
+      "usage": {
+        "prompt_tokens": 3573,
+        "completion_tokens": 1566,
+        "total_tokens": 5139,
+        "prompt_tokens_details": {
+          "cached_tokens": 2168
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-15T17:49:10+08:00",
+      "prompt_sha256": "94ba4052bcc7dee816cdc7858938ae2aaf6e6f14f028416b48e12d0ac7c0518b",
+      "raw_response_sha256": "61760b11438d8d4088356be0e9c4abf66c72a4968fd02846ccffed2094874981",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG028_macro_directions_EC136_EC140_attempt_02_fb8b8dcfdf_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 15.101,
+      "usage": {
+        "prompt_tokens": 3693,
+        "completion_tokens": 1681,
+        "total_tokens": 5374,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ],
+  "structural_normalizations": [
+    "cluster_id",
+    "chapter_span",
+    "B001_locked_enums_and_story_brief"
+  ],
+  "normalized_parsed_sha256": "ea8263f922d8a5424d2912318d85040dfcbc54ffa0f5d99e5345dcd0dbb305f0"
+}

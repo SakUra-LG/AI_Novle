@@ -1,0 +1,93 @@
+{
+  "generated_by": "qwen",
+  "kind": "chapters",
+  "identifier": "MG001",
+  "accepted_attempt": null,
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-04T16:55:37+08:00",
+      "prompt_sha256": "8ecd352608670f1b340bab4ba419d3771c90daa13e8d336961be6f413ea85b47",
+      "raw_response_sha256": "82c9d244d6293500b31e666402097545f6f9a6909ca0a061838574d952510e47",
+      "raw_response_file": "MG001_chapters_attempt_01_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 147 column 6 (char 12504)"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 124.514,
+      "usage": {
+        "input_tokens": 9594,
+        "output_tokens": 8192,
+        "total_tokens": 17786,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-04T16:57:42+08:00",
+      "prompt_sha256": "0de19739cd9ca03cce02c6e4975991f8ca8e47c2ca81f20418304be2a26b8df6",
+      "raw_response_sha256": "3ed5061616282c3b871bfddd1310e7bfce96d90c5c3db1f745c9ea81da098a5c",
+      "raw_response_file": "MG001_chapters_attempt_02_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 147 column 6 (char 12558)"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 124.911,
+      "usage": {
+        "input_tokens": 17052,
+        "output_tokens": 8192,
+        "total_tokens": 25244,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-04T16:59:48+08:00",
+      "prompt_sha256": "521fce2b6f2a0a2d758470a807a7d534e63f8e2e9da7ff218af0d1dfdb0e0878",
+      "raw_response_sha256": "809be916015bf3badb788750ac65ba02aa6862a28c4779b239b3f25ffa9feadb",
+      "raw_response_file": "MG001_chapters_attempt_03_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 147 column 6 (char 12479)"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 125.478,
+      "usage": {
+        "input_tokens": 17052,
+        "output_tokens": 8192,
+        "total_tokens": 25244,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-04T17:02:50+08:00",
+      "prompt_sha256": "32518950909ed3a24207c31daf070d1f42341a356a0eb1304f49c80c1bb57f3f",
+      "raw_response_sha256": "f5821a106e9bcf6e24c71ec8955b23093fc52e0f4cde9494e2ff5728e7601537",
+      "raw_response_file": "MG001_chapters_attempt_04_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 147 column 6 (char 12493)"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 182.272,
+      "usage": {
+        "input_tokens": 17052,
+        "output_tokens": 8192,
+        "total_tokens": 25244,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

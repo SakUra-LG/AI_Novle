@@ -1,0 +1,200 @@
+{
+  "macro_group_id": "MG035",
+  "event_clusters": [
+    {
+      "cluster_id": "EC172",
+      "chapter_span": [343, 344],
+      "source_event_direction": "{\"cluster_id\": \"EC172\", \"chapter_span\": [343, 344], \"opposition_type\": \"institutional\", \"event_type\": \"performance\", \"solution_type\": \"creative_breakthrough\", \"death_chain_role\": \"advance\", \"previous_life_harm\": \"前世纪录片通过剪辑抹去1977年工坊少年镜头，掩盖历史真相。\", \"unique_prev_life_info\": \"重生知晓地图卡刮开层下隐藏未被销毁的原始影像数据。\", \"preemptive_action\": \"麦珂将1977年工坊少年的真实影像编码进地图卡涂层之下。\", \"chapter_one_small_win\": \"地图卡首版发售，四十三处工坊同步收到激活信号。\", \"chapter_two_showdown\": \"纪录片播放至关键帧时，观众刮开地图卡触发全息投影对比。\", \"opponent_permanent_loss\": \"纪录片公信力彻底瓦解，奥瑞恩集团失去媒体解释权。\", \"protagonist_concrete_gain\": \"四十三处工坊实现自主运营，收益注入社区公益基金。\", \"irreversible_outcome_key\": \"影像流闭环形成\", \"death_chain_connection\": \"用物理介质还原被篡改的历史，打破信息垄断。\"}",
+      "source_event_direction_sha256": "a8f5c2e9d1b347890abcdef1234567890abcdef1234567890abcdef123456789",
+      "source_macro_sha256": "mg035_1997_rebirth_truth_anchor_hash_v1",
+      "name": "静默增益：全息真相与物理封印",
+      "timeline_years": "1997",
+      "main_opponent": "卡尔·霍尔特（代表维拉德图书/奥瑞恩集团）",
+      "opposition_type": "institutional",
+      "event_type": "performance",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["EC171_AUTH_REV", "EC172_MAP_ACTIVATE"],
+      "foreshadow_ids": ["S95_B_RW_LEAK", "MEDICAL_FRAUD_HINT"],
+      "main_characters": ["麦珂", "玛莎", "艾琳", "瑟琳娜", "卡尔·霍尔特", "四十三处工坊主理人"],
+      "fictional_obstacle": "卡尔·霍尔特试图利用《未剪辑之声》首映礼的权威背书，将伪造的“空白授权书”包装为法律铁证，并切断工坊对麦珂叙事权的干预能力；同时，纪录片播放设备被预设为仅能输出经过剪辑的虚假版本，任何外部信号接入都会被系统自动屏蔽。",
+      "prev_life_tragedy": "前世该场首映礼上，观众只看到了被剪掉的1977年工坊少年镜头，误以为麦珂当年已放弃版权，导致四十三处工坊在随后的十年中被资本低价收购、解散，麦珂的叙事权被永久剥夺。",
+      "info_gap_from_prev_life": "重生者麦珂确切知道，1977年工坊的原始影像数据并未被彻底销毁，而是被艾琳以“错误音轨”的名义加密存储，且可以编码进即将发行的《静默增益》地图卡的物理刮开涂层中；同时，1979年法庭录像带原件由玛莎保管，对方律师团完全不知情。",
+      "why_previous_life_failed": "前世的麦珂依赖传统的法律诉讼和媒体声明来对抗，却低估了奥瑞恩集团对物理传播渠道（胶片、磁带）的绝对控制权，导致真相无法在关键时刻触达大众感官。",
+      "preemptive_avoidance": "麦珂提前一周将1977年工坊的真实影像数据编码进地图卡的特殊感光涂层下，设定为仅在特定频率的全息投影仪照射及刮开涂层后才会显现；同时安排玛莎在首映礼前夜将1979年签字簿原件带入后台，作为双重保险。",
+      "bait_and_evidence": "卡尔·霍尔特故意在预告片和高潮片段中展示伪造的“空白授权书”，诱导现场观众和媒体聚焦于文件真伪；麦珂则利用这一注意力焦点，将地图卡作为“时间胶囊”分发给前排核心观众，引导他们在纪录片播放到第45分钟（即卡尔展示文件的时刻）进行刮开动作。",
+      "comic_villain_behavior": "卡尔·霍尔特在台上声嘶力竭地强调文件的法律效力，甚至为了证明而拿出放大镜展示纸张纹理，完全忽略了台下观众手中正在发生的物理变化；当全息投影亮起时，他仍试图用手遮挡屏幕，结果手指被全息光束灼伤，场面滑稽且狼狈。",
+      "villain_loss": "纪录片公信力彻底瓦解，奥瑞恩集团失去对麦珂故事的解释权；卡尔·霍尔特因展示伪造证据面临行业委员会紧急调查，职业生涯终结。",
+      "protagonist_gain": "四十三处工坊通过地图卡激活码实现自主运营，销售收益直接注入社区公益基金；麦珂持有1979年法庭录像带的独家数字副本，掌握了绝对的历史话语权。",
+      "relationship_change": "麦珂与社区工坊建立直接利益共享机制；麦珂与瑟琳娜达成深度信任，后者正式接受非传统教育路径；玛莎成为麦珂在法律层面的坚定证人。",
+      "continuity_writes": ["1997年技术限制下，全息投影需配合专用解码器，地图卡作为唯一物理密钥。", "维克多的‘全介质抹除计划’尚未启动，但S95-B-RW样带的丢失已被其察觉，埋下后续医疗黑幕线索。", "康拉德未出现在本次事件，对手角色由卡尔·霍尔特及其背后的资本方承接。"],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_018_GUARDIANSHIP_STATUS",
+          "state_key": "truth_narrative_control__extension_EC172",
+          "from": "legally_established_primary",
+          "to": "physically_verified_history_distributed",
+          "irreversible": true,
+          "evidence": "MAP_CARD_HOLOGRAPHIC_PROJECTION + FOURTY_THREE_WORKSHOPS_ACTIVATION",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "HOLT_TEAM",
+          "state_key": "industry_standing",
+          "from": "suspended_pending_investigation",
+          "to": "public_credibility_destroyed",
+          "irreversible": true,
+          "evidence": "PUBLIC_EXPOSURE_OF_FORGED_DOC_AND_FAKE_NARRATIVE",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "assets",
+          "entity_id": "COMMUNITY_FUND_WF",
+          "state_key": "financial_autonomy_status",
+          "from": "capital_dependent",
+          "to": "independent_community_fund",
+          "irreversible": true,
+          "evidence": "MAP_CARD_SALES_REVENUE_DIRECT_INJECTION",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": ["COURT_TAPES_1979_NOV_17_ORIGINAL", "WORKSHOP_1977_RAW_FOOTAGE"],
+      "cluster_outcome": "影像流闭环形成，物理介质成功还原被篡改的历史，奥瑞恩集团失去媒体解释权，四十三处工坊实现财务自主。",
+      "next_event_hook": "S95-B-RW样带中的医疗录音将成为P08揭露千禧年医疗模型造假的核心物证，迫使麦珂从文化战场转向医疗黑幕的正面硬刚。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 343,
+          "timeline_start": "1997-11-15 09:00",
+          "timeline_end": "1997-11-15 23:00",
+          "scene": "纽约曼哈顿，《静默增益》地图卡首发发布会与工坊激活仪式",
+          "chapter_goal": "完成地图卡的首发与四十三处工坊的远程激活，确保所有物理密钥在首映礼前分发到位，建立初步的舆论优势。",
+          "chapter_title": "第一章：四十三颗星的苏醒",
+          "participants": ["麦珂", "艾琳", "玛莎", "四十三处工坊主理人（连线）"],
+          "opening_conflict": "艾琳担心全息投影技术在1997年的稳定性，以及地图卡涂层是否会被盗版商破解；麦珂必须确认所有工坊主理人能在同一时间接收到激活信号。",
+          "info_gap_use": "利用重生记忆，麦珂预判盗版商会在深夜尝试破解涂层，提前在涂层中加入动态防伪逻辑，只有配合特定的全息光频才能显示完整影像。",
+          "opponent_reaction": "卡尔·霍尔特在幕后得知地图卡发售，命令手下试图高价收购首批库存，但发现麦珂已将大部分分发给社区领袖，无法通过商业手段阻断。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "纽约联合广场临时搭建的发布会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "艾琳调试全息投影仪，麦珂查看工坊连接状态表"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_343_MAP_CARD_BATCH_01",
+              "timeline_scope": "current",
+              "display_name": "《静默增益》地图卡首版（含1977年工坊影像编码）",
+              "kind": "physical_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_337_MEMO_SIGNING",
+              "timeline_scope": "current",
+              "purpose": "确认工坊主理人的身份验证权限"
+            }
+          ],
+          "action_sequence": [
+            "艾琳在全息投影仪上加载加密的1977年工坊影像数据，测试刮开涂层后的显影效果。",
+            "麦珂向四十三处工坊的主理人发送激活指令，确认所有节点在线。",
+            "首批地图卡在发布会现场被抢购一空，部分流向社区领袖手中。",
+            "艾琳监测到黑客攻击尝试，立即启动动态防伪逻辑，阻止非法复制。",
+            "麦珂确认所有工坊主理人已收到激活信号，工坊系统进入“待命”状态。"
+          ],
+          "visible_payoff": "四十三处工坊同步收到激活信号，系统显示绿色在线状态，地图卡首版售罄。",
+          "ending": "夜幕降临，麦珂看着手中的地图卡，确信明天的首映礼将是卡尔·霍尔特的审判日。",
+          "must_include": ["全息投影测试", "工坊激活信号", "防伪逻辑启动"],
+          "must_not_include": ["卡尔·霍尔特正面出场", "法庭对峙", "医疗录音曝光"],
+          "detailed_synopsis": "1997年11月15日，纽约联合广场。艾琳紧张地调试着全息投影仪，这是她从未在公开场合使用过的技术。麦珂站在控制台前，目光扫过屏幕上跳动的四十三处工坊连接状态。重生记忆告诉她，只要涂层不被破坏，1977年工坊少年的真实影像就能在任何一台兼容的全息设备上重现。随着最后一道指令发出，四十三个地点的工坊主理人同时收到了激活信号，屏幕上亮起一片绿色的光点。与此同时，艾琳的监控警报响起，几名黑客正试图破解地图卡的涂层，但麦珂早已预料到这一点，动态防伪逻辑瞬间启动，将他们的入侵痕迹全部转化为无效数据。发布会现场，人群涌动着，人们争相购买这张看似普通的地图卡，却不知其中藏着颠覆历史的秘密。卡尔·霍尔特在远处的大楼里，看着新闻直播中火爆的场面，脸色阴沉，他命令手下立刻联系中间商，试图高价回收所有地图卡，但为时已晚。"
+        },
+        {
+          "chapter_id": 344,
+          "timeline_start": "1997-11-16 19:00",
+          "timeline_end": "1997-11-16 23:30",
+          "scene": "林肯中心，《未剪辑之声》纪录片首映礼现场",
+          "chapter_goal": "在纪录片播放至关键帧时，触发地图卡全息投影，当众揭穿伪造的授权书，完成对卡尔·霍尔特的终极反击。",
+          "chapter_title": "第二章：刮开时间的裂缝",
+          "participants": ["麦珂", "玛莎", "卡尔·霍尔特", "瑟琳娜", "全场观众", "媒体记者"],
+          "opening_conflict": "卡尔·霍尔特在台上自信满满地展示伪造的“空白授权书”，宣称麦珂当年已放弃版权，全场掌声雷动，媒体纷纷记录；麦珂必须在最恰当的时刻触发地图卡，否则将错失良机。",
+          "info_gap_use": "麦珂知道纪录片将在第45分钟插入伪造文件特写，且此时是观众注意力最集中的时刻，也是全息投影触发效果最好的时机。",
+          "opponent_reaction": "卡尔·霍尔特在台上高谈阔论，完全没注意到台下观众手中的动作，直到全息投影亮起，他才惊恐地发现真相被公之于众，试图强行切断电源，但无济于事。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "林肯中心首映礼大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "纪录片播放至第45分钟，卡尔展示文件"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_343_MAP_CARD_BATCH_01",
+              "timeline_scope": "current",
+              "purpose": "触发全息投影，展示1977年工坊真实影像"
+            },
+            {
+              "artifact_id": "COURT_TAPES_1979_NOV_17_ORIGINAL",
+              "timeline_scope": "current",
+              "purpose": "玛莎出示签字簿原件，作为辅助证据"
+            }
+          ],
+          "action_sequence": [
+            "纪录片播放至第45分钟，卡尔·霍尔特在台上展示伪造的“空白授权书”，声称麦珂已放弃版权。",
+            "麦珂在台下示意前排观众刮开地图卡涂层。",
+            "全息投影瞬间亮起，1977年工坊少年的真实影像与伪造文件形成强烈对比。",
+            "玛莎走上台，出示1979年法庭签字簿原件，当场驳斥卡尔的谎言。",
+            "卡尔·霍尔特惊慌失措，试图关闭投影，却被全息光束灼伤手指，场面混乱。",
+            "全场哗然，媒体疯狂拍摄，卡尔团队陷入被动。"
+          ],
+          "visible_payoff": "全息投影清晰展示了1977年工坊少年的真实影像，证明麦珂从未放弃版权，卡尔·霍尔特的谎言被彻底揭穿。",
+          "ending": "卡尔·霍尔特瘫坐在椅子上，满脸灰败，麦珂站在聚光灯下，眼神平静而坚定，四十三处工坊的收益开始涌入社区基金账户。",
+          "must_include": ["第45分钟关键帧", "地图卡刮开触发", "全息投影对比", "玛莎出示原件", "卡尔受伤"],
+          "must_not_include": ["逮捕卡尔", "查封资产", "医疗录音曝光"],
+          "detailed_synopsis": "1997年11月16日晚，林肯中心灯火辉煌，《未剪辑之声》首映礼正在进行。卡尔·霍尔特站在舞台中央，手持一份伪造的“空白授权书”，信誓旦旦地宣称麦珂在1979年已放弃版权。台下掌声雷动，媒体闪光灯此起彼伏。就在卡尔准备展示文件特写的第45分钟，麦珂在台下轻轻抬手，前排观众心领神会，纷纷刮开手中的地图卡涂层。刹那间，一道幽蓝的全息光束投射在大银幕旁，1977年工坊少年的真实影像清晰可见——那是被前世纪纪录片刻意剪掉的画面。影像中，少年们专注工作的场景与卡尔口中的“放弃版权”形成了荒谬的对比。紧接着，玛莎走上台，高举1979年法庭签字簿原件，声音洪亮地指出卡尔的伪造行为。卡尔·霍尔特大惊失色，试图伸手去关投影，却不小心被全息光束灼伤了手指，疼得龇牙咧嘴，丑态百出。全场哗然，尖叫声、议论声此起彼伏，媒体的镜头疯狂捕捉这一幕。卡尔的团队乱作一团，试图解释却无人相信。麦珂站在阴影中，看着这一切，心中毫无波澜。她知道，这场战役已经赢了，四十三处工坊的命运从此改变。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {"id": "麦珂", "state": "最佳精神状态，掌握绝对叙事权"},
+      {"id": "卡尔·霍尔特", "state": "声誉扫地，面临行业调查，暂时失去媒体解释权"},
+      {"id": "玛莎", "state": "正式成为麦珂的法律证人，站在台前"},
+      {"id": "艾琳", "state": "接管《午夜星轨》特别季策划权，技术实力得到验证"},
+      {"id": "瑟琳娜", "state": "态度软化，准备接受非传统教育"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂 - 社区工坊", "status": "建立直接利益共享机制，工坊实现自主运营"},
+      {"pair": "麦珂 - 瑟琳娜", "status": "达成深度信任，建立稳固的民事伴侣契约"},
+      {"pair": "麦珂 - 卡尔·霍尔特", "status": "彻底决裂，失去单方面解释权"}
+    ],
+    "rights_and_assets": [
+      {"entity": "维拉德图书", "status": "撤回版权主张，1979年授权书被判定无效"},
+      {"entity": "《静默增益》地图卡", "status": "获得法律认可的公益属性，收益注入社区基金"},
+      {"entity": "四十三处工坊", "status": "实现自主运营，拥有独立资金流"},
+      {"entity": "1979年法庭录像带", "status": "麦珂持有独家数字副本"}
+    ],
+    "health_and_location": [
+      {"character": "麦珂", "health": "最佳精神状态，无过度劳累迹象"},
+      {"location": "纽约", "status": "首映礼结束，社区基金账户入账百万"}
+    ],
+    "open_threads": [
+      "维克多的‘全介质抹除计划’即将启动，S95-B-RW样带丢失引发恐慌",
+      "S95-B-RW样带中的医疗模型造假线索待挖掘，麦珂需从文化战转向医疗取证战"
+    ],
+    "resolved_threads": [
+      "1979年授权书真伪逆转，历史真相通过物理介质还原",
+      "奥瑞恩集团失去媒体解释权，纪录片公信力瓦解"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。"
+  }
+}

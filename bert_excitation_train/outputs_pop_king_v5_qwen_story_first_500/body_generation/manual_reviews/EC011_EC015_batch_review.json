@@ -1,0 +1,14 @@
+{
+  "cluster_range": [11, 15],
+  "chapter_range": [21, 30],
+  "decision": "pass",
+  "body_manually_edited": false,
+  "coverage": {
+    "full_text_read": [21, 22, 29, 30],
+    "validator_recheck": [21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+    "qwen_raw_hash_and_body_equality": [21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+    "chapter_memory_presence": [21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+  },
+  "han_char_range": [1115, 1638],
+  "max_pair_longest_exact_repeat": 20
+}

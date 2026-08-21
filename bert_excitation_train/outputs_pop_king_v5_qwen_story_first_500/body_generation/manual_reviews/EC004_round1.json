@@ -1,0 +1,23 @@
+{
+  "cluster_id": "EC004",
+  "review_round": 1,
+  "reviewed_chapters": [7, 8],
+  "reviewer": "codex_full_text_inspection",
+  "decision": "pass_with_minor_punctuation_rough_edge",
+  "body_manually_edited": false,
+  "chapter_han_chars": {
+    "7": 1391,
+    "8": 1466
+  },
+  "passed_requirements": [
+    "玛莎由手抖学习速记到当面读出‘分成比例’，温柔与坚韧的反差继续推进",
+    "乔纳偷翻、伪造和擦拭留下的指纹与袖口纤维被麦珂利用前世信息差拓印存底",
+    "速记本与MK-19691104磁带并置封存，议员邀请和照片底片构成新的制度接口",
+    "第8章完成乔纳失去家庭文书绝对控制权以及玛莎首次实质权力迁移",
+    "两章均不少于1000个汉字且正文与Qwen原始响应逐字一致"
+  ],
+  "accepted_rough_edges": [
+    "第8章最后一句缺少句号，但句意完整且与规划指定结尾一致，不按内容截断重写"
+  ],
+  "next_action": "只重生成存在实质时间线和语言泄漏问题的EC005。"
+}

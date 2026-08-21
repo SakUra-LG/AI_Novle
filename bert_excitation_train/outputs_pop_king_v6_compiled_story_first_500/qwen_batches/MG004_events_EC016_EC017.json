@@ -1,0 +1,447 @@
+{
+  "macro_group_id": "MG004",
+  "event_clusters": [
+    {
+      "cluster_id": "EC016",
+      "chapter_span": [
+        31,
+        32
+      ],
+      "source_event_direction": "前世具体受害：乔纳曾利用‘保护未成年人’话术强行删改旋律并吞并版权。；本事件独有的前世信息差：麦珂知晓乔纳撕毁合同时会暴露焦虑症微表情。；今生提前动作：麦珂提前将《纸船纪》创作手稿在河湾镇公告栏公示并公证日期。；第31章可见小赢：乔纳以断供相逼时，麦珂当众展示已备案的独立母带所有权证明。；第32章新交锋：乔纳情绪失控撕毁假协议，被黛安娜录下其手部颤抖与语无伦次。；阻力方永久现实损失：乔纳因公开施压失去行业信誉，无法再代表麦珂进行任何签约。；主角现实收益：麦珂获得法律认可的独立制作人身份，家庭财务审计权移交黛安娜。；不可逆结算键：EC016_Public_Grace_Period_Ended；接回死亡控制主线：前世因无力反抗被迫签署空白合同，今生通过公开透明反制。",
+      "source_event_direction_sha256": "0894ec7371f2b8d0c22fa02ba072e8e68c35552c6d3022c6f23738e6b64de660",
+      "source_macro_sha256": "ed63a878f7c540092807d703912a0102d7b94b697eaa12acafe64b9d4a6dfd32",
+      "name": "公告栏前的断供危机与信誉崩塌",
+      "timeline_years": "1971",
+      "main_opponent": "乔纳·杰森",
+      "opposition_type": "villain",
+      "event_type": "contract_rights",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS01"
+      ],
+      "foreshadow_ids": [
+        "FS01"
+      ],
+      "main_characters": [
+        "麦珂·杰森",
+        "乔纳·杰森",
+        "玛莎·杰森",
+        "黛安娜·罗文",
+        "温特律师"
+      ],
+      "fictional_obstacle": "乔纳切断所有生活津贴，威胁若麦珂不签署独家代理协议，就将其逐出家门并冻结其在河湾镇的银行账户。",
+      "prev_life_tragedy": "前世麦珂在断供压力下被迫签署空白合同，导致《纸船纪》版权被低价吞并，且无法反抗父亲的控制。",
+      "info_gap_from_prev_life": "麦珂记得乔纳在谈判桌上每次试图用“为你好”掩盖贪婪时，右手食指会无意识地敲击桌面，随后在撕毁文件瞬间瞳孔放大、嘴角抽搐。",
+      "why_previous_life_failed": "前世麦珂年幼无知，误以为父亲是唯一的依靠，未察觉其焦虑下的疯狂，且缺乏外部法律见证人。",
+      "preemptive_avoidance": "麦珂提前一周将《纸船纪》原始手稿复印件张贴于河湾镇中心公告栏，并邀请温特律师现场公证日期，确立“先发表后授权”的法律事实。",
+      "bait_and_evidence": "乔纳故意在家庭餐厅大声宣布“断供”，诱使麦珂当场拿出已公证的手稿复印件和母带所有权证书，形成无可辩驳的独立创作证据链。",
+      "comic_villain_behavior": "乔纳一边假装痛心疾首地叹气，一边偷偷把桌上的茶杯推得叮当响，试图掩饰自己因愤怒而颤抖的双手，甚至差点打翻墨水瓶弄脏自己的西装袖口。",
+      "villain_loss": "乔纳因在公众面前失态撕毁假协议，被社区媒体拍下，彻底丧失作为“监护人代理人”的行业信誉，被多家唱片公司列入黑名单。",
+      "protagonist_gain": "麦珂正式获得法律认可的独立制作人身份，家庭财务审计权完全移交黛安娜，摆脱了经济封锁。",
+      "relationship_change": "玛莎彻底倒向麦珂与黛安娜一方，乔纳被边缘化为家庭决策之外的孤立者。",
+      "continuity_writes": [
+        "麦珂持有经公证的《纸船纪》手稿原件",
+        "乔纳因公开施压被社区媒体曝光",
+        "家庭财务审计权移交黛安娜"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_001",
+          "state_key": "copyright_status__financial_independence__extension_EC016",
+          "from": "none",
+          "to": "拥有独立监管账户",
+          "irreversible": true,
+          "evidence": "温特律师出示公证过的母带所有权协议及现场录音",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "copyright_status__financial_independence"
+        },
+        {
+          "domain": "job",
+          "entity_id": "CHAR_D1A231D7C399",
+          "state_key": "employment_status__financial_control__extension_EC016",
+          "from": "none",
+          "to": "丧失财政控制权并被调查",
+          "irreversible": true,
+          "evidence": "记者拍摄乔纳撕毁合同并试图藏匿税务文件的画面",
+          "effect_type": "villain_loss",
+          "source_entity_label": "CHAR_D1A231D7C399",
+          "source_state_key": "employment_status__financial_control"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_002",
+          "state_key": "trust_dynamic__family_alliance__extension_EC016",
+          "from": "none",
+          "to": "铁三角稳固，父亲被彻底隔离",
+          "irreversible": false,
+          "evidence": "玛莎当众斥责乔纳并支持麦珂的独立决定",
+          "effect_type": "relationship_change",
+          "source_state_key": "trust_dynamic__family_alliance"
+        }
+      ],
+      "historical_anchor_ids": [
+        "FICTION_ONLY"
+      ],
+      "cluster_outcome": "麦珂成功粉碎乔纳的经济封锁，确立独立制作人身份，乔纳因丑闻被行业封杀，家庭权力结构彻底重组。",
+      "next_event_hook": "乔纳被迫退出项目，但维克多·兰斯注意到麦珂的独立运作模式，视其为不可控变量，决定绕过乔纳直接介入。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 31,
+          "timeline_start": "1971-10-16",
+          "timeline_end": "1971-10-16",
+          "scene": "河湾镇家庭餐厅",
+          "chapter_goal": "利用信息差识破乔纳的断供陷阱，展示独立创作证据。",
+          "chapter_title": "断供令与公告栏",
+          "participants": [
+            "麦珂·杰森",
+            "乔纳·杰森",
+            "玛莎·杰森",
+            "黛安娜·罗文"
+          ],
+          "opening_conflict": "乔纳突然宣布切断所有生活费，要求麦珂立即签署独家代理协议，否则滚出家门。",
+          "info_gap_use": "麦珂想起前世乔纳在类似场景下会先敲桌子再发怒，于是冷静等待他做出这个标志性动作，随即亮出底牌。",
+          "opponent_reaction": "乔纳脸色涨红，手指疯狂敲击桌面，声音尖锐地指责麦珂“忘恩负义”。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇家庭餐厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "开场即冲突"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_031_PROOF",
+              "timeline_scope": "current",
+              "display_name": "河湾镇公告栏公证副本",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_MASTER_OWNERSHIP_001",
+              "timeline_scope": "current",
+              "purpose": "引用已备案的母带所有权证明"
+            }
+          ],
+          "action_sequence": [
+            "乔纳摔碎茶杯宣布断供",
+            "麦珂从怀中取出公告栏公证副本",
+            "温特律师（远程连线）确认日期优先权",
+            "玛莎当场宣布冻结乔纳的签字权限"
+          ],
+          "visible_payoff": "麦珂当众展示已备案的独立母带所有权证明，乔纳的断供威胁瞬间失效。",
+          "ending": "乔纳恼羞成怒，扬言要撕毁一切，麦珂冷冷地看着他准备动手。",
+          "must_include": [
+            "公告栏公证副本",
+            "断供威胁",
+            "温特律师远程确认"
+          ],
+          "must_not_include": [
+            "乔纳最终被行业封杀",
+            "黛安娜接管全部财务"
+          ],
+          "detailed_synopsis": "1971年3月15日，乔纳在家庭餐厅突然宣布切断麦珂所有生活费，逼迫其签署独家代理协议。麦珂早已预料到这一招，他冷静地从怀中掏出在河湾镇公告栏公示并公证的《纸船纪》手稿副本，同时温特律师通过电话确认了日期优先权。乔纳气急败坏地砸碎茶杯，手指颤抖着指向麦珂，却发现自己精心设计的“断供”陷阱被完美破解。麦珂的镇定让玛莎深受触动，当场宣布暂停乔纳的家庭财务权限。乔纳的威胁落空，但他并未罢休，反而更加歇斯底里，为下一章的彻底爆发埋下伏笔。"
+        },
+        {
+          "chapter_id": 32,
+          "timeline_start": "1971-10-17",
+          "timeline_end": "1971-10-17",
+          "scene": "河湾镇中心广场",
+          "chapter_goal": "完成对乔纳的公开审判，确立独立身份，终结其控制权。",
+          "chapter_title": "撕毁的协议与颤抖的手指",
+          "participants": [
+            "麦珂·杰森",
+            "乔纳·杰森",
+            "黛安娜·罗文",
+            "社区居民",
+            "记者"
+          ],
+          "opening_conflict": "乔纳试图在社区广场强行带走麦珂并销毁证据，引发围观群众不满。",
+          "info_gap_use": "麦珂利用前世记忆，精准预判乔纳在极度焦虑下会撕毁文件并暴露微表情，提前引导黛安娜开启录像。",
+          "opponent_reaction": "乔纳在众目睽睽下撕毁假协议，双手剧烈颤抖，语无伦次地大喊“你们都被骗了”，眼神涣散。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇中心广场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "广场人群聚集"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_031_PROOF",
+              "timeline_scope": "current",
+              "purpose": "作为乔纳攻击的目标物"
+            }
+          ],
+          "action_sequence": [
+            "乔纳试图抢夺公证文件",
+            "黛安娜启动录像设备记录全过程",
+            "乔纳情绪失控撕毁假协议",
+            "记者当场拍照并报道乔纳失态行为"
+          ],
+          "visible_payoff": "乔纳因公开施压失去行业信誉，无法再代表麦珂进行任何签约，麦珂获得法律认可的独立制作人身份。",
+          "ending": "乔纳被愤怒的社区群众围住，麦珂在黛安娜的搀扶下转身离开，走向新的起点。",
+          "must_include": [
+            "乔纳撕毁协议",
+            "黛安娜录像",
+            "记者曝光"
+          ],
+          "must_not_include": [
+            "乔纳被逮捕",
+            "麦珂开始巡演"
+          ],
+          "detailed_synopsis": "次日清晨，乔纳不甘心失败，带领几名随从试图在河湾镇中心广场强行带走麦珂并销毁手中的公证文件。面对围观的社区居民和赶来的记者，乔纳歇斯底里地叫嚣着“这是诈骗”，并伸手去抢文件。麦珂早有准备，他轻轻推开乔纳的手，冷眼看着他。就在乔纳试图再次发难时，黛安娜适时启动了录像设备。乔纳在极度焦虑中彻底崩溃，一把撕碎了手中的假协议，双手剧烈颤抖，语无伦次地喊着“你们都被骗了”，眼神涣散。这一幕被记者全程拍下，迅速传遍全镇。乔纳因公开失态彻底失去了作为监护人的信誉，被社区视为不可靠的逐利者。麦珂在黛安娜的陪伴下，正式确立了独立制作人的身份，家庭财务审计权也完全移交给了黛安娜，乔纳被彻底边缘化。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC017",
+      "chapter_span": [
+        33,
+        34
+      ],
+      "source_event_direction": "前世具体受害：前世《晨光电台》因删减副歌导致未来十年听众情感断层。；本事件独有的前世信息差：麦珂预知三秒真空段是引发跨四十年声部共振的关键。；今生提前动作：麦珂邀请驻场编曲师现场监听，坚持保留原始三秒静默段落。；第33章可见小赢：驻场编曲师确认该段落符合艺术完整性标准，拒绝乔纳的修改指令。；第34章新交锋：乔纳试图强行剪辑，被驻场编曲师以技术协议为由当场驳回并记录在案。；阻力方永久现实损失：乔纳彻底丧失对《纸船纪》核心旋律结构的控制权。；主角现实收益：麦珂保全了作品艺术灵魂，确立驻场编曲师为终身技术合作伙伴。；不可逆结算键：EC017_Silent_Three_Seconds_Secured；接回死亡控制主线：前世因妥协删改导致艺术价值归零，今生坚守成就传世经典。",
+      "source_event_direction_sha256": "d1610b58668beef3c92279a19b4987b8b92e113f94a7ba663658846da060d2dc",
+      "source_macro_sha256": "ed63a878f7c540092807d703912a0102d7b94b697eaa12acafe64b9d4a6dfd32",
+      "name": "三秒真空的艺术保卫战",
+      "timeline_years": "1971",
+      "main_opponent": "卡尔·霍尔特",
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS01"
+      ],
+      "foreshadow_ids": [
+        "FS01"
+      ],
+      "main_characters": [
+        "麦珂·杰森",
+        "昆廷·琼斯",
+        "卡尔·霍尔特",
+        "玛莎·杰森"
+      ],
+      "fictional_obstacle": "卡尔·霍尔特以“节奏拖沓影响商业播放”为由，要求麦珂删除《纸船纪》副歌后的三秒静默段落，并威胁若不执行将停止录音进度。",
+      "prev_life_tragedy": "前世麦珂被迫妥协，导致《晨光电台》版本缺失关键留白，引发未来十年听众情感断层，作品艺术价值归零。",
+      "info_gap_from_prev_life": "麦珂记得三秒真空段是引发跨四十年声部共振的关键，是整张专辑的灵魂所在。",
+      "why_previous_life_failed": "前世麦珂年轻气盛，未能理解留白的艺术价值，且受制于制作方的权威压力。",
+      "preemptive_avoidance": "麦珂提前邀请驻场编曲师昆廷·琼斯现场监听，并坚持保留原始三秒静默段落，以此作为不可动摇的创作底线。",
+      "bait_and_evidence": "卡尔试图强行剪辑，被昆廷以技术协议为由当场驳回，并记录在案，形成无可辩驳的技术证据。",
+      "comic_villain_behavior": "卡尔一边拿着剪刀比划着要剪掉那三秒，一边嘴里念叨着“为了你好，为了销量”，结果不小心把剪刀夹在了磁带盘上，发出刺耳的噪音。",
+      "villain_loss": "卡尔彻底丧失对《纸船纪》核心旋律结构的控制权，其专业权威性受到质疑。",
+      "protagonist_gain": "麦珂保全了作品艺术灵魂，确立昆廷为终身技术合作伙伴。",
+      "relationship_change": "麦珂与昆廷建立基于作品质量的专业信任关系。",
+      "continuity_writes": [
+        "《纸船纪》母带包含三秒真空段落",
+        "昆廷加入创作团队",
+        "卡尔被排除在核心创作之外"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_002",
+          "state_key": "self_definition_rights__extension_EC017",
+          "from": "none",
+          "to": "拥有自我定义权（创作者身份）",
+          "irreversible": true,
+          "evidence": "昆廷依原始手写标注校准磁带剪辑点",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "self_definition_rights"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "CHAR_3F11D9A42EDF",
+          "state_key": "control_over_recording__extension_EC017",
+          "from": "none",
+          "to": "完全丧失",
+          "irreversible": true,
+          "evidence": "昆廷以技术协议为由驳回卡尔的剪辑指令",
+          "effect_type": "villain_loss",
+          "source_entity_label": "CHAR_B6BBF0D9B359",
+          "source_state_key": "control_over_recording"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_KJ_001",
+          "state_key": "trust_in_protagonist__extension_EC017",
+          "from": "none",
+          "to": "专业信任",
+          "irreversible": false,
+          "evidence": "昆廷被‘三秒真空’概念打动",
+          "effect_type": "relationship_change",
+          "source_state_key": "trust_in_protagonist"
+        }
+      ],
+      "historical_anchor_ids": [
+        "FICTION_ONLY"
+      ],
+      "cluster_outcome": "麦珂成功保全《纸船纪》的艺术完整性，确立昆廷为技术合伙人，彻底粉碎了商业资本对艺术创作的干涉。",
+      "next_event_hook": "卡尔的失败让乔纳意识到麦珂的独立决心，他开始寻求更隐蔽的手段，如联系维克多·兰斯。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 33,
+          "timeline_start": "1971-11-02",
+          "timeline_end": "1971-11-02",
+          "scene": "银湾市地下录音室",
+          "chapter_goal": "邀请昆廷·琼斯现场监听，确认三秒真空段的艺术价值。",
+          "chapter_title": "沉默的三秒",
+          "participants": [
+            "麦珂·杰森",
+            "昆廷·琼斯",
+            "卡尔·霍尔特",
+            "玛莎·杰森"
+          ],
+          "opening_conflict": "卡尔·霍尔特坚持要删除副歌后的三秒静默，认为这会破坏歌曲的商业节奏。",
+          "info_gap_use": "麦珂利用前世记忆，知道这三秒是灵魂，于是主动邀请昆廷现场监听，以此作为对抗卡尔的依据。",
+          "opponent_reaction": "卡尔一脸不屑，认为麦珂“不懂市场”，并试图用数据图表说服众人。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市地下录音室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "录音室内设备运转声"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_033_VACUUM_DEMO",
+              "timeline_scope": "current",
+              "display_name": "三秒真空Demo磁带",
+              "kind": "recording"
+            },
+            {
+              "artifact_id": "ART_023_DEMO_MASTER",
+              "timeline_scope": "current",
+              "display_name": "ART_023_DEMO_MASTER",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_023_DEMO_MASTER",
+              "timeline_scope": "current",
+              "purpose": "引用原始母带进行比对"
+            }
+          ],
+          "action_sequence": [
+            "卡尔提出删除三秒静默的要求",
+            "麦珂邀请昆廷现场监听",
+            "昆廷确认该段落符合艺术完整性标准",
+            "昆廷拒绝卡尔的修改指令"
+          ],
+          "visible_payoff": "驻场编曲师确认该段落符合艺术完整性标准，拒绝乔纳的修改指令。",
+          "ending": "卡尔不甘心地离开录音室，扬言要投诉，麦珂则与昆廷对视一笑。",
+          "must_include": [
+            "昆廷现场监听",
+            "三秒真空Demo",
+            "卡尔被拒绝"
+          ],
+          "must_not_include": [
+            "卡尔被彻底开除",
+            "麦珂获得大奖"
+          ],
+          "detailed_synopsis": "1971年4月1日，银湾市地下录音室内，卡尔·霍尔特再次提出删除《纸船纪》副歌后三秒静默的要求，声称这会破坏歌曲的商业节奏。麦珂没有争辩，而是直接邀请驻场编曲师昆廷·琼斯现场监听。随着磁带的转动，那三秒的寂静在空旷的录音室里回荡，仿佛有千言万语。昆廷闭目倾听，片刻后睁开眼，郑重地表示这不仅是艺术完整性的一部分，更是整首歌的灵魂。他当场拒绝了卡尔的修改指令，并指出任何删减都会破坏作品的整体结构。卡尔一脸不屑，认为麦珂“不懂市场”，试图用数据图表说服众人，但昆廷的坚定态度让他无从反驳。最终，卡尔只能灰溜溜地离开录音室，扬言要投诉。麦珂与昆廷对视一笑，心中明白，这场关于艺术的保卫战已经取得了初步胜利。"
+        },
+        {
+          "chapter_id": 34,
+          "timeline_start": "1971-11-03",
+          "timeline_end": "1971-11-03",
+          "scene": "银湾市地下录音室",
+          "chapter_goal": "阻止卡尔的强行剪辑，确立技术协议的法律效力。",
+          "chapter_title": "被驳回的剪刀",
+          "participants": [
+            "麦珂·杰森",
+            "昆廷·琼斯",
+            "卡尔·霍尔特",
+            "玛莎·杰森"
+          ],
+          "opening_conflict": "卡尔趁麦珂休息时，试图强行进入录音室进行剪辑操作。",
+          "info_gap_use": "麦珂利用前世记忆，知道卡尔会采取这种激进手段，提前让昆廷准备好技术协议。",
+          "opponent_reaction": "卡尔拿着剪刀冲进来，却被昆廷以技术协议为由当场驳回，并记录在案。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市地下录音室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "录音室外传来急促脚步声"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_033_VACUUM_DEMO",
+              "timeline_scope": "current",
+              "purpose": "作为技术协议的参照物"
+            }
+          ],
+          "action_sequence": [
+            "卡尔持剪刀闯入录音室",
+            "昆廷出示技术协议并阻止",
+            "卡尔试图强行剪辑被驳回",
+            "现场记录在案，卡尔被驱逐"
+          ],
+          "visible_payoff": "乔纳试图强行剪辑，被驻场编曲师以技术协议为由当场驳回并记录在案，乔纳彻底丧失对《纸船纪》核心旋律结构的控制权。",
+          "ending": "卡尔被保安请出录音室，麦珂与昆廷继续完善作品，三秒真空段成为不可撼动的经典。",
+          "must_include": [
+            "卡尔持剪刀闯入",
+            "昆廷出示协议",
+            "现场记录"
+          ],
+          "must_not_include": [
+            "卡尔被起诉",
+            "麦珂成名"
+          ],
+          "detailed_synopsis": "次日清晨，卡尔·霍尔特趁麦珂休息时，手持剪刀企图强行进入录音室进行剪辑操作。麦珂早已预料到这一点，提前让昆廷准备好了技术协议。当卡尔冲进录音室时，昆廷立刻出示了双方签署的技术协议，明确指出任何未经授权的剪辑都将构成违约。卡尔试图强行剪辑，却被昆廷以技术协议为由当场驳回，并记录在案。卡尔恼羞成怒，挥舞着剪刀大喊大叫，但最终被保安请出录音室。麦珂与昆廷继续完善作品，三秒真空段成为不可撼动的经典。卡尔的失败让麦珂彻底保全了作品的艺术灵魂，也确立了昆廷作为终身技术合作伙伴的地位。这场战斗的胜利，不仅捍卫了麦珂的创作自由，也为未来的音乐之路奠定了坚实的基础。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1971",
+    "character_states": [
+      "麦珂：确立独立制作人身份，精神昂扬，声带状态良好",
+      "乔纳：因税务丑闻和公开失态被迫退出项目，焦虑症状加剧",
+      "玛莎：巩固法律防线，成为家庭决策核心执行者",
+      "黛安娜：财务审计成果显著，家庭资金链由她接管",
+      "昆廷：正式加入创作团队，技术主导权锁定"
+    ],
+    "relationship_states": [
+      "麦珂与玛莎、黛安娜形成铁三角，乔纳被彻底隔离",
+      "麦珂与昆廷建立基于作品质量的专业信任",
+      "麦珂与‘星辰新声’项目组保持敌对距离"
+    ],
+    "rights_and_assets": [
+      "《纸船纪》版权归属清晰，无债务纠纷，完全归麦珂个人信托",
+      "家庭信托账户资金充裕，足以支撑后续巡演",
+      "《演出健康备忘录》被更多独立厂牌引用"
+    ],
+    "health_and_location": [
+      "持续居住于河湾镇，定期前往银湾市进行录音与巡演",
+      "麦珂保持零药物使用，生理指标优于同龄童星"
+    ],
+    "open_threads": [
+      "1969年试镜录像盒底部铜质齿轮（最晚回收块：B025）",
+      "巴里·布鲁姆篡改药剂单电子痕迹（最晚回收块：B015）",
+      "托马斯封存的遗嘱执行附件（最晚回收块：B012）",
+      "维克多·兰斯直接介入的意图（新开启）"
+    ],
+    "resolved_threads": [
+      "乔纳的税务丑闻曝光，其控制权的丧失",
+      "《纸船纪》三秒真空段的艺术完整性得到保全"
+    ],
+    "introduced_characters": [
+      "莱昂·周（正式加入星火同盟核心圈）"
+    ],
+    "next_pressure": "维克多·兰斯绕过乔纳直接向麦珂抛出‘全球发行’诱饵，实则意图通过更隐蔽的资本手段全面收购麦珂未来十年收益权，开启‘资本围猎’新阶段。"
+  }
+}

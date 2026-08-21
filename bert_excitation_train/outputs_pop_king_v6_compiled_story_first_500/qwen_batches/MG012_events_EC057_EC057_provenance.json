@@ -1,0 +1,43 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC057_EC057",
+  "identifier": "MG012",
+  "accepted_attempt": "02",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "base_prompt_sha256": "d3944a6b92f5a8cf4c702538b3c3eb5a02f628b85d5c703ed0a7f0233dc362ee",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T15:33:56+08:00",
+      "prompt_sha256": "d3944a6b92f5a8cf4c702538b3c3eb5a02f628b85d5c703ed0a7f0233dc362ee",
+      "raw_response_sha256": "13ae14f0945e253044149df997eb98d335b00d498dcd6fc3a11259c9e636799a",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG012_events_EC057_EC057_attempt_01_d3944a6b92_raw.txt",
+      "validation_failures": [
+        "EC057 assets:ASSET_ORION_SUPPLY:vendor_qualification使用未知state domain：assets"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen3.8-max",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 80.237,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-20T15:35:09+08:00",
+      "prompt_sha256": "925803537617fd11b3e38b7d6183e8d073c6ca7f5535cf644767e27ff8787a87",
+      "raw_response_sha256": "5f675ecceeea31a39b6fe3b58fd38fb903f9eed932eae6d7d1b32c1b9b5ba1dd",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG012_events_EC057_EC057_attempt_02_d3944a6b92_raw.txt",
+      "validation_failures": [
+        "EC057 assets:ASSET_ORION_SUPPLY_CHAIN:vendor_qualification使用未知state domain：assets"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen3.8-max",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 72.274,
+      "usage": {}
+    }
+  ]
+}

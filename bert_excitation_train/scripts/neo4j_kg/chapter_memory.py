@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple
 
 
-MEMORY_SCHEMA_VERSION = 1
+MEMORY_SCHEMA_VERSION = 3
 LIFE_STATUS_VALUES = {"alive", "dead", "missing", "incapacitated", "unknown"}
 MENTION_MODES = {"active", "memory", "reported", "dream", "unknown"}
 TIMELINES = {"current", "previous_life", "memory", "dream", "mixed", "unknown"}
@@ -69,6 +69,88 @@ def _dedupe_dicts(items: Iterable[Dict[str, Any]], keys: Tuple[str, ...]) -> Lis
         seen.add(key)
         out.append(item)
     return out
+
+
+def canonical_possession_key(value: Any, *context: Any) -> str:
+    """Return the durable slot for one independently changing right or asset.
+
+    ``possession`` is a broad extraction field, not a single-valued state.  A
+    character may simultaneously hold a rehearsal-table right, a medication
+    custody right, and an audio-publication right.  The canonical key keeps
+    those dimensions separate in both the JSON ledger and its Neo4j projection.
+    Context is deliberately accepted so older sidecars can be upgraded from
+    their evidence/reason text without asking an LLM to reinterpret the story.
+    """
+
+    text = re.sub(
+        r"\s+",
+        "",
+        "；".join(_text(item, 600) for item in (value, *context) if _text(item, 600)),
+    )
+    if not text:
+        return "unspecified"
+
+    rules: Tuple[Tuple[str, str], ...] = (
+        (r"(?:后续)?排练.{0,12}(?:原声|声轨).{0,8}发布|(?:原声|声轨).{0,12}发布权", "rehearsal_audio_publish"),
+        (r"(?:排练群|群聊|群发|发布人).{0,18}(?:发布|群发)|(?:发布|群发).{0,18}(?:排练群|群聊|全组)", "rehearsal_group_publish"),
+        (r"(?:真实)?(?:排练|彩排)表.{0,16}(?:分发|分发名单)|分发名单.{0,16}(?:排练|彩排|真实)", "rehearsal_table_distribute"),
+        (r"(?:真实)?(?:排练|彩排)表.{0,16}(?:确认|签字|签批)", "rehearsal_table_confirm"),
+        (r"(?:真实)?(?:排练|彩排)表.{0,16}(?:保管|持有)", "rehearsal_table_custody"),
+        (r"训练强度.{0,8}决定权", "training_intensity_decide"),
+        (r"(?:药品|针剂|药物).{0,10}保管权", "medication_custody"),
+        (r"(?:医疗)?双签|本人同意权|第二签字权", "medical_dual_consent"),
+        (r"单方.{0,10}(?:注射|用药).{0,6}权", "medical_unilateral_injection"),
+        (r"排期.{0,8}签批权", "overload_schedule_approve"),
+        (r"最终排期.{0,6}否决权", "schedule_final_veto"),
+        (r"舞台机关.{0,8}指挥权", "stage_mechanism_command"),
+        (r"最终启停.{0,6}否决权", "stage_start_stop_veto"),
+        (r"(?:独立安全总监|安全).{0,10}停机权|停机权", "stage_emergency_stop"),
+        (r"私设.{0,8}预留票.{0,8}权限", "reserved_ticket_private"),
+        (r"票务.{0,8}监督席位", "ticket_supervision_seat"),
+        (r"代签.{0,8}授权", "proxy_signature_authorization"),
+        (r"独立签署权", "independent_sign"),
+        (r"独家采访席位", "exclusive_interview_seat"),
+        (r"单笔支付权", "single_payment"),
+        (r"基金监管权", "charity_fund_supervise"),
+        (r"低价打包权", "low_price_bundle"),
+        (r"母带.{0,8}优先回购权", "master_priority_repurchase"),
+    )
+    for pattern, key in rules:
+        if re.search(pattern, text):
+            return key
+
+    candidates = re.findall(
+        r"[\u4e00-\u9fff]{2,30}(?:权限|决定权|否决权|签批权|签字权|签署权|"
+        r"保管权|监督权|监管权|调度权|控制权|发布权|分发权|回购权|"
+        r"指挥权|停机权|支付权|打包权|授权|席位|票池)",
+        text,
+    )
+    core = candidates[-1] if candidates else _text(value, 120)
+    core = re.split(
+        r"(?:重新获得|重新取得|重新授予|不再拥有|不再有|获得|取得|拿回|夺回|"
+        r"收回|恢复|保住|归还|交还|移交|授予|失去|撤销|冻结|暂停|取消|无)",
+        core,
+    )[-1]
+    core = re.sub(r"[^0-9A-Za-z\u4e00-\u9fff_]+", "", core).casefold()
+    return f"generic:{core or 'unspecified'}"
+
+
+def story_state_slot(item: Dict[str, Any]) -> str:
+    """Return the independent state dimension represented by a memory item."""
+
+    explicit = _text(item.get("state_key") or item.get("stateKey"), 180)
+    field = _text(item.get("field") or item.get("predicate"), 100).lower()
+    if explicit:
+        return explicit
+    if field != "possession":
+        return field
+    key = canonical_possession_key(
+        item.get("new_value") or item.get("newValue") or item.get("object"),
+        item.get("old_value") or item.get("oldValue"),
+        item.get("evidence"),
+        item.get("reason"),
+    )
+    return f"possession:{key}"
 
 
 def extract_json_object(raw: str) -> Dict[str, Any]:
@@ -129,7 +211,7 @@ def normalize_memory(raw: Dict[str, Any], chapter: int, content_hash: str = "") 
         timeline = _text(item.get("timeline"), 30).lower()
         if timeline not in TIMELINES:
             timeline = narrative_timeline
-        state_changes.append({
+        normalized_change = {
             "character": character,
             "field": field,
             "old_value": _text(item.get("old_value") or item.get("oldValue"), 240),
@@ -139,7 +221,12 @@ def normalize_memory(raw: Dict[str, Any], chapter: int, content_hash: str = "") 
             "permanent": is_permanent,
             "confidence": _float(item.get("confidence"), 0.75),
             "timeline": timeline,
+        }
+        normalized_change["state_key"] = story_state_slot({
+            **normalized_change,
+            "state_key": item.get("state_key") or item.get("stateKey"),
         })
+        state_changes.append(normalized_change)
 
     facts: List[Dict[str, Any]] = []
     for item in _list(raw.get("facts")):
@@ -150,7 +237,7 @@ def normalize_memory(raw: Dict[str, Any], chapter: int, content_hash: str = "") 
         obj = _text(item.get("object"), 300)
         if not subject or not predicate or not obj:
             continue
-        facts.append({
+        normalized_fact = {
             "subject": subject,
             "predicate": predicate,
             "object": obj,
@@ -159,7 +246,9 @@ def normalize_memory(raw: Dict[str, Any], chapter: int, content_hash: str = "") 
             "confidence": _float(item.get("confidence"), 0.7),
             "permanent": bool(item.get("permanent", False)),
             "timeline": _text(item.get("timeline"), 30).lower() if _text(item.get("timeline"), 30).lower() in TIMELINES else narrative_timeline,
-        })
+        }
+        normalized_fact["state_key"] = story_state_slot(normalized_fact)
+        facts.append(normalized_fact)
 
     relationships: List[Dict[str, Any]] = []
     for item in _list(raw.get("relationships") or raw.get("relations")):
@@ -412,7 +501,8 @@ def _heuristic_memory(chapter: int, content: str, known_names: Iterable[str]) ->
     if not state_changes:
         global_death = re.search(
             r"心电图.{0,100}(?:拉平|直线)|波形.{0,60}(?:拉平|直线)|"
-            r"心脏.{0,30}(?:骤停|停跳|停止搏动|不再搏动)|呼吸.{0,20}(?:停止|断绝)",
+            r"心脏.{0,30}(?:骤停|停跳|停止搏动|不再搏动)|"
+            r"呼吸.{0,20}(?:停止(?!键|按钮|开关)|断绝)",
             content or "",
             flags=re.S,
         )
@@ -512,6 +602,107 @@ def _heuristic_memory(chapter: int, content: str, known_names: Iterable[str]) ->
                 "permanent": False,
                 "confidence": 0.82,
             })
+
+    opening_candidates = [
+        ((content or "").find(name), name)
+        for name in canonical_names
+        if 0 <= (content or "").find(name) < 500
+    ]
+    current_protagonist = min(
+        opening_candidates,
+        default=(-1, ""),
+        key=lambda item: item[0],
+    )[1]
+
+    def append_explicit_possession(
+        character: str,
+        new_value: str,
+        evidence_match: Optional[re.Match[str]],
+        reason: str,
+        *,
+        old_value: str = "",
+        confidence: float = 0.9,
+    ) -> None:
+        if not character or evidence_match is None:
+            return
+        if any(
+            item.get("character") == character
+            and item.get("field") == "possession"
+            and canonical_possession_key(
+                item.get("new_value"),
+                item.get("old_value"),
+                item.get("evidence"),
+            ) == canonical_possession_key(
+                new_value,
+                old_value,
+                evidence_match.group(0),
+            )
+            for item in state_changes
+        ):
+            return
+        state_changes.append({
+            "character": character,
+            "field": "possession",
+            "old_value": old_value,
+            "new_value": new_value,
+            "reason": reason,
+            "evidence": evidence_match.group(0),
+            "permanent": False,
+            "confidence": confidence,
+        })
+
+    group_publish_match = re.search(
+        r"(?:当场)?收回(?:排练群|群聊)[^。！？\n]{0,24}(?:发布权限|群发权限)"
+        r"[^。！？\n]{0,80}(?:发布人改成(?:他|她)本人|只有(?:他|她)确认的消息可以发)",
+        content or "",
+    )
+    append_explicit_possession(
+        current_protagonist,
+        "排练群发布权限",
+        group_publish_match,
+        "正文明确收回排练群发布控制并改为本人确认",
+    )
+    if group_publish_match:
+        for name in canonical_names:
+            if name == current_protagonist:
+                continue
+            group_loss_match = None
+            for alias in aliases_for(name):
+                group_loss_match = re.search(
+                    rf"{re.escape(alias)}[^。！？\n]{{0,80}}失去"
+                    r"[^。！？\n]{0,20}(?:发布权限|群发权限)",
+                    content or "",
+                )
+                if group_loss_match:
+                    break
+            append_explicit_possession(
+                name,
+                "无排练群发布权限",
+                group_loss_match,
+                "正文明确排练群发布权已从该人物收回",
+                old_value="排练群发布权限",
+            )
+
+    table_confirmation_match = re.search(
+        r"真实(?:排练|彩排)表由(?:我|本人|[\u4e00-\u9fff·]{2,20})确认",
+        content or "",
+    )
+    append_explicit_possession(
+        current_protagonist,
+        "真实彩排表确认权",
+        table_confirmation_match,
+        "正文明确由本人确认真实彩排表",
+    )
+    table_distribution_match = re.search(
+        r"分发名单(?:也)?由(?:我|本人|[\u4e00-\u9fff·]{2,20})决定",
+        content or "",
+    )
+    append_explicit_possession(
+        current_protagonist,
+        "排练表分发权",
+        table_distribution_match,
+        "正文明确由本人决定排练表分发名单",
+    )
     for name in canonical_names:
         aliases = {name}
         if "·" in name:
@@ -560,7 +751,23 @@ def _heuristic_memory(chapter: int, content: str, known_names: Iterable[str]) ->
                     content or "",
                 )
             if loss_match and "注射" not in loss_match.group(1):
+                if re.search(
+                    rf"{re.escape(alias)}[^。！？\n]{{0,12}}被开除"
+                    r"[^。！？\n]{0,16}也失去",
+                    loss_match.group(0),
+                ):
+                    continue
                 lost_right = re.sub(r"^(?:掉了?|了)", "", loss_match.group(1))
+                if (
+                    re.fullmatch(r"(?:发布权限|发布权|群发权限)", lost_right)
+                    and any(
+                        item.get("character") == name
+                        and story_state_slot(item)
+                        == "possession:rehearsal_group_publish"
+                        for item in state_changes
+                    )
+                ):
+                    break
                 state_changes.append({
                     "character": name,
                     "field": "possession",
@@ -568,6 +775,11 @@ def _heuristic_memory(chapter: int, content: str, known_names: Iterable[str]) ->
                     "new_value": "无" + lost_right,
                     "reason": "正文明确失去权限",
                     "evidence": loss_match.group(0),
+                    "state_key": "possession:" + canonical_possession_key(
+                        lost_right,
+                        loss_match.group(0),
+                        content or "",
+                    ),
                     "permanent": False,
                     "confidence": 0.8,
                 })
@@ -828,7 +1040,10 @@ def extract_chapter_memory(
 ) -> Dict[str, Any]:
     content_hash_value = content_hash(content)
     best_memory: Optional[Dict[str, Any]] = None
-    if llm_call is not None:
+    rules_only = os.getenv("STORY_MEMORY_RULES_ONLY", "").strip().lower() in {
+        "1", "true", "yes", "on",
+    }
+    if llm_call is not None and not rules_only:
         try:
             llm_attempts = max(1, min(3, int(os.getenv("STORY_MEMORY_LLM_ATTEMPTS", "1"))))
         except ValueError:
@@ -858,17 +1073,31 @@ def extract_chapter_memory(
     return memory
 
 
-def load_memory_files(memory_dir: Path, before_chapter: Optional[int] = None) -> List[Dict[str, Any]]:
+def load_memory_files(
+    memory_dir: Path,
+    before_chapter: Optional[int] = None,
+    *,
+    strict: bool = False,
+) -> List[Dict[str, Any]]:
     if not memory_dir.is_dir():
         return []
     out: List[Dict[str, Any]] = []
     for path in sorted(memory_dir.glob("chapter_*_memory.json")):
         try:
             obj = json.loads(path.read_text(encoding="utf-8"))
+            if not isinstance(obj, dict):
+                raise ValueError("chapter memory root must be an object")
             ch = int(obj.get("chapter", 0))
-            if ch > 0 and (before_chapter is None or ch < before_chapter):
-                out.append(normalize_memory(obj, ch, _text(obj.get("content_hash"), 80)))
-        except (OSError, ValueError, json.JSONDecodeError):
+            suffix = path.stem.removeprefix("chapter_").removesuffix("_memory")
+            if ch <= 0 or not suffix.isdigit() or int(suffix) != ch:
+                raise ValueError("chapter memory filename/chapter mismatch")
+            if before_chapter is None or ch < before_chapter:
+                out.append(
+                    normalize_memory(obj, ch, _text(obj.get("content_hash"), 80))
+                )
+        except (OSError, ValueError, TypeError, json.JSONDecodeError) as exc:
+            if strict:
+                raise RuntimeError(f"invalid chapter memory ledger: {path}") from exc
             continue
     return sorted(out, key=lambda x: int(x.get("chapter", 0)))
 
@@ -877,9 +1106,16 @@ def save_memory_file(memory_dir: Path, memory: Dict[str, Any]) -> Path:
     memory_dir.mkdir(parents=True, exist_ok=True)
     chapter = int(memory["chapter"])
     path = memory_dir / f"chapter_{chapter:03d}_memory.json"
-    tmp = path.with_suffix(".json.tmp")
-    tmp.write_text(json.dumps(memory, ensure_ascii=False, indent=2), encoding="utf-8")
-    os.replace(tmp, path)
+    tmp = path.with_name(f"{path.name}.tmp.{os.getpid()}")
+    try:
+        with tmp.open("w", encoding="utf-8") as stream:
+            stream.write(json.dumps(memory, ensure_ascii=False, indent=2))
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(tmp, path)
+    except BaseException:
+        tmp.unlink(missing_ok=True)
+        raise
     return path
 
 
@@ -977,17 +1213,25 @@ def build_story_state(memories: Iterable[Dict[str, Any]]) -> Dict[str, Any]:
                 continue
             name = _canonical(_text(s.get("character"), 120), aliases)
             if name:
-                states[(name.casefold(), _text(s.get("field"), 80).lower())] = {**s, "character": name, "chapter": chapter}
+                state_key = story_state_slot(s)
+                states[(name.casefold(), state_key)] = {
+                    **s,
+                    "character": name,
+                    "state_key": state_key,
+                    "chapter": chapter,
+                }
         for f in _list(memory.get("facts")):
             if _text(f.get("timeline"), 30).lower() not in {"current", "unknown"}:
                 continue
             subject = _canonical(_text(f.get("subject"), 160), aliases)
             if subject:
-                states[(subject.casefold(), _text(f.get("predicate"), 100).lower())] = {
+                state_key = story_state_slot(f)
+                states[(subject.casefold(), state_key)] = {
                     "character": subject, "field": _text(f.get("predicate"), 100).lower(),
                     "new_value": _text(f.get("object"), 300), "chapter": chapter,
                     "evidence": _text(f.get("evidence"), 300), "confidence": _float(f.get("confidence")),
                     "permanent": bool(f.get("permanent", False)),
+                    "state_key": state_key,
                 }
         for r in _list(memory.get("relationships")):
             if _text(r.get("timeline"), 30).lower() not in {"current", "unknown"}:
@@ -1015,13 +1259,14 @@ def build_story_state(memories: Iterable[Dict[str, Any]]) -> Dict[str, Any]:
 def validate_transition(prior_state: Dict[str, Any], candidate: Dict[str, Any]) -> List[ContinuityViolation]:
     aliases: Dict[str, str] = prior_state.get("aliases", {}) or {}
     current: Dict[Tuple[str, str], Dict[str, Any]] = {
-        (_text(x.get("character"), 120).casefold(), _text(x.get("field"), 80).lower()): x
+        (_text(x.get("character"), 120).casefold(), story_state_slot(x)): x
         for x in _list(prior_state.get("states"))
     }
     dead = {
         name: value
-        for (name, field), value in current.items()
-        if field == "life_status" and _text(value.get("new_value"), 40).lower() in TERMINAL_LIFE_STATUS
+        for (name, _state_key), value in current.items()
+        if _text(value.get("field"), 80).lower() == "life_status"
+        and _text(value.get("new_value"), 40).lower() in TERMINAL_LIFE_STATUS
     }
     violations: List[ContinuityViolation] = []
 
@@ -1057,7 +1302,7 @@ def validate_transition(prior_state: Dict[str, Any], candidate: Dict[str, Any]) 
         name = _canonical(_text(change.get("character"), 120), aliases)
         field = _text(change.get("field"), 80).lower()
         new_value = _text(change.get("new_value"), 240)
-        old = current.get((name.casefold(), field))
+        old = current.get((name.casefold(), story_state_slot(change)))
         if old and field in IMMUTABLE_PREDICATES and bool(old.get("permanent", False)) and not _state_values_equal(field, old.get("new_value"), new_value):
             violations.append(ContinuityViolation(
                 code="IMMUTABLE_FACT_CHANGED",
@@ -1088,7 +1333,15 @@ def validate_transition(prior_state: Dict[str, Any], candidate: Dict[str, Any]) 
             continue
         name = _canonical(_text(claim.get("subject"), 160), aliases)
         predicate = _text(claim.get("predicate"), 100).lower()
-        old = current.get((name.casefold(), predicate)) if predicate in STRICT_OLD_VALUE_FIELDS | IMMUTABLE_PREDICATES else None
+        old = (
+            current.get((name.casefold(), story_state_slot({
+                "predicate": predicate,
+                "object": claim.get("value"),
+                "evidence": claim.get("evidence"),
+            })))
+            if predicate in STRICT_OLD_VALUE_FIELDS | IMMUTABLE_PREDICATES
+            else None
+        )
         if old and not _state_values_equal(predicate, old.get("new_value"), claim.get("value")):
             violations.append(ContinuityViolation(
                 code="PRIOR_STATE_CLAIM_CONFLICT",
@@ -1102,7 +1355,7 @@ def validate_transition(prior_state: Dict[str, Any], candidate: Dict[str, Any]) 
             continue
         subject = _canonical(_text(fact.get("subject"), 160), aliases)
         predicate = _text(fact.get("predicate"), 100).lower()
-        old = current.get((subject.casefold(), predicate))
+        old = current.get((subject.casefold(), story_state_slot(fact)))
         if old and predicate in IMMUTABLE_PREDICATES and bool(old.get("permanent", False)) and not _state_values_equal(predicate, old.get("new_value"), fact.get("object")):
             violations.append(ContinuityViolation(
                 code="IMMUTABLE_FACT_CONTRADICTION",

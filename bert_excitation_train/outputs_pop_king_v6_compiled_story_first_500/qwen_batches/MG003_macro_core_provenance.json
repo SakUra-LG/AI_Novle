@@ -1,0 +1,31 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "macro_core",
+  "identifier": "MG003",
+  "accepted_attempt": 1,
+  "base_prompt_sha256": "c5bfd121c9b17188d4ac4678921c17d74faa685e7d964e2f62c6b6ece0d15d3b",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-15T17:14:40+08:00",
+      "prompt_sha256": "c5bfd121c9b17188d4ac4678921c17d74faa685e7d964e2f62c6b6ece0d15d3b",
+      "raw_response_sha256": "6c26ccf5c4c4e2ce7c6b938d103b37a72727b22b16182f9731784dd4a75b83e4",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG003_macro_core_attempt_01_c5bfd121c9_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 8.748,
+      "usage": {
+        "prompt_tokens": 230,
+        "completion_tokens": 644,
+        "total_tokens": 874,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

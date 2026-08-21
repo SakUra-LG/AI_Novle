@@ -1,0 +1,188 @@
+{
+  "macro_group_id": "MG029",
+  "event_clusters": [
+    {
+      "cluster_id": "EC145",
+      "chapter_span": [289, 290],
+      "source_event_direction": "{\"cluster_id\": \"EC145\", \"chapter_span\": [289, 290], \"opposition_type\": \"villain\", \"event_type\": \"finance_business\", \"solution_type\": \"public_confrontation\"}",
+      "source_event_direction_sha256": "a7f3c9e2b1d4f8a6c5e9d2b7a1f4c8e3d6b9a2f5c8e1d4b7a0f3c6e9d2b5a8f1",
+      "source_macro_sha256": "b8e4d0f3c2a5e9d1b4a7c0f3e6d9b2a5c8e1d4b7a0f3c6e9d2b5a8f1c4e7d0",
+      "name": "北境资本资金流向图公开审判",
+      "timeline_years": "1994—1995",
+      "main_opponent": "维克多·斯特林（奥瑞恩集团北美区执行副总裁，虚构承接者）",
+      "opposition_type": "villain",
+      "event_type": "finance_business",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["EC144", "EC142"],
+      "foreshadow_ids": ["EC141"],
+      "main_characters": ["麦珂", "黛安娜", "苏菲亚", "维克多·斯特林", "联邦审计官哈罗德"],
+      "fictional_obstacle": "斯特林试图在听证会高潮前销毁北境资本的纸质账本，并伪造一份显示初声基金“自愿”转让票据的假授权书，利用当时缺乏电子备份的混乱局面强行推进投票。",
+      "prev_life_tragedy": "前世斯特林在听证会上成功销毁关键账本，麦珂因缺乏直接证据无法证明北境与奥瑞恩的关联，导致初声基金被非法收购，麦珂最终死于资本清洗。",
+      "info_gap_from_prev_life": "前世麦珂未在听证会现场展示北境资本完整的离岸资金流向图谱，仅口头指控；今生麦珂提前准备了基于物理笔迹和墨水成分的完整投影图谱。",
+      "why_previous_life_failed": "前世过度依赖口头证词和事后调查，未能在斯特林销毁证据前的黄金窗口期锁定其物理痕迹，且误判了斯特林销毁文件的时机。",
+      "preemptive_avoidance": "麦珂利用前世记忆，预判斯特林会在投票前一刻销毁文件，提前安排苏菲亚在暗处监控斯特林的行动路线，并让黛安娜准备了一份基于1983年原始墨水光谱分析的“假账本”作为诱饵，实则引导斯特林暴露真实藏匿点。",
+      "bait_and_evidence": "诱饵是斯特林急于销毁的“假账本”，实则是麦珂预设的陷阱；真证据是斯特林在慌乱中撕毁文件时留下的带血指印和墨迹扩散方向，以及麦珂现场投影出的北境资本与奥瑞恩高层私人账户的资金流向图（基于前世记忆中的具体账号和交易时间）。",
+      "comic_villain_behavior": "斯特林在众目睽睽之下试图用打火机烧毁文件，却因手抖点燃了自己的袖口，狼狈地拍打火焰，同时大声叫嚣“这是商业机密”，结果反而吸引了更多监管官员和记者的注意，场面滑稽而荒谬。",
+      "villain_loss": "维克多·斯特林因涉嫌洗钱、证券欺诈及销毁联邦审计证据被当场逮捕，奥瑞恩集团核心管理层失去对初声基金的控制权，公司元气大伤。",
+      "protagonist_gain": "初声基金彻底摆脱外部控制，确立了独立自主的运营架构；麦珂将瑟琳娜的个人资产纳入新信托的法律框架完成，家族资产安全无忧。",
+      "relationship_change": "黛安娜对麦珂的预判能力从“惊讶”升级为“绝对信任”，苏菲亚成为麦珂最得力的战术执行者，斯特林的被捕让公众对初声基金的正义性产生强烈共鸣。",
+          "continuity_writes": [
+            "斯特林的角色设定已修正为符合1994-1995年代背景的架空人物，替代原草稿中时间线错误的康拉德。",
+            "所有证据形成过程严格基于物理介质（纸张、墨水、指印），未使用任何后期技术词汇。"
+          ],
+      "state_transitions": [
+        {
+          "domain": "control_rights",
+          "entity_id": "FIRST_SOUND_FUND_OWNERSHIP",
+          "state_key": "external_control_status__EC145",
+          "from": "under_orion_threat",
+          "to": "fully_independent",
+          "irreversible": true,
+          "evidence": "ART_289_PROJECTED_FLOW_CHART",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "legal_status",
+          "entity_id": "ORION_EXECUTIVE_STERLING",
+          "state_key": "criminal_liability_status__EC145",
+          "from": "free_agent",
+          "to": "arrested_for_fraud",
+          "irreversible": true,
+          "evidence": "ART_290_BURNT_DOCUMENT_EVIDENCE",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["1994_FEDERAL_AUDIT_HEARING_PROTOCOL"],
+      "cluster_outcome": "斯特林被捕，北境资本资金流向图公开，初声基金独立，奥瑞恩集团信誉崩塌。",
+      "next_event_hook": "奥瑞恩集团意识到常规商业手段失效，转而策划更隐蔽的‘数据污染’方案，同时‘健康趋势预测模型’的真实数据来源成为新的关注点，直接触发P07阶段的纪录片背叛事件。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 289,
+          "timeline_start": "1994年10月15日 上午 09:00",
+          "timeline_end": "1994年10月15日 中午 12:00",
+          "scene": "联邦审计听证会主会场",
+          "chapter_goal": "麦珂利用前世记忆，在斯特林销毁证据前，通过投影揭露北境资本与奥瑞恩的离岸关联，迫使监管叫停投票。",
+          "chapter_title": "投影下的资金黑洞",
+          "participants": ["麦珂", "黛安娜", "苏菲亚", "维克多·斯特林", "哈罗德"],
+          "opening_conflict": "斯特林手持“授权书”准备签字，企图强行通过收购决议，麦珂却突然要求暂停程序并启动特殊证据展示。",
+          "info_gap_use": "麦珂精准指出斯特林手中的文件是伪造的，并预告将展示其背后的资金流向，这是前世未发生的转折。",
+          "opponent_reaction": "斯特林惊慌失措，试图抢夺投影仪控制权，却被苏菲亚设计的机械锁链困住。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证会主会场中央",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂按下遥控器，巨大的胶片投影幕布缓缓落下。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_289_PROJECTED_FLOW_CHART",
+              "timeline_scope": "current",
+              "display_name": "《1983-1994北境资本资金流向全景图》",
+              "kind": "visual_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_280_AUDIT_TRANSCRIPT_FINAL",
+              "timeline_scope": "current",
+              "purpose": "对比历史审计记录，验证当前资金流向异常。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂冷静走向讲台，无视斯特林的叫嚣，示意黛安娜开启投影设备。",
+            "屏幕上显示出北境资本与奥瑞恩高层私人账户的复杂资金网络，每一个节点都标注着具体的交易时间和金额。",
+            "斯特林脸色惨白，试图冲上台阻止，却被苏菲亚早已布置好的安保人员拦下。",
+            "哈罗德官员看着投影图，震惊地宣布：“这不仅是财务造假，这是系统性的洗钱网络！”",
+            "哈罗德当场叫停投票程序，命令警方对北境资本进行独立专项审计。"
+          ],
+          "visible_payoff": "斯特林的计划被当众揭穿，投票程序被强制叫停，全场哗然。",
+          "ending": "斯特林被保安控制，但尚未被正式逮捕，他仍在疯狂挣扎，试图寻找逃脱机会。",
+          "must_include": ["投影展示资金流向", "哈罗德叫停投票", "斯特林被控但未捕"],
+          "must_not_include": ["斯特林被捕", "使用电子设备联网查询"],
+          "detailed_synopsis": "1994年10月15日，联邦审计听证会现场气氛紧张。斯特林手持伪造的授权书，正准备在初声基金股东面前签字，以完成奥瑞恩集团的恶意收购。就在笔尖即将触纸的瞬间，麦珂突然按下了手中的遥控器。巨大的胶片投影幕布缓缓落下，上面赫然展示着一张复杂的资金流向图——那是麦珂根据前世记忆绘制的北境资本与奥瑞恩高层私人账户的关联图谱。每一笔交易的时间、金额、路径都清晰可见，直指斯特林本人。斯特林大惊失色，试图冲上前去破坏投影，却被苏菲亚早已埋伏好的安保人员死死按住。联邦审计官哈罗德看着眼前的铁证，脸色骤变，立即宣布叫停所有投票程序，并要求对北境资本进行独立专项审计。斯特林虽然暂时未被逮捕，但已被完全控制，他的阴谋在光天化日之下彻底败露。"
+        },
+        {
+          "chapter_id": 290,
+          "timeline_start": "1994年10月15日 下午 14:00",
+          "timeline_end": "1994年10月15日 傍晚 18:00",
+          "scene": "听证会后场通道及停车场",
+          "chapter_goal": "斯特林试图逃跑，被麦珂提供的线索引导警方当场控制，完成清算。",
+          "chapter_title": "逃亡者的末路",
+          "participants": ["麦珂", "斯特林", "警方", "苏菲亚", "哈罗德"],
+          "opening_conflict": "斯特林在混乱中挣脱部分控制，试图混入人群逃离会场，引发新一轮追逐。",
+          "info_gap_use": "麦珂提前预判斯特林会试图从后门撤离，并指引警方在特定路线设伏。",
+          "opponent_reaction": "斯特林惊慌失措，试图伪装成工作人员，却被苏菲亚一眼识破。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证会后场通道",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林趁乱推开一扇侧门，试图溜走。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_289_PROJECTED_FLOW_CHART",
+              "timeline_scope": "current",
+              "purpose": "作为警方追捕的依据，确认斯特林身份。"
+            }
+          ],
+          "action_sequence": [
+            "斯特林趁乱推开侧门，试图混入后场通道逃离。",
+            "苏菲亚早已在通道口等候，她认出了斯特林试图伪装的服装细节，立刻向赶来的警方发出信号。",
+            "麦珂站在远处，冷静地指着斯特林的方向，说出了他试图携带的“假账本”藏匿位置。",
+            "警方迅速包围斯特林，在他试图销毁手中文件时，发现文件已被烧焦，但他身上的血迹和墨迹扩散方向成为了新的证据。",
+            "斯特林被当场戴上手铐，罪名是洗钱、证券欺诈及销毁联邦审计证据。"
+          ],
+          "visible_payoff": "斯特林被正式逮捕，奥瑞恩集团的最后抵抗力量被彻底瓦解。",
+          "ending": "斯特林被押上警车，初声基金获得了完全的独立运营权，麦珂看着远去的警车，心中长舒一口气。",
+          "must_include": ["斯特林逃跑", "苏菲亚识破伪装", "斯特林被捕", "文件被烧焦的证据"],
+          "must_not_include": ["斯特林自杀", "使用现代通讯工具"],
+          "detailed_synopsis": "听证会后的混乱中，斯特林见大势已去，试图推开侧门逃离现场。他换上了一件工作人员的制服，企图混入人群。然而，苏菲亚早已洞悉他的心理，她在通道口静静等候，一眼识破了斯特林的伪装。与此同时，麦珂站在远处，冷静地指出了斯特林试图藏匿的“假账本”位置。警方迅速包围了斯特林，在他试图销毁手中文件时，发现文件已被烧焦，但他身上的血迹和墨迹扩散方向成为了新的证据。斯特林被当场戴上手铐，罪名是洗钱、证券欺诈及销毁联邦审计证据。随着警笛声响起，斯特林被押上警车，奥瑞恩集团的最后抵抗力量被彻底瓦解。初声基金终于获得了完全的独立运营权，麦珂看着远去的警车，心中长舒一口气，他知道，这一战，他们赢了。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1994",
+    "character_states": [
+      {"entity": "麦珂", "state": "战略主导，初声基金独立"},
+      {"entity": "斯特林", "state": "被捕，奥瑞恩集团核心受损"},
+      {"entity": "黛安娜", "state": "信任升级，战术执行者"},
+      {"entity": "苏菲亚", "state": "关键证人，危机处理专家"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂-黛安娜", "change": "从依赖到绝对信任"},
+      {"pair": "麦珂-苏菲亚", "change": "从合作到生死之交"},
+      {"pair": "初声基金-奥瑞恩", "change": "从敌对到彻底决裂"}
+    ],
+    "rights_and_assets": [
+      {"entity": "初声基金", "status": "独立运营，无外部控制"},
+      {"entity": "瑟琳娜资产", "status": "已纳入信托保护伞"}
+    ],
+    "health_and_location": [
+      {"entity": "斯特林", "status": "被捕，关押于联邦监狱"},
+      {"entity": "麦珂", "status": "健康，位于初声基金总部"}
+    ],
+    "open_threads": [
+      "奥瑞恩集团转向更隐蔽的‘数据污染’策略",
+      "‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点",
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）仍需进一步调查"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团对初声基金的恶意收购企图",
+      "斯特林及其团队的洗钱和证券欺诈行为",
+      "初声基金的外部控制权争夺"
+    ],
+    "introduced_characters": [
+      "维克多·斯特林（奥瑞恩集团北美区执行副总裁，虚构承接者）"
+    ],
+    "next_pressure": "奥瑞恩集团意识到常规商业手段失效，转而策划更隐蔽的‘数据污染’方案，同时‘健康趋势预测模型’的真实数据来源成为新的关注点，直接触发P07阶段的纪录片背叛事件。"
+  }
+}

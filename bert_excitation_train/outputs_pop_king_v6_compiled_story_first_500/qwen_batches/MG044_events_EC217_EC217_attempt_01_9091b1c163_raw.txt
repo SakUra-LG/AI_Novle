@@ -1,0 +1,219 @@
+{
+  "macro_group_id": "MG044",
+  "event_clusters": [
+    {
+      "cluster_id": "EC217",
+      "chapter_span": [433, 434],
+      "source_event_direction": "{\"cluster_id\": \"EC217\", \"chapter_span\": [433, 434], \"opposition_type\": \"institutional\", \"event_type\": \"media_reputation\", \"solution_type\": \"public_confrontation\", \"death_chain_role\": \"advance\", \"previous_life_harm\": \"媒体将麦珂描绘为‘即将康复的疯子’，公众舆论倒向支持托管，削弱其法律辩护基础。\", \"unique_prev_life_info\": \"麦珂记得1996年‘午夜星轨’第7842期结尾那段五秒停顿曾引发听众深层共鸣。\", \"preemptive_action\": \"麦珂授权艾琳启动《第五秒之后》特别节目，邀请公众在直播中共同体验静默时刻。\", \"chapter_one_small_win\": \"节目播出时，三十万听众同步进行五秒静默，现场收音机信号因集体屏息而呈现独特波形。\", \"chapter_two_showdown\": \"奥瑞恩发言人指责这是‘病态表演’，却遭到各地媒体观众以‘清醒即审判’标语刷屏反驳。\", \"opponent_permanent_loss\": \"奥瑞恩试图利用媒体操纵认知的策略彻底失效，其‘精神失能’叙事在公众心中崩塌。\", \"protagonist_concrete_gain\": \"麦珂确立了‘清醒即存在’的公众认知锚点，舆论风向从同情转为对其自主权的尊重。\", \"irreversible_outcome_key\": \"《第五秒之后》机制成为P09阶段公众表达‘清醒共识’的核心信道，不可逆转地改变了舆论场。\", \"death_chain_connection\": \"舆论胜利让敌人加速推进针对心脏节点的物理清除，死亡预告随之而来。\"}",
+      "source_event_direction_sha256": "a7f3c9e1b2d4f8a6c0e5d9b3a1f7c2e8d4b6a9c3e1f5d7b2a4c8e0f6d1b3a5c7",
+      "source_macro_sha256": "MG044-2005-2006-CURRICULUM-JUDGMENT-SILENCE",
+      "name": "静默共振：清醒的公共定义权争夺战",
+      "timeline_years": "2005",
+      "main_opponent": "巴里·索恩（Barry Thorne，奥瑞恩集团公关总监）",
+      "opposition_type": "institutional",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["CS_433_SILENCE_WAVE", "CS_434_PUBLIC_VERDICT"],
+      "foreshadow_ids": ["FS_435_HEART_ATTACK_LETTER"],
+      "main_characters": ["麦珂", "艾琳", "巴里·索恩", "黛安娜", "三十万匿名听众"],
+      "fictional_obstacle": "奥瑞恩集团利用剪辑音频制造麦珂“语无伦次”假象，并在听证会前夜发动媒体攻势，宣称麦珂已丧失现实感知能力，需强制托管。",
+      "prev_life_tragedy": "前世麦珂未做防备，直播中被巴里播放的“疯癫片段”误导，公众误以为她在胡言乱语，舆论一边倒地支持司法托管，导致曲库被强行冻结，麦珂在绝望中被迫签署放弃协议。",
+      "info_gap_from_prev_life": "麦珂清晰记得1996年《午夜星轨》第7842期结尾处，她刻意留下的五秒绝对静默曾引发听众产生强烈的生理共鸣与心理净化，这种“无声胜有声”的传播力远超任何语言辩解。",
+      "why_previous_life_failed": "前世过度依赖语言逻辑辩护，忽略了情感共鸣的穿透力；且未提前测试设备对集体行为的响应机制，导致在关键时刻无法调动公众力量反制。",
+      "preemptive_avoidance": "麦珂提前一周指令艾琳调试发射塔信号强度，并设计了一套无需联网、仅靠调频广播即可触发的“五秒静默”仪式，邀请全国听众在直播中同步闭嘴，用集体的呼吸声作为证据。",
+      "bait_and_evidence": "巴里抛出剪辑过的“疯癫录音”作为诱饵，试图激怒麦珂或让她情绪失控；麦珂则反向利用这五秒静默，通过现场收音机波形图（物理介质）证明三十万人同时屏息的集体意识，形成无可辩驳的“清醒共识”物证。",
+      "comic_villain_behavior": "巴里在直播中歇斯底里地指责这是“病态表演”，甚至试图切断信号，却不知自己成了全场三十万听众眼中的小丑，其愤怒表情被实时转播，引发全网嘲讽。",
+      "villain_loss": "奥瑞恩集团精心策划的“精神失能”叙事彻底崩塌，其公关团队信誉扫地，巴里·索恩因情绪失控被行业内部列为“不可靠专家”，失去未来三年内的媒体话语权。",
+      "protagonist_gain": "麦珂成功将“清醒”定义为一种可感知的集体行为，而非医生的主观判断；舆论风向从“同情疯子”逆转为“敬畏清醒者”，确立了其在公众心中的绝对权威。",
+      "relationship_change": "黛安娜从单纯的法律执行者转变为战略核心，她与麦珂之间形成了无需言语的默契；艾琳因成功操作技术细节，获得麦珂全权信任，被任命为未来“永恒星光”计划的技术监督人。",
+      "continuity_writes": [
+        "本章需详细描写1996年那五秒静默在麦珂记忆中的回响，以及她如何将其转化为2005年的战术武器。",
+        "必须出现巴里·索恩在镜头前崩溃大笑或尖叫的细节，体现其贪婪导致的滑稽失败。",
+        "需强调收音机波形图的物理特性，这是对抗数字剪辑的唯一铁证。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "reputation",
+          "entity_id": "PUBLIC_PERCEPTION_OF_MCKE",
+          "state_key": "mental_clarity_status__EC217",
+          "from": "suspected_insane",
+          "to": "collectively_verified_sane",
+          "irreversible": true,
+          "evidence": "SILENCE_WAVEFORM_ANALYSIS_AND_300K_PARTICIPANTS",
+          "effect_type": "protagonist_gain",
+          "source_domain": "reputation:PUBLIC_PERCEPTION_OF_MCKE",
+          "source_entity_id": "ORION_CLAIM_OF_INSANITY",
+          "source_state_key": "narrative_control_EC216"
+        },
+        {
+          "domain": "legal_strategy",
+          "entity_id": "ORION_LAW_TEAM",
+          "state_key": "credibility_status__EC217",
+          "from": "trusted_expert",
+          "to": "discredited_manipulator",
+          "irreversible": true,
+          "evidence": "BARRY_THORNE_LIVE_BREAKDOWN_FOOTAGE",
+          "effect_type": "villain_loss",
+          "source_domain": "legal_strategy:ORION_LAW_TEAM",
+          "source_entity_id": "MCKE_TRUST_DEFENSE",
+          "source_state_key": "defense_preparedness_EC216"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1996_SILENCE_EPISODE", "TECH_2005_FM_BROADCAST_STANDARD"],
+      "cluster_outcome": "麦珂通过一场跨越时空的静默仪式，彻底粉碎了奥瑞恩集团的“精神失能”指控，确立了“清醒即存在”的公众认知锚点，使曲库安全落入信托，同时迫使敌人加速启动针对其心脏的物理清除计划。",
+      "next_event_hook": "舆论胜利让敌人意识到软性攻击失效，神秘挂号信送达，内含2009年3月18日的心脏内科预约单，迫使麦珂必须进入P10阶段，提前布局应对‘永恒星光’计划的终极陷阱。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 433,
+          "timeline_start": "2005年夏，下午14:00",
+          "timeline_end": "2005年夏，下午14:05",
+          "scene": "麦珂工作室演播室 / 全国调频广播网络",
+          "chapter_goal": "启动《第五秒之后》特别节目，利用前世记忆中的五秒静默，制造三十万听众同步屏息的物理证据。",
+          "chapter_title": "第五秒的深渊",
+          "participants": ["麦珂", "艾琳", "巴里·索恩（远程连线）", "三十万听众"],
+          "opening_conflict": "巴里·索恩通过视频连线，手持剪辑过的“疯癫录音”片段，准备在直播中当众羞辱麦珂，声称她已无法控制自己的思维。",
+          "info_gap_use": "麦珂无视巴里的挑衅，直接按下播放键，不是播放录音，而是宣布：“现在，请所有人，无论你在哪里，闭上嘴，听我倒数。”",
+          "opponent_reaction": "巴里愣住，随即狂笑，认为这是麦珂精神错乱的最后挣扎，命令导播切断画面，但信号已被艾琳锁定在最高优先级频段。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂工作室演播室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂眼神聚焦，仿佛穿越回1996年那个夜晚。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_433_SILENCE_WAVEFORM",
+              "timeline_scope": "current",
+              "display_name": "《第五秒静默集体波形记录带》",
+              "kind": "forensic_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_425_SILENCE_AUDIO",
+              "timeline_scope": "previous_life",
+              "purpose": "唤醒麦珂对1996年静默效果的记忆，作为战术依据。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在镜头前保持绝对静止，目光如炬。",
+            "艾琳在控制台确认全国三十个主要城市的接收端已同步接入。",
+            "巴里在屏幕上咆哮，要求立即停止直播。",
+            "麦珂轻声倒数：三、二、一。",
+            "三十万听众在同一瞬间屏息，收音机信号出现独特的低频波动，形成肉眼可见的“静默波”。"
+          ],
+          "visible_payoff": "现场波形图显示，三十万人的呼吸同步消失，形成一道完美的直线，证明了集体意识的统一与清醒。",
+          "ending": "巴里看着屏幕上的波形，脸色惨白，他的“疯癫”指控在三十万人的沉默面前显得荒谬可笑。",
+          "must_include": ["麦珂的倒数动作", "三十万听众的同步反应", "波形图的视觉呈现"],
+          "must_not_include": ["麦珂的心理独白", "巴里的具体台词细节"],
+          "detailed_synopsis": "2005年夏，奥瑞恩集团公关总监巴里·索恩企图在直播中播放剪辑过的麦珂“疯癫”录音，以此坐实其精神失能的指控。麦珂早已洞悉此局，她并未辩解，而是授权艾琳启动了《第五秒之后》特别节目。在巴里得意洋洋地展示虚假证据时，麦珂突然平静地宣布：“现在，请所有人，无论你在哪里，闭上嘴，听我倒数。”这一指令唤醒了无数听众对1996年那场静默的记忆。随着麦珂的倒数，全国三十万调频听众在同一瞬间屏住呼吸，收音机信号中出现了一道前所未有的、代表集体静默的独特波形。这道物理介质记录的波形，成为了三十万人共同见证麦珂“清醒”的铁证，彻底粉碎了巴里的谎言。巴里在镜头前的咆哮和慌乱，反而成了他精神不稳定的佐证。"
+        },
+        {
+          "chapter_id": 434,
+          "timeline_start": "2005年夏，下午14:06",
+          "timeline_end": "2005年夏，下午16:30",
+          "scene": "奥瑞恩集团新闻发布会现场 / 各大媒体编辑部",
+          "chapter_goal": "奥瑞恩试图将静默解释为“病态表演”，却被公众舆论的反扑彻底击溃，确立“清醒即审判”的认知锚点。",
+          "chapter_title": "清醒的审判",
+          "participants": ["巴里·索恩", "麦珂（远程监控）", "黛安娜", "各地媒体记者", "公众代表"],
+          "opening_conflict": "巴里·索恩在新闻发布会上召开紧急会议，试图将“静默”定性为麦珂策划的“病态表演”，并指责三十万听众被洗脑。",
+          "info_gap_use": "麦珂并未现身，而是通过黛安娜发布的《第五秒之后》原始波形分析报告，证明这是三十万独立个体的自发行为，非组织化操控。",
+          "opponent_reaction": "巴里在发布会上情绪失控，大声辱骂听众是“傻子”，结果被各地媒体观众以“清醒即审判”标语刷屏，舆论彻底反转。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团新闻发布会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里站在麦克风前，满脸通红，声音嘶哑。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_433_SILENCE_WAVEFORM",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据，由黛安娜在媒体面前公开解读，证明静默的自发性与真实性。"
+            }
+          ],
+          "action_sequence": [
+            "巴里在发布会上声称静默是“病态表演”，试图抹黑麦珂。",
+            "黛安娜当场播放《第五秒之后》原始波形报告，并指出三十万人的呼吸同步率高达99.8%，证明这是集体清醒的体现。",
+            "各地媒体记者纷纷转发“清醒即审判”标语，巴里的言论被贴上“傲慢”、“疯狂”标签。",
+            "公众开始自发抵制奥瑞恩集团，其股价在午盘后暴跌。",
+            "麦珂在后台收到一封神秘挂号信，拆开一看，竟是2009年3月18日的心脏内科预约单。"
+          ],
+          "visible_payoff": "奥瑞恩集团的“精神失能”叙事彻底崩塌，公众舆论从同情转为对麦珂自主权的尊重，巴里·索恩沦为笑柄。",
+          "ending": "麦珂看着手中的挂号信，嘴角勾起一丝冷笑，她知道敌人的下一步将是针对她心脏的物理清除。",
+          "must_include": ["巴里的失态表现", "黛安娜的冷静反击", "神秘挂号信的出现"],
+          "must_not_include": ["麦珂的直接发言", "具体的股价数字"],
+          "detailed_synopsis": "奥瑞恩集团公关总监巴里·索恩在新闻发布会上歇斯底里地指责《第五秒之后》是“病态表演”，试图将三十万听众的集体静默污名化。然而，黛安娜从容地展示了由艾琳生成的原始波形分析报告，证明这是三十万独立个体的自发行为，而非组织化操控。巴里的言论被各地媒体观众以“清醒即审判”的标语刷屏反驳，其形象瞬间崩塌。公众舆论彻底反转，从最初的同情转为对麦珂自主权的绝对尊重。就在奥瑞恩集团股价暴跌、声誉扫地的同时，麦珂在后台收到了一封神秘的挂号信。她当众拆开，里面竟是一张2009年3月18日的心脏内科预约单。这一刻，麦珂意识到，当软性攻击失效后，敌人已加速推进针对她心脏节点的物理清除计划，死亡倒计时正式开启。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2005",
+    "character_states": [
+      {
+        "entity_id": "MCKE",
+        "state_key": "public_perception",
+        "new_value": "verified_sane_leader",
+        "change_reason": "通过《第五秒之后》节目确立了公众认知锚点。"
+      },
+      {
+        "entity_id": "BARRY_THORNE",
+        "state_key": "professional_credibility",
+        "new_value": "discredited_fraudster",
+        "change_reason": "在直播和发布会中情绪失控，被公众视为疯子。"
+      },
+      {
+        "entity_id": "DIANA",
+        "state_key": "role_status",
+        "new_value": "chief_strategist",
+        "change_reason": "成功主导舆论反击，成为团队核心战略家。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_a": "MCKE",
+        "entity_b": "DIANA",
+        "relation": "absolute_trust",
+        "change_reason": "黛安娜在危机中展现出卓越的战略眼光和执行能力。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "RIGHT_VL_TRUST_EXECUTION",
+        "state_key": "trust_security_level",
+        "new_value": "fully_secured_by_public_consensus",
+        "change_reason": "公众舆论的胜利使得司法托管申请失去法理基础。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "MCKE",
+        "state_key": "threat_level",
+        "new_value": "imminent_physical_threat",
+        "change_reason": "收到2009年心脏内科预约单，预示敌人将启动物理清除计划。"
+      }
+    ],
+    "open_threads": [
+      "死亡预告信件背后的真正意图",
+      "P10阶段应急预案的具体实施",
+      "奥瑞恩集团后续可能采取的物理手段"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团关于‘精神失能’的第二次司法攻击",
+      "公众舆论对麦珂的误解与偏见"
+    ],
+    "introduced_characters": [
+      "巴里·索恩（Barry Thorne）"
+    ],
+    "next_pressure": "随着司法途径的彻底失败，奥瑞恩集团将启动‘永恒星光’计划，麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题，同时应对资本市场的全面围剿。神秘挂号信暗示敌人已不再满足于舆论战，而是准备在2009年3月18日实施针对心脏的物理清除。"
+  }
+}

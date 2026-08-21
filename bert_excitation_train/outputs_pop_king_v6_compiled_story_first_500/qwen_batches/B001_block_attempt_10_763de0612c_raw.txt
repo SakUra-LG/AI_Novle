@@ -1,0 +1,243 @@
+{
+  "block_id": "B001",
+  "chapter_span": [
+    1,
+    20
+  ],
+  "block_title": "星火审判：重生之始",
+  "timeline_years": "2009→1969",
+  "coarse_story_summary": "麦珂·杰森在2009年5月24日被系统性用药致死，重生回1969年十一岁全国出道试镜后台。他带着前世的记忆，精准复现了1969年11月7日的签约场景，利用对合同细节、人员习惯和流程漏洞的了解，在第2章成功地让母亲玛莎在公证处手写添加‘每周亲子通话不少于两次’的附录条款，使后续所有‘保护性隔离条款’因违反该附录而丧失执行正当性。随后的几章中，麦珂凭借对音乐行业的深刻理解，在试镜环节即展现出非凡的才华，赢得制片方的认可，同时也在家庭关系中逐步建立起与母亲的信任，避免父亲乔纳的过度干预。在接下来的事件中，他通过一系列精心布局的动作，逐步瓦解了奥瑞恩集团对他未来的控制计划，并为今后四十年的抗争打下了坚实的基础。",
+  "entry_state": {
+    "career_and_reputation": "麦珂处于试镜阶段，尚未建立任何职业声誉。",
+    "rights_and_assets": "麦珂尚未签署任何正式合同，权利尚属空白。",
+    "family_and_relationships": "麦珂与母亲玛莎关系亲密，但父亲乔纳对其未来充满急功近利的期望。",
+    "health_and_location": "麦珂身体健康，位于试镜后台，准备参与全国童星选拔。",
+    "open_threads": [
+      "1969年试镜后台，麦珂用指甲在橡皮筋内侧划三道痕，代表玛莎签字时指尖颤抖、乔纳漏读第七款附加注释及未来拆链节数"
+    ]
+  },
+  "block_goal": "麦珂在1969年试镜期间，利用前世记忆识破奥瑞恩集团的控制陷阱，夺回声音主权与监护权缓冲空间。",
+  "main_conflict": "麦珂面对奥瑞恩集团借全国童星选拔势能施压速签合同，同时受到父亲乔纳急于变现的压力，母亲玛莎缺乏法律意识与谈判筹码。",
+  "rebirth_advantage": "麦珂精确复现1969年11月7日签约当日维克多翻阅合同第十七页的坐姿、钢笔墨水洇染位置及漏读条款的段落编号；预判公证处每日仅开放下午两点至三点窗口期；记住玛莎签字时右手食指微颤频率与乔纳跳过第七款附加注释的阅读停顿毫秒数。",
+  "character_movements": [
+    "玛莎首次行使否决权，拒签海外巡演意向书",
+    "麦珂确立不可替代原声地位，拒绝标准化包装路线",
+    "麦珂获得录音过程全程胶片监看权，锁定玛莎为唯一法定联络人"
+  ],
+  "rights_health_relationship_changes": {
+    "rights_and_assets": [
+      "持有全部原始录音胶片与母带物理载体",
+      "玛莎为唯一法定联络人",
+      "合同附录具备司法可援引效力"
+    ],
+    "health_and_safety": [
+      "自然发育，无医美/激素干预"
+    ],
+    "family_and_romance": [
+      "玛莎首次独立行使否决权",
+      "乔纳退出决策层",
+      "维克多视其为‘可控变量’而非威胁"
+    ],
+    "career_and_reputation": [
+      "确立不可替代原声地位",
+      "获‘纯净之声’业内称号",
+      "拒绝标准化包装路线"
+    ]
+  },
+  "causal_links_used": [
+    "CS01",
+    "CS10"
+  ],
+  "foreshadows_planted_or_advanced": [
+    "FS01（1969年试镜后台麦珂问妈妈‘如果他们让我唱假声，算不算骗人？’）"
+  ],
+  "block_outcome": "麦珂在1969年试镜后成功获得第一份合同，同时在家庭中建立了初步的权力平衡，并在行业中树立了独特的声音形象。",
+  "handoff_to_next_block": "麦珂已掌握奥瑞恩集团对童星合约‘三不原则’，成为P02中推动厂牌迁移与自主母带存档的核心突破口。",
+  "macro_groups": [
+    {
+      "macro_group_id": "MG001",
+      "chapter_span": [
+        1,
+        10
+      ],
+      "title": "重生之始：试镜与初战",
+      "timeline_years": "2009→1969",
+      "macro_goal": "麦珂在试镜中展现天赋，识破奥瑞恩集团的控制陷阱，夺取监护权缓冲空间。",
+      "historical_stage": "1969年全国童星选拔，奥瑞恩集团以高曝光率吸引少年艺人签约。",
+      "main_conflict": "麦珂面临奥瑞恩集团的高压签约策略，同时要应对父亲乔纳的逐利心态和母亲玛莎的弱势状态。",
+      "rebirth_advantage": "麦珂准确预测了奥瑞恩集团的合同漏洞，利用他对合同细节和流程的认知进行反击。",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC001",
+          "chapter_span": [
+            1,
+            2
+          ],
+          "opposition_type": "villain",
+          "event_type": "health_safety",
+          "solution_type": "safety_preemption",
+          "death_chain_role": "advance",
+          "direction": "第1章麦珂在2009年5月24日深夜被系统性用药致死，醒来后发现自己重生于1969年11月6日晚的试镜后台。第2章麦珂冷静观察周围环境，注意到维克多·兰斯正在仔细查看合同第十七页，他回忆起前世相关细节，决定在签约前采取行动。他在试镜后台用指甲在橡皮筋内侧划出三道痕迹，分别代表玛莎签字时的手指颤抖、乔纳跳过第七款附加注释的阅读停顿，以及自己未来要拆掉的锁链节数。这一举动虽未立即引发冲突，却为后续的反制埋下伏笔。"
+        },
+        {
+          "cluster_id": "EC002",
+          "chapter_span": [
+            3,
+            4
+          ],
+          "opposition_type": "villain",
+          "event_type": "contract_rights",
+          "solution_type": "negotiation",
+          "death_chain_role": "pressure",
+          "direction": "第3章麦珂在试镜结束后，趁父母离开的空隙，带着红笔返回公证处。他要求在原始合同骑缝章旁手写‘每周亲子通话不少于两次’，并请求维克多当场补签手写承诺。尽管这并未修改主约，但却使后续所有‘保护性隔离条款’因违反该附录而丧失执行正当性。第4章，麦珂的母亲玛莎第一次独立行使否决权，拒绝签署海外巡演意向书。这一举动虽然看似轻微，却标志着她从被动接受到主动争取的态度转变，同时也使得奥瑞恩集团不得不重新考虑他们的控制策略。"
+        },
+        {
+          "cluster_id": "EC003",
+          "chapter_span": [
+            5,
+            6
+          ],
+          "opposition_type": "family",
+          "event_type": "family_relationship",
+          "solution_type": "relationship_choice",
+          "death_chain_role": "reveal",
+          "direction": "第5章麦珂在试镜后台再次清唱《晨光初啼》副歌第一句，表现出超乎寻常的音乐天赋，令现场制片人震惊。第6章，他向母亲玛莎提出一个问题：‘如果他们让我唱假声，算不算骗人？’这个问题虽未被记录，却被等待区的三位考生记入个人日记本。其中一人（莱昂·周）在多年后将其用于证明麦珂自幼便坚持诚实创作的伦理观，这对奥瑞恩集团的‘后期堕落论’叙事构成了直接挑战。"
+        },
+        {
+          "cluster_id": "EC004",
+          "chapter_span": [
+            7,
+            8
+          ],
+          "opposition_type": "institutional",
+          "event_type": "performance",
+          "solution_type": "performance_proof",
+          "death_chain_role": "echo",
+          "direction": "第7章麦珂在试镜舞台上完美演绎了即兴旋律，展现出与众不同的音乐感知力。第8章，他拒绝按照规定提前三个小时化妆，坚持穿自家毛衣上台，但在镜头推近时突然清唱一段即兴旋律，引起制片人的关注。这一行为不仅展示了他独特的个性，也为他赢得了更多的行业认可。"
+        },
+        {
+          "cluster_id": "EC005",
+          "chapter_span": [
+            9,
+            10
+          ],
+          "opposition_type": "villain",
+          "event_type": "media_reputation",
+          "solution_type": "media_counter",
+          "death_chain_role": "advance",
+          "direction": "第9章，麦珂在试镜中展现出非凡的才华，吸引了媒体的关注。第10章，他拒绝第一次电视采访提前三小时化妆的要求，坚持穿自家毛衣上台，却在镜头推近时突然清唱一段即兴旋律，引起制片人的注意。这一举动不仅让他获得了更高的关注度，也让他在行业内树立了独特的形象，开始影响媒体对他的评价。"
+        }
+      ],
+      "romance_progression": "未成年阶段明确禁恋，麦珂的所有亲密互动限于家人与师长。",
+      "ending_state": "麦珂在试镜中展现了非凡的才华，获得了一定的职业声誉，同时在家庭中逐渐建立起自己的影响力。",
+      "next_group_hook": "麦珂已经掌握了奥瑞恩集团对童星合约的‘三不原则’，为后续的反抗奠定了基础。"
+    },
+    {
+      "macro_group_id": "MG002",
+      "chapter_span": [
+        11,
+        20
+      ],
+      "title": "暗流涌动：成长中的觉醒",
+      "timeline_years": "1969→1970",
+      "macro_goal": "麦珂在成长过程中不断识破奥瑞恩集团的控制手段，逐步扩大自身影响力，增强家庭对抗能力。",
+      "historical_stage": "1969年至1970年，麦珂逐步进入娱乐圈，开始接触更多复杂的商业运作。",
+      "main_conflict": "麦珂面临着越来越多来自奥瑞恩集团的控制尝试，同时需要处理家庭内部的矛盾与外界的舆论压力。",
+      "rebirth_advantage": "麦珂继续利用前世对合同细节、人物习惯和流程漏洞的认知，逐步识别并化解潜在的风险。",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC006",
+          "chapter_span": [
+            11,
+            12
+          ],
+          "opposition_type": "family",
+          "event_type": "family_relationship",
+          "solution_type": "relationship_choice",
+          "death_chain_role": "pressure",
+          "direction": "第11章，麦珂在家庭会议中明确提出希望与母亲玛莎共同制定未来的规划，而不是由父亲乔纳一手包办。第12章，玛莎第一次独立做出重大决策，拒绝签署一份不利于麦珂的合同草案。这一举动表明她已经开始意识到自己的重要性，并愿意为儿子争取更好的未来。"
+        },
+        {
+          "cluster_id": "EC007",
+          "chapter_span": [
+            13,
+            14
+          ],
+          "opposition_type": "institutional",
+          "event_type": "media_reputation",
+          "solution_type": "public_confrontation",
+          "death_chain_role": "reveal",
+          "direction": "第13章，麦珂在一次公开活动中拒绝配合媒体的宣传套路，坚持表达自己的真实想法。第14章，他公开批评某些媒体对他的报道方式，认为这种做法违背了艺术的本质。这一举动引起了广泛关注，并促使部分媒体反思自身的责任。"
+        },
+        {
+          "cluster_id": "EC008",
+          "chapter_span": [
+            15,
+            16
+          ],
+          "opposition_type": "institutional",
+          "event_type": "creation",
+          "solution_type": "creative_breakthrough",
+          "death_chain_role": "advance",
+          "direction": "第15章，麦珂在一次创作过程中突破传统模式，尝试新的音乐风格。第16章，他推出的全新作品受到了广泛好评，被认为是具有开创性的音乐实验。这一突破不仅提升了他的知名度，也为他赢得了更多的创作自由。"
+        },
+        {
+          "cluster_id": "EC009",
+          "chapter_span": [
+            17,
+            18
+          ],
+          "opposition_type": "internal",
+          "event_type": "performance",
+          "solution_type": "market_result",
+          "death_chain_role": "echo",
+          "direction": "第17章，麦珂在一次演出中表现出色，吸引了大量观众的关注。第18章，他的新专辑销售成绩优异，显示出市场对他的高度认可。这一成果不仅是对他努力的肯定，也为他赢得了更大的发展空间。"
+        },
+        {
+          "cluster_id": "EC010",
+          "chapter_span": [
+            19,
+            20
+          ],
+          "opposition_type": "institutional",
+          "event_type": "fan_public_welfare",
+          "solution_type": "strategic_withdrawal",
+          "death_chain_role": "advance",
+          "direction": "第19章，麦珂在一次粉丝见面会上表达了对粉丝群体的感激之情，并鼓励他们积极参与到他的创作过程中。第20章，他宣布将一部分收入用于支持贫困地区的音乐教育项目。这一举措不仅增强了他与粉丝之间的联系，也进一步巩固了他的社会责任感。"
+        }
+      ],
+      "romance_progression": "未成年的感情线仍然保持纯洁，麦珂专注于家庭和事业的发展。",
+      "ending_state": "麦珂在成长过程中逐步建立起自己的影响力，同时在家庭中获得了更多的自主权，并且开始承担一定的社会责任。",
+      "next_group_hook": "麦珂已经准备好迎接更复杂的挑战，为未来更大规模的抗争做好准备。"
+    }
+  ],
+  "continuity_update": {
+    "characters": [
+      "麦珂·杰森：重生后从试镜后台出发，逐步识破奥瑞恩集团的控制陷阱，建立自我影响力。",
+      "玛莎·杰森：从被动接受到主动争取，成为麦珂的重要支持者。",
+      "乔纳·杰森：逐渐退居幕后，不再主导麦珂的未来发展。",
+      "维克多·兰斯：始终保持警惕，试图维持对麦珂的控制。"
+    ],
+    "relationships": [
+      "麦珂与母亲玛莎的关系日益紧密，玛莎开始主动参与到麦珂的决策中。",
+      "麦珂与父亲乔纳的关系趋于紧张，乔纳的急功近利态度逐渐显现。",
+      "麦珂与奥瑞恩集团的对抗持续升级，双方都在试探对方的底线。"
+    ],
+    "rights_and_assets": [
+      "麦珂持有全部原始录音胶片与母带物理载体。",
+      "玛莎为唯一法定联络人，拥有对麦珂事务的最终否决权。",
+      "合同附录具备司法可援引效力，限制了奥瑞恩集团的控制范围。"
+    ],
+    "health_and_location": [
+      "麦珂保持自然发育，未接受任何医美或激素干预。",
+      "麦珂居住在湖心谷老宅，远离奥瑞恩集团的直接干扰。"
+    ],
+    "resolved_threads": [
+      "1969年试镜后台，麦珂用指甲在橡皮筋内侧划三道痕，代表玛莎签字时指尖颤抖、乔纳漏读第七款附加注释及未来拆链节数"
+    ],
+    "open_threads": [
+      "奥瑞恩未交还1969年试镜原始胶片第三拷贝",
+      "维克多签字时领带结触感异常是否关联其甲状腺疾病史"
+    ]
+  }
+}

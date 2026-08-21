@@ -1,0 +1,236 @@
+{
+  "macro_group_id": "MG018",
+  "event_clusters": [
+    {
+      "cluster_id": "EC090",
+      "chapter_span": [
+        179,
+        180
+      ],
+      "source_event_direction": "前世具体受害：前世奥瑞恩通过媒体操控舆论，将麦珂塑造成病弱形象以剥夺其话语权。；本事件独有的前世信息差：重生者预知奥瑞恩即将发布虚假健康声明的时间点与具体措辞。；今生提前动作：麦珂在发布会现场直接播放声压可视化系统录制的实时生理数据，反驳虚假报告。；第179章可见小赢：现场观众与媒体记者目睹数据与陈述不符，奥瑞恩发言人陷入逻辑混乱。；第180章新交锋：维克多·兰斯试图强行中断直播，被安保人员依据独立审计员提供的法律文件拦下。；阻力方永久现实损失：奥瑞恩集团被迫公开道歉并赔偿巨额损失，其操纵媒体的能力被彻底瓦解。；主角现实收益：麦珂健康状态稳定，大型场馆光学投影组件研发压力转化为新的技术动力。；不可逆结算键：实时物理数据公开传播，奥瑞恩再无法通过单一渠道控制舆论走向。；接回死亡控制主线：终结前世因舆论抹杀导致的生存危机，开启全面反击的新篇章。",
+      "source_event_direction_sha256": "b47b9b0bc0a69de01452db4658aad46a720650debe9e87e872c1524e84cdc657",
+      "source_macro_sha256": "4558a3293077dc214e94b333bdb6aa4fa84bf5873732c5e8a064afceb296e541",
+      "name": "声纹铁证与舆论反杀",
+      "timeline_years": "1986",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS02"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "维克多·兰斯",
+        "莱昂·周",
+        "苏菲亚"
+      ],
+      "fictional_obstacle": "奥瑞恩集团联合保险公司发布虚假健康报告，指控麦珂患有严重声带萎缩，试图通过媒体舆论施压取消巡演并冻结资金。",
+      "prev_life_tragedy": "前世麦珂因缺乏实时生理数据证明，被媒体定性为‘病弱歌手’，失去话语权，最终在孤立无援中巡演失败，事业崩塌。",
+      "info_gap_from_prev_life": "麦珂预知奥瑞恩将在1986年3月15日的记者会上使用‘声带纤维化’这一特定医学术语进行抹黑，并知道其伪造的体检报告来源医院。",
+      "why_previous_life_failed": "前世麦珂仅凭口头辩解，无法对抗权威医疗机构出具的书面报告，且缺乏能够实时、客观展示声带状态的物理证据。",
+      "preemptive_avoidance": "麦珂提前搭建‘声压可视化系统’全机械原型机，并在发布会现场连接麦珂风，准备实时投射声带振动波形。",
+      "bait_and_evidence": "麦珂故意在发布会前泄露‘身体不适’的消息，诱导奥瑞恩提前发动舆论攻击；现场使用机械投影仪展示实时声压波形，作为不可篡改的物理证据。",
+      "comic_villain_behavior": "维克多·兰斯在波形图清晰显示麦珂声带健康时，试图辩称‘机械误差’，并滑稽地要求检查投影仪灯泡，暴露其心虚与无知。",
+      "villain_loss": "奥瑞恩集团被迫公开道歉，赔偿麦珂精神损失费，并因伪造医疗文件面临法律调查，其媒体操控信誉彻底破产。",
+      "protagonist_gain": "麦珂恢复公众信任，巡演资金链完全解冻，并获得‘声压可视化系统’的专利保护，确立技术壁垒。",
+      "relationship_change": "莱昂·周从辅助角色转变为麦珂的法定审计代表，两人建立基于法律与技术的深度信任同盟。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007",
+          "state_key": "reputation_status",
+          "from": "compromised",
+          "to": "vindicated",
+          "irreversible": true,
+          "evidence": "ART_180_LIVE_BROADCAST_RECORDING",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_TOUR_FUND",
+          "state_key": "access_status__extension_EC090",
+          "from": "none",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_180_COURT_INJUNCTION",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "access_status"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_B6BBF0D9B359",
+          "state_key": "opposition_loss_EC090",
+          "from": "active",
+          "to": "奥瑞恩集团被迫公开道歉，赔偿麦珂精神损失费，并因伪造医疗文件面临法律调查，其媒体操控信誉彻底破产。",
+          "irreversible": true,
+          "evidence": "奥瑞恩集团的舆论抹黑计划彻底失败，麦珂通过实时物理数据证明清白，重获公众信任与资金支持。",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [],
+      "cluster_outcome": "奥瑞恩集团的舆论抹黑计划彻底失败，麦珂通过实时物理数据证明清白，重获公众信任与资金支持。",
+      "next_event_hook": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，这将直接触发1987年‘棱镜之夜’直播事故的前置条件。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 179,
+          "timeline_start": "1986-05-13",
+          "timeline_end": "1986-05-13",
+          "scene": "市中心新闻发布厅",
+          "chapter_goal": "利用声压可视化系统实时反驳虚假健康报告，瓦解奥瑞恩的舆论攻势。",
+          "chapter_title": "波形之下的真相",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "莱昂·周",
+            "记者团"
+          ],
+          "opening_conflict": "维克多·兰斯在发布会上宣读伪造的体检报告，指控麦珂声带严重受损，不适合继续巡演。",
+          "info_gap_use": "麦珂利用前世记忆，预判维克多会强调‘纤维化’，并提前准备好对应的正常声带波形数据。",
+          "opponent_reaction": "维克多·兰斯试图通过质疑设备的科学性来转移注意力，但被麦珂的实时演示驳斥。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市中心新闻发布厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "维克多·兰斯展开伪造报告"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_179_LIVE_WAVEFORM_PHOTO",
+              "timeline_scope": "current",
+              "display_name": "发布会现场波形照片",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_169_ACOUSTIC_VISUALIZATION_REPORT",
+              "timeline_scope": "current",
+              "purpose": "作为设备校准的技术依据"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯宣读伪造报告，媒体哗然。",
+            "麦珂平静上台，启动声压可视化系统。",
+            "麦珂现场演唱，投影幕布上显示清晰、稳定的声带振动波形。",
+            "维克多·兰斯试图辩解，被波形数据打脸。"
+          ],
+          "visible_payoff": "记者们拍摄下波形照片，奥瑞恩的谎言在物理证据面前不攻自破。",
+          "ending": "维克多·兰斯狼狈离场，麦珂赢得初步舆论胜利。",
+          "must_include": [
+            "声压可视化系统的机械结构描述",
+            "维克多·兰斯的滑稽辩解",
+            "必须呈现信息差的实际使用：麦珂利用前世记忆，预判维克多会强调‘纤维化’，并提前准备好对应的正常声带波形数据。"
+          ],
+          "must_not_include": [
+            "电子数据篡改",
+            "手机录音"
+          ],
+          "detailed_synopsis": "1986年3月15日，市中心新闻发布厅内气氛紧张。奥瑞恩集团代表维克多·兰斯手持一份伪造的体检报告，指控麦珂声带纤维化，宣布暂停其巡演。麦珂冷静应对，邀请莱昂·周协助启动‘声压可视化系统’。随着麦珂开口演唱，投影幕布上实时显示出清晰、稳定的声带振动波形，与报告中描述的‘严重受损’截然相反。维克多·兰斯试图辩称设备故障，但波形数据无可辩驳。记者们纷纷拍照记录，奥瑞恩的舆论攻势瞬间瓦解。"
+        },
+        {
+          "chapter_id": 180,
+          "timeline_start": "1986-05-13",
+          "timeline_end": "1986-05-13",
+          "scene": "市中心新闻发布厅",
+          "chapter_goal": "阻止维克多·兰斯强行中断直播，并通过法律手段确立麦珂的清白。",
+          "chapter_title": "法律与波形的双重锁定",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "莱昂·周",
+            "安保人员",
+            "律师"
+          ],
+          "opening_conflict": "维克多·兰斯恼羞成怒，试图强行切断电源中断直播。",
+          "info_gap_use": "麦珂预知维克多会采取极端手段，提前安排莱昂·周持有法院禁令。",
+          "opponent_reaction": "维克多·兰斯被安保人员拦下，面临法律制裁。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市中心新闻发布厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "维克多·兰斯冲向控制台"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_180_LIVE_BROADCAST_RECORDING",
+              "timeline_scope": "current",
+              "display_name": "发布会全程录像",
+              "kind": "document"
+            },
+            {
+              "artifact_id": "ART_180_COURT_INJUNCTION",
+              "timeline_scope": "current",
+              "display_name": "法院禁令",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_179_LIVE_WAVEFORM_PHOTO",
+              "timeline_scope": "current",
+              "purpose": "作为公开证据"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯冲向控制台试图切断电源。",
+            "莱昂·周出示法院禁令，安保人员立即介入。",
+            "维克多·兰斯被控制，场面一度混乱。",
+            "麦珂发表声明，宣布奥瑞恩的阴谋破产。"
+          ],
+          "visible_payoff": "奥瑞恩集团被迫公开道歉，麦珂获得法律支持，舆论彻底反转。",
+          "ending": "麦珂与莱昂·周庆祝胜利，准备下一步的大型场馆测试。",
+          "must_include": [
+            "莱昂·周出示法律文件",
+            "维克多·兰斯的狼狈被捕",
+            "必须呈现信息差的实际使用：麦珂预知维克多会采取极端手段，提前安排莱昂·周持有法院禁令。"
+          ],
+          "must_not_include": [
+            "暴力冲突",
+            "电子证据"
+          ],
+          "detailed_synopsis": "维克多·兰斯见谎言被戳穿，恼羞成怒地冲向控制台试图切断电源。莱昂·周迅速出示法院禁令，安保人员立即上前控制维克多。麦珂趁机发表声明，揭露奥瑞恩集团伪造医疗文件的阴谋。发布会全程被录像，成为关键证据。奥瑞恩集团被迫公开道歉，麦珂重获公众信任。莱昂·周因表现优异，正式成为麦珂的法律顾问。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1986",
+    "character_states": [
+      "麦珂：公众信任恢复，技术壁垒确立",
+      "维克多·兰斯：信誉破产，面临法律调查",
+      "莱昂·周：成为核心审计员，法律地位提升"
+    ],
+    "relationship_states": [
+      "麦珂与莱昂·周：从合作升级为生死同盟",
+      "麦珂与奥瑞恩：从对抗升级为全面反击"
+    ],
+    "rights_and_assets": [
+      "麦珂：获得专利保护，资金链安全",
+      "奥瑞恩：面临巨额赔偿，媒体信誉丧失"
+    ],
+    "health_and_location": [
+      "麦珂：健康状态稳定，位于市中心",
+      "维克多·兰斯：被控制，位于市中心"
+    ],
+    "open_threads": [
+      "大型场馆光学投影组件研发",
+      "1987年‘棱镜之夜’直播事故前置条件"
+    ],
+    "resolved_threads": [
+      "奥瑞恩的舆论抹黑计划",
+      "麦珂的健康质疑"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，这将直接触发1987年‘棱镜之夜’直播事故的前置条件。"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "macro_group_id": "MG017",
+  "event_clusters": [
+    {
+      "cluster_id": "EC084",
+      "chapter_span": [
+        167,
+        168
+      ],
+      "source_event_direction": "前世具体受害：前世奥瑞恩利用媒体垄断舆论，将莱昂·周污名化为“精神不稳定者”。；本事件独有的前世信息差：1985年工作室日莱昂·周指出故障时段为第3分12秒，蓝黑圆珠笔型号可查。；今生提前动作：麦珂在公众听证会上安排独立审计员现场复现故障细节，并比对当年笔迹日志。；第167章可见小赢：独立审计员精准描述故障波形与笔压特征，全场观众见证其清醒状态。；第168章新交锋：奥瑞恩代表试图打断听证会，维克多·兰斯因无法解释物理数据而语塞。；阻力方永久现实损失：奥瑞恩信誉受损，公众听证会记录成为法律铁证。；主角现实收益：独立审计员被确认为可信证人，决定报考音乐学院深造。；不可逆结算键：听证会记录确认证人清醒与数据真实性；接回死亡控制主线：扭转前世因舆论抹杀导致的证人失效危机",
+      "source_event_direction_sha256": "d3e2059b5afac237417205069dc14aca97be214c857fd8195b6c52c3c1ef3ab8",
+      "source_macro_sha256": "f57ba01c3856e3f594dea9ebeecea75052cb6cb1680db79def2d851080ff217c",
+      "name": "听证会上的机械回响",
+      "timeline_years": "1985—1986",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "institutional",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS02"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莱昂·周",
+        "维克多·兰斯",
+        "苏菲亚"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用媒体将莱昂·周污名化为精神不稳定者，并试图通过保险拒赔切断资金。",
+      "prev_life_tragedy": "前世莱昂·周因舆论抹杀被视为疯子，证据链断裂，麦珂资金链断裂导致巡演失败。",
+      "info_gap_from_prev_life": "1985年工作室日故障确切时间为第3分12秒，且莱昂·周当时使用的蓝黑圆珠笔型号及笔压特征可查。",
+      "why_previous_life_failed": "缺乏物理证据佐证证人证词，仅凭口头陈述无法对抗资本控制的媒体叙事。",
+      "preemptive_avoidance": "麦珂在听证会现场布置‘声压可视化系统’原型机，并提前获取莱昂·周当年的日志与笔迹样本。",
+      "bait_and_evidence": "诱导维克多·兰斯质疑莱昂·周的精神状态，随即展示1984年喉炎康复打卡表（第112页）与笔压分析，证明其当时清醒且记录精准。",
+      "comic_villain_behavior": "维克多·兰斯试图用‘艺术家的感性冲动’来解释数据异常，结果被机械原型机的客观波形打脸，显得滑稽且无知。",
+      "villain_loss": "奥瑞恩集团信誉受损，保险拒赔令被迫撤回，公众听证会记录成为法律铁证。",
+      "protagonist_gain": "莱昂·周被确认为可信证人，加入核心审计组；巡演资金链恢复安全。",
+      "relationship_change": "莱昂·周从被怀疑者转变为麦珂最坚定的技术盟友，决定报考音乐学院深造。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007:trust_governance__extension_EC084",
+          "state_key": "trust_governance__extension_EC084",
+          "from": "contested",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_167_HEARING_TRANSCRIPT",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_B6BBF0D9B359",
+          "state_key": "opposition_loss_EC084",
+          "from": "active",
+          "to": "奥瑞恩集团舆论操控失败，保险策略破产。",
+          "irreversible": true,
+          "evidence": "ART_167_HEARING_TRANSCRIPT",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [],
+      "cluster_outcome": "听证会记录确认证人清醒与数据真实性，奥瑞恩集团被迫撤回保险拒赔令，莱昂·周正式加入核心审计组。",
+      "next_event_hook": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，触发1987年‘棱镜之夜’直播事故前置条件。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 167,
+          "timeline_start": "1986-01-15",
+          "timeline_end": "1986-01-15",
+          "scene": "市立图书馆公共听证室",
+          "chapter_goal": "通过物理证据洗清莱昂·周的污名，确立其证词的可信度。",
+          "chapter_title": "笔尖下的真相",
+          "participants": [
+            "麦珂",
+            "莱昂·周",
+            "维克多·兰斯",
+            "独立审计员",
+            "记者群"
+          ],
+          "opening_conflict": "维克多·兰斯公开质疑莱昂·周患有癔症，其关于1985年故障的记录是幻觉。",
+          "info_gap_use": "麦珂出示1984年喉炎康复打卡表第112页，证明莱昂·周在发病期仍保持极高逻辑性的记录习惯。",
+          "opponent_reaction": "维克多·兰斯试图以‘巧合’搪塞，但无法解释笔压数据的精确性。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市立图书馆公共听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "听证会开始，维克多·兰斯率先发难"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_167_HEARING_TRANSCRIPT",
+              "timeline_scope": "current",
+              "display_name": "听证会官方记录",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "维克多·兰斯展示伪造的医疗报告，指控莱昂·周精神不稳定。",
+            "麦珂冷静回应，请出独立审计员展示‘声压可视化系统’原型机。",
+            "审计员现场复现1985年故障波形，与莱昂·周日志中的描述完全一致。",
+            "麦珂出示蓝黑圆珠笔笔压分析，证明记录时的清醒与专注。"
+          ],
+          "visible_payoff": "全场记者记录笔压分析结果，莱昂·周的证词获得初步认可。",
+          "ending": "维克多·兰斯脸色铁青，但暂时无法反驳物理证据。",
+          "must_include": [
+            "1984年喉炎康复打卡表第112页",
+            "蓝黑圆珠笔笔压分析",
+            "声压可视化系统原型机"
+          ],
+          "must_not_include": [
+            "手机",
+            "互联网",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "听证会上，维克多·兰斯咄咄逼人，出示伪造的医疗报告，声称莱昂·周患有间歇性癔症，其关于1985年工作室故障的记录纯属幻觉。麦珂不慌不忙，请出独立审计员。审计员启动‘声压可视化系统’原型机，现场复现了1985年故障时的声波波形。波形图与莱昂·周日志中的描述惊人地一致，精确到毫秒。麦珂随即出示1984年喉炎康复打卡表第112页，以及莱昂·周当时使用的蓝黑圆珠笔的笔压分析。数据显示，莱昂·周在记录故障时，笔压稳定，倾斜角一致，证明其当时处于高度清醒和专注状态。维克多·兰斯试图以‘巧合’搪塞，但面对冰冷的物理数据，他无言以对。全场记者纷纷记录，莱昂·周的证词可信度大幅提升。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_151_FLUORESCENT_EVIDENCE",
+              "timeline_scope": "previous_life",
+              "purpose": "作为背景参考，证明麦珂一贯的证据收集风格"
+            }
+          ]
+        },
+        {
+          "chapter_id": 168,
+          "timeline_start": "1986-01-15",
+          "timeline_end": "1986-01-15",
+          "scene": "市立图书馆公共听证室",
+          "chapter_goal": "彻底击溃奥瑞恩集团的舆论攻势，确立技术壁垒，恢复资金链。",
+          "chapter_title": "机械的审判",
+          "participants": [
+            "麦珂",
+            "莱昂·周",
+            "维克多·兰斯",
+            "苏菲亚",
+            "保险公司代表"
+          ],
+          "opening_conflict": "维克多·兰斯试图打断听证会，并威胁要切断麦珂的巡演资金。",
+          "info_gap_use": "麦珂揭示奥瑞恩集团收购胶片厂使用酸性显影液的阴谋，并展示苏菲亚找到的残留样本。",
+          "opponent_reaction": "维克多·兰斯因无法解释物理数据而语塞，最终被迫承认失败。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市立图书馆公共听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "维克多·兰斯试图强行终止听证会"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_167_HEARING_TRANSCRIPT",
+              "timeline_scope": "current",
+              "purpose": "作为法律铁证，迫使保险公司撤回拒赔令"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯恼羞成怒，试图以‘艺术家的感性冲动’解释数据异常。",
+            "麦珂冷笑，指出其逻辑漏洞，并展示苏菲亚找到的酸性显影液残留样本。",
+            "麦珂揭示奥瑞恩集团试图通过销毁胶片证据来掩盖真相的阴谋。",
+            "保险公司代表目睹全程，当场宣布撤回拒赔令。"
+          ],
+          "visible_payoff": "保险公司撤回拒赔令，巡演资金链恢复安全；莱昂·周决定报考音乐学院。",
+          "ending": "维克多·兰斯狼狈离场，麦珂与莱昂·周握手，确立同盟关系。",
+          "must_include": [
+            "酸性显影液残留样本",
+            "保险公司撤回拒赔令",
+            "莱昂·周决定报考音乐学院"
+          ],
+          "must_not_include": [
+            "手机",
+            "互联网",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "维克多·兰斯见势不妙，试图强行终止听证会，并威胁要切断麦珂的巡演资金。麦珂冷笑一声，指出其逻辑漏洞：如果莱昂·周是疯子，为何能精准预测故障时间？她随即展示苏菲亚找到的酸性显影液残留样本，揭示奥瑞恩集团试图通过销毁胶片证据来掩盖真相的阴谋。维克多·兰斯语塞，无法解释物理数据。保险公司代表目睹全程，当场宣布撤回拒赔令，恢复麦珂的巡演资金。听证会结束后，莱昂·周感激地握住麦珂的手，决定报考音乐学院深造，成为连接技术与公众的桥梁。维克多·兰斯狼狈离场，奥瑞恩集团的信誉遭受重创。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1986",
+    "character_states": [
+      "麦珂：资金链恢复，技术壁垒确立，面临光学投影组件研发压力。",
+      "莱昂·周：证词可信度确立，加入核心审计组，决定报考音乐学院。",
+      "维克多·兰斯：信誉受损，保险策略破产，狼狈离场。"
+    ],
+    "relationship_states": [
+      "麦珂与莱昂·周：确立同盟关系，信任度极高。",
+      "麦珂与奥瑞恩集团：敌对关系加剧，奥瑞恩集团试图通过其他手段反击。"
+    ],
+    "rights_and_assets": [
+      "巡演资金链恢复安全。",
+      "听证会记录成为法律铁证。"
+    ],
+    "health_and_location": [
+      "麦珂健康状态稳定，位于市立图书馆。",
+      "莱昂·周位于市立图书馆，准备报考音乐学院。"
+    ],
+    "open_threads": [
+      "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试。",
+      "苏菲亚手中的胶片厂样本将成为P05阶段锁定对手组织链的关键物证。"
+    ],
+    "resolved_threads": [
+      "莱昂·周的污名被洗清。",
+      "奥瑞恩集团的保险拒赔策略破产。"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "光学投影组件的实地测试将直接触发1987年‘棱镜之夜’直播事故的前置条件。"
+  }
+}

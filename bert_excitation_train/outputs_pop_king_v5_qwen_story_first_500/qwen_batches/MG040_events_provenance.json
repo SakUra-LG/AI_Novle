@@ -1,0 +1,78 @@
+{
+  "generated_by": "qwen",
+  "kind": "events",
+  "identifier": "MG040",
+  "accepted_attempt": 3,
+  "base_prompt_sha256": "4d78122fe8aec1858851c9455925785035b7aadbf6ab018043cb02e89329c6dd",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-11T10:14:29+08:00",
+      "prompt_sha256": "4d78122fe8aec1858851c9455925785035b7aadbf6ab018043cb02e89329c6dd",
+      "raw_response_sha256": "0f0a31187877af052303160003887b65bf3995b34c33cda50e353f1d327321e5",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG040_events_attempt_01_raw.txt",
+      "validation_failures": [
+        "EC197年代技术错误：当前年代不得出现“上传”",
+        "EC197年代技术错误：当前年代不得出现“手机”",
+        "EC198年代技术错误：当前年代不得出现“云端”",
+        "EC199年代技术错误：当前年代不得出现“PDF”",
+        "EC199年代技术错误：当前年代不得出现“云端”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 117.372,
+      "usage": {
+        "input_tokens": 16330,
+        "output_tokens": 6304,
+        "total_tokens": 22634,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-11T10:16:05+08:00",
+      "prompt_sha256": "417f18c22fd64def119541032a6ad7561b0b68b08424f17191c4a0a02d15ad9b",
+      "raw_response_sha256": "8279bca1f017795e34fe329528ab2714a3f6e4060022685593e98c1b0056a380",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG040_events_attempt_02_raw.txt",
+      "validation_failures": [
+        "EC197年代技术错误：当前年代不得出现“上传”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 96.262,
+      "usage": {
+        "input_tokens": 6535,
+        "output_tokens": 6309,
+        "total_tokens": 12844,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-11T10:17:41+08:00",
+      "prompt_sha256": "64122ca8db6e8c0c665435b7f7e33b9d134e45d1be2a03edf1e0de33265cfef7",
+      "raw_response_sha256": "11e3e203a8200e469b86ced22f23a27073a2abfe0e11ef63611d9033b495f355",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG040_events_attempt_03_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 96.053,
+      "usage": {
+        "input_tokens": 6478,
+        "output_tokens": 6309,
+        "total_tokens": 12787,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

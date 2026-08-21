@@ -1,0 +1,53 @@
+{
+  "generated_by": "qwen",
+  "kind": "events",
+  "identifier": "MG036",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "17f4ae6ab8cc79b7e307ec35dfa4932696bd4bc25b88c5f4207c759d96610881",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-11T09:40:34+08:00",
+      "prompt_sha256": "17f4ae6ab8cc79b7e307ec35dfa4932696bd4bc25b88c5f4207c759d96610881",
+      "raw_response_sha256": "eb14255d200383ba82bae1f27ae3bbbcadf1ca050128c086138dfe3ca5ca20e9",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG036_events_attempt_01_raw.txt",
+      "validation_failures": [
+        "EC176世界观错误：禁止出现现实地点、机构或姓名“文化部”",
+        "EC178年代技术错误：当前年代不得出现“手机”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 128.785,
+      "usage": {
+        "input_tokens": 16118,
+        "output_tokens": 6929,
+        "total_tokens": 23047,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-11T09:42:19+08:00",
+      "prompt_sha256": "c251ec1e9d886747dd1dfbc80dd8ddbddf5e61f33049dbb3445f3941ded5890e",
+      "raw_response_sha256": "afe9b501fa12651d44637a29a9c295cd547192a703bbe86f2c65da77b9329c35",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG036_events_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 105.197,
+      "usage": {
+        "input_tokens": 7117,
+        "output_tokens": 6938,
+        "total_tokens": 14055,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

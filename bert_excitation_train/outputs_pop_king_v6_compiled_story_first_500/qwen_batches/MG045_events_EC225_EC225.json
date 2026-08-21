@@ -1,0 +1,269 @@
+{
+  "macro_group_id": "MG045",
+  "event_clusters": [
+    {
+      "cluster_id": "EC225",
+      "chapter_span": [
+        449,
+        450
+      ],
+      "source_event_direction": "前世具体受害：前世麦珂未设复仇议程，仅启动‘开口权存证计划’，但终局前未能完全闭环证据链。；本事件独有的前世信息差：清楚对手‘资产冻结’的具体触发阈值，可反向设置诱饵；掌握对手心理弱点。；今生提前动作：麦珂将四十年间所有署名作品、健康公示、家庭决议与粉丝共创成果打包为开源时间胶囊。；第449章可见小赢：海平线剧场东侧广场设立明信片墙，展出三千二百一十四封回信，其中一千六百零七封来自曾被边缘化的群体。；第450章新交锋：当麦珂步入穹顶入口时，全场观众齐声朗读最新一封来信，声音未经扩音却同步传输全球。；阻力方永久现实损失：维克多确信麦珂已死而主动暴露全部操控逻辑，最终被公众洪流淹没，彻底破产。；主角现实收益：麦珂未控诉未清算，只启动‘开口权存证计划’，将权力无偿授予全球教育机构。；不可逆结算键：开源时间胶囊上线，四十年历史成为公共资产，任何单一势力无法再垄断解释权。；接回死亡控制主线：此步骤完成了从个人生存到公共正义的终极跨越，让仇敌的‘葬礼’变成自己的公审现场。",
+      "source_event_direction_sha256": "6e01ba2e28cb13bcb50b796034b639a789a6d1ad544156d3c17eec22a41ebf48",
+      "source_macro_sha256": "f478345e1b0b247f304a114589afe7b9b19844a372460692fa9c88ec2bb38c36",
+      "name": "开口权存证计划：从明信片墙到全球合唱",
+      "timeline_years": "2008—2009",
+      "main_opponent": "维克多·斯特林（Victor Sterling）",
+      "opposition_type": "institutional",
+      "event_type": "fan_public_welfare",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS08"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "玛莎",
+        "莱昂·周",
+        "三位星火调音师学员",
+        "维克多·斯特林"
+      ],
+      "fictional_obstacle": "奥瑞恩集团试图利用‘资产冻结’阈值切断麦珂对外通讯，并制造其已死假象以销毁物理介质；同时试图在直播前绑架麦珂。",
+      "prev_life_tragedy": "前世麦珂虽启动‘开口权存证计划’，但因证据链未闭环，被对手以‘精神失常’为由剥夺解释权，最终死于3月18日凌晨的‘意外’，所有努力化为乌有。",
+      "info_gap_from_prev_life": "清楚维克多在3月17日晚必启动‘数据污染’程序；知晓胶片厂是对手唯一想销毁的母带点；掌握资产冻结的具体触发阈值；预判昆廷眩晕窗口期。",
+      "why_previous_life_failed": "依赖数字远程档案库，未建立物理隔离的不可篡改介质；未将粉丝共创成果转化为公共资产，导致解释权被资本垄断。",
+      "preemptive_avoidance": "提前锁定胶片厂作为存证点，将核心档案转为微缩胶片+手写索引双备份；打包四十年作品为开源时间胶囊；在昆廷眩晕前布局三位学员签署权。",
+      "bait_and_evidence": "设置虚假资产冻结诱饵，诱导维克多提前暴露操控逻辑；将三千二百一十四封回信中的边缘群体声音作为无法被技术删除的实体证据。",
+      "comic_villain_behavior": "维克多因确信麦珂已死，在监控室狂笑并主动下令切断全球信号，却不知自己正在通过断网行为向公众证明‘心虚’，且其指令被实时映射存档。",
+      "villain_loss": "维克多彻底破产，其操控逻辑被公众洪流淹没，奥瑞恩集团丧失对‘永恒星光’项目的任何控制权，法律层面被永久除名。",
+      "protagonist_gain": "麦珂未控诉未清算，启动‘开口权存证计划’，将权力无偿授予全球教育机构；确立物理介质的绝对控制权；获得不可撼动的合法授权。",
+      "relationship_change": "玛莎从过度保护转变为坚定盟友；三位学员正式成为信托执行者；麦珂与公众建立基于信任的平等关系。",
+      "continuity_writes": [
+        "康拉德角色修正：本组无康拉德出现，所有反派行动由维克多·斯特林直接执行，避免时间线错误。",
+        "技术细节：2009年微缩胶片扫描需人工操作，确保无法远程篡改；全球广播依赖卫星链路，非互联网，规避网络攻击。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "MACO_PUBLIC_TRUST_EXECUTION",
+          "state_key": "open_rights_credential_EC225",
+          "from": "monopolized_by_aureon",
+          "to": "public_asset_via_microfilm",
+          "irreversible": true,
+          "evidence": "PHYSICAL_MICROFILM_AND_HANDWRITTEN_INDEX_IN_SQUARE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "AUREON_REPUTATION_LOG",
+          "state_key": "fraud_attempt_exposed_EC225",
+          "from": "hidden_medical_fraud",
+          "to": "publicly_documented_criminal_attempt",
+          "irreversible": true,
+          "evidence": "REALTIME_MAPPING_OF_VICTOR_STERLING_COMMANDS",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "MARTHA_MACO_RELATIONSHIP",
+          "state_key": "mother_son_dynamic__EC225",
+          "from": "overprotective_control",
+          "to": "equal_partnership",
+          "irreversible": true,
+          "evidence": "JOINT_SIGNATURE_ON_TRUST_CONFIRMATION",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": [
+        "2009-03-17",
+        "海平线剧场东侧广场",
+        "穹顶入口"
+      ],
+      "cluster_outcome": "麦珂成功将核心档案转化为物理介质，启动‘开口权存证计划’，维克多因贪婪暴露全部操控逻辑，奥瑞恩集团彻底破产，麦珂赢得舆论战绝对制高点。",
+      "next_event_hook": "3月18日零时‘清醒即审判’仪式即将开始，奥瑞恩集团见常规手段失效，将直接切断麦珂的对外通讯并试图在直播现场实施物理绑架，迫使麦珂必须在穹顶入口完成最终的身份确认与全球合唱引导。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 449,
+          "timeline_start": "2009-03-20",
+          "timeline_end": "2009-03-20",
+          "scene": "海平线剧场东侧广场",
+          "chapter_goal": "设立明信片墙，展示三千二百一十四封回信，完成‘开口权存证计划’的第一阶段公开化。",
+          "chapter_title": "沉默的回声",
+          "participants": [
+            "麦珂",
+            "玛莎",
+            "莱昂·周",
+            "三位星火调音师学员",
+            "观众代表"
+          ],
+          "opening_conflict": "奥瑞恩集团试图通过黑客手段干扰广场灯光系统，制造混乱阻止展览开幕。",
+          "info_gap_use": "麦珂利用重生记忆，提前锁定胶片厂作为唯一可信存证点，并预判黑客攻击路径，反向布置物理隔离网。",
+          "opponent_reaction": "维克多误判麦珂已陷入瘫痪，命令手下加速‘数据污染’程序，却不知自己正被实时记录。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "海平线剧场东侧广场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光突然闪烁，麦珂示意学员启动备用电源。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_449_POSTCARD_WALL",
+              "timeline_scope": "current",
+              "display_name": "《三千二百一十四封回信·明信片墙》",
+              "kind": "public_artifact"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_439_TRUST_CERT",
+              "timeline_scope": "current",
+              "purpose": "引用信托证书确认明信片墙的法律效力。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂带领团队在暴雨中搭建临时展板，避开黑客攻击。",
+            "三位学员逐一张贴来自边缘群体的回信，形成视觉冲击。",
+            "莱昂·周实时监控网络流量，发现维克多的异常指令。",
+            "麦珂当众朗读一封来自盲童的信，引发全场共鸣。"
+          ],
+          "visible_payoff": "三千二百一十四封回信整齐排列，其中一千六百零七封来自曾被边缘化的群体，形成不可篡改的实体证据链。",
+          "ending": "夜幕降临，明信片墙在风雨中依然稳固，维克多意识到麦珂并未如预期般崩溃。",
+          "must_include": [
+            "明信片墙的具体数量",
+            "边缘群体的代表性信件内容",
+            "黑客攻击失败的过程"
+          ],
+          "must_not_include": [
+            "麦珂的内心独白",
+            "康拉德的出现",
+            "未来的结局暗示"
+          ],
+          "detailed_synopsis": "2009年3月17日傍晚，海平线剧场东侧广场突降暴雨。麦珂早已预料到奥瑞恩集团会在此时发动网络攻击，她提前将核心档案转为微缩胶片，并安排三位学员携带物理备份到场。当黑客试图切断广场灯光时，学员们迅速启用备用发电机，确保展板正常亮起。麦珂亲自将第一封信钉上墙——那是来自一位聋哑少年的画作描述。随后，三千二百一十四封信件依次展开，每一封都承载着被遗忘的声音。莱昂·周在后台监听到维克多的狂怒指令，将其实时映射到公共屏幕上。雨越下越大，但人群没有散去，反而越来越多。麦珂站在雨中，看着这些文字在风雨中依然清晰可见，她知道，这是通往真相的第一步。",
+          "source_timeline_start": "2009-03-17T18:00:00Z",
+          "source_timeline_end": "2009-03-17T23:59:00Z"
+        },
+        {
+          "chapter_id": 450,
+          "timeline_start": "2009-03-20",
+          "timeline_end": "2009-03-20",
+          "scene": "穹顶入口",
+          "chapter_goal": "麦珂步入穹顶入口，全场观众齐声朗读最新一封来信，声音未经扩音却同步传输全球，完成‘开口权存证计划’的最终闭环。",
+          "chapter_title": "无声的合唱",
+          "participants": [
+            "麦珂",
+            "玛莎",
+            "莱昂·周",
+            "十万观众",
+            "维克多（远程）"
+          ],
+          "opening_conflict": "奥瑞恩集团切断麦珂的对外通讯，并试图在直播现场实施物理绑架。",
+          "info_gap_use": "麦珂利用重生记忆，预判通讯切断时间，提前将音频信号通过模拟频段广播，绕过数字封锁。",
+          "opponent_reaction": "维克多确信麦珂已死，主动暴露全部操控逻辑，最终被公众洪流淹没。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "穹顶入口",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "通讯中断，麦珂微笑走向入口。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_449_POSTCARD_WALL",
+              "timeline_scope": "current",
+              "purpose": "引用明信片墙作为朗读内容的来源。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂无视通讯中断，稳步走向穹顶入口。",
+            "十万观众齐声朗读最新一封来信，声音纯净而有力。",
+            "莱昂·周将现场音频通过模拟频段同步传输全球。",
+            "维克多在监控室看到自己的指令被公开，精神崩溃。"
+          ],
+          "visible_payoff": "全场观众齐声朗读最新一封来信，声音未经扩音却同步传输全球，形成不可复制的声学证词。",
+          "ending": "麦珂踏入穹顶，全球直播画面定格在她坚定的面容上，维克多的操控逻辑被彻底曝光。",
+          "must_include": [
+            "十万观众的齐声朗读",
+            "模拟频段的传输过程",
+            "维克多的崩溃反应"
+          ],
+          "must_not_include": [
+            "麦珂的内心独白",
+            "康拉德的出现",
+            "未来的结局暗示"
+          ],
+          "detailed_synopsis": "午夜钟声敲响，奥瑞恩集团切断了麦珂的所有数字通讯。然而，麦珂早已预料到这一招。她微笑着走向穹顶入口，身后是十万名静静等待的观众。她没有使用任何扩音设备，而是让每个人轻声朗读最新一封来信——那是一封来自偏远山区小学教师的信，讲述着孩子们如何用歌声对抗贫困。声音汇聚成河，未经电子放大，却清晰地传遍了全球。莱昂·周迅速将现场音频通过模拟频段同步传输，绕过了奥瑞恩集团的数字封锁。在监控室里，维克多看着自己的指令被实时映射、交叉验证并存档，他终于意识到自己彻底输了。他试图切断电源，却发现三十七国电台已同步切入‘午夜星轨’频段。麦珂踏入穹顶的那一刻，全球直播画面定格在她坚定的面容上，维克多的操控逻辑被彻底曝光，奥瑞恩集团彻底破产。",
+          "source_timeline_start": "2009-03-17T23:59:00Z",
+          "source_timeline_end": "2009-03-18T00:15:00Z"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2009",
+    "character_states": [
+      {
+        "character_id": "MACO",
+        "state": "physically_normal_and_mentally_awake",
+        "evidence": "MICROFILM_BACKUP_AND_PUBLIC_CHORUS"
+      },
+      {
+        "character_id": "VICTOR_STERLING",
+        "state": "bankrupt_and_exposed",
+        "evidence": "PUBLICLY_DOCUMENTED_MANIPULATION_LOGS"
+      },
+      {
+        "character_id": "MARTHA",
+        "state": "equal_partner_to_maco",
+        "evidence": "JOINT_SIGNATURE_ON_TRUST_CONFIRMATION"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_pair": "MACO_MARTHA",
+        "new_state": "equal_partnership",
+        "trigger": "JOINT_SIGNATURE_ON_TRUST_CONFIRMATION"
+      },
+      {
+        "entity_pair": "MACO_GLOBAL_AUDIENCE",
+        "new_state": "trust_based_equality",
+        "trigger": "OPEN_RIGHTS_CREDENTIAL_EC225"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset_id": "ETERNAL_STARLIGHT_PROJECT",
+        "status": "public_asset",
+        "evidence": "OPEN_SOURCE_TIME_CAPSULE_LAUNCH"
+      },
+      {
+        "asset_id": "AUREON_GROUP",
+        "status": "bankrupt",
+        "evidence": "PUBLIC_HOARD_OF_MANIPULATION_LOGS"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity": "MACO",
+        "health_status": "fully_healthy",
+        "location": "HAI_PING_XIAN_THEATER_DOME"
+      }
+    ],
+    "open_threads": [
+      "3月18日零时‘清醒即审判’仪式的物理绑架风险",
+      "穹顶入口最终身份确认的全球合唱引导"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团对麦珂生理机能的远程诱导性操控",
+      "核心档案的数字远程档案库剥离至物理介质",
+      "2002年信托协议中‘星火调音师’紧急接管条款激活"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "3月18日零时‘清醒即审判’仪式即将开始，奥瑞恩集团见常规手段失效，将直接切断麦珂的对外通讯并试图在直播现场实施物理绑架，迫使麦珂必须在穹顶入口完成最终的身份确认与全球合唱引导。"
+  }
+}

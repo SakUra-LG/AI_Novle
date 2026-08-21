@@ -1,0 +1,491 @@
+{
+  "generated_by": "qwen",
+  "kind": "narrative",
+  "identifier": "GLOBAL",
+  "accepted_attempt": null,
+  "base_prompt_sha256": "c16c17fd3dad362037131b26492b720d6547a332b8c82997c4d9677bab0f1afd",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-12T18:17:09+08:00",
+      "prompt_sha256": "c16c17fd3dad362037131b26492b720d6547a332b8c82997c4d9677bab0f1afd",
+      "raw_response_sha256": "e1d5a1ee2ddda33079e88620740ddcfe4349ad0b08e02cfac0d800538ec34e45",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_01_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.full_story_synopsis过短或缺失",
+        "global_narrative.romance_long_arc过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事采用了禁止的伪死亡/药物昏迷终局：“假死”"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 13.013,
+      "usage": {
+        "input_tokens": 3093,
+        "output_tokens": 1595,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 4688
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-12T18:17:23+08:00",
+      "prompt_sha256": "166aad616fe55843edc2173ae6dcd74efbd803b731cf2d72d57e791d0c2bc00d",
+      "raw_response_sha256": "3890010e1675d74111e2f0751975e3932b9326286048c8626d48b54d46390376",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_02_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.full_story_synopsis过短或缺失",
+        "global_narrative.romance_long_arc过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事梗概禁止伪造证据或技术捷径“伪造证据”",
+        "宽泛叙事必须覆盖至少5类天王生涯内容"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 13.85,
+      "usage": {
+        "input_tokens": 3217,
+        "output_tokens": 1628,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 4845
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-12T18:17:36+08:00",
+      "prompt_sha256": "8593d12b3eb996b0c23f7b0c59fc61d02cf5caae067a147a478339532090effa",
+      "raw_response_sha256": "41c8bae56bfab4df5a6c8ae7e779052d07432c960db86ec8622beb8472a2fc4c",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_03_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.full_story_synopsis过短或缺失",
+        "global_narrative.romance_long_arc过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "core_rebirth_logic.ultimate_goal过短或缺失",
+        "全书叙事梗概必须明确本人在全球纪念现场登台并把葬礼变成审判",
+        "终局必须明确麦珂在全球纪念直播结束前本人走上现场，不能只用全息影像或事后出现",
+        "全书叙事采用了禁止的伪死亡/药物昏迷终局：“假死”",
+        "宽泛叙事必须明确从第一份合同开始拆掉2009死亡控制体系"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 13.713,
+      "usage": {
+        "input_tokens": 3230,
+        "output_tokens": 1701,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "total_tokens": 4931
+      }
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-12T18:17:48+08:00",
+      "prompt_sha256": "05e43ffd1993ac3ced9fe15aefe3ef4055d7a147f1d6f6240a0fe060721571cd",
+      "raw_response_sha256": "1534a055a00e44d0a755f05535a8f32a91d2709a7097f18de722b3a2b6b82575",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_04_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.full_story_synopsis过短或缺失",
+        "global_narrative.romance_long_arc过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事梗概禁止伪造证据或技术捷径“伪造证据”",
+        "全书叙事采用了禁止的伪死亡/药物昏迷终局：“假死”"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 11.637,
+      "usage": {
+        "input_tokens": 3297,
+        "output_tokens": 1397,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "total_tokens": 4694
+      }
+    },
+    {
+      "attempt": 5,
+      "created_at": "2026-08-12T18:17:58+08:00",
+      "prompt_sha256": "7298112be1511040a108d9177a77ea45140b77586b8615b48a8095c798113271",
+      "raw_response_sha256": "92866a9e8b8442f9cf1f3728bc7bdece25fef3309a335e77551aeae79592e642",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_05_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.full_story_synopsis过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "core_rebirth_logic.ultimate_goal过短或缺失",
+        "全书叙事梗概必须明确本人在全球纪念现场登台并把葬礼变成审判",
+        "终局必须明确麦珂在全球纪念直播结束前本人走上现场，不能只用全息影像或事后出现",
+        "全书叙事采用了禁止的伪死亡/药物昏迷终局：“假死”",
+        "宽泛叙事必须明确从第一份合同开始拆掉2009死亡控制体系",
+        "宽泛叙事艺术生涯或人物关系不足：艺术词13次，人物关系词7次"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 10.393,
+      "usage": {
+        "input_tokens": 3234,
+        "output_tokens": 1325,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 4559
+      }
+    },
+    {
+      "attempt": 6,
+      "created_at": "2026-08-12T18:18:15+08:00",
+      "prompt_sha256": "c16c17fd3dad362037131b26492b720d6547a332b8c82997c4d9677bab0f1afd",
+      "raw_response_sha256": "bf2caabccf86788bf0b40f872161d0b53113c41544edd89eee30cef53f37171e",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_06_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.full_story_synopsis过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "终局必须明确麦珂在全球纪念直播结束前本人走上现场，不能只用全息影像或事后出现",
+        "宽泛叙事艺术生涯或人物关系不足：艺术词19次，人物关系词6次"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 12.552,
+      "usage": {
+        "input_tokens": 3093,
+        "output_tokens": 1620,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "total_tokens": 4713
+      }
+    },
+    {
+      "attempt": 7,
+      "created_at": "2026-08-12T18:18:30+08:00",
+      "prompt_sha256": "530845652518e3aa5790442ae2d90c8a1e4a426d483cef95955ac3462a3146db",
+      "raw_response_sha256": "e3bcfe5311ae82dac308ee0ecb6162cf55268fbe270e36d5ba6dfb7a70c9df36",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_07_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事梗概必须明确2009死亡、1969十一岁重生及保险/版权利益链"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 15.092,
+      "usage": {
+        "input_tokens": 3230,
+        "output_tokens": 1807,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "total_tokens": 5037
+      }
+    },
+    {
+      "attempt": 8,
+      "created_at": "2026-08-12T18:18:45+08:00",
+      "prompt_sha256": "2fda490f399e51b72061479f797258d4eff41dba23e228b5f8850aeb14a62259",
+      "raw_response_sha256": "a33d79f157110e41df3561f87d951c66321cb1404741457820a71345408d4325",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_08_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.full_story_synopsis过短或缺失",
+        "global_narrative.romance_long_arc过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事梗概必须明确本人在全球纪念现场登台并把葬礼变成审判",
+        "全书叙事采用了禁止的伪死亡/药物昏迷终局：“假死”"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 14.495,
+      "usage": {
+        "input_tokens": 3195,
+        "output_tokens": 1648,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 4843
+      }
+    },
+    {
+      "attempt": 9,
+      "created_at": "2026-08-12T18:18:57+08:00",
+      "prompt_sha256": "eb9531f93a29fde3e1867b96339f018ba230e5d0e6cd311fad47f53a025a7925",
+      "raw_response_sha256": "c375f5a89a95531ac386d287f7bb1c3efe5e1aef96b6b0aad42acdc6ac650a2a",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_09_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.full_story_synopsis过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事采用了禁止的伪死亡/药物昏迷终局：“假死”"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 12.37,
+      "usage": {
+        "input_tokens": 3239,
+        "output_tokens": 1493,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 4732
+      }
+    },
+    {
+      "attempt": 10,
+      "created_at": "2026-08-12T18:19:11+08:00",
+      "prompt_sha256": "7fefbcfc217adf00e76749879f485127c0376c1e7511dbe1185c6ee1d84114f2",
+      "raw_response_sha256": "8475c78cf71eedc0259f29913d9a572021dc2332fa546d77666788ed6d6d6dff",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_10_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.full_story_synopsis过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "终局必须明确麦珂在全球纪念直播结束前本人走上现场，不能只用全息影像或事后出现",
+        "宽泛叙事艺术生涯或人物关系不足：艺术词15次，人物关系词7次"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 13.7,
+      "usage": {
+        "input_tokens": 3200,
+        "output_tokens": 1745,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "total_tokens": 4945
+      }
+    },
+    {
+      "attempt": 11,
+      "created_at": "2026-08-12T18:19:32+08:00",
+      "prompt_sha256": "c16c17fd3dad362037131b26492b720d6547a332b8c82997c4d9677bab0f1afd",
+      "raw_response_sha256": "6cd811647a0e7ff82f99d5b11dfce89e79a8b515287106bad6132cfcc205205e",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_11_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.full_story_synopsis过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "终局必须明确麦珂在全球纪念直播结束前本人走上现场，不能只用全息影像或事后出现"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 15.304,
+      "usage": {
+        "input_tokens": 3093,
+        "output_tokens": 1748,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 4841
+      }
+    },
+    {
+      "attempt": 12,
+      "created_at": "2026-08-12T18:19:49+08:00",
+      "prompt_sha256": "46cd43c0f28444409718b33f43876dff4dbabb00a0619797fa1ad5e28739a876",
+      "raw_response_sha256": "7ee60f5d83848c49b2ad6184118bb22ddfd5727a1d3cf95ac97f9fd66f71913c",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_12_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Invalid control character at: line 4 column 246 (char 406)"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 17.204,
+      "usage": {
+        "input_tokens": 3207,
+        "output_tokens": 1993,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "total_tokens": 5200
+      }
+    },
+    {
+      "attempt": 13,
+      "created_at": "2026-08-12T18:20:00+08:00",
+      "prompt_sha256": "3e5c6f98e474bc4dc3c5c39e7039b7f53c235e7b9b08b46e1bb49edad114c43c",
+      "raw_response_sha256": "3574cdbe81aced6651d71537f9629a1913b7c46092f425a79f1613542e1a3f5a",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_13_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.full_story_synopsis过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事梗概必须明确本人在全球纪念现场登台并把葬礼变成审判",
+        "全书叙事梗概禁止伪造证据或技术捷径“伪造证据”",
+        "全书叙事采用了禁止的伪死亡/药物昏迷终局：“假死”",
+        "宽泛叙事艺术生涯或人物关系不足：艺术词8次，人物关系词8次"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 10.822,
+      "usage": {
+        "input_tokens": 3179,
+        "output_tokens": 1233,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 4412
+      }
+    },
+    {
+      "attempt": 14,
+      "created_at": "2026-08-12T18:20:16+08:00",
+      "prompt_sha256": "09eef7377feec546815c0e2f1f883a85f3cff2addb0b9babee8fbf27534fac7c",
+      "raw_response_sha256": "e3f924706feb83401f92a7720e98f885e345374670a0d15dc963da34bbeb670e",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_14_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Illegal trailing comma before end of object: line 10 column 75 (char 2166)"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 15.712,
+      "usage": {
+        "input_tokens": 3263,
+        "output_tokens": 1599,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "total_tokens": 4862
+      }
+    },
+    {
+      "attempt": 15,
+      "created_at": "2026-08-12T18:20:34+08:00",
+      "prompt_sha256": "29bc8185d2e83af8688c702bd9d9204774af012cae65e16f36259cadb576c3d2",
+      "raw_response_sha256": "ef6fe74d1fd83b876f176ac7e45b3f9906734be3ce05e058b8bdb794525f9c82",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_15_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.romance_long_arc过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事梗概禁止伪造证据或技术捷径“伪造证据”",
+        "宽泛叙事必须明确从第一份合同开始拆掉2009死亡控制体系"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 18.41,
+      "usage": {
+        "input_tokens": 3183,
+        "output_tokens": 1880,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 5063
+      }
+    },
+    {
+      "attempt": 16,
+      "created_at": "2026-08-12T18:20:57+08:00",
+      "prompt_sha256": "c16c17fd3dad362037131b26492b720d6547a332b8c82997c4d9677bab0f1afd",
+      "raw_response_sha256": "4789d6eb25f993e609a2231879a91f67a399e77d3a3a1cb09654959ab37cb82c",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_16_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.romance_long_arc过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事含评审已否定的全局方案“服用镇静剂模拟”",
+        "全书叙事含评审已否定的全局方案“镇静剂模拟”"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 14.326,
+      "usage": {
+        "input_tokens": 3093,
+        "output_tokens": 1826,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 4919
+      }
+    },
+    {
+      "attempt": 17,
+      "created_at": "2026-08-12T18:21:11+08:00",
+      "prompt_sha256": "eedf8ea19b22abd8d9bdee1ca2f50ee440a6bccf0026540d21f3a42edc3879f9",
+      "raw_response_sha256": "95419f1d0a54a4f7c471e69f5b099c0e4f1ac1e8d2a24a4a409ee11d98ac5737",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_17_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.full_story_synopsis过短或缺失",
+        "global_narrative.romance_long_arc过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "core_rebirth_logic.ultimate_goal过短或缺失",
+        "全书叙事梗概必须明确本人在全球纪念现场登台并把葬礼变成审判",
+        "终局必须明确麦珂在全球纪念直播结束前本人走上现场，不能只用全息影像或事后出现",
+        "全书叙事采用了禁止的伪死亡/药物昏迷终局：“假死”",
+        "宽泛叙事必须明确从第一份合同开始拆掉2009死亡控制体系"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 13.719,
+      "usage": {
+        "input_tokens": 3221,
+        "output_tokens": 1591,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "total_tokens": 4812
+      }
+    },
+    {
+      "attempt": 18,
+      "created_at": "2026-08-12T18:21:27+08:00",
+      "prompt_sha256": "c38ad3cec69abd9706a54315c742ebc42156c1455c8413d67466f9dfc5b1e39d",
+      "raw_response_sha256": "680e9c7579c621ebca4e50449855d520b0da5ed0be72f2c7475120e945f9938f",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_18_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.romance_long_arc过短或缺失",
+        "global_narrative.ending_convergence过短或缺失",
+        "全书叙事梗概禁止伪造证据或技术捷径“模仿笔迹”",
+        "全书叙事梗概禁止伪造证据或技术捷径“伪造证据”"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 16.14,
+      "usage": {
+        "input_tokens": 3299,
+        "output_tokens": 2028,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "total_tokens": 5327
+      }
+    },
+    {
+      "attempt": 19,
+      "created_at": "2026-08-12T18:21:42+08:00",
+      "prompt_sha256": "947e06e23bbab088474b96b15318aec0b0b6b49c570fec0de7bd63076c6bf24b",
+      "raw_response_sha256": "4f8f2b5e33e84a0feca01756f805c254aff6172544b92a8ea40225131cb1cb32",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_narrative_attempt_19_c16c17fd3d_raw.txt",
+      "validation_failures": [
+        "global_narrative.full_story_synopsis过短或缺失",
+        "宽泛叙事必须覆盖至少5类天王生涯内容",
+        "宽泛叙事艺术生涯或人物关系不足：艺术词10次，人物关系词4次"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 15.184,
+      "usage": {
+        "input_tokens": 3218,
+        "output_tokens": 1662,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "total_tokens": 4880
+      }
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "macro_group_id": "MG031",
+  "event_clusters": [
+    {
+      "cluster_id": "EC152",
+      "chapter_span": [
+        303,
+        304
+      ],
+      "source_event_direction": "前世具体受害：对手利用伪造的1979年授权书指控麦珂签约时神志不清，试图剥夺控制权。；本事件独有的前世信息差：前世记忆锁定1979年11月17日午后三点麦珂正陪同玛莎在河湾镇法院办理监护权确认。；今生提前动作：麦珂主动公开法庭录像带与七位见证人签字簿，直接驳斥空白授权书谎言。；第303章可见小赢：律师团出示签字簿原件，奥瑞恩代表在听证会上脸色苍白无法辩驳。；第304章新交锋：维克多·兰斯试图调取模糊录像，却发现原始档案已被艾琳提前归档至微缩胶片库。；阻力方永久现实损失：奥瑞恩集团被迫撤回版权主张，正式承认麦珂拥有完整版权主导权。；主角现实收益：收回全部版权控制，四十三处工坊实现盈亏平衡并转入自主运营。；不可逆结算键：MC_303_Court_Record_Verification；接回死亡控制主线：彻底切断对手利用时间线造假进行法律掠夺的路径，确立清醒者身份。",
+      "source_event_direction_sha256": "d49cb8ed935cce05c4c1bfa358d4f36f65a2945e5d11ea957c91ac3c5183e2b8",
+      "source_macro_sha256": "0fce299d7a5b8f9d0663dd891b98bad24f2a0c3de9a4c3dc261f53ffd67e1ab9",
+      "name": "静默增益：时间线的法庭重构",
+      "timeline_years": "1997-1998",
+      "main_opponent": "维克多·兰斯 (Victor Lance)",
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS10"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜",
+        "艾琳",
+        "维克多·兰斯",
+        "奥瑞恩集团法务代表"
+      ],
+      "fictional_obstacle": "奥瑞恩集团指控麦珂在1979年签署《静默增益》授权书时处于精神错乱状态，试图通过伪造的‘空白授权书’剥夺其版权控制权；对手利用媒体断章取义，将纪录片剪辑成麦珂‘神志不清’的假象。",
+      "prev_life_tragedy": "前世麦珂因无法证明签约时的清醒状态，被法院采信对方伪造的医疗诊断报告，导致核心版权旁落，工坊体系崩塌，最终在贫困与诉讼中耗尽生命。",
+      "info_gap_from_prev_life": "麦珂精准记忆1979年11月17日午后三点，自己正陪同玛莎在河湾镇法院办理监护权确认，全程有法庭录像及七位见证人签字簿佐证，当时身体状况极佳，绝无神志不清的可能。",
+      "why_previous_life_failed": "前世麦珂过度依赖口头辩解，未能在第一时间锁定并公开具有法律效力的物理证据（录像带与签字簿），且未提前预知对手会利用剪辑技术掩盖真相。",
+      "preemptive_avoidance": "重生后，麦珂主动联系艾琳，将1979年的原始法庭录像带与七位见证人签字簿原件进行数字化备份前的物理封存，并提前向听证会提交证据保全申请，将被动防守转为主动出击。",
+      "bait_and_evidence": "诱饵是奥瑞恩集团展示的所谓‘1979年医疗诊断异常报告’；铁证是麦珂当庭出示的河湾镇法院原始录像带（显示其正常行走、清晰对话）以及七位见证人的亲笔签名簿（含法官印章）。",
+      "comic_villain_behavior": "维克多·兰斯在听证会上坚持声称录像带是‘后期合成’，甚至要求当场播放以证清白，结果播放出的画面中麦珂正笑着帮玛莎系鞋带，完全无视对手的歇斯底里；当对手试图调取模糊录像时，却发现艾琳已将其归档至微缩胶片库，无法直接篡改。",
+      "villain_loss": "奥瑞恩集团被迫撤回所有版权主张，正式承认麦珂拥有完整版权主导权；维克多·兰斯的公信力彻底崩塌，行业自律委员会启动对其违规操作的调查，常规手段失效。",
+      "protagonist_gain": "收回全部版权控制，《静默增益》销量突破九十八万张，地图卡激活率提升至91.3%；四十三处工坊实现盈亏平衡并转入自主运营；麦珂确立‘清醒者’身份，切断对手利用时间线造假的路径。",
+      "relationship_change": "麦珂与瑟琳娜完成法律层面的家庭治理权重构，建立基于契约的深度互信联盟；麦珂与艾琳建立深度的职业互信联盟，双方从合作伙伴升级为生死战友。",
+      "continuity_writes": [
+        "1997年秋，河湾镇法院档案室重新开启，麦珂亲自提取1979年监护权确认案卷。",
+        "艾琳利用‘午夜星轨’特别季的技术资源，将原始录像带转化为高清数字母版，防止任何形式的数据污染。",
+        "维克多·兰斯在败诉后，秘密销毁了部分无关文件，但未能处理标号'S95-B-RW'的废弃样带，该样带夹层录音成为未来伏笔。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016",
+          "state_key": "control_status__extension_EC152",
+          "from": "none",
+          "to": "secured_by_court_record_verification",
+          "irreversible": true,
+          "evidence": "COURT_RECORD_VERIFICATION_1979",
+          "effect_type": "protagonist_gain",
+          "source_domain": "legal_rights",
+          "source_state_key": "control_status"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORION_GROUP_REPUTATION",
+          "state_key": "trust_level__extension_EC152",
+          "from": "none",
+          "to": "collapsed_credibility",
+          "irreversible": true,
+          "evidence": "PUBLIC_HEARING_EXPOSURE",
+          "effect_type": "villain_loss",
+          "source_domain": "public_opinion",
+          "source_state_key": "trust_level"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "MC_SELENA_PARTNERSHIP",
+          "state_key": "governance_depth",
+          "from": "traditional_authority",
+          "to": "contractual_mutual_trust",
+          "irreversible": false,
+          "evidence": "EDUCATION_MEMO_PREPARATION",
+          "effect_type": "relationship_change",
+          "source_domain": "family_governance"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1979_NOV_17_COURT_VISIT"
+      ],
+      "cluster_outcome": "麦珂通过还原1979年真实时间线，粉碎奥瑞恩集团关于‘失控天才’的谎言，不仅夺回版权主导权，更将商业诉讼转化为公众对真相的围观审判，维克多·兰斯因贪婪抢功留下把柄，被迫转入被动防守。",
+      "next_event_hook": "维克多·兰斯意识到常规手段失效，开始酝酿隐蔽的数据污染方案，试图在世纪之交前彻底抹除所有原始介质，迫使麦珂必须从舆论战转向技术取证战，S95-B-RW废弃样带内的模拟录音将成为关键转折点。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 303,
+          "timeline_start": "1997-11-16",
+          "timeline_end": "1997-11-16",
+          "scene": "联邦版权仲裁庭听证会主会场",
+          "chapter_goal": "出示1979年法庭录像与签字簿，当场击破‘神志不清’指控。",
+          "chapter_title": "第303章：被篡改的时间线",
+          "participants": [
+            "麦珂",
+            "艾琳",
+            "维克多·兰斯",
+            "奥瑞恩集团法务代表",
+            "仲裁员"
+          ],
+          "opening_conflict": "奥瑞恩集团展示经过剪辑的纪录片片段，指控麦珂在1979年签约时处于幻觉状态，要求撤销授权。",
+          "info_gap_use": "麦珂利用前世记忆，精准指出1979年11月17日午后三点自己正在河湾镇法院办理监护权确认，而非签署授权书，直接否定对方时间线。",
+          "opponent_reaction": "维克多·兰斯脸色苍白，试图辩称录像带是‘合成素材’，并质疑签字簿的真实性，但面对七位在场见证人的证词显得语无伦次。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "联邦版权仲裁庭听证会主会场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "投影幕布亮起，1979年法庭录像开始播放"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_303_COURT_VIDEO_CLARITY",
+              "timeline_scope": "current",
+              "display_name": "《1979年河湾镇法院监护权确认现场录像（高清修复版）》",
+              "kind": "legal_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂起身，平静地指向大屏幕，要求播放1979年11月17日的原始法庭录像。",
+            "录像中，年轻的麦珂正微笑着帮玛莎系鞋带，声音洪亮，逻辑清晰，完全无视对手的指控。",
+            "律师团随即出示七位见证人的亲笔签字簿，其中包含时任法官的印章，墨迹氧化程度符合年代特征。",
+            "维克多·兰斯试图打断，称这是‘精心策划的表演’，但被仲裁员严厉制止。",
+            "奥瑞恩集团代表在众目睽睽下脸色惨白，无法辩驳，只能沉默。"
+          ],
+          "visible_payoff": "观众席爆发出雷鸣般的掌声，奥瑞恩集团的指控被当众粉碎，维克多·兰斯陷入尴尬境地。",
+          "ending": "仲裁员宣布暂时休庭，等待进一步核实，但奥瑞恩集团的信誉已受损严重。",
+          "must_include": [
+            "1979年11月17日午后三点的时空定位",
+            "七位见证人签字簿的物理展示",
+            "维克多·兰斯的失态反应"
+          ],
+          "must_not_include": [
+            "现代公众媒体讨论",
+            "远程档案库数据操作",
+            "康拉德出场"
+          ],
+          "detailed_synopsis": "奥瑞恩集团展示经过剪辑的纪录片片段，指控麦珂在1979年签约时处于幻觉状态，要求撤销授权。麦珂起身，平静地指向大屏幕，要求播放1979年11月17日的原始法庭录像。录像中，年轻的麦珂正微笑着帮玛莎系鞋带，声音洪亮，逻辑清晰，完全无视对手的指控。律师团随即出示七位见证人的亲笔签字簿，其中包含时任法官的印章，墨迹氧化程度符合年代特征。维克多·兰斯试图打断，称这是‘精心策划的表演’，但被仲裁员严厉制止。观众席爆发出雷鸣般的掌声，奥瑞恩集团的指控被当众粉碎，维克多·兰斯陷入尴尬境地。仲裁员宣布暂时休庭，等待进一步核实，但奥瑞恩集团的信誉已受损严重。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_291_DUAL_TRACK_TRUST_AGREEMENT",
+              "timeline_scope": "previous_life",
+              "purpose": "对比前世被篡改的协议，凸显今生证据链的完整性"
+            }
+          ]
+        },
+        {
+          "chapter_id": 304,
+          "timeline_start": "1997-11-17",
+          "timeline_end": "1997-11-17",
+          "scene": "艾琳工作室微缩胶片档案室",
+          "chapter_goal": "确保证据链闭环，阻止维克多·兰斯调取模糊录像，完成版权确权。",
+          "chapter_title": "第304章：微缩胶片的沉默证言",
+          "participants": [
+            "麦珂",
+            "艾琳",
+            "维克多·兰斯",
+            "档案管理员"
+          ],
+          "opening_conflict": "维克多·兰斯试图通过技术手段调取模糊的原始录像带，企图制造新的疑点，却被艾琳提前归档的微缩胶片库挡在门外。",
+          "info_gap_use": "麦珂预知对手会尝试调取模糊录像，因此提前指示艾琳将所有原始素材归档至微缩胶片库，确保物理隔离，无法被远程篡改或污染。",
+          "opponent_reaction": "维克多·兰斯在档案室门口暴跳如雷，指责艾琳“垄断证据”，却不知自己早已落入圈套，常规手段彻底失效。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "艾琳工作室微缩胶片档案室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "厚重的铅门缓缓关闭，隔绝外界信号"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_303_COURT_VIDEO_CLARITY",
+              "timeline_scope": "current",
+              "purpose": "作为本次行动的核心证据，已被安全归档"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯带着技术团队闯入艾琳工作室，要求立即调取原始录像带的未剪辑版本，试图寻找漏洞。",
+            "艾琳冷静地展示微缩胶片库的访问记录，证明所有原始素材已在听证会前完成物理归档，无法被远程修改。",
+            "维克多·兰斯试图强行拷贝，却发现设备接口已被物理封锁，且系统日志显示无任何外来访问痕迹。",
+            "麦珂在一旁看着这一切，心中明白，对手已无路可退。",
+            "仲裁庭再次开庭，正式宣布奥瑞恩集团撤诉，麦珂获得完整版权主导权。"
+          ],
+          "visible_payoff": "维克多·兰斯彻底失败，奥瑞恩集团被迫撤回版权主张，麦珂的四十三处工坊实现盈亏平衡。",
+          "ending": "麦珂站在窗前，看着窗外的夕阳，心中明白这只是开始，真正的风暴还在后头。",
+          "must_include": [
+            "微缩胶片库的物理隔离特性",
+            "维克多·兰斯的绝望反应",
+            "版权确权公告"
+          ],
+          "must_not_include": [
+            "二维码扫描",
+            "远程档案库备份",
+            "公众媒体直播"
+          ],
+          "detailed_synopsis": "维克多·兰斯试图通过技术手段调取模糊的原始录像带，企图制造新的疑点，却被艾琳提前归档的微缩胶片库挡在门外。维克多·兰斯带着技术团队闯入艾琳工作室，要求立即调取原始录像带的未剪辑版本，试图寻找漏洞。艾琳冷静地展示微缩胶片库的访问记录，证明所有原始素材已在听证会前完成物理归档，无法被远程修。维克多·兰斯试图强行拷贝，却发现设备接口已被物理封锁，且系统日志显示无任何外来访问痕迹。麦珂在一旁看着这一切，心中明白，对手已无路可退。维克多·兰斯彻底失败，奥瑞恩集团被迫撤回版权主张，麦珂的四十三处工坊实现盈亏平衡。麦珂站在窗前，看着窗外的夕阳，心中明白这只是开始，真正的风暴还在后头。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {
+        "entity_id": "麦珂",
+        "state_key": "mental_clarity",
+        "status": "confirmed_clear_mind",
+        "description": "通过法庭录像与签字簿，麦珂的清醒状态得到官方确认，彻底粉碎对手叙事。"
+      },
+      {
+        "entity_id": "维克多·兰斯",
+        "state_key": "strategy_status",
+        "status": "conventional_methods_failed",
+        "description": "常规法律与舆论手段失效，开始酝酿隐蔽的数据污染方案。"
+      },
+      {
+        "entity_id": "瑟琳娜",
+        "state_key": "parenting_stance",
+        "status": "open_to_contracts",
+        "description": "开始接受契约式教育模式，为后续签署备忘录奠定基础。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_id": "麦珂_艾琳",
+        "state_key": "trust_level",
+        "status": "deep_mutual_trust",
+        "description": "共同经历证据战，双方信任度达到顶峰，形成深度职业联盟。"
+      },
+      {
+        "entity_id": "麦珂_瑟琳娜",
+        "state_key": "governance_model",
+        "status": "contractual_alliance",
+        "description": "从传统家长制转向契约共治，关系发生质变。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "RIGHT_VL_016",
+        "state_key": "ownership_status",
+        "status": "fully_secured",
+        "description": "麦珂收回全部版权控制，工坊实现盈亏平衡。"
+      },
+      {
+        "entity_id": "WORKSHOP_NETWORK",
+        "state_key": "financial_health",
+        "status": "break_even",
+        "description": "四十三处工坊实现盈亏平衡，转入自主运营。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "麦珂",
+        "state_key": "physical_condition",
+        "status": "optimal",
+        "description": "体重、血压、肺活量维持最佳生理状态，连续四年无波动。"
+      }
+    ],
+    "open_threads": [
+      "S95-B-RW废弃样带内的模拟录音将被发现，引发维克多的疯狂反扑。",
+      "健康趋势预测模型的真实数据来源将成为下一块核心冲突点。",
+      "P07阶段纪录片背叛事件的离岸票据影印权问题仍需调查。"
+    ],
+    "resolved_threads": [
+      "1979年授权书签署时间线造假问题已彻底解决。",
+      "奥瑞恩集团‘失控天才’叙事已被粉碎。"
+    ],
+    "introduced_characters": [
+      "无新角色引入，主要聚焦现有角色互动。"
+    ],
+    "next_pressure": "维克多·兰斯启动‘数据污染’计划，针对麦珂正在研发的‘健康趋势预测模型’真实数据进行栽赃，直接触发P07阶段的纪录片背叛事件。"
+  }
+}

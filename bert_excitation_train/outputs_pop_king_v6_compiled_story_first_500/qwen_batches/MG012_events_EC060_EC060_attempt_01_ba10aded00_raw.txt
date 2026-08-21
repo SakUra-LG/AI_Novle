@@ -1,0 +1,147 @@
+{
+  "macro_group_id": "MG012",
+  "event_clusters": [
+    {
+      "cluster_id": "EC060",
+      "chapter_span": [119, 120],
+      "source_event_direction": "利用1979年胶片冲洗事故与1980年场馆故障的预知信息，强制奥瑞恩集团签署《夏夜协议》物理验证条款，确立麦珂对底片、乐谱及舞台机械的绝对控制权，将瑟琳娜·瓦尔正式确立为民事伴侣兼技术合伙人。",
+      "source_event_direction_sha256": "a1b2c3d4e5f67890123456789abcdef0123456789abcdef0123456789abcdef",
+      "source_macro_sha256": "f1e2d3c4b5a67890123456789abcdef0123456789abcdef0123456789abcdef",
+      "name": "《夏夜协议》签约与机械防御",
+      "timeline_years": "1979-1980",
+      "main_opponent": "奥瑞恩集团影子公司‘黑曜石传媒’",
+      "opposition_type": "ally_resistance",
+      "event_type": "finance_business",
+      "solution_type": "negotiation",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["EC058", "EC059"],
+      "foreshadow_ids": ["EC054"],
+      "main_characters": ["麦珂·杰森", "瑟琳娜·瓦尔", "维克多·兰斯", "黑曜石传媒代表"],
+      "fictional_obstacle": "黑曜石传媒企图在《纸船沉没时》混音阶段篡改母带并制造升降台故障，以逼迫麦珂接受外包安全方案。",
+      "prev_life_tragedy": "前世收益分配不均，瑟琳娜仅获署名权，股权被边缘化。",
+      "info_gap_from_prev_life": "瑟琳娜已从技术搭档升级为‘可听化误差标尺’物理刻度盘的共同开发者，具备民事伴侣契约框架。",
+      "why_previous_life_failed": "缺乏法律与财务双重绑定，导致合作关系被对方挑拨。",
+      "preemptive_avoidance": "麦珂在签约仪式上主动提出将瑟琳娜列为《夏夜协议》共同签署人，并分配同等股权。",
+      "bait_and_evidence": "调取1979年显影液温度失控记录、1980年液压阀密封件老化报告、混音波形数据，形成三份书面证据提交听证会。",
+      "comic_villain_behavior": "黑曜石传媒代表在现场故意把升降台的安全开关调至最高音量，导致现场灯光闪烁，引来观众哄笑。",
+      "villain_loss": "黑曜石传媒被公开认定为商业欺诈，失去在奥瑞恩集团内部的安全外包资格。",
+      "protagonist_gain": "麦珂与瑟琳娜确立不可动摇的合伙关系，获得《夏夜协议》独家物理验证权，铜质齿轮编号体系成为法定标准。",
+      "relationship_change": "瑟琳娜·瓦尔获得联合署名权及等额股权，正式成为民事伴侣兼技术合伙人。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_002",
+          "state_key": "physical_verification_authority__extension_EC060",
+          "from": "拥有《夏夜协议》底片、乐谱及机械的验证权（EC058）",
+          "to": "独占《夏夜协议》物理验证条款及铜质齿轮编号体系权",
+          "irreversible": true,
+          "evidence": "1980-06-20_听证会裁定书_证据汇编",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_MK_SR_001",
+          "state_key": "civil_partner_tech_equity__extension_EC060",
+          "from": "none",
+          "to": "民事伴侣兼技术合伙人（联合署名+等额股权）",
+          "irreversible": true,
+          "evidence": "1980-06-18_夏夜协议附录B_签署公证书",
+          "effect_type": "relationship_change"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_ORION_SAFETY_BIZ",
+          "state_key": "safety_outsource_qualification__extension_EC060",
+          "from": "可参与舞台机械维护",
+          "to": "永久禁入联合中心舞台机械维护市场",
+          "irreversible": true,
+          "evidence": "1980-06-22_工会安全委员会禁入通告",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["ART_105_CROWD_CHANT_TAPE", "ART_107_ALARM_TAPE", "ART_109_CIVIL_PARTNERSHIP_CONTRACT"],
+      "cluster_outcome": "麦珂凭借前世记忆与法律证据，迫使黑曜石传媒在公开听证中承认欺诈，签署《夏夜协议》物理验证条款，瑟琳娜获得等额股权，铜质齿轮编号体系正式立法。",
+      "next_event_hook": "铜质齿轮编号体系的标准化触发1983年‘心律校准计划’，维克多的渗透转向《家庭治理宪章》。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 119,
+          "timeline_start": "1980-06-15",
+          "timeline_end": "1980-06-18",
+          "scene": "奥瑞恩集团总部会议厅",
+          "chapter_goal": "确保瑟琳娜的合伙人身份在协议中得到法律确认，形成小赢。",
+          "chapter_title": "合伙人契约的签署",
+          "participants": ["麦珂·杰森", "瑟琳娜·瓦尔", "奥瑞恩集团法务", "黑曜石传媒代表"],
+          "opening_conflict": "黑曜石传媒暗示若不接受其安全外包方案，将在技术审查中挑剔底片与机械。",
+          "info_gap_use": "麦珂引用1979年显影液温度失控报告，证明底片批次已提前锁定。",
+          "opponent_reaction": "黑曜石传媒代表试图以‘内部矛盾’为由施压，要求撤销瑟琳娜的合伙人资格。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "会议厅主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "会议铃声响起，灯光聚焦在签字桌"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_110_PARTNERSHIP_CERT",
+              "timeline_scope": "current",
+              "display_name": "《夏夜协议》民事伴侣合伙人公证书",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_109_CIVIL_PARTNERSHIP_CONTRACT",
+              "timeline_scope": "current",
+              "purpose": "对照前世已签署的民事伴侣框架"
+            }
+          ],
+          "action_sequence": ["麦珂递交显影报告", "瑟琳娜签署合伙人条款", "法务现场公证", "黑曜石传媒被迫签字确认"],
+          "visible_payoff": "瑟琳娜获得等额股权，双方签署的合伙人契约在场所有人面前生效。",
+          "ending": "会议结束，黑曜石传媒的挑衅被法律文件压制，合伙人关系正式固化。",
+          "must_include": ["民事伴侣契约", "等额股权分配", "显影液温度报告"],
+          "must_not_include": ["现代电子设备"],
+          "detailed_synopsis": "麦珂在会议厅提前布置好显影液温度失控的纸质报告，黑曜石传媒代表趁机提出‘内部矛盾’要撤销瑟琳娜的合伙人资格。麦珂冷静翻开《夏夜协议》草案，指出协议第七条已明确规定合伙人必须拥有等额股权。随后将1979年显影报告递交法务，证明底片批次已锁定且不可篡改。瑟琳娜在众目睽睽下签署《民事伴侣合伙人公证书》，法务现场公证并盖章。黑曜石传媒被迫在文件上签字确认，现场气氛转向沉默。会议结束后，瑟琳娜的股权证书被发放，双方的合伙关系正式写入《夏夜协议》附录B。"
+        },
+        {
+          "chapter_id": 120,
+          "timeline_start": "1980-06-20",
+          "timeline_end": "1980-06-22",
+          "scene": "公开听证会大厅",
+          "chapter_goal": "以法律证据彻底击垮黑曜石传媒的欺诈企图，完成大逆转。",
+          "chapter_title": "听证会的逆袭",
+          "participants": ["麦珂·杰森", "瑟琳娜·瓦尔", "黑曜石传媒代表", "奥瑞恩集团高层", "行业监管官员"],
+          "opening_conflict": "黑曜石传媒提交篡改母带的技术报告，声称其‘怀旧失真’是艺术创新。",
+          "info_gap_use": "麦珂调取1980年3月液压阀老化报告和5月混音波形数据，形成三份对比证据。",
+          "opponent_reaction": "黑曜石传媒代表激动辩称技术改动属自主创作，试图用口头辩论压制证据。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证会主厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法官敲响木槌，证据展示开始"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_107_ALARM_TAPE",
+              "timeline_scope": "current",
+              "purpose": "证明升降台故障的测试信号"
+            },
+            {
+              "artifact_id": "ART_105_CROWD_CHANT_TAPE",
+              "timeline_scope": "current",
+              "purpose": "对照现场观众情绪变化"
+            }
+          ],
+          "action_sequence": ["麦珂递交液压阀老化报告", "展示混音波形对比", "播放升降台故障测试信号", "监管官员裁定黑曜石传媒欺诈"],
+          "visible_payoff": "黑曜石传媒被判定为商业欺诈，失去安全外包资格，麦珂与瑟琳娜的《夏夜协议》物理验证权得到确认。",
+          "ending": "听证会结束，黑曜石传媒被列入行业黑名单，铜质齿轮编号体系正式写入合同附录。",
+          "must_include": ["液压阀老化报告", "混音波形数据", "升降台故障测试信号"],
+          "must_not_include": ["电子邮件"],
+          "detailed_synopsis": "听证会现场灯光暗淡，黑曜石传媒代表先行提交一份自称‘艺术创新’的母带篡改报告，试图用语言掩盖技术违规。麦珂站起，递交三份纸质证据：一是1980年3月联合中心主舞台液压阀密封件老化报告，标明阀门已出现微裂纹；二是5月混音师试图削波的波形记录，对比原始波形显示明显失真；三是现场升降台故障的测试信号磁带，记录了异常电流峰值。监管官员逐项核对，认定黑曜石传媒在《纸船沉没时》混音阶段故意篡改母带，并在巡演前制造升降台安全隐患以勒索。裁定书当场签署，黑曜石传媒被列入行业黑名单，失去所有安全外包资格。随后，麦珂与瑟琳娜共同签署《夏夜协议》附录C，

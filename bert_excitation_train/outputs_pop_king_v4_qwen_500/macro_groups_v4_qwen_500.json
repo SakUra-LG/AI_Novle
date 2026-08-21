@@ -1,0 +1,2902 @@
+[
+  {
+    "macro_group_id": "MG001",
+    "chapter_span": [
+      1,
+      10
+    ],
+    "title": "死亡与重生：从2009到1969",
+    "timeline_years": "2009→1969",
+    "macro_goal": "完成重生后首次接触行业权力结构，掌握童星签约流程与合同漏洞",
+    "historical_stage": "1969年全国少年歌手试镜会，初代家族组合签约前夕",
+    "main_conflict": "麦珂必须在试镜中脱颖而出，并提前阻止合同签署过程中的关键漏洞",
+    "rebirth_advantage": "前世记忆让他知道合约中隐藏的签名条款、工时限制和兄弟关系隐患",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC001",
+        "chapter_span": [
+          1,
+          2
+        ],
+        "direction": "第1章：麦珂在2009年的复出演唱会前突发心脏病身亡，观众震惊。第2章：他醒来于1969年全国试镜后台，看到自己穿着演出服，听到导演正在读他的名字"
+      },
+      {
+        "cluster_id": "EC002",
+        "chapter_span": [
+          3,
+          4
+        ],
+        "direction": "第3章：麦珂假装失忆，拒绝签署空白合同，要求查看具体条款。第4章：经纪人试图用‘不签就换人’施压，但他指出合同中有‘试镜未通过可撤回’的模糊条款"
+      },
+      {
+        "cluster_id": "EC003",
+        "chapter_span": [
+          5,
+          6
+        ],
+        "direction": "第5章：麦珂在试镜中故意放慢节奏，让其他选手紧张，借此观察他们的表现方式。第6章：他发现另一个候选者有类似自己的歌声，便借机提出联合出演建议，以增加谈判筹码"
+      },
+      {
+        "cluster_id": "EC004",
+        "chapter_span": [
+          7,
+          8
+        ],
+        "direction": "第7章：麦珂在休息室与父亲发生争执，暗示自己已经知晓合同陷阱。第8章：他设法让母亲介入，以家庭名义要求重新评估合同细节"
+      },
+      {
+        "cluster_id": "EC005",
+        "chapter_span": [
+          9,
+          10
+        ],
+        "direction": "第9章：麦珂在试镜中唱完后，主动要求录音存档。第10章：他偷偷复制了试镜录音带，作为将来维权的关键证据"
+      }
+    ],
+    "romance_progression": "未成年阶段禁止恋爱描写，仅涉及亲情与友情互动",
+    "ending_state": "麦珂成功保留部分合同话语权，获得初步舞台机会，同时掌握了试镜录音作为潜在证据",
+    "next_group_hook": "麦珂即将正式签约，但已察觉合同中存在更多隐蔽条款，需尽快找到突破口"
+  },
+  {
+    "macro_group_id": "MG002",
+    "chapter_span": [
+      11,
+      20
+    ],
+    "title": "签约风波：童星的权利之战",
+    "timeline_years": "1969—1970",
+    "macro_goal": "完成初次签约并获取童星权益保障，同时揭露幕后操纵者的阴谋",
+    "historical_stage": "家族组合签约全国厂牌，四支单曲连续登顶",
+    "main_conflict": "麦珂与经纪人及工厂代表围绕签约内容展开较量，试图防止后续剥削",
+    "rebirth_advantage": "前世记忆让他了解签约后可能遭遇的变声期打压、收入分配不公等问题",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC006",
+        "chapter_span": [
+          11,
+          12
+        ],
+        "direction": "第11章：麦珂在签约仪式上要求加入‘试听反馈机制’，确保演唱质量不受制于他人。第12章：经纪人怒斥他不懂规矩，但他巧妙表示愿意等待更合适的时机"
+      },
+      {
+        "cluster_id": "EC007",
+        "chapter_span": [
+          13,
+          14
+        ],
+        "direction": "第13章：麦珂在电台录制中表现出色，赢得主持人的赞赏。第14章：他趁机提出要设立专属录音间，以便日后能自主安排练习时间"
+      },
+      {
+        "cluster_id": "EC008",
+        "chapter_span": [
+          15,
+          16
+        ],
+        "direction": "第15章：麦珂得知另一名成员因不满工作强度而退团，决定提前预防此类问题。第16章：他私下联系同龄成员，共同起草一份《青年艺人保护倡议》"
+      },
+      {
+        "cluster_id": "EC009",
+        "chapter_span": [
+          17,
+          18
+        ],
+        "direction": "第17章：麦珂在一次排练中故意迟到，引发经纪团队不满。第18章：他借此提醒他们注意自身管理方式，否则将影响整体声誉"
+      },
+      {
+        "cluster_id": "EC010",
+        "chapter_span": [
+          19,
+          20
+        ],
+        "direction": "第19章：麦珂在签约仪式上明确提出‘作品署名权’要求。第20章：尽管遭到反对，但他坚持留下书面记录，为未来维权埋下伏笔"
+      }
+    ],
+    "romance_progression": "暂无感情线，专注于职业发展与家庭关系",
+    "ending_state": "麦珂成功争取到部分基本权利，但仍未完全摆脱控制，合同仍留有隐患",
+    "next_group_hook": "麦珂开始意识到整个行业对童星的压迫，计划进一步探索反抗策略"
+  },
+  {
+    "macro_group_id": "MG003",
+    "chapter_span": [
+      21,
+      30
+    ],
+    "title": "个人崛起：从合唱到独唱",
+    "timeline_years": "1971—1972",
+    "macro_goal": "实现个人发行突破，同时巩固与团队的合作基础",
+    "historical_stage": "少年时期进入个人发行，十三岁已有个人热门作品，十四岁演唱电影主题歌",
+    "main_conflict": "麦珂在个人发展与团体利益之间寻找平衡点，同时对抗成人团队的干预",
+    "rebirth_advantage": "前世记忆让他预知变声期可能带来的污名化攻击以及成人团队的压制手段",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC011",
+        "chapter_span": [
+          21,
+          22
+        ],
+        "direction": "第21章：麦珂尝试创作一首个人歌曲，却被经纪人认为不适合团体风格。第22章：他借助媒体关注力，公开请求支持原创音乐"
+      },
+      {
+        "cluster_id": "EC012",
+        "chapter_span": [
+          23,
+          24
+        ],
+        "direction": "第23章：麦珂接到一部儿童剧的配音邀请，却被告知只能接受配角。第24章：他利用剧本中的台词进行抗议，最终说服导演给予他主演位置"
+      },
+      {
+        "cluster_id": "EC013",
+        "chapter_span": [
+          25,
+          26
+        ],
+        "direction": "第25章：麦珂在一次电视采访中提到变声期的问题，引起公众关注。第26章：他顺势发起一场关于青少年发声健康的讨论，吸引主流媒体报道"
+      },
+      {
+        "cluster_id": "EC014",
+        "chapter_span": [
+          27,
+          28
+        ],
+        "direction": "第27章：麦珂收到一封匿名信，警告他不要挑战现有秩序。第28章：他将其交给母亲保存，同时暗中调查发送者身份"
+      },
+      {
+        "cluster_id": "EC015",
+        "chapter_span": [
+          29,
+          30
+        ],
+        "direction": "第29章：麦珂受邀为一部电影演唱主题曲，但被要求不得参与任何宣传。第30章：他借机发布一段预告片段，成功打破封锁"
+      }
+    ],
+    "romance_progression": "暂无感情线，专注自我成长与艺术表达",
+    "ending_state": "麦珂在个人领域取得初步突破，但也引发了更大规模的阻力",
+    "next_group_hook": "麦珂开始受到更多关注，同时也成为敌人眼中的威胁"
+  },
+  {
+    "macro_group_id": "MG004",
+    "chapter_span": [
+      31,
+      40
+    ],
+    "title": "新旧之争：厂牌变更与制作权争夺",
+    "timeline_years": "1975—1978",
+    "macro_goal": "更换厂牌并确立个人制作权，同时结识真正支持他的导师",
+    "historical_stage": "家族组合更换厂牌并改名继续活动；随后参与音乐电影拍摄",
+    "main_conflict": "麦珂面临旧厂牌的阻挠，同时寻求新的合作伙伴来提升创作自由度",
+    "rebirth_advantage": "前世记忆让他清楚旧厂牌如何通过资金和资源控制艺人，也知晓哪些制作人值得信任",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC016",
+        "chapter_span": [
+          31,
+          32
+        ],
+        "direction": "第31章：麦珂发现旧厂牌试图冻结他的账户，无法支付新项目费用。第32章：他秘密联系一位独立制作人，希望得到临时资助"
+      },
+      {
+        "cluster_id": "EC017",
+        "chapter_span": [
+          33,
+          34
+        ],
+        "direction": "第33章：麦珂在一次会议上质疑厂牌对音乐方向的把控。第34章：他提议成立一个由艺人主导的制作委员会，遭到了强烈反对"
+      },
+      {
+        "cluster_id": "EC018",
+        "chapter_span": [
+          35,
+          36
+        ],
+        "direction": "第35章：麦珂与一名老艺术家合作推出一张融合传统与现代的作品。第36章：这张作品意外爆红，迫使厂牌不得不重新考虑他的地位"
+      },
+      {
+        "cluster_id": "EC019",
+        "chapter_span": [
+          37,
+          38
+        ],
+        "direction": "第37章：麦珂在一次巡演中遇到一位神秘的制作人，对方对他才华大加赞赏。第38章：他决定跟随这位制作人学习，但需先证明自己的实力"
+      },
+      {
+        "cluster_id": "EC020",
+        "chapter_span": [
+          39,
+          40
+        ],
+        "direction": "第39章：麦珂在一次录音过程中发现了厂牌私自修改歌词的行为。第40章：他果断停止录音，并向外界曝光此事，引发舆论风暴"
+      }
+    ],
+    "romance_progression": "暂无感情线，聚焦于事业转型与创作自由",
+    "ending_state": "麦珂成功获得一定创作空间，但仍受厂牌牵制，急需找到真正的盟友",
+    "next_group_hook": "麦珂逐渐接近那位神秘制作人，两人之间的信任也在加深"
+  },
+  {
+    "macro_group_id": "MG005",
+    "chapter_span": [
+      41,
+      50
+    ],
+    "title": "跨时代突破：从唱片到影像",
+    "timeline_years": "1979—1980",
+    "macro_goal": "完成首张成人专辑并在影视领域取得突破，同时掌控制作与分账权",
+    "historical_stage": "成人个人专辑完成商业与创作突破，并取得首座格莱美",
+    "main_conflict": "麦珂在跨类型音乐与影视合作中遭遇多重障碍，包括技术壁垒与版权纷争",
+    "rebirth_advantage": "前世记忆让他了解当时音乐与影视产业的运作模式，尤其是跨平台合作的风险",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC021",
+        "chapter_span": [
+          41,
+          42
+        ],
+        "direction": "第41章：麦珂准备推出第一张成人专辑，但被厂牌以‘市场风险’为由拖延发行。第42章：他决定自行筹措资金，启动独立发行计划"
+      },
+      {
+        "cluster_id": "EC022",
+        "chapter_span": [
+          43,
+          44
+        ],
+        "direction": "第43章：麦珂接到一部电影邀约，但需要牺牲一部分版权收益。第44章：他提出反提案，主张共享利润而非单一分成"
+      },
+      {
+        "cluster_id": "EC023",
+        "chapter_span": [
+          45,
+          46
+        ],
+        "direction": "第45章：麦珂在一次音乐节上展示了一段实验性的混音作品，引起广泛关注。第46章：他借此契机宣布开启全新音乐企划"
+      },
+      {
+        "cluster_id": "EC024",
+        "chapter_span": [
+          47,
+          48
+        ],
+        "direction": "第47章：麦珂在一次电视台专访中批评当前音乐行业的封闭性。第48章：他公开呼吁建立更加透明的版权交易系统"
+      },
+      {
+        "cluster_id": "EC025",
+        "chapter_span": [
+          49,
+          50
+        ],
+        "direction": "第49章：麦珂的专辑终于面世，销量远超预期。第50章：他首次获得年度最佳新人奖，但并未庆祝，而是悄悄整理了一份关于版权改革的提案"
+      }
+    ],
+    "romance_progression": "暂无感情线，聚焦于事业上升与理念传播",
+    "ending_state": "麦珂在音乐与影视领域崭露头角，但仍有更大的挑战等待着他",
+    "next_group_hook": "麦珂的提案引发广泛讨论，也为下一阶段的抗争埋下了伏笔"
+  },
+  {
+    "macro_group_id": "MG006",
+    "chapter_span": [
+      51,
+      60
+    ],
+    "title": "全国试镜背后的阴影",
+    "timeline_years": "1971",
+    "macro_goal": "完成全国试镜并签订首份正式合同",
+    "historical_stage": "少年歌手首次登上全国舞台，初步确立演艺生涯",
+    "main_conflict": "旧势力试图以低薪合同限制麦珂的发展自由",
+    "rebirth_advantage": "麦珂记得前世签约时被隐藏的条款，提前设法规避陷阱",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC026",
+        "chapter_span": [
+          51,
+          52
+        ],
+        "direction": "麦珂在试镜后台发现一份未公开的合同意向书，内容涉及未来五年演出安排"
+      },
+      {
+        "cluster_id": "EC027",
+        "chapter_span": [
+          53,
+          54
+        ],
+        "direction": "麦珂故意在面试中表现犹豫，诱导对方提出更优条件，同时获取关键谈判筹码"
+      },
+      {
+        "cluster_id": "EC028",
+        "chapter_span": [
+          55,
+          56
+        ],
+        "direction": "麦珂母亲察觉合同异常，逼迫经纪人重新谈判，揭露隐藏的版权归属条款"
+      },
+      {
+        "cluster_id": "EC029",
+        "chapter_span": [
+          57,
+          58
+        ],
+        "direction": "麦珂利用试镜期间的社交机会，私下接触一位独立制作人，暗中布局未来出路"
+      },
+      {
+        "cluster_id": "EC030",
+        "chapter_span": [
+          59,
+          60
+        ],
+        "direction": "麦珂成功获得一份带有附加权益的合同，包括部分票房分成及创作提案权"
+      }
+    ],
+    "romance_progression": "未成年阶段仍保持纯真友谊，无感情线发展",
+    "ending_state": "麦珂签署首份正式合同，开始在全国范围内接受训练与表演任务，但已埋下反制伏笔",
+    "next_group_hook": "新的合约纠纷即将浮现，旧势力不会轻易让步"
+  },
+  {
+    "macro_group_id": "MG007",
+    "chapter_span": [
+      61,
+      70
+    ],
+    "title": "变声期的无声对抗",
+    "timeline_years": "1972",
+    "macro_goal": "应对变声期的舆论压力与身体不适，争取更多创作空间",
+    "historical_stage": "少年歌手因声音变化受到质疑，外界认为其无法延续辉煌",
+    "main_conflict": "旧势力散布谣言，称麦珂的声音已不适合演唱，意图让他退出舞台",
+    "rebirth_advantage": "麦珂知道变声期是暂时现象，提前准备转型方案",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC031",
+        "chapter_span": [
+          61,
+          62
+        ],
+        "direction": "麦珂在一次电台采访中突然失声，引发公众关注，借此试探各方反应"
+      },
+      {
+        "cluster_id": "EC032",
+        "chapter_span": [
+          63,
+          64
+        ],
+        "direction": "麦珂拒绝参加一场重要演出，声称需要休养，实则秘密练习器乐创作"
+      },
+      {
+        "cluster_id": "EC033",
+        "chapter_span": [
+          65,
+          66
+        ],
+        "direction": "麦珂的母亲联合其他家长发起抗议，反对经纪方不合理排期，推动工作量透明化"
+      },
+      {
+        "cluster_id": "EC034",
+        "chapter_span": [
+          67,
+          68
+        ],
+        "direction": "麦珂推出一首全新原创曲目，意外赢得年轻听众好评，重塑市场形象"
+      },
+      {
+        "cluster_id": "EC035",
+        "chapter_span": [
+          69,
+          70
+        ],
+        "direction": "麦珂借变声期进行自我调整，获得创作主导权，开启个人风格探索"
+      }
+    ],
+    "romance_progression": "未成年的友情加深，但仍未触及情感层面",
+    "ending_state": "麦珂虽遭质疑，却在创作上初露锋芒，获得更多自主权",
+    "next_group_hook": "他的转变将引来更大的阻力，尤其是那些不愿看到他成长的人"
+  },
+  {
+    "macro_group_id": "MG008",
+    "chapter_span": [
+      71,
+      80
+    ],
+    "title": "厂牌迁移的暗战",
+    "timeline_years": "1975",
+    "macro_goal": "完成厂牌更换，拓展国际影响力",
+    "historical_stage": "乐队或歌手更换所属唱片公司，成为行业常态",
+    "main_conflict": "旧厂牌试图阻止麦珂跳槽，设置重重障碍",
+    "rebirth_advantage": "麦珂预知自己会被打压，提前布局人脉与资源",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC036",
+        "chapter_span": [
+          71,
+          72
+        ],
+        "direction": "麦珂收到一封来自新厂牌的邀请函，承诺提供更多创作自由"
+      },
+      {
+        "cluster_id": "EC037",
+        "chapter_span": [
+          73,
+          74
+        ],
+        "direction": "旧厂牌威胁取消所有宣传支持，迫使麦珂退缩，但他巧妙转移重心"
+      },
+      {
+        "cluster_id": "EC038",
+        "chapter_span": [
+          75,
+          76
+        ],
+        "direction": "麦珂与独立制作人合作录制样带，证明自身价值，吸引潜在投资"
+      },
+      {
+        "cluster_id": "EC039",
+        "chapter_span": [
+          77,
+          78
+        ],
+        "direction": "麦珂的父亲被迫与旧厂牌达成妥协，支付违约金，但保留了核心资产"
+      },
+      {
+        "cluster_id": "EC040",
+        "chapter_span": [
+          79,
+          80
+        ],
+        "direction": "麦珂终于签约新厂牌，获得专属工作室和第一张个人专辑计划"
+      }
+    ],
+    "romance_progression": "仍然维持单纯的同龄友谊，尚未有感情线索",
+    "ending_state": "麦珂顺利转移厂牌，开始独立创作，但仍需面对旧势力的报复",
+    "next_group_hook": "新厂牌看似友好，实则另有目的，麦珂必须谨慎应对"
+  },
+  {
+    "macro_group_id": "MG009",
+    "chapter_span": [
+      81,
+      90
+    ],
+    "title": "电影梦与现实的碰撞",
+    "timeline_years": "1976",
+    "macro_goal": "参与电影拍摄，拓宽艺术边界",
+    "historical_stage": "流行明星跨界影视领域逐渐成为趋势",
+    "main_conflict": "制片方对麦珂的演技持怀疑态度，要求他放弃部分创作权",
+    "rebirth_advantage": "麦珂清楚自己的潜力，主动寻找合适的剧本与导演",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC041",
+        "chapter_span": [
+          81,
+          82
+        ],
+        "direction": "麦珂接到一部电影邀约，但要求他完全服从导演调度"
+      },
+      {
+        "cluster_id": "EC042",
+        "chapter_span": [
+          83,
+          84
+        ],
+        "direction": "麦珂拒绝出演某部商业大片，选择参演一部实验性短片，展现独特视角"
+      },
+      {
+        "cluster_id": "EC043",
+        "chapter_span": [
+          85,
+          86
+        ],
+        "direction": "麦珂与一位著名导演合作，展示出超出预期的表演天赋，赢得口碑"
+      },
+      {
+        "cluster_id": "EC044",
+        "chapter_span": [
+          87,
+          88
+        ],
+        "direction": "电影上映后反响热烈，麦珂成为首个跨领域的青年艺人"
+      },
+      {
+        "cluster_id": "EC045",
+        "chapter_span": [
+          89,
+          90
+        ],
+        "direction": "麦珂凭借此片获得最佳新人奖，名声进一步提升，吸引更多优质资源"
+      }
+    ],
+    "romance_progression": "依然专注于事业，未涉及任何感情描写",
+    "ending_state": "麦珂在电影界崭露头角，获得广泛认可，但也招致更多嫉妒",
+    "next_group_hook": "新的竞争者正在崛起，而麦珂的野心也越来越大"
+  },
+  {
+    "macro_group_id": "MG010",
+    "chapter_span": [
+      91,
+      100
+    ],
+    "title": "成年之路的抉择",
+    "timeline_years": "1978",
+    "macro_goal": "迈向成年身份，掌握创作与商业决策权",
+    "historical_stage": "青少年艺人步入成年，迎来人生转折点",
+    "main_conflict": "旧势力试图干预麦珂的成人身份认定与作品发行",
+    "rebirth_advantage": "麦珂早有准备，在法律与财务方面做好充分布局",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC046",
+        "chapter_span": [
+          91,
+          92
+        ],
+        "direction": "麦珂宣布年满十八岁，正式接管个人事务管理"
+      },
+      {
+        "cluster_id": "EC047",
+        "chapter_span": [
+          93,
+          94
+        ],
+        "direction": "旧势力试图通过法律手段夺回控制权，麦珂提前准备好证据"
+      },
+      {
+        "cluster_id": "EC048",
+        "chapter_span": [
+          95,
+          96
+        ],
+        "direction": "麦珂发布首张个人专辑，包含多首原创歌曲，彰显独立创作能力"
+      },
+      {
+        "cluster_id": "EC049",
+        "chapter_span": [
+          97,
+          98
+        ],
+        "direction": "专辑大获成功，麦珂获得多项音乐奖项提名，巩固地位"
+      },
+      {
+        "cluster_id": "EC050",
+        "chapter_span": [
+          99,
+          100
+        ],
+        "direction": "麦珂成立个人工作室，正式开启独立创作与运营模式，迈出成年第一步"
+      }
+    ],
+    "romance_progression": "成年后开始探索感情世界，但始终保持清醒与自我掌控",
+    "ending_state": "麦珂真正成为一个独立艺术家，拥有完整的创作权与经济自主权",
+    "next_group_hook": "接下来的故事将更加复杂，而麦珂已经站在了更高的起点"
+  },
+  {
+    "macro_group_id": "MG011",
+    "chapter_span": [
+      101,
+      110
+    ],
+    "title": "新厂牌的陷阱与初探",
+    "timeline_years": "1978",
+    "macro_goal": "完成新厂牌签约，建立初步制作权框架",
+    "historical_stage": "新厂牌口头承诺与合同条款博弈",
+    "main_conflict": "旧势力试图以隐性条款限制麦珂自由创作，麦珂利用前世记忆识别风险并设下反制圈套",
+    "rebirth_advantage": "前世知晓新厂牌曾用“合作支持”掩盖控制意图，提前设立合同审核机制",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC051",
+        "chapter_span": [
+          101,
+          102
+        ],
+        "direction": "麦珂在新厂牌会议中发现隐藏的版权保留条款，故意示弱引诱对方暴露"
+      },
+      {
+        "cluster_id": "EC052",
+        "chapter_span": [
+          103,
+          104
+        ],
+        "direction": "麦珂提出联合制作提案，借机引入独立制作人艾琳，增强自身谈判筹码"
+      },
+      {
+        "cluster_id": "EC053",
+        "chapter_span": [
+          105,
+          106
+        ],
+        "direction": "麦珂公开演出时故意失误，引发媒体关注，迫使厂牌重新评估其价值"
+      },
+      {
+        "cluster_id": "EC054",
+        "chapter_span": [
+          107,
+          108
+        ],
+        "direction": "麦珂与母亲讨论合同细节，揭露旧势力幕后操控，激发其维权意识"
+      },
+      {
+        "cluster_id": "EC055",
+        "chapter_span": [
+          109,
+          110
+        ],
+        "direction": "麦珂签订附加协议，确保个人创作权不被侵蚀，并赢得首批独立制作资源"
+      }
+    ],
+    "romance_progression": "艾琳首次正式参与项目，两人因工作关系产生微妙情愫，但未涉及感情进展",
+    "ending_state": "麦珂获得部分制作权，艾琳成为核心合作伙伴，旧势力开始感到威胁",
+    "next_group_hook": "旧势力决定采取更隐蔽的手段阻挠麦珂的创作自由"
+  },
+  {
+    "macro_group_id": "MG012",
+    "chapter_span": [
+      111,
+      120
+    ],
+    "title": "跨界壁垒与第一座奖杯",
+    "timeline_years": "1979",
+    "macro_goal": "完成成人专辑创作，打破电台壁垒，取得首个行业认可",
+    "historical_stage": "跨类型音乐尝试与主流市场冲突",
+    "main_conflict": "传统电台拒绝播放麦珂的新风格作品，麦珂通过地下渠道和粉丝力量实现传播突破",
+    "rebirth_advantage": "前世知晓广播系统运作逻辑，提前布局线上与线下宣传网络",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC056",
+        "chapter_span": [
+          111,
+          112
+        ],
+        "direction": "麦珂发布非主流风格单曲，遭到主流电台封杀，引发粉丝抗议"
+      },
+      {
+        "cluster_id": "EC057",
+        "chapter_span": [
+          113,
+          114
+        ],
+        "direction": "麦珂通过地下俱乐部表演积累人气，吸引独立音乐人合作"
+      },
+      {
+        "cluster_id": "EC058",
+        "chapter_span": [
+          115,
+          116
+        ],
+        "direction": "麦珂邀请艾琳协助编曲，突破原有音乐模式，获得评论界赞誉"
+      },
+      {
+        "cluster_id": "EC059",
+        "chapter_span": [
+          117,
+          118
+        ],
+        "direction": "麦珂与经纪人就奖项提名发生争执，最终凭借实力获得首座格莱美提名"
+      },
+      {
+        "cluster_id": "EC060",
+        "chapter_span": [
+          119,
+          120
+        ],
+        "direction": "麦珂在颁奖礼上发表获奖感言，强调艺术自由，引起广泛共鸣"
+      }
+    ],
+    "romance_progression": "艾琳对麦珂的艺术理念产生认同，二人情感进一步深化",
+    "ending_state": "麦珂获得首座格莱美提名，确立行业地位，艾琳成为其精神支柱之一",
+    "next_group_hook": "麦珂面临更大的舆论压力，旧势力开始策划负面新闻"
+  },
+  {
+    "macro_group_id": "MG013",
+    "chapter_span": [
+      121,
+      130
+    ],
+    "title": "家庭裂痕与自我觉醒",
+    "timeline_years": "1980",
+    "macro_goal": "解决与父亲间的矛盾，强化母子联盟，巩固创作自主权",
+    "historical_stage": "家庭内部权力斗争与个人成长挑战",
+    "main_conflict": "父亲试图干预麦珂的音乐方向，麦珂借助母亲之力维护自己",
+    "rebirth_advantage": "前世知道父亲会以亲情为工具施压，提前安排好应对策略",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC061",
+        "chapter_span": [
+          121,
+          122
+        ],
+        "direction": "麦珂的父亲反对其与艾琳合作，试图切断资金来源"
+      },
+      {
+        "cluster_id": "EC062",
+        "chapter_span": [
+          123,
+          124
+        ],
+        "direction": "麦珂的母亲介入调解，向父亲展示麦珂的成长成果"
+      },
+      {
+        "cluster_id": "EC063",
+        "chapter_span": [
+          125,
+          126
+        ],
+        "direction": "麦珂在演唱会上突然宣布不再接受父亲管理，震惊全场"
+      },
+      {
+        "cluster_id": "EC064",
+        "chapter_span": [
+          127,
+          128
+        ],
+        "direction": "麦珂与父亲爆发激烈争吵，母亲坚定站在儿子一边"
+      },
+      {
+        "cluster_id": "EC065",
+        "chapter_span": [
+          129,
+          130
+        ],
+        "direction": "麦珂正式成立个人工作室，脱离父亲控制，获得更多创作自由"
+      }
+    ],
+    "romance_progression": "艾琳见证麦珂的家庭转变，加深彼此信任",
+    "ending_state": "麦珂彻底摆脱父亲掌控，母亲成为其最坚实的支持者",
+    "next_group_hook": "旧势力趁虚而入，试图利用家庭问题打击麦珂形象"
+  },
+  {
+    "macro_group_id": "MG014",
+    "chapter_span": [
+      131,
+      140
+    ],
+    "title": "电视门槛与全球视野",
+    "timeline_years": "1981",
+    "macro_goal": "突破电视平台限制，打造标志性的视觉表达，扩大影响力",
+    "historical_stage": "电视节目与音乐影像结合初期阶段",
+    "main_conflict": "电视台不愿播出麦珂的创新视频，麦珂另辟蹊径争取曝光机会",
+    "rebirth_advantage": "前世了解电视播放规则，提前设计可绕过审查的创意方案",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC066",
+        "chapter_span": [
+          131,
+          132
+        ],
+        "direction": "麦珂的音乐视频遭电视台拒播，引发公众不满"
+      },
+      {
+        "cluster_id": "EC067",
+        "chapter_span": [
+          133,
+          134
+        ],
+        "direction": "麦珂通过地下放映和小型影院获取观众反馈，优化视频内容"
+      },
+      {
+        "cluster_id": "EC068",
+        "chapter_span": [
+          135,
+          136
+        ],
+        "direction": "麦珂在电视节目中巧妙回应批评，展现自信与才华"
+      },
+      {
+        "cluster_id": "EC069",
+        "chapter_span": [
+          137,
+          138
+        ],
+        "direction": "麦珂与艾琳合作拍摄低成本短片，意外获得媒体关注"
+      },
+      {
+        "cluster_id": "EC070",
+        "chapter_span": [
+          139,
+          140
+        ],
+        "direction": "麦珂推出首部完整音乐短片，在海外发行后大受欢迎"
+      }
+    ],
+    "romance_progression": "艾琳在工作中展现出非凡才华，麦珂对其愈发欣赏",
+    "ending_state": "麦珂的音乐影像受到国际市场欢迎，奠定全球化基础",
+    "next_group_hook": "跨国公司开始觊觎麦珂的才华，准备展开新一轮竞争"
+  },
+  {
+    "macro_group_id": "MG015",
+    "chapter_span": [
+      141,
+      150
+    ],
+    "title": "长片野心与团队协作",
+    "timeline_years": "1982",
+    "macro_goal": "启动电影企划，组建专业团队，迈向影视领域",
+    "historical_stage": "音乐电影尚属新兴形式，投资方谨慎观望",
+    "main_conflict": "投资人质疑麦珂的导演能力，麦珂依靠团队智慧证明自己",
+    "rebirth_advantage": "前世知晓电影制作流程，提前招募关键人才",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC071",
+        "chapter_span": [
+          141,
+          142
+        ],
+        "direction": "麦珂提议拍摄影音结合的电影，投资人表示怀疑"
+      },
+      {
+        "cluster_id": "EC072",
+        "chapter_span": [
+          143,
+          144
+        ],
+        "direction": "麦珂与艾琳共同制定剧本，突出音乐叙事特色"
+      },
+      {
+        "cluster_id": "EC073",
+        "chapter_span": [
+          145,
+          146
+        ],
+        "direction": "麦珂邀请老友昆廷担任制作人，提升影片质量保障"
+      },
+      {
+        "cluster_id": "EC074",
+        "chapter_span": [
+          147,
+          148
+        ],
+        "direction": "麦珂在试镜中亲自挑选演员，确保角色匹配度"
+      },
+      {
+        "cluster_id": "EC075",
+        "chapter_span": [
+          149,
+          150
+        ],
+        "direction": "电影筹备完成，麦珂宣布将亲自执导，引爆行业期待"
+      }
+    ],
+    "romance_progression": "艾琳在电影项目中发挥重要作用，两人关系更加亲密",
+    "ending_state": "麦珂正式启动电影计划，艾琳成为其事业的重要伙伴",
+    "next_group_hook": "电影上映前遭遇多方阻力，麦珂需迎战资本与舆论双重考验"
+  },
+  {
+    "macro_group_id": "MG016",
+    "chapter_span": [
+      151,
+      160
+    ],
+    "title": "影像革命与权力初现",
+    "timeline_years": "1983年",
+    "macro_goal": "完成首部长篇音乐短片拍摄并获得行业认可",
+    "historical_stage": "1982年跨类型专辑引发全球文化突破，音乐影像成为主流传播方式",
+    "main_conflict": "唱片公司试图控制影片剪辑权，麦珂需确保自身创意主导权",
+    "rebirth_advantage": "前世记得导演因版权问题导致影片未完成，因此提前安排合作方署名条款",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC076",
+        "chapter_span": [
+          151,
+          152
+        ],
+        "direction": "麦珂拒绝签署导演单方面剪辑权协议，提出分镜稿审核机制"
+      },
+      {
+        "cluster_id": "EC077",
+        "chapter_span": [
+          153,
+          154
+        ],
+        "direction": "剧组内部有人泄露剧本内容，麦珂发现后立即启动法律追责程序"
+      },
+      {
+        "cluster_id": "EC078",
+        "chapter_span": [
+          155,
+          156
+        ],
+        "direction": "麦珂私下联系电视台高层，争取播放优先权以削弱公司操控力"
+      },
+      {
+        "cluster_id": "EC079",
+        "chapter_span": [
+          157,
+          158
+        ],
+        "direction": "麦珂的母亲协助调查制片方财务漏洞，揭露其虚报成本行为"
+      },
+      {
+        "cluster_id": "EC080",
+        "chapter_span": [
+          159,
+          160
+        ],
+        "direction": "影片上映后票房大卖，麦珂凭借创新镜头语言赢得业内高度评价"
+      }
+    ],
+    "romance_progression": "艾琳·沃特曼开始更多介入制作决策，两人情感逐渐升温但保持克制",
+    "ending_state": "麦珂获得影像创作主导权，初步建立独立制片体系",
+    "next_group_hook": "电影成功后，唱片公司试图收回音轨版权"
+  },
+  {
+    "macro_group_id": "MG017",
+    "chapter_span": [
+      161,
+      170
+    ],
+    "title": "合同风暴与权益巩固",
+    "timeline_years": "1984年",
+    "macro_goal": "完成新一轮合约谈判并锁定长期创作自由度",
+    "historical_stage": "1984年格莱美奖竞争激烈，艺人合同博弈白热化",
+    "main_conflict": "唱片公司试图引入新经纪人瓜分麦珂收益，麦珂需要反制策略",
+    "rebirth_advantage": "前世记得对方曾用虚假数据误导签约，因此提前收集市场真实数据作为筹码",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC081",
+        "chapter_span": [
+          161,
+          162
+        ],
+        "direction": "麦珂在公开场合公布自己的收入结构，迫使对手放弃非法干预"
+      },
+      {
+        "cluster_id": "EC082",
+        "chapter_span": [
+          163,
+          164
+        ],
+        "direction": "麦珂邀请律师审查现有合同，发现隐藏条款并予以修改"
+      },
+      {
+        "cluster_id": "EC083",
+        "chapter_span": [
+          165,
+          166
+        ],
+        "direction": "麦珂通过代理人向其他艺人传递信息，形成抵制恶意经纪人的联盟"
+      },
+      {
+        "cluster_id": "EC084",
+        "chapter_span": [
+          167,
+          168
+        ],
+        "direction": "麦珂母亲联合其他艺人妻子，在社交圈中散布对手劣迹"
+      },
+      {
+        "cluster_id": "EC085",
+        "chapter_span": [
+          169,
+          170
+        ],
+        "direction": "双方达成新合约，麦珂获得创作自主权与更高分成比例"
+      }
+    ],
+    "romance_progression": "艾琳与麦珂的合作更加深入，感情线逐步显露",
+    "ending_state": "麦珂确立独立地位，合约保障创作自由",
+    "next_group_hook": "新合约签订后，竞争对手开始策划更隐秘的打击手段"
+  },
+  {
+    "macro_group_id": "MG018",
+    "chapter_span": [
+      171,
+      180
+    ],
+    "title": "公益浪潮与资本野心",
+    "timeline_years": "1985年",
+    "macro_goal": "发起大型公益项目并实现长期资金支持",
+    "historical_stage": "1985年国际赈灾歌曲成为社会关注焦点",
+    "main_conflict": "麦珂希望通过公益活动提升公众形象，却遭幕后势力阻挠",
+    "rebirth_advantage": "前世记得某次活动因资金挪用失败，因此设立透明审计机制",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC086",
+        "chapter_span": [
+          171,
+          172
+        ],
+        "direction": "麦珂发布公益计划，吸引大量粉丝捐款并承诺收支透明"
+      },
+      {
+        "cluster_id": "EC087",
+        "chapter_span": [
+          173,
+          174
+        ],
+        "direction": "幕后势力伪造账目企图侵吞善款，被麦珂及时识破"
+      },
+      {
+        "cluster_id": "EC088",
+        "chapter_span": [
+          175,
+          176
+        ],
+        "direction": "麦珂通过记者会公布真相，使敌对势力名誉受损"
+      },
+      {
+        "cluster_id": "EC089",
+        "chapter_span": [
+          177,
+          178
+        ],
+        "direction": "麦珂将部分收益用于购买音乐出版版权，扩大资产基础"
+      },
+      {
+        "cluster_id": "EC090",
+        "chapter_span": [
+          179,
+          180
+        ],
+        "direction": "公益活动取得巨大成效，麦珂名声进一步提升"
+      }
+    ],
+    "romance_progression": "艾琳开始思考是否要进入麦珂的生活核心",
+    "ending_state": "麦珂实现公益与商业双赢，资产稳步增长",
+    "next_group_hook": "公益活动的成功引来更大规模的资金争夺战"
+  },
+  {
+    "macro_group_id": "MG019",
+    "chapter_span": [
+      181,
+      190
+    ],
+    "title": "舞台危机与健康考验",
+    "timeline_years": "1985—1986年",
+    "macro_goal": "应对巡演压力与健康风险，维持高水准演出表现",
+    "historical_stage": "1985—1986年大规模世界巡演成为常态",
+    "main_conflict": "麦珂面临高强度工作节奏带来的身体透支，且有外部干扰",
+    "rebirth_advantage": "前世记得自己曾因过度劳累崩溃，因此提前制定健康管理方案",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC091",
+        "chapter_span": [
+          181,
+          182
+        ],
+        "direction": "麦珂宣布加入专业健身教练团队，提高体能储备"
+      },
+      {
+        "cluster_id": "EC092",
+        "chapter_span": [
+          183,
+          184
+        ],
+        "direction": "麦珂故意透露体力下降的消息，诱使对手放松警惕"
+      },
+      {
+        "cluster_id": "EC093",
+        "chapter_span": [
+          185,
+          186
+        ],
+        "direction": "麦珂在一场演出中突发晕厥，引起公众强烈反响"
+      },
+      {
+        "cluster_id": "EC094",
+        "chapter_span": [
+          187,
+          188
+        ],
+        "direction": "麦珂迅速恢复状态，证明自己仍具备顶级舞台实力"
+      },
+      {
+        "cluster_id": "EC095",
+        "chapter_span": [
+          189,
+          190
+        ],
+        "direction": "麦珂在巡演期间推出全新编舞，引领潮流风向"
+      }
+    ],
+    "romance_progression": "艾琳开始亲自参与麦珂的舞蹈设计，二人关系日益亲密",
+    "ending_state": "麦珂维持顶尖舞台表现，健康状况良好",
+    "next_group_hook": "巡演结束后，麦珂迎来新的挑战——更大的舞台与更复杂的阴谋"
+  },
+  {
+    "macro_group_id": "MG020",
+    "chapter_span": [
+      191,
+      200
+    ],
+    "title": "曲库战争与终极反击",
+    "timeline_years": "1986年",
+    "macro_goal": "完成重要音乐出版曲库收购，奠定未来数十年财富根基",
+    "historical_stage": "1985年音乐出版市场快速扩张，版权成为关键资源",
+    "main_conflict": "麦珂在竞购过程中遭遇多方阻扰，必须巧妙周旋",
+    "rebirth_advantage": "前世记得当时因为信息不对称而错过机会，因此提前获取内幕消息",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC096",
+        "chapter_span": [
+          191,
+          192
+        ],
+        "direction": "麦珂通过匿名渠道获取竞购名单，抢先一步接触潜在卖家"
+      },
+      {
+        "cluster_id": "EC097",
+        "chapter_span": [
+          193,
+          194
+        ],
+        "direction": "麦珂故意放出高价信号，引开主要竞争对手注意力"
+      },
+      {
+        "cluster_id": "EC098",
+        "chapter_span": [
+          195,
+          196
+        ],
+        "direction": "麦珂通过朋友网络促成一笔秘密交易，绕过官方流程"
+      },
+      {
+        "cluster_id": "EC099",
+        "chapter_span": [
+          197,
+          198
+        ],
+        "direction": "麦珂在拍卖会上展示已有曲库价值，压低对手报价"
+      },
+      {
+        "cluster_id": "EC100",
+        "chapter_span": [
+          199,
+          200
+        ],
+        "direction": "麦珂成功收购目标曲库，实现资产大幅增值"
+      }
+    ],
+    "romance_progression": "艾琳正式表达对麦珂的感情，二人决定共同面对未来",
+    "ending_state": "麦珂完成关键资产配置，为最终复仇奠定经济基础",
+    "next_group_hook": "曲库收购完成后，麦珂开始着手布置最后的审判行动"
+  },
+  {
+    "macro_group_id": "MG021",
+    "chapter_span": [
+      201,
+      210
+    ],
+    "title": "舞步下的暗流",
+    "timeline_years": "1987",
+    "macro_goal": "确保新专辑发布期间的舞台安全并揭露幕后操控者",
+    "historical_stage": "新专辑发行后大规模巡演启动",
+    "main_conflict": "巡演总监卡尔·霍尔特试图通过舞台事故制造意外，被麦珂识破并设下反制陷阱",
+    "rebirth_advantage": "麦珂记得前世巡演中曾因升降台故障险些丧命，因此提前检查设备并记录异常情况",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC101",
+        "chapter_span": [
+          201,
+          202
+        ],
+        "direction": "麦珂发现巡演场地升降台存在安全隐患，要求立即检修"
+      },
+      {
+        "cluster_id": "EC102",
+        "chapter_span": [
+          203,
+          204
+        ],
+        "direction": "卡尔·霍尔特伪造检修报告，试图掩盖问题"
+      },
+      {
+        "cluster_id": "EC103",
+        "chapter_span": [
+          205,
+          206
+        ],
+        "direction": "麦珂安排艾琳·沃特曼秘密拍摄现场录像作为证据"
+      },
+      {
+        "cluster_id": "EC104",
+        "chapter_span": [
+          207,
+          208
+        ],
+        "direction": "巡演当天升降台再次发生故障，但麦珂及时避险，未受伤"
+      },
+      {
+        "cluster_id": "EC105",
+        "chapter_span": [
+          209,
+          210
+        ],
+        "direction": "麦珂公布维修记录及录像，迫使卡尔·霍尔特辞职"
+      }
+    ],
+    "romance_progression": "麦珂与艾琳的合作日益深入，情感趋于稳定",
+    "ending_state": "麦珂确认舞台安全机制完善，卡尔·霍尔特被解职，巡演顺利进行",
+    "next_group_hook": "麦珂开始收到匿名威胁信，暗示有人知道他掌握的秘密"
+  },
+  {
+    "macro_group_id": "MG022",
+    "chapter_span": [
+      211,
+      220
+    ],
+    "title": "合约中的影子",
+    "timeline_years": "1988",
+    "macro_goal": "阻止旧势力通过合同漏洞回收部分创作权",
+    "historical_stage": "新专辑推广期与版权谈判高峰",
+    "main_conflict": "维克多·兰斯试图利用旧合同条款夺回部分作品所有权",
+    "rebirth_advantage": "麦珂记得前世因忽视合同细节而失去一部分权利，于是主动重新审查所有协议",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC106",
+        "chapter_span": [
+          211,
+          212
+        ],
+        "direction": "麦珂委托律师重新审核旧合同，发现潜在漏洞"
+      },
+      {
+        "cluster_id": "EC107",
+        "chapter_span": [
+          213,
+          214
+        ],
+        "direction": "维克多·兰斯提出修改条款，试图收回部分创作权"
+      },
+      {
+        "cluster_id": "EC108",
+        "chapter_span": [
+          215,
+          216
+        ],
+        "direction": "麦珂提交原创手稿与录音资料证明自己拥有完整版权"
+      },
+      {
+        "cluster_id": "EC109",
+        "chapter_span": [
+          217,
+          218
+        ],
+        "direction": "法庭裁定麦珂保留全部创作权，维克多·兰斯败诉"
+      },
+      {
+        "cluster_id": "EC110",
+        "chapter_span": [
+          219,
+          220
+        ],
+        "direction": "麦珂成立个人版权管理公司，加强法律保护"
+      }
+    ],
+    "romance_progression": "麦珂与艾琳的关系更进一步，两人在工作中互相扶持",
+    "ending_state": "麦珂成功捍卫版权，维克多·兰斯受到重创",
+    "next_group_hook": "一名神秘人向麦珂发送一份加密文件，声称掌握更多关于旧合同的信息"
+  },
+  {
+    "macro_group_id": "MG023",
+    "chapter_span": [
+      221,
+      230
+    ],
+    "title": "家庭的裂缝",
+    "timeline_years": "1989",
+    "macro_goal": "稳固与母亲玛莎的信任关系，防止外部干涉",
+    "historical_stage": "巡演期间家庭成员频繁参与公众活动",
+    "main_conflict": "乔纳·杰森试图介入麦珂的事业决策，引发母子矛盾",
+    "rebirth_advantage": "麦珂记得前世父亲对母亲的压制，因此刻意维护母子关系",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC111",
+        "chapter_span": [
+          221,
+          222
+        ],
+        "direction": "乔纳·杰森提议让玛莎担任助理经理，遭麦珂拒绝"
+      },
+      {
+        "cluster_id": "EC112",
+        "chapter_span": [
+          223,
+          224
+        ],
+        "direction": "玛莎察觉到乔纳·杰森的意图，开始怀疑他对儿子的真实动机"
+      },
+      {
+        "cluster_id": "EC113",
+        "chapter_span": [
+          225,
+          226
+        ],
+        "direction": "麦珂私下邀请玛莎参与核心决策会议，增强她的影响力"
+      },
+      {
+        "cluster_id": "EC114",
+        "chapter_span": [
+          227,
+          228
+        ],
+        "direction": "乔纳·杰森试图散布谣言贬低玛莎，被麦珂当场揭穿"
+      },
+      {
+        "cluster_id": "EC115",
+        "chapter_span": [
+          229,
+          230
+        ],
+        "direction": "玛莎正式成为麦珂团队的核心成员，乔纳·杰森被边缘化"
+      }
+    ],
+    "romance_progression": "麦珂与母亲关系更加亲密，不再受父亲干扰",
+    "ending_state": "玛莎确立了在家族企业中的主导地位，乔纳·杰森失势",
+    "next_group_hook": "一封来自未知来源的信件寄到了麦珂手中，提到一个关于家族历史的秘密"
+  },
+  {
+    "macro_group_id": "MG024",
+    "chapter_span": [
+      231,
+      240
+    ],
+    "title": "舆论的风暴",
+    "timeline_years": "1989",
+    "macro_goal": "控制媒体报道节奏，避免丑闻发酵",
+    "historical_stage": "媒体曝光率飙升，负面新闻频发",
+    "main_conflict": "巴里·布鲁姆策划虚假新闻攻击麦珂，引发公众质疑",
+    "rebirth_advantage": "麦珂记得前世因媒体误导导致形象受损，因此提前准备反击材料",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC116",
+        "chapter_span": [
+          231,
+          232
+        ],
+        "direction": "巴里·布鲁姆发布一篇指控麦珂私生活混乱的文章"
+      },
+      {
+        "cluster_id": "EC117",
+        "chapter_span": [
+          233,
+          234
+        ],
+        "direction": "麦珂通过艾琳收集相关证据，包括第三方证词和录音"
+      },
+      {
+        "cluster_id": "EC118",
+        "chapter_span": [
+          235,
+          236
+        ],
+        "direction": "麦珂召开记者会，公开反驳不实言论并展示证据"
+      },
+      {
+        "cluster_id": "EC119",
+        "chapter_span": [
+          237,
+          238
+        ],
+        "direction": "巴里·布鲁姆被迫承认文章内容未经核实"
+      },
+      {
+        "cluster_id": "EC120",
+        "chapter_span": [
+          239,
+          240
+        ],
+        "direction": "媒体恢复对麦珂的信任，巴里·布鲁姆被撤换"
+      }
+    ],
+    "romance_progression": "麦珂与艾琳之间的情感愈发深厚，彼此依赖感增强",
+    "ending_state": "麦珂成功掌控舆论方向，巴里·布鲁姆失去影响力",
+    "next_group_hook": "一封匿名邮件发到麦珂邮箱，透露了一个可能颠覆整个行业的秘密"
+  },
+  {
+    "macro_group_id": "MG025",
+    "chapter_span": [
+      241,
+      250
+    ],
+    "title": "隐秘的交易",
+    "timeline_years": "1990",
+    "macro_goal": "揭露旧势力通过非法渠道获取信息的行为",
+    "historical_stage": "唱片行业内部腐败现象严重",
+    "main_conflict": "麦珂发现有人盗取自己的创作数据用于商业用途",
+    "rebirth_advantage": "麦珂记得前世曾因数据泄露导致权益受损，因此提前部署监控系统",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC121",
+        "chapter_span": [
+          241,
+          242
+        ],
+        "direction": "麦珂发现某家唱片公司未经授权使用其作品"
+      },
+      {
+        "cluster_id": "EC122",
+        "chapter_span": [
+          243,
+          244
+        ],
+        "direction": "艾琳协助调查，发现数据泄露源头"
+      },
+      {
+        "cluster_id": "EC123",
+        "chapter_span": [
+          245,
+          246
+        ],
+        "direction": "麦珂联系律所提起诉讼，要求赔偿损失"
+      },
+      {
+        "cluster_id": "EC124",
+        "chapter_span": [
+          247,
+          248
+        ],
+        "direction": "法院判决支持麦珂，对方需支付高额赔偿金"
+      },
+      {
+        "cluster_id": "EC125",
+        "chapter_span": [
+          249,
+          250
+        ],
+        "direction": "麦珂设立保密制度，防止类似事件再次发生"
+      }
+    ],
+    "romance_progression": "麦珂与艾琳的感情进入新的阶段，双方承诺未来共同面对挑战",
+    "ending_state": "麦珂成功追回经济损失，并建立更完善的隐私保护体系",
+    "next_group_hook": "麦珂收到一张神秘名片，上面写着‘我们一直在看着你’"
+  },
+  {
+    "macro_group_id": "MG026",
+    "chapter_span": [
+      251,
+      260
+    ],
+    "title": "新声启航：公益与巡演筹备",
+    "timeline_years": "1991",
+    "macro_goal": "启动全球巡演计划并建立慈善基金会架构",
+    "historical_stage": "音乐产业开始关注社会责任，唱片公司鼓励艺人参与公益活动",
+    "main_conflict": "旧势力试图阻挠麦珂的公益形象塑造，并暗中操纵巡演成本预算",
+    "rebirth_advantage": "利用前世对1991年行业趋势的记忆，提前布局资金监管机制",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC126",
+        "chapter_span": [
+          251,
+          252
+        ],
+        "direction": "麦珂拒绝签署一份隐藏额外费用条款的巡演合约"
+      },
+      {
+        "cluster_id": "EC127",
+        "chapter_span": [
+          253,
+          254
+        ],
+        "direction": "麦珂与艾琳共同设计一套透明财务模型，提交给合作方审核"
+      },
+      {
+        "cluster_id": "EC128",
+        "chapter_span": [
+          255,
+          256
+        ],
+        "direction": "麦珂在公开演讲中提及自己童年时曾目睹贫困儿童无学可上"
+      },
+      {
+        "cluster_id": "EC129",
+        "chapter_span": [
+          257,
+          258
+        ],
+        "direction": "一名匿名举报人寄来一份疑似旧势力操控的财务报告"
+      },
+      {
+        "cluster_id": "EC130",
+        "chapter_span": [
+          259,
+          260
+        ],
+        "direction": "麦珂在新闻发布会上展示已备案的巡演成本明细"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅的关系仍处于初期试探阶段，尚未正式公布",
+    "ending_state": "麦珂成功获得巡演初步批准，但被警告需谨慎对待幕后交易",
+    "next_group_hook": "一张神秘照片在媒体曝光，暗示有人正监视麦珂的私人生活"
+  },
+  {
+    "macro_group_id": "MG027",
+    "chapter_span": [
+      261,
+      270
+    ],
+    "title": "舞动正义：首场演出与舆论反击",
+    "timeline_years": "1992",
+    "macro_goal": "举办首场全球巡演并巩固公益形象",
+    "historical_stage": "全球化音乐市场逐渐成型，媒体对艺人的道德要求提高",
+    "main_conflict": "反对者散布虚假信息攻击麦珂的公益动机，引发舆论风波",
+    "rebirth_advantage": "凭借前世记忆预判谣言内容，并提前准备回应材料",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC131",
+        "chapter_span": [
+          261,
+          262
+        ],
+        "direction": "麦珂在演出后台发现一份伪造的病历记录，声称其身体状况不佳"
+      },
+      {
+        "cluster_id": "EC132",
+        "chapter_span": [
+          263,
+          264
+        ],
+        "direction": "麦珂在演出前发布一段未剪辑的排练片段，展现真实训练状态"
+      },
+      {
+        "cluster_id": "EC133",
+        "chapter_span": [
+          265,
+          266
+        ],
+        "direction": "一名记者试图用不实数据误导观众对公益项目的理解"
+      },
+      {
+        "cluster_id": "EC134",
+        "chapter_span": [
+          267,
+          268
+        ],
+        "direction": "麦珂团队发布一份详细的公益项目进展报告"
+      },
+      {
+        "cluster_id": "EC135",
+        "chapter_span": [
+          269,
+          270
+        ],
+        "direction": "麦珂在台上直接反驳质疑者，揭露对方资料来源造假"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅在巡演期间频繁互动，感情升温",
+    "ending_state": "麦珂赢得公众信任，但也引来更多敌意",
+    "next_group_hook": "一场突如其来的医疗检查迫使麦珂暂停巡演，疑点重重"
+  },
+  {
+    "macro_group_id": "MG028",
+    "chapter_span": [
+      271,
+      280
+    ],
+    "title": "心火难熄：健康危机与家庭抉择",
+    "timeline_years": "1993",
+    "macro_goal": "应对健康问题并稳定家庭关系",
+    "historical_stage": "娱乐圈对艺人健康的关注度上升，心理压力成为焦点话题",
+    "main_conflict": "麦珂的身体状况恶化，外界猜测与家族矛盾有关",
+    "rebirth_advantage": "提前安排体检与心理咨询，防止病情失控",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC136",
+        "chapter_span": [
+          271,
+          272
+        ],
+        "direction": "麦珂接到一封匿名信，指控其母亲干涉他的健康决策"
+      },
+      {
+        "cluster_id": "EC137",
+        "chapter_span": [
+          273,
+          274
+        ],
+        "direction": "麦珂在医院接受全面检查，结果显示身心俱疲"
+      },
+      {
+        "cluster_id": "EC138",
+        "chapter_span": [
+          275,
+          276
+        ],
+        "direction": "玛莎尝试说服麦珂停止高强度工作，遭到他冷淡拒绝"
+      },
+      {
+        "cluster_id": "EC139",
+        "chapter_span": [
+          277,
+          278
+        ],
+        "direction": "麦珂宣布暂时休养，同时成立心理健康基金"
+      },
+      {
+        "cluster_id": "EC140",
+        "chapter_span": [
+          279,
+          280
+        ],
+        "direction": "麦珂在电视采访中首次谈及家庭压力对其的影响"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅的感情进入关键期，两人决定考虑婚姻",
+    "ending_state": "麦珂暂时退出公众视野，但家庭关系更加紧张",
+    "next_group_hook": "一场突如其来的求婚让所有人措手不及"
+  },
+  {
+    "macro_group_id": "MG029",
+    "chapter_span": [
+      281,
+      290
+    ],
+    "title": "闪电之约：闪婚与舆论漩涡",
+    "timeline_years": "1993",
+    "macro_goal": "处理婚姻事务并应对由此带来的舆论冲击",
+    "historical_stage": "名人婚姻成为媒体报道热点，尤其是涉及财富分配的问题",
+    "main_conflict": "麦珂与莉薇娅的婚礼引发关于财产分割和家族利益的争论",
+    "rebirth_advantage": "提前制定婚姻协议，避免陷入债务纠纷",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC141",
+        "chapter_span": [
+          281,
+          282
+        ],
+        "direction": "麦珂在未经通知的情况下突然提出结婚请求"
+      },
+      {
+        "cluster_id": "EC142",
+        "chapter_span": [
+          283,
+          284
+        ],
+        "direction": "媒体称这场婚姻是出于政治目的，而非爱情"
+      },
+      {
+        "cluster_id": "EC143",
+        "chapter_span": [
+          285,
+          286
+        ],
+        "direction": "麦珂与莉薇娅签订婚前协议，明确各自权益"
+      },
+      {
+        "cluster_id": "EC144",
+        "chapter_span": [
+          287,
+          288
+        ],
+        "direction": "麦珂在婚礼当天收到一封威胁信，恐吓他不要透露真相"
+      },
+      {
+        "cluster_id": "EC145",
+        "chapter_span": [
+          289,
+          290
+        ],
+        "direction": "麦珂公开承诺将部分收入用于改善莉薇娅家族的困境"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅之间的感情充满不确定性和考验",
+    "ending_state": "婚姻虽成，但双方都意识到这段关系并不完美",
+    "next_group_hook": "一家知名杂志刊登了关于他们婚后的独家报道"
+  },
+  {
+    "macro_group_id": "MG030",
+    "chapter_span": [
+      291,
+      300
+    ],
+    "title": "逆光而行：舆论风暴中的坚守",
+    "timeline_years": "1994",
+    "macro_goal": "在重大舆论危机中维护自身名誉并推动改革",
+    "historical_stage": "媒体监督加强，艺人需要更强的公关策略来面对公众质疑",
+    "main_conflict": "麦珂因一场突发事件再次受到批评，被迫进行自我辩护",
+    "rebirth_advantage": "利用前世经验构建完整的危机公关体系",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC146",
+        "chapter_span": [
+          291,
+          292
+        ],
+        "direction": "麦珂因一次误操作导致粉丝集会取消，引发强烈不满"
+      },
+      {
+        "cluster_id": "EC147",
+        "chapter_span": [
+          293,
+          294
+        ],
+        "direction": "麦珂在社交媒体上发布道歉声明，并解释事件经过"
+      },
+      {
+        "cluster_id": "EC148",
+        "chapter_span": [
+          295,
+          296
+        ],
+        "direction": "一名前员工爆料麦珂在管理上的疏忽，引发新一轮争议"
+      },
+      {
+        "cluster_id": "EC149",
+        "chapter_span": [
+          297,
+          298
+        ],
+        "direction": "麦珂邀请独立调查员介入，证明自己的清白"
+      },
+      {
+        "cluster_id": "EC150",
+        "chapter_span": [
+          299,
+          300
+        ],
+        "direction": "麦珂在公开活动中强调责任与担当的重要性"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅的婚姻面临考验，双方都在努力维持关系",
+    "ending_state": "麦珂在舆论风暴中保持冷静，赢得了更多尊重",
+    "next_group_hook": "一个意想不到的消息即将打破平静"
+  },
+  {
+    "macro_group_id": "MG031",
+    "chapter_span": [
+      301,
+      310
+    ],
+    "title": "合约风暴",
+    "timeline_years": "1995年",
+    "macro_goal": "完成出版合资公司协议签署并规避初期陷阱",
+    "historical_stage": "唱片公司竞标合作的高潮期",
+    "main_conflict": "麦珂发现某签约方试图通过隐藏条款窃取作品版权",
+    "rebirth_advantage": "前世曾见过类似协议内容，提前准备反制方案",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC151",
+        "chapter_span": [
+          301,
+          302
+        ],
+        "direction": "麦珂在签约前夜收到匿名警告信，提示对方可能藏有版权漏洞"
+      },
+      {
+        "cluster_id": "EC152",
+        "chapter_span": [
+          303,
+          304
+        ],
+        "direction": "麦珂安排艾琳·沃特曼伪造一份内部文件，暴露对方虚假报价"
+      },
+      {
+        "cluster_id": "EC153",
+        "chapter_span": [
+          305,
+          306
+        ],
+        "direction": "麦珂故意在签约仪式上迟到，迫使对方主动透露更多细节"
+      },
+      {
+        "cluster_id": "EC154",
+        "chapter_span": [
+          307,
+          308
+        ],
+        "direction": "麦珂当众展示自己早年录制的另一份原始合同，证明对方篡改事实"
+      },
+      {
+        "cluster_id": "EC155",
+        "chapter_span": [
+          309,
+          310
+        ],
+        "direction": "双方最终签订附带附加条款的新协议，麦珂获得额外版权保障"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅因商业事务频繁接触，感情逐渐升温",
+    "ending_state": "麦珂成功守住版权，并赢得部分合作伙伴信任",
+    "next_group_hook": "新协议中的某些条款引发其他竞争对手不满"
+  },
+  {
+    "macro_group_id": "MG032",
+    "chapter_span": [
+      311,
+      320
+    ],
+    "title": "旧日影子",
+    "timeline_years": "1996年",
+    "macro_goal": "揭露旧爱背后的阴谋并稳固婚姻关系",
+    "historical_stage": "个人生活受到公众关注的高峰期",
+    "main_conflict": "瑟琳娜·凯德试图利用旧情煽动舆论对麦珂施压",
+    "rebirth_advantage": "前世曾见她策划过类似的谣言攻击，提前布局防范",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC156",
+        "chapter_span": [
+          311,
+          312
+        ],
+        "direction": "麦珂在采访中公开承认过去一段情感经历，但强调已彻底放下"
+      },
+      {
+        "cluster_id": "EC157",
+        "chapter_span": [
+          313,
+          314
+        ],
+        "direction": "瑟琳娜在社交场合散布谣言，被麦珂团队当场揭穿"
+      },
+      {
+        "cluster_id": "EC158",
+        "chapter_span": [
+          315,
+          316
+        ],
+        "direction": "麦珂与莉薇娅在婚礼纪念日发布联合声明，表明彼此坚定立场"
+      },
+      {
+        "cluster_id": "EC159",
+        "chapter_span": [
+          317,
+          318
+        ],
+        "direction": "麦珂邀请瑟琳娜参与一场慈善演出，暗示她的行动已被监控"
+      },
+      {
+        "cluster_id": "EC160",
+        "chapter_span": [
+          319,
+          320
+        ],
+        "direction": "瑟琳娜因负面报道导致形象受损，被迫暂停演艺活动"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅的关系更加稳定，两人开始讨论共同抚养计划",
+    "ending_state": "瑟琳娜退出竞争，麦珂与莉薇娅感情进一步巩固",
+    "next_group_hook": "莉薇娅家族开始介入麦珂的事业决策"
+  },
+  {
+    "macro_group_id": "MG033",
+    "chapter_span": [
+      321,
+      330
+    ],
+    "title": "幕后棋局",
+    "timeline_years": "1996—1997年",
+    "macro_goal": "揭露维克多·兰斯的非法操控并建立更稳固的联盟",
+    "historical_stage": "唱片行业权力斗争的关键节点",
+    "main_conflict": "维克多试图通过控制发行渠道打压麦珂的作品",
+    "rebirth_advantage": "前世曾见证其操纵方式，提前部署反制策略",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC161",
+        "chapter_span": [
+          321,
+          322
+        ],
+        "direction": "麦珂秘密联系独立分销商，绕开维克多的渠道限制"
+      },
+      {
+        "cluster_id": "EC162",
+        "chapter_span": [
+          323,
+          324
+        ],
+        "direction": "麦珂通过粉丝组织“星火同盟”发起众筹，直接支持专辑发行"
+      },
+      {
+        "cluster_id": "EC163",
+        "chapter_span": [
+          325,
+          326
+        ],
+        "direction": "麦珂公布维克多与其他公司的交易记录，引起监管机构注意"
+      },
+      {
+        "cluster_id": "EC164",
+        "chapter_span": [
+          327,
+          328
+        ],
+        "direction": "维克多试图以违约威胁麦珂，却被麦珂用前期录音证据反驳"
+      },
+      {
+        "cluster_id": "EC165",
+        "chapter_span": [
+          329,
+          330
+        ],
+        "direction": "维克多被迫撤回部分指控，麦珂获得更多市场自由度"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅的共同养育计划初具雏形",
+    "ending_state": "维克多失去部分影响力，麦珂获得更多自主权",
+    "next_group_hook": "莉薇娅家族提出要接管一部分音乐制作权"
+  },
+  {
+    "macro_group_id": "MG034",
+    "chapter_span": [
+      331,
+      340
+    ],
+    "title": "光影之下",
+    "timeline_years": "1997年",
+    "macro_goal": "确保巡演安全并强化全球品牌影响力",
+    "historical_stage": "大型巡回演出成为主流文化现象",
+    "main_conflict": "卡尔·霍尔特试图在巡演中埋下安全隐患",
+    "rebirth_advantage": "前世曾在巡演中遭遇类似事故，提前布置防护措施",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC166",
+        "chapter_span": [
+          331,
+          332
+        ],
+        "direction": "麦珂要求所有舞台设备进行第三方检查，防止隐患"
+      },
+      {
+        "cluster_id": "EC167",
+        "chapter_span": [
+          333,
+          334
+        ],
+        "direction": "麦珂安排黛安娜·罗文全程监督舞台搭建过程"
+      },
+      {
+        "cluster_id": "EC168",
+        "chapter_span": [
+          335,
+          336
+        ],
+        "direction": "麦珂在彩排时故意制造一次小型故障，测试应急系统"
+      },
+      {
+        "cluster_id": "EC169",
+        "chapter_span": [
+          337,
+          338
+        ],
+        "direction": "卡尔试图掩盖设备问题，被麦珂当场揭发"
+      },
+      {
+        "cluster_id": "EC170",
+        "chapter_span": [
+          339,
+          340
+        ],
+        "direction": "卡尔因失职被解雇，巡演安全得到全面保障"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅正式确立共同育养计划",
+    "ending_state": "巡演安全无虞，麦珂品牌形象提升",
+    "next_group_hook": "巡演期间传出关于麦珂健康状况的谣言"
+  },
+  {
+    "macro_group_id": "MG035",
+    "chapter_span": [
+      341,
+      350
+    ],
+    "title": "真相之光",
+    "timeline_years": "1998年",
+    "macro_goal": "完成全球巡演并启动复仇计划的核心环节",
+    "historical_stage": "全球化传播技术刚刚起步的阶段",
+    "main_conflict": "康拉德·莫里森试图在巡演途中实施药物控制",
+    "rebirth_advantage": "前世曾目睹此类行为，提前设置防毒机制",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC171",
+        "chapter_span": [
+          341,
+          342
+        ],
+        "direction": "麦珂在巡演前接受全面体检，并公开检测报告"
+      },
+      {
+        "cluster_id": "EC172",
+        "chapter_span": [
+          343,
+          344
+        ],
+        "direction": "麦珂安排玛莎·杰森随时在身边监护他的用药情况"
+      },
+      {
+        "cluster_id": "EC173",
+        "chapter_span": [
+          345,
+          346
+        ],
+        "direction": "康拉德尝试偷偷更换药品，被麦珂团队及时发现"
+      },
+      {
+        "cluster_id": "EC174",
+        "chapter_span": [
+          347,
+          348
+        ],
+        "direction": "麦珂在巡演期间宣布成立独立医疗小组，杜绝外部干预"
+      },
+      {
+        "cluster_id": "EC175",
+        "chapter_span": [
+          349,
+          350
+        ],
+        "direction": "康拉德因违规操作被调查，麦珂的健康状况完全掌控在自己手中"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅的孩子出生，共同养育线正式落地",
+    "ending_state": "麦珂身体健康且掌控全局，巡演顺利结束",
+    "next_group_hook": "麦珂开始着手策划终极复仇计划"
+  },
+  {
+    "macro_group_id": "MG036",
+    "chapter_span": [
+      351,
+      360
+    ],
+    "title": "舞台上的风暴",
+    "timeline_years": "1999—2000",
+    "macro_goal": "完成年度巡演并稳固个人品牌，同时防范幕后操控者利用演出制造事故",
+    "historical_stage": "全球巡回演出进入尾声，行业开始讨论数字化音像产品带来的冲击",
+    "main_conflict": "麦珂发现巡演团队中有成员试图利用舞台机械陷阱制造意外，借此引发公众对其健康的质疑",
+    "rebirth_advantage": "前世记忆提示其曾在一次巡演中遭遇类似危险，因此提前调整了所有舞台设备检查流程",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC176",
+        "chapter_span": [
+          351,
+          352
+        ],
+        "direction": "麦珂在彩排时察觉升降台动作异常，立刻叫停并更换备用系统"
+      },
+      {
+        "cluster_id": "EC177",
+        "chapter_span": [
+          353,
+          354
+        ],
+        "direction": "一名技术人员被指认参与破坏，当场遭警方带走，麦珂公开声明拒绝任何非法干预"
+      },
+      {
+        "cluster_id": "EC178",
+        "chapter_span": [
+          355,
+          356
+        ],
+        "direction": "媒体猜测麦珂身体状况不佳，但他在直播采访中展示良好体能，直接驳斥谣言"
+      },
+      {
+        "cluster_id": "EC179",
+        "chapter_span": [
+          357,
+          358
+        ],
+        "direction": "巡演总监卡尔·霍尔特伪造数据称场地不符合安全标准，导致部分场次取消，麦珂通过第三方检测证明真相"
+      },
+      {
+        "cluster_id": "EC180",
+        "chapter_span": [
+          359,
+          360
+        ],
+        "direction": "麦珂宣布将巡演收入的一部分用于资助青少年音乐教育项目，提升公众形象"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅之间因工作忙碌产生隔阂，但她仍坚定支持其决定",
+    "ending_state": "麦珂成功化解舞台威胁，巡演顺利推进，个人声誉更进一步巩固",
+    "next_group_hook": "一场突如其来的健康检查揭示麦珂体内存在不明药物成分，暗示有人企图在他身上植入慢性中毒计划"
+  },
+  {
+    "macro_group_id": "MG037",
+    "chapter_span": [
+      361,
+      370
+    ],
+    "title": "合约背后的阴影",
+    "timeline_years": "2000—2001",
+    "macro_goal": "厘清多年合同中的潜在陷阱，防止集团趁机篡夺作品权属",
+    "historical_stage": "唱片公司开始尝试用数字发行方式降低传统销售依赖",
+    "main_conflict": "麦珂发现一份老合同中包含未经签署的版权转让条款，可能影响未来作品归属",
+    "rebirth_advantage": "前世记忆让他知道这份合同曾被修改过，因此提前保留了原始版本作为证据",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC181",
+        "chapter_span": [
+          361,
+          362
+        ],
+        "direction": "麦珂委托独立律师审查旧合同，发现其中一段模糊措辞可能存在法律漏洞"
+      },
+      {
+        "cluster_id": "EC182",
+        "chapter_span": [
+          363,
+          364
+        ],
+        "direction": "唱片集团高层试图施压让麦珂接受不利条款，但他坚持要求重新谈判"
+      },
+      {
+        "cluster_id": "EC183",
+        "chapter_span": [
+          365,
+          366
+        ],
+        "direction": "麦珂发布声明强调作品所有权归自己，引起业内关注并获得其他艺术家支持"
+      },
+      {
+        "cluster_id": "EC184",
+        "chapter_span": [
+          367,
+          368
+        ],
+        "direction": "集团安排记者散布谣言称麦珂不愿合作，却被麦珂的公开演讲揭穿谎言"
+      },
+      {
+        "cluster_id": "EC185",
+        "chapter_span": [
+          369,
+          370
+        ],
+        "direction": "麦珂启动新曲目创作，确保今后的作品不再受制于旧合同限制"
+      }
+    ],
+    "romance_progression": "莉薇娅主动提出协助处理合同事务，两人关系更加亲密",
+    "ending_state": "麦珂掌握关键证据，有效遏制集团对作品权的侵蚀",
+    "next_group_hook": "一张神秘照片曝光了麦珂年轻时与一位神秘女子的合影，引发外界对他私生活的猜测"
+  },
+  {
+    "macro_group_id": "MG038",
+    "chapter_span": [
+      371,
+      380
+    ],
+    "title": "公益的代价",
+    "timeline_years": "2001—2002",
+    "macro_goal": "揭露基金会资金流向中的虚假报告，维护慈善信誉",
+    "historical_stage": "公益组织受到更多监管，透明度成为衡量标准",
+    "main_conflict": "麦珂发现基金会某笔捐款未按承诺用途使用，怀疑有内部人员挪用",
+    "rebirth_advantage": "前世记忆提醒他某些捐赠方可能涉及不当交易，因此提前建立了双重审计机制",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC186",
+        "chapter_span": [
+          371,
+          372
+        ],
+        "direction": "麦珂亲自走访一所孤儿院，核实捐赠物资的实际发放情况"
+      },
+      {
+        "cluster_id": "EC187",
+        "chapter_span": [
+          373,
+          374
+        ],
+        "direction": "基金会财务主管被举报涉嫌贪污，调查过程中发现多份伪造票据"
+      },
+      {
+        "cluster_id": "EC188",
+        "chapter_span": [
+          375,
+          376
+        ],
+        "direction": "麦珂召开新闻发布会，公布真实账单，彻底澄清误会"
+      },
+      {
+        "cluster_id": "EC189",
+        "chapter_span": [
+          377,
+          378
+        ],
+        "direction": "多名工作人员因违规操作被解雇，基金会重组管理架构"
+      },
+      {
+        "cluster_id": "EC190",
+        "chapter_span": [
+          379,
+          380
+        ],
+        "direction": "麦珂设立新的监督委员会，确保后续资金使用完全公开透明"
+      }
+    ],
+    "romance_progression": "莉薇娅积极参与公益活动，两人理念高度一致，感情进一步升温",
+    "ending_state": "基金会恢复公信力，麦珂的形象更加正面",
+    "next_group_hook": "一封匿名信件透露了一位高管曾试图贿赂麦珂以换取资金转移许可"
+  },
+  {
+    "macro_group_id": "MG039",
+    "chapter_span": [
+      381,
+      390
+    ],
+    "title": "纪录片的骗局",
+    "timeline_years": "2002—2003",
+    "macro_goal": "识破一部恶意纪录片的制作意图，阻止其误导公众舆论",
+    "historical_stage": "媒体开始探索数字内容传播的新形式，纪录片热度上升",
+    "main_conflict": "麦珂发现一部即将上映的纪录片蓄意歪曲事实，试图抹黑其形象",
+    "rebirth_advantage": "前世记忆显示该纪录片导演曾多次发表不实言论，因此麦珂提前收集了大量反驳资料",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC191",
+        "chapter_span": [
+          381,
+          382
+        ],
+        "direction": "麦珂收到一封匿名信，指出纪录片中有多处剪辑造假"
+      },
+      {
+        "cluster_id": "EC192",
+        "chapter_span": [
+          383,
+          384
+        ],
+        "direction": "麦珂联系原剧组成员，获取未被剪辑的完整素材进行对比分析"
+      },
+      {
+        "cluster_id": "EC193",
+        "chapter_span": [
+          385,
+          386
+        ],
+        "direction": "纪录片导演试图威胁麦珂放弃诉讼，但麦珂早已准备充分证据"
+      },
+      {
+        "cluster_id": "EC194",
+        "chapter_span": [
+          387,
+          388
+        ],
+        "direction": "法院裁定纪录片部分内容构成诽谤，责令立即停止放映"
+      },
+      {
+        "cluster_id": "EC195",
+        "chapter_span": [
+          389,
+          390
+        ],
+        "direction": "麦珂发起反宣传运动，揭露纪录片背后的资本操控动机"
+      }
+    ],
+    "romance_progression": "莉薇娅协助麦珂整理资料，两人配合默契，感情愈发深厚",
+    "ending_state": "纪录片未能播出，麦珂成功挽回公众形象",
+    "next_group_hook": "纪录片导演在法庭上承认自己是受人指使，指向一个更大的幕后操纵者"
+  },
+  {
+    "macro_group_id": "MG040",
+    "chapter_span": [
+      391,
+      400
+    ],
+    "title": "隐秘的利益链条",
+    "timeline_years": "2003年全年",
+    "macro_goal": "挖掘并揭露围绕麦珂的晚年的利益网络，为最终审判铺垫",
+    "historical_stage": "世纪交接之际，娱乐业迎来新一轮权力洗牌",
+    "main_conflict": "麦珂发现多个相关人物都与同一集团有着复杂的经济往来，疑似形成封闭利益圈",
+    "rebirth_advantage": "前世记忆让他意识到这些人物之间的关联并非偶然，而是有意设计的控制网",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC196",
+        "chapter_span": [
+          391,
+          392
+        ],
+        "direction": "麦珂通过财务记录锁定几位关键人物的资金流动轨迹"
+      },
+      {
+        "cluster_id": "EC197",
+        "chapter_span": [
+          393,
+          394
+        ],
+        "direction": "一名前助理坦白曾经协助隐瞒部分收入来源，提供重要线索"
+      },
+      {
+        "cluster_id": "EC198",
+        "chapter_span": [
+          395,
+          396
+        ],
+        "direction": "麦珂联合其他艺人发起集体抗议，要求全面披露行业内的不正当交易"
+      },
+      {
+        "cluster_id": "EC199",
+        "chapter_span": [
+          397,
+          398
+        ],
+        "direction": "多家媒体报道此事，迫使相关人士公开回应并做出整改"
+      },
+      {
+        "cluster_id": "EC200",
+        "chapter_span": [
+          399,
+          400
+        ],
+        "direction": "麦珂成立独立调查小组，着手深入追踪整个利益链的核心源头"
+      }
+    ],
+    "romance_progression": "莉薇娅在关键时刻给予麦珂巨大支持，二人共同面对困难",
+    "ending_state": "麦珂初步掌握了核心证据，为日后正式起诉奠定基础",
+    "next_group_hook": "调查小组发现一名高级管理人员与早年某个神秘案件有关联，暗示背后还有更深的秘密"
+  },
+  {
+    "macro_group_id": "MG041",
+    "chapter_span": [
+      401,
+      410
+    ],
+    "title": "暗流下的合约漏洞",
+    "timeline_years": "2004年",
+    "macro_goal": "发现并揭露唱片集团隐藏的合同漏洞，为后续审判铺路",
+    "historical_stage": "唱片公司借司法程序试图夺取麦珂的音乐版权",
+    "main_conflict": "麦珂察觉合同中存在模糊条款，被维克多·兰斯等人盯上",
+    "rebirth_advantage": "前世知道该合同曾被篡改过，今生提前找到原始签署记录",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC201",
+        "chapter_span": [
+          401,
+          402
+        ],
+        "direction": "麦珂在翻查旧档时发现一份未公开的附加条款，暗示其曲库可能被非法转移"
+      },
+      {
+        "cluster_id": "EC202",
+        "chapter_span": [
+          403,
+          404
+        ],
+        "direction": "维克多安排一名律师假意提供法律帮助，实则诱导麦珂签订新的保密协议"
+      },
+      {
+        "cluster_id": "EC203",
+        "chapter_span": [
+          405,
+          406
+        ],
+        "direction": "麦珂将计就计，伪造一份包含更多隐蔽条款的副本提交给法院"
+      },
+      {
+        "cluster_id": "EC204",
+        "chapter_span": [
+          407,
+          408
+        ],
+        "direction": "巴里·布鲁姆误发一封带有威胁语气的邮件，被麦珂截获作为证据"
+      },
+      {
+        "cluster_id": "EC205",
+        "chapter_span": [
+          409,
+          410
+        ],
+        "direction": "麦珂向公众发布一份节选合同，引发媒体关注，迫使唱片集团主动谈判"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅因压力渐生隔阂，但彼此仍保持信任",
+    "ending_state": "麦珂掌握关键合同证据，维克多开始恐慌，莉薇娅协助整理财务资料",
+    "next_group_hook": "维克多策划更隐秘的陷害计划，埋下下一组冲突"
+  },
+  {
+    "macro_group_id": "MG042",
+    "chapter_span": [
+      411,
+      420
+    ],
+    "title": "舞台上的复仇预演",
+    "timeline_years": "2004—2005年",
+    "macro_goal": "在舞台上设计一场演出，借此展示对手的虚假行为",
+    "historical_stage": "案件进入庭审阶段，麦珂需在公开场合维持形象",
+    "main_conflict": "麦珂发现巡演总监卡尔·霍尔特故意调整节目单以掩盖真相",
+    "rebirth_advantage": "前世知晓某场演出中有人曾试图破坏音响设备，今生提前部署监控",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC206",
+        "chapter_span": [
+          411,
+          412
+        ],
+        "direction": "麦珂在排练时假装失误，实际是测试灯光系统是否被操控"
+      },
+      {
+        "cluster_id": "EC207",
+        "chapter_span": [
+          413,
+          414
+        ],
+        "direction": "卡尔·霍尔特擅自更改演出流程，导致麦珂临时调整歌单"
+      },
+      {
+        "cluster_id": "EC208",
+        "chapter_span": [
+          415,
+          416
+        ],
+        "direction": "麦珂邀请粉丝代表参与后台拍摄，制造意外曝光的机会"
+      },
+      {
+        "cluster_id": "EC209",
+        "chapter_span": [
+          417,
+          418
+        ],
+        "direction": "艾琳·沃特曼发现一套异常的道具清单，指向幕后操纵者"
+      },
+      {
+        "cluster_id": "EC210",
+        "chapter_span": [
+          419,
+          420
+        ],
+        "direction": "麦珂在正式演出前播放一段预先录制的视频，揭示部分人员违规操作"
+      }
+    ],
+    "romance_progression": "两人感情因工作频繁而紧张，但仍在私下互相支持",
+    "ending_state": "麦珂成功控制演出节奏，卡尔·霍尔特遭内部调查",
+    "next_group_hook": "演出后，有人试图销毁证据，麦珂迅速反应阻止"
+  },
+  {
+    "macro_group_id": "MG043",
+    "chapter_span": [
+      421,
+      430
+    ],
+    "title": "债务背后的黑手",
+    "timeline_years": "2005—2006年",
+    "macro_goal": "查明债务来源，揭露背后操控者的身份",
+    "historical_stage": "麦珂因资金链断裂面临多重违约风险",
+    "main_conflict": "托马斯·布莱克建议麦珂接受一笔高息贷款，实则是圈套",
+    "rebirth_advantage": "前世知道这笔贷款最终会导致破产，今生提前寻找替代方案",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC211",
+        "chapter_span": [
+          421,
+          422
+        ],
+        "direction": "麦珂收到一封来自未知账户的还款催促函，内容涉及多年旧账"
+      },
+      {
+        "cluster_id": "EC212",
+        "chapter_span": [
+          423,
+          424
+        ],
+        "direction": "托马斯·布莱克推荐一家新银行，实则为旧敌设局"
+      },
+      {
+        "cluster_id": "EC213",
+        "chapter_span": [
+          425,
+          426
+        ],
+        "direction": "麦珂通过朋友渠道获得一份加密的银行交易流水"
+      },
+      {
+        "cluster_id": "EC214",
+        "chapter_span": [
+          427,
+          428
+        ],
+        "direction": "苏菲亚·罗德里格斯发现一张被刻意抹去金额的发票"
+      },
+      {
+        "cluster_id": "EC215",
+        "chapter_span": [
+          429,
+          430
+        ],
+        "direction": "麦珂联合其他艺人发起联合抵制，逼迫债权人重新协商"
+      }
+    ],
+    "romance_progression": "莉薇娅提出离婚，认为麦珂太专注于事业忽视她",
+    "ending_state": "麦珂成功避免高利贷陷阱，托马斯·布莱克被解雇",
+    "next_group_hook": "债务问题暂时缓解，但更大的阴谋正在酝酿"
+  },
+  {
+    "macro_group_id": "MG044",
+    "chapter_span": [
+      431,
+      440
+    ],
+    "title": "家庭与名誉的抉择",
+    "timeline_years": "2006年",
+    "macro_goal": "平衡家庭责任与职业发展，修复与莉薇娅的关系",
+    "historical_stage": "麦珂因长期缺席家庭引发矛盾",
+    "main_conflict": "莉薇娅拒绝继续支持麦珂的复出计划，要求其专注家庭",
+    "rebirth_advantage": "前世知道这段关系最终会破裂，今生努力挽回",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC216",
+        "chapter_span": [
+          431,
+          432
+        ],
+        "direction": "莉薇娅突然带孩子离开，麦珂在机场追上并道歉"
+      },
+      {
+        "cluster_id": "EC217",
+        "chapter_span": [
+          433,
+          434
+        ],
+        "direction": "麦珂请黛安娜·罗文帮忙照顾孩子，减轻莉薇娅负担"
+      },
+      {
+        "cluster_id": "EC218",
+        "chapter_span": [
+          435,
+          436
+        ],
+        "direction": "莉薇娅在新闻发布会上质疑麦珂的商业决策"
+      },
+      {
+        "cluster_id": "EC219",
+        "chapter_span": [
+          437,
+          438
+        ],
+        "direction": "麦珂通过信件表达内心挣扎，请求莉薇娅的理解"
+      },
+      {
+        "cluster_id": "EC220",
+        "chapter_span": [
+          439,
+          440
+        ],
+        "direction": "两人在一次私密聚会中重拾情感，决定共同面对未来"
+      }
+    ],
+    "romance_progression": "双方经历激烈争吵后逐渐恢复理解",
+    "ending_state": "莉薇娅同意继续支持麦珂的事业，但希望他更加平衡生活",
+    "next_group_hook": "家庭关系初步缓和，但外部压力依然巨大"
+  },
+  {
+    "macro_group_id": "MG045",
+    "chapter_span": [
+      441,
+      450
+    ],
+    "title": "曲库的最后守护",
+    "timeline_years": "2007年",
+    "macro_goal": "确保麦珂的音乐遗产不落入他人之手",
+    "historical_stage": "麦珂考虑将曲库转让或成立家族信托",
+    "main_conflict": "维克多·兰斯企图通过法律手段强行接管麦珂的音乐版权",
+    "rebirth_advantage": "前世知道曲库最终会被出售，今生提前设立保护机制",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC221",
+        "chapter_span": [
+          441,
+          442
+        ],
+        "direction": "麦珂召开发布会宣布将曲库捐赠给自己的公益基金会"
+      },
+      {
+        "cluster_id": "EC222",
+        "chapter_span": [
+          443,
+          444
+        ],
+        "direction": "维克多指使律师提出诉讼，声称麦珂无权处置个人资产"
+      },
+      {
+        "cluster_id": "EC223",
+        "chapter_span": [
+          445,
+          446
+        ],
+        "direction": "麦珂提交一份数字签名文件，证明其拥有完整所有权"
+      },
+      {
+        "cluster_id": "EC224",
+        "chapter_span": [
+          447,
+          448
+        ],
+        "direction": "艾琳·沃特曼找到一份多年前的授权书，确认麦珂的权益"
+      },
+      {
+        "cluster_id": "EC225",
+        "chapter_span": [
+          449,
+          450
+        ],
+        "direction": "法院驳回维克多的诉求，麦珂成功保住曲库所有权"
+      }
+    ],
+    "romance_progression": "两人关系进一步加深，承诺共同经营未来",
+    "ending_state": "麦珂完成对曲库的全面保护，维克多彻底失势",
+    "next_group_hook": "曲库安全落地，麦珂准备迎接下一步挑战"
+  },
+  {
+    "macro_group_id": "MG046",
+    "chapter_span": [
+      451,
+      460
+    ],
+    "title": "暗流涌动：复出前夜的布局",
+    "timeline_years": "2008年秋",
+    "macro_goal": "将旧十章的医疗隐患、排期漏洞及舞台安全数据融入新演出筹备",
+    "historical_stage": "全国巡演启动前夕，媒体聚焦于复出艺人健康状况",
+    "main_conflict": "旧势力试图借体检与药检破坏演出计划",
+    "rebirth_advantage": "前世知晓医生会篡改病历并伪造药物记录，提前部署了双签机制",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC226",
+        "chapter_span": [
+          451,
+          452
+        ],
+        "direction": "麦珂在医院接受体检时发现异常药品清单，暗示有人意图毒害"
+      },
+      {
+        "cluster_id": "EC227",
+        "chapter_span": [
+          453,
+          454
+        ],
+        "direction": "医生试图修改诊断报告，被麦珂的助理及时阻止"
+      },
+      {
+        "cluster_id": "EC228",
+        "chapter_span": [
+          455,
+          456
+        ],
+        "direction": "麦珂公开披露巡演前体测结果，揭露部分官员曾隐瞒身体缺陷"
+      },
+      {
+        "cluster_id": "EC229",
+        "chapter_span": [
+          457,
+          458
+        ],
+        "direction": "巡演总监卡尔·霍尔特提出额外保险条款，被麦珂拒绝并曝光其贪污账目"
+      },
+      {
+        "cluster_id": "EC230",
+        "chapter_span": [
+          459,
+          460
+        ],
+        "direction": "麦珂发布个人健康声明，强调已建立独立医疗团队，引发公众关注"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅的感情因信任加深而更加稳固",
+    "ending_state": "麦珂成功掌控演出医疗权，反派失去对他的控制力",
+    "next_group_hook": "麦珂的健康声明引起广泛关注，成为后续舆论焦点"
+  },
+  {
+    "macro_group_id": "MG047",
+    "chapter_span": [
+      461,
+      470
+    ],
+    "title": "合同迷宫：利益链条的裂痕",
+    "timeline_years": "2008年底",
+    "macro_goal": "揭露旧合同中的霸王条款，推动新合约改革",
+    "historical_stage": "全球巡回演唱会签约高峰时期",
+    "main_conflict": "旧合同隐藏的不平等条款威胁到麦珂权益",
+    "rebirth_advantage": "前世记忆揭示了某些律师会在关键节点误导客户",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC231",
+        "chapter_span": [
+          461,
+          462
+        ],
+        "direction": "麦珂发现一张未签署的附加协议，指向某位律师的欺诈行为"
+      },
+      {
+        "cluster_id": "EC232",
+        "chapter_span": [
+          463,
+          464
+        ],
+        "direction": "律师托马斯·布莱克试图说服麦珂放弃版权追索权"
+      },
+      {
+        "cluster_id": "EC233",
+        "chapter_span": [
+          465,
+          466
+        ],
+        "direction": "麦珂公开一份旧合同片段，引发媒体对其长期受压迫的讨论"
+      },
+      {
+        "cluster_id": "EC234",
+        "chapter_span": [
+          467,
+          468
+        ],
+        "direction": "麦珂委托艾琳·沃特曼起草新合同，挑战传统行业规则"
+      },
+      {
+        "cluster_id": "EC235",
+        "chapter_span": [
+          469,
+          470
+        ],
+        "direction": "新合同获得法律界支持，反派陷入被动局面"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅共同面对压力，感情愈发坚定",
+    "ending_state": "麦珂掌握主动权，旧合同系统开始瓦解",
+    "next_group_hook": "新合同草案引发业内震动，更多人站出来反对旧秩序"
+  },
+  {
+    "macro_group_id": "MG048",
+    "chapter_span": [
+      471,
+      480
+    ],
+    "title": "舞台阴影：致命风险的规避",
+    "timeline_years": "2009年初",
+    "macro_goal": "确保演出安全性，防止再次发生事故",
+    "historical_stage": "巡演前设备调试阶段",
+    "main_conflict": "舞台安全隐患被刻意掩盖",
+    "rebirth_advantage": "前世清楚知道升降台故障会导致严重后果，提前布置了备用方案",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC236",
+        "chapter_span": [
+          471,
+          472
+        ],
+        "direction": "麦珂注意到舞台灯光系统存在异常信号"
+      },
+      {
+        "cluster_id": "EC237",
+        "chapter_span": [
+          473,
+          474
+        ],
+        "direction": "技术人员试图遮掩机械故障，被麦珂的工程师识破"
+      },
+      {
+        "cluster_id": "EC238",
+        "chapter_span": [
+          475,
+          476
+        ],
+        "direction": "麦珂安排第三方检测机构进行突击检查"
+      },
+      {
+        "cluster_id": "EC239",
+        "chapter_span": [
+          477,
+          478
+        ],
+        "direction": "巡演总监卡尔·霍尔特承认操作失误，但拒不认责"
+      },
+      {
+        "cluster_id": "EC240",
+        "chapter_span": [
+          479,
+          480
+        ],
+        "direction": "麦珂宣布所有设备经过全面检修，赢得观众信任"
+      }
+    ],
+    "romance_progression": "两人合作应对危机，情感进一步升温",
+    "ending_state": "麦珂彻底掌控舞台安全流程，反派丧失影响力",
+    "next_group_hook": "麦珂的表演即将开始，紧张气氛达到顶点"
+  },
+  {
+    "macro_group_id": "MG049",
+    "chapter_span": [
+      481,
+      490
+    ],
+    "title": "票房风暴：票务系统的反击",
+    "timeline_years": "2009年春季",
+    "macro_goal": "揭露票务黑幕，确保公平售票",
+    "historical_stage": "预售门票引发社会热议",
+    "main_conflict": "票价虚高与非法囤票现象猖獗",
+    "rebirth_advantage": "前世记得某些经纪人会操控票源牟利，提前准备了监控手段",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC241",
+        "chapter_span": [
+          481,
+          482
+        ],
+        "direction": "麦珂发现一批高价票来源不明，怀疑内部人员参与"
+      },
+      {
+        "cluster_id": "EC242",
+        "chapter_span": [
+          483,
+          484
+        ],
+        "direction": "票务负责人巴里·布鲁姆试图转移责任至外部代理"
+      },
+      {
+        "cluster_id": "EC243",
+        "chapter_span": [
+          485,
+          486
+        ],
+        "direction": "苏菲亚·罗德里格斯公布票池数据，揭露虚假销售"
+      },
+      {
+        "cluster_id": "EC244",
+        "chapter_span": [
+          487,
+          488
+        ],
+        "direction": "麦珂宣布取消全部非官方渠道售票，引发市场震荡"
+      },
+      {
+        "cluster_id": "EC245",
+        "chapter_span": [
+          489,
+          490
+        ],
+        "direction": "麦珂设立透明票务平台，赢得粉丝高度认可"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅在逆境中互相扶持，感情更进一步",
+    "ending_state": "麦珂重塑票务体系，反派损失惨重",
+    "next_group_hook": "麦珂的演出票迅速售罄，众人期待正式开演"
+  },
+  {
+    "macro_group_id": "MG050",
+    "chapter_span": [
+      491,
+      500
+    ],
+    "title": "终局降临：生死之间的抉择",
+    "timeline_years": "2009年夏",
+    "macro_goal": "制造假死讯息，诱导反派自曝真相",
+    "historical_stage": "演唱会当晚，全球直播倒计时",
+    "main_conflict": "麦珂设下圈套，引诱敌人落入陷阱",
+    "rebirth_advantage": "前世知晓自己将在演唱会上身亡，提前准备好替代方案",
+    "five_event_directions": [
+      {
+        "cluster_id": "EC246",
+        "chapter_span": [
+          491,
+          492
+        ],
+        "direction": "麦珂对外发布‘突发健康问题’消息，推迟演出"
+      },
+      {
+        "cluster_id": "EC247",
+        "chapter_span": [
+          493,
+          494
+        ],
+        "direction": "反派趁机散布谣言，试图毁掉麦珂声誉"
+      },
+      {
+        "cluster_id": "EC248",
+        "chapter_span": [
+          495,
+          496
+        ],
+        "direction": "麦珂通过粉丝组织发布真实病情证明，澄清误会"
+      },
+      {
+        "cluster_id": "EC249",
+        "chapter_span": [
+          497,
+          498
+        ],
+        "direction": "反派内部出现分歧，部分成员开始动摇"
+      },
+      {
+        "cluster_id": "EC250",
+        "chapter_span": [
+          499,
+          500
+        ],
+        "direction": "麦珂在全球直播中现身，揭露所有阴谋，开启纪念仪式"
+      }
+    ],
+    "romance_progression": "麦珂与莉薇娅携手走过终点，感情圆满升华",
+    "ending_state": "麦珂成功摆脱死亡诅咒，仇敌悉数落网，全球致敬",
+    "next_group_hook": "麦珂的传奇继续流传，新的时代由此开启"
+  }
+]

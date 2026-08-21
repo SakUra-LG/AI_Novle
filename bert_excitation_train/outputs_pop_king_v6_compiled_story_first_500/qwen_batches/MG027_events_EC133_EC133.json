@@ -1,0 +1,271 @@
+{
+  "macro_group_id": "MG027",
+  "event_clusters": [
+    {
+      "cluster_id": "EC133",
+      "chapter_span": [
+        265,
+        266
+      ],
+      "source_event_direction": "前世具体受害：前世媒体被奥瑞恩操控，发布假新闻称麦珂挪用公款，引发公众信任危机。；本事件独有的前世信息差：1993年艾琳·沃特曼掌握独家报道渠道，但需原始数据支持才能发声。；今生提前动作：麦珂提前与艾琳约定，一旦对方抛出虚假账目，立即启动“真相广播”预案。；第265章可见小赢：奥瑞恩雇佣的公关团队试图在发布会上散布谣言，被现场记者当场识破。；第266章新交锋：麦珂邀请第三方公证人现场演示原件与复印件的声学指纹比对，全程直播。；阻力方永久现实损失：奥瑞恩高管在直播中因无法解释技术细节而语无伦次，形象彻底沦为笑柄。；主角现实收益：初声基金财务透明度获业界公认，多家银行主动申请成为新的托管方。；不可逆结算键：公众舆论彻底倒向麦珂，奥瑞恩再无任何洗白机会。；接回死亡控制主线：避免了前世因舆论压力导致的商业孤立，维持了基金运营的独立性。",
+      "source_event_direction_sha256": "74ae86e1cb9e4214f872c86f4c5cbf2b33b8a07fe4036303ab455139be1d8af6",
+      "source_macro_sha256": "468c2def2213a0be030976cb121d85f87847c74c46b54a6ed317170e60862844",
+      "name": "声学指纹审判：影印票据的崩塌",
+      "timeline_years": "1993—1994",
+      "main_opponent": "维克多·斯特林 (Victor Sterling)",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS09"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "黛安娜",
+        "瑟琳娜",
+        "维克多·斯特林",
+        "艾琳·沃特曼",
+        "公证员哈罗德"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用媒体操控舆论，试图在联邦审计窗口期前，通过散布“初声基金挪用公款”的谣言，迫使麦珂接受伪造的影印票据作为财务凭证。",
+      "prev_life_tragedy": "前世麦珂因无法自证清白，被媒体铺天盖地的假新闻逼入绝境，导致初声基金资金链断裂，被迫低价出售核心资产。",
+      "info_gap_from_prev_life": "麦珂知晓1993年联邦审计第45天必须提交原始介质副本，且清楚1983年‘蓝盾离岸’收购案实为持有影印权而非运营权；更掌握艾琳·沃特曼独家报道渠道需原始数据支持的秘密。",
+      "why_previous_life_failed": "前世缺乏物理介质验证技术，仅依赖口头辩解和常规文件，被对手篡改的复印件误导了审计官和公众。",
+      "preemptive_avoidance": "麦珂提前与艾琳·沃特曼约定“真相广播”预案，并联合黛安娜部署声学指纹比对设备，邀请第三方公证人全程见证。",
+      "bait_and_evidence": "诱饵：奥瑞恩高管斯特林在发布会上高调展示一份声称是1983年原始凭证的“影印版”票据，指控麦珂隐匿资金。证据：黛安娜启动的便携式声学分析仪，能读取纸张纤维纹理与墨水声波共振特征，原件与复印件存在不可逾越的物理差异。",
+      "comic_villain_behavior": "斯特林在直播镜头前为了掩饰慌乱，强行解释复印件为何有“特殊光泽”，甚至试图用打火机点燃文件来证明其“真实性”，结果引发烟雾报警，场面一度失控，沦为全场笑柄。",
+      "villain_loss": "奥瑞恩集团代表因无法解释技术细节而语无伦次，形象彻底沦为笑柄；其提交的虚假票据被当场定性为非法文件，失去所有追索权。",
+      "protagonist_gain": "初声基金财务透明度获业界公认，多家银行主动申请成为新的托管方；麦珂与瑟琳娜构建了坚不可摧的物理防御网。",
+      "relationship_change": "黛安娜从普通财务顾问正式获得麦珂与瑟琳娜的绝对信任，成为核心决策层；麦珂与瑟琳娜基于物理介质的防御联盟更加稳固。",
+      "continuity_writes": [
+        "确认1993年联邦审计流程漏洞（第45天原件强制提交）",
+        "确立《双轨创作信托协议》中物理原件的唯一法律地位",
+        "引入声学指纹比对技术作为新型法律证据标准"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_017:PHYSICAL_EVIDENCE_VALIDATION",
+          "state_key": "audit_compliance__EC133",
+          "from": "suspected_fraud",
+          "to": "legally_verified_physical_only",
+          "irreversible": true,
+          "evidence": "ART_265_SONIC_VERIFICATION_LOG",
+          "effect_type": "protagonist_gain",
+          "source_domain": "Legal Rights",
+          "source_state_key": "trust_protocols"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_CHIEF_ARCHITECT",
+          "state_key": "sterling_reputation__EC133",
+          "from": "corporate_executive",
+          "to": "public_laughingstock",
+          "irreversible": false,
+          "evidence": "ART_266_LIVE_BROADCAST_RECORDING",
+          "effect_type": "villain_loss",
+          "source_domain": "Opponent Status",
+          "source_state_key": "public_perception"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "DIANA_ROLE",
+          "state_key": "diana_promotion__EC133",
+          "from": "financial_advisor",
+          "to": "chief_defense_architect",
+          "irreversible": true,
+          "evidence": "ART_266_PROMOTION_CERTIFICATE",
+          "effect_type": "protagonist_gain",
+          "source_domain": "Organization Structure",
+          "source_state_key": "leadership_hierarchy"
+        }
+      ],
+      "historical_anchor_ids": [
+        "ART_255_MICROFILM_COPY",
+        "ART_256_HANDWRITTEN_NOTE"
+      ],
+      "cluster_outcome": "奥瑞恩集团因伪造证据被官方定性为非法文件，失去所有基于该文件的追索权；初声基金财务透明度获业界公认，黛安娜晋升架构师；麦珂阻止了前世资金链断裂导致的悲剧。",
+      "next_event_hook": "奥瑞恩集团转向利用‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点，迫使麦珂进入更深层次的科技与伦理博弈。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 265,
+          "timeline_start": "1993-09-12",
+          "timeline_end": "1993-09-12",
+          "scene": "新闻发布会大厅",
+          "chapter_goal": "揭露奥瑞恩公关团队的谣言攻势，稳住现场局势。",
+          "chapter_title": "谣言的破绽",
+          "participants": [
+            "麦珂",
+            "艾琳·沃特曼",
+            "斯特林",
+            "现场记者团"
+          ],
+          "opening_conflict": "斯特林带着公关团队闯入发布会，手持打印件大声指控麦珂挪用公款，试图制造混乱。",
+          "info_gap_use": "麦珂利用前世记忆，预判对方会在此时抛出谣言，提前安排艾琳·沃特曼在场等待“第一手资料”。",
+          "opponent_reaction": "斯特林见麦珂从容不迫，试图用“行业惯例”搪塞，但被记者追问具体数据源时支支吾吾。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "新闻发布会大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林举起文件高喊"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [],
+          "action_sequence": [
+            "斯特林发表演讲，指责麦珂财务造假，并展示一份模糊的复印件作为证据。",
+            "现场记者纷纷质疑复印件的来源和清晰度，斯特林无法提供原始出处。",
+            "艾琳·沃特曼突然站起，指出斯特林手中的文件与1983年真实档案的笔迹特征不符，并引用麦珂提供的内部备忘录。",
+            "斯特林恼羞成怒，试图抢夺艾琳手中的资料，被保安拦下。",
+            "麦珂冷静地宣布暂停发布会，准备进行下一步的“物理验证”。"
+          ],
+          "visible_payoff": "奥瑞恩雇佣的公关团队试图在发布会上散布谣言，被现场记者当场识破，斯特林的形象首次出现裂痕。",
+          "ending": "发布会暂时休整，斯特林狼狈退场，麦珂准备迎接第二天的终极对决。",
+          "must_include": [
+            "斯特林的谎言被揭穿",
+            "艾琳·沃特曼的介入",
+            "现场记者的质疑"
+          ],
+          "must_not_include": [
+            "技术细节的详细演示",
+            "黛安娜的出场"
+          ],
+          "detailed_synopsis": "1993年10月14日上午，银湾市曼哈顿的初声基金新闻中心座无虚席。奥瑞恩集团高管维克多·斯特林带着两名公关助理气势汹汹地闯入，手中高举一份泛黄的复印件，高声指控麦珂涉嫌挪用公款，试图将水搅浑。斯特林声称这是1983年‘蓝盾离岸’收购案的原始凭证，要求麦珂立即交出控制权。然而，他不知道的是，麦珂早已预料到这一招。当斯特林喋喋不休地编造细节时，著名调查记者艾琳·沃特曼突然起身，冷冷地指出斯特林手中的文件笔迹僵硬，明显是后期描摹的赝品，并当众展示了麦珂提前提供的1983年真实档案摘要。现场记者瞬间沸腾，纷纷向斯特林发问，斯特林面对镜头手足无措，只能强词夺理，称这是“技术性失误”。麦珂此时并未急于反驳，而是微笑着示意暂停，眼神中闪过一丝冷峻的光芒，暗示真正的风暴还在后面。斯特林在众目睽睽之下显得狼狈不堪，不得不灰溜溜地退至后台，但他眼中的怨毒却愈发浓烈。",
+          "source_timeline_start": "1993年10月14日 上午09:00",
+          "source_timeline_end": "1993年10月14日 上午10:30"
+        },
+        {
+          "chapter_id": 266,
+          "timeline_start": "1993-09-12",
+          "timeline_end": "1993-09-12",
+          "scene": "多功能厅中央",
+          "chapter_goal": "通过声学指纹比对技术，彻底粉碎奥瑞恩的证据链，确立物理原件的绝对权威。",
+          "chapter_title": "无声的审判",
+          "participants": [
+            "麦珂",
+            "黛安娜",
+            "瑟琳娜",
+            "斯特林",
+            "公证员哈罗德",
+            "现场观众及直播观众"
+          ],
+          "opening_conflict": "斯特林坚持要求重新提交复印件，并威胁若不接受将采取法律手段，试图逼迫麦珂就范。",
+          "info_gap_use": "麦珂利用前世对1993年审计流程的了解，坚持要求必须在公证人面前进行物理介质验证，否则拒绝任何后续程序。",
+          "opponent_reaction": "斯特林在直播镜头前为了掩饰恐慌，试图用打火机点燃文件，结果引发烟雾报警，场面一度失控，最终因无法解释技术细节而语无伦次。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "多功能厅中央",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "公证员哈罗德宣布开始"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_266_SONIC_VERIFICATION_LOG",
+              "timeline_scope": "current",
+              "display_name": "《1993年票据声学指纹比对记录》",
+              "kind": "technical_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_256_HANDWRITTEN_NOTE",
+              "timeline_scope": "current",
+              "purpose": "作为原件样本进行比对"
+            }
+          ],
+          "action_sequence": [
+            "公证员哈罗德宣布开始“物理介质验证仪式”，全场直播开启。",
+            "黛安娜操作便携式声学分析仪，分别扫描斯特林带来的复印件和麦珂提供的原始手写批注。",
+            "仪器屏幕显示两组截然不同的波形图，原件具有独特的纸张纤维共振频率，而复印件则呈现平滑的机械复制特征。",
+            "斯特林大惊失色，试图抢过仪器解释，却被黛安娜礼貌地挡回。",
+            "斯特林情绪失控，掏出打火机试图烧毁复印件以掩盖真相，引发烟雾报警，全场哗然。",
+            "麦珂趁机宣布斯特林的行为构成欺诈，公证员当场签署违规认定书。"
+          ],
+          "visible_payoff": "奥瑞恩高管在直播中因无法解释技术细节而语无伦次，形象彻底沦为笑柄；初声基金财务透明度获业界公认。",
+          "ending": "斯特林被保安带离现场，奥瑞恩集团声誉扫地，麦珂与瑟琳娜相视一笑，防御体系再次升级。",
+          "must_include": [
+            "声学指纹比对过程",
+            "斯特林的失态行为",
+            "公证员的认定"
+          ],
+          "must_not_include": [
+            "网络直播的现代术语",
+            "未来的科技产品"
+          ],
+          "detailed_synopsis": "斯特林坚持要求重新提交复印件，并威胁若不接受将采取法律手段，试图逼迫麦珂就范。公证员哈罗德宣布开始“物理介质验证仪式”，全场直播开启。黛安娜操作便携式声学分析仪，分别扫描斯特林带来的复印件和麦珂提供的原始手写批注。仪器屏幕显示两组截然不同的波形图，原件具有独特的纸张纤维共振频率，而复印件则呈现平滑的机械。斯特林大惊失色，试图抢过仪器解释，却被黛安娜礼貌地挡回。奥瑞恩高管在直播中因无法解释技术细节而语无伦次，形象彻底沦为笑柄；初声基金财务透明度获业界公认。斯特林被保安带离现场，奥瑞恩集团声誉扫地，麦珂与瑟琳娜相视一笑，防御体系再次升级。",
+          "source_timeline_start": "1993年10月15日 上午10:00",
+          "source_timeline_end": "1993年10月15日 下午01:00"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1993",
+    "character_states": [
+      {
+        "entity": "黛安娜",
+        "state": "晋升为首席防御架构师，获得麦珂与瑟琳娜的绝对信任"
+      },
+      {
+        "entity": "维克多·斯特林",
+        "state": "声誉扫地，被定性为欺诈者，失去奥瑞恩核心决策层资格"
+      },
+      {
+        "entity": "麦珂",
+        "state": "建立物理介质防御体系，财务危机解除"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entities": [
+          "麦珂",
+          "黛安娜"
+        ],
+        "status": "绝对信任，共同构建防御联盟"
+      },
+      {
+        "entities": [
+          "麦珂",
+          "瑟琳娜"
+        ],
+        "status": "夫妻信托关系更加稳固，物理防线闭环"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset": "初声基金",
+        "status": "财务透明度获业界公认，多家银行申请托管"
+      },
+      {
+        "asset": "物理介质验证协议",
+        "status": "正式生效，复印件在法律层面彻底失效"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity": "初声基金",
+        "location": "银湾市曼哈顿",
+        "status": "运营正常，无资金链断裂风险"
+      }
+    ],
+    "open_threads": [
+      "奥瑞恩集团转向利用‘数据污染’策略",
+      "‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点"
+    ],
+    "resolved_threads": [
+      "1983年‘蓝盾离岸’收购真相的影印权问题",
+      "奥瑞恩集团试图通过伪造票据窃取控制权的阴谋"
+    ],
+    "introduced_characters": [
+      "公证员哈罗德（新增关键证人）"
+    ],
+    "next_pressure": "奥瑞恩集团将利用‘数据污染’策略攻击‘健康趋势预测模型’，迫使麦珂进入更深层次的科技与伦理博弈。"
+  }
+}

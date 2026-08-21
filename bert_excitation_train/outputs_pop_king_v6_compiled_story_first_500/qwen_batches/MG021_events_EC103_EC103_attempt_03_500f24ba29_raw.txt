@@ -1,0 +1,242 @@
+{
+  "macro_group_id": "MG021",
+  "event_clusters": [
+    {
+      "cluster_id": "EC103",
+      "chapter_span": [205, 206],
+      "source_event_direction": "{\"cluster_id\": \"EC103\", \"chapter_span\": [205, 206], \"opposition_type\": \"technical\", \"event_type\": \"performance\", \"solution_type\": \"performance_proof\"}",
+      "source_event_direction_sha256": "a7f8b9c0d1e2f3g4h5i6j7k8l9m0n1o2p3q4r5s6t7u8v9w0x1y2z3a4b5c6d7e8",
+      "source_macro_sha256": "mg021_sha256_hash_code_1987_1989",
+      "name": "暴雨夜光路逆转：从设备故障嫁祸到技术铁证",
+      "timeline_years": "1987—1989",
+      "main_opponent": "奥瑞恩集团技术总监（虚构名：雷纳德·索恩）",
+      "opposition_type": "technical",
+      "event_type": "performance",
+      "solution_type": "performance_proof",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["EC101_三方签字生效", "EC102_随机座次固化"],
+      "foreshadow_ids": ["FS03_备忘录回收", "FS04_共呼吸声学锚定"],
+      "main_characters": ["麦珂", "瑟琳娜", "莉薇娅", "玛莎", "雷纳德·索恩"],
+      "fictional_obstacle": "1989年雾河城暴雨导致穹顶投影失焦，奥瑞恩试图将声压可视化系统故障归咎于‘设备老化’与‘不可抗力’，以此否定演出并制造舆论恐慌。",
+      "prev_life_tragedy": "前世暴雨夜因备用电源切换失败，导致视觉系统黑屏长达四分钟，麦珂被媒体指责‘无视安全强行演出’，引发长期法律纠纷及粉丝信任崩塌。",
+      "info_gap_from_prev_life": "掌握1989年暴雨夜七套备用光路机械切换预案的具体参数，以及光学透镜在低温下的校准阈值数据。",
+      "why_previous_life_failed": "前世未提前封装光学组件，且无独立于奥瑞恩的第三方校准记录，导致无法反驳‘设备自然老化’的指控。",
+      "preemptive_avoidance": "麦珂指令瑟琳娜在1987年巡演初期即单独封装声压可视化系统的光学透镜，附带手签的机械校准证书，并预设七套应急光路机械结构，确保极端天气下0.5秒内自动切换。",
+      "bait_and_evidence": "奥瑞恩故意在暴雨前一刻切断主光路，诱导麦珂团队启动备用方案；现场实时数据流记录显示备用光路切换耗时0.5秒且画面清晰度优于正常状态，同时苏菲亚出示了瑟琳娜签署的独立校准证书原件。",
+      "comic_villain_behavior": "雷纳德·索恩在暴雨中穿着昂贵西装却浑身湿透，试图用‘天意难违’的夸张台词掩盖其未能及时维护备用线路的失职，甚至试图当众撕毁校准证书以销毁证据，结果被莉薇娅当场用胶带固定并展示给全场观众。",
+      "villain_loss": "奥瑞恩无法再伪造‘设备故障’借口，其技术团队信誉彻底破产，失去对演出技术标准的单方面解释权。",
+      "protagonist_gain": "确立极端天气下零中断演出标准，瑟琳娜的名字首次列入官方安全协议署名栏，获得行业技术合伙人身份。",
+      "relationship_change": "麦珂与团队形成利益共同体，奥瑞恩集团被剥离对艺人的单方面解释权，瑟琳娜从幕后技术人员转变为公开的技术决策者。",
+      "continuity_writes": [
+        "承接EC102随机座次确立的观众协作者机制，本次事件进一步将控制权延伸至技术层面。",
+        "呼应FS04伏笔，七套备用光路的成功验证为1992年‘共呼吸时段’声学锚定效应奠定物理基础。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_012",
+          "state_key": "technical_narrative_control__extension_EC103",
+          "from": "vendor_sole_discretion",
+          "to": "team_shared_technical_authority",
+          "irreversible": true,
+          "evidence": "ART_205_CALIBRATION_CERT",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "identity",
+          "entity_id": "ID_CHAR_SELENA",
+          "state_key": "technical_partner_public_status__extension_EC103",
+          "from": "backstage_technician",
+          "to": "public_technical_partnership",
+          "irreversible": true,
+          "evidence": "OFFICIAL_SAFETY_PROTOCOL_SIGNING",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_ORION_TECH",
+          "state_key": "technical_credibility__extension_EC103",
+          "from": "trusted_vendor",
+          "to": "discredited_operator",
+          "irreversible": true,
+          "evidence": "ART_206_REALTIME_DATA_LOG",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1989_HEAVY_RAIN_WUHE"],
+      "cluster_outcome": "EC103_光路预案验证",
+      "next_event_hook": "‘今日健康备忘录’手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款，迫使奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 205,
+          "timeline_start": "1989-07-15T19:00:00",
+          "timeline_end": "1989-07-15T20:30:00",
+          "scene": "雾河城体育馆后台及模拟测试区",
+          "chapter_goal": "完成暴雨环境下的备用光路压力测试，验证七套机械切换预案的可靠性。",
+          "chapter_title": "第205章：暴雨前的校准书",
+          "participants": ["麦珂", "瑟琳娜", "莉薇娅", "玛莎", "奥瑞恩观察员"],
+          "opening_conflict": "奥瑞恩观察员质疑瑟琳娜私自更换光学组件的合法性，要求暂停测试。",
+          "info_gap_use": "麦珂利用重生记忆，提前知晓暴雨将导致主光路透镜结露失效，故坚持使用独立封装的备用透镜组。",
+          "opponent_reaction": "奥瑞恩观察员试图以‘未经报备的设备变更’为由阻挠，被麦珂出示的手签校准证书驳回。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "体育馆后台模拟雨淋间",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "雨水模拟装置启动"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_205_CALIBRATION_CERT",
+              "timeline_scope": "current",
+              "display_name": "光学透镜独立校准证书（手签版）",
+              "kind": "document"
+            },
+            {
+              "artifact_id": "ART_205_TEST_LOG",
+              "timeline_scope": "current",
+              "display_name": "备用光路切换测试原始日志",
+              "kind": "record"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂命令瑟琳娜将封装好的光学透镜安装至备用光路系统，并现场宣读机械校准证书上的关键参数。",
+            "莉薇娅与玛莎作为见证人，在纸质日志上按手印确认测试流程合规。",
+            "模拟暴雨启动，主光路瞬间失焦，备用光路在0.5秒内自动切换，画面清晰度反而提升。",
+            "奥瑞恩观察员试图记录‘异常’，却被瑟琳娜展示的实时数据流证明这是预设的最优解。"
+          ],
+          "visible_payoff": "备用光路在极端模拟环境下完美运行，画面清晰度优于正常状态，测试数据被全员见证。",
+          "ending": "测试结束，麦珂宣布明日正式演出将启用该预案，奥瑞恩观察员被迫签字确认测试结果。",
+          "must_include": ["光学透镜封装细节", "0.5秒切换时间", "手签校准证书展示"],
+          "must_not_include": ["手机通讯", "互联网数据上传", "现代电子签名"],
+          "detailed_synopsis": "1989年7月15日傍晚，雾河城体育馆后台，空气中弥漫着潮湿的水汽。麦珂站在模拟雨淋间中央，目光如炬地盯着瑟琳娜手中的光学透镜组。这组透镜在三个月前就被她亲手封存，附带着由瑟琳娜亲笔签署、玛莎按印的机械校准证书，明确标注了其在低温高湿环境下的最佳焦距参数。奥瑞恩的观察员雷纳德·索恩在一旁冷嘲热讽，声称擅自更换核心部件是违规操作，试图叫停测试。麦珂没有争辩，只是平静地展开那张泛黄的证书，朗读了上面的每一个数据点，随后示意莉薇娅和玛莎在纸质日志上按下手印。随着模拟暴雨装置轰鸣启动，水珠如注般砸向穹顶，主光路系统果然如前世记忆中那样迅速结露失焦，整个舞台陷入一片模糊。然而，就在这一瞬间，瑟琳娜手指轻拨机械拉杆，七套备用光路中的第三套在0.5秒内精准切入，原本昏暗的舞台瞬间被清晰锐利的声压可视化影像点亮，甚至比晴天时更加震撼。雷纳德目瞪口呆地看着实时数据流——那是瑟琳娜用老式记录仪手动绘制的曲线，清晰地证明了这次切换并非故障，而是经过精密计算的胜利。他试图抢过日志撕毁，却被麦珂一把按住手腕，冷冷地说道：“现在，全世界都看到了什么是真正的‘设备老化’。”"
+        },
+        {
+          "chapter_id": 206,
+          "timeline_start": "1989-07-16T20:00:00",
+          "timeline_end": "1989-07-16T22:30:00",
+          "scene": "雾河城体育馆正式演出舞台",
+          "chapter_goal": "在真实暴雨中验证预案，粉碎奥瑞恩关于‘不可抗力’的推责谎言。",
+          "chapter_title": "第206章：零中断的暴雨夜",
+          "participants": ["麦珂", "瑟琳娜", "雷纳德·索恩", "三百二十七名观众", "莉薇娅"],
+          "opening_conflict": "真实暴雨降临，奥瑞恩技术总监雷纳德·索恩企图以‘天气不可抗力’为由宣布演出暂停或降级，并指责麦珂团队强行冒险。",
+          "info_gap_use": "麦珂利用前世预知的暴雨强度数据，提前启动了七套备用光路预案，并在现场部署了实时数据记录仪。",
+          "opponent_reaction": "雷纳德·索恩在暴雨中狼狈不堪，试图撕扯现场线缆，并大声咆哮称设备故障是必然，以此转移责任。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "雾河城体育馆舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "雷声大作，灯光骤暗后复明"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_205_CALIBRATION_CERT",
+              "timeline_scope": "current",
+              "purpose": "作为法庭级证据展示，证明设备状态良好"
+            },
+            {
+              "artifact_id": "ART_205_TEST_LOG",
+              "timeline_scope": "current",
+              "purpose": "对比昨日测试数据与今夜实时数据，证明预案有效性"
+            }
+          ],
+          "action_sequence": [
+            "暴雨倾盆而下，场馆外雷声滚滚，奥瑞恩技术总监雷纳德·索恩冲上舞台，指着失焦的主镜头大喊‘不可抗力’，要求立即停止演出。",
+            "麦珂镇定自若地站在控制台前，示意瑟琳娜启动备用光路，七套机械结构在毫秒间完成切换，舞台画面瞬间恢复清晰，声压可视化效果在雨幕中呈现出前所未有的层次感。",
+            "雷纳德·索恩恼羞成怒，试图冲向控制台拔掉备用电源插头，被保安拦下。",
+            "莉薇娅举起昨夜签署的校准证书和今日的实时数据日志，向全场观众和随行记者高声宣读，证明一切尽在掌控。",
+            "观众席中手持编号卡的粉丝齐声欢呼，形成一道人墙，将试图破坏设备的奥瑞恩人员隔绝在外。"
+          ],
+          "visible_payoff": "演出在暴雨中零中断进行，瑟琳娜的名字首次出现在官方安全协议的现场署名板上，奥瑞恩的推责谎言被实时数据彻底证伪。",
+          "ending": "演出圆满结束，雷纳德·索恩因扰乱公共秩序被带走调查，奥瑞恩技术团队信誉扫地。",
+          "must_include": ["真实暴雨场景", "七套光路切换", "瑟琳娜名字上署名板", "实时数据流展示"],
+          "must_not_include": ["网络直播", "社交媒体传播", "手机录音"],
+          "detailed_synopsis": "1989年7月16日晚，雾河城迎来十年不遇的暴雨。雷声撕裂夜空，雨水如瀑布般冲刷着体育馆的穹顶。奥瑞恩技术总监雷纳德·索恩满脸雨水，冲上舞台，指着正在缓慢失焦的主光路系统，歇斯底里地大喊：“看！这就是天意！设备已经老化，必须立刻停止演出！”他试图煽动观众恐慌，声称麦珂是在拿生命开玩笑。然而，麦珂没有丝毫慌乱，她站在控制台前，眼神坚定地对瑟琳娜点了点头。刹那间，七套备用光路机械结构发出轻微的咔哒声，如同精密的钟表齿轮咬合，主光路在0.5秒内被完全取代。原本模糊的舞台瞬间被清晰锐利的声压可视化影像填满，那些在雨幕中跳跃的光影比平时更加灵动，仿佛在与暴雨共舞。雷纳德·索恩惊呆了，他试图冲过去拔掉备用电源，却被两名保安死死拦住。此时，莉薇娅高举着昨夜签署的校准证书和今日的实时数据日志，声音穿透雨声传遍全场：“各位观众，这不是故障，这是预案！我们的设备状态完美，切换时间仅0.5秒！”她指向舞台侧面的署名板，上面赫然写着“技术合伙人：瑟琳娜”的字样。观众席中，三百二十七名手持编号卡的粉丝齐声高呼，形成一道坚不可摧的人墙，将试图破坏现场的奥瑞恩人员隔绝在外。雷纳德·索恩看着眼前这一幕，终于明白自己彻底输了。他瘫坐在地上，任由雨水打湿全身，而麦珂则微笑着向观众致意，确立了极端天气下零中断演出的新标准。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1989",
+    "character_states": [
+      {
+        "character_id": "ID_CHAR_MCKE",
+        "state": "established_industry_standard_setter",
+        "description": "麦珂已确立全球巡演新标准，手持手签版‘今日健康备忘录’，获得法律层面的医疗决策权。"
+      },
+      {
+        "character_id": "ID_CHAR_SELENA",
+        "state": "public_technical_partnership",
+        "description": "瑟琳娜成为公开的技术合伙人，名字首次出现在官方安全协议上，摆脱幕后身份。"
+      },
+      {
+        "character_id": "ID_CHAR_LIVIA",
+        "state": "emergency_response_authority",
+        "description": "莉薇娅确立‘三方签字急救启动令’执行者地位，为后续出任首席医疗官奠定法理基础。"
+      },
+      {
+        "character_id": "ID_CHAR_SOPHIA",
+        "state": "evidence_collector",
+        "description": "苏菲亚绘制完成‘敌情图谱’手绘卷轴，标注一百二十七名奥瑞恩核心造假人员，掌握关键物证。"
+      },
+      {
+        "character_id": "ID_CHAR_MARSHA",
+        "state": "health_memorandum_signer",
+        "description": "玛莎晋升为‘健康备忘录联合签署人’，其手签具有法律效力，直接对抗外部医疗干预。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "relationship": "麦珂与团队",
+        "status": "利益共同体",
+        "description": "麦珂与团队形成紧密的利益共同体，共同制定行业标准。"
+      },
+      {
+        "relationship": "奥瑞恩集团与艺人",
+        "status": "权力剥离",
+        "description": "奥瑞恩集团被剥离对艺人的单方面解释权，技术团队信誉破产。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset_id": "RIGHT_VL_012",
+        "status": "exclusive_usage_rights",
+        "description": "获得‘随机座次’系统的独家使用权及‘健康备忘录’的全球推广权。"
+      },
+      {
+        "asset_id": "ASSET_206_EVIDENCE",
+        "status": "physical_source_locked",
+        "description": "掌握奥瑞恩伪造文件的物理源头证据，包括校准证书和实时数据日志。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "health_status": "standardized_emergency_mechanism",
+        "description": "建立标准化的急救响应机制，消除因延误导致的潜在健康隐患。"
+      },
+      {
+        "location_status": "wuhe_city_perfect_performance",
+        "description": "雾河城演出在极端天气下零中断，验证了备用光路预案的成功。"
+      }
+    ],
+    "open_threads": [
+      "奥瑞恩集团转向更隐蔽的财务做空手段",
+      "1991年《家庭治理宪章》医疗章节细化条款的制定",
+      "'初声基金'评审制度改革风暴的酝酿"
+    ],
+    "resolved_threads": [
+      "奥瑞恩利用‘健康风险’和‘粉丝安全’实施隐性分级隔离的计划",
+      "奥瑞恩试图通过‘设备故障’借口嫁祸麦珂团队的阴谋",
+      "前世因技术故障导致的舆论反噬风险"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "‘今日健康备忘录’手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款，迫使奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

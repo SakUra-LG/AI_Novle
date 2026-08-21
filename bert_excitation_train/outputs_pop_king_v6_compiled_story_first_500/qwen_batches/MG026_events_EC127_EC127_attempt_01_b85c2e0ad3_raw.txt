@@ -1,0 +1,199 @@
+{
+  "macro_group_id": "MG026",
+  "event_clusters": [
+    {
+      "cluster_id": "EC127",
+      "chapter_span": [253, 254],
+      "source_event_direction": "{\"cluster_id\": \"EC127\", \"chapter_span\": [253, 254], \"opposition_type\": \"ally_resistance\", \"event_type\": \"family_relationship\", \"solution_type\": \"relationship_choice\"}",
+      "source_event_direction_sha256": "a7f3c9e1b2d4f8a6c0e5b9d3f1a8c4e2b6d0f9a3c7e1b5d9f2a6c0e4b8d2f6a0",
+      "source_macro_sha256": "b8e4d0f2a6c1e5b9d3f7a1c5e9b3d7f1a5c9e3b7d1f5a9c3e7b1d5f9a3c7e1",
+      "name": "双轨信托与独立声明",
+      "timeline_years": "1991—1992",
+      "main_opponent": "奥瑞恩集团代理律师哈罗德·斯特林（Harold Sterling）",
+      "opposition_type": "ally_resistance",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["ART_245_WAVEFORM_VERIFICATION", "CIVIL_PARTNERSHIP_CERT_EC122"],
+      "foreshadow_ids": ["P07_FUND_NEXUS"],
+      "main_characters": ["麦珂", "瑟琳娜", "公证员埃文斯", "哈罗德·斯特林"],
+      "fictional_obstacle": "斯特林利用加州税务漏洞，试图将民事伴侣关系强行捆绑为“家庭联合申报”实体，以此冻结瑟琳娜的个人资产并迫使麦珂交出控制权。",
+      "prev_life_tragedy": "前世瑟琳娜因未签署独立协议，在资产冻结时被迫放弃职业选择权，依附麦珂生活，最终在听证会期间被奥瑞恩以“家庭共同债务”名义清算所有财产。",
+      "info_gap_from_prev_life": "重生记忆显示1992年税务重组窗口期仅剩两周，错过即面临资产合并风险；且知晓斯特林惯用的口头施压话术及加州民事伴侣法第14条的特定豁免条款。",
+      "why_previous_life_failed": "前世因过度信任法律程序的表面公平，未在婚前/伴侣登记前完成物理资产的隔离，导致资产在法律上被视为不可分割的整体。",
+      "preemptive_avoidance": "麦珂主动提出签署双轨信托协议，明确约定双方分立职业路径与退出自由条款，并提前将核心资产转移至瑞士与开曼群岛的物理金库。",
+      "bait_and_evidence": "斯特林抛出伪造的“家庭联合申报表”作为诱饵，试图让瑟琳娜签字；麦珂则亮出1991年加州《民事伴侣法》第14条原件，证明瑟琳娜拥有独立的纳税申报权。",
+      "comic_villain_behavior": "斯特林在公证处大声咆哮，声称瑟琳娜“背叛家庭”，甚至试图撕毁文件，结果因动作过大碰倒了墨水瓶，弄脏了自己昂贵的西装，显得狼狈不堪。",
+      "villain_loss": "奥瑞恩失去通过婚姻渗透控制麦珂资产的合法切入点，其代理人哈罗德·斯特林因违规操作被吊销部分执业资格，奥瑞恩被迫转入被动等待。",
+      "protagonist_gain": "麦珂与瑟琳娜完成民事伴侣登记，资产成功分割至瑞士与开曼群岛物理金库，彻底阻断保险与医疗利益链的合谋清算路径。",
+      "relationship_change": "瑟琳娜从“依附者”确立为“独立谈判者”，麦珂与瑟琳娜的信任度达到顶峰，两人形成真正的战略同盟。",
+          "continuity_writes": [
+            "麦珂在公证处当众宣读双轨信托条款，强调瑟琳娜的独立人格，打破传统家庭叙事。",
+            "斯特林试图引用旧法施压，被瑟琳娜当场引用新法驳回，引发公证员侧目。",
+            "资产转移指令通过电报发出，瑞士与开曼群岛的金库确认收到实物凭证。"
+          ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "ASSET_CONTROL_VL_025",
+          "state_key": "asset_freeze_status",
+          "from": "pending_merge_risk",
+          "to": "physically_isolated",
+          "irreversible": true,
+          "evidence": "TRUST_DEED_EC127_SWISS",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "legal",
+          "entity_id": "CIVIL_STATUS_VL_026",
+          "state_key": "partnership_independence",
+          "from": "dependent_joint_filing",
+          "to": "independent_tax_payer",
+          "irreversible": true,
+          "evidence": "CALIFORNIA_CPL_SEC14_CITATION",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "opponent",
+          "entity_id": "ORION_LAW_TEAM_VL_027",
+          "state_key": "control_strategy",
+          "from": "marital_leverage",
+          "to": "passive_waiting",
+          "irreversible": false,
+          "evidence": "STERNING_DISQUALIFIED_NOTES",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["1991_CALIFORNIA_CIVIL_PARTNERSHIP_ACT", "SWISS_BANKING_SECRET_1991"],
+      "cluster_outcome": "奥瑞恩集团‘音效污染论’彻底破产，维克多·兰斯转入隐蔽渗透阶段；麦珂与瑟琳娜完成民事伴侣登记及资产物理分散化，家庭防线加固；关键伏笔‘初声基金’早期捐赠票据影印权问题被意外触发，埋下金融战隐患。",
+      "next_event_hook": "民事伴侣身份带来的税务结构重组需求，迫使麦珂启动十年期家族资产梳理，意外发现奥瑞恩集团早在1983年就通过离岸壳公司收购了‘初声基金’早期捐赠票据的影印权——这一财务蛛丝将成为P07揭开纪录片背叛事件的关键索引，直接触发下一块的金融战。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 253,
+          "timeline_start": "1991年11月15日 上午 09:30",
+          "timeline_end": "1991年11月15日 中午 12:00",
+          "scene": "圣莫尼卡市公证处办公室",
+          "chapter_goal": "签署双轨信托协议并确立独立声明，拒绝斯特林的联合申报陷阱。",
+          "chapter_title": "无共同房产的誓言",
+          "participants": ["麦珂", "瑟琳娜", "公证员埃文斯", "哈罗德·斯特林"],
+          "opening_conflict": "斯特林带着伪造的“家庭联合申报表”闯入，要求瑟琳娜在签署前必须先同意合并资产申报，否则不予公证。",
+          "info_gap_use": "麦珂利用重生记忆，提前预判斯特林的施压策略，并在协议中预设了“无共同房产”条款，直接针对斯特林的软肋。",
+          "opponent_reaction": "斯特林暴怒，试图以“违反家庭伦理”为由威胁瑟琳娜，甚至大声喧哗引起周围人注意。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "圣莫尼卡市公证处办公室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林推门而入，手中挥舞着文件"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "TRUST_DEED_EC127_SWISS",
+              "timeline_scope": "current",
+              "display_name": "《双轨信托契约书（瑞士/开曼版）》",
+              "kind": "legal_contract"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "CIVIL_PARTNERSHIP_CERT_EC122",
+              "timeline_scope": "previous_life",
+              "purpose": "对比前世未签署协议的后果"
+            }
+          ],
+          "action_sequence": [
+            "斯特林强行递上联合申报表，要求瑟琳娜先签字。",
+            "瑟琳娜冷笑，拿出早已准备好的“无共同房产”声明，拒绝签字。",
+            "麦珂平静地展示双轨信托草案，指出斯特林引用的法律条款已过时。",
+            "斯特林情绪失控，打翻墨水瓶，弄脏西装，公证员埃文斯介入调解。"
+          ],
+          "visible_payoff": "瑟琳娜成功在协议中加入独立声明，斯特林的计划当场破产。",
+          "ending": "公证员埃文斯宣布协议签署有效，斯特林灰溜溜离开，留下满地狼藉。",
+          "must_include": ["无共同房产声明", "斯特林打翻墨水瓶", "公证员介入"],
+          "must_not_include": ["任何现代科技设备", "康拉德出场"],
+          "detailed_synopsis": "圣莫尼卡市公证处内，空气凝重。哈罗德·斯特林带着伪造的“家庭联合申报表”闯入，试图利用加州税务漏洞，要求瑟琳娜在签署双轨信托前先同意合并资产申报。他声称这是“家庭责任”，试图道德绑架瑟琳娜。然而，瑟琳娜早已看透这一切，她冷冷地推开那份文件，拿出了麦珂提前拟定的“无共同房产”独立声明。麦珂在一旁平静地展示双轨信托草案，指出斯特林引用的法律条款实际上是1989年的旧法，而1991年新法案已赋予民事伴侣独立的纳税申报权。斯特林恼羞成怒，大声咆哮称瑟琳娜“背叛家庭”，甚至试图撕毁文件。就在此时，他情绪激动地挥手，不慎碰倒了桌上的墨水瓶，深蓝色的墨水泼洒在他昂贵的定制西装上，瞬间晕染开来。公证员埃文斯见状，立即制止了斯特林的无理取闹，并宣布协议签署有效。斯特林狼狈不堪，只能灰溜溜地离开，留下满屋的狼藉和瑟琳娜坚定的眼神。"
+        },
+        {
+          "chapter_id": 254,
+          "timeline_start": "1991年11月15日 下午 14:00",
+          "timeline_end": "1991年11月15日 傍晚 17:30",
+          "scene": "洛杉矶国际机场私人停机坪 / 瑞士银行内部档案室（闪回）",
+          "chapter_goal": "完成资产物理隔离，确认双轨信托生效，阻断奥瑞恩的后续渗透。",
+          "chapter_title": "金库的钥匙",
+          "participants": ["麦珂", "瑟琳娜", "银行代表（电话连线）", "斯特林（远程监控）"],
+          "opening_conflict": "斯特林试图通过电话向奥瑞恩总部汇报失败，并策划下一步的“家庭联合申报”诉讼，但麦珂已切断所有联系。",
+          "info_gap_use": "麦珂利用重生记忆，知道斯特林会在下午两点半左右再次尝试施压，因此提前安排了资产转移的确认流程。",
+          "opponent_reaction": "斯特林在电话中气急败坏，扬言要起诉瑟琳娜“恶意逃税”，但被麦珂直接挂断。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "洛杉矶国际机场私人停机坪",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林的电话铃声响起"
+            },
+            {
+              "sequence": 2,
+              "location": "瑞士银行内部档案室",
+              "is_primary": false,
+              "temporal_mode": "flashback",
+              "transition_cue": "麦珂回忆前世资产冻结的场景"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "TRUST_DEED_EC127_SWISS",
+              "timeline_scope": "current",
+              "purpose": "确认资产转移生效"
+            }
+          ],
+          "action_sequence": [
+            "斯特林打电话给奥瑞恩总部，汇报公证处的失败，并请求授权发起诉讼。",
+            "麦珂接到斯特林电话，冷静地告知他双轨信托已生效，任何诉讼都将无效。",
+            "瑟琳娜在停机坪上，看着飞机起飞，心中默念前世未能实现的独立梦想。",
+            "麦珂通过电报向瑞士银行发送最终确认指令，资产正式进入物理金库。"
+          ],
+          "visible_payoff": "双轨信托契约已生效，任何单一实体无法再冻结麦珂全部资产。",
+          "ending": "麦珂与瑟琳娜站在停机坪上，看着飞机远去，两人相视一笑，未来的道路更加清晰。",
+          "must_include": ["斯特林电话施压失败", "资产确认指令发出", "瑟琳娜的心理转变"],
+          "must_not_include": ["任何现代科技设备", "康拉德出场"],
+          "detailed_synopsis": "下午两点半，斯特林的电话如期而至。他在电话那头气急败坏地向奥瑞恩总部汇报公证处的失败，并请求授权发起“恶意逃税”诉讼。然而，麦珂早已预料到这一步，他冷静地对着电话说道：“双轨信托契约已生效，任何诉讼都将无效。”斯特林愣住了，随即疯狂地叫嚣，但麦珂直接挂断了电话。与此同时，瑟琳娜站在洛杉矶国际机场的私人停机坪上，看着即将起飞的飞机，心中涌起一股前所未有的自由感。她想起了前世，那个因为未签署独立协议而被迫放弃职业选择、依附麦珂生活的自己。如今，一切都不一样了。麦珂通过电报向瑞士银行发送了最终的确认指令，资产正式进入物理金库，任何单一实体都无法再冻结他们的全部资产。瑟琳娜深吸一口气，转头看向麦珂，两人相视一笑。未来的道路虽然充满挑战，但他们已经做好了准备。斯特林的阴谋彻底破产，奥瑞恩集团失去了通过婚姻渗透控制麦珂资产的合法切入点，只能转入被动等待。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1991",
+    "character_states": [
+      {"character": "麦珂", "state": "资产物理隔离完成，双轨信托生效"},
+      {"character": "瑟琳娜", "state": "确立独立谈判地位，职业选择权恢复"},
+      {"character": "斯特林", "state": "执业资格受损，奥瑞恩代理人转为被动"}
+    ],
+    "relationship_states": [
+      {"relationship": "麦珂 & 瑟琳娜", "state": "战略同盟，信任度顶峰，独立伴侣关系确立"}
+    ],
+    "rights_and_assets": [
+      {"entity": "双轨信托", "status": "已生效，资产分割至瑞士与开曼群岛物理金库"},
+      {"entity": "家庭联合申报", "status": "被驳回，奥瑞恩失去合法切入点"}
+    ],
+    "health_and_location": [
+      {"entity": "麦珂", "location": "洛杉矶国际机场"},
+      {"entity": "瑟琳娜", "location": "洛杉矶国际机场"}
+    ],
+    "open_threads": [
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）",
+      "奥瑞恩集团转向更隐蔽的财务做空手段"
+    ],
+    "resolved_threads": [
+      "资产冻结风险解除",
+      "瑟琳娜职业选择权恢复"
+    ],
+    "introduced_characters": [
+      "哈罗德·斯特林（奥瑞恩代理律师）"
+    ],
+    "next_pressure": "民事伴侣身份带来的税务结构重组需求，迫使麦珂启动十年期家族资产梳理，意外发现奥瑞恩集团早在1983年就通过离岸壳公司收购了‘初声基金’早期捐赠票据的影印权——这一财务蛛丝将成为P07揭开纪录片背叛事件的关键索引，直接触发下一块的金融战。"
+  }
+}

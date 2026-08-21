@@ -1,0 +1,39 @@
+{
+  "cluster_id": "EC006",
+  "chapter_id": 12,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "37255ad5cfdb0ff1c92cb36604351787358b378f6cb8e00f09fdacc9895a0e69",
+  "raw_response_sha256": "d43172668562350450a1ddc153a68e3a351b080134bf276568ececf394c2e4e4",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 35.11,
+    "usage": {
+      "input_tokens": 6349,
+      "output_tokens": 1512,
+      "total_tokens": 7861,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "chapter_audit": {
+    "han_chars": 1460,
+    "total_chars": 1811,
+    "target_han_range": [
+      1300,
+      1800
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "failures": [
+      "1969年代出现未普及技术：手机"
+    ]
+  },
+  "failures": [
+    "1969年代出现未普及技术：手机"
+  ],
+  "accepted": false
+}

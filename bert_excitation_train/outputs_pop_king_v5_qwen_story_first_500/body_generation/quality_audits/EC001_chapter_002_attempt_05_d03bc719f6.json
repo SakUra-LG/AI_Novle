@@ -1,0 +1,39 @@
+{
+  "cluster_id": "EC001",
+  "chapter_id": 2,
+  "attempt": 5,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "d03bc719f6c6d7cf8793a416a2bb9e7885184e3c06f60066229ef9c3a863de0b",
+  "raw_response_sha256": "d37a9bcad810003cef0c72e13b2acdb5cf84ac003750d276bd53b524d70b1de7",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 35.006,
+    "usage": {
+      "input_tokens": 5320,
+      "output_tokens": 1617,
+      "total_tokens": 6937,
+      "prompt_tokens_details": {
+        "cached_tokens": 5248
+      }
+    }
+  },
+  "chapter_audit": {
+    "han_chars": 1588,
+    "total_chars": 1991,
+    "target_han_range": [
+      1300,
+      1800
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 4,
+    "failures": [
+      "重生章开头未明确让读者确认回到过去"
+    ]
+  },
+  "failures": [
+    "重生章开头未明确让读者确认回到过去"
+  ],
+  "accepted": false
+}

@@ -1,0 +1,56 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC011_EC012",
+  "identifier": "MG003",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "c562a1f15994eb7f2242bd8863d0c074fcae4b136c3524d17c79eb92ced88c4b",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-15T19:32:22+08:00",
+      "prompt_sha256": "c562a1f15994eb7f2242bd8863d0c074fcae4b136c3524d17c79eb92ced88c4b",
+      "raw_response_sha256": "9503d9c1e13bc172be5e28d150a6dc31789d3fbb9ad0b2493aed0daa3309f0b1",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG003_events_EC011_EC012_attempt_01_c562a1f159_raw.txt",
+      "validation_failures": [
+        "EC011.chapter22引用本事件尚未创建的artifact_id=ART_AUDIT_DOCS_001",
+        "EC012.causal_spine_ids必须来自当前宏观组锁定集合['CS01']，实际越界['FS01']",
+        "EC012.chapter24引用本事件尚未创建的artifact_id=ART_23_AUDIENCE_LOG"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 50.294,
+      "usage": {
+        "prompt_tokens": 16959,
+        "completion_tokens": 7020,
+        "total_tokens": 23979,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-15T19:33:05+08:00",
+      "prompt_sha256": "083994ad35bba151f542d5020505dc652e7a4d8fcc2ddb07ba4f10de5e86a002",
+      "raw_response_sha256": "d7ec2fae27baf9cc80a869038417a6391bc62feda4a5474e32222e4c7b728ce2",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG003_events_EC011_EC012_attempt_02_c562a1f159_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 42.785,
+      "usage": {
+        "prompt_tokens": 17099,
+        "completion_tokens": 6387,
+        "total_tokens": 23486,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

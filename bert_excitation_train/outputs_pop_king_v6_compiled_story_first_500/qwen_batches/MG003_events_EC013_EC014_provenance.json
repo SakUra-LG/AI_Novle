@@ -1,0 +1,77 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC013_EC014",
+  "identifier": "MG003",
+  "accepted_attempt": 3,
+  "base_prompt_sha256": "1388d8ff905ef5a6e168288537d7702585ac9551ae8707bd7b882f120677dfcc",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-15T19:34:47+08:00",
+      "prompt_sha256": "1388d8ff905ef5a6e168288537d7702585ac9551ae8707bd7b882f120677dfcc",
+      "raw_response_sha256": "db7e7377423974847f4012655348463e29861125ddd28d35c31e78303d35b635",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG003_events_EC013_EC014_attempt_01_1388d8ff90_raw.txt",
+      "validation_failures": [
+        "EC014.causal_spine_ids至少1项"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 49.239,
+      "usage": {
+        "prompt_tokens": 17804,
+        "completion_tokens": 6372,
+        "total_tokens": 24176,
+        "prompt_tokens_details": {
+          "cached_tokens": 8927
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-15T19:35:30+08:00",
+      "prompt_sha256": "dff6e522607230a943dadb5078632eeb065945b643e4adcba3be20e4ef0a8928",
+      "raw_response_sha256": "55c4535bee6b22e5726477b573cd3d1d803d6ac35b151671e599bd75376acc7c",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG003_events_EC013_EC014_attempt_02_1388d8ff90_raw.txt",
+      "validation_failures": [
+        "EC014.causal_spine_ids至少1项"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 43.422,
+      "usage": {
+        "prompt_tokens": 17875,
+        "completion_tokens": 6345,
+        "total_tokens": 24220,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-15T19:36:14+08:00",
+      "prompt_sha256": "d48d63e8ad23c2af6f556e15e4a5bd94832c38edfff7642459aa7abb591e705f",
+      "raw_response_sha256": "e42bfc3f8aa1a9c8468b08a43227dea94749c3f1a096a991dd4540d98e038f66",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG003_events_EC013_EC014_attempt_03_1388d8ff90_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 43.871,
+      "usage": {
+        "prompt_tokens": 17875,
+        "completion_tokens": 6333,
+        "total_tokens": 24208,
+        "prompt_tokens_details": {
+          "cached_tokens": 8962
+        }
+      }
+    }
+  ]
+}

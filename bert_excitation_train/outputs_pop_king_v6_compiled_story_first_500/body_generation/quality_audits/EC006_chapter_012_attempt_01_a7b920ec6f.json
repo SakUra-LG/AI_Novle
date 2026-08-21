@@ -1,0 +1,124 @@
+{
+  "cluster_id": "EC006",
+  "chapter_id": 12,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "a7b920ec6f396a5b4ae3d9366a37d7660d35df408a0992f959e096616288428c",
+  "base_prompt_sha256": "a7b920ec6f396a5b4ae3d9366a37d7660d35df408a0992f959e096616288428c",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "59d9433fe5ce65977d168cc9c3c276ae35e9e1047ad4dd30d62c0ff40ae804e1",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 19.66,
+    "usage": {
+      "prompt_tokens": 8261,
+      "completion_tokens": 1114,
+      "total_tokens": 9375,
+      "prompt_tokens_details": {
+        "cached_tokens": 4581
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 6,
+    "through_chapter": 12,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "40663e4d5acee6fff5ce6aec0301fddbef2773097013a4ea0d83ab654e8b5eb6",
+    "chapter_card_prefix_sha256": "82178f2d1a431b788bdb9918cb9aeeb4c88f4a95d13fc9b8ca9e0579c34bd7c0",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "6c761f2ae1afb385e638ef2b79f21891deff6a8a37b5a2a94b35e71d2ffbf7c4"
+  },
+  "cluster_sha256": "c1ce73b8d7d297046c846bc913f6c46afb4d410a517327ca05958f0185ee0001",
+  "card_sha256": "781ae90c11ed19e103512baaad60b8c0a799a7531fab5750d07e5a1d27c9ab50",
+  "chapter_audit": {
+    "han_chars": 1564,
+    "total_chars": 1801,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "温特律师出示备忘录",
+        "exact": false,
+        "bigram_coverage": 0.625,
+        "matched": true
+      },
+      {
+        "anchor": "乔纳被驳斥",
+        "exact": false,
+        "bigram_coverage": 0.25,
+        "matched": false
+      },
+      {
+        "anchor": "麦珂正式声明",
+        "exact": false,
+        "bigram_coverage": 0.2,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "trust_dynamic",
+        "target": "母子同盟+母亲独立核查+父亲被排除",
+        "evidence_terms": [
+          "玛莎当众撕毁协议",
+          "并宣读家庭会议记"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "self_definition_rights__extension_EC006",
+        "target": "拥有自我定义权+独立生活空间确认",
+        "evidence_terms": [
+          "温特律师出具监护",
+          "备忘录副本"
+        ],
+        "hit_terms": [
+          "备忘录副本"
+        ],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0408,
+    "scene_evidence": [
+      {
+        "location": "河湾镇温特律师事务所",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文没有兑现章卡关键事实“乔纳被驳斥”",
+      "正文没有兑现章卡关键事实“麦珂正式声明”",
+      "正文没有通过现场动作兑现状态转移trust_dynamic→母子同盟+母亲独立核查+父亲被排除",
+      "正文没有通过现场动作兑现状态转移self_definition_rights__extension_EC006→拥有自我定义权+独立生活空间确认"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“乔纳被驳斥”",
+      "正文没有兑现章卡关键事实“麦珂正式声明”",
+      "正文没有通过现场动作兑现状态转移trust_dynamic→母子同盟+母亲独立核查+父亲被排除",
+      "正文没有通过现场动作兑现状态转移self_definition_rights__extension_EC006→拥有自我定义权+独立生活空间确认"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

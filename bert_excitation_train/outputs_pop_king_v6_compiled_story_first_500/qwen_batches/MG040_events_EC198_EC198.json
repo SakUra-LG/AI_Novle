@@ -1,0 +1,295 @@
+{
+  "macro_group_id": "MG040",
+  "event_clusters": [
+    {
+      "cluster_id": "EC198",
+      "chapter_span": [
+        395,
+        396
+      ],
+      "source_event_direction": "前世具体受害：奥瑞恩集团利用‘终身艺能保障计划’诱导签署霸王条款，剥夺数据主权。；本事件独有的前世信息差：预知巴里·布鲁姆入职体检指纹特征及奥瑞恩内部数据污染时间表。；今生提前动作：提前布局提取半枚油渍指纹，并准备在签约前夜公开比对报告。；第395章可见小赢：媒体直播前夕，巴里·布鲁姆指纹档案被意外曝光，引发舆论关注。；第396章新交锋：麦珂当众展示半枚油渍指纹与巴里指纹的高度吻合比对结果。；阻力方永久现实损失：奥瑞恩集团被迫放弃强制签约，‘终身艺能保障计划’推广受阻。；主角现实收益：确立‘棱镜协议’法律文本定稿方向，保留全部医疗数据自主权。；不可逆结算键：半枚油渍指纹成为指向长期介入档案篡改的关键旁证，无法被销毁。；接回死亡控制主线：通过指纹证据揭露幕后黑手，打破对手对数据主权的垄断控制。",
+      "source_event_direction_sha256": "f3b9d1f10513631911f4802f2512747eb079999a4d5f32bc95e85eec54ac1b69",
+      "source_macro_sha256": "9334b2738a275f12d818c000d77cfbab640329a7ac976030342d37737a1c367d",
+      "name": "除夕夜指纹铁证：奥瑞恩集团数据主权崩塌",
+      "timeline_years": "1999-2000",
+      "main_opponent": "巴里·布鲁姆（Barry Bloom）",
+      "opposition_type": "institutional",
+      "event_type": "contract_rights",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS11"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "巴里·布鲁姆",
+        "托马斯",
+        "维克多·兰斯",
+        "玛莎",
+        "黛安娜",
+        "媒体记者团"
+      ],
+      "fictional_obstacle": "奥瑞恩集团试图在直播前销毁磁带外壳上的油渍指纹，并伪造巴里·布鲁姆的入职体检记录以切断证据链；同时利用“商业机密”条款威胁媒体不得播放比对报告。",
+      "prev_life_tragedy": "前世麦珂未察觉指纹线索，导致巴里·布鲁姆长期逍遥法外，奥瑞恩集团成功通过“终身艺能保障计划”窃取家庭医疗数据，玛莎被迫接受虚假治疗直至病情恶化。",
+      "info_gap_from_prev_life": "麦珂知晓巴里·布鲁姆1999年入职体检时习惯使用左手食指按印，且当时指纹油泥残留量异常高，导致其指纹极易在胶带或纸壳上留下半枚清晰印记。",
+      "why_previous_life_failed": "前世缺乏物理介质取证意识，过度依赖电子系统，导致关键物证被数字合成技术掩盖，无法在法庭上形成闭环。",
+      "preemptive_avoidance": "麦珂提前安排私家侦探在12月23日深夜潜入奥瑞恩档案室，从废弃的磁带包装盒中回收那枚带有油渍的指纹样本，并连夜送至具备1999年水准的司法鉴定中心进行显影和比对。",
+      "bait_and_evidence": "故意让巴里·布鲁姆在直播现场高调展示“完美无瑕”的电子病历，诱使其亲自触碰作为道具展示的原始磁带外壳，从而在紧张情绪下再次留下指纹痕迹，与之前提取的油渍指纹进行双重验证。",
+      "comic_villain_behavior": "巴里·布鲁姆在直播镜头前为了证明清白，强行要求当场按压指纹，结果因手汗过多导致指纹模糊，反而暴露了其指纹特征与油渍样本高度吻合的荒谬事实，引发全场哄笑和记者疯狂拍照。",
+      "villain_loss": "巴里·布鲁姆因伪造入职记录和试图销毁证据被联邦调查局（FBI）临时传唤，奥瑞恩集团被迫暂停“终身艺能保障计划”签约，声誉扫地，面临刑事调查风险。",
+      "protagonist_gain": "确立“棱镜协议”法律文本中关于“原始物理介质不可篡改”的绝对地位，保留全部医疗数据自主权，家庭铁三角彻底稳固，玛莎获得独立签署“初声基金”志愿者协议的资格。",
+      "relationship_change": "麦珂与家庭铁三角形成稳固的利益共同体；与奥瑞恩集团关系彻底破裂，进入公开对抗状态；医疗界开始质疑奥瑞恩集团的病历真实性。",
+      "continuity_writes": [
+        "1999年除夕夜，河湾镇诊所护士原话‘慢慢调’成为关键旁证，证实电子病历缺失沟通记录的造假行为。",
+        "S95-B-RW样带转录为CDR格式，声纹证据已归档，为2009年直播提供法定技术依据。",
+        "半枚油渍指纹经专业比对与巴里·布鲁姆指纹高度吻合，成为下一组因果链的关键旁证。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "MC_FAMILY_DATA_OWNERSHIP",
+          "state_key": "physical_evidence_status",
+          "from": "digital_synthesis_fraud",
+          "to": "physical_medium_verified",
+          "irreversible": true,
+          "evidence": "OILY_FINGERPRINT_MATCH_REPORT_ON_TAPE_CASE",
+          "effect_type": "protagonist_gain",
+          "source_domain": "legal_rights"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "BARRY_BLOOM_LEGAL_STANDING",
+          "state_key": "fraud_exposure_status",
+          "from": "active_concealment",
+          "to": "publicly_discredited",
+          "irreversible": true,
+          "evidence": "LIVE_COMPARISON_OF_FINGERPRINTS_ON_MEDIA",
+          "effect_type": "villain_loss",
+          "source_domain": "personnel_reputation"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "PRISM_PROTOCOL_LEGAL_STANDING",
+          "state_key": "physical_medium_clarity__extension_EC198",
+          "from": "none",
+          "to": "legally_enforced_physical_standard",
+          "irreversible": true,
+          "evidence": "PUBLIC_EXPOSURE_OF_OILY_FINGERPRINT_ANOMALY",
+          "effect_type": "world_state",
+          "source_domain": "legal_framework",
+          "source_state_key": "physical_medium_clarity"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1999_NEW_YEAR_EVE",
+        "HA_BARRE_BLOOM_HIRING_RECORD"
+      ],
+      "cluster_outcome": "麦珂在除夕夜直播中当众展示半枚油渍指纹与巴里·布鲁姆指纹的高度吻合比对结果，彻底粉碎奥瑞恩集团的数据垄断企图，迫使对方放弃强制签约，确立‘棱镜协议’法律文本定稿方向。",
+      "next_event_hook": "1999年除夕磁带外壳上的半枚油渍指纹经专业比对，证实与巴里·布鲁姆指纹吻合，该线索将直接触发P09（第401-420章）关于长期介入档案篡改的法务攻防战，迫使奥瑞恩集团从商业施压转向刑事层面的反制。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 395,
+          "timeline_start": "2001-12-30",
+          "timeline_end": "2001-12-30",
+          "scene": "河湾镇社区活动中心·舞台",
+          "chapter_goal": "在直播前夕意外曝光巴里·布鲁姆指纹档案，引发舆论关注，迫使对手露出马脚。",
+          "chapter_title": "除夕夜的意外访客",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "托马斯",
+            "黛安娜",
+            "媒体记者团"
+          ],
+          "opening_conflict": "奥瑞恩集团代表巴里·布鲁姆试图在直播前最后一刻销毁所有纸质档案，声称磁带外壳是“无关紧要的废弃物”，并威胁媒体停止报道。",
+          "info_gap_use": "麦珂利用前世记忆，知道巴里·布鲁姆入职体检时指纹油泥残留量异常高，因此提前布局提取了半枚油渍指纹，并诱导其在直播现场接触磁带外壳。",
+          "opponent_reaction": "巴里·布鲁姆惊慌失措，试图强行拿走磁带外壳，却被黛安娜用法律条文拦下，场面一度混乱。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇社区活动中心·舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "镜头推进至巴里·布鲁姆的手部特写"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_395_FINGERPRINT_ARCHIVE",
+              "timeline_scope": "current",
+              "display_name": "《巴里·布鲁姆入职指纹档案（泄露版）》",
+              "kind": "leaked_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_389_TIME_FOLD_INDEX",
+              "timeline_scope": "current",
+              "purpose": "引用时间褶皱索引中的指纹比对数据"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在直播开始前突然宣布将展示一份“特殊证据”，引起全场哗然。",
+            "巴里·布鲁姆试图阻止，但被现场安保人员拦住。",
+            "黛安娜当众宣读巴里·布鲁姆入职体检时的指纹记录，指出其与现场磁带外壳上的油渍指纹高度吻合。",
+            "记者们蜂拥而上，闪光灯此起彼伏，巴里·布鲁姆脸色苍白。"
+          ],
+          "visible_payoff": "巴里·布鲁姆的指纹档案被意外曝光，引发舆论关注，奥瑞恩集团陷入被动。",
+          "ending": "直播被迫中断十分钟，用于处理突发状况，巴里·布鲁姆在众目睽睽之下无法自圆其说。",
+          "must_include": [
+            "巴里·布鲁姆指纹档案曝光",
+            "媒体记者蜂拥而上",
+            "奥瑞恩集团陷入被动"
+          ],
+          "must_not_include": [
+            "康拉德出场",
+            "联邦调查局正式逮捕",
+            "玛莎病情恶化"
+          ],
+          "detailed_synopsis": "1999年12月24日晚，河湾镇社区活动中心灯火通明，除夕夜直播即将开始。奥瑞恩集团代表巴里·布鲁姆试图在最后时刻销毁所有纸质档案，声称磁带外壳是“无关紧要的废弃物”，并威胁媒体停止报道。然而，麦珂早已预料到这一举动，她利用前世记忆，知道巴里·布鲁姆入职体检时指纹油泥残留量异常高，因此提前布局提取了半枚油渍指纹，并诱导其在直播现场接触磁带外壳。就在巴里·布鲁姆准备强行拿走磁带外壳时，黛安娜用法律条文将其拦下，并当众宣读巴里·布鲁姆入职体检时的指纹记录，指出其与现场磁带外壳上的油渍指纹高度吻合。记者们蜂拥而上，闪光灯此起彼伏，巴里·布鲁姆脸色苍白，无法自圆其说。直播被迫中断十分钟，用于处理突发状况，奥瑞恩集团陷入被动。"
+        },
+        {
+          "chapter_id": 396,
+          "timeline_start": "2001-12-30",
+          "timeline_end": "2001-12-31",
+          "scene": "河湾镇社区活动中心·舞台",
+          "chapter_goal": "麦珂当众展示半枚油渍指纹与巴里·布鲁姆指纹的高度吻合比对结果，彻底粉碎奥瑞恩集团的数据垄断企图。",
+          "chapter_title": "指纹铁证：数据的终结",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "托马斯",
+            "维克多·兰斯",
+            "玛莎",
+            "黛安娜",
+            "媒体记者团"
+          ],
+          "opening_conflict": "巴里·布鲁姆试图以“商业机密”为由封锁消息，并指责麦珂伪造证据，要求立即停止直播。",
+          "info_gap_use": "麦珂利用前世对1999年数码扫描仪分辨率极限的了解，确保证据无法被后期数字合成，并展示了原始胶片转录的CDR格式波形图。",
+          "opponent_reaction": "巴里·布鲁姆在直播镜头前为了证明清白，强行要求当场按压指纹，结果因手汗过多导致指纹模糊，反而暴露了其指纹特征与油渍样本高度吻合的荒谬事实。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇社区活动中心·舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "大屏幕显示指纹比对结果"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_395_FINGERPRINT_ARCHIVE",
+              "timeline_scope": "current",
+              "purpose": "展示指纹比对结果"
+            },
+            {
+              "artifact_id": "ART_387_TRUST_ADDENDUM",
+              "timeline_scope": "current",
+              "purpose": "引用信托协议补充条款"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在大屏幕上展示半枚油渍指纹与巴里·布鲁姆指纹的高度吻合比对结果，引发全场震惊。",
+            "巴里·布鲁姆试图辩解，但被麦珂当场驳斥，指出其指纹特征与油渍样本高度吻合。",
+            "巴里·布鲁姆在直播镜头前为了证明清白，强行要求当场按压指纹，结果因手汗过多导致指纹模糊，反而暴露了其指纹特征与油渍样本高度吻合的荒谬事实。",
+            "媒体记者们疯狂拍照，奥瑞恩集团声誉扫地。"
+          ],
+          "visible_payoff": "麦珂当众展示半枚油渍指纹与巴里·布鲁姆指纹的高度吻合比对结果，彻底粉碎奥瑞恩集团的数据垄断企图。",
+          "ending": "奥瑞恩集团被迫放弃强制签约，‘终身艺能保障计划’推广受阻，麦珂确立‘棱镜协议’法律文本定稿方向。",
+          "must_include": [
+            "指纹比对结果展示",
+            "巴里·布鲁姆指纹模糊",
+            "奥瑞恩集团声誉扫地"
+          ],
+          "must_not_include": [
+            "康拉德出场",
+            "联邦调查局正式逮捕",
+            "玛莎病情恶化"
+          ],
+          "detailed_synopsis": "1999年12月25日凌晨，河湾镇社区活动中心内气氛紧张。巴里·布鲁姆试图以“商业机密”为由封锁消息，并指责麦珂伪造证据，要求立即停止直播。然而，麦珂早已做好准备，她利用前世对1999年数码扫描仪分辨率极限的了解，确保证据无法被后期数字合成，并展示了原始胶片转录的CDR格式波形图。在大屏幕上，半枚油渍指纹与巴里·布鲁姆指纹的高度吻合比对结果清晰可见，引发全场震惊。巴里·布鲁姆试图辩解，但被麦珂当场驳斥，指出其指纹特征与油渍样本高度吻合。为了证明清白，巴里·布鲁姆在直播镜头前强行要求当场按压指纹，结果因手汗过多导致指纹模糊，反而暴露了其指纹特征与油渍样本高度吻合的荒谬事实。媒体记者们疯狂拍照，奥瑞恩集团声誉扫地。最终，奥瑞恩集团被迫放弃强制签约，‘终身艺能保障计划’推广受阻，麦珂确立‘棱镜协议’法律文本定稿方向。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2000",
+    "character_states": [
+      {
+        "entity_id": "MCKEE",
+        "state_key": "data_sovereignty_status",
+        "value": "fully_protected",
+        "description": "麦珂成功保留全部医疗数据自主权，确立‘棱镜协议’法律文本定稿方向。"
+      },
+      {
+        "entity_id": "BARRY_BLOOM",
+        "state_key": "legal_standing_status",
+        "value": "under_investigation",
+        "description": "巴里·布鲁姆因伪造入职记录和试图销毁证据被联邦调查局（FBI）临时传唤。"
+      },
+      {
+        "entity_id": "ORION_CORP",
+        "state_key": "contract_status",
+        "value": "suspended",
+        "description": "奥瑞恩集团被迫暂停‘终身艺能保障计划’签约，声誉扫地。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_pair": [
+          "MCKEE",
+          "MC_FAMILY"
+        ],
+        "state_key": "trust_level",
+        "value": "iron_triad_formed",
+        "description": "麦珂与家庭铁三角形成稳固的利益共同体。"
+      },
+      {
+        "entity_pair": [
+          "MCKEE",
+          "ORION_CORP"
+        ],
+        "state_key": "conflict_level",
+        "value": "open_hostility",
+        "description": "麦珂与奥瑞恩集团关系彻底破裂，进入公开对抗状态。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "PRISM_PROTOCOL",
+        "state_key": "legal_standing",
+        "value": "physical_medium_standard_enforced",
+        "description": "确立‘棱镜协议’法律文本中关于‘原始物理介质不可篡改’的绝对地位。"
+      },
+      {
+        "entity_id": "MC_MEDICAL_DATA",
+        "state_key": "ownership_status",
+        "value": "fully_autonomous",
+        "description": "保留全部医疗数据自主权。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "MARSHA",
+        "state_key": "treatment_status",
+        "value": "scientific_management",
+        "description": "玛莎病情稳定，进入科学调理阶段，不再受虚假‘一键康复’误导。"
+      }
+    ],
+    "open_threads": [
+      "1999年除夕夜磁带外壳指纹的深入调查",
+      "2003年场馆铭牌‘脉搏可查，权限不代’的后续影响",
+      "巴里·布鲁姆长期介入档案篡改的法务攻防战"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团利用‘终身艺能保障计划’诱导签署霸王条款，剥夺数据主权。",
+      "托马斯伪造病历被医院伦理委员会停职审查。",
+      "维克多·兰斯意识到常规手段失效，被迫暂停‘数据污染’计划。"
+    ],
+    "introduced_characters": [
+      "无新角色引入，巴里·布鲁姆为已知反派"
+    ],
+    "next_pressure": "随着维克多势力收缩，联邦调查局介入，那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的‘数据污染’方案。"
+  }
+}

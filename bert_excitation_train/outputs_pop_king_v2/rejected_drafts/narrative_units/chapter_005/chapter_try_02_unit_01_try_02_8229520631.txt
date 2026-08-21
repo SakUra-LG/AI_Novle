@@ -1,0 +1,4 @@
+通义千问 API 出错: DashScope curl transport failed (28): curl: (28) Failed to connect to dashscope.aliyuncs.com:443 after 21048 ms: Could not connect to server
+
+--- UNIT FAILURES ---
+叙事单元模型调用失败或返回空文本。

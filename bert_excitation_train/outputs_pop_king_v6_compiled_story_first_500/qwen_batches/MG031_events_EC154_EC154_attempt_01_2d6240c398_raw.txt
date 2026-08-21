@@ -1,0 +1,200 @@
+{
+  "macro_group_id": "MG031",
+  "event_clusters": [
+    {
+      "cluster_id": "EC154",
+      "chapter_span": [307, 308],
+      "source_event_direction": "{\"cluster_id\": \"EC154\", \"chapter_span\": [307, 308], ...}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z6y5x4w3v2u1t0s9r8q7p6o5n4m3l2k1j0i9h8g7f6e5d4c3b2a1",
+      "name": "静默增益：被抹去的少年与真相的壁画",
+      "timeline_years": "1997-1998",
+      "main_opponent": "维克多·兰斯（伪装为奥瑞恩集团首席调查官）",
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["MC_307_Workshop_Boy_Reveal", "ART_299_PHYSICAL_TIMESTAMP_REPORT"],
+      "foreshadow_ids": ["S95-B-RW_Tape_Discovery"],
+      "main_characters": ["麦珂", "艾琳", "瑟琳娜", "康拉德（新设对手，原康拉德已修正）", "林远（1977年工坊少年）"],
+      "fictional_obstacle": "维拉德图书发布纪录片《失控天才》，将1979年授权书签署描述为麦珂神志不清下的草率行为，并刻意模糊处理了1977年工坊少年的身份，试图切断公众对早期创作环境的真实认知。",
+      "prev_life_tragedy": "前世1977年工坊少年因身份被模糊处理，未能成为核心证人，导致行业黑箱未被打破，麦珂在后续诉讼中缺乏关键旁证，最终被迫接受不平等条款。",
+      "info_gap_from_prev_life": "掌握1977年工坊少年林远的真实姓名、现居地（河湾镇老工业区）以及他在原版素材中被刻意隐藏的关键细节——墙面新涂装的时间点与麦珂签署监护权确认书的日期完全重合。",
+      "why_previous_life_failed": "前世麦珂未能在地图卡影像流中保留林远墙面的特写镜头，导致该线索在后期剪辑中被彻底抹去，无法形成证据链。",
+      "preemptive_avoidance": "麦珂在《静默增益》地图卡影像流的最终渲染版本中，特意保留了林远墙面新涂装的镜头，并在片尾字幕中以‘特别致谢’形式标注其真实姓名与地址，诱导媒体关注。",
+      "bait_and_evidence": "林远作为1977年工坊少年，其墙面涂装细节（特定颜料配方与笔触）是证明当时麦珂在场且状态清醒的唯一物理证据；林远本人作为目击者，揭露当年被压制的创作细节。",
+      "comic_villain_behavior": "维克多·兰斯在得知林远现身采访后，惊慌失措地命令团队连夜删除所有相关档案，却因操作失误将原始纸质记录混入垃圾堆，反而被记者当场发现并拍照曝光。",
+      "villain_loss": "维拉德图书因隐瞒关键证人信息而信誉扫地，被迫终止所有相关调查项目；维克多·兰斯的‘数据污染’计划因证据链断裂而陷入被动。",
+      "protagonist_gain": "1977年工坊少年林远成为公众焦点证人，连接过去与现在，打破行业垄断叙事；麦珂彻底粉碎‘失控天才’叙事，确立版权主导权。",
+      "relationship_change": "麦珂与艾琳建立深度的职业互信联盟；麦珂与瑟琳娜的家庭治理权重构进一步巩固，双方共同面对外部压力。",
+      "continuity_writes": ["修正前世康拉德的错误设定，将其替换为新设对手维克多·兰斯（1997年活跃），确保时间线逻辑自洽。", "林远作为关键证人，其身份从模糊背景板升级为公众焦点，推动剧情向技术取证战转型。", "《静默增益》地图卡影像流中的细节处理成为本事件的核心转折点，体现主角对前世信息的精准利用。"],
+      "state_transitions": [
+        {
+          "domain": "public_perception",
+          "entity_id": "PUBLIC_TRUST_MC_001",
+          "state_key": "narrative_control__breakthrough_EC154",
+          "from": "controlled_by_opponent",
+          "to": "publicly_verified_truth",
+          "irreversible": true,
+          "evidence": "LIN_YUAN_INTERVIEW_PUBLISHED_1997",
+          "effect_type": "protagonist_gain",
+          "source_domain": "media_narrative",
+          "source_state_key": "truth_verification"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "VILLARD_PUBLISHING_REPUTATION",
+          "state_key": "credibility_status__collapse_EC154",
+          "from": "trusted_source",
+          "to": "discredited_organization",
+          "irreversible": true,
+          "evidence": "ARCHIVE_MISMATCH_EXPOSED_1997",
+          "effect_type": "villain_loss",
+          "source_domain": "corporate_reputation",
+          "source_state_key": "integrity_level"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "MC_AIRIN_PARTNERSHIP",
+          "state_key": "professional_trust__deepened_EC154",
+          "from": "collaborative",
+          "to": "deep_mutual_trust",
+          "irreversible": false,
+          "evidence": "STRATEGIC_COOPERATION_IN_MEDIA_CAMPAIGN",
+          "effect_type": "relationship_change",
+          "source_domain": "professional_alliance",
+          "source_state_key": "trust_depth"
+        }
+      ],
+      "historical_anchor_ids": ["LIN_YUAN_WORKSHOP_1977", "MCAUTHORSHIP_CONFIRMATION_1979"],
+      "cluster_outcome": "通过林远的现身与证言，麦珂成功粉碎了奥瑞恩集团伪造的‘失控天才’叙事，将商业诉讼转化为公众对真相的围观审判。维拉德图书因隐瞒关键证人信息而信誉扫地，被迫终止所有相关调查项目。麦珂与艾琳的职业互信联盟进一步加深，为后续对抗维克多的医疗阴谋构建了更坚实的舆论基础。",
+      "next_event_hook": "随着林远证言的公开，维克多·兰斯意识到常规手段失效，开始酝酿隐蔽的数据污染方案，试图在世纪之交前彻底抹除所有原始介质，迫使麦珂必须从舆论战转向技术取证战，S95-B-RW废弃样带内的模拟录音将成为关键转折点。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 307,
+          "timeline_start": "1997年11月18日 上午",
+          "timeline_end": "1997年11月18日 傍晚",
+          "scene": "麦珂工作室 / 地方报纸编辑部",
+          "chapter_goal": "利用《静默增益》地图卡影像流中的隐藏细节，引爆公众对1977年工坊少年的关注。",
+          "chapter_title": "墙上的秘密：被遗忘的少年",
+          "participants": ["麦珂", "艾琳", "多家地方报纸编辑"],
+          "opening_conflict": "维拉德图书发布的纪录片引发舆论质疑，麦珂需在24小时内找到突破口。",
+          "info_gap_use": "麦珂提前在地图卡影像流中保留林远墙面新涂装的镜头，并标注其真实姓名与地址。",
+          "opponent_reaction": "维克多·兰斯得知消息后，立即命令团队删除相关档案，却因操作失误留下更多痕迹。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂工作室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "艾琳展示刚收到的读者来信，提及地图卡中墙面上的少年身影。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_307_MAP_CARD_ANOMALY",
+              "timeline_scope": "current",
+              "display_name": "《静默增益》地图卡异常帧分析报告",
+              "kind": "technical_report"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_299_PHYSICAL_TIMESTAMP_REPORT",
+              "timeline_scope": "current",
+              "purpose": "对比分析墙面涂装时间与麦珂签署监护权确认书的日期。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂指示艾琳将地图卡中林远墙面新涂装的镜头放大并制作成高清图片。",
+            "艾琳联系多家地方报纸，提供图片及林远的真实姓名与地址。",
+            "数百家地方报纸自发转载少年壁画照片，引发公众对过往黑箱的强烈关注。",
+            "维克多·兰斯试图删除相关档案，却因操作失误将原始纸质记录混入垃圾堆。"
+          ],
+          "visible_payoff": "数百家地方报纸自发转载少年壁画照片，引发公众对过往黑箱的强烈关注。",
+          "ending": "公众舆论开始转向，维拉德图书面临巨大压力。",
+          "must_include": ["地图卡影像流细节", "林远墙面新涂装", "地方报纸转载"],
+          "must_not_include": ["直接法律诉讼", "未来技术词汇"],
+          "detailed_synopsis": "1997年11月18日上午，麦珂在工作室与艾琳紧急商议对策。维拉德图书发布的纪录片指控麦珂在1979年签约时神志不清，试图剥夺其版权控制权。麦珂回忆起前世1977年工坊少年身份被模糊处理的悲剧，决定在今生提前布局。他指示艾琳将《静默增益》地图卡影像流中林远墙面新涂装的镜头放大并制作成高清图片，同时在片尾字幕中以‘特别致谢’形式标注林远的真实姓名与地址。艾琳迅速联系多家地方报纸，提供图片及林远的真实姓名与地址。数百家地方报纸自发转载少年壁画照片，引发公众对过往黑箱的强烈关注。维克多·兰斯得知消息后，立即命令团队删除相关档案，却因操作失误将原始纸质记录混入垃圾堆，反而被记者当场发现并拍照曝光。傍晚时分，公众舆论开始转向，维拉德图书面临巨大压力。"
+        },
+        {
+          "chapter_id": 308,
+          "timeline_start": "1997年11月19日 上午",
+          "timeline_end": "1997年11月19日 下午",
+          "scene": "河湾镇老工业区 / 电视台演播厅",
+          "chapter_goal": "林远现身接受采访，揭露当年被压制的创作细节，彻底瓦解行业黑箱。",
+          "chapter_title": "真相的证人：少年归来",
+          "participants": ["林远", "麦珂", "艾琳", "电视台主持人", "维克多·兰斯（远程）"],
+          "opening_conflict": "林远现身采访，但维拉德图书试图阻挠采访进行。",
+          "info_gap_use": "林远作为1977年工坊少年，其墙面涂装细节是证明当时麦珂在场且状态清醒的唯一物理证据。",
+          "opponent_reaction": "维克多·兰斯试图通过技术手段干扰采访信号，却被现场观众用手机直播打断。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇老工业区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "林远站在斑驳的墙面前，接受电视台主持人采访。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_307_MAP_CARD_ANOMALY",
+              "timeline_scope": "current",
+              "purpose": "作为林远证言的佐证材料。"
+            }
+          ],
+          "action_sequence": [
+            "林远在河湾镇老工业区接受电视台主持人采访，揭露当年被压制的创作细节。",
+            "麦珂在现场出示《静默增益》地图卡异常帧分析报告，证明墙面涂装时间与麦珂签署监护权确认书的日期完全重合。",
+            "维克多·兰斯试图通过技术手段干扰采访信号，却被现场观众用手机直播打断。",
+            "维拉德图书因隐瞒关键证人信息而信誉扫地，被迫终止所有相关调查项目。"
+          ],
+          "visible_payoff": "林远现身接受采访，揭露当年被压制的创作细节，彻底瓦解行业黑箱。",
+          "ending": "麦珂彻底粉碎了奥瑞恩集团伪造的‘失控天才’叙事，确立了版权主导权。",
+          "must_include": ["林远现身采访", "墙面涂装细节", "行业黑箱瓦解"],
+          "must_not_include": ["直接法律判决", "未来技术词汇"],
+          "detailed_synopsis": "1997年11月19日上午，林远现身河湾镇老工业区，接受电视台主持人采访。他站在斑驳的墙面前，揭露当年被压制的创作细节，指出墙面新涂装的时间点与麦珂签署监护权确认书的日期完全重合。麦珂在现场出示《静默增益》地图卡异常帧分析报告，作为林远证言的佐证材料，证明当时麦珂在场且状态清醒。维克多·兰斯试图通过技术手段干扰采访信号，却被现场观众用手机直播打断。维拉德图书因隐瞒关键证人信息而信誉扫地，被迫终止所有相关调查项目。下午，麦珂彻底粉碎了奥瑞恩集团伪造的‘失控天才’叙事，确立了版权主导权。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      "麦珂：体重、血压、肺活量三项连续四年无波动，维持最佳生理状态；版权主导权稳固，家庭治理权重构完成。",
+      "艾琳：与麦珂建立深度职业互信联盟，成为核心盟友。",
+      "瑟琳娜：与麦珂完成法律层面的家庭治理权重构，双方关系升级。",
+      "林远：从模糊背景板升级为公众焦点证人，连接过去与现在。",
+      "维克多·兰斯：意识到常规手段失效，开始酝酿隐蔽的数据污染方案。"
+    ],
+    "relationship_states": [
+      "麦珂与艾琳：从合作伙伴升级为深度互信联盟。",
+      "麦珂与瑟琳娜：从夫妻/合伙人升级为契约盟友，双方在家庭决策中拥有完全平等的法定地位。",
+      "麦珂与家族长辈：从服从转为平等对话但受法律约束。"
+    ],
+    "rights_and_assets": [
+      "收回全部版权控制，《静默增益》销量突破九十八万张，地图卡激活率提升至91.3%。",
+      "四十三处工坊实现盈亏平衡并转入自主运营。",
+      "维拉德图书因隐瞒关键证人信息而信誉扫地，被迫终止所有相关调查项目。"
+    ],
+    "health_and_location": [
+      "麦珂健康状况稳定，位于河湾镇工作室。",
+      "林远位于河湾镇老工业区，成为公众焦点。"
+    ],
+    "open_threads": [
+      "‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点",
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）仍需进一步调查",
+      "S95-B-RW废弃样带内的模拟录音将成为关键转折点"
+    ],
+    "resolved_threads": [
+      "1977年工坊少年身份被模糊处理的问题已解决",
+      "奥瑞恩集团伪造的‘失控天才’叙事已被粉碎"
+    ],
+    "introduced_characters": [
+      "林远（1977年工坊少年，新设关键证人）"
+    ],
+    "next_pressure": "随着林远证言的公开，维克多·兰斯意识到常规手段失效，开始酝酿隐蔽的数据污染方案，试图在世纪之交前彻底抹除所有原始介质，迫使麦珂必须从舆论战转向技术取证战，S95-B-RW废弃样带内的模拟录音将成为关键转折点。"
+  }
+}

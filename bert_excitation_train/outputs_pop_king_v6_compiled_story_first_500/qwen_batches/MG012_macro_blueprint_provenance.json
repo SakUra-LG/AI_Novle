@@ -1,0 +1,17 @@
+{
+  "generated_by": "vectorengine",
+  "generation_providers": [
+    "vectorengine"
+  ],
+  "kind": "macro_blueprint",
+  "identifier": "MG012",
+  "accepted_attempt": "batched_compile",
+  "acceptance_mode": "batched_macro_compile",
+  "component_provenance_files": [
+    "MG012_macro_core_provenance.json",
+    "MG012_macro_directions_EC056_EC060_provenance.json"
+  ],
+  "compiled_sha256": "f008e428994e10a183041432bed1baa137734327a61227fe8664aa34e275c419",
+  "manual_edits": [],
+  "created_at": "2026-08-15T17:30:15+08:00"
+}

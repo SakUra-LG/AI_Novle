@@ -1,0 +1,136 @@
+{
+  "cluster_id": "EC020",
+  "chapter_id": 40,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "7d99dbb6e54a49fa564d11555fcc1447c59150b10eea605adad309189fc1985b",
+  "base_prompt_sha256": "7d99dbb6e54a49fa564d11555fcc1447c59150b10eea605adad309189fc1985b",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "3f49f87e85d186d068ad7309e1c87ef0ba6689ea04cc76eb5eb89b4fe6071ab0",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 17.348,
+    "usage": {
+      "prompt_tokens": 10304,
+      "completion_tokens": 873,
+      "total_tokens": 11177,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 20,
+    "through_chapter": 40,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "3af7c57a927810013d475d806a96e385b644bf86ce6b7c223b0d90b1a0da1c60",
+    "chapter_card_prefix_sha256": "e40dfc7ec32afabfff88b6eca7fefcaddb684883fdee8d291176066856ca12ce",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "61c6f0d4b4e69fe247834b0c5a7133ea3fc127eb821cb83625c13ecf439a1617"
+  },
+  "cluster_sha256": "2068341436fe938b6045819f00dabac35b6537f0bf23061638f9bd7d87030503",
+  "card_sha256": "90b8fba21925b8da52f78c8d1b93613f8930bf3ce1eb7bb32771ac05042c508c",
+  "chapter_audit": {
+    "han_chars": 1229,
+    "total_chars": 1421,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "乔纳谣言被粉碎",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      },
+      {
+        "anchor": "奥瑞恩集团助理出现",
+        "exact": false,
+        "bigram_coverage": 0.625,
+        "matched": true
+      },
+      {
+        "anchor": "麦珂拒绝立即签约",
+        "exact": false,
+        "bigram_coverage": 0.286,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "copyright_status__independent_release_verified",
+        "target": "已验证独立发行权（市场流通中）",
+        "evidence_terms": [
+          "黛安娜宣读",
+          "独立发行备案书",
+          "及现场销售记录"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "industry_credibility__public_embarrassment",
+        "target": "信誉崩塌（公众嘲笑）",
+        "evidence_terms": [
+          "记者拍摄乔纳抢夺",
+          "传单及领带打结的",
+          "画面"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "market_position__independent_icon",
+        "target": "独立制作人（行业标杆）",
+        "evidence_terms": [
+          "首周销量突破及媒",
+          "体广泛报道"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0527,
+    "scene_evidence": [
+      {
+        "location": "银湾市奥瑞恩集团办事处外",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文没有兑现章卡关键事实“乔纳谣言被粉碎”",
+      "正文没有兑现章卡关键事实“麦珂拒绝立即签约”",
+      "正文没有通过现场动作兑现状态转移copyright_status__independent_release_verified→已验证独立发行权（市场流通中）",
+      "正文没有通过现场动作兑现状态转移industry_credibility__public_embarrassment→信誉崩塌（公众嘲笑）",
+      "正文没有通过现场动作兑现状态转移market_position__independent_icon→独立制作人（行业标杆）"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“乔纳谣言被粉碎”",
+      "正文没有兑现章卡关键事实“麦珂拒绝立即签约”",
+      "正文没有通过现场动作兑现状态转移copyright_status__independent_release_verified→已验证独立发行权（市场流通中）",
+      "正文没有通过现场动作兑现状态转移industry_credibility__public_embarrassment→信誉崩塌（公众嘲笑）",
+      "正文没有通过现场动作兑现状态转移market_position__independent_icon→独立制作人（行业标杆）"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

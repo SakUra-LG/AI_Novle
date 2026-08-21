@@ -1,0 +1,154 @@
+{
+  "cluster_id": "EC015",
+  "chapter_id": 30,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "b1957554ec18f2bd5422d2e8df3a9421ce4f8d95f967fb871a0baba9ccde3ae2",
+  "base_prompt_sha256": "b1957554ec18f2bd5422d2e8df3a9421ce4f8d95f967fb871a0baba9ccde3ae2",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "ccd85070d46c5001c02d6e3886f2951c82f9fe43be083b86c63103b5ef966a84",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 19.272,
+    "usage": {
+      "prompt_tokens": 10120,
+      "completion_tokens": 882,
+      "total_tokens": 11002,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 15,
+    "through_chapter": 30,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "dea9afa21205bb9acdbd8c5e1f48f660899a2be8e95ebec8722904443dccb075",
+    "chapter_card_prefix_sha256": "7d1814df21dd950c97884a4283aaaa6da36ee3866c20d09d881ac3b338eddfb5",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "1c1def6737bb32bdef243f4b23d258a7a38d75712fb75adf0c5216671a91e18c"
+  },
+  "cluster_sha256": "2938fb74cc78411281d17d6b2d3670a4a414e31cc65e7c88c613715456e7b800",
+  "card_sha256": "d5377adf172e0c6adcccde6c5df3e34b8ec7dac7411876d2f9e99e0ec3bd2c9b",
+  "chapter_audit": {
+    "han_chars": 1218,
+    "total_chars": 1422,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "麦珂展示证据的环节",
+        "exact": false,
+        "bigram_coverage": 0.125,
+        "matched": false
+      },
+      {
+        "anchor": "乔纳被联邦调查局带走的场景",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "麦珂宣布独立发行的声明",
+        "exact": false,
+        "bigram_coverage": 0.6,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "employment_status__financial_control__extension_EC015",
+        "target": "丧失财政控制权并被调查",
+        "evidence_terms": [
+          "记者拍摄乔纳撕毁",
+          "合同并试图藏匿税",
+          "务文件的画面"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "master_recording_ownership__extension_EC015",
+        "target": "完全归麦珂所有",
+        "evidence_terms": [
+          "温特律师出示公证",
+          "过的母带所有权协",
+          "议及现场录音"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "industry_credibility__extension_EC015",
+        "target": "独立制作人（行业标杆）",
+        "evidence_terms": [
+          "银湾市日报",
+          "头版报道及公众自",
+          "发支持"
+        ],
+        "hit_terms": [
+          "银湾市日报"
+        ],
+        "matched": false
+      },
+      {
+        "state_key": "trust_dynamic__extension_EC015",
+        "target": "铁三角稳固，父亲被彻底隔离",
+        "evidence_terms": [
+          "玛莎当众斥责乔纳",
+          "并支持麦珂的独立",
+          "决定"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0344,
+    "scene_evidence": [
+      {
+        "location": "银湾市街头新闻发布会",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.034，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“麦珂展示证据的环节”",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control__extension_EC015→丧失财政控制权并被调查",
+      "正文没有通过现场动作兑现状态转移master_recording_ownership__extension_EC015→完全归麦珂所有",
+      "正文没有通过现场动作兑现状态转移industry_credibility__extension_EC015→独立制作人（行业标杆）",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__extension_EC015→铁三角稳固，父亲被彻底隔离",
+      "正文未落到规划场景“银湾市街头新闻发布会”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.034，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“麦珂展示证据的环节”",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control__extension_EC015→丧失财政控制权并被调查",
+      "正文没有通过现场动作兑现状态转移master_recording_ownership__extension_EC015→完全归麦珂所有",
+      "正文没有通过现场动作兑现状态转移industry_credibility__extension_EC015→独立制作人（行业标杆）",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__extension_EC015→铁三角稳固，父亲被彻底隔离",
+      "正文未落到规划场景“银湾市街头新闻发布会”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

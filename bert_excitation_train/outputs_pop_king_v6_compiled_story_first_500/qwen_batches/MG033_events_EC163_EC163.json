@@ -1,0 +1,274 @@
+{
+  "macro_group_id": "MG033",
+  "event_clusters": [
+    {
+      "cluster_id": "EC163",
+      "chapter_span": [
+        325,
+        326
+      ],
+      "source_event_direction": "前世具体受害：奥瑞恩利用虚假文件垄断版权，迫使麦珂放弃收益并陷入债务危机。；本事件独有的前世信息差：1979年庭审录像带及七位见证人签字簿的具体物理位置已被锁定。；今生提前动作：麦珂联合瑟琳娜·凯德起草《教育共治备忘录》，将公益闭环逻辑写入合同条款。；第325章可见小赢：《静默增益》地图卡预售量突破百万，资金直接注入儿科音乐疗愈计划。；第326章新交锋：卡尔团队试图冻结账户，却发现资金流向已通过法律程序受到第三方监管保护。；阻力方永久现实损失：奥瑞恩集团股价微跌，卡尔团队被迫暂停所有针对麦珂的负面商业操作。；主角现实收益：麦珂彻底夺回版权控制权，实现商业利益与公益目标的双重闭环。；不可逆结算键：公益闭环资金链确立；接回死亡控制主线：阻断前世因财务封锁导致的生存资源枯竭。",
+      "source_event_direction_sha256": "d3869f57946d790333bf69bb98fee3a5a34088629495a3e68b0fdd0462232142",
+      "source_macro_sha256": "1f6038792e411a4b455ba8d4732271c0e0246c60859856a94d813d5bea6dc1d5",
+      "name": "静默增益：资金闭环与法律铁证",
+      "timeline_years": "1995—1996",
+      "main_opponent": "卡尔团队（代表奥瑞恩集团），新设反派：维克多·兰斯（幕后策划者）",
+      "opposition_type": "institutional",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS04"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜·凯德",
+        "艾琳·沃特曼",
+        "卡尔",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "奥瑞恩集团试图通过切断资金流和伪造医疗记录来瓦解麦珂的公益计划，同时利用剪辑版录像带抹黑其监护人资格。",
+      "prev_life_tragedy": "前世奥瑞恩利用虚假文件垄断版权，迫使麦珂放弃收益并陷入债务危机，最终导致生存资源枯竭。",
+      "info_gap_from_prev_life": "1979年庭审录像带及七位见证人签字簿的具体物理位置已被锁定；知晓昆廷手写笔记复写件藏在旧录音棚地板下的秘密格子里。",
+      "why_previous_life_failed": "前世麦珂缺乏对历史物证物理位置的精确掌握，且未提前构建资金隔离机制，导致被对方以财务封锁手段击垮。",
+      "preemptive_avoidance": "麦珂联合瑟琳娜·凯德起草《教育共治备忘录》，将公益闭环逻辑写入合同条款，并提前将资金注入第三方监管账户。",
+      "bait_and_evidence": "卡尔团队抛出剪辑版录像带作为诱饵，企图引发舆论风暴；麦珂则展示原始未剪辑长镜头、证人亲笔签名簿以及昆廷导演的手写调度笔记作为反击铁证。",
+      "comic_villain_behavior": "卡尔在听证会上强行要求播放剪辑版，却因技术故障导致画面卡顿，反而暴露了帧率参数与原始设备不符的破绽，显得滑稽而慌乱。",
+      "villain_loss": "奥瑞恩集团股价微跌，卡尔团队被迫暂停所有针对麦珂的负面商业操作，伪造证据丑闻初现端倪。",
+      "protagonist_gain": "麦珂彻底夺回版权控制权，实现商业利益与公益目标的双重闭环，《静默增益》地图卡预售量突破百万。",
+      "relationship_change": "维克多·兰斯在幕后观察中注意到麦珂对旧物的掌控力，开始怀疑常规手段无效，准备启动更隐蔽的数据污染计划。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_019",
+          "state_key": "copyright_control_EC163",
+          "from": "distorted_media_manipulation",
+          "to": "physically_verified_history",
+          "irreversible": true,
+          "evidence": "ORIGINAL_TAPE_NOV_17_1979",
+          "effect_type": "protagonist_gain",
+          "source_domain": "legal"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "CORP_AUREON_001",
+          "state_key": "market_credibility__extension_EC163",
+          "from": "stable",
+          "to": "damaged_initial",
+          "irreversible": false,
+          "evidence": "CLIPPED_TAPE_FAILURE_EC163",
+          "effect_type": "villain_loss",
+          "source_domain": "market"
+        }
+      ],
+      "historical_anchor_ids": [
+        "COURT_TAPES_1979_NOV_17",
+        "WITNESS_SIGN_BOOK_1979"
+      ],
+      "cluster_outcome": "麦珂成功利用1979年核心物证确立了《静默增益》地图卡的不可篡改性，资金闭环正式形成，奥瑞恩集团的正面攻势暂时受挫。",
+      "next_event_hook": "随着1979年真相的揭开，奥瑞恩集团决定不再正面硬刚，转而利用维克多·兰斯的建议，着手策划针对麦珂健康数据的‘数据污染’方案，试图通过伪造医疗记录来动摇其公众形象，而那盒被漏掉的S95-B-RW样带将成为下一阶段揭穿世纪转换期医疗模型造假的关键钥匙。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 325,
+          "timeline_start": "1997-12-16",
+          "timeline_end": "1997-12-16",
+          "scene": "河湾镇法院档案室B区",
+          "chapter_goal": "获取1979年原始物证并启动资金闭环",
+          "chapter_title": "沉默的磁带与百万预售",
+          "participants": [
+            "麦珂",
+            "瑟琳娜·凯德",
+            "公证员",
+            "艾琳·沃特曼"
+          ],
+          "opening_conflict": "麦珂需在奥瑞恩发现前取回被误认为丢失的原始磁带，同时确保《静默增益》地图卡预售顺利推进。",
+          "info_gap_use": "麦珂利用重生记忆直接定位档案室B区第三层保险柜夹层中的原始磁带，避开奥瑞恩的监控。",
+          "opponent_reaction": "卡尔团队察觉异常，试图派人拦截，但为时已晚。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇法院档案室B区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂凭借记忆避开巡逻保安，打开保险柜夹层取出磁带。"
+            },
+            {
+              "sequence": 2,
+              "location": "《午夜星轨》演播厅",
+              "is_primary": false,
+              "temporal_mode": "current",
+              "transition_cue": "艾琳向观众展示地图卡预售数据，宣布资金注入儿科音乐疗愈计划。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_312_MAP_CARD_PRESALE_LOG",
+              "timeline_scope": "current",
+              "display_name": "《静默增益》地图卡预售百万记录",
+              "kind": "financial_record"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂潜入档案室，凭记忆找到保险柜夹层，取出1979年原始磁带。",
+            "瑟琳娜协助公证员对磁带进行封存登记，确立法律效力。",
+            "艾琳在节目中公布地图卡预售突破百万的消息，宣布资金直接进入第三方监管账户。",
+            "卡尔团队试图联系银行冻结账户，却发现资金流向已受法律保护。"
+          ],
+          "visible_payoff": "《静默增益》地图卡预售量突破百万，资金注入儿科音乐疗愈计划，奥瑞恩首次遭遇财务阻击。",
+          "ending": "麦珂手持原始磁带，站在演播厅聚光灯下，眼神坚定。",
+          "must_include": [
+            "原始磁带取出过程",
+            "预售数据公布",
+            "资金流向第三方监管"
+          ],
+          "must_not_include": [
+            "维克多·兰斯直接出场",
+            "医疗造假细节揭露"
+          ],
+          "detailed_synopsis": "麦珂利用重生记忆，在奥瑞恩监控网外潜入河湾镇法院档案室B区，精准定位到被误认为丢失的1979年原始磁带，存放于保险柜第三层夹层的隐秘角落。她迅速完成取证封存，并与瑟琳娜共同起草《教育共治备忘录》，将公益闭环逻辑写入合同条款。与此同时，艾琳·沃特曼在《午夜星轨》特别季直播中，展示了《静默增益》地图卡的预售盛况——突破百万张，资金直接注入儿科音乐疗愈计划的第三方监管账户。卡尔团队见状，急令法务部尝试冻结账户，却因法律程序完备而失败。麦珂在镜头前微笑，宣告资本与公益的双重胜利。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_309_S95_B_RW_TAPE",
+              "timeline_scope": "previous_life",
+              "purpose": "作为后续揭穿医疗造假的潜在线索被标记。"
+            }
+          ]
+        },
+        {
+          "chapter_id": 326,
+          "timeline_start": "1997-12-18",
+          "timeline_end": "1997-12-18",
+          "scene": "公开听证会现场",
+          "chapter_goal": "在听证会上揭露奥瑞恩伪造证据，彻底确立监护权与版权",
+          "chapter_title": "剪辑版的崩塌与真相的回归",
+          "participants": [
+            "麦珂",
+            "卡尔",
+            "法官",
+            "艾琳·沃特曼",
+            "七位见证人"
+          ],
+          "opening_conflict": "卡尔团队试图拿出剪辑版录像带，将麦珂描绘为‘情绪失控的未成年罪犯’，以剥夺其监护权收益。",
+          "info_gap_use": "麦珂展示原始未剪辑长镜头、证人亲笔签名簿以及昆廷导演的手写调度笔记，揭露对方为了商业利益对历史真相的系统性篡改。",
+          "opponent_reaction": "卡尔在听证会上强行播放剪辑版，却因技术故障暴露帧率漏洞，场面尴尬。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "公开听证会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "卡尔团队播放剪辑版录像，麦珂立即指出其技术参数错误。"
+            },
+            {
+              "sequence": 2,
+              "location": "听证会旁听席",
+              "is_primary": false,
+              "temporal_mode": "current",
+              "transition_cue": "七位见证人依次出庭作证，展示亲笔签名簿。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_313_QUINTIN_NOTEBOOK_COPY",
+              "timeline_scope": "current",
+              "display_name": "昆廷导演手写调度笔记复写件",
+              "kind": "visual_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_312_MAP_CARD_PRESALE_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为资金闭环完成的佐证。"
+            }
+          ],
+          "action_sequence": [
+            "卡尔团队在听证会上播放剪辑版录像，试图抹黑麦珂。",
+            "麦珂当场指出其使用的特定帧率参数与原始设备不符，并要求播放原始磁带。",
+            "原始磁带播放显示麦珂当时正安静等待法官宣判，画面清晰无误。",
+            "七位见证人依次出庭，展示亲笔签名簿，其中一位是已故法官的遗孀。",
+            "昆廷导演的手写调度笔记复写件被公开展示，证明当年纪录片刻意模糊了工坊少年的关键动作。",
+            "卡尔团队因伪造证据丑闻初现端倪，股价微跌，被迫暂停所有负面宣传。"
+          ],
+          "visible_payoff": "奥瑞恩集团伪造证据被公开揭露，卡尔团队信誉崩塌，麦珂获得七位见证人签字簿原件，初步确立监护权归属的法律事实。",
+          "ending": "麦珂在听证会结束后，面对媒体采访，平静地表示：“历史不会被篡改，因为真相就在那里。”",
+          "must_include": [
+            "剪辑版播放失败",
+            "原始磁带播放",
+            "七位见证人出庭",
+            "昆廷笔记公开"
+          ],
+          "must_not_include": [
+            "维克多·兰斯直接干预",
+            "医疗造假细节揭露"
+          ],
+          "detailed_synopsis": "公开听证会上，卡尔团队试图通过剪辑版录像带将麦珂塑造成“情绪失控的未成年罪犯”，以此剥夺其监护权收益。然而，麦珂早已准备好应对之策。她当场指出对方使用的特定帧率参数与原始设备不符，并要求播放原始未剪辑长镜头。当原始磁带在大屏幕上清晰播放时，麦珂安静等待法官宣判的画面让全场哗然。紧接着，七位关键见证人依次出庭，包括一位已故法官的遗孀，他们纷纷展示亲笔签名簿，证实当年判决的公正性。昆廷导演的手写调度笔记复写件也被公开展示，揭露了奥瑞恩集团为了商业利益对历史真相的系统性篡改。卡尔团队因伪造证据丑闻初现端倪，股价微跌，被迫暂停所有针对麦珂的负面商业操作。麦珂在听证会结束后，面对媒体采访，平静地表示：“历史不会被篡改，因为真相就在那里。”"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {
+        "entity_id": "MC_MAEKE",
+        "state_key": "financial_stability",
+        "from": "debt_risk",
+        "to": "secure_fund_flow",
+        "irreversible": true,
+        "evidence": "EC163_FINANCIAL_LOOP_ESTABLISHED"
+      },
+      {
+        "entity_id": "VP_VICTOR_LANCE",
+        "state_key": "strategy_shift",
+        "from": "direct_attack",
+        "to": "covert_data_pollution",
+        "irreversible": false,
+        "evidence": "EC163_NEXT_HOOK"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_id": "CORP_AUREON_001",
+        "state_key": "public_credibility",
+        "from": "high",
+        "to": "damaged_initial",
+        "irreversible": false,
+        "evidence": "EC163_CLIPPED_TAPE_FAILURE"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "RIGHT_VL_019",
+        "state_key": "copyright_control",
+        "from": "distorted",
+        "to": "verified",
+        "irreversible": true,
+        "evidence": "EC163_ORIGINAL_TAPE_PROVEN"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "MC_MAEKE",
+        "state_key": "physical_health",
+        "from": "normal",
+        "to": "optimized",
+        "irreversible": false,
+        "evidence": "EC163_FUND_INJECTION_TO_HEALTH_PLAN"
+      }
+    ],
+    "open_threads": [
+      "医疗模型造假对世纪转换期公众健康的潜在危害",
+      "维克多的‘全介质抹除计划’将如何升级"
+    ],
+    "resolved_threads": [
+      "1979年庭审录像带及七位见证人签字簿的具体物理位置已被锁定并确证",
+      "《静默增益》地图卡预售量突破百万，资金闭环确立"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。"
+  }
+}

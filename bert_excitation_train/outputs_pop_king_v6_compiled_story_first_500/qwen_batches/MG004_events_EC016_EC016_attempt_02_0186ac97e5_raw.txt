@@ -1,0 +1,210 @@
+{
+  "macro_group_id": "MG004",
+  "event_clusters": [
+    {
+      "cluster_id": "EC016",
+      "chapter_span": [31, 32],
+      "source_event_direction": "{\"macro_group_id\": \"MG004\", \"timeline_years\": \"1970—1971\", \"macro_goal\": \"麦珂在乔纳断供压力下，于河湾镇完成《纸船纪》母带录制并独立发行首支单曲；利用前世预知的删改风险，通过昆廷·琼斯的技术介入保全三秒真空的艺术完整性，迫使乔纳因税务违规证据曝光而失去项目主导权，同时让维克多·兰斯首次直接接触麦珂。\", \"main_conflict\": \"乔纳联合‘星辰新声’团队以‘保护未成年人形象’为由，强行要求麦珂在《纸船纪》中删除具有实验性的三秒静默段落，并试图以断绝生活费为要挟逼迫其签署独家代理协议；麦珂则利用重生信息差，提前将创作过程公开化、透明化，引导黛安娜进行财务审计，并借昆廷之手将争议旋律转化为法律认可的‘艺术完整性’证据，反制乔纳的资本操控。\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "河湾镇的静默与审判",
+      "timeline_years": "1970—1971",
+      "main_opponent": "乔纳（Jonah）",
+      "opposition_type": "villain",
+      "event_type": "contract_rights",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["CS_016_Artistic_Integrity", "CS_016_Financial_Transparency"],
+      "foreshadow_ids": ["FS_Victor_Lance_Entry", "FS_Jonah_Anxiety"],
+      "main_characters": ["麦珂", "乔纳", "黛安娜", "昆廷·琼斯", "玛莎"],
+      "fictional_obstacle": "乔纳以切断生活费和解约相逼，要求删除《纸船纪》中象征生命循环的三秒静默段落，并强制签署包含霸王条款的独家代理协议。",
+      "prev_life_tragedy": "前世麦珂因无力反抗，被迫签署空白合同，导致作品被阉割，版权被乔纳吞并，最终陷入债务泥潭。",
+      "info_gap_from_prev_life": "麦珂知晓乔纳在撕毁合同或极度焦虑时，左手食指会无意识地剧烈颤抖，且会暴露其私藏税务漏洞文件的位置。",
+      "why_previous_life_failed": "前世麦珂缺乏证据意识，未对创作过程进行公证，且在谈判中处于被动等待状态，未能利用乔纳的心理弱点。",
+      "preemptive_avoidance": "麦珂提前将《纸船纪》的手稿、录音小样及创作日记在河湾镇公告栏公示，并邀请当地邮局公证员进行日期戳记，确立独立创作时间线。",
+      "bait_and_evidence": "麦珂诱使乔纳在众目睽睽下撕毁伪造的“临时授权书”，黛安娜趁机用老式磁带录音机录下乔纳失控时的颤抖细节和语无伦次的承认，同时温特律师出示已备案的母带所有权公证书。",
+      "comic_villain_behavior": "乔纳在愤怒中试图抢夺手稿却因手抖打翻墨水瓶，弄脏了原本就破绽百出的假合同，随后语无伦次地指责麦珂“忘恩负义”却忘了自己刚挪用公款的事实。",
+      "villain_loss": "乔纳因当众施暴和情绪失控，彻底失去行业信誉，无法再代表麦珂进行任何签约，且税务违规线索被正式锁定。",
+      "protagonist_gain": "麦珂获得法律认可的独立制作人身份，家庭财务审计权正式移交黛安娜，确立了《纸船纪》母带的完全所有权。",
+      "relationship_change": "家庭决策机制由黛安娜与玛莎共同主导，乔纳被边缘化；麦珂与行业前辈昆廷建立平等合作关系。",
+      "continuity_writes": [
+        "前情：麦珂在河湾镇完成母带录制，乔纳得知后急迫赶来施压。",
+        "发展：麦珂展示公证手稿，乔纳恼羞成怒试图撕毁协议。",
+        "高潮：黛安娜录下乔纳失态瞬间，税务证据链浮出水面。",
+        "结局：乔纳被迫退出，麦珂掌握主动权。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_MASTER_OWNERSHIP_EC016",
+          "state_key": "master_recording_ownership__extension_EC016",
+          "from": "受乔纳控制",
+          "to": "完全归麦珂所有",
+          "irreversible": true,
+          "evidence": "河湾镇公告栏公证手稿及现场录音日志",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "finance",
+          "entity_id": "FAMILY_FINANCE_001",
+          "state_key": "audit_authority_transfer_EC016",
+          "from": "乔纳独揽财政大权",
+          "to": "黛安娜接管审计权",
+          "irreversible": true,
+          "evidence": "黛安娜现场调取的账本与乔纳慌乱反应",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "character",
+          "entity_id": "CHARACTER_JONAH_001",
+          "state_key": "professional_reputation_status",
+          "from": "行业代理人",
+          "to": "信誉破产的边缘人",
+          "irreversible": true,
+          "evidence": "公众目睹其撕毁合同与手抖丑态",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HA_1971_NYC_Tax_Law", "HA_1971_Sound_Engineering"],
+      "cluster_outcome": "麦珂成功保全作品艺术完整性，乔纳因贪婪和失控失去控制权，家庭财务权转移至黛安娜手中。",
+      "next_event_hook": "维克多·兰斯绕过乔纳直接向麦珂抛出‘全球发行’诱饵，实则意图通过更隐蔽的资本手段全面收购麦珂未来十年收益权，开启‘资本围猎’新阶段。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 31,
+          "timeline_start": "1971年10月18日",
+          "timeline_end": "1971年10月18日",
+          "scene": "河湾镇社区中心大厅",
+          "chapter_goal": "麦珂当众展示已备案的独立母带所有权证明，挫败乔纳断供威胁。",
+          "chapter_title": "公证的沉默",
+          "participants": ["麦珂", "乔纳", "黛安娜", "昆廷·琼斯", "社区居民"],
+          "opening_conflict": "乔纳带着律师闯入，声称麦珂未成年无权独立发行，要求立即销毁母带并签署独家协议，否则停止一切生活费供给。",
+          "info_gap_use": "麦珂利用前世记忆，预判乔纳会先动手抢夺文件，提前将关键证据置于显眼处。",
+          "opponent_reaction": "乔纳见势不妙，试图强行夺走麦珂手中的公证文件，言语粗鲁威胁。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇社区中心大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "乔纳推门而入，喧闹声骤停"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_031_PUBLIC_NOTARY",
+              "timeline_scope": "current",
+              "display_name": "1971.10.15 河湾镇公告栏公证手稿复印件",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_MASTER_OWNERSHIP_001",
+              "timeline_scope": "current",
+              "purpose": "作为麦珂拥有母带所有权的法律铁证"
+            }
+          ],
+          "action_sequence": [
+            "乔纳宣布断供并索要签名，麦珂平静地走向讲台。",
+            "麦珂展开已在公告栏公示并盖有邮戳公证的《纸船纪》手稿，高声朗读创作日期。",
+            "乔纳试图打断，麦珂直接展示温特律师签发的独立制作人确认函。",
+            "围观群众开始议论，乔纳脸色铁青，试图抢夺手稿。",
+            "昆廷·琼斯适时出现，指出三秒静默是艺术核心，不可删减。"
+          ],
+          "visible_payoff": "乔纳的断供威胁在确凿的公证文件面前显得苍白无力，舆论风向开始转向支持麦珂。",
+          "ending": "乔纳在众目睽睽下被暂时逼退，但眼神中充满不甘，扬言明日必有后招。",
+          "must_include": ["公证手稿展示", "乔纳的愤怒反应", "昆廷的初步介入"],
+          "must_not_include": ["税务调查正式立案", "维克多·兰斯出场"],
+          "detailed_synopsis": "1971年10月18日，河湾镇社区中心挤满了好奇的居民。乔纳气势汹汹地闯入，手持一份伪造的“临时监护协议”，声称麦珂作为未成年人无权独立发行音乐，并以切断生活费为要挟，强迫麦珂交出《纸船纪》母带并签署独家代理权。面对乔纳的咆哮，麦珂没有退缩，她从容地从公文包中取出那份早在三天前就在河湾镇公告栏公示、并由邮局公证员加盖日期戳的《纸船纪》创作手稿。她朗读了手稿上的每一个日期，证明了创作过程的独立性和时间的优先性。乔纳见状大惊失色，试图冲上前抢夺文件，却被麦珂身边的昆廷·琼斯拦下。昆廷严肃地指出，那三秒静默是作品的灵魂，任何删改都构成对艺术家权益的侵犯。此时，麦珂又亮出了温特律师签发的独立制作人确认函，彻底击碎了乔纳“保护未成年人”的借口。乔纳气急败坏，却在混乱中露出了破绽，他的手指不受控制地颤抖起来，这一幕被黛安娜默默看在眼里。"
+        },
+        {
+          "chapter_id": 32,
+          "timeline_start": "1971年10月19日",
+          "timeline_end": "1971年10月19日",
+          "scene": "麦珂家中客厅",
+          "chapter_goal": "乔纳情绪失控撕毁假协议，被黛安娜录下其手部颤抖与语无伦次，税务问题曝光。",
+          "chapter_title": "颤抖的契约",
+          "participants": ["麦珂", "乔纳", "黛安娜", "玛莎", "温特律师"],
+          "opening_conflict": "乔纳不甘心失败，深夜潜入家中，企图强行带走麦珂的私人物品并销毁证据，同时逼迫麦珂在另一份空白合同上签字。",
+          "info_gap_use": "麦珂利用前世记忆，知道乔纳在极度愤怒时会暴露出焦虑症微表情，故意激怒他。",
+          "opponent_reaction": "乔纳在发现被录音后情绪彻底崩溃，疯狂撕毁文件，语无伦次地承认挪用公款，手部剧烈颤抖。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂家中客厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "深夜的敲门声"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_032_JONAH_CONFESION",
+              "timeline_scope": "current",
+              "display_name": "1971.10.19 乔纳情绪失控录音带",
+              "kind": "recording"
+            },
+            {
+              "artifact_id": "ART_032_TAX_LEAK_02",
+              "timeline_scope": "current",
+              "display_name": "乔纳藏匿的税务违规账本残页",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_029_MEDIA_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为乔纳此前施压的佐证"
+            }
+          ],
+          "action_sequence": [
+            "乔纳深夜闯入，试图强行拿走麦珂的录音设备。",
+            "麦珂冷静地播放昨晚黛安娜录下的乔纳手抖片段，乔纳震惊。",
+            "乔纳恼羞成怒，撕毁桌上的假协议，大声咒骂并承认自己挪用了公款。",
+            "黛安娜打开录音机，完整记录下乔纳的疯言疯语和颤抖的手指。",
+            "玛莎带着温特律师赶到，当场出示税务局的调查通知书。"
+          ],
+          "visible_payoff": "乔纳的罪行被彻底曝光，他不仅失去了对项目的控制权，还面临法律的制裁，家庭财政权正式易主。",
+          "ending": "乔纳被警方带走调查，黛安娜正式接管家庭财务，麦珂获得了真正的自由。",
+          "must_include": ["乔纳撕毁协议", "录音记录手抖", "税务证据曝光"],
+          "must_not_include": ["维克多·兰斯直接签约", "麦珂发布单曲"],
+          "detailed_synopsis": "次日深夜，乔纳并未善罢甘休，他带着几名保镖再次闯入麦珂家中，企图强行夺走所有录音设备和手稿，并逼迫麦珂在一张早已准备好的空白合同上签字。面对乔纳的蛮横，麦珂没有丝毫惊慌，她 calmly 打开了放在桌上的老式磁带录音机，播放了前一天黛安娜录下的乔纳手抖和语无伦次的片段。乔纳听到自己的声音，顿时脸色惨白，情绪彻底失控。他发疯似地扑向桌子，撕毁了桌上所有的文件，嘴里歇斯底里地喊着：“都是你们的错！我只是为了这个家！”在混乱中，他不小心踢翻了书架，几本账本散落一地。黛安娜迅速按下录音键，清晰地录下了乔纳承认挪用公款支付私人债务的供述，以及他因极度焦虑而剧烈颤抖的双手。此时，玛莎带着温特律师和两名警察推门而入，出示了税务局发出的调查通知书。原来，黛安娜在之前的审计中已经发现了账目异常，并暗中收集了证据。乔纳看着眼前的景象，终于明白自己彻底输了。他被警方带走调查，家庭财政大权正式移交给黛安娜，麦珂终于摆脱了乔纳的控制，迎来了属于她的自由时刻。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1971",
+    "character_states": [
+      {"id": "麦珂", "status": "精神昂扬但身体疲惫，确立独立制作人身份"},
+      {"id": "乔纳", "status": "因税务丑闻曝光被迫退出项目，焦虑症状加剧，需接受心理干预"},
+      {"id": "黛安娜", "status": "成为家庭决策核心，接管财务审计权"},
+      {"id": "昆廷·琼斯", "status": "正式加入创作团队，与麦珂建立平等合作关系"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂-乔纳", "change": "从依附关系转变为对立关系，乔纳被边缘化"},
+      {"pair": "家庭内部", "change": "决策机制由黛安娜与玛莎共同主导，乔纳失去话语权"}
+    ],
+    "rights_and_assets": [
+      {"asset": "《纸船纪》母带", "status": "所有权完全归麦珂所有，乔纳失去控制权"},
+      {"asset": "家庭资金链", "status": "由黛安娜接管，实现财务独立与透明化"}
+    ],
+    "health_and_location": [
+      {"subject": "麦珂", "condition": "因高强度创作略有疲惫但精神昂扬"},
+      {"subject": "乔纳", "condition": "因压力过大出现严重焦虑症状"}
+    ],
+    "open_threads": [
+      "托马斯封存的遗嘱执行附件（最晚回收块：B012）",
+      "维克多·兰斯直接介入的意图（新开启）"
+    ],
+    "resolved_threads": [
+      "乔纳对《纸船纪》的版权控制",
+      "乔纳对家庭财政的垄断"
+    ],
+    "introduced_characters": [
+      "昆廷·琼斯（技术合作伙伴）"
+    ],
+    "next_pressure": "维克多·兰斯绕过乔纳直接向麦珂抛出‘全球发行’诱饵，实则意图通过更隐蔽的资本手段全面收购麦珂未来十年收益权，开启‘资本围猎’新阶段。"
+  }
+}

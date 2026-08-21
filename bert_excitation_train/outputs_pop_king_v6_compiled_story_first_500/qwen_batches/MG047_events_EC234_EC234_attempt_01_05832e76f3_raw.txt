@@ -1,0 +1,179 @@
+{
+  "macro_group_id": "MG047",
+  "event_clusters": [
+    {
+      "cluster_id": "EC234",
+      "chapter_span": [467, 468],
+      "source_event_direction": "{\"cluster_id\": \"EC234\", \"chapter_span\": [467, 468], \"opposition_type\": \"family\", \"event_type\": \"fan_public_welfare\", \"solution_type\": \"performance_proof\", \"death_chain_role\": \"echo\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "xyz9876543210abcdef1234567890ghijklmnopqrstuvwxyz",
+      "name": "清醒即审判：墨迹未干的铁证",
+      "timeline_years": "2009",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "family",
+      "event_type": "fan_public_welfare",
+      "solution_type": "performance_proof",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["EC233", "EC235"],
+      "foreshadow_ids": ["ART_453_JOINT_SIGN"],
+      "main_characters": ["麦珂", "玛莎·杰森", "维克多·兰斯", "苏菲亚", "昆廷·琼斯"],
+      "fictional_obstacle": "奥瑞恩集团利用伪造的医疗数据链和提前拟定的死亡证明，试图在直播前夜将麦珂定义为“已故”，从而触发保险理赔并冻结项目资产。",
+      "prev_life_tragedy": "前世玛莎被维克多胁迫签署虚假体征日志，成为麦珂“假死”的唯一合法凭证，导致麦珂生前权益被剥夺。",
+      "info_gap_from_prev_life": "2009年3月17日晨间玛莎签署的体征日志是对手唯一无法伪造的时间戳证据，且麦珂知晓其签字习惯与印章位置。",
+      "why_previous_life_failed": "前世麦珂未能提前干预玛莎的签字过程，导致关键证据被篡改或误导，亲情纽带被反向利用。",
+      "preemptive_avoidance": "麦珂在3月17日晨间引导玛莎在日志签名栏手写“我确认此人今日清醒”，并加盖执业印章，使该文件成为不可篡改的物理实锤。",
+      "bait_and_evidence": "维克多故意在直播前展示伪造的“死亡证明”作为诱饵，试图让全场信以为真；麦珂则拿出带有墨迹未干签名的原始日志作为反杀证据。",
+      "comic_villain_behavior": "维克多因过度自信，在直播现场大张旗鼓地宣读早已准备好的讣告词，却不知自己手中的法律文件因时间戳错误瞬间失效，表情从得意转为错愕。",
+      "villain_loss": "维克多手中所有基于虚假时间戳的法律文件瞬间失效，保险理赔程序被迫终止，奥瑞恩集团信誉崩塌。",
+      "protagonist_gain": "玛莎从家庭决策者升级为终局现场的法定见证人，其证言具有最高法律效力；麦珂获得对‘永恒星光’项目的绝对控制权。",
+      "relationship_change": "麦珂与‘星火同盟’成员建立基于绝对信任的生死契约；维克多与奥瑞恩集团高层产生不可调和的信任裂痕。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "legal_status",
+          "entity_id": "orion_insurance_claim",
+          "state_key": "claim_validity_EC234",
+          "from": "pending_approval",
+          "to": "automatically_rejected",
+          "irreversible": true,
+          "evidence": "玛莎亲笔签署的原始体征日志（墨迹未干）",
+          "effect_type": "villain_loss",
+          "source_state_key": "claim_validity"
+        },
+        {
+          "domain": "authority",
+          "entity_id": "mackie_health_status",
+          "state_key": "mental_capacity_verified_EC234",
+          "from": "deemed_dead",
+          "to": "physically_alive_verified",
+          "irreversible": true,
+          "evidence": "全球直播中玛莎举证的原始日志",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "health_status"
+        }
+      ],
+      "historical_anchor_ids": ["EC231", "EC232"],
+      "cluster_outcome": "麦珂利用重生记忆中的关键信息差，通过母亲玛莎的原始签署日志，彻底粉碎了维克多精心策划的“假死”骗局。维克多的贪婪导致其法律文件瞬间失效，保险理赔程序终止，而麦珂则凭借无可辩驳的证据链确立了绝对控制权。",
+      "next_event_hook": "‘永恒星光’落幕即‘星火审判’开端——麦珂未设复仇议程，只启动‘开口权存证计划’，将四十年间所有署名作品、健康公示、家庭决议与粉丝共创成果打包为开源时间胶囊，向全球教育机构免费授予权，引发新一轮资本围剿。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 467,
+          "timeline_start": "2009-03-17T14:00:00",
+          "timeline_end": "2009-03-17T23:59:00",
+          "scene": "主会场外围·开放式明信片墙展区",
+          "chapter_goal": "完成三千二百一十四封回信的收集与展示，构建未经剪辑的人声洪流，为次日反击奠定舆论基础。",
+          "chapter_title": "三万两千次心跳的回响",
+          "participants": ["麦珂", "苏菲亚", "粉丝代表", "志愿者团队"],
+          "opening_conflict": "奥瑞恩集团暗中施压，试图以“安全隐患”为由封锁明信片墙的入口，切断公众参与渠道。",
+          "info_gap_use": "麦珂预知封锁行动，提前安排志愿者通过备用通道分发空白明信片，确保人流不被阻断。",
+          "opponent_reaction": "维克多远程指挥安保人员强行驱赶人群，却被现场数千名粉丝自发组成的“人墙”阻挡，场面滑稽失控。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主会场外围·开放式明信片墙展区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "镜头推进至麦珂手中最新一封未剪辑的录音笔"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_467_POSTCARD_HUM",
+              "timeline_scope": "current",
+              "display_name": "《三千二百一十四封回信·人声洪流母带》",
+              "kind": "digital_forensic_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_455_INVASION_LOG",
+              "timeline_scope": "current",
+              "purpose": "证明安保封锁行为属于非法入侵，反衬粉丝行为的正当性"
+            }
+          ],
+          "action_sequence": [
+            "麦珂亲自引导志愿者将最后一张明信片贴上墙面，上面写有“我听见你活着”。",
+            "苏菲亚同步开启录音设备，收录全场粉丝齐声朗读明信片内容的原声。",
+            "维克多派出的安保队试图剪断电源，却发现备用发电机早已被麦珂改造为纯机械传动结构。",
+            "三千二百一十四段人声汇聚成洪流，通过广播系统实时播放，覆盖全场噪音。"
+          ],
+          "visible_payoff": "开放式明信片墙展出三千二百一十四封回信，最新一封成为首个未经剪辑的人声洪流，证明麦珂与公众的连接坚不可摧。",
+          "ending": "夜幕降临，人声洪流仍在继续，维克多看着屏幕上不断攀升的互动数据，脸色铁青。",
+          "must_include": ["三千二百一十四封回信", "未经剪辑的人声洪流", "机械传动备用电源"],
+          "must_not_include": ["任何关于麦珂死亡的暗示", "现代数字加密技术"],
+          "detailed_synopsis": "2009年3月17日下午，主会场外的开放式明信片墙前人头攒动。麦珂身穿便装，亲自引导志愿者将一张写满祝福的明信片贴在墙上，这张明信片由一位曾受她帮助的孤儿亲手书写。苏菲亚迅速操作老式磁带录音机，将全场粉丝齐声朗读明信片内容的声音录制下来。此时，维克多派来的安保队试图以“安全隐患”为由封锁入口，却被数千名粉丝自发组成的人墙挡在外面。当安保队试图剪断电源时，却发现备用发电机早已被麦珂改造为纯机械传动结构，电力供应丝毫未受影响。三千二百一十四段人声汇聚成洪流，通过广播系统实时播放，覆盖了所有干扰噪音。这一举动不仅展示了麦珂与公众的深厚联系，也为第二天的反击奠定了坚实的舆论基础。"
+        },
+        {
+          "chapter_id": 468,
+          "timeline_start": "2009-03-18T00:00:00",
+          "timeline_end": "2009-03-18T01:30:00",
+          "scene": "主会场穹顶入口·直播现场",
+          "chapter_goal": "在维克多展示伪造死亡证明的瞬间，玛莎当众举起原始日志，彻底粉碎骗局。",
+          "chapter_title": "墨迹未干的审判",
+          "participants": ["麦珂", "玛莎·杰森", "维克多·兰斯", "奥瑞恩集团高管", "全球观众"],
+          "opening_conflict": "维克多身着黑色西装，手持伪造的死亡证明和讣告稿，准备在直播开始时宣布麦珂“已于凌晨去世”。",
+          "info_gap_use": "麦珂深知玛莎晨间签署的日志是唯一无法伪造的证据，提前安排玛莎在场等待关键时刻。",
+          "opponent_reaction": "维克多满脸错愕，手中的伪造文件在玛莎举起的原始日志面前显得苍白无力，最终瘫软在地。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主会场穹顶入口·直播现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "镜头切换至玛莎高举日志的特写"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_467_POSTCARD_HUM",
+              "timeline_scope": "current",
+              "purpose": "作为背景音，衬托玛莎举证的庄严时刻"
+            }
+          ],
+          "action_sequence": [
+            "维克多站在聚光灯下，开始宣读早已准备好的讣告词，声称麦珂因病情恶化于凌晨三点离世。",
+            "麦珂突然从阴影中走出，手持未剪辑的童年母带，步伐稳健地走向舞台中央。",
+            "玛莎在工作人员的搀扶下走上台，高举一份墨迹未干的体征日志，大声宣读：“我确认此人今日清醒。”",
+            "全场哗然，维克多手中的伪造文件瞬间失去法律效力，保险理赔程序被迫终止。"
+          ],
+          "visible_payoff": "当维克多展示伪造的死亡证明时，玛莎当众举起带有墨迹未干签名的原始日志，彻底粉碎了骗局。",
+          "ending": "维克多瘫软在地，奥瑞恩集团的高管们面面相觑，麦珂则微笑着看向镜头，宣告“开口权存证计划”正式启动。",
+          "must_include": ["玛莎高举原始日志", "墨迹未干", "维克多瘫软在地"],
+          "must_not_include": ["麦珂受伤或虚弱", "现代科技手段"],
+          "detailed_synopsis": "2009年3月18日凌晨零点，主会场穹顶入口的直播现场灯火通明。维克多身着黑色西装，手持伪造的死亡证明和讣告稿，准备在直播开始时宣布麦珂“已于凌晨去世”。他满脸得意地开始宣读早已准备好的讣告词，声称麦珂因病情恶化于凌晨三点离世。然而，就在他话音未落之际，麦珂突然从阴影中走出，手持未剪辑的童年母带，步伐稳健地走向舞台中央。与此同时，玛莎在工作人员的搀扶下走上台，高举一份墨迹未干的体征日志，大声宣读：“我确认此人今日清醒。”全场哗然，维克多手中的伪造文件瞬间失去法律效力，保险理赔程序被迫终止。他满脸错愕，最终瘫软在地。麦珂则微笑着看向镜头，宣告“开口权存证计划”正式启动。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2009",
+    "character_states": [
+      {"character_id": "mackie", "state": "physically_alive_verified", "evidence": "玛莎签署的原始日志"},
+      {"character_id": "martha_jason", "state": "legal_witness_finalized", "evidence": "亲笔签署的体征日志"},
+      {"character_id": "victor_lance", "state": "credibility_broken", "evidence": "伪造文件失效"}
+    ],
+    "relationship_states": [
+      {"party_a": "mackie", "party_b": "star_alliance", "status": "absolute_trust_contract"},
+      {"party_a": "victor_lance", "party_b": "orion_executives", "status": "trust_cracked"}
+    ],
+    "rights_and_assets": [
+      {"asset_id": "eternal_stars_project", "status": "mackie_absolute_control", "evidence": "信托协议补充条款生效"},
+      {"asset_id": "insurance_claim", "status": "terminated", "evidence": "时间戳证据闭环"}
+    ],
+    "health_and_location": [
+      {"character_id": "mackie", "health_status": "fully_normal", "location": "主会场穹顶入口"},
+      {"character_id": "victor_lance", "health_status": "psychological_breakdown", "location": "主会场穹顶入口"}
+    ],
+    "open_threads": [
+      "3月18日零时‘清醒即审判’仪式的物理绑架风险",
+      "穹顶入口最终身份确认的全球合唱引导"
+    ],
+    "resolved_threads": [
+      "玛莎被迫签署虚假体征日志的危机",
+      "维克多利用虚假时间戳启动保险理赔的企图"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "‘永恒星光’落幕即‘星火审判’开端——麦珂未设复仇议程，只启动‘开口权存证计划’，将四十年间所有署名作品、健康公示、家庭决议与粉丝共创成果打包为开源时间胶囊，向全球教育机构免费授予权，引发新一轮资本围剿。"
+  }
+}

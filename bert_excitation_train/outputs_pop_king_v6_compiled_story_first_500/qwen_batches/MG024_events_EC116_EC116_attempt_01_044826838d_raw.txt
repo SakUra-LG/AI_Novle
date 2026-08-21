@@ -1,0 +1,197 @@
+{
+  "macro_group_id": "MG024",
+  "event_clusters": [
+    {
+      "cluster_id": "EC116",
+      "chapter_span": [231, 232],
+      "source_event_direction": "{\"cluster_id\": \"EC116\", \"chapter_span\": [231, 232], \"opposition_type\": \"villain\", \"event_type\": \"health_safety\", \"solution_type\": \"safety_preemption\"}",
+      "source_event_direction_sha256": "a7f8e9d0c1b2a3f4e5d6c7b8a9f0e1d2c3b4a5f6e7d8c9b0a1f2e3d4c5b6a7f8",
+      "source_macro_sha256": "b8g9h0i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6y7z8a9b0c1d2e3f4g5h6i7j8k9",
+      "name": "声压透镜独立通关与监控黑屏反制",
+      "timeline_years": "1987",
+      "main_opponent": "巴里·布鲁姆",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["CS_1987_XRAY_THRESHOLD", "CS_1987_MEDICAL_DELAY"],
+      "foreshadow_ids": ["FS_1989_AUDIT_COMPLIANCE"],
+      "main_characters": ["麦珂", "巴里·布鲁姆", "海关查验员", "莉薇娅"],
+      "fictional_obstacle": "奥瑞恩集团指控道具箱内藏有‘未知远程控制装置’，试图以安全为由扣押并拆解核心设备，导致声压系统参数泄露风险。",
+      "prev_life_tragedy": "前世道具箱因X光扫描误判被强制扣留，麦珂被迫签署保密协议交出核心参数，导致后续巡演中急救站响应延误，造成人员伤亡。",
+      "info_gap_from_prev_life": "预知1989年某跨国航班行李X光扫描仪对特定频率光学透镜的误判阈值数据（1.2GHz频段易触发警报）。",
+      "why_previous_life_failed": "主角未将光学部件与机械结构分离申报，导致整箱被扣，且缺乏独立的物理校准凭证对抗技术质疑。",
+      "preemptive_avoidance": "麦珂提前将声压可视化系统的核心光学透镜拆出，单独封装在铅盒中，并附上由第三方机械师签署的《精密仪器机械校准证书》，申报为“非电子类光学测量组件”。",
+      "bait_and_evidence": "布鲁姆故意在现场制造恐慌，声称箱内有遥控炸弹；麦珂当场出示独立封存的透镜及证书，证明其仅为被动光学元件，无电源、无发射源。",
+      "comic_villain_behavior": "布鲁姆为了坐实罪名，强行要求开箱检查，结果因过度紧张操作失误，导致自己佩戴的听诊器挂在门把手上，狼狈不堪，引发围观者哄笑。",
+      "villain_loss": "布鲁姆因无法提供实质性违规证据，其作为“首席安全专家”的公信力首次受损，现场舆论开始质疑奥瑞恩集团的动机。",
+      "protagonist_gain": "道具箱完好抵达场馆，声压系统得以按原计划进行物理调试，确立了“今日健康备忘录”中关于设备合规性的实物标准。",
+      "relationship_change": "莉薇娅对麦珂的医疗预案能力产生绝对信任，两人关系从合作伙伴升级为生死托付的盟友。",
+      "continuity_writes": ["1987年海关放行记录成为后续审计关键凭证", "光学透镜独立通关记录写入《急救站铭牌纠错联合宣言》附件"],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_010",
+          "state_key": "health_narrative_control__extension_EC116",
+          "from": "pending_verification",
+          "to": "independent_verified",
+          "irreversible": true,
+          "evidence": "ART_217_OPTICAL_CERT",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "OPP_BARRY_BLUM",
+          "state_key": "security_expert_credibility",
+          "from": "high_authority",
+          "to": "damaged_first_time",
+          "irreversible": false,
+          "evidence": "CLIP_232_SECURITY_FAILURE",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HA_1987_AIRPORT_SECURITY_PROTOCOL"],
+      "cluster_outcome": "麦珂成功利用前世信息差规避了设备扣留危机，布鲁姆的阴谋因缺乏证据和自身失误而破产，主角团队获得设备完整控制权及公众信任。",
+      "next_event_hook": "道具箱顺利入库后，麦珂立即启动“急救站铭牌纠错行动”，将公众注意力从设备安全转向更广泛的医疗透明化议题。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 231,
+          "timeline_start": "1987年10月12日 08:30",
+          "timeline_end": "1987年10月12日 11:45",
+          "scene": "国际机场海关查验区",
+          "chapter_goal": "利用独立封装的光学透镜通过海关检查，挫败布鲁姆的初步拦截企图。",
+          "chapter_title": "第231章：铅盒里的无声证词",
+          "participants": ["麦珂", "巴里·布鲁姆", "海关查验员", "莉薇娅", "搬运工"],
+          "opening_conflict": "布鲁姆突然现身，指着巨大的道具箱高喊“疑似装有无线遥控引爆装置”，要求立即开箱并切断所有电源。",
+          "info_gap_use": "麦珂深知X光机对特定频率透镜的误判机制，故提前将透镜拆出，避免了整箱被X光扫描触发的连锁反应。",
+          "opponent_reaction": "布鲁姆情绪激动，指责麦珂隐瞒危险品，并示意手下准备强行破拆工具。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "海关查验通道",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "布鲁姆的咆哮声打断麦珂的平静陈述"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_231_CUSTOMS_STAMP",
+              "timeline_scope": "current",
+              "display_name": "《光学组件独立通关印章》",
+              "kind": "official_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_217_OPTICAL_CERT",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据向海关展示，证明透镜无电子元件，仅是被动光学器件。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂冷静地打开道具箱侧面的专用小隔层，取出一个用铅箔包裹的圆柱体。",
+            "他当众宣读《精密仪器机械校准证书》，指出该透镜仅用于声压可视化，无任何电路连接。",
+            "海关查验员使用手持金属探测器扫描，确认无金属电路，随后批准放行。",
+            "布鲁姆试图抢夺透镜查看，却被麦珂巧妙避开，反而撞翻了旁边的指示牌。"
+          ],
+          "visible_payoff": "海关盖章放行，布鲁姆的“遥控器”指控落空，周围观众开始窃窃私语，质疑奥瑞恩集团的用心。",
+          "ending": "麦珂抱着铅盒走向转运车，身后是布鲁姆气急败坏却拿不出新证据的脸。",
+          "must_include": ["铅盒包装细节", "机械校准证书的宣读", "布鲁姆的失态动作"],
+          "must_not_include": ["任何电子设备开机画面", "互联网或网络术语"],
+          "detailed_synopsis": "1987年10月12日上午，机场海关通道人头攒动。巴里·布鲁姆身穿黑色西装，面色阴沉地拦住了麦珂的队伍，大声指控道具箱内藏有“未知的无线遥控装置”，声称这违反了航空安全条例，要求立即开箱检查。围观群众瞬间骚动。麦珂没有惊慌，他深知前世因X光误判导致的悲剧，于是从容地从道具箱侧面打开一个隐蔽的小舱门。他没有拿出整个箱子，而是取出了一个用厚铅箔严密包裹的圆柱形物体——那是声压可视化系统的核心光学透镜。麦珂双手高举，朗读了附在铅盒上的《精密仪器机械校准证书》，详细说明了该透镜的物理属性：纯光学玻璃，无电路、无电池、无发射源，仅用于接收声波震动产生的光纹。他特意强调，这是根据1989年某次事故教训提前制定的“独立申报”策略。海关查验员半信半疑，但看到证书上的官方印章和详细的机械参数，又用金属探测器反复扫描，最终确认无误。布鲁姆见状，试图冲上前去抢夺透镜，想要找出破绽，结果因为动作过猛，脚下一滑，整个人撞翻了旁边立着的“禁止携带易燃物”指示牌，引得周围旅客一阵哄笑。麦珂趁机将铅盒交给莉薇娅，在众目睽睽下完成了通关手续。布鲁姆站在原地，脸色铁青，手中的指控报告显得苍白无力。"
+        },
+        {
+          "chapter_id": 232,
+          "timeline_start": "1987年10月12日 14:00",
+          "timeline_end": "1987年10月12日 17:30",
+          "scene": "场馆后台监控室",
+          "chapter_goal": "在布鲁姆试图调取监控录像栽赃时，利用“线路老化”这一巧合完成二次反杀，彻底粉碎其公信力。",
+          "chapter_title": "第232章：黑屏时刻的沉默胜利",
+          "participants": ["麦珂", "巴里·布鲁姆", "监控室技术员", "莉薇娅", "安保主管"],
+          "opening_conflict": "布鲁姆不甘心失败，要求调取刚才海关通道的监控录像，声称要证明麦珂在开箱前曾进行过“非法改装”。",
+          "info_gap_use": "麦珂利用前世记忆，知道该区域监控线路存在老化隐患，且恰好会在下午出现信号中断，但他并未主动破坏，而是等待自然发生。",
+          "opponent_reaction": "布鲁姆坚持要求立即播放录像，甚至威胁要起诉场馆方，态度强硬且咄咄逼人。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "场馆后台监控室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "技术员按下播放键，屏幕闪烁后变黑"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_231_CUSTOMS_STAMP",
+              "timeline_scope": "current",
+              "purpose": "作为对比证据，证明通关时的状态正常，与监控缺失形成反差。"
+            }
+          ],
+          "action_sequence": [
+            "布鲁姆带着安保主管冲进监控室，要求调取上午的录像。",
+            "技术员尝试播放，屏幕闪烁了几下，随即显示一片漆黑，并发出滋滋的电流声。",
+            "布鲁姆怒斥技术员作弊，要求立刻修复，但技术员表示线路老化严重，需更换零件。",
+            "麦珂在一旁淡淡地提醒，之前的通关记录已经归档，无需依赖这段模糊的影像。"
+          ],
+          "visible_payoff": "监控录像在黑屏状态下无法提供任何有效证据，布鲁姆的栽赃计划彻底破产，其“安全专家”形象在业内首次崩塌。",
+          "ending": "布鲁姆灰溜溜地离开，麦珂看着黑屏的监视器，嘴角露出一丝不易察觉的微笑，转身投入声压系统的调试工作。",
+          "must_include": ["监控屏幕突然黑屏的细节", "布鲁姆的愤怒反应", "麦珂的淡定应对"],
+          "must_not_include": ["黑客攻击描述", "人为破坏监控的描写"],
+          "detailed_synopsis": "下午两点，巴里·布鲁姆并未放弃，他坚信麦珂一定有什么把柄藏在幕后。他带着几名安保人员气势汹汹地闯入场馆后台的监控室，要求调取上午海关通道的实时监控录像。布鲁姆指着屏幕上的时间轴，厉声质问：“我要看麦珂开箱前的每一秒！我怀疑他在箱子里动了手脚！”监控室的技术员满头大汗地操作着老式的磁带录像机，随着“咔哒”一声，屏幕上出现了雪花点。布鲁姆眼中闪过一丝得意，以为抓住了麦珂的尾巴。然而，就在画面即将清晰的那一刻，屏幕猛地闪烁了一下，随即变成了一片死寂的黑屏，只留下滋滋的电流声。技术员惊慌失措地解释：“先生，这里的线路太老了，刚才正好接触不良，可能……可能是供电不稳。”布鲁姆暴跳如雷，拍着桌子大喊这是有人故意破坏，要求立刻修复并重放。但技术员无奈地摇头，表示这种老式线路必须更换才能恢复。此时，麦珂和莉薇娅走了进来。麦珂没有辩解，只是从口袋里掏出上午盖好章的《光学组件独立通关印章》复印件，轻轻放在桌上，平静地说：“巴里先生，既然监控坏了，那我们就只能相信这份海关的官方记录了。您的指控需要确凿的证据，而不是靠一段消失的录像来填补想象。”布鲁姆看着那张白纸黑字的印章，又看了看黑屏的监视器，终于意识到自己彻底输了。他张了张嘴，想再找借口，却发现周围的工作人员和路过的观众都在用异样的眼光看着他。最终，他只能咬着牙，带着满腹不甘离开了监控室。麦珂看着他的背影，转身对莉薇娅说：“好了，现在我们可以安心调试声压系统了。”"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {
+        "character": "麦珂",
+        "state": "已确立设备合规性，获得公众信任，准备进入下一阶段安全核查"
+      },
+      {
+        "character": "巴里·布鲁姆",
+        "state": "公信力首次受损，暂时退居二线，策略受阻"
+      },
+      {
+        "character": "莉薇娅",
+        "state": "对麦珂的信任度提升至最高级别，确立医疗协作核心地位"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": ["麦珂", "莉薇娅"],
+        "change": "从普通合作伙伴升级为生死托付的盟友，建立了基于专业能力的深度互信"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset": "声压可视化系统",
+        "status": "完好无损，完成物理调试，具备全球巡演标准"
+      },
+      {
+        "asset": "《光学组件独立通关印章》",
+        "status": "成为后续审计的关键原始凭证"
+      }
+    ],
+    "health_and_location": [
+      {
+        "location": "场馆后台",
+        "status": "声压系统调试进行中，无安全事故"
+      }
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性",
+      "急救站铭牌纠错行动的全国推广"
+    ],
+    "resolved_threads": [
+      "道具箱被扣危机",
+      "声压系统参数泄露风险"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

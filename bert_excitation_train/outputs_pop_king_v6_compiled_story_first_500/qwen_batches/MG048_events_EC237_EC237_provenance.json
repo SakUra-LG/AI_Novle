@@ -1,0 +1,76 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC237_EC237",
+  "identifier": "MG048",
+  "accepted_attempt": "04",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "base_prompt_sha256": "c7f85a9603d9e9f8261eb992640b7032c25cc62a04e95b2b8af66c52e36ddaa8",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-21T14:21:01+08:00",
+      "prompt_sha256": "c7f85a9603d9e9f8261eb992640b7032c25cc62a04e95b2b8af66c52e36ddaa8",
+      "raw_response_sha256": "fb26a3ffa0fc5d57f2d03a28a4500719782c13844f1f63f79d807de94d0a2b0b",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG048_events_EC237_EC237_attempt_01_c7f85a9603_raw.txt",
+      "validation_failures": [
+        "EC237与EC231重复执行不可逆结算：assets_frozen::维克多·兰斯"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 32.882,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-21T14:21:33+08:00",
+      "prompt_sha256": "d4cdc109aab896dbbd350affc6423fc72a5080f79a1cc6d12a1068ea59e558e4",
+      "raw_response_sha256": "ca3399e9df74483919bb9c4787a07c5b95423f88dce6c67f83e64a4bdcfb1ae2",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG048_events_EC237_EC237_attempt_02_c7f85a9603_raw.txt",
+      "validation_failures": [
+        "EC237提前消费后续事件的法院查封/冻结令结算；当前父级方向未授权该结果",
+        "EC237与EC231重复执行不可逆结算：assets_frozen::维克多·兰斯"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 32.166,
+      "usage": {}
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-21T14:22:09+08:00",
+      "prompt_sha256": "7410755884703af3776e44c7e9d0497ee7e36c6dad03b7b1af90e92695b03c2c",
+      "raw_response_sha256": "f2fa24838133328a5f3a23739a3029d2766cd27f56f26764b0bc549892a51b3e",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG048_events_EC237_EC237_attempt_03_c7f85a9603_raw.txt",
+      "validation_failures": [
+        "EC237与EC231重复执行不可逆结算：assets_frozen::维克多·兰斯"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 35.341,
+      "usage": {}
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-21T14:22:38+08:00",
+      "prompt_sha256": "a3ff7da83a8013c767403c125ca06ceaffae5aa76c2d703bf9c9ea1865060574",
+      "raw_response_sha256": "a0d0e4606ebdaa5fe594f91db583fbdb512aa407bda3d1331217a3fe1eeb044d",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG048_events_EC237_EC237_attempt_04_c7f85a9603_raw.txt",
+      "validation_failures": [
+        "EC237与EC231重复执行不可逆结算：assets_frozen::维克多·兰斯"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 29.471,
+      "usage": {}
+    }
+  ]
+}

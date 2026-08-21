@@ -1,0 +1,237 @@
+{
+  "macro_group_id": "MG038",
+  "event_clusters": [
+    {
+      "cluster_id": "EC188",
+      "chapter_span": [375, 376],
+      "source_event_direction": "{\"macro_group_id\": \"MG038\", \"timeline_years\": \"2001-2002\", \"macro_goal\": \"完成‘棱镜协议’二期物理介质固化，当众揭穿巴里·布鲁姆伪造电子授权的丑闻，确立苏菲亚主导的离线审计链不可篡改，并启动‘时间褶皱’档案二期以锁定1999年除夕夜的关键指纹证据。\", \"main_conflict\": \"维克多·兰斯利用巴里·布鲁姆试图在听证会上通过‘自动化续约’陷阱将场馆控制权转移至其控制的离岸账户；重生者麦珂利用前世记忆中的传真漏件细节和系统响应漏洞，反设‘物理优先’测试局，迫使巴里在众目睽睽下暴露伪造操作，同时莉薇娅·普莱斯介入签署独立评估书，切断数字篡改路径。\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z6y5x4w3v2u1t0s9r8q7p6o5n4m3l2k1j0i9h8g7f6e5d4c3b2a1",
+      "name": "物理铁律与授权崩塌",
+      "timeline_years": "2001",
+      "main_opponent": "巴里·布鲁姆",
+      "opposition_type": "institutional",
+      "event_type": "legal_procedure",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["RIGHT_VL_019_AUDIT", "REP_BARRY_001"],
+      "foreshadow_ids": ["ART_369_FINGERPRINT_MATCH"],
+      "main_characters": ["麦珂", "巴里·布鲁姆", "莉薇娅·普莱斯", "苏菲亚", "维克多·兰斯（幕后）"],
+      "fictional_obstacle": "巴里·布鲁姆试图利用行业规则中“电子指令优于纸质文件”的模糊地带，通过伪造一份带有虚假电子签名的“紧急维修授权书”（实为自动续约陷阱），诱导委员会批准将场馆控制权临时移交维克多控制的离岸账户，从而在程序上合法化资产置换。",
+      "prev_life_tragedy": "前世中，巴里利用麦珂对电子系统响应的信任，制造了合规性危机，迫使麦珂在慌乱中签署了放弃控制权的文件，导致家族信托被架空，最终引发连锁悲剧。",
+      "info_gap_from_prev_life": "麦珂清晰记得2001年冬，巴里习惯在传真发送关键附件时故意遗漏最后一页（即授权书的签署页），且系统会自动判定“缺页文件无效”或“需二次确认”，但巴里曾利用这一漏洞在后台手动补全数据，制造假象。",
+      "why_previous_life_failed": "前世麦珂过度依赖电子系统的即时反馈，未能在物理层面验证文件的完整性，导致被巴里利用系统逻辑漏洞进行欺诈。",
+      "preemptive_avoidance": "麦珂提前邀请莉薇娅·普莱斯作为独立第三方出席听证会，要求所有涉及场馆安全的决策必须附带“临床级物理评估书”，将医疗/安全判断权延伸至法律程序，强制切断纯数字路径。",
+      "bait_and_evidence": "巴里提交的“紧急授权书”是伪造的电子扫描件，缺少关键的物理印章和手写签名页；麦珂当场提出“物理优先”测试，要求调取原始传真件的纸带记录及物理介质备份。",
+      "comic_villain_behavior": "巴里在听证会上为了掩饰缺页事实，竟试图用一支圆珠笔在现场快速伪造签名，结果因手抖写成了乱码，还辩称这是“新型防伪笔迹”，引得全场哄堂大笑，显得既滑稽又心虚。",
+      "villain_loss": "巴里·布鲁姆因伪造证据、违规操作及公然欺诈，被行业自律委员会当场暂停从业资格两年，奥瑞恩集团立即冻结其所有项目权限，其职业生涯彻底断送。",
+      "protagonist_gain": "‘权限不代’原则（即任何权限变更必须有物理介质双重确认）成为法定执行标准；麦珂家族信托控制权得到法律永久确认，不再受电子指令干扰。",
+      "relationship_change": "莉薇娅·普莱斯从观望者转变为坚定盟友，正式签署《场馆安全独立评估书》，认可麦珂的预判能力；苏菲亚因成功执行物理隔离策略，地位进一步稳固。",
+      "continuity_writes": [
+        "麦珂利用前世记忆中的传真漏件细节，精准预判巴里的伪造时间点。",
+        "莉薇娅的独立评估书切断了数字篡改路径，确立了物理介质的绝对权威。",
+        "巴里的滑稽表演加速了其信誉崩塌，使其无法再辩解。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_019_AUDIT",
+          "state_key": "authorization_protocol_status",
+          "from": "digitally_vulnerable",
+          "to": "physically_locked_with_dual_confirm",
+          "irreversible": true,
+          "evidence": "TRANSCRIPT_CH375_PHYSICAL_TEST + SIGNED_LIVIA_ASSESSMENT",
+          "effect_type": "protagonist_gain",
+          "source_domain": "rights:RIGHT_VL_019_AUDIT",
+          "source_entity_id": "physical_priority_established"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_BARRY_001",
+          "state_key": "professional_license_status",
+          "from": "active_with_doubt",
+          "to": "suspended_pending_investigation",
+          "irreversible": false,
+          "evidence": "HEARING_TRANSCRIPT_CH376 + FORGED_SIGNATURE_EXPOSURE",
+          "effect_type": "villain_loss",
+          "source_domain": "reputation:REP_BARRY_001",
+          "source_entity_id": "license_validity"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "ALL_LIVIA_MCKEE",
+          "state_key": "trust_level_verification",
+          "from": "cautious_observer",
+          "to": "formal_allied_partner",
+          "irreversible": true,
+          "evidence": "SIGNED_INDEPENDENT_ASSESSMENT_LETTER",
+          "effect_type": "relationship_change",
+          "source_domain": "alliance:ALL_LIVIA_MCKEE",
+          "source_entity_id": "partnership_formalization"
+        }
+      ],
+      "historical_anchor_ids": ["ART_369_FINGERPRINT_MATCH", "ART_370_BACKUP_FILM"],
+      "cluster_outcome": "麦珂利用前世记忆中的传真漏件细节，在听证会上成功揭露巴里·布鲁姆的伪造操作，迫使其承认错误。巴里被暂停资格，‘权限不代’原则确立，麦珂家族信托控制权得到法律确认。',
+      "next_event_hook": "‘时间褶皱’档案二期启动后，那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的“数据污染”方案。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 375,
+          "timeline_start": "2001-12-10 09:00",
+          "timeline_end": "2001-12-10 11:30",
+          "scene": "行业自律委员会听证室",
+          "chapter_goal": "莉薇娅·普莱斯正式签署《场馆安全独立评估书》，否决维克多的违规提案，确立物理介质优先原则。",
+          "chapter_title": "物理铁律：签字前的最后防线",
+          "participants": ["麦珂", "莉薇娅·普莱斯", "巴里·布鲁姆", "委员会主席", "苏菲亚"],
+          "opening_conflict": "巴里提交了一份声称来自维克多团队的“紧急维修授权书”，要求立即启动资产置换程序，否则场馆将面临“系统性崩溃”。",
+          "info_gap_use": "麦珂指出该传真件存在逻辑漏洞：根据2001年冬的惯例，此类紧急文件必缺末页，且系统应有二次确认机制，但巴里却跳过了这一步。",
+          "opponent_reaction": "巴里坚称文件完整，并指责麦珂“故弄玄虚”，试图利用委员会对电子效率的偏好施压。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证室主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂抛出质疑，巴里强词夺理。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_375_LIVIA_SIGNING",
+              "timeline_scope": "current",
+              "display_name": "《场馆安全独立评估书》（莉薇娅签署版）",
+              "kind": "legal_certificate"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_370_BACKUP_FILM",
+              "timeline_scope": "current",
+              "purpose": "对比展示原始胶片与伪造电子件的差异。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂当众指出巴里提交的授权书缺少关键签署页，引用前世记忆中的传真漏件规律。",
+            "巴里试图辩解，声称是技术故障，但麦珂要求现场调取原始传真纸带。",
+            "莉薇娅·普莱斯介入，要求对所有电子指令进行物理介质验证，否则不予认可。",
+            "苏菲亚展示离线审计链日志，证明电子指令未通过物理确认。",
+            "莉薇娅在众人注视下，正式签署《场馆安全独立评估书》，否决了维克多的违规提案。"
+          ],
+          "visible_payoff": "委员会主席宣布暂停讨论资产置换提案，等待物理介质验证结果。",
+          "ending": "莉薇娅的签字如同定海神针，彻底切断了巴里利用电子漏洞的可能，麦珂获得阶段性胜利。",
+          "must_include": ["莉薇娅签署独立评估书", "麦珂引用前世记忆指出传真漏件", "苏菲亚展示离线审计链"],
+          "must_not_include": ["巴里当场认罪", "维克多现身", "指纹线索直接曝光"],
+          "detailed_synopsis": "听证室内气氛凝重，巴里·布鲁姆手持一份电子授权书，声称维克多团队已发出紧急指令，要求立即启动资产置换。他自信满满地认为，凭借电子系统的便捷性，委员会会迅速通过提案。然而，麦珂突然站起，冷冷地指出这份文件存在致命逻辑漏洞：根据2001年冬季的行业惯例，此类紧急传真必缺末页，且系统应有二次确认机制，但巴里却跳过了这一步。巴里脸色微变，强辩称是技术故障。麦珂随即要求调取原始传真纸带，巴里支支吾吾，试图掩盖。此时，莉薇娅·普莱斯挺身而出，她严肃地表示，任何涉及场馆安全的决策必须附带“临床级物理评估书”，拒绝纯数字路径。苏菲亚同步展示了离线审计链的实时日志，证明电子指令未通过物理确认。在众目睽睽之下，莉薇娅郑重地在《场馆安全独立评估书》上签下名字，否决了维克多的违规提案。委员会主席宣布暂停讨论，等待物理介质验证结果。麦珂的预判再次应验，巴里的计划初步受挫。"
+        },
+        {
+          "chapter_id": 376,
+          "timeline_start": "2001-12-10 14:00",
+          "timeline_end": "2001-12-10 16:30",
+          "scene": "听证室主舞台",
+          "chapter_goal": "麦珂当众播放巴里伪造操作的录音，结合物理介质证据，迫使巴里承认错误，使其被暂停资格。",
+          "chapter_title": "伪造者的末路：笔迹与真相",
+          "participants": ["麦珂", "巴里·布鲁姆", "莉薇娅·普莱斯", "委员会主席", "苏菲亚", "媒体记者"],
+          "opening_conflict": "巴里见势不妙，试图强行推进议程，甚至拿出备用方案，声称“系统已自动处理”。",
+          "info_gap_use": "麦珂利用前世记忆，知道巴里在伪造文件时会使用特定的圆珠笔，且会在现场留下伪造签名的痕迹。",
+          "opponent_reaction": "巴里惊慌失措，试图销毁证据，却被苏菲亚及时拦截。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证室主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里试图强行推进，麦珂抛出致命一击。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_375_LIVIA_SIGNING",
+              "timeline_scope": "current",
+              "purpose": "作为莉薇娅否决提案的法律依据。"
+            },
+            {
+              "artifact_id": "ART_369_FINGERPRINT_MATCH",
+              "timeline_scope": "previous_life",
+              "purpose": "作为后续调查的伏笔，暗示巴里长期介入档案篡改。"
+            }
+          ],
+          "action_sequence": [
+            "巴里见物理验证受阻，试图强行推进议程，声称“系统已自动处理”。",
+            "麦珂突然播放一段录音，内容是巴里在办公室内指挥手下伪造文件的对话。",
+            "麦珂指出巴里手中的授权书签名是用特定圆珠笔伪造的，且笔迹僵硬，明显是模仿。",
+            "巴里惊慌失措，试图抢夺文件销毁，被苏菲亚及时拦截。",
+            "委员会主席下令暂停巴里一切职务，并启动调查程序。",
+            "巴里在众目睽睽下承认错误，但试图推卸责任给“系统故障”。"
+          ],
+          "visible_payoff": "巴里·布鲁姆因伪造证据被行业自律委员会当场暂停从业资格两年，奥瑞恩集团立即冻结其所有项目权限。",
+          "ending": "麦珂的胜利不仅在于揭露了谎言，更在于确立了“权限不代”原则，为家族信托筑起了铜墙铁壁。",
+          "must_include": ["麦珂播放伪造录音", "巴里试图销毁证据被拦截", "巴里被暂停资格"],
+          "must_not_include": ["维克多现身", "指纹线索直接用于定罪", "巴里自杀或逃逸"],
+          "detailed_synopsis": "听证会进入白热化阶段，巴里·布鲁姆见物理验证受阻，竟妄图强行推进议程，声称“系统已自动处理”，试图蒙混过关。麦珂冷笑一声，突然播放了一段录音，内容竟是巴里在办公室内指挥手下伪造文件的对话，声音清晰可辨。紧接着，麦珂指出巴里手中的授权书签名是用特定圆珠笔伪造的，且笔迹僵硬，明显是模仿，完全不符合巴里平时的书写习惯。巴里顿时惊慌失措，脸色惨白，试图抢夺文件销毁，却被早已严阵以待的苏菲亚及时拦截。委员会主席见状，立即下令暂停巴里一切职务，并启动调查程序。在铁证如山面前，巴里终于崩溃，承认错误，但试图将责任推卸给“系统故障”。然而，这一切都已无济于事。巴里·布鲁姆因伪造证据被行业自律委员会当场暂停从业资格两年，奥瑞恩集团立即冻结其所有项目权限。麦珂的胜利不仅在于揭露了谎言，更在于确立了“权限不代”原则，为家族信托筑起了铜墙铁壁。而在那枚1999年除夕夜磁带外壳上隐约可见的半枚油渍指纹，将在未来的审判中成为证明巴里长期介入档案篡改的关键旁证，引出维克多更深层的“数据污染”方案。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2001",
+    "character_states": [
+      {
+        "character": "巴里·布鲁姆",
+        "state": "suspended_pending_investigation",
+        "reason": "因伪造证据被行业自律委员会暂停从业资格两年"
+      },
+      {
+        "character": "莉薇娅·普莱斯",
+        "state": "formal_allied_partner",
+        "reason": "正式签署《场馆安全独立评估书》，成为麦珂坚定盟友"
+      },
+      {
+        "character": "麦珂",
+        "state": "secure_control_of_trust",
+        "reason": "‘权限不代’原则确立，家族信托控制权得到法律确认"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": "麦珂 - 莉薇娅",
+        "status": "trusted_partners",
+        "change": "从观望者转变为坚定盟友"
+      },
+      {
+        "pair": "麦珂 - 苏菲亚",
+        "status": "core_technical_allies",
+        "change": "苏菲亚地位进一步提升，成为麦珂技术核心副手"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset": "场馆控制权",
+        "status": "secured_by_physical_audit",
+        "change": "物理介质优先原则成为行业铁律，离线审计链不可篡改"
+      },
+      {
+        "asset": "麦珂家族信托",
+        "status": "legally_verified",
+        "change": "‘权限不代’原则成为法定执行标准，控制权得到法律确认"
+      }
+    ],
+    "health_and_location": [
+      {
+        "character": "巴里·布鲁姆",
+        "status": "under_investigation",
+        "location": "行业自律委员会调查中心"
+      }
+    ],
+    "open_threads": [
+      "‘时间褶皱’档案二期的后续调查方向",
+      "维克多·兰斯对巴里·布鲁姆倒台后的应对策略",
+      "1999年除夕夜磁带外壳指纹的深入比对结果"
+    ],
+    "resolved_threads": [
+      "巴里·布鲁姆的伪造操作被彻底揭露",
+      "‘权限不代’原则的确立"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多·兰斯虽未直接现身，但其势力已开始收缩，转而寻求更隐蔽的渗透手段，同时联邦调查局的介入将使案件走向更加复杂。'时间褶皱'档案二期启动后，指纹线索将直接触发下一阶段的深度调查。"
+  }
+}

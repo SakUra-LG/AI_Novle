@@ -1,0 +1,61 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC016_EC016",
+  "identifier": "MG004",
+  "accepted_attempt": null,
+  "base_prompt_sha256": "0186ac97e57cff6f8c3aabd67f2094cbfe5ca98a9ebc564b7f0f15adbf99c501",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T18:49:44+08:00",
+      "prompt_sha256": "0186ac97e57cff6f8c3aabd67f2094cbfe5ca98a9ebc564b7f0f15adbf99c501",
+      "raw_response_sha256": "ab80074db3c1f0fc915964160e7dda4bcee628514d640bb4c73b1e7fec1428b8",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG004_events_EC016_EC016_attempt_01_0186ac97e5_raw.txt",
+      "validation_failures": [
+        "EC016.main_opponent过短或缺失",
+        "EC016 finance:FAMILY_FINANCE_001:audit_authority_transfer_EC016使用未知state domain：finance"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 26.607,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-20T18:50:14+08:00",
+      "prompt_sha256": "1135ca31dd333c8ca14d118951eb88f96c4a358a4e6df7002bdcd99de1d3e4a9",
+      "raw_response_sha256": "eb343ee933df83facf313aa0e0f38a5cd48b292847865939917d8e827cd27290",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG004_events_EC016_EC016_attempt_02_0186ac97e5_raw.txt",
+      "validation_failures": [
+        "EC016提前消费后续事件的逮捕/刑事带走结算；当前父级方向未授权该结果",
+        "EC016 finance:FAMILY_FINANCE_001:audit_authority_transfer_EC016使用未知state domain：finance"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 29.303,
+      "usage": {}
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-20T18:50:46+08:00",
+      "prompt_sha256": "a37a69885c785589ecc1d49be7056c0a12ff31aa877044a2d0aaf8b753dc1705",
+      "raw_response_sha256": "4a99aa57633117014bbf56170f3ae3cd361377611424e203c5d1c94f5f9e0928",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG004_events_EC016_EC016_attempt_03_0186ac97e5_raw.txt",
+      "validation_failures": [
+        "EC016.main_opponent过短或缺失",
+        "EC016 family_governance:FAMILY_GOVERNANCE_001:audit_authority_transfer_EC016使用未知state domain：family_governance"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 32.758,
+      "usage": {}
+    }
+  ]
+}

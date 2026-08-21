@@ -1,0 +1,195 @@
+{
+  "macro_group_id": "MG013",
+  "event_clusters": [
+    {
+      "cluster_id": "EC063",
+      "chapter_span": [125, 126],
+      "source_event_direction": "麦珂利用前世记忆对母带进行物理分散，抵御唱片公司与分销商的非法夺取。",
+      "source_event_direction_sha256": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+      "source_macro_sha256": "f1e2d3c4b5a60718293a4b5c6d7e8f90f1e2d3c4b5a60718293a4b5c6d7e8f9",
+      "name": "铜质齿轮母带保卫战",
+      "timeline_years": "1981-1982",
+      "main_opponent": "环球唱片公司与其联盟的分销商、广告商",
+      "opposition_type": "institutional",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["EC060", "EC061"],
+      "foreshadow_ids": ["EC070"],
+      "main_characters": ["麦珂", "莉薇娅·普莱斯", "瑟琳娜·卡尔森", "巴里·布鲁姆", "维克多·兰斯"],
+      "fictional_obstacle": "唱片公司以“技术故障”为借口要求统一保管母带，企图通过单点控制夺回版税。",
+      "prev_life_tragedy": "前世版税被唱片公司通过数字分账系统截留，母带唯一原件锁在单一保险柜中失控。",
+      "info_gap_from_prev_life": "麦珂记得母带原件被单锁，钥匙若丢失即永久失去控制权。",
+      "why_previous_life_failed": "缺乏物理分散与多方监管，导致资产被单点攻击。",
+      "preemptive_avoidance": "今生将母带复印件存于三把联锁保险箱，钥匙分别寄存于北京、上海、广州的邮局租箱，并登记备案。",
+      "bait_and_evidence": "在第125章，唱片公司以“底片受潮”为名要求集中保管，瑟琳娜现场展示机械联动的防潮装置，证明分散存放更安全。",
+      "comic_villain_behavior": "分销商代表在会议上慌张敲打桌子，声称“只要我们拿到原件，所有问题都能解决”，却不慎将一枚铜质齿轮掉落在地，被现场摄像机捕捉。",
+      "villain_loss": "环球唱片公司失去对《锈钉与琴键》版税的非法截留权，被迫签署以铜质齿轮编号体系为依据的新分账协议。",
+      "protagonist_gain": "麦珂通过铜质齿轮编号体系获得专辑版税、周边实体资产的独占控制权，并在行业内树立不可复制的物理凭证标准。",
+      "relationship_change": "团队内部信任度提升，形成‘视觉‑听觉‑物理’三位一体的铁三角协作模式。",
+      "continuity_writes": [
+        "铜质齿轮编号体系被记录于《铜质资产登记册》",
+        "《锈钉与琴键》实体发行合同中加入物理资产条款"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_005:physical_asset_control",
+          "state_key": "ownership_status",
+          "from": "未授权",
+          "to": "已授权",
+          "irreversible": true,
+          "evidence": "ART_125_COPPER_GEAR_CERTIFICATE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_001:illegal_royalty_seizure",
+          "state_key": "legal_status",
+          "from": "有效",
+          "to": "无效",
+          "irreversible": true,
+          "evidence": "ART_126_JUDGMENT_ORDER",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HA_1981_GELATIN_ACCIDENT", "HA_1980_LIQUID_HYDRAULIC_FAULT"],
+      "cluster_outcome": "《锈钉与琴键》成功发行，铜质齿轮体系成为行业新标准，麦珂实现资产全权掌控。",
+      "next_event_hook": "维克多·兰斯转向隐蔽渗透，准备发动数据污染攻击；托马斯·布莱克等律师将以法律手段阻碍《家庭治理宪章》签署。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 125,
+          "timeline_start": "1981-09-12",
+          "timeline_end": "1981-09-14",
+          "scene": "环球唱片公司总部会议室",
+          "chapter_goal": "阻止公司单点保管母带的提案，展示分散存放的安全性。",
+          "chapter_title": "技术故障的借口",
+          "participants": ["麦珂", "瑟琳娜·卡尔森", "环球唱片公司代表", "分销商代表"],
+          "opening_conflict": "公司代表声称母带因底片受潮需统一保管，暗示分散存放不安全。",
+          "info_gap_use": "麦珂凭前世记忆指出上一次胶片冲洗事故的具体故障点，证明单点存放易受同类事故影响。",
+          "opponent_reaction": "分销商代表慌乱敲桌，试图以权威压制麦珂的质疑。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "会议室投影区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "投影仪启动，显示受潮底片的微观裂纹图"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_125_COPPER_GEAR_CERTIFICATE",
+              "timeline_scope": "current",
+              "display_name": "铜质齿轮编号体系认证书",
+              "kind": "certificate"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_110_PARTNERSHIP_CERT",
+              "timeline_scope": "current",
+              "purpose": "证明三方保险箱联锁协议的合法性"
+            }
+          ],
+          "action_sequence": [
+            "麦珂提出三箱联锁方案",
+            "瑟琳娜演示防潮机械联动装置",
+            "分销商代表失手掉落铜齿轮",
+            "现场摄像机记录下齿轮编号"
+          ],
+          "visible_payoff": "公司被迫暂停统一保管提案，会议记录中加入分散存放条款。",
+          "ending": "会议在麦珂的坚持下以“暂缓决定”收场，所有人对铜质齿轮的唯一性产生怀疑。",
+          "must_include": ["铜质齿轮", "三把联锁钥匙", "投影显示受潮底片"],
+          "must_not_include": ["手机", "电子邮件"],
+          "detailed_synopsis": "环球唱片公司在北京总部召集紧急会议，声称《锈钉与琴键》母带因近期底片受潮必须统一保管，以防进一步损毁。麦珂凭借前世记忆，指出1981年同类胶片冲洗事故的具体故障点——冲洗液温度波动导致底片微裂。她当场展示三把联锁保险箱的钥匙分别寄存于北京、上海、广州邮局的租箱凭证，并请瑟琳娜现场演示防潮机械联动装置。分销商代表慌乱敲桌，试图以权威压制，却不慎将一枚刻有编号的铜质齿轮掉落在地，摄像机捕捉到其唯一编号。会议记录随即加入“母带必须采用分散存放并使用铜质齿轮编号体系”条款，唱片公司被迫暂停统一保管提案。"
+        },
+        {
+          "chapter_id": 126,
+          "timeline_start": "1981-10-03",
+          "timeline_end": "1981-10-05",
+          "scene": "环球唱片公司仓库与公开发布会现场",
+          "chapter_goal": "公开展示铜质齿轮体系的不可复制性，迫使分销商放弃接管母带。",
+          "chapter_title": "齿轮的唯一宣言",
+          "participants": ["麦珂", "莉薇娅·普莱斯", "环球唱片公司高层", "分销商代表", "媒体记者"],
+          "opening_conflict": "分销商以法律函件要求公司交付母带原件，准备强行接管。",
+          "info_gap_use": "麦珂利用前世记忆中母带原件被单锁的致命弱点，展示三箱联锁的实物证据。",
+          "opponent_reaction": "分销商代表在现场质疑铜质齿轮的合法性，试图用法律文书压制。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "公司仓库大型金库",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "金库门缓缓开启，灯光聚焦在三只上锁的保险箱上"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_125_COPPER_GEAR_CERTIFICATE",
+              "timeline_scope": "current",
+              "purpose": "证明铜质齿轮编号体系已获行业认可"
+            }
+          ],
+          "action_sequence": [
+            "麦珂现场打开第一只保险箱，展示编号为‘G‑07‑1981’的铜齿轮",
+            "莉薇娅出示法律文件，声明任何单点接管均违背《物理资产保护法》",
+            "分销商代表尝试强行撬锁，被现场摄像机记录",
+            "媒体现场连线报道，公众舆论倾向麦珂"
+          ],
+          "visible_payoff": "分销商放弃接管，环球唱片公司签署新分账协议，铜质齿轮体系正式写入合同。",
+          "ending": "会议在全场掌声中结束，麦珂握紧铜齿轮，象征对实体资产的绝对掌控。",
+          "must_include": ["铜质齿轮编号‘G‑07‑1981’", "三把联锁钥匙", "现场摄像机"],
+          "must_not_include": ["电子邮件", "手机"],
+          "detailed_synopsis": "分销商在收到法律函件后，携律师团队闯入环球唱片公司仓库，要求立即交付《锈钉与琴键》母带原件。麦珂提前安排现场直播，邀请媒体记者围观。她先打开第一只保险箱，取出刻有编号‘G‑07‑1981’的铜质齿轮，说明每一枚齿轮对应唯一的母带复本，且钥匙分散在三地邮局，任何单点接管都无法完成。莉薇娅随即出示《物理资产保护法》条文，声明未经全体持有人同意，任何强行接管行为均属非法。分销商代表现场尝试撬锁，却被摄像机完整记录，舆论瞬间转向麦珂。最终，环球唱片公司在媒体压力下签署以铜质齿轮编号体系为依据的新分账协议，放弃对母带的非法夺取。全场掌声雷动，麦珂将铜齿轮紧握于手，象征对实体资产的绝对掌控。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1981",
+    "character_states": [
+      {
+        "character_id": "MK001",
+        "state_key": "asset_control_status",
+        "value": "拥有铜质齿轮编号体系的实体资产控制权"
+      },
+      {
+        "character_id": "LV002",
+        "state_key": "clinical_negation_authority",
+        "value": "已授权"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": ["MK001", "LV002"],
+        "state_key": "trust_level",
+        "value": "最高"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "right_id": "RIGHT_MK_005:physical_asset_control",
+        "status": "已授权",
+        "evidence": "ART_125_COPPER_GEAR_CERTIFICATE"
+      }
+    ],
+    "health_and_location": [
+      {
+        "character_id": "MK001",
+        "health_status": "听力正常",
+        "location": "北京"
+      }
+    ],
+    "open_threads": [
+      "维克多·兰斯对《家庭治理宪章》的伦理渗透企图",
+      "铜质齿轮编号体系在医疗领域的延伸应用"
+    ],
+    "resolved_threads": [
+      "环球唱片公司非法版税截留"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "‘心律校准计划’将在1983年启动，需利用已标准化的铜质齿轮编号体系进行跨行业设备统一。"
+  }
+}

@@ -1,0 +1,196 @@
+[
+  {
+    "unit_index": 1,
+    "unit_count": 6,
+    "dramatic_function": "对手先施压",
+    "objective": "只写对手当面把降级包装成保护，并向主角明确主张改成低强度；压力落在主角会继续被当成病弱者。测试尚未开始，本单元不是验证中的叫停。",
+    "locked_facts": [
+      "卡尔·霍尔特试图降低强度"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "卡尔·霍尔特"
+    ],
+    "allowed_carriers": [],
+    "required_carriers": [],
+    "all_chapter_carriers": [
+      "旧宣传页"
+    ],
+    "required_semantic_anchors": [],
+    "memory_allowed": false,
+    "result_allowed": false,
+    "functional_decision_required": false,
+    "target_min_chars": 225,
+    "target_max_chars": 251,
+    "paragraph_mode": "只用主角与对手的一轮短对白建立压力，停在主角准备回应",
+    "scene_archetype": "live_capability_validation"
+  },
+  {
+    "unit_index": 2,
+    "unit_count": 6,
+    "dramatic_function": "主角抢先改变条件",
+    "objective": "主角要求所有人只判断眼前这次完成，并明确谁有权决定标准；见证条件从开场就在场。",
+    "locked_facts": [
+      "在合作方与独立医疗见证在场时做高强度体能测试"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "麦珂·杰森",
+      "合作方",
+      "现场见证人"
+    ],
+    "allowed_carriers": [],
+    "required_carriers": [],
+    "all_chapter_carriers": [
+      "旧宣传页"
+    ],
+    "required_semantic_anchors": [
+      "体能",
+      "合作方"
+    ],
+    "memory_allowed": true,
+    "result_allowed": false,
+    "functional_decision_required": false,
+    "target_min_chars": 315,
+    "target_max_chars": 351,
+    "paragraph_mode": "行动段略长，用一句对白锁定判断条件",
+    "scene_archetype": "live_capability_validation"
+  },
+  {
+    "unit_index": 3,
+    "unit_count": 6,
+    "dramatic_function": "利益与情绪代价",
+    "objective": "写清这次能力判断会改变谁的现实控制，不复述表演动作，也不提前宣布结果。",
+    "locked_facts": [],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "allowed_carriers": [],
+    "required_carriers": [],
+    "all_chapter_carriers": [
+      "旧宣传页"
+    ],
+    "required_semantic_anchors": [],
+    "memory_allowed": false,
+    "result_allowed": false,
+    "functional_decision_required": false,
+    "target_min_chars": 195,
+    "target_max_chars": 217,
+    "paragraph_mode": "一个较长冲突段后接一个短反应段",
+    "scene_archetype": "live_capability_validation"
+  },
+  {
+    "unit_index": 4,
+    "unit_count": 6,
+    "dramatic_function": "对手作出不可撤回选择",
+    "objective": "对手在验证开始前作出过度断言，验证中只可口头叫停或要求降速一次；不得触碰、逼近或阻断主角身体。主角不争技术名词，以继续完成回应。",
+    "locked_facts": [
+      "卡尔·霍尔特试图降低强度"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "卡尔·霍尔特",
+      "麦珂·杰森"
+    ],
+    "allowed_carriers": [],
+    "required_carriers": [],
+    "all_chapter_carriers": [
+      "旧宣传页"
+    ],
+    "required_semantic_anchors": [],
+    "memory_allowed": false,
+    "result_allowed": false,
+    "functional_decision_required": false,
+    "target_min_chars": 345,
+    "target_max_chars": 385,
+    "paragraph_mode": "一次连续验证与一次干预，长短段交替",
+    "scene_archetype": "live_capability_validation"
+  },
+  {
+    "unit_index": 5,
+    "unit_count": 6,
+    "dramatic_function": "可见证明改变判断",
+    "objective": "让现场见证人根据亲眼所见给出一句定性结论，再迫使有权者亲自改变判断；只推进到准备执行，不宣布最终宣传、职务或权利结果。",
+    "locked_facts": [
+      "麦珂完成高强度唱跳连测"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "麦珂·杰森",
+      "现场见证人",
+      "合作方"
+    ],
+    "allowed_carriers": [],
+    "required_carriers": [],
+    "all_chapter_carriers": [
+      "旧宣传页"
+    ],
+    "required_semantic_anchors": [
+      "唱跳"
+    ],
+    "memory_allowed": false,
+    "result_allowed": false,
+    "functional_decision_required": true,
+    "target_min_chars": 300,
+    "target_max_chars": 335,
+    "paragraph_mode": "证明集中成一段，见证与判断各用一句短对白落锤",
+    "scene_archetype": "live_capability_validation"
+  },
+  {
+    "unit_index": 6,
+    "unit_count": 6,
+    "dramatic_function": "结果生效与锋利收束",
+    "objective": "结果生效后只留对手一次直接反应和主角一句锋利回应，立即收章。",
+    "locked_facts": [
+      "合作方撤下病弱降配宣传；他收回训练强度决定权",
+      "当前允许载体：旧宣传页"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "卡尔·霍尔特",
+      "麦珂·杰森",
+      "合作方"
+    ],
+    "allowed_carriers": [
+      "旧宣传页"
+    ],
+    "required_carriers": [],
+    "all_chapter_carriers": [
+      "旧宣传页"
+    ],
+    "required_semantic_anchors": [
+      "训练",
+      "宣传",
+      "合作方",
+      "决定权",
+      "旧宣传页"
+    ],
+    "memory_allowed": false,
+    "result_allowed": true,
+    "functional_decision_required": true,
+    "target_min_chars": 360,
+    "target_max_chars": 401,
+    "paragraph_mode": "先完整执行全部结果，再用两至三个短段停在直接反应上",
+    "scene_archetype": "live_capability_validation"
+  }
+]

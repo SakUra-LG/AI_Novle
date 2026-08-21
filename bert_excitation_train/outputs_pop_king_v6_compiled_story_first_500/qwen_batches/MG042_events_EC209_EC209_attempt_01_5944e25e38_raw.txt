@@ -1,0 +1,217 @@
+{
+  "macro_group_id": "MG042",
+  "event_clusters": [
+    {
+      "cluster_id": "EC209",
+      "chapter_span": [417, 418],
+      "source_event_direction": "{\"cluster_id\": \"EC209\", \"chapter_span\": [417, 418], \"opposition_type\": \"institutional\", \"event_type\": \"media_reputation\", \"solution_type\": \"public_confrontation\", \"death_chain_role\": \"pressure\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "x9y8z7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "清醒即审判：五十七城无声回响",
+      "timeline_years": "2005—2007",
+      "main_opponent": "奥瑞恩集团公关部（代理：维克多·斯特林）",
+      "opposition_type": "institutional",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["EC206", "EC207", "EC208"],
+      "foreshadow_ids": ["EC210"],
+      "main_characters": ["麦珂", "苏菲亚", "玛莎", "黛安娜", "昆廷", "地方报社编辑"],
+      "fictional_obstacle": "奥瑞恩试图将联邦法院裁决曲解为“精神康复”或“悲剧落幕”，以此剥夺麦珂的公众话语权，将其重新定义为需要被照顾的弱者。",
+      "prev_life_tragedy": "前世麦珂未做任何干预，媒体头条将判决解读为“奇迹康复”，公众误以为她已痊愈并退出社会，导致“清醒即审判”的核心法理被淹没在廉价的同情叙事中。",
+      "info_gap_from_prev_life": "联邦法院裁决书末尾有一行极小的特别注明：“本案不涉及治愈，仅确认清醒”。这是麦珂重生后唯一能利用的关键信息差。",
+      "why_previous_life_failed": "被动等待媒体解读，未掌握定义权，导致核心议题被偷换概念。",
+      "preemptive_avoidance": "麦珂拒绝召开新闻发布会，而是利用重生记忆中的时间差，提前向全美五十七家地方日报寄送统一信封，内含裁决书复印件、空白明信片及手写说明。",
+      "bait_and_evidence": "信封内附裁决书复印件（重点高亮结尾小字）、空白明信片（供读者提问）、手写说明：“我们仍在这里听”。证据在于裁决书原件的法律效力与麦珂对细节的精准提取。",
+      "comic_villain_behavior": "维克多·斯特林在办公室狂喜地准备通稿，宣称“麦珂终于疯了/好了”，却因未收到任何官方回应而抓狂，甚至亲自打电话质问编辑为何不登“康复”新闻，暴露其急于操控舆论的贪婪与无知。",
+      "villain_loss": "奥瑞恩无法再操控舆论将话题引向‘痊愈’或‘悲剧’叙事，彻底丧失了对麦珂健康状况的定义权。",
+      "protagonist_gain": "公众认知锚点从‘是否痊愈’成功转向‘是否清醒’的核心议题，建立了无截止日的问答信道。",
+      "relationship_change": "各地读者从旁观者变为参与者，形成自下而上的支持网络；家族成员看到麦珂掌控全局的能力，信任度进一步固化。",
+      "continuity_writes": ["康拉德并未在此阶段出现，对手由维克多·斯特林全权代理公关战，符合当前时间线逻辑。", "所有通信手段均为实体信件与电话，符合2005年技术背景。"],
+      "state_transitions": [
+        {
+          "domain": "public_perception",
+          "entity_id": "MC_PUBLIC_NARRATIVE_MATRIX",
+          "state_key": "narrative_control__shift_to_clarity",
+          "from": "medical_recovery_or_tragedy_narrative",
+          "to": "clarity_as_judgment_narrative",
+          "irreversible": true,
+          "evidence": "FIFTY_SEVEN_CITIES_POSTCARD_RESPONSES",
+          "effect_type": "protagonist_gain",
+          "source_domain": "public_perception:MC_PUBLIC_NARRATIVE_MATRIX",
+          "source_entity_id": "MC_CLARITY_PERCEPTION"
+        },
+        {
+          "domain": "legal_strategy",
+          "entity_id": "ORION_LITIGATION_TACTICS",
+          "state_key": "media_manipulation_capability",
+          "from": "active_control",
+          "to": "completely_blind",
+          "irreversible": false,
+          "evidence": "VICTOR_CONFUSION_AND_MISSED_TIMING",
+          "effect_type": "villain_loss",
+          "source_domain": "legal_strategy:ORION_LITIGATION_TACTICS",
+          "source_entity_id": "ORION_REPUTATION_DEFENSE"
+        }
+      ],
+      "historical_anchor_ids": ["ART_407_POSTCARD_ARCHIVE"],
+      "cluster_outcome": "麦珂通过物理信件构建了超越媒体过滤的直连通道，五十七个城市的读者开始自发回信，讨论焦点从“她病好了吗”转变为“她如何保持清醒”。奥瑞恩的公关攻势彻底失效，被迫承认无法在法律和道德层面击败麦珂，战略重心开始向资本与死亡威胁转移。",
+      "next_event_hook": "裁决书送达当日收到的神秘死亡预告信件，成为P10诱使敌人启动‘永恒星光’的终极时间诱饵，迫使麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 417,
+          "timeline_start": "2005年11月14日 上午",
+          "timeline_end": "2005年11月14日 傍晚",
+          "scene": "麦珂的私人书房 / 美国邮政系统 / 五十七家地方报社编辑部",
+          "chapter_goal": "完成向全美五十七家地方日报的统一投递，确保裁决书关键信息不被媒体篡改。",
+          "chapter_title": "沉默的信封",
+          "participants": ["麦珂", "苏菲亚", "邮递员（群像）"],
+          "opening_conflict": "奥瑞恩集团公关部正紧急起草“康复”通稿，试图抢在裁决书正式公布前定调，但麦珂切断了所有媒体采访渠道。",
+          "info_gap_use": "麦珂利用重生记忆，知道裁决书末尾那句“仅确认清醒”是破局关键，必须让原始文本直接抵达读者手中，而非经过记者的二次加工。",
+          "opponent_reaction": "维克多在奥瑞恩总部焦躁踱步，发现所有媒体都拒接他的“康复”故事，转而等待一份从未见过的“特殊信件”。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂的私人书房",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂将裁决书复印件折叠，放入特制信封，贴上空白明信片，手写一句“我们仍在这里听”。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_417_MAIL_BATCH",
+              "timeline_scope": "current",
+              "display_name": "《五十七城统一投递信封组》",
+              "kind": "physical_correspondence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_405_NOTARY_CERT",
+              "timeline_scope": "current",
+              "purpose": "作为信封内裁决书复印件的法律背书依据。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂坐在书桌前，手指轻轻抚过裁决书复印件上那行微小却致命的文字。",
+            "苏菲亚协助整理名单，确认五十七家地方日报的地址，避开奥瑞恩控制的全国性大报。",
+            "麦珂亲自书写每一张明信片的背面留言，笔触坚定有力。",
+            "信封被密封，贴上邮票，投入专用邮筒，由苏菲亚监督寄出。",
+            "镜头扫过窗外，邮车驶离，象征着信息开始流动。"
+          ],
+          "visible_payoff": "五十七封信件同时发出，没有任何一家媒体提前截获或篡改内容。",
+          "ending": "夜幕降临，麦珂站在窗前，看着邮车远去，内心平静。她知道，真正的风暴才刚刚开始。",
+          "must_include": ["裁决书末尾小字的引用", "手写明信片的具体内容", "避开全国性媒体的策略"],
+          "must_not_include": ["现代互联网通讯", "康拉德的出场", "奥瑞恩的正面反击"],
+          "detailed_synopsis": "2005年11月14日，麦珂拒绝了所有媒体关于“麦珂案”终审胜诉的采访邀请。奥瑞恩集团公关总监维克多·斯特林正忙着起草一篇题为《麦珂奇迹康复，重返生活》的通稿，试图将法庭判决解读为精神疾病的终结。然而，麦珂早已预判了这一点。她利用重生记忆中对裁决书细节的掌握，特别是末尾那句“本案不涉及治愈，仅确认清醒”，决定绕过媒体过滤器。她与苏菲亚合作，将裁决书复印件、一张空白明信片以及一行手写的“我们仍在这里听”装入统一规格的信封。他们避开了奥瑞恩控制的全国性大报，直接向全美五十七家地方日报的总编室寄送这些信件。这一举动不仅打破了奥瑞恩的信息封锁，更将定义权直接交还给了基层读者。维克多在办公室得知信件已寄出却无法拦截时，气得摔碎了手中的咖啡杯，他意识到自己精心策划的“康复”叙事瞬间失去了载体。"
+        },
+        {
+          "chapter_id": 418,
+          "timeline_start": "2005年11月15日 早晨",
+          "timeline_end": "2005年11月15日 深夜",
+          "scene": "五十七家地方报社编辑部 / 读者来信处理中心 / 麦珂的书房",
+          "chapter_goal": "接收并展示来自各地的回信，形成“清醒共识”的舆论浪潮，彻底粉碎奥瑞恩的叙事企图。",
+          "chapter_title": "回声如潮",
+          "participants": ["麦珂", "苏菲亚", "各地编辑", "读者（群像）"],
+          "opening_conflict": "奥瑞恩试图强行介入地方报纸，要求撤回或修改报道，但遭到编辑们的集体抵制。",
+          "info_gap_use": "麦珂预知读者会对“清醒”产生强烈共鸣，因此设计了开放式问题，引导公众自行构建理解框架。",
+          "opponent_reaction": "维克多疯狂致电各地报社，声称信件是伪造的，要求立即停止分发，却发现自己被无数读者的真实反馈淹没。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "芝加哥某地方报社编辑部",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "编辑打开信封，朗读裁决书末尾的小字，全场寂静。"
+            },
+            {
+              "sequence": 2,
+              "location": "麦珂的书房",
+              "is_primary": false,
+              "temporal_mode": "current",
+              "transition_cue": "苏菲亚将堆积如山的回信呈递给麦珂。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_417_MAIL_BATCH",
+              "timeline_scope": "current",
+              "purpose": "作为引发回信的源头证据。"
+            }
+          ],
+          "action_sequence": [
+            "各地编辑阅读信件，被“仅确认清醒”这句话震撼，纷纷决定全文刊登。",
+            "读者们在明信片上写下自己的疑问和经历，探讨“清醒”的意义。",
+            "回信如雪片般飞向报社和麦珂的信箱。",
+            "麦珂在书房中翻阅着来自不同州、不同阶层的回信，眼中闪烁着光芒。",
+            "维克多看着满桌的抗议信和质疑电话，终于明白自己输掉了这场战争。"
+          ],
+          "visible_payoff": "五十七个城市同时响起“清醒”的声音，公众讨论的焦点完全转移到“清醒”本身，奥瑞恩的“康复”叙事彻底破产。",
+          "ending": "深夜，麦珂合上一本厚厚的回信集，上面密密麻麻写满了“我确认此人今日清醒”。她知道，这才是真正的胜利。",
+          "must_include": ["读者回信的具体内容示例", "编辑们对裁决书的反应", "维克多的挫败感"],
+          "must_not_include": ["麦珂的直接发言", "未来的技术词汇", "康拉德的介入"],
+          "detailed_synopsis": "次日清晨，五十七家地方报社几乎同时收到了那份特殊的信件。当编辑们读到裁决书末尾那句“本案不涉及治愈，仅确认清醒”时，原本准备好的“康复”通稿被瞬间弃置。取而代之的是对这句话的深度解读和转载。读者们在空白明信片上写下了他们的思考：“清醒是一种选择吗？”“如果清醒意味着痛苦，为什么还要坚持？”“我确认此人今日清醒。”这些声音汇聚成一股强大的洪流，迅速席卷全美。麦珂的书房里，苏菲亚将一叠叠回信放在桌上，每一封都承载着普通人的力量。维克多·斯特林在奥瑞恩总部看着不断涌入的负面评价和读者质疑，终于崩溃。他试图联系各地报社要求撤稿，却被一一回绝。他意识到，自己精心构建的“康复”叙事已经被“清醒”的真相彻底击碎。公众不再关心麦珂是否痊愈，只关心她是否清醒。这种认知的转变是不可逆的，它标志着麦珂真正掌握了舆论的解释权，也为即将到来的最终决战奠定了坚实的认知基础。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2005",
+    "character_states": [
+      {
+        "character_id": "MC",
+        "state_key": "public_influence_level",
+        "value": "master_of_narrative",
+        "description": "麦珂成功将公众认知锚点从“康复”转向“清醒”，掌握了舆论解释权。"
+      },
+      {
+        "character_id": "VICTOR",
+        "state_key": "strategy_effectiveness",
+        "value": "failed_media_manipulation",
+        "description": "奥瑞恩集团的公关策略彻底失败，被迫承认无法在法律和道德层面击败麦珂。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_pair": "MC_FAMILIES",
+        "state_key": "trust_level",
+        "value": "peak_support",
+        "description": "家族成员对麦珂的信任达到顶峰，从被动跟随转为主动捍卫。"
+      },
+      {
+        "entity_pair": "MC_PUBLIC",
+        "state_key": "perception_shift",
+        "value": "clarity_over_recovery",
+        "description": "公众对麦珂的认知从“是否痊愈”转变为“是否清醒”。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset_id": "RIGHT_VL_TRUST_EXECUTION",
+        "state_key": "public_narrative_control",
+        "value": "secured_by_public_consensus",
+        "description": "麦珂通过公众共识巩固了对自身形象的控制权，为后续信托管理权的行使提供了舆论保障。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "character_id": "MC",
+        "state_key": "mental_state",
+        "value": "fully_competent_and_strategic",
+        "description": "麦珂展现出极高的战略智慧，成功化解了奥瑞恩的舆论攻势。"
+      }
+    ],
+    "open_threads": [
+      "‘永恒星光’计划的启动细节",
+      "神秘挂号信中提到的‘怕针’背后的含义",
+      "维克多·斯特林内部录音的后续影响"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团试图通过媒体操控将麦珂定义为“康复者”或“悲剧人物”的企图已被彻底粉碎。"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "随着司法途径和舆论战的彻底失败，奥瑞恩集团将启动‘永恒星光’计划，麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题，同时应对资本市场的全面围剿。神秘挂号信的出现预示着敌人将采取更极端的手段。"
+  }
+}

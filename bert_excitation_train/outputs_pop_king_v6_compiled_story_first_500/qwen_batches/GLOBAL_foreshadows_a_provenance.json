@@ -1,0 +1,85 @@
+{
+  "generated_by": "qwen",
+  "kind": "foreshadows_a",
+  "identifier": "GLOBAL",
+  "accepted_attempt": 4,
+  "base_prompt_sha256": "3eaecbda8ba3b49a6d7ed0ffaaec7aee02612e8b50e4884f4fdf0c505ab08bf7",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-12T20:59:12+08:00",
+      "prompt_sha256": "3eaecbda8ba3b49a6d7ed0ffaaec7aee02612e8b50e4884f4fdf0c505ab08bf7",
+      "raw_response_sha256": "23e40990d27562cd5a6340224015cc40a30d0195acfc6c869ebce5d6c1fc9a33",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_foreshadows_a_attempt_01_3eaecbda8b_raw.txt",
+      "validation_failures": [
+        "FS03把Pxx规划编号刻进了故事世界",
+        "FS06程序/法证意象过密；伏笔应优先是作品、关系、舞台选择或对手行为"
+      ],
+      "model": "qwen-long",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 42.473,
+      "usage": {
+        "input_tokens": 22180,
+        "output_tokens": 1790,
+        "total_tokens": 23970
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-12T20:59:52+08:00",
+      "prompt_sha256": "9179fff03eff2f51dfa1fe24c39927f387e81d7217fd8d87bdca887ca6f968e7",
+      "raw_response_sha256": "995cd5e7660bb421e7f77486d42fd9bdcff3387fa8725fed708c9a23c93cfd6d",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_foreshadows_a_attempt_02_3eaecbda8b_raw.txt",
+      "validation_failures": [
+        "FS03把多年保存小物件当伪法证：['完全一致']；请整条改成作品回响、舞台习惯、人物承诺、家庭选择、粉丝组织或公开立场的因果回收"
+      ],
+      "model": "qwen-long",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 40.387,
+      "usage": {
+        "input_tokens": 22279,
+        "output_tokens": 1763,
+        "total_tokens": 24042
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-12T21:00:38+08:00",
+      "prompt_sha256": "7d254d982dc6cc5eb28c3544356863359b0789d227ecefc894302bb36b0aaa6f",
+      "raw_response_sha256": "736075a2f5ed0be1057b6cecfb5ddcdb7c198a688af3b44dbf63cbe6db0175f9",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_foreshadows_a_attempt_03_3eaecbda8b_raw.txt",
+      "validation_failures": [
+        "FS04把多年保存小物件当伪法证：['完全一致']；请整条改成作品回响、舞台习惯、人物承诺、家庭选择、粉丝组织或公开立场的因果回收"
+      ],
+      "model": "qwen-long",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 45.468,
+      "usage": {
+        "input_tokens": 22285,
+        "output_tokens": 1710,
+        "total_tokens": 23995
+      }
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-12T21:01:19+08:00",
+      "prompt_sha256": "6d6c7481da2c71eee9e39866088d503c06f74921e83db105518f77214fbf2b77",
+      "raw_response_sha256": "48d86af465a11e12257c39953aeb8e2b93e8ab441abc74bc6e4e3d8b585de957",
+      "repeated_previous_response": false,
+      "raw_response_file": "GLOBAL_foreshadows_a_attempt_04_3eaecbda8b_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-long",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 40.705,
+      "usage": {
+        "input_tokens": 22285,
+        "output_tokens": 1783,
+        "total_tokens": 24068
+      }
+    }
+  ]
+}

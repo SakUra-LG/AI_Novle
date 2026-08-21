@@ -1,0 +1,74 @@
+{
+  "generated_by": "qwen",
+  "kind": "chapters_a",
+  "identifier": "MG028",
+  "accepted_attempt": 3,
+  "base_prompt_sha256": "f45f678efa743deb14929f8233a52734b0c1ea71400fc3940784b584b84b97a0",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-08T21:33:13+08:00",
+      "prompt_sha256": "f45f678efa743deb14929f8233a52734b0c1ea71400fc3940784b584b84b97a0",
+      "raw_response_sha256": "89613626ead26480cf457b299f4b68e0106e45b15b07b6abbe910bf245cbac85",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG028_chapters_a_attempt_01_raw.txt",
+      "validation_failures": [
+        "第274章为事件结算章，必须明确现实得失"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 82.318,
+      "usage": {
+        "input_tokens": 17388,
+        "output_tokens": 5325,
+        "total_tokens": 22713,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-08T21:34:43+08:00",
+      "prompt_sha256": "1725cc12552ff425892ca057ae273c9c819f1c417316e66e862c3e5f62a58ae2",
+      "raw_response_sha256": "dcba907126792eef3c9780f47fef42c1464d2bc88275367630c7ac0c97e918e3",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG028_chapters_a_attempt_02_raw.txt",
+      "validation_failures": [
+        "第275章年代技术错误：当前年代不得出现“上传”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 89.765,
+      "usage": {
+        "input_tokens": 22794,
+        "output_tokens": 5824,
+        "total_tokens": 28618,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-08T21:36:13+08:00",
+      "prompt_sha256": "47c55a1ca7cdbf64d1a50402c147a0e6839a9b70d978ad6a4f210f2e5953ca75",
+      "raw_response_sha256": "2864497199bde878f2c8e7de3f37d8b766059b7c9236e05dab8147f13558f02c",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG028_chapters_a_attempt_03_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 89.712,
+      "usage": {
+        "input_tokens": 23290,
+        "output_tokens": 5824,
+        "total_tokens": 29114,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "cluster_id": "EC015",
+  "chapter_id": 29,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "d2a8dc13308a6d25238b87627cc66500b850a91e6627d787991f44da0356b22d",
+  "raw_response_sha256": "7e754e08b4adab3b79c34229ec913cbc809ad4949b74a0c2e327ea5ac2fe909a",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 35.526,
+    "usage": {
+      "input_tokens": 5758,
+      "output_tokens": 1528,
+      "total_tokens": 7286,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "chapter_audit": {
+    "han_chars": 1445,
+    "total_chars": 1847,
+    "target_han_range": [
+      1300,
+      1800
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "failures": [
+      "未来道具ChronoBadge在其第37章启用前提前出现"
+    ]
+  },
+  "failures": [
+    "未来道具ChronoBadge在其第37章启用前提前出现"
+  ],
+  "accepted": false
+}

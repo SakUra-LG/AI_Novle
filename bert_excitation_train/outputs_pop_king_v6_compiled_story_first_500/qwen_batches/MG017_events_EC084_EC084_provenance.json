@@ -1,0 +1,35 @@
+{
+  "generated_by": "groq",
+  "kind": "events_EC084_EC084",
+  "identifier": "MG017",
+  "accepted_attempt": 1,
+  "base_prompt_sha256": "674b840cdfdfaa548e2afa51cea6998bf28a8cb17f2cd0671b0131bce25437f1",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T17:07:50+08:00",
+      "prompt_sha256": "674b840cdfdfaa548e2afa51cea6998bf28a8cb17f2cd0671b0131bce25437f1",
+      "raw_response_sha256": "b22d9b309acedce4fff5e7b1e9c4337330051a321240526485a799fadf4ac8e2",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG017_events_EC084_EC084_attempt_01_674b840cdf_raw.txt",
+      "validation_failures": [],
+      "provider": "groq",
+      "model": "qwen/qwen3.6-27b",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 44.295,
+      "usage": {
+        "queue_time": 0.070472643,
+        "prompt_tokens": 3099,
+        "prompt_time": 0.265633384,
+        "completion_tokens": 3173,
+        "completion_time": 6.396946776,
+        "total_tokens": 6272,
+        "total_time": 6.66258016
+      },
+      "capacity_model_fallbacks": [
+        "openai/gpt-oss-120b"
+      ]
+    }
+  ]
+}

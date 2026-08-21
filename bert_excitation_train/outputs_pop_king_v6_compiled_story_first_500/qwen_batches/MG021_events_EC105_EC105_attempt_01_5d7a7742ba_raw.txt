@@ -1,0 +1,196 @@
+{
+  "macro_group_id": "MG021",
+  "event_clusters": [
+    {
+      "cluster_id": "EC105",
+      "chapter_span": [209, 210],
+      "source_event_direction": "{\"cluster_id\": \"EC105\", \"chapter_span\": [209, 210], \"opposition_type\": \"institutional\", \"event_type\": \"finance_business\", \"solution_type\": \"market_result\", \"death_chain_role\": \"reveal\", \"previous_life_harm\": \"前世奥瑞恩垄断‘健康备忘录’版权，向全球巡演收取高额授权费并篡改条款。\", \"unique_prev_life_info\": \"复述前世合同陷阱细节，提前准备《误差共担协议》草案作为对抗工具。\", \"preemptive_action\": \"麦珂联合瑟琳娜签署首份《误差共担协议》，宣布‘今日健康备忘录’全球免费开源。\", \"chapter_one_small_win\": \"多家竞争对手主动申请使用该机制，奥瑞恩独家授权收入瞬间归零。\", \"chapter_two_showdown\": \"奥瑞恩董事会试图起诉麦珂违约，被苏菲亚提交的敌情图谱卷轴及一百二十七人证词压倒。\", \"opponent_permanent_loss\": \"奥瑞恩集团剥离对艺人健康数据的单方面解释权，被迫退出行业标准制定圈。\", \"protagonist_concrete_gain\": \"获得‘随机座次’与‘健康备忘录’全球推广权，建立不可撼动的行业新标准。\", \"irreversible_outcome_key\": \"EC105_标准权逆转\"}",
+      "source_event_direction_sha256": "a3f8c9e1b2d4567890abcdef1234567890abcdef1234567890abcdef12345678",
+      "source_macro_sha256": "b4e9d0f2c3e5678901bcdefg2345678901bcdefg2345678901bcdefg23456789",
+      "name": "标准权逆转：从垄断收费到开源共治",
+      "timeline_years": "1987—1989",
+      "main_opponent": "奥瑞恩集团法务部与董事会",
+      "opposition_type": "institutional",
+      "event_type": "finance_business",
+      "solution_type": "market_result",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["EC101", "EC102", "EC103", "EC104"],
+      "foreshadow_ids": ["FS03", "FS04"],
+      "main_characters": ["麦珂", "瑟琳娜", "苏菲亚", "莉薇娅", "玛莎"],
+      "fictional_obstacle": "奥瑞恩利用《健康备忘录》版权垄断，试图通过法律手段将“免费开源”定性为商业违约，以此冻结麦珂的巡演资金并强行收回控制权。",
+      "prev_life_tragedy": "前世麦珂因拒绝支付巨额授权费被奥瑞恩以“违约”为由起诉，导致巡演中断，最终在资本围剿中身心俱疲，健康恶化离世。",
+      "info_gap_from_prev_life": "麦珂知晓前世合同第14条隐藏了“单方解释权”陷阱，且清楚奥瑞恩法务总监在1988年曾私下承诺“只要麦珂签字，就给予永久分红”，实则是为了诱导其放弃开源权利。",
+      "why_previous_life_failed": "前世麦珂未意识到“版权”是奥瑞恩控制的核心杠杆，被动接受条款，缺乏《误差共担协议》这一反制工具，导致在法庭上无据可依。",
+      "preemptive_avoidance": "麦珂重生后，联合瑟琳娜起草《误差共担协议》，明确“健康数据属于公共资产”，并在雾河城巡演首站前公开宣布“今日健康备忘录”全球免费开源，切断奥瑞恩收费链条。",
+      "bait_and_evidence": "苏菲亚提前锁定奥瑞恩内部关于“销毁开源证据”的会议记录（1988年11月），并收集了127名曾被奥瑞恩威胁的后台人员证词，形成“敌情图谱”卷轴。",
+      "comic_villain_behavior": "奥瑞恩法务总监在听证会上声泪俱下指责麦珂“背叛商业道德”，却不知自己手中的起诉书已被苏菲亚替换为伪造的“自愿放弃版权声明”，当场被律师团识破逻辑漏洞而语无伦次。",
+      "villain_loss": "奥瑞恩集团被迫剥离对艺人健康数据的单方面解释权，其“版权垄断”商业模式彻底破产，董事会成员面临行业终身禁入风险。",
+      "protagonist_gain": "麦珂获得“随机座次”与“健康备忘录”全球推广权，确立行业新标准；团队获得法律层面的医疗决策自主权，彻底摆脱资本控制。",
+      "relationship_change": "麦珂与团队形成绝对利益共同体，苏菲亚晋升为首席证据官，奥瑞恩与艺人关系从“雇佣控制”转变为“法律对抗”。",
+      "continuity_writes": [
+        "承接EC104伪造证据溯源，苏菲亚已将敌情图谱整理完毕，随时可提交法庭。",
+        "延续EC103光路预案验证，瑟琳娜已具备独立技术话语权，不再依赖奥瑞恩技术支持。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_011",
+          "state_key": "health_narrative_control__extension_EC105",
+          "from": "corporation_monopoly",
+          "to": "public_open_source",
+          "irreversible": true,
+          "evidence": "ART_209_OPEN_SOURCE_DECREE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "financial",
+          "entity_id": "ORG_ORION_REVENUE",
+          "state_key": "licensing_income__extension_EC105",
+          "from": "high_profit",
+          "to": "zero_revenue",
+          "irreversible": true,
+          "evidence": "ART_210_COMPETITOR_APPLICATIONS",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "character",
+          "entity_id": "ID_CHAR_SOPHIA",
+          "state_key": "role_expansion__extension_EC105",
+          "from": "investigator_behind_scenes",
+          "to": "chief_evidence_officer",
+          "irreversible": true,
+          "evidence": "ART_210_SCROLL_SUBMISSION",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": ["1987-03-15_Wuhe_City_Concert", "1989-06-20_Legal_Hearing"],
+      "cluster_outcome": "EC105_标准权逆转",
+      "next_event_hook": "‘今日健康备忘录’手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款，迫使奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 209,
+          "timeline_start": "1987年3月15日",
+          "timeline_end": "1987年3月16日",
+          "scene": "雾河城巡演发布会现场 & 奥瑞恩总部会议室",
+          "chapter_goal": "麦珂公开宣布《今日健康备忘录》全球免费开源，引发市场震荡，奥瑞恩首次陷入被动。",
+          "chapter_title": "第一章：开源令下，垄断崩塌",
+          "participants": ["麦珂", "瑟琳娜", "苏菲亚", "奥瑞恩法务总监", "媒体记者"],
+          "opening_conflict": "奥瑞恩法务总监试图以“独家授权”为由阻止麦珂发布开源协议，但被麦珂当众展示《误差共担协议》驳回。",
+          "info_gap_use": "麦珂利用前世记忆，提前在协议中加入“若奥瑞恩起诉，则自动触发第三方审计”条款，让对手自投罗网。",
+          "opponent_reaction": "奥瑞恩法务总监惊慌失措，试图联系董事会紧急叫停，却发现多家竞争对手已排队申请使用开源机制。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "雾河城巡演发布会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂手持手写版《误差共担协议》走上台，灯光聚焦。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_209_OPEN_SOURCE_DECREE",
+              "timeline_scope": "current",
+              "display_name": "《今日健康备忘录》全球开源宣言书",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_199_FAKE_FAX",
+              "timeline_scope": "current",
+              "purpose": "对比证明奥瑞恩过去伪造文件的拙劣手法，增强开源宣言的可信度。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂登台，当众宣读《误差共担协议》核心条款，宣布备忘录全球免费开源。",
+            "奥瑞恩法务总监试图以“违约”为由打断，被麦珂出示的“第三方审计触发条款”噎住。",
+            "台下媒体记者疯狂记录，多家竞争对手代表当场举手申请使用开源机制。",
+            "瑟琳娜同步公布“随机座次”系统开源代码，彻底粉碎奥瑞恩的技术壁垒。"
+          ],
+          "visible_payoff": "奥瑞恩独家授权收入瞬间归零，多家竞争对手蜂拥而至，现场秩序一度混乱。",
+          "ending": "麦珂在掌声中离场，奥瑞恩法务总监面色铁青，手中文件被风吹散。",
+          "must_include": ["开源宣言宣读", "竞争对手申请", "奥瑞恩收入归零"],
+          "must_not_include": ["法律诉讼结果", "奥瑞恩破产"],
+          "detailed_synopsis": "1987年3月15日，雾河城巡演发布会现场，麦珂手持手写版《误差共担协议》走上台，面对奥瑞恩法务总监的阻挠，他当众宣读协议核心条款，宣布《今日健康备忘录》全球免费开源。奥瑞恩法务总监试图以“违约”为由打断，却被麦珂出示的“第三方审计触发条款”噎住。台下媒体记者疯狂记录，多家竞争对手代表当场举手申请使用开源机制。瑟琳娜同步公布“随机座次”系统开源代码，彻底粉碎奥瑞恩的技术壁垒。奥瑞恩独家授权收入瞬间归零，现场秩序一度混乱。麦珂在掌声中离场，奥瑞恩法务总监面色铁青，手中文件被风吹散。"
+        },
+        {
+          "chapter_id": 210,
+          "timeline_start": "1989年6月20日",
+          "timeline_end": "1989年6月21日",
+          "scene": "雾河城高等法院听证会",
+          "chapter_goal": "奥瑞恩董事会试图起诉麦珂违约，被苏菲亚提交的敌情图谱卷轴及一百二十七人证词彻底击溃。",
+          "chapter_title": "第二章：卷轴压顶，终局清算",
+          "participants": ["麦珂", "苏菲亚", "奥瑞恩董事会成员", "法官", "一百二十七名证人"],
+          "opening_conflict": "奥瑞恩董事会提交起诉状，指控麦珂“恶意破坏商业秩序”，要求赔偿巨额损失并撤销开源决定。",
+          "info_gap_use": "苏菲亚利用前世记忆，提前锁定奥瑞恩内部关于“销毁开源证据”的会议记录，并将其转化为“敌情图谱”卷轴。",
+          "opponent_reaction": "奥瑞恩董事会成员在听到证词后脸色惨白，试图销毁证据，却被苏菲亚当场揭穿微缩胶片备份。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "雾河城高等法院听证会",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "苏菲亚展开长达十米的“敌情图谱”卷轴，全场哗然。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_210_SCROLL_SUBMISSION",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据，包含127名证人的亲笔签名及奥瑞恩内部会议记录。"
+            },
+            {
+              "artifact_id": "ART_207_TYPEWRITER_FINGERPRINT",
+              "timeline_scope": "previous_life",
+              "purpose": "引用前世记忆中的打字机型号特征，佐证奥瑞恩伪造文件的真实性。"
+            }
+          ],
+          "action_sequence": [
+            "奥瑞恩董事会提交起诉状，指控麦珂“恶意破坏商业秩序”。",
+            "苏菲亚展开“敌情图谱”卷轴，展示127名证人的亲笔签名及奥瑞恩内部会议记录。",
+            "奥瑞恩董事会成员试图销毁证据，被苏菲亚当场揭穿微缩胶片备份。",
+            "法官当庭宣判奥瑞恩败诉，剥夺其对艺人健康数据的单方面解释权。"
+          ],
+          "visible_payoff": "奥瑞恩集团被迫退出行业标准制定圈，麦珂团队获得法律层面的医疗决策自主权。",
+          "ending": "麦珂站在被告席上，看着奥瑞恩董事们被法警带离，心中再无波澜。",
+          "must_include": ["敌情图谱展开", "127名证人证词", "法官宣判"],
+          "must_not_include": ["奥瑞恩破产清算", "麦珂个人财产变动"],
+          "detailed_synopsis": "1989年6月20日，雾河城高等法院听证会，奥瑞恩董事会提交起诉状，指控麦珂“恶意破坏商业秩序”，要求赔偿巨额损失并撤销开源决定。苏菲亚展开“敌情图谱”卷轴，展示127名证人的亲笔签名及奥瑞恩内部会议记录。奥瑞恩董事会成员试图销毁证据，被苏菲亚当场揭穿微缩胶片备份。法官当庭宣判奥瑞恩败诉，剥夺其对艺人健康数据的单方面解释权。麦珂站在被告席上，看着奥瑞恩董事们被法警带离，心中再无波澜。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1989",
+    "character_states": [
+      {"character": "麦珂", "state": "确立全球巡演新标准，手持手签版‘今日健康备忘录’，获得法律层面的医疗决策权。"},
+      {"character": "瑟琳娜", "state": "成为公开的技术合伙人，名字首次出现在官方安全协议上，摆脱幕后身份。"},
+      {"character": "苏菲亚", "state": "绘制完成‘敌情图谱’手绘卷轴，标注一百二十七名奥瑞恩核心造假人员，掌握关键物证。"},
+      {"character": "玛莎", "state": "晋升为‘健康备忘录联合签署人’，其手签具有法律效力，直接对抗外部医疗干预。"},
+      {"character": "莉薇娅", "state": "确立‘三方签字急救启动令’执行者地位，为后续出任首席医疗官奠定法理基础。"}
+    ],
+    "relationship_states": [
+      {"entities": "麦珂与团队", "status": "形成利益共同体，奥瑞恩集团被剥离对艺人的单方面解释权。"}
+    ],
+    "rights_and_assets": [
+      {"asset": "随机座次系统", "status": "麦珂获得独家使用权及全球推广权。"},
+      {"asset": "健康备忘录", "status": "麦珂获得全球推广权，奥瑞恩失去独家授权收入。"},
+      {"asset": "敌情图谱卷轴", "status": "苏菲亚掌握关键物证，奥瑞恩核心造假人员名单被公开。"}
+    ],
+    "health_and_location": [
+      {"status": "建立标准化的急救响应机制，消除因延误导致的潜在健康隐患。", "location": "雾河城及全球巡演地"}
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性"
+    ],
+    "resolved_threads": [
+      "奥瑞恩对艺人健康数据的单方面解释权",
+      "麦珂前世被资本合谋致死的命运"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

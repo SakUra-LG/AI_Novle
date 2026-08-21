@@ -1,0 +1,136 @@
+{
+  "cluster_id": "EC019",
+  "chapter_id": 38,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "10442be5991976ae72cb2967f5e78346ae785f231924efea1ebe46eb892ebd28",
+  "base_prompt_sha256": "10442be5991976ae72cb2967f5e78346ae785f231924efea1ebe46eb892ebd28",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "c397bc8bf55305d7553f098b6ab406e2cb2a33b5fb80da1360cfee031e50e648",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 21.848,
+    "usage": {
+      "prompt_tokens": 8454,
+      "completion_tokens": 1188,
+      "total_tokens": 9642,
+      "prompt_tokens_details": {
+        "cached_tokens": 4555
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 19,
+    "through_chapter": 38,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "40d977cdafb6c7ba3e8ab2843e44671b47da4452cce385ddc64fc9c6dfe655bb",
+    "chapter_card_prefix_sha256": "281473a5b076278e5a7fb3fe482f49cf7fde0f39d65d0872d5be7ed64e9c8100",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "531db815afbaa54a12c741e26880ef69b5851c0ec6d85572ce46f30dacdcb302"
+  },
+  "cluster_sha256": "23566231ec1ca5b250d80b61ec1ec943b6aa6f9b270ff1cfa54377efbda45224",
+  "card_sha256": "6749e72a956b61e1a9180580471426b96ec3f032cbe23b2906bc2deb855d3bb4",
+  "chapter_audit": {
+    "han_chars": 1650,
+    "total_chars": 1915,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "孩子背不出台词",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "记者追问",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      },
+      {
+        "anchor": "麦珂演讲",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "community_trust_level__extension_EC019",
+        "target": "社区绝对信任的公益领袖",
+        "evidence_terms": [
+          "社区居民联名签署",
+          "的支持信与媒体报"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "industry_credibility__extension_EC019",
+        "target": "信誉受损（被问责）",
+        "evidence_terms": [
+          "媒体曝光乔纳操纵",
+          "舆论的证据"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "trust_dynamic__extension_EC019",
+        "target": "紧密同盟与深度信任",
+        "evidence_terms": [
+          "社区代表在发布会",
+          "现场为麦珂站台"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0474,
+    "scene_evidence": [
+      {
+        "location": "银湾市街头",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文没有兑现章卡关键事实“记者追问”",
+      "正文没有兑现章卡关键事实“麦珂演讲”",
+      "正文没有通过现场动作兑现状态转移community_trust_level__extension_EC019→社区绝对信任的公益领袖",
+      "正文没有通过现场动作兑现状态转移industry_credibility__extension_EC019→信誉受损（被问责）",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__extension_EC019→紧密同盟与深度信任",
+      "正文未落到规划场景“银湾市街头”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“记者追问”",
+      "正文没有兑现章卡关键事实“麦珂演讲”",
+      "正文没有通过现场动作兑现状态转移community_trust_level__extension_EC019→社区绝对信任的公益领袖",
+      "正文没有通过现场动作兑现状态转移industry_credibility__extension_EC019→信誉受损（被问责）",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__extension_EC019→紧密同盟与深度信任",
+      "正文未落到规划场景“银湾市街头”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

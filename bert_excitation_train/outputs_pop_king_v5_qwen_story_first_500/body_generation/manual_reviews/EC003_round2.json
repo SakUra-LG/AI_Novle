@@ -1,0 +1,18 @@
+{
+  "cluster_id": "EC003",
+  "review_round": 2,
+  "reviewed_chapters": [5, 6],
+  "reviewer": "codex_full_text_inspection",
+  "decision": "regenerate_cluster",
+  "body_manually_edited": false,
+  "improvements": [
+    "第6章已明确划掉奥瑞恩指定制作人名单并确认Demo终审权",
+    "两章字数和基本语言格式均合格"
+  ],
+  "actual_failures": [
+    "第5章提前写掉第6章的第十一次试听、摔耳机和钥匙交接，造成第6章重复演出",
+    "第5章误写第一次声纹锚定在出生证明上，与EC001的后台原声磁带不一致",
+    "第5章提前消耗事件簇末章收益，章节边界失效"
+  ],
+  "required_action": "第一章提示隐藏末章专属损失与收益，并将跨章连续重复阈值降为55字；由Qwen完整重生成EC003。"
+}

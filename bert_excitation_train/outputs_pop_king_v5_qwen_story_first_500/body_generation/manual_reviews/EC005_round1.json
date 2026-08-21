@@ -1,0 +1,19 @@
+{
+  "cluster_id": "EC005",
+  "review_round": 1,
+  "reviewed_chapters": [9, 10],
+  "reviewer": "codex_full_text_inspection",
+  "decision": "regenerate_cluster",
+  "body_manually_edited": false,
+  "strengths": [
+    "判例汇编的‘无效’二字和维克多撞翻物件的慌乱具有可见反差",
+    "第10章已写到乔纳让出签字权、玛莎笔记和昆廷赠送混音台"
+  ],
+  "actual_failures": [
+    "第9章含Markdown加粗符号",
+    "第9章把数周前公证事件误写成‘三年前’",
+    "第10章夹入英文小写词‘crumbs’",
+    "第10章把十一岁误写成‘十一年前’，造成无依据的十一年时间跳跃"
+  ],
+  "required_action": "增加Markdown、英文小写叙述词与本阶段相对时间误写检查，由Qwen完整重生成EC005。"
+}

@@ -1,0 +1,29 @@
+{
+  "planning_version": "v4_qwen_250_events_500_chapters",
+  "passed": false,
+  "counts": {
+    "volume_blueprints": 10,
+    "macro_groups": 50,
+    "event_clusters": 5,
+    "chapter_synopses": 10
+  },
+  "expected_qwen_batches": 160,
+  "valid_qwen_provenance": 12,
+  "average_event_detail_chars": 1597.4,
+  "average_chapter_synopsis_chars": 323.6,
+  "failures": [
+    "event_clusters应为250，实际为5",
+    "chapter_synopses应为500，实际为10",
+    "manifest complete不是true",
+    "EC001缺少完整六步重生反击闭环",
+    "EC002缺少完整六步重生反击闭环",
+    "EC003缺少完整六步重生反击闭环",
+    "EC004缺少完整六步重生反击闭环",
+    "EC005缺少完整六步重生反击闭环",
+    "缺少Qwen来源记录147份：['MG002_events_provenance.json', 'MG002_chapters_a_provenance.json', 'MG002_chapters_b_provenance.json', 'MG003_events_provenance.json', 'MG003_chapters_a_provenance.json', 'MG003_chapters_b_provenance.json', 'MG004_events_provenance.json', 'MG004_chapters_a_provenance.json', 'MG004_chapters_b_provenance.json', 'MG005_events_provenance.json']",
+    "无效Qwen来源记录1份：['MG001_chapters_b_provenance.json']"
+  ],
+  "warnings": [
+    "重复章名：['父权裂缝与母职赋权', '录音存档与母带主权']"
+  ]
+}

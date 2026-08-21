@@ -1,0 +1,41 @@
+{
+  "generated_by": "groq",
+  "kind": "events_EC067_EC067",
+  "identifier": "MG014",
+  "accepted_attempt": "01",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "base_prompt_sha256": "197b34b3ced63e7f4cd8f104b86f7c8859eaebe7ca8e70d0439d074e193ceb7c",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T16:41:24+08:00",
+      "prompt_sha256": "197b34b3ced63e7f4cd8f104b86f7c8859eaebe7ca8e70d0439d074e193ceb7c",
+      "raw_response_sha256": "be92483d02d063b574c01e7dd031e97862b3b82b069ff1a88686667951b5977f",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG014_events_EC067_EC067_attempt_01_197b34b3ce_raw.txt",
+      "validation_failures": [
+        "EC067.chapter133.must_include至少3项",
+        "EC067.chapter133必须提供合法timeline_start/timeline_end",
+        "EC067.chapter134.must_include至少3项",
+        "EC067.chapter134必须提供合法timeline_start/timeline_end"
+      ],
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 62.183,
+      "usage": {
+        "queue_time": 0.375304414,
+        "prompt_tokens": 3535,
+        "prompt_time": 0.163167993,
+        "completion_tokens": 2957,
+        "completion_time": 6.144381653,
+        "total_tokens": 6492,
+        "total_time": 6.307549646,
+        "completion_tokens_details": {
+          "reasoning_tokens": 33
+        }
+      }
+    }
+  ]
+}

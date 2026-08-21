@@ -1,0 +1,189 @@
+[
+  {
+    "unit_index": 1,
+    "unit_count": 6,
+    "dramatic_function": "对手先施压",
+    "objective": "从对手正准备接受、利用或阻挠主角提议的当下切入。",
+    "locked_facts": [
+      "卡尔·霍尔特犹豫不决"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "卡尔·霍尔特"
+    ],
+    "allowed_carriers": [],
+    "required_carriers": [],
+    "all_chapter_carriers": [
+      "隐藏总表"
+    ],
+    "required_semantic_anchors": [],
+    "memory_allowed": false,
+    "result_allowed": false,
+    "functional_decision_required": false,
+    "target_min_chars": 276,
+    "target_max_chars": 308,
+    "paragraph_mode": "短对白迅速建立压力",
+    "scene_archetype": "action_confrontation"
+  },
+  {
+    "unit_index": 2,
+    "unit_count": 6,
+    "dramatic_function": "主角抢先改变条件",
+    "objective": "主角依据前世信息差改变一个当前条件，让对手按稳定性格自行出招。",
+    "locked_facts": [
+      "提出加场演出请求试探排期"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "麦珂·杰森"
+    ],
+    "allowed_carriers": [],
+    "required_carriers": [],
+    "all_chapter_carriers": [
+      "隐藏总表"
+    ],
+    "required_semantic_anchors": [
+      "排期"
+    ],
+    "memory_allowed": true,
+    "result_allowed": false,
+    "functional_decision_required": false,
+    "target_min_chars": 304,
+    "target_max_chars": 339,
+    "paragraph_mode": "行动段略长，不先解释计划",
+    "scene_archetype": "action_confrontation"
+  },
+  {
+    "unit_index": 3,
+    "unit_count": 6,
+    "dramatic_function": "利益与情绪代价",
+    "objective": "写清当前选择会改变的现实利益和人物关系，不增加外部线索。",
+    "locked_facts": [],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "allowed_carriers": [],
+    "required_carriers": [],
+    "all_chapter_carriers": [
+      "隐藏总表"
+    ],
+    "required_semantic_anchors": [],
+    "memory_allowed": false,
+    "result_allowed": false,
+    "functional_decision_required": false,
+    "target_min_chars": 249,
+    "target_max_chars": 277,
+    "paragraph_mode": "一长一短两段",
+    "scene_archetype": "action_confrontation"
+  },
+  {
+    "unit_index": 4,
+    "unit_count": 6,
+    "dramatic_function": "对手留下不可撤回破绽",
+    "objective": "对手的选择必须留下当场可见且不可撤回的破绽，不增加外部证据。",
+    "locked_facts": [
+      "卡尔为抢加场功劳亲手交出隐藏总表",
+      "当前允许载体：隐藏总表"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "卡尔·霍尔特"
+    ],
+    "allowed_carriers": [
+      "隐藏总表"
+    ],
+    "required_carriers": [],
+    "all_chapter_carriers": [
+      "隐藏总表"
+    ],
+    "required_semantic_anchors": [
+      "总表",
+      "隐藏总表"
+    ],
+    "memory_allowed": false,
+    "result_allowed": false,
+    "functional_decision_required": false,
+    "target_min_chars": 331,
+    "target_max_chars": 370,
+    "paragraph_mode": "选择与破绽连续出现",
+    "scene_archetype": "action_confrontation"
+  },
+  {
+    "unit_index": 5,
+    "unit_count": 6,
+    "dramatic_function": "主角同场反卡",
+    "objective": "让主角利用对手留下的破绽完成当面反卡，并迫使有权者改变判断；最终处分或收益留给下一单元。",
+    "locked_facts": [],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "麦珂·杰森"
+    ],
+    "allowed_carriers": [],
+    "required_carriers": [],
+    "all_chapter_carriers": [
+      "隐藏总表"
+    ],
+    "required_semantic_anchors": [],
+    "memory_allowed": false,
+    "result_allowed": false,
+    "functional_decision_required": true,
+    "target_min_chars": 331,
+    "target_max_chars": 369,
+    "paragraph_mode": "反卡和判断紧密相连",
+    "scene_archetype": "action_confrontation"
+  },
+  {
+    "unit_index": 6,
+    "unit_count": 6,
+    "dramatic_function": "结果生效与反应",
+    "objective": "以利益变化及对手直接反应收束，不另开调查支线。",
+    "locked_facts": [
+      "麦珂当场否决当日加场；冻结超载排期",
+      "当前允许载体：隐藏总表"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "卡尔·霍尔特",
+      "麦珂·杰森"
+    ],
+    "allowed_carriers": [
+      "隐藏总表"
+    ],
+    "required_carriers": [],
+    "all_chapter_carriers": [
+      "隐藏总表"
+    ],
+    "required_semantic_anchors": [
+      "排期",
+      "总表",
+      "隐藏总表"
+    ],
+    "memory_allowed": false,
+    "result_allowed": true,
+    "functional_decision_required": true,
+    "target_min_chars": 249,
+    "target_max_chars": 277,
+    "paragraph_mode": "锋利对白后立即结束",
+    "scene_archetype": "action_confrontation"
+  }
+]

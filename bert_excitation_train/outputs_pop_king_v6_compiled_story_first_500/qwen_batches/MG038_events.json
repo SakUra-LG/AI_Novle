@@ -1,0 +1,1134 @@
+{
+  "macro_group_id": "MG038",
+  "event_clusters": [
+    {
+      "cluster_id": "EC186",
+      "chapter_span": [
+        371,
+        372
+      ],
+      "source_event_direction": "前世具体受害：巴里利用传真缺页伪造授权，导致麦珂家族在听证会前夜被迫接受资产置换。；本事件独有的前世信息差：2001年冬维克多团队曾测试电子系统响应速度，巴里习惯遗漏关键附件。；今生提前动作：麦珂提前要求苏菲亚将核心授权书以微缩胶片形式封存并同步手写索引。；第371章可见小赢：巴里提交伪造的电子版时，麦珂当场出示未加密的物理胶片原件作为对比。；第372章新交锋：莉薇娅在场见证下宣布电子数据因缺乏物理介质锚点而无效，驳回自动续约提案。；阻力方永久现实损失：巴里·布鲁姆被行业自律委员会暂停从业资格两年，奥瑞恩集团对其信任崩塌。；主角现实收益：‘棱镜协议’二期物理介质优先原则被写入法律文本，确立离线审计链不可篡改。；不可逆结算键：物理介质锚定生效；接回死亡控制主线：切断数字篡改路径，防止前世因信息差导致的资产流失重演。",
+      "source_event_direction_sha256": "eff7df75d57a0326cf0ddb7e9b1be3e22c88616a1f4f08124b10a9bea6fba943",
+      "source_macro_sha256": "461a2eca4629c440d0d0ea42e4c1e61fa21871ab46e96034ef1f3f72dd9e46e8",
+      "name": "胶片与幽灵：物理锚点的审判",
+      "timeline_years": "2001",
+      "main_opponent": "巴里·布鲁姆",
+      "opposition_type": "villain",
+      "event_type": "contract_rights",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS11"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "巴里·布鲁姆",
+        "苏菲亚",
+        "莉薇娅·普莱斯",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "巴里·布鲁姆提交的电子版授权书包含自动续约条款，声称符合“数字化效率”标准，且系统显示验证通过；实际上这是利用2001年早期网络传输不稳定的特性，伪造了缺失关键附件的传真记录。",
+      "prev_life_tragedy": "前世听证会前夜，巴里·布鲁姆利用传真机缺页漏洞，伪造了完整的电子授权，导致麦珂家族被迫接受资产置换，最终失去场馆控制权。",
+      "info_gap_from_prev_life": "麦珂清楚记得2001年冬维克多团队曾测试电子系统响应速度，且巴里·布鲁姆习惯在传真中遗漏关键附件（如第375章的授权书缺页），他知晓这一流程漏洞。",
+      "why_previous_life_failed": "过度依赖当时的电子传输系统，未建立物理介质备份机制，导致被对手利用信息差和系统漏洞进行伪造。",
+      "preemptive_avoidance": "麦珂提前要求苏菲亚将核心授权书以微缩胶片形式封存，并同步手写索引，确保物理原件存在且可即时比对。",
+      "bait_and_evidence": "巴里·布鲁姆提交伪造的电子版时，麦珂当场出示未加密的物理胶片原件作为对比，揭露电子数据缺乏物理介质锚点，且内容缺失关键附件。",
+      "comic_villain_behavior": "巴里·布鲁姆在众人面前坚持电子数据的权威性，甚至试图用“系统自动校验通过”来搪塞，结果在展示原始胶片时因惊慌失措而打翻了手中的咖啡，弄脏了伪造的文件，显得滑稽可笑。",
+      "villain_loss": "巴里·布鲁姆因伪造证据被行业自律委员会暂停从业资格两年，奥瑞恩集团对其信任崩塌，彻底失去职业信誉。",
+      "protagonist_gain": "‘棱镜协议’二期物理介质优先原则被写入法律文本，确立离线审计链不可篡改，麦珂家族成功守住场馆控制权。",
+      "relationship_change": "莉薇娅·普莱斯对麦珂的信任加深，正式签署《场馆安全独立评估书》，成为麦珂家族在行业内的强力盟友。",
+      "continuity_writes": [
+        "麦珂利用前世记忆精准预判对手策略，成功逆转局势。",
+        "物理介质优先原则的确立为后续‘时间褶皱’档案调查奠定基础。",
+        "巴里·布鲁姆的失误暴露了其长期介入档案篡改的嫌疑，为后续审判埋下伏笔。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_019",
+          "state_key": "commercial_verification_status__extension_EC186",
+          "from": "none",
+          "to": "physically_verified_market_success",
+          "irreversible": true,
+          "evidence": "ART_370_BACKUP_FILM + LIVE_COMPARISON_DEMO",
+          "effect_type": "protagonist_gain",
+          "source_domain": "rights:RIGHT_VL_019",
+          "source_entity_id": "commercial_verification_status",
+          "source_state_key": "commercial_verification_status"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_019_COMMUNITY_TRUST",
+          "state_key": "physical_audit_chain_established",
+          "from": "suspected_fraud",
+          "to": "verified_legitimacy",
+          "irreversible": true,
+          "evidence": "ART_369_FINGERPRINT_MATCH + BARRY_FORGERY_EXPOSED",
+          "effect_type": "villain_loss",
+          "source_domain": "rights:RIGHT_VL_019_COMMUNITY_TRUST",
+          "source_entity_id": "legally_verified_public_benefit"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_2001_WINTER_TEST"
+      ],
+      "cluster_outcome": "巴里·布鲁姆伪造行为被当场揭穿，物理介质优先原则确立，麦珂家族成功守住场馆控制权，维克多·兰斯的‘自动化续约’陷阱破产。",
+      "next_event_hook": "‘时间褶皱’档案二期启动后，1999年除夕夜磁带外壳上的半枚油渍指纹线索将直接触发深入调查，证明巴里·布鲁姆长期介入档案篡改，为审判阶段埋下关键旁证。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 371,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "听证室主舞台",
+          "chapter_goal": "巴里·布鲁姆提交伪造的电子版授权书，麦珂当场出示物理胶片原件进行对比，揭露伪造行为。",
+          "chapter_title": "胶片的证词",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "苏菲亚",
+            "莉薇娅·普莱斯",
+            "委员会成员"
+          ],
+          "opening_conflict": "巴里·布鲁姆自信满满地展示电子版授权书，声称系统已自动验证通过，准备推动自动续约。",
+          "info_gap_use": "麦珂利用前世记忆，知道巴里·布鲁姆习惯在传真中遗漏关键附件，提前准备了物理胶片备份。",
+          "opponent_reaction": "巴里·布鲁姆起初不屑一顾，认为物理胶片是过时的手段，但在看到胶片内容与电子数据不符时，开始慌乱。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证室主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里·布鲁姆展示电子屏幕，麦珂示意苏菲亚拿出胶片"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_370_BACKUP_FILM",
+              "timeline_scope": "current",
+              "purpose": "作为物理介质原件，与巴里·布鲁姆提交的电子版进行实时对比，揭露缺失附件。"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆在屏幕上展示电子版授权书，强调系统验证通过。",
+            "麦珂冷静指出电子数据缺乏物理介质锚点，要求查看原始文件。",
+            "苏菲亚取出微缩胶片，麦珂当场投影放大，逐行比对。",
+            "发现电子版缺少关键附件，且部分文字被篡改，巴里·布鲁姆脸色大变。",
+            "巴里·布鲁姆试图辩解是系统错误，但麦珂指出这是巴里·布鲁姆惯用的手法。"
+          ],
+          "visible_payoff": "物理胶片原件清晰显示完整授权内容，与电子版形成鲜明对比，巴里·布鲁姆的伪造行为被当场坐实。",
+          "ending": "巴里·布鲁姆在众目睽睽下无法自圆其说，陷入尴尬境地，委员会成员开始质疑其诚信。",
+          "must_include": [
+            "物理胶片与电子版的对比演示",
+            "巴里·布鲁姆因慌乱打翻咖啡的细节",
+            "必须呈现信息差的实际使用：麦珂利用前世记忆，知道巴里·布鲁姆习惯在传真中遗漏关键附件，提前准备了物理胶片备份。"
+          ],
+          "must_not_include": [
+            "康拉德出场",
+            "未来技术词汇如二维码、远程档案库"
+          ],
+          "detailed_synopsis": "听证会现场，巴里·布鲁姆自信地展示电子版授权书，声称系统已自动验证通过，准备推动自动续约。麦珂却冷静指出电子数据缺乏物理介质锚点，要求查看原始文件。苏菲亚随即取出微缩胶片，麦珂当场投影放大，逐行比对。发现电子版缺少关键附件，且部分文字被篡改，巴里·布鲁姆脸色大变。巴里·布鲁姆试图辩解是系统错误，但麦珂指出这是巴里·布鲁姆惯用的手法，并回忆起前世维克多团队曾测试电子系统响应速度的细节。巴里·布鲁姆在众人面前坚持电子数据的权威性，甚至试图用“系统自动校验通过”来搪塞，结果在展示原始胶片时因惊慌失措而打翻了手中的咖啡，弄脏了伪造的文件，显得滑稽可笑。委员会成员开始质疑其诚信，巴里·布鲁姆陷入尴尬境地。",
+          "source_timeline_start": "2001年11月15日 上午 09:00",
+          "source_timeline_end": "2001年11月15日 上午 10:30"
+        },
+        {
+          "chapter_id": 372,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "听证室主舞台",
+          "chapter_goal": "莉薇娅·普莱斯在场见证下宣布电子数据因缺乏物理介质锚点而无效，驳回自动续约提案，确立物理介质优先原则。",
+          "chapter_title": "物理锚点的胜利",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "苏菲亚",
+            "莉薇娅·普莱斯",
+            "委员会成员"
+          ],
+          "opening_conflict": "巴里·布鲁姆试图挽回局面，声称电子数据具有法律效力，但莉薇娅·普莱斯介入，宣布电子数据无效。",
+          "info_gap_use": "麦珂提前布局，确保物理介质优先原则被写入法律文本，为莉薇娅的裁决提供依据。",
+          "opponent_reaction": "巴里·布鲁姆试图争辩，但面对莉薇娅的权威裁决和委员会的质疑，只能无奈接受处罚。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证室主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "莉薇娅·普莱斯起身宣读独立评估书"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_372_INDEPENDENT_ASSESSMENT",
+              "timeline_scope": "current",
+              "display_name": "《场馆安全独立评估书》",
+              "kind": "legal_certificate"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_370_BACKUP_FILM",
+              "timeline_scope": "current",
+              "purpose": "作为物理介质锚点，支撑莉薇娅的裁决依据。"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆试图争辩电子数据的法律效力，声称系统验证无误。",
+            "莉薇娅·普莱斯起身，宣读《场馆安全独立评估书》，指出电子数据缺乏物理介质锚点，无法作为有效证据。",
+            "委员会成员一致支持莉薇娅的裁决，驳回自动续约提案。",
+            "巴里·布鲁姆被行业自律委员会暂停从业资格两年，奥瑞恩集团对其信任崩塌。",
+            "麦珂宣布‘棱镜协议’二期物理介质优先原则生效，离线审计链不可篡改。"
+          ],
+          "visible_payoff": "莉薇娅·普莱斯的裁决确立了物理介质优先原则，巴里·布鲁姆被暂停从业资格，麦珂家族成功守住场馆控制权。",
+          "ending": "听证会结束，麦珂家族在行业内的地位得到巩固，维克多·兰斯的‘自动化续约’陷阱彻底破产。",
+          "must_include": [
+            "莉薇娅·普莱斯宣读独立评估书",
+            "巴里·布鲁姆被暂停从业资格的正式通知",
+            "必须呈现信息差的实际使用：麦珂提前布局，确保物理介质优先原则被写入法律文本，为莉薇娅的裁决提供依据。"
+          ],
+          "must_not_include": [
+            "康拉德出场",
+            "未来技术词汇如二维码、远程档案库"
+          ],
+          "detailed_synopsis": "巴里·布鲁姆试图挽回局面，声称电子数据具有法律效力，但莉薇娅·普莱斯介入，宣布电子数据因缺乏物理介质锚点而无效。她宣读《场馆安全独立评估书》，指出电子数据无法作为有效证据，委员会成员一致支持她的裁决，驳回自动续约提案。巴里·布鲁姆被行业自律委员会暂停从业资格两年，奥瑞恩集团对其信任崩塌。麦珂宣布‘棱镜协议’二期物理介质优先原则生效，离线审计链不可篡改。听证会结束，麦珂家族在行业内的地位得到巩固，维克多·兰斯的‘自动化续约’陷阱彻底破产。巴里·布鲁姆在众人的注视下，无奈地收拾残局，心中充满不甘，但已无力回天。",
+          "source_timeline_start": "2001年11月15日 上午 10:30",
+          "source_timeline_end": "2001年11月15日 下午 12:00"
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "巴里·布鲁姆",
+        "苏菲亚",
+        "莉薇娅·普莱斯",
+        "维克多·兰斯（远程操控）"
+      ]
+    },
+    {
+      "cluster_id": "EC187",
+      "chapter_span": [
+        373,
+        374
+      ],
+      "source_event_direction": "前世具体受害：虚假紧急维修测试导致场馆控制系统瘫痪，引发公众恐慌与信任危机。；本事件独有的前世信息差：麦珂清楚记得2001年冬维克多团队试图通过‘虚假紧急维修’测试电子系统响应速度。；今生提前动作：麦珂指令苏菲亚建立全线下线审计链，拒绝远程档案库存储，强制所有操作留痕于物理介质。；第373章可见小赢：维克多发起模拟攻击时，离线审计链瞬间识别异常并锁定数据，系统未受任何干扰。；第374章新交锋：麦珂当众展示审计日志，证明所有电子指令均被物理介质阻断，无法执行非法操作。；阻力方永久现实损失：维克多的‘自动化续约’陷阱彻底破产，其隐蔽渗透策略被公开揭露。；主角现实收益：‘时间褶皱’档案二期启动，证据链进一步夯实，物理介质优先成为行业铁律。；不可逆结算键：离线审计链固化；接回死亡控制主线：通过物理隔离手段，彻底杜绝了前世因系统漏洞导致的控制权旁落。",
+      "source_event_direction_sha256": "8596818a34245e06e02afe310d3b2931791f69090e2d1dbd411ef71bba00cb27",
+      "source_macro_sha256": "461a2eca4629c440d0d0ea42e4c1e61fa21871ab46e96034ef1f3f72dd9e46e8",
+      "name": "离线审计链固化与物理介质优先权确立",
+      "timeline_years": "2001-2002",
+      "main_opponent": "巴里·布鲁姆 (代理执行) / 维克多·兰斯 (幕后推手)",
+      "opposition_type": "technical",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS11"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "苏菲亚",
+        "巴里·布鲁姆",
+        "莉薇娅·普莱斯",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "维克多·兰斯策划了一场名为“紧急系统压力测试”的假象，诱导巴里·布鲁姆在听证会现场通过远程终端发送一组伪造的“自动续约”指令，试图绕过物理审核直接激活离岸账户权限。若成功，场馆控制权将瞬间易主，且因系统自动响应机制，所有电子痕迹将被合法化，无法追溯。",
+      "prev_life_tragedy": "前世此时，麦珂未能识破“紧急测试”的伪装，允许巴里·布鲁姆接入远程网络进行验证。结果系统被恶意代码劫持，不仅“自动续约”生效，还触发了场馆安防系统的全面瘫痪，导致当晚庆典期间发生踩踏事故，麦珂家族声誉扫地，最终被迫出售核心资产。",
+      "info_gap_from_prev_life": "麦珂清晰记得巴里·布鲁姆在2001年冬的“虚假紧急维修”测试中，曾因传输中断而依赖纸质传真补发关键附件，但他习惯性遗漏了第375号授权书的最后一页。更重要的是，麦珂知道维克多团队的“自动续约”逻辑依赖于一个特定的电子握手协议，该协议在纯物理隔离环境下根本无法生成合法的加密签名。",
+      "why_previous_life_failed": "前世过度依赖电子系统的实时响应能力，忽视了底层协议的物理依赖性，且未对远程指令设置“物理介质锚点”作为前置条件，导致黑客或内部人员可轻易伪造指令流。",
+      "preemptive_avoidance": "麦珂在听证会开始前两小时，秘密指令苏菲亚切断了场馆中央控制室的所有外部网络连接，仅保留本地局域网，并强制要求所有待审指令必须通过特制的“物理介质读取器”（一种类似老式打孔卡带的硬件设备）进行二次确认，否则系统拒绝执行任何写入操作。",
+      "bait_and_evidence": "巴里·布鲁姆为了表现“高效”，主动提出进行“实时远程压力测试”以证明系统稳定性。麦珂顺水推舟，同意测试但坚持“物理优先”原则。当巴里·布鲁姆发送伪造指令时，系统因缺少物理介质上的唯一ID哈希值而无法生成签名，反而在本地日志中留下了“非法尝试拦截”的红色警报，并自动打印出包含错误代码和来源IP的物理纸条。",
+      "comic_villain_behavior": "巴里·布鲁姆在屏幕前急得满头大汗，一边对着电话那头咆哮着催促维克多“快一点”，一边手忙脚乱地试图用备用线路覆盖防火墙，甚至因为太过慌张，把一杯咖啡泼在了刚打印出来的“拦截日志”上，导致字迹模糊，却恰好露出了底下原本隐藏的伪造指令头。他还在大庭广众之下辩称这是“系统故障”，试图掩盖自己手动输入错误代码的事实。",
+      "villain_loss": "维克多的“自动化续约”陷阱彻底破产，巴里·布鲁姆因伪造电子指令和试图绕过安全协议，被行业自律委员会当场暂停从业资格两年，奥瑞恩集团对其信任瞬间崩塌，维克多被迫撤回所有相关提案。",
+      "protagonist_gain": "‘时间褶皱’档案二期正式启动，确立了“物理介质优先”的行业铁律，苏菲亚主导的全线下线审计链成为不可篡改的法律标准，麦珂家族完全掌控了场馆的控制权，并获得了莉薇娅·普莱斯的强力背书。",
+      "relationship_change": "莉薇娅·普莱斯对麦珂的预判能力和决断力表示极度震惊与信服，正式签署《场馆安全独立评估书》，从观望者转变为坚定的盟友；苏菲亚因成功执行“物理隔离”策略，地位进一步提升，成为麦珂在技术层面的核心副手。",
+      "continuity_writes": [
+        "麦珂利用前世记忆中的“传真漏件”细节，精准预判了巴里·布鲁姆的操作习惯，将计就计。",
+        "苏菲亚建立的离线审计链不再依赖任何远程档案库服务器，所有数据均刻录在防篡改的光盘和纸质档案中。",
+        "巴里·布鲁姆的慌乱举动无意中暴露了其缺乏专业素养，为后续调查提供了口实。",
+        "1999年除夕夜的指纹线索被重新提及，暗示其与当前事件的内在联系。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_019_AUDIT",
+          "state_key": "offline_audit_chain_status",
+          "from": "suspected_vulnerable",
+          "to": "physically_locked_and_verified",
+          "irreversible": true,
+          "evidence": "ART_373_PHYSICAL_LOG_PRINTOUT + SYSTEM_INTERCEPT_RECORD",
+          "effect_type": "protagonist_gain",
+          "source_domain": "rights:RIGHT_VL_019_AUDIT",
+          "source_entity_id": "audit_chain_integrity"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_BARRY_001",
+          "state_key": "professional_license_status",
+          "from": "active_with_doubt",
+          "to": "suspended_pending_investigation",
+          "irreversible": false,
+          "evidence": "HEARING_TRANSCRIPT_CH374 + BARRY_COFFEE_SPILL_EVIDENCE",
+          "effect_type": "villain_loss",
+          "source_domain": "reputation:REP_BARRY_001",
+          "source_entity_id": "license_validity"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_89E90D63A7E8__DBD820C705DB",
+          "state_key": "trust_level_verification",
+          "from": "cautious_observer",
+          "to": "formal_allied_partner",
+          "irreversible": true,
+          "evidence": "SIGNED_INDEPENDENT_ASSESSMENT_LETTER",
+          "effect_type": "relationship_change",
+          "source_domain": "alliance:ALL_LIVIA_MCKEE",
+          "source_entity_id": "partnership_formalization",
+          "source_entity_label": "ALL_LIVIA_MCKEE"
+        }
+      ],
+      "historical_anchor_ids": [
+        "ANCHOR_2001_WINTER_TEST",
+        "ANCHOR_1999_NEW_YEAR_TAPE"
+      ],
+      "cluster_outcome": "麦珂成功利用前世记忆中的系统漏洞，通过建立全线下线审计链，彻底粉碎了维克多·兰斯利用巴里·布鲁姆实施的“自动化续约”阴谋。巴里·布鲁姆因伪造证据和违规操作被暂停资格，维克多的渗透策略公开曝光。‘棱镜协议’二期物理介质优先原则确立，‘时间褶皱’档案二期启动，麦珂家族牢牢掌握了场馆的控制权与话语权。",
+      "next_event_hook": "‘时间褶皱’档案二期启动后，那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的“数据污染”方案。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 373,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "听证会主舞台",
+          "chapter_goal": "麦珂利用前世记忆，诱导巴里·布鲁姆在“物理优先”的测试局中露出马脚，阻止“自动化续约”指令的执行。",
+          "chapter_title": "物理优先的陷阱",
+          "participants": [
+            "麦珂",
+            "苏菲亚",
+            "巴里·布鲁姆",
+            "莉薇娅·普莱斯",
+            "听证委员会成员"
+          ],
+          "opening_conflict": "巴里·布鲁姆声称需要立即进行“紧急系统压力测试”以证明“自动续约”方案的可行性，试图绕过物理审核直接进入远程网络。",
+          "info_gap_use": "麦珂深知巴里·布鲁姆习惯在传真中遗漏附件，且维克多团队的协议依赖特定电子握手，遂提出“无物理介质不执行”的反向测试要求。",
+          "opponent_reaction": "巴里·布鲁姆急于求成，无视麦珂的警告，强行尝试连接远程服务器，并在苏菲亚的监控下显得手足无措。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证会主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里·布鲁姆走向控制台，麦珂微笑示意苏菲亚启动隔离程序。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_373_PHYSICAL_LOG_PRINTOUT",
+              "timeline_scope": "current",
+              "display_name": "《系统拦截与物理介质缺失报告》",
+              "kind": "technical_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_370_BACKUP_FILM",
+              "timeline_scope": "current",
+              "purpose": "作为对比基准，证明电子指令若无物理介质锚点则无效。"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆试图通过远程终端发送伪造的“自动续约”指令。",
+            "麦珂当众指出该指令缺乏物理介质上的唯一ID哈希值，违反新规。",
+            "苏菲亚启动“物理优先”协议，系统自动拒绝执行并打印出拦截日志。",
+            "巴里·布鲁姆惊慌失措，试图用备用线路覆盖，却因操作失误导致咖啡泼洒在日志上。",
+            "莉薇娅·普莱斯在场见证，确认系统反应符合安全规范。"
+          ],
+          "visible_payoff": "维克多的“自动续约”指令在众目睽睽之下被系统自动拦截，巴里·布鲁姆的伪造企图首次失败，全场哗然。",
+          "ending": "麦珂手持打印出的拦截日志，微笑着看向面色苍白的巴里·布鲁姆，宣布测试结束，进入下一阶段。",
+          "must_include": [
+            "系统自动拦截的红色警报",
+            "巴里·布鲁姆打翻咖啡的滑稽细节",
+            "苏菲亚冷静操作控制台的特写"
+          ],
+          "must_not_include": [
+            "任何远程网络成功的描述",
+            "康拉德的出现"
+          ],
+          "detailed_synopsis": "听证会现场气氛紧张，巴里·布鲁姆为了赶在截止日期前完成“自动续约”，不顾麦珂的反对，执意要开启远程连接进行所谓的“压力测试”。麦珂利用前世记忆，精准指出巴里·布鲁姆团队的操作逻辑缺陷——他们的协议必须在物理介质上留下不可篡改的签名才能生效。麦珂顺势提出：“既然你们如此自信，那就让我们看看在没有物理介质的情况下，系统能否运行。”苏菲亚随即切断了所有外部网络，仅保留本地物理接口。巴里·布鲁姆慌乱中强行发送指令，系统立刻弹出红色警报，显示“非法尝试拦截”，并自动打印出一张包含错误代码和来源IP的物理纸条。巴里·布鲁姆急得满头大汗，试图用备用线路覆盖，却不小心打翻了桌上的咖啡，正好泼在刚打印的日志上，导致部分字迹模糊，却意外露出了下面隐藏的伪造指令头。这一幕被莉薇娅·普莱斯看在眼里，她意识到麦珂早已布下天罗地网，不禁对这位年轻的主角肃然起敬。",
+          "source_timeline_start": "2001年11月14日 上午 09:30",
+          "source_timeline_end": "2001年11月14日 上午 11:15"
+        },
+        {
+          "chapter_id": 374,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "听证会主舞台",
+          "chapter_goal": "麦珂当众展示审计日志，彻底揭穿巴里·布鲁姆的伪造行为，确立物理介质优先原则，并启动“时间褶皱”档案二期。",
+          "chapter_title": "铁律诞生与档案重启",
+          "participants": [
+            "麦珂",
+            "苏菲亚",
+            "巴里·布鲁姆",
+            "莉薇娅·普莱斯",
+            "行业自律委员会代表",
+            "媒体记者"
+          ],
+          "opening_conflict": "巴里·布鲁姆试图辩解称之前的拦截是“系统误报”，并指责麦珂故意刁难，试图挽回局面。",
+          "info_gap_use": "麦珂利用前世记忆中巴里·布鲁姆习惯性的“漏件”特征，指出其本次操作中同样存在类似的逻辑漏洞，并出示了完整的审计链条。",
+          "opponent_reaction": "巴里·布鲁姆在证据面前语无伦次，最终承认自己在操作中存在疏忽，但试图将责任推给“系统不稳定”。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证会主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂展开一张巨大的投影图，展示审计日志的完整链条。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_374_TIME_FOLD_ARCHIVE_START",
+              "timeline_scope": "current",
+              "display_name": "《“时间褶皱”档案二期启动令》",
+              "kind": "legal_certificate"
+            },
+            {
+              "artifact_id": "ART_374_LIVIA_ASSESSMENT",
+              "timeline_scope": "current",
+              "display_name": "《场馆安全独立评估书》",
+              "kind": "legal_certificate"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_373_PHYSICAL_LOG_PRINTOUT",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据，证明巴里·布鲁姆的伪造行为。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂当众展示详细的审计日志，逐条分析巴里·布鲁姆的操作记录，指出其伪造痕迹。",
+            "莉薇娅·普莱斯正式签署《场馆安全独立评估书》，否决了维克多的违规提案。",
+            "行业自律委员会代表宣布暂停巴里·布鲁姆的从业资格两年。",
+            "麦珂宣布启动“时间褶皱”档案二期，重点调查1999年除夕夜的指纹线索。",
+            "媒体记者蜂拥而至，报道这一重大转折。"
+          ],
+          "visible_payoff": "巴里·布鲁姆的伪造行为被彻底揭穿，维克多的“自动化续约”陷阱破产，物理介质优先原则成为行业铁律，“时间褶皱”档案二期正式启动。",
+          "ending": "麦珂站在讲台上，目光坚定地看着台下的众人，宣布新的时代已经到来，而旧的谎言已被彻底粉碎。",
+          "must_include": [
+            "莉薇娅·普莱斯签署文件的场景",
+            "行业自律委员会的处罚决定",
+            "麦珂宣布启动“时间褶皱”档案二期的声明"
+          ],
+          "must_not_include": [
+            "维克多·兰斯的直接出场",
+            "任何关于未来的预测性描述"
+          ],
+          "detailed_synopsis": "下午的听证会进入了高潮。麦珂没有给巴里·布鲁姆任何辩解的机会，他直接在大屏幕上展示了昨晚生成的详细审计日志，逐条分析了巴里·布鲁姆的操作记录，清晰地指出了其中的伪造痕迹。特别是那张被咖啡弄脏的日志，虽然部分字迹模糊，但上面的错误代码和来源IP却成为了铁证。莉薇娅·普莱斯站起身，郑重地签署了《场馆安全独立评估书》，正式否决了维克多的违规提案，并宣布支持麦珂提出的“物理介质优先”原则。行业自律委员会的代表也当场宣布，暂停巴里·布鲁姆的从业资格两年，并责令其接受进一步调查。麦珂借此机会，正式宣布启动“时间褶皱”档案二期，重点调查1999年除夕夜的那枚神秘指纹。他向在场的媒体记者们解释道：“这不仅仅是一场关于技术的胜利，更是一次对真相的追寻。”台下的掌声雷动，维克多的势力在这一刻彻底崩塌，而麦珂家族则迎来了新的曙光。",
+          "source_timeline_start": "2001年11月14日 下午 14:00",
+          "source_timeline_end": "2001年11月14日 下午 16:30"
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "苏菲亚",
+        "巴里·布鲁姆",
+        "莉薇娅·普莱斯",
+        "维克多·兰斯 (缺席/远程操控)"
+      ]
+    },
+    {
+      "cluster_id": "EC188",
+      "chapter_span": [
+        375,
+        376
+      ],
+      "source_event_direction": "前世具体受害：维克多利用行业规则漏洞，诱导巴里制造合规性危机迫使麦珂妥协。；本事件独有的前世信息差：麦珂知晓巴里习惯在传真中遗漏关键附件，且能预判其伪造操作的时间节点。；今生提前动作：麦珂邀请莉薇娅签署独立评估书，将临床判断权延伸至非医疗场景，切断数字篡改路径。；第375章可见小赢：莉薇娅在听证会上正式签署《场馆安全独立评估书》，否决了维克多的违规提案。；第376章新交锋：麦珂当众播放巴里伪造操作的录音，结合物理介质证据，迫使巴里承认错误。；阻力方永久现实损失：巴里·布鲁姆因伪造证据被行业自律委员会暂停从业资格两年，暂时失去奥瑞恩集团信任。；主角现实收益：‘权限不代’原则成为法定执行标准，麦珂家族信托控制权得到法律确认。；不可逆结算键：权限不代原则确立；接回死亡控制主线：通过法律程序将数字篡改路径彻底封死，确保前世悲剧不再发生。",
+      "source_event_direction_sha256": "cd9855f639c93c9d30af09d5e8e73caed1e99d75aa37b85d058da6186bc31775",
+      "source_macro_sha256": "461a2eca4629c440d0d0ea42e4c1e61fa21871ab46e96034ef1f3f72dd9e46e8",
+      "name": "棱镜协议二期：物理介质与独立评估的终局",
+      "timeline_years": "2001-2002",
+      "main_opponent": "巴里·布鲁姆（代理维克多意志）",
+      "opposition_type": "institutional",
+      "event_type": "legal_procedure",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS11"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "巴里·布鲁姆",
+        "苏菲亚",
+        "行业自律委员会成员"
+      ],
+      "fictional_obstacle": "巴里·布鲁姆试图利用‘自动化续约’条款，通过伪造的电子授权文件将场馆控制权转移至维克多控制的离岸账户，并计划在听证会最后时刻以‘系统故障’为由强行通过提案。",
+      "prev_life_tragedy": "前世中，麦珂因轻信电子数据的法律效力，未能在听证会上及时出示物理胶片原件，导致‘权限不代’原则失效，家族信托被维克多通过数字篡改手段架空。",
+      "info_gap_from_prev_life": "麦珂清楚记得巴里·布鲁姆习惯在传真关键附件时遗漏第375页的授权书原件，且知晓其伪造操作依赖特定的电子响应延迟漏洞；同时记得莉薇娅当时因缺乏独立评估依据而犹豫不决。",
+      "why_previous_life_failed": "过度依赖电子证据链，忽视了物理介质的不可篡改性，且未能提前引入具备临床判断权的第三方权威签署独立文件。",
+      "preemptive_avoidance": "麦珂提前邀请莉薇娅·普莱斯介入，将她的临床判断权延伸至非医疗场景，要求其在听证会现场签署《场馆安全独立评估书》，以此作为否决违规提案的法律锚点。",
+      "bait_and_evidence": "麦珂故意诱导巴里·布鲁姆提交一份看似完美的电子授权副本，实则暗中播放了巴里·布鲁姆在办公室承认‘漏掉关键附件’的录音，并当场展示未加密的物理胶片原件作为对比。",
+      "comic_villain_behavior": "巴里·布鲁姆在听证会上为了掩盖伪造事实，试图用‘系统自动备份’搪塞，结果因无法解释为何物理胶片上的日期戳早于电子生成时间而语无伦次，甚至慌乱中打翻咖啡弄湿了自己的伪造文件草稿。",
+      "villain_loss": "巴里·布鲁姆因伪造证据和严重违规操作被行业自律委员会暂停从业资格两年，奥瑞恩集团对其信任彻底崩塌，维克多的资产置换提案随之破产。",
+      "protagonist_gain": "‘权限不代’原则成为法定执行标准，麦珂家族信托控制权得到法律确认，‘棱镜协议’二期物理介质优先原则确立为行业铁律。",
+      "relationship_change": "莉薇娅·普莱斯从观望者转变为坚定盟友，正式签署独立评估书；苏菲亚因成功构建离线审计链，地位进一步提升，成为麦珂技术核心副手。",
+      "continuity_writes": [
+        "2001年冬，行业自律委员会听证会现场，空气凝重。麦珂并未直接反驳巴里·布鲁姆的电子数据，而是平静地请出莉薇娅·普莱斯。",
+        "莉薇娅手持刚签署的《场馆安全独立评估书》，当众宣布基于物理介质的安全性评估，直接否决了维克多的违规提案。",
+        "巴里·布鲁姆惊慌失措，试图调取系统日志，却被麦珂播放的录音打断——那是他承认‘漏件’并伪造日期的亲口供词。",
+        "面对物理胶片原件与电子数据的巨大时间差，巴里·布鲁姆语无伦次，最终在众目睽睽下崩溃。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_019_AUDIT",
+          "state_key": "offline_audit_chain_status__extension_EC188",
+          "from": "none",
+          "to": "legally_enforced_standard",
+          "irreversible": true,
+          "evidence": "SIGNED_INDEPENDENT_ASSESSMENT_LETTER + PHYSICAL_FILM_COMPARISON",
+          "effect_type": "protagonist_gain",
+          "source_domain": "rights:RIGHT_VL_019_AUDIT",
+          "source_entity_id": "audit_chain_integrity",
+          "source_state_key": "offline_audit_chain_status"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_BARRY_001",
+          "state_key": "professional_license_status",
+          "from": "suspended_pending_investigation",
+          "to": "suspended_for_forgery_two_years",
+          "irreversible": false,
+          "evidence": "HEARING_TRANSCRIPT_CH375_376 + AUDIO_RECORDING_OF_CONFESION",
+          "effect_type": "villain_loss",
+          "source_domain": "reputation:REP_BARRY_001",
+          "source_entity_id": "license_validity"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_89E90D63A7E8__DBD820C705DB",
+          "state_key": "trust_level_verification__extension_EC188",
+          "from": "none",
+          "to": "core_strategic_confidant",
+          "irreversible": true,
+          "evidence": "PUBLIC_ENDORSEMENT_AT_HEARING",
+          "effect_type": "relationship_change",
+          "source_domain": "alliance:ALL_LIVIA_MCKEE",
+          "source_entity_id": "partnership_formalization",
+          "source_state_key": "trust_level_verification",
+          "source_entity_label": "ALL_LIVIA_MCKEE"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_2001_WINTER_HEARING"
+      ],
+      "cluster_outcome": "麦珂利用前世记忆中的逻辑漏洞，在听证会上通过物理介质与独立评估的双重验证，彻底粉碎了巴里·布鲁姆的伪造阴谋。巴里·布鲁姆因伪造证据被暂停资格，维克多的渗透策略再次受挫。‘权限不代’原则正式确立，麦珂家族牢牢掌握场馆控制权。",
+      "next_event_hook": "‘时间褶皱’档案二期启动后，那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的‘数据污染’方案。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 375,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "听证会主会场",
+          "chapter_goal": "莉薇娅签署独立评估书，正式否决维克多的违规提案，切断数字篡改路径。",
+          "chapter_title": "独立评估书的落笔",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "巴里·布鲁姆",
+            "委员会主席",
+            "苏菲亚"
+          ],
+          "opening_conflict": "巴里·布鲁姆提交了一份看似合规的电子授权文件，声称系统已自动续约，企图绕过物理审核流程。",
+          "info_gap_use": "麦珂预判巴里·布鲁姆会依赖电子系统，提前安排莉薇娅准备独立评估，利用其临床判断权的权威性打破规则僵局。",
+          "opponent_reaction": "巴里·布鲁姆自信满满，认为电子数据足以支撑其主张，对莉薇娅的介入表示不屑，认为这是多此一举。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证会主会场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里·布鲁姆展示电子屏幕上的授权书，麦珂示意苏菲亚关闭投影，灯光聚焦在莉薇娅身上。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_375_INDEPENDENT_ASSESSMENT",
+              "timeline_scope": "current",
+              "display_name": "《场馆安全独立评估书》",
+              "kind": "legal_certificate"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_370_BACKUP_FILM",
+              "timeline_scope": "current",
+              "purpose": "作为对比基准，证明电子数据的时间戳存在人为篡改痕迹。"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆展示电子授权文件，声称系统已自动续约。",
+            "麦珂示意苏菲亚关闭投影，全场灯光聚焦。",
+            "莉薇娅起身，宣读《场馆安全独立评估书》，指出电子数据缺乏物理介质锚点，不具备法律效力。",
+            "莉薇娅当场签署文件，正式否决维克多的提案。",
+            "巴里·布鲁姆试图辩解，但被委员会主席打断。"
+          ],
+          "visible_payoff": "莉薇娅的签字如同重锤，瞬间击碎了巴里·布鲁姆的电子数据防线，全场哗然。",
+          "ending": "巴里·布鲁姆面色惨白，意识到自己的计划已被彻底瓦解，却仍不甘心。",
+          "must_include": [
+            "莉薇娅的独立评估书",
+            "电子数据与物理胶片的对比",
+            "巴里·布鲁姆的失态反应"
+          ],
+          "must_not_include": [
+            "康拉德",
+            "未来科技词汇",
+            "未经证实的猜测"
+          ],
+          "detailed_synopsis": "听证会现场，巴里·布鲁姆得意洋洋地展示着电子授权文件，声称系统已自动续约，维克多的离岸账户即将接管场馆。他以为电子数据天衣无缝，却不知麦珂早已布下天罗地网。麦珂没有争辩，只是轻轻抬手，示意苏菲亚关闭投影。聚光灯瞬间打在莉薇娅·普莱斯身上。这位以严谨著称的临床专家，此刻手持一份刚刚签署的《场馆安全独立评估书》，声音冷静而有力：“基于物理介质的不可篡改性，任何缺乏实体锚点的电子指令均无效。”她当场签字，否决了维克多的提案。巴里·布鲁姆脸色骤变，试图解释这是系统故障，却被麦珂冷冷打断：“系统不会说谎，说谎的是人。”",
+          "source_timeline_start": "2001年12月15日 上午 09:00",
+          "source_timeline_end": "2001年12月15日 上午 11:30"
+        },
+        {
+          "chapter_id": 376,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "听证会主会场",
+          "chapter_goal": "麦珂当众播放巴里·布鲁姆伪造操作的录音，结合物理介质证据，迫使巴里·布鲁姆承认错误。",
+          "chapter_title": "录音与胶片的审判",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "莉薇娅·普莱斯",
+            "委员会成员",
+            "记者"
+          ],
+          "opening_conflict": "巴里·布鲁姆试图以‘系统自动备份’为由推卸责任，声称自己并未参与伪造。",
+          "info_gap_use": "麦珂利用前世记忆，精准预判巴里·布鲁姆会在关键时刻承认‘漏件’，提前录制并保存了这段关键对话。",
+          "opponent_reaction": "巴里·布鲁姆在听到录音的瞬间，精神崩溃，试图抢夺设备，却因慌乱打翻咖啡，弄湿了伪造文件的草稿。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证会主会场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里·布鲁姆试图辩解，麦珂按下播放键，录音清晰响起。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_375_AUDIO_RECORDING",
+              "timeline_scope": "current",
+              "display_name": "ART_375_AUDIO_RECORDING",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_375_AUDIO_RECORDING",
+              "timeline_scope": "current",
+              "purpose": "作为直接证据，证明巴里·布鲁姆承认伪造行为。"
+            },
+            {
+              "artifact_id": "ART_370_BACKUP_FILM",
+              "timeline_scope": "current",
+              "purpose": "作为物理介质证据，证明电子数据的时间戳被篡改。"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆试图辩解，声称自己是无辜的，系统自动备份了数据。",
+            "麦珂按下播放键，一段清晰的录音响起，正是巴里·布鲁姆在办公室承认‘漏掉关键附件’并伪造日期的对话。",
+            "全场震惊，巴里·布鲁姆脸色苍白，试图抢夺录音设备。",
+            "麦珂冷静地展示物理胶片原件，指出其时间戳早于电子生成时间。",
+            "巴里·布鲁姆慌乱中打翻咖啡，弄湿了自己的伪造文件草稿，彻底暴露。",
+            "委员会主席宣布暂停巴里·布鲁姆的从业资格两年。"
+          ],
+          "visible_payoff": "巴里·布鲁姆的谎言在录音和物理证据面前不堪一击，他的丑行在众目睽睽下被彻底揭露。",
+          "ending": "巴里·布鲁姆被带离会场，奥瑞恩集团宣布与其断绝关系，维克多的计划彻底破产。",
+          "must_include": [
+            "巴里·布鲁姆承认伪造的录音",
+            "物理胶片的时间戳对比",
+            "巴里·布鲁姆打翻咖啡的滑稽细节"
+          ],
+          "must_not_include": [
+            "康拉德",
+            "未来科技词汇",
+            "未经证实的猜测"
+          ],
+          "detailed_synopsis": "巴里·布鲁姆还在狡辩，声称系统是自动备份的，自己只是按程序办事。麦珂微微一笑，按下播放键。录音中，巴里·布鲁姆清晰的声音回荡在会场：“把第375页的授权书漏掉，然后伪造一个更早的时间戳……没人会发现。”全场死寂。巴里·布鲁姆脸色煞白，猛地扑向录音设备，却因慌乱打翻了桌上的咖啡，弄湿了自己藏在袖口的伪造文件草稿。麦珂趁机举起物理胶片原件：“看，这才是真实的日期，比你的电子数据早了整整三天。”巴里·布鲁姆瘫软在地，再也说不出话来。委员会主席庄严宣布：暂停巴里·布鲁姆从业资格两年，永久记录在案。奥瑞恩集团随即发表声明，与巴里·布鲁姆断绝一切关系。",
+          "source_timeline_start": "2001年12月15日 下午 14:00",
+          "source_timeline_end": "2001年12月15日 下午 16:30"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC189",
+      "chapter_span": [
+        377,
+        378
+      ],
+      "source_event_direction": "前世具体受害：维克多团队试图通过媒体抹黑麦珂家族，掩盖其资产置换的真实意图。；本事件独有的前世信息差：麦珂记得前世媒体曾报道过‘虚假紧急维修’事件，但真相被刻意歪曲。；今生提前动作：麦珂安排艾琳在‘午夜星轨’节目中播出未经剪辑的原始录音，还原事件真相。；第377章可见小赢：公众舆论迅速反转，维克多的抹黑计划失败，麦珂家族声誉得到恢复。；第378章新交锋：麦珂在节目结尾主动停顿五秒，引发全场静默，形成‘清醒共识’的核心信道。；阻力方永久现实损失：维克多团队的叙事覆盖策略失效，其公信力彻底丧失。；主角现实收益：‘清醒即存在’的公共声学证词成为对抗数字篡改的有力武器。；不可逆结算键：清醒共识信道建立；接回死亡控制主线：通过媒体力量重建公众信任，为后续的法律斗争奠定坚实的民意基础。",
+      "source_event_direction_sha256": "6b96af1540eeb8e7bb053473cb0f78d6f1157bf64e37e6b3589bbc7a95831089",
+      "source_macro_sha256": "461a2eca4629c440d0d0ea42e4c1e61fa21871ab46e96034ef1f3f72dd9e46e8",
+      "name": "午夜星轨：清醒共识的建立",
+      "timeline_years": "2001-2002",
+      "main_opponent": "维克多·兰斯（幕后指使）/ 巴里·布鲁姆（前台执行）",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS11"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "艾琳",
+        "巴里·布鲁姆",
+        "维克多·兰斯",
+        "莉薇娅·普莱斯"
+      ],
+      "fictional_obstacle": "维克多团队利用剪辑过的录音和伪造的“紧急维修”报告，在《午夜星轨》节目中构建虚假叙事，试图将麦珂家族描绘成无视安全、恶意阻挠场馆升级的既得利益者，以此抵消前几章听证会的胜利。",
+      "prev_life_tragedy": "前世中，媒体被维克多操控，公众只看到经过修饰的“麦珂阻碍救援”片段，导致麦珂家族声誉崩塌，最终在舆论压力下被迫低价出让资产控制权。",
+      "info_gap_from_prev_life": "麦珂记得前世播出时，关键证据（原始磁带）被故意剪掉，且巴里·布鲁姆在直播中曾下意识摸向口袋里的假文件；今生他提前拿到了未经剪辑的原始母带，并知晓巴里·布鲁姆习惯在传真中遗漏附件的生理性紧张动作。",
+      "why_previous_life_failed": "主角方轻信了电子媒体的即时性，未保留物理介质作为反制手段，且未在直播现场设置逻辑陷阱，导致无法当场证伪。",
+      "preemptive_avoidance": "麦珂安排艾琳在节目开始前一小时，通过有线广播网络直接接入原始录音源，并强制要求直播信号必须同步显示原始波形图，切断后期剪辑的可能。",
+      "bait_and_evidence": " bait：巴里·布鲁姆在节目中声称“所有数据已远程档案库备份，无需物理介质”；evidence：艾琳现场播放未经剪辑的原始录音，其中包含巴里·布鲁姆在录制前一刻慌乱翻找纸质文件的杂音，以及随后麦珂出示的物理胶片原件与电子数据的波形对比图。",
+      "comic_villain_behavior": "巴里·布鲁姆在镜头前试图用“技术故障”为由中断直播，却因过度紧张将手中的假文件捏皱，发出刺耳的摩擦声，被麦珂风放大后全场听见，显得滑稽而心虚。",
+      "villain_loss": "维克多团队的“叙事覆盖”策略彻底破产，公众意识到所谓的“紧急维修”是精心策划的谎言；巴里·布鲁姆的行业公信力归零，其伪造行为的细节被永久记录在案，为后续法律审判提供铁证。",
+      "protagonist_gain": "“清醒即存在”的公共声学证词成为对抗数字篡改的有力武器，麦珂家族声誉不仅恢复，更升华为行业道德标杆；建立了不可逆的“清醒共识信道”。",
+      "relationship_change": "莉薇娅·普莱斯在直播后公开表示支持麦珂，称其为“唯一敢于直面真相的人”，两人从盟友升级为生死之交；苏菲亚的技术团队获得公众信任，离线审计链推广阻力消除。",
+      "continuity_writes": [
+        "EC188的听证会胜利为本次媒体战奠定法理基础",
+        "EC190的家族信托加固需依赖本次舆论胜利提供的民意支持",
+        "1999年除夕夜指纹线索将在本次事件后的调查中被重新激活"
+      ],
+      "state_transitions": [
+        {
+          "domain": "reputation",
+          "entity_id": "REP_MCKEE_001",
+          "state_key": "public_trust_status__EC189",
+          "from": "damaged_by_media_smear",
+          "to": "restored_and_enhanced_via_live_proof",
+          "irreversible": true,
+          "evidence": "UNCUT_AUDIO_MASTER_TAPE + LIVE_WAVEFORM_COMPARISON",
+          "effect_type": "protagonist_gain",
+          "source_domain": "reputation:REP_MCKEE_001",
+          "source_entity_id": "family_credibility",
+          "source_state_key": "trust_level_verification"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_019_AUDIT",
+          "state_key": "offline_audit_chain_public_acceptance",
+          "from": "technically_valid_but_suspected",
+          "to": "legally_enforced_standard_with_public_consensus",
+          "irreversible": true,
+          "evidence": "LIVE_BROADCAST_OF_PHYSICAL_MEDIA_VERIFICATION",
+          "effect_type": "protagonist_gain",
+          "source_domain": "rights:RIGHT_VL_019_AUDIT",
+          "source_entity_id": "audit_chain_integrity",
+          "source_state_key": "public_perception"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_BARRY_001",
+          "state_key": "professional_integrity_status",
+          "from": "suspended_pending_investigation",
+          "to": "publicly_discredited_and_professionally_isolated",
+          "irreversible": false,
+          "evidence": "LIVE_CONFUSION_NOISE_AND_PAPER_CRUMPLE_SOUND",
+          "effect_type": "villain_loss",
+          "source_domain": "reputation:REP_BARRY_001",
+          "source_entity_id": "license_validity",
+          "source_state_key": "integrity_score"
+        }
+      ],
+      "historical_anchor_ids": [
+        "ART_367_EMERGENCY_SIGNATURE_CERT",
+        "ART_369_FINGERPRINT_MATCH"
+      ],
+      "cluster_outcome": "麦珂利用前世记忆中的逻辑漏洞，在《午夜星轨》直播中通过播放原始录音和物理胶片对比，彻底粉碎了维克多团队的媒体抹黑计划。巴里·布鲁姆因现场暴露出的慌张和伪造痕迹被公众唾弃，维克多的叙事策略失效。‘清醒共识’正式建立，麦珂家族声誉达到顶峰，为后续的法律斗争奠定了坚实的民意基础。",
+      "next_event_hook": "随着维克多势力收缩，联邦调查局介入，那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的‘数据污染’方案。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 377,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "《午夜星轨》演播厅",
+          "chapter_goal": "通过直播还原“虚假紧急维修”真相，逆转舆论风向。",
+          "chapter_title": "被剪断的真相",
+          "participants": [
+            "麦珂",
+            "艾琳",
+            "巴里·布鲁姆",
+            "主持人",
+            "现场观众"
+          ],
+          "opening_conflict": "巴里·布鲁姆在节目中自信地宣称麦珂家族拒绝配合“紧急维修”，试图将责任推给麦珂，营造受害者形象。",
+          "info_gap_use": "麦珂早已知道巴里·布鲁姆会在直播中引用一份缺失关键附件的传真，并提前让艾琳准备好原始母带和波形对比图。",
+          "opponent_reaction": "巴里·布鲁姆试图打断艾琳的播放，声称设备故障，但被麦珂冷静地指出这是“技术故障”的惯用借口。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "《午夜星轨》演播厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "直播信号切入"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_377_LIVE_WAVEFORM",
+              "timeline_scope": "current",
+              "display_name": "《直播实时波形对比图》",
+              "kind": "visual_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "巴里·布鲁姆在镜头前发表演讲，试图误导观众，麦珂保持沉默观察。",
+            "艾琳突然切断巴里·布鲁姆的麦珂风，插入一段长达三分钟的原始录音，清晰记录了巴里·布鲁姆在录制前的慌乱和假文件的摩擦声。",
+            "麦珂起身走向舞台中央，展示物理胶片原件，与屏幕上的电子数据进行逐帧比对，指出数据流中的异常断层。",
+            "巴里·布鲁姆试图辩解，却被现场观众起哄打断，他的脸色瞬间苍白。"
+          ],
+          "visible_payoff": "观众席爆发出雷鸣般的掌声，直播间的弹幕瞬间刷屏“真相大白”，维克多的抹黑计划当场破产。",
+          "ending": "巴里·布鲁姆在众目睽睽下狼狈离场，麦珂站在聚光灯下，眼神坚定。",
+          "must_include": [
+            "原始录音播放",
+            "物理胶片对比",
+            "巴里·布鲁姆的慌乱反应"
+          ],
+          "must_not_include": [
+            "任何未来科技词汇",
+            "康拉德出场"
+          ],
+          "detailed_synopsis": "第377章聚焦于《午夜星轨》节目的直播现场。巴里·布鲁姆作为反派代表，试图利用剪辑过的录音和伪造的“紧急维修”报告，将麦珂家族描绘成阻碍安全的罪魁祸首。然而，重生者麦珂早已洞悉一切，他提前安排艾琳在直播中播放未经剪辑的原始录音，这段录音清晰地捕捉到了巴里·布鲁姆在录制前的慌乱动作和纸张摩擦声。麦珂随即上台，手持物理胶片原件，与屏幕上的电子数据进行逐帧比对，无情地揭露了数据流中的异常断层。巴里·布鲁姆试图以“技术故障”为由强行中断直播，却在镜头前因过度紧张而捏皱了手中的假文件，发出的刺耳声音被麦珂风无限放大，引发现场观众的哗然和嘲笑。这一系列操作彻底击碎了维克多团队的叙事防线，公众舆论瞬间反转，麦珂家族的声誉得到初步恢复。",
+          "source_timeline_start": "2001年冬，晚7:00",
+          "source_timeline_end": "2001年冬，晚8:30",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_367_EMERGENCY_SIGNATURE_CERT",
+              "timeline_scope": "previous_life",
+              "purpose": "对比前世被篡改的版本，展示今生的完整证据链"
+            }
+          ]
+        },
+        {
+          "chapter_id": 378,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "《午夜星轨》演播厅",
+          "chapter_goal": "确立“清醒共识”的核心信道，完成对维克多势力的终极清算。",
+          "chapter_title": "五秒静默的共识",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "艾琳",
+            "现场观众",
+            "场外评论员"
+          ],
+          "opening_conflict": "巴里·布鲁姆虽已离场，但维克多团队试图通过场外评论员继续制造混乱，质疑麦珂的证据真实性。",
+          "info_gap_use": "麦珂利用前世记忆，知道此时正是公众情绪最容易被煽动的时刻，他选择主动停顿，而非急于辩解。",
+          "opponent_reaction": "场外评论员的质疑声浪逐渐减弱，最终被现场的静默所淹没。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "《午夜星轨》演播厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "直播信号持续"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_369_FINGERPRINT_MATCH",
+              "timeline_scope": "current",
+              "purpose": "作为伏笔提及，暗示巴里·布鲁姆长期介入档案篡改"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在节目结尾没有立即结束，而是主动停顿五秒，全场陷入死寂。",
+            "这五秒的静默让所有观众和场外听众开始反思之前的信息，形成“清醒共识”。",
+            "莉薇娅·普莱斯在后台通过专用线路向麦珂发送确认信息，正式签署独立评估书。",
+            "场外评论员在静默中失去话语权，维克多团队的叙事策略彻底失效。"
+          ],
+          "visible_payoff": "五秒静默后，全场爆发出一阵发自内心的欢呼，象征着公众对真相的集体认同，“清醒共识”正式建立。",
+          "ending": "麦珂微笑着看向镜头，仿佛在与未来的自己对话，而维克多的阴影在这一刻彻底消散。",
+          "must_include": [
+            "五秒静默",
+            "公众反思",
+            "莉薇娅的确认"
+          ],
+          "must_not_include": [
+            "直接逮捕",
+            "资产冻结",
+            "康拉德出场"
+          ],
+          "detailed_synopsis": "第378章承接上一章的高潮，聚焦于“清醒共识”的建立过程。在巴里·布鲁姆狼狈离场后，维克多团队试图通过场外评论员继续制造混乱，质疑麦珂的证据真实性。然而，麦珂并没有急于辩解，而是在节目结尾主动停顿五秒。这看似平淡的五秒，却让所有观众和场外听众在静默中开始反思之前的信息，形成了强大的“清醒共识”。莉薇娅·普莱斯在后台通过专用线路向麦珂发送确认信息，正式签署独立评估书，进一步巩固了这一成果。场外评论员在静默中失去了话语权，维克多团队的叙事策略彻底失效。五秒静默后，全场爆发出一阵发自内心的欢呼，象征着公众对真相的集体认同。麦珂微笑着看向镜头，仿佛在与未来的自己对话，而维克多的阴影在这一刻彻底消散。",
+          "source_timeline_start": "2001年冬，晚8:30",
+          "source_timeline_end": "2001年冬，晚9:00"
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "艾琳",
+        "巴里·布鲁姆",
+        "维克多·兰斯（画外音）",
+        "莉薇娅·普莱斯"
+      ]
+    },
+    {
+      "cluster_id": "EC190",
+      "chapter_span": [
+        379,
+        380
+      ],
+      "source_event_direction": "前世具体受害：前世麦珂家族因内部矛盾未能及时应对危机，导致资产流失。；本事件独有的前世信息差：麦珂记得前世家族成员曾因利益冲突而分裂，未能形成合力。；今生提前动作：麦珂召集家族成员共同签署《双轨创作信托协议》补充条款，明确签字权移交机制。；第379章可见小赢：家族成员一致同意支持麦珂的决策，形成强大的内部凝聚力。；第380章新交锋：在最终审判中，家族成员联合举起编号为#2002-10-1的条款原件，粉碎维克多的动议。；阻力方永久现实损失：维克多试图以‘管理人失能’为由冻结信托的动议彻底失败。；主角现实收益：麦珂家族信托得到永久性加固，为未来的长期斗争提供了坚实保障。；不可逆结算键：家族信托永久加固；接回死亡控制主线：通过家族团结，彻底杜绝了前世因内部矛盾导致的失败重演。",
+      "source_event_direction_sha256": "a629c3338e457ec9d45987ba975c4610475379de6cb2f8a5d06a7480f711f38c",
+      "source_macro_sha256": "461a2eca4629c440d0d0ea42e4c1e61fa21871ab46e96034ef1f3f72dd9e46e8",
+      "name": "双轨信托的凝聚与审判",
+      "timeline_years": "2001-2002",
+      "main_opponent": "维克多·兰斯 (幕后操纵) / 巴里·布鲁姆 (前台执行)",
+      "opposition_type": "family",
+      "event_type": "fan_public_welfare",
+      "solution_type": "teamwork",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS11"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "老麦森",
+        "艾琳娜",
+        "巴里·布鲁姆",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "维克多团队利用“管理人失能”条款，试图绕过家族成员投票，强行通过电子化自动续约程序，将信托控制权移交给离岸账户。前世麦珂家族因内部分裂，无人敢站出来反驳，导致资产被悄无声息地转移。",
+      "prev_life_tragedy": "前世麦珂家族在面临危机时，长辈犹豫不决，晚辈各自为政，甚至有人暗中倒戈，导致家族信托在关键时刻无法形成统一意志，最终被维克多利用法律漏洞吞并核心资产。",
+      "info_gap_from_prev_life": "麦珂清楚记得，前世巴里·布鲁姆在提交“紧急维修”电子指令时，总是习惯性地在传真中遗漏关键的授权附件（如第375章的授权书缺页），且系统会在无物理介质确认的情况下默认执行。",
+      "why_previous_life_failed": "家族成员缺乏对“物理介质优先”原则的认知，且内部信任崩塌，无法在第一时间识别并阻断巴里·布鲁姆的伪造操作，导致被动接受电子指令。",
+      "preemptive_avoidance": "麦珂利用重生优势，在听证会前夜召集所有家族成员，当众宣读并签署《双轨创作信托协议》补充条款，明确规定任何超过50万美元的资产变动必须同时具备“三人联署”及“原始物理胶片”双重验证，否则视为无效。",
+      "bait_and_evidence": "麦珂故意诱导巴里·布鲁姆提交一份看似完美的“紧急续约”电子指令，实则暗藏前世记忆中的逻辑漏洞——缺少物理介质锚点。随后，麦珂要求现场进行“物理优先”测试，展示未加密的物理胶片原件与电子数据的冲突，迫使巴里·布鲁姆在众目睽睽下暴露伪造痕迹。",
+      "comic_villain_behavior": "巴里·布鲁姆在听证会上为了掩饰慌张，试图用早已准备好的“系统故障”借口搪塞，却因记不清前世自己伪造时的具体操作细节，在实时演示中反复出错，甚至误将“删除指令”当作“备份指令”发出，引得全场哄堂大笑，形象彻底崩塌。",
+      "villain_loss": "维克多的“资产置换提案”彻底破产，巴里·布鲁姆因伪造证据被行业自律委员会暂停从业资格两年，暂时失去奥瑞恩集团信任；维克多试图以“管理人失能”为由冻结信托的动议被彻底粉碎。",
+      "protagonist_gain": "麦珂家族信托得到永久性加固，确立了“物理介质优先”的行业铁律；家族成员间建立了坚不可摧的信任纽带，为未来的长期斗争提供了坚实保障。",
+      "relationship_change": "老麦森与艾琳娜等家族长辈对麦珂的态度从怀疑转为绝对信赖，家族内部凝聚力达到顶峰；莉薇娅·普莱斯再次公开力挺麦珂，称其为“唯一敢于直面真相的人”。",
+      "continuity_writes": [
+        "本章需详细描写家族成员从分裂到团结的心理转变过程，体现麦珂如何利用前世记忆化解潜在的内部分歧。",
+        "本章需通过巴里·布鲁姆的滑稽表演，展现反派因贪婪和愚蠢而留下的致命把柄。",
+        "本章需强调“物理介质”在2001年技术环境下的不可替代性，避免使用现代科技词汇。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MCKEE_TRUST_001",
+          "state_key": "trust_integrity_status__EC190",
+          "from": "fragmented_by_internal_conflict",
+          "to": "permanently_fortified_by_physical_anchor",
+          "irreversible": true,
+          "evidence": "SIGNED_DOUBLE_TRACK_PROTOCOL + PHYSICAL_FILM_VERIFICATION",
+          "effect_type": "protagonist_gain",
+          "source_domain": "rights:RIGHT_MCKEE_TRUST_001",
+          "source_entity_id": "family_cohesion",
+          "source_state_key": "unity_level_verification"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_BARRY_001",
+          "state_key": "professional_integrity_status__EC190",
+          "from": "suspended_pending_investigation",
+          "to": "publicly_discredited_and_professionally_isolated",
+          "irreversible": false,
+          "evidence": "LIVE_DEMO_FAILURE_AND_CONFESSION_OF_FORGERY",
+          "effect_type": "villain_loss",
+          "source_domain": "reputation:REP_BARRY_001",
+          "source_entity_id": "license_validity",
+          "source_state_key": "integrity_score"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_2001_WINTER_HEARING"
+      ],
+      "cluster_outcome": "麦珂成功利用前世记忆中的逻辑漏洞，在听证会上通过“物理优先”测试，迫使巴里·布鲁姆当场暴露伪造行为。家族成员团结一致，签署了具有法律效力的补充条款，彻底粉碎了维克多试图通过“管理人失能”冻结信托的阴谋。巴里·布鲁姆因伪造证据被暂停资格，维克多的势力进一步收缩。",
+      "next_event_hook": "随着维克多势力的收缩，联邦调查局的介入将使案件走向更加复杂。那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的‘数据污染’方案。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 379,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "奥瑞恩集团总部听证室",
+          "chapter_goal": "麦珂召集家族成员签署《双轨创作信托协议》补充条款，形成内部凝聚力，并准备迎接维克多团队的挑战。",
+          "chapter_title": "凝聚的誓言",
+          "participants": [
+            "麦珂",
+            "老麦森",
+            "艾琳娜",
+            "苏菲亚",
+            "莉薇娅·普莱斯"
+          ],
+          "opening_conflict": "家族内部对于是否接受维克多提出的“紧急续约”存在分歧，部分长辈担心麦珂过于激进，导致家族分裂。",
+          "info_gap_use": "麦珂引用前世家族因内斗而败亡的惨痛教训，指出若此时不团结，将重蹈覆辙。",
+          "opponent_reaction": "维克多团队在幕后观察，认为麦珂家族内部矛盾重重，坐视其分裂。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团总部听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂站在长桌中央，目光扫过每一位家族成员，语气坚定而沉重。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_379_DOUBLE_TRACK_PROTOCOL",
+              "timeline_scope": "current",
+              "display_name": "《双轨创作信托协议》补充条款（联名版）",
+              "kind": "legal_certificate"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂当众宣读前世家族因内斗而败亡的惨痛教训，情感真挚，令在场长辈动容。",
+            "麦珂提出“物理介质优先”原则，并展示前世记忆中巴里·布鲁姆的伪造手法。",
+            "家族成员在麦珂的感召下，纷纷表态支持，并在《双轨创作信托协议》补充条款上签字。",
+            "老麦森作为族长，最后郑重落笔，宣布家族内部达成空前团结。"
+          ],
+          "visible_payoff": "家族成员一致同意支持麦珂的决策，形成强大的内部凝聚力，为后续对抗维克多奠定了坚实基础。",
+          "ending": "听证会前夕，麦珂家族内部完成了最后的整合，所有人严阵以待，准备迎接即将到来的风暴。",
+          "must_include": [
+            "家族成员的团结场景",
+            "麦珂的情感动员",
+            "补充条款的签署过程"
+          ],
+          "must_not_include": [
+            "维克多本人的直接出场",
+            "巴里·布鲁姆的伪造行为曝光"
+          ],
+          "detailed_synopsis": "2001年12月15日上午，奥瑞恩集团总部听证室外，气氛凝重。麦珂没有急于进入会场，而是将家族长辈们召集在一起。他回顾了前世家族因内部分裂而被维克多各个击破的惨痛历史，言辞恳切：“如果我们现在不能像一个人一样战斗，那么所有的努力都将化为乌有。”这番话触动了在场所有人的心弦。老麦森看着眼前这个曾经稚嫩如今却如此成熟的孙子，眼中闪过一丝欣慰。麦珂随即提出了“物理介质优先”的原则，并详细解释了前世巴里·布鲁姆如何利用电子系统的漏洞进行伪造。他展示了《双轨创作信托协议》补充条款，要求任何大额资产变动必须经过“三人联署”和“原始物理胶片”的双重验证。在麦珂的感召下，家族成员们纷纷表态支持，并在条款上郑重签字。老麦森作为族长，最后落笔，宣布家族内部达成了前所未有的团结。这一刻，麦珂知道，他们不再是任人宰割的羔羊，而是一支坚不可摧的钢铁队伍。",
+          "source_timeline_start": "2001年12月15日 上午 09:00",
+          "source_timeline_end": "2001年12月15日 下午 14:00"
+        },
+        {
+          "chapter_id": 380,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "奥瑞恩集团总部听证室",
+          "chapter_goal": "在听证会上，麦珂利用前世记忆中的逻辑漏洞，通过“物理优先”测试，迫使巴里·布鲁姆当场暴露伪造行为，粉碎维克多的动议。",
+          "chapter_title": "物理的铁证",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "维克多·兰斯 (代理人)",
+            "老麦森",
+            "艾琳娜",
+            "苏菲亚",
+            "莉薇娅·普莱斯"
+          ],
+          "opening_conflict": "维克多团队代理人突然提出“管理人失能”动议，试图绕过家族投票，强行通过电子化自动续约程序。",
+          "info_gap_use": "麦珂利用前世记忆，指出巴里·布鲁姆在提交“紧急维修”电子指令时，习惯性遗漏关键附件，且系统会在无物理介质确认的情况下默认执行。",
+          "opponent_reaction": "巴里·布鲁姆在听证会上为了掩饰慌张，试图用“系统故障”借口搪塞，却因记不清前世自己伪造时的具体操作细节，在实时演示中反复出错。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团总部听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里·布鲁姆自信满满地走上台，准备展示他的“完美”电子指令。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_370_BACKUP_FILM",
+              "timeline_scope": "current",
+              "purpose": "作为物理介质锚点，与电子数据进行对比验证。"
+            }
+          ],
+          "action_sequence": [
+            "维克多代理人抛出“管理人失能”动议，试图绕过家族投票。",
+            "麦珂冷静反驳，要求现场进行“物理优先”测试，展示未加密的物理胶片原件。",
+            "巴里·布鲁姆在演示中慌乱失措，误将“删除指令”当作“备份指令”发出，引发全场哗然。",
+            "莉薇娅·普莱斯当场签署《场馆安全独立评估书》，否决了维克多的违规提案。",
+            "家族成员联合举起编号为#2002-10-1的条款原件，粉碎维克多的动议。"
+          ],
+          "visible_payoff": "巴里·布鲁姆因伪造证据被行业自律委员会暂停从业资格两年，维克多的“资产置换提案”彻底破产，麦珂家族信托得到永久性加固。",
+          "ending": "听证会结束，麦珂家族赢得了最终的胜利，但麦珂知道，真正的风暴才刚刚开始。",
+          "must_include": [
+            "巴里·布鲁姆的滑稽表演",
+            "物理介质的对比验证",
+            "家族成员的联合行动"
+          ],
+          "must_not_include": [
+            "联邦调查局的直接介入",
+            "维克多本人的直接下场"
+          ],
+          "detailed_synopsis": "维克多团队代理人突然提出“管理人失能”动议，试图绕过家族投票，强行通过电子化自动续约程序。维克多代理人抛出“管理人失能”动议，试图绕过家族投票。麦珂冷静反驳，要求现场进行“物理优先”测试，展示未加密的物理胶片原件。巴里·布鲁姆在演示中慌乱失措，误将“删除指令”当作“备份指令”发出，引发全场哗然。莉薇娅·普莱斯当场签署《场馆安全独立评估书》，否决了维克多的违规提案。巴里·布鲁姆因伪造证据被行业自律委员会暂停从业资格两年，维克多的“资产置换提案”彻底破产，麦珂家族信托得到永久性加固。听证会结束，麦珂家族赢得了最终的胜利，但麦珂知道，真正的风暴才刚刚开始。",
+          "source_timeline_start": "2001年12月15日 下午 14:30",
+          "source_timeline_end": "2001年12月15日 下午 17:00"
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "老麦森",
+        "艾琳娜",
+        "巴里·布鲁姆",
+        "维克多·兰斯 (画外音/代理人)"
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2001",
+    "character_states": [
+      {
+        "entity_id": "CHAR_MCKEE",
+        "state_key": "family_leadership_status",
+        "from": "contested",
+        "to": "unanimously_supported"
+      },
+      {
+        "entity_id": "CHAR_BARRY",
+        "state_key": "professional_license_status",
+        "from": "active",
+        "to": "suspended_for_2_years"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_id": "REL_MCKEE_FAMILY",
+        "state_key": "internal_cohesion",
+        "from": "fragmented",
+        "to": "united"
+      },
+      {
+        "entity_id": "REL_LIVIA_MCKEE",
+        "state_key": "alliance_depth",
+        "from": "strategic_partner",
+        "to": "life_long_comrade"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "RIGHT_MCKEE_TRUST",
+        "state_key": "protection_mechanism",
+        "from": "vulnerable_to_digital_manipulation",
+        "to": "fortified_by_physical_anchor"
+      }
+    ],
+    "health_and_location": [],
+    "open_threads": [
+      "‘时间褶皱’档案二期的后续调查方向",
+      "维克多·兰斯对巴里·布鲁姆倒台后的应对策略",
+      "1999年除夕夜磁带外壳指纹的深入调查"
+    ],
+    "resolved_threads": [
+      "麦珂家族内部矛盾问题",
+      "巴里·布鲁姆伪造电子授权问题",
+      "维克多‘管理人失能’动议"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "随着维克多势力收缩，联邦调查局介入，那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的‘数据污染’方案。"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "generated_by": "qwen",
+  "kind": "foreshadows",
+  "identifier": "GLOBAL",
+  "accepted_attempt": null,
+  "base_prompt_sha256": "fc013ddfac2d71ad1abe805200090075709aa7dd9c166b6e5c4b65b1421c5f56",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-04T21:06:09+08:00",
+      "prompt_sha256": "fc013ddfac2d71ad1abe805200090075709aa7dd9c166b6e5c4b65b1421c5f56",
+      "raw_response_sha256": "da085f418546e4d4fac9dbd72a68a6525ed14449e61548fde27211d115380e5c",
+      "raw_response_file": "GLOBAL_foreshadows_attempt_01_raw.txt",
+      "validation_failures": [
+        "FS07把Pxx规划编号刻进了故事世界",
+        "FS08使用不可靠或不相干的证据推理“完全一致”",
+        "FS10使用不可靠或不相干的证据推理“完全一致”",
+        "FS11使用不可靠或不相干的证据推理“同源”",
+        "FS12使用不可靠或不相干的证据推理“完全一致”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 70.188,
+      "usage": {
+        "input_tokens": 18243,
+        "output_tokens": 3071,
+        "total_tokens": 21314,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-04T21:06:58+08:00",
+      "prompt_sha256": "261bd0391883d054e16bae8dfc175f1d1625b932409a1f2e9aa0b70a5d55882c",
+      "raw_response_sha256": "94b6780e83839ea76af85aa901e4559a16b3ed1ea40c321e069c0aa3093ada9c",
+      "raw_response_file": "GLOBAL_foreshadows_attempt_02_raw.txt",
+      "validation_failures": [
+        "FS07把Pxx规划编号刻进了故事世界",
+        "FS10使用不可靠或不相干的证据推理“完全一致”",
+        "FS11.development_phases必须恰好为['P10']",
+        "FS11阶段顺序必须满足种植≤发展≤回收",
+        "FS11使用不可靠或不相干的证据推理“同源”",
+        "FS12使用不可靠或不相干的证据推理“完全一致”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 48.419,
+      "usage": {
+        "input_tokens": 21425,
+        "output_tokens": 3075,
+        "total_tokens": 24500,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-04T21:08:08+08:00",
+      "prompt_sha256": "70d00e887eae5533488c4f55e0681c58c8ec698c48ba98134c6c3acb7f098c49",
+      "raw_response_sha256": "d9798582d467be4a20bc33066320f0170197f8033d768db581eb498bf8ad690d",
+      "raw_response_file": "GLOBAL_foreshadows_attempt_03_raw.txt",
+      "validation_failures": [
+        "FS07把Pxx规划编号刻进了故事世界",
+        "FS10使用不可靠或不相干的证据推理“完全一致”",
+        "FS11.development_phases必须恰好为['P10']",
+        "FS11种植年份2008与阶段P09不一致，应为['P10']之一",
+        "FS11使用不可靠或不相干的证据推理“同源”",
+        "FS12使用不可靠或不相干的证据推理“完全一致”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 70.566,
+      "usage": {
+        "input_tokens": 21443,
+        "output_tokens": 3075,
+        "total_tokens": 24518,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-04T21:08:58+08:00",
+      "prompt_sha256": "e9808bd7a2bbd7b1b4f54ea7466ae96685aa2f36714e4ec373675bfe3b8decf7",
+      "raw_response_sha256": "d08f1b3a7444ef899ee1342fc53d1a272ee0762c473aea2bb854d8a3e20f3e51",
+      "raw_response_file": "GLOBAL_foreshadows_attempt_04_raw.txt",
+      "validation_failures": [
+        "FS06使用不可靠或不相干的证据推理“完全一致”",
+        "FS10使用不可靠或不相干的证据推理“完全一致”",
+        "FS11.development_phases必须恰好为['P10']",
+        "FS11种植年份2008与阶段P09不一致，应为['P10']之一",
+        "FS11使用不可靠或不相干的证据推理“同源”",
+        "FS12使用不可靠或不相干的证据推理“完全一致”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 49.338,
+      "usage": {
+        "input_tokens": 21457,
+        "output_tokens": 3139,
+        "total_tokens": 24596,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

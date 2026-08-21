@@ -1,0 +1,110 @@
+{
+  "macro_group_id": "MG050",
+  "event_directions": [
+    {
+      "cluster_id": "EC246",
+      "chapter_span": [
+        491,
+        492
+      ],
+      "opposition_type": "technical",
+      "event_type": "health_safety",
+      "solution_type": "performance_proof",
+      "death_chain_role": "advance",
+      "previous_life_harm": "前世电子生命体征被篡改，麦珂在直播前夜被判定脑死亡。",
+      "unique_prev_life_info": "维克多于3月16日深夜指令巴里封锁独立媒体信号的具体代码。",
+      "preemptive_action": "麦珂启用机械节拍器与纸质呼吸曲线图，避开所有电子生物反馈设备。",
+      "chapter_one_small_win": "玛莎带领医师团队在监控盲区外完成首次人工体征打卡并盖章。",
+      "chapter_two_showdown": "卡尔试图切断现场信号时，发现备用机械录音带已自动开始录制。",
+      "opponent_permanent_loss": "奥瑞恩集团无法再伪造麦珂的实时生理数据作为法律证据。",
+      "protagonist_concrete_gain": "获得三十七位基层医师手签的原始体征日志原件作为法定凭证。",
+      "irreversible_outcome_key": "纸质存根物理隔离成功，数字篡改逻辑彻底失效。",
+      "death_chain_connection": "CS08: 1983年启动的心律校准计划在此刻转化为终局防御矩阵。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC247",
+      "chapter_span": [
+        493,
+        494
+      ],
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "前世托马斯伪造‘脑死亡’医嘱的电子签名密钥生成时间戳被利用。",
+      "unique_prev_life_info": "掌握托马斯伪造医嘱的电子签名密钥生成具体时间点为3月17日凌晨。",
+      "preemptive_action": "苏菲亚提前将2001年专辑封底铅字扫描放大，投影至后台控制室主屏。",
+      "chapter_one_small_win": "三位最高分学员联合签署《临时信托执行确认书》，粉碎管理人失能动议。",
+      "chapter_two_showdown": "昆廷突发眩晕时，黛安娜当场出示2002年信托协议补充条款副本。",
+      "opponent_permanent_loss": "维克多试图以‘管理人失能’为由冻结信托的动议在启动前即丧失法理基础。",
+      "protagonist_concrete_gain": "确立非血缘监护人黛安娜与认证学员对信托的绝对共同控制权。",
+      "irreversible_outcome_key": "信托条款公开生效，任何基于‘昏迷’或‘失能’的法律指控瞬间崩塌。",
+      "death_chain_connection": "FS08: 2002年信托协议补充条款在昆廷突发眩晕时完美启用。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC248",
+      "chapter_span": [
+        495,
+        496
+      ],
+      "opposition_type": "institutional",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "reveal",
+      "previous_life_harm": "前世三千二百一十四封信件被剪辑成虚假的哀悼声浪掩盖真相。",
+      "unique_prev_life_info": "记得2001年专辑封底铅字对应的真实录音文件存储于旧式磁带库物理位置。",
+      "preemptive_action": "艾琳调取2001年重制版第七轨末尾原始咳嗽声，未加任何降噪处理。",
+      "chapter_one_small_win": "全场观众在无指挥下集体吸气延长停顿，覆盖卡尔预设的哀乐轨道。",
+      "chapter_two_showdown": "全球直播中首个未经剪辑的人声洪流朗读明信片墙上的真实来信。",
+      "opponent_permanent_loss": "奥瑞恩集团精心策划的‘静默协议’因真实人声洪流而彻底失效。",
+      "protagonist_concrete_gain": "建立跨越四十年的公众信任网络，成为不可辩驳的生存证词。",
+      "irreversible_outcome_key": "真实人声洪流覆盖预设剧本，谎言在公共空间无处遁形。",
+      "death_chain_connection": "FS11: 2005年明信片墙信件在终局现场被朗读，形成人声洪流。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC249",
+      "chapter_span": [
+        497,
+        498
+      ],
+      "opposition_type": "villain",
+      "event_type": "fan_public_welfare",
+      "solution_type": "teamwork",
+      "death_chain_role": "echo",
+      "previous_life_harm": "前世三百二十一名医护代表的宣誓被伪造视频替代，无法证明清醒。",
+      "unique_prev_life_info": "清楚‘永恒星光’算法在3月18日0点将自动执行‘静默协议’需反向验证。",
+      "preemptive_action": "莉薇娅在急救站铭牌空白处补写第三遍‘脉搏可查，权限不代’。",
+      "chapter_one_small_win": "全场观众自发打开手机闪光灯，形成三重光信号同步映入直播画面。",
+      "chapter_two_showdown": "三百二十一名医护代表举起2009年3月17日晨间体征日志签名页。",
+      "opponent_permanent_loss": "维克多意识到其操控体系因全员清醒见证而瞬间崩塌且无法挽回。",
+      "protagonist_concrete_gain": "获得最具穿透力的视觉证词，确立‘清醒即存在’的绝对事实。",
+      "irreversible_outcome_key": "集体宣誓与体征日志同步公开，任何否认都变成对三百人的指控。",
+      "death_chain_connection": "FS12: 2007年‘我确认此人今日清醒’仪式被完美复刻。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC250",
+      "chapter_span": [
+        499,
+        500
+      ],
+      "opposition_type": "villain",
+      "event_type": "performance",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "reveal",
+      "previous_life_harm": "前世麦珂在葬礼上被宣布死亡，所有资产被奥瑞恩集团吞并。",
+      "unique_prev_life_info": "那枚1969年试镜盒底铜质齿轮完成最后一次旋转触发三十七国电台切入。",
+      "preemptive_action": "麦珂步入穹顶入口，手持未剪辑童年试镜母带，直视维克多。",
+      "chapter_one_small_win": "三十七国电台同步切入‘午夜星轨’频段，响起第一句原创歌词。",
+      "chapter_two_showdown": "麦珂问出唯一问题：‘你们纪念的，究竟是我，还是你们终于不用再怕我开口？’",
+      "opponent_permanent_loss": "维克多陷入自相矛盾的指控中无法脱身，奥瑞恩集团合规化谋杀企图粉碎。",
+      "protagonist_concrete_gain": "启动‘开口权存证计划’，四十年作品打包为开源时间胶囊免费授予。",
+      "irreversible_outcome_key": "清醒即审判闭环完成，主角未设复仇议程只开启新时代。",
+      "death_chain_connection": "CS15: 1969年提问与2009年发问共享同一语法结构与主权内核。",
+      "direction": ""
+    }
+  ]
+}

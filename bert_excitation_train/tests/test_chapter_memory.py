@@ -5,12 +5,17 @@ from pathlib import Path
 
 from bert_excitation_train.scripts.neo4j_kg.chapter_memory import (
     build_story_state,
+    canonical_possession_key,
     load_memory_files,
     normalize_memory,
     render_story_constraints,
     save_memory_file,
     validate_transition,
     extract_chapter_memory,
+    story_state_slot,
+)
+from bert_excitation_train.scripts.neo4j_kg.online_retriever import (
+    _latest_current_fact_rows,
 )
 from bert_excitation_train.scripts.neo4j_kg.story_memory import StoryMemoryCoordinator
 from bert_excitation_train.scripts.neo4j_kg.sync_story_memory import (
@@ -293,6 +298,92 @@ class ChapterMemoryContinuityTests(unittest.TestCase):
         rendered = render_story_constraints(state, 10)
         self.assertIn("Arthur Cole.life_status = dead", rendered)
         self.assertIn("只能以回忆/梦境/转述出现", rendered)
+
+    def test_multiple_possession_rights_survive_as_independent_state_slots(self):
+        memories = [
+            memory(3, state_changes=[{
+                "character": "卡尔·霍尔特",
+                "field": "possession",
+                "new_value": "无排练群发布权限",
+                "evidence": "排练群发布人改成麦珂本人",
+            }]),
+            memory(4, state_changes=[{
+                "character": "卡尔·霍尔特",
+                "field": "possession",
+                "new_value": "无排练表分发权",
+                "evidence": "卡尔失去排练表分发权",
+            }]),
+        ]
+        state = build_story_state(memories)
+        rights = {
+            item["state_key"]: item["new_value"]
+            for item in state["states"]
+            if item["character"] == "卡尔·霍尔特"
+        }
+        self.assertEqual(
+            {
+                "possession:rehearsal_group_publish": "无排练群发布权限",
+                "possession:rehearsal_table_distribute": "无排练表分发权",
+            },
+            rights,
+        )
+        rendered = render_story_constraints(state, 5)
+        self.assertIn("无排练群发布权限", rendered)
+        self.assertIn("无排练表分发权", rendered)
+
+    def test_neo4j_fact_rows_keep_multiple_possessions_but_latest_each_slot(self):
+        rows = [
+            {"subject": "卡尔·霍尔特", "predicate": "possession", "object": "无排练表分发权", "chapter": 4, "evidence": "失去排练表分发权"},
+            {"subject": "卡尔·霍尔特", "predicate": "possession", "object": "无排练群发布权限", "chapter": 3, "evidence": "排练群发布人改成麦珂本人"},
+            {"subject": "卡尔·霍尔特", "predicate": "possession", "object": "排练群发布权限", "chapter": 2, "evidence": "原先掌握排练群发布"},
+        ]
+        latest = _latest_current_fact_rows(rows)
+        self.assertEqual(2, len(latest))
+        self.assertEqual(
+            {
+                "possession:rehearsal_table_distribute",
+                "possession:rehearsal_group_publish",
+            },
+            {row["state_key"] for row in latest},
+        )
+        group = next(
+            row for row in latest
+            if row["state_key"] == "possession:rehearsal_group_publish"
+        )
+        self.assertEqual(3, group["chapter"])
+
+    def test_heuristic_extracts_protagonist_group_and_table_rights(self):
+        extracted = extract_chapter_memory(
+            4,
+            (
+                "麦珂·杰森收起文件。随后，他当场收回排练群的统一发布权限，"
+                "工作人员将发布人改成他本人。"
+                "卡尔·霍尔特站在已经失去发布权限的群聊前。"
+                "麦珂·杰森说：‘真实彩排表由我确认，分发名单也由我决定。’"
+            ),
+            known_names=["麦珂·杰森", "卡尔·霍尔特"],
+            llm_call=None,
+        )
+        slots = {
+            story_state_slot(item)
+            for item in extracted["state_changes"]
+            if item["character"] == "麦珂·杰森"
+        }
+        self.assertTrue({
+            "possession:rehearsal_group_publish",
+            "possession:rehearsal_table_confirm",
+            "possession:rehearsal_table_distribute",
+        }.issubset(slots))
+        opponent_slots = {
+            story_state_slot(item)
+            for item in extracted["state_changes"]
+            if item["character"] == "卡尔·霍尔特"
+        }
+        self.assertEqual({"possession:rehearsal_group_publish"}, opponent_slots)
+        self.assertEqual(
+            "rehearsal_audio_publish",
+            canonical_possession_key("后续排练原声发布权"),
+        )
 
     def test_sidecar_replacement_is_idempotent(self):
         with tempfile.TemporaryDirectory() as temp_dir:

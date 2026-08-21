@@ -1,0 +1,169 @@
+{
+  "macro_group_id": "MG012",
+  "event_clusters": [
+    {
+      "cluster_id": "EC059",
+      "chapter_span": [117, 118],
+      "source_event_direction": "前世试映会观众情绪未被引导，导致作品反响平平，错失确立行业标准的机会。",
+      "source_event_direction_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_macro_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "灯光色温共振与舆论逆转",
+      "timeline_years": "1979-1980",
+      "main_opponent": "奥瑞恩集团影子公司‘黑曜石传媒’",
+      "opposition_type": "institutional",
+      "event_type": "media_reputation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["EC058"],
+      "foreshadow_ids": [],
+      "main_characters": ["麦珂·杰森", "瑟琳娜·瓦尔", "维克多·兰斯", "黑曜石传媒代表-卡尔·杜尔"],
+      "fictional_obstacle": "黑曜石传媒在《纸船沉没时》混音阶段植入‘怀旧失真’，并计划在巡演首演前制造升降台故障。",
+      "prev_life_tragedy": "前世试映会观众情绪未被引导，导致作品反响平平，错失行业标准确立。",
+      "info_gap_from_prev_life": "预判1980年6月试映会观众情绪拐点，设定灯光色温曲线以触发集体共鸣。",
+      "why_previous_life_failed": "缺乏对灯光色温与情绪同步的技术预设，现场氛围未能形成统一情感波动。",
+      "preemptive_avoidance": "麦珂在试映会前调校全场灯光至5600K冷白，配合三秒停顿的节奏标记，确保情感同步。",
+      "bait_and_evidence": "现场入场时每位观众领取标记为‘安全协作者’的任务卡，卡背记录入场时间与座位编号，后在听证会上作为观众自发共振的客观证据。",
+      "comic_villain_behavior": "卡尔·杜尔在媒体发布会上夸张声称观众情绪是‘人为操控’，并现场演示所谓的‘情感干预装置’，结果装置因未配合铜质齿轮手动读数而失灵。",
+      "villain_loss": "黑曜石传媒因在公开听证会被迫承认篡改母带与制造升降台故障的商业欺诈，失去《纸船沉没时》版权竞标资格，并被行业协会列入黑名单。",
+      "protagonist_gain": "《锈钉与琴键》技术标准被奥瑞恩集团正式采纳，麦珂获得《夏夜协议》独家物理验证权，确立跨媒介创作者绝对话语权。",
+      "relationship_change": "瑟琳娜·瓦尔正式成为民事伴侣兼技术合伙人，获得联合署名权及股份。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_003",
+          "state_key": "technical_standard_authority__adopted_1980_06_10",
+          "from": "未采纳",
+          "to": "《锈钉与琴键》标准被奥瑞恩集团采纳",
+          "irreversible": true,
+          "evidence": "1980-06-12_奥瑞恩集团内部通报_技术标准采纳声明",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_MK_SR_001",
+          "state_key": "civil_partner_tech_equity",
+          "from": "技术支持",
+          "to": "民事伴侣兼技术合伙人（联合署名+股权）",
+          "irreversible": true,
+          "evidence": "1980-05-15_夏夜协议附录B_瑟琳娜权益确认书",
+          "effect_type": "relationship_change"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_ORION_STAGE",
+          "state_key": "copper_gear_manual_readout",
+          "from": "自动化液压阀",
+          "to": "铜质齿轮手动读数装置已装配",
+          "irreversible": true,
+          "evidence": "1980-03-20_技术改造报告_铜齿轮编号体系",
+          "effect_type": "world_state"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REPUTATION_OBSIDIAN_MEDIA",
+          "state_key": "public_trust_loss",
+          "from": "高信任",
+          "to": "信任危机",
+          "irreversible": true,
+          "evidence": "1980-06-15_全国广播新闻_黑曜石传媒商业欺诈曝光",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HA_1979_11_Kodak_Film_Failure", "HA_1980_03_Hydraulic_Seal_Aging"],
+      "cluster_outcome": "麦珂通过灯光色温与情绪同步的创新手段，逆转媒体舆论，迫使黑曜石传媒公开承认欺诈，确保《锈钉与琴键》标准化并巩固《夏夜协议》物理验证权。",
+      "next_event_hook": "铜质齿轮编号体系的标准化触发1983年‘心律校准计划’中流动巡诊团器械编号逻辑的构建；维克多·兰斯的隐蔽渗透将在下一组展开，针对‘家庭治理宪章’的法律漏洞发起试探。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 117,
+          "timeline_start": "1980-06-09 19:00",
+          "timeline_end": "1980-06-10 22:30",
+          "scene": "联合中心大剧院试映会现场",
+          "chapter_goal": "通过灯光色温与节奏引导观众情绪，制造不可复制的沉浸式体验。",
+          "chapter_title": "色温共振的序幕",
+          "participants": ["麦珂·杰森", "瑟琳娜·瓦尔", "观众群体", "技术团队", "媒体记者"],
+          "opening_conflict": "试映会前夜，黑曜石传媒暗中调试升降台液压阀，意图在演出高潮时制造故障。",
+          "info_gap_use": "麦珂利用前世记忆的灯光色温曲线（5600K→4800K）配合三秒停顿，引导情感波动。",
+          "opponent_reaction": "卡尔·杜尔在后台发现灯光异常，尝试切换回原始设定以破坏共振。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "剧院主舞台灯光控制室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光调光台上指针快速滑动，伴随麦珂的低声指令"
+            },
+            {
+              "sequence": 2,
+              "location": "观众座位区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光切换至5600K，观众的呼吸同步出现轻微起伏"
+            },
+            {
+              "sequence": 3,
+              "location": "升降台机械舱",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "卡尔尝试手动复位阀门，铜质齿轮手动读数装置发出清脆声响阻止操作"
+            },
+            {
+              "sequence": 4,
+              "location": "舞台中心",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "三秒停顿后，灯光快速降至4800K，观众情绪瞬间高涨"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_119_LIGHT_CURVE_LOG",
+              "timeline_scope": "current",
+              "display_name": "灯光色温曲线记录纸本",
+              "kind": "document"
+            },
+            {
+              "artifact_id": "ART_120_CROWD_TASK_CARD",
+              "timeline_scope": "current",
+              "display_name": "安全协作者任务卡",
+              "kind": "paper"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_107_ALARM_TAPE",
+              "timeline_scope": "current",
+              "purpose": "验证升降台液压阀异常信号"
+            }
+          ],
+          "action_sequence": [
+            "麦珂指示灯光师调校至5600K",
+            "技术团队同步启动三秒停顿标记",
+            "观众领取任务卡并在入场时刷卡登记",
+            "卡尔尝试干预灯光，系统自动锁定",
+            "灯光降至4800K，观众情绪共振"
+          ],
+          "visible_payoff": "现场观众自发形成情感共振，媒体称赞为‘前所未有的沉浸式体验’，奥瑞恩集团原定营销方案失效。",
+          "ending": "试映会圆满结束，黑曜石传媒的故障计划被技术手段无声化。",
+          "must_include": ["灯光色温调节", "三秒停顿节奏", "安全协作者任务卡", "铜质齿轮手动读数装置"],
+          "must_not_include": ["现代电子设备", "手机", "电子邮件"],
+          "detailed_synopsis": "在1980年6月9日晚，麦珂凭借前世记忆提前布置灯光色温曲线，将全场灯光调至5600K冷白，并在关键乐段前嵌入精确的三秒停顿。观众入场时每人领到标记为‘安全协作者’的任务卡，卡背记录座位与入场时间，形成可追溯的情绪同步证据。黑曜石传媒的卡尔·杜尔试图在演出高潮时切换灯光并手动复位升降台液压阀，铜质齿轮手动读数装置发出机械锁定声，阻止了他的干预。灯光随停顿降至4800K，现场观众情绪瞬间高涨，媒体现场报道‘前所未有的沉浸式体验’，奥瑞恩集团的营销计划被迫撤回。试映会结束后，麦珂将灯光曲线记录纸本与任务卡收集，作为后续法律证据的核心材料。"
+        },
+        {
+          "chapter_id": 118,
+          "timeline_start": "1980-06-12 09:00",
+          "timeline_end": "1980-06-14 18:00",
+          "scene": "奥瑞恩集团公开听证会",
+          "chapter_goal": "通过证据反驳黑曜石传媒的操控指控，巩固《夏夜协议》物理验证条款。",
+          "chapter_title": "舆论审判的逆转",
+          "participants": ["麦珂·杰森", "瑟琳娜·瓦尔", "卡尔·杜尔", "奥瑞恩集团法务代表-伊莲娜·舒尔", "媒体记者", "行业监管委员会"],
+          "opening_conflict": "卡尔在听证会上公开指责观众情绪是‘人为操控’，并展示伪造的情感干预装置。",
+          "info_gap_use": "麦珂出示现场任务卡与灯光曲线记录，证明情绪共振为自发且技术可复制。",
+          "opponent_reaction": "卡尔试图用现场录像证明灯光被远程控制，声称麦珂提前植入情感触发程序。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团会议厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "会议厅灯光骤暗，投影仪启动，屏幕显示

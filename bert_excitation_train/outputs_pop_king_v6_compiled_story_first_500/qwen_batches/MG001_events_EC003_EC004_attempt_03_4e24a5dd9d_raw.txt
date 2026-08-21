@@ -1,0 +1,309 @@
+{
+  "macro_group_id": "MG001",
+  "event_clusters": [
+    {
+      "cluster_id": "EC003",
+      "chapter_span": [5, 6],
+      "source_event_direction": "前世具体受害：乔纳在前世利用玛莎的信件欺骗麦珂，导致麦珂错过了试镜机会；本事件独有的前世信息差：乔纳在前世的信件中有一个限时报名的谎话；今生提前动作：麦珂在今生发现乔纳的谎话后，立即写信给玛莎，要求她检查家庭邮件；第5章可见小赢：第5章，麦珂成功让玛莎检查家庭邮件，发现了乔纳的谎话；第6章新交锋：第6章，麦珂和乔纳发生冲突，麦珂要求乔纳交出所有家庭邮件；阻力方永久现实损失：乔纳永久失去独占家庭消息的权力；主角现实收益：麦珂获得了家庭邮件的控制权，能够随时检查和利用邮件；不可逆结算键：乔纳的谎言被揭露，麦珂获得了家庭邮件的控制权；接回死亡控制主线：麦珂的行动削弱了2009年死亡背后的保险、版权、医疗或控制体系",
+      "source_event_direction_sha256": "ea66965ad87e83ceded1bce431cd3ac6403491ac7f9cd23a0fb02afd2b92037d",
+      "source_macro_sha256": "3059b4a0b5cfd03d2ca0605993d5a590e39f610fbeb7be2fa3f8e158247e40e5",
+      "name": "截留的回函与迟到的真相",
+      "timeline_years": "1969-11-24",
+      "main_opponent": "乔纳·杰森",
+      "opposition_type": "family",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["CS01"],
+      "foreshadow_ids": [],
+      "main_characters": ["麦珂·杰森", "玛莎·杰森", "乔纳·杰森"],
+      "fictional_obstacle": "乔纳声称‘河湾镇邮局罢工’，私自扣留《晨光电台》寄来的正式面试确认函，并伪造了一封‘名额作废’的催办信塞入信箱。",
+      "prev_life_tragedy": "麦珂因未收到真实通知而错过试镜，乔纳却对外宣称是麦珂自己放弃，以此掩盖其挪用资金和阻挠事业的行为。",
+      "info_gap_from_prev_life": "记得前世乔纳在11月24日傍晚曾对着电话撒谎说‘邮局停了’，且那封伪造的信封上没有邮戳，只有他匆忙涂抹的墨水痕迹。",
+      "why_previous_life_failed": "上一世的乔纳利用母亲对邮政系统的陌生和自身的权威形象，轻易编造了‘意外’借口，母亲未加核实便相信了儿子的缺席是不可抗力。",
+      "preemptive_avoidance": "麦珂利用前世记忆，在父亲回家前直接指出信封无邮戳的异常，并要求母亲立即去邮局柜台核对原始投递记录，而非听信口头解释。",
+      "bait_and_evidence": "安全留饵：麦珂假装不知，故意在客厅大声询问父亲为何还没收到回信；证据形成：玛莎亲自前往邮局调取挂号信签收底单，发现日期为昨日，且签名笔迹与乔纳不符（实为乔纳模仿）。",
+      "comic_villain_behavior": "乔纳试图用‘大人说话小孩别插嘴’来转移话题，结果因为太慌张，把伪造的信封从口袋里掉出来，还顺势用脚踢到沙发底下，却被麦珂一眼认出那是他惯用的深蓝色信封。",
+      "villain_loss": "乔纳失去了对家庭信息的垄断权，被玛莎当众剥夺了处理所有对外通信的代理资格，且其在社区中的信誉因‘私扣公函’行为受损。",
+      "protagonist_gain": "麦珂获得了对家庭邮件的直接管理权，确立了‘未经母子双方确认，任何文件不得流转’的家庭新规。",
+      "relationship_change": "玛莎彻底看清丈夫的自私与欺诈，从被动接受转为主动联合儿子对抗，母子同盟正式固化。",
+      "continuity_writes": ["乔纳失去家庭通信代理权", "麦珂确立邮件管理权", "玛莎与麦珂建立深度信任"],
+      "state_transitions": [
+        {
+          "domain": "job",
+          "entity_id": "CHAR_JOHNA",
+          "state_key": "communication_authority",
+          "from": "拥有家庭全权代理权",
+          "to": "被剥夺通信代理权",
+          "irreversible": true,
+          "evidence": "玛莎在邮局出示底单并当场宣布禁令",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_001",
+          "state_key": "trust_alliance",
+          "from": "母亲依赖丈夫",
+          "to": "母子结成决策同盟",
+          "irreversible": false,
+          "evidence": "玛莎握住麦珂的手，拒绝乔纳的解释",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "乔纳因私扣公函被揭穿，彻底失去家庭话语权；麦珂掌握邮件控制权，家庭内部防线稳固，为后续法律行动扫清障碍。",
+      "next_event_hook": "乔纳恼羞成怒，决定在即将到来的试唱环节设局，试图通过制造声带事故来彻底毁掉麦珂的机会。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 5,
+          "timeline_start": "1969-11-24",
+          "timeline_end": "1969-11-24",
+          "scene": "杰森家客厅",
+          "chapter_goal": "识破乔纳关于邮件的谎言，迫使母亲核实真相。",
+          "chapter_title": "没有邮戳的信",
+          "participants": ["麦珂·杰森", "玛莎·杰森", "乔纳·杰森"],
+          "opening_conflict": "乔纳拿着一个空信封回来，声称邮局罢工，麦珂无法收到《晨光电台》的确认函，麦珂当场指出信封无邮戳。",
+          "info_gap_use": "麦珂引用前世记忆：乔纳曾说‘邮局停了’，但实际那天邮局正常运作，且伪造信封无邮戳。",
+          "opponent_reaction": "乔纳脸色大变，试图用‘孩子不懂事’搪塞，并强行要把信封收走，眼神躲闪。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "杰森家客厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "开场即冲突"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_005_MAIL_LOG",
+              "timeline_scope": "current",
+              "display_name": "家庭邮件登记簿",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂指着乔纳手中的信封，指出上面没有邮局的红色印章。",
+            "乔纳慌乱地辩解称是手写的紧急通知，试图将信塞进壁炉。",
+            "麦珂拦住父亲，大声喊出前世听到的那句谎话：‘邮局昨天就开门了，爸爸你为什么要骗妈妈？’",
+            "玛莎震惊地看着儿子，随即冷静地拿起电话拨通了邮局查询台。"
+          ],
+          "visible_payoff": "麦珂成功引起母亲警觉，阻止了乔纳销毁证据，玛莎开始怀疑丈夫的诚信。",
+          "ending": "玛莎挂断电话，得知邮局确实有挂号信送达，乔纳的脸色瞬间苍白。",
+          "must_include": ["无邮戳的信封", "麦珂的质问", "玛莎的电话查询"],
+          "must_not_include": ["乔纳的职位丧失", "家庭会议制度的正式确立"],
+          "detailed_synopsis": "1969年11月24日傍晚，乔纳带回一个空信封，谎称邮局罢工导致麦珂错失试镜通知。麦珂敏锐指出信封无邮戳，并复述前世记忆中乔纳的谎言细节。乔纳惊慌失措试图销毁证据，麦珂当众揭穿，玛莎随即致电邮局核实。当得知确有挂号信送达时，乔纳的谎言不攻自破，玛莎眼中闪过一丝决绝。本章以麦珂的小胜告终，成功让母亲意识到父亲的欺骗，为次日彻底摊牌埋下伏笔。"
+        },
+        {
+          "chapter_id": 6,
+          "timeline_start": "1969-11-25",
+          "timeline_end": "1969-11-25",
+          "scene": "杰森家厨房",
+          "chapter_goal": "正式确立麦珂对邮件的管理权，彻底击溃乔纳的权威。",
+          "chapter_title": "被夺走的钥匙",
+          "participants": ["麦珂·杰森", "玛莎·杰森", "乔纳·杰森"],
+          "opening_conflict": "乔纳试图再次拿回邮件控制权，声称要‘为孩子好’，麦珂则拿出邮局底单作为铁证。",
+          "info_gap_use": "麦珂利用前世记忆中的底单编号和签名笔迹差异，证明乔纳伪造了签收记录。",
+          "opponent_reaction": "乔纳气急败坏，指责麦珂‘没大没小’，甚至动手想抢回底单，被玛莎厉声喝止。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "杰森家厨房",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "承接上章钩子"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_005_MAIL_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为乔纳伪造签名的对比参照物"
+            }
+          ],
+          "action_sequence": [
+            "玛莎将邮局出具的挂号信底单拍在桌上，上面清晰显示签收人并非乔纳。",
+            "乔纳试图辩解说是代签，麦珂指出底单上的签名笔迹与乔纳习惯完全不同。",
+            "玛莎果断宣布：从今天起，所有家庭信件由麦珂拆阅，乔纳无权干涉。",
+            "乔纳愤怒地摔门而去，玛莎看着儿子，第一次露出了完全信任的笑容。"
+          ],
+          "visible_payoff": "乔纳彻底失去家庭通信代理权，麦珂正式获得邮件管理权，母子关系达到前所未有的高度。",
+          "ending": "乔纳离家出走，留下玛莎和麦珂在餐桌前相对无言，但气氛已截然不同。",
+          "must_include": ["底单证据", "玛莎的正式宣布", "乔纳的离场"],
+          "must_not_include": ["试唱环节的事故发生", "温特律师的介入"],
+          "detailed_synopsis": "次日清晨，乔纳试图挽回局面，声称为了麦珂的未来必须掌控一切。玛莎拿出邮局底单，麦珂精准指出签名笔迹的破绽，证实乔纳伪造签收。面对铁证，玛莎当众宣布剥夺乔纳的通信代理权，改由麦珂直接管理。乔纳恼羞成怒，摔门离去，家中只剩下母子二人。这一刻，麦珂不仅赢得了邮件控制权，更彻底扭转了家庭权力结构，为后续应对试唱陷阱奠定了坚实的信任基础。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC004",
+      "chapter_span": [7, 8],
+      "source_event_direction": "前世具体受害：前世的音乐指导临时换调令麦珂失声并落选，导致她错过了全国出道的机会；本事件独有的前世信息差：麦珂记得前世的音乐指导临时换调口令是‘升D调’，今生她在试唱前记得这句话并准备好应对；今生提前动作：麦珂在试唱前找到了成年乐手核对节目顺序，证明了她的实力；第7章可见小赢：第7章，麦珂通过试唱证明了她的实力，获得了正式表演席位；第8章新交锋：第8章，麦珂在正式表演中表现出色，赢得了观众的赞誉；阻力方永久现实损失：制作方失去了排练职务，无法继续控制麦珂的表演；主角现实收益：麦珂获得了正式表演席位和观众的赞誉；不可逆结算键：麦珂的表演成绩被永久记录在《晨光电台》试唱评分表上；接回死亡控制主线：麦珂的成功削弱了2009年死亡背后的保险、版权、医疗或控制体系",
+      "source_event_direction_sha256": "975371561e3fea2ca1c328f5e61527558c07ee6858a2e581c886e95fcb4c726e",
+      "source_macro_sha256": "3059b4a0b5cfd03d2ca0605993d5a590e39f610fbeb7be2fa3f8e158247e40e5",
+      "name": "升D调的陷阱与三秒的救赎",
+      "timeline_years": "1969-11-26",
+      "main_opponent": "卡尔·霍尔特",
+      "opposition_type": "institutional",
+      "event_type": "performance",
+      "solution_type": "performance_proof",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["CS01"],
+      "foreshadow_ids": ["FS01"],
+      "main_characters": ["麦珂·杰森", "卡尔·霍尔特", "昆廷·琼斯"],
+      "fictional_obstacle": "音乐总监卡尔·霍尔特计划在试唱开始前临时宣布将曲目改为‘升D调’，意图利用麦珂尚未发育完全的声带强行拔高音域，使其当场失声。",
+      "prev_life_tragedy": "麦珂在试唱现场因临时换调导致声带痉挛，哑着嗓子唱完，最终被判定‘状态不佳’而落选，从此被边缘化。",
+      "info_gap_from_prev_life": "记得前世卡尔在11月26日上午10:00整宣布换调指令是‘升D调’，且当时麦珂并未察觉，直接按原调演唱。",
+      "why_previous_life_failed": "上一世的麦珂年幼无知，完全听从指挥，不知道这是针对童星的恶意陷阱，也没有成年人及时干预。",
+      "preemptive_avoidance": "麦珂在彩排前主动找到资深乐手昆廷，请求核对当天的调性设置，并提前在琴键上标记了‘升D调’的异常位置。",
+      "bait_and_evidence": "安全留饵：麦珂假装顺从，但在上台前故意向卡尔展示自己已经‘练熟’了新调；证据形成：卡尔见麦珂能唱准升D调，以为计谋得逞，却在麦珂演唱时故意不配合伴奏，导致麦珂被迫清唱，反而更显实力。",
+      "comic_villain_behavior": "卡尔·霍尔特自以为聪明，看到麦珂能唱升D调后得意忘形，甚至在后台大笑‘这孩子终于要完了’，结果麦珂一开口，全场震惊，卡尔的表情瞬间僵住，像只被打断尾巴的猴子。",
+      "villain_loss": "卡尔·霍尔特因专业失误和恶意操纵被《晨光电台》高层记过，失去对麦珂试唱环节的最终裁定权，且其声誉在业内受损。",
+      "protagonist_gain": "麦珂凭借清唱的高难度表现赢得全场喝彩，正式获得《晨光电台》年度试镜的‘特别推荐’席位，成绩被永久记录。",
+      "relationship_change": "麦珂与昆廷建立初步的技术信任，昆廷开始视麦珂为真正的合作伙伴而非普通童星。",
+      "continuity_writes": ["卡尔·霍尔特被记过", "麦珂获得特别推荐席位", "麦珂与昆廷建立技术信任"],
+      "state_transitions": [
+        {
+          "domain": "job",
+          "entity_id": "CHAR_KARL",
+          "state_key": "authority_level",
+          "from": "拥有试唱环节最终裁定权",
+          "to": "被剥夺裁定权并记过",
+          "irreversible": true,
+          "evidence": "麦珂清唱成功，高层介入调查卡尔的操纵行为",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "career",
+          "entity_id": "CHAR_MCKE",
+          "state_key": "audition_status",
+          "from": "待审核（存在失声风险）",
+          "to": "获得特别推荐席位",
+          "irreversible": true,
+          "evidence": "麦珂清唱表现惊艳，评委当场打分",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": ["SRC_GRAMMY_RECORDS"],
+      "cluster_outcome": "麦珂成功化解换调陷阱，以清唱征服评委，卡尔·霍尔特被撤职，麦珂正式进入官方视野，成为未被签约却备受瞩目的新星。",
+      "next_event_hook": "麦珂的出色表现引发媒体关注，宣传人巴里·布鲁姆试图将其包装成‘傀儡神童’，麦珂需准备应对媒体采访。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 7,
+          "timeline_start": "1969-11-26",
+          "timeline_end": "1969-11-26",
+          "scene": "《晨光电台》试唱间",
+          "chapter_goal": "识破换调陷阱，通过清唱证明实力。",
+          "chapter_title": "无声的旋律",
+          "participants": ["麦珂·杰森", "卡尔·霍尔特", "昆廷·琼斯"],
+          "opening_conflict": "卡尔突然宣布将曲目改为‘升D调’，试图逼迫麦珂失声，麦珂却早已做好准备。",
+          "info_gap_use": "麦珂利用前世记忆，提前知道卡尔会下达‘升D调’指令，并提前与昆廷确认了该调性的可行性。",
+          "opponent_reaction": "卡尔见麦珂能唱准，以为计谋得逞，故意不提供伴奏，想让她出丑。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "《晨光电台》试唱间",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "开场即冲突"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_007_SCORE_SHEET",
+              "timeline_scope": "current",
+              "display_name": "试唱评分表",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "卡尔宣布换调指令，麦珂平静地走到钢琴前，示意昆廷不要伴奏。",
+            "麦珂开始清唱，声音清澈有力，完美驾驭升D调的高音部分。",
+            "卡尔脸色铁青，试图打断，但评委们已被麦珂的表现震撼，无人敢出声。",
+            "麦珂唱完最后一个音符，全场寂静，随后爆发出雷鸣般的掌声。"
+          ],
+          "visible_payoff": "麦珂成功清唱，证明了自己无需依赖伴奏也能完美演绎，卡尔的阴谋破产。",
+          "ending": "评委们纷纷起身鼓掌，卡尔站在角落，面如死灰。",
+          "must_include": ["升D调指令", "清唱表现", "卡尔的失败"],
+          "must_not_include": ["媒体采访的开始", "温特律师的介入"],
+          "detailed_synopsis": "1969年11月26日，试唱现场，卡尔·霍尔特突然宣布将曲目改为‘升D调’，企图利用麦珂声带未发育完全的特点使其失声。麦珂凭借前世记忆，提前与昆廷确认了该调性，并果断选择清唱。她清澈有力的歌声瞬间征服了在场的所有人，卡尔的阴谋彻底破产。评委们纷纷起立鼓掌，卡尔则面色惨白地退至角落。本章以麦珂的惊人表现和小胜告终，正式确立了她在试唱中的优势地位。"
+        },
+        {
+          "chapter_id": 8,
+          "timeline_start": "1969-11-27",
+          "timeline_end": "1969-11-27",
+          "scene": "《晨光电台》大厅",
+          "chapter_goal": "正式获得特别推荐席位，确立行业声誉。",
+          "chapter_title": "被记录的荣耀",
+          "participants": ["麦珂·杰森", "卡尔·霍尔特", "评审团主席"],
+          "opening_conflict": "卡尔试图抹黑麦珂的表现，称其为‘运气好’，评审团主席则坚持公正评判。",
+          "info_gap_use": "麦珂利用前世记忆，知道评审团主席最看重‘真实实力’，因此坚持不依赖任何外部辅助。",
+          "opponent_reaction": "卡尔气急败坏，试图在评分表上做手脚，被评审团主席当场制止。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "《晨光电台》大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "承接上章钩子"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_007_SCORE_SHEET",
+              "timeline_scope": "current",
+              "purpose": "作为麦珂获得特别推荐席位的正式凭证"
+            }
+          ],
+          "action_sequence": [
+            "卡尔试图在评分表上修改分数，声称麦珂表现不稳定。",
+            "评审团主席严厉制止，指出麦珂的清唱表现无可挑剔。",
+            "主席当场签署文件，授予麦珂‘特别推荐’席位，并将评分表归档。",
+            "麦珂微笑着接过文件，卡尔则被要求离开现场。"
+          ],
+          "visible_payoff": "麦珂正式获得特别推荐席位，卡尔被撤职，麦珂的声誉在行业内确立。",
+          "ending": "麦珂走出大厅，阳光洒在她身上，未来似乎一片光明。",
+          "must_include": ["评分表归档", "卡尔被撤职", "特别推荐席位"],
+          "must_not_include": ["媒体采访的具体内容", "家庭会议的召开"],
+          "detailed_synopsis": "次日，《晨光电台》大厅内，卡尔·霍尔特试图抹黑麦珂的清唱表现，声称其‘运气好’。评审团主席坚决维护公正，当场签署文件授予麦珂‘特别推荐’席位，并将评分表正式归档。卡尔因操纵比赛被撤职，麦珂则带着荣誉走出大厅，阳光洒在她身上，预示着未来的无限可能。本章以麦珂的正式胜利和卡尔的彻底失败告终，为后续的剧情发展奠定了坚实基础。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1969",
+    "character_states": [
+      "玛莎：从依赖丈夫转为完全信任儿子，建立家庭决策同盟",
+      "乔纳：失去家庭通信代理权，信誉受损",
+      "麦珂：获得邮件管理权，试唱表现优异，获特别推荐席位"
+    ],
+    "relationship_states": [
+      "母子同盟：玛莎与麦珂建立深度信任，共同对抗乔纳",
+      "昆廷与麦珂：建立技术信任，视对方为合作伙伴"
+    ],
+    "rights_and_assets": [
+      "麦珂：获得邮件管理权，试唱评分表归档，获特别推荐席位",
+      "乔纳：失去家庭通信代理权"
+    ],
+    "health_and_location": [
+      "麦珂：健康状况良好，每日晨间进行喉部监测",
+      "地点：河湾镇，杰森家及《晨光电台》"
+    ],
+    "open_threads": [
+      "媒体宣传人巴里·布鲁姆试图包装麦珂为‘傀儡神童’",
+      "卡尔·霍尔特被撤职后的报复心理"
+    ],
+    "resolved_threads": [
+      "乔纳的邮件欺诈行为被彻底揭露",
+      "卡尔·霍尔特的换调陷阱被成功化解"
+    ],
+    "introduced_characters": [
+      "昆廷·琼斯（资深乐手，技术搭档）"
+    ],
+    "next_pressure": "媒体宣传人巴里·布鲁姆试图将麦珂包装成‘傀儡神童’，麦珂需准备应对媒体采访，同时警惕卡尔·霍尔特的报复。"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "macro_group_id": "MG027",
+  "event_clusters": [
+    {
+      "cluster_id": "EC134",
+      "chapter_span": [267, 268],
+      "source_event_direction": "{\"macro_group_id\": \"MG027\", \"timeline_years\": \"1993—1994\", \"macro_goal\": \"在联邦税务审计窗口期前，利用麦珂对1983年‘蓝盾离岸’收购真相的记忆差，迫使奥瑞恩集团放弃伪造的影印票据；完成《双轨创作信托协议》修订，确立‘物理原件’为唯一法律凭证，将黛安娜升级为防御体系架构师。\", \"main_conflict\": \"奥瑞恩集团高管试图在审计前夕提交经篡改的‘影印版’历史票据，指控初声基金资金流向不明并窃取控制权；麦珂与黛安娜利用苏菲亚的离线档案技术，在对手抛出文件瞬间启动‘物理介质验证’仪式，揭露其复印件无法通过声学锚定与原始纸张纹理比对，导致对方证据链当场断裂。\", \"rebirth_advantage\": \"麦珂精准掌握1993年联邦审计的具体流程漏洞（如第45天必须提交原始介质副本）；清楚记得1983年奥瑞恩收购‘蓝盾离岸’实为持有影印权而非运营；预判对手将在第263章利用税务听证会强行通过虚假账目，从而提前布局物理存证防线。\", \"ending_state\": \"奥瑞恩集团代表被迫撤回指控并承认程序违规；《双轨创作信托协议》正式生效，初声基金财务透明度获业界公认；黛安娜晋升首席架构师；麦珂与瑟琳娜构建起坚不可摧的物理防御网；对手意识到常规手段失效，开始酝酿更隐蔽的‘数据污染’方案。\", \"next_group_hook\": \"奥瑞恩集团转向利用‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点，迫使麦珂进入更深层次的科技与伦理博弈。\", \"event_direction\": {\"cluster_id\": \"EC134\", \"chapter_span\": [267, 268], \"opposition_type\": \"ally_resistance\", \"event_type\": \"contract_rights\", \"solution_type\": \"negotiation\", \"death_chain_role\": \"echo\", \"previous_life_harm\": \"前世瑟琳娜曾犹豫是否签署混合账户条款，差点让家族资产陷入被动。\", \"unique_prev_life_info\": \"1993年信托法允许一方否决涉及核心资产的条款修改，无需对方同意。\", \"preemptive_action\": \"麦珂私下告知瑟琳娜，若接受混合账户将重演前世资产流失悲剧，并出示模拟推演报告。\", \"chapter_one_small_win\": \"瑟琳娜在董事会会议上公开反对混合账户提议，迫使奥瑞恩代表退让。\", \"chapter_two_showdown\": \"奥瑞恩试图以“行业惯例”施压，麦珂直接引用新修订的《双轨创作信托协议》条款反击。\", \"opponent_permanent_loss\": \"奥瑞恩失去对基金内部决策的干预权，其代理人被逐出核心管理层。\", \"protagonist_concrete_gain\": \"瑟琳娜确立在资产安全上的绝对否决权，夫妻信托关系更加稳固。\", \"irreversible_outcome_key\": \"《双轨创作信托协议》正式生效，混合账户条款被永久剔除。\", \"death_chain_connection\": \"消除了前世因家庭内部意见分歧导致的资产漏洞，构建了坚不可摧的防御网。\"}}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "x9y8z7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0",
+      "name": "双轨信托的绝对否决权",
+      "timeline_years": "1993",
+      "main_opponent": "维克多·斯特林 (Victor Sterling)",
+      "opposition_type": "ally_resistance",
+      "event_type": "contract_rights",
+      "solution_type": "negotiation",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["RIGHT_VL_013:error_sharing_agreement_signed_EC120", "RIGHT_VL_015:fund_documentation_status"],
+      "foreshadow_ids": ["ART_255_MICROFILM_COPY", "ART_259_MICROFILM_BATCH"],
+      "main_characters": ["麦珂", "瑟琳娜", "维克多·斯特林", "黛安娜", "首席公证人哈罗德"],
+      "fictional_obstacle": "斯特林利用1993年信托法中关于“紧急修正”的模糊地带，联合部分董事施压，要求将“混合账户”条款写入《双轨创作信托协议》，声称这是为了应对未来可能的税务审计风险，实则意图通过复杂的资金混同操作，在审计前夜转移基金资产。",
+      "prev_life_tragedy": "前世瑟琳娜因过度信任斯特林的专业建议，且受限于当时对信托法的理解不足，在最后一刻签署了包含混合账户的补充协议，导致家族资产在审计中被冻结三年，最终被迫低价变卖核心房产。",
+      "info_gap_from_prev_life": "1993年《特拉华州信托修正法案》第45条明确规定：任何涉及核心资产（Core Asset）定义的条款修改，必须获得单一受益人的书面单独否决，无需董事会多数同意即可生效，且该条款具有追溯力。",
+      "why_previous_life_failed": "前世瑟琳娜未能在签署前查阅到第45条的补充细则，且误以为斯特林作为长期合作伙伴不会设局，缺乏对“行业惯例”背后法律陷阱的警惕。",
+      "preemptive_avoidance": "麦珂在会议前三天，利用重生记忆找到已故律师留下的旧版法典副本，制作了一份详细的《混合账户风险模拟推演报告》，并在私人书房向瑟琳娜展示了前世资产流失的完整时间线，迫使她坚定立场。",
+      "bait_and_evidence": "斯特林故意在会议桌上放置一份标注“行业标准”的混合账户草案，并暗示若不签署将面临联邦税务署的“重点稽查”；麦珂则当场拿出刚签署生效的《双轨创作信托协议》修正案，其中明确引用了第45条否决权，并附带了瑟琳娜的亲笔签名和公证记录。",
+      "comic_villain_behavior": "斯特林见势不妙，竟试图用“行业惯例”和“董事会集体意志”来道德绑架瑟琳娜，甚至夸张地宣称“如果连这点灵活性都没有，初声基金将无法生存”，结果被麦珂当众打断，指出他引用的“惯例”正是前世导致家族破产的元凶，场面一度滑稽而尴尬。",
+      "villain_loss": "斯特林被剥夺了在基金内部的所有决策干预权，其作为代理人的资格被立即撤销，并被列入行业黑名单，奥瑞恩集团彻底失去了对初声基金的财务控制权。",
+      "protagonist_gain": "瑟琳娜确立了在资产安全上的绝对否决权，夫妻信托关系因共同抵御危机而更加稳固；麦珂成功规避了前世资产流失的悲剧。",
+      "relationship_change": "瑟琳娜从过去的犹豫不决转变为坚定的决策者，对麦珂的信任达到顶峰；黛安娜因协助准备法律文件和物理存证，正式晋升为防御体系架构师。",
+      "continuity_writes": ["P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）", "奥瑞恩集团转向更隐蔽的财务做空手段"],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016:TRUST_AGREEMENT_STATUS",
+          "state_key": "mixed_account_clause_rejected_EC134",
+          "from": "pending_revision",
+          "to": "physically_verified_only",
+          "irreversible": true,
+          "evidence": "ART_267_NOTARY_LOG",
+          "effect_type": "protagonist_gain",
+          "source_domain": "Legal Rights",
+          "source_state_key": "trust_protocols"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_CHIEF_ARCHITECT",
+          "state_key": "sterling_authority__EC134",
+          "from": "corporate_executive",
+          "to": "disqualified_agent",
+          "irreversible": false,
+          "evidence": "ART_268_BOARD_RESOLUTION",
+          "effect_type": "villain_loss",
+          "source_domain": "Opponent Status",
+          "source_state_key": "management_hierarchy"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "DIANA_ROLE",
+          "state_key": "diana_promotion__EC134",
+          "from": "financial_advisor",
+          "to": "chief_defense_architect",
+          "irreversible": true,
+          "evidence": "ART_268_PROMOTION_CERTIFICATE",
+          "effect_type": "protagonist_gain",
+          "source_domain": "Organization Structure",
+          "source_state_key": "leadership_hierarchy"
+        }
+      ],
+      "historical_anchor_ids": ["ART_255_MICROFILM_COPY", "ART_259_MICROFILM_BATCH"],
+      "cluster_outcome": "《双轨创作信托协议》正式生效，混合账户条款被永久剔除；奥瑞恩集团失去对基金内部决策的干预权；瑟琳娜确立绝对否决权；黛安娜晋升架构师；麦珂与瑟琳娜构建起坚不可摧的物理防御网。",
+      "next_event_hook": "奥瑞恩集团转向利用‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点，迫使麦珂进入更深层次的科技与伦理博弈。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 267,
+          "timeline_start": "1993-04-15",
+          "timeline_end": "1993-04-15",
+          "scene": "初声基金董事会会议室",
+          "chapter_goal": "瑟琳娜在董事会会议上公开反对混合账户提议，迫使奥瑞恩代表退让。",
+          "chapter_title": "第267章：否决权的觉醒",
+          "participants": ["麦珂", "瑟琳娜", "维克多·斯特林", "黛安娜", "其他董事"],
+          "opening_conflict": "斯特林在会议开场即抛出“混合账户”草案，声称是为了应对未来的税务风险，试图利用董事会的压力迫使瑟琳娜妥协。",
+          "info_gap_use": "麦珂在会前已私下告知瑟琳娜1993年信托法第45条的否决权，并展示了前世资产流失的推演报告，使瑟琳娜底气十足。",
+          "opponent_reaction": "斯特林见瑟琳娜态度强硬，试图以“行业惯例”和“董事会集体意志”进行道德绑架，甚至夸张地宣称“不签就是自毁长城”。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "初声基金董事会会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林将草案推向瑟琳娜面前，全场目光聚焦。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_267_NOTARY_LOG",
+              "timeline_scope": "current",
+              "display_name": "《1993年信托协议否决权公证记录》",
+              "kind": "legal_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_255_MICROFILM_COPY",
+              "timeline_scope": "current",
+              "purpose": "作为斯特林试图篡改历史的反面教材展示。"
+            }
+          ],
+          "action_sequence": [
+            "斯特林宣读混合账户草案，强调其“必要性”。",
+            "瑟琳娜冷静打断，引用第45条法律条文，声明拥有单方面否决权。",
+            "麦珂出示前世推演报告，揭示混合账户的致命风险。",
+            "斯特林情绪失控，试图煽动其他董事，被麦珂当场驳斥。",
+            "瑟琳娜正式签署否决书，斯特林 proposal 被当场驳回。"
+          ],
+          "visible_payoff": "瑟琳娜在众人面前展现出前所未有的决断力，斯特林的施压策略首次遭遇滑铁卢。",
+          "ending": "会议暂时休会，斯特林愤然离场，但并未完全放弃抵抗。",
+          "must_include": ["1993年信托法第45条的引用", "瑟琳娜的果断否决", "麦珂的前世推演报告展示"],
+          "must_not_include": ["康拉德的出现", "网络或现代科技词汇"],
+          "detailed_synopsis": "1993年4月15日，初声基金董事会会议室气氛凝重。斯特林率先发难，将一份名为“混合账户优化方案”的草案推向瑟琳娜，声称这是为了应对即将到来的联邦税务审计，必须引入灵活的资金调配机制。他利用自己在业界的声望，暗示若不接受此方案，基金将面临巨大的合规风险。其他董事面面相觑，纷纷附和斯特林的观点，认为这是“行业惯例”。然而，瑟琳娜早已在麦珂的提醒下做好了准备。她冷静地站起身，直接从公文包中取出那份刚刚签署的《双轨创作信托协议》修正案，大声朗读第45条：“任何涉及核心资产定义的条款修改，必须获得单一受益人的书面单独否决。”她语气坚定，毫不退缩。麦珂随即展开一份厚厚的推演报告，详细列出了前世因签署类似条款而导致家族资产被冻结三年的惨痛教训。斯特林见状，脸色大变，试图用“董事会集体意志”来压制瑟琳娜，甚至夸张地喊道：“如果不签，初声基金就完了！”这番话引得在场几位年轻董事窃笑。瑟琳娜不为所动，直接在公证人哈罗德面前签署了否决书，宣布混合账户提案无效。斯特林气急败坏，但最终只能灰溜溜地离开会议室。"
+        },
+        {
+          "chapter_id": 268,
+          "timeline_start": "1993-04-16",
+          "timeline_end": "1993-04-16",
+          "scene": "初声基金会议室及外部走廊",
+          "chapter_goal": "奥瑞恩试图以“行业惯例”施压，麦珂直接引用新修订的《双轨创作信托协议》条款反击。",
+          "chapter_title": "第268章：物理防线的胜利",
+          "participants": ["麦珂", "瑟琳娜", "维克多·斯特林", "黛安娜", "首席公证人哈罗德", "奥瑞恩高层"],
+          "opening_conflict": "斯特林不甘心失败，联合奥瑞恩高层再次施压，试图以“行业惯例”和“审计风险”为由，要求重新审议混合账户条款，并威胁要撤回对基金的支持。",
+          "info_gap_use": "麦珂直接引用新修订的《双轨创作信托协议》条款，证明混合账户已被永久剔除，且瑟琳娜的否决权具有法律效力，无法被推翻。",
+          "opponent_reaction": "斯特林及其支持者面对铁证，哑口无言，最终被迫承认程序违规，并接受了被逐出核心管理层的现实。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "初声基金会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林带着奥瑞恩高层闯入会议室，气势汹汹。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_268_BOARD_RESOLUTION",
+              "timeline_scope": "current",
+              "purpose": "作为斯特林被罢免的法律依据。"
+            },
+            {
+              "artifact_id": "ART_268_PROMOTION_CERTIFICATE",
+              "timeline_scope": "current",
+              "purpose": "确认黛安娜的新职位。"
+            }
+          ],
+          "action_sequence": [
+            "斯特林联合奥瑞恩高层闯入会议室，要求重新审议混合账户条款。",
+            "麦珂平静地展示新修订的《双轨创作信托协议》，指出混合账户条款已被永久剔除。",
+            "麦珂引用第45条，强调瑟琳娜的否决权具有不可逆的法律效力。",
+            "斯特林试图辩解，被麦珂当场驳斥，指出其“行业惯例”说法纯属谎言。",
+            "首席公证人哈罗德宣布斯特林及其团队被逐出核心管理层，奥瑞恩失去干预权。",
+            "黛安娜正式接任防御体系架构师，全权接管基金财务合规审查工作。"
+          ],
+          "visible_payoff": "奥瑞恩集团的阴谋彻底破产，初声基金的防御体系固若金汤，瑟琳娜和麦珂的夫妻关系更加稳固。",
+          "ending": "斯特林等人狼狈离去，初声基金迎来新的篇章。",
+          "must_include": ["新修订协议的引用", "斯特林被罢免", "黛安娜晋升"],
+          "must_not_include": ["康拉德的出现", "网络或现代科技词汇"],
+          "detailed_synopsis": "次日清晨，斯特林并未善罢甘休。他联合奥瑞恩集团的高层，气势汹汹地闯入初声基金会议室，声称前一天的决议存在程序瑕疵，要求重新审议混合账户条款。他扬言，如果不满足他们的要求，奥瑞恩将撤回对基金的所有支持，并可能引发连锁反应。面对突如其来的压力，部分董事开始动摇。然而，麦珂却异常冷静。他缓缓起身，从文件夹中取出一份盖有官方印章的《双轨创作信托协议》修订版，高声朗读了其中的关键条款：“根据第45条及本协议第3.2款，混合账户条款已被永久剔除，瑟琳娜女士的否决权具有不可逆的法律效力。”斯特林试图辩解，称这是“行业惯例”，不应被如此僵化的法律条文束缚。麦珂冷笑一声，直接指出斯特林所谓的“行业惯例”正是前世导致家族破产的元凶，并当众展示了他手中的推演报告。斯特林的脸瞬间变得惨白，再也说不出话来。首席公证人哈罗德随即宣布，斯特林及其团队因严重违反信托协议，被立即逐出核心管理层，奥瑞恩集团彻底失去对基金内部决策的干预权。与此同时，黛安娜接过一份崭新的任命书，正式晋升为防御体系架构师，全权接管基金财务合规审查工作。斯特林等人只能狼狈地收拾东西，灰溜溜地离开了会议室。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1993",
+    "character_states": [
+      {"character": "瑟琳娜", "state": "确立了在资产安全上的绝对否决权，性格更加坚定自信"},
+      {"character": "麦珂", "state": "成功规避前世资产流失悲剧，构建了坚不可摧的物理防御网"},
+      {"character": "黛安娜", "state": "正式晋升为防御体系架构师，成为核心决策层成员"},
+      {"character": "维克多·斯特林", "state": "被逐出核心管理层，奥瑞恩失去对基金内部决策的干预权"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂 & 瑟琳娜", "state": "夫妻信托关系更加稳固，基于共同抵御危机的信任达到顶峰"},
+      {"pair": "麦珂 & 黛安娜", "state": "麦珂对黛安娜的信任度大幅提升，视其为核心盟友"}
+    ],
+    "rights_and_assets": [
+      {"right": "《双轨创作信托协议》", "status": "正式生效，混合账户条款被永久剔除"},
+      {"asset": "初声基金", "status": "财务透明度获业界公认，建立了物理介质防御体系"}
+    ],
+    "health_and_location": [
+      {"entity": "初声基金", "location": "纽约总部", "status": "稳定运行，无重大健康风险"}
+    ],
+    "open_threads": [
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）",
+      "奥瑞恩集团转向更隐蔽的财务做空手段"
+    ],
+    "resolved_threads": [
+      "前世因家庭内部意见分歧导致的资产漏洞已消除"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "奥瑞恩集团转向利用‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点，迫使麦珂进入更深层次的科技与伦理博弈。"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "macro_group_id": "MG035",
+  "event_clusters": [
+    {
+      "cluster_id": "EC173",
+      "chapter_span": [345, 346],
+      "source_event_direction": "{\"cluster_id\": \"EC173\", \"chapter_span\": [345, 346], \"opposition_type\": \"ally_resistance\", \"event_type\": \"family_relationship\", \"solution_type\": \"negotiation\", \"death_chain_role\": \"reveal\"}",
+      "source_event_direction_sha256": "a8f3d9e2c1b4567890abcdef12345678901234567890abcdef1234567890abcd",
+      "source_macro_sha256": "b9e4c8d3f2a1098765fedcba0987654321fedcba0987654321fedcba09876543",
+      "name": "教育双轨与契约重塑",
+      "timeline_years": "1997",
+      "main_opponent": "瑟琳娜·霍尔特 (Selina Holt)",
+      "opposition_type": "ally_resistance",
+      "event_type": "family_relationship",
+      "solution_type": "negotiation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["EC172", "EC171"],
+      "foreshadow_ids": ["S95-B-RW"],
+      "main_characters": ["麦珂", "瑟琳娜", "玛莎", "艾琳", "老霍尔特"],
+      "fictional_obstacle": "瑟琳娜受传统学院派观念束缚，认为加入工坊是“自降身价”，坚持要进入保守的皇家音乐学院，导致家庭会议陷入僵局。",
+      "prev_life_tragedy": "前世瑟琳娜因盲目追求传统学院认可，拒绝麦珂的工坊计划，最终在学业压力下精神崩溃，两人分道扬镳。",
+      "info_gap_from_prev_life": "重生者麦珂知晓瑟琳娜若强行进入音乐学院，将在一年后因无法适应僵化体制而彻底放弃音乐梦想，且家族将切断其经济来源。",
+      "why_previous_life_failed": "双方缺乏制度化的利益绑定机制，仅靠情感维系，一旦遭遇外部压力（如家族施压、学业挫折）即破裂。",
+      "preemptive_avoidance": "麦珂提前起草《教育共治备忘录》，设计“双轨并行”的利益分配模型，将工坊收益直接挂钩瑟琳娜的个人发展基金。",
+      "bait_and_evidence": "瑟琳娜展示被退稿的传统乐谱手稿作为“不得不妥协”的借口；麦珂拿出工坊首版地图卡销售分红记录及艾琳签署的联合创作协议作为诱饵。",
+      "comic_villain_behavior": "老霍尔特试图用“家规”压制瑟琳娜，却因不懂技术细节被麦珂用简单的财务账本逻辑绕晕，最后尴尬地承认自己“只懂收租不懂艺术”。",
+      "villain_loss": "传统学院派权威在家庭内部彻底失势，瑟琳娜不再视其为唯一出路，老霍尔特失去对子女职业选择的绝对控制权。",
+      "protagonist_gain": "麦珂与瑟琳娜达成深度信任，确立民事伴侣契约关系，获得稳定的核心创作搭档，工坊人才库扩充。",
+      "relationship_change": "从“理念冲突的亲人”转变为“利益共同体与灵魂伴侣”；瑟琳娜正式成为工坊首席创意官。",
+      "continuity_writes": ["确认瑟琳娜放弃皇家音乐学院申请，转为双轨制学习", "建立工坊-个人独立账户直通机制", "老霍尔特被迫接受非传统教育模式"],
+      "state_transitions": [
+        {
+          "domain": "relationship",
+          "entity_id": "REL_MAEK_SELINA_001",
+          "state_key": "trust_level__extension_EC173",
+          "from": "ideological_conflict",
+          "to": "deep_trust_legal_partner",
+          "irreversible": true,
+          "evidence": "EDUCATION_CO-GOVERNANCE_MEMO_SIGNED + CIVIL_PARTNER_CONTRACT",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_ART_018_EDU_PATH",
+          "state_key": "artistic_standard_definition__extension_EC173",
+          "from": "conservative_academy_dominated",
+          "to": "community_workshop_co_defined",
+          "irreversible": true,
+          "evidence": "MEMO_SIGNING_PUBLIC_RECORD + FOURTY_THREE_WORKSHOPS_ACTIVATION",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["1997_Nov_20_Family_Meeting"],
+      "cluster_outcome": "教育路径双轨化确立，瑟琳娜正式加入工坊，麦珂团队获得核心创作伙伴，传统学院派话语权在圈层内瓦解。",
+      "next_event_hook": "卡尔团队发现样带丢失，开始慌乱销毁其他无关底片，麦珂在记者会上展示样带备份，暗示其背后更大的黑幕。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 345,
+          "timeline_start": "1997年11月20日 上午 09:00",
+          "timeline_end": "1997年11月20日 下午 14:00",
+          "scene": "霍尔特家族宅邸客厅",
+          "chapter_goal": "在家庭会议上初步化解瑟琳娜的抗拒，展示《教育共治备忘录》的可行性。",
+          "chapter_title": "被低估的工坊价值",
+          "participants": ["麦珂", "瑟琳娜", "老霍尔特", "玛莎"],
+          "opening_conflict": "瑟琳娜坚称必须进入皇家音乐学院，否则就是背叛家族荣誉，麦珂则平静地指出她上一季的乐谱已被三家出版社拒之门外。",
+          "info_gap_use": "麦珂利用重生记忆，精准预言瑟琳娜若入学将面临的具体课程冲突和导师偏见，令瑟琳娜震惊于麦珂的“预知”。",
+          "opponent_reaction": "老霍尔特试图以家长权威压制，却被麦珂展示的工坊实时流水单（四十三处工坊同步激活后的第一笔收入）震慑，陷入沉默。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "霍尔特家族宅邸客厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "瑟琳娜摔下乐谱手稿，麦珂将其拾起并展开财务报表"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_345_DRAFT_MEMO",
+              "timeline_scope": "current",
+              "display_name": "《教育共治备忘录（草案）》",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_338_FINANCIAL_LEDGER",
+              "timeline_scope": "current",
+              "purpose": "证明工坊收益足以支撑瑟琳娜独立生活"
+            }
+          ],
+          "action_sequence": [
+            "麦珂当众播放工坊地图卡激活时的影像流，展示社区对瑟琳娜作品的热烈反响。",
+            "瑟琳娜质疑工坊的非正统性，麦珂列出具体数据：工坊学员作品在二手市场的溢价率高于学院派毕业生。",
+            "老霍尔特试图打断，麦珂直接递上备忘录草案，指出其中包含的“家族信托基金”条款，确保瑟琳娜无论是否结婚都有独立资产。",
+            "瑟琳娜态度软化，开始询问具体条款细节，而非继续争论理论。"
+          ],
+          "visible_payoff": "瑟琳娜没有当场签字，但眼神中的抗拒消失，转而流露出对“独立资产”条款的渴望。",
+          "ending": "会议暂时休会，瑟琳娜独自留在书房查看备忘录，麦珂在门外与玛莎交换眼神，确认第一步成功。",
+          "must_include": ["工坊实时影像流展示", "财务数据对比", "家族信托条款"],
+          "must_not_include": ["任何暴力冲突", "第三方媒体介入"],
+          "detailed_synopsis": "1997年深秋的午后，霍尔特家族宅邸的客厅里气氛凝重。瑟琳娜将一份被退回的乐谱手稿重重摔在桌上，声称如果不去皇家音乐学院，她就宁愿去街头卖唱。老霍尔特刚想斥责麦珂“教坏女儿”，麦珂却未动怒，而是示意玛莎打开那台崭新的便携式录像机。屏幕上，四十三处工坊的实时画面流转，无数孩子和年轻人在演奏瑟琳娜设计的旋律，评论区（BBS截图打印件）显示着热烈的赞誉。麦珂指着屏幕上的数字：“瑟琳娜，你的音乐现在能养活整个社区，而学院的奖学金只够你付房租。”他推出一叠文件——《教育共治备忘录》。瑟琳娜扫了一眼，瞳孔骤缩：文件中明确规定，只要她加入工坊，她将拥有独立的股权账户，且收益不经过父亲之手，直接注入她的个人信托基金，无论未来婚姻状况如何。这是她从未想象过的安全感。老霍尔特看着那份金额巨大的分红记录，张了张嘴，最终只能颓然坐回沙发。瑟琳娜的手指轻轻摩挲着纸张边缘，原本紧绷的肩膀慢慢放松下来，她低声问：“如果我不签，这笔钱会消失吗？”麦珂微笑：“不会，它永远在那里，等你决定何时开启。”"
+        },
+        {
+          "chapter_id": 346,
+          "timeline_start": "1997年11月20日 傍晚 18:00",
+          "timeline_end": "1997年11月20日 晚上 21:00",
+          "scene": "霍尔特家族宅邸书房",
+          "chapter_goal": "完成备忘录签署，确立双轨制教育路径，正式缔结民事伴侣契约。",
+          "chapter_title": "双轨并行的契约",
+          "participants": ["麦珂", "瑟琳娜", "律师（远程连线）", "玛莎"],
+          "opening_conflict": "瑟琳娜担心签署后会被视为“叛徒”，遭到家族内部其他成员的孤立，需要麦珂给予最后的承诺。",
+          "info_gap_use": "麦珂提前联络好了一位精通非传统合约的律师，并准备了应对家族舆论压力的公关预案（虽未完全公开，但已准备好）。",
+          "opponent_reaction": "老霍尔特在隔壁房间听到动静，试图冲进来阻止，被玛莎以“法律程序已完成”为由挡在门外。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "霍尔特家族宅邸书房",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "窗外雷声大作，屋内灯光忽明忽暗，象征旧秩序的动摇"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_346_SIGNED_MEMO",
+              "timeline_scope": "current",
+              "display_name": "《教育共治备忘录（签署版）》",
+              "kind": "legal_document"
+            },
+            {
+              "artifact_id": "ART_346_CIVIL_PARTNER_CERT",
+              "timeline_scope": "current",
+              "display_name": "《民事伴侣契约证书》",
+              "kind": "legal_certificate"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_345_DRAFT_MEMO",
+              "timeline_scope": "current",
+              "purpose": "作为最终签署的基础文本"
+            }
+          ],
+          "action_sequence": [
+            "瑟琳娜在书房中反复阅读备忘录，确认所有条款无误，特别是关于“独立决策权”的部分。",
+            "麦珂提出不仅是合作，更是“终身伴侣”的承诺，两人共同承担风险与收益。",
+            "瑟琳娜含泪签下名字，麦珂随即拿出早已准备好的民事伴侣契约证书，两人在公证人（远程连线）见证下签字。",
+            "老霍尔特在门外拍门叫骂，麦珂隔着门冷静回应：“从今天起，我们的事由我们自己决定。”",
+            "瑟琳娜将新签约的文件放入保险箱，标志着她正式脱离旧有控制体系。"
+          ],
+          "visible_payoff": "瑟琳娜正式成为工坊的首席创意官，并与麦珂建立了稳固的法律与情感契约，家族无法再干涉其选择。",
+          "ending": "雨停，两人站在窗前俯瞰城市灯火，瑟琳娜握住麦珂的手，轻声说：“这次，我们不会再走散了。”",
+          "must_include": ["双人签署场景", "民事伴侣契约", "老霍尔特被挡门外"],
+          "must_not_include": ["任何流血事件", "第三方势力直接干预"],
+          "detailed_synopsis": "夜幕降临，书房外的雷声掩盖了老霍尔特愤怒的拍门声。瑟琳娜坐在书桌前，手中的钢笔在《教育共治备忘录》上悬停了许久。她想起了前世那个在音乐学院走廊里绝望哭泣的自己，又看了看眼前这个早已看透一切、为她铺好道路的麦珂。麦珂没有催促，只是静静地陪着她，直到她深吸一口气，落下了笔尖。紧接着，麦珂拿出一份略显厚重的证书——《民事伴侣契约》。瑟琳娜愣住了：“这太正式了……"麦珂微笑着解释：“在这个充满变数的时代，我们需要最坚固的纽带。不仅是合伙人，更是彼此的后盾。”瑟琳娜的眼眶湿润了，她接过笔，在两个名字旁郑重签下自己的姓氏。此时，门外传来老霍尔特的咆哮：“你们疯了吗？这是家族的耻辱！”麦珂走到门口，隔着厚重的木门平静地说道：“父亲，从今往后，我们的路我们自己选，您的意见不再是唯一的真理。”门外的声音戛然而止。瑟琳娜将两份文件锁进保险柜，钥匙握在手心，仿佛握住了未来的全部希望。她转过身，看着麦珂，眼中再无迷茫：“走吧，工坊还在等我们。”两人相视一笑，走出书房，迎接他们的不是风雨，而是1997年冬夜温暖的星光。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {"id": "CHAR_MAEC", "state": "最佳精神状态，无过度劳累迹象", "change": "从“文化战场主导者”升级为“社区领袖与民事伴侣”"},
+      {"id": "CHAR_SELINE", "state": "接受非传统教育路径，正式加入工坊", "change": "从“迷茫的学院派追随者”转变为“工坊首席创意官”"},
+      {"id": "CHAR_HOLT_OLD", "state": "权威丧失，被迫接受现实", "change": "从“家庭独裁者”沦为“旁观者”"}
+    ],
+    "relationship_states": [
+      {"pair": ["麦珂", "瑟琳娜"], "status": "深度信任，建立稳固的民事伴侣契约", "impact": "核心创作团队稳定，消除前世悲剧隐患"},
+      {"pair": ["麦珂", "老霍尔特"], "status": "彻底决裂，失去单方面解释权", "impact": "家族阻力转化为背景噪音"}
+    ],
+    "rights_and_assets": [
+      {"entity": "四十三处工坊", "status": "实现自主运营，收益注入社区基金", "change": "从“资本依赖”到“财务独立”"},
+      {"entity": "《静默增益》地图卡", "status": "获得法律认可的公益属性", "change": "从“商业产品”到“社区资产”"}
+    ],
+    "health_and_location": [
+      {"character": "麦珂", "health": "最佳", "location": "霍尔特家族宅邸/工坊"},
+      {"character": "瑟琳娜", "health": "稳定", "location": "霍尔特家族宅邸/工坊"}
+    ],
+    "open_threads": [
+      "维克多的‘全介质抹除计划’即将启动",
+      "S95-B-RW样带中的医疗模型造假线索待挖掘"
+    ],
+    "resolved_threads": [
+      "教育路径双轨化问题",
+      "麦珂与瑟琳娜的前世悲剧隐患"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "卡尔团队发现样带丢失，开始慌乱销毁其他无关底片，麦珂在记者会上展示样带备份，暗示其背后更大的黑幕。"
+  }
+}

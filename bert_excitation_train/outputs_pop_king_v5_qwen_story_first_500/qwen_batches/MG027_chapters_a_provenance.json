@@ -1,0 +1,52 @@
+{
+  "generated_by": "qwen",
+  "kind": "chapters_a",
+  "identifier": "MG027",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "ac53a856a997777cf4dac1d62aa8e0da61fb589481343e6901fc07fddd4e70ce",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-08T21:25:46+08:00",
+      "prompt_sha256": "ac53a856a997777cf4dac1d62aa8e0da61fb589481343e6901fc07fddd4e70ce",
+      "raw_response_sha256": "9c82646bbc6e71b8d2a67fcd832fb545d64529db1d8cf5e2595899c4016412bb",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG027_chapters_a_attempt_01_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 31 column 21 (char 2126)"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 78.872,
+      "usage": {
+        "input_tokens": 17036,
+        "output_tokens": 5106,
+        "total_tokens": 22142,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-08T21:27:05+08:00",
+      "prompt_sha256": "54878298ac28a1a0d0f0641f6bdd7fc4dda415984cf58e7cf8a99d9517ec5565",
+      "raw_response_sha256": "e40527e995c1eaccf1624ac1554e35bafd500373ad79cfc0d60acac6b3ee797a",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG027_chapters_a_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 79.256,
+      "usage": {
+        "input_tokens": 22228,
+        "output_tokens": 5116,
+        "total_tokens": 27344,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

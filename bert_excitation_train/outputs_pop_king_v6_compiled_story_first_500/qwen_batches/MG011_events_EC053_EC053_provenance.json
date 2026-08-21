@@ -1,0 +1,129 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC053_EC053",
+  "identifier": "MG011",
+  "accepted_attempt": "07",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "base_prompt_sha256": "a79235eb2c4ab1cee4a24a20de1871195f87eed89295e45984551acb4831e7f8",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T15:07:23+08:00",
+      "prompt_sha256": "a79235eb2c4ab1cee4a24a20de1871195f87eed89295e45984551acb4831e7f8",
+      "raw_response_sha256": "0e46b239246cc802153b7e4c3defe7d2e5e78d6b2575634e6217f1073d9a8522",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG011_events_EC053_EC053_attempt_01_a79235eb2c_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 213 column 8 (char 10595)"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen3.8-max",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 73.765,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-20T15:08:34+08:00",
+      "prompt_sha256": "e5204a671c902619607d5b96d2adc1f8475288dd5eca4e3784d42b9f3a5c3b33",
+      "raw_response_sha256": "c05212d718f823058356191ebf2905ada93302288630d75a3aec302f51d8c659",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG011_events_EC053_EC053_attempt_02_a79235eb2c_raw.txt",
+      "validation_failures": [
+        "EC053.chapter105.scenes.temporal_mode非法",
+        "EC053.chapter106.scenes.temporal_mode非法",
+        "EC053年代技术错误：1979尚不应使用“互联网”"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen3.8-max",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 70.921,
+      "usage": {}
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-20T15:09:48+08:00",
+      "prompt_sha256": "b44a598e3bd35e4136b5d7a27d06a2a610a9ce6a6fcfd1836eb581b3b391947b",
+      "raw_response_sha256": "e8f5eb301a331bf516d890e96acd3dfa27f4cbd0edd2e833cef33cf4949261df",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG011_events_EC053_EC053_attempt_03_a79235eb2c_raw.txt",
+      "validation_failures": [
+        "EC053.chapter105.scenes.temporal_mode非法",
+        "EC053.chapter106.scenes.temporal_mode非法",
+        "EC053年代技术错误：1979尚不应使用“互联网”"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen3.8-max",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 73.4,
+      "usage": {}
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-20T15:11:04+08:00",
+      "prompt_sha256": "849257ea189a8e579648482dbdb032d476fdbd750154940c675b0e3547f217ae",
+      "raw_response_sha256": "d6648d491bc9c00418c575a93c4a6f36afbe81b54e26329e25e3e780585b2f76",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG011_events_EC053_EC053_attempt_04_a79235eb2c_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting value: line 45 column 9 (char 3122)"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen3.8-max",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 76.543,
+      "usage": {}
+    },
+    {
+      "attempt": 5,
+      "created_at": "2026-08-20T15:13:22+08:00",
+      "prompt_sha256": "a79235eb2c4ab1cee4a24a20de1871195f87eed89295e45984551acb4831e7f8",
+      "raw_response_sha256": "e7c127035cec547d9b108b69426bd0e3976773684b6431e1e1f68ebb40578bef",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG011_events_EC053_EC053_attempt_05_a79235eb2c_raw.txt",
+      "validation_failures": [
+        "EC053.chapter105.scenes.temporal_mode非法",
+        "EC053.chapter106.scenes.temporal_mode非法"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen3.8-max",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 71.603,
+      "usage": {}
+    },
+    {
+      "attempt": 6,
+      "created_at": "2026-08-20T15:14:10+08:00",
+      "prompt_sha256": "220b547012a238965dcaafab4daeeb41a81c2809801f192a81ef33b1725a8073",
+      "raw_response_sha256": "32432accae0aef9bf4cf379a0aa10a6d61bdefb66a84acfaae513aa1cdfc26f1",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG011_events_EC053_EC053_attempt_06_a79235eb2c_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 158 column 14 (char 7243)"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen3.8-max",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 48.284,
+      "usage": {}
+    },
+    {
+      "attempt": 7,
+      "created_at": "2026-08-20T15:15:26+08:00",
+      "prompt_sha256": "9fc79d090581e087677eea84ddfd93d8c419862a10f01bfce7541c75012adbfb",
+      "raw_response_sha256": "62776af482b4074abdce56f1ad81f8ce571131bc52256edaf7b2afccb042905d",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG011_events_EC053_EC053_attempt_07_a79235eb2c_raw.txt",
+      "validation_failures": [
+        "EC053.chapter105.scenes.temporal_mode非法",
+        "EC053.chapter106.scenes.temporal_mode非法"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen3.8-max",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 75.689,
+      "usage": {}
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "macro_group_id": "MG039",
+  "event_clusters": [
+    {
+      "cluster_id": "EC194",
+      "chapter_span": [387, 388],
+      "source_event_direction": "{\"cluster_id\": \"EC194\", \"chapter_span\": [387, 388], \"opposition_type\": \"family\", \"event_type\": \"finance_business\", \"solution_type\": \"negotiation\", \"death_chain_role\": \"echo\", \"previous_life_harm\": \"前世玛莎被动接受治疗，家庭决策权被奥瑞恩集团代理人窃取。\", \"unique_prev_life_info\": \"半枚油渍指纹线索指向巴里·布鲁姆，需提前锁定其入职体检记录。\", \"preemptive_action\": \"黛安娜主导签署‘双轨创作信托’补充条款，确立退出自由机制。\", \"chapter_one_small_win\": \"玛莎主动参与初声基金培训，从病患转变为家庭决策核心执行者。\", \"chapter_two_showdown\": \"麦珂当庭展示巴里·布鲁姆指纹比对结果，揭露其长期介入档案篡改。\", \"opponent_permanent_loss\": \"巴里·布鲁姆被排除在核心决策圈外，失去篡改档案的机会。\", \"protagonist_concrete_gain\": \"家庭资产防火墙加固，保留全部医疗数据自主权与收益分配权。\", \"irreversible_outcome_key\": \"指纹比对结果与入职体检记录形成铁证，锁定巴里·布鲁姆犯罪轨迹。\", \"death_chain_connection\": \"切断前世资产渗透路径，确保家庭利益不被外部势力侵蚀。\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "x9y8z7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "除夕夜的指纹与觉醒的母职",
+      "timeline_years": "1999—2000",
+      "main_opponent": "巴里·布鲁姆（伪装成医院行政助理）",
+      "opposition_type": "family",
+      "event_type": "finance_business",
+      "solution_type": "negotiation",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["EC193", "EC194"],
+      "foreshadow_ids": ["P09_FINGERPRINT"],
+      "main_characters": ["麦珂", "玛莎", "黛安娜", "巴里·布鲁姆", "退休老医生哈罗德"],
+      "fictional_obstacle": "巴里·布鲁姆试图利用除夕夜家族聚会，将伪造的“一键康复”电子病历植入家庭信托档案，并诱导玛莎签署放弃监护权的文件，以此完成对家庭资产的最终接管。",
+      "prev_life_tragedy": "前世玛莎在除夕夜因误信虚假病历，签署了自动续约合同，导致家庭资产被奥瑞恩集团通过巴里·布鲁姆层层剥离，直至病逝前仍被视为无民事行为能力人。",
+      "info_gap_from_prev_life": "前世未注意磁带外壳上的油渍指纹；今生麦珂预知该指纹属于刚入职的巴里·布鲁姆，且知道其指纹库尚未联网，必须现场物理比对。",
+      "why_previous_life_failed": "前世缺乏对原始模拟信号的坚持，过度依赖电子存档，且未能在签约前夜唤醒母亲的社会功能，导致决策权旁落。",
+      "preemptive_avoidance": "黛安娜在晚宴前强行签署《双轨创作信托》补充条款，规定所有医疗数据必须以“原始模拟信号”为法律优先依据，任何电子备份无效；同时安排玛莎以志愿者身份公开出席培训，切断其被孤立操控的可能。",
+      "bait_and_evidence": "巴里·布鲁姆故意在除夕夜留下沾有油渍的磁带外壳作为诱饵，企图让麦珂以为这是普通遗物；麦珂则利用1999年商用的便携式光学扫描仪，将指纹提取并与巴里入职体检的纸质底片进行物理叠影比对。",
+      "comic_villain_behavior": "巴里·布鲁姆一边假意关心玛莎病情，一边用极其蹩脚的谎言试图解释指纹是“不小心蹭到的”，甚至试图用“现代技术无法还原旧指纹”来糊弄在场的公证人，显得滑稽而慌张。",
+      "villain_loss": "巴里·布鲁姆被当场揭穿长期篡改档案的罪行，被医院伦理委员会立即停职并移交联邦调查局，彻底失去接触家庭资产和医疗数据的资格。",
+      "protagonist_gain": "家庭成功守住医疗数据主权，玛莎恢复社会功能成为家庭决策核心，资产防火墙正式建立，巴里的犯罪链条被物理证据锁定。",
+      "relationship_change": "玛莎从被动接受者转变为主动参与者，与麦珂、黛安娜形成坚不可摧的利益共同体；与奥瑞恩集团及其代理人关系彻底决裂。",
+      "continuity_writes": ["确认1999年数码扫描仪技术可行性", "验证巴里·布鲁姆入职时间线与伪造行为的时间重合", "确立原始模拟信号在法律层面的绝对优先权"],
+      "state_transitions": [
+        {
+          "domain": "health",
+          "entity_id": "HEALTH_MARTHA_001",
+          "state_key": "social_function_status__EC194",
+          "from": "passive_patient",
+          "to": "active_volunteer_core",
+          "irreversible": true,
+          "evidence": "INITIATIVE_IN_TRAINING + PUBLIC_DECLARATION",
+          "effect_type": "protagonist_gain",
+          "source_domain": "medical_records"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_039_AUDIT",
+          "state_key": "audit_chain_status__extension_EC194",
+          "from": "suspected_fraud",
+          "to": "legally_enforced_standard",
+          "irreversible": true,
+          "evidence": "FINGERPRINT_MATCH_PHYSICAL_OVERLAY + BARRY_DISQUALIFIED",
+          "effect_type": "protagonist_gain",
+          "source_domain": "legal_records"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "OPPONENT_BARRY_BLUM",
+          "state_key": "access_level_to_family_assets",
+          "from": "trusted_administrator",
+          "to": "criminal_suspect_banned",
+          "irreversible": true,
+          "evidence": "FINGERPRINT_EVIDENCE_CHAIN",
+          "effect_type": "villain_loss",
+          "source_domain": "corporate_strategy"
+        }
+      ],
+      "historical_anchor_ids": ["1999_CHRISTMAS_EVE", "HARVARD_MEDICAL_ARCHIVE_1999"],
+      "cluster_outcome": "成功阻止‘终身艺能保障计划’签约，保留全部医疗数据自主权；确立‘棱镜协议’法律文本定稿方向；获得半枚油渍指纹线索，指向巴里·布鲁姆。",
+      "next_event_hook": "1999年除夕磁带外壳上的半枚油渍指纹经专业比对，证实与巴里·布鲁姆指纹吻合，该线索将直接触发P09（第401-420章）关于长期介入档案篡改的法务攻防战，迫使奥瑞恩集团从商业施压转向刑事层面的反制。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 387,
+          "timeline_start": "1999年12月24日 18:00",
+          "timeline_end": "1999年12月24日 22:00",
+          "scene": "河湾镇家庭客厅及初声基金临时培训点",
+          "chapter_goal": "玛莎在麦珂与黛安娜的引导下，主动参与志愿者培训，打破被隔离状态；黛安娜完成信托补充条款签署，确立原始信号优先原则。",
+          "chapter_title": "除夕夜的觉醒：从病患到决策者",
+          "participants": ["麦珂", "玛莎", "黛安娜", "巴里·布鲁姆", "退休医生哈罗德"],
+          "opening_conflict": "巴里·布鲁姆试图以“整理遗物”为由，将带有伪造记录的磁带交给玛莎，诱导其签署放弃监护权的文件。",
+          "info_gap_use": "麦珂利用重生记忆，知道巴里此刻正在伪造档案，且其指纹特征独特，提前准备了物理比对方案。",
+          "opponent_reaction": "巴里·布鲁姆故作镇定，试图用“为了你好”的话术施压，并在玛莎犹豫时暗中推搡文件。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇家庭客厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "窗外烟花声掩盖了室内紧张的对话"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_387_VOLUNTEER_CERT",
+              "timeline_scope": "current",
+              "display_name": "《初声基金志愿者培训结业证书（玛莎）》",
+              "kind": "social_certificate"
+            },
+            {
+              "artifact_id": "ART_387_TRUST_ADDENDUM",
+              "timeline_scope": "current",
+              "display_name": "《双轨创作信托协议》补充条款（联名版·最终）",
+              "kind": "legal_certificate"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_379_DOUBLE_TRACK_PROTOCOL",
+              "timeline_scope": "current",
+              "purpose": "引用前次签署的协议框架，强化当前条款的法律约束力"
+            }
+          ],
+          "action_sequence": [
+            "麦珂当众复述1999年护士原话，质疑巴里提供的电子病历真实性。",
+            "玛莎在哈罗德医生的鼓励下，主动拿起培训手册，宣布自己将参与志愿者工作。",
+            "黛安娜迅速拿出补充条款，要求在场所有人签字，明确“原始模拟信号优先”。",
+            "巴里·布鲁姆试图拖延签字，声称需要“上级批准”，被麦珂当场揭穿其无权操作。",
+            "玛莎在众人注视下，坚定地在补充条款上签字，宣告家庭决策权回归。"
+          ],
+          "visible_payoff": "玛莎不再是被动的病患，而是主动签署文件的家庭核心成员；巴里·布鲁姆的计划首次受挫。",
+          "ending": "晚宴结束，玛莎带着志愿者证书离开，巴里·布鲁姆面色阴沉地退入阴影，手中紧握着那盘关键磁带。",
+          "must_include": ["玛莎主动参与培训", "补充条款签署", "护士原话复述"],
+          "must_not_include": ["巴里被捕", "联邦调查局介入", "后期技术词汇"],
+          "detailed_synopsis": "除夕夜，河湾镇家中灯火通明。巴里·布鲁姆假意关心，试图将一盘标有“一键康复”方案的磁带交给玛莎，并诱导她签署一份看似无害的监护权转让书。麦珂敏锐察觉，当众复述了1999年12月24日护士的原话：“您妈这情况得慢慢调，别信什么一键康复”，直接戳破电子病历的虚假性。退休医生哈罗德适时现身作证，证实该方案从未在原始胶片中出现。玛莎在女儿的鼓励和医生的支持下，意识到自己一直被蒙蔽，主动拿起笔，不仅拒绝了巴里的文件，还当场报名参加了初声基金的志愿者培训。黛安娜趁机拿出早已准备好的《双轨创作信托》补充条款，明确规定所有医疗数据必须以原始模拟信号为准，任何电子备份无效。在众人的见证下，玛莎郑重签下名字，标志着她从被动接受者转变为家庭决策的核心执行者。巴里·布鲁姆见势不妙，试图辩解指纹是“意外沾染”，但麦珂已悄悄将磁带外壳上的油渍指印与巴里入职体检的底片进行初步物理比对，发现高度吻合。这一章以玛莎的觉醒和巴里的第一次失败告终，家庭铁三角的信任达到顶峰。"
+        },
+        {
+          "chapter_id": 388,
+          "timeline_start": "1999年12月25日 09:00",
+          "timeline_end": "1999年12月25日 14:00",
+          "scene": "河湾镇诊所会议室及伦理委员会听证室",
+          "chapter_goal": "麦珂当庭展示指纹比对结果，彻底揭露巴里·布鲁姆的长期篡改行为，迫使其被停职审查。",
+          "chapter_title": "指纹铁证：巴里的末日",
+          "participants": ["麦珂", "巴里·布鲁姆", "退休医生哈罗德", "医院伦理委员会成员", "公证人"],
+          "opening_conflict": "巴里·布鲁姆试图否认指纹归属，声称是“巧合”，并威胁要起诉麦珂诽谤。",
+          "info_gap_use": "麦珂利用重生记忆，知道巴里的指纹特征，且知道其入职体检记录保存在医院档案室，未联网，必须现场调取。",
+          "opponent_reaction": "巴里·布鲁姆惊慌失措，试图抢夺证据，被保安制止，最终在众目睽睽下崩溃。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "医院伦理委员会听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "门被推开，阳光洒在比对的指纹图上"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_387_VOLUNTEER_CERT",
+              "timeline_scope": "current",
+              "purpose": "证明玛莎已具备独立决策能力，巴里的行为无效"
+            },
+            {
+              "artifact_id": "ART_375_AUDIO_RECORDING",
+              "timeline_scope": "current",
+              "purpose": "作为背景证据，佐证电子病历的伪造性质"
+            }
+          ],
+          "action_sequence": [
+            "麦珂将磁带外壳上的油渍指印与巴里入职体检的纸质底片进行物理叠影比对，结果显示完全吻合。",
+            "公证人当场宣读比对报告，确认指纹的唯一性和法律效力。",
+            "巴里·布鲁姆试图狡辩，称是“意外沾染”，但被哈罗德医生指出其入职时间与伪造病历时间线完全重合。",
+            "伦理委员会成员一致投票，决定暂停巴里·布鲁姆的职务，并移交联邦调查局调查。",
+            "麦珂宣布家庭保留所有医疗数据的自主权，拒绝任何外部干预。"
+          ],
+          "visible_payoff": "巴里·布鲁姆被彻底揭穿，失去一切权力；家庭资产防火墙正式建立，医疗数据主权得到法律确认。",
+          "ending": "巴里·布鲁姆被保安带走，神情呆滞。麦珂看着手中的指纹比对图，心中明白这只是开始，真正的风暴还在后面。",
+          "must_include": ["指纹比对结果", "巴里被停职", "家庭主权确立"],
+          "must_not_include": ["巴里被捕", "联邦调查局深入调查", "后期技术词汇"],
+          "detailed_synopsis": "次日清晨，河湾镇诊所会议室气氛凝重。麦珂将昨晚提取的半枚油渍指纹与医院档案室调出的巴里·布鲁姆入职体检纸质底片进行物理叠影比对，结果显示两者完全吻合。公证人当场宣读比对报告，确认该指纹具有唯一性和法律效力。巴里·布鲁姆脸色惨白，试图狡辩称是“意外沾染”，但退休医生哈罗德随即指出，巴里的入职时间线与伪造病历的时间线完全重合，且其曾多次尝试绕过伦理审查。面对确凿证据，医院伦理委员会成员一致投票，决定立即暂停巴里·布鲁姆的职务，并将其移交警方进一步调查。麦珂借此机会，正式宣布家庭保留所有医疗数据的自主权，拒绝任何外部机构的干预，包括奥瑞恩集团的所谓“保障计划”。巴里·布鲁姆在众目睽睽下被保安带走，神情呆滞，彻底失去了接触家庭资产和医疗数据的资格。麦珂看着手中的指纹比对图，心中明白这只是开始，真正的风暴还在后面，但家庭铁三角的信任与力量已不可动摇。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1999",
+    "character_states": [
+      {"id": "MARTHA", "state": "active_volunteer_core", "description": "从被动患者转变为家庭决策核心执行者，参与初声基金培训"},
+      {"id": "BARRY_BLUM", "state": "criminal_suspect_banned", "description": "被停职审查，失去接触家庭资产和医疗数据的资格"}
+    ],
+    "relationship_states": [
+      {"entities": ["麦珂", "玛莎", "黛安娜"], "status": "iron_triangle_unity", "description": "信任度达顶峰，形成稳固利益共同体"},
+      {"entities": ["麦珂", "奥瑞恩集团"], "status": "open_hostility", "description": "关系彻底破裂，进入公开对抗状态"}
+    ],
+    "rights_and_assets": [
+      {"asset": "medical_data_sovereignty", "status": "secured", "description": "保留全部医疗数据自主权与收益分配权"},
+      {"asset": "trust_protocol", "status": "finalized", "description": "《双轨创作信托》补充条款生效，确立原始模拟信号优先原则"}
+    ],
+    "health_and_location": [
+      {"entity": "玛莎", "status": "stable_scientific_adjustment", "location": "河湾镇"},
+      {"entity": "巴里·布鲁姆", "status": "under_investigation", "location": "医院停职待查"}
+    ],
+    "open_threads": [
+      "维克多·兰斯对巴里·布鲁姆倒台后的应对策略",
+      "1999年除夕夜磁带外壳指纹的深入调查（已锁定巴里·布鲁姆）",
+      "奥瑞恩集团可能采取的刑事层面反制措施"
+    ],
+    "resolved_threads": [
+      "巴里·布鲁姆长期篡改档案的阴谋被彻底揭穿",
+      "玛莎的监护权与社会功能恢复",
+      "家庭资产防火墙的建立"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "随着维克多势力收缩，联邦调查局介入，那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的‘数据污染’方案。"
+  }
+}

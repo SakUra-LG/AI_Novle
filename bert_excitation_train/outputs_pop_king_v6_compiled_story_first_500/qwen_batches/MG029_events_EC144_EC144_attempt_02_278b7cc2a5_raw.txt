@@ -1,0 +1,185 @@
+{
+  "macro_group_id": "MG029",
+  "event_clusters": [
+    {
+      "cluster_id": "EC144",
+      "chapter_span": [287, 288],
+      "source_event_direction": "media_reputation_counterattack",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z6y5x4w3v2u1t0s9r8q7p6o5n4m3l2k1j0i9h8g7f6e5d4c3b2a1",
+      "name": "墨迹与真相的博弈：奥瑞恩媒体战的反噬",
+      "timeline_years": "1994—1995",
+      "main_opponent": "维克多·斯特林 (Victor Sterling)",
+      "opposition_type": "institutional",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["EC143", "EC141"],
+      "foreshadow_ids": ["P07_Documentary_Betrayal"],
+      "main_characters": ["麦珂", "艾琳·沃特曼", "苏菲亚", "维克多·斯特林", "黛安娜"],
+      "fictional_obstacle": "奥瑞恩集团利用其控制的《北方日报》在黄金时段发布经过剪辑的虚假新闻，指控初声基金挪用慈善资金购买私人游艇，并伪造了瑟琳娜签署的高额转账单据作为“证据”，试图在公众听证会前彻底摧毁基金会的信誉。",
+      "prev_life_tragedy": "前世麦珂因未能及时截获该通稿，导致舆论一边倒，初声基金被迫暂停运营，瑟琳娜被家族内部逼宫退出信托，最终基金资产被奥瑞恩低价吞并。",
+      "info_gap_from_prev_life": "前世麦珂只看到结果，不知道奥瑞恩具体使用了哪一份1983年的原始票据进行PS伪造，也不清楚他们雇佣的水军头目是前报社排版工，擅长利用暗房技术制造“天然老化”假象。",
+      "why_previous_life_failed": "缺乏对物理介质（老式胶卷、暗房工艺）的取证能力，过度依赖当时的电子通讯渠道，而当时并未建立独立的第三方见证机制。",
+      "preemptive_avoidance": "麦珂提前联系资深调查记者艾琳·沃特曼，利用星火同盟的旧档案库，邀请三位无关联的独立印刷厂技师和一位退休法医作为现场见证人，准备在电视直播中当场拆解伪造文件的物理痕迹。",
+      "bait_and_evidence": "故意让斯特林团队以为麦珂毫无防备，诱导其在直播中展示所谓的“铁证”——那份标注为1983年但墨水成分异常的转账单；随后苏菲亚利用便携式光谱仪（当时用于刑侦的简易版）和显微镜，配合艾琳的现场解说，直接展示墨水年代与纸张纤维的不匹配。",
+      "comic_villain_behavior": "斯特林在直播中为了掩盖破绽，强行要求切断艾琳的信号并声称“这是恶意诽谤”，甚至试图亲自上台抢夺文件，结果因手部颤抖打翻了水杯，弄湿了文件，反而加速了伪造墨水的晕染扩散，坐实了造假嫌疑，显得既慌张又滑稽。",
+      "villain_loss": "奥瑞恩集团在行业内的公信力归零，其操纵媒体的手段被彻底揭穿，未来任何公关尝试都会被公众视为“自曝其短”，且面临联邦通信委员会的初步调查。",
+      "protagonist_gain": "初声基金的社会声誉不降反升，获得大量民间捐赠，瑟琳娜的个人资产信托保护伞更加稳固，麦珂确立了“物理证据优于口头指控”的审计原则。",
+      "relationship_change": "艾琳·沃特曼从旁观者转变为坚定的盟友，苏菲亚的危机处理能力得到麦珂的高度认可，瑟琳娜对麦珂的信任从“依赖”升级为“绝对信赖”。",
+      "continuity_writes": [
+        "维克多·斯特林接替康拉德成为奥瑞恩在今生的主要执行者，因其贪婪和急于求成，主动跳入麦珂设下的物理取证陷阱。",
+        "本次事件未涉及刑事逮捕，仅停留在商业信誉崩塌和监管调查启动阶段，为后续P07的数据污染埋下伏笔。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "reputation",
+          "entity_id": "FIRST_SOUND_FUND_PUBLIC_TRUST",
+          "state_key": "public_credibility_status__EC144",
+          "from": "under_attack_by_fraud_allegations",
+          "to": "exonerated_and_enhanced_reputation",
+          "irreversible": true,
+          "evidence": "ART_287_LIVE_SPECTRAL_ANALYSIS",
+          "effect_type": "protagonist_gain",
+          "source_domain": "media_strategy"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORION_MEDIA_MANIPULATION_CHAIN",
+          "state_key": "credibility_index__EC144",
+          "from": "high_influence",
+          "to": "zero_trust_public_perception",
+          "irreversible": true,
+          "evidence": "ART_288_WATER_STAIN_PHOTOGRAPHY",
+          "effect_type": "villain_loss",
+          "source_domain": "media_counter"
+        }
+      ],
+      "historical_anchor_ids": ["1994_NBC_Home_Auction_Report", "1994_Paper_Ink_Analysis_Tech"],
+      "cluster_outcome": "奥瑞恩集团的伪造链条在直播中被物理证据击碎，斯特林因操作失误留下笑柄，初声基金成功化解危机并扩大影响力。",
+      "next_event_hook": "奥瑞恩集团意识到常规商业手段失效，转而策划更隐蔽的‘数据污染’方案，同时‘健康趋势预测模型’的真实数据来源成为新的关注点，直接触发P07阶段的纪录片背叛事件。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 287,
+          "timeline_start": "1994年10月15日 19:00",
+          "timeline_end": "1994年10月15日 20:30",
+          "scene": "NBC黄金时段演播室",
+          "chapter_goal": "通过现场直播揭露奥瑞恩伪造文件的物理破绽，扭转舆论风向。",
+          "chapter_title": "墨迹下的谎言",
+          "participants": ["麦珂", "艾琳·沃特曼", "维克多·斯特林", "黛安娜", "苏菲亚", "三位见证人"],
+          "opening_conflict": "斯特林气势汹汹地带着伪造的转账单登上直播台，指责麦珂挪用公款，要求立即停播初声基金的辩护环节。",
+          "info_gap_use": "麦珂利用前世记忆，知道这份单据的墨水配方在1983年尚未普及，且纸张纤维结构存在时代性差异，提前准备了光谱分析设备。",
+          "opponent_reaction": "斯特林坚持文件真实，拒绝接受第三方检验，并在艾琳提出质疑时恼羞成怒，试图强行终止节目。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "NBC演播室主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林将文件重重拍在桌上，发出清脆声响。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_287_LIVE_SPECTRAL_ANALYSIS",
+              "timeline_scope": "current",
+              "display_name": "《1994年10月15日直播光谱分析报告》",
+              "kind": "video_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_280_AUDIT_TRANSCRIPT_FINAL",
+              "timeline_scope": "previous_life",
+              "purpose": "对比前世被篡改的审计报告，确认当前文件的异常。"
+            }
+          ],
+          "action_sequence": [
+            "斯特林展示伪造单据，宣称是1983年原票。",
+            "艾琳·沃特曼打断直播，指出单据上的墨水光泽异常。",
+            "苏菲亚启动便携式光谱仪，投射出墨水成分与现代化学试剂的对比图。",
+            "见证人技师指出纸张纤维不符合1983年标准。",
+            "斯特林试图抢夺设备，被安保拦下。"
+          ],
+          "visible_payoff": "屏幕上清晰显示出伪造单据的墨水成分含有1990年代才出现的荧光剂，全场哗然。",
+          "ending": "直播在斯特林的狼狈叫嚣中结束，观众开始大规模拨打热线支持初声基金。",
+          "must_include": ["光谱仪的使用", "斯特林的慌乱", "见证人的证词"],
+          "must_not_include": ["警察逮捕", "斯特林辞职"],
+          "detailed_synopsis": "夜幕降临，NBC黄金档演播厅灯火通明。维克多·斯特林身着定制西装，手持一份泛黄的1983年转账单，趾高气扬地站在镜头前，指控麦珂利用初声基金购买私人游艇。他声称这是铁证如山，要求立即切断麦珂的发言权。然而，麦珂早已在后台布置好一切。艾琳·沃特曼冷静地举起麦克风，指出斯特林手中的文件在灯光下泛着不自然的蓝光。苏菲亚迅速上前，连接便携式光谱分析仪，将光线投射到巨大的LED屏幕上。画面瞬间放大，原本看似陈旧的纸张纤维在显微镜下暴露出1994年才有的合成材料特征，而墨水中的化学成分更是直接指向了现代配方。斯特林脸色骤变，试图抢过仪器，却因手抖打翻了桌上的水杯，浑浊的水渍瞬间晕染了单据上的关键数字，墨迹化开，露出了底下被涂改的痕迹。现场的三位见证人——两位老印刷技师和一位法医，纷纷起立作证，指出这种墨水在1983年根本不存在。斯特林在众目睽睽之下语无伦次，试图切掉信号，却被导演组果断拒绝。直播画面定格在他惊恐扭曲的脸上，观众席爆发出雷鸣般的掌声和质疑声。"
+        },
+        {
+          "chapter_id": 288,
+          "timeline_start": "1994年10月16日 09:00",
+          "timeline_end": "1994年10月16日 17:00",
+          "scene": "奥瑞恩集团总部 / 初声基金临时办公室",
+          "chapter_goal": "曝光奥瑞恩雇佣水军抹黑艾琳的证据链，彻底粉碎其公关反击企图。",
+          "chapter_title": "幽灵水军的现形",
+          "participants": ["麦珂", "苏菲亚", "维克多·斯特林", "艾琳·沃特曼", "黛安娜"],
+          "opening_conflict": "奥瑞恩集团连夜雇佣大量匿名评论员和小型报刊，散布艾琳收受贿赂的谣言，试图转移视线。",
+          "info_gap_use": "麦珂知晓斯特林习惯使用特定的地下印刷厂和代理公司来组织水军，这些记录在上一世从未被发现，因为当时没有交叉验证。",
+          "opponent_reaction": "斯特林试图销毁所有联络记录，命令下属否认雇佣关系，却在面对苏菲亚出示的银行流水和传真存根时崩溃。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "苏菲亚推门而入，手中拿着一叠厚厚的文件。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_288_WATER_STAIN_PHOTOGRAPHY",
+              "timeline_scope": "current",
+              "display_name": "《斯特林弄湿伪造文件照片及后续公关账单》",
+              "kind": "legal_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "苏菲亚向斯特林展示奥瑞恩支付给水军头目的巨额支票复印件。",
+            "揭露水军头目正是前《北方日报》排版工，与斯特林有私下交易。",
+            "斯特林试图辩解这是竞争对手陷害，被黛安娜引用的法律条款驳回。",
+            "媒体蜂拥而至，奥瑞恩的公关策略全面崩盘。"
+          ],
+          "visible_payoff": "公众得知奥瑞恩不仅造假还雇人抹黑，对其信任度降至冰点，初声基金收到更多捐赠。",
+          "ending": "斯特林被董事会暂时停职，奥瑞恩陷入前所未有的舆论危机。",
+          "must_include": ["银行流水证据", "水军头目身份", "斯特林的辩解失败"],
+          "must_not_include": ["斯特林被捕", "奥瑞恩破产"],
+          "detailed_synopsis": "次日清晨，奥瑞恩集团总部内气氛凝重。维克多·斯特林刚回到办公室，就发现门外围满了记者。苏菲亚大步走进会议室，将一叠文件甩在斯特林面前。那是昨晚奥瑞恩支付给一群匿名评论员的支票复印件，收款人竟是前《北方日报》的排版工，此人专门负责制造虚假舆论。苏菲亚详细列出了每一笔转账的时间、金额和用途，证明奥瑞恩在直播当晚就策划了针对艾琳的抹黑行动。斯特林脸色苍白，试图辩称这是竞争对手的栽赃，但黛安娜冷冷地引用了联邦通信委员会关于虚假陈述的法律条款，指出这种行为已构成欺诈。斯特林慌乱地翻找抽屉，试图销毁联络记录，却发现所有文件都被苏菲亚提前复制了一份。此时，门外涌入大批记者，追问斯特林关于“幽灵水军”的真相。斯特林在镜头前百口莫辩，只能承认部分事实以换取宽大处理，但为时已晚。奥瑞恩集团的公信力在这一刻彻底崩塌，公众开始抵制其产品，初声基金则收到了源源不断的捐赠和支持信。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1994",
+    "character_states": [
+      {"character": "麦珂", "state": "掌握主动权，确立物理取证权威"},
+      {"character": "维克多·斯特林", "state": "信誉破产，被董事会停职调查"},
+      {"character": "艾琳·沃特曼", "state": "成为核心盟友，媒体影响力提升"},
+      {"character": "瑟琳娜", "state": "资产安全，对麦珂完全信任"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂-苏菲亚", "change": "专业互信加深，形成战术默契"},
+      {"pair": "奥瑞恩-公众", "change": "信任彻底破裂，进入对抗状态"}
+    ],
+    "rights_and_assets": [
+      {"entity": "初声基金", "status": "声誉恢复，资产增加"},
+      {"entity": "奥瑞恩集团", "status": "媒体操控权丧失，面临监管调查"}
+    ],
+    "health_and_location": [],
+    "open_threads": [
+      "奥瑞恩集团转向更隐蔽的‘数据污染’策略",
+      "‘健康趋势预测模型’的真实数据来源待查",
+      "P07纪录片背叛事件的潜在风险"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团利用伪造票据和媒体抹黑的短期攻势被彻底瓦解",
+      "初声基金在1994年的舆论危机解除"
+    ],
+    "introduced_characters": [
+      "维克多·斯特林 (Victor Sterling) - 奥瑞恩新任执行负责人，替代康拉德角色"
+    ],
+    "next_pressure": "奥瑞恩集团意识到常规商业手段失效，转而策划更隐蔽的‘数据污染’方案，同时‘健康趋势预测模型’的真实数据来源成为新的关注点，直接触发P07阶段的纪录片背叛事件。"
+  }
+}

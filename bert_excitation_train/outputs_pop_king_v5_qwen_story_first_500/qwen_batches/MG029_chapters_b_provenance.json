@@ -1,0 +1,52 @@
+{
+  "generated_by": "qwen",
+  "kind": "chapters_b",
+  "identifier": "MG029",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "20e795197584cc694d13f1f066dd320f6ee6a40a989d9fe8dd3ab25e85302c10",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-08T21:44:41+08:00",
+      "prompt_sha256": "20e795197584cc694d13f1f066dd320f6ee6a40a989d9fe8dd3ab25e85302c10",
+      "raw_response_sha256": "bf551574c0aef5b6e9e1766008b941954f69c6b8a8e847cec2f89e94f08dbf46",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG029_chapters_b_attempt_01_raw.txt",
+      "validation_failures": [
+        "第289章年代技术错误：当前年代不得出现“上传”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 73.459,
+      "usage": {
+        "input_tokens": 17752,
+        "output_tokens": 4755,
+        "total_tokens": 22507,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-08T21:45:55+08:00",
+      "prompt_sha256": "cb4d4c5d15148f8dde769b7af9d535bf7b3d88346483d5b49a754b60714d1df1",
+      "raw_response_sha256": "aa0c2ff0f9b23b62c4fbef509b383dd8641c0f3ad3df447eb70818d740243691",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG029_chapters_b_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 73.646,
+      "usage": {
+        "input_tokens": 22588,
+        "output_tokens": 4725,
+        "total_tokens": 27313,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

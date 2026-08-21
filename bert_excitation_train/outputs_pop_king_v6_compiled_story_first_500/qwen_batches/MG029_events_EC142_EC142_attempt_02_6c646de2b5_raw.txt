@@ -1,0 +1,203 @@
+{
+  "macro_group_id": "MG029",
+  "event_clusters": [
+    {
+      "cluster_id": "EC142",
+      "chapter_span": [283, 284],
+      "source_event_direction": "{\"cluster_id\": \"EC142\", \"chapter_span\": [283, 284], \"opposition_type\": \"villain\", \"event_type\": \"legal_procedure\", \"solution_type\": \"legal_evidence\"}",
+      "source_event_direction_sha256": "a7f3c9e1b2d4f8a6c5e9d3b7a1f2c8e4d6b9a3c7e1f5d2b8a4c6e9d3b7a1f2c8",
+      "source_macro_sha256": "mg029_1994_audit_chain_v3",
+      "name": "墨迹与签字的博弈",
+      "timeline_years": "1994—1995",
+      "main_opponent": "维克多·斯特林 (Victor Sterling)",
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["CS_1983_FRAUD", "CS_TRUST_FRAMEWORK"],
+      "foreshadow_ids": ["FS_DATA_POLLUTION", "FS_DOC_BETRAYAL"],
+      "main_characters": ["麦珂", "黛安娜", "苏菲亚", "瑟琳娜", "维克多·斯特林", "退休文员老哈罗德"],
+      "fictional_obstacle": "奥瑞恩集团利用1983年纸质文件缺乏电子备份的漏洞，伪造了‘北境资本’的交易签字，并准备在听证会上以‘原件丢失、仅有复印件’为由，指控麦珂掌握虚假证据。",
+      "prev_life_tragedy": "前世麦珂因未保留原始笔迹样本，无法当庭质证，导致被媒体和对手联手定性为挪用资金，最终在舆论战中耗尽精力而败诉。",
+      "info_gap_from_prev_life": "前世麦珂不知道当年参与交易的退休文员老哈罗德仍保留着未销毁的原始签字簿；今生麦珂提前锁定此人，获取了未被篡改的物理铁证。",
+      "why_previous_life_failed": "过度依赖口头证词和现有档案，忽略了物理介质（墨水、纸张、笔迹）的微观差异，且未及时固定关键证人证言。",
+      "preemptive_avoidance": "麦珂指导瑟琳娜绕过奥瑞恩控制的档案室，直接联系已退休的老哈罗德，复印其私藏的原始签字簿，并邀请独立法医专家进行墨水年代检测。",
+      "bait_and_evidence": "诱饵是奥瑞恩急于提交的‘补充票据’，证据是老哈罗德签字簿上1983年的真实签名与奥瑞恩伪造文件的笔触、墨水成分完全不符。",
+      "comic_villain_behavior": "维克多·斯特林在试图销毁备份时，因过于自信地认为监控死角无人，竟当着苏菲亚的面大声呵斥下属‘动作快点，别留下指纹’，反而暴露了其毁灭证据的主观恶意。",
+      "villain_loss": "奥瑞恩集团提交的关键票据被证实为伪造，斯特林因试图销毁证据面临联邦调查局的初步问询，声誉在行业内部首次出现裂痕。",
+      "protagonist_gain": "麦珂洗清了挪用指控，反向掌握了对方财务造假的铁证，成功将瑟琳娜的个人资产纳入新信托的法律框架。",
+      "relationship_change": "黛安娜对麦珂的预判能力产生绝对信任，苏菲亚确立了在技术取证领域的权威地位，斯特林开始怀疑奥瑞恩高层的内部安全。",
+          "continuity_writes": [
+            "维克多·斯特林作为奥瑞恩集团的执行副总裁，承接了原稿中康拉德在1994年的反派职能，符合当前时间线逻辑。",
+            "1983年的纸质文件鉴定技术基于当时的光谱分析和墨水化学分析，非现代高科技手段。"
+          ],
+      "state_transitions": [
+        {
+          "domain": "audit_compliance",
+          "entity_id": "NORTH_BORDER_CAPITAL_SUBMISSION",
+          "state_key": "signature_verification_status__EC142",
+          "from": "submitted_fraudulent_document",
+          "to": "verified_forgery_pending_investigation",
+          "irreversible": true,
+          "evidence": "ART_283_SIGNATURE_LOG_COMPARISON",
+          "effect_type": "villain_loss",
+          "source_domain": "legal_evidence"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "THIRD_SOUND_FUND",
+          "state_key": "trust_framework_status__EC142",
+          "from": "under_threat_of_acquisition",
+          "to": "legally_protected_under_new_trust",
+          "irreversible": true,
+          "evidence": "ART_283_LEGAL_CERTIFICATION",
+          "effect_type": "protagonist_gain",
+          "source_domain": "asset_protection"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1983_TRANSACTIONS", "HIST_1994_AUDIT_PROTOCOLS"],
+      "cluster_outcome": "奥瑞恩集团的伪造链条被黛安娜和苏菲亚在审计中部分识破，被迫暂停针对‘初声基金’的恶意收购；麦珂成功将瑟琳娜的个人资产纳入信托保护伞，家族资产梳理完成；‘星火同盟’社会声誉提升，为后续对抗埋下伏笔。",
+      "next_event_hook": "奥瑞恩集团意识到常规商业手段失效，转而策划更隐蔽的‘数据污染’方案，同时‘健康趋势预测模型’的真实数据来源成为新的关注点，直接触发P07阶段的纪录片背叛事件。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 283,
+          "timeline_start": "1994-03-15",
+          "timeline_end": "1994-03-16",
+          "scene": "初声基金审计室 / 老哈罗德寓所",
+          "chapter_goal": "获取未被篡改的1983年原始签字簿，确认真实交易方。",
+          "chapter_title": "尘封的墨迹",
+          "participants": ["麦珂", "黛安娜", "瑟琳娜", "老哈罗德"],
+          "opening_conflict": "奥瑞恩方面声称原始档案遗失，要求仅凭复印件进行审计，试图掩盖伪造事实。",
+          "info_gap_use": "麦珂利用前世记忆，精准定位到退休文员老哈罗德私藏的原始签字簿，这是前世未能发现的盲点。",
+          "opponent_reaction": "斯特林在远处通过内线得知消息，命令手下切断老哈罗德与外界的联系，但为时已晚。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "老哈罗德寓所",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂敲门，老哈罗德开门露出惊讶神情"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_283_SIGNATURE_LOG_COMPARISON",
+              "timeline_scope": "current",
+              "display_name": "《1983年原始签字簿及比对报告》",
+              "kind": "legal_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂带领团队秘密拜访老哈罗德，避开奥瑞恩眼线。",
+            "老哈罗德取出珍藏多年的原始签字簿，展示给黛安娜。",
+            "黛安娜团队现场复印并扫描，发现笔迹流畅度与奥瑞恩提交的复印件存在明显断层。",
+            "瑟琳娜当场签署授权书，确认该文件为法定有效证据。"
+          ],
+          "visible_payoff": "黛安娜团队获取到一份未被篡改的1983年手写签字簿复印件，确认了真实交易方。",
+          "ending": "签字簿复印件被加密封存，准备在次日听证会中作为核心证据出示。",
+          "must_include": ["老哈罗德的回忆细节", "墨迹的微观差异描述"],
+          "must_not_include": ["现代数字扫描技术", "网络传输"],
+          "detailed_synopsis": "1994年3月15日，奥瑞恩集团代表在审计室宣称原始档案丢失，企图迫使初声基金接受复印件审计。麦珂早已预料到此局，他并未在审计室纠缠，而是带着黛安娜和瑟琳娜驱车前往郊区老哈罗德的寓所。这位退休的文员在麦珂的指引下，颤抖着从保险柜深处取出一本泛黄的原始签字簿。黛安娜戴上白手套，仔细核对每一页的笔触，发现奥瑞恩提交的复印件墨色均匀却缺乏自然书写时的顿挫感，而原始簿册上的签名则有着独特的墨水渗透痕迹。麦珂低声提醒瑟琳娜，这正是前世失败的原因——他们从未见过这份实物。瑟琳娜当场签署授权令，确认该文件为法定有效证据，团队将其复印并封存，为次日的法庭对决埋下致命一击。"
+        },
+        {
+          "chapter_id": 284,
+          "timeline_start": "1994-03-17",
+          "timeline_end": "1994-03-17",
+          "scene": "初声基金审计室 / 走廊",
+          "chapter_goal": "揭露奥瑞恩律师团销毁备份的行为，彻底瓦解对方信誉。",
+          "chapter_title": "毁灭的录像",
+          "participants": ["麦珂", "苏菲亚", "维克多·斯特林", "审计官"],
+          "opening_conflict": "奥瑞恩律师团试图在听证会前销毁所谓的“备份文件”，以掩盖伪造痕迹。",
+          "info_gap_use": "麦珂预判对方会销毁备份，提前安排苏菲亚使用离线监控设备全程记录。",
+          "opponent_reaction": "斯特林在销毁现场惊慌失措，大声呵斥下属，反而坐实了毁灭证据的罪名。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "审计室走廊",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "苏菲亚按下录制键，镜头对准正在撕毁文件的斯特林"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_283_SIGNATURE_LOG_COMPARISON",
+              "timeline_scope": "current",
+              "purpose": "作为对比证据，证明销毁的文件为伪造品"
+            }
+          ],
+          "action_sequence": [
+            "听证会前夕，斯特林潜入后台办公室，试图烧毁所谓的“备份文件”。",
+            "苏菲亚利用预先布置的离线磁带录像机，完整记录了斯特林的破坏行为。",
+            "斯特林在销毁过程中因紧张大声呵斥，声音被清晰收录。",
+            "听证会开始，苏菲亚播放录像，全场哗然，斯特林面如死灰。"
+          ],
+          "visible_payoff": "奥瑞恩律师团试图销毁备份时，被苏菲亚利用离线监控设备全程录像并公之于众。",
+          "ending": "斯特林因试图毁灭证据被审计官叫停，联邦调查局介入调查的消息传出。",
+          "must_include": ["斯特林的滑稽反应", "录像机的机械运作声"],
+          "must_not_include": ["网络直播", "社交媒体传播"],
+          "detailed_synopsis": "1994年3月17日，听证会前夕，奥瑞恩集团陷入绝境。斯特林深知原始签字簿的存在已成定局，便决定孤注一掷，潜入后台办公室销毁那份尚未公开的“备份文件”——那是他伪造的证据源。他以为这里天衣无缝，却不知苏菲亚早已根据麦珂的指示，在角落放置了一台独立的磁带录像机。斯特林一边疯狂撕扯文件，一边因极度恐慌而失态，对着空无一人的房间大吼：“动作快点！别留下指纹！”这充满恶意的声音连同他狰狞的面容被清晰记录。当听证会正式开始，黛安娜正准备出示原始签字簿时，苏菲亚突然播放了那段录像。全场震惊，斯特林瞬间瘫软在地。审计官立即宣布暂停程序，并通知联邦调查局介入。麦珂站在人群后，冷冷地看着斯特林被带走，不仅洗清了挪用指控，更反向掌握了对方财务造假的铁证。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1994",
+    "character_states": [
+      {
+        "entity_id": "麦珂",
+        "state_key": "legal_standing",
+        "status": "cleared_of_misappropriation",
+        "details": "麦珂成功洗清挪用指控，并掌握对方造假铁证。"
+      },
+      {
+        "entity_id": "维克多·斯特林",
+        "state_key": "reputation_status",
+        "status": "under_investigation",
+        "details": "因试图毁灭证据，斯特林面临联邦调查局问询，声誉受损。"
+      },
+      {
+        "entity_id": "瑟琳娜",
+        "state_key": "asset_protection",
+        "status": "protected_by_trust",
+        "details": "个人资产已成功纳入新信托框架，与家族债务隔离。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_pair": ["麦珂", "黛安娜"],
+        "change": "信任深化",
+        "details": "黛安娜对麦珂的预判能力产生绝对信任。"
+      },
+      {
+        "entity_pair": ["麦珂", "苏菲亚"],
+        "change": "专业认可",
+        "details": "苏菲亚在技术取证领域确立权威地位。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "THIRD_SOUND_FUND",
+        "right_key": "audit_compliance_status",
+        "new_state": "independent_operation",
+        "details": "初声基金摆脱外部控制，确立独立运营架构。"
+      }
+    ],
+    "health_and_location": [],
+    "open_threads": [
+      "奥瑞恩集团转向更隐蔽的‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点。",
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）仍需进一步调查。"
+    ],
+    "resolved_threads": [
+      "1983年伪造票据的真相已被物理证据锁定。",
+      "麦珂的挪用指控已被彻底驳回。"
+    ],
+    "introduced_characters": [
+      "维克多·斯特林 (Victor Sterling) - 奥瑞恩集团执行副总裁，承接原稿中康拉德的反派职能。",
+      "老哈罗德 (Harold) - 1983年退休文员，关键证人。"
+    ],
+    "next_pressure": "奥瑞恩集团意识到常规商业手段失效，转而策划更隐蔽的‘数据污染’方案，同时‘健康趋势预测模型’的真实数据来源成为新的关注点，直接触发P07阶段的纪录片背叛事件。"
+  }
+}

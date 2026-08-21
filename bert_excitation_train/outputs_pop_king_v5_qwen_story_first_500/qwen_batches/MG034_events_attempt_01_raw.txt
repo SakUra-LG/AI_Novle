@@ -1,0 +1,216 @@
+{
+  "macro_group_id": "MG034",
+  "event_clusters": [
+    {
+      "cluster_id": "EC166",
+      "chapter_span": [331, 332],
+      "name": "税法注释扉页墨迹",
+      "timeline_years": "1996",
+      "main_opponent": "托马斯·布莱克",
+      "main_characters": ["麦珂·杰森", "莉薇娅·索恩", "玛莎·杰森"],
+      "fictional_obstacle": "莉薇娅家族法务团队以1965年黑曜石初始合同税率条款模糊为由，要求重启三十年版权分成审计，威胁中止共管谈判",
+      "prev_life_tragedy": "上一世麦珂被迫让步，导致黑曜石账目被单方面冻结十八个月，期间奥瑞恩低价收购其母带权益",
+      "info_gap_from_prev_life": "1985年1月17日，祖父手抄本第3页批注‘第12条适用联邦唱片税则附录IV-β’，该注释曾被莉薇娅家族判例汇编第4卷引用",
+      "why_previous_life_failed": "麦珂未保存该手抄本原件，仅凭记忆援引，遭托马斯质疑‘无原始载体即无效’",
+      "preemptive_avoidance": "麦珂于1995年12月22日在松岭居书房用1985年同款蓝黑墨水重抄该页，纸张选用1985年库存‘阿卡迪亚牌’道林纸",
+      "bait_and_evidence": "麦珂当面书写扉页题词‘第七页墨迹已干’，墨迹未干；玛莎次日出示1985年家庭账本第19页夹页复印稿，边角泛黄、纸纤维断裂处与手抄本完全吻合",
+      "comic_villain_behavior": "托马斯电话质问时坚持‘需见1985年钢笔尖型号检测报告’，却不知该型号已于1978年停产，全米仅存三支，昆廷工作室藏有一支",
+      "villain_loss": "托马斯被AEUA伦理委员会暂停法律意见出具权三十日；其律所丧失黑曜石后续审计代理资格",
+      "protagonist_gain": "共管台账第七页签署程序启动；麦珂获得对附件一终稿的独家修订建议权",
+      "relationship_change": "麦珂与莉薇娅完成首次制度性握手，无言语交流，但莉薇娅在扉页空白处补写‘第八页待续’",
+      "continuity_writes": ["G_1996_01_17_BLACK_OBSIDIAN_TAX_INTERPRETATION_HANDCOPY_AUTHENTICATED_BY_THREE_NOTARIES", "MK_AND_LV_EXCHANGED_FIRST_FORMAL_HANDSHAKE_AT_SONG_LING_RESIDENCE_LIBRARY"],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "黑曜石共管台账第七页签署程序合法启动；托马斯失去对黑曜石税务解释权；莉薇娅家族法务团队承认共管基础不可动摇",
+      "next_event_hook": "卡尔·霍尔特将于1996年2月提交三版巡演收益报表，其中一份底部手写‘V.L.批准’并模仿维克多签名",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 331,
+          "scene": "松岭居书房，橡木长桌铺开黑曜石账目附件一终稿",
+          "chapter_goal": "迫使莉薇娅家族法务首席律师当场承认共管法律基础",
+          "action_sequence": ["麦珂取出刚誊完的手抄本，墨迹湿润；律师用放大镜比对1985年判例汇编第四卷页眉铅印编号；玛莎推入茶几下暗格取出1985年账本第19页"],
+          "visible_payoff": "律师摘下眼镜点头：“该注释确实支撑共管基础。”",
+          "ending": "托马斯来电质问，麦珂按下免提键，莉薇娅轻声说：‘让他听清楚。’"
+        },
+        {
+          "chapter_id": 332,
+          "scene": "银湾市公证处第三厅，玛莎持账本与手抄本接受三方联合鉴证",
+          "chapter_goal": "完成注释文本法律效力固化",
+          "action_sequence": ["公证员比对纸张酸碱度与墨水渗透深度；昆廷提供1985年同批次道林纸样本；档案馆调取1985年判例汇编原始胶片扫描件"],
+          "visible_payoff": "三份文书加盖‘原始性确认章’，编号G-1996-01-17-A",
+          "ending": "麦珂将手抄本递还莉薇娅，她写下‘第八页待续’——新一页空白正等待填满。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC167",
+      "chapter_span": [333, 334],
+      "name": "三版报表签名比对",
+      "timeline_years": "1996",
+      "main_opponent": "卡尔·霍尔特",
+      "main_characters": ["麦珂·杰森", "卡尔·霍尔特", "苏菲亚·罗德里格斯"],
+      "fictional_obstacle": "卡尔向AEUA、税务局、黑曜石信托三方分别提交不同数据的巡演收益报表，企图混淆基数以便截留备用金",
+      "prev_life_tragedy": "上一世麦珂因信任卡尔未复核，致$412,000巡演盈余被划入奥瑞恩离岸壳公司，三年后才查实",
+      "info_gap_from_prev_life": "1996年2月23日卡尔在第三版报表右下角手写‘V.L.批准’，笔压峰值偏移0.8mm，仿签失败",
+      "why_previous_life_failed": "麦珂当时未留存各版本原件，仅凭电子传真接收，无法进行物理比对",
+      "preemptive_avoidance": "麦珂指定苏菲亚用三色复写纸接收报表，每份盖‘收讫’椭圆章并注明送达时间",
+      "bait_and_evidence": "三版报表同步交AEUA审计组；签名比对软件‘PenScan MkII’输出吻合度报告（73%/52%/61%），卡尔签字样本来自1994年升降台检修单",
+      "comic_villain_behavior": "卡尔在听证会上掏出钢笔坚称‘我就是这么写字！’，随即被苏菲亚亮出他上周给维修队写的便条——字迹抖动明显",
+      "villain_loss": "卡尔被AEUA降级为助理总监，薪资削减35%；其签名权限从‘财务终审’降至‘初审备案’",
+      "protagonist_gain": "AEUA审计组将三版报表归档为G-1996-02-23-EVIDENCE_SET，成为黑曜石共管台账第七页附件C",
+      "relationship_change": "苏菲亚获聘为AEUA首位外部合规观察员，拥有独立调阅权",
+      "continuity_writes": ["G_1996_02_23_THREE_VERSIONS_OF_TOUR_REVENUE_REPORT_ARCHIVED_UNDER_AEUA_CASE_REF_NO_7712", "SF_APPOINTED_AS_AEUA_EXTERNAL_COMPLIANCE_OBSERVER_WITH_FULL_AUDIT_ACCESS"],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "卡尔伪造行为被坐实；三版报表成为共管台账第七页法定附件；苏菲亚获得制度性监督权",
+      "next_event_hook": "苏菲亚将使用昆廷修复仪导出G-1995-11档案内未命名音频文件，该文件实为1991年气象局语音备忘",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 333,
+          "scene": "滨岸录音区C-7室，苏菲亚摊开三叠报表，红蓝绿复写纸边缘微翘",
+          "chapter_goal": "诱使卡尔暴露签名差异",
+          "action_sequence": ["麦珂令苏菲亚按顺序递交报表至三方；卡尔催促AEUA‘今日必须批复’；苏菲亚故意漏盖第二版椭圆章"],
+          "visible_payoff": "卡尔抓起钢笔补签第二版，笔尖划破纸背，留下墨点凸痕",
+          "ending": "苏菲亚拍照存档，快门声惊得卡尔抬头——她微笑举起相机：‘您习惯左手握笔？’"
+        },
+        {
+          "chapter_id": 334,
+          "scene": "AEUA总部圆形听证厅，PenScan MkII投影屏显示三组波形图",
+          "chapter_goal": "完成伪造行为司法认证",
+          "action_sequence": ["审计组长朗读比对结论；卡尔掏出钢笔试图演示；苏菲亚播放1994年升降台检修单签字录像；麦珂递上《共管台账第七页草案》"],
+          "visible_payoff": "卡尔低头签下‘本人确认三版数据不一致’声明，钢笔墨水洇开如泪痕",
+          "ending": "麦珂起身将声明放入第七页附件袋，封口火漆印烫着‘MJ-LV’双字母。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC168",
+      "chapter_span": [335, 336],
+      "name": "台风语音倒计时",
+      "timeline_years": "1996",
+      "main_opponent": "巴里·布鲁姆",
+      "main_characters": ["麦珂·杰森", "苏菲亚·罗德里格斯", "昆廷·琼斯", "巴里·布鲁姆"],
+      "fictional_obstacle": "巴里计划抢先发布通稿指控麦珂隐瞒1991年台风风险，为其所属蔚蓝频道制造流量爆点",
+      "prev_life_tragedy": "上一世该通稿导致麦珂被罚停演两场，观众误信‘艺人漠视安全’，巡演口碑跌至谷底",
+      "info_gap_from_prev_life": "1991年9月12日17:03，银湾气象局语音备忘末句为‘已同步通知三备用场馆’，语速0.8倍速可辨认",
+      "why_previous_life_failed": "麦珂未保留该语音磁带，只记得内容，媒体称其‘缺乏物证’",
+      "preemptive_avoidance": "麦珂允许苏菲亚使用昆廷Flicker-Pro MkIII修复仪导出G-1995-11档案内音频，设备自动嵌入TS-1991-047-VOC时码",
+      "bait_and_evidence": "苏菲亚将语音导入气象局官方热线对比系统；银湾市气象服务中心官网发布辟谣函，附该语音波形图与1991年值班日志扫描件",
+      "comic_villain_behavior": "巴里在通稿标题加粗‘麦珂瞒报！’，却忘了检查配图——背景是1991年台风登陆实况照片，而语音中说的是‘误报’",
+      "villain_loss": "蔚蓝频道主编勒令巴里退还当月奖金$3,200；其通稿被列为‘年度十大失实报道’榜首",
+      "protagonist_gain": "麦珂获银湾市公共安全办公室颁发‘跨部门应急响应示范者’铜匾",
+      "relationship_change": "昆廷将Flicker-Pro MkIII内置芯片激活时间戳功能，首次记录语音导出全过程",
+      "continuity_writes": ["G_1995_11_AUDIO_FILE_VOC_1991_047_DECRYPTED_AND_ARCHIVED_IN_SUBDIRECTORY_VOC_1991_047", "QT_ACTIVATED_TIMESTAMP_CHIP_ON_FLICKER_PRO_MKIII_FOR_AUDIO_EXPORT_SESSIONS"],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "巴里通稿被气象局官网正式辟谣；1991年语音备忘完成三级归档；昆廷修复仪启用证据链时间戳",
+      "next_event_hook": "黛安娜将主持召开AEUA‘巡演家政标准’首次三方听证会，卡尔·霍尔特将迟到并质疑服装师无权设定医疗条款",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 335,
+          "scene": "胶片修复工作室，昆廷调试Flicker-Pro MkIII，屏幕滚动TS-1991-047-VOC时码",
+          "chapter_goal": "获取可验证的1991年语音原始载体",
+          "action_sequence": ["苏菲亚插入G-1995-11档案盒；仪器识别磁带氧化层厚度；昆廷手动校准1991年气象局专用频响滤波器"],
+          "visible_payoff": "语音末句‘已同步通知三备用场馆’清晰播放，秒针滴答声与气象局钟楼报时完全重合",
+          "ending": "巴里电话打来询问‘是否真有台风预警’，麦珂反问：‘您听过原声吗？’"
+        },
+        {
+          "chapter_id": 336,
+          "scene": "银湾市气象服务中心新闻发布厅，大屏同步播放语音与值班日志",
+          "chapter_goal": "完成官方辟谣与证据固化",
+          "action_sequence": ["中心主任宣读辟谣函；播放语音波形图；展示1991年日志第147页复印件；麦珂接过铜匾时指背面刻字‘TS-1991-047-VOC’"],
+          "visible_payoff": "巴里坐在后排撕碎通稿草稿，纸屑飘落在‘年度失实报道’展板前",
+          "ending": "麦珂将铜匾置于松岭居书房博古架，正对1991年家庭账本第47页。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC169",
+      "chapter_span": [337, 338],
+      "name": "心理支持频次强制条款",
+      "timeline_years": "1996",
+      "main_opponent": "卡尔·霍尔特",
+      "main_characters": ["麦珂·杰森", "黛安娜·罗文", "卡尔·霍尔特", "儿科医生埃德加·温特"],
+      "fictional_obstacle": "卡尔反对将儿童心理评估纳入巡演家政标准，声称‘增加成本且无先例’",
+      "prev_life_tragedy": "上一世黛安娜提案被驳回，导致1997年巡演期间两名伴舞儿童出现严重焦虑症，治疗费由麦珂个人承担",
+      "info_gap_from_prev_life": "1995年巡演期间，黛安娜记录的心理评估报告显示：72%儿童伴舞者出现夜间惊醒、回避登台等症状，用药登记簿记载苯海拉明用量超标",
+      "why_previous_life_failed": "麦珂未将评估报告作为法律附件提交，仅作内部参考，AEUA以‘属主观感受’不予采纳",
+      "preemptive_avoidance": "麦珂让黛安娜提前半年邀请埃德加·温特开展三期追踪评估，并由工会代表现场见证用药登记",
+      "bait_and_evidence": "听证会上黛安娜展示1995年评估报告原件与用药登记簿；埃德加出具医学意见书强调‘频次不足直接关联症状恶化’；工会代表出示家长联署请愿书",
+      "comic_villain_behavior": "卡尔迟到十分钟，进门就嚷‘服装师懂什么医疗？’，却被埃德加递过一张纸：‘您女儿去年在夏令营服用安定片的处方单，需要我念吗？’",
+      "villain_loss": "卡尔被迫签署条款；其分管的后勤预算被AEUA划拨$120,000专用于心理支持服务",
+      "protagonist_gain": "‘心理支持频次’与‘家属通行权限’两项写入AEUA强制认证细则，编号HSC-1996-03",
+      "relationship_change": "黛安娜与麦珂签署《共同抚养者协议》第二修正案，新增‘家政标准实施权’专属条款",
+      "continuity_writes": ["AEUA_HOUSEHOLD_STANDARD_CERTIFIED_WITH_TWO_MANDATORY_CLAUSES_HSC_1996_03", "DA_AND_MK_SIGNED_SECOND_AMENDMENT_TO_JOINT_PARENTING_AGREEMENT_WITH_HSC_IMPLEMENTATION_RIGHT"],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "两项强制条款通过；卡尔财政权限受限；黛安娜确立制度奠基人地位",
+      "next_event_hook": "玛莎将在松岭居书房刻制木质印章‘MJ-MJ Trust Guardian’，油印《子女艺术权益保护协约》修订草案",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 337,
+          "scene": "松岭居客厅改造的听证会场，长桌铺开三色评估报告与用药登记簿",
+          "chapter_goal": "促成工会、医护、教育三方共同认可条款必要性",
+          "action_sequence": ["黛安娜逐页讲解评估图表；埃德加展示脑电图对比图；工会代表朗读家长请愿书；卡尔翻看用药登记簿突然沉默"],
+          "visible_payoff": "工会代表拍桌：“我们孩子不是道具！”全场鼓掌，卡尔手指捏皱登记簿一角",
+          "ending": "麦珂递过签字笔，卡尔盯着‘心理支持频次’字样良久，终于落笔——墨水洇透纸背。"
+        },
+        {
+          "chapter_id": 338,
+          "scene": "AEUA总部法规部，HSC-1996-03细则张贴于公告栏首行",
+          "chapter_goal": "完成条款法律效力转化",
+          "action_sequence": ["法规主任宣布生效；黛安娜领取认证证书；麦珂与黛安娜签署第二修正案；卡尔在副本上补签日期"],
+          "visible_payoff": "证书烫金字体下方印着‘依据1995年巡演评估报告及用药登记簿’",
+          "ending": "黛安娜将证书挂进C-7室声学隔离舱，旁边是麦珂耳鸣监测仪——屏幕闪烁着‘今日频次达标’。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC170",
+      "chapter_span": [339, 340],
+      "name": "纽扣熔铸芯片凭证",
+      "timeline_years": "1996",
+      "main_opponent": "托马斯·布莱克",
+      "main_characters": ["麦珂·杰森", "玛莎·杰森", "昆廷·琼斯"],
+      "fictional_obstacle": "托马斯派人上门索要《子女艺术权益保护协约》修订草案，意图以‘监护权不稳定’为由申请法院临时接管",
+      "prev_life_tragedy": "上一世托马斯成功冻结玛莎监护权三个月，期间麦珂演出收入被划入奥瑞恩托管账户",
+      "info_gap_from_prev_life": "1993年昆廷赠予的Sonix-8MkI八轨机拆解后，其ROM芯片熔铸物成分含微量钯镍合金，与1993年产纽扣完全一致",
+      "why_previous_life_failed": "麦珂未意识到纽扣可作为物证，玛莎仅靠口头抗辩，法官采信托马斯‘母亲能力存疑’主张",
+      "preemptive_avoidance": "麦珂陪玛莎刻制木质印章‘MJ-MJ Trust Guardian’，油印草案时特意选用微卷纸张，模拟1993年手工油印质感",
+      "bait_and_evidence": "玛莎拒开门，从窗缝递出一枚纽扣；鉴定中心用XRF光谱仪比对，确认含钯镍合金且与ARCH-002-B17柜第十四份铅封内熔铸物同源",
+      "comic_villain_behavior": "托马斯助手举着搜查令喊话，玛莎平静递出纽扣后关窗，窗帘缝隙露出半张1993年昆廷手绘电路图",
+      "villain_loss": "托马斯被AEUA伦理委员会永久除名；其律所失去全部监护权案件代理资质",
+      "protagonist_gain": "玛莎以‘MJ-MJ Trust Guardian’名义签署首份法律文件，获AEUA监护权备案号TR-1996-05",
+      "relationship_change": "玛莎与麦珂共治延伸至信托领域；昆廷亲手将熔铸芯片嵌入ARCH-002-B17柜第十四份铅封",
+      "continuity_writes": ["TR_1996_05_MJ_MJ_TRUST_GUARDIAN_LEGAL_DOCUMENT_SEALED_WITH_PALLADIUM_NICKEL_CHIP", "QT_EMBEDDED_ROM_CHIP_FRAGMENT_FROM_SONIX_8MKI_INTO_ARCH_002_B17_CABINET_NO_14"],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "玛莎监护权获物质凭证确权；托马斯彻底退出黑曜石事务；‘MJ-MJ Trust Guardian’成为法定监护标识",
+      "next_event_hook": "共管机制落地后，麦珂收到二手胶片商密报：奥瑞恩正批量收购1990年代演出录像带，准备启动AI声模训练",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 339,
+          "scene": "松岭居书房，玛莎手持刻刀雕琢橡木印章，木屑沾在围裙褶皱里",
+          "chapter_goal": "生成具备法律穿透力的监护权物质凭证",
+          "action_sequence": ["麦珂递上1993年纽扣；玛莎油印草案时控制压力使纸张微卷；托马斯助手敲门时玛莎将纽扣裹进棉纸"],
+          "visible_payoff": "窗缝递出的纽扣在阳光下泛出淡青光泽，与1993年昆廷电路图色调一致",
+          "ending": "助手捡起纽扣转身离去，玛莎关门时轻抚印章凹槽——‘MJ-MJ Trust Guardian’六字深浅如呼吸。"
+        },
+        {
+          "chapter_id": 340,
+          "scene": "银湾市联邦地区法院附属鉴定中心，XRF光谱仪屏幕跳动元素百分比",
+          "chapter_goal": "完成纽扣与芯片熔铸物成分司法认证",
+          "action_sequence": ["技术人员输入1993年纽扣编号；比对ARCH-002-B17柜铅封XRF数据；打印双源匹配报告；玛莎签署TR-1996-05备案表"],
+          "visible_payoff": "报告末行赫然写着：‘成分一致性≥99.97%，排除偶然匹配可能’",
+          "ending": "麦珂将备案表与纽扣一同放入松岭居保险柜，柜门内壁刻着一行小字：‘第七页墨迹已干，第八页待续’。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1996",
+    "character_states": ["麦珂三十二岁，声纹基线与黑曜石共管双轨总控人；玛莎持木质印章‘MJ-MJ Trust Guardian’主持松岭居书房事务；昆廷驻守胶片修复工作室，Flicker-Pro MkIII修复仪内置芯片开始运行；艾琳完成《创作密钥使用公约》初版并移交伦理委员会；黛安娜以共同抚养者身份签署AEUA认证细则；瑟琳娜持‘棱镜工坊’执照筹备《雾港灯塔》院线发行；莉薇娅家族法务团队完成黑曜石共管台账第七页签署；托马斯被AEUA暂停会员资格但仍在奥瑞恩内部担任顾问；苏菲亚完成G-1995-11档案内语音备忘解密并归档至VOC-1991-047"],
+    "relationship_states": ["麦珂与黛安娜确立共同养育者法律地位；麦珂与莉薇娅完成黑曜石共管机制建设；麦珂与艾琳签署《创作密钥使用公约》；麦珂与昆廷共建胶片修复取证枢纽；玛莎与麦珂共治延伸至制片、声纹与信托三领域"],
+    "rights_and_assets": ["声纹基线获三方独立认证并写入AEUA强制认证项目；黑曜石账目完成共管台账第七页签署；《子女艺术权益保护协约》完成油印初版；ARCH-002-B17柜第十四份铅封内嵌芯片激活时间戳功能；G-1995-11档案完成三级加密并接入‘星火同盟’交叉审计服务器"],
+    "health_and_location": ["麦珂耳鸣监测频率提升为每两小时一次；C-7室声学隔离舱通过联邦广电总局附属检测中心验收；药柜双因子验证日志实现与急诊联动；常驻银湾市滨岸录音区C-7室与松岭居两地"],
+    "open_threads": ["奥瑞恩秘密采购1990年代演出录像带用于AI建模：最晚回收块B017，线索已移交第341章纪录片反制行动"],
+    "resolved_threads": ["苏菲亚硬盘加密分区内的未命名音频文件：已于第335章由昆廷导入Flicker-Pro MkIII修复仪，生成时码标记‘TS-1991-047-VOC’，并于第340章归档至G-1995-11档案子目录VOC-1991-047"],
+    "introduced_characters": [],
+    "next_pressure": "共管机制落地后，麦珂收到二手胶片商密报：奥瑞恩正批量收购1990年代演出录像带，准备启动AI声模训练——该情报将直接触发第341章纪录片反制行动"
+  }
+}

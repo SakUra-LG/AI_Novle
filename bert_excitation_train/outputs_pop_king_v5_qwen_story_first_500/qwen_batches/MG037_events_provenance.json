@@ -1,0 +1,52 @@
+{
+  "generated_by": "qwen",
+  "kind": "events",
+  "identifier": "MG037",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "9bd6e25f4f77b72e5b172ce8d4f30776340e6dc765890eb50fb90b7340b928c4",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-11T09:47:06+08:00",
+      "prompt_sha256": "9bd6e25f4f77b72e5b172ce8d4f30776340e6dc765890eb50fb90b7340b928c4",
+      "raw_response_sha256": "077753658e16637653065fdf25dff49014f429f5314a3e7ca45f6c195e8157eb",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG037_events_attempt_01_raw.txt",
+      "validation_failures": [
+        "EC184年代技术错误：当前年代不得出现“手机”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 108.757,
+      "usage": {
+        "input_tokens": 15821,
+        "output_tokens": 6676,
+        "total_tokens": 22497,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-11T09:48:48+08:00",
+      "prompt_sha256": "f1d0e58bdb3c4a8a1bfbd8e7a86b1de218b7388bc6a9cee1a84f28ffa70af225",
+      "raw_response_sha256": "6f707603651e29b54a54aaa13a1910989b956f977dce80df722071c6dae00f7b",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG037_events_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 102.026,
+      "usage": {
+        "input_tokens": 6844,
+        "output_tokens": 6698,
+        "total_tokens": 13542,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

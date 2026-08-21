@@ -1,0 +1,106 @@
+{
+  "cluster_id": "EC011",
+  "chapter_id": 21,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "2d76ff2e4714bdf63a8658511b5ebfe60b81b81eb70e27e9dd4842e3015c71e9",
+  "base_prompt_sha256": "2d76ff2e4714bdf63a8658511b5ebfe60b81b81eb70e27e9dd4842e3015c71e9",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "16187b4b8f1e0c53b01055004c96758dc64d97a1a43819962d11675384568c94",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 11.326,
+    "usage": {
+      "prompt_tokens": 5837,
+      "completion_tokens": 859,
+      "total_tokens": 6696,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 11,
+    "through_chapter": 22,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "70477299fab0dfa4839bba151fe712fd73790cda44ad932fc295de967a3dd75f",
+    "chapter_card_prefix_sha256": "d239734f23649a0a5dd909686068b595c7d5265abea1dbeea1c56825f89f8da2",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "506ecbd7c4c67054916124e28979a4a88d4b8e71b264d7efa1247d6157f7a9d2"
+  },
+  "cluster_sha256": "bdeebaea3910cc8c402c3a4c35605532b1273be11df3f096136d209cdd17f767",
+  "card_sha256": "92c204ee3c2beb4847931f0c5559e115b39a8eabfc8a9aa8e2697419b6e6fb84",
+  "chapter_audit": {
+    "han_chars": 1219,
+    "total_chars": 1418,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "麦珂展示预算表",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "黛安娜出示银行对账单",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "玛莎支持麦珂",
+        "exact": false,
+        "bigram_coverage": 0.4,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0532,
+    "scene_evidence": [
+      {
+        "location": "河湾镇家庭餐厅",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_21_BUDGET_PLAN",
+        "display_name": "独立生存预算表（麦珂手写）",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文夹入英文小写叙述词：united",
+      "正文没有兑现章卡关键事实“玛莎支持麦珂”",
+      "正文没有写出本章正式创建的关键对象“独立生存预算表（麦珂手写）”"
+    ],
+    "all_validator_failures": [
+      "正文夹入英文小写叙述词：united",
+      "正文没有兑现章卡关键事实“玛莎支持麦珂”",
+      "正文没有写出本章正式创建的关键对象“独立生存预算表（麦珂手写）”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

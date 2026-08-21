@@ -1,0 +1,54 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC051_EC051",
+  "identifier": "MG011",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "5d4d9eda456d013e5bdae3593bcb4faa98d932696aaa348794410212cffec1a0",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-15T20:28:52+08:00",
+      "prompt_sha256": "5d4d9eda456d013e5bdae3593bcb4faa98d932696aaa348794410212cffec1a0",
+      "raw_response_sha256": "eb9d912459243023a0267d79894e8720cab053f79e93569a2a2c33ab7a78cbb7",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG011_events_EC051_EC051_attempt_01_5d4d9eda45_raw.txt",
+      "validation_failures": [
+        "EC051年代技术错误：1979尚不应使用“上传”"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 40.549,
+      "usage": {
+        "prompt_tokens": 31045,
+        "completion_tokens": 4145,
+        "total_tokens": 35190,
+        "prompt_tokens_details": {
+          "cached_tokens": 14840
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-15T20:29:33+08:00",
+      "prompt_sha256": "8a4f5a1fd398aa2d9ecf38444948a57b9d82221dec77aef13bdb591c73d34508",
+      "raw_response_sha256": "626f1b769ca6fa2bf7af36eb2383f6b3290a375f8d5904bebda062d67717a9a4",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG011_events_EC051_EC051_attempt_02_5d4d9eda45_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 40.733,
+      "usage": {
+        "prompt_tokens": 31123,
+        "completion_tokens": 4325,
+        "total_tokens": 35448,
+        "prompt_tokens_details": {
+          "cached_tokens": 14878
+        }
+      }
+    }
+  ]
+}

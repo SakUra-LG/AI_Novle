@@ -1,0 +1,182 @@
+{
+  "macro_group_id": "MG020",
+  "event_clusters": [
+    {
+      "cluster_id": "EC096",
+      "chapter_span": [191, 192],
+      "source_event_direction": "利用麦珂对1986年环保罚款历史的预知，在奥瑞恩集团完成收购交割前48小时，通过‘全机械审计’锁定巴里·布鲁姆的非法排污证据，迫使联邦法院签发紧急查封令，将胶片厂划为‘实体介质安全区’，彻底粉碎奥瑞恩销毁证据的计划。",
+      "source_event_direction_sha256": "a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456",
+      "source_macro_sha256": "f9e8d7c6b5a4321098765432109876543210fedcba0987654321fedcba098765",
+      "name": "酸雨陷阱与机械审计",
+      "timeline_years": "1986",
+      "main_opponent": "巴里·布鲁姆",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["CS_1986_FILM_PLANT", "CS_1986_AIR_POLLUTION"],
+      "foreshadow_ids": ["FS_VICTOR_DATA_PLOT"],
+      "main_characters": ["麦珂", "苏菲亚", "黛安娜·罗文", "巴里·布鲁姆", "维克多·兰斯"],
+      "fictional_obstacle": "巴里·布鲁姆试图在深夜利用强酸倾倒销毁微缩胶片库并伪造‘意外泄漏’事故；麦珂团队需在不依赖电子监控的嘈杂环境中，利用老式机械原理拦截废液。",
+      "prev_life_tragedy": "前世巴里深夜倾倒强酸销毁胶片，麦珂因吸入过量酸性气体喉炎复发无法呼吸，最终在混乱中死亡，证据彻底消失。",
+      "info_gap_from_prev_life": "1986年该厂因酸性废液处理不当被环保局罚款的具体日期（11月14日）和金额（$45,000），以及通风口排气管道的物理结构弱点。",
+      "why_previous_life_failed": "前世团队依赖当时的电子报警系统，但巴里切断了电源，且麦珂因旧疾发作失去行动能力，无法预判酸气流向。",
+      "preemptive_avoidance": "麦珂利用重生记忆，提前在通风口部署基于老式重力与杠杆原理的‘机械捕集器’，并在现场建立无电力的‘共呼吸’指挥节奏。",
+      "bait_and_evidence": "故意留出的虚假‘安全通道’诱使巴里开启强酸泵，触发机械陷阱，将强酸锁死在收集槽内，同时苏菲亚手动记录比对数据作为物证。",
+      "comic_villain_behavior": "巴里·布鲁姆为了抢功，不顾安全规程强行加速酸泵，结果导致自己满脸通红、咳嗽不止，狼狈地试图用公文包遮挡喷溅的酸液，却被机械装置卡住领带。",
+      "villain_loss": "巴里·布鲁姆的破坏计划当场破产，其伪造的‘意外泄漏’谎言被机械陷阱的物理状态戳穿，面临公司内部调查及警方初步介入，声誉受损。",
+      "protagonist_gain": "苏菲亚获得第一手非法排污的机械日志与液体样本，麦珂确认了物理防线的有效性，两人信任度达到顶峰。",
+      "relationship_change": "苏菲亚与麦珂形成不可分割的命运共同体；黛安娜·罗文虽未到场，但其准备的法律文书已准备就绪，随时可启动诉讼程序。",
+      "continuity_writes": [
+        "1986年11月14日是历史罚款日，巴里急于在交割前48小时销毁证据，时间紧迫。",
+        "机械捕集器由废弃的齿轮和铸铁管道组成，无需电力即可运作。",
+        "苏菲亚通过数拍子指挥团队，确保在噪音中保持精准操作。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "physical_security",
+          "entity_id": "FILM_PLANT_VENT_SYSTEM",
+          "state_key": "trap_armed",
+          "from": "passive",
+          "to": "active_trap",
+          "irreversible": true,
+          "evidence": "ART_191_MECHANICAL_TRAP_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "legal_status",
+          "entity_id": "BARRY_BLOOM_INVESTIGATION",
+          "state_key": "internal_inquiry_initiated",
+          "from": "none",
+          "to": "pending_review",
+          "irreversible": false,
+          "evidence": "ART_191_LIQUID_SAMPLE",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1986_EPA_FINE_NOV14"],
+      "cluster_outcome": "强酸被成功拦截，证据链完整，巴里的破坏行为暴露，为后续法院查封奠定基础，但未直接导致逮捕或资产冻结。",
+      "next_event_hook": "奥瑞恩集团放弃物理毁灭，转而由维克多·兰斯主导，利用1987年巡演契机，试图在麦珂的公开演出中制造一起无法解释的‘医疗事故’。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 191,
+          "timeline_start": "1986-11-13 22:00",
+          "timeline_end": "1986-11-13 23:30",
+          "scene": "胶片厂地下通风井与主控室",
+          "chapter_goal": "苏菲亚在嘈杂环境中通过共呼吸节奏指挥团队完成首次废液比对，验证机械陷阱的灵敏度。",
+          "chapter_title": "无声的节拍",
+          "participants": ["麦珂", "苏菲亚", "技术组组员A", "技术组组员B"],
+          "opening_conflict": "工厂内老旧的通风管道发出刺耳的摩擦声，掩盖了细微的液体流动声，苏菲亚必须在噪音中捕捉异常。",
+          "info_gap_use": "麦珂回忆起1986年11月14日的罚款记录，指出当前通风口的角度正是当年违规排放的源头，指示在此部署陷阱。",
+          "opponent_reaction": "巴里在远处监控室观察，以为计划天衣无缝，开始倒计时准备开启酸泵。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "地下通风井",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂的手势示意停止一切电子设备，改用人工敲击节奏。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_191_LIQUID_SAMPLE",
+              "timeline_scope": "current",
+              "display_name": "截获的酸性废液样本瓶",
+              "kind": "sample"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_181_AUDIT_REPORT",
+              "timeline_scope": "previous_life",
+              "purpose": "对比历史维修记录中的错误参数。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂低声背诵1986年的罚款细节，指导苏菲亚调整机械捕集器的角度。",
+            "苏菲亚带领团队在噪音中通过有节奏的敲击声同步操作阀门，避免电子干扰。",
+            "技术人员A在管道接口处放置玻璃试纸，测试废液成分。",
+            "麦珂确认试纸变色，证明强酸即将通过，下令启动机械锁定。"
+          ],
+          "visible_payoff": "机械捕集器成功卡住第一股强酸流，试纸显示强酸性，苏菲亚记录下精确的时间点。",
+          "ending": "苏菲亚看着手中的样本瓶，眼神坚定，麦珂的声音因紧张而略显沙哑，但指令清晰。",
+          "must_include": ["共呼吸节奏", "机械捕集器", "试纸变色"],
+          "must_not_include": ["手机", "互联网", "警报器响起"],
+          "detailed_synopsis": "1986年11月13日夜，胶片厂地下通风井内，苏菲亚在震耳欲聋的机器轰鸣声中，跟随麦珂的口令进行人工计时。麦珂凭借重生记忆，准确指出此处是当年违规排放的死角，指导团队安装老式机械捕集器。当巴里远程操控开启酸泵时，苏菲亚敏锐地捕捉到气流变化，通过敲击管壁的节奏指挥组员迅速关闭旁路阀门。机械捕集器在重力和杠杆作用下自动闭合，成功拦截了第一股强酸。苏菲亚立即采集样本，试纸瞬间变红，证实了废液的非法性。此时，巴里在监控室发现流量异常，却误以为是设备故障，并未察觉已被锁定。"
+        },
+        {
+          "chapter_id": 192,
+          "timeline_start": "1986-11-13 23:30",
+          "timeline_end": "1986-11-14 01:00",
+          "scene": "胶片厂主控大厅与外部庭院",
+          "chapter_goal": "媒体经理强行开启酸泵却触发机械陷阱，强酸被锁死在收集槽内，巴里的谎言当场破产。",
+          "chapter_title": "铁笼中的酸雨",
+          "participants": ["巴里·布鲁姆", "媒体经理", "保安队长", "苏菲亚", "麦珂"],
+          "opening_conflict": "巴里见流量异常，命令媒体经理强行重启酸泵以‘清洗’管道，实则想彻底销毁证据。",
+          "info_gap_use": "麦珂利用前世记忆，早已算出机械陷阱的临界压力值，静待反派入局。",
+          "opponent_reaction": "媒体经理为了讨好巴里，无视安全警告强行操作，结果被机械装置反噬，狼狈不堪。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主控大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里冲进大厅，咆哮着要求立即执行强制冲洗。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_191_LIQUID_SAMPLE",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据展示给赶来的保安和黛安娜的代表。"
+            }
+          ],
+          "action_sequence": [
+            "巴里命令媒体经理强行开启高压酸泵，试图冲毁机械陷阱。",
+            "机械捕集器在高压下触发过载保护，将强酸完全锁死在特制收集槽内，并弹出警示牌。",
+            "媒体经理因操作失误导致领带被吸入缝隙，被机械装置卡住，满脸酸液。",
+            "苏菲亚拿出样本瓶，向赶到的保安队长出示，证明这是人为破坏而非意外。",
+            "麦珂声音沙哑地宣读历史记录，指出这正是1986年11月14日被罚款的原因。"
+          ],
+          "visible_payoff": "强酸被彻底锁死，媒体经理被当场扣押，巴里的谎言被物理证据彻底粉碎。",
+          "ending": "巴里看着被锁死的酸泵和狼狈的下属，意识到大势已去，转身欲逃却被保安拦住。",
+          "must_include": ["机械陷阱锁死", "媒体经理被扣", "历史记录宣读"],
+          "must_not_include": ["直接逮捕巴里", "法院查封令", "资产冻结"],
+          "detailed_synopsis": "巴里见酸泵流量异常，认定是机械故障，便命令媒体经理强行开启高压模式以‘清洗’管道，企图彻底销毁残留证据。然而，麦珂预设的机械陷阱在高压下触发过载保护，巨大的齿轮咬合将强酸死死锁在收集槽内，并弹出一块刻有‘危险：非法排放’的金属牌。媒体经理为了表现，不顾安全距离强行操作，结果领带被卷入旋转部件，整个人被卡在装置上，脸上溅满酸液，狼狈不堪。苏菲亚手持样本瓶，冷静地向赶来的保安队长展示，并指出这正是1986年11月14日环保局罚款记录的复刻现场。麦珂虽然喉炎复发，声音沙哑，但仍坚持宣读当年的罚款细节，揭露巴里急于求成的心理。媒体经理的破坏行为被确认为故意，当场被保安控制，巴里试图辩解‘意外泄漏’，但面对被锁死的酸泵和确凿的样本，他的谎言瞬间破产。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1986",
+    "character_states": [
+      {"id": "麦珂", "status": "喉炎复发，声音沙哑，但意志坚定"},
+      {"id": "苏菲亚", "status": "精神高度紧张，获得关键证据，晋升为档案守护者候选人"},
+      {"id": "巴里·布鲁姆", "status": "计划失败，声誉受损，面临内部调查"},
+      {"id": "媒体经理", "status": "被保安扣押，成为替罪羊"}
+    ],
+    "relationship_states": [
+      {"pair": ["麦珂", "苏菲亚"], "change": "形成命运共同体，信任度达到顶峰"},
+      {"pair": ["奥瑞恩高层", "巴里·布鲁姆"], "change": "产生严重信任危机，高层开始切割关系"}
+    ],
+    "rights_and_assets": [
+      {"asset": "微缩胶片库", "status": "尚未被正式查封，但证据已锁定，处于临时保护状态"},
+      {"asset": "相关配方", "status": "被确认存在非法排放，奥瑞恩收购案陷入法律泥潭"}
+    ],
+    "health_and_location": [
+      {"person": "麦珂", "condition": "过度劳累，喉炎复发，需短期静养"},
+      {"location": "胶片厂", "condition": "被暂时封锁，等待进一步调查"}
+    ],
+    "open_threads": [
+      "维克多·兰斯的数据污染计划",
+      "声压可视化系统光学投影组件研发"
+    ],
+    "resolved_threads": [
+      "巴里·布鲁姆的深夜销毁计划"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多·兰斯意识到物理攻击无效，转向数据污染计划，试图在1987年巡演中制造一起无法解释的‘医疗事故’。"
+  }
+}

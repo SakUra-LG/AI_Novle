@@ -1,0 +1,25 @@
+{
+  "generated_by": "vectorengine",
+  "generation_providers": [
+    "vectorengine"
+  ],
+  "kind": "events",
+  "identifier": "MG029",
+  "accepted_attempt": 1,
+  "acceptance_mode": "batched_event_compile",
+  "compiled_input_sha256": "cb041906f9e94486479ac5c82aefeebd9615bbe24a782715ae3c95af97b53f53",
+  "compiled_sha256": "ed103689679836ee6d4b699410db29694a9772dde43793eee14a572edf266774",
+  "component_provenance_files": [
+    "MG029_events_EC141_EC141_provenance.json",
+    "MG029_events_EC142_EC142_provenance.json",
+    "MG029_events_EC143_EC143_provenance.json",
+    "MG029_events_EC144_EC144_provenance.json",
+    "MG029_events_EC145_EC145_provenance.json"
+  ],
+  "manual_edits": [],
+  "created_at": "2026-08-20T21:37:34+08:00",
+  "recompiled_at": "2026-08-21T08:39:12+08:00",
+  "structural_normalizations": [
+    "current_event_identity_timeline_state_compiler"
+  ]
+}

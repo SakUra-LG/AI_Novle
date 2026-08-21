@@ -1,0 +1,1112 @@
+{
+  "macro_group_id": "MG032",
+  "event_clusters": [
+    {
+      "cluster_id": "EC156",
+      "chapter_span": [
+        311,
+        312
+      ],
+      "source_event_direction": "前世具体受害：卡尔团队利用剪辑纪录片将麦珂塑造成失控天才，剥夺其版权解释权。；本事件独有的前世信息差：前世麦珂因未公开原始素材而被舆论反噬，导致授权书被伪造者利用。；今生提前动作：麦珂邀请艾琳启动‘午夜星轨’特别季，连续十六周同步播出未剪辑磁带波形图。；第311章可见小赢：首期节目展示1977年工坊少年面部特写，公众开始质疑纪录片真实性。；第312章新交锋：卡尔团队紧急召开发布会指责麦珂泄露隐私，却被现场观众拿出法庭录像反驳。；阻力方永久现实损失：行业自律委员会暂停卡尔团队从业资格两年，其公信力彻底崩塌。；主角现实收益：《静默增益》地图卡激活率突破91.3%，四十三处工坊实现自主盈亏平衡。；不可逆结算键：EC156_Public_Trust_Reversal；接回死亡控制主线：切断卡尔团队通过篡改叙事操控麦珂命运的关键链条。",
+      "source_event_direction_sha256": "5f5c0c8869de2f3e96022759fa65b13e73228c0b9354e8a75387c71b2338efd5",
+      "source_macro_sha256": "19aaee43c3ca4964385485b136596c7ded09d449d939a51b4cfce3260ce92f8b",
+      "name": "午夜星轨：真相的十六周回响",
+      "timeline_years": "1997—1998",
+      "main_opponent": "卡尔·斯特林（团队核心）与维克多·兰斯（幕后推手）",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS10"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "艾琳",
+        "卡尔·斯特林",
+        "瑟琳娜",
+        "1977年工坊少年"
+      ],
+      "fictional_obstacle": "卡尔团队利用行业自律委员会发布暂停令，试图切断《午夜星轨》播出并销毁原始胶片；同时伪造授权书叙事，将麦珂塑造成‘失控天才’以剥夺其版权解释权。",
+      "prev_life_tragedy": "前世麦珂因未公开原始素材而被舆论反噬，导致授权书被伪造者利用，最终失去对作品的控制权并陷入法律泥潭。",
+      "info_gap_from_prev_life": "前世麦珂不知维克多销毁证据的具体顺序和盲点，也未掌握1977年工坊少年的真实姓名与现居地；今生麦珂提前锁定1979年授权书签署日为11月17日午后三点，此时麦珂正在河湾镇法院，有法庭录像为铁证。",
+      "why_previous_life_failed": "缺乏物理证据链支撑，过度依赖口头辩论，未能预判对手销毁介质的时间点。",
+      "preemptive_avoidance": "麦珂邀请艾琳启动‘午夜星轨’特别季，连续十六周同步播出未剪辑磁带波形图，并在维克多销毁现场设置物理隔离备份系统，精准预判其藏匿位置。",
+      "bait_and_evidence": "首期节目展示1977年工坊少年面部特写，公众开始质疑纪录片真实性；卡尔团队紧急召开发布会指责麦珂泄露隐私，却被现场观众拿出法庭录像反驳。",
+      "comic_villain_behavior": "卡尔在发布会上情绪失控，试图用‘行业机密’为由掩盖事实，却因口误暴露了维拉德图书伪造授权书的签署日期与麦珂实际行踪矛盾；维克多在后台疯狂擦拭胶片盒，却因慌乱遗漏了标号'S95-B-RW'的废弃样带。",
+      "villain_loss": "行业自律委员会暂停卡尔团队从业资格两年，其公信力彻底崩塌；维克多·兰斯陷入恐慌，开始疯狂清理所有物理介质但已漏掉关键样本。",
+      "protagonist_gain": "《静默增益》地图卡激活率突破91.3%，四十三处工坊实现自主盈亏平衡；麦珂完全收回《静默增益》版权主导权，实体销量突破九十八万张。",
+      "relationship_change": "麦珂与艾琳建立基于‘真相档案’的深度职业联盟；麦珂与瑟琳娜完成家庭权力结构的制度化重构；维克多与麦珂进入敌对取证阶段。",
+      "continuity_writes": [
+        "EC156_Public_Trust_Reversal",
+        "S95-B-RW_Evidence_Captured_Partial"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016",
+          "state_key": "trust_protocols__extension_EC156",
+          "from": "none",
+          "to": "legally_bound_physical_only",
+          "irreversible": true,
+          "evidence": "ART_307_WORKSHOP_WALL_PHOTO",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "trust_protocols"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "TEAM_KARL_001",
+          "state_key": "industry_standing",
+          "from": "active_operator",
+          "to": "suspended_two_years",
+          "irreversible": true,
+          "evidence": "COURT_RECORD_1979_NOV_17",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "health",
+          "entity_id": "MCKE_HEALTH",
+          "state_key": "physiological_optimal",
+          "from": "stable",
+          "to": "optimal_four_years",
+          "irreversible": false,
+          "evidence": "MEDICAL_LOG_1997",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": [
+        "1977_WORKSHOP_FACIAL_RECOGNITION",
+        "1979_COURT_VERIFICATION"
+      ],
+      "cluster_outcome": "麦珂通过舆论战与技术取证的双重打击，彻底粉碎卡尔团队的伪造授权书叙事，确立了对《静默增益》的绝对主导权，并为后续医疗造假调查埋下伏笔。",
+      "next_event_hook": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 311,
+          "timeline_start": "1997-11-22",
+          "timeline_end": "1997-11-22",
+          "scene": "河湾镇媒体中心演播室",
+          "chapter_goal": "首期节目播出，展示1977年工坊少年面部特写，引发公众质疑。",
+          "chapter_title": "第311章：未剪辑的童年面孔",
+          "participants": [
+            "麦珂",
+            "艾琳",
+            "卢卡斯·陈（1977年工坊少年）",
+            "记者团"
+          ],
+          "opening_conflict": "卡尔团队试图通过行业自律委员会发布暂停令，阻止节目播出；麦珂则利用前世记忆，提前锁定1977年工坊少年的真实身份并策动其出庭。",
+          "info_gap_use": "麦珂知晓1979年授权书签署日为11月17日午后三点，此时自己正在河湾镇法院，有法庭录像为铁证，直接反驳卡尔团队的伪造叙事。",
+          "opponent_reaction": "卡尔团队紧急联系媒体，试图将事件定性为‘麦珂泄露隐私’，并散布谣言称工坊少年是虚构人物。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇媒体中心演播室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "镜头切换至1977年工坊墙面涂装特写"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_311_EPISODE_01_RAW",
+              "timeline_scope": "current",
+              "display_name": "《午夜星轨》特别季第一期未剪辑波形图",
+              "kind": "audio_visual_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂主持首期节目，同步播放未剪辑磁带波形图，展示1977年工坊少年面部特写。",
+            "卢卡斯·陈（1977年工坊少年）现身说法，讲述当年经历，与纪录片内容形成对比。",
+            "记者团现场提问，麦珂引用法庭录像证明1979年授权书签署日的矛盾。",
+            "卡尔团队代表试图打断节目，被安保人员拦下。"
+          ],
+          "visible_payoff": "公众开始质疑纪录片真实性，工坊少年成为焦点证人。",
+          "ending": "节目结束，收视率突破历史峰值，卡尔团队陷入被动。",
+          "must_include": [
+            "1977年工坊少年面部特写",
+            "未剪辑磁带波形图",
+            "法庭录像引用"
+          ],
+          "must_not_include": [
+            "康拉德医生出场",
+            "二维码或公众媒体提及"
+          ],
+          "detailed_synopsis": "麦珂在河湾镇媒体中心主持《午夜星轨》特别季首期节目，同步播放未剪辑磁带波形图，重点展示1977年工坊少年面部特写。卢卡斯·陈作为真实当事人现身说法，揭露纪录片中的虚假情节。记者团现场提问，麦珂引用1979年11月17日午后三点的法庭录像，证明当时自己正在法院，而非签约现场，直接驳斥卡尔团队的伪造授权书叙事。卡尔团队代表试图打断节目，被安保人员拦下。节目播出后，公众开始质疑纪录片真实性，工坊少年成为焦点证人，卡尔团队陷入被动。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_307_WORKSHOP_WALL_PHOTO",
+              "timeline_scope": "previous_life",
+              "purpose": "作为1977年工坊少年身份的铁证"
+            }
+          ]
+        },
+        {
+          "chapter_id": 312,
+          "timeline_start": "1997-11-23",
+          "timeline_end": "1997-11-23",
+          "scene": "行业自律委员会听证会大厅",
+          "chapter_goal": "卡尔团队紧急召开发布会指责麦珂泄露隐私，却被现场观众拿出法庭录像反驳，最终导致公信力崩塌。",
+          "chapter_title": "第312章：法庭录像的反杀",
+          "participants": [
+            "卡尔·斯特林",
+            "维克多·兰斯",
+            "麦珂",
+            "瑟琳娜",
+            "行业自律委员会成员",
+            "公众代表"
+          ],
+          "opening_conflict": "卡尔团队召开紧急发布会，指责麦珂泄露隐私并试图销毁原始胶片；麦珂则利用前世记忆，提前在维克多销毁现场设置物理隔离备份系统，截获被遗漏的'S95-B-RW'废弃样带。",
+          "info_gap_use": "麦珂知晓维克多销毁证据的具体顺序和盲点，能精准预判其藏匿位置，提前建立物理隔离的备份系统。",
+          "opponent_reaction": "卡尔在发布会上情绪失控，试图用‘行业机密’为由掩盖事实，却因口误暴露了维拉德图书伪造授权书的签署日期与麦珂实际行踪矛盾；维克多在后台疯狂擦拭胶片盒，却因慌乱遗漏了标号'S95-B-RW'的废弃样带。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "行业自律委员会听证会大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "观众席突然有人举起法庭录像设备"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_309_S95_B_RW_TAPE",
+              "timeline_scope": "current",
+              "purpose": "截获被维克多遗漏的废弃样带，内含关键医疗造假录音"
+            }
+          ],
+          "action_sequence": [
+            "卡尔团队召开紧急发布会，指责麦珂泄露隐私并试图销毁原始胶片。",
+            "现场观众突然举起法庭录像设备，播放1979年11月17日麦珂在法院的记录，直接反驳卡尔团队的指控。",
+            "卡尔情绪失控，口误暴露伪造授权书的签署日期与麦珂实际行踪矛盾。",
+            "维克多在后台疯狂擦拭胶片盒，却因慌乱遗漏了标号'S95-B-RW'的废弃样带，被麦珂团队截获。"
+          ],
+          "visible_payoff": "行业自律委员会暂停卡尔团队从业资格两年，其公信力彻底崩塌；麦珂团队截获'S95-B-RW'废弃样带，内含关键医疗造假录音。",
+          "ending": "卡尔团队陷入被动，维克多开始疯狂清理所有物理介质但已漏掉关键样本。",
+          "must_include": [
+            "法庭录像播放",
+            "卡尔口误暴露矛盾",
+            "S95-B-RW样带截获"
+          ],
+          "must_not_include": [
+            "康拉德医生出场",
+            "二维码或公众媒体提及"
+          ],
+          "detailed_synopsis": "卡尔团队召开紧急发布会，指责麦珂泄露隐私并试图销毁原始胶片。现场观众突然举起法庭录像设备，播放1979年11月17日麦珂在法院的记录，直接反驳卡尔团队的指控。卡尔情绪失控，口误暴露伪造授权书的签署日期与麦珂实际行踪矛盾。维克多在后台疯狂擦拭胶片盒，却因慌乱遗漏了标号'S95-B-RW'的废弃样带，被麦珂团队截获。行业自律委员会暂停卡尔团队从业资格两年，其公信力彻底崩塌；麦珂团队截获'S95-B-RW'废弃样带，内含关键医疗造假录音，为后续调查埋下伏笔。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_RECORD_1979_NOV_17",
+              "timeline_scope": "previous_life",
+              "purpose": "作为反驳卡尔团队伪造授权书的关键证据",
+              "source_artifact_id": "COURT_RECORD_1979_NOV_17"
+            }
+          ]
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "艾琳",
+        "卡尔·斯特林",
+        "瑟琳娜",
+        "1977年工坊少年（卢卡斯·陈）"
+      ]
+    },
+    {
+      "cluster_id": "EC157",
+      "chapter_span": [
+        313,
+        314
+      ],
+      "source_event_direction": "前世具体受害：维克多利用伪造的1979年授权书试图合法化其对《静默增益》的控制权。；本事件独有的前世信息差：前世麦珂在1979年11月17日午后三点无证据自证清白，被迫接受虚假授权。；今生提前动作：麦珂提前调取河湾镇法院1979年11月17日监护权确认录像及七位见证人签字簿。；第313章可见小赢：律师团在听证会上播放法庭录像，证明签署日麦珂正在法院而非签约现场。；第314章新交锋：维克多试图销毁录像带，却被艾琳团队展示的原始微缩胶片备份当场揭穿。；阻力方永久现实损失：维拉德图书撤回所有版权主张，维克多失去对麦珂叙事的单方面解释权。；主角现实收益：麦珂完全收回《静默增益》版权主导权，实体销量突破九十八万张。；不可逆结算键：EC157_Legal_Validation_Complete；接回死亡控制主线：粉碎维克多通过法律程序窃取麦珂毕生心血的致命陷阱。",
+      "source_event_direction_sha256": "c7fc936734ea56a019b3bdc419d0748d2da7a040f8ea04a049dcd7169449792d",
+      "source_macro_sha256": "19aaee43c3ca4964385485b136596c7ded09d449d939a51b4cfce3260ce92f8b",
+      "name": "铁证如山：1979年时空错位审判",
+      "timeline_years": "1997—1998",
+      "main_opponent": "维克多·兰斯 (Victor Lance)",
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS10"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "艾琳",
+        "维克多·兰斯",
+        "卡尔",
+        "河湾镇法官"
+      ],
+      "fictional_obstacle": "行业自律委员会暂停令下，维克多利用伪造的1979年授权书，试图将《静默增益》的所有权合法转移至维拉德图书名下，并威胁若麦珂不签字将永久封杀其作品。",
+      "prev_life_tragedy": "前世麦珂在1979年11月17日午后三点因缺乏直接物证，无法证明自己当时身在河湾镇法院，被迫在伪造文件上按手印，导致后续二十年被维拉德图书吸血。",
+      "info_gap_from_prev_life": "麦珂确切知晓1979年11月17日午后三点的河湾镇法院监控录像（当时为磁带存档）及七位在场见证人的具体姓名，而前世这些记录被维克多刻意掩盖或声称丢失。",
+      "why_previous_life_failed": "前世依赖口头陈述和模糊记忆，未能在第一时间锁定物理层面的时间戳证据，且低估了维克多销毁档案的速度。",
+      "preemptive_avoidance": "重生后麦珂立即派遣艾琳前往河湾镇档案馆，在维克多动手前调取了1979年11月17日的法院庭审录像带原件，并公证了七位见证人的签字簿。",
+      "bait_and_evidence": "诱饵是维克多急于在听证会结束前拿到‘最终授权’以完成季度财报；证据是法院录像中清晰显示麦珂在签署现场对面旁听席上，且背景音有法槌声与证人宣誓声。",
+      "comic_villain_behavior": "维克多在听证会上为了掩盖慌乱，竟试图当场用打火机烧毁手中的假授权书样本，结果火势引燃了旁边的窗帘，场面一度失控，被记者全程抓拍。",
+      "villain_loss": "维拉德图书被迫当众撤回所有版权主张，维克多因欺诈罪被行业永久除名，彻底失去对《静默增益》的解释权。",
+      "protagonist_gain": "麦珂完全收回《静默增益》版权主导权，实体销量在听证会后一周内突破九十八万张，地图卡激活率飙升至91.3%。",
+      "relationship_change": "麦珂与艾琳建立基于‘真相档案’的深度职业联盟；麦珂与瑟琳娜完成家庭权力结构的制度化重构；维克多与麦珂进入敌对取证阶段。",
+      "continuity_writes": [
+        "维克多因恐慌开始疯狂清理物理介质，但遗漏了S95-B-RW样带，为下一轮医疗造假调查埋下伏笔。",
+        "1977年工坊少年身份确认为关键证人，媒体开始密集采访，形成舆论高压。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016",
+          "state_key": "trust_protocols__extension_EC157",
+          "from": "fraudulent_claim_active",
+          "to": "legally_voided_complete",
+          "irreversible": true,
+          "evidence": "COURT_TAPES_1979_NOV_17",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "TEAM_KARL_001",
+          "state_key": "industry_standing__extension_EC157",
+          "from": "none",
+          "to": "permanently_banned",
+          "irreversible": true,
+          "evidence": "HEARING_FOOTAGE_FIRE_INCIDENT",
+          "effect_type": "villain_loss",
+          "source_state_key": "industry_standing"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "SALES_MCKE_001",
+          "state_key": "physical_volume_status",
+          "from": "stagnant_under_claims",
+          "to": "surge_to_980k",
+          "irreversible": false,
+          "evidence": "MARKET_REPORT_1997_DEC",
+          "effect_type": "protagonist_gain",
+          "source_domain": "sales"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1979_COURT_RECORD",
+        "HIST_1979_WITNESS_LOG"
+      ],
+      "cluster_outcome": "麦珂通过法律程序与物理证据的完美配合，彻底粉碎维克多利用伪造授权书窃取版权的企图，确立了不可逆转的版权主导权，并将维克多逼入绝境，迫使其启动更疯狂的毁灭计划。",
+      "next_event_hook": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 313,
+          "timeline_start": "1997-11-23",
+          "timeline_end": "1997-11-23",
+          "scene": "听证室主舞台",
+          "chapter_goal": "在听证会上公开播放1979年法院录像，直接击碎维克多的授权书谎言。",
+          "chapter_title": "第313章：消失的三点钟",
+          "participants": [
+            "麦珂",
+            "艾琳",
+            "维克多·兰斯",
+            "卡尔",
+            "委员会主席",
+            "旁听记者"
+          ],
+          "opening_conflict": "维克多手持伪造的1979年授权书，声称麦珂已私下转让版权，要求委员会批准交易，以此作为拖延销毁胶片的借口。",
+          "info_gap_use": "麦珂利用前世记忆，精准指出授权书签署时间为11月17日午后三点，此时她本应在河湾镇法院处理监护权确认，不可能出现在签约现场。",
+          "opponent_reaction": "维克多面露惊惶，试图打断录像播放，声称设备故障，并煽动卡尔团队质疑录像真实性。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证室主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "艾琳按下播放键，老式CRT电视屏幕闪烁雪花后出现画面。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_309_S95_B_RW_TAPE",
+              "timeline_scope": "current",
+              "purpose": "虽未在此章直接使用，但其存在暗示维克多正在寻找的备份源已被截获。"
+            }
+          ],
+          "action_sequence": [
+            "艾琳将标有'1979-11-17'的磁带插入播放器，全场寂静。",
+            "屏幕显示河湾镇法院大厅，麦珂身着朴素外套坐在旁听席，背景音是法官敲锤的声音。",
+            "麦珂起身，指着屏幕上的时间戳，朗声质问维克多：'如果我在法院，你在哪？'",
+            "维克多试图辩解，但卡尔团队发现手中的纸质授权书日期与录像时间冲突，陷入死局。"
+          ],
+          "visible_payoff": "公众与委员会确认授权书系伪造，维克多的逻辑链条断裂。",
+          "ending": "听证会暂时休庭，维克多面色惨白地离开，手中紧握的伪造文件被记者围堵拍摄。",
+          "must_include": [
+            "CRT电视播放细节",
+            "麦珂冷静对峙",
+            "时间戳的特写"
+          ],
+          "must_not_include": [
+            "现代数字投影",
+            "维克多当场被捕",
+            "麦珂情绪失控"
+          ],
+          "detailed_synopsis": "维克多手持伪造的1979年授权书，声称麦珂已私下转让版权，要求委员会批准交易，以此作为拖延销毁胶片的借口。艾琳将标有'1979-11-17'的磁带插入播放器，全场寂静。屏幕显示河湾镇法院大厅，麦珂身着朴素外套坐在旁听席，背景音是法官敲锤的声音。麦珂起身，指着屏幕上的时间戳，朗声质问维克多：'如果我在法院，你在哪？'。维克多试图辩解，但卡尔团队发现手中的纸质授权书日期与录像时间冲突，陷入死局。公众与委员会确认授权书系伪造，维克多的逻辑链条断裂。听证会暂时休庭，维克多面色惨白地离开，手中紧握的伪造文件被记者围堵拍摄。",
+          "source_timeline_start": "1997年11月17日 上午",
+          "source_timeline_end": "1997年11月17日 下午"
+        },
+        {
+          "chapter_id": 314,
+          "timeline_start": "1997-11-23",
+          "timeline_end": "1997-11-23",
+          "scene": "侧厅走廊",
+          "chapter_goal": "维克多试图销毁证据反被艾琳用微缩胶片备份反杀，最终彻底败退。",
+          "chapter_title": "第314章：灰烬中的胶片",
+          "participants": [
+            "麦珂",
+            "艾琳",
+            "维克多·兰斯",
+            "几名保镖",
+            "记者群"
+          ],
+          "opening_conflict": "听证会后，维克多企图冲进侧厅销毁刚刚被揭露的假授权书及相关备份，制造“证据灭失”假象，试图翻盘。",
+          "info_gap_use": "麦珂知道维克多习惯先销毁实物再伪造报告，因此艾琳早已将关键证据的微缩胶片备份藏匿于安全处，并提前通知了在场记者。",
+          "opponent_reaction": "维克多疯狂地撕扯文件，甚至点燃打火机，却在看到艾琳展示的微缩胶片时彻底崩溃，意识到自己已无路可退。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "侧厅走廊",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "火光映照在维克多扭曲的脸上。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_307_WORKSHOP_WALL_PHOTO",
+              "timeline_scope": "current",
+              "purpose": "作为对比，证明当前证据链的完整性，呼应前文工坊少年的身份。"
+            }
+          ],
+          "action_sequence": [
+            "维克多趁乱冲向存放文件的桌子，掏出打火机试图烧毁那份伪造的授权书，试图制造混乱。",
+            "艾琳冷静地举起一个密封的金属盒，里面装着1979年原始微缩胶片的备份，这是麦珂前世记忆中从未见过的“保险”。",
+            "记者们蜂拥而上，用镜头记录下维克多焚烧文件的丑态，以及艾琳展示真证的瞬间。",
+            "维克多看着手中的灰烬和艾琳手中的真证，双腿一软，瘫坐在地，彻底失去了反抗能力。"
+          ],
+          "visible_payoff": "维拉德图书被迫撤回所有主张，维克多彻底失去话语权，麦珂销量暴涨。",
+          "ending": "维克多被保安控制，维拉德图书连夜发布声明撤回版权主张，麦珂站在人群中央，看着窗外初升的月亮，长舒一口气。",
+          "must_include": [
+            "焚烧文件的滑稽场景",
+            "微缩胶片备份的展示",
+            "维克多崩溃的瞬间"
+          ],
+          "must_not_include": [
+            "暴力冲突升级",
+            "警察直接介入逮捕",
+            "麦珂主动攻击"
+          ],
+          "detailed_synopsis": "听证会后，维克多企图冲进侧厅销毁刚刚被揭露的假授权书及相关备份，制造“证据灭失”假象，试图翻盘。维克多趁乱冲向存放文件的桌子，掏出打火机试图烧毁那份伪造的授权书，试图制造混乱。艾琳冷静地举起一个密封的金属盒，里面装着1979年原始微缩胶片的备份，这是麦珂前世记忆中从。记者们蜂拥而上，用镜头记录下维克多焚烧文件的丑态，以及艾琳展示真证的瞬间。维克多看着手中的灰烬和艾琳手中的真证，双腿一软，瘫坐在地，彻底失去了反抗能力。维拉德图书被迫撤回所有主张，维克多彻底失去话语权，麦珂销量暴涨。维克多被保安控制，维拉德图书连夜发布声明撤回版权主张，麦珂站在人群中央，看着窗外初升的月亮，长舒一口气。",
+          "source_timeline_start": "1997年11月17日 傍晚",
+          "source_timeline_end": "1997年11月17日 深夜"
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "艾琳",
+        "维克多·兰斯",
+        "卡尔 (Carl)",
+        "河湾镇法官"
+      ]
+    },
+    {
+      "cluster_id": "EC158",
+      "chapter_span": [
+        315,
+        316
+      ],
+      "source_event_direction": "前世具体受害：前世瑟琳娜因缺乏制度保障而在教育决策上陷入被动，家庭权力失衡。；本事件独有的前世信息差：前世麦珂未与瑟琳娜建立法律效力的共同治理机制，导致子女教育路径混乱。；今生提前动作：麦珂起草《教育共治备忘录》，提议实行子女教育双轨并行制并签署生效。；第315章可见小赢：瑟琳娜在备忘录上签字，确立双方为拥有否决权的共同治理者身份。；第316章新交锋：瑟琳娜面对商业集团拉拢，选择坚持备忘录条款拒绝利益交换。；阻力方永久现实损失：外部势力无法再通过家庭内部矛盾干涉麦珂的决策体系。；主角现实收益：家庭权力结构制度化重构，子女教育路径明确且稳定。；不可逆结算键：EC158_Education_Dual_Track_Signed；接回死亡控制主线：构建稳固的家庭防线，防止未来通过亲情绑架破坏麦珂的布局。",
+      "source_event_direction_sha256": "fcb80d732ceb14beee7128f3e13b3b01096e7b2633a72604ad95f5f5dfb8ac1f",
+      "source_macro_sha256": "19aaee43c3ca4964385485b136596c7ded09d449d939a51b4cfce3260ce92f8b",
+      "name": "教育共治备忘录签署与商业诱惑反制",
+      "timeline_years": "1997—1998",
+      "main_opponent": "瑟琳娜·兰斯（受外部资本拉拢时）",
+      "opposition_type": "family",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS10"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜",
+        "艾琳",
+        "商业代理人"
+      ],
+      "fictional_obstacle": "外部商业集团试图利用瑟琳娜对子女未来的焦虑，通过私下利益交换瓦解家庭决策统一性；前世因缺乏制度约束，瑟琳娜在情感绑架下被迫妥协，导致子女教育路径混乱。",
+      "prev_life_tragedy": "前世瑟琳娜未获法律保障的否决权，在家族压力下被迫接受混乱的教育方案，导致子女成长关键期资源错配，最终引发家庭信任危机。",
+      "info_gap_from_prev_life": "前世麦珂误以为仅靠情感沟通即可维持家庭和谐，未意识到必须建立具有法律效力的‘双轨并行’治理机制才能抵御外部资本渗透。",
+      "why_previous_life_failed": "缺乏制度化的权力制衡，导致家庭成员在面对外部诱惑时缺乏明确的防御边界和共同行动准则。",
+      "preemptive_avoidance": "麦珂提前起草《教育共治备忘录》，明确设立双轨制教育路径及双方拥有绝对否决权的条款，并邀请第三方公证人见证。",
+      "bait_and_evidence": "商业代理人以‘名校特招名额’为诱饵，要求瑟琳娜单方面签字放弃部分教育监督权；麦珂出示前世记忆中的混乱案例数据作为警示，并当场展示备忘录草案。",
+      "comic_villain_behavior": "商业代理人误以为瑟琳娜软弱可欺，试图用夸张的金钱数字和虚假的‘独家协议’施压，却在麦珂冷静拆解其逻辑漏洞时显得手足无措，甚至当众失态地翻找合同细节。",
+      "villain_loss": "外部势力无法再通过家庭内部矛盾干涉麦珂的决策体系，商业集团的拉拢计划彻底失败，信誉受损。",
+      "protagonist_gain": "家庭权力结构制度化重构，子女教育路径明确且稳定，确立了不可逆转的法律防线。",
+      "relationship_change": "麦珂与瑟琳娜建立基于契约精神的深度信任联盟；瑟琳娜从被动依附者转变为拥有独立话语权的共同治理者。",
+      "continuity_writes": [
+        "1997年冬，麦珂将《教育共治备忘录》终稿置于书房红木桌上，纸张泛黄却字迹清晰，这是前世未曾有过的制度保障。",
+        "瑟琳娜翻阅文件时指尖微颤，她想起前世在董事会上的狼狈，如今麦珂已为她筑起铜墙铁壁。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_FAMILY_EDU_001",
+          "state_key": "governance_mechanism__EC158",
+          "from": "informal_emotional_only",
+          "to": "legally_bound_dual_track",
+          "irreversible": true,
+          "evidence": "ART_305_EDU_MEMO_FINAL",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_MCKE_SERL_001",
+          "state_key": "power_balance__EC158",
+          "from": "unbalanced_dependency",
+          "to": "equal_governance_partnership",
+          "irreversible": true,
+          "evidence": "SIGNATURE_CERTIFICATE_EC158",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1997_WINTER_DECISION"
+      ],
+      "cluster_outcome": "麦珂成功推动《教育共治备忘录》签署，确立双轨制教育模式与共同否决权机制，彻底阻断外部资本通过家庭内部矛盾进行干预的可能，实现家庭权力结构的制度化重构。",
+      "next_event_hook": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 315,
+          "timeline_start": "1997-12-10",
+          "timeline_end": "1997-12-10",
+          "scene": "麦珂家中书房",
+          "chapter_goal": "完成《教育共治备忘录》签署，确立双轨制教育模式与共同否决权。",
+          "chapter_title": "墨迹未干的契约",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "公证员老陈"
+          ],
+          "opening_conflict": "瑟琳娜面对商业代理人留下的‘特招协议’犹豫不决，内心仍存前世被操控的阴影。",
+          "info_gap_use": "麦珂利用前世记忆指出该协议中隐藏的‘排他性条款’将导致子女失去选择权，直接引用前世混乱案例数据。",
+          "opponent_reaction": "商业代理人（电话连线）试图用高薪承诺施压，却被麦珂冷静打断并揭露其合同陷阱。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂家中书房",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "窗外飘雪，室内暖光映照在摊开的备忘录上"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_305_EDU_MEMO_FINAL",
+              "timeline_scope": "current",
+              "display_name": "《1997年教育共治备忘录》终稿",
+              "kind": "legal_contract"
+            }
+          ],
+          "action_sequence": [
+            "麦珂将备忘录推至瑟琳娜面前，逐条解释双轨制设计逻辑。",
+            "瑟琳娜颤抖着拿起钢笔，回忆起前世在董事会上的无助，眼神逐渐坚定。",
+            "公证员老陈宣读法律效力条款，强调双方拥有同等否决权。",
+            "瑟琳娜在签名处落下笔迹，墨迹未干却重若千钧。"
+          ],
+          "visible_payoff": "瑟琳娜正式成为拥有否决权的共同治理者，家庭决策机制从情感依赖转向制度约束。",
+          "ending": "瑟琳娜合上备忘录，对麦珂露出久违的释然微笑，窗外雪势渐大。",
+          "must_include": [
+            "双轨制教育模式的具体条款描述",
+            "瑟琳娜签字时的心理转变描写",
+            "公证员宣读法律效力的场景"
+          ],
+          "must_not_include": [
+            "任何关于医疗造假的讨论",
+            "未来世纪之交的技术词汇"
+          ],
+          "detailed_synopsis": "1997年冬夜，麦珂在家中书房向瑟琳娜展示《教育共治备忘录》终稿。他利用前世记忆精准指出商业代理人留下的‘特招协议’中隐藏的危险条款，并引用前世教育混乱的真实案例作为警示。瑟琳娜起初仍显犹豫，但在麦珂冷静拆解其逻辑漏洞后，终于认清制度保障的重要性。公证员老陈在场见证，逐条宣读法律效力条款，强调双方拥有同等否决权。瑟琳娜颤抖着签下名字，这一刻不仅是家庭权力的重新分配，更是她对自我价值的确认。窗外大雪纷飞，屋内却暖意融融，两人相视而笑，共同迈出了家庭治理现代化的关键一步。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_307_WORKSHOP_WALL_PHOTO",
+              "timeline_scope": "previous_life",
+              "purpose": "作为前世教育混乱的视觉佐证"
+            }
+          ],
+          "duplicate_artifact_creates_reclassified": [
+            {
+              "artifact_id": "ART_305_EDU_MEMO_FINAL",
+              "timeline_scope": "current",
+              "display_name": "《1997年教育共治备忘录》终稿",
+              "kind": "legal_contract"
+            }
+          ]
+        },
+        {
+          "chapter_id": 316,
+          "timeline_start": "1997-12-15",
+          "timeline_end": "1997-12-15",
+          "scene": "商业集团临时会议室",
+          "chapter_goal": "瑟琳娜拒绝商业集团拉拢，坚持备忘录条款，完成家庭权力结构的最终巩固。",
+          "chapter_title": "拒绝的艺术",
+          "participants": [
+            "瑟琳娜",
+            "商业集团代表（虚构：亨利·布莱克）",
+            "麦珂（远程视频）"
+          ],
+          "opening_conflict": "商业集团代表亨利·布莱克试图再次拉拢瑟琳娜，许诺巨额利益换取其单方面放弃教育监督权。",
+          "info_gap_use": "瑟琳娜利用前世记忆识破对方‘短期利益长期绑定’的陷阱，直接引用备忘录条款进行反驳。",
+          "opponent_reaction": "亨利·布莱克惊愕于瑟琳娜的决绝，试图用情感绑架施压，却被麦珂远程视频介入揭穿其真实意图。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "商业集团临时会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "会议桌中央摆放着厚厚的利益交换清单"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_305_EDU_MEMO_FINAL",
+              "timeline_scope": "current",
+              "purpose": "作为拒绝利益交换的法律依据"
+            }
+          ],
+          "action_sequence": [
+            "亨利·布莱克抛出巨额利益诱惑，试图动摇瑟琳娜的决心。",
+            "瑟琳娜冷静回应，出示备忘录副本，明确指出该交易违反共同治理原则。",
+            "麦珂通过远程视频接入，揭示亨利背后更大的商业阴谋。",
+            "瑟琳娜果断拒绝，并警告对方若再骚扰将采取法律行动。"
+          ],
+          "visible_payoff": "外部势力彻底放弃通过家庭内部矛盾干涉麦珂决策体系的企图，家庭防线固若金汤。",
+          "ending": "亨利·布莱克灰溜溜离开，瑟琳娜挂断电话，与麦珂视频中对视，眼中满是胜利的光芒。",
+          "must_include": [
+            "商业集团代表的贪婪嘴脸描写",
+            "瑟琳娜拒绝时的坚定态度",
+            "麦珂远程介入的关键作用"
+          ],
+          "must_not_include": [
+            "任何关于医疗造假的讨论",
+            "未来世纪之交的技术词汇"
+          ],
+          "detailed_synopsis": "1997年12月15日，商业集团代表亨利·布莱克在临时会议室设局，试图以巨额利益拉拢瑟琳娜，要求其单方面放弃教育监督权。瑟琳娜虽曾在前世陷入被动，但今日已非吴下阿蒙。她冷静地拿出《教育共治备忘录》副本，逐条指出该交易违反共同治理原则，并引用前世记忆中的混乱案例作为警示。亨利·布莱克惊愕之余试图用情感绑架施压，却被麦珂通过远程视频及时介入，彻底揭穿其背后的商业阴谋。瑟琳娜果断拒绝，并警告对方若再骚扰将采取法律行动。亨利·布莱克灰溜溜离开，瑟琳娜挂断电话，与麦珂视频中对视，眼中满是胜利的光芒。这一刻，家庭权力结构彻底固化，外部势力再也无法通过亲情绑架破坏麦珂的布局。"
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "瑟琳娜",
+        "艾琳",
+        "商业代理人（虚构）"
+      ]
+    },
+    {
+      "cluster_id": "EC159",
+      "chapter_span": [
+        317,
+        318
+      ],
+      "source_event_direction": "前世具体受害：前世维克多在数据污染阶段成功掩盖医疗造假录音，导致麦珂被误诊致死。；本事件独有的前世信息差：前世麦珂不知维克多销毁证据的具体顺序，未能截获关键物理介质。；今生提前动作：麦珂依据重生记忆预判维克多销毁盲区，安排莉薇娅团队在S95-B-RW样带藏匿点设伏。；第317章可见小赢：维克多按计划销毁大部分胶片，却意外留下标号S95-B-RW的废弃样带未被处理。；第318章新交锋：麦珂团队在维克多试图再次清理现场时，当众播放样带夹层内的模拟录音。；阻力方永久现实损失：维克多医疗造假计划彻底曝光，其本人陷入恐慌并开始疯狂清理但已无效。；主角现实收益：获得1995年维克多亲口指示篡改心电图基线的核心物证，健康指标维持最优。；不可逆结算键：EC159_Medical_Fraud_Evidence_Captured；接回死亡控制主线：直接阻断导致麦珂前世死亡的医疗模型造假链条。",
+      "source_event_direction_sha256": "8f4ef15374cead25d10eb2fdf4febf801a5ad9360877064c0d72194a44580940",
+      "source_macro_sha256": "19aaee43c3ca4964385485b136596c7ded09d449d939a51b4cfce3260ce92f8b",
+      "name": "废弃样带截获与医疗造假录音曝光",
+      "timeline_years": "1997—1998",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS10"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "维克多·兰斯",
+        "莉薇娅",
+        "艾琳"
+      ],
+      "fictional_obstacle": "维克多利用行业暂停令的掩护，在深夜潜入废弃胶片库执行‘全介质抹除计划’，试图销毁所有原始物理介质以掩盖1995年医疗数据造假的证据。",
+      "prev_life_tragedy": "前世麦珂因不知维克多销毁顺序，未能截获关键样本，导致其被误诊致死，医疗模型造假链条未被切断。",
+      "info_gap_from_prev_life": "前世麦珂完全不知道维克多销毁证据的具体操作顺序和盲区，以为所有介质已同步销毁。",
+      "why_previous_life_failed": "缺乏对反派操作细节的预判，导致关键物证（S95-B-RW）在销毁过程中被遗漏且未被发现。",
+      "preemptive_avoidance": "麦珂依据重生记忆，精准预判维克多会跳过标号'S95-B-RW'的废弃样带作为盲区，提前安排莉薇娅团队在该区域设伏并建立物理隔离备份。",
+      "bait_and_evidence": "维克多因贪婪想抢功销毁更多胶卷，故意留下未标记的夹层样带；麦珂团队截获该样带，提取出夹层内1995年维克多亲口指示篡改心电图基线的模拟录音。",
+      "comic_villain_behavior": "维克多一边疯狂清理现场，一边对着空气自言自语抱怨‘运气不好’，却因过于专注数清胶卷数量而忽略了角落里的废弃样带，甚至用打火机烧焦了部分无关胶片，制造了滑稽的混乱场面。",
+      "villain_loss": "维克多的医疗造假计划彻底曝光，其本人陷入极度恐慌，开始疯狂清理但已无效，失去了对麦珂健康数据的单方面解释权。",
+      "protagonist_gain": "获得1995年维克多亲口指示篡改心电图基线的核心物证，健康指标维持最优，直接阻断前世死亡链条。",
+      "relationship_change": "麦珂与艾琳基于‘真相档案’建立深度职业联盟；麦珂与瑟琳娜的家庭权力结构进一步巩固，共同面对外部威胁。",
+      "continuity_writes": [
+        "1997年12月，维克多启动抹除计划，麦珂团队在S95-B-RW藏匿点成功截获样带。",
+        "录音内容确认为维克多亲笔指令，证明1995年医疗数据存在系统性伪造。",
+        "麦珂健康指标连续四年无波动，生理状态达到最佳。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MEDICAL_DATA_001",
+          "state_key": "fraud_exposure__EC159",
+          "from": "hidden_manipulation",
+          "to": "publicly_verified_fraud",
+          "irreversible": true,
+          "evidence": "ART_309_S95_B_RW_TAPE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "health",
+          "entity_id": "HEALTH_MCKE_001",
+          "state_key": "survival_chain__EC159",
+          "from": "risk_of_misdiagnosis",
+          "to": "optimal_physiological_state",
+          "irreversible": true,
+          "evidence": "VITAL_SIGNS_LOG_1997",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_B6BBF0D9B359",
+          "state_key": "opposition_loss_EC159",
+          "from": "active",
+          "to": "维克多的医疗造假计划彻底曝光，其本人陷入极度恐慌，开始疯狂清理但已无效，失去了对麦珂健康数据的单方面解释权。",
+          "irreversible": true,
+          "evidence": "维克多医疗造假计划彻底曝光，其本人陷入恐慌并开始疯狂清理但已无效；麦珂获得1995年维克多亲口指示篡改心电图基线的核心物证，健康指标维持最优。",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "1995_Medical_Model_Fraud",
+        "1997_Decommissioning_Event"
+      ],
+      "cluster_outcome": "维克多医疗造假计划彻底曝光，其本人陷入恐慌并开始疯狂清理但已无效；麦珂获得1995年维克多亲口指示篡改心电图基线的核心物证，健康指标维持最优。",
+      "next_event_hook": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 317,
+          "timeline_start": "1997-12-15",
+          "timeline_end": "1997-12-16",
+          "scene": "废弃胶片库",
+          "chapter_goal": "维克多执行销毁计划，麦珂团队设伏截获被遗漏的S95-B-RW样带。",
+          "chapter_title": "盲区的灰烬",
+          "participants": [
+            "维克多·兰斯",
+            "莉薇娅",
+            "两名安保人员"
+          ],
+          "opening_conflict": "维克多在深夜潜入废弃库房，准备销毁所有原始胶片，却因过于专注数清数量而忽略角落里的废弃样带。",
+          "info_gap_use": "麦珂利用前世记忆，知道维克多会跳过未标记的'S95-B-RW'样带，提前安排莉薇娅在此设伏。",
+          "opponent_reaction": "维克多一边疯狂搬运胶卷，一边自言自语抱怨运气不好，甚至用打火机烧焦了部分无关胶片，制造混乱。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "废弃胶片库",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "手电筒光束扫过堆积如山的胶卷箱，停在角落一个未标记的木箱上。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_309_S95_B_RW_TAPE",
+              "timeline_scope": "current",
+              "display_name": "《S95-B-RW废弃样带（含夹层录音）》",
+              "kind": "physical_evidence"
+            }
+          ],
+          "action_sequence": [
+            "维克多进入库房，开始搬运胶卷，口中念叨着‘这次一定清理干净’。",
+            "莉薇娅带领安保人员在暗处观察，确认维克多忽略了角落的木箱。",
+            "维克多离开后，莉薇娅打开木箱，取出标号S95-B-RW的样带。",
+            "麦珂通过远程通讯确认样带位置，指挥团队将其转移至安全地点。"
+          ],
+          "visible_payoff": "维克多按计划销毁大部分胶片，却意外留下标号S95-B-RW的废弃样带未被处理。",
+          "ending": "维克多满意地离开库房，以为自己完成了任务；麦珂团队已拿到关键物证。",
+          "must_include": [
+            "维克多的贪婪与疏忽",
+            "S95-B-RW样带的遗漏",
+            "莉薇娅的设伏行动"
+          ],
+          "must_not_include": [
+            "直接逮捕",
+            "公开播放录音",
+            "康拉德出场"
+          ],
+          "detailed_synopsis": "夜色笼罩下的废弃胶片库，维克多·兰斯带着两名助手潜入，手中拿着清单，疯狂地搬运着成捆的原始胶片。他一边数着数量，一边自言自语，抱怨着‘为什么总是有漏网之鱼’，甚至为了赶时间，用打火机点燃了无关的废纸，火光映照着他扭曲的脸。他完全没注意到角落那个未标记的木箱——那是前世他被自己遗忘的盲区。莉薇娅早已带领安保人员潜伏在暗处，她看着维克多笨拙地数着胶卷，嘴角露出一丝冷笑。当维克多终于心满意足地离开，以为一切尘埃落定时，莉薇娅迅速上前，打开了那个被遗忘的木箱。里面静静地躺着一盘标号为S95-B-RW的废弃样带，外壳上积满了灰尘，却隐藏着足以颠覆整个医疗模型的致命秘密。麦珂通过远程通讯确认了样带的位置，指挥团队将其安全转移。这一夜，维克多的贪婪与疏忽，成为了他走向毁灭的第一步。",
+          "duplicate_artifact_creates_reclassified": [
+            {
+              "artifact_id": "ART_309_S95_B_RW_TAPE",
+              "timeline_scope": "current",
+              "display_name": "《S95-B-RW废弃样带（含夹层录音）》",
+              "kind": "physical_evidence"
+            }
+          ]
+        },
+        {
+          "chapter_id": 318,
+          "timeline_start": "1997-12-16",
+          "timeline_end": "1997-12-16",
+          "scene": "临时取证实验室",
+          "chapter_goal": "麦珂团队在维克多试图再次清理现场时，当众播放样带夹层内的模拟录音，彻底曝光医疗造假。",
+          "chapter_title": "夹层的低语",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "艾琳",
+            "媒体代表",
+            "律师团"
+          ],
+          "opening_conflict": "维克多得知样带可能丢失，试图返回库房再次清理，却被麦珂团队拦下，被迫面对公开的录音证据。",
+          "info_gap_use": "麦珂利用前世记忆，知道维克多会在次日返回库房检查，提前准备好录音设备。",
+          "opponent_reaction": "维克多看到录音播放，脸色惨白，疯狂试图抢夺设备，但被安保人员制服。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "临时取证实验室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "录音机发出刺耳的电流声，随后传来维克多清晰的声音。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_309_S95_B_RW_TAPE",
+              "timeline_scope": "current",
+              "purpose": "播放夹层录音，揭露1995年医疗数据造假事实。"
+            }
+          ],
+          "action_sequence": [
+            "维克多得知样带可能丢失，匆忙返回库房，却被麦珂团队拦下。",
+            "麦珂当场播放S95-B-RW样带夹层内的录音，内容是维克多亲口指示篡改心电图基线。",
+            "维克多试图抢夺录音设备，被安保人员制服，陷入恐慌。",
+            "媒体代表记录现场，律师团整理证据，准备提交给行业自律委员会。"
+          ],
+          "visible_payoff": "维克多医疗造假计划彻底曝光，其本人陷入恐慌并开始疯狂清理但已无效。",
+          "ending": "维克多被制服，录音证据被公开，麦珂健康指标维持最优，医疗造假链条被彻底切断。",
+          "must_include": [
+            "录音播放",
+            "维克多的恐慌反应",
+            "媒体在场",
+            "法律程序启动"
+          ],
+          "must_not_include": [
+            "直接逮捕",
+            "刑事判决",
+            "康拉德出场"
+          ],
+          "detailed_synopsis": "次日午后，临时取证实验室内气氛凝重。维克多·兰斯得知样带可能丢失，神色慌张地试图返回库房再次清理，却被麦珂团队拦下。麦珂面无表情地示意艾琳播放S95-B-RW样带夹层内的录音。随着一阵刺耳的电流声，维克多清晰的声音响起：‘把1995年的心电图基线调高0.5毫伏，病人看起来会更健康……’全场哗然。维克多脸色瞬间惨白，疯狂地试图抢夺录音设备，却被安保人员牢牢制服。他歇斯底里地喊着‘这是假的’，但录音证据无可辩驳。媒体代表迅速记录下这一切，律师团开始整理证据，准备提交给行业自律委员会。麦珂站在一旁，目光平静，她知道，这一刻，前世死亡的链条已被彻底切断。她的健康指标连续四年无波动，生理状态达到了最佳。维克多的医疗造假计划彻底曝光，他陷入了前所未有的恐慌，疯狂地试图清理现场，但为时已晚。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC160",
+      "chapter_span": [
+        319,
+        320
+      ],
+      "source_event_direction": "前世具体受害：前世工坊少年身份被模糊处理，导致真相被埋没，历史记忆断层。；本事件独有的前世信息差：前世麦珂未主动引导公众关注1977年工坊少年，错失建立真实连接的机会。；今生提前动作：麦珂策划‘地图卡影像细节’专题，引导观众自行发现并追踪工坊少年现居地。；第319章可见小赢：1977年工坊少年正式成为公众焦点证人，接受多家媒体专访。；第320章新交锋：少年在镜头前展示1977年壁画手稿，背面是麦珂当年的亲笔批注。；阻力方永久现实损失：卡尔团队试图抹黑少年的言论因事实确凿而彻底失效，转入地下防守。；主角现实收益：建立基于‘真相档案’的深度职业联盟，完成从舆论反杀到物理取证闭环。；不可逆结算键：EC160_Witness_Public_Exposure_Finalized；接回死亡控制主线：通过唤醒历史证人，彻底终结对手利用信息差操控公众认知的能力。",
+      "source_event_direction_sha256": "d5fbed6aefc4ae15bdd9d205415a36b2cb16da0a5e5b13ed1066c05b4f3ff5dc",
+      "source_macro_sha256": "19aaee43c3ca4964385485b136596c7ded09d449d939a51b4cfce3260ce92f8b",
+      "name": "地图卡上的童年回响：少年证人与批注手稿",
+      "timeline_years": "1997—1998",
+      "main_opponent": "卡尔·斯特林（Karl Sterling）",
+      "opposition_type": "institutional",
+      "event_type": "fan_public_welfare",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS10"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "艾琳",
+        "瑟琳娜",
+        "卢卡斯·陈",
+        "卡尔·斯特林"
+      ],
+      "fictional_obstacle": "卡尔团队利用行业自律委员会的“暂停令”制造舆论真空，试图将1977年工坊少年的出现定义为“伪造记忆”和“隐私侵犯”，并计划通过切断物理连线（如声称少年已失踪或精神异常）来终结证人链。",
+      "prev_life_tragedy": "前世工坊少年身份被模糊处理，导致真相被埋没，历史记忆断层，麦珂未能建立与真实历史的连接，最终在维克多的信息差操控下失去对公众叙事的解释权。",
+      "info_gap_from_prev_life": "前世麦珂未主动引导公众关注1977年工坊少年，错失建立真实连接的机会；今生提前策划‘地图卡影像细节’专题，精准锁定少年现居地。",
+      "why_previous_life_failed": "因缺乏具体物证（壁画手稿）和证人主动配合，仅靠口述无法对抗机构化的谎言，导致真相被无限期搁置。",
+      "preemptive_avoidance": "麦珂利用前世记忆，在《午夜星轨》特别季播出前，通过非公开渠道向卢卡斯提供1977年工坊的原始坐标图，并引导其携带当年的实物证据（壁画手稿）接受媒体采访，同时安排艾琳团队在物理层面隔离卡尔团队的干扰。",
+      "bait_and_evidence": " bait: 卡尔团队散布谣言称少年是“被雇佣的演员”，意图诱导少年在镜头前情绪失控以坐实“精神不稳定”指控。 evidence: 卢卡斯展示的1977年壁画手稿背面，有麦珂当年用铅笔写下的亲笔批注，字迹与1977年麦珂的日记笔迹完全一致，且包含只有当时在场者才知道的细节（如工坊墙角的霉斑形状）。",
+      "comic_villain_behavior": "卡尔·斯特林在新闻发布会现场，为了证明少年是“伪造”，竟当场拿出自己伪造的“少年出生证明复印件”试图当众烧毁，结果因纸张受潮粘在桌面上，且被艾琳团队早已准备好的高清扫描件投影在大屏幕上，形成“越描越黑”的滑稽场面。",
+      "villain_loss": "卡尔团队试图抹黑少年的言论因事实确凿而彻底失效，转入地下防守；其公信力彻底崩塌，行业永久除名；维拉德图书撤回所有版权主张，维克多失去对麦珂叙事的单方面解释权。",
+      "protagonist_gain": "建立基于‘真相档案’的深度职业联盟，完成从舆论反杀到物理取证闭环；《静默增益》销量突破九十八万张，地图卡激活率91.3%；四十三处工坊实现自主盈亏平衡。",
+      "relationship_change": "麦珂与艾琳建立基于‘真相档案’的深度职业联盟；麦珂与瑟琳娜完成家庭权力结构的制度化重构；维克多与麦珂进入敌对取证阶段。",
+      "continuity_writes": [
+        "卢卡斯·陈（Lucas Chen）正式成为公众焦点证人，接受多家媒体专访，其身份从“模糊的历史背景板”转变为“真实历史的守护者”。",
+        "麦珂的1977年批注手稿被确认为核心物证，彻底粉碎了对手关于“记忆虚构”的指控。",
+        "卡尔团队的公关策略因过度依赖虚假文件而破产，被迫转入地下活动。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_017:witness_availability",
+          "state_key": "witness_exposure__EC160",
+          "from": "hidden_manipulation",
+          "to": "publicly_verified_witness",
+          "irreversible": true,
+          "evidence": "ART_310_LUCAS_WALL_DRAFT_WITH_ANNOTATION",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_B6BBF0D9B359",
+          "state_key": "opposition_loss_EC160",
+          "from": "active",
+          "to": "public_credibility_broken_and_underground",
+          "irreversible": true,
+          "evidence": "KARL_STERLING_FORGED_DOCUMENTS_EXPOSED_ON_STAGE",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_MCKE_AIRLINE_001",
+          "state_key": "alliance_deepening__EC160",
+          "from": "professional_cooperation",
+          "to": "deep_professional_alliance_on_truth",
+          "irreversible": true,
+          "evidence": "TRUTH_ARCHIVE_FORMALIZATION_PROTOCOL",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": [
+        "ART_307_WORKSHOP_WALL_PHOTO",
+        "ART_310_LUCAS_WALL_DRAFT_WITH_ANNOTATION"
+      ],
+      "cluster_outcome": "1977年工坊少年卢卡斯·陈正式成为公众焦点证人，接受多家媒体专访。他在镜头前展示1977年壁画手稿，背面是麦珂当年的亲笔批注，彻底粉碎了卡尔团队的伪造叙事。卡尔团队因公信力彻底崩塌被行业永久除名，转入地下防守；维克多·兰斯陷入恐慌，开始疯狂清理所有物理介质但已漏掉关键样本；麦珂与艾琳建立基于‘真相档案’的深度职业联盟；麦珂与瑟琳娜完成家庭权力结构的制度化重构。",
+      "next_event_hook": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 319,
+          "timeline_start": "1997-12-16",
+          "timeline_end": "1997-12-16",
+          "scene": "河湾镇法院外广场",
+          "chapter_goal": "利用‘地图卡影像细节’专题，引导公众自行发现并追踪工坊少年现居地，使其正式成为公众焦点证人，接受多家媒体专访。",
+          "chapter_title": "地图卡里的童年回响",
+          "participants": [
+            "麦珂",
+            "艾琳",
+            "瑟琳娜",
+            "卢卡斯·陈",
+            "卡尔·斯特林",
+            "媒体记者团"
+          ],
+          "opening_conflict": "卡尔团队试图利用行业自律委员会的“暂停令”制造舆论真空，散布谣言称卢卡斯是“被雇佣的演员”，意图诱导其在镜头前情绪失控。",
+          "info_gap_use": "麦珂利用前世记忆，提前知晓卢卡斯藏身于河湾镇旧邮局仓库，并引导观众通过《静默增益》地图卡上的特殊标记（1977年工坊位置）自行发现线索。",
+          "opponent_reaction": "卡尔·斯特林在发布会现场紧急召开发布会指责麦珂泄露隐私，却被现场观众拿出法庭录像反驳，随后又试图煽动人群驱赶卢卡斯。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇法院外广场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "摄像机镜头聚焦于麦珂手中的地图卡特写，画面切换至卢卡斯从旧邮局走出。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_310_LUCAS_WALL_DRAFT_WITH_ANNOTATION",
+              "timeline_scope": "current",
+              "display_name": "《1977年工坊少年壁画手稿（含麦珂批注）》",
+              "kind": "visual_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂在发布会上展示《静默增益》地图卡的特殊视角，引导观众发现1977年工坊的精确坐标。",
+            "卢卡斯·陈在艾琳的陪同下现身，面对媒体的长枪短炮，他平静地讲述自己在工坊的经历。",
+            "卡尔团队试图打断发言，被现场观众高呼“我们要听真话”的声音淹没。",
+            "卢卡斯从怀中取出珍藏多年的壁画手稿，展示给镜头。"
+          ],
+          "visible_payoff": "卢卡斯·陈正式成为公众焦点证人，接受多家媒体专访，其身份从“模糊的历史背景板”转变为“真实历史的守护者”。",
+          "ending": "卡尔团队的第一轮抹黑攻势失败，舆论风向彻底逆转，公众开始质疑卡尔团队的动机。",
+          "must_include": [
+            "地图卡影像细节引导",
+            "卢卡斯现身",
+            "媒体专访开始",
+            "卡尔团队首次反击失败"
+          ],
+          "must_not_include": [
+            "维克多直接出场",
+            "医疗造假证据公开播放",
+            "康拉德相关情节"
+          ],
+          "detailed_synopsis": "1997年11月17日下午，河湾镇法院外广场上，麦珂站在临时搭建的讲台后，手中举着一张巨大的《静默增益》地图卡。她向在场的数百名记者和围观群众解释，这张地图卡上隐藏的时空坐标，正是通往1977年工坊的钥匙。随着她的指引，一名身穿旧式工装、面容沧桑的青年——卢卡斯·陈，缓缓从旧邮局的阴影中走出。他是那个传说中的“工坊少年”。卡尔·斯特林见状，立刻冲上前去，指责麦珂泄露隐私，声称卢卡斯是被雇佣的演员。然而，现场观众却纷纷举起手机和相机，记录下卢卡斯平静的面容。艾琳适时递上一份文件，那是麦珂提前准备好的、证明卢卡斯身份的法庭录像副本。卢卡斯接过话筒，声音虽有些颤抖，却字字清晰：“我在那里待过，我知道每一块砖的温度。”卡尔团队试图煽动人群驱赶卢卡斯，但被愤怒的民众挡了回来。这一刻，舆论的天平彻底倾斜。",
+          "source_timeline_start": "1997年11月17日 下午",
+          "source_timeline_end": "1997年11月17日 傍晚",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_307_WORKSHOP_WALL_PHOTO",
+              "timeline_scope": "previous_life",
+              "purpose": "对比验证壁画内容与历史照片的一致性。"
+            }
+          ]
+        },
+        {
+          "chapter_id": 320,
+          "timeline_start": "1997-12-16",
+          "timeline_end": "1997-12-16",
+          "scene": "临时新闻中心",
+          "chapter_goal": "卢卡斯在镜头前展示1977年壁画手稿，背面是麦珂当年的亲笔批注，彻底粉碎卡尔团队的伪造叙事，确立麦珂对家庭教育的绝对主导权。",
+          "chapter_title": "批注中的真相",
+          "participants": [
+            "麦珂",
+            "艾琳",
+            "瑟琳娜",
+            "卢卡斯·陈",
+            "卡尔·斯特林",
+            "媒体记者团"
+          ],
+          "opening_conflict": "卡尔团队试图通过伪造文件证明卢卡斯是“精神失常”的演员，并计划在直播中切断信号。",
+          "info_gap_use": "麦珂利用前世记忆，提前让卢卡斯准备好手稿背面的批注，这是只有当年在场者才知道的细节。",
+          "opponent_reaction": "卡尔·斯特林在直播中拿出伪造的“出生证明复印件”试图当众烧毁，结果因纸张受潮粘在桌面上，且被艾琳团队早已准备好的高清扫描件投影在大屏幕上。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "临时新闻中心",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "镜头拉近，聚焦在手稿背面的铅笔字迹上。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_310_LUCAS_WALL_DRAFT_WITH_ANNOTATION",
+              "timeline_scope": "current",
+              "purpose": "作为核心物证，展示麦珂当年的亲笔批注。"
+            }
+          ],
+          "action_sequence": [
+            "卢卡斯在镜头前展开壁画手稿，展示背面的铅笔批注。",
+            "麦珂的笔迹清晰可见，内容涉及工坊墙角霉斑的形状和当天的天气细节，与历史记录完全吻合。",
+            "卡尔·斯特林惊慌失措，试图拿出伪造的“出生证明复印件”当众烧毁，结果纸张受潮粘在桌面上。",
+            "艾琳团队迅速将伪造文件的扫描件投影到大屏幕上，与原件进行对比，揭露其伪造痕迹。",
+            "卡尔团队在众目睽睽之下颜面扫地，被迫宣布暂时休会。"
+          ],
+          "visible_payoff": "卢卡斯在镜头前展示1977年壁画手稿，背面是麦珂当年的亲笔批注，彻底粉碎了卡尔团队的伪造叙事。",
+          "ending": "卡尔团队因公信力彻底崩塌被行业永久除名，转入地下防守；维克多·兰斯陷入恐慌，开始疯狂清理所有物理介质但已漏掉关键样本。",
+          "must_include": [
+            "手稿背面批注展示",
+            "卡尔伪造文件曝光",
+            "卡尔团队颜面扫地",
+            "麦珂确立主导权"
+          ],
+          "must_not_include": [
+            "维克多直接攻击",
+            "医疗造假证据公开播放",
+            "康拉德相关情节"
+          ],
+          "detailed_synopsis": "卡尔团队试图通过伪造文件证明卢卡斯是“精神失常”的演员，并计划在直播中切断信号。卢卡斯在镜头前展开壁画手稿，展示背面的铅笔批注。麦珂的笔迹清晰可见，内容涉及工坊墙角霉斑的形状和当天的天气细节，与历史记录完全吻合。卡尔·斯特林惊慌失措，试图拿出伪造的“出生证明复印件”当众烧毁，结果纸张受潮粘在桌面上。艾琳团队迅速将伪造文件的扫描件投影到大屏幕上，与原件进行对比，揭露其伪造痕迹。卢卡斯在镜头前展示1977年壁画手稿，背面是麦珂当年的亲笔批注，彻底粉碎了卡尔团队的伪造叙事。卡尔团队因公信力彻底崩塌被行业永久除名，转入地下防守；维克多·兰斯陷入恐慌，开始疯狂清理所有物理介质但已漏掉关键样本。",
+          "source_timeline_start": "1997年11月17日 傍晚",
+          "source_timeline_end": "1997年11月17日 深夜",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_309_S95_B_RW_TAPE",
+              "timeline_scope": "previous_life",
+              "purpose": "暗示后续医疗造假证据的关联，但不在此章公开。"
+            }
+          ]
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "艾琳",
+        "瑟琳娜",
+        "卢卡斯·陈（1977年工坊少年/现居者）",
+        "卡尔·斯特林"
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {
+        "entity": "卢卡斯·陈",
+        "state": "从模糊的历史背景板转变为公众焦点证人，身份得到官方和公众双重认可。"
+      },
+      {
+        "entity": "卡尔·斯特林",
+        "state": "公信力彻底崩塌，被迫转入地下防守，行业永久除名。"
+      },
+      {
+        "entity": "维克多·兰斯",
+        "state": "陷入恐慌，开始疯狂清理所有物理介质，但已漏掉关键样本。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entities": [
+          "麦珂",
+          "艾琳"
+        ],
+        "state": "建立基于‘真相档案’的深度职业联盟。"
+      },
+      {
+        "entities": [
+          "麦珂",
+          "瑟琳娜"
+        ],
+        "state": "完成家庭权力结构的制度化重构。"
+      },
+      {
+        "entities": [
+          "维克多",
+          "麦珂"
+        ],
+        "state": "进入敌对取证阶段。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset": "《静默增益》版权主导权",
+        "status": "完全收回"
+      },
+      {
+        "asset": "《静默增益》销量",
+        "status": "突破九十八万张"
+      },
+      {
+        "asset": "地图卡激活率",
+        "status": "91.3%"
+      },
+      {
+        "asset": "工坊运营",
+        "status": "四十三处工坊实现自主盈亏平衡"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity": "麦珂",
+        "status": "体重、血压、肺活量三项连续四年无波动，维持生理最佳状态。"
+      }
+    ],
+    "open_threads": [
+      "S95-B-RW录音证据如何转化为法律层面的指控",
+      "医疗模型造假对世纪转换期公众健康的潜在危害",
+      "维克多的‘全介质抹除计划’将如何升级"
+    ],
+    "resolved_threads": [
+      "1977年工坊少年身份确认及公开作证",
+      "卡尔团队伪造授权书叙事的彻底粉碎"
+    ],
+    "introduced_characters": [
+      "卢卡斯·陈（1977年工坊少年/现居者）"
+    ],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。"
+  }
+}

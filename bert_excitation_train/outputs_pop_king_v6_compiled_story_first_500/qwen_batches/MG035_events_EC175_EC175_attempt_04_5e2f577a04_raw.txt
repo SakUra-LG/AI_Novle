@@ -1,0 +1,192 @@
+{
+  "macro_group_id": "MG035",
+  "event_clusters": [
+    {
+      "cluster_id": "EC175",
+      "chapter_span": [349, 350],
+      "source_event_direction": "{\"cluster_id\": \"EC175\", \"chapter_span\": [349, 350], \"opposition_type\": \"villain\", \"event_type\": \"contract_rights\", \"solution_type\": \"public_confrontation\", \"death_chain_role\": \"pressure\"}",
+      "source_event_direction_sha256": "a8f3c9e2b1d4f5a6c7e8d9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0",
+      "source_macro_sha256": "b9e4d0f3c2a1b5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0",
+      "name": "废弃样带与医疗黑幕的初现",
+      "timeline_years": "1997",
+      "main_opponent": "维克多·斯特林（虚构替身，原医疗线旧版角色的时间线修正版）",
+      "opposition_type": "villain",
+      "event_type": "contract_rights",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["SPINE_MED_1995_ECG_FRAUD"],
+      "foreshadow_ids": ["FORESHADOW_S95_B_RW_CLUE"],
+      "main_characters": ["麦珂", "艾琳", "维克多·斯特林", "玛莎"],
+      "fictional_obstacle": "维克多·斯特林在发现S95-B-RW样带丢失后，启动疯狂的“全介质抹除计划”，试图在世纪之交前销毁所有原始录音与胶片，并嫁祸给麦珂团队窃取证据。",
+      "prev_life_tragedy": "前世卡尔销毁胶片时遗漏'S95-B-RW'样带，成为后世医疗造假的伏笔；原医疗线旧版角色因时间线错误被移除，由维克多·斯特林承接其作为医疗集团幕后推手的角色。",
+      "info_gap_from_prev_life": "重生知晓该废弃样带夹层藏有维克多篡改心电图的录音线索，且知道斯特林会在第349章深夜潜入仓库销毁其他无关底片以掩盖丢失事实。",
+      "why_previous_life_failed": "前世主角未察觉样带夹层秘密，导致医疗造假线索永久流失，直到千禧年后才被动揭露。",
+      "preemptive_avoidance": "麦珂暗中截获废弃样带，并安排专人进行无损数字备份，提前将关键证据转移至安全地点。",
+      "bait_and_evidence": "斯特林故意散布“样带被盗”谣言，诱使麦珂团队现身；麦珂则利用备份数据，准备在记者会上展示夹层录音，直接指向医疗造假核心。",
+      "comic_villain_behavior": "斯特林在慌乱中试图用打火机烧毁无关底片，却因操作失误点燃了自己的西装袖口，狼狈不堪地跳入消防池，被现场记者拍下滑稽画面。",
+      "villain_loss": "斯特林面临联邦调查局的初步问询，声誉彻底扫地无法翻身，且失去对医疗模型数据的控制权。",
+      "protagonist_gain": "麦珂持有1979年法庭录像带独家副本及医疗造假线索，确立从文化战场转向医疗黑幕斗争的主动权。",
+      "relationship_change": "麦珂与艾琳的技术信任升级；麦珂与社区工坊建立直接利益共享机制；麦珂与瑟琳娜达成深度信任。",
+      "continuity_writes": ["原医疗线旧版角色已移除，由维克多·斯特林替代其作为医疗集团幕后推手角色；S95-B-RW样带中的医疗录音将成为P08揭露千禧年医疗模型造假的核心物证。"],
+      "state_transitions": [
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_TAPE_S95_BRW",
+          "state_key": "tape_in_protagonist_hand_EC175",
+          "from": "missing_or_destroyed",
+          "to": "securely_copied_and_analyzed",
+          "irreversible": true,
+          "evidence": "DIGITAL_BACKUP_LOG_S95_BRW + CLAY_RECORDING_EXTRACTED",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "STRLIN_GROUP",
+          "state_key": "investigation_initiated_EC175",
+          "from": "industry_powerbroker",
+          "to": "under_federal_inquiry",
+          "irreversible": true,
+          "evidence": "PRESS_CONFERENCEREPORT_STRLIN_DISASTER + FBI_INQUIRY_NOTICE",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MED_FRAUD_001",
+          "state_key": "fraud_clue_secured_EC175",
+          "from": "hidden_or_lost",
+          "to": "proven_and_publicized",
+          "irreversible": true,
+          "evidence": "ECG_FRAUD_AUDIO_PLAYBACK + LEGAL_WITNESS_TESTIMONY",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_ANCHOR_1995_ECG_MANIPULATION"],
+      "cluster_outcome": "S95-B-RW样带落入主角手，斯特林因销毁证据失败而面临联邦调查，医疗造假线索正式浮出水面，为下一阶段正面硬刚埋下伏笔。",
+      "next_event_hook": "S95-B-RW样带中的医疗录音将成为P08揭露千禧年医疗模型造假的核心物证，迫使麦珂从文化战场转向医疗黑幕的正面硬刚。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 349,
+          "timeline_start": "1997-08-21 22:00",
+          "timeline_end": "1997-08-22 02:00",
+          "scene": "维拉德图书地下档案库",
+          "chapter_goal": "麦珂团队抢先一步截获废弃样带，斯特林因恐慌开始疯狂销毁无关底片。",
+          "chapter_title": "午夜档案库的追逐",
+          "participants": ["麦珂", "艾琳", "斯特林", "两名安保人员"],
+          "opening_conflict": "斯特林得知样带丢失，决定连夜销毁所有可能关联的底片，包括无关紧要的废弃胶片。",
+          "info_gap_use": "麦珂利用重生记忆，预判斯特林的行动路线，提前埋伏在档案库出口。",
+          "opponent_reaction": "斯特林发现样带不见，惊慌失措，命令安保人员烧毁所有非核心底片，甚至误伤自己。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "维拉德图书地下档案库",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "手电筒光束扫过堆积如山的胶片盒"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_349_TAPE_BACKUP",
+              "timeline_scope": "current",
+              "display_name": "《S95-B-RW样带无损备份盘》",
+              "kind": "technical_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_328_LAB_WAVEFORM_LOG",
+              "timeline_scope": "current",
+              "purpose": "比对波形确认样带真实性"
+            }
+          ],
+          "action_sequence": [
+            "麦珂与艾琳潜入档案库，发现斯特林正在焚烧无关底片。",
+            "艾琳利用便携式设备快速扫描并备份S95-B-RW样带。",
+            "斯特林发现麦珂，试图抢夺样带，但被安保人员制服。",
+            "斯特林在混乱中点燃自己的西装，狼狈跳入消防池。"
+          ],
+          "visible_payoff": "样带成功备份，斯特林陷入混乱，现场记者拍摄到其狼狈模样。",
+          "ending": "麦珂带着备份盘离开，斯特林被警方初步控制，但尚未正式立案。",
+          "must_include": ["斯特林烧毁无关底片的滑稽行为", "样带备份完成瞬间"],
+          "must_not_include": ["联邦调查局正式逮捕", "医疗造假细节公开"],
+          "detailed_synopsis": "1997年8月21日深夜，维拉德图书地下档案库内，维克多·斯特林因发现S95-B-RW样带丢失，命令手下疯狂销毁无关底片，试图掩盖真相。他一边挥舞着打火机，一边大喊“全部烧掉！”，结果不慎引燃自己的西装袖口，狼狈地跳进旁边的消防池，被赶来的记者拍下滑稽画面。与此同时，麦珂与艾琳早已埋伏在此，利用重生记忆预判了斯特林的行动路线。艾琳迅速启动便携式备份设备，将S95-B-RW样带中的原始数据完整复制到专用存储盘中。斯特林试图抢夺样带，却被安保人员当场制服。麦珂冷静地记录下现场情况，带着备份盘悄然离开，留下斯特林在消防池中瑟瑟发抖。"
+        },
+        {
+          "chapter_id": 350,
+          "timeline_start": "1997-08-22 09:00",
+          "timeline_end": "1997-08-22 14:00",
+          "scene": "媒体中心临时发布会现场",
+          "chapter_goal": "麦珂在记者会上展示样带备份，暗示背后更大的医疗黑幕，迫使斯特林团队陷入被动。",
+          "chapter_title": "夹层里的真相",
+          "participants": ["麦珂", "斯特林", "记者团", "玛莎", "艾琳"],
+          "opening_conflict": "斯特林试图否认样带丢失，并指责麦珂窃取证据，但麦珂直接播放夹层录音。",
+          "info_gap_use": "麦珂利用重生记忆，精准定位夹层录音内容，直接揭露维克多篡改心电图的事实。",
+          "opponent_reaction": "斯特林在录音播放后脸色惨白，试图辩解但被记者追问得哑口无言。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "媒体中心临时发布会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "投影幕布亮起，播放夹层录音"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_349_TAPE_BACKUP",
+              "timeline_scope": "current",
+              "purpose": "播放夹层录音，揭露医疗造假"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在发布会上展示S95-B-RW样带备份，并播放夹层录音。",
+            "录音清晰揭露维克多·斯特林在1995年篡改心电图数据的罪行。",
+            "斯特林试图辩解，但被记者团团围住，质问不断。",
+            "联邦调查局代表到场，宣布对斯特林团队展开初步调查。"
+          ],
+          "visible_payoff": "医疗造假线索公开，斯特林团队信誉崩塌，联邦调查介入。",
+          "ending": "麦珂宣布将公开更多证据，斯特林团队陷入全面危机。",
+          "must_include": ["夹层录音播放", "联邦调查局代表到场"],
+          "must_not_include": ["斯特林正式被捕", "医疗模型完全曝光"],
+          "detailed_synopsis": "1997年8月22日上午，媒体中心临时发布会现场人声鼎沸。麦珂站在台前，身后的大屏幕突然亮起，播放起S95-B-RW样带夹层中的录音。录音清晰地揭露了维克多·斯特林在1995年篡改心电图数据的罪行，声音颤抖却字字诛心。斯特林脸色惨白，试图辩解称这是伪造，但记者们纷纷举起话筒，质问声此起彼伏。麦珂冷静地补充道：“这只是冰山一角，我们还有更多证据。”此时，联邦调查局代表步入会场，宣布对斯特林团队展开初步调查。斯特林在众目睽睽之下瘫坐在地，他的团队瞬间陷入全面危机。麦珂微笑着看向镜头，宣告这场从文化战场转向医疗黑幕的斗争正式拉开序幕。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {"character": "麦珂", "state": "掌握S95-B-RW样带独家副本及医疗造假线索，精神状态最佳"},
+      {"character": "维克多·斯特林", "state": "面临联邦调查，声誉扫地，无法翻身"},
+      {"character": "艾琳", "state": "技术信任升级，主导样带备份工作"},
+      {"character": "玛莎", "state": "作为法律证人支持麦珂"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂-艾琳", "change": "技术信任绝对化"},
+      {"pair": "麦珂-社区工坊", "change": "建立直接利益共享机制"},
+      {"pair": "麦珂-瑟琳娜", "change": "达成深度信任"}
+    ],
+    "rights_and_assets": [
+      {"entity": "S95-B-RW样带", "status": "已备份，落入主角手"},
+      {"entity": "医疗造假线索", "status": "已公开，联邦调查介入"},
+      {"entity": "四十三处工坊", "status": "资金流自主，收益注入社区基金"}
+    ],
+    "health_and_location": [
+      {"character": "麦珂", "health": "最佳精神状态，无过度劳累"},
+      {"location": "媒体中心", "status": "发布会结束，斯特林团队陷入危机"}
+    ],
+    "open_threads": [
+      "维克多的‘全介质抹除计划’即将启动",
+      "S95-B-RW样带中的医疗模型造假线索待挖掘"
+    ],
+    "resolved_threads": [
+      "S95-B-RW样带落入主角手",
+      "斯特林团队面临联邦调查"
+    ],
+    "introduced_characters": [
+      "维克多·斯特林（虚构替身，原医疗线旧版角色的时间线修正版）"
+    ],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。"
+  }
+}

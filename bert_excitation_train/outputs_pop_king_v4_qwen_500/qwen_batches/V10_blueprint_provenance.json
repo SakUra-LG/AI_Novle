@@ -1,0 +1,119 @@
+{
+  "generated_by": "qwen",
+  "kind": "blueprint",
+  "identifier": "V10",
+  "accepted_attempt": "04",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-04T16:38:58+08:00",
+      "prompt_sha256": "bb3a45baa445f868f6e559bd969aeb8e74775bfe84c74d0cfd4b0d5212fba87c",
+      "raw_response_sha256": "2136151b173097d9a4dc3b672471540fd309203d2243312bab8f4ce7a28cc9d8",
+      "raw_response_file": "V10_blueprint_attempt_01_raw.txt",
+      "validation_failures": [
+        "MG046第1个方向cluster_id必须为EC226",
+        "MG046第2个方向cluster_id必须为EC227",
+        "MG046第3个方向cluster_id必须为EC228",
+        "MG046第4个方向cluster_id必须为EC229",
+        "MG046第5个方向cluster_id必须为EC230",
+        "MG047第1个方向cluster_id必须为EC231",
+        "MG047第2个方向cluster_id必须为EC232",
+        "MG047第3个方向cluster_id必须为EC233",
+        "MG047第4个方向cluster_id必须为EC234",
+        "MG047第5个方向cluster_id必须为EC235",
+        "MG048第1个方向cluster_id必须为EC236",
+        "MG048第2个方向cluster_id必须为EC237",
+        "MG048第3个方向cluster_id必须为EC238",
+        "MG048第4个方向cluster_id必须为EC239",
+        "MG048第5个方向cluster_id必须为EC240",
+        "MG049第1个方向cluster_id必须为EC241",
+        "MG049第2个方向cluster_id必须为EC242",
+        "MG049第3个方向cluster_id必须为EC243",
+        "MG049第4个方向cluster_id必须为EC244",
+        "MG049第5个方向cluster_id必须为EC245",
+        "MG050第1个方向cluster_id必须为EC246",
+        "MG050第2个方向cluster_id必须为EC247",
+        "MG050第3个方向cluster_id必须为EC248",
+        "MG050第4个方向cluster_id必须为EC249",
+        "MG050第5个方向cluster_id必须为EC250",
+        "第十卷必须规划纪念直播审判终局"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 21.285,
+      "usage": {
+        "input_tokens": 2661,
+        "output_tokens": 2576,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 5237
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-04T16:39:18+08:00",
+      "prompt_sha256": "02f6e3bd9cc07caba07adb135b6cf35f2e33bb9bb6bd1723c95b84890913fee7",
+      "raw_response_sha256": "81138704119f8d154f174d6fa9ffd7caa629c107146c8914719cf0c3c08cffc5",
+      "raw_response_file": "V10_blueprint_attempt_02_raw.txt",
+      "validation_failures": [
+        "第十卷必须规划纪念直播审判终局"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 20.773,
+      "usage": {
+        "input_tokens": 5482,
+        "output_tokens": 2526,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 8008
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-04T16:39:40+08:00",
+      "prompt_sha256": "85f3dfd3653940fc28cc47c14a53e0356e83d86db675c616d3005859cc33dacf",
+      "raw_response_sha256": "81138704119f8d154f174d6fa9ffd7caa629c107146c8914719cf0c3c08cffc5",
+      "raw_response_file": "V10_blueprint_attempt_03_raw.txt",
+      "validation_failures": [
+        "第十卷必须规划纪念直播审判终局"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 21.209,
+      "usage": {
+        "input_tokens": 5228,
+        "output_tokens": 2526,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "total_tokens": 7754
+      }
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-04T16:40:01+08:00",
+      "prompt_sha256": "85f3dfd3653940fc28cc47c14a53e0356e83d86db675c616d3005859cc33dacf",
+      "raw_response_sha256": "81138704119f8d154f174d6fa9ffd7caa629c107146c8914719cf0c3c08cffc5",
+      "raw_response_file": "V10_blueprint_attempt_04_raw.txt",
+      "validation_failures": [
+        "第十卷必须规划纪念直播审判终局"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 21.365,
+      "usage": {
+        "input_tokens": 5228,
+        "output_tokens": 2526,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 7754
+      }
+    }
+  ]
+}

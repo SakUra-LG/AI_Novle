@@ -1,0 +1,215 @@
+{
+  "macro_group_id": "MG037",
+  "event_clusters": [
+    {
+      "cluster_id": "EC183",
+      "chapter_span": [365, 366],
+      "source_event_direction": "{\"main_conflict\": \"维克多·兰斯试图通过‘双轨制’诱导签署，巴里·布鲁姆制造系统危机假象；麦珂利用2001年冬虚假维修测试记忆，揭露电子授权无物理备份缺陷。\", \"ending_state\": \"维克多策略转为隐蔽渗透，巴里失去信任，棱镜协议二期完成，铭牌手写短语公证。\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "铭牌誓言与物理锚点",
+      "timeline_years": "2001—2002",
+      "main_opponent": "维克多·兰斯（幕后）/ 巴里·布鲁姆（执行者）",
+      "opposition_type": "institutional",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["CS_EC182_PREMISE", "CS_MEDICAL_DATA_INTEGRITY"],
+      "foreshadow_ids": ["FS_FINGERPRINT_TAPE_1999", "FS_BARRY_CAREER_SUSPENSION"],
+      "main_characters": ["麦珂", "莉薇娅", "苏菲亚", "巴里·布鲁姆", "维克多·兰斯"],
+      "fictional_obstacle": "奥瑞恩集团强制推行‘云端即时认证’系统，声称纸质铭牌已失效，要求用电子签名覆盖手写记录以规避责任；巴里·布鲁姆手持伪造的‘紧急维修授权书’，威胁若不立即数字化将触发巨额违约金并冻结急救站运营。",
+      "prev_life_tragedy": "前世2003年验收时，因未坚持手写验证，急救站铭牌数据被维克多远程篡改，导致关键急救指令延误，造成三名儿童死亡。",
+      "info_gap_from_prev_life": "麦珂清晰记得2001年冬季维克多团队曾进行‘虚假紧急维修’测试，当时发现传真机常遗漏附件且电子签名可被远程批量篡改，而纸质墨迹具有不可逆的物理特性。",
+      "why_previous_life_failed": "前世轻信了‘自动化续约’带来的效率承诺，忽视了电子数据的易篡改性，未建立物理介质优先的法律防御机制。",
+      "preemptive_avoidance": "麦珂提前指令苏菲亚切断所有场馆与远程档案库的实时连接，强制要求十八座场馆急救站铭牌必须由莉薇娅亲笔书写特定验证短语，并全程录像存档。",
+      "bait_and_evidence": "维克多诱使巴里在众目睽睽下展示‘系统合规性报告’，实则利用该报告掩盖其无法提供物理备份的致命漏洞；麦珂当场指出该报告缺乏墨迹扫描比对，引用2001年测试案例证明电子签名可被黑客批量生成。",
+      "comic_villain_behavior": "巴里·布鲁姆在众目睽睽下试图用备用打印机现场伪造一份‘带墨迹’的授权书来圆谎，却因墨水配方错误（使用了过期的蓝色碳素墨水而非标准的黑色 archival ink），导致墨迹在强光下呈现不自然的荧光反应，且字体间距与标准文档完全不符，引发全场哄笑。",
+      "villain_loss": "维克多失去通过数据污染手段控制场馆安全评估的渠道，被迫转为隐蔽渗透；巴里·布鲁姆因伪造证据行为被行业自律委员会暂停从业资格两年，彻底失去奥瑞恩集团信任。",
+      "protagonist_gain": "'棱镜协议'二期加固完成，物理介质优先原则成为行业铁律；十八座场馆铭牌手写短语完成公证，形成不可篡改的视觉符号链。",
+      "relationship_change": "莉薇娅对麦珂的信任达到顶峰，主动成为家族资产防御的核心法律顾问；苏菲亚进一步巩固了其在审计链中的执行者地位，两人共同确立了‘手写即法律’的新范式。",
+      "continuity_writes": [
+        "2001年冬虚假维修测试日志被重新调取作为旁证",
+        "十八座场馆急救站铭牌实物照片及墨迹光谱分析报告归档"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_018_GUARDIANSHIP_STATUS",
+          "state_key": "physical_signature_verified",
+          "from": "remote_archived_vulnerable",
+          "to": "offline_physical_verified",
+          "irreversible": true,
+          "evidence": "LIVIA_HANDWRITING_NOTARY_CERT",
+          "effect_type": "protagonist_gain",
+          "source_domain": "asset_control"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "TRUST_BARRY_BLOOM",
+          "state_key": "forgery_exposed_publicly",
+          "from": "trusted_compliance_officer",
+          "to": "suspended_investigation_subject",
+          "irreversible": true,
+          "evidence": "BARRY_INK_FORGERY_EXPOSED",
+          "effect_type": "villain_loss",
+          "source_domain": "professional_reputation"
+        }
+      ],
+      "historical_anchor_ids": ["HA_2001_WINTER_TEST_LOG", "HA_PRISM_PROTOCOL_PHASE2"],
+      "cluster_outcome": "麦珂家族成功粉碎‘合规性危机’假象，将‘物理介质优先原则’写入法律文本，维克多团队被迫放弃公开对抗，转入地下数据污染计划。",
+      "next_event_hook": "一枚1999年除夕夜社区礼堂活动磁带外壳上出现半枚油渍指纹，经比对与巴里入职体检指纹卡吻合，触发‘时间褶皱’档案二期调查。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 365,
+          "timeline_start": "2001年12月15日 上午09:00",
+          "timeline_end": "2001年12月15日 中午12:00",
+          "scene": "第十八号场馆急救站大厅",
+          "chapter_goal": "莉薇娅完成十八座场馆铭牌的手写验证，确立物理介质的法律效力。",
+          "chapter_title": "墨迹下的誓言",
+          "participants": ["麦珂", "莉薇娅", "苏菲亚", "巴里·布鲁姆", "奥瑞恩集团审计员"],
+          "opening_conflict": "巴里·布鲁姆手持伪造的‘系统合规性报告’，威胁若不在一小时内完成电子签名切换，将触发巨额违约金并冻结急救站运营。",
+          "info_gap_use": "麦珂引用2001年冬季‘虚假紧急维修’测试记忆，指出电子签名可被远程批量篡改，而纸质墨迹具有不可逆的物理特性。",
+          "opponent_reaction": "巴里试图用备用打印机现场伪造一份‘带墨迹’的授权书来圆谎，却因墨水配方错误导致墨迹在强光下呈现不自然的荧光反应。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "第十八号场馆急救站大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里展示伪造报告，麦珂打断并指出逻辑漏洞"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_365_LIVIA_SIGNATURE_LOG",
+              "timeline_scope": "current",
+              "display_name": "《十八座场馆铭牌手写验证实录》",
+              "kind": "legal_certificate"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_355_INDEPENDENT_CREATION_LOG",
+              "timeline_scope": "previous_life",
+              "purpose": "对比2001年测试日志中的系统漏洞"
+            }
+          ],
+          "action_sequence": [
+            "麦珂当众播放2001年冬季测试录像，展示电子签名被篡改的过程。",
+            "莉薇娅在十八座场馆急救站铭牌空白处亲笔写下‘脉搏可查，权限不代’。",
+            "苏菲亚指挥现场技术人员对墨迹进行实时扫描和光谱分析。",
+            "巴里试图强行推进电子签名流程，被审计员以‘无物理锚点’为由驳回。"
+          ],
+          "visible_payoff": "十八座场馆铭牌手写短语完成公证，形成不可篡改的视觉符号链。",
+          "ending": "莉薇娅完成最后一处铭牌书写，全场掌声雷动，巴里面色惨白。",
+          "must_include": ["墨迹光谱分析过程", "‘脉搏可查，权限不代’短语书写", "巴里伪造墨水荧光反应细节"],
+          "must_not_include": ["任何未来技术词汇如二维码、云端", "康拉德出场"],
+          "detailed_synopsis": "2001年12月15日上午，第十八号场馆急救站大厅内气氛紧张。巴里·布鲁姆手持伪造的‘系统合规性报告’，声称若麦珂家族不立即签署电子授权书，将触发巨额违约金并冻结急救站运营。麦珂冷静地打断他，当众播放了一段2001年冬季的测试录像，展示了维克多团队如何利用‘虚假紧急维修’测试系统响应速度，以及电子签名如何被远程批量篡改的致命漏洞。他引用这段记忆，强调只有纸质墨迹才具备不可逆的物理特性。随后，莉薇娅在众人的注视下，提笔在十八座场馆急救站的铭牌空白处，逐一亲笔写下‘脉搏可查，权限不代’八个大字。苏菲亚指挥现场技术人员对每一处墨迹进行实时扫描和光谱分析，确保其符合Archival Ink标准。当巴里试图用备用打印机现场伪造一份‘带墨迹’的授权书来圆谎时，强光照射下，他使用的过期蓝色碳素墨水竟呈现出诡异的荧光反应，字体间距也与标准文档完全不符，引发全场哄笑。最终，审计员以‘无物理锚点’为由，驳回了巴里强行推进电子签名的企图。"
+        },
+        {
+          "chapter_id": 366,
+          "timeline_start": "2001年12月15日 下午14:00",
+          "timeline_end": "2001年12月15日 傍晚18:00",
+          "scene": "奥瑞恩集团临时听证会现场",
+          "chapter_goal": "维克多试图引入第三方云服务商替换手写记录，被现场审计员以‘无物理锚点’为由驳回，巴里彻底失势。",
+          "chapter_title": "物理锚点的胜利",
+          "participants": ["麦珂", "维克多·兰斯（远程连线）", "巴里·布鲁姆", "行业自律委员会代表", "苏菲亚"],
+          "opening_conflict": "维克多·兰斯通过远程连线，试图引入第三方云服务商替换手写记录，声称纸质铭牌不符合国际安全标准，要求重新评估。",
+          "info_gap_use": "麦珂再次引用2001年测试案例，指出云服务商无法提供物理备份，且存在数据污染风险。",
+          "opponent_reaction": "巴里试图销毁磁带外壳上的指纹证据，却被苏菲亚提前备份的原始胶片锁定其作案轨迹。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团临时听证会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "维克多提出新方案，麦珂直接反驳"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_365_LIVIA_SIGNATURE_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为物理介质优先原则的实证"
+            },
+            {
+              "artifact_id": "TAPE_1999_NEW_YEAR",
+              "timeline_scope": "previous_life",
+              "purpose": "触发指纹溯源调查"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯通过远程连线，提出引入第三方云服务商替换手写记录。",
+            "麦珂当场指出云服务商无法提供物理备份，且存在数据污染风险。",
+            "行业自律委员会代表宣布暂停巴里·布鲁姆的从业资格两年。",
+            "苏菲亚展示1999年除夕夜磁带外壳上的指纹证据，与巴里入职体检指纹卡吻合。"
+          ],
+          "visible_payoff": "‘棱镜协议’二期加固完成，物理介质优先原则成为行业铁律。",
+          "ending": "维克多策略转为隐蔽渗透，巴里彻底失势，麦珂家族确立了对场馆安全的绝对控制权。",
+          "must_include": ["行业自律委员会暂停巴里资格的决定", "1999年磁带外壳指纹证据展示", "‘棱镜协议’二期加固完成声明"],
+          "must_not_include": ["任何未来技术词汇如社交媒体、社交平台", "康拉德出场"],
+          "detailed_synopsis": "2001年12月15日下午，奥瑞恩集团临时听证会现场。维克多·兰斯通过远程连线，试图引入第三方云服务商替换手写记录，声称纸质铭牌不符合国际安全标准，要求重新评估。麦珂当场指出，云服务商无法提供物理备份，且存在数据污染风险，引用2001年测试案例证明电子数据极易被篡改。行业自律委员会代表随即宣布暂停巴里·布鲁姆的从业资格两年，因其伪造证据行为已被证实。苏菲亚展示了一枚1999年除夕夜社区礼堂活动磁带外壳，上面残留的半枚油渍指纹经比对与巴里的入职体检指纹卡完全吻合，这一证据直接触发了‘时间褶皱’档案二期调查。随着‘棱镜协议’二期加固完成，物理介质优先原则正式成为行业铁律。维克多见大势已去，策略转为隐蔽渗透，开始酝酿数据污染方案；巴里则彻底失势，面临刑事指控风险，其个人声誉崩塌，无法再参与任何商业谈判。麦珂家族确立了对场馆安全的绝对控制权，为未来的斗争奠定了坚实基础。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2001",
+    "character_states": [
+      {
+        "character": "麦珂",
+        "state": "掌控全局，确立物理介质优先原则"
+      },
+      {
+        "character": "莉薇娅",
+        "state": "信任麦珂，成为核心法律顾问"
+      },
+      {
+        "character": "苏菲亚",
+        "state": "巩固审计链执行者地位"
+      },
+      {
+        "character": "巴里·布鲁姆",
+        "state": "从业资格被暂停，声誉崩塌"
+      },
+      {
+        "character": "维克多·兰斯",
+        "state": "策略转为隐蔽渗透"
+      }
+    ],
+    "relationship_states": [
+      {
+        "relationship": "麦珂-莉薇娅",
+        "state": "信任达到顶峰，共同防御"
+      },
+      {
+        "relationship": "麦珂-苏菲亚",
+        "state": "合作紧密，审计链稳固"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity": "十八座场馆急救站",
+        "status": "铭牌手写验证完成，物理介质优先原则生效"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity": "急救站",
+        "status": "安全评估通过，无数据篡改风险"
+      }
+    ],
+    "open_threads": [
+      "S95-B-RW样带中的医疗模型造假线索待挖掘",
+      "理查德·斯特林正在寻找废弃样带作为翻盘筹码",
+      "1999年除夕夜磁带外壳指纹线索需深入调查"
+    ],
+    "resolved_threads": [
+      "巴里·布鲁姆伪造证据行为被公开揭露",
+      "物理介质优先原则写入法律文本"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。同时，1999年磁带外壳指纹线索将触发‘时间褶皱’档案二期调查，证明巴里长期介入档案篡改。"
+  }
+}

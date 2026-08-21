@@ -1,0 +1,231 @@
+{
+  "macro_group_id": "MG040",
+  "event_clusters": [
+    {
+      "cluster_id": "EC197",
+      "chapter_span": [393, 394],
+      "source_event_direction": "利用重生记忆锁定S95-B-RW样带声纹证据，粉碎伪造电子病历与强制数据接口阴谋。",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z6y5x4w3v2u1t0s9r8q7p6o5n4m3l2k1j0i9h8g7f6e5d4c3b2a1",
+      "name": "除夕夜的物理介质审判",
+      "timeline_years": "1999-2000",
+      "main_opponent": "维克多·兰斯（Orion集团首席技术顾问）",
+      "opposition_type": "technical",
+      "event_type": "performance",
+      "solution_type": "performance_proof",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["CS_197_AUDIO_FORENSICS", "CS_197_PHYSICAL_MEDIUM"],
+      "foreshadow_ids": ["FS_198_FINGERPRINT_BARREY"],
+      "main_characters": ["麦珂", "玛莎", "黛安娜", "维克多·兰斯", "托马斯", "巴里·布鲁姆（提及）"],
+      "fictional_obstacle": "奥瑞恩集团试图以‘一键康复’的电子合成录音作为医疗拒赔的法定依据，并宣称原始模拟信号已因年代久远无法还原，企图用数字降噪掩盖声音篡改痕迹。",
+      "prev_life_tragedy": "前世中，麦珂被迫签署协议，S95-B-RW样带被奥瑞恩集团的技术团队通过‘智能修复’算法强行覆盖，导致维克多·兰斯的真实声音被植入虚假的‘患者已完全康复’承诺，最终导致玛莎在病情恶化时被保险公司拒赔，家庭破产。",
+      "info_gap_from_prev_life": "掌握S95-B-RW样带录制时的特定背景噪声特征（河湾镇诊所老式空调的低频嗡鸣），以及1999年数码扫描仪分辨率极限导致的原始胶片颗粒感特征，这些是当时任何数字合成手段都无法完美模拟的物理痕迹。",
+      "why_previous_life_failed": "前世过度依赖电子病历和数字化音频分析，忽视了模拟信号转录过程中的物理介质特性，未能提前固化原始胶片的不可篡改性证据。",
+      "preemptive_avoidance": "麦珂提前指导技术人员将S95-B-RW模拟磁带转录为CDR（光盘只读）格式，保留原始波形中的底噪和颗粒感，而非进行数字降噪处理，并在除夕夜直播前完成公证封存。",
+      "bait_and_evidence": "奥瑞恩集团为了展示‘高科技康复成果’，主动要求播放经过‘优化’的数字音频；麦珂则坚持播放未经处理的原始CDR波形，利用背景噪声差异作为铁证。",
+      "comic_villain_behavior": "维克多·兰斯在直播现场自信满满地展示着‘完美无瑕’的数字音频波形图，嘲笑麦珂还在使用‘过时的模拟设备’，结果当原始波形被投影出来时，他惊恐地发现那熟悉的、带有独特低频嗡鸣的波形竟与他的录音存在无法解释的断点，仿佛他在对着空气说话。",
+      "villain_loss": "维克多·兰斯的‘数据污染’方案在技术层面彻底破产，其伪造的‘一键康复’录音被证实为后期合成的赝品，奥瑞恩集团被迫承认技术欺诈，维克多本人失去行业信誉，被暂停一切技术决策权。",
+      "protagonist_gain": "S95-B-RW样带的声纹证据正式归档，确认为法律认可的原始物理介质证据；麦珂成功阻止了霸王条款签约，确立了‘棱镜协议’中关于原始物理介质不可篡改的法律地位；玛莎获得科学调理的机会。",
+      "relationship_change": "麦珂与家庭铁三角形成稳固的利益共同体；与奥瑞恩集团关系彻底破裂，进入公开对抗状态；医疗界开始质疑奥瑞恩集团的病历真实性。",
+      "continuity_writes": [
+        "1999年除夕夜，河湾镇诊所的老旧空调声成为关键证词。",
+        "CDR格式的原始波形图首次公开，展示了无法被数字合成的物理颗粒。",
+        "维克多·兰斯在直播镜头前的失态反应成为媒体头条。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "MC_FAMILY_DATA_OWNERSHIP",
+          "state_key": "audio_evidence_status",
+          "from": "digital_synthesis_fraud",
+          "to": "physical_medium_verified",
+          "irreversible": true,
+          "evidence": "CDR_RAW_WAVEFORM_WITH_NOISE_PATTERN",
+          "effect_type": "protagonist_gain",
+          "source_domain": "legal_rights"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "VICTOR_LANCE_TECHNICAL_CREDIBILITY",
+          "state_key": "fraud_exposure_status",
+          "from": "active_concealment",
+          "to": "publicly_discredited",
+          "irreversible": true,
+          "evidence": "AUDIO_BREAKPOINT_IN_ORIGINAL_RECORDING",
+          "effect_type": "villain_loss",
+          "source_domain": "personnel_reputation"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "PRISM_PROTOCOL_LEGAL_STANDING",
+          "state_key": "physical_medium_clarity",
+          "from": "ambiguous_digital_standard",
+          "to": "legally_enforced_physical_standard",
+          "irreversible": true,
+          "evidence": "LIVE_BROADCAST_EXPOSURE_OF_ANOMALY",
+          "effect_type": "world_state",
+          "source_domain": "legal_framework"
+        }
+      ],
+      "historical_anchor_ids": ["HA_1999_NEW_YEAR_EVE", "HA_S95_BAND_RECORDED"],
+      "cluster_outcome": "麦珂利用对1999年模拟信号特征的精准记忆，在除夕夜直播中当众揭穿奥瑞恩集团利用数字技术伪造康复录音的阴谋，维克多·兰斯的技术欺诈被彻底曝光，‘数据污染’方案破产，家庭医疗自主权得以确立。",
+      "next_event_hook": "1999年除夕磁带外壳上的半枚油渍指纹经专业比对，证实与巴里·布鲁姆指纹吻合，该线索将直接触发P09（第401-420章）关于长期介入档案篡改的法务攻防战，迫使奥瑞恩集团从商业施压转向刑事层面的反制。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 393,
+          "timeline_start": "1999年12月24日 14:00",
+          "timeline_end": "1999年12月24日 18:00",
+          "scene": "河湾镇诊所临时搭建的直播后台及奥瑞恩集团区域",
+          "chapter_goal": "完成S95-B-RW样带的CDR格式转录与公证，并在直播前初步展示背景噪声异常，引发技术质疑。",
+          "chapter_title": "被遗忘的底噪",
+          "participants": ["麦珂", "黛安娜", "技术员小李", "维克多·兰斯", "托马斯"],
+          "opening_conflict": "奥瑞恩集团代表要求立即播放经过‘智能修复’的音频，声称原始文件损坏严重；麦珂坚持先进行物理介质比对。",
+          "info_gap_use": "麦珂指出1999年数码扫描仪无法捕捉到S95-B-RW样带特有的低频空调嗡鸣，而数字降噪软件会误删此特征。",
+          "opponent_reaction": "维克多·兰斯轻蔑地表示这是‘过时的伪科学’，并命令技术人员强行启动数字修复程序。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "直播后台控制室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂将模拟磁带插入专用播放器，连接至CDR刻录机。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_393_CDR_ARCHIVE",
+              "timeline_scope": "current",
+              "display_name": "《S95-B-RW原始波形CDR存档》",
+              "kind": "forensic_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_389_TIME_FOLD_INDEX",
+              "timeline_scope": "current",
+              "purpose": "引用之前的时间褶皱索引，确认S95-B-RW的录制时间与地点。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂指导技术员小李将S95-B-RW模拟磁带以最高保真度转录为CDR格式，不进行任何数字降噪。",
+            "黛安娜在现场公证员见证下，展示CDR文件的元数据，证明其未被修改。",
+            "麦珂播放原始波形，屏幕上显示出明显的、非自然的断点和独特的低频背景噪声。",
+            "维克多·兰斯试图辩解这是设备故障，但麦珂当场指出该噪声特征与1999年河湾镇诊所的空调型号完全一致。",
+            "托马斯在一旁脸色苍白，试图删除后台日志，但被黛安娜截获。"
+          ],
+          "visible_payoff": "初步比对显示音频中存在非自然合成的背景底噪，引发在场技术专家和媒体的强烈质疑，奥瑞恩集团的‘完美修复’说法出现裂痕。",
+          "ending": "直播倒计时开启，维克多·兰斯面色凝重，意识到如果继续强硬，将面临更大的技术崩盘风险。",
+          "must_include": ["CDR格式转录过程", "背景噪声的视觉化展示", "维克多的轻蔑与随后的惊慌"],
+          "must_not_include": ["提前揭露指纹线索", "康拉德出场", "2000年后的技术术语"],
+          "detailed_synopsis": "1999年12月24日下午，河湾镇诊所的临时直播后台气氛紧张。奥瑞恩集团的代表维克多·兰斯急于播放经过‘智能修复’的音频，以此证明玛莎已‘一键康复’。麦珂却冷静地拒绝，她深知前世悲剧的根源在于数字技术的可篡改性。她指导技术员小李将S95-B-RW样带以模拟信号直接转录为CDR格式，保留了所有原始波形细节。黛安娜在一旁公证，确保流程无懈可击。当麦珂按下播放键，屏幕上的波形图并未呈现平滑的曲线，而是充满了粗糙的颗粒感和一段独特的、持续的低频嗡鸣——那是1999年河湾镇诊所老式空调的声音。麦珂当场指出，任何1999年的数字降噪软件都无法完美模拟这种特定的环境噪声，且原始波形的断点显示声音曾被强行切断和拼接。维克多·兰斯起初轻蔑地嘲笑这是‘过时的噪音’，但当麦珂指出该噪声频率与诊所空调完全吻合，且数字修复版中该噪声被错误地‘抹平’时，维克多的脸色瞬间惨白。托马斯试图偷偷删除后台日志，却被黛安娜敏锐地察觉并截获，现场一片哗然，媒体记者纷纷举起相机记录这戏剧性的一幕。"
+        },
+        {
+          "chapter_id": 394,
+          "timeline_start": "1999年12月24日 20:00",
+          "timeline_end": "1999年12月24日 23:59",
+          "scene": "除夕夜全球媒体直播现场",
+          "chapter_goal": "在除夕夜直播高潮阶段，当众播放未经降噪处理的原始波形，彻底暴露维克多声音的异常断点，使其‘数据污染’方案破产。",
+          "chapter_title": "无法合成的断点",
+          "participants": ["麦珂", "玛莎", "维克多·兰斯", "托马斯", "巴里·布鲁姆（视频连线）", "媒体群"],
+          "opening_conflict": "奥瑞恩集团试图在直播中强行播放‘修复后’的音频，麦珂当场叫停并要求播放原始CDR文件。",
+          "info_gap_use": "麦珂利用前世记忆，指出1999年数码扫描仪的分辨率极限，证明任何数字合成都无法还原原始胶片的物理颗粒感。",
+          "opponent_reaction": "维克多·兰斯在直播镜头前崩溃，试图用“技术故障”搪塞，但被麦珂展示的波形图彻底驳斥。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "除夕夜全球直播演播厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "直播主持人宣布即将播放关键证据，全场屏息。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_393_CDR_ARCHIVE",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据在直播中播放。"
+            }
+          ],
+          "action_sequence": [
+            "直播开始，奥瑞恩集团代表准备播放‘完美康复’的音频。",
+            "麦珂突然打断，要求播放刚刚公证封存的原始CDR文件。",
+            "大屏幕上，原始波形图清晰可见，维克多·兰斯的声音在关键处出现了明显的断点和跳变，伴随着那段无法被数字消除的背景噪声。",
+            "麦珂现场演示，用当时的数码扫描仪模拟扫描原始胶片，展示其无法被后期合成的物理颗粒感。",
+            "维克多·兰斯试图辩解，但面对无可辩驳的波形图和现场专家的质疑，他不得不承认常规手段失效。",
+            "玛莎在麦珂的鼓励下，平静地陈述自己的真实病情，赢得了全场支持。"
+          ],
+          "visible_payoff": "麦珂现场播放未经降噪处理的原始波形，暴露出维克多声音的异常断点，彻底粉碎了奥瑞恩集团的谎言。",
+          "ending": "维克多·兰斯被迫承认技术欺诈，‘数据污染’方案破产，奥瑞恩集团在直播中声誉扫地，麦珂一家赢得胜利。",
+          "must_include": ["原始波形图的视觉冲击", "维克多的崩溃反应", "玛莎的真实陈述"],
+          "must_not_include": ["指纹线索的直接揭露", "康拉德的介入", "未来的法律判决"],
+          "detailed_synopsis": "除夕夜零点将至，全球媒体聚焦于这场决定性的直播。奥瑞恩集团代表正准备播放经过‘智能修复’的音频，试图营造玛莎已完全康复的假象。就在关键时刻，麦珂果断叫停，她手持刚刚公证的CDR光盘，走向主控台。她向全场观众和镜头解释道：“真正的康复不需要完美的数字修饰，只需要诚实的物理记录。”随着播放键按下，大屏幕上的波形图瞬间炸裂，原本平滑的音频曲线在维克多·兰斯的声音部分出现了明显的断点和跳变，而那熟悉的、带着河湾镇诊所空调低频嗡鸣的背景噪声，如同幽灵般清晰地浮现出来。麦珂进一步指出，根据1999年数码扫描仪的分辨率极限，任何数字合成手段都无法完美还原原始胶片的物理颗粒感，而这些颗粒感正是原始介质的铁证。维克多·兰斯在直播镜头前脸色煞白，他试图用“技术故障”或“设备老化”来搪塞，但在无可辩驳的波形图和现场多位技术专家的质询下，他的防线彻底崩塌。他不得不承认，所谓的‘一键康复’录音是经过后期合成的赝品。与此同时，玛莎在麦珂的鼓励下，平静地向镜头陈述了自己的真实病情和治疗过程，她的真诚与奥瑞恩集团的虚伪形成了鲜明对比，赢得了全场的掌声与支持。维克多·兰斯在巨大的舆论压力下，被迫承认‘数据污染’方案在技术层面彻底破产，奥瑞恩集团的声誉在这一夜扫地殆尽。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2000",
+    "character_states": [
+      {
+        "entity_id": "VICTOR_LANCE",
+        "state_key": "technical_credibility",
+        "status": "discredited",
+        "note": "因伪造音频证据被公开羞辱，失去行业信任。"
+      },
+      {
+        "entity_id": "THOMAS_WAYNE",
+        "state_key": "employment_status",
+        "status": "under_investigation",
+        "note": "因试图删除后台日志被停职审查。"
+      },
+      {
+        "entity_id": "MARTHA",
+        "state_key": "medical_treatment",
+        "status": "scientific_manual_care",
+        "note": "脱离虚假治疗陷阱，进入科学调理阶段。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_pair": "MC_FAMILY vs ORION_GROUP",
+        "status": "open_hostility",
+        "note": "关系彻底破裂，进入公开对抗状态。"
+      },
+      {
+        "entity_pair": "MC_FAMILY vs MEDICAL_COMMUNITY",
+        "status": "supportive",
+        "note": "医疗界开始质疑奥瑞恩集团的病历真实性，转而支持麦珂。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "PRISM_PROTOCOL",
+        "status": "draft_finalized",
+        "note": "确立了原始物理介质不可篡改的法律地位。"
+      },
+      {
+        "entity_id": "S95_B_RW_AUDIO",
+        "status": "archived_as_evidence",
+        "note": "声纹证据正式归档，锁定维克多为关键证人。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "MARTHA_HEALTH",
+        "status": "stable",
+        "note": "病情稳定，不再受虚假‘一键康复’误导。"
+      }
+    ],
+    "open_threads": [
+      "1999年除夕夜磁带外壳指纹的深入调查",
+      "2003年场馆铭牌‘脉搏可查，权限不代’的后续影响"
+    ],
+    "resolved_threads": [
+      "S95-B-RW样带声纹伪造案",
+      "奥瑞恩集团‘一键康复’骗局"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "随着维克多势力收缩，联邦调查局介入，那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的‘数据污染’方案。"
+  }
+}

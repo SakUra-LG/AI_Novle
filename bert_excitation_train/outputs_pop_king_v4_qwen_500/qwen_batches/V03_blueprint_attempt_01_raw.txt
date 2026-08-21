@@ -1,0 +1,213 @@
+{
+  "volume_id": "V03",
+  "volume_title": "声浪之巅：从舞台到世界的回响",
+  "volume_summary": "本卷聚焦于麦珂·杰森在1978至1982年间从青年偶像走向国际巨星的蜕变过程。通过与新厂牌的合作、首次成人专辑的创作突破以及跨类型音乐实验，麦珂逐步掌握产业主动权，同时艾琳·沃特曼作为独立制作人加入他的团队，两人之间若即若离的情感逐渐升温。本卷中，麦珂不仅成功摆脱旧势力的控制，更在媒体与公众面前建立起属于自己的声音。",
+  "macro_groups": [
+    {
+      "macro_group_id": "MG011",
+      "chapter_span": [101, 110],
+      "title": "新厂牌的陷阱与初探",
+      "timeline_years": "1978",
+      "macro_goal": "完成新厂牌签约，建立初步制作权框架",
+      "historical_stage": "新厂牌口头承诺与合同条款博弈",
+      "main_conflict": "旧势力试图以隐性条款限制麦珂自由创作，麦珂利用前世记忆识别风险并设下反制圈套",
+      "rebirth_advantage": "前世知晓新厂牌曾用“合作支持”掩盖控制意图，提前设立合同审核机制",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC101",
+          "chapter_span": [101, 102],
+          "direction": "麦珂在新厂牌会议中发现隐藏的版权保留条款，故意示弱引诱对方暴露"
+        },
+        {
+          "cluster_id": "EC103",
+          "chapter_span": [103, 104],
+          "direction": "麦珂提出联合制作提案，借机引入独立制作人艾琳，增强自身谈判筹码"
+        },
+        {
+          "cluster_id": "EC105",
+          "chapter_span": [105, 106],
+          "direction": "麦珂公开演出时故意失误，引发媒体关注，迫使厂牌重新评估其价值"
+        },
+        {
+          "cluster_id": "EC107",
+          "chapter_span": [107, 108],
+          "direction": "麦珂与母亲讨论合同细节，揭露旧势力幕后操控，激发其维权意识"
+        },
+        {
+          "cluster_id": "EC109",
+          "chapter_span": [109, 110],
+          "direction": "麦珂签订附加协议，确保个人创作权不被侵蚀，并赢得首批独立制作资源"
+        }
+      ],
+      "romance_progression": "艾琳首次正式参与项目，两人因工作关系产生微妙情愫，但未涉及感情进展",
+      "ending_state": "麦珂获得部分制作权，艾琳成为核心合作伙伴，旧势力开始感到威胁",
+      "next_group_hook": "旧势力决定采取更隐蔽的手段阻挠麦珂的创作自由"
+    },
+    {
+      "macro_group_id": "MG012",
+      "chapter_span": [111, 120],
+      "title": "跨界壁垒与第一座奖杯",
+      "timeline_years": "1979",
+      "macro_goal": "完成成人专辑创作，打破电台壁垒，取得首个行业认可",
+      "historical_stage": "跨类型音乐尝试与主流市场冲突",
+      "main_conflict": "传统电台拒绝播放麦珂的新风格作品，麦珂通过地下渠道和粉丝力量实现传播突破",
+      "rebirth_advantage": "前世知晓广播系统运作逻辑，提前布局线上与线下宣传网络",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC111",
+          "chapter_span": [111, 112],
+          "direction": "麦珂发布非主流风格单曲，遭到主流电台封杀，引发粉丝抗议"
+        },
+        {
+          "cluster_id": "EC113",
+          "chapter_span": [113, 114],
+          "direction": "麦珂通过地下俱乐部表演积累人气，吸引独立音乐人合作"
+        },
+        {
+          "cluster_id": "EC115",
+          "chapter_span": [115, 116],
+          "direction": "麦珂邀请艾琳协助编曲，突破原有音乐模式，获得评论界赞誉"
+        },
+        {
+          "cluster_id": "EC117",
+          "chapter_span": [117, 118],
+          "direction": "麦珂与经纪人就奖项提名发生争执，最终凭借实力获得首座格莱美提名"
+        },
+        {
+          "cluster_id": "EC119",
+          "chapter_span": [119, 120],
+          "direction": "麦珂在颁奖礼上发表获奖感言，强调艺术自由，引起广泛共鸣"
+        }
+      ],
+      "romance_progression": "艾琳对麦珂的艺术理念产生认同，二人情感进一步深化",
+      "ending_state": "麦珂获得首座格莱美提名，确立行业地位，艾琳成为其精神支柱之一",
+      "next_group_hook": "麦珂面临更大的舆论压力，旧势力开始策划负面新闻"
+    },
+    {
+      "macro_group_id": "MG013",
+      "chapter_span": [121, 130],
+      "title": "家庭裂痕与自我觉醒",
+      "timeline_years": "1980",
+      "macro_goal": "解决与父亲间的矛盾，强化母子联盟，巩固创作自主权",
+      "historical_stage": "家庭内部权力斗争与个人成长挑战",
+      "main_conflict": "父亲试图干预麦珂的音乐方向，麦珂借助母亲之力维护自己",
+      "rebirth_advantage": "前世知道父亲会以亲情为工具施压，提前安排好应对策略",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC121",
+          "chapter_span": [121, 122],
+          "direction": "麦珂的父亲反对其与艾琳合作，试图切断资金来源"
+        },
+        {
+          "cluster_id": "EC123",
+          "chapter_span": [123, 124],
+          "direction": "麦珂的母亲介入调解，向父亲展示麦珂的成长成果"
+        },
+        {
+          "cluster_id": "EC125",
+          "chapter_span": [125, 126],
+          "direction": "麦珂在演唱会上突然宣布不再接受父亲管理，震惊全场"
+        },
+        {
+          "cluster_id": "EC127",
+          "chapter_span": [127, 128],
+          "direction": "麦珂与父亲爆发激烈争吵，母亲坚定站在儿子一边"
+        },
+        {
+          "cluster_id": "EC129",
+          "chapter_span": [129, 130],
+          "direction": "麦珂正式成立个人工作室，脱离父亲控制，获得更多创作自由"
+        }
+      ],
+      "romance_progression": "艾琳见证麦珂的家庭转变，加深彼此信任",
+      "ending_state": "麦珂彻底摆脱父亲掌控，母亲成为其最坚实的支持者",
+      "next_group_hook": "旧势力趁虚而入，试图利用家庭问题打击麦珂形象"
+    },
+    {
+      "macro_group_id": "MG014",
+      "chapter_span": [131, 140],
+      "title": "电视门槛与全球视野",
+      "timeline_years": "1981",
+      "macro_goal": "突破电视平台限制，打造标志性的视觉表达，扩大影响力",
+      "historical_stage": "电视节目与音乐影像结合初期阶段",
+      "main_conflict": "电视台不愿播出麦珂的创新视频，麦珂另辟蹊径争取曝光机会",
+      "rebirth_advantage": "前世了解电视播放规则，提前设计可绕过审查的创意方案",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC131",
+          "chapter_span": [131, 132],
+          "direction": "麦珂的音乐视频遭电视台拒播，引发公众不满"
+        },
+        {
+          "cluster_id": "EC133",
+          "chapter_span": [133, 134],
+          "direction": "麦珂通过地下放映和小型影院获取观众反馈，优化视频内容"
+        },
+        {
+          "cluster_id": "EC135",
+          "chapter_span": [135, 136],
+          "direction": "麦珂在电视节目中巧妙回应批评，展现自信与才华"
+        },
+        {
+          "cluster_id": "EC137",
+          "chapter_span": [137, 138],
+          "direction": "麦珂与艾琳合作拍摄低成本短片，意外获得媒体关注"
+        },
+        {
+          "cluster_id": "EC139",
+          "chapter_span": [139, 140],
+          "direction": "麦珂推出首部完整音乐短片，在海外发行后大受欢迎"
+        }
+      ],
+      "romance_progression": "艾琳在工作中展现出非凡才华，麦珂对其愈发欣赏",
+      "ending_state": "麦珂的音乐影像受到国际市场欢迎，奠定全球化基础",
+      "next_group_hook": "跨国公司开始觊觎麦珂的才华，准备展开新一轮竞争"
+    },
+    {
+      "macro_group_id": "MG015",
+      "chapter_span": [141, 150],
+      "title": "长片野心与团队协作",
+      "timeline_years": "1982",
+      "macro_goal": "启动电影企划，组建专业团队，迈向影视领域",
+      "historical_stage": "音乐电影尚属新兴形式，投资方谨慎观望",
+      "main_conflict": "投资人质疑麦珂的导演能力，麦珂依靠团队智慧证明自己",
+      "rebirth_advantage": "前世知晓电影制作流程，提前招募关键人才",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC141",
+          "chapter_span": [141, 142],
+          "direction": "麦珂提议拍摄影音结合的电影，投资人表示怀疑"
+        },
+        {
+          "cluster_id": "EC143",
+          "chapter_span": [143, 144],
+          "direction": "麦珂与艾琳共同制定剧本，突出音乐叙事特色"
+        },
+        {
+          "cluster_id": "EC145",
+          "chapter_span": [145, 146],
+          "direction": "麦珂邀请老友昆廷担任制作人，提升影片质量保障"
+        },
+        {
+          "cluster_id": "EC147",
+          "chapter_span": [147, 148],
+          "direction": "麦珂在试镜中亲自挑选演员，确保角色匹配度"
+        },
+        {
+          "cluster_id": "EC149",
+          "chapter_span": [149, 150],
+          "direction": "电影筹备完成，麦珂宣布将亲自执导，引爆行业期待"
+        }
+      ],
+      "romance_progression": "艾琳在电影项目中发挥重要作用，两人关系更加亲密",
+      "ending_state": "麦珂正式启动电影计划，艾琳成为其事业的重要伙伴",
+      "next_group_hook": "电影上映前遭遇多方阻力，麦珂需迎战资本与舆论双重考验"
+    }
+  ],
+  "continuity_summary": {
+    "characters": ["麦珂·杰森", "玛莎·杰森", "艾琳·沃特曼"],
+    "relationships": ["麦珂与母亲关系稳固", "麦珂与艾琳形成默契合作关系"],
+    "rights_and_assets": ["麦珂拥有部分创作权", "麦珂成立个人工作室"],
+    "open_threads": ["旧势力仍在暗中活动"]
+  }
+}

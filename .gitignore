@@ -91,6 +91,10 @@ desktop.ini
 .env.*.local
 *.env
 
+# Local planner API credentials
+bert_excitation_train/scripts/v2/api.txt
+bert_excitation_train/scripts/v2/vectorengine_api.txt
+
 # 日志文件
 logs/
 *.log

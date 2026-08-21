@@ -1,0 +1,221 @@
+{
+  "macro_group_id": "MG016",
+  "event_clusters": [
+    {
+      "cluster_id": "EC079",
+      "chapter_span": [
+        157,
+        158
+      ],
+      "source_event_direction": "前世具体受害：前世医疗数据被篡改导致治疗延误与错误诊断。；本事件独有的前世信息差：健康趋势预测模型测试的时间节点与数据接口位置。；今生提前动作：莉薇娅·普莱斯建立独立医疗数据防火墙，隔离商业审计。；第157章可见小赢：首次测试中虚假数据被自动拦截，系统判定异常。；第158章新交锋：维克多·兰斯亲自施压要求绕过防火墙，遭全员抵制。；阻力方永久现实损失：奥瑞恩集团无法通过数据污染干预医疗决策。；主角现实收益：医疗决策权完全独立，确立《家庭治理宪章》生效基础。；不可逆结算键：医疗数据防火墙成为法定隔离屏障；接回死亡控制主线：阻断前世因数据篡改导致的生命权丧失",
+      "source_event_direction_sha256": "9dac9bc40b31cb6637f942336399fe9fa110e6e23ec9d4d34b9bb4fd05cf3691",
+      "source_macro_sha256": "86afd351160c7af4530d135323824c9988cc677166755d7036afefc24ee37aed",
+      "name": "防火墙与宪章：医疗主权的绝对隔离",
+      "timeline_years": "1983-1984",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "institutional",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "维克多·兰斯",
+        "巴里·布鲁姆"
+      ],
+      "fictional_obstacle": "维克多·兰斯试图通过‘蓝盾’审计公司植入的‘健康趋势预测模型’，以‘合规优化’为名篡改家族信托关联的医疗数据，从而在《家庭治理宪章》生效前夺取医疗决策权。",
+      "prev_life_tragedy": "前世，麦珂因医疗数据被维克多·兰斯暗中篡改，导致关键治疗延误，最终在病痛中失去对家族企业的控制权并悲惨离世。",
+      "info_gap_from_prev_life": "麦珂知晓‘健康趋势预测模型’将在1984年初进行首次全链路压力测试，且该模型存在一个未公开的物理数据接口漏洞，允许外部信号通过模拟频段注入虚假指标。",
+      "why_previous_life_failed": "前世麦珂完全信任审计机构的‘中立性’，未察觉医疗数据与商业审计之间的隐蔽连接，导致数据污染后无法溯源，被指控‘健康管理不善’。",
+      "preemptive_avoidance": "麦珂提前指示莉薇娅·普莱斯建立独立的‘医疗数据防火墙’，将医疗记录服务器与商业审计网络物理隔离，并设置针对特定模拟频段的干扰拦截机制。",
+      "bait_and_evidence": "麦珂故意在防火墙日志中留下一个看似可被绕过的‘后门’诱饵，引诱维克多·兰斯启动注入程序。当维克多尝试注入虚假数据时，系统自动记录其IP地址、操作指令及时间戳，形成不可抵赖的电子证据链。",
+      "comic_villain_behavior": "巴里·布鲁姆在注入数据成功后，自以为得计，在内部通讯中吹嘘自己‘黑进了麦珂的大脑’，并试图向维克多邀功，却不知自己正被录音笔全程记录。",
+      "villain_loss": "维克多·兰斯发现数据注入失败且被反向追踪，‘蓝盾’公司因涉嫌非法入侵计算机系统被警方立案调查，其通过数据污染干预医疗决策的手段彻底失效。",
+      "protagonist_gain": "《家庭治理宪章》正式生效，医疗决策权与商业审计权实现法定隔离，麦珂确立了对自身健康数据的绝对控制权，莉薇娅·普莱斯成为核心防线。",
+      "relationship_change": "莉薇娅·普莱斯与麦珂的信任关系深化，成为对抗维克多·兰斯的关键盟友；维克多·兰斯意识到常规手段失效，开始寻求更极端的物理销毁手段。",
+      "continuity_writes": [
+        "RIGHT_VL_007:medical_isolation__secured",
+        "ORG_F618A85B98BB:data_injection_capability__neutralized"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007",
+          "state_key": "medical_isolation__extension_EC079",
+          "from": "fortified",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_157_FIREWALL_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_F618A85B98BB",
+          "state_key": "data_injection_capability__loss_EC079",
+          "from": "active",
+          "to": "neutralized",
+          "irreversible": true,
+          "evidence": "ART_157_FIREWALL_LOG",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1983_COMPUTER_CRIME_ACT"
+      ],
+      "cluster_outcome": "维克多·兰斯的‘健康趋势预测模型’测试失败，‘蓝盾’公司被起诉，医疗决策权完全独立，《家庭治理宪章》生效。维克多·兰斯决定收购胶片冲印厂以销毁物理证据。",
+      "next_event_hook": "维克多·兰斯为掩盖‘蓝盾’失败真相，决定收购一家拥有百年历史的胶片冲印厂，意图销毁所有涉及家族信托原始数据的物理底片，这将在下一组中成为主要威胁。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 157,
+          "timeline_start": "1984-01-15",
+          "timeline_end": "1984-01-15",
+          "scene": "数据中心控制室",
+          "chapter_goal": "部署医疗数据防火墙，拦截首次数据注入攻击。",
+          "chapter_title": "沉默的屏障",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "巴里·布鲁姆"
+          ],
+          "opening_conflict": "巴里·布鲁姆通过‘蓝盾’审计接口，试图向医疗数据库注入虚假的‘高风险’指标，以触发紧急托管程序。",
+          "info_gap_use": "麦珂利用前世记忆，知晓注入信号的具体频段，提前让莉薇娅设置拦截协议。",
+          "opponent_reaction": "巴里·布鲁姆发现数据注入无反馈，误以为系统故障，开始尝试暴力破解。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "数据中心控制室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "监控屏幕上的数据流突然停滞"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_157_FIREWALL_LOG",
+              "timeline_scope": "current",
+              "display_name": "医疗数据防火墙拦截日志",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_156_BARRY_CONFESION_TAPE",
+              "timeline_scope": "current",
+              "purpose": "作为背景证据，显示巴里·布鲁姆的激进风格"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆启动数据注入程序",
+            "莉薇娅·普莱斯监控到异常信号",
+            "麦珂下令激活防火墙拦截",
+            "系统自动记录攻击源并生成日志"
+          ],
+          "visible_payoff": "虚假数据被成功拦截，医疗数据保持完整，维克多·兰斯的阴谋初现破绽。",
+          "ending": "巴里·布鲁姆因无法突破防火墙而愤怒，决定向维克多·兰斯汇报‘系统故障’，实则暴露了其攻击行为。",
+          "must_include": [
+            "防火墙激活的具体技术细节",
+            "巴里·布鲁姆的自负与失误",
+            "莉薇娅·普莱斯的专业表现"
+          ],
+          "must_not_include": [
+            "现代网络术语",
+            "直接的心理描写"
+          ],
+          "detailed_synopsis": "1984年1月15日，麦珂家族医疗数据中心。巴里·布鲁姆通过‘蓝盾’审计接口，试图向医疗数据库注入虚假的‘高风险’指标。麦珂利用前世记忆，提前让莉薇娅·普莱斯设置针对特定模拟频段的拦截协议。当巴里·布鲁姆启动注入程序时，莉薇娅监控到异常信号，麦珂下令激活防火墙。系统自动记录攻击源并生成日志，虚假数据被成功拦截。巴里·布鲁姆因无法突破防火墙而愤怒，误以为系统故障，决定向维克多·兰斯汇报，实则暴露了其攻击行为。"
+        },
+        {
+          "chapter_id": 158,
+          "timeline_start": "1984-01-16",
+          "timeline_end": "1984-01-16",
+          "scene": "维克多·兰斯办公室",
+          "chapter_goal": "维克多·兰斯施压要求绕过防火墙，遭全员抵制，确立医疗决策权独立。",
+          "chapter_title": "宪章生效",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "莉薇娅·普莱斯",
+            "巴里·布鲁姆"
+          ],
+          "opening_conflict": "维克多·兰斯得知数据注入失败后，亲自施压要求麦珂团队开放数据接口，声称这是‘合规审计’的必要步骤。",
+          "info_gap_use": "麦珂利用《家庭治理宪章》的法律效力，拒绝开放接口，并出示防火墙日志作为证据。",
+          "opponent_reaction": "维克多·兰斯试图以商业利益威胁，但麦珂团队全员抵制，坚持医疗决策权独立。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "维克多·兰斯办公室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "维克多·兰斯将文件摔在桌上"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_157_FIREWALL_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据，证明维克多·兰斯的非法入侵"
+            },
+            {
+              "artifact_id": "ART_147_JUDICIAL_CHARTER_SEAL",
+              "timeline_scope": "current",
+              "purpose": "作为法律依据，确立医疗决策权独立"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯施压要求开放数据接口",
+            "麦珂出示防火墙日志，指控非法入侵",
+            "莉薇娅·普莱斯引用《家庭治理宪章》，拒绝配合",
+            "维克多·兰斯意识到常规手段失效，决定转向物理销毁"
+          ],
+          "visible_payoff": "《家庭治理宪章》正式生效，医疗决策权完全独立，维克多·兰斯的阴谋彻底失败。",
+          "ending": "维克多·兰斯愤怒离场，决定收购胶片冲印厂以销毁物理证据，为下一组冲突埋下伏笔。",
+          "must_include": [
+            "《家庭治理宪章》的法律条款引用",
+            "维克多·兰斯的愤怒与无奈",
+            "麦珂团队的坚定立场"
+          ],
+          "must_not_include": [
+            "现代网络术语",
+            "直接的心理描写"
+          ],
+          "detailed_synopsis": "1984年1月16日，维克多·兰斯办公室。维克多·兰斯得知数据注入失败后，亲自施压要求麦珂团队开放数据接口，声称这是‘合规审计’的必要步骤。麦珂出示防火墙日志，指控非法入侵。莉薇娅·普莱斯引用《家庭治理宪章》，拒绝配合，坚持医疗决策权独立。维克多·兰斯意识到常规手段失效，愤怒离场，决定收购胶片冲印厂以销毁物理证据，为下一组冲突埋下伏笔。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1984",
+    "character_states": [
+      "麦珂：确立医疗决策权，信心增强",
+      "莉薇娅·普莱斯：成为核心防线，与麦珂关系深化",
+      "维克多·兰斯：常规手段失效，转向物理销毁",
+      "巴里·布鲁姆：暂时退居二线，等待机会"
+    ],
+    "relationship_states": [
+      "麦珂与莉薇娅·普莱斯：信任深化",
+      "麦珂与维克多·兰斯：敌对升级"
+    ],
+    "rights_and_assets": [
+      "医疗决策权：完全独立",
+      "商业审计权：与医疗数据隔离"
+    ],
+    "health_and_location": [
+      "麦珂：健康数据完整，位于家族医疗数据中心",
+      "维克多·兰斯：位于办公室"
+    ],
+    "open_threads": [
+      "维克多·兰斯收购胶片冲印厂",
+      "物理证据销毁威胁"
+    ],
+    "resolved_threads": [
+      "数据注入攻击",
+      "医疗决策权争议"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多·兰斯将收购胶片冲印厂，意图销毁所有涉及家族信托原始数据的物理底片，这将在下一组中成为主要威胁。"
+  }
+}

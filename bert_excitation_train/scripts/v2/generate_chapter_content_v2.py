@@ -15,11 +15,10 @@ import re
 import json
 import hashlib
 import sys
-import subprocess
 import time
 from difflib import SequenceMatcher
 from pathlib import Path
-from typing import Dict, Any, Optional, List, Tuple
+from typing import Dict, Any, Iterable, Optional, List, Tuple
 from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeoutError
 
 _PROJECT_ROOT = Path(__file__).resolve().parents[3]
@@ -54,12 +53,6 @@ except Exception:  # noqa: BLE001
 
 
 PROJECT_ROOT = _PROJECT_ROOT
-OUTPUT_DIR = Path(os.getenv("V2_OUTPUT_DIR", str(PROJECT_ROOT / "outputs"))).resolve()
-
-# 通义千问（与旧版脚本同 key；本文件独立维护，不依赖 generate_chapter_content.py）
-API_Key_QW = os.getenv("DASHSCOPE_API_KEY", "sk-a2966f4e37134351904851679884cb67")
-
-DEFAULT_OUTPUTS_DIR = OUTPUT_DIR
 
 
 def _load_optional_env_files() -> None:
@@ -84,11 +77,14 @@ def _load_optional_env_files() -> None:
 
 _load_optional_env_files()
 
+OUTPUT_DIR = Path(os.getenv("V2_OUTPUT_DIR", str(PROJECT_ROOT / "outputs"))).resolve()
+API_Key_QW = os.getenv("DASHSCOPE_API_KEY", "").strip()
+DEFAULT_OUTPUTS_DIR = OUTPUT_DIR
+
 # 统一的 V2 文件命名规则（硬编码稳定文件名，去掉时间戳依赖）
 DEFAULT_MASTER_CARDS_V2 = OUTPUT_DIR / "master_ctx_cards_v2.json"
 DEFAULT_PREV_LIFE_V2 = OUTPUT_DIR / "prev_life_ctx_v2.txt"
 DEFAULT_EVENT_CLUSTERS_V2 = OUTPUT_DIR / "event_clusters_v2.json"
-DEFAULT_EXPORT_V2 = OUTPUT_DIR / "export_v2.json"
 
 # 逐章正文与簇审查共用的最低字数（预检、_cluster_critic、落盘复用门槛必须一致，避免「先过后挂」）
 MIN_CHAPTER_CHARS_V2 = 1500
@@ -210,60 +206,125 @@ def _sync_neo4j_from_outputs(
     min_name_freq: int = 5,
     reset_db: bool = False,
     auto_extract_relations: bool = False,
+    story_id: Optional[str] = None,
+    chapters_dir: Optional[Path] = None,
+    memory_dir: Optional[Path] = None,
 ) -> None:
-    """
-    生成完章文本后，同步/增量构建最小 Neo4j KG。
+    """Reconcile the story-scoped Neo4j projection from the durable ledger.
 
-    - 会扫描 `outputs/chapters/chapter_*.txt`
-    - 默认不重置数据库（安全）
+    The old full-directory entity extractor was not story scoped and could
+    duplicate or mix facts across novels.  ChapterMemory JSON is now the sole
+    projection source; every hash is checked against the exact official text
+    before one graph transaction replaces this story's projection.
     """
+    if reset_db:
+        raise ValueError(
+            "V2 正式流程禁止清空整个 Neo4j 数据库；"
+            "只能按显式 story_id 对当前故事做对账与重建。"
+        )
     _load_optional_env_files()
     required_env = ["NEO4J_URI", "NEO4J_USER", "NEO4J_PASSWORD"]
     missing = [k for k in required_env if not os.environ.get(k)]
     if missing:
-        print(
-            "🧩 [Neo4j同步] 跳过：未配置 Neo4j（需 "
-            + ", ".join(required_env)
-            + "）。可在项目根 `AI_Novle/.env` 或上一级目录 `.env` 中写入上述变量，或在 PowerShell 中 "
-            "`$env:NEO4J_URI='bolt://localhost:7687'` 等方式设置。"
+        raise RuntimeError(
+            "Neo4j 同步已启用，但缺少环境变量：" + ", ".join(missing)
         )
+
+    from bert_excitation_train.scripts.neo4j_kg.bootstrap_neo4j import (
+        create_constraints_and_indexes,
+    )
+    from bert_excitation_train.scripts.neo4j_kg.chapter_memory import (
+        content_hash,
+        load_memory_files,
+    )
+    from bert_excitation_train.scripts.neo4j_kg.common import get_neo4j_driver
+    from bert_excitation_train.scripts.neo4j_kg.story_identity import (
+        story_id_for_clusters,
+    )
+    from bert_excitation_train.scripts.neo4j_kg.story_memory_store import (
+        replace_chapter_memories,
+    )
+
+    del min_name_freq, auto_extract_relations  # retained for CLI compatibility
+    scoped_story_id = str(
+        story_id or story_id_for_clusters(DEFAULT_EVENT_CLUSTERS_V2)
+    )
+    official_chapters_dir = Path(chapters_dir or (OUTPUT_DIR / "chapters"))
+    official_memory_dir = Path(
+        memory_dir
+        or (
+            OUTPUT_DIR
+            / "knowledge_graph"
+            / "stories"
+            / scoped_story_id
+            / "chapter_memory"
+        )
+    )
+    if not official_chapters_dir.exists():
+        raise RuntimeError(f"未找到正式章节目录：{official_chapters_dir}")
+    memories = load_memory_files(official_memory_dir, strict=True)
+    memory_by_chapter = {
+        int(memory.get("chapter", 0) or 0): memory
+        for memory in memories
+        if int(memory.get("chapter", 0) or 0) > 0
+    }
+    text_by_chapter: Dict[int, str] = {}
+    for path in sorted(official_chapters_dir.glob("chapter_*.txt")):
+        suffix = path.stem.rsplit("_", 1)[-1]
+        if suffix.isdigit():
+            text_by_chapter[int(suffix)] = path.read_text(encoding="utf-8")
+    if not text_by_chapter and not memory_by_chapter:
+        print("🧩 [Neo4j同步] 当前故事尚无已验收章节，不执行空源图谱清理。")
         return
+    if set(text_by_chapter) != set(memory_by_chapter):
+        raise RuntimeError(
+            "正式正文与 StoryMemory 章节集合不一致："
+            f"text_only={sorted(set(text_by_chapter) - set(memory_by_chapter))}, "
+            f"memory_only={sorted(set(memory_by_chapter) - set(text_by_chapter))}"
+        )
+    for chapter, text in text_by_chapter.items():
+        memory = memory_by_chapter[chapter]
+        if str(memory.get("story_id") or "") != scoped_story_id:
+            raise RuntimeError(f"第{chapter}章 StoryMemory story_id 不匹配。")
+        if str(memory.get("content_hash") or "") != content_hash(text):
+            raise RuntimeError(f"第{chapter}章正文与 StoryMemory 哈希不一致。")
 
-    chapters_dir = OUTPUT_DIR / "chapters"
-    if not chapters_dir.exists():
-        print(f"🧩 [Neo4j同步] 跳过：未找到章节目录 {chapters_dir}")
-        return
-
-    # 通过 -m 运行，避免“直接执行脚本导致相对导入失败”
-    repo_root = PROJECT_ROOT
-    py = sys.executable
-
-    bootstrap_cmd = [
-        py,
-        "-m",
-        "bert_excitation_train.scripts.neo4j_kg.bootstrap_neo4j",
-    ]
-    if reset_db:
-        bootstrap_cmd.append("--reset")
-
-    build_cmd = [
-        py,
-        "-m",
-        "bert_excitation_train.scripts.neo4j_kg.build_from_chapters",
-        "--min-name-freq",
-        str(min_name_freq),
-    ]
-    if auto_extract_relations:
-        build_cmd.append("--auto-extract-relations")
-
-    try:
-        subprocess.run(bootstrap_cmd, cwd=str(repo_root), check=True)
-        subprocess.run(build_cmd, cwd=str(repo_root), check=True)
-        print("🧩 [Neo4j同步] 已完成：从 outputs/chapters 构建/更新 KG")
-    except subprocess.CalledProcessError as e:
-        print(f"⚠️ [Neo4j同步] 失败：{e}")
-    except Exception as e:  # noqa: BLE001
-        print(f"⚠️ [Neo4j同步] 异常：{e}")
+    with get_neo4j_driver() as driver:
+        driver.verify_connectivity()
+        create_constraints_and_indexes(driver)
+        replace_chapter_memories(
+            driver,
+            memory_by_chapter.values(),
+            story_id=scoped_story_id,
+            prune_missing=True,
+        )
+        with driver.session() as session:
+            rows = session.run(
+                """
+                MATCH (ch:StoryChapter {story_id:$story_id})
+                RETURN ch.number AS chapter, count(ch) AS node_count,
+                       collect(ch.content_hash) AS content_hashes
+                ORDER BY chapter
+                """,
+                story_id=scoped_story_id,
+            )
+            graph_rows = {
+                int(row["chapter"]): (
+                    int(row["node_count"]),
+                    [str(value or "") for value in row["content_hashes"]],
+                )
+                for row in rows
+            }
+    if set(graph_rows) != set(text_by_chapter):
+        raise RuntimeError("Neo4j 投影章节集合与正式正文不一致。")
+    for chapter, text in text_by_chapter.items():
+        count, hashes = graph_rows[chapter]
+        if count != 1 or hashes != [content_hash(text)]:
+            raise RuntimeError(f"第{chapter}章 Neo4j 投影哈希或节点唯一性校验失败。")
+    print(
+        f"🧩 [Neo4j同步] 已完成 story_id={scoped_story_id}，"
+        f"正文/账本/图谱共 {len(text_by_chapter)} 章完全一致。"
+    )
 
 # 前几章的硬编码章节卡（不依赖事件簇），用来严格锁定第 1/2 章的写法
 SPECIAL_CARDS: Dict[int, Dict[str, Any]] = {
@@ -319,6 +380,7 @@ class _RebirthRevengeGeneratorV2Core:
         self.prev_life_ctx: Dict[int, str] = {}
         self.project_root = PROJECT_ROOT
         self.outputs_dir = DEFAULT_OUTPUTS_DIR
+        self.chapters_dir = self.outputs_dir / "chapters"
         self.generated_chapters: Dict[int, str] = {}
         self.use_knowledge_graph = False
         self._kg: Optional[object] = None
@@ -342,7 +404,7 @@ class _RebirthRevengeGeneratorV2Core:
         if prev_num in self.generated_chapters:
             return self.generated_chapters[prev_num]
         if chapters_dir is None:
-            chapters_path = self.outputs_dir / "chapters"
+            chapters_path = Path(self.chapters_dir)
         else:
             chapters_path = self._resolve_path(chapters_dir)
         prev_file = chapters_path / f"chapter_{prev_num:03d}.txt"
@@ -426,6 +488,8 @@ class _RebirthRevengeGeneratorV2Core:
         iteration: int = 0,
         max_tokens: Optional[int] = None,
     ) -> str:
+        if not API_Key_QW:
+            raise RuntimeError("Missing required env var: DASHSCOPE_API_KEY")
         dashscope.api_key = API_Key_QW
 
         system_message = {"role": "system", "content": prompt}
@@ -439,32 +503,67 @@ class _RebirthRevengeGeneratorV2Core:
             "通用封闭场景的第" in prompt
             and "不写整章" in prompt
         )
+        is_narrative_unit = "V2_NARRATIVE_UNIT_PROSE" in prompt
         is_quality_critic = "V2_QUALITY_CRITIC_JSON" in prompt
         if is_quality_critic:
             user_message = {"role": "user", "content": "请只输出审查 JSON"}
+        elif is_narrative_unit:
+            user_message = {"role": "user", "content": "请只写当前叙事单元正文"}
         temperature = float(os.getenv(
             (
                 "DASHSCOPE_QUALITY_CRITIC_TEMPERATURE"
                 if is_quality_critic
+                else "DASHSCOPE_NARRATIVE_UNIT_TEMPERATURE"
+                if is_narrative_unit
                 else "DASHSCOPE_SEGMENT_TEMPERATURE"
                 if is_closed_segment
                 else "DASHSCOPE_CHAPTER_TEMPERATURE"
             ),
-            "0.12" if is_quality_critic else "0.32" if is_closed_segment else "0.55",
+            (
+                "0.12"
+                if is_quality_critic
+                else "0.38"
+                if is_narrative_unit
+                else "0.32"
+                if is_closed_segment
+                else "0.55"
+            ),
         ))
         top_p = float(os.getenv(
             (
                 "DASHSCOPE_QUALITY_CRITIC_TOP_P"
                 if is_quality_critic
+                else "DASHSCOPE_NARRATIVE_UNIT_TOP_P"
+                if is_narrative_unit
                 else "DASHSCOPE_SEGMENT_TOP_P"
                 if is_closed_segment
                 else "DASHSCOPE_CHAPTER_TOP_P"
             ),
-            "0.35" if is_quality_critic else "0.62" if is_closed_segment else "0.78",
+            (
+                "0.35"
+                if is_quality_critic
+                else "0.66"
+                if is_narrative_unit
+                else "0.62"
+                if is_closed_segment
+                else "0.78"
+            ),
         ))
 
+        chapter_model = os.getenv("DASHSCOPE_CHAPTER_MODEL", "qwen-plus")
+        if is_quality_critic:
+            selected_model = os.getenv("DASHSCOPE_QUALITY_CRITIC_MODEL", chapter_model)
+        elif is_narrative_unit:
+            selected_model = os.getenv(
+                "DASHSCOPE_NARRATIVE_UNIT_MODEL",
+                os.getenv("DASHSCOPE_SEGMENT_MODEL", chapter_model),
+            )
+        elif is_closed_segment:
+            selected_model = os.getenv("DASHSCOPE_SEGMENT_MODEL", chapter_model)
+        else:
+            selected_model = chapter_model
         call_kwargs = {
-            "model": os.getenv("DASHSCOPE_CHAPTER_MODEL", "qwen-plus"),
+            "model": selected_model,
             "messages": [system_message, user_message],
             "temperature": temperature,
             "top_p": top_p,
@@ -575,16 +674,30 @@ class _RebirthRevengeGeneratorV2Core:
 
     def save_chapter(self, chapter_num: int, content: str, output_dir: Optional[str] = None) -> str:
         if output_dir is None:
-            out_dir = self.outputs_dir / "chapters"
+            out_dir = Path(self.chapters_dir)
         else:
             out_dir = self._resolve_path(output_dir)
 
         os.makedirs(str(out_dir), exist_ok=True)
         filepath = str(out_dir / f"chapter_{chapter_num:03d}.txt")
 
-        cleaned_content = self._normalize_heroine_names(content or "")
-        with open(filepath, "w", encoding="utf-8") as f:
-            f.write(cleaned_content)
+        # The accepted text is already canonicalized and reviewed.  Mutating it
+        # here would make the disk chapter differ from the text hashed into
+        # StoryMemory and Neo4j.
+        accepted_content = str(content or "")
+        temporary = filepath + f".tmp.{os.getpid()}"
+        try:
+            with open(temporary, "w", encoding="utf-8") as f:
+                f.write(accepted_content)
+                f.flush()
+                os.fsync(f.fileno())
+            os.replace(temporary, filepath)
+        except BaseException:
+            try:
+                os.unlink(temporary)
+            except FileNotFoundError:
+                pass
+            raise
 
         print(f"💾 已保存到: {filepath}")
         return filepath
@@ -827,7 +940,13 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
             return
 
         self.story_id = story_id_for_clusters(DEFAULT_EVENT_CLUSTERS_V2)
-        memory_dir = OUTPUT_DIR / "knowledge_graph" / "stories" / self.story_id / "chapter_memory"
+        memory_dir = (
+            Path(self.outputs_dir)
+            / "knowledge_graph"
+            / "stories"
+            / self.story_id
+            / "chapter_memory"
+        )
 
         memory_heuristic_only = os.getenv("STORY_MEMORY_HEURISTIC_ONLY", "").strip().lower() in {
             "1", "true", "yes", "on",
@@ -858,7 +977,12 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
         mode_note = "（确定性规则抽取）" if memory_heuristic_only else "（Qwen 抽取，失败时规则降级）"
         print(f"🧠 StoryMemory 已启用{mode_note}：{memory_dir}")
 
-    def review_story_memory(self, chapter_num: int, content: str) -> Tuple[Dict[str, Any], List[Any]]:
+    def review_story_memory(
+        self,
+        chapter_num: int,
+        content: str,
+        pending_memories: Iterable[Dict[str, Any]] = (),
+    ) -> Tuple[Dict[str, Any], List[Any]]:
         coordinator = getattr(self, "story_memory", None)
         if coordinator is None:
             return {}, []
@@ -885,17 +1009,31 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
         forced_timeline = ""
         if isinstance(card, dict) and str(card.get("chapter_role_v2") or "") == "prev_life_death_only":
             forced_timeline = "previous_life"
+        review_kwargs: Dict[str, Any] = {
+            "known_names": known_names,
+            "forced_timeline": forced_timeline,
+        }
+        pending_memory_list = [
+            memory for memory in pending_memories if isinstance(memory, dict)
+        ]
+        if pending_memory_list:
+            review_kwargs["pending_memories"] = pending_memory_list
         return coordinator.review_candidate(
             chapter_num,
             content,
-            known_names=known_names,
-            forced_timeline=forced_timeline,
+            **review_kwargs,
         )
 
     def commit_story_memory(self, memory: Dict[str, Any]) -> None:
         coordinator = getattr(self, "story_memory", None)
         if coordinator is not None and memory:
             coordinator.commit(memory)
+
+    def commit_story_memories(self, memories: Iterable[Dict[str, Any]]) -> None:
+        coordinator = getattr(self, "story_memory", None)
+        prepared = [memory for memory in memories if isinstance(memory, dict) and memory]
+        if coordinator is not None and prepared:
+            coordinator.commit_many(prepared)
 
     def attach_online_retriever(self) -> None:
         """
@@ -907,7 +1045,10 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
         except Exception:
             return
 
-        def _online_retrieve(chapter_num: int) -> str:
+        def _online_retrieve(
+            chapter_num: int,
+            pending_memories: Iterable[Dict[str, Any]] = (),
+        ) -> str:
             # 从本章卡中抽取 allowed_roles / main_opponent，作为召回条件
             card = self._get_card_for_chapter(chapter_num)
             allowed = []
@@ -928,7 +1069,14 @@ class RebirthRevengeGeneratorV2(_RebirthRevengeGeneratorV2Core):
             coordinator = getattr(self, "story_memory", None)
             if coordinator is not None:
                 try:
-                    ledger_context = str(coordinator.context_for_chapter(chapter_num, max_chars=2200) or "")
+                    ledger_context = str(
+                        coordinator.context_for_chapter(
+                            chapter_num,
+                            max_chars=2200,
+                            pending_memories=pending_memories,
+                        )
+                        or ""
+                    )
                 except Exception:  # noqa: BLE001
                     ledger_context = ""
             graph_context = ""
@@ -1804,7 +1952,19 @@ def _has_tangible_payoff(
             re.I | re.S,
         )
     )
-    return opponent_loses and protagonist_gains
+    if opponent_loses and protagonist_gains:
+        return True
+    # Generic payoff wording is narrower than the card-driven rights model.
+    # When every independently locked settlement clause is visibly enacted,
+    # do not reject an equivalent "移交/暂停" formulation as missing payoff.
+    settlement_groups = _narrative_result_anchor_groups(card)
+    return bool(
+        len(settlement_groups) >= 2
+        and all(
+            _settlement_relation_present(content, group)
+            for group in settlement_groups
+        )
+    )
 
 
 PAYOFF_AUTHORITY_TOKENS = (
@@ -1989,6 +2149,13 @@ def _prose_structure_failure(text: str) -> Optional[str]:
         "与会者依次确认最终状态，随后才收起各自材料",
         "没有再得到恢复操作的机会",
         "现场到此收束",
+        "没有重新解释前因",
+        "把每一样已经出现的材料放回同一条行动链",
+        "不接受事后补造的新说法",
+        "只解释你亲手做的这一件",
+        "没有向歌迷索要信任",
+        "要求每一次判断都能由购票人自己复核",
+        "个人判断不能直接决定冻结",
     )
     marker_hits = [marker for marker in fallback_markers if marker in content]
     if len(marker_hits) >= 2:
@@ -1998,7 +2165,7 @@ def _prose_structure_failure(text: str) -> Optional[str]:
             + "。必须从章节卡重新写成有人物动作、对白节奏和具体场面变化的自然正文。"
         )
     if (
-        len(content) >= 1200
+        len(content) >= 1000
         and 4 <= len(paragraphs) <= 7
         and paragraphs
         and min(len(paragraph) for paragraph in paragraphs) >= 120
@@ -2144,6 +2311,50 @@ def _generic_prose_quality_failures(text: str) -> List[str]:
             "最后一拍应停在已经生效的决定、物件交接、锋利对白或对手直接反应上。"
         )
     return failures
+
+
+def _results_first_delivery_enabled() -> bool:
+    """Keep continuity strict while allowing non-fatal prose defects through."""
+
+    return os.getenv("V2_RESULTS_FIRST_DELIVERY", "").strip().lower() in {
+        "1", "true", "yes", "on",
+    }
+
+
+def _partition_relaxable_delivery_failures(
+    failures: Iterable[str],
+) -> Tuple[List[str], List[str]]:
+    """Split factual/causal blockers from prose warnings in results-first mode."""
+
+    ordered = list(dict.fromkeys(
+        str(failure or "").strip()
+        for failure in failures
+        if str(failure or "").strip()
+    ))
+    if not _results_first_delivery_enabled():
+        return ordered, []
+    relaxable_markers = (
+        "少于预算下限",
+        "超过预算上限",
+        "叙事单元把过多句子写成手脚、呼吸或站位的微动作清单",
+        "只有验证冲突单元可以出现一次叫停或暂停",
+        "能力验真把口头降速争执升级成对手触碰、逼近或阻断主角身体",
+        "能力验真靠危险特技堆高难度",
+        "见证者用伪专业指标宣判能力",
+        "能力验真出现多次叫停",
+        "叙事单元与前面单元措辞和动作过度相似",
+        "正文把过多句子消耗在手脚、站位、呼吸或细碎身体动作上",
+        "正文反复标注人物距离、方向和站位",
+        "正文由少量近似等长的大段机械拼接",
+        "正文出现近距离词语自我重复或病态搭配",
+        "结尾在结果落地后漂移到天气、窗景、光影或空气描写",
+    )
+    soft = [
+        failure for failure in ordered
+        if any(marker in failure for marker in relaxable_markers)
+    ]
+    hard = [failure for failure in ordered if failure not in soft]
+    return hard, soft
 
 
 def _cross_chapter_prose_similarity_failures(
@@ -2630,7 +2841,7 @@ def _extract_scene_evidence_carriers(text: str) -> List[str]:
         r"(?:未签字|已签字|原始|公开|实名|异常|内部|纸面)?[\u4e00-\u9fff]{0,6}操作日志",
         r"(?:未签字|已签字|原始|公开|实名|异常|内部)?[\u4e00-\u9fff]{0,6}验收单",
         r"(?:补充|霸王|原始|正式|临时)?(?:合同|协议|签字页|授权书)",
-        r"(?:隐藏|自动移交|原始|补充|正式|临时)?(?:条款|代签授权|签署权|冷静期)",
+        r"(?:隐藏|原始|补充|正式|临时)?条款",
         r"(?:实名|票务|异常|黄牛|内部)?(?:校验结果|核票结果|票务清单|预留票|票池|实名校验|实名名单|实名数据)",
         r"(?:银行|慈善|项目|公开|原始)?(?:账单|账目|流水|转账记录|收支记录)",
         r"(?:私人|慈善|基金|收款)?(?:账户|支付申请|签名文件)",
@@ -2639,6 +2850,7 @@ def _extract_scene_evidence_carriers(text: str) -> List[str]:
         r"(?:独立|第三方|正式)?(?:估值结果|评估结果|估值|交易文件)",
         r"(?:等重|测试用|封存的)?(?:沙袋|配重|样品|封签|针剂)",
         r"(?:舞台|升降|安全)?(?:控制器|控制台|升降台|停机按钮)",
+        r"(?:隐藏|完整|内部|原始)?(?:排期总表|总排期表|排期表|总表)",
         r"(?:送货单|领用簿|排期表|彩排表|值班记录|签收记录|实名名单)",
     )
     carriers: List[str] = []
@@ -2653,7 +2865,41 @@ def _extract_scene_evidence_carriers(text: str) -> List[str]:
                 carrier = re.split(r"[与和及]", carrier)[-1]
             if len(carrier) >= 2:
                 carriers.append(carrier)
+    if re.search(
+        r"(?:撤下|撤回|停用|终止|取消)[^，。；！？]{0,20}"
+        r"(?:病弱|降配)[^，。；！？]{0,12}宣传",
+        source,
+    ):
+        # The accepted performance recipe realizes an abstract publicity
+        # withdrawal as one already-present, unnamed sheet.  Making that
+        # carrier explicit keeps the generic unit path from inventing a phone,
+        # market department, app, or new document at settlement time.
+        carriers.append("旧宣传页")
     return _ordered_unique_text(carriers)
+
+
+def _extract_action_discovered_carriers(text: str) -> List[str]:
+    """Return carriers that only become known when the planned action discovers them."""
+    discovered: List[str] = []
+    discovery_pattern = re.compile(
+        r"(?:发现|查出|找出|翻出|揭开|识别出|核出|暴露出)"
+    )
+    for clause in re.split(r"[，。；！？]", str(text or "")):
+        match = discovery_pattern.search(clause)
+        if not match:
+            continue
+        discovered.extend(
+            _extract_scene_evidence_carriers(clause[match.end() :])
+        )
+    return _ordered_unique_text(discovered)
+
+
+def _same_scene_carrier(left: str, right: str) -> bool:
+    a = str(left or "").strip()
+    b = str(right or "").strip()
+    if not a or not b:
+        return False
+    return bool(set(_carrier_aliases(a)) & set(_carrier_aliases(b)))
 
 
 def _scene_contract_clause(
@@ -2693,8 +2939,14 @@ def _derive_closed_scene_contract(
         return None
 
     action = str(milestone.get("action") or card.get("chapter_goal") or "").strip()
-    opponent_reaction = str(milestone.get("opponent_reaction") or "").strip()
-    immediate_result = str(milestone.get("result") or card.get("chapter_ending") or "").strip()
+    initial_opponent_reaction = str(
+        milestone.get("opponent_reaction") or ""
+    ).strip()
+    opponent_reaction = initial_opponent_reaction
+    raw_immediate_result = str(
+        milestone.get("result") or card.get("chapter_ending") or ""
+    ).strip()
+    immediate_result = raw_immediate_result
     info_gap = str(card.get("info_gap_from_prev_life") or "").strip()
     cluster_outcome = str(card.get("cluster_outcome") or "").strip()
     index = max(1, int(card.get("cluster_chapter_index") or 1))
@@ -2731,6 +2983,106 @@ def _derive_closed_scene_contract(
             opponent_scene_actor = candidate
             break
 
+    opponent_aliases = _exact_unique_text(
+        (
+            opponent_scene_actor,
+            opponent_scene_actor.split("·", 1)[0],
+            opponent,
+            opponent.split("·", 1)[0],
+            "对手",
+        )
+    )
+    emergent_result_clauses: List[str] = []
+    evidence_result_clauses: List[str] = []
+    decision_result_clauses: List[str] = []
+    settlement_result_clauses: List[str] = []
+    atomic_result_clauses: List[str] = []
+    result_conjunction = re.compile(
+        r"并(?=(?:当场)?(?:撤下|收回|获得|取得|失去|暂停|冻结|退回|退还|"
+        r"撤回|废除|拒签|触发|驳回|保住|归还|返还|取消|停止|解除|移交|"
+        r"交出|否决|叫停|通知|要求))"
+    )
+    for raw_clause in re.split(r"[，；;。]", raw_immediate_result):
+        atomic_result_clauses.extend(
+            item.strip()
+            for item in result_conjunction.split(raw_clause)
+            if item.strip()
+        )
+    terminal_result_pattern = re.compile(
+        r"撤下|收回|获得|取得|失去|暂停|停职|冻结|退回|退还|撤回|废除|"
+        r"拒签|触发|驳回|保住|归还|返还|取消|停止|解除|移交|"
+        r"正式生效|当场否决|无法.{0,10}(?:获利|出票)|没有流出|不再拥有"
+    )
+    decision_result_pattern = re.compile(
+        r"叫停|通知|要求|确认|指出|表决|展示|公开|重新核验"
+    )
+    protagonist_aliases = _exact_unique_text(
+        (protagonist, protagonist.split("·", 1)[0], "麦珂", "主角")
+    )
+    for clause in atomic_result_clauses:
+        process_transition = re.match(
+            r"^(?P<process>.+?(?:校验|核验|验收|评估|测试))"
+            r"(?P<verb>冻结|退回|撤下|暂停|驳回)"
+            r"(?P<object>.+)$",
+            clause,
+        )
+        if process_transition:
+            process = process_transition.group("process").strip()
+            transition_verb = process_transition.group("verb").strip()
+            transition_object = process_transition.group("object").strip()
+            evidence_result_clauses.append(
+                f"{process}确认{transition_object}"
+            )
+            clause = f"{transition_verb}{transition_object}"
+        clause_carriers = _extract_scene_evidence_carriers(clause)
+        opponent_reveals_carrier = (
+            bool(clause_carriers)
+            and any(alias and alias in clause for alias in opponent_aliases)
+            and bool(
+                re.search(
+                    r"亲手交出|交出|拿出|递交|提交|摊开|展示|签下|签字|"
+                    r"按下|承认|暴露",
+                    clause,
+                )
+            )
+            and not bool(
+                re.search(
+                    r"撤下|冻结|暂停|停职|获得|收回|失去|退回|返还|"
+                    r"生效|否决|叫停|废除|终止",
+                    clause,
+                )
+            )
+        )
+        if opponent_reveals_carrier:
+            emergent_result_clauses.append(clause)
+        elif terminal_result_pattern.search(clause):
+            settlement_result_clauses.append(clause)
+        elif (
+            decision_result_pattern.search(clause)
+            and any(alias and alias in clause for alias in protagonist_aliases)
+        ):
+            decision_result_clauses.append(clause)
+        else:
+            evidence_result_clauses.append(clause)
+    if not settlement_result_clauses:
+        fallback_source = (
+            decision_result_clauses
+            or evidence_result_clauses
+            or emergent_result_clauses
+        )
+        if fallback_source:
+            settlement_result_clauses.append(fallback_source.pop())
+    if emergent_result_clauses:
+        opponent_reaction = "；".join(
+            item
+            for item in (opponent_reaction, *emergent_result_clauses)
+            if item
+        )
+    immediate_result = "；".join(settlement_result_clauses)
+    emergent_opponent_reaction = "；".join(emergent_result_clauses)
+    evidence_result = "；".join(evidence_result_clauses)
+    decision_result = "；".join(decision_result_clauses)
+
     all_milestones = [
         item for item in (card.get("cluster_milestones") or [])
         if isinstance(item, dict)
@@ -2739,6 +3091,11 @@ def _derive_closed_scene_contract(
         "；".join(str(item.get(key) or "") for key in ("action", "opponent_reaction", "result"))
         for item in all_milestones
         if int(item.get("chapter") or 0) < int(card.get("chapter_id") or 0)
+    )
+    initial_text = action
+    action_and_opposition_text = "；".join((action, opponent_reaction))
+    archetype_classification_text = "；".join(
+        (action, opponent_reaction, raw_immediate_result)
     )
     current_text = "；".join((action, opponent_reaction, immediate_result))
     contract_text = "；".join((
@@ -2784,29 +3141,151 @@ def _derive_closed_scene_contract(
         ):
             supporting_cast.append(name)
     established_carriers = _extract_scene_evidence_carriers(prior_text)
-    current_carriers = _extract_scene_evidence_carriers(current_text)
-    allowed_carriers = _ordered_unique_text(established_carriers + current_carriers)
+    action_carriers_all = _extract_scene_evidence_carriers(initial_text)
+    action_discovered_carriers = _extract_action_discovered_carriers(initial_text)
+    initial_carriers = _ordered_unique_text(
+        carrier
+        for carrier in action_carriers_all
+        if not any(
+            _same_scene_carrier(carrier, previous)
+            for previous in established_carriers + action_discovered_carriers
+        )
+    )
+    action_carriers = _ordered_unique_text(
+        carrier
+        for carrier in action_discovered_carriers
+        if not any(
+            _same_scene_carrier(carrier, previous)
+            for previous in established_carriers + initial_carriers
+        )
+    )
+    initial_opposition_carriers = _ordered_unique_text(
+        carrier
+        for carrier in _extract_scene_evidence_carriers(
+            initial_opponent_reaction
+        )
+        if not any(
+            _same_scene_carrier(carrier, previous)
+            for previous in established_carriers + initial_carriers + action_carriers
+        )
+    )
+    opposition_carriers = _ordered_unique_text(
+        carrier
+        for carrier in _extract_scene_evidence_carriers(opponent_reaction)
+        if not any(
+            _same_scene_carrier(carrier, previous)
+            for previous in (
+                established_carriers
+                + initial_carriers
+                + action_carriers
+                + initial_opposition_carriers
+            )
+        )
+    )
+    evidence_result_carriers = _ordered_unique_text(
+        carrier
+        for carrier in _extract_scene_evidence_carriers(evidence_result)
+        if not any(
+            _same_scene_carrier(carrier, previous)
+            for previous in (
+                established_carriers
+                + initial_carriers
+                + action_carriers
+                + initial_opposition_carriers
+                + opposition_carriers
+            )
+        )
+    )
+    decision_result_carriers = _ordered_unique_text(
+        carrier
+        for carrier in _extract_scene_evidence_carriers(decision_result)
+        if not any(
+            _same_scene_carrier(carrier, previous)
+            for previous in (
+                established_carriers
+                + initial_carriers
+                + action_carriers
+                + initial_opposition_carriers
+                + opposition_carriers
+                + evidence_result_carriers
+            )
+        )
+    )
+    result_carriers = _ordered_unique_text(
+        carrier
+        for carrier in _extract_scene_evidence_carriers(immediate_result)
+        if not any(
+            _same_scene_carrier(carrier, previous)
+            for previous in (
+                established_carriers
+                + initial_carriers
+                + action_carriers
+                + initial_opposition_carriers
+                + opposition_carriers
+                + evidence_result_carriers
+                + decision_result_carriers
+            )
+        )
+    )
+    current_carriers = _ordered_unique_text(
+        initial_carriers
+        + action_carriers
+        + initial_opposition_carriers
+        + opposition_carriers
+        + evidence_result_carriers
+        + decision_result_carriers
+        + result_carriers
+    )
+    allowed_carriers = _ordered_unique_text(
+        established_carriers + current_carriers
+    )
 
-    if re.search(r"安全|升降|机关|空载|沙袋|停机|坠落|配重", current_text):
+    scene_variant = ""
+    if re.search(
+        r"安全|升降|机关|空载|沙袋|停机|坠落|配重",
+        archetype_classification_text,
+    ):
         archetype = "physical_safety_validation"
-    elif re.search(r"票务|票池|预留票|黄牛|核票|实名", current_text):
+    elif re.search(
+        r"票务|票池|预留票|黄牛|核票|实名",
+        archetype_classification_text,
+    ):
         archetype = "public_resource_audit"
     elif (
-        re.search(r"母带|版权|作品资产", current_text)
-        and re.search(r"交易|估值|回购|打包", current_text)
+        re.search(r"母带|版权|作品资产", archetype_classification_text)
+        and re.search(r"交易|估值|回购|打包", archetype_classification_text)
     ):
         archetype = "asset_transaction_audit"
-    elif re.search(r"合同|协议|条款|签字权|签批权", current_text):
+    elif re.search(
+        r"合同|协议|条款|签字权|签批权|冷静期|代签授权",
+        archetype_classification_text,
+    ):
         archetype = "contract_rights_audit"
-    elif re.search(r"账单|账目|流水|慈善款|转账|财务", current_text):
+    elif re.search(
+        r"账单|账目|流水|慈善款|转账|财务",
+        archetype_classification_text,
+    ):
         archetype = "financial_process_audit"
+    elif (
+        re.search(
+            r"公开.{0,4}(?:排练|演唱)|无修音|一镜到底|完整演绎|"
+            r"实时声轨|原声|拍摄",
+            archetype_classification_text,
+        )
+        and re.search(
+            r"媒体|抹黑|造谣|负面信息|采访|中断拍摄",
+            archetype_classification_text,
+        )
+    ):
+        archetype = "live_capability_validation"
+        scene_variant = "public_performance_rebuttal"
     elif re.search(
         r"公开.{0,4}排练|无修音|现场演唱|现场表演|一镜到底|"
         r"实时声轨|原声发布权|体能测试|假唱|唱跳",
-        current_text,
+        archetype_classification_text,
     ):
         archetype = "live_capability_validation"
-    elif allowed_carriers:
+    elif established_carriers or initial_carriers or action_carriers:
         archetype = "evidence_confrontation"
     else:
         archetype = "action_confrontation"
@@ -2837,6 +3316,7 @@ def _derive_closed_scene_contract(
             "contract_rights_audit": "从开场就在场的合同管理负责人",
             "financial_process_audit": "从开场就在场的财务管理负责人",
             "live_capability_validation": "从开场就在场的合作方",
+            "public_performance_rebuttal": "从开场就在场的合作方",
             "evidence_confrontation": "从开场就在场的现场管理负责人",
             "action_confrontation": "从开场就在场的现场管理负责人",
         }.get(archetype, "从开场就在场的有权者")
@@ -2900,6 +3380,7 @@ def _derive_closed_scene_contract(
         "version": 1,
         "source": "event_cluster_milestone",
         "scene_archetype": archetype,
+        "scene_variant": scene_variant,
         "phase": phase,
         "protagonist": protagonist,
         "opponent": opponent,
@@ -2909,11 +3390,23 @@ def _derive_closed_scene_contract(
         "old_trap_signal": info_gap,
         "trigger_action": action,
         "opponent_self_incrimination": opponent_reaction,
+        "initial_opponent_reaction": initial_opponent_reaction,
+        "emergent_opponent_reaction": emergent_opponent_reaction,
+        "evidence_result": evidence_result,
+        "decision_result": decision_result,
         "established_evidence_carriers": established_carriers,
+        "initial_evidence_carriers": initial_carriers,
+        "action_evidence_carriers": action_carriers,
+        "initial_opposition_evidence_carriers": initial_opposition_carriers,
+        "opposition_evidence_carriers": opposition_carriers,
+        "evidence_result_evidence_carriers": evidence_result_carriers,
+        "decision_result_evidence_carriers": decision_result_carriers,
+        "result_evidence_carriers": result_carriers,
         "current_evidence_carriers": current_carriers,
         "allowed_evidence_carriers": allowed_carriers,
         "verification_action": action,
         "immediate_result": immediate_result,
+        "raw_immediate_result": raw_immediate_result,
         "authority_actor": authority_actor,
         "authority_gain": authority_gain,
         "opponent_loss": loss_text,
@@ -2958,12 +3451,11 @@ def _scene_contract_fulfillment_failures(
     body = str(text or "")
     carriers = list(contract.get("current_evidence_carriers") or [])
     if carriers:
-        present_count = sum(1 for carrier in carriers if carrier in body)
-        required_count = min(2, len(carriers))
-        if present_count < required_count:
+        missing_carriers = [carrier for carrier in carriers if carrier not in body]
+        if missing_carriers:
             failures.append(
                 "正文没有落实情节组指定的当前证据载体："
-                + "、".join(carriers[:5])
+                + "、".join(missing_carriers[:5])
             )
     opponent = str(
         contract.get("opponent_scene_actor")
@@ -2984,9 +3476,15 @@ def _scene_contract_fulfillment_failures(
             if marker in loss
         ]
         gain_marker_groups = {
-            "获得": ("获得", "取得", "拿回", "夺回", "归还", "收回"),
-            "取得": ("取得", "获得", "拿回", "夺回", "收回"),
-            "拿回": ("拿回", "夺回", "归还", "收回", "获得"),
+            "获得": (
+                "获得", "取得", "拿回", "夺回", "归还", "收回",
+                "移交", "交给", "划归", "转交", "授予",
+            ),
+            "取得": (
+                "取得", "获得", "拿回", "夺回", "收回", "移交",
+                "交给", "划归", "转交", "授予",
+            ),
+            "拿回": ("拿回", "夺回", "归还", "收回", "获得", "移交"),
             "夺回": ("夺回", "拿回", "收回", "获得"),
             "恢复": ("恢复", "归还", "重新获得", "收回"),
             "保住": ("保住", "仍在", "没有失去", "由我确认"),
@@ -4750,6 +5248,8 @@ def _render_grounded_execution_text(value: Any, chapter_card: Optional[Dict[str,
             ("独立医疗见证人在场", "独立现场见证人在场"),
             ("独立医疗见证", "独立现场见证"),
             ("医疗见证人", "现场见证人"),
+            ("高强度体能测试", "高强度唱跳连测"),
+            ("高强度体能评估", "现场高强度完成度评估"),
             ("体能测试", "高强度唱跳连测"),
             ("体能评估", "现场完成度评估"),
         )
@@ -4802,6 +5302,491 @@ def _has_unplanned_medical_showcase(text: str, chapter_card: Optional[Dict[str, 
     return len(body_groups) >= 2 or numeric_metric or data_display
 
 
+def _right_keys_in_prose_fragment(text: str) -> List[str]:
+    """Canonicalize every independently changing right named by a fragment."""
+
+    from bert_excitation_train.scripts.neo4j_kg.chapter_memory import (
+        canonical_possession_key,
+    )
+
+    body = str(text or "")
+    fragments = re.findall(
+        r"[\u4e00-\u9fff]{2,34}(?:权限|决定权|否决权|签批权|签字权|签署权|"
+        r"保管权|监督权|监管权|调度权|控制权|发布权|分发权|回购权|"
+        r"指挥权|停机权|支付权|打包权|授权|席位|票池)",
+        body,
+    )
+    if re.search(r"(?:排练群|群聊|群发|发布人).{0,30}(?:发布|群发)|(?:发布|群发).{0,30}(?:排练群|群聊|全组)", body):
+        fragments.append(body)
+    if re.search(r"(?:真实)?(?:排练|彩排)表.{0,30}(?:确认|签字|签批)", body):
+        fragments.append(body)
+    if re.search(r"(?:真实)?(?:排练|彩排)表.{0,30}(?:分发|分发名单)|分发名单.{0,30}(?:决定|分发)", body):
+        fragments.append(body)
+    return _ordered_unique_text(
+        canonical_possession_key(fragment, body)
+        for fragment in fragments
+        if fragment
+    )
+
+
+def _prose_right_state_transitions(text: str) -> List[Dict[str, str]]:
+    """Extract actual right changes, excluding neutral references to old state."""
+
+    transitions: List[Dict[str, str]] = []
+    for sentence in (
+        part.strip()
+        for part in re.split(r"[。！？!?；;\n]+", str(text or ""))
+        if part.strip()
+    ):
+        strong_change = bool(re.search(
+            r"重新(?:获得|取得|授予|恢复|争夺|结算)|改由|改成|重拟|"
+            r"归还|交还|移交|授予|获得|取得|拿回|夺回|收回|恢复|保住|"
+            r"失去|撤销|冻结|暂停|取消|不再有权|不再负责|正式生效|当场生效",
+            sentence,
+        ))
+        assignment_change = bool(re.search(
+            r"(?:由|改由)[^。！？\n]{0,24}(?:确认|决定|签字|签批|发布)"
+            r"[^。！？\n]{0,12}(?:生效|执行|接管|负责)?",
+            sentence,
+        ))
+        neutral_reference = bool(re.search(
+            r"仍|继续|保持|沿用|照旧|按前章|依旧|维持原状|没有变化|不作变更",
+            sentence,
+        ))
+        if not strong_change and not assignment_change:
+            continue
+        if neutral_reference and not strong_change:
+            continue
+        for key in _right_keys_in_prose_fragment(sentence):
+            transitions.append({"key": key, "evidence": sentence[:240]})
+    unique: List[Dict[str, str]] = []
+    seen: set[Tuple[str, str]] = set()
+    for item in transitions:
+        signature = (item["key"], item["evidence"])
+        if signature in seen:
+            continue
+        seen.add(signature)
+        unique.append(item)
+    return unique
+
+
+def _prior_current_right_keys(card: Dict[str, Any]) -> set[str]:
+    from bert_excitation_train.scripts.neo4j_kg.chapter_memory import story_state_slot
+
+    keys: set[str] = set()
+    for item in card.get("_prior_current_right_states", []) or []:
+        if not isinstance(item, dict):
+            continue
+        if str(item.get("field") or item.get("predicate") or "").lower() != "possession":
+            continue
+        slot = story_state_slot(item)
+        if slot.startswith("possession:"):
+            keys.add(slot.split(":", 1)[1])
+    return keys
+
+
+def _planned_right_transition_keys(card: Dict[str, Any]) -> set[str]:
+    milestone = card.get("chapter_milestone") or card.get("milestone") or {}
+    if not isinstance(milestone, dict):
+        return set()
+    result = str(milestone.get("result") or "")
+    keys = {item["key"] for item in _prose_right_state_transitions(result)}
+    keys.update(_right_keys_in_prose_fragment(result))
+    return keys
+
+
+def _attach_prior_current_right_states(
+    gen: Any,
+    card: Dict[str, Any],
+    chapter: int,
+    pending_memories: Iterable[Dict[str, Any]] = (),
+) -> None:
+    """Attach only the structured graph-source rights needed by prose gates."""
+
+    coordinator = getattr(gen, "story_memory", None)
+    if coordinator is None:
+        card["_prior_current_right_states"] = []
+        return
+    state = coordinator.state_before(chapter, pending_memories)
+    card["_prior_current_right_states"] = [
+        dict(item)
+        for item in state.get("states", []) or []
+        if isinstance(item, dict)
+        and str(item.get("field") or "").lower() == "possession"
+    ]
+
+
+def _scene_archetype_grounding_failures(
+    text: str,
+    chapter_card: Optional[Dict[str, Any]],
+) -> List[str]:
+    """Validate current milestone evidence and prose by reusable scene archetype."""
+    body = str(text or "")
+    card = chapter_card if isinstance(chapter_card, dict) else {}
+    contract = _grounded_scene_contract_payload(card)
+    if not contract:
+        return []
+    archetype = str(contract.get("scene_archetype") or "action_confrontation")
+    milestone = card.get("chapter_milestone") or card.get("milestone") or {}
+    if not isinstance(milestone, dict):
+        milestone = {}
+    planned_text = "；".join(
+        str(milestone.get(key) or "")
+        for key in ("action", "opponent_reaction", "result")
+    )
+    planned_text += "；" + "；".join(
+        str(value)
+        for key in (
+            "established_evidence_carriers",
+            "current_evidence_carriers",
+            "allowed_evidence_carriers",
+        )
+        for value in (
+            contract.get(key)
+            if isinstance(contract.get(key), list)
+            else [contract.get(key)]
+        )
+        if value
+    )
+    failures: List[str] = []
+
+    prior_right_keys = _prior_current_right_keys(card)
+    planned_right_keys = _planned_right_transition_keys(card)
+    repeated_right_transitions = [
+        item
+        for item in _prose_right_state_transitions(body)
+        if item["key"] in prior_right_keys
+        and item["key"] not in planned_right_keys
+    ]
+    if repeated_right_transitions:
+        failures.append(
+            "正文把 StoryMemory/Neo4j 已生效的独立权利重新授予、撤销或结算："
+            + "、".join(
+                _ordered_unique_text(
+                    item["evidence"] for item in repeated_right_transitions
+                )[:4]
+            )
+            + "。允许中性回指既有状态；只有当前里程碑明确列出的规范化权利"
+            "才可发生新的状态迁移。"
+        )
+
+    operational_labels = _unplanned_operational_labels(body, planned_text)
+    if operational_labels:
+        failures.append(
+            "正文临时命名当前里程碑未建立的流程、文件、产品或编号："
+            + "、".join(operational_labels[:6])
+            + "。删除名称及其衍生机制，只保留功能称呼。"
+        )
+
+    try:
+        cluster_index = int(card.get("cluster_chapter_index") or 0)
+    except (TypeError, ValueError):
+        cluster_index = 0
+    if cluster_index == 1:
+        memory_sentences = _narrative_memory_sentences(body)
+        if len(memory_sentences) > 1 or any(
+            len(sentence) > 140 for sentence in memory_sentences
+        ):
+            failures.append(
+                "情节族首章把前世识别扩写成多段回忆或多次闪回；"
+                "只保留一句私下判断，下一句立即执行当前行动。"
+            )
+
+    evidence_families = {
+        "数字取证或监测": (
+            r"后台日志|后台界面|时间戳|截图|监控画面|监控截帧|"
+            r"数据曲线|监测屏|监测仪|检测报告|体能报告|评估报告|"
+            r"平板|投影屏|投影仪|电子台账|服务器|指纹验证|声纹验证"
+        ),
+        "录制或传播设备": r"摄像机|录像机|录音笔|微型录音|开启录音|全程录像",
+        "额外纸面材料": (
+            r"确认书|确认单|授权册|备案表|报告书|交接单|额外清单|"
+            r"隐藏附件|补充附件|内部通告|审查报告"
+        ),
+        "匿名或外部援手": r"匿名邮件|匿名消息|神秘人|陌生人递来|供应商回电|记者爆料",
+    }
+    semantic_permissions = {
+        "数字取证或监测": (
+            "日志", "屏幕", "监测", "检测", "评估报告", "数据", "实名校验",
+        ),
+        "录制或传播设备": (
+            "拍摄", "视频", "录像", "录音", "声轨", "一镜到底",
+        ),
+        "额外纸面材料": (
+            "确认书", "确认单", "授权册", "备案表", "报告", "交接单", "附件",
+        ),
+        "匿名或外部援手": ("匿名", "供应商", "记者", "爆料"),
+    }
+    unplanned_families: List[str] = []
+    for label, pattern in evidence_families.items():
+        if not re.search(pattern, body, re.I):
+            continue
+        if any(token in planned_text for token in semantic_permissions[label]):
+            continue
+        unplanned_families.append(label)
+    if unplanned_families:
+        failures.append(
+            "正文越出当前里程碑的证据白名单，新增"
+            + "、".join(unplanned_families)
+            + "。删除整条额外机制，只保留当前行动、白名单载体和当面决定。"
+        )
+
+    if archetype in {
+        "live_capability_validation",
+        "public_performance_rebuttal",
+        "physical_safety_validation",
+    }:
+        quantitative_hits = [
+            match
+            for match in re.findall(
+                r"[一二两三四五六七八九十百零半\d]+"
+                r"(?:秒|分钟|小时|轮|组|拍|小节|度|米|厘米|公分|毫米|分贝|赫兹)",
+                body,
+            )
+            if match not in planned_text
+            and not (
+                match.endswith("轮")
+                and re.search(r"[二两三四五六七八九十百\d]+轮", planned_text)
+            )
+            and not (
+                archetype == "physical_safety_validation"
+                and match in {"三轮", "十秒"}
+            )
+        ]
+        if quantitative_hits:
+            failures.append(
+                "正文增加里程碑未规定的精确轮次、时长、距离或技术参数："
+                + "、".join(list(dict.fromkeys(quantitative_hits))[:6])
+                + "。只保留情节族明写的参数，其余改成定性动作与结果。"
+            )
+
+    if archetype in {
+        "live_capability_validation",
+        "public_performance_rebuttal",
+    }:
+        anatomy_hits = list(dict.fromkeys(re.findall(
+            r"胸廓|肋间肌|腹横肌|腹腔|胸腔|声带闭合|肌群|"
+            r"代偿性喘息|共鸣位置|神经信号|关节角度|心率|血氧|乳酸",
+            body,
+        )))
+        if anatomy_hits:
+            failures.append(
+                "能力验真用解剖或医学术语代替可读表演："
+                + "、".join(anatomy_hits[:6])
+                + "。改为少量自然动作、现场听感和人物判断。"
+            )
+        stunt_hits = list(dict.fromkeys(re.findall(
+            r"腾空|腾身跃起|跃起|弹起|翻滚|跪地|单膝压地|撑地|冲刺|"
+            r"急停变向|三连滑步|旋身暴起|高位跳跃|连续跳跃",
+            body,
+        )))
+        if len(stunt_hits) >= 2 or any(
+            marker in stunt_hits
+            for marker in (
+                "腾身跃起", "跃起", "翻滚", "跪地", "单膝压地",
+                "撑地", "旋身暴起", "高位跳跃",
+            )
+        ):
+            failures.append(
+                "能力验真靠危险特技堆高难度："
+                + "、".join(stunt_hits[:6])
+                + "。能力证明应压缩成可信的连续完成，不用身体奇观。"
+            )
+        numbered_passages = re.findall(
+            r"第[一二两三四五六七八九十百零\d]+"
+            r"(?:段|拍|次|组|轮|小节|主歌|副歌)",
+            body,
+        )
+        if len(numbered_passages) >= 2:
+            failures.append(
+                "能力展示被拆成编号式轮次或乐段，形成机械分镜；"
+                "把整次表演压缩成一个连续段落，只保留一次中途阻挠。"
+            )
+        sentences = [
+            sentence.strip()
+            for sentence in re.split(r"[。！？!?；;\n]+", body)
+            if sentence.strip()
+        ]
+        performance_terms = (
+            "唱", "歌声", "舞步", "跳", "转身", "侧移", "摆臂",
+            "换气", "气息", "音准", "节拍", "动作", "落地",
+        )
+        proof_sentences = sum(
+            1
+            for sentence in sentences
+            if any(term in sentence for term in performance_terms)
+        )
+        if (
+            len(sentences) >= 20
+            and proof_sentences >= 9
+            and proof_sentences / len(sentences) > 0.36
+        ):
+            failures.append(
+                "能力展示占用正文过多，挤掉了权力施压、人物选择和判断变化；"
+                "将表演压到全文四分之一以内，把篇幅转给冲突因果与即时结果。"
+            )
+        stop_count = len(re.findall(r"停一下|暂停|叫停|喊停|停下来", body))
+        if stop_count > 1:
+            failures.append(
+                "能力验真出现多次叫停，重复制造同一轮冲突；"
+                "对手只干预一次，主角随后一次完成验证。"
+            )
+        institutional_drift = [
+            hit
+            for hit in re.findall(
+                r"医疗组|医护组|医生组|董事会|市场部|宣传总监|行业通用|三方共识|"
+                r"强制缓降|安全阈值|授权背景",
+                body,
+            )
+            if hit not in planned_text
+        ]
+        if institutional_drift:
+            failures.append(
+                "能力验真临时创造未规划的机构、行业标准或执行链："
+                + "、".join(list(dict.fromkeys(institutional_drift))[:6])
+                + "。只保留现场见证人的定性结论和合作方当场执行，不新增部门、"
+                "授权、共识或专业阈值。"
+            )
+        opponent_name = str(
+            contract.get("opponent_scene_actor")
+            or contract.get("opponent")
+            or "对手"
+        ).strip()
+        opponent_aliases = _exact_unique_text(
+            (opponent_name, opponent_name.split("·", 1)[0], "对手")
+        )
+        physical_action = re.compile(
+            r"跨前|逼近|伸手|抬手|手掌|手搭|搭在|挡在|拦住|截断|触碰|"
+            r"抓住|抓着|扣住|扣在|按住|按在|推开|握住|攥住|贴在"
+        )
+        physical_target = re.compile(r"主角|麦珂|肩|肘|手臂|身体|发力|路径")
+        physical_sentences = [
+            sentence
+            for sentence in re.split(r"[。！？!?；;\n]+", body)
+            if sentence.strip()
+        ]
+        physical_interference = any(
+            any(alias in sentence for alias in opponent_aliases if alias)
+            and physical_action.search(sentence)
+            and physical_target.search(sentence)
+            for sentence in physical_sentences
+        )
+        if physical_interference:
+            failures.append(
+                "能力验真把口头降速争执升级成对手触碰、逼近或阻断主角身体；"
+                "对手只能口头叫停、要求降速或作一次程序性阻挠，主角在同一次"
+                "未中断验证中继续完成。"
+            )
+        if re.search(
+            r"(?:见证人|医生|医师).{0,80}"
+            r"(?:无代偿|基准|指标|声带|肌力|阈值|负荷标准|生理)",
+            body,
+            re.S,
+        ):
+            failures.append(
+                "见证者用伪专业指标宣判能力；只给一句基于亲眼所见的定性结论。"
+            )
+        witness_right_transfer = re.search(
+            r"(?:见证人|合作方).{0,45}(?:获得|取得|接管|拿到|被授予|移交给)"
+            r".{0,24}(?:强度裁量权|训练强度决定权|强度决定权)|"
+            r"(?:强度裁量权|训练强度决定权|强度决定权).{0,30}"
+            r"(?:交给|移交给|归于|归)(?:合作方|(?:现场)?见证人|他们|两人)",
+            body,
+            re.S,
+        )
+        if witness_right_transfer:
+            failures.append(
+                "现场见证人与合作方被错误写成训练权利受让人；见证人只能观察并"
+                "定性确认，合作方只能执行本章锁定处分，训练强度决定权最终只能"
+                "归还主角。"
+            )
+
+    if archetype == "evidence_confrontation":
+        mismatch_dimensions = {
+            "编号": bool(re.search(
+                r"(?:编号|批号|序号|尾号).{0,16}(?:不一致|不符|对不上|错误|不同)",
+                body,
+            )),
+            "数量": bool(re.search(
+                r"(?:数量|支数|件数).{0,16}(?:不一致|不符|对不上|相差|多|少)|"
+                r"多出|少了|相差|多记|少记",
+                body,
+            )),
+            "日期": bool(re.search(
+                r"日期.{0,16}(?:不一致|不符|对不上|错误|不同)|"
+                r"(?:写着|标着).{0,8}(?:前一天|后一天).{0,18}(?:冲突|对不上|不符)",
+                body,
+            )),
+            "签收": bool(re.search(
+                r"(?:签收|签名|签字).{0,16}(?:空白|缺失|不符|对不上|不是本人)|"
+                r"(?:未签字|无人签收|空白签收栏)",
+                body,
+            )),
+        }
+        used_dimensions = [
+            name for name, present in mismatch_dimensions.items() if present
+        ]
+        planned_dimensions = [
+            name for name in mismatch_dimensions if name in planned_text
+        ]
+        unplanned_dimensions = [
+            name for name in used_dimensions if name not in planned_dimensions
+        ]
+        allowed_unplanned = 1 if not planned_dimensions else 0
+        if len(unplanned_dimensions) > allowed_unplanned:
+            failures.append(
+                "材料核对同时增加多种未规划矛盾："
+                + "、".join(unplanned_dimensions)
+                + "。若里程碑没有指定细节，只允许选择一处肉眼可读差异。"
+            )
+        forensic_hits = re.findall(
+            r"油墨|墨迹新旧|纸张纤维|防伪涂层|化学显色|笔迹鉴定|"
+            r"胶痕|紫外灯|实验室检测",
+            body,
+        )
+        if forensic_hits:
+            failures.append(
+                "材料核对升级成伪法证分析："
+                + "、".join(list(dict.fromkeys(forensic_hits))[:6])
+                + "。只读白名单材料表面直接可见的信息。"
+            )
+
+    if archetype == "contract_rights_audit":
+        invented_clause_hits = [
+            hit
+            for hit in re.findall(
+                r"第[一二两三四五六七八九十百\d]+[条款项]|"
+                r"(?:附件|条款|协议|合同)[A-Za-z\d一二三四五六七八九十-]+号",
+                body,
+            )
+            if hit not in planned_text
+        ]
+        if invented_clause_hits:
+            failures.append(
+                "合同场景临时创造条款或附件编号："
+                + "、".join(invented_clause_hits[:6])
+                + "。只解释里程碑已经命名的权利与签署动作。"
+            )
+
+    if archetype == "physical_safety_validation" and re.search(
+        r"工程师突然|检测团队赶到|实验室报告|神秘故障|远程入侵",
+        body,
+    ):
+        failures.append(
+            "安全验证引入里程碑之外的技术援手或故障解释；"
+            "只写白名单装置、对手当场操作、可见风险和叫停决定。"
+        )
+    if archetype == "asset_transaction_audit" and re.search(
+        r"神秘买家|匿名竞价|加密报价|隐藏产权|海外空壳",
+        body,
+    ):
+        failures.append(
+            "资产交易引入神秘买家或隐藏产权捷径；"
+            "只用里程碑明确的资产、估值、冻结和回购权推进。"
+        )
+    return failures
+
+
 def _chapter_body_hard_failures(
     part_text: str,
     chapter_num: int = 0,
@@ -4811,9 +5796,14 @@ def _chapter_body_hard_failures(
     out: List[str] = []
     card = chapter_card if isinstance(chapter_card, dict) else {}
     role_v2 = str(card.get("chapter_role_v2") or "")
-    if len(part_text or "") > MAX_CHAPTER_CHARS_V2:
+    effective_maximum = (
+        MAX_CHAPTER_CHARS_V2 + 100
+        if _results_first_delivery_enabled()
+        else MAX_CHAPTER_CHARS_V2
+    )
+    if len(part_text or "") > effective_maximum:
         out.append(
-            f"正文超过{MAX_CHAPTER_CHARS_V2}字（当前{len(part_text or '')}字）；"
+            f"正文超过{effective_maximum}字（当前{len(part_text or '')}字）；"
             "删去重复内心、环境铺陈和法规科普，保留既定动作、对话与结算。"
         )
     reality_hits = [name for name in REAL_WORLD_PROPER_NOUNS if name in (part_text or "")]
@@ -4860,6 +5850,25 @@ def _chapter_body_hard_failures(
         },
         ensure_ascii=False,
     )
+    future_only_terms = _future_milestone_materials(chapter_num, card)
+    current_allowed_terms = (
+        _grounded_scene_contract_payload(card).get(
+            "allowed_evidence_carriers"
+        )
+        or []
+    )
+    future_term_hits = _future_material_hits(
+        part_text or "",
+        future_only_terms,
+        current_allowed_terms,
+    )
+    if future_term_hits:
+        out.append(
+            "正文提前使用后续里程碑专属材料或权限："
+            + "、".join(future_term_hits[:8])
+            + "。当前章只能兑现当前里程碑；删除这些材料、核对动作和未来收益，"
+            "不得把下一章的小故事提前并入本章。"
+        )
     planned_medication_material = bool(re.search(
         r"针剂|药品|药物|用药|药盒|药瓶|镇静|封签|送货单|领用簿|营养针",
         card_contract_text,
@@ -4880,16 +5889,38 @@ def _chapter_body_hard_failures(
             "正文把表演/体能反杀改写成未规划的医学数据展示；删除数值、指标组合、曲线和仪器读数，"
             "以可见动作、气息状态及见证人一句定性结论完成证明。"
         )
-    out.extend(_closed_evidence_failures(part_text or "", card))
+    out.extend(_scene_archetype_grounding_failures(part_text or "", card))
+    use_legacy_closed_validators = (
+        os.environ.get("V2_USE_LEGACY_CLOSED_EVIDENCE_VALIDATORS", "0")
+        .strip()
+        .lower()
+        in {"1", "true", "yes", "on"}
+        or not isinstance(card.get("chapter_milestone"), dict)
+    )
+    if use_legacy_closed_validators:
+        out.extend(_closed_evidence_failures(part_text or "", card))
     card_plans_rule_text = bool(re.search(r"合同|协议|条款|附件|章程|规则", card_contract_text))
-    invented_rule_citations = re.findall(
+    rule_citation_pattern = re.compile(
         r"第[一二三四五六七八九十百\d]+[条款项]|"
         r"(?:协议|合同|条款|附件|章程)(?:中|所载|规定|编号)|"
         r"根据.{0,24}(?:协议|合同|规定|规则|细则)|"
         r"(?:规定|规则|细则).{0,24}(?:写在|载明|要求|必须|须)|"
-        r"(?:手写|新增|临时|红章旁).{0,16}(?:补充说明|管理规定|执行规则)",
-        part_text or "",
+        r"(?:手写|新增|临时|红章旁).{0,16}(?:补充说明|管理规定|执行规则)"
     )
+    invented_rule_citations: List[str] = []
+    rule_text = part_text or ""
+    for match in rule_citation_pattern.finditer(rule_text):
+        matched = match.group(0)
+        prefix = rule_text[max(0, match.start() - 16) : match.start()]
+        is_rhetorical_question = bool(
+            re.match(r"(?:规定|规则|细则)", matched)
+            and re.search(
+                r"(?:谁(?:的)?|哪(?:一)?条|什么|凭什么|何来|怎么)\s*$",
+                prefix,
+            )
+        )
+        if not is_rhetorical_question:
+            invented_rule_citations.append(matched)
     if invented_rule_citations and not card_plans_rule_text:
         out.append(
             "正文临时发明执行卡未建立的协议编号或条款作为反转依据；"
@@ -5093,11 +6124,7 @@ def _chapter_body_hard_failures(
             "人物行为失真：主角在记者、镜头或公众面前直接自曝上一世/重生。"
             "除非主题明确允许超自然公开，否则重生信息只能留在内心或极少数已建立的私密关系中。"
         )
-    spoken_rebirth = re.findall(
-        r"[“\"][^”\"\n]{0,100}(?:上一世|前世|重生|死过一次|我回来了)[^”\"\n]{0,100}[”\"]",
-        part_text or "",
-    )
-    if spoken_rebirth:
+    if _narrative_memory_marker_in_quotes(part_text or ""):
         out.append("主角把上一世或重生秘密说进对白；这些信息只能留在内心叙述，不得向盟友或对手自曝。")
     opponent_names = [
         str(member.get("name") or "").strip()
@@ -5799,7 +6826,8 @@ def _chapter_body_hard_failures(
                 "终章明确让核心对手保住关键利益，削弱反杀兑现；"
                 "本簇必须让其付出与前世伤害相称的即时资源代价。"
             )
-    return out
+    hard, _soft = _partition_relaxable_delivery_failures(out)
+    return hard
 
 
 def _infer_evidence_types_from_info_gap(info_gap: str) -> List[str]:
@@ -6606,6 +7634,7 @@ def _build_cards_from_clusters(clusters: List[Dict[str, Any]]) -> Dict[int, Dict
                 "main_opponent": main_opp,
                 "prev_life_tragedy": prev_tragedy,
                 "this_life_revenge": this_revenge,
+                "cluster_this_life_revenge": this_revenge,
                 "info_gap_from_prev_life": info_gap,
                 "cluster_outcome": cluster_outcome,
                 "escalation_level": escalation,
@@ -6631,6 +7660,33 @@ def _build_cards_from_clusters(clusters: List[Dict[str, Any]]) -> Dict[int, Dict
             card["scene_contract"] = _derive_closed_scene_contract(card)
             card["theme_constraints"] = constraints_text()
             attach_theme_contract(card)
+            embedded_theme_contract = (
+                cluster.get("theme_contract")
+                if isinstance(cluster.get("theme_contract"), dict)
+                else {}
+            )
+            if embedded_theme_contract:
+                card["theme_contract"] = {
+                    **(card.get("theme_contract") or {}),
+                    **embedded_theme_contract,
+                }
+            card["user_theme"] = str(
+                cluster.get("user_theme")
+                or embedded_theme_contract.get("theme")
+                or card.get("theme_contract", {}).get("theme")
+                or ""
+            ).strip()
+            card["user_background"] = str(
+                cluster.get("user_background")
+                or embedded_theme_contract.get("background")
+                or card.get("theme_contract", {}).get("background")
+                or ""
+            ).strip()
+            card["user_protagonists"] = list(
+                cluster.get("user_protagonists")
+                or embedded_theme_contract.get("protagonists")
+                or []
+            )
             cards[ch] = card
     return cards
 
@@ -7237,6 +8293,48 @@ QUALITY_SCORE_THRESHOLDS_V2 = {
     "fictional_naming": 8.0,
 }
 
+RESULTS_FIRST_QUALITY_SCORE_THRESHOLDS_V2 = {
+    "cluster_fidelity": 7.5,
+    "causal_clarity": 6.5,
+    "prose_naturalness": 5.5,
+    "emotional_force": 5.0,
+    "non_repetition": 5.5,
+    "ending_precision": 5.5,
+    "fictional_naming": 8.0,
+}
+
+
+def _active_quality_score_thresholds() -> Dict[str, float]:
+    if _results_first_delivery_enabled():
+        return RESULTS_FIRST_QUALITY_SCORE_THRESHOLDS_V2
+    return QUALITY_SCORE_THRESHOLDS_V2
+
+
+def _quality_failure_is_relaxable(item: Dict[str, str]) -> bool:
+    """Treat only plainly stylistic critic findings as advisory."""
+
+    if not _results_first_delivery_enabled():
+        return False
+    payload = " ".join(
+        str(item.get(key) or "") for key in ("code", "evidence", "repair")
+    ).lower()
+    hard_markers = (
+        "里程碑", "因果", "前世", "重生", "连续性", "矛盾", "冲突",
+        "未来", "提前", "新增", "虚构", "现实专名", "姓名", "身份",
+        "权限", "权利", "处分", "交接", "结果未", "没有生效", "未生效",
+        "缺少结果", "人物缺席", "不完整", "残句", "断裂句", "指代错乱",
+        "cluster_fidelity", "causal_clarity", "fictional_naming",
+    )
+    if any(marker in payload for marker in hard_markers):
+        return False
+    style_markers = (
+        "微动作", "动作清单", "舞台调度", "站位", "距离", "呼吸",
+        "生成腔", "模板", "段落", "句式", "文风", "prose", "naturalness",
+        "重复词", "同义复述", "光影", "天气", "窗景", "结尾漂移",
+        "emotional_force", "non_repetition", "ending_precision",
+    )
+    return any(marker in payload for marker in style_markers)
+
 
 def _build_chapter_quality_critic_prompt(
     chapter_num: int,
@@ -7251,8 +8349,19 @@ def _build_chapter_quality_critic_prompt(
         milestone = {}
     contract = _grounded_scene_contract_payload(chapter_card)
     allowed_cast = _select_grounded_chapter_cast(chapter_card)
+    future_materials = _future_milestone_materials(chapter_num, chapter_card)
+    delivery_policy = (
+        "当前采用成果优先验收：事实、因果、连续性、人物身份、未来材料、权限和"
+        "里程碑仍是硬门禁；微动作偏多、段落形态、个别重复词或结尾审美属于"
+        "soft_warnings，不得仅凭这些问题拒绝交付。正文可读且核心反杀完整时应 accept=true。"
+        if _results_first_delivery_enabled()
+        else "当前采用完整质量验收，所有列出的交付标准均须达到。"
+    )
     return f"""V2_QUALITY_CRITIC_JSON
 你是独立小说成稿主编。你不续写、不润色，只判断第{chapter_num}章能否无人值守地正式交付。
+
+【交付策略】
+{delivery_policy}
 
 【最高优先级：人工已验收的情节族里程碑】
 主角行动：{milestone.get('action') or chapter_card.get('this_life_revenge') or chapter_card.get('chapter_goal') or ''}
@@ -7262,6 +8371,9 @@ def _build_chapter_quality_critic_prompt(
 【通用场景契约】
 {json.dumps(contract, ensure_ascii=False)}
 
+【本章禁止提前使用的后续材料】
+{json.dumps(future_materials, ensure_ascii=False)}
+
 【允许具名人物】
 {json.dumps(allowed_cast, ensure_ascii=False)}
 
@@ -7269,7 +8381,7 @@ def _build_chapter_quality_critic_prompt(
 {prev_tail_scene or '无'}
 
 【必须逐项审查】
-1. 里程碑行动、对手反应、即时结果是否按因果顺序真正发生；不得用近义概述替代，不得发明新证据、权限、见证者或裁定者。
+1. 里程碑行动、对手反应、即时结果是否按因果顺序真正发生；不得用近义概述替代，不得发明新证据、权限、见证者或裁定者，也不得提前使用上方后续材料。
 2. 对手行为是否符合其既定角色，结果是谁宣布、为何生效、交给谁，是否清楚且无交接矛盾。
 3. 行文是否像自然小说，而非动作拆解、舞台调度、验收报告或模型拼接；尤其检查手脚、呼吸、视线、站位、距离等微动作是否淹没情节。
 4. 是否有完全重复句、同义复述、同一句内名词自我重复、残句、断裂句、指代错乱或前后自相矛盾。
@@ -7294,6 +8406,7 @@ def _build_chapter_quality_critic_prompt(
   "hard_failures": [
     {{"code": "简短代码", "evidence": "正文中的短证据或准确概述", "repair": "从空白重写时应如何修复"}}
   ],
+  "soft_warnings": ["不阻塞交付的文风建议"],
   "summary": "一句话总评"
 }}
 
@@ -7312,6 +8425,7 @@ def _parse_chapter_quality_review(raw: str) -> Optional[Dict[str, Any]]:
     if not isinstance(raw_scores, dict):
         return None
     scores: Dict[str, float] = {}
+    thresholds = _active_quality_score_thresholds()
     for key in QUALITY_SCORE_THRESHOLDS_V2:
         try:
             value = float(raw_scores.get(key))
@@ -7327,11 +8441,13 @@ def _parse_chapter_quality_review(raw: str) -> Optional[Dict[str, Any]]:
         return None
     for item in raw_failures[:12]:
         if isinstance(item, dict):
-            hard_failures.append({
+            parsed_item = {
                 "code": str(item.get("code") or "quality_failure").strip(),
                 "evidence": str(item.get("evidence") or "").strip(),
                 "repair": str(item.get("repair") or "").strip(),
-            })
+            }
+            if not _quality_failure_is_relaxable(parsed_item):
+                hard_failures.append(parsed_item)
         elif str(item or "").strip():
             hard_failures.append({
                 "code": "quality_failure",
@@ -7342,9 +8458,13 @@ def _parse_chapter_quality_review(raw: str) -> Optional[Dict[str, Any]]:
     low_scores = {
         key: score
         for key, score in scores.items()
-        if score < QUALITY_SCORE_THRESHOLDS_V2[key]
+        if score < thresholds[key]
     }
-    accepted = bool(obj.get("accept")) and not hard_failures and not low_scores
+    accepted = (
+        (bool(obj.get("accept")) or _results_first_delivery_enabled())
+        and not hard_failures
+        and not low_scores
+    )
     return {
         "accept": accepted,
         "model_accept": bool(obj.get("accept")),
@@ -7375,7 +8495,7 @@ def _chapter_quality_review_failures(review: Dict[str, Any]) -> List[str]:
         failures.append(
             "独立质量审稿分数未达标："
             + "、".join(
-                f"{key}={score:g}<{QUALITY_SCORE_THRESHOLDS_V2[key]:g}"
+                f"{key}={score:g}<{_active_quality_score_thresholds()[key]:g}"
                 for key, score in low_scores.items()
             )
             + "。从空白重写整章，不能在失败稿后补段。"
@@ -9028,10 +10148,18 @@ def _grounded_scene_contract_payload(
     return {
         key: contract.get(key)
         for key in (
-            "scene_archetype", "phase", "protagonist", "opponent",
+            "scene_archetype", "scene_variant", "phase", "protagonist", "opponent",
             "opponent_scene_actor", "supporting_cast",
             "supporting_organizations", "old_trap_signal", "trigger_action",
-            "opponent_self_incrimination", "established_evidence_carriers",
+            "opponent_self_incrimination", "initial_opponent_reaction",
+            "emergent_opponent_reaction", "evidence_result",
+            "decision_result", "established_evidence_carriers",
+            "initial_evidence_carriers", "action_evidence_carriers",
+            "initial_opposition_evidence_carriers",
+            "opposition_evidence_carriers",
+            "evidence_result_evidence_carriers",
+            "decision_result_evidence_carriers",
+            "result_evidence_carriers",
             "current_evidence_carriers", "allowed_evidence_carriers",
             "immediate_result", "authority_actor", "authority_gain",
             "opponent_loss", "protagonist_gain", "settlement_required",
@@ -9039,6 +10167,3076 @@ def _grounded_scene_contract_payload(
         )
         if contract.get(key) not in (None, "", [])
     }
+
+
+def _chapter_body_theme_contract(chapter_card: Optional[Dict[str, Any]]) -> str:
+    """Keep story identity and global invariants without exposing future plot inventory."""
+    card = chapter_card if isinstance(chapter_card, dict) else {}
+    theme_contract = (
+        card.get("theme_contract")
+        if isinstance(card.get("theme_contract"), dict)
+        else {}
+    )
+    theme = str(
+        card.get("user_theme")
+        or theme_contract.get("theme")
+        or THEME
+        or "运行时故事主题"
+    ).strip()
+    background = str(
+        card.get("user_background")
+        or theme_contract.get("background")
+        or BACKGROUND
+        or "运行时故事背景"
+    ).strip()
+    protagonists = [
+        str(member.get("name") or "").strip()
+        for member in (card.get("canonical_cast") or [])
+        if isinstance(member, dict)
+        and str(member.get("alignment") or "").casefold() == "protagonist"
+        and str(member.get("name") or "").strip()
+    ]
+    if not protagonists:
+        protagonists = [
+            str(value).strip()
+            for value in (theme_contract.get("protagonists") or [MAIN_PROTAGONIST])
+            if str(value).strip()
+        ]
+    hard_constraints = [
+        str(value).strip()
+        for value in (theme_contract.get("hard_constraints") or [])
+        if str(value).strip()
+    ][:6]
+    forbidden = [
+        str(value).strip()
+        for value in (theme_contract.get("forbidden_elements") or THEME_FORBIDDEN_ELEMENTS)
+        if str(value).strip()
+    ][:8]
+    lines = [
+        f"故事主题：{theme}",
+        f"故事背景：{background}",
+        f"固定主角：{'、'.join(protagonists) if protagonists else MAIN_PROTAGONIST}",
+        (
+            "主题与背景只决定世界、职业和情绪方向，不是本章可调用的素材清单；"
+            "本章事实必须服从下方当前里程碑。"
+        ),
+        (
+            "现实原型隔离：正文不得出现现实中完全相同的人名、地名、公司、机构、"
+            "场馆、医院、奖项、作品名或外文拼写；只能使用 canonical_cast 中已验收的"
+            "架空姓名、已经建立的架空指代（例如“米国”）或无姓名功能称呼。"
+        ),
+    ]
+    if hard_constraints:
+        lines.append("连续性硬约束：" + "；".join(hard_constraints))
+    if forbidden:
+        lines.append("禁止捷径：" + "；".join(forbidden))
+    return "\n".join(lines)
+
+
+def _future_milestone_materials(
+    chapter_num: int,
+    chapter_card: Optional[Dict[str, Any]],
+) -> List[str]:
+    """Compile future-only carriers and rights so setup chapters cannot borrow them."""
+    card = chapter_card if isinstance(chapter_card, dict) else {}
+    current_milestone = card.get("chapter_milestone") or card.get("milestone") or {}
+    if not isinstance(current_milestone, dict):
+        current_milestone = {}
+    current_text = "；".join(
+        str(current_milestone.get(key) or "")
+        for key in ("action", "opponent_reaction", "result")
+    )
+    current_contract = _grounded_scene_contract_payload(card)
+    current_allowed = set(current_contract.get("allowed_evidence_carriers") or [])
+    def extract_rights(value: str) -> List[str]:
+        rights: List[str] = []
+        for raw in re.findall(
+            r"[\u4e00-\u9fff]{2,16}(?:决定权|否决权|签批权|签字权|保管权|"
+            r"监督权|调度权|控制权|发布权|回购权|席位|资格)",
+            value,
+        ):
+            concise = re.sub(
+                r"^.*?(?:获得|取得|拿回|夺回|恢复|保住|归还|退回|收回|"
+                r"掌控|控制|失去|撤销|冻结|暂停|交出|取消)",
+                "",
+                raw,
+            ).strip()
+            rights.append(concise or raw)
+        return _ordered_unique_text(rights)
+
+    current_rights = set(extract_rights(current_text))
+    future_terms: List[str] = []
+    milestones = [
+        item for item in (card.get("cluster_milestones") or [])
+        if isinstance(item, dict)
+    ]
+    for milestone in milestones:
+        try:
+            milestone_chapter = int(milestone.get("chapter") or 0)
+        except (TypeError, ValueError):
+            continue
+        if milestone_chapter <= int(chapter_num):
+            continue
+        milestone_text = "；".join(
+            str(milestone.get(key) or "")
+            for key in ("action", "opponent_reaction", "result")
+        )
+        future_terms.extend(_extract_scene_evidence_carriers(milestone_text))
+        future_terms.extend(extract_rights(milestone_text))
+    return _ordered_unique_text(
+        term
+        for term in future_terms
+        if term
+        and term not in current_allowed
+        and term not in current_rights
+        and term not in current_text
+    )
+
+
+def _scene_archetype_writing_guard(
+    scene_contract: Optional[Dict[str, Any]],
+    *,
+    allowed_carriers: Optional[Iterable[str]] = None,
+) -> str:
+    """Translate scene archetypes into reusable prose limits, not plot templates."""
+    contract = scene_contract if isinstance(scene_contract, dict) else {}
+    archetype = str(contract.get("scene_archetype") or "action_confrontation")
+    guard_key = str(contract.get("scene_variant") or archetype)
+    carrier_values = (
+        contract.get("allowed_evidence_carriers") or []
+        if allowed_carriers is None
+        else allowed_carriers
+    )
+    carriers = "、".join(
+        str(value).strip()
+        for value in carrier_values
+        if str(value).strip()
+    ) or "无"
+    common = (
+        f"当前证据载体白名单：{carriers}。任何未列出的设备、日志、截图、录音、"
+        "报告、文书、钥匙、印鉴、编号和检测参数都不存在。"
+    )
+    guards = {
+        "live_capability_validation": (
+            "能力验真只用普通表演和现场听感。整章最多用两至三段概括性动作推进，"
+            "动作只可服务于“开始、承压、完成”三个因果节点；禁止逐拍拆手脚、呼吸、"
+            "肌肉和站位，禁止危险特技、精确时长/次数/角度/距离、命名曲目、观众席、"
+            "聚光灯、生理监测和声学参数。见证者必须明确称为现场见证人，只陈述亲眼"
+            "所见；合作方按里程碑作决定。对手只可口头叫停、要求降速或提出程序性阻挠，"
+            "不得触碰、逼近、遮挡或阻断主角身体。若当前结果是训练强度决定权，前章已"
+            "生效的发布权、彩排表确认权和分发权均保持原状，不得借排练表重新争夺或结算。"
+        ),
+        "public_performance_rebuttal": (
+            "公开表演反卡只用里程碑已经给出的表演、拍摄或声轨条件。禁止新增能力缺陷、"
+            "医疗监测、设备故障、热搜扩散、匿名爆料和第二次现场干预；表演压缩成一次"
+            "连续证明，主要篇幅写公开质疑的现实代价、对手选择与现场判断变化。"
+        ),
+        "evidence_confrontation": (
+            "材料核对只比较白名单载体上肉眼可读且里程碑已经给出的差异。"
+            "每件材料只承担一次因果功能，不做伪法证分析，不增加柜锁、钥匙、暗格、"
+            "检测设备或数字取证。处分与交接由契约指定的无姓名有权职位当场宣布。"
+        ),
+        "physical_safety_validation": (
+            "安全验证只操作白名单中的实体与流程；除里程碑明写的参数外不新增工程数值、"
+            "故障日志、检测报告或神秘损坏。重点写是否让真人进入危险、谁越过流程、"
+            "谁当场叫停，以及安全权限如何生效。"
+        ),
+        "public_resource_audit": (
+            "公共资源核验只用白名单名单、票据或公开流程；不靠黑客、后台入侵、"
+            "社交媒体扩散或匿名爆料。重点写参与者如何当面核对、阻挠如何失败、"
+            "资源如何即时退回或冻结。"
+        ),
+        "contract_rights_audit": (
+            "合同权利核验只使用当前白名单文书、条款或权利，不自行创造编号、附件、"
+            "补充规则或法律机构。重点写谁催促、谁保留选择、谁有权确认，以及权利变化。"
+        ),
+        "financial_process_audit": (
+            "财务核验只使用里程碑明写的账单、账户和审批动作，不新增银行后台、"
+            "黑客追踪、隐藏流水或监管突袭。重点写申请、核对、驳回、冻结和权责变化。"
+        ),
+        "asset_transaction_audit": (
+            "资产交易核验只使用里程碑明写的资产、报价和处置流程，不新增秘密买家、"
+            "匿名竞价、加密文件或临时产权证明。重点写交易为何被叫停及控制权如何变化。"
+        ),
+        "action_confrontation": (
+            "无专门证据时，推进只能来自当面提议、公开选择、对手照旧出招和即时决定；"
+            "不得为了制造反转临时补出文件、设备、证人或隐藏规则。"
+        ),
+    }
+    return common + "\n" + guards.get(guard_key, guards["action_confrontation"])
+
+
+def _memory_to_action_prompt(
+    chapter_num: int,
+    chapter_card: Optional[Dict[str, Any]],
+    scene_contract: Optional[Dict[str, Any]],
+) -> str:
+    card = chapter_card if isinstance(chapter_card, dict) else {}
+    role = str(card.get("chapter_role_v2") or "")
+    try:
+        cluster_index = int(card.get("cluster_chapter_index") or 0)
+    except (TypeError, ValueError):
+        cluster_index = 0
+    if cluster_index != 1 or role in {"prev_life_death_only", "rebirth_awakening_only"}:
+        return "本章不重复解释重生；需要预判时只写一句短促内心判断，不得进入对白。"
+    contract = scene_contract if isinstance(scene_contract, dict) else {}
+    archetype = str(contract.get("scene_archetype") or "action_confrontation")
+    memory_key = str(contract.get("scene_variant") or archetype)
+    old_control_patterns = {
+        "live_capability_validation": "对手曾把降低标准包装成保护或能力判断",
+        "public_performance_rebuttal": "对手曾用公开质疑和传播话术削弱他的表达权",
+        "evidence_confrontation": "对手曾用含混记录和经手流程掩盖自己的责任",
+        "physical_safety_validation": "对手曾以赶进度为由越过安全流程",
+        "public_resource_audit": "对手曾把公共资源藏进不透明的预留安排",
+        "contract_rights_audit": "对手曾把让权要求包装成保护性安排",
+        "financial_process_audit": "对手曾用关系或名目混淆公款与私用",
+        "asset_transaction_audit": "对手曾用时间压力和低价打包夺走资产控制",
+        "action_confrontation": "对手曾借同一种提议或流程争夺控制",
+    }
+    old_control = old_control_patterns.get(
+        memory_key,
+        old_control_patterns["action_confrontation"],
+    )
+    return (
+        "在开篇三分之一内只写一次私下的旧局识别：用“上一世”“前世”或"
+        f"“那一世”中的一个，自然表达“{old_control}”。这句话不得放进引号，"
+        "也不得照抄固定句式。随后立刻回到当前行动，让主角用“提前”或“先一步”"
+        "实际执行上方唯一事件事实中的主角行动，不要在这里复述行动原句。"
+        "前世只提供判断，不能变成当前物证，也不能点名后续里程碑材料。"
+    )
+
+
+def _body_safe_kg_context(
+    kg_context: str,
+    future_only_terms: List[str],
+    *,
+    current_allowed_terms: Iterable[str] = (),
+    max_chars: int = 1800,
+) -> str:
+    """Keep stable graph facts while hiding carriers reserved for later milestones."""
+    source = re.sub(r"\r\n?", "\n", str(kg_context or "")).strip()
+    if not source:
+        return ""
+    term_aliases = [
+        alias
+        for term in future_only_terms
+        for alias in _future_material_aliases(
+            str(term),
+            current_allowed_terms,
+        )
+    ]
+    kept: List[str] = []
+    for line in source.splitlines():
+        clauses = [
+            clause.strip()
+            for clause in re.split(r"(?<=[。！？；])", line)
+            if clause.strip()
+        ]
+        if not clauses:
+            clauses = [line.strip()]
+        clean_clauses = [
+            clause
+            for clause in clauses
+            if not any(alias in clause for alias in term_aliases)
+        ]
+        if clean_clauses:
+            kept.append("".join(clean_clauses))
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(kept)).strip()[:max_chars]
+
+
+def _compact_grounded_rewrite_feedback(
+    failures: Optional[List[str]],
+    future_only_terms: Optional[List[str]] = None,
+) -> List[str]:
+    """Give the next blank-page attempt a few causes, not an accumulated ban list."""
+    source = [str(item).strip() for item in (failures or []) if str(item).strip()]
+    if not source:
+        return []
+    future_terms = [str(term).strip() for term in (future_only_terms or []) if str(term).strip()]
+    buckets = (
+        (
+            "事实边界",
+            ("后续里程碑", "执行卡", "场景契约", "封闭证据", "新增", "擅自", "白名单"),
+            "上一稿加入了唯一事件事实之外的机制。新稿只写行动、阻挠、即时结果和当前载体。",
+        ),
+        (
+            "因果结果",
+            ("必须", "缺少", "没有落实", "没有写清", "顺序", "权限", "现实损失", "现实收益"),
+            "让对手阻挠直接触发主角反卡，并把里程碑结果写成现场已经生效的决定和反应。",
+        ),
+        (
+            "连续性",
+            ("连续性", "上一世", "前世", "重生", "人物", "姓名", "现实专名"),
+            "前世只保留一句私下判断，姓名只用固定角色；其余篇幅全部回到当前现场。",
+        ),
+        (
+            "行文质量",
+            ("重复", "机械", "身体动作", "微动作", "舞台调度", "段落", "结尾", "解剖", "参数", "轮次"),
+            "把能力、设备或材料展示压缩成一个连续段落，主要篇幅写对话施压、选择和判断变化。",
+        ),
+        (
+            "篇幅",
+            ("少于硬下限", "超过", "字"),
+            "在目标篇幅内完整展开冲突，不用环境、技术说明或结算后的新动作补字。",
+        ),
+    )
+    selected: List[str] = []
+    used_indexes: set[int] = set()
+    settlement_prefix = "结果单元没有让全部锁定处分、交接或收益实际生效"
+    for index, failure in enumerate(source):
+        if settlement_prefix not in failure:
+            continue
+        missing = failure.split("：", 1)[-1].strip("。 ")
+        if not missing or any(term in missing for term in future_terms):
+            missing = "当前锁定结果"
+        selected.append(
+            "结果落地：仍未当场生效的是"
+            f"{missing}；必须由当前有权者亲自宣布、确认、移交或执行，"
+            "并原样写出权利或处分名称。主角单方宣称、对手点头，"
+            "以及“稍后、明天、以后再办”的承诺都不算生效。"
+        )
+        used_indexes.add(index)
+        break
+    semantic_prefix = "叙事单元没有落实当前锁定动作或对象"
+    for index, failure in enumerate(source):
+        if index in used_indexes or semantic_prefix not in failure:
+            continue
+        missing = failure.split("：", 1)[-1].strip("。 ") or "当前锁定动作"
+        selected.append(
+            f"当前动作：上一稿没有完整写出{missing}。"
+            "必须在当前单元内用连续行动完成它；可使用自然同义表达，"
+            "但不能改成只唱、只说、只旁观或只准备。"
+        )
+        used_indexes.add(index)
+        break
+    authority_prefix = "叙事单元只让有权者在场或旁观"
+    for index, failure in enumerate(source):
+        if index in used_indexes or authority_prefix not in failure:
+            continue
+        actors = failure.split("：", 1)[-1].strip("。 ") or "当前有权者"
+        selected.append(
+            f"有权者行动：{actors}不能只在场、看见或沉默；"
+            "必须亲自改口、确认决定或执行当前结果。"
+        )
+        used_indexes.add(index)
+        break
+    missing_actor_prefix = "叙事单元没有让其戏剧功能要求的人物实际行动"
+    for index, failure in enumerate(source):
+        if index in used_indexes or missing_actor_prefix not in failure:
+            continue
+        actors = failure.split("：", 1)[-1].strip("。 ") or "当前要求人物"
+        selected.append(
+            f"要求人物：{actors}必须在本单元内亲自说话、确认、决定或执行；"
+            "不能缺席，也不能由医生、见证人、主角或对手代替。"
+        )
+        used_indexes.add(index)
+        break
+    quoted_memory_prefix = "前世信息被写进对白"
+    for index, failure in enumerate(source):
+        if index in used_indexes or quoted_memory_prefix not in failure:
+            continue
+        selected.append(
+            "前世信息：上一稿把旧局判断写进了对白。"
+            "把这句话移出所有引号，改成主角私下的一句内心判断，随后立刻回到今生行动。"
+        )
+        used_indexes.add(index)
+        break
+    for label, markers, directive in buckets:
+        for index, failure in enumerate(source):
+            if index in used_indexes or not any(marker in failure for marker in markers):
+                continue
+            selected.append(f"{label}：{directive}")
+            used_indexes.add(index)
+            break
+    for index, failure in enumerate(source):
+        if len(selected) >= 5:
+            break
+        if index in used_indexes:
+            continue
+        if any(term in failure for term in future_terms):
+            selected.append(
+                "未来隔离：上一稿调用了后续材料。新稿只使用当前载体，不猜测被隔离内容。"
+            )
+        else:
+            selected.append(
+                "整章重建：上一稿未通过验收；严格依次完成唯一事件事实，不继承旧稿措辞或附加机制。"
+            )
+    return list(dict.fromkeys(selected))[:5]
+
+
+def _compile_grounded_prose_spine(
+    chapter_num: int,
+    chapter_card: Optional[Dict[str, Any]],
+) -> Dict[str, Any]:
+    """Compile one accepted milestone into a single, non-repeating prose spine."""
+    card = chapter_card if isinstance(chapter_card, dict) else {}
+    milestone = card.get("chapter_milestone") or card.get("milestone") or {}
+    if not isinstance(milestone, dict):
+        milestone = {}
+    contract = _grounded_scene_contract_payload(card)
+    archetype = str(contract.get("scene_archetype") or "action_confrontation")
+    scene_variant = str(contract.get("scene_variant") or "").strip()
+    action = str(
+        milestone.get("action")
+        or contract.get("trigger_action")
+        or card.get("this_life_revenge")
+        or card.get("chapter_goal")
+        or ""
+    ).strip()
+    opposition = str(
+        milestone.get("opponent_reaction")
+        or contract.get("opponent_self_incrimination")
+        or ""
+    ).strip()
+    initial_opposition = str(
+        contract.get("initial_opponent_reaction")
+        or milestone.get("opponent_reaction")
+        or ""
+    ).strip()
+    emergent_opposition = str(
+        contract.get("emergent_opponent_reaction") or ""
+    ).strip()
+    evidence_result = str(contract.get("evidence_result") or "").strip()
+    decision_result = str(contract.get("decision_result") or "").strip()
+    result = str(
+        contract.get("immediate_result")
+        or milestone.get("result")
+        or card.get("core_payoff")
+        or card.get("chapter_ending")
+        or ""
+    ).strip()
+    established_carriers = [
+        str(value).strip()
+        for value in (contract.get("established_evidence_carriers") or [])
+        if str(value).strip()
+    ]
+    initial_carriers = [
+        str(value).strip()
+        for value in (contract.get("initial_evidence_carriers") or [])
+        if str(value).strip()
+    ]
+    action_carriers = [
+        str(value).strip()
+        for value in (contract.get("action_evidence_carriers") or [])
+        if str(value).strip()
+    ]
+    initial_opposition_carriers = [
+        str(value).strip()
+        for value in (
+            contract.get("initial_opposition_evidence_carriers") or []
+        )
+        if str(value).strip()
+    ]
+    opposition_carriers = [
+        str(value).strip()
+        for value in (contract.get("opposition_evidence_carriers") or [])
+        if str(value).strip()
+    ]
+    evidence_result_carriers = [
+        str(value).strip()
+        for value in (
+            contract.get("evidence_result_evidence_carriers") or []
+        )
+        if str(value).strip()
+    ]
+    decision_result_carriers = [
+        str(value).strip()
+        for value in (
+            contract.get("decision_result_evidence_carriers") or []
+        )
+        if str(value).strip()
+    ]
+    result_carriers = [
+        str(value).strip()
+        for value in (contract.get("result_evidence_carriers") or [])
+        if str(value).strip()
+    ]
+    if (
+        not initial_carriers
+        and not action_carriers
+        and not initial_opposition_carriers
+        and not opposition_carriers
+        and not evidence_result_carriers
+        and not decision_result_carriers
+        and not result_carriers
+    ):
+        action_carriers_all = _extract_scene_evidence_carriers(action)
+        action_discovered_carriers = _extract_action_discovered_carriers(action)
+        initial_carriers = _ordered_unique_text(
+            carrier
+            for carrier in action_carriers_all
+            if not any(
+                _same_scene_carrier(carrier, previous)
+                for previous in established_carriers + action_discovered_carriers
+            )
+        )
+        action_carriers = _ordered_unique_text(
+            carrier
+            for carrier in action_discovered_carriers
+            if not any(
+                _same_scene_carrier(carrier, previous)
+                for previous in established_carriers + initial_carriers
+            )
+        )
+        initial_opposition_carriers = _ordered_unique_text(
+            carrier
+            for carrier in _extract_scene_evidence_carriers(initial_opposition)
+            if not any(
+                _same_scene_carrier(carrier, previous)
+                for previous in (
+                    established_carriers + initial_carriers + action_carriers
+                )
+            )
+        )
+        opposition_carriers = _ordered_unique_text(
+            carrier
+            for carrier in _extract_scene_evidence_carriers(
+                emergent_opposition or opposition
+            )
+            if not any(
+                _same_scene_carrier(carrier, previous)
+                for previous in (
+                    established_carriers
+                    + initial_carriers
+                    + action_carriers
+                    + initial_opposition_carriers
+                )
+            )
+        )
+        evidence_result_carriers = _ordered_unique_text(
+            carrier
+            for carrier in _extract_scene_evidence_carriers(evidence_result)
+            if not any(
+                _same_scene_carrier(carrier, previous)
+                for previous in (
+                    established_carriers
+                    + initial_carriers
+                    + action_carriers
+                    + initial_opposition_carriers
+                    + opposition_carriers
+                )
+            )
+        )
+        decision_result_carriers = _ordered_unique_text(
+            carrier
+            for carrier in _extract_scene_evidence_carriers(decision_result)
+            if not any(
+                _same_scene_carrier(carrier, previous)
+                for previous in (
+                    established_carriers
+                    + initial_carriers
+                    + action_carriers
+                    + initial_opposition_carriers
+                    + opposition_carriers
+                    + evidence_result_carriers
+                )
+            )
+        )
+        result_carriers = _ordered_unique_text(
+            carrier
+            for carrier in _extract_scene_evidence_carriers(result)
+            if not any(
+                _same_scene_carrier(carrier, previous)
+                for previous in (
+                    established_carriers
+                    + initial_carriers
+                    + action_carriers
+                    + initial_opposition_carriers
+                    + opposition_carriers
+                    + evidence_result_carriers
+                    + decision_result_carriers
+                )
+            )
+        )
+    carriers = [
+        str(value).strip()
+        for value in (contract.get("current_evidence_carriers") or [])
+        if str(value).strip()
+    ]
+    if not carriers:
+        carriers = [
+            str(value).strip()
+            for value in (contract.get("allowed_evidence_carriers") or [])
+            if str(value).strip()
+        ]
+    protagonist = str(contract.get("protagonist") or MAIN_PROTAGONIST).strip()
+    opponent = str(
+        contract.get("opponent_scene_actor")
+        or contract.get("opponent")
+        or "既有对手"
+    ).strip()
+    authority = str(contract.get("authority_actor") or protagonist).strip()
+    phase = str(contract.get("phase") or "setup")
+
+    plans: Dict[str, Tuple[List[str], str]] = {
+        "live_capability_validation": (
+            [
+                "先让对手把降级包装成保护，并要求有权者接受他的判断，写清若他得逞会失去哪项当前权利。",
+                "主角要求所有人只判断眼前这次完成，并明确谁有权决定标准；见证条件从开场就在场。",
+                "对手在验证开始前作出过度断言，验证中只可口头叫停或要求降速一次；不得触碰、逼近或阻断主角身体。主角不争技术名词，以继续完成回应。",
+                "实演集中概括一次，随后让见证者根据亲眼所见改变判断，有权者立即执行里程碑结果。",
+                "结果生效后只留对手一次直接反应和主角一句锋利回应，立即收章。",
+            ],
+            "至少三轮短对话分别推进降级理由、决定权归属和结果代价；主要篇幅写标准由谁决定、"
+            "对手为何急于降级和旁观者判断如何改变。能力展示不超过全文四分之一。",
+        ),
+        "public_performance_rebuttal": (
+            [
+                "从既有公开质疑已经影响当下合作或拍摄的压力切入，不新增指控或能力缺陷设定。",
+                "主角主动把争议限定为眼前这次公开表演，让既定见证条件从开场就在场。",
+                "只写对手已经规划的抹黑、阻挠或中断选择，不临时增加设备故障和外部舆论支线。",
+                "把本章锁定的演唱与声轨证明集中写完，让现场判断改变，但不提前执行最终利益结果。",
+                "当前锁定结果生效后只留对手直接反应，不扩展任何后续章节的权利变化。",
+            ],
+            "表演证明不超过全文三分之一；主要篇幅写公开质疑造成的现实代价、"
+            "对手为何必须阻挠，以及现场见证如何让其话术失效。",
+        ),
+        "evidence_confrontation": (
+            [
+                "从白名单材料已经摆在有权者面前切入，不另写搜证旅程。",
+                "主角只指出一处普通人能直接读懂的矛盾；若里程碑没规定维度，只在数量、日期、签收或编号中选一种。",
+                "对手必须围绕这一处矛盾当面辩解或抢回解释权，不得另开第二条证据链。",
+                "从开场就在场的有权者依据材料与当面反应直接作出里程碑决定。",
+                "处分、交接或权限变化实际发生后，以受损者的短反应收束。",
+            ],
+            "材料读取不超过全文四分之一；主要篇幅给责任归属、当面辩解、选择与即时后果。",
+        ),
+        "physical_safety_validation": (
+            [
+                "先写既定安全验证为什么必须在真人进入风险前完成。",
+                "对手以进度或功劳为由越过流程，并亲手执行里程碑规定的冒险动作。",
+                "只写白名单设备与里程碑明确给出的参数，风险结果必须清楚可见。",
+                "主角立即叫停危险，有权者根据亲眼所见改变安全权限。",
+                "只以人员安全已经保住及对手当下反应收束，不追加第二起事故或下一章的权限处分。",
+            ],
+            "设备说明不超过全文三分之一；重点是有人越过流程、谁承担风险以及叫停决定如何生效。",
+        ),
+        "public_resource_audit": (
+            [
+                "从公共资源正在被核验或分配切入，让受影响的人群成为行动参与者。",
+                "主角和既定组织按白名单规则执行核验，对手用程序或权限阻挠。",
+                "只呈现里程碑点名的异常，不靠黑客、舆论或匿名爆料扩大冲突。",
+                "阻挠失败后，资源冻结、退回或监督权变化必须在现场生效。",
+                "用一名参与者的真实反应和对手失去利益的动作收束。",
+            ],
+            "流程说明不超过全文三分之一；主要篇幅写群体协作、阻挠和公共资源回到谁手中。",
+        ),
+        "contract_rights_audit": (
+            [
+                "从催签压力、复核要求或权利争执已经发生切入。",
+                "只围绕里程碑已经命名的当前文书、条款、权利或冷静期推进，不创造编号和附件。",
+                "对手用合规话术催促、拖延或掩盖，主角以既定权利动作反卡。",
+                "有权者确认废止、冻结或签署权变化，并让它立即生效。",
+                "停在对手无法再代替主角作决定的现实后果上。",
+            ],
+            "条款解释不超过全文四分之一；重点写催签压力、拒绝的代价和签字权实际转移。",
+        ),
+        "financial_process_audit": (
+            [
+                "从一笔既定申请、付款或账目正在被审议切入。",
+                "主角让对手按原话术自行提交，公私矛盾只落在白名单账目与账户上。",
+                "对手抢功、辩解或施加关系压力，主角当面作出驳回或冻结选择。",
+                "支付、账户和审批权的变化立即生效，款项去向必须明确。",
+                "用对手失去支付利益后的直接反应收束。",
+            ],
+            "账务说明不超过全文四分之一；主要篇幅写亲情或权力压力、选择和资金没有流向何处。",
+        ),
+        "asset_transaction_audit": (
+            [
+                "从交易被催促、报价被压低或资产即将失控的当下切入。",
+                "主角只调用白名单资产、报价或处置流程，不追查神秘买家和隐藏文件。",
+                "对手用时间压力或既有权力阻挠并留下不可撤回的催促动作，主角只锁定当前冲突。",
+                "有权者确认交易状态与控制权变化，结果必须当场生效。",
+                "只写本章锁定的交易状态变化实际生效及对手直接反应，不扩展后续权利结果。",
+            ],
+            "交易术语不超过全文四分之一；重点写时间压力、资产价值和控制权归属。",
+        ),
+        "action_confrontation": (
+            [
+                "从对手正准备接受、利用或阻挠主角提议的当下切入。",
+                "主角依据前世信息差改变一个当前条件，让对手按稳定性格自行出招。",
+                "对手的选择必须留下当场可见且不可撤回的破绽，不增加外部证据。",
+                "主角立即否决、冻结、撤权或取得里程碑规定的结果。",
+                "以利益变化及对手直接反应收束，不另开调查支线。",
+            ],
+            "主要篇幅给提议、误判、选择和反卡；环境与位移只在改变局势时出现。",
+        ),
+    }
+    plan_key = scene_variant or archetype
+    moves, allocation = plans.get(plan_key, plans["action_confrontation"])
+    return {
+        "chapter_num": int(chapter_num),
+        "scene_archetype": archetype,
+        "scene_variant": scene_variant,
+        "phase": phase,
+        "protagonist": protagonist,
+        "opponent": opponent,
+        "authority": authority,
+        "established_carriers": established_carriers,
+        "initial_carriers": initial_carriers,
+        "action_carriers": action_carriers,
+        "initial_opposition_carriers": initial_opposition_carriers,
+        "opposition_carriers": opposition_carriers,
+        "evidence_result_carriers": evidence_result_carriers,
+        "decision_result_carriers": decision_result_carriers,
+        "result_carriers": result_carriers,
+        "carriers": carriers,
+        "action": action,
+        "opposition": opposition,
+        "initial_opposition": initial_opposition,
+        "emergent_opposition": emergent_opposition,
+        "evidence_result": evidence_result,
+        "decision_result": decision_result,
+        "result": result,
+        "moves": moves,
+        "allocation": allocation,
+    }
+
+
+def _weighted_integer_allocation(total: int, weights: List[float]) -> List[int]:
+    if not weights:
+        return []
+    normalized = [max(0.01, float(weight)) for weight in weights]
+    weight_sum = sum(normalized)
+    raw = [total * weight / weight_sum for weight in normalized]
+    allocated = [int(value) for value in raw]
+    remainder = int(total) - sum(allocated)
+    order = sorted(
+        range(len(raw)),
+        key=lambda index: raw[index] - allocated[index],
+        reverse=True,
+    )
+    for index in order[:remainder]:
+        allocated[index] += 1
+    return allocated
+
+
+def _narrative_unit_recipes(scene_archetype: str) -> List[Dict[str, Any]]:
+    """Return variable causal unit shapes keyed by reusable scene semantics."""
+
+    recipes: Dict[str, List[Dict[str, Any]]] = {
+        "live_capability_validation": [
+            {
+                "dramatic_function": "对手先施压",
+                "objective": (
+                    "只写对手当面把降级包装成保护，并向主角明确主张改成低强度；"
+                    "压力落在主角会继续被当成病弱者。"
+                    "测试尚未开始，本单元不是验证中的叫停。"
+                ),
+                "move": 0,
+                "facts": ("opposition",),
+                "actors": ("opponent",),
+                "weight": 0.75,
+                "mode": "只用主角与对手的一轮短对白建立压力，停在主角准备回应",
+            },
+            {"dramatic_function": "主角抢先改变条件", "move": 1, "facts": ("action",), "actors": ("protagonist", "authority", "witness"), "memory": True, "weight": 1.05, "mode": "行动段略长，用一句对白锁定判断条件"},
+            {"dramatic_function": "利益与情绪代价", "objective": "写清这次能力判断会改变谁的现实控制，不复述表演动作，也不提前宣布结果。", "actors": ("protagonist", "opponent"), "weight": 0.65, "mode": "一个较长冲突段后接一个短反应段"},
+            {"dramatic_function": "对手作出不可撤回选择", "move": 2, "facts": ("opposition",), "actors": ("opponent", "protagonist"), "weight": 1.15, "mode": "一次连续验证与一次干预，长短段交替"},
+            {"dramatic_function": "可见证明改变判断", "objective": "让现场见证人根据亲眼所见给出一句定性结论，再迫使有权者亲自改变判断；只推进到准备执行，不宣布最终宣传、职务或权利结果。", "facts": ("evidence_result", "decision_result", "carriers"), "actors": ("protagonist", "witness", "authority"), "carriers": True, "weight": 1.00, "mode": "证明集中成一段，见证与判断各用一句短对白落锤"},
+            {"dramatic_function": "结果生效与锋利收束", "move": 4, "facts": ("result",), "actors": ("opponent", "protagonist"), "carriers": True, "result": True, "weight": 1.20, "mode": "先完整执行全部结果，再用两至三个短段停在直接反应上"},
+        ],
+        "public_performance_rebuttal": [
+            {"dramatic_function": "公开质疑形成现实压力", "move": 0, "actors": ("protagonist", "opponent"), "weight": 1.00, "mode": "从人物必须回应的当前代价切入，不复述网络舆论"},
+            {"dramatic_function": "主角锁定公开验证条件", "move": 1, "facts": ("action", "carriers"), "actors": ("protagonist", "authority"), "carriers": True, "memory": True, "weight": 1.05, "mode": "主动选择和一句锋利对白连续发生"},
+            {"dramatic_function": "名誉与合作代价", "objective": "写清若眼前质疑继续成立，人物会失去的当前合作与表达空间；不新增能力缺陷或设备事故。", "actors": ("protagonist", "opponent"), "weight": 0.90, "mode": "一长一短两段后立即回到现场"},
+            {"dramatic_function": "对手作出当场阻挠选择", "move": 2, "facts": ("opposition",), "actors": ("opponent", "protagonist"), "weight": 1.15, "mode": "只执行里程碑已有的抹黑或阻挠，不增加第二次干预"},
+            {"dramatic_function": "公开证明改变判断", "move": 3, "facts": ("evidence_result", "decision_result", "carriers"), "actors": ("protagonist", "authority"), "carriers": True, "weight": 1.20, "mode": "证明集中、现场反应展开，停在执行结果前"},
+            {"dramatic_function": "当前结果生效与反应", "move": 4, "facts": ("result",), "actors": ("opponent", "protagonist"), "result": True, "weight": 0.90, "mode": "只写锁定利益变化与直接反应，立即收章"},
+        ],
+        "evidence_confrontation": [
+            {"dramatic_function": "既有载体进入现场", "move": 0, "facts": ("carriers",), "actors": ("protagonist", "authority"), "carriers": True, "weight": 0.95, "mode": "从材料已在眼前切入，不写搜证过程"},
+            {"dramatic_function": "主角抢先限定核对条件", "move": 1, "facts": ("action", "carriers"), "actors": ("protagonist",), "carriers": True, "memory": True, "weight": 1.00, "mode": "一段行动加一句锋利对白"},
+            {"dramatic_function": "责任与情绪代价", "objective": "让人物意识到唯一差异会把责任落到谁身上，只写选择压力，不增加第二条证据链。", "actors": ("protagonist", "opponent"), "carriers": True, "weight": 0.85, "mode": "较长人物冲突段，不做材料科普"},
+            {"dramatic_function": "对手作出不可撤回选择", "move": 2, "facts": ("opposition", "carriers"), "actors": ("opponent",), "carriers": True, "weight": 1.10, "mode": "以辩解和抢夺解释权为主"},
+            {"dramatic_function": "当前载体形成可见证明", "objective": "只让白名单载体上的一处普通人可读差异变得无法回避，随即回到人物反应。", "facts": ("evidence_result", "carriers"), "actors": ("protagonist", "opponent"), "carriers": True, "weight": 1.15, "mode": "证明简短，反应展开"},
+            {"dramatic_function": "有权者判断改变", "objective": "让有权者依据眼前唯一差异否定对手解释并要求立即处理，但暂不写最终处分、交接或权限结果。", "facts": ("decision_result", "carriers"), "actors": ("authority",), "carriers": True, "weight": 1.05, "mode": "判断用短对白落锤，不解释制度"},
+            {"dramatic_function": "结果正式生效", "move": 4, "facts": ("result",), "actors": ("opponent", "protagonist"), "carriers": True, "result": True, "weight": 0.90, "mode": "短促交接、直接反应、立即收束"},
+        ],
+        "physical_safety_validation": [
+            {"dramatic_function": "风险与人在场", "move": 0, "facts": ("carriers",), "actors": ("protagonist", "authority"), "carriers": True, "weight": 1.00, "mode": "用具体风险切入，不作工程说明"},
+            {"dramatic_function": "主角抢先改变条件", "objective": "让主角在真人进入风险前改变验证条件并锁定谁能叫停。", "facts": ("action", "carriers"), "actors": ("protagonist", "authority"), "carriers": True, "memory": True, "weight": 1.05, "mode": "行动与短对白交替"},
+            {"dramatic_function": "对手越过流程", "move": 1, "facts": ("opposition", "carriers"), "actors": ("opponent",), "carriers": True, "weight": 1.25, "mode": "对手选择展开，设备只写到可见动作"},
+            {"dramatic_function": "风险形成可见证明", "objective": "只写里程碑已经锁定的可见风险结果，不追加第二起事故，也不提前叫停或结算。", "facts": ("evidence_result", "carriers"), "actors": ("opponent", "protagonist"), "carriers": True, "weight": 1.20, "mode": "一个连续动作段，禁止追加第二起事故"},
+            {"dramatic_function": "叫停与判断改变", "objective": "主角立即叫停风险，有权者确认对手越过流程；只推进到判断成立，不提前写最终职务或安全权限结果。", "facts": ("decision_result", "carriers"), "actors": ("protagonist", "authority"), "carriers": True, "weight": 1.15, "mode": "叫停和判断紧密相连"},
+            {"dramatic_function": "安全结果与权力收束", "move": 4, "facts": ("result",), "actors": ("opponent", "protagonist"), "result": True, "weight": 0.90, "mode": "人员安全与权力损失落地后立即结束"},
+        ],
+        "public_resource_audit": [
+            {"dramatic_function": "公共利益先受压", "move": 0, "facts": ("carriers",), "actors": ("protagonist",), "carriers": True, "weight": 1.00, "mode": "从受影响者的当前行动切入"},
+            {"dramatic_function": "群体抢先改变条件", "move": 1, "facts": ("action", "carriers"), "actors": ("protagonist",), "carriers": True, "memory": True, "weight": 1.05, "mode": "群体动作简洁，主角选择明确"},
+            {"dramatic_function": "资源归属的情绪代价", "objective": "写清公共资源若继续被截留，具体的人会失去什么；情绪来自利益，不靠口号。", "actors": ("protagonist", "opponent"), "weight": 0.90, "mode": "一长一短两个自然段"},
+            {"dramatic_function": "对手用程序阻挠", "objective": "让对手用既有程序或权限阻止核验、争夺解释权，并在众人面前留下不可撤回的阻挠动作。", "facts": ("opposition", "carriers"), "actors": ("opponent",), "carriers": True, "weight": 1.05, "mode": "程序只写到阻挠动作，主要写人物交锋"},
+            {"dramatic_function": "核验形成可见证明", "objective": "只呈现里程碑点名的异常，让参与者亲眼确认，不扩展舆论或技术支线。", "facts": ("evidence_result", "carriers"), "actors": ("protagonist", "authority"), "carriers": True, "weight": 1.10, "mode": "核验短、判断反应长"},
+            {"dramatic_function": "有权者判断改变", "objective": "让有权者依据参与者亲眼确认的异常否定阻挠并要求处理，但暂不写资源冻结、退回或监督权结果。", "facts": ("decision_result", "carriers"), "actors": ("authority",), "carriers": True, "weight": 1.05, "mode": "判断变化用短对白落锤"},
+            {"dramatic_function": "公共结果正式生效", "move": 4, "facts": ("result",), "actors": ("opponent", "protagonist"), "result": True, "weight": 0.90, "mode": "参与者反应与对手损失短促收束"},
+        ],
+        "contract_rights_audit": [
+            {"dramatic_function": "催签压力形成", "move": 0, "facts": ("opposition", "carriers"), "actors": ("opponent", "protagonist"), "carriers": True, "weight": 1.05, "mode": "以话术压力切入，不解释整份合同"},
+            {"dramatic_function": "主角抢先行使既有权利", "move": 1, "facts": ("action", "carriers"), "actors": ("protagonist",), "carriers": True, "memory": True, "weight": 1.15, "mode": "行动段较长，关键拒绝单独成段"},
+            {"dramatic_function": "拒绝的现实代价", "objective": "写清主角拒绝当前安排会承受的现实压力，以及接受后会失去的决定空间。", "actors": ("protagonist", "opponent"), "weight": 0.95, "mode": "人物选择展开，条款说明压缩"},
+            {"dramatic_function": "对手作出不可撤回选择", "move": 2, "facts": ("opposition", "carriers"), "actors": ("opponent",), "carriers": True, "weight": 1.15, "mode": "对手话术与破绽同场发生"},
+            {"dramatic_function": "有权者确认依据", "objective": "让有权者确认主角行使权利的依据有效并否定对手话术，但暂不写废止、冻结或签署权最终变化。", "facts": ("evidence_result", "decision_result", "carriers"), "actors": ("authority",), "carriers": True, "weight": 1.15, "mode": "确认依据后停在执行前一刻"},
+            {"dramatic_function": "签署权结果与反应", "move": 4, "facts": ("result",), "actors": ("opponent", "protagonist"), "result": True, "weight": 0.90, "mode": "短对白和不可撤回的现实动作收束"},
+        ],
+        "financial_process_audit": [
+            {"dramatic_function": "款项风险进入现场", "move": 0, "facts": ("carriers",), "actors": ("protagonist", "authority"), "carriers": True, "weight": 0.95, "mode": "从正在审议的动作切入"},
+            {"dramatic_function": "主角布下审议诱饵", "objective": "主角先提出一项让对手自主表态的审议条件，只写诱导和关系压力，不写尚未进入现场的材料或对手后续动作。", "facts": ("action", "carriers"), "actors": ("protagonist", "opponent"), "carriers": True, "memory": True, "weight": 1.05, "mode": "让诱导动作先成立，暂不展示尚未进入现场的材料"},
+            {"dramatic_function": "亲情或权力代价", "objective": "让主角面对拒绝带来的关系压力，明确款项一旦放行会伤害谁。", "actors": ("protagonist", "opponent"), "weight": 0.95, "mode": "较长情绪选择段，不写账务科普"},
+            {"dramatic_function": "对手亲手提交选择", "objective": "让对手按既定话术亲手提交白名单材料并抢着领功，材料只在这一刻进入现场；停在这项不可撤回的选择上。", "facts": ("opposition", "carriers"), "actors": ("opponent",), "carriers": True, "weight": 1.05, "mode": "对手话术、提交动作和利益动机同时显形"},
+            {"dramatic_function": "公私矛盾形成可见证明", "objective": "只让白名单材料之间的公私矛盾变得可见并让人物辩解展开，到可见证明成立即止。", "facts": ("evidence_result", "carriers"), "actors": ("protagonist", "opponent"), "carriers": True, "weight": 1.10, "mode": "证明简短，人物辩解和判断展开"},
+            {"dramatic_function": "有权者否定对手解释", "objective": "让有权者依据公私矛盾否定对手解释并改变判断，具体执行留给下一单元。", "facts": ("decision_result", "carriers"), "actors": ("authority", "protagonist"), "carriers": True, "weight": 1.10, "mode": "判断变化用短对白落锤"},
+            {"dramatic_function": "损失反应与收束", "move": 4, "facts": ("result",), "actors": ("opponent", "protagonist"), "result": True, "weight": 0.85, "mode": "两三个短段收束"},
+        ],
+        "asset_transaction_audit": [
+            {"dramatic_function": "交易时间压力", "move": 0, "facts": ("opposition", "carriers"), "actors": ("opponent", "protagonist"), "carriers": True, "weight": 1.05, "mode": "从资产即将失控的动作切入"},
+            {"dramatic_function": "主角抢先启动既有流程", "move": 1, "facts": ("action", "carriers"), "actors": ("protagonist",), "carriers": True, "memory": True, "weight": 1.15, "mode": "行动为主，解释最少"},
+            {"dramatic_function": "资产价值与情绪代价", "objective": "写清被压低的不只是价格，还有主角会失去的创作控制和旧伤。", "actors": ("protagonist", "opponent"), "weight": 0.95, "mode": "一段情绪选择，随即回到交易"},
+            {"dramatic_function": "对手作出不可撤回选择", "move": 2, "facts": ("opposition", "carriers"), "actors": ("opponent",), "carriers": True, "weight": 1.15, "mode": "时间压力与人物误判同场推进"},
+            {"dramatic_function": "有权者确认交易冲突", "objective": "让有权者确认报价或处置流程存在冲突并要求立即处理，但暂不写交易状态或控制权最终变化。", "facts": ("evidence_result", "decision_result", "carriers"), "actors": ("authority", "protagonist"), "carriers": True, "weight": 1.20, "mode": "确认与执行要求连续发生"},
+            {"dramatic_function": "资产结果与锋利收束", "move": 4, "facts": ("result",), "actors": ("opponent", "protagonist"), "result": True, "weight": 0.90, "mode": "停在处置空间消失的直接反应上"},
+        ],
+        "action_confrontation": [
+            {"dramatic_function": "对手先施压", "move": 0, "facts": ("opposition",), "actors": ("opponent",), "weight": 1.00, "mode": "短对白迅速建立压力"},
+            {"dramatic_function": "主角抢先改变条件", "move": 1, "facts": ("action",), "actors": ("protagonist",), "memory": True, "weight": 1.10, "mode": "行动段略长，不先解释计划"},
+            {"dramatic_function": "利益与情绪代价", "objective": "写清当前选择会改变的现实利益和人物关系，不增加外部线索。", "actors": ("protagonist", "opponent"), "weight": 0.90, "mode": "一长一短两段"},
+            {"dramatic_function": "对手留下不可撤回破绽", "move": 2, "facts": ("opposition",), "actors": ("opponent",), "weight": 1.20, "mode": "选择与破绽连续出现"},
+            {"dramatic_function": "主角同场反卡", "objective": "让主角利用对手留下的破绽完成当面反卡，并迫使有权者改变判断；最终处分或收益留给下一单元。", "facts": ("evidence_result", "decision_result"), "actors": ("protagonist", "authority"), "weight": 1.20, "mode": "反卡和判断紧密相连"},
+            {"dramatic_function": "结果生效与反应", "move": 4, "facts": ("result",), "actors": ("opponent", "protagonist"), "result": True, "weight": 0.90, "mode": "锋利对白后立即结束"},
+        ],
+    }
+    return [
+        dict(item)
+        for item in recipes.get(scene_archetype, recipes["action_confrontation"])
+    ]
+
+
+def _compile_narrative_unit_plan(
+    chapter_num: int,
+    chapter_card: Optional[Dict[str, Any]],
+) -> List[Dict[str, Any]]:
+    """Compile one card into six or seven independently reviewable prose units."""
+
+    card = chapter_card if isinstance(chapter_card, dict) else {}
+    spine = _compile_grounded_prose_spine(chapter_num, card)
+    recipes = _narrative_unit_recipes(
+        str(
+            spine.get("scene_variant")
+            or spine.get("scene_archetype")
+            or ""
+        )
+    )
+    separators = max(0, len(recipes) - 1) * 2
+    minimum_total = max(
+        _minimum_chapter_chars(chapter_num, card),
+        1750,
+    ) - separators
+    maximum_total = min(MAX_CHAPTER_CHARS_V2, 1950) - separators
+    weights = [float(item.get("weight", 1.0)) for item in recipes]
+    minimums = _weighted_integer_allocation(minimum_total, weights)
+    maximums = _weighted_integer_allocation(maximum_total, weights)
+    relevant_cast = _select_grounded_chapter_cast(card)
+    allowed_cast = [
+        str(member.get("name") or "").strip()
+        for member in relevant_cast
+        if isinstance(member, dict) and str(member.get("name") or "").strip()
+    ]
+    moves = [str(value).strip() for value in (spine.get("moves") or [])]
+    all_carriers = [
+        str(value).strip()
+        for value in (spine.get("carriers") or [])
+        if str(value).strip()
+    ]
+    established_carriers = [
+        str(value).strip()
+        for value in (spine.get("established_carriers") or [])
+        if str(value).strip()
+    ]
+    initial_carriers = [
+        str(value).strip()
+        for value in (spine.get("initial_carriers") or [])
+        if str(value).strip()
+    ]
+    action_carriers = [
+        str(value).strip()
+        for value in (spine.get("action_carriers") or [])
+        if str(value).strip()
+    ]
+    initial_opposition_carriers = [
+        str(value).strip()
+        for value in (spine.get("initial_opposition_carriers") or [])
+        if str(value).strip()
+    ]
+    opposition_carriers = [
+        str(value).strip()
+        for value in (spine.get("opposition_carriers") or [])
+        if str(value).strip()
+    ]
+    evidence_result_carriers = [
+        str(value).strip()
+        for value in (spine.get("evidence_result_carriers") or [])
+        if str(value).strip()
+    ]
+    decision_result_carriers = [
+        str(value).strip()
+        for value in (spine.get("decision_result_carriers") or [])
+        if str(value).strip()
+    ]
+    result_carriers = [
+        str(value).strip()
+        for value in (spine.get("result_carriers") or [])
+        if str(value).strip()
+    ]
+    all_carriers = _ordered_unique_text(
+        established_carriers
+        + initial_carriers
+        + action_carriers
+        + initial_opposition_carriers
+        + opposition_carriers
+        + evidence_result_carriers
+        + decision_result_carriers
+        + result_carriers
+        + all_carriers
+    )
+    facts_by_key = {
+        "action": str(spine.get("action") or "").strip(),
+        "opposition": str(spine.get("opposition") or "").strip(),
+        "evidence_result": str(spine.get("evidence_result") or "").strip(),
+        "decision_result": str(spine.get("decision_result") or "").strip(),
+        "result": str(spine.get("result") or "").strip(),
+    }
+    initial_opposition = str(spine.get("initial_opposition") or "").strip()
+    emergent_opposition = str(spine.get("emergent_opposition") or "").strip()
+    opposition_fact_indices = [
+        recipe_index
+        for recipe_index, recipe in enumerate(recipes)
+        if "opposition" in tuple(recipe.get("facts", ()))
+    ]
+    opposition_reveal_index = (
+        opposition_fact_indices[-1]
+        if emergent_opposition and opposition_fact_indices
+        else (opposition_fact_indices[0] if opposition_fact_indices else -1)
+    )
+    actor_by_key = {
+        "protagonist": str(spine.get("protagonist") or "").strip(),
+        "opponent": str(spine.get("opponent") or "").strip(),
+        "authority": str(spine.get("authority") or "").strip(),
+        "witness": (
+            "现场见证人"
+            if str(spine.get("scene_archetype") or "")
+            in {"live_capability_validation", "public_performance_rebuttal"}
+            else ""
+        ),
+    }
+    try:
+        cluster_index = int(card.get("cluster_chapter_index") or 0)
+    except (TypeError, ValueError):
+        cluster_index = 0
+    memory_assigned = False
+    action_unlocked = False
+    initial_opposition_unlocked = False
+    opposition_unlocked = False
+    evidence_result_unlocked = False
+    decision_result_unlocked = False
+    plan: List[Dict[str, Any]] = []
+    for index, recipe in enumerate(recipes):
+        move_index = recipe.get("move")
+        objective = str(recipe.get("objective") or "").strip()
+        if not objective and isinstance(move_index, int) and 0 <= move_index < len(moves):
+            objective = moves[move_index]
+        recipe_fact_keys = tuple(recipe.get("facts", ()))
+        locked_facts: List[str] = []
+        for key in recipe_fact_keys:
+            if key == "opposition" and emergent_opposition:
+                candidate = (
+                    emergent_opposition
+                    if index == opposition_reveal_index
+                    else initial_opposition
+                )
+            else:
+                candidate = facts_by_key.get(key, "")
+            if candidate:
+                locked_facts.append(candidate)
+        if "action" in recipe_fact_keys:
+            action_unlocked = True
+        if "opposition" in recipe_fact_keys:
+            initial_opposition_unlocked = True
+            if not emergent_opposition or index == opposition_reveal_index:
+                opposition_unlocked = True
+        if "evidence_result" in recipe_fact_keys:
+            evidence_result_unlocked = True
+        if "decision_result" in recipe_fact_keys:
+            decision_result_unlocked = True
+        unit_carriers: List[str] = []
+        if (
+            recipe.get("carriers")
+            or recipe.get("result")
+            or ("action" in recipe_fact_keys and action_carriers)
+            or (
+                "opposition" in recipe_fact_keys
+                and initial_opposition_carriers
+            )
+            or ("opposition" in recipe_fact_keys and opposition_carriers)
+            or (
+                "evidence_result" in recipe_fact_keys
+                and evidence_result_carriers
+            )
+            or (
+                "decision_result" in recipe_fact_keys
+                and decision_result_carriers
+            )
+        ):
+            unit_carriers = _ordered_unique_text(
+                established_carriers
+                + initial_carriers
+                + (action_carriers if action_unlocked else [])
+                + (
+                    initial_opposition_carriers
+                    if initial_opposition_unlocked
+                    else []
+                )
+                + (opposition_carriers if opposition_unlocked else [])
+                + (
+                    evidence_result_carriers
+                    if evidence_result_unlocked
+                    else []
+                )
+                + (
+                    decision_result_carriers
+                    if decision_result_unlocked
+                    else []
+                )
+                + (result_carriers if recipe.get("result") else [])
+            )
+        if unit_carriers:
+            locked_facts.append("当前允许载体：" + "、".join(unit_carriers))
+        required_carriers = (
+            list(unit_carriers)
+            if "carriers" in recipe_fact_keys
+            else []
+        )
+        actor_keys = list(recipe.get("actors", ()))
+        if recipe.get("result"):
+            actor_keys.append("authority")
+        required_actors = _ordered_unique_text(
+            actor_by_key[key]
+            for key in actor_keys
+            if actor_by_key.get(key)
+        )
+        memory_allowed = bool(
+            cluster_index == 1
+            and recipe.get("memory")
+            and not memory_assigned
+        )
+        memory_assigned = memory_assigned or memory_allowed
+        plan.append({
+            "unit_index": index + 1,
+            "unit_count": len(recipes),
+            "dramatic_function": str(recipe.get("dramatic_function") or "").strip(),
+            "objective": objective,
+            "locked_facts": _ordered_unique_text(locked_facts),
+            "allowed_cast": list(allowed_cast),
+            "required_actors": required_actors,
+            "allowed_carriers": unit_carriers,
+            "required_carriers": required_carriers,
+            "all_chapter_carriers": list(all_carriers),
+            "required_semantic_anchors": _narrative_semantic_anchors(
+                "\n".join(locked_facts)
+            ),
+            "memory_allowed": memory_allowed,
+            "result_allowed": bool(recipe.get("result")),
+            "functional_decision_required": bool(
+                recipe.get("result")
+                or "decision_result" in recipe_fact_keys
+            ),
+            "target_min_chars": minimums[index],
+            "target_max_chars": max(minimums[index], maximums[index]),
+            "paragraph_mode": str(recipe.get("mode") or "长短自然段交替"),
+            "scene_archetype": str(spine.get("scene_archetype") or ""),
+        })
+    return plan
+
+
+def _narrative_memory_sentences(text: str) -> List[str]:
+    explicit_pattern = (
+        r"上一世|前世|那一世|上辈子|重生前|旧局重演|"
+        r"又(?:一次)?重来|曾经那场"
+    )
+    continuation_pattern = (
+        r"^(?:[“‘\"']*)"
+        r"(?:当时|那时|那一次|那次|那天|那晚|彼时)"
+    )
+    present_transition_pattern = (
+        r"^(?:[“‘\"']*)"
+        r"(?:这一次|这一回|如今|眼下|现在|今生|此刻|当前)"
+    )
+    memories: List[str] = []
+    in_memory = False
+    for raw_sentence in re.split(r"(?<=[。！？!?])|\n+", str(text or "")):
+        sentence = re.sub(r"\s+", "", raw_sentence)
+        if not sentence:
+            continue
+        if re.search(explicit_pattern, sentence):
+            memories.append(sentence)
+            in_memory = True
+            continue
+        if in_memory and re.search(continuation_pattern, sentence):
+            memories.append(sentence)
+            continue
+        if in_memory and re.search(present_transition_pattern, sentence):
+            in_memory = False
+            continue
+        in_memory = False
+    return memories
+
+
+def _narrative_memory_marker_in_quotes(text: str) -> bool:
+    """Reject old-life knowledge written as speech instead of private thought."""
+
+    body = str(text or "")
+    memory_pattern = re.compile(
+        r"上一世|前世|那一世|上辈子|重生前|重生|死过一次|我回来了"
+    )
+    for opening, closing in (
+        ("“", "”"),
+        ("‘", "’"),
+        ("「", "」"),
+        ("『", "』"),
+        ('"', '"'),
+        ("'", "'"),
+    ):
+        quoted_pattern = re.compile(
+            re.escape(opening)
+            + rf"[^{re.escape(closing)}]*"
+            + re.escape(closing)
+        )
+        if any(
+            memory_pattern.search(match.group(0))
+            for match in quoted_pattern.finditer(body)
+        ):
+            return True
+    return False
+
+
+def _narrative_quote_structure_invalid(text: str) -> bool:
+    """Detect unclosed, prematurely closed, or cross-paired prose quotes."""
+
+    opening_to_closing = {
+        "“": "”",
+        "‘": "’",
+        "「": "」",
+        "『": "』",
+        '"': '"',
+    }
+    closing_to_opening = {
+        closing: opening
+        for opening, closing in opening_to_closing.items()
+        if opening != closing
+    }
+    stack: List[str] = []
+    for character in str(text or ""):
+        if character == '"':
+            if stack and stack[-1] == '"':
+                stack.pop()
+            else:
+                stack.append(character)
+            continue
+        if character in opening_to_closing:
+            stack.append(character)
+            continue
+        if character in closing_to_opening:
+            if not stack or stack[-1] != closing_to_opening[character]:
+                return True
+            stack.pop()
+    return bool(stack)
+
+
+def _exact_unique_text(values: Iterable[Any]) -> List[str]:
+    result: List[str] = []
+    seen: set[str] = set()
+    for value in values:
+        text = str(value or "").strip()
+        if text and text not in seen:
+            seen.add(text)
+            result.append(text)
+    return result
+
+
+def _carrier_aliases(carrier: str) -> List[str]:
+    value = str(carrier or "").strip()
+    if not value:
+        return []
+    aliases = [value]
+    concise = re.sub(
+        r"^(?:未签字|已签字|原始|公开|实名|异常|内部|补充|霸王|"
+        r"正式|临时|隐藏|完整|票务|黄牛|银行|慈善|项目|私人|"
+        r"基金|收款|剪辑|偷拍视频|现场|实时|无修音|后续排练|"
+        r"独立|第三方|等重|测试用|封存的|舞台|升降|安全)",
+        "",
+        value,
+    ).strip()
+    if len(concise) >= 2:
+        aliases.append(concise)
+    for head in (
+        "操作日志", "验收单", "合同", "协议", "签字页", "授权书", "条款",
+        "校验结果", "核票结果", "票务清单", "预留票", "票池", "实名校验",
+        "实名名单", "实名数据", "账单", "账目", "流水", "转账记录",
+        "收支记录", "账户", "支付申请", "签名文件", "录音", "视频",
+        "母带", "设备", "声轨", "原声", "拍摄画面", "估值结果",
+        "评估结果", "估值", "交易文件", "沙袋", "配重", "样品", "封签",
+        "针剂", "控制器", "控制台", "升降台", "停机按钮", "排期总表",
+        "总排期表", "排期表", "总表", "送货单", "领用簿", "彩排表",
+        "值班记录", "签收记录", "旧宣传页", "宣传页",
+    ):
+        # A document may name the device or asset it describes.  That does not
+        # make the embedded object an alias of the document itself:
+        # “控制器操作日志” is not interchangeable with “控制器”, and
+        # “母带优先回购权” is not interchangeable with “母带”.
+        if value.endswith(head):
+            aliases.append(head)
+    return _exact_unique_text(alias for alias in aliases if len(alias) >= 2)
+
+
+def _future_material_aliases(
+    term: str,
+    current_allowed_terms: Iterable[str] = (),
+) -> List[str]:
+    """Return future-only surface forms without banning a current carrier.
+
+    Qualified carriers often share a generic head.  For example, a future
+    “黄牛预留票” and the current “异常预留票” both expose “预留票” as a
+    readable shorthand.  The generic shorthand must remain legal in the
+    current chapter while the qualified future term stays forbidden.
+    """
+
+    value = str(term or "").strip()
+    if not value:
+        return []
+    current_aliases = {
+        alias
+        for current in current_allowed_terms
+        for alias in _carrier_aliases(str(current))
+    }
+    return _exact_unique_text(
+        alias
+        for alias in (_carrier_aliases(value) or [value])
+        if alias not in current_aliases
+    )
+
+
+def _future_material_hits(
+    text: str,
+    future_only_terms: Iterable[str],
+    current_allowed_terms: Iterable[str] = (),
+) -> List[str]:
+    """Find future materials using the same matcher used by prompt filtering."""
+
+    body = str(text or "")
+    return _exact_unique_text(
+        value
+        for term in future_only_terms
+        for value in (str(term or "").strip(),)
+        if value
+        and any(
+            alias in body
+            for alias in _future_material_aliases(
+                value,
+                current_allowed_terms,
+            )
+        )
+    )
+
+
+def _narrative_semantic_anchors(text: str) -> List[str]:
+    source = str(text or "")
+    controlled = (
+        "排练", "训练", "唱跳", "演唱", "表演", "体能", "宣传", "合作方",
+        "排期", "总表", "合同", "协议", "条款", "签署", "签字", "账户",
+        "账目", "款项", "支付", "基金", "票务", "票池", "预留票", "实名",
+        "核验", "药品", "针剂", "封签", "送货单", "领用簿", "安全", "升降",
+        "沙袋", "交易", "估值", "母带", "版权", "原声", "声轨", "录音",
+        "视频", "阻拦", "阻挠", "催签", "拒签", "权限", "决定权", "保管权",
+        "监督权", "回购权", "职务", "资格", "席位",
+    )
+    anchors = [term for term in controlled if term in source]
+    anchors.extend(_extract_scene_evidence_carriers(source))
+    return _exact_unique_text(anchors)
+
+
+def _semantic_anchor_present(anchor: str, text: str) -> bool:
+    """Match a locked semantic anchor without forcing one brittle surface form."""
+
+    value = str(anchor or "").strip()
+    body = str(text or "")
+    if not value:
+        return True
+    if value in body:
+        return True
+    if value != "唱跳":
+        return False
+    singing = re.search(
+        r"演唱|歌声|起唱|发声|高音|尾音|"
+        r"唱(?:完|到|出|起|着)|开口(?:便|就)?唱|边唱",
+        body,
+    )
+    dancing = re.search(
+        r"舞步|舞蹈|舞段|跳舞|边跳|边舞|"
+        r"踏步[^。！？!?\n]{0,12}(?:转体|旋身)|"
+        r"旋身[^。！？!?\n]{0,12}踏步",
+        body,
+    )
+    completed = re.search(
+        r"完成|唱完|跳完|一气呵成|连续|从头到尾|整段|撑到最后|"
+        r"唱到最后|舞到最后|最后一个音(?:符)?|全程无人喊停|"
+        r"完整收尾|收住|落地|结束",
+        body,
+    )
+    return bool(singing and dancing and completed)
+
+
+def _functional_actor_decision_present(actor: str, text: str) -> bool:
+    """Require an anonymous authority to decide or execute, not merely appear."""
+
+    name = str(actor or "").strip()
+    body = str(text or "")
+    if not name:
+        return True
+    aliases = [name]
+    generic = re.sub(
+        r"^(?:从开场就在场的|从一开始就在场的|已经在场的|既有的)",
+        "",
+        name,
+    )
+    if generic:
+        aliases.append(generic)
+    for role in (
+        "独立安全负责人", "安全负责人", "票务管理负责人", "票务负责人",
+        "资产管理负责人", "资产负责人", "合同管理负责人", "合同负责人",
+        "财务管理负责人", "财务负责人", "现场管理负责人", "现场负责人",
+        "项目负责人", "合作方代表", "合作方", "主办方", "管理负责人",
+        "负责人", "有权者",
+    ):
+        if role in name:
+            aliases.append(role)
+    decision = (
+        r"改口|改主意|改变判断|改变看法|重新判断|重新评估|重审|"
+        r"确认|宣布|决定|要求|执行|同意|认可|"
+        r"核定|重新核定|"
+        r"不用修|无需(?:降低|调整)|不必(?:降低|调整)|"
+        r"撤下|撤回|撤销|归还|移交|交接|冻结|暂停|停职|终止|"
+        r"废除|驳回|否决|退回|交出"
+    )
+    for alias in _exact_unique_text(aliases):
+        escaped = re.escape(alias)
+        actor_then_decision = re.compile(
+            rf"{escaped}(?P<between>[^。！？!?\n]{{0,48}}?)"
+            rf"(?P<decision>{decision})"
+        )
+        for match in actor_then_decision.finditer(body):
+            between = match.group("between")
+            sentence_start = max(
+                body.rfind(marker, 0, match.start())
+                for marker in ("。", "！", "？", "!", "?", "\n")
+            )
+            sentence_prefix = body[sentence_start + 1 : match.start()]
+            if re.search(
+                r"(?:如果|若是|若|假如|倘若|只要|一旦)[^。！？!?\n]*$",
+                sentence_prefix,
+            ):
+                continue
+            if re.search(
+                r"(?:会|将|准备|打算|稍后|明天|以后|随后再|届时|"
+                r"待[^，。！？!?\n]{0,16})[^，。！？!?\n]*$",
+                between,
+            ):
+                continue
+            if re.search(
+                r"(?:没有|并未|尚未|未曾|从未|不肯|不愿|拒绝|不会|"
+                r"并不|仍未|还没)[^，。！？!?\n]{0,8}$",
+                between,
+            ):
+                continue
+            if re.search(
+                r"(?:要求|催促|请求|逼迫|迫使|让|请|等待|希望|建议)"
+                r"[^，。！？!?\n]{0,4}$",
+                sentence_prefix,
+            ):
+                continue
+            if re.search(r"被[^，。！？!?\n]{0,16}$", between):
+                continue
+            return True
+    return False
+
+
+def _unit_requires_functional_actor_decision(unit: Dict[str, Any]) -> bool:
+    """Keep plan compilation, deterministic shaping, and validation aligned."""
+
+    if bool(unit.get("result_allowed")):
+        return True
+    if bool(unit.get("functional_decision_required")):
+        return True
+    dramatic_function = str(unit.get("dramatic_function") or "")
+    return (
+        "改变判断" in dramatic_function
+        or "判断改变" in dramatic_function
+    )
+
+
+def _functional_actor_fallback_line(
+    actor: str,
+    dramatic_function: str,
+    *,
+    actor_requires_decision: bool,
+) -> str:
+    """Return the same anonymous-actor fallback used by shaping and budgeting."""
+
+    role = str(actor or "").strip()
+    dramatic = str(dramatic_function or "")
+    if "现场见证人" in role:
+        if actor_requires_decision or "证明" in dramatic or "判断" in dramatic:
+            return "现场见证人当面确认：“这次测试通过。”"
+        return "现场见证人当面确认：“我只判断眼前这次完成。”"
+    if "合作方" in role:
+        if actor_requires_decision or "证明" in dramatic or "判断" in dramatic:
+            return "合作方代表随即改口：“我们按眼前这次完成重新判断。”"
+        return "合作方代表先当面确认：“我们只按眼前这次完成判断。”"
+    if "安全负责人" in role:
+        return "安全负责人当面确认：“只按眼前安全结果执行。”"
+    if "现场负责人" in role:
+        return "现场负责人当面确认：“按眼前结果执行。”"
+    if "票务负责人" in role:
+        return "票务负责人当面确认：“按公开核验结果执行。”"
+    if "资产负责人" in role:
+        return "资产负责人当面确认：“按眼前核验结果执行。”"
+    if "合同负责人" in role:
+        return "合同负责人当面确认：“按眼前核验结果执行。”"
+    if "财务负责人" in role:
+        return "财务负责人当面确认：“按眼前核验结果执行。”"
+    if "主办方" in role:
+        return "主办方代表当面确认：“按眼前结果执行。”"
+    if "负责人" in role or "有权者" in role:
+        spoken_role = re.sub(
+            r"^(?:从开场就在场的|从一开始就在场的|已经在场的|既有的)",
+            "",
+            role,
+        ) or "有权者"
+        return f"{spoken_role}当面确认：“按眼前结果处理。”"
+    return ""
+
+
+def _narrative_unit_authority_tail_lines(
+    unit: Dict[str, Any],
+    text: str = "",
+) -> List[str]:
+    """Return missing deterministic non-result authority decisions."""
+
+    if bool(unit.get("result_allowed")):
+        return []
+    if not _unit_requires_functional_actor_decision(unit):
+        return []
+    dramatic_function = str(unit.get("dramatic_function") or "")
+    actor_markers = (
+        "现场见证人",
+        "合作方",
+        "负责人",
+        "主办方",
+        "有权者",
+    )
+    lines: List[str] = []
+    for actor_value in unit.get("required_actors") or []:
+        actor = str(actor_value or "").strip()
+        if not actor or not any(marker in actor for marker in actor_markers):
+            continue
+        if text and _functional_actor_decision_present(actor, text):
+            continue
+        line = _functional_actor_fallback_line(
+            actor,
+            dramatic_function,
+            actor_requires_decision=True,
+        )
+        if line and line not in lines:
+            lines.append(line)
+    return lines
+
+
+def _narrative_unit_authority_tail_chars(unit: Dict[str, Any]) -> int:
+    """Measure the deterministic non-result authority tail including its separator."""
+
+    lines = _narrative_unit_authority_tail_lines(unit)
+    if not lines:
+        return 0
+    return 2 + len("\n".join(lines))
+
+
+def _narrative_result_anchor_groups(
+    chapter_card: Optional[Dict[str, Any]],
+) -> List[List[str]]:
+    """Compile one independent required anchor group per settlement clause."""
+
+    card = chapter_card if isinstance(chapter_card, dict) else {}
+    spine = _compile_grounded_prose_spine(int(card.get("chapter_id") or 0), card)
+    result = str(spine.get("result") or "")
+    groups: List[List[str]] = []
+    right_pattern = re.compile(
+        r"[\u4e00-\u9fff]{2,24}(?:决定权|否决权|签批权|签字权|签署权|"
+        r"保管权|监督权|监管权|调度权|控制权|发布权|回购权|指挥权|"
+        r"停机权|支付权|打包权|权限|授权|职务|资格|席位)"
+    )
+    contextual_aliases: Tuple[Tuple[str, Tuple[str, ...]], ...] = (
+        (
+            "病弱",
+            (
+                "病弱降配宣传", "病弱宣传", "降配宣传", "宣传物料",
+                "旧宣传页", "病中减训版", "建议静养",
+            ),
+        ),
+        ("加场", ("当日加场", "加场演出", "加场")),
+        ("超载排期", ("超载排期", "排期")),
+        ("舞者安全", ("所有舞者安全", "舞者安全", "人员安全", "安全")),
+        ("预留票", ("异常预留票", "预留票")),
+        ("出票获利", ("出票获利", "获利")),
+        ("票池", ("公开票池", "票池")),
+        ("拒签", ("当场拒签", "拒签")),
+        ("冷静期", ("原合同冷静期", "冷静期")),
+        ("协议", ("协议",)),
+        ("指控", ("指控",)),
+        ("预付款", ("采访预付款", "预付款")),
+        ("驳回付款", ("驳回付款",)),
+        ("账户", ("该账户", "付款账户", "支付账户", "账户")),
+        ("慈善款", ("慈善款", "款项")),
+        ("停职", ("停职",)),
+        ("交易", ("交易", "交易状态")),
+        ("独立估值", ("独立估值", "估值")),
+    )
+    clauses = [
+        clause.strip()
+        for clause in re.split(r"[；;]+", result)
+        if clause.strip()
+    ]
+    for clause in clauses:
+        rights = right_pattern.findall(clause)
+        if rights:
+            raw = rights[-1]
+            concise = re.sub(
+                r"^.*?(?:获得|取得|拿回|夺回|恢复|保住|归还|退回|返还|"
+                r"收回|掌控|控制|失去|撤销|冻结|暂停|停职|交出|取消|"
+                r"移交|废除|驳回|否决)",
+                "",
+                raw,
+            ).strip()
+            marker = concise or raw
+            aliases = [marker]
+        else:
+            aliases = []
+            for marker, candidates in contextual_aliases:
+                if marker in clause:
+                    aliases = list(candidates)
+                    break
+            if not aliases:
+                fallback = _narrative_semantic_anchors(clause)
+                aliases = fallback[:5]
+        if not aliases:
+            continue
+        marker = aliases[0]
+        if marker.endswith("职务"):
+            aliases.extend(["职务", "履职", "职权", "岗位"])
+        if marker.endswith("保管权"):
+            aliases.extend(["保管权", "保管权限", "保管职责"])
+        if marker.endswith("监管权") or marker.endswith("监督权"):
+            aliases.extend(["监管权", "监督权", "监督权限"])
+        if marker.endswith("决定权"):
+            aliases.extend([marker.replace("决定权", "决定权限"), "决定权"])
+        if (
+            marker.endswith("签字权")
+            or marker.endswith("签批权")
+            or marker.endswith("签署权")
+        ):
+            aliases.extend(["签字权", "签批权", "签署权"])
+        groups.append(_exact_unique_text(aliases))
+    unique_groups: List[List[str]] = []
+    seen: set[Tuple[str, ...]] = set()
+    for group in groups:
+        key = tuple(_exact_unique_text(group))
+        if key and key not in seen:
+            seen.add(key)
+            unique_groups.append(list(key))
+    return unique_groups
+
+
+def _settlement_relation_present(text: str, aliases: Iterable[str]) -> bool:
+    verbs = (
+        r"获得|取得|拿回|收回|保住|归还|返还|交还|移交|交接|转交|划归|"
+        r"失去|撤下|撤回|撤销|取消|冻结|暂停|停职|终止|废除|驳回|"
+        r"否决|退回|退还|触发|生效|正式确认|即刻执行|不再拥有|"
+        r"撕毁|撕碎|撕成"
+    )
+    body = str(text or "")
+
+    def is_negated(start: int, end: int) -> bool:
+        clause_start = max(
+            body.rfind(mark, 0, start)
+            for mark in "。！？!?；;\n"
+        )
+        prefix = body[clause_start + 1 : start]
+        local = body[max(clause_start + 1, start - 12) : end]
+        if re.search(r"若|如果|一旦|倘若|假如|否则", prefix):
+            return True
+        if re.search(
+            r"(?:稍后|晚些时候|明天|以后|日后|改天|回头|届时).{0,12}$",
+            prefix,
+        ):
+            return True
+        if re.search(
+            r"(?:尚未|还没|没有|并未|不会|不能|可能|避免|阻止|不让|"
+            r"拒绝|试图|暂不写|不写|不得|不要|不应|不提前).{0,8}$",
+            prefix,
+        ):
+            return True
+        return bool(
+            re.search(
+                r"(?:会|将|可能).{0,5}(?:失去|撤下|冻结|暂停|取消)",
+                local,
+            )
+        )
+
+    for alias in aliases:
+        value = str(alias or "").strip()
+        if not value:
+            continue
+        special_patterns: List[str] = []
+        if value in {"当场拒签", "拒签"}:
+            special_patterns.append(r"(?:当场)?拒签")
+        if value == "驳回付款":
+            special_patterns.append(r"(?:当场)?驳回付款")
+        if value == "停职":
+            special_patterns.append(r"(?:被|遭|当场|立即|正式|暂时|临时)*停职")
+        if value in {"出票获利", "获利"}:
+            special_patterns.append(
+                r"(?:无法|不能|未能|不再).{0,8}(?:出票)?获利"
+            )
+        if value in {"慈善款", "款项"}:
+            special_patterns.append(
+                rf"{re.escape(value)}.{{0,10}}(?:没有|未曾|并未|不再)流出"
+            )
+        for special_pattern in special_patterns:
+            for special_match in re.finditer(special_pattern, body):
+                if not is_negated(special_match.start(), special_match.end()):
+                    return True
+        pattern = re.compile(
+            rf"(?:{verbs}).{{0,28}}{re.escape(value)}|"
+            rf"{re.escape(value)}.{{0,28}}(?:{verbs})",
+            re.S,
+        )
+        for match in pattern.finditer(body):
+            if is_negated(match.start(), match.end()):
+                continue
+            return True
+    return False
+
+
+def _narrative_result_markers(chapter_card: Optional[Dict[str, Any]]) -> List[str]:
+    return _ordered_unique_text(
+        group[0]
+        for group in _narrative_result_anchor_groups(chapter_card)
+        if group
+    )
+
+
+def _actor_is_mentioned(actor: str, text: str) -> bool:
+    name = str(actor or "").strip()
+    if not name:
+        return True
+    aliases = [name]
+    aliases.extend(part for part in re.split(r"[·•\s]+", name) if len(part) >= 2)
+    generic = re.sub(
+        r"^(?:从开场就在场的|从一开始就在场的|已经在场的|既有的)",
+        "",
+        name,
+    )
+    if generic:
+        aliases.append(generic)
+    for role in (
+        "独立安全负责人", "安全负责人", "票务管理负责人", "票务负责人",
+        "资产管理负责人", "资产负责人", "合同管理负责人", "合同负责人",
+        "财务管理负责人", "财务负责人", "现场管理负责人", "现场负责人",
+        "项目负责人", "合作方代表", "合作方", "主办方", "管理负责人",
+        "负责人", "有权者",
+    ):
+        if role in name:
+            aliases.append(role)
+    return any(alias in text for alias in aliases)
+
+
+def _narrative_unit_minimum_tolerance(unit: Dict[str, Any]) -> int:
+    """Allow causal units to trade a little length while the assembled chapter stays hard-gated."""
+
+    minimum = int(unit.get("target_min_chars") or 0)
+    if minimum <= 0:
+        return 0
+    tolerance = max(4, int(minimum * 0.015))
+    flexible_causal_unit = bool(unit.get("result_allowed")) or (
+        str(unit.get("scene_archetype") or "") == "live_capability_validation"
+        and bool(unit.get("functional_decision_required"))
+    )
+    if flexible_causal_unit:
+        tolerance = max(tolerance, min(55, int(minimum * 0.15)))
+    return tolerance
+
+
+def _narrative_unit_language_and_style_failures(
+    text: str,
+    chapter_card: Optional[Dict[str, Any]],
+    unit: Optional[Dict[str, Any]] = None,
+) -> List[str]:
+    """Catch local defects before six otherwise-valid units are assembled."""
+
+    body = str(text or "").strip()
+    card = chapter_card if isinstance(chapter_card, dict) else {}
+    failures: List[str] = []
+    planned_latin_text = json.dumps(card, ensure_ascii=False)
+    latin_tokens = set(re.findall(
+        r"(?<![A-Za-z])[A-Za-z]{2,}(?![A-Za-z])|(?:[A-Za-z]\.){2,}|"
+        r"(?<![A-Za-z])[A-Za-z](?![A-Za-z])",
+        body,
+    ))
+    unplanned_latin_tokens = sorted(
+        token for token in latin_tokens if token not in planned_latin_text
+    )
+    if unplanned_latin_tokens:
+        failures.append(
+            "叙事单元夹入未规划的英文词、缩写或字母编号："
+            + "、".join(unplanned_latin_tokens[:8])
+            + "。改用中文功能称呼。"
+        )
+    current_contract_text = json.dumps(
+        {
+            key: card.get(key)
+            for key in (
+                "chapter_goal", "this_life_revenge", "core_payoff",
+                "chapter_ending", "must_resolve_this_chapter",
+                "chapter_must_include", "chapter_milestone",
+            )
+        },
+        ensure_ascii=False,
+    )
+    planned_medication_material = bool(re.search(
+        r"针剂|药品|药物|用药|药盒|药瓶|镇静|封签|送货单|领用簿|营养针",
+        current_contract_text,
+    ))
+    unplanned_medication_hits = re.findall(
+        r"镇静剂|镇静针|镇静成分|生理盐水|针剂|药盒|药瓶|备用剂量|"
+        r"降温喷雾|补水喷雾|心率贴片|补水瓶|蓝色包装盒|医药包装|"
+        r"违禁药|问题药剂",
+        body,
+    )
+    if unplanned_medication_hits and not planned_medication_material:
+        failures.append(
+            "叙事单元提前引入当前执行卡未规划的药物或包装材料："
+            + "、".join(_ordered_unique_text(unplanned_medication_hits)[:6])
+            + "。删除整条材料，不得提前使用下一章证据。"
+        )
+
+    sentences = [
+        sentence.strip()
+        for sentence in re.split(r"[。！？!?；;\n]+", body)
+        if len(re.sub(r"\s+", "", sentence)) >= 4
+    ]
+    if len(sentences) >= 6:
+        body_terms = (
+            "手", "手指", "手掌", "手腕", "指尖", "指节", "脚", "脚步",
+            "膝", "肩", "腰", "背", "胸", "肋", "喉结", "下颌", "呼吸",
+            "气息", "吐息", "吸气", "换气", "站位", "重心",
+        )
+        micro_terms = (
+            "抬手", "收手", "伸手", "缩手", "按住", "捏住", "攥紧", "松开",
+            "指尖", "指节", "掌心", "手腕", "脚尖", "脚跟", "落脚", "站稳",
+            "挪步", "侧移", "退开", "靠近", "俯身", "抬眼", "垂眼", "喉结",
+            "吸气", "吐气", "换气", "气息",
+        )
+        body_sentence_count = sum(
+            1 for sentence in sentences if any(term in sentence for term in body_terms)
+        )
+        micro_sentence_count = sum(
+            1 for sentence in sentences if any(term in sentence for term in micro_terms)
+        )
+        body_mentions = sum(body.count(term) for term in body_terms)
+        micro_mentions = sum(body.count(term) for term in micro_terms)
+        body_density = body_sentence_count / len(sentences)
+        micro_density = micro_sentence_count / len(sentences)
+        unit_payload = unit if isinstance(unit, dict) else {}
+        validation_conflict = (
+            str(unit_payload.get("scene_archetype") or "")
+            == "live_capability_validation"
+            and int(unit_payload.get("unit_index") or 0) == 4
+        )
+        body_mention_floor = 8 if validation_conflict else 5
+        body_density_ceiling = 0.60 if validation_conflict else 0.50
+        micro_mention_floor = 4 if validation_conflict else 3
+        micro_density_ceiling = 0.40 if validation_conflict else 0.30
+        if (
+            (
+                body_mentions >= body_mention_floor
+                and body_density >= body_density_ceiling
+            )
+            or (
+                micro_mentions >= micro_mention_floor
+                and micro_density >= micro_density_ceiling
+            )
+        ):
+            failures.append(
+                "叙事单元把过多句子写成手脚、呼吸或站位的微动作清单"
+                f"（身体动作句占比{body_density:.0%}，微动作句占比{micro_density:.0%}）；"
+                "只保留会改变决定、关系或局势的动作。"
+            )
+    return failures
+
+
+def _ensure_result_unit_settlements(
+    text: str,
+    unit: Dict[str, Any],
+    chapter_card: Optional[Dict[str, Any]],
+) -> str:
+    """Deterministically realize plan-locked EC04 settlements when omitted."""
+
+    body = str(text or "").strip()
+    if not body or not bool(unit.get("result_allowed")):
+        return body
+    card = chapter_card if isinstance(chapter_card, dict) else {}
+    contract = _grounded_scene_contract_payload(card)
+    archetype = str(
+        unit.get("scene_archetype")
+        or contract.get("scene_archetype")
+        or ""
+    )
+    if archetype != "live_capability_validation":
+        return body
+
+    groups = _narrative_result_anchor_groups(card)
+    tail_lines: List[str] = []
+    publicity_group = next(
+        (group for group in groups if any("病弱" in alias for alias in group)),
+        None,
+    )
+    if publicity_group and not _settlement_relation_present(body, publicity_group):
+        tail_lines.append(
+            "合作方代表收回旧宣传页，当场整张撤下：“病弱降配宣传立即终止。”"
+        )
+    training_group = next(
+        (
+            group
+            for group in groups
+            if any("训练强度决定权" in alias for alias in group)
+        ),
+        None,
+    )
+    if training_group and not _settlement_relation_present(body, training_group):
+        protagonist = next(
+            (
+                str(name).strip()
+                for name in (unit.get("allowed_cast") or [])
+                if str(name).strip()
+            ),
+            "主角",
+        )
+        tail_lines.append(
+            f"合作方代表随即宣布：“训练强度决定权归还{protagonist}，从现在起生效。”"
+        )
+    if not tail_lines and any(
+        "合作方" in str(actor or "")
+        for actor in (unit.get("required_actors") or [])
+    ) and not _functional_actor_decision_present("合作方", body):
+        tail_lines.append("合作方代表当场确认：“上述结果立即执行。”")
+    if not tail_lines:
+        return body
+    return body + "\n\n" + "\n".join(tail_lines)
+
+
+def _validate_narrative_unit(
+    text: str,
+    unit: Dict[str, Any],
+    chapter_card: Optional[Dict[str, Any]],
+    *,
+    previous_units: Iterable[str] = (),
+    future_only_terms: Iterable[str] = (),
+) -> List[str]:
+    """Fail closed on one unit without applying whole-chapter payoff checks."""
+
+    body = str(text or "").strip()
+    failures: List[str] = []
+    minimum = int(unit.get("target_min_chars") or 0)
+    maximum = int(unit.get("target_max_chars") or 0)
+    minimum_tolerance = _narrative_unit_minimum_tolerance(unit)
+    if _results_first_delivery_enabled() and minimum > 0:
+        minimum_tolerance = max(
+            minimum_tolerance,
+            min(45, int(minimum * 0.12)),
+        )
+    effective_minimum = max(0, minimum - minimum_tolerance)
+    maximum_tolerance = (
+        min(30, max(4, int(maximum * 0.08)))
+        if _results_first_delivery_enabled() and maximum > 0
+        else 0
+    )
+    if len(body) < effective_minimum:
+        failures.append(f"叙事单元只有{len(body)}字，少于预算下限{minimum}字。")
+    if maximum > 0 and len(body) > maximum + maximum_tolerance:
+        failures.append(f"叙事单元有{len(body)}字，超过预算上限{maximum}字。")
+    if body and not re.search(
+        r"(?:[。！？!?]|…{1,2})(?:[”’」』》】\"'])?$",
+        body,
+    ):
+        failures.append("叙事单元结尾不是完整句，疑似被 token 上限截断。")
+    if _narrative_quote_structure_invalid(body):
+        failures.append("叙事单元引号未闭合、顺序颠倒或内外层配对错误。")
+    if re.search(
+        r"(?:^|\n)\s*(?:#{1,6}\s|[-*]\s|"
+        r"[一二三四五六七八九十\d]+[、.．]\s*|【[^】\n]{1,32}】)",
+        body,
+    ) or re.search(
+        r"V2_NARRATIVE_UNIT_PROSE|叙事单元|戏剧功能|locked_facts|"
+        r"target_(?:min|max)_chars|目标字数",
+        body,
+        re.I,
+    ):
+        failures.append("叙事单元输出了标题、编号、制作标签或合同字段。")
+    reality_hits = [name for name in REAL_WORLD_PROPER_NOUNS if name in body]
+    if reality_hits:
+        failures.append("叙事单元出现现实专名：" + "、".join(reality_hits[:6]))
+    card = chapter_card if isinstance(chapter_card, dict) else {}
+    allowed_names = {
+        str(name).strip()
+        for name in (unit.get("allowed_cast") or [])
+        if str(name).strip()
+    }
+    unknown_names = _unknown_named_roles_in_synopsis(
+        body,
+        card.get("canonical_cast") or [],
+    )
+    middle_dot_unknown: List[str] = []
+    drift_action = (
+        r"走进|走来|说道|问道|开口|递来|转身|离开|站在|坐在|"
+        r"点头|皱眉|冷笑|拒绝|宣布"
+    )
+    drift_non_name_suffixes = {
+        "终于",
+        "缓缓",
+        "默默",
+        "突然",
+        "迅速",
+        "立刻",
+        "当场",
+        "再次",
+        "直接",
+        "随后",
+        "独自",
+        "悄然",
+        "冷冷",
+        "慢慢",
+        "径直",
+        "忽然",
+        "匆匆",
+        "没再",
+        "不再",
+        "未再",
+        "也没",
+    }
+    for allowed_name in allowed_names:
+        if "·" not in allowed_name and "•" not in allowed_name:
+            continue
+        for match in re.finditer(
+            re.escape(allowed_name)
+            + rf"([\u4e00-\u9fff]{{1,2}})(?=(?:{drift_action}))",
+            body,
+        ):
+            suffix = match.group(1)
+            if suffix not in drift_non_name_suffixes:
+                middle_dot_unknown.append(allowed_name + suffix)
+    middle_dot_scan = body
+    for allowed_name in sorted(allowed_names, key=len, reverse=True):
+        middle_dot_scan = middle_dot_scan.replace(allowed_name, "")
+    for candidate_name in re.findall(
+        r"[\u4e00-\u9fff]{1,8}[·•][\u4e00-\u9fff]{1,10}",
+        middle_dot_scan,
+    ):
+        middle_dot_unknown.append(candidate_name)
+    unknown_names.extend(middle_dot_unknown)
+    if unknown_names:
+        failures.append(
+            "叙事单元新增未允许的具名人物："
+            + "、".join(_ordered_unique_text(unknown_names)[:6])
+        )
+    current_allowed_terms = (
+        _grounded_scene_contract_payload(card).get(
+            "allowed_evidence_carriers"
+        )
+        or []
+    )
+    future_hits = _future_material_hits(
+        body,
+        future_only_terms,
+        current_allowed_terms,
+    )
+    if future_hits:
+        failures.append(
+            "叙事单元提前使用后续里程碑专属材料或权限："
+            + "、".join(_ordered_unique_text(future_hits)[:6])
+        )
+    chapter_carriers = set(unit.get("all_chapter_carriers") or [])
+    if not chapter_carriers:
+        chapter_carriers = set(
+            _compile_grounded_prose_spine(
+                int(card.get("chapter_id") or 0),
+                card,
+            ).get("carriers") or []
+        )
+    allowed_carriers = set(unit.get("allowed_carriers") or [])
+    allowed_carrier_aliases = {
+        alias
+        for carrier in allowed_carriers
+        for alias in _carrier_aliases(str(carrier))
+    }
+    early_carriers = [
+        str(carrier)
+        for carrier in chapter_carriers - allowed_carriers
+        if len(str(carrier).strip()) >= 2
+        and (
+            str(carrier) in body
+            or any(
+                alias in body and alias not in allowed_carrier_aliases
+                for alias in _carrier_aliases(str(carrier))
+            )
+        )
+    ]
+    if early_carriers:
+        failures.append(
+            "叙事单元在计划允许前调用当前载体："
+            + "、".join(_ordered_unique_text(early_carriers)[:6])
+        )
+    memory_sentences = _narrative_memory_sentences(body)
+    if memory_sentences and not bool(unit.get("memory_allowed")):
+        failures.append("本叙事单元不允许再次回忆前世。")
+    if bool(unit.get("memory_allowed")):
+        if _narrative_memory_marker_in_quotes(body):
+            failures.append("前世信息被写进对白；必须改成私下内心判断。")
+        if not memory_sentences:
+            failures.append("本单元必须用且只能用一句私下旧局判断触发当前行动。")
+        elif len(memory_sentences) != 1 or len(memory_sentences[0]) > 140:
+            failures.append("允许回忆的单元也只能有一句私下旧局判断。")
+    result_groups = _narrative_result_anchor_groups(card)
+    if not bool(unit.get("result_allowed")):
+        if any(
+            _settlement_relation_present(body, group)
+            for group in result_groups
+        ):
+            failures.append("叙事单元提前写完本章最终处分、交接或收益。")
+    elif result_groups:
+        missing_result_groups = [
+            group
+            for group in result_groups
+            if not _settlement_relation_present(body, group)
+        ]
+        if missing_result_groups:
+            failures.append(
+                "结果单元没有让全部锁定处分、交接或收益实际生效："
+                + "、".join(group[0] for group in missing_result_groups[:4] if group)
+            )
+    required_actors = [
+        str(actor).strip()
+        for actor in (unit.get("required_actors") or [])
+        if str(actor).strip() and str(actor).strip() != "既有对手"
+    ]
+    missing_actors = [
+        actor
+        for actor in required_actors
+        if not _actor_is_mentioned(actor, body)
+    ]
+    if missing_actors:
+        failures.append(
+            "叙事单元没有让其戏剧功能要求的人物实际行动："
+            + "、".join(missing_actors[:4])
+        )
+    dramatic_function = str(unit.get("dramatic_function") or "")
+    functional_actor_markers = (
+        "现场见证人",
+        "合作方",
+        "负责人",
+        "主办方",
+        "有权者",
+    )
+    if _unit_requires_functional_actor_decision(unit):
+        inactive_authorities = [
+            actor
+            for actor in required_actors
+            if actor not in missing_actors
+            and any(marker in actor for marker in functional_actor_markers)
+            and not _functional_actor_decision_present(actor, body)
+        ]
+        if inactive_authorities:
+            failures.append(
+                "叙事单元只让有权者在场或旁观，没有让其亲自改变判断、"
+                "确认决定或执行结果："
+                + "、".join(inactive_authorities[:4])
+            )
+    semantic_anchors = [
+        str(anchor).strip()
+        for anchor in (unit.get("required_semantic_anchors") or [])
+        if str(anchor).strip()
+    ]
+    if semantic_anchors and not any(
+        _semantic_anchor_present(anchor, body)
+        for anchor in semantic_anchors
+    ):
+        failures.append(
+            "叙事单元没有落实当前锁定动作或对象："
+            + "、".join(semantic_anchors[:6])
+        )
+    required_carriers = [
+        str(carrier).strip()
+        for carrier in (unit.get("required_carriers") or [])
+        if str(carrier).strip()
+    ]
+    if required_carriers and not any(
+        alias in body
+        for carrier in required_carriers
+        for alias in _carrier_aliases(str(carrier))
+    ):
+        failures.append("叙事单元没有实际调用当前戏剧功能要求的载体。")
+    scene_archetype = str(
+        unit.get("scene_archetype")
+        or _grounded_scene_contract_payload(card).get("scene_archetype")
+        or ""
+    )
+    if (
+        scene_archetype == "live_capability_validation"
+        and int(unit.get("unit_index") or 0) != 4
+        and re.search(r"停一下|暂停|叫停|喊停|停下来", body)
+    ):
+        failures.append(
+            "只有验证冲突单元可以出现一次叫停或暂停；当前单元不得提前或重复使用叫停词。"
+        )
+    failures.extend(_scene_archetype_grounding_failures(body, card))
+    failures.extend(_narrative_unit_language_and_style_failures(body, card, unit))
+    current_sentences = {
+        re.sub(r"\s+", "", sentence)
+        for sentence in re.split(r"[。！？!?\n]+", body)
+        if len(re.sub(r"\s+", "", sentence)) >= 12
+    }
+    for previous in previous_units:
+        previous_body = str(previous or "").strip()
+        previous_sentences = {
+            re.sub(r"\s+", "", sentence)
+            for sentence in re.split(r"[。！？!?\n]+", previous_body)
+            if len(re.sub(r"\s+", "", sentence)) >= 12
+        }
+        duplicates = sorted(current_sentences & previous_sentences)
+        if duplicates:
+            failures.append(
+                "叙事单元重复前面单元已经写过的完整句子："
+                + duplicates[0][:80]
+            )
+            break
+        if (
+            min(len(body), len(previous_body)) >= 160
+            and SequenceMatcher(None, body, previous_body).ratio() >= 0.62
+        ):
+            failures.append("叙事单元与前面单元措辞和动作过度相似。")
+            break
+    return _ordered_unique_text(failures)
+
+
+def _build_narrative_unit_prompt(
+    chapter_num: int,
+    chapter_card: Dict[str, Any],
+    unit: Dict[str, Any],
+    *,
+    previous_tail: str = "",
+    completed_functions: Iterable[str] = (),
+    failures: Optional[List[str]] = None,
+    continuity_context: str = "",
+    rag_samples: Optional[Dict[str, List[Dict[str, Any]]]] = None,
+) -> str:
+    """Expose only the current unit's facts; later result and carriers stay absent."""
+
+    locked_facts = "\n".join(
+        f"- {fact}" for fact in (unit.get("locked_facts") or [])
+    ) or "- 只执行当前目标，不新增事实。"
+    allowed_carriers = "、".join(unit.get("allowed_carriers") or [])
+    allowed_cast = "、".join(unit.get("allowed_cast") or [])
+    semantic_anchors = "、".join(unit.get("required_semantic_anchors") or [])
+    required_actors = "、".join(unit.get("required_actors") or []) or "服从当前目标"
+    if _unit_requires_functional_actor_decision(unit):
+        functional_actors = [
+            str(actor or "").strip()
+            for actor in (unit.get("required_actors") or [])
+            if str(actor or "").strip()
+            and any(
+                marker in str(actor or "")
+                for marker in ("合作方", "负责人", "主办方", "有权者")
+            )
+        ]
+        authority_closer_rule = (
+            "本单元的判断收束句必须以上述有权者为主语，由其亲口改口、确认"
+            "或决定；不得只让其提问、看向对手，或把最终判断推回对手。"
+            if functional_actors
+            else ""
+        )
+        required_actor_rule = (
+            f"要求实际行动的人物：{required_actors}。这些称呼必须原样出现，"
+            "并各自作出对白、确认、决定或执行动作；只写在场、被看见或沉默"
+            "不算实际行动。承担现场判断或结算的有权者必须在可见证明、核验"
+            "或行动完成后亲自改口、确认或执行，不得提前裁决。"
+            + authority_closer_rule
+        )
+    else:
+        required_actor_rule = (
+            f"要求实际行动的人物：{required_actors}。这些称呼必须在正文前半段"
+            "原样出现，并各自作出对白、确认、决定或执行动作；只写在场、被看见"
+            "或沉默不算实际行动。"
+        )
+    compact_failures = _compact_grounded_rewrite_feedback(failures)
+    failure_block = "\n".join(
+        f"- {failure}" for failure in compact_failures
+    ) or "- 首次生成，无失败反馈。"
+    completed = " → ".join(
+        str(value).strip()
+        for value in completed_functions
+        if str(value).strip()
+    ) or "本章尚未生成其他单元。"
+    memory_rule = (
+        _memory_to_action_prompt(
+            chapter_num,
+            chapter_card,
+            _grounded_scene_contract_payload(chapter_card),
+        )
+        if unit.get("memory_allowed")
+        else "只写今生当前现场，不回顾或解释前世。"
+    )
+    result_authority = str(
+        _compile_grounded_prose_spine(
+            chapter_num,
+            chapter_card,
+        ).get("authority")
+        or "当前有权者"
+    ).strip()
+    result_rule = (
+        "本单元是唯一结果单元。锁定事实中以分号分开的每项结果都必须"
+        f"在当前现场逐项生效；由{result_authority}亲自宣布、确认、移交"
+        "或执行，并原样写出当前权利、处分或收益名称。主角单方宣称、"
+        "对手点头，以及“稍后、明天、以后再办”的承诺都不算落地。"
+        f"只有{result_authority}可以完成这项结算；不得让医生、普通见证人、"
+        "主角或对手替代有权者。"
+        if unit.get("result_allowed")
+        else "本单元推进到当前目标即止，不作最终处分、交接或收益结算。"
+    )
+    carrier_rule = (
+        f"本单元只可调用这些当前载体：{allowed_carriers}。"
+        if allowed_carriers
+        else (
+            "本单元不调用任何材料或设备；不得让人物拿、推、展示文件、"
+            "屏幕、平板、数据、记录或监测结果，只用人物行动、对白和"
+            "当面判断推进。"
+        )
+    )
+    generation_min_chars = _narrative_unit_generation_min_chars(unit)
+    generation_max_chars = _narrative_unit_generation_max_chars(unit)
+    authority_space_rule = (
+        "系统可能在最终章预算内补足计划要求的无姓名有权者短句，"
+        "不要用冗余动作占满预留空间；"
+        if generation_max_chars < int(unit.get("target_max_chars") or 0)
+        else "全部锁定行动与结果都必须由本次正文亲自写完；"
+    )
+    scene_archetype = str(unit.get("scene_archetype") or "").strip()
+    try:
+        unit_index = int(unit.get("unit_index") or 0)
+    except (TypeError, ValueError):
+        unit_index = 0
+    unit_specific_rule = ""
+    current_contract_text = json.dumps(
+        {
+            key: chapter_card.get(key)
+            for key in (
+                "chapter_goal", "this_life_revenge", "core_payoff",
+                "chapter_ending", "must_resolve_this_chapter",
+                "chapter_must_include", "chapter_milestone",
+            )
+        },
+        ensure_ascii=False,
+    )
+    planned_medication_material = bool(re.search(
+        r"针剂|药品|药物|用药|药盒|药瓶|镇静|封签|送货单|领用簿|营养针",
+        current_contract_text,
+    ))
+    medication_rule = (
+        "本章执行卡没有医疗材料情节：不得引入任何具体医疗物品、成分、容器或包装，"
+        "也不得用未点名的医疗证据钩连下一章。"
+        if not planned_medication_material
+        else "药物与包装材料只能使用当前锁定事实和允许载体，不得自行增加品名或包装。"
+    )
+    rebirth_payoff_rule = (
+        "本单元承载信息差起点：只用一句不出口的前世受害记忆认出对手仍在复用的旧套路，"
+        "随即让主角暗中改变一个现场条件或提前安排一个动作；绝不向任何人解释自己重生。"
+        if unit.get("memory_allowed")
+        else (
+            "本单元承接主角已经掌握但不公开解释的前世信息差：让先前暗中布置产生一个新作用，"
+            "不要重复回忆或提前揭底。反派可以因确信旧套路仍有效而嘴硬、抢功或自作聪明；"
+            "其可笑感来自他亲手踩进主角预判的漏洞并被事实打脸，不得写成无缘无故的降智丑角。"
+        )
+    )
+    witness_authority_rule = (
+        "现场见证人只负责亲眼观察并给一句定性确认，不能获得、接管或受让训练"
+        "强度决定权、裁量权或其他权限；合作方只执行当前锁定的最终处分。"
+        if scene_archetype == "live_capability_validation"
+        else ""
+    )
+    evidence_boundary_rule = (
+        "全章证据只按普通人能当面读懂的纸面信息核对：编号、数量、日期、签收四选一。"
+        "不得出现英文或字母编号、油墨与纸张鉴定、拍照、监控、日志、终端、后台或仪器。"
+        if scene_archetype == "evidence_confrontation"
+        else ""
+    )
+    if scene_archetype == "live_capability_validation" and unit_index == 1:
+        unit_specific_rule = (
+            "本单元只让主角与对手当面对话：对手提出改成低强度，主角承受这项现实压力。"
+            "双方全程保持原位，交流方式仅限对白；现场测试尚未开始，也没有人作判断或执行决定。"
+        )
+    elif scene_archetype == "live_capability_validation" and unit_index == 2:
+        unit_specific_rule = (
+            "本单元的新增行动只有主角转向合作方与现场见证人，用对白锁定只看本次完成的"
+            "判断条件；所有人保持原位，测试留到后续单元才开始。"
+        )
+    elif scene_archetype == "live_capability_validation" and unit_index == 3:
+        unit_specific_rule = (
+            "测试仍未开始。本单元只写能力判断会改变谁的现实控制和主角为何必须夺回决定；"
+            "不得出现停一下、暂停、叫停、喊停或停下来，也不描写任何表演动作。"
+        )
+    elif scene_archetype == "live_capability_validation" and unit_index == 4:
+        unit_specific_rule = (
+            "本单元整段只出现一次口头干预：对手说完一次后，主角不中断地继续完成；"
+            "不要再写第二次劝阻、暂停或降速要求。"
+        )
+    elif scene_archetype == "live_capability_validation" and unit.get("result_allowed"):
+        unit_specific_rule = (
+            "结果严格按两步落地：合作方先整张撤下旧宣传页，再亲口宣布训练强度决定权"
+            "归还主角；随后只写对手一次反应和主角一句回应。"
+        )
+    elif scene_archetype == "evidence_confrontation" and unit_index == 5:
+        unit_specific_rule = (
+            "本单元只把此前已经选定的那一处纸面差异读给在场者听，然后立刻写人物反应。"
+            "只能从封签、送货单、领用簿表面直接可读的编号、数量、日期或签收中沿用一种；"
+            "不得再检查旧宣传页，不写英文、油墨、纸张材质、刮痕、仪器、拍照、监控、"
+            "日志、终端或任何鉴定过程。"
+        )
+    return f"""V2_NARRATIVE_UNIT_PROSE
+你正在写一章商业重生小说中的一个连续叙事单元，不是整章。只写当前单元，后续单元由系统另行生成。
+
+【故事身份】
+{_chapter_body_theme_contract(chapter_card)}
+
+【当前单元合同】
+章节：第{chapter_num}章；单元：{unit.get('unit_index')}/{unit.get('unit_count')}
+戏剧功能：{unit.get('dramatic_function')}
+当前目标：{unit.get('objective')}
+允许具名人物：{allowed_cast or '无；只能使用无姓名功能称呼'}
+{required_actor_rule}
+必须自然写出的当前语义：{semantic_anchors or '无额外词项；服从当前目标与锁定事实'}
+{carrier_rule}
+{result_rule}
+前世信息：{memory_rule}
+
+【本单元锁定事实】
+{locked_facts}
+
+【已完成状态】
+已经完成的戏剧功能：{completed}
+紧接此前真实文字：{previous_tail[-600:] if previous_tail else '无；直接从当前目标起笔。'}
+不得复述已完成动作；首句必须带来一个新动作、新对白、新选择或新后果。
+
+【场景边界】
+{_scene_archetype_writing_guard(
+    _grounded_scene_contract_payload(chapter_card),
+    allowed_carriers=unit.get("allowed_carriers") or [],
+)}
+{unit_specific_rule}
+{medication_rule}
+
+【重生爽感链】
+{rebirth_payoff_rule}
+{witness_authority_rule}
+{evidence_boundary_rule}
+
+【StoryMemory 与 Neo4j 连续性】
+{continuity_context or '无额外连续性事实。'}
+这些只用于保持已发生事实一致，不得变成本单元的新证据或幕后信息。标为“当前事实”
+和“今生已发生”的状态已经在前章生效：不得换名重新授予、撤销或结算，也不得让
+已经失权的人无解释恢复旧权限；本单元的新变化只能来自当前锁定事实。
+
+【可迁移写作技法】
+{_rag_technique_tag_block(rag_samples)}
+
+【本次重写反馈】
+{failure_block}
+
+写作要求：
+1. 只写{generation_min_chars}至{generation_max_chars}字；这是模型原稿硬门禁，系统补句后的正文仍须通过正式的{unit.get('target_min_chars')}至{unit.get('target_max_chars')}字验收；宁可在下限附近完整收束，也绝不能超过上限；{authority_space_rule}自然承接前文，不能总结全章，也不能越过当前目标。
+2. 段落形态：{unit.get('paragraph_mode')}。对白、动作和心理必须共同推动同一因果，不写等长分镜。
+3. 每段都要改变选择、阻力、判断或后果；身体动作和专业过程只写到足以改变人物决定。
+4. 固定人物之外只能使用无姓名职位；不临时命名人物、机构、作品、文件、流程、设备或规则。
+5. 只输出小说正文，不要标题、编号、列表、解释、Markdown、单元标签或验收总结。
+"""
+
+
+def _archive_narrative_unit_failure(
+    gen: Any,
+    chapter_num: int,
+    chapter_attempt: int,
+    unit: Dict[str, Any],
+    unit_attempt: int,
+    text: str,
+    failures: List[str],
+) -> None:
+    if os.getenv("V2_SAVE_REJECTED_DRAFTS", "").strip().lower() not in {
+        "1", "true", "yes", "on",
+    }:
+        return
+    digest = hashlib.sha256(str(text or "").encode("utf-8")).hexdigest()[:10]
+    rejected_dir = (
+        Path(gen.outputs_dir)
+        / "rejected_drafts"
+        / "narrative_units"
+        / f"chapter_{chapter_num:03d}"
+    )
+    rejected_dir.mkdir(parents=True, exist_ok=True)
+    path = rejected_dir / (
+        f"chapter_try_{chapter_attempt:02d}_unit_{int(unit.get('unit_index') or 0):02d}"
+        f"_try_{unit_attempt:02d}_{digest}.txt"
+    )
+    path.write_text(
+        str(text or "")
+        + "\n\n--- UNIT FAILURES ---\n"
+        + "\n".join(failures),
+        encoding="utf-8",
+    )
+
+
+def _narrative_unit_generation_max_chars(
+    unit: Dict[str, Any],
+    *,
+    reserve_authority_space: bool = True,
+) -> int:
+    """Reserve final-budget space for a non-result authority decision fallback."""
+
+    target_min = max(1, int(unit.get("target_min_chars") or 1))
+    target_max = max(
+        target_min,
+        int(unit.get("target_max_chars") or max(target_min, 350)),
+    )
+    if not reserve_authority_space or bool(unit.get("result_allowed")):
+        return target_max
+    tail_chars = _narrative_unit_authority_tail_chars(unit)
+    if tail_chars <= 0:
+        return target_max
+    generation_min = max(1, target_min - tail_chars)
+    reserve = min(
+        max(32, tail_chars + 4),
+        max(0, target_max - generation_min),
+    )
+    return max(generation_min, target_max - reserve)
+
+
+def _narrative_unit_generation_min_chars(
+    unit: Dict[str, Any],
+    *,
+    reserve_authority_space: bool = True,
+) -> int:
+    """Lower the raw-text floor by exactly what the deterministic tail supplies."""
+
+    target_min = max(1, int(unit.get("target_min_chars") or 1))
+    if not reserve_authority_space or bool(unit.get("result_allowed")):
+        return target_min
+    tail_chars = _narrative_unit_authority_tail_chars(unit)
+    if tail_chars <= 0:
+        return target_min
+    return max(1, target_min - tail_chars)
+
+
+def _narrative_unit_needs_authority_reserve(
+    unit: Dict[str, Any],
+    text: str,
+) -> bool:
+    """Reserve space only while a required functional decision is still absent."""
+
+    if bool(unit.get("result_allowed")):
+        return False
+    if not _unit_requires_functional_actor_decision(unit):
+        return False
+    functional_actors = [
+        str(actor or "").strip()
+        for actor in (unit.get("required_actors") or [])
+        if str(actor or "").strip()
+        and any(
+            marker in str(actor or "")
+            for marker in ("合作方", "负责人", "主办方", "有权者")
+        )
+    ]
+    return bool(
+        functional_actors
+        and any(
+            not _functional_actor_decision_present(actor, text)
+            for actor in functional_actors
+        )
+    )
+
+
+def _initial_narrative_unit_max_tokens(unit: Dict[str, Any]) -> int:
+    """Keep the API ceiling close to the unit's character contract.
+
+    Chinese prose is normally close enough to one output token per character
+    that the former 900-token floor made a 260-390-character unit limit
+    ineffective.  Leave a modest sentence-closing margin, then adapt it from
+    the observed character count on retries.
+    """
+
+    target_max = _narrative_unit_generation_max_chars(unit)
+    return max(192, int(target_max * 1.10) + 32)
+
+
+def _trim_narrative_unit_to_complete_boundary(
+    text: str,
+    unit: Dict[str, Any],
+) -> str:
+    """Shorten only at a complete sentence boundary inside the unit budget."""
+
+    body = str(text or "").strip()
+    target_min = max(1, int(unit.get("target_min_chars") or 1))
+    target_max = max(
+        target_min,
+        int(unit.get("target_max_chars") or target_min),
+    )
+    if len(body) <= target_max:
+        return body
+    boundary_pattern = re.compile(
+        r"(?:[。！？!?]|…{1,2})(?:[”’」』》】\"'])?"
+    )
+    eligible = [
+        match.end()
+        for match in boundary_pattern.finditer(body)
+        if target_min <= len(body[: match.end()].strip()) <= target_max
+    ]
+    if not eligible:
+        return body
+    return body[: eligible[-1]].strip()
+
+
+def _ensure_narrative_unit_memory_trigger(
+    text: str,
+    unit: Dict[str, Any],
+    chapter_card: Optional[Dict[str, Any]],
+) -> str:
+    """Supply the single private old-life judgment when the model omits it."""
+
+    body = str(text or "").strip()
+    if not body or not bool(unit.get("memory_allowed")):
+        return body
+    if _narrative_memory_sentences(body):
+        return body
+    card = chapter_card if isinstance(chapter_card, dict) else {}
+    contract = _grounded_scene_contract_payload(card)
+    memory_key = str(
+        contract.get("scene_variant")
+        or contract.get("scene_archetype")
+        or "action_confrontation"
+    )
+    seeds = {
+        "live_capability_validation": (
+            "上一世，他见过对手把降低标准包装成保护。"
+        ),
+        "public_performance_rebuttal": (
+            "上一世，他见过对手用公开质疑削弱他的表达权。"
+        ),
+        "evidence_confrontation": (
+            "上一世，他见过对手用含混记录掩盖自己的责任。"
+        ),
+        "physical_safety_validation": (
+            "上一世，他见过对手以赶进度为由越过安全流程。"
+        ),
+        "public_resource_audit": (
+            "上一世，他见过对手把公共资源藏进不透明安排。"
+        ),
+        "contract_rights_audit": (
+            "上一世，他见过对手把让权包装成保护性安排。"
+        ),
+        "financial_process_audit": (
+            "上一世，他见过对手用名目混淆公款与私用。"
+        ),
+        "asset_transaction_audit": (
+            "上一世，他见过对手用时间压力夺走资产控制。"
+        ),
+        "action_confrontation": (
+            "上一世，他见过对手借同样的安排争夺控制。"
+        ),
+    }
+    seed = seeds.get(memory_key, seeds["action_confrontation"])
+    action_cues = {
+        "live_capability_validation": "今生主动验真",
+        "public_performance_rebuttal": "今生主动应战",
+        "evidence_confrontation": "今生主动核对",
+        "physical_safety_validation": "今生主动止险",
+        "public_resource_audit": "今生主动公开核验",
+        "contract_rights_audit": "今生主动划清权利",
+        "financial_process_audit": "今生主动核清款项",
+        "asset_transaction_audit": "今生主动冻结安排",
+        "action_confrontation": "今生主动破局",
+    }
+    seed = (
+        seed.rstrip("。")
+        + "；"
+        + action_cues.get(memory_key, action_cues["action_confrontation"])
+        + "。"
+    )
+    return f"{seed}\n\n{body}"
+
+
+def _ensure_required_functional_actor_actions(
+    text: str,
+    unit: Dict[str, Any],
+) -> str:
+    """Supply plan-required anonymous actor actions without touching results."""
+
+    body = str(text or "").strip()
+    if not body or bool(unit.get("result_allowed")):
+        return body
+    dramatic_function = str(unit.get("dramatic_function") or "")
+    requires_functional_decision = _unit_requires_functional_actor_decision(unit)
+    functional_actor_markers = (
+        "现场见证人",
+        "合作方",
+        "负责人",
+        "主办方",
+        "有权者",
+    )
+    leading_lines: List[str] = []
+    trailing_lines: List[str] = []
+    for actor_value in unit.get("required_actors") or []:
+        actor = str(actor_value or "").strip()
+        if not actor:
+            continue
+        actor_requires_decision = (
+            requires_functional_decision
+            and any(marker in actor for marker in functional_actor_markers)
+        )
+        if actor_requires_decision:
+            if _functional_actor_decision_present(actor, body):
+                continue
+            destination = trailing_lines
+        elif _actor_is_mentioned(actor, body):
+            continue
+        else:
+            destination = leading_lines
+        line = _functional_actor_fallback_line(
+            actor,
+            dramatic_function,
+            actor_requires_decision=actor_requires_decision,
+        )
+        if not line:
+            continue
+        if (
+            line not in body
+            and line not in leading_lines
+            and line not in trailing_lines
+        ):
+            destination.append(line)
+    if not leading_lines and not trailing_lines:
+        return body
+    prepared = body
+    insertion = "\n".join(leading_lines)
+    if leading_lines and _narrative_memory_sentences(prepared):
+        memory_end = re.search(
+            r"(?:[。！？!?]|…{1,2})(?:[”’」』》】\"'])?",
+            prepared,
+        )
+        if memory_end:
+            prepared = (
+                prepared[: memory_end.end()].strip()
+                + "\n\n"
+                + insertion
+                + "\n\n"
+                + prepared[memory_end.end() :].strip()
+            )
+        else:
+            prepared = insertion + "\n\n" + prepared
+    elif leading_lines:
+        prepared = insertion + "\n\n" + prepared
+    if trailing_lines:
+        prepared = prepared.rstrip() + "\n\n" + "\n".join(trailing_lines)
+    return prepared
+
+
+def _prepare_narrative_unit_length_and_memory(
+    text: str,
+    unit: Dict[str, Any],
+    chapter_card: Optional[Dict[str, Any]],
+) -> str:
+    """Keep one memory trigger even when an overlong tail containing it is cut."""
+
+    body = str(text or "").strip()
+    original = body
+    target_max = int(unit.get("target_max_chars") or 0)
+    original_within_budget = target_max > 0 and len(original) <= target_max
+    for _ in range(2):
+        authority_tail_lines = _narrative_unit_authority_tail_lines(unit, body)
+        body = _ensure_narrative_unit_memory_trigger(
+            body,
+            unit,
+            chapter_card,
+        )
+        body = _ensure_required_functional_actor_actions(body, unit)
+        if target_max > 0 and len(body) > target_max:
+            tail_text = "\n".join(authority_tail_lines)
+            if tail_text and body.endswith(tail_text):
+                prefix = body[: -len(tail_text)].rstrip()
+                available_prefix = target_max - len(tail_text) - 2
+                if available_prefix > 0:
+                    trimmed_prefix = _trim_narrative_unit_to_complete_boundary(
+                        prefix,
+                        {
+                            "target_min_chars": 1,
+                            "target_max_chars": available_prefix,
+                        },
+                    )
+                    if (
+                        trimmed_prefix
+                        and len(trimmed_prefix) <= available_prefix
+                        and re.search(
+                            r"(?:[。！？!?]|…{1,2})(?:[”’」』》】\"'])?$",
+                            trimmed_prefix,
+                        )
+                    ):
+                        body = trimmed_prefix + "\n\n" + tail_text
+                        continue
+                # Keep the mandatory authority sentence visible so validation
+                # reports the real overlength problem.  Ordinary tail trimming
+                # would silently delete the required decision and misdiagnose
+                # the retry as a missing actor.
+                return body
+        if original_within_budget and len(body) > target_max:
+            # Setup insertions and memory seeds must not evict a valid ending.
+            # A focused retry is safer when no complete prefix can preserve the
+            # mandatory non-result authority decision.
+            return original
+        body = _trim_narrative_unit_to_complete_boundary(body, unit)
+    return body
+
+
+def _normalize_unplanned_quantitative_scene_details(
+    text: str,
+    chapter_card: Optional[Dict[str, Any]],
+) -> str:
+    """Turn invented measurements and pseudo-medical jargon into plain prose."""
+
+    body = str(text or "")
+    card = chapter_card if isinstance(chapter_card, dict) else {}
+    contract = _grounded_scene_contract_payload(card)
+    archetype = str(contract.get("scene_archetype") or "")
+    if archetype not in {
+        "live_capability_validation",
+        "public_performance_rebuttal",
+        "physical_safety_validation",
+    }:
+        return body
+    planned_text = json.dumps(card, ensure_ascii=False)
+    quantitative_pattern = re.compile(
+        r"(?P<number>[一二两三四五六七八九十百零半\d]+)"
+        r"(?P<unit>秒|分钟|小时|轮|组|拍|小节|度|米|厘米|公分|毫米|分贝|赫兹)"
+    )
+
+    def replace(match: re.Match[str]) -> str:
+        token = match.group(0)
+        if token in planned_text:
+            return token
+        unit_name = match.group("unit")
+        prefix = body[max(0, match.start() - 6) : match.start()]
+        if unit_name == "秒":
+            return "片刻"
+        if unit_name in {"分钟", "小时"}:
+            return "一段时间"
+        if unit_name == "轮":
+            return "这次"
+        if unit_name == "组":
+            return "几次" if prefix.endswith("连续") else "连续几次"
+        if unit_name == "拍":
+            return "少许"
+        if unit_name == "小节":
+            return "一段"
+        if unit_name == "度":
+            return "些许" if re.search(r"高|低|升|降|偏|转|抬|压", prefix) else "曾经"
+        if unit_name in {"米", "厘米", "公分", "毫米"}:
+            return "一段距离"
+        return "明显幅度"
+
+    body = quantitative_pattern.sub(replace, body)
+    if archetype in {
+        "live_capability_validation",
+        "public_performance_rebuttal",
+    }:
+        body = re.sub(
+            r"气息(?:沉入|沉进|落入)腹腔",
+            "气息稳稳落下",
+            body,
+        )
+        body = re.sub(
+            r"(?:从)?腹腔(?:顶出|推出|托起)(?:气息|声音)?",
+            "把气息稳稳托起",
+            body,
+        )
+        stunt_replacements = (
+            (r"(?:左|右)?掌撑地起身", "稳稳起身"),
+            (r"手掌撑地弹起", "顺势稳稳起身"),
+            (r"腾空踢腿(?:再)?落地", "抬腿转身落地"),
+            (r"腾跃而起", "轻快跃步"),
+            (r"高位跳跃|连续跳跃", "连续踏步"),
+            (r"三连滑步", "一段滑步"),
+            (r"旋身暴起", "利落转身"),
+            (r"急停变向", "变换步伐"),
+            (r"翻滚", "转身"),
+            (r"跪地", "俯身收势"),
+            (r"撑地", "稳住身体"),
+            (r"腾空|腾跃", "跃步"),
+        )
+        for pattern, replacement in stunt_replacements:
+            body = re.sub(pattern, replacement, body)
+        surface_replacements = {
+            "胸廓": "动作",
+            "肋间肌": "动作",
+            "腹横肌": "动作",
+            "腹腔": "身体深处",
+            "胸腔": "声音",
+            "声带闭合": "发声状态",
+            "肌群": "动作",
+            "代偿性喘息": "喘息",
+            "共鸣位置": "现场听感",
+            "神经信号": "动作反应",
+            "关节角度": "动作幅度",
+            "心率": "身体状态",
+            "血氧": "身体状态",
+            "乳酸": "疲劳感",
+        }
+        for source, replacement in surface_replacements.items():
+            body = body.replace(source, replacement)
+    return body
+
+
+def _adapt_narrative_unit_max_tokens(
+    current_max_tokens: int,
+    observed_chars: int,
+    unit: Dict[str, Any],
+    *,
+    reserve_authority_space: bool = True,
+    incomplete_ending: bool = False,
+) -> int:
+    """Move the next retry's token ceiling toward the accepted char window."""
+
+    target_min = _narrative_unit_generation_min_chars(
+        unit,
+        reserve_authority_space=reserve_authority_space,
+    )
+    target_max = _narrative_unit_generation_max_chars(
+        unit,
+        reserve_authority_space=reserve_authority_space,
+    )
+    observed = max(0, int(observed_chars))
+    current = max(1, int(current_max_tokens))
+    if incomplete_ending:
+        upper_guard = int(target_max * 1.75) + 96
+        return min(upper_guard, max(current + 24, int(current * 1.12)))
+    if observed > target_max:
+        scaled = int(current * target_max / observed * 0.96)
+        return max(128, min(current - 16, scaled))
+    if 0 < observed < target_min:
+        scaled = int(current * target_min / observed * 1.06)
+        upper_guard = int(target_max * 1.75) + 96
+        return min(upper_guard, max(current + 16, scaled))
+    return current
+
+
+def _generate_grounded_narrative_units(
+    gen: Any,
+    chapter_num: int,
+    chapter_card: Dict[str, Any],
+    *,
+    previous_chapter_tail: str = "",
+    failures: Optional[List[str]] = None,
+    continuity_context: str = "",
+    rag_samples: Optional[Dict[str, List[Dict[str, Any]]]] = None,
+    chapter_attempt: int = 1,
+) -> Tuple[Optional[str], List[Dict[str, Any]], List[str]]:
+    """Generate and validate one unit at a time; retry only the failing unit."""
+
+    plan = _compile_narrative_unit_plan(chapter_num, chapter_card)
+    if not plan:
+        return None, [], ["叙事单元计划为空。"]
+    plan_dir = Path(gen.outputs_dir) / "narrative_unit_plans_v2"
+    plan_dir.mkdir(parents=True, exist_ok=True)
+    (plan_dir / f"chapter_{chapter_num:03d}.json").write_text(
+        json.dumps(plan, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    future_terms = _future_milestone_materials(chapter_num, chapter_card)
+    current_allowed_terms = (
+        _grounded_scene_contract_payload(chapter_card).get(
+            "allowed_evidence_carriers"
+        )
+        or []
+    )
+    safe_continuity_context = _body_safe_kg_context(
+        continuity_context,
+        future_terms,
+        current_allowed_terms=current_allowed_terms,
+        max_chars=2400,
+    )
+    accepted: List[str] = []
+    completed_functions: List[str] = []
+    max_attempts = max(
+        1,
+        int(os.getenv("V2_NARRATIVE_UNIT_ATTEMPTS", "4") or 4),
+    )
+    final_failures: List[str] = []
+    for unit in plan:
+        unit_failures = list(failures or [])
+        accepted_text = ""
+        unit_max_tokens = _initial_narrative_unit_max_tokens(unit)
+        for unit_attempt in range(1, max_attempts + 1):
+            previous_tail = (
+                accepted[-1][-600:]
+                if accepted
+                else str(previous_chapter_tail or "")[-600:]
+            )
+            prompt = _build_narrative_unit_prompt(
+                chapter_num,
+                chapter_card,
+                unit,
+                previous_tail=previous_tail,
+                completed_functions=completed_functions,
+                failures=unit_failures,
+                continuity_context=safe_continuity_context,
+                rag_samples=rag_samples,
+            )
+            candidate = str(
+                gen._call_api(
+                    prompt,
+                    None,
+                    int(unit.get("unit_index") or 0),
+                    max_tokens=unit_max_tokens,
+                )
+                or ""
+            ).strip()
+            raw_candidate = candidate
+            if not candidate or candidate.startswith("通义千问"):
+                candidate_failures = ["叙事单元模型调用失败或返回空文本。"]
+            else:
+                candidate = _prepare_narrative_unit_length_and_memory(
+                    candidate,
+                    unit,
+                    chapter_card,
+                )
+                candidate = _normalize_unplanned_quantitative_scene_details(
+                    candidate,
+                    chapter_card,
+                )
+                candidate = _normalize_joined_canonical_names(
+                    candidate,
+                    chapter_card,
+                )
+                candidate = _normalize_planned_work_title_aliases(
+                    candidate,
+                    chapter_card,
+                )
+                candidate = _normalize_unplanned_document_titles(
+                    candidate,
+                    chapter_card,
+                )
+                candidate = _strip_empty_ending_cliches(candidate)
+                # Surface normalization can turn a functional actor's explicit
+                # confirmation back into a passive remark. Re-apply the same
+                # plan-required action contract immediately before validation.
+                candidate = _ensure_required_functional_actor_actions(
+                    candidate,
+                    unit,
+                )
+                candidate = _ensure_result_unit_settlements(
+                    candidate,
+                    unit,
+                    chapter_card,
+                )
+                candidate_failures = _validate_narrative_unit(
+                    candidate,
+                    unit,
+                    chapter_card,
+                    previous_units=accepted,
+                    future_only_terms=future_terms,
+                )
+                candidate_failures, soft_warnings = (
+                    _partition_relaxable_delivery_failures(candidate_failures)
+                )
+                if soft_warnings:
+                    print(
+                        f"    ℹ️ 第{chapter_num}章单元{unit.get('unit_index')}"
+                        f"文风软提示放行：{soft_warnings[0][:100]}",
+                        flush=True,
+                    )
+            if not candidate_failures:
+                accepted_text = candidate
+                break
+            if candidate:
+                unit_max_tokens = _adapt_narrative_unit_max_tokens(
+                    unit_max_tokens,
+                    len(candidate),
+                    unit,
+                    reserve_authority_space=False,
+                    incomplete_ending=any(
+                        "结尾不是完整句" in failure
+                        or "token 上限截断" in failure
+                        or "token上限截断" in failure
+                        for failure in candidate_failures
+                    ),
+                )
+            _archive_narrative_unit_failure(
+                gen,
+                chapter_num,
+                chapter_attempt,
+                unit,
+                unit_attempt,
+                candidate,
+                candidate_failures,
+            )
+            unit_failures = candidate_failures
+            print(
+                f"    ⚠️ 第{chapter_num}章单元{unit.get('unit_index')}/"
+                f"{unit.get('unit_count')}未通过：{candidate_failures[0][:120]}"
+                f"（{unit_attempt}/{max_attempts}）",
+                flush=True,
+            )
+        if not accepted_text:
+            final_failures = unit_failures or ["叙事单元连续生成失败。"]
+            return None, plan, final_failures
+        accepted.append(accepted_text)
+        completed_functions.append(str(unit.get("dramatic_function") or ""))
+        print(
+            f"    ✅ 第{chapter_num}章单元{unit.get('unit_index')}/"
+            f"{unit.get('unit_count')}通过（{len(accepted_text)}字）。",
+            flush=True,
+        )
+    assembled = "\n\n".join(accepted).strip()
+    assembled_minimum = max(_minimum_chapter_chars(chapter_num, chapter_card), 1750)
+    assembled_maximum = (
+        MAX_CHAPTER_CHARS_V2 + 100
+        if _results_first_delivery_enabled()
+        else MAX_CHAPTER_CHARS_V2
+    )
+    if len(assembled) < assembled_minimum or len(assembled) > assembled_maximum:
+        final_failures = [
+            f"叙事单元组装后正文为{len(assembled)}字，不在"
+            f"{assembled_minimum}-{assembled_maximum}字范围。"
+        ]
+        return None, plan, final_failures
+    return assembled, plan, []
 
 
 def _build_grounded_chapter_prompt(
@@ -9052,53 +13250,68 @@ def _build_grounded_chapter_prompt(
     rag_samples: Optional[Dict[str, List[Dict[str, Any]]]] = None,
 ) -> str:
     """Build one universal card-driven prose prompt for initial generation and retries."""
+    del chapter_beats
     relevant_cast = _select_grounded_chapter_cast(chapter_card)
-    beats = (chapter_beats or {}).get("beats") or []
-    beat_lines: List[str] = []
-    for idx, beat in enumerate(beats[:6], 1):
-        if not isinstance(beat, dict):
-            continue
-        parts = [
-            str(beat.get(key) or "").strip()
-            for key in (
-                "old_trap_signal", "preemptive_move", "opponent_old_move",
-                "reversal_trigger", "scene_goal", "info_delta", "evidence_form",
-            )
-        ]
-        parts = [
-            _render_grounded_execution_text(part, chapter_card)
-            for part in parts if part
-        ]
-        if parts:
-            beat_lines.append(f"{idx}. " + "；".join(parts))
-    beat_block = "\n".join(beat_lines) or "按章节执行卡中的行动与结果自然拆成四至六个递进场面。"
-    failure_block = "\n".join(f"- {item}" for item in (failures or [])[:8]) or "- 无；这是首次生成。"
-    must_resolve = chapter_card.get("must_resolve_this_chapter") or chapter_card.get("must_resolve") or []
-    must_include = chapter_card.get("chapter_must_include") or []
-    must_avoid = chapter_card.get("chapter_must_not_include") or []
     minimum_chars = _minimum_chapter_chars(chapter_num, chapter_card)
-    evidence_budget = _execution_evidence_budget(chapter_card)
-    rendered_action = _render_grounded_execution_text(
-        chapter_card.get("this_life_revenge") or chapter_card.get("chapter_goal") or "",
+    scene_contract = _grounded_scene_contract_payload(chapter_card)
+    spine = _compile_grounded_prose_spine(chapter_num, chapter_card)
+    action = _render_grounded_execution_text(spine.get("action") or "", chapter_card)
+    opposition = _render_grounded_execution_text(
+        spine.get("opposition") or "",
         chapter_card,
     )
-    rendered_goal = _render_grounded_execution_text(chapter_card.get("chapter_goal") or "", chapter_card)
-    rendered_payoff = _render_grounded_execution_text(chapter_card.get("core_payoff") or "", chapter_card)
-    rendered_resolve = _render_grounded_execution_text(must_resolve, chapter_card)
-    rendered_include = _render_grounded_execution_text(must_include, chapter_card)
-    rendered_avoid = _render_grounded_execution_text(must_avoid, chapter_card)
-    rendered_ending = _render_grounded_execution_text(chapter_card.get("chapter_ending") or "", chapter_card)
-    milestone = chapter_card.get("chapter_milestone") or chapter_card.get("milestone") or {}
-    if not isinstance(milestone, dict):
-        milestone = {}
-    scene_contract = _grounded_scene_contract_payload(chapter_card)
+    milestone = (
+        chapter_card.get("chapter_milestone")
+        or chapter_card.get("milestone")
+        or {}
+    )
+    raw_result = (
+        milestone.get("result")
+        if isinstance(milestone, dict)
+        else ""
+    )
+    result = _render_grounded_execution_text(
+        raw_result or spine.get("result") or "",
+        chapter_card,
+    )
+    carriers = [
+        str(value).strip()
+        for value in (spine.get("carriers") or [])
+        if str(value).strip()
+    ]
+    carriers_text = "、".join(carriers) if carriers else "无实体或数字证据；只用当面行动与亲眼见证"
+    moves = "\n".join(
+        f"{index}. {move}"
+        for index, move in enumerate(spine.get("moves") or [], start=1)
+    )
     prose_profile = _chapter_prose_profile(chapter_num, chapter_card)
     technique_block = _rag_technique_tag_block(rag_samples)
-    compact_kg = re.sub(r"\n{3,}", "\n\n", str(kg_context or "").strip())[:2800]
+    theme_block = _chapter_body_theme_contract(chapter_card)
+    memory_anchor = _memory_to_action_prompt(chapter_num, chapter_card, scene_contract)
+    future_materials = _future_milestone_materials(chapter_num, chapter_card)
+    compact_kg = _body_safe_kg_context(
+        kg_context,
+        future_materials,
+        current_allowed_terms=scene_contract.get(
+            "allowed_evidence_carriers"
+        )
+        or [],
+        max_chars=1800,
+    )
+    compact_failures = _compact_grounded_rewrite_feedback(
+        failures,
+        future_materials,
+    )
+    failure_block = (
+        "\n".join(f"- {item}" for item in compact_failures)
+        if compact_failures
+        else "- 无；这是首次生成。"
+    )
+    settlement_required = bool(scene_contract.get("settlement_required"))
     return f"""你是高情绪、快节奏商业重生爽文作者。请依据已经人工验收的章节执行卡，从零生成第{chapter_num}章完整正文。
 
-【主题与全书硬约束】
-{constraints_text()}
+【精简主题合同】
+{theme_block}
 
 【本章相关固定人物】
 {json.dumps(relevant_cast, ensure_ascii=False)}
@@ -9108,27 +13321,28 @@ def _build_grounded_chapter_prompt(
 场景：{prev_tail_scene or '无；直接进入本章冲突'}
 未决动作：{prev_unresolved_hook or '无'}
 
-【章节执行卡】
-主动行动：{rendered_action}
-章节目标：{rendered_goal}
-核心回报：{rendered_payoff}
-必须解决：{rendered_resolve}
-必须包含：{rendered_include}
-必须避免：{rendered_avoid}
-结尾已生效结果：{rendered_ending}
+【唯一事件事实，情节族约束的最高优先级】
+场景类型：{spine['scene_archetype']}；阶段：{spine['phase']}
+主角：{spine['protagonist']}；当场对手：{spine['opponent']}；有权作决定者：{spine['authority']}
+主角行动：{action}
+对手阻挠：{opposition}
+即时结果：{result}
+当前可用载体：{carriers_text}
+上面三项事件事实各发生一次。不得删减、倒置、同义复述或把即时结果拖到下一章；未列出的材料、权限和规则不存在。
 
-【本章情节族里程碑，事实与顺序的最高优先级】
-主角行动：{_render_grounded_execution_text(milestone.get('action') or rendered_action, chapter_card)}
-对手反应：{_render_grounded_execution_text(milestone.get('opponent_reaction') or '', chapter_card)}
-即时结果：{_render_grounded_execution_text(milestone.get('result') or rendered_ending, chapter_card)}
-不得删减、倒置、弱化或把即时结果拖到下一章；其他材料与本段冲突时一律服从本段。
+【由场景类型编译的单一因果脊柱】
+{moves}
+篇幅配额：{spine['allocation']}
 
-【从里程碑编译的通用场景契约】
-{json.dumps(scene_contract, ensure_ascii=False, indent=2)}
-契约列出的证据载体是白名单，不是要求全部写成技术说明。没有列出的材料、权限、证人和规则不得临时发明。
+【场景边界】
+本场可写的事实载体只有：{carriers_text}。每个载体只承担一次因果功能；没有载体时，胜负只来自当面行动、亲眼见证与有权者决定。把专业过程写到普通读者能够理解即可，随即回到人物冲突。
+{_scene_archetype_writing_guard(scene_contract)}
 
-【执行卡证据预算】
-{evidence_budget}
+【未来材料隔离】
+系统已从正文上下文中隔离 {len(future_materials)} 项后续里程碑专属材料或权限。只使用上方“当前可用载体”；不要猜测、列举或提前铺开被隔离内容。
+
+【前世信息差转为当前行动】
+{memory_anchor}
 
 【Neo4j连续性事实】
 {compact_kg or '无可用图谱事实。'}
@@ -9144,21 +13358,18 @@ def _build_grounded_chapter_prompt(
 叙事焦点：{prose_profile['focus']}
 收束：{prose_profile['ending']}
 
-【已验收节拍，只能顺序展开】
-{beat_block}
-
 【上轮失败反馈】
 {failure_block}
 
 统一写作规则：
 1. 开头一百五十字内接住上一章的人、物或动作并进入当前冲突；不得重新介绍背景。
-2. 叙事发动机固定为：主角认出旧局或风险→抢先改变一个现场条件→对手照旧出招并自留破绽→主角当场反卡→现实结果立即生效。若这是情节族首章，必须用不超过四十字的一句内心叙述明确“上一世见过/认出旧局”，下一句立刻写今生主动动作；不得写进对白。
-3. 只允许使用执行卡明确写出的材料、规则和操作；若节拍越过上方证据预算，以证据预算为准并丢弃该节拍细节。未明确写出证据时，只能靠当面行动、公开规则、纸面签收或对手亲口承认；禁止自行增加检测设备、监控截图、后台日志、匿名材料、黑客、跟踪或神秘援手。
-4. 每个节拍都写行动、对白和局势增量。至少一句锋利对白；对手先有一次自以为得手的动作，结算后必须有具体失态、嘴硬或利益受损反应。身体动作只能在改变决定、关系或危险时出现，禁止逐句盘点手、脚、呼吸、视线、站位和人物距离。
-5. 本章必须自然写清执行卡要求的双向结算：对手失去什么，主角拿回什么。结果写进宣读、签字、撤权、交接或现场反应，禁止在结尾另列两句摘要。
-6. 前世记忆只能用于预判，不能变成今生录音、文件、截图或实体证据；主角不得在对白中公开自曝重生。
+2. 叙事发动机固定为：主角识别旧控制方式→抢先改变一个当前条件→对手依照稳定性格出招→主角用当前行动反卡→现实结果立即生效。不得把重生秘密写进对白。
+3. 每个自然段必须带来新的选择、阻力、判断或后果。至少一句锋利对白；对手先有一次自以为得手的动作，旁观者或有权者的判断必须在可见因果推动下变化。
+4. 身体动作、设备操作和材料阅读只在改变决定、关系或危险时出现；写清变化后立刻回到人物选择，不按脊柱序号写成等长分镜。
+5. 本章必须自然写清当前里程碑的即时结果。{"这是情节族结算章，必须同时写清对手失去什么、主角拿回什么。" if settlement_required else "这是情节族铺垫章，只兑现当前小胜，不得提前借用下一章的最终处分、权限或收益。"}结果写进宣读、签字、撤权、交接或现场反应，禁止在结尾另列两句摘要。
+6. 前世记忆只能提供一句预判，不能生成任何当前材料；主角不得在对白中公开自曝重生。
 7. 不得临场给人物、媒体、平台、公司、机构、场馆、歌曲、演出、药品或文件取名。涉及现实原型时只用主题约束中的架空称呼或无姓名功能称呼。
-8. 正文目标一千六百五十至一千九百字，硬范围{minimum_chars}至{MAX_CHAPTER_CHARS_V2}字。节拍只规定动作顺序，不得机械地一拍对应一个等长自然段；遵守本章谱型，并让段落数量、开头方式和收束方式与相邻章节有明显差异。
+8. 正文目标一千七百五十至一千九百五十字，硬范围{minimum_chars}至{MAX_CHAPTER_CHARS_V2}字。遵守本章谱型，并让段落数量、开头方式和收束方式与相邻章节有明显差异。
 9. 禁止完全重复句、同一句内近距离重复同一名词、断裂拼接句和舞台调度式位移。结尾结果生效后不得再转去写窗景、天气、灯光、影子或无关整理动作。
 10. 只输出正文，不要标题、解释、编号、节拍标签或验收总结。
 """
@@ -10658,9 +14869,7 @@ def _build_schedule_canary_scene(
 
 桌上摊着当天的彩排表，最上方仍写着由巡演团队统一分发。{opponent}站在桌边，正催几名助理把表送往各组：“照旧群发，谁没收到就让谁自己来问。”
 
-“照旧”两个字，让{protagonist}想起上一世的同一场混乱。
-
-那时真正的彩排时间提前泄露，摄影人员堵住排练通道，几个部门手里的表又彼此冲突。所有人都说是临时改动，最后却把失控归到他状态不稳。如今旧局再次出现，他不再等错误发生，而是提前改变分发方式。
+“照旧”两个字，让{protagonist}想起上一世的同一场混乱：真正的彩排时间提前泄露，摄影人员堵住排练通道，几个部门手里的表彼此冲突，最后所有人却把失控归到他状态不稳。如今旧局再次出现，他不再等错误发生，而是提前改变分发方式。
 
 “真表不群发。”{protagonist}按住桌上的原件，“由我保管。”
 
@@ -10788,6 +14997,10 @@ def _build_overload_schedule_bait_scene(
 
 {opponent}的手还悬在半空，嘴却慢了下来。
 
+可他很快又给自己找到了台阶，索性沿着总表一路点下去：“车上闭眼算睡觉，坐着开会算休息，换衣服的时候没人唱歌，也算休息。你们把这些空白加起来，怎么会不够？”他算得眉飞色舞，仿佛只要把同一分钟换三个名字，人的身体也能跟着用三遍。舞台负责人听到最后，忍不住问：“那吃饭呢？”{opponent}毫不犹豫：“去下一场的路上吃。”屋里顿时更静了。
+
+有人低头咳了一声，像在遮笑；{opponent}却认真整理起袖口，显然把这片沉默当成了众人终于被他的效率折服。
+
 {protagonist}看着他：“你把空白叫休息，是因为倒下的人从来不是你。”
 
 上一世，他就是在这样的日程里被拖到双腿发软。每一次想停下，{opponent}都拿出对外那张漂亮的表，说真正的工作并不多。等他在台上倒下，所有人只看见一个撑不住的歌手，没有人看见空白里藏着什么。
@@ -10848,6 +15061,8 @@ def _build_overload_schedule_bait_scene(
 
 {opponent}用手掌压住纸角，语气又得意起来：“这才是我排的总表。所有人都照它动，只是没必要让每个部门看见全部安排。”
 
+他还嫌这份功劳不够显眼，拿笔在几段首尾相接的工作上画了个大圈：“别人看见空白，只会让人休息；我看见空白，就知道还能塞事。能把每一分钟都卖出去，才叫巡演总监。”屋里几名负责人没有附和，只有他的笔尖得意地敲着纸面。
+
 “你确认是你排的？”{protagonist}问。
 
 “除了我，谁能把这么多事塞得进去？”
@@ -10881,6 +15096,201 @@ def _build_overload_schedule_bait_scene(
 {opponent}仍是巡演总监，却没能拿到加场功劳，隐藏总表也不再由他独占。{protagonist}保住当天休息时间，冻结全部超载安排，并要求下一次排练前当众逐项核对这张总表。
 
 门开时，{opponent}还盯着纸上自己刚签下的名字。那一笔原本是他抢功的凭证，现在成了他无法推给任何人的承认。""".strip()
+
+
+def _build_stage_lift_trap_scene(
+    chapter_card: Dict[str, Any],
+) -> Optional[str]:
+    """Build the EC06 sandbag test and its paper-grounded settlement."""
+    context = json.dumps(
+        {
+            key: chapter_card.get(key)
+            for key in (
+                "cluster_name", "chapter_milestone", "this_life_revenge",
+                "core_payoff", "cluster_outcome", "prev_life_tragedy",
+            )
+        },
+        ensure_ascii=False,
+    )
+    if not (
+        re.search(r"升降|机关", context)
+        and re.search(r"沙袋|十秒|启停否决权|停机权", context)
+    ):
+        return None
+
+    cast = _select_grounded_chapter_cast(chapter_card)
+    protagonist = next(
+        (
+            str(member.get("name") or "").strip()
+            for member in cast
+            if str(member.get("alignment") or "").casefold() == "protagonist"
+        ),
+        "",
+    )
+    opponent = next(
+        (
+            str(member.get("name") or "").strip()
+            for member in cast
+            if str(member.get("alignment") or "").casefold() == "opponent"
+        ),
+        "",
+    )
+    if not protagonist or not opponent:
+        return None
+    milestone_text = json.dumps(
+        chapter_card.get("chapter_milestone") or {}, ensure_ascii=False
+    )
+
+    chapter_id = int(
+        chapter_card.get("chapter_id")
+        or chapter_card.get("chapter")
+        or chapter_card.get("chapter_num")
+        or 0
+    )
+    if chapter_id == 10 or (
+        chapter_id <= 0
+        and re.search(
+            r"失去舞台机关指挥权|最终启停否决权|获得停机权",
+            milestone_text + context,
+        )
+    ):
+        return f"""升降台仍停在最低处，破开的沙袋已经被移到警戒线外。所有舞者留在舞台前排，没有一个人重新踏进升降区。
+
+{protagonist}把控制器操作日志和那张未签字的验收单并排放在长桌上。日志是控制器当场打印出的纸条，只列操作人、按键动作和时间；验收单更简单，三轮空载测试的三栏全空着，负责人签字处也是空白。
+
+长桌正对舞台，昨天站在警戒线外的舞者都能看见纸面。{opponent}原本还在催人清场，见没有人拿出复杂设备，反而松了松领口。他大概以为，一张纸条和一张空表很好解释；只要把事故说成效果，再把抢按控制器说成救进度，众人最终还得靠他开工。
+
+他甚至先问表决要耽误多久，仿佛昨天差点被砸中的不是人，只是排期表上又一格可以删掉的空白。
+
+独立安全总监先读日志。第三次口令前，{opponent}抢过控制器，按下快捷程序；十秒后，本该仍被吊住的沙袋坠地。纸上的先后顺序，与所有人刚才亲眼看见的完全一致。
+
+{opponent}站在桌边，仍想把声音抬高：“那不是事故，是舞台效果。正式演出就需要这种突然感，观众才会惊叫。”
+
+几名舞者互相看了一眼。刚才沙袋砸下的位置，正是他们原定的站位。
+
+{protagonist}问：“效果通过验收了吗？”
+
+{opponent}指向验收单：“测试做过，只是来不及补签。”
+
+“做过几轮？”
+
+“三轮。”
+
+独立安全总监把空白验收单转向众人：“三轮的结果、负责人和签字，都在哪里？”
+
+{opponent}嘴角抽了一下，又立刻指住日志：“机器提前动作，是为了配合彩排节奏。我按键，是因为没人比我更懂整场效果。”
+
+他越解释越得意，索性把刚才的危险也揽成功劳：“如果我不亲自按，谁能把十秒压得这么准？巡演靠的就是效率。舞者早一点站位，沙袋早一点落下，两边都不耽误。”
+
+舞台负责人忍不住问：“两边撞在一起呢？”
+
+{opponent}答得理直气壮：“专业舞者会躲。”
+
+这句话落下，前排再没人替他圆场。
+
+{protagonist}看着日志上那一行操作时间。上一世，{opponent}也是这样把保护时间说成多余，把坠落说成失误，再逼受伤的人继续排练。今生，他提前换上沙袋，等的就是让对方在无人受伤时亲手重演旧招。
+
+“你刚才说，是你亲自按的。”{protagonist}问。
+
+{opponent}顿了一下：“当然。我是在救进度。”
+
+“你也说，提前十秒是你要的效果。”
+
+“对。”
+
+{protagonist}把未签字验收单压到日志旁：“那就不必再找机器替你背锅了。”
+
+独立安全总监当场要求重新表决安全负责人。舞者、排练负责人和舞台负责人逐一表态：任何没有完成三轮空载验收的机关，不得让真人登台；任何人不得以彩排进度越过停机决定。
+
+项目负责人随后宣布：{opponent}保留巡演总监职位和已经确认排期的执行职责，但从现在起失去舞台机关指挥权，不得持有或操作升降机关控制器。
+
+控制器由舞台负责人当面收走，交给独立安全总监保管。独立安全总监获得随时停机权；只要发现验收缺项、人员未撤离或口令不一致，就可以立即中止，不受巡演进度催促。
+
+项目负责人最后当众宣布：“安全总监确认可以启动后，仍由{protagonist}决定真人是否登台。没有他的最终同意，机关不得启动。”
+
+{protagonist}取得最终启停否决权，决定当场生效。
+
+{opponent}盯着被收走的控制器：“为了一个沙袋，你们要把整场演出交给一个只会喊停的人？”
+
+独立安全总监把空白验收单放到他面前：“不是为了沙袋。是因为你把三次没做过的测试，说成已经做完。”
+
+{protagonist}看向警戒线：“你不是嫌十秒太长吗？以后这十秒，正好够你站在警戒线外看清楚——没有你的手，舞台一样会动；有你的手，人才差点没了。”
+
+警戒线内仍然空着。所有舞者安全，停机权和最终启停否决权已经生效。{opponent}还挂着巡演总监的名，却再也碰不到那只控制器。""".strip()
+
+    return f"""正式走位开始前，{protagonist}让所有舞者停在警戒线外，只把代替真人的等重沙袋挂上升降台。
+
+舞台负责人愣了一下：“先不上人？”
+
+“先做三轮空载验收。”{protagonist}说，“每轮都按正式口令走完，沙袋不掉、升降不抢拍，人才上去。”
+
+{opponent}立刻皱眉：“一轮就够。今天刚划掉一段合练，再做三轮，整组都得等你。”
+
+{protagonist}没有争辩，只让工作人员核对沙袋重量和挂钩。
+
+上一世，他记得这台升降台会在第三次口令后提前十秒动作。安全测试被伪装成已经完成，保护时间被压缩后又被说成“舞台效果”。今生，他把人换成沙袋，就是要让那十秒先砸在空地上。
+
+第一轮开始。舞台负责人依次喊出口令，升降台缓慢上升、停稳、下降。沙袋始终挂在原处。
+
+工作人员准备换真人上场时，{protagonist}再次抬手。{opponent}当众叹气，故意看向墙上的时钟，像每多等片刻都在烧他自己的钱。{protagonist}却让舞台负责人把第一轮结果写在验收栏旁：完成一轮，不等于完成三轮。
+
+{opponent}抱着手臂站在控制器旁：“看见了？机器没问题。可以叫人了。”
+
+“还有两轮。”
+
+第二轮同样完成。{opponent}开始来回踱步，几次催促舞者进场，{protagonist}都只抬手指向警戒线。舞者没有越线。
+
+等待第三轮复位时，{opponent}故意对舞者说，真正的职业演员不会怕一台升降台，还问谁愿意第一个站上去证明胆量。没有人动。{protagonist}也没有让任何人替安全程序逞强，只让沙袋继续留在吊点上。
+
+第三轮前，舞台负责人重新检查挂钩。{opponent}忽然笑了一声：“你们把一件简单的事做得像葬礼排练。十秒都不敢省，还谈什么世界巡演？”
+
+{protagonist}看向他：“既然你这么确定，就站在这里看完。”
+
+第三次口令响起。升降台刚离开最低处，{opponent}便不耐烦地伸手去拿控制器。
+
+舞台负责人按住控制器边缘：“这一轮还没结束。”
+
+“我来。”{opponent}一把抢过去，“你们照标准程序磨到天黑，我按快捷程序，十秒就能追回来。”
+
+他生怕别人抢走这份功劳，当着所有人的面把控制器举高：“都看清楚。机关没有问题，耽误时间的是不会调度的人。”
+
+说完，他亲手按下快捷程序。
+
+升降台猛地一顿。吊索发出短促摩擦声，沙袋在半空晃开。舞台负责人刚要上前，{protagonist}已经喝道：“所有人后退，离开升降区！”
+
+舞者整齐退到第二道警戒线外。{protagonist}没有碰控制器，只盯着沙袋和台面之间的距离。
+
+{opponent}还在笑：“这就是提速。你看，什么都——”
+
+第三次口令应当结束前，沙袋突然脱离吊点，重重砸在升降台中央。整整提前十秒。
+
+闷响震得台面发颤。若刚才真人已经上台，那里正是领舞和两名伴舞的站位。
+
+{opponent}的笑僵在脸上，手却还握着控制器。
+
+{protagonist}当场叫停真人登台：“升降机关停用。今天任何舞者不得进入警戒线，直到三轮验收重新完成。”
+
+{opponent}立刻把控制器往舞台负责人手里塞：“是挂钩问题，跟我按键没关系。”
+
+舞台负责人没有接：“你刚才说，是你按快捷程序追回十秒。”
+
+“我只是示范。”
+
+“也是你说，机关没有问题。”
+
+{opponent}张了张嘴，改口道：“沙袋掉下来也可以算舞台效果。真人知道躲开就行。”
+
+前排舞者的脸色同时沉下去。
+
+{protagonist}走到警戒线前，没有跨进去：“上一轮你嫌测试慢，这一轮你抢控制器，结果沙袋提前十秒落下。你不是被意外抓住，是把自己省掉的安全时间，当着所有人的面按了出来。”
+
+舞台负责人立即切断本轮操作，收回控制器。项目负责人确认升降机关保持停用；现场只保留刚才的失败结果，不允许真人复测，也不允许任何人把沙袋提前撤走。
+
+十二名舞者逐一报平安，没有任何人受伤。原定真人走位取消，沙袋留在台面作为本轮失败结果。
+
+{opponent}站在警戒线外，还想催人把沙袋搬走。{protagonist}只看了一眼他空着的手：“别急。你省下的十秒，明天会让所有人看清楚，到底值多少钱。”
+
+升降台停在原处。所有舞者安全，真人登台禁令已经生效，而{opponent}亲手按下快捷程序的动作，也再也无法推给别人。""".strip()
 
 
 def _append_grounded_awakening_deployment(
@@ -14656,6 +19066,7 @@ def _try_local_chapter_patch_v2(
         for body_try in range(3):
             merged_rewrite = extra_rewrite + local_extra
             card = chapter_cards.get(ch, {}) or {}
+            _attach_prior_current_right_states(gen, card, ch)
             if repair_source:
                 body_prompt = _build_grounded_compliance_repair_prompt(
                     chapter_num=ch,
@@ -14718,6 +19129,278 @@ def _try_local_chapter_patch_v2(
     return out if changed else None
 
 
+def _cluster_transaction_journal_path(
+    coordinator: Any,
+) -> Path:
+    memory_dir = Path(getattr(coordinator, "memory_dir", ""))
+    if not str(memory_dir):
+        raise RuntimeError("StoryMemory 缺少 memory_dir，无法建立事务恢复日志。")
+    return memory_dir.parent / "cluster_transaction_journal.json"
+
+
+def _atomic_write_cluster_journal(path: Path, payload: Dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(f"{path.name}.tmp.{os.getpid()}")
+    try:
+        with temporary.open("w", encoding="utf-8") as stream:
+            json.dump(payload, stream, ensure_ascii=False, indent=2)
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(temporary, path)
+    except BaseException:
+        temporary.unlink(missing_ok=True)
+        raise
+
+
+def _write_cluster_transaction_journal(
+    gen: Any,
+    chapters: Iterable[int],
+    text_snapshot: Dict[int, Optional[str]],
+    memory_snapshot: Dict[int, Optional[Dict[str, Any]]],
+) -> Path:
+    coordinator = getattr(gen, "story_memory", None)
+    if coordinator is None:
+        raise RuntimeError("StoryMemory 未挂载，无法建立情节族事务恢复日志。")
+    journal_path = _cluster_transaction_journal_path(coordinator)
+    if journal_path.exists():
+        raise RuntimeError(
+            f"发现尚未恢复的情节族事务日志：{journal_path}"
+        )
+    chapter_numbers = sorted({int(chapter) for chapter in chapters})
+    if not chapter_numbers or any(chapter <= 0 for chapter in chapter_numbers):
+        raise ValueError("transaction journal requires positive chapter numbers")
+    if set(text_snapshot) != set(chapter_numbers):
+        raise RuntimeError("正文事务快照章节集合不完整。")
+    if set(memory_snapshot) != set(chapter_numbers):
+        raise RuntimeError("StoryMemory 事务快照章节集合不完整。")
+    chapter_dir = Path(
+        getattr(gen, "chapters_dir", Path(gen.outputs_dir) / "chapters")
+    ).resolve()
+    memory_dir = Path(coordinator.memory_dir).resolve()
+    payload = {
+        "version": 1,
+        "story_id": str(getattr(coordinator, "story_id", "") or ""),
+        "chapters": chapter_numbers,
+        "chapter_dir": str(chapter_dir),
+        "memory_dir": str(memory_dir),
+        "created_at": int(time.time()),
+        "text_snapshot": {
+            str(chapter): text_snapshot[chapter]
+            for chapter in chapter_numbers
+        },
+        "memory_snapshot": {
+            str(chapter): memory_snapshot[chapter]
+            for chapter in chapter_numbers
+        },
+    }
+    _atomic_write_cluster_journal(journal_path, payload)
+    return journal_path
+
+
+def _clear_cluster_transaction_journal(coordinator: Any) -> None:
+    _cluster_transaction_journal_path(coordinator).unlink(missing_ok=True)
+
+
+def _recover_pending_cluster_transaction(gen: Any) -> bool:
+    """Roll back a cluster left in doubt by process termination."""
+    coordinator = getattr(gen, "story_memory", None)
+    if coordinator is None:
+        return False
+    journal_path = _cluster_transaction_journal_path(coordinator)
+    if not journal_path.exists():
+        return False
+    try:
+        payload = json.loads(journal_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise RuntimeError(
+            f"情节族事务恢复日志损坏，禁止继续生成：{journal_path}"
+        ) from exc
+    if not isinstance(payload, dict) or int(payload.get("version", 0) or 0) != 1:
+        raise RuntimeError("情节族事务恢复日志版本无效，禁止继续生成。")
+    story_id = str(payload.get("story_id") or "")
+    expected_story_id = str(getattr(coordinator, "story_id", "") or "")
+    if not story_id or story_id != expected_story_id:
+        raise RuntimeError("情节族事务恢复日志 story_id 不匹配。")
+    chapter_dir = Path(
+        getattr(gen, "chapters_dir", Path(gen.outputs_dir) / "chapters")
+    ).resolve()
+    memory_dir = Path(coordinator.memory_dir).resolve()
+    if Path(str(payload.get("chapter_dir") or "")).resolve() != chapter_dir:
+        raise RuntimeError("情节族事务恢复日志正文目录不匹配。")
+    if Path(str(payload.get("memory_dir") or "")).resolve() != memory_dir:
+        raise RuntimeError("情节族事务恢复日志记忆目录不匹配。")
+    try:
+        chapters = sorted({int(chapter) for chapter in payload["chapters"]})
+    except (KeyError, TypeError, ValueError) as exc:
+        raise RuntimeError("情节族事务恢复日志章节集合无效。") from exc
+    if not chapters or any(chapter <= 0 for chapter in chapters):
+        raise RuntimeError("情节族事务恢复日志章节集合无效。")
+    raw_text_snapshot = payload.get("text_snapshot")
+    raw_memory_snapshot = payload.get("memory_snapshot")
+    if not isinstance(raw_text_snapshot, dict) or not isinstance(
+        raw_memory_snapshot, dict
+    ):
+        raise RuntimeError("情节族事务恢复日志快照结构无效。")
+    expected_keys = {str(chapter) for chapter in chapters}
+    if set(raw_text_snapshot) != expected_keys or set(raw_memory_snapshot) != expected_keys:
+        raise RuntimeError("情节族事务恢复日志快照章节集合不完整。")
+
+    text_snapshot: Dict[int, Optional[str]] = {}
+    memory_snapshot: Dict[int, Optional[Dict[str, Any]]] = {}
+    for chapter in chapters:
+        text = raw_text_snapshot[str(chapter)]
+        memory = raw_memory_snapshot[str(chapter)]
+        if text is not None and not isinstance(text, str):
+            raise RuntimeError(f"第{chapter}章事务正文快照类型无效。")
+        if memory is not None and not isinstance(memory, dict):
+            raise RuntimeError(f"第{chapter}章事务记忆快照类型无效。")
+        text_snapshot[chapter] = text
+        memory_snapshot[chapter] = memory
+
+    chapter_dir.mkdir(parents=True, exist_ok=True)
+    for chapter, text in text_snapshot.items():
+        path = chapter_dir / f"chapter_{chapter:03d}.txt"
+        if text is None:
+            path.unlink(missing_ok=True)
+            continue
+        temporary = path.with_name(f"{path.name}.recover.tmp.{os.getpid()}")
+        try:
+            with temporary.open("w", encoding="utf-8") as stream:
+                stream.write(text)
+                stream.flush()
+                os.fsync(stream.fileno())
+            os.replace(temporary, path)
+        except BaseException:
+            temporary.unlink(missing_ok=True)
+            raise
+
+    coordinator.restore(memory_snapshot)
+    generated = getattr(gen, "generated_chapters", None)
+    if isinstance(generated, dict):
+        for chapter, text in text_snapshot.items():
+            if text is None:
+                generated.pop(chapter, None)
+            else:
+                generated[chapter] = text
+    _clear_cluster_transaction_journal(coordinator)
+    print(
+        "♻️ 已恢复上次中断的情节族事务："
+        + "、".join(str(chapter) for chapter in chapters),
+        flush=True,
+    )
+    return True
+
+
+def _commit_staged_cluster_delivery(
+    gen: "RebirthRevengeGeneratorV2",
+    chapter_texts: Dict[int, str],
+    pending_memories_by_chapter: Dict[int, Dict[str, Any]],
+) -> None:
+    """Publish one reviewed cluster to text, ledger, graph, and runtime cache.
+
+    The caller owns the compensating transaction snapshot.  This function is
+    deliberately the only place in the active cluster workflow that mutates
+    accepted chapter state.
+    """
+    from bert_excitation_train.scripts.neo4j_kg.chapter_memory import content_hash
+
+    chapters = sorted(int(chapter) for chapter in chapter_texts)
+    if not chapters:
+        raise ValueError("cannot commit an empty chapter cluster")
+    coordinator = getattr(gen, "story_memory", None)
+    if coordinator is None:
+        raise RuntimeError("StoryMemory 未挂载，禁止正式正文脱离连续性账本落盘。")
+    expected_story_id = str(getattr(coordinator, "story_id", "") or "")
+    prepared_memories: List[Dict[str, Any]] = []
+
+    for chapter in chapters:
+        text = str(chapter_texts.get(chapter) or "")
+        memory = pending_memories_by_chapter.get(chapter)
+        if not isinstance(memory, dict) or not memory:
+            raise RuntimeError(
+                f"第{chapter}章缺少待提交 StoryMemory，禁止正文单独落盘。"
+            )
+        if int(memory.get("chapter", 0) or 0) != chapter:
+            raise RuntimeError(
+                f"第{chapter}章 StoryMemory 章节号不匹配：{memory.get('chapter')!r}"
+            )
+        if str(memory.get("story_id") or "") != expected_story_id:
+            raise RuntimeError(
+                f"第{chapter}章 StoryMemory story_id 不匹配，禁止跨故事入图。"
+            )
+        expected_hash = content_hash(text)
+        if str(memory.get("content_hash") or "") != expected_hash:
+            raise RuntimeError(
+                f"第{chapter}章正文与 StoryMemory 哈希不一致，禁止提交。"
+            )
+        prepared_memories.append(dict(memory))
+
+    # Text files are written first; a later ledger/graph failure is compensated
+    # by _generate_cluster_continuous_and_split_v2's pre-attempt snapshot.
+    for chapter in chapters:
+        gen.save_chapter(chapter, chapter_texts[chapter])  # type: ignore[attr-defined]
+    gen.commit_story_memories(prepared_memories)  # type: ignore[attr-defined]
+
+    chapter_dir = Path(
+        getattr(gen, "chapters_dir", Path(gen.outputs_dir) / "chapters")
+    )
+    for chapter in chapters:
+        persisted = (chapter_dir / f"chapter_{chapter:03d}.txt").read_text(
+            encoding="utf-8"
+        )
+        if persisted != chapter_texts[chapter]:
+            raise RuntimeError(f"第{chapter}章写盘后正文发生变化，已拒绝交付。")
+
+    committed = coordinator.snapshot(chapters)
+    for chapter in chapters:
+        memory = committed.get(chapter)
+        expected_hash = content_hash(chapter_texts[chapter])
+        if (
+            not isinstance(memory, dict)
+            or str(memory.get("story_id") or "") != expected_story_id
+            or str(memory.get("content_hash") or "") != expected_hash
+        ):
+            raise RuntimeError(
+                f"第{chapter}章本地 StoryMemory 提交后校验失败。"
+            )
+
+    driver_factory = getattr(coordinator, "driver_factory", None)
+    if driver_factory is not None:
+        with driver_factory() as driver:
+            with driver.session() as session:
+                rows = session.run(
+                    """
+                    UNWIND $chapters AS chapter_number
+                    OPTIONAL MATCH (ch:StoryChapter {
+                      story_id:$story_id, number:chapter_number
+                    })
+                    RETURN chapter_number AS chapter,
+                           count(ch) AS node_count,
+                           collect(ch.content_hash) AS content_hashes
+                    """,
+                    story_id=expected_story_id,
+                    chapters=chapters,
+                )
+                graph_rows = {
+                    int(row["chapter"]): (
+                        int(row["node_count"]),
+                        [str(value or "") for value in row["content_hashes"]],
+                    )
+                    for row in rows
+                }
+        for chapter in chapters:
+            expected_hash = content_hash(chapter_texts[chapter])
+            node_count, graph_hashes = graph_rows.get(chapter, (0, []))
+            if node_count != 1 or graph_hashes != [expected_hash]:
+                raise RuntimeError(
+                    f"第{chapter}章 Neo4j 投影哈希校验失败，整簇将回滚。"
+                )
+
+    # Runtime cache becomes visible only after every durable layer is verified.
+    for chapter in chapters:
+        gen.generated_chapters[chapter] = chapter_texts[chapter]  # type: ignore[attr-defined]
+
+
 def _generate_cluster_continuous_and_split_v2_impl(
     gen: "RebirthRevengeGeneratorV2",
     cluster: Dict[str, Any],
@@ -14765,8 +19448,14 @@ def _generate_cluster_continuous_and_split_v2_impl(
 
     def recent_chapter_texts(chapter: int, lookback: int = 6) -> Dict[int, str]:
         recent: Dict[int, str] = {}
-        chapter_dir = Path(gen.outputs_dir) / "chapters"
+        chapter_dir = Path(
+            getattr(gen, "chapters_dir", Path(gen.outputs_dir) / "chapters")
+        )
         for previous_chapter in range(max(1, chapter - lookback), chapter):
+            staged = accepted_drafts.get(previous_chapter)
+            if staged is not None and str(staged[0] or "").strip():
+                recent[previous_chapter] = str(staged[0]).strip()
+                continue
             generated = str(
                 getattr(gen, "generated_chapters", {}).get(previous_chapter) or ""
             ).strip()
@@ -14781,6 +19470,10 @@ def _generate_cluster_continuous_and_split_v2_impl(
         return recent
 
     for attempt in range(max_cluster_attempts):
+        # A critic failure invalidates the whole cluster attempt.  Nothing from
+        # an earlier attempt is reused or made visible to official state.
+        accepted_drafts.clear()
+        pending_memories_by_chapter: Dict[int, Dict[str, Any]] = {}
         beats_by_ch: Dict[int, Any] = {}
         rewrite_advice = critic_result.get("rewrite_advice", []) if attempt > 0 else None
         if attempt > 0:
@@ -15130,11 +19823,31 @@ def _generate_cluster_continuous_and_split_v2_impl(
             try:
                 online_retrieve = getattr(gen, "online_retrieve_context", None)
                 if callable(online_retrieve):
-                    kg_context = str(online_retrieve(ch)) or ""
-            except Exception:  # noqa: BLE001
+                    kg_context = str(
+                        online_retrieve(
+                            ch,
+                            pending_memories_by_chapter.values(),
+                        )
+                    ) or ""
+            except Exception as exc:  # noqa: BLE001
+                coordinator = getattr(gen, "story_memory", None)
+                if getattr(coordinator, "driver_factory", None) is not None:
+                    raise RuntimeError(
+                        f"第{ch}章 Neo4j/StoryMemory 在线连续性检索失败。"
+                    ) from exc
+                print(
+                    f"  ⚠️ 第{ch}章仅使用本地连续性上下文，在线图检索失败：{exc}",
+                    flush=True,
+                )
                 kg_context = ""
 
             card = chapter_cards.get(ch, {}) or {}
+            _attach_prior_current_right_states(
+                gen,
+                card,
+                ch,
+                pending_memories_by_chapter.values(),
+            )
             role_v2 = ""
             if isinstance(card, dict):
                 role_v2 = str(card.get("chapter_role_v2") or "")
@@ -15146,10 +19859,8 @@ def _generate_cluster_continuous_and_split_v2_impl(
                     f"  ♻️ 第{ch}章复用本事务内已通过的待提交草稿（{len(part_text)}字）。",
                     flush=True,
                 )
-                gen.save_chapter(ch, part_text)  # type: ignore[attr-defined]
-                gen.generated_chapters[ch] = part_text  # type: ignore[attr-defined]
                 if part_memory:
-                    gen.commit_story_memory(part_memory)  # type: ignore[attr-defined]
+                    pending_memories_by_chapter[ch] = part_memory
                 full_text_parts.append(part_text)
                 prev_ch_text = part_text
                 tail_s, tail_h = gen._extract_prev_chapter_tail_and_hook(part_text)  # type: ignore[attr-defined]
@@ -15191,7 +19902,10 @@ def _generate_cluster_continuous_and_split_v2_impl(
                     f"{one_line_g}\n{cluster_state.get('last_scene', '')}\n"
                     f"{cluster_state.get('last_hook', '')}\n{prev_life_clue or ''}"
                 ).strip()
-            target_context = f"主题: {THEME}, 主角: {MAIN_PROTAGONIST}, 背景: {BACKGROUND}, 快节奏商业重生, 人物关系, 因果一致性"
+            target_context = (
+                _chapter_body_theme_contract(card)
+                + "\n写作方向：快节奏商业重生、人物关系、因果一致性"
+            )
             if ch in (1, 2):
                 # The opening structure is narrow and fragile; direct prose
                 # samples tend to inject anonymous messages or premature
@@ -15255,7 +19969,15 @@ def _generate_cluster_continuous_and_split_v2_impl(
                 else 4
             )
             for body_try in range(max_body_attempts):
-                merged_rewrite = list(rewrite_advice or []) + local_extra
+                latest_runtime_failures = (
+                    list(contract_repair_failures)
+                    if contract_repair_failures
+                    else list(local_extra[-6:])
+                )
+                merged_rewrite = (
+                    list(rewrite_advice or [])
+                    + latest_runtime_failures
+                )
                 if contract_repair_source:
                     if contract_repair_mode == "death":
                         body_prompt = _build_death_repair_prompt(
@@ -15341,10 +20063,19 @@ def _generate_cluster_continuous_and_split_v2_impl(
                     os.environ.get("V2_USE_LEGACY_DETERMINISTIC_SCENES", "0").strip().lower()
                     in {"1", "true", "yes", "on"}
                 )
+                use_narrative_units = (
+                    force_grounded_planning
+                    and ch >= 3
+                    and os.environ.get(
+                        "V2_USE_NARRATIVE_UNITS",
+                        "1",
+                    ).strip().lower() in {"1", "true", "yes", "on"}
+                )
                 forced_death_seed = None
                 awakening_seed = None
                 schedule_canary_seed = None
                 overload_schedule_seed = None
+                stage_lift_seed = None
                 if body_try == 0 and not contract_repair_source:
                     forced_death_seed = _build_forced_medication_death_scene(card)
                     if forced_death_seed is not None:
@@ -15373,12 +20104,21 @@ def _generate_cluster_continuous_and_split_v2_impl(
                                         f"  🧱 第{ch}章使用兼容模式超载排期场景生成器。",
                                         flush=True,
                                     )
+                                else:
+                                    stage_lift_seed = _build_stage_lift_trap_scene(card)
+                                    if stage_lift_seed is not None:
+                                        print(
+                                            f"  🧱 第{ch}章使用兼容模式升降机关封闭场景生成器。",
+                                            flush=True,
+                                        )
                 segmented_seed = None
                 if (
                     forced_death_seed is None
                     and awakening_seed is None
                     and schedule_canary_seed is None
                     and overload_schedule_seed is None
+                    and stage_lift_seed is None
+                    and not use_narrative_units
                     and prefer_segmented_closed
                     and (
                         (body_try == 0 and not contract_repair_source)
@@ -15399,7 +20139,37 @@ def _generate_cluster_continuous_and_split_v2_impl(
                         minimum_chars=_minimum_chapter_chars(ch, card),
                         max_tokens=max_tokens_body_per_chapter,
                     )
-                if forced_death_seed is not None:
+                if use_narrative_units:
+                    print(
+                        f"  🧩 第{ch}章使用通用叙事单元生成器；"
+                        "只重写未通过的当前单元。",
+                        flush=True,
+                    )
+                    narrative_text, _, unit_failures = (
+                        _generate_grounded_narrative_units(
+                            gen,
+                            ch,
+                            card,
+                            previous_chapter_tail=body_prev_tail,
+                            failures=merged_rewrite,
+                            continuity_context=kg_context,
+                            rag_samples=rag_samples,
+                            chapter_attempt=body_try + 1,
+                        )
+                    )
+                    if narrative_text is None:
+                        local_extra.extend(unit_failures[:8])
+                        contract_repair_source = ""
+                        contract_repair_failures = unit_failures[:8]
+                        contract_repair_mode = "grounded"
+                        print(
+                            f"  ⛔ 第{ch}章叙事单元连续失败："
+                            f"{(unit_failures or ['未知失败'])[0][:140]}",
+                            flush=True,
+                        )
+                        continue
+                    part_text = narrative_text
+                elif forced_death_seed is not None:
                     part_text = forced_death_seed
                 elif awakening_seed is not None:
                     part_text = awakening_seed
@@ -15407,6 +20177,8 @@ def _generate_cluster_continuous_and_split_v2_impl(
                     part_text = schedule_canary_seed
                 elif overload_schedule_seed is not None:
                     part_text = overload_schedule_seed
+                elif stage_lift_seed is not None:
+                    part_text = stage_lift_seed
                 elif segmented_seed is not None:
                     part_text, part_memory = segmented_seed
                 elif strict_scene_contract and prefer_segmented_closed:
@@ -15507,6 +20279,7 @@ def _generate_cluster_continuous_and_split_v2_impl(
                 if (
                     body_hard
                     and body_try >= 2
+                    and not use_narrative_units
                     and (
                         prefer_segmented_closed
                         or (
@@ -15610,6 +20383,9 @@ def _generate_cluster_continuous_and_split_v2_impl(
                     )
                 if roll_v:
                     local_extra.extend(roll_v)
+                    contract_repair_failures = list(roll_v)
+                    contract_repair_source = ""
+                    contract_repair_mode = "grounded"
                     print(
                         f"  ⚠️ 第{ch}章滚动承接未过：{roll_v[0][:100]}…"
                         f"（尝试 {body_try + 1}/{max_body_attempts}）",
@@ -15654,10 +20430,26 @@ def _generate_cluster_continuous_and_split_v2_impl(
                     continue
 
                 try:
-                    part_memory, memory_violations = gen.review_story_memory(ch, part_text)  # type: ignore[attr-defined]
+                    part_memory, memory_violations = gen.review_story_memory(  # type: ignore[attr-defined]
+                        ch,
+                        part_text,
+                        pending_memories_by_chapter.values(),
+                    )
                 except Exception as exc:  # noqa: BLE001
-                    part_memory, memory_violations = {}, []
-                    print(f"  ⚠️ 第{ch}章连续性抽取异常，降级为现有审查：{exc}", flush=True)
+                    local_extra.append(f"StoryMemory 抽取失败：{exc}")
+                    print(
+                        f"  ⛔ 第{ch}章连续性抽取异常；本章不得在缺失结构化记忆时入选："
+                        f"{exc}",
+                        flush=True,
+                    )
+                    continue
+                if getattr(gen, "story_memory", None) is not None and not part_memory:
+                    local_extra.append("StoryMemory 返回空记忆，禁止接受本章。")
+                    print(
+                        f"  ⛔ 第{ch}章 StoryMemory 为空；本章重试。",
+                        flush=True,
+                    )
+                    continue
                 hard_memory_violations = [
                     v for v in memory_violations if getattr(v, "severity", "hard") == "hard"
                 ]
@@ -15709,6 +20501,44 @@ def _generate_cluster_continuous_and_split_v2_impl(
                     max_tokens=max_tokens_body_per_chapter,
                     prev_tail_scene=body_prev_tail,
                 )
+                try:
+                    part_memory, expansion_memory_violations = (
+                        gen.review_story_memory(  # type: ignore[attr-defined]
+                            ch,
+                            part_text,
+                            pending_memories_by_chapter.values(),
+                        )
+                    )
+                except Exception as exc:  # noqa: BLE001
+                    print(
+                        f"  ⛔ 第{ch}章扩写后 StoryMemory 抽取失败：{exc}",
+                        flush=True,
+                    )
+                    beats_generation_ok = False
+                    break
+                hard_expansion_memory = [
+                    violation
+                    for violation in expansion_memory_violations
+                    if getattr(violation, "severity", "hard") == "hard"
+                ]
+                expansion_contract_failures = _validate_chapter_memory_contract(
+                    card,
+                    part_memory,
+                )
+                if (
+                    hard_expansion_memory
+                    or expansion_contract_failures
+                    or (
+                        getattr(gen, "story_memory", None) is not None
+                        and not part_memory
+                    )
+                ):
+                    print(
+                        f"  ⛔ 第{ch}章扩写后连续性复验失败，本情节族本轮作废。",
+                        flush=True,
+                    )
+                    beats_generation_ok = False
+                    break
             minimum_chars = _minimum_chapter_chars(ch, card)
             if len(part_text) < minimum_chars:
                 print(
@@ -15742,12 +20572,8 @@ def _generate_cluster_continuous_and_split_v2_impl(
                 break
 
             accepted_drafts[ch] = (part_text, part_memory)
-
-            # 章节一旦通过硬审查就立即写入账本/Neo4j，使同一情节族的下一章可读取新事实。
-            gen.save_chapter(ch, part_text)  # type: ignore[attr-defined]
-            gen.generated_chapters[ch] = part_text  # type: ignore[attr-defined]
             if part_memory:
-                gen.commit_story_memory(part_memory)  # type: ignore[attr-defined]
+                pending_memories_by_chapter[ch] = part_memory
 
             full_text_parts.append(part_text)
             prev_ch_text = part_text
@@ -15847,11 +20673,7 @@ def _generate_cluster_continuous_and_split_v2_impl(
                 accepted_drafts.pop(failed_chapter, None)
             continue
 
-        # 写盘 + 记录到内存，便于 critic 使用
-        for ch in chapter_nums:
-            gen.save_chapter(ch, chapter_texts[ch])  # type: ignore[attr-defined]
-            gen.generated_chapters[ch] = chapter_texts[ch]  # type: ignore[attr-defined]
-
+        # critic 只审查事务内草稿；正式正文、账本与图谱此时均不可见。
         critic_result = _cluster_critic(
             cluster,
             chapter_texts,
@@ -15883,6 +20705,9 @@ def _generate_cluster_continuous_and_split_v2_impl(
             )
             if patched:
                 accepted_patch = dict(chapter_texts)
+                candidate_pending = dict(pending_memories_by_chapter)
+                candidate_drafts = dict(accepted_drafts)
+                patch_valid = True
                 for ch in chapter_nums:
                     candidate_text = patched.get(ch, chapter_texts[ch])
                     patch_body_failures = _chapter_body_hard_failures(
@@ -15896,50 +20721,84 @@ def _generate_cluster_continuous_and_split_v2_impl(
                             chapter_cards.get(ch, {}) or {},
                         )
                     )
+                    patch_recent = recent_chapter_texts(ch)
+                    patch_recent.update(
+                        {
+                            prior_chapter: accepted_patch[prior_chapter]
+                            for prior_chapter in chapter_nums
+                            if prior_chapter < ch and prior_chapter in accepted_patch
+                        }
+                    )
                     patch_body_failures.extend(
                         _cross_chapter_prose_similarity_failures(
                             candidate_text,
-                            recent_chapter_texts(ch),
+                            patch_recent,
                         )
                     )
-                    patch_memory, patch_violations = gen.review_story_memory(ch, candidate_text)  # type: ignore[attr-defined]
+                    patch_memory, patch_violations = gen.review_story_memory(  # type: ignore[attr-defined]
+                        ch,
+                        candidate_text,
+                        candidate_pending.values(),
+                    )
                     hard_patch_violations = [
                         v for v in patch_violations if getattr(v, "severity", "hard") == "hard"
                     ]
                     patch_contract_failures = _validate_chapter_memory_contract(
                         chapter_cards.get(ch, {}) or {}, patch_memory
                     )
-                    if patch_body_failures or hard_patch_violations or patch_contract_failures:
+                    missing_patch_memory = (
+                        getattr(gen, "story_memory", None) is not None
+                        and not patch_memory
+                    )
+                    if (
+                        patch_body_failures
+                        or hard_patch_violations
+                        or patch_contract_failures
+                        or missing_patch_memory
+                    ):
                         patch_message = (
                             patch_body_failures[0]
                             if patch_body_failures
                             else (
                                 getattr(hard_patch_violations[0], "message", str(hard_patch_violations[0]))
-                                if hard_patch_violations else patch_contract_failures[0]
+                                if hard_patch_violations
+                                else (
+                                    patch_contract_failures[0]
+                                    if patch_contract_failures
+                                    else "StoryMemory 抽取为空"
+                                )
                             )
                         )
                         print(
-                            f"  ⛔ 第{ch}章局部补写引入正文或连续性冲突，保留补写前版本："
+                            f"  ⛔ 第{ch}章局部补写引入正文或连续性冲突，"
+                            "本次整簇局部补写全部作废："
                             f"{patch_message[:140]}",
                             flush=True,
                         )
-                        continue
+                        patch_valid = False
+                        break
                     accepted_patch[ch] = candidate_text
                     if patch_memory:
-                        gen.commit_story_memory(patch_memory)  # type: ignore[attr-defined]
-                chapter_texts = accepted_patch
-                for ch in chapter_nums:
-                    gen.save_chapter(ch, chapter_texts[ch])  # type: ignore[attr-defined]
-                    gen.generated_chapters[ch] = chapter_texts[ch]  # type: ignore[attr-defined]
-                critic_result = _cluster_critic(
-                    cluster,
-                    chapter_texts,
-                    exec_plan=exec_plan,
-                    chapter_cards=chapter_cards,
-                )  # type: ignore[misc]
-                payoff_ok = bool(critic_result.get("payoff_completed", False))
-                violations = critic_result.get("violations", []) or []
-                print(f"📋 局部补写后审查：payoff_completed={payoff_ok}，violations={len(violations)} 条")
+                        candidate_pending[ch] = patch_memory
+                        candidate_drafts[ch] = (candidate_text, patch_memory)
+                if patch_valid:
+                    pending_memories_by_chapter.clear()
+                    pending_memories_by_chapter.update(candidate_pending)
+                    accepted_drafts.clear()
+                    accepted_drafts.update(candidate_drafts)
+                    chapter_texts = accepted_patch
+                    critic_result = _cluster_critic(
+                        cluster,
+                        chapter_texts,
+                        exec_plan=exec_plan,
+                        chapter_cards=chapter_cards,
+                    )  # type: ignore[misc]
+                    payoff_ok = bool(critic_result.get("payoff_completed", False))
+                    violations = critic_result.get("violations", []) or []
+                    print(
+                        f"📋 局部补写后审查：payoff_completed={payoff_ok}，"
+                        f"violations={len(violations)} 条"
+                    )
         if payoff_ok:
             return_failures: Dict[int, List[str]] = {}
             for ch in chapter_nums:
@@ -15965,6 +20824,11 @@ def _generate_cluster_continuous_and_split_v2_impl(
                 ch: failures for ch, failures in return_failures.items() if failures
             }
             if not return_failures:
+                _commit_staged_cluster_delivery(
+                    gen,
+                    chapter_texts,
+                    pending_memories_by_chapter,
+                )
                 return chapter_texts
             payoff_ok = False
             violations = [
@@ -16004,43 +20868,126 @@ def _generate_cluster_continuous_and_split_v2(
     span = cluster.get("chapter_span") or cluster.get("chapterRange") or cluster.get("chapters") or []
     try:
         start_chapter, end_chapter = int(span[0]), int(span[1])
-    except (TypeError, ValueError, IndexError):
-        return _generate_cluster_continuous_and_split_v2_impl(gen, cluster, chapter_cards)
+    except (TypeError, ValueError, IndexError) as exc:
+        raise ValueError("cluster requires a valid two-number chapter span") from exc
     chapters = list(range(start_chapter, end_chapter + 1))
-    chapter_dir = Path(gen.outputs_dir) / "chapters"
+    if not chapters:
+        raise ValueError("cluster chapter span must not be empty")
+    coordinator = getattr(gen, "story_memory", None)
+    if coordinator is None:
+        raise RuntimeError(
+            "StoryMemory 未挂载，禁止启动无连续性账本的情节族事务。"
+        )
+    _recover_pending_cluster_transaction(gen)
+    chapter_dir = Path(
+        getattr(gen, "chapters_dir", Path(gen.outputs_dir) / "chapters")
+    )
     file_snapshot: Dict[int, Optional[str]] = {}
     for chapter in chapters:
         path = chapter_dir / f"chapter_{chapter:03d}.txt"
         try:
             file_snapshot[chapter] = path.read_text(encoding="utf-8")
-        except OSError:
+        except FileNotFoundError:
             file_snapshot[chapter] = None
-    coordinator = getattr(gen, "story_memory", None)
-    memory_snapshot = coordinator.snapshot(chapters) if coordinator is not None else {}
+    memory_snapshot = coordinator.snapshot(chapters)
+    generated_snapshot: Dict[int, Tuple[bool, Optional[str]]] = {
+        chapter: (
+            chapter in getattr(gen, "generated_chapters", {}),
+            getattr(gen, "generated_chapters", {}).get(chapter),
+        )
+        for chapter in chapters
+    }
+    _write_cluster_transaction_journal(
+        gen,
+        chapters,
+        file_snapshot,
+        memory_snapshot,
+    )
 
-    def _restore() -> None:
-        chapter_dir.mkdir(parents=True, exist_ok=True)
-        for chapter, content in file_snapshot.items():
-            path = chapter_dir / f"chapter_{chapter:03d}.txt"
-            if content is None:
-                path.unlink(missing_ok=True)
-            else:
-                path.write_text(content, encoding="utf-8")
+    def _restore() -> List[str]:
+        restore_errors: List[str] = []
+        try:
+            chapter_dir.mkdir(parents=True, exist_ok=True)
+        except BaseException as exc:
+            restore_errors.append(f"chapter directory: {exc}")
+        else:
+            for chapter, content in file_snapshot.items():
+                path = chapter_dir / f"chapter_{chapter:03d}.txt"
+                try:
+                    if content is None:
+                        path.unlink(missing_ok=True)
+                    else:
+                        temporary = path.with_name(
+                            f"{path.name}.restore.tmp.{os.getpid()}"
+                        )
+                        try:
+                            with temporary.open("w", encoding="utf-8") as stream:
+                                stream.write(content)
+                                stream.flush()
+                                os.fsync(stream.fileno())
+                            os.replace(temporary, path)
+                        except BaseException:
+                            temporary.unlink(missing_ok=True)
+                            raise
+                except BaseException as exc:  # continue restoring other layers
+                    restore_errors.append(f"chapter {chapter} text: {exc}")
         if coordinator is not None:
-            coordinator.restore(memory_snapshot)
-        for chapter in chapters:
-            if file_snapshot.get(chapter) is None:
-                gen.generated_chapters.pop(chapter, None)
-            else:
-                gen.generated_chapters[chapter] = str(file_snapshot[chapter])
+            try:
+                coordinator.restore(memory_snapshot)
+            except BaseException as exc:
+                restore_errors.append(f"StoryMemory/Neo4j: {exc}")
+        for chapter, (was_present, cached_text) in generated_snapshot.items():
+            try:
+                if was_present:
+                    gen.generated_chapters[chapter] = cached_text  # type: ignore[index]
+                else:
+                    gen.generated_chapters.pop(chapter, None)
+            except BaseException as exc:
+                restore_errors.append(f"chapter {chapter} runtime cache: {exc}")
+        return restore_errors
 
     try:
         result = _generate_cluster_continuous_and_split_v2_impl(gen, cluster, chapter_cards)
-    except Exception:
-        _restore()
+    except BaseException as exc:
+        restore_errors = _restore()
+        if not restore_errors:
+            try:
+                _clear_cluster_transaction_journal(coordinator)
+            except BaseException as journal_exc:
+                restore_errors.append(f"transaction journal: {journal_exc}")
+        if restore_errors:
+            raise RuntimeError(
+                "cluster failed and compensation was incomplete: "
+                + "; ".join(restore_errors)
+            ) from exc
         raise
     if not result:
-        _restore()
+        restore_errors = _restore()
+        if not restore_errors:
+            try:
+                _clear_cluster_transaction_journal(coordinator)
+            except BaseException as journal_exc:
+                restore_errors.append(f"transaction journal: {journal_exc}")
+        if restore_errors:
+            raise RuntimeError(
+                "cluster was rejected and compensation was incomplete: "
+                + "; ".join(restore_errors)
+            )
+    else:
+        try:
+            _clear_cluster_transaction_journal(coordinator)
+        except BaseException as journal_exc:
+            restore_errors = _restore()
+            if restore_errors:
+                raise RuntimeError(
+                    "cluster committed but transaction journal could not be "
+                    "cleared and compensation was incomplete: "
+                    + "; ".join(restore_errors)
+                ) from journal_exc
+            raise RuntimeError(
+                "cluster was compensated because its transaction journal "
+                "could not be cleared"
+            ) from journal_exc
     return result
 
 
@@ -16136,38 +21083,6 @@ def generate_chapters_v2(
         span_str = f"{s}-{e}" if s and e else str(c.get("chapter_span") or c.get("chapterRange") or c.get("chapters") or "")
         print(f"- {cid}《{name}》 覆盖章节:{span_str}；主要对手:{opp or '（未指定）'}；核心爽点:{core or '（未提供）'}")
 
-    # 自动导出 Neo4j 上下文（供调试/审阅；生成过程本身使用在线检索器逐章拉取背景）
-    try:
-        print("🧭 正在检索情节族上下文（Neo4j）：窗口 + lookback + auto-anchors …")
-        # 构造窗口章节
-        window = list(range(adjusted_start, adjusted_end + 1))
-        # lookback: 回溯 2 章
-        lookback_n = 2
-        if window:
-            m = min(window)
-            lb = list(range(max(1, m - lookback_n), m))
-            window = sorted(set(window) | set(lb))
-        # auto-anchors: 自动补充关键早期章（最多 10 个）
-        try:
-            from bert_excitation_train.scripts.neo4j_kg.export_for_v2 import (  # type: ignore[import-not-found]
-                fetch_context,
-                compute_anchor_chapters,
-            )
-            from bert_excitation_train.scripts.neo4j_kg.common import get_neo4j_driver  # type: ignore[import-not-found]
-            with get_neo4j_driver() as driver:  # type: ignore[attr-defined]
-                extras = compute_anchor_chapters(driver, window, max_extra=10)
-                chapters_for_export = sorted(set(window) | set(extras))
-                ctx = fetch_context(driver, chapters_for_export)
-            os.makedirs(OUTPUT_DIR, exist_ok=True)
-            with open(DEFAULT_EXPORT_V2, "w", encoding="utf-8") as f:
-                json.dump(ctx, f, ensure_ascii=False, indent=2)
-            print(f"✅ 已导出上下文至 {DEFAULT_EXPORT_V2}")
-            print(f"   章节集合：{','.join(str(x) for x in chapters_for_export)}")
-        except Exception as ex:  # noqa: BLE001
-            print(f"⚠️ 跳过导出上下文（Neo4j 不可用或导出失败）：{ex}")
-    except Exception:
-        pass
-
     resolved_master_cards_path = master_ctx_cards_path or str(DEFAULT_MASTER_CARDS_V2)
     legacy_cards = _load_master_cards_v2(resolved_master_cards_path)
     cluster_cards = _build_cards_from_clusters(overlapping)
@@ -16181,33 +21096,57 @@ def generate_chapters_v2(
     cards = _enrich_cards_with_cluster_milestones(cards, overlapping)
     gen = RebirthRevengeGeneratorV2()
     _setup_gen_from_cards_and_prev_life(gen, cards, prev_life_ctx_path, clusters)
-    # 本地章节记忆账本始终可用；Neo4j 在线时同时投影到图数据库。
-    gen.attach_story_memory()
-    # 挂载在线检索器（若可用）：每章生成前动态检索 Neo4j 背景事实
-    try:
-        gen.attach_online_retriever()
-        print("🔎 在线检索器（Neo4j）已启用：将为每章注入限长背景事实。")
-    except Exception:
-        pass
-
     if chapters_dir is None:
         chapters_dir = str(OUTPUT_DIR / "chapters")
     os.makedirs(chapters_dir, exist_ok=True)
-    gen.outputs_dir = Path(chapters_dir).parent
+    gen.chapters_dir = Path(chapters_dir)
+    gen.outputs_dir = gen.chapters_dir.parent
+
+    # 本地章节记忆账本始终可用；Neo4j 在线时同时投影到图数据库。
+    _load_optional_env_files()
+    gen.attach_story_memory()
+    coordinator = getattr(gen, "story_memory", None)
+    if coordinator is None:
+        raise RuntimeError("StoryMemory 初始化失败，禁止生成无连续性账本的正式正文。")
+    if sync_neo4j and getattr(coordinator, "driver_factory", None) is None:
+        raise RuntimeError(
+            "本次生成要求正文/账本/Neo4j 三层一致，但 Neo4j 当前不可用。"
+        )
+    _recover_pending_cluster_transaction(gen)
+
+    # 挂载在线检索器（若可用）：每章生成前动态检索 Neo4j 背景事实
+    try:
+        gen.attach_online_retriever()
+    except Exception:
+        if sync_neo4j:
+            raise
+    if callable(getattr(gen, "online_retrieve_context", None)):
+        print("🔎 在线检索器（Neo4j）已启用：将为每章注入限长背景事实。")
+    elif sync_neo4j:
+        raise RuntimeError("Neo4j 在线检索器未成功挂载，禁止继续正式长篇生成。")
 
     # 新工作流：按“情节族/事件簇”生成整簇连续正文，最后再切分为章节
     clusters_sorted = sorted(overlapping, key=lambda x: int(x.get("_start", 0)))
     generated_chapters_global: set[int] = set()
 
-    out_ch_dir = Path(gen.outputs_dir) / "chapters"
-    coordinator = getattr(gen, "story_memory", None)
-    if coordinator is not None:
-        try:
-            backfilled = coordinator.ensure_backfilled(out_ch_dir, adjusted_start)
-            if backfilled:
-                print(f"🧠 StoryMemory 已在续写前回填 {backfilled} 个历史章节。")
-        except Exception as exc:  # noqa: BLE001
-            print(f"⚠️ StoryMemory 历史回填未完成：{exc}")
+    out_ch_dir = Path(gen.chapters_dir)
+    try:
+        backfilled = coordinator.ensure_backfilled(out_ch_dir, adjusted_start)
+        if backfilled:
+            print(f"🧠 StoryMemory 已在续写前回填 {backfilled} 个历史章节。")
+    except Exception as exc:  # noqa: BLE001
+        if sync_neo4j:
+            raise RuntimeError("StoryMemory 历史回填失败，禁止继续生成。") from exc
+        print(f"⚠️ StoryMemory 历史回填未完成：{exc}")
+    if sync_neo4j:
+        _sync_neo4j_from_outputs(
+            min_name_freq=neo4j_min_name_freq,
+            reset_db=False,
+            auto_extract_relations=neo4j_auto_extract_relations,
+            story_id=str(coordinator.story_id),
+            chapters_dir=out_ch_dir,
+            memory_dir=Path(coordinator.memory_dir),
+        )
     # 生成入口跳过逻辑：避免把之前生成的“短章”当成合格版本复用。
     for cluster in clusters_sorted:
         span = cluster.get("chapter_span") or cluster.get("chapterRange") or cluster.get("chapters") or []
@@ -16251,6 +21190,9 @@ def generate_chapters_v2(
             min_name_freq=neo4j_min_name_freq,
             reset_db=neo4j_reset_db,
             auto_extract_relations=neo4j_auto_extract_relations,
+            story_id=str(coordinator.story_id),
+            chapters_dir=out_ch_dir,
+            memory_dir=Path(coordinator.memory_dir),
         )
 
 
@@ -16329,7 +21271,8 @@ def generate_chapters_by_clusters_v2(
     if chapters_dir is None:
         chapters_dir = str(OUTPUT_DIR / "chapters_v2")
     os.makedirs(chapters_dir, exist_ok=True)
-    gen.outputs_dir = Path(chapters_dir).parent
+    gen.chapters_dir = Path(chapters_dir)
+    gen.outputs_dir = gen.chapters_dir.parent
 
     for cluster in selected:
         cid = cluster.get("cluster_id", "UNKNOWN")
@@ -16456,7 +21399,7 @@ def main() -> None:
     parser.add_argument(
         "--neo4j-reset",
         action="store_true",
-        help="危险操作：同步前清空 Neo4j 数据库（仅在你确认需要时启用）",
+        help="已停用：正式长篇流程会拒绝整库清空，只允许 story_id 范围内精确同步",
     )
     args = parser.parse_args()
 

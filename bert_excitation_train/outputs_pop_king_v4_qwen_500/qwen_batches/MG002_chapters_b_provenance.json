@@ -1,0 +1,91 @@
+{
+  "generated_by": "qwen",
+  "kind": "chapters_b",
+  "identifier": "MG002",
+  "accepted_attempt": 4,
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-04T17:51:39+08:00",
+      "prompt_sha256": "b2dc0deffd4110aec8147df944227cfd46c3f1e6bf26288f696c56794769c984",
+      "raw_response_sha256": "931a36aa85f873ca14f0ace60ed11de266bca3e43a5519c4896d4b1e1a0582f7",
+      "raw_response_file": "MG002_chapters_b_attempt_01_raw.txt",
+      "validation_failures": [
+        "第20章为事件结算章，必须明确现实得失"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 38.248,
+      "usage": {
+        "input_tokens": 11440,
+        "output_tokens": 4706,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 16146
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-04T17:52:25+08:00",
+      "prompt_sha256": "f900f1abbc11bca75b8ed524256684481ecba4259f7f4b2d8e388308964ef9da",
+      "raw_response_sha256": "528579da17e303f54a794b4d7a5b7a174f40f2b9ef0d0b147475133104b7b257",
+      "raw_response_file": "MG002_chapters_b_attempt_02_raw.txt",
+      "validation_failures": [
+        "第20章为事件结算章，必须明确现实得失"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 45.925,
+      "usage": {
+        "input_tokens": 13417,
+        "output_tokens": 4722,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 18139
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-04T17:53:05+08:00",
+      "prompt_sha256": "11be9a002c9e6840d154b7ae03f56c477ddadcc4df6491427676c4e589a018f2",
+      "raw_response_sha256": "c45689b7175a6ef6eda2a742446fb9638111dd1d1f9d379b91c8ecea680ed29f",
+      "raw_response_file": "MG002_chapters_b_attempt_03_raw.txt",
+      "validation_failures": [
+        "第20章为事件结算章，必须明确现实得失"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 40.177,
+      "usage": {
+        "input_tokens": 13419,
+        "output_tokens": 4654,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 18073
+      }
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-04T17:53:49+08:00",
+      "prompt_sha256": "11be9a002c9e6840d154b7ae03f56c477ddadcc4df6491427676c4e589a018f2",
+      "raw_response_sha256": "5606639df582d6deed2092f87930434fbb63849c641344811f03ca804d2e0821",
+      "raw_response_file": "MG002_chapters_b_attempt_04_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 43.766,
+      "usage": {
+        "input_tokens": 13419,
+        "output_tokens": 4674,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 18093
+      }
+    }
+  ]
+}

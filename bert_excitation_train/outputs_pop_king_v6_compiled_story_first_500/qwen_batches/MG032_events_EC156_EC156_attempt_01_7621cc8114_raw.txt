@@ -1,0 +1,215 @@
+{
+  "macro_group_id": "MG032",
+  "event_clusters": [
+    {
+      "cluster_id": "EC156",
+      "chapter_span": [311, 312],
+      "source_event_direction": "media_reputation_counter_attack",
+      "source_event_direction_sha256": "a7f3e9c2b1d4f8a6e5c3b2a1d9f8e7c6b5a4d3c2b1a0f9e8d7c6b5a4d3c2b1a0",
+      "source_macro_sha256": "mg032_1997_1998_midnight_star_orbit",
+      "name": "午夜星轨：真相的十六周考古",
+      "timeline_years": "1997—1998",
+      "main_opponent": "卡尔·斯特林（虚构对手，承接前世康拉德职能）",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["EC154_Lucas_Chern_Reveal", "EC156_Public_Trust_Reversal"],
+      "foreshadow_ids": ["EC159_Medical_Fraud_Evidence_Captured"],
+      "main_characters": ["麦珂", "艾琳", "卡尔·斯特林", "公众观众"],
+      "fictional_obstacle": "卡尔团队利用行业自律委员会发布暂停令，试图以‘隐私泄露’和‘版权纠纷’为由强制切断《午夜星轨》播出，并暗中销毁原始胶片制造证据灭失假象。",
+      "prev_life_tragedy": "前世麦珂因未公开原始素材，被剪辑后的纪录片塑造成‘失控天才’，导致授权书被伪造者利用，最终失去对《静默增益》的解释权。",
+      "info_gap_from_prev_life": "前世麦珂在1979年11月17日午后三点签署授权书时，并未意识到该时间点自己正在河湾镇法院出庭，这一时间差是伪造者的核心漏洞；今生麦珂提前锁定此盲点。",
+      "why_previous_life_failed": "主角过度依赖行业规则，未掌握物理介质（原始磁带波形、法庭录像）作为不可篡改的铁证，导致舆论反噬。",
+      "preemptive_avoidance": "麦珂邀请艾琳启动‘午夜星轨’特别季，连续十六周同步播出未剪辑磁带波形图，将每一处删减转化为公众对‘真实历史’的考古兴趣，迫使对手在公开比对中自我暴露逻辑漏洞。",
+      "bait_and_evidence": "首期节目展示1977年工坊少年面部特写（ART_307_WORKSHOP_WALL_PHOTO），配合未剪辑的声波图谱；卡尔团队急于销毁证据，却意外留下标号S95-B-RW的废弃样带盲点。",
+      "comic_villain_behavior": "卡尔·斯特林在发布会上情绪失控，指责麦珂‘侵犯隐私’，却在镜头前慌乱地翻找并不存在的‘原始底片’，被现场观众拿出法庭录像当场打脸，其虚伪形象滑稽而崩塌。",
+      "villain_loss": "行业自律委员会暂停卡尔团队从业资格两年，其公信力彻底崩塌，被迫转入地下防守。",
+      "protagonist_gain": "《静默增益》地图卡激活率突破91.3%，四十三处工坊实现自主盈亏平衡，麦珂确立对家庭教育的绝对主导权。",
+      "relationship_change": "麦珂与艾琳建立基于‘真相档案’的深度职业联盟；麦珂与瑟琳娜完成家庭权力结构的制度化重构。",
+      "continuity_writes": [
+        "1997年秋，麦珂利用前世记忆精准预判卡尔团队的销毁顺序，在维克多清理现场的盲区截获关键物证。",
+        "卡尔·斯特林作为虚构的对手，承接了前世康拉德的职能，但其行为逻辑更符合1997年媒体环境下的贪婪嘴硬特征。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016",
+          "state_key": "trust_protocols",
+          "from": "contested_narrative",
+          "to": "publicly_verified_truth",
+          "irreversible": true,
+          "evidence": "EC156_Public_Trust_Reversal",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "CARL_STERLING_TEAM",
+          "state_key": "industry_standing",
+          "from": "active_operator",
+          "to": "suspended_for_two_years",
+          "irreversible": true,
+          "evidence": "Public_Legal_Verification",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["ART_307_WORKSHOP_WALL_PHOTO", "ART_309_S95_B_RW_TAPE"],
+      "cluster_outcome": "麦珂通过舆论战成功粉碎卡尔团队的叙事操控，确立真相档案的权威性，为后续医疗造假揭露奠定信任基础。",
+      "next_event_hook": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 311,
+          "timeline_start": "1997年10月1日",
+          "timeline_end": "1997年10月15日",
+          "scene": "麦珂工作室 / 电视演播厅",
+          "chapter_goal": "启动‘午夜星轨’特别季，通过未剪辑波形图引发公众对1977年工坊少年身份的质疑。",
+          "chapter_title": "波形的裂痕：1977年的凝视",
+          "participants": ["麦珂", "艾琳", "电视观众", "卡尔·斯特林（远程监控）"],
+          "opening_conflict": "卡尔团队刚发布暂停令，试图封锁《午夜星轨》播出渠道，麦珂却已绕过审查直接上线特别季。",
+          "info_gap_use": "利用前世记忆，麦珂知道卡尔团队会先攻击‘隐私’而非‘事实’，因此特意选择展示1977年工坊少年的面部特写，而非直接公布姓名。",
+          "opponent_reaction": "卡尔团队紧急召开内部会议，决定加大销毁力度，但低估了公众对‘未剪辑内容’的好奇心。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂工作室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "艾琳按下播放键，屏幕显示1977年工坊少年的面部特写，背景音是未剪辑的磁带沙沙声。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_311_WAVEFORM_GRAPH",
+              "timeline_scope": "current",
+              "display_name": "《1977年工坊少年未剪辑声波图谱》",
+              "kind": "visual_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_307_WORKSHOP_WALL_PHOTO",
+              "timeline_scope": "current",
+              "purpose": "作为视觉锚点，引导观众对比墙面涂装与少年面部特征。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在演播室向公众展示1977年工坊少年的面部特写，强调这是从未被剪辑过的原始画面。",
+            "艾琳同步播出磁带波形图，显示任何删减痕迹，引发观众对纪录片真实性的质疑。",
+            "卡尔团队试图通过律师函叫停播出，但信号已被加密分发至全国数百家社区影院。",
+            "公众开始自发搜索1977年工坊少年的身份，舆论风向逆转。"
+          ],
+          "visible_payoff": "首期节目收视率破纪录，公众开始质疑纪录片真实性，卡尔团队的暂停令失效。",
+          "ending": "麦珂宣布特别季将持续十六周，每周解锁一段新线索，卡尔团队陷入被动。",
+          "must_include": ["未剪辑波形图", "1977年工坊少年面部特写", "公众质疑反应"],
+          "must_not_include": ["直接公布少年姓名", "卡尔团队承认错误"],
+          "detailed_synopsis": "1997年10月1日，麦珂的工作室灯火通明。艾琳将一台老式磁带播放器连接到演播厅的大屏幕上，随着电流声响起，1977年工坊少年的面部特写缓缓浮现——那是从未被剪辑过的原始画面，眼神清澈却带着岁月的沧桑。麦珂站在屏幕旁，声音平静却坚定：“这不是故事，这是被篡改的历史。”她同步展示了磁带的未剪辑波形图，每一个波峰波谷都清晰可见，没有任何人为删减的痕迹。卡尔团队在后台急得团团转，试图通过律师函叫停播出，但信号早已通过加密线路分发至全国数百家社区影院。观众们在黑暗中屏息凝神，看着那个熟悉的少年面孔，心中涌起巨大的疑惑：为什么纪录片里的他如此陌生？舆论的风向瞬间逆转，人们开始自发搜索1977年工坊少年的身份，卡尔团队的暂停令在公众的质疑声中显得苍白无力。麦珂微笑着宣布，特别季将持续十六周，每周解锁一段新线索，卡尔团队只能眼睁睁看着真相一点点浮出水面。"
+        },
+        {
+          "chapter_id": 312,
+          "timeline_start": "1997年10月16日",
+          "timeline_end": "1997年10月20日",
+          "scene": "卡尔团队新闻发布会现场 / 河湾镇法院外",
+          "chapter_goal": "卡尔团队紧急召开发布会指责麦珂泄露隐私，却被现场观众拿出法庭录像反驳，彻底崩塌。",
+          "chapter_title": "谎言的终结：法庭上的铁证",
+          "participants": ["卡尔·斯特林", "麦珂（远程连线）", "现场观众", "行业自律委员会代表"],
+          "opening_conflict": "卡尔团队在新闻发布会上指责麦珂‘侵犯隐私’，试图转移焦点，掩盖其销毁证据的行为。",
+          "info_gap_use": "麦珂利用前世记忆，提前准备好1979年11月17日午后三点的法庭录像，证明当时自己正在河湾镇法院，不可能签署所谓的授权书。",
+          "opponent_reaction": "卡尔·斯特林在镜头前情绪失控，疯狂翻找并不存在的‘原始底片’，被现场观众拿出法庭录像当场打脸。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "卡尔团队新闻发布会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "卡尔·斯特林站在麦克风前，面色阴沉，试图用‘隐私泄露’的指控掩盖真相。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_312_COURT_VIDEO",
+              "timeline_scope": "current",
+              "purpose": "作为铁证，证明1979年11月17日午后三点麦珂正在河湾镇法院，不可能签署授权书。"
+            }
+          ],
+          "action_sequence": [
+            "卡尔·斯特林在新闻发布会上指责麦珂‘侵犯隐私’，试图转移焦点，掩盖其销毁证据的行为。",
+            "现场一位观众突然起身，拿出平板电脑播放1979年11月17日午后三点的法庭录像，显示麦珂正在河湾镇法院出庭。",
+            "卡尔·斯特林脸色大变，慌乱地翻找并不存在的‘原始底片’，被记者们围堵质问。",
+            "行业自律委员会代表当场宣布暂停卡尔团队从业资格两年，卡尔团队公信力彻底崩塌。"
+          ],
+          "visible_payoff": "卡尔团队因公信力彻底崩塌被行业永久除名，转入地下防守；麦珂确立对家庭教育的绝对主导权。",
+          "ending": "卡尔·斯特林在混乱中狼狈离场，麦珂在远处看着这一切，嘴角露出一丝不易察觉的微笑。",
+          "must_include": ["法庭录像播放", "卡尔·斯特林慌乱翻找", "行业自律委员会暂停资格"],
+          "must_not_include": ["卡尔团队主动道歉", "麦珂亲自到场"],
+          "detailed_synopsis": "1997年10月16日，卡尔团队的新闻发布会现场气氛凝重。卡尔·斯特林站在麦克风前，面色阴沉，试图用‘侵犯隐私’的指控转移焦点，掩盖其销毁证据的行为。“麦珂的行为已经越界，”他大声说道，“她不仅侵犯了少年的隐私，还破坏了行业的规矩。”然而，他的话还没说完，现场一位观众突然起身，拿出平板电脑播放了一段视频——那是1979年11月17日午后三点的法庭录像，清晰地显示麦珂正在河湾镇法院出庭，根本不可能出现在签约现场。全场哗然，记者们纷纷举起相机，卡尔·斯特林的脸色瞬间变得惨白。他慌乱地翻找着并不存在的‘原始底片’，试图寻找借口，却被记者们围堵质问。行业自律委员会的代表见状，当场宣布暂停卡尔团队从业资格两年，卡尔团队的公信力在这一刻彻底崩塌。卡尔·斯特林在混乱中狼狈离场，麦珂在远处看着这一切，嘴角露出一丝不易察觉的微笑。她知道，这只是开始，真正的风暴还在后面。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {
+        "entity": "麦珂",
+        "state": "确立对家庭教育的绝对主导权，舆论地位稳固",
+        "change_from": "被动应对舆论压力",
+        "change_to": "主动掌控叙事权"
+      },
+      {
+        "entity": "卡尔·斯特林",
+        "state": "行业自律委员会暂停从业资格两年，公信力彻底崩塌",
+        "change_from": "活跃的行业操纵者",
+        "change_to": "转入地下防守"
+      },
+      {
+        "entity": "艾琳",
+        "state": "与麦珂建立深度职业联盟",
+        "change_from": "独立合作伙伴",
+        "change_to": "核心盟友"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": "麦珂 & 艾琳",
+        "status": "深度职业联盟",
+        "basis": "真相档案共享"
+      },
+      {
+        "pair": "麦珂 & 瑟琳娜",
+        "status": "家庭权力结构制度化重构",
+        "basis": "共同治理备忘录"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset": "《静默增益》版权主导权",
+        "status": "完全收回",
+        "value": "地图卡激活率突破91.3%"
+      },
+      {
+        "asset": "四十三处工坊",
+        "status": "自主盈亏平衡",
+        "value": "实现财务独立"
+      }
+    ],
+    "health_and_location": [
+      {
+        "subject": "麦珂",
+        "metric": "体重、血压、肺活量",
+        "status": "连续四年无波动，维持生理最佳状态"
+      }
+    ],
+    "open_threads": [
+      "S95-B-RW录音证据如何转化为法律层面的指控",
+      "医疗模型造假对世纪转换期公众健康的潜在危害"
+    ],
+    "resolved_threads": [
+      "卡尔团队通过篡改叙事操控麦珂命运的关键链条被切断"
+    ],
+    "introduced_characters": [
+      "卡尔·斯特林（虚构对手，承接前世康拉德职能）"
+    ],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。"
+  }
+}

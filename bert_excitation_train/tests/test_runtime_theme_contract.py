@@ -60,6 +60,7 @@ from bert_excitation_train.scripts.v2.generate_chapter_content_v2 import (
     _build_cluster_body_part_prompt,
     _fallback_build_exec_plan_for_cluster,
     _fallback_chapter_beats,
+    _future_milestone_materials,
     _derive_closed_scene_contract,
     _generic_contract_segment_fallback,
     _ground_opening_betrayal_before_home,
@@ -2130,6 +2131,49 @@ class RuntimeThemeContractTests(unittest.TestCase):
         )
         self.assertIn("重复执行与固定盟友", duplicated_failures)
 
+    def test_rhetorical_rule_question_is_not_an_invented_rule_citation(self):
+        card = {
+            "chapter_id": 5,
+            "chapter_role_v2": "present_revenge",
+            "chapter_milestone": {
+                "action": "主角在合作方面前完成现场验真",
+                "opponent_reaction": "对手公开质疑主角状态",
+                "result": "合作方重新判断主角能力",
+            },
+        }
+        rhetorical_failures = "\n".join(
+            _chapter_body_hard_failures(
+                "对手冷笑：“谁规定今天必须对标十年前？”"
+                "主角没有争辩，只当面完成了这次验真。",
+                5,
+                card,
+            )
+        )
+        invented_failures = "\n".join(
+            _chapter_body_hard_failures(
+                "对手宣称根据临时管理规定必须降低验真标准，"
+                "并要求所有人立即照办。",
+                5,
+                card,
+            )
+        )
+        invented_rule_failure = "正文临时发明执行卡未建立的协议编号或条款"
+        self.assertNotIn(invented_rule_failure, rhetorical_failures)
+        self.assertIn(invented_rule_failure, invented_failures)
+        for genuine_citation in (
+            "对手声称内部规定明确要求今天必须降低标准。",
+            "对手反问：“谁规定今天必须按第三条执行？”",
+        ):
+            with self.subTest(genuine_citation=genuine_citation):
+                failures = "\n".join(
+                    _chapter_body_hard_failures(
+                        genuine_citation,
+                        5,
+                        card,
+                    )
+                )
+                self.assertIn(invented_rule_failure, failures)
+
     def test_failed_prose_patterns_from_live_generation_are_hard_failures(self):
         cast = [
             {"name": "Maya Reed", "alignment": "protagonist"},
@@ -4007,13 +4051,25 @@ class RuntimeThemeContractTests(unittest.TestCase):
                 for index in range(1, 7)
             )
             self.assertGreaterEqual(len(body), 1000)
-            self.assertFalse(
-                _chapter_body_hard_failures(
-                    body,
-                    chapter_num=chapter,
-                    chapter_card=cards[chapter],
-                )
+            body_failures = _chapter_body_hard_failures(
+                body,
+                chapter_num=chapter,
+                chapter_card=cards[chapter],
             )
+            if chapter == 11:
+                self.assertTrue(
+                    any(
+                        "多段回忆" in item or "兜底模板" in item
+                        for item in body_failures
+                    )
+                )
+            else:
+                self.assertTrue(
+                    any(
+                        "等长" in item or "兜底模板" in item
+                        for item in body_failures
+                    )
+                )
             self.assertFalse(
                 _scene_contract_fulfillment_failures(body, cards[chapter])
             )
@@ -4389,7 +4445,7 @@ class RuntimeThemeContractTests(unittest.TestCase):
         prompt = _build_grounded_chapter_prompt(
             31,
             card,
-            chapter_beats={"beats": [{"scene_goal": "完成空载复验"}]},
+            chapter_beats={"beats": [{"scene_goal": "调用未验收的秘密扫描设备"}]},
             kg_context="既有事实：罗文仍掌握设备调度；上一章没有发生伤亡。",
             rag_samples={
                 "revenge": [{
@@ -4401,17 +4457,124 @@ class RuntimeThemeContractTests(unittest.TestCase):
                 }]
             },
         )
-        self.assertIn("本章情节族里程碑，事实与顺序的最高优先级", prompt)
+        self.assertIn("唯一事件事实，情节族约束的最高优先级", prompt)
         self.assertIn("罗文抢过控制台跳过停机检查", prompt)
-        self.assertIn("通用场景契约", prompt)
+        self.assertIn("由场景类型编译的单一因果脊柱", prompt)
+        self.assertIn("场景边界", prompt)
+        self.assertIn("设备说明不超过全文三分之一", prompt)
+        self.assertIn("本场可写的事实载体只有", prompt)
         self.assertIn("既有事实：罗文仍掌握设备调度", prompt)
         self.assertIn("压迫转反击", prompt)
+        self.assertNotIn("调用未验收的秘密扫描设备", prompt)
         self.assertNotIn("这段样本文字绝不能出现在提示词中", prompt)
+        self.assertEqual(1, prompt.count("要求传送带先用测试配重完成空载复验"))
+        self.assertEqual(1, prompt.count("罗文抢过控制台跳过停机检查"))
+        self.assertEqual(1, prompt.count("配重反向滑落，林澈叫停工人上岗"))
         self.assertIn("现实中完全相同", _build_chapter_quality_critic_prompt(
             31,
             "林澈当场叫停设备。",
             card,
         ))
+
+    def test_grounded_prompt_isolates_future_milestone_materials(self):
+        card = {
+            "chapter_id": 5,
+            "cluster_id": "EC_MEDICAL",
+            "cluster_chapter_index": 1,
+            "cluster_chapter_total": 2,
+            "chapter_role_v2": "present_setup",
+            "chapter_goal": "在合作方见证下完成现场表演能力测试",
+            "this_life_revenge": "林澈提前请合作方见证现场表演能力测试",
+            "core_payoff": "合作方撤下不实宣传，林澈收回训练决定权",
+            "chapter_ending": "林澈完成测试，合作方撤下不实宣传",
+            "main_opponent": "罗文·凯德",
+            "info_gap_from_prev_life": "林澈记得上一世被问题药物拖垮",
+            "canonical_cast": [
+                {"name": "林澈", "role": "表演者", "alignment": "protagonist"},
+                {"name": "罗文·凯德", "role": "训练主管", "alignment": "opponent"},
+            ],
+            "chapter_milestone": {
+                "chapter": 5,
+                "action": "在合作方见证下完成现场表演能力测试",
+                "opponent_reaction": "罗文试图降低测试强度",
+                "result": "林澈完成测试，合作方撤下不实宣传",
+            },
+            "cluster_milestones": [
+                {
+                    "chapter": 5,
+                    "action": "在合作方见证下完成现场表演能力测试",
+                    "opponent_reaction": "罗文试图降低测试强度",
+                    "result": "林澈完成测试，合作方撤下不实宣传",
+                },
+                {
+                    "chapter": 6,
+                    "action": "核对针剂封签、送货单和领用簿",
+                    "opponent_reaction": "保管人试图辩解",
+                    "result": "保管人被暂停职务，林澈获得药品保管权",
+                },
+            ],
+            "theme_contract": {
+                "theme": "表演者重生后夺回职业控制",
+                "background": "架空现代演出产业",
+                "protagonists": ["林澈"],
+                "extra_constraints": "终局将出现秘密母带交易与保险理赔。",
+                "hard_constraints": ["已发生事实不得无解释改写。"],
+                "forbidden_elements": ["匿名消息解决核心矛盾"],
+            },
+        }
+        card["scene_contract"] = _derive_closed_scene_contract(card)
+        future = _future_milestone_materials(5, card)
+        self.assertIn("针剂", future)
+        self.assertIn("封签", future)
+        self.assertIn("送货单", future)
+        self.assertIn("领用簿", future)
+        self.assertIn("药品保管权", future)
+
+        prompt = _build_grounded_chapter_prompt(
+            5,
+            card,
+            kg_context=(
+                "既有事实：问题针剂已经封存。"
+                "既有事实：罗文仍负责训练安排。"
+            ),
+        )
+        self.assertIn("未来材料隔离", prompt)
+        self.assertIn("隔离 5 项后续里程碑专属材料或权限", prompt)
+        self.assertNotIn("针剂", prompt)
+        self.assertNotIn("封签", prompt)
+        self.assertNotIn("送货单", prompt)
+        self.assertNotIn("领用簿", prompt)
+        self.assertNotIn("药品保管权", prompt)
+        self.assertIn("罗文仍负责训练安排", prompt)
+        self.assertIn("能力展示不超过全文四分之一", prompt)
+        self.assertNotIn("秘密母带交易与保险理赔", prompt)
+        self.assertIn("在开篇三分之一内只写一次私下的旧局识别", prompt)
+        self.assertIn("用“提前”或“先一步”", prompt)
+        self.assertEqual(
+            1,
+            prompt.count("在合作方见证下完成现场表演能力测试"),
+        )
+        failures = "\n".join(
+            _chapter_body_hard_failures(
+                "林澈完成测试后又拿出针剂封签和送货单，宣布自己获得药品保管权。",
+                5,
+                card,
+            )
+        )
+        self.assertIn("提前使用后续里程碑", failures)
+
+        over_choreographed = (
+            "上一世，罗文也用保护话术降低标准。林澈提前请合作方到场。"
+            "第一段里他腾空又跪地，胸廓起伏被见证人逐项观察。"
+            "第二段里他撑地翻滚，唱完十六个小节，见证人宣布测试通过。"
+            "合作方撤下不实宣传。"
+        )
+        prose_failures = "\n".join(
+            _chapter_body_hard_failures(over_choreographed, 5, card)
+        )
+        self.assertIn("解剖或医学术语", prose_failures)
+        self.assertIn("危险特技", prose_failures)
+        self.assertIn("编号式轮次或乐段", prose_failures)
 
     def test_quality_review_parser_is_strict_and_applies_thresholds(self):
         accepted = _parse_chapter_quality_review(

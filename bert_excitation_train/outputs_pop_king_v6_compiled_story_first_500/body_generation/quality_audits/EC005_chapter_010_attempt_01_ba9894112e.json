@@ -1,0 +1,151 @@
+{
+  "cluster_id": "EC005",
+  "chapter_id": 10,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "ba9894112e358c245c05293562eadfbf8d615d5374e784920ace272dc7692ad3",
+  "base_prompt_sha256": "ba9894112e358c245c05293562eadfbf8d615d5374e784920ace272dc7692ad3",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "2fa9cf280e0dbf34d5eb78d7cc64826a26ca5c4eee2bcc969a0aa8f19e6838ce",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 21.277,
+    "usage": {
+      "prompt_tokens": 8736,
+      "completion_tokens": 1378,
+      "total_tokens": 10114,
+      "prompt_tokens_details": {
+        "cached_tokens": 4767
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 5,
+    "through_chapter": 10,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "26a416b2ee0f728d40eea43203210c5acefe8d7ac70dfcd265cff39751c39401",
+    "chapter_card_prefix_sha256": "8d2b0054c1a2b1ac48a3f0ac197321b943ce7d2d85bcb929f36b4cb114b3975a",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "5e971d0bf395990888b10e2786bb8ce392176b2389290006bf420504ca1cc515"
+  },
+  "cluster_sha256": "fc550cd0bd254a00375f224b701fdf48b048dc5166e50fc4ddcb1453a201036c",
+  "card_sha256": "0e2530fb5dddd1234ed2c358427508e6a161b75cf5e06f6c34a038ab4fd04c24",
+  "chapter_audit": {
+    "han_chars": 1949,
+    "total_chars": 2239,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "麦珂提出艺术主张",
+        "exact": false,
+        "bigram_coverage": 0.571,
+        "matched": true
+      },
+      {
+        "anchor": "巴里·布鲁姆被打断",
+        "exact": false,
+        "bigram_coverage": 0.571,
+        "matched": true
+      },
+      {
+        "anchor": "观众鼓掌",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "control_over_narrative",
+        "target": "失去话语权，被暂停职务",
+        "evidence_terms": [
+          "玛莎当众指出巴里",
+          "布鲁姆篡改提纲",
+          "黛安娜出示手写纪"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "self_definition_rights",
+        "target": "拥有自我定义权（创作者身份）",
+        "evidence_terms": [
+          "麦珂在直播中坚持",
+          "艺术主张并获全场",
+          "掌声"
+        ],
+        "hit_terms": [
+          "掌声"
+        ],
+        "matched": false
+      },
+      {
+        "state_key": "trust_in_mother",
+        "target": "母子同盟，共同对抗外部压力",
+        "evidence_terms": [
+          "玛莎站在麦珂身前",
+          "挡开巴里",
+          "布鲁姆的逼近"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.03,
+    "scene_evidence": [
+      {
+        "location": "《晨光电台》直播间",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "汉字数1949，高于1900",
+      "正文与章卡目标/动作/回报语义覆盖仅0.030，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“观众鼓掌”",
+      "正文没有通过现场动作兑现状态转移control_over_narrative→失去话语权，被暂停职务",
+      "正文没有通过现场动作兑现状态转移self_definition_rights→拥有自我定义权（创作者身份）",
+      "正文没有通过现场动作兑现状态转移trust_in_mother→母子同盟，共同对抗外部压力",
+      "正文未落到规划场景“《晨光电台》直播间”"
+    ],
+    "all_validator_failures": [
+      "汉字数1949，高于1900",
+      "正文与章卡目标/动作/回报语义覆盖仅0.030，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“观众鼓掌”",
+      "正文没有通过现场动作兑现状态转移control_over_narrative→失去话语权，被暂停职务",
+      "正文没有通过现场动作兑现状态转移self_definition_rights→拥有自我定义权（创作者身份）",
+      "正文没有通过现场动作兑现状态转移trust_in_mother→母子同盟，共同对抗外部压力",
+      "正文未落到规划场景“《晨光电台》直播间”"
+    ]
+  },
+  "failures": [
+    "第10章：汉字数1949，高于1900",
+    "两章存在225字连续重复片段，第二章疑似重演第一章"
+  ],
+  "accepted": false,
+  "joint_rejected": true,
+  "joint_failures": [
+    "第10章：汉字数1949，高于1900",
+    "两章存在225字连续重复片段，第二章疑似重演第一章"
+  ]
+}

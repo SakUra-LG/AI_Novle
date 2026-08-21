@@ -1,0 +1,261 @@
+{
+  "macro_group_id": "MG026",
+  "event_clusters": [
+    {
+      "cluster_id": "EC127",
+      "chapter_span": [
+        253,
+        254
+      ],
+      "source_event_direction": "前世具体受害：瑟琳娜因未签署独立协议，在前世资产冻结时被迫放弃职业选择权依附麦珂。；本事件独有的前世信息差：重生记忆显示1992年税务重组窗口期仅剩两周，错过即面临资产合并风险。；今生提前动作：麦珂主动提出签署双轨信托协议，明确约定双方分立职业路径与退出自由条款。；第253章可见小赢：瑟琳娜在公证处拒绝传统联名模式，坚持在协议中加入‘无共同房产’的独立声明。；第254章新交锋：奥瑞恩代理人试图以‘家庭联合申报’为由施压，被瑟琳娜当场引用加州民事伴侣法第14条驳回。；阻力方永久现实损失：奥瑞恩失去通过婚姻渗透控制麦珂资产的合法切入点，转而陷入被动等待。；主角现实收益：麦珂与瑟琳娜完成民事伴侣登记，资产成功分割至瑞士与开曼群岛物理金库。；不可逆结算键：双轨信托契约已生效，任何单一实体无法再冻结麦珂全部资产。；接回死亡控制主线：资产物理隔离阻断前世保险与医疗利益链的合谋清算路径。",
+      "source_event_direction_sha256": "2d3e3cf96af876aa0812466e4d262df3c727ee0a33b835cec8e6da1983ead52b",
+      "source_macro_sha256": "6420abd5b91ee1d5fa1af43c85c24eea476277a18a3024c53e99074ee87498b5",
+      "name": "双轨信托与独立宣言",
+      "timeline_years": "1991—1992",
+      "main_opponent": "奥瑞恩集团代理律师哈罗德·芬奇（Harold Finch）",
+      "opposition_type": "ally_resistance",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜",
+        "黛安娜",
+        "哈罗德·芬奇",
+        "公证人威廉姆斯"
+      ],
+      "fictional_obstacle": "前世瑟琳娜因未签署独立协议，在资产冻结时被迫放弃职业选择权；今生需在税务重组窗口期关闭前，以‘无共同房产’条款切断资产合并风险。",
+      "prev_life_tragedy": "瑟琳娜在前世资产被冻结后，为维持生计被迫依附麦珂，放弃了独立作曲生涯，最终在麦珂入狱期间精神崩溃。",
+      "info_gap_from_prev_life": "重生记忆显示1992年加州税务重组窗口期仅剩两周，若错过即面临资产强制合并，导致双方职业路径被彻底锁死。",
+      "why_previous_life_failed": "缺乏法律隔离机制，误信传统婚姻财产共有制能保护家庭，实则成为反派渗透的合法切入点。",
+      "preemptive_avoidance": "麦珂主动提出签署双轨信托协议，明确约定双方分立职业路径与退出自由条款，并引入瑞士与开曼群岛物理金库作为资产隔离载体。",
+      "bait_and_evidence": "利用1991年《数字千年版权法》草案前的法律真空期，坚持使用纸质介质存证；引用加州民事伴侣法第14条关于‘独立财产声明’的法律效力，对抗奥瑞恩代理人提出的‘家庭联合申报’施压。",
+      "comic_villain_behavior": "哈罗德·芬奇试图用‘家庭联合申报’的道德绑架和‘税务合规’的恐吓来迫使瑟琳娜妥协，却在引用过时法条时被当场驳斥，显得滑稽而外行。",
+      "villain_loss": "奥瑞恩集团失去通过婚姻渗透控制麦珂资产的合法切入点，被迫转入被动等待，无法再利用税务手段冻结核心资产。",
+      "protagonist_gain": "麦珂与瑟琳娜完成民事伴侣登记，资产成功分割至瑞士与开曼群岛物理金库，确立双轨信托契约生效，任何单一实体无法再冻结全部资产。",
+      "relationship_change": "瑟琳娜从依附者转变为拥有独立谈判地位的合伙人，两人信任度达到顶峰，形成真正的战略同盟。",
+      "continuity_writes": [
+        "确认1991年税务重组窗口期紧迫性，强化时间紧迫感。",
+        "建立‘物理金库’概念，为后续金融战埋下伏笔。",
+        "修正前世瑟琳娜的悲剧结局，确立其独立人格。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "ASSET_ISOLATION_EC127",
+          "state_key": "asset_freeze_status",
+          "from": "vulnerable_to_merge",
+          "to": "physically_isolated_in_offshore_banks",
+          "irreversible": true,
+          "evidence": "TRUST_DEED_SWISS_KY_1991_FINAL",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "RELATIONSHIP_MAGO_SELENA",
+          "state_key": "dependency_level",
+          "from": "high_dependency",
+          "to": "strategic_partnership",
+          "irreversible": true,
+          "evidence": "CIVIL_PARTNERSHIP_CERT_EC127",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": [
+        "CA_CIVIL_PARTNERSHIP_ACT_1991"
+      ],
+      "cluster_outcome": "奥瑞恩集团‘音效污染论’彻底破产，维克多·兰斯转入隐蔽渗透阶段；麦珂与瑟琳娜完成民事伴侣登记及资产物理分散化，家庭防线加固；关键伏笔‘初声基金’早期捐赠票据影印权问题被意外触发，埋下金融战隐患。",
+      "next_event_hook": "民事伴侣身份带来的税务结构重组需求，迫使麦珂启动十年期家族资产梳理，意外发现奥瑞恩集团早在1983年就通过离岸壳公司收购了‘初声基金’早期捐赠票据的影印权——这一财务蛛丝将成为P07揭开纪录片背叛事件的关键索引，直接触发下一块的金融战。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 253,
+          "timeline_start": "1991-11-21",
+          "timeline_end": "1991-11-21",
+          "scene": "圣莫尼卡公证处办公室",
+          "chapter_goal": "瑟琳娜拒绝传统联名模式，坚持在双轨信托协议中加入‘无共同房产’独立声明。",
+          "chapter_title": "独立的誓言",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "公证人威廉姆斯",
+            "哈罗德·芬奇（远程电话介入）"
+          ],
+          "opening_conflict": "公证人准备按传统格式起草联名协议，瑟琳娜突然叫停，要求加入独立财产条款。",
+          "info_gap_use": "麦珂利用重生记忆，提前预知税务窗口期仅剩两周，必须在此刻完成资产隔离。",
+          "opponent_reaction": "哈罗德·芬奇通过电话施压，声称‘家庭联合申报’是道德义务，否则将影响未来税务优惠。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "圣莫尼卡公证处办公室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "窗外暴雨声掩盖了室内的紧张对峙"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_TRUST_DEED_SWISS_KY_1991_DRAFT",
+              "timeline_scope": "current",
+              "display_name": "《1991年双轨信托草案（含独立声明版）》",
+              "kind": "legal_document",
+              "source_artifact_id": "TRUST_DEED_SWISS_KY_1991_DRAFT"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_249_PAPER_BATCH_REPORT",
+              "timeline_scope": "current",
+              "purpose": "证明纸质介质存证的绝对效力，对抗电子数据篡改"
+            }
+          ],
+          "action_sequence": [
+            "麦珂将《1991年双轨信托草案》推至瑟琳娜面前，眼神坚定。",
+            "瑟琳娜扫过文件，突然指出‘无共同房产’条款的必要性，拒绝传统联名模式。",
+            "公证人威廉姆斯犹豫，试图解释传统流程的便利性。",
+            "瑟琳娜引用加州民事伴侣法相关条款，强硬要求修改。",
+            "麦珂支持瑟琳娜，表示这是为了保护双方的职业独立性。",
+            "哈罗德·芬奇电话介入，试图以税务优惠施压，被瑟琳娜当场驳回。",
+            "公证人最终同意按瑟琳娜的要求修改协议，并见证签字。"
+          ],
+          "visible_payoff": "瑟琳娜成功在协议中加入独立声明，打破了传统婚姻财产共有制的束缚。",
+          "ending": "协议草案初步成型，但尚未正式生效，需等待税务窗口期关闭前的最后确认。",
+          "must_include": [
+            "瑟琳娜的独立声明",
+            "哈罗德·芬奇的电话施压",
+            "公证人的犹豫与妥协"
+          ],
+          "must_not_include": [
+            "资产实际转移完成",
+            "奥瑞恩集团的直接干预"
+          ],
+          "detailed_synopsis": "1991年11月15日，圣莫尼卡公证处内，气氛凝重。麦珂与瑟琳娜坐在桌前，面前摊开着《1991年双轨信托草案》。公证人威廉姆斯正准备按传统格式起草联名协议，瑟琳娜却突然叫停，声音平静却坚定：“我们不能共用房产，也不能共用职业路径。”她指着草案中的一行字，要求加入“无共同房产”的独立声明。麦珂眼中闪过一丝赞许，他深知这是前世瑟琳娜悲剧的根源——资产冻结导致的依附。此时，哈罗德·芬奇通过电话介入，声称“家庭联合申报”是道德义务，否则将影响未来税务优惠。瑟琳娜冷笑一声，引用加州民事伴侣法相关条款，当场驳回了这种过时的道德绑架。公证人威廉姆斯在两人的坚持下，终于同意修改协议。窗外暴雨如注，仿佛在为这场独立的誓言伴奏。"
+        },
+        {
+          "chapter_id": 254,
+          "timeline_start": "1991-11-22",
+          "timeline_end": "1991-11-22",
+          "scene": "星港市高等法院听证室",
+          "chapter_goal": "奥瑞恩代理人试图以‘家庭联合申报’为由施压，被瑟琳娜当场引用加州民事伴侣法第14条驳回，双轨信托契约正式生效。",
+          "chapter_title": "法律的铁壁",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "法官亨利·卡特",
+            "哈罗德·芬奇",
+            "奥瑞恩集团代表"
+          ],
+          "opening_conflict": "奥瑞恩代理人试图以‘家庭联合申报’为由，质疑双轨信托的合法性，要求重新审查资产归属。",
+          "info_gap_use": "麦珂利用重生记忆，预判奥瑞恩必用的伪造证据特征，提前准备好应对策略。",
+          "opponent_reaction": "哈罗德·芬奇在法庭上试图混淆视听，引用过时法条，却被瑟琳娜当场引用加州民事伴侣法第14条驳回，显得狼狈不堪。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "星港市高等法院听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法槌落下，宣告双轨信托契约生效"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_CIVIL_PARTNERSHIP_CERT_EC127",
+              "timeline_scope": "current",
+              "display_name": "ART_CIVIL_PARTNERSHIP_CERT_EC127",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_TRUST_DEED_SWISS_KY_1991_DRAFT",
+              "timeline_scope": "current",
+              "purpose": "作为双轨信托契约的法律依据，证明资产已物理隔离",
+              "source_artifact_id": "TRUST_DEED_SWISS_KY_1991_DRAFT"
+            },
+            {
+              "artifact_id": "ART_CIVIL_PARTNERSHIP_CERT_EC127",
+              "timeline_scope": "current",
+              "purpose": "证明民事伴侣关系的合法性，支撑独立财产声明",
+              "source_artifact_id": "CIVIL_PARTNERSHIP_CERT_EC127"
+            }
+          ],
+          "action_sequence": [
+            "奥瑞恩代理人哈罗德·芬奇在法庭上提出质疑，称双轨信托违反‘家庭联合申报’原则。",
+            "瑟琳娜站起身，冷静地引用加州民事伴侣法第14条，指出该条款允许伴侣独立持有财产。",
+            "法官亨利·卡特仔细审阅瑟琳娜提供的法律依据，点头认可。",
+            "哈罗德·芬奇试图反驳，但引用的法条已被更新，显得外行且滑稽。",
+            "麦珂适时出示《1991年双轨信托草案》及瑞士、开曼群岛的物理金库凭证。",
+            "法官当庭裁定双轨信托契约有效，资产成功分割至离岸金库。",
+            "奥瑞恩代理人哑口无言，被迫承认无法通过婚姻渗透控制资产。"
+          ],
+          "visible_payoff": "双轨信托契约正式生效，奥瑞恩集团失去通过婚姻渗透控制麦珂资产的合法切入点。",
+          "ending": "瑟琳娜与麦珂走出法庭，阳光洒在两人身上，象征着新的开始。",
+          "must_include": [
+            "瑟琳娜引用法律条文",
+            "法官的裁定",
+            "奥瑞恩代理人的失败"
+          ],
+          "must_not_include": [
+            "资产实际转移完成",
+            "奥瑞恩集团的直接干预"
+          ],
+          "detailed_synopsis": "1991年11月16日，星港市高等法院听证室内，气氛紧张。奥瑞恩代理人哈罗德·芬奇站在被告席前，试图以‘家庭联合申报’为由，质疑双轨信托的合法性，要求重新审查资产归属。瑟琳娜站起身，目光如炬，冷静地引用加州民事伴侣法第14条，明确指出该条款允许伴侣独立持有财产，无需合并申报。法官亨利·卡特仔细审阅瑟琳娜提供的法律依据，点头认可。哈罗德·芬奇试图反驳，但引用的法条已被更新，显得外行且滑稽，引得旁听席一阵窃笑。麦珂适时出示《1991年双轨信托草案》及瑞士、开曼群岛的物理金库凭证，进一步佐证资产已物理隔离。法官当庭裁定双轨信托契约有效，资产成功分割至离岸金库。奥瑞恩代理人哑口无言，被迫承认无法通过婚姻渗透控制资产。瑟琳娜与麦珂走出法庭，阳光洒在两人身上，象征着新的开始。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1991",
+    "character_states": [
+      {
+        "character": "麦珂",
+        "state": "资产物理隔离完成，双轨信托生效，家庭防线加固"
+      },
+      {
+        "character": "瑟琳娜",
+        "state": "确立独立谈判地位，职业选择权恢复，与麦珂形成战略同盟"
+      },
+      {
+        "character": "黛安娜",
+        "state": "晋升为证据链架构师，信任度达到顶峰"
+      }
+    ],
+    "relationship_states": [
+      {
+        "relationship": "麦珂与瑟琳娜",
+        "state": "从依附关系转变为战略伙伴关系，信任度达到顶峰"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity": "麦珂与瑟琳娜资产",
+        "state": "成功分割至瑞士与开曼群岛物理金库，任何单一实体无法再冻结全部资产"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity": "麦珂",
+        "state": "健康，位于星港市"
+      },
+      {
+        "entity": "瑟琳娜",
+        "state": "健康，位于星港市"
+      }
+    ],
+    "open_threads": [
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）",
+      "奥瑞恩集团转向更隐蔽的财务做空手段"
+    ],
+    "resolved_threads": [
+      "资产冻结风险解除",
+      "瑟琳娜职业选择权恢复"
+    ],
+    "introduced_characters": [
+      "哈罗德·芬奇（奥瑞恩集团代理律师）"
+    ],
+    "next_pressure": "民事伴侣身份带来的税务结构重组需求，迫使麦珂启动十年期家族资产梳理，意外发现奥瑞恩集团早在1983年就通过离岸壳公司收购了‘初声基金’早期捐赠票据的影印权——这一财务蛛丝将成为P07揭开纪录片背叛事件的关键索引，直接触发下一块的金融战。"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "chapter": 9,
+  "generation_try": 1,
+  "chars": 1871,
+  "sha256": "3a3307f65be3b4e21b659c49f090479fb7f533baefe80a886ba5217b545aa777",
+  "review": {
+    "accept": false,
+    "model_accept": false,
+    "scores": {
+      "cluster_fidelity": 4.0,
+      "causal_clarity": 5.0,
+      "prose_naturalness": 3.0,
+      "emotional_force": 6.0,
+      "non_repetition": 7.0,
+      "ending_precision": 8.0,
+      "fictional_naming": 10.0
+    },
+    "low_scores": {
+      "cluster_fidelity": 4.0,
+      "causal_clarity": 5.0,
+      "prose_naturalness": 3.0
+    },
+    "hard_failures": [
+      {
+        "code": "FORBIDDEN_MECHANIC",
+        "evidence": "麦珂抽出控制器背面插销，拔出数据芯片……屏幕跳出波形图：峰值突兀中断，尾部塌陷成直线。",
+        "repair": "删除芯片读取、波形图、负载曲线等未在契约中允许的设备日志或检测报告类证据；仅保留‘沙袋提前十秒坠下’这一目击可验的即时结果"
+      },
+      {
+        "code": "OPPONENT_SELF_INCRIMINATION_MISMATCH",
+        "evidence": "卡尔拇指猝然下压启动私设快捷键……掌心猛拍控制器侧面凸钮……液压阀泄压……平台猛然下沉三寸……又沉下半寸……沙袋轰然砸落",
+        "repair": "对手反应必须严格为‘抢过控制器按下他私改的快捷程序’单一动作；不得拆解为多段主动操控（拍凸钮、踹侧框、二次下沉），否则违背‘opponent_self_incrimination’唯一性契约"
+      },
+      {
+        "code": "DECISION_RESULT_MISMATCH",
+        "evidence": "麦珂按下确认键，屏幕闪出红框提示：【二级操控权终止｜安全主管接管】……‘你签字放弃二级操控权限——就在此处。’",
+        "repair": "‘取得安全总监直接停机权’是里程碑结果，但正文交付的是‘二级操控权终止’和‘移交安全主管’，二者角色、权限层级、生效主体均与契约‘protagonist_gain’: '麦珂取得安全总监直接停机权' 不符；须改为麦珂当场宣布‘升降台停机权即刻由我行使’并实际执行停机，不依赖系统弹窗或他人接管"
+      },
+      {
+        "code": "EVIDENCE_CARRIER_VIOLATION",
+        "evidence": "麦珂抽出芯片，插入主控屏侧埠：‘数据同步完毕。从现在起，升降台操作权移交安全主管……’",
+        "repair": "‘主控屏’‘侧埠’‘数据同步’属未授权设备接口与流程；契约仅允许证据载体为‘等重沙袋’‘升降台’‘控制器’；所有操作必须物理可见、无需解析即可验证"
+      }
+    ],
+    "summary": "核心反杀因果链被工程化细节和越权证据污染，对手行为碎片化、主角权限落地错位，四重硬伤不可绕过"
+  }
+}

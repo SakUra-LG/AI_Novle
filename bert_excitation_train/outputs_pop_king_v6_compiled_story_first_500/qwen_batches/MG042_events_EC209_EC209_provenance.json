@@ -1,0 +1,24 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC209_EC209",
+  "identifier": "MG042",
+  "accepted_attempt": 1,
+  "base_prompt_sha256": "5944e25e3884769d0d18d6220ed6c1b7c9a0fd233c3665a72522faabbae5bc38",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-21T11:32:16+08:00",
+      "prompt_sha256": "5944e25e3884769d0d18d6220ed6c1b7c9a0fd233c3665a72522faabbae5bc38",
+      "raw_response_sha256": "b42f7c836a7b1b5c26ca71b006b34b846f05f3a6207979e666a669b263731829",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG042_events_EC209_EC209_attempt_01_5944e25e38_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 33.233,
+      "usage": {}
+    }
+  ]
+}

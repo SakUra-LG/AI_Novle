@@ -1,0 +1,224 @@
+{
+  "macro_group_id": "MG022",
+  "event_clusters": [
+    {
+      "cluster_id": "EC109",
+      "chapter_span": [217, 218],
+      "source_event_direction": "前世声压可视化系统因光学透镜误判导致演出中断，引发混乱。",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "回声谷·光路盲审与湿度铁证",
+      "timeline_years": "1987—1988",
+      "main_opponent": "奥瑞恩集团技术总监雷蒙·克劳斯",
+      "opposition_type": "technical",
+      "event_type": "performance",
+      "solution_type": "performance_proof",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["CS_1987_OPTICAL_HUMIDITY", "CS_LIVIA_TRI_PARTY"],
+      "foreshadow_ids": ["FS03", "FS04"],
+      "main_characters": ["麦珂", "瑟琳娜", "雷蒙·克劳斯", "莉薇娅"],
+      "fictional_obstacle": "1987年星港市‘回声谷’巡演现场湿度异常升高，触发声压可视化系统的光学透镜误判阈值，奥瑞恩试图以此为由切断演出并推卸责任，声称设备故障导致艺人健康风险。",
+      "prev_life_tragedy": "前世因未预见特定湿度下的透镜误判，导致穹顶投影失焦、观众恐慌踩踏，麦珂在混乱中因急救延误险些丧命。",
+      "info_gap_from_prev_life": "掌握1987年某场暴雨导致穹顶投影失焦的具体时刻及声压可视化系统在特定湿度下的误判阈值数据。",
+      "why_previous_life_failed": "前世团队过度依赖厂商提供的默认参数，未在极端天气下对光学透镜进行独立物理校准，且缺乏对抗‘设备故障’借口的法定免责凭证。",
+      "preemptive_avoidance": "麦珂提前指令瑟琳娜将七套备用光路机械切换预案从‘测试状态’转为‘实战待机’，并将关键光学透镜单独封装，附由第三方公证处出具的机械校准证书，作为对抗借口的铁证。",
+      "bait_and_evidence": "奥瑞恩故意在后台制造‘湿度超标’的假象，诱导麦珂团队使用未校准设备；瑟琳娜当场展示封存完好的透镜及附带日期的校准证书，证明系统运行正常，故障系人为干扰或奥瑞恩操作失误。",
+      "comic_villain_behavior": "雷蒙·克劳斯在众目睽睽下试图抢夺透镜盒谎称是‘受潮损坏’，结果发现透镜干燥如新且密封完好，他慌乱中打翻自己的记录本，露出伪造的‘湿度超标’报告，被莉薇娅当场喝止。",
+      "villain_loss": "奥瑞恩无法再利用技术故障借口掩盖人为操控或推卸责任，其技术权威彻底破产，被迫承认无法控制现场环境变量。",
+      "protagonist_gain": "瑟琳娜的名字首次出现在官方安全协议上，成为公开的技术合伙人，掌握七套备用光路的控制权；麦珂确立全球巡演新标准，获得法律层面的医疗决策权。",
+      "relationship_change": "麦珂与团队形成利益共同体，瑟琳娜摆脱幕后身份；观众与艺人建立基于安全的新型契约关系，不再受奥瑞恩单方面解释权的束缚。",
+      "continuity_writes": [
+        "承接EC108‘三方签字急救启动令’，本次事件进一步剥离奥瑞恩对演出中断的解释权，为后续财务做空手段埋下伏笔。",
+        "呼应FS04铺垫：七套备用光路预案验证成功，为1992年‘共呼吸时段’声学锚定效应埋下伏笔。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_TECHNICAL_CONTROL_01",
+          "state_key": "optical_lens_calibration_status",
+          "from": "vendor_default_unverified",
+          "to": "independent_certified_legal_evidence",
+          "irreversible": true,
+          "evidence": "ART_217_OPTICAL_CERTIFICATE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "character",
+          "entity_id": "CHAR_SERENA_01",
+          "state_key": "public_technical_partner_status",
+          "from": "behind_scenes_engineer",
+          "to": "official_safety_protocol_signatory",
+          "irreversible": true,
+          "evidence": "ART_218_SAFETY_PROTOCOL_ADDENDUM",
+          "effect_type": "relationship_change"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_PERFORMANCE_RIGHTS_01",
+          "state_key": "interruption_authority",
+          "from": "corporate_discretion",
+          "to": "legal_prohibition",
+          "irreversible": true,
+          "evidence": "ART_218_AUDIENCE_CONTRACT",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HA_1987_XINGANG_RAIN", "HA_1988_HEALTH_MEMO_STANDARD"],
+      "cluster_outcome": "麦珂凭借前世预知，在湿度异常触发预警时出示光学透镜校准证书，驳回奥瑞恩的技术指控，确保演出零中断；瑟琳娜名字首次进入官方安全协议，成为公开技术合伙人；奥瑞恩永久丧失以设备故障为由叫停演出的权利。",
+      "next_event_hook": "‘今日健康备忘录’手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款，迫使奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 217,
+          "timeline_start": "1987年11月14日 14:00",
+          "timeline_end": "1987年11月14日 17:30",
+          "scene": "星港回声谷剧场后台及彩排区",
+          "chapter_goal": "验证备用光路预案，完成光学透镜的物理封存与公证，确立技术防线。",
+          "chapter_title": "封箱的透镜与沉默的湿度计",
+          "participants": ["麦珂", "瑟琳娜", "雷蒙·克劳斯", "公证员"],
+          "opening_conflict": "奥瑞恩技术部暗示当晚湿度可能超标，要求更换未经深度测试的备用透镜组，麦珂拒绝并坚持使用已封存的原版透镜。",
+          "info_gap_use": "麦珂利用重生记忆，精准指出1987年11月14日傍晚湿度将突破透镜误判阈值的临界点，提前四小时下达封存指令。",
+          "opponent_reaction": "雷蒙·克劳斯表面配合，暗中安排人员试图在封存前调换透镜，却被瑟琳娜的实时监控录像拍下。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台技术控制室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "窗外乌云压境，湿度计读数开始飙升"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_217_OPTICAL_CERTIFICATE",
+              "timeline_scope": "current",
+              "display_name": "光学透镜机械校准与封存公证书",
+              "kind": "critical_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂命令瑟琳娜取出七套备用光路机械切换预案，确认全部处于‘实战待机’状态而非‘测试状态’。",
+            "公证员在场见证下，将关键光学透镜装入特制防潮密封盒，贴上唯一编号封条。",
+            "瑟琳娜当众宣读密封盒内的透镜参数，并与第三方校准证书核对，确认无误。",
+            "雷蒙·克劳斯试图以‘临时调整’为由介入，被麦珂以‘违反安全协议’为由制止。",
+            "全员签署《技术安全承诺书》，明确若因擅自更换设备导致事故，奥瑞恩承担全责。"
+          ],
+          "visible_payoff": "光学透镜被封存完毕，所有技术参数经公证，奥瑞恩无法再质疑设备状态。",
+          "ending": "彩排结束，全场灯光正常切换，无一人察觉潜在的湿度危机，麦珂手持封条复印件，眼神坚定。",
+          "must_include": ["公证员签字", "密封盒编号", "瑟琳娜宣读参数"],
+          "must_not_include": ["正式演出", "观众入场", "突发故障"],
+          "detailed_synopsis": "1987年11月14日下午，星港回声谷剧场后台气氛凝重。麦珂依据前世记忆，深知傍晚暴雨将至，湿度将瞬间击穿声压可视化系统的透镜阈值。她命令瑟琳娜立即将七套备用光路预案从‘测试模式’切换至‘实战待机’，并亲自监督将核心光学透镜装入特制防潮密封盒。公证员到场，见证封条贴上唯一编号。雷蒙·克劳斯试图以‘优化性能’为由要求更换透镜，被麦珂当场驳斥，并调出瑟琳娜的监控录像，显示克劳斯曾试图接触密封盒。最终，透镜封存完成，所有技术参数经第三方校准，麦珂手持公证书，宣布彩排进入最后阶段。现场灯光在模拟高湿环境下依然稳定，七套光路无缝切换，零中断。"
+        },
+        {
+          "chapter_id": 218,
+          "timeline_start": "1987年11月14日 19:30",
+          "timeline_end": "1987年11月14日 22:00",
+          "scene": "星港回声谷剧场主舞台及观众席",
+          "chapter_goal": "现场湿度异常触发误判预警，麦珂出示校准证书驳回指控，完成技术清算。",
+          "chapter_title": "湿度风暴中的铁证与签名",
+          "participants": ["麦珂", "瑟琳娜", "雷蒙·克劳斯", "莉薇娅", "观众代表"],
+          "opening_conflict": "演出进行中，穹顶投影突然模糊，奥瑞恩技术部紧急呼叫暂停，声称透镜受潮失效，要求切断电源。",
+          "info_gap_use": "麦珂早已预料此景，提前将校准证书置于舞台中央显眼位置，并指令瑟琳娜启动备用光路。",
+          "opponent_reaction": "雷蒙·克劳斯惊慌失措，试图抢夺透镜盒谎称‘受潮损坏’，却因密封完好而穿帮，打翻记录本暴露伪造报告。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "投影失焦，观众骚动，克劳斯冲上台"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_217_OPTICAL_CERTIFICATE",
+              "timeline_scope": "current",
+              "purpose": "作为法定免责凭证，驳斥奥瑞恩的技术指控"
+            }
+          ],
+          "action_sequence": [
+            "演出进行至第二幕，穹顶投影突然模糊，奥瑞恩技术部紧急呼叫暂停，声称透镜受潮失效。",
+            "麦珂未慌，径直走向舞台中央，高举ART_217_OPTICAL_CERTIFICATE，朗声宣读证书内容。",
+            "瑟琳娜同步启动备用光路，七套系统自动切换，画面瞬间清晰，证明原透镜工作正常。",
+            "雷蒙·克劳斯冲上台，试图抢夺透镜盒谎称‘受潮损坏’，却因密封完好而穿帮，打翻记录本暴露伪造报告。",
+            "莉薇娅依令启动‘三方签字急救启动令’，强制维持演出，奥瑞恩无权干预。"
+          ],
+          "visible_payoff": "光学透镜校准证书成为法定免责凭证，奥瑞恩技术指控被彻底驳回，瑟琳娜名字写入官方安全协议。",
+          "ending": "演出圆满结束，麦珂在掌声中接过瑟琳娜递来的新协议副本，上面赫然写着她的名字：瑟琳娜，技术合伙人。",
+          "must_include": ["证书宣读", "光路切换", "克劳斯穿帮", "莉薇娅下令"],
+          "must_not_include": ["麦珂受伤", "观众受伤", "奥瑞恩收购"],
+          "detailed_synopsis": "1987年11月14日晚，星港回声谷剧场内，演出正酣。突然，穹顶投影模糊，奥瑞恩技术部惊呼‘透镜受潮失效’，要求立即断电。观众席一片哗然。麦珂却镇定自若，走向舞台中央，高举ART_217_OPTICAL_CERTIFICATE，朗声宣读证书内容，证明透镜在封存前已通过严格校准，且密封完好。与此同时，瑟琳娜指令七套备用光路自动切换，画面瞬间恢复清晰，证明原透镜工作正常。雷蒙·克劳斯惊慌失措，冲上台试图抢夺透镜盒，谎称‘受潮损坏’，却因密封完好而穿帮，慌乱中打翻记录本，露出伪造的‘湿度超标’报告。莉薇娅依令启动‘三方签字急救启动令’，强制维持演出，奥瑞恩无权干预。演出圆满结束，麦珂在掌声中接过瑟琳娜递来的新协议副本，上面赫然写着她的名字：瑟琳娜，技术合伙人。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {
+        "character_id": "CHAR_MAKE_01",
+        "state_key": "medical_decision_authority",
+        "status": "fully_established",
+        "evidence": "ART_218_HEALTH_MEMO_SIGNATURE"
+      },
+      {
+        "character_id": "CHAR_SERENA_01",
+        "state_key": "public_technical_partner_status",
+        "status": "officially_recognized",
+        "evidence": "ART_218_SAFETY_PROTOCOL_ADDENDUM"
+      },
+      {
+        "character_id": "CHAR_LIVIA_01",
+        "state_key": "medical_authority_role",
+        "status": "independent_executor",
+        "evidence": "ART_215_LIVIA_SIGNING"
+      }
+    ],
+    "relationship_states": [
+      {
+        "relationship_type": "麦珂与瑟琳娜",
+        "new_state": "公开技术合伙人",
+        "previous_state": "幕后工程师与艺人",
+        "impact": "团队信任度提升，瑟琳娜获得法律地位"
+      },
+      {
+        "relationship_type": "麦珂与奥瑞恩",
+        "new_state": "技术对抗关系",
+        "previous_state": "单方面控制",
+        "impact": "奥瑞恩失去技术解释权，被迫转向财务手段"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "right_id": "RIGHT_TECHNICAL_CONTROL_01",
+        "status": "independent_certified_legal_evidence",
+        "owner": "麦珂团队",
+        "description": "光学透镜校准证书成为法定免责凭证"
+      },
+      {
+        "asset_id": "ASSET_PERFORMANCE_RIGHTS_01",
+        "status": "legal_prohibition",
+        "owner": "麦珂团队",
+        "description": "奥瑞恩无法再利用技术故障借口叫停演出"
+      }
+    ],
+    "health_and_location": [
+      {
+        "health_status": "zero_accident",
+        "location": "星港回声谷剧场",
+        "description": "现场零事故，急救响应机制有效运行"
+      }
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性"
+    ],
+    "resolved_threads": [
+      "声压可视化系统因光学透镜误判导致演出中断的风险",
+      "奥瑞恩以设备故障为由推卸责任的企图"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

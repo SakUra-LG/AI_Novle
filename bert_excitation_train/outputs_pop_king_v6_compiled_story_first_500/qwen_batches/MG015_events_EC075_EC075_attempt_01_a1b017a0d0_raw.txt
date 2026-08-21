@@ -1,0 +1,215 @@
+{
+  "macro_group_id": "MG015",
+  "event_clusters": [
+    {
+      "cluster_id": "EC075",
+      "chapter_span": [149, 150],
+      "source_event_direction": "EC075_direction_v1",
+      "source_event_direction_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_macro_sha256": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2",
+      "name": "胶片帝国：物理证据的终极封锁",
+      "timeline_years": "1983-1984",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["EC074", "EC067"],
+      "foreshadow_ids": ["FORESHADOW_HEALTH_MODEL_01"],
+      "main_characters": ["麦珂", "维克多·兰斯", "苏菲亚·罗德里格斯", "莉薇娅·普莱斯"],
+      "fictional_obstacle": "维克多·兰斯试图通过收购‘银底’胶片冲印厂，利用其垄断地位销毁所有未数字化的原始底片，从而切断麦珂家族信托中关于1982年税务欺诈的物理证据链。",
+      "prev_life_tragedy": "前世，维克多·兰斯成功收购‘银底’厂，并借‘技术升级’之名销毁了关键底片，导致麦珂在2009年因缺乏原始物证而被彻底剥夺继承权，沦为傀儡。",
+      "info_gap_from_prev_life": "麦珂预知维克多·兰斯将在1983年10月启动对‘银底’厂的恶意收购，并计划利用该厂销毁证据以配合其‘健康趋势预测模型’的虚假数据生成。",
+      "why_previous_life_failed": "前世麦珂专注于法律条文和财务审计，忽视了物理介质（胶片）作为最终证据载体的重要性，未意识到对手会从物理层面切断证据链。",
+      "preemptive_avoidance": "麦珂在庆功宴上突然宣布麦珂家族信托将全资收购‘银底’胶片冲印厂，并立即派遣苏菲亚·罗德里格斯携带公证律师前往工厂，完成所有历史底片的封存与转移。",
+      "bait_and_evidence": "麦珂故意放出风声称‘银底’厂库存中有针对奥瑞恩集团的不利影像资料，诱使维克多·兰斯急于出手，却在对方行动前已完成法律上的资产隔离。",
+      "comic_villain_behavior": "维克多·兰斯在得知收购失败后，试图以‘商业间谍罪’威胁苏菲亚，却因自己曾私下贿赂厂长的录音被麦珂团队掌握，反而陷入被动，不得不尴尬地以‘战略调整’为由撤退。",
+      "villain_loss": "维克多·兰斯永久失去通过物理销毁证据来抹黑麦珂家族的机会，其‘健康趋势预测模型’因缺乏底层数据支撑而成为空中楼阁，被迫转入更隐蔽且低效的对抗阶段。",
+      "protagonist_gain": "麦珂团队掌握了未来对抗的关键物理证据库（所有历史底片），确立了不可逆转的家族资产安全壁垒，并借此巩固了《家庭治理宪章》的权威性。",
+      "relationship_change": "苏菲亚·罗德里格斯因成功执行关键任务，与麦珂的信任关系达到新高度；莉薇娅·普莱斯见证麦珂对物理证据的重视，进一步确认其作为医疗决策权守护者的角色。",
+      "continuity_writes": [
+        "EC075_ACQUISITION_COMPLETE",
+        "EC075_EVIDENCE_VAULT_SEALED"
+      ],
+      "state_transitions": [
+        {
+          "domain": "assets",
+          "entity_id": "ASSET_FILM_PLANT_001",
+          "state_key": "ownership",
+          "from": "independent",
+          "to": "secured_by_protagonist",
+          "irreversible": true,
+          "evidence": "ART_149_FILM_PLANT_DEED",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_EVIDENCE_CHAIN_001",
+          "state_key": "integrity",
+          "from": "vulnerable",
+          "to": "immutable",
+          "irreversible": true,
+          "evidence": "ART_150_EVIDENCE_VAULT_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_VICTOR_002",
+          "state_key": "strategic_position",
+          "from": "aggressive",
+          "to": "defensive",
+          "irreversible": false,
+          "evidence": "ART_150_VICTOR_RETREAT_ORDER",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1983_FILM_INDUSTRY_SHIFT"],
+      "cluster_outcome": "麦珂成功收购‘银底’胶片冲印厂，将所有历史底片封存于地下金库，彻底锁死维克多·兰斯通过物理手段销毁证据的路径，确立家族资产安全壁垒。",
+      "next_event_hook": "维克多·兰斯意识到常规手段失效，将启动更深层的‘健康趋势预测模型’测试，并试图通过心理操控和内部渗透来瓦解麦珂团队。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 149,
+          "timeline_start": "1983-10-24",
+          "timeline_end": "1983-10-24",
+          "scene": "麦珂家族信托庆功宴大厅",
+          "chapter_goal": "宣布收购‘银底’厂，完成物理证据的初步封锁。",
+          "chapter_title": "底片背后的帝国",
+          "participants": ["麦珂", "维克多·兰斯", "苏菲亚·罗德里格斯", "莉薇娅·普莱斯", "信托律师团"],
+          "opening_conflict": "维克多·兰斯在宴会上假意祝贺，实则暗中联络‘银底’厂厂长，准备启动恶意收购程序。",
+          "info_gap_use": "麦珂利用前世记忆，提前安排苏菲亚·罗德里格斯携带收购合同和公证律师在场，并在维克多行动前一刻宣布收购完成。",
+          "opponent_reaction": "维克多·兰斯震惊于麦珂的预判，试图以‘商业机密泄露’为由质疑收购合法性，但被麦珂出示的合法资金证明和律师见证驳斥。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂家族信托庆功宴大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "水晶吊灯下的香槟塔折射出冷冽的光芒，麦珂举起酒杯，目光扫过人群中神色各异的宾客。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_149_FILM_PLANT_DEED",
+              "timeline_scope": "current",
+              "display_name": "银底胶片冲印厂所有权转让书",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_148_COURT_ORDER",
+              "timeline_scope": "current",
+              "purpose": "作为收购资金合法性的辅助证明"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在宴会上突然宣布收购‘银底’厂，全场哗然。",
+            "维克多·兰斯试图以‘商业间谍罪’威胁苏菲亚，被麦珂当场揭穿其贿赂厂长的录音证据。",
+            "苏菲亚·罗德里格斯出示已签署的转让书和公证律师见证，完成法律上的资产隔离。",
+            "维克多·兰斯被迫承认失败，尴尬地以‘战略调整’为由撤退。"
+          ],
+          "visible_payoff": "维克多·兰斯失去通过物理销毁证据来抹黑麦珂家族的机会，其‘健康趋势预测模型’因缺乏底层数据支撑而成为空中楼阁。",
+          "ending": "麦珂团队将‘银底’厂的历史底片封存于地下金库，维克多·兰斯在远处注视着金库大门关闭，眼中闪过一丝阴鸷。",
+          "must_include": [
+            "收购宣布的戏剧性时刻",
+            "维克多·兰斯的尴尬撤退",
+            "苏菲亚·罗德里格斯的专业表现"
+          ],
+          "must_not_include": [
+            "任何现代科技设备",
+            "直接的心理描写"
+          ],
+          "detailed_synopsis": "1983年10月24日，麦珂家族信托庆功宴上，麦珂突然宣布全资收购‘银底’胶片冲印厂。维克多·兰斯正暗中联络厂长准备恶意收购，闻言大惊。麦珂随即出示苏菲亚·罗德里格斯携带的已签署转让书和公证律师见证，揭露维克多贿赂厂长的录音证据。维克多试图以‘商业间谍罪’威胁苏菲亚，被麦珂驳斥。最终，维克多被迫承认失败，尴尬撤退。麦珂团队将历史底片封存于地下金库，彻底锁死对手销毁证据的路径。"
+        },
+        {
+          "chapter_id": 150,
+          "timeline_start": "1983-10-25",
+          "timeline_end": "1983-10-26",
+          "scene": "‘银底’胶片冲印厂地下金库",
+          "chapter_goal": "完成物理证据的最终封存，确立不可逆转的安全壁垒。",
+          "chapter_title": "沉默的底片",
+          "participants": ["麦珂", "苏菲亚·罗德里格斯", "莉薇娅·普莱斯", "金库管理员"],
+          "opening_conflict": "维克多·兰斯试图通过法律手段质疑‘银底’厂收购的合法性，并派遣律师团向信托施压。",
+          "info_gap_use": "麦珂利用前世记忆，提前安排莉薇娅·普莱斯作为医疗决策权守护者，见证底片封存过程，确保其独立性和权威性。",
+          "opponent_reaction": "维克多·兰斯的律师团在法庭上提出质疑，但被麦珂出示的完整法律文件和公证记录驳斥，最终被迫撤诉。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "‘银底’胶片冲印厂地下金库",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "厚重的钢门缓缓关闭，将外界的光线和声音彻底隔绝，只留下底片盒摩擦的细微声响。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_150_EVIDENCE_VAULT_LOG",
+              "timeline_scope": "current",
+              "display_name": "证据金库封存记录",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_149_FILM_PLANT_DEED",
+              "timeline_scope": "current",
+              "purpose": "作为金库封存的合法性依据"
+            }
+          ],
+          "action_sequence": [
+            "麦珂、苏菲亚和莉薇娅·普莱斯进入‘银底’厂地下金库，开始封存历史底片。",
+            "维克多·兰斯的律师团向信托施压，质疑收购合法性。",
+            "麦珂出示完整法律文件和公证记录，驳斥律师团质疑。",
+            "莉薇娅·普莱斯作为见证人，签署封存记录，确立底片的独立性和权威性。",
+            "维克多·兰斯被迫撤诉，转入更隐蔽的对抗阶段。"
+          ],
+          "visible_payoff": "麦珂团队掌握所有历史底片，确立不可逆转的家族资产安全壁垒，维克多·兰斯彻底失去通过物理手段销毁证据的机会。",
+          "ending": "金库大门彻底关闭，麦珂看着手中的封存记录，深知这一举动已锁死前世仇敌的毁灭性打击路径，确保家族在2009年仍握有反击筹码。",
+          "must_include": [
+            "底片封存的仪式感",
+            "莉薇娅·普莱斯的见证角色",
+            "维克多·兰斯的无奈撤退"
+          ],
+          "must_not_include": [
+            "任何现代科技设备",
+            "直接的心理描写"
+          ],
+          "detailed_synopsis": "1983年10月25日，麦珂、苏菲亚和莉薇娅·普莱斯进入‘银底’厂地下金库，封存历史底片。维克多·兰斯的律师团向信托施压，质疑收购合法性。麦珂出示完整法律文件和公证记录，驳斥质疑。莉薇娅·普莱斯作为见证人，签署封存记录，确立底片的独立性和权威性。维克多·兰斯被迫撤诉，转入更隐蔽的对抗阶段。金库大门关闭，麦珂深知已锁死前世仇敌的毁灭性打击路径。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1983",
+    "character_states": [
+      "麦珂：掌控物理证据链，信心增强。",
+      "维克多·兰斯：战略受挫，转入隐蔽对抗。",
+      "苏菲亚·罗德里格斯：信任度提升，成为核心执行者。",
+      "莉薇娅·普莱斯：确立医疗决策权守护者角色。"
+    ],
+    "relationship_states": [
+      "麦珂与苏菲亚：信任加深。",
+      "麦珂与莉薇娅：合作稳固。",
+      "麦珂与维克多：对抗升级，但麦珂占据主动。"
+    ],
+    "rights_and_assets": [
+      "‘银底’胶片冲印厂所有权：已转移至麦珂家族信托。",
+      "历史底片：已封存于地下金库，证据链完整。",
+      "《家庭治理宪章》：正式生效，医疗决策权独立。"
+    ],
+    "health_and_location": [
+      "麦珂：健康稳定，位于麦珂家族信托总部。",
+      "维克多·兰斯：健康稳定，位于奥瑞恩集团总部。"
+    ],
+    "open_threads": [
+      "维克多·兰斯的‘健康趋势预测模型’测试。",
+      "奥瑞恩集团的内部渗透企图。"
+    ],
+    "resolved_threads": [
+      "‘银底’厂收购战。",
+      "物理证据链的封锁。"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多·兰斯将启动更深层的‘健康趋势预测模型’测试，并试图通过心理操控和内部渗透来瓦解麦珂团队。"
+  }
+}

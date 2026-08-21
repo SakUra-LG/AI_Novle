@@ -1,0 +1,188 @@
+{
+  "macro_group_id": "MG042",
+  "event_clusters": [
+    {
+      "cluster_id": "EC210",
+      "chapter_span": [419, 420],
+      "source_event_direction": "{\"cluster_id\": \"EC210\", \"chapter_span\": [419, 420], ...}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z6y5x4w3v2u1t0s9r8q7p6o5n4m3l2k1j0i9h8g7f6e5d4c3b2a1",
+      "name": "清醒即审判：病床边的副歌与死亡预告",
+      "timeline_years": "2005",
+      "main_opponent": "维克多·斯特林 (Victor Sterling)",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "performance_proof",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["EC209", "EC208"],
+      "foreshadow_ids": ["ART_409_DEATH_BAIT"],
+      "main_characters": ["麦珂", "玛莎", "黛安娜", "昆廷", "苏菲亚", "三百名医院代表"],
+      "fictional_obstacle": "奥瑞恩集团试图将麦珂的‘清醒’定义为‘病情反复的假象’，并准备在直播中通过切断信号或制造医疗突发状况来终结其话语权。",
+      "prev_life_tragedy": "前世在胜诉后，麦珂因未预料到对手转向心理恐吓，收到无署名挂号信内附2009年心脏内科预约单，被暗示即将遭遇医疗事故而陷入恐慌，导致防线崩溃。",
+      "info_gap_from_prev_life": "麦珂知晓信件内容及其背后的心理战术，且提前三年布局了‘健康数据透明化’机制，将私人生理指标转化为公共证词。",
+      "why_previous_life_failed": "前世过度依赖法律判决的终局性，忽视了对手在司法失败后的非理性报复手段（死亡预告），且未将健康数据公开化以剥夺对手操控舆论的空间。",
+      "preemptive_avoidance": "麦珂在《病床边的副歌》巡演谢幕时，主动邀请三百名医院代表登台朗读晨间体征日志签名页，将私人健康数据转化为全球直播的视觉证词，彻底粉碎对手关于‘失能’的叙事基础。",
+      "bait_and_evidence": "证据为三百份由不同医院盖章确认的‘清醒声明’原件；诱饵为麦珂故意在直播尾声展示一份空白的挂号信信封，引诱对手按捺不住发送死亡预告。",
+      "comic_villain_behavior": "维克多·斯特林在后台监控室看到直播画面后，气急败坏地对着电话咆哮，声称要‘让那个疯女人立刻闭嘴’，却不知自己已被全程录音并同步广播给所有在场记者，其歇斯底里的样子成为媒体头条的笑料。",
+      "villain_loss": "司法途径彻底失败，敌人被迫承认无法在法律层面击败麦珂，战略重心被迫转向资本与死亡威胁，但已失去公众同情分。",
+      "protagonist_gain": "曲库正式转入‘麦珂创作信托’，受益人明确；健康数据实现完全透明化，敌人战略转向暴露无遗；获得三百名医疗界人士的公开背书。",
+      "relationship_change": "公众从‘怜悯病人’转变为‘尊重清醒者’；家族成员对麦珂的掌控力产生绝对信任；医院代表群体成为新的盟友网络。",
+      "continuity_writes": [
+        "2005年麦珂巡演谢幕现场，灯光聚焦于舞台中央，玛莎、黛安娜与昆廷站在侧翼，身后是三百名身着白大褂的医院代表。",
+        "苏菲亚手持扩音器，宣读第一份来自圣玛丽医院的晨间体征日志，全场静默，随后三百人齐声朗读：‘我确认此人今日清醒’。",
+        "维克多·斯特林在奥瑞恩集团总部监控室，看着屏幕上整齐划一的宣誓场面，脸色铁青，手中的咖啡杯被捏得变形。",
+        "直播结束当晚，麦珂在后台整理衣物，助理递上一封无署名挂号信，她认出这是前世的‘死亡预告’，但这次她平静地将其放入特制保险箱。",
+        "麦珂打开信封，抽出那张2009年3月18日的心脏内科门诊预约单复印件，背面写着‘他们还记得你怕针’，她嘴角微扬，将信纸翻转，背面是空白。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "public_perception",
+          "entity_id": "MC_CLARITY_PERCEPTION",
+          "state_key": "clarity_as_judgment_narrative",
+          "from": "medical_recovery_or_tragedy_narrative",
+          "to": "clarity_as_judgment_narrative",
+          "irreversible": true,
+          "evidence": "THREE_HUNDRED_DOCTORS_VERBAL_TESTIMONY",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORION_LITIGATION_TACTICS",
+          "state_key": "legal_attack_capability",
+          "from": "active_control",
+          "to": "completely_blind",
+          "irreversible": false,
+          "evidence": "VICTOR_SCREAMING_IN_MONITOR_ROOM",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_2005_MUSIC_FESTIVAL"],
+      "cluster_outcome": "麦珂通过公开仪式将私人健康转化为全球直播的视觉证词，彻底粉碎奥瑞恩集团的‘精神失能’指控。司法途径失败后，对手转向死亡威胁，但麦珂已提前识破并设下陷阱。曲库成功转入信托，健康数据透明化，敌人战略转向暴露无遗。",
+      "next_event_hook": "裁决书送达当日收到的神秘死亡预告信件，成为P10诱使敌人启动‘永恒星光’的终极时间诱饵，迫使麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 419,
+          "timeline_start": "2005年夏夜",
+          "timeline_end": "2005年夏夜",
+          "scene": "《病床边的副歌》巡演谢幕现场",
+          "chapter_goal": "完成‘清醒即审判’的终极公开仪式，确立健康数据的公共属性。",
+          "chapter_title": "三百人的誓言",
+          "participants": ["麦珂", "玛莎", "黛安娜", "昆廷", "苏菲亚", "三百名医院代表", "全球观众"],
+          "opening_conflict": "奥瑞恩集团试图在直播中制造技术故障，切断信号或播放虚假医疗报告，以破坏麦珂的‘清醒’形象。",
+          "info_gap_use": "麦珂利用重生记忆，提前安排了三名技术专家在转播车待命，确保信号绝对安全，并准备了备用胶片录像带以防万一。",
+          "opponent_reaction": "维克多·斯特林在监控室暴怒，命令手下强行干扰信号，却发现自己被反追踪，所有指令被实时公开。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "纽约中央公园露天舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光骤暗，聚光灯打在麦珂身上"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_419_THREE_HUNDRED_CERTS",
+              "timeline_scope": "current",
+              "display_name": "《三百名医院代表签署的“清醒”联合声明原件》",
+              "kind": "public_testimony"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_407_POSTCARD_ARCHIVE",
+              "timeline_scope": "current",
+              "purpose": "对比展示，证明公众支持已从明信片升级为医疗界权威背书"
+            }
+          ],
+          "action_sequence": [
+            "麦珂走上舞台，面对数万名观众和全球直播镜头，没有发表演讲，而是向身后挥手。",
+            "三百名身穿白大褂的医院代表依次上前，每人手持一份晨间体征日志签名页。",
+            "苏菲亚带头朗读：“我确认此人今日清醒。”",
+            "三百人齐声重复，声音如浪潮般涌向夜空，形成极具穿透力的视觉与听觉冲击。",
+            "维克多·斯特林在监控室试图切断信号，却被反制，他的咆哮被同步广播。"
+          ],
+          "visible_payoff": "全球观众目睹了三百名医生共同确认麦珂清醒的瞬间，任何关于‘失能’的指控瞬间崩塌。",
+          "ending": "直播在掌声与欢呼声中结束，麦珂微笑着向观众致意，转身进入后台。",
+          "must_include": ["三百人齐声朗读”，“维克多·斯特林的咆哮被广播”，“麦珂的微笑”"],
+          "must_not_include": ["麦珂表现出恐惧”，“奥瑞恩集团成功切断信号”，“任何关于麦珂病情的负面讨论”],
+          "detailed_synopsis": "夜幕下的中央公园，数万观众屏息凝神。麦珂身着素色长裙，站在舞台中央，身后是三百名来自全美各地的医院代表。她没有开口，只是轻轻点头。苏菲亚举起扩音器，声音清亮：“我确认此人今日清醒。”话音落下，三百人同时发声，声音汇聚成一股不可阻挡的力量。镜头扫过每一张严肃的面孔，每一双手都紧紧握着那份签名页。与此同时，奥瑞恩集团总部的监控室里，维克多·斯特林看着屏幕上整齐划一的场景，脸色铁青。他下令切断信号，却发现自己的指令被实时公开，他的咆哮声通过麦克风传遍全场，引来一片哄笑与鄙夷。直播结束时，麦珂微笑着向观众致意，转身步入后台，身后是如潮水般的掌声。"
+        },
+        {
+          "chapter_id": 420,
+          "timeline_start": "2005年深夜",
+          "timeline_end": "2005年深夜",
+          "scene": "麦珂临时住所后台休息室",
+          "chapter_goal": "接收死亡预告信件，识破对手战略转向，完成心理反击。",
+          "chapter_title": "针尖上的预言",
+          "participants": ["麦珂", "苏菲亚", "玛莎", "黛安娜", "昆廷"],
+          "opening_conflict": "一封无署名挂号信出现在麦珂的休息桌上，内容直指其前世最恐惧的死亡预告。",
+          "info_gap_use": "麦珂凭借重生记忆，一眼识别出信件的套路，并利用这一信息差，反向布局，将计就计。",
+          "opponent_reaction": "维克多·斯特林在幕后等待麦珂崩溃的反应，却不知自己已被完全看穿。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂临时住所后台休息室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "门被轻轻推开，苏菲亚走进来"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_409_DEATH_BAIT",
+              "timeline_scope": "previous_life",
+              "purpose": "作为前世受害的关键证据，今生被麦珂主动利用，成为诱敌深入的诱饵"
+            }
+          ],
+          "action_sequence": [
+            "麦珂回到休息室，发现桌上放着一封无署名挂号信。",
+            "她拆开信封，取出那张2009年3月18日的心脏内科门诊预约单复印件。",
+            "背面写着：“他们还记得你怕针”。",
+            "麦珂没有惊慌，反而露出一丝冷笑，将信纸翻转，背面是空白。",
+            "她将信纸放入特制保险箱，对苏菲亚说：“他们终于露出了尾巴。”"
+          ],
+          "visible_payoff": "麦珂冷静地处理死亡预告，显示出她对对手心理战术的完全掌控，敌人战略转向暴露无遗。",
+          "ending": "麦珂将信纸锁入保险箱，窗外夜色深沉，她知道真正的风暴即将来临。",
+          "must_include": ["无署名挂号信”，"2009年3月18日心脏内科门诊预约单复印件”，“他们还记得你怕针”，“麦珂的冷笑”],
+          "must_not_include": ["麦珂表现出恐惧”，“信件内容被泄露给媒体”，“麦珂立即报警”],
+          "detailed_synopsis": "深夜的后台休息室，灯光昏黄。麦珂刚结束一场高强度的演出，疲惫地坐在沙发上。苏菲亚推门进来，手中拿着一封信。“给你的。”麦珂接过，拆开信封，一张泛黄的纸张滑落出来——那是2009年3月18日的心脏内科门诊预约单复印件。背面用熟悉的笔迹写着：“他们还记得你怕针。”如果是前世，这封信足以让她崩溃。但此刻，麦珂只是轻轻一笑，将信纸翻转，背面竟是空白。她将信纸放入特制的保险箱，动作从容不迫。“他们终于露出了尾巴，”她对苏菲亚说，“司法输了，他们开始玩心理战了。”苏菲亚点头，眼中满是敬佩。麦珂走到窗前，望着窗外的夜色，心中清楚，真正的风暴才刚刚开始。她不再害怕，因为她已经准备好了。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2005",
+    "character_states": [
+      {"character": "麦珂", "state": "完全清醒，掌握全局，健康数据透明化"},
+      {"character": "维克多·斯特林", "state": "司法失败，战略转向，心理受挫"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂-公众", "state": "从怜悯转为尊重"},
+      {"pair": "麦珂-医院代表", "state": "建立深厚盟友关系"}
+    ],
+    "rights_and_assets": [
+      {"asset": "全部曲库", "status": "已转入‘麦珂创作信托’"},
+      {"asset": "健康数据", "status": "完全透明化，公开可查"}
+    ],
+    "health_and_location": [
+      {"entity": "麦珂", "status": "健康，每日体测公示"},
+      {"entity": "地点", "status": "纽约中央公园及临时住所"}
+    ],
+    "open_threads": [
+      "‘永恒星光’计划的启动细节",
+      "维克多·斯特林内部录音的后续影响",
+      "死亡预告信件背后的真正意图"
+    ],
+    "resolved_threads": [
+      "‘精神行为能力存疑’的法律指控",
+      "财经抹黑策略",
+      "程序正义漏洞"
+    ],
+    "introduced_characters": [
+      "三百名医院代表（群体角色）"
+    ],
+    "next_pressure": "随着司法途径的彻底失败，奥瑞恩集团将启动‘永恒星光’计划，麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题，同时应对资本市场的全面围剿。"
+  }
+}

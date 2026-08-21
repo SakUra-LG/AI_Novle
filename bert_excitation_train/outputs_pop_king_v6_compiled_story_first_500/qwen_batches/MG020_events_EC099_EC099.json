@@ -1,0 +1,277 @@
+{
+  "macro_group_id": "MG020",
+  "event_clusters": [
+    {
+      "cluster_id": "EC099",
+      "chapter_span": [
+        197,
+        198
+      ],
+      "source_event_direction": "前世具体受害：前世受污染的健康模型自动触发高风险评级，保险追加巨额保证金，巡演现金被奥瑞恩趁机接管。；本事件独有的前世信息差：模型每次重算会在穿孔卡第七码留下校验缺口，关联服务费会在演出前三十六小时从奥瑞恩托管账户付款。；今生提前动作：麦珂让独立精算师封存原始穿孔卡，并通知银行只在第七码校验一致时释放模型服务费。；第197章可见小赢：精算师找到两套互斥的第七码缺口，证明高风险评级不是自然更新。；第198章新交锋：奥瑞恩承包组以商业机密拒绝交卡，银行审计员却用其申请付款时提交的卡号副本完成反向比对。；阻力方永久现实损失：受污染健康模型被保险方永久停用，奥瑞恩承包组失去服务合同，争议托管款停止支付。；主角现实收益：麦珂保住巡演现金和保险评级，并获得独立精算师核验健康模型的合同权。；不可逆结算键：第七码缺口使污染模型与托管付款失效；接回死亡控制主线：前世健康数据被转化为财务绞索并最终逼向药物依赖，今生麦珂切断数据到资金控制的通路。",
+      "source_event_direction_sha256": "ba6850f8233888ea964ddd5e14ed5891858552d8af20e0e01762f9b6d15c878c",
+      "source_macro_sha256": "8045aa765d533808ac74b5a2f816beb466db434428ebd6c58b57a19ebd16e0c6",
+      "name": "穿孔卡校验码清算",
+      "timeline_years": "1986—1987",
+      "main_opponent": "诺兰·普莱斯与奥瑞恩医疗承包组",
+      "opposition_type": "technical",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS02"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "苏菲亚",
+        "独立精算师托马斯",
+        "银行审计员哈罗德",
+        "诺兰·普莱斯"
+      ],
+      "fictional_obstacle": "奥瑞恩承包组试图通过篡改健康模型参数，在演出前三十六小时触发保险高额保证金条款，从而切断巡演现金流。",
+      "prev_life_tragedy": "前世受污染的健康模型自动触发高风险评级，保险追加巨额保证金，巡演现金被奥瑞恩趁机接管，最终导致麦珂被迫依赖药物维持演出。",
+      "info_gap_from_prev_life": "模型每次重算会在穿孔卡第七码留下校验缺口，关联服务费会在演出前三十六小时从奥瑞恩托管账户付款。",
+      "why_previous_life_failed": "前世麦珂未察觉数据背后的财务逻辑，任由奥瑞恩单方面解释健康数据并控制资金流向。",
+      "preemptive_avoidance": "麦珂让独立精算师封存原始穿孔卡，并通知银行只在第七码校验一致时释放模型服务费。",
+      "bait_and_evidence": "麦珂故意投放带暗记的双份记录，诱导对方在付款申请中提交包含错误第七码的穿孔卡副本。",
+      "comic_villain_behavior": "诺兰为掩盖造假事实，在听证会上声称商业机密拒绝交出原始卡片，却因急于证明“合规”而主动提交了用于付款的副本，结果被审计员当场发现第七码不匹配。",
+      "villain_loss": "受污染健康模型被保险方永久停用，奥瑞恩承包组失去服务合同，争议托管款停止支付。",
+      "protagonist_gain": "麦珂保住巡演现金和保险评级，并获得独立精算师核验健康模型的合同权。",
+      "relationship_change": "麦珂不再只要求团队服从，而是接受团队在健康问题上否决自己；苏菲亚由执行者变为可承担冲突责任的共同决策人。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_009",
+          "state_key": "health_model_integrity__extension_EC099",
+          "from": "compromised",
+          "to": "independent_verified",
+          "irreversible": true,
+          "evidence": "BANK_AUDIT_LOG_EC099",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "FIN_AUREON_001",
+          "state_key": "service_contract_status__extension_EC099",
+          "from": "active",
+          "to": "terminated_for_fraud",
+          "irreversible": true,
+          "evidence": "INSURANCE_TERMINATION_NOTICE_EC099",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_TEAM_003",
+          "state_key": "decision_making_power__extension_EC099",
+          "from": "co_decision_maker",
+          "to": "full_partner_with_veto",
+          "irreversible": false,
+          "evidence": "INDEPENDENT_AUDITOR_CONTRACT_EC099",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_PUNCH_CARD_TECH_1986"
+      ],
+      "cluster_outcome": "通过第七码校验机制，麦珂团队成功揭露了奥瑞恩对健康数据的财务操纵，切断了数据污染到资金控制的通路，保全了巡演现金流并确立了独立审计权。",
+      "next_event_hook": "被封存的座次分级备忘录显示，奥瑞恩准备在1987年雾河城巡演以健康风险和粉丝安全为名划分观众等级；麦珂决定用随机座次和三方签字急救流程正面拆掉这套控制。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 197,
+          "timeline_start": "1986-12-19",
+          "timeline_end": "1986-12-19",
+          "scene": "独立精算事务所",
+          "chapter_goal": "利用前世记忆中的技术漏洞，锁定健康模型被篡改的证据。",
+          "chapter_title": "第七码的裂痕",
+          "participants": [
+            "麦珂",
+            "独立精算师托马斯",
+            "苏菲亚"
+          ],
+          "opening_conflict": "奥瑞恩方面突然发来紧急通知，要求立即更新健康模型参数以应对即将到来的巡演，实则意在触发高风险评级。",
+          "info_gap_use": "麦珂记得模型重算必留第七码缺口，提前指示精算师检查原始穿孔卡的校验位。",
+          "opponent_reaction": "诺兰并未直接介入本章，但其下属已按指令准备提交虚假数据。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "独立精算事务所",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂将两份不同暗记的记录本交给精算师，要求对比第七码。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_197_SEVEN_CODE_GAP",
+              "timeline_scope": "current",
+              "display_name": "互斥第七码分析报告",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂指示精算师托马斯调取原始穿孔卡，重点检查第七码校验位。",
+            "托马斯发现两套互斥的第七码缺口：一套对应自然更新，另一套对应人为篡改。",
+            "苏菲亚协助整理证据链，确认篡改时间点与奥瑞恩付款计划完全吻合。",
+            "麦珂下令暂停向奥瑞恩托管账户发送任何更新指令，等待银行审计介入。"
+          ],
+          "visible_payoff": "精算师找到两套互斥的第七码缺口，证明高风险评级不是自然更新。",
+          "ending": "证据确凿，但奥瑞恩方面尚未察觉，正等待付款窗口开启。",
+          "must_include": [
+            "第七码校验",
+            "穿孔卡",
+            "精算师报告"
+          ],
+          "must_not_include": [
+            "现代数字技术",
+            "网络通信"
+          ],
+          "detailed_synopsis": "1986年12月10日清晨，麦珂带着两份带有不同暗记的健康记录本来到独立精算师托马斯的办公室。他告诉托马斯，根据前世记忆，奥瑞恩的模型重算必然会在穿孔卡的第七码留下独特的校验缺口。托马斯起初半信半疑，但在仔细比对原始穿孔卡后，震惊地发现确实存在两套互斥的缺口：一套符合自然磨损规律，另一套则显示出明显的人为切割痕迹。苏菲亚在一旁协助整理时间线，确认这些篡改痕迹恰好出现在奥瑞恩计划触发保险保证金的前三天。麦珂当机立断，命令暂停所有向奥瑞恩托管账户的数据传输，并要求托马斯出具正式报告，指出模型已被污染。此时，诺兰在远处办公室内还在催促下属尽快提交数据以完成“合规”流程，完全不知道自己已经走进了麦珂设下的陷阱。随着报告出炉，一个巨大的财务绞索正在悄然收紧，只待奥瑞恩伸手入瓮。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_181_REPAIR_RECORD",
+              "timeline_scope": "previous_life",
+              "purpose": "作为前世数据被污染的参照物。"
+            }
+          ]
+        },
+        {
+          "chapter_id": 198,
+          "timeline_start": "1986-12-20",
+          "timeline_end": "1986-12-20",
+          "scene": "银行审计室",
+          "chapter_goal": "利用银行审计员的反向比对，彻底击碎奥瑞恩的财务防线。",
+          "chapter_title": "商业机密的破产",
+          "participants": [
+            "麦珂",
+            "银行审计员哈罗德",
+            "诺兰·普莱斯",
+            "奥瑞恩代表"
+          ],
+          "opening_conflict": "奥瑞恩承包组以“商业机密”为由拒绝交出原始穿孔卡，试图拖延付款审查。",
+          "info_gap_use": "麦珂知道银行审计员只需核对付款申请时的卡号副本即可完成验证。",
+          "opponent_reaction": "诺兰在听证会上恼羞成怒，声称数据涉及核心机密，却因急于自证清白而主动提交了错误的副本。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银行审计室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "银行审计员哈罗德出示奥瑞恩提交的付款副本，与原始记录进行比对。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_198_PAYMENT_COPY",
+              "timeline_scope": "current",
+              "display_name": "奥瑞恩付款申请副本",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_197_SEVEN_CODE_GAP",
+              "timeline_scope": "current",
+              "purpose": "作为法庭证据，证明模型被人为篡改。"
+            },
+            {
+              "artifact_id": "ART_198_PAYMENT_COPY",
+              "timeline_scope": "current",
+              "display_name": "奥瑞恩付款申请副本",
+              "kind": "document"
+            }
+          ],
+          "action_sequence": [
+            "银行审计员哈罗德传唤奥瑞恩代表，要求解释为何模型服务费支付申请中的第七码与原始记录不符。",
+            "诺兰在场，试图以“商业机密”为由拒绝提供原始卡片，并坚称副本无误。",
+            "哈罗德出示奥瑞恩在付款申请中提交的卡号副本，其第七码与托马斯的报告完全一致，均为被篡改版本。",
+            "面对铁证，诺兰语无伦次，试图辩解是“系统误差”，却被哈罗德当场驳回。",
+            "保险公司宣布永久停用该健康模型，奥瑞恩承包组的服务合同即刻终止，托管款冻结。"
+          ],
+          "visible_payoff": "奥瑞恩承包组以商业机密拒绝交卡，银行审计员却用其申请付款时提交的卡号副本完成反向比对。",
+          "ending": "奥瑞恩彻底失去对健康数据和资金的控制权，麦珂团队获得独立审计权。",
+          "must_include": [
+            "银行审计",
+            "商业机密借口",
+            "副本比对",
+            "合同终止"
+          ],
+          "must_not_include": [
+            "现代金融工具",
+            "电子转账"
+          ],
+          "detailed_synopsis": "次日，银行审计室气氛凝重。奥瑞恩代表试图以“商业机密”为由，拒绝交出原始穿孔卡，声称这是核心算法的一部分。诺兰·普莱斯在一旁煽风点火，坚称数据绝对无误，甚至指责精算师托马斯伪造报告。然而，银行审计员哈罗德早已做好准备。他拿出一份奥瑞恩在三天前提交的付款申请副本，上面清晰地记录着用于计算服务费的卡号及第七码。哈罗德将这份副本与托马斯出具的《互斥第七码分析报告》并排展示，两者完全一致——都是那个被人为篡改的版本。诺兰瞬间脸色苍白，试图辩解这是“系统误差”，但哈罗德冷冷地指出，这种误差不可能同时出现在原始记录和付款申请中，除非有人故意替换了数据。随着真相大白，保险公司立即宣布永久停用该健康模型，奥瑞恩承包组的合同被终止，争议托管款也被冻结。麦珂站在角落，看着诺兰狼狈不堪的样子，心中明白，这场关于数据与金钱的战争，他已经彻底赢了。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1986",
+    "character_states": [
+      {
+        "character_id": "CHAR_MCKE",
+        "state_key": "control_over_health_data",
+        "new_state": "independent_verified",
+        "description": "麦珂成功切断奥瑞恩对健康数据的控制权，获得独立审计权。"
+      },
+      {
+        "character_id": "CHAR_SOPHIA",
+        "state_key": "decision_making_power",
+        "new_state": "full_partner_with_veto",
+        "description": "苏菲亚正式成为健康问题的共同决策人，拥有否决权。"
+      },
+      {
+        "character_id": "CHAR_NOLAN",
+        "state_key": "professional_reputation",
+        "new_state": "discredited",
+        "description": "诺兰因财务欺诈行为被彻底曝光，失去行业信誉。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_id": "REL_TEAM_003",
+        "state_key": "health_veto_authority",
+        "from": "advisory",
+        "to": "binding_veto",
+        "description": "团队在健康问题上对麦珂的否决权具有法律效力。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset_id": "ASSET_HEALTH_MODEL",
+        "status": "suspended",
+        "reason": "检测到数据污染与财务欺诈",
+        "owner": "Independent_Auditor"
+      },
+      {
+        "asset_id": "ASSET_ESCROW_FUNDS",
+        "status": "frozen",
+        "reason": " pending audit resolution",
+        "owner": "Bank_Trust"
+      }
+    ],
+    "health_and_location": [
+      {
+        "subject": "麦珂",
+        "status": "stable",
+        "risk_level": "verified_low",
+        "note": "真实健康状况得到独立验证，不再受污染模型影响。"
+      }
+    ],
+    "open_threads": [
+      "维克多·兰斯的数据污染计划",
+      "声压可视化系统光学投影组件研发",
+      "奥瑞恩的座次分级备忘录（MG021铺垫）"
+    ],
+    "resolved_threads": [
+      "奥瑞恩对健康模型的财务操控",
+      "诺兰·普莱斯的媒体造病叙事"
+    ],
+    "introduced_characters": [
+      "独立精算师托马斯",
+      "银行审计员哈罗德"
+    ],
+    "next_pressure": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，这将直接触发1987年‘棱镜之夜’直播事故的前置条件。同时，奥瑞恩准备在1987年雾河城巡演以健康风险和粉丝安全为名划分观众等级。"
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "macro_group_id": "MG016",
+  "event_clusters": [
+    {
+      "cluster_id": "EC080",
+      "chapter_span": [
+        159,
+        160
+      ],
+      "source_event_direction": "EC080",
+      "source_event_direction_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_macro_sha256": "d41d8cd98f00b204e9800998ecf8427e",
+      "name": "蓝盾审计陷阱与宪章生效",
+      "timeline_years": "1983-1984",
+      "main_opponent": "巴里·布鲁姆",
+      "opposition_type": "villain",
+      "event_type": "finance_business",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "ART_147_JUDICIAL_CHARTER_SEAL"
+      ],
+      "foreshadow_ids": [
+        "ART_149_FILM_PLANT_DEED"
+      ],
+      "main_characters": [
+        "麦珂",
+        "巴里·布鲁姆",
+        "莉薇娅·普莱斯",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "巴里·布鲁姆携带伪造的‘异常税务通知单’及资产托管协议，试图在《家庭治理宪章》生效前强行冻结信托资金，利用法律程序的滞后性制造既成事实。",
+      "prev_life_tragedy": "前世信托资产被永久冻结，家族陷入财务崩溃，麦珂因无力支付医疗账单而失去生存权。",
+      "info_gap_from_prev_life": "麦珂预知1984年‘蓝盾’公司将利用伪造的税务通知单诱导签署协议，且知晓巴里·布鲁姆在1982年有类似诈骗案底，以及他因自作聪明在录音笔开启状态下自爆的具体时间点。",
+      "why_previous_life_failed": "前世麦珂未识破‘蓝盾’的合规伪装，盲目签署托管协议，导致资产被合法冻结，无法调动资金应对后续危机。",
+      "preemptive_avoidance": "麦珂提前在关键文件上设置肉眼不可见的荧光标记陷阱，并联合媒体召开新闻发布会，公开所有审计证据，将私下胁迫转化为公开审判。",
+      "bait_and_evidence": "麦珂故意在谈判桌上放置一份看似未签署的‘资产托管协议’，并开启一台老式磁带录音机。巴里·布鲁姆为炫耀胜利，在录音中承认伪造税务数据并提及维克多·兰斯的指令，形成自爆证据。",
+      "comic_villain_behavior": "巴里·布鲁姆在谈判中过度自信，嘲笑麦珂的‘天真’，并详细炫耀其伪造文件的‘完美’细节，甚至模仿法官的语气预判麦珂的失败，这种滑稽的傲慢使其在录音中留下无可辩驳的口供。",
+      "villain_loss": "‘蓝盾’公司因证据不足被起诉，资产冻结令撤销，奥瑞恩集团被迫调整策略，转入更隐蔽对抗阶段，维克多·兰斯意识到常规手段失效。",
+      "protagonist_gain": "麦珂家族重获财务自主权，《家庭治理宪章》正式生效，确立医疗决策权与商业审计权的绝对隔离。",
+      "relationship_change": "莉薇娅·普莱斯与麦珂的信任关系深化，成为对抗维克多·兰斯的关键盟友；维克多·兰斯对麦珂的警惕性提升至最高级别。",
+      "continuity_writes": [
+        "RIGHT_VL_007:trust_governance:secured",
+        "ORG_F618A85B98BB:data_injection_capability:neutralized"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007",
+          "state_key": "trust_governance__extension_EC080",
+          "from": "fortified",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_159_BARRY_CONFESION_TAPE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_F618A85B98BB",
+          "state_key": "audit_fraud_capability__loss_EC080",
+          "from": "active",
+          "to": "neutralized",
+          "irreversible": true,
+          "evidence": "ART_159_BARRY_CONFESION_TAPE",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "1983_TAX_CODE_UPDATE",
+        "1982_BLUE_SHIELD_SCANDAL"
+      ],
+      "cluster_outcome": "维克多·兰斯的隐蔽渗透计划首次受挫，‘蓝盾’公司因证据不足被起诉，奥瑞恩集团被迫调整策略；麦珂团队成功确立医疗决策权的独立地位，《家庭治理宪章》正式生效；莉薇娅·普莱斯成为对抗虚假医疗指控的核心防线；巴里·布鲁姆暂时退居二线等待下一次机会；伏笔：维克多·兰斯意识到常规手段失效，将启动更深层的‘健康趋势预测模型’测试，并试图收购老牌胶片冲印厂以切断物理证据链。",
+      "next_event_hook": "维克多·兰斯为掩盖‘蓝盾’失败真相，决定收购一家拥有百年历史的胶片冲印厂，意图销毁所有涉及家族信托原始数据的物理底片，这将在下一组中成为主要威胁。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 159,
+          "timeline_start": "1983-11-10",
+          "timeline_end": "1983-11-10",
+          "scene": "麦珂家族信托办公室",
+          "chapter_goal": "揭露巴里·布鲁姆的伪造税务通知单，撤销资产冻结令。",
+          "chapter_title": "荧光陷阱",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "莉薇娅·普莱斯",
+            "家族律师"
+          ],
+          "opening_conflict": "巴里·布鲁姆携带伪造的‘异常税务通知单’闯入，要求立即签署资产托管协议，否则将启动司法冻结程序。",
+          "info_gap_use": "麦珂利用前世记忆，指出通知单上的税务代码在1982年已废止，并展示荧光标记证明文件系伪造。",
+          "opponent_reaction": "巴里·布鲁姆惊慌失措，试图抢夺文件，但被莉薇娅·普莱斯控制的保安制服。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂家族信托办公室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里·布鲁姆将文件摔在桌上"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_159_BARRY_CONFESION_TAPE",
+              "timeline_scope": "current",
+              "display_name": "巴里·布鲁姆自爆录音带",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_147_JUDICIAL_CHARTER_SEAL",
+              "timeline_scope": "current",
+              "purpose": "作为《家庭治理宪章》生效的法律依据"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆展示伪造文件并威胁",
+            "麦珂冷静指出文件漏洞并展示荧光标记",
+            "巴里·布鲁姆在录音中承认伪造并炫耀",
+            "莉薇娅·普莱斯控制现场并报警"
+          ],
+          "visible_payoff": "资产冻结令因证据不足被撤销，巴里·布鲁姆被暂时拘留。",
+          "ending": "麦珂看着被带走的巴里，知道这只是开始。",
+          "must_include": [
+            "荧光标记细节",
+            "1982年税务代码废止事实",
+            "录音机开启状态"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "巴里·布鲁姆带着伪造的‘异常税务通知单’闯入麦珂的办公室，要求立即签署资产托管协议。麦珂冷静地指出通知单上的税务代码在1982年已废止，并用紫外线灯照射文件，显示出肉眼不可见的荧光标记，证明文件系伪造。巴里·布鲁姆惊慌失措，试图抢夺文件，但被莉薇娅·普莱斯控制的保安制服。在混乱中，巴里·布鲁姆在录音机前承认伪造文件并炫耀其‘完美’计划，留下无可辩驳的口供。资产冻结令因证据不足被撤销，巴里·布鲁姆被暂时拘留。"
+        },
+        {
+          "chapter_id": 160,
+          "timeline_start": "1983-11-11",
+          "timeline_end": "1983-11-11",
+          "scene": "新闻发布会现场",
+          "chapter_goal": "公开审计证据，确立《家庭治理宪章》的法律效力。",
+          "chapter_title": "宪章生效",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "莉薇娅·普莱斯",
+            "媒体记者"
+          ],
+          "opening_conflict": "维克多·兰斯试图通过媒体抹黑麦珂，声称其伪造证据。",
+          "info_gap_use": "麦珂公开巴里·布鲁姆的自爆录音带，并展示《家庭治理宪章》的签署文件，确立医疗决策权与商业审计权的绝对隔离。",
+          "opponent_reaction": "维克多·兰斯意识到常规手段失效，脸色铁青，暗中决定启动更深层的‘健康趋势预测模型’测试。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "新闻发布会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂走上讲台"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_159_BARRY_CONFESION_TAPE",
+              "timeline_scope": "current",
+              "purpose": "作为公开审判的关键证据"
+            },
+            {
+              "artifact_id": "ART_147_JUDICIAL_CHARTER_SEAL",
+              "timeline_scope": "current",
+              "purpose": "作为《家庭治理宪章》生效的法律依据"
+            }
+          ],
+          "action_sequence": [
+            "麦珂召开新闻发布会，公开审计证据",
+            "播放巴里·布鲁姆的自爆录音带",
+            "展示《家庭治理宪章》签署文件",
+            "维克多·兰斯在台下意识到失败"
+          ],
+          "visible_payoff": "《家庭治理宪章》正式生效，麦珂家族重获财务自主权。",
+          "ending": "维克多·兰斯离开会场，暗中决定收购胶片冲印厂以销毁物理证据。",
+          "must_include": [
+            "录音带播放细节",
+            "《家庭治理宪章》签署仪式",
+            "维克多·兰斯的暗中反应"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "麦珂召开新闻发布会，公开巴里·布鲁姆的自爆录音带，并展示《家庭治理宪章》的签署文件，确立医疗决策权与商业审计权的绝对隔离。维克多·兰斯在台下意识到常规手段失效，脸色铁青。麦珂在发布会上宣布《家庭治理宪章》正式生效，麦珂家族重获财务自主权。维克多·兰斯离开会场，暗中决定收购胶片冲印厂以销毁物理证据，为下一阶段的对抗做准备。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1983",
+    "character_states": [
+      "麦珂：冷静、自信，掌控局势",
+      "巴里·布鲁姆：惊慌、被拘留",
+      "维克多·兰斯：愤怒、警惕，暗中策划新阴谋",
+      "莉薇娅·普莱斯：忠诚、高效，成为关键盟友"
+    ],
+    "relationship_states": [
+      "麦珂与莉薇娅·普莱斯：信任深化",
+      "麦珂与维克多·兰斯：敌对升级，从公开对抗转向隐蔽对抗"
+    ],
+    "rights_and_assets": [
+      "RIGHT_VL_007:trust_governance:secured",
+      "ORG_F618A85B98BB:data_injection_capability:neutralized"
+    ],
+    "health_and_location": [
+      "麦珂：健康，位于家族信托办公室及新闻发布会现场",
+      "巴里·布鲁姆：被拘留，位于警局",
+      "维克多·兰斯：健康，位于奥瑞恩集团总部"
+    ],
+    "open_threads": [
+      "维克多·兰斯的‘健康趋势预测模型’测试",
+      "奥瑞恩集团收购胶片冲印厂的阴谋"
+    ],
+    "resolved_threads": [
+      "‘蓝盾’审计陷阱",
+      "资产冻结令"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多·兰斯将启动更深层的‘健康趋势预测模型’测试，并试图通过收购胶片冲印厂销毁物理证据，切断麦珂的证据链。"
+  }
+}

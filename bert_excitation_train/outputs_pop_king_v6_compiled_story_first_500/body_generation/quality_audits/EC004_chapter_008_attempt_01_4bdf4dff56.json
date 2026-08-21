@@ -1,0 +1,124 @@
+{
+  "cluster_id": "EC004",
+  "chapter_id": 8,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "4bdf4dff5646d6994314631038a5a212ee7f97326a818d03c999a73783633a39",
+  "base_prompt_sha256": "4bdf4dff5646d6994314631038a5a212ee7f97326a818d03c999a73783633a39",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "6966e8d270ae87ad25a018ed59fa2f393843041cb2e85749c3d440c8464f4608",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 19.096,
+    "usage": {
+      "prompt_tokens": 7683,
+      "completion_tokens": 1124,
+      "total_tokens": 8807,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 4,
+    "through_chapter": 8,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "f99935526bbcb3eb8fc87d82ac0c280ed51d229f1a9ab349555b667fef34a63d",
+    "chapter_card_prefix_sha256": "801ad9c1a65c98abe443d601379903e65810606f6c37963110e454559bf0ee8d",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "5ab583df5a94dd2cab775c5ac2cde06ba483fe47e9fac4e32dab9c12e432d86b"
+  },
+  "cluster_sha256": "0bcf2e74bb4e87860ca030ac50eb9bd8655d04ccd174b62eaa7884026e1c2024",
+  "card_sha256": "d18c2d7ef73761cd1a62d4ba6158d33dde5fb794c23392a7d778b27837101b1f",
+  "chapter_audit": {
+    "han_chars": 1728,
+    "total_chars": 1948,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "全场掌声",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "独特风格展示",
+        "exact": false,
+        "bigram_coverage": 0.0,
+        "matched": false
+      },
+      {
+        "anchor": "评分表记录",
+        "exact": false,
+        "bigram_coverage": 0.75,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "employment_status__extension_EC004",
+        "target": "被撤职",
+        "evidence_terms": [
+          "卡尔试图强行改调",
+          "导致演出事故"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "performance_status",
+        "target": "正式表演者",
+        "evidence_terms": [
+          "麦珂在",
+          "大调下完美演绎"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0152,
+    "scene_evidence": [
+      {
+        "location": "《晨光电台》演播厅",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.015，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“独特风格展示”",
+      "正文没有通过现场动作兑现状态转移employment_status__extension_EC004→被撤职",
+      "正文没有通过现场动作兑现状态转移performance_status→正式表演者",
+      "正文未落到规划场景“《晨光电台》演播厅”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.015，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“独特风格展示”",
+      "正文没有通过现场动作兑现状态转移employment_status__extension_EC004→被撤职",
+      "正文没有通过现场动作兑现状态转移performance_status→正式表演者",
+      "正文未落到规划场景“《晨光电台》演播厅”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

@@ -1,0 +1,110 @@
+{
+  "macro_group_id": "MG004",
+  "event_directions": [
+    {
+      "cluster_id": "EC016",
+      "chapter_span": [
+        31,
+        32
+      ],
+      "opposition_type": "villain",
+      "event_type": "contract_rights",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "乔纳曾利用‘保护未成年人’话术强行删改旋律并吞并版权。",
+      "unique_prev_life_info": "麦珂知晓乔纳撕毁合同时会暴露焦虑症微表情。",
+      "preemptive_action": "麦珂提前将《纸船纪》创作手稿在河湾镇公告栏公示并公证日期。",
+      "chapter_one_small_win": "乔纳以断供相逼时，麦珂当众展示已备案的独立母带所有权证明。",
+      "chapter_two_showdown": "乔纳情绪失控撕毁假协议，被黛安娜录下其手部颤抖与语无伦次。",
+      "opponent_permanent_loss": "乔纳因公开施压失去行业信誉，无法再代表麦珂进行任何签约。",
+      "protagonist_concrete_gain": "麦珂获得法律认可的独立制作人身份，家庭财务审计权移交黛安娜。",
+      "irreversible_outcome_key": "EC016_Public_Grace_Period_Ended",
+      "death_chain_connection": "前世因无力反抗被迫签署空白合同，今生通过公开透明反制。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC017",
+      "chapter_span": [
+        33,
+        34
+      ],
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "advance",
+      "previous_life_harm": "前世《晨光电台》因删减副歌导致未来十年听众情感断层。",
+      "unique_prev_life_info": "麦珂预知三秒真空段是引发跨四十年声部共振的关键。",
+      "preemptive_action": "麦珂邀请驻场编曲师现场监听，坚持保留原始三秒静默段落。",
+      "chapter_one_small_win": "驻场编曲师确认该段落符合艺术完整性标准，拒绝乔纳的修改指令。",
+      "chapter_two_showdown": "乔纳试图强行剪辑，被驻场编曲师以技术协议为由当场驳回并记录在案。",
+      "opponent_permanent_loss": "乔纳彻底丧失对《纸船纪》核心旋律结构的控制权。",
+      "protagonist_concrete_gain": "麦珂保全了作品艺术灵魂，确立驻场编曲师为终身技术合作伙伴。",
+      "irreversible_outcome_key": "EC017_Silent_Three_Seconds_Secured",
+      "death_chain_connection": "前世因妥协删改导致艺术价值归零，今生坚守成就传世经典。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC018",
+      "chapter_span": [
+        35,
+        36
+      ],
+      "opposition_type": "family",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "reveal",
+      "previous_life_harm": "前世乔纳通过虚假账目转移资金，导致麦珂成年后陷入债务陷阱。",
+      "unique_prev_life_info": "麦珂清楚乔纳意图通过未成年合约规避税务风险。",
+      "preemptive_action": "黛安娜依据麦珂提供的线索，启动对‘星辰新声’项目的专项审计。",
+      "chapter_one_small_win": "审计发现乔纳挪用公款支付私人债务的证据链完整。",
+      "chapter_two_showdown": "乔纳试图销毁账本，被玛莎当场制止并报警处理。",
+      "opponent_permanent_loss": "乔纳面临税务调查，被迫退出项目并失去家庭财政决策权。",
+      "protagonist_concrete_gain": "家庭资金链由黛安娜接管，实现完全财务独立与透明化。",
+      "irreversible_outcome_key": "EC018_Family_Finance_Transfer_Complete",
+      "death_chain_connection": "前世因财务失控被资本吞噬，今生通过审计夺回经济主权。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC019",
+      "chapter_span": [
+        37,
+        38
+      ],
+      "opposition_type": "institutional",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "echo",
+      "previous_life_harm": "前世媒体被收买抹黑麦珂形象，导致公众对其产生误解。",
+      "unique_prev_life_info": "麦珂知道乔纳会利用媒体制造‘保护未成年人’的舆论假象。",
+      "preemptive_action": "麦珂主动邀请当地记者全程跟拍录制过程，发布真实幕后花絮。",
+      "chapter_one_small_win": "媒体报道转向支持麦珂的独立精神，乔纳的抹黑计划失效。",
+      "chapter_two_showdown": "乔纳试图雇佣水军攻击，被记者现场揭穿并曝光其幕后指使。",
+      "opponent_permanent_loss": "乔纳在公众视野中彻底失势，被贴上贪婪与控制欲强的标签。",
+      "protagonist_concrete_gain": "麦珂赢得社区广泛支持，确立独立艺人的正面公众形象。",
+      "irreversible_outcome_key": "EC019_Public_Trust_Reversal",
+      "death_chain_connection": "前世因舆论操控而孤立无援，今生通过透明化赢得民心。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC020",
+      "chapter_span": [
+        39,
+        40
+      ],
+      "opposition_type": "villain",
+      "event_type": "performance",
+      "solution_type": "market_result",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "前世首支单曲发行失败，乔纳借机低价收购版权并雪藏作品。",
+      "unique_prev_life_info": "麦珂预知维克多·兰斯将绕过乔纳直接介入，视其为不可控变量。",
+      "preemptive_action": "麦珂在未签约情况下独立完成《纸船纪》母带发行并举办发布会。",
+      "chapter_one_small_win": "单曲销量突破预期，引发行业关注，乔纳无法阻止其成功。",
+      "chapter_two_showdown": "奥瑞恩集团高层现身发布会，无视乔纳直接提出合作意向给麦珂。",
+      "opponent_permanent_loss": "乔纳彻底被边缘化，成为行业笑柄，再无翻身机会。",
+      "protagonist_concrete_gain": "麦珂获得独立发行权，奥瑞恩集团高层成为新的博弈对手。",
+      "irreversible_outcome_key": "EC020_Independent_Release_Successful",
+      "death_chain_connection": "前世因被资本雪藏而默默无闻，今生通过独立突围开启新篇章。",
+      "direction": ""
+    }
+  ]
+}

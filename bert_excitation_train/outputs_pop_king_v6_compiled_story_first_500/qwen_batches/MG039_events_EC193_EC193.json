@@ -1,0 +1,265 @@
+{
+  "macro_group_id": "MG039",
+  "event_clusters": [
+    {
+      "cluster_id": "EC193",
+      "chapter_span": [
+        385,
+        386
+      ],
+      "source_event_direction": "前世具体受害：前世电子病历被用于掩盖医疗黑幕，导致麦珂被剥夺创作自主权。；本事件独有的前世信息差：1999年刚商用的数码扫描仪可高精度提取背景噪声频段用于声纹比对。；今生提前动作：麦珂将S95-B-RW样带转录为CDR格式，公开技术细节供第三方验证。；第385章可见小赢：全美二十七家医学院伦理委员会采纳环境噪声一致性标准，承认原始录音效力。；第386章新交锋：维克多试图启动数据污染方案，被莉薇娅当场拦截并公示原始胶片记录。；阻力方永久现实损失：维克多常规手段失效，被迫转向更隐蔽的资产渗透策略。；主角现实收益：确立‘棱镜协议’法律文本方向，医疗黑幕首次公开曝光。；不可逆结算键：原始模拟信号优先条款成为法律定稿依据，任何电子篡改无效。；接回死亡控制主线：防止前世数据污染蔓延，确保麦珂创作权不受医疗数据劫持。",
+      "source_event_direction_sha256": "33fc82ac9c5126c3f6dd03c44f5f2457b6481f41be46c8d3a3e056ae82bc2824",
+      "source_macro_sha256": "1d9312918a2a0517501391841ac506765bcb62850de92aa64042c5ad4fcf0bbe",
+      "name": "模拟信号的铁证：环境噪声一致性标准的确立",
+      "timeline_years": "1999—2000",
+      "main_opponent": "维克多·兰斯（Victor Lance）",
+      "opposition_type": "technical",
+      "event_type": "media_reputation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS11"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅",
+        "维克多·兰斯",
+        "退休老医生陈伯",
+        "全美二十七家医学院伦理委员会代表"
+      ],
+      "fictional_obstacle": "维克多试图将S95-B-RW样带中的背景底噪解释为“设备故障”或“后期剪辑痕迹”，以此否定录音的原始性，并启动“数据污染”方案，用电子合成音覆盖真实人声，使伪造病历在技术上看似完美无缺。",
+      "prev_life_tragedy": "前世麦珂未能识别1999年数码扫描仪的高频提取能力，导致S95-B-RW样带被轻易篡改，母亲玛莎被强制送入虚假康复机构，创作权被永久剥夺。",
+      "info_gap_from_prev_life": "知晓1999年刚商用的数码扫描仪（如Sony PCM-M10）具备独特的“相位噪声”特征，能通过提取背景空调低频震动频段（约40Hz-60Hz）来验证录音是否经过数字化重录，这是当时任何伪造者无法完美模拟的物理指纹。",
+      "why_previous_life_failed": "前世过度依赖电子波形图，忽视了模拟信号在转录过程中的物理残留，且未提前建立“原始模拟信号优先”的法律条款，导致法庭采信了经过清洗的电子数据。",
+      "preemptive_avoidance": "麦珂提前联系退休老医生陈伯作为证人，并将S95-B-RW样带转录为CDR格式（不可擦写光盘），公开技术细节供第三方验证，同时植入“原始模拟信号优先”条款。",
+      "bait_and_evidence": "维克多故意展示一段“完美无瑕”的电子病历录音，诱导伦理委员会专家质疑原始样带的“瑕疵”；麦珂则当场播放提取出的背景底噪频谱图，证明该底噪与1999年河湾镇诊所特定空调型号的频率完全一致，无法伪造。",
+      "comic_villain_behavior": "维克多在直播中为了掩盖破绽，强行要求技术人员现场“优化”录音，结果因操作失误导致背景底噪频率发生突变，反而暴露了他手中录音是后期合成的事实，他还在镜头前尴尬地辩解“这是为了听得更清楚而做的降噪处理”。",
+      "villain_loss": "维克多常规手段失效，被迫转向更隐蔽的资产渗透策略；其精心策划的“一键康复”方案被彻底证伪，奥瑞恩集团在医疗领域的信誉崩塌。",
+      "protagonist_gain": "确立‘棱镜协议’法律文本方向，医疗黑幕首次公开曝光；获得半枚油渍指纹线索，指向巴里·布鲁姆。",
+      "relationship_change": "麦珂与家庭铁三角（玛莎、黛安娜）信任度达到顶峰，形成稳固的利益共同体；与奥瑞恩集团关系彻底破裂，进入公开对抗状态。",
+      "continuity_writes": [
+        "第385章：全美二十七家医学院伦理委员会采纳环境噪声一致性标准，承认原始录音效力。",
+        "第386章：维克多试图启动数据污染方案，被莉薇娅当场拦截并公示原始胶片记录。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_039_AUDIT",
+          "state_key": "audit_chain_status__extension_EC193",
+          "from": "suspended_due_fraud",
+          "to": "legally_enforced_standard",
+          "irreversible": true,
+          "evidence": "ENVIRONMENTAL_NOISE_STANDARD + CDR_FORMAT_VERIFICATION",
+          "effect_type": "protagonist_gain",
+          "source_domain": "medical_records"
+        },
+        {
+          "domain": "health",
+          "entity_id": "HEALTH_MARTHA_001",
+          "state_key": "treatment_protocol_status__extension_EC193",
+          "from": "none",
+          "to": "verified_scientific_adjustment",
+          "irreversible": true,
+          "evidence": "ETHICS_COMMITTEE_APPROVAL",
+          "effect_type": "protagonist_gain",
+          "source_domain": "medical_records",
+          "source_state_key": "treatment_protocol_status"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "OPPONENT_VICTOR_LANCE",
+          "state_key": "strategy_effectiveness",
+          "from": "high_efficiency_fraud",
+          "to": "failed_conventional_tactics",
+          "irreversible": false,
+          "evidence": "LIVE_BROADCAST_EXPOSURE",
+          "effect_type": "villain_loss",
+          "source_domain": "corporate_strategy"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1999_DIGITAL_SCANNER",
+        "HIST_1999_MEDICAL_ETHICS"
+      ],
+      "cluster_outcome": "成功阻止‘终身艺能保障计划’签约，保留全部医疗数据自主权；确立‘棱镜协议’法律文本定稿方向；获得半枚油渍指纹线索，指向巴里·布鲁姆。",
+      "next_event_hook": "1999年除夕磁带外壳上的半枚油渍指纹经专业比对，证实与巴里·布鲁姆指纹吻合，该线索将直接触发P09（第401-420章）关于长期介入档案篡改的法务攻防战，迫使奥瑞恩集团从商业施压转向刑事层面的反制。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 385,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "听证室主舞台",
+          "chapter_goal": "利用环境噪声一致性标准，公开验证S95-B-RW样带的真实性，迫使委员会采纳原始录音证据。",
+          "chapter_title": "噪音里的真相",
+          "participants": [
+            "麦珂",
+            "莉薇娅",
+            "维克多·兰斯",
+            "陈伯",
+            "委员会主席"
+          ],
+          "opening_conflict": "维克多拿出经过数字处理的“完美”录音，指责麦珂提供的原始样带充满杂音，不具备法律效力。",
+          "info_gap_use": "麦珂调用1999年数码扫描仪的技术参数，指出背景中40Hz-60Hz的空调低频震动是当时河湾镇诊所独有的物理特征，无法被后期合成完美复刻。",
+          "opponent_reaction": "维克多惊慌失措，试图命令技术人员现场“修复”杂音，却因操作不当导致频谱图出现异常跳变。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证室主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂将CDR光盘插入投影仪，屏幕上显示出复杂的声波频谱图。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_385_NOISE_SPECTRUM",
+              "timeline_scope": "current",
+              "display_name": "《环境噪声一致性频谱分析报告》",
+              "kind": "visual_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_375_AUDIO_RECORDING",
+              "timeline_scope": "current",
+              "purpose": "作为原始采样源进行频谱分析对比。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂播放提取出的背景底噪，陈伯确认该频率与当年诊所空调运行声一致。",
+            "委员会代表震惊，意识到这种物理特征无法伪造。",
+            "维克多试图打断会议，被莉薇娅以程序违规为由制止。",
+            "委员会宣布采纳“环境噪声一致性标准”，认定原始录音有效。"
+          ],
+          "visible_payoff": "全美二十七家医学院伦理委员会正式采纳新标准，原始录音效力得到法律确认。",
+          "ending": "维克多脸色铁青，意识到常规手段已失效，会议暂时休庭。",
+          "must_include": [
+            "40Hz-60Hz空调频率",
+            "CDR格式光盘",
+            "陈伯证言"
+          ],
+          "must_not_include": [
+            "未来科技词汇",
+            "康拉德出场"
+          ],
+          "detailed_synopsis": "第385章聚焦于技术辩论的高潮。麦珂没有直接反驳维克多的“完美录音”，而是将矛头指向“不完美”的背景音。她利用重生优势，调出1999年河湾镇诊所特有的空调低频震动频段（40Hz-60Hz），并通过数码扫描仪提取出的原始样带进行比对。当屏幕上显示出高度重合的频谱图时，全场哗然。退休医生陈伯作证，确认只有那台老旧的空调才会发出这种特定的“嗡嗡”声。维克多试图让技术人员现场“降噪”，结果反而暴露了合成痕迹。最终，委员会主席拍板，采纳了“环境噪声一致性标准”，承认原始模拟信号的法律效力，维克多的第一道防线彻底崩溃。"
+        },
+        {
+          "chapter_id": 386,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "发布会后台",
+          "chapter_goal": "截断维克多启动的“数据污染”方案，揭露其试图用电子合成音覆盖真相的阴谋。",
+          "chapter_title": "被拦截的污染",
+          "participants": [
+            "麦珂",
+            "莉薇娅",
+            "维克多·兰斯",
+            "媒体记者"
+          ],
+          "opening_conflict": "维克多试图在新闻发布会前夜启动“数据污染”方案，用AI生成的“快速康复”语音替换掉原始录音，以挽救即将崩盘的声誉。",
+          "info_gap_use": "麦珂预知维克多会在此时启动数据污染，提前在信托协议中植入了“原始模拟信号优先”条款，使得任何电子篡改在法律上无效。",
+          "opponent_reaction": "维克多恼羞成怒，试图强行切断电源，却被莉薇娅当众展示原始胶片记录，揭露其罪行。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "发布会后台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "莉薇娅突然闯入后台，手持一卷泛黄的胶片。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_379_DOUBLE_TRACK_PROTOCOL",
+              "timeline_scope": "current",
+              "purpose": "引用其中的“原始模拟信号优先”条款，作为法律武器。"
+            }
+          ],
+          "action_sequence": [
+            "维克多命令手下准备播放合成录音，麦珂和莉薇娅及时赶到。",
+            "莉薇娅出示原始胶片，证明维克多试图替换的证据链已被法律锁定。",
+            "媒体记者围堵维克多，询问其为何试图篡改数据。",
+            "维克多被迫承认部分事实，但声称是“为了患者利益”，遭到舆论唾弃。"
+          ],
+          "visible_payoff": "维克多常规手段失效，被迫转向更隐蔽的资产渗透策略；医疗黑幕首次公开曝光。",
+          "ending": "维克多狼狈离场，麦珂看着手中的半枚油渍指纹，眼神变得锐利。",
+          "must_include": [
+            "原始胶片记录",
+            "数据污染方案",
+            "半枚油渍指纹"
+          ],
+          "must_not_include": [
+            "二维码",
+            "远程档案库存储"
+          ],
+          "detailed_synopsis": "第386章转入反击阶段。听证会后，维克多狗急跳墙，企图在当晚的媒体发布会上启动“数据污染”方案，用当时最先进的AI语音合成技术覆盖原始录音，制造“一键康复”的假象。然而，麦珂早已预料到这一步，她与莉薇娅在发布会后台设下埋伏。莉薇娅当众展示了那份未被篡改的原始胶片记录，并援引刚刚生效的“原始模拟信号优先”条款，指出任何电子合成音在法律上均无效。面对媒体的长枪短炮，维克多试图狡辩，却因慌乱中露出的马脚——他手中拿着的合成设备与现场环境不符——而彻底败露。他不仅失去了控制权，还被迫承认了部分违规行为。麦珂在混乱中拾起磁带外壳上的一枚半指印，那是巴里·布鲁姆留下的致命把柄，预示着下一场风暴即将来临。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2000",
+    "character_states": [
+      {
+        "id": "MC_001",
+        "name": "麦珂",
+        "state": "战略主动，掌握核心证据"
+      },
+      {
+        "id": "MARTHA_001",
+        "name": "玛莎",
+        "state": "病情稳定，脱离虚假治疗，参与志愿者培训"
+      },
+      {
+        "id": "VICTOR_001",
+        "name": "维克多·兰斯",
+        "state": "常规手段失效，被迫转向隐蔽策略"
+      }
+    ],
+    "relationship_states": [
+      {
+        "id": "FAMILY_IRON_TRIANGLE",
+        "state": "信任度达顶峰，形成稳固利益共同体"
+      },
+      {
+        "id": "AURION_CONFLICT",
+        "state": "关系彻底破裂，进入公开对抗"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "id": "RIGHT_MEDICAL_DATA",
+        "state": "麦珂保留全部医疗数据自主权"
+      },
+      {
+        "id": "RIGHT_PRISM_AGREEMENT",
+        "state": "确立‘棱镜协议’法律文本方向"
+      }
+    ],
+    "health_and_location": [
+      {
+        "id": "HEALTH_MARTHA",
+        "state": "科学调理阶段，脱离虚假陷阱"
+      },
+      {
+        "id": "LOC_HOSPITAL",
+        "state": "医院伦理委员会停职审查托马斯"
+      }
+    ],
+    "open_threads": [
+      "1999年除夕磁带外壳指纹的深入调查",
+      "维克多·兰斯对巴里·布鲁姆倒台后的应对策略"
+    ],
+    "resolved_threads": [
+      "‘终身艺能保障计划’签约陷阱被彻底粉碎",
+      "S95-B-RW样带声纹比对结果归档为法定证据"
+    ],
+    "introduced_characters": [
+      "退休老医生陈伯"
+    ],
+    "next_pressure": "随着维克多势力收缩，联邦调查局介入，那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的‘数据污染’方案。"
+  }
+}

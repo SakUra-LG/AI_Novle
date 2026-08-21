@@ -9,7 +9,10 @@ from bert_excitation_train.scripts.neo4j_kg.build_plot_clusters import upsert_pl
 from bert_excitation_train.scripts.neo4j_kg.chapter_memory import normalize_memory
 from bert_excitation_train.scripts.neo4j_kg.common import get_neo4j_driver
 from bert_excitation_train.scripts.neo4j_kg.online_retriever import retrieve_context_for_chapter
-from bert_excitation_train.scripts.neo4j_kg.story_memory_store import replace_chapter_memory
+from bert_excitation_train.scripts.neo4j_kg.story_memory_store import (
+    replace_chapter_memories,
+    replace_chapter_memory,
+)
 from bert_excitation_train.scripts.neo4j_kg.story_identity import story_id_for_clusters
 
 
@@ -154,6 +157,90 @@ class Neo4jStoryMemoryIntegrationTests(unittest.TestCase):
                 "WHERE c.story_id IN ['story-alive', 'story-dead'] RETURN count(c) AS count"
             ).single()
             self.assertEqual(2, row["count"])
+
+    def test_batch_edges_and_pruning_are_isolated_between_stories(self):
+        def memory(story_id, chapter, summaries):
+            return normalize_memory(
+                {
+                    "story_id": story_id,
+                    "events": [
+                        {
+                            "event_index": index * 2,
+                            "summary": summary,
+                            "timeline": "current",
+                            "participants": [],
+                        }
+                        for index, summary in enumerate(summaries)
+                    ],
+                },
+                chapter,
+                f"{story_id}-{chapter}",
+            )
+
+        story_a = [
+            memory("batch-story-a", 1, ["a one", "a two"]),
+            memory("batch-story-a", 2, ["a three"]),
+        ]
+        story_b = [
+            memory("batch-story-b", 1, ["b one", "b two", "b three"]),
+            memory("batch-story-b", 2, ["b four"]),
+        ]
+        replace_chapter_memories(
+            self.driver,
+            story_a,
+            story_id="batch-story-a",
+        )
+        replace_chapter_memories(
+            self.driver,
+            story_b,
+            story_id="batch-story-b",
+        )
+
+        with self.driver.session() as session:
+            a_edges = session.run(
+                """
+                MATCH (a:StoryEvent {story_id:'batch-story-a'})
+                      -[r:NEXT_EVENT]->
+                      (b:StoryEvent {story_id:'batch-story-a'})
+                RETURN count(r) AS count
+                """
+            ).single()["count"]
+            cross_edges = session.run(
+                """
+                MATCH (a:StoryEvent)-[r:NEXT_EVENT]->(b:StoryEvent)
+                WHERE a.story_id <> b.story_id
+                RETURN count(r) AS count
+                """
+            ).single()["count"]
+        self.assertEqual(2, a_edges)
+        self.assertEqual(0, cross_edges)
+
+        replace_chapter_memories(
+            self.driver,
+            [story_a[0]],
+            story_id="batch-story-a",
+            prune_missing=True,
+        )
+        with self.driver.session() as session:
+            a_chapters = session.run(
+                "MATCH (ch:StoryChapter {story_id:'batch-story-a'}) "
+                "RETURN collect(ch.number) AS chapters"
+            ).single()["chapters"]
+            b_chapters = session.run(
+                "MATCH (ch:StoryChapter {story_id:'batch-story-b'}) "
+                "RETURN collect(ch.number) AS chapters"
+            ).single()["chapters"]
+            b_edges = session.run(
+                """
+                MATCH (:StoryEvent {story_id:'batch-story-b'})
+                      -[r:NEXT_EVENT]->
+                      (:StoryEvent {story_id:'batch-story-b'})
+                RETURN count(r) AS count
+                """
+            ).single()["count"]
+        self.assertEqual([1], sorted(a_chapters))
+        self.assertEqual([1, 2], sorted(b_chapters))
+        self.assertEqual(3, b_edges)
 
 
 if __name__ == "__main__":

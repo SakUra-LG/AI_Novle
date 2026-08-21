@@ -1,0 +1,52 @@
+{
+  "generated_by": "qwen",
+  "kind": "events",
+  "identifier": "MG031",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "c710309f7012595e360aa9dc5ace4133fdc65923352717fd463b1032eed37e0e",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-08T21:58:54+08:00",
+      "prompt_sha256": "c710309f7012595e360aa9dc5ace4133fdc65923352717fd463b1032eed37e0e",
+      "raw_response_sha256": "6e7fede23b0e3530efb9ba5f8c1672949aa1f1b162da8fbb079107891bb07b44",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG031_events_attempt_01_raw.txt",
+      "validation_failures": [
+        "EC152年代技术错误：当前年代不得出现“二维码”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 102.399,
+      "usage": {
+        "input_tokens": 15644,
+        "output_tokens": 6689,
+        "total_tokens": 22333,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-08T22:00:36+08:00",
+      "prompt_sha256": "8a59b30ef1a7ed4d4189bde1063c537a42351e44874baa54bb45e3c137e0e340",
+      "raw_response_sha256": "efc5e13608f3684b20ceaaa21bc1667040f8f9a6cc603779007e18a11e227bf0",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG031_events_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 102.299,
+      "usage": {
+        "input_tokens": 6857,
+        "output_tokens": 6709,
+        "total_tokens": 13566,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

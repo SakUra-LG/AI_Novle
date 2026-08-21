@@ -1,0 +1,24 @@
+{
+  "cluster_id": "EC003",
+  "review_round": 4,
+  "reviewed_chapters": [5, 6],
+  "reviewer": "codex_full_text_inspection",
+  "decision": "pass_and_expand_batch",
+  "body_manually_edited": false,
+  "chapter_han_chars": {
+    "5": 1196,
+    "6": 1378
+  },
+  "passed_requirements": [
+    "第5章不再提前叙述第6章的第十一次试听和摔耳机，时间顺序恢复",
+    "第5章完成A/B版分轨、星形封口与声纹基线录制，第6章承担昆廷反应和正式结算",
+    "昆廷表面暴躁摔耳机、实际惜才锁入母带并交出终审权，人物反差清楚",
+    "第6章销毁B版、保存A版和侧轨标注、明确‘Demo终审权归你’，形成可见收益",
+    "两章均不少于1000个汉字且正文与Qwen原始响应逐字一致"
+  ],
+  "accepted_rough_edges": [
+    "第5章给出初步混音台钥匙，第6章再次正式交接，界限表达略含混但可理解为临时准入转正式授权",
+    "声学术语仍偏密，但事件推进和人物反应足以支撑阅读"
+  ],
+  "next_action": "连续三个事件簇可用，扩大为一次生成EC004—EC005并逐章抽查。"
+}

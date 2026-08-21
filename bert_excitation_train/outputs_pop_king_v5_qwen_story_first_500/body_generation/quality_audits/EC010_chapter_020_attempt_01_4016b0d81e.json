@@ -1,0 +1,39 @@
+{
+  "cluster_id": "EC010",
+  "chapter_id": 20,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "4016b0d81e1cf656bcf0ee9e59912de6c9f776ff0083be09384701edf7fae3d4",
+  "raw_response_sha256": "afb6df8709d2c109576769cc9a841cf7f0443ddd2a35c269be648844d3d6c1e5",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 36.772,
+    "usage": {
+      "input_tokens": 6024,
+      "output_tokens": 1532,
+      "total_tokens": 7556,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "chapter_audit": {
+    "han_chars": 1524,
+    "total_chars": 1855,
+    "target_han_range": [
+      1300,
+      1800
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "failures": [
+      "出现现实世界专名：派克51"
+    ]
+  },
+  "failures": [
+    "出现现实世界专名：派克51"
+  ],
+  "accepted": false
+}

@@ -1,0 +1,224 @@
+{
+  "macro_group_id": "MG001",
+  "event_clusters": [
+    {
+      "cluster_id": "EC005",
+      "chapter_span": [
+        9,
+        10
+      ],
+      "source_event_direction": "前世具体受害：前世宣传人用预设提问和断章引语把麦珂包装成傀儡；本事件独有的前世信息差：1969年11月23日《晨光电台》试镜后台，麦珂记得开场问题‘你准备好成为明星吗？’；今生提前动作：麦珂通过同期电台、报纸或电视的完整回答反制宣传人；第9章可见小赢：第9章麦珂通过记忆中的回答反驳宣传人，获得小赢；第10章新交锋：第10章麦珂在电台现场面对宣传人，展开新动作的交锋；阻力方永久现实损失：宣传人失去独家发言权，麦珂取得公开表达空间；主角现实收益：麦珂获得电台现场的公开表达空间和认可；不可逆结算键：麦珂的反制成功；接回死亡控制主线：削弱2009年死亡背后的保险、版权、医疗或控制体系",
+      "source_event_direction_sha256": "85f2eda06e3d320f39f45b9afc26715f3621d51adc8faa2fd015c2d59e0fb33a",
+      "source_macro_sha256": "ec14b559972d9170878fa3fd52b4071ad628385b2c3d6f917f1f50e8bb894780",
+      "name": "三秒停顿的麦珂风陷阱",
+      "timeline_years": "1969",
+      "main_opponent": "巴里·布鲁姆",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS15"
+      ],
+      "foreshadow_ids": [
+        "FS01"
+      ],
+      "main_characters": [
+        "麦珂·杰森",
+        "玛莎·杰森",
+        "巴里·布鲁姆",
+        "黛安娜·罗文"
+      ],
+      "fictional_obstacle": "巴里试图在《晨光电台》直播前将麦珂定义为“被操控的玩偶”，利用预设问题诱导其说出迎合商业形象的台词，并计划在剪辑时截取片段制造“童星失语”假象。",
+      "prev_life_tragedy": "前世麦珂在类似问题上被引导承认“我是为了妈妈唱歌”，导致公众将其视为缺乏独立人格的商品，最终在2009年死后被资本彻底抹杀个人意志。",
+      "info_gap_from_prev_life": "1969年11月23日《晨光电台》后台，巴里拿着采访提纲，第一句必问：“你准备好成为明星了吗？”这是前世他用来定调的诱饵。",
+      "why_previous_life_failed": "前世麦珂年幼且孤立无援，直接回答了“是”，被巴里剪辑后作为“渴望名利”的铁证，失去了定义自我的机会。",
+      "preemptive_avoidance": "麦珂提前告知玛莎和黛安娜巴里的套路，并在直播前主动要求修改采访流程，将“是否想当明星”改为“如何理解音乐”。",
+      "bait_and_evidence": "巴里故意留下未剪完的录音带作为诱饵，麦珂则让黛安娜全程记录口述实录，形成与广播稿对立的文字证据。",
+      "comic_villain_behavior": "巴里为了抢功，在直播前疯狂擦拭麦珂风，甚至试图把提词卡塞进自己的口袋，结果被玛莎当场撞见并质问。",
+      "villain_loss": "巴里失去对麦珂言论的独家剪辑权，被制作方暂停宣传职务，无法再单方面定义麦珂形象。",
+      "protagonist_gain": "麦珂获得电台现场的公开表达空间，确立“创作者”而非“商品”的身份，赢得地方文化界初步认可。",
+      "relationship_change": "玛莎与巴里关系破裂，转而完全信任麦珂的判断；黛安娜正式成为麦珂的“声音守护者”。",
+      "continuity_writes": [
+        "麦珂拒绝签署任何关于“明星身份”的口头承诺",
+        "黛安娜记录下巴里试图篡改提纲的证据",
+        "麦珂在直播中提出“副歌后停顿三秒”的艺术主张"
+      ],
+      "state_transitions": [
+        {
+          "domain": "reputation",
+          "entity_id": "CHAR_BARRY_001",
+          "state_key": "control_over_narrative",
+          "from": "独家剪辑权与定义权",
+          "to": "失去话语权，被暂停职务",
+          "irreversible": true,
+          "evidence": "玛莎当众指出巴里篡改提纲，黛安娜出示手写纪要",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHTS_MK_002",
+          "state_key": "self_definition_rights",
+          "from": "无（被动接受定义）",
+          "to": "拥有自我定义权（创作者身份）",
+          "irreversible": true,
+          "evidence": "麦珂在直播中坚持艺术主张并获全场掌声",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_003",
+          "state_key": "trust_in_mother",
+          "from": "母亲依赖经纪人判断",
+          "to": "母子同盟，共同对抗外部压力",
+          "irreversible": false,
+          "evidence": "玛莎站在麦珂身前挡开巴里的逼近",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": [
+        "SRC_GRAMMY_RECORDS"
+      ],
+      "cluster_outcome": "麦珂成功摆脱“傀儡”标签，以独立创作者身份获得《晨光电台》的认可；巴里因擅自篡改提纲被停职，家庭内部决策机制进一步巩固。",
+      "next_event_hook": "麦珂的“三秒停顿”艺术主张引发河湾镇小学音乐教师关注，为后续教材修订埋下伏笔。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 9,
+          "timeline_start": "1969-11-26",
+          "timeline_end": "1969-11-26",
+          "scene": "《晨光电台》后台化妆间",
+          "chapter_goal": "识破巴里的预设提问陷阱，阻止其单方面定义麦珂形象。",
+          "chapter_title": "被篡改的提纲",
+          "participants": [
+            "麦珂·杰森",
+            "巴里·布鲁姆",
+            "玛莎·杰森",
+            "黛安娜·罗文"
+          ],
+          "opening_conflict": "巴里强行递上印有“你准备好成为明星了吗？”的提纲，试图让麦珂在镜头前表态。",
+          "info_gap_use": "麦珂凭借前世记忆，一眼看穿这是巴里惯用的“定调”话术，立即要求黛安娜记录并拒绝签字。",
+          "opponent_reaction": "巴里惊慌失措，试图抢夺提纲并谎称“只是形式问题”，却被玛莎冷冷打断。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "《晨光电台》后台化妆间",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "开场即冲突，巴里递上提纲，麦珂直视其眼睛。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_DOC_001",
+              "timeline_scope": "current",
+              "display_name": "黛安娜手写会议纪要",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂指出提纲中的预设问题不符合创作自由原则",
+            "黛安娜当场记录巴里试图篡改提纲的行为",
+            "玛莎拒绝让麦珂在未修改的提纲上签字",
+            "巴里被迫收回提纲，现场气氛紧张"
+          ],
+          "visible_payoff": "麦珂成功阻止巴里单方面定义其形象，获得现场观众的初步支持。",
+          "ending": "巴里恼羞成怒，扬言要取消直播，但玛莎已联系律师准备应对。",
+          "must_include": [
+            "麦珂拒绝签字",
+            "黛安娜记录行为",
+            "玛莎介入"
+          ],
+          "must_not_include": [
+            "巴里被正式解雇",
+            "麦珂完成直播"
+          ],
+          "detailed_synopsis": "1969年11月23日，《晨光电台》后台，巴里·布鲁姆手持印有“你准备好成为明星了吗？”的提纲，试图诱导麦珂表态。麦珂凭借前世记忆，识破这是巴里惯用的“定调”话术，立即要求黛安娜记录并拒绝签字。玛莎见状，当场制止巴里的施压行为，并强调麦珂的创作自由。巴里惊慌失措，试图抢夺提纲，却被玛莎冷冷打断。黛安娜迅速记录下巴里试图篡改提纲的行为，形成书面证据。麦珂成功阻止了巴里的单方面定义，获得现场观众的初步支持。巴里恼羞成怒，扬言要取消直播，但玛莎已联系律师准备应对。"
+        },
+        {
+          "chapter_id": 10,
+          "timeline_start": "1969-11-26",
+          "timeline_end": "1969-11-26",
+          "scene": "《晨光电台》直播间",
+          "chapter_goal": "在直播中公开反驳巴里的预设叙事，确立“创作者”身份。",
+          "chapter_title": "三秒停顿的宣言",
+          "participants": [
+            "麦珂·杰森",
+            "玛莎·杰森",
+            "巴里·布鲁姆",
+            "主持人"
+          ],
+          "opening_conflict": "巴里试图在直播中强行插入预设问题，麦珂果断打断并重新定义问题。",
+          "info_gap_use": "麦珂利用前世记忆，知道巴里会在第三句提问时切断信号，于是提前准备好“副歌后停顿三秒”的艺术主张，作为反击武器。",
+          "opponent_reaction": "巴里试图插话打断，却被主持人以“尊重艺术家”为由驳回，最终狼狈离场。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "《晨光电台》直播间",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "从后台转场至直播间，镜头切换至主播台。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_DOC_001",
+              "timeline_scope": "current",
+              "purpose": "黛安娜的手写纪要作为麦珂立场的佐证"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在直播中主动提出“副歌后停顿三秒”的艺术主张",
+            "巴里试图插话打断，被主持人驳回",
+            "玛莎在场边展示黛安娜的记录，证明巴里的不当行为",
+            "观众起立鼓掌，巴里狼狈离场"
+          ],
+          "visible_payoff": "麦珂成功确立“创作者”身份，获得全场认可；巴里失去话语权，被停职。",
+          "ending": "麦珂的“三秒停顿”艺术主张引发河湾镇小学音乐教师关注，为后续教材修订埋下伏笔。",
+          "must_include": [
+            "麦珂提出艺术主张",
+            "巴里被打断",
+            "观众鼓掌"
+          ],
+          "must_not_include": [
+            "麦珂签约新厂牌",
+            "巴里被起诉"
+          ],
+          "detailed_synopsis": "1969年11月23日，《晨光电台》直播间内，巴里·布鲁姆试图强行插入预设问题“你准备好成为明星了吗？”，麦珂果断打断，提出“副歌后停顿三秒”的艺术主张，重新定义问题。巴里试图插话打断，却被主持人以“尊重艺术家”为由驳回。玛莎在场边展示黛安娜的记录，证明巴里的不当行为。观众起立鼓掌，巴里狼狈离场。麦珂成功确立“创作者”身份，获得全场认可；巴里失去话语权，被停职。麦珂的“三秒停顿”艺术主张引发河湾镇小学音乐教师关注，为后续教材修订埋下伏笔。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1969",
+    "character_states": [
+      "麦珂：确立创作者身份，掌握自我定义权",
+      "玛莎：完全信任麦珂，建立家庭决策机制",
+      "巴里：失去话语权，被暂停职务",
+      "黛安娜：正式成为麦珂的“声音守护者”"
+    ],
+    "relationship_states": [
+      "麦珂与玛莎：母子同盟，共同对抗外部压力",
+      "麦珂与黛安娜：建立深度信任，共同守护创作自由"
+    ],
+    "rights_and_assets": [
+      "麦珂：拥有自我定义权，拒绝签署任何关于“明星身份”的口头承诺",
+      "黛安娜：持有巴里试图篡改提纲的手写纪要"
+    ],
+    "health_and_location": [
+      "麦珂：健康状况良好，居住在河湾镇原居所",
+      "地点：河湾镇《晨光电台》"
+    ],
+    "open_threads": [
+      "麦珂的“三秒停顿”艺术主张引发河湾镇小学音乐教师关注",
+      "巴里被停职后的报复行动"
+    ],
+    "resolved_threads": [
+      "巴里单方面定义麦珂形象的企图被挫败",
+      "麦珂成功确立“创作者”身份"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "麦珂的“三秒停顿”艺术主张可能引发更多行业关注，需警惕更复杂的商业陷阱。"
+  }
+}

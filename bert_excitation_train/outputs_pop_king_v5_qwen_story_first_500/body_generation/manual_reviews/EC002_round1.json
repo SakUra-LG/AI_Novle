@@ -1,0 +1,18 @@
+{
+  "cluster_id": "EC002",
+  "review_round": 1,
+  "reviewed_chapters": [3, 4],
+  "reviewer": "codex_full_text_inspection",
+  "decision": "regenerate_cluster",
+  "body_manually_edited": false,
+  "strengths": [
+    "第3章把前世记住的三次小指敲击变成今生预判签字动作的信息差",
+    "玛莎温和少言却在深夜反复背诵监护人签字规则，人物反差有效",
+    "第4章的墨水泼西装、三方签名和铅封卷宗形成了快速可见结算"
+  ],
+  "actual_failures": [
+    "第4章正文夹入英文单词‘reporters’",
+    "公证处场景把媒体/旁听座席误写成试镜场景的‘评委席’"
+  ],
+  "required_action": "修改通用正文语言门槛与公证场景称呼检查，由Qwen完整重生成EC002；禁止人工替换正文词语。"
+}

@@ -1,0 +1,215 @@
+{
+  "macro_group_id": "MG001",
+  "event_clusters": [
+    {
+      "cluster_id": "EC005",
+      "chapter_span": [9, 10],
+      "source_event_direction": "前世具体受害：前世宣传人用预设提问和断章引语把麦珂包装成傀儡；本事件独有的前世信息差：1969年11月23日《晨光电台》试镜后台，麦珂记得开场问题‘你准备好成为明星吗？’；今生提前动作：麦珂通过同期电台、报纸或电视的完整回答反制宣传人；第9章可见小赢：第9章麦珂通过记忆中的回答反驳宣传人，获得小赢；第10章新交锋：第10章麦珂在电台现场面对宣传人，展开新动作的交锋；阻力方永久现实损失：宣传人失去独家发言权，麦珂取得公开表达空间；主角现实收益：麦珂获得电台现场的公开表达空间和认可；不可逆结算键：麦珂的反制成功；接回死亡控制主线：削弱2009年死亡背后的保险、版权、医疗或控制体系",
+      "source_event_direction_sha256": "85f2eda06e3d320f39f45b9afc26715f3621d51adc8faa2fd015c2d59e0fb33a",
+      "source_macro_sha256": "3059b4a0b5cfd03d2ca0605993d5a590e39f610fbeb7be2fa3f8e158247e40e5",
+      "name": "被剪切的三秒沉默",
+      "timeline_years": "1969-1970",
+      "main_opponent": "巴里·布鲁姆",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["CS15"],
+      "foreshadow_ids": ["FS01"],
+      "main_characters": ["麦珂·杰森", "巴里·布鲁姆", "玛莎·杰森", "昆廷·琼斯"],
+      "fictional_obstacle": "巴里试图将麦珂塑造成‘听话的玩偶’，利用剪辑技术切断麦珂关于家庭与创作的独立表述，只保留他背诵商业口号的片段。",
+      "prev_life_tragedy": "上一世麦珂被迫接受这种虚假人设，导致公众认为他毫无主见，最终在复出时被资本彻底操控，连开口说话的权利都被剥夺。",
+      "info_gap_from_prev_life": "1969年11月23日《晨光电台》采访提纲中，第一个问题是‘你准备好成为明星吗？’，巴里计划在此处打断并强行插入他的旁白。",
+      "why_previous_life_failed": "上一世的麦珂年幼无知，且被巴里以‘保护形象’为由控制了麦克风，无法在直播中插话，只能被动接受剪辑后的假象。",
+      "preemptive_avoidance": "麦珂提前向母亲和律师确认了直播流程，并在巴里准备打断时，主动要求先完成完整的问答，而非按巴里的剧本走。",
+      "bait_and_evidence": "安全留饵：麦珂故意在巴里准备好的‘标准答案’上停顿，制造悬念。证据：巴里试图强行切入的录音带（由昆廷暗中录制）与现场观众的即时反应记录。",
+      "comic_villain_behavior": "巴里因过度紧张，在试图抢话时差点被自己的领带缠住麦克风，还一本正经地对着空气念稿子，结果被观众当成滑稽戏。",
+      "villain_loss": "巴里失去了对麦珂形象的独家解释权，其伪造的‘标准答案’录音带被公之于众，信誉扫地，被制作方内部停职调查。",
+      "protagonist_gain": "麦珂获得了完整的公开表达空间，其真实想法被公众知晓，确立了‘未签约创作者’的独立形象，赢得地方文化部门关注。",
+      "relationship_change": "玛莎对儿子的判断力更加确信，开始主动协助麦珂对抗外部压力；昆廷对麦珂的专业素养刮目相看，两人建立更深的技术协作关系。",
+      "continuity_writes": [
+        "麦珂在直播中完整回答了关于创作初衷的问题，打破了巴里的预设框架。",
+        "巴里的录音带被作为证据提交给温特律师，成为后续法律攻防的关键材料。",
+        "麦珂的独立形象得到确立，为后续进入教育系统视野奠定基础。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "reputation",
+          "entity_id": "CHAR_MCKE",
+          "state_key": "public_image",
+          "from": "被预设的傀儡形象",
+          "to": "拥有独立思想的创作者",
+          "irreversible": true,
+          "evidence": "麦珂在直播中完整回答问题，打破巴里预设框架",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "job",
+          "entity_id": "CHAR_BARRY",
+          "state_key": "authority_level",
+          "from": "拥有独家解释权",
+          "to": "失去解释权并被停职",
+          "irreversible": true,
+          "evidence": "巴里的录音带被公之于众，暴露其造假行为",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_003",
+          "state_key": "trust_dynamic",
+          "from": "母亲依赖儿子判断",
+          "to": "母子共同决策+母亲主动支持",
+          "irreversible": false,
+          "evidence": "玛莎在直播后主动握住麦珂的手表示支持",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": ["SRC_GRAMMY_RECORDS"],
+      "cluster_outcome": "麦珂成功打破巴里的预设框架，确立了独立创作者形象，巴里失去独家解释权并被停职，母子关系更加紧密，昆廷对麦珂的专业素养刮目相看。",
+      "next_event_hook": "麦珂的独立形象引发地方文化部门关注，邀请其参与小学音乐教材修订试点——此举触发P02阶段‘纸船纪’创作启动，并让维克多·兰斯注意到‘星辰新声’项目异常备注，下令调取温特律师事务所全部往来函件，为下一组法律攻防埋下伏笔。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 9,
+          "timeline_start": "1969-11-23",
+          "timeline_end": "1969-11-23",
+          "scene": "河湾镇《晨光电台》直播现场",
+          "chapter_goal": "在直播中完整回答问题，打破巴里的预设框架，获取小赢。",
+          "chapter_title": "被剪切的三秒沉默",
+          "participants": ["麦珂·杰森", "巴里·布鲁姆", "玛莎·杰森"],
+          "opening_conflict": "巴里试图在直播开始前强行打断麦珂，要求他按预设剧本回答，否则就取消直播资格。",
+          "info_gap_use": "麦珂记得巴里会在第一问后强行打断，因此提前准备好完整回答，并在巴里试图插话时主动提高音量。",
+          "opponent_reaction": "巴里脸色铁青，试图强行切掉麦克风，却被昆廷的技术操作挡回。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇《晨光电台》直播现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "无"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂在直播开始前主动走到麦克风前，示意巴里不要打断。",
+            "巴里试图强行插话，要求麦珂按预设剧本回答。",
+            "麦珂直接无视巴里，开始完整回答第一个问题，声音清晰洪亮。",
+            "巴里试图切断麦克风，却被昆廷的技术操作挡回，直播继续进行。"
+          ],
+          "visible_payoff": "麦珂成功完成了完整回答，打破了巴里的预设框架，赢得了观众的掌声。",
+          "ending": "巴里气急败坏，但无法阻止直播继续，只能眼睁睁看着麦珂展示独立思想。",
+          "must_include": [
+            "麦珂主动走到麦克风前",
+            "巴里试图强行插话",
+            "麦珂完整回答问题"
+          ],
+          "must_not_include": [
+            "巴里被正式停职",
+            "麦珂获得法律文件"
+          ],
+          "detailed_synopsis": "1969年11月23日，《晨光电台》直播现场，巴里·布鲁姆试图在直播开始前强行打断麦珂，要求他按预设剧本回答。麦珂记得巴里会在第一问后强行打断，因此提前准备好完整回答，并在巴里试图插话时主动提高音量。巴里脸色铁青，试图强行切掉麦克风，却被昆廷的技术操作挡回。麦珂直接无视巴里，开始完整回答第一个问题，声音清晰洪亮，打破了巴里的预设框架，赢得了观众的掌声。巴里气急败坏，但无法阻止直播继续，只能眼睁睁看着麦珂展示独立思想。"
+        },
+        {
+          "chapter_id": 10,
+          "timeline_start": "1969-11-24",
+          "timeline_end": "1969-11-24",
+          "scene": "河湾镇《晨光电台》后台及温特律师办公室",
+          "chapter_goal": "利用直播录音带作为证据，彻底击溃巴里的信誉，确立麦珂的独立形象。",
+          "chapter_title": "沉默的反击",
+          "participants": ["麦珂·杰森", "巴里·布鲁姆", "温特律师", "玛莎·杰森"],
+          "opening_conflict": "巴里试图销毁直播录音带，掩盖其造假行为，但被麦珂和温特律师识破。",
+          "info_gap_use": "麦珂记得巴里会在直播后三小时内销毁原始录音带，因此提前让昆廷备份并交给温特律师。",
+          "opponent_reaction": "巴里惊慌失措，试图抢夺录音带，却被温特律师当场制止。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇《晨光电台》后台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "无"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_REC_001",
+              "timeline_scope": "current",
+              "display_name": "《晨光电台》直播原始录音带",
+              "kind": "recording"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_REC_001",
+              "timeline_scope": "current",
+              "purpose": "作为巴里造假行为的直接证据"
+            }
+          ],
+          "action_sequence": [
+            "巴里试图在直播结束后销毁原始录音带，但被昆廷提前备份。",
+            "麦珂将备份的录音带交给温特律师，作为法律证据。",
+            "温特律师当众播放录音带，揭露巴里的造假行为。",
+            "巴里惊慌失措，试图抢夺录音带，却被温特律师当场制止。"
+          ],
+          "visible_payoff": "巴里的造假行为被公之于众，信誉扫地，被制作方内部停职调查。",
+          "ending": "麦珂的独立形象得到确立，为后续进入教育系统视野奠定基础。",
+          "must_include": [
+            "巴里试图销毁录音带",
+            "麦珂将录音带交给温特律师",
+            "温特律师当众播放录音带"
+          ],
+          "must_not_include": [
+            "麦珂获得法律文件",
+            "麦珂进入教育系统"
+          ],
+          "detailed_synopsis": "1969年11月24日，河湾镇《晨光电台》后台，巴里试图销毁直播录音带，掩盖其造假行为，但被麦珂和温特律师识破。麦珂记得巴里会在直播后三小时内销毁原始录音带，因此提前让昆廷备份并交给温特律师。温特律师当众播放录音带，揭露巴里的造假行为。巴里惊慌失措，试图抢夺录音带，却被温特律师当场制止。巴里的造假行为被公之于众，信誉扫地，被制作方内部停职调查。麦珂的独立形象得到确立，为后续进入教育系统视野奠定基础。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1969",
+    "character_states": [
+      {
+        "character_id": "CHAR_MCKE",
+        "state_key": "public_image",
+        "from": "被预设的傀儡形象",
+        "to": "拥有独立思想的创作者"
+      },
+      {
+        "character_id": "CHAR_BARRY",
+        "state_key": "authority_level",
+        "from": "拥有独家解释权",
+        "to": "失去解释权并被停职"
+      }
+    ],
+    "relationship_states": [
+      {
+        "relationship_id": "REL_003",
+        "state_key": "trust_dynamic",
+        "from": "母亲依赖儿子判断",
+        "to": "母子共同决策+母亲主动支持"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset_id": "ART_REC_001",
+        "status": "已作为证据提交给温特律师"
+      }
+    ],
+    "health_and_location": [
+      {
+        "location": "河湾镇原居所",
+        "status": "健康良好"
+      }
+    ],
+    "open_threads": [
+      "1969年试镜录像盒底部隐藏的铜质齿轮",
+      "《晨光电台》访谈中被删副歌的具体旋律轮廓"
+    ],
+    "resolved_threads": [
+      "巴里的造假行为被公之于众，信誉扫地"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "1970年底地方日报专题报道曝光麦珂未签约创作身份，引发州教育部关注，邀请麦珂参与小学音乐教材修订试点——此举触发P02阶段‘纸船纪’创作启动，并让维克多·兰斯注意到‘星辰新声’项目异常备注，下令调取温特律师事务所全部往来函件，为下一组法律攻防埋下伏笔。"
+  }
+}

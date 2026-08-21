@@ -1,0 +1,178 @@
+{
+  "cluster_id": "EC013",
+  "chapter_span": [
+    25,
+    26
+  ],
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "body_edit_policy": "failed_body_is_regenerated_by_qwen_never_manually_patched",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "prior_body_chain_sha256": "12be7326ab8b8e02381a8544ccff2fe6575b5bfc8fa6019510ad7fe6dbcb3acc",
+  "accepted_at": "2026-08-21T10:57:50.788464+00:00",
+  "model": "qwen-plus",
+  "temperature": 0.72,
+  "calls_by_chapter": {
+    "25": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 13.355,
+      "usage": {
+        "prompt_tokens": 5732,
+        "completion_tokens": 1286,
+        "total_tokens": 7018,
+        "prompt_tokens_details": {
+          "cached_tokens": 417
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    },
+    "26": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 16.962,
+      "usage": {
+        "prompt_tokens": 8971,
+        "completion_tokens": 1037,
+        "total_tokens": 10008,
+        "prompt_tokens_details": {
+          "cached_tokens": 4913
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  "prompt_sha256_by_chapter": {
+    "25": "a776bfa92966657b90e1fcf6be7d6455c2769ebc1bedf8368169394fdfa6163a",
+    "26": "5e88172196062e43680c070e0a95488ebbfc68f83eaa87a086c322669c70f639"
+  },
+  "base_prompt_sha256_by_chapter": {
+    "25": "a776bfa92966657b90e1fcf6be7d6455c2769ebc1bedf8368169394fdfa6163a",
+    "26": "5e88172196062e43680c070e0a95488ebbfc68f83eaa87a086c322669c70f639"
+  },
+  "raw_response_sha256_by_chapter": {
+    "25": "d48b28027dd9e77963e6200128625f121b03160f81f7a163b62d5a9334e628f0",
+    "26": "788ad88e285dc01b88e2274bdb8bcb5ba6867689a1d7e8e45a9eb13cc30fe5b9"
+  },
+  "accepted_raw_response_paths_by_chapter": {
+    "25": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC013_chapter_025_attempt_01_a776bfa929_raw.txt",
+    "26": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC013_chapter_026_attempt_01_5e88172196_raw.txt"
+  },
+  "chapter_sha256": {
+    "25": "d48b28027dd9e77963e6200128625f121b03160f81f7a163b62d5a9334e628f0",
+    "26": "788ad88e285dc01b88e2274bdb8bcb5ba6867689a1d7e8e45a9eb13cc30fe5b9"
+  },
+  "chapter_han_chars": {
+    "25": 1792,
+    "26": 1436
+  },
+  "planning_story_id": "planning-be26ba6bb2c83203",
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 13,
+    "through_chapter": 26,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "9e694cba7e78221334b04bd8e9eb375eea184bbefc4bac0b85cd1c472b5e397c",
+    "chapter_card_prefix_sha256": "b9c17f8697dd63a204d1fc7408253957f850b5882948fe5ab45eeb0d15c58346",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "1b90532c57672565e33aa4ddd1aa4452b004114fd6fcdd5898637cbd9fe330ec"
+  },
+  "cluster_sha256": "65653e2f968c55f4c5890dfd46a643acd2c1996c7b668555eec8d5be92eb5818",
+  "card_sha256_by_chapter": {
+    "25": "93de2badf1820473a89b4f6ce3a9d81268bec47af0747e4132fffcaf20b1c226",
+    "26": "58c644eeb94e290a04b7fd9c47950f433e8fbb82161ce17f86da05000baf59c5"
+  },
+  "planning_inputs": {
+    "event_clusters": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\event_clusters_v2.json",
+    "chapter_cards": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\master_ctx_cards_v2.json"
+  },
+  "semantic_critic": {
+    "25": {
+      "han_chars": 1792,
+      "total_chars": 2063,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 0,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "26": {
+      "han_chars": 1436,
+      "total_chars": 1665,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 0,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "joint_semantic_overlap": 0.1292,
+    "settlement_action_terms": [
+      "获得",
+      "账户"
+    ],
+    "rebirth_information_gap_markers": [
+      "前世",
+      "他记得"
+    ],
+    "recent_five_chapter_semantic_comparison": [
+      {
+        "chapter_id": 25,
+        "prior_chapter_id": 20,
+        "semantic_overlap": 0.1053
+      },
+      {
+        "chapter_id": 25,
+        "prior_chapter_id": 21,
+        "semantic_overlap": 0.1342
+      },
+      {
+        "chapter_id": 25,
+        "prior_chapter_id": 22,
+        "semantic_overlap": 0.1467
+      },
+      {
+        "chapter_id": 25,
+        "prior_chapter_id": 23,
+        "semantic_overlap": 0.0955
+      },
+      {
+        "chapter_id": 25,
+        "prior_chapter_id": 24,
+        "semantic_overlap": 0.0957
+      },
+      {
+        "chapter_id": 26,
+        "prior_chapter_id": 20,
+        "semantic_overlap": 0.0934
+      },
+      {
+        "chapter_id": 26,
+        "prior_chapter_id": 21,
+        "semantic_overlap": 0.1104
+      },
+      {
+        "chapter_id": 26,
+        "prior_chapter_id": 22,
+        "semantic_overlap": 0.132
+      },
+      {
+        "chapter_id": 26,
+        "prior_chapter_id": 23,
+        "semantic_overlap": 0.0793
+      },
+      {
+        "chapter_id": 26,
+        "prior_chapter_id": 24,
+        "semantic_overlap": 0.0884
+      }
+    ],
+    "all_joint_failures": [
+      "两章语义片段重合度0.13过高，第二章疑似换词重演第一章"
+    ]
+  },
+  "quality_review_status": "awaiting_manual_read"
+}

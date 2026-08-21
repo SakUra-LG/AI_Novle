@@ -1,0 +1,25 @@
+{
+  "generated_by": "groq",
+  "generation_providers": [
+    "groq",
+    "vectorengine"
+  ],
+  "kind": "macro_blueprint",
+  "identifier": "MG001",
+  "accepted_attempt": "batched_compile",
+  "acceptance_mode": "batched_macro_compile",
+  "component_provenance_files": [
+    "MG001_macro_core_provenance.json",
+    "MG001_macro_direction_EC001_provenance.json",
+    "MG001_macro_direction_EC002_provenance.json",
+    "MG001_macro_direction_EC003_provenance.json",
+    "MG001_macro_direction_EC004_provenance.json",
+    "MG001_macro_direction_EC005_provenance.json"
+  ],
+  "compiled_sha256": "f60b5248ff5c423ec646dfe2bc603357667227cb6ef9886dbe3f3ab29bc814e0",
+  "manual_edits": [],
+  "created_at": "2026-08-15T17:07:04+08:00",
+  "compiler_normalizations": [
+    "fictional_place_aliases"
+  ]
+}

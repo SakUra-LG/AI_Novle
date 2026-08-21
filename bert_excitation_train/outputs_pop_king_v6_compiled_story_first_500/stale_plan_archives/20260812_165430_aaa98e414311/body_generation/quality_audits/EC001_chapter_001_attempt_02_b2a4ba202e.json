@@ -1,0 +1,83 @@
+{
+  "cluster_id": "EC001",
+  "chapter_id": 1,
+  "attempt": 2,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "b2a4ba202e4379d15dccd230f2c3abc22013f085c0f423bd05eb32958f8f1d70",
+  "base_prompt_sha256": "212fbdfac34d24f6c89a243368c286a46cd052704cfd7fa96af924c855b774a4",
+  "body_generator_contract_version": "v6_prompt_chain_semantic_critic_20260812",
+  "raw_response_sha256": "e80848ba3d152adb3593c8d2baf0771c30c435304dbfef6fd4461175696f6a3d",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 21.775,
+    "usage": {
+      "input_tokens": 3980,
+      "output_tokens": 998,
+      "total_tokens": 4978,
+      "prompt_tokens_details": {
+        "cached_tokens": 3840
+      }
+    }
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 1,
+    "through_chapter": 2,
+    "outline_sha256": "aaa98e4143115d54ee43409b902500c9aadf34c074241342c2d994bf120c214f",
+    "event_prefix_sha256": "424e2690c3820c428e61b60986331c1985d062e43732d2a5d758941f57d39d61",
+    "chapter_card_prefix_sha256": "9653a3fcf7fec5e70b9472ea07cb09594c36c8ed3508c2fa39b24325a7140712",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "67e0838542654100a65bf60488f488939b6153aa5f9cb77fb2d562a9d5e4fd46"
+  },
+  "cluster_sha256": "c439aeec393e660dc94e824da382b096899349889c05db9a569db60b1007d0c3",
+  "card_sha256": "9f5cfa5a8d772a58d07c48115771ed8877aab008a26c54888bdc451b177c71c0",
+  "chapter_audit": {
+    "han_chars": 1054,
+    "total_chars": 1247,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 1,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0638,
+    "scene_evidence": [
+      {
+        "location": "圣克莱尔纪念殡仪馆冷藏室",
+        "body_hit": false
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_DEATH_LOG_001",
+        "display_name": "临终听觉残响记录",
+        "body_hit": false
+      }
+    ],
+    "failures": [
+      "汉字数1054，低于1100",
+      "1969年代出现未普及技术：LED",
+      "正文未落到规划场景“圣克莱尔纪念殡仪馆冷藏室”",
+      "正文没有写出本章正式创建的关键对象“临终听觉残响记录”"
+    ]
+  },
+  "failures": [
+    "汉字数1054，低于1100",
+    "1969年代出现未普及技术：LED",
+    "正文未落到规划场景“圣克莱尔纪念殡仪馆冷藏室”",
+    "正文没有写出本章正式创建的关键对象“临终听觉残响记录”"
+  ],
+  "accepted": false
+}

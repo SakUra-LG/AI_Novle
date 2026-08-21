@@ -1,0 +1,43 @@
+{
+  "macro_group_id": "MG001",
+  "event_directions": [
+    {
+      "cluster_id": "EC003",
+      "chapter_span": [5, 6],
+      "opposition_type": "family",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "reveal",
+      "previous_life_harm": "前世因签约时被迫交出母带，导致创作权被夺，失去对作品的控制与收入。",
+      "unique_prev_life_info": "1969年9月3日，克莱德在签约表第三项‘签约环节’后说‘只要签字，马上生效’，并要求立即把母带交给制作方。",
+      "preemptive_action": "麦珂利用记忆差提前让玛莎在签约现场要求阅读完整流程表，随后在签约表旁边贴上自制的‘延时声明’，并让成年律师温特现场公证该声明，使签约环节合法暂停。",
+      "chapter_one_small_win": "第5章，玛莎在签约会议中成功阻止克莱德立即收走母带，现场记录了双方的对话，形成书面证据。",
+      "chapter_two_showdown": "第6章，克莱德试图以口头授权让助理取走母带，温特律师凭借公证副本依法驳回，克莱德被迫撤回快速签约要求，签约流程重新进入审议阶段。",
+      "opponent_permanent_loss": "克莱德失去对母带的直接控制权，制作方的版权让渡计划被迫中止，内部审计报告将其标记为违规操作。",
+      "protagonist_concrete_gain": "麦珂获得母带原件的完整保管权，温特持有公证副本作为法律盾牌，玛莎获得家庭会议制度的正式决策签字权。",
+      "irreversible_outcome_key": "FAMILY‑LOCK‑01",
+      "death_chain_connection": "通过保留母带并阻断快速版权转让，削弱了2009年保险公司利用缺失原始版权证据否认赔偿的依据，为后续诉讼提供关键链条。",
+      "direction": "",
+      "locked_story_brief": "前世乔纳曾截住试镜回函再嫁祸玛莎，今生麦珂用回函到达次序让事实自然显露；玛莎自行决定掌管家庭邮件，乔纳永久失去独占家庭消息的权力"
+    },
+    {
+      "cluster_id": "EC004",
+      "chapter_span": [7, 8],
+      "opposition_type": "institutional",
+      "event_type": "performance",
+      "solution_type": "performance_proof",
+      "death_chain_role": "echo",
+      "previous_life_harm": "前世因临时调换曲目调号导致声带受损，错失《晨光电台》主唱机会，职业生涯受阻。",
+      "unique_prev_life_info": "1969年9月5日，制作人克莱德在彩排时突喊‘把C调改成D调’，导致麦珂在高音段失声。",
+      "preemptive_action": "麦珂提前将彩排曲目顺序和调号记录在手写笔记本，并在彩排前让成年乐手昆廷核对乐谱，确认调号保持原始C调，随后在正式试唱时提供现场录音作为对比证据。",
+      "chapter_one_small_win": "第7章，昆廷在彩排前发现克莱德的调号更改指令与原稿不符，拒绝执行，彩排顺利进行，麦珂的声线完整保留。",
+      "chapter_two_showdown": "第8章，克莱德坚持在正式录制时仍要求调号变更，麦珂现场播放彩排录音证明调号错误导致声带受压，现场导演与技术人员支持麦珂，克莱德被迫撤回指令，正式表演以原调完成并获得全场掌声。",
+      "opponent_permanent_loss": "克莱德失去对演出调度的独裁权，制作方内部对其指令的信任度下降，导致其在后续项目中被降职。",
+      "protagonist_concrete_gain": "麦珂获得正式表演的录音母带，作为未来教材版权的原始素材；昆廷因坚持专业标准获得制作方的公开表扬，提升了麦珂在行业内的声誉。",
+      "irreversible_outcome_key": "PERF‑PROOF‑02",
+      "death_chain_connection": "保留原始录音并证实调号争议，形成明确的版权归属记录，削弱2009年因缺失原始音源而被保险公司拒赔的论点，为后续医疗赔偿提供客观证据。",
+      "direction": "",
+      "locked_story_brief": "前世音乐指导临时换调令麦珂失声并落选，今生他记得口令和节目顺序，先请成年乐手核对再用真正试唱证明实力；操弄者失去排练职务，麦珂取得正式表演席位"
+    }
+  ]
+}

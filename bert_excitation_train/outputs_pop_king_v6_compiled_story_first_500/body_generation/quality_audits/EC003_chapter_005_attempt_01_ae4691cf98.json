@@ -1,0 +1,112 @@
+{
+  "cluster_id": "EC003",
+  "chapter_id": 5,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "ae4691cf98cd5f3c0f4a961ebf206bdadee6784b63cb9aefd1fe82a4933ba6c3",
+  "base_prompt_sha256": "ae4691cf98cd5f3c0f4a961ebf206bdadee6784b63cb9aefd1fe82a4933ba6c3",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "282124ab76d3dda0616071f8312182611645dd01495a1624cff1242a3c2c97c8",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 13.162,
+    "usage": {
+      "prompt_tokens": 4587,
+      "completion_tokens": 1078,
+      "total_tokens": 5665,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 3,
+    "through_chapter": 6,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "5a820a9cd6339e036c5d5f7a5b827c6e07ab7fbb68a82672dfe612c94358e2b5",
+    "chapter_card_prefix_sha256": "b411810f5a3d46032ae187642dbc32f5d5aae3784fdcdae1a050841deac59a07",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "bd95ff5f2a93803dffdd86277814a67488acf6cf0e59af1573e0900888d0b519"
+  },
+  "cluster_sha256": "e373d3b897e2956568cbf3f21c3f43ea88886c37f132278e3ba5178022051089",
+  "card_sha256": "d264510455709b478ea8d2bc547e3e5d9a36d8edcbd1c60ca0ba995ecd8af237",
+  "chapter_audit": {
+    "han_chars": 1500,
+    "total_chars": 1717,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "壁炉旁报纸堆",
+        "exact": false,
+        "bigram_coverage": 0.8,
+        "matched": true
+      },
+      {
+        "anchor": "加急函邮戳",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "玛莎的质疑",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 1,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0329,
+    "scene_evidence": [
+      {
+        "location": "杰森家客厅",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_005_MAIL",
+        "display_name": "晨光电台加急通知函",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.033，疑似写成了另一件事",
+      "正文未落到规划场景“杰森家客厅”",
+      "正文没有写出本章正式创建的关键对象“晨光电台加急通知函”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.033，疑似写成了另一件事",
+      "正文未落到规划场景“杰森家客厅”",
+      "正文没有写出本章正式创建的关键对象“晨光电台加急通知函”"
+    ]
+  },
+  "failures": [
+    "两章存在88字连续重复片段，第二章疑似重演第一章"
+  ],
+  "accepted": false,
+  "joint_rejected": true,
+  "joint_failures": [
+    "两章存在88字连续重复片段，第二章疑似重演第一章"
+  ]
+}

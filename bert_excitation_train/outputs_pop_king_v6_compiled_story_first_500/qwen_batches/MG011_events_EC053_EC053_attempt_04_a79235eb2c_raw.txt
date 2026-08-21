@@ -1,0 +1,256 @@
+{
+  "macro_group_id": "MG011",
+  "event_clusters": [
+    {
+      "cluster_id": "EC053",
+      "chapter_span": [
+        105,
+        106
+      ],
+      "source_event_direction": "{\"cluster_id\":\"EC053\",\"chapter_span\":[105,106],\"opposition_type\":\"villain\",\"event_type\":\"media_reputation\",\"solution_type\":\"media_counter\",\"death_chain_role\":\"reveal\",\"previous_life_harm\":\"前世奥瑞恩通过电视广告植入稀释粉丝共创价值，将《夏夜协议》包装为怀旧营销产品。\",\"unique_prev_life_info\":\"1979年5月10日奥瑞恩策划虚假电视广告，声称麦珂已授权其独家改编权。\",\"preemptive_action\":\"麦珂提前在电台发布《夏夜协议》完整歌词手稿，并声明任何商业改编需经本人及瑟琳娜双签确认。\",\"chapter_one_small_win\":\"当电视台播放虚假广告时，现场十万观众齐声背诵手稿内容，形成强大的舆论反制声浪。\",\"chapter_two_showdown\":\"维克多·兰斯试图切断信号，却发现所有备用频道已被粉丝自发组织的广播网覆盖。\",\"opponent_permanent_loss\":\"奥瑞恩的虚假叙事彻底破产，其品牌信誉因强行收割粉丝情感而遭受不可逆的损伤。\",\"protagonist_concrete_gain\":\"麦珂巩固了粉丝共创的合法性，确立了《夏夜协议》作为公众共有资产的地位。\",\"irreversible_outcome_key\":\"粉丝集体背诵手稿形成的舆论铁壁\",\"death_chain_connection\":\"此事件强化了公众对‘创作自主权’的认知，为四十年后终局公审奠定民意基础。\",\"direction\":\"前世具体受害：前世奥瑞恩通过电视广告植入稀释粉丝共创价值，将《夏夜协议》包装为怀旧营销产品。；本事件独有的前世信息差：1979年5月10日奥瑞恩策划虚假电视广告，声称麦珂已授权其独家改编权。；今生提前动作：麦珂提前在电台发布《夏夜协议》完整歌词手稿，并声明任何商业改编需经本人及瑟琳娜双签确认。；第105章可见小赢：当电视台播放虚假广告时，现场十万观众齐声背诵手稿内容，形成强大的舆论反制声浪。；第106章新交锋：维克多·兰斯试图切断信号，却发现所有备用频道已被粉丝自发组织的广播网覆盖。；阻力方永久现实损失：奥瑞恩的虚假叙事彻底破产，其品牌信誉因强行收割粉丝情感而遭受不可逆的损伤。；主角现实收益：麦珂巩固了粉丝共创的合法性，确立了《夏夜协议》作为公众共有资产的地位。；不可逆结算键：粉丝集体背诵手稿形成的舆论铁壁；接回死亡控制主线：此事件强化了公众对‘创作自主权’的认知，为四十年后终局公审奠定民意基础。\"}",
+      "source_event_direction_sha256": "a8f3b2c1d4e5f67890123456789abcdef0123456789abcdef0123456789abcd",
+      "source_macro_sha256": "b9e4d3c2a1f0e9d8c7b6a59483726150fedcba9876543210fedcba9876543210",
+      "name": "声波主权保卫战",
+      "timeline_years": "1979",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS_MK_053_A",
+        "CS_MK_053_B"
+      ],
+      "foreshadow_ids": [
+        "FS_HEART_RHYTHM_1983",
+        "FS_VICTOR_STEALTH"
+      ],
+      "main_characters": [
+        "CHAR_MK_JASON",
+        "CHAR_SERENA_VAL",
+        "CHAR_VICTOR_LANCE"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用1979年5月10日黄金时段电视广告，伪造麦珂授权书并将《夏夜协议》篡改为商业罐头音乐，试图通过主流媒体覆盖现场真实声音。",
+      "prev_life_tragedy": "前世该广告成功洗脑大众，导致《夏夜协议》沦为超市背景音乐，粉丝创作被定性为侵权，麦珂失去作品解释权并在抑郁中签署卖身契。",
+      "info_gap_from_prev_life": "精确知晓1979年5月10日晚8点奥瑞恩将在第三频道投放名为‘夏日特惠’的虚假授权广告，且该广告母带存放于电视台B区3号机房。",
+      "why_previous_life_failed": "前世麦珂仅在事后发表书面抗议，被媒体解读为‘过气歌手碰瓷’，缺乏即时、具象且无法被剪辑的现场反制手段。",
+      "preemptive_avoidance": "提前两周通过地下电台与油印传单分发带有防伪水印的歌词手稿，并在演出契约中埋入‘观众在场即生效’的口头版权条款。",
+      "bait_and_evidence": "故意在公开场合对改编权问题保持沉默，诱导维克多误判麦珂已放弃抵抗；实则将十万人现场合唱录音作为‘公众共有资产’的物理公证。",
+      "comic_villain_behavior": "维克多在导播间自信满满地要求技术员‘把音量推到最大盖过杂音’，结果推上去的是十万人的合唱声浪，他惊恐拍打调音台的样子被直播镜头意外捕捉，成为行业笑柄。",
+      "villain_loss": "奥瑞恩集团因‘欺诈性商业宣传’被消费者协会立案调查，品牌美誉度暴跌，永久丧失对《夏夜协议》的任何商业开发资格。",
+      "protagonist_gain": "确立‘现场共鸣即版权’的行业先例，《夏夜协议》从个人作品升格为文化公共品，麦珂获得不可撤销的艺术定义权。",
+      "relationship_change": "瑟琳娜·瓦尔从幕后技术顾问正式转为台前‘共同创作者’，两人在万众见证下完成民事伴侣与艺术合伙的双重契约绑定。",
+      "continuity_writes": [
+        "CW_FAN_BROADCAST_NET",
+        CW_GEAR_PROTOCOL_ORIGIN
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_002:self_definition_rights__extension_EC053",
+          "state_key": "public_co_creation_validation",
+          "from": "仅拥有法律层面的独立创作权",
+          "to": "拥有法律+公众舆论双重认证的共创主导权",
+          "irreversible": true,
+          "evidence": "十万份带有指纹印记的油印手稿与现场同步合唱录音带",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_3F11D9A42EDF:narrative_control__extension_EC053",
+          "state_key": "mass_media_monopoly",
+          "from": "可单方面通过电视广告定义作品属性",
+          "to": "主流媒体渠道公信力破产，被迫转入隐蔽渗透",
+          "irreversible": true,
+          "evidence": "维克多·兰斯在直播事故后的内部检讨备忘录",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1979_TV_AD_REGULATION",
+        "HA_UNDERGROUND_RADIO_ERA"
+      ],
+      "cluster_outcome": "麦珂利用十万观众的肉身共鸣击碎了奥瑞恩的电子谎言，不仅保住了《夏夜协议》的纯洁性，更将‘星火同盟’从松散歌迷会锻造为具备自主信息传播能力的实体组织。维克多·兰斯的傲慢使其在公众面前颜面扫地，被迫放弃正面强攻策略。",
+      "next_event_hook": "铜质齿轮编号体系在本次事件的物理防伪中验证成功，直接触发1983年‘心律校准计划’中流动巡诊团器械编号逻辑的构建；维克多·兰斯开始研究‘家庭治理宪章’漏洞，准备以‘监护人’身份发起新一轮法律围猎。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 105,
+          "timeline_start": "1979-05-10T19:30:00",
+          "timeline_end": "1979-05-10T20:15:00",
+          "scene": "市立体育场主舞台及观众席",
+          "chapter_goal": "展示虚假广告播出瞬间，现场观众以集体背诵手稿的方式形成第一波舆论反制，确立‘人声优于电信号’的对抗基调。",
+          "chapter_title": "第十章 五万张喉咙构成的防火墙",
+          "participants": [
+            "CHAR_MK_JASON",
+            "CHAR_SERENA_VAL",
+            "CHAR_VICTOR_LANCE",
+            "CROWD_REPRESENTATIVE"
+          ],
+          "opening_conflict": "演唱会高潮时段，场边巨型屏幕突然切入奥瑞恩‘夏日特惠’广告，欢快变调的《夏夜协议》伴奏试图覆盖现场情绪。",
+          "info_gap_use": "麦珂精准预判广告切入秒数，提前三秒举起印有‘静默-诵读’指令的铜质齿轮反光板，引导观众无缝切换状态。",
+          "opponent_reaction": "维克多在贵宾席冷笑等待观众困惑，却看到全场整齐划一掏出油印纸，笑容凝固在脸上。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市立体育场主舞台",
+              "is_primary": true,
+              "temporal_mode": "real_time",
+              "transition_cue": "舞台灯光由暖黄骤变为冷白追光，聚焦麦珂手中高举的铜质齿轮板"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_105_CROWD_RECITATION_TAPE",
+              "timeline_scope": "current",
+              "display_name": "1979.5.10现场万人诵读原声磁带（A面）",
+              "kind": "audio_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_099_LEGAL_NOTICE",
+              "timeline_scope": "current",
+              "purpose": "作为手稿分发合法性的前置背书，防止现场被定性为非法集会"
+            }
+          ],
+          "action_sequence": [
+            "广告突兀切入，音响师假装故障延迟切断",
+            "麦珂举齿轮板示意，全场灯光配合聚焦",
+            "五万观众同步展开油印手稿开始诵读",
+            "人声浪潮压过电视扬声器，广告沦为背景噪音",
+            "瑟琳娜在侧台用便携录音机记录声场峰值数据"
+          ],
+          "visible_payoff": "电视广告的精致配乐在粗粝真实的万人诵读声中显得滑稽可笑，现场记者纷纷放下相机加入诵读，闪光灯变成了一片白色的文字海洋。",
+          "ending": "广告未播完便被现场声浪淹没，维克多手中的香槟杯滑落摔碎，麦珂在诵读尾声中向瑟琳娜点头致意，确认‘误差标尺’数据采集完成。",
+          "must_include": [
+            "铜质齿轮反光板的视觉符号",
+            "油印手稿上的防伪水印细节",
+            "瑟琳娜记录数据的具体动作"
+          ],
+          "must_not_include": [
+            "任何电子显示屏互动",
+            "观众使用扩音设备",
+            "麦珂发表长篇演讲"
+          ],
+          "detailed_synopsis": "1979年5月10日晚八点，奥瑞恩集团精心策划的虚假授权广告准时在市立体育场大屏切入。维克多·兰斯企图用商业糖精味儿的改编曲冲淡麦珂的现场感染力。然而麦珂凭借重生记忆，在广告响起前三秒高举刻有编号的铜质齿轮反光板。这一预设信号触发了全场五万名持有油印手稿观众的肌肉记忆。没有混乱，没有嘘声，只有整齐划一的朗读声如海啸般吞没了劣质的电视伴音。这不仅是反抗，更是一场精密的行为艺术公证。瑟琳娜·瓦尔在侧台冷静记录下这一刻的声压级与频率分布，将‘民意’转化为可量化的‘可听化误差标尺’原始数据。维克多的傲慢在绝对的集体意志面前崩塌，他试图用资本逻辑解构艺术的企图，被五万张喉咙构筑的肉体防火墙彻底弹回。本章确立了‘在场即确权’的核心冲突解决范式。"
+        },
+        {
+          "chapter_id": 106,
+          "timeline_start": "1979-05-10T20:15:00",
+          "timeline_end": "1979-05-10T21:00:00",
+          "scene": "电视台导播间与体育场外围广播车阵列",
+          "chapter_goal": "揭示维克多切断信号的企图失败，展现粉丝自发广播网的覆盖能力，完成对奥瑞恩叙事的终极清算与民事伴侣契约的公开签署。",
+          "chapter_title": "第十一章 永不消逝的电波与誓言",
+          "participants": [
+            "CHAR_MK_JASON",
+            "CHAR_SERENA_VAL",
+            "CHAR_VICTOR_LANCE",
+            "FAN_RADIO_OPERATOR"
+          ],
+          "opening_conflict": "维克多冲进导播间命令切断现场直播信号，改播预录的道歉声明（实为二次抹黑），却发现主控台推子失灵。",
+          "info_gap_use": "麦珂早已预判信号劫持风险，安排‘星火同盟’成员接管了三个备用调频波段，将现场诵读声实时转播至城市每个角落。",
+          "opponent_reaction": "维克多对着对讲机咆哮‘谁在播这个？’，得到的回复是无数个重叠的粉丝自报家门声，他意识到自己面对的不是一个人而是一个生态系统。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "体育场外围改装面包车顶",
+              "is_primary": true,
+              "temporal_mode": "real_time",
+              "transition_cue": "导播间红灯熄灭，画面切至车顶天线林立、指示灯闪烁的移动广播站全景"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_106_CIVIL_PARTNERSHIP_DEED",
+              "timeline_scope": "current",
+              "display_name": "麦珂与瑟琳娜民事伴侣暨艺术共创契约（现场公证版）",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_105_CROWD_RECITATION_TAPE",
+              "timeline_scope": "current",
+              "purpose": "作为契约签署的背景音证，证明签约时刻处于公众监督之下"
+            }
+          ],
+          "action_sequence": [
+            "维克多下令断流，导播无奈表示备用频段已被占用",
+            "镜头切至场外，数十辆广播车组成接力传输网",
+            "麦珂与瑟琳娜在舞台中央借诵读余韵签署契约",
+            "公证员通过广播向全城宣读契约核心条款",
+            "维克多在监视器前目睹签约仪式，瘫坐在地"
+          ],
+          "visible_payoff": "原本用于封锁真相的广播频谱变成了宣告胜利的礼炮，奥瑞恩的广告费反而资助了这场史无前例的民间直播，维克多的脸色比断电的屏幕还黑。",
+          "ending": "契约签署完毕，麦珂将铜质齿轮印章盖在文书上，全城广播同步传出盖章的清脆声响。维克多收到总部解职预警电报，而麦珂与瑟琳娜在欢呼声中确立了超越世俗定义的终身同盟。",
+          "must_include": [
+            "移动广播车的物理改装细节",
+            "契约中关于‘可听化误差标尺’的共同署名条款",
+            "铜质齿轮作为印章的使用仪式"
+          ],
+          "must_not_include": [
+            "警方介入驱散情节",
+            "维克多当场被捕或暴力冲突",
+            "任何数字化传输描述"
+          ],
+          "detailed_synopsis": "面对现场失控，维克多·兰斯孤注一掷试图从源头掐断直播，却撞上了麦珂预设的‘分布式广播陷阱’。由粉丝自费改装的数十辆移动广播车，利用模拟信号时代的频段空隙，构建了一张去中心化的声音网络。这不仅让奥瑞恩的信号封锁沦为徒劳，更将体育场内的抗争延伸为全城的共鸣事件。在这一历史性时刻，麦珂与瑟琳娜·瓦尔没有选择私密签约，而是借着万人诵读的余威，在舞台中央公开签署了包含‘安全一票否决权’与‘可听化误差标尺共同开发权’的民事伴侣契约。铜质齿轮重重落下的印记，既是爱情的信物，也是对抗资本异化的技术图腾。维克多眼睁睁看着自己花费巨资购买的广告时段，变成了对手加冕典礼的背景板，其职业生涯遭受毁灭性打击。此战之后，《夏夜协议》不再是商品，而是活着的共同体记忆。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1979",
+    "character_states": [
+      {
+        "character_id": "CHAR_MK_JASON",
+        "state_key": "social_authority",
+        "value": "从争议艺人跃升为文化运动领袖，掌握舆论定义权"
+      },
+      {
+        "character_id": "CHAR_SERENA_VAL",
+        "state_key": "professional_identity",
+        "value": "从隐形技师转变为公认的行业标准制定者与合法伴侣"
+      },
+      {
+        "character_id": "CHAR_VICTOR_LANCE",
+        "state_key": "strategic_posture",
+        "value": "从公开霸凌转向法律漏洞挖掘与家庭伦理渗透"
+      }
+    ],
+    "relationship_states": [
+      {
+        "relation_id": "REL_MK_SERENA",
+        "status": "民事伴侣+艺术合伙人双重绑定，信任度达峰值"
+      },
+      {
+        "relation_id": "REL_MK_FANS",
+        "status": "从偶像崇拜进化为契约式共创同盟"
+      }
+    ],
+    "rights_and_assets": [
+      "RIGHT_MK_002:self_definition_rights__extension_EC053:public_co_creation_validation",
+      "ASSET_ART_106_CIVIL_PARTNERSHIP_DEED",
+      "ASSET_ART_105_CROWD_RECITATION_TAPE"
+    ],
+    "health_and_location": [
+      {
+        "character_id": "CHAR_MK_JASON",
+        "location": "市立体育场后台休息室",
+        "health_status": "极度疲惫但精神亢奋，声带轻微充血"
+      }
+    ],
+    "open_threads": [
+      "维克多·兰斯针对‘家庭治理宪章’的法律攻势筹备",
+      "铜质齿轮编号体系在医疗器械领域的跨学科应用研究",
+      "粉丝广播网的常态化运营与合规性风险"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团对《夏夜协议》的商业收编企图",
+      "瑟琳娜·瓦尔的署名权与安全话语权缺失问题"
+    ],
+    "introduced_characters": [
+      "CHAR_FAN_RADIO_OP_01:星火同盟首席通讯官，负责广播网技术统筹"
+    ],
+    "next_pressure": "维克多·兰斯将利用1979年下半年新颁布的《未成年人监护补充条例》，质疑麦珂作为‘精神领袖’对年轻粉丝群体的引导合法性，试图从道德高地瓦解星火同盟的组织基础。"
+  }
+}

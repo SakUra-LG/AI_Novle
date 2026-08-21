@@ -1,0 +1,287 @@
+{
+  "macro_group_id": "MG032",
+  "event_clusters": [
+    {
+      "cluster_id": "EC156",
+      "chapter_span": [
+        311,
+        312
+      ],
+      "source_event_direction": "前世具体受害：卡尔团队利用剪辑纪录片将麦珂塑造成失控天才，剥夺其版权解释权。；本事件独有的前世信息差：前世麦珂因未公开原始素材而被舆论反噬，导致授权书被伪造者利用。；今生提前动作：麦珂邀请艾琳启动‘午夜星轨’特别季，连续十六周同步播出未剪辑磁带波形图。；第311章可见小赢：首期节目展示1977年工坊少年面部特写，公众开始质疑纪录片真实性。；第312章新交锋：卡尔团队紧急召开发布会指责麦珂泄露隐私，却被现场观众拿出法庭录像反驳。；阻力方永久现实损失：行业自律委员会暂停卡尔团队从业资格两年，其公信力彻底崩塌。；主角现实收益：《静默增益》地图卡激活率突破91.3%，四十三处工坊实现自主盈亏平衡。；不可逆结算键：EC156_Public_Trust_Reversal；接回死亡控制主线：切断卡尔团队通过篡改叙事操控麦珂命运的关键链条。",
+      "source_event_direction_sha256": "5f5c0c8869de2f3e96022759fa65b13e73228c0b9354e8a75387c71b2338efd5",
+      "source_macro_sha256": "19aaee43c3ca4964385485b136596c7ded09d449d939a51b4cfce3260ce92f8b",
+      "name": "午夜星轨：真相的十六周回响",
+      "timeline_years": "1997—1998",
+      "main_opponent": "卡尔·斯特林（团队核心）与维克多·兰斯（幕后推手）",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS10"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "艾琳",
+        "卡尔·斯特林",
+        "瑟琳娜",
+        "1977年工坊少年"
+      ],
+      "fictional_obstacle": "卡尔团队利用行业自律委员会发布暂停令，试图切断《午夜星轨》播出并销毁原始胶片；同时伪造授权书叙事，将麦珂塑造成‘失控天才’以剥夺其版权解释权。",
+      "prev_life_tragedy": "前世麦珂因未公开原始素材而被舆论反噬，导致授权书被伪造者利用，最终失去对作品的控制权并陷入法律泥潭。",
+      "info_gap_from_prev_life": "前世麦珂不知维克多销毁证据的具体顺序和盲点，也未掌握1977年工坊少年的真实姓名与现居地；今生麦珂提前锁定1979年授权书签署日为11月17日午后三点，此时麦珂正在河湾镇法院，有法庭录像为铁证。",
+      "why_previous_life_failed": "缺乏物理证据链支撑，过度依赖口头辩论，未能预判对手销毁介质的时间点。",
+      "preemptive_avoidance": "麦珂邀请艾琳启动‘午夜星轨’特别季，连续十六周同步播出未剪辑磁带波形图，并在维克多销毁现场设置物理隔离备份系统，精准预判其藏匿位置。",
+      "bait_and_evidence": "首期节目展示1977年工坊少年面部特写，公众开始质疑纪录片真实性；卡尔团队紧急召开发布会指责麦珂泄露隐私，却被现场观众拿出法庭录像反驳。",
+      "comic_villain_behavior": "卡尔在发布会上情绪失控，试图用‘行业机密’为由掩盖事实，却因口误暴露了维拉德图书伪造授权书的签署日期与麦珂实际行踪矛盾；维克多在后台疯狂擦拭胶片盒，却因慌乱遗漏了标号'S95-B-RW'的废弃样带。",
+      "villain_loss": "行业自律委员会暂停卡尔团队从业资格两年，其公信力彻底崩塌；维克多·兰斯陷入恐慌，开始疯狂清理所有物理介质但已漏掉关键样本。",
+      "protagonist_gain": "《静默增益》地图卡激活率突破91.3%，四十三处工坊实现自主盈亏平衡；麦珂完全收回《静默增益》版权主导权，实体销量突破九十八万张。",
+      "relationship_change": "麦珂与艾琳建立基于‘真相档案’的深度职业联盟；麦珂与瑟琳娜完成家庭权力结构的制度化重构；维克多与麦珂进入敌对取证阶段。",
+      "continuity_writes": [
+        "EC156_Public_Trust_Reversal",
+        "S95-B-RW_Evidence_Captured_Partial"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016",
+          "state_key": "trust_protocols__extension_EC156",
+          "from": "none",
+          "to": "legally_bound_physical_only",
+          "irreversible": true,
+          "evidence": "ART_307_WORKSHOP_WALL_PHOTO",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "trust_protocols"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "TEAM_KARL_001",
+          "state_key": "industry_standing",
+          "from": "active_operator",
+          "to": "suspended_two_years",
+          "irreversible": true,
+          "evidence": "COURT_RECORD_1979_NOV_17",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "health",
+          "entity_id": "MCKE_HEALTH",
+          "state_key": "physiological_optimal",
+          "from": "stable",
+          "to": "optimal_four_years",
+          "irreversible": false,
+          "evidence": "MEDICAL_LOG_1997",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": [
+        "1977_WORKSHOP_FACIAL_RECOGNITION",
+        "1979_COURT_VERIFICATION"
+      ],
+      "cluster_outcome": "麦珂通过舆论战与技术取证的双重打击，彻底粉碎卡尔团队的伪造授权书叙事，确立了对《静默增益》的绝对主导权，并为后续医疗造假调查埋下伏笔。",
+      "next_event_hook": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 311,
+          "timeline_start": "1997-11-22",
+          "timeline_end": "1997-11-22",
+          "scene": "河湾镇媒体中心演播室",
+          "chapter_goal": "首期节目播出，展示1977年工坊少年面部特写，引发公众质疑。",
+          "chapter_title": "第311章：未剪辑的童年面孔",
+          "participants": [
+            "麦珂",
+            "艾琳",
+            "卢卡斯·陈（1977年工坊少年）",
+            "记者团"
+          ],
+          "opening_conflict": "卡尔团队试图通过行业自律委员会发布暂停令，阻止节目播出；麦珂则利用前世记忆，提前锁定1977年工坊少年的真实身份并策动其出庭。",
+          "info_gap_use": "麦珂知晓1979年授权书签署日为11月17日午后三点，此时自己正在河湾镇法院，有法庭录像为铁证，直接反驳卡尔团队的伪造叙事。",
+          "opponent_reaction": "卡尔团队紧急联系媒体，试图将事件定性为‘麦珂泄露隐私’，并散布谣言称工坊少年是虚构人物。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇媒体中心演播室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "镜头切换至1977年工坊墙面涂装特写"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_311_EPISODE_01_RAW",
+              "timeline_scope": "current",
+              "display_name": "《午夜星轨》特别季第一期未剪辑波形图",
+              "kind": "audio_visual_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂主持首期节目，同步播放未剪辑磁带波形图，展示1977年工坊少年面部特写。",
+            "卢卡斯·陈（1977年工坊少年）现身说法，讲述当年经历，与纪录片内容形成对比。",
+            "记者团现场提问，麦珂引用法庭录像证明1979年授权书签署日的矛盾。",
+            "卡尔团队代表试图打断节目，被安保人员拦下。"
+          ],
+          "visible_payoff": "公众开始质疑纪录片真实性，工坊少年成为焦点证人。",
+          "ending": "节目结束，收视率突破历史峰值，卡尔团队陷入被动。",
+          "must_include": [
+            "1977年工坊少年面部特写",
+            "未剪辑磁带波形图",
+            "法庭录像引用"
+          ],
+          "must_not_include": [
+            "康拉德医生出场",
+            "二维码或公众媒体提及"
+          ],
+          "detailed_synopsis": "麦珂在河湾镇媒体中心主持《午夜星轨》特别季首期节目，同步播放未剪辑磁带波形图，重点展示1977年工坊少年面部特写。卢卡斯·陈作为真实当事人现身说法，揭露纪录片中的虚假情节。记者团现场提问，麦珂引用1979年11月17日午后三点的法庭录像，证明当时自己正在法院，而非签约现场，直接驳斥卡尔团队的伪造授权书叙事。卡尔团队代表试图打断节目，被安保人员拦下。节目播出后，公众开始质疑纪录片真实性，工坊少年成为焦点证人，卡尔团队陷入被动。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_307_WORKSHOP_WALL_PHOTO",
+              "timeline_scope": "previous_life",
+              "purpose": "作为1977年工坊少年身份的铁证"
+            }
+          ]
+        },
+        {
+          "chapter_id": 312,
+          "timeline_start": "1997-11-23",
+          "timeline_end": "1997-11-23",
+          "scene": "行业自律委员会听证会大厅",
+          "chapter_goal": "卡尔团队紧急召开发布会指责麦珂泄露隐私，却被现场观众拿出法庭录像反驳，最终导致公信力崩塌。",
+          "chapter_title": "第312章：法庭录像的反杀",
+          "participants": [
+            "卡尔·斯特林",
+            "维克多·兰斯",
+            "麦珂",
+            "瑟琳娜",
+            "行业自律委员会成员",
+            "公众代表"
+          ],
+          "opening_conflict": "卡尔团队召开紧急发布会，指责麦珂泄露隐私并试图销毁原始胶片；麦珂则利用前世记忆，提前在维克多销毁现场设置物理隔离备份系统，截获被遗漏的'S95-B-RW'废弃样带。",
+          "info_gap_use": "麦珂知晓维克多销毁证据的具体顺序和盲点，能精准预判其藏匿位置，提前建立物理隔离的备份系统。",
+          "opponent_reaction": "卡尔在发布会上情绪失控，试图用‘行业机密’为由掩盖事实，却因口误暴露了维拉德图书伪造授权书的签署日期与麦珂实际行踪矛盾；维克多在后台疯狂擦拭胶片盒，却因慌乱遗漏了标号'S95-B-RW'的废弃样带。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "行业自律委员会听证会大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "观众席突然有人举起法庭录像设备"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_309_S95_B_RW_TAPE",
+              "timeline_scope": "current",
+              "purpose": "截获被维克多遗漏的废弃样带，内含关键医疗造假录音"
+            }
+          ],
+          "action_sequence": [
+            "卡尔团队召开紧急发布会，指责麦珂泄露隐私并试图销毁原始胶片。",
+            "现场观众突然举起法庭录像设备，播放1979年11月17日麦珂在法院的记录，直接反驳卡尔团队的指控。",
+            "卡尔情绪失控，口误暴露伪造授权书的签署日期与麦珂实际行踪矛盾。",
+            "维克多在后台疯狂擦拭胶片盒，却因慌乱遗漏了标号'S95-B-RW'的废弃样带，被麦珂团队截获。"
+          ],
+          "visible_payoff": "行业自律委员会暂停卡尔团队从业资格两年，其公信力彻底崩塌；麦珂团队截获'S95-B-RW'废弃样带，内含关键医疗造假录音。",
+          "ending": "卡尔团队陷入被动，维克多开始疯狂清理所有物理介质但已漏掉关键样本。",
+          "must_include": [
+            "法庭录像播放",
+            "卡尔口误暴露矛盾",
+            "S95-B-RW样带截获"
+          ],
+          "must_not_include": [
+            "康拉德医生出场",
+            "二维码或公众媒体提及"
+          ],
+          "detailed_synopsis": "卡尔团队召开紧急发布会，指责麦珂泄露隐私并试图销毁原始胶片。现场观众突然举起法庭录像设备，播放1979年11月17日麦珂在法院的记录，直接反驳卡尔团队的指控。卡尔情绪失控，口误暴露伪造授权书的签署日期与麦珂实际行踪矛盾。维克多在后台疯狂擦拭胶片盒，却因慌乱遗漏了标号'S95-B-RW'的废弃样带，被麦珂团队截获。行业自律委员会暂停卡尔团队从业资格两年，其公信力彻底崩塌；麦珂团队截获'S95-B-RW'废弃样带，内含关键医疗造假录音，为后续调查埋下伏笔。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_RECORD_1979_NOV_17",
+              "timeline_scope": "previous_life",
+              "purpose": "作为反驳卡尔团队伪造授权书的关键证据",
+              "source_artifact_id": "COURT_RECORD_1979_NOV_17"
+            }
+          ]
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "艾琳",
+        "卡尔·斯特林",
+        "瑟琳娜",
+        "1977年工坊少年（卢卡斯·陈）"
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {
+        "entity_id": "MCKE",
+        "state_key": "authority_level",
+        "value": "absolute_control_over_rights"
+      },
+      {
+        "entity_id": "KARL_TEAM",
+        "state_key": "professional_status",
+        "value": "suspended_two_years"
+      },
+      {
+        "entity_id": "VICTOR_LANCE",
+        "state_key": "panic_level",
+        "value": "critical_cleanup_mode"
+      },
+      {
+        "entity_id": "LUCAS_CHEN",
+        "state_key": "public_status",
+        "value": "key_witness"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_pair": "MCKE_AIRLINE",
+        "relationship": "deep_professional_alliance"
+      },
+      {
+        "entity_pair": "MCKE_SERENA",
+        "relationship": "institutionalized_family_governance"
+      },
+      {
+        "entity_pair": "MCKE_VICTOR",
+        "relationship": "hostile_evidence_collection"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset_id": "RIGHT_VL_016",
+        "status": "fully_recovered",
+        "value": "980000_sales_volume"
+      },
+      {
+        "asset_id": "WORKSHOP_NETWORK",
+        "status": "self_sustaining",
+        "value": "43_workshops_balanced"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "MCKE_HEALTH",
+        "status": "optimal_four_years",
+        "metrics": "weight_blood_pressure_lung_capacity_stable"
+      }
+    ],
+    "open_threads": [
+      "S95-B-RW录音证据如何转化为法律层面的指控",
+      "医疗模型造假对世纪转换期公众健康的潜在危害"
+    ],
+    "resolved_threads": [
+      "卡尔团队伪造授权书叙事被彻底粉碎",
+      "麦珂获得《静默增益》版权主导权"
+    ],
+    "introduced_characters": [
+      "卢卡斯·陈（1977年工坊少年）"
+    ],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。"
+  }
+}

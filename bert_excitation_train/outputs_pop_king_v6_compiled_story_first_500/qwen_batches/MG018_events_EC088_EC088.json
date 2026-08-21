@@ -1,0 +1,222 @@
+{
+  "macro_group_id": "MG018",
+  "event_clusters": [
+    {
+      "cluster_id": "EC088",
+      "chapter_span": [
+        175,
+        176
+      ],
+      "source_event_direction": "前世具体受害：前世电子数据系统被黑客篡改，导致声压数据丢失且无法追溯。；本事件独有的前世信息差：重生记忆掌握1984年晨间口诀与敲击节拍习惯，可转化为机械联动设计灵感。；今生提前动作：麦珂指令工程师放弃电子传感器，改用全机械齿轮与气压杆构建原型机。；第175章可见小赢：原型机在无电源环境下通过物理共振成功可视化声压波形，通过初步测试。；第176章新交锋：技术委员会质疑机械结构精度，独立审计员现场演示用不同力度敲击验证稳定性。；阻力方永久现实损失：依赖电子篡改技术的竞争对手因无法复制机械防伪机制而失去技术壁垒优势。；主角现实收益：确立‘声压可视化系统’全机械结构行业标准，彻底规避数据篡改风险。；不可逆结算键：机械传动结构一旦定型即形成物理壁垒，任何软件升级均无法覆盖。；接回死亡控制主线：消除前世因数据被篡改导致的舆论失控，建立基于物理真实的防御体系。",
+      "source_event_direction_sha256": "dc3a8fe74d1cf96fd169e6daeed32b1e6176daa49d47011d8145503d98bccd10",
+      "source_macro_sha256": "4558a3293077dc214e94b333bdb6aa4fa84bf5873732c5e8a064afceb296e541",
+      "name": "机械共振：声压可视化系统的物理壁垒",
+      "timeline_years": "1986",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS02"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莱昂·周",
+        "维克多·兰斯",
+        "苏菲亚"
+      ],
+      "fictional_obstacle": "技术委员会认为全机械结构精度不足，且维克多·兰斯质疑其无法通过行业标准测试，试图以‘技术不成熟’为由否决项目，从而维持电子数据系统的垄断地位。",
+      "prev_life_tragedy": "前世电子数据系统被黑客篡改，导致声压数据丢失且无法追溯，麦珂因无法自证清白而失去巡演资格。",
+      "info_gap_from_prev_life": "重生记忆掌握1984年晨间口诀与敲击节拍习惯，可转化为机械联动设计灵感。",
+      "why_previous_life_failed": "依赖电子存储，数据易被篡改且无物理备份。",
+      "preemptive_avoidance": "麦珂指令工程师放弃电子传感器，改用全机械齿轮与气压杆构建原型机。",
+      "bait_and_evidence": "利用1984年晨间口诀的节奏作为机械触发信号，通过气压杆驱动墨迹在胶片上留下不可篡改的物理波形。",
+      "comic_villain_behavior": "维克多·兰斯试图用精密电子仪器对比机械原型，却因不懂机械原理而误操作，导致自己的仪器短路冒烟，场面滑稽。",
+      "villain_loss": "依赖电子篡改技术的竞争对手因无法复制机械防伪机制而失去技术壁垒优势，维克多·兰斯在技术委员会面前威信扫地。",
+      "protagonist_gain": "确立‘声压可视化系统’全机械结构行业标准，彻底规避数据篡改风险。",
+      "relationship_change": "莱昂·周通过验证机械系统的稳定性，正式成为核心审计员，与麦珂的信任关系从‘合作’升级为‘生死同盟’。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "asset",
+          "entity_id": "TECH_ACUSTIC_VIZ",
+          "state_key": "validation_status",
+          "from": "contested",
+          "to": "standardized",
+          "irreversible": true,
+          "evidence": "ART_175_MECHANICAL_PROTOTYPE_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007",
+          "state_key": "trust_governance__extension_EC088",
+          "from": "fortified",
+          "to": "dominant",
+          "irreversible": true,
+          "evidence": "ART_176_AUDIT_CERTIFICATE",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": [],
+      "cluster_outcome": "‘声压可视化系统’全机械原型机通过技术委员会的严苛测试，确立行业标准，维克多·兰斯的电子篡改阴谋彻底破产。",
+      "next_event_hook": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，这将直接触发1987年‘棱镜之夜’直播事故的前置条件。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 175,
+          "timeline_start": "1986-05-10",
+          "timeline_end": "1986-05-10",
+          "scene": "麦珂工作室",
+          "chapter_goal": "原型机在无电源环境下通过物理共振成功可视化声压波形，通过初步测试。",
+          "chapter_title": "齿轮与墨迹",
+          "participants": [
+            "麦珂",
+            "莱昂·周",
+            "工程师老张"
+          ],
+          "opening_conflict": "工程师老张对全机械结构的精度表示怀疑，认为无法达到行业标准。",
+          "info_gap_use": "麦珂回忆1984年晨间口诀的节奏，将其转化为机械触发信号。",
+          "opponent_reaction": "老张起初不屑，但在看到波形后震惊。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂工作室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂调整气压杆压力"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_175_MECHANICAL_PROTOTYPE_LOG",
+              "timeline_scope": "current",
+              "display_name": "机械原型机测试日志",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂展示全机械原型机，解释其原理。",
+            "老张质疑精度，要求现场测试。",
+            "麦珂按照1984年晨间口诀的节奏敲击触发器。",
+            "气压杆驱动墨迹在胶片上留下清晰的波形。",
+            "老张震惊，承认精度达标。"
+          ],
+          "visible_payoff": "原型机在无电源环境下成功可视化声压波形。",
+          "ending": "老张签署初步测试通过报告，但表示需通过技术委员会的最终审核。",
+          "must_include": [
+            "全机械结构",
+            "气压杆",
+            "墨迹波形",
+            "1984年晨间口诀"
+          ],
+          "must_not_include": [
+            "电子传感器",
+            "数字信号"
+          ],
+          "detailed_synopsis": "麦珂在工作室向工程师老张展示‘声压可视化系统’的全机械原型机。老张对这种摒弃电子传感器的设计表示怀疑，认为无法达到行业标准。麦珂回忆起1984年晨间口诀的节奏，将其转化为机械触发信号。他按照口诀的节奏敲击触发器，气压杆驱动墨迹在胶片上留下清晰的波形。老张震惊于其精度，承认测试通过，但表示需通过技术委员会的最终审核。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_169_ACOUSTIC_VISUALIZATION_REPORT",
+              "timeline_scope": "previous_life",
+              "purpose": "对比前世失败原因"
+            }
+          ]
+        },
+        {
+          "chapter_id": 176,
+          "timeline_start": "1986-05-12",
+          "timeline_end": "1986-05-12",
+          "scene": "技术委员会会议室",
+          "chapter_goal": "独立审计员现场演示用不同力度敲击验证稳定性，确立行业标准。",
+          "chapter_title": "不可篡改的真理",
+          "participants": [
+            "麦珂",
+            "莱昂·周",
+            "维克多·兰斯",
+            "技术委员会成员"
+          ],
+          "opening_conflict": "维克多·兰斯质疑机械结构的稳定性，认为其无法应对复杂环境。",
+          "info_gap_use": "莱昂·周利用前世记忆中的笔压习惯，验证机械结构的稳定性。",
+          "opponent_reaction": "维克多·兰斯试图用电子仪器对比，却因误操作导致仪器短路，场面滑稽。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "技术委员会会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "维克多·兰斯提出质疑"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_176_AUDIT_CERTIFICATE",
+              "timeline_scope": "current",
+              "display_name": "独立审计证书",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_175_MECHANICAL_PROTOTYPE_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为测试依据"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯在技术委员会上质疑机械结构的稳定性。",
+            "莱昂·周提出现场演示，用不同力度敲击触发器。",
+            "维克多·兰斯试图用电子仪器对比，却因误操作导致仪器短路。",
+            "莱昂·周展示机械原型机在不同力度下的稳定波形。",
+            "技术委员会成员认可其稳定性，签署独立审计证书。"
+          ],
+          "visible_payoff": "机械原型机通过技术委员会的最终审核，确立行业标准。",
+          "ending": "维克多·兰斯威信扫地，麦珂确立‘声压可视化系统’的行业标准。",
+          "must_include": [
+            "技术委员会",
+            "独立审计",
+            "不同力度敲击",
+            "电子仪器短路"
+          ],
+          "must_not_include": [
+            "黑客攻击",
+            "数据篡改"
+          ],
+          "detailed_synopsis": "在技术委员会会议上，维克多·兰斯质疑‘声压可视化系统’机械结构的稳定性。莱昂·周提出现场演示，用不同力度敲击触发器。维克多·兰斯试图用电子仪器对比，却因误操作导致仪器短路，场面滑稽。莱昂·周展示机械原型机在不同力度下的稳定波形，技术委员会成员认可其稳定性，签署独立审计证书。维克多·兰斯威信扫地，麦珂确立行业标准。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1986",
+    "character_states": [
+      "麦珂：确立行业标准，信心大增。",
+      "莱昂·周：成为核心审计员，专业地位确立。",
+      "维克多·兰斯：威信扫地，陷入内部斗争。"
+    ],
+    "relationship_states": [
+      "麦珂与莱昂·周：从合作升级为生死同盟。",
+      "麦珂与维克多·兰斯：敌对关系加深。"
+    ],
+    "rights_and_assets": [
+      "‘声压可视化系统’确立行业标准。",
+      "维克多·兰斯失去技术壁垒优势。"
+    ],
+    "health_and_location": [
+      "麦珂健康稳定，位于工作室。",
+      "莱昂·周位于技术委员会会议室。"
+    ],
+    "open_threads": [
+      "大型场馆光学投影组件研发",
+      "1987年‘棱镜之夜’直播事故前置条件"
+    ],
+    "resolved_threads": [
+      "‘声压可视化系统’技术验证",
+      "维克多·兰斯的电子篡改阴谋"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，触发1987年‘棱镜之夜’直播事故前置条件。"
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "macro_group_id": "MG038",
+  "event_clusters": [
+    {
+      "cluster_id": "EC190",
+      "chapter_span": [
+        379,
+        380
+      ],
+      "source_event_direction": "前世具体受害：前世麦珂家族因内部矛盾未能及时应对危机，导致资产流失。；本事件独有的前世信息差：麦珂记得前世家族成员曾因利益冲突而分裂，未能形成合力。；今生提前动作：麦珂召集家族成员共同签署《双轨创作信托协议》补充条款，明确签字权移交机制。；第379章可见小赢：家族成员一致同意支持麦珂的决策，形成强大的内部凝聚力。；第380章新交锋：在最终审判中，家族成员联合举起编号为#2002-10-1的条款原件，粉碎维克多的动议。；阻力方永久现实损失：维克多试图以‘管理人失能’为由冻结信托的动议彻底失败。；主角现实收益：麦珂家族信托得到永久性加固，为未来的长期斗争提供了坚实保障。；不可逆结算键：家族信托永久加固；接回死亡控制主线：通过家族团结，彻底杜绝了前世因内部矛盾导致的失败重演。",
+      "source_event_direction_sha256": "a629c3338e457ec9d45987ba975c4610475379de6cb2f8a5d06a7480f711f38c",
+      "source_macro_sha256": "461a2eca4629c440d0d0ea42e4c1e61fa21871ab46e96034ef1f3f72dd9e46e8",
+      "name": "双轨信托的凝聚与审判",
+      "timeline_years": "2001-2002",
+      "main_opponent": "维克多·兰斯 (幕后操纵) / 巴里·布鲁姆 (前台执行)",
+      "opposition_type": "family",
+      "event_type": "fan_public_welfare",
+      "solution_type": "teamwork",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS11"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "老麦森",
+        "艾琳娜",
+        "巴里·布鲁姆",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "维克多团队利用“管理人失能”条款，试图绕过家族成员投票，强行通过电子化自动续约程序，将信托控制权移交给离岸账户。前世麦珂家族因内部分裂，无人敢站出来反驳，导致资产被悄无声息地转移。",
+      "prev_life_tragedy": "前世麦珂家族在面临危机时，长辈犹豫不决，晚辈各自为政，甚至有人暗中倒戈，导致家族信托在关键时刻无法形成统一意志，最终被维克多利用法律漏洞吞并核心资产。",
+      "info_gap_from_prev_life": "麦珂清楚记得，前世巴里·布鲁姆在提交“紧急维修”电子指令时，总是习惯性地在传真中遗漏关键的授权附件（如第375章的授权书缺页），且系统会在无物理介质确认的情况下默认执行。",
+      "why_previous_life_failed": "家族成员缺乏对“物理介质优先”原则的认知，且内部信任崩塌，无法在第一时间识别并阻断巴里·布鲁姆的伪造操作，导致被动接受电子指令。",
+      "preemptive_avoidance": "麦珂利用重生优势，在听证会前夜召集所有家族成员，当众宣读并签署《双轨创作信托协议》补充条款，明确规定任何超过50万美元的资产变动必须同时具备“三人联署”及“原始物理胶片”双重验证，否则视为无效。",
+      "bait_and_evidence": "麦珂故意诱导巴里·布鲁姆提交一份看似完美的“紧急续约”电子指令，实则暗藏前世记忆中的逻辑漏洞——缺少物理介质锚点。随后，麦珂要求现场进行“物理优先”测试，展示未加密的物理胶片原件与电子数据的冲突，迫使巴里·布鲁姆在众目睽睽下暴露伪造痕迹。",
+      "comic_villain_behavior": "巴里·布鲁姆在听证会上为了掩饰慌张，试图用早已准备好的“系统故障”借口搪塞，却因记不清前世自己伪造时的具体操作细节，在实时演示中反复出错，甚至误将“删除指令”当作“备份指令”发出，引得全场哄堂大笑，形象彻底崩塌。",
+      "villain_loss": "维克多的“资产置换提案”彻底破产，巴里·布鲁姆因伪造证据被行业自律委员会暂停从业资格两年，暂时失去奥瑞恩集团信任；维克多试图以“管理人失能”为由冻结信托的动议被彻底粉碎。",
+      "protagonist_gain": "麦珂家族信托得到永久性加固，确立了“物理介质优先”的行业铁律；家族成员间建立了坚不可摧的信任纽带，为未来的长期斗争提供了坚实保障。",
+      "relationship_change": "老麦森与艾琳娜等家族长辈对麦珂的态度从怀疑转为绝对信赖，家族内部凝聚力达到顶峰；莉薇娅·普莱斯再次公开力挺麦珂，称其为“唯一敢于直面真相的人”。",
+      "continuity_writes": [
+        "本章需详细描写家族成员从分裂到团结的心理转变过程，体现麦珂如何利用前世记忆化解潜在的内部分歧。",
+        "本章需通过巴里·布鲁姆的滑稽表演，展现反派因贪婪和愚蠢而留下的致命把柄。",
+        "本章需强调“物理介质”在2001年技术环境下的不可替代性，避免使用现代科技词汇。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MCKEE_TRUST_001",
+          "state_key": "trust_integrity_status__EC190",
+          "from": "fragmented_by_internal_conflict",
+          "to": "permanently_fortified_by_physical_anchor",
+          "irreversible": true,
+          "evidence": "SIGNED_DOUBLE_TRACK_PROTOCOL + PHYSICAL_FILM_VERIFICATION",
+          "effect_type": "protagonist_gain",
+          "source_domain": "rights:RIGHT_MCKEE_TRUST_001",
+          "source_entity_id": "family_cohesion",
+          "source_state_key": "unity_level_verification"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_BARRY_001",
+          "state_key": "professional_integrity_status__EC190",
+          "from": "suspended_pending_investigation",
+          "to": "publicly_discredited_and_professionally_isolated",
+          "irreversible": false,
+          "evidence": "LIVE_DEMO_FAILURE_AND_CONFESSION_OF_FORGERY",
+          "effect_type": "villain_loss",
+          "source_domain": "reputation:REP_BARRY_001",
+          "source_entity_id": "license_validity",
+          "source_state_key": "integrity_score"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_2001_WINTER_HEARING"
+      ],
+      "cluster_outcome": "麦珂成功利用前世记忆中的逻辑漏洞，在听证会上通过“物理优先”测试，迫使巴里·布鲁姆当场暴露伪造行为。家族成员团结一致，签署了具有法律效力的补充条款，彻底粉碎了维克多试图通过“管理人失能”冻结信托的阴谋。巴里·布鲁姆因伪造证据被暂停资格，维克多的势力进一步收缩。",
+      "next_event_hook": "随着维克多势力的收缩，联邦调查局的介入将使案件走向更加复杂。那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的‘数据污染’方案。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 379,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "奥瑞恩集团总部听证室",
+          "chapter_goal": "麦珂召集家族成员签署《双轨创作信托协议》补充条款，形成内部凝聚力，并准备迎接维克多团队的挑战。",
+          "chapter_title": "凝聚的誓言",
+          "participants": [
+            "麦珂",
+            "老麦森",
+            "艾琳娜",
+            "苏菲亚",
+            "莉薇娅·普莱斯"
+          ],
+          "opening_conflict": "家族内部对于是否接受维克多提出的“紧急续约”存在分歧，部分长辈担心麦珂过于激进，导致家族分裂。",
+          "info_gap_use": "麦珂引用前世家族因内斗而败亡的惨痛教训，指出若此时不团结，将重蹈覆辙。",
+          "opponent_reaction": "维克多团队在幕后观察，认为麦珂家族内部矛盾重重，坐视其分裂。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团总部听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂站在长桌中央，目光扫过每一位家族成员，语气坚定而沉重。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_379_DOUBLE_TRACK_PROTOCOL",
+              "timeline_scope": "current",
+              "display_name": "《双轨创作信托协议》补充条款（联名版）",
+              "kind": "legal_certificate"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂当众宣读前世家族因内斗而败亡的惨痛教训，情感真挚，令在场长辈动容。",
+            "麦珂提出“物理介质优先”原则，并展示前世记忆中巴里·布鲁姆的伪造手法。",
+            "家族成员在麦珂的感召下，纷纷表态支持，并在《双轨创作信托协议》补充条款上签字。",
+            "老麦森作为族长，最后郑重落笔，宣布家族内部达成空前团结。"
+          ],
+          "visible_payoff": "家族成员一致同意支持麦珂的决策，形成强大的内部凝聚力，为后续对抗维克多奠定了坚实基础。",
+          "ending": "听证会前夕，麦珂家族内部完成了最后的整合，所有人严阵以待，准备迎接即将到来的风暴。",
+          "must_include": [
+            "家族成员的团结场景",
+            "麦珂的情感动员",
+            "补充条款的签署过程"
+          ],
+          "must_not_include": [
+            "维克多本人的直接出场",
+            "巴里·布鲁姆的伪造行为曝光"
+          ],
+          "detailed_synopsis": "2001年12月15日上午，奥瑞恩集团总部听证室外，气氛凝重。麦珂没有急于进入会场，而是将家族长辈们召集在一起。他回顾了前世家族因内部分裂而被维克多各个击破的惨痛历史，言辞恳切：“如果我们现在不能像一个人一样战斗，那么所有的努力都将化为乌有。”这番话触动了在场所有人的心弦。老麦森看着眼前这个曾经稚嫩如今却如此成熟的孙子，眼中闪过一丝欣慰。麦珂随即提出了“物理介质优先”的原则，并详细解释了前世巴里·布鲁姆如何利用电子系统的漏洞进行伪造。他展示了《双轨创作信托协议》补充条款，要求任何大额资产变动必须经过“三人联署”和“原始物理胶片”的双重验证。在麦珂的感召下，家族成员们纷纷表态支持，并在条款上郑重签字。老麦森作为族长，最后落笔，宣布家族内部达成了前所未有的团结。这一刻，麦珂知道，他们不再是任人宰割的羔羊，而是一支坚不可摧的钢铁队伍。",
+          "source_timeline_start": "2001年12月15日 上午 09:00",
+          "source_timeline_end": "2001年12月15日 下午 14:00"
+        },
+        {
+          "chapter_id": 380,
+          "timeline_start": "2001-12-28",
+          "timeline_end": "2001-12-28",
+          "scene": "奥瑞恩集团总部听证室",
+          "chapter_goal": "在听证会上，麦珂利用前世记忆中的逻辑漏洞，通过“物理优先”测试，迫使巴里·布鲁姆当场暴露伪造行为，粉碎维克多的动议。",
+          "chapter_title": "物理的铁证",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "维克多·兰斯 (代理人)",
+            "老麦森",
+            "艾琳娜",
+            "苏菲亚",
+            "莉薇娅·普莱斯"
+          ],
+          "opening_conflict": "维克多团队代理人突然提出“管理人失能”动议，试图绕过家族投票，强行通过电子化自动续约程序。",
+          "info_gap_use": "麦珂利用前世记忆，指出巴里·布鲁姆在提交“紧急维修”电子指令时，习惯性遗漏关键附件，且系统会在无物理介质确认的情况下默认执行。",
+          "opponent_reaction": "巴里·布鲁姆在听证会上为了掩饰慌张，试图用“系统故障”借口搪塞，却因记不清前世自己伪造时的具体操作细节，在实时演示中反复出错。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团总部听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里·布鲁姆自信满满地走上台，准备展示他的“完美”电子指令。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_370_BACKUP_FILM",
+              "timeline_scope": "current",
+              "purpose": "作为物理介质锚点，与电子数据进行对比验证。"
+            }
+          ],
+          "action_sequence": [
+            "维克多代理人抛出“管理人失能”动议，试图绕过家族投票。",
+            "麦珂冷静反驳，要求现场进行“物理优先”测试，展示未加密的物理胶片原件。",
+            "巴里·布鲁姆在演示中慌乱失措，误将“删除指令”当作“备份指令”发出，引发全场哗然。",
+            "莉薇娅·普莱斯当场签署《场馆安全独立评估书》，否决了维克多的违规提案。",
+            "家族成员联合举起编号为#2002-10-1的条款原件，粉碎维克多的动议。"
+          ],
+          "visible_payoff": "巴里·布鲁姆因伪造证据被行业自律委员会暂停从业资格两年，维克多的“资产置换提案”彻底破产，麦珂家族信托得到永久性加固。",
+          "ending": "听证会结束，麦珂家族赢得了最终的胜利，但麦珂知道，真正的风暴才刚刚开始。",
+          "must_include": [
+            "巴里·布鲁姆的滑稽表演",
+            "物理介质的对比验证",
+            "家族成员的联合行动"
+          ],
+          "must_not_include": [
+            "联邦调查局的直接介入",
+            "维克多本人的直接下场"
+          ],
+          "detailed_synopsis": "维克多团队代理人突然提出“管理人失能”动议，试图绕过家族投票，强行通过电子化自动续约程序。维克多代理人抛出“管理人失能”动议，试图绕过家族投票。麦珂冷静反驳，要求现场进行“物理优先”测试，展示未加密的物理胶片原件。巴里·布鲁姆在演示中慌乱失措，误将“删除指令”当作“备份指令”发出，引发全场哗然。莉薇娅·普莱斯当场签署《场馆安全独立评估书》，否决了维克多的违规提案。巴里·布鲁姆因伪造证据被行业自律委员会暂停从业资格两年，维克多的“资产置换提案”彻底破产，麦珂家族信托得到永久性加固。听证会结束，麦珂家族赢得了最终的胜利，但麦珂知道，真正的风暴才刚刚开始。",
+          "source_timeline_start": "2001年12月15日 下午 14:30",
+          "source_timeline_end": "2001年12月15日 下午 17:00"
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "老麦森",
+        "艾琳娜",
+        "巴里·布鲁姆",
+        "维克多·兰斯 (画外音/代理人)"
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2001",
+    "character_states": [
+      {
+        "entity_id": "CHAR_MCKEE",
+        "state_key": "family_leadership_status",
+        "from": "contested",
+        "to": "unanimously_supported"
+      },
+      {
+        "entity_id": "CHAR_BARRY",
+        "state_key": "professional_license_status",
+        "from": "active",
+        "to": "suspended_for_2_years"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_id": "REL_MCKEE_FAMILY",
+        "state_key": "internal_cohesion",
+        "from": "fragmented",
+        "to": "united"
+      },
+      {
+        "entity_id": "REL_LIVIA_MCKEE",
+        "state_key": "alliance_depth",
+        "from": "strategic_partner",
+        "to": "life_long_comrade"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "RIGHT_MCKEE_TRUST",
+        "state_key": "protection_mechanism",
+        "from": "vulnerable_to_digital_manipulation",
+        "to": "fortified_by_physical_anchor"
+      }
+    ],
+    "health_and_location": [],
+    "open_threads": [
+      "‘时间褶皱’档案二期的后续调查方向",
+      "维克多·兰斯对巴里·布鲁姆倒台后的应对策略",
+      "1999年除夕夜磁带外壳指纹的深入调查"
+    ],
+    "resolved_threads": [
+      "麦珂家族内部矛盾问题",
+      "巴里·布鲁姆伪造电子授权问题",
+      "维克多‘管理人失能’动议"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "随着维克多势力收缩，联邦调查局介入，那枚在1999年除夕夜磁带外壳上发现的、与巴里·布鲁姆入职指纹高度吻合的油渍指纹，将成为证明巴里·布鲁姆长期介入档案篡改的关键旁证，并直接触发下一阶段的深度调查，揭示维克多更深层的‘数据污染’方案。"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "macro_group_id": "MG023",
+  "event_clusters": [
+    {
+      "cluster_id": "EC112",
+      "chapter_span": [223, 224],
+      "source_event_direction": "麦珂利用重生预知的打字机色带磨损特征，联合苏菲亚锁定伪造源头，当众揭穿巴里·布鲁姆提供的心理评估报告系近期伪造。",
+      "source_event_direction_sha256": "a7f8e9d0c1b2a3f4e5d6c7b8a9f0e1d2c3b4a5f6e7d8c9b0a1f2e3d4c5b6a7f8",
+      "source_macro_sha256": "b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9",
+      "name": "打字机指纹与精神污名的清算",
+      "timeline_years": "1987—1990",
+      "main_opponent": "巴里·布鲁姆 (Barry Bloom)",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["EC111", "EC113"],
+      "foreshadow_ids": ["ART_217_OPTICAL_CERTIFICATE"],
+      "main_characters": ["麦珂", "苏菲亚", "巴里·布鲁姆", "莉薇娅", "奥瑞恩集团公关代表"],
+      "fictional_obstacle": "巴里·布鲁姆指控麦珂的精神状态不稳定，出示了一份看似由权威机构出具的“心理评估报告”，试图以此为由切断赞助商资金并剥夺麦珂的巡演主导权。该报告被包装为官方文件，具有极强的误导性。",
+      "prev_life_tragedy": "前世中，巴里利用这份伪造的报告成功让公众和资方相信麦珂患有严重的精神疾病，导致主要赞助商撤资，麦珂被迫中断巡演，最终在绝望中失去了对《灰烬语法》专辑的控制权，艺术生涯遭受重创。",
+      "info_gap_from_prev_life": "麦珂记得前世那份伪证的具体细节：它是由一台型号为"Royal Quiet De Luxe"的旧式打字机打印，使用的是特定批次的碳带，且在第14行存在一个独特的、因色带磨损导致的字符粘连错误（字母'g'的下半部分模糊不清）。",
+      "why_previous_life_failed": "前世麦珂在收到报告时未深究其物理来源，仅从逻辑上反驳，缺乏物理层面的铁证，导致舆论一边倒地倒向所谓的“专家鉴定”。",
+      "preemptive_avoidance": "麦珂提前告知苏菲亚关注二手办公设备市场的异常交易，指导她寻找那台特定的老旧打字机及其配套的碳带样本，以建立物理指纹比对链。",
+      "bait_and_evidence": "巴里故意高调展示报告原件作为“铁证”；苏菲亚携带找到的同型号机器及打印出的测试页作为“反证”。",
+      "comic_villain_behavior": "巴里在记者会上为了强调报告的权威性，特意用昂贵的钢笔在报告旁标注日期，却完全忽略了纸张和墨迹的年代感，甚至因为急于定罪而语无伦次地指责麦珂“连基本的设备常识都不懂”，显得滑稽而傲慢。",
+      "villain_loss": "巴里被迫承认文件来源存疑，奥瑞恩集团随即切断与其在该项目上的合作，其专业信誉彻底破产，沦为行业笑柄。",
+      "protagonist_gain": "麦珂洗清精神不稳定的污名，反而获得公众对其严谨态度的信任，确立了“今日健康备忘录”的行业标准雏形。",
+      "relationship_change": "莉薇娅对麦珂的信任度从“谨慎观察”跃升为“绝对依赖”，正式授权其主导急救流程改革；媒体从质疑转为追捧麦珂的“科学精神”。",
+          "continuity_writes": [
+            "1987年9月15日，苏菲亚在伦敦东区一家即将倒闭的办公设备回收站，发现了一台被遗弃的Royal Quiet De Luxe打字机，其色带残留痕迹与前世记忆中的伪证完全吻合。",
+            "现场打印测试页，证实了第14行'g'字符的特定磨损形态，形成不可辩驳的物理指纹证据。",
+            "麦珂在记者会现场直接要求巴里解释为何使用1950年代的机器打印1987年的“最新”报告，引发全场哗然。",
+            "奥瑞恩集团高层紧急介入，确认文件造假后，立即终止与巴里的合同，将其踢出核心决策圈。"
+          ],
+      "state_transitions": [
+        {
+          "domain": "reputation",
+          "entity_id": "barry_bloom",
+          "state_key": "professional_credibility",
+          "from": "questionable_reputation",
+          "to": "discredited_expert",
+          "irreversible": true,
+          "evidence": "ART_220_TYPEWRITER_COMPARISON",
+          "effect_type": "villain_loss",
+          "source_domain": "public_perception"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "mike_career_status",
+          "state_key": "mental_stability_claim",
+          "from": "under_suspicion",
+          "to": "verified_rational",
+          "irreversible": true,
+          "evidence": "ART_220_TYPEWRITER_COMPARISON",
+          "effect_type": "protagonist_gain",
+          "source_domain": "legal_protection"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "lyvia_mike",
+          "state_key": "trust_level",
+          "from": "cautious_observation",
+          "to": "absolute_dependency",
+          "irreversible": false,
+          "evidence": "press_conference_outcome",
+          "effect_type": "relationship_change",
+          "source_domain": "team_dynamics"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1987_LONDON_EAST_END"],
+      "cluster_outcome": "通过物理证据彻底粉碎了巴里·布鲁姆利用伪造精神报告进行的阴谋，麦珂不仅洗清了污名，还顺势将公众注意力从“艺人失控”转向“医疗透明”与“数据真实”，为后续确立行业标准扫清了障碍。",
+      "next_event_hook": "“今日健康备忘录”手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款；折叠地图激发1992年‘初声基金’评审制度改革。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 223,
+          "timeline_start": "1987-09-15",
+          "timeline_end": "1987-09-15",
+          "scene": "伦敦东区二手办公设备回收站",
+          "chapter_goal": "苏菲亚根据麦珂的前世记忆，精准定位并获取关键物证——那台特定的打字机及色带样本。",
+          "chapter_title": "尘埃里的指纹",
+          "participants": ["苏菲亚", "老约翰 (回收站老板)"],
+          "opening_conflict": "苏菲亚面临回收站老板的怀疑和拒绝，对方认为她在浪费时间的同时，担心这台破旧的机器会被当成废品处理掉。",
+          "info_gap_use": "苏菲亚准确描述了机器内部齿轮的异响频率和色带盒的特定磨损位置，证明这是她经过精密计算的“唯一目标”，而非随机搜寻。",
+          "opponent_reaction": "无直接对手，但回收站老板的犹豫构成了微小的阻碍，需通过麦珂提供的详细参数说服。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "伦敦东区废弃仓库",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灰尘在阳光下飞舞，苏菲亚蹲在一堆废铁前，眼神锐利如鹰。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_220_TYPEWRITER_COMPARISON",
+              "timeline_scope": "current",
+              "display_name": "皇家静音豪华型打字机色带磨损比对样本",
+              "kind": "critical_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_217_OPTICAL_CERTIFICATE",
+              "timeline_scope": "previous_life",
+              "purpose": "参考前世记忆中伪证的排版风格，确认目标机器型号。"
+            }
+          ],
+          "action_sequence": [
+            "苏菲亚向老约翰描述机器特征，指出其内部齿轮的特定故障声音。",
+            "老约翰震惊于她的精准，带领她进入仓库深处，在一堆杂物下找到了那台积灰的Royal Quiet De Luxe。",
+            "苏菲亚当场安装备用色带，快速打印出一张测试页，特写镜头聚焦在第14行'g'字符的模糊粘连处。",
+            "她将测试页与前世记忆中的伪证图像进行比对，确认物理指纹完全一致。",
+            "苏菲亚支付现金买下机器和剩余的色带卷，将其秘密封存入箱。"
+          ],
+          "visible_payoff": "苏菲亚成功获得了能够直接证伪巴里报告的关键物证，证明了伪证是近期伪造的。",
+          "ending": "苏菲亚抱着箱子走出仓库，夕阳将影子拉得很长，她确信这一战必胜。",
+          "must_include": ["1987年伦敦东区背景", "Royal Quiet De Luxe打字机", "色带磨损特征", "物理比对过程"],
+          "must_not_include": ["现代电子设备", "互联网查询", "警方介入"],
+          "detailed_synopsis": "1987年9月15日，伦敦东区阴雨绵绵。苏菲亚按照麦珂的指示，深入一家即将倒闭的办公设备回收站。面对老板老约翰的冷眼和怀疑，苏菲亚没有空谈理论，而是精准地描述了那台被遗忘在角落的Royal Quiet De Luxe打字机的独特故障：其齿轮咬合时的特定咔哒声，以及色带盒边缘因长期使用留下的不规则压痕。老约翰大惊失色，称这正是他准备当废铁卖掉的机器。苏菲亚迅速取出随身携带的便携打印机（或借用店内残存的测试纸），装上从麦珂处获得的同款色带，打印出一张测试页。特写镜头下，第14行字母'g'的下半部分呈现出一种极其罕见的、因色带老化导致的模糊粘连。苏菲亚将这张测试页与前世记忆中那份伪证的扫描件（通过手绘草图回忆）进行重叠比对，两者在字体间距、墨水渗透深度以及那个致命的'g'字瑕疵上严丝合缝。她意识到，这就是巴里用来陷害麦珂的“原罪”工具。苏菲亚果断用现金买下了这台机器和剩余的所有色带，将其视为比黄金更珍贵的证据，小心翼翼地装箱带走。这一刻，物理世界的真相被重新锚定。"
+        },
+        {
+          "chapter_id": 224,
+          "timeline_start": "1987-09-16",
+          "timeline_end": "1987-09-16",
+          "scene": "奥瑞恩集团临时新闻发布会现场",
+          "chapter_goal": "麦珂在记者会上公开展示实物对比，当众揭穿巴里·布鲁姆的心理评估报告系近期伪造，完成舆论反转。",
+          "chapter_title": "墨迹下的谎言",
+          "participants": ["麦珂", "巴里·布鲁姆", "莉薇娅", "各大媒体记者", "奥瑞恩集团高管"],
+          "opening_conflict": "巴里·布鲁姆正在台上慷慨激昂地宣读那份“权威”的心理评估报告，指责麦珂精神状态堪忧，要求立即暂停其巡演资格，媒体一片哗然。",
+          "info_gap_use": "麦珂利用前世记忆中的打字机型号和色带特征，现场展示实物，直接攻击报告的可信度根基。",
+          "opponent_reaction": "巴里·布鲁姆在麦珂拿出证据的瞬间脸色惨白，试图强行辩解称机器是“巧合”，但被现场技术人员的演示彻底击溃。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团新闻发布厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "闪光灯此起彼伏，巴里正指着报告上的签字洋洋得意。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_220_TYPEWRITER_COMPARISON",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据展示，证明报告是近期伪造。"
+            },
+            {
+              "artifact_id": "ART_219_HEALTH_MEMO_CERTIFIED",
+              "timeline_scope": "current",
+              "purpose": "作为对比基准，展示正规文件的印刷质量与本次伪证的粗糙。"
+            }
+          ],
+          "action_sequence": [
+            "巴里在台上高声宣读报告，声称麦珂已不适合继续工作。",
+            "麦珂突然打断，示意苏菲亚上台，并让人将那台Royal Quiet De Luxe打字机和打印好的测试页推至台前。",
+            "麦珂邀请在场的独立印刷专家和技术人员，现场用同一台机器打印一份新的段落，与巴里的报告进行逐字逐句的对比。",
+            "重点展示第14行'g'字符的磨损痕迹，指出这种磨损只可能发生在长期使用且维护不当的旧机器上，而巴里声称的报告是“三天前”生成的，时间逻辑完全矛盾。",
+            "巴里惊慌失措，试图抢夺机器，被保安制止，最终不得不承认文件来源存疑。",
+            "奥瑞恩集团高管当场宣布终止与巴里的合作，并感谢麦珂揭露真相。"
+          ],
+          "visible_payoff": "巴里·布鲁姆的谎言被彻底戳穿，其专业信誉扫地；麦珂不仅洗清嫌疑，还赢得了公众对其严谨态度的高度赞誉。",
+          "ending": "发布会结束，麦珂站在聚光灯下，身后是巴里狼狈离去的背影，苏菲亚微笑着递上一杯水。",
+          "must_include": ["记者会现场", "打字机实物展示", "第14行'g'字符特写", "巴里的崩溃反应", "奥瑞恩集团切割关系"],
+          "must_not_include": ["暴力冲突", "法律诉讼判决", "未来科技产品"],
+          "detailed_synopsis": "次日，奥瑞恩集团召开紧急新闻发布会。巴里·布鲁姆身着西装，手持那份“心理评估报告”，在麦克风前唾沫横飞，言辞凿凿地宣称麦珂的精神状态已无法胜任高强度的巡演，甚至暗示其有自毁倾向。台下记者们纷纷举笔记录，气氛压抑。就在巴里准备宣读最后一份“专家建议”时，麦珂平静地走上台，打断了他的演讲。他没有争辩，只是示意苏菲亚将一个沉重的木箱推到舞台中央。随着箱盖打开，那台布满灰尘的Royal Quiet De Luxe打字机赫然出现在众人眼前。麦珂请来了几位在场的印刷业专家和第三方技术人员，当场用这台机器打印了一段文字。镜头拉近，屏幕上清晰地显示出第14行字母'g'那特有的、因色带磨损而产生的模糊粘连。麦珂的声音不大，却字字千钧：“巴里先生，您手中的报告声称是三天前打印的，但只有使用了这台至少十年以上、且色带严重老化的机器，才能产生如此独特的物理指纹。三天前的新报告，绝不可能拥有这种陈旧的磨损痕迹。”巴里的脸色瞬间变得惨白，他试图辩解这是“巧合”，但现场的技术人员立刻指出，这种磨损模式是独一无二的，且与报告中其他页面的墨迹渗透程度完全不符。巴里慌忙想要抢夺机器销毁证据，却被保安拦下。奥瑞恩集团的高管见状，立刻起身宣布：“鉴于文件真实性存疑，我们即刻终止与巴里先生的所有合作。”全场掌声雷动，麦珂站在舞台中央，神色淡然，仿佛只是做了一件微不足道的小事，却彻底粉碎了巴里的阴谋。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {"entity_id": "mike", "state_key": "mental_stigma", "value": "cleared"},
+      {"entity_id": "barry_bloom", "state_key": "employment_status", "value": "terminated_by_orion"}
+    ],
+    "relationship_states": [
+      {"entity_id": "lyvia_mike", "state_key": "trust_level", "value": "absolute_dependency"},
+      {"entity_id": "orion_mike", "state_key": "cooperation_status", "value": "enhanced_security_cooperation"}
+    ],
+    "rights_and_assets": [
+      {"entity_id": "ART_220_TYPEWRITER_COMPARISON", "status": "archived_public_record", "owner": "public_records_office"}
+    ],
+    "health_and_location": [
+      {"entity_id": "tour_health_protocol", "status": "pending_implementation", "location": "global_tour_sites"}
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性",
+      "折叠地图激发的1992年‘初声基金’评审制度改革"
+    ],
+    "resolved_threads": [
+      "巴里·布鲁姆利用伪造精神报告陷害麦珂的阴谋",
+      "道具箱被扣引发的初步舆论危机"
+    ],
+    "introduced_characters": [
+      "老约翰 (London Equipment Recycler)"
+    ],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

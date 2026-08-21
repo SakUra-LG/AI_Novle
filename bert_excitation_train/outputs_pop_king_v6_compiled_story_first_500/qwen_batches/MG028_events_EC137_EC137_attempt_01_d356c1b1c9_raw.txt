@@ -1,0 +1,199 @@
+{
+  "macro_group_id": "MG028",
+  "event_clusters": [
+    {
+      "cluster_id": "EC137",
+      "chapter_span": [273, 274],
+      "source_event_direction": "利用重生记忆预判奥瑞恩集团在税务审计窗口期伪造票据的时机，通过黛安娜构建的物理存证防线与瑟琳娜的协议否决权，将对手的‘影印权’攻势转化为其自身欺诈的确凿证据，彻底粉碎其对初声基金的控制企图。",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z6y5x4w3v2u1t0s9r8q7p6o5n4m3l2k1j0i9h8g7f6e5d4c3b2a1",
+      "name": "墨迹与纤维的审判：物理介质对数字篡改的降维打击",
+      "timeline_years": "1993—1994",
+      "main_opponent": "斯特林·沃克 (Sterling Walker)",
+      "opposition_type": "villain",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["EC136", "ART_269_OFFLINE_LOG"],
+      "foreshadow_ids": ["ART_265_SONIC_VERIFICATION_LOG"],
+      "main_characters": ["麦珂", "黛安娜·陈", "瑟琳娜·刘", "斯特林·沃克", "联邦审计官哈罗德"],
+      "fictional_obstacle": "斯特林·沃克试图绕过黛安娜的程序审查，利用1993年税务审计的“影印权”漏洞，强行提交经过PS处理的1983年蓝盾离岸收购票据复印件，试图重构资金流向并窃取控制权。",
+      "prev_life_tragedy": "前世对手利用影印权漏洞篡改账目，导致麦珂失去对基金控制权，最终在数据被清洗后惨死。",
+      "info_gap_from_prev_life": "麦珂清楚记得1983年收购案签字笔迹特征（独特的下压钩角）与当时使用的特定墨水成分（含微量铁锈红），能直接识破对手使用现代复印机技术伪造的伪钞级票据。",
+      "why_previous_life_failed": "前世过度依赖电子备份和口头授权，忽视了物理介质的唯一性验证，导致原始凭证被恶意替换。",
+      "preemptive_avoidance": "麦珂提前布局苏菲亚的离线档案技术，建立双重物理备份系统，将真实原始纸质票据封存于物理隔离区，并锁定黛安娜的权限以阻止任何非物理原件的提交。",
+      "bait_and_evidence": "斯特林故意在预演中抛出伪造件作为诱饵，诱导审计官关注复印件；麦珂则引导专家进行纸张纤维年代检测与墨水成分光谱分析，将伪造品当场定性为现代产物。",
+      "comic_villain_behavior": "斯特林在听证会上因无法解释为何复印件上没有1983年的陈旧霉味和特定的墨水氧化痕迹，面对专家质询时语无伦次，甚至试图撕毁自己的伪造件来掩盖，结果反而暴露了纸张边缘的新切痕。",
+      "villain_loss": "奥瑞恩代表被迫撤回所有指控并承认程序违规，声誉彻底破产，被联邦审计组列入欺诈黑名单，失去对初声基金的任何控制企图。",
+      "protagonist_gain": "《双轨创作信托协议》正式生效，初声基金财务透明度获业界公认；黛安娜晋升为首席架构师，建立物理介质防御体系；麦珂与瑟琳娜构建了坚不可摧的物理防御网。",
+      "relationship_change": "麦珂与瑟琳娜的信任达到顶峰，建立了基于物理存证的绝对防御同盟；黛安娜从执行者转变为战略核心架构师，获得独立决策权。",
+      "continuity_writes": [
+        "承接EC136中斯特林提交的复印件被证实为现代伪造品后的余波，本事件将斯特林的反击彻底扼杀在公开听证会的现场。",
+        "明确斯特林·沃克为今生新设的激进派高管，替代原草稿中不合时宜的康拉德，承接奥瑞恩集团的贪婪本性。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016:trust_protocols",
+          "state_key": "physical_verification_status",
+          "from": "physically_verified_only",
+          "to": "legally_enforced_physical_priority",
+          "irreversible": true,
+          "evidence": "ART_273_AUDIT_CERTIFICATE_OF_FRAUD",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ORG_OREON_GROUP",
+          "state_key": "audit_compliance_status",
+          "from": "fraud_suspected_blacklisted",
+          "to": "official_fraud_confirmed_banned",
+          "irreversible": true,
+          "evidence": "ART_274_AUDIT_FINAL_REPORT",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "personnel",
+          "entity_id": "EMP_DIANA_CHEN",
+          "state_key": "role_title",
+          "from": "Chief Architect",
+          "to": "Chief Architect with Physical Veto Power",
+          "irreversible": true,
+          "evidence": "ART_274_TRUST_AGREEEMENT_SIGNATURE",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1983_BLUESHIELD_ACQUISITION", "HIST_1993_TAX_AUDIT_WINDOW"],
+      "cluster_outcome": "斯特林·沃克在公开听证会上展示的伪造票据经专家鉴定确认为现代复印机伪造品，其欺诈行为被铁证如山般揭露，奥瑞恩集团被迫撤回所有指控并承认程序违规，声誉彻底破产。《双轨创作信托协议》正式生效，确立了物理介质优先权的法律地位，初声基金构建了坚不可摧的防御网。",
+      "next_event_hook": "奥瑞恩集团转向利用‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点，迫使麦珂进入更深层次的科技与伦理博弈。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 273,
+          "timeline_start": "1993-11-12",
+          "timeline_end": "1993-11-12",
+          "scene": "初声基金临时听证室",
+          "chapter_goal": "黛安娜利用程序规则驳回斯特林强行提交的虚假账目，切断其非法提交路径。",
+          "chapter_title": "程序的红线：被驳回的伪造申请",
+          "participants": ["麦珂", "黛安娜·陈", "斯特林·沃克", "瑟琳娜·刘", "审计官哈罗德"],
+          "opening_conflict": "斯特林无视黛安娜的警告，试图绕过物理隔离区，强行要求提交一份声称是“原件扫描件”的1983年蓝盾收购票据副本，声称这是为了加速审计流程。",
+          "info_gap_use": "麦珂并未直接出面，而是通过耳麦向黛安娜传递了1983年票据应有的物理状态描述（如纸张泛黄程度、折痕位置），让黛安娜在程序上精准卡住斯特林的漏洞。",
+          "opponent_reaction": "斯特林恼羞成怒，指责黛安娜故意为难，声称复印件具有同等法律效力，并试图强行将文件推给审计官哈罗德。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "初声基金临时听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林粗暴地将一叠文件拍在桌上，纸张摩擦声刺耳。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_273_REJECTION_LOG",
+              "timeline_scope": "current",
+              "display_name": "《关于拒绝提交非物理原件的听证记录》",
+              "kind": "legal_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_269_OFFLINE_LOG",
+              "timeline_scope": "current",
+              "purpose": "证明当前系统处于离线状态，无法支持斯特林声称的‘即时扫描上传’需求。"
+            }
+          ],
+          "action_sequence": [
+            "斯特林强行提交复印件，声称符合‘影印权’条款。",
+            "黛安娜引用《双轨创作信托协议》草案第4条，指出在物理介质争议未决前，禁止任何数字化副本作为证据。",
+            "斯特林试图用“效率”施压，威胁若被驳回将起诉基金阻碍审计。",
+            "黛安娜冷静地启动录音设备，记录下斯特林承认“原件已遗失，只有复印件可用”的关键陈述。",
+            "审计官哈罗德在黛安娜的引导下，依据程序规则当场驳回斯特林的提交申请。"
+          ],
+          "visible_payoff": "斯特林的第一次强行提交被程序性驳回，他不得不承认手中没有原件，只能寄希望于后续的公开听证会。",
+          "ending": "斯特林愤然离场，扬言要在公开听证会上让所有人见识“真正的证据”，而麦珂则暗中微笑，因为他的时间到了。",
+          "must_include": ["黛安娜引用协议条款驳回申请", "斯特林承认原件丢失", "录音记录关键陈述"],
+          "must_not_include": ["斯特林在当场展示伪造细节", "公众舆论介入"],
+          "detailed_synopsis": "1993年11月12日，初声基金临时听证室内气氛紧张。斯特林·沃克无视黛安娜·陈关于“必须出示物理原件”的警告，强行将一叠声称是1983年蓝盾收购案的复印件拍在桌上，声称这是为了配合税务审计的“影印权”条款。他情绪激动，指责黛安娜设置障碍，阻碍审计进程。麦珂坐在旁听席，眼神平静，通过耳麦提醒黛安娜注意斯特林手中的纸张光泽异常。黛安娜迅速反应，引用《双轨创作信托协议》草案中关于“物理介质优先”的条款，指出在原件未核实前，任何数字化或复印件均不具备法律效力。她当场启动录音设备，记录下斯特林那句“原件确实丢了，只有这个复印件最清晰”的致命口供。审计官哈罗德在黛安娜的引导下，依据程序规则当场驳回了斯特林的申请，并警告其不得再次尝试非正规渠道提交。斯特林气急败坏，摔门而去，扬言要在次日公开听证会上让所有人闭嘴。麦珂看着斯特林离去的背影，心中默念：你的谎言，将在明天成为你的墓志铭。"
+        },
+        {
+          "chapter_id": 274,
+          "timeline_start": "1993-11-14",
+          "timeline_end": "1993-11-14",
+          "scene": "联邦税务审计局公开听证大厅",
+          "chapter_goal": "在公开听证会上，通过专家鉴定揭穿斯特林提交的伪造票据，使其欺诈行为坐实，确立物理介质优先权。",
+          "chapter_title": "墨迹与纤维的审判：伪造者的末路",
+          "participants": ["麦珂", "黛安娜·陈", "瑟琳娜·刘", "斯特林·沃克", "联邦审计官哈罗德", "造纸专家李博士", "墨水专家王博士"],
+          "opening_conflict": "斯特林在众目睽睽之下展示了他所谓的“关键证据”，声称这份1983年的票据足以证明资金流向，试图以此推翻之前的驳回决定。",
+          "info_gap_use": "麦珂提前告知专家1983年特定墨水成分（含铁锈红）和纸张纤维特征，专家据此在公开场合直接指出斯特林票据的现代伪造特征。",
+          "opponent_reaction": "斯特林在专家质询下惊慌失措，试图辩解说是“保存不当”或“特殊工艺”，但面对具体的化学检测结果，他语无伦次，甚至试图抢夺票据销毁，结果弄巧成拙。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "联邦税务审计局公开听证大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林得意洋洋地展开票据，全场目光聚焦。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_274_AUDIT_FINAL_REPORT",
+              "timeline_scope": "current",
+              "display_name": "《1993年税务审计欺诈认定报告》",
+              "kind": "legal_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_273_REJECTION_LOG",
+              "timeline_scope": "current",
+              "purpose": "证明斯特林此前已承认原件丢失，现提交的复印件即为伪造。"
+            }
+          ],
+          "action_sequence": [
+            "斯特林在听证会上高调展示伪造票据，声称这是唯一的证据。",
+            "麦珂示意专家李博士和王博士上台，开始对票据进行纤维结构和墨水成分分析。",
+            "专家指出票据纸张纤维呈现现代漂白特征，且墨水成分含有1990年代才出现的合成染料，与1983年不符。",
+            "斯特林试图辩解，称是“特殊保存环境”导致，但被专家当场驳斥。",
+            "斯特林情绪失控，试图抢夺票据，被安保人员制止，场面一度混乱。",
+            "审计官哈罗德宣布斯特林提交的文件为伪造，奥瑞恩集团欺诈成立，斯特林被责令撤回所有指控。"
+          ],
+          "visible_payoff": "斯特林的伪造行为被当众揭穿，奥瑞恩集团声誉扫地，麦珂一方彻底掌控局面，《双轨创作信托协议》正式生效。",
+          "ending": "斯特林在众人的注视下狼狈不堪，奥瑞恩集团的代表被迫承认错误并道歉，麦珂与瑟琳娜相视一笑，物理防御网已固若金汤。",
+          "must_include": ["专家现场鉴定纸张纤维和墨水", "斯特林抢夺票据的滑稽举动", "审计官当场宣布欺诈成立"],
+          "must_not_include": ["斯特林逃跑或被捕", "媒体大规模报道（仅在场媒体）"],
+          "detailed_synopsis": "1993年11月14日，联邦税务审计局公开听证大厅内座无虚席。斯特林·沃克自信满满地走上台前，展开那份经过精心伪造的1983年蓝盾收购票据，声称这是扭转乾坤的关键证据。然而，麦珂早已安排好的造纸专家李博士和墨水专家王博士随即登台。李博士拿起票据，在放大镜下仔细端详，随即大声宣布：“这张纸的纤维结构完全是现代漂白工艺的产物，1983年的纸张不可能如此洁白均匀。”紧接着，王博士拿出便携式光谱仪，对着票据上的签字进行扫描，声音更加严厉：“墨水成分中含有1990年代才广泛使用的合成染料，且不含1983年特有的铁锈红微粒。这分明是一份现代复印机伪造的赝品！”斯特林的脸瞬间变得惨白，他试图辩解说是“保存不当”或“特殊工艺”，但在铁一般的科学证据面前显得苍白无力。慌乱中，他竟伸手去抢票据，试图销毁证据，却被安保人员一把按住，场面一度滑稽而混乱。审计官哈罗德见状，立即敲下法槌，庄严宣布：“斯特林·沃克先生提交的证据确系伪造，奥瑞恩集团欺诈意图成立。斯特林先生，请即刻撤回所有指控，并承认程序违规。”斯特林瘫软在地，奥瑞恩集团的代表羞愧难当，不得不当场道歉。随着这一判决，麦珂与瑟琳娜构建的物理防御网正式宣告成功，《双轨创作信托协议》在法律层面完全生效，初声基金从此拥有了坚不可摧的财务护城河。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1993",
+    "character_states": [
+      {"entity": "麦珂", "state": "确立物理介质优先权，信任度达到顶峰"},
+      {"entity": "黛安娜·陈", "state": "晋升为拥有否决权的首席架构师"},
+      {"entity": "斯特林·沃克", "state": "欺诈罪名成立，声誉破产，被审计组列入黑名单"}
+    ],
+    "relationship_states": [
+      {"entities": ["麦珂", "瑟琳娜"], "status": "绝对防御同盟，基于物理存证"},
+      {"entities": ["麦珂", "黛安娜"], "status": "战略核心伙伴，黛安娜获得独立决策权"}
+    ],
+    "rights_and_assets": [
+      {"entity": "初声基金", "status": "财务透明度获公认，物理防御网确立"},
+      {"entity": "奥瑞恩集团", "status": "欺诈确认，失去控制企图，信誉崩塌"}
+    ],
+    "health_and_location": [],
+    "open_threads": [
+      "奥瑞恩集团转向更隐蔽的‘数据污染’策略，针对‘健康趋势预测模型’的真实数据来源发起新一轮攻击。",
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）仍需进一步调查。"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团利用‘影印权’漏洞篡改账目的企图被彻底粉碎。",
+      "《双轨创作信托协议》正式生效，物理介质优先权写入法律。"
+    ],
+    "introduced_characters": [
+      "斯特林·沃克 (Sterling Walker) - 奥瑞恩集团激进派高管，今生的主要反派之一。"
+    ],
+    "next_pressure": "奥瑞恩集团因物理手段失败，将目光转向'健康趋势预测模型'的数据源真实性，准备发动'数据污染'攻击。"
+  }
+}

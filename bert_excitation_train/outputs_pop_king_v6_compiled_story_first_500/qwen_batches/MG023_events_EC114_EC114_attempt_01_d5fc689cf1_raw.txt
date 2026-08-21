@@ -1,0 +1,214 @@
+{
+  "macro_group_id": "MG023",
+  "event_clusters": [
+    {
+      "cluster_id": "EC114",
+      "chapter_span": [227, 228],
+      "source_event_direction": "{\"cluster_id\": \"EC114\", \"chapter_span\": [227, 228], \"opposition_type\": \"technical\", \"event_type\": \"performance\", \"solution_type\": \"creative_breakthrough\", \"death_chain_role\": \"echo\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "暴雨中的光路重构与声学锚定",
+      "timeline_years": "1987—1990",
+      "main_opponent": "巴里·布鲁姆 (Barry Bloom)",
+      "opposition_type": "technical",
+      "event_type": "performance",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["EC113", "EC115"],
+      "foreshadow_ids": ["EC112"],
+      "main_characters": ["麦珂", "苏菲亚", "维克多·兰斯", "巴里·布鲁姆", "首席机械师老陈"],
+      "fictional_obstacle": "奥瑞恩集团利用暴雨天气制造穹顶投影失焦的假象，并试图将技术故障定性为“人为恶意破坏”或“非法电子干扰”，以此配合此前被扣道具箱的舆论攻势，彻底击垮麦珂的演出信誉。",
+      "prev_life_tragedy": "前世1989年同一场暴雨中，穹顶投影因光学透镜受潮和机械传动卡顿而瞬间失焦，全场陷入黑暗，引发观众恐慌踩踏，导致三名重伤者，演出被迫取消，麦珂背负“无能且失控”的骂名。",
+      "info_gap_from_prev_life": "麦珂掌握1989年那场暴雨的具体气象数据（降雨强度、湿度变化曲线）及七套备用光路切换的机械预案细节，这是前世未曾公开的技术黑箱。",
+      "why_previous_life_failed": "前世依赖单一主光路系统，缺乏冗余备份，且未针对极端天气进行机械预演，导致灾难发生时反应滞后。",
+      "preemptive_avoidance": "麦珂提前一周根据气象数据，在穹顶内部隐蔽处安装七套独立驱动的机械式备用光路切换装置，并安排专人实时监控雨量传感器，一旦触发阈值立即启动物理切换而非电子控制。",
+      "bait_and_evidence": "巴里故意在媒体面前散布“麦珂使用非法电子干扰器导致设备失灵”的谣言，诱导技术人员现场排查；麦珂则通过老陈现场演示纯机械结构的切换过程，展示无电子元件介入的物理事实，反证谣言荒谬。",
+      "comic_villain_behavior": "巴里在雨势最大时冲入后台，歇斯底里地指责是“黑客攻击”，甚至试图强行切断总电源以证明“非人为”，结果因断电导致备用机械系统无法复位，反而暴露了他对基础机械原理的一窍不通。",
+      "villain_loss": "巴里的“人为破坏”指控因现场纯机械切换的实时演示而彻底破产，其作为技术顾问的专业信誉永久受损，奥瑞恩集团迫于舆论压力暂时切断与其合作，使其退居二线。",
+      "protagonist_gain": "演出在暴雨中完美继续，麦珂提出的“非技术性声学锚定”概念初步形成，七套备用光路切换预案被确立为未来所有大型演出的标准配置，彻底规避了死亡链条中的踩踏风险。",
+      "relationship_change": "首席机械师老陈从“被动执行者”转变为“核心盟友”，对麦珂的预判能力产生绝对信任；维克多·兰斯意识到常规商业手段失效，策略开始转向隐蔽渗透。",
+      "continuity_writes": [
+        "七套备用光路切换预案成为未来所有大型演出的标准配置。",
+        "避免了前世因技术故障引发的踩踏事故，保障了观众生命安全。",
+        "‘非技术性声学锚定’概念初步形成，为后续医疗透明化行动提供技术隐喻。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "mike_ke",
+          "state_key": "technical_safety_standard_status",
+          "from": "single_point_failure_risk",
+          "to": "redundant_mechanical_standard",
+          "irreversible": true,
+          "evidence": "ART_227_MECHANICAL_SWITCH_LOG",
+          "effect_type": "protagonist_gain",
+          "source_domain": "internal_management"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "barry_bloom",
+          "state_key": "professional_credibility",
+          "from": "high_influence",
+          "to": "publicly_discredited",
+          "irreversible": true,
+          "evidence": "VIDEO_RECORDING_OF_MISMATCH",
+          "effect_type": "villain_loss",
+          "source_domain": "public_perception"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_WEATHER_1989_STORM"],
+      "cluster_outcome": "麦珂利用重生预知的暴雨数据，成功将一场可能致命的技术危机转化为展示机械冗余安全的契机。巴里试图借机散布的“人为破坏”谣言，在首席机械师老陈的纯机械切换演示下当场破产。演出在暴雨中完美落幕，七套备用光路切换预案正式成为行业标准，不仅消除了前世踩踏事故的隐患，更让“非技术性声学锚定”概念深入人心，公众注意力完全从“艺人失控”转向“医疗与技术透明”。",
+      "next_event_hook": "折叠地图激发1992年‘初声基金’评审制度改革；《误差共担协议》成为1993年莉薇娅出任全球巡演首席医疗官的法理依据。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 227,
+          "timeline_start": "1987年夏夜，暴雨初降",
+          "timeline_end": "演出高潮时刻",
+          "scene": "中央体育馆穹顶下方及后台机械控制室",
+          "chapter_goal": "验证七套备用光路在极端天气下的自动切换功能，确保演出不因天灾中断。",
+          "chapter_title": "第一滴雨与无声的齿轮",
+          "participants": ["麦珂", "首席机械师老陈", "苏菲亚", "巴里·布鲁姆"],
+          "opening_conflict": "暴雨如注，外界舆论猜测演出将因技术故障取消，巴里在媒体群中暗示麦珂的设备存在“隐形漏洞”。",
+          "info_gap_use": "麦珂依据前世记忆中的气象数据，精准预测降雨达到临界点的时间，提前指令老陈激活备用光路预案。",
+          "opponent_reaction": "巴里在监控室外冷笑，准备在灯光熄灭的瞬间跳出来指责是“人为破坏”。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "穹顶下方舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "雨声渐大，光线微暗"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_227_MECHANICAL_SWITCH_LOG",
+              "timeline_scope": "current",
+              "display_name": "七套备用光路切换机械日志",
+              "kind": "critical_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_217_OPTICAL_CERTIFICATE",
+              "timeline_scope": "current",
+              "purpose": "对比证明本次切换无需电子元件，仅靠机械结构完成"
+            }
+          ],
+          "action_sequence": [
+            "第一滴雨落在穹顶玻璃上，发出清脆声响。",
+            "麦珂在控制台按下预设的物理开关，不经过任何电子信号传输。",
+            "穹顶上方七组备用光路齿轮咬合，发出沉闷但规律的机械运转声。",
+            "原本即将失焦的主投影画面瞬间被七套备用光路无缝接管，画面清晰度未受任何影响。",
+            "观众席爆发出雷鸣般的掌声，无人察觉刚才的惊险。",
+            "老陈向麦珂竖起大拇指，确认机械结构完好无损。"
+          ],
+          "visible_payoff": "演出在暴雨中完美继续，没有任何画面抖动或黑屏，观众以为只是普通的灯光效果调整。",
+          "ending": "麦珂看着窗外的大雨，心中默念：这一世，不会再有踩踏了。",
+          "must_include": ["机械齿轮咬合声", "无电子信号介入", "画面无缝切换"],
+          "must_not_include": ["手机报警", "网络直播", "云端数据"],
+          "detailed_synopsis": "暴雨倾盆而下，体育馆穹顶外的雷声掩盖了内心的紧张。麦珂没有像前世那样等待灾难发生，而是依据前世记忆中的气象数据，在雨势刚达临界值时，果断下令启动纯机械式备用方案。随着一声沉闷的齿轮咬合声，七套备用光路在穹顶内部悄然切换，原本因雨水折射可能失焦的主投影画面，瞬间被新的光路接管，色彩依旧鲜艳，线条依旧锐利。台下观众欢呼雀跃，以为这是精心设计的特效，只有后台的老陈满头大汗地确认着机械日志。巴里在监控室外脸色铁青，他准备好的“技术故障”剧本还没开场就被打断了。"
+        },
+        {
+          "chapter_id": 228,
+          "timeline_start": "演出结束后",
+          "timeline_end": "记者会现场",
+          "scene": "体育馆后台通道及临时搭建的媒体发布区",
+          "chapter_goal": "当众揭穿巴里“人为破坏”的谣言，用实物证据锁定其谎言，确立新标准。",
+          "chapter_title": "齿轮的证词",
+          "participants": ["麦珂", "巴里·布鲁姆", "老陈", "多家媒体记者"],
+          "opening_conflict": "巴里趁乱闯入，指着穹顶大喊“这是人为破坏！有人动了手脚！”试图将技术故障归咎于麦珂团队。",
+          "info_gap_use": "麦珂早已预料到巴里会这样反应，提前准备了老陈的机械操作记录和无电子元件的证明。",
+          "opponent_reaction": "巴里情绪失控，试图抢夺老陈手中的工具，却被安保人员拦住。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "媒体发布区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "闪光灯亮起，巴里歇斯底里"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_227_MECHANICAL_SWITCH_LOG",
+              "timeline_scope": "current",
+              "purpose": "展示切换过程的纯机械性质，证明无电子干扰"
+            }
+          ],
+          "action_sequence": [
+            "巴里在媒体面前声嘶力竭地指控麦珂使用了非法电子干扰器。",
+            "麦珂微笑着示意老陈上前，老陈直接拆开一台备用光路控制盒，展示内部全是齿轮、弹簧和杠杆，没有任何电路板。",
+            "老陈现场演示如何通过手动摇柄完成切换，证明整个过程完全物理化。",
+            "记者们纷纷拍照，巴里的指控在铁证面前显得苍白可笑。",
+            "麦珂宣布七套备用光路将成为未来演出的标配，彻底粉碎巴里的阴谋。"
+          ],
+          "visible_payoff": "巴里的谣言因技术人员的实时演示而破产，其操纵技术的企图再次失败，公众对麦珂的信任度大幅提升。",
+          "ending": "巴里灰溜溜地离开，身后是麦珂坚定的背影和周围媒体的赞誉声。",
+          "must_include": ["拆解控制盒", "纯机械结构展示", "巴里情绪失控"],
+          "must_not_include": ["法律起诉", "警方逮捕", "财务冻结"],
+          "detailed_synopsis": "演出刚一结束，巴里便像疯狗一样冲了出来，指着穹顶大喊“这是人为破坏！有人动了手脚！”，试图将刚刚完美的演出重新定义为技术丑闻。然而，麦珂早已胸有成竹。她示意首席机械师老陈上前，老陈当着所有记者的面，拆开了备用光路的控制盒，里面密密麻麻的齿轮、弹簧和杠杆清晰可见，没有任何电子元件的痕迹。老陈熟练地转动摇柄，模拟了刚才的切换过程，动作行云流水。这一幕让巴里的指控瞬间崩塌，他的脸涨得通红，试图辩解却语无伦次。麦珂趁机宣布，这种纯机械的冗余设计将成为未来所有大型演出的标准配置，彻底堵死了巴里继续作恶的可能。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {
+        "entity_id": "mike_ke",
+        "state_key": "technical_reputation",
+        "new_value": "trusted_innovator",
+        "description": "凭借暴雨中的完美表现，麦珂确立了技术权威形象。"
+      },
+      {
+        "entity_id": "barry_bloom",
+        "state_key": "influence_level",
+        "new_value": "diminished",
+        "description": "专业信誉受损，暂时失去对项目的控制权。"
+      },
+      {
+        "entity_id": "liweiya",
+        "state_key": "trust_in_mike",
+        "new_value": "absolute",
+        "description": "对麦珂的技术判断力给予最高信任。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_id": "mike_ke_liweiya",
+        "change_description": "从谨慎观察转为绝对依赖，授权范围扩大至技术安全领域。"
+      },
+      {
+        "entity_id": "mike_ke_old_chen",
+        "change_description": "从上下级关系转为深度技术盟友，老陈成为核心执行者。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "mike_ke",
+        "right_key": "mechanical_standard_adoption",
+        "status": "established",
+        "description": "七套备用光路切换预案成为行业标准。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "audience",
+        "status": "safe",
+        "description": "避免了前世踩踏事故，全员平安离场。"
+      }
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性"
+    ],
+    "resolved_threads": [
+      "穹顶投影技术故障危机",
+      "巴里·布鲁姆的技术信誉危机"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

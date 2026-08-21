@@ -1,0 +1,275 @@
+{
+  "macro_group_id": "MG048",
+  "event_clusters": [
+    {
+      "cluster_id": "EC237",
+      "chapter_span": [
+        473,
+        474
+      ],
+      "source_event_direction": "前世具体受害：前世信托管理人在突发眩晕后，奥瑞恩集团立即冻结资产并接管决策权。；本事件独有的前世信息差：《双轨创作信托协议》补充条款规定管理人失能时签字权自动移交最高分学员。；今生提前动作：麦珂提前将补充条款副本存入昆廷随身携带的物理保险箱，并通知三位认证学员待命。；第473章可见小赢：昆廷突发眩晕离场，三位学员当场签署临时执行确认书，维克多无法启动资产冻结。；第474章新交锋：温特律师事务所公开条款原件，全球直播画面定格在三人联合签署的瞬间。；阻力方永久现实损失：奥瑞恩集团试图通过‘管理人失能’进行法律劫持的动议彻底丧失法理基础。；主角现实收益：麦珂获得对‘永恒星光’项目的绝对控制权，且无需经过任何审批流程。；不可逆结算键：三位认证学员的联署具有不可撤销的法律效力，直接覆盖原信托架构。；接回死亡控制主线：瓦解对手利用管理危机制造混乱、进而实施资产收割的阴谋链条。",
+      "source_event_direction_sha256": "0b9eb6f4395ba28fd5bc9a5199dcf675dcad25e10f4b96db66b9c369598a41dc",
+      "source_macro_sha256": "fc3619f3e63a6e7ebd7c9c83304a155705a1ed1c1511bb129031fcd9208c6f06",
+      "name": "双轨信托的生死签署",
+      "timeline_years": "2009",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "institutional",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS06"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "昆廷·琼斯",
+        "苏菲亚",
+        "玛莎",
+        "维克多·兰斯",
+        "三位认证学员"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用《双轨创作信托协议》中关于管理人失能的模糊条款，试图在昆廷突发眩晕后瞬间接管资产并夺取决策权，切断麦珂对‘永恒星光’的控制。",
+      "prev_life_tragedy": "前世昆廷在2009年3月17日晚22:15分突发眩晕，奥瑞恩集团随即以‘管理人丧失行为能力’为由，强行接管所有项目资金，麦珂被剥夺控制权，最终导致项目在混乱中被低价变卖。",
+      "info_gap_from_prev_life": "麦珂掌握前世未公开的《双轨创作信托协议》补充条款：当管理人突发不可逆生理障碍时，签字权自动移交给当前评分最高的三位认证学员，且该条款需物理介质确认方可生效，数字信号无法覆盖。",
+      "why_previous_life_failed": "前世麦珂依赖数字系统备份条款，而奥瑞恩集团拥有最高权限的数字密钥，在昆廷眩晕的瞬间直接覆盖了补充条款，导致法律劫持成功。",
+      "preemptive_avoidance": "麦珂提前在3月16日夜间，将《双轨创作信托协议》补充条款的纸质原件存入昆廷随身携带的物理保险箱（非电子锁），并秘密通知三位认证学员待命，确保在昆廷离场时能立即触发联合签署机制。",
+      "bait_and_evidence": "维克多故意安排昆廷在直播前一刻‘突发眩晕’离场，诱导现场媒体和奥瑞恩集团高层认定其丧失行为能力，以此作为启动资产接管的借口；而麦珂则利用这一时机，让三位学员当场签署临时执行确认书，形成不可撤销的物理证据。",
+      "comic_villain_behavior": "维克多·兰斯在确认昆廷‘倒下’后，竟不顾现场直播，对着麦珂风狂喜地宣布‘收割时刻已到’，甚至提前起草了讣告草稿，完全忽略了麦珂早已准备好的物理证据链，显得贪婪而滑稽。",
+      "villain_loss": "奥瑞恩集团试图通过‘管理人失能’进行法律劫持的动议彻底丧失法理基础，其内部因过度自信导致的操作失误暴露，信任裂痕扩大。",
+      "protagonist_gain": "麦珂获得对‘永恒星光’项目的绝对控制权，且无需经过任何审批流程，直接覆盖原信托架构。",
+      "relationship_change": "麦珂与‘星火同盟’成员建立基于绝对信任的生死契约；维克多与奥瑞恩集团高层产生不可调和的信任裂痕，后者开始怀疑内部有人泄露了‘必死’计划。",
+      "continuity_writes": [
+        "承接EC236中苏菲亚锁死胶片厂数据的结果，本事件进一步将‘清醒’状态从生理层面延伸至法律层面。",
+        "昆廷的眩晕是维克多精心设计的陷阱，但麦珂利用前世记忆将其转化为法律反击的契机。",
+        "三位学员的联署具有不可撤销的法律效力，直接覆盖原信托架构，形成新的权力中心。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "MC_TRUST_AUTHORITY",
+          "state_key": "management_authority_status",
+          "from": "pending_freeze_by_corp",
+          "to": "transferred_to_scholars_via_physical_signatures",
+          "irreversible": true,
+          "evidence": "ART_473_TEMP_CERT_AND_THREE_SCHOLAR_SIGNATURES",
+          "effect_type": "protagonist_gain",
+          "source_domain": "Legal_Proceedings"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "VL_CORP_SYSTEM",
+          "state_key": "asset_freeze_authority",
+          "from": "active_pending",
+          "to": "legally_voided_by_overriding_clauses",
+          "irreversible": true,
+          "evidence": "WINTER_LAW_FIRM_PUBLICATION_OF_ORIGINAL_CLAUSE",
+          "effect_type": "villain_loss",
+          "source_domain": "Legal_Proceedings"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "MC_STAR_ALLIANCE",
+          "state_key": "trust_level",
+          "from": "strategic_partnership",
+          "to": "absolute_birth_death_contract",
+          "irreversible": true,
+          "evidence": "THREE_SCHOLARS_JOINT_SIGNING_EVENT",
+          "effect_type": "relationship_change",
+          "source_domain": "Social_Dynamics"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_2009_MARCH_17_NIGHT"
+      ],
+      "cluster_outcome": "三位认证学员的联署具有不可撤销的法律效力，直接覆盖原信托架构，瓦解对手利用管理危机制造混乱、进而实施资产收割的阴谋链条。",
+      "next_event_hook": "‘永恒星光’落幕即‘星火审判’开端——麦珂未设复仇议程，只启动‘开口权存证计划’，将四十年间所有署名作品、健康公示、家庭决议与粉丝共创成果打包为开源时间胶囊，向全球教育机构免费授予权，引发新一轮资本围剿。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 473,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "主会场后台休息室",
+          "chapter_goal": "利用昆廷突发眩晕的假象，触发三位认证学员的联合签署机制，确立临时执行权。",
+          "chapter_title": "眩晕中的反杀",
+          "participants": [
+            "麦珂",
+            "昆廷·琼斯",
+            "苏菲亚",
+            "玛莎",
+            "三位认证学员",
+            "现场安保"
+          ],
+          "opening_conflict": "昆廷在直播前一刻突然捂住胸口倒地，维克多·兰斯的团队立刻冲入，声称其丧失行为能力，准备启动资产接管程序。",
+          "info_gap_use": "麦珂利用前世记忆，早已知道这是维克多的‘推药指令’后的标准剧本，提前将补充条款副本存入昆廷的物理保险箱，并通知学员待命。",
+          "opponent_reaction": "维克多·兰斯见状大喜，立刻命令法务团队准备接管文件，并在直播镜头前高呼‘收割时刻已到’，完全忽略了麦珂的布局。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主会场后台休息室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "昆廷倒地瞬间，镜头切换至麦珂冷静走向保险箱"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_473_TEMP_CERT",
+              "timeline_scope": "current",
+              "display_name": "《星火调音师临时执行确认书》",
+              "kind": "digital_forensic_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_469_MECHANICAL_LOCK",
+              "timeline_scope": "current",
+              "purpose": "作为物理介质，验证补充条款的真实性"
+            }
+          ],
+          "action_sequence": [
+            "昆廷倒地，维克多团队冲入，宣布其丧失行为能力。",
+            "麦珂冷静取出昆廷身上的物理保险箱，打开后展示补充条款原件。",
+            "三位认证学员迅速到场，在苏菲亚和玛莎的见证下，当场签署临时执行确认书。",
+            "维克多试图阻止，但发现法律程序已被物理证据锁定。"
+          ],
+          "visible_payoff": "三位学员的联署完成，维克多无法启动资产接管，现场直播画面定格在三人联合签署的瞬间。",
+          "ending": "麦珂手持签署文件，微笑着看向惊慌失措的维克多，全场观众屏息以待下一幕。",
+          "must_include": [
+            "昆廷倒地的真实性描写",
+            "物理保险箱的开启过程",
+            "三位学员签署的庄严感"
+          ],
+          "must_not_include": [
+            "昆廷的真实病情",
+            "维克多的具体阴谋细节",
+            "未来的法律诉讼结果"
+          ],
+          "detailed_synopsis": "2009年3月17日晚22:10，主会场后台休息室灯火通明。昆廷·琼斯突然捂住胸口，痛苦倒地，呼吸急促。维克多·兰斯闻讯赶来，脸上露出久违的狂喜，他立刻对身边的法务人员下令：“快！启动资产接管程序，他现在丧失了行为能力！”与此同时，麦珂却异常冷静，他早已预料到这一幕。他快步走到昆廷身边，从对方随身携带的物理保险箱中取出了《双轨创作信托协议》补充条款的纸质原件。这位老人曾告诉他，真正的法律力量不在远程档案库，而在指尖触碰的纸张上。麦珂高举文件，大声宣读：“根据补充条款，当管理人突发不可逆生理障碍时，签字权自动移交给当前评分最高的三位认证学员。”话音未落，三位早已待命的认证学员从人群中走出，在苏菲亚和玛莎的见证下，迅速在临时执行确认书上签下了自己的名字。维克多愣住了，他没想到麦珂会如此从容，更没想到自己精心策划的‘夺权’计划会被一张纸轻易破解。直播镜头下，三人联合签署的画面被定格，维克多的脸色瞬间变得铁青。"
+        },
+        {
+          "chapter_id": 474,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "主会场穹顶入口",
+          "chapter_goal": "温特律师事务所公开条款原件，彻底粉碎维克多的法律劫持企图，确立麦珂的绝对控制权。",
+          "chapter_title": "物理介质的胜利",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "温特律师事务所代表",
+            "奥瑞恩集团高层",
+            "全球观众"
+          ],
+          "opening_conflict": "维克多·兰斯不甘心失败，试图通过远程数字信号覆盖签署文件，宣称其无效，并准备启动讣告程序。",
+          "info_gap_use": "麦珂利用前世记忆，知道维克多会尝试用数字手段覆盖物理证据，因此提前让温特律师事务所的代表在场，准备公开原始条款。",
+          "opponent_reaction": "维克多·兰斯在直播中疯狂叫嚣，试图用技术术语混淆视听，但最终被温特律师事务所代表的实物展示打脸。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主会场穹顶入口",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "温特律师事务所代表走上台，展示原始条款"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_473_TEMP_CERT",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据，证明签署的合法性"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯在直播中叫嚣，试图用数字信号覆盖签署文件。",
+            "温特律师事务所代表走上台，展示原始条款原件，并解释其法律效力。",
+            "麦珂手持签署文件，微笑着面对镜头，宣告自己获得绝对控制权。",
+            "维克多·兰斯陷入被动，奥瑞恩集团高层开始怀疑内部有人泄露了计划。"
+          ],
+          "visible_payoff": "温特律师事务所公开条款原件，全球直播画面定格在三人联合签署的瞬间，维克多的法律劫持企图彻底破产。",
+          "ending": "麦珂手持未剪辑童年试镜母带步入主会场穹顶入口，全场观众爆发出雷鸣般的掌声。",
+          "must_include": [
+            "温特律师事务所代表的专业展示",
+            "维克多的狼狈反应",
+            "麦珂的从容姿态"
+          ],
+          "must_not_include": [
+            "具体的法律诉讼细节",
+            "未来的资本围剿",
+            "其他无关人物的心理描写"
+          ],
+          "detailed_synopsis": "2009年3月17日晚22:25，主会场穹顶入口处，全球直播正在进行。维克多·兰斯不甘心失败，他对着麦珂风大喊：“你们以为一张纸就能改变什么？我的数字系统已经覆盖了所有数据！”然而，温特律师事务所的代表此时走上台，手中拿着一份泛黄的纸质文件——《双轨创作信托协议》补充条款的原件。他平静地解释道：“这份文件的法律效力源自其物理存在，任何数字信号都无法覆盖或篡改它。”随着他的话音落下，现场大屏幕上展示了三位认证学员的联合签署画面，以及麦珂手持签署文件的清晰影像。维克多·兰斯愣住了，他意识到自己精心策划的法律劫持彻底破产了。奥瑞恩集团的高层们面面相觑，开始怀疑内部是否有人泄露了‘必死’计划。麦珂则从容地走向舞台中央，手持未剪辑的童年试镜母带，微笑着面对镜头：“现在，我获得了‘永恒星光’项目的绝对控制权。”全场观众爆发出雷鸣般的掌声，维克多·兰斯在镜头前显得无比狼狈，他的贪婪和愚蠢在这一刻暴露无遗。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2009",
+    "character_states": [
+      {
+        "character_id": "MC",
+        "state_key": "control_status",
+        "new_state": "absolute_control_over_eternal_starlight",
+        "evidence": "THREE_SCHOLAR_JOINT_SIGNATURE"
+      },
+      {
+        "character_id": "VL",
+        "state_key": "reputation_status",
+        "new_state": "publicly_exposed_as_greedy_fool",
+        "evidence": "LIVE_BROADCAST_OF_LEGAL_FAILURE"
+      },
+      {
+        "character_id": "QT",
+        "state_key": "health_status",
+        "new_state": "physically_stable_after_mild_symptoms",
+        "evidence": "MEDICAL_VERIFICATION_POST_INCIDENT"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_pair": "MC_STAR_ALLIANCE",
+        "relation_type": "absolute_trust_contract",
+        "trigger_event": "THREE_SCHOLAR_JOINT_SIGNING"
+      },
+      {
+        "entity_pair": "VL_AUREON_GROUP",
+        "relation_type": "irreconcilable_distrust",
+        "trigger_event": "LEGAL_HEIST_FAILURE"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset_id": "ETERNAL_STARLIGHT_PROJECT",
+        "status": "fully_controlled_by_MC",
+        "legal_basis": "PHYSICAL_CLAUSE_OVERRIDE"
+      },
+      {
+        "asset_id": "AUREON_GROUP_ASSETS",
+        "status": "freezing_attempt_voided",
+        "legal_basis": "NO_LEGAL_BASE_FOR_FREEZE"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "MC",
+        "health_status": "fully_normal",
+        "location": "MAIN_HALL_DOME_ENTRANCE"
+      },
+      {
+        "entity_id": "VL",
+        "health_status": "normal_but_embarrassed",
+        "location": "MAIN_HALL_STAGE"
+      }
+    ],
+    "open_threads": [
+      "'开口权存证计划'的全球推广与资本围剿风险",
+      "四十年间所有署名作品的开源授权落地情况"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团试图通过‘管理人失能’进行法律劫持的动议"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "‘开口权存证计划’启动后，全球资本将发起新一轮围剿，试图通过法律战、舆论战等手段重新夺回声音主权，麦珂需在开源过程中应对复杂的国际法律纠纷。"
+  }
+}

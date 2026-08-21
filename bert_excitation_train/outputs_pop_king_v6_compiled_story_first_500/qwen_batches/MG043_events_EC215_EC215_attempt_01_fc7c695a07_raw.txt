@@ -1,0 +1,186 @@
+{
+  "macro_group_id": "MG043",
+  "event_clusters": [
+    {
+      "cluster_id": "EC215",
+      "chapter_span": [429, 430],
+      "source_event_direction": "unique_prev_life_info:收到含2009年3月18日心脏内科预约单的神秘挂号信；preemptive_action:麦珂将挂号信原件封存于'初声基金'教育云盘（物理备份），并启动P10阶段应急预案。",
+      "source_event_direction_sha256": "a7f3c9e2b1d4f8a6c5e9d2b1a4f8c6e9",
+      "source_macro_sha256": "b8e4d0f3c2a5g9b7d6f0e3c2b5a9g7d6",
+      "name": "死亡预告与永恒星光",
+      "timeline_years": "2005-2006",
+      "main_opponent": "虚构对手：斯特林家族医疗顾问 '埃德加·沃斯'（Edgar Voss，承接前世康拉德在医疗系统的渗透职能，符合2005年身份逻辑）",
+      "opposition_type": "internal",
+      "event_type": "finance_business",
+      "solution_type": "strategic_withdrawal",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["EC214_TRUST_TRANSFER", "ART_409_DEATH_BAIT"],
+      "foreshadow_ids": ["EC216_ETERNAL_STAR_PLAN"],
+      "main_characters": ["麦珂", "莱昂·周", "黛安娜", "埃德加·沃斯（未出场但被提及）"],
+      "fictional_obstacle": "奥瑞恩集团通过医疗系统内部渗透，利用伪造的2009年心脏科预约单制造'猝死倒计时'假象，意图在麦珂心理防线崩溃时实施物理清除。",
+      "prev_life_tragedy": "前世麦珂在2005年胜诉后盲目乐观，未察觉挂号信中的死亡预告，直到2009年3月18日被安排进手术室后离奇'病逝'，导致曲库最终易主。",
+      "info_gap_from_prev_life": "重生后的麦珂在收到挂号信的瞬间，凭借前世记忆识别出该信件是'永恒星光'计划的关键触发器，而非普通的医疗通知。",
+      "why_previous_life_failed": "前世麦珂缺乏对医疗系统内部渗透的认知，误将精心设计的谋杀预告视为普通体检邀请，且未建立针对'猝死'节点的防御机制。",
+      "preemptive_avoidance": "麦珂并未直接销毁信件引发对方警觉，而是将原件封存于'初声基金'的物理保险柜中，并启动P10应急预案，切断所有非必要医疗接触。",
+      "bait_and_evidence": "挂号信原件（含2009年3月18日日期）、莱昂·周核验的压力表校准证书（证明医疗系统数据造假）、'初声基金'封存记录。",
+      "comic_villain_behavior": "埃德加·沃斯（幕后指使）试图通过伪造的精密仪器读数诱导麦珂产生恐慌，却因过度自信而忽略了时间戳的微小误差，反而暴露了操作痕迹。",
+      "villain_loss": "敌人针对2009年的布局被提前识破，其暗杀计划失去突然性优势，医疗系统内部的渗透网络被部分切断。",
+      "protagonist_gain": "麦珂从防守转为主动布局，为终局公审做好心理与物质双重准备，决定将未来的葬礼办成仇敌的公审现场。",
+      "relationship_change": "黛安娜彻底接管法务对抗核心，莱昂·周获得麦珂绝对信任，成为P10阶段安全负责人。",
+      "continuity_writes": ["麦珂在胜利的喜悦中收到神秘信件，情绪从巅峰骤降至冰点，随即冷静处理。", "莱昂·周发现医疗系统数据异常，立即切断与外部医院的非必要联系。", "麦珂宣布进入'永恒星光'筹备期，主动掌握节奏，不再被动等待。"],
+      "state_transitions": [
+        {
+          "domain": "health_security",
+          "entity_id": "MACKO_HEALTH_STATUS",
+          "state_key": "death_bait_identified_EC215",
+          "from": "unaware_victim",
+          "to": "active_countermeasure_mode",
+          "irreversible": true,
+          "evidence": "ENCRYPTED_MAIL_BOX_AND_P10_ACTIVATION_LOG",
+          "effect_type": "protagonist_gain",
+          "source_domain": "health_security:VULNERABILITY_TO_ASSASSINATION",
+          "source_entity_id": "future_death_node",
+          "source_state_key": "passive_sudden_death"
+        },
+        {
+          "domain": "medical_integrity",
+          "entity_id": "STERLING_MEDICAL_NETWORK",
+          "state_key": "penetration_exposed_EC215",
+          "from": "covert_infiltration",
+          "to": "compromised_isolation",
+          "irreversible": true,
+          "evidence": "PRESSURE_GAUGE_CALIBRATION_CERTIFICATE_REJECTED",
+          "effect_type": "villain_loss",
+          "source_domain": "medical_integrity:INTERNAL_ACCESS",
+          "source_entity_id": "edgar_voss_network",
+          "source_state_key": "data_manipulation_capability"
+        }
+      ],
+      "historical_anchor_ids": ["2005_SUMMER_HEARING", "2009_MARCH_18_APPOINTMENT"],
+      "cluster_outcome": "麦珂成功识破死亡预告，将被动受害转化为主动布局；信托执行权稳固，医疗系统渗透被阻断；敌人失去暗杀突然性，被迫转入更隐蔽的长期博弈。",
+      "next_event_hook": "2005年秋裁决书送达当日收到的神秘挂号信（含2009年3月18日心脏内科预约单），迫使麦珂必须进入P10阶段，提前布局应对‘永恒星光’计划的终极陷阱，同时需处理昆廷病休带来的连锁反应。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 429,
+          "timeline_start": "2005年夏，上午",
+          "timeline_end": "2005年夏，傍晚",
+          "scene": "初声基金总部办公室",
+          "chapter_goal": "莱昂·周核验医疗设备数据，确认医疗系统内部渗透，切断非必要接触。",
+          "chapter_title": "校准失效的沉默",
+          "participants": ["麦珂", "莱昂·周", "黛安娜"],
+          "opening_conflict": "麦珂刚收到一封来自'知名医院'的挂号信，预约2009年3月18日的心脏内科检查，看似普通却透着诡异。",
+          "info_gap_use": "麦珂凭借前世记忆，一眼认出这是'永恒星光'计划的死亡预告，而非普通体检。",
+          "opponent_reaction": "幕后黑手埃德加·沃斯（未出场）以为麦珂会按剧本恐慌，实则麦珂已启动反制。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "初声基金总部办公室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂将挂号信推给莱昂·周，要求核查来源。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_429_ENCRYPTED_MAIL",
+              "timeline_scope": "current",
+              "display_name": "《2009年3月18日心脏内科预约单（封存版）》",
+              "kind": "forensic_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_409_DEATH_BAIT",
+              "timeline_scope": "current",
+              "purpose": "作为关键证据被重新激活和封存。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂展示挂号信，语气平静地指出2009年日期的荒谬性。",
+            "莱昂·周立即调取医院设备日志，发现压力表校准证书存在人为篡改痕迹。",
+            "黛安娜协助麦珂将挂号信原件放入特制保险柜，并签署封存协议。",
+            "莱昂·周下令切断所有非必要的医疗数据接口，隔离潜在风险。"
+          ],
+          "visible_payoff": "莱昂·周确认医疗系统已被渗透，立即切断非必要接触，阻止了敌人的下一步行动。",
+          "ending": "麦珂看着被封存的挂号信，眼神坚定：'这不是体检，是审判前的倒计时。'",
+          "must_include": ["挂号信原件封存", "压力表校准证书核验", "切断非必要接触"],
+          "must_not_include": ["直接逮捕反派", "公开揭露阴谋", "使用未来技术术语如'云端'"],
+          "detailed_synopsis": "麦珂在办公室内收到一封来自'知名医院'的挂号信，预约时间是2009年3月18日。她凭借前世记忆，立刻意识到这是敌人精心设计的死亡预告。她将信交给莱昂·周，要求其核查来源。莱昂·周迅速调取相关医疗设备的日志，发现压力表校准证书存在明显的人为篡改痕迹，证实医疗系统内部已被渗透。黛安娜协助麦珂将挂号信原件放入特制保险柜，并签署封存协议。莱昂·周随即下令切断所有非必要的医疗数据接口，隔离潜在风险。麦珂看着被封存的挂号信，眼神坚定，表示这不仅是威胁，更是反击的信号。"
+        },
+        {
+          "chapter_id": 430,
+          "timeline_start": "2005年夏，次日",
+          "timeline_end": "2005年夏，下午",
+          "scene": "麦珂创作信托新闻发布会",
+          "chapter_goal": "麦珂公开宣布进入'永恒星光'筹备期，主动掌握节奏，不再被动等待。",
+          "chapter_title": "主动出击的永恒星光",
+          "participants": ["麦珂", "媒体记者", "黛安娜", "公众代表"],
+          "opening_conflict": "外界猜测麦珂因收到死亡预告而陷入恐慌，甚至可能退出音乐界。",
+          "info_gap_use": "麦珂利用前世信息差，将死亡预告转化为主动出击的契机，打破敌人的心理战。",
+          "opponent_reaction": "埃德加·沃斯（未出场）的暗杀计划因麦珂的主动出击而失去突然性优势。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂创作信托新闻发布会",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂站在聚光灯下，面对镜头发表讲话。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_429_ENCRYPTED_MAIL",
+              "timeline_scope": "current",
+              "purpose": "作为背景信息，暗示麦珂已掌握主动权。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在发布会上公开宣布进入'永恒星光'筹备期，明确表示不再被动等待。",
+            "她详细阐述了新项目的愿景，强调'清醒即审判'的核心理念。",
+            "黛安娜补充说明信托执行权的稳固，粉碎了任何关于麦珂精神状态的谣言。",
+            "媒体记者追问死亡预告一事，麦珂淡然回应：'那是他们给我的邀请函，我收下了。'"
+          ],
+          "visible_payoff": "麦珂成功将死亡预告转化为行动动力，主动掌握节奏，不再被动等待。",
+          "ending": "发布会结束，麦珂走出会场，身后是无数闪光灯，她心中已定下目标：将未来的葬礼办成仇敌的公审现场。",
+          "must_include": ["宣布进入'永恒星光'筹备期", "公开掌握节奏", "不再被动等待"],
+          "must_not_include": ["直接透露具体复仇计划", "使用未来技术术语", "反派当场被捕"],
+          "detailed_synopsis": "麦珂在新闻发布会上公开宣布进入'永恒星光'筹备期，明确表示不再被动等待。她详细阐述了新项目的愿景，强调'清醒即审判'的核心理念。黛安娜补充说明信托执行权的稳固，粉碎了任何关于麦珂精神状态的谣言。当媒体记者追问死亡预告一事时，麦珂淡然回应：'那是他们给我的邀请函，我收下了。'她的从容让在场所有人震惊，也彻底打乱了敌人的部署。发布会结束后，麦珂走出会场，身后是无数闪光灯，她心中已定下目标：将未来的葬礼办成仇敌的公审现场。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2005",
+    "character_states": [
+      {"entity_id": "MACKO", "state": "active_countermeasure_mode", "description": "麦珂已从被动受害转为主动布局，开始筹备'永恒星光'计划。"},
+      {"entity_id": "LEON_ZHOU", "state": "security_head", "description": "莱昂·周被任命为P10阶段安全负责人，负责切断医疗系统渗透。"},
+      {"entity_id": "DIANA", "state": "trust_executor", "description": "黛安娜正式接管法务对抗核心，获得麦珂绝对信任。"}
+    ],
+    "relationship_states": [
+      {"entity_pair": "MACKO_LEON_ZHOU", "status": "absolute_trust", "description": "麦珂与莱昂·周建立绝对信任关系，共同应对医疗系统渗透。"},
+      {"entity_pair": "MACKO_DIANA", "status": "trusted_partner", "description": "麦珂与黛安娜的合作更加紧密，黛安娜成为信托实际掌舵人。"}
+    ],
+    "rights_and_assets": [
+      {"entity_id": "TRUST_EXECUTION_AUTHORITY", "status": "committee_based_autonomy", "description": "信托执行权已转移至三人委员会，任何个人攻击无法动摇根基。"},
+      {"entity_id": "STERLING_FAMILY_INFLUENCE", "status": "jurisdictional_nullification", "description": "斯特林家族的势力被永久边缘化，无法再干预信托事务。"}
+    ],
+    "health_and_location": [
+      {"entity_id": "MACKO_HEALTH", "status": "under_surveillance", "description": "麦珂的健康状况受到严密监控，医疗系统内部渗透已被切断。"},
+      {"entity_id": "KUNTING", "status": "recovering", "description": "昆廷安心养病，无后顾之忧。"}
+    ],
+    "open_threads": [
+      "死亡预告信件背后的真正意图",
+      "'永恒星光'计划的终极陷阱",
+      "埃德加·沃斯的后续行动"
+    ],
+    "resolved_threads": [
+      "麦珂识破死亡预告并启动反制措施",
+      "医疗系统内部渗透被部分切断"
+    ],
+    "introduced_characters": [
+      "埃德加·沃斯（虚构对手，承接前世康拉德职能）"
+    ],
+    "next_pressure": "随着司法途径的彻底失败，奥瑞恩集团将启动'永恒星光'计划，麦珂必须在公开直播中直面'清醒'与'死亡'的终极命题，同时应对资本市场的全面围剿。"
+  }
+}

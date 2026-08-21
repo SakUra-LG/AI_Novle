@@ -1,0 +1,12 @@
+{
+  "cluster_id": "EC020",
+  "review_round": 1,
+  "reviewed_chapters": [39, 40],
+  "decision": "regenerate_both_chapters",
+  "body_manually_edited": false,
+  "actual_failures": [
+    "第39章把8月23日才启用的ChronoBadge照片误标为5月22日，并让时间胸牌显示17.3Hz",
+    "第40章把机械时间戳与热显色胸牌写成通电芯片，并把主角权限扩张到规划外的全部未来标准终审"
+  ],
+  "required_action": "按EC019已写入图谱的机械时间戳和热显色属性重生成，禁止未来状态与电子芯片化。"
+}

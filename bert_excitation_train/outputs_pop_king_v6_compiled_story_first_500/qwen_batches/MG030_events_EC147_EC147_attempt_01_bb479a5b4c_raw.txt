@@ -1,0 +1,224 @@
+{
+  "macro_group_id": "MG030",
+  "event_clusters": [
+    {
+      "cluster_id": "EC147",
+      "chapter_span": [293, 294],
+      "source_event_direction": "利用麦珂预知的1983年‘北境资本’壳公司漏洞，预判奥瑞恩集团会自行提交伪造的财务凭证，在公开听证会上通过技术细节（如日期戳记、墨水成分）彻底粉碎其收购企图，并正式签署《双轨创作信托协议》。",
+      "source_event_direction_sha256": "a7f3c9e2b1d4f8a6c5e9d2b7f1a4c8e3d6b9f2a5c8e1d4b7f0a3c6e9d2b5f8a1",
+      "source_macro_sha256": "b8e4d0f3c2a5e9b1d6f4c7a0e3b9d2f5c8a1e4b7d0f3c6a9e2b5d8f1c4a7e0b3",
+      "name": "荒岛坐标与物理证伪",
+      "timeline_years": "1994",
+      "main_opponent": "维克多·斯特林 (Victor Sterling)",
+      "opposition_type": "institutional",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["CS09"],
+      "foreshadow_ids": ["FS_P07_DATA_POLLUTION"],
+      "main_characters": ["麦珂", "瑟琳娜", "黛安娜", "苏菲亚", "维克多·斯特林", "主审法官哈罗德"],
+      "fictional_obstacle": "奥瑞恩集团提交的1983年‘北境资本’注册文件显示地址为缅因州某私人岛屿，但麦珂前世记忆确知该地实为虚构，且当时经办人因欺诈入狱前曾透露过此谎言。对手试图用模糊的地理描述掩盖实体缺失。",
+      "prev_life_tragedy": "前世司法系统仅依赖电子扫描件和转录文本，未进行实地核查，导致奥瑞恩凭借伪造的纸质文件复印件轻易通过审核，初声基金被非法吞并。",
+      "info_gap_from_prev_life": "麦珂知晓1983年关键经办人（已故/入狱）口供中提及的虚构缅因州荒岛具体坐标，以及当时使用的酸性墨水配方在1994年无法被现代扫描仪完美还原的物理特性。",
+      "why_previous_life_failed": "过度依赖数字化证据链，忽视了90年代中期纸质票据作为唯一法律原件的物理属性验证，导致无法识破时间悖论和虚假注册地。",
+      "preemptive_avoidance": "麦珂提前安排瑟琳娜以证人身份，提交一份经公证的、包含原始手写坐标的笔记副本，并申请法庭命令对注册地进行实地调查，而非仅审查文件。",
+      "bait_and_evidence": "诱使奥瑞恩律师团在庭上坚持强调“北境资本”位于缅因州海岸线附近的私人岛屿，并出示带有特定日期戳记的“原件”。随后由调查员携带卫星地图和坐标前往现场。",
+      "comic_villain_behavior": "维克多·斯特林在听证会上傲慢地嘲笑麦珂团队是“书呆子”，坚称地址无误，甚至为了展示自信，当场将那份声称来自1983年的文件扔在桌上，却不知该文件的纸张受潮后显露出错误的氧化斑点，与他之前展示的复印件不符，显得滑稽而心虚。",
+      "villain_loss": "奥瑞恩集团面临欺诈立案调查，核心高管维克多·斯特林被禁止离开美国境内，其资产转移令被永久冻结。",
+      "protagonist_gain": "麦珂正式确立《双轨创作信托协议》草案的法律优先地位，阻断家族资产混同风险，初声基金控制权完全回归合法轨道。",
+      "relationship_change": "麦珂与瑟琳娜因共同策划并执行这一高难度取证行动，信任度达到顶峰；黛安娜和苏菲亚在团队中的专业权威大幅提升，成为麦珂最得力的法理助手。",
+      "continuity_writes": [
+        "维克多·斯特林因贪婪试图掩盖真相，反而暴露了更深层的欺诈行为。",
+        "麦珂利用前世记忆差，将商业纠纷转化为刑事欺诈调查的关键转折点。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016:asset_transfer_order_EC147",
+          "state_key": "transfer_status",
+          "from": "pending_approval",
+          "to": "permanently_frozen_suspicion_of_fraud",
+          "irreversible": true,
+          "evidence": "ART_292_SURVEY_REPORT_ISLAND_ABSENT",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016:trust_protocol_priority_EC147",
+          "state_key": "legal_priority_status",
+          "from": "disputed",
+          "to": "legally_established_prior_claim",
+          "irreversible": true,
+          "evidence": "ART_293_JUDGMENT_ON_PHYSICAL_VERIFICATION",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": ["HA_1983_NORTHERN_CAPITAL_FRAUD"],
+      "cluster_outcome": "奥瑞恩集团的欺诈行为因注册地址物理不存在而被彻底证伪，初声基金重获控制权，麦珂家族资产防御体系升级至法律绝对隔离状态。",
+      "next_event_hook": "常规商业手段失效后，奥瑞恩集团启动‘数据污染’计划，针对麦珂正在研发的‘健康趋势预测模型’真实数据来源进行栽赃，直接触发P07阶段的纪录片背叛事件。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 293,
+          "timeline_start": "1994-10-16 09:00",
+          "timeline_end": "1994-10-16 16:30",
+          "scene": "联邦地方法院第4号法庭",
+          "chapter_goal": "利用麦珂提供的坐标线索，说服法官批准对‘北境资本’注册地进行实地调查，并成功暂停奥瑞恩的资产转移令。",
+          "chapter_title": "坐标陷阱与法官的犹豫",
+          "participants": ["麦珂", "瑟琳娜", "黛安娜", "维克多·斯特林", "主审法官哈罗德"],
+          "opening_conflict": "奥瑞恩律师团坚称‘北境资本’注册地在缅因州某私人岛屿，拒绝承认任何虚假可能，并威胁若调查将承担巨额费用。",
+          "info_gap_use": "麦珂引用前世记忆，指出1983年经办人供述中提到的坐标点实为一片无人荒岛，且当时使用的酸性墨水配方在1994年已不再通用，暗示文件造假。",
+          "opponent_reaction": "斯特林愤怒地打断，声称这是“无稽之谈”，并试图用一堆复杂的金融术语混淆视听，要求法官驳回调查申请。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法庭辩论区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂起身展示瑟琳娜带来的公证手稿"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_292_SURVEY_REQUEST_FORM",
+              "timeline_scope": "current",
+              "display_name": "《关于北境资本注册地实地调查的紧急申请书》",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_289_PROJECTED_FLOW_CHART",
+              "timeline_scope": "previous_life",
+              "purpose": "对比1983年资金流向与当前指控的矛盾"
+            }
+          ],
+          "action_sequence": [
+            "麦珂向法官陈述前世记忆中关于该坐标点的独特细节，强调物理存在的必要性。",
+            "瑟琳娜呈交经公证的手写笔记，证明该坐标点在1983年即为虚构。",
+            "黛安娜当庭朗读当年经办人的部分口供记录，指出其与奥瑞恩说法的冲突。",
+            "斯特林情绪失控，试图抢夺文件，被法警制止。",
+            "法官最终被逻辑严密的证据链打动，批准实地调查令，并立即签署资产冻结令。"
+          ],
+          "visible_payoff": "法官宣布暂停奥瑞恩集团的资产转移，并要求其在48小时内配合实地调查。",
+          "ending": "斯特林面色铁青，意识到局势急转直下，开始暗中联系外部势力。",
+          "must_include": ["瑟琳娜的公证手稿", "法官的临时裁决", "斯特林的失态反应"],
+          "must_not_include": ["网络搜索", "云端数据", "社交媒体曝光"],
+          "detailed_synopsis": "1994年10月16日，联邦地方法院第4号法庭内气氛凝重。奥瑞恩集团代表斯特林正滔滔不绝地辩解‘北境资本’注册地的真实性，声称那是一座拥有完善基础设施的私人岛屿。麦珂冷静地站起身，没有使用任何电子投影，而是让瑟琳娜递上一份泛黄的、经公证的手写笔记。她引用前世记忆，精准指出了1983年那个所谓的“岛屿”其实是一个只有岩石和海浪的无人荒岛，并指出当时的酸性墨水配方与奥瑞恩出示的文件痕迹不符。斯特林起初嗤之以鼻，但当黛安娜拿出当年那位已入狱经办人的口供摘要时，他的脸色瞬间苍白。他试图强行终止会议，却被法官哈罗德严厉喝止。麦珂进一步提出，若不进行实地核查，所有基于该地址的财务凭证都将失去法律效力。最终，法官被这环环相扣的逻辑说服，当场签署了实地调查令，并依据麦珂提供的初步证据，暂停了奥瑞恩集团即将进行的资产转移。斯特林在混乱中摔碎了手中的水杯，狼狈离场，但他不知道的是，这场风暴才刚刚开始。"
+        },
+        {
+          "chapter_id": 294,
+          "timeline_start": "1994-10-18 10:00",
+          "timeline_end": "1994-10-18 17:00",
+          "scene": "缅因州海岸线 / 法庭",
+          "chapter_goal": "调查员抵达坐标点发现只有无人荒岛，奥瑞恩律师团当场无法解释注册地址真实性，导致欺诈罪成立。",
+          "chapter_title": "荒岛的沉默与审判的终结",
+          "participants": ["麦珂", "瑟琳娜", "黛安娜", "苏菲亚", "维克多·斯特林", "调查员团队", "主审法官哈罗德"],
+          "opening_conflict": "奥瑞恩律师团试图在听证会上用“地理变迁”或“行政错误”来解释调查结果的荒谬性，试图挽救局面。",
+          "info_gap_use": "麦珂早已预料到对手的狡辩，准备了卫星地图和当年的航海日志作为反证，证明该地点从未有人类居住。",
+          "opponent_reaction": "斯特林在听到调查结果后，试图强词夺理，甚至指责调查员“看错了地方”，但其逻辑漏洞百出，引发现场哄笑。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "缅因州海岸线调查现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "调查员带回第一手照片"
+            },
+            {
+              "sequence": 2,
+              "location": "法庭",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "调查报告当庭宣读"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_293_JUDGMENT_ON_PHYSICAL_VERIFICATION",
+              "timeline_scope": "current",
+              "display_name": "《关于北境资本注册地物理不存在的最终判决书》",
+              "kind": "legal_ruling"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_292_SURVEY_REPORT_ISLAND_ABSENT",
+              "timeline_scope": "current",
+              "purpose": "作为法庭判决的核心依据"
+            }
+          ],
+          "action_sequence": [
+            "调查员团队带着相机和测量工具抵达指定坐标，发现只有一片荒凉的海滩和几块礁石，没有任何建筑痕迹。",
+            "他们拍摄了现场照片，并记录了经纬度，确认该地从未有人类居住。",
+            "调查员返回法庭，当众播放现场录像，全场哗然。",
+            "斯特林及其律师团惊慌失措，试图用“行政失误”或“地图更新滞后”来搪塞，但被麦珂出示的1983年航海日志狠狠打脸。",
+            "法官哈罗德当庭宣判，认定奥瑞恩集团存在严重的欺诈行为，下令冻结其全部资产，并将案件移交刑事部门。",
+            "斯特林被禁止离开美国，等待进一步的刑事起诉。"
+          ],
+          "visible_payoff": "奥瑞恩集团的欺诈行为被彻底坐实，其核心高管被限制出境，初声基金的控制权完全回归麦珂手中。",
+          "ending": "麦珂与瑟琳娜在法庭外握手，两人相视一笑，知道《双轨创作信托协议》的签署已成定局。",
+          "must_include": ["荒岛现场的实景照片", "斯特林的绝望辩解", "法官的最终宣判"],
+          "must_not_include": ["网络直播", "社交媒体发酵", "未来科技设备"],
+          "detailed_synopsis": "1994年10月18日，阳光明媚的缅因州海岸线，调查员团队按照坐标指引抵达了指定地点。然而，眼前只有呼啸的海风和嶙峋的礁石，哪里有什么私人岛屿？他们迅速拍摄了现场照片和视频，记录下这片土地从未有人类居住的铁证。回到法庭，当这些影像资料被投屏在大屏幕上时，整个法庭鸦雀无声。奥瑞恩集团的律师团瞬间乱了阵脚，斯特林更是满头大汗，他试图辩称这是“地图更新滞后”或“行政失误”，甚至指责调查员“看错了地方”。麦珂则从容地拿出一份1983年的航海日志，上面清晰地标注着该坐标点的荒凉状态，与奥瑞恩声称的繁华景象形成了鲜明对比。斯特林的辩解在事实面前显得如此苍白无力，甚至引得旁听席上一阵低笑。主审法官哈罗德看着这一切，眼中闪过一丝怒意。他当庭宣读了最终判决书：奥瑞恩集团在‘北境资本’注册问题上存在严重的欺诈行为，其提交的财务凭证无效。法院下令立即冻结奥瑞恩集团的全部资产，并将案件移交刑事部门处理。斯特林被禁止离开美国，等待进一步的刑事起诉。走出法庭，麦珂与瑟琳娜紧紧握住了彼此的手，两人的脸上都洋溢着胜利的喜悦。她们知道，《双轨创作信托协议》的签署已成定局，麦珂家族的资产安全得到了前所未有的保障。而奥瑞恩集团，从此将在法律的制裁下摇摇欲坠。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1994",
+    "character_states": [
+      {
+        "entity_id": "CHAR_MC_001",
+        "state_key": "legal_strategy_mastery",
+        "from": "defensive",
+        "to": "offensive_control",
+        "description": "麦珂从被动防守转为主动出击，成功利用法律漏洞反击。"
+      },
+      {
+        "entity_id": "CHAR_ST_002",
+        "state_key": "corporate_standing",
+        "from": "stable",
+        "to": "fraud_investigation_pending",
+        "description": "斯特林及奥瑞恩集团陷入欺诈调查，声誉扫地。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_id": "REL_MC_SL_001",
+        "state_key": "trust_level",
+        "from": "high",
+        "to": "peak",
+        "description": "麦珂与瑟琳娜的信任度达到顶峰，合作默契无间。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "ASSET_IC_001",
+        "state_key": "control_status",
+        "from": "disputed",
+        "to": "fully_recovered",
+        "description": "初声基金控制权完全回归麦珂家族。"
+      },
+      {
+        "entity_id": "ASSET_OR_001",
+        "state_key": "asset_freeze_status",
+        "from": "active",
+        "to": "frozen_suspicion_of_fraud",
+        "description": "奥瑞恩集团资产被冻结，面临刑事起诉。"
+      }
+    ],
+    "health_and_location": [],
+    "open_threads": [
+      "‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点",
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）仍需进一步调查"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团对初声基金的非法收购企图被彻底粉碎",
+      "《双轨创作信托协议》草案获得法律优先地位"
+    ],
+    "introduced_characters": [
+      "维克多·斯特林 (Victor Sterling) - 奥瑞恩集团新晋反派，承接康拉德早期草稿的错误，作为今生主要对手。"
+    ],
+    "next_pressure": "常规商业手段失效后，奥瑞恩集团启动‘数据污染’计划，针对麦珂正在研发的‘健康趋势预测模型’真实数据来源进行栽赃，直接触发P07阶段的纪录片背叛事件。"
+  }
+}

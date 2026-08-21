@@ -1,0 +1,235 @@
+{
+  "macro_group_id": "MG023",
+  "event_clusters": [
+    {
+      "cluster_id": "EC115",
+      "chapter_span": [229, 230],
+      "source_event_direction": "{\"cluster_id\": \"EC115\", \"chapter_span\": [229, 230], \"opposition_type\": \"ally_resistance\", \"event_type\": \"health_safety\", \"solution_type\": \"public_confrontation\", \"death_chain_role\": \"pressure\", \"previous_life_harm\": \"前世急救站铭牌刻字错误，导致医护人员在紧急时刻无法快速识别负责人。\", \"unique_prev_life_info\": \"1980年撕纸分发机制中关于铭牌纠错的隐藏线索及编号#8327老人的卡背任务。\", \"preemptive_action\": \"麦珂在入场券背面印有‘核对急救站铭牌刻字是否含莉薇娅姓名’的任务。\", \"chapter_one_small_win\": \"拄拐老人持编号#8327入场，当场指出铭牌拼写误差，引发全场同步查验。\", \"chapter_two_showdown\": \"麦珂顺势宣布启动全国急救站铭牌统一纠错行动，邀请公众共同参与监督。\", \"opponent_permanent_loss\": \"忽视细节的官僚体系被公众监督彻底打破，错误铭牌无处遁形。\", \"protagonist_concrete_gain\": \"‘今日健康备忘录’正式成为全球巡演标配，公众从旁观者变为安全协作者。\", \"irreversible_outcome_key\": \"公众参与的铭牌纠错机制确立，永久改变了医疗标识的管理模式。\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2",
+      "source_macro_sha256": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4z3y2x1w0v9u8",
+      "name": "铭牌纠错与全民协防",
+      "timeline_years": "1987—1990",
+      "main_opponent": "奥瑞恩集团行政主管（化名：托马斯·韦恩）",
+      "opposition_type": "ally_resistance",
+      "event_type": "health_safety",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["EC114", "EC113"],
+      "foreshadow_ids": ["EC111", "EC112"],
+      "main_characters": ["麦珂", "莉薇娅", "苏菲亚", "拄拐老人（#8327）", "托马斯·韦恩"],
+      "fictional_obstacle": "奥瑞恩集团为掩盖管理混乱，坚持使用旧版刻字错误的急救站铭牌，并试图以“设备未更新”为由阻挠现场查验，将公众质疑定义为“恶意破坏演出秩序”。",
+      "prev_life_tragedy": "前世某次巡演后台，因急救站铭牌将“莉薇娅”误刻为“李薇雅”，导致紧急送医时医护人员犹豫三秒确认身份，延误黄金抢救时间，最终造成艺人重伤。",
+      "info_gap_from_prev_life": "1980年撕纸分发机制中，编号#8327的老人曾手持一张残缺的铭牌样本，上面用红笔圈出了“李”字的笔画错误，这是唯一未被归档的纠错线索。",
+      "why_previous_life_failed": "主角前世过度依赖专业团队内部自查，忽视了基层铭牌刻字的物理错误，且未建立外部公众监督机制，导致官僚体系掩盖了致命细节。",
+      "preemptive_avoidance": "麦珂利用重生预知，在入场券背面印刷微小提示：“请核对急救站铭牌是否包含‘莉薇娅’全名”，并安排苏菲亚提前锁定持有#8327号票根的老人。",
+      "bait_and_evidence": "麦珂故意在彩排区放置一块待安装的备用铭牌，诱导托马斯·韦恩下令禁止更换，随后老人当众出示#8327票根，对比现场铭牌，揭露拼写错误；苏菲亚调取1980年档案室底单，证明错误源于韦恩擅自修改刻字模板。",
+      "comic_villain_behavior": "托马斯·韦恩见势不妙，竟试图用扩音器高喊“这是艺术家的签名风格”，并指挥保安强行没收老人手中的票根，结果因动作过大扯坏了票根上的防伪水印，反而坐实了“销毁证据”的嫌疑。",
+      "villain_loss": "奥瑞恩集团被迫公开承认管理失误，托马斯·韦恩因伪造文件阻碍安全整改被解雇，其主导的旧版行政流程彻底失效，官僚主义在公众监督下无处遁形。",
+      "protagonist_gain": "‘今日健康备忘录’正式确立为全球巡演强制标准，公众从被动观众转变为主动的安全协作者，麦珂获得了行业内的绝对信任权。",
+      "relationship_change": "莉薇娅对麦珂的信任从“技术依赖”升华为“生命托付”，授权其拥有直接否决任何安全隐患的一票否决权；苏菲亚成为麦珂的官方情报分析师。",
+      "continuity_writes": ["1987年10月15日，全球巡演首站洛杉矶，麦珂在开场前五分钟启动铭牌查验程序。", "1988年，‘今日健康备忘录’被写入联合国教科文组织文化安全建议书草案。", "1990年，所有奥瑞恩集团旗下场馆完成铭牌标准化改造。"],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "liweiya_mike_ke",
+          "state_key": "emergency_authority_status__extension_EC115",
+          "from": "technical_advisor",
+          "to": "absolute_veto_power",
+          "irreversible": true,
+          "evidence": "ART_229_EMERGENCY_VETO_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "thomas_wayne_orion",
+          "state_key": "administrative_credibility",
+          "from": "high_control",
+          "to": "public_discredited",
+          "irreversible": true,
+          "evidence": "NEWSPAPER_CLIPPING_WAYNE_FIRED",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "social",
+          "entity_id": "audience_public",
+          "state_key": "safety_participation_level",
+          "from": "passive_observer",
+          "to": "active_collaborator",
+          "irreversible": true,
+          "evidence": "ART_230_PUBLIC_MONITORING_ROLL",
+          "effect_type": "world_state"
+        }
+      ],
+      "historical_anchor_ids": ["ART_219_HEALTH_MEMO_CERTIFIED"],
+      "cluster_outcome": "麦珂通过引入公众监督机制，成功将一次潜在的医疗安全事故转化为行业标准升级的契机。奥瑞恩集团的官僚体系被彻底瓦解，‘今日健康备忘录’成为不可动摇的行业铁律。",
+      "next_event_hook": "‘今日健康备忘录’手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款；折叠地图激发1992年‘初声基金’评审制度改革。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 229,
+          "timeline_start": "1987-10-15 18:00",
+          "timeline_end": "1987-10-15 19:30",
+          "scene": "洛杉矶斯台普斯中心后台通道及主舞台入口",
+          "chapter_goal": "利用入场券背后的隐藏任务，引爆公众对急救站铭牌错误的集体关注，迫使奥瑞恩集团现场应对。",
+          "chapter_title": "第8327号票根的审判",
+          "participants": ["麦珂", "莉薇娅", "拄拐老人", "托马斯·韦恩", "苏菲亚", "安保队长"],
+          "opening_conflict": "托马斯·韦恩试图以“演出即将开始”为由，阻止工作人员更换有拼写错误的急救站铭牌，声称这是“艺术家个人风格”。",
+          "info_gap_use": "麦珂利用重生记忆，提前在入场券背面印制提示，引导持有#8327号票根的老人精准定位铭牌错误。",
+          "opponent_reaction": "托马斯·韦恩恼羞成怒，试图抢夺老人手中的票根并斥责其“扰乱秩序”，却因粗暴动作导致票根破损，暴露出他急于掩盖真相的心理。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台通道",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "老人突然停下脚步，指着墙角的铭牌大喊："
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_229_BROKEN_TICKET",
+              "timeline_scope": "current",
+              "display_name": "破损的#8327号入场券",
+              "kind": "critical_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_219_HEALTH_MEMO_CERTIFIED",
+              "timeline_scope": "current",
+              "purpose": "作为核对铭牌正确性的法律基准"
+            }
+          ],
+          "action_sequence": [
+            "老人手持#8327票根，大声朗读票背提示，指出墙上铭牌将“莉薇娅”错刻为“李薇雅”。",
+            "麦珂立即示意全场灯光聚焦铭牌，引导周围观众进行比对。",
+            "托马斯·韦恩冲上前试图制止，言语间称这是“设计失误”，并命令保安没收票根。",
+            "保安拉扯中弄破票根，露出防伪水印，苏菲亚随即展示1980年档案底单，证明错误系韦恩私自篡改。",
+            "现场观众哗然，纷纷掏出手机（或录音笔）记录，舆论瞬间倒向麦珂。"
+          ],
+          "visible_payoff": "全场观众自发形成人墙，保护老人和麦珂，托马斯·韦恩的权威在众目睽睽下崩塌。",
+          "ending": "麦珂站在舞台中央，手持破损票根，宣布暂停演出，要求立即修正所有铭牌，否则拒绝开演。",
+          "must_include": ["老人#8327号票根", "铭牌拼写错误特写", "托马斯·韦恩抢夺票根动作"],
+          "must_not_include": ["康拉德", "现代通讯工具", "未来年份事件"],
+          "detailed_synopsis": "夜幕降临，洛杉矶斯台普斯中心后台灯火通明。托马斯·韦恩正指挥工人安装新铭牌，却因嫌麻烦坚持沿用旧版刻字错误的铭牌。此时，一位拄着拐杖、身穿褪色夹克的老人（#8327号票根持有者）突然停在通道口，大声朗读了麦珂在票背印下的提示：“请核对急救站铭牌是否包含‘莉薇娅’全名。”老人颤抖的手指指向角落的铭牌，那里赫然刻着“李薇雅”。全场哗然。托马斯·韦恩脸色铁青，冲上前试图抢走老人的票根，嘴里喊着“这是艺术家的签名风格，你们不懂！”在推搡中，票根被撕破，露出了里面的防伪水印。苏菲亚早已准备好1980年的档案底单，当众宣读：“根据1980年撕纸分发记录，#8327号老人是当年唯一发现铭牌错误的见证人，而托马斯·韦恩先生正是当年擅自修改刻字模板的主谋。”麦珂面无表情地接过破损票根，走向舞台中央，对着麦克风宣布：“如果今晚不能修正这个错误，这场演出就永远不会开始。”"
+        },
+        {
+          "chapter_id": 230,
+          "timeline_start": "1987-10-15 19:30",
+          "timeline_end": "1987-10-15 21:00",
+          "scene": "主舞台及媒体发布会现场",
+          "chapter_goal": "麦珂借机宣布启动全国急救站铭牌统一纠错行动，将危机转化为建立新标准的契机，确立公众监督机制。",
+          "chapter_title": "全民协防时代的开启",
+          "participants": ["麦珂", "莉薇娅", "托马斯·韦恩", "苏菲亚", "媒体记者", "观众代表"],
+          "opening_conflict": "托马斯·韦恩试图以“技术故障”为由拖延时间，麦珂则要求立即启动“三方签字急救启动令”并邀请公众监督。",
+          "info_gap_use": "麦珂利用前世记忆，知道若不及时纠正，后续将发生更严重的救援延误，因此必须在此刻彻底打破官僚体系的沉默。",
+          "opponent_reaction": "托马斯·韦恩在镜头前语无伦次，试图将责任推给“临时工”，却被苏菲亚拿出的原始刻字模板照片打脸。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂举起破损票根，声音穿透雨幕："
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_230_PUBLIC_MONITORING_ROLL",
+              "timeline_scope": "current",
+              "display_name": "《今日健康备忘录》公众监督签名卷",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_229_BROKEN_TICKET",
+              "timeline_scope": "current",
+              "purpose": "作为启动纠错行动的导火索"
+            }
+          ],
+          "action_sequence": [
+            "麦珂站在聚光灯下，手持破损票根，向全场宣布启动“全国急救站铭牌统一纠错行动”。",
+            "苏菲亚展示《今日健康备忘录》原件，提出“三方签字急救启动令”：医生、安保、艺人代表同时签字方可启动急救。",
+            "托马斯·韦恩试图辩解，被苏菲亚甩出的1980年原始刻字模板照片逼入绝境，不得不承认错误。",
+            "麦珂邀请台下观众上台，在《公众监督签名卷》上签名，承诺共同维护医疗安全。",
+            "莉薇娅正式签署授权书，赋予麦珂“一票否决权”，并宣布奥瑞恩集团行政主管托马斯·韦恩即刻停职。"
+          ],
+          "visible_payoff": "观众热情高涨，签名卷迅速填满，托马斯·韦恩被保安带走，麦珂的“全民协防”理念深入人心。",
+          "ending": "演出在修正后的铭牌旁如期开始，但麦珂知道，这只是一个开始，真正的变革才刚刚拉开序幕。",
+          "must_include": ["《今日健康备忘录》签名卷", "三方签字急救启动令", "托马斯·韦恩被停职"],
+          "must_not_include": ["康拉德", "现代通讯工具", "未来年份事件"],
+          "detailed_synopsis": "舞台灯光骤亮，麦珂高举破损的#8327号票根，声音洪亮：“一个名字的错误，可能意味着一条生命的流逝。从今天起，我们将不再依赖少数人的判断，而是让每一位观众都成为安全的守护者。”他展开一卷巨大的羊皮纸——《今日健康备忘录》，上面已经密密麻麻签满了观众的名字。苏菲亚紧随其后，展示了“三方签字急救启动令”的纸质流程，强调医生、安保和艺人代表必须同时签字才能启动急救。托马斯·韦恩还在试图狡辩，苏菲亚直接甩出一张1980年的原始刻字模板照片，上面清晰地显示着“莉薇娅”的正确写法，而韦恩的签名栏赫然在列。全场爆发雷鸣般的掌声。莉薇娅走上台，郑重签署授权书，宣布麦珂拥有“一票否决权”，并当场宣布托马斯·韦恩因严重失职被停职。麦珂微笑着看向台下，无数双眼睛闪烁着期待与信任的光芒。他知道，这场演出的意义早已超越了音乐本身，它将成为一个新时代的标志——一个公众深度参与、安全至上的时代。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {
+        "entity_id": "mike_ke",
+        "state_key": "authority_level",
+        "new_value": "absolute_veto_power",
+        "description": "获得直接否决任何安全隐患的一票否决权"
+      },
+      {
+        "entity_id": "thomas_wayne",
+        "state_key": "employment_status",
+        "new_value": "terminated",
+        "description": "因伪造文件和阻碍安全整改被解雇"
+      },
+      {
+        "entity_id": "liweiya",
+        "state_key": "trust_in_mike_ke",
+        "new_value": "life_delegation",
+        "description": "从技术依赖升华为生命托付"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": ["mike_ke", "liweiya"],
+        "change": "strategic_partnership_to_life_delegation",
+        "evidence": "ART_230_EMERGENCY_VETO_LOG"
+      },
+      {
+        "pair": ["mike_ke", "sophia"],
+        "change": "assistant_to_official_intelligence_analyst",
+        "evidence": "ART_230_PUBLIC_MONITORING_ROLL"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "orion_group",
+        "asset_key": "administrative_credibility",
+        "status": "destroyed",
+        "description": "官僚体系信誉破产，旧版流程失效"
+      },
+      {
+        "entity_id": "global_tour",
+        "asset_key": "safety_standard",
+        "status": "upgraded",
+        "description": "确立‘今日健康备忘录’为强制标准"
+      }
+    ],
+    "health_and_location": [
+      {
+        "location": "Los Angeles Staples Center",
+        "status": "renamed_safe_zone",
+        "description": "成为首个实施全民协防机制的场馆"
+      }
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性"
+    ],
+    "resolved_threads": [
+      "急救站铭牌刻字错误导致的潜在救援延误风险",
+      "奥瑞恩集团行政主管托马斯·韦恩的权力滥用问题"
+    ],
+    "introduced_characters": [
+      "拄拐老人（#8327号票根持有者）",
+      "托马斯·韦恩（奥瑞恩集团行政主管，虚构角色）"
+    ],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

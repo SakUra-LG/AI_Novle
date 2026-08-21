@@ -1,0 +1,56 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC230_EC230",
+  "identifier": "MG046",
+  "accepted_attempt": 3,
+  "base_prompt_sha256": "ab73935b174f75dfa47e93dd7a84cb7f64ce01aee70a8eaab290709efd0c6096",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-21T13:50:40+08:00",
+      "prompt_sha256": "ab73935b174f75dfa47e93dd7a84cb7f64ce01aee70a8eaab290709efd0c6096",
+      "raw_response_sha256": "3269b50dad8b47e3d80f5032397e69e5d91a497589f558ed75e1a8c8405129d3",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG046_events_EC230_EC230_attempt_01_ab73935b17_raw.txt",
+      "validation_failures": [
+        "EC230与EC221重复执行不可逆结算：assets_frozen::维克多·斯特林"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 28.373,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-21T13:51:08+08:00",
+      "prompt_sha256": "f365fb4800e29c530bd0dc6d24a1caf6fbb1d96b30cae37bd17596fa51816988",
+      "raw_response_sha256": "4041fe36f07937ef856a00c5e71190a7036ad5f87bc7e0ab438dbce562ed864b",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG046_events_EC230_EC230_attempt_02_ab73935b17_raw.txt",
+      "validation_failures": [
+        "EC230与EC221重复执行不可逆结算：assets_frozen::维克多·斯特林"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 27.924,
+      "usage": {}
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-21T13:51:33+08:00",
+      "prompt_sha256": "042b8ae1e95e55a267d8f1c3ac75e168277f9e9930dd70fca856e8728b856ea4",
+      "raw_response_sha256": "2173139781d4f867cc8a470ff58c442d814f5a6ba13e8b2907047e3407dc5673",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG046_events_EC230_EC230_attempt_03_ab73935b17_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 25.229,
+      "usage": {}
+    }
+  ]
+}

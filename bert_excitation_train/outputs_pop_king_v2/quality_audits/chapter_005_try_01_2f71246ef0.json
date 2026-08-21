@@ -1,0 +1,42 @@
+{
+  "chapter": 5,
+  "generation_try": 1,
+  "chars": 1858,
+  "sha256": "2f71246ef09b0a6785e0189c408a634132dd954e2092415f9f661b3e35ef068e",
+  "review": {
+    "accept": false,
+    "model_accept": false,
+    "scores": {
+      "cluster_fidelity": 4.0,
+      "causal_clarity": 6.0,
+      "prose_naturalness": 5.0,
+      "emotional_force": 7.0,
+      "non_repetition": 8.0,
+      "ending_precision": 9.0,
+      "fictional_naming": 10.0
+    },
+    "low_scores": {
+      "cluster_fidelity": 4.0,
+      "causal_clarity": 6.0,
+      "prose_naturalness": 5.0
+    },
+    "hard_failures": [
+      {
+        "code": "UNAUTHORIZED_WITNESS",
+        "evidence": "林医生——该姓名未在允许具名人物列表中出现，且‘林’为现实高频姓氏，违反【允许具名人物】契约",
+        "repair": "改为无姓名功能职位，如‘左侧医师’或‘器械区旁的女医师’，不得赋予姓氏或可指认身份的称谓"
+      },
+      {
+        "code": "FORBIDDEN_MECHANIC",
+        "evidence": "‘身体状态刚升到一百二十七’——含工程参数堆砌（‘一百二十七’），违反【forbidden_mechanics】中‘毫秒级或工程参数堆砌’禁令",
+        "repair": "删除具体数值，改用自然感知描述，如‘心率刚攀至临界点’或‘呼吸节奏已逼近阈值’，须符合小说语感且不引入虚构监测设备日志"
+      },
+      {
+        "code": "AUTHORITY_AMBIGUITY",
+        "evidence": "合作方代表宣布‘训练强度决定权，正式移交麦珂·杰森本人’，但【通用场景契约】明确‘authority_actor’: ‘合作方’，未授权单个代表行使最终裁定权；且‘正式移交’属权限变更动作，契约仅要求‘他收回训练强度决定权’，未约定移交仪式、签字栏变更等新增机制",
+        "repair": "删去‘正式移交……只留他的名字’整句；改为合作方当场撤下病弱降配宣传后，直接陈述‘即日起，所有体能强度方案以麦珂本人确认为准’，严格对应契约‘immediate_result’条目"
+      }
+    ],
+    "summary": "存在三处硬伤：擅自具名医师、违规使用工程参数、虚构权限移交仪式，均突破场景契约与禁止清单，无法无人值守交付"
+  }
+}

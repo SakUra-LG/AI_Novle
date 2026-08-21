@@ -1,0 +1,213 @@
+{
+  "volume_id": "V04",
+  "volume_title": "荣耀的代价",
+  "volume_summary": "第四卷承接前卷的复仇与积累，麦珂·杰森在1983年至1986年间逐步掌握音乐产业的主动权。他通过前世记忆提前规避致命陷阱，同时利用影像革新、公益投资和曲库扩张实现长期影响力布局。本卷将展现他在舞台上的巅峰爆发、合同权利的斗争、家庭关系的深化以及媒体舆论的掌控，为最终的审判埋下伏笔。",
+  "macro_groups": [
+    {
+      "macro_group_id": "MG016",
+      "chapter_span": [151, 160],
+      "title": "影像革命与权力初现",
+      "timeline_years": "1983年",
+      "macro_goal": "完成首部长篇音乐短片拍摄并获得行业认可",
+      "historical_stage": "1982年跨类型专辑引发全球文化突破，音乐影像成为主流传播方式",
+      "main_conflict": "唱片公司试图控制影片剪辑权，麦珂需确保自身创意主导权",
+      "rebirth_advantage": "前世记得导演因版权问题导致影片未完成，因此提前安排合作方署名条款",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC076",
+          "chapter_span": [151, 152],
+          "direction": "麦珂拒绝签署导演单方面剪辑权协议，提出分镜稿审核机制"
+        },
+        {
+          "cluster_id": "EC077",
+          "chapter_span": [153, 154],
+          "direction": "剧组内部有人泄露剧本内容，麦珂发现后立即启动法律追责程序"
+        },
+        {
+          "cluster_id": "EC078",
+          "chapter_span": [155, 156],
+          "direction": "麦珂私下联系电视台高层，争取播放优先权以削弱公司操控力"
+        },
+        {
+          "cluster_id": "EC079",
+          "chapter_span": [157, 158],
+          "direction": "麦珂的母亲协助调查制片方财务漏洞，揭露其虚报成本行为"
+        },
+        {
+          "cluster_id": "EC080",
+          "chapter_span": [159, 160],
+          "direction": "影片上映后票房大卖，麦珂凭借创新镜头语言赢得业内高度评价"
+        }
+      ],
+      "romance_progression": "艾琳·沃特曼开始更多介入制作决策，两人情感逐渐升温但保持克制",
+      "ending_state": "麦珂获得影像创作主导权，初步建立独立制片体系",
+      "next_group_hook": "电影成功后，唱片公司试图收回音轨版权"
+    },
+    {
+      "macro_group_id": "MG017",
+      "chapter_span": [161, 170],
+      "title": "合同风暴与权益巩固",
+      "timeline_years": "1984年",
+      "macro_goal": "完成新一轮合约谈判并锁定长期创作自由度",
+      "historical_stage": "1984年格莱美奖竞争激烈，艺人合同博弈白热化",
+      "main_conflict": "唱片公司试图引入新经纪人瓜分麦珂收益，麦珂需要反制策略",
+      "rebirth_advantage": "前世记得对方曾用虚假数据误导签约，因此提前收集市场真实数据作为筹码",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC081",
+          "chapter_span": [161, 162],
+          "direction": "麦珂在公开场合公布自己的收入结构，迫使对手放弃非法干预"
+        },
+        {
+          "cluster_id": "EC082",
+          "chapter_span": [163, 164],
+          "direction": "麦珂邀请律师审查现有合同，发现隐藏条款并予以修改"
+        },
+        {
+          "cluster_id": "EC083",
+          "chapter_span": [165, 166],
+          "direction": "麦珂通过代理人向其他艺人传递信息，形成抵制恶意经纪人的联盟"
+        },
+        {
+          "cluster_id": "EC084",
+          "chapter_span": [167, 168],
+          "direction": "麦珂母亲联合其他艺人妻子，在社交圈中散布对手劣迹"
+        },
+        {
+          "cluster_id": "EC085",
+          "chapter_span": [169, 170],
+          "direction": "双方达成新合约，麦珂获得创作自主权与更高分成比例"
+        }
+      ],
+      "romance_progression": "艾琳与麦珂的合作更加深入，感情线逐步显露",
+      "ending_state": "麦珂确立独立地位，合约保障创作自由",
+      "next_group_hook": "新合约签订后，竞争对手开始策划更隐秘的打击手段"
+    },
+    {
+      "macro_group_id": "MG018",
+      "chapter_span": [171, 180],
+      "title": "公益浪潮与资本野心",
+      "timeline_years": "1985年",
+      "macro_goal": "发起大型公益项目并实现长期资金支持",
+      "historical_stage": "1985年国际赈灾歌曲成为社会关注焦点",
+      "main_conflict": "麦珂希望通过公益活动提升公众形象，却遭幕后势力阻挠",
+      "rebirth_advantage": "前世记得某次活动因资金挪用失败，因此设立透明审计机制",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC086",
+          "chapter_span": [171, 172],
+          "direction": "麦珂发布公益计划，吸引大量粉丝捐款并承诺收支透明"
+        },
+        {
+          "cluster_id": "EC087",
+          "chapter_span": [173, 174],
+          "direction": "幕后势力伪造账目企图侵吞善款，被麦珂及时识破"
+        },
+        {
+          "cluster_id": "EC088",
+          "chapter_span": [175, 176],
+          "direction": "麦珂通过记者会公布真相，使敌对势力名誉受损"
+        },
+        {
+          "cluster_id": "EC089",
+          "chapter_span": [177, 178],
+          "direction": "麦珂将部分收益用于购买音乐出版版权，扩大资产基础"
+        },
+        {
+          "cluster_id": "EC090",
+          "chapter_span": [179, 180],
+          "direction": "公益活动取得巨大成效，麦珂名声进一步提升"
+        }
+      ],
+      "romance_progression": "艾琳开始思考是否要进入麦珂的生活核心",
+      "ending_state": "麦珂实现公益与商业双赢，资产稳步增长",
+      "next_group_hook": "公益活动的成功引来更大规模的资金争夺战"
+    },
+    {
+      "macro_group_id": "MG019",
+      "chapter_span": [181, 190],
+      "title": "舞台危机与健康考验",
+      "timeline_years": "1985—1986年",
+      "macro_goal": "应对巡演压力与健康风险，维持高水准演出表现",
+      "historical_stage": "1985—1986年大规模世界巡演成为常态",
+      "main_conflict": "麦珂面临高强度工作节奏带来的身体透支，且有外部干扰",
+      "rebirth_advantage": "前世记得自己曾因过度劳累崩溃，因此提前制定健康管理方案",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC091",
+          "chapter_span": [181, 182],
+          "direction": "麦珂宣布加入专业健身教练团队，提高体能储备"
+        },
+        {
+          "cluster_id": "EC092",
+          "chapter_span": [183, 184],
+          "direction": "麦珂故意透露体力下降的消息，诱使对手放松警惕"
+        },
+        {
+          "cluster_id": "EC093",
+          "chapter_span": [185, 186],
+          "direction": "麦珂在一场演出中突发晕厥，引起公众强烈反响"
+        },
+        {
+          "cluster_id": "EC094",
+          "chapter_span": [187, 188],
+          "direction": "麦珂迅速恢复状态，证明自己仍具备顶级舞台实力"
+        },
+        {
+          "cluster_id": "EC095",
+          "chapter_span": [189, 190],
+          "direction": "麦珂在巡演期间推出全新编舞，引领潮流风向"
+        }
+      ],
+      "romance_progression": "艾琳开始亲自参与麦珂的舞蹈设计，二人关系日益亲密",
+      "ending_state": "麦珂维持顶尖舞台表现，健康状况良好",
+      "next_group_hook": "巡演结束后，麦珂迎来新的挑战——更大的舞台与更复杂的阴谋"
+    },
+    {
+      "macro_group_id": "MG020",
+      "chapter_span": [191, 200],
+      "title": "曲库战争与终极反击",
+      "timeline_years": "1986年",
+      "macro_goal": "完成重要音乐出版曲库收购，奠定未来数十年财富根基",
+      "historical_stage": "1985年音乐出版市场快速扩张，版权成为关键资源",
+      "main_conflict": "麦珂在竞购过程中遭遇多方阻扰，必须巧妙周旋",
+      "rebirth_advantage": "前世记得当时因为信息不对称而错过机会，因此提前获取内幕消息",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC096",
+          "chapter_span": [191, 192],
+          "direction": "麦珂通过匿名渠道获取竞购名单，抢先一步接触潜在卖家"
+        },
+        {
+          "cluster_id": "EC097",
+          "chapter_span": [193, 194],
+          "direction": "麦珂故意放出高价信号，引开主要竞争对手注意力"
+        },
+        {
+          "cluster_id": "EC098",
+          "chapter_span": [195, 196],
+          "direction": "麦珂通过朋友网络促成一笔秘密交易，绕过官方流程"
+        },
+        {
+          "cluster_id": "EC099",
+          "chapter_span": [197, 198],
+          "direction": "麦珂在拍卖会上展示已有曲库价值，压低对手报价"
+        },
+        {
+          "cluster_id": "EC100",
+          "chapter_span": [199, 200],
+          "direction": "麦珂成功收购目标曲库，实现资产大幅增值"
+        }
+      ],
+      "romance_progression": "艾琳正式表达对麦珂的感情，二人决定共同面对未来",
+      "ending_state": "麦珂完成关键资产配置，为最终复仇奠定经济基础",
+      "next_group_hook": "曲库收购完成后，麦珂开始着手布置最后的审判行动"
+    }
+  ],
+  "continuity_summary": {
+    "characters": ["麦珂·杰森", "玛莎·杰森", "艾琳·沃特曼"],
+    "relationships": ["麦珂与母亲关系稳固", "麦珂与艾琳形成默契合作关系"],
+    "rights_and_assets": ["麦珂拥有部分创作权", "麦珂成立个人工作室", "麦珂获得影视与出版版权"],
+    "open_threads": ["旧势力仍在暗中活动"]
+  }
+}

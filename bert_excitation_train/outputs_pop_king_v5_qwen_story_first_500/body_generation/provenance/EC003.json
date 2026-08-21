@@ -1,0 +1,67 @@
+{
+  "cluster_id": "EC003",
+  "chapter_span": [
+    5,
+    6
+  ],
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "body_edit_policy": "failed_body_is_regenerated_by_qwen_never_manually_patched",
+  "accepted_at": "2026-08-11T05:40:35.581911+00:00",
+  "model": "qwen-plus",
+  "temperature": 0.82,
+  "calls_by_chapter": {
+    "5": {
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 26.391,
+      "usage": {
+        "input_tokens": 3896,
+        "output_tokens": 1177,
+        "total_tokens": 5073,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    "6": {
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 32.123,
+      "usage": {
+        "input_tokens": 5314,
+        "output_tokens": 1440,
+        "total_tokens": 6754,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  },
+  "prompt_sha256_by_chapter": {
+    "5": "ab6db20778f0e374734c4ce986757f569b299957d5dc1d4dd2b255fede24ff6d",
+    "6": "7e24e05889b52fdc6033f4891540fc185950403a76b53451f7346ba4a3ded22b"
+  },
+  "raw_response_sha256_by_chapter": {
+    "5": "4e130a8e7f81bae82c921f504d90d5e4469c9de8c622e030fc759e1c49eb2dfe",
+    "6": "0519777165e3a433d50694260a7b993e7eb36f3ff56a1a9f6ff0ce548f839388"
+  },
+  "accepted_raw_response_paths_by_chapter": {
+    "5": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v5_qwen_story_first_500\\body_generation\\qwen_batches\\EC003_chapter_005_attempt_01_ab6db20778_raw.txt",
+    "6": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v5_qwen_story_first_500\\body_generation\\qwen_batches\\EC003_chapter_006_attempt_01_7e24e05889_raw.txt"
+  },
+  "chapter_sha256": {
+    "5": "7a1711742c424754515807abc3a3852e2326ebd77ae16887846beed97cd7a05d",
+    "6": "39898d8bd80c9d2cd5e106f6579f48fed24a78438b5b1b313b9f96194e4d78c5"
+  },
+  "chapter_han_chars": {
+    "5": 1196,
+    "6": 1378
+  },
+  "planning_story_id": "planning-015ffb2b5237cee7",
+  "planning_inputs": {
+    "event_clusters": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v5_qwen_story_first_500\\event_clusters_v2.json",
+    "chapter_cards": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v5_qwen_story_first_500\\master_ctx_cards_v2.json"
+  },
+  "quality_review_status": "passed_manual_read_round_4"
+}

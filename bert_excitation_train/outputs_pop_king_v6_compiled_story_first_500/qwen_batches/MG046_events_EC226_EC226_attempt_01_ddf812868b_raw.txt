@@ -1,0 +1,190 @@
+{
+  "macro_group_id": "MG046",
+  "event_clusters": [
+    {
+      "cluster_id": "EC226",
+      "chapter_span": [451, 452],
+      "source_event_direction": "{\"cluster_id\": \"EC226\", \"chapter_span\": [451, 452], \"opposition_type\": \"villain\", \"event_type\": \"health_safety\", \"solution_type\": \"safety_preemption\", \"death_chain_role\": \"advance\", \"previous_life_harm\": \"前世麦珂在3月17日夜被‘健康趋势预测模型’伪造脑溢血数据，导致法院发布紧急资产接管令。\", \"unique_prev_life_info\": \"维克多利用远程医疗云篡改生理指标，切断麦珂对外数字通讯并诱导昏迷假象。\", \"preemptive_action\": \"麦珂提前将核心体征数据通过老式磁带非联网传输给莱昂·周进行物理封存。\", \"chapter_one_small_win\": \"莱昂·周在监听中截获异常信号，当场比对原始波形发现数据污染痕迹。\", \"chapter_two_showdown\": \"奥瑞恩集团试图强行调取远程档案库伪造报告，却被莱昂出示的磁带原件驳斥为非法入侵。\", \"opponent_permanent_loss\": \"维克多失去对‘健康趋势预测模型’的绝对控制权，其算法信誉彻底破产。\", \"protagonist_concrete_gain\": \"麦珂获得不可篡改的生理清醒铁证，法律上确立资产未被冻结的即时状态。\", \"irreversible_outcome_key\": \"磁带原件与实时波形图完成交叉验证并各地媒体存档，形成不可逆事实锚点。\", \"death_chain_connection\": \"直接阻断前世因伪造诊断导致的资产失控链条，确保3月18日零时前生存。\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2",
+      "source_macro_sha256": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4z3y2x1w0v9u8",
+      "name": "模拟信号反制：心跳铁证",
+      "timeline_years": "2009",
+      "main_opponent": "维克多",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["EC211", "EC212"],
+      "foreshadow_ids": ["EC227"],
+      "main_characters": ["麦珂", "莱昂·周", "维克多"],
+      "fictional_obstacle": "奥瑞恩集团启动‘健康趋势预测模型’，通过远程医疗云实时篡改麦珂生理数据，制造突发脑溢血昏迷假象，诱导法院发布紧急资产接管令。",
+      "prev_life_tragedy": "前世麦珂在3月17日夜被系统伪造的脑溢血数据蒙蔽，失去意识后无法自辩，导致资产瞬间被冻结，母带落入敌手。",
+      "info_gap_from_prev_life": "已知维克多会在3月17日夜启动模型进行数据污染；知晓对手习惯使用远程医疗云伪造诊断；掌握莱昂·周对数据异常的敏感阈值。",
+      "why_previous_life_failed": "完全依赖联网数字系统，一旦云端数据被篡改且通讯被切断，主角即陷入信息孤岛，无法提供反驳证据。",
+      "preemptive_avoidance": "麦珂重生后拒绝使用联网设备记录体征，转而使用老式磁带录音机，将实时心跳、脑电波数据以模拟信号形式物理传输至莱昂·周的独立监听站，实现数据离线封存。",
+      "bait_and_evidence": "维克多故意释放虚假的‘生命垂危’警报作为诱饵，实则为了掩盖其正在进行的远程数据注入行为；莱昂·周截获的磁带原件即为最直接的物理证据，其波形特征与云端伪造数据存在无法调和的相位差。",
+      "comic_villain_behavior": "维克多看着屏幕上完美的伪造曲线得意忘形，却在莱昂·周播放磁带时，因过度自信而大声嘲笑‘这种老古董能骗过谁’，结果话音未落，磁带里清晰传来的麦珂爽朗笑声和正常心率让他瞬间脸色惨白，像个小丑般手足无措。",
+      "villain_loss": "维克多失去对‘健康趋势预测模型’的绝对控制权，其算法信誉彻底破产，被行业视为欺诈工具。",
+      "protagonist_gain": "麦珂获得不可篡改的生理清醒铁证，法律上确立资产未被冻结的即时状态，彻底粉碎了对手的接管企图。",
+      "relationship_change": "莱昂·周从潜伏的内鬼转变为麦珂最坚定的盟友，两人建立了基于物理证据的信任纽带。",
+      "continuity_writes": [
+        "第451章：莱昂·周在监听室截获异常信号，比对原始波形发现数据污染痕迹。",
+        "第452章：奥瑞恩集团试图强行调取远程档案库伪造报告，却被莱昂出示的磁带原件驳斥为非法入侵。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "health_status",
+          "entity_id": "MC_001",
+          "state_key": "mental_capacity_status__final_EC212",
+          "from": "suspected_coma_fraudulent",
+          "to": "legally_verified_clean_irreversible",
+          "irreversible": true,
+          "evidence": "TAPE_ORIGINAL_WAVEFORM_AND_REALTIME_SYNC",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset_control",
+          "entity_id": "ASSET_MATRIX_001",
+          "state_key": "trust_management_authority",
+          "from": "pending_freeze",
+          "to": "verified_active_no_freeze",
+          "irreversible": true,
+          "evidence": "TAPE_ORIGINAL_WAVEFORM_AND_REALTIME_SYNC",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "algorithm_reputation",
+          "entity_id": "ALGO_HEALTH_PREDICTOR",
+          "state_key": "model_credibility",
+          "from": "trusted_tool",
+          "to": "fraudulent_tool_discredited",
+          "irreversible": true,
+          "evidence": "TAPE_ORIGINAL_WAVEFORM_AND_REALTIME_SYNC",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_2009_MAR_17"],
+      "cluster_outcome": "麦珂生理指标完全正常且处于高度清醒状态；奥瑞恩集团的伪造医疗文件被实时映射为‘数据污染’铁证并存档；微缩胶片与手写索引双备份已存入场馆铭牌后的物理安全区（预演）；昆廷康复并正式移交部分权限；三位‘星火调音师’学员获得临时授权；2002年信托协议补充条款激活生效，法律上确立麦珂对资产的绝对控制权。",
+      "next_event_hook": "3月18日零时‘清醒即审判’仪式倒计时开始，奥瑞恩集团见常规手段失效，将直接切断麦珂的对外通讯并试图在直播现场实施物理绑架，迫使麦珂必须在穹顶入口完成最终的身份确认与全球合唱引导。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 451,
+          "timeline_start": "2009-03-17T23:15:00",
+          "timeline_end": "2009-03-17T23:55:00",
+          "scene": "莱昂·周的独立监听站",
+          "chapter_goal": "截获并验证麦珂传输的模拟信号，揭露数据污染真相。",
+          "chapter_title": "磁带的低语",
+          "participants": ["莱昂·周", "麦珂（远程）"],
+          "opening_conflict": "维克多的‘健康趋势预测模型’正疯狂向云端上传伪造的脑溢血数据，麦珂的远程通讯通道被切断，外界以为她已昏迷。",
+          "info_gap_use": "莱昂·周利用前世记忆，知道维克多会在这一时刻启动模型，因此提前在监听站架设了针对模拟信号的专用解码器。",
+          "opponent_reaction": "维克多在监控大屏上看到伪造数据完美运行，发出轻蔑的笑声，认为麦珂已无力回天。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "莱昂·周的独立监听站",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "信号接入声"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_451_TAPE_VERIFY",
+              "timeline_scope": "current",
+              "display_name": "《麦珂实时体征原始磁带》",
+              "kind": "forensic_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_446_PHYSICAL_BACKUP",
+              "timeline_scope": "current",
+              "purpose": "作为后续物理封存的参照物"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在隐蔽处按下老式磁带录音机的录制键，将实时心跳和脑电波以模拟信号形式发送。",
+            "莱昂·周在监听站接收到微弱但清晰的模拟信号，立即启动波形分析软件。",
+            "对比云端数据与磁带波形，发现云端数据存在人为合成的锯齿状伪影，而磁带波形平滑自然。",
+            "莱昂·周大喊‘这是假的！’，并迅速将磁带原件放入防磁保护盒。"
+          ],
+          "visible_payoff": "莱昂·周成功识别出数据污染，证明了麦珂并未昏迷。",
+          "ending": "莱昂·周握紧磁带，眼神坚定，准备迎接即将到来的风暴。",
+          "must_include": ["老式磁带录音机", "模拟信号波形对比", "莱昂·周的警觉反应"],
+          "must_not_include": ["现代数字指纹技术", "手机通讯", "黑客入侵细节"],
+          "detailed_synopsis": "2009年3月17日深夜，莱昂·周所在的独立监听站灯火通明。就在维克多的‘健康趋势预测模型’向云端注入伪造的脑溢血数据时，一道微弱的电流声刺破了寂静——那是麦珂通过老式磁带录音机发出的模拟信号。莱昂·周早已料到这一招，他迅速将磁带接入专用解码器。屏幕上，云端传来的数据呈现出诡异的人工合成锯齿，而磁带中的波形却如真实的心跳般平稳有力。莱昂·周猛地拍桌而起：“这是假的！麦珂还活着！”他迅速将磁带原件放入防磁保护盒，嘴角扬起一丝冷笑。此时，维克多还在监控大屏前得意地欣赏着伪造的“昏迷”画面，却不知自己亲手埋下的定时炸弹即将引爆。"
+        },
+        {
+          "chapter_id": 452,
+          "timeline_start": "2009-03-17T23:55:00",
+          "timeline_end": "2009-03-18T00:30:00",
+          "scene": "奥瑞恩集团临时法庭/直播现场",
+          "chapter_goal": "当众展示磁带原件，驳斥伪造报告，确立资产控制权。",
+          "chapter_title": "清醒即审判",
+          "participants": ["麦珂", "莱昂·周", "维克多", "法官", "媒体记者"],
+          "opening_conflict": "奥瑞恩集团律师团拿着伪造的医疗报告，要求法院立即发布紧急资产接管令，控制物理母带。",
+          "info_gap_use": "麦珂利用重生优势，提前将关键数据通过非联网的模拟信号传输给莱昂·周，并安排其在法庭上出示。",
+          "opponent_reaction": "维克多试图强行调取远程档案库伪造报告，却被莱昂出示的磁带原件驳斥为非法入侵，顿时惊慌失措。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团临时法庭/直播现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法槌落下声"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_451_TAPE_VERIFY",
+              "timeline_scope": "current",
+              "purpose": "作为反驳伪造报告的铁证"
+            }
+          ],
+          "action_sequence": [
+            "奥瑞恩集团律师团拿出伪造的医疗报告，声称麦珂已突发脑溢血昏迷，请求法院接管资产。",
+            "莱昂·周突然站起，从怀中取出那盘老式磁带，在众人面前插入播放器。",
+            "磁带中传来麦珂清晰的声音和正常的心跳声，全场哗然。",
+            "维克多恼羞成怒，命令手下强行调取远程档案库，试图覆盖证据。",
+            "莱昂·周指出这是非法入侵，并展示了磁带与云端数据的差异，引发媒体轰动。"
+          ],
+          "visible_payoff": "麦珂获得不可篡改的生理清醒铁证，法律上确立资产未被冻结的即时状态。",
+          "ending": "维克多瘫坐在地，看着直播镜头中自己狼狈的模样，意识到自己彻底输了。",
+          "must_include": ["老式磁带播放", "麦珂声音清晰", "维克多惊慌失措", "媒体轰动"],
+          "must_not_include": ["现代电子取证技术", "网络直播流媒体", "无人机监控"],
+          "detailed_synopsis": "临时法庭内，气氛凝重。奥瑞恩集团律师团手持伪造的医疗报告，高声宣读麦珂已“突发脑溢血昏迷”，要求法院立即发布紧急资产接管令。就在法官即将落槌之际，莱昂·周猛地站起，从怀中掏出一盘泛黄的老式磁带。他将其插入播放器，磁带中立刻传出麦珂清晰的声音和平稳有力的心跳声：“我很好，维克多，你输了。”全场哗然，记者们疯狂按动快门。维克多脸色煞白，急忙命令手下强行调取远程档案库，试图覆盖证据。然而，莱昂·周早已识破他的伎俩，指着屏幕上的波形图大声喊道：“这是非法入侵！云端数据是伪造的，只有这盘磁带才是真实的！”媒体瞬间沸腾，维克多瘫坐在地，看着直播镜头中自己狼狈的模样，终于明白自己彻底输了。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2009",
+    "character_states": [
+      {"character": "麦珂", "state": "physically_clear_and_legally_protected"},
+      {"character": "莱昂·周", "state": "active_allied_insider"},
+      {"character": "维克多", "state": "exposed_and_credibility_lost"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂-莱昂·周", "status": "trust_established_via_physical_evidence"},
+      {"pair": "麦珂-维克多", "status": "open_hostility_with_legal_defeat"}
+    ],
+    "rights_and_assets": [
+      {"asset": "physical_master_tape", "status": "secured_and_verified"},
+      {"asset": "trust_management_authority", "status": "confirmed_active_no_freeze"}
+    ],
+    "health_and_location": [
+      {"subject": "麦珂", "health_status": "fully_conscious", "location": "broadcast_venue"}
+    ],
+    "open_threads": [
+      "3月18日零时‘清醒即审判’仪式的物理绑架风险",
+      "穹顶入口最终身份确认的全球合唱引导"
+    ],
+    "resolved_threads": [
+      "伪造医疗诊断书的威胁",
+      "资产冻结令的危机"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "3月18日零时‘清醒即审判’仪式即将开始，奥瑞恩集团见常规手段失效，将直接切断麦珂的对外通讯并试图在直播现场实施物理绑架，迫使麦珂必须在穹顶入口完成最终的身份确认与全球合唱引导。"
+  }
+}

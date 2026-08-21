@@ -1,0 +1,40 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC243_EC243",
+  "identifier": "MG049",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "2df367ccb6220c6341e36f46eb57b138e4bc68d91e9fd08e81c791596bfd455b",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-21T15:19:35+08:00",
+      "prompt_sha256": "2df367ccb6220c6341e36f46eb57b138e4bc68d91e9fd08e81c791596bfd455b",
+      "raw_response_sha256": "a3e610f1562d6146b9c39568f630419a942e7031d119abb02dcc0751e72e09cb",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG049_events_EC243_EC243_attempt_01_2df367ccb6_raw.txt",
+      "validation_failures": [
+        "EC243没有状态转移结算主角收益或人物关系变化"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 29.726,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-21T15:20:01+08:00",
+      "prompt_sha256": "0fde8116eed51ea7cdb52a923e794c964cf91992533b6e6789681401ea937c1a",
+      "raw_response_sha256": "4ddd66b8374f23e652745b1c6e34dec26359be9ffc508a7e06db0e92fcba7500",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG049_events_EC243_EC243_attempt_02_2df367ccb6_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 25.797,
+      "usage": {}
+    }
+  ]
+}

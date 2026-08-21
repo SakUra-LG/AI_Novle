@@ -1,0 +1,72 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC112_EC112",
+  "identifier": "MG023",
+  "accepted_attempt": 4,
+  "base_prompt_sha256": "717c0d694ffccf0fb694d94438b89ca1321a3824ecbcacaea66a113a856f5e8c",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T19:55:11+08:00",
+      "prompt_sha256": "717c0d694ffccf0fb694d94438b89ca1321a3824ecbcacaea66a113a856f5e8c",
+      "raw_response_sha256": "40349d3d4670eaef4e978b6c74e6bfef98d18fe145896bc4dcdf6ebb45b2f76f",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG023_events_EC112_EC112_attempt_01_717c0d694f_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 22 column 60 (char 1158)"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 30.642,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-20T19:55:39+08:00",
+      "prompt_sha256": "c5e744ff15f6f4df7dab77a9531c511170ec07eedccfc1daa0139cc94ccdc3c6",
+      "raw_response_sha256": "bcdd6948f4dae9af5431570949ca86021755fcb77317704beb2156131aff322e",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG023_events_EC112_EC112_attempt_02_717c0d694f_raw.txt",
+      "validation_failures": [
+        "event_clusters必须恰好1项"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 27.804,
+      "usage": {}
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-20T19:56:10+08:00",
+      "prompt_sha256": "ec798646939674d35c704921d160bef45b121038c31313d3a6b7e29652be0e93",
+      "raw_response_sha256": "90e6789b6c3034c39f4dd72ed18b964fddc8f218c6a7a3c988a01e94357a0c05",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG023_events_EC112_EC112_attempt_03_717c0d694f_raw.txt",
+      "validation_failures": [
+        "EC112年代技术错误：1987—1990尚不应使用“手机”"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 31.815,
+      "usage": {}
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-20T19:56:41+08:00",
+      "prompt_sha256": "c702d6b19a984d5c090fe9362c829d3e720550b20c485adbfad64f0334aff244",
+      "raw_response_sha256": "e842786bfd825a11cc144982e4154aaca77e9eb3f6a30556bf7543e56ca640b1",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG023_events_EC112_EC112_attempt_04_717c0d694f_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 30.31,
+      "usage": {}
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "generated_by": "groq",
+  "generation_providers": [
+    "groq"
+  ],
+  "kind": "events",
+  "identifier": "MG016",
+  "accepted_attempt": 1,
+  "acceptance_mode": "batched_event_compile",
+  "compiled_input_sha256": "00955435c12963c679fe66055d25afd52d8efdaeb7e8102a4026bab8ff033032",
+  "compiled_sha256": "29dc94c60912ca7743504d3185a9627370d4020abdeb7a022ba271149c2ff283",
+  "component_provenance_files": [
+    "MG016_events_EC076_EC076_provenance.json",
+    "MG016_events_EC077_EC077_provenance.json",
+    "MG016_events_EC078_EC078_provenance.json",
+    "MG016_events_EC079_EC079_provenance.json",
+    "MG016_events_EC080_EC080_provenance.json"
+  ],
+  "manual_edits": [],
+  "created_at": "2026-08-20T17:01:50+08:00"
+}

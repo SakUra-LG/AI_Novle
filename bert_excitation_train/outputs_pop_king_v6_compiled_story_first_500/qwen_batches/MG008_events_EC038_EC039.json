@@ -1,0 +1,446 @@
+{
+  "macro_group_id": "MG008",
+  "event_clusters": [
+    {
+      "cluster_id": "EC038",
+      "chapter_span": [
+        75,
+        76
+      ],
+      "source_event_direction": "前世具体受害：乔纳挪用麦珂资金填补赌债，导致家庭信托账户出现巨额亏空。；本事件独有的前世信息差：预知乔纳将在本季度因赌博欠下黑帮债务，急需从麦珂账户挪用资金。；今生提前动作：麦珂诱导乔纳签署一份看似合规实则违规的担保文件作为诱饵。；第75章可见小赢：乔纳以为得逞签署文件，却不知已落入法律陷阱。；第76章新交锋：家庭会议上播放录音并出示伪造担保证据，乔纳当场被冻结资产并被驱逐。；阻力方永久现实损失：乔纳身败名裂，失去所有话语权，赌债由其个人承担。；主角现实收益：追回被挪用资金转入信托基金，彻底切断乔纳干涉渠道。；不可逆结算键：乔纳资产冻结令生效；接回死亡控制主线：防止前世因父亲贪婪导致的家族破产危机，保全核心资产。",
+      "source_event_direction_sha256": "5f01312ab91348bb22c7542643e87c2e5d7358377f927a64ead8db368ecc1efa",
+      "source_macro_sha256": "e30849b13b8cfc3e79fd0e853e20be16e117316ab30bb3baa1d5700873e255de",
+      "name": "贪婪的诱饵：乔纳的财务自杀",
+      "timeline_years": "1971-08",
+      "main_opponent": "乔纳·杰森",
+      "opposition_type": "family",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS06"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂·杰森",
+        "乔纳·杰森",
+        "玛莎·杰森",
+        "黛安娜·罗文"
+      ],
+      "fictional_obstacle": "乔纳为偿还黑帮高利贷，试图以“紧急巡演设备升级”为名，诱导麦珂签署一份授权其全权处置信托账户资金的“临时担保函”。",
+      "prev_life_tragedy": "上一世乔纳利用母亲对儿子的信任，在麦珂不知情下签下了无限连带责任书，导致家庭信托被瞬间掏空，麦珂被迫背负巨额债务，甚至面临被剥夺监护权的法律风险。",
+      "info_gap_from_prev_life": "前世记忆中，乔纳在1971年8月10日曾对着电话嘶吼：“如果今晚拿不到五万块，我就完了。”且他当时使用的正是这份伪造的“设备升级担保函”模板。",
+      "why_previous_life_failed": "上一世乔纳利用了玛莎的优柔寡断和麦珂的未成年身份，将私人的赌债包装成商业紧急支出，让家人误以为是为了孩子的事业。",
+      "preemptive_avoidance": "麦珂故意在家庭会议前向乔纳透露“有一笔大钱可以借”，并暗示只要签署那份“临时担保函”就能快速调动资金，实则该文件条款中暗藏“若资金用途非官方巡演项目，则自动触发家族资产冻结及刑事举报”的公证条款。",
+      "bait_and_evidence": "诱饵是一份外观与正规合同无异、但关键条款用隐形墨水（需特定紫外灯照射才显形）标注了违规内容的《紧急资金调动授权书》。证据是麦珂早已安排好的微型录音笔，记录下了乔纳承认“这钱是用来还赌债”的对话，以及黛安娜事后展示的隐形墨水条款。",
+      "comic_villain_behavior": "乔纳一边假惺惺地拍着麦珂的肩膀说“爸爸这是为你好”，一边眼神飘忽地四处张望，生怕被邻居看见他拿着支票去当铺，甚至因为太紧张把钢笔帽咬得全是牙印。",
+      "villain_loss": "乔纳被正式剥夺所有家庭财政控制权，资产被法院冻结，且因伪造金融文件面临刑事调查，彻底沦为家族弃子，必须独自承担黑帮债务。",
+      "protagonist_gain": "成功追回被挪用的资金并重新注入“初声基金”信托，确立了乔纳在法律上的完全隔离地位，家庭资产防火墙加固。",
+      "relationship_change": "玛莎对乔纳的幻想彻底破灭，转变为绝对的敌视与警惕；麦珂与玛莎、黛安娜的“铁三角”决策机制升级为具有法律效力的“家庭治理公约”。",
+      "continuity_writes": [
+        "乔纳被永久禁止接触任何财务流程",
+        "家庭资产防火墙加固",
+        "麦珂确立对家庭资产的绝对监管权"
+      ],
+      "state_transitions": [
+        {
+          "domain": "job",
+          "entity_id": "CHAR_D1A231D7C399",
+          "state_key": "employment_status__financial_control__extension_EC035__extension_EC038",
+          "from": "none",
+          "to": "完全丧失财政控制权且被永久驱逐出核心决策圈",
+          "irreversible": true,
+          "evidence": "家庭会议上公开播放乔纳承认挪用资金的录音并展示担保函条款",
+          "effect_type": "villain_loss",
+          "source_entity_label": "CHAR_D1A231D7C399",
+          "source_state_key": "employment_status__financial_control__extension_EC035"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_001",
+          "state_key": "copyright_status__financial_independence__extension_EC035__extension_EC038",
+          "from": "none",
+          "to": "拥有独立监管账户且家庭资产防火墙完全加固（乔纳被彻底隔离）",
+          "irreversible": true,
+          "evidence": "法院签发资产冻结令，确认信托资金安全",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "copyright_status__financial_independence__extension_EC035"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_002",
+          "state_key": "trust_dynamic__family_alliance__extension_EC035__extension_EC038",
+          "from": "none",
+          "to": "铁三角稳固，父亲被彻底隔离且情感控制失效，母亲完全掌权",
+          "irreversible": true,
+          "evidence": "玛莎当众宣布收回乔纳所有代理权并报警",
+          "effect_type": "relationship_change",
+          "source_state_key": "trust_dynamic__family_alliance__extension_EC035"
+        }
+      ],
+      "historical_anchor_ids": [
+        "FICTION_ONLY"
+      ],
+      "cluster_outcome": "乔纳因贪婪设局反被坑害，资产被冻结并遭法律制裁，麦珂成功保全家族资产，彻底切断了父亲的干涉渠道，家庭内部实现了真正的权力统一。",
+      "next_event_hook": "随着乔纳的倒台，维克多·兰斯开始注意到麦珂团队的异常独立性，决定派遣更高级别的代理人介入，开启新的博弈篇章。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 75,
+          "timeline_start": "1972-01-26",
+          "timeline_end": "1972-01-26",
+          "scene": "河湾镇杰森家客厅",
+          "chapter_goal": "诱导乔纳签署带有致命漏洞的《紧急资金调动授权书》。",
+          "chapter_title": "贪婪的诱饵",
+          "participants": [
+            "麦珂·杰森",
+            "乔纳·杰森"
+          ],
+          "opening_conflict": "乔纳神色慌张地闯入客厅，声称有紧急投资机会需要立刻调动资金，试图绕过玛莎直接找麦珂签字。",
+          "info_gap_use": "麦珂利用前世记忆，知道乔纳此刻正面临黑帮催债的绝境，因此故意表现出对“大生意”的渴望，引导乔纳主动提出那份特定的担保方案。",
+          "opponent_reaction": "乔纳既兴奋又紧张，一边擦汗一边催促麦珂快点签字，嘴里念叨着“这是为了你的未来”，眼神却不敢直视麦珂的眼睛。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇杰森家客厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "开场直接进入乔纳的焦急状态"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_FIN_AUDIT_005",
+              "timeline_scope": "current",
+              "display_name": "紧急资金调动授权书（诱饵版）",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_041_BALLPOINT_LOG",
+              "timeline_scope": "current",
+              "purpose": "对比乔纳签字时的笔压异常，证明其处于非清醒或被诱导状态"
+            }
+          ],
+          "action_sequence": [
+            "麦珂故意在沙发上叹气，抱怨巡演预算审批太慢，暗示急需一笔周转金。",
+            "乔纳立刻凑上前，拿出早已准备好的《紧急资金调动授权书》，谎称是原厂牌特批的“设备升级绿色通道”。",
+            "麦珂假装犹豫，要求乔纳解释为何跳过正常流程，乔纳为了掩饰心虚，语速极快地背诵了一串专业术语。",
+            "麦珂趁乔纳不注意，按下了藏在袖口里的微型录音笔按钮，随后微笑着递上钢笔。"
+          ],
+          "visible_payoff": "乔纳以为得逞，兴奋地签下名字，完全没注意到文件中隐藏的隐形墨水条款，以为自己已经拿到了救命稻草。",
+          "ending": "乔纳拿着签好的文件匆匆离开，准备去兑现资金，却不知自己已踏入法律陷阱。",
+          "must_include": [
+            "乔纳的急切与谎言",
+            "麦珂的诱导性提问",
+            "隐形墨水条款的存在"
+          ],
+          "must_not_include": [
+            "乔纳最终被冻结资产的结果",
+            "家庭会议的召开"
+          ],
+          "detailed_synopsis": "乔纳因赌债缠身，急需用钱填补窟窿。他伪装成关心儿子事业的模样，拿出一份名为“设备升级绿色通道”的授权书，企图诱导麦珂签字调动信托资金。麦珂利用前世记忆，精准预判乔纳的绝望处境，故意表现出对资金的渴望，并诱导乔纳主动提出这份特定的文件。在乔纳急于脱手的慌乱中，麦珂悄悄启动了录音设备，并让他签下了那份表面合规、实则暗藏“非官方用途即触发刑事冻结”条款的文件。乔纳自以为得计，拿着文件兴冲冲地离开，完全不知道自己已经签署了自毁契约。"
+        },
+        {
+          "chapter_id": 76,
+          "timeline_start": "1972-01-29",
+          "timeline_end": "1972-01-29",
+          "scene": "河湾镇杰森家客厅（家庭会议现场）",
+          "chapter_goal": "在家庭会议上公开揭露乔纳的罪行，完成资产冻结与驱逐。",
+          "chapter_title": "审判时刻",
+          "participants": [
+            "麦珂·杰森",
+            "乔纳·杰森",
+            "玛莎·杰森",
+            "黛安娜·罗文"
+          ],
+          "opening_conflict": "乔纳带着“筹到的钱”得意洋洋地回家，却被玛莎和黛安娜拦在门口，要求召开紧急家庭会议。",
+          "info_gap_use": "麦珂利用前世记忆，知道乔纳会在当晚回家炫耀，因此提前准备好了所有证据，包括录音和文件分析，确保一击必杀。",
+          "opponent_reaction": "乔纳从得意转为惊恐，试图狡辩说是误会，甚至想抢夺文件销毁证据，但被黛安娜早有准备的律师团队制止。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇杰森家客厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "从客厅大门外的对峙转入会议桌旁"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_FIN_AUDIT_005",
+              "timeline_scope": "current",
+              "purpose": "展示文件中的隐形墨水条款，证明乔纳知情或应知违规"
+            },
+            {
+              "artifact_id": "ART_029_MEDIA_LOG",
+              "timeline_scope": "current",
+              "purpose": "播放乔纳承认挪用资金用于还赌债的录音"
+            }
+          ],
+          "action_sequence": [
+            "玛莎当众撕碎乔纳带来的现金支票，宣告资金已被冻结。",
+            "黛安娜打开投影仪，展示《紧急资金调动授权书》在紫外灯下的真实条款，指出乔纳的签字构成欺诈。",
+            "麦珂播放录音，清晰听到乔纳承认“这钱是用来还赌债的”，全场哗然。",
+            "乔纳试图辩解，被玛莎一脚踢开椅子，黛安娜随即宣读法院签发的资产冻结令。",
+            "乔纳瘫软在地，被保安强行带离，失去了所有话语权。"
+          ],
+          "visible_payoff": "乔纳身败名裂，资产被冻结，赌债由他个人承担，麦珂成功追回资金并注入信托。",
+          "ending": "家庭会议结束，乔纳被彻底驱逐，麦珂确立了家庭的绝对核心地位。",
+          "must_include": [
+            "紫外灯下显示的条款",
+            "录音播放",
+            "资产冻结令宣读"
+          ],
+          "must_not_include": [
+            "乔纳之前的心理活动",
+            "未来的法律判决细节"
+          ],
+          "detailed_synopsis": "乔纳带着“筹到”的钱回家，却发现等待他的是一场精心布置的审判。玛莎当众撕碎支票，黛安娜启动紫外灯， revealing 文件上隐藏的致命条款——非官方用途即触发刑事冻结。麦珂播放了乔纳亲口承认挪用资金还赌债的录音，彻底击碎了乔纳的防线。乔纳试图狡辩，却被玛莎严厉喝止，黛安娜随即宣读了法院的资产冻结令。乔纳瘫软在地，被保安强行带走，彻底失去了在家族中的所有话语权。麦珂成功追回资金，将其重新注入信托，彻底切断了父亲的干涉渠道，家庭联盟坚不可摧。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC039",
+      "chapter_span": [
+        77,
+        78
+      ],
+      "source_event_direction": "前世具体受害：缺乏技术支撑导致声带训练效率低下，错过最佳康复窗口期。；本事件独有的前世信息差：掌握昆廷对机械节拍器训练法的潜在兴趣及验证方法。；今生提前动作：麦珂引导昆廷用数据验证机械节拍器法优于药物注射，确立技术同盟。；第77章可见小赢：呼吸曲线数据完美匹配理论模型，昆廷公开表示信任麦珂决策。；第78章新交锋：昆廷在排练室墙壁上留下关于‘三秒停顿’的手写笔记，被拍照存档。；阻力方永久现实损失：传统电子生物反馈设备被弃用，技术路线彻底转向数据驱动。；主角现实收益：声带康复记录中的呼吸波动数据成为未来专辑制作的核心参数。；不可逆结算键：机械节拍器训练法确立；接回死亡控制主线：建立科学康复体系，为四十年后的高音域稳定表现奠定基础。",
+      "source_event_direction_sha256": "4c40fdffba67da436ee2c0b2326ba29dc02e8ce861fd0fea156bd44a9657342c",
+      "source_macro_sha256": "e30849b13b8cfc3e79fd0e853e20be16e117316ab30bb3baa1d5700873e255de",
+      "name": "数据的回响：机械节拍器的胜利",
+      "timeline_years": "1971-08",
+      "main_opponent": "卡尔·霍尔特（代表传统电子生物反馈设备派）",
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS06"
+      ],
+      "foreshadow_ids": [
+        "FS01",
+        "FS02"
+      ],
+      "main_characters": [
+        "麦珂·杰森",
+        "昆廷·琼斯",
+        "卡尔·霍尔特"
+      ],
+      "fictional_obstacle": "原厂牌坚持使用昂贵的电子生物反馈设备进行声带训练，声称能实时监控声带状态，实则是为了通过设备数据控制麦珂的训练节奏，且存在数据造假风险。",
+      "prev_life_tragedy": "上一世麦珂盲目信任电子设备的监控数据，导致训练计划被厂商操控，错过了最佳的自然恢复窗口期，声带状况一度恶化。",
+      "info_gap_from_prev_life": "前世记忆中，卡尔·霍尔特曾在一次设备调试中抱怨：“这机器读数太敏感，稍微动一下就会报警，不如老式机械的稳。”且1971年夏季某次电子故障导致数据丢失，延误了治疗。",
+      "why_previous_life_failed": "上一世麦珂过于依赖“高科技”的噱头，忽略了机械设备的物理稳定性，且未意识到电子数据可能被人为篡改。",
+      "preemptive_avoidance": "麦珂引导昆廷设计一套基于纯机械齿轮节拍器的训练系统，通过物理震动和纸质记录来监测呼吸曲线，证明其比电子设备更稳定、更透明。",
+      "bait_and_evidence": "诱饵是卡尔·霍尔特坚持要在全员面前演示电子设备的“实时精准度”。证据是昆廷用机械节拍器测得的呼吸曲线数据完美匹配理论模型，而电子设备的读数却在同一时间出现剧烈波动，证明了电子数据的不可靠。",
+      "comic_villain_behavior": "卡尔·霍尔特为了证明自己正确，不惜把脸贴在电子屏幕上，结果屏幕过热冒烟，他吓得跳起来，手忙脚乱地去关电源，却不小心把插头拔了下来，导致整个设备短路起火。",
+      "villain_loss": "卡尔·霍尔特代表的传统电子生物反馈设备被彻底弃用，技术路线转向数据驱动，原厂牌失去了对训练数据的控制权。",
+      "protagonist_gain": "确立了机械节拍器训练法，声带康复记录中的呼吸波动数据成为未来专辑制作的核心参数，建立了科学康复体系。",
+      "relationship_change": "昆廷与麦珂的技术同盟关系进一步巩固，昆廷公开表示对麦珂决策的绝对信任，成为巡演技术总监。",
+      "continuity_writes": [
+        "机械节拍器训练法确立",
+        "呼吸曲线数据成为核心参数",
+        "传统电子生物反馈设备被弃用"
+      ],
+      "state_transitions": [
+        {
+          "domain": "job",
+          "entity_id": "CHAR_026AC753E27A",
+          "state_key": "role_in_production_team__extension_EC030__extension_EC039",
+          "from": "none",
+          "to": "核心技术合伙人（确立机械节拍器训练法为唯一标准）",
+          "irreversible": true,
+          "evidence": "昆廷在排练室墙壁上留下关于‘三秒停顿’的手写笔记，被拍照存档",
+          "effect_type": "protagonist_gain",
+          "source_entity_label": "CHAR_026AC753E27A",
+          "source_state_key": "role_in_production_team__extension_EC030"
+        },
+        {
+          "domain": "health",
+          "entity_id": "CHAR_026AC753E27A",
+          "state_key": "vocal_health_status__extension_EC030__extension_EC031__extension_EC039",
+          "from": "none",
+          "to": "声带状态持续稳定，确立机械节拍器训练法为唯一标准（数据驱动）",
+          "irreversible": true,
+          "evidence": "呼吸曲线数据完美匹配理论模型，昆廷公开表示信任麦珂决策",
+          "effect_type": "protagonist_gain",
+          "source_entity_label": "CHAR_026AC753E27A",
+          "source_state_key": "vocal_health_status__extension_EC030__extension_EC031"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "CHAR_3F11D9A42EDF",
+          "state_key": "control_over_narrative__extension_EC027",
+          "from": "失去话语权，被暂停职务",
+          "to": "彻底失去技术欺诈能力，信誉破产",
+          "irreversible": true,
+          "evidence": "电子设备故障被公开演示，卡尔·霍尔特被证实无法复现法律合规性",
+          "effect_type": "villain_loss",
+          "source_entity_label": "CHAR_F618A85B98BB"
+        }
+      ],
+      "historical_anchor_ids": [
+        "FICTION_ONLY"
+      ],
+      "cluster_outcome": "麦珂成功确立了基于机械节拍器的科学康复体系，彻底摒弃了不可靠的电子监控设备，昆廷成为技术总监，声带康复数据成为未来创作的核心资产。",
+      "next_event_hook": "随着技术路线的确立，维克多·兰斯开始注意到麦珂团队的异常独立性，决定派遣更高级别的代理人介入，开启新的博弈篇章。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 77,
+          "timeline_start": "1972-01-30",
+          "timeline_end": "1972-01-30",
+          "scene": "银湾市苏荷区独立排练室",
+          "chapter_goal": "通过对比实验，证明机械节拍器训练法优于电子生物反馈设备。",
+          "chapter_title": "数据的胜利",
+          "participants": [
+            "麦珂·杰森",
+            "昆廷·琼斯",
+            "卡尔·霍尔特"
+          ],
+          "opening_conflict": "卡尔·霍尔特带着昂贵的电子生物反馈设备来到排练室，声称这是行业标准，要求麦珂立即切换训练模式。",
+          "info_gap_use": "麦珂利用前世记忆，知道电子设备的读数容易受干扰且易被篡改，因此主动提出进行一场“盲测”，让双方设备同时监测同一组训练数据。",
+          "opponent_reaction": "卡尔·霍尔特自信满满，认为自己的设备能精准捕捉每一个细微变化，甚至嘲笑麦珂还在用“老古董”机械节拍器。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市苏荷区独立排练室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "开场直接进入对比测试环节"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_TRAINING_PLAN_003",
+              "timeline_scope": "current",
+              "display_name": "机械节拍器训练数据记录表（1971.08.13）",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_MECHANICAL_METRONOME_001",
+              "timeline_scope": "current",
+              "purpose": "作为核心测试设备，展示其物理稳定性"
+            }
+          ],
+          "action_sequence": [
+            "卡尔·霍尔特连接电子设备，展示其复杂的波形图，声称能实时监控声带状态。",
+            "麦珂启动纯机械齿轮节拍器，昆廷在一旁记录纸质呼吸曲线数据。",
+            "两人同时进行高强度训练，卡尔的电子设备突然发出刺耳警报，显示数据异常波动。",
+            "昆廷展示纸质记录，发现机械节拍器的数据与理论模型完美吻合，而电子数据却出现了明显的漂移。",
+            "卡尔试图解释是设备故障，但被昆廷当场指出是设备本身的设计缺陷。"
+          ],
+          "visible_payoff": "呼吸曲线数据完美匹配理论模型，昆廷公开表示信任麦珂决策，卡尔的设备被证明不可靠。",
+          "ending": "卡尔·霍尔特被迫承认失败，同意暂时停用电子设备，但心中仍不服气。",
+          "must_include": [
+            "电子设备的故障",
+            "纸质记录的完美匹配",
+            "昆廷的信任表态"
+          ],
+          "must_not_include": [
+            "卡尔被彻底驱逐",
+            "手写笔记的诞生"
+          ],
+          "detailed_synopsis": "卡尔·霍尔特带着昂贵的电子生物反馈设备来到排练室，声称这是行业标准，要求麦珂立即切换训练模式。麦珂利用前世记忆，知道电子设备的读数容易受干扰且易被篡改，因此主动提出进行一场“盲测”。在对比实验中，卡尔的电子设备突然发出刺耳警报，显示数据异常波动，而昆廷记录的机械节拍器数据却与理论模型完美吻合。卡尔试图辩解是设备故障，但被昆廷当场指出是设备本身的设计缺陷。麦珂成功证明了机械节拍器训练法的优越性，昆廷公开表示信任麦珂决策，卡尔被迫承认失败，同意暂时停用电子设备。"
+        },
+        {
+          "chapter_id": 78,
+          "timeline_start": "1972-01-31",
+          "timeline_end": "1972-01-31",
+          "scene": "银湾市苏荷区独立排练室",
+          "chapter_goal": "确立机械节拍器训练法为唯一标准，并在墙上留下关键笔记。",
+          "chapter_title": "三秒的留白",
+          "participants": [
+            "麦珂·杰森",
+            "昆廷·琼斯",
+            "卡尔·霍尔特"
+          ],
+          "opening_conflict": "卡尔·霍尔特不甘心失败，试图再次推销电子设备的“新功能”，并质疑机械节拍器的准确性。",
+          "info_gap_use": "麦珂利用前世记忆，知道“三秒停顿”是未来专辑制作的关键参数，因此引导昆廷在墙上写下相关笔记，作为技术同盟的象征。",
+          "opponent_reaction": "卡尔·霍尔特恼羞成怒，试图抢走昆廷的笔记本，却被昆廷一把推开，场面一度混乱。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市苏荷区独立排练室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "从昨天的争论延续到今天"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_TRAINING_PLAN_003",
+              "timeline_scope": "current",
+              "purpose": "作为机械节拍器训练法的正式记录凭证"
+            },
+            {
+              "artifact_id": "ART_023_DEMO_MASTER",
+              "timeline_scope": "current",
+              "purpose": "引用之前的Demo磁带，证明三秒停顿的效果"
+            }
+          ],
+          "action_sequence": [
+            "卡尔·霍尔特继续纠缠，试图用“新功能”说服麦珂重新考虑电子设备。",
+            "麦珂冷冷地打断他，指出之前的测试已经证明了电子设备的不可靠性。",
+            "昆廷走到排练室墙壁前，拿起粉笔，郑重地写下了“三秒停顿”的手写笔记。",
+            "麦珂示意昆廷拍照存档，作为未来专辑制作的核心参数依据。",
+            "卡尔·霍尔特被彻底无视，只能灰溜溜地离开，带走了他的电子设备。"
+          ],
+          "visible_payoff": "昆廷在排练室墙壁上留下关于‘三秒停顿’的手写笔记，被拍照存档，机械节拍器训练法正式确立。",
+          "ending": "麦珂确立了家庭与事业的绝对核心地位，技术路线彻底转向数据驱动。",
+          "must_include": [
+            "墙上的手写笔记",
+            "拍照存档",
+            "卡尔的灰溜溜离开"
+          ],
+          "must_not_include": [
+            "未来的专辑制作细节",
+            "卡尔的后续报复"
+          ],
+          "detailed_synopsis": "卡尔·霍尔特不甘心失败，试图再次推销电子设备的“新功能”，并质疑机械节拍器的准确性。麦珂冷冷地打断他，指出之前的测试已经证明了电子设备的不可靠性。昆廷走到排练室墙壁前，拿起粉笔，郑重地写下了“三秒停顿”的手写笔记。麦珂示意昆廷拍照存档，作为未来专辑制作的核心参数依据。卡尔·霍尔特被彻底无视，只能灰溜溜地离开，带走了他的电子设备。麦珂确立了家庭与事业的绝对核心地位，技术路线彻底转向数据驱动，为四十年后的高音域稳定表现奠定了基础。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1971",
+    "character_states": [
+      "玛莎：彻底觉醒，成为家庭决策的核心执行者，对乔纳的警惕性提高，掌握财政大权。",
+      "乔纳：被彻底边缘化，背负巨额债务丑闻，丧失家庭信任与财政控制权，处于社会性死亡边缘。",
+      "麦珂：掌握绝对话语权，家庭决策机制升级，声带状况稳定，心理防线稳固。",
+      "昆廷：正式成为家庭会议第四常驻成员，技术协作关系制度化，确立核心地位。"
+    ],
+    "relationship_states": [
+      "麦珂与玛莎、黛安娜形成三方口头确认机制，乔纳被彻底隔离。",
+      "麦珂与昆廷建立基于作品质量的专业信任，技术协作常态化。",
+      "家庭内部矛盾转化为理性沟通，健康共识达成，乔纳被排除在核心决策圈外。"
+    ],
+    "rights_and_assets": [
+      "《演出健康备忘录》成为后续所有合作的基础模板，并被更多独立厂牌引用。",
+      "试镜母带原件及公证副本构成权利起源凭证，物理存储安全。",
+      "《纸船纪》版权归属清晰，无债务纠纷，全部注入‘初声基金’信托。",
+      "家庭会议纪要升级为具有法律效力的‘家庭治理公约’，乔纳被永久除名。"
+    ],
+    "health_and_location": [
+      "持续居住于河湾镇原居所，晨间监测成固定仪式。",
+      "居住地扩展至邻近城市录音棚周边公寓（为1971年巡演做准备）。",
+      "所有医疗记录采用纸质表格与机械仪表读数。"
+    ],
+    "open_threads": [
+      "维克多·兰斯直接介入的意图（新开启，将在下一块中逐步显现）",
+      "1971年夏季舞台机械故障事故的预防（已通过自主排期规避）",
+      "巴里·布鲁姆留下的口供把柄（尚未回收，最晚回收块：B015）"
+    ],
+    "resolved_threads": [
+      "乔纳试图绕过家庭决策的初期尝试（已在1971年夏的家庭会议中失败）",
+      "家庭资产被抵押的风险（已通过资产保全计划化解）",
+      "玛莎的被动地位（已彻底扭转）"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "随着巡演筹备进入实质阶段，维克多·兰斯开始注意到麦珂的异常独立性，决定派遣更高级别的代理人介入，开启新的博弈篇章。"
+  }
+}

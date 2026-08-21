@@ -1,0 +1,200 @@
+{
+  "macro_group_id": "MG045",
+  "event_clusters": [
+    {
+      "cluster_id": "EC222",
+      "chapter_span": [443, 444],
+      "source_event_direction": "{\"cluster_id\": \"EC222\", \"chapter_span\": [443, 444], \"opposition_type\": \"institutional\", \"event_type\": \"legal_procedure\", \"solution_type\": \"legal_evidence\", \"death_chain_role\": \"pressure\", \"previous_life_harm\": \"昆廷突发眩晕离岗，导致信托管理人失能，对手借机试图接管管理权并冻结资产。\", \"unique_prev_life_info\": \"预判昆廷会在3月16日因不明原因眩晕，从而提前布局三位学员的备用签署权。\", \"preemptive_action\": \"麦珂当场示意黛安娜开启温特事务所保险柜，取出2002年信托协议补充条款副本。\", \"chapter_one_small_win\": \"三位‘星火调音师’学员紧急抵达海平线剧场，联合签署《临时信托执行确认书》。\", \"chapter_two_showdown\": \"维克多试图以‘管理人失能’为由发起动议，却被三位学员高举的原件当场驳回。\", \"opponent_permanent_loss\": \"奥瑞恩集团丧失以‘健康危机’为由冻结信托的法理基础，法律层面确立麦珂绝对控制。\", \"protagonist_concrete_gain\": \"昆廷康复后正式移交部分管理权给三位学员，麦珂获得不可撼动的合法授权。\", \"irreversible_outcome_key\": \"三位学员签字生效，信托条款激活，任何外部机构无法绕过此程序。\", \"death_chain_connection\": \"此步骤解除了前世因管理权旁落而导致的被动局面，确保生存主动权。\"}",
+      "source_event_direction_sha256": "8f9a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e",
+      "source_macro_sha256": "1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e2f",
+      "name": "物理介质确权与信托接管",
+      "timeline_years": "2009",
+      "main_opponent": "维克多·斯特林 (Victor Sterling)",
+      "opposition_type": "institutional",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["EC221", "EC223"],
+      "foreshadow_ids": ["FORESHADOW_442_PHYSICAL_MEDIA"],
+      "main_characters": ["麦珂", "昆廷", "黛安娜", "维克多·斯特林", "艾拉", "诺亚", "朱利安"],
+      "fictional_obstacle": "奥瑞恩集团利用被植入虚假数据的医疗系统制造昆廷‘脑溢血昏迷’假象，企图触发信托协议中的‘管理人失能’条款，强行冻结核心资产并切断麦珂控制权。",
+      "prev_life_tragedy": "前世中，昆廷在3月16日突然晕倒，麦珂因未预料到数据污染会直接攻击生理监测终端，导致信托管理权在混乱中被维克多·斯特林以‘紧急接管’名义非法窃取，最终资产被冻结，麦珂失去翻盘资本。",
+      "info_gap_from_prev_life": "麦珂重生记忆明确知晓：昆廷的晕厥是奥瑞恩集团通过远程医疗接口注入神经毒素模拟信号的结果，且维克多计划在3月17日晨会前完成非法接管手续。",
+      "why_previous_life_failed": "前世过度依赖数字监控系统的实时反馈，未建立物理隔离的应急签署机制，导致在数据被篡改时无法验证真伪，被迫接受对手的‘紧急接管’逻辑。",
+      "preemptive_avoidance": "麦珂在3月16日深夜已安排黛安娜将2002年信托协议的纸质补充条款（含手写签名与蜡封）存入海平线剧场地下金库的独立保险箱，并通知三位‘星火调音师’学员携带实体印章待命，准备在昆廷‘病发’瞬间启动物理签署程序。",
+      "bait_and_evidence": "麦珂故意让莱昂·周在公共网络上传输昆廷‘生命体征平稳但需静养’的假消息，诱使维克多以为有机可乘而急于发起动议；同时，三位学员手持的《临时信托执行确认书》原件上带有2002年原始蜡封与墨迹氧化痕迹，作为不可伪造的物证。",
+      "comic_villain_behavior": "维克多·斯特林在会议室中因过度贪婪，不仅试图用电子签名板冒充纸质文件，还为了抢功大声叫嚣‘这是为了保护公司利益’，完全忽略现场物理文件的法律效力，甚至嘲笑三位学员是‘拿着旧报纸的疯子’，结果被律师当场指出其电子签名无效且涉嫌欺诈。",
+      "villain_loss": "奥瑞恩集团彻底丧失以‘健康危机’为由冻结信托的法理基础，维克多·斯特林因试图伪造法律文件被董事会暂停职务，集团无法再干预核心资产运作。",
+      "protagonist_gain": "昆廷在苏醒后（实为药物代谢结束）正式签署授权书，将部分管理权移交给三位‘星火调音师’学员，麦珂获得基于物理介质的不可撼动合法授权，彻底摆脱数字网络的操控。",
+      "relationship_change": "昆廷从对数字系统的盲目信任转变为对麦珂‘物理备份’策略的绝对依赖；三位学员从旁观者升级为拥有实际管理权的信托执行合伙人；莱昂·周因成功协助物理隔离而获得麦珂的深度战略信任。",
+      "continuity_writes": [
+        "麦珂在3月16日晚亲自检查了胶片厂的物理环境，确保微缩胶片未被替换。",
+        "黛安娜在保险柜中放置的不仅是文件，还有2002年签署时的原始墨水样本对比卡。",
+        "维克多·斯特林的‘紧急接管’计划完全基于被篡改的电子数据，未包含任何物理凭证。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "TRUST_EXECUTION_AUTHORITY",
+          "state_key": "control_medium_status",
+          "from": "digitally_compromised_risk",
+          "to": "physically_verified_authority",
+          "irreversible": true,
+          "evidence": "TEMPORARY_TRUST_CONFIRMATION_PAPER_COPY_2009_03_17",
+          "effect_type": "protagonist_gain",
+          "source_domain": "legal_system"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "MACO_CORE_ASSETS",
+          "state_key": "freezing_status",
+          "from": "pending_freeze_by_orion",
+          "to": "legally_unfreezeable",
+          "irreversible": true,
+          "evidence": "NOTARIZED_WAX_SEAL_CERTIFICATE",
+          "effect_type": "protagonist_gain",
+          "source_domain": "legal_system"
+        },
+        {
+          "domain": "authority",
+          "entity_id": "QUINTIN_MANAGEMENT_ROLE",
+          "state_key": "capacity_verification",
+          "from": "simulated_coma",
+          "to": "verified_awake_with_delegation",
+          "irreversible": true,
+          "evidence": "MEDICAL_REPORT_AND_DELEGATION_SIGNING",
+          "effect_type": "protagonist_gain",
+          "source_domain": "medical_system"
+        }
+      ],
+      "historical_anchor_ids": ["ANCHOR_2002_TRUST_AGREEMENT"],
+      "cluster_outcome": "三位学员联合签署《临时信托执行确认书》，物理介质确权的法律效力压倒奥瑞恩集团的数字指控，维克多的接管动议被当场驳回，麦珂团队获得绝对控制权。",
+      "next_event_hook": "3月18日零时‘清醒即审判’仪式即将开始，奥瑞恩集团见常规手段失效，将直接切断麦珂的对外通讯并试图在直播现场实施物理绑架，迫使麦珂必须在穹顶入口完成最终的身份确认与全球合唱引导。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 443,
+          "timeline_start": "2009-03-16 18:00",
+          "timeline_end": "2009-03-16 23:30",
+          "scene": "海平线剧场地下金库与临时指挥中心",
+          "chapter_goal": "利用信息差，在昆廷‘病发’前完成三位学员的物理集结与签署程序，建立不可篡改的信托执行链。",
+          "chapter_title": "暗室里的蜡封",
+          "participants": ["麦珂", "黛安娜", "艾拉", "诺亚", "朱利安", "昆廷(昏迷状态)"],
+          "opening_conflict": "奥瑞恩集团向外界广播昆廷‘突发脑溢血，生命垂危’，引发市场恐慌，维克多·斯特林随即致电要求立即召开紧急会议接管事务。",
+          "info_gap_use": "麦珂早已预判昆廷会被远程诱导至‘假性昏迷’，因此未在病床旁停留，而是直接前往地下金库，利用时间差完成关键动作。",
+          "opponent_reaction": "维克多在电话中语气急促，暗示若不及时接管，麦珂将被视为‘精神不稳定’而剥夺资格，试图制造紧迫感。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "地下金库",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "黛安娜转动机械锁，发出沉闷的金属撞击声，隔绝了外界的电子信号干扰。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_443_TEMP_TRUST_FINAL",
+              "timeline_scope": "current",
+              "display_name": "《临时信托执行确认书（终版）》",
+              "kind": "legal_document_physical"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_439_TRUST_CERT",
+              "timeline_scope": "previous_life",
+              "purpose": "作为2002年原始条款的参照，确认蜡封与墨迹的连续性。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂指示黛安娜打开保险柜，取出2002年信托协议的纸质副本及三枚备用印章。",
+            "三位学员（艾拉、诺亚、朱利安）从不同方向潜入剧场，避开奥瑞恩集团的监控网络。",
+            "麦珂在三人面前展示微缩胶片的物理索引，证明核心档案已脱离数字网络。",
+            "在昆廷‘昏迷’的倒计时结束前，三人共同在《临时信托执行确认书》上盖章并按手印。",
+            "黛安娜将签署文件装入铅盒，封存于金库最深处，仅留一份复印件供次日会议使用。"
+          ],
+          "visible_payoff": "三位学员成功签署文件，物理证据链形成，维克多的电子接管计划暂时失效。",
+          "ending": "凌晨两点，金库大门关闭，麦珂看着铅盒，心中默念：‘这一次，你们拿不到钥匙。’",
+          "must_include": ["蜡封的触感", "铅盒的沉重感", "学员们的沉默与专注"],
+          "must_not_include": ["昆廷的苏醒", "维克多的正面出场", "数字屏幕的闪烁"],
+          "detailed_synopsis": "2009年3月16日晚，海平线剧场内气氛诡异。奥瑞恩集团发布的新闻称昆廷突发脑溢血，生命垂危，急需紧急接管。麦珂却深知这是陷阱——前世正是此时，昆廷的‘昏迷’导致信托管理权旁落。她无视外界喧嚣，径直走向地下金库。黛安娜熟练地转动厚重的机械锁，门开后，空气中弥漫着陈旧的纸张味。麦珂取出2002年信托协议的纸质副本，那上面的蜡封虽经岁月氧化，却依然清晰。她向赶来的三位学员——艾拉、诺亚和朱利安展示了微缩胶片的物理索引，强调核心档案已彻底脱离数字网络。在维克多不断来电催促的背景下，三人神情凝重，在《临时信托执行确认书》上郑重盖下印章，按下手印。黛安娜将这份文件放入铅盒，封存于金库深处。这一刻，物理介质的力量压倒了虚拟世界的谎言。"
+        },
+        {
+          "chapter_id": 444,
+          "timeline_start": "2009-03-17 09:00",
+          "timeline_end": "2009-03-17 11:30",
+          "scene": "海平线剧场第一会议室",
+          "chapter_goal": "在维克多发起的‘管理人失能’动议中，利用物理证据当场驳回，确立麦珂的绝对控制权。",
+          "chapter_title": "蜡封的审判",
+          "participants": ["麦珂", "维克多·斯特林", "昆廷(刚苏醒)", "黛安娜", "艾拉", "诺亚", "朱利安", "法律顾问"],
+          "opening_conflict": "维克多·斯特林在会议上大张旗鼓地提出动议，声称昆廷已丧失行为能力，要求依据奥瑞恩集团内部章程立即冻结所有资产并接管信托管理权。",
+          "info_gap_use": "麦珂并未反驳昆廷的病情，而是直接出示了昨夜签署的《临时信托执行确认书》原件，该文件受2002年信托协议保护，任何外部机构无权干涉。",
+          "opponent_reaction": "维克多起初自信满满，认为电子记录足以定罪，但在看到实物文件后，他的表情从傲慢转为惊愕，随即试图用‘文件伪造’来狡辩，却因缺乏技术支撑而显得滑稽可笑。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "第一会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "艾拉举起铅盒，将其放在会议桌中央，金属光泽刺眼。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_443_TEMP_TRUST_FINAL",
+              "timeline_scope": "current",
+              "purpose": "作为驳回维克多动议的核心物证，展示蜡封与墨迹的真实性。"
+            }
+          ],
+          "action_sequence": [
+            "维克多宣读动议，指责昆廷昏迷，要求立即接管。",
+            "麦珂平静地示意黛安娜打开铅盒，取出《临时信托执行确认书》。",
+            "三位学员分别展示自己持有的副本，并指出文件上的蜡封与2002年原始协议一致。",
+            "法律顾问当场鉴定文件真实性，确认其法律效力高于任何电子记录。",
+            "昆廷在门外被推入，虽然虚弱但神志清醒，他签署了授权书，正式将管理权移交给三位学员。",
+            "维克多试图抢夺文件，被安保人员制止，其欺诈意图暴露无遗。"
+          ],
+          "visible_payoff": "维克多的动议被当场驳回，奥瑞恩集团丧失法理基础，麦珂团队获得不可动摇的控制权。",
+          "ending": "会议结束，维克多面色铁青地离开，麦珂看着窗外初升的太阳，知道真正的风暴才刚刚开始。",
+          "must_include": ["蜡封的特写", "维克多的滑稽辩解", "昆廷的清醒宣言"],
+          "must_not_include": ["暴力冲突", "媒体直播", "资产冻结的实际发生"],
+          "detailed_synopsis": "3月17日上午，海平线剧场第一会议室座无虚席。维克多·斯特林站在讲台前，声泪俱下地描述昆廷的‘悲惨遭遇’，并引用奥瑞恩集团的内部章程，要求立即冻结资产并接管信托管理权。他坚信电子记录足以让一切顺理成章。然而，麦珂只是静静地看着他，直到他说完最后一句。她微微点头，黛安娜走上前，打开了会议桌中央那个不起眼的铅盒。艾拉、诺亚和朱利安依次站起，每人手中都有一份《临时信托执行确认书》。他们高举文件，上面清晰的蜡封和墨迹在阳光下熠熠生辉。法律顾问当场鉴定，确认这些文件符合2002年信托协议的物理标准，具有最高法律效力。维克多愣住了，他试图辩解文件是伪造的，但面对三位学员坚定的眼神和法律顾问的权威认证，他的声音越来越小，最后变成了尴尬的嘟囔。就在这时，昆廷被推了进来，他虽然脸色苍白，但眼神清明。他接过笔，在授权书上签下了自己的名字，正式将管理权移交给三位学员。维克多见状，脸色瞬间变得惨白，他试图冲上前去抢夺文件，却被安保人员一把拦住。全场哗然，奥瑞恩集团的阴谋彻底破产。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2009",
+    "character_states": [
+      {"entity": "麦珂", "state": "掌控全局，获得物理介质确权后的绝对控制权"},
+      {"entity": "昆廷", "state": "苏醒，神志清醒，已签署管理权移交书"},
+      {"entity": "维克多·斯特林", "state": "信誉破产，被暂停职务，面临法律调查"},
+      {"entity": "艾拉/诺亚/朱利安", "state": "成为信托执行合伙人，拥有实质管理权"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂 & 昆廷", "change": "从依赖关系转变为麦珂主导的绝对信任"},
+      {"pair": "麦珂 & 星火调音师", "change": "从师徒关系转变为平等的信托执行伙伴"},
+      {"pair": "奥瑞恩集团 & 麦珂", "change": "从表面合作转为公开敌对，法律战全面爆发"}
+    ],
+    "rights_and_assets": [
+      {"entity": "永恒星光项目核心资产", "status": "已脱离奥瑞恩集团控制，由麦珂团队绝对掌控"},
+      {"entity": "信托管理权", "status": "已由三位学员联合行使，不可撤销"}
+    ],
+    "health_and_location": [
+      {"entity": "昆廷", "status": "身体恢复中，位于海平线剧场安全区"},
+      {"entity": "麦珂", "status": "生理指标正常，位于指挥中心"}
+    ],
+    "open_threads": [
+      "3月18日零时‘清醒即审判’直播仪式的安全保障",
+      "奥瑞恩集团是否会在直播现场采取极端物理手段",
+      "维克多·斯特林的法律反击可能性"
+    ],
+    "resolved_threads": [
+      "昆廷的‘昏迷’危机及其引发的信托管理权争夺",
+      "奥瑞恩集团通过数字系统冻结资产的企图"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "3月18日零时‘清醒即审判’仪式即将开始，奥瑞恩集团见常规手段失效，将直接切断麦珂的对外通讯并试图在直播现场实施物理绑架，迫使麦珂必须在穹顶入口完成最终的身份确认与全球合唱引导。"
+  }
+}

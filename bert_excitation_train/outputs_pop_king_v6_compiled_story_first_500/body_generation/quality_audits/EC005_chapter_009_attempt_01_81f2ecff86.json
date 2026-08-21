@@ -1,0 +1,116 @@
+{
+  "cluster_id": "EC005",
+  "chapter_id": 9,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "81f2ecff86ab13adfa6395af683c4d0725cf82b5ac43d74ef010d9650ae3a57c",
+  "base_prompt_sha256": "81f2ecff86ab13adfa6395af683c4d0725cf82b5ac43d74ef010d9650ae3a57c",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "a09ba895c72acd4854a70b5cc5a5ef19fe47618db4aeb581609ef31afd69b14c",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.454,
+    "usage": {
+      "prompt_tokens": 5441,
+      "completion_tokens": 1266,
+      "total_tokens": 6707,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 5,
+    "through_chapter": 10,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "26a416b2ee0f728d40eea43203210c5acefe8d7ac70dfcd265cff39751c39401",
+    "chapter_card_prefix_sha256": "8d2b0054c1a2b1ac48a3f0ac197321b943ce7d2d85bcb929f36b4cb114b3975a",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "5e971d0bf395990888b10e2786bb8ce392176b2389290006bf420504ca1cc515"
+  },
+  "cluster_sha256": "fc550cd0bd254a00375f224b701fdf48b048dc5166e50fc4ddcb1453a201036c",
+  "card_sha256": "29152f6c645034e313fa73927f8dc5079c98e246e025eae3f6da9ee3c7f8c22f",
+  "chapter_audit": {
+    "han_chars": 1777,
+    "total_chars": 2059,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "麦珂拒绝签字",
+        "exact": false,
+        "bigram_coverage": 0.6,
+        "matched": true
+      },
+      {
+        "anchor": "黛安娜记录行为",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "玛莎介入",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0299,
+    "scene_evidence": [
+      {
+        "location": "《晨光电台》后台化妆间",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_DOC_001",
+        "display_name": "黛安娜手写会议纪要",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.030，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“玛莎介入”",
+      "正文未落到规划场景“《晨光电台》后台化妆间”",
+      "正文没有写出本章正式创建的关键对象“黛安娜手写会议纪要”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.030，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“玛莎介入”",
+      "正文未落到规划场景“《晨光电台》后台化妆间”",
+      "正文没有写出本章正式创建的关键对象“黛安娜手写会议纪要”"
+    ]
+  },
+  "failures": [
+    "第10章：汉字数1949，高于1900",
+    "两章存在225字连续重复片段，第二章疑似重演第一章"
+  ],
+  "accepted": false,
+  "joint_rejected": true,
+  "joint_failures": [
+    "第10章：汉字数1949，高于1900",
+    "两章存在225字连续重复片段，第二章疑似重演第一章"
+  ]
+}

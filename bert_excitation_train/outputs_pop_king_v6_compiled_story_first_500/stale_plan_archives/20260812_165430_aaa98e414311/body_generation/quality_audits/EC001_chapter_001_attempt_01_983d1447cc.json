@@ -1,0 +1,80 @@
+{
+  "cluster_id": "EC001",
+  "chapter_id": 1,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "983d1447cceded4ecf70affc450b9885c76fca92f49fc33631eaf25f4885b7a2",
+  "base_prompt_sha256": "bd8cc7d9e5192b9a33a84be55611fdedd61de8fa5be59c836ae03af993e59d4a",
+  "body_generator_contract_version": "v6_prompt_chain_semantic_critic_20260812",
+  "raw_response_sha256": "860383eab9b6fd5b36c1fe62e53a1159210809e07119b461d88e0363bf7af349",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 24.114,
+    "usage": {
+      "input_tokens": 4171,
+      "output_tokens": 1033,
+      "total_tokens": 5204,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 1,
+    "through_chapter": 2,
+    "outline_sha256": "aaa98e4143115d54ee43409b902500c9aadf34c074241342c2d994bf120c214f",
+    "event_prefix_sha256": "e2fa39c22423a9623217b889220083fab63236f4f3f7b71cd7b7811d32c11de0",
+    "chapter_card_prefix_sha256": "a79cc5e33f6e7511869dda00cb752482cc461f74cbd10c6e7d58c8162d093d5b",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "beec63ebbe15bc8c0dbff96927af8e0b03dcfd8b3649f81465fd15ca9c162a49"
+  },
+  "cluster_sha256": "2ca0319f12feb407215fe725c8e85c6034699b3f96244c2a3a100d927316ea52",
+  "card_sha256": "775151e17b51a8a6049db0d0d8cc06c588cce2157d59c94d9f7aa7a3e7798a52",
+  "chapter_audit": {
+    "han_chars": 1098,
+    "total_chars": 1316,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 2,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 1,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0817,
+    "scene_evidence": [
+      {
+        "location": "圣克莱尔纪念医院临终监护病房",
+        "body_hit": true,
+        "match_mode": "medical_scene_semantics"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_DEATH_LOG_001",
+        "display_name": "临终听觉残响记录",
+        "body_hit": false
+      }
+    ],
+    "failures": [
+      "汉字数1098，低于1100",
+      "正文没有写出本章正式创建的关键对象“临终听觉残响记录”"
+    ]
+  },
+  "failures": [
+    "汉字数1098，低于1100",
+    "正文没有写出本章正式创建的关键对象“临终听觉残响记录”"
+  ],
+  "accepted": false
+}

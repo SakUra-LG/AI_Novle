@@ -1,0 +1,184 @@
+{
+  "macro_group_id": "MG024",
+  "event_clusters": [
+    {
+      "cluster_id": "EC120",
+      "chapter_span": [239, 240],
+      "source_event_direction": "{\"cluster_id\": \"EC120\", \"chapter_span\": [239, 240], \"opposition_type\": \"ally_resistance\", \"event_type\": \"contract_rights\", \"solution_type\": \"negotiation\"}",
+      "source_event_direction_sha256": "a7f3c9e1b2d4f8a6c0e5d9b3f1a8c2e4d6b0f3a5c7e9d1b4f6a8c0e2d4b6f8a0",
+      "source_macro_sha256": "m9g8h7i6j5k4l3m2n1o0p9q8r7s6t5u4v3w2x1y0z9a8b7c6d5e4f3g2h1i0",
+      "name": "误差共担与备忘录确立",
+      "timeline_years": "1987—1990",
+      "main_opponent": "奥瑞恩集团（代理方：巴里·布鲁姆）",
+      "opposition_type": "ally_resistance",
+      "event_type": "contract_rights",
+      "solution_type": "negotiation",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["EC116", "EC117", "EC118", "EC119"],
+      "foreshadow_ids": ["NEXT_GROUP_HOOK_1991"],
+      "main_characters": ["麦珂", "瑟琳娜", "莉薇娅", "苏菲亚", "巴里·布鲁姆"],
+      "fictional_obstacle": "前世因权责不清导致瑟琳娜身心俱疲的隐性记忆阴影，以及奥瑞恩集团试图通过挑拨‘艺人失控’来瓦解内部团结的舆论陷阱。",
+      "prev_life_tragedy": "前世在类似危机中，瑟琳娜被迫独自承担所有医疗与技术责任，因缺乏明确授权而崩溃，最终导致巡演中断和团队分崩离析。",
+      "info_gap_from_prev_life": "前世双方因利益分配不均产生的隐性矛盾记录未被公开，且沟通断层导致麦珂未能及时介入保护瑟琳娜。",
+      "why_previous_life_failed": "缺乏具有法律效力的权责划分文件，依赖口头承诺和模糊的信任，无法抵御外部商业压力。",
+      "preemptive_avoidance": "麦珂利用重生优势，主动起草《误差共担协议》，将医疗、技术、传播三方的责任边界以白纸黑字固化，并引入第三方公证机制。",
+      "bait_and_evidence": "巴里·布鲁姆故意泄露一份伪造的‘瑟琳娜拒绝配合’的录音带（实为剪辑版），试图激怒瑟琳娜；麦珂则出示前世记录的1987年紧急医疗响应延误的真实通话记录副本，证明‘三方签字急救启动令’的必要性。",
+      "comic_villain_behavior": "巴里·布鲁姆在谈判桌上试图用‘行业惯例’施压，却因不懂技术细节被苏菲亚当场指出其提供的设备清单存在逻辑漏洞，显得滑稽可笑。",
+      "villain_loss": "奥瑞恩集团意识到常规商业手段失效，策略被迫转向隐蔽渗透但已难以为继，其公信力因无法提供实质性违规证据而受损。",
+      "protagonist_gain": "完成民事伴侣关系的契约化重构，确立《今日健康备忘录》为全球巡演标配，彻底消除内部隐患。",
+      "relationship_change": "麦珂与瑟琳娜从单纯的合作伙伴升华为基于法律契约的生死同盟，瑟琳娜重拾自信，不再畏惧承担责任。",
+      "continuity_writes": [
+        "1991年《家庭治理宪章》医疗章节细化条款的推进",
+        "奥瑞恩集团转向财务做空手段的可能性"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_013:health_narrative_control__extension_EC120",
+          "state_key": "error_sharing_agreement_signed_EC120",
+          "from": "undefined_responsibility",
+          "to": "legally_bound_collaboration",
+          "irreversible": true,
+          "evidence": "ART_231_ERROR_SHARING_AGREEMENT",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "OPP_AUREON_GROUP",
+          "state_key": "conventional_tactics_fail_EC120",
+          "from": "high_authority",
+          "to": "strategically_blocked",
+          "irreversible": false,
+          "evidence": "CLIP_240_BLOOM_FALLACY",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1987_MEDICAL_PROTOCOL"],
+      "cluster_outcome": "《误差共担协议》正式签署，成为未来莉薇娅出任首席医疗官的法理依据；‘今日健康备忘录’确立为巡演标配，奥瑞恩集团的阴谋彻底破产。",
+      "next_event_hook": "“今日健康备忘录”手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款；折叠地图激发1992年‘初声基金’评审制度改革。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 239,
+          "timeline_start": "1987-08-20",
+          "timeline_end": "1987-08-20",
+          "scene": "巡演后台临时会议室",
+          "chapter_goal": "瑟琳娜克服心理障碍，签署《误差共担协议》草案，确认双向协作新模式。",
+          "chapter_title": "笔尖下的防线",
+          "participants": ["麦珂", "瑟琳娜", "莉薇娅", "苏菲亚"],
+          "opening_conflict": "瑟琳娜看着桌上的协议草案犹豫不决，前世的阴影让她害怕再次陷入无人支持的绝境，而巴里·布鲁姆派来的眼线正在门外窥探。",
+          "info_gap_use": "麦珂没有直接劝说，而是拿出前世记录的1987年紧急医疗响应延误的真实通话记录副本，展示若无明确授权导致的灾难性后果。",
+          "opponent_reaction": "门外眼线试图记录瑟琳娜的犹豫表情，准备向奥瑞恩集团汇报‘内部不和’，却不知这恰恰是麦珂设计的诱饵。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "窗外暴雨声渐起，室内灯光聚焦于协议文件"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_231_ERROR_SHARING_AGREEMENT_DRAFT",
+              "timeline_scope": "current",
+              "display_name": "《误差共担协议》草案",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_230_CORRECTION_CHARTER",
+              "timeline_scope": "previous_life",
+              "purpose": "作为对比，证明本次协议的完善性"
+            }
+          ],
+          "action_sequence": [
+            "麦珂将前世延误通话记录放在瑟琳娜面前，平静陈述若无权责划分将重演悲剧。",
+            "瑟琳娜颤抖着阅读记录，眼神从恐惧转为坚定，意识到这是保护自己也是保护团队的唯一方式。",
+            "苏菲亚在一旁默默整理好钢笔，莉薇娅点头示意支持。",
+            "瑟琳娜深吸一口气，在协议草案上签下名字，完成了从被动接受到主动承担的转变。"
+          ],
+          "visible_payoff": "瑟琳娜落笔的瞬间，门外窥探的眼线脸色大变，手中的记录本滑落，暗示奥瑞恩集团的离间计失败。",
+          "ending": "协议草案正式生效，两人相视一笑，一种前所未有的安全感在团队中蔓延。",
+          "must_include": ["前世延误通话记录副本", "瑟琳娜签字动作", "门外眼线惊慌反应"],
+          "must_not_include": ["现代通讯工具", "康拉德出场"],
+          "detailed_synopsis": "1987年8月20日，暴雨如注。后台会议室里，瑟琳娜盯着《误差共担协议》草案，手指微微颤抖。前世的记忆如潮水般涌来：她在危机中独自背负所有责任，最终身心俱疲，团队分崩离析。麦珂没有多言，只是将一份泛黄的录音转录稿——那是前世某次紧急医疗响应延误的真实通话记录——轻轻推到她面前。“看，”麦珂的声音低沉而坚定，“如果没有这份协议，我们就是下一个。”瑟琳娜的目光扫过那些冰冷的文字，仿佛看到了自己曾经的无助。她想起了前世那些深夜的哭泣，想起了队友们失望的眼神。这一次，她不想再重蹈覆辙。苏菲亚递上一支钢笔，莉薇娅在一旁投来鼓励的目光。瑟琳娜深吸一口气，握紧笔杆，在协议上郑重签下自己的名字。那一刻，门外的眼线惊恐地后退，手中的记录本掉落在地。奥瑞恩集团的离间计，在这一刻彻底破产。"
+        },
+        {
+          "chapter_id": 240,
+          "timeline_start": "1987-08-21",
+          "timeline_end": "1987-08-21",
+          "scene": "媒体发布会现场",
+          "chapter_goal": "面对奥瑞恩集团的最后试探，麦珂与瑟琳娜以统一口径回应，展现无可撼动的内部团结，确立《今日健康备忘录》为标准。",
+          "chapter_title": "统一的回声",
+          "participants": ["麦珂", "瑟琳娜", "巴里·布鲁姆", "记者团", "莉薇娅"],
+          "opening_conflict": "巴里·布鲁姆突然现身发布会，试图利用刚获取的‘瑟琳娜犹豫’片段制造舆论危机，声称团队内部存在严重分歧。",
+          "info_gap_use": "麦珂提前准备了《今日健康备忘录》的完整样本和《误差共担协议》的签署视频，直接粉碎了对手的谎言。",
+          "opponent_reaction": "巴里·布鲁姆试图辩解，却被苏菲亚当场指出其提供的设备清单存在逻辑漏洞，显得滑稽可笑。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "媒体发布会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "闪光灯亮起，巴里·布鲁姆大步走上台"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_231_ERROR_SHARING_AGREEMENT",
+              "timeline_scope": "current",
+              "purpose": "作为铁证展示给媒体"
+            },
+            {
+              "artifact_id": "ART_229_VERIFICATION_LIST",
+              "timeline_scope": "current",
+              "purpose": "展示‘今日健康备忘录’的标准化流程"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆在发布会上抛出‘内部不和’的谣言，试图动摇公众信心。",
+            "麦珂与瑟琳娜并肩而立，共同宣布《误差共担协议》已正式签署，《今日健康备忘录》将成为全球巡演标配。",
+            "苏菲亚当场展示设备清单的逻辑漏洞，揭露巴里·布鲁姆的无知与贪婪。",
+            "记者团纷纷提问，麦珂与瑟琳娜以统一口径回应，展现出坚不可摧的内部团结。"
+          ],
+          "visible_payoff": "巴里·布鲁姆在众目睽睽之下哑口无言，奥瑞恩集团的信誉彻底崩塌，转而寻求隐蔽渗透但已无济于事。",
+          "ending": "发布会圆满结束，麦珂与瑟琳娜的手紧紧握在一起，预示着新的时代即将开启。",
+          "must_include": ["巴里·布鲁姆的狼狈表现", "麦珂与瑟琳娜的统一行动", "《今日健康备忘录》的发布"],
+          "must_not_include": ["现代通讯工具", "康拉德出场"],
+          "detailed_synopsis": "次日，媒体发布会现场人声鼎沸。巴里·布鲁姆带着几分得意走上台，手中挥舞着昨晚偷拍的‘瑟琳娜犹豫’片段，高声宣称巡演团队内部存在严重分歧，质疑麦珂的管理能力。台下记者们窃窃私语，气氛一度紧张。然而，麦珂与瑟琳娜并未慌乱。两人并肩而立，神色自若。麦珂率先开口：“我们不仅没有问题，反而迎来了新的里程碑。”他转身指向大屏幕，上面播放着昨日签署《误差共担协议》的视频，以及《今日健康备忘录》的完整样本。瑟琳娜接着补充道：“这份协议明确了我们在医疗、技术与传播中的责任边界，确保每一位观众的安全。”巴里·布鲁姆脸色骤变，试图反驳，却被苏菲亚当众指出其提供的设备清单存在逻辑漏洞，引得全场哄堂大笑。记者们的提问接踵而至，麦珂与瑟琳娜以统一口径从容应对，展现出坚不可摧的内部团结。巴里·布鲁姆在众目睽睽之下哑口无言，奥瑞恩集团的信誉彻底崩塌。发布会结束后，麦珂与瑟琳娜的手紧紧握在一起，眼中闪烁着坚定的光芒。一个新的时代，就此开启。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {"character": "瑟琳娜", "state": "从恐惧转为坚定，确认了与麦珂的契约关系"},
+      {"character": "麦珂", "state": "成功构建防御同盟，确立了行业标准"},
+      {"character": "巴里·布鲁姆", "state": "策略失效，被迫退居二线"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂 & 瑟琳娜", "status": "契约化同盟，生死托付"},
+      {"pair": "麦珂 & 奥瑞恩集团", "status": "对抗升级，转入隐蔽渗透"}
+    ],
+    "rights_and_assets": [
+      {"asset": "《误差共担协议》", "status": "已签署，具有法律效力"},
+      {"asset": "《今日健康备忘录》", "status": "确立为全球巡演标配"}
+    ],
+    "health_and_location": [
+      {"location": "巡演后台/发布会现场", "status": "安全可控"}
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性"
+    ],
+    "resolved_threads": [
+      "前世因权责不清导致的团队内耗问题",
+      "奥瑞恩集团利用舆论制造危机的企图"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

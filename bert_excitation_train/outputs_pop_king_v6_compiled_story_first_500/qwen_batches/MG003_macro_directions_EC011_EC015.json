@@ -1,0 +1,110 @@
+{
+  "macro_group_id": "MG003",
+  "event_directions": [
+    {
+      "cluster_id": "EC011",
+      "chapter_span": [
+        21,
+        22
+      ],
+      "opposition_type": "villain",
+      "event_type": "contract_rights",
+      "solution_type": "negotiation",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "乔纳以断绝生活费为要挟，逼迫麦珂签署剥夺版权的霸王条款。",
+      "unique_prev_life_info": "前世乔纳利用‘温和劝导’拖延战术，使麦珂在饥饿中被迫妥协。",
+      "preemptive_action": "麦珂提前列出拒绝话术，并让黛安娜准备好备用资金证明。",
+      "chapter_one_small_win": "乔纳试图用断供威胁时，麦珂当众展示独立生存计划表。",
+      "chapter_two_showdown": "乔纳撕毁草稿合同，麦珂冷静指出其税务漏洞作为反击筹码。",
+      "opponent_permanent_loss": "乔纳首次公开施压失败，暴露出急于求成的贪婪嘴脸。",
+      "protagonist_concrete_gain": "麦珂成功守住非签约艺人身份，获得家庭财务自主权。",
+      "irreversible_outcome_key": "乔纳谈判策略破产，家庭防线确立。",
+      "death_chain_connection": "重生后主动切断被资本裹挟的死亡链条起点。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC012",
+      "chapter_span": [
+        23,
+        24
+      ],
+      "opposition_type": "institutional",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "advance",
+      "previous_life_harm": "前世《晨光电台》删减副歌导致旋律共鸣断裂，舆论导向失控。",
+      "unique_prev_life_info": "麦珂知晓电台删减的具体段落及未来听众的共鸣痛点。",
+      "preemptive_action": "麦珂将‘三秒真空’概念融入Demo，主动联系非主流场地录制。",
+      "chapter_one_small_win": "试音现场观众自发屏息接续哼唱，形成意外口碑传播。",
+      "chapter_two_showdown": "主流媒体质疑录音质量，麦珂公布原始手稿与观众反应记录。",
+      "opponent_permanent_loss": "媒体封锁渠道失效，乔纳无法通过控制舆论抹黑作品。",
+      "protagonist_concrete_gain": "《纸船纪》核心旋律确立独立艺术价值，获得行业初步关注。",
+      "irreversible_outcome_key": "舆论风向逆转，独立创作模式获认可。",
+      "death_chain_connection": "打破舆论垄断，重建声音主权。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC013",
+      "chapter_span": [
+        25,
+        26
+      ],
+      "opposition_type": "ally_resistance",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "reveal",
+      "previous_life_harm": "前世黛安娜仅做记录者，未能阻止乔纳转移家庭资产。",
+      "unique_prev_life_info": "麦珂清楚维克多·兰斯利用未成年合约避税的潜规则细节。",
+      "preemptive_action": "麦珂引导黛安娜收集乔纳过往账目异常线索，准备审计材料。",
+      "chapter_one_small_win": "黛安娜发现一笔可疑转账，立即冻结相关账户并通知律师。",
+      "chapter_two_showdown": "乔纳试图销毁账本，玛莎当场出示公证过的备份文件。",
+      "opponent_permanent_loss": "乔纳失去对家庭资金的完全控制权，面临税务调查风险。",
+      "protagonist_concrete_gain": "家庭资金链由黛安娜接管，法律防线彻底加固。",
+      "irreversible_outcome_key": "财务审计启动，乔纳经济命脉被切断。",
+      "death_chain_connection": "终结财务被操控的死亡路径。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC014",
+      "chapter_span": [
+        27,
+        28
+      ],
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "echo",
+      "previous_life_harm": "前世因缺乏技术支持，录音效果粗糙，错失关键合作机会。",
+      "unique_prev_life_info": "麦珂掌握昆廷·琼斯对艺术坚持的偏好，知晓其技术短板。",
+      "preemptive_action": "麦珂带着‘三秒真空’概念直接拜访驻场编曲师，提出非商业合作。",
+      "chapter_one_small_win": "驻场编曲师被创意打动，同意提供技术支持并加入创作团队。",
+      "chapter_two_showdown": "乔纳试图挖角驻场编曲师，麦珂展示已完成的母带所有权协议。",
+      "opponent_permanent_loss": "乔纳无法再干预录音制作，技术主导权彻底旁落。",
+      "protagonist_concrete_gain": "驻场编曲师正式加入，专辑母带质量达到行业标准以上。",
+      "irreversible_outcome_key": "技术团队锁定，母带归属权确立。",
+      "death_chain_connection": "确保艺术成果不被资本篡改。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC015",
+      "chapter_span": [
+        29,
+        30
+      ],
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "前世乔纳撕毁合同时情绪崩溃，却未留下任何公开证据。",
+      "unique_prev_life_info": "麦珂预见乔纳撕毁合同的瞬间心理弱点，提前布置媒体记录。",
+      "preemptive_action": "麦珂安排记者在谈判现场待命，准备记录乔纳失控瞬间。",
+      "chapter_one_small_win": "乔纳撕毁合同，媒体拍下其愤怒表情与税务违规文件。",
+      "chapter_two_showdown": "乔纳试图掩盖丑闻，麦珂公开曝光其税务违规证据链。",
+      "opponent_permanent_loss": "乔纳因税务丑闻被迫退出项目，权威彻底崩塌。",
+      "protagonist_concrete_gain": "麦珂确立独立制作人身份，获得行业广泛尊重。",
+      "irreversible_outcome_key": "乔纳退出主导权，麦珂完全掌控《纸船纪》。",
+      "death_chain_connection": "将仇敌的阴谋转化为公审现场。",
+      "direction": ""
+    }
+  ]
+}

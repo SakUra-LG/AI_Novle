@@ -1,0 +1,17 @@
+{
+  "cluster_id": "EC006",
+  "review_round": 1,
+  "reviewed_chapters": [11, 12],
+  "reviewer": "codex_batch_spot_check_full_text",
+  "decision": "regenerate_chapter_12_reuse_qwen_chapter_11",
+  "body_manually_edited": false,
+  "strengths": [
+    "第11章完成玛莎持钢印声明、建立监护人通道和埃德加文书信任链",
+    "维克多电话咆哮漏音的滑稽行为已转化为可存档把柄"
+  ],
+  "actual_failures": [
+    "第12章在1969年写出‘手机屏幕亮起’，构成明确年代冲突",
+    "第12章把章卡原有的偏头痛送医结尾扩写得过重，并用手机呈现通知，造成年代冲突和转场失衡"
+  ],
+  "required_action": "增加1970年代以前移动/互联网技术检查，限制医疗细节只服务于章卡既定送医结尾；保留Qwen原文第11章，仅重生成第12章。"
+}

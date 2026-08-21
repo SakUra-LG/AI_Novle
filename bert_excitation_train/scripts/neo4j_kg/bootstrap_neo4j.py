@@ -19,6 +19,9 @@ CONSTRAINTS = [
     "CREATE CONSTRAINT unique_plot_thread_id IF NOT EXISTS FOR (t:PlotThread) REQUIRE t.id IS UNIQUE",
     "CREATE CONSTRAINT unique_plot_thread_signal_id IF NOT EXISTS FOR (s:PlotThreadSignal) REQUIRE s.id IS UNIQUE",
     "CREATE CONSTRAINT unique_plot_cluster_id IF NOT EXISTS FOR (p:PlotCluster) REQUIRE p.id IS UNIQUE",
+    "CREATE CONSTRAINT unique_life_phase_id IF NOT EXISTS FOR (p:LifePhase) REQUIRE p.id IS UNIQUE",
+    "CREATE CONSTRAINT unique_story_block_id IF NOT EXISTS FOR (p:StoryBlock) REQUIRE p.id IS UNIQUE",
+    "CREATE CONSTRAINT unique_macro_group_id IF NOT EXISTS FOR (p:MacroGroup) REQUIRE p.id IS UNIQUE",
 ]
 
 INDEXES = [
@@ -37,6 +40,8 @@ INDEXES = [
     "CREATE INDEX relation_fact_chapter_idx IF NOT EXISTS FOR (r:RelationFact) ON (r.source_chapter)",
     "CREATE INDEX plot_thread_status_idx IF NOT EXISTS FOR (t:PlotThread) ON (t.status)",
     "CREATE INDEX plot_cluster_span_idx IF NOT EXISTS FOR (p:PlotCluster) ON (p.start_chapter, p.end_chapter)",
+    "CREATE INDEX story_block_span_idx IF NOT EXISTS FOR (p:StoryBlock) ON (p.start_chapter, p.end_chapter)",
+    "CREATE INDEX macro_group_span_idx IF NOT EXISTS FOR (p:MacroGroup) ON (p.start_chapter, p.end_chapter)",
 ]
 
 

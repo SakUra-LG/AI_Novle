@@ -1,0 +1,276 @@
+{
+  "macro_group_id": "MG022",
+  "event_clusters": [
+    {
+      "cluster_id": "EC110",
+      "chapter_span": [
+        219,
+        220
+      ],
+      "source_event_direction": "前世具体受害：前世玛莎因缺乏法律授权无法有效阻止外部医疗干预，家族守护者身份被动。；本事件独有的前世信息差：前世玛莎在关键时刻被边缘化的具体场景与对话记录。；今生提前动作：麦珂将七名即将被清洗的后台人员任务承诺写入观众入场券背面。；第219章可见小赢：玛莎晋升为健康备忘录联合签署人，其手签具有法律效力。；第220章新交锋：面对外部医疗干预压力，玛莎持手签备忘录直接否决不当方案。；阻力方永久现实损失：外部势力无法再通过行政手段绕过家族内部的法律制衡机制。；主角现实收益：玛莎成为家族守护者，麦珂确立全球巡演新标准并获得法律层面支持。；不可逆结算键：玛莎手签备忘录具备对抗外部干预的法律效力；接回死亡控制主线：避免前世因家族保护失效导致的孤立无援",
+      "source_event_direction_sha256": "dce8de50ba2facd2823297edf3cbf8029277db57748d4f5ecbbec66389a9ca6c",
+      "source_macro_sha256": "0b5abdad4c1d3fb0472c3c5d6c48da8cf63b5ede6148b5f202c4a2b563afa823",
+      "name": "健康备忘录的签署与家族守护权的确立",
+      "timeline_years": "1987—1988",
+      "main_opponent": "星港市卫生局行政干预组（奥瑞恩集团代理人）",
+      "opposition_type": "ally_resistance",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "玛莎",
+        "莉薇娅",
+        "奥瑞恩法务代表陈默",
+        "星港卫生局长官"
+      ],
+      "fictional_obstacle": "外部医疗势力以‘艺人突发心律不齐需强制隔离’为由，试图绕过家属直接接管麦珂并切断其与团队联系，玛莎因无法律授权被拒之门外。",
+      "prev_life_tragedy": "前世玛莎在后台被保安强行推开，眼睁睁看着麦珂被带走进行非自愿检查，导致麦珂病情恶化，家族声誉扫地。",
+      "info_gap_from_prev_life": "麦珂记得前世玛莎被推搡时那句‘你只是保姆，没有签字权’的具体对话，以及当时现场唯一的见证人（一名奥瑞恩线人）的编号。",
+      "why_previous_life_failed": "缺乏具有法律效力的书面契约支撑，仅靠口头亲情无法对抗行政命令。",
+      "preemptive_avoidance": "麦珂提前将七名即将被清洗的后台人员任务承诺写入观众入场券背面，使其成为现场监督者，同时让瑟琳娜将《今日健康备忘录》打印为正式法律文书并公证。",
+      "bait_and_evidence": "陈默故意夸大麦珂病情，诱导麦珂在公众面前表现出虚弱，诱使卫生局长官当场下达‘强制送医令’；证据为玛莎手中盖有公证处印章、莉薇娅与麦珂三方手签的《今日健康备忘录》原件，以及七名后台监督者的联名证词。",
+      "comic_villain_behavior": "陈默在出示伪造的‘紧急医疗报告’时，因紧张将色带夹在文件里，被苏菲亚当场指出是奥瑞恩内部专用打印机型号，且墨迹未干，暴露其伪造行为滑稽可笑。",
+      "villain_loss": "外部势力无法再通过行政手段绕过家族内部的法律制衡机制，奥瑞恩被迫承认无权单方面处置艺人健康事务，陈默因伪造公文被吊销执业资格。",
+      "protagonist_gain": "玛莎成为家族守护者，麦珂确立全球巡演新标准并获得法律层面支持，获得‘随机座次’系统独家使用权及‘健康备忘录’的全球推广权。",
+      "relationship_change": "麦珂与团队形成利益共同体，奥瑞恩集团被剥离对艺人的单方面解释权，观众与艺人建立基于安全的新型契约关系。",
+      "continuity_writes": [
+        "承接EC109中光学透镜校准证书确立的免责基础，将技术安全延伸至医疗决策安全。",
+        "呼应EC107中敌情图谱绘制，将玛莎纳入核心造假人员监控名单之外，转为保护者。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MARSHA_01",
+          "state_key": "medical_decision_authority_status",
+          "from": "informal_family_member",
+          "to": "legally_binding_co_signatory",
+          "irreversible": true,
+          "evidence": "ART_219_HEALTH_MEMO_CERTIFIED",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "character",
+          "entity_id": "CHAR_MARSHA_01",
+          "state_key": "guardian_role_status",
+          "from": "passive_observer",
+          "to": "active_family_protector",
+          "irreversible": true,
+          "evidence": "ART_220_PUBLIC_VETO_RECORD",
+          "effect_type": "relationship_change"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_ORION_POWER_01",
+          "state_key": "unilateral_medical_intervention_right",
+          "from": "active_threat",
+          "to": "legally_prohibited",
+          "irreversible": true,
+          "evidence": "ART_220_ADMINISTRATIVE_FAILURE_LOG",
+          "effect_type": "villain_loss",
+          "source_state_key": "administrative_override_power"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1987_STARPORT_MEDICAL_REGULATION"
+      ],
+      "cluster_outcome": "玛莎凭借手签备忘录成功否决外部不当医疗方案，确立家族对艺人健康的绝对控制权，奥瑞恩失去行政干预借口，麦珂巡演标准升级。",
+      "next_event_hook": "‘今日健康备忘录’手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款，迫使奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 219,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "后台医疗隔离区",
+          "chapter_goal": "完成《今日健康备忘录》的公证签署，确立玛莎的联合签署人身份，构建法律防线。",
+          "chapter_title": "笔尖下的守护权",
+          "participants": [
+            "麦珂",
+            "玛莎",
+            "莉薇娅",
+            "瑟琳娜",
+            "公证员",
+            "七名后台监督者"
+          ],
+          "opening_conflict": "奥瑞恩代理人陈默企图以‘设备调试延误’为由拖延时间，等待卫生局强制介入，麦珂需在演出前一刻完成所有法律文件的签署。",
+          "info_gap_use": "麦珂利用前世记忆，提前安排公证员和七名关键后台人员在场，确保签署过程无可抵赖。",
+          "opponent_reaction": "陈默试图以‘流程违规’叫停签署，声称需要上级审批，实则拖延时间。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台医疗隔离区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂从怀中掏出已公证的备忘录，朗声宣读条款。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_219_HEALTH_MEMO_CERTIFIED",
+              "timeline_scope": "current",
+              "display_name": "经公证的《今日健康备忘录》原件",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_209_OPEN_SOURCE_DECREE",
+              "timeline_scope": "current",
+              "purpose": "作为备忘录签署的法律依据和开源宣言背景。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂当众展示七名后台监督者的入场券背面承诺卡，证明全员知情并同意执行备忘录。",
+            "莉薇娅作为医疗负责人率先在手签栏签字，确认急救启动权归属。",
+            "玛莎在公证员见证下，以家族监护人身份郑重签下名字，声明拥有最终否决权。",
+            "瑟琳娜将签署过程通过磁带录音并封存，作为后续法律纠纷的铁证。",
+            "陈默见势不妙，试图抢夺文件，被安保人员制止。"
+          ],
+          "visible_payoff": "玛莎的名字首次出现在具有法律效力的医疗文件中，不再是幕后模糊的亲属，而是明确的共同决策者。",
+          "ending": "签署完成，文件一式三份分存于麦珂、玛莎和公证处，陈默被迫暂时退却，但眼神阴鸷。",
+          "must_include": [
+            "玛莎手签动作特写",
+            "公证员盖章音效",
+            "七名后台人员的站姿宣誓"
+          ],
+          "must_not_include": [
+            "现代通讯工具",
+            "互联网概念",
+            "未来科技词汇"
+          ],
+          "detailed_synopsis": "1987年11月14日上午，星港演唱会后台气氛凝重。麦珂深知前世玛莎因无签字权而被挡在外面的惨剧，因此提前布局。他召集了瑟琳娜、莉薇娅及七名关键后台人员，在公证员到场后，迅速展开《今日健康备忘录》的签署仪式。陈默带着奥瑞恩的拖延战术赶来，试图以‘未经董事会批准’为由阻挠，却被麦珂亮出的入场券背面承诺卡打脸——那上面印着七名员工的真实姓名和手印，他们既是员工也是监督者。麦珂高声宣读备忘录条款：任何医疗干预必须经由麦珂、玛莎、莉薇娅三方签字方可生效。莉薇娅率先落笔，随后玛莎在公证员的注视下，颤抖却坚定地签下名字。随着公证员盖上鲜红的钢印，这份文件瞬间具备了法律效力。瑟琳娜在一旁用老式磁带机完整记录下这一时刻。陈默脸色铁青，意识到奥瑞恩失去了单方面行动的能力，但他并未放弃，只是暂时收敛了锋芒，准备在演出高潮时发动更猛烈的反击。"
+        },
+        {
+          "chapter_id": 220,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "主舞台医疗应急通道口",
+          "chapter_goal": "面对突发‘假性’医疗危机，玛莎持手签备忘录直接否决外部干预，彻底粉碎奥瑞恩的行政控制企图。",
+          "chapter_title": "否决权与家族的胜利",
+          "participants": [
+            "玛莎",
+            "麦珂",
+            "陈默",
+            "星港卫生局长官",
+            "现场观众",
+            "七名后台监督者"
+          ],
+          "opening_conflict": "演出中段，陈默联合卫生局长官突然闯入，声称麦珂出现严重心律失常，要求立即强制送医，无视玛莎手中的备忘录。",
+          "info_gap_use": "麦珂利用前世预知，提前将七名后台人员分散至各通道，形成物理封锁，并安排苏菲亚在侧方取证。",
+          "opponent_reaction": "陈默试图以‘生命至上’的道德绑架压制玛莎，甚至动手推搡，被七名监督者合力拦下。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主舞台医疗应急通道口",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "陈默高举伪造的医疗报告，大声疾呼‘救人第一’。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_219_HEALTH_MEMO_CERTIFIED",
+              "timeline_scope": "current",
+              "purpose": "作为玛莎行使否决权的唯一法律依据。"
+            }
+          ],
+          "action_sequence": [
+            "演出进行中，陈默突然大喊麦珂晕倒，引来卫生局长官带队冲入通道。",
+            "长官不顾麦珂实际状态良好，下令抬走麦珂，玛莎挺身而出挡在担架前。",
+            "玛莎高举《今日健康备忘录》，朗声引用条款，指出对方无权单方面执行。",
+            "陈默恼羞成怒，撕毁部分文件并指责玛莎阻碍救治，被苏菲亚当场指出其携带的色带型号与伪造文件一致。",
+            "七名后台监督者集体上前，展示入场券背面的承诺，证明他们是合法的安全协作者，有权阻止非法干预。",
+            "卫生局长官在铁证面前被迫撤回命令，陈默因伪造公文被当场控制。"
+          ],
+          "visible_payoff": "玛莎成功阻止了外部势力的强制干预，确立了家族守护者的不可动摇地位，全场观众起立致敬。",
+          "ending": "危机解除，麦珂继续完成演出，玛莎站在舞台一侧，目光坚定，奥瑞恩的行政控制链彻底断裂。",
+          "must_include": [
+            "玛莎高举备忘录的特写",
+            "陈默被色带证据揭穿的窘态",
+            "七名后台人员的集体阻拦"
+          ],
+          "must_not_include": [
+            "手机报警",
+            "网络直播",
+            "公众媒体舆论"
+          ],
+          "detailed_synopsis": "演出中段，陈默联合卫生局长官突然闯入，声称麦珂出现严重心律失常，要求立即强制送医，无视玛莎手中的备忘录。演出进行中，陈默突然大喊麦珂晕倒，引来卫生局长官带队冲入通道。长官不顾麦珂实际状态良好，下令抬走麦珂，玛莎挺身而出挡在担架前。玛莎高举《今日健康备忘录》，朗声引用条款，指出对方无权单方面执行。陈默恼羞成怒，撕毁部分文件并指责玛莎阻碍救治，被苏菲亚当场指出其携带的色带型号与伪造文件一。玛莎成功阻止了外部势力的强制干预，确立了家族守护者的不可动摇地位，全场观众起立致敬。危机解除，麦珂继续完成演出，玛莎站在舞台一侧，目光坚定，奥瑞恩的行政控制链彻底断裂。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_208_MICROFILM_BACKUP",
+              "timeline_scope": "previous_life",
+              "purpose": "苏菲亚调取的前世录音备份，用于对比陈默此刻的言行。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {
+        "entity_id": "CHAR_MARSHA_01",
+        "state": "Legally binding co-signatory and active family protector"
+      },
+      {
+        "entity_id": "CHAR_LIVIA_01",
+        "state": "Established as the primary executor of the tripartite medical emergency order"
+      },
+      {
+        "entity_id": "CHAR_SERENA_01",
+        "state": "Public technical partner with control over backup lighting systems"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entities": [
+          "Ma Ke",
+          "Team"
+        ],
+        "status": "Unified interest community with legal health safeguards"
+      },
+      {
+        "entities": [
+          "Orion Group",
+          "Artist"
+        ],
+        "status": "Orion stripped of unilateral interpretation rights"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "RIGHT_HEALTH_MEMO_GLOBAL",
+        "status": "Exclusive usage rights secured for Ma Ke's global tour"
+      },
+      {
+        "entity_id": "RIGHT_ORION_INTERVENTION",
+        "status": "Legally prohibited for Orion to intervene unilaterally"
+      }
+    ],
+    "health_and_location": [
+      {
+        "status": "Standardized emergency response mechanism established, zero incidents on site"
+      },
+      {
+        "location": "Star Port Concert Hall"
+      }
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性"
+    ],
+    "resolved_threads": [
+      "玛莎因缺乏法律授权被边缘化的历史悲剧已被彻底改写"
+    ],
+    "introduced_characters": [
+      "七名被写入承诺卡的后台监督者（作为群体角色）"
+    ],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

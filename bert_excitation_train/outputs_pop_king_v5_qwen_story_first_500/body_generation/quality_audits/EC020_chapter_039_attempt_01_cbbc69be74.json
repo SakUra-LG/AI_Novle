@@ -1,0 +1,39 @@
+{
+  "cluster_id": "EC020",
+  "chapter_id": 39,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "cbbc69be74b18f8cbffca0d6aae93bf39e0c97fa51a58544c1660c535fc4f7ea",
+  "raw_response_sha256": "6badd452b3c60e50b5ee22ffb4a109ec2b0e4a9aab95dc7fa1f06cabc77f3282",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 26.705,
+    "usage": {
+      "input_tokens": 5798,
+      "output_tokens": 1242,
+      "total_tokens": 7040,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "chapter_audit": {
+    "han_chars": 1274,
+    "total_chars": 1606,
+    "target_han_range": [
+      1300,
+      1800
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "failures": [
+      "ChronoBadge在8月启用却被写成5月22日照片"
+    ]
+  },
+  "failures": [
+    "ChronoBadge在8月启用却被写成5月22日照片"
+  ],
+  "accepted": false
+}

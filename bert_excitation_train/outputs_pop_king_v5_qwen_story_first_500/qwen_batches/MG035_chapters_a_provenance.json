@@ -1,0 +1,54 @@
+{
+  "generated_by": "qwen",
+  "kind": "chapters_a",
+  "identifier": "MG035",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "2a108d26de635d2303e69e55f30c37f9335354e8f0fd7f28c19ac6353b1c8419",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-11T09:33:46+08:00",
+      "prompt_sha256": "2a108d26de635d2303e69e55f30c37f9335354e8f0fd7f28c19ac6353b1c8419",
+      "raw_response_sha256": "fc1f0abb4940ea7bc6a1d11481a9dae4add0b904a03e2f40f98253061550ca6b",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG035_chapters_a_attempt_01_raw.txt",
+      "validation_failures": [
+        "第341章年代技术错误：当前年代不得出现“上传”",
+        "第341章年代技术错误：当前年代不得出现“手机”",
+        "第342章年代技术错误：当前年代不得出现“邮箱”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 94.612,
+      "usage": {
+        "input_tokens": 17180,
+        "output_tokens": 5589,
+        "total_tokens": 22769,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-11T09:35:12+08:00",
+      "prompt_sha256": "fc0c31ca15c72e136724cc04c5f28931cdc9abbcb137b20e8d5a88fe4b5c2d10",
+      "raw_response_sha256": "ed0764d2312106428f006630c3de168ebf20451506bba578ebf6f39a91fc812a",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG035_chapters_a_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 85.996,
+      "usage": {
+        "input_tokens": 22882,
+        "output_tokens": 5598,
+        "total_tokens": 28480,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

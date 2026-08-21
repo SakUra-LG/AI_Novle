@@ -1,0 +1,271 @@
+[
+  {
+    "unit_index": 1,
+    "unit_count": 6,
+    "dramatic_function": "风险与人在场",
+    "objective": "先写既定安全验证为什么必须在真人进入风险前完成。",
+    "locked_facts": [
+      "当前允许载体：等重沙袋、升降台"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "麦珂·杰森"
+    ],
+    "allowed_carriers": [
+      "等重沙袋",
+      "升降台"
+    ],
+    "required_carriers": [
+      "等重沙袋",
+      "升降台"
+    ],
+    "all_chapter_carriers": [
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "required_semantic_anchors": [
+      "升降",
+      "沙袋",
+      "等重沙袋",
+      "升降台"
+    ],
+    "memory_allowed": false,
+    "result_allowed": false,
+    "functional_decision_required": false,
+    "target_min_chars": 266,
+    "target_max_chars": 296,
+    "paragraph_mode": "用具体风险切入，不作工程说明",
+    "scene_archetype": "physical_safety_validation"
+  },
+  {
+    "unit_index": 2,
+    "unit_count": 6,
+    "dramatic_function": "主角抢先改变条件",
+    "objective": "让主角在真人进入风险前改变验证条件并锁定谁能叫停。",
+    "locked_facts": [
+      "要求升降台先用等重沙袋完成三轮空载验收",
+      "当前允许载体：等重沙袋、升降台"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "麦珂·杰森"
+    ],
+    "allowed_carriers": [
+      "等重沙袋",
+      "升降台"
+    ],
+    "required_carriers": [
+      "等重沙袋",
+      "升降台"
+    ],
+    "all_chapter_carriers": [
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "required_semantic_anchors": [
+      "升降",
+      "沙袋",
+      "等重沙袋",
+      "升降台"
+    ],
+    "memory_allowed": true,
+    "result_allowed": false,
+    "functional_decision_required": false,
+    "target_min_chars": 279,
+    "target_max_chars": 311,
+    "paragraph_mode": "行动与短对白交替",
+    "scene_archetype": "physical_safety_validation"
+  },
+  {
+    "unit_index": 3,
+    "unit_count": 6,
+    "dramatic_function": "对手越过流程",
+    "objective": "对手以进度或功劳为由越过流程，并亲手执行里程碑规定的冒险动作。",
+    "locked_facts": [
+      "卡尔嫌安全流程耽误彩排，抢过控制器按下他私改的快捷程序",
+      "当前允许载体：等重沙袋、升降台、控制器"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "卡尔·霍尔特"
+    ],
+    "allowed_carriers": [
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "required_carriers": [
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "all_chapter_carriers": [
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "required_semantic_anchors": [
+      "安全",
+      "升降",
+      "沙袋",
+      "等重沙袋",
+      "控制器",
+      "升降台"
+    ],
+    "memory_allowed": false,
+    "result_allowed": false,
+    "functional_decision_required": false,
+    "target_min_chars": 332,
+    "target_max_chars": 370,
+    "paragraph_mode": "对手选择展开，设备只写到可见动作",
+    "scene_archetype": "physical_safety_validation"
+  },
+  {
+    "unit_index": 4,
+    "unit_count": 6,
+    "dramatic_function": "风险形成可见证明",
+    "objective": "只写里程碑已经锁定的可见风险结果，不追加第二起事故，也不提前叫停或结算。",
+    "locked_facts": [
+      "沙袋提前十秒坠下",
+      "当前允许载体：等重沙袋、升降台、控制器"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "卡尔·霍尔特",
+      "麦珂·杰森"
+    ],
+    "allowed_carriers": [
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "required_carriers": [
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "all_chapter_carriers": [
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "required_semantic_anchors": [
+      "升降",
+      "沙袋",
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "memory_allowed": false,
+    "result_allowed": false,
+    "functional_decision_required": false,
+    "target_min_chars": 319,
+    "target_max_chars": 355,
+    "paragraph_mode": "一个连续动作段，禁止追加第二起事故",
+    "scene_archetype": "physical_safety_validation"
+  },
+  {
+    "unit_index": 5,
+    "unit_count": 6,
+    "dramatic_function": "叫停与判断改变",
+    "objective": "主角立即叫停风险，有权者确认对手越过流程；只推进到判断成立，不提前写最终职务或安全权限结果。",
+    "locked_facts": [
+      "麦珂当场叫停真人登台",
+      "当前允许载体：等重沙袋、升降台、控制器"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "麦珂·杰森"
+    ],
+    "allowed_carriers": [
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "required_carriers": [
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "all_chapter_carriers": [
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "required_semantic_anchors": [
+      "升降",
+      "沙袋",
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "memory_allowed": false,
+    "result_allowed": false,
+    "functional_decision_required": true,
+    "target_min_chars": 305,
+    "target_max_chars": 341,
+    "paragraph_mode": "叫停和判断紧密相连",
+    "scene_archetype": "physical_safety_validation"
+  },
+  {
+    "unit_index": 6,
+    "unit_count": 6,
+    "dramatic_function": "安全结果与权力收束",
+    "objective": "只以人员安全已经保住及对手当下反应收束，不追加第二起事故或下一章的权限处分。",
+    "locked_facts": [
+      "保住所有舞者安全",
+      "当前允许载体：等重沙袋、升降台、控制器"
+    ],
+    "allowed_cast": [
+      "麦珂·杰森",
+      "卡尔·霍尔特"
+    ],
+    "required_actors": [
+      "卡尔·霍尔特",
+      "麦珂·杰森"
+    ],
+    "allowed_carriers": [
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "required_carriers": [],
+    "all_chapter_carriers": [
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "required_semantic_anchors": [
+      "安全",
+      "升降",
+      "沙袋",
+      "等重沙袋",
+      "升降台",
+      "控制器"
+    ],
+    "memory_allowed": false,
+    "result_allowed": true,
+    "functional_decision_required": true,
+    "target_min_chars": 239,
+    "target_max_chars": 267,
+    "paragraph_mode": "人员安全与权力损失落地后立即结束",
+    "scene_archetype": "physical_safety_validation"
+  }
+]

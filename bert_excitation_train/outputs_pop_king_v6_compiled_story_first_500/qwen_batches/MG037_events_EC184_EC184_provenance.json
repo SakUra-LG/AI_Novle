@@ -1,0 +1,77 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC184_EC184",
+  "identifier": "MG037",
+  "accepted_attempt": "04",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "base_prompt_sha256": "9d4e10a8e570cc85eda137f5477c722f5e4577c76e84344081b4f4b4c9f04e76",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-21T10:21:13+08:00",
+      "prompt_sha256": "9d4e10a8e570cc85eda137f5477c722f5e4577c76e84344081b4f4b4c9f04e76",
+      "raw_response_sha256": "1780344b8b3ec67370e7cb889dfadc674dc03f0cfadb8d355cc3f3bce5b18ef1",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG037_events_EC184_EC184_attempt_01_9d4e10a8e5_raw.txt",
+      "validation_failures": [
+        "EC184提前消费后续事件的逮捕/刑事带走结算；当前父级方向未授权该结果",
+        "EC184提前消费后续事件的资产冻结结算；当前父级方向未授权该结果"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 24.566,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-21T10:21:46+08:00",
+      "prompt_sha256": "9b4c42d628505544cbf2fae2e330ca2229e3d21e256cdf6582801fcbc2339302",
+      "raw_response_sha256": "65309b47fc2c276f83d99b717e7d38cd6c9327459a7134f1ed8776440fb04b86",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG037_events_EC184_EC184_attempt_02_9d4e10a8e5_raw.txt",
+      "validation_failures": [
+        "EC184提前消费后续事件的法院查封/冻结令结算；当前父级方向未授权该结果",
+        "EC184提前消费后续事件的资产冻结结算；当前父级方向未授权该结果"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 32.271,
+      "usage": {}
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-21T10:22:15+08:00",
+      "prompt_sha256": "5cc5c476db69a178fe36071ecd16e81f19df936afcfe14b7e70a7c6ff27991ca",
+      "raw_response_sha256": "4352330e6d1bf821a93921121f42cc77bdad653d77506c4be8f76c5d2fe4fd7c",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG037_events_EC184_EC184_attempt_03_9d4e10a8e5_raw.txt",
+      "validation_failures": [
+        "EC184提前消费后续事件的资产冻结结算；当前父级方向未授权该结果"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 29.056,
+      "usage": {}
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-21T10:22:45+08:00",
+      "prompt_sha256": "43c82f7a0d36feea02512069322ee7df3f685bce1092dcbd37834a0813531ead",
+      "raw_response_sha256": "bf1122d864d0381f73f317fc5636c723381f4add08a9d005d8bf1b37429c01bf",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG037_events_EC184_EC184_attempt_04_9d4e10a8e5_raw.txt",
+      "validation_failures": [
+        "EC184提前消费后续事件的资产冻结结算；当前父级方向未授权该结果"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 30.059,
+      "usage": {}
+    }
+  ]
+}

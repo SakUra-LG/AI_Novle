@@ -1,0 +1,22 @@
+{
+  "chapter": 10,
+  "generation_try": 1,
+  "chars": 1521,
+  "sha256": "4037c91089daf8cbeee3bd4a9f0a68e7d69fde47ce170a270b4c860f934b6128",
+  "review": {
+    "accept": true,
+    "model_accept": true,
+    "scores": {
+      "cluster_fidelity": 10.0,
+      "causal_clarity": 10.0,
+      "prose_naturalness": 9.0,
+      "emotional_force": 10.0,
+      "non_repetition": 10.0,
+      "ending_precision": 10.0,
+      "fictional_naming": 10.0
+    },
+    "low_scores": {},
+    "hard_failures": [],
+    "summary": "第10章完整闭环交付策略全部里程碑：行动、反卡、权责变更均按因果链自然发生，证据载体严格限于契约清单，结果宣布主体清晰、生效逻辑自洽，结尾停驻于已落地的权力结构与人物静默反应，无硬伤、无越界、无生成腔。"
+  }
+}

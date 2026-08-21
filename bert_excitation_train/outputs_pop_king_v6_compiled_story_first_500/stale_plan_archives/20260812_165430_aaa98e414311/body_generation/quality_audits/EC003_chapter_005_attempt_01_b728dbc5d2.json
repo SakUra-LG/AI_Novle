@@ -1,0 +1,81 @@
+{
+  "cluster_id": "EC003",
+  "chapter_id": 5,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "b728dbc5d260218ca5e88907dcbbffe973c294b49f0e7f24e298b59f2119fdc0",
+  "base_prompt_sha256": "b728dbc5d260218ca5e88907dcbbffe973c294b49f0e7f24e298b59f2119fdc0",
+  "body_generator_contract_version": "v6_prompt_chain_semantic_critic_20260812",
+  "raw_response_sha256": "40c7dc377ceca52b1665d2d386b0859d2874b17d912949f9d513fa0f83737c56",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 24.568,
+    "usage": {
+      "input_tokens": 4170,
+      "output_tokens": 1059,
+      "total_tokens": 5229,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      }
+    }
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 3,
+    "through_chapter": 6,
+    "outline_sha256": "aaa98e4143115d54ee43409b902500c9aadf34c074241342c2d994bf120c214f",
+    "event_prefix_sha256": "0201b51d1299846d355620b84e2255cb923e17be536e3bf6559f56bdfef6fa55",
+    "chapter_card_prefix_sha256": "e78091d0ce0b095a1e3fb0fce4bb7c22bfdb5b7a9b82de2bbe0d4df6fd817a73",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "a2321c0c57965b9a8c0ef59e3e74df3c369eafaa57025d2c3d1bfbee46a7eb7b"
+  },
+  "cluster_sha256": "23de551a694b3c2db03a69eccca4d287cdd69cac072e002f49dd6bc9d91a654d",
+  "card_sha256": "4fc8e4313622a0f6fe254f98d414dc8d7f96bee724f374ab9cd554f91b936cdd",
+  "chapter_audit": {
+    "han_chars": 1133,
+    "total_chars": 1318,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 1,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0423,
+    "scene_evidence": [
+      {
+        "location": "星穹试镜中心化妆间",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_IMAGE_ANCHOR_001",
+        "display_name": "驼色毛衣左袖口磨损样本",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文未落到规划场景“星穹试镜中心化妆间”",
+      "正文没有写出本章正式创建的关键对象“驼色毛衣左袖口磨损样本”"
+    ]
+  },
+  "failures": [
+    "正文未落到规划场景“星穹试镜中心化妆间”",
+    "正文没有写出本章正式创建的关键对象“驼色毛衣左袖口磨损样本”"
+  ],
+  "accepted": false
+}

@@ -1,0 +1,24 @@
+{
+  "macro_group_id": "MG001",
+   "event_directions": [
+      {
+         "cluster_id": "EC005",
+         "chapter_span": [9, 10],
+         "opposition_type": "villain",
+         "event_type": "media_reputation",
+         "solution_type": "media_counter",
+         "death_chain_role": "advance",
+         "previous_life_harm": "前世宣传人用预设提问和断章引语把麦珂包装成傀儡",
+         "unique_prev_life_info": "1969年11月23日《晨光电台》试镜后台，麦珂记得开场问题‘你准备好成为明星吗？’",
+         "preemptive_action": "麦珂通过同期电台、报纸或电视的完整回答反制宣传人",
+         "chapter_one_small_win": "第9章麦珂通过记忆中的回答反驳宣传人，获得小赢",
+         "chapter_two_showdown": "第10章麦珂在电台现场面对宣传人，展开新动作的交锋",
+         "opponent_permanent_loss": "宣传人失去独家发言权，麦珂取得公开表达空间",
+         "protagonist_concrete_gain": "麦珂获得电台现场的公开表达空间和认可",
+         "irreversible_outcome_key": "麦珂的反制成功",
+         "death_chain_connection": "削弱2009年死亡背后的保险、版权、医疗或控制体系",
+         "direction": "",
+         "locked_story_brief": "前世宣传人用预设提问和断章引语把麦珂包装成傀儡，今生他记得开场问题与刊发时点，通过同期电台、报纸或电视的完整回答反制；宣传人失去独家发言权，麦珂取得公开表达空间"
+      }
+   ]
+}

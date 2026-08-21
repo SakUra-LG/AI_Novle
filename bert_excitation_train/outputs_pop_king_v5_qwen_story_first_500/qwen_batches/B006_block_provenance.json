@@ -1,0 +1,78 @@
+{
+  "generated_by": "qwen",
+  "kind": "block",
+  "identifier": "B006",
+  "accepted_attempt": "03",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "base_prompt_sha256": "2af99ccf8e1bfefc48128d16ef8d83d23f2a262198b97f8b1ba31c63f4d54e87",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-08T16:52:37+08:00",
+      "prompt_sha256": "2af99ccf8e1bfefc48128d16ef8d83d23f2a262198b97f8b1ba31c63f4d54e87",
+      "raw_response_sha256": "139e8bb703d6afaf6a9dc7830028385c1d29fc1e1b7a9582cc6d64c8aa1a4452",
+      "repeated_previous_response": false,
+      "raw_response_file": "B006_block_attempt_01_raw.txt",
+      "validation_failures": [
+        "B006年代技术错误：1991年前不得出现“上传”",
+        "B006年代技术错误：1991年前不得出现“GridTrack”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 75.4,
+      "usage": {
+        "input_tokens": 10990,
+        "output_tokens": 4940,
+        "total_tokens": 15930,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-08T16:53:53+08:00",
+      "prompt_sha256": "e3d8700c0d71acd3e4c4ea2217206a492c8890df094167369bf405402ef14002",
+      "raw_response_sha256": "7eda8cf267b5692c50d1a85aa65a1aac15ea6815b57d40f7d239ecf56b120235",
+      "repeated_previous_response": false,
+      "raw_response_file": "B006_block_attempt_02_raw.txt",
+      "validation_failures": [
+        "B006年代技术错误：1991年前不得出现“GridTrack”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 75.873,
+      "usage": {
+        "input_tokens": 16030,
+        "output_tokens": 4942,
+        "total_tokens": 20972,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-08T16:55:09+08:00",
+      "prompt_sha256": "b37c8ef3d038e1c2f16333fe393c40865bfecd3a167c90eb93c2c266e5714aec",
+      "raw_response_sha256": "b28e3df41f8686e07c995f57f7bf7babde6ce12e04480c89a0f07fe7258dbfda",
+      "repeated_previous_response": false,
+      "raw_response_file": "B006_block_attempt_03_raw.txt",
+      "validation_failures": [
+        "B006年代技术错误：1991年前不得出现“GridTrack”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 75.861,
+      "usage": {
+        "input_tokens": 16014,
+        "output_tokens": 4944,
+        "total_tokens": 20958,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

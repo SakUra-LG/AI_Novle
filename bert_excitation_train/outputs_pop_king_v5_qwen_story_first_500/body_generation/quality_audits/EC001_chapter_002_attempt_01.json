@@ -1,0 +1,41 @@
+{
+  "cluster_id": "EC001",
+  "chapter_id": 2,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "e7a4ea0094db2411200e1410397a5b89fd4c9012ea3b7e0ad249c8fc5fb233f9",
+  "raw_response_sha256": "927c434848da96beedf30bb157a9720b70ad59adaa5c8623dc4043af64551cbf",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 31.325,
+    "usage": {
+      "input_tokens": 5061,
+      "output_tokens": 1463,
+      "total_tokens": 6524,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "chapter_audit": {
+    "han_chars": 1459,
+    "total_chars": 1804,
+    "target_han_range": [
+      1300,
+      1800
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 4,
+    "failures": [
+      "重生章开头未通过十一岁身体或年轻家人确认年龄变化",
+      "重生章开头未明确让读者确认回到过去"
+    ]
+  },
+  "failures": [
+    "重生章开头未通过十一岁身体或年轻家人确认年龄变化",
+    "重生章开头未明确让读者确认回到过去"
+  ],
+  "accepted": false
+}

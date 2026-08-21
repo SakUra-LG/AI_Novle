@@ -1,0 +1,110 @@
+{
+  "macro_group_id": "MG046",
+  "event_directions": [
+    {
+      "cluster_id": "EC226",
+      "chapter_span": [
+        451,
+        452
+      ],
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "advance",
+      "previous_life_harm": "前世麦珂在3月17日夜被‘健康趋势预测模型’伪造脑溢血数据，导致法院发布紧急资产接管令。",
+      "unique_prev_life_info": "维克多利用远程医疗云篡改生理指标，切断麦珂对外数字通讯并诱导昏迷假象。",
+      "preemptive_action": "麦珂提前将核心体征数据通过老式磁带非联网传输给莱昂·周进行物理封存。",
+      "chapter_one_small_win": "莱昂·周在监听中截获异常信号，当场比对原始波形发现数据污染痕迹。",
+      "chapter_two_showdown": "奥瑞恩集团试图强行调取远程档案库伪造报告，却被莱昂出示的磁带原件驳斥为非法入侵。",
+      "opponent_permanent_loss": "维克多失去对‘健康趋势预测模型’的绝对控制权，其算法信誉彻底破产。",
+      "protagonist_concrete_gain": "麦珂获得不可篡改的生理清醒铁证，法律上确立资产未被冻结的即时状态。",
+      "irreversible_outcome_key": "磁带原件与实时波形图完成交叉验证并各地媒体存档，形成不可逆事实锚点。",
+      "death_chain_connection": "直接阻断前世因伪造诊断导致的资产失控链条，确保3月18日零时前生存。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC227",
+      "chapter_span": [
+        453,
+        454
+      ],
+      "opposition_type": "institutional",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "前世昆廷突发眩晕后，信托协议陷入管理真空，对手趁机收购胶片厂控制母带。",
+      "unique_prev_life_info": "2002年信托补充条款关于‘突发眩晕导致管理真空’的触发机制被对手刻意忽略。",
+      "preemptive_action": "麦珂在昆廷离岗前夜即通知三位‘星火调音师’学员准备签署临时确认书。",
+      "chapter_one_small_win": "昆廷晨间体测后眩晕暂离，三位学员立即抵达现场并联合签署执行确认书。",
+      "chapter_two_showdown": "奥瑞恩律师团以管理人失能为由发起冻结动议，被当庭出示的三方联署文件驳回。",
+      "opponent_permanent_loss": "对手无法再以管理真空为由实施资产接管，其法律策略在法理层面完全失效。",
+      "protagonist_concrete_gain": "三位学员获得临时授权，信托协议补充条款激活生效，确立麦珂绝对控制权。",
+      "irreversible_outcome_key": "温特律师事务所保险柜副本与现场签署文件同步公开，形成完整证据链闭环。",
+      "death_chain_connection": "利用重生优势预判信任危机，将前世的管理真空转化为今生的法律防御壁垒。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC228",
+      "chapter_span": [
+        455,
+        456
+      ],
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "performance_proof",
+      "death_chain_role": "reveal",
+      "previous_life_harm": "前世苏菲亚的核心档案被远程黑客攻击，数字备份被篡改导致关键证据丢失。",
+      "unique_prev_life_info": "对手习惯使用‘数据污染’手段破坏数字存储，迫使物理介质成为唯一真相来源。",
+      "preemptive_action": "苏菲亚将核心档案从远程库彻底转为微缩胶片加手写索引双备份并切断网络。",
+      "chapter_one_small_win": "黑客尝试入侵失败，系统自动触发物理介质离线保护机制并记录入侵日志。",
+      "chapter_two_showdown": "对手试图用伪造的数字日志混淆视听，被苏菲亚展示的手写索引编号逐条驳斥。",
+      "opponent_permanent_loss": "所有基于数字篡改的指控瞬间瓦解，对手的技术欺诈行为被全程直播曝光。",
+      "protagonist_concrete_gain": "微缩胶片与手写索引双备份存入场馆铭牌后安全区，确保证据永久不可篡改。",
+      "irreversible_outcome_key": "手写索引编号与胶片序列号在各地媒体同步验证，形成跨维度的物理防伪铁证。",
+      "death_chain_connection": "将前世的数据丢失风险转化为今生的物理存证优势，彻底阻断信息战路径。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC229",
+      "chapter_span": [
+        457,
+        458
+      ],
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "echo",
+      "previous_life_harm": "前世对手制造舆论抹黑，宣称麦珂已死或精神失常，引发公众恐慌与资本撤离。",
+      "unique_prev_life_info": "维克多惯用虚假新闻引导市场情绪，试图在直播前夜制造混乱局面。",
+      "preemptive_action": "麦珂安排艾琳将2007年‘我确认此人今日清醒’仪式录像设为直播强制播放内容。",
+      "chapter_one_small_win": "媒体试图切断信号播放虚假新闻，被观众自发用手机闪光灯形成光信号覆盖。",
+      "chapter_two_showdown": "全场十万观众齐声朗读明信片墙来信，声音经三十七国电台同步传输形成人声洪流。",
+      "opponent_permanent_loss": "维克多的舆论操控逻辑在真实的人声共振面前彻底崩塌，其谎言被当众拆解。",
+      "protagonist_concrete_gain": "麦珂未控诉却完成道德审判，公众认知从‘是否痊愈’彻底转向‘是否清醒’。",
+      "irreversible_outcome_key": "三十七国电台同步切入‘午夜星轨’频段，全球直播画面定格在‘清醒即存在’的瞬间。",
+      "death_chain_connection": "将前世被舆论压制的悲剧转化为今生的集体觉醒，让仇敌在公审现场自曝其短。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC230",
+      "chapter_span": [
+        459,
+        460
+      ],
+      "opposition_type": "institutional",
+      "event_type": "finance_business",
+      "solution_type": "market_result",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "前世资产被冻结后，麦珂被迫接受不平等和解，终身艺能保障计划沦为骗局。",
+      "unique_prev_life_info": "对手企图通过资产接管切断麦珂后续创作收入，迫使其放弃‘开口权存证计划’。",
+      "preemptive_action": "麦珂启动‘开口权存证计划’，将四十年作品打包为开源时间胶囊向全球免费授予。",
+      "chapter_one_small_win": "全球教育机构纷纷响应，开源授权书瞬间填满服务器，形成庞大的社区共识网络。",
+      "chapter_two_showdown": "奥瑞恩集团试图阻止授权，却发现所有版权已合法转移至公共领域无法收回。",
+      "opponent_permanent_loss": "维克多不仅未能控制资产，反而因阻碍公益被行业自律委员会暂停从业资格两年。",
+      "protagonist_concrete_gain": "麦珂实现资产的社会化重构，四十年心血转化为全人类共享的文化财富。",
+      "irreversible_outcome_key": "铜质齿轮完成最后一次旋转，触发三十七国电台同步切入‘午夜星轨’频段。",
+      "death_chain_connection": "彻底粉碎前世商业围剿，让麦珂在终局直播中以‘清醒者’身份开启全新纪元。",
+      "direction": ""
+    }
+  ]
+}

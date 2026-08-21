@@ -1,0 +1,100 @@
+{
+  "generated_by": "qwen",
+  "kind": "chapters_b",
+  "identifier": "MG002",
+  "accepted_attempt": "03",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "base_prompt_sha256": "22a34623418378d3c53752ef18fb25d9c08270236dcd03987a4d3a0a15be9992",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-08T18:08:04+08:00",
+      "prompt_sha256": "22a34623418378d3c53752ef18fb25d9c08270236dcd03987a4d3a0a15be9992",
+      "raw_response_sha256": "7e73e90116f5511862f4ae33f86432736edc05d07bfa83c5ed9c30329976a303",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG002_chapters_b_attempt_01_raw.txt",
+      "validation_failures": [
+        "第16章exact_action_sequence至少3项",
+        "第16章不得把EC规划编号写成世界内文件、信封或对白",
+        "第17章exact_action_sequence至少3项",
+        "第17章不得把EC规划编号写成世界内文件、信封或对白",
+        "第18章exact_action_sequence至少3项",
+        "第18章不得把EC规划编号写成世界内文件、信封或对白",
+        "第19章exact_action_sequence至少3项",
+        "第19章不得把EC规划编号写成世界内文件、信封或对白",
+        "第20章exact_action_sequence至少3项",
+        "第20章不得把EC规划编号写成世界内文件、信封或对白"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 83.04,
+      "usage": {
+        "input_tokens": 16323,
+        "output_tokens": 5401,
+        "total_tokens": 21724,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-08T18:09:28+08:00",
+      "prompt_sha256": "c77955933b73bb6dc033b1d9a363be7c124fb4183f083d884dcdc61e9d58fa36",
+      "raw_response_sha256": "83fb0b3a481d2e8fdecc8cb8af834f6fe727ff1f655f2743b1c51376efd9ddd2",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG002_chapters_b_attempt_02_raw.txt",
+      "validation_failures": [
+        "第16章exact_action_sequence至少3项",
+        "第16章不得把EC规划编号写成世界内文件、信封或对白",
+        "第17章exact_action_sequence至少3项",
+        "第17章不得把EC规划编号写成世界内文件、信封或对白",
+        "第18章exact_action_sequence至少3项",
+        "第18章不得把EC规划编号写成世界内文件、信封或对白",
+        "第19章exact_action_sequence至少3项",
+        "第19章不得把EC规划编号写成世界内文件、信封或对白",
+        "第20章exact_action_sequence至少3项",
+        "第20章不得把EC规划编号写成世界内文件、信封或对白"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 83.252,
+      "usage": {
+        "input_tokens": 21957,
+        "output_tokens": 5404,
+        "total_tokens": 27361,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-08T18:10:50+08:00",
+      "prompt_sha256": "c1966c2ed18797745a4ee11c9f535c3d30b354dc49b8cf35c177265d6baff5a4",
+      "raw_response_sha256": "5ec33e16c6cd25e179eaa0f5e7b9de99ef97fc73036c75dfec38d26c58f071bb",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG002_chapters_b_attempt_03_raw.txt",
+      "validation_failures": [
+        "第16章exact_action_sequence至少3项",
+        "第17章exact_action_sequence至少3项",
+        "第18章exact_action_sequence至少3项",
+        "第18章不得把EC规划编号写成世界内文件、信封或对白",
+        "第19章exact_action_sequence至少3项",
+        "第20章exact_action_sequence至少3项"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 82.113,
+      "usage": {
+        "input_tokens": 21959,
+        "output_tokens": 5329,
+        "total_tokens": 27288,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

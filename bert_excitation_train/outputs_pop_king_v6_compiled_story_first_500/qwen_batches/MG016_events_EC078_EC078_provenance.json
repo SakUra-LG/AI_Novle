@@ -1,0 +1,35 @@
+{
+  "generated_by": "groq",
+  "kind": "events_EC078_EC078",
+  "identifier": "MG016",
+  "accepted_attempt": 1,
+  "base_prompt_sha256": "e6b461b7d223f6d6860abe2671d205d65ddb35cebf216c3b07e26e0f38b4154d",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T17:00:04+08:00",
+      "prompt_sha256": "e6b461b7d223f6d6860abe2671d205d65ddb35cebf216c3b07e26e0f38b4154d",
+      "raw_response_sha256": "1ab4c8d7e1f8f5f4812559f4c1b273b7ebdefac42a7105ab84bf6346564e835b",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG016_events_EC078_EC078_attempt_01_e6b461b7d2_raw.txt",
+      "validation_failures": [],
+      "provider": "groq",
+      "model": "qwen/qwen3.6-27b",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 48.061,
+      "usage": {
+        "queue_time": 0.046644284,
+        "prompt_tokens": 2793,
+        "prompt_time": 0.2150087,
+        "completion_tokens": 3126,
+        "completion_time": 6.49891382,
+        "total_tokens": 5919,
+        "total_time": 6.71392252
+      },
+      "capacity_model_fallbacks": [
+        "openai/gpt-oss-120b"
+      ]
+    }
+  ]
+}

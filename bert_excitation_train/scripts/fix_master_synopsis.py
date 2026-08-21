@@ -25,7 +25,7 @@ OUTPUT_DIR = PROJECT_ROOT / "outputs"
 OUTLINE_FILE = OUTPUT_DIR / "master_ctx.txt"
 OUTLINE_FINAL_FILE = OUTPUT_DIR / "master_ctx_final.txt"
 
-API_Key_QW = os.environ.get("DASHSCOPE_API_KEY", "sk-a2966f4e37134351904851679884cb67")
+API_Key_QW = os.environ.get("DASHSCOPE_API_KEY", "").strip()
 MAX_TOKENS = 8192
 
 

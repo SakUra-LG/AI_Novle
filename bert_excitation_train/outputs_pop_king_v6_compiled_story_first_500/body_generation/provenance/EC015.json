@@ -1,0 +1,180 @@
+{
+  "cluster_id": "EC015",
+  "chapter_span": [
+    29,
+    30
+  ],
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "body_edit_policy": "failed_body_is_regenerated_by_qwen_never_manually_patched",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "prior_body_chain_sha256": "57552c5bfccd91f8152e42e186cbf0b688e8fa5c09560ad30eef78c23be2d83a",
+  "accepted_at": "2026-08-21T10:58:53.748764+00:00",
+  "model": "qwen-plus",
+  "temperature": 0.72,
+  "calls_by_chapter": {
+    "29": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 13.876,
+      "usage": {
+        "prompt_tokens": 6185,
+        "completion_tokens": 1205,
+        "total_tokens": 7390,
+        "prompt_tokens_details": {
+          "cached_tokens": 3428
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    },
+    "30": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 19.272,
+      "usage": {
+        "prompt_tokens": 10120,
+        "completion_tokens": 882,
+        "total_tokens": 11002,
+        "prompt_tokens_details": {
+          "cached_tokens": 417
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  "prompt_sha256_by_chapter": {
+    "29": "f7883a2dcbba06c531ec4d0f61f61f89c55bae8bc533b41f93726390384c2f11",
+    "30": "b1957554ec18f2bd5422d2e8df3a9421ce4f8d95f967fb871a0baba9ccde3ae2"
+  },
+  "base_prompt_sha256_by_chapter": {
+    "29": "f7883a2dcbba06c531ec4d0f61f61f89c55bae8bc533b41f93726390384c2f11",
+    "30": "b1957554ec18f2bd5422d2e8df3a9421ce4f8d95f967fb871a0baba9ccde3ae2"
+  },
+  "raw_response_sha256_by_chapter": {
+    "29": "2d361a8c3cebde1ced120bf2ef7790ba27c69f303d75c773d4459ea6bc77b16d",
+    "30": "ccd85070d46c5001c02d6e3886f2951c82f9fe43be083b86c63103b5ef966a84"
+  },
+  "accepted_raw_response_paths_by_chapter": {
+    "29": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC015_chapter_029_attempt_01_f7883a2dcb_raw.txt",
+    "30": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC015_chapter_030_attempt_01_b1957554ec_raw.txt"
+  },
+  "chapter_sha256": {
+    "29": "2d361a8c3cebde1ced120bf2ef7790ba27c69f303d75c773d4459ea6bc77b16d",
+    "30": "ccd85070d46c5001c02d6e3886f2951c82f9fe43be083b86c63103b5ef966a84"
+  },
+  "chapter_han_chars": {
+    "29": 1627,
+    "30": 1218
+  },
+  "planning_story_id": "planning-be26ba6bb2c83203",
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 15,
+    "through_chapter": 30,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "dea9afa21205bb9acdbd8c5e1f48f660899a2be8e95ebec8722904443dccb075",
+    "chapter_card_prefix_sha256": "7d1814df21dd950c97884a4283aaaa6da36ee3866c20d09d881ac3b338eddfb5",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "1c1def6737bb32bdef243f4b23d258a7a38d75712fb75adf0c5216671a91e18c"
+  },
+  "cluster_sha256": "2938fb74cc78411281d17d6b2d3670a4a414e31cc65e7c88c613715456e7b800",
+  "card_sha256_by_chapter": {
+    "29": "0ed1cd83667e668224c617afc606b477dfbbe75b2d7653b84870fc3b56f35a1f",
+    "30": "d5377adf172e0c6adcccde6c5df3e34b8ec7dac7411876d2f9e99e0ec3bd2c9b"
+  },
+  "planning_inputs": {
+    "event_clusters": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\event_clusters_v2.json",
+    "chapter_cards": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\master_ctx_cards_v2.json"
+  },
+  "semantic_critic": {
+    "29": {
+      "han_chars": 1627,
+      "total_chars": 1860,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 0,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "30": {
+      "han_chars": 1218,
+      "total_chars": 1422,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 0,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "joint_semantic_overlap": 0.1103,
+    "settlement_action_terms": [
+      "失去",
+      "退出",
+      "获得",
+      "名单",
+      "账户",
+      "母带"
+    ],
+    "rebirth_information_gap_markers": [
+      "前世",
+      "上一世"
+    ],
+    "recent_five_chapter_semantic_comparison": [
+      {
+        "chapter_id": 29,
+        "prior_chapter_id": 24,
+        "semantic_overlap": 0.0852
+      },
+      {
+        "chapter_id": 29,
+        "prior_chapter_id": 25,
+        "semantic_overlap": 0.1463
+      },
+      {
+        "chapter_id": 29,
+        "prior_chapter_id": 26,
+        "semantic_overlap": 0.102
+      },
+      {
+        "chapter_id": 29,
+        "prior_chapter_id": 27,
+        "semantic_overlap": 0.0937
+      },
+      {
+        "chapter_id": 29,
+        "prior_chapter_id": 28,
+        "semantic_overlap": 0.0838
+      },
+      {
+        "chapter_id": 30,
+        "prior_chapter_id": 24,
+        "semantic_overlap": 0.0896
+      },
+      {
+        "chapter_id": 30,
+        "prior_chapter_id": 25,
+        "semantic_overlap": 0.0886
+      },
+      {
+        "chapter_id": 30,
+        "prior_chapter_id": 26,
+        "semantic_overlap": 0.1083
+      },
+      {
+        "chapter_id": 30,
+        "prior_chapter_id": 27,
+        "semantic_overlap": 0.0817
+      },
+      {
+        "chapter_id": 30,
+        "prior_chapter_id": 28,
+        "semantic_overlap": 0.0835
+      }
+    ],
+    "all_joint_failures": []
+  },
+  "quality_review_status": "awaiting_manual_read"
+}

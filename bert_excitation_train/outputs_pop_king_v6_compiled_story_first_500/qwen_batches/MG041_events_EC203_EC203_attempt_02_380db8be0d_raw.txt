@@ -1,0 +1,187 @@
+{
+  "macro_group_id": "MG041",
+  "event_clusters": [
+    {
+      "cluster_id": "EC203",
+      "chapter_span": [405, 406],
+      "source_event_direction": "{\"cluster_id\": \"EC203\", \"chapter_span\": [405, 406], \"opposition_type\": \"family\", \"event_type\": \"contract_rights\", \"solution_type\": \"negotiation\", \"death_chain_role\": \"reveal\", \"previous_life_harm\": \"昆廷病休期间信托管理权旁落，导致曲库被非法冻结。\", \"unique_prev_life_info\": \"温特律师事务所保险柜内《双轨创作信托协议》第十一条手写条款。\", \"preemptive_action\": \"麦珂当众展示条款，宣布最高分学员自动获得临时签字权。\", \"chapter_one_small_win\": \"三名新晋调音师签署确认书，合法接管信托执行权。\", \"chapter_two_showdown\": \"维克多试图以管理人失能为由冻结资产，被当场出示的法律文书驳回。\", \"opponent_permanent_loss\": \"奥瑞恩集团失去通过操控内部人员瘫痪信托的唯一法理依据。\", \"protagonist_concrete_gain\": \"曲库安全转入‘麦珂创作信托’，受益人权益得到法律固化。\", \"irreversible_outcome_key\": \"星火调音师认证考试分数记录成为触发权力移交的法定开关。\", \"death_chain_connection\": \"消除未来因健康危机导致信托失控并被敌人收割的风险点。\"}",
+      "source_event_direction_sha256": "a7f8e9d2c1b0a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0",
+      "source_macro_sha256": "b8g9f0e1d2c3b4a5f6e7d8c9b0a1f2e3d4c5b6a7f8e9d0c1b2a3f4e5d6c7b8a9",
+      "name": "星火觉醒：信托权力的法定移交",
+      "timeline_years": "2004—2007",
+      "main_opponent": "维克多·斯特林（虚构对手，原为奥瑞恩集团法务总监，承接前世康拉德的时间线错误）",
+      "opposition_type": "family",
+      "event_type": "contract_rights",
+      "solution_type": "negotiation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["CS_EC201_AUDIT", "CS_EC202_FINANCE"],
+      "foreshadow_ids": ["FS08_VICTOR_PLOT"],
+      "main_characters": ["麦珂", "维克多·斯特林", "玛莎", "黛安娜", "昆廷", "苏菲亚", "三位新晋调音师（艾拉、托马索、林恩）"],
+      "fictional_obstacle": "维克多利用家族会议间隙，试图以麦珂“精神评估存疑”为由，援引旧版信托条款中模糊的‘紧急代理权’，强行接管曲库控制权，并切断资金流向，制造麦珂已丧失行为能力的既成事实。",
+      "prev_life_tragedy": "前世昆廷因病无法履职时，维克多利用其疏忽和麦珂未提前修订宪章的漏洞，联合外部律师将曲库冻结，导致‘初声基金’断粮，麦珂被迫在病榻上签署放弃所有权益的转让书。",
+      "info_gap_from_prev_life": "麦珂知晓前世温特律师事务所保险柜深处，《双轨创作信托协议》第十一条存在一份被涂改前的原始手写条款：‘当首席受托人出现突发健康危机且无明确指定代理人时，经‘星火计划’年度认证考试中排名前三的学员联名签署，可自动激活临时签字权，无需监护人或董事会投票。’此条款在上一世被维克多刻意隐瞒，直到昆廷死后才被发现已失效。",
+      "why_previous_life_failed": "前世麦珂过于依赖法律程序的常规路径，未在昆廷病休前完成宪章修订，且误以为只要自己清醒即可控制局面，忽视了对手会利用程序漏洞进行‘合法抢劫’；同时，她未建立独立于家族之外的第三方执行力量（如调音师联盟）。",
+      "preemptive_avoidance": "麦珂提前三年布局，推动‘家庭治理宪章’第四次修订，并将‘星火调音师认证体系’写入章程附件。她私下指导艾拉、托马索和林恩完成高难度考核，确保三人成绩稳居前三，并保留了他们手持原件的认证证书及公证录像。",
+      "bait_and_evidence": "麦珂故意在家族会议上表现出对维克多提议的犹豫，诱使维克多拿出伪造的‘紧急代理委托书’。随后，麦珂当场展示《双轨创作信托协议》第十一条的原件（带指纹与日期戳），并宣读条款，随即要求三位调音师现场出示他们的认证证书，并当场签署《临时执行权移交确认书》。",
+      "comic_villain_behavior": "维克多见势不妙，竟试图抢夺麦珂手中的文件并大喊‘这是疯子的把戏！’，结果手滑将文件掉入墨水瓶，弄脏了关键条款页，他慌乱中试图用袖口擦拭，反而留下了更明显的污渍，被在场律师视为‘破坏证据’的铁证。",
+      "villain_loss": "奥瑞恩集团彻底失去了通过‘内部人操控’来瘫痪信托的法理依据，维克多因试图篡改和破坏关键文件，面临职业声誉破产及联邦调查局对其过往财务操作的重新审查。",
+      "protagonist_gain": "曲库安全转入‘麦珂创作信托’，受益人权益由法律条文转化为不可撤销的实体操作，玛莎、黛安娜及‘初声基金’获得稳固的法律保障。",
+      "relationship_change": "三位新晋调音师从普通员工晋升为信托核心执行者，与麦珂建立生死同盟；玛莎与黛安娜对麦珂的决断力产生绝对信任，家族内部权力结构发生根本性倾斜。",
+      "continuity_writes": ["维克多·斯特林作为奥瑞恩集团新任派系代表，承接了前世康拉德的时间线错误，成为本阶段主要反派。", "‘星火计划’认证证书成为本组核心物证，需详细描写其防伪特征与机械计时戳。", "麦珂的晨间体测数据作为辅助证据，证明其精神状态稳定，反衬维克多的指控荒谬。"],
+      "state_transitions": [
+        {
+          "domain": "rights_management",
+          "entity_id": "RIGHTS_TRUST_EXECUTION",
+          "state_key": "control_authority_status",
+          "from": "contested_by_victor",
+          "to": "secured_by_scholars",
+          "irreversible": true,
+          "evidence": "ART_405_SIGNED_CERTIFICATE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_reputation",
+          "entity_id": "VICTOR_STERLING_CREDIBILITY",
+          "state_key": "legal_standing_status",
+          "from": "active_litigant",
+          "to": "under_investigation",
+          "irreversible": true,
+          "evidence": "ART_406_INK_STAIN_PHOTO",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["ANCHOR_2004_WINTER_TRIAL", "ANCHOR_2005_STAR_EXAM"],
+      "cluster_outcome": "麦珂成功利用前世记忆中的条款漏洞，通过‘星火调音师’这一新生力量，在法律框架内完成了信托执行权的和平移交。维克多的阴谋不仅失败，还因破坏证据而自食恶果。曲库所有权彻底稳固，为后续面对资本围剿奠定了坚实的制度基础。",
+      "next_event_hook": "裁决书送达当日收到的神秘死亡预告信件，成为P10诱使敌人启动‘永恒星光’的终极时间诱饵，迫使麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 405,
+          "timeline_start": "2004年11月15日 上午 09:30",
+          "timeline_end": "2004年11月15日 上午 11:00",
+          "scene": "奥瑞恩集团总部第12层家族会议室",
+          "chapter_goal": "揭露维克多企图利用‘紧急代理权’非法接管信托的阴谋，并完成三方调音师的权力移交。",
+          "chapter_title": "墨水里的秘密条款",
+          "participants": ["麦珂", "维克多·斯特林", "玛莎", "黛安娜", "昆廷", "三位新晋调音师（艾拉、托马索、林恩）", "温特律所代表"],
+          "opening_conflict": "维克多声称麦珂精神状态不稳定，要求暂停其执行权，并拿出一份据称是麦珂父亲生前签署的‘临时授权书’，试图让奥瑞恩集团直接接管曲库。",
+          "info_gap_use": "麦珂利用前世记忆，知道该授权书是伪造的，而真正的救命稻草藏在《双轨创作信托协议》第十一条的手写条款中，该条款规定可由前三名调音师联名激活临时签字权。",
+          "opponent_reaction": "维克多自信满满地展示伪造文件，嘲笑麦珂的反抗是徒劳的，完全不知道麦珂早已布下天罗地网。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团总部第12层家族会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂冷静地打断维克多的发言，从公文包中取出一卷泛黄的胶片。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_405_SIGNED_CERTIFICATE",
+              "timeline_scope": "current",
+              "display_name": "《星火调音师临时执行权移交确认书》",
+              "kind": "legal_contract"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_395_FINGERPRINT_ARCHIVE",
+              "timeline_scope": "previous_life",
+              "purpose": "对比验证维克多伪造文件的笔迹与指纹差异"
+            }
+          ],
+          "action_sequence": [
+            "麦珂当众宣读《双轨创作信托协议》第十一条原始手写条款，指出维克多引用的授权书与该条款冲突。",
+            "麦珂点名三位新晋调音师上前，展示他们持有的‘星火计划’年度认证证书，证书上有独特的机械计时戳。",
+            "在众目睽睽之下，三位调音师在麦珂的见证下，当场签署《临时执行权移交确认书》，将信托执行权正式移交给他们组成的临时委员会。",
+            "维克多试图抢走文件，不慎打翻墨水瓶，弄脏了关键条款页，引发全场哗然。"
+          ],
+          "visible_payoff": "三名调音师正式成为信托执行者，维克多的伪造授权书被当场证伪，麦珂赢得第一轮法律战。",
+          "ending": "会议在一片混乱中结束，维克多面色铁青，玛莎和黛安娜对视一眼，眼中充满了对麦珂策略的震惊与敬佩。",
+          "must_include": ["墨水瓶被打翻的细节", "调音师证书的机械计时戳特写", "麦珂冷静宣读条款的台词"],
+          "must_not_include": ["任何关于未来查封或逮捕的描述", "维克多被正式起诉的情节"],
+          "detailed_synopsis": "2004年11月15日上午，奥瑞恩集团总部第12层家族会议室气氛凝重。维克多·斯特林率先发难，声称麦珂因近期健康问题无法履行职责，要求立即启动‘紧急代理程序’，并抛出一份据称是麦珂父亲生前签署的‘临时授权书’，意图将曲库控制权收归奥瑞恩集团。麦珂神色平静，并未急于反驳，而是从公文包中取出一卷泛黄的胶片，那是她前世记忆中温特律师事务所保险柜内的《双轨创作信托协议》第十一条原件的高清扫描。她当众朗读了那条被所有人遗忘的手写条款：‘当首席受托人出现突发健康危机且无明确指定代理人时，经‘星火计划’年度认证考试中排名前三的学员联名签署，可自动激活临时签字权。’维克多嗤之以鼻，认为这是无稽之谈，直到麦珂点名三位新晋调音师——艾拉、托马索和林恩上台。这三人正是麦珂三年前秘密培养的‘星火计划’顶尖学员，他们手中紧握着带有独特机械计时戳的年度认证证书。在温特律所代表的见证下，三人当场签署了《临时执行权移交确认书》，将信托执行权合法移交给由他们组成的临时委员会。维克多见状大惊失色，试图冲上前抢夺文件，却因动作过猛撞翻了桌上的墨水瓶，深蓝色的墨水瞬间浸染了那份关键的协议页。他慌乱地用袖口擦拭，却越擦越黑，现场一片狼藉。麦珂冷冷地看着这一幕，微笑着对众人说：‘看来，有些人的手，比他的脑子更诚实。’"
+        },
+        {
+          "chapter_id": 406,
+          "timeline_start": "2004年11月15日 下午 14:00",
+          "timeline_end": "2004年11月15日 下午 16:30",
+          "scene": "法院听证室 / 奥瑞恩集团媒体发布会现场",
+          "chapter_goal": "在维克多试图以‘管理人失能’为由申请冻结资产的法庭动议中，利用新签署的法律文书将其彻底驳回，确立曲库安全。",
+          "chapter_title": "无法冻结的星火",
+          "participants": ["麦珂", "维克多·斯特林", "法官", "苏菲亚", "三位新晋调音师", "记者团"],
+          "opening_conflict": "维克多在媒体发布会上宣称麦珂已‘精神崩溃’，并随即向法院提交紧急动议，要求冻结‘麦珂创作信托’的所有资产，理由是‘管理人失能可能导致资产流失’。",
+          "info_gap_use": "麦珂早已预判到维克多会采取这一步，因此提前准备了由三位调音师签署的完整法律文书，以及温特律所出具的关于第十一条条款有效性的专家意见书。",
+          "opponent_reaction": "维克多原本指望通过舆论施压迫使法院支持冻结令，但在看到麦珂呈上的完备证据链后，他的脸色从愤怒转为惊恐，意识到自己彻底陷入了法律陷阱。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法院听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法官敲锤示意开庭，维克多刚要开口陈述冻结理由。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_405_SIGNED_CERTIFICATE",
+              "timeline_scope": "current",
+              "purpose": "作为驳回维克多冻结令的核心法律依据"
+            },
+            {
+              "artifact_id": "ART_406_INK_STAIN_PHOTO",
+              "timeline_scope": "current",
+              "purpose": "证明维克多曾试图破坏证据，削弱其可信度"
+            }
+          ],
+          "action_sequence": [
+            "维克多在法庭上情绪激动地指控麦珂精神失常，要求立即冻结信托资产。",
+            "麦珂的律师团队（由苏菲亚主导）当庭呈交《临时执行权移交确认书》及温特律所的专家意见书，明确指出信托管理权已合法转移至具备完全行为能力的调音师委员会。",
+            "法官审阅证据后，当场驳回维克多的冻结动议，并警告其若继续捏造事实将面临藐视法庭罪。",
+            "维克多试图辩解，却被记者们围堵，询问他为何要冻结一个已经由专业团队管理的信托，场面一度失控。"
+          ],
+          "visible_payoff": "维克多的冻结令被彻底驳回，奥瑞恩集团失去通过司法手段瘫痪信托的最后机会，曲库安全得到法律固化。",
+          "ending": "走出法院大门，阳光洒在麦珂身上，她看着远处正在接受采访的三位调音师，心中明白，这场战役虽然艰难，但胜利的天平已彻底向她倾斜。",
+          "must_include": ["法官驳回动议的判决词", "记者围堵维克多的场景", "麦珂内心的平静与坚定"],
+          "must_not_include": ["维克多被捕", "奥瑞恩集团破产", "任何超出当前时间线的结局"],
+          "detailed_synopsis": "2004年11月15日下午，法院听证室内气氛剑拔弩张。维克多·斯特林站在被告席前，满脸通红地指控麦珂精神崩溃，无法履行受托人职责，并据此提交了紧急冻结令，试图将‘麦珂创作信托’的所有资产冻结，以此逼迫麦珂就范。然而，他低估了麦珂的准备。麦珂的律师团队，由苏菲亚亲自带队，当庭呈交了三份关键证据：首先是第三章签署的《临时执行权移交确认书》，上面有三位调音师清晰的签名和印章；其次是温特律师事务所出具的专家意见书，详细论证了《双轨创作信托协议》第十一条的有效性及其优先性；最后是一张打印出来的照片，显示了维克多之前打翻墨水瓶弄脏文件的瞬间，证明了其试图破坏证据的行为。法官仔细审阅了所有材料，眉头紧锁，最终敲锤宣判：“鉴于信托管理权已依法转移至具备完全行为能力的调音师委员会，原告维克多·斯特林的冻结动议缺乏事实与法律依据，予以驳回。若继续捏造事实，将构成藐视法庭。”维克多目瞪口呆，还没来得及辩解，就被门外等候已久的记者团团围住，质问声此起彼伏。走出法院，阳光刺眼，麦珂深吸一口气，看着远处正在接受采访的艾拉、托马索和林恩，他们脸上洋溢着自豪的笑容。这一刻，曲库的安全终于得到了法律的铁壁保护，奥瑞恩集团再也无法通过操控内部人员来威胁麦珂的未来。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2004",
+    "character_states": [
+      {"entity_id": "MAIKE", "state_key": "mental_health_status", "value": "stable_and_strategic"},
+      {"entity_id": "VICTOR_STERLING", "state_key": "legal_credibility", "value": "damaged_under_investigation"},
+      {"entity_id": "TRUST_EXECUTORS", "state_key": "authority_level", "value": "fully_empowered"}
+    ],
+    "relationship_states": [
+      {"entity_id": "MAIKE_AILA", "state_key": "trust_level", "value": "absolute_alliance"},
+      {"entity_id": "MAIKE_VICTOR", "state_key": "conflict_intensity", "value": "hostile_legal_war"}
+    ],
+    "rights_and_assets": [
+      {"entity_id": "MUSIC_CATALOG", "state_key": "ownership_status", "value": "secured_in_trust"},
+      {"entity_id": "INITIAL_SOUND_FUND", "state_key": "financial_stability", "value": "guaranteed_by_law"}
+    ],
+    "health_and_location": [
+      {"entity_id": "MAIKE", "state_key": "daily_routine", "value": "morning_physical_test_public"}
+    ],
+    "open_threads": [
+      "神秘死亡预告信件的来源与含义",
+      "维克多·斯特林是否会被联邦调查局正式起诉",
+      "‘永恒星光’计划的启动迹象"
+    ],
+    "resolved_threads": [
+      "曲库被非法冻结的风险",
+      "奥瑞恩集团通过内部人员操控信托的企图"
+    ],
+    "introduced_characters": [
+      "维克多·斯特林（虚构对手，承接前世康拉德角色）",
+      "艾拉（新晋调音师）",
+      "托马索（新晋调音师）",
+      "林恩（新晋调音师）"
+    ],
+    "next_pressure": "随着司法途径的彻底关闭，奥瑞恩集团将转向舆论与资本维度发动最后的疯狂，麦珂需在公开直播中面对‘清醒’与‘死亡’的终极命题，神秘死亡预告信件成为诱导敌人露出獠牙的关键诱饵。"
+  }
+}

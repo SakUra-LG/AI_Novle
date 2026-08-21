@@ -1,0 +1,19 @@
+{
+  "cluster_id": "EC001",
+  "review_round": 1,
+  "reviewed_chapters": [1, 2],
+  "reviewer": "codex_full_text_inspection",
+  "decision": "regenerate_cluster",
+  "body_manually_edited": false,
+  "strengths": [
+    "第1章死亡压迫感具备身体触感，临终委屈并非平铺说明",
+    "维克多外强中慌、玛莎温和却立即行动的反差已经出现",
+    "第2章利用前世站位信息抢先避开啸叫，并形成磁带封存和权限收益"
+  ],
+  "actual_failures": [
+    "第2章开头没有清楚交代1969年、十一岁身体和确认重生，读者可能只感觉突然换场景",
+    "第2章逐字复用了第1章首句，连续感变成机械回声",
+    "第2章误写现实中国品牌‘凤凰牌自行车’，违背架空米国边界"
+  ],
+  "required_action": "只修改生成脚本门槛和提示词，由Qwen完整重生成EC001两章；禁止人工改正文。"
+}

@@ -1,0 +1,216 @@
+{
+  "macro_group_id": "MG030",
+  "event_clusters": [
+    {
+      "cluster_id": "EC146",
+      "chapter_span": [291, 292],
+      "name": "热敏纸末行补签铁证",
+      "timeline_years": "1992",
+      "main_opponent": "卡尔·霍尔特",
+      "main_characters": ["麦珂", "卡尔", "法官伊莱娜·瓦斯奎兹"],
+      "fictional_obstacle": "卡尔在GridTrack-4.0热敏排期表末行手写‘按V.L.指示取消备用检修’，试图将调度失误嫁祸维克多指令",
+      "prev_life_tragedy": "前世法官第六日当庭调阅原件，卡尔矢口否认笔迹，陪审团采信其‘临时备注’说辞，排期责任被模糊化",
+      "info_gap_from_prev_life": "法官必于第六日上午10:17要求出示原始热敏表；该表纸张为灰岩市‘雪松纤维’特种热敏纸，墨水渗透深度可仪器检测",
+      "why_previous_life_failed": "未提前存档原件，庭审时仅提交复印本，无法比对墨水渗透与手写压力特征",
+      "preemptive_avoidance": "麦珂提前十四日携原件赴灰岩公证处密封存档，封条编号GR-1992-047，由公证员玛丽亚·陈全程录像并签署《物理特征保全声明》",
+      "bait_and_evidence": "麦珂主动提交封存件供法庭拆封；灰岩市声纹实验室主任携便携式红外显微仪现场检测，末行墨水渗透深度达0.18mm，其余文字均≤0.09mm；卡尔当庭坚称‘字迹潦草属常态’，却拒绝当场书写比对样本",
+      "comic_villain_behavior": "卡尔掏出怀表佯装核对时间，实则偷偷撕下袖口内衬擦拭手指——被黛安娜以‘递纸巾’名义截停，纸巾上残留微量蓝黑墨渍，与热敏表末行色谱完全匹配",
+      "villain_loss": "卡尔被AEUA技术委即刻停职，调离一线调度岗；G-1982-05档案新增‘补签笔迹鉴定报告’及袖口布样物证",
+      "protagonist_gain": "麦珂获法院签发《排期安全双轨总控人》聘书；工会首次获得排期终审联签权；灰岩市声纹实验室主任成为法定见证人",
+      "relationship_change": "玛莎首次以家长监督委员会主席身份，在聘书副本背面手写‘MJ-PARENT-SUPERVISOR’钢印",
+      "continuity_writes": ["UA_MK_910917_SAFETY_DUAL_TRACK_HIRE_CERTIFICATE_ISSUED", "G_1982_05_CARL_HANDWRITTEN_LOG_ARCHIVED", "MJ_PARENT_SUPERVISOR_STEEL_SEAL_APPLIED_ON_UA_MEETING_MINUTES"],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "热敏表原件成为七版排期差异举证基石，卡尔系统性失职坐实，麦珂排期主权获司法确认",
+      "next_event_hook": "奥瑞恩紧急召开技术听证会，指派三名资深工程师作伪证，声称七套排期仅为理论推演",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 291,
+          "scene": "银湾地方法院第3号听证厅，木纹长桌左侧堆满七套排期卷宗，右侧摆放灰岩公证处封存箱",
+          "chapter_goal": "完成热敏表原件提请与拆封程序",
+          "action_sequence": ["麦珂向书记官递交GR-1992-047封存编号申请单；法官瓦斯奎兹当庭批准拆封；公证员玛丽亚·陈持铜钥匙开启铝盒，取出覆膜热敏表原件"],
+          "visible_payoff": "法官指尖轻触纸面纤维，点头认可‘原始性无异议’",
+          "ending": "卡尔起身欲言，被法官手势制止：‘请待检测完毕’"
+        },
+        {
+          "chapter_id": 292,
+          "scene": "听证厅中央增设移动检测台，红外显微仪镜头对准热敏表末行",
+          "chapter_goal": "完成笔迹渗透深度比对与当庭质证",
+          "action_sequence": ["声纹实验室主任操作仪器输出渗透深度图谱；书记官朗读比对结论；卡尔拒写比对样本，袖口墨渍被黛安娜移交物证官"],
+          "visible_payoff": "法官敲槌宣布：‘末行系事后补签，不具备调度效力’",
+          "ending": "苏菲亚当场起草《排期有效性排除裁定建议书》，工会代表签字栏首位预留空白"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC147",
+      "chapter_span": [293, 294],
+      "name": "七调度员逻辑悖论围猎",
+      "timeline_years": "1992",
+      "main_opponent": "巴里·布鲁姆",
+      "main_characters": ["麦珂", "巴里", "七位调度员（含艾拉·陈、雷蒙德·弗林）"],
+      "fictional_obstacle": "巴里安排三名奥瑞恩工程师谎称‘七套排期均为理论推演，无实际执行可能’，企图否定其操作可行性",
+      "prev_life_tragedy": "前世调度员因惧怕失业不敢出庭，伪证未遭质疑，七版排期被贬为‘纸上谈兵’",
+      "info_gap_from_prev_life": "巴里会在第三轮质询时打断调度员发言，高喊‘您是否收过麦珂团队红包？’制造混乱",
+      "why_previous_life_failed": "调度员未获工会背书，缺乏法律支持，临场退缩",
+      "preemptive_avoidance": "麦珂提前两周邀请七位调度员赴C-7室进行封闭演练，每人配发对应版本纸质流程卡与手动计时器，全程录像存档",
+      "bait_and_evidence": "麦珂当庭发放流程卡，请调度员同步演示；艾拉指出卡尔所用版本中‘升降台B组冷却间隔’与液压阀铭牌参数冲突；雷蒙德用秒表证明‘三分钟检修窗口’根本无法完成油路清洗",
+      "comic_villain_behavior": "巴里抢过麦克风追问‘谁付您交通费？’，麦珂平静递上七张银湾公交公司盖章的往返票据复印件，票号与调度员住址一一对应",
+      "villain_loss": "巴里被AEUA永久取消新闻发布资格；其所在公关公司遭罚款$50,000；伪造稿列为无效证据编号G-1992-05-11-002",
+      "protagonist_gain": "七套排期获法院采信为‘法定原始基线’；工会正式嵌入安全决策链；黛安娜台账新增‘排期-检修双轨核查表’",
+      "relationship_change": "艾拉·陈主动将流程卡交予玛莎，封面手写‘松岭居·调度第叁册’",
+      "continuity_writes": ["UA_MK_910917_SAFETY_DUAL_TRACK_HIRE_CERTIFICATE_ISSUED", "DANIELLE_APPOINTED_AS_TOUR_LIFE_DIRECTOR", "G_1992_05_11_002_DECLARED_INVALID_EVIDENCE"],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "调度员现场验证击碎伪证体系，七版排期从理论模型升格为司法可采的操作基线",
+      "next_event_hook": "托马斯援引1983年‘终身代理权补充条款’，主张麦珂丧失部分决策权",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 293,
+          "scene": "听证厅加设七张折叠椅，桌上铺开七套彩色流程卡与老式弹簧计时器",
+          "chapter_goal": "启动调度员同步演示程序",
+          "action_sequence": ["麦珂请艾拉·陈演示版本A；雷蒙德·弗林演示版本F；巴里突然插话质疑酬劳"],
+          "visible_payoff": "艾拉举起液压阀铭牌照片，指向‘最小冷却周期：4分17秒’红圈标注",
+          "ending": "法官示意书记官记录：‘版本A存在不可执行参数’"
+        },
+        {
+          "chapter_id": 294,
+          "scene": "听证厅投影幕布切换至C-7室演练录像，画面右下角显示统一时间戳",
+          "chapter_goal": "完成三处逻辑悖论举证与伪证崩塌",
+          "action_sequence": ["播放雷蒙德油路清洗失败片段；展示七张公交票据；工会代表在核查表签名栏加盖钢印"],
+          "visible_payoff": "三名工程师低头整理领带，无人再申辩",
+          "ending": "托马斯翻动皮面文件夹，抽出泛黄的1983年条款复印件"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC148",
+      "chapter_span": [295, 296],
+      "name": "1969首发合同监护权反制",
+      "timeline_years": "1992",
+      "main_opponent": "托马斯·布莱克",
+      "main_characters": ["麦珂", "托马斯", "玛莎"],
+      "fictional_obstacle": "托马斯援引1983年‘终身代理权补充条款’，主张麦珂十八岁后自动丧失部分合同否决权，企图架空其安全决策权",
+      "prev_life_tragedy": "前世托马斯凭此条款冻结麦珂对GridTrack系统的否决权，导致银湾撞车事故无可挽回",
+      "info_gap_from_prev_life": "法官会在第四日下午休庭前询问‘1969年签约时是否有监护人到场’，托马斯答‘乔纳代签即有效’",
+      "why_previous_life_failed": "玛莎未保存1969年合同原件，仅持有复印件，且不知晓未成年人合同需法定监护告知义务",
+      "preemptive_avoidance": "玛莎自1972年起保管ARCH-002-B17柜，柜中存有1969年首发合同原件（蓝色帆布封套，内页骑缝章完整），另附1972年她亲笔写的《监护权认知笔记》",
+      "bait_and_evidence": "麦珂当庭呈递合同原件；玛莎打开B17柜取出笔记，逐页翻开至‘第七页：乔纳未告知我签字含义’；法官查阅州法典§22.17，确认‘未成年人签约须双监护人书面知悉’",
+      "comic_villain_behavior": "托马斯掏出镀金钢笔欲划掉合同条款，笔尖折断弹飞，恰好落在玛莎脚边——她弯腰拾起，放入B17柜抽屉，抽屉内已有十二支同类断笔",
+      "villain_loss": "托马斯被AEUA法律事务组暂停顾问资格90日；其律所失去奥瑞恩三年巡演合约；遗产接管程序驳回编号TR-1992-05-21-001",
+      "protagonist_gain": "麦珂获签发《艺术行为能力自主权》认证；玛莎成为首任‘家属医疗协理人’；家庭药柜日志获公证编号SL-FARMACY-920521",
+      "relationship_change": "玛莎将《监护权认知笔记》首页递给麦珂，麦珂在‘第七页’旁签下‘MK-1992’，墨迹与1969年签名同色同浓",
+      "continuity_writes": ["UA_MK_ARTISTIC_CAPACITY_AUTONOMY_CERTIFIED", "TR_1992_05_21_001_DENIED_BY_UA_LEGAL_DEPT", "SL_FARMACY_920521_ARCHIVED_AT_SONGLING_NOTARY"],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "1969年合同效力逆转，托马斯‘终身代理’叙事彻底破产，麦珂艺术自主权获司法背书",
+      "next_event_hook": "巴里伪造一封‘麦珂同意接受心理评估’传真，拟于次日送达法官办公室",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 295,
+          "scene": "听证厅证物台陈列蓝色帆布合同封套与B17柜钥匙串",
+          "chapter_goal": "激活1969年合同原件司法审查程序",
+          "action_sequence": ["麦珂递交合同原件；托马斯强调1983年条款优先性；玛莎出示B17柜钥匙并说明保管年限"],
+          "visible_payoff": "法官接过合同，指尖抚过骑缝章边缘，抬头问玛莎：‘您何时开始独立保管？’",
+          "ending": "玛莎翻开笔记本，停在第七页，灯光下纸页微微泛黄"
+        },
+        {
+          "chapter_id": 296,
+          "scene": "法官助理手持州法典站在证物台旁，投影幕布显示§22.17全文",
+          "chapter_goal": "完成监护告知义务缺失认定",
+          "action_sequence": ["法官助理朗读法条；书记官宣读‘1969年无监护人书面知悉记录’；托马斯钢笔断裂弹落"],
+          "visible_payoff": "法官合上法典：‘1983年条款因基础违法而无效’",
+          "ending": "巴里匆匆离开座位，公文包拉链未拉严，露出半张传真稿边角"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC149",
+      "chapter_span": [297, 298],
+      "name": "C-7室邮箱日志揭伪传真",
+      "timeline_years": "1992",
+      "main_opponent": "巴里·布鲁姆",
+      "main_characters": ["麦珂", "巴里", "苏菲亚"],
+      "fictional_obstacle": "巴里伪造‘麦珂同意心理评估’传真，冒用麦珂签名与C-7室传真号码，拟于听证第五日送达法官",
+      "prev_life_tragedy": "前世该传真导致麦珂被强制暂停巡演，精神评估报告被篡改，成为‘失控天才’舆论源头",
+      "info_gap_from_prev_life": "巴里会在传真发送后立即致电法官秘书，自称‘麦珂团队授权联络人’，索要接收回执",
+      "why_previous_life_failed": "未保留C-7室传真机日志，无法追溯发送源与时间戳",
+      "preemptive_avoidance": "麦珂于听证前三日启用莱昂·周改装的机械式传真日志滚筒，每份进出件自动压印时间、页数、发送方号码，滚筒每日由玛莎与黛安娜双签封存",
+      "bait_and_evidence": "麦珂当庭呈递C-7室5月22日滚筒日志；苏菲亚指出伪造传真IP归属奥瑞恩公关部交换机；巴里坚称‘麦珂亲口授权’，却被日志显示当日14:03麦珂正在灰岩市做声纹比对",
+      "comic_villain_behavior": "巴里抢过书记官话筒解释，麦珂平静按下录音机播放键——传出他当日声纹比对现场原声：‘……频率基线稳定，误差±0.03dB’，与传真落款时间完全重叠",
+      "villain_loss": "巴里被迫辞职；其伪造稿存入G-1992-05-22-003档案；奥瑞恩支付违约金$867,200",
+      "protagonist_gain": "麦珂获AEUA《媒体真实性担保人》称号；苏菲亚法务中枢升级为‘交叉存证中心’；莱昂团队获准接入寰宇纪事服务器只读端口",
+      "relationship_change": "苏菲亚将滚筒日志第一页复印，赠予玛莎，扉页题‘松岭居·存证第壹册’",
+      "continuity_writes": ["UA_SO_920522_UPGRADED_TO_CROSS_AUDIT_CENTER", "BARRETT_RESIGNED_FROM_ORION_PR_TEAM", "G_1992_05_22_003_ARCHIVED_IN_G_1982_03"],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "传真伪证被即时粉碎，媒体话语权彻底转向麦珂阵营，交叉存证机制获得行业认证",
+      "next_event_hook": "莫里森医生出庭作证，谎称镇静剂为维生素强化剂，试图洗白用药记录",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 297,
+          "scene": "听证厅证物台陈列C-7室传真机与青铜滚筒日志本",
+          "chapter_goal": "启动传真日志比对程序",
+          "action_sequence": ["麦珂递交5月22日滚筒日志；巴里出示伪造传真；苏菲亚指出发送号码异常"],
+          "visible_payoff": "法官命令书记官调取奥瑞恩交换机登记簿，显示该号码未在公用线路备案",
+          "ending": "巴里掏出手帕擦汗，手帕一角绣着‘OB-PR-1992’字样"
+        },
+        {
+          "chapter_id": 298,
+          "scene": "听证厅扩音器播放声纹比对现场录音，背景音含滴答钟声与仪器蜂鸣",
+          "chapter_goal": "完成时空矛盾举证与伪证定性",
+          "action_sequence": ["播放录音；书记官核对灰岩市声纹实验室签到簿；法官宣布‘传真系伪造’"],
+          "visible_payoff": "巴里摘下眼镜，镜片后眼神涣散，公文包滑落地板，滚出一枚1981年极光剧场限位器螺栓",
+          "ending": "莫里森医生拎着棕色药箱步入法庭侧门，箱角贴着‘银湾综合医院’标签"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC150",
+      "chapter_span": [299, 300],
+      "name": "药柜指纹日志双轨鉴假",
+      "timeline_years": "1992",
+      "main_opponent": "莫里森医生",
+      "main_characters": ["麦珂", "莫里森", "黛安娜"],
+      "fictional_obstacle": "莫里森谎称‘镇静剂为维生素强化剂’，出示手写处方笺，试图掩盖四次异常取药事实",
+      "prev_life_tragedy": "前世莫里森凭处方免责，麦珂耳鸣恶化未被关联，用药记录成谜",
+      "info_gap_from_prev_life": "莫里森会在第六日午后出示药瓶，声称‘批次号与病历一致’，实则药瓶为空罐，内装淀粉片",
+      "why_previous_life_failed": "仅依赖门诊处方，未同步比对药柜实物出入记录",
+      "preemptive_avoidance": "黛安娜自1991年起实行双轨登记：药柜滚筒日志（手写）与门诊处方存根（碳纸复写），二者编号强制关联，每月由玛莎双签封存",
+      "bait_and_evidence": "麦珂呈递药柜日志第197页（缺货记录）与门诊处方第88号（开具记录）；州立药监局专家当庭比对药瓶批次码与病历登记，确认‘B-7721’批次从未生产镇静剂",
+      "comic_villain_behavior": "莫里森打开药箱倒出胶囊，麦珂伸手接住一颗——胶囊在掌心裂开，流出白色粉末，黛安娜立刻举起滚筒日志：‘第197页，缺货原因：B-7721批次召回’",
+      "villain_loss": "莫里森被州医管局吊销处方权六个月；其四次取药记录被工会列为‘程序违法典型’；执业资格暂停令编号MR-1992-05-28-001",
+      "protagonist_gain": "麦珂获AEUA《医疗行为合规优先权》认证；药柜日志获公证编号SL-FARMACY-920528；黛安娜晋升‘巡演生活总监’预备人选",
+      "relationship_change": "黛安娜将药柜滚筒日志本置于膝上，封面烫印‘松岭居·家政第贰册’，玛莎在扉页签名旁加盖钢印",
+      "continuity_writes": ["SL_FARMACY_920528_ARCHIVED_AT_SONGLING_NOTARY", "MR_1992_05_28_001_SUSPENSION_ORDER_ISSUED", "DANIELLE_APPOINTED_AS_TOUR_LIFE_DIRECTOR_PREPARATORY"],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "药柜双轨证据链首度获法院采信，莫里森退出一线用药序列，家庭医疗决策权获司法背书",
+      "next_event_hook": "法院判决虽胜，却暴露奥瑞恩正加速将版权转入离岸信托壳公司——这促使麦珂在1995年启动‘晨曦出版’合资项目",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 299,
+          "scene": "听证厅证物台并列摆放棕色药箱、滚筒日志本与门诊处方存根册",
+          "chapter_goal": "启动药柜与处方双轨比对",
+          "action_sequence": ["麦珂递交日志第197页与处方第88号；莫里森出示药瓶；黛安娜指出批次号矛盾"],
+          "visible_payoff": "法官拿起放大镜观察药瓶标签，皱眉道：‘B-7721？查不到该批次注册’",
+          "ending": "莫里森伸手欲收回药瓶，黛安娜已将其移至物证袋"
+        },
+        {
+          "chapter_id": 300,
+          "scene": "州立药监局专家手持检验报告站上证人席，身后屏幕显示B-7721批次公告",
+          "chapter_goal": "完成药瓶批次与病历记录不符认定",
+          "action_sequence": ["专家宣读检验结论；书记官朗读召回公告；法官当庭签署暂停令"],
+          "visible_payoff": "莫里森低头整理白大褂袖扣，袖口露出半截褪色腕表，表盘刻着‘1972’",
+          "ending": "麦珂起身离庭，走廊尽头玻璃窗映出他身影，窗外银湾海面波光粼粼，远处起重机臂上挂着‘晨曦出版筹备组’横幅"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1992",
+    "character_states": ["麦珂二十七岁，排期安全双轨总控人；玛莎主持家长监督委员会；黛安娜完成双轨台账升级；卡尔失去GridTrack系统最终审批权"],
+    "relationship_states": ["工会与麦珂建立法定协理关系；玛莎与麦珂共治延伸至排期安全领域"],
+    "rights_and_assets": ["GridTrack-2.5被AEUA勒令暂停认证；G-1982-05档案新增卡尔手写日志原件；黛安娜台账新增‘排期-检修双轨核查表’"],
+    "health_and_location": ["耳鸣监测与排期安全双轨联动；常驻银湾市滨岸录音区；升降台液压阀加装三级机械冗余锁止机构"],
+    "open_threads": ["软性干扰算法原始代码存储位置", "苏菲亚硬盘加密分区内的未命名音频 file"],
+    "resolved_threads": [],
+    "introduced_characters": ["莫里森医生"],
+    "next_pressure": "GridTrack-2.5被暂停认证后，奥瑞恩加速推进GridTrack-3.0保密开发，其核心模块需接入麦珂1988年新专辑《极光序章》母带元数据——这迫使麦珂必须启动‘母带主权攻防战’，将母带嵌入三方联锁保险柜。"
+  }
+}

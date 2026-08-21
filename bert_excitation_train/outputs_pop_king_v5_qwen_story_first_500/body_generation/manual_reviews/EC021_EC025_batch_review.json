@@ -1,0 +1,23 @@
+{
+  "cluster_range": [21, 25],
+  "chapter_range": [41, 50],
+  "decision": "pass",
+  "body_manually_edited": false,
+  "coverage": {
+    "full_text_read": [41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+    "validator_recheck": [41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+    "qwen_raw_hash_and_body_equality": [41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+    "chapter_memory_presence": [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+  },
+  "root_fixes_verified": [
+    "真实相机品牌已替换为架空品牌",
+    "第43至48章男主女性代词已从根章卡和正文清除",
+    "第45章LED表灯改为普通红色指示灯",
+    "第48章D-7烫痕时间统一为三天前",
+    "第49至50章年龄、性别和机械ChronoBadge设定正确"
+  ],
+  "accepted_rough_edges": [
+    "第46章电话语音登记提示略显先进，但不改变纸质归档和模拟介质主因果",
+    "第48章以发亮比喻蒸汽中的烫痕，作为文学化视觉处理保留"
+  ]
+}

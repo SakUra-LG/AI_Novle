@@ -1,0 +1,117 @@
+{
+  "generated_by": "qwen",
+  "kind": "events",
+  "identifier": "MG002",
+  "accepted_attempt": "04",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-04T17:42:37+08:00",
+      "prompt_sha256": "0d5c8fa400f21ed3ba83c0b4bf12aaa0640fa07a1102a842c50c9b24b570011d",
+      "raw_response_sha256": "53bbb739aea16208c38b76c4f4ac828db1cb8e47b076c47a4f913b32bfdcb127",
+      "raw_response_file": "MG002_events_attempt_01_raw.txt",
+      "validation_failures": [
+        "EC006.two_chapter_structure必须恰好2项",
+        "EC007.two_chapter_structure必须恰好2项",
+        "EC008.two_chapter_structure必须恰好2项",
+        "EC009.two_chapter_structure必须恰好2项",
+        "EC010.two_chapter_structure必须恰好2项"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 125.385,
+      "usage": {
+        "input_tokens": 3559,
+        "output_tokens": 5654,
+        "total_tokens": 9213,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-04T17:44:22+08:00",
+      "prompt_sha256": "d2d66b2755c0bfb37b341a5705727d0c4aeaeba2fdc5d15d24b37c9591701e2e",
+      "raw_response_sha256": "7e3ffa760b20ebd61e0509aa3f0a3acca96bf349d309e4d1676d57993502a5b9",
+      "raw_response_file": "MG002_events_attempt_02_raw.txt",
+      "validation_failures": [
+        "EC006章节号必须为[11, 12]",
+        "EC006章节号必须为[11, 12]",
+        "EC007章节号必须为[13, 14]",
+        "EC007章节号必须为[13, 14]",
+        "EC008章节号必须为[15, 16]",
+        "EC008章节号必须为[15, 16]",
+        "EC009章节号必须为[17, 18]",
+        "EC009章节号必须为[17, 18]",
+        "EC010章节号必须为[19, 20]",
+        "EC010章节号必须为[19, 20]"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 105.059,
+      "usage": {
+        "input_tokens": 9314,
+        "output_tokens": 6925,
+        "total_tokens": 16239,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-04T17:47:02+08:00",
+      "prompt_sha256": "904f9468909d4f71dc5c83ed4c72a43685581b7cc59e92d0eccca683b5ec02e7",
+      "raw_response_sha256": "549c64ba710e72d51070074316d23bf2e155327a83cc3dce01792f7814e268d3",
+      "raw_response_file": "MG002_events_attempt_03_raw.txt",
+      "validation_failures": [
+        "EC006章节号必须为[11, 12]",
+        "EC006章节号必须为[11, 12]",
+        "EC007章节号必须为[13, 14]",
+        "EC007章节号必须为[13, 14]",
+        "EC007禁止使用可能对应现实作品的英文歌名",
+        "EC008章节号必须为[15, 16]",
+        "EC008章节号必须为[15, 16]",
+        "EC009章节号必须为[17, 18]",
+        "EC009章节号必须为[17, 18]",
+        "EC010章节号必须为[19, 20]",
+        "EC010章节号必须为[19, 20]"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 160.082,
+      "usage": {
+        "input_tokens": 10104,
+        "output_tokens": 7206,
+        "total_tokens": 17310,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-04T17:48:52+08:00",
+      "prompt_sha256": "affcbd7d45155f98cbb24c9fcdf75bcd2e93107b103ef9f71018818038b3be94",
+      "raw_response_sha256": "7e69ecde52620a956d00e642a91f737979a6f2889be75a79ffd5da8d2f333ae1",
+      "raw_response_file": "MG002_events_attempt_04_raw.txt",
+      "validation_failures": [
+        "EC007禁止使用可能对应现实作品的英文歌名"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 109.716,
+      "usage": {
+        "input_tokens": 10108,
+        "output_tokens": 7229,
+        "total_tokens": 17337,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

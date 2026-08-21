@@ -1,0 +1,18 @@
+{
+  "generated_by": "qwen",
+  "kind": "threads_identity_bound",
+  "identifier": "GLOBAL",
+  "accepted_attempt": "deterministic_compile",
+  "acceptance_mode": "qwen_batch_plus_stable_identity_compiler",
+  "source_file": "GLOBAL_threads.json",
+  "source_provenance_file": "GLOBAL_threads_provenance.json",
+  "source_sha256": "78a206b3708ae26f93bd42339a0f3aa2669bea7711353d3b75d040e46534d83e",
+  "compiled_sha256": "719a42bb36c9da4987c45c5b2897a528c3d4acf8b753e9c68acbdf7b501b8640",
+  "compiler": "legacy_names_to_canonical_character_ids_v1",
+  "normalizations": [
+    "legacy_display_name_to_canonical_name",
+    "inject_stable_character_id_and_aliases"
+  ],
+  "manual_edits": [],
+  "created_at": "2026-08-21T18:59:08+08:00"
+}

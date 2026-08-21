@@ -1,0 +1,136 @@
+{
+  "cluster_id": "EC017",
+  "chapter_id": 34,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "13e786682caa6bbd4b284687a4a1128286a2f644e5bca331dd00ed956ab28f84",
+  "base_prompt_sha256": "13e786682caa6bbd4b284687a4a1128286a2f644e5bca331dd00ed956ab28f84",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "d31eada0ca670dfc44892afa1b35e2eb882d45e307d4c0b5078597c8a605ceeb",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 21.275,
+    "usage": {
+      "prompt_tokens": 8669,
+      "completion_tokens": 1135,
+      "total_tokens": 9804,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 17,
+    "through_chapter": 34,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "f21f1df44237091528ddbb050c33c974c98b69ae33e5a96f57588e162676ffd7",
+    "chapter_card_prefix_sha256": "fe457571d614e1f5c0086c6befca7ccb66b03e2aaff0b9106116beb6aac8b0f3",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "3b0c92539e2cc0123adc232a06e1ee3e0574f232f5c9c328c378fb50cdee6bb2"
+  },
+  "cluster_sha256": "1309e4a342d772bc6a90d1027c63dbb30dc277169fc4dfc8394342e99de02e66",
+  "card_sha256": "726afc8f2453126ad52fb39f1bcd203835955683a88211a53743c09e84393063",
+  "chapter_audit": {
+    "han_chars": 1654,
+    "total_chars": 1869,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "卡尔持剪刀闯入",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "昆廷出示协议",
+        "exact": false,
+        "bigram_coverage": 0.4,
+        "matched": false
+      },
+      {
+        "anchor": "现场记录",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "self_definition_rights__extension_EC017",
+        "target": "拥有自我定义权（创作者身份）",
+        "evidence_terms": [
+          "昆廷依原始手写标",
+          "注校准磁带剪辑点"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "control_over_recording__extension_EC017",
+        "target": "完全丧失",
+        "evidence_terms": [
+          "昆廷以技术协议为",
+          "由驳回卡尔的剪辑",
+          "指令"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "trust_in_protagonist__extension_EC017",
+        "target": "专业信任",
+        "evidence_terms": [
+          "昆廷被",
+          "三秒真空",
+          "概念打动"
+        ],
+        "hit_terms": [
+          "三秒真空"
+        ],
+        "matched": true
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0241,
+    "scene_evidence": [
+      {
+        "location": "银湾市地下录音室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.024，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“昆廷出示协议”",
+      "正文没有通过现场动作兑现状态转移self_definition_rights__extension_EC017→拥有自我定义权（创作者身份）",
+      "正文没有通过现场动作兑现状态转移control_over_recording__extension_EC017→完全丧失"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.024，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“昆廷出示协议”",
+      "正文没有通过现场动作兑现状态转移self_definition_rights__extension_EC017→拥有自我定义权（创作者身份）",
+      "正文没有通过现场动作兑现状态转移control_over_recording__extension_EC017→完全丧失"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

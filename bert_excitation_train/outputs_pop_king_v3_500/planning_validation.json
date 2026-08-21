@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "failures": [],
+  "cluster_count": 250,
+  "chapter_card_count": 500,
+  "covered_chapters": [
+    1,
+    500
+  ],
+  "story_id": "bd835ecaf72304ca",
+  "output_dir": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v3_500",
+  "migration_items": 10
+}

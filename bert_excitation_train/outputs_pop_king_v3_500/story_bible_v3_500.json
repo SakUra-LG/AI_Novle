@@ -1,0 +1,1814 @@
+{
+  "planning_version": "v3_500_250_events",
+  "theme": "死在复出演唱会前的流行天王重生后，把自己的葬礼变成仇人的审判现场",
+  "background": "架空米国现代流行音乐产业，时间横跨1969—2009年；现实生涯节点只作为年代锚点，人物、国家、城市、公司、歌曲、合同、案件与关系均做合成虚构。",
+  "overall_synopsis": "2009年复出演出前夜，流行天王麦珂·杰森被身边利益链用违规药物害死，临终听见他们计算保险、母带与死后肖像。他再睁眼已回到1969年十一岁全国出道试镜后台。此后四十年，他不照抄现实人生，也不让前世苦难重演：每逢唱片公司、巡演商、公关掮客、律师或亲密关系中的控制陷阱刚露头，他便用前世记住的日期、原话和流程提前拆雷，再故意留下安全诱饵，让坏人为了抢功滑稽自曝。麦珂从童星合同、原创署名和电台壁垒一路夺回制作、影像、巡演、公益、曲库、家庭与健康主动权，并经历公开恋人、闪婚前妻、共同养育者与制作人知己交错的成年感情线。2009年旧死亡日到来时，他已把上一世的每个致命环节改造成合法见证节点，最终在全球纪念直播上以活人身份登台，把自己的葬礼变成利益链的审判现场。",
+  "target_chapters": 500,
+  "target_chinese_chars_per_chapter": 1000,
+  "target_total_chinese_chars": 500000,
+  "rebirth_anchor": {
+    "previous_death": "第1章，2009年复出演出前夜",
+    "rebirth": "第2章，1969年十一岁全国出道试镜后台"
+  },
+  "structure": {
+    "volumes": 10,
+    "chapters_per_volume": 50,
+    "macro_groups": 50,
+    "chapters_per_macro_group": 10,
+    "event_clusters": 250,
+    "chapters_per_event": 2,
+    "curated_plot_kernels": 100
+  },
+  "fictionalization_rule": "史料只提供年代与产业节点，情节因果、人物关系、公司、作品和案件全部合成虚构。",
+  "romance_rule": "未成年阶段无恋爱；成年后以瑟琳娜、莉薇娅、黛安娜、艾琳四条关系展示公开、婚姻、共同养育和知己之爱之间的冲突。",
+  "graph_consistency_rule": "每章生成前读取本story_id既成事实与未决线，生成后只把正文已发生事实写回图谱。",
+  "cast": [
+    {
+      "name": "麦珂·杰森",
+      "role": "重生后从全国出道前夕重走四十年职业生涯的歌手与创作者",
+      "alignment": "protagonist"
+    },
+    {
+      "name": "玛莎·杰森",
+      "role": "母亲，温和但逐步学会保护孩子的合同权利",
+      "alignment": "ally"
+    },
+    {
+      "name": "乔纳·杰森",
+      "role": "父亲兼早期经理，强硬逐利又怕在外人前丢脸",
+      "alignment": "mixed"
+    },
+    {
+      "name": "昆廷·琼斯",
+      "role": "成年阶段的制作人导师，坚持作品质量",
+      "alignment": "ally"
+    },
+    {
+      "name": "艾琳·沃特曼",
+      "role": "独立制作人兼长期知己，成年后形成若即若离的情感线",
+      "alignment": "ally"
+    },
+    {
+      "name": "瑟琳娜·凯德",
+      "role": "电影演员与秘密恋人，追求公开而非被藏在名望背后",
+      "alignment": "mixed"
+    },
+    {
+      "name": "莉薇娅·普莱斯",
+      "role": "摇滚世家继承人，闪婚伴侣，真心与家族利益交缠",
+      "alignment": "mixed"
+    },
+    {
+      "name": "黛安娜·罗文",
+      "role": "巡演服装师与后来的共同养育者，重视家庭稳定",
+      "alignment": "ally"
+    },
+    {
+      "name": "维克多·兰斯",
+      "role": "唱片与版权集团掌舵者，始终用合规话术包装控制",
+      "alignment": "opponent"
+    },
+    {
+      "name": "巴里·布鲁姆",
+      "role": "爱抢功又常发错传真和邮件的滑稽公关掮客",
+      "alignment": "opponent"
+    },
+    {
+      "name": "卡尔·霍尔特",
+      "role": "按场次抽成、迷信表格能压过人命的巡演总监",
+      "alignment": "opponent"
+    },
+    {
+      "name": "托马斯·布莱克",
+      "role": "把控制条款包装成保护的遗产律师",
+      "alignment": "opponent"
+    },
+    {
+      "name": "康拉德·莫里森",
+      "role": "晚年私人医生，迎合雇主身边利益链的用药执行者",
+      "alignment": "opponent"
+    },
+    {
+      "name": "莱昂·周",
+      "role": "成年歌迷组织“星火同盟”创始人",
+      "alignment": "ally"
+    },
+    {
+      "name": "苏菲亚·罗德里格斯",
+      "role": "“星火同盟”票务与审计负责人",
+      "alignment": "ally"
+    }
+  ],
+  "volumes": [
+    {
+      "volume_id": "V01",
+      "title": "掌声响起以前",
+      "chapters": [
+        1,
+        50
+      ],
+      "years": "2009→1969—1970",
+      "goal": "保留前世死亡序章，第二章回到十一岁全国出道签约前夕，用成年记忆先夺回童星的声音与签字缓冲权。"
+    },
+    {
+      "volume_id": "V02",
+      "title": "变声期没有退场",
+      "chapters": [
+        51,
+        100
+      ],
+      "years": "1971—1978",
+      "goal": "跨过童星消耗与变声期，完成厂牌迁移和成年创作权起步；成年后才开启感情线。"
+    },
+    {
+      "volume_id": "V03",
+      "title": "墙外之声",
+      "chapters": [
+        101,
+        150
+      ],
+      "years": "1978—1982",
+      "goal": "从成人个人专辑到跨类型巨作，建立制作、视觉和发行控制；艾琳进入长期情感主线。"
+    },
+    {
+      "volume_id": "V04",
+      "title": "月步之后",
+      "chapters": [
+        151,
+        200
+      ],
+      "years": "1983—1986",
+      "goal": "承受巅峰爆发、影像革新、事故、公益与曲库投资，用前世知识把荣耀变成长期主动权。"
+    },
+    {
+      "volume_id": "V05",
+      "title": "坏名声与世界舞台",
+      "chapters": [
+        201,
+        250
+      ],
+      "years": "1987—1990",
+      "goal": "在世界巡演与荒诞媒体标签中守住身体、作品和私人关系，让反派的滑稽叙事不断自噬。"
+    },
+    {
+      "volume_id": "V06",
+      "title": "危险年代",
+      "chapters": [
+        251,
+        300
+      ],
+      "years": "1991—1994",
+      "goal": "完成新声转型、公益与全球巡演，并在第一次重大舆论危机中坚持合法应对；进入闪婚关系。"
+    },
+    {
+      "volume_id": "V07",
+      "title": "历史会反击",
+      "chapters": [
+        301,
+        350
+      ],
+      "years": "1995—1998",
+      "goal": "用作品回应围剿、完成出版合资与全球巡演，同时让婚姻、旧爱和共同养育线彼此缠绕但不狗血降智。"
+    },
+    {
+      "volume_id": "V08",
+      "title": "无敌并不等于自由",
+      "chapters": [
+        351,
+        400
+      ],
+      "years": "1999—2003",
+      "goal": "面对世纪转换、唱片战争、健康风险与纪录片背叛，逐步引出晚年利益链。"
+    },
+    {
+      "volume_id": "V09",
+      "title": "审判之后仍要生活",
+      "chapters": [
+        401,
+        450
+      ],
+      "years": "2004—2007",
+      "goal": "以程序和证据度过审判，随后处理创伤、债务、曲库与家庭，不把无罪写成万能治愈。"
+    },
+    {
+      "volume_id": "V10",
+      "title": "把葬礼变成审判",
+      "chapters": [
+        451,
+        500
+      ],
+      "years": "2008—2009",
+      "goal": "把旧十章的医疗、排期、泄密、票务与舞台安全素材迁入终局卷；在上一世死亡节点以合法受控的假死讯诱饵让利益链自证。"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC_GRAMMY_BIO",
+      "title": "Michael Jackson artist biography",
+      "url": "https://www.grammy.com/artists/michael-jackson/13202/",
+      "use": "1969签约、早期四连冠、1975转厂、1979/1982/1987/1991/1995作品节点、巡演与慈善"
+    },
+    {
+      "source_id": "SRC_GRAMMY_RECORDS",
+      "title": "Remembering Michael Jackson's Record-Setting Music Career",
+      "url": "https://www.grammy.com/news/michael-jackson-a-record-setter/",
+      "use": "童星榜单年龄、专辑榜单纪录及跨年代影响"
+    },
+    {
+      "source_id": "SRC_LOC_THRILLER",
+      "title": "Thriller in the National Recording Registry",
+      "url": "https://www.loc.gov/item/prn-08-079/",
+      "use": "1982专辑的文化影响与音乐影像革新"
+    },
+    {
+      "source_id": "SRC_LOC_FILM",
+      "title": "Thriller selected for the National Film Registry",
+      "url": "https://www.loc.gov/item/prn-09-250/",
+      "use": "1983长篇音乐短片与产业革新"
+    },
+    {
+      "source_id": "SRC_SONY_PUBLISHING",
+      "title": "Introducing the new Sony Music Publishing",
+      "url": "https://www.sony.com/en/SonyInfo/News/Press/202102/21-0212E/",
+      "use": "1985曲库收购、1995出版合资的商业锚点"
+    },
+    {
+      "source_id": "SRC_FBI_FILES",
+      "title": "Michael Jackson Investigative Files",
+      "url": "https://archives.fbi.gov/archives/news/stories/2009/december/jackson_122209",
+      "use": "1993与2003—2005争议节点；仅采用公开程序事实与2005无罪结果，不把现实争议写成断言"
+    },
+    {
+      "source_id": "SRC_GUINNESS_CHARITY",
+      "title": "Most charities supported by a pop star",
+      "url": "https://www.guinnessworldrecords.com/world-records/105188-most-charities-supported-by-a-pop-star",
+      "use": "长期公益投入锚点"
+    },
+    {
+      "source_id": "SRC_OFFICIAL_ALBUMS",
+      "title": "Michael Jackson official albums timeline",
+      "url": "https://www.michaeljackson.com/the-artist/albums",
+      "use": "作品年代交叉核验；小说内不使用真实作品名"
+    }
+  ],
+  "research_timeline_anchors": [
+    {
+      "years": "1969—1970",
+      "historical_anchor": "家族组合签约全国厂牌，最初四支榜单单曲连续登顶",
+      "source_ids": [
+        "SRC_GRAMMY_BIO",
+        "SRC_GRAMMY_RECORDS"
+      ],
+      "fictional_use": "新第2章从全国试镜与签约前夕开始，扩写童星合同、工时、兄弟关系和电台门槛"
+    },
+    {
+      "years": "1971—1972",
+      "historical_anchor": "少年时期进入个人发行，十三岁已有个人热门作品，十四岁演唱电影主题歌",
+      "source_ids": [
+        "SRC_GRAMMY_RECORDS"
+      ],
+      "fictional_use": "扩写个人发展与团体团结的矛盾、变声期污名和成人团队对童星的控制"
+    },
+    {
+      "years": "1975—1978",
+      "historical_anchor": "家族组合更换厂牌并改名继续活动；随后参与音乐电影拍摄",
+      "source_ids": [
+        "SRC_GRAMMY_BIO"
+      ],
+      "fictional_use": "扩写旧厂牌权利围堵、新厂牌口头承诺和结识制作人导师"
+    },
+    {
+      "years": "1979—1980",
+      "historical_anchor": "成人个人专辑完成商业与创作突破，并取得首座格莱美",
+      "source_ids": [
+        "SRC_GRAMMY_BIO"
+      ],
+      "fictional_use": "扩写跨类型电台壁垒、制作权、分账和第一次成年关系压力"
+    },
+    {
+      "years": "1982—1984",
+      "historical_anchor": "跨类型专辑、音乐影像和电视舞台造成世界级文化突破；1984年单晚获八项格莱美",
+      "source_ids": [
+        "SRC_LOC_THRILLER",
+        "SRC_LOC_FILM",
+        "SRC_GRAMMY_BIO"
+      ],
+      "fictional_use": "扩写发行顺序、电视门槛、长片预算、标志性滑步和团队署名争夺"
+    },
+    {
+      "years": "1985",
+      "historical_anchor": "参与大型赈灾公益歌曲，并完成重要音乐出版曲库投资",
+      "source_ids": [
+        "SRC_GRAMMY_BIO",
+        "SRC_SONY_PUBLISHING"
+      ],
+      "fictional_use": "扩写公益审计、竞购泄密和版权资产主动权"
+    },
+    {
+      "years": "1987—1989",
+      "historical_anchor": "新专辑产生五支冠军单曲，并展开大规模世界巡演",
+      "source_ids": [
+        "SRC_GRAMMY_BIO",
+        "SRC_GRAMMY_RECORDS"
+      ],
+      "fictional_use": "扩写加场、健康阈值、舞台安全、荒诞小报与公开恋情冲突"
+    },
+    {
+      "years": "1991—1993",
+      "historical_anchor": "作品转向新节拍与社会议题，全球巡演与慈善并进；1993年进入重大争议与法律应对",
+      "source_ids": [
+        "SRC_GRAMMY_BIO",
+        "SRC_FBI_FILES"
+      ],
+      "fictional_use": "扩写新旧制作权冲突、基金审计、健康停演和合法证据保全"
+    },
+    {
+      "years": "1994—1996",
+      "historical_anchor": "现实生涯进入婚姻、双碟新作、兄妹影像合作与出版合资时期",
+      "source_ids": [
+        "SRC_GRAMMY_BIO",
+        "SRC_SONY_PUBLISHING"
+      ],
+      "fictional_use": "只保留年代功能，使用合成人物构建闪婚、离婚、合资否决权与媒体围堵"
+    },
+    {
+      "years": "1997—2000",
+      "historical_anchor": "继续世界巡演、建立家庭并保持长期公益投入",
+      "source_ids": [
+        "SRC_GRAMMY_BIO",
+        "SRC_GUINNESS_CHARITY"
+      ],
+      "fictional_use": "扩写育儿隐私、共同养育、慈善假账和舞台机械陷阱"
+    },
+    {
+      "years": "2001—2003",
+      "historical_anchor": "世纪纪念演出与后期专辑之后，唱片合作冲突和纪录片争议加剧，2003年进入新一轮司法程序",
+      "source_ids": [
+        "SRC_GRAMMY_BIO",
+        "SRC_FBI_FILES"
+      ],
+      "fictional_use": "扩写预算做局、影像母版、素材语境、文件保管链和集团趁乱夺权"
+    },
+    {
+      "years": "2004—2005",
+      "historical_anchor": "案件进入审判，2005年被判全部指控无罪",
+      "source_ids": [
+        "SRC_FBI_FILES"
+      ],
+      "fictional_use": "以架空案件写具体程序反击，不把现实争议改写为未经证实的阴谋断言"
+    },
+    {
+      "years": "2006—2007",
+      "historical_anchor": "离开原居所、在海外休整并处理资产和出版权益",
+      "source_ids": [
+        "SRC_SONY_PUBLISHING"
+      ],
+      "fictional_use": "扩写人情避风港、债务交叉违约、孩子教育与复出意向书"
+    },
+    {
+      "years": "2008—2009",
+      "historical_anchor": "准备复出演出，2009年6月25日去世",
+      "source_ids": [
+        "SRC_GRAMMY_BIO",
+        "SRC_FBI_FILES"
+      ],
+      "fictional_use": "迁入旧十章医疗和演出素材；今生提前避开死亡，并以受控流程诱饵完成终局审判"
+    }
+  ],
+  "theme_contract": {
+    "theme_title": "死在复出演唱会前的流行天王重生后，把自己的葬礼变成仇人的审判现场",
+    "theme": "死在复出演唱会前的流行天王重生后，把自己的葬礼变成仇人的审判现场",
+    "background": "架空米国现代流行音乐产业，时间横跨1969—2009年；现实生涯节点只作为年代锚点，人物、国家、城市、公司、歌曲、合同、案件与关系均做合成虚构。",
+    "main_protagonist": "麦珂·杰森",
+    "protagonists": [
+      "麦珂·杰森"
+    ],
+    "core_premise": "麦珂在2009年被利益链害死后，重生到1969年十一岁全国出道签约前夕。他只能使用前世记住的日期、原话、流程与选择制造今生证据，不能凭空拥有物证。",
+    "timeline_anchors": [
+      "第1章前世死亡",
+      "第2章1969年出道前夕重生",
+      "第451章起进入2008—2009终局卷",
+      "第500章纪念直播现身"
+    ],
+    "hard_constraints": [
+      "主角始终是正向人物：保护创作、家人、员工、歌迷和公益，不主动伤害无辜者。",
+      "未成年阶段禁止恋爱或性化描写；成年感情线必须知情、自愿且保留各方主体性。",
+      "现实人物与争议只作年代研究锚点，小说角色、作品、案件、公司与关系全部合成虚构。",
+      "每个事件簇必须写明前世信息差、今生取证动作、反派现实损失和主角现实收益。",
+      "除第1章前世死亡外，今生的虚构陷阱必须在造成实质伤害前被识破；主角可以短暂示弱诱敌，但不能重复承受前世同等损失。",
+      "每个五章事件簇按识破、规避、留饵、打脸、飞升推进，至少兑现三次可见小赢，簇末必须获得比开头更高一级的资源、权利、声望或关系主动权。",
+      "图数据库按story_id隔离；后续章节不得无解释改写人物关系、权利、健康和未决线索。"
+    ],
+    "forbidden_elements": [
+      "公开自曝重生",
+      "万能黑客",
+      "匿名消息直接解题",
+      "陌生人送唯一证据",
+      "用真实争议作未经证实的定论"
+    ],
+    "final_payoff": "第500章在全球纪念直播中现身，以今生合法形成的证据链完成审判并保住生命、家人和版权。"
+  },
+  "macro_groups": [
+    {
+      "macro_group_id": "MG001",
+      "chapter_span": [
+        1,
+        10
+      ],
+      "volume_id": "V01",
+      "event_cluster_ids": [
+        "EC001",
+        "EC002",
+        "EC003",
+        "EC004",
+        "EC005"
+      ],
+      "source_kernel_ids": [
+        "EC001",
+        "EC002"
+      ],
+      "goal": "第9章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第10章闭环：补充页被撤，家庭取得合同副本和三日复核权；贝尔失去悄悄加页的机会；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2009→1969→2009→1969→1969→1969",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG002",
+      "chapter_span": [
+        11,
+        20
+      ],
+      "volume_id": "V01",
+      "event_cluster_ids": [
+        "EC006",
+        "EC007",
+        "EC008",
+        "EC009",
+        "EC010"
+      ],
+      "source_kernel_ids": [
+        "EC003",
+        "EC004"
+      ],
+      "goal": "第19章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第20章闭环：演出零失误，兄弟共同署名编舞改动；乔纳失去用罚站逼服从的理由；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1969",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG003",
+      "chapter_span": [
+        21,
+        30
+      ],
+      "volume_id": "V01",
+      "event_cluster_ids": [
+        "EC011",
+        "EC012",
+        "EC013",
+        "EC014",
+        "EC015"
+      ],
+      "source_kernel_ids": [
+        "EC005",
+        "EC006"
+      ],
+      "goal": "第29章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第30章闭环：补货曲线证实判断，团队首支全国冠军；赫伯抱着‘不会卖’的退货箱上庆功照；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1969→1969→1970→1970",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG004",
+      "chapter_span": [
+        31,
+        40
+      ],
+      "volume_id": "V01",
+      "event_cluster_ids": [
+        "EC016",
+        "EC017",
+        "EC018",
+        "EC019",
+        "EC020"
+      ],
+      "source_kernel_ids": [
+        "EC007",
+        "EC008"
+      ],
+      "goal": "第39章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第40章闭环：孩子们换到安全车辆，巴里的豪车发票在例会上被逐字念出；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1970",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG005",
+      "chapter_span": [
+        41,
+        50
+      ],
+      "volume_id": "V01",
+      "event_cluster_ids": [
+        "EC021",
+        "EC022",
+        "EC023",
+        "EC024",
+        "EC025"
+      ],
+      "source_kernel_ids": [
+        "EC009",
+        "EC010"
+      ],
+      "goal": "第49章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第50章闭环：不属于艺人的派对成本被剔除，建立季度审计；贝尔举杯时才发现账单在身后；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1970",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG006",
+      "chapter_span": [
+        51,
+        60
+      ],
+      "volume_id": "V02",
+      "event_cluster_ids": [
+        "EC026",
+        "EC027",
+        "EC028",
+        "EC029",
+        "EC030"
+      ],
+      "source_kernel_ids": [
+        "EC011",
+        "EC012"
+      ],
+      "goal": "第59章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第60章闭环：个人单曲顺利推出，拆团稿被撤；家庭建立项目分账规则；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1971",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG007",
+      "chapter_span": [
+        61,
+        70
+      ],
+      "volume_id": "V02",
+      "event_cluster_ids": [
+        "EC031",
+        "EC032",
+        "EC033",
+        "EC034",
+        "EC035"
+      ],
+      "source_kernel_ids": [
+        "EC013",
+        "EC014"
+      ],
+      "goal": "第69章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第70章闭环：演唱成为个人突破，制片人的催泪喷雾被工作人员误喷到自己脸上；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1972",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG008",
+      "chapter_span": [
+        71,
+        80
+      ],
+      "volume_id": "V02",
+      "event_cluster_ids": [
+        "EC036",
+        "EC037",
+        "EC038",
+        "EC039",
+        "EC040"
+      ],
+      "source_kernel_ids": [
+        "EC015",
+        "EC016"
+      ],
+      "goal": "第79章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第80章闭环：团队获得共同编舞署名，电视台仍拿到热门表演；米尔斯只能给自己的鞠躬动作署名；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1973→1973→1974→1974",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG009",
+      "chapter_span": [
+        81,
+        90
+      ],
+      "volume_id": "V02",
+      "event_cluster_ids": [
+        "EC041",
+        "EC042",
+        "EC043",
+        "EC044",
+        "EC045"
+      ],
+      "source_kernel_ids": [
+        "EC017",
+        "EC018"
+      ],
+      "goal": "第89章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第90章闭环：原创进入专辑，麦珂获得固定创作名额；雷蒙的‘我从没反对’被会议纪要当场纠正；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1975→1975→1976→1976",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG010",
+      "chapter_span": [
+        91,
+        100
+      ],
+      "volume_id": "V02",
+      "event_cluster_ids": [
+        "EC046",
+        "EC047",
+        "EC048",
+        "EC049",
+        "EC050"
+      ],
+      "source_kernel_ids": [
+        "EC019",
+        "EC020"
+      ],
+      "goal": "第99章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第100章闭环：电影表演建立成人银幕形象，麦珂结识昆廷·琼斯；与诺拉因两种生活节奏和平分手；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1977→1977→1978→1978",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG011",
+      "chapter_span": [
+        101,
+        110
+      ],
+      "volume_id": "V03",
+      "event_cluster_ids": [
+        "EC051",
+        "EC052",
+        "EC053",
+        "EC054",
+        "EC055"
+      ],
+      "source_kernel_ids": [
+        "EC021",
+        "EC022"
+      ],
+      "goal": "第109章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第110章闭环：专辑获得四首先后热门的空间，麦珂取得跨类型宣传预算；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1978→1978→1979→1979",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG012",
+      "chapter_span": [
+        111,
+        120
+      ],
+      "volume_id": "V03",
+      "event_cluster_ids": [
+        "EC056",
+        "EC057",
+        "EC058",
+        "EC059",
+        "EC060"
+      ],
+      "source_kernel_ids": [
+        "EC023",
+        "EC024"
+      ],
+      "goal": "第119章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第120章闭环：巡演与创作都保住关键档期，项目建立共同决策机制；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1980→1980→1980—1981→1980—1981",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG013",
+      "chapter_span": [
+        121,
+        130
+      ],
+      "volume_id": "V03",
+      "event_cluster_ids": [
+        "EC061",
+        "EC062",
+        "EC063",
+        "EC064",
+        "EC065"
+      ],
+      "source_kernel_ids": [
+        "EC025",
+        "EC026"
+      ],
+      "goal": "第129章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第130章闭环：听众需求迫使多个频道同步跟进；格林的‘没有栏目所以没有听众’被倒置；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1981→1981→1982→1982",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG014",
+      "chapter_span": [
+        131,
+        140
+      ],
+      "volume_id": "V03",
+      "event_cluster_ids": [
+        "EC066",
+        "EC067",
+        "EC068",
+        "EC069",
+        "EC070"
+      ],
+      "source_kernel_ids": [
+        "EC027",
+        "EC028"
+      ],
+      "goal": "第139章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第140章闭环：电视台开放黄金时段，麦珂以作品和合同共同破除隐形门槛；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1982",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG015",
+      "chapter_span": [
+        141,
+        150
+      ],
+      "volume_id": "V03",
+      "event_cluster_ids": [
+        "EC071",
+        "EC072",
+        "EC073",
+        "EC074",
+        "EC075"
+      ],
+      "source_kernel_ids": [
+        "EC029",
+        "EC030"
+      ],
+      "goal": "第149章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第150章闭环：跨类型巨作正式发行，麦珂拥有更完整的收益链；维克多第一次把他列为必须长期控制的对象；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1982",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG016",
+      "chapter_span": [
+        151,
+        160
+      ],
+      "volume_id": "V04",
+      "event_cluster_ids": [
+        "EC076",
+        "EC077",
+        "EC078",
+        "EC079",
+        "EC080"
+      ],
+      "source_kernel_ids": [
+        "EC031",
+        "EC032"
+      ],
+      "goal": "第159章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第160章闭环：影像完成且社区获得岗位，巴里的塑料金链和假纹身被群众演员集体退回；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1983",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG017",
+      "chapter_span": [
+        161,
+        170
+      ],
+      "volume_id": "V04",
+      "event_cluster_ids": [
+        "EC081",
+        "EC082",
+        "EC083",
+        "EC084",
+        "EC085"
+      ],
+      "source_kernel_ids": [
+        "EC033",
+        "EC034"
+      ],
+      "goal": "第169章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第170章闭环：历史性奖项之夜成为团队荣耀，麦珂获得行业信用；巴里抱着八份个人致辞一份也没念；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1983→1983→1984→1984",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG018",
+      "chapter_span": [
+        171,
+        180
+      ],
+      "volume_id": "V04",
+      "event_cluster_ids": [
+        "EC086",
+        "EC087",
+        "EC088",
+        "EC089",
+        "EC090"
+      ],
+      "source_kernel_ids": [
+        "EC035",
+        "EC036"
+      ],
+      "goal": "第179章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第180章闭环：偷拍视频交易失败，赔偿转入烧伤救助；麦珂第一次把个人创伤直接转化为公益制度；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1984",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG019",
+      "chapter_span": [
+        181,
+        190
+      ],
+      "volume_id": "V04",
+      "event_cluster_ids": [
+        "EC091",
+        "EC092",
+        "EC093",
+        "EC094",
+        "EC095"
+      ],
+      "source_kernel_ids": [
+        "EC037",
+        "EC038"
+      ],
+      "goal": "第189章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第190章闭环：公益合唱按夜完成，救助款进入独立账户；霍普印好的个人巨幅海报被裁成收据纸；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1985",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG020",
+      "chapter_span": [
+        191,
+        200
+      ],
+      "volume_id": "V04",
+      "event_cluster_ids": [
+        "EC096",
+        "EC097",
+        "EC098",
+        "EC099",
+        "EC100"
+      ],
+      "source_kernel_ids": [
+        "EC039",
+        "EC040"
+      ],
+      "goal": "第199章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第200章闭环：麦珂保留三类核心权利，维克多只得到单项目合作；双方长期商业战争正式成形；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1985→1985→1986→1986",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG021",
+      "chapter_span": [
+        201,
+        210
+      ],
+      "volume_id": "V05",
+      "event_cluster_ids": [
+        "EC101",
+        "EC102",
+        "EC103",
+        "EC104",
+        "EC105"
+      ],
+      "source_kernel_ids": [
+        "EC041",
+        "EC042"
+      ],
+      "goal": "第209章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第210章闭环：巡演收益不降且健康红线落地；卡尔第一次失去单方面加场权；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1987",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG022",
+      "chapter_span": [
+        211,
+        220
+      ],
+      "volume_id": "V05",
+      "event_cluster_ids": [
+        "EC106",
+        "EC107",
+        "EC108",
+        "EC109",
+        "EC110"
+      ],
+      "source_kernel_ids": [
+        "EC043",
+        "EC044"
+      ],
+      "goal": "第219章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第220章闭环：荒诞谣言被证伪且公益受益；巴里花钱租的蜡像卡在氧气舱里出不来；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1987→1987→1988→1988",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG023",
+      "chapter_span": [
+        221,
+        230
+      ],
+      "volume_id": "V05",
+      "event_cluster_ids": [
+        "EC111",
+        "EC112",
+        "EC113",
+        "EC114",
+        "EC115"
+      ],
+      "source_kernel_ids": [
+        "EC045",
+        "EC046"
+      ],
+      "goal": "第229章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第230章闭环：庄园获得可持续边界，虚报款被追回；费奇设计的镀金自画像厕所被取消；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1988",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG024",
+      "chapter_span": [
+        231,
+        240
+      ],
+      "volume_id": "V05",
+      "event_cluster_ids": [
+        "EC116",
+        "EC117",
+        "EC118",
+        "EC119",
+        "EC120"
+      ],
+      "source_kernel_ids": [
+        "EC047",
+        "EC048"
+      ],
+      "goal": "第239章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第240章闭环：瑟琳娜选择离开，关系以痛苦但诚实的方式结束；麦珂承认胜利不能代替亲密；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1988→1988→1989→1989",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG025",
+      "chapter_span": [
+        241,
+        250
+      ],
+      "volume_id": "V05",
+      "event_cluster_ids": [
+        "EC121",
+        "EC122",
+        "EC123",
+        "EC124",
+        "EC125"
+      ],
+      "source_kernel_ids": [
+        "EC049",
+        "EC050"
+      ],
+      "goal": "第249章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第250章闭环：麦珂没有在空虚中签约，得到真正休息和下一张作品的选择权；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1989→1989→1990→1990",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG026",
+      "chapter_span": [
+        251,
+        260
+      ],
+      "volume_id": "V06",
+      "event_cluster_ids": [
+        "EC126",
+        "EC127",
+        "EC128",
+        "EC129",
+        "EC130"
+      ],
+      "source_kernel_ids": [
+        "EC051",
+        "EC052"
+      ],
+      "goal": "第259章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第260章闭环：作品主体保留并承担争议后果；麦珂获得影像版本控制机制；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1991",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG027",
+      "chapter_span": [
+        261,
+        270
+      ],
+      "volume_id": "V06",
+      "event_cluster_ids": [
+        "EC131",
+        "EC132",
+        "EC133",
+        "EC134",
+        "EC135"
+      ],
+      "source_kernel_ids": [
+        "EC053",
+        "EC054"
+      ],
+      "goal": "第269章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第270章闭环：高风险场次被合理调整，巡演和身体都可持续；卡尔不能再靠加场赚无风险抽成；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1992",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG028",
+      "chapter_span": [
+        271,
+        280
+      ],
+      "volume_id": "V06",
+      "event_cluster_ids": [
+        "EC136",
+        "EC137",
+        "EC138",
+        "EC139",
+        "EC140"
+      ],
+      "source_kernel_ids": [
+        "EC055",
+        "EC056"
+      ],
+      "goal": "第279章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第280章闭环：证据保全和合法程序先行，托马斯失去单独和解权；故事明确不替现实案件作事实断言；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1993",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG029",
+      "chapter_span": [
+        281,
+        290
+      ],
+      "volume_id": "V06",
+      "event_cluster_ids": [
+        "EC141",
+        "EC142",
+        "EC143",
+        "EC144",
+        "EC145"
+      ],
+      "source_kernel_ids": [
+        "EC057",
+        "EC058"
+      ],
+      "goal": "第289章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第290章闭环：两人结婚但不把唱片、曲库和姓氏打包；感情真挚却从一开始承受不对称压力；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1993→1993→1994→1994",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG030",
+      "chapter_span": [
+        291,
+        300
+      ],
+      "volume_id": "V06",
+      "event_cluster_ids": [
+        "EC146",
+        "EC147",
+        "EC148",
+        "EC149",
+        "EC150"
+      ],
+      "source_kernel_ids": [
+        "EC059",
+        "EC060"
+      ],
+      "goal": "第299章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第300章闭环：麦珂守住曲库和长期主动权，危机没有被写成廉价阴谋速胜；法律线继续按程序推进；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1994",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG031",
+      "chapter_span": [
+        301,
+        310
+      ],
+      "volume_id": "V07",
+      "event_cluster_ids": [
+        "EC151",
+        "EC152",
+        "EC153",
+        "EC154",
+        "EC155"
+      ],
+      "source_kernel_ids": [
+        "EC061",
+        "EC062"
+      ],
+      "goal": "第309章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第310章闭环：兄妹作品成为影像标志，家庭联盟增强；制片人准备的‘拯救哥哥’标题被删除；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1995",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG032",
+      "chapter_span": [
+        311,
+        320
+      ],
+      "volume_id": "V07",
+      "event_cluster_ids": [
+        "EC156",
+        "EC157",
+        "EC158",
+        "EC159",
+        "EC160"
+      ],
+      "source_kernel_ids": [
+        "EC063",
+        "EC064"
+      ],
+      "goal": "第319章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第320章闭环：夫妻决定分居而非继续表演幸福，仍保留尊重；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1995",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG033",
+      "chapter_span": [
+        321,
+        330
+      ],
+      "volume_id": "V07",
+      "event_cluster_ids": [
+        "EC161",
+        "EC162",
+        "EC163",
+        "EC164",
+        "EC165"
+      ],
+      "source_kernel_ids": [
+        "EC065",
+        "EC066"
+      ],
+      "goal": "第329章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第330章闭环：离婚完成且没有互毁；巴里准备的‘世纪负心汉’和‘世纪受害者’两套稿一起作废；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1995→1995→1996→1996",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG034",
+      "chapter_span": [
+        331,
+        340
+      ],
+      "volume_id": "V07",
+      "event_cluster_ids": [
+        "EC166",
+        "EC167",
+        "EC168",
+        "EC169",
+        "EC170"
+      ],
+      "source_kernel_ids": [
+        "EC067",
+        "EC068"
+      ],
+      "goal": "第339章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第340章闭环：巡演完成关键站点且家庭未被牺牲；卡尔的‘婴儿也能倒时差’演示娃娃先从桌上栽下；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1996→1996→1997→1997",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG035",
+      "chapter_span": [
+        341,
+        350
+      ],
+      "volume_id": "V07",
+      "event_cluster_ids": [
+        "EC171",
+        "EC172",
+        "EC173",
+        "EC174",
+        "EC175"
+      ],
+      "source_kernel_ids": [
+        "EC069",
+        "EC070"
+      ],
+      "goal": "第349章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第350章闭环：关系网从混乱隐瞒转为复杂但知情的选择；麦珂保住家人，也接受无法拥有所有形式的亲密；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1997→1997→1998→1998",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG036",
+      "chapter_span": [
+        351,
+        360
+      ],
+      "volume_id": "V08",
+      "event_cluster_ids": [
+        "EC176",
+        "EC177",
+        "EC178",
+        "EC179",
+        "EC180"
+      ],
+      "source_kernel_ids": [
+        "EC071",
+        "EC072"
+      ],
+      "goal": "第359章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第360章闭环：故障被提前发现、旧伤避免；建立机械安全停演权；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "1999",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG037",
+      "chapter_span": [
+        361,
+        370
+      ],
+      "volume_id": "V08",
+      "event_cluster_ids": [
+        "EC181",
+        "EC182",
+        "EC183",
+        "EC184",
+        "EC185"
+      ],
+      "source_kernel_ids": [
+        "EC073",
+        "EC074"
+      ],
+      "goal": "第369章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第370章闭环：麦珂与黛安娜结束伴侣关系、保留共同养育；孩子连续性不被打断；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2000",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG038",
+      "chapter_span": [
+        371,
+        380
+      ],
+      "volume_id": "V08",
+      "event_cluster_ids": [
+        "EC186",
+        "EC187",
+        "EC188",
+        "EC189",
+        "EC190"
+      ],
+      "source_kernel_ids": [
+        "EC075",
+        "EC076"
+      ],
+      "goal": "第379章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第380章闭环：部分宣传预算恢复，唱片战争转入可核验的权利之争；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2001",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG039",
+      "chapter_span": [
+        381,
+        390
+      ],
+      "volume_id": "V08",
+      "event_cluster_ids": [
+        "EC191",
+        "EC192",
+        "EC193",
+        "EC194",
+        "EC195"
+      ],
+      "source_kernel_ids": [
+        "EC077",
+        "EC078"
+      ],
+      "goal": "第389章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第390章闭环：导演无法独占唯一叙事，但仍取得足以制造争议的合法素材；危机被降低而非魔法消失；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2002",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG040",
+      "chapter_span": [
+        391,
+        400
+      ],
+      "volume_id": "V08",
+      "event_cluster_ids": [
+        "EC196",
+        "EC197",
+        "EC198",
+        "EC199",
+        "EC200"
+      ],
+      "source_kernel_ids": [
+        "EC079",
+        "EC080"
+      ],
+      "goal": "第399章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第400章闭环：搜索与指控进入程序，但证据保管没有被内部慌乱污染；托马斯失去秘密处理权；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2003",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG041",
+      "chapter_span": [
+        401,
+        410
+      ],
+      "volume_id": "V09",
+      "event_cluster_ids": [
+        "EC201",
+        "EC202",
+        "EC203",
+        "EC204",
+        "EC205"
+      ],
+      "source_kernel_ids": [
+        "EC081",
+        "EC082"
+      ],
+      "goal": "第409章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第410章闭环：违规民调被主动叫停，巴里戴假胡子夸自己‘非常可信’的视频反成内部警示教材；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2004",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG042",
+      "chapter_span": [
+        411,
+        420
+      ],
+      "volume_id": "V09",
+      "event_cluster_ids": [
+        "EC206",
+        "EC207",
+        "EC208",
+        "EC209",
+        "EC210"
+      ],
+      "source_kernel_ids": [
+        "EC083",
+        "EC084"
+      ],
+      "goal": "第419章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第420章闭环：法庭作出无罪裁决，麦珂保住资产决策缓冲；胜利不抹去创伤；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2005",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG043",
+      "chapter_span": [
+        421,
+        430
+      ],
+      "volume_id": "V09",
+      "event_cluster_ids": [
+        "EC211",
+        "EC212",
+        "EC213",
+        "EC214",
+        "EC215"
+      ],
+      "source_kernel_ids": [
+        "EC085",
+        "EC086"
+      ],
+      "goal": "第429章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第430章闭环：麦珂和孩子获得喘息，纳赛尔失去用人情换独家的计划；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2005→2005→2006→2006",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG044",
+      "chapter_span": [
+        431,
+        440
+      ],
+      "volume_id": "V09",
+      "event_cluster_ids": [
+        "EC216",
+        "EC217",
+        "EC218",
+        "EC219",
+        "EC220"
+      ],
+      "source_kernel_ids": [
+        "EC087",
+        "EC088"
+      ],
+      "goal": "第439章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第440章闭环：家庭生活恢复部分正常，安保不再等同软禁；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2006",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG045",
+      "chapter_span": [
+        441,
+        450
+      ],
+      "volume_id": "V09",
+      "event_cluster_ids": [
+        "EC221",
+        "EC222",
+        "EC223",
+        "EC224",
+        "EC225"
+      ],
+      "source_kernel_ids": [
+        "EC089",
+        "EC090"
+      ],
+      "goal": "第449章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第450章闭环：复出可能性被保留但没有提前卖掉身体；卡尔偷偷印的五十场纪念夹克暂时锁进仓库；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2007",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG046",
+      "chapter_span": [
+        451,
+        460
+      ],
+      "volume_id": "V10",
+      "event_cluster_ids": [
+        "EC226",
+        "EC227",
+        "EC228",
+        "EC229",
+        "EC230"
+      ],
+      "source_kernel_ids": [
+        "EC091",
+        "EC092"
+      ],
+      "goal": "第459章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第460章闭环：巴里把带假编号的版本卖给小报并当众认领‘独家’，麦珂收回日程分发权；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2008",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG047",
+      "chapter_span": [
+        461,
+        470
+      ],
+      "volume_id": "V10",
+      "event_cluster_ids": [
+        "EC231",
+        "EC232",
+        "EC233",
+        "EC234",
+        "EC235"
+      ],
+      "source_kernel_ids": [
+        "EC093",
+        "EC094"
+      ],
+      "goal": "第469章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第470章闭环：不明药物退出、康拉德失去药柜钥匙；麦珂夺回用药控制权；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2008",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG048",
+      "chapter_span": [
+        471,
+        480
+      ],
+      "volume_id": "V10",
+      "event_cluster_ids": [
+        "EC236",
+        "EC237",
+        "EC238",
+        "EC239",
+        "EC240"
+      ],
+      "source_kernel_ids": [
+        "EC095",
+        "EC096"
+      ],
+      "goal": "第479章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第480章闭环：内部票池回流普通渠道，票务经理失去分配权；他辩称两千个轮椅位是‘关怀过度’；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2009",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG049",
+      "chapter_span": [
+        481,
+        490
+      ],
+      "volume_id": "V10",
+      "event_cluster_ids": [
+        "EC241",
+        "EC242",
+        "EC243",
+        "EC244",
+        "EC245"
+      ],
+      "source_kernel_ids": [
+        "EC097",
+        "EC098"
+      ],
+      "goal": "第489章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第490章闭环：承包商的偷工减料曝光并失去资格，麦珂获得独立舞台安全停机权；假人替他承受危险；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2009",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    },
+    {
+      "macro_group_id": "MG050",
+      "chapter_span": [
+        491,
+        500
+      ],
+      "volume_id": "V10",
+      "event_cluster_ids": [
+        "EC246",
+        "EC247",
+        "EC248",
+        "EC249",
+        "EC250"
+      ],
+      "source_kernel_ids": [
+        "EC099",
+        "EC100"
+      ],
+      "goal": "第499章先赢：反派滑稽自打脸并失去一项现实利益，爽点当章兑现；第500章闭环：麦珂把自己的葬礼变成公开审判现场：对手失去职位、合同收益与控制权并进入合法追责；他保住生命、家庭、母带、肖像和创作自由，以新歌而非死亡完成终章；麦珂的资源、权利、声望或关系主动权至少上升一级",
+      "timeline_years": "2009",
+      "continuity_keys": [
+        "人物状态",
+        "感情关系",
+        "合同与版权",
+        "身体健康",
+        "未决伏笔"
+      ]
+    }
+  ],
+  "event_pacing_rule": "严格两章一个可结算事件：第一章识破并先赢，第二章让坏人自曝并完成飞升收益。"
+}

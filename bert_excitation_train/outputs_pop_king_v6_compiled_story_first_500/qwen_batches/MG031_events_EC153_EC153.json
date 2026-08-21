@@ -1,0 +1,263 @@
+{
+  "macro_group_id": "MG031",
+  "event_clusters": [
+    {
+      "cluster_id": "EC153",
+      "chapter_span": [
+        305,
+        306
+      ],
+      "source_event_direction": "前世具体受害：前世家庭内部因教育分歧产生隔阂，缺乏制度化的共同治理机制。；本事件独有的前世信息差：熟知瑟琳娜对子女教育的深层焦虑点，可将其转化为契约动力。；今生提前动作：麦珂主动提出双轨并行制方案，将家庭矛盾转化为共同治理的法律契约。；第305章可见小赢：瑟琳娜签署《教育共治备忘录》，确立子女教育双轨制，双方关系升级。；第306章新交锋：家族长辈质疑双轨制风险，麦珂当场展示分立的职业路径与退出自由条款。；阻力方永久现实损失：传统家长式管教模式终结，任何单方面干涉子女教育的行为失去法理依据。；主角现实收益：完成法律层面的家庭治理权重构，建立基于契约的深度互信联盟。；不可逆结算键：MC_305_Education_Memorandum_Signature；接回死亡控制主线：构建稳固的家庭后方，确保未来面对医疗与保险围剿时有坚实的情感支撑。",
+      "source_event_direction_sha256": "1ecea7b6f841bd01128c80c7312dada0c20295a6873318246ba5c59f1cc0b2a5",
+      "source_macro_sha256": "0fce299d7a5b8f9d0663dd891b98bad24f2a0c3de9a4c3dc261f53ffd67e1ab9",
+      "name": "双轨共治：家庭权力的契约重构",
+      "timeline_years": "1997-1998",
+      "main_opponent": "家族长老会（以麦珂的叔祖父老麦肯齐为首）",
+      "opposition_type": "family",
+      "event_type": "family_relationship",
+      "solution_type": "negotiation",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS10"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜",
+        "老麦肯齐",
+        "艾琳",
+        "少年工坊代表"
+      ],
+      "fictional_obstacle": "家族长老会以‘保护未成年人’和‘维护家族声誉’为由，试图否决麦珂提出的双轨制方案，并施压要求收回子女的教育主导权，认为麦珂的商业成功已使其无法客观判断孩子的未来。",
+      "prev_life_tragedy": "前世因缺乏明确的权责划分，麦珂与瑟琳娜在教育理念上长期内耗，最终导致子女在青春期陷入迷茫，且麦珂在应对商业围剿时因后方不稳而错失关键布局。",
+      "info_gap_from_prev_life": "麦珂深知瑟琳娜对子女未来的极度焦虑源于她曾目睹行业黑箱对天才少年的扼杀，她需要的不是控制，而是‘安各地媒体’；同时知晓若按传统模式，家族长辈将利用‘监护权’名义强行切断孩子与艺术工坊的联系。",
+      "why_previous_life_failed": "依赖情感沟通而非法律契约，导致家庭权力边界模糊，一旦外部压力增大，内部联盟即刻瓦解。",
+      "preemptive_avoidance": "麦珂在冲突爆发前一周，便利用重生记忆中的细节，主动起草了包含‘职业分流’、‘退出自由’及‘财务独立’条款的《教育共治备忘录》初稿，并私下向瑟琳娜展示了该方案如何能规避其最担心的‘被家族绑架’风险。",
+      "bait_and_evidence": "诱饵是家族长老会急于掌控局面的心理；证据是麦珂提前准备的、由公证处见证的‘退出自由条款’样本，以及一份模拟推演报告，证明双轨制下子女成才率比传统管教高出40%。",
+      "comic_villain_behavior": "老麦肯齐在听证会上声泪俱下地背诵家规，却因过度激动而打翻了茶杯，弄湿了那份他声称要‘严加保管’的旧版族谱，场面滑稽且显得毫无准备。",
+      "villain_loss": "传统家长式管教模式在法律层面被彻底终结，任何未经双方书面同意单方面干涉子女教育与职业选择的行为均被判定无效，家族长老会失去了对下一代成长的绝对话语权。",
+      "protagonist_gain": "完成了家庭治理结构的根本性重构，与瑟琳娜建立了基于契约的深度互信联盟，确保了家庭后方的稳固，为后续对抗维克多的医疗造假计划提供了坚实的情感支撑。",
+      "relationship_change": "麦珂与瑟琳娜从‘夫妻/合伙人’升级为‘契约盟友’，双方在家庭决策中拥有完全平等的法定地位；麦珂与家族长辈的关系从‘服从’转为‘平等对话但受法律约束’。",
+      "continuity_writes": [
+        "本事件直接承接EC152的版权胜利，将战场从商业法庭延伸至家庭内部，利用胜利带来的气场迫使家族妥协。",
+        "通过引入‘退出自由’条款，呼应了未来维克多试图用‘数据污染’抹除原始介质的威胁，表明麦珂已准备好随时切断联系的保护机制。",
+        "1977年工坊少年的线索在此处作为背景提及，暗示麦珂正在为下一阶段的证人揭露做铺垫。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_FAMILY_GOVERNANCE_001",
+          "state_key": "control_structure__extension_EC153",
+          "from": "traditional_authority",
+          "to": "contractual_mutual_trust",
+          "irreversible": true,
+          "evidence": "EDUCATION_MEMO_SIGNED_1997",
+          "effect_type": "protagonist_gain",
+          "source_domain": "family_governance",
+          "source_state_key": "governance_depth"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "FAMILY_ELDER_POWER",
+          "state_key": "interference_legitimacy",
+          "from": "absolute",
+          "to": "legally_voided",
+          "irreversible": true,
+          "evidence": "COURT_PRECEDENT_FAMILY_TRAITOR",
+          "effect_type": "villain_loss",
+          "source_domain": "legal_rights",
+          "source_state_key": "authority_scope"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "MC_SELENA_PARTNERSHIP",
+          "state_key": "governance_depth__extension_EC153",
+          "from": "none",
+          "to": "contractual_mutual_trust",
+          "irreversible": false,
+          "evidence": "EDUCATION_MEMO_SIGNED_1997",
+          "effect_type": "relationship_change",
+          "source_domain": "family_governance",
+          "source_state_key": "governance_depth"
+        }
+      ],
+      "historical_anchor_ids": [
+        "ART_291_DUAL_TRACK_TRUST_AGREEMENT"
+      ],
+      "cluster_outcome": "麦珂通过《教育共治备忘录》的签署，成功将家庭内部矛盾转化为法律契约，确立了双轨制教育模式。家族长老会的无理干预被当众驳回，传统家长权威崩塌。麦珂与瑟琳娜的关系达到前所未有的深度互信，为后续对抗维克多的医疗阴谋构建了坚固的后方堡垒。",
+      "next_event_hook": "随着家庭后方的稳固，维克多·兰斯意识到常规手段失效，开始酝酿隐蔽的数据污染方案，试图在世纪之交前彻底抹除所有原始介质，迫使麦珂必须从舆论战转向技术取证战，S95-B-RW废弃样带内的模拟录音将成为关键转折点。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 305,
+          "timeline_start": "1997-11-17",
+          "timeline_end": "1997-11-17",
+          "scene": "麦珂宅邸书房",
+          "chapter_goal": "说服瑟琳娜并争取其支持，正式签署《教育共治备忘录》，确立双轨制框架。",
+          "chapter_title": "契约的重量",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "老麦肯齐",
+            "律师团"
+          ],
+          "opening_conflict": "老麦肯齐率领家族长老闯入书房，指责麦珂‘商贾气太重’，企图剥夺其对子女教育的解释权，要求恢复传统的家长独断制。",
+          "info_gap_use": "麦珂并未反驳道德指责，而是直接抛出前世记忆中瑟琳娜深夜痛哭的细节——她并非想控制孩子，而是恐惧孩子在行业黑箱中被吞噬。麦珂指出，唯有‘双轨制’下的‘退出自由’条款，才能给予孩子真正的安全感。",
+          "opponent_reaction": "老麦肯齐被戳中痛点，恼羞成怒，试图以‘家族名誉’施压，甚至扬言要动用旧时代的家规废黜麦珂的家长权。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂宅邸书房",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "老麦肯齐拍案而起，茶杯落地碎裂"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_305_EDU_MEMO_FINAL",
+              "timeline_scope": "current",
+              "display_name": "《1997年教育共治备忘录》终稿",
+              "kind": "legal_contract"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_291_DUAL_TRACK_TRUST_AGREEMENT",
+              "timeline_scope": "current",
+              "purpose": "作为备忘录的法律基础附件，展示双轨制的可行性"
+            }
+          ],
+          "action_sequence": [
+            "麦珂冷静地请律师宣读备忘录核心条款，重点解释‘职业分流’与‘退出自由’机制。",
+            "瑟琳娜在听到‘退出自由’条款时，眼中闪过释然，当场签字确认。",
+            "老麦肯齐试图抢走文件，被律师团以法律程序为由挡回。",
+            "麦珂当众宣布，自签字时刻起，任何单方面干涉子女教育的行为均视为违约。"
+          ],
+          "visible_payoff": "瑟琳娜在文件上签下名字，家族长老会的第一次武力施压失败，双轨制获得初步法律认可。",
+          "ending": "瑟琳娜握住麦珂的手，两人相视一笑，确认了新的家庭秩序。老麦肯齐愤然离场，扬言要召集更多族人抗议。",
+          "must_include": [
+            "瑟琳娜签字动作",
+            "退出自由条款的宣读",
+            "老麦肯齐的失态"
+          ],
+          "must_not_include": [
+            "康拉德出场",
+            "医疗造假证据的直接揭露"
+          ],
+          "detailed_synopsis": "1997年11月15日，老麦肯齐带着几位家族长辈气势汹汹地闯入麦珂的书房，指责麦珂沉迷商业，忽视了对子女的引导，企图以‘家族利益’为名推翻麦珂的教育主导权。面对咄咄逼人的长辈，麦珂没有争辩，而是平静地拿出了早已准备好的《教育共治备忘录》。他利用前世记忆中对瑟琳娜内心恐惧的精准把握，指出瑟琳娜真正害怕的是孩子重蹈覆辙，而双轨制下的‘退出自由’正是打破这种恐惧的唯一钥匙。当律师团逐条宣读条款，特别是关于‘职业路径分立’和‘任意一方均可无条件终止合作’的内容时，瑟琳娜眼中的焦虑化为了坚定。她毫不犹豫地拿起笔，在文件上签下了自己的名字。老麦肯齐见状大惊失色，试图抢夺文件，却被麦珂身后的律师团以法律程序为由强硬制止。麦珂冷冷地宣布，从这一刻起，任何未经双方同意的干涉都将被视为违约。瑟琳娜与麦珂的手紧紧握在一起，标志着家庭权力结构的彻底重构。",
+          "source_timeline_start": "1997年11月15日 上午",
+          "source_timeline_end": "1997年11月15日 下午"
+        },
+        {
+          "chapter_id": 306,
+          "timeline_start": "1997-11-17",
+          "timeline_end": "1997-11-17",
+          "scene": "家族大宅客厅",
+          "chapter_goal": "在家族公开听证会上，粉碎长老会对双轨制的质疑，确立其不可动摇的法律地位。",
+          "chapter_title": "自由的代价",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "老麦肯齐",
+            "公证员",
+            "媒体记者"
+          ],
+          "opening_conflict": "家族长老会在大宅客厅召开紧急会议，联合多名亲戚指控双轨制会导致孩子‘流离失所’，要求法院介入撤销昨晚的签约。",
+          "info_gap_use": "麦珂利用前世记忆知道，这些长辈中最顽固的一位其实私下里曾欠下赌债，急需家族资金填补，因此他们反对双轨制的真实动机是担心失去对子女财产的间接控制权。",
+          "opponent_reaction": "老麦肯齐在听证会上声泪俱下地控诉麦珂‘冷血’，却因情绪失控打翻茶杯，弄湿了自己引以为傲的族谱，引发现场哄笑，威信扫地。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "家族大宅客厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "老麦肯齐情绪激动，茶杯落地"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_305_EDU_MEMO_FINAL",
+              "timeline_scope": "current",
+              "purpose": "作为公证书的核心依据，展示其法律效力"
+            }
+          ],
+          "action_sequence": [
+            "公证员现场宣读并封存《教育共治备忘录》，赋予其最高法律效力。",
+            "麦珂当众展示模拟推演报告，证明双轨制下子女成才率更高，且退出机制能最大程度降低风险。",
+            "针对长辈的质疑，麦珂直接点破其经济动机，令对方哑口无言。",
+            "老麦肯齐试图煽动舆论，却因打翻族谱的滑稽场面沦为笑柄。"
+          ],
+          "visible_payoff": "公证处正式盖章认证，长老会的反对无效，双轨制成为不可更改的法律事实。",
+          "ending": "麦珂看着狼狈退场的长老会成员，心中明白这不仅是家庭的胜利，更是为未来对抗更黑暗势力筑起的防线。",
+          "must_include": [
+            "公证员盖章",
+            "老麦肯齐打翻茶杯",
+            "麦珂的点破真相"
+          ],
+          "must_not_include": [
+            "康拉德出场",
+            "S95-B-RW样带的直接发现"
+          ],
+          "detailed_synopsis": "家族长老会在大宅客厅召开紧急会议，联合多名亲戚指控双轨制会导致孩子‘流离失所’，要求法院介入撤销昨晚的签约。公证员现场宣读并封存《教育共治备忘录》，赋予其最高法律效力。麦珂当众展示模拟推演报告，证明双轨制下子女成才率更高，且退出机制能最大程度降低风险。针对长辈的质疑，麦珂直接点破其经济动机，令对方哑口无言。老麦肯齐试图煽动舆论，却因打翻族谱的滑稽场面沦为笑柄。公证处正式盖章认证，长老会的反对无效，双轨制成为不可更改的法律事实。麦珂看着狼狈退场的长老会成员，心中明白这不仅是家庭的胜利，更是为未来对抗更黑暗势力筑起的防线。",
+          "source_timeline_start": "1997年11月16日 上午",
+          "source_timeline_end": "1997年11月16日 下午"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {
+        "entity_id": "MC_SELENA_PARTNERSHIP",
+        "state_key": "governance_depth",
+        "status": "contractual_mutual_trust",
+        "description": "麦珂与瑟琳娜已完成法律层面的家庭治理权重构，建立基于契约的深度互信联盟。"
+      },
+      {
+        "entity_id": "FAMILY_ELDER_POWER",
+        "state_key": "interference_legitimacy",
+        "status": "legally_voided",
+        "description": "家族长老会失去单方面干涉子女教育的法理依据，传统家长式管教模式终结。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_id": "MC_SELENA_PARTNERSHIP",
+        "change_description": "从传统权威关系升级为契约盟友，双方在家庭决策中拥有完全平等的法定地位。"
+      },
+      {
+        "entity_id": "MC_VILLAGER_RELATIONS",
+        "change_description": "家族长辈对麦珂的态度从‘轻视’转为‘被迫尊重’，但暗流涌动。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "RIGHT_FAMILY_GOVERNANCE_001",
+        "status": "secured_by_memorandum",
+        "description": "《教育共治备忘录》已正式签署并公证，双轨制教育模式获得法律保护。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "MC_HEALTH_STATUS",
+        "status": "optimal",
+        "description": "麦珂体重、血压、肺活量三项连续四年无波动，维持最佳生理状态。"
+      }
+    ],
+    "open_threads": [
+      "维克多·兰斯意识到常规手段失效，开始酝酿隐蔽的数据污染方案。",
+      "S95-B-RW废弃样带内的模拟录音将成为未来揭穿世纪转换期医疗模型造假的核心物证。",
+      "1977年工坊少年的身份与现居地仍需进一步挖掘，以打破行业黑箱。"
+    ],
+    "resolved_threads": [
+      "家庭内部因教育分歧产生的隔阂已通过制度化契约解决。",
+      "家族长辈试图单方面干涉子女教育的企图被彻底粉碎。"
+    ],
+    "introduced_characters": [
+      "老麦肯齐（家族长老会代表，反派配角）"
+    ],
+    "next_pressure": "维克多·兰斯启动‘数据污染’计划，针对麦珂正在研发的‘健康趋势预测模型’真实数据来源进行栽赃，直接触发P07阶段的纪录片背叛事件。"
+  }
+}

@@ -1,0 +1,1035 @@
+{
+  "macro_group_id": "MG014",
+  "event_clusters": [
+    {
+      "cluster_id": "EC066",
+      "chapter_span": [
+        131,
+        132
+      ],
+      "source_event_direction": "前世具体受害：前世巴里提交过时病历致麦珂被迫停演，版权被低价强夺。；本事件独有的前世信息差：1981年12月15日巴里将提交基于1979年旧案的虚假听力报告。；今生提前动作：麦珂提前让嘉宾歌手调取1980年原始听力测试声波图备证。；第131章可见小赢：嘉宾歌手当众出示1980年真实数据，当场驳回媒体经理提交的假报告草案。；第132章新交锋：媒体经理试图以‘数据保密’为由拒绝公开原始记录，被苏菲亚直播录音。；阻力方永久现实损失：媒体经理因伪造医疗文件面临行业听证会，信誉首次受损。；主角现实收益：麦珂获得官方机构出具的听力健康无虞初步证明。；不可逆结算键：临床否决文件签署生效；接回死亡控制主线：阻断前世因误诊导致资产流失的死亡链条第一环。",
+      "source_event_direction_sha256": "0dbd4930d96c2d6e596b6b07c5f2c535b560876c028f66e6f6363cd008ea67bf",
+      "source_macro_sha256": "4727a0b676568c342efc1d9aa6cb98244e0b035d811c383dc2cb2e8d3afa9ea1",
+      "name": "健康造假阴谋的终结",
+      "timeline_years": "1981年冬—1982年初",
+      "main_opponent": "巴里·布鲁姆（唱片分销商）",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "苏菲亚·罗德里格斯",
+        "巴里·布鲁姆",
+        "媒体经理克莱尔·霍恩"
+      ],
+      "fictional_obstacle": "巴里·布鲁姆伪造的听力损伤报告与媒体经理的保密阻拦",
+      "prev_life_tragedy": "巴里·布鲁姆提交过时病历导致麦珂停演，版权被低价收购",
+      "info_gap_from_prev_life": "1981年12月15日巴里·布鲁姆将提交基于1979年旧案的虚假听力报告",
+      "why_previous_life_failed": "缺乏实时原始听力数据，无法驳斥伪造报告",
+      "preemptive_avoidance": "麦珂让嘉宾歌手调取1980年原始听力测试声波图，提前准备对比分析",
+      "bait_and_evidence": "在现场演出后，嘉宾歌手公开展示声波图，现场媒体被迫记录；苏菲亚用‘谣言溯源卡’追溯假报告来源至巴里·布鲁姆阵营",
+      "comic_villain_behavior": "媒体经理克莱尔以‘数据保密’为名拒绝公开原始记录，现场大喊‘不准泄露！’却被现场录音机捕捉",
+      "villain_loss": "克莱尔因伪造医疗文件被行业听证会判定失信，职业生涯受永久性打击",
+      "protagonist_gain": "麦珂获得官方机构出具的《听力健康无虞初步证明》并锁定专辑版税控制权",
+      "relationship_change": "团队内部形成‘视觉-听觉-物理’三位一体的铁三角，信任度达到顶峰",
+      "continuity_writes": [
+        "铜质齿轮编号体系在本事件后被正式登记为《锈钉与琴键》资产控制标识",
+        "莉薇娅签署《临床否决文件》撤销巴里·布鲁姆假报告"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_005",
+          "state_key": "ownership_status__extension_EC066",
+          "from": "none",
+          "to": "已授权",
+          "irreversible": true,
+          "evidence": "ART_125_COPPER_GEAR_CERTIFICATE",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "ownership_status"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "MEDIA_MANAGER_CLARE_HORN",
+          "state_key": "legal_status",
+          "from": "有效",
+          "to": "无效",
+          "irreversible": true,
+          "evidence": "ART_131_HEARING_TRANSCRIPT",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "health",
+          "entity_id": "MACK",
+          "state_key": "hearing_status",
+          "from": "争议中",
+          "to": "健康确认",
+          "irreversible": true,
+          "evidence": "ART_132_HEALTH_CERT",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA1981_12_15",
+        "HA1981_12_20"
+      ],
+      "cluster_outcome": "巴里·布鲁姆被行业除名，麦珂掌握专辑版税与包装权的铜质齿轮编号体系，资产主权彻底确立。",
+      "next_event_hook": "维克多·兰斯转向隐蔽渗透，准备发动下一轮数据污染攻击；托马斯·布莱克等律师磨刀霍霍，企图阻止《家庭治理宪章》签署。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 131,
+          "timeline_start": "1982-04-12",
+          "timeline_end": "1982-04-12",
+          "scene": "后台排练厅",
+          "chapter_goal": "利用提前准备的原始听力数据公开驳斥巴里·布鲁姆伪造报告，取得现场媒体与观众支持",
+          "chapter_title": "声波真相的揭露",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "嘉宾歌手艾琳·格雷",
+            "媒体经理克莱尔·霍恩",
+            "现场记者"
+          ],
+          "opening_conflict": "巴里·布鲁姆派出媒体经理克莱尔递交一份声称麦珂听力受损的报告，要求暂停发行并低价收购版权",
+          "info_gap_use": "艾琳现场展示1980年原始听力测试声波图，对比巴里·布鲁姆报告的异常波形",
+          "opponent_reaction": "克莱尔坚持报告机密，试图阻止现场播放声波图",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台排练厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光暗下，投影仪启动"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_133_WAVEFORM_PRINT",
+              "timeline_scope": "current",
+              "display_name": "1980年听力测试声波打印稿",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_125_COPPER_GEAR_CERTIFICATE",
+              "timeline_scope": "current",
+              "purpose": "证明专辑资产编号"
+            }
+          ],
+          "action_sequence": [
+            "麦珂指示艾琳调出声波图",
+            "艾琳将声波图放大投影",
+            "克莱尔试图阻止投影，被现场录音机捕捉",
+            "莉薇娅现场呼喊并递交《听力健康无虞初步证明》草稿"
+          ],
+          "visible_payoff": "媒体现场转播声波对比，观众掌声雷动，巴里·布鲁姆报告被现场记者质疑",
+          "ending": "克莱尔被迫签署撤回报告的临时声明，现场气氛转向支持麦珂",
+          "must_include": [
+            "原始声波图",
+            "现场录音机",
+            "媒体记者"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "在演出前的后台排练厅，巴里·布鲁姆派出的媒体经理克莱尔递交一份声称麦珂因听力受损必须静养的紧急报告，要求暂停《锈钉与琴键》发行并以低价收购版权。麦珂早有预感，提前让嘉宾歌手艾琳·格雷调取1980年原始听力测试的声波图。艾琳在投影仪上展示声波图，清晰显示麦珂的听力频段完全正常。克莱尔慌乱中以‘数据保密’为由阻止投影，却被现场的手持录音机完整记录。莉薇娅迅速递交由专业机构准备的《听力健康无虞初步证明》草稿，记者现场报道并质疑巴里·布鲁姆伪造报告的动机。现场观众掌声雷动，克莱尔被迫签署撤回声明，麦珂在媒体面前取得首场小胜。"
+        },
+        {
+          "chapter_id": 132,
+          "timeline_start": "1982-04-18",
+          "timeline_end": "1982-04-18",
+          "scene": "WNYC 主播室",
+          "chapter_goal": "通过法律程序让官方机构正式否决巴里·布鲁姆假报告，永久性打击媒体经理克莱尔的职业生涯",
+          "chapter_title": "法律审判的回响",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "苏菲亚·罗德里格斯",
+            "媒体经理克莱尔·霍恩",
+            "法官哈罗德·梅森",
+            "现场听众"
+          ],
+          "opening_conflict": "克莱尔以‘数据保密’为由拒绝公开原始听力记录，声称报告已进入司法保密程序",
+          "info_gap_use": "苏菲亚现场展示‘谣言溯源卡’追溯假报告的内部邮件与签名，证实巴里·布鲁姆指示克莱尔伪造文件",
+          "opponent_reaction": "克莱尔激动辩称自己只是执行上级指令，试图将责任转嫁给巴里·布鲁姆",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "WNYC 主播室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "广播铃声响起，主持人宣布‘现场法律审查’"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_134_DENIAL_CERT",
+              "timeline_scope": "current",
+              "display_name": "莉薇娅·普莱斯否决文件",
+              "kind": "evidence"
+            },
+            {
+              "artifact_id": "ART_135_HEARING_TRANSCRIPT",
+              "timeline_scope": "current",
+              "display_name": "行业听证会记录",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_133_WAVEFORM_PRINT",
+              "timeline_scope": "current",
+              "purpose": "对比声波图证据"
+            },
+            {
+              "artifact_id": "ART_128_EXPERT_REPORT",
+              "timeline_scope": "current",
+              "purpose": "专家医学鉴定报告"
+            }
+          ],
+          "action_sequence": [
+            "苏菲亚启动‘谣言溯源卡’系统，现场投影邮件链",
+            "法官哈罗德要求克莱尔提交原始听力记录",
+            "克莱尔拒绝，现场录音机再次捕捉其违抗指令",
+            "莉薇娅提交《否决文件》，官方机构立即撤销巴里·布鲁姆报告",
+            "听证会记录生成，克莱尔被判定失信"
+          ],
+          "visible_payoff": "官方机构出具《听力健康无虞初步证明》正式文件，克莱尔被行业听证会列入失信名单",
+          "ending": "克莱尔在听证会后被宣布永久失去媒体从业资格，巴里·布鲁姆被行业除名，麦珂的资产控制权正式生效",
+          "must_include": [
+            "谣言溯源卡系统",
+            "现场录音机",
+            "法官",
+            "官方否决文件"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "互联网"
+          ],
+          "detailed_synopsis": "12月20日下午，WNYC广播电台的直播间被改造成临时法律审判现场。克莱尔再次以‘数据保密’为由拒绝公开原始听力记录，试图阻止麦珂的进一步行动。苏菲亚·罗德里格斯启动她研发的‘谣言溯源卡’系统，现场投影出巴里·布鲁姆指示克莱尔伪造报告的内部邮件与签名，证据链完整。法官哈罗德·梅森严肃宣读《专家医学鉴定报告》与现场录音，要求克莱尔交出原始记录。克莱尔仍坚持拒绝，现场录音机捕捉到其违抗法庭指令的声音。莉薇娅·普莱斯立即递交《莉薇娅·普莱斯否决文件》，官方机构依据该文件撤销巴里·布鲁姆提交的假报告，并出具《听力健康无虞初步证明》。听证会记录生成，克莱尔被判定失信，行业协会宣布其永久失去媒体从业资格。巴里·布鲁姆因伪造行为被行业除名，麦珂通过铜质齿轮编号体系正式锁定专辑版税与包装权，资产主权彻底确立。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC067",
+      "chapter_span": [
+        133,
+        134
+      ],
+      "source_event_direction": "前世具体受害：前世宣传照底片被调包，封面视觉被篡改引发舆论质疑。；本事件独有的前世信息差：1981年12月20日胶片冲洗事故率峰值将导致影像失真。；今生提前动作：麦珂强制所有底片押运至三家冲印厂进行交叉比对。；第133章可见小赢：独立冲印厂发现媒体经理阵营提供的底片存在人为划痕痕迹。；第134章新交锋：媒体经理指责麦珂团队‘过度 paranoid'，试图销毁备用底片。；阻力方永久现实损失：维克多阵营渗透宣传渠道的计划彻底暴露并失败。；主角现实收益：确立‘视觉-听觉-物理’三位一体的专辑视觉档案标准。；不可逆结算键：底片交叉比对报告归档；接回死亡控制主线：消除前世因视觉素材被篡改导致的艺术价值贬损。",
+      "source_event_direction_sha256": "3c7865b3563066babdb2c6c9a3f5343eb9fb55d2865d978d93e2f44f47202cbe",
+      "source_macro_sha256": "4727a0b676568c342efc1d9aa6cb98244e0b035d811c383dc2cb2e8d3afa9ea1",
+      "name": "视觉真相的交叉审计",
+      "timeline_years": "1981年冬—1982年初",
+      "main_opponent": "巴里·布鲁姆及其维克多阵营的媒体经理克莱尔·霍恩",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "苏菲亚·罗德里格斯",
+        "克莱尔·霍恩"
+      ],
+      "fictional_obstacle": "媒体经理团队企图以‘过度 paranoid’为借口销毁备用底片，企图掩盖调包痕迹。",
+      "prev_life_tragedy": "前世宣传照底片被调包，封面视觉被篡改导致舆论质疑。",
+      "info_gap_from_prev_life": "1981年12月20日胶片冲洗事故率峰值将导致影像失真。",
+      "why_previous_life_failed": "未能预见冲洗事故导致的失真，导致底片被替换后难以辨认。",
+      "preemptive_avoidance": "麦珂强制所有底片押运至三家冲印厂进行交叉比对，并指派莉薇娅全程监督。",
+      "bait_and_evidence": "独立冲印厂在底片边缘发现细微划痕，证实底片被人为干预。",
+      "comic_villain_behavior": "克莱尔在会议上夸张指责麦珂团队‘神经质’，现场试图用手撕毁备用底片。",
+      "villain_loss": "维克多阵营的宣传渠道渗透计划被彻底曝光，克莱尔被行业禁入。",
+      "protagonist_gain": "确立‘视觉-听觉-物理’三位一体的专辑视觉档案标准，底片交叉比对报告正式归档。",
+      "relationship_change": "团队内部信任度提升，形成铁三角协作模式。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_004",
+          "state_key": "visual_archive_status",
+          "from": "未建立",
+          "to": "已标准化",
+          "irreversible": true,
+          "evidence": "ART_133_CROSS_COMPARE_REPORT",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "MEDIA_MANAGER_CLARE_HORN",
+          "state_key": "legal_status__extension_EC067",
+          "from": "none",
+          "to": "无效",
+          "irreversible": true,
+          "evidence": "ART_133_CROSS_COMPARE_REPORT",
+          "effect_type": "villain_loss",
+          "source_state_key": "legal_status"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA1981_12_20"
+      ],
+      "cluster_outcome": "底片交叉比对报告归档，视觉资产主权稳固，维克多阵营渗透失败。",
+      "next_event_hook": "维克多·兰斯转向隐蔽渗透，准备发动下一轮数据污染攻击；托马斯·布莱克等律师磨刀霍霍，企图阻止《家庭治理宪章》签署。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 133,
+          "timeline_start": "1982-04-18",
+          "timeline_end": "1982-04-24",
+          "scene": "市中心三家冲印厂的暗房",
+          "chapter_goal": "揭露底片被调包的证据，取得首次小胜。",
+          "chapter_title": "划痕的真相",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "苏菲亚·罗德里格斯",
+            "冲印厂技术员阿尔弗雷德"
+          ],
+          "opening_conflict": "克莱尔暗中指示手下更换底片，麦珂团队发现底片边缘异常。",
+          "info_gap_use": "利用12月20日冲洗事故导致的失真高峰，要求三厂同步检测同一底片。",
+          "opponent_reaction": "克莱尔派人现场质疑比对必要性，试图阻止押运。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市中心三家冲印厂的暗房",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "雨声敲打窗玻璃，麦珂递交封存的原始底片"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_133_CROSS_COMPARE_REPORT",
+              "timeline_scope": "current",
+              "display_name": "《底片交叉比对报告》",
+              "kind": "report"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "押运底片至第一家冲印厂",
+            "技术员发现划痕",
+            "记录并送至第二家",
+            "第三家复核确认划痕一致"
+          ],
+          "visible_payoff": "独立冲印厂确认底片被人为划痕破坏，证据初步形成。",
+          "ending": "麦珂将报告递交给苏菲亚，准备进入下一轮舆论反击。",
+          "must_include": [
+            "划痕细节描写",
+            "押运过程的安全措施",
+            "必须呈现信息差的实际使用：利用12月20日冲洗事故导致的失真高峰，要求三厂同步检测同一底片。"
+          ],
+          "must_not_include": [
+            "现代电子通讯",
+            "不得把前世记忆写成今生实体证据"
+          ],
+          "detailed_synopsis": "在寒冷的十二月，麦珂指挥莉薇娅将原始宣传底片装入防水箱，三名保镖护送至市中心的三家冲印厂。第一家技术员阿尔弗雷德在暗房灯光下发现底片边缘有细微划痕，立即拍照存档并送至第二家。第二家在放大镜下确认划痕形状与第一家一致，随后将底片转交第三家。第三家复核后出具《底片交叉比对报告》，明确标注人为干预痕迹。克莱尔现场挑衅，指责麦珂团队过度警惕，却被报告的客观数据所压制。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_128_EXPERT_REPORT",
+              "timeline_scope": "previous_life",
+              "purpose": "提供胶片失真阈值参考"
+            }
+          ]
+        },
+        {
+          "chapter_id": 134,
+          "timeline_start": "1982-04-26",
+          "timeline_end": "1982-05-02",
+          "scene": "市政大礼堂的新闻发布厅",
+          "chapter_goal": "彻底粉碎克莱尔的阴谋，巩固视觉资产控制。",
+          "chapter_title": "真相的终结",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "苏菲亚·罗德里格斯",
+            "克莱尔·霍恩",
+            "记者团"
+          ],
+          "opening_conflict": "克莱尔在发布会上指责麦珂团队‘过度 paranoid’，并暗中指示手下销毁备用底片。",
+          "info_gap_use": "引用12月20日冲洗事故的技术报告，证明任何未在三厂比对的底片均不可用。",
+          "opponent_reaction": "克莱尔现场尝试抢夺备用底片箱，企图将其撕毁。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市政大礼堂的新闻发布厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光聚焦在麦珂手中的《底片交叉比对报告》"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_133_CROSS_COMPARE_REPORT",
+              "timeline_scope": "current",
+              "purpose": "作为公开证据展示"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在台上展示报告",
+            "苏菲亚现场播放划痕放大影像",
+            "克莱尔冲上台企图夺走备用底片箱",
+            "保安阻止并现场销毁克莱尔的伪造文件"
+          ],
+          "visible_payoff": "克莱尔的阴谋被现场摄像机完整记录，媒体一致报道其造假行为。",
+          "ending": "克莱尔被行业协会开除，维克多阵营的宣传渗透计划彻底瓦解，视觉档案标准正式写入《锈钉与琴键》发行手册。",
+          "must_include": [
+            "现场摄像机记录",
+            "报告的具体数据展示",
+            "必须呈现信息差的实际使用：引用12月20日冲洗事故的技术报告，证明任何未在三厂比对的底片均不可用。"
+          ],
+          "must_not_include": [
+            "手机或电子邮件",
+            "不得把前世记忆写成今生实体证据"
+          ],
+          "detailed_synopsis": "发布会现场灯光聚焦在麦珂手中的《底片交叉比对报告》上，苏菲亚将划痕放大影像投射在大屏幕。克莱尔怒不可遏，冲上台企图夺走备用底片箱，保安立刻将她制服并将她手中的伪造文件现场撕毁。记者们用胶片相机记录下整场闹剧，随后在报纸头版刊登克莱尔造假证据。行业协会随即发布通告，宣布克莱尔的媒体经理资格无效并永久除名。维克多阵营的渗透计划在舆论与法律双重打击下彻底崩溃，麦珂团队正式将‘视觉-听觉-物理’三位一体的专辑视觉档案标准写入发行手册，确保未来所有宣传素材必须经过同样的交叉比对程序。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_128_EXPERT_REPORT",
+              "timeline_scope": "previous_life",
+              "purpose": "解释冲洗事故对影像的影响"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC068",
+      "chapter_span": [
+        135,
+        136
+      ],
+      "source_event_direction": "前世具体受害：前世混音中频段被削波，音质被标准化设备强行劣化。；本事件独有的前世信息差：前世混音争议中频段削波阈值参数为特定数值。；今生提前动作：麦珂复述该参数，促使瑟琳娜开发‘可听化误差标尺’刻度盘。；第135章可见小赢：新开发的物理刻度盘在试听室现场验证了母带未被篡改。；第136章新交锋：分销商要求使用通用设备压缩动态范围，被瑟琳娜拒绝。；阻力方永久现实损失：行业标准无法再单方面通过技术手段抹杀实验性音色。；主角现实收益：专辑母带音质锁定为不可被数字化设备篡改的物理状态。；不可逆结算键：物理刻度盘校准完成；接回死亡控制主线：防止前世因技术垄断导致的艺术表达权丧失。",
+      "source_event_direction_sha256": "ac8247a3e093059876b3200f7328368fc21ed6b56e7d9aa219b28699813e1fcf",
+      "source_macro_sha256": "4727a0b676568c342efc1d9aa6cb98244e0b035d811c383dc2cb2e8d3afa9ea1",
+      "name": "铜质齿轮音质锁定行动",
+      "timeline_years": "1981年冬—1982年初",
+      "main_opponent": "巴里·布鲁姆及其所属唱片分销巨头",
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜·格雷",
+        "莉薇娅·普莱斯",
+        "苏菲亚·罗德里格斯"
+      ],
+      "fictional_obstacle": "分销商强行要求使用通用压缩设备，企图削弱实验性音色。",
+      "prev_life_tragedy": "前世混音中频段被削波，导致专辑音质被行业标准设备抹杀。",
+      "info_gap_from_prev_life": "前世未掌握削波阈值的精确数值，仅知道被削。",
+      "why_previous_life_failed": "缺乏可量化的技术参数，无法说服工程团队。",
+      "preemptive_avoidance": "麦珂在本世复述削波阈值（-3.2 dB），促使瑟琳娜研发可听化误差标尺。",
+      "bait_and_evidence": "利用莉薇娅准备的1980年真实听力测试原始数据，交叉比对后形成《误差标尺校准报告》。",
+      "comic_villain_behavior": "巴里·布鲁姆在会议上夸口“只要压缩一点，销量翻倍”，并现场演示失真效果。",
+      "villain_loss": "行业标准委员会在公开听审会上采纳误差标尺，禁止单方面使用压缩设备。",
+      "protagonist_gain": "专辑母带音质通过物理刻度盘锁定，任何数字化或标准化设备均无法改变。",
+      "relationship_change": "团队内部形成‘视觉‑听觉‑物理’三位一体的铁三角，信任度提升至最高。",
+      "continuity_writes": [
+        "视觉资产已标准化归档",
+        "铜质齿轮编号体系获行业认可"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_005",
+          "state_key": "ownership_status__extension_EC068",
+          "from": "none",
+          "to": "已授权",
+          "irreversible": true,
+          "evidence": "ART_135_COPPER_GEAR_CERT",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "ownership_status"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_TL_001",
+          "state_key": "technical_standard",
+          "from": "可压缩",
+          "to": "不可压缩",
+          "irreversible": true,
+          "evidence": "ART_136_ERROR_SCALE_REPORT",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1981_12_15",
+        "HA_1981_12_20"
+      ],
+      "cluster_outcome": "母带音质锁定为不可被数字化设备篡改的物理状态，巴里·布鲁姆的压缩阴谋彻底破产。",
+      "next_event_hook": "维克多·兰斯转向隐蔽渗透，准备发动数据污染攻击；托马斯·布莱克等律师磨刀霍霍，欲以法律手段阻止《家庭治理宪章》签署。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 135,
+          "timeline_start": "1982-05-02",
+          "timeline_end": "1982-05-06",
+          "scene": "工作室主控室",
+          "chapter_goal": "验证可听化误差标尺的有效性，确保母带未被篡改。",
+          "chapter_title": "刻度的回响",
+          "participants": [
+            "麦珂",
+            "瑟琳娜·格雷",
+            "莉薇娅·普莱斯"
+          ],
+          "opening_conflict": "分销商要求使用旧式压缩机进行预览，瑟琳娜坚持使用新研制的误差标尺。",
+          "info_gap_use": "麦珂提供前世削波阈值‑3.2 dB，作为标尺校准基准。",
+          "opponent_reaction": "巴里·布鲁姆现场嘲讽标尺无用，试图强行接入压缩机。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "工作室主控室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "门铃响起，巴里·布鲁姆带着压缩机进入"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_135_ERROR_SCALE",
+              "timeline_scope": "current",
+              "display_name": "可听化误差标尺校准报告",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_130_DENIAL_CERT",
+              "timeline_scope": "current",
+              "purpose": "佐证巴里·布鲁姆伪造健康报告的背景"
+            }
+          ],
+          "action_sequence": [
+            "麦珂朗读削波阈值并示意标尺刻度",
+            "瑟琳娜调试标尺并对母带进行实测",
+            "莉薇娅记录声波波形并比对历史数据",
+            "巴里·布鲁姆尝试使用压缩机，标尺立即显示超出阈值"
+          ],
+          "visible_payoff": "标尺显示母带保持原始频段，压缩机被迫停机。",
+          "ending": "团队确认母带未受任何压缩，标尺校准完成。",
+          "must_include": [
+            "削波阈值数值",
+            "误差标尺",
+            "现场声波波形记录"
+          ],
+          "must_not_include": [
+            "数字化设备",
+            "互联网"
+          ],
+          "detailed_synopsis": "在寒冷的十二月，麦珂与瑟琳娜、莉薇娅在银湾市独立录音室迎来巴里·布鲁姆的突袭。巴里·布鲁姆携带老式压缩机，声称只有这样才能让专辑适配大众市场。麦珂立刻引用前世记忆中的‑3.2 dB削波阈值，指示瑟琳娜启动新研制的可听化误差标尺。标尺在母带播放时精准捕捉到任何频段的微小压缩，立即在仪表盘上闪红。巴里·布鲁姆强行接入压缩机，标尺瞬间报警，显示超出阈值，现场技术员被迫停止操作。莉薇娅快速记录下声波波形，并与1980年真实听力测试数据对照，证实母带保持原始频段。三人共同签署《可听化误差标尺校准报告》，标志着物理音质锁定的第一步成功。"
+        },
+        {
+          "chapter_id": 136,
+          "timeline_start": "1982-05-12",
+          "timeline_end": "1982-05-18",
+          "scene": "公司会议厅",
+          "chapter_goal": "阻止分销商以技术手段压缩动态范围，彻底让行业标准失效。",
+          "chapter_title": "压缩的终结",
+          "participants": [
+            "麦珂",
+            "瑟琳娜·格雷",
+            "巴里·布鲁姆",
+            "苏菲亚·罗德里格斯"
+          ],
+          "opening_conflict": "巴里·布鲁姆在高层会议上坚持使用通用压缩设备，要求签署技术授权。",
+          "info_gap_use": "麦珂展示《可听化误差标尺校准报告》并引用削波阈值，证明压缩会破坏实验音色。",
+          "opponent_reaction": "巴里·布鲁姆怒斥标尺为“实验玩意”，并提出法律诉讼威胁。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "公司会议厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "会议室灯光暗下，投影仪亮起"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_136_RUMOR_CARD",
+              "timeline_scope": "current",
+              "display_name": "ART_136_RUMOR_CARD",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_135_ERROR_SCALE",
+              "timeline_scope": "current",
+              "purpose": "作为技术证据提交给行业委员会"
+            },
+            {
+              "artifact_id": "ART_136_RUMOR_CARD",
+              "timeline_scope": "current",
+              "purpose": "苏菲亚的谣言溯源卡，追溯巴里·布鲁姆伪造报告的链条"
+            }
+          ],
+          "action_sequence": [
+            "苏菲亚展示谣言溯源卡，指向维克多阵营的新闻操控",
+            "麦珂现场演示标尺对压缩机的即时报警",
+            "瑟琳娜阐述标尺的物理原理，强调不可逆性",
+            "巴里·布鲁姆被迫签署《技术拒绝声明》，放弃压缩要求"
+          ],
+          "visible_payoff": "行业标准委员会正式记录压缩设备违规，巴里·布鲁姆失去技术授权。",
+          "ending": "会议结束，巴里·布鲁姆黯然离场，团队庆祝技术胜利。",
+          "must_include": [
+            "谣言溯源卡",
+            "技术拒绝声明",
+            "现场标尺报警"
+          ],
+          "must_not_include": [
+            "电子邮件",
+            "网络上传"
+          ],
+          "detailed_synopsis": "十二月的最后一周，巴里·布鲁姆把持的唱片分销巨头在其公司总部的豪华会议厅召集高层，企图以技术授权的名义强行将通用压缩设备嵌入《锈钉与琴键》发行流程。麦珂提前准备好《可听化误差标尺校准报告》，并在会议中公开削波阈值‑3.2 dB的精确数值。苏菲亚则展示最新完成的谣言溯源卡，追溯巴里·布鲁姆伪造健康报告的新闻来源，指向维克多阵营的幕后操控。瑟琳娜现场连线标尺，对压缩机进行即时检测，仪表盘红灯闪烁，标尺报警声划破会议室的沉默。巴里·布鲁姆愤怒指责标尺为“玩具”，并扬言诉诸法律。面对不可辩驳的物理证据和苏菲亚的舆论链条，行业标准委员会在现场投票通过《技术拒绝声明》，正式禁止使用该压缩设备。巴里·布鲁姆被迫签字，失去技术授权，会议在一阵沉默后结束，团队成员相视而笑，标尺的校准完成标志着音质锁定进入不可逆阶段。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC069",
+      "chapter_span": [
+        137,
+        138
+      ],
+      "source_event_direction": "前世具体受害：前世版税控制权缺失，资产被唱片公司非法转移。；本事件独有的前世信息差：前世未建立物理资产确权机制导致最终破产清算。；今生提前动作：麦珂引入铜质齿轮编号体系，将每张母带与实体编号绑定。；第137章可见小赢：三家银行见证下，首批铜质齿轮编号锁入联锁保险柜。；第138章新交锋：媒体经理试图以‘合同条款模糊’为由主张优先分配权，被律师驳斥。；阻力方永久现实损失：媒体经理失去对《锈钉与琴键》后续发行收益的任何法律追索权。；主角现实收益：麦珂确立对专辑版税与周边发行的绝对物理资产主权。；不可逆结算键：铜质齿轮编号体系法定生效；接回死亡控制主线：切断前世因资产失控导致的经济生命终结路径。",
+      "source_event_direction_sha256": "791b6aced01674797f41748cc77485c440e582e855649d4a9f4858976ec05dc7",
+      "source_macro_sha256": "4727a0b676568c342efc1d9aa6cb98244e0b035d811c383dc2cb2e8d3afa9ea1",
+      "name": "铜质齿轮与沉默的账本",
+      "timeline_years": "1981年冬—1982年初",
+      "main_opponent": "巴里·布鲁姆",
+      "opposition_type": "institutional",
+      "event_type": "contract_rights",
+      "solution_type": "financial_counter",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "巴里·布鲁姆",
+        "莉薇娅·普莱斯",
+        "苏菲亚·罗德里格斯"
+      ],
+      "fictional_obstacle": "巴里·布鲁姆试图利用合同中对‘发行权’定义的模糊性，声称母带物理保管权不等于收益分配权，要求重新谈判版税比例。",
+      "prev_life_tragedy": "前世因缺乏物理资产确权机制，麦珂的版税被唱片公司通过复杂的财务手段非法转移，最终导致破产清算。",
+      "info_gap_from_prev_life": "前世未建立物理资产确权机制导致最终破产清算。",
+      "why_previous_life_failed": "依赖口头承诺和纸质合同，缺乏不可篡改的物理绑定证据。",
+      "preemptive_avoidance": "麦珂引入铜质齿轮编号体系，将每张母带与实体编号绑定，并在三家银行见证下锁入联锁保险柜。",
+      "bait_and_evidence": "巴里·布鲁姆试图抢夺母带控制权，麦珂展示铜质齿轮编号与银行保险柜钥匙的对应关系，证明资产已物理隔离。",
+      "comic_villain_behavior": "巴里·布鲁姆在谈判中试图用‘行业惯例’压人，却因不熟悉铜质齿轮的机械锁定原理，尴尬地试图用蛮力撬开保险柜，被保安制止。",
+      "villain_loss": "巴里·布鲁姆失去对《锈钉与琴键》后续发行收益的任何法律追索权，并被行业除名。",
+      "protagonist_gain": "麦珂确立对专辑版税与周边发行的绝对物理资产主权。",
+      "relationship_change": "团队内部形成‘视觉-听觉-物理’三位一体的铁三角协作模式，信任度达到顶峰。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_005",
+          "state_key": "ownership_status__extension_EC069",
+          "from": "已授权",
+          "to": "绝对主权",
+          "irreversible": true,
+          "evidence": "ART_137_BANK_DEPOSIT_SLIP",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_BB_001",
+          "state_key": "distribution_rights",
+          "from": "争议中",
+          "to": "无效",
+          "irreversible": true,
+          "evidence": "ART_138_LAWYER_LETTER",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [],
+      "cluster_outcome": "铜质齿轮编号体系法定生效，麦珂彻底摆脱‘怀旧童星’标签，被公认为掌控物理资产的当代艺术家。",
+      "next_event_hook": "维克多·兰斯转向隐蔽渗透，准备发动数据污染攻击；托马斯·布莱克等律师磨刀霍霍，欲以法律手段阻止《家庭治理宪章》签署。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 137,
+          "timeline_start": "1982-05-18",
+          "timeline_end": "1982-05-19",
+          "scene": "银湾市联邦储备银行地下金库",
+          "chapter_goal": "在三家银行见证下，将首批铜质齿轮编号锁入联锁保险柜，完成物理资产隔离。",
+          "chapter_title": "沉默的齿轮",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "莉薇娅·普莱斯",
+            "银行经理"
+          ],
+          "opening_conflict": "巴里·布鲁姆试图以‘紧急审计’为由，要求暂停母带封存，声称需要检查音质是否符合发行标准。",
+          "info_gap_use": "麦珂利用前世记忆，知道巴里·布鲁姆会在圣诞节前夕制造混乱，提前安排银行经理在场见证。",
+          "opponent_reaction": "巴里·布鲁姆愤怒地指责麦珂不信任合作伙伴，试图用‘行业惯例’施压。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市联邦储备银行地下金库",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "沉重的金属门缓缓关闭，隔绝了外界的喧嚣。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_137_BANK_DEPOSIT_SLIP",
+              "timeline_scope": "current",
+              "display_name": "银行寄存凭证",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_130_DENIAL_CERT",
+              "timeline_scope": "current",
+              "purpose": "证明麦珂听力健康，反驳巴里·布鲁姆的虚假指控"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆闯入金库，要求检查母带。",
+            "麦珂展示铜质齿轮编号，并指出其与母带的唯一对应关系。",
+            "莉薇娅·普莱斯出示听力测试报告，反驳巴里·布鲁姆的健康造假。",
+            "银行经理见证下，麦珂将齿轮编号锁入联锁保险柜。"
+          ],
+          "visible_payoff": "巴里·布鲁姆被保安请出金库，麦珂成功完成物理资产隔离。",
+          "ending": "麦珂站在金库门口，看着巴里·布鲁姆远去的背影，心中默念：‘游戏才刚刚开始。’",
+          "must_include": [
+            "铜质齿轮编号",
+            "联锁保险柜",
+            "银行经理见证"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "互联网"
+          ],
+          "detailed_synopsis": "1981年圣诞前夕，银湾市联邦储备银行地下金库。巴里·布鲁姆带着两名助手闯入，声称需要紧急审计母带音质。麦珂冷静地展示铜质齿轮编号，指出其与母带的唯一对应关系。莉薇娅·普莱斯出示听力测试报告，反驳巴里·布鲁姆的健康造假。在银行经理的见证下，麦珂将齿轮编号锁入联锁保险柜，完成物理资产隔离。巴里·布鲁姆愤怒地指责麦珂不信任合作伙伴，但无济于事。麦珂站在金库门口，看着巴里·布鲁姆远去的背影，心中默念：‘游戏才刚刚开始。’"
+        },
+        {
+          "chapter_id": 138,
+          "timeline_start": "1982-05-30",
+          "timeline_end": "1982-05-31",
+          "scene": "麦珂律师事务所会议室",
+          "chapter_goal": "驳斥媒体经理以‘合同条款模糊’为由主张优先分配权，确立麦珂对专辑版税与周边发行的绝对物理资产主权。",
+          "chapter_title": "法律的齿轮",
+          "participants": [
+            "麦珂",
+            "媒体经理",
+            "律师",
+            "苏菲亚·罗德里格斯"
+          ],
+          "opening_conflict": "媒体经理试图以‘合同条款模糊’为由，主张对《锈钉与琴键》的优先分配权。",
+          "info_gap_use": "麦珂利用前世记忆，知道媒体经理会利用合同漏洞，提前准备法律文件。",
+          "opponent_reaction": "媒体经理试图用‘行业惯例’施压，但被律师驳斥。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂律师事务所会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "律师将一叠文件摔在桌上，发出沉闷的声响。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_138_LAWYER_LETTER",
+              "timeline_scope": "current",
+              "display_name": "律师函",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_137_BANK_DEPOSIT_SLIP",
+              "timeline_scope": "current",
+              "purpose": "证明资产已物理隔离"
+            }
+          ],
+          "action_sequence": [
+            "媒体经理提出优先分配权主张。",
+            "麦珂的律师出示铜质齿轮编号与银行寄存凭证，证明资产已物理隔离。",
+            "苏菲亚·罗德里格斯展示谣言溯源卡，揭露媒体经理与巴里·布鲁姆的勾结。",
+            "律师驳斥媒体经理的主张，宣布其失去对专辑收益的任何法律追索权。"
+          ],
+          "visible_payoff": "媒体经理被逐出会议室，麦珂确立对专辑版税与周边发行的绝对物理资产主权。",
+          "ending": "麦珂看着窗外飘落的雪花，心中默念：‘现在，轮到我来制定规则了。’",
+          "must_include": [
+            "铜质齿轮编号",
+            "律师函",
+            "谣言溯源卡"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "互联网"
+          ],
+          "detailed_synopsis": "1982年1月，麦珂律师事务所会议室。媒体经理试图以‘合同条款模糊’为由，主张对《锈钉与琴键》的优先分配权。麦珂的律师出示铜质齿轮编号与银行寄存凭证，证明资产已物理隔离。苏菲亚·罗德里格斯展示谣言溯源卡，揭露媒体经理与巴里·布鲁姆的勾结。律师驳斥媒体经理的主张，宣布其失去对专辑收益的任何法律追索权。媒体经理被逐出会议室，麦珂确立对专辑版税与周边发行的绝对物理资产主权。麦珂看着窗外飘落的雪花，心中默念：‘现在，轮到我来制定规则了。’"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC070",
+      "chapter_span": [
+        139,
+        140
+      ],
+      "source_event_direction": "前世具体受害：前世舞台液压故障致人身威胁，演出被迫中断。；本事件独有的前世信息差：1980年升降台故障源于压力表读数缺失。；今生提前动作：麦珂推动巡演规程纳入人工读数强制登记制度。；第139章可见小赢：后台工作人员在彩排时当场纠正了液压阀松动隐患。；第140章新交锋：媒体经理散布‘麦珂故弄玄虚’谣言，被现场观众起立反驳。；阻力方永久现实损失：维克多阵营利用事故制造混乱的阴谋彻底破产。；主角现实收益：麦珂确立安全规程新标准，公众认知跃迁为革命艺术家。；不可逆结算键：安全规程全员签署生效；接回死亡控制主线：终结前世因舞台事故导致的人身毁灭风险。",
+      "source_event_direction_sha256": "502407b4b1539ccd9cce8d74500a5e6ecb2ff02326a2153e046f7d1eed9c5c57",
+      "source_macro_sha256": "4727a0b676568c342efc1d9aa6cb98244e0b035d811c383dc2cb2e8d3afa9ea1",
+      "name": "液压阀下的生死博弈与舆论反杀",
+      "timeline_years": "1981年12月",
+      "main_opponent": "巴里·布鲁姆及其指使的舞台主管",
+      "opposition_type": "villain",
+      "event_type": "performance",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "巴里·布鲁姆",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯"
+      ],
+      "fictional_obstacle": "巴里·布鲁姆指使舞台主管故意忽略液压系统压力表读数缺失的隐患，企图在《锈钉与琴键》首演时制造‘意外’事故，迫使麦珂因伤退圈并低价转让版权。",
+      "prev_life_tragedy": "前世麦珂在1980年巡演中因舞台升降台液压故障坠落重伤，演出中断，职业生涯停滞，最终被巴里·布鲁姆以极低价格收购版权。",
+      "info_gap_from_prev_life": "麦珂记得前世事故的根本原因是压力表读数缺失导致维护人员未能及时发现压力异常，而非机械老化。",
+      "why_previous_life_failed": "前世麦珂缺乏技术话语权，盲目信任专业团队，未建立强制的人工读数登记制度，导致隐患未被发现。",
+      "preemptive_avoidance": "麦珂在彩排前强行推行‘人工读数强制登记制度’，要求所有液压设备操作员在每次升降前必须手写记录压力表数值并签字，由莉薇娅现场复核。",
+      "bait_and_evidence": "麦珂故意在彩排中表现出对旧设备的‘怀旧’信任，引诱舞台主管放松警惕，随后莉薇娅当场出示手写记录表，揭露主管未执行读数登记的违规事实，并展示因读数缺失导致的潜在压力过载数据。",
+      "comic_villain_behavior": "巴里·布鲁姆在后台试图用‘艺术需要冒险’的虚伪说辞掩盖安全隐患，甚至夸张地模仿麦珂前世受伤时的痛苦表情以博取同情，结果被麦珂冷眼无视，场面滑稽尴尬。",
+      "villain_loss": "巴里·布鲁姆的‘意外事故’阴谋破产，其指使的舞台主管因违规操作被行业通报批评，维克多阵营的渗透计划暴露，声誉受损。",
+      "protagonist_gain": "麦珂确立‘安全规程全员签署生效’的新标准，公众通过现场直播看到麦珂对安全的严谨态度，认知从‘脆弱童星’跃迁为‘掌控全局的革命艺术家’。",
+      "relationship_change": "团队内部‘视觉-听觉-物理’铁三角协作模式进一步巩固，莉薇娅对麦珂的信任达到顶峰，苏菲亚通过记录现场舆论反应，完善了‘谣言溯源卡’系统。",
+      "continuity_writes": [
+        "RIGHT_MK_005:ownership_status__extension_EC070",
+        "RIGHT_BB_001:distribution_rights__extension_EC070"
+      ],
+      "state_transitions": [
+        {
+          "domain": "health",
+          "entity_id": "SAFETY_STAGE_001",
+          "state_key": "protocol_status",
+          "from": "未执行",
+          "to": "全员签署生效",
+          "irreversible": true,
+          "evidence": "ART_139_PRESSURE_LOG_SIGNATURE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_MK_001",
+          "state_key": "public_perception",
+          "from": "脆弱童星",
+          "to": "革命艺术家",
+          "irreversible": true,
+          "evidence": "ART_140_AUDIENCE_STANDING_OVATION",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_BB_001",
+          "state_key": "sabotage_attempt_status",
+          "from": "进行中",
+          "to": "彻底破产",
+          "irreversible": true,
+          "evidence": "ART_140_VICTOR_INVESTIGATION_REPORT",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1981_DEC_15"
+      ],
+      "cluster_outcome": "麦珂通过强制安全规程和现场舆论反杀，彻底粉碎巴里·布鲁姆的事故阴谋，确立安全新标准，公众认知完成跃迁。",
+      "next_event_hook": "维克多·兰斯转向隐蔽渗透，准备发动数据污染攻击；托马斯·布莱克等律师磨刀霍霍，欲以法律手段阻止《家庭治理宪章》签署。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 139,
+          "timeline_start": "1982-05-31",
+          "timeline_end": "1982-05-31",
+          "scene": "后台控制室",
+          "chapter_goal": "揭露舞台主管未执行读数登记的违规事实，消除液压隐患。",
+          "chapter_title": "压力表下的沉默真相",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "舞台主管",
+            "巴里·布鲁姆"
+          ],
+          "opening_conflict": "舞台主管拒绝在液压设备读数表上签字，声称‘设备运行正常无需多此一举’，试图蒙混过关。",
+          "info_gap_use": "麦珂利用前世记忆，指出该型号液压表在低温下读数易失真，必须人工复核，并展示莉薇娅提前准备的1980年事故分析报告。",
+          "opponent_reaction": "巴里·布鲁姆试图以‘艺术风险’为由施压，舞台主管则慌张辩解，试图掩盖未检查压力表的真相。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台控制室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂走进控制室，要求查看液压系统读数记录。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_139_PRESSURE_LOG_SIGNATURE",
+              "timeline_scope": "current",
+              "display_name": "液压设备人工读数强制登记表",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_130_DENIAL_CERT",
+              "timeline_scope": "current",
+              "purpose": "证明麦珂对细节的严谨态度，为后续安全规程提供权威背书。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂要求舞台主管出示液压设备读数记录。",
+            "舞台主管拒绝签字，声称设备正常。",
+            "麦珂指出低温下读数易失真，要求人工复核。",
+            "莉薇娅出示1980年事故分析报告，揭露隐患。",
+            "舞台主管慌张辩解，巴里·布鲁姆施压。",
+            "麦珂强制要求全员签署读数登记表，消除隐患。"
+          ],
+          "visible_payoff": "舞台主管被迫在登记表上签字，液压隐患被消除，麦珂确立安全新标准。",
+          "ending": "麦珂看着签署完毕的登记表，冷冷地对巴里·布鲁姆说：‘艺术不需要拿命冒险。’",
+          "must_include": [
+            "压力表读数缺失的细节",
+            "莉薇娅出示事故分析报告",
+            "舞台主管的慌张辩解"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "互联网"
+          ],
+          "detailed_synopsis": "1981年12月15日下午，麦珂在后台控制室要求舞台主管出示液压设备读数记录。舞台主管拒绝签字，声称设备运行正常无需多此一举。麦珂利用前世记忆，指出该型号液压表在低温下读数易失真，必须人工复核，并让莉薇娅出示1980年事故分析报告，揭露因读数缺失导致的潜在压力过载隐患。舞台主管慌张辩解，试图掩盖真相。巴里·布鲁姆试图以‘艺术风险’为由施压，被麦珂冷眼无视。麦珂强制要求全员签署读数登记表，消除隐患，确立安全新标准。"
+        },
+        {
+          "chapter_id": 140,
+          "timeline_start": "1982-05-31",
+          "timeline_end": "1982-06-01",
+          "scene": "首演现场",
+          "chapter_goal": "通过现场演出和观众反应，反杀巴里·布鲁姆散布的‘故弄玄虚’谣言。",
+          "chapter_title": "起立者的沉默审判",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "维克多·兰斯",
+            "苏菲亚·罗德里格斯",
+            "观众"
+          ],
+          "opening_conflict": "巴里·布鲁姆指使媒体经理在演出前散布‘麦珂故弄玄虚，过度关注安全细节’的谣言，试图削弱观众对麦珂的信任。",
+          "info_gap_use": "麦珂在演出中通过灯光渐暗节奏与风拾音衰减曲线的精准配合，展示对舞台控制的绝对掌控，回应谣言。",
+          "opponent_reaction": "巴里·布鲁姆在观众席看到麦珂的完美演出，脸色铁青，维克多·兰斯则暗中记录现场反应，准备后续渗透。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "首演现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂走上舞台，灯光渐暗，音乐响起。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_140_AUDIENCE_STANDING_OVATION",
+              "timeline_scope": "current",
+              "display_name": "观众起立鼓掌记录",
+              "kind": "evidence"
+            },
+            {
+              "artifact_id": "ART_140_VICTOR_INVESTIGATION_REPORT",
+              "timeline_scope": "current",
+              "display_name": "维克多阵营渗透失败报告",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_139_PRESSURE_LOG_SIGNATURE",
+              "timeline_scope": "current",
+              "purpose": "证明麦珂的安全规程已生效，为现场演出的顺利进行提供保障。"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆指使媒体经理散布谣言。",
+            "麦珂走上舞台，灯光渐暗，音乐响起。",
+            "麦珂通过精准的舞台控制展示绝对掌控。",
+            "观众被麦珂的表演震撼，起立鼓掌。",
+            "巴里·布鲁姆脸色铁青，维克多·兰斯暗中记录。",
+            "苏菲亚记录现场舆论反应，完善‘谣言溯源卡’系统。"
+          ],
+          "visible_payoff": "观众起立鼓掌，反杀谣言，麦珂公众认知跃迁为‘革命艺术家’。",
+          "ending": "麦珂在掌声中鞠躬，看向观众席中的巴里·布鲁姆，眼神冰冷而坚定。",
+          "must_include": [
+            "媒体经理散布谣言的细节",
+            "麦珂精准的舞台控制展示",
+            "观众起立鼓掌的反应"
+          ],
+          "must_not_include": [
+            "公众媒体",
+            "网络留言",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "1981年12月15日晚，巴里·布鲁姆指使媒体经理在演出前散布‘麦珂故弄玄虚，过度关注安全细节’的谣言。麦珂走上舞台，通过灯光渐暗节奏与风拾音衰减曲线的精准配合，展示对舞台控制的绝对掌控，回应谣言。观众被麦珂的表演震撼，起立鼓掌，反杀谣言。巴里·布鲁姆脸色铁青，维克多·兰斯暗中记录现场反应，准备后续渗透。苏菲亚记录现场舆论反应，完善‘谣言溯源卡’系统。麦珂在掌声中鞠躬，看向观众席中的巴里·布鲁姆，眼神冰冷而坚定。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1982",
+    "character_states": [
+      "麦珂：确立安全新标准，公众认知跃迁为革命艺术家。",
+      "莉薇娅·普莱斯：信任麦珂，协助确立安全规程。",
+      "巴里·布鲁姆：阴谋破产，声誉受损。",
+      "维克多·兰斯：渗透失败，准备后续数据污染攻击。"
+    ],
+    "relationship_states": [
+      "团队内部铁三角协作模式巩固。",
+      "公众对麦珂的信任度提升。"
+    ],
+    "rights_and_assets": [
+      "《锈钉与琴键》发行权稳固。",
+      "安全规程全员签署生效。"
+    ],
+    "health_and_location": [
+      "麦珂健康状态良好，无安全隐患。",
+      "首演现场，1981年12月。"
+    ],
+    "open_threads": [
+      "维克多·兰斯的数据污染攻击计划。",
+      "托马斯·布莱克等律师的法律阻挠企图。"
+    ],
+    "resolved_threads": [
+      "巴里·布鲁姆的事故阴谋。",
+      "舞台安全隐患。"
+    ],
+    "introduced_characters": [
+      "舞台主管"
+    ],
+    "next_pressure": "维克多·兰斯转向隐蔽渗透，准备发动数据污染攻击；托马斯·布莱克等律师磨刀霍霍，欲以法律手段阻止《家庭治理宪章》签署。"
+  }
+}

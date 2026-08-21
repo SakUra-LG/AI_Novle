@@ -1,0 +1,22 @@
+{
+  "chapter": 5,
+  "generation_try": 3,
+  "chars": 1872,
+  "sha256": "ef660982fbf5eac798b3278764b5e2bda48f3549d9d2b05cc930099c90a069a5",
+  "review": {
+    "accept": true,
+    "model_accept": true,
+    "scores": {
+      "cluster_fidelity": 10.0,
+      "causal_clarity": 10.0,
+      "prose_naturalness": 9.0,
+      "emotional_force": 10.0,
+      "non_repetition": 9.0,
+      "ending_precision": 10.0,
+      "fictional_naming": 10.0
+    },
+    "low_scores": {},
+    "hard_failures": [],
+    "summary": "第5章完整闭环交付策略所列全部里程碑：高强度体能测试在合作方与独立医疗见证下发生，卡尔·霍尔特当场试图降速（即降低强度），麦珂连续完成唱跳连测，合作方基于现场结果撤下病弱降配宣传并正式移交训练强度决定权；无硬伤、无现实专名、无 forbidden_mechanics、无权限/证据越界，结尾停于权力交接生效后的直接余震，可无人值守交付。"
+  }
+}

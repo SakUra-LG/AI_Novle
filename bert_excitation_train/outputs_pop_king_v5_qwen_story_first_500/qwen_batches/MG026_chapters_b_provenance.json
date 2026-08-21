@@ -1,0 +1,30 @@
+{
+  "generated_by": "qwen",
+  "kind": "chapters_b",
+  "identifier": "MG026",
+  "accepted_attempt": 1,
+  "base_prompt_sha256": "2f938466d32ff3f7ecb30679857265ea5b7d35b98305f941e3bc97499d26847a",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-08T21:22:50+08:00",
+      "prompt_sha256": "2f938466d32ff3f7ecb30679857265ea5b7d35b98305f941e3bc97499d26847a",
+      "raw_response_sha256": "9586429e640321f90069980fedfa4965fcc2f2005654cf920062f431b8a9ef30",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG026_chapters_b_attempt_01_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 75.006,
+      "usage": {
+        "input_tokens": 18142,
+        "output_tokens": 4843,
+        "total_tokens": 22985,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

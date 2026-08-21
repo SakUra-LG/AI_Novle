@@ -29,7 +29,7 @@ OUTPUT_DIR = os.path.join(PROJECT_ROOT, "outputs")
 
 
 # ===== 通义千问 API 基础配置（与 universal_generator 保持一致风格） =====
-API_Key_QW = os.getenv("DASHSCOPE_API_KEY", "sk-a2966f4e37134351904851679884cb67")
+API_Key_QW = os.getenv("DASHSCOPE_API_KEY", "").strip()
 MAX_TOKENS = 8192
 
 

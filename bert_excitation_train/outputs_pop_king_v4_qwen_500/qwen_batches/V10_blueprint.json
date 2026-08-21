@@ -1,0 +1,314 @@
+{
+  "volume_id": "V10",
+  "volume_title": "终局之钥：重生者的审判时刻",
+  "volume_summary": "随着麦珂·杰森的复出计划逐渐成型，他利用前世的记忆，在2008-2009年的音乐产业中布下层层陷阱。本卷将旧十章积累的医疗、排期、票务和舞台安全问题逐步引入终局，并通过一场精心设计的假死讯诱饵，让昔日的利益链在阳光下暴露真面目。麦珂不仅避开了死亡危机，还借助媒体与粉丝力量完成了一场自我救赎与复仇的双重胜利。",
+  "macro_groups": [
+    {
+      "macro_group_id": "MG046",
+      "chapter_span": [
+        451,
+        460
+      ],
+      "title": "暗流涌动：复出前夜的布局",
+      "timeline_years": "2008年秋",
+      "macro_goal": "将旧十章的医疗隐患、排期漏洞及舞台安全数据融入新演出筹备",
+      "historical_stage": "全国巡演启动前夕，媒体聚焦于复出艺人健康状况",
+      "main_conflict": "旧势力试图借体检与药检破坏演出计划",
+      "rebirth_advantage": "前世知晓医生会篡改病历并伪造药物记录，提前部署了双签机制",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC226",
+          "chapter_span": [
+            451,
+            452
+          ],
+          "direction": "麦珂在医院接受体检时发现异常药品清单，暗示有人意图毒害"
+        },
+        {
+          "cluster_id": "EC227",
+          "chapter_span": [
+            453,
+            454
+          ],
+          "direction": "医生试图修改诊断报告，被麦珂的助理及时阻止"
+        },
+        {
+          "cluster_id": "EC228",
+          "chapter_span": [
+            455,
+            456
+          ],
+          "direction": "麦珂公开披露巡演前体测结果，揭露部分官员曾隐瞒身体缺陷"
+        },
+        {
+          "cluster_id": "EC229",
+          "chapter_span": [
+            457,
+            458
+          ],
+          "direction": "巡演总监卡尔·霍尔特提出额外保险条款，被麦珂拒绝并曝光其贪污账目"
+        },
+        {
+          "cluster_id": "EC230",
+          "chapter_span": [
+            459,
+            460
+          ],
+          "direction": "麦珂发布个人健康声明，强调已建立独立医疗团队，引发公众关注"
+        }
+      ],
+      "romance_progression": "麦珂与莉薇娅的感情因信任加深而更加稳固",
+      "ending_state": "麦珂成功掌控演出医疗权，反派失去对他的控制力",
+      "next_group_hook": "麦珂的健康声明引起广泛关注，成为后续舆论焦点"
+    },
+    {
+      "macro_group_id": "MG047",
+      "chapter_span": [
+        461,
+        470
+      ],
+      "title": "合同迷宫：利益链条的裂痕",
+      "timeline_years": "2008年底",
+      "macro_goal": "揭露旧合同中的霸王条款，推动新合约改革",
+      "historical_stage": "全球巡回演唱会签约高峰时期",
+      "main_conflict": "旧合同隐藏的不平等条款威胁到麦珂权益",
+      "rebirth_advantage": "前世记忆揭示了某些律师会在关键节点误导客户",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC231",
+          "chapter_span": [
+            461,
+            462
+          ],
+          "direction": "麦珂发现一张未签署的附加协议，指向某位律师的欺诈行为"
+        },
+        {
+          "cluster_id": "EC232",
+          "chapter_span": [
+            463,
+            464
+          ],
+          "direction": "律师托马斯·布莱克试图说服麦珂放弃版权追索权"
+        },
+        {
+          "cluster_id": "EC233",
+          "chapter_span": [
+            465,
+            466
+          ],
+          "direction": "麦珂公开一份旧合同片段，引发媒体对其长期受压迫的讨论"
+        },
+        {
+          "cluster_id": "EC234",
+          "chapter_span": [
+            467,
+            468
+          ],
+          "direction": "麦珂委托艾琳·沃特曼起草新合同，挑战传统行业规则"
+        },
+        {
+          "cluster_id": "EC235",
+          "chapter_span": [
+            469,
+            470
+          ],
+          "direction": "新合同获得法律界支持，反派陷入被动局面"
+        }
+      ],
+      "romance_progression": "麦珂与莉薇娅共同面对压力，感情愈发坚定",
+      "ending_state": "麦珂掌握主动权，旧合同系统开始瓦解",
+      "next_group_hook": "新合同草案引发业内震动，更多人站出来反对旧秩序"
+    },
+    {
+      "macro_group_id": "MG048",
+      "chapter_span": [
+        471,
+        480
+      ],
+      "title": "舞台阴影：致命风险的规避",
+      "timeline_years": "2009年初",
+      "macro_goal": "确保演出安全性，防止再次发生事故",
+      "historical_stage": "巡演前设备调试阶段",
+      "main_conflict": "舞台安全隐患被刻意掩盖",
+      "rebirth_advantage": "前世清楚知道升降台故障会导致严重后果，提前布置了备用方案",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC236",
+          "chapter_span": [
+            471,
+            472
+          ],
+          "direction": "麦珂注意到舞台灯光系统存在异常信号"
+        },
+        {
+          "cluster_id": "EC237",
+          "chapter_span": [
+            473,
+            474
+          ],
+          "direction": "技术人员试图遮掩机械故障，被麦珂的工程师识破"
+        },
+        {
+          "cluster_id": "EC238",
+          "chapter_span": [
+            475,
+            476
+          ],
+          "direction": "麦珂安排第三方检测机构进行突击检查"
+        },
+        {
+          "cluster_id": "EC239",
+          "chapter_span": [
+            477,
+            478
+          ],
+          "direction": "巡演总监卡尔·霍尔特承认操作失误，但拒不认责"
+        },
+        {
+          "cluster_id": "EC240",
+          "chapter_span": [
+            479,
+            480
+          ],
+          "direction": "麦珂宣布所有设备经过全面检修，赢得观众信任"
+        }
+      ],
+      "romance_progression": "两人合作应对危机，情感进一步升温",
+      "ending_state": "麦珂彻底掌控舞台安全流程，反派丧失影响力",
+      "next_group_hook": "麦珂的表演即将开始，紧张气氛达到顶点"
+    },
+    {
+      "macro_group_id": "MG049",
+      "chapter_span": [
+        481,
+        490
+      ],
+      "title": "票房风暴：票务系统的反击",
+      "timeline_years": "2009年春季",
+      "macro_goal": "揭露票务黑幕，确保公平售票",
+      "historical_stage": "预售门票引发社会热议",
+      "main_conflict": "票价虚高与非法囤票现象猖獗",
+      "rebirth_advantage": "前世记得某些经纪人会操控票源牟利，提前准备了监控手段",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC241",
+          "chapter_span": [
+            481,
+            482
+          ],
+          "direction": "麦珂发现一批高价票来源不明，怀疑内部人员参与"
+        },
+        {
+          "cluster_id": "EC242",
+          "chapter_span": [
+            483,
+            484
+          ],
+          "direction": "票务负责人巴里·布鲁姆试图转移责任至外部代理"
+        },
+        {
+          "cluster_id": "EC243",
+          "chapter_span": [
+            485,
+            486
+          ],
+          "direction": "苏菲亚·罗德里格斯公布票池数据，揭露虚假销售"
+        },
+        {
+          "cluster_id": "EC244",
+          "chapter_span": [
+            487,
+            488
+          ],
+          "direction": "麦珂宣布取消全部非官方渠道售票，引发市场震荡"
+        },
+        {
+          "cluster_id": "EC245",
+          "chapter_span": [
+            489,
+            490
+          ],
+          "direction": "麦珂设立透明票务平台，赢得粉丝高度认可"
+        }
+      ],
+      "romance_progression": "麦珂与莉薇娅在逆境中互相扶持，感情更进一步",
+      "ending_state": "麦珂重塑票务体系，反派损失惨重",
+      "next_group_hook": "麦珂的演出票迅速售罄，众人期待正式开演"
+    },
+    {
+      "macro_group_id": "MG050",
+      "chapter_span": [
+        491,
+        500
+      ],
+      "title": "终局降临：生死之间的抉择",
+      "timeline_years": "2009年夏",
+      "macro_goal": "制造假死讯息，诱导反派自曝真相",
+      "historical_stage": "演唱会当晚，全球直播倒计时",
+      "main_conflict": "麦珂设下圈套，引诱敌人落入陷阱",
+      "rebirth_advantage": "前世知晓自己将在演唱会上身亡，提前准备好替代方案",
+      "five_event_directions": [
+        {
+          "cluster_id": "EC246",
+          "chapter_span": [
+            491,
+            492
+          ],
+          "direction": "麦珂对外发布‘突发健康问题’消息，推迟演出"
+        },
+        {
+          "cluster_id": "EC247",
+          "chapter_span": [
+            493,
+            494
+          ],
+          "direction": "反派趁机散布谣言，试图毁掉麦珂声誉"
+        },
+        {
+          "cluster_id": "EC248",
+          "chapter_span": [
+            495,
+            496
+          ],
+          "direction": "麦珂通过粉丝组织发布真实病情证明，澄清误会"
+        },
+        {
+          "cluster_id": "EC249",
+          "chapter_span": [
+            497,
+            498
+          ],
+          "direction": "反派内部出现分歧，部分成员开始动摇"
+        },
+        {
+          "cluster_id": "EC250",
+          "chapter_span": [
+            499,
+            500
+          ],
+          "direction": "麦珂在全球直播中现身，揭露所有阴谋，开启纪念仪式"
+        }
+      ],
+      "romance_progression": "麦珂与莉薇娅携手走过终点，感情圆满升华",
+      "ending_state": "麦珂成功摆脱死亡诅咒，仇敌悉数落网，全球致敬",
+      "next_group_hook": "麦珂的传奇继续流传，新的时代由此开启"
+    }
+  ],
+  "continuity_summary": {
+    "characters": [
+      "麦珂·杰森",
+      "莉薇娅·普莱斯"
+    ],
+    "relationships": [
+      "麦珂与莉薇娅订婚"
+    ],
+    "rights_and_assets": [
+      "麦珂成功设立公益基金会",
+      "新合同制度确立",
+      "票务系统重构"
+    ],
+    "open_threads": [
+      "反派残余势力仍需清理"
+    ]
+  }
+}

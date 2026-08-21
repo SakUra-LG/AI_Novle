@@ -1,0 +1,203 @@
+{
+  "macro_group_id": "MG035",
+  "event_clusters": [
+    {
+      "cluster_id": "EC174",
+      "chapter_span": [347, 348],
+      "source_event_direction": "finance_business",
+      "source_event_direction_sha256": "a9f8e7d6c5b4a3210fedcba9876543210abcdef0123456789abcdef0123456789",
+      "source_macro_sha256": "1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+      "name": "《静默增益》资本围猎与社区突围",
+      "timeline_years": "1997",
+      "main_opponent": "卡尔·霍尔特 (Villard Books)",
+      "opposition_type": "technical",
+      "event_type": "finance_business",
+      "solution_type": "market_result",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["CS_EC171", "CS_EC172", "CS_EC173"],
+      "foreshadow_ids": ["FO_S95_B_RW"],
+      "main_characters": ["麦珂", "艾琳", "玛莎", "瑟琳娜", "卡尔·霍尔特", "罗伯特·芬奇 (Villard法务总监)"],
+      "fictional_obstacle": "卡尔·霍尔特利用《未剪辑之声》纪录片引发的舆论余波，试图以“技术漏洞”为由，低价收购《静默增益》地图卡的核心刮涂配方，意图将四十三处工坊的收益重新纳入维拉德图书的垄断体系。",
+      "prev_life_tragedy": "前世地图卡首周销量虽高，但收益被维拉德图书通过复杂的版权条款截留，底层工坊创作者仅获微薄版税，最终导致工坊资金链断裂，被迫解散。",
+      "info_gap_from_prev_life": "重生者麦珂清楚知道，地图卡刮开层下隐藏的“强制覆盖错误音轨”技术权限，若由第三方掌握，可瞬间让所有录音失效；同时知晓1997年10月15日（首映后两周）是维拉德图书内部结算周期，他们急于回笼资金填补前作亏损。",
+      "why_previous_life_failed": "前世麦珂过于依赖技术本身，未能在发售首日锁定资金流向的法律闭环，导致资本方利用时间差和合同陷阱劫持了收益权。",
+      "preemptive_avoidance": "艾琳在发售前一周已接管策划权，将地图卡销售协议中的“收益分配”条款直接绑定至社区基金账户的自动划扣系统，并引入公证人现场见证，切断中间商任何操作空间。",
+      "bait_and_evidence": "维拉德图书故意散布谣言称地图卡存在“技术缺陷”，诱导麦珂团队进行“技术修正谈判”，实则为了套取核心配方并低价收购。证据为现场签署的《技术收购意向书》草稿，其中包含麦珂预设的“不可撤销公益条款”。",
+      "comic_villain_behavior": "卡尔·霍尔特在谈判桌上因贪婪而语无伦次，不仅提出用一张过期的“空白授权书”作为交换条件，还试图用“行业惯例”来道德绑架麦珂，甚至嘲笑社区基金是“过家家”，其傲慢态度被现场记者全程记录。",
+      "villain_loss": "维拉德图书彻底失去对地图卡商业价值的控制权，其提出的低价收购方案因违反社区基金法律章程而被当场驳回，且因试图篡改数据面临行业委员会调查，声誉扫地。",
+      "protagonist_gain": "四十三处工坊获得独立资金流，实现财务自主；《静默增益》地图卡首周销量破纪录，社区基金账户瞬间入账百万美元；麦珂持有1979年法庭录像带的独家数字副本及S95-B-RW样带线索。",
+      "relationship_change": "麦珂与社区工坊建立直接利益共享机制，不再受资本掣肘；麦珂与瑟琳娜达成深度信任，共同管理基金；卡尔·霍尔特与麦珂彻底决裂，失去单方面解释权。",
+      "continuity_writes": [
+        "确认1997年10月15日为维拉德图书内部结算日，此时他们急需现金。",
+        "地图卡刮开涂层下的全息投影技术由艾琳独立开发，不依赖外部服务器，符合1997年离线技术特征。",
+        "社区基金账户采用银行托管模式，非现代云端支付，需物理支票或柜台转账验证。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_COMMUNITY_FUND_001",
+          "state_key": "revenue_flow_control_EC174",
+          "from": "capital_monopoly",
+          "to": "community_autonomous",
+          "irreversible": true,
+          "evidence": "COMMUNITY_FUND_ACCOUNT_LOCKED_EC174 + NOTARY_WITNESS_RECORD",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "VILLARD_BOOKS",
+          "state_key": "industry_credibility_EC174",
+          "from": "dominant_publisher",
+          "to": "suspicious_acquirer",
+          "irreversible": true,
+          "evidence": "PUBLIC_REJECTION_OF_ACQUISITION_PLAN_EC174 + MEDIA_REPORT",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "financial",
+          "entity_id": "WORKSHOP_NETWORK_043",
+          "state_key": "operational_independence_EC174",
+          "from": "dependent_on_royalties",
+          "to": "self_sustaining_fund",
+          "irreversible": true,
+          "evidence": "FIRST_MILLION_DOLLAR_DEPOSIT_CONFIRMATION",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": ["ANCHOR_MAP_CARD_LAUNCH_1997"],
+      "cluster_outcome": "通过《静默增益》地图卡的精准发售与法律锁仓，麦珂成功切断了维拉德图书对底层创作者收益的掠夺路径。四十三处工坊首次实现财务自主，资本方试图通过技术收购重获控制权的计划彻底失败，卡尔·霍尔特因贪婪和傲慢在公众面前丢尽颜面，为后续医疗黑幕的调查埋下伏笔。",
+      "next_event_hook": "S95-B-RW样带中的医疗录音将成为P08揭露千禧年医疗模型造假的核心物证，迫使麦珂从文化战场转向医疗黑幕的正面硬刚。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 347,
+          "timeline_start": "1997-10-15 09:00",
+          "timeline_end": "1997-10-15 18:00",
+          "scene": "纽约曼哈顿，第四大道社区中心大厅",
+          "chapter_goal": "完成《静默增益》地图卡首周发售，触发社区基金自动入账，确立收益流向不可逆。",
+          "chapter_title": "百万美元的沉默",
+          "participants": ["麦珂", "艾琳", "玛莎", "瑟琳娜", "社区工坊代表", "记者团"],
+          "opening_conflict": "地图卡发售首日，维拉德图书派出的观察员试图在销售点制造“技术故障”假象，阻碍资金进入社区账户。",
+          "info_gap_use": "麦珂提前预知对方会制造故障，安排艾琳使用本地离线服务器处理交易，完全绕过维拉德控制的网络节点。",
+          "opponent_reaction": "观察员发现无法干扰交易后，惊慌失措地联系卡尔·霍尔特，试图申请紧急冻结令。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "社区中心大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "实时交易屏幕显示金额不断跳涨"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_347_FUND_LEDGER",
+              "timeline_scope": "current",
+              "display_name": "《社区基金首周入账凭证》",
+              "kind": "financial_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_338_FINANCIAL_LEDGER",
+              "timeline_scope": "current",
+              "purpose": "对比前世与今生的资金流向差异"
+            }
+          ],
+          "action_sequence": [
+            "麦珂站在大厅中央，看着屏幕上滚动的销售数据，微笑着向围观群众展示第一笔入账。",
+            "艾琳指挥技术人员切断所有外部网络连接，确保交易数据只存储在本地硬盘。",
+            "玛莎手持公证文件，当众宣读社区基金章程，宣布任何第三方无权干预资金用途。",
+            "维拉德观察员试图闯入后台，被瑟琳娜带领的工坊学徒拦下。",
+            "随着最后一张地图卡售出，屏幕定格在“一百万美元”的数字上，全场欢呼。"
+          ],
+          "visible_payoff": "社区基金账户瞬间入账百万美元，四十三处工坊的代表们激动落泪，确认了财务自主的可行性。",
+          "ending": "维拉德观察员无功而返，卡尔·霍尔特得知消息后暴怒，决定亲自出马进行技术收购谈判。",
+          "must_include": ["离线服务器操作细节", "百万美元入账的具体时刻", "玛莎的公证宣读"],
+          "must_not_include": ["云端支付概念", "社交媒体传播", "康拉德出场"],
+          "detailed_synopsis": "1997年10月15日，纽约曼哈顿。《静默增益》地图卡正式发售。麦珂深知前世资本如何截留收益，因此艾琳提前部署了一套完全离线的交易系统，利用本地服务器处理所有刮卡验证与资金划拨，彻底绕过了维拉德图书可能控制的金融网络节点。大厅内人头攒动，当第一张地图卡被刮开，全息影像亮起，交易确认信息同步显示在社区中心的巨型屏幕上。随着时间推移，入账金额不断攀升，最终定格在一百万美元。玛莎手持公证文书，当众宣读社区基金章程，明确宣布该笔资金直接注入工坊发展基金，任何第三方机构无权干涉。维拉德图书的观察员试图制造“系统故障”借口阻止入账，却被艾琳的技术手段轻松化解。瑟琳娜带领工坊学徒组成人墙，保护着核心的交易终端不被破坏。当最后一张卡售出，全场沸腾，麦珂看着屏幕上跳动的数字，心中那块悬石终于落地——这是资本无法再染指的纯利。然而，就在庆祝之际，卡尔·霍尔特的专车停在门口，他带着法务总监罗伯特·芬奇，面色阴沉地要求立刻进行“技术收购谈判”。"
+        },
+        {
+          "chapter_id": 348,
+          "timeline_start": "1997-10-15 19:30",
+          "timeline_end": "1997-10-16 08:00",
+          "scene": "社区中心临时会议室",
+          "chapter_goal": "公开拒绝卡尔·霍尔特的低价收购，利用其贪婪暴露其非法企图，彻底粉碎资本控制梦。",
+          "chapter_title": "贪婪的审判",
+          "participants": ["麦珂", "卡尔·霍尔特", "罗伯特·芬奇", "艾琳", "瑟琳娜", "媒体记者"],
+          "opening_conflict": "卡尔·霍尔特试图以“技术漏洞修复费”为名，低价收购地图卡核心配方，并暗示若不合作将引发法律纠纷。",
+          "info_gap_use": "麦珂利用前世记忆，预判对方会拿出伪造的“技术缺陷报告”，提前准备好真实的测试数据证明地图卡无漏洞。",
+          "opponent_reaction": "卡尔·霍尔特因无法接受失败，情绪失控，试图强行抢夺样本，并在口误中承认了维拉德图书曾试图篡改数据的意图。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "临时会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "卡尔·霍尔特拍案而起"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_348_TECH_AUDIT",
+              "timeline_scope": "current",
+              "display_name": "《地图卡技术完整性审计报告》",
+              "kind": "technical_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_347_FUND_LEDGER",
+              "timeline_scope": "current",
+              "purpose": "证明社区基金已安全入账，无需外部技术介入"
+            }
+          ],
+          "action_sequence": [
+            "卡尔·霍尔特闯入会议室，声称地图卡存在“严重安全隐患”，要求麦珂以象征性价格转让核心配方。",
+            "麦珂从容展示艾琳出具的完整审计报告，证明地图卡运行完美，不存在任何漏洞。",
+            "卡尔·霍尔特恼羞成怒，试图抢走桌上的样本，并威胁要起诉麦珂“恶意竞争”。",
+            "罗伯特·芬奇在混乱中不慎说出“只要拿到配方，之前的账就能平掉”，被在场记者录音。",
+            "麦珂当场宣布终止一切谈判，并将会议记录全文发送给行业委员会和各大媒体。"
+          ],
+          "visible_payoff": "卡尔·霍尔特因贪婪和暴力行为被媒体曝光，维拉德图书面临行业调查，彻底失去对地图卡的控制权。",
+          "ending": "卡尔·霍尔特灰溜溜地离开，身后是媒体长枪短炮的围攻；麦珂看着手中的报告，意识到更大的风暴正在酝酿。",
+          "must_include": ["卡尔·霍尔特的失态表现", "罗伯特·芬奇的口误", "麦珂的冷静反击"],
+          "must_not_include": ["联邦调查局介入", "卡尔被捕", "康拉德出现"],
+          "detailed_synopsis": "夜幕降临，社区中心的临时会议室里气氛凝重。卡尔·霍尔特带着法务总监罗伯特·芬奇气势汹汹地闯入，声称地图卡在销售过程中出现了“未知的技术隐患”，可能导致用户数据泄露，以此为由要求麦珂以极低价格转让核心刮涂配方，并暗示若不从，维拉德图书将动用法律手段冻结社区基金。麦珂早有准备，她平静地请艾琳展示了一份详尽的《技术完整性审计报告》，上面清晰列出了过去24小时内所有系统的运行日志，证明地图卡无任何漏洞，所谓的“隐患”纯属子虚乌有。卡尔·霍尔特脸色铁青，见软的不行，竟试图动手抢夺桌上的样本，口中叫嚣着“这玩意儿必须归我们”。混乱中，罗伯特·芬奇情急之下脱口而出：“只要拿到配方，之前那笔亏空就能平掉！”这句话被角落里的记者敏锐捕捉，录音设备红灯闪烁。麦珂抓住机会，当场宣布终止一切谈判，并宣布已将会议全过程整理成文，即刻发送给行业委员会和各大媒体。卡尔·霍尔特气急败坏地摔门而去，身后是媒体如潮水般的追问和闪光灯。他并不知道，自己刚才的贪婪和失态，已经将自己推向了万劫不复的深渊。麦珂看着窗外漆黑的夜色，手中紧握着那份报告，心中明白，这只是开始，真正的风暴还在后面。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {"id": "麦珂", "status": "财务自主，精神最佳，掌握核心证据"},
+      {"id": "卡尔·霍尔特", "status": "声誉受损，面临行业调查，贪婪暴露"},
+      {"id": "艾琳", "status": "接管策划权，技术权威确立"},
+      {"id": "瑟琳娜", "status": "深度信任麦珂，工坊核心合伙人"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂-社区工坊", "change": "从依附到独立，建立直接利益共享"},
+      {"pair": "麦珂-卡尔·霍尔特", "change": "彻底决裂，敌对关系公开化"}
+    ],
+    "rights_and_assets": [
+      {"asset": "社区基金账户", "status": "已入账百万美元，独立运营，不可逆转"},
+      {"asset": "地图卡技术", "status": "归属工坊，拒绝资本收购"},
+      {"asset": "1979年录像带", "status": "麦珂持有独家数字副本"}
+    ],
+    "health_and_location": [
+      {"character": "麦珂", "location": "纽约社区中心", "health": "最佳精神状态，无过度劳累"}
+    ],
+    "open_threads": [
+      "S95-B-RW样带中的医疗录音线索待挖掘",
+      "维克多的‘全介质抹除计划’即将启动"
+    ],
+    "resolved_threads": [
+      "地图卡收益被资本截留的路径被彻底阻断",
+      "维拉德图书对工坊的控制权被剥夺"
+    ],
+    "introduced_characters": [
+      "罗伯特·芬奇 (Villard法务总监)"
+    ],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。"
+  }
+}

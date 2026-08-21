@@ -1,0 +1,250 @@
+{
+  "macro_group_id": "MG023",
+  "event_clusters": [
+    {
+      "cluster_id": "EC111",
+      "chapter_span": [
+        221,
+        222
+      ],
+      "source_event_direction": "前世具体受害：前世道具箱被海关以‘非法电子干扰’为由扣留，导致巡演首站取消，舆论指责麦珂携带违禁品。；本事件独有的前世信息差：1989年X光机对特定频率透镜的误判阈值及巴里伪造的‘远程控制’报告细节。；今生提前动作：麦珂提前将声压可视化系统的光学透镜拆下，单独封装并附上机械校准证书。；第221章可见小赢：海关官员扫描透镜发现无电子元件，仅凭校准单放行，未触发警报。；第222章新交锋：巴里·布鲁姆在媒体前指控道具箱藏有隐形发射器，要求重新开箱彻查。；阻力方永久现实损失：巴里的指控因缺乏证据被当场驳回，其专业信誉首次出现裂痕。；主角现实收益：麦珂成功通过海关检查，道具箱完好无损地运抵演出场地。；不可逆结算键：海关放行记录与光学透镜物理分离状态形成不可篡改的证据链。；接回死亡控制主线：此事件直接阻断前世因设备延误导致的医疗响应失败链条。",
+      "source_event_direction_sha256": "006ccbda80c912e85eda28fda71f40dddb0365e210bcaa05348b9f4ae03d2125",
+      "source_macro_sha256": "6d940c083f1e35644955e7ca7ea21ccb2132d18b271a853f883947d536e33599",
+      "name": "声压透镜的机械证伪与巴里·布鲁姆的信誉崩塌",
+      "timeline_years": "1987—1990",
+      "main_opponent": "巴里·布鲁姆 (Barry Bloom)",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "巴里·布鲁姆",
+        "海关官员",
+        "苏菲亚",
+        "莉薇娅"
+      ],
+      "fictional_obstacle": "奥瑞恩集团伪造‘远程控制装置’指控，试图以非法电子干扰为由扣留巡演核心道具箱，导致演出取消并引发公众恐慌。",
+      "prev_life_tragedy": "前世道具箱被海关扣押，因内部含特定频率光学透镜被X光机误判为无线发射器，导致首站巡演取消，舆论指责麦珂携带违禁品，医疗响应因设备延误而失败。",
+      "info_gap_from_prev_life": "知晓1989年某型号X光扫描仪对特定频率光学透镜的误判阈值（需配合电子元件才报警），以及巴里·布鲁姆惯用打字机色带在特定湿度下的磨损特征（用于后续伪造文件溯源）。",
+      "why_previous_life_failed": "前世未将光学透镜与电子设备物理分离，且缺乏独立的机械校准公证书作为法律抗辩依据，完全被动接受海关技术鉴定。",
+      "preemptive_avoidance": "麦珂提前拆解声压可视化系统，将光学透镜单独封装于铅盒中，附带由第三方公证处出具的《机械校准与封存公证书》(ART_217_OPTICAL_CERTIFICATE)，明确标注无电子元件。",
+      "bait_and_evidence": "巴里·布鲁姆故意在媒体前展示一张模糊的X光扫描图（实为旧设备照片）作为诱饵；麦珂当场出示实物透镜与公证证书，并利用海关现有设备现场复核，证明无电子信号发射。",
+      "comic_villain_behavior": "巴里·布鲁姆在记者会上情绪失控，反复强调‘隐形发射器’却拿不出任何频谱仪数据，甚至试图强行要求开箱检查，结果被海关人员礼貌拒绝，场面滑稽。",
+      "villain_loss": "巴里·布鲁姆的专业信誉首次出现裂痕，其指控被当场驳回，奥瑞恩集团内部对其能力产生质疑，暂时退居二线等待机会。",
+      "protagonist_gain": "麦珂成功通过海关检查，道具箱完好无损运抵演出场地；确立‘今日健康备忘录’中关于设备安全预检的标准流程。",
+      "relationship_change": "莉薇娅对麦珂的信任度提升，正式授权其主导急救流程改革；海关官员从怀疑转为合作，愿意配合提供技术复核支持。",
+      "continuity_writes": [
+        "1987年海关放行记录与光学透镜物理分离状态形成不可篡改的证据链，直接阻断前世因设备延误导致的医疗响应失败链条。",
+        "此事件成为1991年《家庭治理宪章》医疗章节细化条款的直接诱因。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "asset",
+          "entity_id": "sound_visualization_system",
+          "state_key": "customs_clearance_status",
+          "from": "under_investigation",
+          "to": "cleared_with_certification",
+          "irreversible": true,
+          "evidence": "ART_217_OPTICAL_CERTIFICATE",
+          "effect_type": "protagonist_gain",
+          "source_domain": "equipment_security"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "barry_bloom",
+          "state_key": "professional_credibility",
+          "from": "trusted_expert",
+          "to": "questionable_reputation",
+          "irreversible": false,
+          "evidence": "media_coverage_of_fiasco",
+          "effect_type": "villain_loss",
+          "source_domain": "public_perception"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1987_AIRPORT_SECURITY_PROTOCOL"
+      ],
+      "cluster_outcome": "道具箱顺利通关，危机转化为建立新标准的契机，巴里·布鲁姆信誉受损但未受法律制裁。",
+      "next_event_hook": "“今日健康备忘录”手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款；折叠地图激发1992年‘初声基金’评审制度改革。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 221,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "机场海关查验通道",
+          "chapter_goal": "利用重生预知的X光误判阈值，通过物理分离与公证证书使道具箱顺利通过海关检查。",
+          "chapter_title": "无源之镜：机械校准的胜利",
+          "participants": [
+            "麦珂",
+            "海关官员",
+            "巴里·布鲁姆",
+            "苏菲亚"
+          ],
+          "opening_conflict": "海关官员因收到匿名举报，暂停检查并准备扣留道具箱，巴里·布鲁姆在场煽动舆论称箱内藏有非法电子干扰源。",
+          "info_gap_use": "麦珂提前预知该型号X光机仅对含电子元件的物体报警，遂将光学透镜单独封装并附公证证书，避免触发警报。",
+          "opponent_reaction": "巴里·布鲁姆试图阻止开箱，声称‘必须彻底搜查’，但被海关人员以程序合规为由挡回。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "机场海关查验通道",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "广播播报航班延误，人群骚动"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_217_OPTICAL_CERTIFICATE",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据向海关证明透镜无电子元件，符合安全标准。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂主动打开铅盒，取出独立封装的光学透镜，展示给海关官员。",
+            "苏菲亚协助宣读公证证书内容，强调透镜为纯机械结构，无任何电路。",
+            "海关官员使用备用X光机扫描，确认无电子信号，解除扣留。",
+            "巴里·布鲁姆在旁试图插话质疑，被安保人员请离现场。"
+          ],
+          "visible_payoff": "道具箱未被扣留，顺利进入下一环节，海关官员态度转为赞赏。",
+          "ending": "麦珂带着完好的道具箱离开海关，巴里·布鲁姆面色铁青地站在原地。",
+          "must_include": [
+            "公证证书宣读",
+            "X光机无反应特写",
+            "巴里·布鲁姆失态"
+          ],
+          "must_not_include": [
+            "逮捕巴里·布鲁姆",
+            "法律诉讼",
+            "网络舆论爆发"
+          ],
+          "detailed_synopsis": "1987年5月10日上午，机场海关查验区气氛紧张。海关官员接到匿名举报，称麦珂的声压可视化系统道具箱内藏有非法电子干扰装置，立即启动扣留程序。巴里·布鲁姆趁机现身，手持一份模糊的X光扫描图，高声宣称箱内有‘隐形发射器’，煽动围观群众。麦珂早有准备，她并未辩解，而是直接从道具箱中取出一个铅盒，里面装着单独封装的光学透镜。她平静地向海关官员展示随附的《机械校准与封存公证书》(ART_217_OPTICAL_CERTIFICATE)，详细解释透镜仅为纯机械光学组件，不含任何电子元件。苏菲亚在一旁协助宣读证书关键条款，强调其法律效力。海关官员随即使用备用X光机进行现场复核，屏幕显示无任何异常电子信号，警报未响。巴里·布鲁姆见状大惊失色，试图冲上前要求强制开箱，却被安保人员礼貌拦下。最终，海关官员签署放行单，道具箱得以继续运输。巴里·布鲁姆在众目睽睽之下哑口无言，其专业信誉首次受到公开质疑。",
+          "source_timeline_start": "1987-05-10T08:30:00Z",
+          "source_timeline_end": "1987-05-10T11:45:00Z"
+        },
+        {
+          "chapter_id": 222,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "酒店宴会厅新闻发布会",
+          "chapter_goal": "在媒体面前彻底揭穿巴里·布鲁姆指控的荒谬性，将危机转化为确立行业安全标准的契机。",
+          "chapter_title": "谣言的终结：透明化的开始",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "记者团",
+            "莉薇娅",
+            "海关代表"
+          ],
+          "opening_conflict": "巴里·布鲁姆不甘心失败，在新闻发布会上再次指控道具箱藏有隐形发射器，要求重新开箱彻查，试图挽回颜面。",
+          "info_gap_use": "麦珂利用前世记忆，预判巴里·布鲁姆会引用过时的技术报告，提前准备好最新的机械校准数据和现场演示方案。",
+          "opponent_reaction": "巴里·布鲁姆在发布会上语无伦次，无法提供任何频谱数据，反而暴露其对技术细节的一无所知。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "酒店宴会厅新闻发布会",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "闪光灯闪烁，记者提问如潮水般涌来"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_217_OPTICAL_CERTIFICATE",
+              "timeline_scope": "current",
+              "purpose": "作为反驳巴里·布鲁姆指控的核心证据，现场展示。"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆在发布会上高调发言，声称道具箱仍有隐患，要求重新开箱检查。",
+            "麦珂冷静回应，邀请巴里·布鲁姆现场见证，并让海关代表出示放行记录。",
+            "麦珂当众演示光学透镜的物理特性，证明其无法作为发射器工作。",
+            "记者们纷纷提问，巴里·布鲁姆无法回答，场面尴尬。"
+          ],
+          "visible_payoff": "巴里·布鲁姆的指控被彻底驳倒，其专业信誉严重受损；麦珂成功将事件转化为推动行业安全标准建立的契机。",
+          "ending": "发布会结束，麦珂宣布启动‘今日健康备忘录’计划，巴里·布鲁姆黯然离场。",
+          "must_include": [
+            "巴里·布鲁姆语无伦次",
+            "麦珂现场演示",
+            "海关代表背书"
+          ],
+          "must_not_include": [
+            "巴里·布鲁姆被捕",
+            "奥瑞恩集团破产",
+            "法律诉讼"
+          ],
+          "detailed_synopsis": "下午两点，酒店宴会厅内座无虚席，来自各大媒体的记者云集一堂。巴里·布鲁姆不甘示弱，再次登上讲台，声称道具箱内仍藏有‘隐形发射器’，要求立即重新开箱彻查，试图挽回上午的颜面。他挥舞着一份过时的技术报告，声称透镜可能经过改装。麦珂从容起身，没有争辩，而是直接邀请巴里·布鲁姆和所有在场人士共同见证。她让海关代表出示了上午的放行记录和X光扫描截图，随后亲自拿起光学透镜，向镜头展示其纯机械结构，并解释其工作原理，证明它根本无法作为发射器使用。巴里·布鲁姆试图反驳，却发现自己无法提供任何频谱数据或技术细节，只能支支吾吾，场面一度十分尴尬。记者们纷纷提问，巴里·布鲁姆完全无法应对，最终在一片质疑声中狼狈离场。麦珂借此机会宣布，将启动‘今日健康备忘录’计划，确立新的设备安全标准，获得全场掌声。巴里·布鲁姆虽未受法律制裁，但其专业信誉已严重受损，奥瑞恩集团内部对其能力产生强烈质疑。",
+          "source_timeline_start": "1987-05-10T14:00:00Z",
+          "source_timeline_end": "1987-05-10T17:30:00Z"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {
+        "character": "麦珂",
+        "state": "established_leader",
+        "description": "成功化解危机，确立行业安全标准制定者地位。"
+      },
+      {
+        "character": "巴里·布鲁姆",
+        "state": "discredited",
+        "description": "专业信誉首次出现裂痕，暂时退居二线。"
+      },
+      {
+        "character": "莉薇娅",
+        "state": "trusted_partner",
+        "description": "对麦珂信任度提升，授权其主导急救流程改革。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "relationship": "麦珂 & 海关",
+        "state": "cooperative",
+        "description": "从怀疑转为合作，愿意配合提供技术复核支持。"
+      },
+      {
+        "relationship": "麦珂 & 奥瑞恩集团",
+        "state": "adversarial",
+        "description": "冲突升级，巴里·布鲁姆暂时退居二线，集团策略转向隐蔽渗透。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset": "ART_217_OPTICAL_CERTIFICATE",
+        "status": "active_evidence",
+        "description": "成为不可篡改的证据链核心，支撑后续所有安全标准建立。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "location": "机场海关",
+        "status": "cleared",
+        "description": "道具箱顺利通关，未造成延误。"
+      },
+      {
+        "location": "新闻发布会",
+        "status": "concluded",
+        "description": "危机化解，行业标准确立。"
+      }
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性"
+    ],
+    "resolved_threads": [
+      "道具箱被扣危机",
+      "巴里·布鲁姆的首次公开指控"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

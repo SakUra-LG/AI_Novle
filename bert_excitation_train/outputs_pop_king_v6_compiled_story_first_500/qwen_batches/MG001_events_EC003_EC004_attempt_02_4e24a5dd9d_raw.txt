@@ -1,0 +1,333 @@
+{
+  "macro_group_id": "MG001",
+  "event_clusters": [
+    {
+      "cluster_id": "EC003",
+      "chapter_span": [5, 6],
+      "source_event_direction": "前世具体受害：乔纳在前世利用玛莎的信件欺骗麦珂，导致麦珂错过了试镜机会；本事件独有的前世信息差：乔纳在前世的信件中有一个限时报名的谎话；今生提前动作：麦珂在今生发现乔纳的谎话后，立即写信给玛莎，要求她检查家庭邮件；第5章可见小赢：第5章，麦珂成功让玛莎检查家庭邮件，发现了乔纳的谎话；第6章新交锋：第6章，麦珂和乔纳发生冲突，麦珂要求乔纳交出所有家庭邮件；阻力方永久现实损失：乔纳永久失去独占家庭消息的权力；主角现实收益：麦珂获得了家庭邮件的控制权，能够随时检查和利用邮件；不可逆结算键：乔纳的谎言被揭露，麦珂获得了家庭邮件的控制权；接回死亡控制主线：麦珂的行动削弱了2009年死亡背后的保险、版权、医疗或控制体系",
+      "source_event_direction_sha256": "ea66965ad87e83ceded1bce431cd3ac6403491ac7f9cd23a0fb02afd2b92037d",
+      "source_macro_sha256": "3059b4a0b5cfd03d2ca0605993d5a590e39f610fbeb7be2fa3f8e158247e40e5",
+      "name": "截留的限时信与家庭邮件主权",
+      "timeline_years": "1969-1970",
+      "main_opponent": "乔纳·杰森",
+      "opposition_type": "family",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["CS01"],
+      "foreshadow_ids": [],
+      "main_characters": ["麦珂·杰森", "玛莎·杰森", "乔纳·杰森"],
+      "fictional_obstacle": "乔纳利用父亲身份截留关键试镜确认函，并伪造一封‘截止日期将至’的假信，企图逼迫玛莎在未看清内容的情况下签字放弃监护审查权。",
+      "prev_life_tragedy": "前世乔纳以‘保护孩子’为由没收所有信件，麦珂在不知情的情况下错过了最佳试镜窗口，最终被诱导签署长期霸王条款。",
+      "info_gap_from_prev_life": "前世乔纳总是声称‘明天必须寄出’，但实际信件是三天后才到；且他习惯将重要文件压在报纸下，只给母亲看剪报后的摘要。",
+      "why_previous_life_failed": "玛莎过度信任丈夫，认为乔纳处理事务更专业，未养成亲自拆阅和核对日期的习惯。",
+      "preemptive_avoidance": "麦珂重生后立刻指出乔纳上周三声称已寄出的信件并未出现在信箱，并要求玛莎亲自检查邮箱角落和报纸夹层。",
+      "bait_and_evidence": "麦珂故意在客厅留下半张写有‘河湾镇邮局周三特快’字样的便签作为诱饵，引导乔纳以为计划天衣无缝，实则玛莎在报纸夹层中找到了被压住的真实试镜回执单，上面清晰印有‘仅限11月15日前回复’的红色印章。",
+      "comic_villain_behavior": "乔纳为了掩盖谎言，试图用一把生锈的剪刀剪掉报纸上的日期，结果手抖剪断了标题，还一脸无辜地抱怨纸张质量太差。",
+      "villain_loss": "乔纳彻底失去对家庭信息的垄断权，被玛莎明确告知不再负责代收任何官方信件，其作为家庭唯一信息渠道的权威被永久剥夺。",
+      "protagonist_gain": "麦珂获得家庭邮件的直接查阅权，确立了‘所有信件必须由母亲或本人当面拆封’的家庭新规。",
+      "relationship_change": "玛莎从盲目信任丈夫转为主动核查信息，母子间形成基于事实的共同防御机制。",
+      "continuity_writes": ["玛莎正式接管家庭邮件收发职责", "乔纳被禁止接触任何未拆封的官方文件", "家庭会议制度增加‘邮件核对’固定议程"],
+      "state_transitions": [
+        {
+          "domain": "job",
+          "entity_id": "CHAR_JOHNA",
+          "state_key": "information_control",
+          "from": "独占家庭信息渠道",
+          "to": "被排除在信息渠道之外",
+          "irreversible": true,
+          "evidence": "玛莎当众撕碎乔纳伪造的剪报，并展示完整原件",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHTS_002",
+          "state_key": "mail_access_authority",
+          "from": "无权限（由父亲代管）",
+          "to": "拥有直接查阅权（母子共管）",
+          "irreversible": true,
+          "evidence": "麦珂亲手拆开并朗读真实回执单",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_003",
+          "state_key": "trust_dynamic",
+          "from": "单向依赖丈夫",
+          "to": "母子共同决策",
+          "irreversible": false,
+          "evidence": "玛莎宣布今后所有信件由黛安娜登记，麦珂复核",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "乔纳因截留信件和伪造信息被彻底边缘化，失去对家庭决策的信息控制权；麦珂与玛莎建立基于透明信息的家庭防御机制，为后续法律博弈奠定情报基础。",
+      "next_event_hook": "乔纳恼羞成怒，决定利用试唱前的混乱局势，通过调换乐谱来破坏麦珂的发挥。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 5,
+          "timeline_start": "1969-11-12",
+          "timeline_end": "1969-11-12",
+          "scene": "杰森家客厅",
+          "chapter_goal": "验证乔纳关于信件的说法，寻找被截留的真实文件。",
+          "chapter_title": "被剪断的日期",
+          "participants": ["麦珂·杰森", "玛莎·杰森", "乔纳·杰森"],
+          "opening_conflict": "乔纳声称已收到并处理了试镜回执，但麦珂指出从未见过原件，引发家庭争执。",
+          "info_gap_use": "麦珂利用前世记忆知道乔纳习惯把真信压在旧报纸下，故意询问‘那本报纸在哪？’逼乔纳露馅。",
+          "opponent_reaction": "乔纳慌乱地翻找报纸堆，嘴里嘟囔着‘肯定是你妈收错了’，却不敢直视麦珂的眼睛。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "杰森家客厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "开场即对话"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_MAIL_001",
+              "timeline_scope": "current",
+              "display_name": "被压住的试镜回执单",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂指着报纸堆询问乔纳藏信的地点",
+            "乔纳借口整理杂物试图转移视线",
+            "玛莎在乔纳身后发现被压皱的报纸",
+            "麦珂取出被剪去日期的假信和完整的真信进行对比"
+          ],
+          "visible_payoff": "玛莎当场识破乔纳的谎言，确认试镜回执真实存在且未被截留。",
+          "ending": "乔纳狼狈退场，玛莎决定今晚召开家庭会议重新分配信件管理权。",
+          "must_include": ["报纸夹层的细节", "被剪断的日期特写", "乔纳慌乱的反应"],
+          "must_not_include": ["乔纳被解职", "麦珂获得最终胜利宣言"],
+          "detailed_synopsis": "1969年11月12日傍晚，客厅里乔纳坚称已处理试镜回执，麦珂却指出从未见过原件。他支吾着说可能放在某处，麦珂随即指向那堆旧报纸。玛莎在乔纳身后翻出被压住的报纸，从中取出一封被恶意剪去日期的假信，旁边还压着真正的回执单。乔纳试图辩解纸张质量问题，却被麦珂当众揭穿。玛莎震惊之余，意识到丈夫一直在隐瞒真相，当场决定收回信件管理权。"
+        },
+        {
+          "chapter_id": 6,
+          "timeline_start": "1969-11-13",
+          "timeline_end": "1969-11-13",
+          "scene": "杰森家餐厅",
+          "chapter_goal": "确立家庭邮件管理新规，彻底剥夺乔纳的信息控制权。",
+          "chapter_title": "邮件主权的移交",
+          "participants": ["麦珂·杰森", "玛莎·杰森", "乔纳·杰森", "黛安娜·罗文"],
+          "opening_conflict": "乔纳试图以家长身份强行解释昨晚的失误，要求恢复原状。",
+          "info_gap_use": "麦珂引用前世乔纳曾利用信件拖延时间的具体日期，证明其习惯性撒谎。",
+          "opponent_reaction": "乔纳气急败坏地拍桌子，指责家人不信任他，却不敢反驳具体的日期证据。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "杰森家餐厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "晚餐时间"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_MAIL_001",
+              "timeline_scope": "current",
+              "purpose": "作为乔纳撒谎的铁证被展示"
+            }
+          ],
+          "action_sequence": [
+            "乔纳试图辩解昨晚的疏忽",
+            "麦珂列出前世记忆中乔纳三次利用信件拖延的具体案例",
+            "玛莎宣布成立家庭邮件管理委员会",
+            "乔纳被迫接受被排除在外的决定"
+          ],
+          "visible_payoff": "乔纳彻底失去家庭信息管理权，家庭决策机制转向母子主导。",
+          "ending": "家庭会议正式确立新规则，乔纳只能旁观，无法再干涉任何信件往来。",
+          "must_include": ["乔纳的辩解失败", "家庭委员会的成立", "麦珂的冷静陈述"],
+          "must_not_include": ["乔纳离家出走", "麦珂获得外部支持"],
+          "detailed_synopsis": "次日晚餐时，乔纳试图挽回颜面，声称昨晚只是工作繁忙导致的疏忽。麦珂冷静地列举前世记忆中乔纳三次利用信件拖延时间的具体案例，证明这是他的惯用手段。玛莎看着儿子坚定的眼神，果断宣布成立家庭邮件管理委员会，由自己和麦珂共同负责，黛安娜担任记录员。乔纳试图反对，但在确凿的证据面前哑口无言，最终只能无奈接受被排除在外的命运。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC004",
+      "chapter_span": [7, 8],
+      "source_event_direction": "前世具体受害：前世的音乐指导临时换调令麦珂失声并落选，导致她错过了全国出道的机会；本事件独有的前世信息差：麦珂记得前世的音乐指导临时换调口令是‘升D调’，今生她在试唱前记得这句话并准备好应对；今生提前动作：麦珂在试唱前找到了成年乐手核对节目顺序，证明了她的实力；第7章可见小赢：第7章，麦珂通过试唱证明了她的实力，获得了正式表演席位；第8章新交锋：第8章，麦珂在正式表演中表现出色，赢得了观众的赞誉；阻力方永久现实损失：制作方失去了排练职务，无法继续控制麦珂的表演；主角现实收益：麦珂获得了正式表演席位和观众的赞誉；不可逆结算键：麦珂的表演成绩被永久记录在《晨光电台》试唱评分表上；接回死亡控制主线：麦珂的成功削弱了2009年死亡背后的保险、版权、医疗或控制体系",
+      "source_event_direction_sha256": "975371561e3fea2ca1c328f5e61527558c07ee6858a2e581c886e95fcb4c726e",
+      "source_macro_sha256": "3059b4a0b5cfd03d2ca0605993d5a590e39f610fbeb7be2fa3f8e158247e40e5",
+      "name": "升D调的陷阱与无声的胜利",
+      "timeline_years": "1969-1970",
+      "main_opponent": "卡尔·霍尔特",
+      "opposition_type": "institutional",
+      "event_type": "performance",
+      "solution_type": "performance_proof",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["CS01"],
+      "foreshadow_ids": ["FS01"],
+      "main_characters": ["麦珂·杰森", "卡尔·霍尔特", "昆廷·琼斯", "玛莎·杰森"],
+      "fictional_obstacle": "音乐指导卡尔·霍尔特计划在试唱前临时更改调性，意图让麦珂因不适应而失声，从而将其淘汰。",
+      "prev_life_tragedy": "前世卡尔·霍尔特在最后一刻下令‘升D调’，麦珂因准备不足而失声，被判定为‘状态不佳’而落选。",
+      "info_gap_from_prev_life": "麦珂记得前世卡尔·霍尔特在试唱前五分钟会突然喊出‘升D调’的口令，且该口令通常伴随特定的手势。",
+      "why_previous_life_failed": "麦珂当时年幼，无法反抗权威指令，且没有成年人在场协助核对乐谱。",
+      "preemptive_avoidance": "麦珂在试唱前主动找到成年乐手昆廷，要求核对节目单和调性，并提前练习了升D调的版本。",
+      "bait_and_evidence": "麦珂故意在后台表现得有些紧张，诱导卡尔·霍尔特按惯例发出‘升D调’指令，同时昆廷当场拿出备用的正确乐谱进行反驳，形成公开证据。",
+      "comic_villain_behavior": "卡尔·霍尔特见阴谋败露，试图假装是‘即兴创作’，结果手舞足蹈地比划手势，反而显得滑稽可笑。",
+      "villain_loss": "卡尔·霍尔特因蓄意破坏演出被剥夺排练指挥权，并被列入行业黑名单，永久失去控制童星表演的机会。",
+      "protagonist_gain": "麦珂凭借完美的表现获得正式表演席位，赢得观众和评委的广泛赞誉，确立了‘未签约创作者’的专业形象。",
+      "relationship_change": "麦珂与昆廷建立深厚的技术信任关系，玛莎对儿子的专业能力感到自豪。",
+      "continuity_writes": ["卡尔·霍尔特被剥夺排练指挥权", "麦珂获得正式表演席位", "《晨光电台》试唱评分表记录麦珂的完美表现"],
+      "state_transitions": [
+        {
+          "domain": "job",
+          "entity_id": "CHAR_KARL",
+          "state_key": "rehearsal_authority",
+          "from": "拥有排练指挥权",
+          "to": "被剥夺指挥权",
+          "irreversible": true,
+          "evidence": "卡尔·霍尔特试图强行改调被昆廷当众揭穿",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "career",
+          "entity_id": "CHAR_MCKE",
+          "state_key": "performance_status",
+          "from": "待定（面临淘汰风险）",
+          "to": "正式表演者（获高度评价）",
+          "irreversible": true,
+          "evidence": "麦珂在正式试唱中完美演绎升D调版本",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_004",
+          "state_key": "technical_trust",
+          "from": "陌生",
+          "to": "深度技术信任",
+          "irreversible": false,
+          "evidence": "昆廷主动提供备用乐谱并协助麦珂调整",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "麦珂成功化解调性陷阱，以完美表现获得正式表演席位，卡尔·霍尔特被剥夺指挥权并遭到行业抵制。麦珂的专业能力得到广泛认可，为后续教育系统的关注奠定基础。",
+      "next_event_hook": "卡尔·霍尔特虽被撤职，但其背后势力开始策划媒体抹黑，试图将麦珂包装成‘叛逆神童’。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 7,
+          "timeline_start": "1969-11-14",
+          "timeline_end": "1969-11-14",
+          "scene": "《晨光电台》后台",
+          "chapter_goal": "识破并挫败卡尔·霍尔特的调性陷阱，确保试唱顺利进行。",
+          "chapter_title": "升D调的伏击",
+          "participants": ["麦珂·杰森", "卡尔·霍尔特", "昆廷·琼斯"],
+          "opening_conflict": "卡尔·霍尔特试图在试唱前临时更改调性，麦珂识破其意图并寻求昆廷帮助。",
+          "info_gap_use": "麦珂利用前世记忆预判卡尔·霍尔特的‘升D调’口令，提前做好准备。",
+          "opponent_reaction": "卡尔·霍尔特见阴谋即将得逞，脸上露出得意的笑容，却不知已被麦珂看穿。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "《晨光电台》后台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "试唱前一刻"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_SCORE_001",
+              "timeline_scope": "current",
+              "display_name": "备用升D调乐谱",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "卡尔·霍尔特暗示要改调",
+            "麦珂迅速向昆廷求助",
+            "昆廷拿出备用乐谱并指出原调错误",
+            "麦珂在众人面前演唱升D调版本"
+          ],
+          "visible_payoff": "麦珂成功完成试唱，卡尔·霍尔特的阴谋被当场揭穿。",
+          "ending": "卡尔·霍尔特被要求暂停工作，等待进一步调查。",
+          "must_include": ["卡尔·霍尔特的改调指令", "昆廷的介入", "麦珂的完美演唱"],
+          "must_not_include": ["卡尔·霍尔特被解雇", "麦珂获得最终胜利宣言"],
+          "detailed_synopsis": "1969年11月14日，《晨光电台》后台，卡尔·霍尔特试图在试唱前临时下令‘升D调’，意图让麦珂失声。麦珂早已预料到此举，迅速转向昆廷求助。昆廷立即拿出备用的正确乐谱，指出原调的错误。麦珂在众目睽睽之下，自信地演唱了升D调版本，声音清澈动人。卡尔·霍尔特的阴谋被当场揭穿，他尴尬地站在原地，不知所措。"
+        },
+        {
+          "chapter_id": 8,
+          "timeline_start": "1969-11-15",
+          "timeline_end": "1969-11-15",
+          "scene": "《晨光电台》演播厅",
+          "chapter_goal": "在正式试唱中展现完美实力，赢得观众和评委的赞誉。",
+          "chapter_title": "无声的胜利",
+          "participants": ["麦珂·杰森", "卡尔·霍尔特", "玛莎·杰森", "评委团"],
+          "opening_conflict": "卡尔·霍尔特试图在正式试唱中再次制造混乱，但被麦珂从容化解。",
+          "info_gap_use": "麦珂利用前世记忆中的观众反应节奏，精准控制演唱情绪。",
+          "opponent_reaction": "卡尔·霍尔特试图干扰，却在麦珂的歌声中显得苍白无力。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "《晨光电台》演播厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "正式试唱开始"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_SCORE_001",
+              "timeline_scope": "current",
+              "purpose": "作为麦珂演唱的依据"
+            }
+          ],
+          "action_sequence": [
+            "麦珂走上舞台，面对卡尔·霍尔特的挑衅",
+            "麦珂按照预定节奏演唱，完全不受干扰",
+            "观众和评委被麦珂的歌声深深打动",
+            "卡尔·霍尔特在台下气得跳脚"
+          ],
+          "visible_payoff": "麦珂获得全场掌声，正式表演席位尘埃落定。",
+          "ending": "卡尔·霍尔特被正式剥夺指挥权，麦珂成为焦点。",
+          "must_include": ["麦珂的完美演唱", "观众的热烈反响", "卡尔·霍尔特的失败"],
+          "must_not_include": ["麦珂获得商业合约", "卡尔·霍尔特自首"],
+          "detailed_synopsis": "次日，正式试唱在《晨光电台》演播厅举行。卡尔·霍尔特试图在最后关头再次制造混乱，但麦珂早已胸有成竹。她按照前世记忆中的节奏，精准地控制着每一个音符，歌声如天籁般回荡在演播厅。观众和评委都被深深打动，爆发出热烈的掌声。卡尔·霍尔特在台下气得跳脚，却无能为力。最终，麦珂凭借完美的表现，正式获得表演席位，卡尔·霍尔特被剥夺指挥权。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1969",
+    "character_states": [
+      "玛莎：从被动监护人转变为主动核查信息的家庭决策者",
+      "乔纳：失去家庭信息管理权，被边缘化",
+      "麦珂：获得家庭邮件控制权，确立专业表演者身份",
+      "卡尔·霍尔特：被剥夺排练指挥权，列入行业黑名单",
+      "昆廷：与麦珂建立深度技术信任关系"
+    ],
+    "relationship_states": [
+      "玛莎与麦珂：形成基于事实的共同防御机制",
+      "麦珂与昆廷：建立深厚的技术信任关系",
+      "乔纳与家庭：关系破裂，失去话语权"
+    ],
+    "rights_and_assets": [
+      "《晨光电台》试唱评分表记录麦珂的完美表现",
+      "家庭邮件管理权移交至麦珂与玛莎手中",
+      "卡尔·霍尔特被剥夺排练指挥权"
+    ],
+    "health_and_location": [
+      "麦珂健康状况良好，每日晨间完成喉部监测与呼吸训练",
+      "居住于河湾镇原居所"
+    ],
+    "open_threads": [
+      "卡尔·霍尔特背后势力的媒体抹黑计划",
+      "1969年试镜录像盒底部隐藏的铜质齿轮"
+    ],
+    "resolved_threads": [
+      "乔纳截留信件事件",
+      "卡尔·霍尔特调性陷阱事件"
+    ],
+    "introduced_characters": [
+      "卡尔·霍尔特（新创架空对手）"
+    ],
+    "next_pressure": "卡尔·霍尔特背后势力开始策划媒体抹黑，试图将麦珂包装成‘叛逆神童’。"
+  }
+}

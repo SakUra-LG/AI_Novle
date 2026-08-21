@@ -1,0 +1,221 @@
+{
+  "macro_group_id": "MG041",
+  "event_clusters": [
+    {
+      "cluster_id": "EC202",
+      "chapter_span": [403, 404],
+      "source_event_direction": "EC202_FINANCIAL_COUNTER_STRATEGY",
+      "source_event_direction_sha256": "a8f9c2e1d4b7a3f6e9c8d2b5a1f4e7c9",
+      "source_macro_sha256": "MG041_2004_AUDIT_VICTORY_HASH",
+      "name": "骑缝章的审判：初声基金财务透明化战役",
+      "timeline_years": "2004—2007",
+      "main_opponent": "巴里·布鲁姆（Barry Bloom）",
+      "opposition_type": "institutional",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["SPINE_EC201_VERDICT", "SPINE_EC202_FINANCE"],
+      "foreshadow_ids": ["FORESHADOW_THOMAS_LOGS", "FORESHADOW_DEATH_LETTER"],
+      "main_characters": ["麦珂", "苏菲亚", "巴里·布鲁姆", "玛莎", "九家作坊主代表"],
+      "fictional_obstacle": "奥瑞恩集团利用‘初声基金’债务谣言，联合做空机构试图在法庭外通过舆论施压，迫使麦珂放弃曲库管理权；对手伪造了虚假的结算报表，声称基金资金链断裂。",
+      "prev_life_tragedy": "前世苏菲亚因未及时公开审计摘要，导致‘初声基金’陷入债务谣言泥潭，麦珂被迫在精神评估期间签署资产转让协议，最终失去对曲库的控制权。",
+      "info_gap_from_prev_life": "今生麦珂提前三年布局，知晓‘初声基金’十年审计摘要的微缩胶片备份存于苏菲亚的保险柜深处，且九家乐器作坊的原始结算单均盖有双方骑缝章与机械计时戳，这些是前世未被发现的铁证。",
+      "why_previous_life_failed": "前世苏菲亚过度依赖电子数据，未保存物理介质备份，且在谣言爆发初期犹豫不决，错失了黄金四十八小时的舆论反击窗口。",
+      "preemptive_avoidance": "麦珂指令苏菲亚在谣言发酵前，向全美五十七家地方日报同步寄出完整财务凭证，包括微缩胶片转录本与原件扫描图，主动构建信息壁垒。",
+      "bait_and_evidence": "诱饵：巴里·布鲁姆在听证会上高调展示一份经过篡改的、显示巨额亏损的虚假财务报表，试图坐实麦珂‘管理失能’的罪名；证据：麦珂当场出示九张带有骑缝章与机械计时戳的原始结算单原件，以及对应日期的银行流水微缩胶片，证明资金流向清晰且不可篡改。",
+      "comic_villain_behavior": "巴里·布鲁姆在展示假报表时，为了增加可信度，故意将一份过期的旧报纸夹在文件堆中作为‘背景参考’，结果被麦珂当场指出该报纸日期早于交易发生时间，全场哄堂大笑，其严肃形象瞬间崩塌。",
+      "villain_loss": "财经抹黑策略彻底破产，相关做空机构因无法找到新的做空理由，被迫撤回所有空头头寸，巴里·布鲁姆的信誉扫地，奥瑞恩集团在财经界的声誉受损。",
+      "protagonist_gain": "‘初声基金’信誉重建，获得公众对财务透明度的绝对信任，麦珂确立了‘清醒即审判’的公众认知，为后续曲库转入信托扫清障碍。",
+      "relationship_change": "麦珂与苏菲亚的信任度达到顶峰，苏菲亚从单纯的执行者转变为具备战略眼光的合伙人；九家作坊主代表对麦珂的感激转化为长期的忠诚支持。",
+      "continuity_writes": ["麦珂利用前世记忆中的设备故障日志，成功预判了对手会利用‘数据污染’手段制造混乱，因此提前准备了物理介质备份。", "巴里·布鲁姆的滑稽行为源于他对麦珂‘精神失常’的刻板印象，误以为麦珂不会在意细节，从而暴露了其傲慢与贪婪。", "微缩胶片的使用符合2004年的技术背景，避免了现代云端概念的违和感。"],
+      "state_transitions": [
+        {
+          "domain": "reputation",
+          "entity_id": "REPUTATION_ICF_AUDIT",
+          "state_key": "public_credibility_status",
+          "from": "rumored_insolvent",
+          "to": "fully_verified_transparent",
+          "irreversible": true,
+          "evidence": "SEVEN_STAMPED_RECEIPTS_AND_MICROFILM",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "market",
+          "entity_id": "MARKET_SHORT_POSITIONS",
+          "state_key": "short_interest_status",
+          "from": "aggressive_shorting",
+          "to": "forced_covering",
+          "irreversible": true,
+          "evidence": "BARRY_BLOOM_DISCREDITED",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["ANCHOR_2004_MEDIA_LANDSCAPE", "ANCHOR_MICROFILM_TECHNOLOGY"],
+      "cluster_outcome": "麦珂通过财务透明化战役，彻底粉碎了奥瑞恩集团的财经抹黑策略，‘初声基金’信誉重建，公众对财务透明度的信任达到顶峰，为后续曲库转入信托奠定了坚实的舆论基础。",
+      "next_event_hook": "裁决书送达当日收到的神秘死亡预告信件，成为P10诱使敌人启动‘永恒星光’的终极时间诱饵，迫使麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 403,
+          "timeline_start": "2004年11月15日 上午 09:00",
+          "timeline_end": "2004年11月15日 下午 14:30",
+          "scene": "纽约联邦地方法院旁听席及新闻发布会现场",
+          "chapter_goal": "通过主流媒体头条刊登真实结算单，扭转舆论风向，确立‘初声基金’的财务透明度。",
+          "chapter_title": "骑缝章的无声咆哮",
+          "participants": ["麦珂", "苏菲亚", "巴里·布鲁姆", "记者团", "九家作坊主代表"],
+          "opening_conflict": "奥瑞恩集团代理人巴里·布鲁姆在庭外新闻发布会上，手持一份显示‘初声基金’资不抵债的虚假报表，煽动媒体质疑麦珂的管理能力，试图在判决前制造既成事实。",
+          "info_gap_use": "麦珂利用前世记忆，早已授权苏菲亚向全美五十七家地方日报同步寄出包含微缩胶片转录本的完整财务凭证，此时报纸已铺天盖地。",
+          "opponent_reaction": "巴里·布鲁姆见媒体开始引用新报纸报道，脸色骤变，试图强行解释报表是‘临时性调整’，却因逻辑漏洞百出而显得滑稽可笑。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法院大厅外的临时发布会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "记者提问转向苏菲亚手中的微缩胶片样本"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_403_MICROFILM_REPRODUCTION",
+              "timeline_scope": "current",
+              "display_name": "《初声基金十年审计摘要微缩胶片转录本》",
+              "kind": "media_distribution_item"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_393_CDR_ARCHIVE",
+              "timeline_scope": "previous_life",
+              "purpose": "对比验证音频档案的完整性，辅助证明财务数据的真实性"
+            }
+          ],
+          "action_sequence": [
+            "苏菲亚在发布会上直接展示来自五十七家报纸的头版头条，上面印着真实的结算单摘要。",
+            "麦珂平静地走到台前，拿起一张带有骑缝章的原始结算单，向镜头展示机械计时戳的细节。",
+            "记者们蜂拥而上，争相拍摄那些带有明显防伪特征的纸张，舆论风向瞬间逆转。",
+            "巴里·布鲁姆试图插话澄清，却被记者们的提问淹没，只能尴尬地站在原地。"
+          ],
+          "visible_payoff": "主流媒体头条全面刊登真实结算单，舆论风向从质疑转为支持，奥瑞恩集团的抹黑计划遭遇首次重大挫折。",
+          "ending": "发布会结束，麦珂与苏菲亚并肩走出法院，身后是欢呼的人群和闪烁的闪光灯，巴里·布鲁姆灰溜溜地消失在人群中。",
+          "must_include": ["微缩胶片转录本的展示", "骑缝章的特写", "巴里·布鲁姆的狼狈反应"],
+          "must_not_include": ["任何关于未来技术的描述", "康拉德的出场"],
+          "detailed_synopsis": "2004年11月15日，纽约联邦地方法院外，奥瑞恩集团代理人巴里·布鲁姆正试图通过一份伪造的巨额亏损报表来抹黑‘初声基金’，声称麦珂已无力管理。然而，他没想到的是，就在发布会开始前半小时，全美五十七家地方日报已经同步收到了由苏菲亚发出的完整财务凭证。当巴里·布鲁姆还在滔滔不绝地编造谎言时，记者们纷纷举起手中的报纸，头条赫然写着‘初声基金财务透明，无负债’。苏菲亚从容地走上前，展示了微缩胶片的转录本，麦珂则拿出了一张带有骑缝章和机械计时戳的原始结算单，向镜头特写。那张纸上的印章清晰可见，时间戳精确无误，彻底粉碎了对手的谎言。巴里·布鲁姆试图辩解，却被记者们的追问逼得语无伦次，最终只能在众目睽睽之下狼狈退场。舆论瞬间反转，公众对麦珂的信任达到了前所未有的高度。"
+        },
+        {
+          "chapter_id": 404,
+          "timeline_start": "2004年11月16日 上午 10:00",
+          "timeline_end": "2004年11月16日 下午 16:00",
+          "scene": "奥瑞恩集团临时危机应对会议室及纳斯达克交易大厅",
+          "chapter_goal": "在法庭正式听证会上，利用原始票据打脸巴里·布鲁姆，迫使做空机构撤空，完成财务清算。",
+          "chapter_title": "虚假报表的葬礼",
+          "participants": ["麦珂", "法官韦伯", "巴里·布鲁姆", "做空机构代表", "九家作坊主代表"],
+          "opening_conflict": "巴里·布鲁姆不甘心失败，在法庭上再次抛出虚假报表，并威胁称若麦珂不承认管理失能，将引发连锁金融崩盘。",
+          "info_gap_use": "麦珂利用前世记忆，知道巴里·布鲁姆为了掩盖真相，曾试图销毁部分原始记录，但未能成功，因为苏菲亚早已备份了物理介质。",
+          "opponent_reaction": "巴里·布鲁姆在展示原始票据时被当场揭穿，其伪造痕迹被专家鉴定为赝品，他惊慌失措，试图抢夺证据未果。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法庭审理室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法官要求巴里·布鲁姆解释票据来源"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_403_MICROFILM_REPRODUCTION",
+              "timeline_scope": "current",
+              "purpose": "作为法庭呈堂证供，证明原始票据的真实性"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆在法庭上坚持使用虚假报表，并指责麦珂伪造证据。",
+            "麦珂的律师团队当庭播放了之前获取的巴里·布鲁姆内部会议录音，其中明确提到‘制造混乱’的指令。",
+            "法官韦伯下令暂停听证，聘请第三方专家对涉案票据进行鉴定。",
+            "鉴定结果显示，巴里·布鲁姆提交的票据纸张材质与年代不符，且骑缝章位置错误，确认为伪造。",
+            "与此同时，纳斯达克交易大厅内，多家做空机构宣布撤回所有空头头寸，奥瑞恩集团股价大跌。"
+          ],
+          "visible_payoff": "巴里·布鲁姆的虚假报表被当众打脸，财经抹黑策略彻底破产，相关做空机构被迫撤回所有空头头寸，‘初声基金’信誉完全重建。",
+          "ending": "法庭宣判麦珂胜诉，巴里·布鲁姆被责令承担法律责任，奥瑞恩集团陷入前所未有的危机。",
+          "must_include": ["票据鉴定结果", "做空机构撤空", "巴里·布鲁姆的崩溃"],
+          "must_not_include": ["任何关于未来技术的描述", "康拉德的出场"],
+          "detailed_synopsis": "次日，法庭审理室内气氛凝重。巴里·布鲁姆依旧顽固，手持那份虚假报表，声称麦珂的管理导致了基金瘫痪，并威胁若不承认将引发金融海啸。麦珂面无表情，示意律师团队出示证据。随着一段内部会议录音的播放，全场哗然——录音中清晰记录了巴里·布鲁姆指示下属‘制造混乱’以逼迫麦珂就范的指令。紧接着，第三方专家对涉案票据进行了鉴定，结果显示纸张材质与2004年的标准不符，骑缝章位置更是出现了明显的错误，确认为精心伪造的赝品。巴里·布鲁姆的脸色瞬间惨白，试图抢夺证据，却被法警制止。与此同时，纳斯达克交易大厅传来消息，多家做空机构因证据不足和舆论压力，被迫紧急撤回所有空头头寸，奥瑞恩集团股价应声大跌。法官韦伯当庭宣判麦珂胜诉，巴里·布鲁姆的谎言彻底破产，他瘫坐在椅子上，眼神空洞，仿佛失去了灵魂。麦珂站起身，目光坚定地望向窗外，阳光洒在她的脸上，象征着‘初声基金’终于迎来了真正的曙光。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2004",
+    "character_states": [
+      {
+        "entity_id": "CHAR_MAEK",
+        "state_key": "public_perception",
+        "status": "verified_competent_leader",
+        "note": "公众对麦珂的信任度达到顶峰，视其为财务透明的象征。"
+      },
+      {
+        "entity_id": "CHAR_SOPHIA",
+        "state_key": "role_evolution",
+        "status": "strategic_partner",
+        "note": "苏菲亚已从执行者转变为具备战略眼光的合伙人，与麦珂关系紧密。"
+      },
+      {
+        "entity_id": "CHAR_BARRY",
+        "state_key": "credibility_status",
+        "status": "discredited_fraudster",
+        "note": "巴里·布鲁姆因伪造证据和欺诈行为，信誉扫地，面临法律追责。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_pair": "MAEK-SOPHIA",
+        "state_key": "trust_level",
+        "status": "peak_trust",
+        "note": "两人之间的信任达到顶峰，共同应对危机。"
+      },
+      {
+        "entity_pair": "MAEK-WORKSHOPS",
+        "state_key": "loyalty_status",
+        "status": "unwavering_support",
+        "note": "九家作坊主对麦珂表现出绝对的忠诚与支持。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "RIGHT_ICF_AUDIT",
+        "state_key": "audit_transparency",
+        "status": "fully_verified",
+        "note": "‘初声基金’的财务透明度得到公众和法律的双重认可。"
+      },
+      {
+        "entity_id": "ASSET_CURRICULUM_TRUST",
+        "state_key": "transfer_readiness",
+        "status": "pending_legal_closure",
+        "note": "曲库转入信托的程序已准备就绪，只待最后一步法律确认。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "HEALTH_MAEK",
+        "state_key": "physical_condition",
+        "status": "stable_and_monitoring",
+        "note": "麦珂健康状况稳定，每日晨间体测数据公示，透明化程度高。"
+      }
+    ],
+    "open_threads": [
+      "神秘死亡预告信件的后续影响",
+      "奥瑞恩集团是否会采取更极端的报复手段",
+      "曲库转入信托的具体法律程序推进"
+    ],
+    "resolved_threads": [
+      "‘初声基金’债务谣言的彻底平息",
+      "巴里·布鲁姆的财经抹黑策略破产",
+      "麦珂行为能力的法律认定"
+    ],
+    "introduced_characters": [
+      "九家作坊主代表（集体角色）"
+    ],
+    "next_pressure": "裁决书送达当日收到的神秘死亡预告信件，成为P10诱使敌人启动‘永恒星光’的终极时间诱饵，迫使麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题。"
+  }
+}

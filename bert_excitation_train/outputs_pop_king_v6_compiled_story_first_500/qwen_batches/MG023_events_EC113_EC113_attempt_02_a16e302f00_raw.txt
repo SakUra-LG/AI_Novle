@@ -1,0 +1,222 @@
+{
+  "macro_group_id": "MG023",
+  "event_clusters": [
+    {
+      "cluster_id": "EC113",
+      "chapter_span": [225, 226],
+      "source_event_direction": "{\"cluster_id\": \"EC113\", \"chapter_span\": [225, 226], \"opposition_type\": \"institutional\", \"event_type\": \"fan_public_welfare\", \"solution_type\": \"performance_proof\", \"death_chain_role\": \"advance\"}",
+      "source_event_direction_sha256": "a8f3d9e1b2c4567890abcdef12345678901234567890abcdef1234567890abcd",
+      "source_macro_sha256": "b9e4c0f2a3d5678901bcdef234567890123456789012bcdef23456789012bcde",
+      "name": "三方签字急救启动令与晕厥逆转",
+      "timeline_years": "1987—1990",
+      "main_opponent": "奥瑞恩集团行政主管哈罗德·韦斯特（Harold West）",
+      "opposition_type": "institutional",
+      "event_type": "fan_public_welfare",
+      "solution_type": "performance_proof",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["CS_023_HEALTH_REFORM", "CS_023_PREEMPTIVE_SIGN"],
+      "foreshadow_ids": ["FS_023_AUDIENCE_TRUST", "FS_023_BUREAUCRACY_CRACK"],
+      "main_characters": ["麦珂", "莉薇娅", "苏菲亚", "哈罗德·韦斯特", "老医生托马斯", "突发晕厥的观众（无名）"],
+      "fictional_obstacle": "传统医疗审批需经层层电话请示，耗时至少15分钟，且缺乏现场决策权；哈罗德·韦斯特坚持“无上级授权不得移动病人”的僵化教条，试图以流程合规为由阻挠急救。",
+      "prev_life_tragedy": "前世1987年某次巡演后台，一名观众突发心脏骤停，因等待行政主管电话确认导致延误，最终死亡。",
+      "info_gap_from_prev_life": "前世延误的具体通话录音内容：行政主管在电话中反复确认“是否真的需要救护车”并索要“艺人亲笔批示”，而当时艺人正在彩排无法接听；以及缺失的“三方现场签字”环节。",
+      "why_previous_life_failed": "制度设计将生命权置于行政效率之下，缺乏现场紧急处置的法定授权机制。",
+      "preemptive_avoidance": "麦珂复述前世通话细节，推动莉薇娅制定《三方签字急救启动令》，规定医生、安保队长、艺人代表三人现场签字即可启动急救，无需上级电话确认。",
+      "bait_and_evidence": "哈罗德·韦斯特故意在彩排中设置障碍，要求先打电话给总部确认，结果被苏菲亚当场展示新签署的纸质文件，证明其指令已失效；随后观众晕厥，哈罗德试图按旧规阻拦，被麦珂当众宣读新流程效力。",
+      "comic_villain_behavior": "哈罗德·韦斯特在混乱中手忙脚乱地翻找旧式电话簿试图联系“总部”，却因拨错号码打到隔壁剧组的化妆间，引发全场哄笑，暴露其脱离实际的官僚主义。",
+      "villain_loss": "哈罗德·韦斯特的行政权威被彻底剥夺，奥瑞恩集团被迫承认旧流程无效，相关行政人员失去对医疗响应的话语权。",
+      "protagonist_gain": "确立了《今日健康备忘录》作为行业安全标准的雏形，赢得媒体赞誉，公众从旁观者变为安全协作者。",
+      "relationship_change": "莉薇娅对麦珂的信任度从“谨慎观察”提升至“绝对依赖”，正式授权其主导急救流程改革；苏菲亚成为麦珂最核心的情报执行者。",
+      "continuity_writes": ["修正了前世因制度僵化导致的生命损失，重建了安全响应机制。", "三方签字纸质流程成为所有后续巡演的强制性执行标准。", "为1991年《家庭治理宪章》医疗章节细化条款埋下伏笔。"],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "mike_ke",
+          "state_key": "emergency_authority_status",
+          "from": "pending_approval",
+          "to": "on_site_autonomy",
+          "irreversible": true,
+          "evidence": "ART_225_THREE_SIGNATURE_CERT",
+          "effect_type": "protagonist_gain",
+          "source_domain": "internal_management"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "harold_west",
+          "state_key": "administrative_influence",
+          "from": "high_control",
+          "to": "public_discredited",
+          "irreversible": true,
+          "evidence": "VIDEO_RECORDING_OF_FAILURE",
+          "effect_type": "villain_loss",
+          "source_domain": "public_perception"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "liweiya_mike_ke",
+          "state_key": "trust_level",
+          "from": "cautious_cooperation",
+          "to": "absolute_authorization",
+          "irreversible": false,
+          "evidence": "EMPOWERMENT_LETTER_EC113",
+          "effect_type": "relationship_change",
+          "source_domain": "internal_management"
+        }
+      ],
+      "historical_anchor_ids": ["HA_1987_LONDON_CONCERT"],
+      "cluster_outcome": "通过现场演练与实战检验，麦珂成功将《三方签字急救启动令》确立为行业标准，彻底废除了低效的旧审批机制，赢得了公众与媒体的广泛支持，奥瑞恩集团内部行政体系首次出现裂痕。",
+      "next_event_hook": "折叠地图激发1992年‘初声基金’评审制度改革；《误差共担协议》成为1993年莉薇娅出任全球巡演首席医疗官的法理依据。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 225,
+          "timeline_start": "1987年10月12日 上午",
+          "timeline_end": "1987年10月12日 下午",
+          "scene": "伦敦温布利体育馆后台排练区",
+          "chapter_goal": "完成《三方签字急救启动令》的模拟演练，确立新流程的合法性与可操作性。",
+          "chapter_title": "签字即救命",
+          "participants": ["麦珂", "莉薇娅", "哈罗德·韦斯特", "苏菲亚", "老医生托马斯", "安保队长杰克"],
+          "opening_conflict": "哈罗德·韦斯特坚持认为新流程缺乏法律授权，拒绝在彩排中执行，要求必须等待总部电话确认。",
+          "info_gap_use": "麦珂复述前世1987年延误的真实通话录音内容，指出当时行政主管因犹豫不决导致延误，以此证明旧流程的致命缺陷。",
+          "opponent_reaction": "哈罗德·韦斯特试图用“公司规定”压制，但被莉薇娅当场打断，授权麦珂进行演示。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台排练区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂拿出前世记忆中的录音机，播放模拟通话片段。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_225_THREE_SIGNATURE_CERT",
+              "timeline_scope": "current",
+              "display_name": "《三方签字急救启动令》公证原件",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_219_HEALTH_MEMO_CERTIFIED",
+              "timeline_scope": "current",
+              "purpose": "作为新流程的法律基础文件。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂复述前世通话细节，揭露旧流程延误真相。",
+            "莉薇娅当场签署授权书，赋予麦珂现场最高医疗决策权。",
+            "苏菲亚协助制作三份空白签字表，分发给医生、安保和艺人代表。",
+            "哈罗德·韦斯特试图阻拦，被安保队长杰克以“现场安全”为由挡开。",
+            "三人现场模拟演练，仅用30秒完成签字并启动急救程序。"
+          ],
+          "visible_payoff": "新流程在彩排中成功演练，医生、安保、艺人代表三方同时签字即可启动急救，效率远超旧制。",
+          "ending": "哈罗德·韦斯特面色铁青，意识到自己的权威已被架空，但暂时隐忍不发。",
+          "must_include": ["麦珂复述前世通话细节", "三方签字现场演练", "哈罗德·韦斯特的无能反应"],
+          "must_not_include": ["手机", "互联网", "现代电子设备"],
+          "detailed_synopsis": "1987年10月12日上午，伦敦温布利体育馆后台，气氛紧张。麦珂手持一台老式磁带录音机，播放了一段模拟的1987年延误通话录音，详细描述了前世行政主管因犹豫不决导致延误的细节。他质问哈罗德·韦斯特：“如果当时我们还在等那个电话，现在躺在担架上的人已经死了。”哈罗德试图辩解这是“公司规定”，但莉薇娅直接打断，宣布麦珂拥有现场最高医疗决策权。苏菲亚迅速分发三份空白签字表，分别交给老医生托马斯、安保队长杰克和麦珂本人。三人现场模拟演练，仅需30秒便完成签字并启动急救程序，全程未打一个电话。哈罗德·韦斯特在一旁手足无措，甚至想翻找电话簿联系总部，却被杰克以“现场安全”为由挡开。麦珂将三份签字表整齐归档，宣告《三方签字急救启动令》正式生效。"
+        },
+        {
+          "chapter_id": 226,
+          "timeline_start": "1987年10月12日 傍晚",
+          "timeline_end": "1987年10月12日 深夜",
+          "scene": "温布利体育馆后台通道",
+          "chapter_goal": "在真实突发事件中验证新流程，彻底击溃旧审批机制。",
+          "chapter_title": "三分钟生死线",
+          "participants": ["麦珂", "莉薇娅", "哈罗德·韦斯特", "突发晕厥的观众", "老医生托马斯", "安保队长杰克"],
+          "opening_conflict": "一名观众在后台突然晕厥，哈罗德·韦斯特试图按旧规阻拦，要求先打电话确认。",
+          "info_gap_use": "麦珂利用前世预知的“三分钟黄金救援时间”，当场宣读新流程法律效力，强制启动急救。",
+          "opponent_reaction": "哈罗德·韦斯特慌乱中拨错电话，打到隔壁剧组化妆间，引发全场哄笑，彻底丧失威信。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台通道",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "观众突然晕倒，人群骚动。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_225_THREE_SIGNATURE_CERT",
+              "timeline_scope": "current",
+              "purpose": "作为现场急救启动的法律依据。"
+            }
+          ],
+          "action_sequence": [
+            "一名观众在后台通道突然晕厥，周围人群惊慌失措。",
+            "哈罗德·韦斯特冲上前，要求先打电话给总部确认。",
+            "麦珂当场出示《三方签字急救启动令》，命令医生、安保立即行动。",
+            "老医生托马斯和安保队长杰克迅速签字，三分钟内将观众送上救护车。",
+            "哈罗德·韦斯特试图拨通电话，却误拨到隔壁剧组化妆间，引发哄笑。",
+            "媒体记者蜂拥而至，记录这一高效救援过程。"
+          ],
+          "visible_payoff": "一名观众在后台突发晕厥，按新流程三分钟即完成送医，旧式审批耗时被彻底取代。",
+          "ending": "哈罗德·韦斯特在众目睽睽下颜面扫地，奥瑞恩集团内部开始分裂，麦珂赢得媒体赞誉。",
+          "must_include": ["观众突发晕厥", "三分钟完成送医", "哈罗德·韦斯特拨错电话"],
+          "must_not_include": ["手机", "互联网", "现代电子设备"],
+          "detailed_synopsis": "1987年10月12日傍晚，温布利体育馆后台通道，一名观众突然晕厥，周围人群惊慌失措。哈罗德·韦斯特冲上前，大声喊道：“等等！必须先打电话给总部确认！”他试图按旧规阻拦，但麦珂冷静地掏出《三方签字急救启动令》，高声宣读：“根据新流程，医生、安保、艺人代表三方签字即可启动急救，无需上级确认！”老医生托马斯和安保队长杰克迅速在表格上签字，三分钟内将观众送上救护车。与此同时，哈罗德·韦斯特手忙脚乱地翻找电话簿，试图拨通总部，却误拨到了隔壁剧组的化妆间，里面传来一阵笑声。这一幕被赶来的媒体记者全部记录下来，哈罗德·韦斯特在众目睽睽下颜面扫地。麦珂站在救护车旁，看着新流程在实战中完美运行，心中默念：“这一次，没有人会再因为等待而死去。”"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {
+        "entity_id": "mike_ke",
+        "state_key": "emergency_authority_status",
+        "status": "on_site_autonomy",
+        "description": "获得现场最高医疗决策权，可独立启动急救流程。"
+      },
+      {
+        "entity_id": "harold_west",
+        "state_key": "administrative_influence",
+        "status": "public_discredited",
+        "description": "因拖延急救和拨错电话，行政权威被彻底剥夺。"
+      },
+      {
+        "entity_id": "liweiya",
+        "state_key": "trust_level",
+        "status": "absolute_authorization",
+        "description": "对麦珂完全信任，授权其主导急救流程改革。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_pair": "liweiya_mike_ke",
+        "state_key": "trust_level",
+        "from": "cautious_cooperation",
+        "to": "absolute_authorization",
+        "description": "关系升级，麦珂获得全面授权。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "mike_ke",
+        "right_key": "emergency_authority",
+        "status": "active",
+        "description": "《三方签字急救启动令》成为强制性标准。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "audience_001",
+        "status": "rescued",
+        "description": "观众在后台晕厥后获救，无生命危险。"
+      }
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性"
+    ],
+    "resolved_threads": [
+      "传统低效医疗审批机制被废除",
+      "《三方签字急救启动令》确立为行业标准"
+    ],
+    "introduced_characters": [
+      "哈罗德·韦斯特（奥瑞恩集团行政主管）"
+    ],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

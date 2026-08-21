@@ -1,0 +1,39 @@
+{
+  "cluster_id": "EC014",
+  "chapter_id": 27,
+  "attempt": 2,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "0b4bfb68675d91331a82c2240425b8a8cbe5b9375cd1416d5ba306519a223700",
+  "raw_response_sha256": "a3f29e342f5d0d7a3209408eb8c317bbd2067d13c428a2077a15def34c348022",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 33.278,
+    "usage": {
+      "input_tokens": 5038,
+      "output_tokens": 1419,
+      "total_tokens": 6457,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "chapter_audit": {
+    "han_chars": 1419,
+    "total_chars": 1747,
+    "target_han_range": [
+      1300,
+      1800
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "failures": [
+      "正文夹入英文小写叙述词：heel"
+    ]
+  },
+  "failures": [
+    "正文夹入英文小写叙述词：heel"
+  ],
+  "accepted": false
+}

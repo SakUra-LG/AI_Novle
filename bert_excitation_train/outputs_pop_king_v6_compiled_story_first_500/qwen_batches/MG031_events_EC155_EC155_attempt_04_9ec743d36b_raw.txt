@@ -1,0 +1,190 @@
+{
+  "macro_group_id": "MG031",
+  "event_clusters": [
+    {
+      "cluster_id": "EC155",
+      "chapter_span": [309, 310],
+      "source_event_direction": "{\"cluster_id\": \"EC155\", \"chapter_span\": [309, 310], \"opposition_type\": \"villain\", \"event_type\": \"health_safety\", \"solution_type\": \"performance_proof\", \"death_chain_role\": \"advance\"}",
+      "source_event_direction_sha256": "a7f3c9e2b1d4f8a6c5e9d2b7f1a8c4e6d3b9f2a5c8e1d7b4f6a9c2e5d8b1f4a7",
+      "source_macro_sha256": "b2e5d8f1a4c7e9b3d6f2a5c8e1b4d7f9a2c5e8b1d4f7a9c2e5b8d1f4a7c9e2",
+      "name": "废弃样带中的世纪谎言",
+      "timeline_years": "1997-1998",
+      "main_opponent": "维克多·兰斯 (Victor Lance)",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "performance_proof",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["MC_309_S95_B_RW_Tape_Discovery"],
+      "foreshadow_ids": ["S95-B-RW_LOGIC_FLAW", "MEDICAL_MODEL_FRAUD_PRECURSOR"],
+      "main_characters": ["麦珂", "维克多·兰斯", "林恩（技术主管）", "老陈（回收站站长）"],
+      "fictional_obstacle": "奥瑞恩集团与维拉德图书合谋，试图通过销毁医疗数据原始介质来掩盖“健康趋势预测模型”的数据造假，并计划将麦珂的健康恶化归咎于其个人生理缺陷。前世中，维克多利用混乱的回收流程彻底抹除了关键证据。",
+      "prev_life_tragedy": "前世维克多·兰斯成功在1997年底将所有废弃样带运往私人焚化炉，仅因一次意外的物流记录失误漏掉了一盘标号S95-B-RW的样带，导致后续调查陷入死胡同，麦珂被迫在舆论战中节节败退，最终未能揭露医疗模型造假的真相。",
+      "info_gap_from_prev_life": "麦珂知晓维克多销毁证据时的具体逻辑漏洞：他在慌乱中将标有'S95-B-RW'的样带误放入普通回收箱，而非专用的销毁通道，且该样带夹层藏有1995年他亲口指示篡改心电图基线的模拟录音。",
+      "why_previous_life_failed": "前世麦珂依赖常规审计和公开质询，未能在维克多行动前锁定物理载体；维克多利用信息差制造了完美的“意外丢失”假象，导致关键物证灭失。",
+          "preemptive_avoidance": "麦珂提前安排技术团队伪装成废品收购员，精准定位到维克多曾接触过的废弃物料回收站，并在维克多动手前截获了标号S95-B-RW的样带。",
+      "bait_and_evidence": "诱饵是维克多以为已经彻底销毁的“医疗数据废片”，实则是他留下致命把柄的录音载体；证据为样带夹层中录制的1995年维克多指令录音，内容明确指向篡改基线。",
+      "comic_villain_behavior": "维克多为了赶在麦珂发现前销毁剩余数据，在深夜的仓库中手忙脚乱地搬运纸箱，甚至因为过度紧张而将写有“已销毁”的标签贴在了装满数据的箱子上，反而暴露了位置。",
+      "villain_loss": "核心物证S95-B-RW样带落入麦珂手中，维克多精心构建的“数据污染”计划出现致命缺口，其作为行业权威的形象开始受到内部质疑，被迫转入地下防御。",
+      "protagonist_gain": "意外截获维克多医疗造假的物理证据，为未来揭穿世纪转换期医疗模型造假埋下伏笔，掌握了反击的主动权。",
+      "relationship_change": "麦珂与林恩的技术团队建立更深度的信任，确认了“物理取证”路线的可行性；公众对麦珂的“全知”形象产生敬畏，认为他总能预判危机。",
+      "continuity_writes": [
+        "本事件直接承接EC154中维拉德图书信誉崩塌后的余波，将战场从舆论战转移至技术取证战。",
+        "维克多的反应预示了其将启动更疯狂的‘数据污染’计划，为下一章的冲突升级做铺垫。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "evidence",
+          "entity_id": "EVID_VL_MED_001:medical_fraud_tape",
+          "state_key": "tape_status",
+          "from": "destroyed_or_missing",
+          "to": "secured_by_protagonist",
+          "irreversible": true,
+          "evidence": "S95_B_RW_TAPE_RECOVERY_1997",
+          "effect_type": "protagonist_gain",
+          "source_domain": "physical_security",
+          "source_state_key": "chain_of_custody_integrity"
+        },
+        {
+          "domain": "strategy",
+          "entity_id": "STRAT_VL_OPP_002:data_contamination_plan",
+          "state_key": "plan_status",
+          "from": "active_executing",
+          "to": "compromised_partial",
+          "irreversible": false,
+          "evidence": "VICTOR_PANIC_LOG_1997",
+          "effect_type": "villain_loss",
+          "source_domain": "opponent_mindset",
+          "source_state_key": "panic_level"
+        }
+      ],
+      "historical_anchor_ids": ["1995_MEDICAL_DATA_FRAUD_INCIDENT", "1997_WASTE_RECYCLING_STANDARDS"],
+      "cluster_outcome": "麦珂团队成功截获标号S95-B-RW的废弃样带，并在第309章拆解出关键的模拟录音，证实了维克多·兰斯在1995年亲自指示篡改医疗数据的事实。第310章中，维克多因慌乱销毁剩余数据时留下更多痕迹，其“数据污染”计划出现重大破绽。虽然维克多尚未被捕，但其核心防线已被突破，麦珂掌握了足以在未来揭穿世纪转换期医疗模型造假的致命武器。",
+      "next_event_hook": "S95-B-RW废弃样带内的模拟录音被意外发现，引发维克多启动更疯狂的‘数据污染’计划，试图在世纪之交前彻底抹除所有原始介质，迫使麦珂必须从舆论战转向技术取证战。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 309,
+          "timeline_start": "1997年11月18日 08:00",
+          "timeline_end": "1997年11月18日 18:00",
+          "scene": "北境废弃物料回收站",
+          "chapter_goal": "精准定位并截获维克多遗漏的S95-B-RW废弃样带，完成初步物理取证。",
+          "chapter_title": "废墟中的沉默回响",
+          "participants": ["麦珂", "林恩", "老陈", "回收站工人"],
+          "opening_conflict": "回收站内堆积如山的废旧磁带和电子垃圾，维克多留下的线索极其隐蔽，稍有不慎就会再次错失证据。",
+          "info_gap_use": "麦珂利用前世记忆，直接指出维克多在1995年销毁证据时习惯将特定型号的样带混入普通包装箱，并指定了具体的堆放区域。",
+          "opponent_reaction": "维克多此时正在办公室策划下一步的“数据清洗”方案，对回收站的行动毫不知情，仍处于自信状态。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "回收站B区堆场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂穿过堆积如山的旧磁带，径直走向角落的一个生锈铁柜。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_309_S95_B_RW_TAPE",
+              "timeline_scope": "current",
+              "display_name": "《S95-B-RW废弃样带（含夹层录音）》",
+              "kind": "physical_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_299_PHYSICAL_TIMESTAMP_REPORT",
+              "timeline_scope": "current",
+              "purpose": "用于比对样带外壳的物理磨损痕迹，确认其未被正规销毁流程处理过。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂带领技术团队进入回收站，无视工人的阻拦，直奔维克多曾提及的“特殊废料区”。",
+            "林恩根据麦珂的指引，在一堆标有“医疗废弃物”的纸箱中找到了一个未贴标签的铁盒。",
+            "技术人员现场拆解铁盒，发现内部有一盘标号为S95-B-RW的样带，外壳有明显的新近拆封痕迹。",
+            "林恩连接便携式播放器，播放样带内容，听到一段清晰的1995年模拟录音，内容为维克多命令助手“调整基线数值，让数据看起来正常”。",
+            "麦珂当场封存样带，并安排专人护送回实验室进行深度分析。"
+          ],
+          "visible_payoff": "技术团队成功获取了维克多亲口承认篡改数据的录音证据，打破了维克多“数据丢失”的谎言。",
+          "ending": "样带被安全带走，回收站恢复了平静，但麦珂知道，这只是风暴的开始。",
+          "must_include": ["样带夹层的物理结构描述", "1995年录音的具体内容摘要", "麦珂对回收站环境的敏锐观察"],
+          "must_not_include": ["维克多出现在现场", "法庭审判场景", "社交媒体传播"],
+          "detailed_synopsis": "1997年11月18日，北境废弃物料回收站内，空气中弥漫着机油和旧塑料的味道。麦珂没有像往常那样等待律师函或官方通知，而是直接带着技术主管林恩和几名熟练工来到了这里。前世记忆中，维克多·兰斯在销毁证据时犯了一个致命的错误——他将一盘标号为S95-B-RW的关键样带误放入了普通回收箱，而非专用的销毁通道。麦珂凭借这一信息差，径直穿过堆积如山的废旧磁带，来到角落一个锈迹斑斑的铁柜前。工人们对此感到困惑，但麦珂眼神坚定，示意林恩打开柜子。林恩迅速检查了柜内物品，在一个未贴标签的铁盒中发现了一盘被遗忘的样带。外壳上的灰尘显示它已在此存放多年，但封条完好无损。林恩立即连接便携式播放器，随着磁带的转动，一段清晰的、带着电流杂音的1995年模拟录音传出：“记住，把基线调高0.5个单位，让数据看起来符合预期……这是最高指令。”录音的主人正是维克多·兰斯。麦珂脸色微沉，但很快恢复冷静，他当场指挥技术人员对样带进行物理封存，并签署交接单。这一刻，维克多精心编织的“数据丢失”谎言被彻底击碎，一份足以颠覆医疗模型真实性的铁证落入麦珂手中。"
+        },
+        {
+          "chapter_id": 310,
+          "timeline_start": "1997年11月19日 09:00",
+          "timeline_end": "1997年11月19日 20:00",
+          "scene": "奥瑞恩集团总部 / 维克多私人办公室",
+          "chapter_goal": "维克多意识到常规手段失效，试图销毁剩余数据却因慌乱留下更多痕迹；麦珂团队完成证据固化，准备反击。",
+          "chapter_title": "慌乱中的自毁",
+          "participants": ["维克多·兰斯", "助理", "麦珂", "林恩"],
+          "opening_conflict": "维克多得知S95-B-RW样带可能已被截获，恐慌之下决定销毁所有剩余备份，却在行动中暴露了更多破绽。",
+          "info_gap_use": "麦珂预知维克多会在慌乱中采取极端措施，因此提前安排了监控和追踪程序，静待对手犯错。",
+          "opponent_reaction": "维克多陷入极度焦虑，试图在深夜独自清理办公室，结果因手抖打翻了文件，留下了大量可被追踪的痕迹。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "维克多私人办公室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "深夜的灯光下，维克多疯狂地撕碎文件，却不小心将一张写有“数据污染计划”的草稿纸掉落在地。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_309_S95_B_RW_TAPE",
+              "timeline_scope": "current",
+              "purpose": "作为对比基准，确认维克多销毁行为的异常性。"
+            }
+          ],
+          "action_sequence": [
+            "维克多收到消息，S95-B-RW样带疑似失踪，顿时慌了神。",
+            "他命令助理销毁所有相关备份，但助理因害怕担责而犹豫不决。",
+            "维克多亲自上阵，在办公室内疯狂翻找并撕毁文件，甚至试图烧毁电脑硬盘。",
+            "在混乱中，维克多不慎将一份写有“数据污染计划”详细步骤的草稿纸掉落在地毯上，纸张一角被咖啡渍浸染。",
+            "麦珂团队的监控人员捕捉到了这一异常行为，并记录下维克多慌乱中的自言自语：“只要毁了这些，就没人能查到……”",
+            "麦珂收到报告，确认维克多已陷入自我毁灭的循环，决定暂时按兵不动，等待其彻底暴露。"
+          ],
+          "visible_payoff": "维克多在销毁证据过程中留下的新痕迹（如被撕毁的文件、燃烧的硬盘残骸、掉落的草稿纸）成为新的间接证据链，进一步坐实其罪行。",
+          "ending": "维克多瘫坐在椅子上，看着满地狼藉，意识到自己已无路可退，只能寄希望于更疯狂的“数据污染”计划。",
+          "must_include": ["维克多销毁证据时的具体动作细节", "掉落的草稿纸内容暗示", "麦珂团队的监控视角"],
+          "must_not_include": ["维克多被捕", "媒体大规模报道", "麦珂直接 confrontation"],
+          "detailed_synopsis": "1997年11月19日，奥瑞恩集团总部大楼内，维克多·兰斯的办公室灯火通明，却透着一股诡异的压抑。当助理匆匆赶来报告S95-B-RW样带可能被麦珂截获时，维克多手中的钢笔瞬间折断。他深知这盘样带意味着什么——那是他1995年亲手篡改医疗数据的铁证。恐惧瞬间吞噬了他，他不再等待，决定连夜销毁所有剩余备份。他命令助理将所有相关文件打包，然后亲自拿起打火机，对着电脑硬盘和纸质文档一通狂烧。火光映照在他扭曲的脸上，他一边烧一边喃喃自语：“只要毁了这些，就没人能查到……”然而，慌乱中，他不小心打翻了桌上的咖啡杯，一杯热咖啡泼洒在地毯上，也淋湿了一份刚刚从抽屉里掏出的草稿纸。纸上密密麻麻地写着“数据污染计划”的详细步骤，包括如何伪造数据源、如何嫁祸给第三方等。维克多试图抢救这份文件，却因手抖将其掉落在地，纸张一角被咖啡渍浸染，字迹模糊不清，但标题依然清晰可见。这一幕恰好被麦珂安插在附近的监控探头捕捉到。麦珂在办公室外看着监控画面，嘴角微微上扬。他知道，维克多已经乱了阵脚，所有的疯狂举动只会让他陷得更深。此刻，维克多不仅失去了S95-B-RW样带，还留下了更多无法洗白的痕迹。麦珂决定暂时按兵不动，静待这位曾经不可一世的对手在绝望中彻底崩溃。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {"entity": "麦珂", "state": "掌握关键医疗造假证据，处于战略主动地位"},
+      {"entity": "维克多·兰斯", "state": "因证据泄露陷入恐慌，开始实施疯狂的自毁式销毁行动"},
+      {"entity": "林恩", "state": "技术团队核心成员，获得麦珂高度信任"}
+    ],
+    "relationship_states": [
+      {"entities": ["麦珂", "林恩"], "status": "技术互信深化，形成稳固的取证同盟"},
+      {"entities": ["维克多·兰斯", "奥瑞恩集团"], "status": "维克多个人行为开始危及集团声誉，内部关系紧张"}
+    ],
+    "rights_and_assets": [
+      {"asset": "S95-B-RW废弃样带", "status": "已确认为麦珂方持有，成为核心物证"},
+      {"asset": "医疗数据原始记录", "status": "部分被销毁，但关键证据链已断裂"}
+    ],
+    "health_and_location": [
+      {"entity": "麦珂", "status": "身体健康，精神饱满，持续保持最佳状态"},
+      {"entity": "维克多·兰斯", "status": "精神高度紧张，可能出现失眠或焦虑症状"}
+    ],
+    "open_threads": [
+      "维克多启动的‘数据污染’计划具体内容及影响范围",
+      "S95-B-RW录音证据如何转化为法律层面的指控",
+      "医疗模型造假对世纪转换期公众健康的潜在危害"
+    ],
+    "resolved_threads": [
+      "S95-B-RW样带的下落问题已解决，关键证据被成功截获"
+    ],
+    "introduced_characters": [
+      "林恩（技术主管，虚构角色，用于强化技术取证线）",
+      "老陈（回收站站长，背景角色）"
+    ],
+    "next_pressure": "维克多·兰斯意识到常规手段失效，开始酝酿隐蔽的‘数据污染’方案，试图在世纪之交前彻底抹除所有原始介质，迫使麦珂必须从舆论战转向技术取证战，S95-B-RW废弃样带内的模拟录音将成为关键转折点。"
+  }
+}

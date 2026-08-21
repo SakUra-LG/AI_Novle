@@ -1,0 +1,104 @@
+{
+  "status": "INVALID_LEGACY_CANDIDATE_NOT_AUTHORITATIVE",
+  "outline_failures": [
+    "全书总纲禁止假死或药物昏迷终局：不得出现“假死”",
+    "全书总纲禁止假死或药物昏迷终局：不得出现“可控昏迷”"
+  ],
+  "failed_blocks": 25,
+  "block_failure_samples": [
+    {
+      "block_id": "B001",
+      "failure_count": 35,
+      "failures": [
+        "EC001.opposition_type非法或缺失",
+        "EC001.event_type非法或缺失",
+        "EC001.solution_type非法或缺失",
+        "EC002.opposition_type非法或缺失",
+        "EC002.event_type非法或缺失",
+        "EC002.solution_type非法或缺失",
+        "EC003.opposition_type非法或缺失",
+        "EC003.event_type非法或缺失",
+        "EC003.solution_type非法或缺失",
+        "EC004.opposition_type非法或缺失",
+        "EC004.event_type非法或缺失",
+        "EC004.solution_type非法或缺失"
+      ]
+    },
+    {
+      "block_id": "B002",
+      "failure_count": 35,
+      "failures": [
+        "EC011.opposition_type非法或缺失",
+        "EC011.event_type非法或缺失",
+        "EC011.solution_type非法或缺失",
+        "EC012.opposition_type非法或缺失",
+        "EC012.event_type非法或缺失",
+        "EC012.solution_type非法或缺失",
+        "EC013.opposition_type非法或缺失",
+        "EC013.event_type非法或缺失",
+        "EC013.solution_type非法或缺失",
+        "EC014.opposition_type非法或缺失",
+        "EC014.event_type非法或缺失",
+        "EC014.solution_type非法或缺失"
+      ]
+    },
+    {
+      "block_id": "B003",
+      "failure_count": 34,
+      "failures": [
+        "EC021.opposition_type非法或缺失",
+        "EC021.event_type非法或缺失",
+        "EC021.solution_type非法或缺失",
+        "EC022.opposition_type非法或缺失",
+        "EC022.event_type非法或缺失",
+        "EC022.solution_type非法或缺失",
+        "EC023.opposition_type非法或缺失",
+        "EC023.event_type非法或缺失",
+        "EC023.solution_type非法或缺失",
+        "EC024.opposition_type非法或缺失",
+        "EC024.event_type非法或缺失",
+        "EC024.solution_type非法或缺失"
+      ]
+    },
+    {
+      "block_id": "B004",
+      "failure_count": 35,
+      "failures": [
+        "EC031.opposition_type非法或缺失",
+        "EC031.event_type非法或缺失",
+        "EC031.solution_type非法或缺失",
+        "EC032.opposition_type非法或缺失",
+        "EC032.event_type非法或缺失",
+        "EC032.solution_type非法或缺失",
+        "EC033.opposition_type非法或缺失",
+        "EC033.event_type非法或缺失",
+        "EC033.solution_type非法或缺失",
+        "EC034.opposition_type非法或缺失",
+        "EC034.event_type非法或缺失",
+        "EC034.solution_type非法或缺失"
+      ]
+    },
+    {
+      "block_id": "B005",
+      "failure_count": 34,
+      "failures": [
+        "EC041.opposition_type非法或缺失",
+        "EC041.event_type非法或缺失",
+        "EC041.solution_type非法或缺失",
+        "EC042.opposition_type非法或缺失",
+        "EC042.event_type非法或缺失",
+        "EC042.solution_type非法或缺失",
+        "EC043.opposition_type非法或缺失",
+        "EC043.event_type非法或缺失",
+        "EC043.solution_type非法或缺失",
+        "EC044.opposition_type非法或缺失",
+        "EC044.event_type非法或缺失",
+        "EC044.solution_type非法或缺失"
+      ]
+    }
+  ],
+  "qwen_regeneration_blocker": {
+    "code": "Arrearage",
+    "message": "DashScope account balance/billing state must be restored"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "macro_group_id": "MG020",
+  "event_clusters": [
+    {
+      "cluster_id": "EC097",
+      "chapter_span": [193, 194],
+      "source_event_direction": "承接胶片厂物理攻击失败后的数据战，在1987年巡演首站前识破奥瑞恩对健康趋势预测模型的污染，用纸本双份记录、法律封存、公开时间戳与托管款审计夺回医疗解释权。",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "收件章前的生死竞速：纸本原件的绝对优先权",
+      "timeline_years": "1986—1987",
+      "main_opponent": "诺兰·普莱斯（现场媒体经理）、奥瑞恩医疗承包组",
+      "opposition_type": "institutional",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["CS_186_INJUNCTION", "CS_191_PREMATURE_DELIVERY"],
+      "foreshadow_ids": ["FS_195_SEATING_GRADING", "FS_197_INSURANCE_AUDIT"],
+      "main_characters": ["麦珂", "黛安娜", "苏菲亚", "诺兰·普莱斯", "保险柜台专员", "听证官"],
+      "fictional_obstacle": "保单第十四条B款的程序陷阱：只要后交版本附上虚假的“三方更正说明”，即可覆盖先交版本；诺兰利用此规则，试图用伪造的“麦珂病情恶化”曲线替换真实恢复曲线，从而触发保险停保条款。",
+      "prev_life_tragedy": "前世麦珂按常规流程递交了真实报告，但诺兰利用职务之便，在麦珂离开后提交了伪造的“病情加重”报告并伪造了医生签名，因时间戳略晚但格式合规，保险方判定为有效变更，导致麦珂被强制停演且无法获得赔偿。",
+      "info_gap_from_prev_life": "前世记忆显示，保险柜台的收件章是唯一的法律生效节点；保单明确规定：最先加盖收件章的纸本原件自动成为唯一有效版本，任何后续提交的版本若无“麦珂亲笔签字、苏菲亚见证、独立医生确认”的三方更正说明，一律视为无效废纸。",
+      "why_previous_life_failed": "前世麦珂依赖口头沟通和信任，未意识到程序漏洞，且未在递交前进行物理隔离和公证封套处理，导致诺兰有操作空间插入伪造文件。",
+      "preemptive_avoidance": "黛安娜利用前世记忆，在诺兰行动前四小时，携带无暗记的原始健康记录、公证封套及交接簿，亲自前往保险柜台，要求立即加盖收件章，并将副本留存于公证处，形成不可篡改的时间锚点。",
+      "bait_and_evidence": "黛安娜故意在封套上留下极细微的“墨迹扩散”特征（肉眼难辨），作为真伪鉴定的物理证据；同时，她在交接簿上记录了精确到分钟的递交顺序，迫使诺兰必须伪造完全一致的物理痕迹才能通过审核。",
+      "comic_villain_behavior": "诺兰在听证会上为了掩盖造假，竟试图当场撕毁自己的伪造文件以销毁证据，结果因用力过猛导致纸张撕裂，反而暴露了纸张材质与原件不同，且其慌乱中脱口而出“我根本没看到原件”，直接承认了未核实事实即提交报告的违规行为。",
+      "villain_loss": "奥瑞恩失去指定巡演医疗审计人的合同权，法院禁止其接触已托管健康档案；诺兰因伪造公文和欺诈行为被永久吊销相关资质。",
+      "protagonist_gain": "黛安娜取得健康档案独立托管令，麦珂保住保险保障和对原始病历的解释权，确立了“第一收件章即真理”的法律判例。",
+      "relationship_change": "麦珂不再单方面指令团队，而是接受苏菲亚在健康问题上拥有否决权；苏菲亚从单纯执行者转变为敢于承担冲突责任的共同决策人，两人关系由上下级变为平等合伙人。",
+      "continuity_writes": [
+        "第193章黛安娜在暴雨夜冒雨送达原件，确保收件章时间在诺兰行动之前。",
+        "第194章听证会上，诺兰试图用“紧急医疗状况”为由绕过程序，却被听证官依据保单条款驳回，因其缺乏三方签名。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007",
+          "state_key": "trust_governance__extension_EC097",
+          "from": "dominant",
+          "to": "fortified",
+          "irreversible": true,
+          "evidence": "COURT_187_INJUNCTION",
+          "effect_type": "villain_loss",
+          "source_domain": "rights:RIGHT_VL_007",
+          "source_entity_id": "trust_governance__extension_EC097",
+          "source_state_key": "fortified"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_TEAM_003",
+          "state_key": "decision_making_power",
+          "from": "executor",
+          "to": "co_decision_maker",
+          "irreversible": false,
+          "evidence": "SIGNATURE_LOG_EC097",
+          "effect_type": "relationship_change",
+          "source_domain": "relationships:REL_TEAM_003",
+          "source_entity_id": "麦珂_苏菲亚"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1986_INSURANCE_LAW", "HIST_1987_COURT_PROCEDURE"],
+      "cluster_outcome": "通过程序正义的物理锁定，麦珂团队彻底粉碎了奥瑞恩利用信息差操控健康数据的企图，确立了纸本原件的绝对法律效力，并让苏菲亚正式进入核心决策圈。",
+      "next_event_hook": "被封存的座次分级备忘录显示，奥瑞恩准备在1987年雾河城巡演以健康风险和粉丝安全为名划分观众等级；麦珂决定用随机座次和三方签字急救流程正面拆掉这套控制。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 193,
+          "timeline_start": "1986-11-15 08:00",
+          "timeline_end": "1986-11-15 10:30",
+          "scene": "保险柜台与公证处",
+          "chapter_goal": "黛安娜抢先一步完成原始健康记录的递交与收件章获取，建立时间锚点。",
+          "chapter_title": "收件章前的最后一分钟",
+          "participants": ["黛安娜", "麦珂", "保险柜台专员", "公证员"],
+          "opening_conflict": "诺兰正安排手下准备伪造文件，意图在上午10点前递交“病情恶化”报告；黛安娜必须在10点前完成原件递交。",
+          "info_gap_use": "麦珂记得前世诺兰利用时间差造假的细节，因此要求黛安娜提前两小时行动，并采用无暗记原件以防被识别。",
+          "opponent_reaction": "诺兰在远处观察，发现黛安娜行动异常迅速，心生疑虑但未敢直接阻拦，转而加快伪造速度。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "保险柜台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "黛安娜将密封好的文件袋放在柜台上，眼神坚定地盯着专员。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_193_ORIGINAL_RECORD",
+              "timeline_scope": "current",
+              "display_name": "无暗记原始健康记录",
+              "kind": "document"
+            },
+            {
+              "artifact_id": "ART_193_TIMESTAMP_STAMP",
+              "timeline_scope": "current",
+              "display_name": "收件章时间凭证",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "黛安娜冒雨赶到保险柜台，出示公证封套和交接簿。",
+            "保险专员核对文件完整性，确认无误后加盖收件章。",
+            "公证员在场见证，记录精确时间并出具公证书。",
+            "黛安娜将副本留底，原件由专员归档，形成不可逆的时间证据。"
+          ],
+          "visible_payoff": "收件章时间定格在09:45，早于诺兰预计的行动时间，原始记录正式生效。",
+          "ending": "黛安娜带着公证书离开，诺兰的伪造计划因时间窗口关闭而陷入被动。",
+          "must_include": ["收件章时间戳", "公证封套", "无暗记原件"],
+          "must_not_include": ["诺兰直接出场", "法庭辩论"],
+          "detailed_synopsis": "1986年11月15日上午，暴雨如注。黛安娜深知前世麦珂因时间差而受害的惨痛教训，她提前两小时抵达保险柜台。手中紧握的是经过公证的无暗记原始健康记录，以及一份详细的交接簿。保险专员起初有些迟疑，但在黛安娜坚定的目光和公证员的见证下，终于完成了收件章的加盖。时间定格在09:45，这一秒成为了麦珂生命的护身符。与此同时，远处的诺兰看着黛安娜的背影，心中涌起一股不祥的预感，他加快了伪造文件的步伐，却不知自己已经错过了最佳时机。"
+        },
+        {
+          "chapter_id": 194,
+          "timeline_start": "1986-11-16 14:00",
+          "timeline_end": "1986-11-16 16:30",
+          "scene": "保险纠纷听证会",
+          "chapter_goal": "在听证会上揭露诺兰的伪造行为，确立原始记录的法律效力。",
+          "chapter_title": "三方签名的缺席",
+          "participants": ["麦珂", "苏菲亚", "诺兰·普莱斯", "奥瑞恩律师", "听证官", "独立医生"],
+          "opening_conflict": "奥瑞恩律师提交了一份“病情恶化”的补充报告，声称麦珂健康状况急剧下降，要求暂停巡演并获得额外赔偿。",
+          "info_gap_use": "麦珂利用前世记忆，指出该报告缺少保单要求的三方签名，且纸张材质与原件不符。",
+          "opponent_reaction": "诺兰在听证会上惊慌失措，试图撕毁伪造文件，结果暴露了纸张差异和未核实事实的真相。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "听证官宣读保单第十四条B款，全场寂静。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_193_ORIGINAL_RECORD",
+              "timeline_scope": "current",
+              "purpose": "作为有效原件被当庭展示"
+            },
+            {
+              "artifact_id": "ART_193_TIMESTAMP_STAMP",
+              "timeline_scope": "current",
+              "purpose": "证明递交时间的先后顺序"
+            }
+          ],
+          "action_sequence": [
+            "奥瑞恩律师提交伪造报告，声称麦珂病情恶化。",
+            "麦珂冷静指出报告缺少三方签名，且纸张材质与原件不符。",
+            "诺兰试图撕毁文件，导致纸张撕裂，暴露出伪造痕迹。",
+            "听证官依据保单条款驳回奥瑞恩的请求，宣布原始记录有效。",
+            "法院下达禁令，禁止奥瑞恩接触已托管的健康档案。"
+          ],
+          "visible_payoff": "诺兰的伪造计划彻底破产，奥瑞恩失去医疗审计权，麦珂保住巡演资格。",
+          "ending": "听证会在一片混乱中结束，麦珂与苏菲亚相视一笑，确认了团队的胜利。",
+          "must_include": ["三方签名缺失", "纸张材质差异", "听证官裁决"],
+          "must_not_include": ["暴力冲突", "私下交易"],
+          "detailed_synopsis": "1986年11月16日下午，保险纠纷听证会现场气氛紧张。奥瑞恩律师提交了一份所谓的“病情恶化”报告，声称麦珂健康状况急剧下降，要求暂停巡演。然而，麦珂早已做好准备。他冷静地指出，这份报告不仅缺少保单要求的三方签名，而且纸张材质与之前的原件明显不同。诺兰见状，慌忙试图撕毁文件以销毁证据，结果用力过猛导致纸张撕裂，露出了伪造的痕迹。听证官依据保单第十四条B款，当场驳回了奥瑞恩的请求，并宣布原始记录有效。随后，法院下达禁令，禁止奥瑞恩接触已托管的健康档案。麦珂与苏菲亚相视一笑，确认了团队的胜利，也标志着他们在健康解释权上的全面胜利。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1986",
+    "character_states": [
+      {"character": "麦珂", "state": "掌握健康解释权，保险保障稳固"},
+      {"character": "苏菲亚", "state": "成为健康问题的共同决策人，获得否决权"},
+      {"character": "诺兰·普莱斯", "state": "被剥夺医疗审计权，面临法律追责"}
+    ],
+    "relationship_states": [
+      {"relationship": "麦珂_苏菲亚", "change": "从上下级转变为平等合伙人，苏菲亚获得健康否决权"}
+    ],
+    "rights_and_assets": [
+      {"asset": "健康档案独立托管令", "status": "已生效，奥瑞恩无权接触"},
+      {"asset": "原始健康记录", "status": "法律效力确立，保险保障延续"}
+    ],
+    "health_and_location": [
+      {"subject": "麦珂", "status": "喉炎风险被真实记录，团队建立停演阈值"},
+      {"location": "保险柜台/听证会", "status": "关键证据形成地"}
+    ],
+    "open_threads": [
+      "维克多·兰斯的数据污染计划",
+      "声压可视化系统光学投影组件研发",
+      "奥瑞恩下一步的座次分级控制计划"
+    ],
+    "resolved_threads": [
+      "健康数据解释权的争夺",
+      "保险停保风险的消除"
+    ],
+    "introduced_characters": [
+      "保险柜台专员",
+      "听证官"
+    ],
+    "next_pressure": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，这将直接触发1987年‘棱镜之夜’直播事故的前置条件；同时奥瑞恩准备在1987年雾河城巡演以健康风险和粉丝安全为名划分观众等级。"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "macro_group_id": "MG032",
+  "event_clusters": [
+    {
+      "cluster_id": "EC159",
+      "chapter_span": [317, 318],
+      "source_event_direction": "{\"death_chain_role\": \"pressure\", \"preemptive_action\": \"麦珂依据重生记忆预判维克多销毁盲区，安排莉薇娅团队在S95-B-RW样带藏匿点设伏。\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "废弃样带的夹层回响",
+      "timeline_years": "1997",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["EC158_Education_Dual_Track_Signed", "EC156_Public_Trust_Reversal"],
+      "foreshadow_ids": ["EC160_Witness_Public_Exposure_Finalized"],
+      "main_characters": ["麦珂", "维克多·兰斯", "莉薇娅", "艾琳", "卡尔"],
+      "fictional_obstacle": "维克多启动‘全介质抹除计划’，试图在世纪之交前销毁所有原始录音与胶片，利用行业监管的真空期制造‘证据灭失’假象。",
+      "prev_life_tragedy": "前世维克多在数据污染阶段成功掩盖医疗造假录音，导致麦珂被误诊致死，其心电图基线被人为篡改，无人知晓真相。",
+      "info_gap_from_prev_life": "前世麦珂不知维克多销毁证据的具体顺序，未能截获关键物理介质，只能眼睁睁看着证据消失。",
+      "why_previous_life_failed": "缺乏对反派销毁流程的预判，且未建立物理隔离的备份系统，导致核心物证被彻底湮灭。",
+      "preemptive_avoidance": "麦珂依据重生记忆，精准锁定维克多销毁盲区（标号S95-B-RW的废弃样带），提前安排莉薇娅团队在藏匿点设伏，并建立物理隔离的备份机制。",
+      "bait_and_evidence": "维克多因贪婪想独吞销毁功劳，故意将标号S95-B-RW的样带留作‘垃圾’丢弃在通风管道夹层，却不知其中夹层内藏有1995年他亲口指示篡改心电图基线的模拟录音。",
+      "comic_villain_behavior": "维克多一边狂躁地指挥手下焚烧胶片，一边对着空无一人的仓库自言自语，抱怨自己‘太完美’的计划竟然漏掉了一卷废带，甚至因为没找到这卷带子而差点撞翻自己的工具箱，显得滑稽而慌乱。",
+      "villain_loss": "维克多医疗造假计划彻底曝光，其本人陷入恐慌并开始疯狂清理但已无效，永久失去对医疗数据的解释权，职业生涯终结。",
+      "protagonist_gain": "获得1995年维克多亲口指示篡改心电图基线的核心物证，健康指标维持最优，彻底阻断导致麦珂前世死亡的医疗模型造假链条。",
+      "relationship_change": "麦珂与艾琳建立基于‘真相档案’的深度职业联盟；麦珂与瑟琳娜完成家庭权力结构的制度化重构；维克多与麦珂进入敌对取证阶段。",
+          "continuity_writes": [
+            "1997年10月，维克多·兰斯在维拉德图书后巷仓库启动‘全介质抹除计划’，麦珂通过前世记忆预判其销毁顺序，发现标号S95-B-RW的废弃样带被遗漏。",
+            "莉薇娅团队在通风管道夹层截获该样带，艾琳现场制作物理隔离备份，防止二次污染。",
+            "第318章，维克多返回现场试图补毁，被麦珂当众播放夹层录音，录音中清晰传来维克多命令：‘把基线拉高，让那个女人看起来像心脏病发’。"
+          ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MEDICAL_FRAUD_001",
+          "state_key": "medical_fraud__EC159",
+          "from": "hidden_manipulation",
+          "to": "publicly_exposed_evidence",
+          "irreversible": true,
+          "evidence": "ART_309_S95_B_RW_TAPE",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "health",
+          "entity_id": "HEALTH_MCKE_001",
+          "state_key": "physiological_optimal__EC159",
+          "from": "risk_of_misdiagnosis",
+          "to": "verified_safe_status",
+          "irreversible": true,
+          "evidence": "AUDIO_LOG_EC159_CLARIFIED",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_MCKE_AIRN_001",
+          "state_key": "trust_alliance__EC159",
+          "from": "professional_cooperation",
+          "to": "deep_truth_archival_partnership",
+          "irreversible": true,
+          "evidence": "PHYSICAL_BACKUP_LOG_EC159",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1995_MEDICAL_MANIPULATION"],
+      "cluster_outcome": "维克多医疗造假计划彻底曝光，其本人陷入恐慌并开始疯狂清理但已无效；麦珂获得1995年维克多亲口指示篡改心电图基线的核心物证，健康指标维持最优；《静默增益》销量突破九十八万张，地图卡激活率91.3%；四十三处工坊实现自主盈亏平衡。",
+      "next_event_hook": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 317,
+          "timeline_start": "1997年10月14日 午后",
+          "timeline_end": "1997年10月14日 黄昏",
+          "scene": "维拉德图书后巷废弃仓库",
+          "chapter_goal": "维克多按计划销毁大部分胶片，却意外留下标号S95-B-RW的废弃样带未被处理。",
+          "chapter_title": "灰烬中的盲点",
+          "participants": ["维克多·兰斯", "两名销毁工人", "麦珂（远程监控）", "莉薇娅（潜伏）"],
+          "opening_conflict": "维克多急于销毁证据以掩盖医疗造假，命令工人将堆积如山的胶片投入熔炉，却因贪功心切，将一卷看似无用的废弃样带随手塞进通风管道夹层，以为能逃过检查。",
+          "info_gap_use": "麦珂利用前世记忆，知道维克多销毁顺序的盲点是S95-B-RW，提前安排莉薇娅在夹层设伏。",
+          "opponent_reaction": "维克多看着熔炉中燃烧的胶片，露出狰狞笑容，认为‘证据已灭失’，完全未察觉那卷被遗漏的样带正静静躺在夹层中。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "仓库内部",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "火光映照下，维克多转身离开，镜头跟随一名工人将一叠文件扔进角落，实为S95-B-RW样带。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_309_S95_B_RW_TAPE",
+              "timeline_scope": "current",
+              "display_name": "《S95-B-RW废弃样带（含夹层录音）》",
+              "kind": "physical_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "维克多下令销毁胶片，工人执行。",
+            "维克多将S95-B-RW样带误判为废品，塞入通风管道。",
+            "莉薇娅团队在暗处记录并截获该样带。",
+            "维克多满意离开，未察觉漏洞。"
+          ],
+          "visible_payoff": "观众看到维克多自以为完美的销毁计划中，竟留下了致命的破绽。",
+          "ending": "维克多离开仓库，以为大功告成；莉薇娅取出样带，确认夹层录音完好无损。",
+          "must_include": ["通风管道夹层", "废弃样带", "销毁熔炉"],
+          "must_not_include": ["康拉德", "社交媒体", "云端备份"],
+          "detailed_synopsis": "1997年10月14日下午，维拉德图书后巷的废弃仓库内，维克多·兰斯亲自监督销毁工作。他命令工人将堆积如山的胶片投入高温熔炉，火焰吞噬着过去的谎言。为了赶时间，他将一卷标号为S95-B-RW的废弃样带随手塞进通风管道的死角，心想这卷从未被使用的废带根本不会有人在意。然而，他不知道的是，麦珂早已通过前世记忆锁定了这个盲点。莉薇娅带领的小队潜伏在仓库外的通风井旁，当维克多转身离开时，他们迅速潜入，从夹层中取出了那卷被遗弃的样带。麦珂在远处通过望远镜观察，嘴角露出一丝冷笑。她清楚，这卷看似无用的废带，正是通往真相的关键钥匙。"
+        },
+        {
+          "chapter_id": 318,
+          "timeline_start": "1997年10月15日 上午",
+          "timeline_end": "1997年10月15日 中午",
+          "scene": "媒体发布会现场",
+          "chapter_goal": "麦珂团队在维克多试图再次清理现场时，当众播放样带夹层内的模拟录音。",
+          "chapter_title": "夹层的回声",
+          "participants": ["麦珂", "维克多·兰斯", "艾琳", "卡尔", "记者团", "公众"],
+          "opening_conflict": "维克多试图重返仓库进行二次清理，却发现样带失踪，惊慌失措中闯入媒体发布会现场，企图抢夺话语权。",
+          "info_gap_use": "麦珂利用前世信息差，提前准备好样带夹层录音的播放设备，并在发布会现场公开揭露。",
+          "opponent_reaction": "维克多试图阻止播放，却被麦珂用法律手段压制，最终在众目睽睽之下，录音内容被完整披露，他彻底崩溃。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "媒体发布会大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦克风响起，一段清晰的男声录音打破寂静，全场哗然。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_309_S95_B_RW_TAPE",
+              "timeline_scope": "current",
+              "purpose": "播放夹层录音，揭露医疗造假真相"
+            }
+          ],
+          "action_sequence": [
+            "维克多闯入发布会，试图抢走麦克风。",
+            "艾琳启动播放设备，夹层录音开始播放。",
+            "录音中维克多亲口承认篡改心电图基线，指令清晰。",
+            "记者们疯狂提问，维克多语无伦次，陷入恐慌。",
+            "麦珂宣布成立独立调查组，正式接管医疗数据审查权。"
+          ],
+          "visible_payoff": "维克多的医疗造假计划被彻底曝光，公众哗然，其个人信誉瞬间崩塌。",
+          "ending": "维克多被警方带走调查，麦珂站在舞台中央，神情平静，手中握着那份决定性的录音证据。",
+          "must_include": ["媒体发布会", "夹层录音播放", "维克多崩溃"],
+          "must_not_include": ["康拉德", "二维码", "社交媒体"],
+          "detailed_synopsis": "1997年10月15日上午，一场关于《静默增益》纪录片真实性的媒体发布会正在举行。维克多·兰斯得知S95-B-RW样带失踪后，慌忙赶到现场，企图抢夺话语权并销毁剩余证据。然而，麦珂早已布下天罗地网。当维克多冲上讲台时，艾琳启动了播放设备，一段清晰的录音响彻会场——那是1995年维克多亲口下达的指令：“把基线拉高，让那个女人看起来像心脏病发。”全场哗然，记者们蜂拥而上，闪光灯此起彼伏。维克多面如死灰，试图辩解却词不达意，最终在警方的介入下被带走。麦珂站在舞台中央，神情平静，手中紧握着那份决定性的录音证据。这一刻，不仅维克多的医疗造假计划彻底曝光，麦珂的健康安全也得到了最坚实的保障。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      "麦珂：健康指标维持最优，体重、血压、肺活量连续四年无波动；确立了对医疗数据的绝对主导权。",
+      "维克多·兰斯：陷入恐慌，医疗造假计划彻底曝光，职业生涯终结，开始疯狂清理但已无效。",
+      "莉薇娅：成为麦珂团队核心成员，负责物理取证与证据保全。",
+      "艾琳：与麦珂建立深度信任联盟，共同构建真相档案体系。"
+    ],
+    "relationship_states": [
+      "麦珂与艾琳：建立基于‘真相档案’的深度职业联盟。",
+      "麦珂与瑟琳娜：完成家庭权力结构的制度化重构。",
+      "维克多与麦珂：进入敌对取证阶段，双方矛盾不可调和。"
+    ],
+    "rights_and_assets": [
+      "版权主导权完全收回，《静默增益》销量突破九十八万张，地图卡激活率91.3%。",
+      "四十三处工坊实现自主盈亏平衡。",
+      "莉薇娅牵头制定《巡演公共卫生响应手册》。"
+    ],
+    "health_and_location": [
+      "麦珂：生理状态最佳，无任何健康风险。",
+      "地点：主要活动集中在维拉德图书后巷仓库及媒体发布会现场。"
+    ],
+    "open_threads": [
+      "S95-B-RW录音证据如何转化为法律层面的指控",
+      "医疗模型造假对世纪转换期公众健康的潜在危害"
+    ],
+    "resolved_threads": [
+      "直接阻断导致麦珂前世死亡的医疗模型造假链条",
+      "维克多医疗造假计划彻底曝光"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。"
+  }
+}

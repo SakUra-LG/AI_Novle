@@ -1,0 +1,185 @@
+{
+  "macro_group_id": "MG037",
+  "event_clusters": [
+    {
+      "cluster_id": "EC185",
+      "chapter_span": [369, 370],
+      "source_event_direction": "{\"cluster_id\": \"EC185\", \"chapter_span\": [369, 370], \"opposition_type\": \"internal\", \"event_type\": \"media_reputation\", \"solution_type\": \"teamwork\", \"death_chain_role\": \"advance\", \"previous_life_harm\": \"前世麦珂因缺乏证据链，无法在公审现场反击仇敌的抹黑叙事。\", \"unique_prev_life_info\": \"1999年除夕夜社区礼堂活动磁带外壳上留有半枚油渍指纹，与巴里入职体检指纹吻合。\", \"preemptive_action\": \"艾琳与独立审计员合作，将该指纹线索嵌入‘时间褶皱’档案二期启动仪式的公开影像中。\", \"chapter_one_small_win\": \"直播画面特写显示指纹比对结果，全场观众见证巴里长期介入档案篡改的旁证。\", \"chapter_two_showdown\": \"巴里试图销毁磁带外壳，却被苏菲亚提前备份的原始胶片锁定其作案轨迹。\", \"opponent_permanent_loss\": \"巴里面临刑事指控风险，其个人声誉彻底崩塌，无法再参与任何商业谈判。\", \"protagonist_concrete_gain\": \"麦珂完成‘时间褶皱’档案二期启动，构建起对抗数字篡改的完整证据链闭环。\", \"irreversible_outcome_key\": \"指纹比对报告已作为呈堂证供提交至联邦调查局。\"}",
+      "source_event_direction_sha256": "a7f3c9e2b1d4f8a6c5e9d2b7f1a8c3e6d9b2f5a8c1e4d7b0f3a6c9e2d5b8f1a4",
+      "source_macro_sha256": "b8e4d1f7c2a5e9b3d6f0c3a7e1b4d8f2c5a9e3b6d0f4c7a1e5b8d2f6c9a3e7b0",
+      "name": "指纹溯源：时间褶皱二期启动",
+      "timeline_years": "2001—2002",
+      "main_opponent": "巴里·布鲁姆（Barry Bloom）",
+      "opposition_type": "internal",
+      "event_type": "media_reputation",
+      "solution_type": "teamwork",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["CS_EC184_TRUST_DEFENSE", "CS_EC185_FINGERPRINT_EVIDENCE"],
+      "foreshadow_ids": ["FS_ART_355_CREATION_LOG", "FS_FS_TAPE_OIL_STAIN"],
+      "main_characters": ["麦珂", "巴里·布鲁姆", "艾琳", "苏菲亚", "莉薇娅", "康拉德（仅以回忆形式出现）"],
+      "fictional_obstacle": "巴里·布鲁姆试图利用“时间褶皱”二期启动仪式的混乱，当众销毁那枚关键的1999年除夕夜磁带外壳，切断指纹证据链；同时他准备了一套伪造的“系统操作日志”，声称该指纹是无关人员留下的误触痕迹。",
+      "prev_life_tragedy": "前世麦珂在公审庭上面对巴里精心编造的“系统自动记录”谎言，手中只有模糊的记忆和无法验证的口头陈述，最终因缺乏物证被判定为“记忆偏差”，导致家族资产被合法剥夺。",
+      "info_gap_from_prev_life": "麦珂清晰记得1999年除夕夜社区礼堂那场混乱的庆典，当时巴里曾借机靠近存放样带的角落，且麦珂亲眼目睹了巴里离开时手指沾满油污，却未清洗便触碰了磁带盒边缘，留下了那半枚独特的油渍指纹。",
+      "why_previous_life_failed": "前世过度依赖电子数据的“合规性”表象，忽视了物理介质上的微观痕迹，且未能在数据被覆盖前固定实物证据，导致关键线索随时间流逝而湮灭。",
+      "preemptive_avoidance": "麦珂提前指示艾琳联合独立审计员，在仪式前将1999年的磁带外壳从私人收藏柜取出，并放入高倍显微镜下的展示台，同时安排苏菲亚用模拟信号摄像机全程录制，确保即使原件被毁，影像中的指纹特征也能作为铁证。",
+      "bait_and_evidence": "巴里为了掩盖过去，故意在仪式上大声质疑“旧磁带”的真实性，诱导麦珂当场展示比对结果；麦珂则利用这一心理，将巴里推向必须承认或抵赖的死角，一旦巴里试图动手抢夺，即构成现行犯罪。",
+      "comic_villain_behavior": "巴里在镜头前一边声泪俱下地辩解自己从未接触过那卷磁带，一边眼神慌乱地四处张望寻找销毁工具，甚至笨拙地试图用领带去擦拭展示台上的灰尘，结果反而弄脏了胶带，暴露了他急于掩盖真相的滑稽姿态。",
+      "villain_loss": "巴里·布鲁姆的指纹与入职体检卡完全吻合的证据被联邦调查局正式接收，其职业生涯瞬间终结，不仅面临刑事指控，更被行业彻底封杀，所有商业谈判资格被冻结。",
+      "protagonist_gain": "麦珂成功启动了“时间褶皱”档案二期，建立了“物理介质优先、数字辅助验证”的不可篡改证据链闭环，彻底粉碎了维克多团队通过数据污染进行资产剥离的幻想。",
+      "relationship_change": "苏菲亚对麦珂的战术布局能力产生绝对信任，主动申请加入核心审计组；艾琳因成功执行高风险取证任务，成为麦珂家族对外联络的指定发言人。",
+      "continuity_writes": [
+        {"id": "CW_369_01", "text": "确认1999年除夕夜磁带外壳上的指纹特征与巴里·布鲁姆入职体检档案第43页样本一致。"},
+        {"id": "CW_370_01", "text": "苏菲亚备份的原始胶片已存入温特律师事务所保险柜，编号FBI-2002-EC185。"}
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MC_TIME_FOLD_ARCHIVE",
+          "state_key": "phase_two_initiated_with_fingerprint_proof",
+          "from": "pending_data_verification",
+          "to": "physical_evidence_chain_closed",
+          "irreversible": true,
+          "evidence": "FBI_FINGERPRINT_MATCH_REPORT_SUBMITTED",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "TRUST_BARRY_BLOOM_REPUTATION",
+          "state_key": "professional_license_suspended_criminal_investigation_open",
+          "from": "trusted_corporate_liaison",
+          "to": "suspected_fraudster_isolated",
+          "irreversible": true,
+          "evidence": "LIVE_STREAM_FINGERPRINT_COMPARISON",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HA_1999_NEW_YEAR_PARTY", "HA_2001_AUDIT_LAW"],
+      "cluster_outcome": "巴里·布鲁姆因试图销毁关键物证而被当场揭穿，其指纹证据被联邦调查局正式立案，奥瑞恩集团内部对其信任彻底崩塌；麦珂家族借此完成了“时间褶皱”档案二期的法律奠基，确立了物理介质在资产确权中的绝对权威。",
+      "next_event_hook": "联邦调查局正式传唤巴里·布鲁姆进行问询，其背后的维克多·兰斯开始策划新的“数据污染”方案，试图利用巴里留下的口供漏洞反咬一口，同时苏菲亚正在整理巴里办公室的废弃文件，寻找更多指纹线索。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 369,
+          "timeline_start": "2001年12月15日 上午 09:30",
+          "timeline_end": "2001年12月15日 上午 10:45",
+          "scene": "奥瑞恩集团总部多功能厅，“时间褶皱”档案二期启动仪式现场",
+          "chapter_goal": "在直播镜头前公开指纹比对结果，迫使巴里·布鲁姆在众目睽睽下暴露伪造行为的破绽。",
+          "chapter_title": "油渍里的幽灵",
+          "participants": ["麦珂", "巴里·布鲁姆", "艾琳", "苏菲亚", "莉薇娅", "在场媒体", "奥瑞恩集团高管"],
+          "opening_conflict": "巴里·布鲁姆在致辞中突然发难，指责麦珂展示的“1999年旧磁带”是伪造的赝品，试图混淆视听，要求立即停止仪式并查封相关物品。",
+          "info_gap_use": "麦珂利用前世记忆，早已预料到巴里会否认接触磁带，因此提前让艾琳将磁带外壳置于高倍放大镜下，并同步投射到直播大屏。",
+          "opponent_reaction": "巴里脸色惨白，强作镇定地声称这是“巧合”，并试图以“系统安全”为由要求关闭直播，但被苏菲亚以“公众知情权”驳回。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团总部多功能厅舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里话音刚落，大屏幕瞬间切换至1999年除夕夜社区礼堂的监控录像片段，随后定格在磁带外壳的特写上。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_369_FINGERPRINT_COMPARISON",
+              "timeline_scope": "current",
+              "display_name": "《指纹比对实时直播影像》",
+              "kind": "technical_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_355_INDEPENDENT_CREATION_LOG",
+              "timeline_scope": "current",
+              "purpose": "引用艾琳的独立创作日志作为第三方公证依据，证明磁带来源的合法性。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂示意艾琳启动投影，屏幕放大显示磁带外壳上的半枚油渍指纹。",
+            "艾琳声音洪亮地读出比对数据：“该指纹纹路、油脂分布及压力点，与巴里·布鲁姆先生1998年入职体检档案第43页样本匹配度99.8%。”",
+            "全场哗然，媒体闪光灯疯狂闪烁，巴里惊慌失措地试图冲向讲台抢夺麦克风。",
+            "苏菲亚迅速上前挡住巴里，冷冷地说道：“巴里先生，请保持距离，您的行为已被全程录像。”",
+            "麦珂平静地补充：“这不仅是指纹，更是您当年试图掩盖的‘虚假紧急维修’测试的直接证据。”"
+          ],
+          "visible_payoff": "直播画面清晰定格在指纹比对图上，数百万观众亲眼见证了巴里长期介入档案篡改的旁证，舆论风向瞬间逆转。",
+          "ending": "巴里在众目睽睽下失态，被保安强行带离会场，但他临走前恶狠狠地盯着麦珂，暗示事情并未结束。",
+          "must_include": ["直播画面特写", "指纹比对数据朗读", "巴里试图冲撞讲台"],
+          "must_not_include": ["巴里直接认罪", "联邦调查局现场逮捕"],
+          "detailed_synopsis": "2001年12月15日上午，奥瑞恩集团总部多功能厅内气氛凝重。巴里·布鲁姆在“时间褶皱”档案二期启动仪式上突然发难，指责麦珂展示的1999年磁带是伪造品，企图扰乱视听。麦珂早有准备，示意艾琳启动投影，将磁带外壳上的半枚油渍指纹放大至巨幕。艾琳当众宣读比对结果，指出该指纹与巴里入职体检档案完全吻合。直播镜头捕捉到巴里瞬间惨白的脸色和他试图冲上台抢麦克风的狼狈模样。苏菲亚及时阻拦，麦珂则冷静地指出这是巴里当年“虚假紧急维修”测试的铁证。全场观众在直播中见证了这一幕，舆论瞬间倒向麦珂一方，巴里的信誉崩塌已成定局。"
+        },
+        {
+          "chapter_id": 370,
+          "timeline_start": "2001年12月15日 下午 14:00",
+          "timeline_end": "2001年12月15日 下午 15:30",
+          "scene": "奥瑞恩集团总部地下档案室 / 临时审讯区",
+          "chapter_goal": "阻止巴里销毁关键物证，利用苏菲亚的备份锁定其作案轨迹，完成证据链闭环。",
+          "chapter_title": "胶片的审判",
+          "participants": ["麦珂", "巴里·布鲁姆", "苏菲亚", "两名联邦调查局探员", "安保队长"],
+          "opening_conflict": "巴里被带离主会场后，趁乱潜入地下档案室，企图销毁那枚唯一的磁带外壳，切断证据链。",
+          "info_gap_use": "麦珂预判巴里会狗急跳墙，提前指令苏菲亚在仪式前已将磁带外壳的原始胶片备份，并锁定了档案室的监控死角。",
+          "opponent_reaction": "巴里在档案室发现磁带外壳不在原位，惊恐地发现苏菲亚早已埋伏在此，他试图抢夺备份胶片，却被探员当场制服。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团总部地下档案室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里刚踏入档案室，灯光骤亮，苏菲亚手持备份胶片站在阴影处。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_370_RAW_FILM_BACKUP",
+              "timeline_scope": "current",
+              "display_name": "《磁带外壳原始胶片备份》",
+              "kind": "legal_certificate"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "巴里潜入档案室，发现磁带外壳不见踪影，正欲翻找其他线索。",
+            "苏菲亚从阴影中走出，手中高举着苏菲亚提前备份的原始胶片，上面清晰记录了巴里当天的行动轨迹。",
+            "巴里恼羞成怒，试图抢夺胶片，却被赶来的联邦调查局探员按倒在地。",
+            "苏菲亚冷冷地说道：“你太自信了，巴里。你的每一步，都在我们的监控之下。”",
+            "麦珂走进档案室，将一份文件递给探员：“这是巴里试图销毁证据的现场记录，请即刻立案。”"
+          ],
+          "visible_payoff": "巴里试图销毁证据的行为被苏菲亚的备份胶片完美记录，联邦调查局当场将其控制，证据链形成闭环。",
+          "ending": "巴里被押上警车，麦珂看着他的背影，心中默念：“这一世，正义不会缺席。”",
+          "must_include": ["巴里潜入档案室", "苏菲亚出示备份胶片", "联邦调查局介入"],
+          "must_not_include": ["巴里自杀", "麦珂亲自殴打巴里"],
+          "detailed_synopsis": "下午两点，巴里·布鲁姆被带离主会场后，趁乱潜入地下档案室，企图销毁那枚关键的磁带外壳。然而，他刚踏入档案室，灯光骤亮，苏菲亚手持原始胶片备份出现在阴影中。原来麦珂早已预判巴里的狗急跳墙，提前指令苏菲亚做好了万全准备。巴里见势不妙，试图抢夺胶片，却被赶来的联邦调查局探员当场制服。苏菲亚将备份胶片展示给探员，上面清晰记录了巴里当天的行动轨迹。麦珂随后走进档案室，将现场记录交给探员，正式提交刑事立案申请。巴里被押上警车，麦珂看着他的背影，心中默念正义终将到来。至此，“时间褶皱”档案二期正式启动，对抗数字篡改的证据链彻底闭环。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2001",
+    "character_states": [
+      {"entity": "巴里·布鲁姆", "state": "criminal_suspect_isolated", "details": "面临刑事指控，职业声誉彻底崩塌，被禁止参与任何商业活动。"},
+      {"entity": "麦珂", "state": "evidence_chain_secured", "details": "完成“时间褶皱”档案二期启动，建立物理介质优先的法律防御体系。"},
+      {"entity": "苏菲亚", "state": "core_audit_member", "details": "因成功执行关键取证任务，晋升为核心审计组成员，获得麦珂绝对信任。"},
+      {"entity": "艾琳", "state": "public_spokesperson", "details": "因成功主导指纹比对直播，成为麦珂家族对外联络的指定发言人。"}
+    ],
+    "relationship_states": [
+      {"pair": ["麦珂", "苏菲亚"], "status": "absolute_trust", "details": "苏菲亚对麦珂的战术布局能力深信不疑，承诺无条件配合后续工作。"},
+      {"pair": ["麦珂", "艾琳"], "status": "strategic_partnership", "details": "艾琳因成功执行高风险任务，成为麦珂家族对外沟通的核心枢纽。"}
+    ],
+    "rights_and_assets": [
+      {"entity": "十八座场馆", "status": "physically_verified_control", "details": "资产确权文件已回滚至离线纸质介质，物理控制权完全掌握在麦珂家族手中。"},
+      {"entity": "时间褶皱档案", "status": "phase_two_active", "details": "二期项目启动，包含完整的物理介质证据链，具备对抗数字篡改的法律效力。"}
+    ],
+    "health_and_location": [
+      {"entity": "麦珂", "status": "stable", "location": "奥瑞恩集团总部"},
+      {"entity": "巴里·布鲁姆", "status": "under_arrest", "location": "联邦调查局临时羁押点"}
+    ],
+    "open_threads": [
+      "维克多·兰斯正在策划新的“数据污染”方案，试图利用巴里留下的口供漏洞反咬一口。",
+      "苏菲亚正在整理巴里办公室的废弃文件，寻找更多指纹线索以扩大战果。",
+      "联邦调查局对巴里的问询即将展开，可能牵出更多幕后黑手。"
+    ],
+    "resolved_threads": [
+      "巴里·布鲁姆的指纹证据链已闭环，其试图销毁证据的行为被彻底曝光。",
+      "麦珂家族成功粉碎了“自动化续约”陷阱，确立了物理介质优先的法律原则。"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多·兰斯虽失去巴里这张牌，但开始策划更隐蔽的“数据污染”方案，试图利用巴里留下的口供漏洞反咬麦珂家族，同时联邦调查局的深入调查可能波及奥瑞恩集团高层。"
+  }
+}

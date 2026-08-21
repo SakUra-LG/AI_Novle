@@ -1,0 +1,73 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC155_EC155",
+  "identifier": "MG031",
+  "accepted_attempt": 4,
+  "base_prompt_sha256": "9ec743d36b2624ec36475eac3e075d203e05f2f23dad6382be65d67924071323",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T21:58:56+08:00",
+      "prompt_sha256": "9ec743d36b2624ec36475eac3e075d203e05f2f23dad6382be65d67924071323",
+      "raw_response_sha256": "8f5b8f21a6733b4e905495be75a665c6a11c7288e9772be27b4e80bb80c2b5f1",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG031_events_EC155_EC155_attempt_01_9ec743d36b_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 110 column 165 (char 5408)"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 27.114,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-20T21:59:21+08:00",
+      "prompt_sha256": "9d96440eea6ada476b2a413421d99eb7d61bd80a572ac74f765d21809707a0fd",
+      "raw_response_sha256": "6a00de40489cbfeb1b793fe4f201ab400fcf014d398e5ed3f02f5592d525ae8e",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG031_events_EC155_EC155_attempt_02_9ec743d36b_raw.txt",
+      "validation_failures": [
+        "EC155.chapter309创建的artifact_id非法：ART_309_S95_B_RW_Tape_Clipping",
+        "EC155.chapter310引用本事件尚未创建的artifact_id=ART_309_S95_B_RW_Tape_Clipping"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 25.377,
+      "usage": {}
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-20T21:59:47+08:00",
+      "prompt_sha256": "9c840011aa47ee92d1e7c3622ed1743198586348a53c90b84f1503dc94db4f4b",
+      "raw_response_sha256": "caf2b81a81ca761d6d7466188eb1d1f30b7050e76c78f27296eec6c05d9fa7f5",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG031_events_EC155_EC155_attempt_03_9ec743d36b_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 112 column 284 (char 5618)"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 26.426,
+      "usage": {}
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-20T22:00:18+08:00",
+      "prompt_sha256": "b09666f7fd6cb1b6af97870c75992ba3119c0ab7c5a90259c7cd893a45ccf283",
+      "raw_response_sha256": "2d0e39e7435087d672a519067a66d790b8dc0c1df7ec46372c5dd76288e362e5",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG031_events_EC155_EC155_attempt_04_9ec743d36b_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 30.23,
+      "usage": {}
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC106_EC106",
+  "identifier": "MG022",
+  "accepted_attempt": "03",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "base_prompt_sha256": "8681b02751ff010e3ae8d04038630fd1a20c62435d2b61b82bb5dbc207e16748",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T19:36:52+08:00",
+      "prompt_sha256": "8681b02751ff010e3ae8d04038630fd1a20c62435d2b61b82bb5dbc207e16748",
+      "raw_response_sha256": "27d6d0b625c6e779426f7b36ed6ead5228581fced155215994f1704d8aac2bed",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG022_events_EC106_EC106_attempt_01_8681b02751_raw.txt",
+      "validation_failures": [
+        "EC106 spatial:SPATIAL_AUDIENCE_01:audience_collaborator_status使用未知state domain：spatial"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 26.785,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-20T19:37:21+08:00",
+      "prompt_sha256": "6c42b12b81d98c0ed712422b2e2b60c739839ade8af9be430e6f1e39b190c3e1",
+      "raw_response_sha256": "9004a328884ce45fe82710973fb1792d3183d8e6fe65758d4772ab4e32b3493e",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG022_events_EC106_EC106_attempt_02_8681b02751_raw.txt",
+      "validation_failures": [
+        "EC106年代技术错误：1987尚不应使用“二维码”",
+        "EC106 spatial:SPATIAL_AUDIENCE_01:audience_collaborator_status使用未知state domain：spatial",
+        "EC106 equipment:EQUIP_OPTICAL_01:optical_lens_calibration_status使用未知state domain：equipment"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 28.902,
+      "usage": {}
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-20T19:37:50+08:00",
+      "prompt_sha256": "16170dbc892dabbeb5f032d089f110667923b2d8df41798b42621c5b8710a106",
+      "raw_response_sha256": "b861699e33aa43ea342d363389b3038202820c3d69bd790a114fc381775d988f",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG022_events_EC106_EC106_attempt_03_8681b02751_raw.txt",
+      "validation_failures": [
+        "EC106 equipment:EQUIP_OPTICAL_01:optical_lens_calibration_status使用未知state domain：equipment"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 29.311,
+      "usage": {}
+    }
+  ]
+}

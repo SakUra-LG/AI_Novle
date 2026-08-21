@@ -1,0 +1,124 @@
+{
+  "cluster_id": "EC001",
+  "chapter_span": [
+    1,
+    2
+  ],
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "body_edit_policy": "failed_body_is_regenerated_by_qwen_never_manually_patched",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "prior_body_chain_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "accepted_at": "2026-08-21T10:42:34.071138+00:00",
+  "model": "qwen-plus",
+  "temperature": 0.72,
+  "calls_by_chapter": {
+    "1": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 9.88,
+      "usage": {
+        "prompt_tokens": 5124,
+        "completion_tokens": 780,
+        "total_tokens": 5904,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    },
+    "2": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 20.622,
+      "usage": {
+        "prompt_tokens": 7271,
+        "completion_tokens": 1132,
+        "total_tokens": 8403,
+        "prompt_tokens_details": {
+          "cached_tokens": 3992
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  "prompt_sha256_by_chapter": {
+    "1": "66644f6eaf3e2e0705c34465514ba11bb72d8bc420584a06766a2006c056ae78",
+    "2": "9cca436da7dca593b34c2b8b10ef904ae18ae99c29cf451587222fc0b61088e9"
+  },
+  "base_prompt_sha256_by_chapter": {
+    "1": "6ba283424425bcfc49d98d559760838aeafd36d14dba8b4714605e60cd656772",
+    "2": "e6ecc867a282703415c40db5d7f3af8bc845ca128a093eb5bb3d0d76cd44e648"
+  },
+  "raw_response_sha256_by_chapter": {
+    "1": "8d3c7e1bbab3545328647304bfcbc13d04165c40fa3941a25c273f397c5a2274",
+    "2": "68b45050407118e994265eaeed2cfe859ed4215116fd5a0c5f403d8bf59932a4"
+  },
+  "accepted_raw_response_paths_by_chapter": {
+    "1": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC001_chapter_001_attempt_01_66644f6eaf_raw.txt",
+    "2": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC001_chapter_002_attempt_01_9cca436da7_raw.txt"
+  },
+  "chapter_sha256": {
+    "1": "8d3c7e1bbab3545328647304bfcbc13d04165c40fa3941a25c273f397c5a2274",
+    "2": "68b45050407118e994265eaeed2cfe859ed4215116fd5a0c5f403d8bf59932a4"
+  },
+  "chapter_han_chars": {
+    "1": 1150,
+    "2": 1599
+  },
+  "planning_story_id": "planning-be26ba6bb2c83203",
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 1,
+    "through_chapter": 2,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "b8863dbfb4f93a55aad9625c01fc2c3b34fb187f15d3b57a87319fe40be808b6",
+    "chapter_card_prefix_sha256": "23713016e5fb8e1e448df6fd351f564f4089dfe24ab1137934e3d2c883632da9",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "b37352c3ffbd77fd08edd702959d0c385e693383275a46845df02447e1802af3"
+  },
+  "cluster_sha256": "d26d2f8411777f8cc4d61a75ebd37b4069d762c3ae6b45eb3c2d2cbd88cbf47b",
+  "card_sha256_by_chapter": {
+    "1": "465446bf7f42c409702d6bfd14b2c5b1937097656fc417b8c12707a4919894ce",
+    "2": "0d8dd8c73b71690988dc6192196bcd117875e9ca953d8e391ab3a7f0cc396fd4"
+  },
+  "planning_inputs": {
+    "event_clusters": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\event_clusters_v2.json",
+    "chapter_cards": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\master_ctx_cards_v2.json"
+  },
+  "semantic_critic": {
+    "1": {
+      "han_chars": 1150,
+      "total_chars": 1297,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 1,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "2": {
+      "han_chars": 1599,
+      "total_chars": 1853,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 0,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "joint_semantic_overlap": 0.0916,
+    "settlement_action_terms": [
+      "失去"
+    ],
+    "rebirth_information_gap_markers": [
+      "前世",
+      "他记得"
+    ],
+    "recent_five_chapter_semantic_comparison": [],
+    "all_joint_failures": []
+  },
+  "quality_review_status": "awaiting_manual_read"
+}

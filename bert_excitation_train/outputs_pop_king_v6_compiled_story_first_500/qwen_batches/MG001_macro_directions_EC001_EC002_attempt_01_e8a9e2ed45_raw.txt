@@ -1,0 +1,43 @@
+{
+  "macro_group_id": "MG001",
+   "event_directions": [
+      {
+         "cluster_id": "EC001",
+         "chapter_span": [1, 2],
+         "opposition_type": "villain",
+         "event_type": "health_safety",
+         "solution_type": "safety_preemption",
+         "death_chain_role": "advance",
+         "previous_life_harm": "前世本陷阱实际造成：康拉德医生受雇于保险公司和版权公司，利用麦珂的健康问题来推动他向他们签署合同。",
+         "unique_prev_life_info": "前世明确受害：2009年，麦珂在临终时意识到自己被利用了，他的健康问题被用来控制他签署合同。",
+         "preemptive_action": "今生主动抢先：麦珂在重生后，利用前世的记忆，避免了与医院和保险公司的冲突。",
+         "chapter_one_small_win": "第一章小赢：麦珂赢得了试镜机会，并避免了与医院和保险公司的冲突。",
+         "chapter_two_showdown": "第二章新交锋：麦珂与乔纳的合同谈判即将开始，他将要面临新的挑战和机会。",
+         "opponent_permanent_loss": "因果式永久清算：乔纳将会失去他的速签通道，无法再利用麦珂的健康问题来控制他签署合同。",
+         "protagonist_concrete_gain": "麦珂将会获得更多的控制权和自由，能够决定自己的生活和职业道路。",
+         "irreversible_outcome_key": "短而唯一的状态机结算键：合同仍未签，玛莎暂停速签并交成年律师审查，乔纳永久失去当日逼签通道。",
+         "death_chain_connection": "",
+         "direction": "",
+         "locked_story_brief": "第1章2009临终获得死亡利益链真相；第2章重生到1969试镜后台，凭前世记得的走位或设备险情报告成年人并避险，失职者失去后台职务，麦珂赢得试镜机会"
+      },
+      {
+         "cluster_id": "EC002",
+         "chapter_span": [3, 4],
+         "opposition_type": "villain",
+         "event_type": "contract_rights",
+         "solution_type": "negotiation",
+         "death_chain_role": "pressure",
+         "previous_life_harm": "",
+         "unique_prev_life_info": "",
+         "preemptive_action": "",
+         "chapter_one_small_win": "",
+         "chapter_two_showdown": "",
+         "opponent_permanent_loss": "",
+         "protagonist_concrete_gain": "",
+         "irreversible_outcome_key": "",
+         "death_chain_connection": "",
+         "direction": "",
+         "locked_story_brief": "第一份合同是本块唯一合同主事件；前世记得乔纳受一句限时报名谎话催促而速签，今生只提出少年能问的问题，由玛莎自主决定暂停并让律师审查，控制方永久失去速签通道"
+      }
+   ]
+}

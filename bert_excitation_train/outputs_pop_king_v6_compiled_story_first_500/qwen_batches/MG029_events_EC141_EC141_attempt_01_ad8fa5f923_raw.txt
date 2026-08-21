@@ -1,0 +1,186 @@
+{
+  "macro_group_id": "MG029",
+  "event_clusters": [
+    {
+      "cluster_id": "EC141",
+      "chapter_span": [281, 282],
+      "source_event_direction": "{\"cluster_id\": \"EC141\", \"chapter_span\": [281, 282], ...}",
+      "source_event_direction_sha256": "a7f3c9d2e1b8f4a6c5d3e2f1a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0",
+      "source_macro_sha256": "b8e4d0c3f2a1b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4",
+      "name": "墨迹幽灵：1983年的荧光陷阱",
+      "timeline_years": "1994—1995",
+      "main_opponent": "维克多·斯特林 (Victor Sterling)",
+      "opposition_type": "villain",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["CS_1994_AUDIT_FLOW", "CS_NORTH_BORDER_SHELL"],
+      "foreshadow_ids": ["FS_DATA_POLLUTION_01", "FS_DOC_BETRAYAL_INDEX"],
+      "main_characters": ["麦珂", "黛安娜", "苏菲亚", "维克多·斯特林"],
+      "fictional_obstacle": "奥瑞恩集团通过离岸壳公司‘北境资本’提交了一份看似完美的1983年票据，试图将虚假债务合法化并指控初声基金挪用资金。该文件利用当时缺乏电子备份的漏洞，伪造了笔迹和日期。",
+      "prev_life_tragedy": "前世奥瑞恩伪造1983年票据将初声基金债务合法化，导致麦珂被迫接受低价收购，最终因资金链断裂而失去医疗资源控制权。",
+      "info_gap_from_prev_life": "北境资本惯用墨水在1983年特定批次纸张上留下独特荧光反应，且该批次纸张库存记录在物理档案室有明确登记，但电子系统尚未覆盖此细节。",
+      "why_previous_life_failed": "前世团队过度依赖口头证词和当时的电子数据完整性假设，未察觉纸质文件的物理篡改痕迹，导致关键证据被对方律师团以‘技术中立’为由驳回。",
+      "preemptive_avoidance": "麦珂提前告知黛安娜调取1983年该批次纸张的库存记录，并准备便携式光谱仪比对墨迹成分，而非等待对方主动提交文件。",
+      "bait_and_evidence": "斯特林故意在公开听证前提交高仿真的伪造票据，诱使初声基金陷入被动辩护；黛安娜则利用光谱分析发现墨水荧光差异作为反击铁证。",
+      "comic_villain_behavior": "斯特林在审计现场因急于展示‘完美证据’而过度自信，拒绝黛安娜提出的常规复核请求，甚至嘲笑对方‘不懂现代财务标准’，结果当场被揭穿时语无伦次，试图用‘批次混淆’等荒谬理由搪塞。",
+      "villain_loss": "奥瑞恩集团因提交存疑文件被监管机构暂停了初步审计资格并列入观察名单，其非法收购计划被迫搁置。",
+      "protagonist_gain": "初声基金成功规避了基于伪造票据的非法债务转移，保全了核心资产完整性；瑟琳娜的个人资产正式纳入新信托框架。",
+      "relationship_change": "黛安娜与麦珂的信任关系深化，苏菲亚在公众面前确立专业权威，斯特林对奥瑞恩高层的忠诚度出现裂痕。",
+          "continuity_writes": [
+            "维克多·斯特林作为奥瑞恩集团新任‘合规总监’登场，替代前世已故的康拉德角色，承接今生商业陷阱设计。",
+            "1994年联邦审计听证会首次引入物理介质认证标准，为后续P07阶段纪录片背叛事件埋下伏笔。"
+          ],
+      "state_transitions": [
+        {
+          "domain": "audit_compliance",
+          "entity_id": "NORTH_BORDER_CAPITAL_SUBMISSION",
+          "state_key": "physical_verification_status__extension_EC140",
+          "from": "submitted_fraudulent_document",
+          "to": "suspended_audit_qualification",
+          "irreversible": true,
+          "evidence": "ART_281_SPECTRAL_ANALYSIS_REPORT",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "asset_protection",
+          "entity_id": "THIRD_SOUND_FUND",
+          "state_key": "debt_transfer_status__EC141",
+          "from": "exposed_fraud_attempt",
+          "to": "asset_integrity_secured",
+          "irreversible": true,
+          "evidence": "ART_281_SPECTRAL_ANALYSIS_REPORT",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": ["HA_1994_FEDERAL_AUDIT", "HA_1983_INK_BATCH_LOG"],
+      "cluster_outcome": "奥瑞恩集团的伪造链条被黛安娜和苏菲亚在审计中部分识破，被迫暂停针对‘初声基金’的恶意收购；麦珂成功将瑟琳娜的个人资产纳入信托保护伞，家族资产梳理完成；‘星火同盟’社会声誉提升，为后续对抗埋下伏笔。",
+      "next_event_hook": "奥瑞恩集团意识到常规商业手段失效，转而策划更隐蔽的‘数据污染’方案，同时‘健康趋势预测模型’的真实数据来源成为新的关注点，直接触发P07阶段的纪录片背叛事件。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 281,
+          "timeline_start": "1994-06-15",
+          "timeline_end": "1994-06-15",
+          "scene": "初声基金临时审计中心",
+          "chapter_goal": "黛安娜利用麦珂提供的信息差，在正式听证前发现票据墨迹的物理异常。",
+          "chapter_title": "第281章：荧光的秘密",
+          "participants": ["麦珂", "黛安娜", "斯特林", "苏菲亚"],
+          "opening_conflict": "斯特林傲慢地提交1983年票据，声称其经过严格验证，要求立即启动债务转移程序。",
+          "info_gap_use": "麦珂私下指示黛安娜调取1983年特定批次纸张库存记录，并携带便携式光谱仪进行预检。",
+          "opponent_reaction": "斯特林对黛安娜的质疑嗤之以鼻，认为这是‘过时的小把戏’，坚持文件无误。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "初声基金临时审计中心 - 档案室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂将一张泛黄的1983年纸张样本递给黛安娜，低声提及‘荧光反应’。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_281_SPECTRAL_ANALYSIS_REPORT",
+              "timeline_scope": "current",
+              "display_name": "《1983年票据墨迹光谱差异分析报告》",
+              "kind": "technical_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_279_DIGITAL_IMAGING_REPORT",
+              "timeline_scope": "previous_life",
+              "purpose": "对比历史成像缺陷，确认当前技术无法掩盖物理篡改。"
+            }
+          ],
+          "action_sequence": [
+            "黛安娜根据麦珂提示，从档案库取出1983年原始纸张样本。",
+            "使用便携式光谱仪扫描斯特林提交的票据与原始样本。",
+            "发现两者在紫外光下呈现不同的荧光反应，证明墨水批次不符。",
+            "黛安娜将数据打印成报告，准备在次日听证会上使用。"
+          ],
+          "visible_payoff": "黛安娜发现北境资本提交的票据墨水与原始档案库样本存在微小光谱差异。",
+          "ending": "斯特林仍不以为然，但内心开始动摇，决定在次日听证会上强行推进流程。",
+          "must_include": ["荧光反应差异", "便携式光谱仪", "黛安娜的冷静应对"],
+          "must_not_include": ["网络上传", "社交媒体曝光", "康拉德出场"],
+          "detailed_synopsis": "1994年6月15日，初声基金临时审计中心内，斯特林带着伪造的1983年票据趾高气扬地要求启动债务转移程序。麦珂早已预料到对方的伎俩，他私下将一张泛黄的1983年原始纸张样本交给黛安娜，并低声提醒她注意‘特定批次的荧光反应’。黛安娜迅速行动，从档案库取出原始样本，并使用便携式光谱仪对两份文件进行比对。当紫外灯亮起时，斯特林提交的票据在特定波长下呈现出异常的荧光，而原始样本则保持正常。黛安娜立刻将这一发现记录在《1983年票据墨迹光谱差异分析报告》中。斯特林对此嗤之以鼻，认为这是‘过时的小把戏’，坚持文件无误，但内心已开始不安。他决定在次日听证会上强行推进流程，试图掩盖真相。"
+        },
+        {
+          "chapter_id": 282,
+          "timeline_start": "1994-06-16",
+          "timeline_end": "1994-06-16",
+          "scene": "联邦审计听证会现场",
+          "chapter_goal": "苏菲亚在听证会上公开质疑墨水年代，迫使斯特林承认文件需重新核验，导致奥瑞恩集团审计资格被暂停。",
+          "chapter_title": "第282章：墨迹的审判",
+          "participants": ["麦珂", "黛安娜", "苏菲亚", "斯特林", "监管官员"],
+          "opening_conflict": "斯特林试图在听证会上强行通过债务转移提案，指责初声基金阻挠进程。",
+          "info_gap_use": "苏菲亚引用黛安娜的《光谱差异分析报告》，指出斯特林提交的票据墨水年代与1983年不符。",
+          "opponent_reaction": "斯特林惊慌失措，试图用‘批次混淆’等荒谬理由搪塞，最终被迫承认文件需重新核验。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "联邦审计听证会现场 - 主会场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "苏菲亚将《光谱差异分析报告》投影到大屏幕上，全场哗然。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_281_SPECTRAL_ANALYSIS_REPORT",
+              "timeline_scope": "current",
+              "purpose": "作为关键证据，证明斯特林提交的票据存在物理篡改。"
+            }
+          ],
+          "action_sequence": [
+            "苏菲亚在听证会上公开质疑斯特林提交的票据年代，展示光谱分析报告。",
+            "斯特林试图辩解，称是‘批次混淆’，但被监管官员打断。",
+            "监管官员要求斯特林提供原始纸张库存记录，斯特林无法提供。",
+            "斯特林被迫承认文件需重新核验，审计资格被暂停。"
+          ],
+          "visible_payoff": "苏菲亚在审计现场公开质疑墨水年代，迫使对方代表当场承认文件需重新核验。",
+          "ending": "奥瑞恩集团因提交存疑文件被监管机构暂停了初步审计资格并列入观察名单，初声基金成功规避了非法债务转移。",
+          "must_include": ["苏菲亚的公开质疑", "斯特林的崩溃", "监管机构的介入"],
+          "must_not_include": ["逮捕", "查封", "康拉德出场"],
+          "detailed_synopsis": "1994年6月16日，联邦审计听证会现场气氛紧张。斯特林试图强行通过债务转移提案，指责初声基金阻挠进程。苏菲亚冷静地走上台，将《1983年票据墨迹光谱差异分析报告》投影到大屏幕上，全场哗然。她详细解释了斯特林提交的票据在紫外光下呈现的异常荧光反应，证明其墨水年代与1983年不符。斯特林惊慌失措，试图用‘批次混淆’等荒谬理由搪塞，但监管官员立即打断他的辩解，要求他提供原始纸张库存记录。斯特林无法提供，最终被迫承认文件需重新核验。监管官员随即宣布暂停奥瑞恩集团的初步审计资格，并将其列入观察名单。初声基金成功规避了基于伪造票据的非法债务转移，保全了核心资产完整性。斯特林在众人的注视下狼狈离场，内心充满不甘与恐惧。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1994",
+    "character_states": [
+      {"character": "麦珂", "state": "战略主导者，成功预判并化解财务危机"},
+      {"character": "黛安娜", "state": "技术专家，通过物理证据确证欺诈行为"},
+      {"character": "苏菲亚", "state": "法律先锋，在公开场合确立专业权威"},
+      {"character": "维克多·斯特林", "state": "反派败露，信誉受损，面临内部调查"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂-黛安娜", "change": "信任加深，形成默契的技术-战略搭档"},
+      {"pair": "苏菲亚-初声基金", "change": "公众形象提升，成为可信赖的法律代言人"},
+      {"pair": "奥瑞恩集团-斯特林", "change": "斯特林对高层忠诚度下降，内部矛盾加剧"}
+    ],
+    "rights_and_assets": [
+      {"asset": "初声基金", "status": "核心资产完整性得到保全，非法债务转移被阻止"},
+      {"asset": "瑟琳娜个人资产", "status": "正式纳入新信托框架，获得法律保护"},
+      {"asset": "奥瑞恩集团", "status": "审计资格暂停，列入观察名单，声誉受损"}
+    ],
+    "health_and_location": [
+      {"location": "初声基金临时审计中心", "status": "作为主要战场，成功抵御外部攻击"},
+      {"location": "联邦审计听证会现场", "status": "成为揭露欺诈的关键场所，推动法律进程"}
+    ],
+    "open_threads": [
+      "奥瑞恩集团转向更隐蔽的‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点。",
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）仍需进一步调查。"
+    ],
+    "resolved_threads": [
+      "1983年票据伪造事件被彻底揭露，奥瑞恩集团的初步审计资格被暂停。",
+      "初声基金成功规避了基于伪造票据的非法债务转移，保全了核心资产完整性。",
+      "瑟琳娜的个人资产正式纳入新信托框架，家族资产防御体系升级。"
+    ],
+    "introduced_characters": [
+      "维克多·斯特林 (Victor Sterling) - 奥瑞恩集团新任‘合规总监’，承接今生商业陷阱设计"
+    ],
+    "next_pressure": "奥瑞恩集团意识到常规商业手段失效，转而策划更隐蔽的‘数据污染’方案，同时‘健康趋势预测模型’的真实数据来源成为新的关注点，直接触发P07阶段的纪录片背叛事件。"
+  }
+}

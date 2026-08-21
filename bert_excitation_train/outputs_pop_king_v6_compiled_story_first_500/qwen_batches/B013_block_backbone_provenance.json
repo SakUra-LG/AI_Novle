@@ -1,0 +1,54 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "block_backbone",
+  "identifier": "B013",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "48d33ed801d8cfcb1345588f96446d1aa16527b4f946ce5e49447049dac61b4c",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-15T17:42:07+08:00",
+      "prompt_sha256": "48d33ed801d8cfcb1345588f96446d1aa16527b4f946ce5e49447049dac61b4c",
+      "raw_response_sha256": "a53092e88a790298077deb2855f4212276d381da07334f3d950c9c54298aa5db",
+      "repeated_previous_response": false,
+      "raw_response_file": "B013_block_backbone_attempt_01_48d33ed801_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 119 column 2 (char 5112)"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 29.086,
+      "usage": {
+        "prompt_tokens": 9165,
+        "completion_tokens": 3162,
+        "total_tokens": 12327,
+        "prompt_tokens_details": {
+          "cached_tokens": 37
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-15T17:42:32+08:00",
+      "prompt_sha256": "c0d4efeb99377fc398baf91de68872be7e16fb4168e7d3f7c646c481382ebf9f",
+      "raw_response_sha256": "f2433ebf5d5d4222df907441e4858be001866b4b5755471f0e5ebec2342d8625",
+      "repeated_previous_response": false,
+      "raw_response_file": "B013_block_backbone_attempt_02_48d33ed801_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 24.998,
+      "usage": {
+        "prompt_tokens": 9248,
+        "completion_tokens": 2685,
+        "total_tokens": 11933,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

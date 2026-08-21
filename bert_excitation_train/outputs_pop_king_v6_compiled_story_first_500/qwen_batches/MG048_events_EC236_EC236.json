@@ -1,0 +1,252 @@
+{
+  "macro_group_id": "MG048",
+  "event_clusters": [
+    {
+      "cluster_id": "EC236",
+      "chapter_span": [
+        471,
+        472
+      ],
+      "source_event_direction": "前世具体受害：前世麦珂在22:15分被强制注射镇静剂导致呼吸暂停，被判定为自然猝死。；本事件独有的前世信息差：康拉德·莫里森曾口头确认‘排期窒息’操作流程及22:40分心电图篡改时间点。；今生提前动作：麦珂提前将纸质呼吸曲线图与机械节拍器置于床头，拒绝所有电子生物反馈设备。；第471章可见小赢：苏菲亚锁死胶片厂数据，维克多无法远程获取任何实时生命体征参数。；第472章新交锋：深夜监控室显示麦珂心率平稳，维克多发现预设的‘崩解’指令因物理介质缺失而失效。；阻力方永久现实损失：维克多失去对麦珂生理状态的单向操控权，被迫承认医疗数据源被切断。；主角现实收益：麦珂获得完整的夜间清醒记录，确立‘未服药、无干预’的第一道事实锚点。；不可逆结算键：纸质日志与机械波形无法被数字信号覆盖或篡改。；接回死亡控制主线：切断前世22:15分推药指令的执行路径，使死亡链条在第一环断裂。",
+      "source_event_direction_sha256": "0399f3dee1990dc72a4eee5fa7e730b54e03eaa866b2aa6c7c52f064a7d10bd2",
+      "source_macro_sha256": "fc3619f3e63a6e7ebd7c9c83304a155705a1ed1c1511bb129031fcd9208c6f06",
+      "name": "物理介质锚定与数据断流",
+      "timeline_years": "2009",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS06"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "苏菲亚",
+        "玛莎",
+        "维克多·兰斯",
+        "康拉德·莫里森"
+      ],
+      "fictional_obstacle": "维克多集团试图通过篡改实时生命体征数据制造麦珂‘必然崩解’的假象，利用电子信号覆盖物理现实。",
+      "prev_life_tragedy": "前世麦珂在22:15分被强制注射镇静剂导致呼吸暂停，被判定为自然猝死。",
+      "info_gap_from_prev_life": "康拉德·莫里森曾口头确认‘排期窒息’操作流程及22:40分心电图篡改时间点。",
+      "why_previous_life_failed": "过度依赖电子生物反馈系统，未建立无法被数字信号覆盖的物理介质证据链。",
+      "preemptive_avoidance": "麦珂提前在3月16日夜间将纸质呼吸曲线图与机械节拍器置于床头，拒绝所有电子生物反馈设备，切断对手对管理权的渗透。",
+      "bait_and_evidence": "《双轨创作信托协议》补充条款植入昆廷终端触发联合签署；苏菲亚锁死胶片厂原始数据；玛莎签署法定日志；纸质呼吸曲线与机械波形作为绝对清醒的现实锚点。",
+      "comic_villain_behavior": "维克多因确信麦珂已死而提前启动讣告程序，却在监控室发现预设指令因物理介质缺失而失效，慌乱中试图强行接入已被苏菲亚物理隔离的旧线路，导致系统逻辑崩溃发出刺耳警报。",
+      "villain_loss": "维克多失去对麦珂生理状态的单向操控权，被迫承认医疗数据源被切断，其‘必死计划’因缺乏执行载体而破产。",
+      "protagonist_gain": "麦珂获得完整的夜间清醒记录，确立‘未服药、无干预’的第一道事实锚点，彻底掌握主动权。",
+      "relationship_change": "麦珂与星火同盟成员建立基于绝对信任的生死契约；维克多与奥瑞恩集团高层产生不可调和的信任裂痕。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "asset",
+          "entity_id": "MC_2009_PHYSIOLOGY",
+          "state_key": "vital_signs_status",
+          "from": "digitally_monitored_vulnerable",
+          "to": "physically_verified_clean",
+          "irreversible": true,
+          "evidence": "PAPER_RESPIRATION_CHART_AND_MECHANICAL_METRONOME",
+          "effect_type": "protagonist_gain",
+          "source_domain": "Health_Safety"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "VL_CORP_SYSTEM",
+          "state_key": "remote_monitoring_access",
+          "from": "full_control",
+          "to": "blocked_by_physical_isolation",
+          "irreversible": true,
+          "evidence": "SOPHIA_FILM_LOCKDOWN",
+          "effect_type": "villain_loss",
+          "source_domain": "Data_Control"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_2009_MARCH_17"
+      ],
+      "cluster_outcome": "死亡链条在第一环断裂，维克多的数字造假因缺乏物理介质支撑而失效，麦珂确立不可篡改的清醒状态。",
+      "next_event_hook": "‘永恒星光’落幕即‘星火审判’开端——麦珂未设复仇议程，只启动‘开口权存证计划’，将四十年间所有署名作品、健康公示、家庭决议与粉丝共创成果打包为开源时间胶囊，向全球教育机构免费授予权，引发新一轮资本围剿。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 471,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "麦珂卧室",
+          "chapter_goal": "苏菲亚完成物理锁死，麦珂布置非电子监测环境，切断数据源头。",
+          "chapter_title": "静默的齿轮",
+          "participants": [
+            "麦珂",
+            "苏菲亚",
+            "玛莎"
+          ],
+          "opening_conflict": "维克多团队远程请求接入生命体征数据，试图验证麦珂是否处于药物诱导的昏迷边缘。",
+          "info_gap_use": "麦珂利用前世记忆，提前知晓对方会在22:15分下达推药指令，因此坚决拒绝任何电子接口。",
+          "opponent_reaction": "维克多在监控室看着不断跳动的‘连接超时’红字，误判为麦珂身体机能正在衰竭导致的信号中断。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂卧室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "窗外雷雨声掩盖了机械摆钟的滴答声"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_471_PAPER_LOG",
+              "timeline_scope": "current",
+              "display_name": "《3月17日夜纸质呼吸曲线图》",
+              "kind": "forensic_evidence"
+            },
+            {
+              "artifact_id": "ART_471_MECH_METRONOME",
+              "timeline_scope": "current",
+              "display_name": "《校准至2009年3月的机械节拍器》",
+              "kind": "physical_device"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_467_ORIGINAL_LOG",
+              "timeline_scope": "current",
+              "purpose": "玛莎作为见证人即将签署新的物理日志"
+            }
+          ],
+          "action_sequence": [
+            "麦珂将床头所有电子设备断电，只留下老式机械节拍器和空白纸笔。",
+            "苏菲亚潜入胶片厂核心服务器，用物理钥匙锁死数据读写端口，切断外部远程访问路径。",
+            "玛莎在床边坐下，开始记录麦珂真实的呼吸频率，并在纸上绘制曲线。",
+            "维克多团队收到‘数据丢失’报告，误以为麦珂心脏骤停导致传感器离线。"
+          ],
+          "visible_payoff": "监控大屏上显示麦珂生命体征‘信号丢失’，但实际是物理隔绝成功。",
+          "ending": "午夜钟声敲响前，苏菲亚确认数据链路物理切断，麦珂在机械节拍声中安然入睡。",
+          "must_include": [
+            "机械节拍器声音",
+            "纸质曲线绘制过程",
+            "苏菲亚拔除物理插头动作"
+          ],
+          "must_not_include": [
+            "任何电子屏幕上的真实心率数据",
+            "麦珂的内心独白解释策略"
+          ],
+          "detailed_synopsis": "夜幕降临，2009年3月17日晚20时，麦珂卧室内的智能监护仪被粗暴地拔掉电源，取而代之的是一台发出沉重滴答声的老式机械节拍器。苏菲亚带着专业工具箱潜入地下胶片厂，面对维克多团队的高压远程入侵指令，她冷静地启动了物理熔断机制，将存储着原始数据的磁带库从网络中彻底剥离，并换上了只有本地手动读取才能访问的模拟信号接口。与此同时，玛莎手持钢笔，在铺满床头的特制纸张上，一笔一划记录下麦珂平稳的呼吸节奏。维克多坐在监控中心，看着屏幕上突然归零的生命体征数据，嘴角勾起一抹残忍的笑意，他认定这是麦珂在药物作用下心脏停跳的前兆，立刻下令准备启动‘自动讣告’程序。然而，他不知道的是，此刻麦珂正听着机械摆锤的规律摆动，眼神清明，手中的纸笔正在绘制一条从未断绝的呼吸曲线，这是任何数字代码都无法伪造的生存铁证。",
+          "source_timeline_start": "2009-03-17T20:00:00+08:00",
+          "source_timeline_end": "2009-03-17T22:00:00+08:00"
+        },
+        {
+          "chapter_id": 472,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "维克多监控室",
+          "chapter_goal": "维克多尝试强行注入药物失败，确认物理介质阻断，陷入逻辑崩塌。",
+          "chapter_title": "失效的指令",
+          "participants": [
+            "维克多·兰斯",
+            "康拉德·莫里森",
+            "麦珂",
+            "玛莎"
+          ],
+          "opening_conflict": "22:15分，康拉德·莫里森接到指令准备执行‘排期窒息’操作，却发现输液管路被物理锁定且无电子信号触发。",
+          "info_gap_use": "麦珂利用前世对22:40分心电图篡改时间的记忆，提前让机械装置覆盖了所有可能的电子干扰窗口。",
+          "opponent_reaction": "维克多发现预设的‘崩解’指令因物理介质缺失而失效，试图调取备用数据时发现已被苏菲亚永久封存，陷入疯狂猜测。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "维克多监控室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "屏幕闪烁红光，警报声大作"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_471_PAPER_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为反驳虚假数据的唯一合法依据"
+            },
+            {
+              "artifact_id": "ART_469_MECHANICAL_LOCK",
+              "timeline_scope": "current",
+              "purpose": "证明输液管路未被电子信号控制"
+            }
+          ],
+          "action_sequence": [
+            "康拉德·莫里森抵达病房，发现输液泵处于纯机械模式，无法接收远程指令。",
+            "维克多命令技术组强行破解，却被告知所有数字接口已被物理拆除，只剩下一张手绘的呼吸图。",
+            "麦珂在床边醒来，拿起那张刚刚完成的呼吸曲线图，对着镜头展示自己正常的瞳孔反应。",
+            "维克多看着屏幕上显示的‘无数据’状态，意识到自己的‘必死计划’因对手的预判而彻底落空。"
+          ],
+          "visible_payoff": "监控画面中，麦珂清醒地阅读报纸，而维克多的系统却显示一片空白，谎言不攻自破。",
+          "ending": "维克多不得不承认医疗数据源被切断，麦珂确立了‘未服药、无干预’的事实锚点，死亡链条彻底断裂。",
+          "must_include": [
+            "康拉德困惑的表情",
+            "维克多查看无效指令的焦躁",
+            "麦珂展示纸质日志的特写"
+          ],
+          "must_not_include": [
+            "麦珂主动攻击维克多",
+            "法律层面的正式判决"
+          ],
+          "detailed_synopsis": "22时15分，康拉德·莫里森带着镇静剂进入病房，却惊恐地发现输液管被一根粗壮的金属锁扣死死卡住，没有任何电子信号可以激活泵机。与此同时，维克多在监控室里看着屏幕上依然是一片死寂的数据流，原本期待的‘室颤’信号迟迟不来。他愤怒地咆哮着要求技术部强行接管，却得到回复：所有数字接口已被物理熔断，现场只剩下苏菲亚留下的封条和一张手写的呼吸曲线图。就在维克多怀疑人生之际，麦珂缓缓坐起，手中拿着那张由玛莎刚签完字的纸质日志，对着直播镜头展示自己平稳的呼吸节奏和清晰的思维。维克多看着这一幕，终于意识到自己精心策划的‘排期窒息’因对手对物理介质的掌控而彻底失效。他试图调用备用数据，却发现所有历史文件都被苏菲亚加密锁定，只能眼睁睁看着‘麦珂死亡’的剧本变成一场闹剧。麦珂没有说话，只是平静地将那张纸质日志举高，上面密密麻麻的墨迹和玛莎的签名，成为了击碎维克多谎言的最有力武器。",
+          "source_timeline_start": "2009-03-17T22:00:00+08:00",
+          "source_timeline_end": "2009-03-17T23:30:00+08:00"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2009",
+    "character_states": [
+      {
+        "character": "麦珂",
+        "state": "Physically verified clean, mentally sharp, holding physical evidence logs."
+      },
+      {
+        "character": "维克多·兰斯",
+        "state": "Confused, panicked, lost control over physiological monitoring."
+      },
+      {
+        "character": "苏菲亚",
+        "state": "Successfully locked down data sources, physically isolated from network."
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": "麦珂 & 星火同盟",
+        "status": "Deepened trust through shared survival strategy."
+      },
+      {
+        "pair": "维克多 & 奥瑞恩高层",
+        "status": "Trust fractured due to failed 'death' plan and potential leak."
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset": "《双轨创作信托协议》",
+        "status": "Supplementary clauses active, preventing asset freezing."
+      },
+      {
+        "asset": "奥瑞恩集团版权授权",
+        "status": "Temporarily frozen pending investigation."
+      }
+    ],
+    "health_and_location": [
+      {
+        "subject": "麦珂",
+        "status": "Healthy, no drugs administered, location: Bedroom."
+      }
+    ],
+    "open_threads": [
+      "'开口权存证计划'的全球推广与资本围剿风险",
+      "四十年间所有署名作品的开源授权落地情况"
+    ],
+    "resolved_threads": [
+      "Victor's attempt to manipulate vital signs via digital means."
+    ],
+    "introduced_characters": [],
+    "next_pressure": "‘开口权存证计划’启动后，全球资本将发起新一轮围剿，试图通过法律战、舆论战等手段重新夺回声音主权，麦珂需在开源过程中应对复杂的国际法律纠纷。"
+  }
+}

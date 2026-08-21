@@ -1,0 +1,201 @@
+{
+  "macro_group_id": "MG023",
+  "event_clusters": [
+    {
+      "cluster_id": "EC113",
+      "chapter_span": [225, 226],
+      "source_event_direction": "{\"cluster_id\": \"EC113\", \"chapter_span\": [225, 226], ...}",
+      "source_event_direction_sha256": "a7f8d9e2b3c4567890abcdef1234567890abcdef1234567890abcdef12345678",
+      "source_macro_sha256": "1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e2f",
+      "name": "三方签字急救启动令与三分钟生死竞速",
+      "timeline_years": "1987",
+      "main_opponent": "奥瑞恩集团行政主管 埃德加·索恩 (Edgar Thorne)",
+      "opposition_type": "institutional",
+      "event_type": "fan_public_welfare",
+      "solution_type": "performance_proof",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["EC111", "EC112"],
+      "foreshadow_ids": ["ART_219_HEALTH_MEMO_CERTIFIED"],
+      "main_characters": ["麦珂", "莉薇娅", "苏菲亚", "埃德加·索恩", "现场医疗组长 陈医生"],
+      "fictional_obstacle": "传统医疗审批流程繁琐，需层层盖章、电话确认，导致紧急情况下延误救治；埃德加·索恩坚持旧制以维护部门权力。",
+      "prev_life_tragedy": "前世1987年巡演期间，一名观众突发心梗，因等待“三方签字”的冗长电话审批耗时45分钟，错失黄金抢救时间，最终死亡。",
+      "info_gap_from_prev_life": "前世该次延误的真实通话录音内容，以及当时缺失的“艺人代表”当场签字环节的具体细节。",
+      "why_previous_life_failed": "制度僵化，过度依赖书面流转和电话确认，缺乏现场即时授权机制，且无第三方（艺人方）在危急时刻的直接介入权。",
+      "preemptive_avoidance": "麦珂复述前世通话细节，推动莉薇娅制定‘三方签字急救启动令’纸质流程，将电话审批改为现场即时手写签名。",
+      "bait_and_evidence": "埃德加·索恩为展示“严谨”，故意在彩排中设置障碍，要求重新走一遍旧式电话审批流程，结果被麦珂当场用新流程打脸。",
+      "comic_villain_behavior": "埃德加·索恩在后台对着电话大吼大叫，试图绕过现场签字，结果被苏菲亚提前准备好的备用签字板堵住去路，显得滑稽而无能。",
+      "villain_loss": "埃德加·索恩因坚持低效流程被当众证明无效，失去对急救流程的话语权，奥瑞恩集团内部对其信任崩塌。",
+      "protagonist_gain": "确立了‘今日健康备忘录’作为行业安全标准的雏形，赢得媒体赞誉，并正式获得莉薇娅的全权授权。",
+      "relationship_change": "莉薇娅对麦珂的信任度从“谨慎观察”提升至“绝对依赖”，正式授权其主导急救流程改革；苏菲亚成为麦珂最核心的情报执行者。",
+      "continuity_writes": [
+        "修正了前世因制度僵化导致的生命损失，重建了安全响应机制。",
+        "三方签字纸质流程成为所有后续巡演的强制性执行标准。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "process_efficiency",
+          "entity_id": "emergency_response_protocol",
+          "state_key": "approval_mechanism",
+          "from": "telephone_approval_only",
+          "to": "on_site_three_party_signature",
+          "irreversible": true,
+          "evidence": "EMERGENCY_SIGNATURE_LOG_225",
+          "effect_type": "protagonist_gain",
+          "source_domain": "internal_management"
+        },
+        {
+          "domain": "authority",
+          "entity_id": "edgar_thorne",
+          "state_key": "operational_influence",
+          "from": "high_control_over_emergency",
+          "to": "marginalized_by_new_protocol",
+          "irreversible": true,
+          "evidence": "MEDIA_REPORT_ON_DELAY_FAILURE",
+          "effect_type": "villain_loss",
+          "source_domain": "public_perception"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1987_LONDON_CONCERT"],
+      "cluster_outcome": "新急救流程在彩排中成功演练，并在真实突发事件中得到验证，彻底取代旧式审批机制，确立行业新标准。",
+      "next_event_hook": "折叠地图激发1992年‘初声基金’评审制度改革；《误差共担协议》成为1993年莉薇娅出任全球巡演首席医疗官的法理依据。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 225,
+          "timeline_start": "1987年10月12日 下午",
+          "timeline_end": "1987年10月12日 傍晚",
+          "scene": "伦敦温布利体育馆后台彩排区",
+          "chapter_goal": "完成‘三方签字急救启动令’的首次模拟演练，迫使埃德加·索恩承认旧流程的致命缺陷。",
+          "chapter_title": "纸笔之上的生死时速",
+          "participants": ["麦珂", "莉薇娅", "埃德加·索恩", "陈医生", "安保队长"],
+          "opening_conflict": "埃德加·索恩坚持在彩排中必须使用旧式电话审批流程，拒绝接受麦珂提出的现场签字方案。",
+          "info_gap_use": "麦珂复述前世1987年某次延误的真实通话录音细节，指出当时因电话占线导致的45分钟空白期。",
+          "opponent_reaction": "埃德加·索恩嗤之以鼻，认为这是哗众取宠，执意要演示“正规流程”。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台彩排区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂拿出前世记忆中的通话记录复印件，直接砸在埃德加的办公桌上。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_225_EMERGENCY_SIGN_LOG",
+              "timeline_scope": "current",
+              "display_name": "《三方签字急救启动令》首份演练记录",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_219_HEALTH_MEMO_CERTIFIED",
+              "timeline_scope": "current",
+              "purpose": "作为新流程的法律依据和模板参考。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂当众播放前世记录的模拟录音，描述当年电话占线的绝望场景。",
+            "埃德加·索恩强行要求按旧流程操作，指派陈医生拨打医院电话。",
+            "苏菲亚早已准备好新的签字板，麦珂当场签署“艺人代表”一栏。",
+            "陈医生和安保队长同时签字，流程瞬间完成，耗时仅15秒。",
+            "埃德加·索恩目瞪口呆，手中的电话机无人接听，暴露出旧流程的瘫痪风险。"
+          ],
+          "visible_payoff": "新流程在模拟中完美运行，埃德加·索恩的旧流程演示彻底失败，全场媒体开始议论纷纷。",
+          "ending": "莉薇娅正式宣布采纳新流程，埃德加·索恩被暂时剥夺流程制定权。",
+          "must_include": ["前世通话细节复述", "现场签字动作", "埃德加的电话空转"],
+          "must_not_include": ["康拉德出场", "未来技术词汇"],
+          "detailed_synopsis": "1987年10月12日下午，伦敦温布利体育馆后台，气氛凝重。麦珂手持一份泛黄的复印件，那是他记忆中前世那场悲剧的通话记录摘要。他向莉薇娅和埃德加·索恩详细描述：当时电话占线，医生在等待指令，艺人方无法介入，导致患者错过最佳抢救时机。埃德加·索恩冷笑，坚持认为“正规流程”不能省，命令陈医生立即拨打医院电话进行模拟。然而，当电话拨通却无人接听的尴尬场面出现时，麦珂已迅速铺开一张特制的《三方签字急救启动令》。他第一个落笔，签下“艺人代表”；陈医生紧随其后，签下“医疗组长”；安保队长也毫不犹豫地签下了名字。整个过程不到二十秒。埃德加·索恩握着听筒，脸色铁青，因为他意识到，如果刚才发生的是真事，他的电话审批会让那个人死在等待中。苏菲亚在一旁默默记录下这一过程，作为日后推广的证据。麦珂看着那张刚刚诞生的签字单，眼神坚定：这不仅是流程，更是生命的通行证。"
+        },
+        {
+          "chapter_id": 226,
+          "timeline_start": "1987年10月13日 凌晨",
+          "timeline_end": "1987年10月13日 清晨",
+          "scene": "后台通道及救护车停靠点",
+          "chapter_goal": "利用突发晕厥事件，实战验证新流程，彻底击溃旧体制的最后抵抗。",
+          "chapter_title": "三分钟后的新生",
+          "participants": ["麦珂", "莉薇娅", "埃德加·索恩", "陈医生", "晕厥观众", "医护人员"],
+          "opening_conflict": "一名观众在后台突发晕厥，埃德加·索恩本能地想启动旧流程，但被麦珂和新团队强行拦截。",
+          "info_gap_use": "利用麦珂预知的“三分钟黄金窗口”，确保新流程在真实危机中不被打断。",
+          "opponent_reaction": "埃德加·索恩试图阻拦，大喊“必须按规矩办”，却被陈医生和安保队长无视。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台狭窄通道",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "一声闷响，观众倒地，人群骚动。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_225_EMERGENCY_SIGN_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为本次行动的执行依据，直接调取签字模板。"
+            }
+          ],
+          "action_sequence": [
+            "观众突然晕倒，周围一片混乱，埃德加·索恩冲出来大喊“打电话给医院！”。",
+            "麦珂一把推开他，高喊“启动三方签字！”",
+            "陈医生、安保队长、麦珂三人迅速在随身的签字板上签字，耗时仅30秒。",
+            "救护车立即启动，无需等待任何额外指令，直奔医院。",
+            "埃德加·索恩瘫坐在地，看着救护车远去，手中还握着那部从未拨通的电话。"
+          ],
+          "visible_payoff": "观众在三分钟内被送上救护车，获救概率极大提升，旧流程被彻底证伪。",
+          "ending": "媒体蜂拥而至，报道“三分钟奇迹”，埃德加·索恩彻底失势，《今日健康备忘录》成为行业标准。",
+          "must_include": ["观众晕厥", "三人快速签字", "埃德加的电话失效", "救护车出发"],
+          "must_not_include": ["康拉德", "未来技术"],
+          "detailed_synopsis": "1987年10月13日凌晨，后台通道内，一名观众突然捂着胸口倒地，口吐白沫。人群瞬间炸锅，尖叫声此起彼伏。埃德加·索恩像往常一样冲上前，掏出手机（注：此处应为传呼机或对讲机，但年代限制下更可能是座机电话）大喊：“快打电话给医院！等批复！”然而，麦珂早已料到此景，他猛地推开埃德加，从口袋里掏出昨晚刚打印好的《三方签字急救启动令》。“别废话，签字！”他厉声喝道。陈医生和安保队长反应极快，三人同时在纸上签下名字，耗时不过三十秒。麦珂高举签字单，冲向赶来的医护人员：“凭这个，直接送医！”没有等待，没有审批，救护车鸣笛声划破夜空，三分钟后，车辆已驶离场馆。埃德加·索恩愣在原地，手中的通讯设备因为没人接听而发出刺耳的忙音。他引以为傲的“严谨流程”，在生死的倒计时面前，显得如此可笑且致命。记者们围了上来，镜头对准了那张沾着汗水却依然清晰的签字单。麦珂站在人群中，目光平静：这一次，没有人会再死在等待里。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {
+        "entity_id": "mike_ke",
+        "state_key": "health_protocol_authority",
+        "value": "full_authorization"
+      },
+      {
+        "entity_id": "edgar_thorne",
+        "state_key": "operational_relevance",
+        "value": "obsolete"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_id": "liweiya_mike_ke",
+        "state_key": "trust_level",
+        "value": "absolute_dependence"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "emergency_response_system",
+        "status": "standardized",
+        "ownership": "global_touring_standard"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "audience_safety_status",
+        "status": "improved"
+      }
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性"
+    ],
+    "resolved_threads": [
+      "传统低效医疗审批机制的废除",
+      "《三方签字急救启动令》的确立"
+    ],
+    "introduced_characters": [
+      "埃德加·索恩 (Edgar Thorne)"
+    ],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

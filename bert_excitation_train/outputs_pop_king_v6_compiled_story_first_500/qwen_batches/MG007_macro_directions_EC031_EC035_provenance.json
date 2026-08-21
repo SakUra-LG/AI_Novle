@@ -1,0 +1,37 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "macro_directions_EC031_EC035",
+  "identifier": "MG007",
+  "accepted_attempt": 1,
+  "base_prompt_sha256": "f743d40dbd15c00754c2349ec2a13de3bbc31b0875879a657dc2ee13016ad228",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-15T17:26:49+08:00",
+      "prompt_sha256": "f743d40dbd15c00754c2349ec2a13de3bbc31b0875879a657dc2ee13016ad228",
+      "raw_response_sha256": "6fe00adf2cd24df07555d928c1e943bb7009205a953a355e012cbda094a86791",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG007_macro_directions_EC031_EC035_attempt_01_f743d40dbd_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 15.193,
+      "usage": {
+        "prompt_tokens": 3661,
+        "completion_tokens": 1611,
+        "total_tokens": 5272,
+        "prompt_tokens_details": {
+          "cached_tokens": 2208
+        }
+      }
+    }
+  ],
+  "structural_normalizations": [
+    "cluster_id",
+    "chapter_span",
+    "B001_locked_enums_and_story_brief"
+  ],
+  "normalized_parsed_sha256": "6184339554d0f1421fabd77f858430a98abadd29eee1ea9ae363d0cc86d3f25a"
+}

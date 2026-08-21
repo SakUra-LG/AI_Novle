@@ -1,0 +1,50 @@
+{
+  "generated_by": "qwen",
+  "kind": "phases_b",
+  "identifier": "GLOBAL",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "49b97d0ad4d6ee26086fc358fb230e71eab40592c99410f7b0d350b53491a8b1",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-04T20:33:24+08:00",
+      "prompt_sha256": "49b97d0ad4d6ee26086fc358fb230e71eab40592c99410f7b0d350b53491a8b1",
+      "raw_response_sha256": "b345e7e3a19aabef53d5e65a4a96871fd8706e39423545707069558f606a9f57",
+      "raw_response_file": "GLOBAL_phases_b_attempt_01_raw.txt",
+      "validation_failures": [
+        "全书阶段第2批世界观错误：禁止出现“纽约”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 75.564,
+      "usage": {
+        "input_tokens": 4155,
+        "output_tokens": 4903,
+        "total_tokens": 9058,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-04T20:34:39+08:00",
+      "prompt_sha256": "3cb0daf9d2df6bf51d9f68f58fb55d41ba9c9ef21cfe508631d8040493446cbc",
+      "raw_response_sha256": "11aa664f1ec093ce7106c9d8d3652142150c0a23a0d2832b6b3a2774d7f79742",
+      "raw_response_file": "GLOBAL_phases_b_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 75.416,
+      "usage": {
+        "input_tokens": 9104,
+        "output_tokens": 4893,
+        "total_tokens": 13997,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

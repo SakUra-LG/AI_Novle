@@ -1,0 +1,249 @@
+{
+  "macro_group_id": "MG013",
+  "event_clusters": [
+    {
+      "cluster_id": "EC065",
+      "chapter_span": [
+        129,
+        130
+      ],
+      "source_event_direction": "前世具体受害：前世终场观众情绪未达预期，缺乏跨代际的情感共鸣，导致巡演影响力受限。；本事件独有的前世信息差：麦珂预判1982年‘棱镜之夜’终场观众情绪拐点时刻，设定灯光渐暗节奏与麦珂风拾音衰减曲线。；今生提前动作：麦珂提前设定灯光渐暗节奏与麦珂风拾音衰减曲线，确保现场演出的情感爆发力精准命中受众心理。；第129章可见小赢：彩排中观众反应热烈，苏菲亚记录数据证明情感共振机制有效，团队信心倍增。；第130章新交锋：演出当晚，麦珂唱完试镜原曲副歌后停顿三秒，全场十万观众自发齐声补入原版旋律。；阻力方永久现实损失：任何试图贬低巡演影响力的言论在事实面前不攻自破，竞争对手无法复制这种情感连接。；主角现实收益：完成从童星到艺术家的公众认知跃迁，确立了铜质齿轮体系的资产控制权与社会影响力。；不可逆结算键：四十年声部共振成为历史事件，彻底改变了公众对麦珂·杰森的定义。；接回死亡控制主线：实现了前世未能达成的终极情感共鸣，将个人命运与公众记忆深度绑定，终结死亡循环。",
+      "source_event_direction_sha256": "e233418ea617195f6fd24d518b975d326fc40eb26eebd93e5b5046f705b6011e",
+      "source_macro_sha256": "7e33cad6e3f20c525f8770d2c5ae52635e252e382c02b04eedf6e4e2bdf33a02",
+      "name": "情感共振的终极对决",
+      "timeline_years": "1981-1982",
+      "main_opponent": "维克多·兰斯阵营",
+      "opposition_type": "internal",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂·杰森",
+        "莉薇娅·普莱斯",
+        "苏菲亚·罗德里格斯",
+        "巴里·布鲁姆医生",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "唱片分销商联手广告商以‘不符合市场标准’为名，要求改动《锈钉与琴键》封面与曲序，并借假诊断书叫停巡演。",
+      "prev_life_tragedy": "前世‘棱镜之夜’终场情绪未达预期，缺乏跨代际共鸣导致巡演影响力受限。",
+      "info_gap_from_prev_life": "麦珂记得灯光暗淡与拾音衰减的精准时间点，却未有物证。",
+      "why_previous_life_failed": "缺少可验证的技术标尺，观众情绪被外部噪声冲散。",
+      "preemptive_avoidance": "麦珂提前在三家冲印厂交叉比对底片，锁定铜质齿轮视觉符号；并在现场灯光与拾音曲线预设程序中嵌入机械计时装置。",
+      "bait_and_evidence": "现场摄像机拍下灯光暗淡瞬间的齿轮投影，音响技术员记录拾音衰减曲线，形成纸质《情感共振实验报告》作为证据。",
+      "comic_villain_behavior": "维克多的代理人现场大喊‘违背市场！’，却在灯光暗下三秒后被全场观众的齐声合唱淹没，尴尬跌坐。",
+      "villain_loss": "维克多阵营的伪造巴里·布鲁姆诊断书被莉薇娅公开驳回，媒体曝光后失去所有广告赞助，品牌形象崩塌。",
+      "protagonist_gain": "麦珂完成从童星到艺术家的公众认知跃迁，铜质齿轮编号体系成为专辑版税与周边资产的核心控制权。",
+      "relationship_change": "团队内部信任度升至顶点，形成‘视觉‑听觉‑物理’三位一体的铁三角协作模式。",
+      "continuity_writes": [
+        "记录《情感共振实验报告》编号ART_129_RESONANCE_LOG，归档于星火同盟档案库。",
+        "更新铜质齿轮资产登记表，编号G2021-01至G2021-12，标记为不可复制的物理资产。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_003:physical_asset_control",
+          "state_key": "ownership_status",
+          "from": "未授权",
+          "to": "已授权",
+          "irreversible": true,
+          "evidence": "ART_129_RESONANCE_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_003:fake_medical_report_prohibition",
+          "state_key": "legal_status",
+          "from": "有效",
+          "to": "无效",
+          "irreversible": true,
+          "evidence": "莉薇娅·普莱斯否决文件（ART_130_DENIAL_CERT）",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA1981_07",
+        "HA1982_03"
+      ],
+      "cluster_outcome": "《锈钉与琴键》在《棱镜之夜》现场实现情感共振，观众十万齐声补入原版旋律，媒体称之为‘四十年声部共振’，麦珂获得艺术革命者称号，铜质齿轮体系成为行业新标准。",
+      "next_event_hook": "维克多·兰斯转向隐蔽渗透，策划数据污染攻击；托马斯·布莱克准备以法律手段阻碍《家庭治理宪章》签署。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 129,
+          "timeline_start": "1982-04-10",
+          "timeline_end": "1982-04-10",
+          "scene": "排练厅主舞台",
+          "chapter_goal": "验证灯光暗淡与拾音衰减的情感共振模型，获取现场数据。",
+          "chapter_title": "情感共振的试验",
+          "participants": [
+            "麦珂·杰森",
+            "苏菲亚·罗德里格斯",
+            "技术团队",
+            "部分观众志愿者"
+          ],
+          "opening_conflict": "技术团队对灯光暗淡时长存疑，担心与曲目节奏冲突。",
+          "info_gap_use": "麦珂凭前世记忆指示灯光暗淡恰好在副歌高点后3秒启动。",
+          "opponent_reaction": "唱片分销商现场派代表提出修改建议，要求提前结束暗淡。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "排练厅主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光操作员按下预设计时开关"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_129_RESONANCE_LOG",
+              "timeline_scope": "current",
+              "display_name": "《情感共振实验报告》纸质版",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂指挥乐队进入副歌",
+            "灯光暗淡计时器启动，三秒后灯光完全熄灭",
+            "拾音系统同步降低增益，形成衰减曲线",
+            "观众志愿者记录情绪波动表"
+          ],
+          "visible_payoff": "观众情绪指数在暗淡三秒内提升至峰值，苏菲亚的数据图表显示情感共振成功。",
+          "ending": "团队确认模型可行，准备正式演出。",
+          "must_include": [
+            "灯光暗淡计时装置",
+            "拾音衰减曲线记录",
+            "纸质实验报告"
+          ],
+          "must_not_include": [
+            "电子邮件",
+            "电脑硬盘"
+          ],
+          "detailed_synopsis": "排练厅灯光调度员在麦珂的指示下，将灯光暗淡计时器设为3秒。乐队进入《锈钉与琴键》副歌的高潮段落，麦珂在高音结束后停顿三秒，灯光随即熄灭，现场观众的呼吸声与心跳声被拾音系统捕捉并刻意降低增益，形成独特的衰减曲线。苏菲亚安排的情绪记录员用纸质表格记录观众的情绪波动，结果显示情绪指数在暗淡期间上升30%。技术团队将灯光计时器与拾音衰减装置的同步记录打印成《情感共振实验报告》，并存档于星火同盟档案库。"
+        },
+        {
+          "chapter_id": 130,
+          "timeline_start": "1982-04-12",
+          "timeline_end": "1982-04-12",
+          "scene": "国家体育场主舞台",
+          "chapter_goal": "在正式演出中实现情感共振，公开驳回维克多阵营的假健康报告。",
+          "chapter_title": "声部共振的巅峰对决",
+          "participants": [
+            "麦珂·杰森",
+            "莉薇娅·普莱斯",
+            "维克多·兰斯代表",
+            "全场观众十万",
+            "媒体记者"
+          ],
+          "opening_conflict": "维克多阵营的代理人持假诊断书现场喊停，要求立即撤演。",
+          "info_gap_use": "麦珂利用前世记忆的灯光暗淡与拾音衰减程序，提前在舞台后台完成同步设置。",
+          "opponent_reaction": "维克多的代理人在观众齐声补入原版旋律时被现场音响系统的实时波形显示击退，现场尴尬。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "国家体育场主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光暗淡计时器自动触发"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_130_DENIAL_CERT",
+              "timeline_scope": "current",
+              "display_name": "ART_130_DENIAL_CERT",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_130_DENIAL_CERT",
+              "timeline_scope": "current",
+              "purpose": "莉薇娅·普莱斯的临床否决权正式文件"
+            }
+          ],
+          "action_sequence": [
+            "麦珂完成原曲副歌后停顿三秒，灯光暗淡",
+            "观众自发齐声补入原版旋律，声波在场内形成共振",
+            "莉薇娅现场展示否决文件，宣布假报告无效",
+            "媒体快速记录并刊登《声部共振》专稿"
+          ],
+          "visible_payoff": "全场十万观众齐声补歌，现场声压计显示峰值突破历史纪录，维克多阵营的假报告被官方撤销。",
+          "ending": "演出圆满落幕，麦珂站在舞台中央，铜质齿轮投影在天幕上闪耀，观众起立鼓掌。",
+          "must_include": [
+            "三秒停顿",
+            "灯光暗淡计时装置",
+            "现场否决文件",
+            "纸质声压计记录"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "电脑硬盘"
+          ],
+          "detailed_synopsis": "‘棱镜之夜’的灯光总控室已预装麦珂提供的三秒暗淡计时装置，演出进行至《锈钉与琴键》副歌高潮时，麦珂在高音结束后自然停顿三秒，灯光随即熄灭，现场拾音系统同步降低增益，形成与排练相同的衰减曲线。观众在黑暗中本能地哼唱原版旋律，十万人的声音在场内形成巨大的声波共振，声压计纸质记录显示峰值为115分贝，创下当年现场演出纪录。维克多阵营的代理人举起假诊断书大喊‘听力受损，必须停演’，但莉薇娅·普莱斯立刻出示《临床否决权声明》（ART_130_DENIAL_CERT），并以现场医学数据驳回。媒体记者现场记录并在次日的《星火日报》上发表《声部共振——艺术与科学的交锋》专稿，彻底粉碎维克多的抹杀计划。演出结束时，铜质齿轮的投影在天幕上缓缓转动，象征专辑实体资产的不可复制性，麦珂站在舞台中央接受观众的热烈掌声，完成从童星到艺术家的公众认知跃迁。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1982",
+    "character_states": [
+      {
+        "character_id": "MK001",
+        "name": "麦珂·杰森",
+        "status": "健康",
+        "role": "艺术家/资产控制者",
+        "notes": "已获得铜质齿轮体系的资产控制权"
+      },
+      {
+        "character_id": "LV001",
+        "name": "莉薇娅·普莱斯",
+        "status": "健康",
+        "role": "危机协作者",
+        "notes": "持有临床否决权文件"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": [
+          "麦珂·杰森",
+          "莉薇娅·普莱斯"
+        ],
+        "trust_level": "最高",
+        "description": "形成艺术‑医学‑物理三位一体的铁三角"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "right_id": "RIGHT_MK_003:physical_asset_control",
+        "owner": "麦珂·杰森",
+        "status": "已授权"
+      },
+      {
+        "right_id": "RIGHT_VL_003:fake_medical_report_prohibition",
+        "owner": "公共卫生局",
+        "status": "无效"
+      }
+    ],
+    "health_and_location": [
+      {
+        "character_id": "MK001",
+        "health_check": "听力正常，体检合格",
+        "location": "北岬市国家体育场"
+      }
+    ],
+    "open_threads": [
+      "维克多·兰斯对《家庭治理宪章》的伦理渗透企图",
+      "铜质齿轮编号体系在医疗领域的延伸应用"
+    ],
+    "resolved_threads": [
+      "维克多阵营的假健康报告被驳回"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "‘心律校准计划’将在1983年启动，需利用已标准化的铜质齿轮编号体系进行跨行业设备统一。"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC056_EC056",
+  "identifier": "MG012",
+  "accepted_attempt": "02",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "base_prompt_sha256": "4dc62c5bef5279af48dae37ec9fa1525f944408e16d36c0a23df34cc6e281ec2",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T15:26:50+08:00",
+      "prompt_sha256": "62ffdc5b5fb25827bffdbd0074de0d444af4c601889d8b6836a3e1eb5b41c689",
+      "raw_response_sha256": "f073de20efa00292781d802aeef8531e33f580352bfc2126368b167edc3b5345",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG012_events_EC056_EC056_attempt_01_62ffdc5b5f_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 227 column 8 (char 10496)"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen3.8-max",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 78.319,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-20T15:28:00+08:00",
+      "prompt_sha256": "f5323e277e941d202964bc5d2b88255ffea683e731ded0ad868df36c1968d71a",
+      "raw_response_sha256": "f94380dbd0d6312e65967ce692fd33525796e179f4b0dcc10f62a71ef2ceb717",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG012_events_EC056_EC056_attempt_02_62ffdc5b5f_raw.txt",
+      "validation_failures": [
+        "EC056.state_transition缺少合法effect_type，必须说明其结算类型",
+        "EC056.state_transition缺少合法effect_type，必须说明其结算类型",
+        "EC056没有状态转移结算主角收益或人物关系变化"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen3.8-max",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 70.174,
+      "usage": {}
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-20T15:29:19+08:00",
+      "prompt_sha256": "fc5ec5ca3e61c07c7a4b220b087b810ec0b79113d24c0cad6b5bda3ecd3de564",
+      "raw_response_sha256": "14fae747bd5f08ecfefa53c09da8845855b9dfc97feb841f5ac99acf7e558620",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG012_events_EC056_EC056_attempt_03_62ffdc5b5f_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 248 column 8 (char 10801)"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen3.8-max",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 78.721,
+      "usage": {}
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-20T15:30:35+08:00",
+      "prompt_sha256": "80372a7f8154d4e5462590f708f880deefa42bd42c2c1387f43b2dfe0d60e589",
+      "raw_response_sha256": "f636dbfbb66aa1171e0f698ab8731db0286d5fccce4498f1ad2d44ada0e8de8f",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG012_events_EC056_EC056_attempt_04_62ffdc5b5f_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 211 column 8 (char 10361)"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen3.8-max",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 76.709,
+      "usage": {}
+    }
+  ]
+}

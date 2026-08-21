@@ -1,0 +1,45 @@
+{
+  "cluster_id": "EC001",
+  "chapter_id": 2,
+  "attempt": 2,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "d03bc719f6c6d7cf8793a416a2bb9e7885184e3c06f60066229ef9c3a863de0b",
+  "raw_response_sha256": "87762a44e6f65668f7fc648254f9d5d01adca15e0d4a73f59b80d24ef3f30e2d",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 30.854,
+    "usage": {
+      "input_tokens": 5320,
+      "output_tokens": 1375,
+      "total_tokens": 6695,
+      "prompt_tokens_details": {
+        "cached_tokens": 5248
+      }
+    }
+  },
+  "chapter_audit": {
+    "han_chars": 1334,
+    "total_chars": 1635,
+    "target_han_range": [
+      1300,
+      1800
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 4,
+    "failures": [],
+    "initial_failures": [
+      "重生章开头未通过十一岁身体或年轻家人确认年龄变化",
+      "重生章开头未明确让读者确认回到过去"
+    ]
+  },
+  "failures": [],
+  "initial_failures": [
+    "重生章开头未通过十一岁身体或年轻家人确认年龄变化",
+    "重生章开头未明确让读者确认回到过去"
+  ],
+  "accepted": true,
+  "revalidated_by_current_validator": true,
+  "revalidation_note": "正式正文与该Qwen原始响应逐字一致；当前规则确认开头已通过1969年挂历、孩童十指/细瘦小臂、2009年手术针脚消失完成重生识别，未人工修改正文。"
+}

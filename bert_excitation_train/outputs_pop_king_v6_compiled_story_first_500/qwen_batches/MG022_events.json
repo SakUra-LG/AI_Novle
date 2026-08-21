@@ -1,0 +1,1098 @@
+{
+  "macro_group_id": "MG022",
+  "event_clusters": [
+    {
+      "cluster_id": "EC106",
+      "chapter_span": [
+        211,
+        212
+      ],
+      "source_event_direction": "前世具体受害：奥瑞恩利用VIP通道将粉丝分层，导致麦珂在暴雨中因人群拥堵无法及时获得医疗支援。；本事件独有的前世信息差：1987年11月暴雨夜穹顶投影失焦的具体时刻与声压阈值数据。；今生提前动作：麦珂指令瑟琳娜将七套备用光路预案从测试转为实战待机并附校准证书。；第211章可见小赢：入场券背面印出真实承诺卡，观众自发成为现场安全协作者网络。；第212章新交锋：暴雨突至时穹顶投影正常切换，麦珂手持健康备忘录确立医疗决策权。；阻力方永久现实损失：奥瑞恩失去对后台人员清洗的借口，其分级控制叙事当场破产。；主角现实收益：获得随机座次系统独家使用权及观众作为安全协作者的契约关系。；不可逆结算键：盲选座次程序启动且无一人被强制隔离；接回死亡控制主线：打破前世因延误导致的医疗响应死亡链条",
+      "source_event_direction_sha256": "3ec29296f298d4a9eb2d9b6340e5d3688a8268d4838daa036fdc236ff3f3ad3a",
+      "source_macro_sha256": "0b5abdad4c1d3fb0472c3c5d6c48da8cf63b5ede6148b5f202c4a2b563afa823",
+      "name": "回声谷盲选风暴与备忘录签署",
+      "timeline_years": "1987—1988",
+      "main_opponent": "奥瑞恩集团法务部及安保总监",
+      "opposition_type": "villain",
+      "event_type": "performance",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜",
+        "苏菲亚",
+        "莉薇娅",
+        "玛莎",
+        "奥瑞恩安保总监"
+      ],
+      "fictional_obstacle": "奥瑞恩试图以‘VIP专属通道’和‘强制健康隔离’为名，将粉丝分层并切断艺人联系；同时暴雨导致穹顶投影失焦风险。",
+      "prev_life_tragedy": "1987年暴雨夜，因VIP通道拥堵，麦珂无法及时获得医疗支援，导致病情恶化险些丧命。",
+      "info_gap_from_prev_life": "1987年11月暴雨夜穹顶投影失焦的具体时刻（19:42分）与声压阈值数据；特定色带型号在二手市场的流通路径。",
+      "why_previous_life_failed": "依赖传统排队入场，观众被人为分层，且后台设备缺乏独立校准，遭遇突发天气时系统瘫痪。",
+      "preemptive_avoidance": "麦珂指令瑟琳娜将七套备用光路预案转为实战待机并附机械校准证书；苏菲亚定位二手市场色带源头；观众入场券背面印真实承诺卡。",
+      "bait_and_evidence": "奥瑞恩坚持要求按消费能力划分座次，故意在暴雨前一刻启动‘隔离程序’，结果被随机座次系统和手持备忘录的观众网络瓦解；苏菲亚扣押同款打字机色带作为铁证。",
+      "comic_villain_behavior": "奥瑞恩安保总监在暴雨中强行推搡VIP客户以维持秩序，却因观众自发形成人墙保护而狼狈不堪，其‘隔离令’被现场观众集体无视。",
+      "villain_loss": "奥瑞恩失去对后台人员清洗的借口，其分级控制叙事当场破产，无法再单方面解释艺人健康状况。",
+      "protagonist_gain": "获得随机座次系统独家使用权及观众作为安全协作者的契约关系；掌握奥瑞恩伪造文件的物理源头证据。",
+      "relationship_change": "麦珂与团队形成利益共同体，观众与艺人建立基于安全的新型契约关系；瑟琳娜公开化成为技术合伙人。",
+      "continuity_writes": [
+        "1987年11月星港市回声谷首演，暴雨如期而至，穹顶投影未出现任何偏差。",
+        "苏菲亚在后台成功截获奥瑞恩法务部销毁证据前的最后窗口期，锁定色带源头。",
+        "玛莎手签备忘录具有法律效力，直接对抗外部医疗干预。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_AUDIENCE_COLLAB_01",
+          "state_key": "audience_collaborator_status",
+          "from": "passive_spectator",
+          "to": "active_safety_collaborator",
+          "irreversible": true,
+          "evidence": "ART_211_PROMISE_CARD",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "EQUIP_OPTICAL_01",
+          "state_key": "optical_lens_calibration_status",
+          "from": "unverified_test_mode",
+          "to": "certified_practice_ready",
+          "irreversible": true,
+          "evidence": "ART_211_CALIBRATION_CERT",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "health",
+          "entity_id": "RIGHT_MEDICAL_CONTROL_01",
+          "state_key": "medical_decision_authority",
+          "from": "corporate_controlled",
+          "to": "artist_family_controlled",
+          "irreversible": true,
+          "evidence": "ART_212_HEALTH_MEMO",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1987_STAR_PORT_RAIN"
+      ],
+      "cluster_outcome": "盲选座次程序启动且无一人被强制隔离，麦珂确立医疗决策权，奥瑞恩分级控制彻底破产。",
+      "next_event_hook": "‘今日健康备忘录’手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款，迫使奥瑞恩转向更隐蔽的财务做空手段。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 211,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "场馆入口",
+          "chapter_goal": "通过入场券背面的真实承诺卡激活观众安各地媒体络，并验证备用光路预案。",
+          "chapter_title": "承诺卡与人墙",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "苏菲亚",
+            "观众代表",
+            "奥瑞恩安保总监"
+          ],
+          "opening_conflict": "奥瑞恩安保总监试图按VIP等级强制分流人群，制造混乱以实施隔离。",
+          "info_gap_use": "麦珂提前知晓暴雨将至，指令瑟琳娜将光路切换至实战模式；苏菲亚已锁定色带源头。",
+          "opponent_reaction": "奥瑞恩安保总监嘲笑‘盲选’会导致拥挤，强行命令保安封锁通道。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "场馆入口",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "广播响起，观众展示入场券背面承诺卡"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_211_PROMISE_CARD",
+              "timeline_scope": "current",
+              "display_name": "观众安全协作者承诺卡",
+              "kind": "document"
+            },
+            {
+              "artifact_id": "ART_211_CALIBRATION_CERT",
+              "timeline_scope": "current",
+              "display_name": "光学透镜机械校准证书",
+              "kind": "critical_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂在入口处当众宣读‘随机座次’规则，宣布废除VIP通道。",
+            "观众发现票根背面印有手写承诺卡，自愿组成人墙协助维持秩序。",
+            "瑟琳娜向奥瑞恩展示光学透镜校准证书，驳回其‘设备故障’指控。",
+            "苏菲亚在后台秘密收集到奥瑞恩法务部销毁文件的监控录像线索。"
+          ],
+          "visible_payoff": "观众自发形成安各地媒体络，奥瑞恩强行隔离计划失败，光路系统在暴雨前保持正常。",
+          "ending": "雨势渐大，但观众席秩序井然，奥瑞恩安保总监面色铁青。",
+          "must_include": [
+            "承诺卡内容",
+            "光学透镜证书展示",
+            "观众人墙形成"
+          ],
+          "must_not_include": [
+            "现代通讯工具",
+            "未来科技词汇"
+          ],
+          "detailed_synopsis": "1987年11月15日下午，星港市回声谷体育馆外，奥瑞恩安保总监正试图按消费能力强行划分VIP与普通观众通道，引发骚乱。麦珂突然走上台，宣布启用‘全盲随机座次’系统，并指出所有入场券背面均印有‘安全协作者承诺卡’。观众纷纷举起票根，上面写着‘若遇紧急情况，我愿协助艺人疏散’。奥瑞恩安保总监怒斥这是‘非法集会’，试图驱散人群，却被观众组成的坚固人墙挡在身后。与此同时，瑟琳娜在后台向赶来的奥瑞恩法务代表出示了光学透镜的机械校准证书，证明设备已处于最佳状态，随时可应对暴雨干扰。苏菲亚则在后台角落，利用前世记忆中的色带型号，从二手办公设备商处购得关键物证，并悄悄将其藏入档案袋。暴雨如期而至，但穹顶投影毫无偏差，观众席内秩序井然，奥瑞恩的分级控制策略彻底失效。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_208_MICROFILM_BACKUP",
+              "timeline_scope": "previous_life",
+              "purpose": "对比前世暴雨延误记录，确认今生预防有效性"
+            }
+          ]
+        },
+        {
+          "chapter_id": 212,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "舞台中央",
+          "chapter_goal": "在暴雨高潮中确立医疗决策权，完成敌情图谱前半部分闭环。",
+          "chapter_title": "备忘录与色带铁证",
+          "participants": [
+            "麦珂",
+            "莉薇娅",
+            "玛莎",
+            "苏菲亚",
+            "奥瑞恩法务代表"
+          ],
+          "opening_conflict": "奥瑞恩法务代表试图以‘设备异常’为由叫停演出，并启动紧急医疗隔离程序。",
+          "info_gap_use": "麦珂掌握暴雨导致投影失焦的具体时刻，提前准备健康备忘录；苏菲亚掌握色带源头证据。",
+          "opponent_reaction": "奥瑞恩法务代表试图强行接管医疗控制权，声称艺人健康状况危及公共安全。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "舞台中央",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "暴雨达到峰值，灯光切换至备用光路"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_212_HEALTH_MEMO",
+              "timeline_scope": "current",
+              "display_name": "今日健康备忘录（手签版）",
+              "kind": "legal_document"
+            },
+            {
+              "artifact_id": "ART_212_TYPER_CARTRIDGE",
+              "timeline_scope": "current",
+              "display_name": "伪造文件打字机色带样本",
+              "kind": "critical_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_211_PROMISE_CARD",
+              "timeline_scope": "current",
+              "purpose": "作为观众支持麦珂医疗决策权的佐证"
+            }
+          ],
+          "action_sequence": [
+            "暴雨倾盆，奥瑞恩法务代表冲上台，指责设备故障并要求立即停止演出。",
+            "麦珂手持手签版《今日健康备忘录》，由莉薇娅、玛莎联合签署，宣布拥有医疗决策权。",
+            "苏菲亚在后台当众展示色带样本，揭露奥瑞恩伪造心理评估报告的源头。",
+            "观众席爆发欢呼，奥瑞恩法务代表被现场舆论和法律文件逼退。"
+          ],
+          "visible_payoff": "麦珂确立医疗决策权，奥瑞恩伪造文件证据链闭环，演出零事故完成。",
+          "ending": "演出圆满结束，奥瑞恩集团失去对艺人的单方面解释权，苏菲亚绘制出敌情图谱前半部分。",
+          "must_include": [
+            "手签备忘录法律效力",
+            "色带样本展示",
+            "观众欢呼"
+          ],
+          "must_not_include": [
+            "现代法律术语",
+            "未来医疗技术"
+          ],
+          "detailed_synopsis": "夜幕降临，暴雨如注，回声谷体育馆内灯光骤然切换至瑟琳娜团队预设的备用光路，画面清晰如初。奥瑞恩法务代表见状，急匆匆冲上舞台，声称‘设备存在安全隐患’，要求立即终止演出并强制隔离麦珂。麦珂从容站起，高举一份由莉薇娅医生、玛莎女士亲笔签署的《今日健康备忘录》，声明在突发状况下，艺人及其家族拥有最终医疗决策权，任何外部干预需经三方签字方可生效。奥瑞恩代表惊愕之余，试图抢夺文件，却被苏菲亚拦住。苏菲亚当场展示了一枚刚从二手市场回收的打字机色带，其上残留的油墨痕迹与奥瑞恩近期发布的虚假心理评估报告完全一致，直指其伪造文件源头。台下观众爆发出雷鸣般的掌声，纷纷举着承诺卡为麦珂助威。奥瑞恩法务代表在众目睽睽之下理屈词穷，被迫承认无法继续阻挠。演出在热烈氛围中圆满收官，苏菲亚将色带样本正式归档，并在手绘卷轴上标注了第一批造假人员名单。麦珂站在聚光灯下，眼神坚定，他知道，这场风暴才刚刚开始，但他已掌握了主动权。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC107",
+      "chapter_span": [
+        213,
+        214
+      ],
+      "source_event_direction": "前世具体受害：前世苏菲亚未能锁定伪造心理评估报告的源头，导致关键证据链断裂。；本事件独有的前世信息差：1988年奥瑞恩法务部销毁证据前的48小时窗口期及特定色带型号。；今生提前动作：苏菲亚依据重生记忆精准定位二手办公设备市场中的同款打字机色带。；第213章可见小赢：苏菲亚扣押了关键物证并绘制出敌情图谱的前半部分手绘卷轴。；第214章新交锋：奥瑞恩法务部紧急销毁令下达时，苏菲亚当众展示色带磨损特征铁证。；阻力方永久现实损失：奥瑞恩无法再否认伪造文件的存在，其法律欺诈行为被公开曝光。；主角现实收益：掌握奥瑞恩伪造文件的物理源头证据并完成前五十人敌情图谱闭环。；不可逆结算键：色带型号与打字机源头物理锁定；接回死亡控制主线：切断前世因证据缺失导致的法律败诉链条",
+      "source_event_direction_sha256": "9560a3696664dd33990d72163227081eda883e1f327c090034379452180cbd5e",
+      "source_macro_sha256": "0b5abdad4c1d3fb0472c3c5d6c48da8cf63b5ede6148b5f202c4a2b563afa823",
+      "name": "回声谷·色带溯源与敌情闭环",
+      "timeline_years": "1987—1988",
+      "main_opponent": "奥瑞恩集团法务部总监 维克多·克伦威尔",
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "苏菲亚",
+        "麦珂",
+        "维克多·克伦威尔",
+        "玛莎",
+        "瑟琳娜"
+      ],
+      "fictional_obstacle": "奥瑞恩法务部持有伪造的‘艺人心理评估异常’报告，并计划利用紧急销毁令在48小时内销毁所有原始打印日志和色带，导致苏菲亚前世无法锁定源头。",
+      "prev_life_tragedy": "前世苏菲亚因未能找到物理打印源头，仅凭口头指控被奥瑞恩以‘诽谤’反诉，关键证据链断裂，导致团队在后续财务审计中惨败。",
+      "info_gap_from_prev_life": "重生者知晓1988年销毁窗口期仅剩48小时，且清楚奥瑞恩使用的特定型号打字机（Royal Quiet De Luxe）在二手市场流通的色带批次号特征。",
+      "why_previous_life_failed": "前世依赖常规调查手段，未能在销毁令下达前锁定物理载体，且误判了奥瑞恩内部清洗的速度。",
+      "preemptive_avoidance": "苏菲亚依据记忆，提前潜入星港市旧货市场的特定店铺，截获了即将被转卖的、带有特定磨损特征的原装色带，并绘制出‘敌情图谱’前半部分。",
+      "bait_and_evidence": "故意泄露‘已掌握部分线索’的假消息，诱使奥瑞恩加速执行销毁令；同时展示截获的色带作为诱饵，实则将真正的核心证据（带指纹的色带芯）藏于观众席安全协作者的承诺卡夹层中。",
+      "comic_villain_behavior": "克伦威尔在公开场合为了掩盖罪行，试图强行没收苏菲亚手中的普通色带样本，却因过度紧张而打翻墨水瓶，弄脏了自己昂贵的西装，并在慌乱中承认了‘必须立刻销毁所有旧物’的意图，反而坐实了销毁证据的动机。",
+      "villain_loss": "奥瑞恩集团无法再否认伪造文件的存在，其法律欺诈行为被公开曝光，维克多·克伦威尔因伪造罪和销毁证据罪面临终身监禁风险，集团声誉彻底崩塌。",
+      "protagonist_gain": "掌握奥瑞恩伪造文件的物理源头证据，完成前五十人敌情图谱闭环，获得法律层面的绝对主动权。",
+      "relationship_change": "苏菲亚从幕后策划者转变为公开的证据链构建者，麦珂团队与观众的安全契约进一步固化，形成对抗资本暴力的坚固同盟。",
+      "continuity_writes": [
+        "承接EC106的盲选座次成果，将观众席转化为临时法庭证人席。",
+        "为EC108的急救启动令提供法理支撑，证明奥瑞恩无医疗决策权。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_EVIDENCE_CHAIN_01",
+          "state_key": "forgery_source_verified",
+          "from": "unverified_allegation",
+          "to": "physically_locked_evidence",
+          "irreversible": true,
+          "evidence": "ART_213_TYPERIBBON_PROOF",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_INTANGIBLE_01",
+          "state_key": "enemy_intel_map_status",
+          "from": "fragmented_suspicion",
+          "to": "closed_loop_fifty_names",
+          "irreversible": true,
+          "evidence": "ART_214_SCROLL_MAP",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "LEGAL_CORP_OREON_01",
+          "state_key": "fraud_exposure_status",
+          "from": "deniable_corruption",
+          "to": "publicly_exposed_fraud",
+          "irreversible": true,
+          "evidence": "ART_214_PUBLIC_DEMONSTRATION",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1987_STARGATE_MARKET",
+        "HIST_1988_ROYAL_TYPERIBBON_BATCH"
+      ],
+      "cluster_outcome": "苏菲亚成功扣押关键物证（特定色带），当众展示磨损特征铁证，迫使奥瑞恩无法否认伪造事实，敌情图谱前五十人闭环完成，法律欺诈链条被永久切断。",
+      "next_event_hook": "‘今日健康备忘录’手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款，迫使奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 213,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "星港市‘老李旧货行’阴暗仓库",
+          "chapter_goal": "截获关键物证，绘制敌情图谱前半部分，诱敌深入。",
+          "chapter_title": "第213章：旧货店的幽灵色带",
+          "participants": [
+            "苏菲亚",
+            "麦珂",
+            "玛莎",
+            "瑟琳娜"
+          ],
+          "opening_conflict": "奥瑞恩法务部发出紧急销毁令的前兆，苏菲亚必须在48小时内找到那台特定的打字机和色带。",
+          "info_gap_use": "苏菲亚利用重生记忆，精准定位到一家即将倒闭的二手办公设备店，该店是奥瑞恩员工私下处理废旧物资的渠道。",
+          "opponent_reaction": "克伦威尔察觉风声，命令手下加快清理速度，但未料到苏菲亚已提前行动。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "星港市‘老李旧货行’阴暗仓库",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "苏菲亚推门而入，空气中弥漫着陈旧油墨味。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_213_TYPERIBBON_PROOF",
+              "timeline_scope": "current",
+              "display_name": "截获的皇家牌打字机专用色带（编号#8892）",
+              "kind": "critical_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "苏菲亚根据前世记忆，在旧货行堆满杂物的角落发现了一箱被遗忘的废纸箱。",
+            "她迅速从中翻出一卷未被完全污染的皇家牌色带，仔细检查其边缘的机械压痕，确认与前世伪造报告上的墨迹特征完全吻合。",
+            "玛莎协助将色带装入特制的防光密封袋，并贴上‘已封存’标签。",
+            "苏菲亚回到后台，在巨大的手绘卷轴上，用红笔圈出了前五十名参与伪造的核心人员，并在对应位置标注了‘色带来源’。",
+            "麦珂通过手势示意瑟琳娜准备应对可能的突发状况，将观众席的‘安全协作者’名单重新核对了一遍。"
+          ],
+          "visible_payoff": "苏菲亚成功扣押了关键物证，敌情图谱前半部分完成，奥瑞恩的销毁计划暂时受阻。",
+          "ending": "苏菲亚带着密封的色带离开旧货行，身后是旧货行老板惊恐的眼神——他刚刚收到奥瑞恩的威胁电话，但为时已晚。",
+          "must_include": [
+            "色带编号#8892的具体描述",
+            "玛莎协助封存的细节",
+            "手绘卷轴的视觉呈现"
+          ],
+          "must_not_include": [
+            "现代电子设备的使用",
+            "对未来的过度剧透"
+          ],
+          "detailed_synopsis": "1987年11月15日上午，星港市阴雨绵绵。苏菲亚根据前世记忆，径直闯入位于老城区的‘老李旧货行’。这里堆满了被奥瑞恩员工丢弃的废旧办公用品。在昏暗的仓库深处，她凭借对特定色带型号的敏锐嗅觉，在一堆废纸中找到了目标——一卷皇家牌打字机专用色带（编号#8892）。她仔细检查色带边缘的机械压痕，确认这与前世那份致命伪造报告上的墨迹特征分毫不差。玛莎迅速赶到，协助她将色带装入特制的防光密封袋，并贴上‘已封存’标签，防止任何人为篡改。随后，苏菲亚返回后台化妆间，在巨大的手绘卷轴上，用红笔圈出了前五十名参与伪造的核心人员，并在对应位置标注了‘色带来源’，完成了敌情图谱的关键一环。与此同时，麦珂通过手势示意瑟琳娜做好应对突发状况的准备，将观众席的‘安全协作者’名单再次核对，确保现场秩序。此时，奥瑞恩法务部的销毁令尚未正式下达，但气氛已剑拔弩张。"
+        },
+        {
+          "chapter_id": 214,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "后台公共大厅",
+          "chapter_goal": "当众展示铁证，粉碎奥瑞恩的销毁企图，完成法律清算。",
+          "chapter_title": "第214章：墨迹里的审判",
+          "participants": [
+            "苏菲亚",
+            "麦珂",
+            "维克多·克伦威尔",
+            "莉薇娅",
+            "玛莎",
+            "观众代表"
+          ],
+          "opening_conflict": "奥瑞恩法务部突然发动攻势，以‘涉嫌非法持有商业机密’为由，试图强行没收并销毁苏菲亚手中的色带，同时宣布演出暂停。",
+          "info_gap_use": "苏菲亚早已预料到对方的反应，故意在公众面前展示色带的磨损特征，利用时间差完成证据固化。",
+          "opponent_reaction": "克伦威尔在众目睽睽之下，因急于销毁证据而失态，甚至打翻了墨水瓶，暴露了其心虚和毁灭证据的意图。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台公共大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "克伦威尔带着两名保镖气势汹汹地闯入，身后跟着全副武装的法务人员。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_214_PUBLIC_DEMONSTRATION",
+              "timeline_scope": "current",
+              "display_name": "现场展示的色带磨损特征对比图",
+              "kind": "legal_proof"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_213_TYPERIBBON_PROOF",
+              "timeline_scope": "current",
+              "purpose": "作为核心物证进行比对展示"
+            }
+          ],
+          "action_sequence": [
+            "克伦威尔冲入后台，大声宣读奥瑞恩的紧急销毁令，指责苏菲亚非法持有公司机密，要求立即交出所有相关物品。",
+            "苏菲亚不慌不忙，从密封袋中取出色带，将其展开在灯光下，向在场的所有观众和媒体记者展示其独特的磨损痕迹。",
+            "她指出，这种特定的磨损模式只有在特定型号的打字机上经过数千次击打才会形成，且与伪造报告上的墨迹完全一致。",
+            "克伦威尔见状大惊失色，试图上前抢夺色带，却在慌乱中撞翻了旁边的墨水瓶，黑色的墨水溅了他一身，场面一度十分滑稽。",
+            "莉薇娅随即介入，依据‘三方签字急救启动令’的精神，宣布奥瑞恩无权单方面叫停演出或销毁证据，并邀请在场的观众代表作为见证人。",
+            "苏菲亚将色带交给公证处人员，完成了最终的证据固化，奥瑞恩的谎言在众目睽睽下彻底破产。"
+          ],
+          "visible_payoff": "奥瑞恩无法再否认伪造文件的存在，其法律欺诈行为被公开曝光，敌情图谱前五十人闭环完成。",
+          "ending": "随着公证人员的盖章确认，奥瑞恩的防线彻底崩溃。克伦威尔狼狈不堪地逃离现场，苏菲亚站在舞台中央，手中紧握着那份沉甸甸的色带，仿佛握住了正义的权杖。",
+          "must_include": [
+            "克伦威尔打翻墨水瓶的滑稽细节",
+            "色带磨损特征的详细比对",
+            "莉薇娅的介入与公证流程"
+          ],
+          "must_not_include": [
+            "使用现代科技手段取证",
+            "对奥瑞恩集团的过度美化"
+          ],
+          "detailed_synopsis": "奥瑞恩法务部突然发动攻势，以‘涉嫌非法持有商业机密’为由，试图强行没收并销毁苏菲亚手中的色带，同时宣布演出暂停。克伦威尔冲入后台，大声宣读奥瑞恩的紧急销毁令，指责苏菲亚非法持有公司机密，要求立即交出所有。苏菲亚不慌不忙，从密封袋中取出色带，将其展开在灯光下，向在场的所有观众和媒体记者展示其独特。她指出，这种特定的磨损模式只有在特定型号的打字机上经过数千次击打才会形成，且与伪造报告上的。克伦威尔见状大惊失色，试图上前抢夺色带，却在慌乱中撞翻了旁边的墨水瓶，黑色的墨水溅了他一身。奥瑞恩无法再否认伪造文件的存在，其法律欺诈行为被公开曝光，敌情图谱前五十人闭环完成。随着公证人员的盖章确认，奥瑞恩的防线彻底崩溃。克伦威尔狼狈不堪地逃离现场，苏菲亚站在舞台中央，手中紧握着那份沉甸甸的色带。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC108",
+      "chapter_span": [
+        215,
+        216
+      ],
+      "source_event_direction": "前世具体受害：前世某次紧急医疗响应因奥瑞恩单方面叫停而延误，导致麦珂病情恶化。；本事件独有的前世信息差：前世1987年某次紧急医疗响应延误的真实通话录音细节。；今生提前动作：麦珂复述真实通话录音细节，迫使莉薇娅当场签署三方签字急救启动令。；第215章可见小赢：莉薇娅剥夺奥瑞恩单方面叫停演出的权利，确立三方签字流程。；第216章新交锋：演出中突发状况，莉薇娅依令启动急救，无视奥瑞恩法务部的阻挠。；阻力方永久现实损失：奥瑞恩彻底丧失对艺人医疗决策的单方面解释权与控制权。；主角现实收益：建立标准化急救响应机制，消除潜在健康隐患，现场零事故。；不可逆结算键：三方签字急救启动令生效执行；接回死亡控制主线：终结前世因医疗干预延误导致的死亡结局",
+      "source_event_direction_sha256": "e5459bdfc8dd246e0c1279ba83ea4313432c86f589fb5ee50bf1390a5214abfb",
+      "source_macro_sha256": "0b5abdad4c1d3fb0472c3c5d6c48da8cf63b5ede6148b5f202c4a2b563afa823",
+      "name": "回声谷急救权夺回战",
+      "timeline_years": "1987—1988",
+      "main_opponent": "奥瑞恩集团法务部及首席医疗顾问",
+      "opposition_type": "institutional",
+      "event_type": "health_safety",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅",
+        "苏菲亚",
+        "玛莎",
+        "奥瑞恩法务总监"
+      ],
+      "fictional_obstacle": "奥瑞恩法务部以‘演出安全风险评估未达标’为由，试图单方面叫停麦珂的现场演出，并切断后台医疗通道，实施强制隔离。",
+      "prev_life_tragedy": "前世1987年某次暴雨导致穹顶投影失焦，麦珂突发哮喘，因奥瑞恩单方面叫停演出延误了黄金抢救时间，导致病情恶化至不可逆。",
+      "info_gap_from_prev_life": "掌握前世紧急医疗响应延误时的真实通话录音细节（具体时间、对方语气、被拒理由）。",
+      "why_previous_life_failed": "缺乏法律制衡机制，医疗决策权完全被资本方垄断，艺人处于被动等待状态。",
+      "preemptive_avoidance": "麦珂在开场前复述前世通话录音细节，迫使莉薇娅当场签署‘三方签字急救启动令’，剥夺奥瑞恩单方面叫停权。",
+      "bait_and_evidence": "奥瑞恩法务总监为掩盖过往失误，试图销毁‘健康备忘录’草案，反被苏菲亚利用旧式打字机色带磨损特征锁定伪造源头，形成双重证据链。",
+      "comic_villain_behavior": "奥瑞恩法务总监在众目睽睽下试图强行抢夺麦珂风叫停演出，却因忘记携带‘三方签字令’原件而语无伦次，最终被观众席的随机座次系统反向锁定为违规者。",
+      "villain_loss": "奥瑞恩彻底丧失对艺人医疗决策的单方面解释权与控制权，其‘安全评估’叙事破产。",
+      "protagonist_gain": "建立标准化急救响应机制，消除潜在健康隐患，现场零事故；确立全球巡演新标准。",
+      "relationship_change": "麦珂与团队形成利益共同体，观众与艺人建立基于安全的新型契约关系；莉薇娅成为独立执行者。",
+      "continuity_writes": [
+        "承接EC107敌情图谱闭环，将焦点从文件造假转向现场生命权保障。",
+        "引入‘三方签字急救启动令’作为核心法理工具，替代单纯的口头承诺。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MEDICAL_DECISION_01",
+          "state_key": "unilateral_control_status",
+          "from": "corporate_monopoly",
+          "to": "tri_party_verification",
+          "irreversible": true,
+          "evidence": "ART_215_TRIPARTITE_SIGNATURE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_PERFORMANCE_RIGHTS_01",
+          "state_key": "interruption_authority",
+          "from": "corporate_discretion",
+          "to": "legal_prohibition",
+          "irreversible": true,
+          "evidence": "ART_216_AUDIENCE_CONTRACT",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "character",
+          "entity_id": "CHAR_89E90D63A7E8",
+          "state_key": "medical_authority_role",
+          "from": "subordinate_advisor",
+          "to": "independent_executor",
+          "irreversible": true,
+          "evidence": "ART_215_LIVIA_SIGNING",
+          "effect_type": "relationship_change",
+          "source_entity_label": "CHAR_LIVIA_01"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1987_ECHO_VALLEY_OPENING"
+      ],
+      "cluster_outcome": "麦珂凭借前世记忆复述通话细节，迫使莉薇娅签署三方签字令，成功剥夺奥瑞恩单方面叫停权；演出中突发状况时，莉薇娅依令启动急救，无视奥瑞恩阻挠，确保麦珂获救，现场零事故。奥瑞恩永久丧失医疗决策控制权。",
+      "next_event_hook": "‘今日健康备忘录’手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款，迫使奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 215,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "后台化妆间",
+          "chapter_goal": "利用前世记忆复述通话细节，迫使莉薇娅签署三方签字急救启动令，确立流程。",
+          "chapter_title": "沉默的录音笔与被迫的签字",
+          "participants": [
+            "麦珂",
+            "莉薇娅",
+            "奥瑞恩法务总监",
+            "玛莎",
+            "苏菲亚"
+          ],
+          "opening_conflict": "奥瑞恩法务总监手持‘安全评估未达标’报告，企图在开场前强行切断医疗通道，要求麦珂立即停止表演。",
+          "info_gap_use": "麦珂突然打断，精准复述前世此时段奥瑞恩电话会议中关于‘放弃抢救’的原始对话细节（包括语调、背景噪音），证明对方曾有过延误意图。",
+          "opponent_reaction": "法务总监脸色惨白，试图否认但无法解释为何知道录音细节，慌乱中打翻咖啡弄湿文件，暴露其急于销毁证据的丑态。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台化妆间",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂直视法务总监，声音平静如冰"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_215_TRIPARTITE_SIGNATURE",
+              "timeline_scope": "current",
+              "display_name": "三方签字急救启动令（手写版）",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_209_OPEN_SOURCE_DECREE",
+              "timeline_scope": "current",
+              "purpose": "作为签署备忘录的法律依据"
+            }
+          ],
+          "action_sequence": [
+            "麦珂复述前世通话细节，揭露奥瑞恩拖延意图。",
+            "莉薇娅震惊于麦珂的预知能力，意识到必须立刻行动。",
+            "玛莎拿出空白备忘录纸，莉薇娅在众目睽睽下签署三方签字令。",
+            "奥瑞恩法务总监试图抢夺文件，被保安（由观众席志愿者组成）拦下。"
+          ],
+          "visible_payoff": "三方签字急救启动令正式生效，奥瑞恩法务总监无权再单方面叫停演出。",
+          "ending": "麦珂手持签署完毕的备忘录，走向舞台，身后是奥瑞恩灰败的脸和莉薇娅坚定的眼神。",
+          "must_include": [
+            "前世通话细节复述",
+            "莉薇娅当场签字",
+            "奥瑞恩狼狈反应"
+          ],
+          "must_not_include": [
+            "任何现代通讯设备使用",
+            "未来事件剧透"
+          ],
+          "detailed_synopsis": "1987年11月14日晚，星港市回声谷后台。奥瑞恩法务总监拿着伪造的‘安全评估报告’，气势汹汹地命令麦珂停止演出，声称设备存在隐患需立即隔离。麦珂没有争辩，而是突然开口，用一种近乎冷漠的语调复述了前世此时段奥瑞恩内部电话会议的录音细节：‘当时那位高管说，如果麦珂撑不住，就让她在台上晕倒，反正没人会记得是谁叫停了急救。’全场死寂。总监脸色瞬间煞白，试图辩解，却被麦珂步步紧逼，指出他当时就在场。莉薇娅看着麦珂笃定的眼神，意识到这是千载难逢的机会。她迅速从玛莎手中接过‘今日健康备忘录’，在众人的注视下，郑重签下名字，并邀请麦珂和玛莎共同签署。这份‘三方签字急救启动令’一经生效，便具有了法律效力，明确剥夺了奥瑞恩单方面叫停演出的权利。总监气急败坏地想要抢夺文件，却被早已埋伏好的观众志愿者（由随机座次系统选出的安全协作者）拦住。麦珂手持文件，微笑着走向舞台，宣告了奥瑞恩医疗霸权的终结。"
+        },
+        {
+          "chapter_id": 216,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "主舞台",
+          "chapter_goal": "演出中突发状况，莉薇娅依令启动急救，无视奥瑞恩阻挠，确保麦珂获救。",
+          "chapter_title": "暴雨中的光路与生命的接力",
+          "participants": [
+            "麦珂",
+            "莉薇娅",
+            "瑟琳娜",
+            "观众席志愿者",
+            "奥瑞恩法务总监"
+          ],
+          "opening_conflict": "演出进行到高潮，暴雨突至，穹顶投影出现异常，麦珂突发严重哮喘，奥瑞恩法务总监再次试图以‘设备故障’为由叫停演出并封锁医疗通道。",
+          "info_gap_use": "麦珂提前指令瑟琳娜团队将备用光路切换预案转为实战待机，并利用前世知识预判了透镜误判阈值，出示校准证书驳回技术指控。",
+          "opponent_reaction": "奥瑞恩法务总监在众目睽睽下试图强行冲入舞台，被莉薇娅出示的‘三方签字令’和观众席志愿者的阻拦网挡回，最终狼狈退场。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光骤暗，雨声大作"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_214_SCROLL_MAP",
+              "timeline_scope": "current",
+              "display_name": "ART_214_SCROLL_MAP",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_215_TRIPARTITE_SIGNATURE",
+              "timeline_scope": "current",
+              "purpose": "作为启动急救的法律凭证"
+            },
+            {
+              "artifact_id": "ART_214_SCROLL_MAP",
+              "timeline_scope": "current",
+              "purpose": "展示给观众，确认安全协作者网络的有效性"
+            }
+          ],
+          "action_sequence": [
+            "暴雨导致穹顶投影失焦，麦珂哮喘发作。",
+            "奥瑞恩总监试图叫停，被莉薇娅出示三方签字令驳回。",
+            "瑟琳娜团队迅速切换备用光路，维持演出氛围。",
+            "莉薇娅带领医疗组进场，无视总监阻挠，对麦珂实施急救。",
+            "观众席志愿者协助维持秩序，形成人墙保护医疗通道。"
+          ],
+          "visible_payoff": "麦珂在急救后恢复平稳，演出继续，现场零事故；奥瑞恩彻底失去控制权。",
+          "ending": "演出结束，麦珂在观众的欢呼声中谢幕，手中紧握着那份三方签字令，莉薇娅站在她身旁，目光坚定。",
+          "must_include": [
+            "暴雨突发状况",
+            "三方签字令生效",
+            "观众志愿者协助",
+            "奥瑞恩失败"
+          ],
+          "must_not_include": [
+            "现代科技描述",
+            "未来财务做空细节"
+          ],
+          "detailed_synopsis": "演出进行到高潮，暴雨突至，穹顶投影出现异常，麦珂突发严重哮喘，奥瑞恩法务总监再次试图以‘设备故障’为由叫停演出并封锁医疗通道。暴雨导致穹顶投影失焦，麦珂哮喘发作。奥瑞恩总监试图叫停，被莉薇娅出示三方签字令驳回。瑟琳娜团队迅速切换备用光路，维持演出氛围。莉薇娅带领医疗组进场，无视总监阻挠，对麦珂实施急救。麦珂在急救后恢复平稳，演出继续，现场零事故；奥瑞恩彻底失去控制权。演出结束，麦珂在观众的欢呼声中谢幕，手中紧握着那份三方签字令，莉薇娅站在她身旁，目光坚定。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC109",
+      "chapter_span": [
+        217,
+        218
+      ],
+      "source_event_direction": "前世具体受害：前世声压可视化系统因光学透镜误判导致演出中断，引发混乱。；本事件独有的前世信息差：声压可视化系统光学透镜在特定湿度下的误判阈值数据。；今生提前动作：麦珂提前将透镜单独封装并附机械校准证书，作为对抗设备故障借口的铁证。；第217章可见小赢：瑟琳娜团队在彩排中验证备用光路预案，确保演出零中断。；第218章新交锋：现场湿度异常触发误判预警，麦珂出示校准证书驳回奥瑞恩的技术指控。；阻力方永久现实损失：奥瑞恩无法再利用技术故障借口掩盖人为操控或推卸责任。；主角现实收益：瑟琳娜名字首次出现在官方安全协议上，成为公开的技术合伙人。；不可逆结算键：光学透镜校准证书成为法定免责凭证；接回死亡控制主线：防止前世因技术故障引发的连锁医疗事故",
+      "source_event_direction_sha256": "431eded1971c0d3c121fe406d3d847f52e2d01e69177cc0c4e6d2a8956d63d2c",
+      "source_macro_sha256": "0b5abdad4c1d3fb0472c3c5d6c48da8cf63b5ede6148b5f202c4a2b563afa823",
+      "name": "回声谷·光路盲审与湿度铁证",
+      "timeline_years": "1987—1988",
+      "main_opponent": "奥瑞恩集团技术总监雷蒙·克劳斯",
+      "opposition_type": "technical",
+      "event_type": "performance",
+      "solution_type": "performance_proof",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [
+        "FS03",
+        "FS04"
+      ],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜",
+        "雷蒙·克劳斯",
+        "莉薇娅"
+      ],
+      "fictional_obstacle": "1987年星港市‘回声谷’巡演现场湿度异常升高，触发声压可视化系统的光学透镜误判阈值，奥瑞恩试图以此为由切断演出并推卸责任，声称设备故障导致艺人健康风险。",
+      "prev_life_tragedy": "前世因未预见特定湿度下的透镜误判，导致穹顶投影失焦、观众恐慌踩踏，麦珂在混乱中因急救延误险些丧命。",
+      "info_gap_from_prev_life": "掌握1987年某场暴雨导致穹顶投影失焦的具体时刻及声压可视化系统在特定湿度下的误判阈值数据。",
+      "why_previous_life_failed": "前世团队过度依赖厂商提供的默认参数，未在极端天气下对光学透镜进行独立物理校准，且缺乏对抗‘设备故障’借口的法定免责凭证。",
+      "preemptive_avoidance": "麦珂提前指令瑟琳娜将七套备用光路机械切换预案从‘测试状态’转为‘实战待机’，并将关键光学透镜单独封装，附由第三方公证处出具的机械校准证书，作为对抗借口的铁证。",
+      "bait_and_evidence": "奥瑞恩故意在后台制造‘湿度超标’的假象，诱导麦珂团队使用未校准设备；瑟琳娜当场展示封存完好的透镜及附带日期的校准证书，证明系统运行正常，故障系人为干扰或奥瑞恩操作失误。",
+      "comic_villain_behavior": "雷蒙·克劳斯在众目睽睽下试图抢夺透镜盒谎称是‘受潮损坏’，结果发现透镜干燥如新且密封完好，他慌乱中打翻自己的记录本，露出伪造的‘湿度超标’报告，被莉薇娅当场喝止。",
+      "villain_loss": "奥瑞恩无法再利用技术故障借口掩盖人为操控或推卸责任，其技术权威彻底破产，被迫承认无法控制现场环境变量。",
+      "protagonist_gain": "瑟琳娜的名字首次出现在官方安全协议上，成为公开的技术合伙人，掌握七套备用光路的控制权；麦珂确立全球巡演新标准，获得法律层面的医疗决策权。",
+      "relationship_change": "麦珂与团队形成利益共同体，瑟琳娜摆脱幕后身份；观众与艺人建立基于安全的新型契约关系，不再受奥瑞恩单方面解释权的束缚。",
+      "continuity_writes": [
+        "承接EC108‘三方签字急救启动令’，本次事件进一步剥离奥瑞恩对演出中断的解释权，为后续财务做空手段埋下伏笔。",
+        "呼应FS04铺垫：七套备用光路预案验证成功，为1992年‘共呼吸时段’声学锚定效应埋下伏笔。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_TECHNICAL_CONTROL_01",
+          "state_key": "optical_lens_calibration_status",
+          "from": "vendor_default_unverified",
+          "to": "independent_certified_legal_evidence",
+          "irreversible": true,
+          "evidence": "ART_217_OPTICAL_CERTIFICATE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "character",
+          "entity_id": "CHAR_4E24DD1EEE76",
+          "state_key": "public_technical_partner_status",
+          "from": "behind_scenes_engineer",
+          "to": "official_safety_protocol_signatory",
+          "irreversible": true,
+          "evidence": "ART_218_SAFETY_PROTOCOL_ADDENDUM",
+          "effect_type": "relationship_change",
+          "source_entity_label": "CHAR_SERENA_01"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_PERFORMANCE_RIGHTS_01",
+          "state_key": "interruption_authority__extension_EC109",
+          "from": "none",
+          "to": "legal_prohibition",
+          "irreversible": true,
+          "evidence": "ART_218_AUDIENCE_CONTRACT",
+          "effect_type": "villain_loss",
+          "source_state_key": "interruption_authority"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1987_XINGANG_RAIN",
+        "HA_1988_HEALTH_MEMO_STANDARD"
+      ],
+      "cluster_outcome": "麦珂凭借前世预知，在湿度异常触发预警时出示光学透镜校准证书，驳回奥瑞恩的技术指控，确保演出零中断；瑟琳娜名字首次进入官方安全协议，成为公开技术合伙人；奥瑞恩永久丧失以设备故障为由叫停演出的权利。",
+      "next_event_hook": "‘今日健康备忘录’手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款，迫使奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 217,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "后台技术控制室",
+          "chapter_goal": "验证备用光路预案，完成光学透镜的物理封存与公证，确立技术防线。",
+          "chapter_title": "封箱的透镜与沉默的湿度计",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "雷蒙·克劳斯",
+            "公证员"
+          ],
+          "opening_conflict": "奥瑞恩技术部暗示当晚湿度可能超标，要求更换未经深度测试的备用透镜组，麦珂拒绝并坚持使用已封存的原版透镜。",
+          "info_gap_use": "麦珂利用重生记忆，精准指出1987年11月14日傍晚湿度将突破透镜误判阈值的临界点，提前四小时下达封存指令。",
+          "opponent_reaction": "雷蒙·克劳斯表面配合，暗中安排人员试图在封存前调换透镜，却被瑟琳娜的实时监控录像拍下。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台技术控制室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "窗外乌云压境，湿度计读数开始飙升"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_217_OPTICAL_CERTIFICATE",
+              "timeline_scope": "current",
+              "display_name": "光学透镜机械校准与封存公证书",
+              "kind": "critical_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂命令瑟琳娜取出七套备用光路机械切换预案，确认全部处于‘实战待机’状态而非‘测试状态’。",
+            "公证员在场见证下，将关键光学透镜装入特制防潮密封盒，贴上唯一编号封条。",
+            "瑟琳娜当众宣读密封盒内的透镜参数，并与第三方校准证书核对，确认无误。",
+            "雷蒙·克劳斯试图以‘临时调整’为由介入，被麦珂以‘违反安全协议’为由制止。",
+            "全员签署《技术安全承诺书》，明确若因擅自更换设备导致事故，奥瑞恩承担全责。"
+          ],
+          "visible_payoff": "光学透镜被封存完毕，所有技术参数经公证，奥瑞恩无法再质疑设备状态。",
+          "ending": "彩排结束，全场灯光正常切换，无一人察觉潜在的湿度危机，麦珂手持封条复印件，眼神坚定。",
+          "must_include": [
+            "公证员签字",
+            "密封盒编号",
+            "瑟琳娜宣读参数"
+          ],
+          "must_not_include": [
+            "正式演出",
+            "观众入场",
+            "突发故障"
+          ],
+          "detailed_synopsis": "1987年11月14日下午，星港回声谷剧场后台气氛凝重。麦珂依据前世记忆，深知傍晚暴雨将至，湿度将瞬间击穿声压可视化系统的透镜阈值。她命令瑟琳娜立即将七套备用光路预案从‘测试模式’切换至‘实战待机’，并亲自监督将核心光学透镜装入特制防潮密封盒。公证员到场，见证封条贴上唯一编号。雷蒙·克劳斯试图以‘优化性能’为由要求更换透镜，被麦珂当场驳斥，并调出瑟琳娜的监控录像，显示克劳斯曾试图接触密封盒。最终，透镜封存完成，所有技术参数经第三方校准，麦珂手持公证书，宣布彩排进入最后阶段。现场灯光在模拟高湿环境下依然稳定，七套光路无缝切换，零中断。"
+        },
+        {
+          "chapter_id": 218,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "主舞台",
+          "chapter_goal": "现场湿度异常触发误判预警，麦珂出示校准证书驳回指控，完成技术清算。",
+          "chapter_title": "湿度风暴中的铁证与签名",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "雷蒙·克劳斯",
+            "莉薇娅",
+            "观众代表"
+          ],
+          "opening_conflict": "演出进行中，穹顶投影突然模糊，奥瑞恩技术部紧急呼叫暂停，声称透镜受潮失效，要求切断电源。",
+          "info_gap_use": "麦珂早已预料此景，提前将校准证书置于舞台中央显眼位置，并指令瑟琳娜启动备用光路。",
+          "opponent_reaction": "雷蒙·克劳斯惊慌失措，试图抢夺透镜盒谎称‘受潮损坏’，却因密封完好而穿帮，打翻记录本暴露伪造报告。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "投影失焦，观众骚动，克劳斯冲上台"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_217_OPTICAL_CERTIFICATE",
+              "timeline_scope": "current",
+              "purpose": "作为法定免责凭证，驳斥奥瑞恩的技术指控"
+            }
+          ],
+          "action_sequence": [
+            "演出进行至第二幕，穹顶投影突然模糊，奥瑞恩技术部紧急呼叫暂停，声称透镜受潮失效。",
+            "麦珂未慌，径直走向舞台中央，高举ART_217_OPTICAL_CERTIFICATE，朗声宣读证书内容。",
+            "瑟琳娜同步启动备用光路，七套系统自动切换，画面瞬间清晰，证明原透镜工作正常。",
+            "雷蒙·克劳斯冲上台，试图抢夺透镜盒谎称‘受潮损坏’，却因密封完好而穿帮，打翻记录本暴露伪造报告。",
+            "莉薇娅依令启动‘三方签字急救启动令’，强制维持演出，奥瑞恩无权干预。"
+          ],
+          "visible_payoff": "光学透镜校准证书成为法定免责凭证，奥瑞恩技术指控被彻底驳回，瑟琳娜名字写入官方安全协议。",
+          "ending": "演出圆满结束，麦珂在掌声中接过瑟琳娜递来的新协议副本，上面赫然写着她的名字：瑟琳娜，技术合伙人。",
+          "must_include": [
+            "证书宣读",
+            "光路切换",
+            "克劳斯穿帮",
+            "莉薇娅下令"
+          ],
+          "must_not_include": [
+            "麦珂受伤",
+            "观众受伤",
+            "奥瑞恩收购"
+          ],
+          "detailed_synopsis": "1987年11月14日晚，星港回声谷剧场内，演出正酣。突然，穹顶投影模糊，奥瑞恩技术部惊呼‘透镜受潮失效’，要求立即断电。观众席一片哗然。麦珂却镇定自若，走向舞台中央，高举ART_217_OPTICAL_CERTIFICATE，朗声宣读证书内容，证明透镜在封存前已通过严格校准，且密封完好。与此同时，瑟琳娜指令七套备用光路自动切换，画面瞬间恢复清晰，证明原透镜工作正常。雷蒙·克劳斯惊慌失措，冲上台试图抢夺透镜盒，谎称‘受潮损坏’，却因密封完好而穿帮，慌乱中打翻记录本，露出伪造的‘湿度超标’报告。莉薇娅依令启动‘三方签字急救启动令’，强制维持演出，奥瑞恩无权干预。演出圆满结束，麦珂在掌声中接过瑟琳娜递来的新协议副本，上面赫然写着她的名字：瑟琳娜，技术合伙人。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC110",
+      "chapter_span": [
+        219,
+        220
+      ],
+      "source_event_direction": "前世具体受害：前世玛莎因缺乏法律授权无法有效阻止外部医疗干预，家族守护者身份被动。；本事件独有的前世信息差：前世玛莎在关键时刻被边缘化的具体场景与对话记录。；今生提前动作：麦珂将七名即将被清洗的后台人员任务承诺写入观众入场券背面。；第219章可见小赢：玛莎晋升为健康备忘录联合签署人，其手签具有法律效力。；第220章新交锋：面对外部医疗干预压力，玛莎持手签备忘录直接否决不当方案。；阻力方永久现实损失：外部势力无法再通过行政手段绕过家族内部的法律制衡机制。；主角现实收益：玛莎成为家族守护者，麦珂确立全球巡演新标准并获得法律层面支持。；不可逆结算键：玛莎手签备忘录具备对抗外部干预的法律效力；接回死亡控制主线：避免前世因家族保护失效导致的孤立无援",
+      "source_event_direction_sha256": "dce8de50ba2facd2823297edf3cbf8029277db57748d4f5ecbbec66389a9ca6c",
+      "source_macro_sha256": "0b5abdad4c1d3fb0472c3c5d6c48da8cf63b5ede6148b5f202c4a2b563afa823",
+      "name": "健康备忘录的签署与家族守护权的确立",
+      "timeline_years": "1987—1988",
+      "main_opponent": "星港市卫生局行政干预组（奥瑞恩集团代理人）",
+      "opposition_type": "ally_resistance",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "玛莎",
+        "莉薇娅",
+        "奥瑞恩法务代表陈默",
+        "星港卫生局长官"
+      ],
+      "fictional_obstacle": "外部医疗势力以‘艺人突发心律不齐需强制隔离’为由，试图绕过家属直接接管麦珂并切断其与团队联系，玛莎因无法律授权被拒之门外。",
+      "prev_life_tragedy": "前世玛莎在后台被保安强行推开，眼睁睁看着麦珂被带走进行非自愿检查，导致麦珂病情恶化，家族声誉扫地。",
+      "info_gap_from_prev_life": "麦珂记得前世玛莎被推搡时那句‘你只是保姆，没有签字权’的具体对话，以及当时现场唯一的见证人（一名奥瑞恩线人）的编号。",
+      "why_previous_life_failed": "缺乏具有法律效力的书面契约支撑，仅靠口头亲情无法对抗行政命令。",
+      "preemptive_avoidance": "麦珂提前将七名即将被清洗的后台人员任务承诺写入观众入场券背面，使其成为现场监督者，同时让瑟琳娜将《今日健康备忘录》打印为正式法律文书并公证。",
+      "bait_and_evidence": "陈默故意夸大麦珂病情，诱导麦珂在公众面前表现出虚弱，诱使卫生局长官当场下达‘强制送医令’；证据为玛莎手中盖有公证处印章、莉薇娅与麦珂三方手签的《今日健康备忘录》原件，以及七名后台监督者的联名证词。",
+      "comic_villain_behavior": "陈默在出示伪造的‘紧急医疗报告’时，因紧张将色带夹在文件里，被苏菲亚当场指出是奥瑞恩内部专用打印机型号，且墨迹未干，暴露其伪造行为滑稽可笑。",
+      "villain_loss": "外部势力无法再通过行政手段绕过家族内部的法律制衡机制，奥瑞恩被迫承认无权单方面处置艺人健康事务，陈默因伪造公文被吊销执业资格。",
+      "protagonist_gain": "玛莎成为家族守护者，麦珂确立全球巡演新标准并获得法律层面支持，获得‘随机座次’系统独家使用权及‘健康备忘录’的全球推广权。",
+      "relationship_change": "麦珂与团队形成利益共同体，奥瑞恩集团被剥离对艺人的单方面解释权，观众与艺人建立基于安全的新型契约关系。",
+      "continuity_writes": [
+        "承接EC109中光学透镜校准证书确立的免责基础，将技术安全延伸至医疗决策安全。",
+        "呼应EC107中敌情图谱绘制，将玛莎纳入核心造假人员监控名单之外，转为保护者。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MARSHA_01",
+          "state_key": "medical_decision_authority_status",
+          "from": "informal_family_member",
+          "to": "legally_binding_co_signatory",
+          "irreversible": true,
+          "evidence": "ART_219_HEALTH_MEMO_CERTIFIED",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "character",
+          "entity_id": "CHAR_0037905289BB",
+          "state_key": "guardian_role_status",
+          "from": "passive_observer",
+          "to": "active_family_protector",
+          "irreversible": true,
+          "evidence": "ART_220_PUBLIC_VETO_RECORD",
+          "effect_type": "relationship_change",
+          "source_entity_label": "CHAR_MARSHA_01"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_ORION_POWER_01",
+          "state_key": "unilateral_medical_intervention_right",
+          "from": "active_threat",
+          "to": "legally_prohibited",
+          "irreversible": true,
+          "evidence": "ART_220_ADMINISTRATIVE_FAILURE_LOG",
+          "effect_type": "villain_loss",
+          "source_state_key": "administrative_override_power"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1987_STARPORT_MEDICAL_REGULATION"
+      ],
+      "cluster_outcome": "玛莎凭借手签备忘录成功否决外部不当医疗方案，确立家族对艺人健康的绝对控制权，奥瑞恩失去行政干预借口，麦珂巡演标准升级。",
+      "next_event_hook": "‘今日健康备忘录’手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款，迫使奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 219,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "后台医疗隔离区",
+          "chapter_goal": "完成《今日健康备忘录》的公证签署，确立玛莎的联合签署人身份，构建法律防线。",
+          "chapter_title": "笔尖下的守护权",
+          "participants": [
+            "麦珂",
+            "玛莎",
+            "莉薇娅",
+            "瑟琳娜",
+            "公证员",
+            "七名后台监督者"
+          ],
+          "opening_conflict": "奥瑞恩代理人陈默企图以‘设备调试延误’为由拖延时间，等待卫生局强制介入，麦珂需在演出前一刻完成所有法律文件的签署。",
+          "info_gap_use": "麦珂利用前世记忆，提前安排公证员和七名关键后台人员在场，确保签署过程无可抵赖。",
+          "opponent_reaction": "陈默试图以‘流程违规’叫停签署，声称需要上级审批，实则拖延时间。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "后台医疗隔离区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂从怀中掏出已公证的备忘录，朗声宣读条款。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_219_HEALTH_MEMO_CERTIFIED",
+              "timeline_scope": "current",
+              "display_name": "经公证的《今日健康备忘录》原件",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_209_OPEN_SOURCE_DECREE",
+              "timeline_scope": "current",
+              "purpose": "作为备忘录签署的法律依据和开源宣言背景。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂当众展示七名后台监督者的入场券背面承诺卡，证明全员知情并同意执行备忘录。",
+            "莉薇娅作为医疗负责人率先在手签栏签字，确认急救启动权归属。",
+            "玛莎在公证员见证下，以家族监护人身份郑重签下名字，声明拥有最终否决权。",
+            "瑟琳娜将签署过程通过磁带录音并封存，作为后续法律纠纷的铁证。",
+            "陈默见势不妙，试图抢夺文件，被安保人员制止。"
+          ],
+          "visible_payoff": "玛莎的名字首次出现在具有法律效力的医疗文件中，不再是幕后模糊的亲属，而是明确的共同决策者。",
+          "ending": "签署完成，文件一式三份分存于麦珂、玛莎和公证处，陈默被迫暂时退却，但眼神阴鸷。",
+          "must_include": [
+            "玛莎手签动作特写",
+            "公证员盖章音效",
+            "七名后台人员的站姿宣誓"
+          ],
+          "must_not_include": [
+            "现代通讯工具",
+            "互联网概念",
+            "未来科技词汇"
+          ],
+          "detailed_synopsis": "1987年11月14日上午，星港演唱会后台气氛凝重。麦珂深知前世玛莎因无签字权而被挡在外面的惨剧，因此提前布局。他召集了瑟琳娜、莉薇娅及七名关键后台人员，在公证员到场后，迅速展开《今日健康备忘录》的签署仪式。陈默带着奥瑞恩的拖延战术赶来，试图以‘未经董事会批准’为由阻挠，却被麦珂亮出的入场券背面承诺卡打脸——那上面印着七名员工的真实姓名和手印，他们既是员工也是监督者。麦珂高声宣读备忘录条款：任何医疗干预必须经由麦珂、玛莎、莉薇娅三方签字方可生效。莉薇娅率先落笔，随后玛莎在公证员的注视下，颤抖却坚定地签下名字。随着公证员盖上鲜红的钢印，这份文件瞬间具备了法律效力。瑟琳娜在一旁用老式磁带机完整记录下这一时刻。陈默脸色铁青，意识到奥瑞恩失去了单方面行动的能力，但他并未放弃，只是暂时收敛了锋芒，准备在演出高潮时发动更猛烈的反击。"
+        },
+        {
+          "chapter_id": 220,
+          "timeline_start": "1991-10-22",
+          "timeline_end": "1991-10-22",
+          "scene": "主舞台医疗应急通道口",
+          "chapter_goal": "面对突发‘假性’医疗危机，玛莎持手签备忘录直接否决外部干预，彻底粉碎奥瑞恩的行政控制企图。",
+          "chapter_title": "否决权与家族的胜利",
+          "participants": [
+            "玛莎",
+            "麦珂",
+            "陈默",
+            "星港卫生局长官",
+            "现场观众",
+            "七名后台监督者"
+          ],
+          "opening_conflict": "演出中段，陈默联合卫生局长官突然闯入，声称麦珂出现严重心律失常，要求立即强制送医，无视玛莎手中的备忘录。",
+          "info_gap_use": "麦珂利用前世预知，提前将七名后台人员分散至各通道，形成物理封锁，并安排苏菲亚在侧方取证。",
+          "opponent_reaction": "陈默试图以‘生命至上’的道德绑架压制玛莎，甚至动手推搡，被七名监督者合力拦下。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主舞台医疗应急通道口",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "陈默高举伪造的医疗报告，大声疾呼‘救人第一’。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_219_HEALTH_MEMO_CERTIFIED",
+              "timeline_scope": "current",
+              "purpose": "作为玛莎行使否决权的唯一法律依据。"
+            }
+          ],
+          "action_sequence": [
+            "演出进行中，陈默突然大喊麦珂晕倒，引来卫生局长官带队冲入通道。",
+            "长官不顾麦珂实际状态良好，下令抬走麦珂，玛莎挺身而出挡在担架前。",
+            "玛莎高举《今日健康备忘录》，朗声引用条款，指出对方无权单方面执行。",
+            "陈默恼羞成怒，撕毁部分文件并指责玛莎阻碍救治，被苏菲亚当场指出其携带的色带型号与伪造文件一致。",
+            "七名后台监督者集体上前，展示入场券背面的承诺，证明他们是合法的安全协作者，有权阻止非法干预。",
+            "卫生局长官在铁证面前被迫撤回命令，陈默因伪造公文被当场控制。"
+          ],
+          "visible_payoff": "玛莎成功阻止了外部势力的强制干预，确立了家族守护者的不可动摇地位，全场观众起立致敬。",
+          "ending": "危机解除，麦珂继续完成演出，玛莎站在舞台一侧，目光坚定，奥瑞恩的行政控制链彻底断裂。",
+          "must_include": [
+            "玛莎高举备忘录的特写",
+            "陈默被色带证据揭穿的窘态",
+            "七名后台人员的集体阻拦"
+          ],
+          "must_not_include": [
+            "手机报警",
+            "网络直播",
+            "公众媒体舆论"
+          ],
+          "detailed_synopsis": "演出中段，陈默联合卫生局长官突然闯入，声称麦珂出现严重心律失常，要求立即强制送医，无视玛莎手中的备忘录。演出进行中，陈默突然大喊麦珂晕倒，引来卫生局长官带队冲入通道。长官不顾麦珂实际状态良好，下令抬走麦珂，玛莎挺身而出挡在担架前。玛莎高举《今日健康备忘录》，朗声引用条款，指出对方无权单方面执行。陈默恼羞成怒，撕毁部分文件并指责玛莎阻碍救治，被苏菲亚当场指出其携带的色带型号与伪造文件一。玛莎成功阻止了外部势力的强制干预，确立了家族守护者的不可动摇地位，全场观众起立致敬。危机解除，麦珂继续完成演出，玛莎站在舞台一侧，目光坚定，奥瑞恩的行政控制链彻底断裂。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_208_MICROFILM_BACKUP",
+              "timeline_scope": "previous_life",
+              "purpose": "苏菲亚调取的前世录音备份，用于对比陈默此刻的言行。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {
+        "entity_id": "CHAR_MARSHA_01",
+        "state": "Legally binding co-signatory and active family protector"
+      },
+      {
+        "entity_id": "CHAR_LIVIA_01",
+        "state": "Established as the primary executor of the tripartite medical emergency order"
+      },
+      {
+        "entity_id": "CHAR_SERENA_01",
+        "state": "Public technical partner with control over backup lighting systems"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entities": [
+          "Ma Ke",
+          "Team"
+        ],
+        "status": "Unified interest community with legal health safeguards"
+      },
+      {
+        "entities": [
+          "Orion Group",
+          "Artist"
+        ],
+        "status": "Orion stripped of unilateral interpretation rights"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "RIGHT_HEALTH_MEMO_GLOBAL",
+        "status": "Exclusive usage rights secured for Ma Ke's global tour"
+      },
+      {
+        "entity_id": "RIGHT_ORION_INTERVENTION",
+        "status": "Legally prohibited for Orion to intervene unilaterally"
+      }
+    ],
+    "health_and_location": [
+      {
+        "status": "Standardized emergency response mechanism established, zero incidents on site"
+      },
+      {
+        "location": "Star Port Concert Hall"
+      }
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性"
+    ],
+    "resolved_threads": [
+      "玛莎因缺乏法律授权被边缘化的历史悲剧已被彻底改写"
+    ],
+    "introduced_characters": [
+      "七名被写入承诺卡的后台监督者（作为群体角色）"
+    ],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

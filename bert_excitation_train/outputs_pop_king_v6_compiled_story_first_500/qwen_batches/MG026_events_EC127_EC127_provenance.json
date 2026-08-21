@@ -1,0 +1,83 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC127_EC127",
+  "identifier": "MG026",
+  "accepted_attempt": "04",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "base_prompt_sha256": "b85c2e0ad3f2d0c8b324dc469ca81fc510c9c61a7416995546fd97813326f956",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T20:24:07+08:00",
+      "prompt_sha256": "b85c2e0ad3f2d0c8b324dc469ca81fc510c9c61a7416995546fd97813326f956",
+      "raw_response_sha256": "806eff9864b94c1b4c1845a7b6bda05f77ccc4862928de17a217c673599a818c",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG026_events_EC127_EC127_attempt_01_b85c2e0ad3_raw.txt",
+      "validation_failures": [
+        "EC127.chapter253创建的artifact_id非法：TRUST_DEED_EC127_SWISS",
+        "EC127.chapter254引用本事件尚未创建的artifact_id=TRUST_DEED_EC127_SWISS"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 28.263,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-20T20:24:35+08:00",
+      "prompt_sha256": "80f52da302e418e2be0e759cd237fcf1c38e259aeee84401c67740cf1ace794b",
+      "raw_response_sha256": "923de9d9ebe489deba2c418cb653e43fccd05bc47aeeb31e73c829897d7d714e",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG026_events_EC127_EC127_attempt_02_b85c2e0ad3_raw.txt",
+      "validation_failures": [
+        "EC127.chapter253创建的artifact_id非法：TRUST_DEED_SWISS_KY_1991",
+        "EC127.chapter254引用本事件尚未创建的artifact_id=TRUST_DEED_SWISS_KY_1991"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 28.335,
+      "usage": {}
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-20T20:25:02+08:00",
+      "prompt_sha256": "50a7716ceaad4d1dfa4a2d8e4eea3acb1373e922502f9005a972c542bf027ed8",
+      "raw_response_sha256": "b9f282dc77ac3f9b0ce44dbb35919afdd053319364e9434e5c9e23e9af5ceeec",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG026_events_EC127_EC127_attempt_03_b85c2e0ad3_raw.txt",
+      "validation_failures": [
+        "EC127.chapter253创建的artifact_id非法：TRUST_DEED_SWISS_KY_1991_DRAFT",
+        "EC127.chapter254创建的artifact_id非法：CIVIL_PARTNERSHIP_CERT_EC127",
+        "EC127.chapter254引用本事件尚未创建的artifact_id=TRUST_DEED_SWISS_KY_1991_DRAFT",
+        "EC127.chapter254引用本事件尚未创建的artifact_id=CIVIL_PARTNERSHIP_CERT_EC127"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 26.861,
+      "usage": {}
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-20T20:25:31+08:00",
+      "prompt_sha256": "99bbb0c12943e47cc2577b48dc363c2a1cc5d3ae5c0a94a93f324f9890a5d898",
+      "raw_response_sha256": "9f867a32bacc25649ade641a9ff335a1cfed5b3a13f20ff2b8a44543f3dc7f6d",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG026_events_EC127_EC127_attempt_04_b85c2e0ad3_raw.txt",
+      "validation_failures": [
+        "EC127.chapter253创建的artifact_id非法：TRUST_DEED_SWISS_KY_1991_DRAFT",
+        "EC127.chapter254创建的artifact_id非法：CIVIL_PARTNERSHIP_CERT_EC127",
+        "EC127.chapter254引用本事件尚未创建的artifact_id=TRUST_DEED_SWISS_KY_1991_DRAFT",
+        "EC127.chapter254引用本事件尚未创建的artifact_id=CIVIL_PARTNERSHIP_CERT_EC127"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 28.471,
+      "usage": {}
+    }
+  ]
+}

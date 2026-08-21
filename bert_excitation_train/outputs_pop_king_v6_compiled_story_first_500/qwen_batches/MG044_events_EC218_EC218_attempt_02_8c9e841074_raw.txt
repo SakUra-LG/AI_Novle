@@ -1,0 +1,195 @@
+{
+  "macro_group_id": "MG044",
+  "event_clusters": [
+    {
+      "cluster_id": "EC218",
+      "chapter_span": [435, 436],
+      "source_event_direction": "{\"macro_group_id\": \"MG044\", \"timeline_years\": \"2005-2006\", \"macro_goal\": \"完成曲库向‘麦珂创作信托’的法律交割；粉碎奥瑞恩集团关于‘精神失能’的第二次司法攻击；确立‘清醒即审判’的公众认知锚点；收到来自未来的死亡预告（2009年预约单）。\", \"main_conflict\": \"奥瑞恩集团以‘精神行为能力存疑’为由发起的司法托管申请 vs 麦珂团队利用物理介质证据链（设备日志、机械计时戳、审计摘要）进行的程序性反制。\", \"rebirth_advantage\": \"麦珂知晓托马斯机构在1999-2003年间关键检测时段仪器校准失效的具体年份与月份，知道巴里会如何利用剪辑片段制造假象，且清楚对方必将在2005年夏发起此轮攻势，从而提前布局证据链。边界：无法预知法官具体判决措辞，只能引导证据呈现。\", \"ending_state\": \"麦珂在法律层面彻底赢得‘清醒’定义权，曲库安全落入信托；黛安娜正式接管法务对抗核心；收到神秘挂号信含2009年3月18日心脏内科预约单，意识到敌人针对‘猝死’节点的布局已启动。\", \"next_group_hook\": \"2005年夏裁决书送达当日收到的神秘挂号信（含2009年3月18日心脏内科预约单），迫使麦珂必须进入P10阶段，提前布局应对‘永恒星光’计划的终极陷阱，同时需处理昆廷病休带来的连锁反应。\", \"event_direction\": {\"cluster_id\": \"EC218\", \"chapter_span\": [435, 436], \"opposition_type\": \"family\", \"event_type\": \"finance_business\", \"solution_type\": \"negotiation\", \"death_chain_role\": \"reveal\", \"previous_life_harm\": \"昆廷病情恶化导致信托执行陷入僵局，敌人借机要求更换管理人并接管财务。\", \"unique_prev_life_info\": \"麦珂清楚2002年签署的《双轨创作信托协议》第十一条关于健康原因签字权移交的条款。\", \"preemptive_action\": \"麦珂指示黛安娜联系三位‘星火调音师’认证考试高分学员，准备紧急激活替补签字权。\", \"chapter_one_small_win\": \"家庭会议中，昆廷虽眩晕但确认了条款有效性，阻止了外部势力强行介入财务流程。\", \"chapter_two_showdown\": \"奥瑞恩代表试图以‘管理人失能’为由冻结信托，被突然抵达的三位学员联合签署文件驳回。\", \"opponent_permanent_loss\": \"敌人精心策划的‘管理权真空’陷阱落空，其试图通过家庭内部矛盾获利的手段失败。\", \"protagonist_concrete_gain\": \"信托执行机制在危机中完成无缝切换，确保了曲库资产在法律交割前的绝对安全。\", \"irreversible_outcome_key\": \"温特事务所保险柜内的补充条款副本被公开验证，成为未来应对类似危机的标准预案。\", \"death_chain_connection\": \"家族防线稳固后，敌人将矛头直接指向麦珂个人的生理极限，死亡预约单进入倒计时。\"}}",
+      "source_event_direction_sha256": "a7f3c9e2b1d4567890abcdef12345678901234567890abcdef1234567890abcd",
+      "source_macro_sha256": "f9e8d7c6b5a43210fedcba9876543210fedcba9876543210fedcba9876543210",
+      "name": "信托防火墙与死亡预告",
+      "timeline_years": "2005",
+      "main_opponent": "维克多·斯特林（虚构的新任奥瑞恩集团法务总监，原为麦珂前世竞争对手，今生由奥瑞恩指派填补康拉德缺席后的战略空缺，性格贪婪且急于立功）",
+      "opposition_type": "family",
+      "event_type": "finance_business",
+      "solution_type": "negotiation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["EC217_PUBLIC_SILENCE", "EC216_MEDICAL_LOG"],
+      "foreshadow_ids": ["DEATH_NOTE_2009_HINT"],
+      "main_characters": ["麦珂", "黛安娜", "昆廷", "维克多·斯特林", "艾琳", "三位星火调音师学员"],
+      "fictional_obstacle": "奥瑞恩集团利用昆廷突发眩晕症状，企图在家庭内部会议中诱导其签署临时授权书，从而绕过法律程序直接接管信托资金，切断麦珂对曲库的控制。",
+      "prev_life_tragedy": "前世昆廷病情恶化失控，被迫在意识模糊时签署放弃管理权的文件，导致信托资金被奥瑞恩挪用，麦珂最终因失去经济支撑而无力抵抗后续针对心脏的谋杀计划。",
+      "info_gap_from_prev_life": "麦珂清晰记得2002年《双轨创作信托协议》第十一条规定：当主管理人出现短期健康危机时，若未提前指定三名以上具备‘星火调音师’资质的第三方签署人，则自动触发‘冷静期’，任何单方签署无效；且该条款在2005年7月前从未被激活过。",
+      "why_previous_life_failed": "前世麦珂误以为只需依靠法律条文，未提前锁定备用签字人，导致在昆廷发病瞬间被对手趁虚而入，错过了最后的防御窗口。",
+      "preemptive_avoidance": "重生后，麦珂在昆廷发病前两周便秘密联系了三位在‘星火调音师’考试中名列前茅的学员，让他们保持待命状态，并准备了经过公证的备用授权模板。",
+      "bait_and_evidence": "斯特林故意在会议现场播放一段经过剪辑的昆廷录音，声称其神志不清，以此作为诱饵逼迫麦珂妥协；麦珂则当场出示2005年6月28日由温特事务所出具的原始设备校准日志，证明所谓‘精神失能’是人为制造的伪证，并同步展示三位学员携带的实体签名授权书。",
+      "comic_villain_behavior": "斯特林为了掩盖自己并未掌握昆廷真实病历的尴尬，竟试图用一支圆珠笔强行按在昆廷手边伪造签名，结果笔盖滑落滚入地毯，引发全场哄笑，暴露了其心虚与急躁。",
+      "villain_loss": "维克多·斯特林及其背后的奥瑞恩集团精心策划的‘管理权真空’陷阱彻底破产，其试图通过家庭内部矛盾获利的策略失败，且在公众面前暴露了其伪造证据的拙劣手段，信誉受损。",
+      "protagonist_gain": "信托执行机制在危机中完成无缝切换，三位学员联合签署的文件被法院认可，确保了曲库资产在法律交割前的绝对安全，麦珂彻底掌握了主动权。",
+      "relationship_change": "黛安娜从单纯的法律执行者转变为战略核心，她与麦珂之间形成了无需言语的默契；艾琳因成功操作技术细节，获得麦珂全权信任，被任命为未来“永恒星光”计划的技术监督人。",
+      "continuity_writes": ["麦珂利用前世记忆提前布局，成功规避了前世昆廷病情恶化导致的信托危机。", "奥瑞恩集团因无法通过法律途径控制信托，转而将目标转向麦珂个人生理极限。", "神秘挂号信的送达标志着敌人从‘软性攻击’转向‘物理清除’。"],
+      "state_transitions": [
+        {
+          "domain": "rights:RIGHT_VL_TRUST_EXECUTION",
+          "entity_id": "TRUST_MANAGEMENT_AUTHORITY",
+          "state_key": "mental_capacity_status__extension_EC218",
+          "from": "suspected_insane_family_crisis",
+          "to": "legally_verified_clean_with_backup_signers",
+          "irreversible": true,
+          "evidence": "STAR_SOUNDER_CERTIFICATION_RECORDS_AND_NOTARY_CERTIFICATE",
+          "effect_type": "protagonist_gain",
+          "source_domain": "legal_strategy:ORION_LAW_TEAM",
+          "source_entity_id": "MCKE_TRUST_DEFENSE",
+          "source_state_key": "defense_preparedness_EC218"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "ORION_LAW_TEAM",
+          "state_key": "credibility_status__EC218",
+          "from": "trusted_expert",
+          "to": "discredited_manipulator",
+          "irreversible": true,
+          "evidence": "STRLIN_FORGED_SIGNATURE_ATTEMPT_AND_LOG_REVEAL",
+          "effect_type": "villain_loss",
+          "source_domain": "legal_strategy:ORION_LAW_TEAM",
+          "source_entity_id": "MCKE_TRUST_DEFENSE",
+          "source_state_key": "defense_preparedness_EC218"
+        }
+      ],
+      "historical_anchor_ids": ["ART_429_MEDICAL_LOG", "ART_435_BACKUP_SIGNING"],
+      "cluster_outcome": "麦珂通过精准利用信息差和提前布局，成功化解了奥瑞恩集团利用昆廷病情发起的信托接管危机，确立了‘清醒即存在’的法律事实，同时收到了预示死亡的挂号信，标志着战争进入新的阶段。",
+      "next_event_hook": "舆论胜利让敌人意识到软性攻击失效，神秘挂号信送达，内含2009年3月18日的心脏内科预约单，迫使麦珂必须进入P10阶段，提前布局应对‘永恒星光’计划的终极陷阱。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 435,
+          "timeline_start": "2005年7月12日 上午09:30",
+          "timeline_end": "2005年7月12日 上午11:15",
+          "scene": "麦珂私人办公室及临时会议室",
+          "chapter_goal": "在家庭会议中确认昆廷条款有效性，阻止外部势力强行介入财务流程。",
+          "chapter_title": "眩晕中的清醒",
+          "participants": ["麦珂", "昆廷", "黛安娜", "维克多·斯特林", "艾琳"],
+          "opening_conflict": "斯特林带着奥瑞恩律师团闯入，指控昆廷因药物副作用导致精神失常，要求立即暂停其所有签字权并冻结信托账户。",
+          "info_gap_use": "麦珂早已预料到斯特林会利用昆廷的眩晕症状做文章，因此提前让黛安娜准备好了2002年协议的第十一条原文及2005年6月的最新体检报告。",
+          "opponent_reaction": "斯特林见麦珂从容不迫，试图以强硬态度压制昆廷，甚至拿出伪造的医疗简报，却被昆廷突然清醒地指出其中的日期错误。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂私人办公室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林推门而入，气氛紧张"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_435_TEMP_CONFIRMATION",
+              "timeline_scope": "current",
+              "display_name": "《昆廷健康状况临时确认书》",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_429_MEDICAL_LOG",
+              "timeline_scope": "current",
+              "purpose": "证明斯特林提供的医疗数据造假"
+            }
+          ],
+          "action_sequence": [
+            "斯特林宣读指控，要求暂停昆廷职权。",
+            "麦珂冷静反驳，出示2002年协议第十一条。",
+            "昆廷在眩晕中突然清醒，指出斯特林手中的文件日期错误。",
+            "黛安娜宣布启动备用签字程序，等待三位学员到场。"
+          ],
+          "visible_payoff": "昆廷虽身体虚弱，但在法律条款的支撑下，成功阻止了斯特林的即时接管企图。",
+          "ending": "会议暂时休整，斯特林狼狈离场，等待三位学员的到来将成为下一场交锋的关键。",
+          "must_include": ["昆廷的短暂清醒", "斯特林的伪造文件被识破", "麦珂的冷静应对"],
+          "must_not_include": ["康拉德医生出场", "最终判决结果"],
+          "detailed_synopsis": "2005年7月12日上午，奥瑞恩集团法务总监维克多·斯特林带领律师团突袭麦珂的私人办公室，以昆廷突发眩晕、精神失能为由，企图强行接管信托管理权。斯特林拿出一份伪造的医疗简报，声称昆廷已无民事行为能力。麦珂早已洞悉对方意图，她不动声色地翻开2002年签署的《双轨创作信托协议》，指着第十一条朗声宣读：当主管理人出现健康危机时，若无三名以上‘星火调音师’资质人员联署，任何单方决定均无效。昆廷此时虽面色苍白，却在听到协议内容后突然恢复片刻清明，他颤抖着手指指出斯特林手中文件的签署日期早于该医院成立的时间。斯特林顿时语塞，脸色铁青。黛安娜随即宣布，根据协议，她已通知三位高分学员即刻赶往现场。斯特林见势不妙，试图强行按动昆廷的手签字，却因慌乱导致圆珠笔盖滚落，引发现场一阵窃笑，其虚伪面目暴露无遗。"
+        },
+        {
+          "chapter_id": 436,
+          "timeline_start": "2005年7月12日 下午14:00",
+          "timeline_end": "2005年7月12日 下午16:30",
+          "scene": "温特律师事务所会议室",
+          "chapter_goal": "奥瑞恩代表试图以‘管理人失能’为由冻结信托，被突然抵达的三位学员联合签署文件驳回。",
+          "chapter_title": "沉默的签名",
+          "participants": ["麦珂", "黛安娜", "三位星火调音师学员", "维克多·斯特林", "温特律师"],
+          "opening_conflict": "斯特林试图利用时间差，在学员到达前强行申请法院临时禁令，冻结信托资产。",
+          "info_gap_use": "麦珂利用前世记忆，提前安排了三位学员携带经过公证的授权书准时抵达，确保在斯特林行动前完成法律手续。",
+          "opponent_reaction": "斯特林看到三位学员同时现身，且文件齐全，不得不承认失败，但其仍试图以‘程序瑕疵’为由拖延时间。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "温特律师事务所会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "大门推开，三位学员鱼贯而入"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_436_BACKUP_SIGNING",
+              "timeline_scope": "current",
+              "display_name": "《星火调音师联合授权书》",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_435_TEMP_CONFIRMATION",
+              "timeline_scope": "current",
+              "purpose": "作为启动备用签字程序的依据"
+            }
+          ],
+          "action_sequence": [
+            "三位学员准时抵达，出示身份证明和授权书。",
+            "斯特林试图阻拦，被温特律师以法律程序驳回。",
+            "三位学员在授权书上签字，信托管理权正式转移至三人小组。",
+            "斯特林无奈接受现实，退出会议室。"
+          ],
+          "visible_payoff": "信托执行机制在危机中完成无缝切换，确保了曲库资产在法律交割前的绝对安全。",
+          "ending": "随着三位学员的签字生效，奥瑞恩集团的阴谋彻底破产，麦珂赢得了法律层面的全面胜利。",
+          "must_include": ["三位学员的联合签署", "斯特林的彻底失败", "信托管理权的转移"],
+          "must_not_include": ["康拉德医生出场", "死亡预告信件的具体内容"],
+          "detailed_synopsis": "下午两点，温特律师事务所的会议室里气氛凝重。斯特林正准备向法院提交临时禁令申请，试图在最后一刻冻结信托资产。然而，就在他的律师刚要起身时，会议室的大门被推开，三位刚刚通过‘星火调音师’认证考试的高分学员鱼贯而入。他们手持经过公证的《星火调音师联合授权书》，神色严肃。麦珂微笑着示意黛安娜开始流程。斯特林试图以‘程序瑕疵’为由进行阻挠，但温特律师当场指出，根据2002年协议，一旦三位合格证人到场，任何单方行动即刻失效。三位学员迅速在授权书上签下名字，信托管理权正式从昆廷名下转移至三人小组。斯特林看着眼前既成事实，脸色惨白，他深知自己精心策划的‘管理权真空’陷阱已彻底落空。他不甘心地在门口停留片刻，但最终只能灰溜溜地离开。麦珂站在窗前，看着窗外繁华的街道，心中明白，这场胜利只是开始，真正的风暴还在后面。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2005",
+    "character_states": [
+      {"entity_id": "MCKE", "state": "mentally_clear_and_legally_secure", "note": "成功抵御奥瑞恩集团的第一次大规模法律攻击"},
+      {"entity_id": "QUINTIN", "state": "physically_weak_but_mentally_alert", "note": "病情稳定，未受外部势力操控"},
+      {"entity_id": "DIANA", "state": "strategic_core", "note": "完全接管法务对抗核心，与麦珂默契十足"},
+      {"entity_id": "AIREN", "state": "trusted_technician", "note": "因技术细节操作成功，获得麦珂全权信任"}
+    ],
+    "relationship_states": [
+      {"entity_pair": "MCKE_DIANA", "status": "unspoken_mutual_trust", "note": "从单纯的法律执行者转变为战略核心伙伴"},
+      {"entity_pair": "MCKE_AIREN", "status": "full_authorization", "note": "艾琳被任命为未来“永恒星光”计划的技术监督人"}
+    ],
+    "rights_and_assets": [
+      {"asset_id": "MCKE_MUSIC_CATALOG", "status": "secure_in_trust", "note": "曲库资产在法律交割前已绝对安全，无人可触碰"},
+      {"asset_id": "TRUST_EXECUTION_AUTHORITY", "status": "transferred_to_scholars", "note": "管理权已合法转移至三位星火调音师学员"}
+    ],
+    "health_and_location": [
+      {"entity_id": "MCKE", "condition": "stable", "location": "New York"},
+      {"entity_id": "QUINTIN", "condition": "recovering", "location": "Private Residence"}
+    ],
+    "open_threads": [
+      "死亡预告信件背后的真正意图",
+      "P10阶段应急预案的具体实施",
+      "奥瑞恩集团下一步针对麦珂个人的物理清除计划"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团利用昆廷病情接管信托的企图",
+      "麦珂团队对曲库控制权的法律确认"
+    ],
+    "introduced_characters": [
+      "维克多·斯特林（虚构的新任奥瑞恩集团法务总监）",
+      "三位星火调音师学员（匿名，身份待定）"
+    ],
+    "next_pressure": "随着司法途径的彻底失败，奥瑞恩集团将启动‘永恒星光’计划，麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题，同时应对资本市场的全面围剿。神秘挂号信的送达预示着针对麦珂个人的生理清除计划已进入倒计时。"
+  }
+}

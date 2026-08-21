@@ -1,0 +1,99 @@
+{
+  "generated_by": "qwen",
+  "kind": "chapters_b",
+  "identifier": "MG001",
+  "accepted_attempt": "01",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-04T17:14:21+08:00",
+      "prompt_sha256": "468b2a7e92f12332c827e97668e1d81743374c62b811c58adc02d312252bdff6",
+      "raw_response_sha256": "167715afbb60ff609cc87bdc08ae125824da2a51b90d5a509d1545b600fd7182",
+      "raw_response_file": "MG001_chapters_b_attempt_01_raw.txt",
+      "validation_failures": [
+        "第6章为事件结算章，必须明确现实得失",
+        "第8章世界观错误：禁止出现现实地点、机构或姓名“芝加哥”",
+        "第10章为事件结算章，必须明确现实得失"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 73.833,
+      "usage": {
+        "input_tokens": 9802,
+        "output_tokens": 4829,
+        "total_tokens": 14631,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-04T17:15:35+08:00",
+      "prompt_sha256": "f7f3f5a26878f8460d9fd3eaae5aa34b9065a2c01dd0b8729895ea1288e81618",
+      "raw_response_sha256": "96b139d25d5d02f9efe32d5ba886f567c8175af3c20ae73a569004ee768e04e9",
+      "raw_response_file": "MG001_chapters_b_attempt_02_raw.txt",
+      "validation_failures": [
+        "第6章为事件结算章，必须明确现实得失",
+        "第10章为事件结算章，必须明确现实得失"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 74.272,
+      "usage": {
+        "input_tokens": 14710,
+        "output_tokens": 4860,
+        "total_tokens": 19570,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-04T17:16:51+08:00",
+      "prompt_sha256": "4a83b72a86417571211a52c8826040ba1cb97b8b099dee953f680246d04d531d",
+      "raw_response_sha256": "6428a00db422cce275b92c293db6db41c81a4412feebe39965893e8c1e0d85b0",
+      "raw_response_file": "MG001_chapters_b_attempt_03_raw.txt",
+      "validation_failures": [
+        "第6章为事件结算章，必须明确现实得失",
+        "第10章为事件结算章，必须明确现实得失"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 75.682,
+      "usage": {
+        "input_tokens": 14723,
+        "output_tokens": 4916,
+        "total_tokens": 19639,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-04T17:18:06+08:00",
+      "prompt_sha256": "aa12bd11e86f1507c15b98d47642066110b63cde1805c7ffa5a5721b59bcd689",
+      "raw_response_sha256": "6428a00db422cce275b92c293db6db41c81a4412feebe39965893e8c1e0d85b0",
+      "raw_response_file": "MG001_chapters_b_attempt_04_raw.txt",
+      "validation_failures": [
+        "第6章为事件结算章，必须明确现实得失",
+        "第10章为事件结算章，必须明确现实得失"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 75.133,
+      "usage": {
+        "input_tokens": 14779,
+        "output_tokens": 4916,
+        "total_tokens": 19695,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

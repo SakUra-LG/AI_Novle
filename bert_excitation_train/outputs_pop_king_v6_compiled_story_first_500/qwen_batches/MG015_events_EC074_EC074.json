@@ -1,0 +1,225 @@
+{
+  "macro_group_id": "MG015",
+  "event_clusters": [
+    {
+      "cluster_id": "EC074",
+      "chapter_span": [
+        147,
+        148
+      ],
+      "source_event_direction": "前世具体受害：前世第三方审计数据污染导致信托被接管，麦珂被迫接受非专业医疗方案加速死亡。；本事件独有的前世信息差：麦珂清楚1984年‘蓝盾’公司将利用伪造税务单诱导签署协议，且该团伙有1982年案底。；今生提前动作：温特律师依据前世记忆调取1982年旧卷宗，并在法庭上申请对‘蓝盾’数据进行司法鉴定。；第147章可见小赢：鉴定专家当庭指出‘蓝盾’数据存在人为修改痕迹，维克多·兰斯脸色铁青却无法辩驳。；第148章新交锋：法官驳回奥瑞恩集团接管信托的申请，并下令查封‘蓝盾’公司相关账本进行调查。；阻力方永久现实损失：维克多·兰斯的隐蔽渗透计划首次全面受挫，‘蓝盾’公司因证据不足被起诉且业务停摆。；主角现实收益：麦珂团队成功确立医疗决策权与商业审计权的绝对隔离，《家庭治理宪章》正式生效。；不可逆结算键：1983_10_22_Judicial_Chartification_Seal；接回死亡控制主线：终结了前世因信托被接管而导致的生命控制权旁落，为四十年后的终局胜利奠定法理基础。",
+      "source_event_direction_sha256": "57649e4be41be8ad9fe7df515b95d33b26e3644934e8922f08d2bfb04c55effb",
+      "source_macro_sha256": "adc54d66d106e66849bea9a864987a253a763eccfa06294f8f3470737cfaa81a",
+      "name": "蓝盾审计数据污染与司法确权",
+      "timeline_years": "1983-1984",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "institutional",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "温特律师",
+        "莉薇娅·普莱斯",
+        "维克多·兰斯",
+        "法官哈罗德"
+      ],
+      "fictional_obstacle": "维克多指使‘蓝盾’公司利用伪造的1982年税务数据，指控麦珂家族信托违规，企图冻结资产并强制更换医疗监护人。",
+      "prev_life_tragedy": "前世因第三方审计数据被污染，信托被接管，麦珂被迫接受非专业医疗方案加速死亡。",
+      "info_gap_from_prev_life": "麦珂知晓1984年‘蓝盾’公司将利用伪造税务单诱导签署协议，且该团伙有1982年案底。",
+      "why_previous_life_failed": "前世麦珂未察觉数据造假，盲目信任审计结果，导致法律防线崩溃。",
+      "preemptive_avoidance": "温特律师依据前世记忆调取1982年旧卷宗，并在法庭上申请对‘蓝盾’数据进行司法鉴定。",
+      "bait_and_evidence": "麦珂故意泄露虚假的‘妥协意向’，诱使维克多提前发动攻击，同时莉薇娅提供临床诊断书证明麦珂具备完全行为能力，巴里·布鲁姆留下的录音笔作为辅助证据。",
+      "comic_villain_behavior": "维克多·兰斯在法庭上试图用‘专业术语’混淆视听，却被法官打断，脸色铁青却无法辩驳，显得滑稽而狼狈。",
+      "villain_loss": "维克多·兰斯的隐蔽渗透计划首次全面受挫，‘蓝盾’公司因证据不足被起诉且业务停摆。",
+      "protagonist_gain": "麦珂团队成功确立医疗决策权与商业审计权的绝对隔离，《家庭治理宪章》正式生效。",
+      "relationship_change": "莉薇娅·普莱斯成为对抗虚假医疗指控的核心防线，与麦珂的信任达到顶峰；维克多·兰斯对麦珂的恨意加深，转入更隐蔽的对抗阶段。",
+      "continuity_writes": [
+        "RIGHT_VL_007",
+        "REP_VICTOR_002"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007",
+          "state_key": "trust_governance",
+          "from": "contested",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_147_JUDICIAL_CHARTER_SEAL",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_VICTOR_002",
+          "state_key": "legal_standing",
+          "from": "aggressive",
+          "to": "defensive",
+          "irreversible": false,
+          "evidence": "ART_148_COURT_ORDER",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1983_TAX_REFORM",
+        "HA_1984_AUDIT_STANDARDS"
+      ],
+      "cluster_outcome": "法官驳回奥瑞恩集团接管信托的申请，并下令查封‘蓝盾’公司相关账本进行调查；《家庭治理宪章》正式生效，确立医疗决策权独立地位。",
+      "next_event_hook": "维克多·兰斯意识到常规手段失效，将启动更深层的‘健康趋势预测模型’测试，并试图收购老牌胶片冲印厂以切断物理证据链。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 147,
+          "timeline_start": "1983-10-21",
+          "timeline_end": "1983-10-21",
+          "scene": "法庭",
+          "chapter_goal": "通过司法鉴定揭露‘蓝盾’数据造假，取得庭审初步胜利。",
+          "chapter_title": "数据的谎言",
+          "participants": [
+            "麦珂",
+            "温特律师",
+            "莉薇娅·普莱斯",
+            "维克多·兰斯",
+            "法官哈罗德",
+            "鉴定专家"
+          ],
+          "opening_conflict": "维克多·兰斯提交‘蓝盾’审计报告，指控麦珂家族信托税务违规，要求冻结资产。",
+          "info_gap_use": "温特律师当庭提交1982年‘蓝盾’类似诈骗案卷宗，指出其惯用手法。",
+          "opponent_reaction": "维克多·兰斯试图以‘数据复杂性’为由拒绝详细解释，被法官严厉警告。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法庭",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法槌落下"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_147_JUDICIAL_CHARTER_SEAL",
+              "timeline_scope": "current",
+              "display_name": "司法确认的《家庭治理宪章》印章",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_139_PRESSURE_LOG_SIGNATURE",
+              "timeline_scope": "current",
+              "purpose": "证明麦珂具备完全行为能力"
+            }
+          ],
+          "action_sequence": [
+            "维克多提交审计报告",
+            "温特律师申请司法鉴定",
+            "鉴定专家当庭指出数据修改痕迹",
+            "维克多脸色铁青无法辩驳"
+          ],
+          "visible_payoff": "鉴定专家当庭指出‘蓝盾’数据存在人为修改痕迹，维克多·兰斯脸色铁青却无法辩驳。",
+          "ending": "法官宣布休庭，等待进一步证据，维克多暂时受挫。",
+          "must_include": [
+            "司法鉴定过程",
+            "维克多的狼狈",
+            "莉薇娅的支持"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "互联网"
+          ],
+          "detailed_synopsis": "1983年10月21日，曼哈顿联邦法院第三法庭。维克多·兰斯面带微笑，提交‘蓝盾’公司出具的审计报告，指控麦珂家族信托在1982年存在严重税务违规，要求立即冻结资产并更换医疗监护人。麦珂冷静旁观，温特律师起身，申请对‘蓝盾’数据进行司法鉴定。法官哈罗德准许。鉴定专家当庭展示比对结果，指出‘蓝盾’数据存在多处人为修改痕迹，与1982年类似诈骗案手法一致。维克多·兰斯脸色铁青，试图以‘数据复杂性’为由辩解，被法官严厉打断。莉薇娅·普莱斯提交临床诊断书，证明麦珂具备完全行为能力。法庭气氛紧张，维克多暂时受挫。"
+        },
+        {
+          "chapter_id": 148,
+          "timeline_start": "1983-10-22",
+          "timeline_end": "1983-10-22",
+          "scene": "法庭",
+          "chapter_goal": "法官驳回接管申请，查封‘蓝盾’账本，《家庭治理宪章》生效。",
+          "chapter_title": "宪章的封印",
+          "participants": [
+            "麦珂",
+            "温特律师",
+            "莉薇娅·普莱斯",
+            "维克多·兰斯",
+            "法官哈罗德"
+          ],
+          "opening_conflict": "维克多·兰斯试图最后挣扎，要求重新鉴定。",
+          "info_gap_use": "麦珂利用前世记忆，预判维克多的下一步动作，提前布局舆论对冲。",
+          "opponent_reaction": "维克多·兰斯意识到失败，眼神阴鸷，暗中示意助手记录所有细节。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法庭",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法槌最终落下"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_147_JUDICIAL_CHARTER_SEAL",
+              "timeline_scope": "current",
+              "purpose": "作为最终判决依据"
+            }
+          ],
+          "action_sequence": [
+            "维克多要求重新鉴定",
+            "法官驳回请求",
+            "法官下令查封‘蓝盾’账本",
+            "《家庭治理宪章》正式生效"
+          ],
+          "visible_payoff": "法官驳回奥瑞恩集团接管信托的申请，并下令查封‘蓝盾’公司相关账本进行调查。",
+          "ending": "《家庭治理宪章》正式生效，麦珂确立医疗决策权与商业审计权的绝对隔离。",
+          "must_include": [
+            "法官的最终判决",
+            "宪章生效仪式",
+            "维克多的阴鸷眼神"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "互联网"
+          ],
+          "detailed_synopsis": "1983年10月22日，曼哈顿联邦法院第三法庭。维克多·兰斯试图最后挣扎，要求重新鉴定。法官哈罗德严厉驳回，指出‘蓝盾’数据造假证据确凿，下令查封其相关账本进行调查。随后，法官宣布《家庭治理宪章》正式生效，确立麦珂家族信托的医疗决策权与商业审计权绝对隔离。麦珂与莉薇娅·普莱斯相视一笑，胜利在望。维克多·兰斯眼神阴鸷，暗中示意助手记录所有细节，预示下一次更隐蔽的对抗。法庭外，记者们蜂拥而至，麦珂团队成功确立法律地位。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1983",
+    "character_states": [
+      "麦珂：自信、冷静，法律地位稳固",
+      "维克多·兰斯：愤怒、阴鸷，转入隐蔽对抗",
+      "莉薇娅·普莱斯：坚定、忠诚，成为核心盟友"
+    ],
+    "relationship_states": [
+      "麦珂与莉薇娅：信任达到顶峰",
+      "麦珂与维克多：敌对加深，维克多寻求新手段"
+    ],
+    "rights_and_assets": [
+      "信托治理权：已确权，受《家庭治理宪章》保护",
+      "医疗决策权：独立，不受商业审计干扰"
+    ],
+    "health_and_location": [
+      "麦珂：健康稳定，位于曼哈顿",
+      "莉薇娅：健康稳定，位于曼哈顿"
+    ],
+    "open_threads": [
+      "维克多·兰斯启动‘健康趋势预测模型’测试",
+      "维克多·兰斯试图收购老牌胶片冲印厂"
+    ],
+    "resolved_threads": [
+      "‘蓝盾’数据污染阴谋被揭穿",
+      "信托接管申请被驳回"
+    ],
+    "introduced_characters": [
+      "鉴定专家：法庭上的关键证人"
+    ],
+    "next_pressure": "维克多·兰斯将启动更深层的‘健康趋势预测模型’测试，并试图收购老牌胶片冲印厂以切断物理证据链。"
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "macro_group_id": "MG024",
+  "event_clusters": [
+    {
+      "cluster_id": "EC119",
+      "chapter_span": [237, 238],
+      "source_event_direction": "direction",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "暴雨下的共振：声场锚定与光路救赎",
+      "timeline_years": "1987",
+      "main_opponent": "巴里·布鲁姆 (Barry Bloom)",
+      "opposition_type": "technical",
+      "event_type": "performance",
+      "solution_type": "performance_proof",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["EC118", "EC120"],
+      "foreshadow_ids": ["EC103"],
+      "main_characters": ["麦珂", "莉薇娅", "苏菲亚", "巴里·布鲁姆", "维克多·兰斯"],
+      "fictional_obstacle": "奥瑞恩集团利用1987年夏季特大暴雨，企图制造穹顶投影失焦与音频中断事故，借机指控麦珂团队设备存在“隐形远程控制”隐患，引发观众恐慌。",
+      "prev_life_tragedy": "前世1989年暴雨夜，穹顶投影因湿气短路彻底黑屏，备用系统未启动，演出中断两分钟，导致数千名观众惊慌踩踏，被对手剪辑成“技术失控”视频全网传播，麦珂团队信誉崩塌。",
+      "info_gap_from_prev_life": "麦珂掌握1989年故障发生的具体时刻（雨势最大时）及备用光路机械切换的延迟数据（当时为4.5秒），并知晓建筑声学在特定频率下会产生致命共振。",
+      "why_previous_life_failed": "前世仅依赖电子备份，未针对物理环境做冗余设计；且未测试人群行为对声场的反向影响，导致灾难性连锁反应。",
+      "preemptive_avoidance": "麦珂提前七个月在场馆穹顶内预埋七套独立机械光路切换装置，并在彩排中利用声压计模拟暴雨噪音，测试出能抵消建筑共振的“共呼吸”敲击频率。",
+      "bait_and_evidence": "巴里·布鲁姆在现场高喊“设备受控”，试图诱导观众关注屏幕闪烁；麦珂则通过苏菲亚展示现场实时生成的“声场健康图谱”，证明画面稳定源于物理结构而非远程指令。",
+      "comic_villain_behavior": "巴里·布鲁姆手持扩音器在暴雨中狂奔指挥安保，却因鞋跟卡入排水沟滑倒，手中的“安全鉴定书”被雨水泡烂，狼狈不堪地对着镜头大喊“这是人为破坏”，完全无视现场平稳运行的灯光。",
+      "villain_loss": "奥瑞恩集团精心策划的“天气事故”剧本彻底破产，舆论从质疑转为惊叹，巴里·布鲁姆因在公开场合举止失态且无证据指控，被行业媒体嘲讽为“过时的阴谋论者”。",
+      "protagonist_gain": "验证了“共呼吸时段”的非技术性声学锚定效果，将观众转化为安全协作者；《州级艺术展演安全指引》附录B正式写入该抗干扰方案，确立行业标准。",
+      "relationship_change": "莉薇娅在混乱中亲自确认备用电路无误，对麦珂的预判能力产生绝对信任，两人关系从商业合作升华为生死托付；苏菲亚成功绘制出首份动态声场风险图谱。",
+      "continuity_writes": [
+        "1987年暴雨事件成为后续所有巡演安全协议的基准案例。",
+        "“共呼吸”机制被推广至家庭急救场景，为1991年《家庭治理宪章》提供实证。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "technology",
+          "entity_id": "TECH_AUD_001",
+          "state_key": "emergency_response_protocol_EC119",
+          "from": "unverified_risk",
+          "to": "industry_standard",
+          "irreversible": true,
+          "evidence": "ART_237_RESONANCE_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "OPP_AUREON_GROUP",
+          "state_key": "weather_exploitation_fails_EC119",
+          "from": "high_authority",
+          "to": "publicly_embarrassed",
+          "irreversible": false,
+          "evidence": "CLIP_238_BLOOM_FALL",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1987_SUMMER_STORM"],
+      "cluster_outcome": "演出在暴雨中完美落幕，奥瑞恩集团的天气阴谋破产，麦珂团队确立了以物理冗余和公众参与为核心的新安全标准。",
+      "next_event_hook": "“今日健康备忘录”手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款；折叠地图激发1992年‘初声基金’评审制度改革。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 237,
+          "timeline_start": "1987-07-15T20:00",
+          "timeline_end": "1987-07-15T20:45",
+          "scene": "中央体育馆穹顶下",
+          "chapter_goal": "应对突发暴雨，确保穹顶投影不中断，粉碎对手“设备失控”的第一波指控。",
+          "chapter_title": "雨幕中的零秒切换",
+          "participants": ["麦珂", "莉薇娅", "巴里·布鲁姆", "技术团队"],
+          "opening_conflict": "暴雨如注，馆外雷声轰鸣，巴里·布鲁姆当众指责主光路受潮，要求立即停演检查，煽动观众情绪。",
+          "info_gap_use": "麦珂早已预知暴雨会在20:15达到峰值，提前启动了七套机械光路切换预案，无需人工干预。",
+          "opponent_reaction": "布鲁姆试图切断电源，却发现主控台显示“自动切换完成”，他惊慌失措地挥舞着湿透的文件，声称是“黑客攻击”。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "中央体育馆舞台上方",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "雷声骤起，灯光微闪"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_237_OPTICAL_LOG",
+              "timeline_scope": "current",
+              "display_name": "《穹顶光路机械切换日志》",
+              "kind": "technical_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_217_OPTICAL_CERT",
+              "timeline_scope": "previous_life",
+              "purpose": "对比前世故障时刻，确认今生预案的有效性"
+            }
+          ],
+          "action_sequence": [
+            "暴雨突至，巴里·布鲁姆跳上控制台大喊停电。",
+            "麦珂冷静观察监控屏，确认主光路已自动切换至备用机械轨道。",
+            "穹顶投影画面在0.5秒内无缝衔接，无任何抖动或黑屏。",
+            "观众席爆发掌声，布鲁姆的指控瞬间显得荒谬可笑。"
+          ],
+          "visible_payoff": "演出画面全程清晰，观众欢呼声盖过雷声，证明技术可靠性。",
+          "ending": "第一乐章结束，全场灯光聚焦于麦珂，她微笑着向观众致意，暗示这只是开始。",
+          "must_include": ["0.5秒切换", "机械光路", "布鲁姆滑倒前兆"],
+          "must_not_include": ["电子设备重启", "网络通讯", "现代术语"],
+          "detailed_synopsis": "1987年夏夜，暴雨倾盆而下，直击中央体育馆。巴里·布鲁姆抓住时机，站在舞台边缘高举扩音器，嘶吼着指控麦珂团队的灯光系统存在“远程遥控后门”，声称即将发生全面瘫痪，试图制造恐慌。台下观众开始骚动，有人甚至准备离场。然而，麦珂早已在三个月前的彩排中，根据前世记忆，在穹顶内部安装了七套纯机械结构的备用光路，它们依靠重力与齿轮咬合，完全不受电子信号干扰。当暴雨导致主线路电压不稳的瞬间，备用光路在0.5秒内精准切入，投影画面如丝般顺滑地过渡，没有任何闪烁。布鲁姆见状大惊失色，冲上前去试图强行拉闸，却因脚下积水打滑，连人带文件摔倒在控制台旁，手中那份伪造的“安全鉴定书”瞬间被雨水浸透，字迹模糊。他狼狈地爬起，指着屏幕大喊“这是障眼法！”，但观众看到的只有完美的演出。麦珂在侧幕条后，看着手中的《光路切换日志》，那是用钢笔手写并盖章的原始凭证，记录着每一次机械动作的精确时间。这一夜，奥瑞恩集团试图利用天气制造事故的算盘彻底落空，公众的目光从“设备隐患”转向了对“机械奇迹”的惊叹。"
+        },
+        {
+          "chapter_id": 238,
+          "timeline_start": "1987-07-15T20:45",
+          "timeline_end": "1987-07-15T21:30",
+          "scene": "中央体育馆观众席与后台",
+          "chapter_goal": "利用观众自发敲击桌面的声场频率，抵消建筑共振，确保音频清晰传输，完成最终的反转清算。",
+          "chapter_title": "万人同频：声场锚定",
+          "participants": ["麦珂", "苏菲亚", "莉薇娅", "维克多·兰斯", "数千名观众"],
+          "opening_conflict": "暴雨导致场馆建筑结构产生低频共振，麦克风出现啸叫，声音断续，布鲁姆趁机宣称“声学系统崩溃”，要求取消下半场。",
+          "info_gap_use": "麦珂前世目睹过此类共振导致的灾难，今生提前计算出了能抵消共振的特定频率，并通过苏菲亚引导观众进行“共呼吸”敲击。",
+          "opponent_reaction": "布鲁姆试图关闭音响系统，却被莉薇娅以“合同规定不得无故中断演出”为由制止，他只能眼睁睁看着观众自发形成声浪。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "观众席",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "啸叫声起，观众困惑"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_229_VERIFICATION_LIST",
+              "timeline_scope": "current",
+              "purpose": "作为引导观众参与安全核查的视觉参照"
+            }
+          ],
+          "action_sequence": [
+            "场馆内传来刺耳的建筑共振啸叫，歌手声音断断续续。",
+            "苏菲亚在后台举起一块白板，示意观众跟随节奏敲击桌面。",
+            "数千人同时敲击，形成稳定的声波频率，瞬间抵消了建筑共振。",
+            "音频瞬间变得清澈无比，全场沸腾，布鲁姆瘫坐在地。"
+          ],
+          "visible_payoff": "数万人的敲击声不仅没有造成噪音，反而成为了最完美的降噪滤波器，演出进入高潮。",
+          "ending": "演出圆满结束，苏菲亚在后台整理出一份名为《共呼吸时段声学报告》的手绘卷轴，麦珂在末尾签下名字。",
+          "must_include": ["敲击桌面", "声场抵消", "布鲁姆无力反驳"],
+          "must_not_include": ["数字音频处理", "AI降噪", "现代录音设备"],
+          "detailed_synopsis": "第二乐章开始后，暴雨引发的建筑共振让麦克风发出了令人牙酸的啸叫，歌手的声音在空气中支离破碎。巴里·布鲁姆立刻抓住机会，冲上台面大声宣布：“看吧！这就是所谓的先进设备，现在连声音都控制不了！”他要求立即终止演出，否则将承担所有安全责任。观众席一片哗然，恐慌再次蔓延。此时，麦珂没有选择关闭音响，而是看向苏菲亚。苏菲亚迅速拿起一块写有简单节奏符号的白板，高高举起，示意全场观众：“为了安全，请跟着节奏敲击桌面！”起初只是零星几声，随后，在麦珂的引导下，成千上万的观众开始同步敲击手中的饮料杯和座椅扶手。这并非杂乱的噪音，而是一种经过精密计算的、具有特定频率的稳定声场。奇妙的一幕发生了：这种由数万人共同发出的声波，竟然精准地抵消了场馆建筑的有害共振，原本刺耳的啸叫瞬间消失，取而代之的是前所未有的清晰音质。歌手的声音穿透雨幕，直抵人心。巴里·布鲁姆目瞪口呆地看着这一幕，他试图解释这是“巧合”，但在如此宏大的物理现象面前，他的辩解显得苍白无力。维克多·兰斯在一旁默默记录，意识到常规的商业手段已无法撼动这个团队。演出结束后，苏菲亚在后台展开一幅巨大的手绘卷轴，上面详细记录了此次“声场共振抗干扰”的全过程，麦珂提笔在末尾郑重签下自己的名字。这份手稿不仅是演出的见证，更将成为未来行业标准的重要基石。奥瑞恩集团利用天气制造事故的企图彻底失败，舆论风向彻底逆转，麦珂团队的技术实力与人性光辉赢得了所有人的尊重。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {
+        "entity_id": "MC_001",
+        "state": "proven_leader",
+        "description": "麦珂通过两次危机处理，确立了无可争议的领导力。"
+      },
+      {
+        "entity_id": "OP_002",
+        "state": "discredited",
+        "description": "巴里·布鲁姆因多次失败和失态，公信力严重受损。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_id": "REL_MC_LV",
+        "state": "deep_trust",
+        "description": "莉薇娅对麦珂的信任达到顶峰，视为生死盟友。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "RIGHT_STD_001",
+        "state": "established",
+        "description": "声场共振抗干扰方案被写入州级艺术展演安全指引附录B。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "LOC_VENUE",
+        "state": "secured",
+        "description": "中央体育馆安全协议升级，成为未来巡演的标杆。"
+      }
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性"
+    ],
+    "resolved_threads": [
+      "利用天气制造技术事故的阴谋",
+      "公众对设备安全的疑虑"
+    ],
+    "introduced_characters": [
+      "维克多·兰斯 (作为观察者)"
+    ],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

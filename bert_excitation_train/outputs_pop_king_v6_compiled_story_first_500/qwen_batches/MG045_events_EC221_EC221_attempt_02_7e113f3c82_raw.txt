@@ -1,0 +1,229 @@
+{
+  "macro_group_id": "MG045",
+  "event_clusters": [
+    {
+      "cluster_id": "EC221",
+      "chapter_span": [441, 442],
+      "source_event_direction": "麦珂利用重生记忆，在奥瑞恩集团启动‘数据污染’前，将核心档案物理剥离至微缩胶片，阻断远程操控。",
+      "source_event_direction_sha256": "8f3a9c2b1e4d7f6a5c8b9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a",
+      "source_macro_sha256": "1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e2f",
+      "name": "实体介质安全区构建与数字隔离",
+      "timeline_years": "2009",
+      "main_opponent": "维克多·斯特林（技术主管）",
+      "opposition_type": "technical",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["CS_2009_MAR_17_DATA_POLLUTION", "CS_2009_MAR_18_PHYSICAL_ISOLATION"],
+      "foreshadow_ids": ["FS_VICTOR_PREP_2009", "FS_FILM_PLANT_LOCK"],
+      "main_characters": ["麦珂", "苏菲亚", "莱昂·周", "昆廷（缺席/病休中）"],
+      "fictional_obstacle": "奥瑞恩集团通过‘健康趋势预测模型’向麦珂的植入式医疗芯片注入虚假脑溢血数据，试图触发资产冻结条款并制造生理崩溃假象。",
+      "prev_life_tragedy": "前世2009年3月17日晚，麦珂因被伪造的脑溢血数据误导，导致私人医疗系统瘫痪，资产瞬间冻结，最终在3月18日凌晨因‘意外’身亡。",
+      "info_gap_from_prev_life": "已知维克多将在3月17日深夜23:45分启动‘数据污染’程序，且目标直指麦珂的神经接口；知晓胶片厂是维克多计划销毁母带的唯一地点。",
+      "why_previous_life_failed": "过度依赖数字医疗系统的实时反馈，未建立物理隔离的应急备份机制，导致对手可轻易篡改底层数据链。",
+      "preemptive_avoidance": "麦珂提前锁定胶片厂为唯一可信存证点，强制切断远程档案库对医疗数据的写入权限，并安排苏菲亚进行物理介质转存。",
+      "bait_and_evidence": "故意保留一段未被加密的模拟信号通道作为诱饵，吸引维克多的攻击流量，同时让莱昂·周的全程监听系统自动映射并存档所有异常数据包。",
+      "comic_villain_behavior": "维克多在监控室看到数据流被‘物理阻断’后，惊慌失措地对着麦克风大喊‘该死的模拟信号！’，结果因语速过快导致声纹识别错误，触发了系统自带的‘操作失误’警报，反而暴露了攻击源头。",
+      "villain_loss": "奥瑞恩集团的‘数据污染’尝试被实时映射存档，成为无法抵赖的自爆证据；其‘健康趋势预测模型’被证实存在人为后门，信誉受损。",
+      "protagonist_gain": "麦珂生理指标完全正常，确认数字网络已被彻底剥离，掌握核心档案的物理控制权；三位学员的临时确认程序成功激活。",
+      "relationship_change": "莱昂·周对麦珂的预判能力产生绝对信任，从单纯的技术执行者转变为战略盟友；苏菲亚获得独立处理危机事件的授权。",
+      "continuity_writes": ["EC221完成物理隔离，为EC222的法律确权奠定基础", "维克多的技术失败直接导致后续法律战中失去‘精神失常’论据", "胶片厂成为新的安全区入口，铭牌已刻入设计图"],
+      "state_transitions": [
+        {
+          "domain": "medical_system",
+          "entity_id": "MACO_NEURAL_INTERFACE",
+          "state_key": "data_integrity_status",
+          "from": "remote_compromised_risk",
+          "to": "physically_isolated_secure",
+          "irreversible": true,
+          "evidence": "MICROFILM_BACKUP_LOG_2009_03_17",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "legal_rights",
+          "entity_id": "TRUST_EXECUTION_AUTHORITY",
+          "state_key": "digital_vs_physical_control",
+          "from": "digital_network_dominated",
+          "to": "physical_medium_dominant",
+          "irreversible": true,
+          "evidence": "PHYSICAL_MEDIA_TRANSFER_CERTIFICATE",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_2009_MAR_17_NIGHT"],
+      "cluster_outcome": "核心档案成功转化为微缩胶片与手写索引双备份，脱离远程档案库；奥瑞恩集团无法触发资产冻结，其攻击行为被完整记录。",
+      "next_event_hook": "3月18日零时‘清醒即审判’仪式即将开始，奥瑞恩集团见常规手段失效，将直接切断麦珂的对外通讯并试图在直播现场实施物理绑架。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 441,
+          "timeline_start": "2009-03-17T23:30:00",
+          "timeline_end": "2009-03-17T23:59:59",
+          "scene": "胶片厂地下恒温档案室",
+          "chapter_goal": "完成核心档案的微缩胶片转存与手写索引建立，切断远程数据写入权限。",
+          "chapter_title": "午夜胶片：最后的物理防线",
+          "participants": ["麦珂", "苏菲亚", "老陈（胶片厂厂长）"],
+          "opening_conflict": "距离维克多启动‘数据污染’仅剩15分钟，远程医疗系统警报频发，苏菲亚需在断网状态下手动完成转存。",
+          "info_gap_use": "麦珂精准指挥苏菲亚避开维克多预设的‘数据清洗’逻辑陷阱，选择最古老的模拟信号频段进行传输。",
+          "opponent_reaction": "维克多在远程监控端发现数据流异常中断，误以为是设备故障，开始疯狂重试，反而加速了自身攻击特征的暴露。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "胶片厂地下恒温档案室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "窗外雷声掩盖了机器运转声"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_441_MICROFILM_MASTER",
+              "timeline_scope": "current",
+              "display_name": "《永恒星光核心档案微缩胶片母带》",
+              "kind": "forensic_evidence"
+            },
+            {
+              "artifact_id": "ART_441_HAND_INDEX",
+              "timeline_scope": "current",
+              "display_name": "《2009年3月17日手写索引卡》",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_439_TRUST_CERT",
+              "timeline_scope": "current",
+              "purpose": "作为胶片转存的法律依据对照"
+            }
+          ],
+          "action_sequence": [
+            "麦珂下令切断所有外部网络接口，仅保留内部模拟线路。",
+            "苏菲亚在老陈协助下，将电子文档逐帧投射至胶片，同时进行手写索引编号。",
+            "麦珂亲自核对第一卷胶片的清晰度，确认无数字噪点干扰。",
+            "维克多的攻击指令在远程端被拦截，系统自动标记为‘未知入侵’。"
+          ],
+          "visible_payoff": "两卷微缩胶片完成封装，手写索引卡已加盖胶片厂公章，物理介质脱离数字网络。",
+          "ending": "最后一张索引卡盖好印章，麦珂看着窗外闪电，轻声说：‘现在，他们只能靠猜了。’",
+          "must_include": ["模拟信号传输的细节描写", "手写索引的紧迫感", "维克多远程操作的慌乱"],
+          "must_not_include": ["任何法律判决", "昆廷的出场", "直播画面"],
+          "detailed_synopsis": "2009年3月17日深夜，暴雨如注。麦珂深知维克多将在半小时后启动‘数据污染’程序，试图伪造脑溢血数据以冻结资产。他果断下令切断胶片厂的所有网络连接，只留下那台老旧的模拟胶片冲洗机。苏菲亚在老陈的帮助下，将原本存储在云端的核心档案逐帧投射到微缩胶片上，每一帧都伴随着机械的咔哒声，仿佛时间的倒流。与此同时，她手持钢笔，在特制的索引卡上密密麻麻地写下文件编号和校验码，笔尖划过纸张的沙沙声在空旷的地下室里回荡。麦珂在一旁紧盯着监视器，屏幕上显示着远程医疗系统的异常波动——维克多正在疯狂尝试注入虚假数据，却因网络被物理切断而屡屡失败。维克多在监控室里急得满头大汗，对着麦克风大吼大叫，声音因为语速过快而被系统误判为操作失误，自动触发了‘违规操作’警报。随着最后一卷胶片冲洗完毕，麦珂拿起刚盖好印章的手写索引卡，嘴角露出一丝冷笑：‘数字世界已经死了，现在，只有物理证据活着。’"
+        },
+        {
+          "chapter_id": 442,
+          "timeline_start": "2009-03-18T00:00:00",
+          "timeline_end": "2009-03-18T01:30:00",
+          "scene": "海平线剧场后台控制室 & 胶片厂安全区",
+          "chapter_goal": "莱昂·周发现异常流量波动，启动物理隔离协议，确认麦珂生理状态正常，完成控制权转移。",
+          "chapter_title": "静默的审判：流量中的真相",
+          "participants": ["麦珂", "莱昂·周", "苏菲亚（远程连线）"],
+          "opening_conflict": "零点整，‘清醒即审判’倒计时启动，奥瑞恩集团试图通过备用信道再次注入数据，莱昂·周必须在毫秒级内识别并阻断。",
+          "info_gap_use": "麦珂早已预判维克多会启用备用信道，提前在莱昂·周的系统中植入了‘异常流量特征码’，使其能自动识别并报警。",
+          "opponent_reaction": "维克多发现备用信道也被拦截，被迫放弃远程攻击，转而准备在直播现场实施物理绑架，但此时已失去先机。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "海平线剧场后台控制室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "屏幕上的波形图突然剧烈跳动"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_441_MICROFILM_MASTER",
+              "timeline_scope": "current",
+              "purpose": "作为麦珂生理正常的旁证，证明数据未被篡改"
+            },
+            {
+              "artifact_id": "ART_441_HAND_INDEX",
+              "timeline_scope": "current",
+              "purpose": "展示给莱昂·周看，确认物理介质已安全"
+            }
+          ],
+          "action_sequence": [
+            "莱昂·周在全程监听中发现异常流量波动，立即向麦珂汇报。",
+            "麦珂展示刚打印出的胶片索引卡，确认物理介质安全。",
+            "莱昂·周启动物理隔离协议，彻底切断所有远程连接。",
+            "麦珂的生理指标监测仪显示完全正常，维克多的攻击彻底失败。"
+          ],
+          "visible_payoff": "莱昂·周确认麦珂生理指标完全正常，数字网络已被彻底剥离，奥瑞恩集团的攻击被实时映射存档。",
+          "ending": "莱昂·周摘下耳机，长舒一口气：‘他们输了，而且输得一败涂地。’麦珂点头，看向穹顶入口，那里刻着‘场馆铭牌’的新字样。",
+          "must_include": ["莱昂·周发现异常流量的细节", "麦珂展示物理介质的动作", "维克多失败的滑稽反应"],
+          "must_not_include": ["昆廷的康复", "法律层面的最终判决", "全球直播的具体内容"],
+          "detailed_synopsis": "凌晨零点，海平线剧场后台控制室内，莱昂·周正全神贯注地盯着屏幕上的流量波形图。突然，一条异常的红色曲线在图表上剧烈跳动，那是维克多试图通过备用信道注入虚假数据的信号。莱昂·周立刻意识到这是麦珂预判过的陷阱，他迅速在键盘上敲击代码，启动了预先设置的‘异常流量特征码’拦截程序。与此同时，麦珂在胶片厂安全区内，将刚打印好的微缩胶片索引卡举到镜头前，向莱昂·周展示：‘看，这就是我们的底牌。’莱昂·周看到那张清晰的手写索引卡，紧绷的神经终于放松下来。他立即下达指令，彻底切断了所有远程连接，将麦珂的医疗系统完全隔离在物理介质之外。屏幕上的波形图瞬间归于平静，麦珂的生理指标监测仪显示一切正常——没有脑溢血，没有数据污染，只有真实的生命律动。而在千里之外的监控室里，维克多看着自己精心设计的攻击方案彻底落空，气得摔碎了手中的咖啡杯，嘴里骂骂咧咧地喊着‘该死的模拟信号！’，却不知自己的声音早已被系统自动存档，成为了日后法庭上的铁证。麦珂看着莱昂·周，眼中闪过一丝坚定：‘现在，轮到我们在穹顶入口进行真正的审判了。’"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2009",
+    "character_states": [
+      {
+        "character_id": "MACO",
+        "state_key": "health_status",
+        "new_state": "physically_secure_with_microfilm_backup",
+        "description": "麦珂生理指标完全正常，核心档案已转为物理介质，不再受数字网络威胁。"
+      },
+      {
+        "character_id": "LEON_ZHOU",
+        "state_key": "trust_level",
+        "new_state": "strategic_alliance_confirmed",
+        "description": "莱昂·周对麦珂的预判能力产生绝对信任，从技术执行者转变为战略盟友。"
+      },
+      {
+        "character_id": "SOPHIA",
+        "state_key": "authorization_level",
+        "new_state": "independent_crisis_handler",
+        "description": "苏菲亚获得独立处理危机事件的授权，成功完成物理介质转存。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": ["麦珂", "莱昂·周"],
+        "change": "从上下级关系升级为战略盟友，基于共同对抗奥瑞恩集团的行动。"
+      },
+      {
+        "pair": ["麦珂", "苏菲亚"],
+        "change": "从指导与被指导关系升级为并肩作战的战友，苏菲亚展现出独立解决问题的能力。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset_id": "TRUST_ASSETS",
+        "status": "protected_by_physical_medium",
+        "description": "信托资产因核心档案转为物理介质而免受数字网络攻击，资产冻结条款无法触发。"
+      },
+      {
+        "asset_id": "DATA_EVIDENCE",
+        "status": "archived_as_self_incriminating",
+        "description": "奥瑞恩集团的攻击行为被实时映射存档，成为自爆证据。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "subject": "麦珂",
+        "location": "海平线剧场安全区",
+        "health_status": "normal",
+        "description": "麦珂位于安全区，生理指标完全正常，未受任何数据污染影响。"
+      },
+      {
+        "subject": "昆廷",
+        "location": "医院（病休中）",
+        "health_status": "stable",
+        "description": "昆廷仍处于病休状态，但其康复后的管理权移交计划已启动。"
+      }
+    ],
+    "open_threads": [
+      "3月18日零时‘清醒即审判’仪式的现场直播",
+      "奥瑞恩集团可能采取的物理绑架行动",
+      "三位‘星火调音师’学员的紧急抵达与签署"
+    ],
+    "resolved_threads": [
+      "核心档案的物理隔离与备份",
+      "奥瑞恩集团首次‘数据污染’尝试的挫败",
+      "麦珂生理安全的确认"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "3月18日零时‘清醒即审判’仪式即将开始，奥瑞恩集团见常规手段失效，将直接切断麦珂的对外通讯并试图在直播现场实施物理绑架，迫使麦珂必须在穹顶入口完成最终的身份确认与全球合唱引导。"
+  }
+}

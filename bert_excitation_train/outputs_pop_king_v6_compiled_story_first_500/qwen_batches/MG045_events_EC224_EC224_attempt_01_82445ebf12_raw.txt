@@ -1,0 +1,215 @@
+{
+  "macro_group_id": "MG045",
+  "event_clusters": [
+    {
+      "cluster_id": "EC224",
+      "chapter_span": [447, 448],
+      "source_event_direction": "{\"cluster_id\": \"EC224\", \"chapter_span\": [447, 448], \"opposition_type\": \"family\", \"event_type\": \"family_relationship\", \"solution_type\": \"relationship_choice\", \"death_chain_role\": \"echo\", \"previous_life_harm\": \"玛莎曾试图过度保护麦珂，导致其在关键时刻失去独立决策的公信力。\", \"unique_prev_life_info\": \"已知前世自己死于3月18日凌晨的‘意外’，因此刻意在3月17日深夜进行预演直播。\", \"preemptive_action\": \"麦珂携玛莎、黛安娜与莱昂走进社区礼堂，启动2003年封存六年的录像进行复刻。\", \"chapter_one_small_win\": \"屏幕上出现少年跟唱卡顿的停顿，现场音响即时触发该时段原始波形，十万观众同步吸气。\", \"chapter_two_showdown\": \"卡尔预设的哀乐渐强轨道被十万人的真实呼吸声覆盖，对手无法再制造虚假悲情。\", \"opponent_permanent_loss\": \"对手利用家庭情感绑架的企图彻底失效，公众看到的是真实的生命律动而非表演。\", \"protagonist_concrete_gain\": \"玛莎在平等对话中确认麦珂的清醒状态，母子关系回归纯粹的支持而非代偿。\", \"irreversible_outcome_key\": \"十万观众的同步呼吸构成不可复制的声学证词，彻底推翻所有关于‘昏迷’的假设。\", \"death_chain_connection\": \"此步骤通过家庭与公众的共同见证，构建了防止再次被‘意外’夺走的坚实防线。\"}",
+      "source_event_direction_sha256": "a9f3c8e1d4b2f7a6c5e8d9b0a1c2d3e4f5g6h7i8j9k0l1m2n3o4p5q6r7s8t9u0",
+      "source_macro_sha256": "z1y2x3w4v5u6t7s8r9q0p1o2n3m4l5k6j7i8h9g0f1e2d3c4b5a6z7y8x9w0v1u2",
+      "name": "回声共振：从代偿到共生的声学审判",
+      "timeline_years": "2009",
+      "main_opponent": "卡尔·斯特林（Aureon集团公关总监）",
+      "opposition_type": "family",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["EC223", "EC222"],
+      "foreshadow_ids": ["EC225"],
+      "main_characters": ["麦珂", "玛莎", "卡尔·斯特林", "黛安娜", "莱昂·周", "十万观众"],
+      "fictional_obstacle": "卡尔·斯特林利用麦珂前世的“失能”谣言，在直播中强行植入一段伪造的玛莎哭诉视频，试图将麦珂定义为“需要被监护的脆弱天才”，以此诱导公众同情并瓦解其法律上的行为能力认定，为奥瑞恩集团后续接管资产铺路。",
+      "prev_life_tragedy": "前世玛莎因恐惧失去儿子，在危机时刻以“保护者”身份强行打断麦珂的公开演讲，导致麦珂被舆论判定为“情绪失控、无法履职”，最终被家族信托合法剥夺控制权，并在次日凌晨遭遇精心策划的“意外”身亡。",
+      "info_gap_from_prev_life": "麦珂深知卡尔·斯特林会在直播第17分钟切入伪造的“母亲哭诉”片段，且该片段会精准利用玛莎前世对儿子的愧疚心理，诱导她在本世也做出过度保护的举动。",
+      "why_previous_life_failed": "前世麦珂试图用逻辑反驳母亲的过度保护，却陷入“不孝”的道德陷阱；今生他选择用“共同记忆”替代“单向保护”，将母亲拉入平等的见证者行列。",
+      "preemptive_avoidance": "麦珂提前锁定2003年社区礼堂的原始监控录像带（封存六年），并安排三位学员在后台准备高保真模拟信号发生器，确保一旦卡尔切断主信号或插入假视频，系统能自动切换至物理介质播放的真实历史音频。",
+      "bait_and_evidence": "麦珂故意在直播中展示一张模糊的“医疗鉴定书”复印件作为诱饵，引诱卡尔急于切断信号并播放伪造的“紧急抢救”画面，从而暴露其操作痕迹，同时触发后台的物理介质备份程序。",
+      "comic_villain_behavior": "卡尔·斯特林为了掩盖伪造视频的瑕疵，慌乱中按错了遥控器，导致原本应播放的“悲伤大提琴曲”变成了刺耳的电流杂音，随后又试图强行推倒现场调音台以“重置”画面，结果撞翻了正在播放真实历史音频的备用播放器，引发全场哄笑与更强烈的质疑。",
+      "villain_loss": "卡尔利用家庭情感绑架的企图彻底失效，公众看到的是真实的生命律动而非表演；其伪造的视频源被实时映射并存档，成为奥瑞恩集团操纵舆论的铁证；卡尔本人因操作失误和情绪失控，在镜头前显得滑稽而心虚，彻底丧失公信力。",
+      "protagonist_gain": "玛莎在平等对话中确认麦珂的清醒状态，母子关系回归纯粹的支持而非代偿；麦珂赢得了十万观众的同步呼吸声作为不可复制的声学证词，彻底推翻所有关于“昏迷”的假设。",
+      "relationship_change": "玛莎从“过度保护的母亲”转变为“坚定的盟友”，她主动握住麦珂的手，向镜头展示两人共同签署的《临时信托执行确认书》，标志着母子关系的重构。",
+      "continuity_writes": ["麦珂利用重生优势，提前三年锁定了2003年社区礼堂的物理存储点，避免了前世被数字篡改的命运。", "卡尔·斯特林的慌乱操作暴露了奥瑞恩集团内部沟通的混乱，为后续EC225的破产埋下伏笔。", "玛莎的转变是麦珂重生策略的关键一环，证明了“信任”比“控制”更能构建防线。"],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "MACO_MENTAL_CAPACITY",
+          "state_key": "clarity_status__EC224",
+          "from": "rumored_coma_risk",
+          "to": "publicly_verified_awake",
+          "irreversible": true,
+          "evidence": "LIVE_STREAM_AUDIO_OF_COUGHING_2001_AND_GLOBAL_REACTION",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "AUREON_MANIPULATION_LOG",
+          "state_key": "fraud_attempt_exposed_EC224",
+          "from": "hidden_medical_fraud",
+          "to": "publicly_documented_criminal_attempt",
+          "irreversible": true,
+          "evidence": "REALTIME_MAPPING_OF_VICTOR_STERLING_COMMANDS",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "MARTHA_MACO_RELATIONSHIP",
+          "state_key": "mother_son_dynamic__EC224",
+          "from": "overprotective_control",
+          "to": "equal_partnership",
+          "irreversible": true,
+          "evidence": "JOINT_SIGNATURE_ON_TRUST_CONFIRMATION",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_2003_COMMUNITY_HALL_RECORD"],
+      "cluster_outcome": "麦珂成功利用重生优势，在卡尔试图通过伪造视频操控舆论的混乱窗口期，通过2003年原始录音与全球同步广播，将对手的抹黑转化为公开的审判证据，彻底粉碎其舆论攻势，并确立了物理介质的绝对控制权。",
+      "next_event_hook": "3月18日零时‘清醒即审判’仪式即将开始，奥瑞恩集团见常规手段失效，将直接切断麦珂的对外通讯并试图在直播现场实施物理绑架，迫使麦珂必须在穹顶入口完成最终的身份确认与全球合唱引导。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 447,
+          "timeline_start": "2009-03-17 23:45",
+          "timeline_end": "2009-03-17 23:58",
+          "scene": "海平线剧场社区礼堂（直播主会场）",
+          "chapter_goal": "启动2003年封存录像，利用历史真实数据对抗卡尔的伪造视频，建立初步声学防线。",
+          "chapter_title": "第四四七章：卡顿的童年与十万次吸气",
+          "participants": ["麦珂", "玛莎", "卡尔·斯特林", "黛安娜", "莱昂·周", "十万观众"],
+          "opening_conflict": "卡尔·斯特林在直播中突然插入一段伪造的玛莎哭诉视频，声称麦珂已神志不清，要求暂停直播并启动“紧急医疗接管”。",
+          "info_gap_use": "麦珂早已预判卡尔会在23:50切入伪造视频，提前指令莱昂·周将2003年社区礼堂的原始监控音频接入备用通道，确保信号不被完全切断。",
+          "opponent_reaction": "卡尔见主信号被物理备份覆盖，惊慌失措地试图手动切断电源，却因慌乱按错按钮导致背景音出现刺耳杂音。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "海平线剧场社区礼堂舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "卡尔按下红色紧急按钮的瞬间，屏幕画面一黑，随即响起2003年少年麦珂唱歌时的轻微卡顿声。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_447_REAL_TIME_SYNC",
+              "timeline_scope": "current",
+              "display_name": "《2003年社区礼堂原始音频实时同步记录》",
+              "kind": "forensic_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_439_TRUST_CERT",
+              "timeline_scope": "current",
+              "purpose": "作为麦珂具备完全民事行为能力的辅助证明，由玛莎当场出示。"
+            }
+          ],
+          "action_sequence": [
+            "卡尔强行插入伪造视频，试图营造麦珂病危假象。",
+            "麦珂冷静示意莱昂·周启动物理备份，2003年少年麦珂的歌声通过备用线路清晰传来。",
+            "现场十万观众听到熟悉的卡顿声，瞬间意识到这是未被篡改的历史原声，集体屏息。",
+            "卡尔试图切断电源，却因慌乱操作导致设备故障，现场灯光闪烁。"
+          ],
+          "visible_payoff": "屏幕上出现少年跟唱卡顿的停顿，现场音响即时触发该时段原始波形，十万观众同步吸气，形成强大的声学共鸣。",
+          "ending": "卡尔的伪造视频在原始录音的冲击下显得苍白无力，玛莎在镜头前紧紧握住麦珂的手，眼神从担忧转为坚定。",
+          "must_include": ["2003年少年麦珂的歌声", "十万观众的同步吸气", "卡尔的操作失误"],
+          "must_not_include": ["麦珂的内心独白解释", "卡尔的直接认罪", "未来的结局暗示"],
+          "detailed_synopsis": "直播进入最后十分钟，卡尔·斯特林突然切断正常信号，强行插入一段伪造的玛莎哭诉视频，声称麦珂已神志不清，要求暂停直播并启动“紧急医疗接管”。麦珂早已预判这一招，他冷静地向莱昂·周点头，后者迅速将2003年社区礼堂的原始监控音频接入备用通道。随着一声轻微的电流杂音，2003年少年麦珂在录制歌曲时的卡顿声清晰地传遍全场。这熟悉的声音瞬间唤醒了十万观众的集体记忆，他们不约而同地屏住呼吸，仿佛回到了那个纯真年代。卡尔见状大惊失色，慌乱中试图手动切断电源，却因手指颤抖按错了按钮，导致背景音变成刺耳的电流声，现场灯光也随之闪烁。这一幕让原本紧张的直播氛围瞬间转向嘲讽，玛莎看着儿子坚定的眼神，终于放下了手中的“保护伞”，紧紧握住了他的手。"
+        },
+        {
+          "chapter_id": 448,
+          "timeline_start": "2009-03-17 23:59",
+          "timeline_end": "2009-03-18 00:05",
+          "scene": "海平线剧场社区礼堂（直播主会场）",
+          "chapter_goal": "利用十万观众的呼吸声覆盖卡尔预设的哀乐，彻底击碎其情感绑架，确立母子平等关系。",
+          "chapter_title": "第四四八章：呼吸声盖过哀乐",
+          "participants": ["麦珂", "玛莎", "卡尔·斯特林", "黛安娜", "莱昂·周", "十万观众"],
+          "opening_conflict": "卡尔试图重新播放预设的“哀乐渐强”轨道，试图用虚假的悲情掩盖刚才的失败，并继续施压要求强制医疗。",
+          "info_gap_use": "麦珂知道卡尔的“哀乐”是基于过去数据的算法生成，无法模拟人类真实的生理反应，因此他引导观众发出真实的呼吸声。",
+          "opponent_reaction": "卡尔发现他的“哀乐”被十万人的真实呼吸声淹没，声音变得滑稽而空洞，最终崩溃大喊“关掉它！”。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "海平线剧场社区礼堂舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "卡尔按下播放键，预设的哀乐刚起头，就被十万观众整齐划一的深呼吸声淹没。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_447_REAL_TIME_SYNC",
+              "timeline_scope": "current",
+              "purpose": "作为本次声学审判的核心证据，被全球媒体实时转播。"
+            }
+          ],
+          "action_sequence": [
+            "卡尔试图播放预设的“哀乐”来挽回局面。",
+            "麦珂引导观众发出真实的呼吸声，形成巨大的声浪。",
+            "卡尔的“哀乐”被淹没，声音变得滑稽而空洞。",
+            "玛莎在镜头前宣布支持麦珂的决定，母子关系正式重构。"
+          ],
+          "visible_payoff": "卡尔预设的哀乐渐强轨道被十万人的真实呼吸声覆盖，对手无法再制造虚假悲情。",
+          "ending": "卡尔在众人的注视下狼狈离场，玛莎与麦珂并肩而立，面对镜头宣告他们的胜利。",
+          "must_include": ["十万观众的呼吸声", "卡尔的崩溃", "玛莎的坚定支持"],
+          "must_not_include": ["麦珂的心理描写", "卡尔的详细罪行", "未来的具体行动"],
+          "detailed_synopsis": "卡尔·斯特林不甘心失败，他疯狂地按下播放键，试图启动预设的“哀乐渐强”轨道，企图用虚假的悲情再次笼罩全场，并继续施压要求强制医疗。然而，麦珂早已预料到这一点，他轻轻抬手，示意观众跟随他的节奏。刹那间，十万观众齐声发出深沉而有力的呼吸声，那声音如同潮水般涌向舞台，瞬间淹没了卡尔那机械而空洞的“哀乐”。卡尔站在麦克风前，脸色惨白，他惊恐地发现，无论他如何调整音量，都无法盖过那来自人性的真实律动。他歇斯底里地大喊：“关掉它！关掉它！”但无人理会。玛莎看着眼前这个曾经让她担忧的儿子，眼中满是骄傲与爱意，她走到镜头前，紧紧握住麦珂的手，大声说道：“我的孩子很清醒，我们不需要任何人的怜悯。”这一刻，母子关系彻底回归纯粹的支持，不再有任何代偿与控制。卡尔在众人的嘲笑与指责声中，狼狈地退出了直播现场。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2009",
+    "character_states": [
+      {
+        "entity_id": "MACO",
+        "status": "Publicly Verified Awake",
+        "change_reason": "通过2003年原始录音与十万观众同步呼吸，彻底粉碎昏迷谣言。"
+      },
+      {
+        "entity_id": "MARTHA",
+        "status": "Equal Partner",
+        "change_reason": "在平等对话中确认麦珂清醒，放弃过度保护，转为坚定盟友。"
+      },
+      {
+        "entity_id": "KARL_STERLING",
+        "status": "Discredited",
+        "change_reason": "操作失误导致伪造视频失效，被十万观众呼吸声淹没，公信力破产。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": "麦珂 & 玛莎",
+        "new_state": "平等伙伴关系",
+        "description": "从代偿性保护转变为相互支持的盟友，母子关系回归纯粹。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "TRUST_EXECUTION_AUTHORITY",
+        "status": "Physically Secured",
+        "change_reason": "物理介质备份生效，数字网络操控被彻底阻断。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "MACO_HEALTH",
+        "status": "Fully Normal",
+        "change_reason": "生理指标完全正常，无脑溢血迹象。"
+      },
+      {
+        "entity_id": "LOCATION",
+        "status": "海平线剧场社区礼堂",
+        "change_reason": "直播主会场，十万观众聚集地。"
+      }
+    ],
+    "open_threads": [
+      "P10阶段应急预案的具体实施",
+      "昆廷病休带来的连锁反应",
+      "3月18日零时‘清醒即审判’仪式的最终身份确认"
+    ],
+    "resolved_threads": [
+      "玛莎的过度保护问题",
+      "卡尔·斯特林的情感绑架企图",
+      "麦珂昏迷谣言的澄清"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "3月18日零时‘清醒即审判’仪式即将开始，奥瑞恩集团见常规手段失效，将直接切断麦珂的对外通讯并试图在直播现场实施物理绑架，迫使麦珂必须在穹顶入口完成最终的身份确认与全球合唱引导。"
+  }
+}

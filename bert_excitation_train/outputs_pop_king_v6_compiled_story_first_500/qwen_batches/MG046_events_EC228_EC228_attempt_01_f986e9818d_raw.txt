@@ -1,0 +1,186 @@
+{
+  "macro_group_id": "MG046",
+  "event_clusters": [
+    {
+      "cluster_id": "EC228",
+      "chapter_span": [455, 456],
+      "source_event_direction": "{\"cluster_id\": \"EC228\", \"chapter_span\": [455, 456], \"opposition_type\": \"technical\", \"event_type\": \"creation\", \"solution_type\": \"performance_proof\", \"death_chain_role\": \"reveal\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456",
+      "source_macro_sha256": "f9e8d7c6b5a4321098765432109876543210fedcba9876543210fedcba987654",
+      "name": "物理介质铁证：微缩胶片的无声审判",
+      "timeline_years": "2009",
+      "main_opponent": "奥瑞恩集团技术欺诈部",
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "performance_proof",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["EC226", "EC227"],
+      "foreshadow_ids": ["EC229"],
+      "main_characters": ["麦珂", "莱昂·周", "苏菲亚", "维克多"],
+      "fictional_obstacle": "奥瑞恩集团利用‘数据污染’模型伪造麦珂脑溢血昏迷的数字诊断书，并试图通过黑客手段入侵核心档案库，将关键证据替换为虚假日志以掩盖其资产冻结令的非法性。",
+      "prev_life_tragedy": "前世苏菲亚的核心档案被远程黑客攻击，数字备份被篡改导致关键证据丢失，无法自证清白。",
+      "info_gap_from_prev_life": "对手习惯使用‘数据污染’手段破坏数字存储，迫使物理介质成为唯一真相来源。",
+      "why_previous_life_failed": "过度依赖云端备份和数字签名，未建立离线物理防篡改机制，导致在系统被攻破后瞬间失去所有话语权。",
+      "preemptive_avoidance": "麦珂利用重生优势，提前将核心档案转为微缩胶片加手写索引双备份，并切断网络接口，彻底规避了数字层面的攻击路径。",
+      "bait_and_evidence": "故意保留一个看似脆弱的数字接口诱使黑客入侵，实则触发自动离线保护机制；同时准备手写索引编号与胶片序列号作为不可伪造的物理铁证。",
+      "comic_villain_behavior": "维克多因贪婪急于抢功，强行命令手下绕过安全协议直接注入伪造数据，结果反而触发了更高级别的警报，导致其伪造的‘健康趋势预测模型’数据流在直播中实时跳帧、乱码，像小丑一样在屏幕上自我暴露。",
+      "villain_loss": "所有基于数字篡改的指控瞬间瓦解，对手的技术欺诈行为被全程直播曝光，其算法信誉彻底破产。",
+      "protagonist_gain": "微缩胶片与手写索引双备份存入场馆铭牌后安全区，确保证据永久不可篡改，法律上确立麦珂对资产的绝对控制权。",
+      "relationship_change": "莱昂·周从监听者转变为物理证据的守护者，对麦珂的信任从‘利用’升华为‘生死相托’；三位学员确认了物理介质的神圣性，成为新的信托执行核心。",
+      "continuity_writes": [
+        "第455章：黑客入侵失败，系统触发物理介质离线保护，入侵日志被实时投射到穹顶大屏。",
+        "第456章：对手抛出伪造数字日志，苏菲亚逐条展示手写索引编号驳斥，形成跨维度防伪铁证。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "DIGITAL_EVIDENCE_TRUST",
+          "state_key": "integrity_status__EC228",
+          "from": "compromised_by_hacker",
+          "to": "physically_verified_immutable",
+          "irreversible": true,
+          "evidence": "MICROFILM_INDEX_AND_INJECTION_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_MATRIX_001",
+          "state_key": "freeze_petition_validity",
+          "from": "digitally_forged_active",
+          "to": "legally_nullified_by_physical_proof",
+          "irreversible": true,
+          "evidence": "LIVE_BROADCAST_OF_HANDWRITTEN_INDEX_VERIFICATION",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_2009_TECH_LIMITS"],
+      "cluster_outcome": "奥瑞恩集团试图用数字伪造手段抹杀麦珂身份的计划彻底破产，物理介质成为不可撼动的真理锚点，麦珂在直播现场完成了从‘被审判者’到‘审判者’的身份逆转。",
+      "next_event_hook": "3月18日零时‘清醒即审判’仪式倒计时开始，奥瑞恩集团见常规手段失效，将直接切断麦珂的对外通讯并试图在直播现场实施物理绑架，迫使麦珂必须在穹顶入口完成最终的身份确认与全球合唱引导。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 455,
+          "timeline_start": "2009-03-17T23:15:00",
+          "timeline_end": "2009-03-17T23:45:00",
+          "scene": "昆廷缺席时的紧急法庭旁听席与虚拟演播室",
+          "chapter_goal": "诱导黑客入侵并触发物理介质离线保护，记录入侵日志。",
+          "chapter_title": "幽灵入侵与沉默的磁带",
+          "participants": ["麦珂", "苏菲亚", "莱昂·周", "黑客（远程）"],
+          "opening_conflict": "奥瑞恩集团突然切断麦珂所有数字通讯，声称其‘突发脑溢血’，并启动远程数据清洗程序试图覆盖核心档案。",
+          "info_gap_use": "麦珂早已预判对手会攻击数字库，故核心档案已物理隔离，仅留一个诱饵端口。",
+          "opponent_reaction": "维克多以为得手，疯狂下令加速数据污染进程，却不知自己正在向麦珂的陷阱投递实锤。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "场馆主控室与虚拟演播室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "屏幕闪烁红光，数据流中断"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_455_INJECTION_LOG",
+              "timeline_scope": "current",
+              "display_name": "《黑客入侵与物理隔离触发日志》",
+              "kind": "forensic_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_446_PHYSICAL_BACKUP",
+              "timeline_scope": "current",
+              "purpose": "作为离线保护的实体锚点，证明数据未被篡改"
+            }
+          ],
+          "action_sequence": [
+            "黑客尝试注入伪造的‘脑溢血’诊断数据，系统检测到异常流量模式。",
+            "麦珂冷眼旁观，苏菲亚按下物理开关，切断所有网络连接，激活微缩胶片存储器的离线保护。",
+            "入侵日志被实时捕获，并在穹顶大屏上以绿色代码流形式滚动播放，显示‘物理介质已锁定’。",
+            "莱昂·周当场朗读日志中的时间戳与IP地址，指出这是典型的‘数据污染’攻击特征。"
+          ],
+          "visible_payoff": "黑客入侵失败，系统自动触发物理介质离线保护机制并记录入侵日志，对手的第一次技术欺诈宣告破产。",
+          "ending": "全场观众看着屏幕上滚动的入侵日志，意识到所谓的‘昏迷’不过是对方惊慌失措的掩饰。",
+          "must_include": ["2009年模拟信号传输细节", "微缩胶片物理锁死特写"],
+          "must_not_include": ["现代量子加密技术", "麦珂主动攻击黑客"],
+          "detailed_synopsis": "凌晨23点15分，奥瑞恩集团的技术团队趁昆廷缺席，试图通过远程医疗云伪造麦珂的脑溢血报告，并启动‘健康趋势预测模型’进行数据污染，意图让法院发布紧急资产接管令。麦珂早已料到这一招，她利用重生优势，提前将核心档案从远程库彻底转为微缩胶片加手写索引双备份，并切断了网络。当黑客尝试入侵那个故意留下的诱饵端口时，系统并未如对手预期般被篡改，反而触发了物理介质离线保护机制。巨大的入侵日志被实时投射到穹顶大屏上，绿色的代码流清晰地记录了每一次失败的访问尝试和IP追踪。苏菲亚站在主控台旁，手指轻轻抚过那卷泛着幽蓝光泽的微缩胶片，莱昂·周则对着麦克风冷冷地播报着：“奥瑞恩集团的服务器正在试图覆盖真相，但我们的物理备份已经锁死。”维克多在后台看到这一幕，脸色惨白，他没想到麦珂竟然早就做好了这种最原始也最坚固的准备。"
+        },
+        {
+          "chapter_id": 456,
+          "timeline_start": "2009-03-17T23:45:00",
+          "timeline_end": "2009-03-18T00:15:00",
+          "scene": "直播现场与物理安全区入口",
+          "chapter_goal": "对手抛出伪造数字日志，苏菲亚展示手写索引编号逐条驳斥，完成身份确认。",
+          "chapter_title": "手写索引的终极审判",
+          "participants": ["麦珂", "苏菲亚", "维克多", "莱昂·周", "三位星火调音师学员"],
+          "opening_conflict": "奥瑞恩集团见数字攻击失败，被迫抛出伪造的数字日志，声称是麦珂本人操作失误导致的系统崩溃，试图混淆视听。",
+          "info_gap_use": "对手不知道苏菲亚的手写索引编号是唯一的、不可复制的物理防伪标记。",
+          "opponent_reaction": "维克多为了掩盖错误，强行要求律师团出示伪造的日志，结果被苏菲亚当众逐条驳斥，逻辑链条瞬间崩塌。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "穹顶入口与物理安全区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "大屏幕切换至手写索引对比图"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_446_PHYSICAL_BACKUP",
+              "timeline_scope": "current",
+              "purpose": "展示手写索引编号与胶片序列号的对应关系"
+            },
+            {
+              "artifact_id": "ART_455_INJECTION_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为背景证据，证明对手曾试图篡改"
+            }
+          ],
+          "action_sequence": [
+            "奥瑞恩律师团拿出一份伪造的数字日志，声称是麦珂操作失误导致的数据丢失。",
+            "苏菲亚走上前，从怀中取出微缩胶片和手写索引本，当众宣读每一个编号。",
+            "她将手写索引编号与胶片上的序列号一一对应，指出对手伪造日志中的编号根本不存在于物理介质中。",
+            "莱昂·周同步播放各地媒体的验证记录，证明手写索引编号与胶片序列号已形成跨维度的物理防伪铁证。",
+            "麦珂在直播镜头前，将微缩胶片与手写索引双备份正式存入场馆铭牌后的物理安全区，完成最终的身份确认。"
+          ],
+          "visible_payoff": "对手试图用伪造的数字日志混淆视听，被苏菲亚展示的手写索引编号逐条驳斥，所有基于数字篡改的指控瞬间瓦解。",
+          "ending": "2009年3月18日零时，随着最后一枚胶片归位，麦珂的生理指标完全正常且处于高度清醒状态，奥瑞恩集团的伪造医疗文件被实时映射为‘数据污染’铁证并存档。",
+          "must_include": ["手写索引编号的逐条宣读", "场馆铭牌后的物理安全区封存动作"],
+          "must_not_include": ["麦珂情绪失控", "对手主动认罪"],
+          "detailed_synopsis": "面对入侵失败的尴尬局面，奥瑞恩集团孤注一掷，律师团抛出一份伪造的数字日志，声称是麦珂本人在操作过程中失误导致了系统崩溃，试图将责任推给受害者。然而，他们低估了苏菲亚对物理介质的执着。苏菲亚从容地走上舞台，手中紧握着那卷微缩胶片和一本泛黄的手写索引本。她没有争辩，只是平静地开始宣读每一个手写索引编号，并与胶片上的序列号一一对应。每一声宣读，都像是一记重锤，敲碎了对手精心编织的谎言网。当对手拿出伪造的日志试图辩解时，苏菲亚指着其中几个不存在的编号，冷冷地说道：“你们的数字世界可以伪造一切，但这本手册上的笔迹和这卷胶片上的序列号，是你们永远无法复制的真理。”莱昂·周同步播放了来自世界各地的媒体验证记录，证明这些编号已经形成了跨维度的物理防伪铁证。在万众瞩目下，麦珂将微缩胶片与手写索引双备份正式存入场馆铭牌后的物理安全区，完成了最终的法定身份确认。这一刻，奥瑞恩集团的所有技术欺诈行为被全程直播曝光，他们的信誉彻底崩塌。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2009",
+    "character_states": [
+      {"entity_id": "MAIKE", "state_key": "mental_capacity_status", "value": "fully_awake_and_clear"},
+      {"entity_id": "VICTOR_STERLING", "state_key": "tech_credibility", "value": "completely_broken"},
+      {"entity_id": "LEON_ZHOU", "state_key": "trust_level", "value": "absolute_alliance"}
+    ],
+    "relationship_states": [
+      {"pair": ["麦珂", "苏菲亚"], "status": "physical_evidence_guardians"},
+      {"pair": ["麦珂", "莱昂·周"], "status": "legal_defense_partners"}
+    ],
+    "rights_and_assets": [
+      {"entity_id": "TRUST_EXECUTION_AUTHORITY", "status": "confirmed_by_physical_backup"},
+      {"entity_id": "ASSET_MATRIX_001", "status": "unfrozen_and_protected"}
+    ],
+    "health_and_location": [
+      {"entity_id": "MAIKE", "health": "normal_vital_signs", "location": "穹顶入口安全区"},
+      {"entity_id": "KUNTING", "health": "recovering", "location": "场外休息区"}
+    ],
+    "open_threads": [
+      "3月18日零时‘清醒即审判’仪式的物理绑架风险",
+      "穹顶入口最终身份确认的全球合唱引导"
+    ],
+    "resolved_threads": [
+      "数字档案被篡改风险",
+      "管理真空导致的资产冻结危机"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "3月18日零时‘清醒即审判’仪式即将开始，奥瑞恩集团见常规手段失效，将直接切断麦珂的对外通讯并试图在直播现场实施物理绑架，迫使麦珂必须在穹顶入口完成最终的身份确认与全球合唱引导。"
+  }
+}

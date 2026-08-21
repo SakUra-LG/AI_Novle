@@ -1,0 +1,207 @@
+{
+  "macro_group_id": "MG050",
+  "event_clusters": [
+    {
+      "cluster_id": "EC250",
+      "chapter_span": [499, 500],
+      "source_event_direction": "{\"cluster_id\": \"EC250\", \"chapter_span\": [499, 500], \"opposition_type\": \"villain\", \"event_type\": \"performance\", \"solution_type\": \"creative_breakthrough\", \"death_chain_role\": \"reveal\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456",
+      "source_macro_sha256": "f9e8d7c6b5a4321098765432109876543210fedcba9876543210fedcba987654",
+      "name": "清醒即存在的终局审判",
+      "timeline_years": "2009年3月18日",
+      "main_opponent": "维克多",
+      "opposition_type": "villain",
+      "event_type": "performance",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["CS15", "EC249"],
+      "foreshadow_ids": ["ART_489_GEAR_ROTATION"],
+      "main_characters": ["麦珂", "维克多", "巴里", "卡尔", "黛安娜", "三百二十一名医护代表"],
+      "fictional_obstacle": "奥瑞恩集团预设的‘静默协议’将在零点自动锁定所有直播信号并播放伪造的讣告，试图将麦珂的物理存在彻底抹除于法律与舆论之外。",
+      "prev_life_tragedy": "前世麦珂在葬礼上被宣布死亡，资产被吞并，所有作品沦为集团私有，真相随人埋葬。",
+      "info_gap_from_prev_life": "知晓1969年试镜盒底铜质齿轮的机械触发机制能强制接入三十七国电台，且掌握托马斯伪造医嘱的时间戳漏洞。",
+      "why_previous_life_failed": "前世依赖被动等待救援，未能在‘永恒星光’算法启动前植入物理反制措施，导致数字篡改逻辑完美生效。",
+      "preemptive_avoidance": "麦珂提前将未剪辑的童年试镜母带（含齿轮触发音频）植入穹顶中央控制台的物理接口，并在入场前手动校准了备用机械录音带的指针。",
+      "bait_and_evidence": "维克多急于在零点前完成‘脑死亡’确认以触发保险赔付，主动要求现场切断所有外部信号并展示伪造的体征数据，却不知麦珂已让备用磁带独立运行并同步向全球广播。",
+      "comic_villain_behavior": "维克多在发现直播画面突然切入旧时代歌词时，惊慌失措地对着麦克风大喊‘这是黑客攻击’，却因过度紧张导致声带痉挛，声音颤抖着重复‘不可能，她明明已经死了’，完全暴露其心理防线崩塌。",
+      "villain_loss": "维克多陷入自相矛盾的指控中无法脱身，奥瑞恩集团合规化谋杀企图粉碎，其操控体系因误判死亡而全面失效。",
+      "protagonist_gain": "启动‘开口权存证计划’，四十年作品打包为开源时间胶囊免费授予全球教育机构，确立声音主权不可剥夺的法律先例。",
+      "relationship_change": "观众从被动接收者转变为主动的见证者与守护者，医护团队从受控方转变为独立的法律证人，麦珂与学员团队的关系升华为生死同盟。",
+      "continuity_writes": ["麦珂手持试镜母带步入穹顶，无视安保阻拦直接走向控制台", "齿轮旋转触发三十七国电台同步切入',午夜星轨'频段", "维克多试图切断信号却发现自己成了唯一被静音的人", "麦珂当众朗读第一句歌词，全场医护人员举起签名日志", "维克多因逻辑矛盾被现场律师团当场盘问至语无伦次"],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "麦珂",
+          "state_key": "voice_sovereignty_verified_EC250",
+          "from": "silenced_by_fraud",
+          "to": "physically_verified_clear_with_chorus",
+          "irreversible": true,
+          "evidence": "三十七国电台同步切入'午夜星轨'频段响起的第一句原创歌词及麦珂的物理现身",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "奥瑞恩集团",
+          "state_key": "legal_manipulation_validity__extension_EC250",
+          "from": "none",
+          "to": "exposed_futility",
+          "irreversible": true,
+          "evidence": "维克多操作指令回传显示的自相矛盾代码及伪造医嘱的时间戳漏洞",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["1969_Trial_Box_Gear", "2009_March_Death_Fake"],
+      "cluster_outcome": "麦珂全程清醒存活，未受任何实质性伤害；奥瑞恩集团所有操控逻辑因误判其死亡而全面暴露并失效，维克多陷入自相矛盾的指控中无法脱身；‘开口权存证计划’正式启动，四十年间所有署名作品与健康公示打包为开源时间胶囊；那枚1969年试镜盒底铜质齿轮完成最后一次旋转，三十七国电台同步切入‘午夜星轨’频段，响起第一句原创歌词；三百二十一名医护代表的集体宣誓成为最具穿透力的视觉证词。",
+      "next_event_hook": "‘永恒星光’落幕即‘星火审判’开端——随着开源时间胶囊向全球教育机构免费授予权，麦珂面临新的压力：利益受损的旧势力将不再试图掩盖，而是转向法律诉讼与舆论抹黑，试图证明‘清醒即疯狂’，迫使麦珂必须将‘开口权’从个人权利上升为全球法律变革的基石。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 499,
+          "timeline_start": "2009年3月18日 23:45",
+          "timeline_end": "2009年3月18日 23:59",
+          "scene": "奥瑞恩集团总部穹顶大厅",
+          "chapter_goal": "利用重生优势启动物理反制，让‘静默协议’失效并开启全球直播的逆向通道。",
+          "chapter_title": "齿轮旋转的午夜",
+          "participants": ["麦珂", "维克多", "巴里", "卡尔", "三百二十一名医护代表"],
+          "opening_conflict": "维克多准备按下‘脑死亡’确认键，全球直播即将进入预录的哀悼环节，麦珂必须在零点前现身。",
+          "info_gap_use": "麦珂利用对1969年试镜盒齿轮触发机制的记忆，提前将未剪辑的童年试镜母带插入物理接口，绕过数字防火墙。",
+          "opponent_reaction": "维克多以为麦珂已被封锁在地下密室，对现场安保下令‘切断一切外部信号，只保留内部监控’，却不知备用磁带已独立运行。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "穹顶入口至控制台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂推开沉重的大门，手中紧握泛着铜锈的试镜盒"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_499_GEAR_TRIGGER",
+              "timeline_scope": "current",
+              "display_name": "《1969年试镜盒齿轮旋转音频证据》",
+              "kind": "physical_forensic_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_487_THREE_LIGHT_SIGNAL",
+              "timeline_scope": "previous_life",
+              "purpose": "呼应前章三重光信号，形成视觉与听觉的双重证词闭环"
+            }
+          ],
+          "action_sequence": [
+            "麦珂步入穹顶，无视安保阻拦，径直走向主控台。",
+            "维克多惊恐地发现屏幕上的倒计时并未归零，反而开始倒流。",
+            "麦珂将试镜盒底座对准机械接口，用力旋转最后一圈。",
+            "齿轮咬合声通过高保真音响放大，覆盖全场。",
+            "三十七国电台同步切入‘午夜星轨’频段，第一句原创歌词响彻云霄。"
+          ],
+          "visible_payoff": "三十七国电台同步切入‘午夜星轨’频段，响起第一句原创歌词，宣告‘静默协议’彻底失效。",
+          "ending": "全场灯光骤亮，麦珂站在聚光灯下，维克多手中的确认键悬在半空，无人敢按。",
+          "must_include": ["齿轮旋转声", "三十七国电台切入", "第一句歌词", "维克多的僵持"],
+          "must_not_include": ["麦珂受伤", "维克多逃跑", "法律判决结果"],
+          "detailed_synopsis": "2009年3月18日深夜23点45分，穹顶大厅内气氛凝重，维克多正指挥巴里准备切断所有外部信号，以便在零点准时播放伪造的麦珂讣告。他坚信麦珂已被困在地下密室，永远无法发声。然而，大门轰然开启，麦珂手持一枚泛黄的铜质试镜盒，步履稳健地走入人群。维克多惊愕地后退，命令安保上前拦截，但麦珂无视阻拦，径直走向主控台。他利用重生记忆，精准地将试镜盒底部的齿轮对准预留的物理接口，猛力旋转。伴随着一声清脆的金属咬合声，原本死寂的控制台瞬间激活。三十七国电台同步切入‘午夜星轨’频段，麦珂生前从未公开的第一句原创歌词如惊雷般炸响在穹顶之上。全场观众屏息凝神，三百二十一名医护代表同时举起了手中的晨间体征日志签名页。维克多看着屏幕上跳动的实时生命体征数据，脸色惨白，他意识到自己精心策划的‘静默协议’已被彻底粉碎，而麦珂不仅活着，还带着整个时代的见证者回来了。"
+        },
+        {
+          "chapter_id": 500,
+          "timeline_start": "2009年3月18日 00:00",
+          "timeline_end": "2009年3月18日 00:30",
+          "scene": "穹顶大厅直播现场",
+          "chapter_goal": "通过终极发问揭露对手动机，完成‘清醒即存在’的逻辑闭环，正式开启‘开口权存证计划’。",
+          "chapter_title": "你们怕的不是我，是沉默",
+          "participants": ["麦珂", "维克多", "黛安娜", "全球观众", "三百二十一名医护代表"],
+          "opening_conflict": "维克多试图用‘精神失常’和‘幻觉’来解释麦珂的现身，试图维持谎言的最后防线。",
+          "info_gap_use": "麦珂利用托马斯伪造医嘱的时间戳漏洞，指出维克多所谓的‘脑死亡’诊断在技术逻辑上根本不存在。",
+          "opponent_reaction": "维克多因贪婪抢功和嘴硬滑稽留把柄，在镜头前语无伦次地指责麦珂是‘鬼魂’或‘替身’，却因逻辑自洽性崩塌而被律师团当场盘问至崩溃。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "穹顶舞台中央",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂直视维克多，全场寂静"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_500_OPEN_SOURCE_CAPSULE",
+              "timeline_scope": "current",
+              "display_name": "《开口权存证计划·开源时间胶囊》",
+              "kind": "legal_cultural_manifesto"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_489_GEAR_ROTATION",
+              "timeline_scope": "current",
+              "purpose": "作为开启时间胶囊的物理密钥"
+            }
+          ],
+          "action_sequence": [
+            "维克多歇斯底里地宣称麦珂是幻觉，要求技术人员切断直播。",
+            "麦珂平静地展示托马斯伪造医嘱的电子签名密钥生成时间戳，证明其逻辑谬误。",
+            "麦珂向全场提出唯一问题：‘你们纪念的，究竟是我，还是你们终于不用再怕我开口？’",
+            "维克多因无法回答而陷入逻辑死循环，被律师团当场指控欺诈。",
+            "麦珂宣布启动‘开口权存证计划’，将四十年作品打包为开源时间胶囊。"
+          ],
+          "visible_payoff": "维克多陷入自相矛盾的指控中无法脱身，奥瑞恩集团合规化谋杀企图粉碎；麦珂启动‘开口权存证计划’。",
+          "ending": "麦珂转身面向全球观众，宣布新时代的开始，维克多被保安带走，身后是欢呼的人群和闪烁的手机闪光灯。",
+          "must_include": ["麦珂的唯一问题", "维克多的逻辑崩溃", "开源时间胶囊启动", "医护代表宣誓"],
+          "must_not_include": ["麦珂复仇杀人", "维克多自杀", "集团立即破产"],
+          "detailed_synopsis": "零点整，穹顶大厅内，维克多仍试图用‘精神失常’和‘幻觉’来解释麦珂的现身，他歇斯底里地对着麦克风大喊‘这是高科技骗局！’，甚至要求技术人员切断直播。然而，麦珂只是平静地走上前，手中拿着托马斯伪造医嘱的电子签名密钥生成时间戳，当众指出其逻辑上的致命漏洞：‘如果我真的死了，这个签名怎么可能在死后两小时生成？’全场哗然。维克多脸色铁青，试图狡辩，却被在场的律师团当场抓住把柄，陷入了自相矛盾的指控中无法脱身。麦珂环视四周，目光最终定格在维克多身上，提出了那个贯穿四十年的问题：‘你们纪念的，究竟是我，还是你们终于不用再怕我开口？’这句话如重锤般击碎了所有人最后的幻想。维克多瘫软在地，语无伦次地重复着‘不可能’。麦珂没有再给他机会，转身面向全球直播镜头，宣布启动‘开口权存证计划’，将四十年间所有署名作品与健康公示打包为开源时间胶囊，免费授予全球教育机构。三百二十一名医护代表齐声宣誓，手机闪光灯汇聚成一片星海。麦珂微笑着看向远方，他知道，这不仅是胜利，更是新时代的黎明。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2009",
+    "character_states": [
+      {
+        "entity_id": "麦珂",
+        "state": "physically_verified_clear_with_chorus",
+        "description": "全程清醒存活，未受任何实质性伤害，声音主权得到全球公认。"
+      },
+      {
+        "entity_id": "维克多",
+        "state": "exposed_futility",
+        "description": "陷入自相矛盾的指控中无法脱身，奥瑞恩集团合规化谋杀企图粉碎。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_pair": ["观众", "麦珂"],
+        "new_state": "active_witnesses",
+        "description": "观众从被动接收者转变为主动的见证者与守护者。"
+      },
+      {
+        "entity_pair": ["医护团队", "麦珂"],
+        "new_state": "independent_witnesses",
+        "description": "医护团队从受控方转变为独立的法律证人。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset_id": "OPEN_SOURCE_CAPSULE",
+        "status": "activated",
+        "description": "四十年作品打包为开源时间胶囊，免费授予全球教育机构。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "麦珂",
+        "status": "healthy",
+        "location": "穹顶大厅"
+      }
+    ],
+    "open_threads": [
+      "全球资本对‘开口权存证计划’的法律围剿",
+      "开源时间胶囊在国际教育机构的落地情况"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团的‘静默协议’操控体系",
+      "麦珂的身世与资产被吞并的危机"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "'开口权存证计划'启动后，全球资本将发起新一轮围剿，试图通过法律战、舆论战等手段重新夺回声音主权，麦珂需在开源过程中应对复杂的国际法律纠纷。"
+  }
+}

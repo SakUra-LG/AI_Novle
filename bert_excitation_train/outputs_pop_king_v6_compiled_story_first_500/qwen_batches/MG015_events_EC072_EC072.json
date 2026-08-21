@@ -1,0 +1,224 @@
+{
+  "macro_group_id": "MG015",
+  "event_clusters": [
+    {
+      "cluster_id": "EC072",
+      "chapter_span": [
+        143,
+        144
+      ],
+      "source_event_direction": "前世具体受害：前世假新闻通过模拟信号干扰扩散，导致公众误信麦珂病情恶化而逼迫其放弃监护权。；本事件独有的前世信息差：麦珂掌握1983年某次干扰事件的具体频段，并知晓巴里·布鲁姆计划在广播站制造混乱。；今生提前动作：麦珂协调艾琳·沃特曼提前锁定干扰频段并在本地电台发布反向校准信号。；第143章可见小赢：当媒体经理启动干扰设备时，现场收音机只传出清晰的麦珂呼吸声与嘉宾歌手的诊断原话。；第144章新交锋：维克多·兰斯试图在现场指认麦珂精神失常，却被嘉宾歌手出示实时心电图数据反驳。；阻力方永久现实损失：奥瑞恩集团因舆论操控失败被联邦通讯委员会警告，信誉受损且无法利用媒体施压。；主角现实收益：麦珂确立‘临床数据优先于媒体叙事’原则，嘉宾歌手获得独立发布临床报告的法定权力。；不可逆结算键：1983_10_18_Broadcast_Interference_Block；接回死亡控制主线：防止了舆论误导导致的错误医疗决策，避免了前世因被剥夺监护权而引发的连锁悲剧。",
+      "source_event_direction_sha256": "41f6316c197076634e2affd015646ea6051a1d1f9d9c25b7119e89c7a3cb33af",
+      "source_macro_sha256": "adc54d66d106e66849bea9a864987a253a763eccfa06294f8f3470737cfaa81a",
+      "name": "频段封锁与临床铁证",
+      "timeline_years": "1983—1984",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "维克多·兰斯",
+        "艾琳·沃特曼",
+        "巴里·布鲁姆"
+      ],
+      "fictional_obstacle": "维克多·兰斯利用‘蓝盾’公司伪造的税务通知单，企图通过模拟信号干扰广播，制造麦珂精神失常、病情恶化的假新闻，从而触发信托冻结条款。",
+      "prev_life_tragedy": "前世假新闻通过模拟信号干扰扩散，导致公众误信麦珂病情恶化而逼迫其放弃监护权，最终导致麦珂在无人监护下接受错误治疗而死。",
+      "info_gap_from_prev_life": "麦珂掌握1983年某次干扰事件的具体频段（FM 98.6 MHz），并知晓巴里·布鲁姆计划在广播站制造混乱以掩盖伪造文件签署过程。",
+      "why_previous_life_failed": "前世麦珂未能识破频段干扰的阴谋，被动接受舆论审判，导致医疗决策权被非法剥夺。",
+      "preemptive_avoidance": "麦珂协调艾琳·沃特曼提前锁定干扰频段，并在本地电台发布反向校准信号，同时安排莉薇娅·普莱斯携带实时临床数据出席听证会。",
+      "bait_and_evidence": "麦珂故意泄露虚假的‘签署仪式’时间地点，引诱维克多启动干扰设备，同时由莉薇娅出示实时心电图与莉薇娅的临床诊断书，形成铁证。",
+      "comic_villain_behavior": "巴里·布鲁姆在干扰失败后，试图用‘设备故障’搪塞，却因紧张打翻了手中的咖啡，弄脏了伪造的税务通知单，暴露了其慌乱与心虚。",
+      "villain_loss": "奥瑞恩集团因舆论操控失败被联邦通讯委员会警告，信誉受损，且无法利用媒体施压，维克多·兰斯的隐蔽渗透计划首次受挫。",
+      "protagonist_gain": "麦珂确立‘临床数据优先于媒体叙事’原则，莉薇娅·普莱斯获得独立发布临床报告的法定权力，家族信托安全得到进一步巩固。",
+      "relationship_change": "莉薇娅·普莱斯成为麦珂团队的核心防线，信任度大幅提升；维克多·兰斯意识到常规手段失效，开始策划更深层的攻击。",
+      "continuity_writes": [
+        "EC072"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_006",
+          "state_key": "legal_status",
+          "from": "threatened",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_143_BROADCAST_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_ORION_001",
+          "state_key": "public_trust",
+          "from": "stable",
+          "to": "damaged",
+          "irreversible": true,
+          "evidence": "ART_144_FCC_WARNING",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "1983_10_18_Broadcast_Interference_Block"
+      ],
+      "cluster_outcome": "维克多·兰斯的隐蔽渗透计划首次受挫，‘蓝盾’公司因证据不足被起诉，奥瑞恩集团被迫转入更隐蔽的对抗阶段；麦珂团队成功确立医疗决策权的独立地位，《家庭治理宪章》正式生效；莉薇娅·普莱斯成为对抗虚假医疗指控的核心防线；巴里·布鲁姆暂时退居二线等待下一次机会；伏笔：维克多·兰斯将启动更深层的‘健康趋势预测模型’测试，并试图收购老牌胶片冲印厂以切断物理证据链。",
+      "next_event_hook": "维克多·兰斯启动‘健康趋势预测模型’测试，并试图收购老牌胶片冲印厂以切断物理证据链。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 143,
+          "timeline_start": "1983-10-18",
+          "timeline_end": "1983-10-18",
+          "scene": "市立广播中心控制室",
+          "chapter_goal": "通过反向校准信号阻断干扰，揭露巴里·布鲁姆的阴谋。",
+          "chapter_title": "静默的频段",
+          "participants": [
+            "麦珂",
+            "艾琳·沃特曼",
+            "巴里·布鲁姆"
+          ],
+          "opening_conflict": "巴里·布鲁姆试图启动干扰设备，制造麦珂精神失常的假新闻。",
+          "info_gap_use": "麦珂利用前世记忆中的频段信息，提前协调艾琳·沃特曼锁定干扰源。",
+          "opponent_reaction": "巴里·布鲁姆发现干扰失败，试图用‘设备故障’搪塞，却因紧张打翻了咖啡。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市立广播中心控制室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂走进控制室，看到巴里·布鲁姆正在调试设备。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_143_BROADCAST_LOG",
+              "timeline_scope": "current",
+              "display_name": "广播干扰阻断日志",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_142_PHYSICAL_AUDIT_CERT",
+              "timeline_scope": "current",
+              "purpose": "作为背景证据，证明麦珂团队已掌握审计主动权。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂进入控制室，观察巴里·布鲁姆的异常举动。",
+            "巴里·布鲁姆启动干扰设备，试图制造混乱。",
+            "艾琳·沃特曼启动反向校准信号，阻断干扰。",
+            "巴里·布鲁姆惊慌失措，打翻咖啡，暴露心虚。"
+          ],
+          "visible_payoff": "当媒体经理启动干扰设备时，现场收音机只传出清晰的麦珂呼吸声与嘉宾歌手的诊断原话。",
+          "ending": "巴里·布鲁姆的阴谋被当场揭穿，麦珂团队掌握主动权。",
+          "must_include": [
+            "反向校准信号",
+            "巴里·布鲁姆的慌乱",
+            "清晰的广播内容"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "互联网"
+          ],
+          "detailed_synopsis": "麦珂走进市立广播中心控制室，空气中弥漫着紧张的气息。巴里·布鲁姆正站在控制台前，手指在旋钮上快速移动，试图启动干扰设备。麦珂冷静地观察着，心中默念着前世记忆中的频段信息。艾琳·沃特曼早已潜伏在侧，手中握着反向校准信号的发射器。当巴里·布鲁姆按下启动键的瞬间，艾琳迅速发射信号，干扰被瞬间阻断。现场收音机中，原本预期的嘈杂噪音并未出现，反而传出清晰的麦珂呼吸声与莉薇娅·普莱斯的诊断原话。巴里·布鲁姆惊慌失措，试图用‘设备故障’搪塞，却因紧张打翻了手中的咖啡，弄脏了伪造的税务通知单，暴露了其慌乱与心虚。麦珂冷冷地看着他，心中明白，这只是开始。"
+        },
+        {
+          "chapter_id": 144,
+          "timeline_start": "1983-10-18",
+          "timeline_end": "1983-10-18",
+          "scene": "家族信托听证会现场",
+          "chapter_goal": "通过实时临床数据反驳维克多·兰斯的指控，确立医疗决策权。",
+          "chapter_title": "数据的重量",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "维克多·兰斯",
+            "托马斯·布莱克"
+          ],
+          "opening_conflict": "维克多·兰斯试图在现场指认麦珂精神失常，要求冻结信托。",
+          "info_gap_use": "麦珂利用莉薇娅·普莱斯的临床诊断书与实时心电图数据，反驳维克多的指控。",
+          "opponent_reaction": "维克多·兰斯发现证据不足，被迫放弃指控，但眼神中透露出更深的阴鸷。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "家族信托听证会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂与莉薇娅·普莱斯步入听证会现场，面对维克多·兰斯的指控。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_144_FCC_WARNING",
+              "timeline_scope": "current",
+              "display_name": "联邦通讯委员会警告信",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_143_BROADCAST_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为证据，证明维克多·兰斯试图操纵舆论。"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯在听证会上指认麦珂精神失常。",
+            "莉薇娅·普莱斯出示实时心电图与临床诊断书。",
+            "麦珂引用广播干扰日志，揭露维克多的阴谋。",
+            "维克多·兰斯被迫放弃指控，但眼神阴鸷。"
+          ],
+          "visible_payoff": "维克多·兰斯试图在现场指认麦珂精神失常，却被嘉宾歌手出示实时心电图数据反驳。",
+          "ending": "麦珂团队成功确立医疗决策权的独立地位，《家庭治理宪章》正式生效。",
+          "must_include": [
+            "实时心电图",
+            "临床诊断书",
+            "维克多·兰斯的阴鸷"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "互联网"
+          ],
+          "detailed_synopsis": "听证会现场，气氛凝重。维克多·兰斯站在指控席上，试图指认麦珂精神失常，要求冻结家族信托。然而，莉薇娅·普莱斯冷静地走上前，出示了麦珂的实时心电图与临床诊断书。心电图显示麦珂心率平稳，诊断书则明确指出麦珂精神状态正常。麦珂随后引用广播干扰日志，揭露维克多试图通过操纵舆论来达成非法目的。维克多·兰斯脸色铁青，意识到证据不足，被迫放弃指控。然而，他的眼神中透露出更深的阴鸷，仿佛在策划着更深层的攻击。麦珂心中明白，这场胜利只是暂时的，更大的风暴正在酝酿。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1983",
+    "character_states": [
+      "麦珂：确立医疗决策权，信心增强。",
+      "莉薇娅·普莱斯：成为核心防线，地位稳固。",
+      "维克多·兰斯：阴谋受挫，转向更隐蔽的攻击。",
+      "巴里·布鲁姆：暂时退居二线，等待机会。"
+    ],
+    "relationship_states": [
+      "麦珂与莉薇娅·普莱斯：信任度大幅提升。",
+      "麦珂与维克多·兰斯：对抗升级，维克多更加阴险。"
+    ],
+    "rights_and_assets": [
+      "家族信托：安全得到进一步巩固。",
+      "医疗决策权：独立地位确立。"
+    ],
+    "health_and_location": [
+      "麦珂：健康状况良好，位于家族信托听证会现场。"
+    ],
+    "open_threads": [
+      "维克多·兰斯的‘健康趋势预测模型’测试。",
+      "维克多·兰斯试图收购老牌胶片冲印厂。"
+    ],
+    "resolved_threads": [
+      "维克多·兰斯的舆论操控阴谋。",
+      "巴里·布鲁姆的干扰计划。"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多·兰斯启动‘健康趋势预测模型’测试，并试图收购老牌胶片冲印厂以切断物理证据链。"
+  }
+}

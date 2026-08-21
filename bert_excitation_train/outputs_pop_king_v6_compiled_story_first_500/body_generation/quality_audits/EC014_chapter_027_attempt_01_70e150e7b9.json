@@ -1,0 +1,108 @@
+{
+  "cluster_id": "EC014",
+  "chapter_id": 27,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "70e150e7b9ca6ba82132d88f163c289a21675c9f3f33781be66c9d58541cced5",
+  "base_prompt_sha256": "70e150e7b9ca6ba82132d88f163c289a21675c9f3f33781be66c9d58541cced5",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "05d553a51b8c8917b885b1550f5799292384dd6f1ed539f3ea17a0c6fa28e884",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 12.076,
+    "usage": {
+      "prompt_tokens": 5616,
+      "completion_tokens": 924,
+      "total_tokens": 6540,
+      "prompt_tokens_details": {
+        "cached_tokens": 3177
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 14,
+    "through_chapter": 28,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "1798ad59d1ceb4168597c38f27fc997dcbac3f1497c557ce2e28d5a3a6b78bd1",
+    "chapter_card_prefix_sha256": "2b0734a1be260ae33b921372194bc94f498091f92aac175527d0e6a23ec49b8c",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "0417e653d4ba7ffa668bb6f184188d6dc3a9934db3a8e40485fed816d5526353"
+  },
+  "cluster_sha256": "c4a00d18eac625e65b7ec522115674b4427a62953c475a41a761ed497f71fd4f",
+  "card_sha256": "f7224633fb3c5208af0c5b61283dbb2f3ee32d28c3533433e3046085f7c47f77",
+  "chapter_audit": {
+    "han_chars": 1347,
+    "total_chars": 1539,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "麦珂展示Demo",
+        "exact": false,
+        "bigram_coverage": 0.143,
+        "matched": false
+      },
+      {
+        "anchor": "昆廷·琼斯态度转变",
+        "exact": false,
+        "bigram_coverage": 0.286,
+        "matched": false
+      },
+      {
+        "anchor": "昆廷·琼斯同意加入",
+        "exact": false,
+        "bigram_coverage": 0.286,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 1,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0242,
+    "scene_evidence": [
+      {
+        "location": "银湾市地下录音室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_DEMO_VACUUM_001",
+        "display_name": "三秒真空Demo磁带",
+        "body_hit": true,
+        "match_mode": "recording_artifact_formation"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.024，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“麦珂展示Demo”",
+      "正文没有兑现章卡关键事实“昆廷·琼斯态度转变”",
+      "正文没有兑现章卡关键事实“昆廷·琼斯同意加入”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.024，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“麦珂展示Demo”",
+      "正文没有兑现章卡关键事实“昆廷·琼斯态度转变”",
+      "正文没有兑现章卡关键事实“昆廷·琼斯同意加入”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

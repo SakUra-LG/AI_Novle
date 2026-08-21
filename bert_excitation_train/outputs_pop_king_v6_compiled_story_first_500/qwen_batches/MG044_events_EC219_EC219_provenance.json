@@ -1,0 +1,40 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC219_EC219",
+  "identifier": "MG044",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "2828b8a987bb9518c8da1abb91be02683f089ae116f4a7258042cdb4da1a2608",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-21T11:43:52+08:00",
+      "prompt_sha256": "2828b8a987bb9518c8da1abb91be02683f089ae116f4a7258042cdb4da1a2608",
+      "raw_response_sha256": "742eb2d23036b36b443c4b5e26b2e9f6e7c9576bc6e2fd5a37b965f0fd687a84",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG044_events_EC219_EC219_attempt_01_2828b8a987_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Invalid control character at: line 12 column 78 (char 538)"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 33.024,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-21T11:44:30+08:00",
+      "prompt_sha256": "43f0557598d43c18cb0d604aa68a910da9047a46241519f9f4ad88965a7b7c94",
+      "raw_response_sha256": "72e70463517e0b0bf373abdf87bc46f1524365e3b1ca8d1b692c26122bf30ea0",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG044_events_EC219_EC219_attempt_02_2828b8a987_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 38.028,
+      "usage": {}
+    }
+  ]
+}

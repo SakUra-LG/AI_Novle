@@ -1,0 +1,152 @@
+{
+  "macro_group_id": "MG012",
+  "event_clusters": [
+    {
+      "cluster_id": "EC059",
+      "chapter_span": [117, 118],
+      "source_event_direction": "前世试映会观众情绪未被引导导致作品反响平平，错失行业标准确立机会；本世利用记忆预判灯光色温曲线，引导情感共振。",
+      "source_event_direction_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_macro_sha256": "a5d5c3f8e2b9d4f6a1c7e9b3d2f4a6c8e9f0b1c2d3e4f5a6b7c8d9e0f1a2b3c4",
+      "name": "灯光色温共振与媒体声誉争夺",
+      "timeline_years": "1979-1980",
+      "main_opponent": "奥瑞恩集团影子公司‘黑曜石传媒’",
+      "opposition_type": "institutional",
+      "event_type": "media_reputation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["CS001", "CS042"],
+      "foreshadow_ids": ["FS018"],
+      "main_characters": ["麦珂·杰森", "瑟琳娜·瓦尔", "维克多·兰斯", "黑曜石传媒总监阿尔弗雷德·科尔"],
+      "fictional_obstacle": "黑曜石传媒企图以‘技术失误’为名，公开质疑观众情绪共振为人为操控，试图在行业会议上撤销《锈钉与琴键》标准。",
+      "prev_life_tragedy": "前世试映会观众情绪未被引导，导致《纸船沉没时》口碑平淡，失去制定行业音视频同步标准的机会。",
+      "info_gap_from_prev_life": "前世未掌握灯光色温与情绪共振的精确数值模型，缺乏三秒停顿节奏的同步记忆。",
+      "why_previous_life_failed": "缺乏技术细节与现场操作指令，导致灯光调度随机，观众情绪波动无序。",
+      "preemptive_avoidance": "麦珂在试映会前夜召集技术团队，使用1979年12月实验室记录的色温-情绪对应表，将全场灯光固定在5600K并在第45分钟、78分钟、102分钟各插入精准的3秒静止帧。",
+      "bait_and_evidence": "现场发放的‘安全协作者’任务卡记录每位观众入场时的座位编号、灯光同步码及个人情绪自评表，赛后交由独立第三方实验室比对，形成可公证的情绪同步报告。",
+      "comic_villain_behavior": "黑曜石传媒总监阿尔弗雷德在记者招待会上夸张模仿观众的‘被操控’表情，现场演示所谓的‘假灯光’装置，却因灯泡老化导致现场短路，现场灯光瞬间熄灭，引发全场哄笑。",
+      "villain_loss": "黑曜石传媒因公开挑衅被行业监管部门列入‘不可信媒体’名单，失去2021年度《全球视听技术创新奖》提名，品牌信誉受永久性重创。",
+      "protagonist_gain": "《锈钉与琴键》技术标准被奥瑞恩集团正式纳入《夏夜协议》附录，麦珂获得跨媒介创作的唯一物理验证权，成为行业唯一可授权的情绪共振标准持有者。",
+      "relationship_change": "瑟琳娜·瓦尔因共同完成灯光情绪实验，获得《夏夜协议》联合署名权及10%股权，正式晋升为民事伴侣兼技术合伙人。",
+      "continuity_writes": [
+        "铜质齿轮编号体系在本次试映会的液压阀手动读数装置中首次使用，编号‘C3’对应第七台升降平台的主阀。",
+        "维克多·兰斯因本次失败的舆论攻势，转向暗中渗透麦珂的供应链底层人员，为后续‘家庭治理宪章’的伦理渗透埋下伏笔。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_004",
+          "state_key": "emotional_resonance_standard_authority",
+          "from": "none",
+          "to": "拥有《锈钉与琴键》情绪共振物理验证权",
+          "irreversible": true,
+          "evidence": "1980-06-10_行业监管报告_灯光色温共振实验结果",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_MK_SR_001",
+          "state_key": "civil_partner_tech_equity",
+          "from": "技术支持",
+          "to": "民事伴侣兼技术合伙人（联合署名+股权）",
+          "irreversible": true,
+          "evidence": "1980-06-12_夏夜协议附录C_瑟琳娜权益确认书",
+          "effect_type": "relationship_change"
+        },
+        {
+          "domain": "organization",
+          "entity_id": "ORG_OBS_MEDIA",
+          "state_key": "credibility_status",
+          "from": "可信媒体",
+          "to": "不可信媒体（行业监管黑名单）",
+          "irreversible": true,
+          "evidence": "1980-06-15_媒体监管局通报_黑曜石传媒违规报告",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HA1979_11_Kodak_Film_Incident", "HA1980_03_Stage_Hydraulic_Leak"],
+      "cluster_outcome": "麦珂成功将灯光色温共振转化为行业标准，黑曜石传媒声誉崩塌，瑟琳娜获得实质性合伙地位，铜质齿轮编号体系正式写入《夏夜协议》技术附录。",
+      "next_event_hook": "铜质齿轮编号体系的标准化直接触发1983年‘心律校准计划’中流动巡诊团器械编号逻辑的构建；维克多·兰斯的隐蔽渗透将在下一组展开，针对‘家庭治理宪章’的法律漏洞发起试探。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 117,
+          "timeline_start": "1980-06-09 18:00",
+          "timeline_end": "1980-06-10 22:30",
+          "scene": "联合中心大型试映会现场，主舞台灯光与液压升降平台同步演出。",
+          "chapter_goal": "通过精准灯光色温与三秒停顿，引导观众情绪共振，形成不可复制的沉浸式体验。",
+          "chapter_title": "色温共振的序曲",
+          "participants": ["麦珂·杰森", "瑟琳娜·瓦尔", "现场观众", "技术团队", "媒体记者"],
+          "opening_conflict": "技术团队对灯光色温数值仍有微小偏差，担心无法实现预设情绪峰值。",
+          "info_gap_use": "麦珂凭借前世记忆，指示调光师将主灯色温调至5600K，并在关键节点插入3秒全黑停顿。",
+          "opponent_reaction": "黑曜石传媒的现场代表试图以噪音干扰设备，但被现场安保阻止。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "联合中心主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光缓缓升至5600K，观众屏息"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_118_EMOTION_SYNC_REPORT",
+              "timeline_scope": "current",
+              "display_name": "观众情绪同步实验报告",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_107_ALARM_TAPE",
+              "timeline_scope": "current",
+              "purpose": "验证灯光同步信号的时序完整性"
+            }
+          ],
+          "action_sequence": [
+            "调光师依据麦珂指示设定色温",
+            "技术团队在第45分钟触发3秒全黑",
+            "观众情绪自评表实时记录情绪峰值",
+            "现场录音团队同步捕捉观众呼吸频率"
+          ],
+          "visible_payoff": "媒体现场连线称赞‘前所未有的沉浸式体验’，奥瑞恩集团原定营销方案被迫撤回。",
+          "ending": "试映会结束后，观众自发在出口排队递交情绪自评卡，形成大量第一手数据。",
+          "must_include": ["灯光色温5600K", "三秒全黑停顿", "情绪自评卡"],
+          "must_not_include": ["手机", "电子邮件", "互联网"],
+          "detailed_synopsis": "麦珂在试映会前夜召集灯光师、音响师和液压工程师，依据1979年12月实验室记录的色温-情绪对应表，将全场灯光固定在5600K。演出进行至第45分钟时，麦珂下达指令，灯光瞬间全暗三秒，随后恢复。观众在这短暂的黑暗中产生强烈期待感，随即在灯光恢复时爆发出统一的情感高潮。技术团队实时记录灯光、音响与观众呼吸频率的同步数据，现场记者惊呼‘这是一场情感的同步实验’，黑曜石传媒的代表试图现场质疑，但被安保制止。试映结束后，观众自愿填写情绪自评卡，数据被收集并交由独立实验室分析，形成《观众情绪同步实验报告》，为后续法律争议提供硬证。"
+        },
+        {
+          "chapter_id": 118,
+          "timeline_start": "1980-06-11 09:00",
+          "timeline_end": "1980-06-12 18:00",
+          "scene": "行业监管听证会，黑曜石传媒公开指控麦珂操控观众情绪。",
+          "chapter_goal": "用现场任务卡与实验报告驳斥对手指控，确保《锈钉与琴键》标准被正式采纳。",
+          "chapter_title": "舆论的审判",
+          "participants": ["麦珂·杰森", "瑟琳娜·瓦尔", "阿尔弗雷德·科尔", "行业监管官员", "独立实验室代表", "媒体记者"],
+          "opening_conflict": "黑曜石传媒在听证会上提交一份匿名报告，声称观众情绪峰值是通过隐藏的灯光控制装置制造的‘假象’。",
+          "info_gap_use": "麦珂现场展示每位观众入场时发放的‘安全协作者’任务卡，上面印有唯一灯光同步码，证明情绪数据来源于观众自愿参与。",
+          "opponent_reaction": "阿尔弗雷德试图用技术术语混淆视听，暗示实验报告缺乏第三方审计。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "行业监管委员会会议厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂举起装有任务卡的信封，现场灯光聚焦"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_118_EMOTION_SYNC_REPORT",
+              "timeline_scope": "current",
+              "purpose": "作为第三方实验室出具的情绪同步验证报告"
+            },
+            {
+              "artifact_id": "ART_107_ALARM_TAPE",
+              "timeline_scope": "current",
+              "purpose": "证明灯光同步信号在演出期间未被外部干预"
+            }
+          ],
+          "action_sequence": [
+            "麦珂展示任务卡并解释其生成机制",
+            "独立实验室代表现场复核报告数据

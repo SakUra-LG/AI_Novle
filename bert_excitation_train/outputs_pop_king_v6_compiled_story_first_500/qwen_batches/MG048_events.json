@@ -1,0 +1,1081 @@
+{
+  "macro_group_id": "MG048",
+  "event_clusters": [
+    {
+      "cluster_id": "EC236",
+      "chapter_span": [
+        471,
+        472
+      ],
+      "source_event_direction": "前世具体受害：前世麦珂在22:15分被强制注射镇静剂导致呼吸暂停，被判定为自然猝死。；本事件独有的前世信息差：康拉德·莫里森曾口头确认‘排期窒息’操作流程及22:40分心电图篡改时间点。；今生提前动作：麦珂提前将纸质呼吸曲线图与机械节拍器置于床头，拒绝所有电子生物反馈设备。；第471章可见小赢：苏菲亚锁死胶片厂数据，维克多无法远程获取任何实时生命体征参数。；第472章新交锋：深夜监控室显示麦珂心率平稳，维克多发现预设的‘崩解’指令因物理介质缺失而失效。；阻力方永久现实损失：维克多失去对麦珂生理状态的单向操控权，被迫承认医疗数据源被切断。；主角现实收益：麦珂获得完整的夜间清醒记录，确立‘未服药、无干预’的第一道事实锚点。；不可逆结算键：纸质日志与机械波形无法被数字信号覆盖或篡改。；接回死亡控制主线：切断前世22:15分推药指令的执行路径，使死亡链条在第一环断裂。",
+      "source_event_direction_sha256": "0399f3dee1990dc72a4eee5fa7e730b54e03eaa866b2aa6c7c52f064a7d10bd2",
+      "source_macro_sha256": "fc3619f3e63a6e7ebd7c9c83304a155705a1ed1c1511bb129031fcd9208c6f06",
+      "name": "物理介质锚定与数据断流",
+      "timeline_years": "2009",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS06"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "苏菲亚",
+        "玛莎",
+        "维克多·兰斯",
+        "康拉德·莫里森"
+      ],
+      "fictional_obstacle": "维克多集团试图通过篡改实时生命体征数据制造麦珂‘必然崩解’的假象，利用电子信号覆盖物理现实。",
+      "prev_life_tragedy": "前世麦珂在22:15分被强制注射镇静剂导致呼吸暂停，被判定为自然猝死。",
+      "info_gap_from_prev_life": "康拉德·莫里森曾口头确认‘排期窒息’操作流程及22:40分心电图篡改时间点。",
+      "why_previous_life_failed": "过度依赖电子生物反馈系统，未建立无法被数字信号覆盖的物理介质证据链。",
+      "preemptive_avoidance": "麦珂提前在3月16日夜间将纸质呼吸曲线图与机械节拍器置于床头，拒绝所有电子生物反馈设备，切断对手对管理权的渗透。",
+      "bait_and_evidence": "《双轨创作信托协议》补充条款植入昆廷终端触发联合签署；苏菲亚锁死胶片厂原始数据；玛莎签署法定日志；纸质呼吸曲线与机械波形作为绝对清醒的现实锚点。",
+      "comic_villain_behavior": "维克多因确信麦珂已死而提前启动讣告程序，却在监控室发现预设指令因物理介质缺失而失效，慌乱中试图强行接入已被苏菲亚物理隔离的旧线路，导致系统逻辑崩溃发出刺耳警报。",
+      "villain_loss": "维克多失去对麦珂生理状态的单向操控权，被迫承认医疗数据源被切断，其‘必死计划’因缺乏执行载体而破产。",
+      "protagonist_gain": "麦珂获得完整的夜间清醒记录，确立‘未服药、无干预’的第一道事实锚点，彻底掌握主动权。",
+      "relationship_change": "麦珂与星火同盟成员建立基于绝对信任的生死契约；维克多与奥瑞恩集团高层产生不可调和的信任裂痕。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "asset",
+          "entity_id": "MC_2009_PHYSIOLOGY",
+          "state_key": "vital_signs_status",
+          "from": "digitally_monitored_vulnerable",
+          "to": "physically_verified_clean",
+          "irreversible": true,
+          "evidence": "PAPER_RESPIRATION_CHART_AND_MECHANICAL_METRONOME",
+          "effect_type": "protagonist_gain",
+          "source_domain": "Health_Safety"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "VL_CORP_SYSTEM",
+          "state_key": "remote_monitoring_access",
+          "from": "full_control",
+          "to": "blocked_by_physical_isolation",
+          "irreversible": true,
+          "evidence": "SOPHIA_FILM_LOCKDOWN",
+          "effect_type": "villain_loss",
+          "source_domain": "Data_Control"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_2009_MARCH_17"
+      ],
+      "cluster_outcome": "死亡链条在第一环断裂，维克多的数字造假因缺乏物理介质支撑而失效，麦珂确立不可篡改的清醒状态。",
+      "next_event_hook": "‘永恒星光’落幕即‘星火审判’开端——麦珂未设复仇议程，只启动‘开口权存证计划’，将四十年间所有署名作品、健康公示、家庭决议与粉丝共创成果打包为开源时间胶囊，向全球教育机构免费授予权，引发新一轮资本围剿。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 471,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "麦珂卧室",
+          "chapter_goal": "苏菲亚完成物理锁死，麦珂布置非电子监测环境，切断数据源头。",
+          "chapter_title": "静默的齿轮",
+          "participants": [
+            "麦珂",
+            "苏菲亚",
+            "玛莎"
+          ],
+          "opening_conflict": "维克多团队远程请求接入生命体征数据，试图验证麦珂是否处于药物诱导的昏迷边缘。",
+          "info_gap_use": "麦珂利用前世记忆，提前知晓对方会在22:15分下达推药指令，因此坚决拒绝任何电子接口。",
+          "opponent_reaction": "维克多在监控室看着不断跳动的‘连接超时’红字，误判为麦珂身体机能正在衰竭导致的信号中断。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂卧室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "窗外雷雨声掩盖了机械摆钟的滴答声"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_471_PAPER_LOG",
+              "timeline_scope": "current",
+              "display_name": "《3月17日夜纸质呼吸曲线图》",
+              "kind": "forensic_evidence"
+            },
+            {
+              "artifact_id": "ART_471_MECH_METRONOME",
+              "timeline_scope": "current",
+              "display_name": "《校准至2009年3月的机械节拍器》",
+              "kind": "physical_device"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_467_ORIGINAL_LOG",
+              "timeline_scope": "current",
+              "purpose": "玛莎作为见证人即将签署新的物理日志"
+            }
+          ],
+          "action_sequence": [
+            "麦珂将床头所有电子设备断电，只留下老式机械节拍器和空白纸笔。",
+            "苏菲亚潜入胶片厂核心服务器，用物理钥匙锁死数据读写端口，切断外部远程访问路径。",
+            "玛莎在床边坐下，开始记录麦珂真实的呼吸频率，并在纸上绘制曲线。",
+            "维克多团队收到‘数据丢失’报告，误以为麦珂心脏骤停导致传感器离线。"
+          ],
+          "visible_payoff": "监控大屏上显示麦珂生命体征‘信号丢失’，但实际是物理隔绝成功。",
+          "ending": "午夜钟声敲响前，苏菲亚确认数据链路物理切断，麦珂在机械节拍声中安然入睡。",
+          "must_include": [
+            "机械节拍器声音",
+            "纸质曲线绘制过程",
+            "苏菲亚拔除物理插头动作"
+          ],
+          "must_not_include": [
+            "任何电子屏幕上的真实心率数据",
+            "麦珂的内心独白解释策略"
+          ],
+          "detailed_synopsis": "夜幕降临，2009年3月17日晚20时，麦珂卧室内的智能监护仪被粗暴地拔掉电源，取而代之的是一台发出沉重滴答声的老式机械节拍器。苏菲亚带着专业工具箱潜入地下胶片厂，面对维克多团队的高压远程入侵指令，她冷静地启动了物理熔断机制，将存储着原始数据的磁带库从网络中彻底剥离，并换上了只有本地手动读取才能访问的模拟信号接口。与此同时，玛莎手持钢笔，在铺满床头的特制纸张上，一笔一划记录下麦珂平稳的呼吸节奏。维克多坐在监控中心，看着屏幕上突然归零的生命体征数据，嘴角勾起一抹残忍的笑意，他认定这是麦珂在药物作用下心脏停跳的前兆，立刻下令准备启动‘自动讣告’程序。然而，他不知道的是，此刻麦珂正听着机械摆锤的规律摆动，眼神清明，手中的纸笔正在绘制一条从未断绝的呼吸曲线，这是任何数字代码都无法伪造的生存铁证。",
+          "source_timeline_start": "2009-03-17T20:00:00+08:00",
+          "source_timeline_end": "2009-03-17T22:00:00+08:00"
+        },
+        {
+          "chapter_id": 472,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "维克多监控室",
+          "chapter_goal": "维克多尝试强行注入药物失败，确认物理介质阻断，陷入逻辑崩塌。",
+          "chapter_title": "失效的指令",
+          "participants": [
+            "维克多·兰斯",
+            "康拉德·莫里森",
+            "麦珂",
+            "玛莎"
+          ],
+          "opening_conflict": "22:15分，康拉德·莫里森接到指令准备执行‘排期窒息’操作，却发现输液管路被物理锁定且无电子信号触发。",
+          "info_gap_use": "麦珂利用前世对22:40分心电图篡改时间的记忆，提前让机械装置覆盖了所有可能的电子干扰窗口。",
+          "opponent_reaction": "维克多发现预设的‘崩解’指令因物理介质缺失而失效，试图调取备用数据时发现已被苏菲亚永久封存，陷入疯狂猜测。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "维克多监控室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "屏幕闪烁红光，警报声大作"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_471_PAPER_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为反驳虚假数据的唯一合法依据"
+            },
+            {
+              "artifact_id": "ART_469_MECHANICAL_LOCK",
+              "timeline_scope": "current",
+              "purpose": "证明输液管路未被电子信号控制"
+            }
+          ],
+          "action_sequence": [
+            "康拉德·莫里森抵达病房，发现输液泵处于纯机械模式，无法接收远程指令。",
+            "维克多命令技术组强行破解，却被告知所有数字接口已被物理拆除，只剩下一张手绘的呼吸图。",
+            "麦珂在床边醒来，拿起那张刚刚完成的呼吸曲线图，对着镜头展示自己正常的瞳孔反应。",
+            "维克多看着屏幕上显示的‘无数据’状态，意识到自己的‘必死计划’因对手的预判而彻底落空。"
+          ],
+          "visible_payoff": "监控画面中，麦珂清醒地阅读报纸，而维克多的系统却显示一片空白，谎言不攻自破。",
+          "ending": "维克多不得不承认医疗数据源被切断，麦珂确立了‘未服药、无干预’的事实锚点，死亡链条彻底断裂。",
+          "must_include": [
+            "康拉德困惑的表情",
+            "维克多查看无效指令的焦躁",
+            "麦珂展示纸质日志的特写"
+          ],
+          "must_not_include": [
+            "麦珂主动攻击维克多",
+            "法律层面的正式判决"
+          ],
+          "detailed_synopsis": "22时15分，康拉德·莫里森带着镇静剂进入病房，却惊恐地发现输液管被一根粗壮的金属锁扣死死卡住，没有任何电子信号可以激活泵机。与此同时，维克多在监控室里看着屏幕上依然是一片死寂的数据流，原本期待的‘室颤’信号迟迟不来。他愤怒地咆哮着要求技术部强行接管，却得到回复：所有数字接口已被物理熔断，现场只剩下苏菲亚留下的封条和一张手写的呼吸曲线图。就在维克多怀疑人生之际，麦珂缓缓坐起，手中拿着那张由玛莎刚签完字的纸质日志，对着直播镜头展示自己平稳的呼吸节奏和清晰的思维。维克多看着这一幕，终于意识到自己精心策划的‘排期窒息’因对手对物理介质的掌控而彻底失效。他试图调用备用数据，却发现所有历史文件都被苏菲亚加密锁定，只能眼睁睁看着‘麦珂死亡’的剧本变成一场闹剧。麦珂没有说话，只是平静地将那张纸质日志举高，上面密密麻麻的墨迹和玛莎的签名，成为了击碎维克多谎言的最有力武器。",
+          "source_timeline_start": "2009-03-17T22:00:00+08:00",
+          "source_timeline_end": "2009-03-17T23:30:00+08:00"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC237",
+      "chapter_span": [
+        473,
+        474
+      ],
+      "source_event_direction": "前世具体受害：前世信托管理人在突发眩晕后，奥瑞恩集团立即冻结资产并接管决策权。；本事件独有的前世信息差：《双轨创作信托协议》补充条款规定管理人失能时签字权自动移交最高分学员。；今生提前动作：麦珂提前将补充条款副本存入昆廷随身携带的物理保险箱，并通知三位认证学员待命。；第473章可见小赢：昆廷突发眩晕离场，三位学员当场签署临时执行确认书，维克多无法启动资产冻结。；第474章新交锋：温特律师事务所公开条款原件，全球直播画面定格在三人联合签署的瞬间。；阻力方永久现实损失：奥瑞恩集团试图通过‘管理人失能’进行法律劫持的动议彻底丧失法理基础。；主角现实收益：麦珂获得对‘永恒星光’项目的绝对控制权，且无需经过任何审批流程。；不可逆结算键：三位认证学员的联署具有不可撤销的法律效力，直接覆盖原信托架构。；接回死亡控制主线：瓦解对手利用管理危机制造混乱、进而实施资产收割的阴谋链条。",
+      "source_event_direction_sha256": "0b9eb6f4395ba28fd5bc9a5199dcf675dcad25e10f4b96db66b9c369598a41dc",
+      "source_macro_sha256": "fc3619f3e63a6e7ebd7c9c83304a155705a1ed1c1511bb129031fcd9208c6f06",
+      "name": "双轨信托的生死签署",
+      "timeline_years": "2009",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "institutional",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS06"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "昆廷·琼斯",
+        "苏菲亚",
+        "玛莎",
+        "维克多·兰斯",
+        "三位认证学员"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用《双轨创作信托协议》中关于管理人失能的模糊条款，试图在昆廷突发眩晕后瞬间接管资产并夺取决策权，切断麦珂对‘永恒星光’的控制。",
+      "prev_life_tragedy": "前世昆廷在2009年3月17日晚22:15分突发眩晕，奥瑞恩集团随即以‘管理人丧失行为能力’为由，强行接管所有项目资金，麦珂被剥夺控制权，最终导致项目在混乱中被低价变卖。",
+      "info_gap_from_prev_life": "麦珂掌握前世未公开的《双轨创作信托协议》补充条款：当管理人突发不可逆生理障碍时，签字权自动移交给当前评分最高的三位认证学员，且该条款需物理介质确认方可生效，数字信号无法覆盖。",
+      "why_previous_life_failed": "前世麦珂依赖数字系统备份条款，而奥瑞恩集团拥有最高权限的数字密钥，在昆廷眩晕的瞬间直接覆盖了补充条款，导致法律劫持成功。",
+      "preemptive_avoidance": "麦珂提前在3月16日夜间，将《双轨创作信托协议》补充条款的纸质原件存入昆廷随身携带的物理保险箱（非电子锁），并秘密通知三位认证学员待命，确保在昆廷离场时能立即触发联合签署机制。",
+      "bait_and_evidence": "维克多故意安排昆廷在直播前一刻‘突发眩晕’离场，诱导现场媒体和奥瑞恩集团高层认定其丧失行为能力，以此作为启动资产接管的借口；而麦珂则利用这一时机，让三位学员当场签署临时执行确认书，形成不可撤销的物理证据。",
+      "comic_villain_behavior": "维克多·兰斯在确认昆廷‘倒下’后，竟不顾现场直播，对着麦珂风狂喜地宣布‘收割时刻已到’，甚至提前起草了讣告草稿，完全忽略了麦珂早已准备好的物理证据链，显得贪婪而滑稽。",
+      "villain_loss": "奥瑞恩集团试图通过‘管理人失能’进行法律劫持的动议彻底丧失法理基础，其内部因过度自信导致的操作失误暴露，信任裂痕扩大。",
+      "protagonist_gain": "麦珂获得对‘永恒星光’项目的绝对控制权，且无需经过任何审批流程，直接覆盖原信托架构。",
+      "relationship_change": "麦珂与‘星火同盟’成员建立基于绝对信任的生死契约；维克多与奥瑞恩集团高层产生不可调和的信任裂痕，后者开始怀疑内部有人泄露了‘必死’计划。",
+      "continuity_writes": [
+        "承接EC236中苏菲亚锁死胶片厂数据的结果，本事件进一步将‘清醒’状态从生理层面延伸至法律层面。",
+        "昆廷的眩晕是维克多精心设计的陷阱，但麦珂利用前世记忆将其转化为法律反击的契机。",
+        "三位学员的联署具有不可撤销的法律效力，直接覆盖原信托架构，形成新的权力中心。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "MC_TRUST_AUTHORITY",
+          "state_key": "management_authority_status",
+          "from": "pending_freeze_by_corp",
+          "to": "transferred_to_scholars_via_physical_signatures",
+          "irreversible": true,
+          "evidence": "ART_473_TEMP_CERT_AND_THREE_SCHOLAR_SIGNATURES",
+          "effect_type": "protagonist_gain",
+          "source_domain": "Legal_Proceedings"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "VL_CORP_SYSTEM",
+          "state_key": "asset_freeze_authority",
+          "from": "active_pending",
+          "to": "legally_voided_by_overriding_clauses",
+          "irreversible": true,
+          "evidence": "WINTER_LAW_FIRM_PUBLICATION_OF_ORIGINAL_CLAUSE",
+          "effect_type": "villain_loss",
+          "source_domain": "Legal_Proceedings"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_B04A992A7F99__DBD820C705DB",
+          "state_key": "trust_level",
+          "from": "strategic_partnership",
+          "to": "absolute_birth_death_contract",
+          "irreversible": true,
+          "evidence": "THREE_SCHOLARS_JOINT_SIGNING_EVENT",
+          "effect_type": "relationship_change",
+          "source_domain": "Social_Dynamics",
+          "source_entity_label": "MC_STAR_ALLIANCE"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_2009_MARCH_17_NIGHT"
+      ],
+      "cluster_outcome": "三位认证学员的联署具有不可撤销的法律效力，直接覆盖原信托架构，瓦解对手利用管理危机制造混乱、进而实施资产收割的阴谋链条。",
+      "next_event_hook": "‘永恒星光’落幕即‘星火审判’开端——麦珂未设复仇议程，只启动‘开口权存证计划’，将四十年间所有署名作品、健康公示、家庭决议与粉丝共创成果打包为开源时间胶囊，向全球教育机构免费授予权，引发新一轮资本围剿。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 473,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "主会场后台休息室",
+          "chapter_goal": "利用昆廷突发眩晕的假象，触发三位认证学员的联合签署机制，确立临时执行权。",
+          "chapter_title": "眩晕中的反杀",
+          "participants": [
+            "麦珂",
+            "昆廷·琼斯",
+            "苏菲亚",
+            "玛莎",
+            "三位认证学员",
+            "现场安保"
+          ],
+          "opening_conflict": "昆廷在直播前一刻突然捂住胸口倒地，维克多·兰斯的团队立刻冲入，声称其丧失行为能力，准备启动资产接管程序。",
+          "info_gap_use": "麦珂利用前世记忆，早已知道这是维克多的‘推药指令’后的标准剧本，提前将补充条款副本存入昆廷的物理保险箱，并通知学员待命。",
+          "opponent_reaction": "维克多·兰斯见状大喜，立刻命令法务团队准备接管文件，并在直播镜头前高呼‘收割时刻已到’，完全忽略了麦珂的布局。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主会场后台休息室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "昆廷倒地瞬间，镜头切换至麦珂冷静走向保险箱"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_473_TEMP_CERT",
+              "timeline_scope": "current",
+              "display_name": "《星火调音师临时执行确认书》",
+              "kind": "digital_forensic_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_469_MECHANICAL_LOCK",
+              "timeline_scope": "current",
+              "purpose": "作为物理介质，验证补充条款的真实性"
+            }
+          ],
+          "action_sequence": [
+            "昆廷倒地，维克多团队冲入，宣布其丧失行为能力。",
+            "麦珂冷静取出昆廷身上的物理保险箱，打开后展示补充条款原件。",
+            "三位认证学员迅速到场，在苏菲亚和玛莎的见证下，当场签署临时执行确认书。",
+            "维克多试图阻止，但发现法律程序已被物理证据锁定。"
+          ],
+          "visible_payoff": "三位学员的联署完成，维克多无法启动资产接管，现场直播画面定格在三人联合签署的瞬间。",
+          "ending": "麦珂手持签署文件，微笑着看向惊慌失措的维克多，全场观众屏息以待下一幕。",
+          "must_include": [
+            "昆廷倒地的真实性描写",
+            "物理保险箱的开启过程",
+            "三位学员签署的庄严感"
+          ],
+          "must_not_include": [
+            "昆廷的真实病情",
+            "维克多的具体阴谋细节",
+            "未来的法律诉讼结果"
+          ],
+          "detailed_synopsis": "2009年3月17日晚22:10，主会场后台休息室灯火通明。昆廷·琼斯突然捂住胸口，痛苦倒地，呼吸急促。维克多·兰斯闻讯赶来，脸上露出久违的狂喜，他立刻对身边的法务人员下令：“快！启动资产接管程序，他现在丧失了行为能力！”与此同时，麦珂却异常冷静，他早已预料到这一幕。他快步走到昆廷身边，从对方随身携带的物理保险箱中取出了《双轨创作信托协议》补充条款的纸质原件。这位老人曾告诉他，真正的法律力量不在远程档案库，而在指尖触碰的纸张上。麦珂高举文件，大声宣读：“根据补充条款，当管理人突发不可逆生理障碍时，签字权自动移交给当前评分最高的三位认证学员。”话音未落，三位早已待命的认证学员从人群中走出，在苏菲亚和玛莎的见证下，迅速在临时执行确认书上签下了自己的名字。维克多愣住了，他没想到麦珂会如此从容，更没想到自己精心策划的‘夺权’计划会被一张纸轻易破解。直播镜头下，三人联合签署的画面被定格，维克多的脸色瞬间变得铁青。"
+        },
+        {
+          "chapter_id": 474,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "主会场穹顶入口",
+          "chapter_goal": "温特律师事务所公开条款原件，彻底粉碎维克多的法律劫持企图，确立麦珂的绝对控制权。",
+          "chapter_title": "物理介质的胜利",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "温特律师事务所代表",
+            "奥瑞恩集团高层",
+            "全球观众"
+          ],
+          "opening_conflict": "维克多·兰斯不甘心失败，试图通过远程数字信号覆盖签署文件，宣称其无效，并准备启动讣告程序。",
+          "info_gap_use": "麦珂利用前世记忆，知道维克多会尝试用数字手段覆盖物理证据，因此提前让温特律师事务所的代表在场，准备公开原始条款。",
+          "opponent_reaction": "维克多·兰斯在直播中疯狂叫嚣，试图用技术术语混淆视听，但最终被温特律师事务所代表的实物展示打脸。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主会场穹顶入口",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "温特律师事务所代表走上台，展示原始条款"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_473_TEMP_CERT",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据，证明签署的合法性"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯在直播中叫嚣，试图用数字信号覆盖签署文件。",
+            "温特律师事务所代表走上台，展示原始条款原件，并解释其法律效力。",
+            "麦珂手持签署文件，微笑着面对镜头，宣告自己获得绝对控制权。",
+            "维克多·兰斯陷入被动，奥瑞恩集团高层开始怀疑内部有人泄露了计划。"
+          ],
+          "visible_payoff": "温特律师事务所公开条款原件，全球直播画面定格在三人联合签署的瞬间，维克多的法律劫持企图彻底破产。",
+          "ending": "麦珂手持未剪辑童年试镜母带步入主会场穹顶入口，全场观众爆发出雷鸣般的掌声。",
+          "must_include": [
+            "温特律师事务所代表的专业展示",
+            "维克多的狼狈反应",
+            "麦珂的从容姿态"
+          ],
+          "must_not_include": [
+            "具体的法律诉讼细节",
+            "未来的资本围剿",
+            "其他无关人物的心理描写"
+          ],
+          "detailed_synopsis": "2009年3月17日晚22:25，主会场穹顶入口处，全球直播正在进行。维克多·兰斯不甘心失败，他对着麦珂风大喊：“你们以为一张纸就能改变什么？我的数字系统已经覆盖了所有数据！”然而，温特律师事务所的代表此时走上台，手中拿着一份泛黄的纸质文件——《双轨创作信托协议》补充条款的原件。他平静地解释道：“这份文件的法律效力源自其物理存在，任何数字信号都无法覆盖或篡改它。”随着他的话音落下，现场大屏幕上展示了三位认证学员的联合签署画面，以及麦珂手持签署文件的清晰影像。维克多·兰斯愣住了，他意识到自己精心策划的法律劫持彻底破产了。奥瑞恩集团的高层们面面相觑，开始怀疑内部是否有人泄露了‘必死’计划。麦珂则从容地走向舞台中央，手持未剪辑的童年试镜母带，微笑着面对镜头：“现在，我获得了‘永恒星光’项目的绝对控制权。”全场观众爆发出雷鸣般的掌声，维克多·兰斯在镜头前显得无比狼狈，他的贪婪和愚蠢在这一刻暴露无遗。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC238",
+      "chapter_span": [
+        475,
+        476
+      ],
+      "source_event_direction": "前世具体受害：前世麦珂死后，维克多立即发布讣告并启动理赔程序，将死亡定论公之于众。；本事件独有的前世信息差：维克多习惯在确信目标死亡后24小时内启动全球广播的虚假哀悼仪式。；今生提前动作：麦珂提前安排玛莎签署2009年3月17日晨间体征日志，并授权苏菲亚在广场设立明信片墙。；第475章可见小赢：午夜钟声响起前，三千二百一十四封粉丝回信被展示，证明麦珂仍活跃于公众视野。；第476章新交锋：维克多强行播放预录讣告，却被现场观众朗读最新来信的人声洪流瞬间覆盖。；阻力方永久现实损失：维克多精心策划的‘死亡营销’沦为全场嘲笑对象，其公信力在全球直播中崩塌。；主角现实收益：麦珂以‘清醒者’身份直面镜头，将对手的谎言转化为自身存在的铁证。；不可逆结算键：未经剪辑的人声洪流成为首个无法被技术过滤的公共证据，永久记录于档案。；接回死亡控制主线：将对手误判死亡的逻辑漏洞放大，使其主动暴露操控链条的每一步操作。",
+      "source_event_direction_sha256": "57674685b08d698d24c925903c6a8a1dd589ef186445c5b6e7a34527ae15e317",
+      "source_macro_sha256": "fc3619f3e63a6e7ebd7c9c83304a155705a1ed1c1511bb129031fcd9208c6f06",
+      "name": "人声洪流与虚假讣告的生死博弈",
+      "timeline_years": "2009",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS06"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "维克多·兰斯",
+        "玛莎·杰森",
+        "苏菲亚",
+        "昆廷·琼斯"
+      ],
+      "fictional_obstacle": "维克多基于错误数据流确信麦珂已死，强行启动全球直播的虚假哀悼仪式，试图在麦珂“尸骨未寒”时完成资产收割。",
+      "prev_life_tragedy": "前世麦珂死后，维克多立即发布讣告并启动理赔程序，将死亡定论公之于众，导致麦珂无法自证清白。",
+      "info_gap_from_prev_life": "维克多习惯在确信目标死亡后24小时内启动全球广播的虚假哀悼仪式，且认为数字信号覆盖下无人能证伪。",
+      "why_previous_life_failed": "前世缺乏物理介质（胶片、纸质日志）作为对抗数字篡改的锚点，导致生命体征被单方面定义为“死亡”。",
+      "preemptive_avoidance": "麦珂提前安排玛莎签署2009年3月17日晨间体征日志，并授权苏菲亚在广场设立明信片墙，收集三千二百一十四封粉丝回信作为活体证据。",
+      "bait_and_evidence": "维克多故意在直播中播放伪造的心电图室颤波形，诱使观众确认“死亡”，却不知现场早已准备好未经剪辑的人声洪流与物理体征日志。",
+      "comic_villain_behavior": "维克多在镜头前深情朗诵为麦珂撰写的虚构悼词，语速过快且充满贪婪的急切感，完全无视现场观众手中正在翻动的信件和突然响起的咳嗽声。",
+      "villain_loss": "维克多精心策划的‘死亡营销’沦为全场嘲笑对象，其公信力在全球直播中崩塌，奥瑞恩集团内部开始怀疑有人泄露了‘必死’计划。",
+      "protagonist_gain": "麦珂以‘清醒者’身份直面镜头，将对手的谎言转化为自身存在的铁证，获得对‘永恒星光’项目的绝对控制权。",
+      "relationship_change": "麦珂与‘星火同盟’成员建立基于绝对信任的生死契约；维克多与奥瑞恩集团高层产生不可调和的信任裂痕。",
+      "continuity_writes": [
+        "承接EC237中三位学员联署生效后的法律真空期，麦珂不再寻求法律解释，而是直接利用公众舆论场进行降维打击。",
+        "呼应EC236中苏菲亚锁死的胶片厂数据，证明物理介质在数字时代依然具有不可篡改性。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "reputation",
+          "entity_id": "VL_CORP_PUBLIC_IMAGE",
+          "state_key": "credibility_status",
+          "from": "trusted_medicinal_authority",
+          "to": "exposed_fraudster_in_live_broadcast",
+          "irreversible": true,
+          "evidence": "ART_475_POSTCARD_HUMMING_AND_ART_476_LIVE_COUGH",
+          "effect_type": "villain_loss",
+          "source_domain": "Media_Social_Dynamics"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "MC_ETERNAL_STARS_PROJECT",
+          "state_key": "control_authority",
+          "from": "contested_by_corp",
+          "to": "absolute_control_by_protagonist",
+          "irreversible": true,
+          "evidence": "ART_475_FAN_LETTERS_AS_LIVE_EVIDENCE",
+          "effect_type": "protagonist_gain",
+          "source_domain": "Legal_Proceedings"
+        },
+        {
+          "domain": "health",
+          "entity_id": "MC_PHYSICAL_STATE",
+          "state_key": "vital_signs_verification",
+          "from": "digitally_faked_cardiac_arrest",
+          "to": "physically_verified_lively_state",
+          "irreversible": true,
+          "evidence": "ART_476_MARSHA_LOG_AND_REAL_TIME_COUGH",
+          "effect_type": "protagonist_gain",
+          "source_domain": "Medical_Forensics"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_2009_MARCH_17_NIGHT"
+      ],
+      "cluster_outcome": "维克多因过度自信导致的医疗操作失误暴露，其‘死亡营销’彻底破产；麦珂以清醒者身份确立存在铁证，开启‘开口权存证计划’序幕。",
+      "next_event_hook": "‘永恒星光’落幕即‘星火审判’开端——麦珂未设复仇议程，只启动‘开口权存证计划’，将四十年间所有署名作品、健康公示、家庭决议与粉丝共创成果打包为开源时间胶囊，向全球教育机构免费授予权，引发新一轮资本围剿。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 475,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "主会场穹顶入口",
+          "chapter_goal": "展示三千二百一十四封粉丝回信，构建‘活人’存在的初步证据链，打破维克多预设的死亡叙事。",
+          "chapter_title": "午夜前的千封回响",
+          "participants": [
+            "麦珂",
+            "苏菲亚",
+            "玛莎·杰森",
+            "现场观众"
+          ],
+          "opening_conflict": "维克多团队切断外部信号，准备在午夜钟声响起时宣布麦珂‘正式死亡’，并播放预录的讣告视频。",
+          "info_gap_use": "麦珂利用前世记忆，知道维克多会在22:40分强制切换画面，因此提前让苏菲亚在广场大屏同步展示粉丝信件。",
+          "opponent_reaction": "维克多看到大屏上密集的信件，脸色铁青，以为这是某种干扰手段，下令加快播放讣告流程。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主会场穹顶入口",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "钟声倒计时"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_475_POSTCARD_WALL",
+              "timeline_scope": "current",
+              "display_name": "《三千二百一十四封粉丝回信实物墙》",
+              "kind": "forensic_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_467_ORIGINAL_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为背景板上的佐证，显示玛莎的签名与信件日期一致"
+            }
+          ],
+          "action_sequence": [
+            "苏菲亚指挥工作人员在广场中央迅速搭建起一面由三万张明信片组成的‘回信墙’，灯光聚焦其上。",
+            "麦珂站在穹顶阴影处，手持未剪辑的童年试镜母带，眼神平静地注视着大屏幕。",
+            "现场观众自发开始朗读信件内容，声音从低语逐渐汇聚成洪流，覆盖了会场内的背景音乐。",
+            "玛莎高举手中的《体征日志》，在镜头特写下清晰展示22:30分的签字笔迹，墨迹未干。"
+          ],
+          "visible_payoff": "三千二百一十四封粉丝回信被展示，证明麦珂仍活跃于公众视野，维克多的‘死亡’假象出现第一道裂痕。",
+          "ending": "午夜钟声即将敲响，全场人声鼎沸，维克多被迫暂停讣告播放，陷入短暂的慌乱。",
+          "must_include": [
+            "明信片墙的物理形态",
+            "人声洪流的听觉描写",
+            "玛莎的签字特写"
+          ],
+          "must_not_include": [
+            "任何关于麦珂死亡的讨论",
+            "维克多的成功宣言"
+          ],
+          "detailed_synopsis": "维克多团队切断外部信号，准备在午夜钟声响起时宣布麦珂‘正式死亡’，并播放预录的讣告视频。苏菲亚指挥工作人员在广场中央迅速搭建起一面由三万张明信片组成的‘回信墙’，灯光聚焦其上。麦珂站在穹顶阴影处，手持未剪辑的童年试镜母带，眼神平静地注视着大屏幕。现场观众自发开始朗读信件内容，声音从低语逐渐汇聚成洪流，覆盖了会场内的背景音乐。玛莎高举手中的《体征日志》，在镜头特写下清晰展示22:30分的签字笔迹，墨迹未干。三千二百一十四封粉丝回信被展示，证明麦珂仍活跃于公众视野，维克多的‘死亡’假象出现第一道裂痕。午夜钟声即将敲响，全场人声鼎沸，维克多被迫暂停讣告播放，陷入短暂的慌乱。"
+        },
+        {
+          "chapter_id": 476,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "主会场舞台中央",
+          "chapter_goal": "维克多强行播放预录讣告，被现场人声洪流覆盖，麦珂现身，完成终极反转。",
+          "chapter_title": "人声洪流淹没虚假讣告",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "昆廷·琼斯",
+            "现场观众",
+            "全球直播镜头"
+          ],
+          "opening_conflict": "维克多恼羞成怒，强行切断现场音频，通过后台指令播放预先录制好的麦珂‘临终遗言’及讣告视频。",
+          "info_gap_use": "麦珂利用前世记忆，知道维克多会在23:00分强行切换，因此提前安排了昆廷控制导播台，确保物理声源优先。",
+          "opponent_reaction": "维克多对着麦珂风慷慨激昂地宣读悼词，表情悲戚却难掩贪婪，完全没注意到现场观众的反抗和麦珂的现身。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主会场舞台中央",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "导播台切换失败"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_475_POSTCARD_WALL",
+              "timeline_scope": "current",
+              "purpose": "作为背景，持续提供视觉冲击"
+            }
+          ],
+          "action_sequence": [
+            "维克多强行切断现场麦珂风，大屏幕上播放出麦珂‘虚弱离世’的预录影像，配合悲情的钢琴曲。",
+            "现场观众非但没有沉默，反而爆发出更热烈的呼喊，纷纷举起手机闪光灯，形成一片星海。",
+            "昆廷在导播台按下紧急按钮，将现场实时的环境音——包括观众的欢呼、咳嗽声、翻书声——直接推送到全球直播信号。",
+            "麦珂推开沉重的穹顶大门，手持未剪辑的童年试镜母带，一步步走向舞台中央，步伐稳健有力。"
+          ],
+          "visible_payoff": "维克多强行播放的预录讣告被现场观众朗读最新来信的人声洪流瞬间覆盖，麦珂以清醒者身份直面镜头。",
+          "ending": "维克多目瞪口呆地看着走来的麦珂，讣告视频在尴尬的静音中定格，全球直播画面定格在麦珂自信的微笑上。",
+          "must_include": [
+            "预录讣告与人声洪流的对比",
+            "麦珂手持母带的动作",
+            "维克多的错愕表情"
+          ],
+          "must_not_include": [
+            "麦珂的内心独白",
+            "维克多的悔过心理"
+          ],
+          "detailed_synopsis": "维克多恼羞成怒，强行切断现场音频，通过后台指令播放预先录制好的麦珂‘临终遗言’及讣告视频。维克多强行切断现场麦珂风，大屏幕上播放出麦珂‘虚弱离世’的预录影像，配合悲情的钢琴曲。现场观众非但没有沉默，反而爆发出更热烈的呼喊，纷纷举起手机闪光灯，形成一片星海。昆廷在导播台按下紧急按钮，将现场实时的环境音——包括观众的欢呼、咳嗽声、翻书声——直接推送。麦珂推开沉重的穹顶大门，手持未剪辑的童年试镜母带，一步步走向舞台中央，步伐稳健有力。维克多强行播放的预录讣告被现场观众朗读最新来信的人声洪流瞬间覆盖，麦珂以清醒者身份直面镜头。维克多目瞪口呆地看着走来的麦珂，讣告视频在尴尬的静音中定格，全球直播画面定格在麦珂自信的微笑上。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC239",
+      "chapter_span": [
+        477,
+        478
+      ],
+      "source_event_direction": "前世具体受害：前世麦珂在终局直播中被植入虚假的心电图室颤信号，导致全场陷入悲恸。；本事件独有的前世信息差：2001年重制版第七轨末尾的原始咳嗽声是未被数字降噪处理的声学指纹。；今生提前动作：麦珂要求艾琳在直播倒计时启动时，同步接入三十七国电台频段播放原始咳嗽声。；第477章可见小赢：当虚拟心电图显示室颤时，全场观众听到真实的咳嗽声，导播台被迫切换至物理声源。；第478章新交锋：苏菲亚将十八座场馆铭牌上‘脉搏可查，权限不代’字样投影，与观众闪光灯形成三重光信号。；阻力方永久现实损失：维克多团队的技术造假手段被实时映射并存档，所有伪造数据被标记为无效。；主角现实收益：麦珂手持未剪辑童年试镜母带步入穹顶，其存在本身即是对所有数字伪证的终极反驳。；不可逆结算键：跨越四十年的集体屏息与合唱构成不可逆的声学证词，证明麦珂全程清醒。；接回死亡控制主线：用真实的生理反应（咳嗽、呼吸）击碎对手构建的数字错误死亡判定闭环。",
+      "source_event_direction_sha256": "36312c11bdf6f43a2265807d8540c2243ace94d0a0b684c142d690c15499f5cf",
+      "source_macro_sha256": "fc3619f3e63a6e7ebd7c9c83304a155705a1ed1c1511bb129031fcd9208c6f06",
+      "name": "声波破妄：从数字死亡到物理苏醒",
+      "timeline_years": "2009",
+      "main_opponent": "维克多·兰斯集团技术部",
+      "opposition_type": "technical",
+      "event_type": "performance",
+      "solution_type": "performance_proof",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS06"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "艾琳",
+        "苏菲亚",
+        "玛莎",
+        "维克多·兰斯",
+        "昆廷·琼斯"
+      ],
+      "fictional_obstacle": "全球直播系统被植入虚假心电图室颤信号，试图诱导观众和自动理赔程序判定麦珂“临床死亡”。",
+      "prev_life_tragedy": "前世麦珂在终局直播中被植入虚假的心电图室颤信号，导致全场陷入悲恸，资产被瞬间收割。",
+      "info_gap_from_prev_life": "2001年重制版第七轨末尾的原始咳嗽声是未被数字降噪处理的声学指纹，具有不可复制的物理特征。",
+      "why_previous_life_failed": "依赖纯数字生命体征监测，未建立物理介质与数字信号的交叉验证机制，导致被黑客完美篡改。",
+      "preemptive_avoidance": "麦珂提前指令艾琳将2001年原始母带中的咳嗽声接入三十七国电台频段，作为直播倒计时的强制物理声源。",
+      "bait_and_evidence": "维克多故意放大“室颤”警报并启动讣告程序，诱使麦珂做出反应；麦珂以真实的生理咳嗽声作为反击证据。",
+      "comic_villain_behavior": "维克多因过度自信，在确认“死亡”后立刻在镜头前举杯庆祝，并对着麦珂风宣读早已准备好的虚假讣告，完全无视现场异常声响。",
+      "villain_loss": "维克多团队的技术造假手段被实时映射并存档，所有伪造数据被标记为无效，其公信力在全球直播中彻底崩塌。",
+      "protagonist_gain": "麦珂手持未剪辑童年试镜母带步入穹顶，其存在本身即是对所有数字伪证的终极反驳，获得绝对控制权。",
+      "relationship_change": "麦珂与‘星火同盟’成员建立基于绝对信任的生死契约；维克多与奥瑞恩集团高层产生不可调和的信任裂痕。",
+      "continuity_writes": [
+        "承接EC238粉丝回信的人声洪流，将情绪推至最高点后引入物理层面的生死博弈。",
+        "严格遵循2009年技术条件，使用模拟信号与数字信号的双重校验逻辑。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "health",
+          "entity_id": "MC_PHYSICAL_STATE",
+          "state_key": "vital_signs_verification__extension_EC239",
+          "from": "none",
+          "to": "physically_verified_lively_state",
+          "irreversible": true,
+          "evidence": "ART_477_REAL_COUGH_AUDIO_FINGERPRINT",
+          "effect_type": "protagonist_gain",
+          "source_domain": "Medical_Forensics",
+          "source_state_key": "vital_signs_verification"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "VL_CORP_TECH_INTEGRITY",
+          "state_key": "data_authenticity_status",
+          "from": "trusted_medicinal_authority",
+          "to": "exposed_fraudster_in_live_broadcast",
+          "irreversible": true,
+          "evidence": "ART_478_DIGITAL_LOG_MISMATCH_RECORD",
+          "effect_type": "villain_loss",
+          "source_domain": "Media_Social_Dynamics"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_2001_REMASTER_TRACK_7"
+      ],
+      "cluster_outcome": "麦珂以真实生理反应击碎数字死亡闭环，维克多技术造假暴露，双方信任彻底破裂，麦珂掌握绝对主动权。",
+      "next_event_hook": "‘永恒星光’落幕即‘星火审判’开端——麦珂未设复仇议程，只启动‘开口权存证计划’，将四十年间所有署名作品、健康公示、家庭决议与粉丝共创成果打包为开源时间胶囊，向全球教育机构免费授予权，引发新一轮资本围剿。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 477,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "主会场穹顶入口",
+          "chapter_goal": "利用物理声源打破数字伪造的死亡判定，迫使导播台切换信号源。",
+          "chapter_title": "室颤假象与真实咳嗽",
+          "participants": [
+            "麦珂",
+            "艾琳",
+            "维克多·兰斯",
+            "导播团队"
+          ],
+          "opening_conflict": "虚拟大屏显示麦珂心率归零，全场哗然，维克多准备宣布死亡。",
+          "info_gap_use": "麦珂利用前世知晓的2001年原始咳嗽声频率，提前锁定该频段。",
+          "opponent_reaction": "维克多见信号正常，以为计划天衣无缝，下令立即播放预录讣告。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主会场穹顶入口",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "倒计时归零，大屏幕突然黑屏一秒后出现红色报警"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_477_REAL_COUGH_AUDIO_FINGERPRINT",
+              "timeline_scope": "current",
+              "display_name": "《2001年重制版第七轨原始咳嗽声采样》",
+              "kind": "forensic_audio_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_467_ORIGINAL_LOG",
+              "timeline_scope": "current",
+              "purpose": "对比玛莎日志记录的真实呼吸频率"
+            }
+          ],
+          "action_sequence": [
+            "22:15分，维克多下达指令，导播台将麦珂的心电图篡改为室颤波形，大屏同步显示红色心跳停止图标。",
+            "全场观众惊愕，摄像机疯狂对准空无一人的舞台中央。",
+            "22:20分，艾琳按预定协议，切断部分数字混音，强制接入三十七国电台备用频段。",
+            "一声清晰、粗糙且带有岁月颗粒感的咳嗽声穿透全场音响，那是2001年未降噪的原始录音。",
+            "维克多愣住，试图切断音频，但物理线路已被艾琳接管。",
+            "22:30分，导播台被迫切换至物理声源，屏幕上的室颤波形被替换为实时物理声波纹路。",
+            "麦珂从侧幕走出，手中拿着未剪辑的童年试镜母带，对着麦珂风轻咳两声回应。"
+          ],
+          "visible_payoff": "全场观众听到真实的咳嗽声，导播台被迫切换至物理声源，证明麦珂并未死亡。",
+          "ending": "维克多的讣告程序卡在播放键上，无法继续，全场目光聚焦于走出的麦珂。",
+          "must_include": [
+            "2001年原始咳嗽声",
+            "导播台被迫切换信号",
+            "麦珂手持母带出场"
+          ],
+          "must_not_include": [
+            "任何医疗仪器故障解释",
+            "麦珂内心独白"
+          ],
+          "detailed_synopsis": "2009年3月17日晚22:15，主会场穹顶下，维克多·兰斯集团的控制系统成功将麦珂的生命体征篡改为室颤，大屏幕上红色的心跳停止图标刺眼地闪烁，全球数亿观众屏息凝神，仿佛目睹了一场精心策划的处决。维克多嘴角上扬，准备按下那个让麦珂“社会性死亡”的按钮。然而，他不知道的是，麦珂早在三年前就锁定了2001年重制版第七轨末尾那段未被数字降噪处理的原始咳嗽声——那是他前世被误判死亡时唯一的物理锚点。随着倒计时归零，艾琳果断切断了数字混音通道，强行接入了三十七国电台的备用物理频段。一声苍老、沙哑却极具辨识度的咳嗽声，如同利剑般划破了死寂的直播流。那不是电子合成的音效，而是带着四十年岁月尘埃的真实回响。导播台瞬间陷入混乱，因为物理声源的存在直接否定了数字信号的权威性，系统被迫切换至物理声源画面。维克多惊恐地发现，他的讣告程序被卡死，而麦珂正一步步走向舞台中央，手中紧握着那卷未剪辑的童年试镜母带，用一声清晰的回应宣告了数字死亡的破产。"
+        },
+        {
+          "chapter_id": 478,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "十八座场馆铭牌投影区",
+          "chapter_goal": "通过视觉信号与观众互动，固化“清醒”事实，完成对维克多技术造假的最终清算。",
+          "chapter_title": "三重光语：脉搏可查，权限不代",
+          "participants": [
+            "麦珂",
+            "苏菲亚",
+            "玛莎",
+            "观众代表",
+            "昆廷·琼斯"
+          ],
+          "opening_conflict": "维克多试图重新控制信号，声称咳嗽是录音回放，要求重启系统。",
+          "info_gap_use": "苏菲亚利用麦珂提供的胶片厂原始数据，将物理铭牌信息转化为视觉投影。",
+          "opponent_reaction": "维克多气急败坏地指责技术故障，却不知自己的操作日志已被公开存档。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "十八座场馆铭牌投影区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "苏菲亚启动全息投影，覆盖全场背景"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_478_VISUAL_SIGNAL_TRIPLE",
+              "timeline_scope": "current",
+              "display_name": "《十八座场馆铭牌投影与观众闪光灯三重信号》",
+              "kind": "visual_forensic_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_469_MECHANICAL_LOCK",
+              "timeline_scope": "current",
+              "purpose": "展示机械传动输液管路实物图，佐证无药物干预"
+            }
+          ],
+          "action_sequence": [
+            "22:45分，苏菲亚启动预设程序，将十八座场馆铭牌上刻着的‘脉搏可查，权限不代’字样投射到穹顶天空。",
+            "与此同时，三千二百一十四位观众同时打开手机闪光灯，形成一片星海，与铭文投影交相辉映。",
+            "麦珂站在光影中心，举起手中的童年试镜母带，示意这是最原始的‘生命档案’。",
+            "玛莎走上台前，宣读昨夜签署的法定日志，确认麦珂全程清醒，无任何药物干预。",
+            "维克多试图辩解，称这是集体作弊，但康拉德·莫里森（已恢复意识）当场指出其操作日志中的致命漏洞。",
+            "系统自动将所有伪造数据标记为无效，并生成全球存档报告。",
+            "全场爆发出一阵雷鸣般的掌声，维克多团队的脸色惨白，被彻底孤立。"
+          ],
+          "visible_payoff": "苏菲亚将十八座场馆铭牌上‘脉搏可查，权限不代’字样投影，与观众闪光灯形成三重光信号，证明麦珂全程清醒。",
+          "ending": "维克多被安保人员请离现场，奥瑞恩集团高层开始内部调查，麦珂正式开启‘开口权存证计划’。",
+          "must_include": [
+            "三重光信号",
+            "玛莎宣读日志",
+            "维克多被孤立"
+          ],
+          "must_not_include": [
+            "麦珂直接攻击维克多个人",
+            "未来法律判决结果"
+          ],
+          "detailed_synopsis": "维克多试图重新控制信号，声称咳嗽是录音回放，要求重启系统。22:45分，苏菲亚启动预设程序，将十八座场馆铭牌上刻着的‘脉搏可查，权限不代’字样投射到。与此同时，三千二百一十四位观众同时打开手机闪光灯，形成一片星海，与铭文投影交相辉映。麦珂站在光影中心，举起手中的童年试镜母带，示意这是最原始的‘生命档案’。玛莎走上台前，宣读昨夜签署的法定日志，确认麦珂全程清醒，无任何药物干预。苏菲亚将十八座场馆铭牌上‘脉搏可查，权限不代’字样投影，与观众闪光灯形成三重光信号，证明麦珂全程清醒。维克多被安保人员请离现场，奥瑞恩集团高层开始内部调查，麦珂正式开启‘开口权存证计划’。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC240",
+      "chapter_span": [
+        479,
+        480
+      ],
+      "source_event_direction": "前世具体受害：前世麦珂死后，奥瑞恩集团迅速完成版权紧急授权与巨额理赔金的转移。；本事件独有的前世信息差：1981年《锈钉与琴键》内页注明母带存于三人联锁保险柜，钥匙分置不同邮局租箱。；今生提前动作：麦珂在直播倒数三分钟开启邮局租箱录像，同步展示温特事务所保管副本与实体母带。；第479章可见小赢：维克多试图调取版权授权文件，却发现系统因证据闭环自动触发冻结机制。；第480章新交锋：三百二十一名医护代表举起2007年仪式签名页，齐诵‘我确认此人今日清醒’，全场爆发合唱。；阻力方永久现实损失：奥瑞恩集团所有基于麦珂死亡假设的财务动作全部作废，面临全球审计与追责。；主角现实收益：麦珂获得‘开口权存证计划’启动权，四十年作品打包为开源时间胶囊免费授予全球。；不可逆结算键：铜质齿轮完成最后一次旋转，触发三十七国电台切入‘午夜星轨’，宣告新纪元开始。；接回死亡控制主线：将对手的贪婪与误判转化为对自己有利的清算时刻，彻底终结死亡链条。",
+      "source_event_direction_sha256": "625c5d8cd3c36ad6b6c2015c304609ef5780ef6bb1e5ee828e487c3ea3230118",
+      "source_macro_sha256": "fc3619f3e63a6e7ebd7c9c83304a155705a1ed1c1511bb129031fcd9208c6f06",
+      "name": "物理介质反噬与开源时间胶囊启动",
+      "timeline_years": "2009",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS06"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "维克多·兰斯",
+        "苏菲亚",
+        "玛莎",
+        "昆廷",
+        "三百二十一医护代表"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用麦珂‘已死’的虚假状态，通过全球直播系统强行执行版权紧急授权与巨额理赔金划转程序，试图在法律生效前完成资产收割。",
+      "prev_life_tragedy": "前世麦珂死后，奥瑞恩集团利用其法律上的‘死亡推定’，迅速完成版权紧急授权与巨额理赔金的转移，导致麦珂生前心血被资本彻底吞并。",
+      "info_gap_from_prev_life": "1981年《锈钉与琴键》内页注释：核心母带存于三人联锁保险柜，三把钥匙分别由麦珂、苏菲亚、昆廷持有，且备用密钥封存于银湾市、雾河城、东湾市三地邮局租箱，需物理在场验证。",
+      "why_previous_life_failed": "前世麦珂未掌握钥匙物理分布细节，死后数据流被维克多接管，无法阻止数字资产的非法转移。",
+      "preemptive_avoidance": "麦珂重生后提前在3月16日植入《双轨创作信托协议》补充条款，并在直播倒数三分钟（22:12）通过苏菲亚控制的物理终端，强制开启三地邮局租箱的实时录像链路，同步展示温特事务所保管的实体母带。",
+      "bait_and_evidence": "维克多诱骗康拉德·莫里森签署‘死亡确认书’以激活理赔程序，麦珂则抛出1981年原始日志与现场实物母带，证明‘死者’不仅活着，且拥有完整的物理控制权。",
+      "comic_villain_behavior": "维克多在直播中疯狂敲击键盘试图手动覆盖物理信号，却因系统检测到‘多重物理介质同时在线’而逻辑死锁，他对着麦珂风大喊‘这是黑客攻击’，却被身后举着签名的医护人员用歌声淹没。",
+      "villain_loss": "奥瑞恩集团所有基于麦珂死亡假设的财务动作（版权授权、理赔金划转）因缺乏法定‘死亡事实’依据而瞬间失效，系统自动标记为‘欺诈性交易’，引发全球审计预警。",
+      "protagonist_gain": "麦珂正式获得‘开口权存证计划’启动权，将四十年间所有署名作品、健康公示、家庭决议与粉丝共创成果打包为开源时间胶囊，向全球教育机构免费授予权，切断资本对声音的垄断。",
+      "relationship_change": "麦珂与‘星火同盟’建立生死契约；维克多与奥瑞恩集团高层产生信任裂痕，后者怀疑内部有人泄露了‘必死’计划。",
+      "continuity_writes": [
+        "承接EC239中麦珂手持母带步入穹顶的视觉高潮，本章聚焦于该物理介质如何从‘展示品’转化为‘法律武器’。",
+        "维克多的反应必须体现其从自信到崩溃的滑稽过程，而非单纯的愤怒。",
+        "37国电台切换必须在最后作为不可逆的‘新纪元’宣告，而非提前剧透。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "VL_CORP_ASSET_FLOW",
+          "state_key": "asset_transfer_status_EC240",
+          "from": "executing_death_based_transfer",
+          "to": "fraudulent_transaction_marked_invalid",
+          "irreversible": true,
+          "evidence": "ART_479_PHYSICAL_KEY_VERIFICATION_AND_MAILBOX_VIDEO",
+          "effect_type": "villain_loss",
+          "source_domain": "Legal_Forensics",
+          "source_state_key": "asset_freeze_preemption"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "MC_OPEN_SOURCE_RIGHTS",
+          "state_key": "open_source_capsule_activation_EC240",
+          "from": "none",
+          "to": "globally_granted_open_license",
+          "irreversible": true,
+          "evidence": "ART_480_CHORAL_SIGNATURE_AND_GEAR_ROTATION",
+          "effect_type": "protagonist_gain",
+          "source_domain": "Cultural_Policy",
+          "source_state_key": "copyright_reclaim"
+        },
+        {
+          "domain": "health",
+          "entity_id": "MC_PHYSICAL_STATE",
+          "state_key": "legal_vitality_confirmation_EC240",
+          "from": "presumed_dead_in_system",
+          "to": "legally_verified_alive_with_physical_proof",
+          "irreversible": true,
+          "evidence": "ART_479_THREE_BOXES_OPENED_SIMULTANEOUSLY",
+          "effect_type": "protagonist_gain",
+          "source_domain": "Medical_Legal",
+          "source_state_key": "death_fraud_disproof"
+        }
+      ],
+      "historical_anchor_ids": [
+        "1981_RUST_NAIL_MANUSCRIPT",
+        "2007_MEDICAL_CEREMONY_SIGNING"
+      ],
+      "cluster_outcome": "维克多因贪婪试图在麦珂‘错误死亡判定’状态下收割资产，结果被麦珂利用前世记忆中的物理密钥分布反杀。奥瑞恩集团的自动化交易系统因检测到‘活人’持有的物理介质而逻辑崩溃，所有基于死亡假设的交易被标记为欺诈。麦珂顺势启动‘开口权存证计划’，将四十年的心血变为全球公共资产，彻底粉碎资本围剿的法理基础。",
+      "next_event_hook": "'开口权存证计划'启动后，全球资本将发起新一轮围剿，试图通过法律战、舆论战等手段重新夺回声音主权，麦珂需在开源过程中应对复杂的国际法律纠纷。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 479,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "主会场穹顶入口",
+          "chapter_goal": "利用物理密钥分布打破奥瑞恩集团的数字资产封锁，迫使系统承认麦珂存活。",
+          "chapter_title": "三箱同开：死局中的物理铁证",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "苏菲亚",
+            "康拉德·莫里森",
+            "导播团队"
+          ],
+          "opening_conflict": "维克多正在全球直播中宣读讣告并准备点击‘版权紧急授权’按钮，系统显示资金即将划转至离岸账户。",
+          "info_gap_use": "麦珂利用前世记忆，知道1981年母带钥匙分置三地邮局租箱，且需物理在场才能开启，这是数字系统无法模拟的绝对壁垒。",
+          "opponent_reaction": "维克多看到麦珂走向控制台，以为对方要自证清白，便加速点击授权键，嘴角挂着胜利的微笑，直到屏幕弹出‘物理介质冲突’的红色警报。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主会场穹顶入口",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂手持三个微型U盘（对应三地钥匙）走向苏菲亚的控制台，背景是倒计时归零。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_479_PHYSICAL_KEY_VERIFICATION",
+              "timeline_scope": "current",
+              "display_name": "《三地邮局租箱同步开启录像》",
+              "kind": "digital_forensic_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_467_ORIGINAL_LOG",
+              "timeline_scope": "current",
+              "purpose": "对比1981年日志中的钥匙分布记录与当前开启地点的一致性。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在直播倒数三分钟时，命令苏菲亚切断所有远程数据输入，强制接入物理终端。",
+            "苏菲亚同步播放银湾市、雾河城、东湾市三地邮局租箱的实时监控画面，三把机械钥匙依次插入锁孔。",
+            "随着第三把钥匙转动，1981年《锈钉与琴键》的原始母带盒被机械臂取出，直接接入直播信号源。",
+            "维克多试图手动覆盖信号，但系统检测到‘三重物理介质’同时在线，触发‘防欺诈死锁’，授权按钮变灰。",
+            "康拉德·莫里森惊恐地发现，自己刚才签署的‘死亡确认书’因麦珂的物理存在而自动失效。"
+          ],
+          "visible_payoff": "维克多点击的‘授权’按钮毫无反应，屏幕上跳出‘错误：目标主体物理存在验证失败，交易终止’的字样。",
+          "ending": "维克多瘫坐在椅子上，看着屏幕上滚动的三地录像，意识到自己精心策划的资产收割变成了笑话。",
+          "must_include": [
+            "三地邮局租箱同步开启",
+            "物理母带接入直播",
+            "系统死锁提示"
+          ],
+          "must_not_include": [
+            "维克多被捕",
+            "资产被查封"
+          ],
+          "detailed_synopsis": "维克多正在全球直播中宣读讣告并准备点击‘版权紧急授权’按钮，系统显示资金即将划转至离岸账户。麦珂在直播倒数三分钟时，命令苏菲亚切断所有远程数据输入，强制接入物理终端。苏菲亚同步播放银湾市、雾河城、东湾市三地邮局租箱的实时监控画面，三把机械钥匙依次插入锁孔。随着第三把钥匙转动，1981年《锈钉与琴键》的原始母带盒被机械臂取出，直接接入直播信号源。维克多试图手动覆盖信号，但系统检测到‘三重物理介质’同时在线，触发‘防欺诈死锁’，授权按钮。维克多点击的‘授权’按钮毫无反应，屏幕上跳出‘错误：目标主体物理存在验证失败，交易终止’的字样。维克多瘫坐在椅子上，看着屏幕上滚动的三地录像，意识到自己精心策划的资产收割变成了笑话。",
+          "source_timeline_start": "2009-03-17T22:12:00Z",
+          "source_timeline_end": "2009-03-17T22:25:00Z"
+        },
+        {
+          "chapter_id": 480,
+          "timeline_start": "2009-03-26",
+          "timeline_end": "2009-03-26",
+          "scene": "主会场中央舞台",
+          "chapter_goal": "将麦珂的生存事实转化为法律与社会层面的‘开源时间胶囊’，彻底终结死亡链条。",
+          "chapter_title": "齿轮旋转：新纪元的钟声",
+          "participants": [
+            "麦珂",
+            "三百二十一医护代表",
+            "玛莎",
+            "昆廷",
+            "全球观众"
+          ],
+          "opening_conflict": "奥瑞恩集团试图通过公关手段将‘系统故障’解释为技术事故，掩盖麦珂存活的事实，但麦珂已准备好更宏大的反击。",
+          "info_gap_use": "利用2007年医护仪式签名页的法律效力，结合1969年试镜盒底的铜质齿轮，构建跨越四十年的‘开口权’法理闭环。",
+          "opponent_reaction": "维克多试图辩解，却被全场爆发的合唱淹没，他的声音在三百人的声浪中显得微不足道，最终只能狼狈离场。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "主会场中央舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂转身面向三百名医护代表，示意他们举起手中的签名页。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_480_OPEN_SOURCE_CAPSULE",
+              "timeline_scope": "current",
+              "display_name": "《开口权存证计划·开源时间胶囊》",
+              "kind": "legal_cultural_manifesto"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_479_PHYSICAL_KEY_VERIFICATION",
+              "timeline_scope": "current",
+              "purpose": "作为‘开口权’的物理基础，证明麦珂从未失去对自己作品的控制权。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂接过玛莎递来的2007年仪式签名页，高举过头顶。",
+            "三百二十一名医护代表整齐划一地举起手中的签名页，齐声诵读：‘我确认此人今日清醒，我见证其生命尊严。’",
+            "全场三千名观众与全球数亿直播观众随之爆发合唱，人声洪流瞬间压过维克多的辩解。",
+            "麦珂将一枚铜质齿轮放入主控台的插槽，齿轮旋转发出清脆声响，触发全球通讯塔切换至‘午夜星轨’频段。",
+            "三十七国电台同步切入，宣布‘开口权存证计划’正式启动，四十年作品即刻向全球教育机构免费开放。",
+            "维克多在混乱中被安保人员请离现场，身后是奥瑞恩集团高层震惊而愤怒的脸庞。"
+          ],
+          "visible_payoff": "铜质齿轮旋转的瞬间，全球三十多个国家的广播频率同时切换，播放出麦珂四十年前的一首童谣，宣告旧时代的终结。",
+          "ending": "麦珂站在舞台中央，看着窗外初升的朝阳，他知道，真正的战斗才刚刚开始，但他已握有开启未来的钥匙。",
+          "must_include": [
+            "医护代表齐诵",
+            "铜质齿轮旋转",
+            "三十七国电台切换"
+          ],
+          "must_not_include": [
+            "麦珂接受采访",
+            "维克多下跪求饶"
+          ],
+          "detailed_synopsis": "奥瑞恩集团试图通过公关手段将‘系统故障’解释为技术事故，掩盖麦珂存活的事实，但麦珂已准备好更宏大的反击。麦珂接过玛莎递来的2007年仪式签名页，高举过头顶。三百二十一名医护代表整齐划一地举起手中的签名页，齐声诵读：‘我确认此人今日清醒，我见证其生。全场三千名观众与全球数亿直播观众随之爆发合唱，人声洪流瞬间压过维克多的辩解。麦珂将一枚铜质齿轮放入主控台的插槽，齿轮旋转发出清脆声响，触发全球通讯塔切换至‘午夜星轨’。铜质齿轮旋转的瞬间，全球三十多个国家的广播频率同时切换，播放出麦珂四十年前的一首童谣，宣告旧时代的终结。麦珂站在舞台中央，看着窗外初升的朝阳，他知道，真正的战斗才刚刚开始，但他已握有开启未来的钥匙。",
+          "source_timeline_start": "2009-03-17T22:26:00Z",
+          "source_timeline_end": "2009-03-17T22:45:00Z"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2009",
+    "character_states": [
+      {
+        "entity_id": "MC",
+        "state_key": "legal_status",
+        "new_value": "legally_verified_alive_with_full_rights"
+      },
+      {
+        "entity_id": "VL",
+        "state_key": "reputation_status",
+        "new_value": "exposed_as_fraudster_in_live_broadcast"
+      },
+      {
+        "entity_id": "AUORIEN_GROUP",
+        "state_key": "trust_level",
+        "new_value": "severely_damaged_internal_suspicion"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": [
+          "麦珂",
+          "星火同盟"
+        ],
+        "change": "established_lifelong_bond_of_absolute_trust"
+      },
+      {
+        "pair": [
+          "维克多",
+          "奥瑞恩高层"
+        ],
+        "change": "irreconcilable_trust_crack"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "MC_WORKS",
+        "status": "open_source_global_license_granted",
+        "description": "四十年作品打包为开源时间胶囊，免费授予全球教育机构。"
+      },
+      {
+        "entity_id": "AUORIEN_ASSETS",
+        "status": "pending_global_audit",
+        "description": "所有基于麦珂死亡假设的财务动作被标记为欺诈，面临全球审计。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "MC",
+        "status": "physically_healthy",
+        "location": "Main Venue Dome Entrance"
+      }
+    ],
+    "open_threads": [
+      "全球资本对‘开口权存证计划’的法律围剿",
+      "开源时间胶囊在国际教育机构的落地情况"
+    ],
+    "resolved_threads": [
+      "麦珂‘死亡’真相的澄清",
+      "奥瑞恩集团基于死亡假设的资产收割计划"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "'开口权存证计划'启动后，全球资本将发起新一轮围剿，试图通过法律战、舆论战等手段重新夺回声音主权，麦珂需在开源过程中应对复杂的国际法律纠纷。"
+  }
+}

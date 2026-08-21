@@ -1,0 +1,50 @@
+{
+  "generated_by": "qwen",
+  "kind": "threads",
+  "identifier": "GLOBAL",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "9685c03c6edda5720f3b1210febcbbccdd9c00b1ce2cbdc7d8704de8ce994c77",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-04T20:56:34+08:00",
+      "prompt_sha256": "9685c03c6edda5720f3b1210febcbbccdd9c00b1ce2cbdc7d8704de8ce994c77",
+      "raw_response_sha256": "796f11dc44f348e16755a156dfcc4675fca2636251a0a580b7be5dac3ca391df",
+      "raw_response_file": "GLOBAL_threads_attempt_01_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Invalid control character at: line 49 column 103 (char 2646)"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 79.031,
+      "usage": {
+        "input_tokens": 12946,
+        "output_tokens": 5146,
+        "total_tokens": 18092,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-04T20:57:53+08:00",
+      "prompt_sha256": "5d45948cae0504260286510686f611f1f23b9fcaf5edc0cceb2b3a62007e0cff",
+      "raw_response_sha256": "4d8cea613f59acca881c164198b82bd3241a094361dc0fc84910cdba7179cf02",
+      "raw_response_file": "GLOBAL_threads_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 79.121,
+      "usage": {
+        "input_tokens": 18149,
+        "output_tokens": 5145,
+        "total_tokens": 23294,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "macro_group_id": "MG049",
+  "event_clusters": [
+    {
+      "cluster_id": "EC241",
+      "chapter_span": [481, 482],
+      "source_event_direction": "{\"cluster_id\": \"EC241\", \"chapter_span\": [481, 482], ...}",
+      "source_event_direction_sha256": "a7f3c9d2e1b84f5a6c9d8e2b1a3f4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b",
+      "source_macro_sha256": "b8e4d0f3c2a95g6b7d0e3c2b4a5g6h7i8j9k0l1m2n3o4p5q6r7s8t9u0v1w2x3y",
+      "name": "清醒矩阵：机械打卡与纸质存根的绝地反击",
+      "timeline_years": "2009年3月",
+      "main_opponent": "奥瑞恩集团执行副总裁巴里",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["CS06", "EC228"],
+      "foreshadow_ids": ["ART_478_VISUAL_SIGNAL_TRIPLE", "ART_479_PHYSICAL_KEY_VERIFICATION"],
+      "main_characters": ["麦珂", "巴里", "公证员老陈", "玛莎·杰森（远程连线）"],
+      "fictional_obstacle": "奥瑞恩集团利用数字网络封锁，试图在直播前夜将麦珂的存活记录定义为“伪造数据”，并切断其物理证据的上传通道。",
+      "prev_life_tragedy": "前世被托马斯伪造医嘱判定脑死亡，导致保险理赔启动，版权被无偿收割。",
+      "info_gap_from_prev_life": "知晓维克多指令巴里封锁媒体通道的具体时刻为3月17日深夜23:15分。",
+      "why_previous_life_failed": "过度依赖电子数据流，未建立物理世界的独立备份机制，导致数字篡改即等于事实抹杀。",
+      "preemptive_avoidance": "麦珂提前安排非电子机械打卡机在后台通道运行，并将纸质存根通过私人信使绕过数字网络，于3月17日23:00直接送达公证处完成备案。",
+      "bait_and_evidence": "故意在直播前制造“生命体征异常”假象，诱导巴里加速启动数据封锁；同时展示公证处收到的机械打卡原始纸带作为“不可篡改”的铁证。",
+      "comic_villain_behavior": "巴里在直播现场疯狂敲击键盘试图删除云端数据，却因系统已锁定且本地无权限，反而在众目睽睽下暴露出他连本地服务器密码都记错的滑稽状态。",
+      "villain_loss": "巴里无法利用数字封锁掩盖麦珂存活事实，操控逻辑出现裂痕，其“死者身份”预设彻底崩塌。",
+      "protagonist_gain": "麦珂获得不可篡改的清醒状态初步法律凭证，未受任何实质性伤害，确立了“物理存在优于数字谎言”的新规则。",
+      "relationship_change": "公证员老陈从被动执行转为主动配合，成为麦珂信任链中的关键一环。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights:RIGHT_VL_TRUST_EXECUTION",
+          "entity_id": "麦珂生存权",
+          "state_key": "physical_verified_clean",
+          "from": "digital_fraud_risk",
+          "to": "physically_verified_clean",
+          "irreversible": true,
+          "evidence": "非电子机械打卡记录与公证处纸质存根双重确认",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": ["CS06"],
+      "cluster_outcome": "纸质存根与机械打卡双重确认，彻底粉碎‘死者身份’预设，巴里的封锁行动失败。",
+      "next_event_hook": "三百二十一名医护代表的集体宣誓即将启动，卡尔试图隔离医师团队但将面临更严密的交叉验证。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 481,
+          "timeline_start": "2009年3月17日 22:30",
+          "timeline_end": "2009年3月17日 23:45",
+          "scene": "奥瑞恩集团地下数据中心与市公证处",
+          "chapter_goal": "完成物理存证的跨空间同步备案，避开数字监控盲区。",
+          "chapter_title": "静默的齿轮：绕过数字洪流的最后一步",
+          "participants": ["麦珂", "巴里", "公证员老陈", "私人信使"],
+          "opening_conflict": "巴里准备按计划在23:15切断所有外部数据流，麦珂必须在最后一刻让纸质证据抵达公证处。",
+          "info_gap_use": "利用重生记忆，精准预判巴里封锁时间的延迟窗口，提前两小时启动物理传输。",
+          "opponent_reaction": "巴里在监控室看着时间逼近23:15，以为一切尽在掌握，对即将到来的数据清洗充满自信。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团地下后台通道",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "机械打印机的滴答声盖过警报声"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_481_MECHANICAL_LOG",
+              "timeline_scope": "current",
+              "display_name": "《非电子机械打卡原始纸带》",
+              "kind": "physical_forensic_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_478_VISUAL_SIGNAL_TRIPLE",
+              "timeline_scope": "previous_life",
+              "purpose": "对比前世数字信号被篡改的惨状，凸显物理介质的可靠性"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在后台通道启动老式机械打卡机，记录体温、脉搏及在场人员签名，生成连续纸带。",
+            "私人信使携带密封好的纸带和手写日志，避开安保摄像头，直接穿过员工通道前往公证处。",
+            "公证员老陈在23:10收到实物，当场盖章封存，拒绝任何电子扫描请求。",
+            "巴里在23:15准时下达封锁指令，发现本地数据库无异常，却不知物理证据已脱离控制。"
+          ],
+          "visible_payoff": "公证处收到盖有鲜章的纸质存根，证明麦珂在23:00-23:40期间处于绝对清醒状态。",
+          "ending": "巴里看着屏幕上的“数据正常”提示，露出困惑而得意的笑容，完全没意识到自己已被物理现实抛弃。",
+          "must_include": ["机械打卡机的声音", "纸质存根的触感", "巴里对数据的盲目自信"],
+          "must_not_include": ["黑客入侵", "未来科技手段", "麦珂的直接言语反驳"],
+          "detailed_synopsis": "2009年3月17日深夜，奥瑞恩集团地下二层。麦珂没有选择复杂的电子加密，而是启动了那台尘封已久的老式机械打卡机。随着齿轮咬合的咔哒声，一张长长的热敏纸缓缓吐出，上面密密麻麻记录着她的实时体征和三名见证人的手写签名。她深知前世死于“数据被改”，今生便用这最原始的物理介质构建防线。私人信使像一道幽灵，带着密封袋穿过监控死角，直奔市公证处。公证员老陈早已等候多时，他在23:10接过文件，当着信使的面盖上钢印，将这份“活着的证明”锁入保险柜。与此同时，巴里在监控大屏前看着时间跳向23:15，嘴角上扬，以为终于切断了麦珂与外界的联系。他按下“全网封锁”键，系统显示“操作成功”。然而，他不知道的是，真正的证据已经躺在公证处的保险柜里，静静等待着明天的审判。"
+        },
+        {
+          "chapter_id": 482,
+          "timeline_start": "2009年3月18日 09:00",
+          "timeline_end": "2009年3月18日 11:30",
+          "scene": "全球直播演播厅与公证处视频连线中心",
+          "chapter_goal": "在直播现场公开物理存证，粉碎对手基于“死者身份”的操控逻辑。",
+          "chapter_title": "沉默的证词：当纸带刺破谎言",
+          "participants": ["麦珂", "巴里", "卡尔", "全球观众", "公证员老陈（视频连线）"],
+          "opening_conflict": "巴里试图在直播中宣布麦珂“已死”，并展示伪造的数据报告，却被公证处的实时视频连线打断。",
+          "info_gap_use": "麦珂利用前世对巴里习惯的洞察，预判他会先斩后奏，故提前安排了公证处的即时视频接入。",
+          "opponent_reaction": "巴里在镜头前慌乱地翻找文件，试图解释纸带的真实性，却被老陈出示的完整时间戳和签名链驳斥得哑口无言。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "全球直播演播厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "大屏幕上突然弹出公证处的实时画面"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_481_MECHANICAL_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据在大屏幕投影展示，证明麦珂存活"
+            }
+          ],
+          "action_sequence": [
+            "直播开始，巴里站在舞台中央，准备宣读麦珂的“讣告”和保险理赔启动通知。",
+            "麦珂突然出现在大屏幕左侧，手持那张机械打卡纸带，示意老陈进行视频连线。",
+            "公证员老陈展示纸带细节，逐字朗读上面的时间戳和签名，证明麦珂在封锁前一刻仍清醒。",
+            "巴里试图切断视频信号，却发现公证处的连接是独立的物理线路，无法被奥瑞恩内部网络阻断。",
+            "全场观众看到纸带上的墨迹和指纹，陷入震惊，巴里的谎言在物理铁证面前不攻自破。"
+          ],
+          "visible_payoff": "全球观众亲眼目睹公证处展示的纸质存根，巴里的“死者身份”预设彻底失效。",
+          "ending": "巴里瘫坐在椅子上，看着手中被撕碎的伪造报告，意识到自己不仅输了，还成了全球笑柄。",
+          "must_include": ["纸带上的墨迹特写", "公证员老陈的严肃陈述", "巴里崩溃的表情"],
+          "must_not_include": ["暴力冲突", "法律判决结果", "麦珂的长篇演讲"],
+          "detailed_synopsis": "3月18日上午，全球直播演播厅内，气氛肃穆。巴里站在聚光灯下，正准备宣读那份精心炮制的“讣告”，宣布麦珂因“突发脑死亡”而终止一切合约。就在他的手即将触碰到讲稿的瞬间，大屏幕突然闪烁，公证员老陈的脸出现在画面中。他身后就是那个密封的保险柜，里面躺着那张关键的机械打卡纸带。“各位观众，”老陈的声音沉稳有力，“这是来自2009年3月17日23:10的原始记录，由公证处亲自封存。上面的每一个墨点，每一道指纹，都证明麦珂女士在昨晚此刻依然清醒。”巴里脸色瞬间煞白，他疯狂地挥手试图切断信号，却发现那是独立的物理线路。他颤抖着举起手中的伪造报告，试图辩解，却被老陈一句“请出示您的电子签名授权”堵得哑口无言。台下三千名观众屏住呼吸，目光聚焦在那张泛黄的纸带上，它像一把利剑，刺穿了奥瑞恩集团编织的死亡谎言。巴里眼中的光芒逐渐熄灭，取而代之的是无尽的恐慌与荒谬。他知道，一切都完了。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2009",
+    "character_states": [
+      {"character": "麦珂", "state": "清醒且安全，拥有不可篡改的物理存证"},
+      {"character": "巴里", "state": "信誉破产，操控逻辑崩塌，陷入自我怀疑"}
+    ],
+    "relationship_states": [
+      {"relationship": "麦珂 - 公证员老陈", "state": "从普通业务往来转变为生死同盟"}
+    ],
+    "rights_and_assets": [
+      {"asset": "开口权存证计划", "status": "第一阶段物理存证完成，进入法律公示期"}
+    ],
+    "health_and_location": [
+      {"subject": "麦珂", "status": "健康，位于直播演播厅后台"}
+    ],
+    "open_threads": [
+      "全球资本对‘开口权存证计划’的法律围剿",
+      "开源时间胶囊在国际教育机构的落地情况",
+      "三百二十一名医护代表宣誓的后续法律效力"
+    ],
+    "resolved_threads": [
+      "巴里利用数字封锁掩盖麦珂存活事实的尝试"
+    ],
+    "introduced_characters": [
+      "公证员老陈"
+    ],
+    "next_pressure": "'开口权存证计划'启动后，全球资本将发起新一轮围剿，试图通过法律战、舆论战等手段重新夺回声音主权，麦珂需在开源过程中应对复杂的国际法律纠纷。"
+  }
+}

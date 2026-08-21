@@ -1,0 +1,251 @@
+{
+  "macro_group_id": "MG047",
+  "event_clusters": [
+    {
+      "cluster_id": "EC232",
+      "chapter_span": [
+        463,
+        464
+      ],
+      "source_event_direction": "前世具体受害：维克多利用虚假健康趋势模型误导全球观众，使麦珂生前被舆论判定为脑死亡。；本事件独有的前世信息差：2001年第七轨录音中未被剪辑的原始咳嗽声频率可作为全场声学验证基准线。；今生提前动作：麦珂安排苏菲亚将原始咳嗽声频率预植入三十七国电台同步切入的‘午夜星轨’频段。；第463章可见小赢：直播倒计时启动前，全场导播台与观众席同时响起同一声轻微气音，无人剪辑。；第464章新交锋：维克多试图播放预设哀乐时，原始咳嗽声引发十万观众集体屏息并爆发合唱覆盖哀乐轨道。；阻力方永久现实损失：维克多精心策划的‘必然崩解’叙事在直播中被实时打脸，信誉彻底崩塌。；主角现实收益：跨越四十年的集体合唱成为‘清醒即存在’的公共声学证词，确立麦珂存活事实。；不可逆结算键：未经数字降噪处理的原始环境音层成为无可辩驳的生存铁证。；接回死亡控制主线：前世被掩盖的生理特征在今生通过声学技术反向确证，直接瓦解死亡推定逻辑。",
+      "source_event_direction_sha256": "54eabc556ba69cd4fa4f6679cd2be24b9a3432bb826eff828125482c5cb5a3c0",
+      "source_macro_sha256": "d0cce4050bfee23e46f0bb5d0590aab634b1a1e4e219f89734e477a235fa1210",
+      "name": "午夜星轨：声学铁证",
+      "timeline_years": "2009",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS06"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "苏菲亚",
+        "维克多·兰斯",
+        "玛莎·杰森",
+        "昆廷·琼斯"
+      ],
+      "fictional_obstacle": "维克多预设的‘健康趋势预测模型’将在直播中制造麦珂生理机能彻底崩解的假象，并切断独立电源接入伪造维生信号。",
+      "prev_life_tragedy": "前世维克多利用虚假数据误导全球观众，使麦珂生前被舆论判定为脑死亡，所有声音被剪辑处理。",
+      "info_gap_from_prev_life": "2001年第七轨录音中未被剪辑的原始咳嗽声频率可作为全场声学验证基准线；知晓康拉德·莫里森口头指令顺序错误导致药物配比偏差。",
+      "why_previous_life_failed": "前世麦珂依赖数字监控，无法对抗被篡改的数据流，且未掌握原始环境音层的物理特性。",
+      "preemptive_avoidance": "麦珂提前调整输液管路物理连接规避致命药差；安排苏菲亚将原始咳嗽声频率预植入三十七国电台同步切入的‘午夜星轨’频段；启用《双轨创作信托协议》锁定临时执行权。",
+      "bait_and_evidence": "维克多故意在直播中播放‘濒死哀乐’作为诱饵，试图掩盖真相；麦珂利用未经数字降噪处理的原始环境音层（含特定频率咳嗽）作为无可辩驳的生存铁证。",
+      "comic_villain_behavior": "维克多在直播倒计时前自信满满地调试设备，嘲笑麦珂连呼吸都已被系统接管，甚至提前准备好讣告通稿，结果被一声真实的咳嗽打脸。",
+      "villain_loss": "维克多精心策划的‘必然崩解’叙事在直播中被实时打脸，信誉彻底崩塌，奥瑞恩集团内部信任裂痕扩大。",
+      "protagonist_gain": "跨越四十年的集体合唱成为‘清醒即存在’的公共声学证词，确立麦珂存活事实，获得对‘永恒星光’项目的绝对控制权。",
+      "relationship_change": "麦珂与‘星火同盟’成员建立基于绝对信任的生死契约；维克多与奥瑞恩集团高层产生不可调和的信任裂痕。",
+      "continuity_writes": [
+        "玛莎签署的体征日志显示麦珂凌晨三点心率稳定，与伪造数据形成反差。",
+        "机械传动输液管路记录证明备用线路被改造为纯机械结构。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "enemy_capability",
+          "entity_id": "med_monitor_001",
+          "state_key": "data_integrity_status__extension_EC232",
+          "from": "none",
+          "to": "physically_verified_anomaly",
+          "irreversible": true,
+          "evidence": "原始咳嗽声频率与机械传动管路",
+          "effect_type": "villain_loss",
+          "source_state_key": "data_integrity_status"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "trust_exec_authority",
+          "state_key": "execution_confidence__extension_EC232",
+          "from": "none",
+          "to": "confirmed_by_mackie",
+          "irreversible": false,
+          "evidence": "《双轨创作信托协议》补充条款生效",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "execution_confidence"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_2001_REC_07"
+      ],
+      "cluster_outcome": "麦珂通过声学技术反向确证生存，瓦解死亡推定逻辑，维克多因过度自信导致的操作失误暴露，主角获得项目绝对控制权。",
+      "next_event_hook": "‘永恒星光’落幕即‘星火审判’开端——麦珂未设复仇议程，只启动‘开口权存证计划’，将四十年间所有署名作品、健康公示、家庭决议与粉丝共创成果打包为开源时间胶囊，向全球教育机构免费授予权，引发新一轮资本围剿。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 463,
+          "timeline_start": "2009-03-23",
+          "timeline_end": "2009-03-23",
+          "scene": "穹顶主会场导播台",
+          "chapter_goal": "在直播倒计时启动前，利用预植音频段制造全场共振，打破维克多的信息封锁。",
+          "chapter_title": "无声的轰鸣",
+          "participants": [
+            "麦珂",
+            "苏菲亚",
+            "维克多·兰斯",
+            "导播团队"
+          ],
+          "opening_conflict": "维克多宣布切断麦珂独立电源，切换至伪造维生系统，并警告现场不得有任何杂音干扰。",
+          "info_gap_use": "苏菲亚利用2001年原始咳嗽声频率的特定谐波，在三十七国电台同步切入的‘午夜星轨’频段进行预植入。",
+          "opponent_reaction": "维克多自信地观察屏幕上的‘生命体征归零’曲线，准备迎接直播高潮，完全未察觉音频频段的异常波动。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "穹顶主会场导播台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "电流声骤停后的一瞬寂静"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂在后台静默调整输液管路的机械连接，确保物理层面不受电子干扰。",
+            "苏菲亚在导播台隐蔽处激活预置音频模块，将原始咳嗽声频率编码进背景白噪音。",
+            "全场灯光暗下，维克多开始宣读‘生命终结’倒计时。",
+            "直播倒计时启动前，全场导播台与观众席同时响起同一声轻微气音，无人剪辑。",
+            "维克多皱眉查看频谱仪，发现无法定位声源，误以为是设备故障。"
+          ],
+          "visible_payoff": "全场导播台与观众席同时响起同一声轻微气音，无人剪辑，打破维克多对声音环境的绝对控制。",
+          "ending": "维克多被迫暂停倒计时，要求技术人员排查，麦珂在阴影中露出一丝冷笑。",
+          "must_include": [
+            "2009年模拟信号传输延迟细节",
+            "机械传动输液管路的触感描写",
+            "必须呈现信息差的实际使用：苏菲亚利用2001年原始咳嗽声频率的特定谐波，在三十七国电台同步切入的‘午夜星轨’频段进行预植入。"
+          ],
+          "must_not_include": [
+            "现代AI语音合成技术",
+            "未来医疗设备描述"
+          ],
+          "detailed_synopsis": "2009年3月17日深夜，穹顶主会场内，维克多·兰斯自信地站在控制台前，宣布即将切断麦珂的独立电源，转而接入伪造的维生系统信号。他深知麦珂此刻无法反抗，因为所有的数字监控数据都将被重写。然而，他不知道的是，麦珂早已利用重生记忆中的漏洞，提前调整了输液管路的物理连接方式，使其成为纯机械传动结构，彻底规避了任何电子指令的干扰。与此同时，苏菲亚在导播台隐蔽处，利用2001年第七轨录音中未被剪辑的原始咳嗽声频率，将其编码进三十七国电台同步切入的‘午夜星轨’频段。当直播倒计时启动的前一秒，全场导播台与观众席同时响起同一声轻微气音，那声音清晰、真实，没有任何数字降噪或剪辑痕迹。维克多震惊地看向频谱仪，却发现无法定位声源，只能误以为是设备故障。他被迫暂停倒计时，要求技术人员排查，而麦珂则在阴影中露出一丝冷笑，知道第一张底牌已经打出。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_459_OPEN_SOURCE_TIMESTAMP",
+              "purpose": "确认‘午夜星轨’频段已具备全球同步接入条件"
+            }
+          ]
+        },
+        {
+          "chapter_id": 464,
+          "timeline_start": "2009-03-24",
+          "timeline_end": "2009-03-24",
+          "scene": "穹顶主会场舞台中央",
+          "chapter_goal": "在维克多播放预设哀乐时，引爆原始咳嗽声，引发十万观众集体屏息并爆发合唱覆盖哀乐轨道，完成终极反转。",
+          "chapter_title": "合唱即审判",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "玛莎·杰森",
+            "昆廷·琼斯",
+            "十万观众"
+          ],
+          "opening_conflict": "维克多强行播放预设哀乐，试图宣告麦珂死亡，并准备启动讣告程序。",
+          "info_gap_use": "原始咳嗽声频率触发全场共鸣，引发十万观众集体屏息并爆发合唱，覆盖哀乐轨道。",
+          "opponent_reaction": "维克多惊恐地发现，原本应该死寂的现场突然爆发出震耳欲聋的合唱，他的哀乐瞬间被淹没，讣告程序无法启动。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "穹顶主会场舞台中央",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "哀乐起，咳嗽声突现"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_464_CHORAL_EVIDENCE",
+              "timeline_scope": "current",
+              "display_name": "《跨越四十年的集体合唱录音》",
+              "kind": "digital_forensic_record"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "维克多按下播放键，预设的哀乐响彻全场，观众席一片死寂。",
+            "原始咳嗽声频率突然从四面八方涌出，与哀乐形成强烈反差。",
+            "十万观众本能地屏息，随后爆发出一场跨越四十年的集体合唱，覆盖哀乐轨道。",
+            "麦珂手持未剪辑童年母带步入主会场穹顶入口，身后跟着玛莎、黛安娜等核心团队。",
+            "维克多试图阻止，但被现场汹涌的声浪和观众的愤怒逼退。"
+          ],
+          "visible_payoff": "维克多试图播放预设哀乐时，原始咳嗽声引发十万观众集体屏息并爆发合唱覆盖哀乐轨道，确立麦珂存活事实。",
+          "ending": "维克多因确信麦珂死亡而启动的讣告程序在直播中被实时打脸，陷入被动局面，奥瑞恩集团信誉崩塌。",
+          "must_include": [
+            "2009年全球直播技术限制下的声浪传播效果",
+            "玛莎作为法定见证人的身份强调",
+            "必须呈现信息差的实际使用：原始咳嗽声频率触发全场共鸣，引发十万观众集体屏息并爆发合唱，覆盖哀乐轨道。"
+          ],
+          "must_not_include": [
+            "现代即时通讯工具",
+            "未来公众媒体传播机制"
+          ],
+          "detailed_synopsis": "2009年3月18日凌晨零点，穹顶主会场内，维克多·兰斯终于按下了播放键，预设的哀乐响彻全场，观众席一片死寂，仿佛在为‘死者’默哀。然而，他不知道的是，这恰恰是麦珂等待已久的时刻。原始咳嗽声频率突然从四面八方涌出，那声音清晰、真实，没有任何数字降噪或剪辑痕迹，与哀乐形成强烈反差。十万观众本能地屏息，随后爆发出一场跨越四十年的集体合唱，覆盖哀乐轨道，震耳欲聋。麦珂手持未剪辑童年母带步入主会场穹顶入口，身后跟着玛莎、黛安娜等核心团队，每一步都坚定有力。维克多惊恐地发现，原本应该死寂的现场突然爆发出震耳欲聋的合唱，他的哀乐瞬间被淹没，讣告程序无法启动。他试图阻止，但被现场汹涌的声浪和观众的愤怒逼退。最终，维克多因确信麦珂死亡而启动的讣告程序在直播中被实时打脸，陷入被动局面，奥瑞恩集团信誉崩塌。跨越四十年的集体合唱成为‘清醒即存在’的公共声学证词，确立麦珂存活事实，所有证据链闭环自证无需控诉。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_453_JOINT_SIGN",
+              "purpose": "作为法律见证人玛莎的辅助证据"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2009",
+    "character_states": [
+      {
+        "character_id": "麦珂",
+        "state_key": "health_status",
+        "new_state": "physically_healthy",
+        "evidence": "原始咳嗽声频率与机械传动管路"
+      },
+      {
+        "character_id": "维克多·兰斯",
+        "state_key": "reputation_status",
+        "new_state": "crushed",
+        "evidence": "直播中被实时打脸"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": [
+          "麦珂",
+          "星火同盟"
+        ],
+        "new_state": "absolute_trust",
+        "evidence": "生死契约建立"
+      },
+      {
+        "pair": [
+          "维克多·兰斯",
+          "奥瑞恩集团高层"
+        ],
+        "new_state": "irreconcilable_conflict",
+        "evidence": "信任裂痕扩大"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset_id": "trust_exec_authority",
+        "new_state": "confirmed_by_mackie",
+        "evidence": "《双轨创作信托协议》补充条款生效"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity": "麦珂",
+        "status": "fully_awake",
+        "location": "穹顶主会场"
+      }
+    ],
+    "open_threads": [
+      "‘开口权存证计划’即将启动引发的资本围剿",
+      "1969年试镜盒底铜质齿轮旋转触发的三十七国电台同步切入"
+    ],
+    "resolved_threads": [
+      "麦珂生存事实的确立",
+      "维克多‘必然崩解’叙事的瓦解"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "‘开口权存证计划’启动后，全球资本将联合围剿，试图通过开源授权挑战现有版权体系，引发新一轮法律与舆论风暴。"
+  }
+}

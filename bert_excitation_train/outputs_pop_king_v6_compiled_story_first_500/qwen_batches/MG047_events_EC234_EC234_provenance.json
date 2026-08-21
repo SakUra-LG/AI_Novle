@@ -1,0 +1,73 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC234_EC234",
+  "identifier": "MG047",
+  "accepted_attempt": 4,
+  "base_prompt_sha256": "05832e76f3399fb02c5c05170b12bec76636318be4f316bcfceb9306550e4308",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-21T13:54:50+08:00",
+      "prompt_sha256": "05832e76f3399fb02c5c05170b12bec76636318be4f316bcfceb9306550e4308",
+      "raw_response_sha256": "0a7ef1de870a09f013e78f8f0152d57aefaaf1ae1e74e48b1439477455729e5a",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG047_events_EC234_EC234_attempt_01_05832e76f3_raw.txt",
+      "validation_failures": [
+        "EC234提前消费后续事件的资产冻结结算；当前父级方向未授权该结果"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 26.479,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-21T13:55:20+08:00",
+      "prompt_sha256": "7717574a1338ab6218f730b1d63e06439f87d1b795b709b444ee48c94dfff321",
+      "raw_response_sha256": "f0a5cbb4a0da58444d7596c03c8ad2777507fc420e39a4d4082380cb7bad9caa",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG047_events_EC234_EC234_attempt_02_05832e76f3_raw.txt",
+      "validation_failures": [
+        "EC234提前消费后续事件的资产冻结结算；当前父级方向未授权该结果",
+        "EC234与EC231重复执行不可逆结算：assets_frozen::维克多·兰斯"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 29.454,
+      "usage": {}
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-21T13:55:48+08:00",
+      "prompt_sha256": "4aa077166dd9401a82c73bd3da6c7781d0efaff403794eba021b21b456e90494",
+      "raw_response_sha256": "56078642ecb1e9466b8d72065f2baacfd122af64983d03ab7d13372b8ed66f9d",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG047_events_EC234_EC234_attempt_03_05832e76f3_raw.txt",
+      "validation_failures": [
+        "EC234与EC231重复执行不可逆结算：assets_frozen::维克多·兰斯"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 27.843,
+      "usage": {}
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-21T13:56:22+08:00",
+      "prompt_sha256": "c117c79f56803f602292dc6526606916237558ec8aad485fe897c804d2b293ab",
+      "raw_response_sha256": "41e0bf512809a40fc8fc22798103177089f1a6c186ddd7195e2d4ed0b5272c3c",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG047_events_EC234_EC234_attempt_04_05832e76f3_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 34.148,
+      "usage": {}
+    }
+  ]
+}

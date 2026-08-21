@@ -1,0 +1,178 @@
+{
+  "generated_by": "groq",
+  "kind": "macro_direction_EC004",
+  "identifier": "MG001",
+  "accepted_attempt": "03",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "base_prompt_sha256": "9aff64e4beed873b615b7a41764b5af956cdd5742b2f72e0f795cb95db7388b0",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-15T16:09:54+08:00",
+      "prompt_sha256": "9aff64e4beed873b615b7a41764b5af956cdd5742b2f72e0f795cb95db7388b0",
+      "raw_response_sha256": "bdff9e2920592f6a6406da0b34c0c02c5994220c09b4ae2e93a7e20f0385917d",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_direction_EC004_attempt_01_9aff64e4be_raw.txt",
+      "validation_failures": [
+        "EC004.opposition_type非法",
+        "EC004.event_type非法",
+        "EC004.solution_type非法",
+        "EC004.death_chain_role非法",
+        "EC004.opposition_type必须逐字服从锁定值",
+        "EC004.event_type必须逐字服从锁定值",
+        "EC004.solution_type必须逐字服从锁定值",
+        "EC004.death_chain_role必须逐字服从锁定值",
+        "EC004.locked_story_brief必须逐字服从锁定值"
+      ],
+      "provider": "groq",
+      "model": "llama-3.1-8b-instant",
+      "transport": "groq_curl",
+      "elapsed_seconds": 44.485,
+      "usage": {
+        "queue_time": 0.073615322,
+        "prompt_tokens": 4114,
+        "prompt_time": 0.312965161,
+        "completion_tokens": 408,
+        "completion_time": 0.594939334,
+        "total_tokens": 4522,
+        "total_time": 0.907904495
+      },
+      "capacity_model_fallbacks": [
+        "llama-3.3-70b-versatile",
+        "qwen/qwen3.6-27b",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-15T16:10:52+08:00",
+      "prompt_sha256": "c15b80719c6fa7216075452ed24e2634b0cb3555b1be6b08289001eea4551151",
+      "raw_response_sha256": "0d98f8a51471ed417792838fe2c3050ab737ab719a1f171e0b4828ec7974c7c8",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_direction_EC004_attempt_02_9aff64e4be_raw.txt",
+      "validation_failures": [
+        "EC004.opposition_type非法",
+        "EC004.event_type非法",
+        "EC004.solution_type非法",
+        "EC004.death_chain_role非法",
+        "EC004.previous_life_harm照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC004.unique_prev_life_info照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC004.preemptive_action照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC004.chapter_one_small_win照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC004.chapter_two_showdown照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC004.opponent_permanent_loss照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC004.protagonist_concrete_gain照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC004.irreversible_outcome_key照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC004.death_chain_connection照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC004.opposition_type必须逐字服从锁定值",
+        "EC004.event_type必须逐字服从锁定值",
+        "EC004.solution_type必须逐字服从锁定值",
+        "EC004.death_chain_role必须逐字服从锁定值",
+        "EC004必须落实锁定事实词：换调/调性/升D调/升半音",
+        "EC004必须落实锁定事实词：试唱/清唱/演唱",
+        "EC004必须落实锁定事实词：乐手/伴奏/乐队/指挥"
+      ],
+      "provider": "groq",
+      "model": "llama-3.1-8b-instant",
+      "transport": "groq_curl",
+      "elapsed_seconds": 57.626,
+      "usage": {
+        "queue_time": 0.171701865,
+        "prompt_tokens": 4291,
+        "prompt_time": 0.253472013,
+        "completion_tokens": 405,
+        "completion_time": 0.390512811,
+        "total_tokens": 4696,
+        "total_time": 0.643984824
+      },
+      "capacity_model_fallbacks": [
+        "llama-3.3-70b-versatile",
+        "qwen/qwen3.6-27b",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-15T16:11:35+08:00",
+      "prompt_sha256": "47134a07e54c6b8e6e3239a771e23858c499183287244d4b562f49d0813dcdf3",
+      "raw_response_sha256": "7bc4cd9f03716292f220106261d82f7352ca33a0b46c8d1e8aaf45946d87206d",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_direction_EC004_attempt_03_9aff64e4be_raw.txt",
+      "validation_failures": [
+        "EC004.opposition_type非法",
+        "EC004.event_type非法",
+        "EC004.solution_type非法",
+        "EC004.opposition_type必须逐字服从锁定值",
+        "EC004.event_type必须逐字服从锁定值",
+        "EC004.solution_type必须逐字服从锁定值",
+        "EC004.locked_story_brief必须逐字服从锁定值"
+      ],
+      "provider": "groq",
+      "model": "llama-3.1-8b-instant",
+      "transport": "groq_curl",
+      "elapsed_seconds": 42.712,
+      "usage": {
+        "queue_time": 0.075385202,
+        "prompt_tokens": 4429,
+        "prompt_time": 0.31555323,
+        "completion_tokens": 453,
+        "completion_time": 0.675099734,
+        "total_tokens": 4882,
+        "total_time": 0.990652964
+      },
+      "capacity_model_fallbacks": [
+        "llama-3.3-70b-versatile",
+        "qwen/qwen3.6-27b",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-15T16:12:27+08:00",
+      "prompt_sha256": "a0fb6a50aa88294003cd6b3957b80e87a6c029fca9e65fa886a199ffa7b2ce0e",
+      "raw_response_sha256": "9513e0ff8ea88f232f9f2a2aaace8b2f41c1fd71a1751ae8311e742872877f1d",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_direction_EC004_attempt_04_9aff64e4be_raw.txt",
+      "validation_failures": [
+        "EC004.opposition_type非法",
+        "EC004.event_type非法",
+        "EC004.solution_type非法",
+        "EC004.death_chain_role非法",
+        "EC004.unique_prev_life_info至少12字",
+        "EC004.opposition_type必须逐字服从锁定值",
+        "EC004.event_type必须逐字服从锁定值",
+        "EC004.solution_type必须逐字服从锁定值",
+        "EC004.death_chain_role必须逐字服从锁定值"
+      ],
+      "provider": "groq",
+      "model": "llama-3.1-8b-instant",
+      "transport": "groq_curl",
+      "elapsed_seconds": 52.82,
+      "usage": {
+        "queue_time": 0.167453601,
+        "prompt_tokens": 4261,
+        "prompt_time": 0.294612934,
+        "completion_tokens": 375,
+        "completion_time": 0.469478835,
+        "total_tokens": 4636,
+        "total_time": 0.764091769
+      },
+      "capacity_model_fallbacks": [
+        "llama-3.3-70b-versatile",
+        "qwen/qwen3.6-27b",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    }
+  ],
+  "structural_normalizations": [
+    "cluster_id",
+    "chapter_span",
+    "B001_locked_enums_and_story_brief"
+  ],
+  "normalized_parsed_sha256": "9e9290ef44cd568407be0e72ac2a5da95baee07a859b977c4ffdaa8f70be8e85"
+}

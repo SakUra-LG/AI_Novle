@@ -1,0 +1,68 @@
+{
+  "generated_by": "groq",
+  "kind": "macro_direction_EC003",
+  "identifier": "MG001",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "a148cc140d6e259f6b9644b715c2581dc8b743b242e86ce7b70bb66cbf56f72f",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-15T16:06:46+08:00",
+      "prompt_sha256": "a148cc140d6e259f6b9644b715c2581dc8b743b242e86ce7b70bb66cbf56f72f",
+      "raw_response_sha256": "fad9e4c15d5f245f4baae4a423dc5b9d18fd4318252af7ba461a2f874fc61540",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_direction_EC003_attempt_01_a148cc140d_raw.txt",
+      "validation_failures": [
+        "EC003.locked_story_brief必须逐字服从锁定值"
+      ],
+      "provider": "groq",
+      "model": "llama-3.1-8b-instant",
+      "transport": "groq_curl",
+      "elapsed_seconds": 33.429,
+      "usage": {
+        "queue_time": 0.076825512,
+        "prompt_tokens": 3985,
+        "prompt_time": 0.333965206,
+        "completion_tokens": 423,
+        "completion_time": 0.6863861,
+        "total_tokens": 4408,
+        "total_time": 1.020351306
+      },
+      "capacity_model_fallbacks": [
+        "llama-3.3-70b-versatile",
+        "qwen/qwen3.6-27b",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-15T16:09:10+08:00",
+      "prompt_sha256": "a148cc140d6e259f6b9644b715c2581dc8b743b242e86ce7b70bb66cbf56f72f",
+      "raw_response_sha256": "24d94e75432f2c6984792411e5a9acd343a7b0fc259a4e1f6c69fcfe95a66c5a",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_direction_EC003_attempt_02_a148cc140d_raw.txt",
+      "validation_failures": [],
+      "provider": "groq",
+      "model": "llama-3.1-8b-instant",
+      "transport": "groq_curl",
+      "elapsed_seconds": 9.158,
+      "usage": {
+        "queue_time": 0.164540483,
+        "prompt_tokens": 3985,
+        "prompt_time": 0.242873917,
+        "completion_tokens": 456,
+        "completion_time": 0.593842377,
+        "total_tokens": 4441,
+        "total_time": 0.836716294
+      },
+      "capacity_model_fallbacks": [
+        "llama-3.3-70b-versatile",
+        "qwen/qwen3.6-27b",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    }
+  ]
+}

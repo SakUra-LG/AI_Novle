@@ -1,0 +1,73 @@
+{
+  "generated_by": "qwen",
+  "kind": "blueprint",
+  "identifier": "V06",
+  "accepted_attempt": 2,
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-04T16:36:06+08:00",
+      "prompt_sha256": "a2e93159e7236559aa9633457b833f5f709d031e0cca4666df3d0f42121c671f",
+      "raw_response_sha256": "7ee757ec9356c69db6fa495981936f2434c6b7bdaa91e310312194851c058723",
+      "raw_response_file": "V06_blueprint_attempt_01_raw.txt",
+      "validation_failures": [
+        "MG026第1个方向cluster_id必须为EC126",
+        "MG026第2个方向cluster_id必须为EC127",
+        "MG026第3个方向cluster_id必须为EC128",
+        "MG026第4个方向cluster_id必须为EC129",
+        "MG026第5个方向cluster_id必须为EC130",
+        "MG027第1个方向cluster_id必须为EC131",
+        "MG027第2个方向cluster_id必须为EC132",
+        "MG027第3个方向cluster_id必须为EC133",
+        "MG027第4个方向cluster_id必须为EC134",
+        "MG027第5个方向cluster_id必须为EC135",
+        "MG028第1个方向cluster_id必须为EC136",
+        "MG028第2个方向cluster_id必须为EC137",
+        "MG028第3个方向cluster_id必须为EC138",
+        "MG028第4个方向cluster_id必须为EC139",
+        "MG028第5个方向cluster_id必须为EC140",
+        "MG029第1个方向cluster_id必须为EC141",
+        "MG029第2个方向cluster_id必须为EC142",
+        "MG029第3个方向cluster_id必须为EC143",
+        "MG029第4个方向cluster_id必须为EC144",
+        "MG029第5个方向cluster_id必须为EC145",
+        "MG030第1个方向cluster_id必须为EC146",
+        "MG030第2个方向cluster_id必须为EC147",
+        "MG030第3个方向cluster_id必须为EC148",
+        "MG030第4个方向cluster_id必须为EC149",
+        "MG030第5个方向cluster_id必须为EC150"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 19.759,
+      "usage": {
+        "input_tokens": 2679,
+        "output_tokens": 2515,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 5194
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-04T16:36:27+08:00",
+      "prompt_sha256": "42bfe7e2216f9c72d1a034ae7d2975f8daf3ae780dda5dc5ae18a6ed03a287b5",
+      "raw_response_sha256": "8566cdea0f1bee6b4d67d0c56950f94c371279f44fe76a3c03098aedbd57f318",
+      "raw_response_file": "V06_blueprint_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 20.995,
+      "usage": {
+        "input_tokens": 5439,
+        "output_tokens": 2515,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 7954
+      }
+    }
+  ]
+}

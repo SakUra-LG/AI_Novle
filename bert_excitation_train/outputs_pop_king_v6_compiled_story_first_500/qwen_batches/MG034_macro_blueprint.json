@@ -1,0 +1,129 @@
+{
+  "macro_group_id": "MG034",
+  "chapter_span": [
+    331,
+    340
+  ],
+  "title": "静默回响：地理化闭环与数据污染前夜",
+  "timeline_years": "1997—1998",
+  "macro_goal": "完成《静默增益》地图卡首版发售并触发‘第五秒’公众自治机制，利用1979年法庭录像带与七位见证人签字簿彻底粉碎奥瑞恩集团伪造的‘失控’叙事；同时识别并标记维克多·兰斯留下的S95-B-RW医疗造假样带线索，为下一阶段数据战埋下伏笔。",
+  "historical_stage": "美国独立音乐发行与早期数字媒体融合期（CD-ROM与交互式地图技术爆发前夕），舆论场由传统电视向有线新闻频道与早期互联网论坛转移。",
+  "main_conflict": "奥瑞恩集团试图通过剪辑影像将麦珂描绘为‘精神不稳定者’以剥夺其版权控制权，麦珂则利用重生记忆中的物理介质证据链（1979年河湾镇法院录像带、昆廷手写调度笔记）进行非暴力不合作反击，并在《午夜星轨》特别季中通过艾琳·沃特曼的操作，将纪录片删减部分还原为地理化公益互动内容。",
+  "rebirth_advantage": [
+    "精准知晓1979年11月17日午后三点麦珂在河湾镇法院监护权确认的真实行踪，掌握当时法庭录像带存放于当地档案馆第三排铁柜的具体位置。",
+    "清楚七位关键见证人（包括当年的法庭书记员与两名旁听学生）的现居地址及联系方式，确保证据链完整无缺。",
+    "已知悉昆廷导演当年被剪掉的‘戏剧性冲突’原始素材藏匿于新泽西州某废弃仓库的密封箱内，且复写件位于麦珂前世遗忘的保险柜夹层。",
+    "预判奥瑞恩集团将在1997年冬推出针对麦珂的负面宣传攻势，提前布局《静默增益》地图卡的‘刮开式’互动机制。",
+    "掌握维克多·兰斯在1995年销毁胶片时的疏忽细节，锁定包含篡改心电图基线模拟录音的S95-B-RW样带被意外保留的线索。"
+  ],
+  "romance_progression": "瑟琳娜·凯德与麦珂关系从契约伴侣深化为事业战友，双方共同起草《教育共治备忘录》，确立家庭决策中的平等地位；无任何未成年情感介入或越界行为。",
+  "ending_state": "奥瑞恩集团因伪造证据丑闻曝光导致股价下跌12%，卡尔团队信誉破产被迫暂停负面宣传；麦珂成功取回所有版权控制权，《静默增益》地图卡预售突破150万张，实现商业与公益双重闭环；家庭治理结构升级，瑟琳娜正式进入核心决策层；维克多·兰斯意识到常规手段失效，开始酝酿‘数据污染’方案；S95-B-RW样带线索被麦珂标记为高价值资产，成为下一阶段揭穿医疗造假的唯一钥匙。",
+  "next_group_hook": "随着1979年真相的揭开，奥瑞恩集团决定不再正面硬刚，转而利用维克多·兰斯的建议，着手策划针对麦珂健康数据的‘数据污染’方案，试图通过伪造医疗记录来动摇其公众形象，而那盒被漏掉的S95-B-RW样带将成为下一阶段揭穿世纪转换期医疗模型造假的关键钥匙。",
+  "five_event_directions": [
+    {
+      "cluster_id": "EC166",
+      "chapter_span": [
+        331,
+        332
+      ],
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "前世被剪辑影像误导公众，导致监护权旁听记录被污名化。",
+      "unique_prev_life_info": "知晓1979年11月17日午后三点河湾镇法院录像带存于第三排铁柜。",
+      "preemptive_action": "麦珂提前三周携带公证员抵达新泽西废弃仓库提取昆廷手写调度笔记。",
+      "chapter_one_small_win": "艾琳在《午夜星轨》播出片段中插入未被剪掉的工坊少年作画原帧。",
+      "chapter_two_showdown": "奥瑞恩律师在听证会出示伪造文件，麦珂当场播放河湾镇原始法庭录像。",
+      "opponent_permanent_loss": "卡尔团队因提交伪证被行业自律委员会暂停从业资格两年。",
+      "protagonist_concrete_gain": "麦珂正式收回所有版权控制权，七位见证人签字簿完成法律归档。",
+      "irreversible_outcome_key": "EC166_Court_Raw_Video_Authenticated",
+      "death_chain_connection": "CS10_1977_Workshop_Youth_Proven",
+      "direction": "前世具体受害：前世被剪辑影像误导公众，导致监护权旁听记录被污名化。；本事件独有的前世信息差：知晓1979年11月17日午后三点河湾镇法院录像带存于第三排铁柜。；今生提前动作：麦珂提前三周携带公证员抵达新泽西废弃仓库提取昆廷手写调度笔记。；第331章可见小赢：艾琳在《午夜星轨》播出片段中插入未被剪掉的工坊少年作画原帧。；第332章新交锋：奥瑞恩律师在听证会出示伪造文件，麦珂当场播放河湾镇原始法庭录像。；阻力方永久现实损失：卡尔团队因提交伪证被行业自律委员会暂停从业资格两年。；主角现实收益：麦珂正式收回所有版权控制权，七位见证人签字簿完成法律归档。；不可逆结算键：EC166_Court_Raw_Video_Authenticated；接回死亡控制主线：CS10_1977_Workshop_Youth_Proven"
+    },
+    {
+      "cluster_id": "EC167",
+      "chapter_span": [
+        333,
+        334
+      ],
+      "opposition_type": "institutional",
+      "event_type": "finance_business",
+      "solution_type": "market_result",
+      "death_chain_role": "advance",
+      "previous_life_harm": "前世地图卡发售因数据造假被强制下架，公益资金链断裂。",
+      "unique_prev_life_info": "已知悉维克多销毁胶片时疏忽保留S95-B-RW样带线索。",
+      "preemptive_action": "瑟琳娜联合苏菲亚将地图卡刮开机制与离线微缩胶片索引绑定。",
+      "chapter_one_small_win": "预售首日突破五十万张，四十三处工坊收到首批声音投稿。",
+      "chapter_two_showdown": "奥瑞恩试图通过算法推荐屏蔽地图卡购买页面，被艾琳公开技术日志。",
+      "opponent_permanent_loss": "奥瑞恩股价单日下跌八%，虚假‘失控’叙事彻底失去公信力。",
+      "protagonist_concrete_gain": "《静默增益》实现商业与公益双重闭环，家庭治理结构升级。",
+      "irreversible_outcome_key": "EC167_Geo_Map_Sales_Surge",
+      "death_chain_connection": "FS05_U_Disk_Closure",
+      "direction": "前世具体受害：前世地图卡发售因数据造假被强制下架，公益资金链断裂。；本事件独有的前世信息差：已知悉维克多销毁胶片时疏忽保留S95-B-RW样带线索。；今生提前动作：瑟琳娜联合苏菲亚将地图卡刮开机制与离线微缩胶片索引绑定。；第333章可见小赢：预售首日突破五十万张，四十三处工坊收到首批声音投稿。；第334章新交锋：奥瑞恩试图通过算法推荐屏蔽地图卡购买页面，被艾琳公开技术日志。；阻力方永久现实损失：奥瑞恩股价单日下跌八%，虚假‘失控’叙事彻底失去公信力。；主角现实收益：《静默增益》实现商业与公益双重闭环，家庭治理结构升级。；不可逆结算键：EC167_Geo_Map_Sales_Surge；接回死亡控制主线：FS05_U_Disk_Closure"
+    },
+    {
+      "cluster_id": "EC168",
+      "chapter_span": [
+        335,
+        336
+      ],
+      "opposition_type": "technical",
+      "event_type": "health_safety",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "reveal",
+      "previous_life_harm": "前世医疗模型数据被篡改，导致麦珂在临终前被误诊延误治疗。",
+      "unique_prev_life_info": "掌握1995年维克多亲口指示篡改心电图基线的模拟录音细节。",
+      "preemptive_action": "麦珂指派莉薇娅·普莱斯对S95-B-RW样带进行无损物理封存。",
+      "chapter_one_small_win": "独立实验室复现样带波形，确认1995年数据存在人为基线偏移。",
+      "chapter_two_showdown": "维克多·兰斯试图以‘设备故障’为由销毁备份，被现场记者全程直播。",
+      "opponent_permanent_loss": "维克多常规手段失效，被迫转向更隐蔽的‘数据污染’方案。",
+      "protagonist_concrete_gain": "锁定S95-B-RW为高价值资产，为P08揭穿医疗造假埋下唯一钥匙。",
+      "irreversible_outcome_key": "EC168_ECG_Fake_Pattern_Confirmed",
+      "death_chain_connection": "FS06_Fifth_Second_Mechanism",
+      "direction": "前世具体受害：前世医疗模型数据被篡改，导致麦珂在临终前被误诊延误治疗。；本事件独有的前世信息差：掌握1995年维克多亲口指示篡改心电图基线的模拟录音细节。；今生提前动作：麦珂指派莉薇娅·普莱斯对S95-B-RW样带进行无损物理封存。；第335章可见小赢：独立实验室复现样带波形，确认1995年数据存在人为基线偏移。；第336章新交锋：维克多·兰斯试图以‘设备故障’为由销毁备份，被现场记者全程直播。；阻力方永久现实损失：维克多常规手段失效，被迫转向更隐蔽的‘数据污染’方案。；主角现实收益：锁定S95-B-RW为高价值资产，为P08揭穿医疗造假埋下唯一钥匙。；不可逆结算键：EC168_ECG_Fake_Pattern_Confirmed；接回死亡控制主线：FS06_Fifth_Second_Mechanism"
+    },
+    {
+      "cluster_id": "EC169",
+      "chapter_span": [
+        337,
+        338
+      ],
+      "opposition_type": "ally_resistance",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "前世家庭决策层分裂，瑟琳娜未能进入核心圈导致资源分散。",
+      "unique_prev_life_info": "清楚瑟琳娜作为共同起草人的专业意见可纳入家庭决策机制。",
+      "preemptive_action": "麦珂在家庭信托会议上当众签署《教育共治备忘录》，赋予瑟琳娜否决权。",
+      "chapter_one_small_win": "瑟琳娜驳回奥瑞恩集团提出的不平等版权收购提案，保全家族资产。",
+      "chapter_two_showdown": "部分股东质疑瑟琳娜资历，她直接调出二十年财务审计原始凭证反击。",
+      "opponent_permanent_loss": "反对派股东因散布谣言被家族内部除名，无法再干预核心决策。",
+      "protagonist_concrete_gain": "家庭治理结构升级，瑟琳娜正式成为事业战友而非单纯契约伴侣。",
+      "irreversible_outcome_key": "EC169_Serena_Core_Decision_Entry",
+      "death_chain_connection": "CHAR_4E24DD1EEE76_Boundary_Set",
+      "direction": "前世具体受害：前世家庭决策层分裂，瑟琳娜未能进入核心圈导致资源分散。；本事件独有的前世信息差：清楚瑟琳娜作为共同起草人的专业意见可纳入家庭决策机制。；今生提前动作：麦珂在家庭信托会议上当众签署《教育共治备忘录》，赋予瑟琳娜否决权。；第337章可见小赢：瑟琳娜驳回奥瑞恩集团提出的不平等版权收购提案，保全家族资产。；第338章新交锋：部分股东质疑瑟琳娜资历，她直接调出二十年财务审计原始凭证反击。；阻力方永久现实损失：反对派股东因散布谣言被家族内部除名，无法再干预核心决策。；主角现实收益：家庭治理结构升级，瑟琳娜正式成为事业战友而非单纯契约伴侣。；不可逆结算键：EC169_Serena_Core_Decision_Entry；接回死亡控制主线：CHAR_4E24DD1EEE76_Boundary_Set"
+    },
+    {
+      "cluster_id": "EC170",
+      "chapter_span": [
+        339,
+        340
+      ],
+      "opposition_type": "villain",
+      "event_type": "fan_public_welfare",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "echo",
+      "previous_life_harm": "前世公众自治机制被切断，听众声音被资本垄断覆盖。",
+      "unique_prev_life_info": "已知悉1996年‘第五秒之后’静默机制需延伸至地图卡互动。",
+      "preemptive_action": "艾琳策划特别季节目，邀请七位见证人现场朗读当年法庭记录。",
+      "chapter_one_small_win": "观众自发发起‘第五秒静默’挑战，公众媒体形成千万级传播话题。",
+      "chapter_two_showdown": "卡尔团队试图雇佣水军攻击活动真实性，被七位见证人当面揭穿身份。",
+      "opponent_permanent_loss": "卡尔团队信誉破产，被迫永久退出相关文化项目宣传领域。",
+      "protagonist_concrete_gain": "《静默增益》预售突破一百五十万张，确立公众自治核心信道。",
+      "irreversible_outcome_key": "EC170_Public_Autonomy_Channel_Activated",
+      "death_chain_connection": "CS10_2009_Tribute_Looming",
+      "direction": "前世具体受害：前世公众自治机制被切断，听众声音被资本垄断覆盖。；本事件独有的前世信息差：已知悉1996年‘第五秒之后’静默机制需延伸至地图卡互动。；今生提前动作：艾琳策划特别季节目，邀请七位见证人现场朗读当年法庭记录。；第339章可见小赢：观众自发发起‘第五秒静默’挑战，公众媒体形成千万级传播话题。；第340章新交锋：卡尔团队试图雇佣水军攻击活动真实性，被七位见证人当面揭穿身份。；阻力方永久现实损失：卡尔团队信誉破产，被迫永久退出相关文化项目宣传领域。；主角现实收益：《静默增益》预售突破一百五十万张，确立公众自治核心信道。；不可逆结算键：EC170_Public_Autonomy_Channel_Activated；接回死亡控制主线：CS10_2009_Tribute_Looming"
+    }
+  ]
+}

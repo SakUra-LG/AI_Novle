@@ -1,0 +1,266 @@
+{
+  "macro_group_id": "MG032",
+  "event_clusters": [
+    {
+      "cluster_id": "EC157",
+      "chapter_span": [
+        313,
+        314
+      ],
+      "source_event_direction": "前世具体受害：维克多利用伪造的1979年授权书试图合法化其对《静默增益》的控制权。；本事件独有的前世信息差：前世麦珂在1979年11月17日午后三点无证据自证清白，被迫接受虚假授权。；今生提前动作：麦珂提前调取河湾镇法院1979年11月17日监护权确认录像及七位见证人签字簿。；第313章可见小赢：律师团在听证会上播放法庭录像，证明签署日麦珂正在法院而非签约现场。；第314章新交锋：维克多试图销毁录像带，却被艾琳团队展示的原始微缩胶片备份当场揭穿。；阻力方永久现实损失：维拉德图书撤回所有版权主张，维克多失去对麦珂叙事的单方面解释权。；主角现实收益：麦珂完全收回《静默增益》版权主导权，实体销量突破九十八万张。；不可逆结算键：EC157_Legal_Validation_Complete；接回死亡控制主线：粉碎维克多通过法律程序窃取麦珂毕生心血的致命陷阱。",
+      "source_event_direction_sha256": "c7fc936734ea56a019b3bdc419d0748d2da7a040f8ea04a049dcd7169449792d",
+      "source_macro_sha256": "19aaee43c3ca4964385485b136596c7ded09d449d939a51b4cfce3260ce92f8b",
+      "name": "铁证如山：1979年时空错位审判",
+      "timeline_years": "1997—1998",
+      "main_opponent": "维克多·兰斯 (Victor Lance)",
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS10"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "艾琳",
+        "维克多·兰斯",
+        "卡尔",
+        "河湾镇法官"
+      ],
+      "fictional_obstacle": "行业自律委员会暂停令下，维克多利用伪造的1979年授权书，试图将《静默增益》的所有权合法转移至维拉德图书名下，并威胁若麦珂不签字将永久封杀其作品。",
+      "prev_life_tragedy": "前世麦珂在1979年11月17日午后三点因缺乏直接物证，无法证明自己当时身在河湾镇法院，被迫在伪造文件上按手印，导致后续二十年被维拉德图书吸血。",
+      "info_gap_from_prev_life": "麦珂确切知晓1979年11月17日午后三点的河湾镇法院监控录像（当时为磁带存档）及七位在场见证人的具体姓名，而前世这些记录被维克多刻意掩盖或声称丢失。",
+      "why_previous_life_failed": "前世依赖口头陈述和模糊记忆，未能在第一时间锁定物理层面的时间戳证据，且低估了维克多销毁档案的速度。",
+      "preemptive_avoidance": "重生后麦珂立即派遣艾琳前往河湾镇档案馆，在维克多动手前调取了1979年11月17日的法院庭审录像带原件，并公证了七位见证人的签字簿。",
+      "bait_and_evidence": "诱饵是维克多急于在听证会结束前拿到‘最终授权’以完成季度财报；证据是法院录像中清晰显示麦珂在签署现场对面旁听席上，且背景音有法槌声与证人宣誓声。",
+      "comic_villain_behavior": "维克多在听证会上为了掩盖慌乱，竟试图当场用打火机烧毁手中的假授权书样本，结果火势引燃了旁边的窗帘，场面一度失控，被记者全程抓拍。",
+      "villain_loss": "维拉德图书被迫当众撤回所有版权主张，维克多因欺诈罪被行业永久除名，彻底失去对《静默增益》的解释权。",
+      "protagonist_gain": "麦珂完全收回《静默增益》版权主导权，实体销量在听证会后一周内突破九十八万张，地图卡激活率飙升至91.3%。",
+      "relationship_change": "麦珂与艾琳建立基于‘真相档案’的深度职业联盟；麦珂与瑟琳娜完成家庭权力结构的制度化重构；维克多与麦珂进入敌对取证阶段。",
+      "continuity_writes": [
+        "维克多因恐慌开始疯狂清理物理介质，但遗漏了S95-B-RW样带，为下一轮医疗造假调查埋下伏笔。",
+        "1977年工坊少年身份确认为关键证人，媒体开始密集采访，形成舆论高压。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016",
+          "state_key": "trust_protocols__extension_EC157",
+          "from": "fraudulent_claim_active",
+          "to": "legally_voided_complete",
+          "irreversible": true,
+          "evidence": "COURT_TAPES_1979_NOV_17",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "TEAM_KARL_001",
+          "state_key": "industry_standing__extension_EC157",
+          "from": "none",
+          "to": "permanently_banned",
+          "irreversible": true,
+          "evidence": "HEARING_FOOTAGE_FIRE_INCIDENT",
+          "effect_type": "villain_loss",
+          "source_state_key": "industry_standing"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "SALES_MCKE_001",
+          "state_key": "physical_volume_status",
+          "from": "stagnant_under_claims",
+          "to": "surge_to_980k",
+          "irreversible": false,
+          "evidence": "MARKET_REPORT_1997_DEC",
+          "effect_type": "protagonist_gain",
+          "source_domain": "sales"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1979_COURT_RECORD",
+        "HIST_1979_WITNESS_LOG"
+      ],
+      "cluster_outcome": "麦珂通过法律程序与物理证据的完美配合，彻底粉碎维克多利用伪造授权书窃取版权的企图，确立了不可逆转的版权主导权，并将维克多逼入绝境，迫使其启动更疯狂的毁灭计划。",
+      "next_event_hook": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 313,
+          "timeline_start": "1997-11-23",
+          "timeline_end": "1997-11-23",
+          "scene": "听证室主舞台",
+          "chapter_goal": "在听证会上公开播放1979年法院录像，直接击碎维克多的授权书谎言。",
+          "chapter_title": "第313章：消失的三点钟",
+          "participants": [
+            "麦珂",
+            "艾琳",
+            "维克多·兰斯",
+            "卡尔",
+            "委员会主席",
+            "旁听记者"
+          ],
+          "opening_conflict": "维克多手持伪造的1979年授权书，声称麦珂已私下转让版权，要求委员会批准交易，以此作为拖延销毁胶片的借口。",
+          "info_gap_use": "麦珂利用前世记忆，精准指出授权书签署时间为11月17日午后三点，此时她本应在河湾镇法院处理监护权确认，不可能出现在签约现场。",
+          "opponent_reaction": "维克多面露惊惶，试图打断录像播放，声称设备故障，并煽动卡尔团队质疑录像真实性。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证室主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "艾琳按下播放键，老式CRT电视屏幕闪烁雪花后出现画面。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_309_S95_B_RW_TAPE",
+              "timeline_scope": "current",
+              "purpose": "虽未在此章直接使用，但其存在暗示维克多正在寻找的备份源已被截获。"
+            }
+          ],
+          "action_sequence": [
+            "艾琳将标有'1979-11-17'的磁带插入播放器，全场寂静。",
+            "屏幕显示河湾镇法院大厅，麦珂身着朴素外套坐在旁听席，背景音是法官敲锤的声音。",
+            "麦珂起身，指着屏幕上的时间戳，朗声质问维克多：'如果我在法院，你在哪？'",
+            "维克多试图辩解，但卡尔团队发现手中的纸质授权书日期与录像时间冲突，陷入死局。"
+          ],
+          "visible_payoff": "公众与委员会确认授权书系伪造，维克多的逻辑链条断裂。",
+          "ending": "听证会暂时休庭，维克多面色惨白地离开，手中紧握的伪造文件被记者围堵拍摄。",
+          "must_include": [
+            "CRT电视播放细节",
+            "麦珂冷静对峙",
+            "时间戳的特写"
+          ],
+          "must_not_include": [
+            "现代数字投影",
+            "维克多当场被捕",
+            "麦珂情绪失控"
+          ],
+          "detailed_synopsis": "维克多手持伪造的1979年授权书，声称麦珂已私下转让版权，要求委员会批准交易，以此作为拖延销毁胶片的借口。艾琳将标有'1979-11-17'的磁带插入播放器，全场寂静。屏幕显示河湾镇法院大厅，麦珂身着朴素外套坐在旁听席，背景音是法官敲锤的声音。麦珂起身，指着屏幕上的时间戳，朗声质问维克多：'如果我在法院，你在哪？'。维克多试图辩解，但卡尔团队发现手中的纸质授权书日期与录像时间冲突，陷入死局。公众与委员会确认授权书系伪造，维克多的逻辑链条断裂。听证会暂时休庭，维克多面色惨白地离开，手中紧握的伪造文件被记者围堵拍摄。",
+          "source_timeline_start": "1997年11月17日 上午",
+          "source_timeline_end": "1997年11月17日 下午"
+        },
+        {
+          "chapter_id": 314,
+          "timeline_start": "1997-11-23",
+          "timeline_end": "1997-11-23",
+          "scene": "侧厅走廊",
+          "chapter_goal": "维克多试图销毁证据反被艾琳用微缩胶片备份反杀，最终彻底败退。",
+          "chapter_title": "第314章：灰烬中的胶片",
+          "participants": [
+            "麦珂",
+            "艾琳",
+            "维克多·兰斯",
+            "几名保镖",
+            "记者群"
+          ],
+          "opening_conflict": "听证会后，维克多企图冲进侧厅销毁刚刚被揭露的假授权书及相关备份，制造“证据灭失”假象，试图翻盘。",
+          "info_gap_use": "麦珂知道维克多习惯先销毁实物再伪造报告，因此艾琳早已将关键证据的微缩胶片备份藏匿于安全处，并提前通知了在场记者。",
+          "opponent_reaction": "维克多疯狂地撕扯文件，甚至点燃打火机，却在看到艾琳展示的微缩胶片时彻底崩溃，意识到自己已无路可退。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "侧厅走廊",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "火光映照在维克多扭曲的脸上。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_307_WORKSHOP_WALL_PHOTO",
+              "timeline_scope": "current",
+              "purpose": "作为对比，证明当前证据链的完整性，呼应前文工坊少年的身份。"
+            }
+          ],
+          "action_sequence": [
+            "维克多趁乱冲向存放文件的桌子，掏出打火机试图烧毁那份伪造的授权书，试图制造混乱。",
+            "艾琳冷静地举起一个密封的金属盒，里面装着1979年原始微缩胶片的备份，这是麦珂前世记忆中从未见过的“保险”。",
+            "记者们蜂拥而上，用镜头记录下维克多焚烧文件的丑态，以及艾琳展示真证的瞬间。",
+            "维克多看着手中的灰烬和艾琳手中的真证，双腿一软，瘫坐在地，彻底失去了反抗能力。"
+          ],
+          "visible_payoff": "维拉德图书被迫撤回所有主张，维克多彻底失去话语权，麦珂销量暴涨。",
+          "ending": "维克多被保安控制，维拉德图书连夜发布声明撤回版权主张，麦珂站在人群中央，看着窗外初升的月亮，长舒一口气。",
+          "must_include": [
+            "焚烧文件的滑稽场景",
+            "微缩胶片备份的展示",
+            "维克多崩溃的瞬间"
+          ],
+          "must_not_include": [
+            "暴力冲突升级",
+            "警察直接介入逮捕",
+            "麦珂主动攻击"
+          ],
+          "detailed_synopsis": "听证会后，维克多企图冲进侧厅销毁刚刚被揭露的假授权书及相关备份，制造“证据灭失”假象，试图翻盘。维克多趁乱冲向存放文件的桌子，掏出打火机试图烧毁那份伪造的授权书，试图制造混乱。艾琳冷静地举起一个密封的金属盒，里面装着1979年原始微缩胶片的备份，这是麦珂前世记忆中从。记者们蜂拥而上，用镜头记录下维克多焚烧文件的丑态，以及艾琳展示真证的瞬间。维克多看着手中的灰烬和艾琳手中的真证，双腿一软，瘫坐在地，彻底失去了反抗能力。维拉德图书被迫撤回所有主张，维克多彻底失去话语权，麦珂销量暴涨。维克多被保安控制，维拉德图书连夜发布声明撤回版权主张，麦珂站在人群中央，看着窗外初升的月亮，长舒一口气。",
+          "source_timeline_start": "1997年11月17日 傍晚",
+          "source_timeline_end": "1997年11月17日 深夜"
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "艾琳",
+        "维克多·兰斯",
+        "卡尔 (Carl)",
+        "河湾镇法官"
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {
+        "entity_id": "MCKE_STATUS",
+        "state_key": "legal_victory_achieved",
+        "status": "完全掌握版权主导权，身心状态极佳"
+      },
+      {
+        "entity_id": "VICTOR_STATUS",
+        "state_key": "panic_mode_on",
+        "status": "陷入恐慌，开始疯狂清理物理介质但已漏掉关键样本"
+      },
+      {
+        "entity_id": "AILEN_STATUS",
+        "state_key": "trusted_partner",
+        "status": "与麦珂建立深度职业联盟"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": "麦珂 & 艾琳",
+        "new_state": "基于‘真相档案’的深度职业联盟"
+      },
+      {
+        "pair": "麦珂 & 维克多",
+        "new_state": "敌对取证阶段，维克多转入地下防守"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset_id": "RIGHT_MCKE_001",
+        "change": "《静默增益》版权主导权完全收回，实体销量突破九十八万张"
+      },
+      {
+        "asset_id": "WORKSHOP_NETWORK",
+        "change": "四十三处工坊实现自主盈亏平衡"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "MCKE_HEALTH",
+        "status": "体重、血压、肺活量三项连续四年无波动，维持生理最佳状态"
+      }
+    ],
+    "open_threads": [
+      "S95-B-RW录音证据如何转化为法律层面的指控",
+      "医疗模型造假对世纪转换期公众健康的潜在危害",
+      "维克多‘全介质抹除计划’的具体执行进度"
+    ],
+    "resolved_threads": [
+      "1979年授权书真伪问题",
+      "维拉德图书对《静默增益》的非法控制"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。"
+  }
+}

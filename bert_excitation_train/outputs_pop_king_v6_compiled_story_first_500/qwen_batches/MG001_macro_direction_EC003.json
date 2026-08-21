@@ -1,0 +1,27 @@
+{
+  "macro_group_id": "MG001",
+  "event_directions": [
+    {
+      "cluster_id": "EC003",
+      "chapter_span": [
+        5,
+        6
+      ],
+      "opposition_type": "family",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "reveal",
+      "previous_life_harm": "乔纳在前世利用玛莎的信件欺骗麦珂，导致麦珂错过了试镜机会",
+      "unique_prev_life_info": "乔纳在前世的信件中有一个限时报名的谎话",
+      "preemptive_action": "麦珂在今生发现乔纳的谎话后，立即写信给玛莎，要求她检查家庭邮件",
+      "chapter_one_small_win": "第5章，麦珂成功让玛莎检查家庭邮件，发现了乔纳的谎话",
+      "chapter_two_showdown": "第6章，麦珂和乔纳发生冲突，麦珂要求乔纳交出所有家庭邮件",
+      "opponent_permanent_loss": "乔纳永久失去独占家庭消息的权力",
+      "protagonist_concrete_gain": "麦珂获得了家庭邮件的控制权，能够随时检查和利用邮件",
+      "irreversible_outcome_key": "乔纳的谎言被揭露，麦珂获得了家庭邮件的控制权",
+      "death_chain_connection": "麦珂的行动削弱了2009年死亡背后的保险、版权、医疗或控制体系",
+      "direction": "",
+      "locked_story_brief": "前世乔纳曾截住试镜回函再嫁祸玛莎，今生麦珂用回函到达次序让事实自然显露；玛莎自行决定掌管家庭邮件，乔纳永久失去独占家庭消息的权力"
+    }
+  ]
+}

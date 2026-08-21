@@ -1,0 +1,51 @@
+
+<think>
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+    - **Role:** Lead screenwriter for a long Chinese rebirth "cool" novel (重生爽文).
+    - **Task:** Directly create specific plot for two chapter directions: EC001, EC002 under MG001. Do not output other events or rewrite macro core.
+    - **Output Format:** Strictly a single valid JSON object. No Markdown, no explanations.
+    - **Constraints:**
+        - Characters, events, obstacles, evidence formation, reversals, and gains must be specific enough to guide ~1000 words of text.
+        - Must follow the provided `macro_group_id`, `block_id`, `causal_spine`, `foreshadows`, `character_boundaries`.
+        - Must use locked story briefs/facts for EC001 and EC002.
+        - Each direction must follow: "Past life clear harm -> Present life proactive preempt -> Ch1 small win -> Ch2 new clash -> Causal permanent settlement".
+        - Settlement must be orchestrated by protagonist; villain realizes it's a countermove; preferably witnessed/public power inversion. Villain can be comical due to greed/bluster but must suffer real loss.
+        - Actions/dialogue must fit identities. Resistance isn't always a villain, but here `opposition_type` is "villain".
+        - Past life memory only provides dates, exact words, processes, character choices. Cannot be direct evidence in present life. Minor protagonist doesn't do professional appraisal/legal engineering.
+        - At least one core character must choose between two valuable/costly options. No direct authorial explanation of personality.
+        - Use period-appropriate media and fictional US-specific names.
+        - `direction` field must be empty string.
+        - JSON structure provided in prompt must be strictly followed.
+        - Avoid previous failures (JSON parsing).
+        - Rewrite batch ID: a7fe0d1700be. Discard previous planning. Create from scratch based on authoritative upstream.
+
+2.  **Deconstruct EC001 Requirements:**
+    - `cluster_id`: "EC001"
+    - `chapter_span`: [1, 2]
+    - `opposition_type`: "villain"
+    - `event_type`: "health_safety"
+    - `solution_type`: "safety_preemption"
+    - `death_chain_role`: "advance"
+    - `previous_life_harm`: 2009临终，康拉德违规用药/注射致死及麦珂上一世最终损失；不能改成设备事故
+    - `unique_prev_life_info`: 第1章临终听见的保险、版权/母带分赃原话或顺序；这是重生信息差
+    - `preemptive_action`: 第2章：1969重生后台，只报告记忆中的设备/走位危险，由成年人处理
+    - `chapter_one_small_win`: EC001特例：第1章没有反击小赢；麦珂在死亡前获得利益链真相
+    - `chapter_two_showdown`: 第2章睁眼确认回到1969试镜后台，并用信息差避险、赢得试镜机会
+    - `opponent_permanent_loss`: 第二章落定的钱、权、职位、资源、盟友或信誉损失
+    - `protagonist_concrete_gain`: 第二章实际取得的资源、机会、关系主动权或声望
+    - `irreversible_outcome_key`: 短而唯一的状态机结算键
+    - `death_chain_connection`: 怎样削弱2009死亡背后的保险、版权、医疗或控制体系
+    - `direction`: ""
+    - `locked_story_brief`: 第1章2009临终获得死亡利益链真相；第2章重生到1969试镜后台，凭前世记得的走位或设备险情报告成年人并避险，失职者失去后台职务，麦珂赢得试镜机会
+    - *Key Elements to Incorporate:* 2009, 1969, 临终/致死/死亡, 康拉德, 药/注射/输液, 保险, 版权/母带, 设备/走位/安全/危险.
+    - *Plot Construction (Mental Draft):*
+        - Ch1 (2009): 12-year-old (in past life timeline? Wait, macro says 1969-1970, protagonist is 12 in 1969. So in 2009, he's older, maybe 52? The prompt says "重生回1969年十一岁全国出道试镜后台". So past life death happens at age ~52. Let's stick to the prompt's premise: dies in 2009, reborn to 1969 age 11/12. In 2009, Conrad (康拉德) administers lethal injection/drugs under guise of medical care. As he dies, he overhears Conrad discussing insurance payout, copyright/master tape division. This is the `previous_life_harm` and `unique_prev_life_info`. No small win in Ch1, just truth acquisition.
+        - Ch2 (1969): Wakes up in backstage. Remembers the exact equipment hazard/walkway danger that caused a past incident or is about to happen. Reports it to an adult (Martha/Diana). The adult handles it. The negligent staff/villain (maybe a stage manager or Conrad's early associate, let's call him "Harris" or stick to Conrad if he's there early, but prompt says Conrad is the 2009 killer. I'll use a stagehand/manager named "Lester" or just refer to the opposition as the production crew's safety overseer, but the prompt says `opposition_type: villain`. I'll make the villain "康拉德" (Conrad) who is already involved in 1969 as a junior producer/stage manager, setting up the long game. Or keep Conrad as the 2009 figure, but the 1969 villain for EC001 could be a different person, or Conrad himself. The prompt says `locked_story_brief` mentions "失职者失去后台职务". I'll use "布赖恩" (Brian) as the stage manager, but the `opposition_type` is villain. I'll stick to the prompt's locked facts. Actually, the prompt says `previous_life_harm` involves 康拉德. I'll make 康拉德 the 1969 opposition too, or just follow the exact field names. I will craft the JSON fields exactly as requested, filling in the narrative details.)
+        - Let's align strictly with the JSON structure provided. I need to fill each field with concrete, original facts.
+        - `previous_life_harm`: 2009年冬夜，康拉德以“舒缓喉炎”为由违规推注高浓度镇静剂与胰岛素混合液，导致麦珂呼吸衰竭致死；临终前麦珂眼睁睁看着康拉德与经纪人核对“意外身故保险”理赔单与《母带永久买断协议》的分赃比例，版权收益被彻底洗空。
+        - `unique_prev_life_info`: 麦珂在弥留之际清晰听见康拉德原话：“输液管接好，等监护仪归零，保险理赔和母带版权明天就能过户。”
+        - `preemptive_action`: 麦珂睁眼确认身处1969年秋《晨光电台》试镜后台，立刻抓住玛莎的衣角，用稚嫩但清晰的嗓音指出舞台左侧第三块跳板下方压着裸露的220V主电缆，且走位标记与电缆走向重合，要求成年人立即切断总闸并重新铺设绝缘胶垫。
+        - `chapter_one_small_win`: 无（按特例设定，本章仅完成死亡真相的接收与记忆锚定，未发生反击）。
+        - `chapter_two_showdown`: 玛莎与黛安娜迅速响应，玛莎面临“是否因临时检修导致试镜迟到而放弃名额”与“坚持安全排查保住孩子性命”的抉择，最终她果断合上流程表，要求技术组断电检修；康拉德（时任现场执行制片）试图以“行业惯例赶进度”施压并私自恢复供电，

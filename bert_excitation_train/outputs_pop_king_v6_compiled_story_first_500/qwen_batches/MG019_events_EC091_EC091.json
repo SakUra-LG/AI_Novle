@@ -1,0 +1,229 @@
+{
+  "macro_group_id": "MG019",
+  "event_clusters": [
+    {
+      "cluster_id": "EC091",
+      "chapter_span": [
+        181,
+        182
+      ],
+      "source_event_direction": "前世具体受害：前世巴里误判管道布局，导致酸性废液直接冲毁胶片库，麦珂因吸入毒气喉炎复发。；本事件独有的前世信息差：麦珂记得1986年该厂因酸性废液超标被罚款20万美元的具体排污口位于B区三号阀门后方。；今生提前动作：麦珂带苏菲亚提前在B区三号阀门后架设物理隔离网，并切断通往主排污管的动力电源。；第181章可见小赢：深夜媒体经理启动强酸泵却只抽到空管，现场留下的油污痕迹成为第一份物证。；第182章新交锋：媒体经理强行撬开备用阀门，结果触发麦珂预设的锈蚀警报，腐蚀液反溅至其面部。；阻力方永久现实损失：媒体经理面部灼伤留疤且失去对工厂核心管道的控制权，被迫承认操作失误。；主角现实收益：苏菲亚确认微缩胶片库位置安全，团队获得关键时间窗口进行证据固化。；不可逆结算键：物理隔离网与锈蚀警报联动成功，奥瑞恩无法在不破坏现场的情况下继续作业。；接回死亡控制主线：此役阻止了前世导致麦珂健康崩溃的毒气泄漏源头。",
+      "source_event_direction_sha256": "87c20cd677898cbc8f242628533c7bc6b369f679b1ad028bded30bf3ffe3f1c0",
+      "source_macro_sha256": "9cba57e4250a98ba25591912f9b38b2794f6ed158608b22d20800567d6a0434a",
+      "name": "酸液迷局：B区阀门的生死博弈",
+      "timeline_years": "1986",
+      "main_opponent": "巴里·布鲁姆",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS02"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "苏菲亚",
+        "巴里·布鲁姆",
+        "黛安娜·罗文"
+      ],
+      "fictional_obstacle": "巴里·布鲁姆试图利用深夜无人监管的漏洞，启动强酸废液处理系统，通过物理溶解方式销毁苏菲亚藏匿的微缩胶片库证据，并掩盖其违规操作。",
+      "prev_life_tragedy": "前世巴里·布鲁姆误判管道布局，导致酸性废液直接冲毁胶片库，麦珂因吸入毒气喉炎复发，失去发声能力，最终导致证据链断裂。",
+      "info_gap_from_prev_life": "麦珂记得1986年该厂因酸性废液超标被罚款20万美元的具体排污口位于B区三号阀门后方，且知晓1984年因阀门锈蚀导致泄漏的备用阀门隐藏位置。",
+      "why_previous_life_failed": "前世麦珂缺乏对工厂底层管道布局的精准记忆，未能预判巴里·布鲁姆的破坏路线，导致被动吸入毒气，证据被毁。",
+      "preemptive_avoidance": "麦珂带苏菲亚提前在B区三号阀门后架设物理隔离网，并切断通往主排污管的动力电源，同时利用备用阀门的锈蚀特性设置陷阱。",
+      "bait_and_evidence": "麦珂故意留下未切断的备用阀门线索，诱导巴里·布鲁姆认为这是唯一的排放通道，实则该阀门已严重锈蚀，一旦强行开启将导致反溅和警报触发。",
+      "comic_villain_behavior": "巴里·布鲁姆急于立功，在操作时因不熟悉设备而显得笨拙，强行撬动锈蚀阀门时发出刺耳的金属断裂声，并因恐惧而大声咒骂，暴露其慌乱。",
+      "villain_loss": "巴里·布鲁姆面部被腐蚀液灼伤留疤，失去对工厂核心管道的控制权，被迫承认操作失误，形象彻底崩塌。",
+      "protagonist_gain": "苏菲亚确认微缩胶片库位置安全，团队获得关键时间窗口进行证据固化，黛安娜·罗文凭借此案确立法务权威。",
+      "relationship_change": "苏菲亚与麦珂形成不可分割的‘记忆-执行’双核同盟；黛安娜成为两人的法律顾问核心；奥瑞恩集团内部对巴里·布鲁姆产生信任危机。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007",
+          "state_key": "trust_governance__extension_EC091",
+          "from": "vulnerable",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_181_ACID_SPLASH_PHOTO",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "health",
+          "entity_id": "CHAR_F618A85B98BB",
+          "state_key": "health_status",
+          "from": "stable",
+          "to": "recurrent_laryngitis",
+          "irreversible": false,
+          "evidence": "DOC_182_MEDICAL_REPORT",
+          "effect_type": "villain_loss",
+          "source_entity_label": "CHAR_MAIKE"
+        }
+      ],
+      "historical_anchor_ids": [],
+      "cluster_outcome": "物理隔离网与锈蚀警报联动成功，奥瑞恩无法在不破坏现场的情况下继续作业，微缩胶片库获得联邦法院颁发的临时查封令。",
+      "next_event_hook": "维克多·兰斯在幕后监控到物理攻击失败，眼神阴鸷地转向电脑屏幕，准备启动‘健康趋势预测模型’的数据污染计划。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 181,
+          "timeline_start": "1986-10-24",
+          "timeline_end": "1986-10-24",
+          "scene": "B区地下管道层",
+          "chapter_goal": "麦珂利用前世记忆预判巴里·布鲁姆的行动路线，提前切断主排污管电源，并在B区三号阀门后架设物理隔离网，制造‘空管’假象。",
+          "chapter_title": "空管陷阱",
+          "participants": [
+            "麦珂",
+            "苏菲亚",
+            "巴里·布鲁姆"
+          ],
+          "opening_conflict": "巴里·布鲁姆带领两名手下潜入工厂，试图启动强酸泵销毁证据，却发现主排污管毫无反应。",
+          "info_gap_use": "麦珂利用前世对1986年环保罚款细节的记忆，精准定位B区三号阀门为关键排污口，并提前切断其动力电源。",
+          "opponent_reaction": "巴里·布鲁姆感到困惑和愤怒，认为这是设备故障，命令手下检查备用阀门。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "B区地下管道层",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "深夜的寂静被沉重的脚步声打破"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_181_EMPTY_PIPE_PHOTO",
+              "timeline_scope": "current",
+              "display_name": "空管现场照片",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_180_COURT_INJUNCTION",
+              "timeline_scope": "current",
+              "purpose": "作为后续法律行动的初步依据"
+            }
+          ],
+          "action_sequence": [
+            "麦珂与苏菲亚在B区三号阀门后架设物理隔离网，并切断主排污管电源。",
+            "巴里·布鲁姆启动强酸泵，发现管道内无液体流动，只有空管回声。",
+            "巴里·布鲁姆命令手下检查备用阀门，苏菲亚在远处拍摄现场照片作为证据。",
+            "麦珂利用喉炎复发前的最后清醒时刻，通过手势指挥苏菲亚记录巴里·布鲁姆的慌乱表情。"
+          ],
+          "visible_payoff": "巴里·布鲁姆的破坏行动首次受挫，现场留下的油污痕迹成为第一份物证。",
+          "ending": "巴里·布鲁姆决定强行撬开备用阀门，麦珂与苏菲亚撤离至安全区域，准备迎接下一轮冲突。",
+          "must_include": [
+            "B区三号阀门",
+            "物理隔离网",
+            "空管回声"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "深夜，奥瑞恩集团化工厂B区地下管道层死寂无声。麦珂与苏菲亚潜伏在阴影中，麦珂凭借前世记忆，精准定位到1986年因酸性废液超标被罚款的排污口——B区三号阀门。她指挥苏菲亚在阀门后方架设高强度的物理隔离网，并切断通往主排污管的动力电源。巴里·布鲁姆带领手下潜入，启动强酸泵，期待听到液体流动的轰鸣，却只听到空管内的回声。巴里·布鲁姆感到困惑和愤怒，认为这是设备故障，命令手下检查备用阀门。苏菲亚在远处用胶片相机拍摄现场照片，记录下巴里·布鲁姆慌乱的表情和油污痕迹。麦珂因过度劳累，喉炎症状开始显现，但她强忍不适，通过手势指挥苏菲亚记录关键证据。"
+        },
+        {
+          "chapter_id": 182,
+          "timeline_start": "1986-10-24",
+          "timeline_end": "1986-10-25",
+          "scene": "B区备用阀门处",
+          "chapter_goal": "巴里·布鲁姆强行撬开备用阀门，触发麦珂预设的锈蚀警报，腐蚀液反溅至其面部，导致其永久受伤并暴露罪行。",
+          "chapter_title": "锈蚀反噬",
+          "participants": [
+            "麦珂",
+            "苏菲亚",
+            "巴里·布鲁姆",
+            "黛安娜·罗文"
+          ],
+          "opening_conflict": "巴里·布鲁姆在备用阀门处发现锈蚀痕迹，试图强行撬开，却触发了隐藏的警报机制。",
+          "info_gap_use": "麦珂利用前世对1984年阀门锈蚀事故的记忆，知道备用阀门的隐藏位置和锈蚀程度，预设了警报和反溅陷阱。",
+          "opponent_reaction": "巴里·布鲁姆在腐蚀液反溅时发出惨叫，面部严重灼伤，手下惊慌失措。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "B区备用阀门处",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "金属断裂的刺耳声响划破夜空"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_181_ACID_SPLASH_PHOTO",
+              "timeline_scope": "current",
+              "display_name": "酸液反溅现场照片",
+              "kind": "document"
+            },
+            {
+              "artifact_id": "ART_182_MEDICAL_REPORT",
+              "timeline_scope": "current",
+              "display_name": "巴里·布鲁姆医疗报告",
+              "kind": "document",
+              "source_artifact_id": "DOC_182_MEDICAL_REPORT"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_181_EMPTY_PIPE_PHOTO",
+              "timeline_scope": "current",
+              "purpose": "作为巴里·布鲁姆试图销毁证据的间接证据"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆强行撬开备用阀门，锈蚀的金属结构突然断裂。",
+            "隐藏的警报机制触发，腐蚀液从阀门缝隙中反溅而出，击中巴里·布鲁姆的面部。",
+            "巴里·布鲁姆发出惨叫，手下惊慌失措，试图救援但无济于事。",
+            "麦珂与苏菲亚在安全区域观察，苏菲亚拍摄现场照片，记录巴里·布鲁姆的受伤情况。",
+            "黛安娜·罗文接到通知，立即联系警方和环保局，启动紧急冻结程序。"
+          ],
+          "visible_payoff": "巴里·布鲁姆面部灼伤留疤，失去对工厂核心管道的控制权，被迫承认操作失误。",
+          "ending": "警方和环保局人员到达现场，巴里·布鲁姆被带走调查，微缩胶片库获得临时查封令，麦珂因喉炎复发被送往医院。",
+          "must_include": [
+            "备用阀门",
+            "锈蚀警报",
+            "腐蚀液反溅"
+          ],
+          "must_not_include": [
+            "互联网",
+            "公众媒体"
+          ],
+          "detailed_synopsis": "巴里·布鲁姆在备用阀门处发现锈蚀痕迹，试图强行撬开。他不知道的是，麦珂利用前世对1984年阀门锈蚀事故的记忆，预设了警报和反溅陷阱。当巴里·布鲁姆用力撬动阀门时，锈蚀的金属结构突然断裂，隐藏的警报机制触发，腐蚀液从阀门缝隙中反溅而出，击中他的面部。巴里·布鲁姆发出惨叫，手下惊慌失措，试图救援但无济于事。麦珂与苏菲亚在安全区域观察，苏菲亚拍摄现场照片，记录巴里·布鲁姆的受伤情况。黛安娜·罗文接到通知，立即联系警方和环保局，启动紧急冻结程序。警方和环保局人员到达现场，巴里·布鲁姆被带走调查，微缩胶片库获得临时查封令。麦珂因喉炎复发，被送往医院，但她的行动成功阻止了前世悲剧的重演。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1986",
+    "character_states": [
+      "麦珂：喉炎复发，需短期静养，声望达到新高度。",
+      "苏菲亚：精神紧绷但意志坚定，晋升为受官方保护的档案库守护者。",
+      "巴里·布鲁姆：面部灼伤留疤，面临刑事指控压力，形象彻底崩塌。",
+      "黛安娜·罗文：凭借此案确立法务权威，成为麦珂和苏菲亚的法律顾问核心。"
+    ],
+    "relationship_states": [
+      "苏菲亚与麦珂形成不可分割的‘记忆-执行’双核同盟。",
+      "黛安娜成为两人的法律顾问核心。",
+      "奥瑞恩集团内部对巴里·布鲁姆产生信任危机。"
+    ],
+    "rights_and_assets": [
+      "微缩胶片库获得联邦法院颁发的临时查封令，被划为‘实体介质安全区’。",
+      "奥瑞恩收购案宣告破产。"
+    ],
+    "health_and_location": [
+      "麦珂：医院，喉炎复发。",
+      "苏菲亚：工厂，守护胶片库。",
+      "巴里·布鲁姆：警局，接受调查。",
+      "黛安娜·罗文：律师事务所，处理法律事务。"
+    ],
+    "open_threads": [
+      "维克多·兰斯准备启动‘健康趋势预测模型’的数据污染计划。",
+      "1987年‘棱镜之夜’直播事故前置条件。"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团物理毁灭微缩胶片库的计划失败。"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多·兰斯在幕后监控到物理攻击失败，眼神阴鸷地转向电脑屏幕，准备启动‘健康趋势预测模型’的数据污染计划，试图在麦珂的公开演出中制造一起无法解释的‘医疗事故’。"
+  }
+}

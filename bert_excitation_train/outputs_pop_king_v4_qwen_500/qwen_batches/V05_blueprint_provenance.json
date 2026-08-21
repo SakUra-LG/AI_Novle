@@ -1,0 +1,95 @@
+{
+  "generated_by": "qwen",
+  "kind": "blueprint",
+  "identifier": "V05",
+  "accepted_attempt": 3,
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-04T16:35:06+08:00",
+      "prompt_sha256": "cf1e88ab2ea973545cecf38f8e45890a4859f93aa789aa5bd6faf05461c7afb6",
+      "raw_response_sha256": "f80742f8108b8ac153d694a27e1f7bde9405a0dc44be93a8d18220e33ed87db5",
+      "raw_response_file": "V05_blueprint_attempt_01_raw.txt",
+      "validation_failures": [
+        "MG021第1个方向cluster_id必须为EC101",
+        "MG021第2个方向cluster_id必须为EC102",
+        "MG021第3个方向cluster_id必须为EC103",
+        "MG021第4个方向cluster_id必须为EC104",
+        "MG021第5个方向cluster_id必须为EC105",
+        "MG022第1个方向cluster_id必须为EC106",
+        "MG022第2个方向cluster_id必须为EC107",
+        "MG022第3个方向cluster_id必须为EC108",
+        "MG022第4个方向cluster_id必须为EC109",
+        "MG022第5个方向cluster_id必须为EC110",
+        "MG023第1个方向cluster_id必须为EC111",
+        "MG023第2个方向cluster_id必须为EC112",
+        "MG023第3个方向cluster_id必须为EC113",
+        "MG023第4个方向cluster_id必须为EC114",
+        "MG023第5个方向cluster_id必须为EC115",
+        "MG024第1个方向cluster_id必须为EC116",
+        "MG024第2个方向cluster_id必须为EC117",
+        "MG024第3个方向cluster_id必须为EC118",
+        "MG024第4个方向cluster_id必须为EC119",
+        "MG024第5个方向cluster_id必须为EC120",
+        "MG025.main_conflict过短或缺失",
+        "MG025第1个方向cluster_id必须为EC121",
+        "MG025第2个方向cluster_id必须为EC122",
+        "MG025第3个方向cluster_id必须为EC123",
+        "MG025第4个方向cluster_id必须为EC124",
+        "MG025第5个方向cluster_id必须为EC125"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 21.27,
+      "usage": {
+        "input_tokens": 2684,
+        "output_tokens": 2571,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 5255
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-04T16:35:26+08:00",
+      "prompt_sha256": "86f72d3596d6b15c692b89b0190bad47ae7c64891e884308699ce33e0152c848",
+      "raw_response_sha256": "0910b646d06aafc4939e6a9d8f85fc28a90d8ecf7ba635a7b099854a157427c6",
+      "raw_response_file": "V05_blueprint_attempt_02_raw.txt",
+      "validation_failures": [
+        "MG025.main_conflict过短或缺失"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 19.855,
+      "usage": {
+        "input_tokens": 5500,
+        "output_tokens": 2571,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 8071
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-04T16:35:46+08:00",
+      "prompt_sha256": "c65503cefdfa288845873030c42634a8c94b073f2254823a37f9021ad31456df",
+      "raw_response_sha256": "cc01c27b4939fe82778f7fb6d54a53ed20875ca9b35246c343b653fff4358062",
+      "raw_response_file": "V05_blueprint_attempt_03_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 20.307,
+      "usage": {
+        "input_tokens": 5297,
+        "output_tokens": 2571,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 7868
+      }
+    }
+  ]
+}

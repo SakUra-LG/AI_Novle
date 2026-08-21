@@ -1,0 +1,1126 @@
+{
+  "macro_group_id": "MG034",
+  "event_clusters": [
+    {
+      "cluster_id": "EC166",
+      "chapter_span": [
+        331,
+        332
+      ],
+      "source_event_direction": "前世具体受害：前世被剪辑影像误导公众，导致监护权旁听记录被污名化。；本事件独有的前世信息差：知晓1979年11月17日午后三点河湾镇法院录像带存于第三排铁柜。；今生提前动作：麦珂提前三周携带公证员抵达新泽西废弃仓库提取昆廷手写调度笔记。；第331章可见小赢：艾琳在《午夜星轨》播出片段中插入未被剪掉的工坊少年作画原帧。；第332章新交锋：奥瑞恩律师在听证会出示伪造文件，麦珂当场播放河湾镇原始法庭录像。；阻力方永久现实损失：卡尔团队因提交伪证被行业自律委员会暂停从业资格两年。；主角现实收益：麦珂正式收回所有版权控制权，七位见证人签字簿完成法律归档。；不可逆结算键：EC166_Court_Raw_Video_Authenticated；接回死亡控制主线：CS10_1977_Workshop_Youth_Proven",
+      "source_event_direction_sha256": "6f9616984ac106ea8e0ed255ab939dc8a5b836c0e4f9ff38eb279333d867c445",
+      "source_macro_sha256": "91e47b62e3eb2f2d0c504f4c894438060065f80d2b8a9664142b80ae74c113ea",
+      "name": "河湾镇真相重演：从剪辑影像到物理铁证",
+      "timeline_years": "1997—1998",
+      "main_opponent": "卡尔·斯特林（奥瑞恩集团首席法务）",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS04"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "艾琳·沃特曼",
+        "卡尔·斯特林",
+        "瑟琳娜",
+        "公证员哈罗德",
+        "七位见证人"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用剪辑后的1979年法庭片段，将麦珂描绘为“精神崩溃、无法管理资产”的疯癫者，试图剥夺其监护权及《静默增益》版权；同时切断原始录像带来源，制造证据灭失假象。",
+      "prev_life_tragedy": "前世因未掌握原始录像带存放位置，被剪辑影像误导，导致公众舆论一边倒，最终失去对核心资产的掌控，家族声誉扫地。",
+      "info_gap_from_prev_life": "知晓1979年11月17日午后三点，河湾镇法院第三排铁柜中存有未被剪辑的原始录像带；且清楚七位关键见证人（含当年书记员与两名旁听学生）的现居地址。",
+      "why_previous_life_failed": "过度依赖现代数字取证思维，忽视了物理介质（磁带、纸质笔记）在当时的唯一性，且未提前锁定证人，导致证据链断裂。",
+      "preemptive_avoidance": "麦珂重生后提前三周携带公证员哈罗德前往新泽西废弃仓库，提取昆廷导演手写调度笔记复写件，并同步联系七位见证人签署确认书。",
+      "bait_and_evidence": "卡尔故意在听证会前释放“麦珂精神失常”的假新闻，诱使麦珂情绪失控；麦珂则反其道而行，出示未经剪辑的1979年法庭录像带原件（经公证封存）及昆廷亲笔调度笔记，证明当时麦珂神志清醒且行为逻辑严密。",
+      "comic_villain_behavior": "卡尔·斯特林在听证会上声嘶力竭地指责麦珂“伪造证据”，却不知自己提交的“剪辑版”录像带在投影仪上出现严重磁头磨损导致的画面撕裂，而麦珂展示的原始带画质清晰，形成荒诞对比；卡尔甚至试图当场抢夺原始带，却被公证员以法律程序拦下，场面滑稽。",
+      "villain_loss": "卡尔团队因提交伪证及恶意剪辑行为被行业自律委员会暂停从业资格两年，奥瑞恩集团股价单日下跌12%，负面宣传攻势被迫全面叫停。",
+      "protagonist_gain": "麦珂正式收回所有版权控制权，七位见证人签字簿完成法律归档，《静默增益》地图卡预售突破150万张，实现商业与公益双重闭环。",
+      "relationship_change": "瑟琳娜正式进入核心决策层，成为麦珂在家族治理中的稳固战友；艾琳·沃特曼因操作得当，获得麦珂完全信任，负责后续技术落地。",
+      "continuity_writes": [
+        "维克多·兰斯意识到常规手段失效，开始酝酿‘数据污染’方案；S95-B-RW样带线索被麦珂标记为高价值资产。",
+        "康拉德医生未在1997-1998年登场，其角色由虚构的‘奥瑞恩法务部技术顾问’替代，该顾问因伪造数据被揭露。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_018_guardianship_status",
+          "state_key": "guardianship_status",
+          "from": "disputed_by_claims",
+          "to": "legally_established_primary",
+          "irreversible": true,
+          "evidence": "COURT_TAPES_1979_NOV_17_ORIGINAL + WITNESS_BOOK_1979",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REPUTATION_AUREON_LAW_TEAM",
+          "state_key": "professional_standing",
+          "from": "active_legal_counsel",
+          "to": "suspended_for_fraud",
+          "irreversible": true,
+          "evidence": "HEARING_RECORD_EC166",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_4E24DD1EEE76__DBD820C705DB",
+          "state_key": "decision_authority",
+          "from": "contractual_partner",
+          "to": "core_decision_maker",
+          "irreversible": true,
+          "evidence": "FAMILY_MEETING_MINUTES_1997_DEC",
+          "effect_type": "relationship_change",
+          "source_entity_label": "SERENA_CORE_ROLE"
+        }
+      ],
+      "historical_anchor_ids": [
+        "ANCHOR_1979_NOV_17_COURT_SESSION",
+        "ANCHOR_1997_WINTER_HEARING"
+      ],
+      "cluster_outcome": "奥瑞恩集团因伪造证据丑闻曝光导致股价下跌12%，卡尔团队信誉破产被迫暂停负面宣传；麦珂成功取回所有版权控制权，《静默增益》地图卡预售突破150万张，实现商业与公益双重闭环；家庭治理结构升级，瑟琳娜正式进入核心决策层；维克多·兰斯意识到常规手段失效，开始酝酿‘数据污染’方案；S95-B-RW样带线索被麦珂标记为高价值资产，成为下一阶段揭穿医疗造假的唯一钥匙。",
+      "next_event_hook": "随着1979年真相的揭开，奥瑞恩集团决定不再正面硬刚，转而利用维克多·兰斯的建议，着手策划针对麦珂健康数据的‘数据污染’方案，试图通过伪造医疗记录来动摇其公众形象，而那盒被漏掉的S95-B-RW样带将成为下一阶段揭穿世纪转换期医疗模型造假的关键钥匙。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 331,
+          "timeline_start": "1997-12-20",
+          "timeline_end": "1997-12-20",
+          "scene": "银湾市《午夜星轨》演播室",
+          "chapter_goal": "艾琳在纪录片播出中插入未被剪掉的工坊少年作画原帧，引发公众初步关注；麦珂在新泽西仓库提取昆廷手写调度笔记。",
+          "chapter_title": "被遗忘的画框与沉默的笔记",
+          "participants": [
+            "麦珂",
+            "艾琳·沃特曼",
+            "公证员哈罗德",
+            "新泽西仓库管理员"
+          ],
+          "opening_conflict": "奥瑞恩集团散布麦珂“精神不稳定”谣言，试图干扰纪录片播出；麦珂需在不惊动对方的情况下提取关键物证。",
+          "info_gap_use": "麦珂利用重生记忆，精准定位仓库密封箱位置，避开奥瑞恩安插的监视人员。",
+          "opponent_reaction": "卡尔得知麦珂出现在新泽西，误以为其要销毁证据，紧急派遣人手追踪，却扑空。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市《午夜星轨》演播室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "镜头切至艾琳手中的胶片盘"
+            },
+            {
+              "sequence": 2,
+              "location": "新泽西州废弃仓库",
+              "is_primary": false,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂推开生锈的铁门"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_312_CHORUS_SIGNAL_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为背景资料辅助艾琳剪辑"
+            },
+            {
+              "artifact_id": "ART_313_QUINTIN_NOTEBOOK_COPY",
+              "timeline_scope": "current",
+              "display_name": "昆廷导演手写调度笔记复写件",
+              "kind": "visual_evidence"
+            }
+          ],
+          "action_sequence": [
+            "艾琳在直播中突然插入一段1977年工坊少年作画的原始胶片，画面中少年专注神情与旁白形成强烈反差，引发观众热议。",
+            "麦珂带领公证员哈罗德潜入新泽西废弃仓库，找到昆廷藏匿的密封箱，取出手写调度笔记，确认为真迹。",
+            "奥瑞恩眼线发现异常，但为时已晚，麦珂已带着证据离开。",
+            "落实本章可见结果：《午夜星轨》播出片段引发网络讨论，公众开始质疑奥瑞恩剪辑内容的真实性。"
+          ],
+          "visible_payoff": "《午夜星轨》播出片段引发网络讨论，公众开始质疑奥瑞恩剪辑内容的真实性。",
+          "ending": "麦珂回到安全屋，将昆廷笔记与公证文件归档，准备迎接即将到来的听证会。",
+          "must_include": [
+            "工坊少年作画原帧",
+            "昆廷手写调度笔记",
+            "公证员在场"
+          ],
+          "must_not_include": [
+            "康拉德医生",
+            "未来科技词汇"
+          ],
+          "detailed_synopsis": "第331章聚焦于舆论铺垫与物证获取。艾琳在《午夜星轨》特别季中，巧妙地将一段被奥瑞恩集团刻意剪掉的1977年工坊少年作画原帧插入纪录片。画面中，少年专注创作的神情与旁白描述的“混乱”形成鲜明对比，瞬间引爆公众媒体（模拟为当时的广播热线与报纸专栏），公众开始质疑奥瑞恩的剪辑动机。与此同时，麦珂利用重生记忆，精准导航至新泽西州某废弃仓库。他避开奥瑞恩安插的监视人员，在公证员哈罗德的见证下，撬开昆廷导演藏匿的密封箱，取出了那份被遗忘的手写调度笔记。这份笔记详细记录了1979年法庭当天的真实调度流程，直接驳斥了奥瑞恩声称的“麦珂失控”叙事。卡尔得知消息后勃然大怒，却因证据已被转移而无法拦截。本章通过双线叙事，展示了麦珂如何利用信息差，在舆论和实物层面同时取得小胜。",
+          "duplicate_artifact_creates_reclassified": [
+            {
+              "artifact_id": "ART_313_QUINTIN_NOTEBOOK_COPY",
+              "timeline_scope": "current",
+              "display_name": "昆廷导演手写调度笔记复写件",
+              "kind": "visual_evidence"
+            }
+          ]
+        },
+        {
+          "chapter_id": 332,
+          "timeline_start": "1997-12-25",
+          "timeline_end": "1997-12-25",
+          "scene": "行业自律委员会听证会现场",
+          "chapter_goal": "麦珂当庭播放1979年原始法庭录像，彻底粉碎奥瑞恩的“失控”叙事，卡尔团队因伪证被处罚。",
+          "chapter_title": "铁柜里的真相与崩塌的谎言",
+          "participants": [
+            "麦珂",
+            "卡尔·斯特林",
+            "七位见证人",
+            "行业自律委员会成员",
+            "瑟琳娜"
+          ],
+          "opening_conflict": "卡尔在听证会上出示伪造的文件和剪辑版录像，指控麦珂精神失常，企图永久剥夺其版权。",
+          "info_gap_use": "麦珂当众播放1979年11月17日河湾镇法院原始录像，并出示七位见证人签字簿，证明当时自己神志清醒。",
+          "opponent_reaction": "卡尔在原始录像播放过程中脸色惨白，试图打断播放，却被公证员依法制止；随后被揭露伪造文件，陷入尴尬境地。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "行业自律委员会听证会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "投影仪启动，屏幕亮起"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_WITNESS_BOOK_1979",
+              "timeline_scope": "current",
+              "display_name": "ART_WITNESS_BOOK_1979",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_WITNESS_BOOK_1979",
+              "timeline_scope": "current",
+              "purpose": "展示七位见证人签字，确保证据链完整",
+              "source_artifact_id": "WITNESS_BOOK_1979"
+            }
+          ],
+          "action_sequence": [
+            "卡尔在听证会上慷慨陈词，出示伪造的医疗报告和剪辑版录像，试图将麦珂描绘成无法管理资产的疯子。",
+            "麦珂冷静起身，请求播放1979年河湾镇法院原始录像。投影屏幕上，清晰的画面显示麦珂在法庭上条理清晰地陈述，眼神坚定，毫无精神异常迹象。",
+            "七位见证人（包括当年的书记员和两名旁听学生）依次上台签字确认，证明录像真实性。",
+            "卡尔试图抢夺原始录像带，被公证员依法拦下；随后被揭露其提交的伪造文件存在明显破绽。",
+            "行业自律委员会当场宣布卡尔团队因提交伪证被暂停从业资格两年。"
+          ],
+          "visible_payoff": "奥瑞恩集团“失控”叙事彻底破产，麦珂收回全部版权，瑟琳娜正式进入核心决策层。",
+          "ending": "听证会结束，麦珂站在人群中央，看着卡尔灰溜溜离场，心中平静如水。他知道，这只是开始，真正的风暴还在后面。",
+          "must_include": [
+            "原始法庭录像播放",
+            "七位见证人签字",
+            "卡尔被暂停资格"
+          ],
+          "must_not_include": [
+            "康拉德医生",
+            "未来科技词汇"
+          ],
+          "detailed_synopsis": "第332章是高潮反击。听证会现场气氛紧张，卡尔·斯特林利用其资深法务身份，出示了一系列伪造的医疗报告和被剪辑的录像带，试图将麦珂定性为“精神不稳定者”，从而合法剥夺其版权。然而，麦珂早有准备。他冷静地请求播放1979年11月17日河湾镇法院的原始录像。当投影仪亮起，清晰的历史画面重现：年轻的麦珂在法庭上条理清晰、逻辑严密地陈述事实，眼神坚定，毫无疯癫之态。紧接着，七位关键见证人——包括当年的法庭书记员和两名旁听学生——依次上台，在公证员的监督下签署确认书，证明录像的真实性。卡尔的脸色瞬间变得惨白，他试图打断播放或抢夺证据，但被公证员依法制止。随后，调查组发现卡尔提交的伪造文件存在明显破绽，行业自律委员会当场宣布对其团队暂停从业资格两年。奥瑞恩集团的“失控”叙事彻底崩塌，麦珂不仅收回了所有版权控制权，还让瑟琳娜正式进入核心决策层，确立了家庭治理的新格局。卡尔的失败不仅是法律的制裁，更是道德与信誉的彻底破产。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_TAPES_1979_NOV_17_ORIGINAL",
+              "timeline_scope": "previous_life",
+              "purpose": "当庭播放，还原历史真相",
+              "source_artifact_id": "COURT_TAPES_1979_NOV_17_ORIGINAL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC167",
+      "chapter_span": [
+        333,
+        334
+      ],
+      "source_event_direction": "前世具体受害：前世地图卡发售因数据造假被强制下架，公益资金链断裂。；本事件独有的前世信息差：已知悉维克多销毁胶片时疏忽保留S95-B-RW样带线索。；今生提前动作：瑟琳娜联合苏菲亚将地图卡刮开机制与离线微缩胶片索引绑定。；第333章可见小赢：预售首日突破五十万张，四十三处工坊收到首批声音投稿。；第334章新交锋：奥瑞恩试图通过算法推荐屏蔽地图卡购买页面，被艾琳公开技术日志。；阻力方永久现实损失：奥瑞恩股价单日下跌八%，虚假‘失控’叙事彻底失去公信力。；主角现实收益：《静默增益》实现商业与公益双重闭环，家庭治理结构升级。；不可逆结算键：EC167_Geo_Map_Sales_Surge；接回死亡控制主线：FS05_U_Disk_Closure",
+      "source_event_direction_sha256": "7a955f047bcfaa8af37ac987ac3563589340fd6f2e45a05b5f54e7b3e6767831",
+      "source_macro_sha256": "91e47b62e3eb2f2d0c504f4c894438060065f80d2b8a9664142b80ae74c113ea",
+      "name": "静默增益：刮开式地图与算法围剿",
+      "timeline_years": "1997—1998",
+      "main_opponent": "奥瑞恩集团（代理方：维克多·兰斯）",
+      "opposition_type": "institutional",
+      "event_type": "finance_business",
+      "solution_type": "market_result",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS04"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜",
+        "艾琳·沃特曼",
+        "苏菲亚",
+        "卡尔团队代表"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用当时新兴的“推荐算法”技术，试图在各大电子公告板（BBS）和早期网络门户屏蔽《静默增益》地图卡的购买入口，并散布“地图卡数据造假、无法兑现公益承诺”的谣言。",
+      "prev_life_tragedy": "前世地图卡发售初期因数据被篡改导致服务器崩溃，公益资金链断裂，麦珂被指控欺诈，最终项目被迫下架，七位见证人签字簿也被作为伪证销毁。",
+      "info_gap_from_prev_life": "麦珂已知悉维克多·兰斯在1995年销毁胶片时的疏忽细节，锁定包含篡改心电图基线模拟录音的S95-B-RW样带被意外保留的线索；同时预判奥瑞恩将利用当时的技术漏洞进行软性封杀。",
+      "why_previous_life_failed": "前世过度依赖中心化服务器存储数据，且未建立物理介质与数字端的离线双重验证机制，导致一旦后台被篡改，所有证据即刻失效。",
+      "preemptive_avoidance": "瑟琳娜联合苏菲亚提前将地图卡的“刮开式”互动机制与离线微缩胶片索引绑定，用户需刮开涂层查看微缩胶片上的地理坐标，再前往实体工坊上传声音，形成“物理-数字”闭环，不依赖实时远程档案库验证。",
+      "bait_and_evidence": "麦珂故意在发布会现场展示一张“故障”地图卡，诱使对手攻击其技术缺陷，实则该卡片内置了不可复制的物理防伪层和独立的微缩胶片索引，奥瑞恩的攻击反而暴露了其无法理解物理介质的傲慢。",
+      "comic_villain_behavior": "卡尔团队代表在听证会上声嘶力竭地指责麦珂使用“过时技术”，却不知自己引以为傲的“实时数据监控”正是被麦珂利用来反向追踪其虚假流量来源的陷阱，最后不得不承认连自己的服务器都打不开地图卡页面。",
+      "villain_loss": "奥瑞恩股价单日下跌八%，虚假‘失控’叙事彻底失去公信力，其利用算法屏蔽的手段被公开后引发公众反感，被迫暂停负面宣传。",
+      "protagonist_gain": "《静默增益》实现商业与公益双重闭环，预售突破150万张，家庭治理结构升级，瑟琳娜正式进入核心决策层。",
+      "relationship_change": "瑟琳娜正式进入核心决策层，成为麦珂在家族治理中的稳固战友；艾琳·沃特曼因操作得当，获得麦珂完全信任，负责后续技术落地。",
+      "continuity_writes": [
+        "1997年冬，麦珂在河湾镇档案馆调取1979年录像带的同时，指示瑟琳娜完成地图卡物理机制的最终测试。",
+        "维克多·兰斯在得知地图卡采用“刮开式”设计后，嘲笑其为“复古垃圾”，却未意识到这是针对当时网络审查最完美的反制。",
+        "S95-B-RW样带的线索被麦珂标记为高价值资产，暂时封存于新泽西州废弃仓库的密封箱内，等待下一步行动。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_019:copyright_control_EC163",
+          "state_key": "commercial_verification_status",
+          "from": "suspected_fraud",
+          "to": "physically_verified_market_success",
+          "irreversible": true,
+          "evidence": "MAP_CARD_PHYSICAL_INDEX_LOG + BBS_TRAFFIC_ANALYSIS",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "FIN_AUREON_STOCK_1997",
+          "state_key": "market_confidence",
+          "from": "stable",
+          "to": "crashed_due_to_exposure",
+          "irreversible": false,
+          "evidence": "STOCK_DROP_REPORT_DEC_1997",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_4E24DD1EEE76__DBD820C705DB",
+          "state_key": "decision_authority__extension_EC167",
+          "from": "none",
+          "to": "core_decision_maker",
+          "irreversible": true,
+          "evidence": "STRATEGY_IMPLEMENTATION_SUCCESS_EC167",
+          "effect_type": "relationship_change",
+          "source_state_key": "decision_authority",
+          "source_entity_label": "SERENA_CORE_ROLE"
+        }
+      ],
+      "historical_anchor_ids": [
+        "1997_Winter_Map_Sales",
+        "BBS_Traffic_Log_Dec_1997"
+      ],
+      "cluster_outcome": "奥瑞恩集团因伪造证据丑闻曝光导致股价下跌12%，卡尔团队信誉破产被迫暂停负面宣传；麦珂成功取回所有版权控制权，《静默增益》地图卡预售突破150万张，实现商业与公益双重闭环；家庭治理结构升级，瑟琳娜正式进入核心决策层；维克多·兰斯意识到常规手段失效，开始酝酿‘数据污染’方案；S95-B-RW样带线索被麦珂标记为高价值资产，成为下一阶段揭穿医疗造假的唯一钥匙。",
+      "next_event_hook": "随着1979年真相的揭开，奥瑞恩集团决定不再正面硬刚，转而利用维克多·兰斯的建议，着手策划针对麦珂健康数据的‘数据污染’方案，试图通过伪造医疗记录来动摇其公众形象，而那盒被漏掉的S95-B-RW样带将成为下一阶段揭穿世纪转换期医疗模型造假的关键钥匙。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 333,
+          "timeline_start": "1997-12-25",
+          "timeline_end": "1997-12-27",
+          "scene": "银湾市发布会现场",
+          "chapter_goal": "启动《静默增益》地图卡预售，验证物理介质与数字互动的闭环机制，达成首日五十万张销量目标。",
+          "chapter_title": "刮开的秘密",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "苏菲亚",
+            "工坊负责人",
+            "首批购买者"
+          ],
+          "opening_conflict": "奥瑞恩集团在发布会前夜散布谣言，称地图卡数据无法同步，试图劝退投资者和公众。",
+          "info_gap_use": "麦珂利用重生记忆，提前布局“刮开式”微缩胶片索引，确保即使网络中断，交易依然有效。",
+          "opponent_reaction": "卡尔团队代表在发布会现场质疑技术的可行性，声称“没有实时远程档案库验证就是废纸”。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市发布会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂拿起一张地图卡，当众刮开涂层，展示背后的微缩胶片编号。"
+            },
+            {
+              "sequence": 2,
+              "location": "河湾镇工坊",
+              "is_primary": false,
+              "temporal_mode": "current",
+              "transition_cue": "四十三处工坊同时收到首批声音投稿，系统自动匹配微缩胶片坐标。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_333_MAP_CARD_BATCH_01",
+              "timeline_scope": "current",
+              "display_name": "《静默增益》首批刮开式地图卡",
+              "kind": "physical_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_312_CHORUS_SIGNAL_LOG",
+              "timeline_scope": "current",
+              "purpose": "用于验证声音投稿与地理坐标的匹配度。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在发布会上演示刮开地图卡，展示微缩胶片上的地理坐标。",
+            "瑟琳娜宣布工坊已准备好接收声音投稿，无需实时网络连接。",
+            "苏菲亚带领团队在工坊现场验证第一笔交易，确认系统运行正常。",
+            "奥瑞恩代表试图打断发布会，但被观众的热情淹没。"
+          ],
+          "visible_payoff": "预售首日突破五十万张，四十三处工坊收到首批声音投稿，谣言不攻自破。",
+          "ending": "夜幕降临，工坊灯火通明，麦珂看着堆积如山的订单，知道这场仗赢了一半。",
+          "must_include": [
+            "刮开式机制",
+            "微缩胶片索引",
+            "首日销量五十万"
+          ],
+          "must_not_include": [
+            "远程档案库技术",
+            "公众媒体",
+            "二维码"
+          ],
+          "detailed_synopsis": "1997年12月1日，银湾市发布会现场，奥瑞恩集团代表卡尔试图以“缺乏实时远程档案库验证”为由，质疑《静默增益》地图卡的合法性。麦珂从容不迫，当场刮开一张地图卡，露出背后精密的微缩胶片，上面标注着精确的地理坐标。他解释道：“真正的公益不需要远程档案库的施舍，只需要物理世界的真实连接。”瑟琳娜随即宣布，全国四十三处工坊已准备就绪，无论网络是否通畅，用户只需刮开涂层，将声音录制在指定频率的磁带上，即可参与公益计划。当晚，河湾镇工坊灯火通明，首批五十万张地图卡瞬间售罄，四十三处工坊同时收到声音投稿，系统自动匹配成功。奥瑞恩的谣言在事实面前显得苍白无力，公众对这种“去中心化”的公益模式表现出极大的热情。"
+        },
+        {
+          "chapter_id": 334,
+          "timeline_start": "1997-12-28",
+          "timeline_end": "1997-12-30",
+          "scene": "奥瑞恩集团总部",
+          "chapter_goal": "揭露奥瑞恩利用算法屏蔽购买页面的行为，反击其虚假叙事，巩固市场地位。",
+          "chapter_title": "算法的盲区",
+          "participants": [
+            "艾琳·沃特曼",
+            "麦珂",
+            "奥瑞恩技术主管",
+            "记者"
+          ],
+          "opening_conflict": "奥瑞恩集团利用技术手段屏蔽地图卡购买页面，并制造“系统崩溃”假象，试图嫁祸给麦珂。",
+          "info_gap_use": "艾琳利用重生记忆，提前准备了技术日志，证明屏蔽行为来自奥瑞恩内部。",
+          "opponent_reaction": "奥瑞恩技术主管试图掩盖日志，声称是“第三方攻击”，却被艾琳当场揭穿。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "奥瑞恩集团总部",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "艾琳闯入奥瑞恩技术部门，要求查看服务器日志。"
+            },
+            {
+              "sequence": 2,
+              "location": "临时新闻发布会",
+              "is_primary": false,
+              "temporal_mode": "current",
+              "transition_cue": "艾琳公开技术日志，向媒体展示奥瑞恩的屏蔽行为。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_333_MAP_CARD_BATCH_01",
+              "timeline_scope": "current",
+              "purpose": "作为被屏蔽对象的参照物。"
+            }
+          ],
+          "action_sequence": [
+            "艾琳潜入奥瑞恩技术部门，获取服务器日志。",
+            "日志显示奥瑞恩主动屏蔽了地图卡购买页面，并制造了“系统崩溃”假象。",
+            "艾琳召开临时新闻发布会，公开日志内容，揭露奥瑞恩的阴谋。",
+            "媒体纷纷报道，奥瑞恩股价应声下跌。"
+          ],
+          "visible_payoff": "奥瑞恩股价单日下跌八%，虚假‘失控’叙事彻底失去公信力。",
+          "ending": "麦珂站在新闻屏幕前，看着奥瑞恩的股价曲线一路走低，心中明白，这只是开始。",
+          "must_include": [
+            "技术日志公开",
+            "股价下跌",
+            "算法屏蔽"
+          ],
+          "must_not_include": [
+            "远程档案库技术",
+            "公众媒体",
+            "二维码"
+          ],
+          "detailed_synopsis": "1997年12月4日，奥瑞恩集团发现地图卡销售火爆，便利用其掌握的技术优势，在各大电子公告板和早期网络门户上屏蔽了购买页面，并制造“系统崩溃”的假象，试图将责任推给麦珂。然而，艾琳·沃特曼凭借重生记忆，早已预料到这一招，她潜入奥瑞恩技术部门，获取了关键的服务器日志。日志清晰显示，屏蔽指令来自奥瑞恩内部，而非外部攻击。艾琳立即召开临时新闻发布会，向媒体公开了这些日志，揭露了奥瑞恩的阴谋。消息一出，舆论哗然，公众对奥瑞恩的信任度急剧下降。当天收盘，奥瑞恩股价单日下跌八%，其虚假的“失控”叙事彻底失去公信力。麦珂站在新闻屏幕前，看着奥瑞恩的股价曲线一路走低，心中明白，这只是开始，真正的较量才刚刚开始。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC168",
+      "chapter_span": [
+        335,
+        336
+      ],
+      "source_event_direction": "前世具体受害：前世医疗模型数据被篡改，导致麦珂在临终前被误诊延误治疗。；本事件独有的前世信息差：掌握1995年维克多亲口指示篡改心电图基线的模拟录音细节。；今生提前动作：麦珂指派莉薇娅·普莱斯对S95-B-RW样带进行无损物理封存。；第335章可见小赢：独立实验室复现样带波形，确认1995年数据存在人为基线偏移。；第336章新交锋：维克多·兰斯试图以‘设备故障’为由销毁备份，被现场记者全程直播。；阻力方永久现实损失：维克多常规手段失效，被迫转向更隐蔽的‘数据污染’方案。；主角现实收益：锁定S95-B-RW为高价值资产，为P08揭穿医疗造假埋下唯一钥匙。；不可逆结算键：EC168_ECG_Fake_Pattern_Confirmed；接回死亡控制主线：FS06_Fifth_Second_Mechanism",
+      "source_event_direction_sha256": "76e891dc46d72298d54cf60c5391fa43fcafc1aceefa24c4208a6131a09b6c02",
+      "source_macro_sha256": "91e47b62e3eb2f2d0c504f4c894438060065f80d2b8a9664142b80ae74c113ea",
+      "name": "S95-B-RW医疗造假样带与基线偏移确认",
+      "timeline_years": "1997—1998",
+      "main_opponent": "维克多·兰斯 (Victor Lance)",
+      "opposition_type": "technical",
+      "event_type": "health_safety",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS04"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "维克多·兰斯",
+        "现场记者团"
+      ],
+      "fictional_obstacle": "维克多试图利用奥瑞恩集团内部的技术借口，将关键的S95-B-RW物理备份定性为‘设备故障导致的无效数据’并强制销毁，以此切断麦珂对前世医疗误诊真相的追溯路径。",
+      "prev_life_tragedy": "前世麦珂在临终前因医疗模型数据被篡改（心电图基线人为上移），导致医生误判其心脏状态，延误了最佳抢救时机。",
+      "info_gap_from_prev_life": "麦珂掌握1995年维克多亲口指示篡改基线的模拟录音细节，且知晓该S95-B-RW样带因维克多的疏忽未被完全销毁，而是作为‘废片’被遗忘在旧仓库。",
+      "why_previous_life_failed": "前世麦珂仅依赖数字记录，未意识到物理介质中隐藏的模拟信号偏差，且在生命最后阶段缺乏对原始波形的独立复现能力。",
+      "preemptive_avoidance": "麦珂提前指派莉薇娅·普莱斯对S95-B-RW样带进行无损物理封存，并联系第三方独立实验室进行盲测，确保在维克多动手前完成波形复现。",
+      "bait_and_evidence": "维克多故意散布谣言称样本已损坏，诱导麦珂团队公开展示；麦珂则利用独立实验室复现的波形图作为铁证，直接对比1995年标准基线与当前异常数据。",
+      "comic_villain_behavior": "维克多试图以‘技术事故’为由强行带走样带销毁，却在众目睽睽之下因操作不当导致磁带卡死，反而暴露了他急于灭口的慌张与无知。",
+      "villain_loss": "维克多常规手段失效，被迫承认无法通过简单销毁掩盖真相，被迫转向更隐蔽、高风险的‘数据污染’方案，彻底失去舆论主动权。",
+      "protagonist_gain": "锁定S95-B-RW为高价值资产，确认1995年数据存在人为基线偏移，为P08揭穿世纪转换期医疗造假埋下唯一钥匙。",
+      "relationship_change": "麦珂与莉薇娅·普莱斯的信任度升级，确立后者为技术取证核心负责人；瑟琳娜正式介入医疗合规审查，家族治理结构进一步向专业化转型。",
+      "continuity_writes": [
+        "1997年冬，奥瑞恩集团股价受《静默增益》地图卡大卖影响虽略有反弹，但内部对于医疗数据的控制权争夺加剧。",
+        "维克多·兰斯意识到物理证据链无法被轻易抹除，开始策划针对麦珂健康数据的‘全介质抹除计划’。",
+        "S95-B-RW样带的发现标志着战争从舆论战转向技术取证战，麦珂不再被动防守，而是主动出击。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "asset",
+          "entity_id": "EVID_S95_B_RW_RAW_TAPE",
+          "state_key": "integrity_status",
+          "from": "suspected_fraud",
+          "to": "physically_verified_fake_pattern",
+          "irreversible": true,
+          "evidence": "LAB_REPRODUCTION_LOG_EC168 + BASELINE_SHIFT_ANALYSIS",
+          "effect_type": "protagonist_gain",
+          "source_domain": "evidence"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "STRAT_VICTOR_COUNTER_MEASURE",
+          "state_key": "approach_shift",
+          "from": "physical_destruction",
+          "to": "data_pollution_concept",
+          "irreversible": false,
+          "evidence": "VICTOR_ABANDONMENT_OF_DIRECT_DESTROY_ATTEMPT",
+          "effect_type": "villain_loss",
+          "source_domain": "strategy"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_4E24DD1EEE76__DBD820C705DB",
+          "state_key": "medical_compliance_authority",
+          "from": "none",
+          "to": "active_reviewer",
+          "irreversible": true,
+          "evidence": "SERENA_INTERVENTION_IN_MEDICAL_AUDIT",
+          "effect_type": "relationship_change",
+          "source_entity_label": "SERENA_CORE_ROLE"
+        }
+      ],
+      "historical_anchor_ids": [
+        "1995_VICTOR_DIRECTIVE_AUDIO",
+        "1979_COURT_TAPES_ARCHIVE"
+      ],
+      "cluster_outcome": "独立实验室成功复现S95-B-RW样带波形，确证1995年数据存在人为基线偏移；维克多试图销毁备份的计划在直播镜头前失败，被迫转向‘数据污染’策略；麦珂正式掌握医疗造假的关键物证，家庭治理结构升级，瑟琳娜获得医疗审计权。",
+      "next_event_hook": "随着S95-B-RW样带线索的确立，奥瑞恩集团决定不再正面硬刚，转而利用维克多·兰斯的建议，着手策划针对麦珂健康数据的‘数据污染’方案，试图通过伪造医疗记录来动摇其公众形象，而那盒被漏掉的S95-B-RW样带将成为下一阶段揭穿世纪转换期医疗模型造假的关键钥匙。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 335,
+          "timeline_start": "1997-12-30",
+          "timeline_end": "1997-12-30",
+          "scene": "废弃仓库B区",
+          "chapter_goal": "完成S95-B-RW样带的物理解封与波形复现，确认1995年数据异常。",
+          "chapter_title": "第335章：被遗忘的波形",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "独立实验室主任哈罗德",
+            "两名技术助理"
+          ],
+          "opening_conflict": "维克多·兰斯派出的‘清理小组’试图潜入仓库销毁剩余胶片，麦珂必须赶在他们之前完成关键数据的提取。",
+          "info_gap_use": "麦珂利用重生记忆中的存放位置，精准定位密封箱，避开维克多预设的监控盲区。",
+          "opponent_reaction": "维克多在远处指挥室通过窃听得知进度，下令立即启动‘设备故障’预案，准备制造混乱。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "废弃仓库B区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光骤亮，灰尘飞舞"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_328_LAB_WAVEFORM_LOG",
+              "timeline_scope": "current",
+              "display_name": "《S95-B-RW波形复现分析报告》",
+              "kind": "technical_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_327_S95_COPY_01",
+              "timeline_scope": "current",
+              "purpose": "作为核心样本进行物理读取"
+            }
+          ],
+          "action_sequence": [
+            "麦珂与莉薇娅进入仓库，迅速找到密封箱，避开陷阱。",
+            "哈罗德博士使用老式磁带机播放S95-B-RW，屏幕显示异常波形。",
+            "麦珂指出基线偏移特征，与前世记忆中的篡改细节吻合。",
+            "清理小组逼近，麦珂果断启动备用电源，切断外部连接。"
+          ],
+          "visible_payoff": "波形图上清晰显示出1995年人为上移的基线，证明数据被篡改。",
+          "ending": "分析报告打印完毕，麦珂将原件锁入保险柜，准备迎接下一轮反击。",
+          "must_include": [
+            "波形图异常细节",
+            "哈罗德的专业鉴定",
+            "清理小组的逼近"
+          ],
+          "must_not_include": [
+            "维克多本人出场",
+            "媒体直播画面"
+          ],
+          "detailed_synopsis": "1997年11月15日上午，新泽西州废弃仓库内，麦珂带着莉薇娅和哈罗德博士秘密进入B区。根据前世记忆，她精准避开了维克多预设的监控死角，找到了藏匿S95-B-RW样带的密封箱。莉薇娅小心翼翼地取出磁带，哈罗德博士将其接入一台经过校准的老式磁带分析仪。随着磁头转动，屏幕上跳动的波形瞬间引起了麦珂的注意——基线明显高于标准值，呈现出人为上移的特征。哈罗德震惊地确认：“这不是自然波动，这是典型的模拟信号篡改。”与此同时，远处的维克多通过窃听得知消息，脸色阴沉，立即命令清理小组潜入仓库销毁剩余胶片。麦珂早有预料，迅速启动备用电源，切断了仓库与外界的连接，确保数据不被远程擦除。当清理小组破门而入时，麦珂已将分析报告打印并锁入保险柜，只留下满屋的警报声和一脸错愕的敌人。",
+          "source_timeline_start": "1997年11月15日 上午",
+          "source_timeline_end": "1997年11月15日 下午"
+        },
+        {
+          "chapter_id": 336,
+          "timeline_start": "1997-12-30",
+          "timeline_end": "1997-12-30",
+          "scene": "仓库外广场",
+          "chapter_goal": "在记者面前揭露维克多的销毁企图，将技术证据转化为公众舆论。",
+          "chapter_title": "第336章：直播下的溃败",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "现场记者团",
+            "瑟琳娜",
+            "哈罗德"
+          ],
+          "opening_conflict": "维克多试图以‘设备故障’为由强行带走样带销毁，引发记者围堵。",
+          "info_gap_use": "麦珂提前安排记者全程直播，让维克多的每一个动作都暴露在公众视野下。",
+          "opponent_reaction": "维克多试图用‘技术事故’搪塞，却在操作失误中暴露了慌乱。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "仓库外广场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "闪光灯亮起，麦珂风对准"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_328_LAB_WAVEFORM_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为证据展示给记者"
+            }
+          ],
+          "action_sequence": [
+            "维克多带人到达现场，声称样本已损坏，要求销毁。",
+            "记者们蜂拥而上，要求麦珂解释情况。",
+            "麦珂展示波形报告，揭露维克多试图销毁证据的企图。",
+            "维克多亲自上手操作，却因操作不当导致磁带卡死，场面滑稽。",
+            "瑟琳娜出面，宣布启动医疗合规调查。"
+          ],
+          "visible_payoff": "维克多销毁证据的企图被直播曝光，公众哗然，其信誉受损。",
+          "ending": "维克多狼狈离场，承诺后续处理，实则被迫转向更隐蔽的策略。",
+          "must_include": [
+            "直播镜头",
+            "维克多的操作失误",
+            "瑟琳娜的介入"
+          ],
+          "must_not_include": [
+            "逮捕行动",
+            "刑事指控"
+          ],
+          "detailed_synopsis": "夜幕降临，仓库外广场上灯火通明，数十家媒体的记者早已等候多时。维克多·兰斯带着几名助手匆匆赶到，声称S95-B-RW样带因‘设备故障’已无法读取，要求立即销毁。然而，他低估了麦珂的准备。麦珂手持刚刚打印的波形分析报告，站在直播镜头前，冷静地展示了1995年数据的人为基线偏移。维克多见状，恼羞成怒，试图亲自上前抢夺样带销毁，却在慌乱中操作失误，导致磁带在播放器中卡死，甚至引发了轻微的机械故障，引发现场一片哄笑。瑟琳娜此时走出人群，严肃地宣布奥瑞恩集团已启动内部医疗合规调查，并冻结了相关技术人员的权限。维克多看着镜头下自己狼狈的身影，意识到常规手段已彻底失效，只能灰溜溜地离开，心中盘算着更隐蔽的‘数据污染’方案。",
+          "source_timeline_start": "1997年11月15日 傍晚",
+          "source_timeline_end": "1997年11月15日 深夜"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC169",
+      "chapter_span": [
+        337,
+        338
+      ],
+      "source_event_direction": "前世具体受害：前世家庭决策层分裂，瑟琳娜未能进入核心圈导致资源分散。；本事件独有的前世信息差：清楚瑟琳娜作为共同起草人的专业意见可纳入家庭决策机制。；今生提前动作：麦珂在家庭信托会议上当众签署《教育共治备忘录》，赋予瑟琳娜否决权。；第337章可见小赢：瑟琳娜驳回奥瑞恩集团提出的不平等版权收购提案，保全家族资产。；第338章新交锋：部分股东质疑瑟琳娜资历，她直接调出二十年财务审计原始凭证反击。；阻力方永久现实损失：反对派股东因散布谣言被家族内部除名，无法再干预核心决策。；主角现实收益：家庭治理结构升级，瑟琳娜正式成为事业战友而非单纯契约伴侣。；不可逆结算键：EC169_Serena_Core_Decision_Entry；接回死亡控制主线：CHAR_4E24DD1EEE76_Boundary_Set",
+      "source_event_direction_sha256": "ef4a327a5ebc6e31ff76fd74c8e63271106f67a703fa02cb0d169d9cf721a9e9",
+      "source_macro_sha256": "91e47b62e3eb2f2d0c504f4c894438060065f80d2b8a9664142b80ae74c113ea",
+      "name": "共治备忘录签署与家族清洗",
+      "timeline_years": "1997—1998",
+      "main_opponent": "亚瑟·布莱克伍德（Arthur Blackwood）",
+      "opposition_type": "ally_resistance",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS04"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜",
+        "亚瑟·布莱克伍德",
+        "老律师哈罗德"
+      ],
+      "fictional_obstacle": "奥瑞恩集团代理人、家族信托股东代表亚瑟·布莱克伍德，试图以“女性缺乏商业决断力”为由，联合其他保守派股东否决瑟琳娜的《教育共治备忘录》，并强行通过一份不平等版权收购提案，意图架空麦珂夫妇。",
+      "prev_life_tragedy": "前世家庭决策层分裂，瑟琳娜因被排除在核心圈外，无法阻止资产被低价变卖，导致家族资源分散，最终在医疗危机中无力回天。",
+      "info_gap_from_prev_life": "麦珂清楚瑟琳娜作为共同起草人的专业意见可纳入家庭决策机制，且知道亚瑟·布莱克伍德过去二十年经手的财务凭证存在系统性做假账痕迹，这是他在前世从未察觉的致命漏洞。",
+      "why_previous_life_failed": "麦珂在前世过度依赖个人直觉，未将瑟琳娜的专业能力制度化，导致关键时刻无人能挡外部资本对家族资产的侵蚀。",
+      "preemptive_avoidance": "麦珂在会议开始前，当众签署《教育共治备忘录》，赋予瑟琳娜对重大资产处置的一票否决权，并提前让哈罗德律师将所有审计凭证归档于公证处。",
+      "bait_and_evidence": "亚瑟·布莱克伍德抛出伪造的“第三方评估报告”，声称瑟琳娜的否决权将导致公司破产；瑟琳娜当场调出二十年财务审计原始凭证，逐条驳斥其指控，并指出亚瑟本人经手账目的巨额不明缺口。",
+      "comic_villain_behavior": "亚瑟·布莱克伍德在证据面前仍嘴硬，试图用“商业直觉”掩盖数据造假，甚至拿出过时的计算器按得震天响，结果算出的数字连他自己都信不过，引发在场股东哄笑。",
+      "villain_loss": "反对派股东因散布谣言及试图篡改账目被家族内部除名，亚瑟·布莱克伍德永久失去干预核心决策的资格，奥瑞恩集团的代理计划彻底破产。",
+      "protagonist_gain": "家庭治理结构升级，瑟琳娜正式成为事业战友而非单纯契约伴侣，获得家族资产绝对控制权；麦珂成功保全所有版权，为《静默增益》地图卡发售扫清内部障碍。",
+      "relationship_change": "麦珂与瑟琳娜的信任度从“夫妻”升级为“生死战友”，确立瑟琳娜为核心决策者之一；家族成员对瑟琳娜的尊重度大幅提升。",
+      "continuity_writes": [
+        "亚瑟·布莱克伍德并非原著人物，而是本组新创的架空对手，承接前世康拉德的时间线错误，符合1997年家族信托背景。",
+        "瑟琳娜的反击完全基于今生形成的物理凭证，非重生记忆直接作用。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_SERENA_CORE_DECISION",
+          "state_key": "authority_level",
+          "from": "none",
+          "to": "absolute_veto_power",
+          "irreversible": true,
+          "evidence": "EDUCATION_CO_GOVERNANCE_MEMO_SIGNED_EC169",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_FAMILY_TRUST_CONTROL",
+          "state_key": "security_status",
+          "from": "vulnerable_to_acquisition",
+          "to": "fully_protected",
+          "irreversible": true,
+          "evidence": "FINANCIAL_AUDIT_REVERSAL_EC169",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "STRAT_AARTHUR_INFLUENCE",
+          "state_key": "access_level",
+          "from": "board_member",
+          "to": "disqualified_exile",
+          "irreversible": true,
+          "evidence": "SUBMISSION_OF_FRAUDULENT_REPORTS_DISMISSED",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1997_BOARD_MEETING_NOV"
+      ],
+      "cluster_outcome": "瑟琳娜驳回奥瑞恩集团提出的不平等版权收购提案，保全家族资产；部分股东质疑瑟琳娜资历，她直接调出二十年财务审计原始凭证反击；反对派股东因散布谣言被家族内部除名，无法再干预核心决策；家庭治理结构升级，瑟琳娜正式成为事业战友而非单纯契约伴侣。",
+      "next_event_hook": "随着1979年真相的揭开，奥瑞恩集团决定不再正面硬刚，转而利用维克多·兰斯的建议，着手策划针对麦珂健康数据的‘数据污染’方案，试图通过伪造医疗记录来动摇其公众形象，而那盒被漏掉的S95-B-RW样带将成为下一阶段揭穿世纪转换期医疗模型造假的关键钥匙。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 337,
+          "timeline_start": "1997-12-30",
+          "timeline_end": "1997-12-30",
+          "scene": "家族信托办公室会议室",
+          "chapter_goal": "签署《教育共治备忘录》，确立瑟琳娜否决权，挫败亚瑟的收购提案。",
+          "chapter_title": "否决权的诞生",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "亚瑟·布莱克伍德",
+            "老律师哈罗德",
+            "三位保守派股东"
+          ],
+          "opening_conflict": "亚瑟·布莱克伍德联合三位股东，以“女性缺乏商业决断力”为由，强烈反对瑟琳娜进入核心决策层，并拿出一份看似合法的“紧急收购协议”，要求立即出售《静默增益》地图卡版权以应对“潜在风险”。",
+          "info_gap_use": "麦珂利用前世记忆，深知亚瑟过往的财务做假习惯，故意在签字前引导全场关注其手中的“风险评估报告”，实则为陷阱。",
+          "opponent_reaction": "亚瑟·布莱克伍德面露喜色，认为麦珂即将陷入被动，开始长篇大论地阐述“商业理性”，试图用模糊的数据压倒瑟琳娜。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "家族信托办公室会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂将钢笔重重拍在桌上，打断亚瑟的演讲，宣布签署备忘录。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_337_MEMO_SIGNING",
+              "timeline_scope": "current",
+              "display_name": "《教育共治备忘录》签署现场记录",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_313_QUINTIN_NOTEBOOK_COPY",
+              "timeline_scope": "current",
+              "purpose": "作为麦珂引用昆廷调度逻辑的佐证，证明瑟琳娜的决策符合艺术创作规律。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂当众宣读并签署《教育共治备忘录》，明确赋予瑟琳娜一票否决权。",
+            "亚瑟·布莱克伍德惊怒交加，指责此举违法，并抛出“紧急收购协议”。",
+            "瑟琳娜冷静接过文件，并未直接反驳，而是示意哈罗德律师展示档案。",
+            "麦珂暗中观察亚瑟的微表情，确认其心虚。"
+          ],
+          "visible_payoff": "备忘录签署完成，瑟琳娜的法律地位瞬间提升，亚瑟的收购提案被当场搁置。",
+          "ending": "会议暂时休会，亚瑟·布莱克伍德面色铁青，准备发动第二波攻击。",
+          "must_include": [
+            "签署动作的具体描写",
+            "亚瑟的愤怒反应",
+            "瑟琳娜的冷静姿态"
+          ],
+          "must_not_include": [
+            "任何关于未来科技的描述",
+            "康拉德的出场"
+          ],
+          "detailed_synopsis": "1997年11月18日上午，银湾市曼哈顿的家族信托办公室内气氛凝重。麦珂坐在主位，面前摊开一份《教育共治备忘录》。亚瑟·布莱克伍德作为奥瑞恩集团的代理人，联合三位保守派股东，正声嘶力竭地反对瑟琳娜进入核心决策层，称其“缺乏商业经验”，并拿出一份“紧急收购协议”，企图低价吞并《静默增益》的版权。麦珂利用前世记忆，早已洞悉亚瑟的贪婪与虚伪。他不动声色地拿起钢笔，在全场注视下，郑重地在备忘录上签下自己的名字，并高声宣布：“从这一刻起，瑟琳娜拥有对家族一切重大资产处置的一票否决权。”亚瑟脸色大变，试图以“程序违规”为由叫停，却被麦珂冷冷打断。瑟琳娜没有说话，只是静静地看着亚瑟，眼神如刀。麦珂随后示意哈罗德律师打开保险柜，取出了亚瑟过去十年经手的所有财务凭证复印件，暗示即将开始的清算。",
+          "source_timeline_start": "1997年11月18日 上午9:00",
+          "source_timeline_end": "1997年11月18日 中午12:30"
+        },
+        {
+          "chapter_id": 338,
+          "timeline_start": "1997-12-30",
+          "timeline_end": "1997-12-30",
+          "scene": "家族信托办公室会议室",
+          "chapter_goal": "瑟琳娜利用二十年财务审计原始凭证，彻底击溃亚瑟的谣言攻势，将其除名。",
+          "chapter_title": "二十年账本的审判",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "亚瑟·布莱克伍德",
+            "老律师哈罗德",
+            "三位保守派股东"
+          ],
+          "opening_conflict": "亚瑟·布莱克伍德见第一招失败，恼羞成怒，散布谣言称瑟琳娜的否决权将导致公司资金链断裂，并煽动股东们投票罢免瑟琳娜。",
+          "info_gap_use": "麦珂提前布局，让瑟琳娜掌握了亚瑟过去二十年经手账目的所有原始凭证，这是前世他从未发现的致命漏洞。",
+          "opponent_reaction": "亚瑟·布莱克伍德试图用“商业直觉”掩盖数据造假，甚至拿出过时的计算器按得震天响，结果算出的数字连他自己都信不过，引发在场股东哄笑。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "家族信托办公室会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "瑟琳娜站起身，将一叠厚重的账本摔在亚瑟面前。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_338_FINANCIAL_LEDGER",
+              "timeline_scope": "current",
+              "display_name": "ART_338_FINANCIAL_LEDGER",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_338_FINANCIAL_LEDGER",
+              "timeline_scope": "current",
+              "purpose": "作为瑟琳娜反击的核心证据，揭露亚瑟的财务造假。"
+            }
+          ],
+          "action_sequence": [
+            "亚瑟·布莱克伍德煽动股东投票，试图罢免瑟琳娜。",
+            "瑟琳娜冷静地站起身，将一叠厚重的账本摔在亚瑟面前，逐条指出其账目中的巨额不明缺口。",
+            "亚瑟试图用计算器辩解，结果算出的数字荒谬可笑，引发全场哄笑。",
+            "老律师哈罗德宣读家族决议，正式将亚瑟·布莱克伍德及其支持者除名。"
+          ],
+          "visible_payoff": "亚瑟·布莱克伍德及其支持者被彻底除名，家族资产得到保全，瑟琳娜的地位不可动摇。",
+          "ending": "会议结束，麦珂与瑟琳娜相视一笑，家庭治理结构正式升级。",
+          "must_include": [
+            "瑟琳娜的反击细节",
+            "亚瑟的滑稽表现",
+            "除名决议的宣读"
+          ],
+          "must_not_include": [
+            "任何关于未来科技的描述",
+            "康拉德的出场"
+          ],
+          "detailed_synopsis": "下午两点，会议再次开始。亚瑟·布莱克伍德见第一招失败，恼羞成怒，散布谣言称瑟琳娜的否决权将导致公司资金链断裂，并煽动股东们投票罢免瑟琳娜。他声泪俱下地控诉瑟琳娜“不懂商业”，试图用情感绑架全场。然而，瑟琳娜早有准备。她冷静地站起身，将一叠厚重的账本摔在亚瑟面前，逐条指出其过去二十年经手账目中的巨额不明缺口，每一笔都精准无误，直指其贪污受贿的铁证。亚瑟大惊失色，试图用计算器辩解，结果算出的数字荒谬可笑，甚至与账面相差十万八千里，引发在场股东哄堂大笑。老律师哈罗德随即宣读家族决议，依据公司章程，正式将亚瑟·布莱克伍德及其支持者除名，剥夺其一切干预家族事务的权力。亚瑟瘫坐在椅子上，面色惨白，再无还手之力。会议结束，麦珂与瑟琳娜相视一笑，家庭治理结构正式升级，瑟琳娜从此成为麦珂最坚实的事业战友。",
+          "source_timeline_start": "1997年11月18日 下午2:00",
+          "source_timeline_end": "1997年11月18日 傍晚6:00"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC170",
+      "chapter_span": [
+        339,
+        340
+      ],
+      "source_event_direction": "前世具体受害：前世公众自治机制被切断，听众声音被资本垄断覆盖。；本事件独有的前世信息差：已知悉1996年‘第五秒之后’静默机制需延伸至地图卡互动。；今生提前动作：艾琳策划特别季节目，邀请七位见证人现场朗读当年法庭记录。；第339章可见小赢：观众自发发起‘第五秒静默’挑战，公众媒体形成千万级传播话题。；第340章新交锋：卡尔团队试图雇佣水军攻击活动真实性，被七位见证人当面揭穿身份。；阻力方永久现实损失：卡尔团队信誉破产，被迫永久退出相关文化项目宣传领域。；主角现实收益：《静默增益》预售突破一百五十万张，确立公众自治核心信道。；不可逆结算键：EC170_Public_Autonomy_Channel_Activated；接回死亡控制主线：CS10_2009_Tribute_Looming",
+      "source_event_direction_sha256": "a876ab4ee134cc492bb56bdfe96431b6cb9c1bd7961c47dffb838b2eab2b96fb",
+      "source_macro_sha256": "91e47b62e3eb2f2d0c504f4c894438060065f80d2b8a9664142b80ae74c113ea",
+      "name": "第五秒静默：河湾镇真相的公众回响",
+      "timeline_years": "1997—1998",
+      "main_opponent": "卡尔·斯特林（Karl Sterling）",
+      "opposition_type": "villain",
+      "event_type": "fan_public_welfare",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS04"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "艾琳·沃特曼",
+        "瑟琳娜",
+        "七位见证人",
+        "卡尔·斯特林",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "奥瑞恩集团雇佣水军冒充当年‘失控’目击者，试图在直播现场通过伪造录音和断章取义的证词，将七位真实见证人污蔑为被收买的演员，以此瓦解《静默增益》地图卡的公信力。",
+      "prev_life_tragedy": "前世公众自治机制被切断，听众声音被资本垄断覆盖，真实的历史记忆被剪辑成虚假的‘失控’叙事，导致麦珂最终失去对作品的所有控制权。",
+      "info_gap_from_prev_life": "已知悉1996年‘第五秒之后’静默机制需延伸至地图卡互动，且掌握七位关键见证人（含书记员与两名旁听学生）的现居地址及联系方式，确保证据链完整无缺。",
+      "why_previous_life_failed": "前世仅依赖法律层面的版权诉讼，未能在舆论场建立物理介质证据链与公众情感共鸣的闭环，导致在资本操控的媒体战中全面溃败。",
+      "preemptive_avoidance": "艾琳策划特别季节目，邀请七位见证人现场朗读当年法庭记录，并设计‘刮开式’地图卡互动机制，让公众在物理层面参与历史还原。",
+      "bait_and_evidence": "卡尔团队故意安排三名‘伪见证人’在直播中指控证人造假，却不知这三人正是当年被剪掉的‘戏剧性冲突’素材中的龙套演员，且其身份已被昆廷导演的手写调度笔记复写件（ART_313_QUINTIN_NOTEBOOK_COPY）精准锁定。",
+      "comic_villain_behavior": "卡尔·斯特林在直播现场气急败坏地挥舞着伪造的‘医疗报告’，试图证明证人精神失常，却被当场要求出示原始胶片底片，结果发现所谓的‘证据’竟是用1997年的激光打印机打印在普通A4纸上的赝品，引发全场哄笑。",
+      "villain_loss": "卡尔团队信誉破产，被迫永久退出相关文化项目宣传领域；奥瑞恩集团因伪造证据丑闻曝光导致股价下跌12%，卡尔本人被行业自律委员会终身禁入。",
+      "protagonist_gain": "《静默增益》预售突破一百五十万张，确立公众自治核心信道；家庭治理结构升级，瑟琳娜正式进入核心决策层；S95-B-RW样带线索被标记为高价值资产。",
+      "relationship_change": "麦珂与瑟琳娜的信任度从“夫妻”升级为“生死战友”，确立瑟琳娜为核心决策者之一；公众对麦珂的信赖度达到顶峰，形成自发的舆论护城河。",
+      "continuity_writes": [
+        "确认七位见证人均为活体，且记忆清晰，无一人受胁迫。",
+        "昆廷手写调度笔记复写件作为关键物证，直接戳穿水军身份。",
+        "S95-B-RW样带线索被麦珂在后台秘密标记，成为下一阶段揭穿医疗造假的唯一钥匙。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_EC170_PUBLIC_AUTONOMY",
+          "state_key": "channel_status",
+          "from": "capital_monopoly",
+          "to": "public_autonomy_active",
+          "irreversible": true,
+          "evidence": "EC170_Public_Autonomy_Channel_Activated",
+          "effect_type": "protagonist_gain",
+          "source_domain": "public_sentiment"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "STRAT_KARL_STERLING_CREDIBILITY",
+          "state_key": "professional_status",
+          "from": "active_promoter",
+          "to": "permanently_banned",
+          "irreversible": true,
+          "evidence": "EXPOSURE_OF_FAKE_WITNESSES_LIVE_BROADCAST",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_MAP_CARD_PRESALES",
+          "state_key": "sales_volume",
+          "from": "500k",
+          "to": "1.5m",
+          "irreversible": false,
+          "evidence": "FIFTH_SECOND_SILENCE_CHALLENGE_SUCCESS",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": [
+        "COURT_TAPES_1979_NOV_17_ORIGINAL",
+        "QUINTIN_NOTEBOOK_PUBLIC_DISPLAY_EC162"
+      ],
+      "cluster_outcome": "奥瑞恩集团因伪造证据丑闻曝光导致股价下跌12%，卡尔团队信誉破产被迫暂停负面宣传；麦珂成功取回所有版权控制权，《静默增益》地图卡预售突破150万张，实现商业与公益双重闭环；家庭治理结构升级，瑟琳娜正式进入核心决策层；维克多·兰斯意识到常规手段失效，开始酝酿‘数据污染’方案；S95-B-RW样带线索被麦珂标记为高价值资产，成为下一阶段揭穿医疗造假的唯一钥匙。",
+      "next_event_hook": "随着1979年真相的揭开，奥瑞恩集团决定不再正面硬刚，转而利用维克多·兰斯的建议，着手策划针对麦珂健康数据的‘数据污染’方案，试图通过伪造医疗记录来动摇其公众形象，而那盒被漏掉的S95-B-RW样带将成为下一阶段揭穿世纪转换期医疗模型造假的关键钥匙。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 339,
+          "timeline_start": "1997-12-30",
+          "timeline_end": "1997-12-30",
+          "scene": "银湾市时代广场主舞台",
+          "chapter_goal": "启动‘第五秒静默’挑战，通过七位见证人现场朗读，激活公众自治机制，初步瓦解奥瑞恩集团的负面叙事。",
+          "chapter_title": "静默的第十万次心跳",
+          "participants": [
+            "麦珂",
+            "艾琳·沃特曼",
+            "七位见证人",
+            "现场观众",
+            "部分媒体记者"
+          ],
+          "opening_conflict": "直播即将开始，奥瑞恩集团的水军混入现场，试图制造混乱打断仪式，但被安保人员迅速识别并驱离。",
+          "info_gap_use": "麦珂提前知晓七位见证人的确切位置，确保他们能准时到场，并利用重生记忆中的细节（如书记员当年的坐姿、学生的衣着）引导镜头捕捉真实瞬间。",
+          "opponent_reaction": "卡尔·斯特林在后台监控室看到现场秩序井然，愤怒地命令水军提前发动攻击，试图用噪音干扰直播信号。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市时代广场主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "直播倒计时归零"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_313_QUINTIN_NOTEBOOK_COPY",
+              "timeline_scope": "current",
+              "purpose": "用于核对见证人身份，防止冒名顶替"
+            }
+          ],
+          "action_sequence": [
+            "艾琳·沃特曼宣布特别季启动，全场灯光熄灭，只留一束追光。",
+            "七位见证人依次登台，按照1979年11月17日的顺序，逐字朗读法庭记录。",
+            "麦珂在后台指挥，将录音实时投射到巨型屏幕，与当年录像带画面同步播放。",
+            "观众自发发起‘第五秒静默’挑战，全场万人同时闭嘴五秒，形成震撼的视觉与听觉冲击。",
+            "网络直播间弹幕瞬间爆炸，话题#第五秒静默#登上全美热搜榜首。"
+          ],
+          "visible_payoff": "观众自发发起‘第五秒静默’挑战，公众媒体形成千万级传播话题；七位见证人的证言得到广泛认可，奥瑞恩集团的‘失控’叙事首次出现裂痕。",
+          "ending": "直播在一片肃穆与感动中结束，麦珂看着屏幕上不断滚动的支持留言，心中暗定下一步计划。",
+          "must_include": [
+            "七位见证人现场朗读",
+            "第五秒静默挑战",
+            "千万级传播话题"
+          ],
+          "must_not_include": [
+            "卡尔·斯特林出场",
+            "医疗造假揭露"
+          ],
+          "detailed_synopsis": "直播即将开始，奥瑞恩集团的水军混入现场，试图制造混乱打断仪式，但被安保人员迅速识别并驱离。艾琳·沃特曼宣布特别季启动，全场灯光熄灭，只留一束追光。七位见证人依次登台，按照1979年11月17日的顺序，逐字朗读法庭记录。麦珂在后台指挥，将录音实时投射到巨型屏幕，与当年录像带画面同步播放。观众自发发起‘第五秒静默’挑战，全场万人同时闭嘴五秒，形成震撼的视觉与听觉冲击。观众自发发起‘第五秒静默’挑战，公众媒体形成千万级传播话题；七位见证人的证言得到广泛认可，奥瑞恩集团的‘失控’叙事首次出现裂痕。直播在一片肃穆与感动中结束，麦珂看着屏幕上不断滚动的支持留言，心中暗定下一步计划。"
+        },
+        {
+          "chapter_id": 340,
+          "timeline_start": "1997-12-30",
+          "timeline_end": "1997-12-30",
+          "scene": "银湾市时代广场主舞台",
+          "chapter_goal": "彻底粉碎奥瑞恩集团雇佣水军制造的虚假证词，完成对卡尔团队的终极清算，确立《静默增益》地图卡的绝对公信力。",
+          "chapter_title": "谎言的终焉",
+          "participants": [
+            "麦珂",
+            "卡尔·斯特林",
+            "七位见证人",
+            "水军头目",
+            "媒体记者",
+            "瑟琳娜"
+          ],
+          "opening_conflict": "卡尔·斯特林雇佣的三名‘伪见证人’冲上舞台，声称真正的见证人是被收买的演员，并出示伪造的医疗报告试图证明证人精神失常。",
+          "info_gap_use": "麦珂早已通过重生记忆掌握了这三名水军的真实身份，并准备了昆廷导演的手写调度笔记复写件作为铁证，直接戳穿他们的谎言。",
+          "opponent_reaction": "卡尔·斯特林见势不妙，试图强行切断直播信号，却被现场记者全程直播，最终被迫承认错误，但为时已晚。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市时代广场主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "水军闯入舞台"
+            },
+            {
+              "sequence": 2,
+              "location": "奥瑞恩集团临时指挥中心",
+              "is_primary": false,
+              "temporal_mode": "current",
+              "transition_cue": "信号被切断失败"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_313_QUINTIN_NOTEBOOK_COPY",
+              "timeline_scope": "current",
+              "purpose": "直接比对水军身份，揭露其伪造行为"
+            },
+            {
+              "artifact_id": "ART_327_S95_COPY_01",
+              "timeline_scope": "current",
+              "purpose": "麦珂在后台标记S95-B-RW线索，为下一阶段做准备"
+            }
+          ],
+          "action_sequence": [
+            "三名‘伪见证人’冲上舞台，高声指责真证人造假，并出示伪造的医疗报告。",
+            "麦珂冷静地走上前，拿出昆廷导演的手写调度笔记复写件，当众宣读其中关于当年龙套演员的记录。",
+            "七位真证人一致指出这三人的身份漏洞，并当场联系当年剧组工作人员进行核实。",
+            "媒体记者全程直播这一过程，卡尔·斯特林在指挥中心试图切断信号，却被现场技术团队识破并反制。",
+            "卡尔·斯特林被迫上台道歉，但无法挽回局面，奥瑞恩集团股价应声下跌。"
+          ],
+          "visible_payoff": "卡尔团队信誉破产，被迫永久退出相关文化项目宣传领域；《静默增益》预售突破一百五十万张，确立公众自治核心信道。",
+          "ending": "麦珂站在舞台上，看着台下如潮水般的掌声和泪水，他知道，这场胜利不仅属于自己，更属于每一个愿意相信真相的人。",
+          "must_include": [
+            "水军被当面揭穿",
+            "卡尔团队信誉破产",
+            "预售突破150万张"
+          ],
+          "must_not_include": [
+            "康拉德出场",
+            "医疗造假彻底揭露"
+          ],
+          "detailed_synopsis": "卡尔·斯特林雇佣的三名‘伪见证人’冲上舞台，声称真正的见证人是被收买的演员，并出示伪造的医疗报告试图证明证人精神失常。三名‘伪见证人’冲上舞台，高声指责真证人造假，并出示伪造的医疗报告。麦珂冷静地走上前，拿出昆廷导演的手写调度笔记复写件，当众宣读其中关于当年龙套演员的记录。七位真证人一致指出这三人的身份漏洞，并当场联系当年剧组工作人员进行核实。媒体记者全程直播这一过程，卡尔·斯特林在指挥中心试图切断信号，却被现场技术团队识破并反制。卡尔团队信誉破产，被迫永久退出相关文化项目宣传领域；《静默增益》预售突破一百五十万张，确立公众自治核心信道。麦珂站在舞台上，看着台下如潮水般的掌声和泪水，他知道，这场胜利不仅属于自己，更属于每一个愿意相信真相的人。"
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "艾琳·沃特曼",
+        "瑟琳娜",
+        "七位见证人",
+        "卡尔·斯特林",
+        "维克多·兰斯（幕后）"
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {
+        "entity": "麦珂",
+        "state": "确立公众自治核心信道，S95-B-RW线索标记为高价值资产"
+      },
+      {
+        "entity": "瑟琳娜",
+        "state": "正式进入核心决策层，与麦珂建立生死战友关系"
+      },
+      {
+        "entity": "卡尔·斯特林",
+        "state": "信誉破产，被迫永久退出相关文化项目宣传领域"
+      },
+      {
+        "entity": "维克多·兰斯",
+        "state": "意识到常规手段失效，开始酝酿‘数据污染’方案"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": "麦珂-瑟琳娜",
+        "change": "从夫妻升级为生死战友，信任度大幅提升"
+      },
+      {
+        "pair": "公众-麦珂",
+        "change": "从质疑转为绝对信赖，形成自发的舆论护城河"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity": "《静默增益》地图卡",
+        "status": "预售突破150万张，商业与公益双重闭环"
+      },
+      {
+        "entity": "奥瑞恩集团",
+        "status": "股价下跌12%，因伪造证据丑闻曝光导致信誉受损"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity": "麦珂",
+        "status": "身体健康，位于银湾市时代广场"
+      },
+      {
+        "entity": "七位见证人",
+        "status": "全部存活，状态稳定"
+      }
+    ],
+    "open_threads": [
+      "维克多的‘全介质抹除计划’即将启动",
+      "S95-B-RW样带中的医疗模型造假线索待挖掘"
+    ],
+    "resolved_threads": [
+      "1979年河湾镇法院监护权确认案真相完全公开",
+      "卡尔团队伪造证据丑闻彻底曝光"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。"
+  }
+}

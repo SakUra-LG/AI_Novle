@@ -1,0 +1,210 @@
+{
+  "macro_group_id": "MG036",
+  "event_clusters": [
+    {
+      "cluster_id": "EC179",
+      "chapter_span": [357, 358],
+      "source_event_direction": "{\"cluster_id\": \"EC179\", \"chapter_span\": [357, 358], \"opposition_type\": \"technical\", \"event_type\": \"performance\", \"solution_type\": \"media_counter\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "静默增益：直播事故与真相回响",
+      "timeline_years": "1997",
+      "main_opponent": "卡尔·霍尔特 (Carl Holt)",
+      "opposition_type": "technical",
+      "event_type": "performance",
+      "solution_type": "media_counter",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["CS_1997_TECH_MANIPULATION", "CS_1997_AUDIO_EVIDENCE"],
+      "foreshadow_ids": ["FS_S95_BRW_LOSS", "FS_MEDICAL_FRAUD_LEAD"],
+      "main_characters": ["麦珂", "艾琳", "卡尔·霍尔特", "现场观众"],
+      "fictional_obstacle": "奥瑞恩集团通过卡尔团队在《午夜星轨》特别季直播中，利用技术漏洞强行插入虚假背景音以掩盖关键对话，并试图切断信号制造‘技术故障’假象，以此抹杀麦珂团队的证据链。",
+      "prev_life_tragedy": "前世直播中剪辑失误导致关键信息被掩盖，听众无法感知真相，麦珂失去舆论主动权。",
+      "info_gap_from_prev_life": "艾琳掌握‘午夜星轨’特别季底层技术底牌，可实时识别并放大音频瑕疵，这是前世未被利用的致命反制点。",
+      "why_previous_life_failed": "前世因缺乏对音频底层逻辑的掌控，面对恶意剪辑只能被动接受，未能形成即时反证。",
+      "preemptive_avoidance": "麦珂授权艾琳在直播前开启‘无损监听模式’，强制保留所有环境音与原始声轨，杜绝后期篡改可能。",
+      "bait_and_evidence": "卡尔团队故意制造的虚假背景音（如模拟的电流声、伪造的争吵声）成为铁证；现场观众手机录屏的原始视频流成为不可篡改的第三方见证。",
+      "comic_villain_behavior": "卡尔在直播中断线后惊慌失措，试图用胶带缠绕话筒假装‘设备故障’，却被观众发现其手部动作与声音不同步，引发哄笑。",
+      "villain_loss": "行业自律委员会暂停卡尔·霍尔特从业资格，认定其操纵播出内容，永久剥夺其在主流媒体平台的叙事权。",
+      "protagonist_gain": "艾琳接管特别季策划权，掌握内容筛选与技术适配绝对主导权；麦珂获得直播事故录音作为永久防御武器。",
+      "relationship_change": "艾琳从技术执行者转变为核心决策者，麦珂与艾琳建立基于技术信任的深度同盟；社区观众对麦珂的信任度达到顶峰。",
+      "continuity_writes": [
+        "卡尔团队销毁胶片时遗漏的'S95-B-RW'废弃样带被麦珂暗中截获，夹层内藏有1995年维克多篡改心电图的录音线索。",
+        "直播事故录音成为铁证，永久剥夺卡尔团队在主流媒体平台的叙事权。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MAEK_TECH_CONTROL_001",
+          "state_key": "audio_control__extension_EC179",
+          "from": "vulnerable_to_manipulation",
+          "to": "irreversible_technical_dominance",
+          "irreversible": true,
+          "evidence": "LIVE_STREAM_UNTOUCHED_AUDIO_LOG + AUDIT_REPORT_1997",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "audio_control_status"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_CH_003_BROADCAST_CREDIBILITY",
+          "state_key": "broadcast_integrity__extension_EC179",
+          "from": "high_trust",
+          "to": "permanently_disqualified",
+          "irreversible": true,
+          "evidence": "INDUSTRY_COMMITTEE_SANCTION_RECORD + PUBLIC_VIDEO_EVIDENCE",
+          "effect_type": "villain_loss",
+          "source_state_key": "broadcast_reputation"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_MAEK_AIRIN_001",
+          "state_key": "trust_level__tech_alliance",
+          "from": "executive_subordinate",
+          "to": "strategic_partners",
+          "irreversible": true,
+          "evidence": "TECH_PROTOCOL_OVERRIDE_SUCCESS + DECISION_RIGHT_TRANSFER",
+          "effect_type": "relationship_change",
+          "source_state_key": "tech_relationship"
+        }
+      ],
+      "historical_anchor_ids": ["ANCHOR_1997_LIVE_STREAM_EVENT"],
+      "cluster_outcome": "卡尔·霍尔特因纪录片公信力崩塌被行业自律委员会暂停从业资格，处于被动防御状态；艾琳接管《午夜星轨》特别季策划权，掌握内容筛选与技术适配绝对主导权；直播事故录音成为铁证，永久剥夺卡尔团队在主流媒体平台的叙事权。",
+      "next_event_hook": "S95-B-RW样带中的医疗录音将成为P08揭露千禧年医疗模型造假的核心物证，迫使麦珂从文化战场转向医疗黑幕的正面硬刚。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 357,
+          "timeline_start": "1997-08-21T19:00:00",
+          "timeline_end": "1997-08-21T20:30:00",
+          "scene": "《午夜星轨》特别季直播演播室",
+          "chapter_goal": "麦珂团队启动‘无损监听模式’，成功拦截卡尔团队插入的虚假背景音，完成首次技术反击。",
+          "chapter_title": "无声的陷阱",
+          "participants": ["麦珂", "艾琳", "卡尔·霍尔特", "导播组"],
+          "opening_conflict": "卡尔团队试图在直播中混入一段伪造的‘工坊少年争吵’音频，以误导观众认为麦珂团队内部不和。",
+          "info_gap_use": "艾琳利用重生记忆知晓该频段存在物理矛盾，提前在控制台设置‘异常频率过滤网’，实时剔除虚假音轨。",
+          "opponent_reaction": "卡尔见计划失败，恼羞成怒，命令导播强行切换信号源，制造‘技术故障’假象。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "直播演播室主控台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "艾琳手指在调音台上飞速滑动，屏幕波形图瞬间变直。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_349_TAPE_BACKUP",
+              "timeline_scope": "current",
+              "purpose": "艾琳调用备份盘中的原始声轨进行比对，确认当前信号已被污染。"
+            }
+          ],
+          "action_sequence": [
+            "艾琳启动‘无损监听模式’，强制保留所有环境音。",
+            "卡尔团队插入虚假背景音，系统自动识别并剔除。",
+            "卡尔下令切断信号，现场灯光闪烁，但麦克风仍在工作。",
+            "麦珂冷静指示艾琳继续录制，将计就计。"
+          ],
+          "visible_payoff": "直播画面短暂黑屏后恢复，观众听到清晰的现场原声，虚假背景音消失无踪。",
+          "ending": "卡尔团队在混乱中试图掩盖痕迹，但艾琳已锁定其操作日志。",
+          "must_include": ["无损监听模式启动细节", "虚假背景音被剔除的过程", "卡尔的慌乱反应"],
+          "must_not_include": ["使用现代社交媒体术语", "卡尔直接承认错误"],
+          "detailed_synopsis": "1997年8月21日晚，《午夜星轨》特别季直播正在进行。卡尔·霍尔特指使技术人员在混音台悄悄插入一段伪造的‘工坊少年争吵’音频，企图制造麦珂团队内讧的假象。然而，艾琳早已根据前世记忆预判了这一招，她果断开启‘无损监听模式’，系统立即捕捉到该频段存在的物理矛盾——背景噪音与真实人声的频率不匹配。艾琳手指飞快敲击键盘，一道无形的屏障瞬间将虚假音轨剥离，只留下纯净的现场原声。卡尔见状大惊失色，急忙命令导播强行切断信号，试图制造‘技术故障’的假象。直播间灯光骤灭，一片漆黑，但艾琳却冷笑着示意麦珂：“让他们切，反正我们录下来了。”在黑暗中，只有艾琳手中的录音设备指示灯仍在闪烁，记录着卡尔团队最后的疯狂。"
+        },
+        {
+          "chapter_id": 358,
+          "timeline_start": "1997-08-21T20:30:00",
+          "timeline_end": "1997-08-21T22:00:00",
+          "scene": "直播现场及各地媒体中心",
+          "chapter_goal": "卡尔试图切断信号未果，现场观众手机录屏实时上传至各地媒体，彻底曝光其操纵行为，行业自律委员会介入调查。",
+          "chapter_title": "信号之外的眼睛",
+          "participants": ["麦珂", "艾琳", "卡尔·霍尔特", "现场观众", "行业自律委员会代表"],
+          "opening_conflict": "卡尔试图通过物理手段切断信号，却发现现场观众的手机录屏已将原始数据实时上传至各地媒体中心。",
+          "info_gap_use": "麦珂利用重生记忆，提前安排观众席上的‘种子用户’携带老式录音笔和相机，确保即便主信号被切断，证据仍能外泄。",
+          "opponent_reaction": "卡尔在镜头前手忙脚乱地用胶带缠绕话筒，试图伪装成设备故障，却被观众发现其手部动作与声音不同步，引发哄笑。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "直播现场观众席",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "无数闪光灯亮起，手机屏幕组成的光海映照着卡尔扭曲的脸。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_358_LIVE_STREAM_RECORDING",
+              "timeline_scope": "current",
+              "display_name": "《直播事故原始录音带》",
+              "kind": "technical_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "卡尔切断主信号，现场陷入混乱。",
+            "观众席上‘种子用户’的手机录屏实时上传至各地媒体中心。",
+            "卡尔试图用胶带缠绕话筒，被观众发现破绽。",
+            "行业自律委员会代表接到举报，立即启动调查程序。"
+          ],
+          "visible_payoff": "各地媒体中心同步播放出卡尔团队操纵直播的完整证据链，卡尔当场被行业自律委员会暂停从业资格。",
+          "ending": "卡尔在众目睽睽之下被带走调查，艾琳接管特别季策划权，麦珂获得直播事故录音作为永久防御武器。",
+          "must_include": ["观众手机录屏上传过程", "卡尔滑稽的掩饰行为", "行业自律委员会介入"],
+          "must_not_include": ["使用现代社交媒体术语", "卡尔直接认罪"],
+          "detailed_synopsis": "信号切断后的黑暗并未持续太久，因为麦珂早已预料到这一招。她提前安排在场观众席上的‘种子用户’——一群忠实的社区工坊支持者——携带老式录音笔和相机，确保即便主信号被切断，证据仍能外泄。当卡尔试图用胶带缠绕话筒，假装设备故障时，观众席上突然亮起了无数闪光灯，手机屏幕组成的光海映照着卡尔扭曲的脸。这些录屏通过当时的电话线和传真网络，实时上传到了各地媒体中心。屏幕上，卡尔手忙脚乱地用胶带缠绕话筒，却暴露了其手部动作与声音的不同步，引发了全场哄笑。行业自律委员会的代表接到举报后，立即启动调查程序，并在现场宣布暂停卡尔·霍尔特的从业资格。卡尔在众目睽睽之下被带走调查，而艾琳则正式接管了《午夜星轨》特别季的策划权，掌握了内容筛选与技术适配的绝对主导权。麦珂手中，那份直播事故录音带已成为永久性的防御武器，彻底剥夺了卡尔团队在主流媒体平台的叙事权。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1997",
+    "character_states": [
+      {
+        "character": "卡尔·霍尔特",
+        "state": "被行业自律委员会暂停从业资格，处于被动防御状态"
+      },
+      {
+        "character": "艾琳",
+        "state": "接管《午夜星轨》特别季策划权，掌握内容筛选与技术适配绝对主导权"
+      },
+      {
+        "character": "麦珂",
+        "state": "持有直播事故录音带的独家数字副本，处于最佳精神状态"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": "麦珂与艾琳",
+        "change": "从上下级关系转变为战略伙伴，建立基于技术信任的深度同盟"
+      },
+      {
+        "pair": "麦珂与社区观众",
+        "change": "信任度达到顶峰，形成稳固的舆论支持基础"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset": "直播事故录音带",
+        "status": "麦珂持有独家数字副本，作为永久防御武器"
+      },
+      {
+        "asset": "《午夜星轨》特别季策划权",
+        "status": "由艾琳完全接管，实现自主运营"
+      }
+    ],
+    "health_and_location": [
+      {
+        "character": "麦珂",
+        "health": "最佳精神状态，无过度劳累迹象",
+        "location": "四十三处工坊"
+      }
+    ],
+    "open_threads": [
+      "S95-B-RW样带中的医疗录音将成为P08揭露千禧年医疗模型造假的核心物证",
+      "维克多的‘全介质抹除计划’即将启动"
+    ],
+    "resolved_threads": [
+      "卡尔·霍尔特团队在主流媒体平台的叙事权被永久剥夺"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多发现S95-B-RW样带丢失，启动更疯狂的‘全介质抹除计划’，试图在世纪之交前彻底销毁所有原始录音与胶片，迫使麦珂必须从舆论战转向技术取证战，并面临新的生命威胁。"
+  }
+}

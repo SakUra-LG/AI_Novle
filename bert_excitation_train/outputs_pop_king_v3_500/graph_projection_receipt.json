@@ -1,0 +1,25 @@
+{
+  "projected_at": "2026-08-04",
+  "neo4j_container": "ai-novel-neo4j-v2",
+  "story_id": "bd835ecaf72304ca",
+  "status": "projected_and_verified",
+  "plot_clusters": 250,
+  "planned_before_relationships": 249,
+  "planned_characters": 15,
+  "major_in_relationships": 302,
+  "required_cluster_properties": [
+    "timeline_years",
+    "fictional_obstacle",
+    "prev_life_tragedy",
+    "info_gap_from_prev_life",
+    "preemptive_avoidance",
+    "this_life_revenge",
+    "comic_villain_beat",
+    "ascension_gain",
+    "rebirth_flywheel",
+    "romance_state",
+    "cluster_outcome"
+  ],
+  "generation_read_path": "online_retriever.retrieve_context_for_chapter",
+  "verification": "Neo4j query returned 250 story-scoped two-chapter PlotCluster nodes, 249 ordering edges, 15 Character nodes and 302 MAJOR_IN edges; all 250 clusters expose the rebirth flywheel and continuity properties."
+}

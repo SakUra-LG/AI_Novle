@@ -1,0 +1,110 @@
+{
+  "macro_group_id": "MG011",
+  "event_directions": [
+    {
+      "cluster_id": "EC051",
+      "chapter_span": [
+        101,
+        102
+      ],
+      "opposition_type": "villain",
+      "event_type": "creation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "前世奥瑞恩利用1979年3月柯达批量冲洗事故，将麦珂未曝光底片污损为‘技术老化’并低价收购。",
+      "unique_prev_life_info": "1979年3月14日柯达工厂温度失控导致显影液批次性失效，失真率峰值达42%。",
+      "preemptive_action": "麦珂提前三周将《夏夜协议》母带封存于恒温恒湿铜柜，并指派昆廷在暗房同步进行交叉比对实验。",
+      "chapter_one_small_win": "当奥瑞恩代表以‘胶片变质’为由要求低价收购时，麦珂当场展示完好无损的原始底片与失真样张对比图。",
+      "chapter_two_showdown": "维克多·兰斯试图调取官方检测报告掩盖真相，却发现实验室记录已被麦珂提前置换为真实数据日志。",
+      "opponent_permanent_loss": "奥瑞恩集团被迫放弃对《夏夜协议》母带的低价收购企图，且其虚假技术报告被行业媒体公开质疑。",
+      "protagonist_concrete_gain": "麦珂确立了对物理底片的绝对控制权，并让《声轨周刊》开始关注影像档案的物理验证价值。",
+      "irreversible_outcome_key": "底片完好性与数据污染事实的双向锁定",
+      "death_chain_connection": "此事件阻断前世因资产流失导致的后续版权纠纷链，为最终公审保留核心物证。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC052",
+      "chapter_span": [
+        103,
+        104
+      ],
+      "opposition_type": "institutional",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "advance",
+      "previous_life_harm": "前世场馆升降台液压阀密封件老化引发故障，导致瑟琳娜受伤，麦珂被迫签署免责条款。",
+      "unique_prev_life_info": "1979年4月5日升降台液压系统因橡胶密封圈老化突然泄压，现场监控录像被剪辑。",
+      "preemptive_action": "麦珂在彩排前强制引入人工读数登记制度，要求技师每两小时手动记录液压表数值并签字确认。",
+      "chapter_one_small_win": "一名年轻技师发现读数异常拒绝上台演出，迫使主办方立即停机检修，避免了潜在的事故。",
+      "chapter_two_showdown": "奥瑞恩派来的安全顾问指责流程繁琐影响进度，却被现场观众手持的编号卡（含任务说明）包围质问。",
+      "opponent_permanent_loss": "奥瑞恩无法再借口‘意外’推卸安全责任，必须承担因隐瞒隐患导致的巨额赔偿风险。",
+      "protagonist_concrete_gain": "麦珂成功将人工读数登记纳入行业标准，确立了观众作为安全监督者的合法身份。",
+      "irreversible_outcome_key": "人工读数登记制度的强制执行",
+      "death_chain_connection": "此机制成为后世‘心律校准计划’中判定个体清醒状态的法定动作链原型。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC053",
+      "chapter_span": [
+        105,
+        106
+      ],
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "reveal",
+      "previous_life_harm": "前世奥瑞恩通过电视广告植入稀释粉丝共创价值，将《夏夜协议》包装为怀旧营销产品。",
+      "unique_prev_life_info": "1979年5月10日奥瑞恩策划虚假电视广告，声称麦珂已授权其独家改编权。",
+      "preemptive_action": "麦珂提前在电台发布《夏夜协议》完整歌词手稿，并声明任何商业改编需经本人及瑟琳娜双签确认。",
+      "chapter_one_small_win": "当电视台播放虚假广告时，现场十万观众齐声背诵手稿内容，形成强大的舆论反制声浪。",
+      "chapter_two_showdown": "维克多·兰斯试图切断信号，却发现所有备用频道已被粉丝自发组织的广播网覆盖。",
+      "opponent_permanent_loss": "奥瑞恩的虚假叙事彻底破产，其品牌信誉因强行收割粉丝情感而遭受不可逆的损伤。",
+      "protagonist_concrete_gain": "麦珂巩固了粉丝共创的合法性，确立了《夏夜协议》作为公众共有资产的地位。",
+      "irreversible_outcome_key": "粉丝集体背诵手稿形成的舆论铁壁",
+      "death_chain_connection": "此事件强化了公众对‘创作自主权’的认知，为四十年后终局公审奠定民意基础。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC054",
+      "chapter_span": [
+        107,
+        108
+      ],
+      "opposition_type": "technical",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "echo",
+      "previous_life_harm": "前世混音争议中被恶意压缩音频文件，导致频段削波，麦珂损失巨额版税分成。",
+      "unique_prev_life_info": "1979年6月15日传输过程中音频文件被恶意压缩，高频段完全丢失，造成音质劣化。",
+      "preemptive_action": "麦珂坚持使用特定频率参数录制母带，并要求所有传输链路必须保留原始波形备份。",
+      "chapter_one_small_win": "当竞争对手试图播放压缩版音频时，现场音响设备自动触发警报并切换至原始高保真版本。",
+      "chapter_two_showdown": "奥瑞恩财务官试图篡改账目掩盖技术失误，却被麦珂出示的原始波形图与传输日志当场揭穿。",
+      "opponent_permanent_loss": "奥瑞恩因技术造假被罚款，且失去了未来五年内参与音频标准制定的资格。",
+      "protagonist_concrete_gain": "麦珂确立了‘可听化误差标尺’为行业新标准，并获得了相应的技术标准制定权。",
+      "irreversible_outcome_key": "原始波形图的不可篡改性证明",
+      "death_chain_connection": "此标准成为后世‘声压可视化系统’研发的核心依据，防止数字信号处理模块滥用。",
+      "direction": ""
+    },
+    {
+      "cluster_id": "EC055",
+      "chapter_span": [
+        109,
+        110
+      ],
+      "opposition_type": "ally_resistance",
+      "event_type": "romance",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "pressure",
+      "previous_life_harm": "前世瑟琳娜因缺乏法律保障，在麦珂去世后陷入长期的财产纠纷与名誉受损。",
+      "unique_prev_life_info": "1979年7月1日麦珂与瑟琳娜尚未正式确立民事伴侣关系，面临家族阻挠。",
+      "preemptive_action": "麦珂主动提出签署民事伴侣契约，并将‘可听化误差标尺’共同开发者的署名权写入协议。",
+      "chapter_one_small_win": "瑟琳娜在公证处当众签署契约，确认了两人共管信托与分立职业路径的法律框架。",
+      "chapter_two_showdown": "奥瑞恩试图利用法律漏洞挑拨两人关系，却被现场见证的律师团与公众舆论驳斥。",
+      "opponent_permanent_loss": "奥瑞恩彻底失去通过操纵私人关系来瓦解麦珂团队的机会，策略转向隐蔽渗透失败。",
+      "protagonist_concrete_gain": "麦珂与瑟琳娜确立了稳固的民事伴侣关系，‘星火同盟’雏形正式形成。",
+      "irreversible_outcome_key": "民事伴侣契约与署名权的法律绑定",
+      "death_chain_connection": "此契约成为后世《家庭治理宪章》中医疗决策权与艺术署名权并列的法律原型。",
+      "direction": ""
+    }
+  ]
+}

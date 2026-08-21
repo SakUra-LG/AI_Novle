@@ -1,0 +1,91 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC175_EC175",
+  "identifier": "MG035",
+  "accepted_attempt": "04",
+  "acceptance_mode": "revalidated_existing_qwen_raw",
+  "base_prompt_sha256": "5e2f577a046ab5247c3af4bd7db9d45a0768f85e952d3652eccb68bb6b7e49d3",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-21T08:56:50+08:00",
+      "prompt_sha256": "5e2f577a046ab5247c3af4bd7db9d45a0768f85e952d3652eccb68bb6b7e49d3",
+      "raw_response_sha256": "422a3b66a75f296d467018ce234fdda4fbb59e5893c505e16e08aa87b56582f4",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG035_events_EC175_EC175_attempt_01_5e2f577a04_raw.txt",
+      "validation_failures": [
+        "EC175不得让2009年晚年医生康拉德在第451章前的今生时间线实体登场"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 24.341,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-21T08:57:14+08:00",
+      "prompt_sha256": "57abbb187dfd7c7fd4b3c39a755876b9ac125b49399a346ef6259f7309148e91",
+      "raw_response_sha256": "32def090a4b945d30454f74fcd7d41e5ab2474eded37fb69a40f7dd996bba0bb",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG035_events_EC175_EC175_attempt_02_5e2f577a04_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 25 column 37 (char 1508)"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 23.841,
+      "usage": {}
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-21T08:57:48+08:00",
+      "prompt_sha256": "256ea67cdb7a6da62043f0d5a9ed540f9d640e54d66a5745951f63a1e5c63c40",
+      "raw_response_sha256": "541e6f58e2eec8708cd7dc1eded14b487b02aadde710d2b6d1877fafdeee5190",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG035_events_EC175_EC175_attempt_03_5e2f577a04_raw.txt",
+      "validation_failures": [
+        "EC175提前消费后续事件的逮捕/刑事带走结算；当前父级方向未授权该结果"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 34.048,
+      "usage": {}
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-21T08:58:14+08:00",
+      "prompt_sha256": "7a18c5736825b165dbc3d4e3e18b716586215f44512a515dd2b6628a0a4508a1",
+      "raw_response_sha256": "07e23466f24e9c4abdea47f4371e5cdad357039d4b1613b92254c9f7dc11e985",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG035_events_EC175_EC175_attempt_04_5e2f577a04_raw.txt",
+      "validation_failures": [
+        "EC175不得让2009年晚年医生康拉德在第451章前的今生时间线实体登场"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 25.993,
+      "usage": {}
+    },
+    {
+      "attempt": 5,
+      "created_at": "2026-08-21T09:06:09+08:00",
+      "prompt_sha256": "5e2f577a046ab5247c3af4bd7db9d45a0768f85e952d3652eccb68bb6b7e49d3",
+      "raw_response_sha256": "a395e40414050167043ac1f8aa90eccc33aef3049f98e6912d5ed59980344d49",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG035_events_EC175_EC175_attempt_05_5e2f577a04_raw.txt",
+      "validation_failures": [
+        "EC175不得让2009年晚年医生康拉德在第451章前的今生时间线实体登场"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 29.043,
+      "usage": {}
+    }
+  ]
+}

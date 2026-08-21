@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "scope": "official_first_10_chapters",
+  "story_id": "",
+  "output_dir": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500",
+  "overall_passed": false,
+  "failed_checks": [
+    "authoritative_body_inputs_present"
+  ],
+  "checks": {
+    "authoritative_body_inputs_present": {
+      "passed": false,
+      "evidence": {
+        "output_dir": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500"
+      },
+      "failures": [
+        "缺少正文权威输入：D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\event_clusters_v2.json"
+      ]
+    }
+  }
+}

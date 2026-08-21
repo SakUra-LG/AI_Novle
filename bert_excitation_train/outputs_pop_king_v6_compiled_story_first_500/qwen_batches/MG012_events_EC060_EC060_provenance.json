@@ -1,0 +1,116 @@
+{
+  "generated_by": "groq",
+  "kind": "events_EC060_EC060",
+  "identifier": "MG012",
+  "accepted_attempt": 4,
+  "base_prompt_sha256": "ba10aded00069bea6ab8618dbfb4d0027f49da2f6f0148a7826015ed05ecfee6",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T16:05:08+08:00",
+      "prompt_sha256": "ba10aded00069bea6ab8618dbfb4d0027f49da2f6f0148a7826015ed05ecfee6",
+      "raw_response_sha256": "44798ec1c3a6f6e7f0437264b5ec1b56aaede9a15cb2c283d63054f92a186719",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG012_events_EC060_EC060_attempt_01_ba10aded00_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 140 column 14 (char 6077)"
+      ],
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 8.315,
+      "usage": {
+        "queue_time": 0.366814142,
+        "prompt_tokens": 3772,
+        "prompt_time": 0.160787656,
+        "completion_tokens": 3000,
+        "completion_time": 6.215305793,
+        "total_tokens": 6772,
+        "total_time": 6.376093449,
+        "completion_tokens_details": {
+          "reasoning_tokens": 35
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-20T16:05:54+08:00",
+      "prompt_sha256": "0ee35869f22b0a89faebe5e8fbdf3301098d142f1142655c89f6042cd6cfabc1",
+      "raw_response_sha256": "aad21a6ec1a9a56ee74d54db49e8a970304ad3eae08cbbfd52b1b64d14031191",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG012_events_EC060_EC060_attempt_02_ba10aded00_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 155 column 14 (char 6652)"
+      ],
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 46.227,
+      "usage": {
+        "queue_time": 0.314762059,
+        "prompt_tokens": 3856,
+        "prompt_time": 0.18362334,
+        "completion_tokens": 3000,
+        "completion_time": 6.297061822,
+        "total_tokens": 6856,
+        "total_time": 6.480685162,
+        "completion_tokens_details": {
+          "reasoning_tokens": 19
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-20T16:06:44+08:00",
+      "prompt_sha256": "4042d1993b721883beb0e5b093667e66baea5c150309be3c0729f9daaeddf3e8",
+      "raw_response_sha256": "7dcd882ac26f0af130449c145b2ec5296b43e63506dfb84ab609e34cee229327",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG012_events_EC060_EC060_attempt_03_ba10aded00_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Expecting ',' delimiter: line 144 column 10 (char 6254)"
+      ],
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 50.192,
+      "usage": {
+        "queue_time": 0.123621143,
+        "prompt_tokens": 3860,
+        "prompt_time": 0.190283136,
+        "completion_tokens": 3000,
+        "completion_time": 6.30307391,
+        "total_tokens": 6860,
+        "total_time": 6.493357046,
+        "completion_tokens_details": {
+          "reasoning_tokens": 32
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-20T16:09:34+08:00",
+      "prompt_sha256": "ba10aded00069bea6ab8618dbfb4d0027f49da2f6f0148a7826015ed05ecfee6",
+      "raw_response_sha256": "93811674513878acf879a99e32255a2d20cb9bf0a04e1075a9c31a4afd77e332",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG012_events_EC060_EC060_attempt_04_ba10aded00_raw.txt",
+      "validation_failures": [],
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 9.248,
+      "usage": {
+        "queue_time": 0.376343269,
+        "prompt_tokens": 3772,
+        "prompt_time": 0.187851909,
+        "completion_tokens": 3374,
+        "completion_time": 7.011139209,
+        "total_tokens": 7146,
+        "total_time": 7.198991118,
+        "completion_tokens_details": {
+          "reasoning_tokens": 29
+        }
+      }
+    }
+  ]
+}

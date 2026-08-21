@@ -1,0 +1,1024 @@
+{
+  "macro_group_id": "MG015",
+  "event_clusters": [
+    {
+      "cluster_id": "EC071",
+      "chapter_span": [
+        141,
+        142
+      ],
+      "source_event_direction": "前世具体受害：前世巴里·布鲁姆提交伪造税务单后，麦珂家族信托被强制冻结导致医疗资金链断裂。；本事件独有的前世信息差：麦珂记得1983年10月14日‘蓝盾’公司将在审计报告中植入虚假数据并诱导签署空白协议。；今生提前动作：麦珂提前销毁所有空白税务模板并指令黛安娜将1982年旧卷宗归档至法院封存。；第141章可见小赢：玛莎在听证会前一日拒绝签署任何文件，迫使‘蓝盾’代表媒体经理在办公室惊慌翻找备用合同。；第142章新交锋：媒体经理试图强行插入篡改后的数据盘，被麦珂当众切断电源并展示原始磁带备份。；阻力方永久现实损失：媒体经理因私自篡改数据被奥瑞恩集团内部调查，暂时失去直接执行权并退居二线。；主角现实收益：麦珂团队成功保住1982年完整税务记录，确立了审计数据必须经三方物理核验的惯例。；不可逆结算键：1983_10_16_Audit_Tamper_Fail；接回死亡控制主线：阻断资产冻结链条防止了前世因资金枯竭导致的医疗延误死亡。",
+      "source_event_direction_sha256": "b3a77ada56c69de1e9bbd3bdd8319e8b4b0f0d7378af40a27d21a0477c883689",
+      "source_macro_sha256": "adc54d66d106e66849bea9a864987a253a763eccfa06294f8f3470737cfaa81a",
+      "name": "蓝盾审计陷阱与物理证据反击",
+      "timeline_years": "1983",
+      "main_opponent": "巴里·布鲁姆",
+      "opposition_type": "institutional",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "巴里·布鲁姆",
+        "莉薇娅·普莱斯",
+        "玛莎",
+        "黛安娜"
+      ],
+      "fictional_obstacle": "蓝盾公司试图通过伪造的1982年税务数据证明家族信托违规，从而触发资产冻结条款。",
+      "prev_life_tragedy": "前世麦珂签署空白协议，导致信托被冻结，医疗资金断裂，母亲玛莎因延误治疗去世。",
+      "info_gap_from_prev_life": "麦珂知道1983年10月14日蓝盾公司将提交伪造数据，且巴里·布鲁姆会在录音笔中留下把柄。",
+      "why_previous_life_failed": "前世麦珂缺乏法律意识，信任审计机构，未保留原始物理证据，被程序正义表象迷惑。",
+      "preemptive_avoidance": "提前销毁空白模板，将1982年原始账本封存于法院，并安排莉薇娅·普莱斯介入医疗决策。",
+      "bait_and_evidence": "巴里·布鲁姆留下的录音笔（ART_141_BARRETT_TAPE）与莉薇娅的临床诊断书（ART_141_LIVIA_DIAGNOSIS）。",
+      "comic_villain_behavior": "巴里·布鲁姆在录音中炫耀自己如何完美伪造数据，并嘲笑麦珂是“待宰的羔羊”，却不知录音笔一直开着。",
+      "villain_loss": "巴里·布鲁姆因篡改数据被奥瑞恩集团内部调查，失去直接执行权，退居二线。",
+      "protagonist_gain": "确立审计数据必须经三方物理核验的惯例，保住1982年完整税务记录，防止资产冻结。",
+      "relationship_change": "莉薇娅·普莱斯成为对抗虚假医疗指控的核心防线，麦珂团队信任度提升。",
+      "continuity_writes": [
+        "rights:RIGHT_VL_005:legal_status:invalid",
+        "assets:TRUST_1982:status:secured"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_005",
+          "state_key": "legal_status",
+          "from": "pending",
+          "to": "invalid",
+          "irreversible": true,
+          "evidence": "ART_141_BARRETT_TAPE",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "TRUST_1982",
+          "state_key": "status",
+          "from": "threatened",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_142_PHYSICAL_AUDIT_CERT",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": [],
+      "cluster_outcome": "蓝盾公司审计失败，奥瑞恩集团被迫转入更隐蔽的对抗阶段。",
+      "next_event_hook": "维克多·兰斯启动‘健康趋势预测模型’测试，并试图收购老牌胶片冲印厂以切断物理证据链。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 141,
+          "timeline_start": "1983-10-13",
+          "timeline_end": "1983-10-13",
+          "scene": "麦珂家族办公室",
+          "chapter_goal": "阻止玛莎签署任何文件，迫使巴里·布鲁姆露出马脚。",
+          "chapter_title": "沉默的拒绝",
+          "participants": [
+            "麦珂",
+            "玛莎",
+            "巴里·布鲁姆",
+            "黛安娜"
+          ],
+          "opening_conflict": "巴里·布鲁姆带着‘紧急审计通知’闯入，要求玛莎立即签署授权书以‘解冻’账户。",
+          "info_gap_use": "麦珂利用前世记忆，知道巴里·布鲁姆会在下午3点因急躁而犯错，提前布置录音设备。",
+          "opponent_reaction": "巴里·布鲁姆见玛莎拒绝，开始言语威胁，并试图绕过玛莎直接施压麦珂。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂家族办公室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里·布鲁姆将文件拍在桌上"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_141_BARRETT_TAPE",
+              "timeline_scope": "current",
+              "display_name": "巴里·布鲁姆的自曝录音",
+              "kind": "evidence"
+            },
+            {
+              "artifact_id": "ART_141_LIVIA_DIAGNOSIS",
+              "timeline_scope": "current",
+              "display_name": "莉薇娅·普莱斯的临床诊断书",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_139_PRESSURE_LOG_SIGNATURE",
+              "timeline_scope": "current",
+              "purpose": "作为背景参考，显示之前的压力测试"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆递交伪造的税务违规通知，要求玛莎签署授权书。",
+            "玛莎在麦珂的眼神示意下，冷静地拒绝签署，并询问法律依据。",
+            "巴里·布鲁姆恼羞成怒，开始在办公室踱步，低声咒骂，并自言自语如何伪造数据。",
+            "麦珂暗中启动录音笔，记录下巴里·布鲁姆的自曝言论。",
+            "莉薇娅·普莱斯突然出现，出示玛莎的临床诊断书，证明玛莎目前不具备签署复杂法律文件的认知能力。",
+            "巴里·布鲁姆惊慌失措，试图抢夺诊断书，被黛安娜拦住。",
+            "巴里·布鲁姆被迫离开，但留下话柄，威胁将采取更严厉措施。"
+          ],
+          "visible_payoff": "玛莎成功拒绝签署文件，巴里·布鲁姆露出破绽，录音证据获取。",
+          "ending": "巴里·布鲁姆愤然离去，麦珂与莉薇娅确认下一步计划。",
+          "must_include": [
+            "玛莎的拒绝",
+            "巴里·布鲁姆的自曝录音",
+            "莉薇娅的诊断书"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "1983年10月13日，蓝盾公司代表巴里·布鲁姆带着伪造的税务违规通知闯入麦珂家族办公室，要求玛莎立即签署授权书以‘解冻’账户。玛莎在麦珂的眼神示意下，冷静地拒绝签署，并询问法律依据。巴里·布鲁姆恼羞成怒，开始在办公室踱步，低声咒骂，并自言自语如何伪造数据。麦珂暗中启动录音笔，记录下巴里·布鲁姆的自曝言论。莉薇娅·普莱斯突然出现，出示玛莎的临床诊断书，证明玛莎目前不具备签署复杂法律文件的认知能力。巴里·布鲁姆惊慌失措，试图抢夺诊断书，被黛安娜拦住。巴里·布鲁姆被迫离开，但留下话柄，威胁将采取更严厉措施。"
+        },
+        {
+          "chapter_id": 142,
+          "timeline_start": "1983-10-14",
+          "timeline_end": "1983-10-14",
+          "scene": "听证会现场",
+          "chapter_goal": "当众揭穿巴里·布鲁姆的阴谋，确立审计数据的物理核验惯例。",
+          "chapter_title": "磁带与真相",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "莉薇娅·普莱斯",
+            "玛莎",
+            "黛安娜",
+            "法官"
+          ],
+          "opening_conflict": "巴里·布鲁姆在听证会上试图强行插入篡改后的数据盘，声称这是唯一合法的审计记录。",
+          "info_gap_use": "麦珂利用前世记忆，知道巴里·布鲁姆会在听证会上使用篡改后的数据盘，提前准备原始磁带备份。",
+          "opponent_reaction": "巴里·布鲁姆见麦珂拿出录音笔，试图辩解，但被录音内容打脸。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里·布鲁姆将数据盘插入机器"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_142_PHYSICAL_AUDIT_CERT",
+              "timeline_scope": "current",
+              "display_name": "三方物理核验证书",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_141_BARRETT_TAPE",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据，证明巴里·布鲁姆篡改数据"
+            },
+            {
+              "artifact_id": "ART_141_LIVIA_DIAGNOSIS",
+              "timeline_scope": "current",
+              "purpose": "证明玛莎不具备签署能力"
+            }
+          ],
+          "action_sequence": [
+            "听证会开始，巴里·布鲁姆试图强行插入篡改后的数据盘，声称这是唯一合法的审计记录。",
+            "麦珂当众切断电源，阻止数据盘读取，并展示原始磁带备份。",
+            "麦珂播放巴里·布鲁姆的录音，揭露其伪造数据的阴谋。",
+            "莉薇娅·普莱斯出示玛莎的临床诊断书，证明玛莎不具备签署复杂法律文件的认知能力。",
+            "法官宣布巴里·布鲁姆的审计无效，并要求进行三方物理核验。",
+            "巴里·布鲁姆惊慌失措，试图辩解，但被录音内容打脸。",
+            "麦珂团队成功保住1982年完整税务记录，确立审计数据必须经三方物理核验的惯例。"
+          ],
+          "visible_payoff": "巴里·布鲁姆阴谋败露，审计无效，确立物理核验惯例。",
+          "ending": "巴里·布鲁姆被奥瑞恩集团内部调查，麦珂团队胜利。",
+          "must_include": [
+            "切断电源",
+            "播放录音",
+            "三方物理核验"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "1983年10月14日，听证会现场，巴里·布鲁姆试图强行插入篡改后的数据盘，声称这是唯一合法的审计记录。麦珂当众切断电源，阻止数据盘读取，并展示原始磁带备份。麦珂播放巴里·布鲁姆的录音，揭露其伪造数据的阴谋。莉薇娅·普莱斯出示玛莎的临床诊断书，证明玛莎不具备签署复杂法律文件的认知能力。法官宣布巴里·布鲁姆的审计无效，并要求进行三方物理核验。巴里·布鲁姆惊慌失措，试图辩解，但被录音内容打脸。麦珂团队成功保住1982年完整税务记录，确立审计数据必须经三方物理核验的惯例。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC072",
+      "chapter_span": [
+        143,
+        144
+      ],
+      "source_event_direction": "前世具体受害：前世假新闻通过模拟信号干扰扩散，导致公众误信麦珂病情恶化而逼迫其放弃监护权。；本事件独有的前世信息差：麦珂掌握1983年某次干扰事件的具体频段，并知晓巴里·布鲁姆计划在广播站制造混乱。；今生提前动作：麦珂协调艾琳·沃特曼提前锁定干扰频段并在本地电台发布反向校准信号。；第143章可见小赢：当媒体经理启动干扰设备时，现场收音机只传出清晰的麦珂呼吸声与嘉宾歌手的诊断原话。；第144章新交锋：维克多·兰斯试图在现场指认麦珂精神失常，却被嘉宾歌手出示实时心电图数据反驳。；阻力方永久现实损失：奥瑞恩集团因舆论操控失败被联邦通讯委员会警告，信誉受损且无法利用媒体施压。；主角现实收益：麦珂确立‘临床数据优先于媒体叙事’原则，嘉宾歌手获得独立发布临床报告的法定权力。；不可逆结算键：1983_10_18_Broadcast_Interference_Block；接回死亡控制主线：防止了舆论误导导致的错误医疗决策，避免了前世因被剥夺监护权而引发的连锁悲剧。",
+      "source_event_direction_sha256": "41f6316c197076634e2affd015646ea6051a1d1f9d9c25b7119e89c7a3cb33af",
+      "source_macro_sha256": "adc54d66d106e66849bea9a864987a253a763eccfa06294f8f3470737cfaa81a",
+      "name": "频段封锁与临床铁证",
+      "timeline_years": "1983—1984",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "维克多·兰斯",
+        "艾琳·沃特曼",
+        "巴里·布鲁姆"
+      ],
+      "fictional_obstacle": "维克多·兰斯利用‘蓝盾’公司伪造的税务通知单，企图通过模拟信号干扰广播，制造麦珂精神失常、病情恶化的假新闻，从而触发信托冻结条款。",
+      "prev_life_tragedy": "前世假新闻通过模拟信号干扰扩散，导致公众误信麦珂病情恶化而逼迫其放弃监护权，最终导致麦珂在无人监护下接受错误治疗而死。",
+      "info_gap_from_prev_life": "麦珂掌握1983年某次干扰事件的具体频段（FM 98.6 MHz），并知晓巴里·布鲁姆计划在广播站制造混乱以掩盖伪造文件签署过程。",
+      "why_previous_life_failed": "前世麦珂未能识破频段干扰的阴谋，被动接受舆论审判，导致医疗决策权被非法剥夺。",
+      "preemptive_avoidance": "麦珂协调艾琳·沃特曼提前锁定干扰频段，并在本地电台发布反向校准信号，同时安排莉薇娅·普莱斯携带实时临床数据出席听证会。",
+      "bait_and_evidence": "麦珂故意泄露虚假的‘签署仪式’时间地点，引诱维克多启动干扰设备，同时由莉薇娅出示实时心电图与莉薇娅的临床诊断书，形成铁证。",
+      "comic_villain_behavior": "巴里·布鲁姆在干扰失败后，试图用‘设备故障’搪塞，却因紧张打翻了手中的咖啡，弄脏了伪造的税务通知单，暴露了其慌乱与心虚。",
+      "villain_loss": "奥瑞恩集团因舆论操控失败被联邦通讯委员会警告，信誉受损，且无法利用媒体施压，维克多·兰斯的隐蔽渗透计划首次受挫。",
+      "protagonist_gain": "麦珂确立‘临床数据优先于媒体叙事’原则，莉薇娅·普莱斯获得独立发布临床报告的法定权力，家族信托安全得到进一步巩固。",
+      "relationship_change": "莉薇娅·普莱斯成为麦珂团队的核心防线，信任度大幅提升；维克多·兰斯意识到常规手段失效，开始策划更深层的攻击。",
+      "continuity_writes": [
+        "EC072"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_006",
+          "state_key": "legal_status",
+          "from": "threatened",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_143_BROADCAST_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_ORION_001",
+          "state_key": "public_trust",
+          "from": "stable",
+          "to": "damaged",
+          "irreversible": true,
+          "evidence": "ART_144_FCC_WARNING",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "1983_10_18_Broadcast_Interference_Block"
+      ],
+      "cluster_outcome": "维克多·兰斯的隐蔽渗透计划首次受挫，‘蓝盾’公司因证据不足被起诉，奥瑞恩集团被迫转入更隐蔽的对抗阶段；麦珂团队成功确立医疗决策权的独立地位，《家庭治理宪章》正式生效；莉薇娅·普莱斯成为对抗虚假医疗指控的核心防线；巴里·布鲁姆暂时退居二线等待下一次机会；伏笔：维克多·兰斯将启动更深层的‘健康趋势预测模型’测试，并试图收购老牌胶片冲印厂以切断物理证据链。",
+      "next_event_hook": "维克多·兰斯启动‘健康趋势预测模型’测试，并试图收购老牌胶片冲印厂以切断物理证据链。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 143,
+          "timeline_start": "1983-10-18",
+          "timeline_end": "1983-10-18",
+          "scene": "市立广播中心控制室",
+          "chapter_goal": "通过反向校准信号阻断干扰，揭露巴里·布鲁姆的阴谋。",
+          "chapter_title": "静默的频段",
+          "participants": [
+            "麦珂",
+            "艾琳·沃特曼",
+            "巴里·布鲁姆"
+          ],
+          "opening_conflict": "巴里·布鲁姆试图启动干扰设备，制造麦珂精神失常的假新闻。",
+          "info_gap_use": "麦珂利用前世记忆中的频段信息，提前协调艾琳·沃特曼锁定干扰源。",
+          "opponent_reaction": "巴里·布鲁姆发现干扰失败，试图用‘设备故障’搪塞，却因紧张打翻了咖啡。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市立广播中心控制室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂走进控制室，看到巴里·布鲁姆正在调试设备。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_143_BROADCAST_LOG",
+              "timeline_scope": "current",
+              "display_name": "广播干扰阻断日志",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_142_PHYSICAL_AUDIT_CERT",
+              "timeline_scope": "current",
+              "purpose": "作为背景证据，证明麦珂团队已掌握审计主动权。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂进入控制室，观察巴里·布鲁姆的异常举动。",
+            "巴里·布鲁姆启动干扰设备，试图制造混乱。",
+            "艾琳·沃特曼启动反向校准信号，阻断干扰。",
+            "巴里·布鲁姆惊慌失措，打翻咖啡，暴露心虚。"
+          ],
+          "visible_payoff": "当媒体经理启动干扰设备时，现场收音机只传出清晰的麦珂呼吸声与嘉宾歌手的诊断原话。",
+          "ending": "巴里·布鲁姆的阴谋被当场揭穿，麦珂团队掌握主动权。",
+          "must_include": [
+            "反向校准信号",
+            "巴里·布鲁姆的慌乱",
+            "清晰的广播内容"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "互联网"
+          ],
+          "detailed_synopsis": "麦珂走进市立广播中心控制室，空气中弥漫着紧张的气息。巴里·布鲁姆正站在控制台前，手指在旋钮上快速移动，试图启动干扰设备。麦珂冷静地观察着，心中默念着前世记忆中的频段信息。艾琳·沃特曼早已潜伏在侧，手中握着反向校准信号的发射器。当巴里·布鲁姆按下启动键的瞬间，艾琳迅速发射信号，干扰被瞬间阻断。现场收音机中，原本预期的嘈杂噪音并未出现，反而传出清晰的麦珂呼吸声与莉薇娅·普莱斯的诊断原话。巴里·布鲁姆惊慌失措，试图用‘设备故障’搪塞，却因紧张打翻了手中的咖啡，弄脏了伪造的税务通知单，暴露了其慌乱与心虚。麦珂冷冷地看着他，心中明白，这只是开始。"
+        },
+        {
+          "chapter_id": 144,
+          "timeline_start": "1983-10-18",
+          "timeline_end": "1983-10-18",
+          "scene": "家族信托听证会现场",
+          "chapter_goal": "通过实时临床数据反驳维克多·兰斯的指控，确立医疗决策权。",
+          "chapter_title": "数据的重量",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "维克多·兰斯",
+            "托马斯·布莱克"
+          ],
+          "opening_conflict": "维克多·兰斯试图在现场指认麦珂精神失常，要求冻结信托。",
+          "info_gap_use": "麦珂利用莉薇娅·普莱斯的临床诊断书与实时心电图数据，反驳维克多的指控。",
+          "opponent_reaction": "维克多·兰斯发现证据不足，被迫放弃指控，但眼神中透露出更深的阴鸷。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "家族信托听证会现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂与莉薇娅·普莱斯步入听证会现场，面对维克多·兰斯的指控。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_144_FCC_WARNING",
+              "timeline_scope": "current",
+              "display_name": "联邦通讯委员会警告信",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_143_BROADCAST_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为证据，证明维克多·兰斯试图操纵舆论。"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯在听证会上指认麦珂精神失常。",
+            "莉薇娅·普莱斯出示实时心电图与临床诊断书。",
+            "麦珂引用广播干扰日志，揭露维克多的阴谋。",
+            "维克多·兰斯被迫放弃指控，但眼神阴鸷。"
+          ],
+          "visible_payoff": "维克多·兰斯试图在现场指认麦珂精神失常，却被嘉宾歌手出示实时心电图数据反驳。",
+          "ending": "麦珂团队成功确立医疗决策权的独立地位，《家庭治理宪章》正式生效。",
+          "must_include": [
+            "实时心电图",
+            "临床诊断书",
+            "维克多·兰斯的阴鸷"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "互联网"
+          ],
+          "detailed_synopsis": "听证会现场，气氛凝重。维克多·兰斯站在指控席上，试图指认麦珂精神失常，要求冻结家族信托。然而，莉薇娅·普莱斯冷静地走上前，出示了麦珂的实时心电图与临床诊断书。心电图显示麦珂心率平稳，诊断书则明确指出麦珂精神状态正常。麦珂随后引用广播干扰日志，揭露维克多试图通过操纵舆论来达成非法目的。维克多·兰斯脸色铁青，意识到证据不足，被迫放弃指控。然而，他的眼神中透露出更深的阴鸷，仿佛在策划着更深层的攻击。麦珂心中明白，这场胜利只是暂时的，更大的风暴正在酝酿。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC073",
+      "chapter_span": [
+        145,
+        146
+      ],
+      "source_event_direction": "前世具体受害：前世巴里·布鲁姆利用录音笔伪造麦珂神志不清的口供，成为更换监护人的关键证据。；本事件独有的前世信息差：麦珂预知巴里会在录音笔中留下关于‘健康趋势预测模型’的自言自语作为把柄。；今生提前动作：麦珂安排昆廷·琼斯在录音设备中植入单向监听器并引导媒体经理进入预设对话场景。；第145章可见小赢：媒体经理在录音室自信地录制虚假口供，却不知自己的贪婪言论已被完整收录。；第146章新交锋：听证会上麦珂播放真实录音，揭露媒体经理承认受维克多指使伪造数据，全场哗然。；阻力方永久现实损失：媒体经理因作伪证面临刑事指控，奥瑞恩集团被迫与其切割以保全自身声誉。；主角现实收益：麦珂彻底粉碎对手利用医疗鉴定进行法律欺诈的企图，巩固了家庭治理宪章中的医疗决策条款。；不可逆结算键：1983_10_20_Reel_Evidence_Playback；接回死亡控制主线：消除了因伪造证据导致的监护权丧失风险，确保了麦珂生前始终拥有自主医疗决定权。",
+      "source_event_direction_sha256": "97882cfcbf30954a1a941b2da135f60dce03cd18f10ae9ffcbf7cb5d80a88004",
+      "source_macro_sha256": "adc54d66d106e66849bea9a864987a253a763eccfa06294f8f3470737cfaa81a",
+      "name": "录音笔里的审判",
+      "timeline_years": "1983",
+      "main_opponent": "巴里·布鲁姆",
+      "opposition_type": "technical",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "巴里·布鲁姆",
+        "昆廷·琼斯",
+        "莉薇娅·普莱斯"
+      ],
+      "fictional_obstacle": "巴里·布鲁姆试图通过伪造麦珂神志不清的录音，配合‘蓝盾’公司的虚假税务审计，申请法院剥夺麦珂的医疗决策权。",
+      "prev_life_tragedy": "前世，麦珂在病榻上被巴里·布鲁姆诱导说出胡话，录音被剪辑后成为法官剥夺其监护权的关键证据，导致麦珂在昏迷中遭受非人道的实验性治疗。",
+      "info_gap_from_prev_life": "麦珂记得巴里·布鲁姆在录音结束后，会因自负而对着录音笔自言自语，透露维克多·兰斯正在测试‘健康趋势预测模型’，并嘲笑麦珂的无知。",
+      "why_previous_life_failed": "前世麦珂缺乏防备，且不知录音笔具有长时间待机录音功能，误以为对话结束即停止录音。",
+      "preemptive_avoidance": "麦珂安排昆廷·琼斯在巴里·布鲁姆使用的‘星音公司’录音笔中植入微型单向监听器，并故意在对话中示弱，诱导巴里·布鲁姆放松警惕。",
+      "bait_and_evidence": "麦珂假装对‘蓝盾’的税务指控感到恐慌，询问巴里·布鲁姆是否有‘更高级’的解决办法，诱使巴里·布鲁姆炫耀其背后的技术模型。",
+      "comic_villain_behavior": "巴里·布鲁姆在录音笔‘停止’后，依然对着它吹嘘自己如何操纵数据，甚至模仿麦珂前世‘神志不清’的语气取乐，完全未察觉监听器的存在。",
+      "villain_loss": "巴里·布鲁姆因作伪证和阴谋破坏商业信誉面临刑事指控，奥瑞恩集团为自保将其公开除名，切断所有资金关联。",
+      "protagonist_gain": "麦珂彻底粉碎了对手利用医疗鉴定进行法律欺诈的企图，巩固了《家庭治理宪章》中的医疗决策条款，确立了莉薇娅·普莱斯的绝对权威。",
+      "relationship_change": "巴里·布鲁姆从核心执行者沦为弃子；莉薇娅·普莱斯与麦珂的信任达到顶峰，成为不可撼动的盟友。",
+      "continuity_writes": [
+        "巴里·布鲁姆的录音证据被法庭采信。",
+        "奥瑞恩集团与巴里·布鲁姆的法律关系解除。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_006",
+          "state_key": "medical_guardianship",
+          "from": "contested",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_145_BARRETT_CONFESION_TAPE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_BARRY_001",
+          "state_key": "professional_standing",
+          "from": "trusted",
+          "to": "disgraced",
+          "irreversible": true,
+          "evidence": "ART_146_COURT_RULING",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1983_SONY_RECORDER"
+      ],
+      "cluster_outcome": "麦珂在听证会上播放巴里·布鲁姆的完整录音，揭露其伪造证据的阴谋，巴里·布鲁姆被捕，奥瑞恩集团被迫放弃接管家族信托，麦珂的医疗决策权得到法律永久保护。",
+      "next_event_hook": "维克多·兰斯意识到巴里·布鲁姆的失败，决定启动更深层的‘健康趋势预测模型’测试，并试图收购老牌胶片冲印厂以切断物理证据链。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 145,
+          "timeline_start": "1983-10-19",
+          "timeline_end": "1983-10-19",
+          "scene": "麦珂书房",
+          "chapter_goal": "诱导巴里·布鲁姆在录音笔中留下犯罪证据。",
+          "chapter_title": "沉默的见证者",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "昆廷·琼斯"
+          ],
+          "opening_conflict": "巴里·布鲁姆带着‘蓝盾’公司的最后通牒来到麦珂书房，要求麦珂签署放弃医疗决策权的协议，否则将公开伪造的税务违规证据。",
+          "info_gap_use": "麦珂利用前世记忆，知道巴里·布鲁姆会在录音结束后继续说话，因此提前让昆廷·琼斯在录音笔中植入监听器。",
+          "opponent_reaction": "巴里·布鲁姆看到麦珂的‘软弱’和‘恐惧’，得意忘形，认为计划即将成功。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂书房",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里·布鲁姆按下录音笔的‘停止’键，但麦珂嘴角微扬。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_145_BARRETT_CONFESION_TAPE",
+              "timeline_scope": "current",
+              "display_name": "巴里·布鲁姆的自白录音带",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_139_PRESSURE_LOG_SIGNATURE",
+              "timeline_scope": "current",
+              "purpose": "麦珂提及此文件，假装困惑，诱导巴里·布鲁姆解释其伪造手段。"
+            }
+          ],
+          "action_sequence": [
+            "巴里·布鲁姆展示伪造的税务通知单，威胁麦珂。",
+            "麦珂假装崩溃，询问是否有‘更高级’的解决办法。",
+            "巴里·布鲁姆得意地解释‘健康趋势预测模型’如何操纵数据。",
+            "巴里·布鲁姆按下录音笔停止键，开始自言自语，炫耀自己的计划。",
+            "昆廷·琼斯在门外通过监听器记录一切，麦珂保持冷静。"
+          ],
+          "visible_payoff": "巴里·布鲁姆完全落入陷阱，录音笔记录了其完整的犯罪自白。",
+          "ending": "巴里·布鲁姆离开，麦珂与昆廷·琼斯对视，确认证据完整。",
+          "must_include": [
+            "星音公司录音笔的特写。",
+            "巴里·布鲁姆自负的自言自语。",
+            "昆廷·琼斯的专业监听操作。"
+          ],
+          "must_not_include": [
+            "手机。",
+            "电子邮件。"
+          ],
+          "detailed_synopsis": "巴里·布鲁姆带着‘蓝盾’公司的最后通牒闯入麦珂的书房，桌上摆着伪造的1982年税务违规通知单。巴里·布鲁姆要求麦珂签署放弃医疗决策权的协议，声称这是为了‘保护’家族资产。麦珂假装惊恐，颤抖着询问是否有其他办法。巴里·布鲁姆得意地凑近，低声解释维克多·兰斯正在测试的‘健康趋势预测模型’，声称可以轻易操纵任何数据。他按下录音笔的‘停止’键，认为对话已结束，随即开始对着录音笔自言自语，嘲笑麦珂的无知，并详细描述了如何伪造医疗诊断书。门外，昆廷·琼斯通过植入的监听器，将巴里·布鲁姆的每一句自白清晰记录在备用磁带上。麦珂保持冷静，嘴角微扬，等待猎物完全入网。"
+        },
+        {
+          "chapter_id": 146,
+          "timeline_start": "1983-10-20",
+          "timeline_end": "1983-10-20",
+          "scene": "银湾市家庭法院听证室",
+          "chapter_goal": "在听证会上播放录音，揭露巴里·布鲁姆的阴谋，确立麦珂的医疗决策权。",
+          "chapter_title": "真相的回响",
+          "participants": [
+            "麦珂",
+            "巴里·布鲁姆",
+            "莉薇娅·普莱斯",
+            "法官",
+            "奥瑞恩集团律师"
+          ],
+          "opening_conflict": "奥瑞恩集团律师提交伪造的医疗诊断书，申请剥夺麦珂的医疗决策权，巴里·布鲁姆作为证人出庭作证。",
+          "info_gap_use": "麦珂在关键时刻播放巴里·布鲁姆的自白录音，揭露其伪造证据的真相。",
+          "opponent_reaction": "巴里·布鲁姆脸色惨白，试图辩解，但录音证据确凿，无法反驳。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市家庭法院听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法官要求麦珂方提供反驳证据。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_146_COURT_RULING",
+              "timeline_scope": "current",
+              "display_name": "法院驳回奥瑞恩集团申请的判决书",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_145_BARRETT_CONFESION_TAPE",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据播放，揭露巴里·布鲁姆的阴谋。"
+            },
+            {
+              "artifact_id": "ART_130_DENIAL_CERT",
+              "timeline_scope": "current",
+              "purpose": "莉薇娅·普莱斯出示此文件，证明麦珂神志清醒。"
+            }
+          ],
+          "action_sequence": [
+            "奥瑞恩集团律师提交伪造证据，巴里·布鲁姆出庭作证。",
+            "法官询问麦珂方是否有反驳证据。",
+            "麦珂播放巴里·布鲁姆的自白录音。",
+            "录音中巴里·布鲁姆承认伪造数据并嘲笑麦珂。",
+            "全场哗然，巴里·布鲁姆试图辩解但被录音打脸。",
+            "莉薇娅·普莱斯出示临床诊断书，证明麦珂神志清醒。",
+            "法官当庭驳回奥瑞恩集团的申请，并下令调查巴里·布鲁姆。"
+          ],
+          "visible_payoff": "巴里·布鲁姆被警方带走，奥瑞恩集团律师败诉，麦珂的医疗决策权得到法律确认。",
+          "ending": "麦珂走出法院，阳光洒在脸上，莉薇娅·普莱斯站在他身边，两人相视一笑。",
+          "must_include": [
+            "录音播放时的全场寂静。",
+            "巴里·布鲁姆的惊恐表情。",
+            "莉薇娅·普莱斯的坚定眼神。"
+          ],
+          "must_not_include": [
+            "公众媒体。",
+            "网络上传。"
+          ],
+          "detailed_synopsis": "银湾市家庭法院听证室内气氛紧张。奥瑞恩集团律师提交了一份由‘蓝盾’公司出具的医疗诊断书，声称麦珂神志不清，无法做出医疗决策。巴里·布鲁姆作为证人出庭，信誓旦旦地作证。法官询问麦珂方是否有反驳证据。麦珂冷静地走向证人席，播放了昆廷·琼斯录制的磁带。录音中，巴里·布鲁姆的声音清晰可辨，他承认伪造数据，并嘲笑麦珂的无知。全场哗然，巴里·布鲁姆脸色惨白，试图辩解，但录音证据确凿。莉薇娅·普莱斯随即出示了她的临床诊断书，证明麦珂神志清醒，具备完全行为能力。法官当庭驳回奥瑞恩集团的申请，并下令警方调查巴里·布鲁姆的作伪证行为。麦珂走出法院，阳光洒在脸上，莉薇娅·普莱斯站在他身边，两人相视一笑，胜利的喜悦溢于言表。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC074",
+      "chapter_span": [
+        147,
+        148
+      ],
+      "source_event_direction": "前世具体受害：前世第三方审计数据污染导致信托被接管，麦珂被迫接受非专业医疗方案加速死亡。；本事件独有的前世信息差：麦珂清楚1984年‘蓝盾’公司将利用伪造税务单诱导签署协议，且该团伙有1982年案底。；今生提前动作：温特律师依据前世记忆调取1982年旧卷宗，并在法庭上申请对‘蓝盾’数据进行司法鉴定。；第147章可见小赢：鉴定专家当庭指出‘蓝盾’数据存在人为修改痕迹，维克多·兰斯脸色铁青却无法辩驳。；第148章新交锋：法官驳回奥瑞恩集团接管信托的申请，并下令查封‘蓝盾’公司相关账本进行调查。；阻力方永久现实损失：维克多·兰斯的隐蔽渗透计划首次全面受挫，‘蓝盾’公司因证据不足被起诉且业务停摆。；主角现实收益：麦珂团队成功确立医疗决策权与商业审计权的绝对隔离，《家庭治理宪章》正式生效。；不可逆结算键：1983_10_22_Judicial_Chartification_Seal；接回死亡控制主线：终结了前世因信托被接管而导致的生命控制权旁落，为四十年后的终局胜利奠定法理基础。",
+      "source_event_direction_sha256": "57649e4be41be8ad9fe7df515b95d33b26e3644934e8922f08d2bfb04c55effb",
+      "source_macro_sha256": "adc54d66d106e66849bea9a864987a253a763eccfa06294f8f3470737cfaa81a",
+      "name": "蓝盾审计数据污染与司法确权",
+      "timeline_years": "1983-1984",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "institutional",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "温特律师",
+        "莉薇娅·普莱斯",
+        "维克多·兰斯",
+        "法官哈罗德"
+      ],
+      "fictional_obstacle": "维克多指使‘蓝盾’公司利用伪造的1982年税务数据，指控麦珂家族信托违规，企图冻结资产并强制更换医疗监护人。",
+      "prev_life_tragedy": "前世因第三方审计数据被污染，信托被接管，麦珂被迫接受非专业医疗方案加速死亡。",
+      "info_gap_from_prev_life": "麦珂知晓1984年‘蓝盾’公司将利用伪造税务单诱导签署协议，且该团伙有1982年案底。",
+      "why_previous_life_failed": "前世麦珂未察觉数据造假，盲目信任审计结果，导致法律防线崩溃。",
+      "preemptive_avoidance": "温特律师依据前世记忆调取1982年旧卷宗，并在法庭上申请对‘蓝盾’数据进行司法鉴定。",
+      "bait_and_evidence": "麦珂故意泄露虚假的‘妥协意向’，诱使维克多提前发动攻击，同时莉薇娅提供临床诊断书证明麦珂具备完全行为能力，巴里·布鲁姆留下的录音笔作为辅助证据。",
+      "comic_villain_behavior": "维克多·兰斯在法庭上试图用‘专业术语’混淆视听，却被法官打断，脸色铁青却无法辩驳，显得滑稽而狼狈。",
+      "villain_loss": "维克多·兰斯的隐蔽渗透计划首次全面受挫，‘蓝盾’公司因证据不足被起诉且业务停摆。",
+      "protagonist_gain": "麦珂团队成功确立医疗决策权与商业审计权的绝对隔离，《家庭治理宪章》正式生效。",
+      "relationship_change": "莉薇娅·普莱斯成为对抗虚假医疗指控的核心防线，与麦珂的信任达到顶峰；维克多·兰斯对麦珂的恨意加深，转入更隐蔽的对抗阶段。",
+      "continuity_writes": [
+        "RIGHT_VL_007",
+        "REP_VICTOR_002"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007",
+          "state_key": "trust_governance",
+          "from": "contested",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_147_JUDICIAL_CHARTER_SEAL",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_VICTOR_002",
+          "state_key": "legal_standing",
+          "from": "aggressive",
+          "to": "defensive",
+          "irreversible": false,
+          "evidence": "ART_148_COURT_ORDER",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1983_TAX_REFORM",
+        "HA_1984_AUDIT_STANDARDS"
+      ],
+      "cluster_outcome": "法官驳回奥瑞恩集团接管信托的申请，并下令查封‘蓝盾’公司相关账本进行调查；《家庭治理宪章》正式生效，确立医疗决策权独立地位。",
+      "next_event_hook": "维克多·兰斯意识到常规手段失效，将启动更深层的‘健康趋势预测模型’测试，并试图收购老牌胶片冲印厂以切断物理证据链。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 147,
+          "timeline_start": "1983-10-21",
+          "timeline_end": "1983-10-21",
+          "scene": "法庭",
+          "chapter_goal": "通过司法鉴定揭露‘蓝盾’数据造假，取得庭审初步胜利。",
+          "chapter_title": "数据的谎言",
+          "participants": [
+            "麦珂",
+            "温特律师",
+            "莉薇娅·普莱斯",
+            "维克多·兰斯",
+            "法官哈罗德",
+            "鉴定专家"
+          ],
+          "opening_conflict": "维克多·兰斯提交‘蓝盾’审计报告，指控麦珂家族信托税务违规，要求冻结资产。",
+          "info_gap_use": "温特律师当庭提交1982年‘蓝盾’类似诈骗案卷宗，指出其惯用手法。",
+          "opponent_reaction": "维克多·兰斯试图以‘数据复杂性’为由拒绝详细解释，被法官严厉警告。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法庭",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法槌落下"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_147_JUDICIAL_CHARTER_SEAL",
+              "timeline_scope": "current",
+              "display_name": "司法确认的《家庭治理宪章》印章",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_139_PRESSURE_LOG_SIGNATURE",
+              "timeline_scope": "current",
+              "purpose": "证明麦珂具备完全行为能力"
+            }
+          ],
+          "action_sequence": [
+            "维克多提交审计报告",
+            "温特律师申请司法鉴定",
+            "鉴定专家当庭指出数据修改痕迹",
+            "维克多脸色铁青无法辩驳"
+          ],
+          "visible_payoff": "鉴定专家当庭指出‘蓝盾’数据存在人为修改痕迹，维克多·兰斯脸色铁青却无法辩驳。",
+          "ending": "法官宣布休庭，等待进一步证据，维克多暂时受挫。",
+          "must_include": [
+            "司法鉴定过程",
+            "维克多的狼狈",
+            "莉薇娅的支持"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "互联网"
+          ],
+          "detailed_synopsis": "1983年10月21日，曼哈顿联邦法院第三法庭。维克多·兰斯面带微笑，提交‘蓝盾’公司出具的审计报告，指控麦珂家族信托在1982年存在严重税务违规，要求立即冻结资产并更换医疗监护人。麦珂冷静旁观，温特律师起身，申请对‘蓝盾’数据进行司法鉴定。法官哈罗德准许。鉴定专家当庭展示比对结果，指出‘蓝盾’数据存在多处人为修改痕迹，与1982年类似诈骗案手法一致。维克多·兰斯脸色铁青，试图以‘数据复杂性’为由辩解，被法官严厉打断。莉薇娅·普莱斯提交临床诊断书，证明麦珂具备完全行为能力。法庭气氛紧张，维克多暂时受挫。"
+        },
+        {
+          "chapter_id": 148,
+          "timeline_start": "1983-10-22",
+          "timeline_end": "1983-10-22",
+          "scene": "法庭",
+          "chapter_goal": "法官驳回接管申请，查封‘蓝盾’账本，《家庭治理宪章》生效。",
+          "chapter_title": "宪章的封印",
+          "participants": [
+            "麦珂",
+            "温特律师",
+            "莉薇娅·普莱斯",
+            "维克多·兰斯",
+            "法官哈罗德"
+          ],
+          "opening_conflict": "维克多·兰斯试图最后挣扎，要求重新鉴定。",
+          "info_gap_use": "麦珂利用前世记忆，预判维克多的下一步动作，提前布局舆论对冲。",
+          "opponent_reaction": "维克多·兰斯意识到失败，眼神阴鸷，暗中示意助手记录所有细节。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法庭",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法槌最终落下"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_147_JUDICIAL_CHARTER_SEAL",
+              "timeline_scope": "current",
+              "purpose": "作为最终判决依据"
+            }
+          ],
+          "action_sequence": [
+            "维克多要求重新鉴定",
+            "法官驳回请求",
+            "法官下令查封‘蓝盾’账本",
+            "《家庭治理宪章》正式生效"
+          ],
+          "visible_payoff": "法官驳回奥瑞恩集团接管信托的申请，并下令查封‘蓝盾’公司相关账本进行调查。",
+          "ending": "《家庭治理宪章》正式生效，麦珂确立医疗决策权与商业审计权的绝对隔离。",
+          "must_include": [
+            "法官的最终判决",
+            "宪章生效仪式",
+            "维克多的阴鸷眼神"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "互联网"
+          ],
+          "detailed_synopsis": "1983年10月22日，曼哈顿联邦法院第三法庭。维克多·兰斯试图最后挣扎，要求重新鉴定。法官哈罗德严厉驳回，指出‘蓝盾’数据造假证据确凿，下令查封其相关账本进行调查。随后，法官宣布《家庭治理宪章》正式生效，确立麦珂家族信托的医疗决策权与商业审计权绝对隔离。麦珂与莉薇娅·普莱斯相视一笑，胜利在望。维克多·兰斯眼神阴鸷，暗中示意助手记录所有细节，预示下一次更隐蔽的对抗。法庭外，记者们蜂拥而至，麦珂团队成功确立法律地位。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC075",
+      "chapter_span": [
+        149,
+        150
+      ],
+      "source_event_direction": "前世具体受害：前世奥瑞恩集团通过长期渗透最终完全控制麦珂家族资源，使其沦为傀儡。；本事件独有的前世信息差：麦珂知道维克多·兰斯将启动更深层的‘健康趋势预测模型’测试并试图收购胶片冲印厂。；今生提前动作：麦珂在庆功宴上当众宣布收购老牌胶片冲印厂的计划，抢先一步切断对手获取物理证据的渠道。；第149章可见小赢：维克多·兰斯试图阻挠收购，却发现麦珂已联合苏菲亚·罗德里格斯完成所有胶片存档转移。；第150章新交锋：奥瑞恩集团被迫承认常规手段失效，转入更隐蔽的对抗阶段，但已无法触及核心资产。；阻力方永久现实损失：维克多·兰斯失去通过物理介质切断证据链的机会，被迫重新制定战略并陷入被动防御。；主角现实收益：麦珂团队掌握了未来对抗的关键物理证据库，确立了不可逆转的家族资产安全壁垒。；不可逆结算键：1983_10_24_Film_Development_Acquisition；接回死亡控制主线：锁死了前世仇敌利用物理证据链进行毁灭性打击的路径，确保麦珂在2009年仍握有反击筹码。",
+      "source_event_direction_sha256": "27a9bd25ea77c772291981a37563be9b99b3901e6649371d03960ad999115ed0",
+      "source_macro_sha256": "adc54d66d106e66849bea9a864987a253a763eccfa06294f8f3470737cfaa81a",
+      "name": "胶片帝国：物理证据的终极封锁",
+      "timeline_years": "1983-1984",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "莉薇娅·普莱斯"
+      ],
+      "fictional_obstacle": "维克多·兰斯试图通过收购‘银底’胶片冲印厂，利用其垄断地位销毁所有未数字化的原始底片，从而切断麦珂家族信托中关于1982年税务欺诈的物理证据链。",
+      "prev_life_tragedy": "前世，维克多·兰斯成功收购‘银底’厂，并借‘技术升级’之名销毁了关键底片，导致麦珂在2009年因缺乏原始物证而被彻底剥夺继承权，沦为傀儡。",
+      "info_gap_from_prev_life": "麦珂预知维克多·兰斯将在1983年10月启动对‘银底’厂的恶意收购，并计划利用该厂销毁证据以配合其‘健康趋势预测模型’的虚假数据生成。",
+      "why_previous_life_failed": "前世麦珂专注于法律条文和财务审计，忽视了物理介质（胶片）作为最终证据载体的重要性，未意识到对手会从物理层面切断证据链。",
+      "preemptive_avoidance": "麦珂在庆功宴上突然宣布麦珂家族信托将全资收购‘银底’胶片冲印厂，并立即派遣苏菲亚·罗德里格斯携带公证律师前往工厂，完成所有历史底片的封存与转移。",
+      "bait_and_evidence": "麦珂故意放出风声称‘银底’厂库存中有针对奥瑞恩集团的不利影像资料，诱使维克多·兰斯急于出手，却在对方行动前已完成法律上的资产隔离。",
+      "comic_villain_behavior": "维克多·兰斯在得知收购失败后，试图以‘商业间谍罪’威胁苏菲亚，却因自己曾私下贿赂厂长的录音被麦珂团队掌握，反而陷入被动，不得不尴尬地以‘战略调整’为由撤退。",
+      "villain_loss": "维克多·兰斯永久失去通过物理销毁证据来抹黑麦珂家族的机会，其‘健康趋势预测模型’因缺乏底层数据支撑而成为空中楼阁，被迫转入更隐蔽且低效的对抗阶段。",
+      "protagonist_gain": "麦珂团队掌握了未来对抗的关键物理证据库（所有历史底片），确立了不可逆转的家族资产安全壁垒，并借此巩固了《家庭治理宪章》的权威性。",
+      "relationship_change": "苏菲亚·罗德里格斯因成功执行关键任务，与麦珂的信任关系达到新高度；莉薇娅·普莱斯见证麦珂对物理证据的重视，进一步确认其作为医疗决策权守护者的角色。",
+      "continuity_writes": [
+        "EC075_ACQUISITION_COMPLETE",
+        "EC075_EVIDENCE_VAULT_SEALED"
+      ],
+      "state_transitions": [
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_FILM_PLANT_001",
+          "state_key": "ownership",
+          "from": "independent",
+          "to": "secured_by_protagonist",
+          "irreversible": true,
+          "evidence": "ART_149_FILM_PLANT_DEED",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_EVIDENCE_CHAIN_001",
+          "state_key": "integrity",
+          "from": "vulnerable",
+          "to": "immutable",
+          "irreversible": true,
+          "evidence": "ART_150_EVIDENCE_VAULT_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "REP_VICTOR_002",
+          "state_key": "strategic_position",
+          "from": "aggressive",
+          "to": "defensive",
+          "irreversible": false,
+          "evidence": "ART_150_VICTOR_RETREAT_ORDER",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1983_FILM_INDUSTRY_SHIFT"
+      ],
+      "cluster_outcome": "麦珂成功收购‘银底’胶片冲印厂，将所有历史底片封存于地下金库，彻底锁死维克多·兰斯通过物理手段销毁证据的路径，确立家族资产安全壁垒。",
+      "next_event_hook": "维克多·兰斯意识到常规手段失效，将启动更深层的‘健康趋势预测模型’测试，并试图通过心理操控和内部渗透来瓦解麦珂团队。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 149,
+          "timeline_start": "1983-10-24",
+          "timeline_end": "1983-10-24",
+          "scene": "麦珂家族信托庆功宴大厅",
+          "chapter_goal": "宣布收购‘银底’厂，完成物理证据的初步封锁。",
+          "chapter_title": "底片背后的帝国",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "苏菲亚·罗德里格斯",
+            "莉薇娅·普莱斯",
+            "信托律师团"
+          ],
+          "opening_conflict": "维克多·兰斯在宴会上假意祝贺，实则暗中联络‘银底’厂厂长，准备启动恶意收购程序。",
+          "info_gap_use": "麦珂利用前世记忆，提前安排苏菲亚·罗德里格斯携带收购合同和公证律师在场，并在维克多行动前一刻宣布收购完成。",
+          "opponent_reaction": "维克多·兰斯震惊于麦珂的预判，试图以‘商业机密泄露’为由质疑收购合法性，但被麦珂出示的合法资金证明和律师见证驳斥。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂家族信托庆功宴大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "水晶吊灯下的香槟塔折射出冷冽的光芒，麦珂举起酒杯，目光扫过人群中神色各异的宾客。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_149_FILM_PLANT_DEED",
+              "timeline_scope": "current",
+              "display_name": "银底胶片冲印厂所有权转让书",
+              "kind": "document"
+            },
+            {
+              "artifact_id": "ART_148_COURT_ORDER",
+              "timeline_scope": "current",
+              "display_name": "ART_148_COURT_ORDER",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_148_COURT_ORDER",
+              "timeline_scope": "current",
+              "purpose": "作为收购资金合法性的辅助证明"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在宴会上突然宣布收购‘银底’厂，全场哗然。",
+            "维克多·兰斯试图以‘商业间谍罪’威胁苏菲亚，被麦珂当场揭穿其贿赂厂长的录音证据。",
+            "苏菲亚·罗德里格斯出示已签署的转让书和公证律师见证，完成法律上的资产隔离。",
+            "维克多·兰斯被迫承认失败，尴尬地以‘战略调整’为由撤退。"
+          ],
+          "visible_payoff": "维克多·兰斯失去通过物理销毁证据来抹黑麦珂家族的机会，其‘健康趋势预测模型’因缺乏底层数据支撑而成为空中楼阁。",
+          "ending": "麦珂团队将‘银底’厂的历史底片封存于地下金库，维克多·兰斯在远处注视着金库大门关闭，眼中闪过一丝阴鸷。",
+          "must_include": [
+            "收购宣布的戏剧性时刻",
+            "维克多·兰斯的尴尬撤退",
+            "苏菲亚·罗德里格斯的专业表现"
+          ],
+          "must_not_include": [
+            "任何现代科技设备",
+            "直接的心理描写"
+          ],
+          "detailed_synopsis": "1983年10月24日，麦珂家族信托庆功宴上，麦珂突然宣布全资收购‘银底’胶片冲印厂。维克多·兰斯正暗中联络厂长准备恶意收购，闻言大惊。麦珂随即出示苏菲亚·罗德里格斯携带的已签署转让书和公证律师见证，揭露维克多贿赂厂长的录音证据。维克多试图以‘商业间谍罪’威胁苏菲亚，被麦珂驳斥。最终，维克多被迫承认失败，尴尬撤退。麦珂团队将历史底片封存于地下金库，彻底锁死对手销毁证据的路径。"
+        },
+        {
+          "chapter_id": 150,
+          "timeline_start": "1983-10-25",
+          "timeline_end": "1983-10-26",
+          "scene": "‘银底’胶片冲印厂地下金库",
+          "chapter_goal": "完成物理证据的最终封存，确立不可逆转的安全壁垒。",
+          "chapter_title": "沉默的底片",
+          "participants": [
+            "麦珂",
+            "苏菲亚·罗德里格斯",
+            "莉薇娅·普莱斯",
+            "金库管理员"
+          ],
+          "opening_conflict": "维克多·兰斯试图通过法律手段质疑‘银底’厂收购的合法性，并派遣律师团向信托施压。",
+          "info_gap_use": "麦珂利用前世记忆，提前安排莉薇娅·普莱斯作为医疗决策权守护者，见证底片封存过程，确保其独立性和权威性。",
+          "opponent_reaction": "维克多·兰斯的律师团在法庭上提出质疑，但被麦珂出示的完整法律文件和公证记录驳斥，最终被迫撤诉。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "‘银底’胶片冲印厂地下金库",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "厚重的钢门缓缓关闭，将外界的光线和声音彻底隔绝，只留下底片盒摩擦的细微声响。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_150_EVIDENCE_VAULT_LOG",
+              "timeline_scope": "current",
+              "display_name": "证据金库封存记录",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_149_FILM_PLANT_DEED",
+              "timeline_scope": "current",
+              "purpose": "作为金库封存的合法性依据"
+            }
+          ],
+          "action_sequence": [
+            "麦珂、苏菲亚和莉薇娅·普莱斯进入‘银底’厂地下金库，开始封存历史底片。",
+            "维克多·兰斯的律师团向信托施压，质疑收购合法性。",
+            "麦珂出示完整法律文件和公证记录，驳斥律师团质疑。",
+            "莉薇娅·普莱斯作为见证人，签署封存记录，确立底片的独立性和权威性。",
+            "维克多·兰斯被迫撤诉，转入更隐蔽的对抗阶段。"
+          ],
+          "visible_payoff": "麦珂团队掌握所有历史底片，确立不可逆转的家族资产安全壁垒，维克多·兰斯彻底失去通过物理手段销毁证据的机会。",
+          "ending": "金库大门彻底关闭，麦珂看着手中的封存记录，深知这一举动已锁死前世仇敌的毁灭性打击路径，确保家族在2009年仍握有反击筹码。",
+          "must_include": [
+            "底片封存的仪式感",
+            "莉薇娅·普莱斯的见证角色",
+            "维克多·兰斯的无奈撤退"
+          ],
+          "must_not_include": [
+            "任何现代科技设备",
+            "直接的心理描写"
+          ],
+          "detailed_synopsis": "1983年10月25日，麦珂、苏菲亚和莉薇娅·普莱斯进入‘银底’厂地下金库，封存历史底片。维克多·兰斯的律师团向信托施压，质疑收购合法性。麦珂出示完整法律文件和公证记录，驳斥质疑。莉薇娅·普莱斯作为见证人，签署封存记录，确立底片的独立性和权威性。维克多·兰斯被迫撤诉，转入更隐蔽的对抗阶段。金库大门关闭，麦珂深知已锁死前世仇敌的毁灭性打击路径。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1983",
+    "character_states": [
+      "麦珂：掌控物理证据链，信心增强。",
+      "维克多·兰斯：战略受挫，转入隐蔽对抗。",
+      "苏菲亚·罗德里格斯：信任度提升，成为核心执行者。",
+      "莉薇娅·普莱斯：确立医疗决策权守护者角色。"
+    ],
+    "relationship_states": [
+      "麦珂与苏菲亚：信任加深。",
+      "麦珂与莉薇娅：合作稳固。",
+      "麦珂与维克多：对抗升级，但麦珂占据主动。"
+    ],
+    "rights_and_assets": [
+      "‘银底’胶片冲印厂所有权：已转移至麦珂家族信托。",
+      "历史底片：已封存于地下金库，证据链完整。",
+      "《家庭治理宪章》：正式生效，医疗决策权独立。"
+    ],
+    "health_and_location": [
+      "麦珂：健康稳定，位于麦珂家族信托总部。",
+      "维克多·兰斯：健康稳定，位于奥瑞恩集团总部。"
+    ],
+    "open_threads": [
+      "维克多·兰斯的‘健康趋势预测模型’测试。",
+      "奥瑞恩集团的内部渗透企图。"
+    ],
+    "resolved_threads": [
+      "‘银底’厂收购战。",
+      "物理证据链的封锁。"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多·兰斯将启动更深层的‘健康趋势预测模型’测试，并试图通过心理操控和内部渗透来瓦解麦珂团队。"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "generated_by": "groq",
+  "kind": "events_EC081_EC081",
+  "identifier": "MG017",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "09146048ae0f44830ddb63d7340ebe1e708bc0caabfb671b6e73977353a9f214",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T17:02:37+08:00",
+      "prompt_sha256": "09146048ae0f44830ddb63d7340ebe1e708bc0caabfb671b6e73977353a9f214",
+      "raw_response_sha256": "603a7e9733d00642ed4c900458eee89d8dd3896b91e066b2e001a3572cb4ed69",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG017_events_EC081_EC081_attempt_01_09146048ae_raw.txt",
+      "validation_failures": [
+        "EC081 不可逆状态rights:RIGHT_VL_007:trust_governance__extension_EC081已锁定为secured，不能再次改为neutralized"
+      ],
+      "provider": "groq",
+      "model": "qwen/qwen3.6-27b",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 38.756,
+      "usage": {
+        "queue_time": 0.123612329,
+        "prompt_tokens": 2754,
+        "prompt_time": 0.216088792,
+        "completion_tokens": 3640,
+        "completion_time": 7.156611147,
+        "total_tokens": 6394,
+        "total_time": 7.372699939
+      },
+      "capacity_model_fallbacks": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-20T17:03:38+08:00",
+      "prompt_sha256": "c941374d6576a9936420556ff13e8377865838b4056fdbfa1301ed0f9a6aa2f5",
+      "raw_response_sha256": "f804602daf29d1a5e99b4ce99e9a7c1fb65a0582c7ae2cccb446aed629e32ee9",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG017_events_EC081_EC081_attempt_02_09146048ae_raw.txt",
+      "validation_failures": [],
+      "provider": "groq",
+      "model": "qwen/qwen3.6-27b",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 60.872,
+      "usage": {
+        "queue_time": 0.158554283,
+        "prompt_tokens": 2852,
+        "prompt_time": 0.197947512,
+        "completion_tokens": 3223,
+        "completion_time": 6.111375043,
+        "total_tokens": 6075,
+        "total_time": 6.309322555
+      },
+      "capacity_model_fallbacks": [
+        "openai/gpt-oss-120b"
+      ]
+    }
+  ]
+}

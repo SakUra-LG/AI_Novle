@@ -27,7 +27,7 @@ PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "outputs")
 
 
-API_Key_QW = os.getenv("DASHSCOPE_API_KEY", "sk-a2966f4e37134351904851679884cb67")
+API_Key_QW = os.getenv("DASHSCOPE_API_KEY", "").strip()
 MAX_TOKENS = 8192
 
 # 在 V2 流程中统一锁定男女主姓名，后续所有脚本与模型提示都复用这一对名字
@@ -81,6 +81,8 @@ SPECIAL_CHAPTER_PLAN: Dict[int, Dict[str, Any]] = {
 
 def call_qianwen_api(messages, temperature=0.8, top_p=0.85, repetition_penalty=1.05):
     """调用通义千问 API，返回纯文本内容。"""
+    if not API_Key_QW:
+        raise RuntimeError("Missing required env var: DASHSCOPE_API_KEY")
     dashscope.api_key = API_Key_QW
     try:
         resp = dashscope.Generation.call(

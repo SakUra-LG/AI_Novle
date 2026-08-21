@@ -1,0 +1,18 @@
+{
+  "generated_by": "qwen",
+  "kind": "foreshadows_b_identity_bound",
+  "identifier": "GLOBAL",
+  "accepted_attempt": "deterministic_compile",
+  "acceptance_mode": "qwen_batch_plus_stable_identity_compiler",
+  "source_file": "GLOBAL_foreshadows_b.json",
+  "source_provenance_file": "GLOBAL_foreshadows_b_provenance.json",
+  "source_sha256": "39cc1e9cd23ec20308c7855b327d9ba1eac959d9bd0e50a60116abbb1b7aa6d9",
+  "compiled_sha256": "7e312b5ce34d63ceaebee238108bd041ff69700825691bcce83702613855a0b0",
+  "compiler": "legacy_names_to_canonical_character_ids_v1",
+  "normalizations": [
+    "legacy_display_name_to_canonical_name",
+    "inject_stable_character_id_and_aliases"
+  ],
+  "manual_edits": [],
+  "created_at": "2026-08-21T18:59:08+08:00"
+}

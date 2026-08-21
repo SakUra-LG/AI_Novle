@@ -1,0 +1,617 @@
+{
+  "generated_by": "qwen",
+  "kind": "block",
+  "identifier": "B001",
+  "accepted_attempt": null,
+  "base_prompt_sha256": "763de0612c9012bdff0b309266ef70a1189a1fb859213f10759e8ee11a887216",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-12T17:17:34+08:00",
+      "prompt_sha256": "763de0612c9012bdff0b309266ef70a1189a1fb859213f10759e8ee11a887216",
+      "raw_response_sha256": "f4db5236b4aa9d88d536886469e47e75107a865c564eee85553f5a6b13b44dd5",
+      "repeated_previous_response": false,
+      "raw_response_file": "B001_block_attempt_01_763de0612c_raw.txt",
+      "validation_failures": [
+        "EC001.solution_type=safety_preemption与实际胜法不符；不能只换解法标签",
+        "EC002.solution_type=negotiation与实际胜法不符；不能只换解法标签",
+        "EC007.solution_type=public_confrontation与实际胜法不符；不能只换解法标签",
+        "EC008.solution_type=creative_breakthrough与实际胜法不符；不能只换解法标签",
+        "EC009.solution_type=market_result与实际胜法不符；不能只换解法标签",
+        "EC010.solution_type=strategic_withdrawal与实际胜法不符；不能只换解法标签"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 25.89,
+      "usage": {
+        "input_tokens": 11266,
+        "output_tokens": 2984,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 14250
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-12T17:18:01+08:00",
+      "prompt_sha256": "ea45340016688117629e034630fc43065b0a2e38379febb92a3f0a97464f57cd",
+      "raw_response_sha256": "f4db5236b4aa9d88d536886469e47e75107a865c564eee85553f5a6b13b44dd5",
+      "repeated_previous_response": true,
+      "raw_response_file": "B001_block_attempt_02_763de0612c_raw.txt",
+      "validation_failures": [
+        "EC001.solution_type=safety_preemption与实际胜法不符；不能只换解法标签",
+        "EC002.solution_type=negotiation与实际胜法不符；不能只换解法标签",
+        "EC007.solution_type=public_confrontation与实际胜法不符；不能只换解法标签",
+        "EC008.solution_type=creative_breakthrough与实际胜法不符；不能只换解法标签",
+        "EC009.solution_type=market_result与实际胜法不符；不能只换解法标签",
+        "EC010.solution_type=strategic_withdrawal与实际胜法不符；不能只换解法标签"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 27.322,
+      "usage": {
+        "input_tokens": 14453,
+        "output_tokens": 2982,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 17435
+      }
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-12T17:18:30+08:00",
+      "prompt_sha256": "b5e3fd9bd2d557e78a0cd36ec4176ed6688e9ede7be5de7bf9c883fbbedd4600",
+      "raw_response_sha256": "f4db5236b4aa9d88d536886469e47e75107a865c564eee85553f5a6b13b44dd5",
+      "repeated_previous_response": true,
+      "raw_response_file": "B001_block_attempt_03_763de0612c_raw.txt",
+      "validation_failures": [
+        "EC001.solution_type=safety_preemption与实际胜法不符；不能只换解法标签",
+        "EC002.solution_type=negotiation与实际胜法不符；不能只换解法标签",
+        "EC007.solution_type=public_confrontation与实际胜法不符；不能只换解法标签",
+        "EC008.solution_type=creative_breakthrough与实际胜法不符；不能只换解法标签",
+        "EC009.solution_type=market_result与实际胜法不符；不能只换解法标签",
+        "EC010.solution_type=strategic_withdrawal与实际胜法不符；不能只换解法标签"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 28.566,
+      "usage": {
+        "input_tokens": 14454,
+        "output_tokens": 2982,
+        "prompt_tokens_details": {
+          "cached_tokens": 11136
+        },
+        "total_tokens": 17436
+      }
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-12T17:18:59+08:00",
+      "prompt_sha256": "1d37f013d30210fb627e9b9afaaebd67d8d2bf424ed257d6424338c0103392c3",
+      "raw_response_sha256": "f4db5236b4aa9d88d536886469e47e75107a865c564eee85553f5a6b13b44dd5",
+      "repeated_previous_response": true,
+      "raw_response_file": "B001_block_attempt_04_763de0612c_raw.txt",
+      "validation_failures": [
+        "EC001.solution_type=safety_preemption与实际胜法不符；不能只换解法标签",
+        "EC002.solution_type=negotiation与实际胜法不符；不能只换解法标签",
+        "EC007.solution_type=public_confrontation与实际胜法不符；不能只换解法标签",
+        "EC008.solution_type=creative_breakthrough与实际胜法不符；不能只换解法标签",
+        "EC009.solution_type=market_result与实际胜法不符；不能只换解法标签",
+        "EC010.solution_type=strategic_withdrawal与实际胜法不符；不能只换解法标签"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 29.34,
+      "usage": {
+        "input_tokens": 14455,
+        "output_tokens": 2982,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 17437
+      }
+    },
+    {
+      "attempt": 5,
+      "created_at": "2026-08-12T17:19:25+08:00",
+      "prompt_sha256": "763de0612c9012bdff0b309266ef70a1189a1fb859213f10759e8ee11a887216",
+      "raw_response_sha256": "5db4dec64ab88cbf5a15c8a804907877e53f2ce36ed045a2a631afe26726d57b",
+      "repeated_previous_response": false,
+      "raw_response_file": "B001_block_attempt_05_763de0612c_raw.txt",
+      "validation_failures": [
+        "B001.coarse_story_summary不足280字或缺失",
+        "EC007.event_type=media_reputation与实际剧情不符；剧情没有该类型的核心行动",
+        "EC009.direction必须至少25字并说明一件独立事件",
+        "EC010.event_type=fan_public_welfare与实际剧情不符；剧情没有该类型的核心行动",
+        "EC010.solution_type=strategic_withdrawal与实际胜法不符；不能只换解法标签",
+        "B001第一份合同只准作为一个根冲突：读者层合同11次、公证1次；必须把其余事件改成试镜表演、创作突破、对手抢功、市场反馈、玛莎自主选择、团队或设备安全胜利"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 21.882,
+      "usage": {
+        "input_tokens": 11266,
+        "output_tokens": 2414,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 13680
+      }
+    },
+    {
+      "attempt": 6,
+      "created_at": "2026-08-12T17:19:51+08:00",
+      "prompt_sha256": "32759af63d7a2a57593b81cc1227f5bf73ca09b061ef23877b192fb2f1bff778",
+      "raw_response_sha256": "ae95bdd7eae4ab01ac0dcbf16ac9702820cd0b89c43480dad22a7c2bcfbe73e0",
+      "repeated_previous_response": false,
+      "raw_response_file": "B001_block_attempt_06_763de0612c_raw.txt",
+      "validation_failures": [
+        "B001.coarse_story_summary不足280字或缺失",
+        "EC005.event_type=performance与实际剧情不符；剧情没有该类型的核心行动",
+        "EC007.direction必须至少25字并说明一件独立事件",
+        "EC009.direction必须至少25字并说明一件独立事件",
+        "EC010.direction必须至少25字并说明一件独立事件",
+        "MG002五个事件方向至少覆盖3种event_type",
+        "B001第一份合同只准作为一个根冲突：读者层合同11次、公证1次；必须把其余事件改成试镜表演、创作突破、对手抢功、市场反馈、玛莎自主选择、团队或设备安全胜利"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 25.514,
+      "usage": {
+        "input_tokens": 13907,
+        "output_tokens": 2397,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        },
+        "total_tokens": 16304
+      }
+    },
+    {
+      "attempt": 7,
+      "created_at": "2026-08-12T17:20:12+08:00",
+      "prompt_sha256": "3d3970a4a0c2f58a96c61f76dcafa92d6c3b700a060ac8b85691fea189e4e31e",
+      "raw_response_sha256": "e434ca2945d34f79a4467ec99c36bb4bf8e057780701370c0e590cf93ee2c6c0",
+      "repeated_previous_response": false,
+      "raw_response_file": "B001_block_attempt_07_763de0612c_raw.txt",
+      "validation_failures": [
+        "B001.coarse_story_summary不足280字或缺失",
+        "EC005.event_type=performance与实际剧情不符；剧情没有该类型的核心行动",
+        "EC007.event_type非法或缺失",
+        "EC009.direction必须至少25字并说明一件独立事件",
+        "EC010.solution_type=strategic_withdrawal与实际胜法不符；不能只换解法标签",
+        "B001第一份合同只准作为一个根冲突：读者层合同11次、公证1次；必须把其余事件改成试镜表演、创作突破、对手抢功、市场反馈、玛莎自主选择、团队或设备安全胜利"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 20.674,
+      "usage": {
+        "input_tokens": 13882,
+        "output_tokens": 2414,
+        "prompt_tokens_details": {
+          "cached_tokens": 11136
+        },
+        "total_tokens": 16296
+      }
+    },
+    {
+      "attempt": 8,
+      "created_at": "2026-08-12T17:20:35+08:00",
+      "prompt_sha256": "fb2a0167cfe30d762d8f51883dd9607da3964ddc0d9282e8214625e5d89edd93",
+      "raw_response_sha256": "e434ca2945d34f79a4467ec99c36bb4bf8e057780701370c0e590cf93ee2c6c0",
+      "repeated_previous_response": true,
+      "raw_response_file": "B001_block_attempt_08_763de0612c_raw.txt",
+      "validation_failures": [
+        "B001.coarse_story_summary不足280字或缺失",
+        "EC005.event_type=performance与实际剧情不符；剧情没有该类型的核心行动",
+        "EC007.event_type非法或缺失",
+        "EC009.direction必须至少25字并说明一件独立事件",
+        "EC010.solution_type=strategic_withdrawal与实际胜法不符；不能只换解法标签",
+        "B001第一份合同只准作为一个根冲突：读者层合同11次、公证1次；必须把其余事件改成试镜表演、创作突破、对手抢功、市场反馈、玛莎自主选择、团队或设备安全胜利"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 23.853,
+      "usage": {
+        "input_tokens": 13887,
+        "output_tokens": 2416,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 16303
+      }
+    },
+    {
+      "attempt": 9,
+      "created_at": "2026-08-12T17:24:42+08:00",
+      "prompt_sha256": "763de0612c9012bdff0b309266ef70a1189a1fb859213f10759e8ee11a887216",
+      "raw_response_sha256": "9765f756acddf08ae68380945a62c58f258d2b5c1b97d73d0908cc646a92b63e",
+      "repeated_previous_response": false,
+      "raw_response_file": "B001_block_attempt_09_763de0612c_raw.txt",
+      "validation_failures": [
+        "B001.coarse_story_summary不足280字或缺失",
+        "EC001.direction必须至少70字并说明两章完整独立事件",
+        "EC002.solution_type=negotiation与实际胜法不符；不能只换解法标签",
+        "EC002.direction必须分别写明第3章与第4章的不同动作",
+        "EC002.direction没有写出本事件独有的前世信息差",
+        "EC002.direction没有写清阻力方第二章的现实损失",
+        "EC002.direction没有写清主角第二章的现实收益",
+        "EC003.direction必须分别写明第5章与第6章的不同动作",
+        "EC003.direction没有写出本事件独有的前世信息差",
+        "EC003.direction没有写清阻力方第二章的现实损失",
+        "EC003.direction没有写清主角第二章的现实收益",
+        "EC004.direction必须至少70字并说明两章完整独立事件",
+        "EC005.direction必须分别写明第9章与第10章的不同动作",
+        "EC005.direction没有写出本事件独有的前世信息差",
+        "EC005.direction没有写清阻力方第二章的现实损失",
+        "EC005.direction没有写清主角第二章的现实收益",
+        "EC006.direction必须至少70字并说明两章完整独立事件",
+        "EC007.direction必须分别写明第13章与第14章的不同动作",
+        "EC007.direction没有写出本事件独有的前世信息差",
+        "EC007.direction没有写清阻力方第二章的现实损失",
+        "EC007.direction没有写清主角第二章的现实收益",
+        "EC008.direction必须至少70字并说明两章完整独立事件",
+        "EC009.direction必须至少70字并说明两章完整独立事件",
+        "EC010.direction必须至少70字并说明两章完整独立事件",
+        "MG002五个事件方向至少覆盖3种event_type",
+        "B001第一份合同只准作为一个根冲突：读者层合同13次、公证4次；必须把其余事件改成试镜表演、创作突破、对手抢功、市场反馈、玛莎自主选择、团队或设备安全胜利"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 23.38,
+      "usage": {
+        "input_tokens": 11266,
+        "output_tokens": 2715,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 13981
+      }
+    },
+    {
+      "attempt": 10,
+      "created_at": "2026-08-12T17:25:12+08:00",
+      "prompt_sha256": "fdb54437de0cc0e3da8a59b89dd109cea4e11f639cd034a69abbddc62812747b",
+      "raw_response_sha256": "7ddec4e7562fe3ecedd090bd4a792e914b8b2b4751e76fcf2010dca17cff7bc5",
+      "repeated_previous_response": false,
+      "raw_response_file": "B001_block_attempt_10_763de0612c_raw.txt",
+      "validation_failures": [
+        "EC001.event_type=health_safety与实际剧情不符；剧情没有该类型的核心行动",
+        "EC001.solution_type=safety_preemption与实际胜法不符；不能只换解法标签",
+        "EC001.direction没有写清阻力方第二章的现实损失",
+        "EC001.direction没有写清主角第二章的现实收益",
+        "EC002.direction没有写出本事件独有的前世信息差",
+        "EC002.direction没有写清阻力方第二章的现实损失",
+        "EC002.direction没有写清主角第二章的现实收益",
+        "EC003.direction没有写出本事件独有的前世信息差",
+        "EC003.direction没有写清阻力方第二章的现实损失",
+        "EC003.direction没有写清主角第二章的现实收益",
+        "EC004.direction没有写出本事件独有的前世信息差",
+        "EC004.direction没有写清阻力方第二章的现实损失",
+        "EC005.direction没有写出本事件独有的前世信息差",
+        "EC005.direction没有写清阻力方第二章的现实损失",
+        "EC006.direction没有写出本事件独有的前世信息差",
+        "EC006.direction没有写清阻力方第二章的现实损失",
+        "EC006.direction没有写清主角第二章的现实收益",
+        "EC007.direction没有写出本事件独有的前世信息差",
+        "EC007.direction没有写清阻力方第二章的现实损失",
+        "EC007.direction没有写清主角第二章的现实收益",
+        "EC008.direction没有写出本事件独有的前世信息差",
+        "EC008.direction没有写清阻力方第二章的现实损失",
+        "EC009.direction没有写出本事件独有的前世信息差",
+        "EC009.direction没有写清阻力方第二章的现实损失",
+        "EC010.solution_type=strategic_withdrawal与实际胜法不符；不能只换解法标签",
+        "EC010.direction没有写出本事件独有的前世信息差",
+        "EC010.direction没有写清阻力方第二章的现实损失",
+        "EC010.direction没有写清主角第二章的现实收益"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 29.695,
+      "usage": {
+        "input_tokens": 11539,
+        "output_tokens": 3641,
+        "prompt_tokens_details": {
+          "cached_tokens": 11136
+        },
+        "total_tokens": 15180
+      }
+    },
+    {
+      "attempt": 11,
+      "created_at": "2026-08-12T17:25:46+08:00",
+      "prompt_sha256": "4b8e46f1356457e07127dd35bf593b9d86d4d613170510f8533826ecd25b8b41",
+      "raw_response_sha256": "b60ba19e58eb5f3bbeb65cc02661740e5d40db7889605efd4fb70f9899112006",
+      "repeated_previous_response": false,
+      "raw_response_file": "B001_block_attempt_11_763de0612c_raw.txt",
+      "validation_failures": [
+        "EC001.solution_type=safety_preemption与实际胜法不符；不能只换解法标签",
+        "EC001.direction必须分别写明第1章与第2章的不同动作",
+        "EC001.direction没有写清阻力方第二章的现实损失",
+        "EC002.direction必须分别写明第3章与第4章的不同动作",
+        "EC002.direction没有写清主角第二章的现实收益",
+        "EC003.direction必须分别写明第5章与第6章的不同动作",
+        "EC003.direction没有写清阻力方第二章的现实损失",
+        "EC003.direction没有写清主角第二章的现实收益",
+        "EC004.direction必须分别写明第7章与第8章的不同动作",
+        "EC004.direction没有写清阻力方第二章的现实损失",
+        "EC005.direction必须分别写明第9章与第10章的不同动作",
+        "EC005.direction没有写出本事件独有的前世信息差",
+        "EC005.direction没有写清阻力方第二章的现实损失",
+        "EC005.direction没有写清主角第二章的现实收益",
+        "EC006.direction必须分别写明第11章与第12章的不同动作",
+        "EC006.direction没有写清阻力方第二章的现实损失",
+        "EC006.direction没有写清主角第二章的现实收益",
+        "EC007.direction必须分别写明第13章与第14章的不同动作",
+        "EC007.direction没有写出本事件独有的前世信息差",
+        "EC007.direction没有写清阻力方第二章的现实损失",
+        "EC007.direction没有写清主角第二章的现实收益",
+        "EC008.direction必须分别写明第15章与第16章的不同动作",
+        "EC008.direction没有写清阻力方第二章的现实损失",
+        "EC008.direction没有写清主角第二章的现实收益",
+        "EC009.direction必须分别写明第17章与第18章的不同动作",
+        "EC009.direction没有写清阻力方第二章的现实损失",
+        "EC010.solution_type=strategic_withdrawal与实际胜法不符；不能只换解法标签",
+        "EC010.direction必须分别写明第19章与第20章的不同动作",
+        "EC010.direction没有写清阻力方第二章的现实损失",
+        "B001第一份合同只准作为一个根冲突：读者层合同11次、公证2次；必须把其余事件改成试镜表演、创作突破、对手抢功、市场反馈、玛莎自主选择、团队或设备安全胜利"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 33.68,
+      "usage": {
+        "input_tokens": 11534,
+        "output_tokens": 3988,
+        "prompt_tokens_details": {
+          "cached_tokens": 11136
+        },
+        "total_tokens": 15522
+      }
+    },
+    {
+      "attempt": 12,
+      "created_at": "2026-08-12T17:26:09+08:00",
+      "prompt_sha256": "73f8cabcbf54e76e79cf15f451799ea26c85e1f1f6744dc2c60e8aac87bc05a4",
+      "raw_response_sha256": "b6728dce97927b0e2c25b4ff941cb86ca9da551856741480ce81017df08a71e8",
+      "repeated_previous_response": false,
+      "raw_response_file": "B001_block_attempt_12_763de0612c_raw.txt",
+      "validation_failures": [
+        "B001.coarse_story_summary不足280字或缺失",
+        "EC001.direction没有写清阻力方第二章的现实损失",
+        "EC001.direction没有写清主角第二章的现实收益",
+        "EC002.direction没有写出本事件独有的前世信息差",
+        "EC002.direction没有写清阻力方第二章的现实损失",
+        "EC002.direction没有写清主角第二章的现实收益",
+        "EC003.direction必须至少70字并说明两章完整独立事件",
+        "EC004.direction必须至少70字并说明两章完整独立事件",
+        "EC005.direction没有写出本事件独有的前世信息差",
+        "EC005.direction没有写清阻力方第二章的现实损失",
+        "EC005.direction没有写清主角第二章的现实收益",
+        "EC006.direction必须至少70字并说明两章完整独立事件",
+        "EC007.direction必须至少70字并说明两章完整独立事件",
+        "EC008.direction必须至少70字并说明两章完整独立事件",
+        "EC009.direction必须至少70字并说明两章完整独立事件",
+        "EC010.direction必须至少70字并说明两章完整独立事件",
+        "MG002五个事件方向至少覆盖3种event_type"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 23.349,
+      "usage": {
+        "input_tokens": 11549,
+        "output_tokens": 2706,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 14255
+      }
+    },
+    {
+      "attempt": 13,
+      "created_at": "2026-08-12T17:26:36+08:00",
+      "prompt_sha256": "763de0612c9012bdff0b309266ef70a1189a1fb859213f10759e8ee11a887216",
+      "raw_response_sha256": "c46a7492e41bf91aab10e2341d9d350319d30ba7d6dd719e6c7aef8fe9663f9e",
+      "repeated_previous_response": false,
+      "raw_response_file": "B001_block_attempt_13_763de0612c_raw.txt",
+      "validation_failures": [
+        "EC001.direction必须至少70字并说明两章完整独立事件",
+        "EC002.direction必须至少70字并说明两章完整独立事件",
+        "EC003.direction必须至少70字并说明两章完整独立事件",
+        "EC004.direction必须至少70字并说明两章完整独立事件",
+        "EC005.direction必须至少70字并说明两章完整独立事件",
+        "MG001五个事件方向至少覆盖3种event_type",
+        "EC006.direction必须至少70字并说明两章完整独立事件",
+        "EC007.direction必须至少70字并说明两章完整独立事件",
+        "EC008.direction必须至少70字并说明两章完整独立事件",
+        "EC009.direction必须至少70字并说明两章完整独立事件",
+        "EC010.direction必须至少70字并说明两章完整独立事件",
+        "MG002五个事件方向至少覆盖3种event_type",
+        "B001第一份合同只准作为一个根冲突：读者层合同16次、公证0次；必须把其余事件改成试镜表演、创作突破、对手抢功、市场反馈、玛莎自主选择、团队或设备安全胜利"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 23.119,
+      "usage": {
+        "input_tokens": 11266,
+        "output_tokens": 2456,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 13722
+      }
+    },
+    {
+      "attempt": 14,
+      "created_at": "2026-08-12T17:27:08+08:00",
+      "prompt_sha256": "8197f6c88be778702d37139e523313359834c39052dac0e40ac14dc2fd27c1d4",
+      "raw_response_sha256": "44134cacbe28d14903f6707246f106d16bda992aebc5ef1146dc880bb3d98d8d",
+      "repeated_previous_response": false,
+      "raw_response_file": "B001_block_attempt_14_763de0612c_raw.txt",
+      "validation_failures": [
+        "EC001.solution_type=safety_preemption与实际胜法不符；不能只换解法标签",
+        "EC001.direction没有写清阻力方第二章的现实损失",
+        "EC001.direction没有写清主角第二章的现实收益",
+        "EC002.direction没有写出本事件独有的前世信息差",
+        "EC002.direction没有写清阻力方第二章的现实损失",
+        "EC002.direction没有写清主角第二章的现实收益",
+        "EC003.direction没有写出本事件独有的前世信息差",
+        "EC003.direction没有写清阻力方第二章的现实损失",
+        "EC004.direction没有写出本事件独有的前世信息差",
+        "EC004.direction没有写清阻力方第二章的现实损失",
+        "EC004.direction没有写清主角第二章的现实收益",
+        "EC005.direction没有写出本事件独有的前世信息差",
+        "EC005.direction没有写清阻力方第二章的现实损失",
+        "EC005.direction没有写清主角第二章的现实收益",
+        "EC006.direction没有写出本事件独有的前世信息差",
+        "EC006.direction没有写清阻力方第二章的现实损失",
+        "EC006.direction没有写清主角第二章的现实收益",
+        "EC007.direction没有写出本事件独有的前世信息差",
+        "EC007.direction没有写清阻力方第二章的现实损失",
+        "EC007.direction没有写清主角第二章的现实收益",
+        "EC008.direction没有写出本事件独有的前世信息差",
+        "EC008.direction没有写清阻力方第二章的现实损失",
+        "EC009.direction没有写出本事件独有的前世信息差",
+        "EC009.direction没有写清阻力方第二章的现实损失",
+        "EC010.solution_type=strategic_withdrawal与实际胜法不符；不能只换解法标签",
+        "EC010.direction没有写出本事件独有的前世信息差",
+        "EC010.direction没有写清阻力方第二章的现实损失"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 31.294,
+      "usage": {
+        "input_tokens": 11545,
+        "output_tokens": 3699,
+        "prompt_tokens_details": {
+          "cached_tokens": 11136
+        },
+        "total_tokens": 15244
+      }
+    },
+    {
+      "attempt": 15,
+      "created_at": "2026-08-12T17:27:39+08:00",
+      "prompt_sha256": "18b78141241dee6b8ac371c969d59315c9533eefb5eb6e8a041b4c30f5ec9f1b",
+      "raw_response_sha256": "99b29f5654671be13a2d3e81692d490feafce26290c49a7bd0af1f2ba5a36284",
+      "repeated_previous_response": false,
+      "raw_response_file": "B001_block_attempt_15_763de0612c_raw.txt",
+      "validation_failures": [
+        "EC001.solution_type=safety_preemption与实际胜法不符；不能只换解法标签",
+        "EC001.direction必须分别写明第1章与第2章的不同动作",
+        "EC002.direction必须分别写明第3章与第4章的不同动作",
+        "EC002.direction没有写出本事件独有的前世信息差",
+        "EC002.direction没有写清阻力方第二章的现实损失",
+        "EC003.direction必须分别写明第5章与第6章的不同动作",
+        "EC003.direction没有写出本事件独有的前世信息差",
+        "EC003.direction没有写清阻力方第二章的现实损失",
+        "EC003.direction没有写清主角第二章的现实收益",
+        "EC004.direction必须分别写明第7章与第8章的不同动作",
+        "EC004.direction没有写出本事件独有的前世信息差",
+        "EC004.direction没有写清阻力方第二章的现实损失",
+        "EC004.direction没有写清主角第二章的现实收益",
+        "EC005.direction必须分别写明第9章与第10章的不同动作",
+        "EC005.direction没有写出本事件独有的前世信息差",
+        "EC005.direction没有写清阻力方第二章的现实损失",
+        "EC005.direction没有写清主角第二章的现实收益",
+        "EC006.direction必须分别写明第11章与第12章的不同动作",
+        "EC006.direction没有写出本事件独有的前世信息差",
+        "EC006.direction没有写清阻力方第二章的现实损失",
+        "EC006.direction没有写清主角第二章的现实收益",
+        "EC007.solution_type=public_confrontation与实际胜法不符；不能只换解法标签",
+        "EC007.direction必须分别写明第13章与第14章的不同动作",
+        "EC007.direction没有写出本事件独有的前世信息差",
+        "EC007.direction没有写清阻力方第二章的现实损失",
+        "EC007.direction没有写清主角第二章的现实收益",
+        "EC008.event_type=creation与实际剧情不符；剧情没有该类型的核心行动",
+        "EC008.direction必须分别写明第15章与第16章的不同动作",
+        "EC008.direction没有写出本事件独有的前世信息差",
+        "EC008.direction没有写清阻力方第二章的现实损失",
+        "EC008.direction没有写清主角第二章的现实收益",
+        "EC009.solution_type=market_result与实际胜法不符；不能只换解法标签",
+        "EC009.direction必须分别写明第17章与第18章的不同动作",
+        "EC009.direction没有写出本事件独有的前世信息差",
+        "EC009.direction没有写清阻力方第二章的现实损失",
+        "EC009.direction没有写清主角第二章的现实收益",
+        "EC010.event_type=fan_public_welfare与实际剧情不符；剧情没有该类型的核心行动",
+        "EC010.solution_type=strategic_withdrawal与实际胜法不符；不能只换解法标签",
+        "EC010.direction必须分别写明第19章与第20章的不同动作",
+        "EC010.direction没有写出本事件独有的前世信息差",
+        "EC010.direction没有写清阻力方第二章的现实损失",
+        "EC010.direction没有写清主角第二章的现实收益",
+        "B001第一份合同只准作为一个根冲突：读者层合同11次、公证2次；必须把其余事件改成试镜表演、创作突破、对手抢功、市场反馈、玛莎自主选择、团队或设备安全胜利"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 31.763,
+      "usage": {
+        "input_tokens": 11524,
+        "output_tokens": 3797,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 15321
+      }
+    },
+    {
+      "attempt": 16,
+      "created_at": "2026-08-12T17:28:05+08:00",
+      "prompt_sha256": "f106cccc95e831d61480aec0c096ca9a0e570142d3ddab0b7fbfc794d14dacc6",
+      "raw_response_sha256": "45eec137d6376f351dac3570388ad1f48b1ca36393d0cfdcee6604f37ac3187f",
+      "repeated_previous_response": false,
+      "raw_response_file": "B001_block_attempt_16_763de0612c_raw.txt",
+      "validation_failures": [
+        "EC001.direction必须分别写明第1章与第2章的不同动作",
+        "EC001.direction没有写清阻力方第二章的现实损失",
+        "EC001.direction没有写清主角第二章的现实收益",
+        "EC002.solution_type=negotiation与实际胜法不符；不能只换解法标签",
+        "EC002.direction必须分别写明第3章与第4章的不同动作",
+        "EC002.direction没有写清阻力方第二章的现实损失",
+        "EC002.direction没有写清主角第二章的现实收益",
+        "EC003.direction必须分别写明第5章与第6章的不同动作",
+        "EC003.direction没有写出本事件独有的前世信息差",
+        "EC003.direction没有写清阻力方第二章的现实损失",
+        "EC003.direction没有写清主角第二章的现实收益",
+        "EC004.solution_type=performance_proof与实际胜法不符；不能只换解法标签",
+        "EC004.direction必须分别写明第7章与第8章的不同动作",
+        "EC004.direction没有写出本事件独有的前世信息差",
+        "EC004.direction没有写清阻力方第二章的现实损失",
+        "EC004.direction没有写清主角第二章的现实收益",
+        "EC005.direction必须分别写明第9章与第10章的不同动作",
+        "EC005.direction没有写出本事件独有的前世信息差",
+        "EC005.direction没有写清阻力方第二章的现实损失",
+        "EC006.direction必须分别写明第11章与第12章的不同动作",
+        "EC006.direction没有写出本事件独有的前世信息差",
+        "EC006.direction没有写清阻力方第二章的现实损失",
+        "EC006.direction没有写清主角第二章的现实收益",
+        "EC007.solution_type=public_confrontation与实际胜法不符；不能只换解法标签",
+        "EC007.direction必须分别写明第13章与第14章的不同动作",
+        "EC007.direction没有写出本事件独有的前世信息差",
+        "EC007.direction没有写清阻力方第二章的现实损失",
+        "EC007.direction没有写清主角第二章的现实收益",
+        "EC008.direction必须分别写明第15章与第16章的不同动作",
+        "EC008.direction没有写出本事件独有的前世信息差",
+        "EC008.direction没有写清阻力方第二章的现实损失",
+        "EC008.direction没有写清主角第二章的现实收益",
+        "EC009.direction必须至少70字并说明两章完整独立事件",
+        "EC010.solution_type=strategic_withdrawal与实际胜法不符；不能只换解法标签",
+        "EC010.direction必须分别写明第19章与第20章的不同动作",
+        "EC010.direction没有写出本事件独有的前世信息差",
+        "EC010.direction没有写清阻力方第二章的现实损失",
+        "EC010.direction没有写清主角第二章的现实收益"
+      ],
+      "model": "qwen-turbo",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 25.759,
+      "usage": {
+        "input_tokens": 11540,
+        "output_tokens": 2935,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 14475
+      }
+    }
+  ]
+}

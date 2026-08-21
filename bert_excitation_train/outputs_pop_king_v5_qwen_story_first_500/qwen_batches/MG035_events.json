@@ -1,0 +1,314 @@
+{
+  "macro_group_id": "MG035",
+  "event_clusters": [
+    {
+      "cluster_id": "EC171",
+      "chapter_span": [
+        341,
+        342
+      ],
+      "name": "颤音证伪：银湾放映厅现场声纹比对",
+      "timeline_years": "1999",
+      "main_opponent": "巴里·布鲁姆",
+      "main_characters": [
+        "麦珂",
+        "昆廷",
+        "放映员吴振邦"
+      ],
+      "fictional_obstacle": "《余烬回响》预告片将1978年麦珂重感冒录音剪辑为‘1969试镜颤抖高音’，伪装成童年受控生理反应",
+      "prev_life_tragedy": "上一世该片段被《寰宇纪事》评为‘最具感染力历史还原’，助推影片获三项奥斯卡提名",
+      "info_gap_from_prev_life": "记得1978年3月12日录音室空调故障致喉部水肿，波形畸变率峰值达37.2%",
+      "why_previous_life_failed": "当时无独立声学实验室愿接艺人委托做跨年份波形比对，且巴里以‘艺术升华’话术封锁质疑通道",
+      "preemptive_avoidance": "重生后第三年即委托新大陆声学实验室建立A-1969-047与WBS-FM-1978-031双轨比对基线，存档于ARCH-002-B17柜第十四份铅封",
+      "bait_and_evidence": "麦珂携昆廷修复的原始磁带A-1969-047赴银湾市公共放映厅，当众请求切换至国家影像档案馆原件播放；观众自发鼓掌即构成第三方见证",
+      "comic_villain_behavior": "巴里次日发稿称‘麦珂默许艺术化处理’，却删去原文中‘未经许可’四字——此删节被‘蔚蓝频道’截屏公示，其传真稿右下角印有‘布鲁姆速记社’抬头纸",
+      "villain_loss": "巴里被蔚蓝频道暂停播音权三个月；《余烬回响》发行方撤回其宣传总监任命函",
+      "protagonist_gain": "A-1969-047磁带获得联邦广电总局附属检测中心‘原始性认证’；新大陆声学实验室首获国家级影像证据采信资质",
+      "relationship_change": "昆廷与麦珂共建胶片修复取证枢纽挂牌运行；吴振邦成为首个持‘声纹比对见证人’资格证的基层放映员",
+      "continuity_writes": [
+        "QT_VERIFIED_A_1969_047_TIMECODE_MATCH_WITH_MAGNETIC_TAPE_PEAKS",
+        "MK_AND_QT_ESTABLISHED_FILM_RESTORE_EVIDENCE_HUB_AT_SILVER_BAY_STUDIO",
+        "WZB_CERTIFIED_AS_FIRST_OFFICIAL_WAVEFORM_COMPARISON_WITNESS_BY_STATE_CULTURE_BUREAU"
+      ],
+      "historical_anchor_ids": [
+        "SRC_LOC_FILM"
+      ],
+      "cluster_outcome": "《余烬回响》史料正当性首次遭公开性质疑；原始磁带A-1969-047完成物理证据链闭环；巴里失去媒体话语权锚点",
+      "next_event_hook": "玛莎持木质印章‘MJ-MJ Trust Guardian’前往国家影像档案馆办理三级封存手续，全程录像设备已就位",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 341,
+          "scene": "银湾市公共放映厅一楼大厅，午后三点，三百座满席，投影机嗡鸣",
+          "chapter_goal": "使《余烬回响》预告片‘颤抖高音’段落暴露为拼贴造假",
+          "action_sequence": [
+            "麦珂登台递出昆廷手写封条磁带盒；放映员吴振邦当众拆封插入双轨播放机；麦珂指向屏幕说‘请切至档案馆原件’"
+          ],
+          "visible_payoff": "观众目睹两段音频波形完全错位，有人掏出笔记本画下畸变峰谷对比图",
+          "ending": "巴里在后排座位撕碎预告片海报，纸屑飘落至前排儿童座椅"
+        },
+        {
+          "chapter_id": 342,
+          "scene": "蔚蓝频道编辑部暗房，冲洗胶片显影槽边，三台传真机并排吐纸",
+          "chapter_goal": "固化巴里删改行为为可举证失信事实",
+          "action_sequence": [
+            "技术组调取昨日传真接收记录；比对原稿与刊发稿文字差异；将截屏胶片送公证处加贴骑缝章"
+          ],
+          "visible_payoff": "《蔚蓝周报》头版刊登截屏胶片，标题‘删字即删史’下方印有国家影像档案馆钢印编号A-1969-047",
+          "ending": "巴里办公桌抽屉内新大陆声学实验室报价单被风吹落，背面手写‘找昆廷买真货？’"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC172",
+      "chapter_span": [
+        343,
+        344
+      ],
+      "name": "木章封存：莉薇娅祖父起草条例的法定效力",
+      "timeline_years": "1999",
+      "main_opponent": "托马斯·布莱克",
+      "main_characters": [
+        "玛莎",
+        "托马斯",
+        "档案馆主任陈砚秋"
+      ],
+      "fictional_obstacle": "奥瑞恩代表以‘版权代理权’要求调阅A-1969-047原始磁带，企图趁封存前复制篡改",
+      "prev_life_tragedy": "上一世托马斯凭黑曜石旧合同附件七取得临时调阅权，三天内完成磁带高频段擦除并替换为AI合成语音",
+      "info_gap_from_prev_life": "记得1974年8月17日莉薇娅祖父在国会听证会上强调‘文化遗产临时保护条例第十二条须含即时封存触发机制’",
+      "why_previous_life_failed": "当年无人注意该条例适用时效仅剩18个月，更不知其赋予亲属监护人直接申请权",
+      "preemptive_avoidance": "麦珂提前两年将条例原文复印装订成册，封面烫金‘MJ-MJ Trust Guardian’字样，交玛莎每日研读",
+      "bait_and_evidence": "玛莎持木质印章‘MJ-MJ Trust Guardian’独自赴国家影像档案馆，递交加盖该章的封存申请书；全程录像显示托马斯三次伸手欲拦均被陈主任挡开",
+      "comic_villain_behavior": "托马斯掏出律师执照拍打柜台，吼‘我代理黑曜石三十年！’却被陈主任翻出1974年立法听证会记录本指给他看莉薇娅祖父签名页",
+      "villain_loss": "托马斯被AEUA伦理委员会永久除名；其律所丧失全部声音技术类合同代理资质",
+      "protagonist_gain": "A-1969-047磁带获国家影像档案馆三级封存认证；玛莎木章首次作为法定监证标识录入文化系统编码库",
+      "relationship_change": "玛莎与麦珂共治延伸至制片、声纹与信托三领域；陈砚秋主动赠送1974年条例初稿复印件，扉页有莉薇娅祖父批注‘防伪即护心’",
+      "continuity_writes": [
+        "TR_1996_05_MJ_MJ_TRUST_GUARDIAN_LEGAL_DOCUMENT_SEALED_WITH_PALLADIUM_NICKEL_CHIP",
+        "A_1969_047_ENROLLED_IN_NATIONAL_AUDIOVISUAL_ARCHIVE_LEVEL_THREE_SEALING_SYSTEM",
+        "CHEN_YANQIU_PRESENTED_ORIGINAL_DRAFT_OF_ARTICLE_12_TO_MJ_MJ_TRUST"
+      ],
+      "historical_anchor_ids": [
+        "FICTION_ONLY"
+      ],
+      "cluster_outcome": "原始磁带完成国家级封存；托马斯彻底退出黑曜石事务；玛莎监护权获物质凭证确权",
+      "next_event_hook": "《余烬回响》剧组向松岭居索要1975年电台直播备份带，麦珂同意交付——但副本经昆廷手动倒带错位",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 343,
+          "scene": "国家影像档案馆B区接待台，绿绒布桌面，三盏白炽灯悬垂",
+          "chapter_goal": "完成A-1969-047磁带原件三级封存法律程序",
+          "action_sequence": [
+            "玛莎取出木章按压申请书‘申请人’栏；陈砚秋核对印章篆体与1974年条例配套实施细则一致；摄像师调整三脚架角度捕捉章泥未干特写"
+          ],
+          "visible_payoff": "封存证书副本当场打印，盖章处印泥泛朱光，玛莎指尖沾染微量红色",
+          "ending": "托马斯西装袖口蹭到档案柜玻璃门，留下一道斜长水痕"
+        },
+        {
+          "chapter_id": 344,
+          "scene": "松岭居书房，楠木案几铺开1974年条例汇编，旁边摊着托马斯执业证书复印件",
+          "chapter_goal": "确认封存效力覆盖所有衍生素材调阅请求",
+          "action_sequence": [
+            "麦珂用放大镜检查证书骑缝章；玛莎朗读条例第十二条第二款；昆廷从隔壁房间传来蜂鸣提示音表示Flicker-Pro MkIII已同步录入封存哈希值"
+          ],
+          "visible_payoff": "麦珂将证书扫描件钉入ARCH-002-B17柜第十四份铅封夹层，芯片亮起幽蓝微光",
+          "ending": "窗外梧桐叶影掠过托马斯证书照片，恰好遮住其姓名首字母T.B."
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC173",
+      "chapter_span": [
+        345,
+        346
+      ],
+      "name": "广告移位：维克多语音滑稽植入事件",
+      "timeline_years": "1999",
+      "main_opponent": "巴里·布鲁姆",
+      "main_characters": [
+        "麦珂",
+        "昆廷",
+        "《余烬回响》粗剪师艾米丽"
+      ],
+      "fictional_obstacle": "《余烬回响》剧组索要1975年电台直播备份带，意图提取维克多·兰斯指令语音伪造‘童年干预’证据",
+      "prev_life_tragedy": "上一世该语音被剪进‘父亲训斥’桥段，配合画面让麦珂跪地捡拾散落乐谱，获评‘教科书级心理压迫呈现’",
+      "info_gap_from_prev_life": "记得1975年8月2日WBS-FM-1975-082磁带第27分43秒广告时段含维克多与巴里通话，关键词‘关麦’‘别录’‘明天见’",
+      "why_previous_life_failed": "当时磁带由奥瑞恩保管，麦珂无权接触；巴里谎称原始带损毁，提供伪造副本",
+      "preemptive_avoidance": "重生后第六年即委托昆廷将WBS-FM-1975-082全带数字化并标注时码，其中27:43处标记‘VL/BARI VOICE IN COMMERCIAL_SLOT’",
+      "bait_and_evidence": "麦珂交付经昆廷手动倒带错位的副本，维克多语音段落被移至薯片广告时段；艾米丽未核验即粗剪，成片出现‘维克多声音在薯片广告中下令关闭麦克风’",
+      "comic_villain_behavior": "巴里观影后摔爆汽水罐怒吼‘谁他妈把老板塞进零食广告？’，随即打电话质问麦珂，对方只答‘您没签收验货单’",
+      "villain_loss": "《余烬回响》粗剪版遭全国十二家影院集体退片；发行方罚扣巴里全年奖金$18,000",
+      "protagonist_gain": "昆廷修复仪内置芯片写入首个有效哈希值；松岭居保险库新增‘错位副本’专用铁匣，编号SL-1975-082-ERR",
+      "relationship_change": "艾米丽辞职加入‘蔚蓝频道’技术组；昆廷与麦珂确立‘所有对外交付素材必附校验清单’新规",
+      "continuity_writes": [
+        "QT_ACTIVATED_HASH_VALUE_ON_FLICKER_PRO_MKIII_FOR_WBS_FM_1975_082_DELIVERY_COPY",
+        "SL_1975_082_ERR_LOCKED_IN_SONG_LING_SAFE_DEPOSIT_BOX_WITH_DOUBLE_KEY_ACCESS",
+        "EMILY_JOINED_BLUE_CHANNEL_TECHNICAL_TEAM_AS_WAVEFORM_VALIDATION_SPECIALIST"
+      ],
+      "historical_anchor_ids": [
+        "FICTION_ONLY"
+      ],
+      "cluster_outcome": "《余烬回响》粗剪版信誉扫地；麦珂掌握维克多1975年指令语音原始位置；昆廷修复仪完成首个实战验证",
+      "next_event_hook": "麦珂将《十一岁零四十七分钟》未剪辑素材交付‘蔚蓝频道’，协议约定‘任何删节须经双方指纹密钥联签’",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 345,
+          "scene": "松岭居地下室胶片室，恒温箱开启，三盘磁带并列摆放",
+          "chapter_goal": "交付可控偏差副本并确保对方不核验",
+          "action_sequence": [
+            "昆廷将WBS-FM-1975-082副本装入印有‘松岭居影音资料’字样的牛皮纸袋；麦珂亲笔填写交接单‘内容完整，未开封验’；快递员签字时麦珂递上冰镇橙汁"
+          ],
+          "visible_payoff": "纸袋封口火漆印裂开细纹，内衬可见昆廷手绘倒带错位示意图",
+          "ending": "巴里秘书电话催促‘麦总说今天发货？’，麦珂答‘刚寄出，签收后请务必验货’"
+        },
+        {
+          "chapter_id": 346,
+          "scene": "《余烬回响》剪辑室，监视器蓝光映在巴里汗湿额头上",
+          "chapter_goal": "使错误成品曝光并触发连锁退片",
+          "action_sequence": [
+            "艾米丽粗剪片段投屏；影院经理来电投诉；发行方传真拒收函送达松岭居前台"
+          ],
+          "visible_payoff": "监视器画面定格：维克多声音响起瞬间，薯片包装袋哗啦展开，配音‘现在，关掉所有麦克风’",
+          "ending": "麦珂办公室传真机吐出拒收函，墨迹未干，旁边便签写着‘下次验货，请查27分43秒’"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC174",
+      "chapter_span": [
+        347,
+        348
+      ],
+      "name": "熔断告警：蔚蓝频道SMTP白名单防御",
+      "timeline_years": "1999",
+      "main_opponent": "巴里·布鲁姆",
+      "main_characters": [
+        "麦珂",
+        "艾琳",
+        "蔚蓝频道技术组长赵岩"
+      ],
+      "fictional_obstacle": "巴里伪造麦珂联签邮件，试图绕过协议获取《十一岁零四十七分钟》未剪辑素材删节权",
+      "prev_life_tragedy": "上一世巴里用麦珂签名扫描件伪造终版授权书，使《余烬回响》盗用纪录片镜头长达47秒",
+      "info_gap_from_prev_life": "记得1997年蔚蓝频道启用独立SMTP服务器，IP白名单仅含麦珂终端与赵岩办公室两台机器",
+      "why_previous_life_failed": "当时尚未建立数字签名制度，麦珂终端无防火墙；巴里用二手打字机仿造签名传真",
+      "preemptive_avoidance": "重生后第四年即与蔚蓝频道签订《联签操作规程》，规定所有修改指令必须通过双因子验证终端发送",
+      "bait_and_evidence": "麦珂交付未剪辑素材时启用指纹密钥联签协议；巴里伪造邮件发送至蔚蓝频道电传收文簿；频道技术组识别其发信端非白名单设备，自动触发熔断并向麦珂终端推送告警截图",
+      "comic_villain_behavior": "巴里用办公室老式电传机改装发信装置，以为能骗过系统，结果熔断警报声响彻整个剪辑楼，惊飞窗外鸽群",
+      "villain_loss": "巴里被蔚蓝频道列入黑名单；其电传机被赵岩没收充作‘反诈教学道具’",
+      "protagonist_gain": "‘蔚蓝频道’熔断机制验证成功；麦珂终端首次接入频道实时监控流，可查看任意时段操作日志",
+      "relationship_change": "麦珂与艾琳远程校验终版声纹图谱，交换加密便签‘QJ-1969/47’与‘EW-1999/01’；赵岩获颁‘数字防线守护者’铜牌",
+      "continuity_writes": [
+        "BLUE_CHANNEL_SMTP_WHITELIST_DEFENSE_PROTOCOL_SUCCESSFULLY_TRIGGERED",
+        "MK_TERMINAL_CONNECTED_TO_BLUE_CHANNEL_REALTIME_LOG_STREAM",
+        "ZW_RECEIVED_DIGITAL_DEFENSE_GUARDIAN_MEDAL_FROM_CITY_CULTURE_BUREAU"
+      ],
+      "historical_anchor_ids": [
+        "FICTION_ONLY"
+      ],
+      "cluster_outcome": "协议约束力获实证；巴里失去数字渠道渗透能力；蔚蓝频道技术组晋升为国家级影像安全试点单位",
+      "next_event_hook": "银湾市公共放映厅举办《十一岁零四十七分钟》限定首映，麦珂邀请《余烬回响》主创观映",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 347,
+          "scene": "银湾市滨岸录音区C-7室，声学隔离舱内，麦珂拇指按压生物识别板",
+          "chapter_goal": "启动联签协议并诱使对手触碰熔断阈值",
+          "action_sequence": [
+            "麦珂输入指纹密钥生成联签令牌；赵岩同步激活SMTP白名单监控；巴里办公室电传机开始发热冒烟"
+          ],
+          "visible_payoff": "终端屏幕跳出绿色提示‘联签通道已启，有效期24小时’，同时赵岩耳机传来滴滴声",
+          "ending": "巴里擦拭电传机散热孔，棉签顶端沾着黑色碳粉"
+        },
+        {
+          "chapter_id": 348,
+          "scene": "蔚蓝频道技术组值班室，三台CRT显示器并列，中间屏闪烁红框警报",
+          "chapter_goal": "捕获伪造行为并固化为司法可采证据",
+          "action_sequence": [
+            "赵岩导出告警截图；加盖频道电子签章；麦珂终端弹出推送并保存至ARCH-002-B17柜第十四份铅封"
+          ],
+          "visible_payoff": "截图显示伪造电传发信源为‘松岭居旧电传机改造’，编号CT-1997-BL-003",
+          "ending": "麦珂将截图缩印贴入家庭账本第47页，旁边是1991年台风误报说明原件"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC175",
+      "chapter_span": [
+        349,
+        350
+      ],
+      "name": "印泥未干：首映礼三份封存证书突显",
+      "timeline_years": "1999",
+      "main_opponent": "托马斯·布莱克",
+      "main_characters": [
+        "麦珂",
+        "黛安娜",
+        "玛莎",
+        "昆廷"
+      ],
+      "fictional_obstacle": "《余烬回响》主创拒绝承认A-1969-047封存效力，声称‘民间印章不具法律效力’",
+      "prev_life_tragedy": "上一世托马斯在首映礼后台宣称‘所谓封存不过是家庭游戏’，导致多家媒体放弃报道《十一岁零四十七分钟》",
+      "info_gap_from_prev_life": "记得1998年国家影像档案馆升级封存证书格式，新增激光蚀刻防伪纹与动态温感油墨",
+      "why_previous_life_failed": "当时玛莎未参与任何法律流程；麦珂独自出席发布会，无力反驳专业术语围攻",
+      "preemptive_avoidance": "重生后第五年即推动玛莎考取文化资产监护人资格证，并预约三家机构同步封存——国家影像档案馆、松岭居保险库、昆廷工作室",
+      "bait_and_evidence": "银湾市公共放映厅首映礼片尾滚动字幕列出三方修复与监证单位；全场熄灯后大屏突显三份封存证书扫描件，其中松岭居那份盖有玛莎木章，印泥未干",
+      "comic_villain_behavior": "托马斯摸口袋掏放大镜想辨认印泥真伪，却掏出半块融化巧克力，糖渍滴在西装裤上晕开褐色污迹",
+      "villain_loss": "托马斯被AEUA暂停法律意见出具权三十日；其签名权限从‘财务终审’降至‘初审备案’",
+      "protagonist_gain": "玛莎木章首次作为法定监证标识出现在公共文化空间；《十一岁零四十七分钟》获官方认证与传播壁垒破除",
+      "relationship_change": "麦珂与黛安娜共同出席首映礼，她负责现场儿童教育衔接区布置，未登台发言；与艾琳远程校验终版声纹图谱，交换加密便签‘QJ-1969/47’与‘EW-1999/01’",
+      "continuity_writes": [
+        "MJ_MJ_TRUST_GUARDIAN_SEAL_APPEARED_IN_PUBLIC_CULTURAL_SPACE_FOR_FIRST_TIME",
+        "THE_ELEVEN_YEAR_OLD_DOCUMENTARY_GRANTED_OFFICIAL_CERTIFICATION_BY_STATE_CULTURE_BUREAU",
+        "DA_AND_MK_ATTENDED_PREMIERE_TOGETHER_WITHOUT_PUBLIC_SPEECH_ACT"
+      ],
+      "historical_anchor_ids": [
+        "FICTION_ONLY"
+      ],
+      "cluster_outcome": "A-1969-047磁带完成国家级封存；《余烬回响》史料根基彻底瓦解；玛莎完成从监护人到法定监证人的身份跃迁",
+      "next_event_hook": "Flicker-Pro MkIII修复仪第三分区自动触发1975年电台胶片深度滤噪任务，其输出文件命名为TS-1975-082-VOC",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 349,
+          "scene": "银湾市公共放映厅贵宾休息室，檀香炉青烟缭绕，三份证书并置红丝绒托盘",
+          "chapter_goal": "使封存证书具备仪式化公开展示条件",
+          "action_sequence": [
+            "玛莎用紫砂壶煮沸净水；蘸取特制朱砂印泥；钤印松岭居保险库证书；昆廷调试投影仪焦距"
+          ],
+          "visible_payoff": "印泥在灯光下泛珍珠光泽，玛莎腕间银镯轻叩托盘发出清越回响",
+          "ending": "托马斯站在门外偷窥，眼镜片反射出证书上动态温感油墨变幻的虹彩"
+        },
+        {
+          "chapter_id": 350,
+          "scene": "放映厅主厅，千人静默，片尾字幕渐隐，大屏骤亮三份证书高清扫描件",
+          "chapter_goal": "以物理证据终结史料正当性质疑",
+          "action_sequence": [
+            "麦珂示意灯光师熄灭全场；赵岩遥控切换大屏信号；黛安娜引导儿童观众齐唱《光尘》副歌"
+          ],
+          "visible_payoff": "松岭居证书特写中，玛莎木章印泥仍湿润反光，背景音是孩子们清澈的歌声",
+          "ending": "麦珂转身望向《余烬回响》导演席，对方低头整理领带，手指微微发抖"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1999",
+    "character_states": [
+      "麦珂三十三岁，胶片证言与声纹铁砧双轨总控人；玛莎持木质印章主持松岭居书房与影像档案事务；昆廷驻守胶片修复工作室，Flicker-Pro MkIII修复仪第三分区完成语音固化；艾琳完成TS-1975-082-VOC伦理审查并归档；黛安娜以共同抚养者身份将‘巡演家政标准’嵌入电影制片合同；瑟琳娜持‘棱镜工坊’执照完成《雾港灯塔》首映；莉薇娅家族法务锁定奥瑞恩壳公司资金流向；托马斯被AEUA暂停会员资格且失去黑曜石账目解释权；苏菲亚完成G-1999-03档案包生成并接入‘星火同盟’交叉审计服务器"
+    ],
+    "relationship_states": [
+      "麦珂与黛安娜确立制度互信；麦珂与莉薇娅启动黑曜石异常项联合质询；麦珂与艾琳完成语音证据伦理闭环；玛莎与昆廷建立档案监证协作；瑟琳娜与黛安娜共建片场儿童教育衔接标准"
+    ],
+    "rights_and_assets": [
+      "1975年电台语音完成链式固化与时间戳锚定；‘巡演家政标准’首度嵌入电影工业合同；ARCH-002-B17柜第十四份铅封芯片写入首个语音哈希值；G-1999-03档案包生成并接入交叉审计服务器；A-1969-047磁带获国家影像档案馆三级封存认证"
+    ],
+    "health_and_location": [
+      "麦珂耳鸣监测数据接入Flicker-Pro MkIII修复仪振动反馈模块；常驻银湾市滨岸录音区C-7室与松岭居两地；《雾港灯塔》片场设立独立医疗安全评审区"
+    ],
+    "open_threads": [
+      "TS-1975-082-VOC哈希值触发G-1999-03档案包：最晚回收块B019，线索已移交第361章‘五阶风险映射模型’声场溯源测试"
+    ],
+    "resolved_threads": [
+      "奥瑞恩秘密采购1990年代演出录像带用于AI建模：线索已于第341章移交纪录片反制行动，本块中昆廷修复仪筛查全部入库胶片，确认无1990年代演出带混入，该线程关闭"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "Flicker-Pro MkIII修复仪第三分区自动触发1975年电台胶片深度滤噪任务，其输出文件命名为TS-1975-082-VOC，该命名格式将直接用于第351章G-1999-03档案包生成。"
+  }
+}

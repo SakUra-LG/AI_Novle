@@ -1,0 +1,12 @@
+{
+  "reason": "parent_outline_sha256_changed_or_missing",
+  "previous_outline_sha256": null,
+  "replacement_outline_sha256": "aaa98e4143115d54ee43409b902500c9aadf34c074241342c2d994bf120c214f",
+  "moved": [
+    "coarse_story_blocks_v5_qwen_500.json",
+    "macro_groups_v5_qwen_500.json",
+    "body_generation"
+  ],
+  "recoverable": true,
+  "archived_at": "2026-08-12T13:43:35+08:00"
+}

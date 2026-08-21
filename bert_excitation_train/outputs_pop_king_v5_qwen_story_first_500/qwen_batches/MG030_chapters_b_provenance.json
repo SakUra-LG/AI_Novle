@@ -1,0 +1,52 @@
+{
+  "generated_by": "qwen",
+  "kind": "chapters_b",
+  "identifier": "MG030",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "061746292df999b236409bcfcae3f7426ffb0ad61ffda92da0ec8b2f73d11121",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-08T21:51:34+08:00",
+      "prompt_sha256": "061746292df999b236409bcfcae3f7426ffb0ad61ffda92da0ec8b2f73d11121",
+      "raw_response_sha256": "6fd324919ff3a99b3a94bc8193a0edbabfb357e1e515f38a88faefaf85b25f7d",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG030_chapters_b_attempt_01_raw.txt",
+      "validation_failures": [
+        "第300章年代技术错误：当前年代不得出现“PDF”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 86.759,
+      "usage": {
+        "input_tokens": 16750,
+        "output_tokens": 5638,
+        "total_tokens": 22388,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-08T21:53:02+08:00",
+      "prompt_sha256": "33df69157790b03c9639c0eed42504feb89899a03eff0d2483eb20b17f598ddf",
+      "raw_response_sha256": "12fe071156eee447c36caa5cb5a4bc99308ddf4c588ab89d95e6bc64132da001",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG030_chapters_b_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 87.461,
+      "usage": {
+        "input_tokens": 22464,
+        "output_tokens": 5673,
+        "total_tokens": 28137,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

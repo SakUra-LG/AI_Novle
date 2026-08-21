@@ -1,0 +1,54 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC010_EC010",
+  "identifier": "MG002",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "ba04ccce482a16a696eb2f1160f30a1dee8218557a5a21163936f884c7c2110a",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-15T19:19:53+08:00",
+      "prompt_sha256": "ba04ccce482a16a696eb2f1160f30a1dee8218557a5a21163936f884c7c2110a",
+      "raw_response_sha256": "ee761925e027e85aeea141eb0cc19a37817d1797a2dcf19b12df77aab044ab76",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG002_events_EC010_EC010_attempt_01_ba04ccce48_raw.txt",
+      "validation_failures": [
+        "EC010.chapter19artifact_id=ART_PREV_DEATH_NOTE跨时间线引用"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 35.243,
+      "usage": {
+        "prompt_tokens": 16270,
+        "completion_tokens": 3969,
+        "total_tokens": 20239,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-15T19:20:27+08:00",
+      "prompt_sha256": "f8c66ef6db8adc5eee0ef128179000c0f7c19fadaf3b3f809a3580bb8f6305ed",
+      "raw_response_sha256": "3df19ddc427d16be26e12b4c3ae6986fdb0888e220c7cc9efbd2a3d0019149f4",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG002_events_EC010_EC010_attempt_02_ba04ccce48_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 33.602,
+      "usage": {
+        "prompt_tokens": 16347,
+        "completion_tokens": 3744,
+        "total_tokens": 20091,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

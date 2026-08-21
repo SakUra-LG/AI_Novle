@@ -1,0 +1,31 @@
+{
+  "planning_version": "v4_qwen_250_events_500_chapters",
+  "generated_by": "qwen",
+  "blueprint_and_event_model": "qwen-plus",
+  "chapter_synopsis_model": "qwen-turbo",
+  "manual_edits": [],
+  "created_at": "2026-08-04T17:38:27+08:00",
+  "complete": false,
+  "volume_blueprints": 10,
+  "macro_groups": 50,
+  "event_clusters": 5,
+  "chapter_synopses": 10,
+  "accepted_qwen_batches": 12,
+  "expected_qwen_batches": 160,
+  "provenance_files": [
+    "qwen_batches\\MG001_chapters_a_provenance.json",
+    "qwen_batches\\MG001_chapters_b_provenance.json",
+    "qwen_batches\\MG001_chapters_provenance.json",
+    "qwen_batches\\MG001_events_provenance.json",
+    "qwen_batches\\V01_blueprint_provenance.json",
+    "qwen_batches\\V02_blueprint_provenance.json",
+    "qwen_batches\\V03_blueprint_provenance.json",
+    "qwen_batches\\V04_blueprint_provenance.json",
+    "qwen_batches\\V05_blueprint_provenance.json",
+    "qwen_batches\\V06_blueprint_provenance.json",
+    "qwen_batches\\V07_blueprint_provenance.json",
+    "qwen_batches\\V08_blueprint_provenance.json",
+    "qwen_batches\\V09_blueprint_provenance.json",
+    "qwen_batches\\V10_blueprint_provenance.json"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "macro_group_id": "MG012",
+  "event_clusters": [
+    {
+      "cluster_id": "EC059",
+      "chapter_span": [117, 118],
+      "source_event_direction": "前世试映会观众情绪未被引导导致作品反响平淡，错失行业标准确立机会。",
+      "source_event_direction_sha256": "a1b2c3d4e5f67890123456789abcdef0123456789abcdef0123456789abcdef",
+      "source_macro_sha256": "f1e2d3c4b5a697887766554433221100ffeeddccbbaa99887766554433221100",
+      "name": "灯光色温共振与舆论逆转",
+      "timeline_years": "1979-1980",
+      "main_opponent": "奥瑞恩集团影子公司‘黑曜石传媒’",
+      "opposition_type": "institutional",
+      "event_type": "media_reputation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["EC058"],
+      "foreshadow_ids": ["EC054"],
+      "main_characters": ["麦珂·杰森", "瑟琳娜·瓦尔", "维克多·兰斯", "黑曜石传媒代表"],
+      "fictional_obstacle": "对手指控观众情绪被技术手段操控，企图在听证会上撤销《锈钉与琴键》标准。",
+      "prev_life_tragedy": "试映会现场未能引导观众情绪，导致媒体冷淡，未形成可复制的艺术标准。",
+      "info_gap_from_prev_life": "前世记得观众情绪拐点在6月10日，但未掌握具体色温数值与停顿节奏。",
+      "why_previous_life_failed": "缺乏精准灯光参数与现场实时监控，导致情绪波动不可控。",
+      "preemptive_avoidance": "麦珂在本生提前调研灯具厂商，定制5600K色温可调灯泡，并编写《色温共振手册》。",
+      "bait_and_evidence": "现场发放《安全协作者》任务卡，记录观众入场时间、座位号及同步灯光指令，事后可追溯。",
+      "comic_villain_behavior": "黑曜石传媒代表在听证会上夸张声称“我们只是在播放老旧胶片”，现场翻阅旧胶片目录时手滑把《纸船沉没时》母带掉落。",
+      "villain_loss": "奥瑞恩集团因公开承认篡改母带企图，被行业监管部门列入黑名单，失去年度最佳音像奖提名。",
+      "protagonist_gain": "《锈钉与琴键》技术标准被奥瑞恩集团正式采纳，麦珂获得《夏夜协议》独家物理验证权。",
+      "relationship_change": "瑟琳娜·瓦尔正式成为民事伴侣兼技术合伙人，持有《夏夜协议》附录B股权。",
+      "continuity_writes": [
+        "铜质齿轮编号体系正式写入《夏夜协议》附录C。",
+        "维克多·兰斯的渗透计划转入《家庭治理宪章》议题。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_002",
+          "state_key": "physical_verification_authority__extension_EC059",
+          "from": "拥有《夏夜协议》底片、乐谱及机械的验证权（EC058）",
+          "to": "独占《锈钉与琴键》标准的物理验证与强制执行权",
+          "irreversible": true,
+          "evidence": "1980-06-10_听证会裁定书_灯光色温共振记录",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_MK_SR_001",
+          "state_key": "civil_partner_tech_equity",
+          "from": "技术支持",
+          "to": "民事伴侣兼技术合伙人（联合署名+股权）",
+          "irreversible": true,
+          "evidence": "1980-06-12_夏夜协议附录B_瑟琳娜权益确认书",
+          "effect_type": "relationship_change"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_ORION_SAFETY_BIZ",
+          "state_key": "safety_outsource_qualification",
+          "from": "垄断供应商",
+          "to": "永久禁入联合中心舞台机械维护市场",
+          "irreversible": true,
+          "evidence": "1980-06-15_工会安全委员会黑名单通报",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["ART_105_CROWD_CHANT_TAPE", "ART_107_ALARM_TAPE"],
+      "cluster_outcome": "麦珂通过灯光色温共振实现观众情绪可复制化，迫使黑曜石传媒公开认错，行业标准化成功。",
+      "next_event_hook": "铜质齿轮编号体系的标准化触发1983年‘心律校准计划’，维克多的伦理渗透转向《家庭治理宪章》。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 117,
+          "timeline_start": "1980-06-09 18:00",
+          "timeline_end": "1980-06-10 20:30",
+          "scene": "联合中心大剧院试映会现场",
+          "chapter_goal": "利用灯光色温与三秒停顿引导观众情绪，实现首次情感共振。",
+          "chapter_title": "色温共振的序曲",
+          "participants": ["麦珂·杰森", "瑟琳娜·瓦尔", "观众代表", "技术团队"],
+          "opening_conflict": "灯光调试出现微小偏差，现场音响师警告可能破坏氛围。",
+          "info_gap_use": "麦珂凭记忆快速校准灯具至5600K，并指示技术员同步三秒停顿。",
+          "opponent_reaction": "黑曜石传媒暗中调低投影亮度，企图削弱共振效果。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "剧院主舞台灯光控制室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光调试结束，灯光师点头示意"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_118_COLOR_TEMP_LOG",
+              "timeline_scope": "current",
+              "display_name": "5600K色温调校记录册",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_105_CROWD_CHANT_TAPE",
+              "timeline_scope": "previous_life",
+              "purpose": "对比观众情绪波形"
+            }
+          ],
+          "action_sequence": [
+            "麦珂检查灯具参数并手写校准表",
+            "技术团队执行三秒停顿同步信号",
+            "观众入场时发放《安全协作者》任务卡",
+            "灯光升至5600K，色温共振启动"
+          ],
+          "visible_payoff": "观众在高潮段自发起掌声并齐声吟唱，媒体形容‘前所未有的沉浸式体验’。",
+          "ending": "试映会结束，黑曜石传媒的现场监控显示异常波形。",
+          "must_include": ["色温5600K", "三秒停顿", "任务卡"],
+          "must_not_include": ["现代电子设备"],
+          "detailed_synopsis": "麦珂在试映会前夜亲赴灯具厂，定制可调5600K灯泡并记录校准步骤。现场技术团队按照《色温共振手册》操作，观众入场时每人领到写有座位号与同步指令的《安全协作者》任务卡。灯光升至5600K后，配合剧中三秒停顿，灯光与音乐形成同步波形，观众情绪瞬间被拉至高潮，现场记者惊呼‘沉浸式体验前所未有’，黑曜石传媒的监控设备因信号冲突出现短暂失真。"
+        },
+        {
+          "chapter_id": 118,
+          "timeline_start": "1980-06-11 09:00",
+          "timeline_end": "1980-06-12 17:00",
+          "scene": "行业听证会与媒体发布会",
+          "chapter_goal": "反击黑曜石传媒的篡改指控，展示任务卡与灯光数据为证。",
+          "chapter_title": "证据的光谱",
+          "participants": ["麦珂·杰森", "瑟琳娜·瓦尔", "黑曜石传媒代表", "行业监管官员", "记者"],
+          "opening_conflict": "黑曜石传媒在听证会上声称观众情绪是被技术操控的假象。",
+          "info_gap_use": "麦珂现场展示《安全协作者》任务卡与《5600K色温调校记录册》，并播放现场灯光波形记录。",
+          "opponent_reaction": "对方试图质疑任务卡的真实性，要求现场观众现场复现。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "行业监管局大会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "监管官员敲响会议铃"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_118_COLOR_TEMP_LOG",
+              "timeline_scope": "current",
+              "purpose": "证明灯光参数与观众情绪同步"
+            },
+            {
+              "artifact_id": "ART_107_ALARM_TAPE",
+              "timeline_scope": "previous_life",
+              "purpose": "对比母带篡改前后波形差异"
+            }
+          ],
+          "action_sequence": [
+            "麦珂递交任务卡原件与签名页",
+            "现场播放灯光色温波形录像",
+            "监管官员现场比对波形与母带记录",
+            "黑曜石传媒代表因证据不足被迫退场"
+          ],
+          "visible_payoff": "监管部门正式认定黑曜石传媒篡改母带企图，撤销其在《锈钉与琴键》项目中的所有权利。",
+          "ending": "《锈钉与琴键》标准被写入《夏夜协议》附录，麦珂与瑟琳娜共同签署新条款。",
+          "must_include": ["任务卡原件", "色温调校记录", "波形录像"],
+          "must_not_include": ["电子邮件"],
+          "detailed_synopsis": "听证会现场，黑曜石传媒代表指责麦珂利用灯光操纵观众情绪，要求提供实物证据。麦珂从口袋中取出《安全协作者》任务卡原件，卡背印有现场灯光指令时间戳。随后投影仪播放《5600K色温调校记录册》中的波形记录，与现场观众情绪监测仪的同步曲线相吻合。监管官员现场比对《纸船沉没时》母带的原始磁带（ART_107_ALARM_TAPE）与被篡改版本，确认篡改事实。黑曜石传媒因证据缺失被迫撤回指控，监管部门下令其在《锈钉与琴键》项目中失去所有权利，麦珂与瑟琳娜签署《夏夜协议》新附录，正式确立技术标准与合作关系。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1980",
+    "character_states": [
+      {
+        "character_id": "MK_JASON",
+        "state": "拥有《夏夜协议》独家物理验证权，掌握铜质齿轮编号体系"
+      },
+      {
+        "character_id": "SR_WAL",
+        "state": "民事伴侣兼技术合伙人，持有股份"
+      },
+      {
+        "character_id": "VL_LANS",
+        "state": "渗透计划转向《家庭治理宪章》"
+      }
+    ],
+    "relationship_states": [
+      {
+        "relationship_id": "REL_MK_SR_001",
+        "state": "民事伴侣

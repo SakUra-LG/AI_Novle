@@ -1,0 +1,962 @@
+{
+  "macro_group_id": "MG017",
+  "event_clusters": [
+    {
+      "cluster_id": "EC081",
+      "chapter_span": [
+        161,
+        162
+      ],
+      "source_event_direction": "前世具体受害：前世因喉炎康复数据被篡改，导致保险拒赔巡演资金链断裂。；本事件独有的前世信息差：1984年喉炎康复打卡表蓝色封皮第三层第112页有莱昂·周签字。；今生提前动作：麦珂当众调出1984年蓝色封皮打卡表第112页，要求独立审计员现场复述晨间口诀。；第161章可见小赢：独立审计员准确背诵口诀并展示笔压一致，维克多·兰斯被迫暂停保险调查。；第162章新交锋：维克多·兰斯试图以“样本污染”为由推翻结论，苏菲亚出示胶片边缘氧化斑对比图。；阻力方永久现实损失：奥瑞恩集团无法否认物理特征，保险拒赔令被审计组当场驳回。；主角现实收益：独立审计员正式加入核心审计组，巡演资金链恢复安全。；不可逆结算键：1985年喉炎康复数据物理验证通过；接回死亡控制主线：阻断前世因健康数据造假导致的资金链断裂死亡链",
+      "source_event_direction_sha256": "e4b3ff8a054a08d02483334eb12f65ccbb0eb13e8c0c715844fca88b3ea9f850",
+      "source_macro_sha256": "f57ba01c3856e3f594dea9ebeecea75052cb6cb1680db79def2d851080ff217c",
+      "name": "声压铁证与胶片氧化斑",
+      "timeline_years": "1985—1986",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS02"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莱昂·周",
+        "维克多·兰斯",
+        "苏菲亚"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用保险条款漏洞，声称麦珂的喉炎康复数据存在‘人为篡改’嫌疑，以此为由启动资金冻结程序，并试图通过收购胶片厂销毁物理证据。",
+      "prev_life_tragedy": "前世因喉炎康复数据被篡改，导致保险拒赔巡演资金链断裂，麦珂因无法支付医疗和巡演费用而陷入绝境。",
+      "info_gap_from_prev_life": "1. 1984年喉炎康复打卡表蓝色封皮第三层第112页有莱昂·周签字；2. 1985年工作室日故障时段（第3分12秒）及蓝黑圆珠笔型号；3. 奥瑞恩集团将在1986年初收购特定胶片厂，且该厂使用酸性显影液导致胶片边缘出现特定氧化斑点。",
+      "why_previous_life_failed": "前世麦珂缺乏对物理证据链的完整掌控，未能及时锁定莱昂·周的清醒状态证据，也未预见到胶片厂的收购阴谋，导致证据被销毁，资金链断裂。",
+      "preemptive_avoidance": "麦珂当众调出1984年蓝色封皮打卡表第112页，要求独立审计员现场复述晨间口诀，并利用‘声压可视化系统’原型机测试，确立技术壁垒。",
+      "bait_and_evidence": "麦珂故意在听证会上展示‘声压可视化系统’原型机，诱导维克多·兰斯质疑其技术真实性，从而引出莱昂·周的笔压分析证据；同时，苏菲亚提前获取胶片厂样本，准备应对‘样本污染’指控。",
+      "comic_villain_behavior": "维克多·兰斯在听证会上试图用‘样本污染’为由推翻结论，却因对胶片氧化斑点的物理特征缺乏了解，被苏菲亚出示的对比图当场打脸，显得滑稽可笑。",
+      "villain_loss": "奥瑞恩集团无法否认物理特征，保险拒赔令被审计组当场驳回，资金链恢复安全；胶片厂收购计划暴露，声誉受损。",
+      "protagonist_gain": "独立审计员莱昂·周正式加入核心审计组，巡演资金链恢复安全；‘声压可视化系统’原型机通过测试，确立行业标杆地位。",
+      "relationship_change": "莱昂·周从独立审计员转变为‘星火同盟’核心成员，与麦珂建立深厚信任；维克多·兰斯与奥瑞恩集团内部矛盾加剧。",
+      "continuity_writes": [
+        "莱昂·周加入核心审计组",
+        "保险拒赔令被驳回",
+        "胶片厂样本被封存"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007:trust_governance__extension_EC081",
+          "state_key": "trust_governance__extension_EC081",
+          "from": "pending",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_161_THROAT_RECOVERY_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_B6BBF0D9B359",
+          "state_key": "opposition_loss_EC081",
+          "from": "active",
+          "to": "奥瑞恩集团无法否认物理特征，保险拒赔令被审计组当场驳回，资金链恢复安全；胶片厂收购计划暴露，声誉受损。",
+          "irreversible": true,
+          "evidence": "奥瑞恩集团因证据链完整且无法否认物理特征而被迫撤回保险拒赔令，巡演资金链恢复安全；苏菲亚手中的胶片厂样本被确认为关键物证并封存；‘声压可视化系统’原型机通过全机械结构测试，确立行业标杆地位；莱昂·周正式加入‘星火同盟’核心审计组。",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [],
+      "cluster_outcome": "奥瑞恩集团因证据链完整且无法否认物理特征而被迫撤回保险拒赔令，巡演资金链恢复安全；苏菲亚手中的胶片厂样本被确认为关键物证并封存；‘声压可视化系统’原型机通过全机械结构测试，确立行业标杆地位；莱昂·周正式加入‘星火同盟’核心审计组。",
+      "next_event_hook": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，这将直接触发1987年‘棱镜之夜’直播事故的前置条件；同时，苏菲亚手中的胶片厂样本将成为P05阶段锁定对手组织链的关键物证，推动剧情进入全面反击阶段。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 161,
+          "timeline_start": "1985-12-10",
+          "timeline_end": "1985-12-10",
+          "scene": "市立图书馆听证室",
+          "chapter_goal": "通过喉炎康复打卡表和笔压分析，证明莱昂·周清醒状态，迫使维克多·兰斯暂停保险调查。",
+          "chapter_title": "第161章：笔压与口诀",
+          "participants": [
+            "麦珂",
+            "莱昂·周",
+            "维克多·兰斯",
+            "苏菲亚"
+          ],
+          "opening_conflict": "维克多·兰斯质疑麦珂的喉炎康复数据真实性，要求独立审计员莱昂·周现场验证。",
+          "info_gap_use": "麦珂调出1984年蓝色封皮打卡表第112页，要求莱昂·周复述晨间口诀并展示笔压一致。",
+          "opponent_reaction": "维克多·兰斯试图质疑笔压分析的可靠性，但莱昂·周的准确背诵和笔压一致性证明使其无法反驳。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市立图书馆听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂将打卡表推至莱昂·周面前"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_161_THROAT_RECOVERY_LOG",
+              "timeline_scope": "current",
+              "display_name": "1984年喉炎康复打卡表（第112页）",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_157_FIREWALL_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为背景证据，证明数据防火墙的有效性"
+            }
+          ],
+          "action_sequence": [
+            "麦珂调出打卡表第112页",
+            "莱昂·周复述晨间口诀",
+            "莱昂·周展示笔压一致性",
+            "维克多·兰斯被迫暂停保险调查"
+          ],
+          "visible_payoff": "维克多·兰斯被迫暂停保险调查，麦珂暂时保住资金链。",
+          "ending": "维克多·兰斯面色铁青，宣布暂停调查，但暗示将进一步审查胶片样本。",
+          "must_include": [
+            "蓝色封皮打卡表",
+            "晨间口诀",
+            "笔压分析"
+          ],
+          "must_not_include": [
+            "手机",
+            "PDF",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "麦珂在市立图书馆听证室当众调出1984年蓝色封皮打卡表第112页，要求独立审计员莱昂·周现场复述晨间口诀。莱昂·周准确背诵，并展示当时使用的蓝黑圆珠笔笔压与倾斜角记录，证明其清醒状态。维克多·兰斯试图质疑笔压分析的可靠性，但莱昂·周的证据无懈可击，被迫暂停保险调查。麦珂趁机展示‘声压可视化系统’原型机，确立技术壁垒。"
+        },
+        {
+          "chapter_id": 162,
+          "timeline_start": "1985-12-11",
+          "timeline_end": "1985-12-11",
+          "scene": "市立图书馆听证室",
+          "chapter_goal": "通过胶片边缘氧化斑对比图，粉碎维克多·兰斯的‘样本污染’指控，确立物理证据链。",
+          "chapter_title": "第162章：氧化斑与铁证",
+          "participants": [
+            "麦珂",
+            "莱昂·周",
+            "维克多·兰斯",
+            "苏菲亚"
+          ],
+          "opening_conflict": "维克多·兰斯试图以‘样本污染’为由推翻结论，要求重新审查胶片样本。",
+          "info_gap_use": "苏菲亚出示胶片边缘氧化斑对比图，证明奥瑞恩集团收购的胶片厂使用酸性显影液，导致特定氧化斑点。",
+          "opponent_reaction": "维克多·兰斯试图辩解，但氧化斑点的物理特征无法否认，被迫撤回保险拒赔令。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市立图书馆听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "苏菲亚将胶片样本推至维克多·兰斯面前"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_162_FILM_OXIDATION_MAP",
+              "timeline_scope": "current",
+              "display_name": "胶片边缘氧化斑对比图",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_161_THROAT_RECOVERY_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为背景证据，证明数据链的完整性"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯提出‘样本污染’指控",
+            "苏菲亚出示胶片边缘氧化斑对比图",
+            "维克多·兰斯无法否认物理特征",
+            "保险拒赔令被当场驳回"
+          ],
+          "visible_payoff": "保险拒赔令被驳回，巡演资金链恢复安全；莱昂·周正式加入核心审计组。",
+          "ending": "维克多·兰斯狼狈离场，麦珂与莱昂·周握手，确立合作关系。",
+          "must_include": [
+            "胶片边缘氧化斑",
+            "酸性显影液",
+            "保险拒赔令驳回"
+          ],
+          "must_not_include": [
+            "手机",
+            "PDF",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "维克多·兰斯在市立图书馆听证室试图以‘样本污染’为由推翻结论，要求重新审查胶片样本。苏菲亚出示胶片边缘氧化斑对比图，证明奥瑞恩集团收购的胶片厂使用酸性显影液，导致特定氧化斑点。维克多·兰斯试图辩解，但氧化斑点的物理特征无法否认，被迫撤回保险拒赔令。麦珂趁机宣布莱昂·周正式加入核心审计组，确立合作关系。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC082",
+      "chapter_span": [
+        163,
+        164
+      ],
+      "source_event_direction": "前世具体受害：前世奥瑞恩收购胶片厂后利用酸性显影液销毁证据，导致关键物证灭失。；本事件独有的前世信息差：1986年初奥瑞恩将收购特定胶片厂，该厂使用酸性显影液致胶片边缘氧化。；今生提前动作：麦珂提前联系胶片厂老板，在收购协议签署前公开检测残留酸性显影液样本。；第163章可见小赢：工厂老板拒绝配合奥瑞恩收购，转而向麦珂提供独家酸化胶片样本。；第164章新交锋：维克多·兰斯强行派员查封样本，苏菲亚利用机械锁保护样本未被转移。；阻力方永久现实损失：奥瑞恩错失收购时机，失去制造假账的物理载体。；主角现实收益：获得关键酸化胶片样本，确认为未来揭露伪造体检报告的核心物证。；不可逆结算键：酸化胶片样本被独立封存；接回死亡控制主线：保全前世被销毁的关键物理证据链",
+      "source_event_direction_sha256": "4fa961722e99e59a61a9398f08c6d6fc33e245ab0f31ee7b0e9c3ad8b9ff2439",
+      "source_macro_sha256": "f57ba01c3856e3f594dea9ebeecea75052cb6cb1680db79def2d851080ff217c",
+      "name": "酸化胶片保卫战",
+      "timeline_years": "1985—1986",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS02"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "苏菲亚",
+        "维克多·兰斯",
+        "老陈"
+      ],
+      "fictional_obstacle": "奥瑞恩集团试图通过收购‘红星胶片厂’并销毁残留酸性显影液证据，以切断麦珂手中的物理证据链，同时利用保险条款拒赔巡演资金。",
+      "prev_life_tragedy": "前世奥瑞恩收购胶片厂后，利用酸性显影液销毁了关键物证，导致麦珂无法证明体检报告造假，最终资金链断裂，事业崩盘。",
+      "info_gap_from_prev_life": "麦珂知道1986年初奥瑞恩将收购特定胶片厂，且该厂使用酸性显影液导致胶片边缘出现特定氧化斑点，这是鉴别真伪的关键物理特征。",
+      "why_previous_life_failed": "前世麦珂未意识到胶片厂的战略价值，未及时干预收购，导致关键物理证据灭失。",
+      "preemptive_avoidance": "麦珂提前联系胶片厂老板老陈，在收购协议签署前，利用前世记忆中的‘氧化斑点’特征，公开检测并保留残留酸性显影液样本。",
+      "bait_and_evidence": "麦珂以‘高价收购废料’为诱饵，诱导老陈提供独家酸化胶片样本，并当场进行化学检测，形成不可篡改的物理证据。",
+      "comic_villain_behavior": "维克多·兰斯因急于掩盖真相，在查封现场时因不熟悉机械锁结构，滑稽地试图用蛮力撬锁，反而触发了警报，暴露了其心虚与无能。",
+      "villain_loss": "奥瑞恩错失收购时机，失去制造假账的物理载体，声誉受损，且被公众视为试图销毁证据的阴谋家。",
+      "protagonist_gain": "获得关键酸化胶片样本，确认为未来揭露伪造体检报告的核心物证，并成功保全离线证据链。",
+      "relationship_change": "苏菲亚与麦珂的信任进一步加深，苏菲亚展现出卓越的机械保护能力；维克多·兰斯与奥瑞恩集团内部矛盾加剧，因其失误导致计划失败。",
+      "continuity_writes": [
+        "酸化胶片样本被独立封存，成为P05阶段锁定对手组织链的关键物证。",
+        "维克多·兰斯因查封失败，在集团内部地位动摇，为后续内部分裂埋下伏笔。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007:trust_governance__extension_EC082",
+          "state_key": "trust_governance__extension_EC082",
+          "from": "pending",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_163_ACIDIC_FILM_SAMPLE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_B6BBF0D9B359",
+          "state_key": "opposition_loss_EC082",
+          "from": "active",
+          "to": "奥瑞恩集团收购计划失败，关键物理证据被主角方掌控，阴谋暴露。",
+          "irreversible": true,
+          "evidence": "ART_163_ACIDIC_FILM_SAMPLE",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [],
+      "cluster_outcome": "奥瑞恩集团因证据链完整且无法否认物理特征而被迫撤回保险拒赔令，巡演资金链恢复安全；苏菲亚手中的胶片厂样本被确认为关键物证并封存；‘声压可视化系统’原型机通过全机械结构测试，确立行业标杆地位；莱昂·周正式加入‘星火同盟’核心审计组。",
+      "next_event_hook": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，这将直接触发1987年‘棱镜之夜’直播事故的前置条件；同时，苏菲亚手中的胶片厂样本将成为P05阶段锁定对手组织链的关键物证，推动剧情进入全面反击阶段。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 163,
+          "timeline_start": "1985-12-11",
+          "timeline_end": "1985-12-11",
+          "scene": "红星胶片厂仓库",
+          "chapter_goal": "获取酸化胶片样本，阻止奥瑞恩收购",
+          "chapter_title": "氧化斑点的秘密",
+          "participants": [
+            "麦珂",
+            "苏菲亚",
+            "老陈"
+          ],
+          "opening_conflict": "奥瑞恩集团派员前往红星胶片厂，试图以低价收购并销毁残留酸性显影液，麦珂必须抢先一步获取样本。",
+          "info_gap_use": "麦珂利用前世记忆，指出胶片边缘的特定氧化斑点，证明其曾接触过酸性显影液，从而说服老陈配合。",
+          "opponent_reaction": "奥瑞恩代表试图以商业合同施压，但被麦珂以‘公开检测’为由拒绝，并当场邀请媒体见证。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "红星胶片厂仓库",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂推开仓库大门，空气中弥漫着刺鼻的化学气味。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_163_ACIDIC_FILM_SAMPLE",
+              "timeline_scope": "current",
+              "display_name": "酸化胶片样本",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_159_BARRY_CONFESION_TAPE",
+              "timeline_scope": "current",
+              "purpose": "作为背景证据，增强麦珂谈判的底气。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂与苏菲亚抵达仓库，发现奥瑞恩代表正在与老陈谈判。",
+            "麦珂介入，指出胶片边缘的氧化斑点，并解释其化学成因。",
+            "老陈半信半疑，麦珂提出现场检测，并邀请在场的记者见证。",
+            "检测结果显示酸性残留，老陈意识到奥瑞恩的阴谋，拒绝收购，并将样本交给麦珂。"
+          ],
+          "visible_payoff": "获得酸化胶片样本，奥瑞恩收购计划受挫。",
+          "ending": "麦珂将样本装入特制密封袋，苏菲亚将其锁入随身携带的机械保险箱。",
+          "must_include": [
+            "氧化斑点的特写描写",
+            "老陈的心理转变",
+            "记者的见证"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "麦珂与苏菲亚潜入红星胶片厂仓库，发现奥瑞恩代表正试图以低价收购并销毁残留酸性显影液。麦珂利用前世记忆，指出胶片边缘的特定氧化斑点，证明其曾接触过酸性显影液。老陈半信半疑，麦珂提出现场检测，并邀请在场的记者见证。检测结果显示酸性残留，老陈意识到奥瑞恩的阴谋，拒绝收购，并将样本交给麦珂。麦珂将样本装入特制密封袋，苏菲亚将其锁入随身携带的机械保险箱，确保证据安全。"
+        },
+        {
+          "chapter_id": 164,
+          "timeline_start": "1985-12-12",
+          "timeline_end": "1985-12-12",
+          "scene": "麦珂工作室",
+          "chapter_goal": "保护样本，反击维克多·兰斯的查封行动",
+          "chapter_title": "机械锁的反击",
+          "participants": [
+            "麦珂",
+            "苏菲亚",
+            "维克多·兰斯"
+          ],
+          "opening_conflict": "维克多·兰斯得知样本在麦珂手中，派员强行查封，试图夺回样本。",
+          "info_gap_use": "麦珂预知维克多·兰斯会采取强硬手段，提前布置机械锁保护样本。",
+          "opponent_reaction": "维克多·兰斯因不熟悉机械锁结构，试图用蛮力撬锁，反而触发了警报，暴露了其心虚与无能。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂工作室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "维克多·兰斯带着手下闯入工作室，气氛紧张。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_163_ACIDIC_FILM_SAMPLE",
+              "timeline_scope": "current",
+              "purpose": "作为核心保护对象，维克多·兰斯试图夺取的目标。"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯带人闯入工作室，要求交出样本。",
+            "麦珂拒绝，并指出样本已受法律保护。",
+            "维克多·兰斯试图强行撬锁，苏菲亚启动机械锁的警报系统。",
+            "警报声引来警察，维克多·兰斯因非法入侵被警告，样本安全。"
+          ],
+          "visible_payoff": "样本安全，维克多·兰斯行动失败，声誉受损。",
+          "ending": "维克多·兰斯狼狈离去，麦珂与苏菲亚确认样本安全，准备下一步行动。",
+          "must_include": [
+            "机械锁的细节描写",
+            "维克多·兰斯的滑稽举动",
+            "警察的介入"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "维克多·兰斯得知样本在麦珂手中，派员强行查封，试图夺回样本。麦珂预知此举，提前布置机械锁保护样本。维克多·兰斯带人闯入工作室，要求交出样本。麦珂拒绝，并指出样本已受法律保护。维克多·兰斯试图强行撬锁，苏菲亚启动机械锁的警报系统。警报声引来警察，维克多·兰斯因非法入侵被警告，样本安全。维克多·兰斯狼狈离去，麦珂与苏菲亚确认样本安全，准备下一步行动。"
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "苏菲亚",
+        "维克多·兰斯",
+        "老陈（胶片厂老板）"
+      ]
+    },
+    {
+      "cluster_id": "EC083",
+      "chapter_span": [
+        165,
+        166
+      ],
+      "source_event_direction": "前世具体受害：前世声压可视化系统依赖电子元件，故障频发且易被黑客篡改数据。；本事件独有的前世信息差：1984年晨间口诀敲击节拍可迁移至全机械联动设计灵感。；今生提前动作：麦珂召集昆廷·琼斯与黛安娜，依据口诀节拍设计纯机械声压可视化原型机。；第165章可见小赢：原型机在无电力状态下成功将声波转化为可视刻度，震动幅度精准对应频率。；第166章新交锋：奥瑞恩技术团队质疑机械结构精度，邀请第三方公证现场测试。；阻力方永久现实损失：电子竞品因缺乏物理稳定性被行业淘汰，技术壁垒确立。；主角现实收益：‘声压可视化系统’原型机通过全机械结构测试，确立行业标杆地位。；不可逆结算键：全机械声压可视化原型机通过公测；接回死亡控制主线：避免前世因技术漏洞导致的系统崩溃与数据丢失",
+      "source_event_direction_sha256": "f5d972b86accff5259d684226660debb6da6d9b5032d49c45e02cd0a36ff4924",
+      "source_macro_sha26": "x9y8z7w6v5u4",
+      "name": "机械声压可视化原型机公测与奥瑞恩技术围猎",
+      "timeline_years": "1985—1986",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS02"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "昆廷·琼斯",
+        "黛安娜",
+        "维克多·兰斯",
+        "莱昂·周"
+      ],
+      "fictional_obstacle": "奥瑞恩集团质疑机械结构精度，试图通过第三方公证测试证明其数据不可靠，从而维持电子竞品的市场垄断并切断麦珂巡演资金。",
+      "prev_life_tragedy": "前世声压可视化系统依赖电子元件，故障频发且易被黑客篡改数据，导致麦珂在关键听证会上证据失效，资金链断裂。",
+      "info_gap_from_prev_life": "1984年晨间口诀敲击节拍可迁移至全机械联动设计灵感，以及电子元件在特定频率下的共振失效点。",
+      "why_previous_life_failed": "过度依赖电子信号处理，忽略了物理机械结构的稳定性与抗干扰能力，且未预见到对手会针对电子信号进行定向干扰。",
+      "preemptive_avoidance": "麦珂召集昆廷·琼斯与黛安娜，依据口诀节拍设计纯机械声压可视化原型机，利用齿轮咬合与杠杆原理实现声波到可视刻度的直接转化，彻底规避电子干扰。",
+      "bait_and_evidence": "麦珂故意在原型机中保留一个看似精密实则脆弱的‘校准旋钮’，引诱维克多·兰斯在测试中强行调整以寻找破绽，结果导致旋钮卡死，反向证明机械结构的自锁稳定性。",
+      "comic_villain_behavior": "维克多·兰斯在测试现场因紧张过度，误将高频测试信号输入低频通道，导致其带来的电子竞品屏幕出现雪花屏，他尴尬地试图用‘电磁干扰’解释，却被第三方公证员当场记录。",
+      "villain_loss": "奥瑞恩电子竞品因缺乏物理稳定性被行业淘汰，技术壁垒确立，维克多·兰斯在技术圈声誉受损，奥瑞恩集团被迫撤回对麦珂巡演资金的保险拒赔令。",
+      "protagonist_gain": "‘声压可视化系统’原型机通过全机械结构测试，确立行业标杆地位，麦珂获得技术主导权与巡演资金安全。",
+      "relationship_change": "莱昂·周见证麦珂的技术实力，正式加入‘星火同盟’核心审计组，决定报考音乐学院深造；昆廷·琼斯对麦珂的机械设计理念产生深刻认同。",
+      "continuity_writes": [
+        "RIGHT_VL_007:trust_governance__extension_EC083"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007:trust_governance__extension_EC083",
+          "state_key": "trust_governance__extension_EC083",
+          "from": "pending",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_165_MECHANICAL_PROTOTYPE_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_B6BBF0D9B359",
+          "state_key": "opposition_loss_EC083",
+          "from": "active",
+          "to": "奥瑞恩集团技术围猎失败，电子竞品被淘汰，技术壁垒被主角方确立。",
+          "irreversible": true,
+          "evidence": "ART_165_MECHANICAL_PROTOTYPE_LOG",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "1985_WORKSHOP_LOG"
+      ],
+      "cluster_outcome": "‘声压可视化系统’原型机通过全机械结构测试，确立行业标杆地位；奥瑞恩集团因技术失败被迫撤回保险拒赔令，巡演资金链恢复安全；莱昂·周正式加入‘星火同盟’核心审计组。",
+      "next_event_hook": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，这将直接触发1987年‘棱镜之夜’直播事故的前置条件。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 165,
+          "timeline_start": "1985-12-12",
+          "timeline_end": "1985-12-12",
+          "scene": "麦珂工作室",
+          "chapter_goal": "原型机在无电力状态下成功将声波转化为可视刻度，震动幅度精准对应频率。",
+          "chapter_title": "齿轮的脉搏",
+          "participants": [
+            "麦珂",
+            "昆廷·琼斯",
+            "黛安娜"
+          ],
+          "opening_conflict": "原型机核心传动轴在高速运转下出现微小抖动，麦珂需在不使用电子传感器的情况下，通过机械结构调整消除误差。",
+          "info_gap_use": "麦珂回忆1984年晨间口诀的敲击节拍，将其转化为齿轮咬合的时序逻辑，重新校准传动轴角度。",
+          "opponent_reaction": "无直接对手在场，但麦珂预见到维克多·兰斯将质疑机械结构的精度，因此刻意保留一个看似多余的‘校准旋钮’作为诱饵。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂工作室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂手指轻触齿轮，回忆口诀节拍"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_165_MECHANICAL_PROTOTYPE_LOG",
+              "timeline_scope": "current",
+              "display_name": "全机械声压可视化原型机测试日志",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂发现传动轴抖动",
+            "回忆口诀节拍，调整齿轮角度",
+            "昆廷·琼斯协助固定支架",
+            "黛安娜记录震动幅度数据",
+            "原型机成功运行，刻度精准对应频率"
+          ],
+          "visible_payoff": "原型机在无电力状态下成功将声波转化为可视刻度，震动幅度精准对应频率，麦珂确认机械结构稳定性。",
+          "ending": "麦珂在测试日志上签字，准备迎接维克多·兰斯的挑战。",
+          "must_include": [
+            "齿轮咬合声",
+            "口诀节拍",
+            "校准旋钮"
+          ],
+          "must_not_include": [
+            "电子传感器",
+            "数字显示屏"
+          ],
+          "detailed_synopsis": "麦珂在工作室中调试全机械声压可视化原型机，发现核心传动轴在高速运转下出现微小抖动。他回忆起1984年晨间口诀的敲击节拍，将其转化为齿轮咬合的时序逻辑，重新校准传动轴角度。昆廷·琼斯协助固定支架，黛安娜记录震动幅度数据。经过多次调整，原型机成功运行，刻度精准对应频率。麦珂在测试日志上签字，准备迎接维克多·兰斯的挑战。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_156_BARRY_CONFESION_TAPE",
+              "timeline_scope": "previous_life",
+              "purpose": "麦珂在调试时播放巴里·布鲁姆的录音，测试原型机对复杂人声的解析能力"
+            }
+          ]
+        },
+        {
+          "chapter_id": 166,
+          "timeline_start": "1985-12-17",
+          "timeline_end": "1985-12-17",
+          "scene": "市立图书馆报告厅",
+          "chapter_goal": "奥瑞恩技术团队质疑机械结构精度，邀请第三方公证现场测试，麦珂利用机械结构的自锁稳定性反败为胜。",
+          "chapter_title": "无声的证词",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "莱昂·周",
+            "第三方公证员"
+          ],
+          "opening_conflict": "维克多·兰斯带领奥瑞恩技术团队抵达现场，质疑机械结构精度，要求第三方公证员进行严格测试。",
+          "info_gap_use": "麦珂预见到维克多·兰斯会针对电子信号进行干扰，因此将原型机置于电磁屏蔽箱中，并故意保留‘校准旋钮’作为诱饵。",
+          "opponent_reaction": "维克多·兰斯在测试中强行调整‘校准旋钮’，试图寻找破绽，结果导致旋钮卡死，反向证明机械结构的自锁稳定性。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市立图书馆报告厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "维克多·兰斯步入报告厅，目光锁定原型机"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_165_MECHANICAL_PROTOTYPE_LOG",
+              "timeline_scope": "current",
+              "purpose": "第三方公证员参考测试日志，验证原型机性能"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯质疑机械结构精度",
+            "第三方公证员开始测试",
+            "维克多·兰斯强行调整‘校准旋钮’",
+            "旋钮卡死，机械结构自锁",
+            "莱昂·周记录数据，确认原型机稳定性",
+            "维克多·兰斯尴尬解释，公证员记录其失误"
+          ],
+          "visible_payoff": "原型机通过测试，机械结构稳定性得到证实，维克多·兰斯的技术质疑被驳回。",
+          "ending": "莱昂·周正式加入‘星火同盟’核心审计组，麦珂与昆廷·琼斯讨论光学投影组件研发。",
+          "must_include": [
+            "电磁屏蔽箱",
+            "校准旋钮卡死",
+            "莱昂·周记录数据"
+          ],
+          "must_not_include": [
+            "电子干扰器",
+            "黑客攻击"
+          ],
+          "detailed_synopsis": "维克多·兰斯带领奥瑞恩技术团队抵达市立图书馆报告厅，质疑机械结构精度，要求第三方公证员进行严格测试。麦珂将原型机置于电磁屏蔽箱中，并故意保留‘校准旋钮’作为诱饵。测试中，维克多·兰斯强行调整‘校准旋钮’，试图寻找破绽，结果导致旋钮卡死，反向证明机械结构的自锁稳定性。莱昂·周记录数据，确认原型机稳定性。维克多·兰斯尴尬解释，公证员记录其失误。莱昂·周正式加入‘星火同盟’核心审计组，麦珂与昆廷·琼斯讨论光学投影组件研发。"
+        }
+      ],
+      "source_macro_sha256": "f57ba01c3856e3f594dea9ebeecea75052cb6cb1680db79def2d851080ff217c"
+    },
+    {
+      "cluster_id": "EC084",
+      "chapter_span": [
+        167,
+        168
+      ],
+      "source_event_direction": "前世具体受害：前世奥瑞恩利用媒体垄断舆论，将莱昂·周污名化为“精神不稳定者”。；本事件独有的前世信息差：1985年工作室日莱昂·周指出故障时段为第3分12秒，蓝黑圆珠笔型号可查。；今生提前动作：麦珂在公众听证会上安排独立审计员现场复现故障细节，并比对当年笔迹日志。；第167章可见小赢：独立审计员精准描述故障波形与笔压特征，全场观众见证其清醒状态。；第168章新交锋：奥瑞恩代表试图打断听证会，维克多·兰斯因无法解释物理数据而语塞。；阻力方永久现实损失：奥瑞恩信誉受损，公众听证会记录成为法律铁证。；主角现实收益：独立审计员被确认为可信证人，决定报考音乐学院深造。；不可逆结算键：听证会记录确认证人清醒与数据真实性；接回死亡控制主线：扭转前世因舆论抹杀导致的证人失效危机",
+      "source_event_direction_sha256": "d3e2059b5afac237417205069dc14aca97be214c857fd8195b6c52c3c1ef3ab8",
+      "source_macro_sha256": "f57ba01c3856e3f594dea9ebeecea75052cb6cb1680db79def2d851080ff217c",
+      "name": "听证会上的机械回响",
+      "timeline_years": "1985—1986",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "institutional",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS02"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莱昂·周",
+        "维克多·兰斯",
+        "苏菲亚"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用媒体将莱昂·周污名化为精神不稳定者，并试图通过保险拒赔切断资金。",
+      "prev_life_tragedy": "前世莱昂·周因舆论抹杀被视为疯子，证据链断裂，麦珂资金链断裂导致巡演失败。",
+      "info_gap_from_prev_life": "1985年工作室日故障确切时间为第3分12秒，且莱昂·周当时使用的蓝黑圆珠笔型号及笔压特征可查。",
+      "why_previous_life_failed": "缺乏物理证据佐证证人证词，仅凭口头陈述无法对抗资本控制的媒体叙事。",
+      "preemptive_avoidance": "麦珂在听证会现场布置‘声压可视化系统’原型机，并提前获取莱昂·周当年的日志与笔迹样本。",
+      "bait_and_evidence": "诱导维克多·兰斯质疑莱昂·周的精神状态，随即展示1984年喉炎康复打卡表（第112页）与笔压分析，证明其当时清醒且记录精准。",
+      "comic_villain_behavior": "维克多·兰斯试图用‘艺术家的感性冲动’来解释数据异常，结果被机械原型机的客观波形打脸，显得滑稽且无知。",
+      "villain_loss": "奥瑞恩集团信誉受损，保险拒赔令被迫撤回，公众听证会记录成为法律铁证。",
+      "protagonist_gain": "莱昂·周被确认为可信证人，加入核心审计组；巡演资金链恢复安全。",
+      "relationship_change": "莱昂·周从被怀疑者转变为麦珂最坚定的技术盟友，决定报考音乐学院深造。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007:trust_governance__extension_EC084",
+          "state_key": "trust_governance__extension_EC084",
+          "from": "contested",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_167_HEARING_TRANSCRIPT",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_B6BBF0D9B359",
+          "state_key": "opposition_loss_EC084",
+          "from": "active",
+          "to": "奥瑞恩集团舆论操控失败，保险策略破产。",
+          "irreversible": true,
+          "evidence": "ART_167_HEARING_TRANSCRIPT",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [],
+      "cluster_outcome": "听证会记录确认证人清醒与数据真实性，奥瑞恩集团被迫撤回保险拒赔令，莱昂·周正式加入核心审计组。",
+      "next_event_hook": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，触发1987年‘棱镜之夜’直播事故前置条件。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 167,
+          "timeline_start": "1986-01-15",
+          "timeline_end": "1986-01-15",
+          "scene": "市立图书馆公共听证室",
+          "chapter_goal": "通过物理证据洗清莱昂·周的污名，确立其证词的可信度。",
+          "chapter_title": "笔尖下的真相",
+          "participants": [
+            "麦珂",
+            "莱昂·周",
+            "维克多·兰斯",
+            "独立审计员",
+            "记者群"
+          ],
+          "opening_conflict": "维克多·兰斯公开质疑莱昂·周患有癔症，其关于1985年故障的记录是幻觉。",
+          "info_gap_use": "麦珂出示1984年喉炎康复打卡表第112页，证明莱昂·周在发病期仍保持极高逻辑性的记录习惯。",
+          "opponent_reaction": "维克多·兰斯试图以‘巧合’搪塞，但无法解释笔压数据的精确性。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市立图书馆公共听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "听证会开始，维克多·兰斯率先发难"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_167_HEARING_TRANSCRIPT",
+              "timeline_scope": "current",
+              "display_name": "听证会官方记录",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "维克多·兰斯展示伪造的医疗报告，指控莱昂·周精神不稳定。",
+            "麦珂冷静回应，请出独立审计员展示‘声压可视化系统’原型机。",
+            "审计员现场复现1985年故障波形，与莱昂·周日志中的描述完全一致。",
+            "麦珂出示蓝黑圆珠笔笔压分析，证明记录时的清醒与专注。"
+          ],
+          "visible_payoff": "全场记者记录笔压分析结果，莱昂·周的证词获得初步认可。",
+          "ending": "维克多·兰斯脸色铁青，但暂时无法反驳物理证据。",
+          "must_include": [
+            "1984年喉炎康复打卡表第112页",
+            "蓝黑圆珠笔笔压分析",
+            "声压可视化系统原型机"
+          ],
+          "must_not_include": [
+            "手机",
+            "互联网",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "听证会上，维克多·兰斯咄咄逼人，出示伪造的医疗报告，声称莱昂·周患有间歇性癔症，其关于1985年工作室故障的记录纯属幻觉。麦珂不慌不忙，请出独立审计员。审计员启动‘声压可视化系统’原型机，现场复现了1985年故障时的声波波形。波形图与莱昂·周日志中的描述惊人地一致，精确到毫秒。麦珂随即出示1984年喉炎康复打卡表第112页，以及莱昂·周当时使用的蓝黑圆珠笔的笔压分析。数据显示，莱昂·周在记录故障时，笔压稳定，倾斜角一致，证明其当时处于高度清醒和专注状态。维克多·兰斯试图以‘巧合’搪塞，但面对冰冷的物理数据，他无言以对。全场记者纷纷记录，莱昂·周的证词可信度大幅提升。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_151_FLUORESCENT_EVIDENCE",
+              "timeline_scope": "previous_life",
+              "purpose": "作为背景参考，证明麦珂一贯的证据收集风格"
+            }
+          ]
+        },
+        {
+          "chapter_id": 168,
+          "timeline_start": "1986-01-15",
+          "timeline_end": "1986-01-15",
+          "scene": "市立图书馆公共听证室",
+          "chapter_goal": "彻底击溃奥瑞恩集团的舆论攻势，确立技术壁垒，恢复资金链。",
+          "chapter_title": "机械的审判",
+          "participants": [
+            "麦珂",
+            "莱昂·周",
+            "维克多·兰斯",
+            "苏菲亚",
+            "保险公司代表"
+          ],
+          "opening_conflict": "维克多·兰斯试图打断听证会，并威胁要切断麦珂的巡演资金。",
+          "info_gap_use": "麦珂揭示奥瑞恩集团收购胶片厂使用酸性显影液的阴谋，并展示苏菲亚找到的残留样本。",
+          "opponent_reaction": "维克多·兰斯因无法解释物理数据而语塞，最终被迫承认失败。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市立图书馆公共听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "维克多·兰斯试图强行终止听证会"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_167_HEARING_TRANSCRIPT",
+              "timeline_scope": "current",
+              "purpose": "作为法律铁证，迫使保险公司撤回拒赔令"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯恼羞成怒，试图以‘艺术家的感性冲动’解释数据异常。",
+            "麦珂冷笑，指出其逻辑漏洞，并展示苏菲亚找到的酸性显影液残留样本。",
+            "麦珂揭示奥瑞恩集团试图通过销毁胶片证据来掩盖真相的阴谋。",
+            "保险公司代表目睹全程，当场宣布撤回拒赔令。"
+          ],
+          "visible_payoff": "保险公司撤回拒赔令，巡演资金链恢复安全；莱昂·周决定报考音乐学院。",
+          "ending": "维克多·兰斯狼狈离场，麦珂与莱昂·周握手，确立同盟关系。",
+          "must_include": [
+            "酸性显影液残留样本",
+            "保险公司撤回拒赔令",
+            "莱昂·周决定报考音乐学院"
+          ],
+          "must_not_include": [
+            "手机",
+            "互联网",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "维克多·兰斯见势不妙，试图强行终止听证会，并威胁要切断麦珂的巡演资金。麦珂冷笑一声，指出其逻辑漏洞：如果莱昂·周是疯子，为何能精准预测故障时间？她随即展示苏菲亚找到的酸性显影液残留样本，揭示奥瑞恩集团试图通过销毁胶片证据来掩盖真相的阴谋。维克多·兰斯语塞，无法解释物理数据。保险公司代表目睹全程，当场宣布撤回拒赔令，恢复麦珂的巡演资金。听证会结束后，莱昂·周感激地握住麦珂的手，决定报考音乐学院深造，成为连接技术与公众的桥梁。维克多·兰斯狼狈离场，奥瑞恩集团的信誉遭受重创。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC085",
+      "chapter_span": [
+        169,
+        170
+      ],
+      "source_event_direction": "前世具体受害：前世奥瑞恩通过保险条款与健康数据共享彻底切断麦珂生存根基。；本事件独有的前世信息差：1986年初收购案前兆的胶片氧化斑点特征可鉴别真伪。；今生提前动作：麦珂联合苏菲亚与独立审计员，向监管机构提交完整物理证据链与机械测试报告。；第169章可见小赢：监管机构裁定奥瑞恩保险条款无效，强制启动资金链恢复程序。；第170章新交锋：维克多·兰斯试图拖延执行，但面对已公开的物理证据不得不撤回所有指控。；阻力方永久现实损失：奥瑞恩集团被迫支付巨额赔偿金，放弃对胶片库的控制权。；主角现实收益：麦珂健康状态稳定，大型场馆光学投影组件研发压力解除。；不可逆结算键：监管机构裁定奥瑞恩败诉并赔偿；接回死亡控制主线：彻底终结前世因资金链断裂导致的死亡结局",
+      "source_event_direction_sha256": "f7288e888780a0a36aaa822a8277e3e880c0210c19413912cc41c2933132bc2f",
+      "source_macro_sha256": "f57ba01c3856e3f594dea9ebeecea75052cb6cb1680db79def2d851080ff217c",
+      "name": "声压铁证与胶片氧化审判",
+      "timeline_years": "1985-1986",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "negotiation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS02"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "苏菲亚",
+        "维克多·兰斯",
+        "莱昂·周",
+        "监管机构首席审计员"
+      ],
+      "fictional_obstacle": "奥瑞恩集团试图通过收购胶片厂销毁物理证据，并利用保险条款切断麦珂资金链。",
+      "prev_life_tragedy": "前世奥瑞恩通过保险条款与健康数据共享彻底切断麦珂生存根基，导致其破产死亡。",
+      "info_gap_from_prev_life": "1986年初收购案前兆的胶片氧化斑点特征可鉴别真伪；1984年喉炎康复打卡表第112页及1985年故障时段3分12秒。",
+      "why_previous_life_failed": "前世麦珂缺乏物理证据链，仅凭口头辩解无法对抗资本操控的医疗数据造假。",
+      "preemptive_avoidance": "麦珂联合苏菲亚与独立审计员，向监管机构提交完整物理证据链与机械测试报告，锁定胶片厂样本。",
+      "bait_and_evidence": "利用‘声压可视化系统’原型机现场复现故障，结合胶片边缘特定氧化斑点，证明数据被篡改。",
+      "comic_villain_behavior": "维克多·兰斯在听证会上试图用‘自然氧化’理论狡辩，却因不懂化学常识被审计员当场驳斥，尴尬离场。",
+      "villain_loss": "奥瑞恩集团被迫支付巨额赔偿金，放弃对胶片库的控制权，保险拒赔令失效。",
+      "protagonist_gain": "麦珂健康状态稳定，大型场馆光学投影组件研发压力解除，资金链恢复。",
+      "relationship_change": "莱昂·周从被怀疑者转变为麦珂最坚定的技术盟友，决定报考音乐学院深造。",
+      "continuity_writes": [
+        "RIGHT_VL_007:trust_governance__extension_EC085"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_007:trust_governance__extension_EC085",
+          "state_key": "trust_governance__extension_EC085",
+          "from": "contested",
+          "to": "secured",
+          "irreversible": true,
+          "evidence": "ART_169_ACOUSTIC_VISUALIZATION_REPORT",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "ORG_B6BBF0D9B359",
+          "state_key": "opposition_loss_EC085",
+          "from": "active",
+          "to": "奥瑞恩集团资金链反制失败，胶片控制权丧失。",
+          "irreversible": true,
+          "evidence": "ART_170_FILM_OXIDATION_CERTIFICATE",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [],
+      "cluster_outcome": "监管机构裁定奥瑞恩保险条款无效，强制启动资金链恢复程序；维克多·兰斯撤回所有指控，奥瑞恩支付赔偿金。",
+      "next_event_hook": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，触发1987年‘棱镜之夜’直播事故前置条件。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 169,
+          "timeline_start": "1986-01-15",
+          "timeline_end": "1986-01-15",
+          "scene": "市消费者保护协会听证室",
+          "chapter_goal": "监管机构裁定奥瑞恩保险条款无效，强制启动资金链恢复程序。",
+          "chapter_title": "声压铁证",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "首席审计员",
+            "莱昂·周"
+          ],
+          "opening_conflict": "维克多·兰斯出示伪造的医疗数据，声称麦珂因健康问题无法履行巡演合同，要求保险拒赔。",
+          "info_gap_use": "麦珂指出1984年喉炎康复打卡表第112页的签名笔压与1985年故障日志一致，证明莱昂·周当时清醒且数据真实。",
+          "opponent_reaction": "维克多·兰斯试图以‘笔迹模仿’为由反驳，但无法解释机械结构测试的实时性。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市消费者保护协会听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "听证会开始，维克多·兰斯抛出伪造证据。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_169_ACOUSTIC_VISUALIZATION_REPORT",
+              "timeline_scope": "current",
+              "display_name": "声压可视化系统测试报告",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_157_FIREWALL_LOG",
+              "timeline_scope": "current",
+              "purpose": "证明数据未被篡改"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯出示伪造医疗数据，要求保险拒赔。",
+            "麦珂展示1984年喉炎康复打卡表第112页，指出签名笔压特征。",
+            "莱昂·周现场操作‘声压可视化系统’原型机，复现1985年故障时段3分12秒的波形。",
+            "审计员比对波形与打卡表笔压，确认数据真实性，裁定保险条款无效。"
+          ],
+          "visible_payoff": "监管机构当场裁定奥瑞恩保险条款无效，强制启动资金链恢复程序。",
+          "ending": "维克多·兰斯面色铁青，被迫接受裁定，但暗示将上诉。",
+          "must_include": [
+            "1984年喉炎康复打卡表第112页",
+            "1985年故障时段3分12秒",
+            "声压可视化系统原型机"
+          ],
+          "must_not_include": [
+            "手机",
+            "PDF",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "听证室内气氛凝重，维克多·兰斯自信满满地出示伪造的医疗数据，声称麦珂因健康问题无法履行巡演合同，要求保险拒赔。麦珂冷静应对，拿出1984年喉炎康复打卡表第112页，指出签名笔压特征与1985年故障日志一致，证明莱昂·周当时清醒且数据真实。莱昂·周现场操作‘声压可视化系统’原型机，复现1985年故障时段3分12秒的波形。审计员比对波形与打卡表笔压，确认数据真实性，当场裁定奥瑞恩保险条款无效，强制启动资金链恢复程序。维克多·兰斯面色铁青，被迫接受裁定，但暗示将上诉。"
+        },
+        {
+          "chapter_id": 170,
+          "timeline_start": "1986-01-16",
+          "timeline_end": "1986-01-16",
+          "scene": "胶片厂实验室",
+          "chapter_goal": "维克多·兰斯试图拖延执行，但面对已公开的物理证据不得不撤回所有指控。",
+          "chapter_title": "氧化斑点",
+          "participants": [
+            "麦珂",
+            "苏菲亚",
+            "维克多·兰斯",
+            "胶片厂老板",
+            "监管机构首席审计员"
+          ],
+          "opening_conflict": "维克多·兰斯试图通过收购胶片厂销毁物理证据，并利用‘自然氧化’理论反驳麦珂的证据。",
+          "info_gap_use": "麦珂展示苏菲亚发现的‘酸性显影液’残留样本，证明胶片边缘特定氧化斑点是人为制造的。",
+          "opponent_reaction": "维克多·兰斯试图用‘自然氧化’理论狡辩，却因不懂化学常识被审计员当场驳斥，尴尬离场。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "胶片厂实验室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂与苏菲亚在实验室展示酸性显影液残留样本。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_170_FILM_OXIDATION_CERTIFICATE",
+              "timeline_scope": "current",
+              "display_name": "胶片氧化斑点鉴定证书",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_169_ACOUSTIC_VISUALIZATION_REPORT",
+              "timeline_scope": "current",
+              "purpose": "作为辅助证据"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯试图收购胶片厂，销毁物理证据。",
+            "麦珂与苏菲亚在实验室展示‘酸性显影液’残留样本，证明胶片边缘特定氧化斑点是人为制造的。",
+            "监管机构首席审计员现场鉴定，确认氧化斑点特征与奥瑞恩集团使用的显影液一致。",
+            "维克多·兰斯试图用‘自然氧化’理论狡辩，被审计员当场驳斥，被迫撤回所有指控，支付巨额赔偿金。"
+          ],
+          "visible_payoff": "奥瑞恩集团被迫支付巨额赔偿金，放弃对胶片库的控制权，麦珂资金链完全恢复。",
+          "ending": "麦珂看着赔偿金到账通知，长舒一口气，但意识到大型场馆光学投影组件研发压力仍在。",
+          "must_include": [
+            "酸性显影液残留样本",
+            "胶片边缘特定氧化斑点",
+            "巨额赔偿金"
+          ],
+          "must_not_include": [
+            "手机",
+            "PDF",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "维克多·兰斯不甘失败，试图通过收购胶片厂销毁物理证据，并利用‘自然氧化’理论反驳麦珂的证据。麦珂与苏菲亚在实验室展示‘酸性显影液’残留样本，证明胶片边缘特定氧化斑点是人为制造的。监管机构首席审计员现场鉴定，确认氧化斑点特征与奥瑞恩集团使用的显影液一致。维克多·兰斯试图用‘自然氧化’理论狡辩，却因不懂化学常识被审计员当场驳斥，尴尬离场。最终，奥瑞恩集团被迫支付巨额赔偿金，放弃对胶片库的控制权，麦珂资金链完全恢复。麦珂看着赔偿金到账通知，长舒一口气，但意识到大型场馆光学投影组件研发压力仍在。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1986",
+    "character_states": [
+      "麦珂：资金链恢复，健康状态稳定，但面临大型场馆光学投影组件研发压力。",
+      "维克多·兰斯：支付巨额赔偿金，放弃胶片库控制权，声誉受损。",
+      "莱昂·周：正式加入‘星火同盟’核心审计组，决定报考音乐学院深造。"
+    ],
+    "relationship_states": [
+      "麦珂与莱昂·周：从怀疑到信任，成为技术盟友。",
+      "麦珂与维克多·兰斯：敌对关系加剧，维克多·兰斯伺机报复。"
+    ],
+    "rights_and_assets": [
+      "麦珂：获得巨额赔偿金，资金链恢复，胶片库控制权稳固。",
+      "奥瑞恩集团：失去胶片库控制权，支付巨额赔偿金，声誉受损。"
+    ],
+    "health_and_location": [
+      "麦珂：健康状态稳定，位于工作室。",
+      "维克多·兰斯：位于奥瑞恩集团总部。"
+    ],
+    "open_threads": [
+      "大型场馆光学投影组件研发",
+      "1987年‘棱镜之夜’直播事故前置条件"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团保险拒赔令",
+      "胶片库控制权争夺"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "‘声压可视化系统’的光学投影组件研发完成，需立即进入大型场馆实地测试，触发1987年‘棱镜之夜’直播事故前置条件。"
+  }
+}

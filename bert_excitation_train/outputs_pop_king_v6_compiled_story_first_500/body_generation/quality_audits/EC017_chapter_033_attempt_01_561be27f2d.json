@@ -1,0 +1,116 @@
+{
+  "cluster_id": "EC017",
+  "chapter_id": 33,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "561be27f2d57452078e0cf6c5a8176a7efa0a05eff0c3a8d76a414fdeb9be90f",
+  "base_prompt_sha256": "561be27f2d57452078e0cf6c5a8176a7efa0a05eff0c3a8d76a414fdeb9be90f",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "1c1d397f39a4fdd9157e60fa914378d9ee87739be111ceeea4e03c1633269b86",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 13.209,
+    "usage": {
+      "prompt_tokens": 5736,
+      "completion_tokens": 1107,
+      "total_tokens": 6843,
+      "prompt_tokens_details": {
+        "cached_tokens": 3193
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 17,
+    "through_chapter": 34,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "f21f1df44237091528ddbb050c33c974c98b69ae33e5a96f57588e162676ffd7",
+    "chapter_card_prefix_sha256": "fe457571d614e1f5c0086c6befca7ccb66b03e2aaff0b9106116beb6aac8b0f3",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "3b0c92539e2cc0123adc232a06e1ee3e0574f232f5c9c328c378fb50cdee6bb2"
+  },
+  "cluster_sha256": "1309e4a342d772bc6a90d1027c63dbb30dc277169fc4dfc8394342e99de02e66",
+  "card_sha256": "c6762e533e7ae1d45b6ad9a1d15de3d5d1a450e3ffeff7c2cd18d342888f3289",
+  "chapter_audit": {
+    "han_chars": 1599,
+    "total_chars": 1814,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "昆廷现场监听",
+        "exact": false,
+        "bigram_coverage": 0.2,
+        "matched": false
+      },
+      {
+        "anchor": "三秒真空Demo",
+        "exact": false,
+        "bigram_coverage": 0.429,
+        "matched": false
+      },
+      {
+        "anchor": "卡尔被拒绝",
+        "exact": false,
+        "bigram_coverage": 0.25,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0313,
+    "scene_evidence": [
+      {
+        "location": "银湾市地下录音室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_033_VACUUM_DEMO",
+        "display_name": "三秒真空Demo磁带",
+        "body_hit": true,
+        "match_mode": "recording_artifact_formation"
+      },
+      {
+        "artifact_id": "ART_023_DEMO_MASTER",
+        "display_name": "ART_023_DEMO_MASTER",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.031，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“昆廷现场监听”",
+      "正文没有兑现章卡关键事实“三秒真空Demo”",
+      "正文没有兑现章卡关键事实“卡尔被拒绝”",
+      "正文没有写出本章正式创建的关键对象“ART_023_DEMO_MASTER”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.031，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“昆廷现场监听”",
+      "正文没有兑现章卡关键事实“三秒真空Demo”",
+      "正文没有兑现章卡关键事实“卡尔被拒绝”",
+      "正文没有写出本章正式创建的关键对象“ART_023_DEMO_MASTER”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

@@ -1,0 +1,40 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC107_EC107",
+  "identifier": "MG022",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "e0333025923f12fab9c2daf4db62655a57d8fb7923c5d2e8e911b93e4b50b394",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T19:42:43+08:00",
+      "prompt_sha256": "e0333025923f12fab9c2daf4db62655a57d8fb7923c5d2e8e911b93e4b50b394",
+      "raw_response_sha256": "950fcfdba3301335b1492c32b8cd3b9fa55857f7493c0e9955fab23a33255088",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG022_events_EC107_EC107_attempt_01_e033302592_raw.txt",
+      "validation_failures": [
+        "EC107年代技术错误：1987—1988尚不应使用“手机”"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 30.482,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-20T19:43:14+08:00",
+      "prompt_sha256": "be5aababc5bb8a4fee62302cf94450af07d715d08f0fcb5f4a4b5bbb5a808ffd",
+      "raw_response_sha256": "aa6356afd769cf26e71ba5aeff51e6b792ea8ca641fd56c1384eef8d9481d4f1",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG022_events_EC107_EC107_attempt_02_e033302592_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 29.81,
+      "usage": {}
+    }
+  ]
+}

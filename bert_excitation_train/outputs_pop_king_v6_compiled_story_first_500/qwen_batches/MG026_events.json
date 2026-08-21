@@ -1,0 +1,1064 @@
+{
+  "macro_group_id": "MG026",
+  "event_clusters": [
+    {
+      "cluster_id": "EC126",
+      "chapter_span": [
+        251,
+        252
+      ],
+      "source_event_direction": "前世具体受害：奥瑞恩利用伪造墨水日期的行政报告在听证会前一周定性麦珂新作有毒。；本事件独有的前世信息差：重生记忆确认1991年10月14日墨水中含特定工业染料成分，为当年伪造铁证。；今生提前动作：麦珂提前三周购入同款墨水并封存样本，邀请黛安娜对三十七份医师日志进行物理交叉比对。；第251章可见小赢：黛安娜在圣克莱门特市政厅外公开展示墨水色谱差异，迫使媒体暂停发布抹黑报道。；第252章新交锋：奥瑞恩律师团试图强行提交原始报告，被法官当场要求出示墨水来源鉴定书而哑口无言。；阻力方永久现实损失：奥瑞恩集团失去‘行政调查’这一核心叙事武器，被迫承认数据链存在人为篡改痕迹。；主角现实收益：麦珂获得法官口头裁定，将1977年聋儿录音原件列为听证会核心呈堂证供。；不可逆结算键：墨水成分鉴定报告已归档，奥瑞恩无法再销毁该物理证据。；接回死亡控制主线：此役切断前世医疗界对麦珂的污名化源头，确立其艺术安全法理地位。",
+      "source_event_direction_sha256": "2974905994ae9b121fcba46d5cff239b87753bb9005931169f547f6d1b28f8c5",
+      "source_macro_sha256": "6420abd5b91ee1d5fa1af43c85c24eea476277a18a3024c53e99074ee87498b5",
+      "name": "墨水色谱审判：圣克莱门特听证会前奏",
+      "timeline_years": "1991",
+      "main_opponent": "维克多·兰斯（Victor Lance）",
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "黛安娜",
+        "瑟琳娜",
+        "维克多·兰斯",
+        "法官哈罗德"
+      ],
+      "fictional_obstacle": "奥瑞恩集团伪造的行政调查报告声称麦珂新作含有导致听损的工业染料，报告落款日期为1991年10月14日，试图在听证会前一周定性麦珂罪名成立。",
+      "prev_life_tragedy": "前世麦珂因无法证明墨迹造假，在听证会上被奥瑞恩律师团用伪造的行政报告逼入绝境，导致其新作被禁演，声誉扫地，最终在绝望中离世。",
+      "info_gap_from_prev_life": "重生记忆确认1991年10月14日当天使用的墨水含有特定工业染料成分，这是当年伪造铁证的关键特征，而奥瑞恩律师团对此毫不知情。",
+      "why_previous_life_failed": "前世麦珂未能在听证会前获取原始样本进行物理比对，且过度依赖口头辩驳，忽视了化学成分的客观证据效力。",
+      "preemptive_avoidance": "麦珂提前三周购入同款墨水并封存样本，邀请黛安娜对三十七份医师日志进行物理交叉比对，建立完整的证据闭环。",
+      "bait_and_evidence": "麦珂故意泄露一份‘存疑’的医师日志副本，引诱奥瑞恩律师团提交原始报告作为反驳，从而暴露墨水成分差异。",
+      "comic_villain_behavior": "维克多·兰斯在庭外自信满满地宣称‘科学不容置疑’，却因急于求成，让助理直接拿出刚打印的报告，未意识到自己已落入物理证据的陷阱，面对色谱分析时显得手足无措，甚至试图用手帕擦拭文件以掩盖痕迹，动作滑稽可笑。",
+      "villain_loss": "奥瑞恩集团失去‘行政调查’这一核心叙事武器，被迫承认数据链存在人为篡改痕迹，其‘音效污染论’彻底破产。",
+      "protagonist_gain": "麦珂获得法官口头裁定，将1977年聋儿录音原件列为听证会核心呈堂证供，确立其艺术安全法理地位。",
+      "relationship_change": "黛安娜晋升为证据链架构师，瑟琳娜确立独立谈判地位，三人信任度达到顶峰。",
+      "continuity_writes": [
+        "麦珂在圣克莱门特市政厅外的临时实验室中，通过显微镜观察墨水纤维结构，确认了与前世记忆完全一致的工业染料特征。",
+        "黛安娜将三十七份医师日志按时间轴排列，用红色粉笔标记出异常点，形成视觉化的证据墙。",
+        "瑟琳娜在公证处起草协议时，特意加入‘无共同房产’条款，以此测试奥瑞恩代理人的反应，成功激怒对方露出马脚。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "ART_245_WAVEFORM_VERIFICATION",
+          "state_key": "evidence_validity",
+          "from": "disputed",
+          "to": "validated_by_physical_medium",
+          "irreversible": true,
+          "evidence": "ART_249_PAPER_BATCH_REPORT",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "OPINION_MAGO",
+          "state_key": "reputation_status",
+          "from": "under_attack",
+          "to": "defended_by_science",
+          "irreversible": false,
+          "evidence": "MEDIA_PAUSE_ORDER_EC126",
+          "effect_type": "protagonist_gain",
+          "source_domain": "public_perception"
+        }
+      ],
+      "historical_anchor_ids": [
+        "1991_OCT_14_INK_BATCH"
+      ],
+      "cluster_outcome": "奥瑞恩集团‘音效污染论’彻底破产，维克多·兰斯转入隐蔽渗透阶段；麦珂与瑟琳娜完成民事伴侣登记及资产物理分散化，家庭防线加固；关键伏笔‘初声基金’早期捐赠票据影印权问题被意外触发，埋下金融战隐患。",
+      "next_event_hook": "民事伴侣身份带来的税务结构重组需求，迫使麦珂启动十年期家族资产梳理，意外发现奥瑞恩集团早在1983年就通过离岸壳公司收购了‘初声基金’早期捐赠票据的影印权——这一财务蛛丝将成为P07揭开纪录片背叛事件的关键索引，直接触发下一块的金融战。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 251,
+          "timeline_start": "1991-11-18",
+          "timeline_end": "1991-11-19",
+          "scene": "圣克莱门特市政厅外临时实验室",
+          "chapter_goal": "完成墨水色谱对比实验，迫使媒体暂停发布抹黑报道。",
+          "chapter_title": "色谱下的谎言",
+          "participants": [
+            "麦珂",
+            "黛安娜",
+            "瑟琳娜",
+            "记者群"
+          ],
+          "opening_conflict": "奥瑞恩集团雇佣的媒体正准备发布一篇题为《麦珂新作致聋真相》的报道，试图在听证会前制造舆论恐慌。",
+          "info_gap_use": "麦珂利用重生记忆，提前购得1991年10月14日当天使用的特定墨水，并在实验室中完成色谱分析，确认其与奥瑞恩报告中墨水成分一致但来源不同。",
+          "opponent_reaction": "维克多·兰斯的助理试图闯入实验室销毁样本，被瑟琳娜当场拦下并报警，引发围观群众关注。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "圣克莱门特市政厅外临时实验室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "雨声渐大，实验室灯光闪烁"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_251_INK_CHROMATOGRAM",
+              "timeline_scope": "current",
+              "display_name": "《1991年10月14日墨水色谱对比图》",
+              "kind": "technical_record"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂将两份墨水样本置于显微镜下，黛安娜记录色谱差异曲线。",
+            "瑟琳娜带领记者进入实验室，现场展示色谱图，指出奥瑞恩报告的墨水成分与真实样本不符。",
+            "维克多·兰斯的助理试图抢夺样本，被瑟琳娜用法律术语警告并报警处理。",
+            "媒体宣布暂停发布相关报道，等待进一步调查结果。"
+          ],
+          "visible_payoff": "媒体暂停发布抹黑报道，公众开始质疑奥瑞恩集团的真实性。",
+          "ending": "麦珂看着色谱图上的明显差异，心中默念：‘这一次，你们逃不掉了。’",
+          "must_include": [
+            "墨水色谱对比",
+            "记者现场见证",
+            "助理抢夺样本"
+          ],
+          "must_not_include": [
+            "互联网传播",
+            "电子数据",
+            "未来技术词汇"
+          ],
+          "detailed_synopsis": "1991年10月10日，圣克莱门特市政厅外，一场突如其来的暴雨笼罩着临时搭建的实验室。麦珂身着白大褂，神情专注地将两份墨水样本置于显微镜下。黛安娜在一旁快速记录色谱差异，瑟琳娜则站在门口警戒，防止奥瑞恩的人干扰。当记者们蜂拥而至时，瑟琳娜果断打开大门，展示色谱图上的明显差异，指出奥瑞恩报告的墨水成分与真实样本不符。维克多·兰斯的助理试图抢夺样本，被瑟琳娜用法律术语警告并报警处理。媒体宣布暂停发布相关报道，等待进一步调查结果。麦珂看着色谱图上的明显差异，心中默念：‘这一次，你们逃不掉了。’",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_249_PAPER_BATCH_REPORT",
+              "timeline_scope": "previous_life",
+              "purpose": "验证前世记忆中的墨水批次信息"
+            }
+          ]
+        },
+        {
+          "chapter_id": 252,
+          "timeline_start": "1991-11-20",
+          "timeline_end": "1991-11-21",
+          "scene": "加州高等法院第3号法庭",
+          "chapter_goal": "奥瑞恩律师团试图强行提交原始报告，被法官当场要求出示墨水来源鉴定书而哑口无言。",
+          "chapter_title": "哑火的行政报告",
+          "participants": [
+            "麦珂",
+            "黛安娜",
+            "瑟琳娜",
+            "维克多·兰斯",
+            "法官哈罗德",
+            "陪审团"
+          ],
+          "opening_conflict": "奥瑞恩律师团试图在听证会前强行提交原始报告，指控麦珂新作有毒。",
+          "info_gap_use": "麦珂提前准备墨水来源鉴定书，证明奥瑞恩报告的墨水成分与真实样本不符，揭露其伪造事实。",
+          "opponent_reaction": "维克多·兰斯在庭上试图辩解，但面对法官的要求，只能哑口无言，最终承认数据链存在人为篡改痕迹。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "加州高等法院第3号法庭",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法槌敲击声响起"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_251_INK_CHROMATOGRAM",
+              "timeline_scope": "current",
+              "purpose": "作为法庭证据提交"
+            }
+          ],
+          "action_sequence": [
+            "奥瑞恩律师团提交原始报告，指控麦珂新作有毒。",
+            "法官哈罗德要求出示墨水来源鉴定书，奥瑞恩律师团无法提供。",
+            "麦珂当庭展示色谱图，证明奥瑞恩报告的墨水成分与真实样本不符。",
+            "维克多·兰斯试图辩解，但面对法官的要求，只能哑口无言，最终承认数据链存在人为篡改痕迹。",
+            "法官裁定将1977年聋儿录音原件列为听证会核心呈堂证供。"
+          ],
+          "visible_payoff": "奥瑞恩集团失去‘行政调查’这一核心叙事武器，被迫承认数据链存在人为篡改痕迹。",
+          "ending": "法官哈罗德敲下法槌，宣告奥瑞恩集团败诉，麦珂与瑟琳娜相视一笑，心中充满胜利的喜悦。",
+          "must_include": [
+            "法官要求出示鉴定书",
+            "奥瑞恩无法提供",
+            "法官裁定"
+          ],
+          "must_not_include": [
+            "互联网传播",
+            "电子数据",
+            "未来技术词汇"
+          ],
+          "detailed_synopsis": "1991年10月12日，加州高等法院第3号法庭内，气氛紧张。奥瑞恩律师团提交原始报告，指控麦珂新作有毒。法官哈罗德要求出示墨水来源鉴定书，奥瑞恩律师团无法提供。麦珂当庭展示色谱图，证明奥瑞恩报告的墨水成分与真实样本不符。维克多·兰斯试图辩解，但面对法官的要求，只能哑口无言，最终承认数据链存在人为篡改痕迹。法官裁定将1977年聋儿录音原件列为听证会核心呈堂证供。法官哈罗德敲下法槌，宣告奥瑞恩集团败诉，麦珂与瑟琳娜相视一笑，心中充满胜利的喜悦。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC127",
+      "chapter_span": [
+        253,
+        254
+      ],
+      "source_event_direction": "前世具体受害：瑟琳娜因未签署独立协议，在前世资产冻结时被迫放弃职业选择权依附麦珂。；本事件独有的前世信息差：重生记忆显示1992年税务重组窗口期仅剩两周，错过即面临资产合并风险。；今生提前动作：麦珂主动提出签署双轨信托协议，明确约定双方分立职业路径与退出自由条款。；第253章可见小赢：瑟琳娜在公证处拒绝传统联名模式，坚持在协议中加入‘无共同房产’的独立声明。；第254章新交锋：奥瑞恩代理人试图以‘家庭联合申报’为由施压，被瑟琳娜当场引用加州民事伴侣法第14条驳回。；阻力方永久现实损失：奥瑞恩失去通过婚姻渗透控制麦珂资产的合法切入点，转而陷入被动等待。；主角现实收益：麦珂与瑟琳娜完成民事伴侣登记，资产成功分割至瑞士与开曼群岛物理金库。；不可逆结算键：双轨信托契约已生效，任何单一实体无法再冻结麦珂全部资产。；接回死亡控制主线：资产物理隔离阻断前世保险与医疗利益链的合谋清算路径。",
+      "source_event_direction_sha256": "2d3e3cf96af876aa0812466e4d262df3c727ee0a33b835cec8e6da1983ead52b",
+      "source_macro_sha256": "6420abd5b91ee1d5fa1af43c85c24eea476277a18a3024c53e99074ee87498b5",
+      "name": "双轨信托与独立宣言",
+      "timeline_years": "1991—1992",
+      "main_opponent": "奥瑞恩集团代理律师哈罗德·芬奇（Harold Finch）",
+      "opposition_type": "ally_resistance",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜",
+        "黛安娜",
+        "哈罗德·芬奇",
+        "公证人威廉姆斯"
+      ],
+      "fictional_obstacle": "前世瑟琳娜因未签署独立协议，在资产冻结时被迫放弃职业选择权；今生需在税务重组窗口期关闭前，以‘无共同房产’条款切断资产合并风险。",
+      "prev_life_tragedy": "瑟琳娜在前世资产被冻结后，为维持生计被迫依附麦珂，放弃了独立作曲生涯，最终在麦珂入狱期间精神崩溃。",
+      "info_gap_from_prev_life": "重生记忆显示1992年加州税务重组窗口期仅剩两周，若错过即面临资产强制合并，导致双方职业路径被彻底锁死。",
+      "why_previous_life_failed": "缺乏法律隔离机制，误信传统婚姻财产共有制能保护家庭，实则成为反派渗透的合法切入点。",
+      "preemptive_avoidance": "麦珂主动提出签署双轨信托协议，明确约定双方分立职业路径与退出自由条款，并引入瑞士与开曼群岛物理金库作为资产隔离载体。",
+      "bait_and_evidence": "利用1991年《数字千年版权法》草案前的法律真空期，坚持使用纸质介质存证；引用加州民事伴侣法第14条关于‘独立财产声明’的法律效力，对抗奥瑞恩代理人提出的‘家庭联合申报’施压。",
+      "comic_villain_behavior": "哈罗德·芬奇试图用‘家庭联合申报’的道德绑架和‘税务合规’的恐吓来迫使瑟琳娜妥协，却在引用过时法条时被当场驳斥，显得滑稽而外行。",
+      "villain_loss": "奥瑞恩集团失去通过婚姻渗透控制麦珂资产的合法切入点，被迫转入被动等待，无法再利用税务手段冻结核心资产。",
+      "protagonist_gain": "麦珂与瑟琳娜完成民事伴侣登记，资产成功分割至瑞士与开曼群岛物理金库，确立双轨信托契约生效，任何单一实体无法再冻结全部资产。",
+      "relationship_change": "瑟琳娜从依附者转变为拥有独立谈判地位的合伙人，两人信任度达到顶峰，形成真正的战略同盟。",
+      "continuity_writes": [
+        "确认1991年税务重组窗口期紧迫性，强化时间紧迫感。",
+        "建立‘物理金库’概念，为后续金融战埋下伏笔。",
+        "修正前世瑟琳娜的悲剧结局，确立其独立人格。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "ASSET_ISOLATION_EC127",
+          "state_key": "asset_freeze_status",
+          "from": "vulnerable_to_merge",
+          "to": "physically_isolated_in_offshore_banks",
+          "irreversible": true,
+          "evidence": "TRUST_DEED_SWISS_KY_1991_FINAL",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_4E24DD1EEE76__DBD820C705DB",
+          "state_key": "dependency_level",
+          "from": "high_dependency",
+          "to": "strategic_partnership",
+          "irreversible": true,
+          "evidence": "CIVIL_PARTNERSHIP_CERT_EC127",
+          "effect_type": "relationship_change",
+          "source_entity_label": "RELATIONSHIP_MAGO_SELENA"
+        }
+      ],
+      "historical_anchor_ids": [
+        "CA_CIVIL_PARTNERSHIP_ACT_1991"
+      ],
+      "cluster_outcome": "奥瑞恩集团‘音效污染论’彻底破产，维克多·兰斯转入隐蔽渗透阶段；麦珂与瑟琳娜完成民事伴侣登记及资产物理分散化，家庭防线加固；关键伏笔‘初声基金’早期捐赠票据影印权问题被意外触发，埋下金融战隐患。",
+      "next_event_hook": "民事伴侣身份带来的税务结构重组需求，迫使麦珂启动十年期家族资产梳理，意外发现奥瑞恩集团早在1983年就通过离岸壳公司收购了‘初声基金’早期捐赠票据的影印权——这一财务蛛丝将成为P07揭开纪录片背叛事件的关键索引，直接触发下一块的金融战。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 253,
+          "timeline_start": "1991-11-21",
+          "timeline_end": "1991-11-21",
+          "scene": "圣莫尼卡公证处办公室",
+          "chapter_goal": "瑟琳娜拒绝传统联名模式，坚持在双轨信托协议中加入‘无共同房产’独立声明。",
+          "chapter_title": "独立的誓言",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "公证人威廉姆斯",
+            "哈罗德·芬奇（远程电话介入）"
+          ],
+          "opening_conflict": "公证人准备按传统格式起草联名协议，瑟琳娜突然叫停，要求加入独立财产条款。",
+          "info_gap_use": "麦珂利用重生记忆，提前预知税务窗口期仅剩两周，必须在此刻完成资产隔离。",
+          "opponent_reaction": "哈罗德·芬奇通过电话施压，声称‘家庭联合申报’是道德义务，否则将影响未来税务优惠。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "圣莫尼卡公证处办公室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "窗外暴雨声掩盖了室内的紧张对峙"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_TRUST_DEED_SWISS_KY_1991_DRAFT",
+              "timeline_scope": "current",
+              "display_name": "《1991年双轨信托草案（含独立声明版）》",
+              "kind": "legal_document",
+              "source_artifact_id": "TRUST_DEED_SWISS_KY_1991_DRAFT"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_249_PAPER_BATCH_REPORT",
+              "timeline_scope": "current",
+              "purpose": "证明纸质介质存证的绝对效力，对抗电子数据篡改"
+            }
+          ],
+          "action_sequence": [
+            "麦珂将《1991年双轨信托草案》推至瑟琳娜面前，眼神坚定。",
+            "瑟琳娜扫过文件，突然指出‘无共同房产’条款的必要性，拒绝传统联名模式。",
+            "公证人威廉姆斯犹豫，试图解释传统流程的便利性。",
+            "瑟琳娜引用加州民事伴侣法相关条款，强硬要求修改。",
+            "麦珂支持瑟琳娜，表示这是为了保护双方的职业独立性。",
+            "哈罗德·芬奇电话介入，试图以税务优惠施压，被瑟琳娜当场驳回。",
+            "公证人最终同意按瑟琳娜的要求修改协议，并见证签字。"
+          ],
+          "visible_payoff": "瑟琳娜成功在协议中加入独立声明，打破了传统婚姻财产共有制的束缚。",
+          "ending": "协议草案初步成型，但尚未正式生效，需等待税务窗口期关闭前的最后确认。",
+          "must_include": [
+            "瑟琳娜的独立声明",
+            "哈罗德·芬奇的电话施压",
+            "公证人的犹豫与妥协"
+          ],
+          "must_not_include": [
+            "资产实际转移完成",
+            "奥瑞恩集团的直接干预"
+          ],
+          "detailed_synopsis": "1991年11月15日，圣莫尼卡公证处内，气氛凝重。麦珂与瑟琳娜坐在桌前，面前摊开着《1991年双轨信托草案》。公证人威廉姆斯正准备按传统格式起草联名协议，瑟琳娜却突然叫停，声音平静却坚定：“我们不能共用房产，也不能共用职业路径。”她指着草案中的一行字，要求加入“无共同房产”的独立声明。麦珂眼中闪过一丝赞许，他深知这是前世瑟琳娜悲剧的根源——资产冻结导致的依附。此时，哈罗德·芬奇通过电话介入，声称“家庭联合申报”是道德义务，否则将影响未来税务优惠。瑟琳娜冷笑一声，引用加州民事伴侣法相关条款，当场驳回了这种过时的道德绑架。公证人威廉姆斯在两人的坚持下，终于同意修改协议。窗外暴雨如注，仿佛在为这场独立的誓言伴奏。"
+        },
+        {
+          "chapter_id": 254,
+          "timeline_start": "1991-11-22",
+          "timeline_end": "1991-11-22",
+          "scene": "星港市高等法院听证室",
+          "chapter_goal": "奥瑞恩代理人试图以‘家庭联合申报’为由施压，被瑟琳娜当场引用加州民事伴侣法第14条驳回，双轨信托契约正式生效。",
+          "chapter_title": "法律的铁壁",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "法官亨利·卡特",
+            "哈罗德·芬奇",
+            "奥瑞恩集团代表"
+          ],
+          "opening_conflict": "奥瑞恩代理人试图以‘家庭联合申报’为由，质疑双轨信托的合法性，要求重新审查资产归属。",
+          "info_gap_use": "麦珂利用重生记忆，预判奥瑞恩必用的伪造证据特征，提前准备好应对策略。",
+          "opponent_reaction": "哈罗德·芬奇在法庭上试图混淆视听，引用过时法条，却被瑟琳娜当场引用加州民事伴侣法第14条驳回，显得狼狈不堪。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "星港市高等法院听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法槌落下，宣告双轨信托契约生效"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_CIVIL_PARTNERSHIP_CERT_EC127",
+              "timeline_scope": "current",
+              "display_name": "ART_CIVIL_PARTNERSHIP_CERT_EC127",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_TRUST_DEED_SWISS_KY_1991_DRAFT",
+              "timeline_scope": "current",
+              "purpose": "作为双轨信托契约的法律依据，证明资产已物理隔离",
+              "source_artifact_id": "TRUST_DEED_SWISS_KY_1991_DRAFT"
+            },
+            {
+              "artifact_id": "ART_CIVIL_PARTNERSHIP_CERT_EC127",
+              "timeline_scope": "current",
+              "purpose": "证明民事伴侣关系的合法性，支撑独立财产声明",
+              "source_artifact_id": "CIVIL_PARTNERSHIP_CERT_EC127"
+            }
+          ],
+          "action_sequence": [
+            "奥瑞恩代理人哈罗德·芬奇在法庭上提出质疑，称双轨信托违反‘家庭联合申报’原则。",
+            "瑟琳娜站起身，冷静地引用加州民事伴侣法第14条，指出该条款允许伴侣独立持有财产。",
+            "法官亨利·卡特仔细审阅瑟琳娜提供的法律依据，点头认可。",
+            "哈罗德·芬奇试图反驳，但引用的法条已被更新，显得外行且滑稽。",
+            "麦珂适时出示《1991年双轨信托草案》及瑞士、开曼群岛的物理金库凭证。",
+            "法官当庭裁定双轨信托契约有效，资产成功分割至离岸金库。",
+            "奥瑞恩代理人哑口无言，被迫承认无法通过婚姻渗透控制资产。"
+          ],
+          "visible_payoff": "双轨信托契约正式生效，奥瑞恩集团失去通过婚姻渗透控制麦珂资产的合法切入点。",
+          "ending": "瑟琳娜与麦珂走出法庭，阳光洒在两人身上，象征着新的开始。",
+          "must_include": [
+            "瑟琳娜引用法律条文",
+            "法官的裁定",
+            "奥瑞恩代理人的失败"
+          ],
+          "must_not_include": [
+            "资产实际转移完成",
+            "奥瑞恩集团的直接干预"
+          ],
+          "detailed_synopsis": "1991年11月16日，星港市高等法院听证室内，气氛紧张。奥瑞恩代理人哈罗德·芬奇站在被告席前，试图以‘家庭联合申报’为由，质疑双轨信托的合法性，要求重新审查资产归属。瑟琳娜站起身，目光如炬，冷静地引用加州民事伴侣法第14条，明确指出该条款允许伴侣独立持有财产，无需合并申报。法官亨利·卡特仔细审阅瑟琳娜提供的法律依据，点头认可。哈罗德·芬奇试图反驳，但引用的法条已被更新，显得外行且滑稽，引得旁听席一阵窃笑。麦珂适时出示《1991年双轨信托草案》及瑞士、开曼群岛的物理金库凭证，进一步佐证资产已物理隔离。法官当庭裁定双轨信托契约有效，资产成功分割至离岸金库。奥瑞恩代理人哑口无言，被迫承认无法通过婚姻渗透控制资产。瑟琳娜与麦珂走出法庭，阳光洒在两人身上，象征着新的开始。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC128",
+      "chapter_span": [
+        255,
+        256
+      ],
+      "source_event_direction": "前世具体受害：前世‘初声基金’早期票据影印权被奥瑞恩壳公司低价收购，导致麦珂无法追溯捐赠源头。；本事件独有的前世信息差：重生记忆锁定1983年票据流转中存在法律真空期，纸质存证效力优于电子记录。；今生提前动作：麦珂委托苏菲亚·罗德里格斯调取微缩胶片档案，发现奥瑞恩离岸壳公司持有非法影印权。；第255章可见小赢：黛安娜向联邦贸易委员会提交影印权瑕疵报告，暂时冻结奥瑞恩相关账户资金流动。；第256章新交锋：奥瑞恩代表在法庭上辩称拥有‘善意取得’，被麦珂出示1983年原始手写批注击破谎言。；阻力方永久现实损失：奥瑞恩丧失对‘初声基金’历史数据的控制权，被迫公开披露其收购过程的非法性。；主角现实收益：麦珂重新掌握基金早期捐赠票据的完整所有权，确立其在金融战中的主动权。；不可逆结算键：影印权交易被裁定无效，奥瑞恩无法再通过此渠道掩盖财务漏洞。；接回死亡控制主线：揭开1983年票据漏洞，为后续揭露纪录片背叛事件埋下关键索引。",
+      "source_event_direction_sha256": "eae0f8ec6150d57c6b352f3c091d93cb205a3d1513f471e91af8e283a7d9480e",
+      "source_macro_sha256": "6420abd5b91ee1d5fa1af43c85c24eea476277a18a3024c53e99074ee87498b5",
+      "name": "初声基金票据影印权清算战",
+      "timeline_years": "1991—1992",
+      "main_opponent": "维克多·兰斯（幕后）/ 奥瑞恩集团法务部代理律师哈罗德·斯特林",
+      "opposition_type": "institutional",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜",
+        "黛安娜",
+        "苏菲亚·罗德里格斯",
+        "哈罗德·斯特林"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用法律真空期，通过离岸壳公司“新纪元控股”非法收购并持有1983年‘初声基金’早期捐赠票据的影印权，试图以此切断麦珂对基金原始捐赠源头的追溯，并在税务重组中制造资产黑洞。",
+      "prev_life_tragedy": "前世因未察觉1983年票据流转中的法律漏洞，导致‘初声基金’历史数据被奥瑞恩低价截获，麦珂无法在后续金融战中掌握主动权，最终在听证会后被迫接受不利和解。",
+      "info_gap_from_prev_life": "重生记忆锁定1983年票据流转中存在法律真空期，纸质存证效力优于电子记录；知晓当时微缩胶片档案库的特定编号及存放位置。",
+      "why_previous_life_failed": "过于依赖当时的电子数据备份习惯，忽视了纸质介质在当时的绝对法律效力，且未及时调取微缩胶片进行交叉验证。",
+      "preemptive_avoidance": "麦珂在民事伴侣协议签署次日，立即委托苏菲亚·罗德里格斯前往国家档案馆调取1983年微缩胶片档案，抢先发现影印权交易的非法性。",
+      "bait_and_evidence": "奥瑞恩故意在税务申报中提及拥有‘初声基金’完整票据控制权作为诱饵，实则依赖一份伪造的‘善意取得’证明；麦珂出示1983年原始手写批注及微缩胶片原件，证明该交易违反当时《联邦遗产税法》关于实物凭证转让的规定。",
+      "comic_villain_behavior": "奥瑞恩代理律师哈罗德·斯特林在法庭上坚持声称‘只要盖章就是合法’，甚至拿出一个过期的印章样本试图混淆视听，结果被法官当场要求出示印章备案记录而哑口无言，最后气急败坏地摔碎了手中的文件袋。",
+      "villain_loss": "奥瑞恩丧失对‘初声基金’历史数据的控制权，被迫公开披露其收购过程的非法性，相关账户资金流动被冻结，声誉受损。",
+      "protagonist_gain": "麦珂重新掌握基金早期捐赠票据的完整所有权，确立其在金融战中的主动权，为后续揭露纪录片背叛事件奠定关键索引。",
+      "relationship_change": "黛安娜晋升为证据链架构师，瑟琳娜确立独立谈判地位，两人信任度达到顶峰，形成真正的战略同盟。",
+      "continuity_writes": [
+        "第255章：黛安娜提交瑕疵报告，奥瑞恩账户被冻结。",
+        "第256章：法庭对峙，麦珂出示原始批注，奥瑞恩谎言破产。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_015:audio_narrative_control",
+          "state_key": "fund_documentation_status",
+          "from": "compromised_by_offshore_shell",
+          "to": "legally_restored_to_protagonist",
+          "irreversible": true,
+          "evidence": "MAGNUS_1983_MANUSCRIPT_VERIFICATION",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_OREON_FINANCE_01",
+          "state_key": "account_freeze_status",
+          "from": "active_operation",
+          "to": "frozen_by_ftc_investigation",
+          "irreversible": false,
+          "evidence": "FTC_FREEZE_ORDER_1991_12_05",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1983_TAX_LAW_VACUUM",
+        "ARCHIVE_MICROFILM_DB_1983"
+      ],
+      "cluster_outcome": "奥瑞恩集团‘音效污染论’彻底破产，维克多·兰斯转入隐蔽渗透阶段；麦珂与瑟琳娜完成民事伴侣登记及资产物理分散化，家庭防线加固；关键伏笔‘初声基金’早期捐赠票据影印权问题被意外触发，埋下金融战隐患。",
+      "next_event_hook": "民事伴侣身份带来的税务结构重组需求，迫使麦珂启动十年期家族资产梳理，意外发现奥瑞恩集团早在1983年就通过离岸壳公司收购了‘初声基金’早期捐赠票据的影印权——这一财务蛛丝将成为P07揭开纪录片背叛事件的关键索引，直接触发下一块的金融战。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 255,
+          "timeline_start": "1991-11-22",
+          "timeline_end": "1991-11-23",
+          "scene": "国家档案馆微缩胶片室",
+          "chapter_goal": "获取1983年票据流转的原始微缩胶片证据，并向联邦贸易委员会提交影印权瑕疵报告，暂时冻结奥瑞恩相关账户资金流动。",
+          "chapter_title": "胶片里的幽灵",
+          "participants": [
+            "麦珂",
+            "苏菲亚·罗德里格斯",
+            "黛安娜",
+            "档案管理员"
+          ],
+          "opening_conflict": "麦珂急需确认1983年票据是否被非法复制，但档案库系统混乱，管理员以权限不足为由拒绝提供原始胶片查阅。",
+          "info_gap_use": "利用重生记忆，麦珂直接报出1983年10月14日微缩胶片的特定编号及存放架位，迫使管理员打开封闭区域。",
+          "opponent_reaction": "奥瑞恩方面得知消息后，紧急联系律师准备销毁部分电子备份，但纸质微缩胶片已无法被远程抹除。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "国家档案馆微缩胶片室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂手指划过泛黄的胶片边缘，眼神锐利如刀。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_255_MICROFILM_COPY",
+              "timeline_scope": "current",
+              "display_name": "《1983年票据流转微缩胶片原始拷贝》",
+              "kind": "technical_record"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂与苏菲亚进入档案馆，凭借前世记忆精准定位胶片架。",
+            "黛安娜在现场快速扫描并制作高倍放大副本，记录所有细节。",
+            "黛安娜整理报告，指出奥瑞恩持有的影印权缺乏原始授权书，违反1983年法律。",
+            "黛安娜向联邦贸易委员会提交报告，申请临时冻结奥瑞恩相关账户。",
+            "奥瑞恩代理人接到通知，惊慌失措地试图联系离岸公司转移资产。"
+          ],
+          "visible_payoff": "联邦贸易委员会初步受理报告，奥瑞恩相关账户资金流动被暂时冻结。",
+          "ending": "麦珂看着手中泛黄的胶片，心中默念：这一次，你们无处遁形。",
+          "must_include": [
+            "微缩胶片查阅过程",
+            "黛安娜撰写瑕疵报告",
+            "账户冻结通知"
+          ],
+          "must_not_include": [
+            "现代电子设备使用",
+            "康拉德出现",
+            "庭审辩论"
+          ],
+          "detailed_synopsis": "1991年11月15日清晨，麦珂与苏菲亚抵达国家档案馆。面对混乱的目录，麦珂直接指向第14号架位的B区，那里存放着1983年的微缩胶片。管理员惊讶于她的精准，只得开启禁区。在昏暗的灯光下，苏菲亚操作老式阅读器，将1983年10月14日的票据流转记录逐帧放大。黛安娜随后赶到，她迅速核对胶片上的签名与日期，发现奥瑞恩持有的影印权文件上缺少关键的公证人印章，且签署日期晚于实际流转时间，存在明显的法律瑕疵。黛安娜立即起草了一份详尽的《影印权瑕疵报告》，指出奥瑞恩通过离岸壳公司非法获取票据控制权的行为违反了当时的《联邦遗产税法》。报告提交至联邦贸易委员会后，委员会迅速反应，下令暂时冻结奥瑞恩相关账户的资金流动。与此同时，奥瑞恩内部陷入恐慌，哈罗德·斯特林试图联系离岸公司销毁电子备份，但为时已晚。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_249_PAPER_BATCH_REPORT",
+              "timeline_scope": "previous_life",
+              "purpose": "对比纸张批次异常，佐证1983年票据真实性。"
+            }
+          ]
+        },
+        {
+          "chapter_id": 256,
+          "timeline_start": "1991-11-27",
+          "timeline_end": "1991-11-28",
+          "scene": "联邦法院第12审判庭",
+          "chapter_goal": "在法庭上击破奥瑞恩代表关于‘善意取得’的谎言，确认证据链闭环，使奥瑞恩永久丧失对‘初声基金’历史数据的控制权。",
+          "chapter_title": "手写批注的审判",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "黛安娜",
+            "哈罗德·斯特林",
+            "法官"
+          ],
+          "opening_conflict": "奥瑞恩代理律师哈罗德·斯特林辩称奥瑞恩是‘善意取得’影印权，拥有合法处置权，试图掩盖非法收购事实。",
+          "info_gap_use": "麦珂利用重生记忆，提前准备好1983年原始票据上的手写批注照片，这是当时唯一能证明真实流转路径的证据。",
+          "opponent_reaction": "哈罗德·斯特林在法庭上情绪失控，试图用‘技术故障’解释为何找不到原始批注，被法官严厉警告。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "联邦法院第12审判庭",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法槌落下，全场寂静，只有麦珂手中的文件发出轻微的沙沙声。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_256_HANDWRITTEN_NOTE",
+              "timeline_scope": "current",
+              "display_name": "《1983年票据原始手写批注复印件》",
+              "kind": "legal_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_255_MICROFILM_COPY",
+              "timeline_scope": "current",
+              "purpose": "作为法庭呈堂证供，展示原始票据流转路径。"
+            },
+            {
+              "artifact_id": "ART_256_HANDWRITTEN_NOTE",
+              "timeline_scope": "current",
+              "display_name": "《1983年票据原始手写批注复印件》",
+              "kind": "legal_evidence"
+            }
+          ],
+          "action_sequence": [
+            "哈罗德·斯特林在法庭上大声辩解，声称奥瑞恩是‘善意取得’，拥有合法处置权。",
+            "麦珂平静地站起身，向法官展示1983年原始票据上的手写批注复印件。",
+            "黛安娜配合播放微缩胶片录像，清晰显示批注内容与奥瑞恩文件不符。",
+            "法官当庭认定奥瑞恩的‘善意取得’主张无效，因其无法提供原始授权书。",
+            "哈罗德·斯特林气急败坏地摔碎文件袋，试图掩盖真相，但已被记录在案。"
+          ],
+          "visible_payoff": "法院裁定奥瑞恩影印权交易无效，奥瑞恩被迫公开披露其收购过程的非法性。",
+          "ending": "麦珂与瑟琳娜相视一笑，知道这场金融战的序幕已经拉开。",
+          "must_include": [
+            "法庭辩论",
+            "手写批注展示",
+            "法官裁决"
+          ],
+          "must_not_include": [
+            "现代通讯工具",
+            "康拉德出现",
+            "暴力冲突"
+          ],
+          "detailed_synopsis": "1991年11月20日，联邦法院第12审判庭内气氛紧张。奥瑞恩代理律师哈罗德·斯特林振振有词地辩称，奥瑞恩是通过合法渠道‘善意取得’了‘初声基金’的影印权，拥有完全的控制权。他试图用复杂的法律术语混淆视听，声称纸质文件的缺失只是‘技术性疏忽’。麦珂没有急于反驳，而是缓缓站起身，从文件夹中取出一张泛黄的复印件——那是1983年原始票据上的手写批注。黛安娜随即播放了微缩胶片录像，画面清晰地展示了批注的细节，与奥瑞恩提供的文件截然不同。法官仔细审视证据后，当庭指出奥瑞恩无法提供原始授权书，其‘善意取得’的主张完全站不住脚。哈罗德·斯特林脸色铁青，试图以‘技术故障’为由狡辩，却被法官严厉警告并记录在案。最终，法官裁定奥瑞恩的影印权交易无效，奥瑞恩被迫公开披露其收购过程的非法性。麦珂与瑟琳娜相视一笑，知道这场金融战的序幕已经正式拉开。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC129",
+      "chapter_span": [
+        257,
+        258
+      ],
+      "source_event_direction": "前世具体受害：前世奥瑞恩利用媒体将麦珂新作定义为‘污染源’，导致公众恐慌与演出取消。；本事件独有的前世信息差：重生记忆知晓维克多·兰斯将放弃公开诉讼，转而通过舆论引导制造混乱。；今生提前动作：麦珂策划‘共呼吸时段’，邀请三千名观众参与现场声学实验，用真实感知对抗算法预测。；第257章可见小赢：暴雨夜演出中，数千人敲击桌面形成的稳定声场意外抵消建筑共振，保障演出完美落幕。；第258章新交锋：维克多·兰斯试图散布‘声学污染’谣言，被现场观众用手机录制的实时数据驳斥得颜面扫地。；阻力方永久现实损失：奥瑞恩媒体策略彻底破产，公众不再信任其关于‘音效污染’的任何指控。；主角现实收益：麦珂作品被写入州级艺术展演安全指引附录，确立多维感知美学的法律地位。；不可逆结算键：现场声学实验数据已公开存档，成为未来所有类似争议的法理接口。；接回死亡控制主线：此次胜利直接导致维克多·兰斯意识到常规手段失效，转入隐蔽渗透阶段。",
+      "source_event_direction_sha256": "4a597e7e25901782a544f6ecd79dac87e9801456ea868249cfef3a2cf1e27eac",
+      "source_macro_sha256": "6420abd5b91ee1d5fa1af43c85c24eea476277a18a3024c53e99074ee87498b5",
+      "name": "共呼吸声场：暴雨夜的声学反制",
+      "timeline_years": "1991—1992",
+      "main_opponent": "维克多·兰斯（Victor Lance）",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜",
+        "黛安娜",
+        "维克多·兰斯",
+        "现场观众"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用‘音效污染论’制造恐慌，试图在暴雨夜演出中通过散布虚假的共振数据导致演出中断；重生记忆显示维克多将放弃诉讼，转而利用媒体引导舆论制造混乱。",
+      "prev_life_tragedy": "前世奥瑞恩利用媒体将麦珂新作定义为‘污染源’，引发公众恐慌，导致三千名观众离场，演出被迫取消，麦珂声誉受损。",
+      "info_gap_from_prev_life": "重生者知晓维克多·兰斯将在演出当晚利用伪造的‘建筑共振超标’报告进行舆论轰炸，且知道该报告依赖特定墨水成分和电子数据篡改，而纸质介质在当时具有绝对法律效力。",
+      "why_previous_life_failed": "前世未预判维克多转向舆论战的心理路径，仅依赖法律程序应对，忽略了现场物理感知的即时性，导致被谣言裹挟。",
+      "preemptive_avoidance": "麦珂策划‘共呼吸时段’，邀请三千名观众参与现场声学实验，用真实的人体感知对抗算法预测；同时提前准备1977年聋儿录音原件作为物理证据，并安排黛安娜在现场进行实时手写记录。",
+      "bait_and_evidence": "诱饵：奥瑞恩声称演出场地存在致命共振风险；证据：数千人敲击桌面形成的稳定声场抵消了建筑固有频率，以及现场观众用手机（模拟信号收音机/磁带录音笔）录制的原始声波数据，与伪造的行政报告形成鲜明对比。",
+      "comic_villain_behavior": "维克多·兰斯在暴雨中举着伪造的报告高喊‘危险！’，却被台下观众有节奏的敲击声淹没，他试图强行切断电源，结果发现电力公司早已因麦珂的提前介入而无法操作，只能狼狈地在泥水中展示那张被雨水浸湿、墨水晕染的假报告，引得哄堂大笑。",
+      "villain_loss": "奥瑞恩媒体策略彻底破产，公众不再信任其关于‘音效污染’的任何指控；维克多·兰斯因公开撒谎且手段拙劣，声誉扫地，被迫转入隐蔽渗透阶段。",
+      "protagonist_gain": "麦珂作品被写入州级艺术展演安全指引附录，确立多维感知美学的法律地位；现场声学实验数据成为未来所有类似争议的法理接口。",
+      "relationship_change": "黛安娜晋升为证据链架构师，瑟琳娜确立独立谈判地位，两人信任度达到顶峰，形成真正的战略同盟。",
+      "continuity_writes": [
+        "麦珂在暴雨中指挥观众敲击桌面，形成稳定的声场，抵消了建筑的共振频率。",
+        "黛安娜在现场用钢笔实时记录声波数据，确保纸质证据的不可篡改性。",
+        "维克多·兰斯的假报告因墨水遇水晕染而失效，被观众嘲笑。",
+        "观众使用磁带录音笔录制现场声音，作为原始证据保存。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_015:audio_narrative_control",
+          "state_key": "performance_safety_standard",
+          "from": "compromised_by_media_rumor",
+          "to": "validated_by_physical_experiment",
+          "irreversible": true,
+          "evidence": "ART_247_SILENT_WAVELOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_OREON_REPUTATION_01",
+          "state_key": "media_credibility_status",
+          "from": "active_manipulation",
+          "to": "totally_broken",
+          "irreversible": true,
+          "evidence": "WITNESS_STATEMENT_EC129",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "1991_Acoustic_Experiment",
+        "State_Safety_Guidelines_Appendix"
+      ],
+      "cluster_outcome": "奥瑞恩集团‘音效污染论’彻底破产，维克多·兰斯转入隐蔽渗透阶段；麦珂与瑟琳娜完成民事伴侣登记及资产物理分散化，家庭防线加固；关键伏笔‘初声基金’早期捐赠票据影印权问题被意外触发，埋下金融战隐患。",
+      "next_event_hook": "民事伴侣身份带来的税务结构重组需求，迫使麦珂启动十年期家族资产梳理，意外发现奥瑞恩集团早在1983年就通过离岸壳公司收购了‘初声基金’早期捐赠票据的影印权——这一财务蛛丝将成为P07揭开纪录片背叛事件的关键索引，直接触发下一块的金融战。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 257,
+          "timeline_start": "1991-11-28",
+          "timeline_end": "1991-11-28",
+          "scene": "圣保罗音乐厅外广场",
+          "chapter_goal": "在暴雨夜演出中，通过‘共呼吸时段’验证声学稳定性，挫败奥瑞恩的初步干扰。",
+          "chapter_title": "雨中的共鸣：三千人的敲击",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "黛安娜",
+            "维克多·兰斯",
+            "三千名观众"
+          ],
+          "opening_conflict": "暴雨如注，奥瑞恩代表在入口处散发传单，宣称演出场地存在致命共振，要求立即停止。",
+          "info_gap_use": "麦珂利用重生记忆，提前预知维克多将在此时发动舆论攻势，故主动发起‘共呼吸’实验，将被动防御转为主动展示。",
+          "opponent_reaction": "维克多·兰斯手持伪造的行政调查报告，试图强行叫停演出，并指责麦珂是‘疯狂的音乐家’。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "圣保罗音乐厅外广场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "雷声掩盖了维克多的叫喊，麦珂举起手示意开始。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_247_SILENT_WAVELOG",
+              "timeline_scope": "current",
+              "display_name": "《穹顶共振消解现场记录手稿》",
+              "kind": "technical_record"
+            }
+          ],
+          "action_sequence": [
+            "麦珂站在舞台中央，无视暴雨，向观众发出‘共呼吸’指令。",
+            "三千名观众开始有节奏地敲击桌面，形成稳定的低频声场。",
+            "黛安娜在现场快速记录敲击频率与建筑反应，用钢笔在厚纸板上绘制曲线。",
+            "维克多·兰斯试图冲上台阻止，但被观众的欢呼声浪挡回。",
+            "演出在完美的声场中继续，没有任何共振异常发生。"
+          ],
+          "visible_payoff": "数千人的敲击声成功抵消了建筑共振，演出完美落幕，观众情绪高涨。",
+          "ending": "演出结束，观众自发聚集在门口，讨论这场神奇的声学实验，维克多·兰斯在人群中显得孤立无援。",
+          "must_include": [
+            "暴雨环境描写",
+            "三千人敲击桌面的具体动作",
+            "黛安娜的手写记录过程"
+          ],
+          "must_not_include": [
+            "任何电子设备联网描述",
+            "互联网或公众媒体提及",
+            "康拉德出现"
+          ],
+          "detailed_synopsis": "1991年10月15日晚，暴雨倾盆。圣保罗音乐厅外，奥瑞恩集团的代表维克多·兰斯正拿着伪造的行政调查报告，高声宣扬麦珂的新作会导致‘听觉损伤’和‘建筑共振崩溃’，试图煽动观众离场。然而，麦珂早已预料到这一招。她站在雨中，没有辩解，而是向全场三千名观众发出了一个奇怪的指令：“请跟随我的呼吸，用手敲击桌面。”随着麦珂的节奏，人群开始有规律地敲击，原本嘈杂的雨声和人群的骚动逐渐被一种低沉、稳定的共鸣所取代。黛安娜迅速拿出厚纸板，用钢笔记录下每一次敲击的频率和建筑的微小震动，证明这种人为制造的声场不仅无害，反而能抵消建筑固有的共振频率。维克多·兰斯见状，慌忙冲上台想要强行切断电源，却发现自己被热情的观众包围，他的假报告在雨水中墨水晕染，变得模糊不清，引来阵阵哄笑。最终，演出在完美的声场中顺利进行，没有任何意外发生。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_245_WAVEFORM_VERIFICATION",
+              "timeline_scope": "previous_life",
+              "purpose": "对比1977年聋儿录音的波形特征，验证本次实验的声学逻辑。"
+            }
+          ],
+          "duplicate_artifact_creates_reclassified": [
+            {
+              "artifact_id": "ART_247_SILENT_WAVELOG",
+              "timeline_scope": "current",
+              "display_name": "《穹顶共振消解现场记录手稿》",
+              "kind": "technical_record"
+            }
+          ]
+        },
+        {
+          "chapter_id": 258,
+          "timeline_start": "1991-11-29",
+          "timeline_end": "1991-11-29",
+          "scene": "市政厅新闻发布厅",
+          "chapter_goal": "利用现场观众的实时数据和黛安娜的手写记录，彻底粉碎奥瑞恩的谣言，确立麦珂作品的法律地位。",
+          "chapter_title": "墨迹未干的谎言：数据的胜利",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "黛安娜",
+            "维克多·兰斯",
+            "记者",
+            "市民代表"
+          ],
+          "opening_conflict": "次日清晨，奥瑞恩集团发布紧急声明，称昨晚的‘共呼吸’是人为操纵的骗局，试图抹黑麦珂。",
+          "info_gap_use": "麦珂利用重生记忆，知道维克多会在此时抛出伪造的电子数据，因此提前准备了纸质介质存证和原始录音带，利用当时的法律真空期进行反击。",
+          "opponent_reaction": "维克多·兰斯在发布会上坚持声称数据被篡改，并试图出示所谓的‘专家鉴定’，但被现场展示的原始录音和手写记录驳斥。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "市政厅新闻发布厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "维克多·兰斯自信满满地走上台，准备宣读伪造的结论。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_247_SILENT_WAVELOG",
+              "timeline_scope": "current",
+              "purpose": "作为核心证据，展示现场敲击数据与建筑反应的完美匹配。"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯在发布会上宣称昨晚的实验是‘精心设计的骗局’，并出示了一份伪造的专家报告。",
+            "麦珂从容地拿出黛安娜连夜整理的手写记录本，上面详细记录了每一秒的敲击频率和建筑反应。",
+            "瑟琳娜展示了观众自带的磁带录音笔录制的原始音频，证明数据未被篡改。",
+            "一位老教授当场指出维克多报告中墨水成分与1991年标准不符，揭露其为伪造。",
+            "维克多·兰斯脸色苍白，试图狡辩，但最终被法官警告不得再散布虚假信息。"
+          ],
+          "visible_payoff": "奥瑞恩的谣言被彻底揭穿，公众对麦珂的信任度大幅提升，其作品被写入州级安全指引。",
+          "ending": "维克多·兰斯灰溜溜地离开发布会现场，奥瑞恩集团的媒体策略彻底破产。",
+          "must_include": [
+            "手写记录的展示",
+            "磁带录音的播放",
+            "墨水成分的鉴定"
+          ],
+          "must_not_include": [
+            "任何现代科技设备的使用",
+            "网络舆论的描述",
+            "康拉德的提及"
+          ],
+          "detailed_synopsis": "次日清晨，奥瑞恩集团召开紧急新闻发布会，试图将昨晚的‘共呼吸’实验定性为‘人为操纵的骗局’。维克多·兰斯站在台上，手持一份伪造的专家报告，声称麦珂利用了某种未知的技术操控了观众的感知。然而，麦珂早已准备好反击。她首先展示了黛安娜连夜整理的手写记录本，上面密密麻麻地记录了每一次敲击的频率和建筑的微小震动，这些纸质文件在当时的法律环境下具有绝对的效力。接着，瑟琳娜让工作人员播放了观众自带的磁带录音笔录制的原始音频，清晰的声音证明了现场数据的真实性。一位在场的声学老教授当场指出，维克多报告中的墨水成分与1991年的标准严重不符，显然是伪造的。面对铁证，维克多·兰斯脸色苍白，试图狡辩，但最终被法官警告不得再散布虚假信息。随着发布会的结束，奥瑞恩集团的媒体策略彻底破产，麦珂的作品被正式写入州级艺术展演安全指引附录，确立了多维感知美学的法律地位。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_245_WAVEFORM_VERIFICATION",
+              "timeline_scope": "previous_life",
+              "purpose": "引用1977年录音原件，证明声学原理的科学性。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC130",
+      "chapter_span": [
+        259,
+        260
+      ],
+      "source_event_direction": "前世具体受害：前世麦珂因缺乏物理介质存证，在听证会上被电子数据篡改误导而陷入被动。；本事件独有的前世信息差：重生记忆清楚1991年《数字千年版权法》草案前的法律真空期，纸质介质存证具有绝对效力。；今生提前动作：麦珂将所有关键证据（录音、日志、票据）制作成微缩胶片与手写索引双备份，拒绝远程档案库存储。；第259章可见小赢：黛安娜在听证会现场演示胶片读取过程，证明数据未被篡改，令奥瑞恩电子数据链瞬间失效。；第260章新交锋：维克多·兰斯试图以‘技术故障’为由质疑胶片真实性，被法官当庭判定为无理狡辩并警告。；阻力方永久现实损失：奥瑞恩集团彻底失去利用技术手段操纵证据的能力，被迫接受物理介质存证的不可逆性。；主角现实收益：麦珂确立‘物理介质存证’为行业标准，彻底粉碎奥瑞恩‘音效污染论’的证据基础。；不可逆结算键：胶片与手写索引已作为法定证据永久封存，任何电子篡改尝试均告失败。；接回死亡控制主线：此役终结奥瑞恩集团的公开围剿，为最终公审现场奠定法理与物质基础。",
+      "source_event_direction_sha256": "f09b2cd69ca4fd64c67804f4dd3d03505cbcabcfd5e24c165cbf8adeb825fa22",
+      "source_macro_sha256": "6420abd5b91ee1d5fa1af43c85c24eea476277a18a3024c53e99074ee87498b5",
+      "name": "物理介质存证之战",
+      "timeline_years": "1991—1992",
+      "main_opponent": "维克多·兰斯 (Victor Lance)",
+      "opposition_type": "technical",
+      "event_type": "health_safety",
+      "solution_type": "safety_preemption",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "黛安娜",
+        "瑟琳娜",
+        "维克多·兰斯",
+        "法官"
+      ],
+      "fictional_obstacle": "奥瑞恩集团试图利用听证会前的电子数据篡改漏洞，将关键录音和日志伪造为“污染证据”，并计划以“技术故障”为由否定物理介质的真实性。",
+      "prev_life_tragedy": "前世麦珂因依赖早期电子档案系统，在听证会上被对手通过后台修改数据时间戳和波形参数，导致核心证据失效，最终被判败诉。",
+      "info_gap_from_prev_life": "重生记忆清楚1991年《数字千年版权法》草案前的法律真空期，纸质与胶片介质存证具有绝对法律效力，且当时电子数据尚无法进行无痕的底层篡改而不留痕迹。",
+      "why_previous_life_failed": "过度依赖新兴的电子存储技术，忽视了物理介质的不可篡改性，且未提前准备双备份的物理索引。",
+      "preemptive_avoidance": "麦珂将所有关键证据（1977年聋儿录音原件、三十七位医师日志、1983年票据）制作成微缩胶片和手写索引双备份，拒绝任何远程电子存储，仅保留物理副本提交法庭。",
+      "bait_and_evidence": "奥瑞恩律师团故意在庭上展示一套看似完美的电子数据链，诱导法官质疑物理胶片的清晰度；麦珂当场演示胶片读取过程，并出示1991年墨水成分鉴定报告证明其原始性。",
+      "comic_villain_behavior": "维克多·兰斯在证据确凿后，仍强行辩解称“胶片显影剂受潮导致图像失真”，甚至试图现场用湿布擦拭法官桌上的胶片样本，结果弄脏了唯一原件，引发全场哗然。",
+      "villain_loss": "奥瑞恩集团彻底失去利用技术手段操纵证据的能力，被迫接受物理介质存证的不可逆性，其“音效污染论”的证据链瞬间断裂。",
+      "protagonist_gain": "麦珂确立“物理介质存证”为行业标准，彻底粉碎奥瑞恩“音效污染论”的证据基础，并获得法官口头裁定将胶片列为最高优先级证供。",
+      "relationship_change": "黛安娜晋升为证据链架构师，瑟琳娜确立独立谈判地位，两人信任度达到顶峰，形成真正的战略同盟。",
+      "continuity_writes": [
+        "1991年10月15日，麦珂在圣克莱门特市政厅外签署民事伴侣协议，同步完成资产转移至瑞士金库的公证手续。",
+        "1991年11月2日，奥瑞恩集团试图收购“初声基金”早期捐赠票据影印权，被麦珂提前发现的财务漏洞反制。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_012:extreme_weather_performance_standard__extension_EC103",
+          "state_key": "evidence_integrity_status",
+          "from": "compromised_by_digital_tampering",
+          "to": "validated_by_physical_medium",
+          "irreversible": true,
+          "evidence": "ART_259_MICROFILM_BATCH",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_OREON_REPUTATION_01",
+          "state_key": "media_credibility_status__extension_EC130",
+          "from": "none",
+          "to": "totally_broken",
+          "irreversible": true,
+          "evidence": "COURT_RECORD_EC130",
+          "effect_type": "villain_loss",
+          "source_state_key": "media_credibility_status"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1991_DIGITAL_LAW_VOID"
+      ],
+      "cluster_outcome": "奥瑞恩集团‘音效污染论’彻底破产，维克多·兰斯转入隐蔽渗透阶段；麦珂与瑟琳娜完成民事伴侣登记及资产物理分散化，家庭防线加固；关键伏笔‘初声基金’早期捐赠票据影印权问题被意外触发，埋下金融战隐患。",
+      "next_event_hook": "民事伴侣身份带来的税务结构重组需求，迫使麦珂启动十年期家族资产梳理，意外发现奥瑞恩集团早在1983年就通过离岸壳公司收购了‘初声基金’早期捐赠票据的影印权——这一财务蛛丝将成为P07揭开纪录片背叛事件的关键索引，直接触发下一块的金融战。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 259,
+          "timeline_start": "1991-11-29",
+          "timeline_end": "1991-11-29",
+          "scene": "联邦听证会主会场",
+          "chapter_goal": "黛安娜现场演示微缩胶片读取过程，证明数据未被篡改，令奥瑞恩电子数据链瞬间失效。",
+          "chapter_title": "胶片上的真相",
+          "participants": [
+            "麦珂",
+            "黛安娜",
+            "维克多·兰斯",
+            "法官",
+            "旁听记者"
+          ],
+          "opening_conflict": "奥瑞恩律师团声称关键录音文件存在“电子数据损坏”，要求重新鉴定，试图拖延时间销毁物理证据。",
+          "info_gap_use": "麦珂利用前世记忆，提前知晓1991年法律真空期对物理介质的保护力度，坚持只提交微缩胶片。",
+          "opponent_reaction": "维克多·兰斯试图打断黛安娜的演示，声称胶片是“伪造的复古道具”。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "联邦听证会主会场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "黛安娜从密封铁盒中取出微缩胶片卷，放入投影仪。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_259_MICROFILM_BATCH",
+              "timeline_scope": "current",
+              "display_name": "《1977年聋儿录音与医师日志微缩胶片组》",
+              "kind": "physical_evidence"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "黛安娜打开密封铁盒，取出微缩胶片，动作沉稳有力。",
+            "她将胶片放入投影仪，大屏幕上清晰显示出1977年原始录音的波形图。",
+            "奥瑞恩律师团惊呼“不可能”，试图冲上台阻止。",
+            "法官严厉制止，要求对方提供书面反驳依据。",
+            "麦珂微笑着看向瑟琳娜，示意资产转移已完成。"
+          ],
+          "visible_payoff": "奥瑞恩的电子数据链在物理胶片面前瞬间失效，全场寂静。",
+          "ending": "黛安娜成功证明胶片内容完整无缺，法官宣布进入质证环节。",
+          "must_include": [
+            "微缩胶片",
+            "投影仪",
+            "密封铁盒",
+            "波形图"
+          ],
+          "must_not_include": [
+            "互联网",
+            "电子邮件",
+            "远程档案库"
+          ],
+          "detailed_synopsis": "听证会现场气氛紧张，奥瑞恩律师团试图以“电子数据损坏”为由要求延期，意图掩盖其篡改事实。麦珂早已预料此招，命黛安娜呈上由微缩胶片制成的物理证据。黛安娜从容地从密封铁盒中取出胶片，放入投影仪。随着光束投射，1977年聋儿录音的原始波形图清晰呈现，与奥瑞恩提供的电子数据截然不同。奥瑞恩律师团大惊失色，试图冲上台破坏，但被法警拦下。法官严肃警告，要求对方提供书面反驳依据。麦珂冷静地坐在席间，眼神坚定，深知这是前世未曾赢过的关键一战。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_247_SILENT_WAVELOG",
+              "timeline_scope": "previous_life",
+              "purpose": "对比验证波形一致性"
+            }
+          ]
+        },
+        {
+          "chapter_id": 260,
+          "timeline_start": "1991-11-30",
+          "timeline_end": "1991-11-30",
+          "scene": "联邦听证会主会场",
+          "chapter_goal": "维克多·兰斯试图以“技术故障”为由质疑胶片真实性，被法官当庭判定为无理狡辩并警告。",
+          "chapter_title": "荒谬的借口",
+          "participants": [
+            "麦珂",
+            "维克多·兰斯",
+            "法官",
+            "黛安娜",
+            "瑟琳娜"
+          ],
+          "opening_conflict": "维克多·兰斯在证据确凿后，仍强行辩解称“胶片显影剂受潮导致图像失真”，甚至试图现场用湿布擦拭法官桌上的胶片样本。",
+          "info_gap_use": "麦珂利用前世记忆，提前准备了1991年墨水成分鉴定报告，证明胶片制作过程的合法性。",
+          "opponent_reaction": "维克多·兰斯情绪失控，试图用湿布擦拭胶片，结果弄脏了唯一原件。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "联邦听证会主会场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "维克多·兰斯突然站起，挥舞着湿布冲向法官桌。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_259_MICROFILM_BATCH",
+              "timeline_scope": "current",
+              "purpose": "作为核心证供被保护"
+            }
+          ],
+          "action_sequence": [
+            "维克多·兰斯情绪失控，声称胶片受潮，试图用湿布擦拭。",
+            "法官大怒，立即叫停听证会，并警告其行为涉嫌藐视法庭。",
+            "麦珂出示1991年墨水成分鉴定报告，证明胶片制作合法。",
+            "瑟琳娜冷静记录庭审过程，准备后续诉讼。",
+            "法官宣布休庭，要求奥瑞恩集团承担所有费用。"
+          ],
+          "visible_payoff": "维克多·兰斯的荒唐行为引发全场哗然，奥瑞恩集团信誉扫地。",
+          "ending": "法官正式裁定胶片为有效证据，奥瑞恩集团败诉。",
+          "must_include": [
+            "湿布",
+            "法官警告",
+            "墨水鉴定报告",
+            "休庭"
+          ],
+          "must_not_include": [
+            "互联网",
+            "电子邮件",
+            "远程档案库"
+          ],
+          "detailed_synopsis": "听证会进入白热化阶段，维克多·兰斯见大势已去，竟试图以“胶片受潮”为由质疑其真实性。他情绪失控，挥舞着湿布冲向法官桌，企图擦拭胶片样本。这一幕引发全场哗然，法官勃然大怒，立即叫停听证会，并严厉警告其行为涉嫌藐视法庭。麦珂此时出示1991年墨水成分鉴定报告，证明胶片制作过程的合法性与完整性。瑟琳娜冷静记录庭审过程，准备后续诉讼。最终，法官宣布休庭，并裁定胶片为有效证据，奥瑞恩集团需承担所有费用。维克多·兰斯的荒唐行为不仅未能挽回败局，反而让奥瑞恩集团的信誉彻底扫地。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1991",
+    "character_states": [
+      {
+        "character": "麦珂",
+        "state": "确立物理介质存证标准，资产安全转移"
+      },
+      {
+        "character": "黛安娜",
+        "state": "晋升为证据链架构师，信任度达顶峰"
+      },
+      {
+        "character": "瑟琳娜",
+        "state": "确立独立谈判地位，资产分割完成"
+      },
+      {
+        "character": "维克多·兰斯",
+        "state": "转入隐蔽渗透阶段，信誉破产"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": "麦珂 & 瑟琳娜",
+        "status": "民事伴侣，资产物理隔离"
+      },
+      {
+        "pair": "黛安娜 & 麦珂",
+        "status": "战略同盟，信任度顶峰"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity": "微缩胶片证据",
+        "status": "法定永久封存，不可篡改"
+      },
+      {
+        "entity": "奥瑞恩集团声誉",
+        "status": "彻底破产，无法再操控舆论"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity": "麦珂",
+        "status": "健康，位于圣克莱门特"
+      },
+      {
+        "entity": "奥瑞恩集团",
+        "status": "陷入被动，转向隐蔽行动"
+      }
+    ],
+    "open_threads": [
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）",
+      "奥瑞恩集团转向更隐蔽的财务做空手段"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团‘音效污染论’证据链断裂",
+      "麦珂与瑟琳娜民事伴侣登记及资产物理分散化"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "民事伴侣身份带来的税务结构重组需求，迫使麦珂启动十年期家族资产梳理，意外发现奥瑞恩集团早在1983年就通过离岸壳公司收购了‘初声基金’早期捐赠票据的影印权——这一财务蛛丝将成为P07揭开纪录片背叛事件的关键索引，直接触发下一块的金融战。"
+  }
+}

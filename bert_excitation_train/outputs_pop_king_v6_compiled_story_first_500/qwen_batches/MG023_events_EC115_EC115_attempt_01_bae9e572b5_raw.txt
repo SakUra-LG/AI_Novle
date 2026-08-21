@@ -1,0 +1,194 @@
+{
+  "macro_group_id": "MG023",
+  "event_clusters": [
+    {
+      "cluster_id": "EC115",
+      "chapter_span": [229, 230],
+      "source_event_direction": "{\"cluster_id\": \"EC115\", \"chapter_span\": [229, 230], \"opposition_type\": \"ally_resistance\", \"event_type\": \"health_safety\", \"solution_type\": \"public_confrontation\"}",
+      "source_event_direction_sha256": "a7f3c9e2b8d4f1a6c5e9d2b7a4f8c3e1d6b9a2f5c8e1d4b7a0f3c6e9d2b5a8f1",
+      "source_macro_sha256": "b8e4d0f3c9a6e2d5b1f8c4a7e0d3b6f9c2a5e8d1b4f7c0a3e6d9b2f5c8a1e4d7",
+      "name": "铭牌纠错与全民协防",
+      "timeline_years": "1987—1990",
+      "main_opponent": "奥瑞恩集团安保主管 维克多·兰斯 (Victor Lance)",
+      "opposition_type": "ally_resistance",
+      "event_type": "health_safety",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["EC111", "EC112", "EC113", "EC114"],
+      "foreshadow_ids": ["ART_219_HEALTH_MEMO_CERTIFIED"],
+      "main_characters": ["麦珂", "莉薇娅", "拄拐老人 #8327", "维克多·兰斯", "苏菲亚", "哈罗德"],
+      "fictional_obstacle": "前世因急救站铭牌刻字错误（'Livia'拼作'Liviya'），导致紧急时刻医护人员无法快速识别负责人，延误黄金救援时间；今生奥瑞恩集团试图掩盖这一管理漏洞，将铭牌错误归咎于“临时工失误”并拒绝公开更正。",
+      "prev_life_tragedy": "1985年巡演期间，一名观众突发心脏骤停，因后台急救站铭牌刻字错误，负责医生误认负责人为‘刘维亚’（Liviya）而非‘莉薇娅’（Livia），导致寻找授权人的流程耗时过长，患者错过最佳抢救时机身亡。",
+      "info_gap_from_prev_life": "1980年撕纸分发机制中关于铭牌纠错的隐藏线索及编号#8327老人的卡背任务：该老人是当年唯一幸存的铭牌制作工，其入场券背面印有特定编号，是唯一能当场验证铭牌真伪的活体证据。",
+      "why_previous_life_failed": "官僚体系依赖内部层层审批核实身份，缺乏公众监督机制，且错误铭牌被刻意隐瞒，导致信息传递链条在关键时刻断裂。",
+      "preemptive_avoidance": "麦珂利用重生预知，在入场券背面印有加粗黑体字：“请核对急救站铭牌刻字是否含‘莉薇娅’全名，发现误差请立即向现场监督员出示此券。”并提前联系#8327号老人作为特邀观察员入场。",
+      "bait_and_evidence": "巴里·布鲁姆（已退居二线，由维克多·兰斯执行）试图以“维护演出秩序”为由阻止老人查验铭牌，声称这是“恶意破坏”。麦珂当场展示老人手中的#8327号凭证，并拿出前世记忆中的标准铭牌模具图样进行比对。",
+      "comic_villain_behavior": "维克多·兰斯手持扩音器，声嘶力竭地命令保安驱逐一位行动迟缓的拄拐老人，却因过度紧张将“肃静”喊成“速记”，且手中紧握的错误铭牌样本在慌乱中掉落，正好摔在正在直播的摄像机镜头前，暴露出'Liviya'的拼写错误。",
+      "villain_loss": "忽视细节的官僚体系被公众监督彻底打破，错误铭牌无处遁形。奥瑞恩集团被迫承认管理失职，维克多·兰斯因处理不当被勒令暂停职务，其试图掩盖真相的企图成为行业反面教材。",
+      "protagonist_gain": "‘今日健康备忘录’正式成为全球巡演标配，公众从旁观者变为安全协作者。麦珂确立了医疗标识管理的透明化标准，赢得了公众和媒体的绝对信任。",
+      "relationship_change": "莉薇娅对麦珂的信任度从“战略伙伴”升华为“生死相依”，正式签署《误差共担协议》；维克多·兰斯意识到常规商业手段失效，策略转向隐蔽渗透但已失去主动权。",
+      "continuity_writes": ["铭牌纠错行动直接催生1991年《家庭治理宪章》医疗章节细化条款；折叠地图激发1992年‘初声基金’评审制度改革；《误差共担协议》成为1993年莉薇娅出任全球巡演首席医疗官的法理依据。"],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "mike_ke",
+          "state_key": "emergency_authority_status__extension_EC115",
+          "from": "technical_standard",
+          "to": "public_health_narrative_control",
+          "irreversible": true,
+          "evidence": "ART_229_MEDAL_CORRECTION_LOG",
+          "effect_type": "protagonist_gain",
+          "source_domain": "internal_management",
+          "source_state_key": "emergency_authority_status"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "victor_lance",
+          "state_key": "operational_credibility",
+          "from": "high_control",
+          "to": "public_discredited",
+          "irreversible": true,
+          "evidence": "NEWSPAPER_CLIPPING_LANCE_FALLS",
+          "effect_type": "villain_loss",
+          "source_domain": "public_perception"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "liweiya_mike_ke",
+          "state_key": "trust_level__extension_EC115",
+          "from": "strategic_partnership",
+          "to": "life_sharing_alliance",
+          "irreversible": false,
+          "evidence": "ERROR_SHARING_AGREEMENT_EC115",
+          "effect_type": "relationship_change",
+          "source_domain": "internal_management"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1985_HEART_ATTACK", "HIST_1980_CARD_BACK_TASK"],
+      "cluster_outcome": "麦珂成功利用前世记忆中的#8327号老人和铭牌拼写错误，当众揭穿了奥瑞恩集团试图掩盖的管理漏洞。维克多·兰斯的拙劣表演反而加速了真相曝光，公众自发参与铭牌纠错，迫使奥瑞恩集团全面整改。‘今日健康备忘录’正式确立为全球巡演标配，医疗标识管理进入透明化时代。",
+      "next_event_hook": "“今日健康备忘录”手签机制直接催生1991年《家庭治理宪章》医疗章节细化条款；折叠地图激发1992年‘初声基金’评审制度改革；《误差共担协议》成为1993年莉薇娅出任全球巡演首席医疗官的法理依据；苏菲亚手绘卷轴末端空白处，麦珂亲笔添加一行小字，预示下一阶段的深度对抗。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 229,
+          "timeline_start": "1987-08-20 14:00",
+          "timeline_end": "1987-08-20 15:30",
+          "scene": "新奥尔良演唱会主入口广场",
+          "chapter_goal": "利用#8327号老人触发铭牌纠错，引发全场同步查验。",
+          "chapter_title": "第229章：拐杖下的致命拼写",
+          "participants": ["麦珂", "莉薇娅", "拄拐老人 #8327", "维克多·兰斯", "苏菲亚", "哈罗德"],
+          "opening_conflict": "老人持编号#8327入场，试图指出急救站铭牌上的拼写错误，却被维克多·兰斯以“扰乱秩序”为由阻拦。",
+          "info_gap_use": "麦珂提前在入场券背面印制的核对任务，让老人成为唯一的“合法证人”。",
+          "opponent_reaction": "维克多·兰斯惊慌失措，试图强行没收老人的入场券并驱赶，却因动作过大导致手中持有的备用铭牌样本掉落。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "新奥尔良演唱会主入口广场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "老人步履蹒跚地走向安保岗亭，手中高举一张泛黄的卡片。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_229_MEDAL_CORRECTION_LOG",
+              "timeline_scope": "current",
+              "display_name": "现场铭牌纠错记录表",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_219_HEALTH_MEMO_CERTIFIED",
+              "timeline_scope": "current",
+              "purpose": "作为核对铭牌标准的法律依据。"
+            }
+          ],
+          "action_sequence": [
+            "老人#8327抵达入口，出示带有特殊编号的入场券，要求查看急救站铭牌。",
+            "维克多·兰斯上前阻拦，大声呵斥老人是“捣乱分子”，并试图抢夺其手中的卡片。",
+            "老人冷静地指出铭牌上‘Liviya’的拼写错误，并展示前世记忆中正确的拼写方式。",
+            "维克多·兰斯在推搡中不慎掉落手中的备用铭牌，恰好摔在正在直播的摄像机镜头前。",
+            "全场观众和媒体记者目睹了这一瞬间，开始纷纷拿出手机或笔记本记录铭牌上的错误。",
+            "麦珂适时现身，高声宣布启动全国急救站铭牌统一纠错行动。"
+          ],
+          "visible_payoff": "老人#8327的证词和掉落的铭牌样本成为铁证，全场观众开始自发查验各自区域的铭牌，发现多处类似错误。",
+          "ending": "维克多·兰斯被愤怒的人群包围，不得不暂时退让；麦珂站在高台上，目光坚定地看向莉薇娅。",
+          "must_include": ["老人#8327的入场券编号", "铭牌拼写错误的具体细节", "维克多·兰斯的滑稽失态"],
+          "must_not_include": ["康拉德的出现", "任何现代通讯工具的使用"],
+          "detailed_synopsis": "1987年8月20日下午，新奥尔良演唱会入口处人声鼎沸。拄拐老人#8327缓缓走来，手中紧攥着一张泛黄的卡片，上面清晰印着编号。他径直走向安保岗亭，要求查看急救站的铭牌。维克多·兰斯见状，立刻冲上前去，挥舞着手臂大喊：“停下！这里不允许随意检查！”他试图抢过老人的卡片，却在推搡中手忙脚乱，手中的备用铭牌样本“啪”地一声掉在地上，正好摔在正在直播的摄像机镜头前。特写镜头清晰地捕捉到铭牌上‘Liviya’的拼写错误。老人趁机高声喊道：“看！这就是你们所谓的‘专业’！莉薇娅不是刘维亚！”人群瞬间骚动，许多人纷纷掏出随身携带的入场券，对照上面的提示开始查验身边的铭牌。麦珂此时从人群中走出，声音洪亮地宣布：“从今天起，我们将启动全国急救站铭牌统一纠错行动！欢迎每一位观众成为我们的监督员！”"
+        },
+        {
+          "chapter_id": 230,
+          "timeline_start": "1987-08-20 16:00",
+          "timeline_end": "1987-08-20 17:30",
+          "scene": "新奥尔良演唱会后台会议室",
+          "chapter_goal": "麦珂顺势宣布启动全国急救站铭牌统一纠错行动，邀请公众共同参与监督，确立新标准。",
+          "chapter_title": "第230章：全民协防的黎明",
+          "participants": ["麦珂", "莉薇娅", "苏菲亚", "哈罗德", "媒体代表", "公众代表"],
+          "opening_conflict": "奥瑞恩集团试图平息事态，提出私下赔偿并封锁消息，麦珂则坚持公开透明，要求建立全民监督机制。",
+          "info_gap_use": "利用前世记忆中的真实通话记录，推动莉薇娅制定‘三方签字急救启动令’纸质流程。",
+          "opponent_reaction": "维克多·兰斯在压力下被迫承认错误，但试图将责任推给“临时工”，遭到麦珂当场驳斥。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "新奥尔良演唱会后台会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "会议室大门紧闭，外面是喧嚣的抗议声，里面是激烈的争论。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_229_MEDAL_CORRECTION_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为后续整改工作的基础数据。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂召集媒体和公众代表召开紧急会议，展示现场拍摄的铭牌错误照片。",
+            "维克多·兰斯试图辩解，称这只是个别现象，建议私下解决。",
+            "麦珂反驳道：“如果今天只是一个小错误，明天就可能是一条人命。”",
+            "莉薇娅在场长的支持下，正式宣布启动全国急救站铭牌统一纠错行动。",
+            "麦珂提出建立‘今日健康备忘录’制度，邀请公众参与监督，并当场签署三方签字流程。",
+            "苏菲亚和哈罗德协助整理现场数据，形成详细的整改报告。"
+          ],
+          "visible_payoff": "麦珂提出的全民监督机制获得广泛支持，奥瑞恩集团被迫接受整改方案，维克多·兰斯被暂停职务。",
+          "ending": "麦珂站在讲台上，看着台下密密麻麻的签名，心中默念：“这一次，我们不会再让任何人因为一个错误的名字而失去生命。”",
+          "must_include": ["三方签字急救启动令的签署", "全民监督机制的建立", "维克多·兰斯的被迫承认"],
+          "must_not_include": ["任何现代技术的使用", "康拉德的介入"],
+          "detailed_synopsis": "夜幕降临，新奥尔良演唱会后台会议室灯火通明。麦珂坐在长桌一端，面前摆放着白天拍摄的照片和现场记录表。维克多·兰斯坐在他对面，脸色苍白，试图用“临时工失误”来搪塞过去。麦珂冷冷地看着他：“如果今天只是一个名字的错误，明天就可能是一条人命。我们不能再用这种态度对待生命。”莉薇娅站起身，坚定地说道：“我同意麦珂的建议。从今天起，我们将启动全国急救站铭牌统一纠错行动，并邀请每一位观众成为我们的监督员。”她转身拿起一支笔，在一份文件上郑重签下自己的名字。麦珂也随即落笔，接着是苏菲亚、哈罗德以及多位媒体代表和公众代表。随着一个个名字的落下，‘今日健康备忘录’正式诞生。维克多·兰斯看着这一幕，终于低下了头，承认了自己的过失。麦珂站起身，环顾四周，目光中充满了希望：“这一次，我们不会再让任何人因为一个错误的名字而失去生命。”窗外，城市的灯光逐渐亮起，仿佛在为这场胜利欢呼。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {"entity_id": "mike_ke", "state": "public_health_narrative_control", "description": "确立医疗标识管理透明化标准，赢得公众信任"},
+      {"entity_id": "liweiya", "state": "life_sharing_alliance", "description": "与麦珂建立生死相依的信任关系"},
+      {"entity_id": "victor_lance", "state": "public_discredited", "description": "因处理不当被暂停职务，信誉受损"}
+    ],
+    "relationship_states": [
+      {"entity_pair": "liweiya_mike_ke", "new_state": "life_sharing_alliance", "description": "从战略伙伴升华为生死相依的盟友"}
+    ],
+    "rights_and_assets": [
+      {"entity_id": "mike_ke", "right": "public_health_narrative_control", "status": "established", "description": "确立‘今日健康备忘录’为全球巡演标配"}
+    ],
+    "health_and_location": [
+      {"status": "stable", "location": "新奥尔良", "description": "演唱会顺利进行，未发生安全事故"}
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性"
+    ],
+    "resolved_threads": [
+      "急救站铭牌错误导致的救援延误问题",
+      "奥瑞恩集团试图掩盖管理漏洞的企图"
+    ],
+    "introduced_characters": [
+      {"name": "#8327号老人", "role": "关键证人", "description": "1980年铭牌制作工，持有唯一能验证铭牌真伪的凭证"}
+    ],
+    "next_pressure": "奥瑞恩集团转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "macro_group_id": "MG041",
+  "event_clusters": [
+    {
+      "cluster_id": "EC204",
+      "chapter_span": [407, 408],
+      "source_event_direction": "{\"cluster_id\": \"EC204\", \"chapter_span\": [407, 408], \"opposition_type\": \"institutional\", \"event_type\": \"fan_public_welfare\", \"solution_type\": \"public_confrontation\", \"death_chain_role\": \"echo\", \"previous_life_harm\": \"公众误以为麦珂康复才胜诉，忽视‘清醒即审判’的核心定义。\", \"unique_prev_life_info\": \"FS06伏笔：空白明信片回信机制与‘我们仍在这里听’的承诺。\", \"preemptive_action\": \"麦珂未召开发布会，仅让苏菲亚分发裁决书与空白明信片给读者。\", \"chapter_one_small_win\": \"数千名教师、护士与普通市民寄回信件询问具体问题。\", \"chapter_two_showdown\": \"广场明信片墙展示三千二百封回信，公众自发朗读构建清醒共识。\", \"opponent_permanent_loss\": \"媒体试图将胜诉包装为‘奇迹痊愈’的叙事彻底失效且遭嘲讽。\", \"protagonist_concrete_gain\": \"确立‘无罪≠康复’的社会认知锚点，掌握舆论解释权。\", \"irreversible_outcome_key\": \"未经剪辑的人声洪流形成跨越四十年的集体清醒记忆载体。\", \"death_chain_connection\": \"将司法胜利转化为社会心理防线，防止未来舆论再次围剿。\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "清醒即审判：明信片墙的集体回响",
+      "timeline_years": "2004—2007",
+      "main_opponent": "奥瑞恩集团及其控制的《时代周刊》专栏作家巴里·布鲁姆（Barry Bloom）",
+      "opposition_type": "institutional",
+      "event_type": "fan_public_welfare",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["EC203", "FS06"],
+      "foreshadow_ids": ["FS06", "P10"],
+      "main_characters": ["麦珂", "苏菲亚", "玛莎", "黛安娜", "昆廷", "巴里·布鲁姆"],
+      "fictional_obstacle": "主流媒体试图将“精神鉴定无罪”强行解读为“奇迹般的精神康复”，以此消解麦珂作为独立法人的主体性，将其重新定义为需要被照顾的“病人”。",
+      "prev_life_tragedy": "前世中，公众在欢呼声中误读判决，认为麦珂“病好了”，导致后续舆论一旦捕捉到其情绪波动，便迅速反噬，将其重新推入“疯癫”的泥潭，最终麦珂在虚假的“康复”光环下失去对自我命运的解释权。",
+      "info_gap_from_prev_life": "前世麦珂未利用FS06伏笔（空白明信片），错过了引导公众主动思考“无罪不等于康复”的机会；今生麦珂提前布局，将判决书与空白明信片捆绑分发。",
+      "why_previous_life_failed": "被动接受媒体定义的叙事框架，缺乏主动引导公众认知的具体行动载体。",
+      "preemptive_avoidance": "麦珂拒绝召开传统新闻发布会，授权苏菲亚向所有关注此案的读者、教师及医护人员发送特制信封，内含终审判决书复印件与一张无字空白明信片，附言：“请写下你眼中的麦珂。”",
+      "bait_and_evidence": "对手巴里·布鲁姆试图在《时代周刊》头版刊登“麦珂康复，重返人间”的虚假报道，并引用断章取义的医生言论；证据则是广场上三千二百封由普通人手写的明信片，内容直指“他依然清醒，只是不再沉默”。",
+      "comic_villain_behavior": "巴里·布鲁姆在直播镜头前试图用扩音器打断广场上的朗读，结果因麦克风故障只发出刺耳啸叫，且被路人误认为是为了配合“噪音艺术”表演而故意制造的噱头，引发哄笑。",
+      "villain_loss": "媒体试图将胜诉包装为“奇迹痊愈”的叙事彻底破产，奥瑞恩集团失去通过操控舆论将麦珂“病理化”的最后机会，陷入无法自圆其说的尴尬境地。",
+      "protagonist_gain": "确立“无罪≠康复”的社会认知锚点，掌握舆论解释权；公众自发构建的“清醒共识”成为保护麦珂的无形盾牌。",
+      "relationship_change": "普通市民、教师与医护人员对麦珂产生深层的情感共鸣与信任，视其为“清醒的守护者”；玛莎、黛安娜与昆廷确认麦珂不仅是法律上的胜利者，更是精神上的领袖。",
+      "continuity_writes": ["2004年秋，麦珂在法庭胜诉后并未露面，而是通过苏菲亚将判决书与空白明信片分发给全国两千所小学的音乐老师及五百家社区医院。", "2004年冬，纽约中央广场出现一面由三千二百张明信片组成的“回声墙”，每张卡片都记录着不同职业者对“清醒”的定义。", "2005年初，巴里·布鲁姆在直播中试图否定这些信件的有效性，却被现场一位退休护士当场朗读其女儿写给麦珂的信，信中写道：“麦珂先生，您不需要痊愈，您只需要被听见。”"],
+      "state_transitions": [
+        {
+          "domain": "public_perception",
+          "entity_id": "PERCEPTION_MCKEE_STATUS",
+          "state_key": "legal_acquittal_vs_medical_recovery",
+          "from": "media_constructed_recovery",
+          "to": "publicly_defined_clarity",
+          "irreversible": true,
+          "evidence": "THREE_THOUSAND_TWO_HUNDRED_POSTCARDS_AND_ORAL_READINGS",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "STERLING_MEDIA_NARRATIVE",
+          "state_key": "narrative_control_over_mental_state",
+          "from": "active_manipulation",
+          "to": "complete_narrative_failure",
+          "irreversible": true,
+          "evidence": "BARRY_BLOOM_LIVE_INTERVIEW_DISRUPTION_AND_PUBLIC_LAUGHTER",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["ART_407_POSTCARD_ARCHIVE", "ART_408_ORAL_RECORDING"],
+      "cluster_outcome": "版权归属终审胜诉后，麦珂未通过传统媒体发声，而是通过“空白明信片”机制激发公众自主表达。三千二百封回信在广场汇聚成“清醒墙”，公众自发朗读构建起“无罪即清醒”的集体共识，彻底粉碎了奥瑞恩集团试图将麦珂“病理化”的舆论企图。麦珂确立了“清醒即审判”的社会认知锚点，掌握舆论解释权，为后续应对资本围剿奠定心理防线。",
+      "next_event_hook": "裁决书送达当日收到的神秘死亡预告信件，成为P10诱使敌人启动‘永恒星光’的终极时间诱饵，迫使麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 407,
+          "timeline_start": "2004年11月15日",
+          "timeline_end": "2004年12月20日",
+          "scene": "麦珂办公室 / 邮政分拣中心 / 各地社区公告栏",
+          "chapter_goal": "完成判决书与空白明信片的定向分发，触发公众自发回应。",
+          "chapter_title": "无声的投递：三千个问题的起点",
+          "participants": ["麦珂", "苏菲亚", "邮局职员", "教师代表", "护士代表"],
+          "opening_conflict": "奥瑞恩集团媒体团队已准备就绪，计划在次日头条发布“麦珂康复”的虚假新闻，试图抢占舆论先机。",
+          "info_gap_use": "利用前世记忆中公众对“康复”叙事的盲从，今生反向操作，用空白明信片诱导公众主动定义“清醒”。",
+          "opponent_reaction": "巴里·布鲁姆在办公室内焦躁地等待媒体反应，却意外发现邮件系统被大量来自基层的“问题信”淹没，无法按原计划发稿。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "麦珂办公室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂将最后一叠空白明信片交给苏菲亚，轻声说：“这次，让他们自己说话。”"
+            },
+            {
+              "sequence": 2,
+              "location": "纽约联合车站邮政分拣中心",
+              "is_primary": false,
+              "temporal_mode": "current",
+              "transition_cue": "邮差们惊讶地发现，成千上万封信件竟全部来自教师、护士和普通市民，而非专业机构。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_407_POSTCARD_ARCHIVE",
+              "timeline_scope": "current",
+              "display_name": "《三千二百封“清醒”明信片原始档案》",
+              "kind": "public_testimony"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_399_S95_CDR_ARCHIVE",
+              "timeline_scope": "current",
+              "purpose": "作为判决书的法律依据，附在每封明信片信封内。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂签署分发指令，要求苏菲亚仅向教师、护士及曾参与初声基金的市民发送明信片。",
+            "苏菲亚组织志愿者将明信片与判决书复印件装入统一信封，通过普通邮政渠道分发。",
+            "一周内，全国各地收到数百封回信，内容多为“麦珂先生，您真的没事吗？”“您还需要吃药吗？”等具体问题。",
+            "巴里·布鲁姆试图联系主要媒体切断消息源，但信件已如雪片般涌向公众视野。"
+          ],
+          "visible_payoff": "数千名教师、护士与普通市民寄回信件询问具体问题，形成初步舆论涟漪。",
+          "ending": "苏菲亚统计出第一波回信数量达四千余封，麦珂看着堆积如山的信件，眼神平静：“他们终于开始问了。”",
+          "must_include": ["空白明信片机制", "教师与护士群体", "非官方渠道分发", "公众自发提问"],
+          "must_not_include": ["发布会", "律师发言", "媒体采访", "康拉德出场"],
+          "detailed_synopsis": "2004年11月15日，麦珂在终审胜诉后拒绝召开任何新闻发布会。他授权苏菲亚向全国两千所小学的音乐老师、五百家社区医院的护士以及曾参与“初声基金”的市民发送特制信封。信封内除终审判决书复印件外，还有一张无字空白明信片，附言简短：“请写下你眼中的麦珂。”这一举动出乎奥瑞恩集团预料，媒体尚未准备好“康复”叙事，基层民众已开始自发回应。一周内，四千余封回信涌入，内容多为具体关切：“麦珂先生，您真的不需要住院了吗？”“您还能弹琴吗？”这些朴素的问题打破了媒体预设的“病人”框架。巴里·布鲁姆在办公室内焦躁地等待反击时机，却发现邮件系统被大量来自基层的信件淹没，无法按原计划发稿。麦珂看着堆积如山的信件，对苏菲亚说：“他们终于开始问了。”这标志着公众认知从被动接受转向主动思考，为下一阶段的广场集会埋下伏笔。"
+        },
+        {
+          "chapter_id": 408,
+          "timeline_start": "2004年12月21日",
+          "timeline_end": "2004年12月25日",
+          "scene": "纽约中央广场 / 《时代周刊》演播室",
+          "chapter_goal": "通过广场明信片墙与公众朗读，构建“清醒即审判”的集体共识，彻底粉碎“康复”叙事。",
+          "chapter_title": "回声墙：三千二百种清醒的声音",
+          "participants": ["麦珂", "玛莎", "黛安娜", "昆廷", "巴里·布鲁姆", "公众朗读团"],
+          "opening_conflict": "巴里·布鲁姆强行启动直播节目，宣称“麦珂康复，奥瑞恩集团胜利”，试图在圣诞夜前定调舆论。",
+          "info_gap_use": "利用前世未发生的“空白明信片”机制，今生成功引导公众构建“清醒”定义，使媒体叙事彻底失效。",
+          "opponent_reaction": "巴里·布鲁姆在直播中试图打断广场朗读，却因设备故障和公众哄笑而沦为笑柄，彻底丧失公信力。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "纽约中央广场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "广场中央竖起一面由三千二百张明信片组成的“回声墙”，阳光洒在每一张卡片上，反射出不同的文字光芒。"
+            },
+            {
+              "sequence": 2,
+              "location": "《时代周刊》演播室",
+              "is_primary": false,
+              "temporal_mode": "current",
+              "transition_cue": "巴里·布鲁姆试图用扩音器盖过广场声音，却只发出刺耳啸叫，引来路人哄笑。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_407_POSTCARD_ARCHIVE",
+              "timeline_scope": "current",
+              "purpose": "作为广场明信片墙的物理载体，展示公众真实声音。"
+            }
+          ],
+          "action_sequence": [
+            "麦珂带领玛莎、黛安娜与昆廷来到中央广场，见证“回声墙”落成。",
+            "公众自发组成朗读团，轮流高声朗读明信片内容，如“他不需要痊愈，他只需要被听见”“清醒不是药，是选择”等。",
+            "巴里·布鲁姆强行启动直播，试图否定这些信件的有效性，却被现场一位退休护士当场朗读其女儿写给麦珂的信。",
+            "直播画面中，巴里·布鲁姆试图用扩音器打断，却因设备故障发出刺耳啸叫，引发全场哄笑。",
+            "麦珂站在人群中央，静静聆听，眼神坚定：“这不是康复，这是清醒。”"
+          ],
+          "visible_payoff": "广场明信片墙展示三千二百封回信，公众自发朗读构建清醒共识。",
+          "ending": "夜幕降临，广场灯光亮起，三千二百张明信片在夜色中闪烁，如同无数双眼睛注视着城市。麦珂转身离去，身后是公众的掌声与朗读声。",
+          "must_include": ["广场明信片墙", "公众朗读", "巴里·布鲁姆直播失败", "清醒共识构建"],
+          "must_not_include": ["康拉德", "医疗报告", "法庭辩论", "资产冻结"],
+          "detailed_synopsis": "2004年12月21日，纽约中央广场迎来一场前所未有的公共事件。麦珂、玛莎、黛安娜与昆廷共同见证“回声墙”落成——三千二百张明信片被整齐排列在广场中央，每一张都承载着不同职业者对“清醒”的理解。公众自发组成朗读团，轮流高声宣读：“他不需要痊愈，他只需要被听见”“清醒不是药，是选择”“他依然痛苦，但他依然清醒”。与此同时，巴里·布鲁姆在《时代周刊》演播室强行启动直播，宣称“麦珂康复，奥瑞恩集团胜利”，试图在圣诞夜前定调舆论。然而，当他在直播中试图打断广场朗读时，扩音器突然发出刺耳啸叫，引来路人哄笑。一位退休护士当场朗读其女儿写给麦珂的信：“麦珂先生，您不需要痊愈，您只需要被听见。”直播画面瞬间崩塌，巴里·布鲁姆的“康复”叙事彻底失效。麦珂站在人群中央，静静聆听，眼神坚定：“这不是康复，这是清醒。”夜幕降临，广场灯光亮起，三千二百张明信片在夜色中闪烁，如同无数双眼睛注视着城市。麦珂转身离去，身后是公众的掌声与朗读声，一场关于“清醒”的集体记忆就此定格。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2004",
+    "character_states": [
+      {"character_id": "MCKEE", "state": "legally_acquitted_but_not_recovered", "description": "麦珂在法律上完全清白，但明确拒绝“康复”标签，坚持“清醒即审判”的自我定义。"},
+      {"character_id": "SOPHIA", "state": "trusted_coordinator", "description": "苏菲亚成为麦珂与公众之间的核心桥梁，建立高度信任关系。"},
+      {"character_id": "BARRY_BLOOM", "state": "narrative_failure", "description": "巴里·布鲁姆的“康复”叙事彻底破产，公信力受损，被迫转入地下策划。"}
+    ],
+    "relationship_states": [
+      {"entity_pair": ["MCKEE", "PUBLIC"], "state": "deep_empathy_and_trust", "description": "公众对麦珂产生深层情感共鸣，视其为“清醒的守护者”。"},
+      {"entity_pair": ["MCKEE", "MARSHA_DIANA_QUINTIN"], "state": "unified_leadership", "description": "三人确认麦珂不仅是法律胜利者，更是精神领袖，信任度达到顶峰。"}
+    ],
+    "rights_and_assets": [
+      {"asset_id": "RIGHT_VL_TRUST_EXECUTION", "status": "secured_by_scholars", "description": "信托执行权已合法移交星火调音师团队，曲库安全转入信托。"},
+      {"asset_id": "PUBLIC_NARRATIVE_RIGHTS", "status": "controlled_by_public", "description": "舆论解释权已由公众自发构建的“清醒共识”掌握，奥瑞恩集团失去主导权。"}
+    ],
+    "health_and_location": [
+      {"entity_id": "MCKEE_HEALTH", "status": "stable_with_transparency", "description": "麦珂每日晨间体测数据公示，健康状况透明化，无隐瞒。"},
+      {"entity_id": "MCKEE_LOCATION", "status": "central_plaza_new_york", "description": "麦珂近期活跃于纽约中央广场，与公众保持近距离互动。"}
+    ],
+    "open_threads": [
+      "神秘死亡预告信件的来源与含义",
+      "奥瑞恩集团转向资本维度的具体行动计划",
+      "“永恒星光”计划的启动条件与时间节点"
+    ],
+    "resolved_threads": [
+      "媒体对麦珂“康复”叙事的彻底粉碎",
+      "公众对“清醒即审判”共识的构建",
+      "奥瑞恩集团通过法律手段瓦解麦珂自主权的尝试失败"
+    ],
+    "introduced_characters": [
+      "退休护士（匿名）",
+      "公众朗读团成员（群像）"
+    ],
+    "next_pressure": "裁决书送达当日收到的神秘死亡预告信件，成为P10诱使敌人启动‘永恒星光’的终极时间诱饵，迫使麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题。"
+  }
+}

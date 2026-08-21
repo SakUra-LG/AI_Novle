@@ -1,0 +1,187 @@
+{
+  "macro_group_id": "MG028",
+  "event_clusters": [
+    {
+      "cluster_id": "EC140",
+      "chapter_span": [279, 280],
+      "source_event_direction": "利用重生记忆预判奥瑞恩集团在税务审计窗口期伪造票据的时机，通过黛安娜构建的物理存证防线与瑟琳娜的协议否决权，将对手的‘影印权’攻势转化为其自身欺诈的确凿证据，彻底粉碎其对初声基金的控制企图。",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z6y5x4w3v2u1t0s9r8q7p6o5n4m3l2k1j0i9h8g7f6e5d4c3b2a1",
+      "name": "物理介质铁律：离线防御战",
+      "timeline_years": "1993—1994",
+      "main_opponent": "斯特林·沃克（Strling Walker），奥瑞恩集团首席运营官，前世利用数据污染致麦珂死亡的推手，今生被重塑为贪婪且急于证明“技术优越性”的官僚形象。",
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "advance",
+      "causal_spine_ids": ["EC139_FRAUD_CONFIRMED", "EC140_PHYSICAL_DEFENSE"],
+      "foreshadow_ids": ["P07_OFFSHORE_CLUE"],
+      "main_characters": ["麦珂", "黛安娜·陈", "瑟琳娜", "斯特林·沃克", "苏菲亚"],
+      "fictional_obstacle": "奥瑞恩集团试图绕过物理隔离区，利用当时刚兴起的“远程扫描传输”概念，在行业会议现场强行要求将原始纸质档案数字化上传至临时搭建的局域网，以掩盖其无法提供原件的事实，并试图通过修改数字信号来“污染”原始数据的验证逻辑。",
+      "prev_life_tragedy": "前世对手利用技术手段污染数据，导致麦珂最终死于信息不对称，无法自证清白。",
+      "info_gap_from_prev_life": "麦珂掌握1983年蓝盾壳公司收购案中真实目的并非运营而是持有影印权，且知晓1993年联邦审计对纸张纤维检测的具体时间节点。",
+      "why_previous_life_failed": "前世过度依赖电子记录的可追溯性，忽视了物理介质作为唯一法律源头的不可篡改性，导致数据被后台静默篡改。",
+      "preemptive_avoidance": "麦珂推动建立基于物理介质的全新行业标准，拒绝任何远程档案库存储，强制所有关键凭证必须在物理隔离区由专人手工核验。",
+      "bait_and_evidence": "斯特林·沃克为了展示“技术革新”，主动提议将档案数字化；麦珂则提前让苏菲亚部署了完全离线的模拟信号干扰器，并在现场设置“物理熔断”机制，一旦尝试联网即自动销毁数字缓存并锁定物理原件。",
+      "comic_villain_behavior": "斯特林·沃克在镜头前夸夸其谈“数据即真理”，却在面对苏菲亚的离线技术时，因强行连接导致投影幕布上的伪代码乱码，他竟信誓旦旦地声称这是“加密后的真相”，并试图用现代复印机当场打印所谓的“新证据”，结果打印机卡纸吐出全是空白的废纸，引得全场哄笑。",
+      "villain_loss": "奥瑞恩集团意识到常规手段失效，不得不放弃对初声基金的直接控制，斯特林·沃克因当众出丑被董事会边缘化，其“数据污染”计划宣告破产。",
+      "protagonist_gain": "麦珂与团队确立了新的安全范式，为未来四十年的自主权奠定基石，黛安娜晋升为首席架构师。",
+      "relationship_change": "麦珂与瑟琳娜的信任达到顶峰，建立了基于物理存证的绝对防御同盟；黛安娜从执行者转变为战略核心架构师，获得独立决策权。",
+      "continuity_writes": [
+        "奥瑞恩集团转向更隐蔽的‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点。",
+        "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）仍需进一步调查。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016:trust_protocols",
+          "state_key": "physical_verification_status__extension_EC140",
+          "from": "legally_enforced_physical_priority",
+          "to": "irreversibly_verified_fraud_exposed_via_media",
+          "irreversible": true,
+          "evidence": "ART_279_OFFLINE_LOG_FINAL",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "physical_verification_status"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ORG_OREON_GROUP",
+          "state_key": "audit_compliance_status__extension_EC140",
+          "from": "fraudulent_fabrication_confirmed_and_banned",
+          "to": "technically_discredited_and_forced_to_retreat",
+          "irreversible": true,
+          "evidence": "ART_280_INDUSTRY_STANDARD_DECREE",
+          "effect_type": "villain_loss",
+          "source_state_key": "audit_compliance_status"
+        }
+      ],
+      "historical_anchor_ids": ["1993_TECHNOLOGY_LIMITATION", "OFFLINE_ANALOG_SYSTEMS"],
+      "cluster_outcome": "斯特林·沃克在行业会议上试图利用“远程扫描”技术绕过物理防线，被苏菲亚的离线技术轻松化解，其伪造行为再次被当场揭穿。行业会议正式宣布‘原始介质’具有绝对法律效力，奥瑞恩集团的数据污染计划彻底失败，被迫放弃对初声基金的直接控制。",
+      "next_event_hook": "奥瑞恩集团转向利用‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点，迫使麦珂进入更深层次的科技与伦理博弈。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 279,
+          "timeline_start": "1993年11月12日 09:00",
+          "timeline_end": "1993年11月12日 11:30",
+          "scene": "初声基金年度财务透明听证会现场",
+          "chapter_goal": "斯特林·沃克试图利用“远程扫描”技术绕过物理防线，麦珂团队启动离线防御机制。",
+          "chapter_title": "断网时刻：离线的胜利",
+          "participants": ["麦珂", "斯特林·沃克", "苏菲亚", "黛安娜·陈", "联邦审计官"],
+          "opening_conflict": "斯特林·沃克突然提出将原始纸质档案“数字化备份”以符合“现代化管理”标准，实则试图将档案接入临时局域网进行数据替换。",
+          "info_gap_use": "麦珂利用前世记忆，知道1993年的网络环境极不稳定且易受干扰，且对手并未真正掌握原始墨迹的化学成分分析能力。",
+          "opponent_reaction": "斯特林·沃克自信满满地指挥技术人员连接扫描仪，声称这是“技术革命”，无视黛安娜关于“物理介质优先”的警告。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证会主会场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林·沃克按下启动键的瞬间"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_279_OFFLINE_LOG_FINAL",
+              "timeline_scope": "current",
+              "display_name": "《1993年服务器离线状态日志》",
+              "kind": "technical_record"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_270_PROMOTION_CERTIFICATE",
+              "timeline_scope": "current",
+              "purpose": "确认黛安娜作为首席架构师的现场指挥权"
+            }
+          ],
+          "action_sequence": [
+            "斯特林·沃克命令技术员将原始档案送入高速扫描仪，试图生成电子版。",
+            "苏菲亚早已切断会场所有外部线路，并激活了物理隔离区的“模拟信号干扰器”。",
+            "扫描仪开始工作，但输出的图像因干扰出现严重噪点，无法识别。",
+            "斯特林·沃克强行要求重启系统，试图手动覆盖数据，却被黛安娜以程序违规叫停。",
+            "麦珂冷静指出，根据新颁布的行业标准，任何未经物理核验的电子副本均无效。"
+          ],
+          "visible_payoff": "斯特林·沃克的“数字化”方案彻底失败，现场大屏幕显示乱码，他显得狼狈不堪。",
+          "ending": "斯特林·沃克被迫承认无法完成数字化流程，但扬言这只是技术故障，真正的证据将在稍后展示。",
+          "must_include": ["苏菲亚的离线技术操作细节", "斯特林·沃克的傲慢反应", "黛安娜的权威干预"],
+          "must_not_include": ["网络留言", "云端存储", "社交媒体传播"],
+          "detailed_synopsis": "1993年11月12日上午，听证会现场气氛紧张。斯特林·沃克突然发难，声称要引入“先进技术”对原始档案进行数字化扫描，以此规避繁琐的物理核验流程。他自信地认为，只要有了电子备份，就能在后台悄悄替换数据。然而，麦珂早已预料到这一步。苏菲亚作为首席技术顾问，早已切断了会场所有对外网络连接，并启动了物理隔离区的模拟信号干扰装置。当扫描仪开始运作，输出的图像瞬间布满雪花噪点，根本无法读取。斯特林·沃克大惊失色，试图强行重启并手动输入指令，却被黛安娜依据《双轨创作信托协议》当场喝止。麦珂冷冷地指出，在缺乏物理介质核验的情况下，任何电子数据都是无效的。斯特林·沃克的“技术革命”演变成了一场闹剧，他在众目睽睽之下显得手足无措，只能尴尬地承认是设备故障。"
+        },
+        {
+          "chapter_id": 280,
+          "timeline_start": "1993年11月12日 14:00",
+          "timeline_end": "1993年11月12日 16:30",
+          "scene": "行业会议总结大会",
+          "chapter_goal": "行业会议正式确立“原始介质”的绝对法律效力，奥瑞恩集团彻底败退。",
+          "chapter_title": "铁律生效：物理的终极胜利",
+          "participants": ["麦珂", "斯特林·沃克", "瑟琳娜", "联邦审计官", "行业代表"],
+          "opening_conflict": "斯特林·沃克试图在总结大会上辩解，称之前的失败只是意外，并试图提交一份伪造的“新证据”来挽回局面。",
+          "info_gap_use": "麦珂利用前世记忆，知道1983年蓝盾壳公司的原始签字笔迹特征与墨水成分，能直接识破对手使用现代复印机技术伪造的伪钞级票据。",
+          "opponent_reaction": "斯特林·沃克在镜头前因无法解释伪造细节而语无伦次，显得滑稽可笑，最终崩溃。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "行业会议大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林·沃克试图拿出伪造文件"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_280_INDUSTRY_STANDARD_DECREE",
+              "timeline_scope": "current",
+              "display_name": "《行业原始介质验证标准决议》",
+              "kind": "legal_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_279_OFFLINE_LOG_FINAL",
+              "timeline_scope": "current",
+              "purpose": "作为斯特林·沃克技术失败的铁证"
+            }
+          ],
+          "action_sequence": [
+            "斯特林·沃克试图拿出一份看似完美的复印件作为“新证据”。",
+            "麦珂当场指出该复印件的纸张纤维结构呈现现代特征，与1983年的原始纸张不符。",
+            "联邦审计官现场比对，确认复印件为现代复印机伪造品。",
+            "斯特林·沃克试图狡辩，但在确凿的证据面前语无伦次，甚至试图抢夺文件。",
+            "行业会议正式宣布“原始介质”具有绝对法律效力，奥瑞恩集团的欺诈行为被定性。"
+          ],
+          "visible_payoff": "斯特林·沃克彻底崩溃，奥瑞恩集团被逐出核心决策层，麦珂团队确立了新的安全范式。",
+          "ending": "行业会议正式通过决议，确立物理介质为唯一合法凭证，奥瑞恩集团被迫放弃对初声基金的控制企图。",
+          "must_include": ["斯特林·沃克的滑稽表现", "麦珂的专业鉴定", "行业标准的正式确立"],
+          "must_not_include": ["逮捕", "查封", "资产冻结"],
+          "detailed_synopsis": "下午，行业会议进入总结阶段。斯特林·沃克不甘心失败，试图拿出一份经过精心伪造的复印件，声称这是“经过技术修复的原始数据”。然而，麦珂早已准备好了一切。她当场指出，这份复印件的纸张纤维结构明显带有现代复印机的特征，与1983年蓝盾壳公司收购案中的原始纸张完全不同。联邦审计官随即进行现场比对，确认了斯特林·沃克的欺诈行为。斯特林·沃克试图狡辩，声称这是“技术误差”，但在确凿的证据面前，他语无伦次，甚至试图抢夺文件，场面一度失控。最终，行业会议正式宣布“原始介质”具有绝对法律效力，任何未经物理核验的电子副本均无效。奥瑞恩集团的欺诈行为被彻底定性，斯特林·沃克被逐出核心决策层，奥瑞恩集团被迫放弃对初声基金的控制企图。麦珂与团队确立了新的安全范式，为未来四十年的自主权奠定了坚实基础。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1993",
+    "character_states": [
+      {"entity_id": "EMP_DIANA_CHEN", "state_key": "role_title__extension_EC140", "status": "Chief Architect of Physical Defense System"},
+      {"entity_id": "PROTAGONIST_MK", "state_key": "security_paradigm_established", "status": "Established new physical media standard"}
+    ],
+    "relationship_states": [
+      {"entity_pair": ["麦珂", "瑟琳娜"], "state_key": "trust_level__extension_EC140", "status": "Absolute defense alliance based on physical evidence"},
+      {"entity_pair": ["黛安娜·陈", "麦珂"], "state_key": "decision_making_power__extension_EC140", "status": "Independent decision-making authority granted"}
+    ],
+    "rights_and_assets": [
+      {"entity_id": "RIGHT_VL_016:trust_protocols", "state_key": "physical_verification_status__extension_EC140", "status": "Irreversibly verified fraud exposed via media"},
+      {"entity_id": "ORG_OREON_GROUP", "state_key": "control_attempt_status__extension_EC140", "status": "Forced to retreat and abandon direct control"}
+    ],
+    "health_and_location": [],
+    "open_threads": [
+      "奥瑞恩集团转向更隐蔽的‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点。",
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）仍需进一步调查。"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团利用‘影印权’漏洞重构资金流向的阴谋被彻底粉碎。",
+      "物理介质验证写入信托协议，成为行业铁律。"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "奥瑞恩集团将利用‘数据污染’策略，针对‘健康趋势预测模型’的真实数据来源发起新一轮攻击，迫使麦珂进入更深层次的科技与伦理博弈。"
+  }
+}

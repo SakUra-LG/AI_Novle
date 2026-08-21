@@ -1,0 +1,1021 @@
+{
+  "macro_group_id": "MG013",
+  "event_clusters": [
+    {
+      "cluster_id": "EC061",
+      "chapter_span": [
+        121,
+        122
+      ],
+      "source_event_direction": "前世具体受害：1981年胶片冲洗事故导致宣传照色彩失真，被分销商以此为由强制重印并篡改封面。；本事件独有的前世信息差：麦珂预知三家冲印厂中‘北极星暗房’在11月14日显影液温度异常会导致红色偏移峰值。；今生提前动作：麦珂强制押运底片至三家不同工厂交叉比对，并指定专人现场记录显影液温度数据。；第121章可见小赢：对比报告显示仅一家工厂出现严重色差，麦珂当场否决该批次并要求销毁问题底片。；第122章新交锋：分销商试图强行使用瑕疵照片印刷，麦珂当众展示车间混音台齿痕原片证明其不可篡改性。；阻力方永久现实损失：分销商被迫承担额外冲印成本且信誉受损，无法再借口质量问题进行标准化篡改。；主角现实收益：确立了以物理实体（底片与齿痕）为基准的视觉资产标准，获得行业对真实性的绝对信任。；不可逆结算键：三厂交叉比对报告与车间原片成为后续所有法律纠纷中的核心铁证。；接回死亡控制主线：避免了前世因视觉失真导致的专辑被退稿危机，防止了维克多阵营借此抹杀艺术价值。",
+      "source_event_direction_sha256": "1826273f67559ecf0f05ebc0d67215d7830bc3201f9a0e0f5d84ea64683eb21b",
+      "source_macro_sha256": "7e33cad6e3f20c525f8770d2c5ae52635e252e382c02b04eedf6e4e2bdf33a02",
+      "name": "铜齿轮底片保真行动",
+      "timeline_years": "1981-1982",
+      "main_opponent": "星光唱片分销联盟",
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "巴里·布鲁姆",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "分销商利用显影温度异常制造色差，企图以‘不符合市场标准’为名强行改版封面并叫停巡演。",
+      "prev_life_tragedy": "1981年胶片冲洗事故导致宣传照色彩失真，被分销商以此为借口要求重新印刷并篡改封面。",
+      "info_gap_from_prev_life": "麦珂预知北极星暗房在11月14日显影液温度异常会导致红色偏移峰值。",
+      "why_previous_life_failed": "当时未能提前锁定冲印厂，导致失真底片被迫使用，艺术形象受损。",
+      "preemptive_avoidance": "麦珂强制押运底片至北极星暗房、极光影像社、晨曦冲印三家交叉比对，并指派技术员现场记录显影液温度。",
+      "bait_and_evidence": "交叉比对报告显示仅北极星暗房出现红偏移，麦珂现场毁掉该批次底片并保留两家合格底片与车间混音台齿痕原片作不可篡改铁证。",
+      "comic_villain_behavior": "分销商代表在会议室大声宣称‘市场需求决定一切’，随后慌乱中递交伪造的巴里·布鲁姆医生‘严重听力损伤’诊断书。",
+      "villain_loss": "分销商被迫承担额外冲印费用，信誉受损，失去以质量为借口进行标准化篡改的权利。",
+      "protagonist_gain": "确立以物理实体（底片与齿痕）为基准的视觉资产标准，行业对《锈钉与琴键》宣传素材的真实性给予绝对信任。",
+      "relationship_change": "麦珂、莉薇娅与瑟琳娜形成‘视觉-听觉-物理’铁三角，团队内部信任度达到顶峰。",
+      "continuity_writes": [
+        "三厂交叉比对报告与车间原片被存入《星火同盟》档案库，编号ART_122_CROSS_REPORT。",
+        "莉薇娅在第122章结束时签署《临床否决权》文件，编号ART_122_CLINICAL_DENIAL。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_002:visual_asset_standard",
+          "state_key": "standardization_status",
+          "from": "未定义",
+          "to": "已认证",
+          "irreversible": true,
+          "evidence": "三厂交叉比对报告与车间混音台齿痕原片（ART_122_CROSS_REPORT）",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "STARLIGHT_DISTRIBUTION",
+          "state_key": "market_trust",
+          "from": "高",
+          "to": "受损",
+          "irreversible": false,
+          "evidence": "分销商因伪造诊断书被公开驳回的会议纪要（ART_122_MEETING_MINUTES）",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1981_GLUE_ACCIDENT"
+      ],
+      "cluster_outcome": "《锈钉与琴键》实体专辑顺利发行，铜质齿轮成为核心视觉符号，分销商的标准化篡改计划彻底破产。",
+      "next_event_hook": "维克多·兰斯转向隐蔽渗透，准备发动数据污染攻击；托马斯·布莱克等律师将以法律手段阻碍《家庭治理宪章》签署。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 121,
+          "timeline_start": "1981-11-13",
+          "timeline_end": "1981-11-14",
+          "scene": "北极星暗房显影室",
+          "chapter_goal": "通过交叉比对揭露唯一的色差工厂并阻止其底片流入市场。",
+          "chapter_title": "暗房的温度游戏",
+          "participants": [
+            "麦珂",
+            "技术员阿尔文",
+            "北极星暗房负责人"
+          ],
+          "opening_conflict": "分销商要求立刻使用北极星暗房的底片进行印刷，声称时间紧迫。",
+          "info_gap_use": "麦珂依据前世记忆提醒现场监测显影液温度，记录温度异常。",
+          "opponent_reaction": "暗房负责人试图掩盖温度异常，调低记录仪数值。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "北极星暗房显影室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "摄像机捕捉到温度计指针快速上升"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_122_TEMP_LOG",
+              "timeline_scope": "current",
+              "display_name": "北极星暗房显影液温度记录册",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_118_COLOR_TEMP_LOG",
+              "timeline_scope": "current",
+              "purpose": "对照历史色温基准"
+            }
+          ],
+          "action_sequence": [
+            "麦珂指示技术员同步记录三家显影温度。",
+            "现场实时比对温度曲线，发现北极星异常。",
+            "麦珂当场宣布该批次底片作废并下令销毁。",
+            "两家合格底片装入防伪包装，标记铜齿轮编号。"
+          ],
+          "visible_payoff": "分销商失去唯一可用底片的把柄。",
+          "ending": "交叉比对报告完成，北极星暗房的底片被永久销毁。",
+          "must_include": [
+            "温度记录仪",
+            "底片封装箱",
+            "铜质齿轮标签"
+          ],
+          "must_not_include": [
+            "电脑",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "在北极星暗房的显影室，麦珂凭前世记忆提醒现场技术员同步记录显影液温度。温度计指针在11月14日急速上升，记录仪显示红色偏移峰值。暗房负责人慌忙调低仪表，却被麦珂现场拍摄的照片捕捉。麦珂当场宣布该批次底片作废，指示技术员将其装入带有铜质齿轮编号的销毁箱并点燃。两家合格底片被装入防伪包装，标记同一齿轮编号，交叉比对报告随即生成。"
+        },
+        {
+          "chapter_id": 122,
+          "timeline_start": "1981-11-15",
+          "timeline_end": "1981-11-16",
+          "scene": "星光唱片总部大会议室",
+          "chapter_goal": "公开展示物理证据，迫使分销商放弃篡改并承担额外费用。",
+          "chapter_title": "齿痕的审判",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "星光唱片总裁",
+            "分销商代表",
+            "巴里·布鲁姆（伪造医生）"
+          ],
+          "opening_conflict": "分销商代表递交伪造的巴里·布鲁姆诊断书，要求立即停止巡演并重新设计封面。",
+          "info_gap_use": "麦珂展示车间混音台齿痕原片与铜质齿轮编号的对应关系，证明底片不可篡改。",
+          "opponent_reaction": "分销商试图以‘市场标准’为借口坚持修改，巴里·布鲁姆在场辩解。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "星光唱片总部大会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "投影仪亮起，麦珂将原片放在灯光下"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_122_CLINICAL_DENIAL",
+              "timeline_scope": "current",
+              "display_name": "莉薇娅·普莱斯临床否决权签署文件",
+              "kind": "document"
+            },
+            {
+              "artifact_id": "ART_122_CROSS_REPORT",
+              "timeline_scope": "current",
+              "display_name": "ART_122_CROSS_REPORT",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_122_CROSS_REPORT",
+              "timeline_scope": "current",
+              "purpose": "证明底片真实性"
+            },
+            {
+              "artifact_id": "ART_122_TEMP_LOG",
+              "timeline_scope": "current",
+              "purpose": "支撑温度异常论证"
+            }
+          ],
+          "action_sequence": [
+            "麦珂将车间混音台齿痕原片投影，标注铜质齿轮编号。",
+            "莉薇娅现场朗读《临床否决权》文本，驳回巴里·布鲁姆的诊断。",
+            "分销商代表被迫签署额外冲印费用协议。",
+            "会议结束后，麦珂将原片与报告装入档案库，编号ART_122_EVIDENCE_KIT。"
+          ],
+          "visible_payoff": "分销商失去以质量为借口的篡改权，需承担额外成本。",
+          "ending": "会议结束，麦珂与莉薇娅握手，铜齿轮视觉资产标准正式公布。",
+          "must_include": [
+            "混音台齿痕原片",
+            "铜质齿轮编号标签",
+            "临床否决权文件"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "星光唱片总部的会议室内，分销商代表递交伪造的巴里·布鲁姆医生诊断书，声称麦珂的听力已严重受损，必须停止巡演。麦珂从灯光下取出车间混音台齿痕原片，投影仪映出铜质齿轮编号与底片纹理的对应关系，现场所有人目睹底片的不可篡改性。莉薇娅·普莱斯站起朗读《临床否决权》文件，正式驳回诊断书并提交签署的否决文件（ART_122_CLINICAL_DENIAL）。分销商代表无奈签署额外冲印费用协议，现场记录在会议纪要中。会议结束后，麦珂将原片、交叉比对报告与温度记录装入编号ART_122_EVIDENCE_KIT的档案盒，铜齿轮视觉资产标准正式对外公布。"
+        }
+      ],
+      "source_main_character_labels": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "巴里·布鲁姆（伪造医生）",
+        "维克多·兰斯"
+      ]
+    },
+    {
+      "cluster_id": "EC062",
+      "chapter_span": [
+        123,
+        124
+      ],
+      "source_event_direction": "前世具体受害：巴里·布鲁姆医生伪造听力损伤报告，导致巡演被迫取消，麦珂失去公众控制权。；本事件独有的前世信息差：麦珂知晓维克多阵营传递假报告的内部链条及巴里医生的造假时间戳漏洞。；今生提前动作：嘉宾歌手提前准备好临床否决权法律文本，并备份了麦珂过去十年的完整听力监测原始数据。；第123章可见小赢：当假报告送达时，嘉宾歌手当场出示原始数据证明麦珂听力完全健康，驳回初步质疑。；第124章新交锋：维克多阵营代表在媒体面前试图强推假报告，麦珂公开播放媒体经理医生承认造假的录音片段。；阻力方永久现实损失：媒体经理医生执照被吊销，维克多阵营的医疗渗透计划彻底破产，被迫转入地下活动。；主角现实收益：麦珂确立‘清醒存活’身份，公众认知从童星彻底转向掌控自身健康的艺术家。；不可逆结算键：官方机构正式撤销虚假健康报告，嘉宾歌手签署的临床否决文件成为行业新标杆。；接回死亡控制主线：粉碎了前世导致麦珂被医疗体系合法剥夺权利的致命一击，切断死亡链条的关键环节。",
+      "source_event_direction_sha256": "ca47177b313a74e667735860d673242b8dfef41dcb797fd958da0cbf429532b4",
+      "source_macro_sha256": "7e33cad6e3f20c525f8770d2c5ae52635e252e382c02b04eedf6e4e2bdf33a02",
+      "name": "健康报告终结战",
+      "timeline_years": "1981-1982",
+      "main_opponent": "维克多阵营的媒体经理医生巴里·布鲁姆",
+      "opposition_type": "villain",
+      "event_type": "health_safety",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "巴里·布鲁姆",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "伪造的‘严重听力损伤’诊断书被媒体与分销商联手推向法院",
+      "prev_life_tragedy": "巴里·布鲁姆医生伪造听力损伤报告导致巡演被迫取消，麦珂失去公众控制权",
+      "info_gap_from_prev_life": "麦珂记得假报告的内部传递链条与时间戳漏洞，却未有书面证据",
+      "why_previous_life_failed": "缺乏可验证的物理证据，导致法律无力介入",
+      "preemptive_avoidance": "莉薇娅提前准备临床否决权法律文本并备份麦珂十年听力监测原始磁带",
+      "bait_and_evidence": "假报告送达现场，莉薇娅现场展示原始磁带波形与听力测试记录，直接驳斥报告",
+      "comic_villain_behavior": "媒体经理医生在记者会上坚持报告真实性，甚至现场演示伪造签字笔迹",
+      "villain_loss": "巴里·布鲁姆执照被吊销，维克多阵营的医疗渗透计划彻底破产",
+      "protagonist_gain": "麦珂获得‘清醒存活’身份，公众认知从童星转向掌控健康的艺术家",
+      "relationship_change": "团队内部信任度提升，形成‘视觉-听觉-物理’铁三角协作模式",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_004:clinical_negation_authority",
+          "state_key": "negation_rights_status",
+          "from": "未授权",
+          "to": "已授权",
+          "irreversible": true,
+          "evidence": "ART_124_CLINICAL_NEGATION_DOC",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "VIKTOR_LANS",
+          "state_key": "public_trust",
+          "from": "中等",
+          "to": "受损",
+          "irreversible": false,
+          "evidence": "ART_124_MEDIA_EXPOSE_RECORD",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA1981_GELATIN_ACCIDENT",
+        "HA1980_STAGE_LIFT_FAILURE"
+      ],
+      "cluster_outcome": "官方撤销虚假健康报告，临床否决文件成为行业新标杆，麦珂确立资产控制权",
+      "next_event_hook": "维克多·兰斯转向隐蔽渗透，准备发动数据污染攻击；托马斯·布莱克等律师将以法律手段阻碍《家庭治理宪章》签署",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 123,
+          "timeline_start": "1981-11-16",
+          "timeline_end": "1981-11-16",
+          "scene": "星光剧院后台会议室",
+          "chapter_goal": "利用预知信息和现场证据驳回假健康报告，取得小胜",
+          "chapter_title": "证据的逆光",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "巴里·布鲁姆",
+            "维克多·兰斯的代表"
+          ],
+          "opening_conflict": "巴里·布鲁姆递交伪造的‘严重听力损伤’诊断书，要求立即停演",
+          "info_gap_use": "莉薇娅现场播放麦珂十年听力监测磁带的波形图，证明听力正常",
+          "opponent_reaction": "巴里·布鲁姆辩称报告来源于独立医院，要求法庭鉴定",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "星光剧院后台会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "会议室灯光骤暗，投影仪启动"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_124_CLINICAL_NEGATION_DOC",
+              "timeline_scope": "current",
+              "display_name": "临床否决权签署文件",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "莉薇娅递交否决文件",
+            "麦珂播放磁带波形",
+            "巴里·布鲁姆现场质疑",
+            "现场观众记录并要求法官介入"
+          ],
+          "visible_payoff": "假报告被暂停，媒体暂时失去压制力量",
+          "ending": "会议在紧张气氛中结束，麦珂与莉薇娅获得临时法律保护",
+          "must_include": [
+            "现场磁带波形展示",
+            "法律文本递交",
+            "巴里·布鲁姆情绪失控"
+          ],
+          "must_not_include": [
+            "现代电子设备",
+            "不得把前世记忆写成今生实体证据"
+          ],
+          "detailed_synopsis": "星光剧院的后台会议室灯光昏暗，维克多阵营的代表把一份标有‘严重听力损伤’的诊断书递给麦珂。莉薇娅·普莱斯不慌不忙，抽出提前准备好的《临床否决权签署文件》递给现场的法官助理，并将麦珂过去十年保存的磁带卷轴放在投影仪上。投影仪映出清晰的波形图，显示麦珂的听力在所有频段均在正常范围。巴里·布鲁姆面色苍白，试图以医院独立性为辩护，却被现场记者记录下来。会议在激烈的争论中暂时中止，假报告被迫撤回，麦珂与莉薇娅获得临时法律保护，观众的掌声转化为对真相的支持。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_110_HEARING_LOGS",
+              "timeline_scope": "previous_life",
+              "purpose": "证明麦珂听力完整的原始数据"
+            }
+          ]
+        },
+        {
+          "chapter_id": 124,
+          "timeline_start": "1981-11-19",
+          "timeline_end": "1981-11-19",
+          "scene": "国家广播电视中心新闻发布厅",
+          "chapter_goal": "公开揭露假报告来源，彻底粉碎维克多阵营的医疗渗透",
+          "chapter_title": "真相的广播",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "巴里·布鲁姆",
+            "维克多·兰斯",
+            "新闻主播",
+            "现场观众"
+          ],
+          "opening_conflict": "维克多阵营派出媒体经理在全国直播中强推假报告，声称麦珂健康危机已确认",
+          "info_gap_use": "麦珂播放事先录好的媒体经理医生承认造假录音，配合现场展示时间戳对比图",
+          "opponent_reaction": "巴里·布鲁姆现场惊慌失色，试图中断直播，却被技术员强行继续播放录音",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "国家广播电视中心新闻发布厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "摄像机切换至麦珂的演讲台"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_124_MEDIA_EXPOSE_RECORD",
+              "timeline_scope": "current",
+              "display_name": "ART_124_MEDIA_EXPOSE_RECORD",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_124_MEDIA_EXPOSE_RECORD",
+              "timeline_scope": "current",
+              "purpose": "录音与时间戳对比的官方存档"
+            }
+          ],
+          "action_sequence": [
+            "麦珂登台发言",
+            "播放媒体经理承认造假录音",
+            "现场展示时间戳对比图",
+            "观众现场举手示意",
+            "官方宣布撤销假报告"
+          ],
+          "visible_payoff": "巴里·布鲁姆执照被吊销，维克多阵营的渗透计划公开破产",
+          "ending": "直播结束后，观众自发举牌支持麦珂，新闻稿件在各大报纸头版登出，行业标准随即更新",
+          "must_include": [
+            "录音播放",
+            "时间戳对比图",
+            "执照吊销公告"
+          ],
+          "must_not_include": [
+            "电子邮件或网络用语",
+            "不得把前世记忆写成今生实体证据"
+          ],
+          "detailed_synopsis": "国家广播电视中心的新闻发布厅灯光明亮，维克多阵营的媒体经理站在主台上，声称麦珂的听力已严重受损，必须立即停止巡演。麦珂走上台，先是简短致辞，然后按下预先准备好的磁带，播放出媒体经理在一次内部会议上自白的录音，内容清晰表明报告是为了压制艺术家而伪造的。紧接着，屏幕上出现时间戳对比图，左侧是巴里·布鲁姆在伪造报告时的系统日志，右侧是医院正式报告的时间，二者相差数小时，证据铁证如山。现场观众哗然，技术员被迫继续播放录音，巴里·布鲁姆面露惊恐，试图中断直播却被制止。广播结束后，官方立即发布通告吊销巴里·布鲁姆执照，维克多阵营的医疗渗透计划被彻底瓦解。全国报纸头版刊登《真相已现》特稿，行业标准随即修订，临床否决权成为新规范。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC063",
+      "chapter_span": [
+        125,
+        126
+      ],
+      "source_event_direction": "前世具体受害：前世版税被唱片公司通过复杂的数字分账系统截留，麦珂无法掌握实体资产控制权。；本事件独有的前世信息差：麦珂记得前世母带原件被锁在单一保险柜中，一旦钥匙丢失或公司破产即永久失控。；今生提前动作：麦珂将母带拷贝存于三人联锁保险柜，并将钥匙分置不同邮局租箱，建立物理分散机制。；第125章可见小赢：唱片公司试图以技术故障为由要求统一保管母带，被瑟琳娜以机械联动结构拒绝。；第126章新交锋：分销商试图强行接管母带，麦珂当众开启其中一箱，展示铜质齿轮编号体系的唯一性。；阻力方永久现实损失：唱片公司失去对《锈钉与琴键》版税的非法截留权，被迫接受新的分账协议。；主角现实收益：麦珂通过铜质齿轮编号体系掌握了专辑版税与周边发行的物理资产控制权。；不可逆结算键：铜质齿轮编号体系成为不可复制的物理凭证，彻底固化了麦珂的资产所有权。；接回死亡控制主线：确保了前世被夺走的资产在今生得以保留，为未来的法律对抗奠定物质基础。",
+      "source_event_direction_sha256": "2eed399a544e0de784e453c07117b6796a6d41e0fcec3c4947fc76b80ba86695",
+      "source_macro_sha256": "7e33cad6e3f20c525f8770d2c5ae52635e252e382c02b04eedf6e4e2bdf33a02",
+      "name": "铜质齿轮母带保卫战",
+      "timeline_years": "1981-1982",
+      "main_opponent": "环球唱片公司与其联盟的分销商、广告商",
+      "opposition_type": "institutional",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "瑟琳娜·卡尔森",
+        "巴里·布鲁姆",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "唱片公司以“技术故障”为借口要求统一保管母带，企图通过单点控制夺回版税。",
+      "prev_life_tragedy": "前世版税被唱片公司通过数字分账系统截留，母带唯一原件锁在单一保险柜中失控。",
+      "info_gap_from_prev_life": "麦珂记得母带原件被单锁，钥匙若丢失即永久失去控制权。",
+      "why_previous_life_failed": "缺乏物理分散与多方监管，导致资产被单点攻击。",
+      "preemptive_avoidance": "今生将母带复印件存于三把联锁保险箱，钥匙分别寄存于北岬市、海川市、广州的邮局租箱，并登记备案。",
+      "bait_and_evidence": "在第125章，唱片公司以“底片受潮”为名要求集中保管，瑟琳娜现场展示机械联动的防潮装置，证明分散存放更安全。",
+      "comic_villain_behavior": "分销商代表在会议上慌张敲打桌子，声称“只要我们拿到原件，所有问题都能解决”，却不慎将一枚铜质齿轮掉落在地，被现场摄像机捕捉。",
+      "villain_loss": "环球唱片公司失去对《锈钉与琴键》版税的非法截留权，被迫签署以铜质齿轮编号体系为依据的新分账协议。",
+      "protagonist_gain": "麦珂通过铜质齿轮编号体系获得专辑版税、周边实体资产的独占控制权，并在行业内树立不可复制的物理凭证标准。",
+      "relationship_change": "团队内部信任度提升，形成‘视觉‑听觉‑物理’三位一体的铁三角协作模式。",
+      "continuity_writes": [
+        "铜质齿轮编号体系被记录于《铜质资产登记册》",
+        "《锈钉与琴键》实体发行合同中加入物理资产条款"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_005:physical_asset_control",
+          "state_key": "ownership_status",
+          "from": "未授权",
+          "to": "已授权",
+          "irreversible": true,
+          "evidence": "ART_125_COPPER_GEAR_CERTIFICATE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_001:illegal_royalty_seizure",
+          "state_key": "legal_status",
+          "from": "有效",
+          "to": "无效",
+          "irreversible": true,
+          "evidence": "ART_126_JUDGMENT_ORDER",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1981_GELATIN_ACCIDENT",
+        "HA_1980_LIQUID_HYDRAULIC_FAULT"
+      ],
+      "cluster_outcome": "《锈钉与琴键》成功发行，铜质齿轮体系成为行业新标准，麦珂实现资产全权掌控。",
+      "next_event_hook": "维克多·兰斯转向隐蔽渗透，准备发动数据污染攻击；托马斯·布莱克等律师将以法律手段阻碍《家庭治理宪章》签署。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 125,
+          "timeline_start": "1981-11-19",
+          "timeline_end": "1981-11-21",
+          "scene": "会议室投影区",
+          "chapter_goal": "阻止公司单点保管母带的提案，展示分散存放的安全性。",
+          "chapter_title": "技术故障的借口",
+          "participants": [
+            "麦珂",
+            "瑟琳娜·卡尔森",
+            "环球唱片公司代表",
+            "分销商代表"
+          ],
+          "opening_conflict": "公司代表声称母带因底片受潮需统一保管，暗示分散存放不安全。",
+          "info_gap_use": "麦珂凭前世记忆指出上一次胶片冲洗事故的具体故障点，证明单点存放易受同类事故影响。",
+          "opponent_reaction": "分销商代表慌乱敲桌，试图以权威压制麦珂的质疑。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "会议室投影区",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "投影仪启动，显示受潮底片的微观裂纹图"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_125_COPPER_GEAR_CERTIFICATE",
+              "timeline_scope": "current",
+              "display_name": "铜质齿轮编号体系认证书",
+              "kind": "certificate"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_110_PARTNERSHIP_CERT",
+              "timeline_scope": "current",
+              "purpose": "证明三方保险箱联锁协议的合法性"
+            }
+          ],
+          "action_sequence": [
+            "麦珂提出三箱联锁方案",
+            "瑟琳娜演示防潮机械联动装置",
+            "分销商代表失手掉落铜齿轮",
+            "现场摄像机记录下齿轮编号"
+          ],
+          "visible_payoff": "公司被迫暂停统一保管提案，会议记录中加入分散存放条款。",
+          "ending": "会议在麦珂的坚持下以“暂缓决定”收场，所有人对铜质齿轮的唯一性产生怀疑。",
+          "must_include": [
+            "铜质齿轮",
+            "三把联锁钥匙",
+            "投影显示受潮底片"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "环球唱片公司在北岬市总部召集紧急会议，声称《锈钉与琴键》母带因近期底片受潮必须统一保管，以防进一步损毁。麦珂凭借前世记忆，指出1981年同类胶片冲洗事故的具体故障点——冲洗液温度波动导致底片微裂。她当场展示三把联锁保险箱的钥匙分别寄存于北岬市、海川市、广州邮局的租箱凭证，并请瑟琳娜现场演示防潮机械联动装置。分销商代表慌乱敲桌，试图以权威压制，却不慎将一枚刻有编号的铜质齿轮掉落在地，摄像机捕捉到其唯一编号。会议记录随即加入“母带必须采用分散存放并使用铜质齿轮编号体系”条款，唱片公司被迫暂停统一保管提案。"
+        },
+        {
+          "chapter_id": 126,
+          "timeline_start": "1981-12-10",
+          "timeline_end": "1981-12-12",
+          "scene": "公司仓库大型金库",
+          "chapter_goal": "公开展示铜质齿轮体系的不可复制性，迫使分销商放弃接管母带。",
+          "chapter_title": "齿轮的唯一宣言",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "环球唱片公司高层",
+            "分销商代表",
+            "媒体记者"
+          ],
+          "opening_conflict": "分销商以法律函件要求公司交付母带原件，准备强行接管。",
+          "info_gap_use": "麦珂利用前世记忆中母带原件被单锁的致命弱点，展示三箱联锁的实物证据。",
+          "opponent_reaction": "分销商代表在现场质疑铜质齿轮的合法性，试图用法律文书压制。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "公司仓库大型金库",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "金库门缓缓开启，灯光聚焦在三只上锁的保险箱上"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_125_COPPER_GEAR_CERTIFICATE",
+              "timeline_scope": "current",
+              "purpose": "证明铜质齿轮编号体系已获行业认可"
+            }
+          ],
+          "action_sequence": [
+            "麦珂现场打开第一只保险箱，展示编号为‘G‑07‑1981’的铜齿轮",
+            "莉薇娅出示法律文件，声明任何单点接管均违背《物理资产保护法》",
+            "分销商代表尝试强行撬锁，被现场摄像机记录",
+            "媒体现场连线报道，公众舆论倾向麦珂"
+          ],
+          "visible_payoff": "分销商放弃接管，环球唱片公司签署新分账协议，铜质齿轮体系正式写入合同。",
+          "ending": "会议在全场掌声中结束，麦珂握紧铜齿轮，象征对实体资产的绝对掌控。",
+          "must_include": [
+            "铜质齿轮编号‘G‑07‑1981’",
+            "三把联锁钥匙",
+            "现场摄像机"
+          ],
+          "must_not_include": [
+            "电子邮件",
+            "手机"
+          ],
+          "detailed_synopsis": "分销商在收到法律函件后，携律师团队闯入环球唱片公司仓库，要求立即交付《锈钉与琴键》母带原件。麦珂提前安排现场直播，邀请媒体记者围观。她先打开第一只保险箱，取出刻有编号‘G‑07‑1981’的铜质齿轮，说明每一枚齿轮对应唯一的母带复本，且钥匙分散在三地邮局，任何单点接管都无法完成。莉薇娅随即出示《物理资产保护法》条文，声明未经全体持有人同意，任何强行接管行为均属非法。分销商代表现场尝试撬锁，却被摄像机完整记录，舆论瞬间转向麦珂。最终，环球唱片公司在媒体压力下签署以铜质齿轮编号体系为依据的新分账协议，放弃对母带的非法夺取。全场掌声雷动，麦珂将铜齿轮紧握于手，象征对实体资产的绝对掌控。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC064",
+      "chapter_span": [
+        127,
+        128
+      ],
+      "source_event_direction": "前世具体受害：前世混音争议中频段削波阈值未明确，导致音频质量被主观臆断，引发大量负面评价。；本事件独有的前世信息差：麦珂复述前世混音争议中频段削波阈值的具体参数，促使瑟琳娜开发‘可听化误差标尺’。；今生提前动作：瑟琳娜安装物理刻度盘，将音频质量转化为可视化的量化指标，供所有人实时监测。；第127章可见小赢：广告商质疑音质问题，团队当场展示刻度盘读数证明音频符合最高行业标准。；第128章新交锋：反对者试图用主观感受攻击，麦珂邀请第三方专家现场测试并签字确认误差在允许范围内。；阻力方永久现实损失：依赖主观臆断的攻击策略失效，广告商被迫承认技术标准由麦珂团队定义。；主角现实收益：确立了音频质量的客观标准，使《锈钉与琴键》成为行业公认的听觉革命典范。；不可逆结算键：物理刻度盘与实测数据成为后续所有音乐制作的新参考基准。；接回死亡控制主线：消除了前世因技术模糊地带导致的声誉受损风险，巩固了艺术家的专业权威。",
+      "source_event_direction_sha256": "27374dad34c32d4c44e087b2b5394d7322dee18356a88d161175adc67633b586",
+      "source_macro_sha256": "7e33cad6e3f20c525f8770d2c5ae52635e252e382c02b04eedf6e4e2bdf33a02",
+      "name": "音频质量客观化对决",
+      "timeline_years": "1981-1982",
+      "main_opponent": "联合唱片分销商与维克多阵营支持的广告商",
+      "opposition_type": "ally_resistance",
+      "event_type": "performance",
+      "solution_type": "performance_proof",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "瑟琳娜·科尔",
+        "巴里·布鲁姆医生",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "对手以“主观听感不佳”为由要求重新剪辑专辑，试图通过伪造的听力损伤报告迫使巡演停摆。",
+      "prev_life_tragedy": "混音争议因削波阈值未公开导致声誉受损。",
+      "info_gap_from_prev_life": "麦珂记得前世具体的削波阈值数值（-3.2 dBFS）以及瑟琳娜当年未完成的误差刻度盘设计。",
+      "why_previous_life_failed": "缺乏可视化的技术指标，导致行业依赖主观评判。",
+      "preemptive_avoidance": "瑟琳娜在本生前已完成金属刻度盘的制作，并在录音室内安装，实时显示频段误差。",
+      "bait_and_evidence": "现场演出前，麦珂让技术员把刻度盘读数投射到大屏幕，公开展示-3.2 dBFS削波阈值下的波形。",
+      "comic_villain_behavior": "广告商代表激动地把耳机塞进耳孔，假装“听不见”，却被现场观众嘲笑。",
+      "villain_loss": "广告商被迫签署《技术标准接受声明》，放弃主观攻击权。",
+      "protagonist_gain": "麦珂团队获得行业首个《可听化误差标尺》认证，成为技术标准制定者。",
+      "relationship_change": "团队内部信任度提升至最高，形成‘视觉‑听觉‑物理’三位一体的铁三角协作模式。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_002:technical_standard_authority",
+          "state_key": "ownership_status",
+          "from": "未授权",
+          "to": "已授权",
+          "irreversible": true,
+          "evidence": "ART_127_ERR_SCALE_CERTIFICATE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_002:subjective_attack_prohibition",
+          "state_key": "legal_status",
+          "from": "有效",
+          "to": "无效",
+          "irreversible": true,
+          "evidence": "ART_128_ADVERTISER_AGREEMENT",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1981_GELATIN_FILM_ACCIDENT"
+      ],
+      "cluster_outcome": "《锈钉与琴键》音频质量得到客观量化认可，行业标准化成功，麦珂获得音频技术权威身份。",
+      "next_event_hook": "维克多·兰斯转向隐蔽渗透，策划数据污染攻击；托马斯·布莱克准备以法律手段阻碍《家庭治理宪章》签署。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 127,
+          "timeline_start": "1981-12-12",
+          "timeline_end": "1981-12-12",
+          "scene": "演播厅舞台侧幕后方",
+          "chapter_goal": "现场展示音频客观标准，化解广告商的封面与曲目挑衅。",
+          "chapter_title": "刻度的呼声",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "莉薇娅·普莱斯",
+            "广告商代表",
+            "现场技术员",
+            "观众"
+          ],
+          "opening_conflict": "广告商公开质疑《锈钉与琴键》音质不达标，要求暂停巡演。",
+          "info_gap_use": "麦珂现场朗读前世削波阈值-3.2 dBFS，并指向新装的误差刻度盘。",
+          "opponent_reaction": "广告商代表试图用耳机现场“听不清”来证明主观不适。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "演播厅舞台侧幕后方",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光聚焦至大型投影屏"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_127_ERR_SCALE_CERTIFICATE",
+              "timeline_scope": "current",
+              "display_name": "《可听化误差标尺》行业认证证书",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_110_PARTNERSHIP_CERT",
+              "timeline_scope": "current",
+              "purpose": "证明合作方已同意技术标准"
+            }
+          ],
+          "action_sequence": [
+            "技术员启动投影，将刻度盘读数同步至大屏。",
+            "麦珂阐释削波阈值的技术意义。",
+            "瑟琳娜现场演示不同频段的波形变化。",
+            "观众实时记录读数，现场记者撰稿。",
+            "广告商被迫签署《技术标准接受声明》"
+          ],
+          "visible_payoff": "现场观众热烈鼓掌，媒体报道《锈钉与琴键》音质突破。",
+          "ending": "广告商在合同上签字，现场灯光切换为铜质齿轮投影。",
+          "must_include": [
+            "刻度盘",
+            "投影屏",
+            "现场签约"
+          ],
+          "must_not_include": [
+            "电子邮件",
+            "电脑硬盘"
+          ],
+          "detailed_synopsis": "在首都大型演播厅，灯光暗下，投影屏亮起，巨大的铜质齿轮图案缓缓旋转。广告商代表站在麦珂风前，声称《锈钉与琴键》音质未达市场标准，要求暂缓巡演。麦珂不慌不忙，走到舞台边的控制台，指向新安装的金属误差刻度盘，朗读前世记忆中的削波阈值-3.2 dBFS。投影同步显示刻度盘实时读数，瑟琳娜用示波器放大不同频段的波形，证明所有轨道均在误差范围内。观众席上，技术爱好者记录数值，现场记者立即用手写稿记录。广告商慌乱之际，莉薇娅递上一份《技术标准接受声明》，对方在灯光聚焦的铜齿轮投影下签字，现场气氛瞬间从紧张转为欢呼。"
+        },
+        {
+          "chapter_id": 128,
+          "timeline_start": "1981-12-13",
+          "timeline_end": "1981-12-13",
+          "scene": "演播厅舞台中央",
+          "chapter_goal": "通过第三方专家实测，彻底粉碎主观听感攻击，巩固技术标准的法律效力。",
+          "chapter_title": "审判的音波",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "瑟琳娜",
+            "独立音响专家张博士",
+            "巴里·布鲁姆医生",
+            "维克多阵营代表",
+            "观众"
+          ],
+          "opening_conflict": "维克多阵营派出巴里·布鲁姆医生，提交伪造的“严重听力损伤”诊断书，要求停演。",
+          "info_gap_use": "麦珂提前将巴里·布鲁姆的诊断书复印件交给莉薇娅，准备现场否决。",
+          "opponent_reaction": "巴里·布鲁姆在舞台上声称麦珂的音频会导致永久性听力损伤，现场观众情绪动摇。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "演播厅舞台中央",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光聚焦至诊断书投影"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_128_EXPERT_REPORT",
+              "timeline_scope": "current",
+              "display_name": "ART_128_EXPERT_REPORT",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_128_EXPERT_REPORT",
+              "timeline_scope": "current",
+              "purpose": "第三方专家对音频误差的客观检测报告"
+            }
+          ],
+          "action_sequence": [
+            "莉薇娅递交《临床否决权》授权文件。",
+            "张博士现场使用便携式声压计对音箱进行测量。",
+            "张博士公布测量报告，误差均在-3.2 dBFS以内。",
+            "巴里·布鲁姆的诊断被现场观众当场质疑。",
+            "维克多代表撤回停演要求，现场灯光恢复铜齿轮光辉。"
+          ],
+          "visible_payoff": "第三方权威检测报告被媒体刊登，巴里·布鲁姆的伪造报告被公开撤销。",
+          "ending": "演出顺利进行，观众在高潮部分齐声欢呼，麦珂的形象升至行业标杆。",
+          "must_include": [
+            "第三方专家",
+            "声压计",
+            "现场否决文件"
+          ],
+          "must_not_include": [
+            "电脑硬盘",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "夜幕降临，演播厅灯光再次暗下，维克多阵营的巴里·布鲁姆医生被请上舞台，手持一份纸质诊断书，声称《锈钉与琴键》的高频段会导致永久性听力损伤，要求立即停演。莉薇娅·普莱斯站在麦珂身旁，掏出《临床否决权》授权书，正式声明她拥有依法否决虚假医学报告的权力。随后，独立音响专家张博士带着便携式声压计走到音箱前，现场测量每一首曲目的声压峰值与频谱误差。投影屏上实时显示测量数据，所有读数均在麦珂前世记忆的-3.2 dBFS削波阈值以内。张博士朗读报告要点，宣称没有任何听力风险。观众席上，原本动摇的观众看到权威数据后情绪恢复，巴里·布鲁姆的诊断被现场记者用手写稿记录为“伪造”。维克多阵营代表被迫撤回停演要求，灯光重新投射出旋转的铜齿轮，演出在高潮中达到巅峰。全场观众在终曲的最后一声吉他拨弦中齐声欢呼，麦珂站在舞台中央，成为音频技术革命的象征。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC065",
+      "chapter_span": [
+        129,
+        130
+      ],
+      "source_event_direction": "前世具体受害：前世终场观众情绪未达预期，缺乏跨代际的情感共鸣，导致巡演影响力受限。；本事件独有的前世信息差：麦珂预判1982年‘棱镜之夜’终场观众情绪拐点时刻，设定灯光渐暗节奏与麦珂风拾音衰减曲线。；今生提前动作：麦珂提前设定灯光渐暗节奏与麦珂风拾音衰减曲线，确保现场演出的情感爆发力精准命中受众心理。；第129章可见小赢：彩排中观众反应热烈，苏菲亚记录数据证明情感共振机制有效，团队信心倍增。；第130章新交锋：演出当晚，麦珂唱完试镜原曲副歌后停顿三秒，全场十万观众自发齐声补入原版旋律。；阻力方永久现实损失：任何试图贬低巡演影响力的言论在事实面前不攻自破，竞争对手无法复制这种情感连接。；主角现实收益：完成从童星到艺术家的公众认知跃迁，确立了铜质齿轮体系的资产控制权与社会影响力。；不可逆结算键：四十年声部共振成为历史事件，彻底改变了公众对麦珂·杰森的定义。；接回死亡控制主线：实现了前世未能达成的终极情感共鸣，将个人命运与公众记忆深度绑定，终结死亡循环。",
+      "source_event_direction_sha256": "e233418ea617195f6fd24d518b975d326fc40eb26eebd93e5b5046f705b6011e",
+      "source_macro_sha256": "7e33cad6e3f20c525f8770d2c5ae52635e252e382c02b04eedf6e4e2bdf33a02",
+      "name": "情感共振的终极对决",
+      "timeline_years": "1981-1982",
+      "main_opponent": "维克多·兰斯阵营",
+      "opposition_type": "internal",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂·杰森",
+        "莉薇娅·普莱斯",
+        "苏菲亚·罗德里格斯",
+        "巴里·布鲁姆医生",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "唱片分销商联手广告商以‘不符合市场标准’为名，要求改动《锈钉与琴键》封面与曲序，并借假诊断书叫停巡演。",
+      "prev_life_tragedy": "前世‘棱镜之夜’终场情绪未达预期，缺乏跨代际共鸣导致巡演影响力受限。",
+      "info_gap_from_prev_life": "麦珂记得灯光暗淡与拾音衰减的精准时间点，却未有物证。",
+      "why_previous_life_failed": "缺少可验证的技术标尺，观众情绪被外部噪声冲散。",
+      "preemptive_avoidance": "麦珂提前在三家冲印厂交叉比对底片，锁定铜质齿轮视觉符号；并在现场灯光与拾音曲线预设程序中嵌入机械计时装置。",
+      "bait_and_evidence": "现场摄像机拍下灯光暗淡瞬间的齿轮投影，音响技术员记录拾音衰减曲线，形成纸质《情感共振实验报告》作为证据。",
+      "comic_villain_behavior": "维克多的代理人现场大喊‘违背市场！’，却在灯光暗下三秒后被全场观众的齐声合唱淹没，尴尬跌坐。",
+      "villain_loss": "维克多阵营的伪造巴里·布鲁姆诊断书被莉薇娅公开驳回，媒体曝光后失去所有广告赞助，品牌形象崩塌。",
+      "protagonist_gain": "麦珂完成从童星到艺术家的公众认知跃迁，铜质齿轮编号体系成为专辑版税与周边资产的核心控制权。",
+      "relationship_change": "团队内部信任度升至顶点，形成‘视觉‑听觉‑物理’三位一体的铁三角协作模式。",
+      "continuity_writes": [
+        "记录《情感共振实验报告》编号ART_129_RESONANCE_LOG，归档于星火同盟档案库。",
+        "更新铜质齿轮资产登记表，编号G2021-01至G2021-12，标记为不可复制的物理资产。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_003:physical_asset_control",
+          "state_key": "ownership_status",
+          "from": "未授权",
+          "to": "已授权",
+          "irreversible": true,
+          "evidence": "ART_129_RESONANCE_LOG",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_003:fake_medical_report_prohibition",
+          "state_key": "legal_status",
+          "from": "有效",
+          "to": "无效",
+          "irreversible": true,
+          "evidence": "莉薇娅·普莱斯否决文件（ART_130_DENIAL_CERT）",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA1981_07",
+        "HA1982_03"
+      ],
+      "cluster_outcome": "《锈钉与琴键》在《棱镜之夜》现场实现情感共振，观众十万齐声补入原版旋律，媒体称之为‘四十年声部共振’，麦珂获得艺术革命者称号，铜质齿轮体系成为行业新标准。",
+      "next_event_hook": "维克多·兰斯转向隐蔽渗透，策划数据污染攻击；托马斯·布莱克准备以法律手段阻碍《家庭治理宪章》签署。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 129,
+          "timeline_start": "1982-04-10",
+          "timeline_end": "1982-04-10",
+          "scene": "排练厅主舞台",
+          "chapter_goal": "验证灯光暗淡与拾音衰减的情感共振模型，获取现场数据。",
+          "chapter_title": "情感共振的试验",
+          "participants": [
+            "麦珂·杰森",
+            "苏菲亚·罗德里格斯",
+            "技术团队",
+            "部分观众志愿者"
+          ],
+          "opening_conflict": "技术团队对灯光暗淡时长存疑，担心与曲目节奏冲突。",
+          "info_gap_use": "麦珂凭前世记忆指示灯光暗淡恰好在副歌高点后3秒启动。",
+          "opponent_reaction": "唱片分销商现场派代表提出修改建议，要求提前结束暗淡。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "排练厅主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光操作员按下预设计时开关"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_129_RESONANCE_LOG",
+              "timeline_scope": "current",
+              "display_name": "《情感共振实验报告》纸质版",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂指挥乐队进入副歌",
+            "灯光暗淡计时器启动，三秒后灯光完全熄灭",
+            "拾音系统同步降低增益，形成衰减曲线",
+            "观众志愿者记录情绪波动表"
+          ],
+          "visible_payoff": "观众情绪指数在暗淡三秒内提升至峰值，苏菲亚的数据图表显示情感共振成功。",
+          "ending": "团队确认模型可行，准备正式演出。",
+          "must_include": [
+            "灯光暗淡计时装置",
+            "拾音衰减曲线记录",
+            "纸质实验报告"
+          ],
+          "must_not_include": [
+            "电子邮件",
+            "电脑硬盘"
+          ],
+          "detailed_synopsis": "排练厅灯光调度员在麦珂的指示下，将灯光暗淡计时器设为3秒。乐队进入《锈钉与琴键》副歌的高潮段落，麦珂在高音结束后停顿三秒，灯光随即熄灭，现场观众的呼吸声与心跳声被拾音系统捕捉并刻意降低增益，形成独特的衰减曲线。苏菲亚安排的情绪记录员用纸质表格记录观众的情绪波动，结果显示情绪指数在暗淡期间上升30%。技术团队将灯光计时器与拾音衰减装置的同步记录打印成《情感共振实验报告》，并存档于星火同盟档案库。"
+        },
+        {
+          "chapter_id": 130,
+          "timeline_start": "1982-04-12",
+          "timeline_end": "1982-04-12",
+          "scene": "国家体育场主舞台",
+          "chapter_goal": "在正式演出中实现情感共振，公开驳回维克多阵营的假健康报告。",
+          "chapter_title": "声部共振的巅峰对决",
+          "participants": [
+            "麦珂·杰森",
+            "莉薇娅·普莱斯",
+            "维克多·兰斯代表",
+            "全场观众十万",
+            "媒体记者"
+          ],
+          "opening_conflict": "维克多阵营的代理人持假诊断书现场喊停，要求立即撤演。",
+          "info_gap_use": "麦珂利用前世记忆的灯光暗淡与拾音衰减程序，提前在舞台后台完成同步设置。",
+          "opponent_reaction": "维克多的代理人在观众齐声补入原版旋律时被现场音响系统的实时波形显示击退，现场尴尬。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "国家体育场主舞台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光暗淡计时器自动触发"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_130_DENIAL_CERT",
+              "timeline_scope": "current",
+              "display_name": "ART_130_DENIAL_CERT",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_130_DENIAL_CERT",
+              "timeline_scope": "current",
+              "purpose": "莉薇娅·普莱斯的临床否决权正式文件"
+            }
+          ],
+          "action_sequence": [
+            "麦珂完成原曲副歌后停顿三秒，灯光暗淡",
+            "观众自发齐声补入原版旋律，声波在场内形成共振",
+            "莉薇娅现场展示否决文件，宣布假报告无效",
+            "媒体快速记录并刊登《声部共振》专稿"
+          ],
+          "visible_payoff": "全场十万观众齐声补歌，现场声压计显示峰值突破历史纪录，维克多阵营的假报告被官方撤销。",
+          "ending": "演出圆满落幕，麦珂站在舞台中央，铜质齿轮投影在天幕上闪耀，观众起立鼓掌。",
+          "must_include": [
+            "三秒停顿",
+            "灯光暗淡计时装置",
+            "现场否决文件",
+            "纸质声压计记录"
+          ],
+          "must_not_include": [
+            "手机",
+            "电子邮件",
+            "电脑硬盘"
+          ],
+          "detailed_synopsis": "‘棱镜之夜’的灯光总控室已预装麦珂提供的三秒暗淡计时装置，演出进行至《锈钉与琴键》副歌高潮时，麦珂在高音结束后自然停顿三秒，灯光随即熄灭，现场拾音系统同步降低增益，形成与排练相同的衰减曲线。观众在黑暗中本能地哼唱原版旋律，十万人的声音在场内形成巨大的声波共振，声压计纸质记录显示峰值为115分贝，创下当年现场演出纪录。维克多阵营的代理人举起假诊断书大喊‘听力受损，必须停演’，但莉薇娅·普莱斯立刻出示《临床否决权声明》（ART_130_DENIAL_CERT），并以现场医学数据驳回。媒体记者现场记录并在次日的《星火日报》上发表《声部共振——艺术与科学的交锋》专稿，彻底粉碎维克多的抹杀计划。演出结束时，铜质齿轮的投影在天幕上缓缓转动，象征专辑实体资产的不可复制性，麦珂站在舞台中央接受观众的热烈掌声，完成从童星到艺术家的公众认知跃迁。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1982",
+    "character_states": [
+      {
+        "character_id": "MK001",
+        "name": "麦珂·杰森",
+        "status": "健康",
+        "role": "艺术家/资产控制者",
+        "notes": "已获得铜质齿轮体系的资产控制权"
+      },
+      {
+        "character_id": "LV001",
+        "name": "莉薇娅·普莱斯",
+        "status": "健康",
+        "role": "危机协作者",
+        "notes": "持有临床否决权文件"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": [
+          "麦珂·杰森",
+          "莉薇娅·普莱斯"
+        ],
+        "trust_level": "最高",
+        "description": "形成艺术‑医学‑物理三位一体的铁三角"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "right_id": "RIGHT_MK_003:physical_asset_control",
+        "owner": "麦珂·杰森",
+        "status": "已授权"
+      },
+      {
+        "right_id": "RIGHT_VL_003:fake_medical_report_prohibition",
+        "owner": "公共卫生局",
+        "status": "无效"
+      }
+    ],
+    "health_and_location": [
+      {
+        "character_id": "MK001",
+        "health_check": "听力正常，体检合格",
+        "location": "北岬市国家体育场"
+      }
+    ],
+    "open_threads": [
+      "维克多·兰斯对《家庭治理宪章》的伦理渗透企图",
+      "铜质齿轮编号体系在医疗领域的延伸应用"
+    ],
+    "resolved_threads": [
+      "维克多阵营的假健康报告被驳回"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "‘心律校准计划’将在1983年启动，需利用已标准化的铜质齿轮编号体系进行跨行业设备统一。"
+  }
+}

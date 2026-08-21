@@ -1,0 +1,179 @@
+{
+  "macro_group_id": "MG030",
+  "event_clusters": [
+    {
+      "cluster_id": "EC150",
+      "chapter_span": [299, 300],
+      "source_event_direction": "{\"macro_group_id\": \"MG030\", \"timeline_years\": \"1994—1995\", \"macro_goal\": \"利用麦珂预知的1983年‘北境资本’壳公司漏洞，预判奥瑞恩集团会自行提交伪造的财务凭证，在公开听证会上通过技术细节（如日期戳记、墨水成分）彻底粉碎其收购企图，并正式签署《双轨创作信托协议》。\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "物理时间戳铁证：北境资本的世纪谎言",
+      "timeline_years": "1994",
+      "main_opponent": "维克多·斯特林 (Victor Sterling)",
+      "opposition_type": "technical",
+      "event_type": "finance_business",
+      "solution_type": "performance_proof",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["FS04", "EC149"],
+      "foreshadow_ids": ["EC146", "EC147"],
+      "main_characters": ["麦珂", "黛安娜", "苏菲亚", "维克多·斯特林", "法官哈罗德·米勒"],
+      "fictional_obstacle": "奥瑞恩集团提交的1983年原始票据电子扫描件存在无法解释的毫秒级时间戳逻辑悖论，且墨水化学成分与1983年配方不符，但对手试图用“数字化误差”搪塞。",
+      "prev_life_tragedy": "前世奥瑞恩利用当时缺乏高精度物理检测手段的漏洞，将非法资金伪装成合法投资款，掩盖长达五年，导致初声基金被掏空。",
+      "info_gap_from_prev_life": "麦珂记得1983年该批次票据使用的是特定的酸性墨水配方，且当时的机械打字机时间戳精度受限于热敏纸特性，不可能出现现代数字合成的高精度平滑曲线。",
+      "why_previous_life_failed": "前世团队仅依赖电子数据比对，忽略了纸质原件的物理化学特征，导致关键证据链断裂。",
+      "preemptive_avoidance": "麦珂指导技术团队在听证会前一周，对保存完好的1983年原始票据进行三维激光扫描和光谱分析，制作了包含物理纹理和化学成分的详细报告。",
+      "bait_and_evidence": "奥瑞恩为了坐实指控，主动提交了经过“高清修复”的电子票据作为核心证据；麦珂则出示了基于原始纸张的三维扫描数据和墨水成分分析报告。",
+      "comic_villain_behavior": "维克多·斯特林在听证会上自信满满地展示电子屏幕上的完美数据图，嘲笑对手还在研究“发霉的旧纸”，却在看到物理分析报告时因过度紧张而打翻水杯，弄湿了原本准备销毁的备用假账本。",
+      "villain_loss": "奥瑞恩集团高层因欺诈罪被冻结全部资产，面临终身监禁风险，维克多·斯特林被当场逮捕。",
+      "protagonist_gain": "初声基金完全回归合法轨道，麦珂家族资产防御体系升级至十年期安全标准，获得联邦审计委员会的完全信任。",
+      "relationship_change": "麦珂与瑟琳娜因共同策划这场精密的法律陷阱而信任度倍增；黛安娜和苏菲亚凭借对物理证据的精准把控，确立了团队中‘技术实证派’的核心地位。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016:audit_compliance__EC150",
+          "state_key": "financial_integrity_status",
+          "from": "fraud_suspected_temporary",
+          "to": "legally_verified_clean",
+          "irreversible": true,
+          "evidence": "ART_299_SPECTRAL_ANALYSIS_REPORT",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016:corporate_credibility_OR150",
+          "state_key": "criminal_liability_status",
+          "from": "civil_dispute_only",
+          "to": "federal_fraud_charges_frozen",
+          "irreversible": true,
+          "evidence": "COURT_RULING_EC150_CHAPTER_300",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["ART_299_SPECTRAL_ANALYSIS_REPORT", "ART_289_PROJECTED_FLOW_CHART"],
+      "cluster_outcome": "奥瑞恩集团在联邦税务局的威慑下，被迫放弃原有收购条款，转而接受麦珂提出的严格隔离方案。《双轨创作信托协议》正式签署，初声基金获得法律层面的绝对安全，奥瑞恩集团因历史欺诈风险被贴上高风险标签。",
+      "next_event_hook": "常规商业手段失效后，奥瑞恩集团启动‘数据污染’计划，针对麦珂正在研发的‘健康趋势预测模型’真实数据来源进行栽赃，直接触发P07阶段的纪录片背叛事件。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 299,
+          "timeline_start": "1994年10月16日 上午 09:00",
+          "timeline_end": "1994年10月16日 下午 14:30",
+          "scene": "联邦审计听证室 / 技术实验室",
+          "chapter_goal": "完成物理证据的三维扫描与光谱分析，构建不可辩驳的时间戳矛盾证据链。",
+          "chapter_title": "毫秒级的谎言",
+          "participants": ["麦珂", "黛安娜", "苏菲亚", "维克多·斯特林"],
+          "opening_conflict": "奥瑞恩代表斯特林在媒体面前高调宣称已掌握所有“数字化”证据，准备在听证会上一举击垮麦珂，要求法庭采信其提供的电子扫描件。",
+          "info_gap_use": "麦珂利用前世记忆，指出1983年机械打字机的热敏打印特性会导致时间戳边缘有特定的热扩散痕迹，而电子扫描件却呈现出完美的像素化直线，这是不可能的。",
+          "opponent_reaction": "斯特林轻蔑一笑，认为这只是麦珂的无稽之谈，甚至故意挑衅让技术团队现场演示“还原”过程，以此博取旁听席的掌声。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "技术实验室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "黛安娜将一份厚厚的三维扫描报告推到麦珂面前，苏菲亚正在调整光谱仪参数。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_299_SPECTRAL_ANALYSIS_REPORT",
+              "timeline_scope": "current",
+              "display_name": "《1983-1994北境资本票据物理特征三维扫描及光谱分析报告》",
+              "kind": "legal_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_289_PROJECTED_FLOW_CHART",
+              "timeline_scope": "previous_life",
+              "purpose": "对比前世资金流向图，确认当前证据链的完整性。"
+            }
+          ],
+          "action_sequence": [
+            "苏菲亚展示光谱分析结果：奥瑞恩提交的电子数据中的墨水成分含有1983年后才出现的荧光增白剂。",
+            "黛安娜播放三维扫描视频：清晰显示原始票据的时间戳存在微小的热扩散晕圈，而对方提交的电子版却是生硬的几何线条。",
+            "麦珂冷静地指出这种“完美”恰恰是伪造的铁证，因为1983年的设备无法产生如此精确的数字模拟效果。",
+            "斯特林试图打断，声称这是“技术误解”，但被麦珂直接甩出数据对比图，全场哗然。"
+          ],
+          "visible_payoff": "报告明确指出奥瑞恩提交的电子数据与物理原件在时间戳精度上存在毫秒级差异，且墨水成分完全不符，初步动摇舆论风向。",
+          "ending": "斯特林面色铁青，意识到自己掉进了一个精心设计的物理陷阱，但他仍拒绝承认错误，坚持要等到正式听证会再辩解。",
+          "must_include": ["三维扫描视频的播放", "墨水成分分析的结论", "斯特林的傲慢反应"],
+          "must_not_include": ["网络直播", "社交媒体评论", "未来科技词汇"],
+          "detailed_synopsis": "第一章聚焦于证据的生成与初步验证。麦珂并未直接在听证会上出手，而是先带领团队在封闭的技术实验室完成了对1983年原始票据的深度扫描。苏菲亚和黛安娜利用当时最先进的红外光谱技术和激光三维成像，揭示了奥瑞恩提交的“高清扫描件”背后的真相：墨水中含有1984年才合成的化学成分，且时间戳的打印方式违背了1983年热敏纸的物理特性。当斯特林在听证会前的媒体吹风会上炫耀其“完美数据”时，麦珂的团队已经准备好了足以让他哑口无言的三维分析报告。这一章展示了主角如何利用信息差，将对手的“优势”转化为致命的破绽，为第二天的终极对决埋下伏笔。斯特林的轻敌和傲慢，让他亲手递上了这把自裁的刀。"
+        },
+        {
+          "chapter_id": 300,
+          "timeline_start": "1994年10月17日 上午 10:00",
+          "timeline_end": "1994年10月17日 下午 16:00",
+          "scene": "联邦公开听证会大厅",
+          "chapter_goal": "在公开听证会上，利用物理证据彻底粉碎奥瑞恩的指控，推动刑事调查立案。",
+          "chapter_title": "崩塌的基石",
+          "participants": ["麦珂", "维克多·斯特林", "法官哈罗德·米勒", "联邦检察官", "媒体记者"],
+          "opening_conflict": "斯特林在听证会上试图将之前的质疑解释为“技术失误”，并指责麦珂团队使用不正当手段获取证据，试图转移视线。",
+          "info_gap_use": "麦珂当庭播放了第三章生成的三维扫描视频，并邀请专家证人现场演示1983年打字机的运作原理，证明对方的数据在物理上不可能存在。",
+          "opponent_reaction": "斯特林在巨大的压力下精神崩溃，试图抢夺文件并逃跑，最终被法警按倒在地，他随身携带的备用假账本意外掉落，暴露了更多伪造痕迹。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "听证会大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法官米勒敲下法槌，要求斯特林立即停止狡辩，并宣读技术专家的证词。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_299_SPECTRAL_ANALYSIS_REPORT",
+              "timeline_scope": "current",
+              "purpose": "作为核心物证当庭宣读并投影展示。"
+            }
+          ],
+          "action_sequence": [
+            "斯特林试图用“数字化误差”理论混淆视听，声称时间戳差异是扫描设备造成的。",
+            "麦珂传唤首席技术专家，现场展示1983年原始票据的微观结构，证明其物理特征与电子数据存在本质矛盾。",
+            "斯特林情绪失控，试图抢走证据文件，却被苏菲亚提前设下的机关绊倒，摔在地上，手中的备用账本散落一地。",
+            "联邦检察官立即介入，宣布根据新发现的证据，对奥瑞恩集团启动刑事欺诈调查，斯特林被当场逮捕。",
+            "法官米勒当庭裁定奥瑞恩提供的凭证无效，案件移交刑事部门处理。"
+          ],
+          "visible_payoff": "在公开听证会上，法官直接采纳该技术分析，判定奥瑞恩提供的凭证无效并移交刑事部门，斯特林被捕。",
+          "ending": "随着斯特林被带走，奥瑞恩集团的防线彻底崩塌。麦珂站在聚光灯下，看着混乱的现场，心中明白这不仅是胜利，更是家族资产安全的真正起点。",
+          "must_include": ["斯特林的崩溃与被捕", "法官的裁决", "《双轨创作信托协议》的签署意向"],
+          "must_not_include": ["康拉德的出现", "未来的数据泄露细节", "过于现代化的通讯手段"],
+          "detailed_synopsis": "第二章是高潮与清算。听证会现场，斯特林试图用复杂的术语和“技术误会”来掩盖真相，甚至反咬一口指控麦珂伪造证据。然而，麦珂早已准备好了一张王牌——那份包含三维扫描和光谱分析的详细报告。她当庭播放了视频，清晰地展示了1983年票据的物理特征与奥瑞恩提交的电子数据之间的巨大鸿沟。斯特林的心理防线瞬间崩溃，他在众目睽睽之下失态，试图抢夺证据，结果狼狈不堪，连累出更多伪造的账本。联邦检察官顺势介入，宣布启动刑事调查。法官米勒当场做出裁决，认定奥瑞恩提供的凭证无效，并将案件移交刑事部门。斯特林及其同伙被当场逮捕，奥瑞恩集团的资产随即被冻结。麦珂不仅洗清了冤屈，更借此机会推动了《双轨创作信托协议》的签署，确保了家族资产的绝对安全。这一章通过激烈的对峙和戏剧性的反转，彻底终结了奥瑞恩的阴谋，将故事推向了新的阶段。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1994",
+    "character_states": [
+      {"character": "麦珂", "state": "confidence_boosted", "reason": "成功利用前世记忆粉碎奥瑞恩阴谋"},
+      {"character": "维克多·斯特林", "state": "arrested_fraud", "reason": "因提供虚假财务凭证被联邦逮捕"},
+      {"character": "黛安娜", "state": "core_technician", "reason": "主导物理证据分析，确立技术权威"}
+    ],
+    "relationship_states": [
+      {"pair": "麦珂 & 瑟琳娜", "status": "trust_deepened", "reason": "共同策划法律陷阱成功"},
+      {"pair": "星火同盟 & 公众", "status": "credibility_peak", "reason": "公开听证会胜利赢得广泛支持"}
+    ],
+    "rights_and_assets": [
+      {"entity": "初声基金", "status": "fully_legitimate", "change": "控制权回归，防御体系升级"},
+      {"entity": "奥瑞恩集团", "status": "assets_frozen", "change": "面临刑事起诉，信用破产"}
+    ],
+    "health_and_location": [
+      {"entity": "斯特林", "status": "in_custody", "location": "联邦拘留中心"}
+    ],
+    "open_threads": [
+      "‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点",
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）仍需进一步调查"
+    ],
+    "resolved_threads": [
+      "1983年北境资本虚假注册地及票据伪造问题",
+      "奥瑞恩集团对初声基金的恶意收购企图"
+    ],
+    "introduced_characters": [
+      "维克多·斯特林 (Victor Sterling)"
+    ],
+    "next_pressure": "常规商业手段失效后，奥瑞恩集团启动‘数据污染’计划，针对麦珂正在研发的‘健康趋势预测模型’真实数据来源进行栽赃，直接触发P07阶段的纪录片背叛事件。"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "cluster_id": "EC001",
+  "chapter_span": [
+    1,
+    2
+  ],
+  "attempt": 2,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "9d532fe68f38454d76ac1da5870dd778889b8367cd587d2e0f121a7646d22eff",
+  "raw_response_sha256": "4f460e72324840c74a1cc1d3a19d8ad52341bafcd2bde693ac0ce70f1a1bdf1a",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 25.802,
+    "usage": {
+      "input_tokens": 5438,
+      "output_tokens": 1386,
+      "total_tokens": 6824,
+      "prompt_tokens_details": {
+        "cached_tokens": 5376
+      }
+    }
+  },
+  "chapter_audits": {
+    "1": {
+      "han_chars": 504,
+      "total_chars": 614,
+      "target_han_range": [
+        1300,
+        1800
+      ],
+      "must_include_exact_hits": 0,
+      "must_include_total": 4,
+      "failures": [
+        "汉字数504，低于1000"
+      ]
+    },
+    "2": {
+      "han_chars": 822,
+      "total_chars": 1001,
+      "target_han_range": [
+        1300,
+        1800
+      ],
+      "must_include_exact_hits": 0,
+      "must_include_total": 4,
+      "failures": [
+        "汉字数822，低于1000"
+      ]
+    }
+  },
+  "continuity_failures": [],
+  "failures": [
+    "第1章：汉字数504，低于1000",
+    "第2章：汉字数822，低于1000"
+  ],
+  "accepted": false
+}

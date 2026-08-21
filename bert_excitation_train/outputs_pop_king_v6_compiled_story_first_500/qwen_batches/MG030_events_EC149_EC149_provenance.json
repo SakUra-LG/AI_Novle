@@ -1,0 +1,40 @@
+{
+  "generated_by": "vectorengine",
+  "kind": "events_EC149_EC149",
+  "identifier": "MG030",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "7d9a847212f7808fd8d9f6306ab3c58a45f0e1dcf310df3ce1d7045da0447748",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-20T21:54:03+08:00",
+      "prompt_sha256": "7d9a847212f7808fd8d9f6306ab3c58a45f0e1dcf310df3ce1d7045da0447748",
+      "raw_response_sha256": "315830f465147c8bbf33d42a6a091010c79da3ef3200d2c0d6c9653cc16a3c9a",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG030_events_EC149_EC149_attempt_01_7d9a847212_raw.txt",
+      "validation_failures": [
+        "EC149与EC143重复执行不可逆结算：assets_frozen::维克多·斯特林"
+      ],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 30.471,
+      "usage": {}
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-20T21:54:33+08:00",
+      "prompt_sha256": "759b08db6a26502747c70e98e24c7f8a87cc099200b72cfe0fa7d471a80d3723",
+      "raw_response_sha256": "69e99e374065db9a59c40e533706c685467d179ab7b6dff42d9ae05b6342ea22",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG030_events_EC149_EC149_attempt_02_7d9a847212_raw.txt",
+      "validation_failures": [],
+      "provider": "vectorengine",
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 30.011,
+      "usage": {}
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 3,
+  "story_id": "planning-015ffb2b5237cee7",
+  "chapter": 1,
+  "content_hash": "a41f3cfee3e33c235640dad3dc097af3114f6533f2cc2abff24eec8aeb11f978",
+  "narrative_timeline": "previous_life",
+  "summary": "玻璃雨棚边缘垂下的冰棱，一寸寸变钝。；意识沉入黑暗前，舌尖余韵与窗外雪粒撞击玻璃的频响，在混沌中达成诡异同相共振。",
+  "characters": [
+    {
+      "name": "康拉德·莫里森",
+      "aliases": [
+        "康拉德"
+      ],
+      "mention_mode": "active",
+      "evidence": "光尘》副歌末句那个G#的余震。不是忘词，不是跑调。是环杓肌在拒绝振动。他尝到铁锈味，混着薄荷糖残渣的清凉，甜腥交缠。\n\n康拉德蹲下来时，膝盖骨磕在塑料椅沿上，发出闷响。麦珂闻到酒精棉片气味，还有男人袖口蹭过自己脖颈时，皮革与须后水混合的气息。他偏头，视线顺着那人挽起的衬衫袖口往上爬——一块表。不锈钢表壳，蓝漆夜光刻度，秒针停 偏头，视线顺着那人挽起的衬衫袖口往上爬——一块表。不锈钢表壳，蓝漆夜光刻度，秒针停在三点十七分。一动不动。\n\n‘乔纳？’康拉德没抬头，声音压得很低，像怕"
+    },
+    {
+      "name": "麦珂·杰森",
+      "aliases": [
+        "麦珂"
+      ],
+      "mention_mode": "active",
+      "evidence": "玻璃雨棚边缘垂下的冰棱，一寸寸变钝。麦珂盯着那滴悬而未坠的水珠，喉结动了一下——没起来。他喉咙里像塞进一把细沙，每次吸气都刮擦着气管内壁，发出轻微的、湿漉漉的嘶声。\n\n左手攥着半张蓝糖纸。糖纸边缘已经软塌，指尖能清晰辨出融化的速度：先是微潮 ‘暂’字尾音刚落，她顿住。空气凝了一瞬。然后，那声‘缓’才缓缓推出，中间拖着一丝极细、极匀的气音——0.3秒。不多不少。麦珂舌尖猛地抵住上颚，硬生生掐断《光尘》副歌末句那个G#的余震。不是忘词，不是跑调。是环杓肌在拒绝振动。他尝到铁锈味，"
+    }
+  ],
+  "events": [
+    {
+      "event_index": 0,
+      "type": "chapter_event",
+      "summary": "玻璃雨棚边缘垂下的冰棱，一寸寸变钝。；意识沉入黑暗前，舌尖余韵与窗外雪粒撞击玻璃的频响，在混沌中达成诡异同相共振。",
+      "story_time": "",
+      "location": "",
+      "outcome": "意识沉入黑暗前，舌尖余韵与窗外雪粒撞击玻璃的频响，在混沌中达成诡异同相共振。",
+      "participants": [
+        {
+          "name": "康拉德·莫里森",
+          "mode": "active",
+          "role": "正文参与者"
+        },
+        {
+          "name": "麦珂·杰森",
+          "mode": "active",
+          "role": "正文参与者"
+        }
+      ],
+      "caused_by": [],
+      "importance": 0.65,
+      "timeline": "previous_life"
+    }
+  ],
+  "state_changes": [],
+  "relationships": [],
+  "facts": [],
+  "plot_threads": [],
+  "continuity_claims": [],
+  "event_preconditions": [],
+  "extraction_status": "heuristic_complete"
+}

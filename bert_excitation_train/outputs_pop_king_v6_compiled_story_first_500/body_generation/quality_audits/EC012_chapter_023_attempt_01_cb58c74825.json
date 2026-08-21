@@ -1,0 +1,106 @@
+{
+  "cluster_id": "EC012",
+  "chapter_id": 23,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "cb58c748259b6c57bc381109d860f8139e41cf7c81d8585b06a2f780336ce769",
+  "base_prompt_sha256": "cb58c748259b6c57bc381109d860f8139e41cf7c81d8585b06a2f780336ce769",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "dc4d2458a36e9167650b894f6cdfb91b6502f3385ab37bcbfec511560de17a19",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.385,
+    "usage": {
+      "prompt_tokens": 5388,
+      "completion_tokens": 1136,
+      "total_tokens": 6524,
+      "prompt_tokens_details": {
+        "cached_tokens": 3079
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 12,
+    "through_chapter": 24,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "567b4a9ce1859dc1b279fe97b2fcd8b3806ede3cf484e47b33ce6a08c27f9572",
+    "chapter_card_prefix_sha256": "9429976bbd4337923444498acc6b2e1538a08e202e712e76034049f5d96ffe1f",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "2419398f7806298f49f517a96ac4b12f5a53c126992e62593db1b96ff304ceac"
+  },
+  "cluster_sha256": "3a48b17ca7d70346eaee0a3e7319d73f018b0c3d6d9f8c3c2e7cb1832451b6eb",
+  "card_sha256": "828aeb380ce436eb9abd04b67801d1673efeb4c46a9e5b28b24795ab33731be3",
+  "chapter_audit": {
+    "han_chars": 1599,
+    "total_chars": 1839,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "麦珂坚持保留‘三秒真空’",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "昆廷·琼斯被打动",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      },
+      {
+        "anchor": "观众自发屏息接续哼唱",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 1,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0232,
+    "scene_evidence": [
+      {
+        "location": "银湾市地下录音室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_23_DEMO_MASTER",
+        "display_name": "《纸船纪》原始母带（含三秒真空）",
+        "body_hit": true,
+        "match_mode": "recording_artifact_formation"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.023，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“昆廷·琼斯被打动”",
+      "正文没有兑现章卡关键事实“观众自发屏息接续哼唱”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.023，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“昆廷·琼斯被打动”",
+      "正文没有兑现章卡关键事实“观众自发屏息接续哼唱”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

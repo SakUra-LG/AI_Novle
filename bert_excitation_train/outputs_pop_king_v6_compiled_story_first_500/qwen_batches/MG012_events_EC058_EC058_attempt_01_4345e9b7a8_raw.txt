@@ -1,0 +1,208 @@
+{
+  "macro_group_id": "MG012",
+  "event_clusters": [
+    {
+      "cluster_id": "EC058",
+      "chapter_span": [115, 116],
+      "source_event_direction": "EC058",
+      "source_event_direction_sha256": "a7f3c9e1d2b4a5f6c8e9d0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1",
+      "source_macro_sha256": "b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9",
+      "name": "铜齿咬合：人工读数法定化与夏夜协议确权",
+      "timeline_years": "1980",
+      "main_opponent": "维克多·兰斯",
+      "opposition_type": "villain",
+      "event_type": "legal_procedure",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["CS_EC058_01", "CS_EC058_02"],
+      "foreshadow_ids": ["FS_MG012_GEAR_LOGIC"],
+      "main_characters": ["麦珂·杰森", "瑟琳娜·瓦尔", "维克多·兰斯", "工会仲裁员"],
+      "fictional_obstacle": "奥瑞恩集团伪造的标准化维修日志试图覆盖手工记录的法律优先权",
+      "prev_life_tragedy": "前世因行业工会法律漏洞，麦珂被迫签署不平等机械安全责任条款，导致巡演事故后承担全部刑事责任",
+      "info_gap_from_prev_life": "掌握1980年工会关于‘机械安全责任’中‘人工读数登记’优于‘自动化日志’的司法解释窗口期",
+      "why_previous_life_failed": "前世迷信自动化设备背书，未保留物理冗余证据，被资本利用格式合同免责",
+      "preemptive_avoidance": "提前三个月建立铜质齿轮唯一编号体系，并邀请公证处对每日手写读数进行时间戳固化",
+      "bait_and_evidence": "诱导维克多在听证会上主张‘机器不会撒谎’，随即出示带有油污指纹与金属磨损痕迹的铜齿轮实物及对应公证手稿",
+      "comic_villain_behavior": "维克多为证明己方日志完美，当庭演示时因过于紧张念错液压阀型号，且其提供的‘ pristine’日志纸张白得违背常理",
+      "villain_loss": "奥瑞恩集团商业欺诈行为被公开定性，丧失舞台机械安全外包资格，被迫接受《夏夜协议》物理验证条款",
+      "protagonist_gain": "获得《夏夜协议》独家物理验证权，底片与机械图纸成为不可篡改资产；确立‘人工读数’为行业法定标准",
+      "relationship_change": "瑟琳娜·瓦尔正式获得民事伴侣兼技术合伙人法律地位，从幕后走向台前共同持有核心标准",
+      "continuity_writes": ["CW_GEAR_STANDARDIZATION", "CW_SERENA_LEGAL_STATUS"],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_002",
+          "state_key": "physical_verification_authority",
+          "from": "无",
+          "to": "拥有《夏夜协议》项下底片、乐谱及舞台机械的绝对物理验证否决权",
+          "irreversible": true,
+          "evidence": "1980-05-15_仲裁庭裁定书_人工读数法定化",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_MK_SR_001",
+          "state_key": "civil_partner_tech_equity",
+          "from": "技术支持",
+          "to": "民事伴侣兼技术合伙人（联合署名+股权）",
+          "irreversible": true,
+          "evidence": "1980-05-15_夏夜协议附录B_瑟琳娜权益确认书",
+          "effect_type": "relationship_change"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_ORION_SAFETY_BIZ",
+          "state_key": "safety_outsource_qualification",
+          "from": "垄断供应商",
+          "to": "永久禁入联合中心舞台机械维护市场",
+          "irreversible": true,
+          "evidence": "1980-05-16_工会安全委员会黑名单通报",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HA_1980_UNION_ARBITRATION", "HA_ANALOG_EVIDENCE_LAW"],
+      "cluster_outcome": "麦珂通过法律程序将铜齿轮物理证据固化为权利凭证，彻底粉碎奥瑞恩集团利用自动化日志规避责任的企图，确立人工读数的法定优先权，并使瑟琳娜获得平等的法律与经济地位。",
+      "next_event_hook": "铜质齿轮编号体系的逻辑被瑟琳娜记录，直接启发1983年‘心律校准计划’中流动巡诊团的器械编号规则；维克多因技术路线失败，开始研究麦珂的《家庭治理宪章》寻找伦理漏洞。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 115,
+          "timeline_start": "1980-05-15T09:00:00",
+          "timeline_end": "1980-05-15T11:30:00",
+          "scene": "联合中心第三仲裁庭",
+          "chapter_goal": "确立‘人工读数登记’在机械安全责任认定中的法律优先权，迫使奥瑞恩暂停施压",
+          "chapter_title": "第一百一十五章 齿轮上的指纹",
+          "participants": ["麦珂·杰森", "瑟琳娜·瓦尔", "维克多·兰斯", "工会仲裁员", "媒体记者"],
+          "opening_conflict": "维克多·兰斯向仲裁庭提交厚达三百页的自动化维修日志，指控麦珂的手工记录是‘原始且不专业的个人涂鸦’，要求废除其作为验收依据的效力",
+          "info_gap_use": "麦珂引用1978年修订版工会章程第42条附则中关于‘非电子化时代责任追溯’的冷门条款，指出在传感器未经第三方年度校准时，人工双重确认具有最高证据效力",
+          "opponent_reaction": "维克多自信满满地反驳称奥瑞恩的设备已通过出厂校准，并嘲讽麦珂还在用‘石器时代的方法’管理精密机械，引发旁听席窃笑",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "联合中心第三仲裁庭",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法槌敲击声与纸张翻动声交织"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_115_ARBITRATION_PRELIMINARY_RULING",
+              "timeline_scope": "current",
+              "display_name": "1980.5.15仲裁庭初步裁定书（人工读数优先权）",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_109_CIVIL_PARTNERSHIP_CONTRACT",
+              "timeline_scope": "current",
+              "purpose": "作为瑟琳娜以技术合伙人身份出庭作证的法律基础"
+            }
+          ],
+          "action_sequence": [
+            "维克多提交自动化日志并发表贬低手工记录的陈述",
+            "麦珂不急不躁引用冷门法条，申请传唤瑟琳娜作为技术证人",
+            "瑟琳娜当庭展示铜齿轮No.003实物及其对应的公证手写读数簿",
+            "仲裁员比对两者时间戳与物理磨损痕迹，宣布休庭合议后做出初步裁定"
+          ],
+          "visible_payoff": "仲裁员当庭宣读初步裁定：在缺乏连续第三方校准记录的前提下，经公证的人工物理读数具有优于自动化日志的证据效力；奥瑞恩律师团脸色骤变",
+          "ending": "维克多在走廊里气急败坏地撕碎一份文件，而麦珂与瑟琳娜在法庭外接受工会代表握手祝贺，闪光灯定格两人并肩身影",
+          "must_include": ["铜齿轮No.003实物特写", "瑟琳娜以技术合伙人身份发言", "1978年工会章程第42条附则引用"],
+          "must_not_include": ["电子数据比对", "现代法医鉴定术语", "维克多当场认罪"],
+          "detailed_synopsis": "1980年5月15日上午，联合中心第三仲裁庭内气氛凝重。维克多·兰斯代表奥瑞恩集团提交了三百页崭新的自动化维修日志，指控麦珂·杰森坚持的手写读数记录是‘原始且不专业的个人涂鸦’，企图借此废除其作为舞台机械验收依据的法律效力。面对嘲讽，麦珂并未情绪化反驳，而是精准引用1978年修订版工会章程第42条附则中关于‘非电子化时代责任追溯’的冷门条款，指出在传感器未经第三方年度校准时，人工双重确认具有最高证据效力。随后，她申请传唤瑟琳娜·瓦尔以技术合伙人身份出庭。瑟琳娜从容走上证人席，不仅出示了民事伴侣关系公证书确立主体资格，更当庭展示了带有真实油污与金属磨损痕迹的铜齿轮No.003实物，以及与之严丝合缝对应的、经公证处逐日盖章的时间戳手写读数簿。仲裁员在仔细比对物理痕迹与纸面记录后，宣布休庭合议。半小时后，仲裁员当庭宣读初步裁定：在缺乏连续第三方校准记录的前提下，经公证的人工物理读数具有优于自动化日志的证据效力。此裁定一出，奥瑞恩律师团面色惨白，维克多在休庭间隙于走廊气急败坏地撕碎文件。麦珂与瑟琳娜则在法庭外接受了工会代表的握手祝贺，多家媒体闪光灯定格了两人并肩而立的历史性瞬间，标志着‘人工读数’首次在法律层面战胜资本包装的‘自动化神话’。"
+        },
+        {
+          "chapter_id": 116,
+          "timeline_start": "1980-05-15T13:00:00",
+          "timeline_end": "1980-05-15T17:00:00",
+          "scene": "联合中心第三仲裁庭",
+          "chapter_goal": "彻底揭露奥瑞恩伪造日志的行为，锁定《夏夜协议》物理验证条款生效，完成瑟琳娜权益确权",
+          "chapter_title": "第一百一十六章 锈迹即真理",
+          "participants": ["麦珂·杰森", "瑟琳娜·瓦尔", "维克多·兰斯", "工会仲裁员", "独立机械鉴定师"],
+          "opening_conflict": "维克多为挽回颓势，紧急调来所谓‘原厂高级工程师’作证，声称铜齿轮编号系麦珂事后伪造，并拿出一份声称能证明齿轮更换时间的‘出库单’",
+          "info_gap_use": "麦珂预判对方会攻击编号真实性，提前让瑟琳娜在铸造时将编号模具与特定批次黄铜原料绑定，并保留了原料采购发票与铸造厂排产记录作为交叉验证链",
+          "opponent_reaction": "维克多在质证环节因过度紧张，将液压阀型号X-77误念为X-79，且其提供的‘出库单’纸张洁白无折痕，与声称的‘半年前存档’严重不符，引发全场哄笑",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "联合中心第三仲裁庭",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "午后阳光透过高窗照射在证物台上的铜齿轮上"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_116_SUMMER_NIGHT_AGREEMENT_PHYSICAL_CLAUSE",
+              "timeline_scope": "current",
+              "display_name": "1980.5.15《夏夜协议》物理验证条款签署正本",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_115_ARBITRATION_PRELIMINARY_RULING",
+              "timeline_scope": "current",
+              "purpose": "作为本章终局裁决的前置法律依据"
+            }
+          ],
+          "action_sequence": [
+            "维克多传唤伪证专家并出示可疑出库单",
+            "麦珂申请独立机械鉴定师现场检验铜齿轮铸造纹理与原料批次匹配度",
+            "鉴定师确认编号与原料绑定关系成立，同时指出出库单纸张年代不符",
+            "仲裁员当庭宣判奥瑞恩构成商业欺诈，批准《夏夜协议》物理验证条款立即生效"
+          ],
+          "visible_payoff": "仲裁员落槌宣布奥瑞恩永久丧失联合中心舞台机械维护资质；麦珂与瑟琳娜在法官见证下签署《夏夜协议》附录B，瑟琳娜名字与麦珂并列出现在‘技术标准持有人’一栏",
+          "ending": "维克多独自坐在空荡的被告席上盯着那张洁白的假出库单发呆，窗外传来庆祝胜利的欢呼声；镜头拉远聚焦于证物台上那枚泛着温润光泽的铜齿轮No.003",
+          "must_include": ["维克多念错型号的滑稽细节", "独立鉴定师现场检验过程", "瑟琳娜联合署名特写", "铜齿轮No.003最终定格画面"],
+          "must_not_include": ["暴力冲突", "私下和解暗示", "超出现场可验证的技术手段"],
+          "detailed_synopsis": "同日下午，仲裁庭重启。维克多·兰斯为挽回上午颓势，紧急传唤一名自称‘原厂高级工程师’的证人，声称铜齿轮编号系麦珂事后刻造，并出示一份纸张洁白如新的‘出库单’作为反证。然而麦珂早有准备，她依据重生记忆预判了对方攻击路径，提前让瑟琳娜将编号模具与特定批次黄铜原料绑定，并保留了完整的原料采购发票与铸造厂排产记录。当麦珂申请独立机械鉴定师现场检验时，鉴定师不仅确认了齿轮铸造纹理与原料批次的唯一对应关系，更当庭指出那份‘半年前存档’的出库单纸张毫无氧化与折痕，明显为新近打印。更致命的是，维克多在紧张质证中将关键液压阀型号X-77误念为X-79，其荒谬表现引发全场压抑不住的哄笑。仲裁员随即当庭宣判：奥瑞恩集团构成商业欺诈，永久丧失联合中心舞台机械维护资质；同时批准《夏夜协议》物理验证条款立即生效。在法官与媒体见证下，麦珂与瑟琳娜共同签署协议附录B，瑟琳娜的名字首次与麦珂并列出现在‘技术标准持有人’一栏，正式确立其民事伴侣兼技术合伙人的法律地位。庭审结束后，维克多独自瘫坐在空荡被告席上盯着那张假出库单发呆，而证物台上那枚泛着温润光泽的铜齿轮No.003，在午后阳光里静默宣告着一个由物理真实构筑的新秩序已然诞生。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1980",
+    "character_states": [
+      {
+        "character_id": "MK_JASON",
+        "state": "获得《夏夜协议》独家物理验证权，权威从艺术领域延伸至工业安全标准制定"
+      },
+      {
+        "character_id": "SR_VAL",
+        "state": "法律地位跃升为民事伴侣兼技术合伙人，具备独立签署技术标准文件的法定资格"
+      },
+      {
+        "character_id": "VT_LANCE",
+        "state": "公开信誉破产，策略转向隐蔽渗透私人领域，开始研究《家庭治理宪章》漏洞"
+      }
+    ],
+    "relationship_states": [
+      {
+        "relation_id": "MK_SR",
+        "state": "从工作协作升级为受法律保护的利益与情感共同体，具备对抗外部伦理攻击的制度韧性"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "right_id": "RIGHT_MK_002",
+        "update": "新增物理验证否决权，覆盖底片、乐谱、舞台机械三大核心资产"
+      },
+      {
+        "asset_id": "ASSET_GEAR_NO003",
+        "update": "从普通零件升格为行业法定标准参照物，编号逻辑具备跨领域复用潜力"
+      }
+    ],
+    "health_and_location": [],
+    "open_threads": [
+      "维克多·兰斯对《家庭治理宪章》的伦理渗透企图",
+      "铜质齿轮编号体系在医疗巡诊器械中的标准化移植"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团通过自动化日志规避机械安全责任的企图",
+      "瑟琳娜·瓦尔技术贡献的法律确权问题"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "维克多·兰斯正暗中联络保守派宗教团体，试图以‘违背传统家庭伦理’为由对麦珂与瑟琳娜的民事伴侣关系发起行政审查，目标直指《家庭治理宪章》中的监护权与财产共有条款。"
+  }
+}

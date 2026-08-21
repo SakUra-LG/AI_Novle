@@ -1,0 +1,81 @@
+{
+  "cluster_id": "EC002",
+  "chapter_id": 3,
+  "attempt": 3,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "08b63349834430ea484bd6a8a635a6fbe97508a5055c8ba3bce1e9babf5eeeb6",
+  "base_prompt_sha256": "af4dea80506220619ce96ef61382ff3f9b6d81e0880051da23242a5f01a7ab3d",
+  "body_generator_contract_version": "v6_prompt_chain_semantic_critic_20260812",
+  "raw_response_sha256": "5d8c1a5dc1a8daf953329cd19724c3a4e034bf9a73cf5c3f85fe81b7f9b60111",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 25.293,
+    "usage": {
+      "input_tokens": 4087,
+      "output_tokens": 1091,
+      "total_tokens": 5178,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 2,
+    "through_chapter": 4,
+    "outline_sha256": "aaa98e4143115d54ee43409b902500c9aadf34c074241342c2d994bf120c214f",
+    "event_prefix_sha256": "273de566fa986e8c5710f358fe6a21789a1d5195c5c5296c350d7ae9cf27319c",
+    "chapter_card_prefix_sha256": "6a2e14fb1fe9e22a22965353e27b6511d45e2977aca5171e925fee1923939547",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "8ecf698a19eb7b605a804eeec45cfd1eaaf1c388e4f1821124e60889047f9d33"
+  },
+  "cluster_sha256": "aae1798dd01288b302c3cf0b097d9620d4baa220371568011aff45625b83df44",
+  "card_sha256": "756bddc0c5c725445ffb32fdcf9f7c7a2657db67de775dd85d87d2a29ac03fce",
+  "chapter_audit": {
+    "han_chars": 1115,
+    "total_chars": 1330,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "motif_counts": {
+      "指尖": 2,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 1,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0444,
+    "scene_evidence": [
+      {
+        "location": "星穹录音棚B区",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_TAPE_MASTER_B001",
+        "display_name": "《晨光初啼》原始录音母带",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.044，疑似写成了另一件事",
+      "正文没有写出本章正式创建的关键对象“《晨光初啼》原始录音母带”"
+    ]
+  },
+  "failures": [
+    "正文与章卡目标/动作/回报语义覆盖仅0.044，疑似写成了另一件事",
+    "正文没有写出本章正式创建的关键对象“《晨光初啼》原始录音母带”"
+  ],
+  "accepted": false
+}

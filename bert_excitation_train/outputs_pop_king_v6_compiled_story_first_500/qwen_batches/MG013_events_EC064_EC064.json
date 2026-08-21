@@ -1,0 +1,261 @@
+{
+  "macro_group_id": "MG013",
+  "event_clusters": [
+    {
+      "cluster_id": "EC064",
+      "chapter_span": [
+        127,
+        128
+      ],
+      "source_event_direction": "前世具体受害：前世混音争议中频段削波阈值未明确，导致音频质量被主观臆断，引发大量负面评价。；本事件独有的前世信息差：麦珂复述前世混音争议中频段削波阈值的具体参数，促使瑟琳娜开发‘可听化误差标尺’。；今生提前动作：瑟琳娜安装物理刻度盘，将音频质量转化为可视化的量化指标，供所有人实时监测。；第127章可见小赢：广告商质疑音质问题，团队当场展示刻度盘读数证明音频符合最高行业标准。；第128章新交锋：反对者试图用主观感受攻击，麦珂邀请第三方专家现场测试并签字确认误差在允许范围内。；阻力方永久现实损失：依赖主观臆断的攻击策略失效，广告商被迫承认技术标准由麦珂团队定义。；主角现实收益：确立了音频质量的客观标准，使《锈钉与琴键》成为行业公认的听觉革命典范。；不可逆结算键：物理刻度盘与实测数据成为后续所有音乐制作的新参考基准。；接回死亡控制主线：消除了前世因技术模糊地带导致的声誉受损风险，巩固了艺术家的专业权威。",
+      "source_event_direction_sha256": "27374dad34c32d4c44e087b2b5394d7322dee18356a88d161175adc67633b586",
+      "source_macro_sha256": "7e33cad6e3f20c525f8770d2c5ae52635e252e382c02b04eedf6e4e2bdf33a02",
+      "name": "音频质量客观化对决",
+      "timeline_years": "1981-1982",
+      "main_opponent": "联合唱片分销商与维克多阵营支持的广告商",
+      "opposition_type": "ally_resistance",
+      "event_type": "performance",
+      "solution_type": "performance_proof",
+      "death_chain_role": "echo",
+      "causal_spine_ids": [
+        "CS03"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "莉薇娅·普莱斯",
+        "瑟琳娜·科尔",
+        "巴里·布鲁姆医生",
+        "维克多·兰斯"
+      ],
+      "fictional_obstacle": "对手以“主观听感不佳”为由要求重新剪辑专辑，试图通过伪造的听力损伤报告迫使巡演停摆。",
+      "prev_life_tragedy": "混音争议因削波阈值未公开导致声誉受损。",
+      "info_gap_from_prev_life": "麦珂记得前世具体的削波阈值数值（-3.2 dBFS）以及瑟琳娜当年未完成的误差刻度盘设计。",
+      "why_previous_life_failed": "缺乏可视化的技术指标，导致行业依赖主观评判。",
+      "preemptive_avoidance": "瑟琳娜在本生前已完成金属刻度盘的制作，并在录音室内安装，实时显示频段误差。",
+      "bait_and_evidence": "现场演出前，麦珂让技术员把刻度盘读数投射到大屏幕，公开展示-3.2 dBFS削波阈值下的波形。",
+      "comic_villain_behavior": "广告商代表激动地把耳机塞进耳孔，假装“听不见”，却被现场观众嘲笑。",
+      "villain_loss": "广告商被迫签署《技术标准接受声明》，放弃主观攻击权。",
+      "protagonist_gain": "麦珂团队获得行业首个《可听化误差标尺》认证，成为技术标准制定者。",
+      "relationship_change": "团队内部信任度提升至最高，形成‘视觉‑听觉‑物理’三位一体的铁三角协作模式。",
+      "continuity_writes": [],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_002:technical_standard_authority",
+          "state_key": "ownership_status",
+          "from": "未授权",
+          "to": "已授权",
+          "irreversible": true,
+          "evidence": "ART_127_ERR_SCALE_CERTIFICATE",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_002:subjective_attack_prohibition",
+          "state_key": "legal_status",
+          "from": "有效",
+          "to": "无效",
+          "irreversible": true,
+          "evidence": "ART_128_ADVERTISER_AGREEMENT",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HA_1981_GELATIN_FILM_ACCIDENT"
+      ],
+      "cluster_outcome": "《锈钉与琴键》音频质量得到客观量化认可，行业标准化成功，麦珂获得音频技术权威身份。",
+      "next_event_hook": "维克多·兰斯转向隐蔽渗透，策划数据污染攻击；托马斯·布莱克准备以法律手段阻碍《家庭治理宪章》签署。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 127,
+          "timeline_start": "1981-12-12",
+          "timeline_end": "1981-12-12",
+          "scene": "演播厅舞台侧幕后方",
+          "chapter_goal": "现场展示音频客观标准，化解广告商的封面与曲目挑衅。",
+          "chapter_title": "刻度的呼声",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "莉薇娅·普莱斯",
+            "广告商代表",
+            "现场技术员",
+            "观众"
+          ],
+          "opening_conflict": "广告商公开质疑《锈钉与琴键》音质不达标，要求暂停巡演。",
+          "info_gap_use": "麦珂现场朗读前世削波阈值-3.2 dBFS，并指向新装的误差刻度盘。",
+          "opponent_reaction": "广告商代表试图用耳机现场“听不清”来证明主观不适。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "演播厅舞台侧幕后方",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光聚焦至大型投影屏"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_127_ERR_SCALE_CERTIFICATE",
+              "timeline_scope": "current",
+              "display_name": "《可听化误差标尺》行业认证证书",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_110_PARTNERSHIP_CERT",
+              "timeline_scope": "current",
+              "purpose": "证明合作方已同意技术标准"
+            }
+          ],
+          "action_sequence": [
+            "技术员启动投影，将刻度盘读数同步至大屏。",
+            "麦珂阐释削波阈值的技术意义。",
+            "瑟琳娜现场演示不同频段的波形变化。",
+            "观众实时记录读数，现场记者撰稿。",
+            "广告商被迫签署《技术标准接受声明》"
+          ],
+          "visible_payoff": "现场观众热烈鼓掌，媒体报道《锈钉与琴键》音质突破。",
+          "ending": "广告商在合同上签字，现场灯光切换为铜质齿轮投影。",
+          "must_include": [
+            "刻度盘",
+            "投影屏",
+            "现场签约"
+          ],
+          "must_not_include": [
+            "电子邮件",
+            "电脑硬盘"
+          ],
+          "detailed_synopsis": "在首都大型演播厅，灯光暗下，投影屏亮起，巨大的铜质齿轮图案缓缓旋转。广告商代表站在麦珂风前，声称《锈钉与琴键》音质未达市场标准，要求暂缓巡演。麦珂不慌不忙，走到舞台边的控制台，指向新安装的金属误差刻度盘，朗读前世记忆中的削波阈值-3.2 dBFS。投影同步显示刻度盘实时读数，瑟琳娜用示波器放大不同频段的波形，证明所有轨道均在误差范围内。观众席上，技术爱好者记录数值，现场记者立即用手写稿记录。广告商慌乱之际，莉薇娅递上一份《技术标准接受声明》，对方在灯光聚焦的铜齿轮投影下签字，现场气氛瞬间从紧张转为欢呼。"
+        },
+        {
+          "chapter_id": 128,
+          "timeline_start": "1981-12-13",
+          "timeline_end": "1981-12-13",
+          "scene": "演播厅舞台中央",
+          "chapter_goal": "通过第三方专家实测，彻底粉碎主观听感攻击，巩固技术标准的法律效力。",
+          "chapter_title": "审判的音波",
+          "participants": [
+            "麦珂",
+            "莉薇娅·普莱斯",
+            "瑟琳娜",
+            "独立音响专家张博士",
+            "巴里·布鲁姆医生",
+            "维克多阵营代表",
+            "观众"
+          ],
+          "opening_conflict": "维克多阵营派出巴里·布鲁姆医生，提交伪造的“严重听力损伤”诊断书，要求停演。",
+          "info_gap_use": "麦珂提前将巴里·布鲁姆的诊断书复印件交给莉薇娅，准备现场否决。",
+          "opponent_reaction": "巴里·布鲁姆在舞台上声称麦珂的音频会导致永久性听力损伤，现场观众情绪动摇。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "演播厅舞台中央",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "灯光聚焦至诊断书投影"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_128_EXPERT_REPORT",
+              "timeline_scope": "current",
+              "display_name": "ART_128_EXPERT_REPORT",
+              "kind": "evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_128_EXPERT_REPORT",
+              "timeline_scope": "current",
+              "purpose": "第三方专家对音频误差的客观检测报告"
+            }
+          ],
+          "action_sequence": [
+            "莉薇娅递交《临床否决权》授权文件。",
+            "张博士现场使用便携式声压计对音箱进行测量。",
+            "张博士公布测量报告，误差均在-3.2 dBFS以内。",
+            "巴里·布鲁姆的诊断被现场观众当场质疑。",
+            "维克多代表撤回停演要求，现场灯光恢复铜齿轮光辉。"
+          ],
+          "visible_payoff": "第三方权威检测报告被媒体刊登，巴里·布鲁姆的伪造报告被公开撤销。",
+          "ending": "演出顺利进行，观众在高潮部分齐声欢呼，麦珂的形象升至行业标杆。",
+          "must_include": [
+            "第三方专家",
+            "声压计",
+            "现场否决文件"
+          ],
+          "must_not_include": [
+            "电脑硬盘",
+            "电子邮件"
+          ],
+          "detailed_synopsis": "夜幕降临，演播厅灯光再次暗下，维克多阵营的巴里·布鲁姆医生被请上舞台，手持一份纸质诊断书，声称《锈钉与琴键》的高频段会导致永久性听力损伤，要求立即停演。莉薇娅·普莱斯站在麦珂身旁，掏出《临床否决权》授权书，正式声明她拥有依法否决虚假医学报告的权力。随后，独立音响专家张博士带着便携式声压计走到音箱前，现场测量每一首曲目的声压峰值与频谱误差。投影屏上实时显示测量数据，所有读数均在麦珂前世记忆的-3.2 dBFS削波阈值以内。张博士朗读报告要点，宣称没有任何听力风险。观众席上，原本动摇的观众看到权威数据后情绪恢复，巴里·布鲁姆的诊断被现场记者用手写稿记录为“伪造”。维克多阵营代表被迫撤回停演要求，灯光重新投射出旋转的铜齿轮，演出在高潮中达到巅峰。全场观众在终曲的最后一声吉他拨弦中齐声欢呼，麦珂站在舞台中央，成为音频技术革命的象征。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1981",
+    "character_states": [
+      {
+        "character": "麦珂",
+        "status": "获得音频技术标准授权，健康状态经正式体检确认无异常"
+      },
+      {
+        "character": "莉薇娅·普莱斯",
+        "status": "持有临床否决权，已成功驳回伪造报告"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": [
+          "麦珂",
+          "莉薇娅·普莱斯"
+        ],
+        "trust_level": "最高"
+      },
+      {
+        "pair": [
+          "麦珂",
+          "瑟琳娜"
+        ],
+        "trust_level": "最高"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "right": "technical_standard_authority",
+        "owner": "麦珂",
+        "state": "已授权"
+      },
+      {
+        "right": "subjective_attack_prohibition",
+        "owner": "行业协会",
+        "state": "已禁止"
+      }
+    ],
+    "health_and_location": [
+      {
+        "character": "麦珂",
+        "health_check": "1981-10-14 听力正常，血压正常",
+        "location": "首都演播厅"
+      }
+    ],
+    "open_threads": [
+      "维克多·兰斯对《家庭治理宪章》的渗透企图",
+      "铜质齿轮编号体系在医疗领域的延伸应用"
+    ],
+    "resolved_threads": [
+      "广告商主观听感攻击已被技术标准化彻底解决"
+    ],
+    "introduced_characters": [
+      {
+        "name": "张博士",
+        "role": "独立音响专家",
+        "description": "拥有国家级声学检测资质的权威，独立于任何商业阵营"
+      }
+    ],
+    "next_pressure": "‘心律校准计划’将在1983年启动，需利用已标准化的铜质齿轮编号体系进行跨行业设备统一"
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "macro_group_id": "MG026",
+  "event_clusters": [
+    {
+      "cluster_id": "EC128",
+      "chapter_span": [
+        255,
+        256
+      ],
+      "source_event_direction": "前世具体受害：前世‘初声基金’早期票据影印权被奥瑞恩壳公司低价收购，导致麦珂无法追溯捐赠源头。；本事件独有的前世信息差：重生记忆锁定1983年票据流转中存在法律真空期，纸质存证效力优于电子记录。；今生提前动作：麦珂委托苏菲亚·罗德里格斯调取微缩胶片档案，发现奥瑞恩离岸壳公司持有非法影印权。；第255章可见小赢：黛安娜向联邦贸易委员会提交影印权瑕疵报告，暂时冻结奥瑞恩相关账户资金流动。；第256章新交锋：奥瑞恩代表在法庭上辩称拥有‘善意取得’，被麦珂出示1983年原始手写批注击破谎言。；阻力方永久现实损失：奥瑞恩丧失对‘初声基金’历史数据的控制权，被迫公开披露其收购过程的非法性。；主角现实收益：麦珂重新掌握基金早期捐赠票据的完整所有权，确立其在金融战中的主动权。；不可逆结算键：影印权交易被裁定无效，奥瑞恩无法再通过此渠道掩盖财务漏洞。；接回死亡控制主线：揭开1983年票据漏洞，为后续揭露纪录片背叛事件埋下关键索引。",
+      "source_event_direction_sha256": "eae0f8ec6150d57c6b352f3c091d93cb205a3d1513f471e91af8e283a7d9480e",
+      "source_macro_sha256": "6420abd5b91ee1d5fa1af43c85c24eea476277a18a3024c53e99074ee87498b5",
+      "name": "初声基金票据影印权清算战",
+      "timeline_years": "1991—1992",
+      "main_opponent": "维克多·兰斯（幕后）/ 奥瑞恩集团法务部代理律师哈罗德·斯特林",
+      "opposition_type": "institutional",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": [
+        "CS05"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "瑟琳娜",
+        "黛安娜",
+        "苏菲亚·罗德里格斯",
+        "哈罗德·斯特林"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用法律真空期，通过离岸壳公司“新纪元控股”非法收购并持有1983年‘初声基金’早期捐赠票据的影印权，试图以此切断麦珂对基金原始捐赠源头的追溯，并在税务重组中制造资产黑洞。",
+      "prev_life_tragedy": "前世因未察觉1983年票据流转中的法律漏洞，导致‘初声基金’历史数据被奥瑞恩低价截获，麦珂无法在后续金融战中掌握主动权，最终在听证会后被迫接受不利和解。",
+      "info_gap_from_prev_life": "重生记忆锁定1983年票据流转中存在法律真空期，纸质存证效力优于电子记录；知晓当时微缩胶片档案库的特定编号及存放位置。",
+      "why_previous_life_failed": "过于依赖当时的电子数据备份习惯，忽视了纸质介质在当时的绝对法律效力，且未及时调取微缩胶片进行交叉验证。",
+      "preemptive_avoidance": "麦珂在民事伴侣协议签署次日，立即委托苏菲亚·罗德里格斯前往国家档案馆调取1983年微缩胶片档案，抢先发现影印权交易的非法性。",
+      "bait_and_evidence": "奥瑞恩故意在税务申报中提及拥有‘初声基金’完整票据控制权作为诱饵，实则依赖一份伪造的‘善意取得’证明；麦珂出示1983年原始手写批注及微缩胶片原件，证明该交易违反当时《联邦遗产税法》关于实物凭证转让的规定。",
+      "comic_villain_behavior": "奥瑞恩代理律师哈罗德·斯特林在法庭上坚持声称‘只要盖章就是合法’，甚至拿出一个过期的印章样本试图混淆视听，结果被法官当场要求出示印章备案记录而哑口无言，最后气急败坏地摔碎了手中的文件袋。",
+      "villain_loss": "奥瑞恩丧失对‘初声基金’历史数据的控制权，被迫公开披露其收购过程的非法性，相关账户资金流动被冻结，声誉受损。",
+      "protagonist_gain": "麦珂重新掌握基金早期捐赠票据的完整所有权，确立其在金融战中的主动权，为后续揭露纪录片背叛事件奠定关键索引。",
+      "relationship_change": "黛安娜晋升为证据链架构师，瑟琳娜确立独立谈判地位，两人信任度达到顶峰，形成真正的战略同盟。",
+      "continuity_writes": [
+        "第255章：黛安娜提交瑕疵报告，奥瑞恩账户被冻结。",
+        "第256章：法庭对峙，麦珂出示原始批注，奥瑞恩谎言破产。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_015:audio_narrative_control",
+          "state_key": "fund_documentation_status",
+          "from": "compromised_by_offshore_shell",
+          "to": "legally_restored_to_protagonist",
+          "irreversible": true,
+          "evidence": "MAGNUS_1983_MANUSCRIPT_VERIFICATION",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "ASSET_OREON_FINANCE_01",
+          "state_key": "account_freeze_status",
+          "from": "active_operation",
+          "to": "frozen_by_ftc_investigation",
+          "irreversible": false,
+          "evidence": "FTC_FREEZE_ORDER_1991_12_05",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_1983_TAX_LAW_VACUUM",
+        "ARCHIVE_MICROFILM_DB_1983"
+      ],
+      "cluster_outcome": "奥瑞恩集团‘音效污染论’彻底破产，维克多·兰斯转入隐蔽渗透阶段；麦珂与瑟琳娜完成民事伴侣登记及资产物理分散化，家庭防线加固；关键伏笔‘初声基金’早期捐赠票据影印权问题被意外触发，埋下金融战隐患。",
+      "next_event_hook": "民事伴侣身份带来的税务结构重组需求，迫使麦珂启动十年期家族资产梳理，意外发现奥瑞恩集团早在1983年就通过离岸壳公司收购了‘初声基金’早期捐赠票据的影印权——这一财务蛛丝将成为P07揭开纪录片背叛事件的关键索引，直接触发下一块的金融战。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 255,
+          "timeline_start": "1991-11-22",
+          "timeline_end": "1991-11-23",
+          "scene": "国家档案馆微缩胶片室",
+          "chapter_goal": "获取1983年票据流转的原始微缩胶片证据，并向联邦贸易委员会提交影印权瑕疵报告，暂时冻结奥瑞恩相关账户资金流动。",
+          "chapter_title": "胶片里的幽灵",
+          "participants": [
+            "麦珂",
+            "苏菲亚·罗德里格斯",
+            "黛安娜",
+            "档案管理员"
+          ],
+          "opening_conflict": "麦珂急需确认1983年票据是否被非法复制，但档案库系统混乱，管理员以权限不足为由拒绝提供原始胶片查阅。",
+          "info_gap_use": "利用重生记忆，麦珂直接报出1983年10月14日微缩胶片的特定编号及存放架位，迫使管理员打开封闭区域。",
+          "opponent_reaction": "奥瑞恩方面得知消息后，紧急联系律师准备销毁部分电子备份，但纸质微缩胶片已无法被远程抹除。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "国家档案馆微缩胶片室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂手指划过泛黄的胶片边缘，眼神锐利如刀。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_255_MICROFILM_COPY",
+              "timeline_scope": "current",
+              "display_name": "《1983年票据流转微缩胶片原始拷贝》",
+              "kind": "technical_record"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂与苏菲亚进入档案馆，凭借前世记忆精准定位胶片架。",
+            "黛安娜在现场快速扫描并制作高倍放大副本，记录所有细节。",
+            "黛安娜整理报告，指出奥瑞恩持有的影印权缺乏原始授权书，违反1983年法律。",
+            "黛安娜向联邦贸易委员会提交报告，申请临时冻结奥瑞恩相关账户。",
+            "奥瑞恩代理人接到通知，惊慌失措地试图联系离岸公司转移资产。"
+          ],
+          "visible_payoff": "联邦贸易委员会初步受理报告，奥瑞恩相关账户资金流动被暂时冻结。",
+          "ending": "麦珂看着手中泛黄的胶片，心中默念：这一次，你们无处遁形。",
+          "must_include": [
+            "微缩胶片查阅过程",
+            "黛安娜撰写瑕疵报告",
+            "账户冻结通知"
+          ],
+          "must_not_include": [
+            "现代电子设备使用",
+            "康拉德出现",
+            "庭审辩论"
+          ],
+          "detailed_synopsis": "1991年11月15日清晨，麦珂与苏菲亚抵达国家档案馆。面对混乱的目录，麦珂直接指向第14号架位的B区，那里存放着1983年的微缩胶片。管理员惊讶于她的精准，只得开启禁区。在昏暗的灯光下，苏菲亚操作老式阅读器，将1983年10月14日的票据流转记录逐帧放大。黛安娜随后赶到，她迅速核对胶片上的签名与日期，发现奥瑞恩持有的影印权文件上缺少关键的公证人印章，且签署日期晚于实际流转时间，存在明显的法律瑕疵。黛安娜立即起草了一份详尽的《影印权瑕疵报告》，指出奥瑞恩通过离岸壳公司非法获取票据控制权的行为违反了当时的《联邦遗产税法》。报告提交至联邦贸易委员会后，委员会迅速反应，下令暂时冻结奥瑞恩相关账户的资金流动。与此同时，奥瑞恩内部陷入恐慌，哈罗德·斯特林试图联系离岸公司销毁电子备份，但为时已晚。",
+          "memory_only_artifact_refs": [
+            {
+              "artifact_id": "ART_249_PAPER_BATCH_REPORT",
+              "timeline_scope": "previous_life",
+              "purpose": "对比纸张批次异常，佐证1983年票据真实性。"
+            }
+          ]
+        },
+        {
+          "chapter_id": 256,
+          "timeline_start": "1991-11-27",
+          "timeline_end": "1991-11-28",
+          "scene": "联邦法院第12审判庭",
+          "chapter_goal": "在法庭上击破奥瑞恩代表关于‘善意取得’的谎言，确认证据链闭环，使奥瑞恩永久丧失对‘初声基金’历史数据的控制权。",
+          "chapter_title": "手写批注的审判",
+          "participants": [
+            "麦珂",
+            "瑟琳娜",
+            "黛安娜",
+            "哈罗德·斯特林",
+            "法官"
+          ],
+          "opening_conflict": "奥瑞恩代理律师哈罗德·斯特林辩称奥瑞恩是‘善意取得’影印权，拥有合法处置权，试图掩盖非法收购事实。",
+          "info_gap_use": "麦珂利用重生记忆，提前准备好1983年原始票据上的手写批注照片，这是当时唯一能证明真实流转路径的证据。",
+          "opponent_reaction": "哈罗德·斯特林在法庭上情绪失控，试图用‘技术故障’解释为何找不到原始批注，被法官严厉警告。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "联邦法院第12审判庭",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "法槌落下，全场寂静，只有麦珂手中的文件发出轻微的沙沙声。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_256_HANDWRITTEN_NOTE",
+              "timeline_scope": "current",
+              "display_name": "《1983年票据原始手写批注复印件》",
+              "kind": "legal_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_255_MICROFILM_COPY",
+              "timeline_scope": "current",
+              "purpose": "作为法庭呈堂证供，展示原始票据流转路径。"
+            },
+            {
+              "artifact_id": "ART_256_HANDWRITTEN_NOTE",
+              "timeline_scope": "current",
+              "display_name": "《1983年票据原始手写批注复印件》",
+              "kind": "legal_evidence"
+            }
+          ],
+          "action_sequence": [
+            "哈罗德·斯特林在法庭上大声辩解，声称奥瑞恩是‘善意取得’，拥有合法处置权。",
+            "麦珂平静地站起身，向法官展示1983年原始票据上的手写批注复印件。",
+            "黛安娜配合播放微缩胶片录像，清晰显示批注内容与奥瑞恩文件不符。",
+            "法官当庭认定奥瑞恩的‘善意取得’主张无效，因其无法提供原始授权书。",
+            "哈罗德·斯特林气急败坏地摔碎文件袋，试图掩盖真相，但已被记录在案。"
+          ],
+          "visible_payoff": "法院裁定奥瑞恩影印权交易无效，奥瑞恩被迫公开披露其收购过程的非法性。",
+          "ending": "麦珂与瑟琳娜相视一笑，知道这场金融战的序幕已经拉开。",
+          "must_include": [
+            "法庭辩论",
+            "手写批注展示",
+            "法官裁决"
+          ],
+          "must_not_include": [
+            "现代通讯工具",
+            "康拉德出现",
+            "暴力冲突"
+          ],
+          "detailed_synopsis": "1991年11月20日，联邦法院第12审判庭内气氛紧张。奥瑞恩代理律师哈罗德·斯特林振振有词地辩称，奥瑞恩是通过合法渠道‘善意取得’了‘初声基金’的影印权，拥有完全的控制权。他试图用复杂的法律术语混淆视听，声称纸质文件的缺失只是‘技术性疏忽’。麦珂没有急于反驳，而是缓缓站起身，从文件夹中取出一张泛黄的复印件——那是1983年原始票据上的手写批注。黛安娜随即播放了微缩胶片录像，画面清晰地展示了批注的细节，与奥瑞恩提供的文件截然不同。法官仔细审视证据后，当庭指出奥瑞恩无法提供原始授权书，其‘善意取得’的主张完全站不住脚。哈罗德·斯特林脸色铁青，试图以‘技术故障’为由狡辩，却被法官严厉警告并记录在案。最终，法官裁定奥瑞恩的影印权交易无效，奥瑞恩被迫公开披露其收购过程的非法性。麦珂与瑟琳娜相视一笑，知道这场金融战的序幕已经正式拉开。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1991",
+    "character_states": [
+      {
+        "character_id": "MAGO",
+        "state_key": "financial_control_level",
+        "value": "restored_full_ownership",
+        "description": "麦珂重新掌握‘初声基金’早期捐赠票据的完整所有权，确立金融战主动权。"
+      },
+      {
+        "character_id": "SELENA",
+        "state_key": "negotiation_status",
+        "value": "independent_partner",
+        "description": "瑟琳娜确立独立谈判地位，成为真正的战略合伙人。"
+      },
+      {
+        "character_id": "DIANA",
+        "state_key": "professional_role",
+        "value": "evidence_architect",
+        "description": "黛安娜晋升为证据链架构师，专业能力得到全面认可。"
+      }
+    ],
+    "relationship_states": [
+      {
+        "relationship_id": "REL_MAGO_SELENA",
+        "state_key": "trust_level",
+        "value": "strategic_alliance",
+        "description": "麦珂与瑟琳娜信任度达到顶峰，形成真正的战略同盟。"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset_id": "FUND_ORIGINAL_DOCUMENTS",
+        "status": "fully_restored",
+        "description": "‘初声基金’早期捐赠票据所有权完全回归麦珂，奥瑞恩失去控制权。"
+      },
+      {
+        "asset_id": "OREON_ACCOUNTS",
+        "status": "frozen_pending_investigation",
+        "description": "奥瑞恩相关账户被联邦贸易委员会暂时冻结。"
+      }
+    ],
+    "health_and_location": [
+      {
+        "character_id": "MAGO",
+        "location": "联邦法院第12审判庭",
+        "health_status": "stable",
+        "description": "麦珂在法庭上表现冷静，身体状况稳定。"
+      }
+    ],
+    "open_threads": [
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）",
+      "奥瑞恩集团转向更隐蔽的财务做空手段"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团‘音效污染论’证据链断裂",
+      "民事伴侣身份带来的税务结构重组需求初步解决"
+    ],
+    "introduced_characters": [
+      "哈罗德·斯特林（奥瑞恩代理律师）"
+    ],
+    "next_pressure": "民事伴侣身份带来的税务结构重组需求，迫使麦珂启动十年期家族资产梳理，意外发现奥瑞恩集团早在1983年就通过离岸壳公司收购了‘初声基金’早期捐赠票据的影印权——这一财务蛛丝将成为P07揭开纪录片背叛事件的关键索引，直接触发下一块的金融战。"
+  }
+}

@@ -4,26 +4,24 @@
   "evidence_chain": [
     {
       "evidence_id": "E1",
-      "evidence_type": "本簇信息差对应的主动行动",
-      "source": "主角依据上一世信息差在当前时间线主动准备的行动筹码",
+      "evidence_type": "隐藏总表",
+      "source": "提出加场演出请求试探排期",
       "acquire_chapter": 7,
       "verify_chapter": 7,
       "use_chapter": 8,
-      "purpose": "把信息差转化为当前行动，并在本簇内兑现阶段爽点",
+      "purpose": "卡尔失去排期签批权；麦珂取得强制恢复日和最终排期否决权",
       "acquire_keywords": [
-        "预判",
-        "准备",
-        "调整"
+        "隐藏总表",
+        "提前"
       ],
       "verify_keywords": [
+        "隐藏总表",
         "核对",
-        "确认",
-        "试探"
+        "确认"
       ],
       "use_keywords": [
-        "当场行动",
-        "完成",
-        "兑现"
+        "隐藏总表",
+        "当场"
       ]
     }
   ],
@@ -35,14 +33,121 @@
     "无规划的关键证人"
   ],
   "chapter_execution_focus": {
-    "7": "认出旧局并提前行动，在当前职业场景中取得一个明确进展",
-    "8": "对方照旧出招→主角现场反卡→有权者宣布双向职业结果"
+    "7": "提出加场演出请求试探排期→卡尔·霍尔特犹豫不决；卡尔为抢加场功劳亲手交出隐藏总表→麦珂当场否决当日加场；冻结超载排期",
+    "8": "在排练中揭露超负荷排期→卡尔·霍尔特试图掩盖→卡尔失去排期签批权；麦珂取得强制恢复日和最终排期否决权"
+  },
+  "scene_contracts": {
+    "7": {
+      "version": 1,
+      "source": "event_cluster_milestone",
+      "scene_archetype": "action_confrontation",
+      "scene_variant": "",
+      "phase": "setup",
+      "protagonist": "麦珂·杰森",
+      "opponent": "卡尔·霍尔特",
+      "opponent_scene_actor": "卡尔·霍尔特",
+      "supporting_cast": [],
+      "supporting_organizations": [],
+      "old_trap_signal": "记得上一世被压缩的日程",
+      "trigger_action": "提出加场演出请求试探排期",
+      "opponent_self_incrimination": "卡尔·霍尔特犹豫不决；卡尔为抢加场功劳亲手交出隐藏总表",
+      "initial_opponent_reaction": "卡尔·霍尔特犹豫不决",
+      "emergent_opponent_reaction": "卡尔为抢加场功劳亲手交出隐藏总表",
+      "evidence_result": "",
+      "decision_result": "",
+      "established_evidence_carriers": [],
+      "initial_evidence_carriers": [],
+      "action_evidence_carriers": [],
+      "initial_opposition_evidence_carriers": [],
+      "opposition_evidence_carriers": [
+        "隐藏总表"
+      ],
+      "evidence_result_evidence_carriers": [],
+      "decision_result_evidence_carriers": [],
+      "result_evidence_carriers": [],
+      "current_evidence_carriers": [
+        "隐藏总表"
+      ],
+      "allowed_evidence_carriers": [
+        "隐藏总表"
+      ],
+      "verification_action": "提出加场演出请求试探排期",
+      "immediate_result": "麦珂当场否决当日加场；冻结超载排期",
+      "raw_immediate_result": "卡尔为抢加场功劳亲手交出隐藏总表，麦珂当场否决当日加场并冻结超载排期",
+      "authority_actor": "麦珂·杰森",
+      "authority_gain": "",
+      "opponent_loss": "",
+      "protagonist_gain": "",
+      "settlement_required": false,
+      "forbidden_mechanics": [
+        "匿名材料",
+        "万能黑客",
+        "突然出现的关键证人",
+        "未规划的录音或视频",
+        "临时发明的协议编号或条款编号",
+        "未在契约中的设备日志或检测报告",
+        "英文字母代号",
+        "毫秒级或工程参数堆砌"
+      ]
+    },
+    "8": {
+      "version": 1,
+      "source": "event_cluster_milestone",
+      "scene_archetype": "contract_rights_audit",
+      "scene_variant": "",
+      "phase": "settlement",
+      "protagonist": "麦珂·杰森",
+      "opponent": "卡尔·霍尔特",
+      "opponent_scene_actor": "卡尔·霍尔特",
+      "supporting_cast": [],
+      "supporting_organizations": [],
+      "old_trap_signal": "记得上一世被压缩的日程",
+      "trigger_action": "在排练中揭露超负荷排期",
+      "opponent_self_incrimination": "卡尔·霍尔特试图掩盖",
+      "initial_opponent_reaction": "卡尔·霍尔特试图掩盖",
+      "emergent_opponent_reaction": "",
+      "evidence_result": "",
+      "decision_result": "",
+      "established_evidence_carriers": [
+        "隐藏总表"
+      ],
+      "initial_evidence_carriers": [],
+      "action_evidence_carriers": [],
+      "initial_opposition_evidence_carriers": [],
+      "opposition_evidence_carriers": [],
+      "evidence_result_evidence_carriers": [],
+      "decision_result_evidence_carriers": [],
+      "result_evidence_carriers": [],
+      "current_evidence_carriers": [],
+      "allowed_evidence_carriers": [
+        "隐藏总表"
+      ],
+      "verification_action": "在排练中揭露超负荷排期",
+      "immediate_result": "卡尔失去排期签批权；麦珂取得强制恢复日和最终排期否决权",
+      "raw_immediate_result": "卡尔失去排期签批权，麦珂取得强制恢复日和最终排期否决权",
+      "authority_actor": "从开场就在场的合同管理负责人",
+      "authority_gain": "",
+      "opponent_loss": "卡尔失去排期签批权",
+      "protagonist_gain": "麦珂取得强制恢复日和最终排期否决权",
+      "settlement_required": true,
+      "forbidden_mechanics": [
+        "匿名材料",
+        "万能黑客",
+        "突然出现的关键证人",
+        "未规划的录音或视频",
+        "临时发明的协议编号或条款编号",
+        "未在契约中的设备日志或检测报告",
+        "英文字母代号",
+        "毫秒级或工程参数堆砌"
+      ]
+    }
   },
   "payoff_sequence": [
-    "旧局在今生再现，主角认出并提前布子",
-    "对方按老剧本继续出招",
-    "主角在关键点用表演、规则、合同或关系筹码现场反卡",
-    "对手否认/反扑失败",
-    "现场有权者作出决定，现实得失落地"
+    "提出加场演出请求试探排期",
+    "卡尔·霍尔特犹豫不决；卡尔为抢加场功劳亲手交出隐藏总表",
+    "麦珂当场否决当日加场；冻结超载排期",
+    "在排练中揭露超负荷排期",
+    "卡尔·霍尔特试图掩盖",
+    "卡尔失去排期签批权；麦珂取得强制恢复日和最终排期否决权"
   ]
 }

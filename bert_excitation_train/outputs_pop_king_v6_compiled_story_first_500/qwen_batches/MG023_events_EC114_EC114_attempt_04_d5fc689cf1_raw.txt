@@ -1,0 +1,222 @@
+{
+  "macro_group_id": "MG023",
+  "event_clusters": [
+    {
+      "cluster_id": "EC114",
+      "chapter_span": [227, 228],
+      "source_event_direction": "{\"cluster_id\": \"EC114\", \"chapter_span\": [227, 228], \"opposition_type\": \"technical\", \"event_type\": \"performance\", \"solution_type\": \"creative_breakthrough\", \"death_chain_role\": \"echo\", \"previous_life_harm\": \"前世暴雨导致穹顶投影失焦，全场陷入黑暗，引发恐慌和秩序混乱。\", \"unique_prev_life_info\": \"1989年那场暴雨的具体气象数据及七套备用光路切换的机械预案。\", \"preemptive_action\": \"麦珂预先设置七套备用光路机械切换预案，并安排专人监控天气变化。\", \"chapter_one_small_win\": \"当第一滴雨落在穹顶时，备用光路自动切换，画面清晰度未受任何影响。\", \"chapter_two_showdown\": \"巴里试图借机散布‘技术故障是人为破坏’的谣言，但现场技术人员当场演示切换过程。\", \"opponent_permanent_loss\": \"巴里的谣言因技术人员的实时演示而破产，其操纵技术的企图再次失败。\", \"protagonist_concrete_gain\": \"演出在暴雨中完美继续，‘非技术性声学锚定’概念初步形成。\", \"irreversible_outcome_key\": \"七套备用光路切换预案成为未来所有大型演出的标准配置。\", \"death_chain_connection\": \"避免了前世因技术故障引发的踩踏事故，保障了观众生命安全。\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "x9y8z7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "暴雨中的光学奇迹：七重光路切换与谣言粉碎",
+      "timeline_years": "1987—1990",
+      "main_opponent": "巴里·布鲁姆（Barry Bloom）",
+      "opposition_type": "technical",
+      "event_type": "performance",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["ART_217_OPTICAL_CERT", "ART_219_HEALTH_MEMO_CERTIFIED"],
+      "foreshadow_ids": ["ART_214_SCROLL_MAP"],
+      "main_characters": ["麦珂", "莉薇娅", "苏菲亚", "巴里·布鲁姆", "首席机械师哈罗德", "奥瑞恩集团安保主管"],
+      "fictional_obstacle": "1987年夏末，一场罕见的强对流暴雨突袭巡演场地“穹顶剧场”。巴里·布鲁姆利用雷暴导致的能见度下降，暗中指使安保人员切断主供电线路，企图制造“人为断电”假象，以此指控麦珂的系统存在不可控的电子干扰，从而彻底封杀声压可视化系统。",
+      "prev_life_tragedy": "前世1989年，同一场地遭遇暴雨，因缺乏备用方案，穹顶投影瞬间熄灭，全场陷入绝对黑暗，人群因恐慌发生严重踩踏，造成数十人伤亡，麦珂因此背负“鲁莽导致悲剧”的骂名，巡演被迫终止。",
+      "info_gap_from_prev_life": "麦珂重生后掌握1989年那场暴雨的精确气象数据（降雨量、风速峰值时刻）以及当时因单一电源故障导致系统瘫痪的物理原理；他提前预知了巴里将利用停电时机进行栽赃的具体手法。",
+      "why_previous_life_failed": "前世依赖单一电力供应和电子控制逻辑，缺乏物理层面的冗余备份，且对突发恶劣天气下的机械切换机制毫无准备。",
+      "preemptive_avoidance": "麦珂利用重生优势，在暴雨来临前一周，秘密指令首席机械师哈罗德在穹顶内部安装了七套完全独立的机械式备用光路切换装置，这些装置不依赖外部电力，仅靠重力齿轮和预设轨道运行；同时安排专人通过有线电话实时监控气象局发布的雷电预警。",
+      "bait_and_evidence": "巴里故意在停电瞬间冲向控制台，大声喊叫“是电子干扰！”，并试图强行带走主控箱作为“罪证”；然而，现场技术人员在灯光熄灭后的三秒内，通过机械拉索手动触发了备用光路，强光瞬间重现，且画面比之前更清晰。巴里手中的主控箱被证明早已由苏菲亚替换为无电子元件的空壳道具箱（基于EC111的铺垫），而他试图抢夺的行为反而暴露了他对“电子故障”的刻意引导。",
+      "comic_villain_behavior": "巴里在暴雨中穿着不合时宜的高跟鞋试图爬上脚手架去“拔掉插头”，结果滑倒摔进泥坑，手里还紧紧攥着那份伪造的“安全警告书”，一边狼狈地擦拭泥水一边对着麦克风大喊“这是蓄意谋杀！”，滑稽至极。",
+      "villain_loss": "巴里试图嫁祸“人为破坏”的谎言被现场实时的机械切换演示彻底击碎，奥瑞恩集团内部开始质疑其专业判断力，其作为“技术顾问”的信誉首次出现不可逆的崩塌，被迫暂时退出核心决策圈。",
+      "protagonist_gain": "演出在暴雨中完美继续，不仅没有中断，反而因独特的光影效果获得观众狂热追捧；麦珂借此确立了“非技术性声学锚定”概念，即通过纯机械结构确保极端环境下的表演稳定性，该概念随后被写入行业安全规范。",
+      "relationship_change": "莉薇娅对麦珂的信任度从“谨慎观察”提升至“绝对依赖”，正式授权其主导所有巡演的安全架构设计；首席机械师哈罗德成为麦珂的核心技术合伙人，两人建立了深厚的战友关系。",
+      "continuity_writes": [
+        "1987年夏末，穹顶剧场的暴雨事件成为转折点，麦珂的机械冗余设计直接否定了奥瑞恩集团关于“电子设备不可控”的论调。",
+        "巴里·布鲁姆的滑倒摔泥坑事件被现场记者拍摄并刊登在次日报纸头版，标题为《暴雨中的小丑》。",
+        "七套备用光路切换预案被记录在《今日健康备忘录》附录中，成为后续所有大型演出的强制性标准。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "mike_ke",
+          "state_key": "emergency_authority_status",
+          "from": "on_site_autonomy",
+          "to": "absolute_technical_standard",
+          "irreversible": true,
+          "evidence": "ART_227_MECHANICAL_SWITCH_LOG",
+          "effect_type": "protagonist_gain",
+          "source_domain": "internal_management"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "barry_bloom",
+          "state_key": "professional_credibility",
+          "from": "high_control",
+          "to": "public_discredited",
+          "irreversible": true,
+          "evidence": "NEWSPAPER_CLIPPING_BLOOM_FALLS",
+          "effect_type": "villain_loss",
+          "source_domain": "public_perception"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "liweiya_mike_ke",
+          "state_key": "trust_level__extension_EC114",
+          "from": "absolute_authorization",
+          "to": "strategic_partnership",
+          "irreversible": false,
+          "evidence": "STRATEGIC_PARTNERSHIP_LETTER_EC114",
+          "effect_type": "relationship_change",
+          "source_domain": "internal_management"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1987_HEAVY_RAIN_EVENT"],
+      "cluster_outcome": "麦珂成功化解了巴里利用暴雨制造的“技术故障”危机，通过机械冗余设计确保了演出的完美进行。巴里的阴谋彻底破产，其个人信誉受损，被迫退居二线。麦珂确立了“非技术性声学锚定”的行业新标准，七套备用光路切换预案成为未来所有大型演出的标配，有效避免了前世因技术故障引发的踩踏事故。",
+      "next_event_hook": "折叠地图激发1992年‘初声基金’评审制度改革；《误差共担协议》成为1993年莉薇娅出任全球巡演首席医疗官的法理依据。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 227,
+          "timeline_start": "1987年8月20日 19:30",
+          "timeline_end": "1987年8月20日 20:15",
+          "scene": "穹顶剧场内部",
+          "chapter_goal": "在暴雨突袭导致主供电切断的瞬间，启动七套机械备用光路，确保演出零中断。",
+          "chapter_title": "暴雨前的静默与第一滴雨",
+          "participants": ["麦珂", "首席机械师哈罗德", "莉薇娅", "巴里·布鲁姆", "现场观众"],
+          "opening_conflict": "天空乌云密布，雷声滚滚，巴里·布鲁姆在后台指挥室盯着气象图，嘴角挂着阴险的笑，示意手下切断主电缆以制造混乱。",
+          "info_gap_use": "麦珂早已根据重生记忆中的气象数据，预判了暴雨将在19:45分达到顶峰，并提前两小时完成了七套机械装置的调试。",
+          "opponent_reaction": "巴里看着大屏幕上的电压归零，兴奋地挥手示意手下“动手”，以为麦珂的系统将瞬间瘫痪。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "穹顶剧场内部",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "第一滴雨水砸在穹顶玻璃上，发出清脆的响声，紧接着主灯骤然熄灭。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_227_MECHANICAL_SWITCH_LOG",
+              "timeline_scope": "current",
+              "display_name": "七套备用光路机械切换日志",
+              "kind": "critical_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_217_OPTICAL_CERT",
+              "timeline_scope": "current",
+              "purpose": "作为机械校准的基准，证明光学透镜的物理状态完好。"
+            }
+          ],
+          "action_sequence": [
+            "1. 暴雨倾盆，主电切断，全场惊呼。",
+            "2. 巴里大笑，高呼“看吧，这就是电子系统的脆弱性！”",
+            "3. 麦珂冷静下令：“启动第三号机械预案。”",
+            "4. 哈罗德拉动隐蔽处的机械拉索，齿轮咬合声响起。",
+            "5. 七束强光瞬间穿透雨幕，穹顶投影画面如初般清晰，甚至因雨水折射更加绚丽。",
+            "6. 观众从惊恐转为欢呼，掌声雷动。"
+          ],
+          "visible_payoff": "在完全断电的情况下，演出画面毫发无损，证明了机械结构的可靠性。",
+          "ending": "巴里脸上的笑容凝固，他看着重新亮起的舞台，意识到自己的计划彻底落空。",
+          "must_include": ["第一滴雨落下", "机械拉索的声音", "灯光瞬间恢复", "巴里的震惊表情"],
+          "must_not_include": ["手机信号", "网络直播", "云端数据"],
+          "detailed_synopsis": "1987年8月20日晚，穹顶剧场外暴雨如注。巴里·布鲁姆依仗前世记忆中“暴雨必致断电”的规律，指挥手下切断了主电缆，意图让麦珂的声压可视化系统在黑暗中崩溃。然而，麦珂早已洞悉一切，他利用重生预知的具体气象数据和机械原理，提前部署了七套不依赖电力的机械光路切换系统。当第一滴雨水砸穿穹顶，主灯熄灭的瞬间，全场陷入短暂的黑暗与骚乱。巴里正欲得意忘形，却见麦珂淡定地打了个响指。首席机械师哈罗德迅速拉动一根隐蔽的粗麻绳，伴随着清脆的齿轮咬合声，七束强光透过预设的机械轨道，瞬间穿透雨幕，将穹顶映照得如同白昼。画面不仅没有模糊，反而因雨水的折射呈现出前所未有的梦幻质感。观众从惊恐转为狂喜，掌声如潮水般涌来。巴里站在阴影中，脸色铁青，手中的对讲机掉落在地，他的“人为破坏”剧本彻底失效。"
+        },
+        {
+          "chapter_id": 228,
+          "timeline_start": "1987年8月20日 20:15",
+          "timeline_end": "1987年8月20日 21:30",
+          "scene": "穹顶剧场后台及媒体采访区",
+          "chapter_goal": "当众揭穿巴里“技术故障是人为破坏”的谣言，确立机械冗余为行业标准。",
+          "chapter_title": "泥坑中的小丑与永久的标准",
+          "participants": ["麦珂", "巴里·布鲁姆", "苏菲亚", "媒体记者", "莉薇娅", "首席机械师哈罗德"],
+          "opening_conflict": "演出结束后，巴里试图煽动媒体，声称刚才的灯光恢复是“作弊”或“隐藏的备用电源”，并指责麦珂使用了非法的电子干扰设备。",
+          "info_gap_use": "麦珂利用前世记忆知道巴里会在此刻抛出伪造的心理评估报告作为借口，因此提前让苏菲亚准备好了同型号打字机的色带样本。",
+          "opponent_reaction": "巴里不顾形象，试图冲上台辩解，却在湿滑的地板上滑倒，摔进泥坑，手中还挥舞着伪造的文件。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "穹顶剧场后台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "巴里气急败坏地冲向讲台，脚下打滑。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_227_MECHANICAL_SWITCH_LOG",
+              "timeline_scope": "current",
+              "purpose": "展示机械切换的详细时间戳和物理痕迹，证明无电子干预。"
+            },
+            {
+              "artifact_id": "ART_219_HEALTH_MEMO_CERTIFIED",
+              "timeline_scope": "current",
+              "purpose": "作为行业标准的基础文件，宣布将机械冗余纳入其中。"
+            }
+          ],
+          "action_sequence": [
+            "1. 巴里试图发表声明，指控麦珂使用非法手段。",
+            "2. 麦珂邀请哈罗德上台，现场演示机械切换的全过程。",
+            "3. 哈罗德拆解部分装置，展示纯粹的齿轮和轨道结构。",
+            "4. 巴里试图抢夺装置，不慎滑倒摔入泥坑。",
+            "5. 记者们蜂拥而上，拍下巴里狼狈的照片。",
+            "6. 麦珂宣布将“七套备用光路”列为所有大型演出的强制标准。"
+          ],
+          "visible_payoff": "巴里的谣言被现场演示和实物证据彻底粉碎，其形象彻底崩塌；麦珂确立了新的行业标准。",
+          "ending": "巴里在泥坑中被记者围堵，狼狈不堪；麦珂微笑着接受媒体的采访，宣布新的安全标准。",
+          "must_include": ["巴里滑倒", "机械装置拆解", "记者拍照", "麦珂宣布新标准"],
+          "must_not_include": ["互联网搜索", "社交媒体热搜", "电子邮件通知"],
+          "detailed_synopsis": "演出结束后，巴里·布鲁姆不甘心失败，他冲到媒体面前，声嘶力竭地宣称刚才的灯光恢复是“隐藏的备用电源”或“非法电子干扰”，试图将责任推给麦珂的技术缺陷。他挥舞着一份伪造的文件，声称这是“安全违规的铁证”。麦珂没有争辩，只是平静地招手请出首席机械师哈罗德。哈罗德当众拆解了一组备用光路装置，向在场的所有记者和观众展示了其纯粹的机械结构——齿轮、轨道、拉索，没有任何电子元件的痕迹。他详细解释了重力驱动的原理，证明了这一切都是物理学的胜利，而非技术的诡计。就在巴里试图冲上前抢夺装置以“自证清白”时，脚下的积水让他失去平衡，整个人狼狈地摔进了旁边的泥坑，手中的伪造文件沾满了泥浆。记者们一拥而上，闪光灯疯狂闪烁，记录下这位曾经不可一世的“技术专家”在泥坑中挣扎的滑稽模样。麦珂趁机走上台，面对镜头，严肃地宣布：“从今天起，所有大型演出的穹顶系统必须配备七套独立的机械备用光路，这不仅是标准，更是生命的底线。”这一决定得到了莉薇娅的全力支持，并被立即写入《今日健康备忘录》。巴里在泥坑中绝望地呼喊，但他的声音很快被淹没在观众的欢呼声中。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1987",
+    "character_states": [
+      {
+        "entity_id": "mike_ke",
+        "state_key": "technical_reputation",
+        "new_state": "industry_standard_setter"
+      },
+      {
+        "entity_id": "barry_bloom",
+        "state_key": "credibility_status",
+        "new_state": "discredited_fool"
+      },
+      {
+        "entity_id": "harold_west",
+        "state_key": "role_in_tour",
+        "new_state": "chief_technical_partner"
+      }
+    ],
+    "relationship_states": [
+      {
+        "entity_id": "liweiya_mike_ke",
+        "state_key": "trust_level",
+        "new_state": "strategic_partnership"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "entity_id": "mike_ke",
+        "right_key": "mechanical_standard_rights",
+        "status": "established_industry_wide"
+      }
+    ],
+    "health_and_location": [
+      {
+        "entity_id": "audience_safety",
+        "status": "guaranteed_by_mechanical_redundancy"
+      }
+    ],
+    "open_threads": [
+      "1991年《家庭治理宪章》医疗章节细化条款的推进",
+      "奥瑞恩集团转向财务做空手段的可能性"
+    ],
+    "resolved_threads": [
+      "巴里·布鲁姆利用暴雨制造技术故障的企图"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "奥瑞恩集团可能转向更隐蔽的财务做空手段，引发下一轮‘初声基金’评审制度改革的风暴。"
+  }
+}

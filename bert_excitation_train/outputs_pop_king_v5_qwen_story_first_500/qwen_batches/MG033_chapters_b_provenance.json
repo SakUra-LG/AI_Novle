@@ -1,0 +1,54 @@
+{
+  "generated_by": "qwen",
+  "kind": "chapters_b",
+  "identifier": "MG033",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "0d3eb8f62dd9a7288014215d76ce8d9d4f767792cd714b41f33ead1cf1127806",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-11T09:15:10+08:00",
+      "prompt_sha256": "0d3eb8f62dd9a7288014215d76ce8d9d4f767792cd714b41f33ead1cf1127806",
+      "raw_response_sha256": "5d3b589b45738cecf801d9a22b8d5dc12b4f2c956613b780e1d2978b41d14d35",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG033_chapters_b_attempt_01_raw.txt",
+      "validation_failures": [
+        "第326章年代技术错误：当前年代不得出现“手机”",
+        "第326章年代技术错误：当前年代不得出现“短信”"
+      ],
+      "model": "qwen-plus",
+      "transport": "curl_fallback",
+      "elapsed_seconds": 115.033,
+      "usage": {
+        "total_tokens": 24182,
+        "output_tokens": 5882,
+        "input_tokens": 18300,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "sdk_error_class": "ProxyError"
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-11T09:16:40+08:00",
+      "prompt_sha256": "89895ebc1c7178e0c423d292abc8ac4beb9965c32e3bbe04f34d13452d3dd5cb",
+      "raw_response_sha256": "731722b405b9cf668bca12a5774ffc2c609b0845aaa6641e74a292264cb37cbe",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG033_chapters_b_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 90.579,
+      "usage": {
+        "input_tokens": 24276,
+        "output_tokens": 5893,
+        "total_tokens": 30169,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

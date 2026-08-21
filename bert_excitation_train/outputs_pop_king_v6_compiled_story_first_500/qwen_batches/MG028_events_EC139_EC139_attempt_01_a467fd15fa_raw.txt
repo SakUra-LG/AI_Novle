@@ -1,0 +1,205 @@
+{
+  "macro_group_id": "MG028",
+  "event_clusters": [
+    {
+      "cluster_id": "EC139",
+      "chapter_span": [277, 278],
+      "source_event_direction": "{\"macro_group_id\": \"MG028\", \"timeline_years\": \"1993—1994\", \"macro_goal\": \"利用重生记忆预判奥瑞恩集团在税务审计窗口期伪造票据的时机，通过黛安娜构建的物理存证防线与瑟琳娜的协议否决权，将对手的‘影印权’攻势转化为其自身欺诈的确凿证据，彻底粉碎其对初声基金的控制企图。\", \"main_conflict\": \"奥瑞恩集团高管试图在1993年11月的税务审计中，利用‘影印权’漏洞提交经过PS处理的1983年蓝盾离岸收购票据，以重构资金流向并窃取控制权；麦珂则利用前世记忆提前布局，将真实的原始纸质票据封存于物理隔离区，迫使对手在公开场合展示伪造件时当场露馅。\", \"rebirth_advantage\": \"麦珂精准掌握1993年联邦审计官对‘纸张纤维年代’检测的具体时间节点（11月14日）；清楚记得奥瑞恩代表会在11月12日的预演中首次抛出伪造文件；知晓1983年蓝盾壳公司收购案中，真正的原始签字笔迹特征与当时使用的墨水成分，能直接识破对手使用现代复印机技术伪造的伪钞级票据。\", \"ending_state\": \"奥瑞恩集团代表因出示伪造票据被当场指控欺诈，被迫撤回所有指控并承认程序违规；《双轨创作信托协议》正式生效，初声基金财务透明度获业界公认；黛安娜晋升为首席架构师，建立物理介质防御体系；麦珂与瑟琳娜构建了坚不可摧的物理防御网；对手意识到常规手段失效，开始酝酿更隐蔽的‘数据污染’方案。\", \"next_group_hook\": \"奥瑞恩集团转向利用‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点，迫使麦珂进入更深层次的科技与伦理博弈。\"}",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
+      "name": "墨迹断代与纸浆年代：1983年的幽灵",
+      "timeline_years": "1993-1994",
+      "main_opponent": "斯特林·沃克 (Sterling Walker)",
+      "opposition_type": "villain",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["EC138", "EC136"],
+      "foreshadow_ids": ["EC140"],
+      "main_characters": ["麦珂", "斯特林·沃克", "黛安娜·陈", "艾琳·沃特曼", "联邦审计官哈罗德·芬奇"],
+      "fictional_obstacle": "奥瑞恩集团利用'影印权'法律漏洞，试图用1993年的现代复印机伪造1983年蓝盾离岸收购票据，以此重构资金流向并推翻初声基金的合法控制权。",
+      "prev_life_tragedy": "前世斯特林·沃克操控媒体舆论，将麦珂描绘成利用非法手段操纵市场的金融巨鳄，导致公众误解，初声基金在舆论压力下被迫接受不平等条款，最终导致麦珂家族资产流失。",
+      "info_gap_from_prev_life": "麦珂清晰记得斯特林·沃克曾在1993年11月12日的非公开预演中，第一次拿出这张经过PS处理的伪造票据，并自信地认为没人能分辨出墨迹年份的差异。",
+      "why_previous_life_failed": "前世麦珂未能在预演阶段锁定实物证据，且缺乏针对纸张纤维年代学的专业鉴定团队，导致对手利用时间差和媒体误导成功脱罪。",
+      "preemptive_avoidance": "麦珂授权艾琳·沃特曼在11月12日预演前，秘密调取1983年同批次纸张的样本库，并联合黛安娜将真实原件封存于只有两人可开启的物理保险柜中，同时聘请了著名的纸张年代学专家随行待命。",
+      "bait_and_evidence": "诱饵是斯特林·沃克急于在11月14日审计听证会上展示的'新发现'复印件；铁证是现场即时进行的纸张纤维显微镜检测与墨水光谱分析，证明复印件使用的是1993年的铜版纸与现代碳粉，而非1983年的草浆纸与蓝黑墨水。",
+      "comic_villain_behavior": "斯特林·沃克在镜头前为了掩盖谎言，强行解释'复印机技术可以模拟百年前的墨迹渗透'，甚至拿出自己随身携带的现代钢笔试图现场演示'老化'效果，结果因手抖弄脏了文件，显得滑稽可笑且极度不专业。",
+      "villain_loss": "奥瑞恩集团形象崩塌，斯特林·沃克因欺诈行为被联邦审计组列入黑名单，奥瑞恩集团失去对初声基金的控制企图，被迫退出核心决策层，常规手段失效。",
+      "protagonist_gain": "麦珂赢得公众信任，初声基金成为行业财务透明度的标杆案例；黛安娜晋升为首席架构师，建立物理介质防御体系；麦珂与瑟琳娜构建了绝对安全的资产防御网。",
+      "relationship_change": "麦珂与瑟琳娜的信任达到顶峰，建立了基于物理存证的绝对防御同盟；黛安娜从执行者转变为战略核心架构师，获得独立决策权。",
+      "continuity_writes": [
+        "确认斯特林·沃克为今生主要反派，承接前世康拉德的部分反派职能但保持时间线合理。",
+        "确立1993年纸张纤维检测技术的可行性，作为核心反转依据。",
+        "强化黛安娜在物理防御体系中的核心地位。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "asset",
+          "entity_id": "ORG_OREON_GROUP",
+          "state_key": "audit_compliance_status__extension_EC139",
+          "from": "publicly_discredited_and_excluded",
+          "to": "fraudulent_fabrication_confirmed_and_banned",
+          "irreversible": true,
+          "evidence": "ART_277_FIBER_ANALYSIS_REPORT",
+          "effect_type": "villain_loss",
+          "source_state_key": "audit_compliance_status"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_VL_016:trust_protocols",
+          "state_key": "physical_verification_status__extension_EC139",
+          "from": "legally_enforced_physical_priority",
+          "to": "irreversibly_verified_fraud_exposed_via_media",
+          "irreversible": true,
+          "evidence": "ART_278_MEDIA_TRANSCRIPT_FINAL",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "physical_verification_status"
+        },
+        {
+          "domain": "personnel",
+          "entity_id": "EMP_DIANA_CHEN",
+          "state_key": "role_title__extension_EC139",
+          "from": "Head of Physical Security & Trust Protocol",
+          "to": "Chief Architect of Physical Defense System",
+          "irreversible": true,
+          "evidence": "ART_278_PROMOTION_CERTIFICATE_EC139",
+          "effect_type": "protagonist_gain",
+          "source_state_key": "role_title"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1993_NOV_AUDIT", "TECH_PAPER_FIBER_1993"],
+      "cluster_outcome": "斯特林·沃克在直播听证会上因无法解释伪造细节而语无伦次，联邦审计官依据麦珂预设的时间节点宣布原稿有效，奥瑞恩集团的欺诈行为成为铁证。《双轨创作信托协议》正式生效，初声基金构建了坚不可摧的物理防御网，奥瑞恩集团被迫退出核心决策层。",
+      "next_event_hook": "奥瑞恩集团转向利用‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点，迫使麦珂进入更深层次的科技与伦理博弈。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 277,
+          "timeline_start": "1993年11月13日 08:00",
+          "timeline_end": "1993年11月13日 18:00",
+          "scene": "初声基金总部新闻发布厅与艾琳·沃特曼的临时情报室",
+          "chapter_goal": "揭露奥瑞恩集团利用'影印权'漏洞重构资金流向的阴谋，制造舆论压力。",
+          "chapter_title": "第277章：影印权的陷阱",
+          "participants": ["麦珂", "艾琳·沃特曼", "斯特林·沃克", "多家媒体记者"],
+          "opening_conflict": "斯特林·沃克提前泄露消息，声称将在次日听证会上公布'关键证据'，意图再次抹黑麦珂。",
+          "info_gap_use": "麦珂利用前世记忆，知道斯特林会在11月12日预演中抛出伪造文件，因此提前让艾琳整理好时间线证据包。",
+          "opponent_reaction": "斯特林·沃克在媒体面前故作神秘，暗示初声基金有重大财务漏洞，试图引导舆论。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "艾琳·沃特曼的临时情报室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "麦珂看着墙上的日历，手指重重敲在11月14日这一天。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_277_TIMELINE_PACK",
+              "timeline_scope": "current",
+              "display_name": "《1983-1993资金流向异常时间线证据包》",
+              "kind": "intelligence_report"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_270_PROMOTION_CERTIFICATE",
+              "timeline_scope": "current",
+              "purpose": "引用黛安娜的晋升证书，证明物理防御体系的合法性。"
+            }
+          ],
+          "action_sequence": [
+            "艾琳·沃特曼将收集到的斯特林·沃克在11月12日预演中的录音与笔记整理成册。",
+            "麦珂指示艾琳将这些证据包分发给在场的所有主流媒体记者，并安排专人进行备份。",
+            "斯特林·沃克试图阻止分发，但被安保人员拦下。",
+            "麦珂在新闻发布会上公开表示，即将举行的听证会将揭示'影印权'背后的真相。"
+          ],
+          "visible_payoff": "媒体曝光奥瑞恩集团试图利用'影印权'漏洞重构资金流向的阴谋，舆论风向开始逆转。",
+          "ending": "斯特林·沃克在混乱中狼狈离场，承诺明日必见分晓。",
+          "must_include": ["艾琳·沃特曼的情报整理过程", "媒体记者的反应", "斯特林·沃克的狼狈"],
+          "must_not_include": ["网络留言", "云端上传", "社交媒体"],
+          "detailed_synopsis": "1993年11月13日，初声基金总部内气氛紧张。艾琳·沃特曼正在整理一份关键的时间线证据包，这是麦珂根据前世记忆提前准备的。她详细记录了斯特林·沃克在11月12日预演中首次抛出伪造文件的每一个细节，包括他当时的神态和言语。麦珂走进房间，看着堆积如山的资料，眼神坚定。他指示艾琳立即将这些证据分发给在场的所有主流媒体记者，并安排专人进行物理备份。斯特林·沃克试图闯入房间阻止分发，但被安保人员拦下。麦珂随后在新闻发布会上公开表示，即将举行的听证会将揭示'影印权'背后的真相。媒体记者们兴奋不已，纷纷记录着每一个细节。斯特林·沃克在混乱中狼狈离场，承诺明日必见分晓。舆论风向开始逆转，公众对奥瑞恩集团的质疑声浪高涨。"
+        },
+        {
+          "chapter_id": 278,
+          "timeline_start": "1993年11月14日 09:00",
+          "timeline_end": "1993年11月14日 17:00",
+          "scene": "联邦税务审计听证会大厅",
+          "chapter_goal": "在镜头前让奥瑞恩代表因无法解释伪造细节而语无伦次，彻底摧毁其信誉。",
+          "chapter_title": "第278章：墨迹断代的审判",
+          "participants": ["麦珂", "斯特林·沃克", "黛安娜·陈", "联邦审计官哈罗德·芬奇", "纸张年代学专家", "众多媒体"],
+          "opening_conflict": "斯特林·沃克手持伪造的1983年蓝盾离岸收购票据复印件，试图在镜头前展示'新证据'。",
+          "info_gap_use": "麦珂利用前世记忆，知道斯特林会使用现代复印机伪造，因此提前准备了纸张纤维检测方案。",
+          "opponent_reaction": "斯特林·沃克在镜头前强词夺理，试图解释'复印机技术可以模拟百年前的墨迹渗透'，甚至拿出自己的现代钢笔试图现场演示'老化'效果。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "联邦税务审计听证会大厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林·沃克站在讲台中央，手中高举着一张泛黄的纸张。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_278_FIBER_ANALYSIS_REPORT",
+              "timeline_scope": "current",
+              "display_name": "《1983年纸张纤维与墨水成分检测报告》",
+              "kind": "technical_expertise"
+            },
+            {
+              "artifact_id": "ART_278_PROMOTION_CERTIFICATE_EC139",
+              "timeline_scope": "current",
+              "display_name": "《黛安娜·陈晋升首席架构师证书》",
+              "kind": "legal_evidence"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_277_TIMELINE_PACK",
+              "timeline_scope": "current",
+              "purpose": "作为背景证据，佐证斯特林·沃克的预谋。"
+            }
+          ],
+          "action_sequence": [
+            "斯特林·沃克在镜头前展示伪造的票据，声称这是'新发现的原始凭证'。",
+            "黛安娜·陈冷静地指出该票据的纸张纤维结构与现代铜版纸一致，并邀请纸张年代学专家进行现场检测。",
+            "专家使用显微镜和光谱仪对票据进行分析，结果显示其为1993年产物。",
+            "斯特林·沃克试图辩解，甚至拿出自己的现代钢笔试图现场演示'老化'效果，结果因手抖弄脏了文件。",
+            "联邦审计官哈罗德·芬奇宣布原稿有效，斯特林·沃克的欺诈行为成为铁证。"
+          ],
+          "visible_payoff": "奥瑞恩代表在镜头前因无法解释伪造细节而语无伦次，显得滑稽可笑，奥瑞恩集团形象崩塌。",
+          "ending": "斯特林·沃克被要求撤回收据，奥瑞恩集团被迫承认程序违规，初声基金财务透明度获业界公认。",
+          "must_include": ["斯特林·沃克的滑稽表现", "纸张纤维检测过程", "联邦审计官的裁决"],
+          "must_not_include": ["网络留言", "云端上传", "社交媒体"],
+          "detailed_synopsis": "1993年11月14日，联邦税务审计听证会大厅内座无虚席，各大媒体云集。斯特林·沃克站在讲台中央，手中高举着一张泛黄的纸张，声称这是'新发现的原始凭证'。他试图在镜头前展示'新证据'，以此扭转局势。然而，黛安娜·陈冷静地指出该票据的纸张纤维结构与现代铜版纸一致，并邀请纸张年代学专家进行现场检测。专家使用显微镜和光谱仪对票据进行分析，结果显示其为1993年产物，绝非1983年的草浆纸。斯特林·沃克试图辩解，甚至拿出自己的现代钢笔试图现场演示'老化'效果，结果因手抖弄脏了文件，显得滑稽可笑且极度不专业。联邦审计官哈罗德·芬奇见状，立即宣布原稿有效，斯特林·沃克的欺诈行为成为铁证。斯特林·沃克被要求撤回收据，奥瑞恩集团被迫承认程序违规，初声基金财务透明度获业界公认。黛安娜·陈凭借此次表现，正式晋升为首席架构师，建立了物理介质防御体系。麦珂与瑟琳娜构建了绝对安全的资产防御网，行业地位稳固。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1993",
+    "character_states": [
+      {"entity_id": "EMP_STERLING_WALKER", "state": "publicly_discredited_and_banned", "reason": "欺诈行为被当众揭穿"},
+      {"entity_id": "EMP_DIANA_CHEN", "state": "Chief_Architect_of_Physical_Defense_System", "reason": "成功主导物理存证验证"},
+      {"entity_id": "PROTAGONIST_MAIKE", "state": "Public_Trust_Established", "reason": "成功反击媒体抹黑"}
+    ],
+    "relationship_states": [
+      {"pair": ["麦珂", "瑟琳娜"], "status": "Absolute_Alliance_Based_on_Physical_Evidence"},
+      {"pair": ["麦珂", "黛安娜"], "status": "Strategic_Core_Partnership"}
+    ],
+    "rights_and_assets": [
+      {"entity_id": "ORG_INITIAL_SOUND_FUND", "status": "Financial_Transparency_Industry_Benchmark"},
+      {"entity_id": "ORG_OREON_GROUP", "status": "Excluded_From_Core_Decision_Layer"}
+    ],
+    "health_and_location": [],
+    "open_threads": [
+      "奥瑞恩集团转向更隐蔽的‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点。",
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）仍需进一步调查。"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团利用'影印权'漏洞重构资金流向的阴谋已被彻底粉碎。",
+      "斯特林·沃克的欺诈行为已被确认为铁证，奥瑞恩集团形象崩塌。"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "奥瑞恩集团将利用‘数据污染’策略，针对‘健康趋势预测模型’的真实数据来源发起新一轮攻击，迫使麦珂进入更深层次的科技与伦理博弈。"
+  }
+}

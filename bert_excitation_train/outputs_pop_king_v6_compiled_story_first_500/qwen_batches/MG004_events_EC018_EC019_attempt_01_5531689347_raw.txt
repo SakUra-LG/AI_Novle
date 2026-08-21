@@ -1,0 +1,354 @@
+{
+  "macro_group_id": "MG004",
+  "event_clusters": [
+    {
+      "cluster_id": "EC018",
+      "chapter_span": [35, 36],
+      "source_event_direction": "前世具体受害：前世乔纳通过虚假账目转移资金，导致麦珂成年后陷入债务陷阱。；本事件独有的前世信息差：麦珂清楚乔纳意图通过未成年合约规避税务风险。；今生提前动作：黛安娜依据麦珂提供的线索，启动对‘星辰新声’项目的专项审计。；第35章可见小赢：审计发现乔纳挪用公款支付私人债务的证据链完整。；第36章新交锋：乔纳试图销毁账本，被玛莎当场制止并报警处理。；阻力方永久现实损失：乔纳面临税务调查，被迫退出项目并失去家庭财政决策权。；主角现实收益：家庭资金链由黛安娜接管，实现完全财务独立与透明化。；不可逆结算键：EC018_Family_Finance_Transfer_Complete；接回死亡控制主线：前世因财务失控被资本吞噬，今生通过审计夺回经济主权。",
+      "source_event_direction_sha256": "d26ac3fffea52ec98078e591f4252b408d9618d4768ee7c7ca5d75d360a9fbeb",
+      "source_macro_sha256": "ed63a878f7c540092807d703912a0102d7b94b697eaa12acafe64b9d4a6dfd32",
+      "name": "血色账簿：家庭财政权的绝地反击",
+      "timeline_years": "1971",
+      "main_opponent": "乔纳·杰森",
+      "opposition_type": "family",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["CS01"],
+      "foreshadow_ids": [],
+      "main_characters": ["麦珂·杰森", "黛安娜·罗文", "玛莎·杰森", "乔纳·杰森"],
+      "fictional_obstacle": "乔纳利用‘星辰新声’项目预付款，以购买古董黑胶唱机为幌子，实则将大额资金转入其私人名下用于偿还高利贷赌债，企图在麦珂成年前制造巨额债务假象以逼签长期卖身契。",
+      "prev_life_tragedy": "前世麦珂成年后突然背负巨额不明债务，被迫签署终身偿债协议，最终在2009年因资产被冻结而惨死狱中。",
+      "info_gap_from_prev_life": "麦珂记得前世乔纳在1971年3月15日曾向河湾镇当铺老板老李借款，理由是‘急需现金买古董’，但实际并未归还。",
+      "why_previous_life_failed": "上一世乔纳伪造了完整的银行流水和收据，且麦珂当时未成年，无法独立核查账户，只能被动接受父亲的‘为你好’安排。",
+      "preemptive_avoidance": "麦珂重生后，立即告知黛安娜1971年3月15日这个关键日期及老李的店铺位置，引导黛安娜在乔纳动手前调取银行原始凭证与当铺记录进行交叉比对。",
+      "bait_and_evidence": "安全留饵：乔纳故意在家庭会议上展示一份看似完美的‘项目支出明细表’，声称用于购买昂贵设备。今生证据：黛安娜带着老律师温特，直接出示了从银行调取的原始转账记录（显示资金流向私人账户）以及老李的当铺存根（显示同日有同名款项入账），形成铁证。",
+      "comic_villain_behavior": "乔纳在证据面前不仅不承认，反而手舞足蹈地表演起‘我是为了艺术投资’的滑稽戏码，甚至试图把一张皱巴巴的收据塞进嘴里假装吞掉证据，结果被卡住喉咙咳嗽不止。",
+      "villain_loss": "乔纳被剥夺所有家庭财政审批权，面临国税局正式调查函，行业信誉破产，彻底失去代表麦珂签约的资格。",
+      "protagonist_gain": "家庭资金链完全由黛安娜接管，麦珂获得独立监管账户控制权，首笔版税直接进入信托，乔纳无法再挪用一分钱。",
+      "relationship_change": "玛莎彻底倒向黛安娜与麦珂，乔纳被边缘化为家庭决策之外的孤立者，母子同盟升级为三人铁三角。",
+      "continuity_writes": ["家庭财政权已移交黛安娜", "乔纳面临税务调查", "麦珂拥有独立监管账户"],
+      "state_transitions": [
+        {
+          "domain": "job",
+          "entity_id": "CHAR_D1A231D7C399",
+          "state_key": "employment_status__financial_control__extension_EC018",
+          "from": "掌握家庭财政大权",
+          "to": "丧失财政控制权并被调查",
+          "irreversible": true,
+          "evidence": "玛莎当众宣读银行流水与当铺存根的矛盾点，并报警",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_001",
+          "state_key": "copyright_status__financial_independence__extension_EC018",
+          "from": "部分受控",
+          "to": "拥有独立监管账户（完全独立）",
+          "irreversible": true,
+          "evidence": "温特律师现场签署双签监管账户启用文件",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_002",
+          "state_key": "trust_dynamic__family_alliance__extension_EC018",
+          "from": "母子同盟+母亲独立核查+父亲被边缘化",
+          "to": "铁三角稳固，父亲被彻底隔离",
+          "irreversible": false,
+          "evidence": "玛莎在警察到达前紧紧握住麦珂的手，明确拒绝乔纳的辩解",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "乔纳因挪用公款和税务违规被彻底清算，家庭财政大权移交黛安娜，麦珂获得完全的经济独立与安全保障，乔纳沦为家庭中的透明人。",
+      "next_event_hook": "乔纳的失败让维克多·兰斯意识到常规手段失效，决定绕过乔纳，直接利用媒体舆论施压，开启新的围猎。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 35,
+          "timeline_start": "1971-03-15",
+          "timeline_end": "1971-03-15",
+          "scene": "河湾镇家庭客厅与社区中心",
+          "chapter_goal": "黛安娜在乔纳掩盖罪行前，完成对‘星辰新声’项目资金的初步审计与证据锁定。",
+          "chapter_title": "第三十五回：账本里的幽灵",
+          "participants": ["麦珂", "黛安娜", "乔纳"],
+          "opening_conflict": "乔纳正得意洋洋地向家人展示‘星辰新声’的项目预算表，声称要斥巨资购买顶级录音设备，暗示麦珂需配合宣传。",
+          "info_gap_use": "麦珂不动声色地提醒黛安娜：‘我记得前世这个时候，乔纳说要去买古董，其实钱是给了老李。’黛安娜立刻心领神会，没有当场拆穿，而是借口去洗手间，迅速联系温特律师调取当日银行流水。",
+          "opponent_reaction": "乔纳见黛安娜神色不对，试图打断她的电话，谎称信号不好，实则是在掩饰心虚。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇杰森家客厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "开场即对话"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_FIN_AUDIT_002",
+              "timeline_scope": "current",
+              "display_name": "异常转账预警单（初稿）",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_21_BUDGET_PLAN",
+              "timeline_scope": "current",
+              "purpose": "对比乔纳展示的预算表与实际资金流向"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在餐桌上假装喝汤，眼神示意黛安娜注意乔纳的口袋。",
+            "黛安娜借口整理文件，悄悄拨通温特律师电话，报出1971年3月15日这个关键日期。",
+            "温特律师通过地下渠道快速调取银行原始凭证，确认乔纳的转账记录。",
+            "黛安娜回到客厅，将打印好的银行流水单轻轻放在乔纳面前的预算表上。"
+          ],
+          "visible_payoff": "乔纳看到银行流水单上的私人账户收款记录，脸色瞬间煞白，手中的笔掉落在地，预算表上的谎言不攻自破。",
+          "ending": "乔纳惊慌失措地试图抢夺文件，被麦珂一把按住，他怒吼着要报警抓黛安娜，却被门外赶来的玛莎拦下。",
+          "must_include": ["麦珂的提示", "黛安娜的电话行动", "银行流水单的出示"],
+          "must_not_include": ["乔纳被捕", "税务调查函下达", "玛莎彻底决裂"],
+          "detailed_synopsis": "乔纳在客厅炫耀‘星辰新声’的豪华预算，试图用金钱攻势麻痹家人。麦珂利用前世记忆，暗中提示黛安娜关注1971年3月15日的异常交易。黛安娜借故离席，迅速联系律师调取银行原始凭证。当黛安娜拿着打印好的流水单回到桌前，乔纳惊恐地发现资金流向了私人账户而非设备商。面对铁证，乔纳手忙脚乱试图抢走文件，却失态地将笔摔在地上。这一小胜让乔纳的谎言彻底崩塌，为后续的全面清算埋下伏笔。"
+        },
+        {
+          "chapter_id": 36,
+          "timeline_start": "1971-03-16",
+          "timeline_end": "1971-03-16",
+          "scene": "河湾镇家庭客厅与派出所门口",
+          "chapter_goal": "彻底粉碎乔纳销毁证据的企图，确立黛安娜的家庭财政主导权。",
+          "chapter_title": "第三十六回：焚书坑儒的闹剧",
+          "participants": ["麦珂", "黛安娜", "玛莎", "乔纳", "警长"],
+          "opening_conflict": "乔纳趁夜潜入书房，试图烧毁那本记录着真实账目的黑色笔记本，被玛莎当场撞破。",
+          "info_gap_use": "麦珂早就预料到乔纳会狗急跳墙，提前在笔记本夹层中藏入了复写纸，确保即使原件被毁，复印件也能作为呈堂证供。",
+          "opponent_reaction": "乔纳见事败露，竟试图将燃烧的火苗吹向玛莎，大喊‘这是家务事，警察无权干涉’，一副无理取闹的滑稽模样。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "杰森家书房",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "深夜突袭"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_FIN_AUDIT_002",
+              "timeline_scope": "current",
+              "purpose": "作为报警依据提交给警方"
+            },
+            {
+              "artifact_id": "ART_MASTER_OWNERSHIP_001",
+              "timeline_scope": "current",
+              "purpose": "证明麦珂对家庭资产的独立所有权"
+            }
+          ],
+          "action_sequence": [
+            "玛莎推开书房门，看见乔纳正拿着打火机焚烧账本，火苗窜起。",
+            "玛莎冷静地泼水灭火，并拿出早已准备好的复写纸复印件。",
+            "麦珂大声报警，引来警长与社区保安。",
+            "乔纳试图逃跑，被警长按在墙上，他还在叫嚣‘你们不能动我’。"
+          ],
+          "visible_payoff": "乔纳被带走调查，税务调查函正式送达，家庭财政权彻底移交黛安娜，麦珂获得绝对的安全感。",
+          "ending": "乔纳被警车带走时，回头恶狠狠地瞪了一眼麦珂，但眼神中已充满恐惧。玛莎长舒一口气，握住麦珂的手，宣告家庭新时代的来临。",
+          "must_include": ["乔纳烧账本", "玛莎灭火", "警长介入"],
+          "must_not_include": ["乔纳自首", "黛安娜接管账户的具体操作细节", "维克多的直接介入"],
+          "detailed_synopsis": "乔纳深知账本暴露后后果严重，深夜潜入书房试图烧毁证据。玛莎敏锐察觉动静，及时闯入救下即将化为灰烬的账本。麦珂利用前世经验，提前在账本夹层做了手脚，确保即便原件被毁，复印件依然清晰可辨。面对警长的到来，乔纳惊慌失措，试图用‘家务事’搪塞，甚至做出吹灭火苗攻击玛莎的滑稽举动，最终被强行带走。随着乔纳的被捕，家庭财政大权正式移交黛安娜，麦珂的独立地位得到法律与家庭的双重确认。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC019",
+      "chapter_span": [37, 38],
+      "source_event_direction": "前世具体受害：前世媒体被收买抹黑麦珂形象，导致公众对其产生误解。；本事件独有的前世信息差：麦珂知道乔纳会利用媒体制造‘保护未成年人’的舆论假象。；今生提前动作：麦珂主动邀请当地记者全程跟拍录制过程，发布真实幕后花絮。；第37章可见小赢：媒体报道转向支持麦珂的独立精神，乔纳的抹黑计划失效。；第38章新交锋：乔纳试图雇佣水军攻击，被记者现场揭穿并曝光其幕后指使。；阻力方永久现实损失：乔纳在公众视野中彻底失势，被贴上贪婪与控制欲强的标签。；主角现实收益：麦珂赢得社区广泛支持，确立独立艺人的正面公众形象。；不可逆结算键：EC019_Public_Trust_Reversal；接回死亡控制主线：前世因舆论操控而孤立无援，今生通过透明化赢得民心。",
+      "source_event_direction_sha256": "05fdf88613feda3b6cec412ce970925bd7cc7f146ae9cc6bc3ab30166bcd34ad",
+      "source_macro_sha256": "ed63a878f7c540092807d703912a0102d7b94b697eaa12acafe64b9d4a6dfd32",
+      "name": "透明舞台：舆论战中的逆风翻盘",
+      "timeline_years": "1971",
+      "main_opponent": "乔纳·杰森 & 巴里·布鲁姆",
+      "opposition_type": "institutional",
+      "event_type": "media_reputation",
+      "solution_type": "media_counter",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["CS01"],
+      "foreshadow_ids": ["FS01"],
+      "main_characters": ["麦珂", "玛莎", "巴里·布鲁姆", "当地记者"],
+      "fictional_obstacle": "乔纳联合公关掮客巴里，策划了一场名为‘保护未成年人免受过度曝光伤害’的舆论运动，散布麦珂‘沉迷录音室、忽视学业、性格孤僻’的谣言，企图将其塑造成一个需要被‘矫正’的问题儿童。",
+      "prev_life_tragedy": "前世麦珂因这些谣言被学校劝退，粉丝群体分裂，公众形象崩塌，最终导致他在2009年复出时无人问津，被资本彻底抛弃。",
+      "info_gap_from_prev_life": "麦珂记得前世巴里·布鲁姆曾在1971年4月10日给《银湾市日报》主编发过一封匿名信，内容正是关于麦珂的负面报道。",
+      "why_previous_life_failed": "上一世麦珂不懂媒体运作规则，面对铺天盖地的谣言无力反驳，只能被动接受媒体的单方面叙事，导致真相被淹没。",
+      "preemptive_avoidance": "麦珂利用前世记忆，提前在4月10日前主动邀请《银湾市日报》等三家主流媒体，全程跟拍《纸船纪》的录制过程，并公开幕后花絮，用事实粉碎谣言。",
+      "bait_and_evidence": "安全留饵：乔纳故意在媒体面前表现得‘忧心忡忡’，声称要带麦珂去乡下‘静养’。今生证据：记者们拍摄到麦珂在录音室专注工作的画面，以及他与昆廷·琼斯平等讨论创作的场景，同时曝光了乔纳试图切断麦珂与外界联系的监控录像。",
+      "comic_villain_behavior": "巴里·布鲁姆为了制造‘水军’，竟然雇了一群穿着校服的孩子在街头举牌喊口号，结果因为背不出台词，被路人当成是真正的学生在围观嘲笑，场面一度十分尴尬。",
+      "villain_loss": "乔纳的‘保护者’人设彻底崩塌，被公众视为贪婪的控制狂，媒体不再接受他的任何声明，行业信誉归零。",
+      "protagonist_gain": "麦珂赢得社区与媒体的广泛支持，确立了‘独立、真诚、才华横溢’的正面形象，成为社区公益领袖。",
+      "relationship_change": "麦珂与社区关系更加紧密，媒体开始主动寻求合作，乔纳被彻底孤立。",
+      "continuity_writes": ["麦珂赢得社区信任", "乔纳舆论失势", "媒体转向支持麦珂"],
+      "state_transitions": [
+        {
+          "domain": "reputation",
+          "entity_id": "CHAR_026AC753E27A",
+          "state_key": "community_trust_level__extension_EC019",
+          "from": "普通童星",
+          "to": "社区绝对信任的公益领袖",
+          "irreversible": true,
+          "evidence": "社区居民联名签署的支持信与媒体报道",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "CHAR_D1A231D7C399",
+          "state_key": "industry_credibility__extension_EC019",
+          "from": "行业经纪人",
+          "to": "信誉受损（被问责）",
+          "irreversible": true,
+          "evidence": "媒体曝光乔纳操纵舆论的证据",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_COMMUNITY_001",
+          "state_key": "trust_dynamic__extension_EC019",
+          "from": "松散联系",
+          "to": "紧密同盟与深度信任",
+          "irreversible": true,
+          "evidence": "社区代表在发布会现场为麦珂站台",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "乔纳的舆论抹黑计划彻底失败，反而让自己陷入丑闻泥潭；麦珂凭借透明化的创作过程和真诚的公众形象，赢得了社区的广泛支持与媒体的赞誉，确立了独立艺人的市场地位。",
+      "next_event_hook": "乔纳的失败迫使维克多·兰斯放弃通过媒体施压的策略，转而准备亲自下场，直接抛出‘全球发行’的诱饵。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 37,
+          "timeline_start": "1971-04-05",
+          "timeline_end": "1971-04-05",
+          "scene": "河湾镇录音室与社区广场",
+          "chapter_goal": "麦珂通过公开透明的录制过程，打破乔纳制造的‘问题儿童’谣言，争取媒体支持。",
+          "chapter_title": "第三十七回：镜头下的真我",
+          "participants": ["麦珂", "昆廷·琼斯", "当地记者", "玛莎"],
+          "opening_conflict": "乔纳在媒体面前散布麦珂‘性格孤僻、沉迷录音’的谣言，试图引起家长和社会的担忧。",
+          "info_gap_use": "麦珂记得前世巴里会在4月10日发匿名信，于是提前三天主动邀请记者进入录音室，用真实的幕后花絮反击谣言。",
+          "opponent_reaction": "乔纳见记者涌入，试图阻拦，却被玛莎挡在门外，他只能在窗外气急败坏地大喊。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "河湾镇录音室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "开场即采访"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_037_MEDIA_LOG",
+              "timeline_scope": "current",
+              "display_name": "1971.04.05 社区中心谈判现场录音日志",
+              "kind": "recording"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_DEMO_VACUUM_001",
+              "timeline_scope": "current",
+              "purpose": "展示三秒真空段落的创作过程"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在录音室里专注地演唱，昆廷在一旁指导，记者们全程跟拍。",
+            "麦珂主动向记者展示手稿，解释每一处修改背后的思考。",
+            "玛莎在现场接受采访，讲述麦珂的成长故事，强调家庭的尊重与支持。",
+            "记者们将素材剪辑成短片，在社区广场播放，引发热烈反响。"
+          ],
+          "visible_payoff": "媒体报道风向逆转，公众开始同情并支持麦珂，乔纳的谣言不攻自破。",
+          "ending": "乔纳看着广场上欢呼的人群，气得浑身发抖，他知道自己的计划已经彻底失败。",
+          "must_include": ["记者跟拍", "麦珂展示手稿", "社区广场播放"],
+          "must_not_include": ["乔纳被捕", "维克多直接介入", "巴里被揭穿"],
+          "detailed_synopsis": "乔纳在媒体面前散布麦珂‘性格孤僻’的谣言，试图博取社会同情。麦珂利用前世记忆，提前邀请三家主流媒体进入录音室，全程跟拍《纸船纪》的录制过程。在镜头下，麦珂专注创作、与昆廷平等交流的画面被真实记录下来。玛莎也在现场接受采访，讲述了麦珂的成长故事。记者们将素材剪辑成短片，在社区广场播放，引发了热烈的反响。公众开始同情并支持麦珂，乔纳的谣言不攻自破，舆论风向发生根本性逆转。"
+        },
+        {
+          "chapter_id": 38,
+          "timeline_start": "1971-04-10",
+          "timeline_end": "1971-04-10",
+          "scene": "银湾市日报编辑部与街头",
+          "chapter_goal": "彻底揭穿乔纳雇佣水军操纵舆论的阴谋，确立麦珂的公众形象。",
+          "chapter_title": "第三十八回：水军现形记",
+          "participants": ["麦珂", "巴里·布鲁姆", "当地记者", "玛莎"],
+          "opening_conflict": "乔纳雇佣一群孩子举牌喊口号，试图制造‘反对麦珂’的假象，被记者当场识破。",
+          "info_gap_use": "麦珂记得前世巴里会在4月10日发匿名信，于是提前安排记者埋伏，准备当场揭穿。",
+          "opponent_reaction": "巴里·布鲁姆见事情败露，试图逃跑，却被记者拦住，他还在狡辩‘这是艺术行为’。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市街头",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "街头对峙"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_037_MEDIA_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为揭穿水军的证据"
+            }
+          ],
+          "action_sequence": [
+            "巴里雇佣的孩子在街头举牌喊口号，但背不出台词，场面尴尬。",
+            "记者们迅速上前，询问孩子们是否认识巴里，孩子们纷纷点头。",
+            "巴里试图逃跑，被记者拦住，他还在狡辩‘这是艺术行为’。",
+            "麦珂在记者的陪同下，走向人群，发表简短演讲，感谢大家的支持。"
+          ],
+          "visible_payoff": "乔纳的舆论操控计划彻底失败，巴里被曝光，麦珂赢得公众信任。",
+          "ending": "乔纳看着狼狈的巴里和欢呼的人群，彻底绝望，他知道自己在公众眼中已经是一个小丑。",
+          "must_include": ["孩子背不出台词", "记者追问", "麦珂演讲"],
+          "must_not_include": ["乔纳被捕", "维克多直接介入", "麦珂离开银湾市"],
+          "detailed_synopsis": "乔纳雇佣一群孩子举牌喊口号，试图制造‘反对麦珂’的假象。然而，孩子们背不出台词，场面十分尴尬。记者们迅速上前，询问孩子们是否认识巴里，孩子们纷纷点头。巴里试图逃跑，被记者拦住，他还在狡辩‘这是艺术行为’。麦珂在记者的陪同下，走向人群，发表简短演讲，感谢大家的支持。乔纳的舆论操控计划彻底失败，巴里被曝光，麦珂赢得公众信任，彻底确立了独立艺人的正面形象。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1971",
+    "character_states": [
+      "麦珂：确立独立制作人身份，获得行业广泛尊重，精神昂扬",
+      "乔纳：因税务丑闻和舆论操控失败，权威崩塌，面临法律调查",
+      "玛莎：巩固法律防线，成为家庭决策核心执行者",
+      "黛安娜：财务审计成果显著，家庭资金链由她接管",
+      "昆廷：正式加入创作团队，技术主导权锁定"
+    ],
+    "relationship_states": [
+      "麦珂与玛莎、黛安娜形成铁三角，乔纳被彻底隔离",
+      "麦珂与昆廷建立基于作品质量的专业信任",
+      "麦珂与‘星辰新声’项目组保持敌对距离",
+      "麦珂与社区建立深度信任关系"
+    ],
+    "rights_and_assets": [
+      "《纸船纪》版权归属清晰，无债务纠纷，完全归麦珂个人信托",
+      "家庭信托账户资金充裕，足以支撑后续巡演",
+      "《演出健康备忘录》被更多独立厂牌引用",
+      "麦珂获得独立监管账户控制权"
+    ],
+    "health_and_location": [
+      "持续居住于河湾镇，定期前往银湾市进行录音与巡演",
+      "麦珂保持零药物使用，生理指标优于同龄童星"
+    ],
+    "open_threads": [
+      "1969年试镜录像盒底部铜质齿轮（最晚回收块：B025）",
+      "巴里·布鲁姆篡改药剂单电子痕迹（最晚回收块：B015）",
+      "托马斯封存的遗嘱执行附件（最晚回收块：B012）",
+      "维克多·兰斯直接介入的意图（新开启）"
+    ],
+    "resolved_threads": [
+      "乔纳的税务丑闻曝光，其控制权的丧失",
+      "乔纳的舆论操控计划失败，公众形象崩塌"
+    ],
+    "introduced_characters": [
+      "莱昂·周（正式加入星火同盟核心圈）"
+    ],
+    "next_pressure": "维克多·兰斯绕过乔纳直接向麦珂抛出‘全球发行’诱饵，实则意图通过更隐蔽的资本手段全面收购麦珂未来十年收益权，开启‘资本围猎’新阶段。"
+  }
+}

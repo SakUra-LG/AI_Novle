@@ -1,0 +1,257 @@
+{
+  "macro_group_id": "MG044",
+  "event_clusters": [
+    {
+      "cluster_id": "EC220",
+      "chapter_span": [
+        439,
+        440
+      ],
+      "source_event_direction": "前世具体受害：前世曲库最终落入敌手，麦珂在葬礼上被剥夺了对自己作品的定义权。；本事件独有的前世信息差：麦珂收到来自未来的死亡预告（2009年预约单），意识到敌人针对‘猝死’节点的布局已启动。；今生提前动作：麦珂在裁决书送达当日，当着所有见证人的面将曲库正式移交给‘麦珂创作信托’并公证。；第439章可见小赢：法律程序圆满完成，曲库所有权彻底脱离个人风险，奥瑞恩无法再通过司法途径触碰。；第440章新交锋：神秘挂号信送达，麦珂当众拆开并展示2009年3月18日的心脏内科预约单，直面死亡威胁。；阻力方永久现实损失：敌人以为胜券在握的‘猝死’布局被麦珂提前看穿，其心理优势瞬间转化为被动防御。；主角现实收益：麦珂完成了从被动防御到主动布局的转变，正式开启P10阶段对抗‘永恒星光’终局陷阱的序幕。；不可逆结算键：曲库安全落地与死亡预告的接收，标志着麦珂从‘生存’转向‘清算’的战略转折点。；接回死亡控制主线：麦珂意识到敌人并未放弃，反而开始针对2009年的‘猝死’节点进行更精密的布局，决战在即。",
+      "source_event_direction_sha256": "980209353d19d4eb5997581c212b11638cef90c15049f2908cedee0d97268b5d",
+      "source_macro_sha256": "f00c27bb14785705d42f3c163fde2e766632ee355fbf304cbfd396574edab340",
+      "name": "信托交割与死亡预演",
+      "timeline_years": "2005-2006",
+      "main_opponent": "维克多·索恩 (Victor Thorne)",
+      "opposition_type": "internal",
+      "event_type": "contract_rights",
+      "solution_type": "financial_counter",
+      "death_chain_role": "advance",
+      "causal_spine_ids": [
+        "CS12"
+      ],
+      "foreshadow_ids": [],
+      "main_characters": [
+        "麦珂",
+        "黛安娜",
+        "莱昂·周",
+        "维克多·索恩",
+        "苏菲亚",
+        "昆廷"
+      ],
+      "fictional_obstacle": "奥瑞恩集团利用'2003年仪器校准失效'制造麦珂精神失常假象，试图在裁决日通过程序性漏洞冻结曲库并剥夺其定义权。",
+      "prev_life_tragedy": "前世麦珂在法庭上被判定为无行为能力，曲库被强行划归奥瑞恩，最终在葬礼上被剥夺作品定义权，死前未能见到曲库归属真相。",
+      "info_gap_from_prev_life": "麦珂知晓托马斯机构在1999-2003年间关键检测时段仪器校准失效的具体年份与月份，且清楚对方必将在2005年夏发起此轮攻势，提前布局物理介质证据链。",
+      "why_previous_life_failed": "前世依赖数字备份和口头陈述，被巴里·布鲁姆团队利用剪辑片段和虚假医疗报告轻易推翻，缺乏不可篡改的物理介质作为核心证据。",
+      "preemptive_avoidance": "麦珂在裁决书送达当日，当着所有见证人的面将曲库正式移交给‘麦珂创作信托’并公证，利用物理磁带和机械计时戳锁定所有权，使奥瑞恩无法通过司法途径触碰。",
+      "bait_and_evidence": "维克多·索恩抛出‘精神失能’的诱饵，试图让法官暂停程序；麦珂反手甩出《1999-2003年设备校准异常日志》原件、原始未剪辑的机械录音带（带物理齿孔）及莱昂·周的第三方公证文件。",
+      "comic_villain_behavior": "维克多·索恩在法庭上当众展示一份被巴里·布鲁姆剪辑过的音频片段，声称这是麦珂‘胡言乱语’的铁证，结果被苏菲亚当场播放原始带子，声音中清晰的呼吸声和背景电流声彻底打脸，索恩因过度紧张导致钢笔墨水染黑衬衫，狼狈不堪。",
+      "villain_loss": "奥瑞恩集团提交的虚假医疗报告和剪辑音频被法院标记为无效证据，其律师团队信誉在行业内受损，维克多·索恩因伪造证据嫌疑被暂停执业资格调查，心理优势瞬间转化为被动防御。",
+      "protagonist_gain": "麦珂完成了从被动防御到主动布局的转变，曲库安全落入信托，法律层面彻底赢得‘清醒’定义权，正式开启P10阶段对抗‘永恒星光’终局陷阱的序幕。",
+      "relationship_change": "黛安娜对麦珂的预判能力产生新的敬畏，从单纯的法律执行者转变为战略核心；莱昂·周作为独立见证人的地位得到法律确认，成为未来对抗资本的关键支点。",
+      "continuity_writes": [
+        "2005年夏裁决书送达当日，麦珂在法庭外当众拆开神秘挂号信，展示2009年3月18日的心脏内科预约单，直面死亡威胁。",
+        "维克多·索恩因伪造证据被停职调查，奥瑞恩内部开始互相推诿责任。"
+      ],
+      "state_transitions": [
+        {
+          "domain": "rights",
+          "entity_id": "MCKE_MUSIC_CATALOG",
+          "state_key": "ownership_transfer_EC220",
+          "from": "under_orion_judicial_hold",
+          "to": "legally_secured_in_mcke_trust",
+          "irreversible": true,
+          "evidence": "PHYSICAL_TAPE_LOG_AND_NOTARY_CERTIFICATE",
+          "effect_type": "protagonist_gain",
+          "source_domain": "legal_strategy:ORION_LAW_TEAM",
+          "source_entity_id": "MENTAL_CAPACITY_ATTACK",
+          "source_state_key": "failed_manipulation_EC220"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "VICTOR_THORNE_CREDIBILITY",
+          "state_key": "professional_integrity__EC220",
+          "from": "trusted_advisor",
+          "to": "discredited_manipulator",
+          "irreversible": true,
+          "evidence": "VICTOR_THORNE_INK_STAIN_AND_FORCED_WITHDRAWAL",
+          "effect_type": "villain_loss",
+          "source_domain": "legal_strategy:ORION_LAW_TEAM",
+          "source_entity_id": "MCKE_TRUST_DEFENSE",
+          "source_state_key": "defense_preparedness_EC216"
+        }
+      ],
+      "historical_anchor_ids": [
+        "HIST_2005_SUMMER_COURT_RULING"
+      ],
+      "cluster_outcome": "麦珂在法律层面彻底赢得‘清醒’定义权，曲库安全落入信托；同时通过建立独立的物理数据链，成功挫败了奥瑞恩集团利用医疗数据篡改进行的第二次司法攻击。然而，技术反制失败后，敌人决定绕过医疗手段，直接通过神秘挂号信发出2009年的死亡预告，迫使麦珂必须进入P10阶段，提前布局应对‘永恒星光’计划的终极陷阱。",
+      "next_event_hook": "2005年夏裁决书送达当日收到的神秘挂号信（含2009年3月18日心脏内科预约单），迫使麦珂必须进入P10阶段，提前布局应对‘永恒星光’计划的终极陷阱，同时需处理昆廷病休带来的连锁反应。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 439,
+          "timeline_start": "2005-06-17",
+          "timeline_end": "2005-06-17",
+          "scene": "法庭内",
+          "chapter_goal": "完成曲库向‘麦珂创作信托’的法律交割，粉碎奥瑞恩集团的‘精神失能’指控。",
+          "chapter_title": "铁证：沉默的磁带",
+          "participants": [
+            "麦珂",
+            "黛安娜",
+            "维克多·索恩",
+            "巴里·布鲁姆",
+            "苏菲亚",
+            "莱昂·周",
+            "法官"
+          ],
+          "opening_conflict": "维克多·索恩手持剪辑音频片段，声称麦珂在听证期间出现幻觉，请求法官立即中止程序并指定临时监护人。",
+          "info_gap_use": "麦珂提前调取1999-2003年托马斯机构仪器校准失效记录，准备用物理介质反击。",
+          "opponent_reaction": "索恩见势不妙，试图以‘保护患者’为由强行带走麦珂，却被苏菲亚播放的原始录音打断。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法庭内",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "索恩展示剪辑音频，麦珂微笑示意黛安娜播放原带。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_439_TRUST_CERT",
+              "timeline_scope": "current",
+              "display_name": "《麦珂创作信托最终交割证书》",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_425_SILENCE_AUDIO",
+              "timeline_scope": "current",
+              "purpose": "对比剪辑音频，证明原始录音完整性。"
+            },
+            {
+              "artifact_id": "ART_429_MEDICAL_LOG",
+              "timeline_scope": "current",
+              "purpose": "作为核心物证，揭露仪器校准失效事实。"
+            }
+          ],
+          "action_sequence": [
+            "索恩宣读剪辑音频，麦珂神情平静。",
+            "黛安娜出示《1999-2003年设备校准异常日志》原件，指出巴里·布鲁姆剪辑基于错误数据。",
+            "苏菲亚播放原始未剪辑磁带，清晰呼吸声与背景电流声证伪幻觉指控。",
+            "法官驳回索恩申请，宣布曲库即刻转入信托，由学员代管。",
+            "索恩因墨迹污染衬衫，狼狈离场。"
+          ],
+          "visible_payoff": "曲库所有权彻底脱离个人风险，奥瑞恩无法再通过司法途径触碰。",
+          "ending": "法庭内掌声雷动，麦珂签署最后一份文件，将曲库正式移交信托。",
+          "must_include": [
+            "物理磁带证据",
+            "原始录音对比",
+            "索恩狼狈离场"
+          ],
+          "must_not_include": [
+            "远程档案库技术",
+            "未来科技词汇"
+          ],
+          "detailed_synopsis": "2005年7月15日，银湾市南区联邦法院第12号法庭内气氛凝重。维克多·索恩手持一段经过剪辑的音频，声称麦珂在听证期间出现严重幻觉，请求法官立即中止程序并指定临时监护人。麦珂却面带微笑，示意黛安娜播放真正的证据。黛安娜取出《1999-2003年设备校准异常日志》原件，指出巴里·布鲁姆团队利用仪器校准失效期间的错误数据剪辑音频，完全不具备法律效力。随后，苏菲亚播放了原始未剪辑的磁带，清晰可辨的呼吸声和背景电流声彻底证伪了‘幻觉’指控。法官当庭驳回索恩申请，宣布曲库即刻转入‘麦珂创作信托’，由三位学员联合代管。索恩因过度紧张导致钢笔墨水染黑衬衫，狼狈离场。麦珂在众人注视下签署最后一份文件，将曲库正式移交信托，完成了法律层面的彻底胜利。",
+          "source_timeline_start": "2005年7月15日 上午 09:30",
+          "source_timeline_end": "2005年7月15日 下午 14:00"
+        },
+        {
+          "chapter_id": 440,
+          "timeline_start": "2005-06-17",
+          "timeline_end": "2005-06-17",
+          "scene": "法院门外广场",
+          "chapter_goal": "接收神秘挂号信，直面死亡威胁，开启P10阶段对抗。",
+          "chapter_title": "来自2009年的预约单",
+          "participants": [
+            "麦珂",
+            "黛安娜",
+            "苏菲亚",
+            "记者群",
+            "路人"
+          ],
+          "opening_conflict": "法院门口突然收到一封没有寄件人信息的挂号信，内容成谜。",
+          "info_gap_use": "麦珂凭借前世记忆，立刻意识到信件内容与2009年的死亡节点有关。",
+          "opponent_reaction": "记者们试图围堵询问，但麦珂当众拆信展示，震慑全场。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "法院门外广场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "邮差递送挂号信，麦珂当众拆开。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [],
+          "action_sequence": [
+            "邮差递送挂号信，麦珂当众拆开。",
+            "麦珂展示一张2009年3月18日的心脏内科预约单，日期精准。",
+            "记者惊呼，麦珂冷静回应，暗示敌人已启动‘猝死’布局。",
+            "麦珂宣布进入P10阶段，准备应对‘永恒星光’计划。"
+          ],
+          "visible_payoff": "麦珂完成了从被动防御到主动布局的转变，正式开启P10阶段对抗‘永恒星光’终局陷阱的序幕。",
+          "ending": "麦珂收起预约单，眼神坚定，转身走向人群，身后是震惊的记者团。",
+          "must_include": [
+            "2009年3月18日预约单",
+            "当众展示",
+            "P10阶段宣告"
+          ],
+          "must_not_include": [
+            "康拉德出场",
+            "资产冻结",
+            "收购破产"
+          ],
+          "detailed_synopsis": "2005年7月15日下午，法院门外广场聚集了大量媒体。邮差递来一封没有寄件人信息的挂号信，麦珂当众拆开，取出一张泛黄的纸张——2009年3月18日的心脏内科预约单，日期精准得令人发指。记者们惊呼，麦珂却冷静地展示给所有人看，淡淡说道：“敌人以为胜券在握，却不知我早已看穿。”他随即宣布，自己将正式进入P10阶段，准备应对‘永恒星光’计划的终极陷阱。这一刻，麦珂完成了从被动防御到主动布局的转变，标志着他从‘生存’转向‘清算’的战略转折点。身后是震惊的记者团，前方是未知的挑战，麦珂眼神坚定，转身走向人群。",
+          "source_timeline_start": "2005年7月15日 下午 14:30",
+          "source_timeline_end": "2005年7月15日 下午 15:15"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "2005",
+    "character_states": [
+      {
+        "character": "麦珂",
+        "state": "从被动防御转向主动清算，掌握死亡预告信息"
+      },
+      {
+        "character": "黛安娜",
+        "state": "晋升为战略核心，对麦珂预判能力产生敬畏"
+      },
+      {
+        "character": "维克多·索恩",
+        "state": "因伪造证据被停职调查，信誉崩塌"
+      }
+    ],
+    "relationship_states": [
+      {
+        "pair": "麦珂 & 黛安娜",
+        "change": "从雇佣关系升级为战略盟友"
+      },
+      {
+        "pair": "麦珂 & 莱昂·周",
+        "change": "莱昂·周成为独立见证人，地位巩固"
+      }
+    ],
+    "rights_and_assets": [
+      {
+        "asset": "曲库",
+        "status": "已安全转入‘麦珂创作信托’，脱离个人风险"
+      }
+    ],
+    "health_and_location": [
+      {
+        "subject": "麦珂",
+        "status": "健康稳定，但面临2009年死亡威胁"
+      },
+      {
+        "location": "银湾市",
+        "status": "法院门外广场事件引发舆论关注"
+      }
+    ],
+    "open_threads": [
+      "死亡预告信件背后的真正意图",
+      "P10阶段应急预案的具体实施",
+      "昆廷病休带来的连锁反应"
+    ],
+    "resolved_threads": [
+      "奥瑞恩集团第二次司法攻击（精神失能指控）",
+      "曲库所有权归属争议"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "随着司法途径的彻底失败，奥瑞恩集团将启动‘永恒星光’计划，麦珂必须在公开直播中直面‘清醒’与‘死亡’的终极命题，同时应对资本市场的全面围剿。"
+  }
+}

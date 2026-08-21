@@ -1,0 +1,370 @@
+{
+  "macro_group_id": "MG003",
+  "event_clusters": [
+    {
+      "cluster_id": "EC013",
+      "chapter_span": [25, 26],
+      "source_event_direction": "前世具体受害：前世黛安娜仅做记录者，未能阻止乔纳转移家庭资产。；本事件独有的前世信息差：麦珂清楚维克多·兰斯利用未成年合约避税的潜规则细节。；今生提前动作：麦珂引导黛安娜收集乔纳过往账目异常线索，准备审计材料。；第25章可见小赢：黛安娜发现一笔可疑转账，立即冻结相关账户并通知律师。；第26章新交锋：乔纳试图销毁账本，玛莎当场出示公证过的备份文件。；阻力方永久现实损失：乔纳失去对家庭资金的完全控制权，面临税务调查风险。；主角现实收益：家庭资金链由黛安娜接管，法律防线彻底加固。；不可逆结算键：财务审计启动，乔纳经济命脉被切断。；接回死亡控制主线：终结财务被操控的死亡路径。",
+      "source_event_direction_sha256": "da789f9e38adb5cd22bc9010ec0051c0cef488639d9e1d57c79d5501ca84cc70",
+      "source_macro_sha256": "4cb680e8eb2ae2febaa947169662c8754dcdb8e210fe9826afd1785a172ae7a0",
+      "name": "血色账簿：家庭资产的紧急熔断",
+      "timeline_years": "1970",
+      "main_opponent": "乔纳·杰森",
+      "opposition_type": "ally_resistance",
+      "event_type": "finance_business",
+      "solution_type": "financial_counter",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["CS01"],
+      "foreshadow_ids": [],
+      "main_characters": ["麦珂·杰森", "黛安娜·罗文", "乔纳·杰森", "玛莎·杰森"],
+      "fictional_obstacle": "乔纳试图将《纸船纪》筹备金以‘社区公益预支款’名义转入其私人控制的离岸账户，以此掩盖挪用事实并规避税务申报。",
+      "prev_life_tragedy": "前世黛安娜仅作为被动记录员，在乔纳转账后一周才察觉资金去向，此时钱款已被洗白，导致麦珂被迫接受低价卖身契以填补窟窿。",
+      "info_gap_from_prev_life": "麦珂记得前世乔纳在1970年7月14日签署过一份名为‘河湾镇儿童图书馆修缮基金’的虚假收据，该收据对应的资金流向是维克多·兰斯旗下的空壳公司，而非图书馆。",
+      "why_previous_life_failed": "前世黛安娜缺乏财务审计专业知识，且过度信任丈夫的口头承诺，未核对银行流水与收据的原始凭证。",
+      "preemptive_avoidance": "麦珂提前告知黛安娜注意7月中旬的异常转账，并指导她使用‘双重验证法’——即必须见到实物收据原件且核对银行盖章流水方可入账。",
+      "bait_and_evidence": "安全留饵：麦珂故意让乔纳看到黛安娜正在整理旧账本，诱导其加速转账；今生证据：黛安娜截获了乔纳伪造的收据原件，并保留了银行柜台监控录像的时间戳。",
+      "comic_villain_behavior": "乔纳一边假装焦急地解释‘这是为了孩子未来的慈善名声’，一边手忙脚乱地把假收据塞进公文包夹层，结果拉链卡住，露出里面写着‘避税专用’的便签。",
+      "villain_loss": "乔纳丧失了对家庭共同账户的单笔大额支配权，其个人信誉在家庭内部彻底破产，面临联邦税务局（IRS）的正式问询函。",
+      "protagonist_gain": "家庭资金链正式由黛安娜全权接管，麦珂获得独立的创作预算监管权，法律防线从口头约定升级为实质性的资产隔离。",
+      "relationship_change": "玛莎彻底倒向麦珂与黛安娜阵营，乔纳被排除在核心决策圈之外；黛安娜从辅助角色晋升为家庭财务的实际操盘手。",
+      "continuity_writes": [
+        "黛安娜·罗文获得家庭财务独立审计权",
+        "乔纳·杰森被暂停银行账户操作权限",
+        "家庭信托账户设立‘双签生效’机制"
+      ],
+      "state_transitions": [
+        {
+          "domain": "job",
+          "entity_id": "CHAR_D1A231D7C399",
+          "state_key": "employment_status__financial_control",
+          "from": "掌握家庭财政",
+          "to": "丧失财政控制权",
+          "irreversible": true,
+          "evidence": "黛安娜出示银行柜台监控录像及伪造收据原件",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_001",
+          "state_key": "copyright_status__financial_independence",
+          "from": "受家庭共同账户约束",
+          "to": "拥有独立监管账户",
+          "irreversible": true,
+          "evidence": "温特律师协助开设双签监管账户",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "relationship",
+          "entity_id": "REL_002",
+          "state_key": "trust_dynamic__family_alliance",
+          "from": "母子同盟+母亲独立核查+父亲被边缘化",
+          "to": "铁三角稳固，父亲被彻底隔离",
+          "irreversible": false,
+          "evidence": "玛莎当众支持黛安娜冻结账户并斥责乔纳",
+          "effect_type": "relationship_change"
+        }
+      ],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "乔纳挪用资金企图失败，家庭财务大权移交黛安娜，麦珂创作资金得到绝对保障，乔纳因试图逃税面临税务调查风险。",
+      "next_event_hook": "乔纳恼羞成怒，决定绕过家庭直接联系媒体，试图通过舆论施压迫使麦珂就范。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 25,
+          "timeline_start": "1970-07-14",
+          "timeline_end": "1970-07-14",
+          "scene": "杰森家庭办公室",
+          "chapter_goal": "黛安娜识破乔纳的转账陷阱并冻结账户",
+          "chapter_title": "消失的七千美元",
+          "participants": ["麦珂·杰森", "黛安娜·罗文", "乔纳·杰森"],
+          "opening_conflict": "乔纳声称急需支付‘社区公益’款项，要求黛安娜立即签字放行，但麦珂突然指出日期与收据编号不符。",
+          "info_gap_use": "麦珂利用前世记忆中的'7月14日收据编号错误’这一细节，当场质疑乔纳提供的文件真实性。",
+          "opponent_reaction": "乔纳强作镇定，辩称是会计笔误，并试图用‘大局为重’的话术压制，眼神却飘忽不定。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "杰森家庭办公室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "开场直接进入对峙现场"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_FIN_AUDIT_001",
+              "timeline_scope": "current",
+              "display_name": "异常转账预警单",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂指出收据上的日期是未来日期，引发全场哗然。",
+            "黛安娜立即调取银行柜台监控录像，确认转账时间与实际交易不符。",
+            "乔纳试图抢夺文件，被麦珂冷静挡开并大声朗读监控时间戳。",
+            "黛安娜当场致电银行挂失并冻结相关账户，切断乔纳资金通道。"
+          ],
+          "visible_payoff": "黛安娜成功拦截转账，乔纳的谎言被当场揭穿，账户被冻结。",
+          "ending": "乔纳愤然离席，扬言要联系律师起诉黛安娜‘阻碍家庭事务’，麦珂看着他的背影，知道风暴即将来临。",
+          "must_include": [
+            "麦珂指出收据日期错误",
+            "黛安娜调取监控录像",
+            "账户被即时冻结"
+          ],
+          "must_not_include": [
+            "乔纳最终被起诉的具体结果",
+            "玛莎出场支持黛安娜的细节"
+          ],
+          "detailed_synopsis": "1970年7月14日，杰森家庭办公室内气氛凝重。乔纳手持一份伪造的收据，声称需紧急支付社区公益款项，催促黛安娜签字。麦珂突然指出收据上的日期是虚构的未来日期，乔纳脸色骤变，强辩是会计失误。黛安娜立刻警觉，调取银行柜台监控录像，确认乔纳试图在交易前篡改单据。面对确凿证据，黛安娜当场致电银行挂失并冻结账户。乔纳恼羞成怒，试图抢夺文件未果，愤然离席并扬言要起诉。本章以乔纳谎言被揭穿、账户冻结告终，麦珂的小胜为后续反击埋下伏笔。"
+        },
+        {
+          "chapter_id": 26,
+          "timeline_start": "1970-07-15",
+          "timeline_end": "1970-07-15",
+          "scene": "杰森家庭客厅",
+          "chapter_goal": "玛莎出示公证备份，彻底粉碎乔纳销毁证据的企图",
+          "chapter_title": "公证的审判",
+          "participants": ["麦珂·杰森", "玛莎·杰森", "黛安娜·罗文", "乔纳·杰森"],
+          "opening_conflict": "乔纳试图回家销毁旧账本，声称要‘清理垃圾’，却被玛莎当场拦下。",
+          "info_gap_use": "麦珂记得前世乔纳曾试图烧毁账本，于是提前暗示玛莎做好备份准备。",
+          "opponent_reaction": "乔纳见势不妙，试图强行闯入书房，被玛莎用身体挡住并冷声质问。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "杰森家庭客厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "承接上一章乔纳离席后的次日清晨"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_FIN_AUDIT_001",
+              "timeline_scope": "current",
+              "purpose": "作为乔纳试图销毁证据的对比物"
+            }
+          ],
+          "action_sequence": [
+            "乔纳借口清理书房，试图拿走一叠旧账本。",
+            "玛莎及时出现，拿出公证处出具的备份文件副本，证明原账本已存档。",
+            "乔纳惊慌失措，试图辩解备份无效，被玛莎引用法律条款驳斥。",
+            "麦珂宣布启动家庭财务审计程序，乔纳彻底失去话语权。"
+          ],
+          "visible_payoff": "乔纳销毁证据的企图彻底失败，家庭财务审计正式启动，他面临税务调查。",
+          "ending": "乔纳瘫坐在沙发上，意识到自己不仅失去了金钱，更失去了对家庭的控制权。",
+          "must_include": [
+            "玛莎出示公证备份",
+            "乔纳销毁证据失败",
+            "审计程序正式启动"
+          ],
+          "must_not_include": [
+            "乔纳被逮捕的具体画面",
+            "税务调查的详细报告内容"
+          ],
+          "detailed_synopsis": "次日清晨，乔纳试图潜入书房销毁旧账本，声称要‘清理垃圾’。玛莎早有防备，当场拿出公证处出具的备份文件副本，证明原账本已依法存档。乔纳惊慌失措，试图辩解备份无效，却被玛莎引用法律条款驳斥。麦珂随即宣布启动家庭财务审计程序，乔纳彻底失去话语权，瘫坐在地。本章以乔纳销毁证据失败、审计正式启动告终，标志着他彻底失去了对家庭经济的控制，税务调查迫在眉睫。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC014",
+      "chapter_span": [27, 28],
+      "source_event_direction": "前世具体受害：前世因缺乏技术支持，录音效果粗糙，错失关键合作机会。；本事件独有的前世信息差：麦珂掌握昆廷·琼斯对艺术坚持的偏好，知晓其技术短板。；今生提前动作：麦珂带着‘三秒真空’概念直接拜访驻场编曲师，提出非商业合作。；第27章可见小赢：驻场编曲师被创意打动，同意提供技术支持并加入创作团队。；第28章新交锋：乔纳试图挖角驻场编曲师，麦珂展示已完成的母带所有权协议。；阻力方永久现实损失：乔纳无法再干预录音制作，技术主导权彻底旁落。；主角现实收益：驻场编曲师正式加入，专辑母带质量达到行业标准以上。；不可逆结算键：技术团队锁定，母带归属权确立。；接回死亡控制主线：确保艺术成果不被资本篡改。",
+      "source_event_direction_sha256": "a5a3ce51fe9052431e0a247a5fb6cb05e1ddd7229059dcb435ddae1ec8ad1578",
+      "source_macro_sha256": "4cb680e8eb2ae2febaa947169662c8754dcdb8e210fe9826afd1785a172ae7a0",
+      "name": "三秒真空：技术主权的夺回",
+      "timeline_years": "1970",
+      "main_opponent": "卡尔·霍尔特",
+      "opposition_type": "technical",
+      "event_type": "creation",
+      "solution_type": "creative_breakthrough",
+      "death_chain_role": "echo",
+      "causal_spine_ids": ["CS01"],
+      "foreshadow_ids": ["FS01"],
+      "main_characters": ["麦珂·杰森", "昆廷·琼斯", "卡尔·霍尔特", "黛安娜·罗文"],
+      "fictional_obstacle": "卡尔·霍尔特试图以‘行业标准’为由，强行要求麦珂使用廉价合成器替代真实乐器，导致录音质感粗糙，意图压低制作成本以便日后压价收购版权。",
+      "prev_life_tragedy": "前世麦珂因缺乏专业编曲支持，录音效果极差，被卡尔·霍尔特嘲笑‘毫无商业价值’，最终被迫以极低价格出售版权。",
+      "info_gap_from_prev_life": "麦珂记得前世卡尔·霍尔特在1970年8月1日曾公开贬低‘三秒真空’概念，称其为‘噪音’，而昆廷·琼斯当时正苦于找不到合适的创意切入点。",
+      "why_previous_life_failed": "前世麦珂不懂技术术语，无法说服卡尔·霍尔特，只能被动接受劣质录音方案。",
+      "preemptive_avoidance": "麦珂直接携带‘三秒真空’的手稿和演示录音，绕过卡尔·霍尔特，直接寻找对艺术有追求的昆廷·琼斯进行非商业合作。",
+      "bait_and_evidence": "安全留饵：麦珂故意让卡尔·霍尔特看到自己正在寻找廉价方案；今生证据：麦珂与昆廷·琼斯签署的非商业合作协议及母带所有权声明。",
+      "comic_villain_behavior": "卡尔·霍尔特一边吹嘘自己的‘行业标准’，一边偷偷把合成器的音量旋钮调到最大，试图制造‘震撼’效果，结果导致录音爆音，被昆廷·琼斯当场嘲笑。",
+      "villain_loss": "卡尔·霍尔特无法再干预录音制作，其技术主导权彻底旁落，行业信誉受损。",
+      "protagonist_gain": "昆廷·琼斯正式加入创作团队，专辑母带质量达到行业标准以上，麦珂完全掌控母带所有权。",
+      "relationship_change": "麦珂与昆廷·琼斯建立基于作品质量的专业信任；麦珂与卡尔·霍尔特关系破裂。",
+      "continuity_writes": [
+        "昆廷·琼斯正式加入创作团队",
+        "《纸船纪》母带所有权归麦珂所有",
+        "卡尔·霍尔特被排除在录音制作之外"
+      ],
+      "state_transitions": [
+        {
+          "domain": "character",
+          "entity_id": "CHAR_KJ_001",
+          "state_key": "role_in_production_team",
+          "from": "无合作",
+          "to": "技术合伙人",
+          "irreversible": true,
+          "evidence": "昆廷·琼斯签署非商业合作协议",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "rights",
+          "entity_id": "RIGHT_MK_001",
+          "state_key": "master_recording_ownership",
+          "from": "受控于制作人",
+          "to": "完全归麦珂所有",
+          "irreversible": true,
+          "evidence": "麦珂展示母带所有权协议",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "enemy_capability",
+          "entity_id": "CHAR_B6BBF0D9B359",
+          "state_key": "control_over_recording",
+          "from": "拥有技术主导权",
+          "to": "完全丧失",
+          "irreversible": true,
+          "evidence": "卡尔·霍尔特被拒绝进入录音室",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "昆廷·琼斯加入团队，母带质量达标，麦珂完全掌控技术主导权，卡尔·霍尔特被彻底边缘化。",
+      "next_event_hook": "乔纳因技术主导权丧失，决定寻求外部势力（维克多·兰斯）支持，准备发动新一轮攻击。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 27,
+          "timeline_start": "1970-08-01",
+          "timeline_end": "1970-08-01",
+          "scene": "银湾市地下录音室",
+          "chapter_goal": "麦珂说服昆廷·琼斯加入团队，确立‘三秒真空’概念",
+          "chapter_title": "沉默的三秒",
+          "participants": ["麦珂·杰森", "昆廷·琼斯"],
+          "opening_conflict": "昆廷·琼斯对麦珂的‘三秒真空’概念表示怀疑，认为这不符合商业逻辑。",
+          "info_gap_use": "麦珂利用前世记忆中昆廷·琼斯对艺术的执着，直接播放‘三秒真空’的Demo，展示其情感冲击力。",
+          "opponent_reaction": "昆廷·琼斯起初皱眉，随后被Demo中的情感力量打动，态度发生转变。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市地下录音室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "开场直接进入录音室现场"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_DEMO_VACUUM_001",
+              "timeline_scope": "current",
+              "display_name": "三秒真空Demo磁带",
+              "kind": "recording"
+            }
+          ],
+          "artifact_refs": [],
+          "action_sequence": [
+            "麦珂向昆廷·琼斯展示‘三秒真空’的手稿和Demo。",
+            "昆廷·琼斯起初质疑，但在听到Demo后陷入沉思。",
+            "麦珂解释‘三秒真空’的情感意义，昆廷·琼斯被深深打动。",
+            "昆廷·琼斯同意加入团队，并提供技术支持。"
+          ],
+          "visible_payoff": "昆廷·琼斯被创意打动，同意提供技术支持并加入创作团队。",
+          "ending": "昆廷·琼斯看着麦珂，眼中闪烁着兴奋的光芒，两人开始讨论具体的录音方案。",
+          "must_include": [
+            "麦珂展示Demo",
+            "昆廷·琼斯态度转变",
+            "昆廷·琼斯同意加入"
+          ],
+          "must_not_include": [
+            "卡尔·霍尔特试图挖角的细节",
+            "母带所有权协议的签署过程"
+          ],
+          "detailed_synopsis": "1970年8月1日，银湾市地下录音室内，麦珂向昆廷·琼斯展示了‘三秒真空’的概念。昆廷起初怀疑这一违背商业逻辑的想法，但当麦珂播放Demo时，他被其中的情感力量深深打动。麦珂详细解释了‘三秒真空’的艺术价值，昆廷·琼斯被其真诚和专业所折服，当场同意加入团队，并提供技术支持。两人开始热烈讨论录音方案，昆廷眼中的光芒显示出他对这个项目的极大热情。本章以昆廷·琼斯的加入告终，为后续的高质量录音奠定了基础。"
+        },
+        {
+          "chapter_id": 28,
+          "timeline_start": "1970-08-02",
+          "timeline_end": "1970-08-02",
+          "scene": "银湾市街头路演现场",
+          "chapter_goal": "麦珂展示母带所有权协议，粉碎乔纳的挖角企图",
+          "chapter_title": "无法撼动的母带",
+          "participants": ["麦珂·杰森", "卡尔·霍尔特", "昆廷·琼斯"],
+          "opening_conflict": "卡尔·霍尔特试图以高薪挖走昆廷·琼斯，并威胁要曝光麦珂的‘不成熟’。",
+          "info_gap_use": "麦珂记得前世卡尔·霍尔特曾试图用同样的手段挖角，但这次他提前准备好了法律文件。",
+          "opponent_reaction": "卡尔·霍尔特见麦珂拿出协议，脸色大变，试图用言语威胁，但被昆廷·琼斯当场驳回。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "银湾市街头路演现场",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "承接上一章录音室场景，转至街头路演"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_MASTER_OWNERSHIP_001",
+              "timeline_scope": "current",
+              "purpose": "作为麦珂展示母带所有权的法律凭证"
+            }
+          ],
+          "action_sequence": [
+            "卡尔·霍尔特试图以高薪挖走昆廷·琼斯，并威胁曝光麦珂。",
+            "麦珂冷静地拿出已签署的母带所有权协议，证明昆廷·琼斯的合作是合法的。",
+            "昆廷·琼斯当场表态，坚决不与卡尔·霍尔特合作。",
+            "卡尔·霍尔特恼羞成怒，被围观群众嘲笑，狼狈离场。"
+          ],
+          "visible_payoff": "卡尔·霍尔特挖角失败，技术主导权彻底旁落，麦珂完全掌控母带。",
+          "ending": "麦珂看着卡尔·霍尔特离去的背影，心中暗道：‘游戏才刚刚开始。’",
+          "must_include": [
+            "卡尔·霍尔特挖角失败",
+            "麦珂展示所有权协议",
+            "昆廷·琼斯坚定立场"
+          ],
+          "must_not_include": [
+            "乔纳直接介入的细节",
+            "维克多·兰斯出场的描述"
+          ],
+          "detailed_synopsis": "1970年8月2日，银湾市街头路演现场，卡尔·霍尔特试图以高薪挖走昆廷·琼斯，并威胁要曝光麦珂的‘不成熟’。麦珂冷静地拿出已签署的母带所有权协议，证明昆廷·琼斯的合作是合法的。昆廷·琼斯当场表态，坚决不与卡尔·霍尔特合作。卡尔·霍尔特恼羞成怒，被围观群众嘲笑，狼狈离场。麦珂看着他的背影，心中暗道：‘游戏才刚刚开始。’本章以卡尔·霍尔特的彻底失败告终，麦珂完全掌控了技术主导权和母带所有权。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1970",
+    "character_states": [
+      "麦珂：确立独立创作者身份，声带状态良好，心理防线稳固。",
+      "玛莎：彻底觉醒，成为家庭决策的核心执行者。",
+      "乔纳：从潜在盟友转为明显阻碍，开始寻求外部势力（维克多）支持。",
+      "黛安娜：角色升级，成为财务与法务的实际操盘手。",
+      "昆廷：加入创作团队，成为技术合伙人。"
+    ],
+    "relationship_states": [
+      "麦珂与玛莎、黛安娜形成铁三角，乔纳被边缘化。",
+      "麦珂与昆廷建立基于作品质量的专业信任。",
+      "麦珂与‘星辰新声’项目组保持敌对距离。"
+    ],
+    "rights_and_assets": [
+      "《纸船纪》版权归属清晰，无债务纠纷。",
+      "家庭信托账户资金充裕，足以支撑后续巡演。",
+      "《演出健康备忘录》被更多独立厂牌引用。"
+    ],
+    "health_and_location": [
+      "持续居住于河湾镇，定期前往银湾市进行录音与巡演。",
+      "麦珂保持零药物使用，生理指标优于同龄童星。"
+    ],
+    "open_threads": [
+      "1969年试镜录像盒底部铜质齿轮（最晚回收块：B025）",
+      "巴里篡改药剂单电子痕迹（最晚回收块：B015）",
+      "托马斯封存的遗嘱执行附件（最晚回收块：B012）",
+      "维克多·兰斯直接介入的意图（新开启）"
+    ],
+    "resolved_threads": [
+      "《晨光电台》访谈中被删副歌的具体旋律轮廓（已在《纸船纪》中实现）"
+    ],
+    "introduced_characters": [
+      "昆廷·琼斯（正式加入创作团队）"
+    ],
+    "next_pressure": "维克多·兰斯绕过乔纳直接向麦珂抛出‘全球发行’诱饵，实则意图通过更隐蔽的资本手段全面收购麦珂未来十年收益权，开启‘资本围猎’新阶段。"
+  }
+}

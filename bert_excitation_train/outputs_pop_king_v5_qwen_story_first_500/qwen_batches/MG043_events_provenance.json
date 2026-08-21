@@ -1,0 +1,58 @@
+{
+  "generated_by": "qwen",
+  "kind": "events",
+  "identifier": "MG043",
+  "accepted_attempt": 2,
+  "base_prompt_sha256": "e2990eac8513e875e2f0504184c8cb847995a095a79c33add357e1bbb81fc605",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-11T10:42:53+08:00",
+      "prompt_sha256": "e2990eac8513e875e2f0504184c8cb847995a095a79c33add357e1bbb81fc605",
+      "raw_response_sha256": "287f9c652c1c49d7f534c2924f7d08cc1b9cd69c687999afb9a96be64edca755",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG043_events_attempt_01_raw.txt",
+      "validation_failures": [
+        "EC211年代技术错误：当前年代不得出现“PDF”",
+        "EC212年代技术错误：当前年代不得出现“PDF”",
+        "EC212年代技术错误：当前年代不得出现“手机”",
+        "EC213年代技术错误：当前年代不得出现“PDF”",
+        "EC214年代技术错误：当前年代不得出现“上传”",
+        "EC215年代技术错误：当前年代不得出现“PDF”",
+        "EC215年代技术错误：当前年代不得出现“上传”"
+      ],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 123.267,
+      "usage": {
+        "input_tokens": 17144,
+        "output_tokens": 6653,
+        "total_tokens": 23797,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-11T10:44:35+08:00",
+      "prompt_sha256": "6e5a898ac8b9a620dde059123325c876d2e1aff5eca84df02bcba9ba98b0cf2b",
+      "raw_response_sha256": "7794bacb74744f07561d0ac4fbed74d20a5f7192edc4dfb7252b9a43f1bdc4ce",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG043_events_attempt_02_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 102.116,
+      "usage": {
+        "input_tokens": 6915,
+        "output_tokens": 6706,
+        "total_tokens": 13621,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

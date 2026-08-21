@@ -1,0 +1,39 @@
+{
+  "cluster_id": "EC014",
+  "chapter_id": 27,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "9c1193f76b4abe98d691a47a535b8df1c908d9175eb0015d4440c77ab2690516",
+  "raw_response_sha256": "488f8348be5e11dd6b7577aee5a78fd84d484d37c2ab4dd39e6ee3957157a224",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "dashscope_sdk",
+    "elapsed_seconds": 35.598,
+    "usage": {
+      "input_tokens": 5000,
+      "output_tokens": 1594,
+      "total_tokens": 6594,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "chapter_audit": {
+    "han_chars": 1577,
+    "total_chars": 1974,
+    "target_han_range": [
+      1300,
+      1800
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "failures": [
+      "正文夹入英文小写叙述词：precisely"
+    ]
+  },
+  "failures": [
+    "正文夹入英文小写叙述词：precisely"
+  ],
+  "accepted": false
+}

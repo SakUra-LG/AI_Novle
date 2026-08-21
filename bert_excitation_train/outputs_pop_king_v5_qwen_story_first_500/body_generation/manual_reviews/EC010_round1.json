@@ -1,0 +1,16 @@
+{
+  "cluster_id": "EC010",
+  "review_round": 1,
+  "reviewed_chapters": [19, 20],
+  "reviewer": "codex_batch_spot_check_full_text",
+  "decision": "regenerate_chapter_20_reuse_qwen_chapter_19",
+  "body_manually_edited": false,
+  "strengths": [
+    "第19章通过反复演练和纸鹤让玛莎的紧张与坚韧形成反差",
+    "第20章已完成维克多动议失败、玛莎正式履职和铜牌结算"
+  ],
+  "actual_failures": [
+    "第20章出现现实钢笔品牌‘派克51型’，违背架空品牌边界"
+  ],
+  "required_action": "加入现实品牌检查；保留Qwen原文第19章，仅重生成第20章。"
+}

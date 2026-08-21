@@ -1,0 +1,290 @@
+{
+  "generated_by": "groq",
+  "kind": "macro_directions_1",
+  "identifier": "MG001",
+  "accepted_attempt": null,
+  "base_prompt_sha256": "7fa514df4e011367d220437971117fc9e22a11c5dbd997aaec7db92f806fd392",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-15T15:16:13+08:00",
+      "prompt_sha256": "7fa514df4e011367d220437971117fc9e22a11c5dbd997aaec7db92f806fd392",
+      "raw_response_sha256": "623b3faefd9fb69d84afad312da543929a67a2c405e3c82f58cc8affd848c804",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_directions_1_attempt_01_7fa514df4e_raw.txt",
+      "validation_failures": [
+        "EC001.previous_life_harm照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.unique_prev_life_info照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.preemptive_action照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.chapter_one_small_win照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.chapter_two_showdown照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.opponent_permanent_loss照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.protagonist_concrete_gain照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.irreversible_outcome_key照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.death_chain_connection照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.previous_life_harm照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.unique_prev_life_info照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.preemptive_action照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.chapter_one_small_win照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.chapter_two_showdown照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.opponent_permanent_loss照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.protagonist_concrete_gain照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.irreversible_outcome_key照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.death_chain_connection照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002必须落实锁定事实词：合同/协议/授权/委托书",
+        "EC002必须落实锁定事实词：乔纳",
+        "EC002必须落实锁定事实词：限时/截止/马上签",
+        "EC002必须落实锁定事实词：玛莎",
+        "EC002必须落实锁定事实词：律师/法律顾问/审查",
+        "EC002前世信息必须是乔纳受限时报名谎话催促而速签",
+        "EC002今生只能由麦珂提少年能问的问题，再由玛莎决定暂停并请律师审查"
+      ],
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "transport": "groq_curl",
+      "elapsed_seconds": 5.569,
+      "usage": {
+        "queue_time": 0.296719954,
+        "prompt_tokens": 4216,
+        "prompt_time": 0.272285108,
+        "completion_tokens": 699,
+        "completion_time": 0.751077185,
+        "total_tokens": 4915,
+        "total_time": 1.023362293,
+        "completion_tokens_details": {
+          "reasoning_tokens": 6
+        }
+      },
+      "capacity_model_fallbacks": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "attempt": 2,
+      "created_at": "2026-08-15T15:16:22+08:00",
+      "prompt_sha256": "467c203f5c55e72e1cecf1cc0ba7a1ca267e9743a958c1fc333373cc7b34f98f",
+      "raw_response_sha256": "f8a188dbc7f8d165190523ffffc3f0b360418380da8bc2d0f20767c4eb0bf756",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_directions_1_attempt_02_7fa514df4e_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Qwen response contains no JSON object"
+      ],
+      "provider": "groq",
+      "model": "qwen/qwen3.6-27b",
+      "transport": "groq_curl",
+      "elapsed_seconds": 9.03,
+      "usage": {
+        "queue_time": 0.051960019,
+        "prompt_tokens": 3936,
+        "prompt_time": 0.282921809,
+        "completion_tokens": 1800,
+        "completion_time": 3.439302518,
+        "total_tokens": 5736,
+        "total_time": 3.722224327
+      },
+      "capacity_model_fallbacks": [
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    },
+    {
+      "attempt": 3,
+      "created_at": "2026-08-15T15:17:02+08:00",
+      "prompt_sha256": "5da2087152dee1306cc0b955c9cb37061ef3bb35f60967382dbb78b650339674",
+      "raw_response_sha256": "9cec6813eae62b0fae8cce1770577298bb3ca9fb63f482b839f4ea5f9c1c8410",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_directions_1_attempt_03_7fa514df4e_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Qwen response contains no JSON object"
+      ],
+      "provider": "groq",
+      "model": "qwen/qwen3.6-27b",
+      "transport": "groq_curl",
+      "elapsed_seconds": 39.978,
+      "usage": {
+        "queue_time": 0.045194785,
+        "prompt_tokens": 3666,
+        "prompt_time": 0.263384606,
+        "completion_tokens": 1800,
+        "completion_time": 3.433256224,
+        "total_tokens": 5466,
+        "total_time": 3.6966408299999998
+      },
+      "capacity_model_fallbacks": [
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    },
+    {
+      "attempt": 4,
+      "created_at": "2026-08-15T15:17:49+08:00",
+      "prompt_sha256": "4b6c97a8f0033cb51e78ff3eeb7fd4ed76832adfe4b2dfceb2f956c321bc3bbf",
+      "raw_response_sha256": "fb322c3add92724cb34ebb4cceb752d50b07bdf2dc21114fbb5c273ec346203f",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_directions_1_attempt_04_7fa514df4e_raw.txt",
+      "validation_failures": [
+        "JSON解析失败: Qwen response contains no JSON object"
+      ],
+      "provider": "groq",
+      "model": "qwen/qwen3.6-27b",
+      "transport": "groq_curl",
+      "elapsed_seconds": 47.452,
+      "usage": {
+        "queue_time": 0.044929995,
+        "prompt_tokens": 3665,
+        "prompt_time": 0.262935446,
+        "completion_tokens": 1800,
+        "completion_time": 3.441650378,
+        "total_tokens": 5465,
+        "total_time": 3.704585824
+      },
+      "capacity_model_fallbacks": [
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    },
+    {
+      "attempt": 5,
+      "created_at": "2026-08-15T15:47:27+08:00",
+      "prompt_sha256": "7fa514df4e011367d220437971117fc9e22a11c5dbd997aaec7db92f806fd392",
+      "raw_response_sha256": "623b3faefd9fb69d84afad312da543929a67a2c405e3c82f58cc8affd848c804",
+      "repeated_previous_response": true,
+      "raw_response_file": "MG001_macro_directions_1_attempt_05_7fa514df4e_raw.txt",
+      "validation_failures": [
+        "EC001.previous_life_harm照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.unique_prev_life_info照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.preemptive_action照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.chapter_one_small_win照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.chapter_two_showdown照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.opponent_permanent_loss照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.protagonist_concrete_gain照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.irreversible_outcome_key照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC001.death_chain_connection照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.previous_life_harm照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.unique_prev_life_info照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.preemptive_action照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.chapter_one_small_win照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.chapter_two_showdown照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.opponent_permanent_loss照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.protagonist_concrete_gain照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.irreversible_outcome_key照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002.death_chain_connection照抄了JSON字段说明，必须改成原创具体剧情事实",
+        "EC002必须落实锁定事实词：合同/协议/授权/委托书",
+        "EC002必须落实锁定事实词：乔纳",
+        "EC002必须落实锁定事实词：限时/截止/马上签",
+        "EC002必须落实锁定事实词：玛莎",
+        "EC002必须落实锁定事实词：律师/法律顾问/审查",
+        "EC002前世信息必须是乔纳受限时报名谎话催促而速签",
+        "EC002今生只能由麦珂提少年能问的问题，再由玛莎决定暂停并请律师审查"
+      ],
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "transport": "groq_curl",
+      "elapsed_seconds": 44.791,
+      "usage": {
+        "queue_time": 0.281143389,
+        "prompt_tokens": 4216,
+        "prompt_time": 0.228662111,
+        "completion_tokens": 700,
+        "completion_time": 0.712847201,
+        "total_tokens": 4916,
+        "total_time": 0.941509312,
+        "completion_tokens_details": {
+          "reasoning_tokens": 7
+        }
+      },
+      "capacity_model_fallbacks": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "attempt": 6,
+      "created_at": "2026-08-15T15:47:36+08:00",
+      "prompt_sha256": "7e399855268535932e2fb51a6f25ce5c3a3d862d4b0059fe7c813411d57ad78a",
+      "raw_response_sha256": "ecd3243f0bceb45f6c00b1fc34990739b7258cb8dccdf073616cb2acd101761f",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_directions_1_attempt_06_7fa514df4e_raw.txt",
+      "validation_failures": [
+        "EC002今生只能由麦珂提少年能问的问题，再由玛莎决定暂停并请律师审查"
+      ],
+      "provider": "groq",
+      "model": "qwen/qwen3.6-27b",
+      "transport": "groq_curl",
+      "elapsed_seconds": 8.203,
+      "usage": {
+        "queue_time": 0.045136783,
+        "prompt_tokens": 3937,
+        "prompt_time": 0.282754485,
+        "completion_tokens": 1594,
+        "completion_time": 3.034844897,
+        "total_tokens": 5531,
+        "total_time": 3.317599382
+      },
+      "capacity_model_fallbacks": [
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    },
+    {
+      "attempt": 7,
+      "created_at": "2026-08-15T15:48:13+08:00",
+      "prompt_sha256": "8f3bf27727537a3ca0df5298cdb411a2043a8116e37e2d83f7501fa75e2d4523",
+      "raw_response_sha256": "7f6d35d0b9c9402478f921d7c28a790db0e66e0460b4d4dd626192f3467486fe",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_directions_1_attempt_07_7fa514df4e_raw.txt",
+      "validation_failures": [
+        "EC001.locked_story_brief必须逐字服从锁定值",
+        "EC001必须落实锁定事实词：设备/走位/安全/危险",
+        "EC001第2章动作必须发生在1969试镜后台并利用设备/走位险情信息",
+        "EC002.locked_story_brief必须逐字服从锁定值"
+      ],
+      "provider": "groq",
+      "model": "qwen/qwen3.6-27b",
+      "transport": "groq_curl",
+      "elapsed_seconds": 37.241,
+      "usage": {
+        "queue_time": 0.051177349,
+        "prompt_tokens": 3682,
+        "prompt_time": 0.289206488,
+        "completion_tokens": 1776,
+        "completion_time": 3.389057738,
+        "total_tokens": 5458,
+        "total_time": 3.678264226
+      },
+      "capacity_model_fallbacks": [
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    },
+    {
+      "attempt": 8,
+      "created_at": "2026-08-15T15:48:58+08:00",
+      "prompt_sha256": "5bd1686431d9f6c177afbb2436a5aca8ab6f6ff18fc39a53e20c36083c12179c",
+      "raw_response_sha256": "28b1e141dfcd4e4e7b2948378166a86fee5327d03b0b23ff885396ed7d643d6e",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG001_macro_directions_1_attempt_08_7fa514df4e_raw.txt",
+      "validation_failures": [
+        "EC001的1969结算只能处罚当时失职者，不能提前处罚2009年的康拉德",
+        "EC002.irreversible_outcome_key至少8字"
+      ],
+      "provider": "groq",
+      "model": "qwen/qwen3.6-27b",
+      "transport": "groq_curl",
+      "elapsed_seconds": 45.466,
+      "usage": {
+        "queue_time": 0.045450488,
+        "prompt_tokens": 3736,
+        "prompt_time": 0.285998332,
+        "completion_tokens": 1374,
+        "completion_time": 2.617233985,
+        "total_tokens": 5110,
+        "total_time": 2.903232317
+      },
+      "capacity_model_fallbacks": [
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    }
+  ]
+}

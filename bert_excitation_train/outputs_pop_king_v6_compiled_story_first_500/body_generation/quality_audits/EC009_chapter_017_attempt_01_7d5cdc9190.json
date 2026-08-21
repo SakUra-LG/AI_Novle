@@ -1,0 +1,110 @@
+{
+  "cluster_id": "EC009",
+  "chapter_id": 17,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "7d5cdc91906038979bd4443691336421df3041fab9cce2358781fd09ede16bfb",
+  "base_prompt_sha256": "7d5cdc91906038979bd4443691336421df3041fab9cce2358781fd09ede16bfb",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "3a5723df868567fbc778657f4e61d965c39b8cbfa5c7c08488a658fda7838d9d",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.12,
+    "usage": {
+      "prompt_tokens": 5491,
+      "completion_tokens": 1178,
+      "total_tokens": 6669,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 9,
+    "through_chapter": 18,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "e4b722c6fbf5c2691e24a4ac262ba1fb348019a2fc129e19f594b5cbde19cea4",
+    "chapter_card_prefix_sha256": "f96eb4b0296b09f4a9edda102ce3355e64b2762486f388ab1c9fd4ffd092b74c",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "f12e8dd346bf9256f372212ecbe12faf8f9bec7c731de970a30669c0b0ebafaf"
+  },
+  "cluster_sha256": "73315975bec45927ad81008ade0887ecb1a8db235613b2657bc4d96f5f6a657e",
+  "card_sha256": "01feb00a8660ed9ca28d62b4f14c0f5726de678a4a950c5074f276f55d9efbaa",
+  "chapter_audit": {
+    "han_chars": 1709,
+    "total_chars": 1941,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "观众自发合唱场景",
+        "exact": false,
+        "bigram_coverage": 0.286,
+        "matched": false
+      },
+      {
+        "anchor": "电台热线激增的数据",
+        "exact": false,
+        "bigram_coverage": 0.125,
+        "matched": false
+      },
+      {
+        "anchor": "音响故障的滑稽场面",
+        "exact": false,
+        "bigram_coverage": 0.125,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0308,
+    "scene_evidence": [
+      {
+        "location": "河湾镇社区文化中心",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_017_CALL_LOG",
+        "display_name": "电台热线点播记录表",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.031，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“观众自发合唱场景”",
+      "正文没有兑现章卡关键事实“电台热线激增的数据”",
+      "正文没有兑现章卡关键事实“音响故障的滑稽场面”",
+      "正文没有写出本章正式创建的关键对象“电台热线点播记录表”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.031，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“观众自发合唱场景”",
+      "正文没有兑现章卡关键事实“电台热线激增的数据”",
+      "正文没有兑现章卡关键事实“音响故障的滑稽场面”",
+      "正文没有写出本章正式创建的关键对象“电台热线点播记录表”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

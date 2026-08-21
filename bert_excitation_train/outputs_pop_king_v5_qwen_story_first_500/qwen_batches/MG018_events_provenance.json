@@ -1,0 +1,30 @@
+{
+  "generated_by": "qwen",
+  "kind": "events",
+  "identifier": "MG018",
+  "accepted_attempt": 1,
+  "base_prompt_sha256": "482765b83ee5614397b3840ef4e4cc333813f6f00104d725c43dcfab959018a7",
+  "manual_edits": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "created_at": "2026-08-08T20:03:41+08:00",
+      "prompt_sha256": "482765b83ee5614397b3840ef4e4cc333813f6f00104d725c43dcfab959018a7",
+      "raw_response_sha256": "37652a645fbc9ba259a3e7bd662aa1e6434ac19838c7bcf42d38322ed902eddd",
+      "repeated_previous_response": false,
+      "raw_response_file": "MG018_events_attempt_01_raw.txt",
+      "validation_failures": [],
+      "model": "qwen-plus",
+      "transport": "dashscope_sdk",
+      "elapsed_seconds": 104.252,
+      "usage": {
+        "input_tokens": 16108,
+        "output_tokens": 6811,
+        "total_tokens": 22919,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

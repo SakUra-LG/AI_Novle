@@ -9,7 +9,7 @@
       "acquire_chapter": 9,
       "verify_chapter": 9,
       "use_chapter": 10,
-      "purpose": "卡尔失去舞台机关指挥权，独立安全总监获得停机权，麦珂取得最终启停否决权",
+      "purpose": "卡尔失去舞台机关指挥权；独立安全总监获得停机权；麦珂取得最终启停否决权",
       "acquire_keywords": [
         "等重沙袋",
         "提前"
@@ -31,7 +31,7 @@
       "acquire_chapter": 9,
       "verify_chapter": 9,
       "use_chapter": 10,
-      "purpose": "卡尔失去舞台机关指挥权，独立安全总监获得停机权，麦珂取得最终启停否决权",
+      "purpose": "卡尔失去舞台机关指挥权；独立安全总监获得停机权；麦珂取得最终启停否决权",
       "acquire_keywords": [
         "升降台",
         "提前"
@@ -53,7 +53,7 @@
       "acquire_chapter": 9,
       "verify_chapter": 9,
       "use_chapter": 10,
-      "purpose": "卡尔失去舞台机关指挥权，独立安全总监获得停机权，麦珂取得最终启停否决权",
+      "purpose": "卡尔失去舞台机关指挥权；独立安全总监获得停机权；麦珂取得最终启停否决权",
       "acquire_keywords": [
         "控制器",
         "提前"
@@ -75,7 +75,7 @@
       "acquire_chapter": 10,
       "verify_chapter": 10,
       "use_chapter": 10,
-      "purpose": "卡尔失去舞台机关指挥权，独立安全总监获得停机权，麦珂取得最终启停否决权",
+      "purpose": "卡尔失去舞台机关指挥权；独立安全总监获得停机权；麦珂取得最终启停否决权",
       "acquire_keywords": [
         "控制器操作日志",
         "提前"
@@ -97,7 +97,7 @@
       "acquire_chapter": 10,
       "verify_chapter": 10,
       "use_chapter": 10,
-      "purpose": "卡尔失去舞台机关指挥权，独立安全总监获得停机权，麦珂取得最终启停否决权",
+      "purpose": "卡尔失去舞台机关指挥权；独立安全总监获得停机权；麦珂取得最终启停否决权",
       "acquire_keywords": [
         "未签字验收单",
         "提前"
@@ -121,22 +121,41 @@
     "无规划的关键证人"
   ],
   "chapter_execution_focus": {
-    "9": "要求升降台先用等重沙袋完成三轮空载验收→卡尔嫌安全流程耽误彩排，抢过控制器按下他私改的快捷程序→沙袋提前十秒坠下，麦珂当场叫停真人登台并保住所有舞者安全",
-    "10": "调出控制器操作日志与未签字验收单，在全体舞者面前要求重新表决安全负责人→卡尔还想把坠落说成‘舞台效果’，却被自己按键时间和抢功话术反卡→卡尔失去舞台机关指挥权，独立安全总监获得停机权，麦珂取得最终启停否决权"
+    "9": "要求升降台先用等重沙袋完成三轮空载验收→卡尔嫌安全流程耽误彩排，抢过控制器按下他私改的快捷程序→保住所有舞者安全",
+    "10": "调出控制器操作日志与未签字验收单，在全体舞者面前要求重新表决安全负责人→卡尔还想把坠落说成‘舞台效果’，却被自己按键时间和抢功话术反卡→卡尔失去舞台机关指挥权；独立安全总监获得停机权；麦珂取得最终启停否决权"
   },
   "scene_contracts": {
     "9": {
       "version": 1,
       "source": "event_cluster_milestone",
       "scene_archetype": "physical_safety_validation",
+      "scene_variant": "",
       "phase": "setup",
       "protagonist": "麦珂·杰森",
       "opponent": "卡尔·霍尔特",
       "opponent_scene_actor": "卡尔·霍尔特",
+      "supporting_cast": [],
+      "supporting_organizations": [],
       "old_trap_signal": "记得升降台会在第三次口令后提前十秒启动，以及卡尔把安全测试伪装成已完成。",
       "trigger_action": "要求升降台先用等重沙袋完成三轮空载验收",
       "opponent_self_incrimination": "卡尔嫌安全流程耽误彩排，抢过控制器按下他私改的快捷程序",
+      "initial_opponent_reaction": "卡尔嫌安全流程耽误彩排，抢过控制器按下他私改的快捷程序",
+      "emergent_opponent_reaction": "",
+      "evidence_result": "沙袋提前十秒坠下",
+      "decision_result": "麦珂当场叫停真人登台",
       "established_evidence_carriers": [],
+      "initial_evidence_carriers": [
+        "等重沙袋",
+        "升降台"
+      ],
+      "action_evidence_carriers": [],
+      "initial_opposition_evidence_carriers": [
+        "控制器"
+      ],
+      "opposition_evidence_carriers": [],
+      "evidence_result_evidence_carriers": [],
+      "decision_result_evidence_carriers": [],
+      "result_evidence_carriers": [],
       "current_evidence_carriers": [
         "等重沙袋",
         "升降台",
@@ -148,11 +167,12 @@
         "控制器"
       ],
       "verification_action": "要求升降台先用等重沙袋完成三轮空载验收",
-      "immediate_result": "沙袋提前十秒坠下，麦珂当场叫停真人登台并保住所有舞者安全",
+      "immediate_result": "保住所有舞者安全",
+      "raw_immediate_result": "沙袋提前十秒坠下，麦珂当场叫停真人登台并保住所有舞者安全",
       "authority_actor": "麦珂·杰森",
       "authority_gain": "",
-      "opponent_loss": "",
-      "protagonist_gain": "麦珂当场叫停真人登台并保住所有舞者安全",
+      "opponent_loss": "卡尔失去舞台机关指挥权",
+      "protagonist_gain": "麦珂取得安全总监直接停机权",
       "settlement_required": false,
       "forbidden_mechanics": [
         "匿名材料",
@@ -169,18 +189,35 @@
       "version": 1,
       "source": "event_cluster_milestone",
       "scene_archetype": "physical_safety_validation",
+      "scene_variant": "",
       "phase": "settlement",
       "protagonist": "麦珂·杰森",
       "opponent": "卡尔·霍尔特",
       "opponent_scene_actor": "卡尔·霍尔特",
+      "supporting_cast": [],
+      "supporting_organizations": [],
       "old_trap_signal": "记得升降台会在第三次口令后提前十秒启动，以及卡尔把安全测试伪装成已完成。",
       "trigger_action": "调出控制器操作日志与未签字验收单，在全体舞者面前要求重新表决安全负责人",
       "opponent_self_incrimination": "卡尔还想把坠落说成‘舞台效果’，却被自己按键时间和抢功话术反卡",
+      "initial_opponent_reaction": "卡尔还想把坠落说成‘舞台效果’，却被自己按键时间和抢功话术反卡",
+      "emergent_opponent_reaction": "",
+      "evidence_result": "",
+      "decision_result": "",
       "established_evidence_carriers": [
         "等重沙袋",
         "升降台",
         "控制器"
       ],
+      "initial_evidence_carriers": [
+        "控制器操作日志",
+        "未签字验收单"
+      ],
+      "action_evidence_carriers": [],
+      "initial_opposition_evidence_carriers": [],
+      "opposition_evidence_carriers": [],
+      "evidence_result_evidence_carriers": [],
+      "decision_result_evidence_carriers": [],
+      "result_evidence_carriers": [],
       "current_evidence_carriers": [
         "控制器操作日志",
         "未签字验收单"
@@ -192,7 +229,8 @@
         "未签字验收单"
       ],
       "verification_action": "调出控制器操作日志与未签字验收单，在全体舞者面前要求重新表决安全负责人",
-      "immediate_result": "卡尔失去舞台机关指挥权，独立安全总监获得停机权，麦珂取得最终启停否决权",
+      "immediate_result": "卡尔失去舞台机关指挥权；独立安全总监获得停机权；麦珂取得最终启停否决权",
+      "raw_immediate_result": "卡尔失去舞台机关指挥权，独立安全总监获得停机权，麦珂取得最终启停否决权",
       "authority_actor": "独立安全总监",
       "authority_gain": "独立安全总监获得停机权",
       "opponent_loss": "卡尔失去舞台机关指挥权",
@@ -213,9 +251,9 @@
   "payoff_sequence": [
     "要求升降台先用等重沙袋完成三轮空载验收",
     "卡尔嫌安全流程耽误彩排，抢过控制器按下他私改的快捷程序",
-    "沙袋提前十秒坠下，麦珂当场叫停真人登台并保住所有舞者安全",
+    "保住所有舞者安全",
     "调出控制器操作日志与未签字验收单，在全体舞者面前要求重新表决安全负责人",
     "卡尔还想把坠落说成‘舞台效果’，却被自己按键时间和抢功话术反卡",
-    "卡尔失去舞台机关指挥权，独立安全总监获得停机权，麦珂取得最终启停否决权"
+    "卡尔失去舞台机关指挥权；独立安全总监获得停机权；麦珂取得最终启停否决权"
   ]
 }

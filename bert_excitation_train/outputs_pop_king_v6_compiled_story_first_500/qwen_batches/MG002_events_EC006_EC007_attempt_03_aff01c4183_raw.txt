@@ -1,0 +1,348 @@
+{
+  "macro_group_id": "MG002",
+  "event_clusters": [
+    {
+      "cluster_id": "EC006",
+      "chapter_span": [11, 12],
+      "source_event_direction": "前世具体受害：乔纳以巡演为由将麦珂单独送往银湾市，切断母子日常联系导致监护失控。；本事件独有的前世信息差：前世乔纳在1970年3月强行签署的异地居住协议中隐瞒了学校转接条款。；今生提前动作：麦珂当众复述旧日原话要求母亲当场否决任何未经家庭会议同意的行程变更。；第11章可见小赢：玛莎拒绝签署异地协议并坚持麦珂继续留在河湾镇本地小学就读。；第12章新交锋：乔纳试图以‘行业标准’施压，被温特律师出示新修订的家庭监护备忘录当场驳回。；阻力方永久现实损失：乔纳彻底失去单方面安排未成年人巡演居住地的决策权与代理资格。；主角现实收益：麦珂获得法律确认的独立生活空间，确保学业与演唱互不冲突且由母亲全权监管。；不可逆结算键：家庭监护边界锁定_河湾镇；接回死亡控制主线：阻断前世因异地隔离导致的医疗延误链条。",
+      "source_event_direction_sha256": "ef0271263543499c7bb0e0568c3cc3923a84701d6917e155878dd45401c36c13",
+      "source_macro_sha256": "d6cd669f66bf3b637c80321f1304d55a0c8cc8947132479b1011895b2c41b309",
+      "name": "河湾镇的铁壁：乔纳的异地陷阱",
+      "timeline_years": "1970",
+      "main_opponent": "乔纳·杰森",
+      "opposition_type": "family",
+      "event_type": "family_relationship",
+      "solution_type": "relationship_choice",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["CS01"],
+      "foreshadow_ids": [],
+      "main_characters": ["麦珂·杰森", "玛莎·杰森", "乔纳·杰森", "埃德加·温特"],
+      "fictional_obstacle": "乔纳利用一份看似标准的《巡演期间临时监护协议》，试图在麦珂不知情的情况下将其户籍临时迁移至银湾市，以此规避当地小学的学籍管理，为长期隔离母子制造合法借口。",
+      "prev_life_tragedy": "上一世麦珂在三月被独自送往银湾市，因距离过远导致突发喉炎时无法及时送医，且母亲被切断通讯，最终因延误治疗引发永久性声带损伤。",
+      "info_gap_from_prev_life": "记得乔纳在1970年3月14日的协议草案中，将‘学校转接’条款隐藏在附件B的第3条小字里，且口头承诺‘只是短期探亲’。",
+      "why_previous_life_failed": "乔纳利用玛莎对行业流程的不熟悉，将关键条款伪装成常规行政手续，且当时玛莎未建立独立核查机制。",
+      "preemptive_avoidance": "麦珂在协议宣读现场，直接复述前世听到的乔纳那句敷衍的‘只是走个形式’，并要求母亲暂停签字，直到黛安娜核实所有附件。",
+      "bait_and_evidence": "乔纳故意留下附件B作为诱饵，声称是‘标准模板’；麦珂让黛安娜当场朗读附件B第3条，形成书面记录证明其存在隐瞒意图。",
+      "comic_villain_behavior": "乔纳一边说着‘为了孩子前途’，一边手忙脚乱地翻找那份被藏起来的复印件，结果不小心把咖啡洒在了协议上，显得既贪婪又狼狈。",
+      "villain_loss": "乔纳失去单方面决定未成年人居住地及转学的权利，其作为临时监护人的代理资格被正式吊销。",
+      "protagonist_gain": "麦珂获得法律确认的河湾镇固定居所权，确保学业不受干扰，且母亲拥有绝对否决权。",
+      "relationship_change": "玛莎彻底从依赖丈夫转变为独立监护人，母子同盟关系升级为核心决策模式。",
+      "continuity_writes": ["玛莎已完全掌握家庭会议制度", "乔纳的临时监护权被剥夺", "河湾镇小学学籍锁定"],
+      "state_transitions": [
+        {
+          "domain": "relationship",
+          "entity_id": "REL_002",
+          "state_key": "trust_dynamic",
+          "from": "母子共同决策+母亲独立核查（初步）",
+          "to": "母子共同决策+母亲独立核查（完全确立）",
+          "irreversible": true,
+          "evidence": "玛莎在乔纳试图强行签字时，当众撕毁协议副本并宣布终止其代理权",
+          "effect_type": "relationship_change"
+        },
+        {
+          "domain": "job",
+          "entity_id": "CHAR_JONAS_001",
+          "state_key": "guardianship_authority",
+          "from": "拥有临时监护权（受限制）",
+          "to": "无监护权（被禁止介入）",
+          "irreversible": true,
+          "evidence": "温特律师出示新修订的备忘录，明确列出乔纳无权决定居住地",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "location",
+          "entity_id": "LOC_RIVERBAY_001",
+          "state_key": "student_enrollment_status",
+          "from": "待定（可能被转学）",
+          "to": "河湾镇公立小学在读（锁定）",
+          "irreversible": true,
+          "evidence": "学校校长收到玛莎的正式保留函件，确认麦珂继续留校",
+          "effect_type": "world_state"
+        }
+      ],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "乔纳的异地隔离计划彻底破产，麦珂成功留在河湾镇，玛莎确立了绝对的家庭决策权威，切断了前世因隔离导致的医疗延误链条。",
+      "next_event_hook": "乔纳恼羞成怒，试图向制作方投诉麦珂‘不配合巡演安排’，这将成为下一章媒体舆论战的导火索。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 11,
+          "timeline_start": "1970-03-14",
+          "timeline_end": "1970-03-14",
+          "scene": "杰森家客厅",
+          "chapter_goal": "识破乔纳的协议陷阱，阻止签署",
+          "chapter_title": "被隐藏的第三条",
+          "participants": ["麦珂·杰森", "玛莎·杰森", "乔纳·杰森"],
+          "opening_conflict": "乔纳拿着厚厚一叠文件，催促玛莎在‘巡演准备协议’上签字，声称这是行业标准流程。",
+          "info_gap_use": "麦珂突然打断，复述前世乔纳曾说过的‘只是走个形式，不用细看’，指出附件B第3条关于‘学校转接’的内容。",
+          "opponent_reaction": "乔纳脸色一变，试图合上文件，辩称那是‘笔误’，但眼神慌乱。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "杰森家客厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "开场即冲突"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_DOC_011_A",
+              "timeline_scope": "current",
+              "display_name": "杰森家会议纪要_0314",
+              "kind": "document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_PREV_DEATH_NOTE",
+              "timeline_scope": "previous_life",
+              "purpose": "麦珂回忆前世乔纳的谎言作为判断依据，但不作为证据展示"
+            }
+          ],
+          "action_sequence": [
+            "麦珂大声读出附件B第3条内容，质疑为何需要转学。",
+            "乔纳试图用‘行业标准’压制，称未成年人必须随团流动。",
+            "玛莎在黛安娜的提醒下，拿起笔，但没有签字，而是开始记录异议。",
+            "麦珂提出暂停协议，要求先召开家庭会议讨论。"
+          ],
+          "visible_payoff": "玛莎当场拒绝签字，乔纳被迫收回文件，协议签署失败。",
+          "ending": "乔纳愤然离场，临走前威胁说‘你会后悔的’，麦珂感到一丝不安，但玛莎坚定地握住他的手。",
+          "must_include": ["麦珂复述前世原话", "玛莎拒绝签字", "黛安娜在场见证"],
+          "must_not_include": ["乔纳被正式起诉", "温特律师出场", "最终判决结果"],
+          "detailed_synopsis": "1970年3月14日，乔纳带着《巡演期间临时监护协议》闯入客厅，试图让玛莎签字将麦珂送往银湾市。麦珂凭借前世记忆，敏锐捕捉到乔纳那句敷衍的‘只是走个形式’，当即指出附件B第3条隐藏的学校转接条款。乔纳惊慌失措，试图掩盖，但玛莎在黛安娜的协助下，当场拒绝签字，并记录下乔纳的谎言。乔纳愤然离去，留下未完成的协议。麦珂的小胜在于成功阻止了第一次隔离尝试，但乔纳的怨恨已埋下伏笔。"
+        },
+        {
+          "chapter_id": 12,
+          "timeline_start": "1970-03-15",
+          "timeline_end": "1970-03-15",
+          "scene": "温特律师事务所",
+          "chapter_goal": "通过法律程序彻底剥夺乔纳的代理权",
+          "chapter_title": "备忘录的法律效力",
+          "participants": ["麦珂·杰森", "玛莎·杰森", "埃德加·温特", "乔纳·杰森"],
+          "opening_conflict": "乔纳再次上门，这次带着律师（或声称代表公司），试图以‘行业标准’强制要求麦珂接受异地安排。",
+          "info_gap_use": "麦珂提前告知温特律师乔纳会使用的具体话术和伪造的‘行业标准’文件编号。",
+          "opponent_reaction": "乔纳看到温特律师拿出早已准备好的备忘录，目瞪口呆，发现自己精心设计的陷阱被全盘托出。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "温特律师事务所",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "场景切换至律所"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_DOC_001",
+              "timeline_scope": "current",
+              "purpose": "引用之前的会议纪要作为家庭决策的依据"
+            },
+            {
+              "artifact_id": "ART_DOC_011_A",
+              "timeline_scope": "current",
+              "purpose": "作为本次冲突的记录证据"
+            }
+          ],
+          "action_sequence": [
+            "乔纳拿出新的‘行业标准’文件，声称麦珂必须服从。",
+            "温特律师平静地拿出《演出健康备忘录》P01-001，指出其中明确规定‘未成年人居住地需经家庭会议一致同意’。",
+            "麦珂当众朗读备忘录条款，强调乔纳无权单方面决定。",
+            "温特律师正式通知乔纳，其代理资格已被撤销，并记录在案。"
+          ],
+          "visible_payoff": "乔纳的第二次尝试彻底失败，法律文件确认他无权干涉麦珂的居住和教育。",
+          "ending": "乔纳灰溜溜地离开，玛莎和麦珂相视一笑，家庭防线固若金汤。",
+          "must_include": ["温特律师出示备忘录", "乔纳被正式剥夺权利", "家庭会议制度的法律效力"],
+          "must_not_include": ["乔纳被捕", "麦珂离开河湾镇", "新的阴谋出现"],
+          "detailed_synopsis": "次日，乔纳带着所谓的‘行业标准’文件再次来到温特律师事务所，企图以公司名义强制麦珂前往银湾市。然而，温特律师早已根据麦珂提供的信息，拿出了刚签署生效的《演出健康备忘录》。麦珂当众朗读备忘录中关于‘居住地需家庭会议同意’的条款，彻底击碎了乔纳的借口。乔纳面对铁证，哑口无言，最终被正式剥夺了单方面决定麦珂居住地的权利。玛莎看着儿子坚定的眼神，心中充满了安全感，家庭决策机制真正落地。"
+        }
+      ]
+    },
+    {
+      "cluster_id": "EC007",
+      "chapter_span": [13, 14],
+      "source_event_direction": "前世具体受害：制作方利用预录带冒充现场录音制造假唱丑闻，迫使麦珂背负诚信污点。；本事件独有的前世信息差：前世节目组在1970年5月直播前故意切断麦珂风信号并播放提前灌制的磁带。；今生提前动作：麦珂提前向导演组提交‘三秒停顿’技术指令并要求全程开启双通道现场收音。；第13章可见小赢：直播现场麦珂清唱副歌并精准执行停顿，证明声音完全来自本人且无剪辑痕迹。；第14章新交锋：当制作方试图切换备用音轨时，主持人当场展示实时波形图揭露其造假企图。；阻力方永久现实损失：制作方丧失操控麦珂公众形象的叙事主导权，被迫公开承认技术失误。；主角现实收益：麦珂确立‘零假唱’的行业信誉标杆，获得地方电台连续三周的独家专访邀约。；不可逆结算键：现场清唱验证通过；接回死亡控制主线：消除前世因虚假指控导致的心理创伤与合约纠纷。",
+      "source_event_direction_sha256": "c1925c1012da2a8e3366b653caff4ad8eba5a2a23fea9782074483ad85bd4464",
+      "source_macro_sha256": "d6cd669f66bf3b637c80321f1304d55a0c8cc8947132479b1011895b2c41b309",
+      "name": "无声的三秒：直播间的真相",
+      "timeline_years": "1970",
+      "main_opponent": "巴里·布鲁姆",
+      "opposition_type": "institutional",
+      "event_type": "media_reputation",
+      "solution_type": "public_confrontation",
+      "death_chain_role": "reveal",
+      "causal_spine_ids": ["CS01"],
+      "foreshadow_ids": ["FS01"],
+      "main_characters": ["麦珂·杰森", "巴里·布鲁姆", "主持人汤姆·哈里斯", "黛安娜·罗文"],
+      "fictional_obstacle": "制作方计划在直播中切断现场收音，播放预先录制好的完美版磁带，一旦麦珂在现场开口，就指责其‘对口型’或‘走调’，制造假唱丑闻。",
+      "prev_life_tragedy": "上一世直播时信号被切断，观众听到的是完美录音，而麦珂现场开口却被说是‘假唱’，导致其声誉受损，被迫接受苛刻的后期修音合同。",
+      "info_gap_from_prev_life": "记得节目组在1970年5月10日直播前，会在副歌开始前切断现场信号，并切换到备用音轨。",
+      "why_previous_life_failed": "麦珂当时缺乏技术知识，无法识别信号切换，且制作方控制了所有设备。",
+      "preemptive_avoidance": "麦珂提前向导演组提交‘三秒停顿’技术指令，要求全程开启双通道现场收音，并在副歌处预留物理停顿。",
+      "bait_and_evidence": "麦珂主动要求在直播中清唱副歌，并邀请主持人现场监测波形；制作方为了掩盖，试图在关键时刻切换音轨，但被实时波形图暴露。",
+      "comic_villain_behavior": "巴里·布鲁姆在后台急得满头大汗，一边指挥技术人员切换音轨，一边对着对讲机大喊‘快切！快切！’，结果因为太紧张按错了按钮，导致现场出现刺耳的噪音。",
+      "villain_loss": "制作方丧失操控麦珂公众形象的叙事主导权，被迫公开承认技术失误，声誉受损。",
+      "protagonist_gain": "麦珂确立‘零假唱’的行业信誉标杆，获得地方电台连续三周的独家专访邀约。",
+      "relationship_change": "麦珂与主持人的信任加深，成为其长期合作伙伴。",
+      "continuity_writes": ["麦珂‘三秒停顿’艺术主张得到官方认证", "制作方技术失误被公开记录", "麦珂获得独家专访权"],
+      "state_transitions": [
+        {
+          "domain": "reputation",
+          "entity_id": "CHAR_MK_001",
+          "state_key": "industry_credibility",
+          "from": "面临假唱指控风险",
+          "to": "确立‘零假唱’行业信誉标杆",
+          "irreversible": true,
+          "evidence": "直播中麦珂清唱副歌并精准执行停顿，波形图显示无剪辑痕迹",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "reputation",
+          "entity_id": "ORG_PROD_001",
+          "state_key": "narrative_control",
+          "from": "拥有操控麦珂形象的权力",
+          "to": "丧失叙事主导权（被迫承认失误）",
+          "irreversible": true,
+          "evidence": "主持人展示实时波形图揭露造假企图，制作方无法辩驳",
+          "effect_type": "villain_loss"
+        },
+        {
+          "domain": "asset",
+          "entity_id": "RIGHT_MK_003",
+          "state_key": "interview_rights",
+          "from": "无专属采访权",
+          "to": "获得地方电台连续三周独家专访权",
+          "irreversible": true,
+          "evidence": "多家电台主动联系争取独家报道",
+          "effect_type": "protagonist_gain"
+        }
+      ],
+      "historical_anchor_ids": ["FICTION_ONLY"],
+      "cluster_outcome": "麦珂在直播中成功证明自己的声音真实性，制作方的造假企图被当众揭穿，其声誉受损，麦珂则确立了行业信誉标杆。",
+      "next_event_hook": "直播风波后，制作方内部开始调查，巴里·布鲁姆被停职，但这只是开始，更大的风暴正在酝酿。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 13,
+          "timeline_start": "1970-05-10",
+          "timeline_end": "1970-05-10",
+          "scene": "晨光电台演播厅",
+          "chapter_goal": "完成直播清唱，证明声音真实性",
+          "chapter_title": "三秒的真空",
+          "participants": ["麦珂·杰森", "巴里·布鲁姆", "主持人汤姆·哈里斯"],
+          "opening_conflict": "直播即将开始，巴里·布鲁姆暗中指示技术人员准备切断现场信号，播放预录带。",
+          "info_gap_use": "麦珂提前向导演组提交了‘三秒停顿’的技术指令，要求全程开启双通道现场收音，并在副歌处预留物理停顿。",
+          "opponent_reaction": "巴里·布鲁姆在后台紧张地观察监视器，发现现场收音未被切断，脸色阴沉。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "晨光电台演播厅",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "开场即直播现场"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_REC_013_A",
+              "timeline_scope": "current",
+              "display_name": "直播现场双通道录音带",
+              "kind": "recording"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_DOC_001",
+              "timeline_scope": "current",
+              "purpose": "引用之前的会议纪要作为家庭决策的依据"
+            }
+          ],
+          "action_sequence": [
+            "麦珂在直播中清唱主歌部分，声音清晰自然。",
+            "进入副歌前，麦珂按照指令精准执行了三秒停顿，全场屏息。",
+            "主持人汤姆·哈里斯当场询问观众是否听到了现场收音。",
+            "麦珂在停顿后继续演唱，声音毫无瑕疵，证明是现场真唱。"
+          ],
+          "visible_payoff": "麦珂的清唱完美无瑕，三秒停顿成为经典瞬间，观众掌声雷动。",
+          "ending": "直播结束，巴里·布鲁姆在后台气得跺脚，但无法反驳现场的录音证据。",
+          "must_include": ["麦珂清唱副歌", "三秒停顿执行", "现场收音未被切断"],
+          "must_not_include": ["制作方承认造假", "巴里被停职", "后续专访安排"],
+          "detailed_synopsis": "1970年5月10日，晨光电台直播现场，巴里·布鲁姆暗中指示技术人员切断现场信号，准备播放预录带。然而，麦珂提前提交了‘三秒停顿’的技术指令，要求全程开启双通道现场收音。直播中，麦珂清唱主歌，进入副歌前精准执行了三秒停顿，全场屏息。随后他继续演唱，声音毫无瑕疵，证明是现场真唱。主持人汤姆·哈里斯当场确认现场收音正常，观众掌声雷动。巴里·布鲁姆在后台气得跺脚，但无法反驳现场的录音证据。"
+        },
+        {
+          "chapter_id": 14,
+          "timeline_start": "1970-05-10",
+          "timeline_end": "1970-05-10",
+          "scene": "晨光电台演播厅后台",
+          "chapter_goal": "揭露制作方造假企图，确立麦珂信誉",
+          "chapter_title": "波形图的审判",
+          "participants": ["麦珂·杰森", "巴里·布鲁姆", "主持人汤姆·哈里斯", "黛安娜·罗文"],
+          "opening_conflict": "直播结束后，制作方试图宣称麦珂是‘对口型’，并指责现场收音设备故障。",
+          "info_gap_use": "麦珂提前准备了实时波形图，证明声音完全来自本人且无剪辑痕迹。",
+          "opponent_reaction": "巴里·布鲁姆试图狡辩，但被主持人展示的波形图打得措手不及。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "晨光电台演播厅后台",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "场景切换至后台"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_REC_013_A",
+              "timeline_scope": "current",
+              "purpose": "展示实时波形图，证明声音来源"
+            }
+          ],
+          "action_sequence": [
+            "主持人汤姆·哈里斯拿出实时波形图，展示声音的连续性。",
+            "麦珂解释‘三秒停顿’的设计初衷，证明其独特性。",
+            "巴里·布鲁姆试图否认，但被现场工作人员指出操作失误。",
+            "制作方被迫公开承认技术失误，并向麦珂道歉。"
+          ],
+          "visible_payoff": "制作方被迫公开承认技术失误，麦珂确立‘零假唱’行业信誉标杆。",
+          "ending": "多家电台主动联系争取独家报道，麦珂的未来充满希望。",
+          "must_include": ["主持人展示波形图", "制作方承认失误", "麦珂获得独家专访权"],
+          "must_not_include": ["巴里被正式起诉", "麦珂离开电台", "新的阴谋出现"],
+          "detailed_synopsis": "直播结束后，制作方试图宣称麦珂是‘对口型’，并指责现场收音设备故障。然而，主持人汤姆·哈里斯当场展示了实时波形图，证明声音完全来自本人且无剪辑痕迹。麦珂解释了‘三秒停顿’的设计初衷，证明其独特性。巴里·布鲁姆试图狡辩，但被现场工作人员指出操作失误。制作方被迫公开承认技术失误，并向麦珂道歉。多家电台主动联系争取独家报道，麦珂的未来充满希望。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1970",
+    "character_states": [
+      "麦珂：确立创作者身份，掌握自我定义权，喉部健康状况稳定",
+      "玛莎：彻底确立家庭决策机制，不再依赖行业惯例",
+      "乔纳：失去单方面安排未成年人巡演居住地的决策权与代理资格",
+      "巴里：声誉受损，被停职调查中",
+      "黛安娜：升级为麦珂的法律助理，负责整理所有听证会记录与媒体回应"
+    ],
+    "relationship_states": [
+      "麦珂与玛莎：母子同盟，共同对抗外部压力，决策权完全转移至母亲",
+      "麦珂与温特律师：建立基于纸本存证的信任关系",
+      "麦珂与巴里：公开对立，巴里失去话语权"
+    ],
+    "rights_and_assets": [
+      "麦珂：保留母带原件所有权，新增‘教材修订特别授权书’（仅限非独家）",
+      "《演出健康备忘录》P01-001正式升级为‘儿童艺人权益保护示范案’",
+      "麦珂获得地方电台连续三周的独家专访邀约"
+    ],
+    "health_and_location": [
+      "麦珂仍居河湾镇原居所，晨间喉部监测频率增加至每日两次，健康状况稳定",
+      "地理位置未变动"
+    ],
+    "open_threads": [
+      "维克多·兰斯虽受挫但未放弃，暗中联络联邦贸易委员会启动‘行业标准审查’",
+      "《晨光电台》删减副歌的完整旋律轮廓仍未被公众知晓，麦珂计划将其作为下一张专辑的核心悬念"
+    ],
+    "resolved_threads": [
+      "乔纳单方面安排未成年人巡演居住地的企图被挫败",
+      "制作方利用预录带冒充现场录音的造假企图被当众揭穿"
+    ],
+    "introduced_characters": [],
+    "next_pressure": "联邦贸易委员会的‘行业标准审查’正式启动，要求麦珂提供1969年试镜时的全部原始录音与手写笔记，这直接触发了‘纸船纪’创作计划的紧急启动——麦珂必须在48小时内完成一首能证明‘三秒停顿’合法性的全新原创曲目，否则将面临版权冻结风险。"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "cluster_id": "EC013",
+  "chapter_id": 25,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "a776bfa92966657b90e1fcf6be7d6455c2769ebc1bedf8368169394fdfa6163a",
+  "base_prompt_sha256": "a776bfa92966657b90e1fcf6be7d6455c2769ebc1bedf8368169394fdfa6163a",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "d48b28027dd9e77963e6200128625f121b03160f81f7a163b62d5a9334e628f0",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 13.355,
+    "usage": {
+      "prompt_tokens": 5732,
+      "completion_tokens": 1286,
+      "total_tokens": 7018,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 13,
+    "through_chapter": 26,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "9e694cba7e78221334b04bd8e9eb375eea184bbefc4bac0b85cd1c472b5e397c",
+    "chapter_card_prefix_sha256": "b9c17f8697dd63a204d1fc7408253957f850b5882948fe5ab45eeb0d15c58346",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "1b90532c57672565e33aa4ddd1aa4452b004114fd6fcdd5898637cbd9fe330ec"
+  },
+  "cluster_sha256": "65653e2f968c55f4c5890dfd46a643acd2c1996c7b668555eec8d5be92eb5818",
+  "card_sha256": "93de2badf1820473a89b4f6ce3a9d81268bec47af0747e4132fffcaf20b1c226",
+  "chapter_audit": {
+    "han_chars": 1792,
+    "total_chars": 2063,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "麦珂指出收据日期错误",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      },
+      {
+        "anchor": "黛安娜调取监控录像",
+        "exact": false,
+        "bigram_coverage": 0.25,
+        "matched": false
+      },
+      {
+        "anchor": "账户被即时冻结",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0413,
+    "scene_evidence": [
+      {
+        "location": "杰森家庭办公室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_FIN_AUDIT_001",
+        "display_name": "异常转账预警单",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有兑现章卡关键事实“麦珂指出收据日期错误”",
+      "正文没有兑现章卡关键事实“黛安娜调取监控录像”",
+      "正文没有兑现章卡关键事实“账户被即时冻结”",
+      "正文没有写出本章正式创建的关键对象“异常转账预警单”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“麦珂指出收据日期错误”",
+      "正文没有兑现章卡关键事实“黛安娜调取监控录像”",
+      "正文没有兑现章卡关键事实“账户被即时冻结”",
+      "正文没有写出本章正式创建的关键对象“异常转账预警单”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

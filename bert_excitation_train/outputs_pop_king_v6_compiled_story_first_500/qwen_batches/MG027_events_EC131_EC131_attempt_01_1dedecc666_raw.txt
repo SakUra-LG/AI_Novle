@@ -1,0 +1,185 @@
+{
+  "macro_group_id": "MG027",
+  "event_clusters": [
+    {
+      "cluster_id": "EC131",
+      "chapter_span": [261, 262],
+      "source_event_direction": "finance_business_legal_evidence",
+      "source_event_direction_sha256": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+      "source_macro_sha256": "x9y8z7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0",
+      "name": "物理介质验证与影印权陷阱",
+      "timeline_years": "1993",
+      "main_opponent": "维克多·斯特林 (Victor Sterling)",
+      "opposition_type": "villain",
+      "event_type": "finance_business",
+      "solution_type": "legal_evidence",
+      "death_chain_role": "pressure",
+      "causal_spine_ids": ["CS_1993_AUDIT_GAP", "CS_1983_OFFSHORE_ACQUISITION"],
+      "foreshadow_ids": ["FS_DATA_POLLUTION_PLAN"],
+      "main_characters": ["麦珂", "黛安娜", "瑟琳娜", "苏菲亚", "维克多·斯特林"],
+      "fictional_obstacle": "奥瑞恩集团试图利用1983年‘蓝盾离岸’收购案中仅持有影印权的漏洞，提交经篡改的复印件指控初声基金资金流向不明，企图在联邦审计第45天截止前冻结基金资产。",
+      "prev_life_tragedy": "前世因未察觉复印件法律效力缺陷，导致初声基金被强制冻结，麦珂被迫接受苛刻审计条款并失去医疗决策权。",
+      "info_gap_from_prev_life": "麦珂清楚记得1993年联邦审计法规第45天必须提交原始介质副本，否则视为证据无效；且知晓1983年收购案实为影印权而非运营权。",
+      "why_previous_life_failed": "前世过度依赖纸质文件的表面流转，未建立物理介质（纸张纹理、声学锚定）的验证机制，导致对手伪造文件得逞。",
+      "preemptive_avoidance": "麦珂指令苏菲亚将1983年蓝盾离岸收购协议原件封存于特制声学锚定保险柜，并提前起草《双轨创作信托协议》修订版。",
+      "bait_and_evidence": "斯特林故意抛出带有明显涂改痕迹的复印件作为‘新证据’，诱使审计方关注内容而忽略载体；黛安娜随即启动‘物理介质验证’仪式，利用声波共振技术比对纸张纹理。",
+      "comic_villain_behavior": "斯特林在听证现场因无法解释复印件为何没有原始纸张特有的‘纤维断裂声’，急得满头大汗，甚至试图用手帕擦拭文件上的灰尘以掩盖纹理差异，场面滑稽狼狈。",
+      "villain_loss": "奥瑞恩代表因未携带原件且无法解释复印件纹理差异，首次听证会资格被暂停，信誉受损。",
+      "protagonist_gain": "初声基金获得豁免提交复印件的特权，确立物理原件为唯一法律凭证地位，黛安娜晋升防御体系架构师。",
+      "relationship_change": "黛安娜在家庭会议中展现的决断力获瑟琳娜完全信任，夫妻信托关系更加稳固。",
+      "continuity_writes": ["P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）已部分解决，但数据污染风险浮现"],
+      "state_transitions": [
+        {
+          "domain": "legal_rights",
+          "entity_id": "RIGHT_VL_016:physical_medium_validation",
+          "state_key": "audit_compliance_status",
+          "from": "susceptible_to_forgery",
+          "to": "validated_by_physical_medium_only",
+          "irreversible": true,
+          "evidence": "ART_261_SOUNDFINGERPRINT_VERIFICATION",
+          "effect_type": "protagonist_gain"
+        },
+        {
+          "domain": "corporate_reputation",
+          "entity_id": "CORP_AUREON_1993",
+          "state_key": "audit_eligibility",
+          "from": "active_participant",
+          "to": "suspended_due_to_procedural_violation",
+          "irreversible": false,
+          "evidence": "TRANSCRIPT_HEARING_262",
+          "effect_type": "villain_loss"
+        }
+      ],
+      "historical_anchor_ids": ["HIST_1993_FEDERAL_AUDIT_RULES", "HIST_1983_BLUESHIELD_OFFSHORE"],
+      "cluster_outcome": "奥瑞恩集团代表被迫撤回指控并承认程序违规；《双轨创作信托协议》正式生效，初声基金财务透明度获业界公认；黛安娜晋升首席架构师；麦珂与瑟琳娜构建起坚不可摧的物理防御网。",
+      "next_event_hook": "奥瑞恩集团转向利用‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点。",
+      "two_chapter_structure": [
+        {
+          "chapter_id": 261,
+          "timeline_start": "1993-08-15",
+          "timeline_end": "1993-08-16",
+          "scene": "初声基金内部会议室",
+          "chapter_goal": "确立物理介质验证机制并写入协议草案，为次日听证会做法律铺垫。",
+          "chapter_title": "沉默的纸张：物理介质的觉醒",
+          "participants": ["麦珂", "黛安娜", "瑟琳娜", "苏菲亚"],
+          "opening_conflict": "瑟琳娜对引入复杂的物理验证流程表示疑虑，担心影响效率；黛安娜坚持认为这是对抗奥瑞恩的唯一手段。",
+          "info_gap_use": "麦珂引用前世记忆中的审计漏洞，指出复印件在1993年法规下将被视为无效证据。",
+          "opponent_reaction": "无直接对手，但通过回忆暗示斯特林即将发起的攻击。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "初声基金内部会议室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "黛安娜将一份泛黄的1983年文件投影到墙上，展示其独特的纤维结构。"
+            }
+          ],
+          "artifact_creates": [
+            {
+              "artifact_id": "ART_261_DRAFT_PROTOCOL",
+              "timeline_scope": "current",
+              "display_name": "《双轨创作信托协议（修订草案）》",
+              "kind": "legal_document"
+            }
+          ],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_255_MICROFILM_COPY",
+              "timeline_scope": "previous_life",
+              "purpose": "对比证明微缩胶片无法替代原始纸张的声学特征。"
+            }
+          ],
+          "action_sequence": [
+            "黛安娜提出将‘物理介质验证’写入协议，强调只有原始纸张能通过声学锚定测试。",
+            "瑟琳娜质疑流程繁琐，麦珂打断并展示前世因复印件导致的悲剧后果。",
+            "苏菲亚演示如何用简易设备读取纸张纹理的声学指纹，证明可行性。",
+            "三人达成一致，签署协议草案，确立物理原件为唯一法律凭证。"
+          ],
+          "visible_payoff": "协议草案获得瑟琳娜首肯，物理验证机制成为基金防御的核心。",
+          "ending": "会议结束，麦珂下令将关键原件封存，准备迎接即将到来的风暴。",
+          "must_include": ["黛安娜的坚定立场", "瑟琳娜的犹豫到支持", "声学指纹技术的初步演示"],
+          "must_not_include": ["斯特林的出现", "公开听证会场景"],
+          "detailed_synopsis": "在初声基金的封闭会议室里，气氛凝重。黛安娜站在投影幕布前，手中拿着一份1983年的旧文件，眼神锐利地扫过在场的每一个人。她提出了一项激进的建议：在《双轨创作信托协议》中加入‘物理介质验证’条款，规定所有法律凭证必须基于原始纸张，并通过声学锚定技术进行身份确认。瑟琳娜眉头紧锁，担忧这会增加不必要的行政负担，甚至可能延误审计进度。麦珂却在此时插话，他并未直接反驳，而是讲述了一个前世的故事——在那个平行时空里，正是由于接受了复印件作为有效证据，初声基金才被奥瑞恩集团利用影印权的漏洞冻结了资产，导致自己失去了医疗决策权。他的声音低沉而有力，仿佛带着一种穿越时空的痛楚。苏菲亚随后展示了她的最新成果：一套利用声波共振分析纸张纤维纹理的设备。当她将一张旧报纸放入仪器，屏幕立刻显示出独特的波形图，证明了每张纸都有独一无二的‘声音’。黛安娜抓住机会，进一步阐述如果对手提交复印件，这种‘声音’将无法匹配，从而直接判定为伪造。瑟琳娜看着麦珂坚定的眼神和苏菲亚手中的数据，终于松口，同意将这一条款写入草案。随着笔尖的沙沙声，新的防御体系正式诞生，一场针对奥瑞恩集团的反击战悄然拉开序幕。"
+        },
+        {
+          "chapter_id": 262,
+          "timeline_start": "1993-08-17",
+          "timeline_end": "1993-08-17",
+          "scene": "联邦税务审计听证室",
+          "chapter_goal": "在听证会上当场揭穿奥瑞恩提交的复印件伪造行为，使其证据链断裂。",
+          "chapter_title": "撕裂的谎言：声纹下的原罪",
+          "participants": ["麦珂", "黛安娜", "维克多·斯特林", "审计官", "瑟琳娜"],
+          "opening_conflict": "斯特林气势汹汹地提交了一份经过篡改的1983年票据复印件，指控初声基金资金流向不明，要求立即冻结资产。",
+          "info_gap_use": "麦珂利用前世记忆中的第45天规则，指出复印件在法律上无效，必须提供原始介质。",
+          "opponent_reaction": "斯特林震惊于麦珂的预判，试图强行辩解，却被黛安娜的技术演示逼入死角。",
+          "scenes": [
+            {
+              "sequence": 1,
+              "location": "联邦税务审计听证室",
+              "is_primary": true,
+              "temporal_mode": "current",
+              "transition_cue": "斯特林将一叠文件重重拍在桌上，扬起一阵灰尘。"
+            }
+          ],
+          "artifact_creates": [],
+          "artifact_refs": [
+            {
+              "artifact_id": "ART_261_DRAFT_PROTOCOL",
+              "timeline_scope": "current",
+              "purpose": "作为拒绝接收复印件的法律依据。"
+            },
+            {
+              "artifact_id": "ART_259_MICROFILM_BATCH",
+              "timeline_scope": "current",
+              "purpose": "作为原始数据的备份参照，虽未直接使用，但作为背景支撑。"
+            }
+          ],
+          "action_sequence": [
+            "斯特林提交复印件，声称这是最新的资金流向证据，语气咄咄逼人。",
+            "麦珂当场拒绝接收，引用新修订的协议条款和第45天法规，要求出示原始介质。",
+            "斯特林支支吾吾，辩称原件遗失，只能提供复印件，并试图用技术手段掩盖。",
+            "黛安娜启动声学验证设备，将复印件放入，发出刺耳的噪音，显示无有效指纹。",
+            "斯特林慌乱中试图用手帕擦拭文件，暴露了其急于掩盖真相的心理。",
+            "审计官宣布斯特林证据无效，暂停其听证资格。"
+          ],
+          "visible_payoff": "奥瑞恩代表的指控当场破产，初声基金获得豁免提交复印件的特权。",
+          "ending": "斯特林灰溜溜地离开，奥瑞恩集团颜面扫地，麦珂与黛安娜相视一笑，胜利在握。",
+          "must_include": ["斯特林的滑稽表现", "声学验证设备的成功运行", "审计官的裁决"],
+          "must_not_include": ["网络传播", "社交媒体曝光", "康拉德出场"],
+          "detailed_synopsis": "联邦税务审计听证室内，空气仿佛凝固。维克多·斯特林大步走到台前，将一叠厚厚的文件重重拍在桌面上，扬起一阵灰尘。他指着那些文件，高声宣称这是揭露初声基金资金流向不明的铁证，要求审计官立即冻结相关资产。然而，麦珂只是冷冷地看着他，没有丝毫退缩。他站起身，拿起那份刚刚签署的《双轨创作信托协议》，朗读了其中关于‘物理介质验证’的条款，并引用1993年联邦审计法规第45天的规定，明确指出复印件在法律上无效，必须提供原始介质。斯特林脸色一变，急忙辩解称原件已在转移过程中遗失，只能提供复印件。他试图用各种借口搪塞，甚至拿出了一些所谓的‘专家证言’来支持自己的说法。但黛安娜早已准备好了后手。她示意苏菲亚启动那台神秘的声学验证设备，将斯特林提交的复印件放入仪器中。瞬间，刺耳的噪音响彻整个大厅，屏幕上显示的波形图一片混乱，毫无规律可言。黛安娜平静地解释道：“这张纸没有‘声音’，因为它不是原件。”斯特林见状，慌了神，他手忙脚乱地试图用手帕擦拭文件上的灰尘，想掩盖纸张纹理的差异，这一幕引得在场众人哄堂大笑。审计官目睹了这一切，果断宣布斯特林提供的证据无效，并暂停其参与后续听证会的资格。斯特林狼狈不堪地退场，奥瑞恩集团的阴谋在这一刻彻底破产。麦珂与黛安娜相视一笑，心中充满了胜利的喜悦。他们知道，这只是开始，真正的较量才刚刚开始。"
+        }
+      ]
+    }
+  ],
+  "continuity_update": {
+    "current_year": "1993",
+    "character_states": [
+      {"character": "黛安娜", "state": "晋升为防御体系架构师，掌握物理介质验证核心技术"},
+      {"character": "麦珂", "state": "确立物理原件为唯一法律凭证，阻断前世资金链断裂路径"},
+      {"character": "瑟琳娜", "state": "完全信任黛安娜，确立在资产安全上的绝对否决权"}
+    ],
+    "relationship_states": [
+      {"relationship": "麦珂-瑟琳娜", "change": "夫妻信托关系更加稳固，共同构建防御网"},
+      {"relationship": "黛安娜-初声基金", "change": "从普通成员升级为首席架构师，全权接管财务合规审查"}
+    ],
+    "rights_and_assets": [
+      {"asset": "初声基金", "status": "获得豁免提交复印件特权，确立物理原件为唯一法律凭证"},
+      {"asset": "奥瑞恩集团", "status": "首次听证会资格被暂停，信誉受损"}
+    ],
+    "health_and_location": [
+      {"location": "联邦税务审计听证室", "status": "完成关键对决"},
+      {"health": "麦珂", "status": "保持健康，未受前世创伤影响"}
+    ],
+    "open_threads": [
+      "P07揭开纪录片背叛事件的关键索引（离岸票据影印权问题）已部分解决，但数据污染风险浮现",
+      "奥瑞恩集团转向更隐蔽的财务做空手段"
+    ],
+    "resolved_threads": [
+      "1993年联邦审计窗口期的物理介质验证危机"
+    ],
+    "introduced_characters": [
+      "维克多·斯特林 (Victor Sterling)"
+    ],
+    "next_pressure": "奥瑞恩集团转向利用‘数据污染’策略，‘健康趋势预测模型’的真实数据来源将成为下一块核心冲突点，迫使麦珂进入更深层次的科技与伦理博弈。"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "cluster_range": [16, 20],
+  "chapter_range": [31, 40],
+  "decision": "pass",
+  "body_manually_edited": false,
+  "coverage": {
+    "full_text_read": [31, 32, 39, 40],
+    "targeted_full_or_term_review": [35, 36, 37, 38],
+    "validator_recheck": [31, 32, 33, 34, 35, 36, 37, 38, 39, 40],
+    "qwen_raw_hash_and_body_equality": [31, 32, 33, 34, 35, 36, 37, 38, 39, 40],
+    "chapter_memory_presence": [31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+  },
+  "han_char_range": [1032, 1611],
+  "max_pair_longest_exact_repeat": 22,
+  "accepted_rough_edges": [
+    "第31至32章有一处未展开的袖口拉扯动作衔接，但不影响液压声学证据和17.3Hz制度结算"
+  ]
+}
