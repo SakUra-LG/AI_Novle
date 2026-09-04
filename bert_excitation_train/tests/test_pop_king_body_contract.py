@@ -9,7 +9,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from bert_excitation_train.scripts.v2.generate_pop_king_body_v5 import (
+from bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_body_v5 import (
     _base_single_chapter_prompt_sha256,
     _character_constraints_for_scene,
     _load_character_bible,
@@ -87,8 +87,9 @@ def test_prior_body_chain_changes_when_any_prior_chapter_changes(tmp_path: Path)
 
 
 def test_known_chapter_17_18_replay_is_rejected() -> None:
-    base = PROJECT_ROOT / "bert_excitation_train" / "outputs_pop_king_v5_qwen_story_first_500"
-    if not base.exists():
+    base = PROJECT_ROOT / "第一版本"
+    legacy_chapters = PROJECT_ROOT / "bert_excitation_train" / "outputs_pop_king_v5_qwen_story_first_500" / "chapters"
+    if not legacy_chapters.exists():
         return
     events = json.loads((base / "event_clusters_v2.json").read_text(encoding="utf-8"))
     cards = json.loads((base / "master_ctx_cards_v2.json").read_text(encoding="utf-8"))
@@ -99,7 +100,7 @@ def test_known_chapter_17_18_replay_is_rejected() -> None:
         "chapters": [
             {
                 "chapter_id": chapter_id,
-                "body": (base / "chapters" / f"chapter_{chapter_id:03d}.txt").read_text(encoding="utf-8"),
+                "body": (legacy_chapters / f"chapter_{chapter_id:03d}.txt").read_text(encoding="utf-8"),
             }
             for chapter_id in (17, 18)
         ],
@@ -118,7 +119,16 @@ def test_body_loader_accepts_only_contiguous_two_chapter_plan_prefix(tmp_path: P
         json.dumps([{"cluster_id": "EC001"}], ensure_ascii=False), encoding="utf-8"
     )
     (tmp_path / "master_ctx_cards_v2.json").write_text(
-        json.dumps([{"chapter_id": 1}, {"chapter_id": 2}], ensure_ascii=False), encoding="utf-8"
+        json.dumps([
+            {"chapter_id": 1, "cluster_id": "EC001", "timeline_start": "1969-01-01"},
+            {"chapter_id": 2, "cluster_id": "EC001", "timeline_start": "1969-01-02"},
+        ], ensure_ascii=False), encoding="utf-8"
+    )
+    (tmp_path / "chapter_synopses_v5_qwen_500.json").write_text(
+        json.dumps([
+            {"chapter_id": 1, "cluster_id": "EC001", "timeline_start": "1969-01-01"},
+            {"chapter_id": 2, "cluster_id": "EC001", "timeline_start": "1969-01-02"},
+        ], ensure_ascii=False), encoding="utf-8"
     )
     (tmp_path / "global_story_outline_v5_qwen_500.json").write_text(
         json.dumps({"title": "完整总纲"}, ensure_ascii=False), encoding="utf-8"

@@ -1,4 +1,4 @@
-from bert_excitation_train.scripts.v2.generate_pop_king_500_plan import (
+from bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_plan import (
     RESEARCH_ANCHORS,
     SOURCES,
     build,

@@ -4,7 +4,7 @@ import subprocess
 import unittest
 from unittest import mock
 
-from bert_excitation_train.scripts.qwen_transport import (
+from bert_excitation_train.scripts.novel_generation_v2.qwen_transport import (
     call_openai_compatible_via_curl,
     call_qwen_via_curl,
     list_openai_compatible_models_via_curl,
@@ -20,7 +20,7 @@ class QwenTransportTests(unittest.TestCase):
             return subprocess.CompletedProcess(command, 0, stdout="", stderr="")
 
         with mock.patch(
-            "bert_excitation_train.scripts.qwen_transport.subprocess.run", side_effect=fake_run,
+            "bert_excitation_train.scripts.novel_generation_v2.qwen_transport.subprocess.run", side_effect=fake_run,
         ):
             models = list_openai_compatible_models_via_curl(
                 api_key="test-key", endpoint="https://example.test/v1/models",
@@ -41,7 +41,7 @@ class QwenTransportTests(unittest.TestCase):
             return subprocess.CompletedProcess(command, 0, stdout="", stderr="")
 
         with mock.patch(
-            "bert_excitation_train.scripts.qwen_transport.subprocess.run",
+            "bert_excitation_train.scripts.novel_generation_v2.qwen_transport.subprocess.run",
             side_effect=fake_run,
         ):
             response = call_openai_compatible_via_curl(
@@ -66,7 +66,7 @@ class QwenTransportTests(unittest.TestCase):
             return subprocess.CompletedProcess(command, 0, stdout="", stderr="")
 
         with mock.patch(
-            "bert_excitation_train.scripts.qwen_transport.subprocess.run",
+            "bert_excitation_train.scripts.novel_generation_v2.qwen_transport.subprocess.run",
             side_effect=fake_run,
         ):
             call_openai_compatible_via_curl(
@@ -89,7 +89,7 @@ class QwenTransportTests(unittest.TestCase):
             return subprocess.CompletedProcess(command, 0, stdout="", stderr="")
 
         with mock.patch(
-            "bert_excitation_train.scripts.qwen_transport.subprocess.run",
+            "bert_excitation_train.scripts.novel_generation_v2.qwen_transport.subprocess.run",
             side_effect=fake_run,
         ):
             call_openai_compatible_via_curl(
@@ -114,7 +114,7 @@ class QwenTransportTests(unittest.TestCase):
             return subprocess.CompletedProcess(command, 0, stdout="", stderr="")
 
         with mock.patch(
-            "bert_excitation_train.scripts.qwen_transport.subprocess.run",
+            "bert_excitation_train.scripts.novel_generation_v2.qwen_transport.subprocess.run",
             side_effect=fake_run,
         ):
             call_openai_compatible_via_curl(
@@ -144,7 +144,7 @@ class QwenTransportTests(unittest.TestCase):
             {"OPENAI_COMPATIBLE_CURL_PROXY": "http://127.0.0.1:7897"},
             clear=False,
         ), mock.patch(
-            "bert_excitation_train.scripts.qwen_transport.subprocess.run",
+            "bert_excitation_train.scripts.novel_generation_v2.qwen_transport.subprocess.run",
             side_effect=fake_run,
         ):
             call_openai_compatible_via_curl(
@@ -178,7 +178,7 @@ class QwenTransportTests(unittest.TestCase):
             "DASHSCOPE_HTTP_ENDPOINT": "https://dashscope.example/generation",
         }
         with mock.patch.dict(os.environ, env, clear=False), mock.patch(
-            "bert_excitation_train.scripts.qwen_transport.subprocess.run",
+            "bert_excitation_train.scripts.novel_generation_v2.qwen_transport.subprocess.run",
             side_effect=fake_run,
         ):
             response = call_qwen_via_curl(
@@ -219,7 +219,7 @@ class QwenTransportTests(unittest.TestCase):
             "DASHSCOPE_CURL_PROXY": "",
         }
         with mock.patch.dict(os.environ, cleared, clear=False), mock.patch(
-            "bert_excitation_train.scripts.qwen_transport.subprocess.run",
+            "bert_excitation_train.scripts.novel_generation_v2.qwen_transport.subprocess.run",
             side_effect=fake_run,
         ):
             call_qwen_via_curl([{"role": "user", "content": "test"}], api_key="test-key")

@@ -4,16 +4,16 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from bert_excitation_train.scripts.neo4j_kg.bootstrap_neo4j import create_constraints_and_indexes, reset_database
-from bert_excitation_train.scripts.neo4j_kg.build_plot_clusters import upsert_plot_clusters
-from bert_excitation_train.scripts.neo4j_kg.chapter_memory import normalize_memory
-from bert_excitation_train.scripts.neo4j_kg.common import get_neo4j_driver
-from bert_excitation_train.scripts.neo4j_kg.online_retriever import retrieve_context_for_chapter
-from bert_excitation_train.scripts.neo4j_kg.story_memory_store import (
+from bert_excitation_train.scripts.knowledge_graph.bootstrap_neo4j import create_constraints_and_indexes, reset_database
+from bert_excitation_train.scripts.knowledge_graph.build_plot_clusters import upsert_plot_clusters
+from bert_excitation_train.scripts.knowledge_graph.chapter_memory import normalize_memory
+from bert_excitation_train.scripts.knowledge_graph.common import get_neo4j_driver
+from bert_excitation_train.scripts.knowledge_graph.online_retriever import retrieve_context_for_chapter
+from bert_excitation_train.scripts.knowledge_graph.story_memory_store import (
     replace_chapter_memories,
     replace_chapter_memory,
 )
-from bert_excitation_train.scripts.neo4j_kg.story_identity import story_id_for_clusters
+from bert_excitation_train.scripts.knowledge_graph.story_identity import story_id_for_clusters
 
 
 @unittest.skipUnless(os.environ.get("NEO4J_TEST_URI"), "set NEO4J_TEST_URI to run Neo4j integration tests")

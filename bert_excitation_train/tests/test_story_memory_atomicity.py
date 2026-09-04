@@ -4,15 +4,15 @@ import unittest
 from pathlib import Path
 from unittest.mock import Mock, patch
 
-from bert_excitation_train.scripts.neo4j_kg import story_memory as story_memory_module
-from bert_excitation_train.scripts.neo4j_kg.chapter_memory import (
+from bert_excitation_train.scripts.knowledge_graph import story_memory as story_memory_module
+from bert_excitation_train.scripts.knowledge_graph.chapter_memory import (
     normalize_memory,
     save_memory_file,
 )
-from bert_excitation_train.scripts.neo4j_kg.story_memory import (
+from bert_excitation_train.scripts.knowledge_graph.story_memory import (
     StoryMemoryCoordinator,
 )
-from bert_excitation_train.scripts.neo4j_kg.story_memory_store import (
+from bert_excitation_train.scripts.knowledge_graph.story_memory_store import (
     replace_chapter_memories,
 )
 
@@ -45,7 +45,7 @@ class StoryMemoryAtomicityTests(unittest.TestCase):
             new_chapter = normalize_memory({"summary": "new"}, 6, "six-hash")
 
             with patch(
-                "bert_excitation_train.scripts.neo4j_kg.story_memory_store."
+                "bert_excitation_train.scripts.knowledge_graph.story_memory_store."
                 "replace_chapter_memories",
                 side_effect=RuntimeError("graph failed"),
             ):
@@ -76,7 +76,7 @@ class StoryMemoryAtomicityTests(unittest.TestCase):
             )
 
             with patch(
-                "bert_excitation_train.scripts.neo4j_kg.story_memory_store."
+                "bert_excitation_train.scripts.knowledge_graph.story_memory_store."
                 "replace_chapter_memories",
                 side_effect=KeyboardInterrupt(),
             ):
@@ -117,7 +117,7 @@ class StoryMemoryAtomicityTests(unittest.TestCase):
                 "save_memory_file",
                 side_effect=flaky_save,
             ), patch(
-                "bert_excitation_train.scripts.neo4j_kg.story_memory_store."
+                "bert_excitation_train.scripts.knowledge_graph.story_memory_store."
                 "replace_chapter_memories",
                 graph_replace,
             ):

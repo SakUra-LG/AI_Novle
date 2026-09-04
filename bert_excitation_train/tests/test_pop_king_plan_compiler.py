@@ -9,7 +9,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from bert_excitation_train.scripts.v2.pop_king_plan_compiler import (
+from bert_excitation_train.scripts.novel_generation_v2.pop_king_plan_compiler import (
     apply_state_transitions,
     body_prefix_fingerprints,
     canonical_sha256,
@@ -20,7 +20,7 @@ from bert_excitation_train.scripts.v2.pop_king_plan_compiler import (
     event_type_semantic_failures,
     validate_event_batch,
 )
-from bert_excitation_train.scripts.v2.generate_pop_king_500_qwen import (
+from bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen import (
     CHAPTER_CARD_COMPILER_VERSION,
     _archive_stale_downstream_if_outline_changed,
     _fake_death_failures,
@@ -45,7 +45,7 @@ from bert_excitation_train.scripts.v2.generate_pop_king_500_qwen import (
     _macro_direction_schema,
     _normalize_locked_macro_direction,
 )
-from bert_excitation_train.scripts.v2 import generate_pop_king_500_qwen as planner_module
+from bert_excitation_train.scripts.novel_generation_v2 import generate_pop_king_500_qwen as planner_module
 
 
 def test_legacy_global_arc_names_compile_to_stable_identities() -> None:
@@ -627,23 +627,23 @@ def test_event_ids_cannot_escape_macro_locked_causal_and_foreshadow_sets() -> No
 
 def test_planner_falls_back_to_groq_when_qwen_reports_quota_error(monkeypatch) -> None:
     monkeypatch.setattr(
-        "bert_excitation_train.scripts.v2.generate_pop_king_500_qwen._GROQ_VISIBLE_MODELS", None
+        "bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen._GROQ_VISIBLE_MODELS", None
     )
     monkeypatch.setattr(
-        "bert_excitation_train.scripts.v2.generate_pop_king_500_qwen.list_openai_compatible_models_via_curl",
+        "bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen.list_openai_compatible_models_via_curl",
         lambda **kwargs: ["qwen/qwen3.6-27b"],
     )
     monkeypatch.setattr(
-        "bert_excitation_train.scripts.v2.generate_pop_king_500_qwen.API_Key_QW", "qwen-test-key"
+        "bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen.API_Key_QW", "qwen-test-key"
     )
     monkeypatch.setenv("GROQ_API_KEY", "groq-test-key")
     monkeypatch.delenv("PLANNER_PROVIDER", raising=False)
     monkeypatch.setattr(
-        "bert_excitation_train.scripts.v2.generate_pop_king_500_qwen.dashscope.Generation.call",
+        "bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen.dashscope.Generation.call",
         lambda **kwargs: {"code": "AllocationQuota.FreeTierExhausted", "message": "quota"},
     )
     monkeypatch.setattr(
-        "bert_excitation_train.scripts.v2.generate_pop_king_500_qwen.call_openai_compatible_via_curl",
+        "bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen.call_openai_compatible_via_curl",
         lambda *args, **kwargs: {
             "choices": [{"message": {"content": '{"ok":true}'}}], "usage": {},
         },
@@ -658,17 +658,17 @@ def test_planner_falls_back_to_groq_when_qwen_reports_quota_error(monkeypatch) -
 
 def test_groq_planner_falls_back_when_requested_model_is_forbidden(monkeypatch) -> None:
     monkeypatch.setattr(
-        "bert_excitation_train.scripts.v2.generate_pop_king_500_qwen._GROQ_VISIBLE_MODELS", None
+        "bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen._GROQ_VISIBLE_MODELS", None
     )
     monkeypatch.setattr(
-        "bert_excitation_train.scripts.v2.generate_pop_king_500_qwen.API_Key_QW", ""
+        "bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen.API_Key_QW", ""
     )
     monkeypatch.setenv("GROQ_API_KEY", "groq-test-key")
     monkeypatch.setenv("PLANNER_PROVIDER", "groq")
     monkeypatch.setenv("GROQ_PLANNER_MODEL", "restricted-model")
     monkeypatch.setenv("GROQ_PLANNER_FALLBACK_MODELS", "qwen/qwen3.6-27b")
     monkeypatch.setattr(
-        "bert_excitation_train.scripts.v2.generate_pop_king_500_qwen.list_openai_compatible_models_via_curl",
+        "bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen.list_openai_compatible_models_via_curl",
         lambda **kwargs: ["restricted-model", "qwen/qwen3.6-27b"],
     )
     calls = []
@@ -680,7 +680,7 @@ def test_groq_planner_falls_back_when_requested_model_is_forbidden(monkeypatch) 
         return {"choices": [{"message": {"content": '{"ok":true}'}}], "usage": {}}
 
     monkeypatch.setattr(
-        "bert_excitation_train.scripts.v2.generate_pop_king_500_qwen.call_openai_compatible_via_curl",
+        "bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen.call_openai_compatible_via_curl",
         fake_call,
     )
     raw, meta = _call_qwen(
@@ -694,17 +694,17 @@ def test_groq_planner_falls_back_when_requested_model_is_forbidden(monkeypatch) 
 
 def test_groq_planner_falls_back_when_request_exceeds_model_tpm(monkeypatch) -> None:
     monkeypatch.setattr(
-        "bert_excitation_train.scripts.v2.generate_pop_king_500_qwen._GROQ_VISIBLE_MODELS", None
+        "bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen._GROQ_VISIBLE_MODELS", None
     )
     monkeypatch.setattr(
-        "bert_excitation_train.scripts.v2.generate_pop_king_500_qwen.API_Key_QW", ""
+        "bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen.API_Key_QW", ""
     )
     monkeypatch.setenv("GROQ_API_KEY", "groq-test-key")
     monkeypatch.setenv("PLANNER_PROVIDER", "groq")
     monkeypatch.setenv("GROQ_PLANNER_MODEL", "small-tpm-model")
     monkeypatch.setenv("GROQ_PLANNER_FALLBACK_MODELS", "large-tpm-model")
     monkeypatch.setattr(
-        "bert_excitation_train.scripts.v2.generate_pop_king_500_qwen.list_openai_compatible_models_via_curl",
+        "bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen.list_openai_compatible_models_via_curl",
         lambda **kwargs: ["small-tpm-model", "large-tpm-model"],
     )
     calls = []
@@ -720,7 +720,7 @@ def test_groq_planner_falls_back_when_request_exceeds_model_tpm(monkeypatch) -> 
         return {"choices": [{"message": {"content": '{"ok":true}'}}], "usage": {}}
 
     monkeypatch.setattr(
-        "bert_excitation_train.scripts.v2.generate_pop_king_500_qwen.call_openai_compatible_via_curl",
+        "bert_excitation_train.scripts.novel_generation_v2.generate_pop_king_500_qwen.call_openai_compatible_via_curl",
         fake_call,
     )
     raw, meta = _call_qwen(

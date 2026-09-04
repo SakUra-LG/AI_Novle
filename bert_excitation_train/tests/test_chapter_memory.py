@@ -3,7 +3,7 @@ import unittest
 import json
 from pathlib import Path
 
-from bert_excitation_train.scripts.neo4j_kg.chapter_memory import (
+from bert_excitation_train.scripts.knowledge_graph.chapter_memory import (
     build_story_state,
     canonical_possession_key,
     load_memory_files,
@@ -14,11 +14,11 @@ from bert_excitation_train.scripts.neo4j_kg.chapter_memory import (
     extract_chapter_memory,
     story_state_slot,
 )
-from bert_excitation_train.scripts.neo4j_kg.online_retriever import (
+from bert_excitation_train.scripts.knowledge_graph.online_retriever import (
     _latest_current_fact_rows,
 )
-from bert_excitation_train.scripts.neo4j_kg.story_memory import StoryMemoryCoordinator
-from bert_excitation_train.scripts.neo4j_kg.sync_story_memory import (
+from bert_excitation_train.scripts.knowledge_graph.story_memory import StoryMemoryCoordinator
+from bert_excitation_train.scripts.knowledge_graph.sync_story_memory import (
     _known_names_from_clusters,
 )
 

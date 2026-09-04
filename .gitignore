@@ -30,6 +30,7 @@ ENV/
 env.bak/
 venv.bak/
 .venv/
+.venv*/
 
 # IDE和编辑器
 .vscode/
@@ -70,6 +71,8 @@ data/universal_samples_vectors.npy
 
 # 输出和临时文件
 outputs/
+bert_excitation_train/outputs*/
+work_outputs/
 *.log
 *.tmp
 *.temp

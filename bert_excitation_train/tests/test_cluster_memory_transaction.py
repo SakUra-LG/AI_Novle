@@ -4,13 +4,13 @@ from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import Mock, patch
 
-from bert_excitation_train.scripts.neo4j_kg.chapter_memory import (
+from bert_excitation_train.scripts.knowledge_graph.chapter_memory import (
     content_hash,
     normalize_memory,
     save_memory_file,
 )
-from bert_excitation_train.scripts.neo4j_kg.story_memory import StoryMemoryCoordinator
-from bert_excitation_train.scripts.v2 import generate_chapter_content_v2 as chapter_v2
+from bert_excitation_train.scripts.knowledge_graph.story_memory import StoryMemoryCoordinator
+from bert_excitation_train.scripts.novel_generation_v2 import generate_chapter_content_v2 as chapter_v2
 
 
 class ClusterMemoryTransactionTests(unittest.TestCase):

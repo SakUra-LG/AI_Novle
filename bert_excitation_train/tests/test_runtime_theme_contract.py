@@ -3,9 +3,9 @@ import tempfile
 from pathlib import Path
 from unittest.mock import patch
 
-from bert_excitation_train.scripts.v2 import theme_constraints
-from bert_excitation_train.scripts.neo4j_kg.story_identity import story_id_for_clusters
-from bert_excitation_train.scripts.v2.generate_event_clusters_v2 import (
+from bert_excitation_train.scripts.novel_generation_v2 import theme_constraints
+from bert_excitation_train.scripts.knowledge_graph.story_identity import story_id_for_clusters
+from bert_excitation_train.scripts.novel_generation_v2.generate_event_clusters_v2 import (
     _apply_seed_cast_to_clusters,
     _canonical_cast_from_seed_plan,
     _event_cluster_semantic_failures,
@@ -28,12 +28,12 @@ from bert_excitation_train.scripts.v2.generate_event_clusters_v2 import (
     _short_event_object_shape_failures,
     _short_event_object_specs,
 )
-from bert_excitation_train.scripts.smart_sample_search import adapt_sample_content
-from bert_excitation_train.scripts.v2.generate_outline_from_event_clusters_v2 import (
+from bert_excitation_train.scripts.rag.smart_sample_search import adapt_sample_content
+from bert_excitation_train.scripts.novel_generation_v2.generate_outline_from_event_clusters_v2 import (
     _build_cards_from_clusters_v2,
     _build_grounded_short_prev_life_context,
 )
-from bert_excitation_train.scripts.v2.generate_chapter_content_v2 import (
+from bert_excitation_train.scripts.novel_generation_v2.generate_chapter_content_v2 import (
     RebirthRevengeGeneratorV2,
     _build_chapter_quality_critic_prompt,
     _build_chapter_expansion_prompt,
