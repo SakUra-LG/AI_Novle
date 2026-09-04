@@ -1,0 +1,133 @@
+{
+  "status": "candidate_only_waiting_for_manual_gate",
+  "formal_promotion": false,
+  "story_memory_write": false,
+  "neo4j_write": false,
+  "cluster_id": "EC178",
+  "chapter_span": [
+    355,
+    356
+  ],
+  "conflict_domain": "财务对账",
+  "irreplaceable_progress_point": "完成本阶段差额的责任分栏，允许未决项进入下一阶段而不假装结清",
+  "previous_cluster_boundary": "EC177只确认许可到期和重申请",
+  "next_cluster_boundary": "EC179转入课程完成与职业安排",
+  "structure_signature": {
+    "conflict_type": "responsibility_split_unresolved_balance",
+    "attack_method": "unresolved_difference_is_assigned_to_one_department",
+    "counter_method": "split_source_review_and_payment_responsibilities",
+    "key_artifact": "responsibility difference table",
+    "authority": "财务管理员与项目负责人",
+    "reward": "未决项进入下一阶段并保留责任栏",
+    "relationship_change": "苏菲亚拒绝为团队提前签结清"
+  },
+  "main_character_ids": [
+    "CHAR_026AC753E27A",
+    "CHAR_B24EF2E733C9",
+    "CHAR_8C6A51D4E9F2"
+  ],
+  "participant_ids": [
+    "CHAR_0037905289BB",
+    "CHAR_3F11D9A42EDF",
+    "CHAR_EB1F70C558F3",
+    "CHAR_11D3BC48DDA3",
+    "CHAR_D1A231D7C399",
+    "CHAR_9577B35020B0",
+    "CHAR_B047AA73B9D5",
+    "CHAR_F618A85B98BB",
+    "CHAR_B6BBF0D9B359",
+    "CHAR_516678482F6C",
+    "CHAR_92F8C157F434",
+    "CHAR_C47E4BB208B5",
+    "CHAR_87B8E75FFF6F",
+    "CHAR_4E24DD1EEE76",
+    "CHAR_382967F0B350",
+    "CHAR_89E90D63A7E8",
+    "CHAR_33F93B7BC53A",
+    "CHAR_3FFB2CF69F92",
+    "CHAR_C1B841D16B30",
+    "CHAR_D3D4B10B3D17",
+    "CHAR_49ECACFD4A11",
+    "CHAR_840A569730E9",
+    "CHAR_C2D764AE4A75",
+    "CHAR_B04A992A7F99",
+    "CHAR_CF880573B5CB",
+    "CHAR_BE1EC7F9E7B2",
+    "CHAR_3C2C1E8DE107",
+    "CHAR_B9930A71C6BA",
+    "CHAR_0EB7D2FE6DB5",
+    "CHAR_384F7B6903B0",
+    "CHAR_1D596CF81A77",
+    "CHAR_B495BC2C5F5D",
+    "CHAR_3D43F562C2CF",
+    "CHAR_53E2B0B5028D",
+    "CHAR_76E9E8359211",
+    "CHAR_EC7C1E1EB46F",
+    "CHAR_1CB49083C449",
+    "CHAR_4BD6CF437713",
+    "CHAR_325F9173E463",
+    "CHAR_845D7F655759",
+    "CHAR_1A10FDB0D8F2",
+    "CHAR_7518D55BD4A2",
+    "CHAR_6FC4735D74A8",
+    "CHAR_7EC8C2E9C65E",
+    "CHAR_BDF63B327DD5",
+    "CHAR_11B997940330",
+    "CHAR_57E13D88C9B8",
+    "CHAR_610508F3989C",
+    "CHAR_78FB688D8EF5",
+    "CHAR_0258076F3554",
+    "CHAR_61A5BF2F3AB1",
+    "CHAR_8DACFC5F915C",
+    "CHAR_C97BFB7E074C",
+    "CHAR_F74D83744742",
+    "CHAR_3E8FEA1FDD9D",
+    "CHAR_45E989E965A6",
+    "CHAR_0C9960818FAF",
+    "CHAR_011CBFAA7059",
+    "CHAR_E3BCABEECD2B",
+    "CHAR_C81DA5F58778",
+    "CHAR_B78580A9A2E5",
+    "CHAR_BD3B9570476E"
+  ],
+  "chapter_cards": [
+    {
+      "chapter_id": 355,
+      "timeline_start": "1993-12-09",
+      "timeline_end": "1993-12-09",
+      "goal": "把未决差额按资料、付款和审批责任分栏",
+      "must_include": [
+        "责任分栏",
+        "差额",
+        "未决"
+      ],
+      "must_not_include": [
+        "全部结清",
+        "课程完成",
+        "许可续期"
+      ],
+      "turning_choice": "苏菲亚拒绝把未决项归给财务一方",
+      "result_layer": "临时保护",
+      "ending_hook": "项目负责人要求月底前签结清"
+    },
+    {
+      "chapter_id": 356,
+      "timeline_start": "1993-12-10",
+      "timeline_end": "1993-12-10",
+      "goal": "允许未决项带入下一阶段并标明补证人",
+      "must_include": [
+        "下一阶段",
+        "补证",
+        "责任栏"
+      ],
+      "must_not_include": [
+        "假装结清",
+        "永久冻结",
+        "EC179课程"
+      ],
+      "turning_choice": "麦珂保留未决项并拒绝提前签字",
+      "result_layer": "临时保护",
+      "ending_hook": "学院发来课程完成确认表"
+    }
+  ]
+}

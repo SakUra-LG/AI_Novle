@@ -1,0 +1,120 @@
+{
+  "cluster_id": "EC137",
+  "chapter_id": 274,
+  "attempt": 5,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "3cd824fa8b1b6404f2db91e444c32e5ad66a4cd14778c65d95c3534a7f8103c3",
+  "base_prompt_sha256": "5aaf3a711368c9a72a59580c4ba78999a50ff8d59754a444c10be8a20cfbcced",
+  "body_generator_contract_version": "v13_compiled_plan_strict_gates_20260822",
+  "raw_response_sha256": "9d8682481bea7ca79b7515183d42f0d047fcbd998df4c8543eaf9d6f481cec2d",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 15.851,
+    "usage": {
+      "prompt_tokens": 13887,
+      "completion_tokens": 1098,
+      "total_tokens": 14985,
+      "prompt_tokens_details": {
+        "cached_tokens": 6818
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 137,
+    "through_chapter": 274,
+    "outline_sha256": "a2e1a6cde3554db62a9f0842db92c9c580a6e553f71f71d883089f965c5f11b5",
+    "event_prefix_sha256": "3bbd8a80435327209635c9f329fc8482b9b8d4b69caca54ce8a40191fd983293",
+    "chapter_card_prefix_sha256": "39429393ef40422082148aacdaf84e32ecfda130c8701be1d0296483e2681148",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "a76ed2fbe70fc80e1900d04cd78aecc436e09b8066982b8bc539accfd2f560d2"
+  },
+  "cluster_sha256": "22f92a79e1b24deb7487fd1755b276e286ae3b1e1427213de624fd6d4ad74ce4",
+  "card_sha256": "b0accccfaacd9fff5ef76560d5929756726e4cda0494a15615241fda5b8ff82e",
+  "chapter_audit": {
+    "han_chars": 1600,
+    "total_chars": 1838,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 2,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "摘录暂时退出节目排期",
+        "exact": false,
+        "bigram_coverage": 0.556,
+        "matched": true
+      },
+      {
+        "anchor": "只对该摘录取得有限程序保护",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "节目部合规主任",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "progress_ec137",
+        "target": "resolved_9d7c86b9df",
+        "evidence_terms": [
+          "ART_273_20C35DB3",
+          "CR-41",
+          "权限分栏表",
+          "复核核对",
+          "申请",
+          "复核",
+          "批准三栏",
+          "确认缺失的是节目",
+          "部复核签名而非批",
+          "准页",
+          "不得扩大为其他人",
+          "物或资产的结论"
+        ],
+        "hit_terms": [
+          "CR-41",
+          "权限分栏表",
+          "申请",
+          "复核"
+        ],
+        "matched": true
+      }
+    ],
+    "motif_counts": {
+      "指尖": 2,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0437,
+    "scene_evidence": [
+      {
+        "location": "节目部资料室",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文未落到规划场景“节目部资料室”"
+    ]
+  },
+  "failures": [
+    "正文未落到规划场景“节目部资料室”"
+  ],
+  "accepted": false
+}

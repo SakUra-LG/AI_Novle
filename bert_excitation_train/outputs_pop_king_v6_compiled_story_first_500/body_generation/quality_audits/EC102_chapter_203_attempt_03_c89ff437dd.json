@@ -1,0 +1,110 @@
+{
+  "cluster_id": "EC102",
+  "chapter_id": 203,
+  "attempt": 3,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "c89ff437ddfcee9838532957441d47878a40756a4e5c1c514f6fa474b4968c19",
+  "base_prompt_sha256": "e1ec3243fd72ee0b39334faddcb0340f20bf017ef68b1573851be0eb665fa823",
+  "body_generator_contract_version": "v11_dynamic_identity_history_retry_20260822",
+  "raw_response_sha256": "b2ed97d0129b729c72537ec21d4f6c30f2d8bac3d03340f0467594060781ed9f",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 16.888,
+    "usage": {
+      "prompt_tokens": 11348,
+      "completion_tokens": 1200,
+      "total_tokens": 12548,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 102,
+    "through_chapter": 204,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "b4088631b773f06bd5fb9a9bcca284b83a536508efd577d416051dcff5bcfe45",
+    "chapter_card_prefix_sha256": "8c5cf399692cbd324922a5ce1bc59daf4c05f4150f6c4b92341c50fa437fc301",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "0a615c045ff19f29df4568f1328070444ab6c66994aad0bde265f137f919d21c"
+  },
+  "cluster_sha256": "7256598a8588f3187ddc82709041bd75320198cd3499b3dc481a7113573dfe60",
+  "card_sha256": "aaf33fa97b168744b6025665082b86c2dde745b00840c2b47eb206fbe0b4ff46",
+  "chapter_audit": {
+    "han_chars": 1714,
+    "total_chars": 1959,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 2,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "编号卡背印承诺条款",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "老人#8327号卡拼写纠错",
+        "exact": false,
+        "bigram_coverage": 0.727,
+        "matched": true
+      },
+      {
+        "anchor": "随机座次实时投影",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0711,
+    "scene_evidence": [
+      {
+        "location": "舞台中央",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_203_SEATING_LOG",
+        "display_name": "雾河城首演随机座次总表",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      },
+      {
+        "artifact_id": "ART_203_CARD_BACK_PRINT",
+        "display_name": "编号卡背印承诺条款样本",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [],
+    "all_validator_failures": []
+  },
+  "failures": [],
+  "accepted": false,
+  "semantic_rejected": true,
+  "semantic_critic_failures": [
+    "semantic critic knowledge_boundary: Chapter 203 candidate synopsis states: '索恩在后台试图切断电源，被莉薇娅依据“三方签字急救启动令”中的技术维护条款驳斥。' (Thorne attempts to cut power in the back, rebuked by Livia based on the 'Three-Signature Emergency Start Order' technical maintenance clause.); The plan and context explicitly state that only Ma Ke knows past-life facts; other characters (including Livia) must infer preparation but cannot know the specific future threat or possess knowledge of a 'Three-Signature Emergency Start Order' unless it was established as ",
+    "semantic critic pov_consistency: In Chapter 203, the narrative describes Thorne's internal reaction in the monitoring room: '索恩在监控室里暴怒...他意识到自己不仅输掉了这一场演出...' (Thorne raged in the monitoring room... he realized he lost...).; While Thorne is a villain and his external actions are visible, the candidate text reveals his *internal realization* of the loss and the specific mechanism of defeat ('security fuse mechanism') which was a secret plan known only to Ma Ke via rebirth memory. The text implies Thorne 'knew' what was coming or ",
+    "semantic critic repeated_resolution_pattern: Chapter 203's climax involves a 'spelling error' on a card leading to a 'public correction' and 'standing ovation'.; Chapter 204's climax involves a 'data log' and 'blueprint mismatch' leading to a 'public exposure' and 'crowd包围'.; This pattern (Villain makes a small mistake/error -> Protagonist exposes it publicly -> Crowd cheers/Villain humiliated) is structurally identical to Chapter 196 (Audit室 - 'system error' exposed), Chapter 198 (Bank audit - 'seventh code' exposed), and Chapter 202 (Med"
+  ]
+}

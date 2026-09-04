@@ -1,0 +1,44 @@
+{
+  "version": "isolated_trial_report_v1",
+  "status": "trial_only_not_accepted",
+  "formal_story_memory_write": false,
+  "neo4j_write": false,
+  "external_semantic_critic": "not_run",
+  "cluster_id": "EC162",
+  "chapters": [
+    {
+      "chapter_id": 323,
+      "event_cluster_id": "EC162",
+      "expected_progress_point": "核对版税分成与制作成本的归类，形成双方都能复查的差额表",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "440b2795e3744eee567bc8cec6ac279171f93232398172af51811114072fcc22"
+    },
+    {
+      "chapter_id": 324,
+      "event_cluster_id": "EC162",
+      "expected_progress_point": "核对版税分成与制作成本的归类，形成双方都能复查的差额表",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "FAIL",
+      "timeline": "PASS",
+      "character_consistency": "FAIL",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "7971adbe1f2f99ab6293addd73941b5aba1ec0fd099e91551e49c00f44d21bcb"
+    }
+  ],
+  "formal_continuity_anchor": {
+    "chapter_id": 270,
+    "date": "1993-09-17"
+  },
+  "overall": "REVISE_REQUIRED",
+  "issues": [
+    "chapter_324: 角色姓名未获本章character_id授权：托马斯"
+  ]
+}

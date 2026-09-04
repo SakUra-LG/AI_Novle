@@ -1,0 +1,144 @@
+{
+  "cluster_id": "EC106",
+  "chapter_id": 212,
+  "attempt": 5,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "d05ad0951c62d0904dd95de5caa26ffa05f0facbf023980885a74c4c88812f63",
+  "base_prompt_sha256": "caff64171c70942a0d752241d003e38dd28559ce32834b13a9790b41a56e9a4f",
+  "body_generator_contract_version": "v11_dynamic_identity_history_retry_20260822",
+  "raw_response_sha256": "21991e2f3b85d423f2dddd81bc5f7afad7fdc913f6385cb360e115322c5a17c3",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 12.141,
+    "usage": {
+      "prompt_tokens": 14981,
+      "completion_tokens": 1049,
+      "total_tokens": 16030,
+      "prompt_tokens_details": {
+        "cached_tokens": 7713
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 106,
+    "through_chapter": 212,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "3b497802c254b7ee9d4295e87b30aa1c819468abe7d332120ce50678d9e27de5",
+    "chapter_card_prefix_sha256": "b0f1b4cce2fb64fc59b4c9bd137699a8e42b91d9dd5e0e55e27a6cd9f607d10e",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "bf26f7ea870032cb23a41e10c896518a8434243bc4cdc97fbdf28baf3fc2713e"
+  },
+  "cluster_sha256": "e29edbf85e8eb391f7fe3cd864b5df99b8c229bb7c2101b92db89a86597a2354",
+  "card_sha256": "a1729afa770fb168eb963a7976cc2bd74453b1612c80a281cc6b328aa9a18e85",
+  "chapter_audit": {
+    "han_chars": 1502,
+    "total_chars": 1691,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "手签备忘录法律效力",
+        "exact": false,
+        "bigram_coverage": 0.875,
+        "matched": true
+      },
+      {
+        "anchor": "色带样本展示",
+        "exact": false,
+        "bigram_coverage": 0.6,
+        "matched": true
+      },
+      {
+        "anchor": "观众欢呼",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "audience_collaborator_status",
+        "target": "active_safety_collaborator",
+        "evidence_terms": [
+          "ART_211_PROMISE_CARD"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "optical_lens_calibration_status",
+        "target": "certified_practice_ready",
+        "evidence_terms": [
+          "ART_211_CALIBRATION_CERT"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "medical_decision_authority",
+        "target": "artist_family_controlled",
+        "evidence_terms": [
+          "ART_212_HEALTH_MEMO"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 1,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0407,
+    "scene_evidence": [
+      {
+        "location": "舞台中央",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_212_HEALTH_MEMO",
+        "display_name": "今日健康备忘录（手签版）",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      },
+      {
+        "artifact_id": "ART_212_TYPER_CARTRIDGE",
+        "display_name": "伪造文件打字机色带样本",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有通过现场动作兑现状态转移audience_collaborator_status→active_safety_collaborator",
+      "正文没有通过现场动作兑现状态转移optical_lens_calibration_status→certified_practice_ready",
+      "正文没有通过现场动作兑现状态转移medical_decision_authority→artist_family_controlled",
+      "正文没有写出本章正式创建的关键对象“伪造文件打字机色带样本”"
+    ],
+    "all_validator_failures": [
+      "正文没有通过现场动作兑现状态转移audience_collaborator_status→active_safety_collaborator",
+      "正文没有通过现场动作兑现状态转移optical_lens_calibration_status→certified_practice_ready",
+      "正文没有通过现场动作兑现状态转移medical_decision_authority→artist_family_controlled",
+      "正文没有写出本章正式创建的关键对象“伪造文件打字机色带样本”"
+    ]
+  },
+  "failures": [
+    "正文没有写出本章正式创建的关键对象“伪造文件打字机色带样本”"
+  ],
+  "accepted": false
+}

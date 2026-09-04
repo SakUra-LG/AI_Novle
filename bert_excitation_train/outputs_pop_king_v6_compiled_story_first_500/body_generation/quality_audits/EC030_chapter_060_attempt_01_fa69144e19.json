@@ -1,0 +1,139 @@
+{
+  "cluster_id": "EC030",
+  "chapter_id": 60,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "fa69144e190b3cc01393658a4664209e2035773fd6776ad50797340ea9b41095",
+  "base_prompt_sha256": "fa69144e190b3cc01393658a4664209e2035773fd6776ad50797340ea9b41095",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "61bb1ec1ef3871ea1b6317a46cc817ae8fc79495858df1eae37484d5db1fb99d",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 25.655,
+    "usage": {
+      "prompt_tokens": 10688,
+      "completion_tokens": 1263,
+      "total_tokens": 11951,
+      "prompt_tokens_details": {
+        "cached_tokens": 5846
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 30,
+    "through_chapter": 60,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "cc6531ee4a44db32d91e3d72192c2680c2102898ae81ae555bbb26bff20ac03c",
+    "chapter_card_prefix_sha256": "5c1c6802ae4e05236df71c2a66ff2a6cafd5a3817ed5f43ffbf74c2687f8afd0",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "7865dd9c2f345bda1b7f0ffea7a2e10d863912a374684d6c18da7962d91e537a"
+  },
+  "cluster_sha256": "96a3018b474721d1bcc799bbd315b29ff03f6348aa186f3965dc4bd29a1ec8f0",
+  "card_sha256": "2a79b3caefc961f1097897df56c0dda0c8f409fa2cec939343e39f1005a7c059",
+  "chapter_audit": {
+    "han_chars": 1798,
+    "total_chars": 2057,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "麦珂在关键时刻的‘三秒真空’处理",
+        "exact": false,
+        "bigram_coverage": 0.385,
+        "matched": false
+      },
+      {
+        "anchor": "昆廷记录的声波数据",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "卡尔被剥夺训练权的决议",
+        "exact": false,
+        "bigram_coverage": 0.2,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "vocal_health_status__extension_EC030",
+        "target": "声带状态持续稳定，确立科学发声法为唯一标准",
+        "evidence_terms": [
+          "麦珂在模拟演出中",
+          "成功演绎高难度曲",
+          "目且无不适反应"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "employment_status__training_control__extension_EC030",
+        "target": "彻底失去声乐指导权，被边缘化至非核心岗位",
+        "evidence_terms": [
+          "家庭会议正式决议",
+          "废除卡尔的训练方"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "trust_in_protagonist__extension_EC030",
+        "target": "深度专业信任与技术同盟",
+        "evidence_terms": [
+          "昆廷主动优化呼吸",
+          "曲线图记录方式"
+        ],
+        "hit_terms": [
+          "曲线图记录方式"
+        ],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 1,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0541,
+    "scene_evidence": [
+      {
+        "location": "银湾市社区中心多功能厅",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文没有兑现章卡关键事实“麦珂在关键时刻的‘三秒真空’处理”",
+      "正文没有兑现章卡关键事实“卡尔被剥夺训练权的决议”",
+      "正文没有通过现场动作兑现状态转移vocal_health_status__extension_EC030→声带状态持续稳定，确立科学发声法为唯一标准",
+      "正文没有通过现场动作兑现状态转移employment_status__training_control__extension_EC030→彻底失去声乐指导权，被边缘化至非核心岗位",
+      "正文没有通过现场动作兑现状态转移trust_in_protagonist__extension_EC030→深度专业信任与技术同盟",
+      "正文未落到规划场景“银湾市社区中心多功能厅”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“麦珂在关键时刻的‘三秒真空’处理”",
+      "正文没有兑现章卡关键事实“卡尔被剥夺训练权的决议”",
+      "正文没有通过现场动作兑现状态转移vocal_health_status__extension_EC030→声带状态持续稳定，确立科学发声法为唯一标准",
+      "正文没有通过现场动作兑现状态转移employment_status__training_control__extension_EC030→彻底失去声乐指导权，被边缘化至非核心岗位",
+      "正文没有通过现场动作兑现状态转移trust_in_protagonist__extension_EC030→深度专业信任与技术同盟",
+      "正文未落到规划场景“银湾市社区中心多功能厅”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

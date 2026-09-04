@@ -1,0 +1,110 @@
+{
+  "cluster_id": "EC021",
+  "chapter_id": 41,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "67137300c8230bac1c6a0dd3b72f8d40971cfa497fbf537ec062035330dbdcf4",
+  "base_prompt_sha256": "67137300c8230bac1c6a0dd3b72f8d40971cfa497fbf537ec062035330dbdcf4",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "9eaadc0deb2d81baf1e226ade314d93801d169e660deb7d180bae087cfdce8d6",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 13.473,
+    "usage": {
+      "prompt_tokens": 6356,
+      "completion_tokens": 1117,
+      "total_tokens": 7473,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 21,
+    "through_chapter": 42,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "f09be63a3a117224a492b611515c528bf4fdfbcdb2fbd6ae4eba5b6247c32185",
+    "chapter_card_prefix_sha256": "e138a41a6aa8be782d8bdf3c5e75d5ae9e3ed6470c2dd051928bb7ce32e3e012",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "1a54a5f22a54969bd13051261fe3c439cf1fb6d4cf862cc5016a1db7c0d45e2d"
+  },
+  "cluster_sha256": "49ad9d1213f7b92a79e7dc496256c4f74c24e5fd66a2289733b491e483ff7942",
+  "card_sha256": "168333927cfe8fabbd73fa934549cc734c7bdfd7e717bace74461fd90df55a9c",
+  "chapter_audit": {
+    "han_chars": 1542,
+    "total_chars": 1761,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "伴奏晚三秒",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "清唱一句",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "鼓手接入",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 1,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0437,
+    "scene_evidence": [
+      {
+        "location": "杰森家客厅",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_041_BALLPOINT_LOG",
+        "display_name": "1970.04.12 家庭会议签字笔压记录表",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文命中章卡明确禁写项：圆珠笔",
+      "正文没有兑现章卡关键事实“鼓手接入”",
+      "正文未落到规划场景“杰森家客厅”",
+      "正文没有写出本章正式创建的关键对象“1970.04.12 家庭会议签字笔压记录表”"
+    ],
+    "all_validator_failures": [
+      "正文命中章卡明确禁写项：圆珠笔",
+      "正文没有兑现章卡关键事实“鼓手接入”",
+      "正文未落到规划场景“杰森家客厅”",
+      "正文没有写出本章正式创建的关键对象“1970.04.12 家庭会议签字笔压记录表”"
+    ]
+  },
+  "failures": [
+    "正文命中章卡明确禁写项：圆珠笔"
+  ],
+  "accepted": false
+}

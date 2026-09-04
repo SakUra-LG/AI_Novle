@@ -1,0 +1,42 @@
+{
+  "version": "isolated_trial_report_v1",
+  "status": "trial_only_not_accepted",
+  "formal_story_memory_write": false,
+  "neo4j_write": false,
+  "external_semantic_critic": "not_run",
+  "cluster_id": "EC187",
+  "chapters": [
+    {
+      "chapter_id": 373,
+      "event_cluster_id": "EC187",
+      "expected_progress_point": "完成替班交接",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "ff02e84737b1683cba03759cdf43b0be1b997b5a95be3726b8c09600a10f6ee9"
+    },
+    {
+      "chapter_id": 374,
+      "event_cluster_id": "EC187",
+      "expected_progress_point": "完成替班交接",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "4b99673be607f062b20498538564c9ee0ac24f1d018eec88d92bd2c1aa2a2cd4"
+    }
+  ],
+  "formal_continuity_anchor": {
+    "chapter_id": 270,
+    "date": "1993-09-17"
+  },
+  "overall": "PASS_WITHOUT_ACCEPTANCE",
+  "issues": []
+}

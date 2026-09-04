@@ -1,0 +1,51 @@
+{
+  "version": "rewrite_trial_report_ec138_v1",
+  "status": "trial_only_not_accepted",
+  "formal_story_memory_write": false,
+  "neo4j_write": false,
+  "external_semantic_critic": "not_run",
+  "cluster_id": "EC138",
+  "chapters": [
+    {
+      "chapter_id": 275,
+      "event_cluster_id": "EC138",
+      "file": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\rewrite_trial_275_276\\chapters\\chapter_275.txt",
+      "sha256": "f61ad7b946d86fa320109052d5e04ee943b1b8bdfe61cc355d436c8c18194c62",
+      "expected_progress_point": "把内部核对、节目制作、宣传展示三种用途从旧授权中拆开，确认现有摘录只落在内部核对",
+      "actual_progress_point": "用途边界已拆分",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "issues": [],
+      "formal_prior_date": "1993-09-17"
+    },
+    {
+      "chapter_id": 276,
+      "event_cluster_id": "EC138",
+      "file": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\rewrite_trial_275_276\\chapters\\chapter_276.txt",
+      "sha256": "f5201b06392541bd93fd66c9d19acd2578572e6b902973bfc3e1118656901716",
+      "expected_progress_point": "由有权管理员确认内部核对的收件人、期限和保管地点，拒绝自动延长或默示公开",
+      "actual_progress_point": "用途边界已拆分",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "issues": []
+    }
+  ],
+  "formal_continuity_anchor": {
+    "chapter_id": 270,
+    "date": "1993-09-17"
+  },
+  "trial_pair_similarity": {
+    "275-276": 0.1228,
+    "275-276_raw": 0.144
+  },
+  "overall": "PASS_WITHOUT_ACCEPTANCE",
+  "issues": []
+}

@@ -1,0 +1,112 @@
+{
+  "cluster_id": "EC060",
+  "chapter_id": 119,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "d76a9bda0bc4513795f947fbde52e102239d5eb59056990d017d92193e7cc8bf",
+  "base_prompt_sha256": "d76a9bda0bc4513795f947fbde52e102239d5eb59056990d017d92193e7cc8bf",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "7e2475c60a4efb25f24568c5b15167b98ee5f6cbfa40d6f4d8793749dc114920",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.772,
+    "usage": {
+      "prompt_tokens": 6029,
+      "completion_tokens": 1310,
+      "total_tokens": 7339,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 60,
+    "through_chapter": 120,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "29bc3ed62101f0439feaecd6fef30c3b6a118d36bb8a9e5ee3f11e9e43ec56e6",
+    "chapter_card_prefix_sha256": "f53fdc00e406b81af1db26b4d58721e31f348b58534b1b507d70b691639a32ec",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "cd8f74dc585944e8f5ec5e7a94e7c2d7903b6509526926f41f8287b694e084c7"
+  },
+  "cluster_sha256": "5b61ef99e3be25bd9e833aecabdf1b26e96830a7b10120e4f9cdd40df714f90c",
+  "card_sha256": "7aee413d225653fe0349594618d05fa9be9c2d6ac09e160d68c8d1e94ac13092",
+  "chapter_audit": {
+    "han_chars": 1934,
+    "total_chars": 2175,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "民事伴侣契约",
+        "exact": false,
+        "bigram_coverage": 0.6,
+        "matched": true
+      },
+      {
+        "anchor": "显影液温度报告",
+        "exact": false,
+        "bigram_coverage": 0.833,
+        "matched": true
+      },
+      {
+        "anchor": "液压阀老化报告",
+        "exact": false,
+        "bigram_coverage": 0.833,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 1,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.028,
+    "scene_evidence": [
+      {
+        "location": "奥瑞恩总部大会议厅",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_110_PARTNERSHIP_CERT",
+        "display_name": "《夏夜协议》民事伴侣与股权公证书",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "汉字数1934，高于1900",
+      "正文与章卡目标/动作/回报语义覆盖仅0.028，疑似写成了另一件事",
+      "正文未落到规划场景“奥瑞恩总部大会议厅”"
+    ],
+    "all_validator_failures": [
+      "汉字数1934，高于1900",
+      "正文与章卡目标/动作/回报语义覆盖仅0.028，疑似写成了另一件事",
+      "正文未落到规划场景“奥瑞恩总部大会议厅”"
+    ]
+  },
+  "failures": [
+    "第119章：汉字数1934，高于1900"
+  ],
+  "accepted": false,
+  "joint_rejected": true,
+  "joint_failures": [
+    "第119章：汉字数1934，高于1900"
+  ]
+}

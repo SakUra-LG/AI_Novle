@@ -1,0 +1,304 @@
+{
+  "status": "trial_only_not_accepted",
+  "chapter_range": [
+    293,
+    296
+  ],
+  "formal_commit": false,
+  "story_memory_sync": false,
+  "neo4j_sync": false,
+  "chapters": [
+    {
+      "chapter_id": 293,
+      "status": "trial_only_not_accepted",
+      "beat_plan_call": {
+        "model": "qwen-plus",
+        "transport": "openai_compatible_curl",
+        "elapsed_seconds": 23.149,
+        "usage": {
+          "prompt_tokens": 7850,
+          "completion_tokens": 2597,
+          "total_tokens": 10447,
+          "prompt_tokens_details": {
+            "cached_tokens": 3939
+          }
+        },
+        "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+      },
+      "body_call": {
+        "model": "qwen-plus",
+        "transport": "openai_compatible_curl",
+        "elapsed_seconds": 16.938,
+        "usage": {
+          "prompt_tokens": 3155,
+          "completion_tokens": 1449,
+          "total_tokens": 4604,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+      },
+      "beat_plan_sha256": "81936138becbc933b158de88ea926e16332510c35467188801bbd40fe4a1b153",
+      "metrics": {
+        "han_chars": 2174,
+        "paragraphs": 20,
+        "dialogue_marks": 24,
+        "environment_terms": {
+          "空气": 3,
+          "冷风": 0,
+          "纸张": 1,
+          "纸浆味": 0,
+          "手指": 1,
+          "走廊": 2
+        }
+      },
+      "failures": [
+        "试写正文有效段落数20不在12—18范围"
+      ]
+    },
+    {
+      "chapter_id": 294,
+      "status": "trial_only_not_accepted",
+      "beat_plan_call": {
+        "model": "qwen-plus",
+        "transport": "openai_compatible_curl",
+        "elapsed_seconds": 23.561,
+        "usage": {
+          "prompt_tokens": 8875,
+          "completion_tokens": 2829,
+          "total_tokens": 11704,
+          "prompt_tokens_details": {
+            "cached_tokens": 4603
+          }
+        },
+        "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+      },
+      "body_call": {
+        "model": "qwen-plus",
+        "transport": "openai_compatible_curl",
+        "elapsed_seconds": 11.953,
+        "usage": {
+          "prompt_tokens": 4009,
+          "completion_tokens": 1027,
+          "total_tokens": 5036,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+      },
+      "beat_plan_sha256": "551cde280a3184f2fdf7fa6311aaec3e8c55f46ecb151ecc7c6dbff630de7a9b",
+      "metrics": {
+        "han_chars": 1568,
+        "paragraphs": 13,
+        "dialogue_marks": 9,
+        "environment_terms": {
+          "空气": 2,
+          "冷风": 0,
+          "纸张": 1,
+          "纸浆味": 0,
+          "手指": 2,
+          "走廊": 1
+        }
+      },
+      "failures": [
+        "正文前三段未交代章卡年份：期望1994-03-27"
+      ]
+    },
+    {
+      "chapter_id": 295,
+      "status": "trial_only_not_accepted",
+      "beat_plan_call": {
+        "model": "qwen-plus",
+        "transport": "openai_compatible_curl",
+        "elapsed_seconds": 39.298,
+        "usage": {
+          "prompt_tokens": 8724,
+          "completion_tokens": 3163,
+          "total_tokens": 11887,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+      },
+      "body_call": {
+        "model": "qwen-plus",
+        "transport": "openai_compatible_curl",
+        "elapsed_seconds": 18.921,
+        "usage": {
+          "prompt_tokens": 4307,
+          "completion_tokens": 1861,
+          "total_tokens": 6168,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+      },
+      "beat_plan_sha256": "3151f6e8d44b30f6cc3d7d5db253e7bb3dfdc51137a4488dcddfe81c88644959",
+      "metrics": {
+        "han_chars": 2801,
+        "paragraphs": 16,
+        "dialogue_marks": 26,
+        "environment_terms": {
+          "空气": 2,
+          "冷风": 0,
+          "纸张": 1,
+          "纸浆味": 0,
+          "手指": 1,
+          "走廊": 0
+        }
+      },
+      "failures": [
+        "试写正文汉字数2801不在1400—2200范围",
+        "正文前三段未交代章卡年份：期望1994-06-02"
+      ]
+    },
+    {
+      "chapter_id": 296,
+      "status": "trial_only_not_accepted",
+      "beat_plan_call": {
+        "model": "qwen-plus",
+        "transport": "openai_compatible_curl",
+        "elapsed_seconds": 20.373,
+        "usage": {
+          "prompt_tokens": 8775,
+          "completion_tokens": 2509,
+          "total_tokens": 11284,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+      },
+      "body_call": {
+        "model": "qwen-plus",
+        "transport": "openai_compatible_curl",
+        "elapsed_seconds": 15.194,
+        "usage": {
+          "prompt_tokens": 3737,
+          "completion_tokens": 1177,
+          "total_tokens": 4914,
+          "prompt_tokens_details": {
+            "cached_tokens": 18
+          }
+        },
+        "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+      },
+      "beat_plan_sha256": "8da4e995fa53528ed1c6ce5585816a59cc7e7622e52e291f06cde4f5c648bb30",
+      "metrics": {
+        "han_chars": 1820,
+        "paragraphs": 11,
+        "dialogue_marks": 9,
+        "environment_terms": {
+          "空气": 2,
+          "冷风": 0,
+          "纸张": 2,
+          "纸浆味": 0,
+          "手指": 1,
+          "走廊": 0
+        }
+      },
+      "failures": [
+        "试写正文有效段落数11不在12—18范围",
+        "正文前三段未交代章卡年份：期望1994-06-02"
+      ]
+    }
+  ],
+  "comparison": [
+    {
+      "chapter_id": 293,
+      "trial": {
+        "han_chars": 2174,
+        "paragraphs": 20,
+        "dialogue_marks": 24,
+        "environment_terms": {
+          "空气": 3,
+          "冷风": 0,
+          "纸张": 1,
+          "纸浆味": 0,
+          "手指": 1,
+          "走廊": 2
+        },
+        "beat_count": 8,
+        "relationship_change_markers": 7
+      },
+      "prior_one_pass": null,
+      "prior_one_pass_status": "MISSING",
+      "graph_consistency": "NOT_RUN_isolated_trial",
+      "next_chapter_overlap": 0.2276
+    },
+    {
+      "chapter_id": 294,
+      "trial": {
+        "han_chars": 1568,
+        "paragraphs": 13,
+        "dialogue_marks": 9,
+        "environment_terms": {
+          "空气": 2,
+          "冷风": 0,
+          "纸张": 1,
+          "纸浆味": 0,
+          "手指": 2,
+          "走廊": 1
+        },
+        "beat_count": 8,
+        "relationship_change_markers": 8
+      },
+      "prior_one_pass": null,
+      "prior_one_pass_status": "MISSING",
+      "graph_consistency": "NOT_RUN_isolated_trial",
+      "next_chapter_overlap": 0.07
+    },
+    {
+      "chapter_id": 295,
+      "trial": {
+        "han_chars": 2801,
+        "paragraphs": 16,
+        "dialogue_marks": 26,
+        "environment_terms": {
+          "空气": 2,
+          "冷风": 0,
+          "纸张": 1,
+          "纸浆味": 0,
+          "手指": 1,
+          "走廊": 0
+        },
+        "beat_count": 8,
+        "relationship_change_markers": 4
+      },
+      "prior_one_pass": null,
+      "prior_one_pass_status": "MISSING",
+      "graph_consistency": "NOT_RUN_isolated_trial",
+      "next_chapter_overlap": 0.1228
+    },
+    {
+      "chapter_id": 296,
+      "trial": {
+        "han_chars": 1820,
+        "paragraphs": 11,
+        "dialogue_marks": 9,
+        "environment_terms": {
+          "空气": 2,
+          "冷风": 0,
+          "纸张": 2,
+          "纸浆味": 0,
+          "手指": 1,
+          "走廊": 0
+        },
+        "beat_count": 8,
+        "relationship_change_markers": 4
+      },
+      "prior_one_pass": null,
+      "prior_one_pass_status": "MISSING",
+      "graph_consistency": "NOT_RUN_isolated_trial"
+    }
+  ],
+  "comparison_notes": {
+    "effective_event_count": "beat_count is the planned event-unit proxy; no new events are inferred",
+    "prior_one_pass": "compared only when the formal chapter file already exists; MISSING is explicit",
+    "story_memory_and_neo4j": "NOT_RUN by design for this isolated trial"
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC124",
+  "chapter_ids": [
+    247,
+    248
+  ],
+  "accepted": true,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "247": {
+        "han_chars": 1229,
+        "total_chars": 1489,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 3,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "十八美元调取费",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "S.R.为Service Retrieval路由码",
+            "exact": true,
+            "bigram_coverage": 0.857,
+            "matched": true
+          },
+          {
+            "anchor": "批准栏为空",
+            "exact": false,
+            "bigram_coverage": 0.5,
+            "matched": true
+          },
+          {
+            "anchor": "已扣款不等于已授权",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.0958,
+        "scene_evidence": [
+          {
+            "location": "海港缩微资料库收费笼与日结票据台",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_247_SB83_6_FEE_CHAIN",
+            "display_name": "SB-83-6十八美元调取费过账链",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_247_SR_ROUTE_CODE",
+            "display_name": "S.R.服务检索路由字段核验记录",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      },
+      "248": {
+        "han_chars": 1259,
+        "total_chars": 1465,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "拒绝倒填基金批准",
+            "exact": false,
+            "bigram_coverage": 0.857,
+            "matched": true
+          },
+          {
+            "anchor": "十八美元原路贷回",
+            "exact": false,
+            "bigram_coverage": 0.714,
+            "matched": true
+          },
+          {
+            "anchor": "SB-83-6封签未动",
+            "exact": true,
+            "bigram_coverage": 0.75,
+            "matched": true
+          },
+          {
+            "anchor": "独立基金席位限定范围重申",
+            "exact": false,
+            "bigram_coverage": 0.636,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "sb83_6_retrieval_fee",
+            "target": "eighteen_dollars_restored_to_fund",
+            "evidence_terms": [
+              "ART_248_PREPAYMENT_REIMBURSEMENT",
+              "初声基金十八美元",
+              "预付款原路退回回"
+            ],
+            "hit_terms": [
+              "初声基金十八美元",
+              "预付款原路退回回"
+            ],
+            "matched": true
+          },
+          {
+            "state_key": "release_authority",
+            "target": "independent_fund_approval_and_scoped_request_required",
+            "evidence_terms": [
+              "ART_248_SCHEDULE_B_ACCESS_HOLD",
+              "SB-83-6",
+              "密封状态与限定申",
+              "请规则"
+            ],
+            "hit_terms": [
+              "SB-83-6",
+              "密封状态与限定申",
+              "请规则"
+            ],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.0812,
+        "scene_evidence": [
+          {
+            "location": "海港缩微资料库出纳窗与基金往来银行柜台",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_248_PREPAYMENT_REIMBURSEMENT",
+            "display_name": "初声基金十八美元预付款原路退回回单",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_248_SCHEDULE_B_ACCESS_HOLD",
+            "display_name": "SB-83-6密封状态与限定申请规则",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      }
+    },
+    "joint": {
+      "247": {
+        "han_chars": 1229,
+        "total_chars": 1489,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 3,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "248": {
+        "han_chars": 1259,
+        "total_chars": 1465,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.0933,
+      "resolution_signatures": {
+        "first": {
+          "attack": "合同",
+          "counter": "",
+          "resolver": "",
+          "opponent_result": "",
+          "hero_result": ""
+        },
+        "second": {
+          "attack": "",
+          "counter": "",
+          "resolver": "",
+          "opponent_result": "",
+          "hero_result": "恢复"
+        }
+      },
+      "settlement_action_terms": [
+        "失去",
+        "保留",
+        "拒绝",
+        "取得"
+      ],
+      "rebirth_information_gap_markers": [
+        "前世",
+        "麦珂记得"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 227,
+          "semantic_overlap": 0.051
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 228,
+          "semantic_overlap": 0.0417
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 229,
+          "semantic_overlap": 0.0486
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 230,
+          "semantic_overlap": 0.0395
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 231,
+          "semantic_overlap": 0.0489
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 232,
+          "semantic_overlap": 0.0436
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 233,
+          "semantic_overlap": 0.0509
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 234,
+          "semantic_overlap": 0.0566
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 235,
+          "semantic_overlap": 0.0628
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 236,
+          "semantic_overlap": 0.0565
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 237,
+          "semantic_overlap": 0.0568
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 238,
+          "semantic_overlap": 0.0396
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 239,
+          "semantic_overlap": 0.043
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 240,
+          "semantic_overlap": 0.039
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 241,
+          "semantic_overlap": 0.0535
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 242,
+          "semantic_overlap": 0.0486
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 243,
+          "semantic_overlap": 0.0634
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 244,
+          "semantic_overlap": 0.0548
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 245,
+          "semantic_overlap": 0.0717
+        },
+        {
+          "chapter_id": 247,
+          "prior_chapter_id": 246,
+          "semantic_overlap": 0.0715
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 227,
+          "semantic_overlap": 0.0415
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 228,
+          "semantic_overlap": 0.0463
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 229,
+          "semantic_overlap": 0.0429
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 230,
+          "semantic_overlap": 0.0396
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 231,
+          "semantic_overlap": 0.0384
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 232,
+          "semantic_overlap": 0.0352
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 233,
+          "semantic_overlap": 0.0544
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 234,
+          "semantic_overlap": 0.0552
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 235,
+          "semantic_overlap": 0.0493
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 236,
+          "semantic_overlap": 0.0561
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 237,
+          "semantic_overlap": 0.0466
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 238,
+          "semantic_overlap": 0.043
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 239,
+          "semantic_overlap": 0.0457
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 240,
+          "semantic_overlap": 0.044
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 241,
+          "semantic_overlap": 0.0487
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 242,
+          "semantic_overlap": 0.0477
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 243,
+          "semantic_overlap": 0.059
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 244,
+          "semantic_overlap": 0.0619
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 245,
+          "semantic_overlap": 0.0691
+        },
+        {
+          "chapter_id": 248,
+          "prior_chapter_id": 246,
+          "semantic_overlap": 0.0739
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "247": "2b33a6aaad73548dfc3ce4707fad3febb8749c3a20ee75d5f7be7c0959b7e54b",
+    "248": "e97d3776a50591692fe6d2d86527010b13060fd1854d2fd26bf2e55a720689cb"
+  },
+  "accepted_at": "2026-08-25T12:49:12.325167+00:00"
+}

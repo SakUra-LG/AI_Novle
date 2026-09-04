@@ -36,10 +36,11 @@ SOLUTION_TYPES = {
 }
 STATE_DOMAINS = {
     "character", "relationship", "rights", "asset", "job", "health", "enemy_capability",
-    "foreshadow", "reputation", "location",
+    "foreshadow", "reputation", "location", "cost",
 }
 STATE_EFFECT_TYPES = {
     "villain_loss", "protagonist_gain", "relationship_change", "world_state",
+    "protagonist_cost", "cost_resolution",
 }
 
 # Reject enum-label laundering: a file-room evidence scene cannot call itself
@@ -278,6 +279,11 @@ def event_type_semantic_failures(event: dict[str, Any]) -> list[str]:
         )
     })
     failures: list[str] = []
+    procedural_markers = ("档案", "证据", "胶片", "登记", "签名", "复制", "原始")
+    if event_type in {"fan_public_welfare", "public_welfare"} and sum(
+        marker in story_text for marker in procedural_markers
+    ) >= 3:
+        failures.append(f"{eid}.event_type={event_type}与实际剧情不符：程序/取证事件")
     # event_type and solution_type are inherited navigation labels.  Detailed
     # scenes may mix creation, performance, family and evidence work, so keyword
     # counts must not force a creative rewrite merely to satisfy taxonomy.
@@ -431,6 +437,132 @@ def validate_event_batch(
     return state, locked, failures
 
 
+def next_hook_repeat_failures(events: list[dict[str, Any]]) -> list[str]:
+    """Reject exact or near-duplicate next hooks in a rolling five-EC window."""
+    failures: list[str] = []
+    recent: list[tuple[str, str]] = []
+    for event in events:
+        eid = str(event.get("cluster_id") or "")
+        hook = re.sub(r"\s+", "", str(event.get("next_event_hook") or ""))
+        if hook:
+            count = sum(
+                1 for _, previous in recent
+                if previous == hook or SequenceMatcher(None, previous, hook).ratio() >= 0.82
+            )
+            if count >= 2:
+                failures.append(f"NEXT_HOOK_REPEAT_FATAL {eid}: 连续三次重复next_hook")
+            elif count >= 1:
+                failures.append(f"NEXT_HOOK_REPEAT_FATAL {eid}: 连续重复next_hook")
+            recent.append((eid, hook))
+            recent = recent[-5:]
+    return failures
+
+
+def trial_timeline_failures(chapter_dates: dict[int, Any], *, formal_prior_date: Any | None = None) -> list[str]:
+    """Check an isolated trial against the last formal chapter as well as itself."""
+    failures: list[str] = []
+    parsed: dict[int, date] = {}
+    for chapter_id, value in sorted(chapter_dates.items()):
+        try:
+            current = value if isinstance(value, date) else date.fromisoformat(str(value))
+        except (TypeError, ValueError):
+            failures.append(f"第{chapter_id}章日期非法：{value}")
+            continue
+        parsed[int(chapter_id)] = current
+    if formal_prior_date is not None and parsed:
+        try:
+            prior = formal_prior_date if isinstance(formal_prior_date, date) else date.fromisoformat(str(formal_prior_date))
+            first_id = min(parsed)
+            if parsed[first_id] < prior:
+                failures.append(f"第{first_id}章早于正式前章日期，时间线倒退")
+        except (TypeError, ValueError):
+            failures.append(f"正式前章日期非法：{formal_prior_date}")
+    previous: tuple[int, date] | None = None
+    for chapter_id, current in parsed.items():
+        if previous and current < previous[1]:
+            failures.append(f"第{chapter_id}章早于第{previous[0]}章，时间线倒退")
+        previous = (chapter_id, current)
+    return failures
+
+
+def _trial_specs(plan: dict[str, Any]) -> dict[int, tuple[str, dict[str, Any]]]:
+    result: dict[int, tuple[str, dict[str, Any]]] = {}
+    for event in plan.get("event_clusters") or []:
+        eid = str(event.get("cluster_id") or "")
+        for spec in event.get("chapter_specs") or []:
+            result[int(spec["chapter_id"])] = (eid, spec)
+    return result
+
+
+def trial_chapter_binding_failures(
+    body: str, cluster_id: str, chapter_id: int, plan: dict[str, Any]
+) -> list[str]:
+    """Validate a trial chapter against its explicit candidate chapter card."""
+    specs = _trial_specs(plan)
+    expected = specs.get(int(chapter_id))
+    failures: list[str] = []
+    if not expected:
+        return [f"试写章卡缺失：第{chapter_id}章"]
+    expected_cluster, spec = expected
+    if expected_cluster != str(cluster_id):
+        failures.append(f"第{chapter_id}章绑定错误：期望{expected_cluster}，实际{cluster_id}")
+    for marker in spec.get("forbidden_progress") or []:
+        if str(marker) and str(marker) in body:
+            failures.append(f"PLAN_LEAK_FORWARD 第{chapter_id}章提前消费：{marker}")
+    return failures
+
+
+def trial_forward_consumption_failures(
+    body: str, cluster_id: str, plan: dict[str, Any]
+) -> list[str]:
+    """Catch action-level consumption of the next EC, while allowing a hook mention."""
+    events = plan.get("event_clusters") or []
+    index = next((i for i, event in enumerate(events) if event.get("cluster_id") == cluster_id), -1)
+    if index < 0 or index + 1 >= len(events):
+        return []
+    next_event = events[index + 1]
+    next_id = str(next_event.get("cluster_id") or "")
+    # These are actions/results, not mere nouns used to foreshadow the next line.
+    action_markers = (
+        "签订合同", "签署合同", "合同生效", "自动延长", "制作培训手册",
+        "公开展示获准", "对外分发获准", "商业授权获准", "合同谈判完成",
+    )
+    hits = [marker for marker in action_markers if marker in body]
+    return [f"PLAN_LEAK_FORWARD 提前消费{next_id}核心动作：{','.join(hits)}"] if hits else []
+
+
+def validate_trial_cluster_card(cluster: dict[str, Any], cards: list[dict[str, Any]]) -> list[str]:
+    """Validate one candidate EC without promoting it into the formal plan."""
+    failures: list[str] = []
+    span = [int(value) for value in cluster.get("chapter_span") or []]
+    if len(span) != 2 or span[1] != span[0] + 1:
+        failures.append("候选事件簇必须恰好绑定连续两章")
+    if [int(card.get("chapter_id") or 0) for card in cards] != span:
+        failures.append("候选章卡章节范围与事件簇不一致")
+    required_signature = {
+        "conflict_type", "attack_method", "counter_method", "key_artifact",
+        "authority", "reward", "relationship_change",
+    }
+    signature = cluster.get("structure_signature") or {}
+    missing = sorted(required_signature - set(signature))
+    if missing:
+        failures.append("候选事件簇结构签名缺失：" + ",".join(missing))
+    dates: dict[int, Any] = {}
+    for card in cards:
+        chapter_id = int(card.get("chapter_id") or 0)
+        dates[chapter_id] = card.get("timeline_start")
+        if not timeline_point(card.get("timeline_start")) or not timeline_point(card.get("timeline_end")):
+            failures.append(f"第{chapter_id}章缺少合法起止日期")
+        if timeline_point(card.get("timeline_end")) and timeline_point(card.get("timeline_start")) and timeline_point(card.get("timeline_end")) < timeline_point(card.get("timeline_start")):
+            failures.append(f"第{chapter_id}章结束日期早于开始日期")
+        if not card.get("goal") or not card.get("turning_choice"):
+            failures.append(f"第{chapter_id}章缺少人物选择或目标")
+    failures.extend(trial_timeline_failures(dates))
+    if not cluster.get("irreplaceable_progress_point"):
+        failures.append("候选事件簇缺少不可替代推进点")
+    return failures
+
+
 def validate_full_plan(
     events: list[dict[str, Any]], cards: list[dict[str, Any]],
     *, allow_partial: bool = False, global_outline: dict[str, Any] | None = None,
@@ -450,7 +582,7 @@ def validate_full_plan(
     seen_gains: dict[str, str] = {}
     last_current_year: int | None = None
     last_current_date: date | None = None
-    created_artifacts: dict[tuple[str, str], tuple[int, date | None]] = {}
+    created_artifacts: dict[tuple[str, str], tuple[int, date | None, dict[str, Any]]] = {}
     transition_count = 0
     character_display_by_id: dict[str, str] = {}
     alias_to_ids: dict[str, set[str]] = defaultdict(set)
@@ -475,6 +607,28 @@ def validate_full_plan(
         eid = f"EC{index:03d}"
         span = [index * 2 - 1, index * 2]
         event_phase = f"P{((span[0] - 1) // 50) + 1:02d}"
+        allowed_outcomes = {
+            "clean_win", "small_win", "partial_win", "costly_win", "stalemate",
+            "setback_with_gain", "major_win", "decisive_win",
+        }
+        if str(event.get("outcome_type") or "") not in allowed_outcomes:
+            failures.append(f"{eid}.outcome_type缺失或不合法")
+        signature = event.get("resolution_signature")
+        signature_fields = ("attack_domain", "counter_method", "resolver", "publicity", "hero_gain_type")
+        if not isinstance(signature, dict) or any(not str(signature.get(field) or "").strip() for field in signature_fields):
+            failures.append(f"{eid}.resolution_signature缺少结构字段")
+        if not isinstance(event.get("death_chain_step"), dict):
+            failures.append(f"{eid}.death_chain_step缺失")
+        flaw = event.get("character_flaw_beat")
+        if isinstance(flaw, dict):
+            required_flaw = ("trigger", "protagonist_action", "immediate_benefit", "hidden_cost", "who_pushes_back", "future_payoff_cluster")
+            missing_flaw = [field for field in required_flaw if not str(flaw.get(field) or "").strip()]
+            who = str(flaw.get("who_pushes_back") or "")
+            planned_people = set(map(str, event.get("main_characters") or []))
+            for milestone in event.get("two_chapter_structure") or []:
+                planned_people.update(map(str, milestone.get("participants") or []))
+            if missing_flaw or who not in planned_people:
+                failures.append(f"FLAW_BEAT_PARTICIPANT_FATAL {eid}: missing={missing_flaw}, who={who}")
         if event.get("cluster_id") != eid or event.get("chapter_span") != span:
             failures.append(f"{eid}编号/范围必须为{span}")
         event_causal_ids = event.get("causal_spine_ids")
@@ -524,6 +678,7 @@ def validate_full_plan(
             failures.append(f"{eid}.canonical_cast至少1项并使用稳定character_id")
             cast = []
         event_character_ids: set[str] = set()
+        event_cast_names: set[str] = set()
         for member in cast:
             if not isinstance(member, dict):
                 failures.append(f"{eid}.canonical_cast成员必须为对象")
@@ -544,11 +699,24 @@ def validate_full_plan(
             for alias in aliases if isinstance(aliases, list) else []:
                 if str(alias).strip():
                     alias_to_ids[str(alias).strip()].add(cid)
+                    event_cast_names.add(str(alias).strip())
+            event_cast_names.add(display)
         main_ids = event.get("main_character_ids")
         if not isinstance(main_ids, list) or not main_ids:
             failures.append(f"{eid}.main_character_ids至少1项")
         elif any(str(cid) not in event_character_ids for cid in main_ids):
             failures.append(f"{eid}.main_character_ids含不在canonical_cast中的ID")
+        for field in ("main_characters", "main_opponent"):
+            values = event.get(field) if field == "main_characters" else [event.get(field)]
+            for value in values or []:
+                name = str(value or "").strip()
+                if name and name not in event_cast_names:
+                    failures.append(f"{eid}.{field}未知全名，无法解析到合法character_id：{name}")
+        for milestone in event.get("two_chapter_structure") or []:
+            for participant in milestone.get("participants") or []:
+                name = str(participant or "").strip()
+                if name and name not in event_cast_names and not re.search(r"[（(].*[）)]", name):
+                    failures.append(f"{eid}.participants未知全名，无法解析到合法character_id：{name}")
         for transition in event.get("state_transitions") or []:
             entity = str(transition.get("entity_id") or "") if isinstance(transition, dict) else ""
             if entity.startswith("CHAR_") and entity not in event_character_ids:
@@ -587,6 +755,11 @@ def validate_full_plan(
                 failures.append(f"第{cid}章必须提供合法timeline_start/timeline_end（YYYY、YYYY-MM或YYYY-MM-DD）")
             elif exact_end < exact_start:
                 failures.append(f"第{cid}章timeline_end早于timeline_start")
+            event_years = timeline_years(event.get("timeline_years"))
+            if event_years and exact_start is not None and exact_start.year not in event_years:
+                failures.append(
+                    f"第{cid}章timeline_start年份{exact_start.year}不属于{eid}.timeline_years={event_years}"
+                )
             if role in CURRENT_TIMELINE_ROLES and cid == 2 and exact_end is not None:
                 last_current_date = exact_end
             elif role in CURRENT_TIMELINE_ROLES and exact_start is not None:
@@ -634,7 +807,12 @@ def validate_full_plan(
                 elif key in created_artifacts:
                     failures.append(f"第{cid}章重复创建artifact_id={aid}，首次在第{created_artifacts[key][0]}章")
                 else:
-                    created_artifacts[key] = (cid, exact_start)
+                    if isinstance(created, dict):
+                        required_contract = ("scope", "signers", "granted_permissions", "does_not_grant", "authority_source")
+                        missing_contract = [field for field in required_contract if field not in created]
+                        if missing_contract:
+                            failures.append(f"ARTIFACT_SCOPE_FATAL 第{cid}章{aid}缺少{missing_contract}")
+                    created_artifacts[key] = (cid, exact_start, created if isinstance(created, dict) else {})
             for ref in refs:
                 aid = artifact_id(ref.get("artifact_id") if isinstance(ref, dict) else ref)
                 scope = str(ref.get("timeline_scope") or "") if isinstance(ref, dict) else ""
@@ -643,6 +821,15 @@ def validate_full_plan(
                     failures.append(f"第{cid}章artifact_id={aid or '<空>'}不能从{scope or '<空>'}跨到{expected_scope}时间线")
                 elif not aid or (scope, aid) not in created_artifacts:
                     failures.append(f"第{cid}章提前引用尚未创建的artifact_id={aid or '<空>'}")
+                else:
+                    created = created_artifacts[(scope, aid)][2]
+                    permission = str(ref.get("required_permission") or "use_as_evidence_within_scope") if isinstance(ref, dict) else "use_as_evidence_within_scope"
+                    grants = {str(value) for value in created.get("granted_permissions") or []}
+                    denied = {str(value) for value in created.get("does_not_grant") or []}
+                    if permission not in grants or permission in denied:
+                        failures.append(
+                            f"ARTIFACT_SCOPE_FATAL 第{cid}章{aid}请求{permission}，grants={sorted(grants)}"
+                        )
             # `timeline_years` is event-level context and EC001 legitimately
             # reads "2009→1969" on both cards. Current-life ordering must use
             # the exact per-chapter timestamps authored in the milestones.
@@ -656,6 +843,20 @@ def validate_full_plan(
                 last_current_year = max(last_current_year or start_year, end_year or start_year)
             elif role in CURRENT_TIMELINE_ROLES and cid == 2 and start_year is not None:
                 last_current_year = end_year or start_year
+    for start in range(max(0, len(events) - 9)):
+        window = events[start:start + 10]
+        if len(window) < 10:
+            continue
+        signatures: dict[str, list[str]] = defaultdict(list)
+        for event in window:
+            signature = event.get("resolution_signature") or {}
+            signatures[canonical_json(signature)].append(str(event.get("cluster_id") or ""))
+        for ids in signatures.values():
+            if len(ids) >= 3:
+                failures.append(
+                    f"RESOLUTION_SIGNATURE_REPEAT_FATAL {window[0].get('cluster_id')}-{window[-1].get('cluster_id')}: {ids}"
+                )
+    failures.extend(next_hook_repeat_failures(events))
     # Category-count quotas are intentionally not part of the authoritative
     # full-plan gate; causality, chronology, identities and state changes are.
     ambiguous_aliases = {
@@ -678,9 +879,27 @@ def validate_full_plan(
                 failures.append(f"{ref_id}未在种植阶段{plant}被详细事件实际种下")
             if payoff not in referenced_phases:
                 failures.append(f"{ref_id}未在回收阶段{payoff}被详细事件实际回收")
+    warning_patterns = (
+        ("SOURCE_DIRECTION_WARNING", re.compile(r"(?:未绑定上层five_event_direction|只保留上层事件方向)")),
+        ("FORESHADOW_COVERAGE_WARNING", re.compile(r"FS\d+未在(?:种植|回收)阶段")),
+        ("CAUSAL_COVERAGE_WARNING", re.compile(r"250事件未覆盖因果主链")),
+        ("SOURCE_ANCHOR_WARNING", re.compile(r"历史锚点.*(?:覆盖|缺少)")),
+    )
+    issues: list[dict[str, str]] = []
+    for message in failures:
+        code = next((code for code, pattern in warning_patterns if pattern.search(str(message))), None)
+        issues.append({
+            "code": code or "PLAN_VALIDATION_FATAL",
+            "severity": "WARNING" if code else "FATAL",
+            "message": str(message),
+        })
+    fatal_failures = [item["message"] for item in issues if item["severity"] == "FATAL"]
+    warnings = [item for item in issues if item["severity"] == "WARNING"]
     return {
-        "passed": not failures,
-        "failures": failures,
+        "passed": not fatal_failures,
+        "failures": fatal_failures,
+        "warnings": warnings,
+        "issues": issues,
         "evidence": {
             "event_clusters": len(events), "chapter_cards": len(cards),
             "state_transition_count": transition_count,

@@ -1,0 +1,108 @@
+{
+  "cluster_id": "EC065",
+  "chapter_id": 129,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "62cccbe3ccbf4264aefb8eb9d73dee376bb2f30cef4f8090b3b3485faaf2d6b8",
+  "base_prompt_sha256": "62cccbe3ccbf4264aefb8eb9d73dee376bb2f30cef4f8090b3b3485faaf2d6b8",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "31812126476f149e580f033df7c0716cc6b87e0f6968d5e589a0a7d4a76ad097",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 13.697,
+    "usage": {
+      "prompt_tokens": 6637,
+      "completion_tokens": 1137,
+      "total_tokens": 7774,
+      "prompt_tokens_details": {
+        "cached_tokens": 3720
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 65,
+    "through_chapter": 130,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "99216061f06bcb91c43b529b6ac6aec08451d900de944b9309ecfb8541bcca44",
+    "chapter_card_prefix_sha256": "ce77536a734a6c3784a7a088b6396f935a8649d33827e757827f9d81a46d3ecc",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "1e9006b3477734b76257faa9a722f89fd83aabd391fb6a43113d9dce74517520"
+  },
+  "cluster_sha256": "bfefdbbf22c7f317d904d21334801e5eee86278684f419becc28975d68e33106",
+  "card_sha256": "2e3eeaa3bcf61def6fadf2243066c0061cc491fe90b6b377ae3345d83186c3e2",
+  "chapter_audit": {
+    "han_chars": 1703,
+    "total_chars": 1960,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "灯光暗淡计时装置",
+        "exact": false,
+        "bigram_coverage": 0.286,
+        "matched": false
+      },
+      {
+        "anchor": "拾音衰减曲线记录",
+        "exact": false,
+        "bigram_coverage": 0.714,
+        "matched": true
+      },
+      {
+        "anchor": "纸质实验报告",
+        "exact": false,
+        "bigram_coverage": 0.8,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0289,
+    "scene_evidence": [
+      {
+        "location": "排练厅主舞台",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_129_RESONANCE_LOG",
+        "display_name": "《情感共振实验报告》纸质版",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.029，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“灯光暗淡计时装置”",
+      "正文未落到规划场景“排练厅主舞台”",
+      "正文没有写出本章正式创建的关键对象“《情感共振实验报告》纸质版”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.029，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“灯光暗淡计时装置”",
+      "正文未落到规划场景“排练厅主舞台”",
+      "正文没有写出本章正式创建的关键对象“《情感共振实验报告》纸质版”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

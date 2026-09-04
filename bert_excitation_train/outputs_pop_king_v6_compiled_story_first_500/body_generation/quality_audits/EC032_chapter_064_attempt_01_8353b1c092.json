@@ -1,0 +1,132 @@
+{
+  "cluster_id": "EC032",
+  "chapter_id": 64,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "8353b1c09204f2cdce1ac85d77a07d22e5f8ef1bd9d4bf42c9fa122c51e14793",
+  "base_prompt_sha256": "8353b1c09204f2cdce1ac85d77a07d22e5f8ef1bd9d4bf42c9fa122c51e14793",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "7cd1adc88aa07596349a77b750a875b88dde7e95fc77778b5ac98e029be49930",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 18.344,
+    "usage": {
+      "prompt_tokens": 8885,
+      "completion_tokens": 1190,
+      "total_tokens": 10075,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 32,
+    "through_chapter": 64,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "5778f42594bc57121bf1ca98e09bb55bd2ee7b82d80aee9eef7f0b31d7559436",
+    "chapter_card_prefix_sha256": "9a7ba2eb56b79fd0e6f0000845effc917064116fa8c102fd3aa39337b22cd1bb",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "61f6039b8e473407e6f70d6e48e5b17ae8a8d4bf8a03ff7c81da834095d9c236"
+  },
+  "cluster_sha256": "5c913640d6b4cb1f366a8f793f5b46d50ab2ed10e0b2cb30c7ab8c2f1a842b79",
+  "card_sha256": "62af115d56d7dece83baa25b56796c3430d9b298b055d4f94026cbe81f494150",
+  "chapter_audit": {
+    "han_chars": 1724,
+    "total_chars": 1980,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "哈罗德·芬奇质疑",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "对比数据展示",
+        "exact": false,
+        "bigram_coverage": 0.2,
+        "matched": false
+      },
+      {
+        "anchor": "电子设备失灵",
+        "exact": false,
+        "bigram_coverage": 0.4,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "role_in_production_team__extension_EC030",
+        "target": "核心技术合伙人（拥有独家设备使用权）",
+        "evidence_terms": [
+          "原厂牌技术代表承",
+          "认无法复现机械稳",
+          "定性"
+        ],
+        "hit_terms": [
+          "定性"
+        ],
+        "matched": false
+      },
+      {
+        "state_key": "control_over_narrative__extension_EC027",
+        "target": "彻底失去技术欺诈能力，信誉破产",
+        "evidence_terms": [
+          "哈罗德",
+          "芬奇在测试中失败",
+          "承认设备缺陷"
+        ],
+        "hit_terms": [
+          "哈罗德"
+        ],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0335,
+    "scene_evidence": [
+      {
+        "location": "家庭排练室",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.033，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“对比数据展示”",
+      "正文没有兑现章卡关键事实“电子设备失灵”",
+      "正文没有通过现场动作兑现状态转移role_in_production_team__extension_EC030→核心技术合伙人（拥有独家设备使用权）",
+      "正文没有通过现场动作兑现状态转移control_over_narrative__extension_EC027→彻底失去技术欺诈能力，信誉破产",
+      "正文未落到规划场景“家庭排练室”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.033，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“对比数据展示”",
+      "正文没有兑现章卡关键事实“电子设备失灵”",
+      "正文没有通过现场动作兑现状态转移role_in_production_team__extension_EC030→核心技术合伙人（拥有独家设备使用权）",
+      "正文没有通过现场动作兑现状态转移control_over_narrative__extension_EC027→彻底失去技术欺诈能力，信誉破产",
+      "正文未落到规划场景“家庭排练室”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

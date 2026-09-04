@@ -1,0 +1,104 @@
+{
+  "cluster_id": "EC078",
+  "chapter_id": 155,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "4f79fd81b490bae06c13516d3988199b0db8b783188594db2fa9eeda915ff3a1",
+  "base_prompt_sha256": "4f79fd81b490bae06c13516d3988199b0db8b783188594db2fa9eeda915ff3a1",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "b50043d3c262f2a6380e697c52b916e252f5bf5dcee887cd97e31c972be19a09",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.798,
+    "usage": {
+      "prompt_tokens": 5910,
+      "completion_tokens": 1261,
+      "total_tokens": 7171,
+      "prompt_tokens_details": {
+        "cached_tokens": 3337
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 78,
+    "through_chapter": 156,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "0d99bdb0bba539eea133a87b1b8e5be51866c4e5cd0b9725c1420b4a7439b9c9",
+    "chapter_card_prefix_sha256": "dc390e352c9ef083830c37843b98b4544734db65fe552355e02792859aaf7bd8",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "ece3d0984b36eb9ddaa7e0668df9819bf35d3ce50220555d902bb41be3661d6f"
+  },
+  "cluster_sha256": "090684f8f2e66d2a974732c6d2f852cbe4e7c9882c051a369b8e7c5bc82fee68",
+  "card_sha256": "2d919673146e3a48178cf83aa139e0c9f63bb009b2ae88b5d2a9eba860f1ea6f",
+  "chapter_audit": {
+    "han_chars": 1795,
+    "total_chars": 2050,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "荧光标记",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "1982年旧档案",
+        "exact": false,
+        "bigram_coverage": 0.571,
+        "matched": true
+      },
+      {
+        "anchor": "老约翰·米勒的证词",
+        "exact": false,
+        "bigram_coverage": 0.714,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0269,
+    "scene_evidence": [
+      {
+        "location": "法庭",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_155_FLUORESCENT_TRAP",
+        "display_name": "荧光标记文件",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.027，疑似写成了另一件事",
+      "正文没有写出本章正式创建的关键对象“荧光标记文件”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.027，疑似写成了另一件事",
+      "正文没有写出本章正式创建的关键对象“荧光标记文件”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

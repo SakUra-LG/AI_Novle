@@ -1,0 +1,448 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC159",
+  "chapter_ids": [
+    317,
+    318
+  ],
+  "accepted": false,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "317": {
+        "han_chars": 1035,
+        "total_chars": 1181,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 3,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "维克多的贪婪与疏忽",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "S95-B-RW样带的遗漏",
+            "exact": false,
+            "bigram_coverage": 0.7,
+            "matched": true
+          },
+          {
+            "anchor": "莉薇娅的设伏行动",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.0725,
+        "scene_evidence": [
+          {
+            "location": "废弃胶片库",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [],
+        "failures": []
+      },
+      "318": {
+        "han_chars": 1041,
+        "total_chars": 1419,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 4,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "录音播放",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "维克多的恐慌反应",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "媒体在场",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "法律程序启动",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "fraud_exposure__EC159",
+            "target": "publicly_verified_fraud",
+            "evidence_terms": [
+              "ART_309_S95_B_RW_TAPE",
+              "播放夹层录音",
+              "揭露",
+              "1995",
+              "年医疗数据造假事"
+            ],
+            "hit_terms": [
+              "1995"
+            ],
+            "matched": true
+          },
+          {
+            "state_key": "survival_chain__EC159",
+            "target": "optimal_physiological_state",
+            "evidence_terms": [
+              "VITAL_SIGNS_LOG_1997"
+            ],
+            "hit_terms": [
+              "VITAL_SIGNS_LOG_1997"
+            ],
+            "matched": true
+          },
+          {
+            "state_key": "opposition_loss_EC159",
+            "target": "维克多的医疗造假计划彻底曝光，其本人陷入极度恐慌，开始疯狂清理但已无效，失去了对麦珂健康数据的单方面解释权。",
+            "evidence_terms": [
+              "维克多医疗造假计",
+              "划彻底曝光",
+              "其本人陷入恐慌并",
+              "开始疯狂清理但已",
+              "无效",
+              "麦珂获得",
+              "1995",
+              "年维克多亲口指示",
+              "篡改心电图基线的",
+              "核心物证",
+              "健康指标维持最优"
+            ],
+            "hit_terms": [
+              "划彻底曝光",
+              "无效",
+              "1995"
+            ],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 1,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.1702,
+        "scene_evidence": [
+          {
+            "location": "临时取证实验室",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [],
+        "failures": []
+      }
+    },
+    "joint": {
+      "317": {
+        "han_chars": 1035,
+        "total_chars": 1181,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 3,
+        "failures": []
+      },
+      "318": {
+        "han_chars": 1041,
+        "total_chars": 1419,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 4,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.0768,
+      "resolution_signatures": {
+        "first": {
+          "attack": "",
+          "counter": "",
+          "resolver": "",
+          "opponent_result": "",
+          "hero_result": "保住"
+        },
+        "second": {
+          "attack": "",
+          "counter": "",
+          "resolver": "保安",
+          "opponent_result": "失去",
+          "hero_result": ""
+        }
+      },
+      "settlement_action_terms": [
+        "失去",
+        "获得"
+      ],
+      "rebirth_information_gap_markers": [
+        "前世"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 297,
+          "semantic_overlap": 0.0445
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 298,
+          "semantic_overlap": 0.0382
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 299,
+          "semantic_overlap": 0.0383
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 300,
+          "semantic_overlap": 0.0339
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 301,
+          "semantic_overlap": 0.0449
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 302,
+          "semantic_overlap": 0.042
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 303,
+          "semantic_overlap": 0.051
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 304,
+          "semantic_overlap": 0.0425
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 305,
+          "semantic_overlap": 0.0383
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 306,
+          "semantic_overlap": 0.034
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 307,
+          "semantic_overlap": 0.0492
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 308,
+          "semantic_overlap": 0.0426
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 309,
+          "semantic_overlap": 0.0927
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 310,
+          "semantic_overlap": 0.0654
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 311,
+          "semantic_overlap": 0.051
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 312,
+          "semantic_overlap": 0.0545
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 313,
+          "semantic_overlap": 0.0665
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 314,
+          "semantic_overlap": 0.0508
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 315,
+          "semantic_overlap": 0.0456
+        },
+        {
+          "chapter_id": 317,
+          "prior_chapter_id": 316,
+          "semantic_overlap": 0.0455
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 297,
+          "semantic_overlap": 0.0496
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 298,
+          "semantic_overlap": 0.0717
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 299,
+          "semantic_overlap": 0.0422
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 300,
+          "semantic_overlap": 0.0744
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 301,
+          "semantic_overlap": 0.0615
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 302,
+          "semantic_overlap": 0.0753
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 303,
+          "semantic_overlap": 0.0663
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 304,
+          "semantic_overlap": 0.0743
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 305,
+          "semantic_overlap": 0.0459
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 306,
+          "semantic_overlap": 0.0666
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 307,
+          "semantic_overlap": 0.0416
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 308,
+          "semantic_overlap": 0.0868
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 309,
+          "semantic_overlap": 0.0991
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 310,
+          "semantic_overlap": 0.0861
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 311,
+          "semantic_overlap": 0.0619
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 312,
+          "semantic_overlap": 0.109
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 313,
+          "semantic_overlap": 0.0734
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 314,
+          "semantic_overlap": 0.0998
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 315,
+          "semantic_overlap": 0.0516
+        },
+        {
+          "chapter_id": 318,
+          "prior_chapter_id": 316,
+          "semantic_overlap": 0.0778
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "317": "58ff8f973c93b39655e3ad39ba7521d370bbc86af454029cf2a78086744f800b",
+    "318": "faeedff2cde1a2a48fae121dfc0cd58e0f040b1220684a7479b2034efb0f51cc"
+  },
+  "accepted_at": "2026-08-26T09:12:47.758659+00:00",
+  "status": "quarantine_rewrite_pending",
+  "authoritative": false,
+  "quarantine_reason": "EC136-EC178 architecture and synopsis repair",
+  "quarantined_at": "20260826T110312Z"
+}

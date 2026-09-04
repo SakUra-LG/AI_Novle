@@ -1,0 +1,23 @@
+{
+  "version": "pop_king_character_lifecycle_v1_20260822",
+  "protagonist": {
+    "character_id": "CHAR_026AC753E27A",
+    "name": "麦珂·杰森",
+    "birth_date": "1958-08-29",
+    "birth_year": 1958,
+    "age_rule": "calendar_date_before_birthday_subtract_one",
+    "adult_start_year": 1976,
+    "adult_conflict_domains": [
+      "copyright", "management_rights", "medical_proxy", "business_control",
+      "public_reputation", "relationship", "insurance", "asset_ownership"
+    ],
+    "adult_forbidden_conflict_domains": [
+      "parental_guardianship", "school_transfer_by_parent", "minor_contract_protection",
+      "child_performance_permission", "童星监护", "未成年人监护权"
+    ],
+    "minor_conflict_domains": [
+      "parental_guardianship", "school_transfer_by_parent", "minor_contract_protection",
+      "child_performance_permission"
+    ]
+  }
+}

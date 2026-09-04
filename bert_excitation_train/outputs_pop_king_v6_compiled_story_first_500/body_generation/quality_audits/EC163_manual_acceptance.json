@@ -1,0 +1,427 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC163",
+  "chapter_ids": [
+    325,
+    326
+  ],
+  "accepted": false,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "325": {
+        "han_chars": 1156,
+        "total_chars": 1308,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 3,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "原始磁带取出过程",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "预售数据公布",
+            "exact": false,
+            "bigram_coverage": 0.8,
+            "matched": true
+          },
+          {
+            "anchor": "资金流向第三方监管",
+            "exact": false,
+            "bigram_coverage": 0.875,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.0788,
+        "scene_evidence": [
+          {
+            "location": "河湾镇法院档案室B区",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          },
+          {
+            "location": "《午夜星轨》演播厅",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_312_MAP_CARD_PRESALE_LOG",
+            "display_name": "《静默增益》地图卡预售百万记录",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      },
+      "326": {
+        "han_chars": 1153,
+        "total_chars": 1504,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "剪辑版播放失败",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "原始磁带播放",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "七位见证人出庭",
+            "exact": false,
+            "bigram_coverage": 0.833,
+            "matched": true
+          },
+          {
+            "anchor": "昆廷笔记公开",
+            "exact": false,
+            "bigram_coverage": 0.8,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "copyright_control_EC163",
+            "target": "physically_verified_history",
+            "evidence_terms": [
+              "ORIGINAL_TAPE_NOV_17_1979"
+            ],
+            "hit_terms": [
+              "ORIGINAL_TAPE_NOV_17_1979"
+            ],
+            "matched": true
+          },
+          {
+            "state_key": "market_credibility__extension_EC163",
+            "target": "damaged_initial",
+            "evidence_terms": [
+              "CLIPPED_TAPE_FAILURE_EC163"
+            ],
+            "hit_terms": [
+              "CLIPPED_TAPE_FAILURE_EC163"
+            ],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.1685,
+        "scene_evidence": [
+          {
+            "location": "公开听证会现场",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          },
+          {
+            "location": "听证会旁听席",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_313_QUINTIN_NOTEBOOK_COPY",
+            "display_name": "昆廷导演手写调度笔记复写件",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      }
+    },
+    "joint": {
+      "325": {
+        "han_chars": 1156,
+        "total_chars": 1308,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 3,
+        "failures": []
+      },
+      "326": {
+        "han_chars": 1153,
+        "total_chars": 1504,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.0858,
+      "resolution_signatures": {
+        "first": {
+          "attack": "合同",
+          "counter": "签字",
+          "resolver": "观众",
+          "opponent_result": "",
+          "hero_result": ""
+        },
+        "second": {
+          "attack": "伪造文件",
+          "counter": "签字",
+          "resolver": "法官",
+          "opponent_result": "",
+          "hero_result": "确立"
+        }
+      },
+      "settlement_action_terms": [
+        "获得",
+        "公开",
+        "版权"
+      ],
+      "rebirth_information_gap_markers": [
+        "前世",
+        "麦珂记得"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 305,
+          "semantic_overlap": 0.0519
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 306,
+          "semantic_overlap": 0.0586
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 307,
+          "semantic_overlap": 0.0572
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 308,
+          "semantic_overlap": 0.0628
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 309,
+          "semantic_overlap": 0.0564
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 310,
+          "semantic_overlap": 0.0413
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 311,
+          "semantic_overlap": 0.0758
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 312,
+          "semantic_overlap": 0.0728
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 313,
+          "semantic_overlap": 0.0805
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 314,
+          "semantic_overlap": 0.0641
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 315,
+          "semantic_overlap": 0.0587
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 316,
+          "semantic_overlap": 0.0524
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 317,
+          "semantic_overlap": 0.0647
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 318,
+          "semantic_overlap": 0.0651
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 319,
+          "semantic_overlap": 0.0829
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 320,
+          "semantic_overlap": 0.0677
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 321,
+          "semantic_overlap": 0.1223
+        },
+        {
+          "chapter_id": 325,
+          "prior_chapter_id": 322,
+          "semantic_overlap": 0.0706
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 305,
+          "semantic_overlap": 0.0502
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 306,
+          "semantic_overlap": 0.0666
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 307,
+          "semantic_overlap": 0.0514
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 308,
+          "semantic_overlap": 0.0944
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 309,
+          "semantic_overlap": 0.0527
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 310,
+          "semantic_overlap": 0.0595
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 311,
+          "semantic_overlap": 0.0754
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 312,
+          "semantic_overlap": 0.1031
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 313,
+          "semantic_overlap": 0.0883
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 314,
+          "semantic_overlap": 0.1079
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 315,
+          "semantic_overlap": 0.0492
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 316,
+          "semantic_overlap": 0.0731
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 317,
+          "semantic_overlap": 0.0556
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 318,
+          "semantic_overlap": 0.1075
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 319,
+          "semantic_overlap": 0.0714
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 320,
+          "semantic_overlap": 0.1261
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 321,
+          "semantic_overlap": 0.0903
+        },
+        {
+          "chapter_id": 326,
+          "prior_chapter_id": 322,
+          "semantic_overlap": 0.1715
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "325": "2d6ed413ec2faf98ace7b091cf89e92dcac1c69c7bd7705074b8b0245f326aa1",
+    "326": "867f9de34568c1087779c2c86ceb278dda80b35ee4b2c268d7704b22660daa07"
+  },
+  "accepted_at": "2026-08-26T09:32:44.447720+00:00",
+  "status": "quarantine_rewrite_pending",
+  "authoritative": false,
+  "quarantine_reason": "EC136-EC178 architecture and synopsis repair",
+  "quarantined_at": "20260826T110312Z"
+}

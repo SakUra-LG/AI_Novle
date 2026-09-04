@@ -1,0 +1,137 @@
+{
+  "cluster_id": "EC102",
+  "chapter_id": 204,
+  "attempt": 2,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "aa43dd07859c017400f89e0e448902f8eb695cba4c7860885040c0fa7cb80333",
+  "base_prompt_sha256": "5830f8e4078cdd0259923ea3d23113f1eeb6c680a7d9df523439dd27c213d5e4",
+  "body_generator_contract_version": "v11_dynamic_identity_history_retry_20260822",
+  "raw_response_sha256": "a66cd24b6cf3b3cfc0e84b96d724b7b60d7ad0e49463b58a1d311bc875d876c8",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.974,
+    "usage": {
+      "prompt_tokens": 15158,
+      "completion_tokens": 907,
+      "total_tokens": 16065,
+      "prompt_tokens_details": {
+        "cached_tokens": 7821
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 102,
+    "through_chapter": 204,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "b4088631b773f06bd5fb9a9bcca284b83a536508efd577d416051dcff5bcfe45",
+    "chapter_card_prefix_sha256": "8c5cf399692cbd324922a5ce1bc59daf4c05f4150f6c4b92341c50fa437fc301",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "0a615c045ff19f29df4568f1328070444ab6c66994aad0bde265f137f919d21c"
+  },
+  "cluster_sha256": "7256598a8588f3187ddc82709041bd75320198cd3499b3dc481a7113573dfe60",
+  "card_sha256": "7e76d011ce80c532d9a8b9035f914d69c6c455413db73d1ef232b93aaab42294",
+  "chapter_audit": {
+    "han_chars": 1332,
+    "total_chars": 1482,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "观众手持编号卡形成人墙",
+        "exact": false,
+        "bigram_coverage": 0.4,
+        "matched": true
+      },
+      {
+        "anchor": "实时数据流展示",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "索恩被媒体包围",
+        "exact": false,
+        "bigram_coverage": 0.167,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "audience_seating_control__extension_EC102",
+        "target": "randomized_community",
+        "evidence_terms": [
+          "ART_203_SEATING_LOG"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "spatial_narrative_control__extension_EC102",
+        "target": "audience_collaborator",
+        "evidence_terms": [
+          "ART_204_PUBLIC_CHARTER"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0774,
+    "scene_evidence": [
+      {
+        "location": "体育馆外广场",
+        "body_hit": true,
+        "match_mode": "venue_exterior_semantics"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_204_PUBLIC_CHARTER",
+        "display_name": "观众协作者公约",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      },
+      {
+        "artifact_id": "ART_204_DATA_FLOW_LOG",
+        "display_name": "昨夜演出实时数据流记录",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文疑似泄漏规划结算摘要：损失/收益/代价/关系状态密集并列",
+      "正文没有通过现场动作兑现状态转移audience_seating_control__extension_EC102→randomized_community",
+      "正文没有通过现场动作兑现状态转移spatial_narrative_control__extension_EC102→audience_collaborator"
+    ],
+    "all_validator_failures": [
+      "正文疑似泄漏规划结算摘要：损失/收益/代价/关系状态密集并列",
+      "正文没有通过现场动作兑现状态转移audience_seating_control__extension_EC102→randomized_community",
+      "正文没有通过现场动作兑现状态转移spatial_narrative_control__extension_EC102→audience_collaborator"
+    ]
+  },
+  "failures": [],
+  "accepted": false,
+  "semantic_rejected": true,
+  "semantic_critic_failures": [
+    "semantic critic knowledge_boundary: Chapter 203 candidate synopsis states: '索恩在后台试图切断电源，被莉薇娅依据“三方签字急救启动令”中的技术维护条款驳斥。' (Thorne attempts to cut power in the back, rebuked by Livia based on the 'Three-Signature Emergency Start Order' technical maintenance clause.); The plan and context explicitly state that only Ma Ke knows past-life facts; other characters (including Livia) must infer preparation but cannot know the specific future threat or possess knowledge of a 'Three-Signature Emergency Start Order' unless it was established as ",
+    "semantic critic pov_consistency: In Chapter 203, the narrative describes Thorne's internal reaction in the monitoring room: '索恩在监控室里暴怒...他意识到自己不仅输掉了这一场演出...' (Thorne raged in the monitoring room... he realized he lost...).; While Thorne is a villain and his external actions are visible, the candidate text reveals his *internal realization* of the loss and the specific mechanism of defeat ('security fuse mechanism') which was a secret plan known only to Ma Ke via rebirth memory. The text implies Thorne 'knew' what was coming or ",
+    "semantic critic repeated_resolution_pattern: Chapter 203's climax involves a 'spelling error' on a card leading to a 'public correction' and 'standing ovation'.; Chapter 204's climax involves a 'data log' and 'blueprint mismatch' leading to a 'public exposure' and 'crowd包围'.; This pattern (Villain makes a small mistake/error -> Protagonist exposes it publicly -> Crowd cheers/Villain humiliated) is structurally identical to Chapter 196 (Audit室 - 'system error' exposed), Chapter 198 (Bank audit - 'seventh code' exposed), and Chapter 202 (Med"
+  ]
+}

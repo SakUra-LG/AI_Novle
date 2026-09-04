@@ -1,0 +1,791 @@
+{
+  "passed": true,
+  "failures": [],
+  "warnings": [
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC002未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC003未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC004未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC007未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC021只保留上层事件方向11.11%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC028未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC034未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC035未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC041未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC051未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC056未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC058未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC060未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC065未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC104未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC107未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC108未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC109未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC110未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC111未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC112未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC113未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC114未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC115未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC116未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC117未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC118未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC119未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC120未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC121未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC122未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC123未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC124未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC125未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC126未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC127未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC128未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC129未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC130未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC131未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC132未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC133未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC134未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC135未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC142未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC147未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC166未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC185未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC229未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC238只保留上层事件方向8.79%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC239只保留上层事件方向7.78%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC240只保留上层事件方向10.14%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC241只保留上层事件方向8.66%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC242只保留上层事件方向6.17%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC243只保留上层事件方向9.13%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC244未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC245只保留上层事件方向9.57%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC246只保留上层事件方向7.75%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC247未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC248只保留上层事件方向7.07%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC249未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "CAUSAL_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "250事件未覆盖因果主链：CS07、CS14"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS02未在回收阶段P04被详细事件实际回收"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS04未在种植阶段P04被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS04未在回收阶段P06被详细事件实际回收"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS05未在种植阶段P05被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS05未在回收阶段P07被详细事件实际回收"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS06未在种植阶段P07被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS07未在种植阶段P08被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS08未在种植阶段P08被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS09未在种植阶段P08被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS09未在回收阶段P10被详细事件实际回收"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS10未在种植阶段P08被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS10未在回收阶段P10被详细事件实际回收"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS11未在种植阶段P09被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS12未在种植阶段P09被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS12未在回收阶段P10被详细事件实际回收"
+    }
+  ],
+  "issues": [
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC002未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC003未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC004未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC007未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC021只保留上层事件方向11.11%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC028未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC034未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC035未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC041未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC051未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC056未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC058未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC060未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC065未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC104未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC107未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC108未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC109未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC110未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC111未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC112未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC113未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC114未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC115未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC116未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC117未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC118未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC119未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC120未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC121未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC122未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC123未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC124未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC125未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC126未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC127未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC128未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC129未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC130未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC131未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC132未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC133未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC134未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC135未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC142未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC147未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC166未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC185未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC229未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC238只保留上层事件方向8.79%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC239只保留上层事件方向7.78%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC240只保留上层事件方向10.14%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC241只保留上层事件方向8.66%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC242只保留上层事件方向6.17%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC243只保留上层事件方向9.13%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC244未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC245只保留上层事件方向9.57%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC246只保留上层事件方向7.75%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC247未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC248只保留上层事件方向7.07%，下层疑似重新编剧而非细化"
+    },
+    {
+      "code": "SOURCE_DIRECTION_WARNING",
+      "severity": "WARNING",
+      "message": "EC249未绑定上层five_event_direction的原文与哈希"
+    },
+    {
+      "code": "CAUSAL_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "250事件未覆盖因果主链：CS07、CS14"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS02未在回收阶段P04被详细事件实际回收"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS04未在种植阶段P04被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS04未在回收阶段P06被详细事件实际回收"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS05未在种植阶段P05被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS05未在回收阶段P07被详细事件实际回收"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS06未在种植阶段P07被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS07未在种植阶段P08被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS08未在种植阶段P08被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS09未在种植阶段P08被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS09未在回收阶段P10被详细事件实际回收"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS10未在种植阶段P08被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS10未在回收阶段P10被详细事件实际回收"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS11未在种植阶段P09被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS12未在种植阶段P09被详细事件实际种下"
+    },
+    {
+      "code": "FORESHADOW_COVERAGE_WARNING",
+      "severity": "WARNING",
+      "message": "FS12未在回收阶段P10被详细事件实际回收"
+    }
+  ],
+  "evidence": {
+    "event_clusters": 250,
+    "chapter_cards": 500,
+    "state_transition_count": 613,
+    "final_state_count": 610,
+    "irreversible_state_count": 3,
+    "created_artifact_count": 430,
+    "stable_character_count": 61,
+    "referenced_causal_spines": 13,
+    "referenced_foreshadows": 9
+  },
+  "scope": "complete_500_chapter_plan",
+  "fingerprints": {}
+}

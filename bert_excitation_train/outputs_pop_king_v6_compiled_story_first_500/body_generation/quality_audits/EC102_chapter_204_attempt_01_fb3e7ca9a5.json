@@ -1,0 +1,141 @@
+{
+  "cluster_id": "EC102",
+  "chapter_id": 204,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "fb3e7ca9a5ba2284fd5e1d50f6f9ffcf53e69466382ad7a5651bcd43557e8c11",
+  "base_prompt_sha256": "fb3e7ca9a5ba2284fd5e1d50f6f9ffcf53e69466382ad7a5651bcd43557e8c11",
+  "body_generator_contract_version": "v9_state_guard_rebirth_firewall_20260822",
+  "raw_response_sha256": "2841b89c75e680a5bb84994c6e6f3eb77ab260fdb6bcc49aaa003cf6e2d763ba",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 15.448,
+    "usage": {
+      "prompt_tokens": 9827,
+      "completion_tokens": 1162,
+      "total_tokens": 10989,
+      "prompt_tokens_details": {
+        "cached_tokens": 464
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 102,
+    "through_chapter": 204,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "b4088631b773f06bd5fb9a9bcca284b83a536508efd577d416051dcff5bcfe45",
+    "chapter_card_prefix_sha256": "ee16239a36b329897afcc181416fb63fbd295049b600d980f811653b54ad7cb0",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "9d6848176d8b9968379bd5a5e2dc646be1730dac284b0115a59e865e7c4ed7d9"
+  },
+  "cluster_sha256": "7256598a8588f3187ddc82709041bd75320198cd3499b3dc481a7113573dfe60",
+  "card_sha256": "7e76d011ce80c532d9a8b9035f914d69c6c455413db73d1ef232b93aaab42294",
+  "chapter_audit": {
+    "han_chars": 1689,
+    "total_chars": 1902,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "观众手持编号卡形成人墙",
+        "exact": false,
+        "bigram_coverage": 0.4,
+        "matched": false
+      },
+      {
+        "anchor": "实时数据流展示",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "索恩被媒体包围",
+        "exact": false,
+        "bigram_coverage": 0.167,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "audience_seating_control__extension_EC102",
+        "target": "randomized_community",
+        "evidence_terms": [
+          "ART_203_SEATING_LOG"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "spatial_narrative_control__extension_EC102",
+        "target": "audience_collaborator",
+        "evidence_terms": [
+          "ART_204_PUBLIC_CHARTER"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0524,
+    "scene_evidence": [
+      {
+        "location": "体育馆外广场",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_204_PUBLIC_CHARTER",
+        "display_name": "观众协作者公约",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      },
+      {
+        "artifact_id": "ART_204_DATA_FLOW_LOG",
+        "display_name": "昨夜演出实时数据流记录",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有兑现章卡关键事实“观众手持编号卡形成人墙”",
+      "正文没有兑现章卡关键事实“索恩被媒体包围”",
+      "正文没有通过现场动作兑现状态转移audience_seating_control__extension_EC102→randomized_community",
+      "正文没有通过现场动作兑现状态转移spatial_narrative_control__extension_EC102→audience_collaborator",
+      "正文未落到规划场景“体育馆外广场”",
+      "正文没有写出本章正式创建的关键对象“观众协作者公约”",
+      "正文没有写出本章正式创建的关键对象“昨夜演出实时数据流记录”",
+      "主角麦珂所在动作链被女性代词‘她’承接"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“观众手持编号卡形成人墙”",
+      "正文没有兑现章卡关键事实“索恩被媒体包围”",
+      "正文没有通过现场动作兑现状态转移audience_seating_control__extension_EC102→randomized_community",
+      "正文没有通过现场动作兑现状态转移spatial_narrative_control__extension_EC102→audience_collaborator",
+      "正文未落到规划场景“体育馆外广场”",
+      "正文没有写出本章正式创建的关键对象“观众协作者公约”",
+      "正文没有写出本章正式创建的关键对象“昨夜演出实时数据流记录”",
+      "主角麦珂所在动作链被女性代词‘她’承接"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

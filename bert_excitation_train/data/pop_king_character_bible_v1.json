@@ -22,7 +22,10 @@
   "characters": [
     {
       "name": "麦珂·杰森",
-      "aliases": ["麦珂"],
+      "character_id": "CHAR_026AC753E27A",
+      "aliases": [
+        "麦珂"
+      ],
       "role": "重生歌手、创作者与复仇主轴",
       "trait_root": "对失控和被他人替自己决定人生高度敏感",
       "surface_mask": "少年时礼貌安静，成年后在公众面前克制从容",
@@ -32,13 +35,20 @@
       "self_justification": "我已经看过最坏结局，所以不能再把决定权交出去",
       "moral_boundary": "不伪造证据、不制造陷阱伤害无辜、不用前世记忆剥夺盟友的自主选择",
       "choice_pressure": "明知怎样操纵对方最有效时，选择公开事实并让对方自己决定，哪怕因此失去更快的胜利",
-      "speech_rules": ["先问关键日期、原话或选择", "少喊口号，用短句指出可执行下一步", "面对家人时会刻意把命令改成询问"],
+      "speech_rules": [
+        "先问关键日期、原话或选择",
+        "少喊口号，用短句指出可执行下一步",
+        "面对家人时会刻意把命令改成询问"
+      ],
       "action_signature": "先观察既有流程中的微小偏差，再做少年或歌手身份能够完成的抢先动作，把专业判断交给有资质成年人",
       "relationship_arc": "从独自背负死亡记忆、习惯控制一切，成长为能共享事实、允许家人与盟友承担自己的选择"
     },
     {
       "name": "玛莎·杰森",
-      "aliases": ["玛莎"],
+      "character_id": "CHAR_9A2E3E2B5B8A",
+      "aliases": [
+        "玛莎"
+      ],
       "role": "母亲与早期权利保护者",
       "trait_root": "用照顾和忍耐维持家庭完整",
       "surface_mask": "温和、怕给别人添麻烦，常先给强势者留体面",
@@ -48,13 +58,20 @@
       "self_justification": "先熬过去，孩子有了位置以后再谈公平",
       "moral_boundary": "不会拿孩子的健康、教育与人格交换名望",
       "choice_pressure": "在一份能立刻带来机会却含控制条款的文件前，宁可承受丈夫和公司责怪也要求复核",
-      "speech_rules": ["平时用商量语气", "真正越过底线时不争吵，只清楚说‘我不签’", "不替麦珂宣告感受，会先问他是否愿意"],
+      "speech_rules": [
+        "平时用商量语气",
+        "真正越过底线时不争吵，只清楚说‘我不签’",
+        "不替麦珂宣告感受，会先问他是否愿意"
+      ],
       "action_signature": "保存副本、叫停过度工时、把孩子带离强迫场合；关键动作朴素但会改变权利",
       "relationship_arc": "从替孩子忍耐，转向相信保护不等于代替孩子决定，并成为能公开承担冲突的共同决策者"
     },
     {
       "name": "乔纳·杰森",
-      "aliases": ["乔纳"],
+      "character_id": "CHAR_6C4D9F4E7A10",
+      "aliases": [
+        "乔纳"
+      ],
       "role": "父亲兼早期经理",
       "trait_root": "把养家能力等同于个人尊严",
       "surface_mask": "强硬果断，强调纪律和现实，不容孩子在外人面前顶嘴",
@@ -64,13 +81,20 @@
       "self_justification": "没有我的狠，这个家连门都进不去",
       "moral_boundary": "初期自认绝不会让外人伤害孩子，却会迟钝地忽视自己造成的伤害",
       "choice_pressure": "当公开认错能保护孩子却会让自己丢脸时，他最容易暴露真正优先级",
-      "speech_rules": ["用‘这个家’和‘现实’替个人欲望辩护", "很少说害怕，常把害怕说成别人不懂规矩", "被孩子说中时先强调语气而非事实"],
+      "speech_rules": [
+        "用‘这个家’和‘现实’替个人欲望辩护",
+        "很少说害怕，常把害怕说成别人不懂规矩",
+        "被孩子说中时先强调语气而非事实"
+      ],
       "action_signature": "抢先签字、安排排练或替全家发言；成长必须通过主动交还一项权力表现",
       "relationship_arc": "不是突然变成好父亲，而是在一次次失去控制后被迫区分养家、占有与真正保护"
     },
     {
       "name": "黛安娜·罗文",
-      "aliases": ["黛安娜"],
+      "character_id": "CHAR_B24EF2E733C9",
+      "aliases": [
+        "黛安娜"
+      ],
       "role": "巡演服装师与后来的共同养育者",
       "trait_root": "相信稳定来自把生活细节安排妥当",
       "surface_mask": "冷静利落，很少在工作现场谈感情",
@@ -80,13 +104,20 @@
       "self_justification": "如果没人把日常守住，所有漂亮承诺都会落空",
       "moral_boundary": "不拿孩子当公关盾牌，不以照料关系索取事业控制权",
       "choice_pressure": "当保护隐私与尊重当事人公开表达冲突时，必须亲自说明自己选择保护的是谁",
-      "speech_rules": ["用日期、尺寸和实际安排说话", "不说空泛安慰，会给一个能执行的承诺", "愤怒时语速更慢而不是更响"],
+      "speech_rules": [
+        "用日期、尺寸和实际安排说话",
+        "不说空泛安慰，会给一个能执行的承诺",
+        "愤怒时语速更慢而不是更响"
+      ],
       "action_signature": "调整衣物、出入口、孩子日程或现场动线，同时把最终决定留给当事人",
       "relationship_arc": "从只相信秩序，成长为接受亲密关系里有些风险不能靠表格消除"
     },
     {
       "name": "昆廷·琼斯",
-      "aliases": ["昆廷"],
+      "character_id": "CHAR_9577B35020B0",
+      "aliases": [
+        "昆廷"
+      ],
       "role": "制作人导师",
       "trait_root": "把作品质量看得比人情和即时成功更重",
       "surface_mask": "挑剔、直截了当，听见不对的音会立刻打断",
@@ -96,13 +127,20 @@
       "self_justification": "作品留下来比我们此刻舒不舒服重要",
       "moral_boundary": "不窃取署名，不用导师身份换取服从",
       "choice_pressure": "在保护麦珂与诚实指出作品缺陷之间选择后者，但必须承担关系受损的代价",
-      "speech_rules": ["先说具体哪一拍、哪一层编排有问题", "赞美简短且有证据", "拒绝用‘天才’替代技术讨论"],
+      "speech_rules": [
+        "先说具体哪一拍、哪一层编排有问题",
+        "赞美简短且有证据",
+        "拒绝用‘天才’替代技术讨论"
+      ],
       "action_signature": "停带、删歌、让所有人重新听一遍；真正信任时会把最终选择权交回麦珂",
       "relationship_arc": "从严格把关者变成能够接受麦珂离开自己方法、仍不放弃诚实的平等同行"
     },
     {
       "name": "艾琳·沃特曼",
-      "aliases": ["艾琳"],
+      "character_id": "CHAR_8C6A51D4E9F2",
+      "aliases": [
+        "艾琳"
+      ],
       "role": "独立制作人、长期知己与感情线核心",
       "trait_root": "把平等和独立视为亲密关系成立的前提",
       "surface_mask": "专业克制，遇到暧昧会先谈工作边界",
@@ -112,13 +150,20 @@
       "self_justification": "如果必须乞求一个位置，那就不是我的位置",
       "moral_boundary": "不靠秘密关系换署名、资源或道德优越感，不替麦珂决定他该爱谁",
       "choice_pressure": "当留下能获得感情却必须继续隐身时，她会离开并失去即时幸福",
-      "speech_rules": ["指出具体边界，不用试探性反问", "亲密时仍保留对作品的真实判断", "受伤时不说‘没关系’，而说自己接下来会怎么做"],
+      "speech_rules": [
+        "指出具体边界，不用试探性反问",
+        "亲密时仍保留对作品的真实判断",
+        "受伤时不说‘没关系’，而说自己接下来会怎么做"
+      ],
       "action_signature": "关掉为讨好市场增加的轨道、签自己的名字、按自己的行程离开或回来",
       "relationship_arc": "从用撤退守住独立，成长为能在不失去自我的前提下明确提出需要"
     },
     {
       "name": "瑟琳娜·凯德",
-      "aliases": ["瑟琳娜"],
+      "character_id": "CHAR_EC7C1E1EB46F",
+      "aliases": [
+        "瑟琳娜"
+      ],
       "role": "演员、秘密恋人与公开关系压力来源",
       "trait_root": "相信真实必须被看见才不会被权力改写",
       "surface_mask": "耀眼坦率，面对镜头敢于先开口",
@@ -128,13 +173,20 @@
       "self_justification": "如果一段关系只能在黑暗里存在，它迟早会被别人写成谎言",
       "moral_boundary": "不出售私密细节，不用媒体逼婚或逼迫麦珂表演感情",
       "choice_pressure": "在继续相爱但长期隐身与公开离开之间，她会选择后者并承担失去",
-      "speech_rules": ["说出关系中的具体事实", "不接受含混的‘以后’", "公开场合克制，私下会追问一句必须回答的问题"],
+      "speech_rules": [
+        "说出关系中的具体事实",
+        "不接受含混的‘以后’",
+        "公开场合克制，私下会追问一句必须回答的问题"
+      ],
       "action_signature": "拒绝摆拍、退出候场位、亲自纠正失实称呼，而不是用哭闹证明受伤",
       "relationship_arc": "从要求被看见，成长为明白离开也能保护真实，不必靠胜过另一位女性证明价值"
     },
     {
       "name": "莉薇娅·普莱斯",
-      "aliases": ["莉薇娅"],
+      "character_id": "CHAR_A1B2C3D4E5F6",
+      "aliases": [
+        "莉薇娅"
+      ],
       "role": "摇滚世家继承人、闪婚伴侣",
       "trait_root": "渴望用自己的激烈选择摆脱家族安排",
       "surface_mask": "果断、浪漫、不怕舆论，像是永远先跳下去的人",
@@ -144,13 +196,20 @@
       "self_justification": "只要决定是我先做的，就没人能利用我",
       "moral_boundary": "不把麦珂的版权和孩子当作与家族谈判的筹码",
       "choice_pressure": "当家族利益与伴侣安全冲突时，必须放弃一项属于自己的继承优势才算真正选择",
-      "speech_rules": ["常用带挑衅的直陈句", "不说自己脆弱，会说‘那我就不要了’", "真正认真时会停止表演叛逆，逐条谈后果"],
+      "speech_rules": [
+        "常用带挑衅的直陈句",
+        "不说自己脆弱，会说‘那我就不要了’",
+        "真正认真时会停止表演叛逆，逐条谈后果"
+      ],
       "action_signature": "撕掉家族准备的联合声明、亲自出席或缺席关键场合，并为选择付出财产或名誉代价",
       "relationship_arc": "从用反叛证明自由，走向能缓慢决定并承认自己也会被利益诱惑"
     },
     {
       "name": "维克多·兰斯",
-      "aliases": ["维克多"],
+      "character_id": "CHAR_76E9E8359211",
+      "aliases": [
+        "维克多"
+      ],
       "role": "唱片与版权集团掌舵者、长期主要反派",
       "trait_root": "把可预测和可控制等同于安全与能力",
       "surface_mask": "专业、礼貌、几乎从不公开失态，总把掠夺包装成风险管理",
@@ -160,13 +219,20 @@
       "self_justification": "我不是控制他，我是在保护一个太有价值、不能由他自己冒险的品牌",
       "moral_boundary": "初期避免留下明显违法命令；随着控制失效，会让合规话术替越来越恶劣的行为遮羞",
       "choice_pressure": "当承认麦珂判断正确能减少损失却会削弱权威时，他会保住权威，并亲手制造可追责的更大损失",
-      "speech_rules": ["多用‘我们’‘风险’‘保护’和被动句隐藏责任", "不直接威胁，先提出一个看似照顾对方的唯一选项", "失算时先纠正称呼或程序细节以夺回控制感"],
+      "speech_rules": [
+        "多用‘我们’‘风险’‘保护’和被动句隐藏责任",
+        "不直接威胁，先提出一个看似照顾对方的唯一选项",
+        "失算时先纠正称呼或程序细节以夺回控制感"
+      ],
       "action_signature": "拆分授权、制造交叉违约、让下属代签；滑稽感来自他在事实崩塌时仍坚持给失败重新命名",
       "relationship_arc": "越想证明所有成功都依赖集团，越迫使盟友与市场脱离他；最终被自己建立的控制链反向锁死"
     },
     {
       "name": "巴里·布鲁姆",
-      "aliases": ["巴里"],
+      "character_id": "CHAR_B1C2D3E4F5A6",
+      "aliases": [
+        "巴里"
+      ],
       "role": "公关掮客与滑稽反派",
       "trait_root": "极度需要证明自己是每个成功故事的幕后关键人物",
       "surface_mask": "热情圆滑、消息灵通，任何失败都能立即改名为策略",
@@ -176,13 +242,20 @@
       "self_justification": "故事没人包装就等于没有发生，我拿一点功劳只是服务费",
       "moral_boundary": "嘴上坚持自己不伤害艺人，实际会不断把‘只是制造话题’的范围扩大",
       "choice_pressure": "在安静解决问题与留下自己名字之间，他会选择后者，即使多发一封传真就会暴露整条操作链",
-      "speech_rules": ["爱用夸张的行业术语和自创简称", "被抓包先说对方误解了创意", "同一句话会对不同人换主语邀功"],
+      "speech_rules": [
+        "爱用夸张的行业术语和自创简称",
+        "被抓包先说对方误解了创意",
+        "同一句话会对不同人换主语邀功"
+      ],
       "action_signature": "提前印横幅、发错名单、同时承诺独家；其可笑行为必须造成实际证据、利益或职位损失",
       "relationship_arc": "不是突然变蠢，而是每次都败在同一个无法忍受无名的需求上"
     },
     {
       "name": "莱昂·周",
-      "aliases": ["莱昂"],
+      "character_id": "CHAR_C1D2E3F4A5B6",
+      "aliases": [
+        "莱昂"
+      ],
       "role": "成年歌迷组织星火同盟创始人",
       "trait_root": "渴望让被轻视的普通听众形成真正可见的共同体",
       "surface_mask": "热烈外向，遇到不公会立即组织行动",
@@ -192,13 +265,20 @@
       "self_justification": "如果我不先站出来，所有人都会被各个击破",
       "moral_boundary": "不骚扰、不造假、不替麦珂侵犯他人隐私，不把组织变成私人崇拜工具",
       "choice_pressure": "当最激烈的声援更吸睛却会伤害无辜时，必须选择慢而可核验的公开行动",
-      "speech_rules": ["使用‘我们可以做什么’而非‘麦珂需要我们做什么’", "公开讲话有号召力，私下会承认组织内部意见不同", "不把崇拜当证据"],
+      "speech_rules": [
+        "使用‘我们可以做什么’而非‘麦珂需要我们做什么’",
+        "公开讲话有号召力，私下会承认组织内部意见不同",
+        "不把崇拜当证据"
+      ],
       "action_signature": "组织票务互助、公开声明、现场接唱或合法见证，并让其他成员拥有署名和否决权",
       "relationship_arc": "从替偶像冲锋，成长为能维护歌迷自主和公共规则的组织者"
     },
     {
       "name": "苏菲亚·罗德里格斯",
-      "aliases": ["苏菲亚"],
+      "character_id": "CHAR_87B8E75FFF6F",
+      "aliases": [
+        "苏菲亚"
+      ],
       "role": "星火同盟票务与审计负责人",
       "trait_root": "相信热爱只有经得住核对才不会被人利用",
       "surface_mask": "谨慎、寡言、习惯先查名单和数字",
@@ -208,13 +288,20 @@
       "self_justification": "如果没人问第二遍，骗子就会替我们回答第一遍",
       "moral_boundary": "不为保护麦珂隐瞒真实账目，不泄露普通成员隐私换取舆论胜利",
       "choice_pressure": "当公开一项真实问题会暂时伤害阵营形象时，她仍会公开并留下修正路径",
-      "speech_rules": ["先问来源、责任人和修正日期", "不用数字羞辱人", "信任别人时会明确说‘这一项我不再复核你’"],
+      "speech_rules": [
+        "先问来源、责任人和修正日期",
+        "不用数字羞辱人",
+        "信任别人时会明确说‘这一项我不再复核你’"
+      ],
       "action_signature": "核对票务、捐款和授权名单；关键人物时刻必须表现为是否签字、是否公开异议，而非只抱着表格",
       "relationship_arc": "从用怀疑保护共同体，成长为允许经过验证的人承担责任"
     },
     {
       "name": "卡尔·霍尔特",
-      "aliases": ["卡尔"],
+      "character_id": "CHAR_3F11D9A42EDF",
+      "aliases": [
+        "卡尔"
+      ],
       "role": "巡演总监",
       "trait_root": "相信一切风险都能被进度与指标压平",
       "surface_mask": "高效、务实、从不谈情绪，只谈场次和损耗",
@@ -224,13 +311,20 @@
       "self_justification": "所有人都说累，只有演出完成以后他们才有资格感谢我",
       "moral_boundary": "自称不会故意害人，却不断把明显警报解释成可接受损耗",
       "choice_pressure": "在取消一场保护麦珂与保住完美履历之间，他会修改指标保住场次，从而留下责任链",
-      "speech_rules": ["用百分比和场次数代替人名", "被质疑时要求对方给替代排期", "失败时说‘模型没有错，是执行偏差’"],
+      "speech_rules": [
+        "用百分比和场次数代替人名",
+        "被质疑时要求对方给替代排期",
+        "失败时说‘模型没有错，是执行偏差’"
+      ],
       "action_signature": "加场、挪休息日、取消备用方案；清算应让他依赖的排期或签字记录证明其选择",
       "relationship_arc": "越追求零偏差，越暴露他把生命当数字的荒谬"
     },
     {
       "name": "托马斯·布莱克",
-      "aliases": ["托马斯"],
+      "character_id": "CHAR_D1E2F3A4B5C6",
+      "aliases": [
+        "托马斯"
+      ],
       "role": "遗产律师与控制条款设计者",
       "trait_root": "把消除歧义视为职业价值和个人安全",
       "surface_mask": "耐心、措辞精确，常以替客户避免麻烦的姿态出现",
@@ -240,13 +334,20 @@
       "self_justification": "自由意志不会替遗产付账，只有我写下的结构会",
       "moral_boundary": "前期坚持形式合法；当合法结构失效时，会诱导别人把事实写成有利版本",
       "choice_pressure": "在忠实记录麦珂决定与保住自己设计的控制体系之间，他会选择体系并留下措辞矛盾",
-      "speech_rules": ["频繁说‘为了避免争议’和‘仅作技术处理’", "不说夺取，只说代管、保护和触发", "被反驳时抓住定义而回避真实目的"],
+      "speech_rules": [
+        "频繁说‘为了避免争议’和‘仅作技术处理’",
+        "不说夺取，只说代管、保护和触发",
+        "被反驳时抓住定义而回避真实目的"
+      ],
       "action_signature": "递上附件、拆分定义、让关键选择看似默认发生；因果清算应由同一套定义反向限制他",
       "relationship_arc": "越想让所有未来只剩一个合法答案，越被麦珂今生留下的明确自主选择击穿"
     },
     {
       "name": "康拉德·莫里森",
-      "aliases": ["康拉德"],
+      "character_id": "CHAR_E1F2A3B4C5D6",
+      "aliases": [
+        "康拉德"
+      ],
       "role": "晚年私人医生与死亡链执行者",
       "trait_root": "需要被权势人物需要，以此证明自己的专业地位",
       "surface_mask": "顺从、体贴、随叫随到，把越界说成个性化照护",
@@ -256,9 +357,786 @@
       "self_justification": "如果我不在，他身边会来一个更不懂他的人",
       "moral_boundary": "嘴上坚持自己不会越过致命红线，却会把每一次小越界解释为例外，直到红线只剩说法",
       "choice_pressure": "在拒绝危险要求并失去位置与继续迎合之间，他会选择后者，并用记录缺口掩饰选择",
-      "speech_rules": ["用医疗被动句淡化自己的动作", "先安抚再解释剂量", "被追问责任时强调患者需求和团队压力"],
+      "speech_rules": [
+        "用医疗被动句淡化自己的动作",
+        "先安抚再解释剂量",
+        "被追问责任时强调患者需求和团队压力"
+      ],
       "action_signature": "重复检查门外动静、调整记录与实际操作的距离；只能出现在2009前世死亡链和2008—2009今生终局，绝不能随重生出现在1969",
       "relationship_arc": "不是天生杀手，而是一次次把被需要放在专业底线前，最终成为控制体系最可替换也最可追责的一环"
+    }
+  ],
+  "canonical_character_registry": [
+    {
+      "character_id": "CHAR_0037905289BB",
+      "canonical_name": "玛莎·杰森",
+      "aliases": [
+        "玛莎",
+        "玛莎·杰森"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "母亲，温和但逐步学会保护孩子的合同权利",
+      "alignment": "ally",
+      "first_appearance_chapter": 1
+    },
+    {
+      "character_id": "CHAR_026AC753E27A",
+      "canonical_name": "麦珂·杰森",
+      "aliases": [
+        "麦珂",
+        "麦珂·杰森"
+      ],
+      "sex": "male",
+      "birth_date": "1958-08-29",
+      "role": "重生后从全国出道前夕重走四十年职业生涯的歌手与创作者",
+      "alignment": "protagonist",
+      "first_appearance_chapter": 1
+    },
+    {
+      "character_id": "CHAR_3F11D9A42EDF",
+      "canonical_name": "卡尔·霍尔特",
+      "aliases": [
+        "卡尔",
+        "卡尔·霍尔特"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "按场次抽成、迷信表格能压过人命的巡演总监",
+      "alignment": "opponent",
+      "first_appearance_chapter": 1
+    },
+    {
+      "character_id": "CHAR_E1F2A3B4C5D6",
+      "canonical_name": "康拉德·莫里森",
+      "aliases": [
+        "康拉德",
+        "康拉德·莫里森"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "晚年私人医生，迎合雇主身边利益链的用药执行者",
+      "alignment": "opponent",
+      "first_appearance_chapter": 1
+    },
+    {
+      "character_id": "CHAR_11D3BC48DDA3",
+      "canonical_name": "埃德加·温特",
+      "aliases": [
+        "埃德加",
+        "埃德加·温特"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 3
+    },
+    {
+      "character_id": "CHAR_D1A231D7C399",
+      "canonical_name": "乔纳·杰森",
+      "aliases": [
+        "乔纳",
+        "乔纳·杰森"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "父亲兼早期经理，强硬逐利又怕在外人前丢脸",
+      "alignment": "mixed",
+      "first_appearance_chapter": 3
+    },
+    {
+      "character_id": "CHAR_9577B35020B0",
+      "canonical_name": "昆廷·琼斯",
+      "aliases": [
+        "昆廷",
+        "昆廷·琼斯"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "成年阶段的制作人导师，坚持作品质量",
+      "alignment": "ally",
+      "first_appearance_chapter": 7
+    },
+    {
+      "character_id": "CHAR_B24EF2E733C9",
+      "canonical_name": "黛安娜·罗文",
+      "aliases": [
+        "黛安娜",
+        "黛安娜·罗文"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "巡演服装师与后来的共同养育者，重视家庭稳定",
+      "alignment": "ally",
+      "first_appearance_chapter": 9
+    },
+    {
+      "character_id": "CHAR_B1C2D3E4F5A6",
+      "canonical_name": "巴里·布鲁姆",
+      "aliases": [
+        "巴里",
+        "巴里·布鲁姆"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "爱抢功又常发错传真和邮件的滑稽公关掮客",
+      "alignment": "opponent",
+      "first_appearance_chapter": 9
+    },
+    {
+      "character_id": "CHAR_76E9E8359211",
+      "canonical_name": "维克多·兰斯",
+      "aliases": [
+        "维克多",
+        "维克多·兰斯"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "唱片与版权集团掌舵者，始终用合规话术包装控制",
+      "alignment": "opponent",
+      "first_appearance_chapter": 17
+    },
+    {
+      "character_id": "CHAR_C1D2E3F4A5B6",
+      "canonical_name": "莱昂·周",
+      "aliases": [
+        "莱昂",
+        "莱昂·周"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "成年歌迷组织“星火同盟”创始人",
+      "alignment": "ally",
+      "first_appearance_chapter": 19
+    },
+    {
+      "character_id": "CHAR_92F8C157F434",
+      "canonical_name": "格里高利·芬恩",
+      "aliases": [
+        "格里高利",
+        "格里高利·芬恩"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 19
+    },
+    {
+      "character_id": "CHAR_C47E4BB208B5",
+      "canonical_name": "哈罗德·芬奇",
+      "aliases": [
+        "哈罗德",
+        "哈罗德·芬奇"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 63
+    },
+    {
+      "character_id": "CHAR_87B8E75FFF6F",
+      "canonical_name": "苏菲亚·罗德里格斯",
+      "aliases": [
+        "苏菲亚",
+        "苏菲亚·罗德里格斯"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "“星火同盟”票务与审计负责人",
+      "alignment": "ally",
+      "first_appearance_chapter": 95
+    },
+    {
+      "character_id": "CHAR_EC7C1E1EB46F",
+      "canonical_name": "瑟琳娜·凯德",
+      "aliases": [
+        "瑟琳娜",
+        "瑟琳娜·凯德"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "电影演员与秘密恋人，追求公开而非被藏在名望背后",
+      "alignment": "mixed",
+      "first_appearance_chapter": 103
+    },
+    {
+      "character_id": "CHAR_382967F0B350",
+      "canonical_name": "埃里克·索恩",
+      "aliases": [
+        "埃里克",
+        "埃里克·索恩"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 111
+    },
+    {
+      "character_id": "CHAR_A1B2C3D4E5F6",
+      "canonical_name": "莉薇娅·普莱斯",
+      "aliases": [
+        "莉薇娅",
+        "莉薇娅·普莱斯"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "摇滚世家继承人，闪婚伴侣，真心与家族利益交缠",
+      "alignment": "mixed",
+      "first_appearance_chapter": 121
+    },
+    {
+      "character_id": "CHAR_33F93B7BC53A",
+      "canonical_name": "瑟琳娜·卡尔森",
+      "aliases": [
+        "瑟琳娜·卡尔森"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 125
+    },
+    {
+      "character_id": "CHAR_3FFB2CF69F92",
+      "canonical_name": "瑟琳娜·科尔",
+      "aliases": [
+        "瑟琳娜·科尔"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 127
+    },
+    {
+      "character_id": "CHAR_C1B841D16B30",
+      "canonical_name": "巴里·布鲁姆医生",
+      "aliases": [
+        "巴里·布鲁姆医生"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 127
+    },
+    {
+      "character_id": "CHAR_D3D4B10B3D17",
+      "canonical_name": "媒体经理克莱尔·霍恩",
+      "aliases": [
+        "媒体经理克莱尔",
+        "媒体经理克莱尔·霍恩"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 131
+    },
+    {
+      "character_id": "CHAR_49ECACFD4A11",
+      "canonical_name": "克莱尔·霍恩",
+      "aliases": [
+        "克莱尔",
+        "克莱尔·霍恩"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 133
+    },
+    {
+      "character_id": "CHAR_840A569730E9",
+      "canonical_name": "瑟琳娜·格雷",
+      "aliases": [
+        "瑟琳娜·格雷"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 135
+    },
+    {
+      "character_id": "CHAR_C2D764AE4A75",
+      "canonical_name": "巴里·布鲁姆及其所属唱片分销巨头",
+      "aliases": [
+        "巴里·布鲁姆及其所属唱片分销巨头"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 135
+    },
+    {
+      "character_id": "CHAR_8C6A51D4E9F2",
+      "canonical_name": "艾琳·沃特曼",
+      "aliases": [
+        "艾琳",
+        "艾琳·沃特曼"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "独立制作人兼长期知己，成年后形成若即若离的情感线",
+      "alignment": "ally",
+      "first_appearance_chapter": 143
+    },
+    {
+      "character_id": "CHAR_CF880573B5CB",
+      "canonical_name": "老约翰·米勒",
+      "aliases": [
+        "老约翰",
+        "老约翰·米勒"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 155
+    },
+    {
+      "character_id": "CHAR_BE1EC7F9E7B2",
+      "canonical_name": "诺兰·普莱斯",
+      "aliases": [
+        "诺兰",
+        "诺兰·普莱斯"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 191
+    },
+    {
+      "character_id": "CHAR_3C2C1E8DE107",
+      "canonical_name": "维克多·克劳斯",
+      "aliases": [
+        "维克多·克劳斯"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 205
+    },
+    {
+      "character_id": "CHAR_B9930A71C6BA",
+      "canonical_name": "维克多·克伦威尔",
+      "aliases": [
+        "维克多·克伦威尔"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 213
+    },
+    {
+      "character_id": "CHAR_0EB7D2FE6DB5",
+      "canonical_name": "雷蒙·克劳斯",
+      "aliases": [
+        "雷蒙",
+        "雷蒙·克劳斯"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 217
+    },
+    {
+      "character_id": "CHAR_384F7B6903B0",
+      "canonical_name": "哈罗德·韦斯特",
+      "aliases": [
+        "哈罗德·韦斯特"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 225
+    },
+    {
+      "character_id": "CHAR_1D596CF81A77",
+      "canonical_name": "亨利·斯特林",
+      "aliases": [
+        "亨利",
+        "亨利·斯特林"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 229
+    },
+    {
+      "character_id": "CHAR_B495BC2C5F5D",
+      "canonical_name": "法官哈罗德·温特",
+      "aliases": [
+        "法官哈罗德",
+        "法官哈罗德·温特"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 241
+    },
+    {
+      "character_id": "CHAR_3D43F562C2CF",
+      "canonical_name": "朱利安·索恩",
+      "aliases": [
+        "朱利安",
+        "朱利安·索恩"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 245
+    },
+    {
+      "character_id": "CHAR_53E2B0B5028D",
+      "canonical_name": "哈罗德·斯特林",
+      "aliases": [
+        "哈罗德·斯特林"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 255
+    },
+    {
+      "character_id": "CHAR_1CB49083C449",
+      "canonical_name": "瑟琳娜·刘",
+      "aliases": [
+        "瑟琳娜·刘"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 273
+    },
+    {
+      "character_id": "CHAR_4BD6CF437713",
+      "canonical_name": "斯特林·沃克",
+      "aliases": [
+        "斯特林",
+        "斯特林·沃克"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 273
+    },
+    {
+      "character_id": "CHAR_325F9173E463",
+      "canonical_name": "联邦审计官哈罗德·芬奇",
+      "aliases": [
+        "联邦审计官哈罗德",
+        "联邦审计官哈罗德·芬奇"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 277
+    },
+    {
+      "character_id": "CHAR_845D7F655759",
+      "canonical_name": "联邦法官哈罗德·格林",
+      "aliases": [
+        "联邦法官哈罗德",
+        "联邦法官哈罗德·格林"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 299
+    },
+    {
+      "character_id": "CHAR_1A10FDB0D8F2",
+      "canonical_name": "卡尔·斯特林",
+      "aliases": [
+        "卡尔·斯特林"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 301
+    },
+    {
+      "character_id": "CHAR_7518D55BD4A2",
+      "canonical_name": "卢卡斯·陈",
+      "aliases": [
+        "卢卡斯",
+        "卢卡斯·陈"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 307
+    },
+    {
+      "character_id": "CHAR_6FC4735D74A8",
+      "canonical_name": "瑟琳娜·兰斯",
+      "aliases": [
+        "瑟琳娜·兰斯"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 315
+    },
+    {
+      "character_id": "CHAR_7EC8C2E9C65E",
+      "canonical_name": "亚瑟·布莱克伍德",
+      "aliases": [
+        "亚瑟",
+        "亚瑟·布莱克伍德"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 337
+    },
+    {
+      "character_id": "CHAR_BDF63B327DD5",
+      "canonical_name": "艾德里安·斯特林",
+      "aliases": [
+        "艾德里安",
+        "艾德里安·斯特林"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 345
+    },
+    {
+      "character_id": "CHAR_11B997940330",
+      "canonical_name": "理查德·斯特林",
+      "aliases": [
+        "理查德",
+        "理查德·斯特林"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 359
+    },
+    {
+      "character_id": "CHAR_57E13D88C9B8",
+      "canonical_name": "朱利安·韦伯",
+      "aliases": [
+        "朱利安·韦伯"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 367
+    },
+    {
+      "character_id": "CHAR_610508F3989C",
+      "canonical_name": "艾拉·陈",
+      "aliases": [
+        "艾拉",
+        "艾拉·陈"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 367
+    },
+    {
+      "character_id": "CHAR_78FB688D8EF5",
+      "canonical_name": "马库斯·索恩",
+      "aliases": [
+        "马库斯",
+        "马库斯·索恩"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 367
+    },
+    {
+      "character_id": "CHAR_0258076F3554",
+      "canonical_name": "托马斯·韦恩",
+      "aliases": [
+        "托马斯·韦恩"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 381
+    },
+    {
+      "character_id": "CHAR_61A5BF2F3AB1",
+      "canonical_name": "托马斯·韦斯特",
+      "aliases": [
+        "托马斯·韦斯特"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 383
+    },
+    {
+      "character_id": "CHAR_8DACFC5F915C",
+      "canonical_name": "退休老医生亨利·米勒",
+      "aliases": [
+        "退休老医生亨利",
+        "退休老医生亨利·米勒"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 383
+    },
+    {
+      "character_id": "CHAR_C97BFB7E074C",
+      "canonical_name": "独立审计员艾伦·罗斯",
+      "aliases": [
+        "独立审计员艾伦",
+        "独立审计员艾伦·罗斯"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 383
+    },
+    {
+      "character_id": "CHAR_F74D83744742",
+      "canonical_name": "托马斯·布莱克",
+      "aliases": [
+        "托马斯",
+        "托马斯·布莱克"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "把控制条款包装成保护的遗产律师",
+      "alignment": "opponent",
+      "first_appearance_chapter": 389
+    },
+    {
+      "character_id": "CHAR_3E8FEA1FDD9D",
+      "canonical_name": "法官哈罗德·韦伯",
+      "aliases": [
+        "法官哈罗德·韦伯"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 401
+    },
+    {
+      "character_id": "CHAR_45E989E965A6",
+      "canonical_name": "托马斯·格雷博士",
+      "aliases": [
+        "托马斯·格雷博士"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 401
+    },
+    {
+      "character_id": "CHAR_0C9960818FAF",
+      "canonical_name": "首席法官哈罗德·温特",
+      "aliases": [
+        "首席法官哈罗德",
+        "首席法官哈罗德·温特"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 411
+    },
+    {
+      "character_id": "CHAR_011CBFAA7059",
+      "canonical_name": "巴里·布鲁姆·斯特林",
+      "aliases": [
+        "巴里·布鲁姆·斯特林"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 421
+    },
+    {
+      "character_id": "CHAR_E3BCABEECD2B",
+      "canonical_name": "巴里·布鲁姆·索恩",
+      "aliases": [
+        "巴里·布鲁姆·索恩"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 431
+    },
+    {
+      "character_id": "CHAR_C81DA5F58778",
+      "canonical_name": "维克多·索恩",
+      "aliases": [
+        "维克多·索恩"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 435
+    },
+    {
+      "character_id": "CHAR_B78580A9A2E5",
+      "canonical_name": "卡尔·海斯",
+      "aliases": [
+        "卡尔·海斯"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 483
+    },
+    {
+      "character_id": "CHAR_BD3B9570476E",
+      "canonical_name": "卡尔·冯·施特劳斯",
+      "aliases": [
+        "卡尔·冯·施特劳斯"
+      ],
+      "sex": "unspecified",
+      "birth_date": null,
+      "role": "Qwen在详细情节簇中创建的计划人物，具体身份以该情节簇为准",
+      "alignment": "planned",
+      "first_appearance_chapter": 487
     }
   ]
 }

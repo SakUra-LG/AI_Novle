@@ -1,0 +1,46 @@
+# EC221隔离试写质量报告（证据自动生成）
+
+状态：trial_only_not_accepted；未写入正式StoryMemory、Neo4j，未标记accepted。
+
+{
+  "version": "isolated_trial_report_v1",
+  "status": "trial_only_not_accepted",
+  "formal_story_memory_write": false,
+  "neo4j_write": false,
+  "external_semantic_critic": "not_run",
+  "cluster_id": "EC221",
+  "chapters": [
+    {
+      "chapter_id": 441,
+      "event_cluster_id": "EC221",
+      "expected_progress_point": "确认延期服务的付款边界",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "48bfb7c5b8958f53d655fba1044d7b7982f86d5c4fc557145ac4547c94739a76"
+    },
+    {
+      "chapter_id": 442,
+      "event_cluster_id": "EC221",
+      "expected_progress_point": "确认延期服务的付款边界",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "cfbc4331680940e2674b966945bbc32435f66b051d47c7f645213f4d9fb77221"
+    }
+  ],
+  "formal_continuity_anchor": {
+    "chapter_id": 270,
+    "date": "1993-09-17"
+  },
+  "overall": "PASS_WITHOUT_ACCEPTANCE",
+  "issues": []
+}

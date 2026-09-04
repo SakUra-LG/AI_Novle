@@ -1,0 +1,140 @@
+{
+  "purpose": "three_act_trial_v2_293_296 timeline correction",
+  "created_at": "2026-08-28T04:28:36.503392+00:00",
+  "date_changes": {
+    "294": [
+      "1994-04-03",
+      "1994-04-03"
+    ],
+    "296": [
+      "1994-06-04",
+      "1994-06-04"
+    ]
+  },
+  "reason": "294 must occur one week after 293; 296 must occur after 295; chapter 270 continuity remains the baseline.",
+  "plot_fields_changed": false,
+  "files": [
+    {
+      "file": "outputs_pop_king_v6_compiled_story_first_500\\chapter_synopses_v5_qwen_500.json",
+      "backup": "outputs_pop_king_v6_compiled_story_first_500\\body_generation\\trial_v2_backups\\20260828T042835Z_chapter_synopses_v5_qwen_500.json",
+      "sha256_before": "0e8f6148b5833d514366e3cbc039279f4f2a2ad603972a6c7814122291e76630",
+      "sha256_after": "0d2ac9c086d5add9767e0f5b1ff2f8ee49a9e15dc1679bf16939919425957c3e",
+      "changes": [
+        {
+          "path": "/293/timeline_start",
+          "old": "1994-03-27",
+          "new": "1994-04-03"
+        },
+        {
+          "path": "/293/timeline_end",
+          "old": "1994-03-27",
+          "new": "1994-04-03"
+        },
+        {
+          "path": "/295/timeline_start",
+          "old": "1994-06-02",
+          "new": "1994-06-04"
+        },
+        {
+          "path": "/295/timeline_end",
+          "old": "1994-06-02",
+          "new": "1994-06-04"
+        }
+      ]
+    },
+    {
+      "file": "outputs_pop_king_v6_compiled_story_first_500\\master_ctx_cards_v2.json",
+      "backup": "outputs_pop_king_v6_compiled_story_first_500\\body_generation\\trial_v2_backups\\20260828T042835Z_master_ctx_cards_v2.json",
+      "sha256_before": "f453c13dbac0378d17b8fed2df3f19485bdad1df5263f66f40de50d24c774f20",
+      "sha256_after": "7cfe99205c47f19b0ddaf3bc423161b473f366f4f53ed70725468ddb84453de2",
+      "changes": [
+        {
+          "path": "/293/timeline_start",
+          "old": "1994-03-27",
+          "new": "1994-04-03"
+        },
+        {
+          "path": "/293/timeline_end",
+          "old": "1994-03-27",
+          "new": "1994-04-03"
+        },
+        {
+          "path": "/295/timeline_start",
+          "old": "1994-06-02",
+          "new": "1994-06-04"
+        },
+        {
+          "path": "/295/timeline_end",
+          "old": "1994-06-02",
+          "new": "1994-06-04"
+        }
+      ]
+    },
+    {
+      "file": "outputs_pop_king_v6_compiled_story_first_500\\event_clusters_v2.json",
+      "backup": "outputs_pop_king_v6_compiled_story_first_500\\body_generation\\trial_v2_backups\\20260828T042835Z_event_clusters_v2.json",
+      "sha256_before": "2e0694ae0789aa113a097441888ae4edb5e59322a380c24765f4f1b1a573017a",
+      "sha256_after": "ec403d49486291d960a3c0d807a32d67b8ef773cad3247ab3196c890e841a989",
+      "changes": [
+        {
+          "path": "/146/two_chapter_structure/1/timeline_start",
+          "old": "1994-03-27",
+          "new": "1994-04-03"
+        },
+        {
+          "path": "/146/two_chapter_structure/1/timeline_end",
+          "old": "1994-03-27",
+          "new": "1994-04-03"
+        },
+        {
+          "path": "/146/chapter_milestones/1/timeline_start",
+          "old": "1994-03-27",
+          "new": "1994-04-03"
+        },
+        {
+          "path": "/146/chapter_milestones/1/timeline_end",
+          "old": "1994-03-27",
+          "new": "1994-04-03"
+        },
+        {
+          "path": "/147/two_chapter_structure/1/timeline_start",
+          "old": "1994-06-02",
+          "new": "1994-06-04"
+        },
+        {
+          "path": "/147/two_chapter_structure/1/timeline_end",
+          "old": "1994-06-02",
+          "new": "1994-06-04"
+        },
+        {
+          "path": "/147/chapter_milestones/1/timeline_start",
+          "old": "1994-06-02",
+          "new": "1994-06-04"
+        },
+        {
+          "path": "/147/chapter_milestones/1/timeline_end",
+          "old": "1994-06-02",
+          "new": "1994-06-04"
+        }
+      ]
+    }
+  ],
+  "hash_binding_refresh": {
+    "at": "2026-08-28T05:43:26.110958+00:00",
+    "plot_fields_changed": false,
+    "changes": [
+      {
+        "chapter_id": 293,
+        "field": "source_event_sha256",
+        "old": "a9ec4db9a29ff1c0b1c75486ad26670821f1e3b2daaff2f4f6023f939ccc62e3",
+        "new": "9c723731bf82dde6c5de73c37a6c08fe56b17a3df4441958f566bc7d3da6d14b"
+      },
+      {
+        "chapter_id": 295,
+        "field": "source_event_sha256",
+        "old": "ae9506280f03206c761637bb97987bab4a3986eeada572b5af5ab52a5a10d5ba",
+        "new": "2e6af62469e99b760f3ce0259bba59dd1c7a3abb181735ab4dbe6ec89aa7b210"
+      }
+    ]
+  }
+}

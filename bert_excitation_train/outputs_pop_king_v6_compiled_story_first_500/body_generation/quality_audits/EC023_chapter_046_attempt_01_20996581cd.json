@@ -1,0 +1,132 @@
+{
+  "cluster_id": "EC023",
+  "chapter_id": 46,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "20996581cd4dfa3659dc547edcf010cecd60995d664143fea2fe1e494ee68506",
+  "base_prompt_sha256": "20996581cd4dfa3659dc547edcf010cecd60995d664143fea2fe1e494ee68506",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "ab1c8d385703087ebf1adb7c908abbff182ee8dac8bb3af7ea73b1918f1bc83a",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 23.21,
+    "usage": {
+      "prompt_tokens": 9754,
+      "completion_tokens": 1411,
+      "total_tokens": 11165,
+      "prompt_tokens_details": {
+        "cached_tokens": 5290
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 23,
+    "through_chapter": 46,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "06d69e51f9f9b19aebb5136f17f58fd565af59333ea08560fe85b81ac86ce7c1",
+    "chapter_card_prefix_sha256": "9ae270505186df6228bcf034284fba68a02aa9948e98b1b35d7ed4d94e494807",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "f54a5b983dbfdd894f5538c2cd3943f218459becbafd53fceaa0f1eace1a03ff"
+  },
+  "cluster_sha256": "20d38a3ad831073daf94771b13d5c3492f01ee07f747a824ea53346a50e4b953",
+  "card_sha256": "03acf6efd9e1555cf8cdb0e4c672fb588174532ce6fcef5b048301d2a659aa76",
+  "chapter_audit": {
+    "han_chars": 1920,
+    "total_chars": 2235,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "麦珂引用备忘录条款",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "乔纳被当众驳斥",
+        "exact": false,
+        "bigram_coverage": 0.167,
+        "matched": false
+      },
+      {
+        "anchor": "信托架构确立",
+        "exact": false,
+        "bigram_coverage": 0.6,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "copyright_status__financial_independence__extension_EC023",
+        "target": "完全独立（无代理约束）且注入信托",
+        "evidence_terms": [
+          "麦珂当庭出示公证",
+          "过的信托草案并对",
+          "比乔纳协议条款"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "employment_status__financial_control__extension_EC023",
+        "target": "丧失财政控制权并被调查",
+        "evidence_terms": [
+          "乔纳无法解释为何",
+          "协议违反信托架构",
+          "被玛莎当场否决"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0441,
+    "scene_evidence": [
+      {
+        "location": "河湾镇杰森家客厅",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "汉字数1920，高于1900",
+      "正文没有兑现章卡关键事实“乔纳被当众驳斥”",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC023→完全独立（无代理约束）且注入信托",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control__extension_EC023→丧失财政控制权并被调查",
+      "正文未落到规划场景“河湾镇杰森家客厅”"
+    ],
+    "all_validator_failures": [
+      "汉字数1920，高于1900",
+      "正文没有兑现章卡关键事实“乔纳被当众驳斥”",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC023→完全独立（无代理约束）且注入信托",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control__extension_EC023→丧失财政控制权并被调查",
+      "正文未落到规划场景“河湾镇杰森家客厅”"
+    ]
+  },
+  "failures": [
+    "第46章：汉字数1920，高于1900"
+  ],
+  "accepted": false,
+  "joint_rejected": true,
+  "joint_failures": [
+    "第46章：汉字数1920，高于1900"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "cluster_id": "EC137",
+  "chapter_id": 273,
+  "attempt": 6,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "6a1d365d768c23efe6f26f31999024f30b70e612970302d7d32a3b0ea98afcd1",
+  "base_prompt_sha256": "a9b1dd21e20ce84c0a6a5d5d693ea5b6fb559de07ccb9beaa4343dec2209ccf2",
+  "body_generator_contract_version": "v13_compiled_plan_strict_gates_20260822",
+  "raw_response_sha256": "794b8cb7cf029374cc2e95742701691ede326073436b1e82d5b450990809f892",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.427,
+    "usage": {
+      "prompt_tokens": 6710,
+      "completion_tokens": 849,
+      "total_tokens": 7559,
+      "prompt_tokens_details": {
+        "cached_tokens": 3207
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 137,
+    "through_chapter": 274,
+    "outline_sha256": "a2e1a6cde3554db62a9f0842db92c9c580a6e553f71f71d883089f965c5f11b5",
+    "event_prefix_sha256": "3bbd8a80435327209635c9f329fc8482b9b8d4b69caca54ce8a40191fd983293",
+    "chapter_card_prefix_sha256": "39429393ef40422082148aacdaf84e32ecfda130c8701be1d0296483e2681148",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "a76ed2fbe70fc80e1900d04cd78aecc436e09b8066982b8bc539accfd2f560d2"
+  },
+  "cluster_sha256": "22f92a79e1b24deb7487fd1755b276e286ae3b1e1427213de624fd6d4ad74ce4",
+  "card_sha256": "b2a403d6c0104d2b01327e417257934aba12d68de95cb9e7b41ea05bb9067aec",
+  "chapter_audit": {
+    "han_chars": 1161,
+    "total_chars": 1360,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "艾琳坚持技术意见不能替代授权意见",
+        "exact": false,
+        "bigram_coverage": 0.786,
+        "matched": true
+      },
+      {
+        "anchor": "CR-41权限分栏表",
+        "exact": true,
+        "bigram_coverage": 0.875,
+        "matched": true
+      },
+      {
+        "anchor": "地点为节目部资料室",
+        "exact": false,
+        "bigram_coverage": 0.625,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0661,
+    "scene_evidence": [
+      {
+        "location": "节目部资料室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_273_20C35DB3",
+        "display_name": "《CR-41权限分栏表》",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": []
+  },
+  "failures": [
+    "两章存在55字连续重复片段，第二章疑似重演第一章",
+    "两章语义片段重合度0.20过高，第二章疑似换词重演第一章"
+  ],
+  "accepted": false,
+  "joint_rejected": true,
+  "joint_failures": [
+    "两章存在55字连续重复片段，第二章疑似重演第一章",
+    "两章语义片段重合度0.20过高，第二章疑似换词重演第一章"
+  ]
+}

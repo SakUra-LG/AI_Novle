@@ -62,6 +62,19 @@ def _story_id_for_plan(config_path: str, outline_path: str = "") -> str:
     return story_id_for_clusters(config_path)
 
 
+def _neo4j_property(value: Any) -> Any:
+    """Convert structured planning values into legal Neo4j properties."""
+    if isinstance(value, dict):
+        return json.dumps(value, ensure_ascii=False, sort_keys=True)
+    if isinstance(value, list):
+        if any(isinstance(item, (dict, list)) for item in value):
+            return json.dumps(value, ensure_ascii=False, sort_keys=True)
+        return [str(item) for item in value]
+    if value is None or isinstance(value, (str, int, float, bool)):
+        return value
+    return str(value)
+
+
 def upsert_plot_clusters(
     driver: Driver, config_path: str, story_id: str = "", outline_path: str = "",
 ) -> None:
@@ -90,6 +103,7 @@ def upsert_plot_clusters(
                 MERGE (pc:PlotCluster {id:$id})
                 ON CREATE SET
                   pc.label=$label,
+                  pc.cluster_id=$cluster_id,
                   pc.story_id=$story_id,
                   pc.goal=$goal,
                   pc.mood=$mood,
@@ -121,6 +135,7 @@ def upsert_plot_clusters(
                   pc.createdAt=timestamp()
                 ON MATCH SET
                   pc.label=$label,
+                  pc.cluster_id=$cluster_id,
                   pc.story_id=$story_id,
                   pc.goal=$goal,
                   pc.mood=$mood,
@@ -265,16 +280,17 @@ def upsert_plot_clusters(
             macro_id = str(c.get("macro_group_id") or f"MG{macro_number:03d}")
             props = {
                 "id": f"plotcluster:{story_id}:{cid}",
+                "cluster_id": cid,
                 "story_id": story_id,
                 "label": label,
                 "goal": c.get("goal") or c.get("core_payoff") or c.get("cluster_outcome"),
                 "mood": c.get("mood"),
                 "start_chapter": start_chapter,
                 "end_chapter": end_chapter,
-                "plan_relations": c.get("plan_relations") or [],
-                "plan_foreshadows": c.get("foreshadows") or c.get("notes") or [],
-                "plan_resolves": c.get("resolves") or ([c.get("cluster_outcome")] if c.get("cluster_outcome") else []),
-                "hard_constraints": c.get("hard_constraints") or c.get("user_extra_constraints") or [],
+                "plan_relations": _neo4j_property(c.get("plan_relations") or []),
+                "plan_foreshadows": _neo4j_property(c.get("foreshadows") or c.get("notes") or []),
+                "plan_resolves": _neo4j_property(c.get("resolves") or ([c.get("cluster_outcome")] if c.get("cluster_outcome") else [])),
+                "hard_constraints": _neo4j_property(c.get("hard_constraints") or c.get("user_extra_constraints") or []),
                 "timeline_years": str(c.get("timeline_years") or ""),
                 "prev_life_tragedy": str(c.get("prev_life_tragedy") or ""),
                 "info_gap_from_prev_life": str(c.get("info_gap_from_prev_life") or ""),
@@ -285,7 +301,7 @@ def upsert_plot_clusters(
                 "fictional_obstacle": str(c.get("fictional_obstacle") or ""),
                 "preemptive_avoidance": str(c.get("preemptive_avoidance") or ""),
                 "ascension_gain": str(c.get("ascension_gain") or ""),
-                "rebirth_flywheel": [str(x) for x in (c.get("rebirth_flywheel") or [])],
+                "rebirth_flywheel": _neo4j_property(c.get("rebirth_flywheel") or []),
                 "source_anchor_ids": [str(x) for x in (c.get("source_anchor_ids") or [])],
                 "phase_id": phase_id,
                 "story_block_id": block_id,

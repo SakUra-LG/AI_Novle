@@ -1,0 +1,46 @@
+# EC184隔离试写质量报告（证据自动生成）
+
+状态：trial_only_not_accepted；未写入正式StoryMemory、Neo4j，未标记accepted。
+
+{
+  "version": "isolated_trial_report_v1",
+  "status": "trial_only_not_accepted",
+  "formal_story_memory_write": false,
+  "neo4j_write": false,
+  "external_semantic_critic": "not_run",
+  "cluster_id": "EC184",
+  "chapters": [
+    {
+      "chapter_id": 367,
+      "event_cluster_id": "EC184",
+      "expected_progress_point": "核对外部顾问新增目录范围，仍不开放原件",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "3edf04b15f9cc060c6ef7f5b24c889728b583fbb1acba0391d7101089303f8ef"
+    },
+    {
+      "chapter_id": 368,
+      "event_cluster_id": "EC184",
+      "expected_progress_point": "核对外部顾问新增目录范围，仍不开放原件",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "8342f3096e991eb875c7f6708c39651eae2f68bf3899af557658a0f738cc2bf9"
+    }
+  ],
+  "formal_continuity_anchor": {
+    "chapter_id": 270,
+    "date": "1993-09-17"
+  },
+  "overall": "PASS_WITHOUT_ACCEPTANCE",
+  "issues": []
+}

@@ -1,0 +1,101 @@
+{
+  "cluster_id": "EC137",
+  "chapter_id": 273,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "f8a7653958565d6dabf903be7575447e5d73e8aa99116c4cd7add8c4baf7d866",
+  "base_prompt_sha256": "f8a7653958565d6dabf903be7575447e5d73e8aa99116c4cd7add8c4baf7d866",
+  "body_generator_contract_version": "v13_compiled_plan_strict_gates_20260822",
+  "raw_response_sha256": "61662d86e4c55b0d5f13e01869099fc9e407563739f481ef5d347f7034b9c0d2",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.467,
+    "usage": {
+      "prompt_tokens": 12305,
+      "completion_tokens": 748,
+      "total_tokens": 13053,
+      "prompt_tokens_details": {
+        "cached_tokens": 6026
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 137,
+    "through_chapter": 274,
+    "outline_sha256": "a2e1a6cde3554db62a9f0842db92c9c580a6e553f71f71d883089f965c5f11b5",
+    "event_prefix_sha256": "3bbd8a80435327209635c9f329fc8482b9b8d4b69caca54ce8a40191fd983293",
+    "chapter_card_prefix_sha256": "39429393ef40422082148aacdaf84e32ecfda130c8701be1d0296483e2681148",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "a76ed2fbe70fc80e1900d04cd78aecc436e09b8066982b8bc539accfd2f560d2"
+  },
+  "cluster_sha256": "22f92a79e1b24deb7487fd1755b276e286ae3b1e1427213de624fd6d4ad74ce4",
+  "card_sha256": "b2a403d6c0104d2b01327e417257934aba12d68de95cb9e7b41ea05bb9067aec",
+  "chapter_audit": {
+    "han_chars": 1036,
+    "total_chars": 1228,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "艾琳坚持技术意见不能替代授权意见",
+        "exact": false,
+        "bigram_coverage": 0.786,
+        "matched": true
+      },
+      {
+        "anchor": "CR-41权限分栏表",
+        "exact": true,
+        "bigram_coverage": 0.875,
+        "matched": true
+      },
+      {
+        "anchor": "地点为节目部资料室",
+        "exact": false,
+        "bigram_coverage": 0.625,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0851,
+    "scene_evidence": [
+      {
+        "location": "节目部资料室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_273_20C35DB3",
+        "display_name": "《CR-41权限分栏表》",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "重生知识边界违规：非麦珂主语触发记忆"
+    ]
+  },
+  "failures": [
+    "重生知识边界违规：非麦珂主语触发记忆"
+  ],
+  "accepted": false
+}

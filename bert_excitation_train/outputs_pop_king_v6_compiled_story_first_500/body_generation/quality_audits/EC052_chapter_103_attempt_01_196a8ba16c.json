@@ -1,0 +1,104 @@
+{
+  "cluster_id": "EC052",
+  "chapter_id": 103,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "196a8ba16c6ab07d72a6428339fc82f0f4c61d408c29bc0af8a4be241ae5c992",
+  "base_prompt_sha256": "196a8ba16c6ab07d72a6428339fc82f0f4c61d408c29bc0af8a4be241ae5c992",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "80a3cd1dbcdc5c3de86ae8d6c8d949834dd15889f7cacedafeab17526aaa7409",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 21.486,
+    "usage": {
+      "prompt_tokens": 6311,
+      "completion_tokens": 1252,
+      "total_tokens": 7563,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 52,
+    "through_chapter": 104,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "216e52e116dc7cff360dc01fbab7b9b33839db48f5de12731cc59711f08c4f6e",
+    "chapter_card_prefix_sha256": "078bb8c876286621ed93037dc3ab63172f16377f407fadfb66ad5e2e9ba0f2e0",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "49384d323301822eb9dc74b2f2ec78e0fa9882c908fefd38a53c2539cba17f4c"
+  },
+  "cluster_sha256": "61bd8973840ba17cddd15f79ea35945967d6be7de4faaf412c7bd2d155803fa2",
+  "card_sha256": "e8e2bc8a948e6bfd74814ece3b885553b32812ef572852dfd7fee9e951bc082e",
+  "chapter_audit": {
+    "han_chars": 1713,
+    "total_chars": 1997,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "人工读数登记簿的红线标记",
+        "exact": false,
+        "bigram_coverage": 0.545,
+        "matched": true
+      },
+      {
+        "anchor": "年轻技师托德的拒绝演出行动",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "卡尔·霍尔特的焦躁反应",
+        "exact": false,
+        "bigram_coverage": 0.556,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0433,
+    "scene_evidence": [
+      {
+        "location": "星港市银幕山电视网总部后台机械区",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_HYD_LOG_001",
+        "display_name": "1979.04.04 液压压力人工登记簿（初版）",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文未落到规划场景“星港市银幕山电视网总部后台机械区”",
+      "正文没有写出本章正式创建的关键对象“1979.04.04 液压压力人工登记簿（初版）”"
+    ],
+    "all_validator_failures": [
+      "正文未落到规划场景“星港市银幕山电视网总部后台机械区”",
+      "正文没有写出本章正式创建的关键对象“1979.04.04 液压压力人工登记簿（初版）”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

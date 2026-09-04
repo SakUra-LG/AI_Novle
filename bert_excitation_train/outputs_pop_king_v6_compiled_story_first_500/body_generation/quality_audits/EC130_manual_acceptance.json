@@ -1,0 +1,473 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC130",
+  "chapter_ids": [
+    259,
+    260
+  ],
+  "accepted": true,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "259": {
+        "han_chars": 1233,
+        "total_chars": 1551,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 0,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "PL-83-28原错误正文保留",
+            "exact": false,
+            "bigram_coverage": 0.75,
+            "matched": true
+          },
+          {
+            "anchor": "C-83-19具名勘误",
+            "exact": false,
+            "bigram_coverage": 0.625,
+            "matched": true
+          },
+          {
+            "anchor": "零件领用只有连杆销套",
+            "exact": false,
+            "bigram_coverage": 0.667,
+            "matched": true
+          },
+          {
+            "anchor": "不以墨水纸色判断更正年份",
+            "exact": false,
+            "bigram_coverage": 0.818,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.0891,
+        "scene_evidence": [
+          {
+            "location": "圣保罗音乐厅设施档案原始维护簿核验台",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_259_PL83_28_MARGIN_CORRECTION_CHAIN",
+            "display_name": "PL-83-28页边更正与C-83-19勘误授权链",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_259_PL83_28_SOURCE_PAGE_RECORD",
+            "display_name": "PL-83-28原页正文页边与装订位置记录",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      },
+      "260": {
+        "han_chars": 1264,
+        "total_chars": 1610,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 0,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "1986批次靶标为维护检索摘要",
+            "exact": false,
+            "bigram_coverage": 0.857,
+            "matched": true
+          },
+          {
+            "anchor": "打字摘要引用PL-83-28与C-83-19",
+            "exact": false,
+            "bigram_coverage": 0.562,
+            "matched": true
+          },
+          {
+            "anchor": "卷片不复制原页装订字位",
+            "exact": false,
+            "bigram_coverage": 0.5,
+            "matched": true
+          },
+          {
+            "anchor": "两种表示按来源用途保留",
+            "exact": false,
+            "bigram_coverage": 0.5,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "corrected_maintenance_item",
+            "target": "authorized_1983_correction_linkage_bushing_supported_by_parts_issue",
+            "evidence_terms": [
+              "ART_259_PL83_28_MARGIN_CORRECTION_CHAIN",
+              "PL-83-28",
+              "页边更正与",
+              "C-83-19",
+              "勘误授权链",
+              "确认",
+              "1986",
+              "摘要应用的是已经",
+              "具名授权的更正"
+            ],
+            "hit_terms": [
+              "PL-83-28",
+              "页边更正与",
+              "C-83-19",
+              "确认",
+              "1986"
+            ],
+            "matched": true
+          },
+          {
+            "state_key": "representation_type",
+            "target": "microfilmed_1986_typed_service_abstract_with_correction_applied",
+            "evidence_terms": [
+              "ART_260_PL83_28_REPRESENTATION_SCOPE",
+              "PL-83-28",
+              "原页与",
+              "1986",
+              "缩微摘要表示层级",
+              "决定"
+            ],
+            "hit_terms": [
+              "PL-83-28",
+              "原页与",
+              "1986",
+              "缩微摘要表示层级",
+              "决定"
+            ],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.0891,
+        "scene_evidence": [
+          {
+            "location": "市缩微资料服务中心1986批次重建台",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_260_1986_SERVICE_ABSTRACT_PROVENANCE",
+            "display_name": "1986设施维护检索摘要输入与缩微批次来源链",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_260_PL83_28_REPRESENTATION_SCOPE",
+            "display_name": "PL-83-28原页与1986缩微摘要表示层级决定",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      }
+    },
+    "joint": {
+      "259": {
+        "han_chars": 1233,
+        "total_chars": 1551,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 0,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "260": {
+        "han_chars": 1264,
+        "total_chars": 1610,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 0,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.0971,
+      "resolution_signatures": {
+        "first": {
+          "attack": "",
+          "counter": "",
+          "resolver": "",
+          "opponent_result": "撤回",
+          "hero_result": ""
+        },
+        "second": {
+          "attack": "",
+          "counter": "",
+          "resolver": "",
+          "opponent_result": "",
+          "hero_result": ""
+        }
+      },
+      "settlement_action_terms": [
+        "失去",
+        "撤回",
+        "确认",
+        "取得"
+      ],
+      "rebirth_information_gap_markers": [
+        "前世",
+        "麦珂记得"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 239,
+          "semantic_overlap": 0.0493
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 240,
+          "semantic_overlap": 0.0375
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 241,
+          "semantic_overlap": 0.0595
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 242,
+          "semantic_overlap": 0.057
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 243,
+          "semantic_overlap": 0.048
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 244,
+          "semantic_overlap": 0.048
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 245,
+          "semantic_overlap": 0.0568
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 246,
+          "semantic_overlap": 0.049
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 247,
+          "semantic_overlap": 0.059
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 248,
+          "semantic_overlap": 0.047
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 249,
+          "semantic_overlap": 0.0616
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 250,
+          "semantic_overlap": 0.049
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 251,
+          "semantic_overlap": 0.0645
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 252,
+          "semantic_overlap": 0.067
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 253,
+          "semantic_overlap": 0.0564
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 254,
+          "semantic_overlap": 0.048
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 255,
+          "semantic_overlap": 0.0625
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 256,
+          "semantic_overlap": 0.0574
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 257,
+          "semantic_overlap": 0.0799
+        },
+        {
+          "chapter_id": 259,
+          "prior_chapter_id": 258,
+          "semantic_overlap": 0.084
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 239,
+          "semantic_overlap": 0.041
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 240,
+          "semantic_overlap": 0.0493
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 241,
+          "semantic_overlap": 0.0594
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 242,
+          "semantic_overlap": 0.0627
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 243,
+          "semantic_overlap": 0.0441
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 244,
+          "semantic_overlap": 0.0495
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 245,
+          "semantic_overlap": 0.0561
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 246,
+          "semantic_overlap": 0.0755
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 247,
+          "semantic_overlap": 0.049
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 248,
+          "semantic_overlap": 0.0513
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 249,
+          "semantic_overlap": 0.0647
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 250,
+          "semantic_overlap": 0.0636
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 251,
+          "semantic_overlap": 0.0559
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 252,
+          "semantic_overlap": 0.0723
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 253,
+          "semantic_overlap": 0.0579
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 254,
+          "semantic_overlap": 0.0576
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 255,
+          "semantic_overlap": 0.0661
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 256,
+          "semantic_overlap": 0.0698
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 257,
+          "semantic_overlap": 0.0604
+        },
+        {
+          "chapter_id": 260,
+          "prior_chapter_id": 258,
+          "semantic_overlap": 0.0682
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "259": "65d1e058d723a4edd6456fc80a60a89180acdc409fd8e647b1d10cd8e587d244",
+    "260": "1c630c7db8b3e0b13114ed4f26e34a24c4b7dcd736e8ff1b9c3ffab96caf0145"
+  },
+  "accepted_at": "2026-08-26T01:06:05.124430+00:00"
+}

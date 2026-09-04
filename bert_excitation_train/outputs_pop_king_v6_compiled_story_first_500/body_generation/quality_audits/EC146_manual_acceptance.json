@@ -1,0 +1,430 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC146",
+  "chapter_ids": [
+    291,
+    292
+  ],
+  "accepted": false,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "291": {
+        "han_chars": 1082,
+        "total_chars": 1208,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 3,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "苏菲亚发现氧化斑点",
+            "exact": false,
+            "bigram_coverage": 0.625,
+            "matched": true
+          },
+          {
+            "anchor": "麦珂回忆前世墨水配方",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "老杰克的惊讶反应",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 4,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.1092,
+        "scene_evidence": [
+          {
+            "location": "银湾市州档案馆地下密室",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_290_HUMIDITY_REACTION_PHOTOGRAPHY",
+            "display_name": "《1983年票据墨迹氧化斑点微距摄影集》",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      },
+      "292": {
+        "han_chars": 1105,
+        "total_chars": 1353,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "斯特林展示伪造文件",
+            "exact": false,
+            "bigram_coverage": 0.75,
+            "matched": true
+          },
+          {
+            "anchor": "文件受潮变色",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "斯特林狼狈擦字",
+            "exact": false,
+            "bigram_coverage": 0.833,
+            "matched": true
+          },
+          {
+            "anchor": "法官宣布暂停听证",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "account_freeze_status",
+            "target": "fully_unfrozen_independent_audit",
+            "evidence_terms": [
+              "ART_290_HUMIDITY_REACTION_PHOTOGRAPHY",
+              "作为法庭证据",
+              "展示斯特林文件的",
+              "物理异常"
+            ],
+            "hit_terms": [],
+            "matched": true
+          },
+          {
+            "state_key": "credit_rating_status",
+            "target": "downgraded_fraud_suspect",
+            "evidence_terms": [
+              "ART_291_MEDIA_COVERAGE_CHRONICLE"
+            ],
+            "hit_terms": [],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 3,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.1201,
+        "scene_evidence": [
+          {
+            "location": "银湾市法院公开听证大厅",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [],
+        "failures": []
+      }
+    },
+    "joint": {
+      "291": {
+        "han_chars": 1082,
+        "total_chars": 1208,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 3,
+        "failures": []
+      },
+      "292": {
+        "han_chars": 1105,
+        "total_chars": 1353,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.0825,
+      "resolution_signatures": {
+        "first": {
+          "attack": "",
+          "counter": "签字",
+          "resolver": "",
+          "opponent_result": "",
+          "hero_result": "掌握"
+        },
+        "second": {
+          "attack": "",
+          "counter": "",
+          "resolver": "法官",
+          "opponent_result": "狼狈",
+          "hero_result": "掌握"
+        }
+      },
+      "settlement_action_terms": [
+        "撤回",
+        "获得",
+        "账户"
+      ],
+      "rebirth_information_gap_markers": [
+        "前世",
+        "上一世",
+        "麦珂记得"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 271,
+          "semantic_overlap": 0.0664
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 272,
+          "semantic_overlap": 0.0597
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 273,
+          "semantic_overlap": 0.0692
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 274,
+          "semantic_overlap": 0.0564
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 275,
+          "semantic_overlap": 0.066
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 276,
+          "semantic_overlap": 0.06
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 277,
+          "semantic_overlap": 0.0528
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 278,
+          "semantic_overlap": 0.0597
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 279,
+          "semantic_overlap": 0.0562
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 280,
+          "semantic_overlap": 0.0542
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 281,
+          "semantic_overlap": 0.0911
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 282,
+          "semantic_overlap": 0.0737
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 283,
+          "semantic_overlap": 0.0788
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 284,
+          "semantic_overlap": 0.0615
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 285,
+          "semantic_overlap": 0.056
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 286,
+          "semantic_overlap": 0.0505
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 287,
+          "semantic_overlap": 0.072
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 288,
+          "semantic_overlap": 0.0572
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 289,
+          "semantic_overlap": 0.0571
+        },
+        {
+          "chapter_id": 291,
+          "prior_chapter_id": 290,
+          "semantic_overlap": 0.059
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 271,
+          "semantic_overlap": 0.0683
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 272,
+          "semantic_overlap": 0.0613
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 273,
+          "semantic_overlap": 0.0709
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 274,
+          "semantic_overlap": 0.0709
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 275,
+          "semantic_overlap": 0.0729
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 276,
+          "semantic_overlap": 0.0839
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 277,
+          "semantic_overlap": 0.0606
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 278,
+          "semantic_overlap": 0.0907
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 279,
+          "semantic_overlap": 0.058
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 280,
+          "semantic_overlap": 0.0784
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 281,
+          "semantic_overlap": 0.0752
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 282,
+          "semantic_overlap": 0.0948
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 283,
+          "semantic_overlap": 0.0642
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 284,
+          "semantic_overlap": 0.0845
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 285,
+          "semantic_overlap": 0.0481
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 286,
+          "semantic_overlap": 0.0801
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 287,
+          "semantic_overlap": 0.0728
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 288,
+          "semantic_overlap": 0.0883
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 289,
+          "semantic_overlap": 0.0663
+        },
+        {
+          "chapter_id": 292,
+          "prior_chapter_id": 290,
+          "semantic_overlap": 0.0825
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "291": "1625120af531e068534595b8998080e8c49c6d246b10dd6067fe7e67623988cf",
+    "292": "702b38f26e89e6caf3a8652f9d46aeb82764afdb736ec8d24922a5a955ebbfb9"
+  },
+  "accepted_at": "2026-08-26T08:06:59.474644+00:00",
+  "status": "quarantine_rewrite_pending",
+  "authoritative": false,
+  "quarantine_reason": "EC136-EC178 architecture and synopsis repair",
+  "quarantined_at": "20260826T110312Z"
+}

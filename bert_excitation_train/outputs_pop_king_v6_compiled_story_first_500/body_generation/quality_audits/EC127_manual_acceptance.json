@@ -1,0 +1,468 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC127",
+  "chapter_ids": [
+    253,
+    254
+  ],
+  "accepted": true,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "253": {
+        "han_chars": 1269,
+        "total_chars": 1536,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 0,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "五个底片号逐项对应",
+            "exact": false,
+            "bigram_coverage": 0.625,
+            "matched": true
+          },
+          {
+            "anchor": "P07提案册与一次内部展示",
+            "exact": false,
+            "bigram_coverage": 0.833,
+            "matched": true
+          },
+          {
+            "anchor": "后来声明无瑟琳娜签名",
+            "exact": false,
+            "bigram_coverage": 0.889,
+            "matched": true
+          },
+          {
+            "anchor": "麦珂撤回总括代决提议",
+            "exact": false,
+            "bigram_coverage": 0.889,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.1113,
+        "scene_evidence": [
+          {
+            "location": "P07制作档案演员授权核验台",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_253_P07_ORIGINAL_IMAGE_CONSENT_SCOPE",
+            "display_name": "P07演员影像原同意范围核验表",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_253_FAMILY_DECLARATION_AUTHORITY_GAP",
+            "display_name": "家庭联合声明与演员同意修改权限差异单",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      },
+      "254": {
+        "han_chars": 1308,
+        "total_chars": 1573,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 0,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "校样图号核对原同意范围",
+            "exact": false,
+            "bigram_coverage": 0.8,
+            "matched": true
+          },
+          {
+            "anchor": "瑟琳娜本人选择撤图",
+            "exact": false,
+            "bigram_coverage": 0.75,
+            "matched": true
+          },
+          {
+            "anchor": "旧校样回收注销并完成换版",
+            "exact": false,
+            "bigram_coverage": 0.455,
+            "matched": true
+          },
+          {
+            "anchor": "未来外部使用逐项申请",
+            "exact": false,
+            "bigram_coverage": 0.778,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "usage_scope",
+            "target": "original_p07_pitch_five_stills_one_internal_showing_only",
+            "evidence_terms": [
+              "ART_253_P07_ORIGINAL_IMAGE_CONSENT_SCOPE",
+              "P07",
+              "演员影像原同意范",
+              "围核验表",
+              "判断节庆宣传册是",
+              "否落在",
+              "1983",
+              "原授权用途内"
+            ],
+            "hit_terms": [
+              "P07",
+              "演员影像原同意范",
+              "围核验表",
+              "1983"
+            ],
+            "matched": true
+          },
+          {
+            "state_key": "image_choice_authority",
+            "target": "selena_direct_specific_use_choice",
+            "evidence_terms": [
+              "ART_254_FUTURE_PERFORMER_CONSENT_RULE",
+              "P07",
+              "未来演员影像逐次",
+              "申请规则"
+            ],
+            "hit_terms": [
+              "P07",
+              "未来演员影像逐次",
+              "申请规则"
+            ],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.105,
+        "scene_evidence": [
+          {
+            "location": "P07制作档案封闭权利更正室与印刷校样台",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_254_PROSPECTUS_IMAGE_WITHDRAWAL",
+            "display_name": "P07节庆宣传册剧照撤换与校样注销单",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_254_FUTURE_PERFORMER_CONSENT_RULE",
+            "display_name": "P07未来演员影像逐次申请规则",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      }
+    },
+    "joint": {
+      "253": {
+        "han_chars": 1269,
+        "total_chars": 1536,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 0,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "254": {
+        "han_chars": 1308,
+        "total_chars": 1573,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 0,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.1059,
+      "resolution_signatures": {
+        "first": {
+          "attack": "",
+          "counter": "",
+          "resolver": "观众",
+          "opponent_result": "撤回",
+          "hero_result": "获得"
+        },
+        "second": {
+          "attack": "",
+          "counter": "",
+          "resolver": "",
+          "opponent_result": "失去",
+          "hero_result": ""
+        }
+      },
+      "settlement_action_terms": [
+        "失去",
+        "撤回",
+        "拒绝",
+        "取得",
+        "保管"
+      ],
+      "rebirth_information_gap_markers": [
+        "前世",
+        "麦珂记得"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 233,
+          "semantic_overlap": 0.0462
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 234,
+          "semantic_overlap": 0.0398
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 235,
+          "semantic_overlap": 0.0493
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 236,
+          "semantic_overlap": 0.0485
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 237,
+          "semantic_overlap": 0.0552
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 238,
+          "semantic_overlap": 0.0397
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 239,
+          "semantic_overlap": 0.0515
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 240,
+          "semantic_overlap": 0.043
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 241,
+          "semantic_overlap": 0.0586
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 242,
+          "semantic_overlap": 0.0488
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 243,
+          "semantic_overlap": 0.0618
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 244,
+          "semantic_overlap": 0.0625
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 245,
+          "semantic_overlap": 0.051
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 246,
+          "semantic_overlap": 0.0555
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 247,
+          "semantic_overlap": 0.052
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 248,
+          "semantic_overlap": 0.0532
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 249,
+          "semantic_overlap": 0.0547
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 250,
+          "semantic_overlap": 0.0603
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 251,
+          "semantic_overlap": 0.0588
+        },
+        {
+          "chapter_id": 253,
+          "prior_chapter_id": 252,
+          "semantic_overlap": 0.089
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 233,
+          "semantic_overlap": 0.0393
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 234,
+          "semantic_overlap": 0.0496
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 235,
+          "semantic_overlap": 0.0459
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 236,
+          "semantic_overlap": 0.0499
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 237,
+          "semantic_overlap": 0.0454
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 238,
+          "semantic_overlap": 0.0377
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 239,
+          "semantic_overlap": 0.0482
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 240,
+          "semantic_overlap": 0.0494
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 241,
+          "semantic_overlap": 0.0534
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 242,
+          "semantic_overlap": 0.061
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 243,
+          "semantic_overlap": 0.0619
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 244,
+          "semantic_overlap": 0.0568
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 245,
+          "semantic_overlap": 0.0519
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 246,
+          "semantic_overlap": 0.0562
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 247,
+          "semantic_overlap": 0.0577
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 248,
+          "semantic_overlap": 0.0557
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 249,
+          "semantic_overlap": 0.0619
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 250,
+          "semantic_overlap": 0.0583
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 251,
+          "semantic_overlap": 0.0585
+        },
+        {
+          "chapter_id": 254,
+          "prior_chapter_id": 252,
+          "semantic_overlap": 0.0772
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "253": "ce3b1be11d242f59c82f0add95a3edc797d5ae9a25e361615d615d33362d5fcb",
+    "254": "5ee94c02c9babe79173ec444480ac5edea58f3ed3bcab85f01241ef49958f662"
+  },
+  "accepted_at": "2026-08-25T13:30:22.993001+00:00"
+}

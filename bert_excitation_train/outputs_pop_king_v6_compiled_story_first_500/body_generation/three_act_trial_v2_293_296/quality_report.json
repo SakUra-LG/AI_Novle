@@ -1,0 +1,118 @@
+{
+  "status": "trial_only_not_accepted",
+  "chapter_range": [
+    293,
+    296
+  ],
+  "formal_commit": false,
+  "story_memory_sync": false,
+  "neo4j_sync": false,
+  "formal_continuous_last_chapter": 292,
+  "generation_mode": "offline_fallback",
+  "provider_status": "NOT_RUN_provider_unavailable",
+  "chapters": [
+    {
+      "chapter_id": 293,
+      "status": "trial_only_not_accepted",
+      "metrics": {
+        "han_chars": 1301,
+        "paragraphs": 12,
+        "beat_count": 6
+      },
+      "failures": [],
+      "compression": {
+        "used": false,
+        "source": "offline_fallback_due_provider_unavailable"
+      },
+      "realization": {
+        "authoritative_progress": "提交分轨并取得确认页收件入口",
+        "paragraphs": 12
+      }
+    },
+    {
+      "chapter_id": 294,
+      "status": "trial_only_not_accepted",
+      "metrics": {
+        "han_chars": 1301,
+        "paragraphs": 12,
+        "beat_count": 7
+      },
+      "failures": [],
+      "compression": {
+        "used": false,
+        "source": "offline_fallback_due_provider_unavailable"
+      },
+      "realization": {
+        "authoritative_progress": "完成版本比较并交付相关母带",
+        "paragraphs": 12
+      }
+    },
+    {
+      "chapter_id": 295,
+      "status": "trial_only_not_accepted",
+      "metrics": {
+        "han_chars": 1311,
+        "paragraphs": 12,
+        "beat_count": 6
+      },
+      "failures": [],
+      "compression": {
+        "used": false,
+        "source": "offline_fallback_due_provider_unavailable"
+      },
+      "realization": {
+        "authoritative_progress": "提交独立报价并进入行业评审",
+        "paragraphs": 12
+      }
+    },
+    {
+      "chapter_id": 296,
+      "status": "trial_only_not_accepted",
+      "metrics": {
+        "han_chars": 1309,
+        "paragraphs": 12,
+        "beat_count": 7
+      },
+      "failures": [],
+      "compression": {
+        "used": false,
+        "source": "offline_fallback_due_provider_unavailable"
+      },
+      "realization": {
+        "authoritative_progress": "完成盲评确认并承担排期代价",
+        "paragraphs": 12
+      }
+    }
+  ],
+  "pair_comparisons": [
+    {
+      "chapters": [
+        293,
+        294
+      ],
+      "failures": []
+    },
+    {
+      "chapters": [
+        295,
+        296
+      ],
+      "failures": []
+    }
+  ],
+  "boundary_comparison": {
+    "293": "stops at received confirmation page and delivery pause",
+    "294": "only bounded comparison and one-week-later delivery",
+    "295": "stops at quote entering industry review",
+    "296": "only blind review, quote confirmation and bounded cost"
+  },
+  "compression_summary": {
+    "called": false,
+    "pre_post_recorded": true,
+    "reason": "all candidates entered hard range without compression"
+  },
+  "failures": [],
+  "generated_at": "2026-08-28T05:06:36.952797+00:00",
+  "v1_retained": true,
+  "time_correction_audit": "time_correction_audit.json"
+}

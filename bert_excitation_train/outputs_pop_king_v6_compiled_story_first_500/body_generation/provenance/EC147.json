@@ -1,0 +1,825 @@
+{
+  "cluster_id": "EC147",
+  "chapter_span": [
+    293,
+    294
+  ],
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "body_edit_policy": "failed_body_is_regenerated_by_qwen_never_manually_patched",
+  "body_generator_contract_version": "v13_compiled_plan_strict_gates_20260822",
+  "prior_body_chain_sha256": "aa7dffa80e8f085573f5bac91fe9b35aa080a49efc6b31769447de530bca1577",
+  "accepted_at": "2026-08-28T05:52:18.442185+00:00",
+  "model": "qwen-plus",
+  "temperature": 0.55,
+  "calls_by_chapter": {
+    "293": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 22.045,
+      "usage": {
+        "prompt_tokens": 6545,
+        "completion_tokens": 965,
+        "total_tokens": 7510,
+        "prompt_tokens_details": {
+          "cached_tokens": 3245
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    },
+    "294": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 12.954,
+      "usage": {
+        "prompt_tokens": 7455,
+        "completion_tokens": 876,
+        "total_tokens": 8331,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  "prompt_sha256_by_chapter": {
+    "293": "92fe48558a989d78b5f1960981f34916103b91256b32be522c6677750e14b3f1",
+    "294": "5fdb0f6a3ee791920d686a03ab10560b82dbd43a1edd436431778aec10e72f7f"
+  },
+  "base_prompt_sha256_by_chapter": {
+    "293": "d1d2f53a209cbe7c207698012f7c7404f7aa2f0d3cb9962b9645748a70d8bb67",
+    "294": "d7cdd35ecec38e7429cf284aa5e68790b49e86ec542b45be7074ed8b822789ce"
+  },
+  "raw_response_sha256_by_chapter": {
+    "293": "fc558bdd37bb9a693763fa88e67c6fffb3048f3703706c709ae883884620a4fc",
+    "294": "f1e119c970d9dcf464a1776cf09c6986f05420539e69c729e7c2a7670e75aec8"
+  },
+  "accepted_raw_response_paths_by_chapter": {
+    "293": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC147_chapter_293_attempt_01_92fe48558a_raw.txt",
+    "294": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC147_chapter_294_attempt_02_5fdb0f6a3e_raw.txt"
+  },
+  "chapter_sha256": {
+    "293": "fc558bdd37bb9a693763fa88e67c6fffb3048f3703706c709ae883884620a4fc",
+    "294": "f1e119c970d9dcf464a1776cf09c6986f05420539e69c729e7c2a7670e75aec8"
+  },
+  "chapter_han_chars": {
+    "293": 1365,
+    "294": 1256
+  },
+  "planning_story_id": "planning-a2e1a6cde3554db6",
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 147,
+    "through_chapter": 294,
+    "outline_sha256": "a2e1a6cde3554db62a9f0842db92c9c580a6e553f71f71d883089f965c5f11b5",
+    "event_prefix_sha256": "6bdc6420cf57f4c7e59c2e0a881d812eabd6346def9bfdb8f7bfa315f8479036",
+    "chapter_card_prefix_sha256": "76e370e7259b5fab95cb3f3f1b165f1677dd2a52ecb242b3c8af9745d808f962",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "9da649206f87c0ffeebfeb8fae4a7b0e983373be4f910f163c0d8ee6506f4dc6"
+  },
+  "cluster_sha256": "9c723731bf82dde6c5de73c37a6c08fe56b17a3df4441958f566bc7d3da6d14b",
+  "card_sha256_by_chapter": {
+    "293": "09120ee865b1e15516c7fa4b2e174287344bf3cc850bf348b64e78f8794a31eb",
+    "294": "1267dfe0e44d7cbbc75c4959101a7f175686f570c9e3a7a95b060eb36cd94ccb"
+  },
+  "planning_inputs": {
+    "event_clusters": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\event_clusters_v2.json",
+    "chapter_cards": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\master_ctx_cards_v2.json"
+  },
+  "semantic_critic": {
+    "293": {
+      "han_chars": 1365,
+      "total_chars": 1558,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 1,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "294": {
+      "han_chars": 1256,
+      "total_chars": 1427,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 1,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "joint_semantic_overlap": 0.1069,
+    "resolution_signatures": {
+      "first": {
+        "attack": "协议",
+        "counter": "签字",
+        "resolver": "",
+        "opponent_result": "",
+        "hero_result": "恢复"
+      },
+      "second": {
+        "attack": "合同",
+        "counter": "",
+        "resolver": "",
+        "opponent_result": "失去",
+        "hero_result": "获得"
+      }
+    },
+    "settlement_action_terms": [
+      "失去",
+      "获得",
+      "版权",
+      "母带",
+      "合作",
+      "拒绝",
+      "取得",
+      "承担"
+    ],
+    "rebirth_information_gap_markers": [
+      "上一世",
+      "他记得",
+      "麦珂记得"
+    ],
+    "manual_review_required": [
+      "第294章与第292章语义重合度0.12处于人工复核区间"
+    ],
+    "recent_twenty_chapter_semantic_comparison": [
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 273,
+        "semantic_overlap": 0.08
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 274,
+        "semantic_overlap": 0.078
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 275,
+        "semantic_overlap": 0.0952
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 276,
+        "semantic_overlap": 0.0894
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 277,
+        "semantic_overlap": 0.0887
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 278,
+        "semantic_overlap": 0.0789
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 279,
+        "semantic_overlap": 0.0903
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 280,
+        "semantic_overlap": 0.0922
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 281,
+        "semantic_overlap": 0.0786
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 282,
+        "semantic_overlap": 0.0807
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 283,
+        "semantic_overlap": 0.0958
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 284,
+        "semantic_overlap": 0.0973
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 285,
+        "semantic_overlap": 0.0836
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 286,
+        "semantic_overlap": 0.0942
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 287,
+        "semantic_overlap": 0.0855
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 288,
+        "semantic_overlap": 0.0748
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 289,
+        "semantic_overlap": 0.0761
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 290,
+        "semantic_overlap": 0.0823
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 291,
+        "semantic_overlap": 0.0882
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 292,
+        "semantic_overlap": 0.1078
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 273,
+        "semantic_overlap": 0.0746
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 274,
+        "semantic_overlap": 0.0821
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 275,
+        "semantic_overlap": 0.0951
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 276,
+        "semantic_overlap": 0.0892
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 277,
+        "semantic_overlap": 0.0719
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 278,
+        "semantic_overlap": 0.0684
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 279,
+        "semantic_overlap": 0.0989
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 280,
+        "semantic_overlap": 0.0968
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 281,
+        "semantic_overlap": 0.0818
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 282,
+        "semantic_overlap": 0.0887
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 283,
+        "semantic_overlap": 0.0682
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 284,
+        "semantic_overlap": 0.0904
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 285,
+        "semantic_overlap": 0.0871
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 286,
+        "semantic_overlap": 0.0974
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 287,
+        "semantic_overlap": 0.0713
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 288,
+        "semantic_overlap": 0.0722
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 289,
+        "semantic_overlap": 0.0929
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 290,
+        "semantic_overlap": 0.0841
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 291,
+        "semantic_overlap": 0.1047
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 292,
+        "semantic_overlap": 0.116
+      }
+    ],
+    "same_plot_family_recent_forty_comparison": [
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 253,
+        "semantic_overlap": 0.0332
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 254,
+        "semantic_overlap": 0.0315
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 255,
+        "semantic_overlap": 0.0245
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 256,
+        "semantic_overlap": 0.0202
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 257,
+        "semantic_overlap": 0.0273
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 258,
+        "semantic_overlap": 0.0238
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 259,
+        "semantic_overlap": 0.0283
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 260,
+        "semantic_overlap": 0.0232
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 261,
+        "semantic_overlap": 0.0313
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 262,
+        "semantic_overlap": 0.0251
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 263,
+        "semantic_overlap": 0.02
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 264,
+        "semantic_overlap": 0.0245
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 265,
+        "semantic_overlap": 0.0307
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 266,
+        "semantic_overlap": 0.0254
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 267,
+        "semantic_overlap": 0.0335
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 268,
+        "semantic_overlap": 0.0276
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 269,
+        "semantic_overlap": 0.0306
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 270,
+        "semantic_overlap": 0.0257
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 271,
+        "semantic_overlap": 0.0968
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 272,
+        "semantic_overlap": 0.0952
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 273,
+        "semantic_overlap": 0.08
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 274,
+        "semantic_overlap": 0.078
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 275,
+        "semantic_overlap": 0.0952
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 276,
+        "semantic_overlap": 0.0894
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 277,
+        "semantic_overlap": 0.0887
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 278,
+        "semantic_overlap": 0.0789
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 279,
+        "semantic_overlap": 0.0903
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 280,
+        "semantic_overlap": 0.0922
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 281,
+        "semantic_overlap": 0.0786
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 282,
+        "semantic_overlap": 0.0807
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 283,
+        "semantic_overlap": 0.0958
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 284,
+        "semantic_overlap": 0.0973
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 285,
+        "semantic_overlap": 0.0836
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 286,
+        "semantic_overlap": 0.0942
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 287,
+        "semantic_overlap": 0.0855
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 288,
+        "semantic_overlap": 0.0748
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 289,
+        "semantic_overlap": 0.0761
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 290,
+        "semantic_overlap": 0.0823
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 291,
+        "semantic_overlap": 0.0882
+      },
+      {
+        "chapter_id": 293,
+        "prior_chapter_id": 292,
+        "semantic_overlap": 0.1078
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 253,
+        "semantic_overlap": 0.0235
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 254,
+        "semantic_overlap": 0.0278
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 255,
+        "semantic_overlap": 0.0245
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 256,
+        "semantic_overlap": 0.0211
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 257,
+        "semantic_overlap": 0.0254
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 258,
+        "semantic_overlap": 0.0229
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 259,
+        "semantic_overlap": 0.0225
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 260,
+        "semantic_overlap": 0.0193
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 261,
+        "semantic_overlap": 0.0258
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 262,
+        "semantic_overlap": 0.0237
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 263,
+        "semantic_overlap": 0.0218
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 264,
+        "semantic_overlap": 0.0207
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 265,
+        "semantic_overlap": 0.0204
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 266,
+        "semantic_overlap": 0.0231
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 267,
+        "semantic_overlap": 0.0285
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 268,
+        "semantic_overlap": 0.0222
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 269,
+        "semantic_overlap": 0.0229
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 270,
+        "semantic_overlap": 0.021
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 271,
+        "semantic_overlap": 0.0816
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 272,
+        "semantic_overlap": 0.0853
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 273,
+        "semantic_overlap": 0.0746
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 274,
+        "semantic_overlap": 0.0821
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 275,
+        "semantic_overlap": 0.0951
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 276,
+        "semantic_overlap": 0.0892
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 277,
+        "semantic_overlap": 0.0719
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 278,
+        "semantic_overlap": 0.0684
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 279,
+        "semantic_overlap": 0.0989
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 280,
+        "semantic_overlap": 0.0968
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 281,
+        "semantic_overlap": 0.0818
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 282,
+        "semantic_overlap": 0.0887
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 283,
+        "semantic_overlap": 0.0682
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 284,
+        "semantic_overlap": 0.0904
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 285,
+        "semantic_overlap": 0.0871
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 286,
+        "semantic_overlap": 0.0974
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 287,
+        "semantic_overlap": 0.0713
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 288,
+        "semantic_overlap": 0.0722
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 289,
+        "semantic_overlap": 0.0929
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 290,
+        "semantic_overlap": 0.0841
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 291,
+        "semantic_overlap": 0.1047
+      },
+      {
+        "chapter_id": 294,
+        "prior_chapter_id": 292,
+        "semantic_overlap": 0.116
+      }
+    ],
+    "semantic_critic": {
+      "knowledge_boundary": {
+        "ok": true,
+        "evidence": []
+      },
+      "character_state": {
+        "ok": true,
+        "evidence": []
+      },
+      "timeline_causality": {
+        "ok": true,
+        "evidence": []
+      },
+      "pov_consistency": {
+        "ok": true,
+        "evidence": []
+      },
+      "role_identity": {
+        "ok": true,
+        "evidence": []
+      },
+      "authority_scope": {
+        "ok": true,
+        "evidence": []
+      },
+      "evidence_supports_conclusion": {
+        "ok": true,
+        "evidence": []
+      },
+      "outcome_overreach": {
+        "ok": true,
+        "evidence": []
+      },
+      "repeated_resolution_pattern": {
+        "ok": true,
+        "evidence": []
+      },
+      "era_technology": {
+        "ok": true,
+        "evidence": []
+      },
+      "artifact_scope": {
+        "ok": true,
+        "evidence": []
+      },
+      "cost_persistence": {
+        "ok": true,
+        "evidence": []
+      },
+      "character_flaw_integration": {
+        "ok": true,
+        "evidence": []
+      },
+      "plan_summary_leak": {
+        "ok": true,
+        "evidence": []
+      }
+    },
+    "semantic_critic_call": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 19.037,
+      "usage": {
+        "prompt_tokens": 35668,
+        "completion_tokens": 244,
+        "total_tokens": 35912,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  "quality_review_status": "awaiting_manual_read"
+}

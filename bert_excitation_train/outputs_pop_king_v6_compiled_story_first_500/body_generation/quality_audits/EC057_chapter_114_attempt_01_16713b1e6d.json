@@ -1,0 +1,147 @@
+{
+  "cluster_id": "EC057",
+  "chapter_id": 114,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "16713b1e6d208ebfde6f46d601e8b5a044e5afd5323eb96fdabf03703d7d1c78",
+  "base_prompt_sha256": "16713b1e6d208ebfde6f46d601e8b5a044e5afd5323eb96fdabf03703d7d1c78",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "48f588ffb77352ce506c610b6e33ac8712effb6b8e52ceba325e9d386c9ff6c7",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 13.464,
+    "usage": {
+      "prompt_tokens": 8995,
+      "completion_tokens": 1122,
+      "total_tokens": 10117,
+      "prompt_tokens_details": {
+        "cached_tokens": 4991
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 57,
+    "through_chapter": 114,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "1c6f55b307bfa89859a6f9eb46fe9735918b4d1cfc97a10ba1d2de9b6bedb195",
+    "chapter_card_prefix_sha256": "7904ea5cab26f8f74d24849536187eb3fe5e032b69015f9990f048ffcb009cf2",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "cda2544f4f7fd1456654d267f8c9f426c144071644579a1ee54d190e6f7f2c2f"
+  },
+  "cluster_sha256": "43f06b7f6607502efd5437da993b4c4941c8151980da151263d5a7080b5f16c8",
+  "card_sha256": "0e5d439c72c2b9caccf13ed459876c42ec707251a430bca6bdf3960768e17dde",
+  "chapter_audit": {
+    "han_chars": 1648,
+    "total_chars": 1870,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 4,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "铜齿轮现场操作的感官描写（声音",
+        "exact": false,
+        "bigram_coverage": 0.385,
+        "matched": false
+      },
+      {
+        "anchor": "手感）",
+        "exact": false,
+        "bigram_coverage": 0.0,
+        "matched": false
+      },
+      {
+        "anchor": "维克多从自信到崩溃的微表情变化",
+        "exact": false,
+        "bigram_coverage": 0.286,
+        "matched": false
+      },
+      {
+        "anchor": "工会代表的第三方权威背书",
+        "exact": false,
+        "bigram_coverage": 0.364,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "mechanical_physical_verification",
+        "target": "拥有舞台机械改装与验收的物理验证否决权",
+        "evidence_terms": [
+          "1980",
+          "20",
+          "联合中心机械安全",
+          "整改确认书",
+          "及铜齿轮",
+          "No.003",
+          "实物拓印"
+        ],
+        "hit_terms": [
+          "1980",
+          "20",
+          "联合中心机械安全",
+          "整改确认书",
+          "No.003"
+        ],
+        "matched": true
+      },
+      {
+        "state_key": "vendor_qualification",
+        "target": "安全信用破产/丧失主控舞台准入权",
+        "evidence_terms": [
+          "1980",
+          "21",
+          "日工会安全委员会",
+          "发布的",
+          "关于",
+          "X-77",
+          "型阀门隐患的通报"
+        ],
+        "hit_terms": [
+          "1980",
+          "X-77"
+        ],
+        "matched": true
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0697,
+    "scene_evidence": [
+      {
+        "location": "联合中心第一排练厅",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文没有兑现章卡关键事实“铜齿轮现场操作的感官描写（声音”",
+      "正文没有兑现章卡关键事实“手感）”",
+      "正文没有兑现章卡关键事实“维克多从自信到崩溃的微表情变化”",
+      "正文没有兑现章卡关键事实“工会代表的第三方权威背书”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“铜齿轮现场操作的感官描写（声音”",
+      "正文没有兑现章卡关键事实“手感）”",
+      "正文没有兑现章卡关键事实“维克多从自信到崩溃的微表情变化”",
+      "正文没有兑现章卡关键事实“工会代表的第三方权威背书”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

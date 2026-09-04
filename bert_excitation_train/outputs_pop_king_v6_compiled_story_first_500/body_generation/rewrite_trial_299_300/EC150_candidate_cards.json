@@ -1,0 +1,133 @@
+{
+  "status": "candidate_only_waiting_for_manual_gate",
+  "formal_promotion": false,
+  "story_memory_write": false,
+  "neo4j_write": false,
+  "cluster_id": "EC150",
+  "chapter_span": [
+    299,
+    300
+  ],
+  "conflict_domain": "教育与职业决定",
+  "irreplaceable_progress_point": "比较学院课程与工作室训练的考核条件，获得一次试听而非职位",
+  "previous_cluster_boundary": "EC149只解决设备租赁边界",
+  "next_cluster_boundary": "EC151核对外来学员评审标准，不重复试听决定",
+  "structure_signature": {
+    "conflict_type": "education_path_choice",
+    "attack_method": "studio_offer_blurs_training_with_immediate_job",
+    "counter_method": "compare_course_requirements_and_request_trial_session",
+    "key_artifact": "academy_course_outline_and_studio_training_plan",
+    "authority": "学院教务与工作室负责人",
+    "reward": "获得一次试听机会",
+    "relationship_change": "麦珂承认学习选择不能由团队排期替代"
+  },
+  "main_character_ids": [
+    "CHAR_026AC753E27A",
+    "CHAR_B24EF2E733C9",
+    "CHAR_8C6A51D4E9F2"
+  ],
+  "participant_ids": [
+    "CHAR_0037905289BB",
+    "CHAR_3F11D9A42EDF",
+    "CHAR_EB1F70C558F3",
+    "CHAR_11D3BC48DDA3",
+    "CHAR_D1A231D7C399",
+    "CHAR_9577B35020B0",
+    "CHAR_B047AA73B9D5",
+    "CHAR_F618A85B98BB",
+    "CHAR_B6BBF0D9B359",
+    "CHAR_516678482F6C",
+    "CHAR_92F8C157F434",
+    "CHAR_C47E4BB208B5",
+    "CHAR_87B8E75FFF6F",
+    "CHAR_4E24DD1EEE76",
+    "CHAR_382967F0B350",
+    "CHAR_89E90D63A7E8",
+    "CHAR_33F93B7BC53A",
+    "CHAR_3FFB2CF69F92",
+    "CHAR_C1B841D16B30",
+    "CHAR_D3D4B10B3D17",
+    "CHAR_49ECACFD4A11",
+    "CHAR_840A569730E9",
+    "CHAR_C2D764AE4A75",
+    "CHAR_B04A992A7F99",
+    "CHAR_CF880573B5CB",
+    "CHAR_BE1EC7F9E7B2",
+    "CHAR_3C2C1E8DE107",
+    "CHAR_B9930A71C6BA",
+    "CHAR_0EB7D2FE6DB5",
+    "CHAR_384F7B6903B0",
+    "CHAR_1D596CF81A77",
+    "CHAR_B495BC2C5F5D",
+    "CHAR_3D43F562C2CF",
+    "CHAR_53E2B0B5028D",
+    "CHAR_76E9E8359211",
+    "CHAR_EC7C1E1EB46F",
+    "CHAR_1CB49083C449",
+    "CHAR_4BD6CF437713",
+    "CHAR_325F9173E463",
+    "CHAR_845D7F655759",
+    "CHAR_1A10FDB0D8F2",
+    "CHAR_7518D55BD4A2",
+    "CHAR_6FC4735D74A8",
+    "CHAR_7EC8C2E9C65E",
+    "CHAR_BDF63B327DD5",
+    "CHAR_11B997940330",
+    "CHAR_57E13D88C9B8",
+    "CHAR_610508F3989C",
+    "CHAR_78FB688D8EF5",
+    "CHAR_0258076F3554",
+    "CHAR_61A5BF2F3AB1",
+    "CHAR_8DACFC5F915C",
+    "CHAR_C97BFB7E074C",
+    "CHAR_F74D83744742",
+    "CHAR_3E8FEA1FDD9D",
+    "CHAR_45E989E965A6",
+    "CHAR_0C9960818FAF",
+    "CHAR_011CBFAA7059",
+    "CHAR_E3BCABEECD2B",
+    "CHAR_C81DA5F58778",
+    "CHAR_B78580A9A2E5",
+    "CHAR_BD3B9570476E"
+  ],
+  "chapter_cards": [
+    {
+      "chapter_id": 299,
+      "timeline_start": "1993-10-14",
+      "timeline_end": "1993-10-14",
+      "goal": "比较学院课程和工作室训练的考核条件",
+      "must_include": [
+        "课程",
+        "训练",
+        "考核"
+      ],
+      "must_not_include": [
+        "直接任职",
+        "资格认证",
+        "物流设备"
+      ],
+      "turning_choice": "麦珂要求先看条件而不接受即时职位",
+      "result_layer": "最终裁决",
+      "ending_hook": "学院只同意安排一次旁听"
+    },
+    {
+      "chapter_id": 300,
+      "timeline_start": "1993-10-15",
+      "timeline_end": "1993-10-15",
+      "goal": "取得一次试听并确认它不等于职位",
+      "must_include": [
+        "试听",
+        "课程条件",
+        "书面说明"
+      ],
+      "must_not_include": [
+        "直接录取",
+        "首席职位",
+        "EC151评审结论"
+      ],
+      "turning_choice": "麦珂接受试听而不把它宣传成录用",
+      "result_layer": "最终裁决",
+      "ending_hook": "教务说明外来学员的评审标准尚未书面化"
+    }
+  ]
+}

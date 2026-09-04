@@ -1,0 +1,110 @@
+{
+  "cluster_id": "EC063",
+  "chapter_id": 125,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "881a564aee6567806799b08050e85a6a1f37a7d154de848f75443d9a8ec938b8",
+  "base_prompt_sha256": "881a564aee6567806799b08050e85a6a1f37a7d154de848f75443d9a8ec938b8",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "ed8704d747d112752b823bb42fc8584cee9537a3d76afd82e45f20f59bd44b4c",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 15.221,
+    "usage": {
+      "prompt_tokens": 7069,
+      "completion_tokens": 1230,
+      "total_tokens": 8299,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 63,
+    "through_chapter": 126,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "8819c5987c4e5a7ed29fe2062333bb90862b77f759bd3863378915fc5acf6ebc",
+    "chapter_card_prefix_sha256": "3d439faa27f90c32c850ae6b0546081ea9fe8a252f7a23068204eae10f48a13e",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "e0af20af8b6f8d39b8da07b2ac8725a3ed6889a24348809a690053fd09576227"
+  },
+  "cluster_sha256": "12f72cff024b643582541a87a41e8731cffbb8f4f4abf9270ef27f657339312c",
+  "card_sha256": "89c5e844c13671919a99c2a8eba99137161386ba1e6b6344480d6f74a524f98a",
+  "chapter_audit": {
+    "han_chars": 1731,
+    "total_chars": 2000,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "铜质齿轮",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "三把联锁钥匙",
+        "exact": false,
+        "bigram_coverage": 0.8,
+        "matched": true
+      },
+      {
+        "anchor": "投影显示受潮底片",
+        "exact": false,
+        "bigram_coverage": 0.429,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0389,
+    "scene_evidence": [
+      {
+        "location": "会议室投影区",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_125_COPPER_GEAR_CERTIFICATE",
+        "display_name": "铜质齿轮编号体系认证书",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.039，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“投影显示受潮底片”",
+      "正文未落到规划场景“会议室投影区”",
+      "正文没有写出本章正式创建的关键对象“铜质齿轮编号体系认证书”",
+      "主角麦珂所在动作链被女性代词‘她’承接"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.039，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“投影显示受潮底片”",
+      "正文未落到规划场景“会议室投影区”",
+      "正文没有写出本章正式创建的关键对象“铜质齿轮编号体系认证书”",
+      "主角麦珂所在动作链被女性代词‘她’承接"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

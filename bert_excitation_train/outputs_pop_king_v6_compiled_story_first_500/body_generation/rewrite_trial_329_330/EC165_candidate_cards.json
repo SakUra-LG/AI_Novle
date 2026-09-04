@@ -1,0 +1,133 @@
+{
+  "status": "candidate_only_waiting_for_manual_gate",
+  "formal_promotion": false,
+  "story_memory_write": false,
+  "neo4j_write": false,
+  "cluster_id": "EC165",
+  "chapter_span": [
+    329,
+    330
+  ],
+  "conflict_domain": "家庭/伴侣关系选择",
+  "irreplaceable_progress_point": "让关系双方选择是否共同面对公开压力，结果只确认支持方式",
+  "previous_cluster_boundary": "EC164只完成报道层级更正",
+  "next_cluster_boundary": "EC166转入场地换台与观众安全",
+  "structure_signature": {
+    "conflict_type": "public_pressure_relationship_choice",
+    "attack_method": "public_story_forces_partner_to_speak_for_each_other",
+    "counter_method": "choose_support_role_and_private_boundary",
+    "key_artifact": "joint statement draft",
+    "authority": "关系双方本人",
+    "reward": "确认支持方式而非公开承诺",
+    "relationship_change": "双方约定不替对方发言"
+  },
+  "main_character_ids": [
+    "CHAR_026AC753E27A",
+    "CHAR_B24EF2E733C9",
+    "CHAR_8C6A51D4E9F2"
+  ],
+  "participant_ids": [
+    "CHAR_0037905289BB",
+    "CHAR_3F11D9A42EDF",
+    "CHAR_EB1F70C558F3",
+    "CHAR_11D3BC48DDA3",
+    "CHAR_D1A231D7C399",
+    "CHAR_9577B35020B0",
+    "CHAR_B047AA73B9D5",
+    "CHAR_F618A85B98BB",
+    "CHAR_B6BBF0D9B359",
+    "CHAR_516678482F6C",
+    "CHAR_92F8C157F434",
+    "CHAR_C47E4BB208B5",
+    "CHAR_87B8E75FFF6F",
+    "CHAR_4E24DD1EEE76",
+    "CHAR_382967F0B350",
+    "CHAR_89E90D63A7E8",
+    "CHAR_33F93B7BC53A",
+    "CHAR_3FFB2CF69F92",
+    "CHAR_C1B841D16B30",
+    "CHAR_D3D4B10B3D17",
+    "CHAR_49ECACFD4A11",
+    "CHAR_840A569730E9",
+    "CHAR_C2D764AE4A75",
+    "CHAR_B04A992A7F99",
+    "CHAR_CF880573B5CB",
+    "CHAR_BE1EC7F9E7B2",
+    "CHAR_3C2C1E8DE107",
+    "CHAR_B9930A71C6BA",
+    "CHAR_0EB7D2FE6DB5",
+    "CHAR_384F7B6903B0",
+    "CHAR_1D596CF81A77",
+    "CHAR_B495BC2C5F5D",
+    "CHAR_3D43F562C2CF",
+    "CHAR_53E2B0B5028D",
+    "CHAR_76E9E8359211",
+    "CHAR_EC7C1E1EB46F",
+    "CHAR_1CB49083C449",
+    "CHAR_4BD6CF437713",
+    "CHAR_325F9173E463",
+    "CHAR_845D7F655759",
+    "CHAR_1A10FDB0D8F2",
+    "CHAR_7518D55BD4A2",
+    "CHAR_6FC4735D74A8",
+    "CHAR_7EC8C2E9C65E",
+    "CHAR_BDF63B327DD5",
+    "CHAR_11B997940330",
+    "CHAR_57E13D88C9B8",
+    "CHAR_610508F3989C",
+    "CHAR_78FB688D8EF5",
+    "CHAR_0258076F3554",
+    "CHAR_61A5BF2F3AB1",
+    "CHAR_8DACFC5F915C",
+    "CHAR_C97BFB7E074C",
+    "CHAR_F74D83744742",
+    "CHAR_3E8FEA1FDD9D",
+    "CHAR_45E989E965A6",
+    "CHAR_0C9960818FAF",
+    "CHAR_011CBFAA7059",
+    "CHAR_E3BCABEECD2B",
+    "CHAR_C81DA5F58778",
+    "CHAR_B78580A9A2E5",
+    "CHAR_BD3B9570476E"
+  ],
+  "chapter_cards": [
+    {
+      "chapter_id": 329,
+      "timeline_start": "1993-11-13",
+      "timeline_end": "1993-11-13",
+      "goal": "让关系双方区分公开说明与私下支持",
+      "must_include": [
+        "公开压力",
+        "支持方式",
+        "选择"
+      ],
+      "must_not_include": [
+        "永久承诺",
+        "场地换台",
+        "媒体定罪"
+      ],
+      "turning_choice": "双方先约定谁不替谁发言",
+      "result_layer": "最终裁决",
+      "ending_hook": "公开活动邀请要求两人同时出席"
+    },
+    {
+      "chapter_id": 330,
+      "timeline_start": "1993-11-14",
+      "timeline_end": "1993-11-14",
+      "goal": "确认只公开必要事实并保留私人边界",
+      "must_include": [
+        "共同说明",
+        "私人边界",
+        "不代言"
+      ],
+      "must_not_include": [
+        "关系公开定论",
+        "职业迁移",
+        "EC166场地"
+      ],
+      "turning_choice": "双方选择共同确认事实而不公开全部关系",
+      "result_layer": "最终裁决",
+      "ending_hook": "场馆临时换台通知抵达"
+    }
+  ]
+}

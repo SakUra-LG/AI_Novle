@@ -1,0 +1,18 @@
+{
+  "version": "v14_manual_body_provenance",
+  "cluster_id": "EC131",
+  "chapter_ids": [
+    261,
+    262
+  ],
+  "accepted": true,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review_passed": true,
+  "deterministic_validation_passed": true,
+  "external_semantic_critic_status": "not_run_missing_external_model_credential",
+  "chapter_sha256": {
+    "261": "b35a8fae4f1b6d303463046c02bffe334c5abee9269da221b681bfaaaf436751",
+    "262": "d3482d971e77d4ebf79ddb865733546f34c2515185ebb402ceb44f44bfa817d6"
+  },
+  "accepted_at": "2026-08-26T01:16:13.842637+00:00"
+}

@@ -1,0 +1,144 @@
+{
+  "cluster_id": "EC043",
+  "chapter_id": 86,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "b4a4d96e8e0bea377314d053b0918da3b87715cac7a9f218373f4c6e693718e5",
+  "base_prompt_sha256": "b4a4d96e8e0bea377314d053b0918da3b87715cac7a9f218373f4c6e693718e5",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "472f366e26272f01c461576a7d7026aa7a8dd7abdc672801c413bf22b92f8307",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 13.148,
+    "usage": {
+      "prompt_tokens": 10467,
+      "completion_tokens": 1059,
+      "total_tokens": 11526,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 43,
+    "through_chapter": 86,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "bbb777c0f7f7c78817ad93f865e6b2b069394c0338b1bbd272ba0e4da8569308",
+    "chapter_card_prefix_sha256": "eaa307a2957ebba588255799be7cc58d3054eeb518a45696be5fcb7eb8821bfb",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "c0c2c19b64bdc33a549be8554956c32e86b99441fe9016ec495071098f5a2ab8"
+  },
+  "cluster_sha256": "fa7883d3e8c5c05d57c121e3696e33d2b4bc997c7a0e7f287583a2f1da37ed2d",
+  "card_sha256": "08ffa65ce587e252e508d33eca6db226ad84e789d909d4bf9977e68686efb179",
+  "chapter_audit": {
+    "han_chars": 1473,
+    "total_chars": 1707,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "乔纳的违规交易证据",
+        "exact": false,
+        "bigram_coverage": 0.375,
+        "matched": false
+      },
+      {
+        "anchor": "黛安娜的一票否决权确立",
+        "exact": false,
+        "bigram_coverage": 0.3,
+        "matched": false
+      },
+      {
+        "anchor": "《演出健康备忘录》补充条款生效",
+        "exact": false,
+        "bigram_coverage": 0.083,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "vocal_health_status__extension_EC043",
+        "target": "声带状态持续稳定，确立机械节拍器训练法为唯一标准（无药干预）",
+        "evidence_terms": [
+          "Dr.",
+          "Thorne",
+          "宣读评估书并拒绝",
+          "手术建议"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "employment_status__financial_control__extension_EC043",
+        "target": "完全丧失医疗决策权且被永久禁止接触医疗流程",
+        "evidence_terms": [
+          "家庭会议决议由玛",
+          "莎与黛安娜双签接",
+          "管医疗事务"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "trust_dynamic__family_alliance__extension_EC043",
+        "target": "铁三角稳固，母亲完全掌权且对麦珂法律智慧产生深度敬畏",
+        "evidence_terms": [
+          "玛莎当众撕毁乔纳",
+          "的医疗授权书并拥",
+          "抱麦珂"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 1,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0327,
+    "scene_evidence": [
+      {
+        "location": "杰森家客厅家庭会议室",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.033，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“乔纳的违规交易证据”",
+      "正文没有兑现章卡关键事实“黛安娜的一票否决权确立”",
+      "正文没有兑现章卡关键事实“《演出健康备忘录》补充条款生效”",
+      "正文没有通过现场动作兑现状态转移vocal_health_status__extension_EC043→声带状态持续稳定，确立机械节拍器训练法为唯一标准（无药干预）",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control__extension_EC043→完全丧失医疗决策权且被永久禁止接触医疗流程",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC043→铁三角稳固，母亲完全掌权且对麦珂法律智慧产生深度敬畏",
+      "正文未落到规划场景“杰森家客厅家庭会议室”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.033，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“乔纳的违规交易证据”",
+      "正文没有兑现章卡关键事实“黛安娜的一票否决权确立”",
+      "正文没有兑现章卡关键事实“《演出健康备忘录》补充条款生效”",
+      "正文没有通过现场动作兑现状态转移vocal_health_status__extension_EC043→声带状态持续稳定，确立机械节拍器训练法为唯一标准（无药干预）",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control__extension_EC043→完全丧失医疗决策权且被永久禁止接触医疗流程",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC043→铁三角稳固，母亲完全掌权且对麦珂法律智慧产生深度敬畏",
+      "正文未落到规划场景“杰森家客厅家庭会议室”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

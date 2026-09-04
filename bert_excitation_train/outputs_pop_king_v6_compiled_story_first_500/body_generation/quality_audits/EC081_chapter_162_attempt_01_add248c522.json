@@ -1,0 +1,144 @@
+{
+  "cluster_id": "EC081",
+  "chapter_id": 162,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "add248c522b07cef8aec312ef38c6c81be45de1625edb04c56bb0c440cf86e4a",
+  "base_prompt_sha256": "add248c522b07cef8aec312ef38c6c81be45de1625edb04c56bb0c440cf86e4a",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "2a57898dcb09e95badc999f3b58395c0801632f4eab35c317d3761dfb49be86e",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.894,
+    "usage": {
+      "prompt_tokens": 9845,
+      "completion_tokens": 1077,
+      "total_tokens": 10922,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 81,
+    "through_chapter": 162,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "26cdc2e9fec0cf417dc5a18bf064d1a34f4e50ce7c5e3e5f59afcb9d1741de9d",
+    "chapter_card_prefix_sha256": "4b2d713974c4b3c1a01bfe4a370e7c8f2a865f01d360c6ee5809467263620bf2",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "9ef9444fa7f9444ec8001548d04c6755dc9dafc3cc78ff669600a41079e03dff"
+  },
+  "cluster_sha256": "caf82b4b1d137358768e972db41297d19e772922ea7f97b9db883e10a4109382",
+  "card_sha256": "6f57f0b6c0b00e9aca4c7297cae765bbae4747acd4d30dc870547cb8f44f38de",
+  "chapter_audit": {
+    "han_chars": 1565,
+    "total_chars": 1795,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 2,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "胶片边缘氧化斑",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "酸性显影液",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "保险拒赔令驳回",
+        "exact": false,
+        "bigram_coverage": 0.833,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "trust_governance__extension_EC081",
+        "target": "secured",
+        "evidence_terms": [
+          "ART_161_THROAT_RECOVERY_LOG"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "opposition_loss_EC081",
+        "target": "奥瑞恩集团无法否认物理特征，保险拒赔令被审计组当场驳回，资金链恢复安全；胶片厂收购计划暴露，声誉受损。",
+        "evidence_terms": [
+          "奥瑞恩集团因证据",
+          "链完整且无法否认",
+          "物理特征而被迫撤",
+          "回保险拒赔令",
+          "巡演资金链恢复安",
+          "苏菲亚手中的胶片",
+          "厂样本被确认为关",
+          "键物证并封存",
+          "声压可视化系统",
+          "原型机通过全机械",
+          "结构测试",
+          "确立行业标杆地位",
+          "莱昂",
+          "周正式加入",
+          "星火同盟",
+          "核心审计组"
+        ],
+        "hit_terms": [
+          "莱昂",
+          "星火同盟",
+          "核心审计组"
+        ],
+        "matched": true
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0493,
+    "scene_evidence": [
+      {
+        "location": "市立图书馆听证室",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_162_FILM_OXIDATION_MAP",
+        "display_name": "胶片边缘氧化斑对比图",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC081→secured",
+      "正文未落到规划场景“市立图书馆听证室”",
+      "正文没有写出本章正式创建的关键对象“胶片边缘氧化斑对比图”"
+    ],
+    "all_validator_failures": [
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC081→secured",
+      "正文未落到规划场景“市立图书馆听证室”",
+      "正文没有写出本章正式创建的关键对象“胶片边缘氧化斑对比图”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

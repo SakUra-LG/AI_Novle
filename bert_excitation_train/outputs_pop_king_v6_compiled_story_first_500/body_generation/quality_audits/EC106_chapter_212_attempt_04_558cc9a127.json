@@ -1,0 +1,150 @@
+{
+  "cluster_id": "EC106",
+  "chapter_id": 212,
+  "attempt": 4,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "558cc9a1270780bc00549a122defa906cb9108d47eed549bf1dce6fbba31f5d4",
+  "base_prompt_sha256": "7712b28dc6b1ff0200ccd3249c30201419ddcc539dc77c7eb9f984a674111c9b",
+  "body_generator_contract_version": "v11_dynamic_identity_history_retry_20260822",
+  "raw_response_sha256": "bccfca17f38f8082597adfcdbd1fb55b3a0f006d3cd72a81fb751f6a352acff6",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 12.265,
+    "usage": {
+      "prompt_tokens": 14175,
+      "completion_tokens": 1019,
+      "total_tokens": 15194,
+      "prompt_tokens_details": {
+        "cached_tokens": 7330
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 106,
+    "through_chapter": 212,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "1153a04d36d5ea3b65d8559e467ab8e32b8d90068b927d4de79ecbe2304fd4ff",
+    "chapter_card_prefix_sha256": "934f8ff13f8ac7af5a13100334f95c7909398a26694a4f7d74ad281fca65e3d5",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "274a23e97acb5a3cde196de8affb06d3e291efd5cb3c46d5bcbc3310d2655134"
+  },
+  "cluster_sha256": "3d1b46c462efbe62b76a39a7c5580e20c27fea6ed113b1ca48848a185f5d38f0",
+  "card_sha256": "7d0de20187ba35beb531e9804a592561a46995019913d42d4e44d3aa4ee6fc65",
+  "chapter_audit": {
+    "han_chars": 1522,
+    "total_chars": 1704,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "手签备忘录法律效力",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "色带样本展示",
+        "exact": false,
+        "bigram_coverage": 0.8,
+        "matched": true
+      },
+      {
+        "anchor": "观众欢呼",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "audience_collaborator_status",
+        "target": "active_safety_collaborator",
+        "evidence_terms": [
+          "ART_211_PROMISE_CARD"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "optical_lens_calibration_status",
+        "target": "certified_practice_ready",
+        "evidence_terms": [
+          "ART_211_CALIBRATION_CERT"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "medical_decision_authority",
+        "target": "artist_family_controlled",
+        "evidence_terms": [
+          "ART_212_HEALTH_MEMO"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0412,
+    "scene_evidence": [
+      {
+        "location": "舞台中央",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_212_HEALTH_MEMO",
+        "display_name": "今日健康备忘录（手签版）",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      },
+      {
+        "artifact_id": "ART_212_TYPER_CARTRIDGE",
+        "display_name": "伪造文件打字机色带样本",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有通过现场动作兑现状态转移audience_collaborator_status→active_safety_collaborator",
+      "正文没有通过现场动作兑现状态转移optical_lens_calibration_status→certified_practice_ready",
+      "正文没有通过现场动作兑现状态转移medical_decision_authority→artist_family_controlled"
+    ],
+    "all_validator_failures": [
+      "正文没有通过现场动作兑现状态转移audience_collaborator_status→active_safety_collaborator",
+      "正文没有通过现场动作兑现状态转移optical_lens_calibration_status→certified_practice_ready",
+      "正文没有通过现场动作兑现状态转移medical_decision_authority→artist_family_controlled"
+    ]
+  },
+  "failures": [],
+  "accepted": false,
+  "semantic_rejected": true,
+  "semantic_critic_failures": [
+    "semantic critic knowledge_boundary: Chapter 211 candidate synopsis states Su Feiya 'found the key tape... and secretly hid it in a file bag' (secretly collecting), whereas the plan requires her to 'locate the source' and 'seize the same typewriter ribbon as ironclad evidence' later. More critically, Chapter 212 candidate synopsis has Su Feiya 'publicly displaying the ribbon sample on stage' immediately after finding it, but the Plan's info_gap section explicitly states: 'Previous life memory can only provide dates, original words,",
+    "semantic critic pov_consistency: Chapter 211 candidate text reveals Ma Ke's internal thought process regarding the specific timing of the previous life tragedy ('He knew that in the past life it was this artificial isolation...') while he is standing outside. While Ma Ke knows past life facts, the candidate repeatedly uses phrases like 'He knew... in the past life' in a way that feels like an exposition dump rather than a strategic calculation based on the current moment, bordering on violating the 'show don't tell' rule for re",
+    "semantic critic role_identity: Chapter 212 candidate text describes Su Feiya as 'Su Feiya Doctor' (苏菲亚医生) when presenting the memo. The authoritative constraints define her role as 'Starfire Alliance Ticket and Audit Head'. There is no mention of her being a licensed doctor in the provided constraints or recent chapters (Chapter 207 mentions she found a 'sample' from a market, not that she is a medical professional). This creates a role identity error where she claims authority as a doctor without prior establishment.",
+    "semantic critic authority_scope: Chapter 212 candidate text states the Health Memo is a 'legal document confirmed by the Notary Public' (经过公证处确认的法律文书) signed by Martha and Su Feiya. However, the Plan specifies the memo is 'hand-signed by Su Feiya Doctor and Ms. Martha' (玛莎手签备忘录). The Plan does not mention a Notary Public involvement at this stage (Chapter 210 involved a court hearing, but Chapter 212 is a live event). A lawyer/Notary cannot simply appear and validate a document on stage during a stormy concert without prior set",
+    "semantic critic evidence_supports_conclusion: Chapter 212 candidate text claims the ribbon sample 'directly points to the source of forgery' (直指其伪造文件的源头) and causes the opponent to collapse. However, the Plan states the goal is to 'lock the physical evidence chain' (锁定...物理证据链闭环). Simply showing a ribbon on stage without the comparative analysis (like the 'maintenance log' comparison in Chapter 207) or a forensic expert present fails to logically support the conclusion that the audience and the opponent accept it as irrefutable proof of for",
+    "semantic critic outcome_overreach: Chapter 212 candidate ending states 'Audience and artist established a new contract relationship based on safety' and 'Threatened financial short-selling means' immediately. The Plan states the next hook is 'forcing Orion to turn to more covert financial short-selling means'. The candidate makes the transition too abrupt and definitive within the same chapter, skipping the 'covert' phase mentioned in the plan's 'next_event_hook' and treating the 'financial short-selling' as a known outcome rathe",
+    "semantic critic repeated_resolution_pattern: Chapter 211 and 212 candidates reuse the exact phrase 'This is not charity, this is a return of rights' (这不是施舍，这是权利回归) verbatim multiple times, similar to Chapters 207, 208, 209, and 210. The instructions explicitly state: 'Reject same core conflict, countermeasure, or payoff replay even when wording differs.' Using the exact same slogan as the climax of four previous chapters constitutes a repetitive resolution pattern that lacks fresh narrative development."
+  ]
+}

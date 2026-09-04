@@ -1,0 +1,177 @@
+{
+  "cluster_id": "EC042",
+  "chapter_span": [
+    83,
+    84
+  ],
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "body_edit_policy": "failed_body_is_regenerated_by_qwen_never_manually_patched",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "prior_body_chain_sha256": "76508fac3330d690f4d273ff8de504a5358f6acb2bc6846b9ee8448a086a55ed",
+  "accepted_at": "2026-08-22T01:08:05.967827+00:00",
+  "model": "qwen-plus",
+  "temperature": 0.72,
+  "calls_by_chapter": {
+    "83": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 12.971,
+      "usage": {
+        "prompt_tokens": 6852,
+        "completion_tokens": 971,
+        "total_tokens": 7823,
+        "prompt_tokens_details": {
+          "cached_tokens": 3829
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    },
+    "84": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 12.896,
+      "usage": {
+        "prompt_tokens": 10735,
+        "completion_tokens": 1057,
+        "total_tokens": 11792,
+        "prompt_tokens_details": {
+          "cached_tokens": 417
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  "prompt_sha256_by_chapter": {
+    "83": "4de966fa0a4c2806b29683674e5984e3bfb103c1e3c636f65eb391e221e670a0",
+    "84": "fa601f8e219240636f5d33c6f12a657d12a5a873a546ebdf2a6323102e3358c0"
+  },
+  "base_prompt_sha256_by_chapter": {
+    "83": "4de966fa0a4c2806b29683674e5984e3bfb103c1e3c636f65eb391e221e670a0",
+    "84": "fa601f8e219240636f5d33c6f12a657d12a5a873a546ebdf2a6323102e3358c0"
+  },
+  "raw_response_sha256_by_chapter": {
+    "83": "31f572d8f407877f3c16ea69f827e8991db9cf8da4fcd95f0017652cd2d89b22",
+    "84": "e0a840b334bf336fcdcf1a72eb01a60b3b8433a59b4e49ffb20d2c21fe3711da"
+  },
+  "accepted_raw_response_paths_by_chapter": {
+    "83": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC042_chapter_083_attempt_01_4de966fa0a_raw.txt",
+    "84": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC042_chapter_084_attempt_01_fa601f8e21_raw.txt"
+  },
+  "chapter_sha256": {
+    "83": "31f572d8f407877f3c16ea69f827e8991db9cf8da4fcd95f0017652cd2d89b22",
+    "84": "e0a840b334bf336fcdcf1a72eb01a60b3b8433a59b4e49ffb20d2c21fe3711da"
+  },
+  "chapter_han_chars": {
+    "83": 1344,
+    "84": 1457
+  },
+  "planning_story_id": "planning-be26ba6bb2c83203",
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 42,
+    "through_chapter": 84,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "00620b5d85d5b02d6dfa6053a96617f4251954350011ba0b83abd5c1f6c6d66d",
+    "chapter_card_prefix_sha256": "31212f318216d654d7ce2cc790a2a18736a8540f344595ae4b9b786495346909",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "a4f1db78ae9819f6642badab4b4b590c86813705841b161ae1de4774ca87c1ec"
+  },
+  "cluster_sha256": "68d7fb6882f7f3ee5cc36c83b33e7b625cb8c1e7c9217b84c72be621cf061ac2",
+  "card_sha256_by_chapter": {
+    "83": "37a01f74da7aca84b36f99ead08f08a48a67d4399e5e26e2ead0530544567aeb",
+    "84": "e193e32a1d1a15a9aabb2b7e1c3607e8d0d342c8dc7e0d41fce6df3740cf810f"
+  },
+  "planning_inputs": {
+    "event_clusters": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\event_clusters_v2.json",
+    "chapter_cards": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\master_ctx_cards_v2.json"
+  },
+  "semantic_critic": {
+    "83": {
+      "han_chars": 1344,
+      "total_chars": 1551,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 0,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "84": {
+      "han_chars": 1457,
+      "total_chars": 1672,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 0,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "joint_semantic_overlap": 0.1058,
+    "settlement_action_terms": [
+      "获得"
+    ],
+    "rebirth_information_gap_markers": [
+      "前世",
+      "记忆里"
+    ],
+    "recent_five_chapter_semantic_comparison": [
+      {
+        "chapter_id": 83,
+        "prior_chapter_id": 78,
+        "semantic_overlap": 0.0699
+      },
+      {
+        "chapter_id": 83,
+        "prior_chapter_id": 79,
+        "semantic_overlap": 0.08
+      },
+      {
+        "chapter_id": 83,
+        "prior_chapter_id": 80,
+        "semantic_overlap": 0.0763
+      },
+      {
+        "chapter_id": 83,
+        "prior_chapter_id": 81,
+        "semantic_overlap": 0.0884
+      },
+      {
+        "chapter_id": 83,
+        "prior_chapter_id": 82,
+        "semantic_overlap": 0.0776
+      },
+      {
+        "chapter_id": 84,
+        "prior_chapter_id": 78,
+        "semantic_overlap": 0.0772
+      },
+      {
+        "chapter_id": 84,
+        "prior_chapter_id": 79,
+        "semantic_overlap": 0.0881
+      },
+      {
+        "chapter_id": 84,
+        "prior_chapter_id": 80,
+        "semantic_overlap": 0.0994
+      },
+      {
+        "chapter_id": 84,
+        "prior_chapter_id": 81,
+        "semantic_overlap": 0.084
+      },
+      {
+        "chapter_id": 84,
+        "prior_chapter_id": 82,
+        "semantic_overlap": 0.0921
+      }
+    ],
+    "all_joint_failures": [
+      "第二章没有通过动作兑现计划中的损失/收益结算；仅有情绪反应不能算结算"
+    ]
+  },
+  "quality_review_status": "awaiting_manual_read"
+}

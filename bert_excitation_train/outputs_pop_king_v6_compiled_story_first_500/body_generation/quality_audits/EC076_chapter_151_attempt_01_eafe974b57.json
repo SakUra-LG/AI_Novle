@@ -1,0 +1,114 @@
+{
+  "cluster_id": "EC076",
+  "chapter_id": 151,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "eafe974b57392670b94c502130990d94ca81dae91d4620eed866e09f513fd620",
+  "base_prompt_sha256": "eafe974b57392670b94c502130990d94ca81dae91d4620eed866e09f513fd620",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "1cb2e6c32657dfbf829852798fe09fdfb9d2ee6866161898be74fb91f6ff9c76",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 15.967,
+    "usage": {
+      "prompt_tokens": 6622,
+      "completion_tokens": 1507,
+      "total_tokens": 8129,
+      "prompt_tokens_details": {
+        "cached_tokens": 3726
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 76,
+    "through_chapter": 152,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "a0b777ff1155f8e62b4c6705b366bd6a5170a2afc1412e2dcecfdfe815df85a3",
+    "chapter_card_prefix_sha256": "44668c1c979458d61087c5269d41e919c06843d32c2caae7e90e212683b82942",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "20e92b4cf9865b335389488c50496506575af7bf6f4e7a09c564816fa309e359"
+  },
+  "cluster_sha256": "2127b14f0c0f617b74f0599b850e3c248686ee47e0c0e10e70daa892daa94023",
+  "card_sha256": "73366f530f0f12cd9f2951ed0b66fb0c3eb06943d8626b961a1bd73bb6d5a791",
+  "chapter_audit": {
+    "han_chars": 2203,
+    "total_chars": 2541,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "荧光标记的特写描写",
+        "exact": false,
+        "bigram_coverage": 0.375,
+        "matched": false
+      },
+      {
+        "anchor": "巴里·布鲁姆滑稽的擦拭动作",
+        "exact": false,
+        "bigram_coverage": 0.455,
+        "matched": true
+      },
+      {
+        "anchor": "黛安娜开启录音笔的细节",
+        "exact": false,
+        "bigram_coverage": 0.7,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0256,
+    "scene_evidence": [
+      {
+        "location": "麦珂家族办公室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_151_FLUORESCENT_EVIDENCE",
+        "display_name": "荧光标记文件副本",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "汉字数2203，高于1900",
+      "正文与章卡目标/动作/回报语义覆盖仅0.026，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“荧光标记的特写描写”",
+      "正文没有写出本章正式创建的关键对象“荧光标记文件副本”"
+    ],
+    "all_validator_failures": [
+      "汉字数2203，高于1900",
+      "正文与章卡目标/动作/回报语义覆盖仅0.026，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“荧光标记的特写描写”",
+      "正文没有写出本章正式创建的关键对象“荧光标记文件副本”"
+    ]
+  },
+  "failures": [
+    "第151章：汉字数2203，高于1900"
+  ],
+  "accepted": false,
+  "joint_rejected": true,
+  "joint_failures": [
+    "第151章：汉字数2203，高于1900"
+  ]
+}

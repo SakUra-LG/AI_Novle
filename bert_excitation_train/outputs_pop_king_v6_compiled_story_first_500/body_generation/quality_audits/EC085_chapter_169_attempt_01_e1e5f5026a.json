@@ -1,0 +1,104 @@
+{
+  "cluster_id": "EC085",
+  "chapter_id": 169,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "e1e5f5026a72a29da47f1c0cf62ac11f9a3036c19cf150dcb63ea71318cd9329",
+  "base_prompt_sha256": "4d225af591279340db9b44bf35e71d24e9265ebf3de241ee11ed2a6e87dfb82d",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "b1adcf2c46a03d7a499ad21b9bff5b1e750a56358d76717047ae8ff0898a59a8",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 15.799,
+    "usage": {
+      "prompt_tokens": 6648,
+      "completion_tokens": 1247,
+      "total_tokens": 7895,
+      "prompt_tokens_details": {
+        "cached_tokens": 3634
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 85,
+    "through_chapter": 170,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "86483597955f05f3f2c5afd311b2a30cb172e57c5bdc12bdbbd9573d7161f731",
+    "chapter_card_prefix_sha256": "d76386d3ebd42a5241eab164751869fae07410c2c480668404a1af1757f0835c",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "34bf6a3ccd0081db1854601e228badc68ce1fa6b0d282731c495e42f20c0a5be"
+  },
+  "cluster_sha256": "e7acd481cacb5b6b0ab305faf68efd9740150736a6f9441e338576cb6c6fce74",
+  "card_sha256": "70209131f2d71de883d5c69f8c9283af96cbc4ac73ca00a704c4c95dbf256cf8",
+  "chapter_audit": {
+    "han_chars": 1775,
+    "total_chars": 2030,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "1984年喉炎康复打卡表第112页",
+        "exact": false,
+        "bigram_coverage": 0.812,
+        "matched": true
+      },
+      {
+        "anchor": "1985年故障时段3分12秒",
+        "exact": false,
+        "bigram_coverage": 0.923,
+        "matched": true
+      },
+      {
+        "anchor": "声压可视化系统原型机",
+        "exact": false,
+        "bigram_coverage": 0.889,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 2,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.061,
+    "scene_evidence": [
+      {
+        "location": "市消费者保护协会听证室",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_169_ACOUSTIC_VISUALIZATION_REPORT",
+        "display_name": "声压可视化系统测试报告",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文未落到规划场景“市消费者保护协会听证室”",
+      "正文没有写出本章正式创建的关键对象“声压可视化系统测试报告”"
+    ],
+    "all_validator_failures": [
+      "正文未落到规划场景“市消费者保护协会听证室”",
+      "正文没有写出本章正式创建的关键对象“声压可视化系统测试报告”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

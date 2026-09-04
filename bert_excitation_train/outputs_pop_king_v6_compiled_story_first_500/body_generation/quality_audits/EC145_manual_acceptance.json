@@ -1,0 +1,429 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC145",
+  "chapter_ids": [
+    289,
+    290
+  ],
+  "accepted": false,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "289": {
+        "han_chars": 1148,
+        "total_chars": 1278,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 3,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "投影展示资金流向",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "哈罗德叫停投票",
+            "exact": false,
+            "bigram_coverage": 0.833,
+            "matched": true
+          },
+          {
+            "anchor": "斯特林被控但未捕",
+            "exact": false,
+            "bigram_coverage": 0.714,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.1005,
+        "scene_evidence": [
+          {
+            "location": "听证会主会场中央",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_289_PROJECTED_FLOW_CHART",
+            "display_name": "《1983-1994北境资本资金流向全景图》",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      },
+      "290": {
+        "han_chars": 1297,
+        "total_chars": 1917,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "斯特林逃跑",
+            "exact": false,
+            "bigram_coverage": 0.75,
+            "matched": true
+          },
+          {
+            "anchor": "苏菲亚识破伪装",
+            "exact": false,
+            "bigram_coverage": 0.833,
+            "matched": true
+          },
+          {
+            "anchor": "斯特林被捕",
+            "exact": false,
+            "bigram_coverage": 0.75,
+            "matched": true
+          },
+          {
+            "anchor": "文件被烧焦的证据",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "external_control_status__EC145",
+            "target": "fully_independent",
+            "evidence_terms": [
+              "ART_289_PROJECTED_FLOW_CHART",
+              "作为警方追捕的依",
+              "确认斯特林身份"
+            ],
+            "hit_terms": [],
+            "matched": true
+          },
+          {
+            "state_key": "criminal_liability_status__EC145",
+            "target": "arrested_for_fraud",
+            "evidence_terms": [
+              "ART_290_BURNT_DOCUMENT_EVIDENCE"
+            ],
+            "hit_terms": [
+              "ART_290_BURNT_DOCUMENT_EVIDENCE"
+            ],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 2,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.1416,
+        "scene_evidence": [
+          {
+            "location": "听证会后场通道",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [],
+        "failures": []
+      }
+    },
+    "joint": {
+      "289": {
+        "han_chars": 1148,
+        "total_chars": 1278,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 3,
+        "failures": []
+      },
+      "290": {
+        "han_chars": 1297,
+        "total_chars": 1917,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.062,
+      "resolution_signatures": {
+        "first": {
+          "attack": "",
+          "counter": "签字",
+          "resolver": "",
+          "opponent_result": "",
+          "hero_result": ""
+        },
+        "second": {
+          "attack": "",
+          "counter": "门禁",
+          "resolver": "",
+          "opponent_result": "失去",
+          "hero_result": "获得"
+        }
+      },
+      "settlement_action_terms": [
+        "失去",
+        "当场",
+        "成为"
+      ],
+      "rebirth_information_gap_markers": [
+        "上一世"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 269,
+          "semantic_overlap": 0.0445
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 270,
+          "semantic_overlap": 0.0524
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 271,
+          "semantic_overlap": 0.0523
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 272,
+          "semantic_overlap": 0.0595
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 273,
+          "semantic_overlap": 0.0555
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 274,
+          "semantic_overlap": 0.0566
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 275,
+          "semantic_overlap": 0.0589
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 276,
+          "semantic_overlap": 0.0577
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 277,
+          "semantic_overlap": 0.0608
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 278,
+          "semantic_overlap": 0.0641
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 279,
+          "semantic_overlap": 0.0541
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 280,
+          "semantic_overlap": 0.0524
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 281,
+          "semantic_overlap": 0.0608
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 282,
+          "semantic_overlap": 0.0726
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 283,
+          "semantic_overlap": 0.0662
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 284,
+          "semantic_overlap": 0.0619
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 285,
+          "semantic_overlap": 0.0663
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 286,
+          "semantic_overlap": 0.0631
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 287,
+          "semantic_overlap": 0.0708
+        },
+        {
+          "chapter_id": 289,
+          "prior_chapter_id": 288,
+          "semantic_overlap": 0.0667
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 269,
+          "semantic_overlap": 0.0383
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 270,
+          "semantic_overlap": 0.0357
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 271,
+          "semantic_overlap": 0.0603
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 272,
+          "semantic_overlap": 0.0593
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 273,
+          "semantic_overlap": 0.0614
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 274,
+          "semantic_overlap": 0.0624
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 275,
+          "semantic_overlap": 0.0556
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 276,
+          "semantic_overlap": 0.0779
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 277,
+          "semantic_overlap": 0.0552
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 278,
+          "semantic_overlap": 0.0827
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 279,
+          "semantic_overlap": 0.0497
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 280,
+          "semantic_overlap": 0.0737
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 281,
+          "semantic_overlap": 0.0567
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 282,
+          "semantic_overlap": 0.073
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 283,
+          "semantic_overlap": 0.0595
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 284,
+          "semantic_overlap": 0.0842
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 285,
+          "semantic_overlap": 0.0581
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 286,
+          "semantic_overlap": 0.0932
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 287,
+          "semantic_overlap": 0.0542
+        },
+        {
+          "chapter_id": 290,
+          "prior_chapter_id": 288,
+          "semantic_overlap": 0.0868
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "289": "df160172d4e1736e72499181cb0b73ba660eec5160cd141c11a92393fae4729f",
+    "290": "948ef14ae19615b1f61948d54ee17abb40a01058e1e577c7143e7675d7b0f00a"
+  },
+  "accepted_at": "2026-08-26T08:02:28.765704+00:00",
+  "status": "quarantine_rewrite_pending",
+  "authoritative": false,
+  "quarantine_reason": "EC136-EC178 architecture and synopsis repair",
+  "quarantined_at": "20260826T110312Z"
+}

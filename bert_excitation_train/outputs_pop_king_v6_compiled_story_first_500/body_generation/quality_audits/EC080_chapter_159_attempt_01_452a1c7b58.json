@@ -1,0 +1,106 @@
+{
+  "cluster_id": "EC080",
+  "chapter_id": 159,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "452a1c7b5838e0ddd6d9838e6c18c4a86d2d9d9a55286302b608bce3bf4b831a",
+  "base_prompt_sha256": "452a1c7b5838e0ddd6d9838e6c18c4a86d2d9d9a55286302b608bce3bf4b831a",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "7bc6fe4996cc19cef5f397c3e0664f6d60f48ce3c63ea696d3df3d7d78b243b1",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 12.273,
+    "usage": {
+      "prompt_tokens": 6311,
+      "completion_tokens": 1068,
+      "total_tokens": 7379,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 80,
+    "through_chapter": 160,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "61a72d975b765f057ddcd00c97dc53007d642dfde773b8b2120d24b06681b839",
+    "chapter_card_prefix_sha256": "ccc160c695362758ced8895c4cc41f3b7e5c2cc2fef4dbea79de1adb3047f856",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "82c935211d231bd5d6915031bcee123c8044591efe66005343db9f1ca2779ab3"
+  },
+  "cluster_sha256": "75fa057d43d9e589bbc286889544734855dc2a811637c5270e85a7bcf786675e",
+  "card_sha256": "a199e1d321eac1ef0f5469ecba0ff7fcf29dfb46883abf782e8f5f63f90727a2",
+  "chapter_audit": {
+    "han_chars": 1469,
+    "total_chars": 1713,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "荧光标记细节",
+        "exact": false,
+        "bigram_coverage": 0.8,
+        "matched": true
+      },
+      {
+        "anchor": "1982年税务代码废止事实",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "录音机开启状态",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0294,
+    "scene_evidence": [
+      {
+        "location": "麦珂家族信托办公室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_159_BARRY_CONFESION_TAPE",
+        "display_name": "巴里·布鲁姆自爆录音带",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.029，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“录音机开启状态”",
+      "正文没有写出本章正式创建的关键对象“巴里·布鲁姆自爆录音带”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.029，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“录音机开启状态”",
+      "正文没有写出本章正式创建的关键对象“巴里·布鲁姆自爆录音带”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

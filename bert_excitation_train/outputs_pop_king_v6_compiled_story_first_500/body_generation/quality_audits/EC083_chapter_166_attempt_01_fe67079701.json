@@ -1,0 +1,118 @@
+{
+  "cluster_id": "EC083",
+  "chapter_id": 166,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "fe67079701a8cd4485750d48d2aafb3f548e259d61c8250ea762b1bb354cdc3c",
+  "base_prompt_sha256": "fe67079701a8cd4485750d48d2aafb3f548e259d61c8250ea762b1bb354cdc3c",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "369ea517acd1b1fa33f7896e3ab4c401cf5d4aa427b7cdac8f27a00ab20824ac",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.188,
+    "usage": {
+      "prompt_tokens": 9954,
+      "completion_tokens": 1190,
+      "total_tokens": 11144,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 83,
+    "through_chapter": 166,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "f00aa7a52d2a452fdf1858a9fe8c9953123aac7cfd08f464ce635947f6b99b45",
+    "chapter_card_prefix_sha256": "af8a5a8339ff9b6dae1fb0424491bacdb04c607a984fda946631c832cabf8857",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "ef79d8c5d335bf69b5c2a62e5379f66d6b9090b7f659f99147ae9888f2e028eb"
+  },
+  "cluster_sha256": "ce10ca049399390e795b00c8b0f4b15d100187d7a6e091f37a572b2d64545799",
+  "card_sha256": "132fd785c50172e83def12103243d3f1c52422adaa35277c1f57d644ab280735",
+  "chapter_audit": {
+    "han_chars": 1742,
+    "total_chars": 1965,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "电磁屏蔽箱",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "校准旋钮卡死",
+        "exact": false,
+        "bigram_coverage": 0.8,
+        "matched": true
+      },
+      {
+        "anchor": "莱昂·周记录数据",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "trust_governance__extension_EC083",
+        "target": "secured",
+        "evidence_terms": [
+          "ART_165_MECHANICAL_PROTOTYPE_LOG"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "opposition_loss_EC083",
+        "target": "奥瑞恩集团技术围猎失败，电子竞品被淘汰，技术壁垒被主角方确立。",
+        "evidence_terms": [
+          "ART_165_MECHANICAL_PROTOTYPE_LOG"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0391,
+    "scene_evidence": [
+      {
+        "location": "市立图书馆报告厅",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.039，疑似写成了另一件事",
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC083→secured",
+      "正文没有通过现场动作兑现状态转移opposition_loss_EC083→奥瑞恩集团技术围猎失败，电子竞品被淘汰，技术壁垒被主角方确立。"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.039，疑似写成了另一件事",
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC083→secured",
+      "正文没有通过现场动作兑现状态转移opposition_loss_EC083→奥瑞恩集团技术围猎失败，电子竞品被淘汰，技术壁垒被主角方确立。"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

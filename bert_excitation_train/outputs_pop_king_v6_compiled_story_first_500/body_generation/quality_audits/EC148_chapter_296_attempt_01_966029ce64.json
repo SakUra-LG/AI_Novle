@@ -1,0 +1,122 @@
+{
+  "cluster_id": "EC148",
+  "chapter_id": 296,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "966029ce64aa75ee9def80e1feeaba13bb8898ee138cb8ca232eaaa79ed63b4c",
+  "base_prompt_sha256": "966029ce64aa75ee9def80e1feeaba13bb8898ee138cb8ca232eaaa79ed63b4c",
+  "body_generator_contract_version": "v13_compiled_plan_strict_gates_20260822",
+  "raw_response_sha256": "d4412f06097fe08275f554e0452f02fd5645494daa38d1291f17c8c0dc7c3995",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.647,
+    "usage": {
+      "prompt_tokens": 7242,
+      "completion_tokens": 1115,
+      "total_tokens": 8357,
+      "prompt_tokens_details": {
+        "cached_tokens": 3563
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 148,
+    "through_chapter": 296,
+    "outline_sha256": "a2e1a6cde3554db62a9f0842db92c9c580a6e553f71f71d883089f965c5f11b5",
+    "event_prefix_sha256": "a4986f5b4c1a12fb409464cc70ebc4340eee42c447769dcb25d002528236cfef",
+    "chapter_card_prefix_sha256": "abeba861c6e8d1b2bef7d323c10ee2efd47d31aafb34cef48eb53fa1c0963a59",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "e59b2032a1cda76fcb3cfeed7318c2f1a578394171f8925891bb663199edf3d1"
+  },
+  "cluster_sha256": "2e6af62469e99b760f3ce0259bba59dd1c7a3abb181735ab4dbe6ec89aa7b210",
+  "card_sha256": "40282f5c071fe5d23c15fba46b38f1c53ffc7d1fc37090fc49fb3a058be012ca",
+  "chapter_audit": {
+    "han_chars": 1618,
+    "total_chars": 1856,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "麦珂失去随时调用她团队的便利",
+        "exact": false,
+        "bigram_coverage": 0.385,
+        "matched": false
+      },
+      {
+        "anchor": "黛安娜取得独立现金流和议价权",
+        "exact": false,
+        "bigram_coverage": 0.615,
+        "matched": true
+      },
+      {
+        "anchor": "行业采购评审",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "progress_ec148",
+        "target": "resolved_8c0b8c9174",
+        "evidence_terms": [
+          "ART_295_60C9AE6D",
+          "样衣订单与独立报",
+          "价单",
+          "复核黛安娜把巡演",
+          "服装样衣发展成独",
+          "立工作室",
+          "拒绝成为基金附属",
+          "部门",
+          "不得扩大为其他人",
+          "物或资产的结论"
+        ],
+        "hit_terms": [
+          "价单",
+          "立工作室"
+        ],
+        "matched": true
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0399,
+    "scene_evidence": [
+      {
+        "location": "罗文服装工作室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "fast_mode_relaxed_chapter_failures": [
+      "正文没有兑现章卡关键事实“麦珂失去随时调用她团队的便利”"
+    ],
+    "failures": [
+      "重生知识边界违规: other character knows"
+    ],
+    "all_validator_failures": [
+      "重生知识边界违规: other character knows"
+    ]
+  },
+  "failures": [
+    "重生知识边界违规: other character knows"
+  ],
+  "accepted": false
+}

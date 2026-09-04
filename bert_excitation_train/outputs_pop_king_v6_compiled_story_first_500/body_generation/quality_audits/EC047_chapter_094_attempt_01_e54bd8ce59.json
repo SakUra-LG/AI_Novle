@@ -1,0 +1,144 @@
+{
+  "cluster_id": "EC047",
+  "chapter_id": 94,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "e54bd8ce591da1cd5d9c2bab5946335cc41ddc3099ea72d5fa28af91ec21215a",
+  "base_prompt_sha256": "e54bd8ce591da1cd5d9c2bab5946335cc41ddc3099ea72d5fa28af91ec21215a",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "fc84640d9e940fafc9c880ce96123b72a71bde64c350ed49dfee38c268ecd609",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 15.509,
+    "usage": {
+      "prompt_tokens": 10153,
+      "completion_tokens": 1169,
+      "total_tokens": 11322,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 47,
+    "through_chapter": 94,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "5a22fb9408c32af87aadcc14b062a5b33096a189ed4468b7421fb32da600cfc6",
+    "chapter_card_prefix_sha256": "396088af996851d5a74091deafcc1241b13bcb26df39774f847de947236de10a",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "cae723db91c1ee4b89eb69d3e139fcf6282cd9538ffb232e5a55268e2637930f"
+  },
+  "cluster_sha256": "bb39e2d8000f2a9adfbb207621a5ec83f6b37d967068815b3f43d5d0aedc49eb",
+  "card_sha256": "d90047c9596fba9c1e8f19e8972e5fccbcba641b4d0acafbb4ec88aad759188a",
+  "chapter_audit": {
+    "han_chars": 1722,
+    "total_chars": 1939,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "法官宣读特别附录",
+        "exact": false,
+        "bigram_coverage": 0.571,
+        "matched": true
+      },
+      {
+        "anchor": "麦珂签署确认书",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "原厂牌代表的绝望反应",
+        "exact": false,
+        "bigram_coverage": 0.0,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "copyright_status__financial_independence__extension_EC042__extension_EC047",
+        "target": "拥有独立监管账户且手稿日期成为法定确权依据，权属不可动摇",
+        "evidence_terms": [
+          "法庭采纳磁带夹层",
+          "手写日期证据",
+          "驳回厂牌职务作品",
+          "主张"
+        ],
+        "hit_terms": [
+          "主张"
+        ],
+        "matched": false
+      },
+      {
+        "state_key": "control_over_narrative__extension_EC042",
+        "target": "彻底失去技术欺诈能力，信誉破产",
+        "evidence_terms": [
+          "巴里",
+          "布鲁姆在法庭上的",
+          "滑稽失态及证据被",
+          "当庭驳回"
+        ],
+        "hit_terms": [
+          "巴里"
+        ],
+        "matched": false
+      },
+      {
+        "state_key": "trust_dynamic__family_alliance__extension_EC042__extension_EC047",
+        "target": "铁三角稳固，母子及盟友对麦珂的法律智慧产生深度敬畏",
+        "evidence_terms": [
+          "麦珂当庭展示原始",
+          "分轨与日期衬垫",
+          "迫使全家确认其决",
+          "策正确性"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 1,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0461,
+    "scene_evidence": [
+      {
+        "location": "加州中区联邦地方法院主法庭",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文没有兑现章卡关键事实“原厂牌代表的绝望反应”",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC042__extension_EC047→拥有独立监管账户且手稿日期成为法定确权依据，权属不可动摇",
+      "正文没有通过现场动作兑现状态转移control_over_narrative__extension_EC042→彻底失去技术欺诈能力，信誉破产",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC042__extension_EC047→铁三角稳固，母子及盟友对麦珂的法律智慧产生深度敬畏",
+      "正文未落到规划场景“加州中区联邦地方法院主法庭”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“原厂牌代表的绝望反应”",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC042__extension_EC047→拥有独立监管账户且手稿日期成为法定确权依据，权属不可动摇",
+      "正文没有通过现场动作兑现状态转移control_over_narrative__extension_EC042→彻底失去技术欺诈能力，信誉破产",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC042__extension_EC047→铁三角稳固，母子及盟友对麦珂的法律智慧产生深度敬畏",
+      "正文未落到规划场景“加州中区联邦地方法院主法庭”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

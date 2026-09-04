@@ -1,0 +1,106 @@
+{
+  "cluster_id": "EC028",
+  "chapter_id": 55,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "a89391ec3f0cc60cf7690f14bed749d6e4d408f17274cacb95226d37a1362d35",
+  "base_prompt_sha256": "a89391ec3f0cc60cf7690f14bed749d6e4d408f17274cacb95226d37a1362d35",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "40c1503c48ffad44d11ab599c5c61e3f2016d34ed70f86a2134a6f377bd31c89",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 15.152,
+    "usage": {
+      "prompt_tokens": 6363,
+      "completion_tokens": 1176,
+      "total_tokens": 7539,
+      "prompt_tokens_details": {
+        "cached_tokens": 3521
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 28,
+    "through_chapter": 56,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "6b7f4e044efd0e6d47150263f7d185281c16654f1b244e4666d02219cd45191f",
+    "chapter_card_prefix_sha256": "c227cd91ff8cd0ed850c6e05d1e9337599a99e1fa240c4426e957e9b5bea01e4",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "a0411303960768536aa908f41e28fdebfa00e2a748f16d268f9db0b66333bb51"
+  },
+  "cluster_sha256": "d681585aea2eac118ba5f9fbda736e0089f1faab90e163455ce3ae4cbb09b3ad",
+  "card_sha256": "f0225ddce70b573f19b228518547eb8c764301331905d8f21de3d370b257c4e8",
+  "chapter_audit": {
+    "han_chars": 1676,
+    "total_chars": 1926,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "乔纳试图用‘行业惯例’施压",
+        "exact": false,
+        "bigram_coverage": 0.6,
+        "matched": true
+      },
+      {
+        "anchor": "温特律师指出法律漏洞",
+        "exact": false,
+        "bigram_coverage": 0.556,
+        "matched": true
+      },
+      {
+        "anchor": "麦珂展示权益分析表",
+        "exact": false,
+        "bigram_coverage": 0.25,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0358,
+    "scene_evidence": [
+      {
+        "location": "河湾镇家庭会议室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_055_ANALYSIS",
+        "display_name": "未成年人权益分析表（手抄版）",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.036，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“麦珂展示权益分析表”",
+      "正文没有写出本章正式创建的关键对象“未成年人权益分析表（手抄版）”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.036，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“麦珂展示权益分析表”",
+      "正文没有写出本章正式创建的关键对象“未成年人权益分析表（手抄版）”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

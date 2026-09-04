@@ -1,0 +1,444 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC173",
+  "chapter_ids": [
+    345,
+    346
+  ],
+  "accepted": false,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "345": {
+        "han_chars": 1302,
+        "total_chars": 1431,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 3,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "玛莎的计算器操作",
+            "exact": false,
+            "bigram_coverage": 0.714,
+            "matched": true
+          },
+          {
+            "anchor": "斯特林数据的荒谬性",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "瑟琳娜的眼神变化",
+            "exact": false,
+            "bigram_coverage": 0.571,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.0335,
+        "scene_evidence": [
+          {
+            "location": "麦珂私人宅邸客厅",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_345_WORKSHOP_LEDGER_DRAFT",
+            "display_name": "《工坊收益预演表（草案）》",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      },
+      "346": {
+        "han_chars": 1092,
+        "total_chars": 1477,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 3,
+        "must_include_total": 3,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "双轨制课程的具体条款",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "民事伴侣契约的签署过程",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "斯特林的无力回天",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "education_path__extension_EC173",
+            "target": "dual_track_autonomous",
+            "evidence_terms": [
+              "MEMO_SIGNING_EC173",
+              "WORKSHOP_REVENUE_PROOF"
+            ],
+            "hit_terms": [],
+            "matched": true
+          },
+          {
+            "state_key": "authority_status__extension_EC173",
+            "target": "obsolete_and_mocked",
+            "evidence_terms": [
+              "PUBLIC_FAILURE_OF_STERLING_DATA_AND_COMPUTATION"
+            ],
+            "hit_terms": [],
+            "matched": true
+          },
+          {
+            "state_key": "partnership_depth__extension_EC173",
+            "target": "civil_partners_with_legal_contract",
+            "evidence_terms": [
+              "CIVIL_PARTNERSHIP_AGREEMENT_SIGNED"
+            ],
+            "hit_terms": [],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 1,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.1329,
+        "scene_evidence": [
+          {
+            "location": "麦珂私人宅邸书房",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_346_COEXISTENCE_MEMO",
+            "display_name": "《教育共治备忘录》终稿",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_346_CIVIL_PARTNERSHIP_CERT",
+            "display_name": "《民事伴侣契约》证书",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      }
+    },
+    "joint": {
+      "345": {
+        "han_chars": 1302,
+        "total_chars": 1431,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 3,
+        "failures": []
+      },
+      "346": {
+        "han_chars": 1092,
+        "total_chars": 1477,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 3,
+        "must_include_total": 3,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.0939,
+      "resolution_signatures": {
+        "first": {
+          "attack": "合同",
+          "counter": "签字",
+          "resolver": "",
+          "opponent_result": "",
+          "hero_result": ""
+        },
+        "second": {
+          "attack": "合同",
+          "counter": "条款",
+          "resolver": "",
+          "opponent_result": "",
+          "hero_result": "恢复"
+        }
+      },
+      "settlement_action_terms": [
+        "合作",
+        "生效",
+        "承担",
+        "成为"
+      ],
+      "rebirth_information_gap_markers": [
+        "前世",
+        "麦珂记得"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 325,
+          "semantic_overlap": 0.0527
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 326,
+          "semantic_overlap": 0.0428
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 327,
+          "semantic_overlap": 0.0533
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 328,
+          "semantic_overlap": 0.0348
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 329,
+          "semantic_overlap": 0.0522
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 330,
+          "semantic_overlap": 0.0581
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 331,
+          "semantic_overlap": 0.0467
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 332,
+          "semantic_overlap": 0.0581
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 333,
+          "semantic_overlap": 0.0552
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 334,
+          "semantic_overlap": 0.0539
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 335,
+          "semantic_overlap": 0.0543
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 336,
+          "semantic_overlap": 0.0513
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 337,
+          "semantic_overlap": 0.0827
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 338,
+          "semantic_overlap": 0.0736
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 339,
+          "semantic_overlap": 0.049
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 340,
+          "semantic_overlap": 0.061
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 341,
+          "semantic_overlap": 0.0571
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 342,
+          "semantic_overlap": 0.0507
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 343,
+          "semantic_overlap": 0.0526
+        },
+        {
+          "chapter_id": 345,
+          "prior_chapter_id": 344,
+          "semantic_overlap": 0.0491
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 325,
+          "semantic_overlap": 0.0504
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 326,
+          "semantic_overlap": 0.0834
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 327,
+          "semantic_overlap": 0.0479
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 328,
+          "semantic_overlap": 0.0651
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 329,
+          "semantic_overlap": 0.0386
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 330,
+          "semantic_overlap": 0.0835
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 331,
+          "semantic_overlap": 0.0472
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 332,
+          "semantic_overlap": 0.1048
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 333,
+          "semantic_overlap": 0.0455
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 334,
+          "semantic_overlap": 0.0827
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 335,
+          "semantic_overlap": 0.0486
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 336,
+          "semantic_overlap": 0.0846
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 337,
+          "semantic_overlap": 0.0931
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 338,
+          "semantic_overlap": 0.105
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 339,
+          "semantic_overlap": 0.0484
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 340,
+          "semantic_overlap": 0.0709
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 341,
+          "semantic_overlap": 0.0512
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 342,
+          "semantic_overlap": 0.0907
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 343,
+          "semantic_overlap": 0.0539
+        },
+        {
+          "chapter_id": 346,
+          "prior_chapter_id": 344,
+          "semantic_overlap": 0.0893
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "345": "6e5c420606ae4cbd763a3791c5016a30c25c846d1f449b357b290649caf4b259",
+    "346": "03f713352006bc50de3c530bbc50a9fc87f7a24d0bad0f39c03a0a35565c746e"
+  },
+  "accepted_at": "2026-08-26T10:31:54.077779+00:00",
+  "status": "quarantine_rewrite_pending",
+  "authoritative": false,
+  "quarantine_reason": "EC136-EC178 architecture and synopsis repair",
+  "quarantined_at": "20260826T110312Z"
+}

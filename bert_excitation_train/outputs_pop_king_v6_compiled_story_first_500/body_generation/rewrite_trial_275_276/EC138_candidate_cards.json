@@ -1,0 +1,56 @@
+{
+  "status": "candidate_only_waiting_for_271_274_manual_gate",
+  "formal_promotion": false,
+  "story_memory_write": false,
+  "neo4j_write": false,
+  "cluster_id": "EC138",
+  "chapter_span": [275, 276],
+  "conflict_domain": "合同适用范围",
+  "irreplaceable_progress_point": "把内部核对与对外宣传拆成两种用途，拒绝把一次有限复核自动扩成公开授权",
+  "previous_cluster_boundary": "EC137只结束于CR-41摘录的范围受限程序保护；不得把签名缺口直接当成合同结论",
+  "next_cluster_boundary": "EC139再核对地域和副本数量；EC138不处理地域扩张或副本交付数量",
+  "structure_signature": {
+    "conflict_type": "contract_scope_split",
+    "attack_method": "partner_requests_internal_copy_be_treated_as_public_use",
+    "counter_method": "separate_purpose_recipient_duration_and_new_application",
+    "key_artifact": "CR-41摘录与旧授权条款",
+    "authority": "合同管理员与原授权主体",
+    "reward": "获得一份范围明确的内部核对安排",
+    "relationship_change": "黛安娜拒绝替合作方承担自动扩权责任"
+  },
+  "main_character_ids": ["CHAR_026AC753E27A", "CHAR_B24EF2E733C9", "CHAR_8C6A51D4E9F2"],
+  "participant_ids": ["CHAR_D1E2F3A4B5C6", "CHAR_9577B35020B0"],
+  "chapter_cards": [
+    {
+      "chapter_id": 275,
+      "timeline_start": "1993-09-20",
+      "timeline_end": "1993-09-20",
+      "chapter_role": "scope_question",
+      "goal": "把内部核对、节目制作、宣传展示三种用途从旧授权中拆开，确认现有摘录只落在内部核对",
+      "must_include": ["CR-41摘录", "旧授权", "内部核对", "合同管理员"],
+      "must_not_include": ["地域扩张", "副本数量谈判", "永久封禁", "公开授权已获准"],
+      "turning_choice": "黛安娜拒绝用合作方的排期压力替代用途条款，要求先把对象和期限写清",
+      "result_layer": "发现疑点",
+      "ending_hook": "合同管理员发现旧授权的收件人栏与实际使用部门不完全相同，需在第276章确认责任边界"
+    },
+    {
+      "chapter_id": 276,
+      "timeline_start": "1993-09-21",
+      "timeline_end": "1993-09-21",
+      "chapter_role": "limited_scope_protection",
+      "goal": "由有权管理员确认内部核对的收件人、期限和保管地点，拒绝自动延长或默示公开",
+      "must_include": ["收件人", "期限", "保管地点", "重新申请"],
+      "must_not_include": ["地域扩张", "副本数量谈判", "刑事定罪", "永久控制权", "EC139地域结论"],
+      "turning_choice": "麦珂接受排期延误的现实成本，保留重新申请而不签下模糊的长期授权",
+      "result_layer": "临时保护",
+      "ending_hook": "一份新申请把地域栏留空，下一簇必须处理授权区域而不是重复用途拆分"
+    }
+  ],
+  "candidate_generation_constraints": {
+    "one_ec_one_question": true,
+    "no_physical_document_forensics": true,
+    "no_public_hearing": true,
+    "no_formal_story_memory_or_neo4j_write": true,
+    "external_semantic_critic": "not_run_until_credentials_are_available"
+  }
+}

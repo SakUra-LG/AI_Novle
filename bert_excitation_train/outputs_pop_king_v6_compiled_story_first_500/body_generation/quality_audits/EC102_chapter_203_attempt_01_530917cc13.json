@@ -1,0 +1,110 @@
+{
+  "cluster_id": "EC102",
+  "chapter_id": 203,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "530917cc13f2dd32ced859655033ade775128c637894fad8d2fb775cd516ffdd",
+  "base_prompt_sha256": "1d36f17348e86c5a47d865360af9e2b4925c4fd04464a1dde942cbbd3447dd13",
+  "body_generator_contract_version": "v11_dynamic_identity_history_retry_20260822",
+  "raw_response_sha256": "4b92b8a5e3f8679b5269e2ec746a4a381432ced45f5b664a5df13eeb40e1bf26",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 11.124,
+    "usage": {
+      "prompt_tokens": 10241,
+      "completion_tokens": 732,
+      "total_tokens": 10973,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 102,
+    "through_chapter": 204,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "393db5e61f617bae01e4d6f725f512164003da90d52f0b1064ac2a2a39891c3b",
+    "chapter_card_prefix_sha256": "b7a2b631802fd93758ba9574adaa25c817c1e942fce6313fe1492bdc4b389b94",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "f1472b58c1471f6293825f465fcd2c0d6acd5a689c67f433a8cdc4ef746845e0"
+  },
+  "cluster_sha256": "cdf36d3fb7a743800616ff18dd137c5c7b710b6abf3bbca9e7988d7d7c06d9db",
+  "card_sha256": "d3e5efe81979401388fc33d61f3f2b8dd6fe691b15a1359d16fe8b60c7106491",
+  "chapter_audit": {
+    "han_chars": 1018,
+    "total_chars": 1209,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "编号卡背印承诺条款",
+        "exact": false,
+        "bigram_coverage": 0.875,
+        "matched": true
+      },
+      {
+        "anchor": "老人#8327号卡拼写纠错",
+        "exact": false,
+        "bigram_coverage": 0.818,
+        "matched": true
+      },
+      {
+        "anchor": "随机座次实时投影",
+        "exact": false,
+        "bigram_coverage": 0.857,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0891,
+    "scene_evidence": [
+      {
+        "location": "舞台中央",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_203_SEATING_LOG",
+        "display_name": "雾河城首演随机座次总表",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      },
+      {
+        "artifact_id": "ART_203_CARD_BACK_PRINT",
+        "display_name": "编号卡背印承诺条款样本",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有写出本章正式创建的关键对象“编号卡背印承诺条款样本”"
+    ],
+    "all_validator_failures": [
+      "正文没有写出本章正式创建的关键对象“编号卡背印承诺条款样本”"
+    ]
+  },
+  "failures": [
+    "正文没有写出本章正式创建的关键对象“编号卡背印承诺条款样本”"
+  ],
+  "accepted": false
+}

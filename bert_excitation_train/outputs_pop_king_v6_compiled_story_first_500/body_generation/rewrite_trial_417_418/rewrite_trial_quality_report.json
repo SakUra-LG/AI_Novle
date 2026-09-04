@@ -1,0 +1,42 @@
+{
+  "version": "isolated_trial_report_v1",
+  "status": "trial_only_not_accepted",
+  "formal_story_memory_write": false,
+  "neo4j_write": false,
+  "external_semantic_critic": "not_run",
+  "cluster_id": "EC209",
+  "chapters": [
+    {
+      "chapter_id": 417,
+      "event_cluster_id": "EC209",
+      "expected_progress_point": "协调出差与返程照护",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "fcdae3a469615e415586a44e68fe6e804cd53fac63c7c25ffa342ab387119cef"
+    },
+    {
+      "chapter_id": 418,
+      "event_cluster_id": "EC209",
+      "expected_progress_point": "协调出差与返程照护",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "e06f8a4ff6f13eafd3497b649c45905bfc9e93000c38396184132eea36d221ee"
+    }
+  ],
+  "formal_continuity_anchor": {
+    "chapter_id": 270,
+    "date": "1993-09-17"
+  },
+  "overall": "PASS_WITHOUT_ACCEPTANCE",
+  "issues": []
+}

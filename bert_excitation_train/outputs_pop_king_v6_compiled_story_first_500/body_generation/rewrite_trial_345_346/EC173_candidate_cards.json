@@ -1,0 +1,133 @@
+{
+  "status": "candidate_only_waiting_for_manual_gate",
+  "formal_promotion": false,
+  "story_memory_write": false,
+  "neo4j_write": false,
+  "cluster_id": "EC173",
+  "chapter_span": [
+    345,
+    346
+  ],
+  "conflict_domain": "家庭/伴侣关系选择",
+  "irreplaceable_progress_point": "处理职业迁移决定，形成三个月后复谈的约定而非永久承诺",
+  "previous_cluster_boundary": "EC172只完成来源并列的媒体纠错",
+  "next_cluster_boundary": "EC174转入运输保险",
+  "structure_signature": {
+    "conflict_type": "career_relocation_choice",
+    "attack_method": "out_of_town_offer_requires_immediate_move",
+    "counter_method": "set_three_month_trial_and_reopen_terms",
+    "key_artifact": "relocation offer",
+    "authority": "本人和邀请方",
+    "reward": "三个月后复谈",
+    "relationship_change": "苏菲亚把迁移选择从团队排期中分离"
+  },
+  "main_character_ids": [
+    "CHAR_026AC753E27A",
+    "CHAR_B24EF2E733C9",
+    "CHAR_8C6A51D4E9F2"
+  ],
+  "participant_ids": [
+    "CHAR_0037905289BB",
+    "CHAR_3F11D9A42EDF",
+    "CHAR_EB1F70C558F3",
+    "CHAR_11D3BC48DDA3",
+    "CHAR_D1A231D7C399",
+    "CHAR_9577B35020B0",
+    "CHAR_B047AA73B9D5",
+    "CHAR_F618A85B98BB",
+    "CHAR_B6BBF0D9B359",
+    "CHAR_516678482F6C",
+    "CHAR_92F8C157F434",
+    "CHAR_C47E4BB208B5",
+    "CHAR_87B8E75FFF6F",
+    "CHAR_4E24DD1EEE76",
+    "CHAR_382967F0B350",
+    "CHAR_89E90D63A7E8",
+    "CHAR_33F93B7BC53A",
+    "CHAR_3FFB2CF69F92",
+    "CHAR_C1B841D16B30",
+    "CHAR_D3D4B10B3D17",
+    "CHAR_49ECACFD4A11",
+    "CHAR_840A569730E9",
+    "CHAR_C2D764AE4A75",
+    "CHAR_B04A992A7F99",
+    "CHAR_CF880573B5CB",
+    "CHAR_BE1EC7F9E7B2",
+    "CHAR_3C2C1E8DE107",
+    "CHAR_B9930A71C6BA",
+    "CHAR_0EB7D2FE6DB5",
+    "CHAR_384F7B6903B0",
+    "CHAR_1D596CF81A77",
+    "CHAR_B495BC2C5F5D",
+    "CHAR_3D43F562C2CF",
+    "CHAR_53E2B0B5028D",
+    "CHAR_76E9E8359211",
+    "CHAR_EC7C1E1EB46F",
+    "CHAR_1CB49083C449",
+    "CHAR_4BD6CF437713",
+    "CHAR_325F9173E463",
+    "CHAR_845D7F655759",
+    "CHAR_1A10FDB0D8F2",
+    "CHAR_7518D55BD4A2",
+    "CHAR_6FC4735D74A8",
+    "CHAR_7EC8C2E9C65E",
+    "CHAR_BDF63B327DD5",
+    "CHAR_11B997940330",
+    "CHAR_57E13D88C9B8",
+    "CHAR_610508F3989C",
+    "CHAR_78FB688D8EF5",
+    "CHAR_0258076F3554",
+    "CHAR_61A5BF2F3AB1",
+    "CHAR_8DACFC5F915C",
+    "CHAR_C97BFB7E074C",
+    "CHAR_F74D83744742",
+    "CHAR_3E8FEA1FDD9D",
+    "CHAR_45E989E965A6",
+    "CHAR_0C9960818FAF",
+    "CHAR_011CBFAA7059",
+    "CHAR_E3BCABEECD2B",
+    "CHAR_C81DA5F58778",
+    "CHAR_B78580A9A2E5",
+    "CHAR_BD3B9570476E"
+  ],
+  "chapter_cards": [
+    {
+      "chapter_id": 345,
+      "timeline_start": "1993-11-29",
+      "timeline_end": "1993-11-29",
+      "goal": "明确外地职业邀请的迁移成本",
+      "must_include": [
+        "外地邀请",
+        "迁移",
+        "期限"
+      ],
+      "must_not_include": [
+        "保险",
+        "媒体录音",
+        "永久离队"
+      ],
+      "turning_choice": "苏菲亚先核对家人和工作成本",
+      "result_layer": "发现疑点",
+      "ending_hook": "邀请方要求一周内搬迁"
+    },
+    {
+      "chapter_id": 346,
+      "timeline_start": "1993-11-30",
+      "timeline_end": "1993-11-30",
+      "goal": "形成三个月后复谈的短期路径",
+      "must_include": [
+        "三个月",
+        "复谈",
+        "短期"
+      ],
+      "must_not_include": [
+        "永久承诺",
+        "团队代替选择",
+        "EC174运输"
+      ],
+      "turning_choice": "苏菲亚拒绝永久迁移但接受试行",
+      "result_layer": "临时保护",
+      "ending_hook": "运输保险通知指出现有条款不足"
+    }
+  ]
+}

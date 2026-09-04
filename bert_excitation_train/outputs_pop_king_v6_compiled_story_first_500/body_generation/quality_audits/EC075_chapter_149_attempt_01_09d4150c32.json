@@ -1,0 +1,118 @@
+{
+  "cluster_id": "EC075",
+  "chapter_id": 149,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "09d4150c32433d4c248c232b9f8294bf7d2466c26896e5709836e665bfc9349e",
+  "base_prompt_sha256": "09d4150c32433d4c248c232b9f8294bf7d2466c26896e5709836e665bfc9349e",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "61022d29ffb99e430704bf7dabc08206665790ee688e1df43c99856c9eab492d",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 15.725,
+    "usage": {
+      "prompt_tokens": 6558,
+      "completion_tokens": 1060,
+      "total_tokens": 7618,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 75,
+    "through_chapter": 150,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "aa13e582810d2757f90dcf27111c3527ccdfc88931714b4c0091b2acc2792ef4",
+    "chapter_card_prefix_sha256": "fa4d7db0abd6d642b33b9beec0c911d1ecf10d3f7effbbae7cec3cccd17275e2",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "f9d215d62a17243cf91fd6e57c15646e4fe750c772a851eaaed5bfb3c01ecf50"
+  },
+  "cluster_sha256": "8c09ddf53e39ec346420c6105b38f953809c0fcf095e95c9e391b126e8ac1259",
+  "card_sha256": "9f4b525daf0eba5eb64b3c3c4d00a90fa4d3af432e6042a2ab70a69306a8a4d2",
+  "chapter_audit": {
+    "han_chars": 1522,
+    "total_chars": 1746,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "收购宣布的戏剧性时刻",
+        "exact": false,
+        "bigram_coverage": 0.444,
+        "matched": false
+      },
+      {
+        "anchor": "维克多·兰斯的尴尬撤退",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      },
+      {
+        "anchor": "苏菲亚·罗德里格斯的专业表现",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0369,
+    "scene_evidence": [
+      {
+        "location": "麦珂家族信托庆功宴大厅",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_149_FILM_PLANT_DEED",
+        "display_name": "银底胶片冲印厂所有权转让书",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      },
+      {
+        "artifact_id": "ART_148_COURT_ORDER",
+        "display_name": "ART_148_COURT_ORDER",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.037，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“收购宣布的戏剧性时刻”",
+      "正文没有兑现章卡关键事实“维克多·兰斯的尴尬撤退”",
+      "正文未落到规划场景“麦珂家族信托庆功宴大厅”",
+      "正文没有写出本章正式创建的关键对象“银底胶片冲印厂所有权转让书”",
+      "正文没有写出本章正式创建的关键对象“ART_148_COURT_ORDER”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.037，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“收购宣布的戏剧性时刻”",
+      "正文没有兑现章卡关键事实“维克多·兰斯的尴尬撤退”",
+      "正文未落到规划场景“麦珂家族信托庆功宴大厅”",
+      "正文没有写出本章正式创建的关键对象“银底胶片冲印厂所有权转让书”",
+      "正文没有写出本章正式创建的关键对象“ART_148_COURT_ORDER”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

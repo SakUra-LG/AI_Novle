@@ -1,0 +1,133 @@
+{
+  "cluster_id": "EC078",
+  "chapter_id": 156,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "bf5c93f9079adb944b5c6d84b1e11b17016ddc4b23657daaf8f47b4bb459f6fa",
+  "base_prompt_sha256": "bf5c93f9079adb944b5c6d84b1e11b17016ddc4b23657daaf8f47b4bb459f6fa",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "01db24f8b9cf31e2a233a4c4cf450220b60ca05f40e3641f1861d2530be62839",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 15.48,
+    "usage": {
+      "prompt_tokens": 9158,
+      "completion_tokens": 1203,
+      "total_tokens": 10361,
+      "prompt_tokens_details": {
+        "cached_tokens": 5008
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 78,
+    "through_chapter": 156,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "0d99bdb0bba539eea133a87b1b8e5be51866c4e5cd0b9725c1420b4a7439b9c9",
+    "chapter_card_prefix_sha256": "dc390e352c9ef083830c37843b98b4544734db65fe552355e02792859aaf7bd8",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "ece3d0984b36eb9ddaa7e0668df9819bf35d3ce50220555d902bb41be3661d6f"
+  },
+  "cluster_sha256": "090684f8f2e66d2a974732c6d2f852cbe4e7c9882c051a369b8e7c5bc82fee68",
+  "card_sha256": "8567e96616bb68df50f8d0f5b9cb43aa4736594770722d25feb3dc6120012bfd",
+  "chapter_audit": {
+    "han_chars": 1682,
+    "total_chars": 1928,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "录音笔",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "巴里·布鲁姆的自爆言论",
+        "exact": false,
+        "bigram_coverage": 0.444,
+        "matched": false
+      },
+      {
+        "anchor": "法官的判决",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "trust_governance__extension_EC078",
+        "target": "secured",
+        "evidence_terms": [
+          "ART_156_BARRY_CONFESION_TAPE"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "opposition_loss_EC078",
+        "target": "neutralized",
+        "evidence_terms": [
+          "ART_156_BARRY_CONFESION_TAPE"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0228,
+    "scene_evidence": [
+      {
+        "location": "秘密监听室",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_156_BARRY_CONFESION_TAPE",
+        "display_name": "巴里·布鲁姆自爆录音",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.023，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“巴里·布鲁姆的自爆言论”",
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC078→secured",
+      "正文没有通过现场动作兑现状态转移opposition_loss_EC078→neutralized",
+      "正文未落到规划场景“秘密监听室”",
+      "正文没有写出本章正式创建的关键对象“巴里·布鲁姆自爆录音”",
+      "主角麦珂所在动作链被女性代词‘她’承接"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.023，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“巴里·布鲁姆的自爆言论”",
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC078→secured",
+      "正文没有通过现场动作兑现状态转移opposition_loss_EC078→neutralized",
+      "正文未落到规划场景“秘密监听室”",
+      "正文没有写出本章正式创建的关键对象“巴里·布鲁姆自爆录音”",
+      "主角麦珂所在动作链被女性代词‘她’承接"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

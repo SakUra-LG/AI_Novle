@@ -1,0 +1,113 @@
+{
+  "cluster_id": "EC146",
+  "chapter_id": 292,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "43d2f309991dae22ef0794b79a7ccbaad44e487c6d365ed4db299392e25caa4f",
+  "base_prompt_sha256": "43d2f309991dae22ef0794b79a7ccbaad44e487c6d365ed4db299392e25caa4f",
+  "body_generator_contract_version": "v13_compiled_plan_strict_gates_20260822",
+  "raw_response_sha256": "e81c6eca31b8ff5514c7607fa1b092d64bfd99c91b8f18642071a31e1c793179",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.163,
+    "usage": {
+      "prompt_tokens": 6953,
+      "completion_tokens": 1018,
+      "total_tokens": 7971,
+      "prompt_tokens_details": {
+        "cached_tokens": 3481
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 146,
+    "through_chapter": 292,
+    "outline_sha256": "a2e1a6cde3554db62a9f0842db92c9c580a6e553f71f71d883089f965c5f11b5",
+    "event_prefix_sha256": "9034f5a275fcf6cb14a3ead1c03f7ebed1526bb71a75dd778b3ef0cbe80d427f",
+    "chapter_card_prefix_sha256": "8648289130cd82681f6d68e1410f87f9420db82c7cb1ae31ef397828dd10a5ea",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "dd9c2d823757a1b4f3994407ab4f4969cfaf95c78c950fcdf615a9fc1859eba6"
+  },
+  "cluster_sha256": "a1af75b0a8899427a07ff840472f338c00b394e4e58d5238aeb648e0a77707f4",
+  "card_sha256": "659b2196d0a7cde467fc30eed3f865a011f6e09afa7197580576da7b3b999a83",
+  "chapter_audit": {
+    "han_chars": 1502,
+    "total_chars": 1706,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "首轮试听推迟",
+        "exact": false,
+        "bigram_coverage": 0.8,
+        "matched": true
+      },
+      {
+        "anchor": "新专辑获得可追溯的原创核心",
+        "exact": false,
+        "bigram_coverage": 0.833,
+        "matched": true
+      },
+      {
+        "anchor": "制作人委员会",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "progress_ec146",
+        "target": "resolved_380591a3fe",
+        "evidence_terms": [
+          "ART_291_ECEA65E1",
+          "共同创作分轨单",
+          "复核麦珂和昆廷从",
+          "废弃副歌重写新专",
+          "辑开场曲",
+          "并在试听前分清共",
+          "同创作份额",
+          "不得扩大为其他人",
+          "物或资产的结论"
+        ],
+        "hit_terms": [
+          "共同创作分轨单",
+          "同创作份额"
+        ],
+        "matched": true
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 1,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 2,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0452,
+    "scene_evidence": [
+      {
+        "location": "昆廷的模拟录音棚",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "fast_mode_relaxed_chapter_failures": [],
+    "failures": [],
+    "all_validator_failures": []
+  },
+  "failures": [],
+  "accepted": true
+}

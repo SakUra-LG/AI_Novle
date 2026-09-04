@@ -1,0 +1,42 @@
+{
+  "version": "isolated_trial_report_v1",
+  "status": "trial_only_not_accepted",
+  "formal_story_memory_write": false,
+  "neo4j_write": false,
+  "external_semantic_critic": "not_run",
+  "cluster_id": "EC165",
+  "chapters": [
+    {
+      "chapter_id": 329,
+      "event_cluster_id": "EC165",
+      "expected_progress_point": "让关系双方选择是否共同面对公开压力，结果只确认支持方式",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "96e11f80048e455561e4cb47e6ba29620592ad64bbd5a3772b109d81be3eb781"
+    },
+    {
+      "chapter_id": 330,
+      "event_cluster_id": "EC165",
+      "expected_progress_point": "让关系双方选择是否共同面对公开压力，结果只确认支持方式",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "8439620e490a32a5a4443daefda581e5d0e6a165ffb76def04053ca66dfbfb5f"
+    }
+  ],
+  "formal_continuity_anchor": {
+    "chapter_id": 270,
+    "date": "1993-09-17"
+  },
+  "overall": "PASS_WITHOUT_ACCEPTANCE",
+  "issues": []
+}

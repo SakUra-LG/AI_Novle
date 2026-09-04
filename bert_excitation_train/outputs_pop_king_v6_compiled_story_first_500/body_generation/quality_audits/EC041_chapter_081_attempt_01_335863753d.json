@@ -1,0 +1,104 @@
+{
+  "cluster_id": "EC041",
+  "chapter_id": 81,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "335863753d30ed88b8e7703180d454d84259a604175c1daf40b31c04604d55cb",
+  "base_prompt_sha256": "335863753d30ed88b8e7703180d454d84259a604175c1daf40b31c04604d55cb",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "b6539852980e07a9d722e23b204faa060d9f3284903d217e1646c13c31061748",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.653,
+    "usage": {
+      "prompt_tokens": 6902,
+      "completion_tokens": 1220,
+      "total_tokens": 8122,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 41,
+    "through_chapter": 82,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "24df28c4c62c2d83a7e0cec2dcc15e0978148369b61d9898fb80873577f3d022",
+    "chapter_card_prefix_sha256": "926bc9bdfd389ee525260735f7066afba4ef44aad98f89b7a6c1f24171fe8986",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "9411c88254f28dd9336c844abf8956236344d56e7f0fb4a32ac60adcbc0744e8"
+  },
+  "cluster_sha256": "096f7f94c08e2e1e1e296df44538cfae8f87ab18537615d8cea095a9c2cd9230",
+  "card_sha256": "294a2bdaca28d840ef0ec8548257a16067a353b13f33b35edadafe348ba2f801",
+  "chapter_audit": {
+    "han_chars": 1752,
+    "total_chars": 2018,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "北岭理工学院气象数据",
+        "exact": false,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "户外场地排水系统缺陷",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "黛安娜当场驳回换曲",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0534,
+    "scene_evidence": [
+      {
+        "location": "银湾市录音室会议室",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_WEATHER_DATA_001",
+        "display_name": "北岭理工学院1974夏季气象预报摘要",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文未落到规划场景“银湾市录音室会议室”",
+      "正文没有写出本章正式创建的关键对象“北岭理工学院1974夏季气象预报摘要”"
+    ],
+    "all_validator_failures": [
+      "正文未落到规划场景“银湾市录音室会议室”",
+      "正文没有写出本章正式创建的关键对象“北岭理工学院1974夏季气象预报摘要”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

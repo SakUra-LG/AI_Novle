@@ -1,0 +1,465 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC133",
+  "chapter_ids": [
+    265,
+    266
+  ],
+  "accepted": true,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "265": {
+        "han_chars": 1292,
+        "total_chars": 1594,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 0,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "PR-19原简报与三页附件登记",
+            "exact": false,
+            "bigram_coverage": 0.692,
+            "matched": true
+          },
+          {
+            "anchor": "标题尚未付印先暂停",
+            "exact": false,
+            "bigram_coverage": 0.75,
+            "matched": true
+          },
+          {
+            "anchor": "已核待核不可公开三栏",
+            "exact": false,
+            "bigram_coverage": 0.667,
+            "matched": true
+          },
+          {
+            "anchor": "艾琳向双方独立提问",
+            "exact": false,
+            "bigram_coverage": 0.5,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.089,
+        "scene_evidence": [
+          {
+            "location": "《海湾纪事》调查编辑部夜间核源桌",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_265_PR19_EDITORIAL_SOURCE_MATRIX",
+            "display_name": "PR-19三页摘录新闻核源矩阵",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_265_PR19_HEADLINE_HOLD",
+            "display_name": "PR-19未明转款标题付印前暂停单",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      },
+      "266": {
+        "han_chars": 1393,
+        "total_chars": 1652,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "公开安全来源更正包",
+            "exact": false,
+            "bigram_coverage": 0.875,
+            "matched": true
+          },
+          {
+            "anchor": "六个PR-19接收台逐台签收",
+            "exact": false,
+            "bigram_coverage": 0.583,
+            "matched": true
+          },
+          {
+            "anchor": "已发短讯同版位更正",
+            "exact": false,
+            "bigram_coverage": 0.875,
+            "matched": true
+          },
+          {
+            "anchor": "审计进行中与对方回应保留",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "editorial_status",
+            "target": "headline_held_and_source_matrix_completed",
+            "evidence_terms": [
+              "ART_265_PR19_EDITORIAL_SOURCE_MATRIX",
+              "PR-19",
+              "三页摘录新闻核源",
+              "矩阵",
+              "限定更正包只使用",
+              "已核且可公开字段"
+            ],
+            "hit_terms": [
+              "PR-19",
+              "三页摘录新闻核源",
+              "矩阵"
+            ],
+            "matched": true
+          },
+          {
+            "state_key": "public_claim_scope",
+            "target": "source_scoped_correction_with_audit_and_reply_preserved",
+            "evidence_terms": [
+              "ART_266_PR19_DISTRIBUTION_CORRECTION_LOG",
+              "PR-19",
+              "六个接收台送达与",
+              "更正状态日志"
+            ],
+            "hit_terms": [
+              "PR-19",
+              "六个接收台送达与",
+              "更正状态日志"
+            ],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.0801,
+        "scene_evidence": [
+          {
+            "location": "《海湾纪事》更正与分发确认台",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_266_PR19_PUBLIC_SOURCE_PACKET",
+            "display_name": "PR-19公开安全来源与审计范围更正包",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_266_PR19_DISTRIBUTION_CORRECTION_LOG",
+            "display_name": "PR-19六个接收台送达与更正状态日志",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      }
+    },
+    "joint": {
+      "265": {
+        "han_chars": 1292,
+        "total_chars": 1594,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 0,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "266": {
+        "han_chars": 1393,
+        "total_chars": 1652,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.1151,
+      "resolution_signatures": {
+        "first": {
+          "attack": "",
+          "counter": "",
+          "resolver": "",
+          "opponent_result": "",
+          "hero_result": ""
+        },
+        "second": {
+          "attack": "",
+          "counter": "",
+          "resolver": "记者",
+          "opponent_result": "",
+          "hero_result": ""
+        }
+      },
+      "settlement_action_terms": [
+        "失去",
+        "获得",
+        "保留",
+        "公开",
+        "拒绝",
+        "取得"
+      ],
+      "rebirth_information_gap_markers": [
+        "前世"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 245,
+          "semantic_overlap": 0.0503
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 246,
+          "semantic_overlap": 0.0494
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 247,
+          "semantic_overlap": 0.0458
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 248,
+          "semantic_overlap": 0.0481
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 249,
+          "semantic_overlap": 0.0569
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 250,
+          "semantic_overlap": 0.0581
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 251,
+          "semantic_overlap": 0.0557
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 252,
+          "semantic_overlap": 0.0562
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 253,
+          "semantic_overlap": 0.055
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 254,
+          "semantic_overlap": 0.0633
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 255,
+          "semantic_overlap": 0.0584
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 256,
+          "semantic_overlap": 0.0571
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 257,
+          "semantic_overlap": 0.0575
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 258,
+          "semantic_overlap": 0.0491
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 259,
+          "semantic_overlap": 0.0432
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 260,
+          "semantic_overlap": 0.05
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 261,
+          "semantic_overlap": 0.0712
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 262,
+          "semantic_overlap": 0.0749
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 263,
+          "semantic_overlap": 0.0804
+        },
+        {
+          "chapter_id": 265,
+          "prior_chapter_id": 264,
+          "semantic_overlap": 0.1047
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 245,
+          "semantic_overlap": 0.0429
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 246,
+          "semantic_overlap": 0.0466
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 247,
+          "semantic_overlap": 0.0369
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 248,
+          "semantic_overlap": 0.0514
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 249,
+          "semantic_overlap": 0.0507
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 250,
+          "semantic_overlap": 0.0526
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 251,
+          "semantic_overlap": 0.0493
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 252,
+          "semantic_overlap": 0.0536
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 253,
+          "semantic_overlap": 0.0514
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 254,
+          "semantic_overlap": 0.0543
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 255,
+          "semantic_overlap": 0.0513
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 256,
+          "semantic_overlap": 0.0474
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 257,
+          "semantic_overlap": 0.046
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 258,
+          "semantic_overlap": 0.0566
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 259,
+          "semantic_overlap": 0.0471
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 260,
+          "semantic_overlap": 0.0491
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 261,
+          "semantic_overlap": 0.0641
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 262,
+          "semantic_overlap": 0.0645
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 263,
+          "semantic_overlap": 0.0692
+        },
+        {
+          "chapter_id": 266,
+          "prior_chapter_id": 264,
+          "semantic_overlap": 0.0759
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "265": "93c9311dbcfa713d5cddb5efe0a12d578953badfeeb97bef4f89dc381e9986df",
+    "266": "201f8677bb7e98062863740d6252c0c31d373eb46e93006ce06bd09475943f10"
+  },
+  "accepted_at": "2026-08-26T01:47:08.358139+00:00"
+}

@@ -1,0 +1,42 @@
+{
+  "cluster_id": "EC137",
+  "chapter_id": 273,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "6f8816d4edbbae078b6259d7d151a6269a7b300612ea78534136d61b478d426c",
+  "base_prompt_sha256": "a9b1dd21e20ce84c0a6a5d5d693ea5b6fb559de07ccb9beaa4343dec2209ccf2",
+  "body_generator_contract_version": "v13_compiled_plan_strict_gates_20260822",
+  "raw_response_sha256": "d0dc5e2a631483f7140f58efbe5296e4ae5b4a6cf3cd5b5d23743406699e2093",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 10.83,
+    "usage": {
+      "prompt_tokens": 6742,
+      "completion_tokens": 703,
+      "total_tokens": 7445,
+      "prompt_tokens_details": {
+        "cached_tokens": 3223
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 137,
+    "through_chapter": 274,
+    "outline_sha256": "a2e1a6cde3554db62a9f0842db92c9c580a6e553f71f71d883089f965c5f11b5",
+    "event_prefix_sha256": "3bbd8a80435327209635c9f329fc8482b9b8d4b69caca54ce8a40191fd983293",
+    "chapter_card_prefix_sha256": "39429393ef40422082148aacdaf84e32ecfda130c8701be1d0296483e2681148",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "a76ed2fbe70fc80e1900d04cd78aecc436e09b8066982b8bc539accfd2f560d2"
+  },
+  "cluster_sha256": "22f92a79e1b24deb7487fd1755b276e286ae3b1e1427213de624fd6d4ad74ce4",
+  "card_sha256": "b2a403d6c0104d2b01327e417257934aba12d68de95cb9e7b41ea05bb9067aec",
+  "chapter_audit": {},
+  "failures": [
+    "JSON解析失败：cannot access local variable 'normalized_scene_body' where it is not associated with a value"
+  ],
+  "accepted": false
+}

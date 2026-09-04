@@ -1,0 +1,106 @@
+{
+  "cluster_id": "EC033",
+  "chapter_id": 65,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "271396a32ca270e258076dd66fdd6f3471efd8319bcc17a0688fa18f85c10e79",
+  "base_prompt_sha256": "271396a32ca270e258076dd66fdd6f3471efd8319bcc17a0688fa18f85c10e79",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "b8d9d8e71155a0b5f4b9da7485bc345156fc5670f2028320980a781675b675ec",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 11.928,
+    "usage": {
+      "prompt_tokens": 6314,
+      "completion_tokens": 861,
+      "total_tokens": 7175,
+      "prompt_tokens_details": {
+        "cached_tokens": 3521
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 33,
+    "through_chapter": 66,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "a86313fa727ef4a8eab15363795aa94fc43348fbca3dda4f8692a5701ddb78f5",
+    "chapter_card_prefix_sha256": "5d0891ce48035ae2533470591879b01689366b859180568fea7eff48fd252503",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "944d7afa1b450ceac56644f850ff2e93f0f7bb89413feeea559e63be82263ad3"
+  },
+  "cluster_sha256": "e699b0be263f2107179ae70388f2c90baf7d6909537adc5e51bdd7d4764795e1",
+  "card_sha256": "227579d294b267b478e18b7f60115fc904eb491baab18ba70cc7320993ad1e8b",
+  "chapter_audit": {
+    "han_chars": 1184,
+    "total_chars": 1347,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "乔纳签署协议的动作",
+        "exact": false,
+        "bigram_coverage": 0.625,
+        "matched": true
+      },
+      {
+        "anchor": "麦珂展示预测表的细节",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      },
+      {
+        "anchor": "黛安娜的记录行为",
+        "exact": false,
+        "bigram_coverage": 0.429,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 1,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0443,
+    "scene_evidence": [
+      {
+        "location": "家庭会议室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_FICTIONAL_BET_AGREEMENT",
+        "display_name": "1971.08.12 票房对赌协议草案",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有兑现章卡关键事实“麦珂展示预测表的细节”",
+      "正文没有兑现章卡关键事实“黛安娜的记录行为”",
+      "正文没有写出本章正式创建的关键对象“1971.08.12 票房对赌协议草案”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“麦珂展示预测表的细节”",
+      "正文没有兑现章卡关键事实“黛安娜的记录行为”",
+      "正文没有写出本章正式创建的关键对象“1971.08.12 票房对赌协议草案”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

@@ -1,0 +1,136 @@
+{
+  "cluster_id": "EC138",
+  "chapter_id": 276,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "a34dc4c778335a7d0e11a7715f2f6906e39ad0e4adeb7bee72107c32f0023957",
+  "base_prompt_sha256": "a34dc4c778335a7d0e11a7715f2f6906e39ad0e4adeb7bee72107c32f0023957",
+  "body_generator_contract_version": "v13_compiled_plan_strict_gates_20260822",
+  "raw_response_sha256": "57edbfa2fd90dc243b8b6a1e18dad71f20586ca8898026fe58e4445d10240631",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 31.162,
+    "usage": {
+      "prompt_tokens": 7197,
+      "completion_tokens": 817,
+      "total_tokens": 8014,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 138,
+    "through_chapter": 276,
+    "outline_sha256": "a2e1a6cde3554db62a9f0842db92c9c580a6e553f71f71d883089f965c5f11b5",
+    "event_prefix_sha256": "9d23856d21fc1ab3f43386a5f3c6fe96587c830c217b12a4c8bc8079b433e049",
+    "chapter_card_prefix_sha256": "7efe33a0f2e3cb96f6a072085bf2d7f55bc87fb285817d6fb6d4997ff18ef457",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "766f801e477b1acaf5441b2804c1708080d8f27852ff007d2ae33ccd8f5e800e"
+  },
+  "cluster_sha256": "033486c6004e8bd452741e8e187ca4a4832b26d78cca91a60fa0f42948e30dcc",
+  "card_sha256": "d1cd47e6cfdd3cc9e8efa636c1506b90609481f09017ed37e2cf3b7a54893129",
+  "chapter_audit": {
+    "han_chars": 1183,
+    "total_chars": 1345,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "宣传预热延后十日",
+        "exact": false,
+        "bigram_coverage": 0.571,
+        "matched": true
+      },
+      {
+        "anchor": "保住内部核对并留下公开用途重提入口",
+        "exact": false,
+        "bigram_coverage": 0.562,
+        "matched": true
+      },
+      {
+        "anchor": "合同管理员",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "progress_ec138",
+        "target": "resolved_3331afd851",
+        "evidence_terms": [
+          "ART_275_CF9ADC85",
+          "十日内部核对附录",
+          "复核把内部财务核",
+          "对与公开宣传拆成",
+          "两种用途",
+          "拒绝一次复核自动",
+          "扩权",
+          "不得扩大为其他人",
+          "物或资产的结论"
+        ],
+        "hit_terms": [
+          "十日内部核对附录"
+        ],
+        "matched": true
+      },
+      {
+        "state_key": "failed_move_ec138",
+        "target": "documented_and_limited",
+        "evidence_terms": [
+          "ART_275_CF9ADC85",
+          "十日内部核对附录",
+          "复核把内部财务核",
+          "对与公开宣传拆成",
+          "两种用途",
+          "拒绝一次复核自动",
+          "扩权",
+          "不得扩大为其他人",
+          "物或资产的结论"
+        ],
+        "hit_terms": [
+          "十日内部核对附录"
+        ],
+        "matched": true
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0461,
+    "scene_evidence": [
+      {
+        "location": "维斯特媒介合同室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "重生知识边界违规：非麦珂主语触发记忆"
+    ],
+    "all_validator_failures": [
+      "重生知识边界违规：非麦珂主语触发记忆"
+    ]
+  },
+  "failures": [
+    "重生知识边界违规：非麦珂主语触发记忆"
+  ],
+  "accepted": false
+}

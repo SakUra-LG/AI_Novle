@@ -1,0 +1,28 @@
+{
+  "version": "v13_body_repairs_20260822",
+  "verified_repair_chapters": [
+    30,
+    35,
+    37,
+    47,
+    48,
+    51,
+    52,
+    65,
+    71,
+    87,
+    88,
+    149,
+    151,
+    178,
+    181,
+    182,
+    201,
+    203,
+    204,
+    207
+  ],
+  "changed_this_run": [],
+  "unresolved_replacements": [],
+  "passed": true
+}

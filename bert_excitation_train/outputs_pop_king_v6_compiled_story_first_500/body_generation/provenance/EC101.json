@@ -1,0 +1,277 @@
+{
+  "cluster_id": "EC101",
+  "chapter_span": [
+    201,
+    202
+  ],
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "body_edit_policy": "failed_body_is_regenerated_by_qwen_never_manually_patched",
+  "body_generator_contract_version": "v11_dynamic_identity_history_retry_20260822",
+  "prior_body_chain_sha256": "f7a99e0a0effe1f5dab6a593215c818219d27dc183a69490bda1853c3b4e6ab0",
+  "accepted_at": "2026-08-22T07:18:24.827019+00:00",
+  "model": "qwen-plus",
+  "temperature": 0.9,
+  "calls_by_chapter": {
+    "201": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 12.679,
+      "usage": {
+        "prompt_tokens": 10040,
+        "completion_tokens": 989,
+        "total_tokens": 11029,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    },
+    "202": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 20.035,
+      "usage": {
+        "prompt_tokens": 13571,
+        "completion_tokens": 1022,
+        "total_tokens": 14593,
+        "prompt_tokens_details": {
+          "cached_tokens": 7023
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  "prompt_sha256_by_chapter": {
+    "201": "6da91354e8a851a5fb4e5705480b3c90a47491ebdfd6fc1f8624224d1bd45da6",
+    "202": "fb8260e38a22002a6cf570e961017e755b1447ff8a242854e9113455eafe27b0"
+  },
+  "base_prompt_sha256_by_chapter": {
+    "201": "3e396d45795a35940a04cd2d6c5be6ce0e2487930583d913755bb74a605c95bb",
+    "202": "78eedf83870e9adfb574583a69385347313b9c6eba10dd265e432185b18f360f"
+  },
+  "raw_response_sha256_by_chapter": {
+    "201": "a0d6b479c86f4e8209a0ea6c9da41cde8fe6235d9ac296530f71a2965ad7fe99",
+    "202": "1dc9cddd102bbe9d0948e8f2a2fb2f338ffb91a08d03ce00fe0c9a1d8bf9cdaf"
+  },
+  "accepted_raw_response_paths_by_chapter": {
+    "201": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC101_chapter_201_attempt_02_6da91354e8_raw.txt",
+    "202": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC101_chapter_202_attempt_06_fb8260e38a_raw.txt"
+  },
+  "chapter_sha256": {
+    "201": "a0d6b479c86f4e8209a0ea6c9da41cde8fe6235d9ac296530f71a2965ad7fe99",
+    "202": "1dc9cddd102bbe9d0948e8f2a2fb2f338ffb91a08d03ce00fe0c9a1d8bf9cdaf"
+  },
+  "chapter_han_chars": {
+    "201": 1352,
+    "202": 1484
+  },
+  "planning_story_id": "planning-be26ba6bb2c83203",
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 101,
+    "through_chapter": 202,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "26a9f421a84d68a056012f3fcaab2ad9ab31de8c5b6a761c0b4306f2bd833b9a",
+    "chapter_card_prefix_sha256": "aadd09e414f26077de38376deb506a07acd7ca2a6794f43d6cff7b95b9c4f6dc",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "a105a23bb12cb1fe9ca4685318db9efadcc322dd7c72e13ce060d771f10895da"
+  },
+  "cluster_sha256": "98e2a4cca2fa4a7b64ece2bf62747259168acdf18e27b8990c774b0ad406bbdd",
+  "card_sha256_by_chapter": {
+    "201": "3bd5018277aea0ca602d5b15e969b43fa433c2a09ce77af717a4270ff661dc02",
+    "202": "56e408750571fa8a99553b548d50d0a19c0ddec9cebb753c8e5ebe6625b0111b"
+  },
+  "planning_inputs": {
+    "event_clusters": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\event_clusters_v2.json",
+    "chapter_cards": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\master_ctx_cards_v2.json"
+  },
+  "semantic_critic": {
+    "201": {
+      "han_chars": 1352,
+      "total_chars": 1540,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 0,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "202": {
+      "han_chars": 1484,
+      "total_chars": 1685,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 0,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "joint_semantic_overlap": 0.1025,
+    "resolution_signatures": {
+      "first": {
+        "attack": "",
+        "counter": "签字",
+        "resolver": "",
+        "opponent_result": "失去",
+        "hero_result": ""
+      },
+      "second": {
+        "attack": "暴雨",
+        "counter": "签字",
+        "resolver": "记者",
+        "opponent_result": "狼狈",
+        "hero_result": "获得"
+      }
+    },
+    "settlement_action_terms": [
+      "失去",
+      "获得"
+    ],
+    "rebirth_information_gap_markers": [
+      "前世"
+    ],
+    "recent_five_chapter_semantic_comparison": [
+      {
+        "chapter_id": 201,
+        "prior_chapter_id": 196,
+        "semantic_overlap": 0.0996
+      },
+      {
+        "chapter_id": 201,
+        "prior_chapter_id": 197,
+        "semantic_overlap": 0.0776
+      },
+      {
+        "chapter_id": 201,
+        "prior_chapter_id": 198,
+        "semantic_overlap": 0.0975
+      },
+      {
+        "chapter_id": 201,
+        "prior_chapter_id": 199,
+        "semantic_overlap": 0.0914
+      },
+      {
+        "chapter_id": 201,
+        "prior_chapter_id": 200,
+        "semantic_overlap": 0.0837
+      },
+      {
+        "chapter_id": 202,
+        "prior_chapter_id": 196,
+        "semantic_overlap": 0.1065
+      },
+      {
+        "chapter_id": 202,
+        "prior_chapter_id": 197,
+        "semantic_overlap": 0.0721
+      },
+      {
+        "chapter_id": 202,
+        "prior_chapter_id": 198,
+        "semantic_overlap": 0.0802
+      },
+      {
+        "chapter_id": 202,
+        "prior_chapter_id": 199,
+        "semantic_overlap": 0.0916
+      },
+      {
+        "chapter_id": 202,
+        "prior_chapter_id": 200,
+        "semantic_overlap": 0.0866
+      }
+    ],
+    "all_joint_failures": [],
+    "semantic_critic": {
+      "knowledge_boundary": {
+        "ok": true,
+        "evidence": [
+          "麦珂作为唯一重生者，利用前世记忆锁定3:14时间节点并提前布局，未向他人透露重生事实。",
+          "其他角色（莉薇娅、玛莎等）仅基于当前危机和麦珂的指令行动，未表现出对前世细节的认知。"
+        ]
+      },
+      "character_state": {
+        "ok": true,
+        "evidence": [
+          "麦珂在201章中展现出的冷静与决绝符合其'对失控高度敏感'及'保护欲转化为控制'的性格特征。",
+          "莉薇娅从犹豫到果断签字的转变符合其'渴望摆脱家族安排'且'敢公开站队'的特质。",
+          "玛莎和瑟琳娜的行动逻辑符合各自的角色设定，无性格崩坏或强行洗白。"
+        ]
+      },
+      "timeline_causality": {
+        "ok": true,
+        "evidence": [
+          "201章发生在1987-03-14凌晨，202章为次日彩排，时间线连贯。",
+          "因果链条清晰：前世悲剧记忆 -> 今生提前签署三方令 -> 测试引发质疑 -> 当众揭穿谎言。",
+          "奥瑞恩代表因昨晚暴雨而鞋上有泥的逻辑合理，与其声称'亲临现场'形成矛盾。"
+        ]
+      },
+      "pov_consistency": {
+        "ok": true,
+        "evidence": [
+          "叙事严格限制在麦珂视角及客观描述范围内，未泄露任何角色的私密心理活动（如奥瑞恩代表的内心想法）。",
+          "麦珂的内心独白仅限于对局势的判断和对过去的回忆，未越界揭示他人动机。"
+        ]
+      },
+      "role_identity": {
+        "ok": true,
+        "evidence": [
+          "麦珂、莉薇娅、玛莎、瑟琳娜的身份（歌手、经纪人、医生/母亲、技术总监）在文中保持一致。",
+          "奥瑞恩代表作为医疗合规部人员，其行为（引用过时手册、要求传真）符合其反派身份设定。",
+          "无角色跨职掌权或身份混淆现象。"
+        ]
+      },
+      "authority_scope": {
+        "ok": true,
+        "evidence": [
+          "奥瑞恩代表试图以'等待总部传真'为由叫停演出，被证明是其无权单方面行使的权力。",
+          "三方签字令确立了团队内部的独立决策权，而非由律师或外部机构直接裁决，符合规则。",
+          "结局是流程合法性的确认，未出现法律程序被主角个人意志强行跳过或替代的情况。"
+        ]
+      },
+      "evidence_supports_conclusion": {
+        "ok": true,
+        "evidence": [
+          "防水牛皮纸袋上的时间戳（1987-03-14 03:14）和手印直接证明了急救流程的合法性。",
+          "见证人名单（卫生局官员、媒体）佐证了文件的公开性和第三方监督。",
+          "鞋上泥水作为物理证据，有力驳斥了对方'亲临现场'的指控。"
+        ]
+      },
+      "outcome_overreach": {
+        "ok": true,
+        "evidence": [
+          "结局明确为'奥瑞恩失去单方面解释权'和'确立铁律'，并未直接导致集团破产或永久封杀。",
+          "莉薇娅获得的是'临床决策法理背书'，符合事件簇设定的收益范围。",
+          "未将临时性流程胜利扩大为不可逆的永久性职业毁灭。"
+        ]
+      },
+      "repeated_resolution_pattern": {
+        "ok": true,
+        "evidence": [
+          "本事件核心冲突为'医疗流程控制权'，解决方式为'建立三方签字机制'。",
+          "与前几章（196-200章）解决的'数据造假'、'财务托管'、'虚假满座'等冲突类型不同。",
+          "反派的失败模式从'被揭露伪造文件'转变为'被物理证据（泥水）和制度漏洞击溃'，非简单重复。"
+        ]
+      }
+    },
+    "semantic_critic_call": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 19.054,
+      "usage": {
+        "prompt_tokens": 21591,
+        "completion_tokens": 973,
+        "total_tokens": 22564,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  "quality_review_status": "awaiting_manual_read"
+}

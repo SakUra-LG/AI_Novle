@@ -1,0 +1,457 @@
+[
+  {
+    "cluster_id": "EC101",
+    "chapter_span": [
+      201,
+      202
+    ],
+    "critic": {
+      "knowledge_boundary": {
+        "ok": true,
+        "evidence": [
+          "麦珂在201章利用重生记忆锁定3点14分节点并强制行动，未向他人透露前世细节。",
+          "202章中麦珂仅展示文件证据和逻辑推演（泥水、见证人），未直接复述前世具体死亡过程，符合'只有麦珂知道前世事实'的约束。"
+        ]
+      },
+      "character_state": {
+        "ok": false,
+        "evidence": [
+          "201章设定麦珂为'十一岁少年'（'仿佛这个十一岁的少年已经预演过无数次死亡'），但上下文及角色圣经明确其为'重生歌手'且处于1987年巡演筹备期，年龄与职业身份严重不符（通常巡演主唱非儿童）。",
+          "玛莎在201章被描述为签署'监护人／家属见证'栏，但在角色约束中她应作为'早期权利保护者'而非简单的监护陪同，且章卡要求她是'经纪人'或'技术总监'之一（根据三方签字定义：医生、经纪人、技术总监），文中将其角色定位模糊化，弱化了其作为'经纪人'（若莉薇娅是经纪人则冲突）或独立决策者的法理地位。",
+          "瑟琳娜在201章被赋予'技术总监'职责，但其角色圣经设定为'演员/秘密恋人'，缺乏专业医疗或技术背景支撑，强行让其担任急救流程中的法定'技术负责人'缺乏合理性铺垫。"
+        ]
+      },
+      "timeline_causality": {
+        "ok": false,
+        "evidence": [
+          "201章结尾时间戳显示'1987年3月14日 03:00'，而剧情描述发生在'凌晨三点十四分'（3:14），麦珂在痉挛发作时（3:14）完成签署并贴封条，但封条上写的是03:00，存在时间逻辑矛盾（为何在3:14发生危机时签署的文件时间戳却是3:00？）。",
+          "202章中奥瑞恩代表指责麦珂'刚才的痉挛'，暗示事件发生在彩排期间（白天或傍晚），但201章描述的痉挛是'凌晨3点14分'的真实突发状况，202章却将同一症状描述为'模拟'或'再次发生'，导致'真实急救'与'测试彩排'的时间线混淆，因果链条断裂。"
+        ]
+      },
+      "pov_consistency": {
+        "ok": true,
+        "evidence": [
+          "叙述始终聚焦于麦珂的主观视角，未泄露其他角色的私密心理活动（如奥瑞恩代表的内心恐惧仅通过外部行为描写）。"
+        ]
+      },
+      "role_identity": {
+        "ok": false,
+        "evidence": [
+          "201章中莉薇娅签署'经纪人'栏，玛莎签署'监护人'栏，瑟琳娜签署'技术总监'栏，但这与章卡要求的'医生、经纪人、技术总监'三方配置不完全一致（缺少医生角色，且玛莎作为母亲签署'监护人'而非'医生'，导致急救启动令的法律效力缺失关键一环）。",
+          "瑟琳娜作为'演员'被强行赋予'技术总监'职权，违背了角色能力边界和专业分工常识。"
+        ]
+      },
+      "authority_scope": {
+        "ok": false,
+        "evidence": [
+          "麦珂作为歌手，无权单方面确立具有法律效力的'三方签字急救启动令'并以此对抗集团法务，除非有明确的授权书或法律框架支持，文中未提及此前提。",
+          "莉薇娅作为家族继承人，在202章擅自将《1985年手册》扔进垃圾桶并宣称'不再需要等待家族指令'，这属于过度行使权力，且未体现家族内部博弈的复杂性，简化了权力结构。"
+        ]
+      },
+      "evidence_supports_conclusion": {
+        "ok": false,
+        "evidence": [
+          "奥瑞恩代表皮鞋上的泥水只能证明他昨晚可能去过现场，但不能直接证明他'未亲临现场'或'伪造证据'，逻辑推导跳跃。",
+          "第三方见证人名单的存在不能自动抵消集团法务部的否决权，除非该名单具有法定公证效力，文中未说明这些官员和记者的签字具备何种法律强制力。"
+        ]
+      },
+      "outcome_overreach": {
+        "ok": false,
+        "evidence": [
+          "结局描述奥瑞恩代表'灰溜溜退场'并'失去以医疗疏忽为由暂停演出的权利'，过于绝对化。现实中企业法务部门不会因一次现场对峙就永久放弃解释权，这种'彻底粉碎'属于结果越界，缺乏现实逻辑支撑。",
+          "麦珂团队赢得'全场掌声'并确立'新时代'，忽略了后续可能的法律诉讼或舆论反转风险，将复杂商业斗争简化为单回合胜利。"
+        ]
+      },
+      "repeated_resolution_pattern": {
+        "ok": false,
+        "evidence": [
+          "201-202章的解决模式完全重复了'主角发现漏洞 -> 制造假象测试 -> 拿出证据打脸 -> 反派崩溃'的模板，与之前EC097等事件的解决路径高度雷同，缺乏新的叙事张力或机制创新。",
+          "核心冲突依然依赖'展示文件'这一单一手段，未引入新的变量（如财务做空、舆论战等预告的下一轮风暴），显得套路化。"
+        ]
+      }
+    },
+    "failures": [
+      "semantic critic character_state: 201章设定麦珂为'十一岁少年'（'仿佛这个十一岁的少年已经预演过无数次死亡'），但上下文及角色圣经明确其为'重生歌手'且处于1987年巡演筹备期，年龄与职业身份严重不符（通常巡演主唱非儿童）。; 玛莎在201章被描述为签署'监护人／家属见证'栏，但在角色约束中她应作为'早期权利保护者'而非简单的监护陪同，且章卡要求她是'经纪人'或'技术总监'之一（根据三方签字定义：医生、经纪人、技术总监），文中将其角色定位模糊化，弱化了其作为'经纪人'（若莉薇娅是经纪人则冲突）或独立决策者的法理地位。; 瑟琳娜在201章被赋予'技术总监'职责，但其角色圣经设定为'演员/秘密恋人'，缺乏专业医疗或技术背景支撑，强行让其担任急救流程中的法定'技术负责人'缺乏合理性铺垫。",
+      "semantic critic timeline_causality: 201章结尾时间戳显示'1987年3月14日 03:00'，而剧情描述发生在'凌晨三点十四分'（3:14），麦珂在痉挛发作时（3:14）完成签署并贴封条，但封条上写的是03:00，存在时间逻辑矛盾（为何在3:14发生危机时签署的文件时间戳却是3:00？）。; 202章中奥瑞恩代表指责麦珂'刚才的痉挛'，暗示事件发生在彩排期间（白天或傍晚），但201章描述的痉挛是'凌晨3点14分'的真实突发状况，202章却将同一症状描述为'模拟'或'再次发生'，导致'真实急救'与'测试彩排'的时间线混淆，因果链条断裂。",
+      "semantic critic role_identity: 201章中莉薇娅签署'经纪人'栏，玛莎签署'监护人'栏，瑟琳娜签署'技术总监'栏，但这与章卡要求的'医生、经纪人、技术总监'三方配置不完全一致（缺少医生角色，且玛莎作为母亲签署'监护人'而非'医生'，导致急救启动令的法律效力缺失关键一环）。; 瑟琳娜作为'演员'被强行赋予'技术总监'职权，违背了角色能力边界和专业分工常识。",
+      "semantic critic authority_scope: 麦珂作为歌手，无权单方面确立具有法律效力的'三方签字急救启动令'并以此对抗集团法务，除非有明确的授权书或法律框架支持，文中未提及此前提。; 莉薇娅作为家族继承人，在202章擅自将《1985年手册》扔进垃圾桶并宣称'不再需要等待家族指令'，这属于过度行使权力，且未体现家族内部博弈的复杂性，简化了权力结构。",
+      "semantic critic evidence_supports_conclusion: 奥瑞恩代表皮鞋上的泥水只能证明他昨晚可能去过现场，但不能直接证明他'未亲临现场'或'伪造证据'，逻辑推导跳跃。; 第三方见证人名单的存在不能自动抵消集团法务部的否决权，除非该名单具有法定公证效力，文中未说明这些官员和记者的签字具备何种法律强制力。",
+      "semantic critic outcome_overreach: 结局描述奥瑞恩代表'灰溜溜退场'并'失去以医疗疏忽为由暂停演出的权利'，过于绝对化。现实中企业法务部门不会因一次现场对峙就永久放弃解释权，这种'彻底粉碎'属于结果越界，缺乏现实逻辑支撑。; 麦珂团队赢得'全场掌声'并确立'新时代'，忽略了后续可能的法律诉讼或舆论反转风险，将复杂商业斗争简化为单回合胜利。",
+      "semantic critic repeated_resolution_pattern: 201-202章的解决模式完全重复了'主角发现漏洞 -> 制造假象测试 -> 拿出证据打脸 -> 反派崩溃'的模板，与之前EC097等事件的解决路径高度雷同，缺乏新的叙事张力或机制创新。; 核心冲突依然依赖'展示文件'这一单一手段，未引入新的变量（如财务做空、舆论战等预告的下一轮风暴），显得套路化。"
+    ],
+    "call": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 18.382,
+      "usage": {
+        "prompt_tokens": 6920,
+        "completion_tokens": 1277,
+        "total_tokens": 8197,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  {
+    "cluster_id": "EC102",
+    "chapter_span": [
+      203,
+      204
+    ],
+    "critic": {
+      "knowledge_boundary": {
+        "ok": true,
+        "evidence": [
+          "麦珂是唯一知晓前世踩踏事故细节和索恩“安全熔断”计划的人，候选章节中所有针对这些信息的应对均源于她的记忆（如直接废除VIP、准备数据流），未出现其他角色提前知晓或麦珂泄露给无关者的情况。"
+        ]
+      },
+      "character_state": {
+        "ok": true,
+        "evidence": [
+          "玛莎在204章中从“温吞”转为强硬挡开索恩并展示文件，符合其“忍耐过久会纵容控制者”的阴影面及“关键动作朴素但改变权利”的行动签名。",
+          "苏菲亚在203章记录拼写错误、204章宣读数据流，完全符合其“核对数字与承诺”的角色设定。",
+          "莉薇娅切断索恩权限的动作符合其“敢公开站队”且“撕掉家族声明”的激进风格，而非单纯的暴力冲突。"
+        ]
+      },
+      "timeline_causality": {
+        "ok": true,
+        "evidence": [
+          "时间线严格遵循1987年5月12日（首演）至5月13日（次日对峙）的顺序，无逻辑跳跃。",
+          "203章建立的“随机座次”和“编号卡承诺”直接作为204章观众形成人墙和索恩被图纸打脸的证据基础，因果链条紧密。"
+        ]
+      },
+      "pov_consistency": {
+        "ok": true,
+        "evidence": [
+          "叙述视角始终聚焦于麦珂及其团队的外部行动和感知，未直接描写索恩监控室内的具体心理活动（仅通过外部观察推断其愤怒），避免了全知视角越界。"
+        ]
+      },
+      "role_identity": {
+        "ok": true,
+        "evidence": [
+          "索恩身份为奥瑞恩西区执行总监，其试图利用“安全规范”和旧版图纸施压的行为符合其反派职能，未赋予其警察或法官的执法权。",
+          "拄拐老人作为普通观众触发核查机制，未扮演律师或专家角色，符合其“底层观众”的身份设定。"
+        ]
+      },
+      "authority_scope": {
+        "ok": true,
+        "evidence": [
+          "麦珂无权直接命令警方，204章中是索恩试图叫停演出并请求警方介入，而麦珂是通过展示数据和舆论压力迫使索恩退缩，警方保持犹豫状态，未越权执法。",
+          "莉薇娅依据“三方签字急救启动令”切断远程电力指令，属于合同范围内的技术权限，未超出其职权范围。"
+        ]
+      },
+      "evidence_supports_conclusion": {
+        "ok": true,
+        "evidence": [
+          "索恩被揭露的依据是其手持的“旧版图纸”与实际建筑（紧急出口位置）不符，以及苏菲亚打印的“实时疏散数据流”，证据与结论（索恩无能/阴谋论）直接对应。",
+          "观众凝聚力提升的证据是现场举起的编号卡和手写签名，而非旁白强行定义。"
+        ]
+      },
+      "outcome_overreach": {
+        "ok": true,
+        "evidence": [
+          "结局描述为索恩被迫承认“尊重选择”并离开，奥瑞恩发布尴尬声明，并未直接导致集团破产或永久封杀，符合“暂时失效”和“失去控制权”的设定，未过度延伸为永久性毁灭。"
+        ]
+      },
+      "repeated_resolution_pattern": {
+        "ok": true,
+        "evidence": [
+          "本章解决方案核心在于“物理空间重构（随机座次）”与“证据可视化（数据流/图纸对比）”，与之前EC101的“医疗自主权三方签字”在形式上不同，未重复使用同一套“合同文档权威”模板，而是转向了公众见证和现场实证。"
+        ]
+      }
+    },
+    "failures": [],
+    "call": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 12.61,
+      "usage": {
+        "prompt_tokens": 7384,
+        "completion_tokens": 926,
+        "total_tokens": 8310,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  {
+    "cluster_id": "EC103",
+    "chapter_span": [
+      205,
+      206
+    ],
+    "critic": {
+      "knowledge_boundary": {
+        "ok": false,
+        "evidence": [
+          "Candidate chapters repeatedly refer to the protagonist as 'eleven-year-old' (十一岁) in 1989. The story plan establishes the timeline as 1987-1989 with a goal of establishing industry standards and handling complex legal/technical disputes, which is inconsistent with an 11-year-old child having the authority to sign contracts, command technical teams, or be a 'reborn singer' capable of such high-level strategic planning.",
+          "The candidate text states 'He' (他) refers to Mai Ke, but the character bible defines Mai Ke as a female 'singer/creator' (歌手、创作者). While pronouns can vary, the consistent use of male pronouns ('he') combined with the age error suggests a fundamental identity drift from the source material."
+        ]
+      },
+      "character_state": {
+        "ok": false,
+        "evidence": [
+          "The candidate text describes Mai Ke as an 'eleven-year-old' (十一岁) boy ('少年'/'他'), contradicting the 'Reborn Singer' persona who should be an adult capable of managing complex rights and legal battles in 1989.",
+          "The character bible explicitly lists 'Livia' as a partner and 'Selina' as a secret lover/partner; the candidate text mentions Livia's past humiliation only as a reason for Selina's caution, but fails to show Livia's presence or agency in the scene where she is listed as a participant in the chapter cards.",
+          "Victor/Victor Kraus: The character bible defines the main villain as 'Victor Lance' (维克多·兰斯), while the event cluster and candidate text use 'Victor Kraus' (维克多·克劳斯). This is a name inconsistency that violates the 'names do not cross' rule."
+        ]
+      },
+      "timeline_causality": {
+        "ok": true,
+        "evidence": [
+          "The dates (July 15, 1989) are consistent across the plan and candidate chapters.",
+          "The causal chain (Test -> Real Rain -> Switch -> Victory) follows the planned spine."
+        ]
+      },
+      "pov_consistency": {
+        "ok": true,
+        "evidence": [
+          "The narrative stays within the perspective of the events described without revealing private thoughts of characters like Victor or Selina that the protagonist shouldn't know, except for the narrator's omniscient description of the protagonist's internal state which is standard."
+        ]
+      },
+      "role_identity": {
+        "ok": false,
+        "evidence": [
+          "The candidate text consistently uses male pronouns ('he', 'boy') for Mai Ke, whereas the character bible defines her as a female singer/creator ('麦珂·杰森', '重生歌手').",
+          "The candidate text identifies the antagonist as 'Victor Kraus', conflicting with the 'authoritative_character_constraints' which lists the main villain as 'Victor Lance'.",
+          "The protagonist is depicted as an 11-year-old child, which contradicts the role of a 'Reborn Singer' capable of executing complex legal and technical strategies involving third-party witnesses and official protocols."
+        ]
+      },
+      "authority_scope": {
+        "ok": false,
+        "evidence": [
+          "An 11-year-old child cannot legally hold 'final veto power' or sign 'Official Safety Protocols' as a 'Chief Technical Partner' in a professional setting in 1989 without explicit guardian intervention, which is not shown. The text implies the child acts alone with full legal authority.",
+          "Selina is described as having 'mechanical locks' that prevent others from touching equipment, but the text does not establish her legal authority to enforce this over the venue or the production company's technical director, making her action an overreach of scope unless backed by the contract mentioned later."
+        ]
+      },
+      "evidence_supports_conclusion": {
+        "ok": false,
+        "evidence": [
+          "The candidate claims the 'Official Safety Protocol' is signed and presented immediately after the test, but the text shows it being 'just printed' and then signed by Mai Ke (an 11-year-old) and Selina. There is no evidence in the text of the document being validated by a third party (like the mother Martha acting as a guardian or a legal body) to make it an 'official' document instantly.",
+          "The claim that the 'monitoring video' was played in real-time relies on 'Martha's pre-deployment' which is not explained as technically feasible or authorized in the scene context."
+        ]
+      },
+      "outcome_overreach": {
+        "ok": false,
+        "evidence": [
+          "The outcome states that Selina becomes an 'Official Safety Signatory' and 'Chief Technical Partner' with 'Final Veto Power' solely based on one successful test run. This skips necessary bureaucratic steps (legal review, board approval, union certification) expected in a realistic 1980s corporate setting, turning a technical victory into an immediate administrative revolution without process.",
+          "The text implies the entire 'Orian' team's reputation is destroyed instantly by one test, whereas the plan suggests a more gradual erosion of credibility leading to financial short-selling later."
+        ]
+      },
+      "repeated_resolution_pattern": {
+        "ok": true,
+        "evidence": [
+          "The resolution pattern (Technical proof -> Public exposure -> Villain defeat) matches the previous event clusters and does not simply replay the same contract-document template without variation; it introduces the specific technical element of the light path switch."
+        ]
+      }
+    },
+    "failures": [
+      "semantic critic knowledge_boundary: Candidate chapters repeatedly refer to the protagonist as 'eleven-year-old' (十一岁) in 1989. The story plan establishes the timeline as 1987-1989 with a goal of establishing industry standards and handling complex legal/technical disputes, which is inconsistent with an 11-year-old child having the authority to sign contracts, command technical teams, or be a 'reborn singer' capable of such high-level strategic planning.; The candidate text states 'He' (他) refers to Mai Ke, but the character bible ",
+      "semantic critic character_state: The candidate text describes Mai Ke as an 'eleven-year-old' (十一岁) boy ('少年'/'他'), contradicting the 'Reborn Singer' persona who should be an adult capable of managing complex rights and legal battles in 1989.; The character bible explicitly lists 'Livia' as a partner and 'Selina' as a secret lover/partner; the candidate text mentions Livia's past humiliation only as a reason for Selina's caution, but fails to show Livia's presence or agency in the scene where she is listed as a participant in th",
+      "semantic critic role_identity: The candidate text consistently uses male pronouns ('he', 'boy') for Mai Ke, whereas the character bible defines her as a female singer/creator ('麦珂·杰森', '重生歌手').; The candidate text identifies the antagonist as 'Victor Kraus', conflicting with the 'authoritative_character_constraints' which lists the main villain as 'Victor Lance'.; The protagonist is depicted as an 11-year-old child, which contradicts the role of a 'Reborn Singer' capable of executing complex legal and technical strategies inv",
+      "semantic critic authority_scope: An 11-year-old child cannot legally hold 'final veto power' or sign 'Official Safety Protocols' as a 'Chief Technical Partner' in a professional setting in 1989 without explicit guardian intervention, which is not shown. The text implies the child acts alone with full legal authority.; Selina is described as having 'mechanical locks' that prevent others from touching equipment, but the text does not establish her legal authority to enforce this over the venue or the production company's technica",
+      "semantic critic evidence_supports_conclusion: The candidate claims the 'Official Safety Protocol' is signed and presented immediately after the test, but the text shows it being 'just printed' and then signed by Mai Ke (an 11-year-old) and Selina. There is no evidence in the text of the document being validated by a third party (like the mother Martha acting as a guardian or a legal body) to make it an 'official' document instantly.; The claim that the 'monitoring video' was played in real-time relies on 'Martha's pre-deployment' which is n",
+      "semantic critic outcome_overreach: The outcome states that Selina becomes an 'Official Safety Signatory' and 'Chief Technical Partner' with 'Final Veto Power' solely based on one successful test run. This skips necessary bureaucratic steps (legal review, board approval, union certification) expected in a realistic 1980s corporate setting, turning a technical victory into an immediate administrative revolution without process.; The text implies the entire 'Orian' team's reputation is destroyed instantly by one test, whereas the pl"
+    ],
+    "call": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 13.751,
+      "usage": {
+        "prompt_tokens": 7057,
+        "completion_tokens": 1263,
+        "total_tokens": 8320,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  {
+    "cluster_id": "EC104",
+    "chapter_span": [
+      207,
+      208
+    ],
+    "critic": {
+      "knowledge_boundary": {
+        "ok": true,
+        "evidence": [
+          "麦珂仅作为重生者提供战略方向，具体物证（打字机样本、维修日志）由苏菲亚执行获取和展示，符合'只有麦珂知道前世事实'的设定。"
+        ]
+      },
+      "character_state": {
+        "ok": false,
+        "evidence": [
+          "第208章大纲明确禁止角色包含'记者团'，但候选文本中多次出现'旁听席上那些举着相机的记者镜头'及'记者团'，违反'chapter_must_not_include'中的隐含约束（无现代电子监控/远程档案库，但记者在场本身在1989年合法，问题在于大纲明确列出的allowed_roles未包含记者，而candidate引入了新角色）。",
+          "更正：仔细核对，第208章allowed_roles包含'记者团'，但chapter_must_not_include包含'电视转播'。候选文本中'举着相机的记者镜头'属于摄影记录，非电视转播，此处逻辑成立。但需检查是否有其他违规。",
+          "重新检查：第208章allowed_roles确实包含'记者团'，但'chapter_must_not_include'中有'电视转播'。候选文本描述的是'举着相机的记者镜头'，这是摄影，不是电视转播。此点看似无误。",
+          "发现真正错误：第208章allowed_roles列表为['麦珂', '苏菲亚', '莉薇娅', '玛莎', '瑟琳娜', '奥瑞恩法务总监', '主审法官', '记者团']。候选文本中出现了'老公证人'（第208章正文：'那里坐着一位头发花白的老公证人'）。'老公证人'并非allowed_roles中的人物，且未在上下文中铺垫，属于'未铺垫的神秘证人'或'临时添加人物'，违反'forbidden_roles'中的'神秘证人'规则。"
+        ]
+      },
+      "timeline_causality": {
+        "ok": true,
+        "evidence": [
+          "事件发生在1989年7月15日，与计划时间线一致。",
+          "IBM Selectric II打字机及其色带特征在1987-1989年间存在，符合技术史实，无时代错乱。"
+        ]
+      },
+      "pov_consistency": {
+        "ok": true,
+        "evidence": [
+          "叙述视角聚焦于麦珂和苏菲亚的外部行动及心理活动，未泄露奥瑞恩法务总监内心的具体想法（如'心中最后一丝侥幸'等描写虽涉及反派心理，但在小说创作中通常允许通过行为推断，且未直接读取其私密记忆，主要依靠其行为表现慌乱，符合'villain_loss'的描写要求）。",
+          "注意：候选文本中提到'奥瑞恩总监...心中最后一丝侥幸也彻底破灭'，这属于对反派心理的直接描写。根据严格的POV规则（'POV does not reveal another person's private knowledge'），除非该反派是POV角色，否则不应直接描写其内心。但考虑到这是第三人称全知视角的常见写法，且重点在于展示其行为后果，若严格限制为单一人物限知视角则违规。鉴于系统提示'POV does not reveal another person's private knowledge'，此处视为轻微越界，但更严重的错误是'老公证人'。",
+          "修正判断：主要错误在于'老公证人'的出现。关于反派心理描写，在文学评论中通常被视为全知视角的合理运用，除非上下文严格限定为第一人称或特定第三人称限知。此处暂不判定为严重POV错误，重点放在'老公证人'上。"
+        ]
+      },
+      "role_identity": {
+        "ok": true,
+        "evidence": [
+          "麦珂保持歌手身份，未行使法律专业权力；苏菲亚作为证据官展示物证，符合其晋升后的角色定位。"
+        ]
+      },
+      "authority_scope": {
+        "ok": true,
+        "evidence": [
+          "法官有权宣布休庭、核实证据并宣判；苏菲亚作为代理人/证人展示证据，无权直接查封，但通过公证员和法官指令实现，符合程序。",
+          "奥瑞恩总监试图抢夺证据被制止，未成功行使非法权力。"
+        ]
+      },
+      "evidence_supports_conclusion": {
+        "ok": true,
+        "evidence": [
+          "打字机色带磨损特征与维修日志的时间戳逻辑闭环，直接指向伪造报告。",
+          "微缩胶片上的签名和数据流直接证明127人参与造假，支持行业禁入的结论。"
+        ]
+      },
+      "outcome_overreach": {
+        "ok": false,
+        "evidence": [
+          "候选文本中法官直接下令'将这127人的名单正式列入行业黑名单，永久禁止其从事任何艺人健康评估工作'。在法律程序中，法庭通常只能判决案件本身的证据无效或相关人员的法律责任（如欺诈罪），而'行业黑名单'和'终身禁入'通常由行业协会或监管机构依据判决结果另行决定，而非由法官当庭直接下达行政禁令。这属于法官越权行使了行政监管机构的权力，违反了'lawyers, hosts and producers do not exercise powers they do not have'的规则。"
+        ]
+      },
+      "repeated_resolution_pattern": {
+        "ok": true,
+        "evidence": [
+          "本次解决依赖于具体的物理证据（打字机指纹、微缩胶片）和程序正义（公证、质证），而非简单的合同文档权威模板或口头争辩，与前作失败原因形成对比，非重复模式。"
+        ]
+      }
+    },
+    "failures": [
+      "semantic critic character_state: 第208章大纲明确禁止角色包含'记者团'，但候选文本中多次出现'旁听席上那些举着相机的记者镜头'及'记者团'，违反'chapter_must_not_include'中的隐含约束（无现代电子监控/远程档案库，但记者在场本身在1989年合法，问题在于大纲明确列出的allowed_roles未包含记者，而candidate引入了新角色）。; 更正：仔细核对，第208章allowed_roles包含'记者团'，但chapter_must_not_include包含'电视转播'。候选文本中'举着相机的记者镜头'属于摄影记录，非电视转播，此处逻辑成立。但需检查是否有其他违规。; 重新检查：第208章allowed_roles确实包含'记者团'，但'chapter_must_not_include'中有'电视转播'。候选文本描述的是'举着相机的记者镜头'，这是摄影，不是电视转播。此点看似无误。; 发现真正错误：第208章allowed_roles列表为['麦珂', '苏菲亚', '莉薇娅', '玛莎', '瑟琳娜', '奥瑞恩法务总监', '主审法官', '记者团']。候选文本中出现了'老公证人'",
+      "semantic critic outcome_overreach: 候选文本中法官直接下令'将这127人的名单正式列入行业黑名单，永久禁止其从事任何艺人健康评估工作'。在法律程序中，法庭通常只能判决案件本身的证据无效或相关人员的法律责任（如欺诈罪），而'行业黑名单'和'终身禁入'通常由行业协会或监管机构依据判决结果另行决定，而非由法官当庭直接下达行政禁令。这属于法官越权行使了行政监管机构的权力，违反了'lawyers, hosts and producers do not exercise powers they do not have'的规则。"
+    ],
+    "call": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 13.163,
+      "usage": {
+        "prompt_tokens": 7954,
+        "completion_tokens": 1293,
+        "total_tokens": 9247,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  {
+    "cluster_id": "EC105",
+    "chapter_span": [
+      209,
+      210
+    ],
+    "critic": {
+      "knowledge_boundary": {
+        "ok": false,
+        "evidence": [
+          "Chapter 210 synopsis states Ma Ke 'used past-life memory' (利用前世记忆) to let Su Feiya execute the evidence lock-in.",
+          "Authoritative constraints explicitly state: 'Only Ma Ke knows past-life facts' and 'Do not infer... from real-world convention'.",
+          "The text implies Ma Ke's knowledge of the specific 1988 meeting record was derived solely from his rebirth memory, which is consistent, BUT Chapter 210 action sequence says 'Ma Ke used past-life memory AND let Su Feiya execute', implying Ma Ke knew the *content* beforehand. This is allowed. However, the critical error is in Chapter 210 where Ma Ke repeats the exact same speech as Chapter 209 verbatim ('From today on... This is not charity, this is rights return'). While not a knowledge leak, it violates the 'Show Don't Tell' rule for character growth."
+        ]
+      },
+      "character_state": {
+        "ok": true,
+        "evidence": [
+          "Ma Ke's transition from controlling to sharing credit is shown through his reliance on Su Feiya's scroll.",
+          "Su Feiya's role expansion to Chief Evidence Officer is supported by her actions in Chapter 210."
+        ]
+      },
+      "timeline_causality": {
+        "ok": false,
+        "evidence": [
+          "Chapter 209 timeline_start/end is listed as '1989-07-15 to 1989-07-16', but the detailed synopsis begins with 'March 15, 1987' (1987年3月15日). This contradicts the chapter card's explicit timeline years and start date.",
+          "The event cluster timeline_years is '1987—1991', but Chapter 209's synopsis starts in 1987 while the header says 1989. The 'Open Source Decree' (ART_209_OPEN_SOURCE_DECREE) is created in 1989 according to the header, but the narrative describes it happening in 1987.",
+          "Chapter 210 is set in 1991, which aligns with the cluster, but the preceding event (209) has conflicting dates within its own metadata vs. narrative text."
+        ]
+      },
+      "pov_consistency": {
+        "ok": true,
+        "evidence": [
+          "POV remains focused on Ma Ke's perspective without revealing private thoughts of the Orion board members beyond what they show externally."
+        ]
+      },
+      "role_identity": {
+        "ok": true,
+        "evidence": [
+          "Characters are addressed by their correct roles (Ma Ke as singer, Su Feiya as auditor/evidence officer)."
+        ]
+      },
+      "authority_scope": {
+        "ok": false,
+        "evidence": [
+          "In Chapter 210, the judge declares Orion's board members face 'industry lifetime ban risk' (行业终身禁入风险) as a direct result of the verdict.",
+          "Judges typically do not have the authority to impose industry-wide professional bans; that is usually an administrative or association decision, not a court ruling in a civil case. This oversteps the judge's legal authority in a realistic setting.",
+          "The candidate text states the judge 'declared' (宣判) the ban, whereas the plan only mentions the board 'facing risk' (面临风险), creating an unauthorized expansion of judicial power."
+        ]
+      },
+      "evidence_supports_conclusion": {
+        "ok": false,
+        "evidence": [
+          "Chapter 210 states the judge ruled because Orion submitted 'unregistered materials' and 'malicious litigation'. However, the core victory described is the 'deprivation of sole interpretation right' (剥夺单方面解释权). A civil court ruling on contract breach does not automatically strip a corporation of a statutory 'interpretation right' unless specifically defined in law; this conclusion feels like a plot convenience rather than a legally supported outcome based on the 'evidence' provided (which proves fraud, not necessarily invalidates a specific clause's legal standing in all contexts)."
+        ]
+      },
+      "outcome_overreach": {
+        "ok": false,
+        "evidence": [
+          "Chapter 210 ending states Orion's business model is 'completely bankrupt' (彻底破产) and board members face 'lifetime ban'. The Plan (EC105) states 'forced to peel off... business model broken' and 'face risk'. The candidate escalates 'risk' to 'bankruptcy' and 'ban' as immediate facts, violating the 'temporary suspension is not silently expanded into permanent career destruction' rule."
+        ]
+      },
+      "repeated_resolution_pattern": {
+        "ok": false,
+        "evidence": [
+          "Chapter 210 ends with Ma Ke repeating the exact same speech given in Chapter 209 ('From today on... This is not charity, this is rights return').",
+          "This creates a repetitive resolution pattern where the protagonist uses the same rhetorical template twice in two chapters, failing to show progression in his communication style or the evolution of the situation."
+        ]
+      }
+    },
+    "failures": [
+      "semantic critic knowledge_boundary: Chapter 210 synopsis states Ma Ke 'used past-life memory' (利用前世记忆) to let Su Feiya execute the evidence lock-in.; Authoritative constraints explicitly state: 'Only Ma Ke knows past-life facts' and 'Do not infer... from real-world convention'.; The text implies Ma Ke's knowledge of the specific 1988 meeting record was derived solely from his rebirth memory, which is consistent, BUT Chapter 210 action sequence says 'Ma Ke used past-life memory AND let Su Feiya execute', implying Ma Ke knew the *co",
+      "semantic critic timeline_causality: Chapter 209 timeline_start/end is listed as '1989-07-15 to 1989-07-16', but the detailed synopsis begins with 'March 15, 1987' (1987年3月15日). This contradicts the chapter card's explicit timeline years and start date.; The event cluster timeline_years is '1987—1991', but Chapter 209's synopsis starts in 1987 while the header says 1989. The 'Open Source Decree' (ART_209_OPEN_SOURCE_DECREE) is created in 1989 according to the header, but the narrative describes it happening in 1987.; Chapter 210 is",
+      "semantic critic authority_scope: In Chapter 210, the judge declares Orion's board members face 'industry lifetime ban risk' (行业终身禁入风险) as a direct result of the verdict.; Judges typically do not have the authority to impose industry-wide professional bans; that is usually an administrative or association decision, not a court ruling in a civil case. This oversteps the judge's legal authority in a realistic setting.; The candidate text states the judge 'declared' (宣判) the ban, whereas the plan only mentions the board 'facing ris",
+      "semantic critic evidence_supports_conclusion: Chapter 210 states the judge ruled because Orion submitted 'unregistered materials' and 'malicious litigation'. However, the core victory described is the 'deprivation of sole interpretation right' (剥夺单方面解释权). A civil court ruling on contract breach does not automatically strip a corporation of a statutory 'interpretation right' unless specifically defined in law; this conclusion feels like a plot convenience rather than a legally supported outcome based on the 'evidence' provided (which proves ",
+      "semantic critic outcome_overreach: Chapter 210 ending states Orion's business model is 'completely bankrupt' (彻底破产) and board members face 'lifetime ban'. The Plan (EC105) states 'forced to peel off... business model broken' and 'face risk'. The candidate escalates 'risk' to 'bankruptcy' and 'ban' as immediate facts, violating the 'temporary suspension is not silently expanded into permanent career destruction' rule.",
+      "semantic critic repeated_resolution_pattern: Chapter 210 ends with Ma Ke repeating the exact same speech given in Chapter 209 ('From today on... This is not charity, this is rights return').; This creates a repetitive resolution pattern where the protagonist uses the same rhetorical template twice in two chapters, failing to show progression in his communication style or the evolution of the situation."
+    ],
+    "call": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 15.591,
+      "usage": {
+        "prompt_tokens": 7169,
+        "completion_tokens": 1185,
+        "total_tokens": 8354,
+        "prompt_tokens_details": {
+          "cached_tokens": 157
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  }
+]

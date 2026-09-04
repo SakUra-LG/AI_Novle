@@ -1,0 +1,110 @@
+{
+  "cluster_id": "EC106",
+  "chapter_id": 211,
+  "attempt": 3,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "2612e63a0eda0cc27cad1b88ff2b1c090dd1d523850818443545ccd5b210fb3e",
+  "base_prompt_sha256": "7b0d27c10901b1da5d50baaa531d54116d037564d2d67a7ed21d11feffc5df46",
+  "body_generator_contract_version": "v11_dynamic_identity_history_retry_20260822",
+  "raw_response_sha256": "8452f1ab04d4b6b86191b0712b5567a922773751e2cadc57e01f96a0b2005513",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.201,
+    "usage": {
+      "prompt_tokens": 10358,
+      "completion_tokens": 933,
+      "total_tokens": 11291,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 106,
+    "through_chapter": 212,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "1153a04d36d5ea3b65d8559e467ab8e32b8d90068b927d4de79ecbe2304fd4ff",
+    "chapter_card_prefix_sha256": "934f8ff13f8ac7af5a13100334f95c7909398a26694a4f7d74ad281fca65e3d5",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "274a23e97acb5a3cde196de8affb06d3e291efd5cb3c46d5bcbc3310d2655134"
+  },
+  "cluster_sha256": "3d1b46c462efbe62b76a39a7c5580e20c27fea6ed113b1ca48848a185f5d38f0",
+  "card_sha256": "caefdd4424a553cedc3b52c22f549d9cd181e6a528cc081ec6e517f09c0af51e",
+  "chapter_audit": {
+    "han_chars": 1266,
+    "total_chars": 1482,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "承诺卡内容",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "光学透镜证书展示",
+        "exact": false,
+        "bigram_coverage": 0.714,
+        "matched": true
+      },
+      {
+        "anchor": "观众人墙形成",
+        "exact": false,
+        "bigram_coverage": 0.6,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0405,
+    "scene_evidence": [
+      {
+        "location": "场馆入口",
+        "body_hit": true,
+        "match_mode": "venue_semantics"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_211_PROMISE_CARD",
+        "display_name": "观众安全协作者承诺卡",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      },
+      {
+        "artifact_id": "ART_211_CALIBRATION_CERT",
+        "display_name": "光学透镜机械校准证书",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "年龄状态冲突：1991年麦珂应为约33岁"
+    ],
+    "all_validator_failures": [
+      "年龄状态冲突：1991年麦珂应为约33岁"
+    ]
+  },
+  "failures": [
+    "年龄状态冲突：1991年麦珂应为约33岁"
+  ],
+  "accepted": false
+}

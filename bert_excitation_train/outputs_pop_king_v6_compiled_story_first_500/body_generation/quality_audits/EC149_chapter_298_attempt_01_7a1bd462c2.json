@@ -1,0 +1,114 @@
+{
+  "cluster_id": "EC149",
+  "chapter_id": 298,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "7a1bd462c2f78dd459d10c100d8da2fc67d5e3eba22cdb280c0612ac5bf795da",
+  "base_prompt_sha256": "7a1bd462c2f78dd459d10c100d8da2fc67d5e3eba22cdb280c0612ac5bf795da",
+  "body_generator_contract_version": "v13_compiled_plan_strict_gates_20260822",
+  "raw_response_sha256": "c143b21722ce4f8ecbef9af260646612a99f26ee78aa8a4e264f3098a04fcd98",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.504,
+    "usage": {
+      "prompt_tokens": 12853,
+      "completion_tokens": 745,
+      "total_tokens": 13598,
+      "prompt_tokens_details": {
+        "cached_tokens": 602
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 149,
+    "through_chapter": 298,
+    "outline_sha256": "a2e1a6cde3554db62a9f0842db92c9c580a6e553f71f71d883089f965c5f11b5",
+    "event_prefix_sha256": "c64af4f71ceaacbb1cf29b1210945626cc39b55c0d4eaec8f0b57ab3e1a51090",
+    "chapter_card_prefix_sha256": "59d4ce894ec6b857e1606f611c48901658df6cd5e8436137755ff9ef1cab2d0c",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "bd4b12e677ba42dd43d041725e6e51fd645aa49eae2a3543700753ea2003d800"
+  },
+  "cluster_sha256": "539e81d89881ee46f80cc6b04ad149f121a17e0e947f9bf567cd4a58c4e4baa9",
+  "card_sha256": "281f89904bf465625f47775dec39d8e10817e0d2a274b1d307b8c52638e825fd",
+  "chapter_audit": {
+    "han_chars": 1050,
+    "total_chars": 1231,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "宣传曝光减少",
+        "exact": false,
+        "bigram_coverage": 0.8,
+        "matched": true
+      },
+      {
+        "anchor": "正式彩排按时完成且母带全程可追踪",
+        "exact": false,
+        "bigram_coverage": 0.8,
+        "matched": true
+      },
+      {
+        "anchor": "巡演调度中心",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "progress_ec149",
+        "target": "resolved_3b83120730",
+        "evidence_terms": [
+          "ART_297_6E8A1DF9",
+          "母带分路交接清单",
+          "复核暴风令母带与",
+          "舞台设备分路",
+          "团队用工作拷贝保",
+          "住彩排而不冒险运",
+          "输原件",
+          "不得扩大为其他人",
+          "物或资产的结论"
+        ],
+        "hit_terms": [
+          "母带分路交接清单"
+        ],
+        "matched": true
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 1,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0525,
+    "scene_evidence": [
+      {
+        "location": "北湾港与巡演排练馆",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "fast_mode_relaxed_chapter_failures": [
+      "正文未落到规划场景“北湾港与巡演排练馆”"
+    ],
+    "failures": [],
+    "all_validator_failures": []
+  },
+  "failures": [],
+  "accepted": true
+}

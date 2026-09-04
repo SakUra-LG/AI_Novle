@@ -1,0 +1,18 @@
+{
+  "cluster_id": "EC119",
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "status": "accepted_after_manual_review_and_deterministic_validation",
+  "chapters": [
+    {
+      "chapter_id": 237,
+      "sha256": "beeb89b15940ea04dcf247fdf78972f86654e3a7c83b9bd49a1d26e86b531799",
+      "chinese_chars": 1184
+    },
+    {
+      "chapter_id": 238,
+      "sha256": "8e0efd104e871401093583957f55427da5ee1db74d4c2ebfd71e30cc16018fb8",
+      "chinese_chars": 1162
+    }
+  ],
+  "accepted_at": "2026-08-25T11:47:56.861836+00:00"
+}

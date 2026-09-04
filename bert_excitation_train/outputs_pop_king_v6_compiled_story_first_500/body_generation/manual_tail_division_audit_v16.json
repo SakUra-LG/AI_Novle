@@ -1,0 +1,1641 @@
+{
+  "version": "v16_manual_chapter_divisions_20260827",
+  "scope": {
+    "event_clusters": [
+      136,
+      250
+    ],
+    "chapters": [
+      271,
+      500
+    ]
+  },
+  "counts": {
+    "event_clusters": 250,
+    "chapter_cards": 500,
+    "audited_pairs": 115
+  },
+  "summary": {
+    "passed": true,
+    "pairs_with_exact_shared_sentences": 0,
+    "pairs_with_similarity_ge_045": 0,
+    "maximum_within_pair_similarity": 0.2308,
+    "cross_cluster_near_duplicate_pairs": 0,
+    "same_character_id_multiple_names": 0,
+    "bad_name_hits": []
+  },
+  "failures": [],
+  "pairs": [
+    {
+      "cluster_id": "EC136",
+      "chapters": [
+        271,
+        272
+      ],
+      "name": "空箱号",
+      "sequence_similarity": 0.1916,
+      "trigram_jaccard": 0.0493,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC137",
+      "chapters": [
+        273,
+        274
+      ],
+      "name": "缺席的签名",
+      "sequence_similarity": 0.1721,
+      "trigram_jaccard": 0.0288,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC138",
+      "chapters": [
+        275,
+        276
+      ],
+      "name": "十日边界",
+      "sequence_similarity": 0.1849,
+      "trigram_jaccard": 0.0355,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC139",
+      "chapters": [
+        277,
+        278
+      ],
+      "name": "四十七份副本",
+      "sequence_similarity": 0.1659,
+      "trigram_jaccard": 0.0248,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC140",
+      "chapters": [
+        279,
+        280
+      ],
+      "name": "三条账线",
+      "sequence_similarity": 0.1391,
+      "trigram_jaccard": 0.0098,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC141",
+      "chapters": [
+        281,
+        282
+      ],
+      "name": "重复入账不是赃款",
+      "sequence_similarity": 0.1316,
+      "trigram_jaccard": 0.005,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC142",
+      "chapters": [
+        283,
+        284
+      ],
+      "name": "离岸受益人",
+      "sequence_similarity": 0.1728,
+      "trigram_jaccard": 0.0284,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC143",
+      "chapters": [
+        285,
+        286
+      ],
+      "name": "九十日额度表决",
+      "sequence_similarity": 0.1053,
+      "trigram_jaccard": 0.0216,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC144",
+      "chapters": [
+        287,
+        288
+      ],
+      "name": "被剪掉的条件句",
+      "sequence_similarity": 0.0558,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC145",
+      "chapters": [
+        289,
+        290
+      ],
+      "name": "壳公司的退潮",
+      "sequence_similarity": 0.1552,
+      "trigram_jaccard": 0.0296,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC146",
+      "chapters": [
+        291,
+        292
+      ],
+      "name": "锁在母带盒里的副歌",
+      "sequence_similarity": 0.1143,
+      "trigram_jaccard": 0.0108,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC147",
+      "chapters": [
+        293,
+        294
+      ],
+      "name": "和声署名",
+      "sequence_similarity": 0.2308,
+      "trigram_jaccard": 0.0331,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC148",
+      "chapters": [
+        295,
+        296
+      ],
+      "name": "黛安娜的工作室",
+      "sequence_similarity": 0.1667,
+      "trigram_jaccard": 0.0213,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC149",
+      "chapters": [
+        297,
+        298
+      ],
+      "name": "母带过海",
+      "sequence_similarity": 0.1801,
+      "trigram_jaccard": 0.0219,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC150",
+      "chapters": [
+        299,
+        300
+      ],
+      "name": "少唱一首",
+      "sequence_similarity": 0.1182,
+      "trigram_jaccard": 0.0055,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC151",
+      "chapters": [
+        301,
+        302
+      ],
+      "name": "票根上的第二价格",
+      "sequence_similarity": 0.1159,
+      "trigram_jaccard": 0.0164,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC152",
+      "chapters": [
+        303,
+        304
+      ],
+      "name": "星火不是应援部",
+      "sequence_similarity": 0.0741,
+      "trigram_jaccard": 0.0159,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC153",
+      "chapters": [
+        305,
+        306
+      ],
+      "name": "镜头外的答案",
+      "sequence_similarity": 0.1776,
+      "trigram_jaccard": 0.0214,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC154",
+      "chapters": [
+        307,
+        308
+      ],
+      "name": "不替她搬家",
+      "sequence_similarity": 0.1759,
+      "trigram_jaccard": 0.016,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC155",
+      "chapters": [
+        309,
+        310
+      ],
+      "name": "分销商的百分之十二",
+      "sequence_similarity": 0.1881,
+      "trigram_jaccard": 0.0114,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC156",
+      "chapters": [
+        311,
+        312
+      ],
+      "name": "突然变坏的曲线",
+      "sequence_similarity": 0.1238,
+      "trigram_jaccard": 0.0163,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC157",
+      "chapters": [
+        313,
+        314
+      ],
+      "name": "诊所没有授权上传",
+      "sequence_similarity": 0.058,
+      "trigram_jaccard": 0.0056,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC158",
+      "chapters": [
+        315,
+        316
+      ],
+      "name": "同一台机器的两种刻度",
+      "sequence_similarity": 0.0957,
+      "trigram_jaccard": 0.0054,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC159",
+      "chapters": [
+        317,
+        318
+      ],
+      "name": "保险公司的红灯",
+      "sequence_similarity": 0.1927,
+      "trigram_jaccard": 0.0484,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC160",
+      "chapters": [
+        319,
+        320
+      ],
+      "name": "重训还是删库",
+      "sequence_similarity": 0.0995,
+      "trigram_jaccard": 0.0229,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC161",
+      "chapters": [
+        321,
+        322
+      ],
+      "name": "电台里的半句话",
+      "sequence_similarity": 0.1421,
+      "trigram_jaccard": 0.0238,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC162",
+      "chapters": [
+        323,
+        324
+      ],
+      "name": "数据经纪人的附加页",
+      "sequence_similarity": 0.209,
+      "trigram_jaccard": 0.0402,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC163",
+      "chapters": [
+        325,
+        326
+      ],
+      "name": "不曝光的证人",
+      "sequence_similarity": 0.0609,
+      "trigram_jaccard": 0.0057,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC164",
+      "chapters": [
+        327,
+        328
+      ],
+      "name": "试验期而非全国标准",
+      "sequence_similarity": 0.1111,
+      "trigram_jaccard": 0.0115,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC165",
+      "chapters": [
+        329,
+        330
+      ],
+      "name": "一张网页不能装下病历",
+      "sequence_similarity": 0.1346,
+      "trigram_jaccard": 0.0109,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC166",
+      "chapters": [
+        331,
+        332
+      ],
+      "name": "车窗后的照片",
+      "sequence_similarity": 0.1845,
+      "trigram_jaccard": 0.0221,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC167",
+      "chapters": [
+        333,
+        334
+      ],
+      "name": "她自己的首映礼",
+      "sequence_similarity": 0.127,
+      "trigram_jaccard": 0.006,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC168",
+      "chapters": [
+        335,
+        336
+      ],
+      "name": "罗文品牌的第一份授权",
+      "sequence_similarity": 0.1748,
+      "trigram_jaccard": 0.0109,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC169",
+      "chapters": [
+        337,
+        338
+      ],
+      "name": "莉薇娅的三十天",
+      "sequence_similarity": 0.1226,
+      "trigram_jaccard": 0.0272,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC170",
+      "chapters": [
+        339,
+        340
+      ],
+      "name": "婚礼不等于并购",
+      "sequence_similarity": 0.1206,
+      "trigram_jaccard": 0.0231,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC171",
+      "chapters": [
+        341,
+        342
+      ],
+      "name": "分开之后的公开句子",
+      "sequence_similarity": 0.1,
+      "trigram_jaccard": 0.0056,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC172",
+      "chapters": [
+        343,
+        344
+      ],
+      "name": "连续十四场",
+      "sequence_similarity": 0.0632,
+      "trigram_jaccard": 0.0059,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC173",
+      "chapters": [
+        345,
+        346
+      ],
+      "name": "谁能替他说不",
+      "sequence_similarity": 0.1517,
+      "trigram_jaccard": 0.0053,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC174",
+      "chapters": [
+        347,
+        348
+      ],
+      "name": "信托里的空白格",
+      "sequence_similarity": 0.1,
+      "trigram_jaccard": 0.0172,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC175",
+      "chapters": [
+        349,
+        350
+      ],
+      "name": "午夜少一座升降台",
+      "sequence_similarity": 0.1307,
+      "trigram_jaccard": 0.0115,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC176",
+      "chapters": [
+        351,
+        352
+      ],
+      "name": "少了一盘母带",
+      "sequence_similarity": 0.1212,
+      "trigram_jaccard": 0.0057,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC177",
+      "chapters": [
+        353,
+        354
+      ],
+      "name": "仓库里的十二箱",
+      "sequence_similarity": 0.0693,
+      "trigram_jaccard": 0.0057,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC178",
+      "chapters": [
+        355,
+        356
+      ],
+      "name": "分销商先违约",
+      "sequence_similarity": 0.1698,
+      "trigram_jaccard": 0.016,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC179",
+      "chapters": [
+        357,
+        358
+      ],
+      "name": "创作者合作社",
+      "sequence_similarity": 0.1307,
+      "trigram_jaccard": 0.0114,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC180",
+      "chapters": [
+        359,
+        360
+      ],
+      "name": "下载不是转让",
+      "sequence_similarity": 0.129,
+      "trigram_jaccard": 0.0383,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC181",
+      "chapters": [
+        361,
+        362
+      ],
+      "name": "泄漏水印只指向机器",
+      "sequence_similarity": 0.107,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC182",
+      "chapters": [
+        363,
+        364
+      ],
+      "name": "歌迷的合法试听周",
+      "sequence_similarity": 0.1684,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC183",
+      "chapters": [
+        365,
+        366
+      ],
+      "name": "巴里的假销量",
+      "sequence_similarity": 0.2073,
+      "trigram_jaccard": 0.0237,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC184",
+      "chapters": [
+        367,
+        368
+      ],
+      "name": "道歉不买热搜",
+      "sequence_similarity": 0.1171,
+      "trigram_jaccard": 0.0223,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC185",
+      "chapters": [
+        369,
+        370
+      ],
+      "name": "代理基金的影子",
+      "sequence_similarity": 0.1485,
+      "trigram_jaccard": 0.0282,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC186",
+      "chapters": [
+        371,
+        372
+      ],
+      "name": "不唱旧副歌",
+      "sequence_similarity": 0.0966,
+      "trigram_jaccard": 0.0109,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC187",
+      "chapters": [
+        373,
+        374
+      ],
+      "name": "采样来自谁",
+      "sequence_similarity": 0.0722,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC188",
+      "chapters": [
+        375,
+        376
+      ],
+      "name": "昆廷离开控制室",
+      "sequence_similarity": 0.1263,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC189",
+      "chapters": [
+        377,
+        378
+      ],
+      "name": "升降台之外的舞步",
+      "sequence_similarity": 0.0625,
+      "trigram_jaccard": 0.0118,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC190",
+      "chapters": [
+        379,
+        380
+      ],
+      "name": "慈善账户的第二把钥匙",
+      "sequence_similarity": 0.2188,
+      "trigram_jaccard": 0.0366,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC191",
+      "chapters": [
+        381,
+        382
+      ],
+      "name": "一张错误的税表",
+      "sequence_similarity": 0.0856,
+      "trigram_jaccard": 0.0061,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC192",
+      "chapters": [
+        383,
+        384
+      ],
+      "name": "签证名单中的替补",
+      "sequence_similarity": 0.1158,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC193",
+      "chapters": [
+        385,
+        386
+      ],
+      "name": "后台的一次扭伤",
+      "sequence_similarity": 0.1979,
+      "trigram_jaccard": 0.0299,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC194",
+      "chapters": [
+        387,
+        388
+      ],
+      "name": "她的电影档期",
+      "sequence_similarity": 0.1287,
+      "trigram_jaccard": 0.0056,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC195",
+      "chapters": [
+        389,
+        390
+      ],
+      "name": "归来之夜",
+      "sequence_similarity": 0.1836,
+      "trigram_jaccard": 0.0276,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC196",
+      "chapters": [
+        391,
+        392
+      ],
+      "name": "论坛里的假票",
+      "sequence_similarity": 0.1256,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC197",
+      "chapters": [
+        393,
+        394
+      ],
+      "name": "莱昂的一票",
+      "sequence_similarity": 0.0622,
+      "trigram_jaccard": 0.0238,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC198",
+      "chapters": [
+        395,
+        396
+      ],
+      "name": "不能出售的会员名单",
+      "sequence_similarity": 0.13,
+      "trigram_jaccard": 0.0057,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC199",
+      "chapters": [
+        397,
+        398
+      ],
+      "name": "透明票池",
+      "sequence_similarity": 0.0942,
+      "trigram_jaccard": 0.006,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC200",
+      "chapters": [
+        399,
+        400
+      ],
+      "name": "零分影评",
+      "sequence_similarity": 0.1048,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC201",
+      "chapters": [
+        401,
+        402
+      ],
+      "name": "旧衣服会说错话",
+      "sequence_similarity": 0.1313,
+      "trigram_jaccard": 0.0172,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC202",
+      "chapters": [
+        403,
+        404
+      ],
+      "name": "纪录片的剪辑权",
+      "sequence_similarity": 0.0978,
+      "trigram_jaccard": 0.0186,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC203",
+      "chapters": [
+        405,
+        406
+      ],
+      "name": "开放档案日",
+      "sequence_similarity": 0.12,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC204",
+      "chapters": [
+        407,
+        408
+      ],
+      "name": "莉薇娅的版本",
+      "sequence_similarity": 0.1828,
+      "trigram_jaccard": 0.0122,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC205",
+      "chapters": [
+        409,
+        410
+      ],
+      "name": "收购报价没有观众",
+      "sequence_similarity": 0.1493,
+      "trigram_jaccard": 0.0112,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC206",
+      "chapters": [
+        411,
+        412
+      ],
+      "name": "一百场不是一张合同",
+      "sequence_similarity": 0.1508,
+      "trigram_jaccard": 0.0171,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC207",
+      "chapters": [
+        413,
+        414
+      ],
+      "name": "北侧出口",
+      "sequence_similarity": 0.2111,
+      "trigram_jaccard": 0.0191,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC208",
+      "chapters": [
+        415,
+        416
+      ],
+      "name": "赞助商的药柜",
+      "sequence_similarity": 0.1333,
+      "trigram_jaccard": 0.0296,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC209",
+      "chapters": [
+        417,
+        418
+      ],
+      "name": "第二支医疗队",
+      "sequence_similarity": 0.199,
+      "trigram_jaccard": 0.0181,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC210",
+      "chapters": [
+        419,
+        420
+      ],
+      "name": "凌晨三点的加练",
+      "sequence_similarity": 0.1366,
+      "trigram_jaccard": 0.0055,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC211",
+      "chapters": [
+        421,
+        422
+      ],
+      "name": "康拉德的第一次处方",
+      "sequence_similarity": 0.2123,
+      "trigram_jaccard": 0.0261,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC212",
+      "chapters": [
+        423,
+        424
+      ],
+      "name": "重复续方",
+      "sequence_similarity": 0.2111,
+      "trigram_jaccard": 0.0116,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC213",
+      "chapters": [
+        425,
+        426
+      ],
+      "name": "保险要看多少",
+      "sequence_similarity": 0.0833,
+      "trigram_jaccard": 0.0238,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC214",
+      "chapters": [
+        427,
+        428
+      ],
+      "name": "紧急联系人不是受托人",
+      "sequence_similarity": 0.1436,
+      "trigram_jaccard": 0.0482,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC215",
+      "chapters": [
+        429,
+        430
+      ],
+      "name": "最后一场没有加演",
+      "sequence_similarity": 0.1613,
+      "trigram_jaccard": 0.0121,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC216",
+      "chapters": [
+        431,
+        432
+      ],
+      "name": "不是告别巡演",
+      "sequence_similarity": 0.125,
+      "trigram_jaccard": 0.0059,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC217",
+      "chapters": [
+        433,
+        434
+      ],
+      "name": "四十分钟上限",
+      "sequence_similarity": 0.0753,
+      "trigram_jaccard": 0.0186,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC218",
+      "chapters": [
+        435,
+        436
+      ],
+      "name": "备用升降机",
+      "sequence_similarity": 0.0825,
+      "trigram_jaccard": 0.018,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC219",
+      "chapters": [
+        437,
+        438
+      ],
+      "name": "补剂瓶里的批号",
+      "sequence_similarity": 0.1744,
+      "trigram_jaccard": 0.0178,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC220",
+      "chapters": [
+        439,
+        440
+      ],
+      "name": "双签被跳过一次",
+      "sequence_similarity": 0.2151,
+      "trigram_jaccard": 0.0321,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC221",
+      "chapters": [
+        441,
+        442
+      ],
+      "name": "死亡概率模型",
+      "sequence_similarity": 0.0606,
+      "trigram_jaccard": 0.0056,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC222",
+      "chapters": [
+        443,
+        444
+      ],
+      "name": "尚未死亡的讣告",
+      "sequence_similarity": 0.0874,
+      "trigram_jaccard": 0.0109,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC223",
+      "chapters": [
+        445,
+        446
+      ],
+      "name": "纪念衫的期权",
+      "sequence_similarity": 0.1739,
+      "trigram_jaccard": 0.0339,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC224",
+      "chapters": [
+        447,
+        448
+      ],
+      "name": "替补歌手也要有名字",
+      "sequence_similarity": 0.1681,
+      "trigram_jaccard": 0.005,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC225",
+      "chapters": [
+        449,
+        450
+      ],
+      "name": "代理协议的背页",
+      "sequence_similarity": 0.1584,
+      "trigram_jaccard": 0.0172,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC226",
+      "chapters": [
+        451,
+        452
+      ],
+      "name": "钢索提前松了一圈",
+      "sequence_similarity": 0.078,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC227",
+      "chapters": [
+        453,
+        454
+      ],
+      "name": "病历复印请求",
+      "sequence_similarity": 0.1919,
+      "trigram_jaccard": 0.0244,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC228",
+      "chapters": [
+        455,
+        456
+      ],
+      "name": "受益人没有改",
+      "sequence_similarity": 0.1436,
+      "trigram_jaccard": 0.0118,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC229",
+      "chapters": [
+        457,
+        458
+      ],
+      "name": "失能即转让",
+      "sequence_similarity": 0.1287,
+      "trigram_jaccard": 0.0113,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC230",
+      "chapters": [
+        459,
+        460
+      ],
+      "name": "不能空白的代理人",
+      "sequence_similarity": 0.1064,
+      "trigram_jaccard": 0.0061,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC231",
+      "chapters": [
+        461,
+        462
+      ],
+      "name": "被取消的记者席",
+      "sequence_similarity": 0.0796,
+      "trigram_jaccard": 0.0112,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC232",
+      "chapters": [
+        463,
+        464
+      ],
+      "name": "纪念域名",
+      "sequence_similarity": 0.1117,
+      "trigram_jaccard": 0.0353,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC233",
+      "chapters": [
+        465,
+        466
+      ],
+      "name": "提前录好的哭声",
+      "sequence_similarity": 0.0777,
+      "trigram_jaccard": 0.0112,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC234",
+      "chapters": [
+        467,
+        468
+      ],
+      "name": "家人不同意继续",
+      "sequence_similarity": 0.1415,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC235",
+      "chapters": [
+        469,
+        470
+      ],
+      "name": "公开彩排，不是诱饵事故",
+      "sequence_similarity": 0.1063,
+      "trigram_jaccard": 0.0109,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC236",
+      "chapters": [
+        471,
+        472
+      ],
+      "name": "不存在的急救电话",
+      "sequence_similarity": 0.1284,
+      "trigram_jaccard": 0.0265,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC237",
+      "chapters": [
+        473,
+        474
+      ],
+      "name": "镇静方案被拒绝",
+      "sequence_similarity": 0.1837,
+      "trigram_jaccard": 0.0231,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC238",
+      "chapters": [
+        475,
+        476
+      ],
+      "name": "伪造的同意页",
+      "sequence_similarity": 0.1515,
+      "trigram_jaccard": 0.0291,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC239",
+      "chapters": [
+        477,
+        478
+      ],
+      "name": "后台通行证的第四种颜色",
+      "sequence_similarity": 0.0415,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC240",
+      "chapters": [
+        479,
+        480
+      ],
+      "name": "讣告禁发令破口",
+      "sequence_similarity": 0.125,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC241",
+      "chapters": [
+        481,
+        482
+      ],
+      "name": "尚未触发的赔付指令",
+      "sequence_similarity": 0.178,
+      "trigram_jaccard": 0.0185,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC242",
+      "chapters": [
+        483,
+        484
+      ],
+      "name": "目录出售的托管箱",
+      "sequence_similarity": 0.101,
+      "trigram_jaccard": 0.0115,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC243",
+      "chapters": [
+        485,
+        486
+      ],
+      "name": "纪念广播切换键",
+      "sequence_similarity": 0.1244,
+      "trigram_jaccard": 0.0119,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC244",
+      "chapters": [
+        487,
+        488
+      ],
+      "name": "四个人守四扇门",
+      "sequence_similarity": 0.1132,
+      "trigram_jaccard": 0.0054,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC245",
+      "chapters": [
+        489,
+        490
+      ],
+      "name": "他们以为他不能说话",
+      "sequence_similarity": 0.1456,
+      "trigram_jaccard": 0.011,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC246",
+      "chapters": [
+        491,
+        492
+      ],
+      "name": "全球开始悼念",
+      "sequence_similarity": 0.2266,
+      "trigram_jaccard": 0.0405,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC247",
+      "chapters": [
+        493,
+        494
+      ],
+      "name": "纪念礼先卖版权",
+      "sequence_similarity": 0.2,
+      "trigram_jaccard": 0.0109,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC248",
+      "chapters": [
+        495,
+        496
+      ],
+      "name": "证据不是一段剪辑",
+      "sequence_similarity": 0.1101,
+      "trigram_jaccard": 0.0104,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC249",
+      "chapters": [
+        497,
+        498
+      ],
+      "name": "麦珂走进自己的纪念直播",
+      "sequence_similarity": 0.0987,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    },
+    {
+      "cluster_id": "EC250",
+      "chapters": [
+        499,
+        500
+      ],
+      "name": "第500章：没有人替他写结局",
+      "sequence_similarity": 0.1583,
+      "trigram_jaccard": 0.0,
+      "shared_sentences": [],
+      "ch1_action_nodes": 3,
+      "ch2_action_nodes": 3,
+      "issues": []
+    }
+  ],
+  "cross_near_duplicates": []
+}

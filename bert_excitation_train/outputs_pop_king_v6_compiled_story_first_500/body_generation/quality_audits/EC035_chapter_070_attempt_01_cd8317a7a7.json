@@ -1,0 +1,140 @@
+{
+  "cluster_id": "EC035",
+  "chapter_id": 70,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "cd8317a7a7882dd0fbb30d3574f9e444cd33d20f996021977529c86e74364791",
+  "base_prompt_sha256": "cd8317a7a7882dd0fbb30d3574f9e444cd33d20f996021977529c86e74364791",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "dbd0bb2ab0d36ac95b2885aa3d54ab3b7e39fe5e877bfe0c7e125c21dd582853",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 19.049,
+    "usage": {
+      "prompt_tokens": 9897,
+      "completion_tokens": 1139,
+      "total_tokens": 11036,
+      "prompt_tokens_details": {
+        "cached_tokens": 5365
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 35,
+    "through_chapter": 70,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "83862e3c3d351a262b4b7f1951f43ec308946dd9484efc65e085e101f33420ac",
+    "chapter_card_prefix_sha256": "b152f61e6a822ea1ecef5602dee14b5af5b738e63a4dca5f4c537b0ac18bde97",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "9e2019941c195351b47aef45f5d26946b90b8b0d5191e95473d47777579ca1cc"
+  },
+  "cluster_sha256": "2ebfd04361d00f57d1fc4f2fcae066e20a73b45b1544228f74c97e16c734d8b0",
+  "card_sha256": "2fb661979c16c704954b06efd13e82d2f02886476f6e34ee6e442d609fb71ba8",
+  "chapter_audit": {
+    "han_chars": 1564,
+    "total_chars": 1792,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "昆廷展示账目记录的高光时刻",
+        "exact": false,
+        "bigram_coverage": 0.167,
+        "matched": false
+      },
+      {
+        "anchor": "乔纳被众人围攻的尴尬场景",
+        "exact": false,
+        "bigram_coverage": 0.182,
+        "matched": false
+      },
+      {
+        "anchor": "《家庭治理公约》的签署",
+        "exact": false,
+        "bigram_coverage": 0.75,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "trust_dynamic__family_alliance__extension_EC035",
+        "target": "铁三角稳固，父亲被彻底隔离且情感控制失效，母亲完全掌权",
+        "evidence_terms": [
+          "玛莎当众宣读土地",
+          "局抵押记录并宣布",
+          "接管财政"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "employment_status__financial_control__extension_EC035",
+        "target": "完全丧失财政控制权且被永久驱逐出核心决策圈",
+        "evidence_terms": [
+          "昆廷展示账目记录",
+          "证明乔纳挪用公款",
+          "填赌债"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "copyright_status__financial_independence__extension_EC035",
+        "target": "拥有独立监管账户且家庭资产防火墙加固",
+        "evidence_terms": [
+          "房产抵押解除并重",
+          "新注入信托"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0265,
+    "scene_evidence": [
+      {
+        "location": "河湾镇家庭餐厅",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.027，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“昆廷展示账目记录的高光时刻”",
+      "正文没有兑现章卡关键事实“乔纳被众人围攻的尴尬场景”",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC035→铁三角稳固，父亲被彻底隔离且情感控制失效，母亲完全掌权",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control__extension_EC035→完全丧失财政控制权且被永久驱逐出核心决策圈",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC035→拥有独立监管账户且家庭资产防火墙加固",
+      "正文未落到规划场景“河湾镇家庭餐厅”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.027，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“昆廷展示账目记录的高光时刻”",
+      "正文没有兑现章卡关键事实“乔纳被众人围攻的尴尬场景”",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC035→铁三角稳固，父亲被彻底隔离且情感控制失效，母亲完全掌权",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control__extension_EC035→完全丧失财政控制权且被永久驱逐出核心决策圈",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC035→拥有独立监管账户且家庭资产防火墙加固",
+      "正文未落到规划场景“河湾镇家庭餐厅”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

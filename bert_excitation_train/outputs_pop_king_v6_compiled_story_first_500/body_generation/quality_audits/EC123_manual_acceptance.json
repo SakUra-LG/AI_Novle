@@ -1,0 +1,465 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC123",
+  "chapter_ids": [
+    245,
+    246
+  ],
+  "accepted": true,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "245": {
+        "han_chars": 1256,
+        "total_chars": 1581,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "HV为海港库区缩写",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "19为物理格位",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "盒签卷号取用簿三方核对",
+            "exact": false,
+            "bigram_coverage": 0.9,
+            "matched": true
+          },
+          {
+            "anchor": "只获相关卷有限阅片",
+            "exact": false,
+            "bigram_coverage": 0.75,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.0924,
+        "scene_evidence": [
+          {
+            "location": "市海港缩微资料库目录卡室",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_245_HV19_LOCATOR_DECODING",
+            "display_name": "HV-19缩微库位代码核验卡",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_245_REPRODUCTION_SCOPE_ABSTRACT",
+            "display_name": "1983影印许可转让摘要调阅联",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      },
+      "246": {
+        "han_chars": 1321,
+        "total_chars": 1651,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 4,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "卷号起止帧与拼接记录",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "首帧标题不能覆盖正文限定",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "一套保管母片与服务副本",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "附表B库号SB-83-6",
+            "exact": true,
+            "bigram_coverage": 0.778,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "code_identity",
+            "target": "harbor_vault_bay_19_locator",
+            "evidence_terms": [
+              "ART_245_HV19_LOCATOR_DECODING",
+              "HV-19",
+              "缩微库位代码核验",
+              "定位唯一相关格位",
+              "和卷号"
+            ],
+            "hit_terms": [
+              "HV-19",
+              "缩微库位代码核验"
+            ],
+            "matched": true
+          },
+          {
+            "state_key": "transferred_scope",
+            "target": "one_custody_master_and_service_copy_permission_only",
+            "evidence_terms": [
+              "ART_246_RIGHTS_SCOPE_DETERMINATION",
+              "1983",
+              "影印许可与票据所",
+              "有权范围决定"
+            ],
+            "hit_terms": [
+              "1983",
+              "影印许可与票据所",
+              "有权范围决定"
+            ],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.0805,
+        "scene_evidence": [
+          {
+            "location": "市海港缩微资料库封闭阅片室",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_246_MICROFILM_FRAME_LOG",
+            "display_name": "HV-19相关卷监督阅片帧号日志",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_246_RIGHTS_SCOPE_DETERMINATION",
+            "display_name": "1983影印许可与票据所有权范围决定",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      }
+    },
+    "joint": {
+      "245": {
+        "han_chars": 1256,
+        "total_chars": 1581,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "246": {
+        "han_chars": 1321,
+        "total_chars": 1651,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 4,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.1173,
+      "resolution_signatures": {
+        "first": {
+          "attack": "",
+          "counter": "",
+          "resolver": "",
+          "opponent_result": "",
+          "hero_result": "获得"
+        },
+        "second": {
+          "attack": "",
+          "counter": "",
+          "resolver": "",
+          "opponent_result": "失去",
+          "hero_result": "恢复"
+        }
+      },
+      "settlement_action_terms": [
+        "失去",
+        "保留",
+        "确认",
+        "公开",
+        "版权",
+        "取得",
+        "保管"
+      ],
+      "rebirth_information_gap_markers": [
+        "前世",
+        "麦珂记得"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 225,
+          "semantic_overlap": 0.056
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 226,
+          "semantic_overlap": 0.0409
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 227,
+          "semantic_overlap": 0.049
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 228,
+          "semantic_overlap": 0.0416
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 229,
+          "semantic_overlap": 0.0437
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 230,
+          "semantic_overlap": 0.0352
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 231,
+          "semantic_overlap": 0.0481
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 232,
+          "semantic_overlap": 0.0377
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 233,
+          "semantic_overlap": 0.0411
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 234,
+          "semantic_overlap": 0.0407
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 235,
+          "semantic_overlap": 0.0505
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 236,
+          "semantic_overlap": 0.0523
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 237,
+          "semantic_overlap": 0.0507
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 238,
+          "semantic_overlap": 0.0359
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 239,
+          "semantic_overlap": 0.0424
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 240,
+          "semantic_overlap": 0.0414
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 241,
+          "semantic_overlap": 0.0568
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 242,
+          "semantic_overlap": 0.056
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 243,
+          "semantic_overlap": 0.0615
+        },
+        {
+          "chapter_id": 245,
+          "prior_chapter_id": 244,
+          "semantic_overlap": 0.0739
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 225,
+          "semantic_overlap": 0.0456
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 226,
+          "semantic_overlap": 0.0417
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 227,
+          "semantic_overlap": 0.0459
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 228,
+          "semantic_overlap": 0.0377
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 229,
+          "semantic_overlap": 0.0434
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 230,
+          "semantic_overlap": 0.0379
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 231,
+          "semantic_overlap": 0.0488
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 232,
+          "semantic_overlap": 0.0499
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 233,
+          "semantic_overlap": 0.0508
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 234,
+          "semantic_overlap": 0.0509
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 235,
+          "semantic_overlap": 0.0566
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 236,
+          "semantic_overlap": 0.0514
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 237,
+          "semantic_overlap": 0.0465
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 238,
+          "semantic_overlap": 0.0483
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 239,
+          "semantic_overlap": 0.0447
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 240,
+          "semantic_overlap": 0.0455
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 241,
+          "semantic_overlap": 0.0517
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 242,
+          "semantic_overlap": 0.0592
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 243,
+          "semantic_overlap": 0.0534
+        },
+        {
+          "chapter_id": 246,
+          "prior_chapter_id": 244,
+          "semantic_overlap": 0.0669
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "245": "8de831eded27273684a92d0fbb00c2b0940286ee580c2d508a90c475f4dc222a",
+    "246": "5a5ed5e70efee021ae4585acfa2a600b8cd6fc8d652a6020d1b864ee61e3d3f3"
+  },
+  "accepted_at": "2026-08-25T12:38:09.612364+00:00"
+}

@@ -1,0 +1,159 @@
+{
+  "cluster_id": "EC050",
+  "chapter_id": 100,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "79e954080f9c71a164c69e80fb16220a189c9b508287d2d2fa4229958efd7485",
+  "base_prompt_sha256": "79e954080f9c71a164c69e80fb16220a189c9b508287d2d2fa4229958efd7485",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "dc0f10fa185f260c9ac41dee0835faa89c33b4d7b51a5a848cb9991dd1839f06",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 12.719,
+    "usage": {
+      "prompt_tokens": 11319,
+      "completion_tokens": 959,
+      "total_tokens": 12278,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 50,
+    "through_chapter": 100,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "962bf63834f57af316c4775dc69dc539fb9bdf908144e8490d07d486eacc21d0",
+    "chapter_card_prefix_sha256": "778dbb745a487c6f56cbe090c67f3e7dde5168e6ce8b1491b334c468d04dc788",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "8827459c4656523793bc59d2f292da9c1039e3785afc0fdbb10b903885aa9f19"
+  },
+  "cluster_sha256": "bac958662e1f438a50178420c2e0226f58f2636d5ac803ffcdc27a2d53ac4c6d",
+  "card_sha256": "c75aa547d98a9f79a346a48fd0aefb7512b068d572e860a0e3bb3115c74beb90",
+  "chapter_audit": {
+    "han_chars": 1355,
+    "total_chars": 1538,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "撕毁旧约",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      },
+      {
+        "anchor": "签署新协议",
+        "exact": false,
+        "bigram_coverage": 0.25,
+        "matched": false
+      },
+      {
+        "anchor": "乔纳被失去一项具体权限",
+        "exact": false,
+        "bigram_coverage": 0.2,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "copyright_status__financial_independence__extension_EC050",
+        "target": "拥有独立监管账户且完全脱离原厂牌控制，确立独立创作人身份",
+        "evidence_terms": [
+          "麦珂当众撕毁旧约",
+          "并签署新协议",
+          "法官确认原合同无"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "employment_status__financial_control__extension_EC050",
+        "target": "彻底失去代理权并被行业公开除名，沦为旁观者",
+        "evidence_terms": [
+          "乔纳试图签字被拒",
+          "现场录音记录其失",
+          "态行为"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "trust_dynamic__family_alliance__extension_EC050",
+        "target": "铁三角稳固，母亲与盟友对麦珂的决断力产生愿意在反对后仍然留下，父亲彻底沦为局外人",
+        "evidence_terms": [
+          "玛莎当众拥抱麦珂",
+          "并宣布收回所有代",
+          "理权",
+          "黛安娜出示新协议"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0523,
+    "scene_evidence": [
+      {
+        "location": "银湾市希尔顿酒店宴会厅侧厅休息区",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_100_NEW_CONTRACT",
+        "display_name": "麦珂·杰森独立创作人协议（棱镜之声版）",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      },
+      {
+        "artifact_id": "ART_100_BURNED_PAPER",
+        "display_name": "被撕毁的旧约残片",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有兑现章卡关键事实“撕毁旧约”",
+      "正文没有兑现章卡关键事实“签署新协议”",
+      "正文没有兑现章卡关键事实“乔纳被失去一项具体权限”",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC050→拥有独立监管账户且完全脱离原厂牌控制，确立独立创作人身份",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control__extension_EC050→彻底失去代理权并被行业公开除名，沦为旁观者",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC050→铁三角稳固，母亲与盟友对麦珂的决断力产生愿意在反对后仍然留下，父亲彻底沦为局外人",
+      "正文未落到规划场景“银湾市希尔顿酒店宴会厅侧厅休息区”",
+      "正文没有写出本章正式创建的关键对象“麦珂·杰森独立创作人协议（棱镜之声版）”",
+      "正文没有写出本章正式创建的关键对象“被撕毁的旧约残片”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“撕毁旧约”",
+      "正文没有兑现章卡关键事实“签署新协议”",
+      "正文没有兑现章卡关键事实“乔纳被失去一项具体权限”",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC050→拥有独立监管账户且完全脱离原厂牌控制，确立独立创作人身份",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control__extension_EC050→彻底失去代理权并被行业公开除名，沦为旁观者",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC050→铁三角稳固，母亲与盟友对麦珂的决断力产生愿意在反对后仍然留下，父亲彻底沦为局外人",
+      "正文未落到规划场景“银湾市希尔顿酒店宴会厅侧厅休息区”",
+      "正文没有写出本章正式创建的关键对象“麦珂·杰森独立创作人协议（棱镜之声版）”",
+      "正文没有写出本章正式创建的关键对象“被撕毁的旧约残片”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

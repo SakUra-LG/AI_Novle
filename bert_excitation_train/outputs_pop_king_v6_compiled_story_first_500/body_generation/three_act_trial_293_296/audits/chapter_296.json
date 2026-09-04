@@ -1,0 +1,50 @@
+{
+  "chapter_id": 296,
+  "status": "trial_only_not_accepted",
+  "beat_plan_call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 20.373,
+    "usage": {
+      "prompt_tokens": 8775,
+      "completion_tokens": 2509,
+      "total_tokens": 11284,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "body_call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 15.194,
+    "usage": {
+      "prompt_tokens": 3737,
+      "completion_tokens": 1177,
+      "total_tokens": 4914,
+      "prompt_tokens_details": {
+        "cached_tokens": 18
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "beat_plan_sha256": "8da4e995fa53528ed1c6ce5585816a59cc7e7622e52e291f06cde4f5c648bb30",
+  "metrics": {
+    "han_chars": 1820,
+    "paragraphs": 11,
+    "dialogue_marks": 9,
+    "environment_terms": {
+      "空气": 2,
+      "冷风": 0,
+      "纸张": 2,
+      "纸浆味": 0,
+      "手指": 1,
+      "走廊": 0
+    }
+  },
+  "failures": [
+    "试写正文有效段落数11不在12—18范围",
+    "正文前三段未交代章卡年份：期望1994-06-02"
+  ]
+}

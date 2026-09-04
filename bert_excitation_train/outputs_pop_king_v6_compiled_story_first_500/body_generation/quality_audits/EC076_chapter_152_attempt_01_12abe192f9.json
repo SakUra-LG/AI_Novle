@@ -1,0 +1,160 @@
+{
+  "cluster_id": "EC076",
+  "chapter_id": 152,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "12abe192f9cc7166adf432bf26eadd72580c858ab0ffc5b6c2c97045156a95f2",
+  "base_prompt_sha256": "12abe192f9cc7166adf432bf26eadd72580c858ab0ffc5b6c2c97045156a95f2",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "024f9acdf65d6bf9db370f347f7b5005b2c19ed30d399abcdb3510d543fa4d1c",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.365,
+    "usage": {
+      "prompt_tokens": 10660,
+      "completion_tokens": 1052,
+      "total_tokens": 11712,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 76,
+    "through_chapter": 152,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "a0b777ff1155f8e62b4c6705b366bd6a5170a2afc1412e2dcecfdfe815df85a3",
+    "chapter_card_prefix_sha256": "44668c1c979458d61087c5269d41e919c06843d32c2caae7e90e212683b82942",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "20e92b4cf9865b335389488c50496506575af7bf6f4e7a09c564816fa309e359"
+  },
+  "cluster_sha256": "2127b14f0c0f617b74f0599b850e3c248686ee47e0c0e10e70daa892daa94023",
+  "card_sha256": "546a0ff0a9208160400f97a7c3a06bac69543bd9c4bf733e562748caca90609a",
+  "chapter_audit": {
+    "han_chars": 1495,
+    "total_chars": 1718,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "紫外线灯下的荧光反应特写",
+        "exact": false,
+        "bigram_coverage": 0.455,
+        "matched": true
+      },
+      {
+        "anchor": "录音笔播放的巴里·布鲁姆口供",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "莉薇娅·普莱斯展示防火墙记录的场景",
+        "exact": false,
+        "bigram_coverage": 0.467,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "trust_governance__extension_EC076",
+        "target": "secured",
+        "evidence_terms": [
+          "ART_151_FLUORESCENT_EVIDENCE"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "medical_guardianship__extension_EC076",
+        "target": "secured",
+        "evidence_terms": [
+          "ART_152_MEDICAL_FIREWALL_LOG"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "opposition_loss_EC076",
+        "target": "巴里·布鲁姆失去现场主导权，其伪造文件的行为被录音和荧光证据固定，导致‘蓝盾’公司面临法律诉讼，个人职业生涯受挫。",
+        "evidence_terms": [
+          "兰斯的隐蔽渗透计",
+          "划首次受挫",
+          "蓝盾",
+          "公司因证据不足被",
+          "起诉",
+          "奥瑞恩集团被迫调",
+          "整策略",
+          "麦珂团队成功确立",
+          "医疗决策权的独立",
+          "地位",
+          "家庭治理宪章",
+          "正式生效"
+        ],
+        "hit_terms": [
+          "兰斯的隐蔽渗透计",
+          "蓝盾",
+          "起诉",
+          "医疗决策权的独立",
+          "地位",
+          "家庭治理宪章"
+        ],
+        "matched": true
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0637,
+    "scene_evidence": [
+      {
+        "location": "律师事务所会议室",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_152_MEDICAL_FIREWALL_LOG",
+        "display_name": "医疗数据防火墙部署记录",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC076→secured",
+      "正文没有通过现场动作兑现状态转移medical_guardianship__extension_EC076→secured",
+      "正文未落到规划场景“律师事务所会议室”",
+      "正文没有写出本章正式创建的关键对象“医疗数据防火墙部署记录”"
+    ],
+    "all_validator_failures": [
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC076→secured",
+      "正文没有通过现场动作兑现状态转移medical_guardianship__extension_EC076→secured",
+      "正文未落到规划场景“律师事务所会议室”",
+      "正文没有写出本章正式创建的关键对象“医疗数据防火墙部署记录”"
+    ]
+  },
+  "failures": [
+    "第151章：汉字数2203，高于1900"
+  ],
+  "accepted": false,
+  "joint_rejected": true,
+  "joint_failures": [
+    "第151章：汉字数2203，高于1900"
+  ]
+}

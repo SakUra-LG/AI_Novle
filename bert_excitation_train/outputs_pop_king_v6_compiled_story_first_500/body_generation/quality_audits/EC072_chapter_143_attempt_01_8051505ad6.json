@@ -1,0 +1,106 @@
+{
+  "cluster_id": "EC072",
+  "chapter_id": 143,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "8051505ad602add2980c84c99e329e74b0017c7ef604d70e67d76e30431e0390",
+  "base_prompt_sha256": "8051505ad602add2980c84c99e329e74b0017c7ef604d70e67d76e30431e0390",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "d35e1fe1a2e3e2bbbd22b40995b0a2511e7f2b7f071d17b9ed73db0e87585088",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 13.649,
+    "usage": {
+      "prompt_tokens": 6734,
+      "completion_tokens": 1174,
+      "total_tokens": 7908,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 72,
+    "through_chapter": 144,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "7abd5577d120113dd8c90e8d43f236de163757a7d847de109c47e19d02fc6901",
+    "chapter_card_prefix_sha256": "b4faa21d6a92b55778f879681b7da018f9356ec23cc567bf1bd572bee35f65f1",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "7ba0cd852d377d08d4d3b34a79a36a38f142778696f4fc58e311f34b6635dfb4"
+  },
+  "cluster_sha256": "63df95e224a72695c25f0ba68273413b331bd275dbef7009c1a9c4e86dfc72f5",
+  "card_sha256": "cf227105d81e8a0cb19c4e25eadcfb766eaae10d9f06ec84118b92d9fea1b816",
+  "chapter_audit": {
+    "han_chars": 1654,
+    "total_chars": 1892,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "反向校准信号",
+        "exact": false,
+        "bigram_coverage": 0.4,
+        "matched": false
+      },
+      {
+        "anchor": "巴里·布鲁姆的慌乱",
+        "exact": false,
+        "bigram_coverage": 0.714,
+        "matched": true
+      },
+      {
+        "anchor": "清晰的广播内容",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0276,
+    "scene_evidence": [
+      {
+        "location": "市立广播中心控制室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_143_BROADCAST_LOG",
+        "display_name": "广播干扰阻断日志",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.028，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“反向校准信号”",
+      "正文没有写出本章正式创建的关键对象“广播干扰阻断日志”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.028，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“反向校准信号”",
+      "正文没有写出本章正式创建的关键对象“广播干扰阻断日志”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

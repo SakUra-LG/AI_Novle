@@ -1,0 +1,127 @@
+{
+  "cluster_id": "EC073",
+  "chapter_id": 146,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "df00880587d16b2f30972e30246804e4e9015f10cf53682bbfc86a9d84970bd2",
+  "base_prompt_sha256": "df00880587d16b2f30972e30246804e4e9015f10cf53682bbfc86a9d84970bd2",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "a5752ddbbd9423941084e5e590644b4e42a7677aaf1510284956095dc3383490",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 13.651,
+    "usage": {
+      "prompt_tokens": 9407,
+      "completion_tokens": 1080,
+      "total_tokens": 10487,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 73,
+    "through_chapter": 146,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "2e3f00651ad53429b9eea11f3de08cb57f8e747d99cbc5f4cd6ba466a7265305",
+    "chapter_card_prefix_sha256": "a2fb51863a4646a14152196ed729b88d17f0e62125bca702533e6994f5aee257",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "939b10ba7bad13228b4309fa168e0f2d9e8ac1e3e4ea332c05dd1d6b25b3e672"
+  },
+  "cluster_sha256": "d480ea1b0a7ddc051bce8c47d44a725aaf4c849afe81e4b91fbf846d2951d261",
+  "card_sha256": "05c9b57a38eceff60926cc6daa3e22d794b859cde0f627f1bc8b0a9add52dba3",
+  "chapter_audit": {
+    "han_chars": 1518,
+    "total_chars": 1734,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "录音播放时的全场寂静。",
+        "exact": false,
+        "bigram_coverage": 0.444,
+        "matched": false
+      },
+      {
+        "anchor": "巴里·布鲁姆的惊恐表情。",
+        "exact": false,
+        "bigram_coverage": 0.556,
+        "matched": true
+      },
+      {
+        "anchor": "莉薇娅·普莱斯的坚定眼神。",
+        "exact": false,
+        "bigram_coverage": 0.6,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "medical_guardianship",
+        "target": "secured",
+        "evidence_terms": [
+          "ART_145_BARRETT_CONFESION_TAPE"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "professional_standing",
+        "target": "disgraced",
+        "evidence_terms": [
+          "ART_146_COURT_RULING"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0457,
+    "scene_evidence": [
+      {
+        "location": "银湾市家庭法院听证室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_146_COURT_RULING",
+        "display_name": "法院驳回奥瑞恩集团申请的判决书",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有兑现章卡关键事实“录音播放时的全场寂静。”",
+      "正文没有通过现场动作兑现状态转移medical_guardianship→secured",
+      "正文没有通过现场动作兑现状态转移professional_standing→disgraced",
+      "正文没有写出本章正式创建的关键对象“法院驳回奥瑞恩集团申请的判决书”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“录音播放时的全场寂静。”",
+      "正文没有通过现场动作兑现状态转移medical_guardianship→secured",
+      "正文没有通过现场动作兑现状态转移professional_standing→disgraced",
+      "正文没有写出本章正式创建的关键对象“法院驳回奥瑞恩集团申请的判决书”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

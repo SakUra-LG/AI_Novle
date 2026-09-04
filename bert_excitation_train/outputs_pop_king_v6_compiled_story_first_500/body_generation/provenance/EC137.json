@@ -1,0 +1,866 @@
+{
+  "cluster_id": "EC137",
+  "chapter_span": [
+    273,
+    274
+  ],
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "body_edit_policy": "failed_body_is_regenerated_by_qwen_never_manually_patched",
+  "body_generator_contract_version": "v13_compiled_plan_strict_gates_20260822",
+  "prior_body_chain_sha256": "23290c26d8b8a7386834872c3d71b0c4ea2f651a051c6875c97d66d8661eb967",
+  "accepted_at": "2026-08-28T01:08:30.100472+00:00",
+  "model": "qwen-plus",
+  "temperature": 0.55,
+  "calls_by_chapter": {
+    "273": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 12.99,
+      "usage": {
+        "prompt_tokens": 6659,
+        "completion_tokens": 799,
+        "total_tokens": 7458,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    },
+    "274": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 12.666,
+      "usage": {
+        "prompt_tokens": 7206,
+        "completion_tokens": 716,
+        "total_tokens": 7922,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  "prompt_sha256_by_chapter": {
+    "273": "996dd0ae7020514324d60b0ccaf38f1dbc28153c59e73b88f8a54f5f20f9f39c",
+    "274": "6a82f6afe8e86705255573dfa082c71ba26aefd686a9efa8893dd7b9c4120af2"
+  },
+  "base_prompt_sha256_by_chapter": {
+    "273": "996dd0ae7020514324d60b0ccaf38f1dbc28153c59e73b88f8a54f5f20f9f39c",
+    "274": "6a82f6afe8e86705255573dfa082c71ba26aefd686a9efa8893dd7b9c4120af2"
+  },
+  "raw_response_sha256_by_chapter": {
+    "273": "0e144a419adc3e809fc25eaf8d7642beb854c3bb30d4838a9f4e10ad793c42ec",
+    "274": "e7aee4973069a3233c49767e37eeed32f02f2802f0bb479bfb9fbd503ef32eff"
+  },
+  "accepted_raw_response_paths_by_chapter": {
+    "273": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC137_chapter_273_attempt_01_996dd0ae70_raw.txt",
+    "274": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\qwen_batches\\EC137_chapter_274_attempt_01_6a82f6afe8_raw.txt"
+  },
+  "chapter_sha256": {
+    "273": "0e144a419adc3e809fc25eaf8d7642beb854c3bb30d4838a9f4e10ad793c42ec",
+    "274": "e7aee4973069a3233c49767e37eeed32f02f2802f0bb479bfb9fbd503ef32eff"
+  },
+  "chapter_han_chars": {
+    "273": 1092,
+    "274": 1014
+  },
+  "planning_story_id": "planning-a2e1a6cde3554db6",
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 137,
+    "through_chapter": 274,
+    "outline_sha256": "a2e1a6cde3554db62a9f0842db92c9c580a6e553f71f71d883089f965c5f11b5",
+    "event_prefix_sha256": "3bbd8a80435327209635c9f329fc8482b9b8d4b69caca54ce8a40191fd983293",
+    "chapter_card_prefix_sha256": "39429393ef40422082148aacdaf84e32ecfda130c8701be1d0296483e2681148",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "a76ed2fbe70fc80e1900d04cd78aecc436e09b8066982b8bc539accfd2f560d2"
+  },
+  "cluster_sha256": "22f92a79e1b24deb7487fd1755b276e286ae3b1e1427213de624fd6d4ad74ce4",
+  "card_sha256_by_chapter": {
+    "273": "b2a403d6c0104d2b01327e417257934aba12d68de95cb9e7b41ea05bb9067aec",
+    "274": "b0accccfaacd9fff5ef76560d5929756726e4cda0494a15615241fda5b8ff82e"
+  },
+  "planning_inputs": {
+    "event_clusters": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\event_clusters_v2.json",
+    "chapter_cards": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\master_ctx_cards_v2.json"
+  },
+  "semantic_critic": {
+    "273": {
+      "han_chars": 1092,
+      "total_chars": 1268,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 1,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "274": {
+      "han_chars": 1014,
+      "total_chars": 1161,
+      "target_han_range": [
+        1200,
+        1600
+      ],
+      "must_include_exact_hits": 0,
+      "must_include_total": 3,
+      "failures": []
+    },
+    "joint_semantic_overlap": 0.1065,
+    "resolution_signatures": {
+      "first": {
+        "attack": "",
+        "counter": "",
+        "resolver": "",
+        "opponent_result": "",
+        "hero_result": ""
+      },
+      "second": {
+        "attack": "",
+        "counter": "签字",
+        "resolver": "",
+        "opponent_result": "失去",
+        "hero_result": "保住"
+      }
+    },
+    "settlement_action_terms": [
+      "失去",
+      "确认",
+      "公开",
+      "取得",
+      "承担"
+    ],
+    "rebirth_information_gap_markers": [],
+    "manual_review_required": [
+      "第274章与第272章语义重合度0.12处于人工复核区间"
+    ],
+    "recent_twenty_chapter_semantic_comparison": [
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 253,
+        "semantic_overlap": 0.0227
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 254,
+        "semantic_overlap": 0.0263
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 255,
+        "semantic_overlap": 0.0316
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 256,
+        "semantic_overlap": 0.0272
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 257,
+        "semantic_overlap": 0.0258
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 258,
+        "semantic_overlap": 0.02
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 259,
+        "semantic_overlap": 0.0274
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 260,
+        "semantic_overlap": 0.0266
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 261,
+        "semantic_overlap": 0.0324
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 262,
+        "semantic_overlap": 0.0308
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 263,
+        "semantic_overlap": 0.0266
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 264,
+        "semantic_overlap": 0.0222
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 265,
+        "semantic_overlap": 0.0286
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 266,
+        "semantic_overlap": 0.0268
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 267,
+        "semantic_overlap": 0.0249
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 268,
+        "semantic_overlap": 0.0209
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 269,
+        "semantic_overlap": 0.029
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 270,
+        "semantic_overlap": 0.0293
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 271,
+        "semantic_overlap": 0.0928
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 272,
+        "semantic_overlap": 0.112
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 253,
+        "semantic_overlap": 0.0299
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 254,
+        "semantic_overlap": 0.0351
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 255,
+        "semantic_overlap": 0.028
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 256,
+        "semantic_overlap": 0.025
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 257,
+        "semantic_overlap": 0.0259
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 258,
+        "semantic_overlap": 0.0307
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 259,
+        "semantic_overlap": 0.0264
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 260,
+        "semantic_overlap": 0.0261
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 261,
+        "semantic_overlap": 0.037
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 262,
+        "semantic_overlap": 0.031
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 263,
+        "semantic_overlap": 0.0208
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 264,
+        "semantic_overlap": 0.0303
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 265,
+        "semantic_overlap": 0.0331
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 266,
+        "semantic_overlap": 0.0238
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 267,
+        "semantic_overlap": 0.0423
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 268,
+        "semantic_overlap": 0.0293
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 269,
+        "semantic_overlap": 0.0314
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 270,
+        "semantic_overlap": 0.0382
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 271,
+        "semantic_overlap": 0.1013
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 272,
+        "semantic_overlap": 0.1155
+      }
+    ],
+    "same_plot_family_recent_forty_comparison": [
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 233,
+        "semantic_overlap": 0.0278
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 234,
+        "semantic_overlap": 0.0256
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 235,
+        "semantic_overlap": 0.0349
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 236,
+        "semantic_overlap": 0.0244
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 237,
+        "semantic_overlap": 0.0224
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 238,
+        "semantic_overlap": 0.0184
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 239,
+        "semantic_overlap": 0.0251
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 240,
+        "semantic_overlap": 0.0307
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 241,
+        "semantic_overlap": 0.0288
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 242,
+        "semantic_overlap": 0.0322
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 243,
+        "semantic_overlap": 0.0332
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 244,
+        "semantic_overlap": 0.0257
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 245,
+        "semantic_overlap": 0.0283
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 246,
+        "semantic_overlap": 0.0288
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 247,
+        "semantic_overlap": 0.0291
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 248,
+        "semantic_overlap": 0.0264
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 249,
+        "semantic_overlap": 0.0285
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 250,
+        "semantic_overlap": 0.0283
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 251,
+        "semantic_overlap": 0.025
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 252,
+        "semantic_overlap": 0.0254
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 253,
+        "semantic_overlap": 0.0227
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 254,
+        "semantic_overlap": 0.0263
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 255,
+        "semantic_overlap": 0.0316
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 256,
+        "semantic_overlap": 0.0272
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 257,
+        "semantic_overlap": 0.0258
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 258,
+        "semantic_overlap": 0.02
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 259,
+        "semantic_overlap": 0.0274
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 260,
+        "semantic_overlap": 0.0266
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 261,
+        "semantic_overlap": 0.0324
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 262,
+        "semantic_overlap": 0.0308
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 263,
+        "semantic_overlap": 0.0266
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 264,
+        "semantic_overlap": 0.0222
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 265,
+        "semantic_overlap": 0.0286
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 266,
+        "semantic_overlap": 0.0268
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 267,
+        "semantic_overlap": 0.0249
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 268,
+        "semantic_overlap": 0.0209
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 269,
+        "semantic_overlap": 0.029
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 270,
+        "semantic_overlap": 0.0293
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 271,
+        "semantic_overlap": 0.0928
+      },
+      {
+        "chapter_id": 273,
+        "prior_chapter_id": 272,
+        "semantic_overlap": 0.112
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 233,
+        "semantic_overlap": 0.0274
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 234,
+        "semantic_overlap": 0.0322
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 235,
+        "semantic_overlap": 0.034
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 236,
+        "semantic_overlap": 0.0288
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 237,
+        "semantic_overlap": 0.0247
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 238,
+        "semantic_overlap": 0.0211
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 239,
+        "semantic_overlap": 0.0304
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 240,
+        "semantic_overlap": 0.0264
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 241,
+        "semantic_overlap": 0.0306
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 242,
+        "semantic_overlap": 0.0362
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 243,
+        "semantic_overlap": 0.0317
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 244,
+        "semantic_overlap": 0.0343
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 245,
+        "semantic_overlap": 0.0295
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 246,
+        "semantic_overlap": 0.029
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 247,
+        "semantic_overlap": 0.0326
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 248,
+        "semantic_overlap": 0.0288
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 249,
+        "semantic_overlap": 0.027
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 250,
+        "semantic_overlap": 0.0279
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 251,
+        "semantic_overlap": 0.0261
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 252,
+        "semantic_overlap": 0.025
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 253,
+        "semantic_overlap": 0.0299
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 254,
+        "semantic_overlap": 0.0351
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 255,
+        "semantic_overlap": 0.028
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 256,
+        "semantic_overlap": 0.025
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 257,
+        "semantic_overlap": 0.0259
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 258,
+        "semantic_overlap": 0.0307
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 259,
+        "semantic_overlap": 0.0264
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 260,
+        "semantic_overlap": 0.0261
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 261,
+        "semantic_overlap": 0.037
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 262,
+        "semantic_overlap": 0.031
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 263,
+        "semantic_overlap": 0.0208
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 264,
+        "semantic_overlap": 0.0303
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 265,
+        "semantic_overlap": 0.0331
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 266,
+        "semantic_overlap": 0.0238
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 267,
+        "semantic_overlap": 0.0423
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 268,
+        "semantic_overlap": 0.0293
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 269,
+        "semantic_overlap": 0.0314
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 270,
+        "semantic_overlap": 0.0382
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 271,
+        "semantic_overlap": 0.1013
+      },
+      {
+        "chapter_id": 274,
+        "prior_chapter_id": 272,
+        "semantic_overlap": 0.1155
+      }
+    ],
+    "semantic_critic": {
+      "knowledge_boundary": {
+        "ok": true,
+        "evidence": [
+          "Only Ma Ke possesses rebirth knowledge; other characters (Diana, Irene, Victor) act based on current evidence and logic.",
+          "Ma Ke uses past-life memory only to guide the sequence of actions (checking CR-41 columns first), not to reveal specific outcomes to others."
+        ]
+      },
+      "character_state": {
+        "ok": true,
+        "evidence": [
+          "Ma Ke's role as a singer/creator is respected; he acts through procedural observation rather than direct authority.",
+          "Irene's trait root (independence/boundaries) is shown by her insisting 'technical opinion cannot replace authorization' and blocking Victor's pressure.",
+          "Victor's reaction aligns with his character: trying to expand scope and control but failing due to procedural rigidity.",
+          "Diana's anxiety is shown physically (clutching衣角) without breaking her calm demeanor."
+        ]
+      },
+      "timeline_causality": {
+        "ok": true,
+        "evidence": [
+          "Chapter dates (1993-09-28) are consistent with the plan and previous chapters (272 ended on 1993-09-18).",
+          "Causal chain: Missing signature identified in Ch273 -> Suspended pending explanation -> Proof of timeline inversion (shift log) in Ch274 -> Final limited suspension decision.",
+          "No time skips contradict the established chronology."
+        ]
+      },
+      "pov_consistency": {
+        "ok": true,
+        "evidence": [
+          "Narrative perspective remains external or limited to Ma Ke's observations; no internal thoughts of Victor or the Compliance Director are revealed.",
+          "Characters do not know future events or private knowledge they shouldn't possess."
+        ]
+      },
+      "role_identity": {
+        "ok": true,
+        "evidence": [
+          "All named characters match the authoritative list (Ma Ke, Diana, Irene, Victor, Compliance Director).",
+          "No role confusion; the Compliance Director exercises only the authority granted in the plan (suspend, request explanation)."
+        ]
+      },
+      "authority_scope": {
+        "ok": true,
+        "evidence": [
+          "Compliance Director does not issue permanent bans or industry blacklists; decision is limited to 'pause public use' and 'allow re-application'.",
+          "Victor attempts to overreach but is stopped by the Director's adherence to rules.",
+          "Ma Ke does not claim authority he doesn't have; he presents evidence for the Director to decide."
+        ]
+      },
+      "evidence_supports_conclusion": {
+        "ok": true,
+        "evidence": [
+          "Conclusion (missing review signature) is supported by physical comparison of ink positions and page numbers.",
+          "Ch274 conclusion (approval before review) is supported by the shift log showing timestamp inversion, not just assumption.",
+          "The final outcome (limited suspension) directly follows from the evidence of incomplete process."
+        ]
+      },
+      "outcome_overreach": {
+        "ok": true,
+        "evidence": [
+          "Result is explicitly 'limited procedural protection' for 'this excerpt only', not a total shutdown of the program.",
+          "Cost is 'temporary exit from schedule', not permanent career destruction or asset loss.",
+          "Plan constraint 'not replay same contract-document-authority template' is met by focusing on the specific CR-41 column gap."
+        ]
+      },
+      "repeated_resolution_pattern": {
+        "ok": true,
+        "evidence": [
+          "Conflict resolution relies on specific document analysis (CR-41 columns, shift logs) rather than generic 'victory speeches' or 'legal threats'.",
+          "Payoff is a procedural win (suspension + re-application path) distinct from previous financial audits or news corrections."
+        ]
+      },
+      "era_technology": {
+        "ok": true,
+        "evidence": [
+          "Evidence relies on paper records, physical signatures, shift logs, and manual comparisons.",
+          "No digital screens, email, or internet used; 1993 context is maintained (paper archives, physical stamps)."
+        ]
+      },
+      "artifact_scope": {
+        "ok": true,
+        "evidence": [
+          "CR-41 Authority Column Table is used strictly within its defined purpose (verifying approval steps).",
+          "Shift logs are used only to prove timeline order, not to infer guilt or intent beyond the scope."
+        ]
+      },
+      "cost_persistence": {
+        "ok": true,
+        "evidence": [
+          "The cost ('excerpt temporarily removed from schedule') is explicitly stated and persists until the condition (补齐复核) is met.",
+          "Cost is not silently expanded into a permanent ban or broader penalty."
+        ]
+      },
+      "character_flaw_integration": {
+        "ok": true,
+        "evidence": [
+          "Ma Ke's flaw (tendency to control/manage risk) is integrated by him presenting facts but letting the Director make the final call, resisting the urge to force a quick fix.",
+          "Victor's flaw (control/safety obsession) drives his attempt to bypass the missing signature, leading to his downfall."
+        ]
+      },
+      "plan_summary_leak": {
+        "ok": true,
+        "evidence": [
+          "Prose contains no meta-instructions, planning labels, or summary fields (e.g., no 'chapter_goal' text in dialogue).",
+          "Narrative flows naturally without revealing the 'two-chapter setup/payoff' structure explicitly."
+        ]
+      }
+    },
+    "semantic_critic_call": {
+      "model": "qwen-plus",
+      "transport": "openai_compatible_curl",
+      "elapsed_seconds": 23.305,
+      "usage": {
+        "prompt_tokens": 36648,
+        "completion_tokens": 1289,
+        "total_tokens": 37937,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+    }
+  },
+  "quality_review_status": "awaiting_manual_read"
+}

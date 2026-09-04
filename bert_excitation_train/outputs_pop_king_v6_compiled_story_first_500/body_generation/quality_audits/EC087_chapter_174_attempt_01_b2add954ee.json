@@ -1,0 +1,133 @@
+{
+  "cluster_id": "EC087",
+  "chapter_id": 174,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "b2add954ee83ddaeb9e34d6d22638bae1546faae8bc67072b695781e7c589e94",
+  "base_prompt_sha256": "b2add954ee83ddaeb9e34d6d22638bae1546faae8bc67072b695781e7c589e94",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "13740fccd7f8f12f0aabd5f871811d6038c7b9a6109dda1df89088be097a95ae",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 15.923,
+    "usage": {
+      "prompt_tokens": 9187,
+      "completion_tokens": 1094,
+      "total_tokens": 10281,
+      "prompt_tokens_details": {
+        "cached_tokens": 5042
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 87,
+    "through_chapter": 174,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "09ca393a3bce330873ef3e7a96c347e1a17d5712af13b62c2506a108a03014cd",
+    "chapter_card_prefix_sha256": "c0ebb97d12597f232703e15b7cc701c2e8e05a724392d1c5b85423b018e454f5",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "e865e2a6efeb4182270229c3f90bc934d9f550e83b8bdb3dc2bf22c20e9fa0c1"
+  },
+  "cluster_sha256": "1190c247463d98e1373f288f30ecb6e8cf3744af85d1ad2a7b42974c5991a4ff",
+  "card_sha256": "aba690d50983b0c6fb5105c0e47cf18f7189c91dbdf71b665d5ffde2aa2d4a39",
+  "chapter_audit": {
+    "han_chars": 1590,
+    "total_chars": 1808,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 4,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "显微镜笔迹分析",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "笔压与倾斜角对比",
+        "exact": false,
+        "bigram_coverage": 0.857,
+        "matched": true
+      },
+      {
+        "anchor": "晨间口诀敲击节拍记录",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "公证处盖章",
+        "exact": false,
+        "bigram_coverage": 0.75,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "trust_governance__extension_EC087",
+        "target": "fortified",
+        "evidence_terms": [
+          "DOC_173_ORIGINAL_MEDICAL_RECORD"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "validity_status",
+        "target": "enforced",
+        "evidence_terms": [
+          "DOC_174_NOTARIZED_CERTIFICATE"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0536,
+    "scene_evidence": [
+      {
+        "location": "公证处鉴定室",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_174_NOTARIZED_CERTIFICATE",
+        "display_name": "公证处笔迹鉴定证书",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC087→fortified",
+      "正文没有通过现场动作兑现状态转移validity_status→enforced",
+      "正文未落到规划场景“公证处鉴定室”",
+      "正文没有写出本章正式创建的关键对象“公证处笔迹鉴定证书”"
+    ],
+    "all_validator_failures": [
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC087→fortified",
+      "正文没有通过现场动作兑现状态转移validity_status→enforced",
+      "正文未落到规划场景“公证处鉴定室”",
+      "正文没有写出本章正式创建的关键对象“公证处笔迹鉴定证书”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

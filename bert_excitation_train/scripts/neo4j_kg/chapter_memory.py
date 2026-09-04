@@ -419,11 +419,16 @@ def _heuristic_memory(chapter: int, content: str, known_names: Iterable[str]) ->
     )
 
     def is_historical_death_match(match: re.Match[str]) -> bool:
-        if not rebirth_awakening:
-            return False
         window = (content or "")[
             max(0, match.start() - 120) : min(len(content or ""), match.end() + 120)
         ]
+        # Historical death references also occur long after the rebirth
+        # chapter (e.g. “上一世……走向死亡，但这一次不同”). They must not
+        # depend on the local chapter containing the word “重生”.
+        if re.search(r"上一世|前世|生前|死前|临死|历史上", window, re.S):
+            return True
+        if not rebirth_awakening:
+            return False
         return bool(
             re.search(
                 r"上一世|前世|死亡的记忆|死前|临死|"
@@ -492,6 +497,10 @@ def _heuristic_memory(chapter: int, content: str, known_names: Iterable[str]) ->
             for pattern in death_patterns
             for match in re.finditer(pattern, content or "", flags=re.I)
             if not is_historical_death_match(match)
+            and not re.search(
+                r"堵死|憋死|累死|吓死|气死|烦死|死死|该死|找死|急死",
+                match.group(0),
+            )
         ]
         if mode == "active" and death_matches:
             state_changes.append({
@@ -499,8 +508,12 @@ def _heuristic_memory(chapter: int, content: str, known_names: Iterable[str]) ->
                 "reason": "正文明确死亡", "evidence": joined[:300], "permanent": True, "confidence": 0.82,
             })
     if not state_changes:
+        # A flat audio/signal waveform is common in performance scenes and
+        # must not be promoted to a death event. Require explicit ECG/life-
+        # sign context for waveform evidence; cardiac arrest phrases remain
+        # valid independent signals.
         global_death = re.search(
-            r"心电图.{0,100}(?:拉平|直线)|波形.{0,60}(?:拉平|直线)|"
+            r"(?:心电图|心电|监护仪|生命体征).{0,100}(?:拉平|直线|停止)|"
             r"心脏.{0,30}(?:骤停|停跳|停止搏动|不再搏动)|"
             r"呼吸.{0,20}(?:停止(?!键|按钮|开关)|断绝)",
             content or "",
@@ -1267,6 +1280,7 @@ def validate_transition(prior_state: Dict[str, Any], candidate: Dict[str, Any]) 
         for (name, _state_key), value in current.items()
         if _text(value.get("field"), 80).lower() == "life_status"
         and _text(value.get("new_value"), 40).lower() in TERMINAL_LIFE_STATUS
+        and re.search(r"(?:\u53bb\u4e16|\u6b7b\u4ea1|\u6b7b\u4e86|\u54bd\u6c14|\u8eab\u4ea1|\u65ad\u6c14|pronounced dead|was dead)", _text(value.get("evidence"), 400), re.I)
     }
     violations: List[ContinuityViolation] = []
 
@@ -1310,7 +1324,11 @@ def validate_transition(prior_state: Dict[str, Any], candidate: Dict[str, Any]) 
                 character=name,
                 evidence=_text(change.get("evidence"), 240),
             ))
-        if old and field in STRICT_OLD_VALUE_FIELDS and _text(change.get("old_value"), 240):
+        # Occupation is frequently duplicated across this plan's alias-heavy
+        # functional roles (e.g. Barry's several representative labels). Do
+        # not let a stale merged occupation block otherwise valid prose;
+        # life/location/health remain strict continuity gates.
+        if old and field in (STRICT_OLD_VALUE_FIELDS - {"occupation"}) and _text(change.get("old_value"), 240):
             declared_old = _text(change.get("old_value"), 240).casefold()
             actual_old = _text(old.get("new_value"), 240).casefold()
             if not _state_values_equal(field, declared_old, actual_old):

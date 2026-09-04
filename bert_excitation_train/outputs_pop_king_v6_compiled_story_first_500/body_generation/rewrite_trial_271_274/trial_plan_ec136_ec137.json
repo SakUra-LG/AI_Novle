@@ -1,0 +1,46 @@
+{
+  "status": "candidate_only",
+  "formal_promotion": false,
+  "story_memory_write": false,
+  "neo4j_write": false,
+  "continuity_anchor": {
+    "previous_formal_chapter": 270,
+    "previous_formal_date": "1993-09-17",
+    "artifact_definition": {
+      "BA-83-11": "场馆设备收购付款索引及关联复印件",
+      "CR-41": "复制授权批准号"
+    },
+    "route": "初声基金核验室→来源目录→河湾镇档案馆"
+  },
+  "event_clusters": [
+    {
+      "cluster_id": "EC136",
+      "chapter_span": [271, 272],
+      "irreplaceable_progress_point": "从BA-83-11原记录箱追到复制申请经手岗位与责任链入口，不判断恶意，不签发暂停使用决定",
+      "chapter_specs": [
+        {"chapter_id": 271, "date": "1993-09-18", "progress": "定位来源箱与遗漏的复制申请", "forbidden_progress": ["暂停使用", "合同谈判", "证明经手人恶意"]},
+        {"chapter_id": 272, "date": "1993-09-18", "progress": "沿登记、交接单和当班记录确认实际经手岗位，并锁定待核查部门与批准人", "forbidden_progress": ["暂停使用决定", "用途结算", "合同谈判"]}
+      ],
+      "main_character_ids": ["CHAR_026AC753E27A", "CHAR_8C6A51D4E9F2"],
+      "participant_ids": ["CHAR_9577B35020B0", "CHAR_D1E2F3A4B5C6", "CHAR_A1B2C3D4E5F6", "CHAR_5A9B7C2D4E10"]
+    },
+    {
+      "cluster_id": "EC137",
+      "chapter_span": [273, 274],
+      "irreplaceable_progress_point": "核对CR-41申请人的部门权限并定位缺失签名环节，只对该摘录取得有限程序保护",
+      "chapter_specs": [
+        {"chapter_id": 273, "date": "1993-09-19", "progress": "核对职位栏、部门授权范围及申请页与批准页脱链原因", "forbidden_progress": ["宣传用途获准", "培训手册获准", "商业授权获准"]},
+        {"chapter_id": 274, "date": "1993-09-19", "progress": "定位缺失签名在申请、复核或批准环节，并对这份摘录取得范围受限的暂停使用结果", "forbidden_progress": ["节目部整体暂停", "永久封禁", "合同谈判"]}
+      ],
+      "main_character_ids": ["CHAR_026AC753E27A", "CHAR_B24EF2E733C9", "CHAR_8C6A51D4E9F2"],
+      "participant_ids": ["CHAR_9577B35020B0", "CHAR_D1E2F3A4B5C6", "CHAR_A1B2C3D4E5F6", "CHAR_5A9B7C2D4E10"]
+    },
+    {
+      "cluster_id": "EC138",
+      "chapter_span": [275, 276],
+      "irreplaceable_progress_point": "处理内部核对与公开宣传用途的合同适用范围，并拒绝自动扩权",
+      "core_actions": ["签订合同", "合同生效", "自动延长", "制作培训手册", "商业授权获准"],
+      "chapter_specs": []
+    }
+  ]
+}

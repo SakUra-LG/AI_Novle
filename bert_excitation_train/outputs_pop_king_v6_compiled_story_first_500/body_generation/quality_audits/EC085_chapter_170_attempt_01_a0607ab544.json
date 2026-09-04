@@ -1,0 +1,131 @@
+{
+  "cluster_id": "EC085",
+  "chapter_id": 170,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "a0607ab544befaf22792bb9fc0586eaa604e77536ef364b13740e1905a69f924",
+  "base_prompt_sha256": "a0607ab544befaf22792bb9fc0586eaa604e77536ef364b13740e1905a69f924",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "a286c567e43084ed3f0edf39ac108ae357cf3d0d35aabcdeab4496ef15e63514",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 11.344,
+    "usage": {
+      "prompt_tokens": 9340,
+      "completion_tokens": 939,
+      "total_tokens": 10279,
+      "prompt_tokens_details": {
+        "cached_tokens": 4993
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 85,
+    "through_chapter": 170,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "86483597955f05f3f2c5afd311b2a30cb172e57c5bdc12bdbbd9573d7161f731",
+    "chapter_card_prefix_sha256": "d76386d3ebd42a5241eab164751869fae07410c2c480668404a1af1757f0835c",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "34bf6a3ccd0081db1854601e228badc68ce1fa6b0d282731c495e42f20c0a5be"
+  },
+  "cluster_sha256": "e7acd481cacb5b6b0ab305faf68efd9740150736a6f9441e338576cb6c6fce74",
+  "card_sha256": "7bd788dd3c6486aafcd9e5347153f55cf5f7daee4a820504f6eb2f34183b5a98",
+  "chapter_audit": {
+    "han_chars": 1384,
+    "total_chars": 1578,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 2,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "酸性显影液残留样本",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "胶片边缘特定氧化斑点",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "巨额赔偿金",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "trust_governance__extension_EC085",
+        "target": "secured",
+        "evidence_terms": [
+          "ART_169_ACOUSTIC_VISUALIZATION_REPORT"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "opposition_loss_EC085",
+        "target": "奥瑞恩集团资金链反制失败，胶片控制权丧失。",
+        "evidence_terms": [
+          "ART_170_FILM_OXIDATION_CERTIFICATE"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 2,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.044,
+    "scene_evidence": [
+      {
+        "location": "胶片厂实验室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_170_FILM_OXIDATION_CERTIFICATE",
+        "display_name": "胶片氧化斑点鉴定证书",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC085→secured",
+      "正文没有通过现场动作兑现状态转移opposition_loss_EC085→奥瑞恩集团资金链反制失败，胶片控制权丧失。",
+      "正文没有写出本章正式创建的关键对象“胶片氧化斑点鉴定证书”"
+    ],
+    "all_validator_failures": [
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC085→secured",
+      "正文没有通过现场动作兑现状态转移opposition_loss_EC085→奥瑞恩集团资金链反制失败，胶片控制权丧失。",
+      "正文没有写出本章正式创建的关键对象“胶片氧化斑点鉴定证书”"
+    ]
+  },
+  "failures": [
+    "第169章与前5章中的第167章语义重合度0.17过高，疑似重演旧事件"
+  ],
+  "accepted": false,
+  "joint_rejected": true,
+  "joint_failures": [
+    "第169章与前5章中的第167章语义重合度0.17过高，疑似重演旧事件"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "cluster_id": "EC074",
+  "chapter_id": 148,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "3f37b6a5f579eee36999959c972539cf643a1d7581a98e04d3c2e266ef28a412",
+  "base_prompt_sha256": "3f37b6a5f579eee36999959c972539cf643a1d7581a98e04d3c2e266ef28a412",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "5ec3f453545585d8c331a07c4822de55b22697b991bcd192a969614f1bb553ad",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 11.306,
+    "usage": {
+      "prompt_tokens": 8542,
+      "completion_tokens": 939,
+      "total_tokens": 9481,
+      "prompt_tokens_details": {
+        "cached_tokens": 4643
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 74,
+    "through_chapter": 148,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "fc85295a9eb411eacfb23c819ac94b730e7e183c0f9deee57ca76c88b99eebbe",
+    "chapter_card_prefix_sha256": "6bd07864e0b844bcf8702375d8ac42f1c23c485512bc62bcb4e6400f72226f34",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "b22589c528e8073533b9a8c74ace9bbf1c0e80a80a2ac04efc9190079776027a"
+  },
+  "cluster_sha256": "e16c60c5f1420615e2ce65a73531542cdfc435019ae87c459aa3346bcdf7765e",
+  "card_sha256": "e5ebd38985b8250a4a26970944c0eae7f2d4d94dd22c98da74a55a731338619c",
+  "chapter_audit": {
+    "han_chars": 1362,
+    "total_chars": 1538,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "法官的最终判决",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "宪章生效仪式",
+        "exact": false,
+        "bigram_coverage": 0.4,
+        "matched": false
+      },
+      {
+        "anchor": "维克多的阴鸷眼神",
+        "exact": false,
+        "bigram_coverage": 0.857,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "trust_governance",
+        "target": "secured",
+        "evidence_terms": [
+          "ART_147_JUDICIAL_CHARTER_SEAL"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "legal_standing",
+        "target": "defensive",
+        "evidence_terms": [
+          "ART_148_COURT_ORDER"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0249,
+    "scene_evidence": [
+      {
+        "location": "法庭",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.025，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“宪章生效仪式”",
+      "正文没有通过现场动作兑现状态转移trust_governance→secured",
+      "正文没有通过现场动作兑现状态转移legal_standing→defensive"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.025，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“宪章生效仪式”",
+      "正文没有通过现场动作兑现状态转移trust_governance→secured",
+      "正文没有通过现场动作兑现状态转移legal_standing→defensive"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

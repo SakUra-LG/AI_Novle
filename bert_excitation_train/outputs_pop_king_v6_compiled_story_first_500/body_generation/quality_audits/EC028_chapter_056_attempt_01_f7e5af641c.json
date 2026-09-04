@@ -1,0 +1,129 @@
+{
+  "cluster_id": "EC028",
+  "chapter_id": 56,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "f7e5af641cf991c0a7fddc3efb715bd8fe9c0c759647eeb8090f4b038f0a727b",
+  "base_prompt_sha256": "f7e5af641cf991c0a7fddc3efb715bd8fe9c0c759647eeb8090f4b038f0a727b",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "e416f26ee788023da54a0d9ba81698ad568af5b12fa080e29fc0cb93d22ff9a6",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 17.272,
+    "usage": {
+      "prompt_tokens": 9375,
+      "completion_tokens": 945,
+      "total_tokens": 10320,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 28,
+    "through_chapter": 56,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "6b7f4e044efd0e6d47150263f7d185281c16654f1b244e4666d02219cd45191f",
+    "chapter_card_prefix_sha256": "c227cd91ff8cd0ed850c6e05d1e9337599a99e1fa240c4426e957e9b5bea01e4",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "a0411303960768536aa908f41e28fdebfa00e2a748f16d268f9db0b66333bb51"
+  },
+  "cluster_sha256": "d681585aea2eac118ba5f9fbda736e0089f1faab90e163455ce3ae4cbb09b3ad",
+  "card_sha256": "4c011582eef8e30bcae3fb5c35e0ce24039bfc631c0f7bb0a6598e430d88b318",
+  "chapter_audit": {
+    "han_chars": 1317,
+    "total_chars": 1548,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "玛莎公开拒绝签署",
+        "exact": false,
+        "bigram_coverage": 0.143,
+        "matched": false
+      },
+      {
+        "anchor": "黛安娜接管财务",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "乔纳承认错误",
+        "exact": false,
+        "bigram_coverage": 0.2,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "copyright_status__financial_independence__extension_EC028",
+        "target": "拥有独立监管账户且临时代理协议失效",
+        "evidence_terms": [
+          "温特律师宣读加州",
+          "法律条款",
+          "证明协议无效"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "trust_dynamic__family_alliance__extension_EC028",
+        "target": "铁三角稳固，父亲被彻底隔离且丧失签字权",
+        "evidence_terms": [
+          "乔纳在众目睽睽下",
+          "承认无法解释法律",
+          "漏洞",
+          "被迫退让"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0339,
+    "scene_evidence": [
+      {
+        "location": "河湾镇家庭会议室",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.034，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“玛莎公开拒绝签署”",
+      "正文没有兑现章卡关键事实“乔纳承认错误”",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC028→拥有独立监管账户且临时代理协议失效",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC028→铁三角稳固，父亲被彻底隔离且丧失签字权",
+      "正文未落到规划场景“河湾镇家庭会议室”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.034，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“玛莎公开拒绝签署”",
+      "正文没有兑现章卡关键事实“乔纳承认错误”",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC028→拥有独立监管账户且临时代理协议失效",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC028→铁三角稳固，父亲被彻底隔离且丧失签字权",
+      "正文未落到规划场景“河湾镇家庭会议室”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

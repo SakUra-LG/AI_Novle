@@ -1,0 +1,139 @@
+{
+  "cluster_id": "EC041",
+  "chapter_id": 82,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "939320e98626c85721ff993788c3b911e0a870464fb81835aba21d1fc665f0bb",
+  "base_prompt_sha256": "939320e98626c85721ff993788c3b911e0a870464fb81835aba21d1fc665f0bb",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "4d3f842c7d6c2ecb7a43cb411e7667904f2a88c14456dc37a78f036701c7bfc6",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 12.569,
+    "usage": {
+      "prompt_tokens": 10398,
+      "completion_tokens": 1030,
+      "total_tokens": 11428,
+      "prompt_tokens_details": {
+        "cached_tokens": 5689
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 41,
+    "through_chapter": 82,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "24df28c4c62c2d83a7e0cec2dcc15e0978148369b61d9898fb80873577f3d022",
+    "chapter_card_prefix_sha256": "926bc9bdfd389ee525260735f7066afba4ef44aad98f89b7a6c1f24171fe8986",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "9411c88254f28dd9336c844abf8956236344d56e7f0fb4a32ac60adcbc0744e8"
+  },
+  "cluster_sha256": "096f7f94c08e2e1e1e296df44538cfae8f87ab18537615d8cea095a9c2cd9230",
+  "card_sha256": "30f6c9f2c2698aa5d0d9e55d948b4a1209fc7a68d827d61326dd49153a9f17fe",
+  "chapter_audit": {
+    "han_chars": 1480,
+    "total_chars": 1699,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "玛莎撕毁授权书",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      },
+      {
+        "anchor": "黛安娜出示转账记录",
+        "exact": false,
+        "bigram_coverage": 0.375,
+        "matched": false
+      },
+      {
+        "anchor": "乔纳承认无法解释资金去向",
+        "exact": false,
+        "bigram_coverage": 0.273,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "copyright_status__financial_independence__extension_EC041",
+        "target": "拥有独立监管账户且无债务抵押风险",
+        "evidence_terms": [
+          "麦珂当庭出示气象",
+          "数据并驳回换曲要"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "employment_status__financial_control",
+        "target": "丧失财政控制权且被永久禁止接触财务流程",
+        "evidence_terms": [
+          "玛莎当众宣读银行",
+          "流水并拒绝乔纳签"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "control_over_recording__extension_EC041",
+        "target": "完全丧失且信誉受损",
+        "evidence_terms": [
+          "卡尔",
+          "霍尔特虚假数据被",
+          "公开揭露"
+        ],
+        "hit_terms": [
+          "卡尔"
+        ],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0521,
+    "scene_evidence": [
+      {
+        "location": "银湾市录音室走廊及家庭临时会议区",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文没有兑现章卡关键事实“黛安娜出示转账记录”",
+      "正文没有兑现章卡关键事实“乔纳承认无法解释资金去向”",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC041→拥有独立监管账户且无债务抵押风险",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control→丧失财政控制权且被永久禁止接触财务流程",
+      "正文没有通过现场动作兑现状态转移control_over_recording__extension_EC041→完全丧失且信誉受损",
+      "正文未落到规划场景“银湾市录音室走廊及家庭临时会议区”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“黛安娜出示转账记录”",
+      "正文没有兑现章卡关键事实“乔纳承认无法解释资金去向”",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC041→拥有独立监管账户且无债务抵押风险",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control→丧失财政控制权且被永久禁止接触财务流程",
+      "正文没有通过现场动作兑现状态转移control_over_recording__extension_EC041→完全丧失且信誉受损",
+      "正文未落到规划场景“银湾市录音室走廊及家庭临时会议区”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

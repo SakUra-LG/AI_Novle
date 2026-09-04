@@ -1,0 +1,496 @@
+{
+  "chapters": [
+    {
+      "chapter_id": 293,
+      "acts": [
+        {
+          "act_id": 1,
+          "beats": [
+            {
+              "act_id": 1,
+              "beat_id": 1,
+              "location": "录音棚控制室",
+              "time_relation": "current",
+              "active_character": "艾琳·沃特曼",
+              "immediate_goal": "核对母带清单与个人贡献记录",
+              "visible_action": "艾琳在母带清单中发现自己的和声编排被归入通用制作模板，交付后将不再显示个人贡献",
+              "resistance": "维克多·兰斯试图借时间压力催促立刻确认并交付",
+              "new_information": "发现《和声贡献确认页》缺失，且当前流程默认将个人创作归为通用模板",
+              "character_choice": "拒绝签署默认条款，要求暂停交付以核实记录",
+              "relationship_or_emotional_change": "对唱片方信任度下降，转为警惕",
+              "state_before": "期待交付完成",
+              "state_after": "警觉并启动核查程序",
+              "artifact_use": "排练分轨与修改记录（已有）",
+              "forbidden_replay": "禁止播放前后版本对比",
+              "chapter_boundary": "开启归因疑点"
+            },
+            {
+              "act_id": 1,
+              "beat_id": 2,
+              "location": "录音棚控制室",
+              "time_relation": "current",
+              "active_character": "麦珂·杰森",
+              "immediate_goal": "支持艾琳的核查请求，防止权益被吞并",
+              "visible_action": "麦珂拿出排练分轨和修改记录，只要求确认和声部分，不争整首歌所有权",
+              "resistance": "维克多·兰斯试图用“行业惯例”施压，暗示这是小事",
+              "new_information": "明确区分“和声贡献”与“整曲版权”的界限",
+              "character_choice": "坚持仅针对和声部分进行确权，不扩大争议范围",
+              "relationship_or_emotional_change": "与艾琳的协作默契加深，确立独立判断立场",
+              "state_before": "准备配合交付",
+              "state_after": "锁定局部权益，拒绝模糊处理",
+              "artifact_use": "排练分轨与修改记录（已有）",
+              "forbidden_replay": "禁止提及前世记忆或制造假证据",
+              "chapter_boundary": "提交确证材料"
+            },
+            {
+              "act_id": 1,
+              "beat_id": 3,
+              "location": "录音棚控制室",
+              "time_relation": "current",
+              "active_character": "唱片版权管理员",
+              "immediate_goal": "接收并审核《和声贡献确认页》",
+              "visible_action": "《和声贡献确认页》被版权管理员接收，母带交付暂停一周",
+              "resistance": "维克多·兰斯试图绕过管理员直接推动流程",
+              "new_information": "管理员确认需独立复核才能生效，流程被迫中止",
+              "character_choice": "管理员依规暂停交付，等待书面确认",
+              "relationship_or_emotional_change": "唱片方内部流程透明度提升",
+              "state_before": "流程即将推进",
+              "state_after": "交付暂缓，进入复核期",
+              "artifact_use": "《和声贡献确认页》（新建）",
+              "forbidden_replay": "禁止提前封存或签字",
+              "chapter_boundary": "交付暂缓"
+            }
+          ]
+        },
+        {
+          "act_id": 2,
+          "beats": [
+            {
+              "act_id": 2,
+              "beat_id": 1,
+              "location": "录音棚控制室",
+              "time_relation": "current",
+              "active_character": "维克多·兰斯",
+              "immediate_goal": "利用时间差迫使团队妥协",
+              "visible_action": "维克多·兰斯反复催促，声称延误将影响整体宣发计划",
+              "resistance": "麦珂与艾琳坚持等待确认页生效",
+              "new_information": "维克多的急切暴露了其急于掩盖归因问题的意图",
+              "character_choice": "团队不为所动，维持暂停状态",
+              "relationship_or_emotional_change": "反派行为滑稽化，留下可核口径",
+              "state_before": "试图施压",
+              "state_after": "施压失败，暴露动机",
+              "artifact_use": "无新物件",
+              "forbidden_replay": "禁止使用非麦珂人物前世记忆",
+              "chapter_boundary": "施压无效"
+            },
+            {
+              "act_id": 2,
+              "beat_id": 2,
+              "location": "录音棚控制室",
+              "time_relation": "current",
+              "active_character": "昆廷·琼斯",
+              "immediate_goal": "确认技术细节无误",
+              "visible_action": "昆廷检查分轨与确认页的一致性，确保数据准确",
+              "resistance": "时间紧迫带来的焦虑",
+              "new_information": "技术层面完全支持艾琳的主张",
+              "character_choice": "公开支持艾琳的技术主张",
+              "relationship_or_emotional_change": "对艾琳的专业能力更加认可",
+              "state_before": "中立观望",
+              "state_after": "坚定支持者",
+              "artifact_use": "排练分轨与修改记录（已有）",
+              "forbidden_replay": "禁止重复已发生的动作",
+              "chapter_boundary": "技术确认完成"
+            },
+            {
+              "act_id": 2,
+              "beat_id": 3,
+              "location": "录音棚控制室",
+              "time_relation": "current",
+              "active_character": "艾琳·沃特曼",
+              "immediate_goal": "守住和声署名权底线",
+              "visible_action": "艾琳重申只争和声部分，拒绝用感情关系换取无署名合作",
+              "resistance": "外部舆论压力与内部时间成本",
+              "new_information": "确立了“小赢”策略：不求全取，但求局部清晰",
+              "character_choice": "坚守原则，拒绝情感绑架",
+              "relationship_or_emotional_change": "情感关系保留独立判断与拒绝权",
+              "state_before": "处于被动防御",
+              "state_after": "主动掌控节奏",
+              "artifact_use": "《和声贡献确认页》（新建）",
+              "forbidden_replay": "禁止输出结构化状态字段",
+              "chapter_boundary": "章节结束于交付暂缓"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 294,
+      "acts": [
+        {
+          "act_id": 1,
+          "beats": [
+            {
+              "act_id": 1,
+              "beat_id": 1,
+              "location": "录音棚控制室",
+              "time_relation": "one_week_later",
+              "active_character": "唱片版权管理员",
+              "immediate_goal": "基于《和声贡献确认页》进行最终裁定",
+              "visible_action": "版权管理员补入明确贡献与收益范围，艾琳得到署名",
+              "resistance": "维克多·兰斯试图争夺解释权，质疑范围界定",
+              "new_information": "确认页具有法律效力，限定只能用于和声部分",
+              "character_choice": "管理员依据规则作出裁决，驳回扩大解释",
+              "relationship_or_emotional_change": "制度权威战胜个人意志",
+              "state_before": "等待最终结果",
+              "state_after": "获得明确署名",
+              "artifact_use": "《和声贡献确认页》（已有）",
+              "forbidden_replay": "禁止重复第一章完整冲突",
+              "chapter_boundary": "署名确认"
+            },
+            {
+              "act_id": 1,
+              "beat_id": 2,
+              "location": "录音棚控制室",
+              "time_relation": "one_week_later",
+              "active_character": "麦珂·杰森",
+              "immediate_goal": "防止胜利扩大化，避免节外生枝",
+              "visible_action": "麦珂支持艾琳署名，同时拒绝把支持扩大成对整首歌的共同控制",
+              "resistance": "维克多·兰斯试图将个案上升为控制权争夺",
+              "new_information": "麦珂主动切割利益，保持事件边界清晰",
+              "character_choice": "克制扩张欲望，聚焦单一目标",
+              "relationship_or_emotional_change": "展现成熟决策力，团队更信赖其判断",
+              "state_before": "可能引发全面战争",
+              "state_after": "局部胜利，风险可控",
+              "artifact_use": "无新物件",
+              "forbidden_replay": "禁止控制整首作品",
+              "chapter_boundary": "策略性克制"
+            },
+            {
+              "act_id": 1,
+              "beat_id": 3,
+              "location": "录音棚控制室",
+              "time_relation": "one_week_later",
+              "active_character": "维克多·兰斯",
+              "immediate_goal": "在证据写清后寻找反击点",
+              "visible_action": "维克多·兰斯在证据范围被写清后转而争夺解释权，但不能抹去已记录的选择",
+              "resistance": "无法推翻已签字的确认页",
+              "new_information": "其辩解被记录在案，成为未来把柄",
+              "character_choice": "暂时退让，转入幕后操作",
+              "relationship_or_emotional_change": "从嚣张转为阴郁算计",
+              "state_before": "试图翻盘",
+              "state_after": "失去扩大控制权路径",
+              "artifact_use": "无新物件",
+              "forbidden_replay": "禁止永久封杀",
+              "chapter_boundary": "反派受挫"
+            }
+          ]
+        },
+        {
+          "act_id": 2,
+          "beats": [
+            {
+              "act_id": 2,
+              "beat_id": 1,
+              "location": "录音棚控制室",
+              "time_relation": "one_week_later",
+              "active_character": "艾琳·沃特曼",
+              "immediate_goal": "完成母带交付前的最后确认",
+              "visible_action": "艾琳确认署名无误，团队承担一周延误后完成母带交付",
+              "resistance": "时间延误带来的商业损失风险",
+              "new_information": "代价是时间，收益是署名权的不可侵犯性",
+              "character_choice": "接受延误，换取长期权益",
+              "relationship_or_emotional_change": "对团队协作的韧性更有信心",
+              "state_before": "担忧延误后果",
+              "state_after": "安心交付，权益落地",
+              "artifact_use": "《和声贡献确认页》（已有）",
+              "forbidden_replay": "禁止提前消费EC148",
+              "chapter_boundary": "交付完成"
+            },
+            {
+              "act_id": 2,
+              "beat_id": 2,
+              "location": "录音棚控制室",
+              "time_relation": "one_week_later",
+              "active_character": "昆廷·琼斯",
+              "immediate_goal": "评估此次事件对后续工作的影响",
+              "visible_action": "昆廷总结此次博弈经验，强调流程规范的重要性",
+              "resistance": "行业惯性思维的挑战",
+              "new_information": "建立了新的合作范式：先确权，后交付",
+              "character_choice": "推广此模式至其他项目",
+              "relationship_or_emotional_change": "对艾琳的独立判断给予高度评价",
+              "state_before": "关注技术细节",
+              "state_after": "关注制度构建",
+              "artifact_use": "无新物件",
+              "forbidden_replay": "禁止重复第一章完整冲突",
+              "chapter_boundary": "经验沉淀"
+            },
+            {
+              "act_id": 2,
+              "beat_id": 3,
+              "location": "录音棚控制室",
+              "time_relation": "one_week_later",
+              "active_character": "麦珂·杰森",
+              "immediate_goal": "为下一事件（黛安娜工作室）做铺垫",
+              "visible_action": "麦珂与团队讨论如何将本次成功经验迁移到服装合作中",
+              "resistance": "不同领域的规则差异",
+              "new_information": "意识到“独立报价”与“署名确认”逻辑相通",
+              "character_choice": "开始规划下一步的独立化策略",
+              "relationship_or_emotional_change": "从音乐领域延伸至商业合作领域",
+              "state_before": "专注音乐成果",
+              "state_after": "布局商业独立",
+              "artifact_use": "无新物件",
+              "forbidden_replay": "禁止输出ART编号或snake_case字段",
+              "chapter_boundary": "章节结束，转向新事件"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 295,
+      "acts": [
+        {
+          "act_id": 1,
+          "beats": [
+            {
+              "act_id": 1,
+              "beat_id": 1,
+              "location": "罗文服装工作室",
+              "time_relation": "current",
+              "active_character": "黛安娜·罗文",
+              "immediate_goal": "应对外部剧团询价与基金内部整合压力",
+              "visible_action": "黛安娜的巡演样衣收到外部剧团询价，基金管理层想把订单纳入内部制作部门",
+              "resistance": "巴里·布鲁姆试图借资源压力推动合并",
+              "new_information": "外部市场存在独立需求，无需依附基金",
+              "character_choice": "拒绝并入，选择独立报价",
+              "relationship_or_emotional_change": "从依赖者转变为独立经营者",
+              "state_before": "被动接受安排",
+              "state_after": "主动寻求独立",
+              "artifact_use": "无新物件",
+              "forbidden_replay": "禁止盲审或外部合同",
+              "chapter_boundary": "提出独立意向"
+            },
+            {
+              "act_id": 1,
+              "beat_id": 2,
+              "location": "罗文服装工作室",
+              "time_relation": "current",
+              "active_character": "黛安娜·罗文",
+              "immediate_goal": "提交独立报价单以证明可行性",
+              "visible_action": "她提交独立报价、材料成本和交付周期，声明工作室不接受麦珂团队随时调度",
+              "resistance": "巴里·布鲁姆质疑其成本合理性",
+              "new_information": "独立运营具备成本优势与效率保障",
+              "character_choice": "坚持独立核算，拒绝打包进基金",
+              "relationship_or_emotional_change": "与麦珂的关系从“随叫随到”转向“平等采购”",
+              "state_before": "担心失去订单",
+              "state_after": "掌握议价主动权",
+              "artifact_use": "《样衣订单与独立报价单》（新建）",
+              "forbidden_replay": "禁止独立现金流和完整议价权（本章未完全达成）",
+              "chapter_boundary": "报价提交"
+            },
+            {
+              "act_id": 1,
+              "beat_id": 3,
+              "location": "罗文服装工作室",
+              "time_relation": "current",
+              "active_character": "行业采购评审",
+              "immediate_goal": "接收并初步审核报价单",
+              "visible_action": "《样衣订单与独立报价单》进入行业评审，第一批订单暂不使用基金名义",
+              "resistance": "基金内部阻力试图干预评审",
+              "new_information": "评审机制允许独立报价进入复核流程",
+              "character_choice": "按程序受理，暂不采纳基金合并建议",
+              "relationship_or_emotional_change": "评审机构保持中立，尊重市场规则",
+              "state_before": "等待指令",
+              "state_after": "进入行业复核阶段",
+              "artifact_use": "《样衣订单与独立报价单》（新建）",
+              "forbidden_replay": "禁止把临时结果写成永久定罪",
+              "chapter_boundary": "进入复核"
+            }
+          ]
+        },
+        {
+          "act_id": 2,
+          "beats": [
+            {
+              "act_id": 2,
+              "beat_id": 1,
+              "location": "罗文服装工作室",
+              "time_relation": "current",
+              "active_character": "巴里·布鲁姆",
+              "immediate_goal": "阻挠独立报价通过评审",
+              "visible_action": "巴里·布鲁姆试图借时间、声誉或资源压力推动未完成的决定",
+              "resistance": "评审委员会坚持独立流程",
+              "new_information": "其施压行为反而引起评审注意",
+              "character_choice": "暂时退缩，等待评审结果",
+              "relationship_or_emotional_change": "从强势干预转为被动观察",
+              "state_before": "试图操控",
+              "state_after": "失去控制权",
+              "artifact_use": "无新物件",
+              "forbidden_replay": "禁止非麦珂人物拥有前世记忆",
+              "chapter_boundary": "施压受阻"
+            },
+            {
+              "act_id": 2,
+              "beat_id": 2,
+              "location": "罗文服装工作室",
+              "time_relation": "current",
+              "active_character": "卡尔·霍尔特",
+              "immediate_goal": "协调巡演进度与独立报价的匹配",
+              "visible_action": "卡尔·霍尔特确认独立报价不影响巡演排期",
+              "resistance": "时间紧凑带来的协调难度",
+              "new_information": "独立报价并未增加额外时间成本",
+              "character_choice": "支持独立报价方案",
+              "relationship_or_emotional_change": "对黛安娜的独立能力表示赞赏",
+              "state_before": "担忧延期",
+              "state_after": "确认可行",
+              "artifact_use": "无新物件",
+              "forbidden_replay": "禁止重复第一章完整冲突",
+              "chapter_boundary": "协调成功"
+            },
+            {
+              "act_id": 2,
+              "beat_id": 3,
+              "location": "罗文服装工作室",
+              "time_relation": "current",
+              "active_character": "黛安娜·罗文",
+              "immediate_goal": "确保第一批订单独立执行",
+              "visible_action": "黛安娜确认第一批订单暂不使用基金名义，由工作室独立承接",
+              "resistance": "基金内部仍有异议声音",
+              "new_information": "独立运营模式首次落地",
+              "character_choice": "坚持独立执行，不妥协",
+              "relationship_or_emotional_change": "建立独立经营者的自信",
+              "state_before": "犹豫是否接受",
+              "state_after": "坚定独立路线",
+              "artifact_use": "《样衣订单与独立报价单》（已有）",
+              "forbidden_replay": "禁止输出结构化状态字段",
+              "chapter_boundary": "章节结束于进入复核"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 296,
+      "acts": [
+        {
+          "act_id": 1,
+          "beats": [
+            {
+              "act_id": 1,
+              "beat_id": 1,
+              "location": "罗文服装工作室",
+              "time_relation": "two_days_later",
+              "active_character": "行业采购评审",
+              "immediate_goal": "完成对独立报价的盲评",
+              "visible_action": "采购评审要求黛安娜证明独立报价不是借明星关系抬价，她用两套样衣、工时和外部客户反馈完成盲评",
+              "resistance": "评审方怀疑价格虚高",
+              "new_information": "外部客户反馈证实价格合理性与质量稳定性",
+              "character_choice": "提供客观数据，拒绝主观辩护",
+              "relationship_or_emotional_change": "评审方从质疑转为认可",
+              "state_before": "存疑",
+              "state_after": "确认合理",
+              "artifact_use": "两套样衣、工时记录、外部客户反馈（已有）",
+              "forbidden_replay": "禁止再开新事件簇",
+              "chapter_boundary": "盲评开始"
+            },
+            {
+              "act_id": 1,
+              "beat_id": 2,
+              "location": "罗文服装工作室",
+              "time_relation": "two_days_later",
+              "active_character": "麦珂·杰森",
+              "immediate_goal": "支持独立报价但不越界背书",
+              "visible_action": "麦珂没有替她背书，反而接受以后必须按订单排队",
+              "resistance": "团队习惯依赖明星光环",
+              "new_information": "独立运营意味着放弃特权，接受市场规则",
+              "character_choice": "主动退出保护伞，尊重市场公平",
+              "relationship_or_emotional_change": "合作关系从“庇护”转向“平等”",
+              "state_before": "习惯性地想帮忙",
+              "state_after": "学会放手与信任",
+              "artifact_use": "无新物件",
+              "forbidden_replay": "禁止控制整首作品或提前消费EC148",
+              "chapter_boundary": "角色转变"
+            },
+            {
+              "act_id": 1,
+              "beat_id": 3,
+              "location": "罗文服装工作室",
+              "time_relation": "two_days_later",
+              "active_character": "巴里·布鲁姆",
+              "immediate_goal": "在证据写清后争夺解释权",
+              "visible_action": "巴里·布鲁姆在证据范围被写清后转而争夺解释权，但不能抹去已记录的选择",
+              "resistance": "事实已定，无法推翻",
+              "new_information": "其辩解被记录，成为未来把柄",
+              "character_choice": "暂时退让，转入幕后",
+              "relationship_or_emotional_change": "从嚣张转为无奈",
+              "state_before": "试图翻盘",
+              "state_after": "失去扩大控制权路径",
+              "artifact_use": "无新物件",
+              "forbidden_replay": "禁止永久封杀",
+              "chapter_boundary": "反派受挫"
+            }
+          ]
+        },
+        {
+          "act_id": 2,
+          "beats": [
+            {
+              "act_id": 2,
+              "beat_id": 1,
+              "location": "罗文服装工作室",
+              "time_relation": "two_days_later",
+              "active_character": "行业采购评审",
+              "immediate_goal": "确认独立报价并批准执行",
+              "visible_action": "报价确认，工作室取得独立现金流和议价权",
+              "resistance": "无实质阻力，流程顺畅",
+              "new_information": "独立商业模式验证成功",
+              "character_choice": "正式批准独立运营",
+              "relationship_or_emotional_change": "建立新的行业标准",
+              "state_before": "待定",
+              "state_after": "独立运营合法化",
+              "artifact_use": "《样衣订单与独立报价单》（已有）",
+              "forbidden_replay": "禁止重复第一章完整冲突",
+              "chapter_boundary": "报价确认"
+            },
+            {
+              "act_id": 2,
+              "beat_id": 2,
+              "location": "罗文服装工作室",
+              "time_relation": "two_days_later",
+              "active_character": "黛安娜·罗文",
+              "immediate_goal": "承担市场风险，实现独立生存",
+              "visible_action": "黛安娜独自承担市场风险，双方的合作从随叫随到变为平等采购",
+              "resistance": "市场不确定性带来的心理压力",
+              "new_information": "独立意味着责任与自由并存",
+              "character_choice": "拥抱风险，追求自主",
+              "relationship_or_emotional_change": "从依附者成长为独立合伙人",
+              "state_before": "担忧风险",
+              "state_after": "享受自主权",
+              "artifact_use": "无新物件",
+              "forbidden_replay": "禁止输出ART编号或snake_case字段",
+              "chapter_boundary": "角色成长"
+            },
+            {
+              "act_id": 2,
+              "beat_id": 3,
+              "location": "罗文服装工作室",
+              "time_relation": "two_days_later",
+              "active_character": "麦珂·杰森",
+              "immediate_goal": "总结事件，准备进入下一阶段",
+              "visible_action": "麦珂接受失去随时调用她团队的便利，视为必要代价",
+              "resistance": "团队内部的不适应",
+              "new_information": "独立生态系统的形成是必然趋势",
+              "character_choice": "接受变化，规划未来",
+              "relationship_or_emotional_change": "从管理者转变为合作伙伴",
+              "state_before": "习惯控制",
+              "state_after": "学会放手",
+              "artifact_use": "无新物件",
+              "forbidden_replay": "禁止再开新事件簇",
+              "chapter_boundary": "章节结束，EC148结算完成"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "cluster_id": "EC097",
+  "chapter_id": 194,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "27971f65fbfde0a67fc4bb280c0d5fe53ec69a4bcfa8b1e52ca2a8f1c2d4885e",
+  "base_prompt_sha256": "27971f65fbfde0a67fc4bb280c0d5fe53ec69a4bcfa8b1e52ca2a8f1c2d4885e",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "672c860dd83198e0f7fb6e2485aee96565690bc33cc292fd918968f75fb401be",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 16.56,
+    "usage": {
+      "prompt_tokens": 9366,
+      "completion_tokens": 1257,
+      "total_tokens": 10623,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 97,
+    "through_chapter": 194,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "604acd6aafab674c0e05a8973b542e79c7a92081b4195b6e0199f28658820786",
+    "chapter_card_prefix_sha256": "08935a5cb71a75f2274036266d3250add47ca4e510fd5ca37c97e766371a8146",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "f6908a1cd8fc50f7e539875584cdf7572e53ccd8733d50ad60b2bbf808da7d56"
+  },
+  "cluster_sha256": "3f212175e1bfd6553815b4d53518dfdf9a1a2fa0d62fe3da534f88cd220d238d",
+  "card_sha256": "1e5be8a34ebc0ef8ccb273d4ede88c8032debd03de93348d0aca5f008ddc9db0",
+  "chapter_audit": {
+    "han_chars": 1858,
+    "total_chars": 2106,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "三方签名缺失",
+        "exact": false,
+        "bigram_coverage": 0.6,
+        "matched": true
+      },
+      {
+        "anchor": "纸张材质差异",
+        "exact": false,
+        "bigram_coverage": 0.2,
+        "matched": false
+      },
+      {
+        "anchor": "听证官裁决",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "trust_governance__extension_EC097",
+        "target": "fortified",
+        "evidence_terms": [
+          "COURT_187_INJUNCTION"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "decision_making_power__extension_EC097",
+        "target": "co_decision_maker",
+        "evidence_terms": [
+          "SIGNATURE_LOG_EC097"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 2,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0356,
+    "scene_evidence": [
+      {
+        "location": "听证室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.036，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“纸张材质差异”",
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC097→fortified",
+      "正文没有通过现场动作兑现状态转移decision_making_power__extension_EC097→co_decision_maker"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.036，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“纸张材质差异”",
+      "正文没有通过现场动作兑现状态转移trust_governance__extension_EC097→fortified",
+      "正文没有通过现场动作兑现状态转移decision_making_power__extension_EC097→co_decision_maker"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

@@ -1,0 +1,145 @@
+{
+  "cluster_id": "EC061",
+  "chapter_id": 122,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "0c10cf13d5a66527363a28c04e1f73d476efc781d2c7ea519c10d1d1e1fc6230",
+  "base_prompt_sha256": "0c10cf13d5a66527363a28c04e1f73d476efc781d2c7ea519c10d1d1e1fc6230",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "c4a461a526a7af2fbeb3d940bd55368e411317f1d012f3e996fb16e5f6e61d67",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 11.97,
+    "usage": {
+      "prompt_tokens": 9414,
+      "completion_tokens": 905,
+      "total_tokens": 10319,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 61,
+    "through_chapter": 122,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "55a761e73baf16e14f775340c35dc8f996ce9d5ec105d5936483a8ed05e4d993",
+    "chapter_card_prefix_sha256": "8dcd161870bfd80fde44365c89b3b8c7b24612b8b83ca35dfd2c9d107adfac7b",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "718e21064e2725da498c91bfb520076b6b15c9d5dad2dfbb45f41320c743fa03"
+  },
+  "cluster_sha256": "121851c310cd33a90318741958a0d63b582a1e2fb8df908f68f2819d99f3e83c",
+  "card_sha256": "966fa410e511b671ba7e9eeb07b5dbf1a8753afaef2f6494d664d7670f6628bb",
+  "chapter_audit": {
+    "han_chars": 1283,
+    "total_chars": 1494,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "混音台齿痕原片",
+        "exact": false,
+        "bigram_coverage": 0.833,
+        "matched": true
+      },
+      {
+        "anchor": "铜质齿轮编号标签",
+        "exact": false,
+        "bigram_coverage": 0.571,
+        "matched": true
+      },
+      {
+        "anchor": "临床否决权文件",
+        "exact": false,
+        "bigram_coverage": 0.833,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "standardization_status",
+        "target": "已认证",
+        "evidence_terms": [
+          "三厂交叉比对报告",
+          "与车间混音台齿痕",
+          "原片",
+          "ART_122_CROSS_REPORT"
+        ],
+        "hit_terms": [
+          "原片"
+        ],
+        "matched": false
+      },
+      {
+        "state_key": "market_trust",
+        "target": "受损",
+        "evidence_terms": [
+          "分销商因伪造诊断",
+          "书被公开驳回的会",
+          "议纪要",
+          "ART_122_MEETING_MINUTES"
+        ],
+        "hit_terms": [
+          "议纪要"
+        ],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0682,
+    "scene_evidence": [
+      {
+        "location": "星光唱片总部大会议室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_122_CLINICAL_DENIAL",
+        "display_name": "莉薇娅·普莱斯临床否决权签署文件",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      },
+      {
+        "artifact_id": "ART_122_CROSS_REPORT",
+        "display_name": "ART_122_CROSS_REPORT",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有通过现场动作兑现状态转移standardization_status→已认证",
+      "正文没有通过现场动作兑现状态转移market_trust→受损",
+      "正文没有写出本章正式创建的关键对象“莉薇娅·普莱斯临床否决权签署文件”",
+      "正文没有写出本章正式创建的关键对象“ART_122_CROSS_REPORT”",
+      "主角麦珂所在动作链被女性代词‘她’承接"
+    ],
+    "all_validator_failures": [
+      "正文没有通过现场动作兑现状态转移standardization_status→已认证",
+      "正文没有通过现场动作兑现状态转移market_trust→受损",
+      "正文没有写出本章正式创建的关键对象“莉薇娅·普莱斯临床否决权签署文件”",
+      "正文没有写出本章正式创建的关键对象“ART_122_CROSS_REPORT”",
+      "主角麦珂所在动作链被女性代词‘她’承接"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

@@ -175,7 +175,11 @@ def main() -> None:
                 continue
             chapter = int(card.get("chapter_id") or 0)
             role = str(card.get("chapter_role_v2") or "").strip()
-            if chapter > 0 and role == "prev_life_death_only":
+            # The opening chapter is always the previous-life death scene in
+            # this project's hard contract, even when an older card archive
+            # lacks the newer role label. Keep that death out of current-line
+            # character state while preserving it in historical memory.
+            if chapter == 1 or (chapter > 0 and role == "prev_life_death_only"):
                 timeline_overrides[chapter] = "previous_life"
     except (OSError, TypeError, ValueError, json.JSONDecodeError):
         timeline_overrides = {}

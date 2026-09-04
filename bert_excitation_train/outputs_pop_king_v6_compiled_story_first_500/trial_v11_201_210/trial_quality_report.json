@@ -1,0 +1,4000 @@
+{
+  "contract": "v11_dynamic_identity_history_retry_20260822",
+  "chapters": {
+    "201": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "failures": [
+            "重生知识边界违规: other character knows",
+            "正文没有兑现章卡关键事实“三人按手印的动作细节”"
+          ],
+          "audit": {
+            "han_chars": 1627,
+            "total_chars": 1817,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "凌晨3点14分的时间锚点",
+                "exact": false,
+                "bigram_coverage": 0.273,
+                "matched": true
+              },
+              {
+                "anchor": "三人按手印的动作细节",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              },
+              {
+                "anchor": "防水牛皮纸袋的密封过程",
+                "exact": false,
+                "bigram_coverage": 0.6,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 1,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 2,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0771,
+            "scene_evidence": [
+              {
+                "location": "后台休息室",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_201_TRIPARTITE_CONTRACT",
+                "display_name": "三方签字急救启动令（原件）",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "重生知识边界违规: other character knows",
+              "正文没有兑现章卡关键事实“三人按手印的动作细节”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 14.881,
+            "usage": {
+              "prompt_tokens": 9574,
+              "completion_tokens": 1157,
+              "total_tokens": 10731,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 2,
+          "failures": [
+            "正文没有兑现章卡关键事实“三人按手印的动作细节”"
+          ],
+          "audit": {
+            "han_chars": 1411,
+            "total_chars": 1596,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "凌晨3点14分的时间锚点",
+                "exact": false,
+                "bigram_coverage": 0.364,
+                "matched": true
+              },
+              {
+                "anchor": "三人按手印的动作细节",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              },
+              {
+                "anchor": "防水牛皮纸袋的密封过程",
+                "exact": false,
+                "bigram_coverage": 0.6,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 1,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 1,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0833,
+            "scene_evidence": [
+              {
+                "location": "后台休息室",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_201_TRIPARTITE_CONTRACT",
+                "display_name": "三方签字急救启动令（原件）",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“三人按手印的动作细节”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 13.276,
+            "usage": {
+              "prompt_tokens": 9622,
+              "completion_tokens": 1043,
+              "total_tokens": 10665,
+              "prompt_tokens_details": {
+                "cached_tokens": 5115
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 3,
+          "failures": [
+            "角色状态越权: unplanned irreversible outcome",
+            "正文没有兑现章卡关键事实“三人按手印的动作细节”"
+          ],
+          "audit": {
+            "han_chars": 1664,
+            "total_chars": 1878,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "凌晨3点14分的时间锚点",
+                "exact": false,
+                "bigram_coverage": 0.364,
+                "matched": true
+              },
+              {
+                "anchor": "三人按手印的动作细节",
+                "exact": false,
+                "bigram_coverage": 0.444,
+                "matched": false
+              },
+              {
+                "anchor": "防水牛皮纸袋的密封过程",
+                "exact": false,
+                "bigram_coverage": 0.6,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 1,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0843,
+            "scene_evidence": [
+              {
+                "location": "后台休息室",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_201_TRIPARTITE_CONTRACT",
+                "display_name": "三方签字急救启动令（原件）",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "角色状态越权: unplanned irreversible outcome",
+              "正文没有兑现章卡关键事实“三人按手印的动作细节”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 14.283,
+            "usage": {
+              "prompt_tokens": 9611,
+              "completion_tokens": 1168,
+              "total_tokens": 10779,
+              "prompt_tokens_details": {
+                "cached_tokens": 5108
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        }
+      ],
+      "selected_failures": [
+        "角色状态越权: unplanned irreversible outcome",
+        "正文没有兑现章卡关键事实“三人按手印的动作细节”"
+      ]
+    },
+    "202": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "failures": [
+            "正文没有兑现章卡关键事实“三方签字文件的当众展示”",
+            "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC100→independent_verified",
+            "正文没有通过现场动作兑现状态转移trust_governance__extension_EC097__extension_EC101→fortified_with_independence",
+            "正文未落到规划场景“主舞台侧台”",
+            "正文没有写出本章正式创建的关键对象“ART_202_WITNESS_LIST”"
+          ],
+          "audit": {
+            "han_chars": 1480,
+            "total_chars": 1716,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "奥瑞恩代表皮鞋上的泥水细节",
+                "exact": false,
+                "bigram_coverage": 0.583,
+                "matched": true
+              },
+              {
+                "anchor": "三方签字文件的当众展示",
+                "exact": false,
+                "bigram_coverage": 0.4,
+                "matched": false
+              },
+              {
+                "anchor": "观众的反应",
+                "exact": false,
+                "bigram_coverage": 0.75,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "health_narrative_control__extension_EC100",
+                "target": "independent_verified",
+                "evidence_terms": [
+                  "ART_201_TRIPARTITE_CONTRACT"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "trust_governance__extension_EC097__extension_EC101",
+                "target": "fortified_with_independence",
+                "evidence_terms": [
+                  "ART_202_WITNESS_LIST"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 1,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0731,
+            "scene_evidence": [
+              {
+                "location": "主舞台侧台",
+                "body_hit": false,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_202_WITNESS_LIST",
+                "display_name": "ART_202_WITNESS_LIST",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“三方签字文件的当众展示”",
+              "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC100→independent_verified",
+              "正文没有通过现场动作兑现状态转移trust_governance__extension_EC097__extension_EC101→fortified_with_independence",
+              "正文未落到规划场景“主舞台侧台”",
+              "正文没有写出本章正式创建的关键对象“ART_202_WITNESS_LIST”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 14.137,
+            "usage": {
+              "prompt_tokens": 13110,
+              "completion_tokens": 1092,
+              "total_tokens": 14202,
+              "prompt_tokens_details": {
+                "cached_tokens": 6814
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 2,
+          "failures": [
+            "正文没有兑现章卡关键事实“三方签字文件的当众展示”",
+            "正文没有兑现章卡关键事实“观众的反应”",
+            "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC100→independent_verified",
+            "正文没有通过现场动作兑现状态转移trust_governance__extension_EC097__extension_EC101→fortified_with_independence",
+            "正文未落到规划场景“主舞台侧台”",
+            "正文没有写出本章正式创建的关键对象“ART_202_WITNESS_LIST”"
+          ],
+          "audit": {
+            "han_chars": 1517,
+            "total_chars": 1742,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "奥瑞恩代表皮鞋上的泥水细节",
+                "exact": false,
+                "bigram_coverage": 0.583,
+                "matched": true
+              },
+              {
+                "anchor": "三方签字文件的当众展示",
+                "exact": false,
+                "bigram_coverage": 0.4,
+                "matched": false
+              },
+              {
+                "anchor": "观众的反应",
+                "exact": false,
+                "bigram_coverage": 0.25,
+                "matched": false
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "health_narrative_control__extension_EC100",
+                "target": "independent_verified",
+                "evidence_terms": [
+                  "ART_201_TRIPARTITE_CONTRACT"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "trust_governance__extension_EC097__extension_EC101",
+                "target": "fortified_with_independence",
+                "evidence_terms": [
+                  "ART_202_WITNESS_LIST"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 1,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0653,
+            "scene_evidence": [
+              {
+                "location": "主舞台侧台",
+                "body_hit": false,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_202_WITNESS_LIST",
+                "display_name": "ART_202_WITNESS_LIST",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“三方签字文件的当众展示”",
+              "正文没有兑现章卡关键事实“观众的反应”",
+              "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC100→independent_verified",
+              "正文没有通过现场动作兑现状态转移trust_governance__extension_EC097__extension_EC101→fortified_with_independence",
+              "正文未落到规划场景“主舞台侧台”",
+              "正文没有写出本章正式创建的关键对象“ART_202_WITNESS_LIST”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 16.438,
+            "usage": {
+              "prompt_tokens": 13241,
+              "completion_tokens": 1083,
+              "total_tokens": 14324,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 3,
+          "failures": [
+            "正文没有兑现章卡关键事实“观众的反应”",
+            "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC100→independent_verified",
+            "正文没有通过现场动作兑现状态转移trust_governance__extension_EC097__extension_EC101→fortified_with_independence",
+            "正文没有写出本章正式创建的关键对象“ART_202_WITNESS_LIST”"
+          ],
+          "audit": {
+            "han_chars": 1348,
+            "total_chars": 1539,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "奥瑞恩代表皮鞋上的泥水细节",
+                "exact": false,
+                "bigram_coverage": 0.667,
+                "matched": true
+              },
+              {
+                "anchor": "三方签字文件的当众展示",
+                "exact": false,
+                "bigram_coverage": 0.6,
+                "matched": true
+              },
+              {
+                "anchor": "观众的反应",
+                "exact": false,
+                "bigram_coverage": 0.25,
+                "matched": false
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "health_narrative_control__extension_EC100",
+                "target": "independent_verified",
+                "evidence_terms": [
+                  "ART_201_TRIPARTITE_CONTRACT"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "trust_governance__extension_EC097__extension_EC101",
+                "target": "fortified_with_independence",
+                "evidence_terms": [
+                  "ART_202_WITNESS_LIST"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 1,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0739,
+            "scene_evidence": [
+              {
+                "location": "主舞台侧台",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_202_WITNESS_LIST",
+                "display_name": "ART_202_WITNESS_LIST",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“观众的反应”",
+              "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC100→independent_verified",
+              "正文没有通过现场动作兑现状态转移trust_governance__extension_EC097__extension_EC101→fortified_with_independence",
+              "正文没有写出本章正式创建的关键对象“ART_202_WITNESS_LIST”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 14.539,
+            "usage": {
+              "prompt_tokens": 13255,
+              "completion_tokens": 968,
+              "total_tokens": 14223,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        }
+      ],
+      "selected_failures": [
+        "正文没有兑现章卡关键事实“观众的反应”",
+        "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC100→independent_verified",
+        "正文没有通过现场动作兑现状态转移trust_governance__extension_EC097__extension_EC101→fortified_with_independence",
+        "正文没有写出本章正式创建的关键对象“ART_202_WITNESS_LIST”"
+      ]
+    },
+    "203": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "failures": [
+            "正文没有兑现章卡关键事实“老人#8327号卡拼写纠错”",
+            "正文没有写出本章正式创建的关键对象“编号卡背印承诺条款样本”"
+          ],
+          "audit": {
+            "han_chars": 1595,
+            "total_chars": 1813,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "编号卡背印承诺条款",
+                "exact": false,
+                "bigram_coverage": 0.625,
+                "matched": true
+              },
+              {
+                "anchor": "老人#8327号卡拼写纠错",
+                "exact": false,
+                "bigram_coverage": 0.273,
+                "matched": false
+              },
+              {
+                "anchor": "随机座次实时投影",
+                "exact": false,
+                "bigram_coverage": 0.571,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0631,
+            "scene_evidence": [
+              {
+                "location": "舞台中央",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_203_SEATING_LOG",
+                "display_name": "雾河城首演随机座次总表",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              },
+              {
+                "artifact_id": "ART_203_CARD_BACK_PRINT",
+                "display_name": "编号卡背印承诺条款样本",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“老人#8327号卡拼写纠错”",
+              "正文没有写出本章正式创建的关键对象“编号卡背印承诺条款样本”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 14.494,
+            "usage": {
+              "prompt_tokens": 9968,
+              "completion_tokens": 1074,
+              "total_tokens": 11042,
+              "prompt_tokens_details": {
+                "cached_tokens": 5254
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 2,
+          "failures": [
+            "正文没有写出本章正式创建的关键对象“编号卡背印承诺条款样本”"
+          ],
+          "audit": {
+            "han_chars": 1655,
+            "total_chars": 1955,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "编号卡背印承诺条款",
+                "exact": false,
+                "bigram_coverage": 0.75,
+                "matched": true
+              },
+              {
+                "anchor": "老人#8327号卡拼写纠错",
+                "exact": false,
+                "bigram_coverage": 0.818,
+                "matched": true
+              },
+              {
+                "anchor": "随机座次实时投影",
+                "exact": false,
+                "bigram_coverage": 0.714,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0582,
+            "scene_evidence": [
+              {
+                "location": "舞台中央",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_203_SEATING_LOG",
+                "display_name": "雾河城首演随机座次总表",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              },
+              {
+                "artifact_id": "ART_203_CARD_BACK_PRINT",
+                "display_name": "编号卡背印承诺条款样本",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有写出本章正式创建的关键对象“编号卡背印承诺条款样本”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 13.265,
+            "usage": {
+              "prompt_tokens": 10030,
+              "completion_tokens": 1200,
+              "total_tokens": 11230,
+              "prompt_tokens_details": {
+                "cached_tokens": 5287
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 3,
+          "failures": [],
+          "audit": {
+            "han_chars": 1296,
+            "total_chars": 1498,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 1,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "编号卡背印承诺条款",
+                "exact": true,
+                "bigram_coverage": 1.0,
+                "matched": true
+              },
+              {
+                "anchor": "老人#8327号卡拼写纠错",
+                "exact": false,
+                "bigram_coverage": 0.636,
+                "matched": true
+              },
+              {
+                "anchor": "随机座次实时投影",
+                "exact": false,
+                "bigram_coverage": 0.571,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 1,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 1,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0802,
+            "scene_evidence": [
+              {
+                "location": "舞台中央",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_203_SEATING_LOG",
+                "display_name": "雾河城首演随机座次总表",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              },
+              {
+                "artifact_id": "ART_203_CARD_BACK_PRINT",
+                "display_name": "编号卡背印承诺条款样本",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": []
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 12.689,
+            "usage": {
+              "prompt_tokens": 10007,
+              "completion_tokens": 916,
+              "total_tokens": 10923,
+              "prompt_tokens_details": {
+                "cached_tokens": 5278
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        }
+      ],
+      "selected_failures": []
+    },
+    "204": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "failures": [
+            "正文没有通过现场动作兑现状态转移audience_seating_control__extension_EC102→randomized_community",
+            "正文没有通过现场动作兑现状态转移spatial_narrative_control__extension_EC102→audience_collaborator"
+          ],
+          "audit": {
+            "han_chars": 1537,
+            "total_chars": 1717,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "观众手持编号卡形成人墙",
+                "exact": false,
+                "bigram_coverage": 0.3,
+                "matched": true
+              },
+              {
+                "anchor": "实时数据流展示",
+                "exact": false,
+                "bigram_coverage": 0.667,
+                "matched": true
+              },
+              {
+                "anchor": "索恩被媒体包围",
+                "exact": false,
+                "bigram_coverage": 0.5,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "audience_seating_control__extension_EC102",
+                "target": "randomized_community",
+                "evidence_terms": [
+                  "ART_203_SEATING_LOG"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "spatial_narrative_control__extension_EC102",
+                "target": "audience_collaborator",
+                "evidence_terms": [
+                  "ART_204_PUBLIC_CHARTER"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 1,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0655,
+            "scene_evidence": [
+              {
+                "location": "体育馆外广场",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_204_PUBLIC_CHARTER",
+                "display_name": "观众协作者公约",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              },
+              {
+                "artifact_id": "ART_204_DATA_FLOW_LOG",
+                "display_name": "昨夜演出实时数据流记录",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有通过现场动作兑现状态转移audience_seating_control__extension_EC102→randomized_community",
+              "正文没有通过现场动作兑现状态转移spatial_narrative_control__extension_EC102→audience_collaborator"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 16.773,
+            "usage": {
+              "prompt_tokens": 13702,
+              "completion_tokens": 1045,
+              "total_tokens": 14747,
+              "prompt_tokens_details": {
+                "cached_tokens": 7138
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 2,
+          "failures": [
+            "正文没有通过现场动作兑现状态转移audience_seating_control__extension_EC102→randomized_community",
+            "正文没有通过现场动作兑现状态转移spatial_narrative_control__extension_EC102→audience_collaborator"
+          ],
+          "audit": {
+            "han_chars": 1463,
+            "total_chars": 1642,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "观众手持编号卡形成人墙",
+                "exact": false,
+                "bigram_coverage": 0.5,
+                "matched": true
+              },
+              {
+                "anchor": "实时数据流展示",
+                "exact": false,
+                "bigram_coverage": 0.833,
+                "matched": true
+              },
+              {
+                "anchor": "索恩被媒体包围",
+                "exact": false,
+                "bigram_coverage": 0.5,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "audience_seating_control__extension_EC102",
+                "target": "randomized_community",
+                "evidence_terms": [
+                  "ART_203_SEATING_LOG"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "spatial_narrative_control__extension_EC102",
+                "target": "audience_collaborator",
+                "evidence_terms": [
+                  "ART_204_PUBLIC_CHARTER"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 1,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 2,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0802,
+            "scene_evidence": [
+              {
+                "location": "体育馆外广场",
+                "body_hit": true,
+                "match_mode": "venue_exterior_semantics"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_204_PUBLIC_CHARTER",
+                "display_name": "观众协作者公约",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              },
+              {
+                "artifact_id": "ART_204_DATA_FLOW_LOG",
+                "display_name": "昨夜演出实时数据流记录",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有通过现场动作兑现状态转移audience_seating_control__extension_EC102→randomized_community",
+              "正文没有通过现场动作兑现状态转移spatial_narrative_control__extension_EC102→audience_collaborator"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 12.38,
+            "usage": {
+              "prompt_tokens": 13776,
+              "completion_tokens": 975,
+              "total_tokens": 14751,
+              "prompt_tokens_details": {
+                "cached_tokens": 7179
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 3,
+          "failures": [
+            "正文没有通过现场动作兑现状态转移audience_seating_control__extension_EC102→randomized_community",
+            "正文没有通过现场动作兑现状态转移spatial_narrative_control__extension_EC102→audience_collaborator"
+          ],
+          "audit": {
+            "han_chars": 1296,
+            "total_chars": 1470,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "观众手持编号卡形成人墙",
+                "exact": false,
+                "bigram_coverage": 0.5,
+                "matched": true
+              },
+              {
+                "anchor": "实时数据流展示",
+                "exact": false,
+                "bigram_coverage": 0.833,
+                "matched": true
+              },
+              {
+                "anchor": "索恩被媒体包围",
+                "exact": false,
+                "bigram_coverage": 0.167,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "audience_seating_control__extension_EC102",
+                "target": "randomized_community",
+                "evidence_terms": [
+                  "ART_203_SEATING_LOG"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "spatial_narrative_control__extension_EC102",
+                "target": "audience_collaborator",
+                "evidence_terms": [
+                  "ART_204_PUBLIC_CHARTER"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 1,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0901,
+            "scene_evidence": [
+              {
+                "location": "体育馆外广场",
+                "body_hit": true,
+                "match_mode": "venue_exterior_semantics"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_204_PUBLIC_CHARTER",
+                "display_name": "观众协作者公约",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              },
+              {
+                "artifact_id": "ART_204_DATA_FLOW_LOG",
+                "display_name": "昨夜演出实时数据流记录",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有通过现场动作兑现状态转移audience_seating_control__extension_EC102→randomized_community",
+              "正文没有通过现场动作兑现状态转移spatial_narrative_control__extension_EC102→audience_collaborator"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 12.697,
+            "usage": {
+              "prompt_tokens": 13776,
+              "completion_tokens": 909,
+              "total_tokens": 14685,
+              "prompt_tokens_details": {
+                "cached_tokens": 7179
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        }
+      ],
+      "selected_failures": [
+        "正文没有通过现场动作兑现状态转移audience_seating_control__extension_EC102→randomized_community",
+        "正文没有通过现场动作兑现状态转移spatial_narrative_control__extension_EC102→audience_collaborator"
+      ]
+    },
+    "205": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "failures": [
+            "正文没有兑现章卡关键事实“0.5秒切换时间”",
+            "正文没有兑现章卡关键事实“画面清晰度对比”",
+            "正文没有写出本章正式创建的关键对象“光学透镜机械校准与封装记录”"
+          ],
+          "audit": {
+            "han_chars": 1398,
+            "total_chars": 1564,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "0.5秒切换时间",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              },
+              {
+                "anchor": "画面清晰度对比",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              },
+              {
+                "anchor": "机械校准证书展示",
+                "exact": false,
+                "bigram_coverage": 0.714,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 1,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0826,
+            "scene_evidence": [
+              {
+                "location": "穹顶控制室",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_205_OPTICAL_LOG",
+                "display_name": "光学透镜机械校准与封装记录",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“0.5秒切换时间”",
+              "正文没有兑现章卡关键事实“画面清晰度对比”",
+              "正文没有写出本章正式创建的关键对象“光学透镜机械校准与封装记录”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 12.453,
+            "usage": {
+              "prompt_tokens": 10365,
+              "completion_tokens": 932,
+              "total_tokens": 11297,
+              "prompt_tokens_details": {
+                "cached_tokens": 476
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 2,
+          "failures": [
+            "年龄状态冲突：1989年麦珂应为约31岁",
+            "汉字数933，低于1000",
+            "正文没有兑现章卡关键事实“0.5秒切换时间”",
+            "正文没有兑现章卡关键事实“画面清晰度对比”",
+            "正文没有写出本章正式创建的关键对象“光学透镜机械校准与封装记录”"
+          ],
+          "audit": {
+            "han_chars": 933,
+            "total_chars": 1058,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "0.5秒切换时间",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              },
+              {
+                "anchor": "画面清晰度对比",
+                "exact": false,
+                "bigram_coverage": 0.167,
+                "matched": false
+              },
+              {
+                "anchor": "机械校准证书展示",
+                "exact": false,
+                "bigram_coverage": 0.714,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0854,
+            "scene_evidence": [
+              {
+                "location": "穹顶控制室",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_205_OPTICAL_LOG",
+                "display_name": "光学透镜机械校准与封装记录",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "年龄状态冲突：1989年麦珂应为约31岁",
+              "汉字数933，低于1000",
+              "正文没有兑现章卡关键事实“0.5秒切换时间”",
+              "正文没有兑现章卡关键事实“画面清晰度对比”",
+              "正文没有写出本章正式创建的关键对象“光学透镜机械校准与封装记录”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 11.641,
+            "usage": {
+              "prompt_tokens": 10437,
+              "completion_tokens": 644,
+              "total_tokens": 11081,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 3,
+          "failures": [
+            "正文没有兑现章卡关键事实“画面清晰度对比”"
+          ],
+          "audit": {
+            "han_chars": 1381,
+            "total_chars": 1549,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "0.5秒切换时间",
+                "exact": false,
+                "bigram_coverage": 0.5,
+                "matched": true
+              },
+              {
+                "anchor": "画面清晰度对比",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              },
+              {
+                "anchor": "机械校准证书展示",
+                "exact": false,
+                "bigram_coverage": 0.714,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 1,
+              "墨迹": 1,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0661,
+            "scene_evidence": [
+              {
+                "location": "穹顶控制室",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_205_OPTICAL_LOG",
+                "display_name": "光学透镜机械校准与封装记录",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“画面清晰度对比”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 13.218,
+            "usage": {
+              "prompt_tokens": 10470,
+              "completion_tokens": 932,
+              "total_tokens": 11402,
+              "prompt_tokens_details": {
+                "cached_tokens": 5519
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        }
+      ],
+      "selected_failures": [
+        "正文没有兑现章卡关键事实“画面清晰度对比”"
+      ]
+    },
+    "206": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "failures": [
+            "正文没有兑现章卡关键事实“实时数据流证伪”，“瑟琳娜署名协议”，“克劳斯的滑稽反应”",
+            "正文没有兑现章卡关键事实“必须呈现信息差的实际使用：麦珂利用前世记忆，提前知晓暴雨的精确时间点，并在瑟琳娜的协助下，让备用光路在危机爆发前一刻自动接管。”",
+            "正文没有兑现章卡关键事实“必须呈现对手的现场反应：克劳斯在混乱中大喊‘天灾不可控’，试图销毁部分操作日志，却因慌乱留下更多把柄。”",
+            "正文没有通过现场动作兑现状态转移extreme_weather_performance_standard__extension_EC103→zero_interruption_standard",
+            "正文没有通过现场动作兑现状态转移technical_partner_public_status__extension_EC103→official_safety_signatory",
+            "正文未落到规划场景“主舞台”"
+          ],
+          "audit": {
+            "han_chars": 1288,
+            "total_chars": 1452,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "实时数据流证伪”，“瑟琳娜署名协议”，“克劳斯的滑稽反应",
+                "exact": false,
+                "bigram_coverage": 0.429,
+                "matched": false
+              },
+              {
+                "anchor": "必须呈现信息差的实际使用：麦珂利用前世记忆，提前知晓暴雨的精确时间点，并在瑟琳娜的协助下，让备用光路在危机爆发前一刻自动接管。",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              },
+              {
+                "anchor": "必须呈现对手的现场反应：克劳斯在混乱中大喊‘天灾不可控’，试图销毁部分操作日志，却因慌乱留下更多把柄。",
+                "exact": false,
+                "bigram_coverage": 0.409,
+                "matched": false
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "extreme_weather_performance_standard__extension_EC103",
+                "target": "zero_interruption_standard",
+                "evidence_terms": [
+                  "ART_205_OPTICAL_LOG"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "technical_partner_public_status__extension_EC103",
+                "target": "official_safety_signatory",
+                "evidence_terms": [
+                  "ART_206_SAFETY_PROTOCOL"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 1,
+              "墨迹": 1,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0927,
+            "scene_evidence": [
+              {
+                "location": "主舞台",
+                "body_hit": false,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_206_SAFETY_PROTOCOL",
+                "display_name": "官方安全协议（含瑟琳娜署名）",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“实时数据流证伪”，“瑟琳娜署名协议”，“克劳斯的滑稽反应”",
+              "正文没有兑现章卡关键事实“必须呈现信息差的实际使用：麦珂利用前世记忆，提前知晓暴雨的精确时间点，并在瑟琳娜的协助下，让备用光路在危机爆发前一刻自动接管。”",
+              "正文没有兑现章卡关键事实“必须呈现对手的现场反应：克劳斯在混乱中大喊‘天灾不可控’，试图销毁部分操作日志，却因慌乱留下更多把柄。”",
+              "正文没有通过现场动作兑现状态转移extreme_weather_performance_standard__extension_EC103→zero_interruption_standard",
+              "正文没有通过现场动作兑现状态转移technical_partner_public_status__extension_EC103→official_safety_signatory",
+              "正文未落到规划场景“主舞台”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 12.158,
+            "usage": {
+              "prompt_tokens": 13843,
+              "completion_tokens": 870,
+              "total_tokens": 14713,
+              "prompt_tokens_details": {
+                "cached_tokens": 7135
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 2,
+          "failures": [
+            "正文没有兑现章卡关键事实“必须呈现信息差的实际使用：麦珂利用前世记忆，提前知晓暴雨的精确时间点，并在瑟琳娜的协助下，让备用光路在危机爆发前一刻自动接管。”",
+            "正文没有兑现章卡关键事实“必须呈现对手的现场反应：克劳斯在混乱中大喊‘天灾不可控’，试图销毁部分操作日志，却因慌乱留下更多把柄。”",
+            "正文没有通过现场动作兑现状态转移extreme_weather_performance_standard__extension_EC103→zero_interruption_standard",
+            "正文没有通过现场动作兑现状态转移technical_partner_public_status__extension_EC103→official_safety_signatory"
+          ],
+          "audit": {
+            "han_chars": 1434,
+            "total_chars": 1606,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "实时数据流证伪”，“瑟琳娜署名协议”，“克劳斯的滑稽反应",
+                "exact": false,
+                "bigram_coverage": 0.571,
+                "matched": true
+              },
+              {
+                "anchor": "必须呈现信息差的实际使用：麦珂利用前世记忆，提前知晓暴雨的精确时间点，并在瑟琳娜的协助下，让备用光路在危机爆发前一刻自动接管。",
+                "exact": false,
+                "bigram_coverage": 0.281,
+                "matched": false
+              },
+              {
+                "anchor": "必须呈现对手的现场反应：克劳斯在混乱中大喊‘天灾不可控’，试图销毁部分操作日志，却因慌乱留下更多把柄。",
+                "exact": false,
+                "bigram_coverage": 0.341,
+                "matched": false
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "extreme_weather_performance_standard__extension_EC103",
+                "target": "zero_interruption_standard",
+                "evidence_terms": [
+                  "ART_205_OPTICAL_LOG"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "technical_partner_public_status__extension_EC103",
+                "target": "official_safety_signatory",
+                "evidence_terms": [
+                  "ART_206_SAFETY_PROTOCOL"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 1,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0751,
+            "scene_evidence": [
+              {
+                "location": "主舞台",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_206_SAFETY_PROTOCOL",
+                "display_name": "官方安全协议（含瑟琳娜署名）",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“必须呈现信息差的实际使用：麦珂利用前世记忆，提前知晓暴雨的精确时间点，并在瑟琳娜的协助下，让备用光路在危机爆发前一刻自动接管。”",
+              "正文没有兑现章卡关键事实“必须呈现对手的现场反应：克劳斯在混乱中大喊‘天灾不可控’，试图销毁部分操作日志，却因慌乱留下更多把柄。”",
+              "正文没有通过现场动作兑现状态转移extreme_weather_performance_standard__extension_EC103→zero_interruption_standard",
+              "正文没有通过现场动作兑现状态转移technical_partner_public_status__extension_EC103→official_safety_signatory"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 12.571,
+            "usage": {
+              "prompt_tokens": 14054,
+              "completion_tokens": 978,
+              "total_tokens": 15032,
+              "prompt_tokens_details": {
+                "cached_tokens": 7255
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 3,
+          "failures": [
+            "正文没有兑现章卡关键事实“实时数据流证伪”，“瑟琳娜署名协议”，“克劳斯的滑稽反应”",
+            "正文没有兑现章卡关键事实“必须呈现信息差的实际使用：麦珂利用前世记忆，提前知晓暴雨的精确时间点，并在瑟琳娜的协助下，让备用光路在危机爆发前一刻自动接管。”",
+            "正文没有兑现章卡关键事实“必须呈现对手的现场反应：克劳斯在混乱中大喊‘天灾不可控’，试图销毁部分操作日志，却因慌乱留下更多把柄。”",
+            "正文没有通过现场动作兑现状态转移extreme_weather_performance_standard__extension_EC103→zero_interruption_standard",
+            "正文没有通过现场动作兑现状态转移technical_partner_public_status__extension_EC103→official_safety_signatory",
+            "正文未落到规划场景“主舞台”"
+          ],
+          "audit": {
+            "han_chars": 1282,
+            "total_chars": 1453,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "实时数据流证伪”，“瑟琳娜署名协议”，“克劳斯的滑稽反应",
+                "exact": false,
+                "bigram_coverage": 0.429,
+                "matched": false
+              },
+              {
+                "anchor": "必须呈现信息差的实际使用：麦珂利用前世记忆，提前知晓暴雨的精确时间点，并在瑟琳娜的协助下，让备用光路在危机爆发前一刻自动接管。",
+                "exact": false,
+                "bigram_coverage": 0.263,
+                "matched": false
+              },
+              {
+                "anchor": "必须呈现对手的现场反应：克劳斯在混乱中大喊‘天灾不可控’，试图销毁部分操作日志，却因慌乱留下更多把柄。",
+                "exact": false,
+                "bigram_coverage": 0.25,
+                "matched": false
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "extreme_weather_performance_standard__extension_EC103",
+                "target": "zero_interruption_standard",
+                "evidence_terms": [
+                  "ART_205_OPTICAL_LOG"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "technical_partner_public_status__extension_EC103",
+                "target": "official_safety_signatory",
+                "evidence_terms": [
+                  "ART_206_SAFETY_PROTOCOL"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 1,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 1,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0772,
+            "scene_evidence": [
+              {
+                "location": "主舞台",
+                "body_hit": false,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_206_SAFETY_PROTOCOL",
+                "display_name": "官方安全协议（含瑟琳娜署名）",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“实时数据流证伪”，“瑟琳娜署名协议”，“克劳斯的滑稽反应”",
+              "正文没有兑现章卡关键事实“必须呈现信息差的实际使用：麦珂利用前世记忆，提前知晓暴雨的精确时间点，并在瑟琳娜的协助下，让备用光路在危机爆发前一刻自动接管。”",
+              "正文没有兑现章卡关键事实“必须呈现对手的现场反应：克劳斯在混乱中大喊‘天灾不可控’，试图销毁部分操作日志，却因慌乱留下更多把柄。”",
+              "正文没有通过现场动作兑现状态转移extreme_weather_performance_standard__extension_EC103→zero_interruption_standard",
+              "正文没有通过现场动作兑现状态转移technical_partner_public_status__extension_EC103→official_safety_signatory",
+              "正文未落到规划场景“主舞台”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 11.336,
+            "usage": {
+              "prompt_tokens": 14012,
+              "completion_tokens": 898,
+              "total_tokens": 14910,
+              "prompt_tokens_details": {
+                "cached_tokens": 7233
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        }
+      ],
+      "selected_failures": [
+        "正文没有兑现章卡关键事实“实时数据流证伪”，“瑟琳娜署名协议”，“克劳斯的滑稽反应”",
+        "正文没有兑现章卡关键事实“必须呈现信息差的实际使用：麦珂利用前世记忆，提前知晓暴雨的精确时间点，并在瑟琳娜的协助下，让备用光路在危机爆发前一刻自动接管。”",
+        "正文没有兑现章卡关键事实“必须呈现对手的现场反应：克劳斯在混乱中大喊‘天灾不可控’，试图销毁部分操作日志，却因慌乱留下更多把柄。”",
+        "正文没有通过现场动作兑现状态转移extreme_weather_performance_standard__extension_EC103→zero_interruption_standard",
+        "正文没有通过现场动作兑现状态转移technical_partner_public_status__extension_EC103→official_safety_signatory",
+        "正文未落到规划场景“主舞台”"
+      ]
+    },
+    "207": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "failures": [
+            "出现现实世界专名：IBM",
+            "正文没有写出本章正式创建的关键对象“IBM Selectric II色带磨损对比样本”"
+          ],
+          "audit": {
+            "han_chars": 1509,
+            "total_chars": 1746,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 1,
+            "must_include_total": 4,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "IBM Selectric II打字机型号",
+                "exact": false,
+                "bigram_coverage": 0.778,
+                "matched": true
+              },
+              {
+                "anchor": "色带磨损特征对比",
+                "exact": false,
+                "bigram_coverage": 0.571,
+                "matched": true
+              },
+              {
+                "anchor": "维修日志",
+                "exact": true,
+                "bigram_coverage": 1.0,
+                "matched": true
+              },
+              {
+                "anchor": "法庭质疑",
+                "exact": false,
+                "bigram_coverage": 0.667,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 2,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.113,
+            "scene_evidence": [
+              {
+                "location": "法庭辩论席",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_207_TYPEWRITER_FINGERPRINT",
+                "display_name": "IBM Selectric II色带磨损对比样本",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "出现现实世界专名：IBM",
+              "正文没有写出本章正式创建的关键对象“IBM Selectric II色带磨损对比样本”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 13.905,
+            "usage": {
+              "prompt_tokens": 10598,
+              "completion_tokens": 1053,
+              "total_tokens": 11651,
+              "prompt_tokens_details": {
+                "cached_tokens": 5540
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 2,
+          "failures": [
+            "年龄状态冲突：1989年麦珂应为约31岁",
+            "出现现实世界专名：IBM"
+          ],
+          "audit": {
+            "han_chars": 1573,
+            "total_chars": 1850,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 1,
+            "must_include_total": 4,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "IBM Selectric II打字机型号",
+                "exact": false,
+                "bigram_coverage": 0.833,
+                "matched": true
+              },
+              {
+                "anchor": "色带磨损特征对比",
+                "exact": false,
+                "bigram_coverage": 0.857,
+                "matched": true
+              },
+              {
+                "anchor": "维修日志",
+                "exact": true,
+                "bigram_coverage": 1.0,
+                "matched": true
+              },
+              {
+                "anchor": "法庭质疑",
+                "exact": false,
+                "bigram_coverage": 0.667,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 1,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0966,
+            "scene_evidence": [
+              {
+                "location": "法庭辩论席",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_207_TYPEWRITER_FINGERPRINT",
+                "display_name": "IBM Selectric II色带磨损对比样本",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "年龄状态冲突：1989年麦珂应为约31岁",
+              "出现现实世界专名：IBM"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 13.873,
+            "usage": {
+              "prompt_tokens": 10649,
+              "completion_tokens": 1119,
+              "total_tokens": 11768,
+              "prompt_tokens_details": {
+                "cached_tokens": 5569
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 3,
+          "failures": [
+            "出现现实世界专名：IBM",
+            "正文没有兑现章卡关键事实“色带磨损特征对比”",
+            "正文没有兑现章卡关键事实“法庭质疑”",
+            "正文没有写出本章正式创建的关键对象“IBM Selectric II色带磨损对比样本”"
+          ],
+          "audit": {
+            "han_chars": 1247,
+            "total_chars": 1453,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 1,
+            "must_include_total": 4,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "IBM Selectric II打字机型号",
+                "exact": false,
+                "bigram_coverage": 0.778,
+                "matched": true
+              },
+              {
+                "anchor": "色带磨损特征对比",
+                "exact": false,
+                "bigram_coverage": 0.429,
+                "matched": false
+              },
+              {
+                "anchor": "维修日志",
+                "exact": true,
+                "bigram_coverage": 1.0,
+                "matched": true
+              },
+              {
+                "anchor": "法庭质疑",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 1,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.1296,
+            "scene_evidence": [
+              {
+                "location": "法庭辩论席",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_207_TYPEWRITER_FINGERPRINT",
+                "display_name": "IBM Selectric II色带磨损对比样本",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "出现现实世界专名：IBM",
+              "正文没有兑现章卡关键事实“色带磨损特征对比”",
+              "正文没有兑现章卡关键事实“法庭质疑”",
+              "正文没有写出本章正式创建的关键对象“IBM Selectric II色带磨损对比样本”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 13.48,
+            "usage": {
+              "prompt_tokens": 10646,
+              "completion_tokens": 915,
+              "total_tokens": 11561,
+              "prompt_tokens_details": {
+                "cached_tokens": 5563
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        }
+      ],
+      "selected_failures": [
+        "出现现实世界专名：IBM",
+        "正文没有兑现章卡关键事实“色带磨损特征对比”",
+        "正文没有兑现章卡关键事实“法庭质疑”",
+        "正文没有写出本章正式创建的关键对象“IBM Selectric II色带磨损对比样本”"
+      ]
+    },
+    "208": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "failures": [
+            "正文没有兑现章卡关键事实“抢夺摔碎”",
+            "正文没有兑现章卡关键事实“127人名单公开”",
+            "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC104→independent_verified",
+            "正文没有通过现场动作兑现状态转移credibility_status__extension_EC104→fraudulent_exposed",
+            "正文没有通过现场动作兑现状态转移role_expansion__extension_EC104→chief_evidence_officer",
+            "正文没有写出本章正式创建的关键对象“原始打印日志微缩胶片备份”"
+          ],
+          "audit": {
+            "han_chars": 1528,
+            "total_chars": 1700,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 5,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "微缩胶片备份",
+                "exact": false,
+                "bigram_coverage": 0.6,
+                "matched": true
+              },
+              {
+                "anchor": "抢夺摔碎",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              },
+              {
+                "anchor": "127人名单公开",
+                "exact": false,
+                "bigram_coverage": 0.429,
+                "matched": false
+              },
+              {
+                "anchor": "行业禁入",
+                "exact": false,
+                "bigram_coverage": 0.667,
+                "matched": true
+              },
+              {
+                "anchor": "健康备忘录签署",
+                "exact": false,
+                "bigram_coverage": 0.833,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "health_narrative_control__extension_EC104",
+                "target": "independent_verified",
+                "evidence_terms": [
+                  "ART_207_TYPEWRITER_FINGERPRINT"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "credibility_status__extension_EC104",
+                "target": "fraudulent_exposed",
+                "evidence_terms": [
+                  "ART_208_MICROFILM_EXPOSURE"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "role_expansion__extension_EC104",
+                "target": "chief_evidence_officer",
+                "evidence_terms": [
+                  "ART_207_TESTIMONY_LOG"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 1,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0615,
+            "scene_evidence": [
+              {
+                "location": "法庭证据室门口",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_208_MICROFILM_BACKUP",
+                "display_name": "原始打印日志微缩胶片备份",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“抢夺摔碎”",
+              "正文没有兑现章卡关键事实“127人名单公开”",
+              "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC104→independent_verified",
+              "正文没有通过现场动作兑现状态转移credibility_status__extension_EC104→fraudulent_exposed",
+              "正文没有通过现场动作兑现状态转移role_expansion__extension_EC104→chief_evidence_officer",
+              "正文没有写出本章正式创建的关键对象“原始打印日志微缩胶片备份”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 14.485,
+            "usage": {
+              "prompt_tokens": 14576,
+              "completion_tokens": 1037,
+              "total_tokens": 15613,
+              "prompt_tokens_details": {
+                "cached_tokens": 7438
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 2,
+          "failures": [
+            "正文没有兑现章卡关键事实“抢夺摔碎”",
+            "正文没有兑现章卡关键事实“行业禁入”",
+            "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC104→independent_verified",
+            "正文没有通过现场动作兑现状态转移credibility_status__extension_EC104→fraudulent_exposed",
+            "正文没有通过现场动作兑现状态转移role_expansion__extension_EC104→chief_evidence_officer"
+          ],
+          "audit": {
+            "han_chars": 1302,
+            "total_chars": 1484,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 1,
+            "must_include_total": 5,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "微缩胶片备份",
+                "exact": true,
+                "bigram_coverage": 1.0,
+                "matched": true
+              },
+              {
+                "anchor": "抢夺摔碎",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              },
+              {
+                "anchor": "127人名单公开",
+                "exact": false,
+                "bigram_coverage": 0.571,
+                "matched": true
+              },
+              {
+                "anchor": "行业禁入",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              },
+              {
+                "anchor": "健康备忘录签署",
+                "exact": false,
+                "bigram_coverage": 0.667,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "health_narrative_control__extension_EC104",
+                "target": "independent_verified",
+                "evidence_terms": [
+                  "ART_207_TYPEWRITER_FINGERPRINT"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "credibility_status__extension_EC104",
+                "target": "fraudulent_exposed",
+                "evidence_terms": [
+                  "ART_208_MICROFILM_EXPOSURE"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "role_expansion__extension_EC104",
+                "target": "chief_evidence_officer",
+                "evidence_terms": [
+                  "ART_207_TESTIMONY_LOG"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 1,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 2
+            },
+            "plan_body_semantic_overlap": 0.0764,
+            "scene_evidence": [
+              {
+                "location": "法庭证据室门口",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_208_MICROFILM_BACKUP",
+                "display_name": "原始打印日志微缩胶片备份",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“抢夺摔碎”",
+              "正文没有兑现章卡关键事实“行业禁入”",
+              "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC104→independent_verified",
+              "正文没有通过现场动作兑现状态转移credibility_status__extension_EC104→fraudulent_exposed",
+              "正文没有通过现场动作兑现状态转移role_expansion__extension_EC104→chief_evidence_officer"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 11.977,
+            "usage": {
+              "prompt_tokens": 14726,
+              "completion_tokens": 908,
+              "total_tokens": 15634,
+              "prompt_tokens_details": {
+                "cached_tokens": 7518
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 3,
+          "failures": [
+            "正文没有兑现章卡关键事实“抢夺摔碎”",
+            "正文没有兑现章卡关键事实“行业禁入”",
+            "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC104→independent_verified",
+            "正文没有通过现场动作兑现状态转移credibility_status__extension_EC104→fraudulent_exposed",
+            "正文没有通过现场动作兑现状态转移role_expansion__extension_EC104→chief_evidence_officer",
+            "正文没有写出本章正式创建的关键对象“原始打印日志微缩胶片备份”"
+          ],
+          "audit": {
+            "han_chars": 1523,
+            "total_chars": 1748,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 1,
+            "must_include_total": 5,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "微缩胶片备份",
+                "exact": true,
+                "bigram_coverage": 1.0,
+                "matched": true
+              },
+              {
+                "anchor": "抢夺摔碎",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              },
+              {
+                "anchor": "127人名单公开",
+                "exact": false,
+                "bigram_coverage": 0.714,
+                "matched": true
+              },
+              {
+                "anchor": "行业禁入",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              },
+              {
+                "anchor": "健康备忘录签署",
+                "exact": false,
+                "bigram_coverage": 0.833,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "health_narrative_control__extension_EC104",
+                "target": "independent_verified",
+                "evidence_terms": [
+                  "ART_207_TYPEWRITER_FINGERPRINT"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "credibility_status__extension_EC104",
+                "target": "fraudulent_exposed",
+                "evidence_terms": [
+                  "ART_208_MICROFILM_EXPOSURE"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "role_expansion__extension_EC104",
+                "target": "chief_evidence_officer",
+                "evidence_terms": [
+                  "ART_207_TESTIMONY_LOG"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 1,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0615,
+            "scene_evidence": [
+              {
+                "location": "法庭证据室门口",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_208_MICROFILM_BACKUP",
+                "display_name": "原始打印日志微缩胶片备份",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“抢夺摔碎”",
+              "正文没有兑现章卡关键事实“行业禁入”",
+              "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC104→independent_verified",
+              "正文没有通过现场动作兑现状态转移credibility_status__extension_EC104→fraudulent_exposed",
+              "正文没有通过现场动作兑现状态转移role_expansion__extension_EC104→chief_evidence_officer",
+              "正文没有写出本章正式创建的关键对象“原始打印日志微缩胶片备份”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 14.097,
+            "usage": {
+              "prompt_tokens": 14703,
+              "completion_tokens": 1062,
+              "total_tokens": 15765,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        }
+      ],
+      "selected_failures": [
+        "正文没有兑现章卡关键事实“抢夺摔碎”",
+        "正文没有兑现章卡关键事实“行业禁入”",
+        "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC104→independent_verified",
+        "正文没有通过现场动作兑现状态转移credibility_status__extension_EC104→fraudulent_exposed",
+        "正文没有通过现场动作兑现状态转移role_expansion__extension_EC104→chief_evidence_officer",
+        "正文没有写出本章正式创建的关键对象“原始打印日志微缩胶片备份”"
+      ]
+    },
+    "209": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "failures": [
+            "正文未落到规划场景“雾河城巡演发布会现场”",
+            "正文没有写出本章正式创建的关键对象“《今日健康备忘录》全球开源宣言书”"
+          ],
+          "audit": {
+            "han_chars": 1325,
+            "total_chars": 1506,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "开源宣言宣读",
+                "exact": false,
+                "bigram_coverage": 0.6,
+                "matched": true
+              },
+              {
+                "anchor": "竞争对手申请",
+                "exact": false,
+                "bigram_coverage": 0.8,
+                "matched": true
+              },
+              {
+                "anchor": "奥瑞恩收入归零",
+                "exact": false,
+                "bigram_coverage": 0.833,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 1,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0729,
+            "scene_evidence": [
+              {
+                "location": "雾河城巡演发布会现场",
+                "body_hit": false,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_209_OPEN_SOURCE_DECREE",
+                "display_name": "《今日健康备忘录》全球开源宣言书",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文未落到规划场景“雾河城巡演发布会现场”",
+              "正文没有写出本章正式创建的关键对象“《今日健康备忘录》全球开源宣言书”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 13.113,
+            "usage": {
+              "prompt_tokens": 10108,
+              "completion_tokens": 904,
+              "total_tokens": 11012,
+              "prompt_tokens_details": {
+                "cached_tokens": 476
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 2,
+          "failures": [
+            "正文没有兑现章卡关键事实“开源宣言宣读”",
+            "正文没有兑现章卡关键事实“奥瑞恩收入归零”",
+            "正文未落到规划场景“雾河城巡演发布会现场”",
+            "正文没有写出本章正式创建的关键对象“《今日健康备忘录》全球开源宣言书”"
+          ],
+          "audit": {
+            "han_chars": 1111,
+            "total_chars": 1296,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "开源宣言宣读",
+                "exact": false,
+                "bigram_coverage": 0.2,
+                "matched": false
+              },
+              {
+                "anchor": "竞争对手申请",
+                "exact": false,
+                "bigram_coverage": 0.8,
+                "matched": true
+              },
+              {
+                "anchor": "奥瑞恩收入归零",
+                "exact": false,
+                "bigram_coverage": 0.333,
+                "matched": false
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0618,
+            "scene_evidence": [
+              {
+                "location": "雾河城巡演发布会现场",
+                "body_hit": false,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_209_OPEN_SOURCE_DECREE",
+                "display_name": "《今日健康备忘录》全球开源宣言书",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“开源宣言宣读”",
+              "正文没有兑现章卡关键事实“奥瑞恩收入归零”",
+              "正文未落到规划场景“雾河城巡演发布会现场”",
+              "正文没有写出本章正式创建的关键对象“《今日健康备忘录》全球开源宣言书”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 10.875,
+            "usage": {
+              "prompt_tokens": 10165,
+              "completion_tokens": 786,
+              "total_tokens": 10951,
+              "prompt_tokens_details": {
+                "cached_tokens": 5418
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 3,
+          "failures": [
+            "正文未落到规划场景“雾河城巡演发布会现场”"
+          ],
+          "audit": {
+            "han_chars": 1484,
+            "total_chars": 1704,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "开源宣言宣读",
+                "exact": false,
+                "bigram_coverage": 0.6,
+                "matched": true
+              },
+              {
+                "anchor": "竞争对手申请",
+                "exact": false,
+                "bigram_coverage": 0.8,
+                "matched": true
+              },
+              {
+                "anchor": "奥瑞恩收入归零",
+                "exact": false,
+                "bigram_coverage": 0.667,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [],
+            "motif_counts": {
+              "指尖": 1,
+              "喉结": 1,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0534,
+            "scene_evidence": [
+              {
+                "location": "雾河城巡演发布会现场",
+                "body_hit": false,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_209_OPEN_SOURCE_DECREE",
+                "display_name": "《今日健康备忘录》全球开源宣言书",
+                "body_hit": true,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文未落到规划场景“雾河城巡演发布会现场”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 13.568,
+            "usage": {
+              "prompt_tokens": 10198,
+              "completion_tokens": 1055,
+              "total_tokens": 11253,
+              "prompt_tokens_details": {
+                "cached_tokens": 5434
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        }
+      ],
+      "selected_failures": [
+        "正文未落到规划场景“雾河城巡演发布会现场”"
+      ]
+    },
+    "210": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "failures": [
+            "正文没有兑现章卡关键事实“127名证人证词”",
+            "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC105→public_open_source",
+            "正文没有通过现场动作兑现状态转移licensing_income__extension_EC105→zero_revenue",
+            "正文没有通过现场动作兑现状态转移role_expansion__extension_EC105→chief_evidence_officer",
+            "正文未落到规划场景“雾河城高等法院听证会”",
+            "正文没有写出本章正式创建的关键对象“ART_210_SCROLL_SUBMISSION”"
+          ],
+          "audit": {
+            "han_chars": 1559,
+            "total_chars": 1750,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "敌情图谱展开",
+                "exact": false,
+                "bigram_coverage": 0.8,
+                "matched": true
+              },
+              {
+                "anchor": "127名证人证词",
+                "exact": false,
+                "bigram_coverage": 0.429,
+                "matched": false
+              },
+              {
+                "anchor": "法官宣判",
+                "exact": false,
+                "bigram_coverage": 0.667,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "health_narrative_control__extension_EC105",
+                "target": "public_open_source",
+                "evidence_terms": [
+                  "ART_209_OPEN_SOURCE_DECREE"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "licensing_income__extension_EC105",
+                "target": "zero_revenue",
+                "evidence_terms": [
+                  "ART_210_COMPETITOR_APPLICATIONS"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "role_expansion__extension_EC105",
+                "target": "chief_evidence_officer",
+                "evidence_terms": [
+                  "ART_210_SCROLL_SUBMISSION"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 0,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0673,
+            "scene_evidence": [
+              {
+                "location": "雾河城高等法院听证会",
+                "body_hit": false,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_210_SCROLL_SUBMISSION",
+                "display_name": "ART_210_SCROLL_SUBMISSION",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“127名证人证词”",
+              "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC105→public_open_source",
+              "正文没有通过现场动作兑现状态转移licensing_income__extension_EC105→zero_revenue",
+              "正文没有通过现场动作兑现状态转移role_expansion__extension_EC105→chief_evidence_officer",
+              "正文未落到规划场景“雾河城高等法院听证会”",
+              "正文没有写出本章正式创建的关键对象“ART_210_SCROLL_SUBMISSION”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 19.283,
+            "usage": {
+              "prompt_tokens": 14818,
+              "completion_tokens": 1067,
+              "total_tokens": 15885,
+              "prompt_tokens_details": {
+                "cached_tokens": 7537
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 2,
+          "failures": [
+            "正文没有兑现章卡关键事实“127名证人证词”",
+            "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC105→public_open_source",
+            "正文没有通过现场动作兑现状态转移licensing_income__extension_EC105→zero_revenue",
+            "正文没有通过现场动作兑现状态转移role_expansion__extension_EC105→chief_evidence_officer",
+            "正文未落到规划场景“雾河城高等法院听证会”",
+            "正文没有写出本章正式创建的关键对象“ART_210_SCROLL_SUBMISSION”"
+          ],
+          "audit": {
+            "han_chars": 1597,
+            "total_chars": 1789,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "敌情图谱展开",
+                "exact": false,
+                "bigram_coverage": 0.8,
+                "matched": true
+              },
+              {
+                "anchor": "127名证人证词",
+                "exact": false,
+                "bigram_coverage": 0.286,
+                "matched": false
+              },
+              {
+                "anchor": "法官宣判",
+                "exact": false,
+                "bigram_coverage": 0.667,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "health_narrative_control__extension_EC105",
+                "target": "public_open_source",
+                "evidence_terms": [
+                  "ART_209_OPEN_SOURCE_DECREE"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "licensing_income__extension_EC105",
+                "target": "zero_revenue",
+                "evidence_terms": [
+                  "ART_210_COMPETITOR_APPLICATIONS"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "role_expansion__extension_EC105",
+                "target": "chief_evidence_officer",
+                "evidence_terms": [
+                  "ART_210_SCROLL_SUBMISSION"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 1,
+              "喉结": 1,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0522,
+            "scene_evidence": [
+              {
+                "location": "雾河城高等法院听证会",
+                "body_hit": false,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_210_SCROLL_SUBMISSION",
+                "display_name": "ART_210_SCROLL_SUBMISSION",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“127名证人证词”",
+              "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC105→public_open_source",
+              "正文没有通过现场动作兑现状态转移licensing_income__extension_EC105→zero_revenue",
+              "正文没有通过现场动作兑现状态转移role_expansion__extension_EC105→chief_evidence_officer",
+              "正文未落到规划场景“雾河城高等法院听证会”",
+              "正文没有写出本章正式创建的关键对象“ART_210_SCROLL_SUBMISSION”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 14.266,
+            "usage": {
+              "prompt_tokens": 14970,
+              "completion_tokens": 1096,
+              "total_tokens": 16066,
+              "prompt_tokens_details": {
+                "cached_tokens": 7616
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        },
+        {
+          "attempt": 3,
+          "failures": [
+            "正文没有兑现章卡关键事实“敌情图谱展开”",
+            "正文没有兑现章卡关键事实“127名证人证词”",
+            "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC105→public_open_source",
+            "正文没有通过现场动作兑现状态转移licensing_income__extension_EC105→zero_revenue",
+            "正文没有通过现场动作兑现状态转移role_expansion__extension_EC105→chief_evidence_officer",
+            "正文没有写出本章正式创建的关键对象“ART_210_SCROLL_SUBMISSION”"
+          ],
+          "audit": {
+            "han_chars": 1576,
+            "total_chars": 1772,
+            "target_han_range": [
+              1200,
+              1600
+            ],
+            "must_include_exact_hits": 0,
+            "must_include_total": 3,
+            "must_include_semantic_evidence": [
+              {
+                "anchor": "敌情图谱展开",
+                "exact": false,
+                "bigram_coverage": 0.2,
+                "matched": false
+              },
+              {
+                "anchor": "127名证人证词",
+                "exact": false,
+                "bigram_coverage": 0.286,
+                "matched": false
+              },
+              {
+                "anchor": "法官宣判",
+                "exact": false,
+                "bigram_coverage": 0.667,
+                "matched": true
+              }
+            ],
+            "must_resolve_semantic_evidence": [
+              {
+                "state_key": "health_narrative_control__extension_EC105",
+                "target": "public_open_source",
+                "evidence_terms": [
+                  "ART_209_OPEN_SOURCE_DECREE"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "licensing_income__extension_EC105",
+                "target": "zero_revenue",
+                "evidence_terms": [
+                  "ART_210_COMPETITOR_APPLICATIONS"
+                ],
+                "hit_terms": [],
+                "matched": false
+              },
+              {
+                "state_key": "role_expansion__extension_EC105",
+                "target": "chief_evidence_officer",
+                "evidence_terms": [
+                  "ART_210_SCROLL_SUBMISSION"
+                ],
+                "hit_terms": [],
+                "matched": false
+              }
+            ],
+            "motif_counts": {
+              "指尖": 1,
+              "喉结": 0,
+              "信封": 0,
+              "蓝雪": 0,
+              "波形": 0,
+              "墨迹": 0,
+              "骑缝章": 0,
+              "铅封": 0
+            },
+            "plan_body_semantic_overlap": 0.0545,
+            "scene_evidence": [
+              {
+                "location": "雾河城高等法院听证会",
+                "body_hit": true,
+                "match_mode": "location_keyword"
+              }
+            ],
+            "artifact_creation_evidence": [
+              {
+                "artifact_id": "ART_210_SCROLL_SUBMISSION",
+                "display_name": "ART_210_SCROLL_SUBMISSION",
+                "body_hit": false,
+                "match_mode": "exact_display_name"
+              }
+            ],
+            "failures": [
+              "正文没有兑现章卡关键事实“敌情图谱展开”",
+              "正文没有兑现章卡关键事实“127名证人证词”",
+              "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC105→public_open_source",
+              "正文没有通过现场动作兑现状态转移licensing_income__extension_EC105→zero_revenue",
+              "正文没有通过现场动作兑现状态转移role_expansion__extension_EC105→chief_evidence_officer",
+              "正文没有写出本章正式创建的关键对象“ART_210_SCROLL_SUBMISSION”"
+            ]
+          },
+          "call": {
+            "model": "qwen-plus",
+            "transport": "openai_compatible_curl",
+            "elapsed_seconds": 14.878,
+            "usage": {
+              "prompt_tokens": 14970,
+              "completion_tokens": 1091,
+              "total_tokens": 16061,
+              "prompt_tokens_details": {
+                "cached_tokens": 7616
+              }
+            },
+            "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+          }
+        }
+      ],
+      "selected_failures": [
+        "正文没有兑现章卡关键事实“敌情图谱展开”",
+        "正文没有兑现章卡关键事实“127名证人证词”",
+        "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC105→public_open_source",
+        "正文没有通过现场动作兑现状态转移licensing_income__extension_EC105→zero_revenue",
+        "正文没有通过现场动作兑现状态转移role_expansion__extension_EC105→chief_evidence_officer",
+        "正文没有写出本章正式创建的关键对象“ART_210_SCROLL_SUBMISSION”"
+      ]
+    }
+  },
+  "clusters": {
+    "EC101": {
+      "joint_failures": [
+        "第二章没有通过动作兑现计划中的损失/收益结算；仅有情绪反应不能算结算"
+      ],
+      "joint_audit": {
+        "201": {
+          "han_chars": 1664,
+          "total_chars": 1878,
+          "target_han_range": [
+            1200,
+            1600
+          ],
+          "must_include_exact_hits": 0,
+          "must_include_total": 3,
+          "failures": []
+        },
+        "202": {
+          "han_chars": 1348,
+          "total_chars": 1539,
+          "target_han_range": [
+            1200,
+            1600
+          ],
+          "must_include_exact_hits": 0,
+          "must_include_total": 3,
+          "failures": []
+        },
+        "joint_semantic_overlap": 0.1099,
+        "resolution_signatures": {
+          "first": {
+            "attack": "",
+            "counter": "签字",
+            "resolver": "",
+            "opponent_result": "失去",
+            "hero_result": "恢复"
+          },
+          "second": {
+            "attack": "暴雨",
+            "counter": "签字",
+            "resolver": "观众",
+            "opponent_result": "狼狈",
+            "hero_result": ""
+          }
+        },
+        "settlement_action_terms": [
+          "失去",
+          "获得"
+        ],
+        "rebirth_information_gap_markers": [
+          "前世",
+          "上一世"
+        ],
+        "recent_five_chapter_semantic_comparison": [
+          {
+            "chapter_id": 201,
+            "prior_chapter_id": 196,
+            "semantic_overlap": 0.0978
+          },
+          {
+            "chapter_id": 201,
+            "prior_chapter_id": 197,
+            "semantic_overlap": 0.0854
+          },
+          {
+            "chapter_id": 201,
+            "prior_chapter_id": 198,
+            "semantic_overlap": 0.0867
+          },
+          {
+            "chapter_id": 201,
+            "prior_chapter_id": 199,
+            "semantic_overlap": 0.0968
+          },
+          {
+            "chapter_id": 201,
+            "prior_chapter_id": 200,
+            "semantic_overlap": 0.088
+          },
+          {
+            "chapter_id": 202,
+            "prior_chapter_id": 196,
+            "semantic_overlap": 0.0951
+          },
+          {
+            "chapter_id": 202,
+            "prior_chapter_id": 197,
+            "semantic_overlap": 0.0543
+          },
+          {
+            "chapter_id": 202,
+            "prior_chapter_id": 198,
+            "semantic_overlap": 0.066
+          },
+          {
+            "chapter_id": 202,
+            "prior_chapter_id": 199,
+            "semantic_overlap": 0.0875
+          },
+          {
+            "chapter_id": 202,
+            "prior_chapter_id": 200,
+            "semantic_overlap": 0.0799
+          }
+        ]
+      },
+      "semantic_critic": {
+        "knowledge_boundary": {
+          "ok": true,
+          "evidence": [
+            "麦珂作为唯一重生者，利用前世记忆锁定1987-03-14 03:14的时间节点进行布局。",
+            "其他角色（莉薇娅、玛莎、瑟琳娜）仅基于当下情境和信任做出反应，未表现出知晓前世细节。"
+          ]
+        },
+        "character_state": {
+          "ok": true,
+          "evidence": [
+            "麦珂在201章展现冷静与决绝，符合其'对失控高度敏感'且'不再让他人替自己决定'的性格弧光。",
+            "莉薇娅从犹豫到签字的转变，体现了她'用反叛证明自由'并'为安全放弃家族预设'的内在逻辑。",
+            "玛莎和瑟琳娜的配合行动符合其'保护者'与'真实可见'的角色设定，未出现性格崩坏。"
+          ]
+        },
+        "timeline_causality": {
+          "ok": true,
+          "evidence": [
+            "章节时间线严格限定在1987年3月14日，无跨时空跳跃或日期矛盾。",
+            "因果链条清晰：前世悲剧记忆 -> 今生提前布局（签署三方令） -> 次日测试诱饵 -> 对手质疑 -> 证据反杀。",
+            "奥瑞恩代表因昨晚暴雨未去现场而皮鞋沾泥的细节，与其声称'已去现场查看'形成逻辑闭环。"
+          ]
+        },
+        "pov_consistency": {
+          "ok": true,
+          "evidence": [
+            "叙述视角始终聚焦于麦珂及其团队的感知，未泄露奥瑞恩代表内心的具体想法或未被证实的动机。",
+            "奥瑞恩代表的狼狈与谎言通过外部行为（皮鞋泥水、录音笔转动）展现，符合'Show Don't Tell'原则。"
+          ]
+        },
+        "role_identity": {
+          "ok": true,
+          "evidence": [
+            "麦珂、莉薇娅、玛莎、瑟琳娜的角色分工（歌手/决策核心、经纪人、医生、技术总监）与计划一致。",
+            "奥瑞恩代表仅以合规部人员身份出现，未越权行使司法或行政权力。",
+            "未出现未铺垫的终极反派或万能黑客介入。"
+          ]
+        },
+        "authority_scope": {
+          "ok": true,
+          "evidence": [
+            "麦珂团队通过签署具有法律效力的内部文件确立'独立临床决策权'，而非直接剥夺集团法定权利，符合法理逻辑。",
+            "奥瑞恩代表试图引用过时手册（1985版）被当场揭穿，未发生非法强行停演或越权执法情节。",
+            "第三方见证人（卫生局官员、媒体）的存在增强了流程合法性，避免了私力救济的嫌疑。"
+          ]
+        },
+        "evidence_supports_conclusion": {
+          "ok": true,
+          "evidence": [
+            "'三方签字急救启动令'原件、时间戳及见证人名单构成了完整的证据链，直接驳斥了奥瑞恩关于'需上级授权'的指控。",
+            "奥瑞恩代表皮鞋上的泥水与其声称'亲临现场查看'的事实相悖，成为揭露其撒谎的关键物证。",
+            "录音笔记录的内容佐证了其无视紧急状况的主观恶意。"
+          ]
+        },
+        "outcome_overreach": {
+          "ok": true,
+          "evidence": [
+            "结局为奥瑞恩失去单方面解释权，被迫承认流程合法，未升级为永久封杀或刑事定罪，符合'临时性制度博弈'的尺度。",
+            "莉薇娅获得的是'独立临床决策法理背书'，而非直接取代法务部门，权力边界清晰。",
+            "未将'暂停演出'的争议扩大为对整个巡演项目的毁灭性打击。"
+          ]
+        },
+        "repeated_resolution_pattern": {
+          "ok": false,
+          "evidence": [
+            "对比第196-200章（诺兰/维克多事件），本章虽同为'揭露对手谎言并获胜'，但核心冲突已从'财务数据造假/虚假传真'转变为'医疗流程控制权争夺'。",
+            "解决方案从'利用审计/银行条款反击'变为'建立新的三方签字铁律'，属于机制创新而非单纯重复旧套路。",
+            "然而，候选章节202中'当众展示文件->对手被揭穿->灰溜溜退场'的结构与前几章（如196章诺兰被揭穿、199章维克多被赶出）高度雷同，缺乏叙事层面的新变奏，存在'爽点模式化'风险。"
+          ]
+        }
+      },
+      "semantic_critic_failures": [
+        "semantic critic repeated_resolution_pattern: 对比第196-200章（诺兰/维克多事件），本章虽同为'揭露对手谎言并获胜'，但核心冲突已从'财务数据造假/虚假传真'转变为'医疗流程控制权争夺'。; 解决方案从'利用审计/银行条款反击'变为'建立新的三方签字铁律'，属于机制创新而非单纯重复旧套路。; 然而，候选章节202中'当众展示文件->对手被揭穿->灰溜溜退场'的结构与前几章（如196章诺兰被揭穿、199章维克多被赶出）高度雷同，缺乏叙事层面的新变奏，存在'爽点模式化'风险。"
+      ],
+      "semantic_critic_call": {
+        "model": "qwen-plus",
+        "transport": "openai_compatible_curl",
+        "elapsed_seconds": 16.054,
+        "usage": {
+          "prompt_tokens": 21776,
+          "completion_tokens": 1091,
+          "total_tokens": 22867,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+      }
+    },
+    "EC102": {
+      "joint_failures": [
+        "两章存在80字连续重复片段，第二章疑似重演第一章",
+        "两章语义片段重合度0.21过高，第二章疑似换词重演第一章"
+      ],
+      "joint_audit": {
+        "203": {
+          "han_chars": 1296,
+          "total_chars": 1498,
+          "target_han_range": [
+            1200,
+            1600
+          ],
+          "must_include_exact_hits": 1,
+          "must_include_total": 3,
+          "failures": []
+        },
+        "204": {
+          "han_chars": 1296,
+          "total_chars": 1470,
+          "target_han_range": [
+            1200,
+            1600
+          ],
+          "must_include_exact_hits": 0,
+          "must_include_total": 3,
+          "failures": []
+        },
+        "joint_semantic_overlap": 0.2086,
+        "resolution_signatures": {
+          "first": {
+            "attack": "合同",
+            "counter": "签字",
+            "resolver": "观众",
+            "opponent_result": "失去",
+            "hero_result": "确立"
+          },
+          "second": {
+            "attack": "合同",
+            "counter": "签字",
+            "resolver": "记者",
+            "opponent_result": "狼狈",
+            "hero_result": "确立"
+          }
+        },
+        "settlement_action_terms": [],
+        "rebirth_information_gap_markers": [
+          "前世",
+          "上一世"
+        ],
+        "recent_five_chapter_semantic_comparison": [
+          {
+            "chapter_id": 203,
+            "prior_chapter_id": 198,
+            "semantic_overlap": 0.0671
+          },
+          {
+            "chapter_id": 203,
+            "prior_chapter_id": 199,
+            "semantic_overlap": 0.0702
+          },
+          {
+            "chapter_id": 203,
+            "prior_chapter_id": 200,
+            "semantic_overlap": 0.0751
+          },
+          {
+            "chapter_id": 203,
+            "prior_chapter_id": 201,
+            "semantic_overlap": 0.0708
+          },
+          {
+            "chapter_id": 203,
+            "prior_chapter_id": 202,
+            "semantic_overlap": 0.0894
+          },
+          {
+            "chapter_id": 204,
+            "prior_chapter_id": 198,
+            "semantic_overlap": 0.0712
+          },
+          {
+            "chapter_id": 204,
+            "prior_chapter_id": 199,
+            "semantic_overlap": 0.079
+          },
+          {
+            "chapter_id": 204,
+            "prior_chapter_id": 200,
+            "semantic_overlap": 0.0845
+          },
+          {
+            "chapter_id": 204,
+            "prior_chapter_id": 201,
+            "semantic_overlap": 0.068
+          },
+          {
+            "chapter_id": 204,
+            "prior_chapter_id": 202,
+            "semantic_overlap": 0.1015
+          }
+        ]
+      },
+      "semantic_critic": {
+        "knowledge_boundary": {
+          "ok": false,
+          "evidence": [
+            "Chapter 203 synopsis states '老人#8327号卡拼写纠错' (Old man #8327 card spelling correction), but the candidate chapter text has the protagonist Ma Ke reading the correction aloud to the audience. The plan explicitly states the villian's loss comes from the *audience* pointing out the discrepancy between the villain's old blueprint and the actual building, or the villain being caught with a flawed document. While the spelling error is in the plan as a 'bait', the candidate chapter makes Ma Ke the one correcting it publicly, which is acceptable, BUT the plan specifies the 'comic villain behavior' is the villain being exposed by the *audience* regarding the emergency exit map, not just the spelling.",
+            "More critically, Chapter 204 candidate text says '数百名观众同时举起了手中的编号卡... 一位拄着拐杖的老人颤巍巍地走到最前，他高举着#8327号卡片，大声指出上面的拼写错误已被修正为\"Safety\"'. This contradicts the plan's flow where the spelling error was already corrected and celebrated in Chapter 203. Repeating the specific 'spelling error' discovery in Chapter 204 as if it's happening for the first time or being the main focus of the confrontation creates a continuity error in the timeline of evidence presentation. The plan says Ch203 ends with the correction and applause; Ch204 should be about the villain's reaction to the *data* and the *map*, not re-litigating the spelling."
+          ]
+        },
+        "character_state": {
+          "ok": true,
+          "evidence": [
+            "Ma Ke's gender pronouns are correctly used as 'he/him' (他) consistent with the hard character state constraints (sex: male).",
+            "Characters act within their defined roles: Su Feiya handles data/audit, Martha enforces safety/legal boundaries, Serena manages tech.",
+            "No unauthorized knowledge transfer observed; only Ma Ke knows the rebirth facts, others react to the physical evidence presented."
+          ]
+        },
+        "timeline_causality": {
+          "ok": false,
+          "evidence": [
+            "Chapter 204 candidate text repeats the 'spelling error' event as a new revelation ('大声指出上面的拼写错误已被修正'). In Chapter 203, this error was already identified, corrected, and celebrated as a 'victory' moment. Repeating this specific action in Chapter 204 as part of the villain's confrontation creates a redundant loop and breaks the causal progression where the focus should shift to the 'safety regulation' vs 'data' argument. The plan dictates the 'comic villain behavior' is the map discrepancy, which is present, but the repetition of the spelling fix undermines the 'Ch203 setup and win' structure."
+          ]
+        },
+        "pov_consistency": {
+          "ok": true,
+          "evidence": [
+            "POV remains focused on Ma Ke's perspective and the public scene. No private thoughts of the villain (Raymond Thorne) are revealed beyond his observable actions and dialogue, respecting the constraint that only Ma Ke knows past-life specifics."
+          ]
+        },
+        "role_identity": {
+          "ok": true,
+          "evidence": [
+            "Roles are consistent: Ma Ke (Artist), Serena (Tech), Su Feiya (Audit), Martha (Mother/Legal), Thorne (Executive)."
+          ]
+        },
+        "authority_scope": {
+          "ok": false,
+          "evidence": [
+            "In Chapter 204, Martha stops Thorne from grabbing evidence by citing 'Contract Article 14' and threatening legal liability. However, the 'hard_character_state_by_chapter' and 'world_rules' specify that lawyers can draft documents and threaten claims, but *police* or *court* must handle the process. A mother figure (Martha) asserting 'legal liability' and stopping a police officer/executive from touching evidence on her own authority without a lawyer present oversteps the defined 'lawyer' role scope. The plan mentions 'lawyers' in the context of the contract, but here Martha acts as the sole enforcer of legal procedure against an executive and police, which violates the 'authority_scope' rules where legal enforcement requires proper legal representation or court order, not just a family member's assertion."
+          ]
+        },
+        "evidence_supports_conclusion": {
+          "ok": true,
+          "evidence": [
+            "The data log showing 30% higher efficiency supports the claim that random seating improved safety. The map discrepancy supports the claim that Thorne's old regulations were invalid."
+          ]
+        },
+        "outcome_overreach": {
+          "ok": true,
+          "evidence": [
+            "Thorne loses control but does not suffer permanent career destruction (he leaves, company issues statement). The outcome matches the plan's 'villain_loss' of losing spatial control, not total ruin."
+          ]
+        },
+        "repeated_resolution_pattern": {
+          "ok": false,
+          "evidence": [
+            "Chapter 204 essentially replays the core conflict resolution of Chapter 203. Ch203 resolves the 'VIP removal' and 'spelling correction'. Ch204 is supposed to resolve the 'counter-attack' to the 'safety accusation'. However, the candidate text brings back the 'spelling correction' as a key moment again, making the second chapter feel like a replay of the first chapter's climax rather than a distinct escalation based on the 'safety regulation' and 'map' evidence. The plan requires Ch204 to focus on the 'safety order' accusation and the 'map' contradiction, not re-validating the spelling fix which was already done in Ch203."
+          ]
+        }
+      },
+      "semantic_critic_failures": [
+        "semantic critic knowledge_boundary: Chapter 203 synopsis states '老人#8327号卡拼写纠错' (Old man #8327 card spelling correction), but the candidate chapter text has the protagonist Ma Ke reading the correction aloud to the audience. The plan explicitly states the villian's loss comes from the *audience* pointing out the discrepancy between the villain's old blueprint and the actual building, or the villain being caught with a flawed document. While the spelling error is in the plan as a 'bait', the candidate chapter makes Ma Ke the one co",
+        "semantic critic timeline_causality: Chapter 204 candidate text repeats the 'spelling error' event as a new revelation ('大声指出上面的拼写错误已被修正'). In Chapter 203, this error was already identified, corrected, and celebrated as a 'victory' moment. Repeating this specific action in Chapter 204 as part of the villain's confrontation creates a redundant loop and breaks the causal progression where the focus should shift to the 'safety regulation' vs 'data' argument. The plan dictates the 'comic villain behavior' is the map discrepancy, which ",
+        "semantic critic authority_scope: In Chapter 204, Martha stops Thorne from grabbing evidence by citing 'Contract Article 14' and threatening legal liability. However, the 'hard_character_state_by_chapter' and 'world_rules' specify that lawyers can draft documents and threaten claims, but *police* or *court* must handle the process. A mother figure (Martha) asserting 'legal liability' and stopping a police officer/executive from touching evidence on her own authority without a lawyer present oversteps the defined 'lawyer' role sc",
+        "semantic critic repeated_resolution_pattern: Chapter 204 essentially replays the core conflict resolution of Chapter 203. Ch203 resolves the 'VIP removal' and 'spelling correction'. Ch204 is supposed to resolve the 'counter-attack' to the 'safety accusation'. However, the candidate text brings back the 'spelling correction' as a key moment again, making the second chapter feel like a replay of the first chapter's climax rather than a distinct escalation based on the 'safety regulation' and 'map' evidence. The plan requires Ch204 to focus o"
+      ],
+      "semantic_critic_call": {
+        "model": "qwen-plus",
+        "transport": "openai_compatible_curl",
+        "elapsed_seconds": 16.732,
+        "usage": {
+          "prompt_tokens": 21892,
+          "completion_tokens": 1301,
+          "total_tokens": 23193,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+      }
+    },
+    "EC103": {
+      "joint_failures": [
+        "两章存在54字连续重复片段，第二章疑似重演第一章",
+        "两章语义片段重合度0.20过高，第二章疑似换词重演第一章"
+      ],
+      "joint_audit": {
+        "205": {
+          "han_chars": 1381,
+          "total_chars": 1549,
+          "target_han_range": [
+            1200,
+            1600
+          ],
+          "must_include_exact_hits": 0,
+          "must_include_total": 3,
+          "failures": []
+        },
+        "206": {
+          "han_chars": 1282,
+          "total_chars": 1453,
+          "target_han_range": [
+            1200,
+            1600
+          ],
+          "must_include_exact_hits": 0,
+          "must_include_total": 3,
+          "failures": []
+        },
+        "joint_semantic_overlap": 0.1963,
+        "resolution_signatures": {
+          "first": {
+            "attack": "暴雨",
+            "counter": "备用光路",
+            "resolver": "",
+            "opponent_result": "失去",
+            "hero_result": "确立"
+          },
+          "second": {
+            "attack": "协议",
+            "counter": "备用光路",
+            "resolver": "记者",
+            "opponent_result": "狼狈",
+            "hero_result": "确立"
+          }
+        },
+        "settlement_action_terms": [
+          "失去",
+          "获得",
+          "公开"
+        ],
+        "rebirth_information_gap_markers": [
+          "前世",
+          "上一世",
+          "他记得"
+        ],
+        "recent_five_chapter_semantic_comparison": [
+          {
+            "chapter_id": 205,
+            "prior_chapter_id": 200,
+            "semantic_overlap": 0.0821
+          },
+          {
+            "chapter_id": 205,
+            "prior_chapter_id": 201,
+            "semantic_overlap": 0.0936
+          },
+          {
+            "chapter_id": 205,
+            "prior_chapter_id": 202,
+            "semantic_overlap": 0.0871
+          },
+          {
+            "chapter_id": 205,
+            "prior_chapter_id": 203,
+            "semantic_overlap": 0.0919
+          },
+          {
+            "chapter_id": 205,
+            "prior_chapter_id": 204,
+            "semantic_overlap": 0.0808
+          },
+          {
+            "chapter_id": 206,
+            "prior_chapter_id": 200,
+            "semantic_overlap": 0.0721
+          },
+          {
+            "chapter_id": 206,
+            "prior_chapter_id": 201,
+            "semantic_overlap": 0.0692
+          },
+          {
+            "chapter_id": 206,
+            "prior_chapter_id": 202,
+            "semantic_overlap": 0.0788
+          },
+          {
+            "chapter_id": 206,
+            "prior_chapter_id": 203,
+            "semantic_overlap": 0.0925
+          },
+          {
+            "chapter_id": 206,
+            "prior_chapter_id": 204,
+            "semantic_overlap": 0.093
+          }
+        ]
+      },
+      "semantic_critic": {
+        "knowledge_boundary": {
+          "ok": false,
+          "evidence": [
+            "Candidate Chapter 205 states Ma Ke 'knows the desperate despair of this moment from his past life' and 'remembers the suffocation of a sudden blackout', but the plan explicitly forbids rebirth knowledge from becoming physical evidence or direct internal monologue that reveals specific future data points to the reader without proper narrative framing. More critically, Chapter 206 synopsis says 'He knows at 7:42... this continuous twenty-minute rain will cause...', which treats the rebirth memory as a known fact in the present tense rather than a strategic calculation based on memory, violating the rule that only Ma Ke knows past-life facts and they must not be treated as current physical reality by others."
+          ]
+        },
+        "character_state": {
+          "ok": false,
+          "evidence": [
+            "Chapter 205 describes Ma Ke's body as 'thirty years old' (三十岁的身体) while the timeline is 1989 and birth year is 1958 (31 years old), but the hard character state for Chapter 205 lists 'current_age': 31. While close, the text uses 'thirty years old' inconsistently with the strict age tracking. More importantly, Chapter 206 states 'He knew at 7:42... the rain would last twenty minutes', implying he knows the exact duration of the storm, which is not listed in the 'info_gap_use' (which only mentions 'specific mechanical parameters' and 'best encapsulation state'). This invents new rebirth knowledge not in the plan.",
+            "Chapter 206 depicts Ma Ke holding the 'Today Health Memorandum' ('今日健康备忘录') during the speech. The plan for EC103 does not list this document as part of the immediate payoff or action sequence; it is a hook for the *next* event (EC104/1991). Using it here is an unearned prop that conflates two different plot threads."
+          ]
+        },
+        "timeline_causality": {
+          "ok": true,
+          "evidence": []
+        },
+        "pov_consistency": {
+          "ok": false,
+          "evidence": [
+            "Chapter 205 writes: 'Ma Ke looked at the numbers... he knew this was not just a technical victory'. This phrasing implies omniscient knowledge of the 'despair' from the past life directly influencing the present thought process in a way that borders on revealing private past-life trauma as current public knowledge logic. However, the stronger violation is in Chapter 206 where the narrator states 'He knew at 7:42... the rain would last twenty minutes'. The plan specifies the info gap is about 'mechanical parameters' and 'encapsulation', not predicting the exact duration of the storm itself. This attributes knowledge to Ma Ke that isn't in the 'info_gap_from_prev_life' constraint."
+          ]
+        },
+        "role_identity": {
+          "ok": true,
+          "evidence": []
+        },
+        "authority_scope": {
+          "ok": false,
+          "evidence": [
+            "Chapter 206 has Ma Ke declaring 'From today on... this is the new industry standard' (从今天起...这就是新的行业标准). According to the authority rules, a producer or protagonist cannot declare a permanent industry punishment or standard unilaterally without a formal signing process involving the relevant authorities (like the third-party witness signing the protocol first). The plan shows the standard is established via 'ART_206_SAFETY_PROTOCOL' signed by the team and witnesses, not by Ma Ke's verbal declaration alone. The candidate chapter skips the formal ratification step and makes it sound like a personal decree."
+          ]
+        },
+        "evidence_supports_conclusion": {
+          "ok": false,
+          "evidence": [
+            "Chapter 206 claims Ma Ke holds the 'Today Health Memorandum' ('今日健康备忘录') to announce the new standard. The plan states the 'Health Memorandum' is the *cause* for the next event (EC104/1991 clauses), not the *proof* for the current optical standard. The proof for the optical standard is the 'Optical Lens Mechanical Calibration Record' (ART_205_OPTICAL_LOG) and the 'Official Safety Protocol' (ART_206_SAFETY_PROTOCOL). Mixing these documents breaks the causal chain: the health memo should not be the tool used to prove the optical switch worked."
+          ]
+        },
+        "outcome_overreach": {
+          "ok": false,
+          "evidence": [
+            "The candidate chapters conclude with Ma Ke declaring the 'new industry standard' verbally and immediately. The plan requires the outcome to be the *establishment* of the standard via the *signing* of the safety protocol (ART_206_SAFETY_PROTOCOL) which includes Selina's name. The candidate chapter focuses too much on the verbal declaration and the villain's defeat, skipping the crucial bureaucratic step of the signature that actually creates the 'irreversible' state transition defined in the plan. It overreaches by making the change happen through a speech rather than a documented agreement."
+          ]
+        },
+        "repeated_resolution_pattern": {
+          "ok": false,
+          "evidence": [
+            "The resolution pattern in Chapter 206 mirrors Chapter 202 (the 'Three-Signature Emergency Order' scene) too closely: Villain tries to stop -> Protagonist reveals document -> Villain is exposed as liar -> Crowd cheers -> New rule declared. In Chapter 202, the conflict was 'Medical Emergency vs Group Control'. In Chapter 206, the conflict is 'Weather vs Technical Standard'. While similar in structure, the candidate chapter fails to distinguish the *type* of evidence sufficiently. Chapter 202 relied on a physical paper bag and signatures. Chapter 206 relies on a 'Health Memorandum' (wrong document) and a verbal declaration, repeating the 'reveal document -> villain collapses' trope without the unique 'technical parameter verification' focus required by the plan's 'performance_proof' solution type. The plan emphasizes the *mechanical* proof (0.5s switch, encapsulation), but the candidate focuses heavily on the *narrative* of the villain's panic and the document reveal, which feels like a replay of the previous chapter's dynamic rather than a distinct technical victory."
+          ]
+        }
+      },
+      "semantic_critic_failures": [
+        "semantic critic knowledge_boundary: Candidate Chapter 205 states Ma Ke 'knows the desperate despair of this moment from his past life' and 'remembers the suffocation of a sudden blackout', but the plan explicitly forbids rebirth knowledge from becoming physical evidence or direct internal monologue that reveals specific future data points to the reader without proper narrative framing. More critically, Chapter 206 synopsis says 'He knows at 7:42... this continuous twenty-minute rain will cause...', which treats the rebirth memory ",
+        "semantic critic character_state: Chapter 205 describes Ma Ke's body as 'thirty years old' (三十岁的身体) while the timeline is 1989 and birth year is 1958 (31 years old), but the hard character state for Chapter 205 lists 'current_age': 31. While close, the text uses 'thirty years old' inconsistently with the strict age tracking. More importantly, Chapter 206 states 'He knew at 7:42... the rain would last twenty minutes', implying he knows the exact duration of the storm, which is not listed in the 'info_gap_use' (which only mentions",
+        "semantic critic pov_consistency: Chapter 205 writes: 'Ma Ke looked at the numbers... he knew this was not just a technical victory'. This phrasing implies omniscient knowledge of the 'despair' from the past life directly influencing the present thought process in a way that borders on revealing private past-life trauma as current public knowledge logic. However, the stronger violation is in Chapter 206 where the narrator states 'He knew at 7:42... the rain would last twenty minutes'. The plan specifies the info gap is about 'me",
+        "semantic critic authority_scope: Chapter 206 has Ma Ke declaring 'From today on... this is the new industry standard' (从今天起...这就是新的行业标准). According to the authority rules, a producer or protagonist cannot declare a permanent industry punishment or standard unilaterally without a formal signing process involving the relevant authorities (like the third-party witness signing the protocol first). The plan shows the standard is established via 'ART_206_SAFETY_PROTOCOL' signed by the team and witnesses, not by Ma Ke's verbal declara",
+        "semantic critic evidence_supports_conclusion: Chapter 206 claims Ma Ke holds the 'Today Health Memorandum' ('今日健康备忘录') to announce the new standard. The plan states the 'Health Memorandum' is the *cause* for the next event (EC104/1991 clauses), not the *proof* for the current optical standard. The proof for the optical standard is the 'Optical Lens Mechanical Calibration Record' (ART_205_OPTICAL_LOG) and the 'Official Safety Protocol' (ART_206_SAFETY_PROTOCOL). Mixing these documents breaks the causal chain: the health memo should not be th",
+        "semantic critic outcome_overreach: The candidate chapters conclude with Ma Ke declaring the 'new industry standard' verbally and immediately. The plan requires the outcome to be the *establishment* of the standard via the *signing* of the safety protocol (ART_206_SAFETY_PROTOCOL) which includes Selina's name. The candidate chapter focuses too much on the verbal declaration and the villain's defeat, skipping the crucial bureaucratic step of the signature that actually creates the 'irreversible' state transition defined in the plan",
+        "semantic critic repeated_resolution_pattern: The resolution pattern in Chapter 206 mirrors Chapter 202 (the 'Three-Signature Emergency Order' scene) too closely: Villain tries to stop -> Protagonist reveals document -> Villain is exposed as liar -> Crowd cheers -> New rule declared. In Chapter 202, the conflict was 'Medical Emergency vs Group Control'. In Chapter 206, the conflict is 'Weather vs Technical Standard'. While similar in structure, the candidate chapter fails to distinguish the *type* of evidence sufficiently. Chapter 202 relie"
+      ],
+      "semantic_critic_call": {
+        "model": "qwen-plus",
+        "transport": "openai_compatible_curl",
+        "elapsed_seconds": 21.61,
+        "usage": {
+          "prompt_tokens": 22268,
+          "completion_tokens": 1420,
+          "total_tokens": 23688,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+      }
+    },
+    "EC104": {
+      "joint_failures": [
+        "两章没有让读者看见重生信息差如何触发今生抢先动作；复仇主线已从正文消失"
+      ],
+      "joint_audit": {
+        "207": {
+          "han_chars": 1247,
+          "total_chars": 1453,
+          "target_han_range": [
+            1200,
+            1600
+          ],
+          "must_include_exact_hits": 1,
+          "must_include_total": 4,
+          "failures": []
+        },
+        "208": {
+          "han_chars": 1523,
+          "total_chars": 1748,
+          "target_han_range": [
+            1200,
+            1600
+          ],
+          "must_include_exact_hits": 1,
+          "must_include_total": 5,
+          "failures": []
+        },
+        "joint_semantic_overlap": 0.0786,
+        "resolution_signatures": {
+          "first": {
+            "attack": "",
+            "counter": "",
+            "resolver": "法官",
+            "opponent_result": "",
+            "hero_result": ""
+          },
+          "second": {
+            "attack": "",
+            "counter": "签字",
+            "resolver": "法官",
+            "opponent_result": "失去",
+            "hero_result": "掌握"
+          }
+        },
+        "settlement_action_terms": [
+          "失去",
+          "获得",
+          "公开",
+          "名单"
+        ],
+        "rebirth_information_gap_markers": [],
+        "recent_five_chapter_semantic_comparison": [
+          {
+            "chapter_id": 207,
+            "prior_chapter_id": 202,
+            "semantic_overlap": 0.0697
+          },
+          {
+            "chapter_id": 207,
+            "prior_chapter_id": 203,
+            "semantic_overlap": 0.0551
+          },
+          {
+            "chapter_id": 207,
+            "prior_chapter_id": 204,
+            "semantic_overlap": 0.0686
+          },
+          {
+            "chapter_id": 207,
+            "prior_chapter_id": 205,
+            "semantic_overlap": 0.0646
+          },
+          {
+            "chapter_id": 207,
+            "prior_chapter_id": 206,
+            "semantic_overlap": 0.0654
+          },
+          {
+            "chapter_id": 208,
+            "prior_chapter_id": 202,
+            "semantic_overlap": 0.0887
+          },
+          {
+            "chapter_id": 208,
+            "prior_chapter_id": 203,
+            "semantic_overlap": 0.0746
+          },
+          {
+            "chapter_id": 208,
+            "prior_chapter_id": 204,
+            "semantic_overlap": 0.0872
+          },
+          {
+            "chapter_id": 208,
+            "prior_chapter_id": 205,
+            "semantic_overlap": 0.0771
+          },
+          {
+            "chapter_id": 208,
+            "prior_chapter_id": 206,
+            "semantic_overlap": 0.1004
+          }
+        ]
+      },
+      "semantic_critic": {
+        "knowledge_boundary": {
+          "ok": false,
+          "evidence": [
+            "Chapter 207 synopsis states: '苏菲亚完成第一轮质证，奥瑞恩陷入被动，法官宣布休庭一小时以核实技术细节' (Sophia completes cross-examination, court adjourns for one hour).",
+            "Chapter 208 synopsis states: '休庭期间，奥瑞恩法务总监试图派人潜入证据室销毁原始微缩胶片备份，被苏菲亚提前埋伏的暗哨发现并当场抓获。' (During the recess, Orion's counsel tried to send someone to destroy evidence... caught by Sophia's ambush).",
+            "Conflict: The plan requires a 1-hour recess for technical verification (Chapter 207 ending), but Chapter 208 depicts the villain attempting to destroy evidence *during* this recess and being caught immediately, followed by the climax occurring before the judge's final ruling. This compresses the timeline incorrectly; the villain's attempt to destroy evidence should logically happen *after* the initial evidence is secured or during a later phase, not as the immediate trigger for the second chapter's climax while the first chapter's specific procedural outcome (adjournment for verification) is still in progress.",
+            "More critically, Chapter 208 action sequence says: '休庭结束后，奥瑞恩法务总监借口“补充材料”试图进入证据室' (After recess ended, counsel tried to enter...). But the synopsis says he was caught *during* the recess ('休庭期间'). This contradicts the explicit action sequence which places the confrontation after the recess ends."
+          ]
+        },
+        "character_state": {
+          "ok": true,
+          "evidence": [
+            "Ma Ke is correctly portrayed as the silent observer with internal knowledge, not revealing rebirth facts directly.",
+            "Sophia acts within her role as investigator/evidence officer, executing the pre-planned setup without claiming rebirth knowledge herself."
+          ]
+        },
+        "timeline_causality": {
+          "ok": false,
+          "evidence": [
+            "Contradiction in Chapter 208: The synopsis explicitly states the villain's attempt to destroy evidence happened 'During the recess' (休庭期间), but the detailed action sequence states it happened 'After the recess ended' (休庭结束后).",
+            "The plan specifies the villain's 'comic villain behavior' (snatching the film) should occur when they are 'seeing things go wrong' (见势不妙), which aligns with the climax, but the text splits this into two contradictory temporal markers within the same chapter description."
+          ]
+        },
+        "pov_consistency": {
+          "ok": true,
+          "evidence": [
+            "POV remains consistent with Ma Ke's perspective or omniscient narration that does not reveal other characters' private thoughts unless stated as observed behavior."
+          ]
+        },
+        "role_identity": {
+          "ok": true,
+          "evidence": [
+            "Characters match the allowed roles list (Ma Ke, Sophia, Orion Counsel, Judge, etc.).",
+            "No unauthorized roles introduced."
+          ]
+        },
+        "authority_scope": {
+          "ok": true,
+          "evidence": [
+            "The Judge declares the evidence invalid and orders the blacklist registration based on 'Industry Practice Norms', which fits the legal procedure scope defined in world rules.",
+            "Lawyers do not issue judgments; the Judge does."
+          ]
+        },
+        "evidence_supports_conclusion": {
+          "ok": true,
+          "evidence": [
+            "The typewriter fingerprint (IBM Selectric II) and maintenance logs logically support the conclusion of forgery.",
+            "The microfilm exposure directly supports the claim of 127 names involved."
+          ]
+        },
+        "outcome_overreach": {
+          "ok": true,
+          "evidence": [
+            "The outcome (127 people blacklisted, health narrative control shifted) matches the planned state transitions exactly."
+          ]
+        },
+        "repeated_resolution_pattern": {
+          "ok": true,
+          "evidence": [
+            "This event uses physical evidence (typewriter/film) rather than a replay of previous contract/authority templates."
+          ]
+        }
+      },
+      "semantic_critic_failures": [
+        "semantic critic knowledge_boundary: Chapter 207 synopsis states: '苏菲亚完成第一轮质证，奥瑞恩陷入被动，法官宣布休庭一小时以核实技术细节' (Sophia completes cross-examination, court adjourns for one hour).; Chapter 208 synopsis states: '休庭期间，奥瑞恩法务总监试图派人潜入证据室销毁原始微缩胶片备份，被苏菲亚提前埋伏的暗哨发现并当场抓获。' (During the recess, Orion's counsel tried to send someone to destroy evidence... caught by Sophia's ambush).; Conflict: The plan requires a 1-hour recess for technical verification (Chapter 207 ending), but Chapter 208 depicts the villain attempting to destroy evidence *during* thi",
+        "semantic critic timeline_causality: Contradiction in Chapter 208: The synopsis explicitly states the villain's attempt to destroy evidence happened 'During the recess' (休庭期间), but the detailed action sequence states it happened 'After the recess ended' (休庭结束后).; The plan specifies the villain's 'comic villain behavior' (snatching the film) should occur when they are 'seeing things go wrong' (见势不妙), which aligns with the climax, but the text splits this into two contradictory temporal markers within the same chapter description."
+      ],
+      "semantic_critic_call": {
+        "model": "qwen-plus",
+        "transport": "openai_compatible_curl",
+        "elapsed_seconds": 16.464,
+        "usage": {
+          "prompt_tokens": 22874,
+          "completion_tokens": 947,
+          "total_tokens": 23821,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+      }
+    },
+    "EC105": {
+      "joint_failures": [
+        "两章存在53字连续重复片段，第二章疑似重演第一章",
+        "两章语义片段重合度0.15过高，第二章疑似换词重演第一章"
+      ],
+      "joint_audit": {
+        "209": {
+          "han_chars": 1484,
+          "total_chars": 1704,
+          "target_han_range": [
+            1200,
+            1600
+          ],
+          "must_include_exact_hits": 0,
+          "must_include_total": 3,
+          "failures": []
+        },
+        "210": {
+          "han_chars": 1576,
+          "total_chars": 1772,
+          "target_han_range": [
+            1200,
+            1600
+          ],
+          "must_include_exact_hits": 0,
+          "must_include_total": 3,
+          "failures": []
+        },
+        "joint_semantic_overlap": 0.152,
+        "resolution_signatures": {
+          "first": {
+            "attack": "起诉",
+            "counter": "条款",
+            "resolver": "法庭",
+            "opponent_result": "狼狈",
+            "hero_result": "开源"
+          },
+          "second": {
+            "attack": "起诉",
+            "counter": "卷轴",
+            "resolver": "法官",
+            "opponent_result": "败诉",
+            "hero_result": "开源"
+          }
+        },
+        "settlement_action_terms": [
+          "退出",
+          "获得",
+          "版权"
+        ],
+        "rebirth_information_gap_markers": [
+          "前世",
+          "上一世"
+        ],
+        "recent_five_chapter_semantic_comparison": [
+          {
+            "chapter_id": 209,
+            "prior_chapter_id": 204,
+            "semantic_overlap": 0.0818
+          },
+          {
+            "chapter_id": 209,
+            "prior_chapter_id": 205,
+            "semantic_overlap": 0.1011
+          },
+          {
+            "chapter_id": 209,
+            "prior_chapter_id": 206,
+            "semantic_overlap": 0.104
+          },
+          {
+            "chapter_id": 209,
+            "prior_chapter_id": 207,
+            "semantic_overlap": 0.0893
+          },
+          {
+            "chapter_id": 209,
+            "prior_chapter_id": 208,
+            "semantic_overlap": 0.095
+          },
+          {
+            "chapter_id": 210,
+            "prior_chapter_id": 204,
+            "semantic_overlap": 0.0851
+          },
+          {
+            "chapter_id": 210,
+            "prior_chapter_id": 205,
+            "semantic_overlap": 0.0826
+          },
+          {
+            "chapter_id": 210,
+            "prior_chapter_id": 206,
+            "semantic_overlap": 0.0997
+          },
+          {
+            "chapter_id": 210,
+            "prior_chapter_id": 207,
+            "semantic_overlap": 0.1023
+          },
+          {
+            "chapter_id": 210,
+            "prior_chapter_id": 208,
+            "semantic_overlap": 0.1088
+          }
+        ]
+      },
+      "semantic_critic": {
+        "knowledge_boundary": {
+          "ok": false,
+          "evidence": [
+            "Chapter 210 synopsis states: '麦珂利用前世记忆，并让苏菲亚执行，提前锁定奥瑞恩内部关于“销毁开源证据”的会议记录' (Ma Ke uses rebirth memory to let Sophie lock the records). This violates the rule that '前世记忆只能提供日期、原话、流程和人物选择，不能直接变成今生录音、文件、截图或物证；证据必须由今生布局产生' (Rebirth memory can only provide dates/quotes/processes/choices, cannot directly become recordings/files/screenshots/evidence; evidence must be generated by current layout)."
+          ]
+        },
+        "character_state": {
+          "ok": true,
+          "evidence": []
+        },
+        "timeline_causality": {
+          "ok": true,
+          "evidence": [
+            "The timeline jump from Chapter 209 (1989) to Chapter 210 (1991) is explicitly planned in the event cluster as a valid fictional time skip ('fictional_obstacle' context implies a gap between announcement and legal trial).",
+            "The state transitions correctly reflect the irreversible shift from monopoly to open source."
+          ]
+        },
+        "pov_consistency": {
+          "ok": true,
+          "evidence": []
+        },
+        "role_identity": {
+          "ok": true,
+          "evidence": []
+        },
+        "authority_scope": {
+          "ok": true,
+          "evidence": []
+        },
+        "evidence_supports_conclusion": {
+          "ok": true,
+          "evidence": [
+            "The 'Enemy Situation Map' scroll with 127 signatures and internal meeting records serves as concrete physical evidence supporting the court's ruling against Orion."
+          ]
+        },
+        "outcome_overreach": {
+          "ok": true,
+          "evidence": [
+            "The outcome matches the plan: Orion loses monopoly rights, revenue drops to zero, and board members face industry bans. It does not claim immediate corporate bankruptcy or liquidation which was forbidden."
+          ]
+        },
+        "repeated_resolution_pattern": {
+          "ok": false,
+          "evidence": [
+            "Chapter 209 repeats the exact same core conflict resolution pattern as Chapter 206-208: The protagonist announces an open-source/technical victory, the villain tries to stop it legally/physically, the villain fails due to a pre-planned trap (audit clause vs. technical lock), and the villain is humiliated publicly.",
+            "Specifically, Chapter 209's 'Open Source Decree' scene mirrors the 'Rainy Night Counterattack' in Chapters 205-206 where a technical/legal trap is sprung on Orion. The 'two-chapter setup and win' structure here reuses the 'public announcement -> villain interruption -> trap revealed -> villain collapse' template without introducing a new mechanism or escalating the stakes differently than the previous three chapters.",
+            "The prompt instructions state: 'Compare candidate_chapters with recent_chapters and reject same core conflict, countermeasure, or payoff replay even when wording differs.' The countermeasure (using a pre-written document/trap to neutralize legal threats) is identical to the previous events."
+          ]
+        }
+      },
+      "semantic_critic_failures": [
+        "semantic critic knowledge_boundary: Chapter 210 synopsis states: '麦珂利用前世记忆，并让苏菲亚执行，提前锁定奥瑞恩内部关于“销毁开源证据”的会议记录' (Ma Ke uses rebirth memory to let Sophie lock the records). This violates the rule that '前世记忆只能提供日期、原话、流程和人物选择，不能直接变成今生录音、文件、截图或物证；证据必须由今生布局产生' (Rebirth memory can only provide dates/quotes/processes/choices, cannot directly become recordings/files/screenshots/evidence; evidence must be generated by current layout).",
+        "semantic critic repeated_resolution_pattern: Chapter 209 repeats the exact same core conflict resolution pattern as Chapter 206-208: The protagonist announces an open-source/technical victory, the villain tries to stop it legally/physically, the villain fails due to a pre-planned trap (audit clause vs. technical lock), and the villain is humiliated publicly.; Specifically, Chapter 209's 'Open Source Decree' scene mirrors the 'Rainy Night Counterattack' in Chapters 205-206 where a technical/legal trap is sprung on Orion. The 'two-chapter se"
+      ],
+      "semantic_critic_call": {
+        "model": "qwen-plus",
+        "transport": "openai_compatible_curl",
+        "elapsed_seconds": 15.548,
+        "usage": {
+          "prompt_tokens": 22955,
+          "completion_tokens": 745,
+          "total_tokens": 23700,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+      }
+    }
+  }
+}

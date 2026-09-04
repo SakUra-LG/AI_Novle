@@ -1,0 +1,108 @@
+{
+  "cluster_id": "EC084",
+  "chapter_id": 167,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "b23cabb1f0909b5f6befbaf484c22db1aed9e589376eddfd03a11561624101ec",
+  "base_prompt_sha256": "b23cabb1f0909b5f6befbaf484c22db1aed9e589376eddfd03a11561624101ec",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "0ce6c40701dc68e93ee883141ce732c7ee3fec2713ca6039481a8f503eb0e331",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.8,
+    "usage": {
+      "prompt_tokens": 6558,
+      "completion_tokens": 1320,
+      "total_tokens": 7878,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 84,
+    "through_chapter": 168,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "ff2b5cf7e9eb962883310b779ab05a97f19c54d9933cbdca9edd13956bc6149f",
+    "chapter_card_prefix_sha256": "2e8a1719492939c50c01fe05773edefb70a9ac9749672cafd2008a4ce709bd03",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "f8468bb8717be0bf3c46902521e617c9ec6d947289b5848507eac0bac601c2a4"
+  },
+  "cluster_sha256": "341269a8962319e196b8233ceb103ba55cc4aa02e404ff1e329a165df87e7f7f",
+  "card_sha256": "85d6ec27ed5fdd3ad7b9f134debb965ad87fd667c9cc18ac68ed5607978f643f",
+  "chapter_audit": {
+    "han_chars": 1900,
+    "total_chars": 2208,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "1984年喉炎康复打卡表第112页",
+        "exact": false,
+        "bigram_coverage": 0.875,
+        "matched": true
+      },
+      {
+        "anchor": "蓝黑圆珠笔笔压分析",
+        "exact": false,
+        "bigram_coverage": 0.875,
+        "matched": true
+      },
+      {
+        "anchor": "声压可视化系统原型机",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 1,
+      "蓝雪": 0,
+      "波形": 1,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0539,
+    "scene_evidence": [
+      {
+        "location": "市立图书馆公共听证室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_167_HEARING_TRANSCRIPT",
+        "display_name": "听证会官方记录",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有写出本章正式创建的关键对象“听证会官方记录”"
+    ],
+    "all_validator_failures": [
+      "正文没有写出本章正式创建的关键对象“听证会官方记录”"
+    ]
+  },
+  "failures": [
+    "两章没有让读者看见重生信息差如何触发今生抢先动作；复仇主线已从正文消失"
+  ],
+  "accepted": false,
+  "joint_rejected": true,
+  "joint_failures": [
+    "两章没有让读者看见重生信息差如何触发今生抢先动作；复仇主线已从正文消失"
+  ]
+}

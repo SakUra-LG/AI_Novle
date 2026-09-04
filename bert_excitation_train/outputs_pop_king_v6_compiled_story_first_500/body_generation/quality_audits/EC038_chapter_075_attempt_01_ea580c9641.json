@@ -1,0 +1,106 @@
+{
+  "cluster_id": "EC038",
+  "chapter_id": 75,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "ea580c9641fa64344c3032665c22ae7d6bd2e73789a79a4426b61db9d6a8589a",
+  "base_prompt_sha256": "3b625e22a3a0ae45a878fee5be3b125e84b58e678824a64644c223f05b0adfcb",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "7758abfb3a238ba1a98fd013a6df43b0d01f92ca82594e886752ab043df4ae79",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 12.203,
+    "usage": {
+      "prompt_tokens": 6442,
+      "completion_tokens": 995,
+      "total_tokens": 7437,
+      "prompt_tokens_details": {
+        "cached_tokens": 3586
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 38,
+    "through_chapter": 76,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "58fe8ab36e2c3dc3d359456ff41acde3e02b5cc5b3ee963782ff66dd53b975a8",
+    "chapter_card_prefix_sha256": "ff721732cee156139b8430c4abfe21db8ff5a6ddd28cdbf0be28213cac8642a5",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "ddf14de2d1e0c8cceba8dc49c6de8d726e3dfb48526af36ce293dd11bba8d1f5"
+  },
+  "cluster_sha256": "b919da6c54d389348cfb7b5ff514a1c3f5c2ac9f31131c807da03ef427074e10",
+  "card_sha256": "61f2eb06cc5bb87c36be7a720e0e1d44835fdb17fbf377a8b246c12f87ddc144",
+  "chapter_audit": {
+    "han_chars": 1390,
+    "total_chars": 1583,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "乔纳的急切与谎言",
+        "exact": false,
+        "bigram_coverage": 0.571,
+        "matched": true
+      },
+      {
+        "anchor": "麦珂的诱导性提问",
+        "exact": false,
+        "bigram_coverage": 0.143,
+        "matched": false
+      },
+      {
+        "anchor": "隐形墨水条款的存在",
+        "exact": false,
+        "bigram_coverage": 0.625,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 1,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0763,
+    "scene_evidence": [
+      {
+        "location": "河湾镇杰森家客厅",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_FIN_AUDIT_005",
+        "display_name": "紧急资金调动授权书（诱饵版）",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有兑现章卡关键事实“麦珂的诱导性提问”",
+      "正文未落到规划场景“河湾镇杰森家客厅”",
+      "正文没有写出本章正式创建的关键对象“紧急资金调动授权书（诱饵版）”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“麦珂的诱导性提问”",
+      "正文未落到规划场景“河湾镇杰森家客厅”",
+      "正文没有写出本章正式创建的关键对象“紧急资金调动授权书（诱饵版）”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

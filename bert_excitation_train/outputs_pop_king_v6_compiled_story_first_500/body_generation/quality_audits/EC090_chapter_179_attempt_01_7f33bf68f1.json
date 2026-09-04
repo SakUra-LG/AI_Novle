@@ -1,0 +1,106 @@
+{
+  "cluster_id": "EC090",
+  "chapter_id": 179,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "7f33bf68f19ce3a1795096ce76e788efc5395838e705b29c6edbc16fe2f13289",
+  "base_prompt_sha256": "7f33bf68f19ce3a1795096ce76e788efc5395838e705b29c6edbc16fe2f13289",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "8971e00973080dc2920286f42bef3c4a9877a6f40be3abfa05e917a736f7cc60",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 12.405,
+    "usage": {
+      "prompt_tokens": 6502,
+      "completion_tokens": 1078,
+      "total_tokens": 7580,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 90,
+    "through_chapter": 180,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "5dd2e765ca13830969422b672a417b4893237b31f426cc3c2fe5d149fa954cd9",
+    "chapter_card_prefix_sha256": "7e11dd3249320e957f8309b5f783f88ed6feeb830798a1cf3d0bd8942c3ef510",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "59c452f28505d4a104b0aa897342dea4e6cf27f8f78bbcb6837d0f8d3ac772de"
+  },
+  "cluster_sha256": "da8e0becbabdce7f30f79fb16874e4305b63118e63dd0032988180597b37a2ff",
+  "card_sha256": "a3d64006d4fc40ad8bd0dee377b6364f690f7ad60dd7fecdd5d7638cec1aac1b",
+  "chapter_audit": {
+    "han_chars": 1564,
+    "total_chars": 1798,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "声压可视化系统的机械结构描述",
+        "exact": false,
+        "bigram_coverage": 0.769,
+        "matched": true
+      },
+      {
+        "anchor": "维克多·兰斯的滑稽辩解",
+        "exact": false,
+        "bigram_coverage": 0.556,
+        "matched": true
+      },
+      {
+        "anchor": "必须呈现信息差的实际使用：麦珂利用前世记忆，预判维克多会强调‘纤维化’，并提前准备好对应的正常声带波形数据。",
+        "exact": false,
+        "bigram_coverage": 0.277,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 4,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0383,
+    "scene_evidence": [
+      {
+        "location": "市中心新闻发布厅",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_179_LIVE_WAVEFORM_PHOTO",
+        "display_name": "发布会现场波形照片",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.038，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“必须呈现信息差的实际使用：麦珂利用前世记忆，预判维克多会强调‘纤维化’，并提前准备好对应的正常声带波形数据。”",
+      "正文没有写出本章正式创建的关键对象“发布会现场波形照片”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.038，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“必须呈现信息差的实际使用：麦珂利用前世记忆，预判维克多会强调‘纤维化’，并提前准备好对应的正常声带波形数据。”",
+      "正文没有写出本章正式创建的关键对象“发布会现场波形照片”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

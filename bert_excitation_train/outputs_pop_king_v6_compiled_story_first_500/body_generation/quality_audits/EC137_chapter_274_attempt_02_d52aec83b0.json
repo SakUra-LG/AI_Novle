@@ -1,0 +1,127 @@
+{
+  "cluster_id": "EC137",
+  "chapter_id": 274,
+  "attempt": 2,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "d52aec83b003a3a2afcb98a3adc2de3d1204ea901747e4f937c45ad50e4a82eb",
+  "base_prompt_sha256": "09fd519dd4a8116c81fd7ac8691cd2ad4ead4efd189a3ad55f4bf7ca685c25b5",
+  "body_generator_contract_version": "v13_compiled_plan_strict_gates_20260822",
+  "raw_response_sha256": "2bafc67320dd354d11ef6448d8b78df3539eb8c2d071f345341903409d05d3c3",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.115,
+    "usage": {
+      "prompt_tokens": 7265,
+      "completion_tokens": 738,
+      "total_tokens": 8003,
+      "prompt_tokens_details": {
+        "cached_tokens": 3549
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 137,
+    "through_chapter": 274,
+    "outline_sha256": "a2e1a6cde3554db62a9f0842db92c9c580a6e553f71f71d883089f965c5f11b5",
+    "event_prefix_sha256": "3bbd8a80435327209635c9f329fc8482b9b8d4b69caca54ce8a40191fd983293",
+    "chapter_card_prefix_sha256": "39429393ef40422082148aacdaf84e32ecfda130c8701be1d0296483e2681148",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "a76ed2fbe70fc80e1900d04cd78aecc436e09b8066982b8bc539accfd2f560d2"
+  },
+  "cluster_sha256": "22f92a79e1b24deb7487fd1755b276e286ae3b1e1427213de624fd6d4ad74ce4",
+  "card_sha256": "b0accccfaacd9fff5ef76560d5929756726e4cda0494a15615241fda5b8ff82e",
+  "chapter_audit": {
+    "han_chars": 1016,
+    "total_chars": 1207,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "摘录暂时退出节目排期",
+        "exact": false,
+        "bigram_coverage": 0.778,
+        "matched": true
+      },
+      {
+        "anchor": "只对该摘录取得有限程序保护",
+        "exact": false,
+        "bigram_coverage": 0.583,
+        "matched": true
+      },
+      {
+        "anchor": "节目部合规主任",
+        "exact": false,
+        "bigram_coverage": 0.833,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "progress_ec137",
+        "target": "resolved_9d7c86b9df",
+        "evidence_terms": [
+          "ART_273_20C35DB3",
+          "CR-41",
+          "权限分栏表",
+          "复核核对",
+          "申请",
+          "复核",
+          "批准三栏",
+          "确认缺失的是节目",
+          "部复核签名而非批",
+          "准页",
+          "不得扩大为其他人",
+          "物或资产的结论"
+        ],
+        "hit_terms": [
+          "CR-41",
+          "权限分栏表",
+          "申请",
+          "复核",
+          "准页"
+        ],
+        "matched": true
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0493,
+    "scene_evidence": [
+      {
+        "location": "节目部资料室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": []
+  },
+  "failures": [],
+  "accepted": false,
+  "semantic_rejected": true,
+  "semantic_critic_failures": [
+    "semantic critic knowledge_boundary: Chapter 273 candidate text: '麦珂记得，错误处理会从一个小缺口扩大。' (Ma Ke remembers...) - The plan explicitly states Ma Ke's rebirth memory is a 'misalignment' and he 'does not know if the responsible person or result will be the same this time', requiring the conclusion to be made by the Compliance Director on site. The candidate chapter treats his knowledge as certain prediction rather than strategic application of known procedure.; Chapter 274 candidate text: '艾琳·沃特曼从口袋里掏出一本翻得卷边的笔记本...这是节目部复核岗的轮班记录。' (Irene p",
+    "semantic critic pov_consistency: Chapter 274 candidate text implies Irene has access to a specific 'shift record' notebook that perfectly matches the discrepancy. If this record was created 'this life' as per the plan, it should have been produced via a request to the archive/reception desk, not pulled from her pocket as a pre-prepared item, which suggests either an impossible foresight or a violation of the 'evidence formation' rule.",
+    "semantic critic evidence_supports_conclusion: In Chapter 274, the conclusion relies entirely on Irene presenting a 'shift record' from her pocket. The plan requires evidence to be 'formed by this life's actions' (e.g., retrieving logs, checking dates). A sudden appearance of a perfect record contradicts the 'information gap' where Ma Ke knows the *type* of error but not the specific proof, forcing the team to find it. The candidate skips the search/verification step.",
+    "semantic critic outcome_overreach: Chapter 274 ending: 'Victor... can't erase the recorded choices.' This phrasing leans towards a permanent moral victory or 'permanent career destruction' implication, whereas the plan strictly limits the outcome to 'temporary suspension' and 'limited procedural protection' for 'that specific excerpt only'. The tone implies a finality not supported by the 'pending explanation' status.",
+    "semantic critic artifact_scope: Chapter 273 candidate: Ma Ke produces the 'CR-41 Permission Column Table' from his pocket ('from his pocket took out a pen... quickly wrote down'). The plan states the table is a tool to 'record natural choices' and verify the process. Having Ma Ke write it from memory in the moment without referencing the actual physical form or the need to cross-reference existing documents undermines the 'artifact scope' which implies using the existing document structure to prove the gap, not creating a new ",
+    "semantic critic character_flaw_integration: Chapter 273: 'Victor smiled... contemptuous.' 'Irene coldly laughed.' These are generic villain/hero reactions not specific to the character constraints (Victor's root is 'predictability/control', Irene's is 'equality/independence'). They do not show the nuanced choice pressure or specific speech rules defined in the bible (e.g., Victor hiding responsibility in passive voice, Irene stating boundaries without emotional outbursts).",
+    "semantic critic plan_summary_leak: Chapter 273 candidate: 'Ma Ke remembered... error handling would expand...' - This leaks the internal planning note about 'rebirth memory' directly into the narrative prose as a definitive thought process, violating the rule that 'only Ma Ke knows past-life facts' and even then, the plan specifies he doesn't know the *result* this time, so he cannot state it as a certainty in his internal monologue."
+  ]
+}

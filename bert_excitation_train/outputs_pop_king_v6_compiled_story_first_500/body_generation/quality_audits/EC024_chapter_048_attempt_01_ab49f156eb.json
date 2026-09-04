@@ -1,0 +1,133 @@
+{
+  "cluster_id": "EC024",
+  "chapter_id": 48,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "ab49f156eb0f0b619103443776c286417d524cff96c5cd5204ae8d377da031bd",
+  "base_prompt_sha256": "ab49f156eb0f0b619103443776c286417d524cff96c5cd5204ae8d377da031bd",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "c660f6df59cde22a054cac01d13d4da14bc40e63047aeb2df241672e94be8648",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 20.837,
+    "usage": {
+      "prompt_tokens": 9670,
+      "completion_tokens": 1228,
+      "total_tokens": 10898,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 24,
+    "through_chapter": 48,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "7abe49243e600fc3d41d58796ac6d7c70bbf8f55800f4efebcd8da2105628a43",
+    "chapter_card_prefix_sha256": "87fe7e002d6399c5124d889e2c295fe6680171b811b5a57127020ae6c72f5fcb",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "c72631e8c7b7e4b9ffa528d0b440448309e4fe9514633133355def950c9fdc09"
+  },
+  "cluster_sha256": "2dd5d1a0c33d14cabb6864d1a3438a5d329f969cfbbdca2b576a9414493bf3e1",
+  "card_sha256": "bbbfb78aff4cf97f773c394b0f481c5c7d9e42a5d31f37cf7072fbb1ad910deb",
+  "chapter_audit": {
+    "han_chars": 1690,
+    "total_chars": 1975,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "麦珂展示信件",
+        "exact": false,
+        "bigram_coverage": 0.4,
+        "matched": false
+      },
+      {
+        "anchor": "乔纳被当众驳斥",
+        "exact": false,
+        "bigram_coverage": 0.167,
+        "matched": false
+      },
+      {
+        "anchor": "放弃代理权声明书签署",
+        "exact": false,
+        "bigram_coverage": 0.889,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "trust_dynamic__family_alliance__extension_EC024",
+        "target": "铁三角稳固，父亲被彻底隔离",
+        "evidence_terms": [
+          "玛莎当众支持黛安",
+          "娜冻结账户并斥责",
+          "乔纳"
+        ],
+        "hit_terms": [
+          "乔纳"
+        ],
+        "matched": false
+      },
+      {
+        "state_key": "employment_status__financial_control__extension_EC024",
+        "target": "丧失财政控制权并被彻底隔离",
+        "evidence_terms": [
+          "乔纳签署放弃代理",
+          "权声明书"
+        ],
+        "hit_terms": [
+          "权声明书"
+        ],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0304,
+    "scene_evidence": [
+      {
+        "location": "河湾镇杰森家客厅",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.030，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“麦珂展示信件”",
+      "正文没有兑现章卡关键事实“乔纳被当众驳斥”",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC024→铁三角稳固，父亲被彻底隔离",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control__extension_EC024→丧失财政控制权并被彻底隔离",
+      "正文未落到规划场景“河湾镇杰森家客厅”",
+      "主角麦珂所在动作链被女性代词‘她’承接"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.030，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“麦珂展示信件”",
+      "正文没有兑现章卡关键事实“乔纳被当众驳斥”",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC024→铁三角稳固，父亲被彻底隔离",
+      "正文没有通过现场动作兑现状态转移employment_status__financial_control__extension_EC024→丧失财政控制权并被彻底隔离",
+      "正文未落到规划场景“河湾镇杰森家客厅”",
+      "主角麦珂所在动作链被女性代词‘她’承接"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

@@ -1,0 +1,104 @@
+{
+  "cluster_id": "EC144",
+  "chapter_id": 287,
+  "attempt": 4,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "3da064c0c7503a4ce5ae71649d9c6ab7f398740e583488a8a72bbf0ecfb7c159",
+  "base_prompt_sha256": "64ed7399a6de6ac1912735738635a2c225e5b5f916a134d25b6e80ea34e49f8d",
+  "body_generator_contract_version": "v13_compiled_plan_strict_gates_20260822",
+  "raw_response_sha256": "e5a61809643fa58d42d9ed40edde39140edc019bea824875a2d73e214feaf749",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 15.681,
+    "usage": {
+      "prompt_tokens": 6718,
+      "completion_tokens": 879,
+      "total_tokens": 7597,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 144,
+    "through_chapter": 288,
+    "outline_sha256": "a2e1a6cde3554db62a9f0842db92c9c580a6e553f71f71d883089f965c5f11b5",
+    "event_prefix_sha256": "b600fb0883e10235c7314f547bd35d763be7be96b5ee976e89b33dfffb719708",
+    "chapter_card_prefix_sha256": "cc634ebd652868e721f471b342a3142e27c2c8ca06466a45439cf86a2ffa80ff",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "10daf11ea2fb230f6c2f124a21efe09efd47f70b4f6497a60e93aed9cd326ba8"
+  },
+  "cluster_sha256": "0b77c54fa9321c5ba5357effce533d5755ff8f703150f1a623986714f6b630c8",
+  "card_sha256": "838227df9e4eef436612b8de00c6afd756b7d4204eb05627b66ced03b9ea3203",
+  "chapter_audit": {
+    "han_chars": 1216,
+    "total_chars": 1390,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "瑟琳娜拒绝公开私人往来换取头版",
+        "exact": false,
+        "bigram_coverage": 0.286,
+        "matched": false
+      },
+      {
+        "anchor": "报纸勘误版样",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "地点为《银湾纪事》编辑部",
+        "exact": false,
+        "bigram_coverage": 0.556,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0513,
+    "scene_evidence": [
+      {
+        "location": "《银湾纪事》编辑部",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_287_F77BAB6B",
+        "display_name": "《报纸勘误版样》",
+        "body_hit": true,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有兑现章卡关键事实“瑟琳娜拒绝公开私人往来换取头版”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“瑟琳娜拒绝公开私人往来换取头版”"
+    ]
+  },
+  "failures": [
+    "正文没有兑现章卡关键事实“瑟琳娜拒绝公开私人往来换取头版”"
+  ],
+  "accepted": false
+}

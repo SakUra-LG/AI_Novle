@@ -1,0 +1,106 @@
+{
+  "cluster_id": "EC103",
+  "chapter_id": 205,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "54592567aff9b1c3ccfad113424bc2bbba52823b4b4e0baac70ef8590cedf0b2",
+  "base_prompt_sha256": "54592567aff9b1c3ccfad113424bc2bbba52823b4b4e0baac70ef8590cedf0b2",
+  "body_generator_contract_version": "v9_state_guard_rebirth_firewall_20260822",
+  "raw_response_sha256": "a81271c8ee039bcf7918b1b3124896a890edbf99e8c21b579d1ea003e2b9dbbc",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 12.594,
+    "usage": {
+      "prompt_tokens": 6959,
+      "completion_tokens": 949,
+      "total_tokens": 7908,
+      "prompt_tokens_details": {
+        "cached_tokens": 464
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 103,
+    "through_chapter": 206,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "129953190dec14d2b3b334bbc5caf22132d6100bdf08261b989353d1c4cf7c7a",
+    "chapter_card_prefix_sha256": "0b852c039763392324e9979ce80c469a06bae8628345bf330561e44f7f9bc58a",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "d3e33443409591bc122bf59d92c06d2362ed169d38ba688d4b88fdd69aab97e7"
+  },
+  "cluster_sha256": "c3e96cc6e86d86d7201241f5d4a4508f0c9f444ed2b3daaf54830181102f3299",
+  "card_sha256": "2904ff4d68baa297a1d81f75c11730f4dab3be635bcfcdf97f3cd972dfb5737e",
+  "chapter_audit": {
+    "han_chars": 1363,
+    "total_chars": 1546,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "0.5秒切换时间",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      },
+      {
+        "anchor": "画面清晰度对比",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      },
+      {
+        "anchor": "机械校准证书展示",
+        "exact": false,
+        "bigram_coverage": 0.857,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0673,
+    "scene_evidence": [
+      {
+        "location": "穹顶控制室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_205_OPTICAL_LOG",
+        "display_name": "光学透镜机械校准与封装记录",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有兑现章卡关键事实“0.5秒切换时间”",
+      "正文没有兑现章卡关键事实“画面清晰度对比”",
+      "正文没有写出本章正式创建的关键对象“光学透镜机械校准与封装记录”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“0.5秒切换时间”",
+      "正文没有兑现章卡关键事实“画面清晰度对比”",
+      "正文没有写出本章正式创建的关键对象“光学透镜机械校准与封装记录”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

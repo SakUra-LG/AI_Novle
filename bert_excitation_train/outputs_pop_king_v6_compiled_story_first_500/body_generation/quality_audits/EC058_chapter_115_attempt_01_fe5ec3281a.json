@@ -1,0 +1,110 @@
+{
+  "cluster_id": "EC058",
+  "chapter_id": 115,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "fe5ec3281a997957c235b478d3fe2e405920a7ea52a602c4cbdbecf41fd8840d",
+  "base_prompt_sha256": "fe5ec3281a997957c235b478d3fe2e405920a7ea52a602c4cbdbecf41fd8840d",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "f229c9ee5cc0eedff72bd598865969fd4551743b4bdb88313a9fa65443fcbfde",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 16.094,
+    "usage": {
+      "prompt_tokens": 6175,
+      "completion_tokens": 1168,
+      "total_tokens": 7343,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 58,
+    "through_chapter": 116,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "412a22c93ba3e10c390975e93cc4a76007ef4a484a75f4bf83f68a7591e4ce98",
+    "chapter_card_prefix_sha256": "41b0a999d0656e295d162d135c2f050b0644a02638cf84b66d19c8e367c636e3",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "f2dc264df59479c57fa87fdaec7a8c9959a336305cd56bcffe05328ccc4567fb"
+  },
+  "cluster_sha256": "7d4b433bae743b45158cf3b2bbc3f51a2e54c852c59728b28f1dae7e9b9e29d6",
+  "card_sha256": "f34b757a4b573a463476792061ffc3b848da40785123084b80a5582fd31e26e7",
+  "chapter_audit": {
+    "han_chars": 1728,
+    "total_chars": 1948,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "铜齿轮No.003实物特写",
+        "exact": false,
+        "bigram_coverage": 0.455,
+        "matched": true
+      },
+      {
+        "anchor": "瑟琳娜以技术合伙人身份发言",
+        "exact": false,
+        "bigram_coverage": 0.167,
+        "matched": false
+      },
+      {
+        "anchor": "1978年工会章程第42条附则引用",
+        "exact": false,
+        "bigram_coverage": 0.812,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0897,
+    "scene_evidence": [
+      {
+        "location": "联合中心第三仲裁庭",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_115_ARBITRATION_PRELIMINARY_RULING",
+        "display_name": "1980.5.15仲裁庭初步裁定书（人工读数优先权）",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有兑现章卡关键事实“瑟琳娜以技术合伙人身份发言”",
+      "正文没有写出本章正式创建的关键对象“1980.5.15仲裁庭初步裁定书（人工读数优先权）”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“瑟琳娜以技术合伙人身份发言”",
+      "正文没有写出本章正式创建的关键对象“1980.5.15仲裁庭初步裁定书（人工读数优先权）”"
+    ]
+  },
+  "failures": [
+    "两章没有让读者看见重生信息差如何触发今生抢先动作；复仇主线已从正文消失"
+  ],
+  "accepted": false,
+  "joint_rejected": true,
+  "joint_failures": [
+    "两章没有让读者看见重生信息差如何触发今生抢先动作；复仇主线已从正文消失"
+  ]
+}

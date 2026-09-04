@@ -1,0 +1,49 @@
+{
+  "chapter_id": 294,
+  "status": "trial_only_not_accepted",
+  "beat_plan_call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 23.561,
+    "usage": {
+      "prompt_tokens": 8875,
+      "completion_tokens": 2829,
+      "total_tokens": 11704,
+      "prompt_tokens_details": {
+        "cached_tokens": 4603
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "body_call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 11.953,
+    "usage": {
+      "prompt_tokens": 4009,
+      "completion_tokens": 1027,
+      "total_tokens": 5036,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "beat_plan_sha256": "551cde280a3184f2fdf7fa6311aaec3e8c55f46ecb151ecc7c6dbff630de7a9b",
+  "metrics": {
+    "han_chars": 1568,
+    "paragraphs": 13,
+    "dialogue_marks": 9,
+    "environment_terms": {
+      "空气": 2,
+      "冷风": 0,
+      "纸张": 1,
+      "纸浆味": 0,
+      "手指": 2,
+      "走廊": 1
+    }
+  },
+  "failures": [
+    "正文前三段未交代章卡年份：期望1994-03-27"
+  ]
+}

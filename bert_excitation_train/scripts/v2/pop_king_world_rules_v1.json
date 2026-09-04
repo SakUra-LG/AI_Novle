@@ -1,0 +1,24 @@
+{
+  "version": "pop_king_world_rules_v1",
+  "era_rules": {
+    "1969-1979": {
+      "allowed": ["paper records", "analogue tape", "mechanical timers", "analogue meters", "telephone", "radio broadcast"],
+      "forbidden": ["digital waveform proof", "computer keyboard audio editing", "internet", "email", "mobile phone", "digital screen audio provenance"]
+    },
+    "1980-1989": {
+      "allowed": ["analogue and early electronic measurement", "paper logs", "photographic records", "telephone and broadcast"],
+      "forbidden": ["internet-scale cloud systems", "smartphone workflows", "digital evidence without a planned device"]
+    }
+  },
+  "authority_rules": {
+    "lawyer": {"can": ["give legal advice", "draft documents", "request review", "file or threaten a claim"], "cannot": ["personally revoke a license", "issue a court judgment", "directly impose an industry blacklist"]},
+    "host": {"can": ["control the live program", "preserve a recording", "ask the producer to review conduct"], "cannot": ["certify scientific provenance from a waveform", "revoke a professional license"]},
+    "producer": {"can": ["change a program schedule with authorization", "suspend a project assignment pending review"], "cannot": ["declare permanent industry punishment without the planned authority"]},
+    "police_or_court": {"can": ["perform the explicitly planned legal process"], "cannot": ["skip evidence and procedure because the protagonist is persuasive"]}
+  },
+  "continuity_rules": [
+    "A suspension or investigation is not permanent loss unless the plan marks an irreversible transition.",
+    "Only Ma Ke has rebirth knowledge; other characters may infer unusual preparation but not the cause.",
+    "Evidence must support the conclusion drawn from it; a waveform alone does not distinguish live audio from a recording."
+  ]
+}

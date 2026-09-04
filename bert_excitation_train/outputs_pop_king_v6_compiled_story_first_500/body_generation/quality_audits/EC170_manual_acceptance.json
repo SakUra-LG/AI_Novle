@@ -1,0 +1,404 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC170",
+  "chapter_ids": [
+    339,
+    340
+  ],
+  "accepted": false,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "339": {
+        "han_chars": 1147,
+        "total_chars": 1277,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 3,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "七位见证人现场朗读",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "第五秒静默挑战",
+            "exact": false,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "千万级传播话题",
+            "exact": false,
+            "bigram_coverage": 0.833,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 1,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.058,
+        "scene_evidence": [
+          {
+            "location": "银湾市时代广场主舞台",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [],
+        "failures": []
+      },
+      "340": {
+        "han_chars": 1576,
+        "total_chars": 1862,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 3,
+        "must_include_total": 3,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "水军被当面揭穿",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "卡尔团队信誉破产",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "预售突破150万张",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "channel_status",
+            "target": "public_autonomy_active",
+            "evidence_terms": [
+              "EC170_Public_Autonomy_Channel_Activated"
+            ],
+            "hit_terms": [],
+            "matched": true
+          },
+          {
+            "state_key": "professional_status",
+            "target": "permanently_banned",
+            "evidence_terms": [
+              "EXPOSURE_OF_FAKE_WITNESSES_LIVE_BROADCAST"
+            ],
+            "hit_terms": [],
+            "matched": true
+          },
+          {
+            "state_key": "sales_volume",
+            "target": "1.5m",
+            "evidence_terms": [
+              "FIFTH_SECOND_SILENCE_CHALLENGE_SUCCESS"
+            ],
+            "hit_terms": [],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.0692,
+        "scene_evidence": [
+          {
+            "location": "银湾市时代广场主舞台",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          },
+          {
+            "location": "奥瑞恩集团临时指挥中心",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [],
+        "failures": []
+      }
+    },
+    "joint": {
+      "339": {
+        "han_chars": 1147,
+        "total_chars": 1277,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 3,
+        "failures": []
+      },
+      "340": {
+        "han_chars": 1576,
+        "total_chars": 1862,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 3,
+        "must_include_total": 3,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.1342,
+      "resolution_signatures": {
+        "first": {
+          "attack": "断电",
+          "counter": "签字",
+          "resolver": "记者",
+          "opponent_result": "",
+          "hero_result": "恢复"
+        },
+        "second": {
+          "attack": "",
+          "counter": "签字",
+          "resolver": "法庭",
+          "opponent_result": "失去",
+          "hero_result": ""
+        }
+      },
+      "settlement_action_terms": [
+        "退出"
+      ],
+      "rebirth_information_gap_markers": [
+        "前世"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 319,
+          "semantic_overlap": 0.0741
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 320,
+          "semantic_overlap": 0.063
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 321,
+          "semantic_overlap": 0.0734
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 322,
+          "semantic_overlap": 0.0725
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 325,
+          "semantic_overlap": 0.0685
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 326,
+          "semantic_overlap": 0.0782
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 327,
+          "semantic_overlap": 0.0516
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 328,
+          "semantic_overlap": 0.0539
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 329,
+          "semantic_overlap": 0.0955
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 330,
+          "semantic_overlap": 0.0832
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 331,
+          "semantic_overlap": 0.111
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 332,
+          "semantic_overlap": 0.1148
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 333,
+          "semantic_overlap": 0.0852
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 334,
+          "semantic_overlap": 0.0708
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 335,
+          "semantic_overlap": 0.0742
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 336,
+          "semantic_overlap": 0.0726
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 337,
+          "semantic_overlap": 0.0564
+        },
+        {
+          "chapter_id": 339,
+          "prior_chapter_id": 338,
+          "semantic_overlap": 0.054
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 319,
+          "semantic_overlap": 0.0806
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 320,
+          "semantic_overlap": 0.0886
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 321,
+          "semantic_overlap": 0.0663
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 322,
+          "semantic_overlap": 0.0878
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 325,
+          "semantic_overlap": 0.0748
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 326,
+          "semantic_overlap": 0.0869
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 327,
+          "semantic_overlap": 0.0535
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 328,
+          "semantic_overlap": 0.0693
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 329,
+          "semantic_overlap": 0.0706
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 330,
+          "semantic_overlap": 0.1024
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 331,
+          "semantic_overlap": 0.0861
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 332,
+          "semantic_overlap": 0.1262
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 333,
+          "semantic_overlap": 0.0942
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 334,
+          "semantic_overlap": 0.0938
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 335,
+          "semantic_overlap": 0.0711
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 336,
+          "semantic_overlap": 0.1
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 337,
+          "semantic_overlap": 0.0683
+        },
+        {
+          "chapter_id": 340,
+          "prior_chapter_id": 338,
+          "semantic_overlap": 0.0753
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "339": "ef965ed996608f3fea9bcf8b049966abee9a1081aa98753361316cfe36d7cf9a",
+    "340": "bba53989f6713632769c48762601ea5f08844a1f8b6b885f89a82e7e777d6a0a"
+  },
+  "accepted_at": "2026-08-26T10:19:39.989494+00:00",
+  "status": "quarantine_rewrite_pending",
+  "authoritative": false,
+  "quarantine_reason": "EC136-EC178 architecture and synopsis repair",
+  "quarantined_at": "20260826T110312Z"
+}

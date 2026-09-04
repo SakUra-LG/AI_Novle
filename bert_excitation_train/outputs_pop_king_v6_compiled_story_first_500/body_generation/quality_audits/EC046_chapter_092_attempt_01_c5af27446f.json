@@ -1,0 +1,150 @@
+{
+  "cluster_id": "EC046",
+  "chapter_id": 92,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "c5af27446f7bca4b3d9c385c0a6d3d1d4139b1aa927e3d80c45908f1309e2aec",
+  "base_prompt_sha256": "c5af27446f7bca4b3d9c385c0a6d3d1d4139b1aa927e3d80c45908f1309e2aec",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "896ee1da90e844b254cfbda7d5e63fff30d0ebd188af520fc35ea6100b6322fb",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 13.121,
+    "usage": {
+      "prompt_tokens": 10644,
+      "completion_tokens": 1216,
+      "total_tokens": 11860,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 46,
+    "through_chapter": 92,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "cf65150bf4f7875eee4989b622dfe1990275ba01572c0d180e0ffaccb9bb7c7d",
+    "chapter_card_prefix_sha256": "04a5d19ff0865418fd221e722dd9223a9a738f5037107880db0b966c5cbbb6cb",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "3e2b08429e7bb9aeb5437a1d50531d2bcf54c64f32462cc7102336545d1c4220"
+  },
+  "cluster_sha256": "c3f2d55c27ad332ee19c1bd52e845abdba9383c3c6281dc6095059a635671bb5",
+  "card_sha256": "84efbb62cb6f950fd8a5c1b48d5b32a2de8166de31d256f2efc2023634cf6178",
+  "chapter_audit": {
+    "han_chars": 1744,
+    "total_chars": 1984,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "第三方审计报告",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "卡尔·霍尔特的滑稽失算",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      },
+      {
+        "anchor": "独家保留曲目确认",
+        "exact": false,
+        "bigram_coverage": 0.857,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "copyright_status__financial_independence__extension_EC037",
+        "target": "拥有独立监管账户且巡演预算审批权完全收回",
+        "evidence_terms": [
+          "黛安娜出示第三方",
+          "审计报告",
+          "确认模型缺陷被公",
+          "开揭露"
+        ],
+        "hit_terms": [
+          "审计报告"
+        ],
+        "matched": false
+      },
+      {
+        "state_key": "employment_status__training_control__extension_EC025__extension_EC046",
+        "target": "彻底失去技术欺诈能力，被边缘化至非核心岗位",
+        "evidence_terms": [
+          "卡尔",
+          "霍尔特因数据造假",
+          "失败被剥夺编曲否",
+          "决权"
+        ],
+        "hit_terms": [
+          "卡尔"
+        ],
+        "matched": false
+      },
+      {
+        "state_key": "trust_dynamic__family_alliance__extension_EC037",
+        "target": "铁三角稳固，母亲完全掌权且对麦珂法律智慧产生深度敬畏",
+        "evidence_terms": [
+          "麦珂当众展示修正",
+          "后的客流热力图",
+          "迫使原厂牌承认模",
+          "型缺陷"
+        ],
+        "hit_terms": [
+          "后的客流热力图"
+        ],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 2,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.088,
+    "scene_evidence": [
+      {
+        "location": "原厂牌总部谈判室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文没有兑现章卡关键事实“卡尔·霍尔特的滑稽失算”",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC037→拥有独立监管账户且巡演预算审批权完全收回",
+      "正文没有通过现场动作兑现状态转移employment_status__training_control__extension_EC025__extension_EC046→彻底失去技术欺诈能力，被边缘化至非核心岗位",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC037→铁三角稳固，母亲完全掌权且对麦珂法律智慧产生深度敬畏"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“卡尔·霍尔特的滑稽失算”",
+      "正文没有通过现场动作兑现状态转移copyright_status__financial_independence__extension_EC037→拥有独立监管账户且巡演预算审批权完全收回",
+      "正文没有通过现场动作兑现状态转移employment_status__training_control__extension_EC025__extension_EC046→彻底失去技术欺诈能力，被边缘化至非核心岗位",
+      "正文没有通过现场动作兑现状态转移trust_dynamic__family_alliance__extension_EC037→铁三角稳固，母亲完全掌权且对麦珂法律智慧产生深度敬畏"
+    ]
+  },
+  "failures": [
+    "第91章：汉字数1926，高于1900"
+  ],
+  "accepted": false,
+  "joint_rejected": true,
+  "joint_failures": [
+    "第91章：汉字数1926，高于1900"
+  ]
+}

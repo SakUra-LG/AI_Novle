@@ -1,0 +1,46 @@
+# EC179隔离试写质量报告（证据自动生成）
+
+状态：trial_only_not_accepted；未写入正式StoryMemory、Neo4j，未标记accepted。
+
+{
+  "version": "isolated_trial_report_v1",
+  "status": "trial_only_not_accepted",
+  "formal_story_memory_write": false,
+  "neo4j_write": false,
+  "external_semantic_critic": "not_run",
+  "cluster_id": "EC179",
+  "chapters": [
+    {
+      "chapter_id": 357,
+      "event_cluster_id": "EC179",
+      "expected_progress_point": "完成课程后核对职业安排，取得结业确认而非自动职位",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "ac7c90a3ebdf4e0e20ef0905e8d28edfdf094813ef67616f62fec494fd0ead72"
+    },
+    {
+      "chapter_id": 358,
+      "event_cluster_id": "EC179",
+      "expected_progress_point": "完成课程后核对职业安排，取得结业确认而非自动职位",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "e57022651f163cb8caa3d3ebc870bf18227a9ca15ec76e7365aba664af42e9d8"
+    }
+  ],
+  "formal_continuity_anchor": {
+    "chapter_id": 270,
+    "date": "1993-09-17"
+  },
+  "overall": "PASS_WITHOUT_ACCEPTANCE",
+  "issues": []
+}

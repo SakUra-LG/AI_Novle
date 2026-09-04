@@ -1,0 +1,114 @@
+{
+  "cluster_id": "EC097",
+  "chapter_id": 193,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "226b08b9841d23293b2456991c29471ef87bf580802b016e0bcbd98540134151",
+  "base_prompt_sha256": "226b08b9841d23293b2456991c29471ef87bf580802b016e0bcbd98540134151",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "aa053f8f754284e627eaa9a0fee39de33a9f9f206082ded134bdf61a80d522ef",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 14.312,
+    "usage": {
+      "prompt_tokens": 6057,
+      "completion_tokens": 1162,
+      "total_tokens": 7219,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 97,
+    "through_chapter": 194,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "604acd6aafab674c0e05a8973b542e79c7a92081b4195b6e0199f28658820786",
+    "chapter_card_prefix_sha256": "08935a5cb71a75f2274036266d3250add47ca4e510fd5ca37c97e766371a8146",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "f6908a1cd8fc50f7e539875584cdf7572e53ccd8733d50ad60b2bbf808da7d56"
+  },
+  "cluster_sha256": "3f212175e1bfd6553815b4d53518dfdf9a1a2fa0d62fe3da534f88cd220d238d",
+  "card_sha256": "fc4ef13234cc5eb34dff9becaef18a0b1ab7b94d15f5bcff6b286addd64ec558",
+  "chapter_audit": {
+    "han_chars": 1582,
+    "total_chars": 1837,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "收件章时间戳",
+        "exact": false,
+        "bigram_coverage": 0.6,
+        "matched": true
+      },
+      {
+        "anchor": "公证封套",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "无暗记原件",
+        "exact": false,
+        "bigram_coverage": 0.5,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 1,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0265,
+    "scene_evidence": [
+      {
+        "location": "保险柜台",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_193_ORIGINAL_RECORD",
+        "display_name": "无暗记原始健康记录",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      },
+      {
+        "artifact_id": "ART_193_TIMESTAMP_STAMP",
+        "display_name": "收件章时间凭证",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.027，疑似写成了另一件事",
+      "正文没有写出本章正式创建的关键对象“无暗记原始健康记录”",
+      "正文没有写出本章正式创建的关键对象“收件章时间凭证”",
+      "主角麦珂所在动作链被女性代词‘她’承接"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.027，疑似写成了另一件事",
+      "正文没有写出本章正式创建的关键对象“无暗记原始健康记录”",
+      "正文没有写出本章正式创建的关键对象“收件章时间凭证”",
+      "主角麦珂所在动作链被女性代词‘她’承接"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

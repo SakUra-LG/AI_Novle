@@ -1,0 +1,112 @@
+{
+  "cluster_id": "EC087",
+  "chapter_id": 173,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "e7e28ab7eb4d3fc5c13e5f042e1118c8a27264dfece23063a2e91319d5cbc127",
+  "base_prompt_sha256": "e7e28ab7eb4d3fc5c13e5f042e1118c8a27264dfece23063a2e91319d5cbc127",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "5ef3259d1a213b2c3dff0ad23cb91c018a3dc3b8183bc4b69411d13998e6119c",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 12.395,
+    "usage": {
+      "prompt_tokens": 6332,
+      "completion_tokens": 1072,
+      "total_tokens": 7404,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 87,
+    "through_chapter": 174,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "09ca393a3bce330873ef3e7a96c347e1a17d5712af13b62c2506a108a03014cd",
+    "chapter_card_prefix_sha256": "c0ebb97d12597f232703e15b7cc701c2e8e05a724392d1c5b85423b018e454f5",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "e865e2a6efeb4182270229c3f90bc934d9f550e83b8bdb3dc2bf22c20e9fa0c1"
+  },
+  "cluster_sha256": "1190c247463d98e1373f288f30ecb6e8cf3744af85d1ad2a7b42974c5991a4ff",
+  "card_sha256": "f037cd463baa6399b8e50b7284c310bb1143196cb1c8929d39c77be636591574",
+  "chapter_audit": {
+    "han_chars": 1509,
+    "total_chars": 1766,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 4,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "蓝色封皮档案夹",
+        "exact": false,
+        "bigram_coverage": 0.833,
+        "matched": true
+      },
+      {
+        "anchor": "第三层第112页",
+        "exact": false,
+        "bigram_coverage": 0.857,
+        "matched": true
+      },
+      {
+        "anchor": "纸张氧化程度对比",
+        "exact": false,
+        "bigram_coverage": 0.286,
+        "matched": false
+      },
+      {
+        "anchor": "紫外线灯照射",
+        "exact": false,
+        "bigram_coverage": 0.8,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 1,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0595,
+    "scene_evidence": [
+      {
+        "location": "联合保险公司会议室",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_173_ORIGINAL_MEDICAL_RECORD",
+        "display_name": "1984年喉炎康复原始记录",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有兑现章卡关键事实“纸张氧化程度对比”",
+      "正文未落到规划场景“联合保险公司会议室”",
+      "正文没有写出本章正式创建的关键对象“1984年喉炎康复原始记录”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“纸张氧化程度对比”",
+      "正文未落到规划场景“联合保险公司会议室”",
+      "正文没有写出本章正式创建的关键对象“1984年喉炎康复原始记录”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

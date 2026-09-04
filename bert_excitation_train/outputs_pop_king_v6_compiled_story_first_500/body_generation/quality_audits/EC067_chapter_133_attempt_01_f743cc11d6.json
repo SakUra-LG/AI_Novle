@@ -1,0 +1,112 @@
+{
+  "cluster_id": "EC067",
+  "chapter_id": 133,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "f743cc11d6ac06e9d07c61c215ef085e2f1bcfa823972a17ebf51347df6e6825",
+  "base_prompt_sha256": "f743cc11d6ac06e9d07c61c215ef085e2f1bcfa823972a17ebf51347df6e6825",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "b0816b270cab8b5977e6a0494ac8a8039b78f9d906b192bca33c4a52bd1595f4",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 11.261,
+    "usage": {
+      "prompt_tokens": 6667,
+      "completion_tokens": 941,
+      "total_tokens": 7608,
+      "prompt_tokens_details": {
+        "cached_tokens": 3741
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 67,
+    "through_chapter": 134,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "6c5f8944a8ad844e40178a22baab79b419b78e2d386a0154a5b9618d074ff797",
+    "chapter_card_prefix_sha256": "2eb8bf645153986322587a7eb2707a7bcb4230bec62fac054bb8c529cf9ef9a9",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "10e3527443df4a1dcf9695f5690f0d13431e23382dcc22d58e63a61ae18674e4"
+  },
+  "cluster_sha256": "09450adb8c30d2cdc809eeb1991d2887bec8c5f4adf6c92eef6b8d761e09d9a3",
+  "card_sha256": "806ac1165a9cb3987200e0f36b36915127fc9f021f7a1636a3125418c42a4e8d",
+  "chapter_audit": {
+    "han_chars": 1372,
+    "total_chars": 1574,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "划痕细节描写",
+        "exact": false,
+        "bigram_coverage": 0.2,
+        "matched": false
+      },
+      {
+        "anchor": "押运过程的安全措施",
+        "exact": false,
+        "bigram_coverage": 0.125,
+        "matched": false
+      },
+      {
+        "anchor": "必须呈现信息差的实际使用：利用12月20日冲洗事故导致的失真高峰，要求三厂同步检测同一底片。",
+        "exact": false,
+        "bigram_coverage": 0.19,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0253,
+    "scene_evidence": [
+      {
+        "location": "市中心三家冲印厂的暗房",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_133_CROSS_COMPARE_REPORT",
+        "display_name": "《底片交叉比对报告》",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文夹入英文小写叙述词：paranoid",
+      "正文与章卡目标/动作/回报语义覆盖仅0.025，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“划痕细节描写”",
+      "正文没有兑现章卡关键事实“押运过程的安全措施”",
+      "正文没有兑现章卡关键事实“必须呈现信息差的实际使用：利用12月20日冲洗事故导致的失真高峰，要求三厂同步检测同一底片。”",
+      "正文没有写出本章正式创建的关键对象“《底片交叉比对报告》”"
+    ],
+    "all_validator_failures": [
+      "正文夹入英文小写叙述词：paranoid",
+      "正文与章卡目标/动作/回报语义覆盖仅0.025，疑似写成了另一件事",
+      "正文没有兑现章卡关键事实“划痕细节描写”",
+      "正文没有兑现章卡关键事实“押运过程的安全措施”",
+      "正文没有兑现章卡关键事实“必须呈现信息差的实际使用：利用12月20日冲洗事故导致的失真高峰，要求三厂同步检测同一底片。”",
+      "正文没有写出本章正式创建的关键对象“《底片交叉比对报告》”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

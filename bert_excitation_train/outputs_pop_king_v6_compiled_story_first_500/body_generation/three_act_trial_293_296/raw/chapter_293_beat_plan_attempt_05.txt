@@ -1,0 +1,191 @@
+{
+  "chapter_id": 293,
+  "acts": [
+    {
+      "act_id": 1,
+      "beats": [
+        {
+          "beat_id": 1,
+          "location": "录音棚控制室",
+          "time_relation": "1994-03-27 下午",
+          "active_character": "艾琳·沃特曼",
+          "immediate_goal": "核对母带清单中的署名信息",
+          "visible_action": "艾琳盯着屏幕上的元数据列表，手指停在‘制作人’一栏，那里显示的是通用的‘制作团队’而非她的名字。",
+          "resistance": "系统自动生成的默认标签覆盖了手动录入的轨道信息。",
+          "new_information": "确认和声编排被归入通用模板，交付后将彻底抹去个人贡献痕迹。",
+          "character_choice": "立即停止播放，要求暂停当前流程。",
+          "relationship_or_emotional_change": "从专注转为警觉，对唱片方的效率产生怀疑。",
+          "state_before": "认为这是常规的技术性疏忽，准备签字确认。",
+          "state_after": "发现核心权益被系统性吞并，决定不再被动接受。",
+          "artifact_use": null,
+          "forbidden_replay": "未重演前世因拖延导致的最终失控，仅聚焦当下的发现瞬间。",
+          "chapter_boundary": "第一幕动作开场：发现危机。"
+        },
+        {
+          "beat_id": 2,
+          "location": "录音棚控制室",
+          "time_relation": "紧接上一刻",
+          "active_character": "维克多·兰斯",
+          "immediate_goal": "维持进度，避免延误导致成本增加",
+          "visible_action": "维克多看着时间，一边整理袖口一边催促艾琳尽快确认，声称这只是格式问题，事后可以补填。",
+          "resistance": "利用‘惯例’和‘时间紧迫’作为施压手段，试图让艾琳忽略细节。",
+          "new_information": "暴露了维克多急于推进流程以掩盖特定操作的心理状态。",
+          "character_choice": "艾琳拒绝口头承诺，坚持必须现场看到书面记录。",
+          "relationship_or_emotional_change": "艾琳与维克多之间建立明确的对抗立场，拒绝用感情关系换取无署名合作。",
+          "state_before": "维克多认为艾琳会顺从流程。",
+          "state_after": "维克多意识到艾琳不会轻易妥协，必须面对实质性阻力。",
+          "artifact_use": null,
+          "forbidden_replay": "未提前展示下一章的‘重放对比’环节。",
+          "chapter_boundary": "目标确立：必须解决署名问题。"
+        },
+        {
+          "beat_id": 3,
+          "location": "录音棚控制室",
+          "time_relation": "紧接着",
+          "active_character": "麦珂·杰森",
+          "immediate_goal": "支持艾琳，同时防止事态扩大化",
+          "visible_action": "麦珂走到控制台旁，没有直接指责维克多，而是平静地询问艾琳需要什么样的证据来证明她的贡献。",
+          "resistance": "环境压力：其他技术人员在等待指令，气氛紧张。",
+          "new_information": "明确了麦珂的策略是‘只争署名，不争控制权’，避免陷入版权纠纷泥潭。",
+          "character_choice": "引导艾琳拿出分轨记录和修改日志作为谈判筹码。",
+          "relationship_or_emotional_change": "麦珂与艾琳的默契加深，确立了两人共同面对外部压力的同盟关系。",
+          "state_before": "局势僵持，双方处于对峙边缘。",
+          "state_after": "艾琳找到了具体的行动依据，从被动防御转为主动举证。",
+          "artifact_use": null,
+          "forbidden_replay": "未引入新的人物或新的权限来源。",
+          "chapter_boundary": "第一次选择：决定用具体证据进行反击。"
+        }
+      ]
+    },
+    {
+      "act_id": 2,
+      "beats": [
+        {
+          "beat_id": 4,
+          "location": "录音棚控制室",
+          "time_relation": "1994-03-27 下午稍晚",
+          "active_character": "艾琳·沃特曼",
+          "immediate_goal": "提供无可辩驳的和声编排证据",
+          "visible_action": "艾琳调出硬盘中的原始分轨文件，将‘通用模板’版本与她手写的和声修改记录并排展示在屏幕上。",
+          "resistance": "维克多试图打断，声称这些记录只是内部草稿，不具备法律效力。",
+          "new_information": "展示了和声部分的独特性，证明了其并非标准模板能自动生成。",
+          "character_choice": "艾琳坚持要求对方承认这些修改记录的真实性，否则拒绝签署任何交付单。",
+          "relationship_or_emotional_change": "维克多感到被冒犯，开始表现出职业性的傲慢与焦虑混合的状态。",
+          "state_before": "维克多试图用‘惯例’模糊事实。",
+          "state_after": "维克多的反驳显得苍白，无法否认客观存在的修改记录。",
+          "artifact_use": "排练分轨和修改记录（非正式文件）",
+          "forbidden_replay": "未提前消费下一章关于‘声部走向改变结构’的详细论证。",
+          "chapter_boundary": "尝试受阻：对手试图用惯例抹杀事实。"
+        },
+        {
+          "beat_id": 5,
+          "location": "录音棚控制室",
+          "time_relation": "紧接着",
+          "active_character": "昆廷·琼斯",
+          "immediate_goal": "缓和气氛，推动程序正义",
+          "visible_action": "昆廷介入，指出在行业标准中，个人创作痕迹若被抹除属于严重违规，建议引入第三方审核。",
+          "resistance": "维克多试图以‘内部流程’为由拒绝外部介入，强调效率优先。",
+          "new_information": "昆廷的介入增加了事件的严肃性，迫使维克多重新评估风险。",
+          "character_choice": "昆廷提议暂时冻结母带交付，直到署名问题得到明确解释。",
+          "relationship_or_emotional_change": "团队内部凝聚力增强，昆廷作为导师的角色巩固了麦珂团队的合法性。",
+          "state_before": "维克多仍试图强行推进。",
+          "state_after": "维克多被迫接受暂停流程的现实，因为继续推进会损害他的声誉。",
+          "artifact_use": null,
+          "forbidden_replay": "未提前展示最终的《和声贡献确认页》。",
+          "chapter_boundary": "方案调整：引入权威意见，暂停交付。"
+        },
+        {
+          "beat_id": 6,
+          "location": "录音棚控制室",
+          "time_relation": "紧接着",
+          "active_character": "维克多·兰斯",
+          "immediate_goal": "寻找替代方案，保住面子",
+          "visible_action": "维克多意识到硬抗无效，转而提出由唱片方‘代为起草’一份补充说明，试图绕过正式的署名确认流程。",
+          "resistance": "艾琳和麦珂识破了这一意图，拒绝接受非正式的补充说明。",
+          "new_information": "暴露了维克多为了规避责任而试图走捷径的真实动机。",
+          "character_choice": "麦珂明确表示，只有经过正式审核并签名的文件才能被接受，不接受任何形式的‘代笔’。",
+          "relationship_or_emotional_change": "维克多感到被完全封锁退路，情绪从傲慢转为恼怒但不得不收敛。",
+          "state_before": "维克多试图用灰色地带解决问题。",
+          "state_after": "维克多被迫放弃捷径，只能寻求正规途径。",
+          "artifact_use": null,
+          "forbidden_replay": "未提前展示下一章的‘解释权争夺’。",
+          "chapter_boundary": "代价显现：必须付出时间成本换取合规。"
+        },
+        {
+          "beat_id": 7,
+          "location": "录音棚控制室",
+          "time_relation": "1994-03-27 傍晚",
+          "active_character": "唱片版权管理员（在场代表）",
+          "immediate_goal": "核实争议，做出初步判断",
+          "visible_action": "一位负责版权登记的中年女性走进控制室，查看了艾琳提供的分轨记录和维克多的解释，神情严肃。",
+          "resistance": "维克多试图向管理员暗示这是‘行业常态’，希望她不要小题大做。",
+          "new_information": "管理员确认了艾琳的记录符合合同中对‘独立创作’的定义，且维克多的解释存在逻辑漏洞。",
+          "character_choice": "管理员决定暂时中止母带交付流程，要求各方等待正式文件的签署。",
+          "relationship_or_emotional_change": "管理员的介入标志着事件性质从‘技术纠纷’升级为‘法律/合同合规’问题。",
+          "state_before": "僵局持续，无人敢做最后决定。",
+          "state_after": "管理员宣布暂停，为后续正式文件的签署创造了空间。",
+          "artifact_use": null,
+          "forbidden_replay": "未提前完成《和声贡献确认页》的签署过程。",
+          "chapter_boundary": "新信息确认：必须走正规流程。"
+        }
+      ]
+    },
+    {
+      "act_id": 3,
+      "beats": [
+        {
+          "beat_id": 8,
+          "location": "录音棚控制室",
+          "time_relation": "1994-03-27 深夜前",
+          "active_character": "艾琳·沃特曼",
+          "immediate_goal": "确保自己的名字出现在官方记录中",
+          "visible_action": "在管理员的主持下，艾琳重新审阅了一份空白表格，并在‘和声编排’一栏郑重签下自己的全名。",
+          "resistance": "维克多在一旁冷眼旁观，试图通过沉默表达不满，但未再阻挠。",
+          "new_information": "确认了艾琳的贡献将被独立记录，而非混同于制作团队。",
+          "character_choice": "艾琳坚持要求在备注栏注明‘独立创作部分’，拒绝模糊处理。",
+          "relationship_or_emotional_change": "艾琳获得了前所未有的掌控感，同时也感受到了麦珂团队给予的坚定支持。",
+          "state_before": "等待最终结果的悬空状态。",
+          "state_after": "关键文件已提交，但尚未完全生效，需等待盖章确认。",
+          "artifact_use": "待签署的《和声贡献确认页》草案",
+          "forbidden_replay": "未提前展示下一章的‘最终结算’场景。",
+          "chapter_boundary": "执行调整后的动作：提交独立署名申请。"
+        },
+        {
+          "beat_id": 9,
+          "location": "录音棚控制室",
+          "time_relation": "1994-03-27 深夜",
+          "active_character": "唱片版权管理员",
+          "immediate_goal": "完成形式审查，发出正式通知",
+          "visible_action": "管理员在收到艾琳签署的文件后，仔细核对了分轨记录与合同条款，随后在文件上盖下了‘已受理’的印章，并通知团队母带交付将暂停一周。",
+          "resistance": "无实质阻力，流程已按规则运行。",
+          "new_information": "正式确认了艾琳的署名权，同时明确了因流程调整导致的交付延期。",
+          "character_choice": "管理员严格执行规定，拒绝了维克多要求‘先交付后补手续’的请求。",
+          "relationship_or_emotional_change": "维克多虽然不悦，但不得不服从规则；团队士气回升。",
+          "state_before": "文件已签署，等待最终确认。",
+          "state_after": "《和声贡献确认页》被正式接收，母带交付暂停一周。",
+          "artifact_use": "《和声贡献确认页》（已盖章版）",
+          "forbidden_replay": "未提前展示下一章的‘收益结算’细节。",
+          "chapter_boundary": "本章允许的状态变化达成。"
+        },
+        {
+          "beat_id": 10,
+          "location": "录音棚控制室",
+          "time_relation": "1994-03-27 深夜结束",
+          "active_character": "麦珂·杰森",
+          "immediate_goal": "总结本章成果，为下一章铺垫",
+          "visible_action": "麦珂看着被盖章的文件，对艾琳点了点头，然后转身收拾设备，示意大家离开，但眼神中透露出对接下来一周工作的规划。",
+          "resistance": "疲惫感，以及对维克多可能在未来一周制造麻烦的警惕。",
+          "new_information": "确认了本章的核心目标达成：艾琳获得明确署名，且不涉及整首歌控制权转移。",
+          "character_choice": "麦珂决定利用这一周的时间，专注于下一阶段的准备工作，而不是纠缠于维克多的情绪。",
+          "relationship_or_emotional_change": "团队在经历风波后更加团结，麦珂与艾琳的关系在共同战斗中进一步升华。",
+          "state_before": "文件已归档，冲突暂时平息。",
+          "state_after": "母带交付暂停一周，艾琳署名确认，团队准备迎接新的挑战。",
+          "artifact_use": "《和声贡献确认页》（归档）",
+          "forbidden_replay": "未提前展示下一章黛安娜的服装工作室情节。",
+          "chapter_boundary": "本章结束，留下下周延期的承接点。"
+        }
+      ]
+    }
+  ],
+  "chapter_boundary": "《和声贡献确认页》被版权管理员接收，母带交付暂停一周。下一章将基于此文件，进入唱片方主张惯例、艾琳现场重放对比的论证阶段。"
+}

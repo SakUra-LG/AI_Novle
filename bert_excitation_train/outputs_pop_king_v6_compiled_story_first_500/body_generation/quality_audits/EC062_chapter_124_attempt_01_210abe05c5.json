@@ -1,0 +1,129 @@
+{
+  "cluster_id": "EC062",
+  "chapter_id": 124,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "210abe05c5bc4e8b3452c7ae4a4aa75441d1fc0bd0a490eba88be23c0dc2c9e1",
+  "base_prompt_sha256": "210abe05c5bc4e8b3452c7ae4a4aa75441d1fc0bd0a490eba88be23c0dc2c9e1",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "82843ae967341ac445b799f41669f966b80845d60cf1d6c53454b8e62218d4ee",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 12.284,
+    "usage": {
+      "prompt_tokens": 8866,
+      "completion_tokens": 1032,
+      "total_tokens": 9898,
+      "prompt_tokens_details": {
+        "cached_tokens": 4898
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 62,
+    "through_chapter": 124,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "7a5ac0a132372e850acb3209879422d49976c120c0b1a7928094e1fdefa0555e",
+    "chapter_card_prefix_sha256": "eb4e37ab071bad1136119d3187b1cc3b508c7f6d1ea7a72d93253904c60eb51f",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "37102883a0f8805b208965b535b3a3d11be5d60f81ca8a595c21678070600391"
+  },
+  "cluster_sha256": "0e561af77b5b9cfdfe8b6794584a330154c2a32509299e2b2548a33fffef69bb",
+  "card_sha256": "904fa7a9677dc322e09d178f0169bdd1d97c2452ee54a58c18770617c77ca645",
+  "chapter_audit": {
+    "han_chars": 1515,
+    "total_chars": 1717,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 1,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "录音播放",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "时间戳对比图",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "执照吊销公告",
+        "exact": false,
+        "bigram_coverage": 0.8,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "negation_rights_status",
+        "target": "已授权",
+        "evidence_terms": [
+          "ART_124_CLINICAL_NEGATION_DOC"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "public_trust",
+        "target": "受损",
+        "evidence_terms": [
+          "ART_124_MEDIA_EXPOSE_RECORD"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0274,
+    "scene_evidence": [
+      {
+        "location": "国家广播电视中心新闻发布厅",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_124_MEDIA_EXPOSE_RECORD",
+        "display_name": "ART_124_MEDIA_EXPOSE_RECORD",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.027，疑似写成了另一件事",
+      "正文没有通过现场动作兑现状态转移negation_rights_status→已授权",
+      "正文没有通过现场动作兑现状态转移public_trust→受损",
+      "正文未落到规划场景“国家广播电视中心新闻发布厅”",
+      "正文没有写出本章正式创建的关键对象“ART_124_MEDIA_EXPOSE_RECORD”"
+    ],
+    "all_validator_failures": [
+      "正文与章卡目标/动作/回报语义覆盖仅0.027，疑似写成了另一件事",
+      "正文没有通过现场动作兑现状态转移negation_rights_status→已授权",
+      "正文没有通过现场动作兑现状态转移public_trust→受损",
+      "正文未落到规划场景“国家广播电视中心新闻发布厅”",
+      "正文没有写出本章正式创建的关键对象“ART_124_MEDIA_EXPOSE_RECORD”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

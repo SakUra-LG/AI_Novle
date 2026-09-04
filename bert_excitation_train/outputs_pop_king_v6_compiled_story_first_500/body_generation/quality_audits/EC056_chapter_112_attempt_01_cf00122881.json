@@ -1,0 +1,138 @@
+{
+  "cluster_id": "EC056",
+  "chapter_id": 112,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "cf001228811e629a1434015cd36fbdf531db7ee85b716c49bc39deb09625d008",
+  "base_prompt_sha256": "cf001228811e629a1434015cd36fbdf531db7ee85b716c49bc39deb09625d008",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "34f7cebdd9ee8621bd193fb7f30c5c03f609d6aea844c9b096d88e50ab46ccb5",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 13.818,
+    "usage": {
+      "prompt_tokens": 9489,
+      "completion_tokens": 1096,
+      "total_tokens": 10585,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 56,
+    "through_chapter": 112,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "99686133595098f8fbaf1adfc753c2f366219f6491a9f0f79a32f80b66b1dbc5",
+    "chapter_card_prefix_sha256": "9371f82a9c8bc07b666acdf0bc9f8f059ff7a79c98bb4d53df24b155001c7fcc",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "e0e45f99e879abaac8d9af19359d1d0a2fc1cb5b6e3f858482326a45a3ea87de"
+  },
+  "cluster_sha256": "7e938367b34d435efda7d2b612d37f8c7beab65bcef01a2001e22846efe3e413",
+  "card_sha256": "95d7d8f044718fb5b80d768b657bd527fa3e278f9c674dd16b80b4f8df9bafd7",
+  "chapter_audit": {
+    "han_chars": 1541,
+    "total_chars": 1790,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "手绘波形图与示波器数据的叠加快照感描写",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      },
+      {
+        "anchor": "接地线接反导致冒烟的细节",
+        "exact": false,
+        "bigram_coverage": 0.273,
+        "matched": false
+      },
+      {
+        "anchor": "铜质齿轮编号的首次正式亮相",
+        "exact": false,
+        "bigram_coverage": 0.333,
+        "matched": false
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "physical_verification_authority",
+        "target": "拥有底片/母带/机械图纸的物理验证否决权",
+        "evidence_terms": [
+          "1979",
+          "11",
+          "14",
+          "日暗房现场公证记",
+          "1980",
+          "夏夜协议",
+          "附录",
+          "签字页"
+        ],
+        "hit_terms": [
+          "1980",
+          "夏夜协议",
+          "附录"
+        ],
+        "matched": true
+      },
+      {
+        "state_key": "legal_tech_partnership",
+        "target": "民事伴侣+技术合伙人（含股权）",
+        "evidence_terms": [
+          "1980",
+          "民事伴侣及技术合",
+          "伙协议",
+          "公证书编号",
+          "CP-1980-0312"
+        ],
+        "hit_terms": [
+          "1980",
+          "民事伴侣及技术合",
+          "伙协议",
+          "CP-1980-0312"
+        ],
+        "matched": true
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 2,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0554,
+    "scene_evidence": [
+      {
+        "location": "联合中心B3录音棚听证室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文没有兑现章卡关键事实“手绘波形图与示波器数据的叠加快照感描写”",
+      "正文没有兑现章卡关键事实“接地线接反导致冒烟的细节”",
+      "正文没有兑现章卡关键事实“铜质齿轮编号的首次正式亮相”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“手绘波形图与示波器数据的叠加快照感描写”",
+      "正文没有兑现章卡关键事实“接地线接反导致冒烟的细节”",
+      "正文没有兑现章卡关键事实“铜质齿轮编号的首次正式亮相”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

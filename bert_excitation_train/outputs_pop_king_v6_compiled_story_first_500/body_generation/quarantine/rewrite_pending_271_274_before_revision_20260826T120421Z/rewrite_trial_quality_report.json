@@ -1,0 +1,72 @@
+{
+  "version": "rewrite_trial_report_v1",
+  "status": "trial_only_not_accepted",
+  "formal_story_memory_write": false,
+  "neo4j_write": false,
+  "chapters": [
+    {
+      "chapter_id": 271,
+      "file": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\rewrite_trial_271_274\\chapters\\chapter_271.txt",
+      "sha256": "d3ba44d9e59c8a0d8cb84d58a65031b881ef16da29b6b7fdb551349bdee86c77",
+      "character_consistency": "PASS",
+      "timeline": "PASS",
+      "rebirth_boundary": "PASS",
+      "plot_family_similarity": {
+        "max_recent20": 0.0619,
+        "status": "PASS"
+      },
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "science_era_reasonableness": "PASS",
+      "issues": []
+    },
+    {
+      "chapter_id": 272,
+      "file": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\rewrite_trial_271_274\\chapters\\chapter_272.txt",
+      "sha256": "f3e5319475f711d181f723d5995ea16b5356495b0e99e6dc2c78496e5f832321",
+      "character_consistency": "PASS",
+      "timeline": "PASS",
+      "rebirth_boundary": "PASS",
+      "plot_family_similarity": {
+        "max_recent20": 0.0675,
+        "status": "PASS"
+      },
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "science_era_reasonableness": "PASS",
+      "issues": []
+    },
+    {
+      "chapter_id": 273,
+      "file": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\rewrite_trial_271_274\\chapters\\chapter_273.txt",
+      "sha256": "43dc65aea4ebbd420c746aca2bbae38b73d42bbd928f677671416ea067b647fa",
+      "character_consistency": "PASS",
+      "timeline": "PASS",
+      "rebirth_boundary": "PASS",
+      "plot_family_similarity": {
+        "max_recent20": 0.0712,
+        "status": "PASS"
+      },
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "science_era_reasonableness": "PASS",
+      "issues": []
+    },
+    {
+      "chapter_id": 274,
+      "file": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\rewrite_trial_271_274\\chapters\\chapter_274.txt",
+      "sha256": "b2e85db01a111028734e02269317f308c0b299974029b56a99e1e0827b1d522c",
+      "character_consistency": "PASS",
+      "timeline": "PASS",
+      "rebirth_boundary": "PASS",
+      "plot_family_similarity": {
+        "max_recent20": 0.0699,
+        "status": "PASS"
+      },
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "science_era_reasonableness": "PASS",
+      "issues": []
+    }
+  ]
+}

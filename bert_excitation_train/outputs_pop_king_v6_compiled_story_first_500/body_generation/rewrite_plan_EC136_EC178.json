@@ -1,0 +1,1730 @@
+{
+  "version": "rewrite_plan_v1",
+  "range": [
+    136,
+    178
+  ],
+  "identity_source": "CHARACTER_BIBLE",
+  "items": [
+    {
+      "cluster_id": "EC136",
+      "chapter_span": [
+        271,
+        272
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "来源与授权链",
+      "irreplaceable_progress_point": "EC136只推进一个问题：从BA-83-11来源箱追到复制申请的经手人，只确认责任链入口。",
+      "structure_signature": {
+        "conflict_type": "来源与授权链",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "来源箱交接单",
+        "authority": "档案主管",
+        "reward": "可复核来源链",
+        "relationship_change": "麦珂把记忆转成问题而不替艾琳作判断"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "发现疑点",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "11380e1d7cc12bc98a3bc815712e31dbff2c941b29eee96a664740bcc5c9b4b7"
+    },
+    {
+      "cluster_id": "EC137",
+      "chapter_span": [
+        273,
+        274
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "来源与授权链",
+      "irreplaceable_progress_point": "EC137只推进一个问题：核对CR-41申请人的部门权限，确认缺失签名属于哪一环。",
+      "structure_signature": {
+        "conflict_type": "来源与授权链",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "申请页与访客簿",
+        "authority": "档案主管",
+        "reward": "暂停使用摘录",
+        "relationship_change": "艾琳坚持技术意见不替代授权意见"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "获得复核",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "0960d3018962c19787e3026e40078c6c71387a23574f126435fde8e540de10e3"
+    },
+    {
+      "cluster_id": "EC138",
+      "chapter_span": [
+        275,
+        276
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "合同适用范围",
+      "irreplaceable_progress_point": "EC138只推进一个问题：把内部核对与对外宣传拆成两种用途，拒绝自动扩权。",
+      "structure_signature": {
+        "conflict_type": "合同适用范围",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "十日限期补充条款",
+        "authority": "合同管理员",
+        "reward": "收窄使用范围",
+        "relationship_change": "黛安娜第一次拒绝用合作机会换签字"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "临时保护",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "0e43632f0e393605c382f7a964c1a4443fb255b0d433ad53e32775d55c9475b7"
+    },
+    {
+      "cluster_id": "EC139",
+      "chapter_span": [
+        277,
+        278
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "合同适用范围",
+      "irreplaceable_progress_point": "EC139只推进一个问题：核对地域和副本数量，迫使合作方补写交付对象。",
+      "structure_signature": {
+        "conflict_type": "合同适用范围",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "授权范围表",
+        "authority": "合同管理员",
+        "reward": "获得重新申请入口",
+        "relationship_change": "麦珂把决定权留给黛安娜"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "机构处理",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "3d7d333cd5c6dbc78534028d2696cf5f865b083794729c78c9028b2c1ed11c45"
+    },
+    {
+      "cluster_id": "EC140",
+      "chapter_span": [
+        279,
+        280
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "财务对账",
+      "irreplaceable_progress_point": "EC140只推进一个问题：将预付款、退款和分成回执按日期排成三条账线，找出待核差额。",
+      "structure_signature": {
+        "conflict_type": "财务对账",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "三栏财务对账表",
+        "authority": "财务复核员",
+        "reward": "获得复核编号",
+        "relationship_change": "苏菲亚拒绝替未核数字背书"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "最终裁决",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "6181a2588c5f305b241dc0fe960bda0fac95264d89a8d3c6e3a6ec0b94b85eae"
+    },
+    {
+      "cluster_id": "EC141",
+      "chapter_span": [
+        281,
+        282
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "财务对账",
+      "irreplaceable_progress_point": "EC141只推进一个问题：把差额追到一笔重复入账而非直接指向贪污，保留调查边界。",
+      "structure_signature": {
+        "conflict_type": "财务对账",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "银行回执联",
+        "authority": "财务主管",
+        "reward": "临时保留款项",
+        "relationship_change": "麦珂承受错过采购窗口的代价"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "发现疑点",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "e21a839235596231bafa3e53e2af05cc8776d181137ddf5e6ace6c48ea769fc6"
+    },
+    {
+      "cluster_id": "EC142",
+      "chapter_span": [
+        283,
+        284
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "档案访问权限",
+      "irreplaceable_progress_point": "EC142只推进一个问题：追查登记簿缺号前后的借阅人，只获得一次受限开柜许可。",
+      "structure_signature": {
+        "conflict_type": "档案访问权限",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "借阅登记簿",
+        "authority": "档案馆主管",
+        "reward": "受限复核权限",
+        "relationship_change": "瑟琳娜要求所有取物动作留在白线内"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "获得复核",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "147e0a3f255e08d541d01953868b76257574c188bda757219e07541529013c7d"
+    },
+    {
+      "cluster_id": "EC143",
+      "chapter_span": [
+        285,
+        286
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "档案访问权限",
+      "irreplaceable_progress_point": "EC143只推进一个问题：核对钥匙交接与门禁时间，确认记录矛盾但不宣布窃取。",
+      "structure_signature": {
+        "conflict_type": "档案访问权限",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "钥匙交接卡",
+        "authority": "公证员",
+        "reward": "延长保管期",
+        "relationship_change": "艾琳接受不能立即复制原件的限制"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "临时保护",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "09b08fbc8d84cd841fe6115fe241a748791ab5d558cc0c281f9c289f8969855f"
+    },
+    {
+      "cluster_id": "EC144",
+      "chapter_span": [
+        287,
+        288
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "媒体纠错",
+      "irreplaceable_progress_point": "EC144只推进一个问题：处理提前流出的剪裁新闻，只公开可核对的时间线。",
+      "structure_signature": {
+        "conflict_type": "媒体纠错",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "更正说明草案",
+        "authority": "报社编辑",
+        "reward": "获得刊登更正机会",
+        "relationship_change": "麦珂拒绝用私密材料换头版"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "机构处理",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "d9f6ed9d61bc0404404480042bd7ca185a906e77b766565f1e34b282b190cba3"
+    },
+    {
+      "cluster_id": "EC145",
+      "chapter_span": [
+        289,
+        290
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "媒体纠错",
+      "irreplaceable_progress_point": "EC145只推进一个问题：要求媒体同时刊出删节说明与完整来源，不把纠错写成定罪。",
+      "structure_signature": {
+        "conflict_type": "媒体纠错",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "版面校样",
+        "authority": "报社编辑",
+        "reward": "恢复叙事平衡",
+        "relationship_change": "黛安娜承担合作方撤稿的关系成本"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "最终裁决",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "06f1679493b3a7b5771ac6e4a2bf5707f01cd6f9c0b4f3876f3ee5df5169b766"
+    },
+    {
+      "cluster_id": "EC146",
+      "chapter_span": [
+        291,
+        292
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "家庭/伴侣关系选择",
+      "irreplaceable_progress_point": "EC146只推进一个问题：让苏菲亚在继续巡演和照护家人之间明确自己的期限。",
+      "structure_signature": {
+        "conflict_type": "家庭/伴侣关系选择",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "行程选择书面确认",
+        "authority": "苏菲亚本人",
+        "reward": "形成有边界承诺",
+        "relationship_change": "麦珂放弃替她安排路线"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "发现疑点",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "4233b93740c5c30eb5b081f3633184292de8429b0323c9b8e0af55e43ad8ee31"
+    },
+    {
+      "cluster_id": "EC147",
+      "chapter_span": [
+        293,
+        294
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "家庭/伴侣关系选择",
+      "irreplaceable_progress_point": "EC147只推进一个问题：把黛安娜的职业决定从团队保护中分离出来，接受她的拒绝。",
+      "structure_signature": {
+        "conflict_type": "家庭/伴侣关系选择",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "关系协商备忘",
+        "authority": "当事人共同签字",
+        "reward": "保住关系协商权",
+        "relationship_change": "麦珂承受控制欲被指出的代价"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "获得复核",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "f992b6b3782d6b23c162c6609aac2687dbaea5c58805427736b506591d674fb8"
+    },
+    {
+      "cluster_id": "EC148",
+      "chapter_span": [
+        295,
+        296
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "演出与物流",
+      "irreplaceable_progress_point": "EC148只推进一个问题：解决母带运输与彩排先后冲突，保住彩排但推迟宣传。",
+      "structure_signature": {
+        "conflict_type": "演出与物流",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "运输交接单",
+        "authority": "场馆调度员",
+        "reward": "保住彩排窗口",
+        "relationship_change": "艾琳拒绝替物流方隐瞒延误"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "临时保护",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "48c9970c58c2bce3675790838cc4126f751c3c23826669162661127e1a77d18c"
+    },
+    {
+      "cluster_id": "EC149",
+      "chapter_span": [
+        297,
+        298
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "演出与物流",
+      "irreplaceable_progress_point": "EC149只推进一个问题：在设备缺件时改用租赁方案，明确租赁方不取得作品权。",
+      "structure_signature": {
+        "conflict_type": "演出与物流",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "设备租赁清单",
+        "authority": "场馆调度员",
+        "reward": "完成有限演出",
+        "relationship_change": "麦珂接受成本上涨而不扩大授权"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "机构处理",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "468c8252c25dfeb291ec126585e96f88a82fd10428e6bd183902e4a09bfcd15b"
+    },
+    {
+      "cluster_id": "EC150",
+      "chapter_span": [
+        299,
+        300
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "教育与职业决定",
+      "irreplaceable_progress_point": "EC150只推进一个问题：比较学院课程与工作室训练的考核条件，获得一次试听而非职位。",
+      "structure_signature": {
+        "conflict_type": "教育与职业决定",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "课程试听通知",
+        "authority": "学院教务员",
+        "reward": "阶段性选择权",
+        "relationship_change": "艾琳要求麦珂不要替她报名"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "最终裁决",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "f8532098bcead1d39230f4cddbfe80677936fb1f6d9e6a276cfc59be8c37921f"
+    },
+    {
+      "cluster_id": "EC151",
+      "chapter_span": [
+        301,
+        302
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "教育与职业决定",
+      "irreplaceable_progress_point": "EC151只推进一个问题：核对评审标准是否适用于外来学员，争取书面说明。",
+      "structure_signature": {
+        "conflict_type": "教育与职业决定",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "评审规则摘录",
+        "authority": "学院委员会",
+        "reward": "获得规则复核",
+        "relationship_change": "瑟琳娜拒绝用人情换评分"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "发现疑点",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "a8455d3f4cf5c74f537f5112734613b2440c7a109e4271a9ae6e0e65f0fa797f"
+    },
+    {
+      "cluster_id": "EC152",
+      "chapter_span": [
+        303,
+        304
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "来源与授权链",
+      "irreplaceable_progress_point": "EC152只推进一个问题：沿着一份翻拍件追到原始寄送人，确认翻拍链而非内容真伪。",
+      "structure_signature": {
+        "conflict_type": "来源与授权链",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "寄送回执",
+        "authority": "邮务登记员",
+        "reward": "锁定来源节点",
+        "relationship_change": "麦珂让苏菲亚选择是否公开姓名"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "获得复核",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "d32e62ad8638728e0d481f4fcfd7a66fb672dba42b91367403e731d86b8cec2c"
+    },
+    {
+      "cluster_id": "EC153",
+      "chapter_span": [
+        305,
+        306
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "合同适用范围",
+      "irreplaceable_progress_point": "EC153只推进一个问题：处理节目片段被用于培训的争议，划清内部员工与外部学员。",
+      "structure_signature": {
+        "conflict_type": "合同适用范围",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "培训使用申请",
+        "authority": "节目法务",
+        "reward": "暂停外部使用",
+        "relationship_change": "黛安娜拒绝签署模糊免责条款"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "临时保护",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "9a3f39694afaa0a6d57c67063fe3bfa5a5c33cc7408a87721dc9d6e22dbf4a88"
+    },
+    {
+      "cluster_id": "EC154",
+      "chapter_span": [
+        307,
+        308
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "财务对账",
+      "irreplaceable_progress_point": "EC154只推进一个问题：将现金票据与银行存款逐笔匹配，发现一笔尚未入账的合法延迟。",
+      "structure_signature": {
+        "conflict_type": "财务对账",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "存款回单",
+        "authority": "财务复核员",
+        "reward": "恢复付款排期",
+        "relationship_change": "苏菲亚坚持不提前支取"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "机构处理",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "daf786a98ebe39f32ab1f4a1a859b2daadc43d3a03dcf20d1822da285733e0b5"
+    },
+    {
+      "cluster_id": "EC155",
+      "chapter_span": [
+        309,
+        310
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "档案访问权限",
+      "irreplaceable_progress_point": "EC155只推进一个问题：处理夜间调阅申请，限定可看页码而不是开放整柜。",
+      "structure_signature": {
+        "conflict_type": "档案访问权限",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "夜间调阅单",
+        "authority": "档案馆主管",
+        "reward": "获得页码级权限",
+        "relationship_change": "瑟琳娜承担加班和保管责任"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "最终裁决",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "5363fb4d0f81f3845137ed07bec6e2e2ceb7909a433c0b7ac24bc71471ea9d99"
+    },
+    {
+      "cluster_id": "EC156",
+      "chapter_span": [
+        311,
+        312
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "媒体纠错",
+      "irreplaceable_progress_point": "EC156只推进一个问题：面对广播摘要被删去条件句，要求主持人补读限定语。",
+      "structure_signature": {
+        "conflict_type": "媒体纠错",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "节目更正口播稿",
+        "authority": "电台负责人",
+        "reward": "获得补读机会",
+        "relationship_change": "艾琳承认技术记录不能决定编辑立场"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "发现疑点",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "93423591ea51845b8d22cde470f671b648abe89f21e1bff475ad753dfb677987"
+    },
+    {
+      "cluster_id": "EC157",
+      "chapter_span": [
+        313,
+        314
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "家庭/伴侣关系选择",
+      "irreplaceable_progress_point": "EC157只推进一个问题：处理同住安排与巡演计划冲突，形成可撤回的短期约定。",
+      "structure_signature": {
+        "conflict_type": "家庭/伴侣关系选择",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "生活安排备忘",
+        "authority": "当事人共同确认",
+        "reward": "保住协商空间",
+        "relationship_change": "麦珂接受对方保留退出权"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "获得复核",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "ae23f001ecdf7b23438e8bc5d514394d7cce072bb100d4301ae46ae17e32441e"
+    },
+    {
+      "cluster_id": "EC158",
+      "chapter_span": [
+        315,
+        316
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "演出与物流",
+      "irreplaceable_progress_point": "EC158只推进一个问题：暴雨导致货车改道，先保管关键设备而非追求全盘按时到场。",
+      "structure_signature": {
+        "conflict_type": "演出与物流",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "改道通知与保管收据",
+        "authority": "场馆调度员",
+        "reward": "保护关键设备",
+        "relationship_change": "艾琳承担取消一场彩排的后果"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "临时保护",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "2085aac9a1e88863baab7f4a322e71dbc91d1ce1d60f24e2b682eac06ac6642e"
+    },
+    {
+      "cluster_id": "EC159",
+      "chapter_span": [
+        317,
+        318
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "教育与职业决定",
+      "irreplaceable_progress_point": "EC159只推进一个问题：面对提前录取与完成现有课程的冲突，取得延期答复。",
+      "structure_signature": {
+        "conflict_type": "教育与职业决定",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "延期申请回执",
+        "authority": "学院教务员",
+        "reward": "获得选择期限",
+        "relationship_change": "麦珂不替黛安娜接受录取"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "机构处理",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "3592fe6f582261f89ae4adabfaec1b382c219d0f7f3871d5924359461b372b36"
+    },
+    {
+      "cluster_id": "EC160",
+      "chapter_span": [
+        319,
+        320
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "来源与授权链",
+      "irreplaceable_progress_point": "EC160只推进一个问题：核查一份口头授权的见证人，确认只能作为线索不能代替书面授权。",
+      "structure_signature": {
+        "conflict_type": "来源与授权链",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "见证人联系记录",
+        "authority": "公证员",
+        "reward": "获得补证机会",
+        "relationship_change": "苏菲亚拒绝把回忆写成证词"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "最终裁决",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "f8a5ae4404990aedc944d64ea7dfca21be18ddb565d2bcc907fe3afaa07e6e1c"
+    },
+    {
+      "cluster_id": "EC161",
+      "chapter_span": [
+        321,
+        322
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "合同适用范围",
+      "irreplaceable_progress_point": "EC161只推进一个问题：把海外播出与本地播出分成两个授权区域，暂缓海外一项。",
+      "structure_signature": {
+        "conflict_type": "合同适用范围",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "地域附录",
+        "authority": "合同管理员",
+        "reward": "暂缓越界使用",
+        "relationship_change": "黛安娜接受海外窗口损失"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "发现疑点",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "d35e66a9da1b0acb7ee1d5d1bf44f094f82f5d4327691397779810c56ff19793"
+    },
+    {
+      "cluster_id": "EC162",
+      "chapter_span": [
+        323,
+        324
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "财务对账",
+      "irreplaceable_progress_point": "EC162只推进一个问题：核对版税分成与制作成本的归类，形成双方都能复查的差额表。",
+      "structure_signature": {
+        "conflict_type": "财务对账",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "版税结算单",
+        "authority": "财务主管",
+        "reward": "获得共同复核表",
+        "relationship_change": "麦珂允许艾琳质疑预算"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "获得复核",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "8511b47652434cc32123c2c4d522be6f5597c10e1468686dab9db7c6058f73c4"
+    },
+    {
+      "cluster_id": "EC163",
+      "chapter_span": [
+        325,
+        326
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "档案访问权限",
+      "irreplaceable_progress_point": "EC163只推进一个问题：追查一枚借阅章的归还位置，只恢复登记链不恢复全部权限。",
+      "structure_signature": {
+        "conflict_type": "档案访问权限",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "借阅章保管记录",
+        "authority": "档案馆主管",
+        "reward": "恢复登记链",
+        "relationship_change": "瑟琳娜放弃直接拿走原件"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "临时保护",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "509beaa4c9dcc7d29c658770e0f49dfec81ed82363769d530f586105162c5ba3"
+    },
+    {
+      "cluster_id": "EC164",
+      "chapter_span": [
+        327,
+        328
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "媒体纠错",
+      "irreplaceable_progress_point": "EC164只推进一个问题：处理采访标题夸大结论，要求编辑区分疑点、复核和裁决。",
+      "structure_signature": {
+        "conflict_type": "媒体纠错",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "标题修订单",
+        "authority": "报社编辑",
+        "reward": "修正结论层级",
+        "relationship_change": "麦珂接受报道热度下降"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "机构处理",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "c56846445499f785be5055a45df1939cfeaf03851c20c31110d41397cd01f1cd"
+    },
+    {
+      "cluster_id": "EC165",
+      "chapter_span": [
+        329,
+        330
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "家庭/伴侣关系选择",
+      "irreplaceable_progress_point": "EC165只推进一个问题：让关系双方选择是否共同面对公开压力，结果只确认支持方式。",
+      "structure_signature": {
+        "conflict_type": "家庭/伴侣关系选择",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "公开回应分工表",
+        "authority": "当事人共同确认",
+        "reward": "明确支持边界",
+        "relationship_change": "苏菲亚拒绝被包装成受保护者"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "最终裁决",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "5c5a0e27cff9f1aeaab8953399caeb0d77771d822cbfdd0236d81b4ef7f78ef7"
+    },
+    {
+      "cluster_id": "EC166",
+      "chapter_span": [
+        331,
+        332
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "演出与物流",
+      "irreplaceable_progress_point": "EC166只推进一个问题：处理场地临时换台，保住观众安全却缩短演出时长。",
+      "structure_signature": {
+        "conflict_type": "演出与物流",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "换台确认单",
+        "authority": "场馆负责人",
+        "reward": "完成受限演出",
+        "relationship_change": "艾琳接受少唱一首的现实损失"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "发现疑点",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "2505c7709eff125fa3644d9bf11c4db04a3f676086eb9e1b20662b7dce65507f"
+    },
+    {
+      "cluster_id": "EC167",
+      "chapter_span": [
+        333,
+        334
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "教育与职业决定",
+      "irreplaceable_progress_point": "EC167只推进一个问题：核对职业资格的实习时数，取得补交材料期限而非直接认证。",
+      "structure_signature": {
+        "conflict_type": "教育与职业决定",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "实习时数清单",
+        "authority": "学院委员会",
+        "reward": "获得补交期限",
+        "relationship_change": "瑟琳娜不接受他人代签"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "获得复核",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "9b1c3f517788804371110b587d987f95c90764c6cb5f6688144696515bb4e32d"
+    },
+    {
+      "cluster_id": "EC168",
+      "chapter_span": [
+        335,
+        336
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "来源与授权链",
+      "irreplaceable_progress_point": "EC168只推进一个问题：把匿名投递拆成邮戳、接收人和转交人三段，只确认可追踪路径。",
+      "structure_signature": {
+        "conflict_type": "来源与授权链",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "匿名投递登记",
+        "authority": "档案主管",
+        "reward": "获得追踪线索",
+        "relationship_change": "麦珂拒绝公开无关投递人的姓名"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "临时保护",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "303d93dcd1f732039802ef60d7fedc947716fabd52e146339522be4d8392e13f"
+    },
+    {
+      "cluster_id": "EC169",
+      "chapter_span": [
+        337,
+        338
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "合同适用范围",
+      "irreplaceable_progress_point": "EC169只推进一个问题：处理样片、预告片和完整版的不同授权，暂时冻结预告片使用。",
+      "structure_signature": {
+        "conflict_type": "合同适用范围",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "样片用途清单",
+        "authority": "节目法务",
+        "reward": "临时冻结一项用途",
+        "relationship_change": "艾琳保住技术否决边界"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "机构处理",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "b946364e5ebddfe1b56ce72b1a9716e92a58142525d1c6e4a8a0c2ef0878271f"
+    },
+    {
+      "cluster_id": "EC170",
+      "chapter_span": [
+        339,
+        340
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "财务对账",
+      "irreplaceable_progress_point": "EC170只推进一个问题：查清一笔退票款被记入宣传费用的原因，要求补做分类说明。",
+      "structure_signature": {
+        "conflict_type": "财务对账",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "退票分类表",
+        "authority": "财务复核员",
+        "reward": "获得分类更正",
+        "relationship_change": "黛安娜承担延迟发薪的压力"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "最终裁决",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "9583fc40342e4803999a58d64a8745127318f85e78067a44cc27a2f02325507d"
+    },
+    {
+      "cluster_id": "EC171",
+      "chapter_span": [
+        341,
+        342
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "档案访问权限",
+      "irreplaceable_progress_point": "EC171只推进一个问题：处理外部顾问的调阅请求，限定只能看目录不能看原件。",
+      "structure_signature": {
+        "conflict_type": "档案访问权限",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "顾问阅览许可",
+        "authority": "档案馆主管",
+        "reward": "目录级复核",
+        "relationship_change": "麦珂不把盟友信任当作权限"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "发现疑点",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "44f0ae4f1def52e5712a7a3742c2d524a43c9440c500e8d0889816831c212d43"
+    },
+    {
+      "cluster_id": "EC172",
+      "chapter_span": [
+        343,
+        344
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "媒体纠错",
+      "irreplaceable_progress_point": "EC172只推进一个问题：让现场录音与文字报道并列刊出，补上无法确认的部分。",
+      "structure_signature": {
+        "conflict_type": "媒体纠错",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "并列证据版面",
+        "authority": "报社编辑",
+        "reward": "获得限定刊载",
+        "relationship_change": "艾琳接受公众仍可能误读"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "获得复核",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "d7ae34e43a3e331a6895f929644b741a163485c10046fb767c81dc4581fc0f0a"
+    },
+    {
+      "cluster_id": "EC173",
+      "chapter_span": [
+        345,
+        346
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "家庭/伴侣关系选择",
+      "irreplaceable_progress_point": "EC173只推进一个问题：处理职业迁移决定，形成三个月后复谈的约定而非永久承诺。",
+      "structure_signature": {
+        "conflict_type": "家庭/伴侣关系选择",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "迁移复谈备忘",
+        "authority": "当事人共同确认",
+        "reward": "保留复谈权",
+        "relationship_change": "麦珂承受关系不确定性"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "临时保护",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "d82be2be4c696040f1ee2dd2d9a265c8deeed0138146f9179bdbd590ed81ef5f"
+    },
+    {
+      "cluster_id": "EC174",
+      "chapter_span": [
+        347,
+        348
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "演出与物流",
+      "irreplaceable_progress_point": "EC174只推进一个问题：在运输保险条款不足时减少携带物，确保核心设备可追责。",
+      "structure_signature": {
+        "conflict_type": "演出与物流",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "运输保险附表",
+        "authority": "保险经办人",
+        "reward": "保住核心设备",
+        "relationship_change": "艾琳拒绝用个人担保填缺口"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "机构处理",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "aaeeb4edf6b83f67d61a14368ec74b6256a4b16a03a354310878ec27d5498d92"
+    },
+    {
+      "cluster_id": "EC175",
+      "chapter_span": [
+        349,
+        350
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "教育与职业决定",
+      "irreplaceable_progress_point": "EC175只推进一个问题：比较长期合同与阶段课程的退出条件，选择可复评的短期路径。",
+      "structure_signature": {
+        "conflict_type": "教育与职业决定",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "阶段评估协议",
+        "authority": "学院教务员",
+        "reward": "获得阶段性路径",
+        "relationship_change": "黛安娜保留改选权"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "最终裁决",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "f3b31f5c0f2d52b389050b139e02b32e3bcf275141efcbb9f1d39f59071a7268"
+    },
+    {
+      "cluster_id": "EC176",
+      "chapter_span": [
+        351,
+        352
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "来源与授权链",
+      "irreplaceable_progress_point": "EC176只推进一个问题：收束三份互相转引的副本，确认原始来源仍需另行补证。",
+      "structure_signature": {
+        "conflict_type": "来源与授权链",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "副本来源对照表",
+        "authority": "公证员",
+        "reward": "完成来源复核",
+        "relationship_change": "麦珂不把阶段结果宣布成最终裁决"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "发现疑点",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "d4de6d2b70c6b2dcc2c30a6e53579c2add2ab08dd6575a445b75aeac5cefb6ca"
+    },
+    {
+      "cluster_id": "EC177",
+      "chapter_span": [
+        353,
+        354
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "合同适用范围",
+      "irreplaceable_progress_point": "EC177只推进一个问题：把前期许可的到期日写入交接单，阻止沉默续期。",
+      "structure_signature": {
+        "conflict_type": "合同适用范围",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "到期交接单",
+        "authority": "合同管理员",
+        "reward": "终止自动续期",
+        "relationship_change": "瑟琳娜选择自己保管作品副本"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "获得复核",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "8428a1b6287c85bedf1aad79aa608d0f42c2da2b023fb149f7954c911550bee5"
+    },
+    {
+      "cluster_id": "EC178",
+      "chapter_span": [
+        355,
+        356
+      ],
+      "status": "synopsis_rewrite_pending",
+      "identity_source": "CHARACTER_BIBLE",
+      "canonical_characters": [
+        "麦珂·杰森",
+        "黛安娜·罗文",
+        "艾琳·沃特曼",
+        "瑟琳娜·凯德",
+        "维克多·兰斯",
+        "苏菲亚·罗德里格斯",
+        "卡尔·霍尔特",
+        "昆廷·琼斯"
+      ],
+      "conflict_domain": "财务对账",
+      "irreplaceable_progress_point": "EC178只推进一个问题：完成本阶段差额的责任分栏，允许未决项进入下一阶段而不假装结清。",
+      "structure_signature": {
+        "conflict_type": "财务对账",
+        "attack_method": "对方要求扩大解释或提前下结论",
+        "counter_method": "拆分范围并保留可复核记录",
+        "key_artifact": "未决差额清单",
+        "authority": "财务主管",
+        "reward": "获得分栏结算",
+        "relationship_change": "团队共同承担等待成本"
+      },
+      "chapter_1_function": "提出冲突并取得可复核的小赢；不宣布最终裁决。",
+      "chapter_2_function": "处理本簇代价并推进一层程序结果；不同时完成公开曝光、永久封杀、资产全保和职位晋升。",
+      "settlement_layer": "临时保护",
+      "forbidden_reuse": [
+        "旧票据检测",
+        "墨水/紫外线定年",
+        "旧录音真假核验",
+        "公开听证作为唯一解法"
+      ],
+      "old_synopsis_sha256": "f488cd28143b01831a49de53fa60a13fae6003584546523a3abdb405598930ce"
+    }
+  ]
+}

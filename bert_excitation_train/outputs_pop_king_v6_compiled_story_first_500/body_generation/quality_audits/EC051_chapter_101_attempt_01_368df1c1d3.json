@@ -1,0 +1,120 @@
+{
+  "cluster_id": "EC051",
+  "chapter_id": 101,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "368df1c1d3112e9115b5d0bf90da4f91f28158ae181b841736d387c962a01313",
+  "base_prompt_sha256": "368df1c1d3112e9115b5d0bf90da4f91f28158ae181b841736d387c962a01313",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "b2924831b1aa50f4b71e147266696054c603c07bd3c377c9669fd27491f161d1",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 16.705,
+    "usage": {
+      "prompt_tokens": 6482,
+      "completion_tokens": 1386,
+      "total_tokens": 7868,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 51,
+    "through_chapter": 102,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "0b10ab35c27e46bac9d3adba2bdaa5c4cb4ab341d623bff2599f48e1c86752d8",
+    "chapter_card_prefix_sha256": "c10ba2c18299041a932fca3188ce7aec393cc0ba4b2472996b2de1d3098ef7dd",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "91003de798b42cace021628a3f0e531a76320d39370b9af3be486b48e704450d"
+  },
+  "cluster_sha256": "2c58f253819821fa3e1f2c64c7650dc8f42a98043432d86ca1b1d5583abbceb1",
+  "card_sha256": "6e233ab4fef3180d54473cd7b6f6922cabe64f093a448b03bff288c73a2e4123",
+  "chapter_audit": {
+    "han_chars": 1929,
+    "total_chars": 2248,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "麦珂指出3月14日事故日期",
+        "exact": false,
+        "bigram_coverage": 0.417,
+        "matched": false
+      },
+      {
+        "anchor": "昆廷展示模拟失真样张",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "玛莎宣读气象记录",
+        "exact": false,
+        "bigram_coverage": 0.571,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0698,
+    "scene_evidence": [
+      {
+        "location": "银湾市河湾镇老宅·地下录音室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_101_BASE_NEGATIVE",
+        "display_name": "《夏夜协议》原始底片（铜柜封存版）",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      },
+      {
+        "artifact_id": "ART_101_COMPARISON_STRIP",
+        "display_name": "昆廷制作的模拟失真对照样张",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "汉字数1929，高于1900",
+      "正文没有兑现章卡关键事实“麦珂指出3月14日事故日期”",
+      "正文没有写出本章正式创建的关键对象“《夏夜协议》原始底片（铜柜封存版）”",
+      "正文没有写出本章正式创建的关键对象“昆廷制作的模拟失真对照样张”"
+    ],
+    "all_validator_failures": [
+      "汉字数1929，高于1900",
+      "正文没有兑现章卡关键事实“麦珂指出3月14日事故日期”",
+      "正文没有写出本章正式创建的关键对象“《夏夜协议》原始底片（铜柜封存版）”",
+      "正文没有写出本章正式创建的关键对象“昆廷制作的模拟失真对照样张”"
+    ]
+  },
+  "failures": [
+    "第101章：汉字数1929，高于1900"
+  ],
+  "accepted": false,
+  "joint_rejected": true,
+  "joint_failures": [
+    "第101章：汉字数1929，高于1900"
+  ]
+}

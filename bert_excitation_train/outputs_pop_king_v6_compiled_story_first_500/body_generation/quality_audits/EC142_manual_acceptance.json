@@ -1,0 +1,429 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC142",
+  "chapter_ids": [
+    283,
+    284
+  ],
+  "accepted": false,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "283": {
+        "han_chars": 1033,
+        "total_chars": 1164,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 3,
+        "must_include_total": 3,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "光谱仪扫描细节",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "哈罗德交出签字簿的动作",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "黛安娜的专业分析",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 1,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.075,
+        "scene_evidence": [
+          {
+            "location": "哈罗德私人寓所",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_283_SIGNATURE_VERIFICATION_LOG",
+            "display_name": "《1983年原始签字簿复印件及光谱比对报告》",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      },
+      "284": {
+        "han_chars": 1098,
+        "total_chars": 1394,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 0,
+        "must_include_total": 3,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "碎纸机运作的声音描写",
+            "exact": false,
+            "bigram_coverage": 0.778,
+            "matched": true
+          },
+          {
+            "anchor": "斯特林得意的神态",
+            "exact": false,
+            "bigram_coverage": 0.571,
+            "matched": true
+          },
+          {
+            "anchor": "录像播放时的全场震惊",
+            "exact": false,
+            "bigram_coverage": 0.778,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "physical_verification_status__extension_EC142",
+            "target": "evidence_of_destruction_attempted",
+            "evidence_terms": [
+              "ART_283_SIGNATURE_VERIFICATION_LOG",
+              "与录像内容交叉验",
+              "锁死欺诈事实"
+            ],
+            "hit_terms": [],
+            "matched": true
+          },
+          {
+            "state_key": "debt_transfer_status__EC142",
+            "target": "asset_integrity_secured",
+            "evidence_terms": [
+              "ART_284_DESTROYED_EVIDENCE_VIDEO",
+              "斯特林销毁证据全",
+              "过程录像"
+            ],
+            "hit_terms": [
+              "斯特林销毁证据全",
+              "过程录像"
+            ],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.14,
+        "scene_evidence": [
+          {
+            "location": "奥瑞恩集团法务部办公室",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_284_DESTROYED_EVIDENCE_VIDEO",
+            "display_name": "《斯特林销毁证据全过程录像》",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      }
+    },
+    "joint": {
+      "283": {
+        "han_chars": 1033,
+        "total_chars": 1164,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 3,
+        "must_include_total": 3,
+        "failures": []
+      },
+      "284": {
+        "han_chars": 1098,
+        "total_chars": 1394,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 0,
+        "must_include_total": 3,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.0669,
+      "resolution_signatures": {
+        "first": {
+          "attack": "",
+          "counter": "签字",
+          "resolver": "监管",
+          "opponent_result": "",
+          "hero_result": "保住"
+        },
+        "second": {
+          "attack": "",
+          "counter": "签字",
+          "resolver": "记者",
+          "opponent_result": "",
+          "hero_result": ""
+        }
+      },
+      "settlement_action_terms": [],
+      "rebirth_information_gap_markers": [
+        "上一世"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 263,
+          "semantic_overlap": 0.0413
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 264,
+          "semantic_overlap": 0.0362
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 265,
+          "semantic_overlap": 0.0395
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 266,
+          "semantic_overlap": 0.0373
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 267,
+          "semantic_overlap": 0.0393
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 268,
+          "semantic_overlap": 0.0348
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 269,
+          "semantic_overlap": 0.0426
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 270,
+          "semantic_overlap": 0.0421
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 271,
+          "semantic_overlap": 0.0754
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 272,
+          "semantic_overlap": 0.0661
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 273,
+          "semantic_overlap": 0.0613
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 274,
+          "semantic_overlap": 0.0528
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 275,
+          "semantic_overlap": 0.0664
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 276,
+          "semantic_overlap": 0.0543
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 277,
+          "semantic_overlap": 0.0637
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 278,
+          "semantic_overlap": 0.0596
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 279,
+          "semantic_overlap": 0.0652
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 280,
+          "semantic_overlap": 0.0549
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 281,
+          "semantic_overlap": 0.0978
+        },
+        {
+          "chapter_id": 283,
+          "prior_chapter_id": 282,
+          "semantic_overlap": 0.0802
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 263,
+          "semantic_overlap": 0.0371
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 264,
+          "semantic_overlap": 0.0408
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 265,
+          "semantic_overlap": 0.0438
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 266,
+          "semantic_overlap": 0.0405
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 267,
+          "semantic_overlap": 0.0412
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 268,
+          "semantic_overlap": 0.037
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 269,
+          "semantic_overlap": 0.0376
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 270,
+          "semantic_overlap": 0.0388
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 271,
+          "semantic_overlap": 0.0544
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 272,
+          "semantic_overlap": 0.0554
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 273,
+          "semantic_overlap": 0.0528
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 274,
+          "semantic_overlap": 0.0708
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 275,
+          "semantic_overlap": 0.057
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 276,
+          "semantic_overlap": 0.0916
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 277,
+          "semantic_overlap": 0.0598
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 278,
+          "semantic_overlap": 0.0927
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 279,
+          "semantic_overlap": 0.049
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 280,
+          "semantic_overlap": 0.0864
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 281,
+          "semantic_overlap": 0.0646
+        },
+        {
+          "chapter_id": 284,
+          "prior_chapter_id": 282,
+          "semantic_overlap": 0.1054
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "283": "d5127523ec30b627def8594118b987f037de6686053373cd88e9c0ad7adb1b74",
+    "284": "10c2b9bff00ba740c4c350d3c91decf401774998c2622828e95d7c263165a154"
+  },
+  "accepted_at": "2026-08-26T07:47:06.344640+00:00",
+  "status": "quarantine_rewrite_pending",
+  "authoritative": false,
+  "quarantine_reason": "EC136-EC178 architecture and synopsis repair",
+  "quarantined_at": "20260826T110312Z"
+}

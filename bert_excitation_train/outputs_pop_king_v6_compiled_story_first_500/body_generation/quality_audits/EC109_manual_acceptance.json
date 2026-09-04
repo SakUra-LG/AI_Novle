@@ -1,0 +1,480 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC109",
+  "chapter_ids": [
+    217,
+    218
+  ],
+  "accepted": true,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "217": {
+        "han_chars": 1244,
+        "total_chars": 1450,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "RV付款编号",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "空白收件栏",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "四孔实物与六孔服务单",
+            "exact": false,
+            "bigram_coverage": 0.667,
+            "matched": true
+          },
+          {
+            "anchor": "组件未离开场馆",
+            "exact": false,
+            "bigram_coverage": 0.5,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 2
+        },
+        "plan_body_semantic_overlap": 0.0897,
+        "scene_evidence": [
+          {
+            "location": "灰港光学检测站档案室",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_217_RV_SERVICE_ORDER",
+            "display_name": "RV光学检验服务单见证副本",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_217_LENS_INVENTORY",
+            "display_name": "回声谷光学组件库存核对卡",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      },
+      "218": {
+        "han_chars": 1256,
+        "total_chars": 1442,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "六孔证书与四孔实物",
+            "exact": false,
+            "bigram_coverage": 0.5,
+            "matched": true
+          },
+          {
+            "anchor": "不存在的收件铅封号",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "提交后更正压痕",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "无源结构独立检视单",
+            "exact": false,
+            "bigram_coverage": 0.875,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "rv_inspection_performance_status",
+            "target": "service_not_received_by_lab",
+            "evidence_terms": [
+              "ART_217_RV_SERVICE_ORDER",
+              "RV",
+              "光学检验服务单见",
+              "证副本",
+              "核对证书所称组件",
+              "和收件铅封"
+            ],
+            "hit_terms": [
+              "RV",
+              "光学检验服务单见",
+              "证副本"
+            ],
+            "matched": true
+          },
+          {
+            "state_key": "humidity_certificate_enforcement",
+            "target": "rejected_for_serial_mismatch",
+            "evidence_terms": [
+              "ART_218_REJECTED_HUMIDITY_CERT",
+              "错位序号湿度证书",
+              "拒收联"
+            ],
+            "hit_terms": [
+              "错位序号湿度证书",
+              "拒收联"
+            ],
+            "matched": true
+          },
+          {
+            "state_key": "independent_recalibration_status",
+            "target": "venue_requested_and_seal_recorded",
+            "evidence_terms": [
+              "ART_218_RECALIBRATION_BOOKING",
+              "光学组件原地独立",
+              "复校预约"
+            ],
+            "hit_terms": [
+              "光学组件原地独立",
+              "复校预约"
+            ],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 8
+        },
+        "plan_body_semantic_overlap": 0.0767,
+        "scene_evidence": [
+          {
+            "location": "回声谷体育馆设备验收间",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_218_REJECTED_HUMIDITY_CERT",
+            "display_name": "错位序号湿度证书拒收联",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_218_RECALIBRATION_BOOKING",
+            "display_name": "光学组件原地独立复校预约",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_218_PASSIVE_OPTICS_INSPECTION",
+            "display_name": "无源光学结构独立检视单",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      }
+    },
+    "joint": {
+      "217": {
+        "han_chars": 1244,
+        "total_chars": 1450,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "218": {
+        "han_chars": 1256,
+        "total_chars": 1442,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 2,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.0915,
+      "resolution_signatures": {
+        "first": {
+          "attack": "",
+          "counter": "条款",
+          "resolver": "",
+          "opponent_result": "",
+          "hero_result": ""
+        },
+        "second": {
+          "attack": "",
+          "counter": "备用光路",
+          "resolver": "记者",
+          "opponent_result": "失去",
+          "hero_result": "获得"
+        }
+      },
+      "settlement_action_terms": [
+        "取得",
+        "封存"
+      ],
+      "rebirth_information_gap_markers": [
+        "前世",
+        "麦珂记得"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 197,
+          "semantic_overlap": 0.0357
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 198,
+          "semantic_overlap": 0.0329
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 199,
+          "semantic_overlap": 0.0333
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 200,
+          "semantic_overlap": 0.0376
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 201,
+          "semantic_overlap": 0.0321
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 202,
+          "semantic_overlap": 0.0293
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 203,
+          "semantic_overlap": 0.0349
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 204,
+          "semantic_overlap": 0.0306
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 205,
+          "semantic_overlap": 0.0342
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 206,
+          "semantic_overlap": 0.0304
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 207,
+          "semantic_overlap": 0.0354
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 208,
+          "semantic_overlap": 0.0268
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 209,
+          "semantic_overlap": 0.0538
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 210,
+          "semantic_overlap": 0.0515
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 211,
+          "semantic_overlap": 0.0469
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 212,
+          "semantic_overlap": 0.0501
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 213,
+          "semantic_overlap": 0.0607
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 214,
+          "semantic_overlap": 0.0543
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 215,
+          "semantic_overlap": 0.0752
+        },
+        {
+          "chapter_id": 217,
+          "prior_chapter_id": 216,
+          "semantic_overlap": 0.0683
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 197,
+          "semantic_overlap": 0.0314
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 198,
+          "semantic_overlap": 0.0334
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 199,
+          "semantic_overlap": 0.0348
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 200,
+          "semantic_overlap": 0.033
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 201,
+          "semantic_overlap": 0.0386
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 202,
+          "semantic_overlap": 0.036
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 203,
+          "semantic_overlap": 0.0321
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 204,
+          "semantic_overlap": 0.0377
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 205,
+          "semantic_overlap": 0.0367
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 206,
+          "semantic_overlap": 0.036
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 207,
+          "semantic_overlap": 0.0409
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 208,
+          "semantic_overlap": 0.0288
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 209,
+          "semantic_overlap": 0.0591
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 210,
+          "semantic_overlap": 0.0529
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 211,
+          "semantic_overlap": 0.0453
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 212,
+          "semantic_overlap": 0.061
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 213,
+          "semantic_overlap": 0.0589
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 214,
+          "semantic_overlap": 0.0487
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 215,
+          "semantic_overlap": 0.0475
+        },
+        {
+          "chapter_id": 218,
+          "prior_chapter_id": 216,
+          "semantic_overlap": 0.0646
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "217": "331dd3cbcfd1d33128abbc1ee7b5c35b303bf911e014f0184928d8d8aa191c97",
+    "218": "89d446f53126dbf325b78f20f4715d45c03ae4e9c3f51e6d4ed69815bb39911f"
+  },
+  "accepted_at": "2026-08-23T12:47:56.362639+00:00"
+}

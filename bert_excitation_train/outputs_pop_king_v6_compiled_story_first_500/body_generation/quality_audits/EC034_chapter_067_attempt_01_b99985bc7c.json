@@ -1,0 +1,106 @@
+{
+  "cluster_id": "EC034",
+  "chapter_id": 67,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "b99985bc7ce65de34e6604cdfced3e03249efe54fd09354c007953271006f0cf",
+  "base_prompt_sha256": "b99985bc7ce65de34e6604cdfced3e03249efe54fd09354c007953271006f0cf",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "e9a45cfbd33ec1ade81adbc42c34827ca4522bf5e244fcff62f40aaa5fd60e0d",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 12.771,
+    "usage": {
+      "prompt_tokens": 6011,
+      "completion_tokens": 1127,
+      "total_tokens": 7138,
+      "prompt_tokens_details": {
+        "cached_tokens": 3357
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 34,
+    "through_chapter": 68,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "9e98c522acc1372857f31843b1c489fb001da2cf3da2a74904ccca7eb4064b81",
+    "chapter_card_prefix_sha256": "0553ff17c175f5c80dde12e7a7e94ec11753e260f3a70f44a292b61a6f86bba4",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "d009e3563b31c3a1e8a8b6e278b0f83787387a151842ff06bcaa42f64cbdfa87"
+  },
+  "cluster_sha256": "861dab12292e30f6d0c7861af92fa324954d14ce42d6088b5ba00cf817da22bb",
+  "card_sha256": "423c0658563ed67bb00157ba44a8491e4b1782a0025172c994395f3830751a53",
+  "chapter_audit": {
+    "han_chars": 1616,
+    "total_chars": 1862,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "哈罗德·芬奇试图施压的动作",
+        "exact": false,
+        "bigram_coverage": 0.545,
+        "matched": true
+      },
+      {
+        "anchor": "温特律师出示法律条文",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      },
+      {
+        "anchor": "麦珂表现出对药物的恐惧",
+        "exact": false,
+        "bigram_coverage": 0.6,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0396,
+    "scene_evidence": [
+      {
+        "location": "星港市唱片公司高层会议室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_HEALTH_PROTECTION_COMMITTEE",
+        "display_name": "1971.09.01 健康保护免责承诺书草案",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文夹入英文小写叙述词：oversized",
+      "正文与章卡目标/动作/回报语义覆盖仅0.040，疑似写成了另一件事",
+      "正文没有写出本章正式创建的关键对象“1971.09.01 健康保护免责承诺书草案”"
+    ],
+    "all_validator_failures": [
+      "正文夹入英文小写叙述词：oversized",
+      "正文与章卡目标/动作/回报语义覆盖仅0.040，疑似写成了另一件事",
+      "正文没有写出本章正式创建的关键对象“1971.09.01 健康保护免责承诺书草案”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

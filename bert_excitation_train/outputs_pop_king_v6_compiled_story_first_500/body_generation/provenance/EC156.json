@@ -1,0 +1,22 @@
+{
+  "version": "v14_manual_body_provenance",
+  "cluster_id": "EC156",
+  "chapter_ids": [
+    311,
+    312
+  ],
+  "accepted": false,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review_passed": true,
+  "deterministic_validation_passed": true,
+  "external_semantic_critic_status": "not_run_missing_external_model_credential",
+  "chapter_sha256": {
+    "311": "a1f214aa369366978d6ed23815067cb5ceeb161df753589a7d49eb5a5731865d",
+    "312": "42d380eb0c7a428bb5e338e92be10f8c7c36f45a5c814caceeb0c8554bc7449b"
+  },
+  "accepted_at": "2026-08-26T09:01:15.560669+00:00",
+  "status": "quarantine_rewrite_pending",
+  "authoritative": false,
+  "quarantine_reason": "EC136-EC178 architecture and synopsis repair",
+  "quarantined_at": "20260826T110312Z"
+}

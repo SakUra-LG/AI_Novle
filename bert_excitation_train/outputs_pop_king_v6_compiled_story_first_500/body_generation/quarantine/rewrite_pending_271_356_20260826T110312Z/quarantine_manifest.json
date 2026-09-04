@@ -1,0 +1,530 @@
+{
+  "version": "quarantine_manifest_v1",
+  "range": [
+    271,
+    356
+  ],
+  "status": "rewrite_pending",
+  "authoritative_formal_continuous_max": 270,
+  "formal_story_memory_and_neo4j_writes": "blocked_for_range",
+  "created_at": "20260826T110312Z",
+  "backup_dir": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\body_generation\\quarantine\\rewrite_pending_271_356_20260826T110312Z\\chapters",
+  "chapters": [
+    {
+      "chapter_id": 271,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_271.txt",
+      "status": "rewrite_pending",
+      "sha256": "87dd9f0b5fca6057e7392910b96dca2512caf699701a11850e089802cd3bd38f"
+    },
+    {
+      "chapter_id": 272,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_272.txt",
+      "status": "rewrite_pending",
+      "sha256": "d65ebb50edca1e24fc9bc7eac7957e3f2d3008e08138a5fd305d472dfa588330"
+    },
+    {
+      "chapter_id": 273,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_273.txt",
+      "status": "rewrite_pending",
+      "sha256": "5ada47c4684bcd86eeca1e17b9aa3e38c7f306d80be02db50d6e3286c429b927"
+    },
+    {
+      "chapter_id": 274,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_274.txt",
+      "status": "rewrite_pending",
+      "sha256": "cf3b0ad23ef54dbf57bd7bdd4d99e3cfe348b0f4f5cbbb2d22cbf11a2b3559c8"
+    },
+    {
+      "chapter_id": 275,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_275.txt",
+      "status": "rewrite_pending",
+      "sha256": "fcf9c3af1661e7b8910e17dd821f5a2e60673c0992a0b8b61082cd6f726a0a5e"
+    },
+    {
+      "chapter_id": 276,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_276.txt",
+      "status": "rewrite_pending",
+      "sha256": "e0ea06144a1c720bac2263611451c678226852cb58e7da5c19a1d610d5f8a14e"
+    },
+    {
+      "chapter_id": 277,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_277.txt",
+      "status": "rewrite_pending",
+      "sha256": "900044c4391b23defa834a4adbdc3337b7f4a9eb23311098daa211728dc6d2fa"
+    },
+    {
+      "chapter_id": 278,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_278.txt",
+      "status": "rewrite_pending",
+      "sha256": "034a88953d7f0c3bb3d4f528da6636bb00388faedc4bbaf20d4f4746ee344209"
+    },
+    {
+      "chapter_id": 279,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_279.txt",
+      "status": "rewrite_pending",
+      "sha256": "d9449134f859bd79094ac0de994f6781cea21ed33fdf1f09678dcbb76e561be1"
+    },
+    {
+      "chapter_id": 280,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_280.txt",
+      "status": "rewrite_pending",
+      "sha256": "e6d76002e967c6604b5ebb51aee4ebc6bca57165a090abbd6f9967ff299ef253"
+    },
+    {
+      "chapter_id": 281,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_281.txt",
+      "status": "rewrite_pending",
+      "sha256": "b4422964aa366934df172fe9b3a048f903b592cf8e9fe724d588eab1ed110c46"
+    },
+    {
+      "chapter_id": 282,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_282.txt",
+      "status": "rewrite_pending",
+      "sha256": "2184dd76461fdddb4445300069bdd184476a4475033abbd8c3ef41441a39d2b7"
+    },
+    {
+      "chapter_id": 283,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_283.txt",
+      "status": "rewrite_pending",
+      "sha256": "42bc8eab2765e153848154ca85eed396ad3ba18dc86ccd1d44395f3f60387496"
+    },
+    {
+      "chapter_id": 284,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_284.txt",
+      "status": "rewrite_pending",
+      "sha256": "9238afe42b4e4eb2c1b62d313b5b5dece83b514922b5af0be7620ba786963539"
+    },
+    {
+      "chapter_id": 285,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_285.txt",
+      "status": "rewrite_pending",
+      "sha256": "e532dd982aba703ab4f46ec4afbc679531595f2d51f82594ae0c55ffd8a797c6"
+    },
+    {
+      "chapter_id": 286,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_286.txt",
+      "status": "rewrite_pending",
+      "sha256": "81ac94c3b193b4af0bb2047204e3feb0145ddd0d6c8aed5d68e808860b1ba3b1"
+    },
+    {
+      "chapter_id": 287,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_287.txt",
+      "status": "rewrite_pending",
+      "sha256": "22b83022f70c00bcf7ba95ab740bb6f3af38015052249c4570e7bde9100bdf65"
+    },
+    {
+      "chapter_id": 288,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_288.txt",
+      "status": "rewrite_pending",
+      "sha256": "1e41bdd70065774da2c64472bfde8efdef257e1c4e146b6653105251e040a697"
+    },
+    {
+      "chapter_id": 289,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_289.txt",
+      "status": "rewrite_pending",
+      "sha256": "e33f5dc7ff2e9ceb909bb07b9eb90a21551d037ad4c6c90b3436da6b2cc63fc3"
+    },
+    {
+      "chapter_id": 290,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_290.txt",
+      "status": "rewrite_pending",
+      "sha256": "71e1b16fe8700125b461bb5ccb0ac93d85fce574f61ae8ff35aa39588182cfff"
+    },
+    {
+      "chapter_id": 291,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_291.txt",
+      "status": "rewrite_pending",
+      "sha256": "198ead5cd6ee88659105ea5f7012343d8bf891951702f0a71346bf2857d75025"
+    },
+    {
+      "chapter_id": 292,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_292.txt",
+      "status": "rewrite_pending",
+      "sha256": "b34badc6b3cdf6cd8e8eb2cbfb14abccd7926529c9ba4eea4eae99dd86ae24fb"
+    },
+    {
+      "chapter_id": 293,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_293.txt",
+      "status": "rewrite_pending",
+      "sha256": "2304fcc249abf35c883807c119f1f1f56a8adbb0aea2a4b004564dc5c8a96531"
+    },
+    {
+      "chapter_id": 294,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_294.txt",
+      "status": "rewrite_pending",
+      "sha256": "43768a4b3aa7b1c26db20790e471f14640ae0a9b6a494c4defed72f3f478575e"
+    },
+    {
+      "chapter_id": 295,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_295.txt",
+      "status": "rewrite_pending",
+      "sha256": "2dda25aa12db090aaea1a8c4f1877d72c1ace4d0e9487a7b0dd744da88b78207"
+    },
+    {
+      "chapter_id": 296,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_296.txt",
+      "status": "rewrite_pending",
+      "sha256": "1a3c66152492ce02967f68fd176883b7b2bb5e5b694e125cbe29919c360481dc"
+    },
+    {
+      "chapter_id": 297,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_297.txt",
+      "status": "rewrite_pending",
+      "sha256": "6a3c7562b3395754595ceabe53bf179d58a985eeecc795118fee2363dd709012"
+    },
+    {
+      "chapter_id": 298,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_298.txt",
+      "status": "rewrite_pending",
+      "sha256": "593c2b6b554fabd75681ae3a049b156c7870167a4f0cb35ca15037f6baba2803"
+    },
+    {
+      "chapter_id": 299,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_299.txt",
+      "status": "rewrite_pending",
+      "sha256": "55f4cd2e28eed06e70dceefc36b175d51ba3a8f60f5c33e8f956cac9224c0ef6"
+    },
+    {
+      "chapter_id": 300,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_300.txt",
+      "status": "rewrite_pending",
+      "sha256": "916d03dc8f6f0c2af43d02b7cd7285ee73d2b7e56c3d3a0d294de3943c9bbec3"
+    },
+    {
+      "chapter_id": 301,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_301.txt",
+      "status": "rewrite_pending",
+      "sha256": "eb0335a505ca77096e955f789e331c642285d7d69d07f05e8d5cd18dbfe694ac"
+    },
+    {
+      "chapter_id": 302,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_302.txt",
+      "status": "rewrite_pending",
+      "sha256": "f14d49cabfdcd85de4231c8acd1be85cf1e5519ed7d5ad71dada0c861258b3e9"
+    },
+    {
+      "chapter_id": 303,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_303.txt",
+      "status": "rewrite_pending",
+      "sha256": "28cafe5c96a992a1165fdb99ae6c00e2381d90c753088481a04ca37b4f2da69e"
+    },
+    {
+      "chapter_id": 304,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_304.txt",
+      "status": "rewrite_pending",
+      "sha256": "0cf26c88f21d088a19c649a5c2c79f91a4a6d3d7320f28470b57495ddd7768f7"
+    },
+    {
+      "chapter_id": 305,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_305.txt",
+      "status": "rewrite_pending",
+      "sha256": "4ced989995d80ffafedf5c4d39b35d9c1e2db79c914a6fcfa67058bf35f4fcc1"
+    },
+    {
+      "chapter_id": 306,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_306.txt",
+      "status": "rewrite_pending",
+      "sha256": "e091510a12aed8499682c6294a576b076db33bae57c1bced83e33a21099144d1"
+    },
+    {
+      "chapter_id": 307,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_307.txt",
+      "status": "rewrite_pending",
+      "sha256": "f207ede0803134835e1cfae0861b9de20ad8364cbaf7c26a7d048381827309b9"
+    },
+    {
+      "chapter_id": 308,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_308.txt",
+      "status": "rewrite_pending",
+      "sha256": "aacfb878a0c939653297d0630ee0c7380ae8f7dbb79e4492d1c35c1287e8d516"
+    },
+    {
+      "chapter_id": 309,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_309.txt",
+      "status": "rewrite_pending",
+      "sha256": "9671134a403ad999ce20c2f5564d2902578d66a693c02815488c446a91d1486e"
+    },
+    {
+      "chapter_id": 310,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_310.txt",
+      "status": "rewrite_pending",
+      "sha256": "9b899d7377972a85cf8a2b12af90bf9f3c8d035b5a44bd6117c5613ff349d76d"
+    },
+    {
+      "chapter_id": 311,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_311.txt",
+      "status": "rewrite_pending",
+      "sha256": "70ae2d4ea5fc99ef3610476fd776c991ff66326d4d6a600c39a4e2cddebc37d5"
+    },
+    {
+      "chapter_id": 312,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_312.txt",
+      "status": "rewrite_pending",
+      "sha256": "b6d7f4f638f1d208826835ab88354b72171ab831c4e721b18ffbf23ebde647ff"
+    },
+    {
+      "chapter_id": 313,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_313.txt",
+      "status": "rewrite_pending",
+      "sha256": "53f7526c993e9987e9ff741037637ad6e84e3717f661bf95bd47014e29fd4de2"
+    },
+    {
+      "chapter_id": 314,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_314.txt",
+      "status": "rewrite_pending",
+      "sha256": "41c37687bb73b8462a7c3afc737ee709204bb313257cb2dfc8590904626aca3d"
+    },
+    {
+      "chapter_id": 315,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_315.txt",
+      "status": "rewrite_pending",
+      "sha256": "29a23f13ffc29300a4884d51dee0f0616103afa32ebab99ced95737309c0a1ad"
+    },
+    {
+      "chapter_id": 316,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_316.txt",
+      "status": "rewrite_pending",
+      "sha256": "20947e38480e565e51e3f58ef6139b1d7d39ca4b17c4a22b7b62c057d8afbfa8"
+    },
+    {
+      "chapter_id": 317,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_317.txt",
+      "status": "rewrite_pending",
+      "sha256": "e691f7c44e05e9ec2e05a55e8ca4e757a84d5e2658004ddd643c313c3cfb3241"
+    },
+    {
+      "chapter_id": 318,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_318.txt",
+      "status": "rewrite_pending",
+      "sha256": "40c85dff4039d2ee28bdb7633e981e9a3679da8b8975928865c0f4a93259da26"
+    },
+    {
+      "chapter_id": 319,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_319.txt",
+      "status": "rewrite_pending",
+      "sha256": "9ecb19e96b89b43f57e661f7b1e45f7ebdc6153694c6b46f5abea19e4af4a171"
+    },
+    {
+      "chapter_id": 320,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_320.txt",
+      "status": "rewrite_pending",
+      "sha256": "697080b1a6b3f6aac292ff4451287458def0ffcd4b7781088ad1141a608f6ed1"
+    },
+    {
+      "chapter_id": 321,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_321.txt",
+      "status": "rewrite_pending",
+      "sha256": "650a2a33288c32600445de1a50fdfd8c4b56f98a5e9134c209b92901d8487968"
+    },
+    {
+      "chapter_id": 322,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_322.txt",
+      "status": "rewrite_pending",
+      "sha256": "7d8a30a69f454dc3a07f72a02b41d080397001fb0894fd2bd3b6d46dd6856e91"
+    },
+    {
+      "chapter_id": 323,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_323.txt",
+      "status": "rewrite_pending",
+      "sha256": "51cccc44cf424e49174d517b47f18ae9f5bfd20525ce752049a896fba1a43899"
+    },
+    {
+      "chapter_id": 324,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_324.txt",
+      "status": "rewrite_pending",
+      "sha256": "a9a765e9184f6759a0edaad4da8f5f80ce0178319d5a7206934d8ef75f39476a"
+    },
+    {
+      "chapter_id": 325,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_325.txt",
+      "status": "rewrite_pending",
+      "sha256": "812b0675bb2dccde04b7ae9f93cdc5402a85dd7892e3c215220191c20a53bdd9"
+    },
+    {
+      "chapter_id": 326,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_326.txt",
+      "status": "rewrite_pending",
+      "sha256": "21a9bb29336cd988224c7d032e9962ee7516b810bee91ec17dc12824520714f9"
+    },
+    {
+      "chapter_id": 327,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_327.txt",
+      "status": "rewrite_pending",
+      "sha256": "f447924184f43e06a77b9f96ee509e81af84bbb8ff48ce3e73a4767e8becb181"
+    },
+    {
+      "chapter_id": 328,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_328.txt",
+      "status": "rewrite_pending",
+      "sha256": "75b39863fb60c9fb592e1e27564d1ebf33ac5d9ad4a5e2f27f50998296b1d2e9"
+    },
+    {
+      "chapter_id": 329,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_329.txt",
+      "status": "rewrite_pending",
+      "sha256": "a6eddb901a01786f3617427ccfbcebfc8c0f6b52d57e5b3c2afbad59cf6b5317"
+    },
+    {
+      "chapter_id": 330,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_330.txt",
+      "status": "rewrite_pending",
+      "sha256": "d56d89bd752184b3ec5fcbaeee0a40185f620211b530ef548b9c3a9226e4982b"
+    },
+    {
+      "chapter_id": 331,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_331.txt",
+      "status": "rewrite_pending",
+      "sha256": "dc762f5378d2a9b08ed82b737e39f1669996887ef68476dbc1e2fe9a4f5a3e38"
+    },
+    {
+      "chapter_id": 332,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_332.txt",
+      "status": "rewrite_pending",
+      "sha256": "812244590eeb6d5a908fe7a9ff8ace7b592775a83b4b2ddf40216da90c8b849c"
+    },
+    {
+      "chapter_id": 333,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_333.txt",
+      "status": "rewrite_pending",
+      "sha256": "eee885d73e798dd37a4264ff848b56a506130e4eff78b20fd86734b888cf1b0b"
+    },
+    {
+      "chapter_id": 334,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_334.txt",
+      "status": "rewrite_pending",
+      "sha256": "5c853a3ece7dc0887c7a4221b53186503a942ea9dc3ef5ba9524de2603540584"
+    },
+    {
+      "chapter_id": 335,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_335.txt",
+      "status": "rewrite_pending",
+      "sha256": "c26c91d41235e7ccc9fa46e2bb0cc0ab73daae9b866456bf332d34b853d0a8c7"
+    },
+    {
+      "chapter_id": 336,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_336.txt",
+      "status": "rewrite_pending",
+      "sha256": "bce705fe0ba60f4dd25040240db06555d9e46a742a392743b89fbb73f0f43bc7"
+    },
+    {
+      "chapter_id": 337,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_337.txt",
+      "status": "rewrite_pending",
+      "sha256": "19c46a8779c1c57a17a27f23c31e2b12bc617e952a1a769fe7a96da4a6cb40b9"
+    },
+    {
+      "chapter_id": 338,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_338.txt",
+      "status": "rewrite_pending",
+      "sha256": "220a488651f382bc01a50cb775a9d91d0f157af3b2df6b6d3e5f1a87ec0ac225"
+    },
+    {
+      "chapter_id": 339,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_339.txt",
+      "status": "rewrite_pending",
+      "sha256": "78cac489add60222d1bec38892f998f8d9c2acd2b35d48422fdc2a3434291673"
+    },
+    {
+      "chapter_id": 340,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_340.txt",
+      "status": "rewrite_pending",
+      "sha256": "86714a6ce3d46de1fae49eae90ce45057b857d5c4e443f7925ad8dc1a82debaf"
+    },
+    {
+      "chapter_id": 341,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_341.txt",
+      "status": "rewrite_pending",
+      "sha256": "1380c5740ef9e1200fc56b5cba8628d1bb88c6d5bb2de721d6457895791055c3"
+    },
+    {
+      "chapter_id": 342,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_342.txt",
+      "status": "rewrite_pending",
+      "sha256": "2bb8758ce3e813ac0690ecf0179453a7a22eda60fad094776f2c3ffecb6eeb6d"
+    },
+    {
+      "chapter_id": 343,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_343.txt",
+      "status": "rewrite_pending",
+      "sha256": "12a5fcc7a7624df4d6d47b2404d6e6a1f6a20e708950e819b09ebc58ec71b66c"
+    },
+    {
+      "chapter_id": 344,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_344.txt",
+      "status": "rewrite_pending",
+      "sha256": "35f0a665795ee6c7281a4d5d70aa837c4616490869a722d1021265baca5aa938"
+    },
+    {
+      "chapter_id": 345,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_345.txt",
+      "status": "rewrite_pending",
+      "sha256": "87c37b5e0c75df02ed85eef87b32039db8ee27b7b55de502c1da018767f2a059"
+    },
+    {
+      "chapter_id": 346,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_346.txt",
+      "status": "rewrite_pending",
+      "sha256": "473a359a8328cbf5b889b26cc301d39668634b07863b5134414f06fa8dbf7f3b"
+    },
+    {
+      "chapter_id": 347,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_347.txt",
+      "status": "rewrite_pending",
+      "sha256": "4b9b6f806cef0bf177b235b5e5a4f9a4514b6f1afca839785e969252bb321993"
+    },
+    {
+      "chapter_id": 348,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_348.txt",
+      "status": "rewrite_pending",
+      "sha256": "62b464d1ffe42cebd4aded0c444fb1ed8ee1b8b16bdf08677f23313f055476fb"
+    },
+    {
+      "chapter_id": 349,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_349.txt",
+      "status": "rewrite_pending",
+      "sha256": "abdddc052cc3fa1b0ace0b8c6433782064ff358515e21d865ad4d25f8c068e25"
+    },
+    {
+      "chapter_id": 350,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_350.txt",
+      "status": "rewrite_pending",
+      "sha256": "2d337fbb1832c3c04f27e533e5813dec4465d48e7fdc995b74224ee28a8e2f4f"
+    },
+    {
+      "chapter_id": 351,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_351.txt",
+      "status": "rewrite_pending",
+      "sha256": "2b82e76eac34c912d47ca3a91f5f002cf394e73adffb276a819c1ea3cab01703"
+    },
+    {
+      "chapter_id": 352,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_352.txt",
+      "status": "rewrite_pending",
+      "sha256": "87fc1e71681d9ba847c2063e3dcc7cb55128b3d6416edcf10b81bbcbe1f235f1"
+    },
+    {
+      "chapter_id": 353,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_353.txt",
+      "status": "rewrite_pending",
+      "sha256": "2d43ccc6fea310f6e5ad4c99fcbccdd751f74a4534bfdddaf481b6fb6e058db1"
+    },
+    {
+      "chapter_id": 354,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_354.txt",
+      "status": "rewrite_pending",
+      "sha256": "f5cdbc143d522a7ae5b235e9b07137a9b0f4c5c7a694e1b25ee0c71a93d331b2"
+    },
+    {
+      "chapter_id": 355,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_355.txt",
+      "status": "rewrite_pending",
+      "sha256": "bfebe89b2fe2f32020ceeb672aa1209dfec6bd35703b0fd8bdffd7c3e2411c2a"
+    },
+    {
+      "chapter_id": 356,
+      "source": "D:\\Study\\College\\Scientific research\\张颖——AI小说自动生成\\张颖——AI小说自动生成\\bert_excitation_train\\AI_Novle\\bert_excitation_train\\outputs_pop_king_v6_compiled_story_first_500\\chapters\\chapter_356.txt",
+      "status": "rewrite_pending",
+      "sha256": "7afa76106ae2122f9142b3897b3527b9047dd8954b51f64e391cb7b7e50d3a1d"
+    }
+  ]
+}

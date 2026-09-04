@@ -1,0 +1,134 @@
+{
+  "cluster_id": "EC059",
+  "chapter_id": 118,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "b2fd05d8ca47b17f3efe90870719541d6d50a28213b59883486e89d3b6ac6cc6",
+  "base_prompt_sha256": "b2fd05d8ca47b17f3efe90870719541d6d50a28213b59883486e89d3b6ac6cc6",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "8ea62f5bb1cc6441a593b39ddae8ed8e2ee20dc4876921f211f8d8ecf8ca4fe6",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 15.412,
+    "usage": {
+      "prompt_tokens": 9298,
+      "completion_tokens": 1297,
+      "total_tokens": 10595,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 59,
+    "through_chapter": 118,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "e30c9f6212ca9cea198f6e8f0eb695f1d44471447449acf494be38d8b7f7d133",
+    "chapter_card_prefix_sha256": "183a059451c1eca4ce0565d8a94c6f93bd81f6bed851319fa00020ee5a73e2bf",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "9835f012a8bc606b0769f8869ee1ebf98c3423cfb354fb9d2a134702a0bc8040"
+  },
+  "cluster_sha256": "ef26a97f666b27ec8e06c725fa5c21f004b06cfb0856ad3b1352170142276852",
+  "card_sha256": "94954ba06b1880060069d43a2f54c891ff0a79a7bad117a2c348a12808d518cd",
+  "chapter_audit": {
+    "han_chars": 1875,
+    "total_chars": 2110,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 3,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "任务卡原件",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "色温调校记录",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      },
+      {
+        "anchor": "波形录像",
+        "exact": true,
+        "bigram_coverage": 1.0,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "physical_verification_authority__extension_EC059",
+        "target": "独占《锈钉与琴键》标准的物理验证与强制执行权",
+        "evidence_terms": [
+          "1980-06-10_",
+          "听证会裁定书",
+          "灯光色温共振记录"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "civil_partner_tech_equity__extension_EC059",
+        "target": "民事伴侣兼技术合伙人（联合署名+股权）",
+        "evidence_terms": [
+          "1980-06-12_",
+          "夏夜协议附录",
+          "B_",
+          "瑟琳娜权益确认书"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "safety_outsource_qualification__extension_EC059",
+        "target": "永久禁入联合中心舞台机械维护市场",
+        "evidence_terms": [
+          "1980-06-15_",
+          "工会安全委员会黑",
+          "名单通报"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 1,
+      "墨迹": 0,
+      "骑缝章": 1,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0589,
+    "scene_evidence": [
+      {
+        "location": "行业监管局大会议室",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [],
+    "failures": [
+      "正文没有通过现场动作兑现状态转移physical_verification_authority__extension_EC059→独占《锈钉与琴键》标准的物理验证与强制执行权",
+      "正文没有通过现场动作兑现状态转移civil_partner_tech_equity__extension_EC059→民事伴侣兼技术合伙人（联合署名+股权）",
+      "正文没有通过现场动作兑现状态转移safety_outsource_qualification__extension_EC059→永久禁入联合中心舞台机械维护市场"
+    ],
+    "all_validator_failures": [
+      "正文没有通过现场动作兑现状态转移physical_verification_authority__extension_EC059→独占《锈钉与琴键》标准的物理验证与强制执行权",
+      "正文没有通过现场动作兑现状态转移civil_partner_tech_equity__extension_EC059→民事伴侣兼技术合伙人（联合署名+股权）",
+      "正文没有通过现场动作兑现状态转移safety_outsource_qualification__extension_EC059→永久禁入联合中心舞台机械维护市场"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

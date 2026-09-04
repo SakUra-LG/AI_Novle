@@ -1,0 +1,102 @@
+{
+  "cluster_id": "EC066",
+  "chapter_id": 131,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "263c3e461c2001e85316e032e00467cd4624e01f0dc291252ea6c7db459613b6",
+  "base_prompt_sha256": "263c3e461c2001e85316e032e00467cd4624e01f0dc291252ea6c7db459613b6",
+  "body_generator_contract_version": "v8_character_bible_choice_contract_20260815",
+  "raw_response_sha256": "516b83f010640caa9c69aedeab13f1e37d9e0da9192c0ff8baa6c756866a4820",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 10.61,
+    "usage": {
+      "prompt_tokens": 6714,
+      "completion_tokens": 762,
+      "total_tokens": 7476,
+      "prompt_tokens_details": {
+        "cached_tokens": 417
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 66,
+    "through_chapter": 132,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "8b3a9283a492f7df7957d1c9abb53d5b43027c21cf0f867b9473bedcffd12d29",
+    "chapter_card_prefix_sha256": "3d8860ef798ae2b4fba259503291739eeb71a0fbe6719540b861bdc086e2a71c",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "cf3e7d8715474e12cb3ecbc37469ece85756313e3b54f5939ce16c06ad95af09"
+  },
+  "cluster_sha256": "6f19da74880932457d4c0b4f1dedfde2f3d32e0648205d5089e988e83d4bd4ec",
+  "card_sha256": "e4bf743b031abed830c71f0d7be8ed189c010c49e93abe78924922c196b226ec",
+  "chapter_audit": {
+    "han_chars": 1036,
+    "total_chars": 1239,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "原始声波图",
+        "exact": false,
+        "bigram_coverage": 0.75,
+        "matched": true
+      },
+      {
+        "anchor": "现场录音机",
+        "exact": false,
+        "bigram_coverage": 0.75,
+        "matched": true
+      },
+      {
+        "anchor": "媒体记者",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [],
+    "motif_counts": {
+      "指尖": 1,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 1,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0526,
+    "scene_evidence": [
+      {
+        "location": "后台排练厅",
+        "body_hit": true,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_133_WAVEFORM_PRINT",
+        "display_name": "1980年听力测试声波打印稿",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有写出本章正式创建的关键对象“1980年听力测试声波打印稿”"
+    ],
+    "all_validator_failures": [
+      "正文没有写出本章正式创建的关键对象“1980年听力测试声波打印稿”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

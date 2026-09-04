@@ -1,0 +1,140 @@
+{
+  "cluster_id": "EC105",
+  "chapter_id": 210,
+  "attempt": 1,
+  "generated_by": "qwen",
+  "manual_edits": [],
+  "prompt_sha256": "2f82f9a95799df94e9ba7e47442c327797ecb7d29d6537dc945227871aad1cb0",
+  "base_prompt_sha256": "2f82f9a95799df94e9ba7e47442c327797ecb7d29d6537dc945227871aad1cb0",
+  "body_generator_contract_version": "v9_state_guard_rebirth_firewall_20260822",
+  "raw_response_sha256": "42d551f94a607e7d40a5199bc08c930418427348c29811ded384dbf1e875115e",
+  "call": {
+    "model": "qwen-plus",
+    "transport": "openai_compatible_curl",
+    "elapsed_seconds": 13.295,
+    "usage": {
+      "prompt_tokens": 9995,
+      "completion_tokens": 960,
+      "total_tokens": 10955,
+      "prompt_tokens_details": {
+        "cached_tokens": 464
+      }
+    },
+    "endpoint": "https://api.vectorengine.ai/v1/chat/completions"
+  },
+  "plan_fingerprints": {
+    "fingerprint_scope": "causal_plan_prefix",
+    "through_cluster": 105,
+    "through_chapter": 210,
+    "outline_sha256": "be26ba6bb2c832037e69e396658ffa4010480288a9e8bd7d9cb2f6ba417ee0dc",
+    "event_prefix_sha256": "dcd1ea83952335f6c8ba7e0bfb8ca3afdcdc11c2a0b9142418dfbe4ba08434a1",
+    "chapter_card_prefix_sha256": "0c7ace650ba3b5a892416e2aa8c57a1d329fbd67e2e4a13adbfee97c9ca004e5",
+    "style_samples_sha256": "450227593463c53fc2c24906799d95795712852693f3120432a079cbef2bae9f",
+    "plan_prefix_bundle_sha256": "ae26aa8272dc8b58d62aae46af21d17892d7179f637bca9ed10d8a21d050bd2b"
+  },
+  "cluster_sha256": "8ce9ac6f0c2cda709f149869c2a7a414f5bf1d7609fb107643d20b9e6db1b725",
+  "card_sha256": "2cfbe0239e6b662a6a3c5ca88172c2b4b00997ebfa13577d3676bbf9fd604237",
+  "chapter_audit": {
+    "han_chars": 1373,
+    "total_chars": 1565,
+    "target_han_range": [
+      1200,
+      1600
+    ],
+    "must_include_exact_hits": 0,
+    "must_include_total": 3,
+    "must_include_semantic_evidence": [
+      {
+        "anchor": "敌情图谱展开",
+        "exact": false,
+        "bigram_coverage": 0.8,
+        "matched": true
+      },
+      {
+        "anchor": "127名证人证词",
+        "exact": false,
+        "bigram_coverage": 0.429,
+        "matched": false
+      },
+      {
+        "anchor": "法官宣判",
+        "exact": false,
+        "bigram_coverage": 0.667,
+        "matched": true
+      }
+    ],
+    "must_resolve_semantic_evidence": [
+      {
+        "state_key": "health_narrative_control__extension_EC105",
+        "target": "public_open_source",
+        "evidence_terms": [
+          "ART_209_OPEN_SOURCE_DECREE"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "licensing_income__extension_EC105",
+        "target": "zero_revenue",
+        "evidence_terms": [
+          "ART_210_COMPETITOR_APPLICATIONS"
+        ],
+        "hit_terms": [],
+        "matched": false
+      },
+      {
+        "state_key": "role_expansion__extension_EC105",
+        "target": "chief_evidence_officer",
+        "evidence_terms": [
+          "ART_210_SCROLL_SUBMISSION"
+        ],
+        "hit_terms": [],
+        "matched": false
+      }
+    ],
+    "motif_counts": {
+      "指尖": 0,
+      "喉结": 0,
+      "信封": 0,
+      "蓝雪": 0,
+      "波形": 0,
+      "墨迹": 0,
+      "骑缝章": 0,
+      "铅封": 0
+    },
+    "plan_body_semantic_overlap": 0.0785,
+    "scene_evidence": [
+      {
+        "location": "雾河城高等法院听证会",
+        "body_hit": false,
+        "match_mode": "location_keyword"
+      }
+    ],
+    "artifact_creation_evidence": [
+      {
+        "artifact_id": "ART_210_SCROLL_SUBMISSION",
+        "display_name": "ART_210_SCROLL_SUBMISSION",
+        "body_hit": false,
+        "match_mode": "exact_display_name"
+      }
+    ],
+    "failures": [
+      "正文没有兑现章卡关键事实“127名证人证词”",
+      "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC105→public_open_source",
+      "正文没有通过现场动作兑现状态转移licensing_income__extension_EC105→zero_revenue",
+      "正文没有通过现场动作兑现状态转移role_expansion__extension_EC105→chief_evidence_officer",
+      "正文未落到规划场景“雾河城高等法院听证会”",
+      "正文没有写出本章正式创建的关键对象“ART_210_SCROLL_SUBMISSION”"
+    ],
+    "all_validator_failures": [
+      "正文没有兑现章卡关键事实“127名证人证词”",
+      "正文没有通过现场动作兑现状态转移health_narrative_control__extension_EC105→public_open_source",
+      "正文没有通过现场动作兑现状态转移licensing_income__extension_EC105→zero_revenue",
+      "正文没有通过现场动作兑现状态转移role_expansion__extension_EC105→chief_evidence_officer",
+      "正文未落到规划场景“雾河城高等法院听证会”",
+      "正文没有写出本章正式创建的关键对象“ART_210_SCROLL_SUBMISSION”"
+    ]
+  },
+  "failures": [],
+  "accepted": true
+}

@@ -1,0 +1,46 @@
+# EC146隔离试写质量报告（证据自动生成）
+
+状态：trial_only_not_accepted；未写入正式StoryMemory、Neo4j，未标记accepted。
+
+{
+  "version": "isolated_trial_report_v1",
+  "status": "trial_only_not_accepted",
+  "formal_story_memory_write": false,
+  "neo4j_write": false,
+  "external_semantic_critic": "not_run",
+  "cluster_id": "EC146",
+  "chapters": [
+    {
+      "chapter_id": 291,
+      "event_cluster_id": "EC146",
+      "expected_progress_point": "让苏菲亚在继续巡演和照护家人之间明确自己的期限",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "5661a6fe054d08e433cadc83cce975dbfb626ca26be052f34965f4ac85c68195"
+    },
+    {
+      "chapter_id": 292,
+      "event_cluster_id": "EC146",
+      "expected_progress_point": "让苏菲亚在继续巡演和照护家人之间明确自己的期限",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "ee77b8aec5024ff39665c0592bec817be193011376df15ba52fcd3f553772abe"
+    }
+  ],
+  "formal_continuity_anchor": {
+    "chapter_id": 270,
+    "date": "1993-09-17"
+  },
+  "overall": "PASS_WITHOUT_ACCEPTANCE",
+  "issues": []
+}

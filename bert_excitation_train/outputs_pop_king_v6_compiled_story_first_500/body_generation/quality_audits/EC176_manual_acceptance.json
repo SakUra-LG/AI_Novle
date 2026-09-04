@@ -1,0 +1,419 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC176",
+  "chapter_ids": [
+    351,
+    352
+  ],
+  "accepted": false,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "351": {
+        "han_chars": 1129,
+        "total_chars": 1269,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 3,
+        "must_include_total": 3,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "地图卡刮开层显示1977年麦珂亲笔涂装",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "BBS论坛实时传播刮开照片",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "玛莎提及1979年家庭信托代理权时间线",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.0592,
+        "scene_evidence": [
+          {
+            "location": "四十三处工坊发售大厅",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_351_MAP_CARD_BATCH_01",
+            "display_name": "《静默增益》地图卡首批实物（含1977年涂装层）",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      },
+      "352": {
+        "han_chars": 1246,
+        "total_chars": 1549,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 3,
+        "must_include_total": 3,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "现场观众指认画师身份",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "艾琳剔除虚假背景音",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "直播事故录音成为铁证",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "community_trust_status",
+            "target": "legally_verified_public_benefit",
+            "evidence_terms": [
+              "MAP_CARD_HOLOGRAPHIC_PROJECTION",
+              "FOURTY_THREE_WORKSHOPS_ACTIVATION"
+            ],
+            "hit_terms": [],
+            "matched": true
+          },
+          {
+            "state_key": "docu_credibility_status",
+            "target": "collapsed_trust",
+            "evidence_terms": [
+              "LIVE_STREAM_CONTRADICTION",
+              "AUDIENCE_VERIFICATION"
+            ],
+            "hit_terms": [],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.1125,
+        "scene_evidence": [
+          {
+            "location": "卡尔·霍尔特直播间",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [],
+        "failures": []
+      }
+    },
+    "joint": {
+      "351": {
+        "han_chars": 1129,
+        "total_chars": 1269,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 3,
+        "must_include_total": 3,
+        "failures": []
+      },
+      "352": {
+        "han_chars": 1246,
+        "total_chars": 1549,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 3,
+        "must_include_total": 3,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.1157,
+      "resolution_signatures": {
+        "first": {
+          "attack": "",
+          "counter": "签字",
+          "resolver": "观众",
+          "opponent_result": "",
+          "hero_result": ""
+        },
+        "second": {
+          "attack": "",
+          "counter": "条款",
+          "resolver": "记者",
+          "opponent_result": "",
+          "hero_result": "获得"
+        }
+      },
+      "settlement_action_terms": [
+        "获得"
+      ],
+      "rebirth_information_gap_markers": [
+        "前世"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 331,
+          "semantic_overlap": 0.0761
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 332,
+          "semantic_overlap": 0.0696
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 333,
+          "semantic_overlap": 0.1105
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 334,
+          "semantic_overlap": 0.0723
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 335,
+          "semantic_overlap": 0.0746
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 336,
+          "semantic_overlap": 0.0599
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 337,
+          "semantic_overlap": 0.0576
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 338,
+          "semantic_overlap": 0.0547
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 339,
+          "semantic_overlap": 0.0827
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 340,
+          "semantic_overlap": 0.0852
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 341,
+          "semantic_overlap": 0.0896
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 342,
+          "semantic_overlap": 0.0818
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 343,
+          "semantic_overlap": 0.1258
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 344,
+          "semantic_overlap": 0.0907
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 345,
+          "semantic_overlap": 0.0612
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 346,
+          "semantic_overlap": 0.0516
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 347,
+          "semantic_overlap": 0.0901
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 348,
+          "semantic_overlap": 0.0596
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 349,
+          "semantic_overlap": 0.0772
+        },
+        {
+          "chapter_id": 351,
+          "prior_chapter_id": 350,
+          "semantic_overlap": 0.0745
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 331,
+          "semantic_overlap": 0.0764
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 332,
+          "semantic_overlap": 0.106
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 333,
+          "semantic_overlap": 0.092
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 334,
+          "semantic_overlap": 0.0996
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 335,
+          "semantic_overlap": 0.0671
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 336,
+          "semantic_overlap": 0.1117
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 337,
+          "semantic_overlap": 0.0573
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 338,
+          "semantic_overlap": 0.0707
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 339,
+          "semantic_overlap": 0.0983
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 340,
+          "semantic_overlap": 0.1047
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 341,
+          "semantic_overlap": 0.077
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 342,
+          "semantic_overlap": 0.1251
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 343,
+          "semantic_overlap": 0.096
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 344,
+          "semantic_overlap": 0.1384
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 345,
+          "semantic_overlap": 0.0552
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 346,
+          "semantic_overlap": 0.0778
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 347,
+          "semantic_overlap": 0.0758
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 348,
+          "semantic_overlap": 0.1093
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 349,
+          "semantic_overlap": 0.0644
+        },
+        {
+          "chapter_id": 352,
+          "prior_chapter_id": 350,
+          "semantic_overlap": 0.094
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "351": "6d3ed7feced7bb97209bba25032c951e7edcb5c7e0bd1f08c295ac3a07fdda9d",
+    "352": "7cb671899464b6f4c5dd95a34d1daf61722a4483cf71e90998db8d5a0ce98044"
+  },
+  "accepted_at": "2026-08-26T10:45:41.950230+00:00",
+  "status": "quarantine_rewrite_pending",
+  "authoritative": false,
+  "quarantine_reason": "EC136-EC178 architecture and synopsis repair",
+  "quarantined_at": "20260826T110312Z"
+}

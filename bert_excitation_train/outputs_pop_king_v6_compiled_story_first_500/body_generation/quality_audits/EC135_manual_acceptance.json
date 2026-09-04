@@ -1,0 +1,463 @@
+{
+  "version": "v14_manual_batch_acceptance",
+  "cluster_id": "EC135",
+  "chapter_ids": [
+    269,
+    270
+  ],
+  "accepted": true,
+  "generation_mode": "human_authored_due_to_missing_external_model_credential",
+  "manual_full_text_review": {
+    "passed": true,
+    "reviewed_dimensions": [
+      "two_chapter_function_separation",
+      "character_identity_and_authority",
+      "timeline_and_era_technology",
+      "artifact_scope",
+      "settlement_actions",
+      "recent_twenty_chapter_repetition",
+      "prose_readability"
+    ]
+  },
+  "external_semantic_critic": {
+    "status": "not_run_missing_external_model_credential",
+    "passed": null
+  },
+  "deterministic_validation": {
+    "passed": true,
+    "single": {
+      "269": {
+        "han_chars": 1295,
+        "total_chars": 1506,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "原AR-22申请和建号暂停",
+            "exact": false,
+            "bigram_coverage": 0.727,
+            "matched": true
+          },
+          {
+            "anchor": "债权人直接回函只授权一人",
+            "exact": false,
+            "bigram_coverage": 0.636,
+            "matched": true
+          },
+          {
+            "anchor": "四类最低融资字段",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "承包商可补授权后重提",
+            "exact": false,
+            "bigram_coverage": 0.778,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 0,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.1039,
+        "scene_evidence": [
+          {
+            "location": "初声基金资料访问管理台与债权人授权回函席",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_269_AR22_IDENTITY_AUTH_CHAIN",
+            "display_name": "AR-22申请发起人与核验员身份授权回函链",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_269_AR22_IDENTITY_SCOPE_DECISION",
+            "display_name": "AR-22具名核验员与四字段访问范围决定",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      },
+      "270": {
+        "han_chars": 1360,
+        "total_chars": 1583,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 4,
+        "must_include_semantic_evidence": [
+          {
+            "anchor": "一次性时段只读账号",
+            "exact": false,
+            "bigram_coverage": 0.75,
+            "matched": true
+          },
+          {
+            "anchor": "四字段汇总批次与来源索引",
+            "exact": false,
+            "bigram_coverage": 0.818,
+            "matched": true
+          },
+          {
+            "anchor": "三笔限定抽样复算",
+            "exact": true,
+            "bigram_coverage": 1.0,
+            "matched": true
+          },
+          {
+            "anchor": "编号摘录页数打印计数与交付回执",
+            "exact": false,
+            "bigram_coverage": 0.786,
+            "matched": true
+          }
+        ],
+        "must_resolve_semantic_evidence": [
+          {
+            "state_key": "access_authorization",
+            "target": "named_lender_reviewer_only_with_four_field_purpose_scope",
+            "evidence_terms": [
+              "ART_269_AR22_IDENTITY_SCOPE_DECISION",
+              "AR-22",
+              "具名核验员与四字",
+              "段访问范围决定",
+              "限制账号身份",
+              "字段和禁止整库导"
+            ],
+            "hit_terms": [
+              "AR-22",
+              "具名核验员与四字",
+              "段访问范围决定"
+            ],
+            "matched": true
+          },
+          {
+            "state_key": "delivery_scope",
+            "target": "supervised_read_only_review_and_numbered_four_field_extract_delivered",
+            "evidence_terms": [
+              "ART_270_AR22_ACCESS_EXPORT_LOG",
+              "AR-22",
+              "只读访问打印计数",
+              "与编号摘录交付日"
+            ],
+            "hit_terms": [
+              "AR-22",
+              "只读访问打印计数",
+              "与编号摘录交付日"
+            ],
+            "matched": true
+          }
+        ],
+        "motif_counts": {
+          "指尖": 0,
+          "喉结": 0,
+          "信封": 0,
+          "蓝雪": 0,
+          "波形": 0,
+          "墨迹": 1,
+          "骑缝章": 0,
+          "铅封": 0
+        },
+        "plan_body_semantic_overlap": 0.0963,
+        "scene_evidence": [
+          {
+            "location": "初声基金贷前资料只读核验室",
+            "body_hit": true,
+            "match_mode": "location_keyword"
+          }
+        ],
+        "artifact_creation_evidence": [
+          {
+            "artifact_id": "ART_270_AR22_FOUR_FIELD_SAMPLE",
+            "display_name": "AR-22四字段汇总来源与三笔限定抽样复算表",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          },
+          {
+            "artifact_id": "ART_270_AR22_ACCESS_EXPORT_LOG",
+            "display_name": "AR-22只读访问打印计数与编号摘录交付日志",
+            "body_hit": true,
+            "match_mode": "exact_display_name"
+          }
+        ],
+        "failures": []
+      }
+    },
+    "joint": {
+      "269": {
+        "han_chars": 1295,
+        "total_chars": 1506,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "270": {
+        "han_chars": 1360,
+        "total_chars": 1583,
+        "target_han_range": [
+          1200,
+          1600
+        ],
+        "must_include_exact_hits": 1,
+        "must_include_total": 4,
+        "failures": []
+      },
+      "joint_semantic_overlap": 0.1099,
+      "resolution_signatures": {
+        "first": {
+          "attack": "",
+          "counter": "签字",
+          "resolver": "",
+          "opponent_result": "",
+          "hero_result": ""
+        },
+        "second": {
+          "attack": "",
+          "counter": "",
+          "resolver": "",
+          "opponent_result": "",
+          "hero_result": "保住"
+        }
+      },
+      "settlement_action_terms": [
+        "获得",
+        "保留",
+        "账户",
+        "取得"
+      ],
+      "rebirth_information_gap_markers": [
+        "前世"
+      ],
+      "recent_twenty_chapter_semantic_comparison": [
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 249,
+          "semantic_overlap": 0.0658
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 250,
+          "semantic_overlap": 0.0631
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 251,
+          "semantic_overlap": 0.0606
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 252,
+          "semantic_overlap": 0.0558
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 253,
+          "semantic_overlap": 0.0562
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 254,
+          "semantic_overlap": 0.0647
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 255,
+          "semantic_overlap": 0.0564
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 256,
+          "semantic_overlap": 0.0653
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 257,
+          "semantic_overlap": 0.056
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 258,
+          "semantic_overlap": 0.0495
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 259,
+          "semantic_overlap": 0.0478
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 260,
+          "semantic_overlap": 0.0435
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 261,
+          "semantic_overlap": 0.0761
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 262,
+          "semantic_overlap": 0.0629
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 263,
+          "semantic_overlap": 0.0527
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 264,
+          "semantic_overlap": 0.0638
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 265,
+          "semantic_overlap": 0.0743
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 266,
+          "semantic_overlap": 0.0557
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 267,
+          "semantic_overlap": 0.0726
+        },
+        {
+          "chapter_id": 269,
+          "prior_chapter_id": 268,
+          "semantic_overlap": 0.0834
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 249,
+          "semantic_overlap": 0.0562
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 250,
+          "semantic_overlap": 0.0569
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 251,
+          "semantic_overlap": 0.0561
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 252,
+          "semantic_overlap": 0.056
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 253,
+          "semantic_overlap": 0.0457
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 254,
+          "semantic_overlap": 0.0567
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 255,
+          "semantic_overlap": 0.0577
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 256,
+          "semantic_overlap": 0.0721
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 257,
+          "semantic_overlap": 0.0492
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 258,
+          "semantic_overlap": 0.0539
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 259,
+          "semantic_overlap": 0.0445
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 260,
+          "semantic_overlap": 0.0621
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 261,
+          "semantic_overlap": 0.0705
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 262,
+          "semantic_overlap": 0.0657
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 263,
+          "semantic_overlap": 0.0556
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 264,
+          "semantic_overlap": 0.0666
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 265,
+          "semantic_overlap": 0.0529
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 266,
+          "semantic_overlap": 0.0565
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 267,
+          "semantic_overlap": 0.0563
+        },
+        {
+          "chapter_id": 270,
+          "prior_chapter_id": 268,
+          "semantic_overlap": 0.0725
+        }
+      ]
+    }
+  },
+  "chapter_sha256": {
+    "269": "0b42a3b3bb21a8e45cd462780559d3f2c135c31088a1b67687d025d18bc30e65",
+    "270": "00d69bcf2f2f58183f69c0d27f4262cb8511517991b7dca9396f6811a312d173"
+  },
+  "accepted_at": "2026-08-26T02:38:59.319885+00:00"
+}

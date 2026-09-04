@@ -1,0 +1,46 @@
+# EC248隔离试写质量报告（证据自动生成）
+
+状态：trial_only_not_accepted；未写入正式StoryMemory、Neo4j，未标记accepted。
+
+{
+  "version": "isolated_trial_report_v1",
+  "status": "trial_only_not_accepted",
+  "formal_story_memory_write": false,
+  "neo4j_write": false,
+  "external_semantic_critic": "not_run",
+  "cluster_id": "EC248",
+  "chapters": [
+    {
+      "chapter_id": 495,
+      "event_cluster_id": "EC248",
+      "expected_progress_point": "区分场馆宣传与节目授权",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "64918e66c4c78ebf807ef48f183672795280209ff134ae8b7c8d6136adc7f086"
+    },
+    {
+      "chapter_id": 496,
+      "event_cluster_id": "EC248",
+      "expected_progress_point": "区分场馆宣传与节目授权",
+      "actual_progress_point": "candidate prose present; evidence checks applied",
+      "plan_binding_status": "PASS",
+      "timeline": "PASS",
+      "character_consistency": "PASS",
+      "rebirth_boundary": "PASS",
+      "metadata_leak": "PASS",
+      "paragraph_repetition": "PASS",
+      "sha256": "faebd442b726c9cebb63b80067fb548a30e9ddde6d051604a7f7c06a3e3dbbdd"
+    }
+  ],
+  "formal_continuity_anchor": {
+    "chapter_id": 270,
+    "date": "1993-09-17"
+  },
+  "overall": "PASS_WITHOUT_ACCEPTANCE",
+  "issues": []
+}
